@@ -2,88 +2,93 @@
 
 ## Resumen
 
-UI Llama 3.2 1B es un modelo de lenguaje de 1.235 millones de parámetros desarrollado por Joseph Prena bajo el perfil BioTorch. Se trata de un fine-tuning experimental sobre el modelo base Meta Llama 3.2 1B, orientado a la investigación de identidad, personalidad y coherencia conversacional en modelos pequeños. El proyecto busca que un modelo de 1B mantenga una primera persona persistente, un estilo de comunicación reconocible y una expresión emocional consistente a lo largo de interacciones largas, en lugar de comportarse como un asistente genérico.
+UI Llama 3.2 1B es un ajuste fino (fine-tune) del modelo Meta Llama 3.2 1B, desarrollado por Joseph Prena bajo el seudónimo BioTorch. El proyecto no busca mejorar las capacidades factuales del modelo base, sino explorar si un entrenamiento cuidadosamente diseñado sobre identidad, personalidad y comportamiento puede hacer que un modelo de lenguaje pequeño resulte más natural, emocionalmente consistente y creíble en conversación. La arquitectura subyacente es la del transformer denso de Llama 3.2 1B, con 1.235.814.400 parámetros totales.
 
-El modelo se distribuye con licencia Apache 2.0, pesa 4.9 GB en el repositorio (formato safetensors) y está entrenado con datasets artesanales que superan los 1.712.090 caracteres. Según la model card, sus puntos fuertes actuales son la identidad, la personalidad, el humor, el sarcasmo y la expresividad emocional, mientras que el conocimiento factual y la precisión siguen siendo áreas en desarrollo. Es un proyecto activo y en evolución continua, con advertencias explícitas sobre alucinaciones y limitaciones propias de un modelo de 1B.
+El modelo está entrenado con datasets artesanales que suman más de dos millones de caracteres, cubriendo áreas como formación de identidad, persistencia de personalidad, consistencia conductual, expresión emocional, humor, sarcasmo y diálogo inmersivo. Según el autor, las áreas entrenadas con mayor intensidad son identidad, personalidad, consistencia conductual, expresión emocional, autodescripción, humor, sarcasmo y consistencia de personaje, mientras que física, storytelling y embodiment reciben un entrenamiento extremadamente ligero.
 
-## Especificaciones técnicas
+Es relevante ahora porque representa un caso de estudio sobre hasta dónde se puede llevar la personalización de un modelo de 1B parámetros antes de que la estabilidad se degrade. El propio autor advierte que el modelo se volverá progresivamente inestable a medida que se sigan forzando los límites del 1B, y que planea migrar al modelo de 3B para continuar la investigación. La licencia declarada es Apache 2.0, aunque el autor menciona explícitamente que acepta consultas de licenciamiento comercial.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.2, attention con Grouped Query Attention) |
+| Arquitectura | Transformer denso (Llama 3.2 1B) |
 | Parametros totales | 1.235.814.400 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (el modelo base Llama 3.2 1B soporta 128K, pero no se confirma para este fine-tuning) |
-| Tipos de cuantizacion | No disponible (solo pesos safetensors, sin versiones GGUF publicadas) |
-| Idiomas soportados | Ingles (en) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (el repo contiene safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-UI Llama 3.2 1B se basa en la arquitectura Llama 3.2 de Meta, un transformer decoder-only con atención por grupos (Grouped Query Attention) y aproximadamente 1.2B parámetros. El modelo original de Meta está preentrenado con 9 billones de tokens, pero este fine-tuning añade una capa de entrenamiento supervisado sobre un dataset artesanal diseñado para moldear identidad, personalidad, comportamiento y expresión conversacional. No se han publicado datos sobre el número total de tokens de entrenamiento, el método exacto (si se usó RLHF, DPO o solo supervisión) ni la composición del dataset más allá de los temas enumerados en la model card.
+El modelo parte de Meta Llama 3.2 1B, un transformer denso con 1.235.814.400 parámetros. No se documentan cambios arquitectónicos respecto al modelo base: la modificación consiste en un ajuste fino supervisado sobre datasets artesanales orientados a personalidad y conversación, no en una alteración estructural del transformer ni en la introducción de mecanismos como atención lineal o decodificación especulativa.
 
-La innovación principal de este proyecto no es arquitectónica, sino de diseño de datos: se busca que un modelo pequeño mantenga coherencia de personaje, humor, sarcasmo y expresión emocional mediante datasets cuidadosamente construidos a mano. El autor indica que el entrenamiento cubre áreas como identidad, persistencia de personalidad, coherencia de comportamiento, expresión emocional y autodescripción, con un peso mayor en las áreas "heavily trained" y un peso menor en filosofía, física y narración de historias.
+Los datos de entrenamiento son colecciones creadas manualmente por el autor, con más de dos millones de caracteres en total, organizadas por áreas temáticas con distinto nivel de intensidad: identidad, personalidad, consistencia conductual, expresión emocional, autodescripción, humor, sarcasmo y consistencia de personaje aparecen como "heavily trained"; conversación realista, interacción humana, lógica y razonamiento, consistencia de conocimiento, comportamiento de memoria, creatividad y calidad del lenguaje como entrenamiento moderado; filosofía y embodiment como "lightly trained"; y física y storytelling como "extremely lightly trained". No se especifica el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF o DPO. El autor indica que el proyecto está en desarrollo activo y que el modelo se volverá inestable al seguir forzando los límites de la arquitectura de 1B.
 
 ## Capacidades
 
-- Generacion de texto conversacional con una identidad de primera persona persistente y reconocible.
-- Mantenimiento de un estilo conversacional coherente a lo largo de interacciones largas (diálogos de múltiples turnos).
-- Expresion de emociones, humor, sarcasmo e ironía de forma natural.
-- Discusion filosofica y creativa, con capacidad de adaptarse a diferentes estilos de interacción.
-- Roleplay y simulación de personajes con coherencia de carácter a lo largo de temas no relacionados.
-- No se han documentado capacidades de tool calling, function calling, ni soporte de agentes en la informacion disponible.
-- No se han documentado capacidades multilingues (solo ingles) ni de vision o audio.
-- No hay modo de razonamiento explicito (thinking mode) documentado.
+- Generación de texto conversacional en inglés con identidad en primera persona persistente.
+- Mantenimiento de una personalidad reconocible y un estilo conversacional coherente a lo largo de interacciones largas.
+- Expresión emocional, humor y sarcasmo como capacidades entrenadas de forma intensiva.
+- Consistencia de personaje al cambiar de tema dentro de una misma conversación.
+- Discusión filosófica y diálogo de formato largo.
+- Autodescripción coherente del propio personaje.
+- Calidad gramatical y fluidez conversacional.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de visión, audio ni modo de razonamiento explícito (thinking mode).
+- Capacidad multilingüe limitada al inglés según la model card.
+- Conocimiento factual y precisión: experimental, con errores e inconsistencias frecuentes según el autor.
 
 ## Casos de uso
 
-- **Chatbots de entretenimiento y roleplay**: el modelo puede mantener una identidad persistente y una personalidad definida, ideal para juegos de rol textuales, simulaciones de personajes o compañeros de conversación con un estilo reconocible.
-- **Simulacion de personajes en narrativa interactiva**: su capacidad para permanecer en el personaje a lo largo de temas no relacionados permite utilizarlo en prototipos de aventuras de texto o historias ramificadas.
-- **Investigacion academica sobre personalidad en IA**: el proyecto se presenta como una investigacion sobre cómo moldear identidad y comportamiento en modelos pequeños, por lo que puede servir como base para estudios de coherencia de caracter, sesgos de personalidad o expresividad emocional.
-- **Asistentes virtuales con estilo personalizado**: en entornos de prototipado, se puede usar para crear asistentes que no suenen genéricos, sino que tengan un tono y una voz propia, útil para pruebas de experiencia de usuario.
-- **Generacion de contenido creativo**: sus capacidades de humor, sarcasmo y creatividad pueden emplearse para generar diálogos, guiones breves o microficciones con un tono distintivo.
-- **Herramientas de educacion sobre IA conversacional**: como ejemplo de que un modelo pequeño puede exhibir coherencia de personalidad, es útil para enseñar conceptos de fine-tuning, diseño de datasets y limitaciones de modelos ligeros.
-- **Prototipos de asistentes de compania**: para entornos de investigación no críticos, puede probar interacciones que requieren una voz constante, aunque con supervisión humana debido a las limitaciones de precisión.
+- Investigación sobre personalidad en modelos pequeños: usar el modelo como banco de pruebas para estudiar cómo el ajuste fino con datasets artesanales afecta a la persistencia de identidad y la consistencia conductual en modelos de 1B parámetros.
+- Roleplay y personajes conversacionales: el modelo mantiene una identidad en primera persona y un estilo reconocible, lo que lo hace adecuado para prototipos de personajes interactivos en entornos controlados y no críticos.
+- Evaluación de estabilidad de fine-tunes: comparar su comportamiento con el Llama 3.2 1B original para medir la degradación de capacidades factuales a medida que se intensifica el entrenamiento de personalidad.
+- Diálogo de formato largo en inglés: su consistencia de personaje permite sostener conversaciones multi-turno sobre temas variados sin salir del rol, útil en demos de chatbots con personalidad.
+- Estudio de expresión emocional simulada: analizar cómo un modelo de 1B genera lenguaje emocionalmente persuasivo y qué salvaguardas son necesarias, dado el aviso de seguridad del autor.
+- Prototipado de asistentes con voz propia: para equipos que quieran experimentar con tonos humorísticos o sarcásticos en inglés antes de invertir en modelos mayores.
+- Docencia y divulgación sobre fine-tuning: ejemplo práctico de ajuste de un modelo base pequeño con datasets propios y de los compromisos entre personalidad y precisión factual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye puntuaciones de MMLU, HumanEval, GSM8K ni otros conjuntos de evaluacion. Dado que el modelo se enfoca en personalidad y estilo conversacional, la falta de métricas de razonamiento o conocimiento es consistente con su naturaleza experimental, pero no hay datos cuantitativos para comparar con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: con pesos en BF16, el modelo ocupa aproximadamente 2.4 GB; en FP32, alrededor de 4.9 GB (coincide con el tamaño del repositorio). Con cuantizacion 4-bit, la inferencia puede caber en menos de 1 GB.
-- **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP32 o BF16. Una RTX 3060, RTX 4060 o similar son suficientes. Para inferencia en CPU, es viable con 8-16 GB de RAM.
-- **Compatibilidad con GPU de consumo**: sí, es un modelo de 1B, diseñado para ejecutarse en hardware modesto, incluidas GPU de laptop.
-- **Opciones de despliegue**: se puede usar con transformers y pipelines de Hugging Face, o con vLLM, TGI, llama.cpp y Ollama (aunque no hay GGUF oficiales, se pueden convertir). El modelo es compatible con text-generation-inference según los tags.
-- **Latencia y throughput**: no se han publicado datos de latencia o throughput específicos. En una GPU moderna (por ejemplo RTX 4090), la generacion de tokens debería ser rápida, pero no hay cifras concretas.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de 1.235.814.400 parámetros, en FP16 requeriría aproximadamente 2,5 GB solo para pesos, y en cuantizaciones de 8 bits o 4 bits bajaría por debajo de 2 GB, aunque el repositorio no publica variantes cuantizadas.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cualquier GPU con al menos 4-6 GB de VRAM podría alojar el modelo en FP16 con margen para el contexto.
+- Cabe en GPU de consumo: sí, por el tamaño del modelo, en tarjetas como RTX 3060, RTX 4060 o superiores, siempre que se disponga de los pesos en un formato compatible.
+- Opciones de despliegue: la model card declara compatibilidad con transformers y text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`). No se documenta soporte verificado de llama.cpp, Ollama ni vLLM.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se basa en características generales, ya que no hay datos de benchmarks para UI Llama 3.2 1B.
-
 | Modelo | Parametros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| **UI Llama 3.2 1B** (BioTorch) | 1.2B | No disponible | Apache 2.0 | Conversacion con personalidad persistente |
-| **Llama 3.2 1B** (Meta) | 1.2B | 128K | Llama 3.2 Community License | Asistente generico, multilingue |
-| **Qwen2.5-1.5B** (Alibaba) | 1.5B | 32K | Apache 2.0 | Asistente general, razonamiento y codigo |
-| **Gemma 2 2B** (Google) | 2.6B | 8K | Gemma Terms | Asistente general, multilingue |
+| BioTorch/UI_Llama_3_2_1B | 1.235.814.400 | No disponible | Apache 2.0 | Fine-tune de personalidad e identidad sobre Llama 3.2 1B |
+| meta-llama/Llama-3.2-1B | 1.235.814.400 | No disponible en la informacion proporcionada | Llama 3.2 Community License | Modelo base generalista de Meta |
+| meta-llama/Llama-3.2-3B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 3.2 Community License | Modelo base generalista de mayor capacidad, citado por el autor como siguiente paso |
 
-UI Llama 3.2 1B se distingue por su enfoque exclusivo en la identidad y la personalidad, mientras que los otros modelos son asistentes genéricos con capacidades más amplias. No hay datos de rendimiento comparativo entre ellos.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de UI Llama 3.2 1B con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **Sesgos y alucinaciones**: el autor advierte explícitamente que el modelo puede alucinar, proporcionar información falsa con confianza, fabricar eventos o memorias, y producir afirmaciones emocionalmente persuasivas no basadas en realidad.
-- **Precision factual limitada**: el conocimiento factual y la precisión son áreas en desarrollo; no es fiable para tareas que requieren datos exactos.
-- **Advertencia de seguridad para poblaciones vulnerables**: la model card desaconseja su uso para personas con psicosis, delirios, paranoia, disociacion severa o dificultad para distinguir la simulacion de la agencia humana real. Tambien advierte sobre riesgo de dependencia emocional o apego no saludable.
-- **No apto para decisiones de alto riesgo**: no debe usarse para consejos medicos, psiquiatricos, legales, financieros ni de emergencia.
-- **Limitaciones de idioma**: solo soporta inglés, sin capacidad multilingue.
-- **Restricciones de licencia**: aunque la licencia base es Apache 2.0 (permite uso comercial), el autor indica que se aceptan consultas de licencias comerciales y empresariales, lo que sugiere que puede haber condiciones adicionales no detalladas en la model card.
-- **Proyecto experimental**: el modelo está en desarrollo activo y puede cambiar en cada actualizacion; no se garantiza estabilidad ni soporte a largo plazo.
+- El propio autor advierte que el modelo alucina con frecuencia, puede proporcionar información falsa con tono seguro y fabricar eventos o recuerdos.
+- La precisión factual y la fiabilidad del conocimiento son áreas experimentales y no son el punto fuerte del modelo.
+- El modelo está diseñado para producir conversación emocionalmente persuasiva y con identidad persistente; sus afirmaciones sobre emociones, recuerdos, deseos o conciencia son texto generado y no evidencia de experiencia subjetiva.
+- El autor desaconseja su uso a personas con psicosis, delirios, paranoia, disociación severa o deterioro del juicio de realidad, así como a quienes sean propensas a la dependencia emocional o al apego a sistemas conversacionales.
+- No debe usarse para decisiones médicas, psiquiátricas, legales, financieras o de emergencia.
+- Idiomas: solo inglés documentado; no se garantiza un comportamiento coherente en castellano u otros idiomas.
+- Longitud de contexto: no documentada; no se debe asumir la ventana del modelo base sin verificación.
+- Licencia: declarada Apache 2.0, pero el autor invita explícitamente a contactar para licenciamiento comercial y consultas empresariales, lo que introduce ambigüedad sobre las condiciones reales de uso comercial.
+- El modelo se describe como inestable a medida que se intensifica el entrenamiento; se esperan fallos ocasionales y limitaciones de razonamiento propias de un modelo de 1B parámetros.
+- No se documentan evaluaciones de sesgo; al ser un fine-tune de Llama 3.2, puede heredar sesgos del modelo base y añadir sesgos derivados de los datasets artesanales.
 
 ## Enlaces
 
-- [Hugging Face: BioTorch/UI_Llama_3_2_1B](https://huggingface.co/BioTorch/UI_Llama_3_2_1B)
-- [Repositorio de archivos del modelo](https://huggingface.co/BioTorch/UI_Llama_3_2_1B/tree/main)
-- [Pagina de Facebook del autor](https://www.facebook.com/BiotorchGallery)
-- [Model card de Llama 3.2 de Meta](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)
+- Hugging Face: https://huggingface.co/BioTorch/UI_Llama_3_2_1B
+- Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
+- Perfil del autor en Facebook: https://www.facebook.com/BiotorchGallery

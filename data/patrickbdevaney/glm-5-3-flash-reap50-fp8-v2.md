@@ -2,80 +2,103 @@
 
 ## Resumen
 
-El modelo GLM-5.3-Flash-REAP50-FP8-v2 es un checkpoint podado del modelo GLM-5.3-Flash, desarrollado por Zhipu AI (zai-org), que es un modelo de lenguaje multimodal de arquitectura MoE con 320B parámetros totales y 18B activos. Este checkpoint, creado por patrickbdevaney, aplica la técnica REAP (Router-weighted Expert Activation Pruning, arXiv:2510.13999) para eliminar el 50% de los expertos enrutados, pasando de 288 a 144 por capa, manteniendo el routing top-8. El resultado es un modelo con 165,47B parámetros totales y un tamaño de 160,6 GiB en FP8, pensado para despliegue en entornos con restricciones de memoria como Jetson o Thor, según los tags. La poda se ha calibrado con 5,5M tokens de un corpus multi-dominio con licencias permisivas, incluyendo pares imagen-texto reales, para preservar las capacidades multimodales. El checkpoint mantiene la licencia MIT del modelo base.
+GLM-5.3-Flash-REAP50-FP8-v2 es un checkpoint derivado de `zai-org/GLM-5.3-Flash`, el modelo multimodal de arquitectura `glm5_next` desarrollado por Z.ai (Zhipu AI). La modificación consiste en una poda del 50 % de los expertos enrutados de la capa MoE: de 288 expertos por capa se conservan 144, aplicando la tecnica REAP (Router-weighted Expert Activation Pruning) en una segunda pasada de seleccion. El resultado reduce el modelo de 321,3 B a 165,5 B de parametros manteniendo el formato FP8 original, lo que lo convierte en la version maestra de mayor fidelidad de la familia podada.
 
-La relevancia de este modelo radica en que demuestra cómo reducir significativamente el footprint de un MoE grande mediante poda de expertos, concentrando la degradación en dominios recuperables vía RAG (como conocimiento factual general) mientras preserva razonamiento, código y agentes. Sin embargo, el autor indica explícitamente que no se han ejecutado benchmarks generativos y que las métricas reportadas son de acuerdo con el profesor, no de capacidad. El checkpoint tiene 0 descargas y 0 likes, lo que indica que no ha sido ampliamente probado por la comunidad.
+El modelo resuelve el problema de desplegar un LLM multimodal de gran escala en infraestructuras con memoria limitada: 160,6 GiB en disco frente a los 305,8 GiB del modelo base. Conserva la ventana de contexto de 1.048.576 tokens, la torre de vision de 24 bloques y el bloque MTP (multi-token prediction) que habilita decodificacion especulativa. Es relevante ahora porque el autor ha publicado una evaluacion generativa (noviembre de 2026) que documenta tanto las ganancias en codigo como una regresion severa en prompts de conocimiento general.
+
+La ficha corresponde al checkpoint FP8, no a las variantes NVFP4 ni GGUF, que se distribuyen en repositorios separados y estan construidas a partir de estos mismos pesos. La licencia MIT heredada del modelo base permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) podada, basada en GLM-5.3-Flash; transformer con atencion y vision |
-| Parametros totales | 165.470.880.558 (165,47B) |
-| Parametros activos | no disponible (el modelo base tiene 18B activos, pero tras la poda no se especifica) |
-| Longitud de contexto | no especificado (el modelo base GLM-5.3-Flash soporta 1M tokens) |
-| Tipos de cuantizacion | FP8 E4M3 con block scales 128x128 (heredado del base) |
-| Idiomas soportados | no especificado (el modelo base es multilingue, pero no se ha confirmado para este checkpoint) |
-| Licencia | MIT |
-| Formato de pesos | safetensors (FP8) |
-
-Nota: el tamano del repo es 333,9 GB, pero el checkpoint en si ocupa 160,6 GiB segun la model card. La diferencia podria deberse a otros archivos (configuraciones, etc.).
+| Arquitectura | `Glm5NextForConditionalGeneration` (`glm5_next`): 45 capas decoder, 34 capas de atencion lineal KDA y 11 capas MLA con atencion dispersa DSA; capas 0-2 con MLP denso, capas 3-44 MoE; hidden size 4096; torre de vision de 24 bloques |
+| Parametros totales | 165.470.880.558 (165,5 B, recuento safetensors) |
+| Parametros activos | no disponible (el autor no los calculo; top-8 de 144 expertos enrutados + 1 experto compartido por capa) |
+| Longitud de contexto | 1.048.576 tokens (`max_position_embeddings`, sin modificar) |
+| Tipos de cuantizacion | FP8 E4M3 con escalas de bloque 128x128 (`weight_scale_inv` en F32) en expertos enrutados y compartidos, proyecciones MLA y capas densas 0-2; BF16 en atencion KDA, indexador DSA, routers, embeddings, `lm_head`, torre de vision e hiperconexiones. Existen variantes NVFP4 y GGUF en repositorios hermanos |
+| Idiomas soportados | no disponible |
+| Licencia | MIT (heredada del modelo base) |
+| Formato de pesos | safetensors (62 shards, 172.416.620.840 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es un MoE nativamente multimodal con 320B parametros totales y 18B activos, con 288 expertos enrutados por capa y routing top-8. Este checkpoint aplica REAP, que poda el 50% de los expertos enrutados (queda 144 por capa) manteniendo el routing top-8. La poda se realiza eliminando tensores completos de los expertos, utilizando sus escalas `weight_scale_inv` de FP8, lo que segun el autor es "lossless" en los pesos retenidos (no hay error de cuantizacion adicional). Se aplico un proceso de "healing" que reescala los expertos supervivientes para compensar la eliminacion, aunque no hay reentrenamiento. La calibracion se hizo con 5,5M tokens de un corpus con licencias permisivas, ponderado por dominios: agentic 24%, codigo 21%, matematicas 15%, multimodal 15%, ciencia+bio 10%, finanzas 8% y ballast 7%. Se incluyeron pares imagen-texto reales para no eliminar expertos dedicados a vision. El bloque MTP (Multi-Token Prediction) se excluyo de la poda. El autor verifico que la implementacion de REAP captura correctamente la saliencia del router, excluyendo el `e_score_correction_bias`, y valido el presupuesto de calibracion con una regla de parada split-half.
+La arquitectura combina atencion lineal KDA en 34 de las 45 capas con atencion MLA de tipo disperso (DSA) en las 11 restantes, un patron hibrido orientado a reducir el coste computacional en contextos muy largos. Las tres primeras capas usan MLP denso y el resto son MoE con 144 expertos enrutados de los 288 originales, enrutamiento top-8 y un experto compartido, ambos sin cambios respecto al modelo base. Incluye una capa 45 adicional correspondiente al bloque MTP (`num_nextn_predict_layers: 1`), tambien podada a 144 expertos, que permite decodificacion especulativa. La torre de vision de 24 bloques se mantiene intacta en BF16.
+
+El proceso de poda no implica reentrenamiento completo: la seleccion de expertos se realizo con REAP en una segunda pasada (pass-2), seguida de una fase de "healing" con un escalar por capa medido empiricamente. La calibracion se hizo con secuencias de 2.048 tokens. El autor reporta una concordancia top-1 de 0,8425 frente al modelo sin podar sobre 241.516 tokens retenidos, evaluados en modo teacher-forced. Existe una tercera pasada experimental (v3, en el subdirectorio `pass3-hope/`) que usa seleccion HOPE con `protect_frac` 0.04 y un estimador de healing de primer momento; no ha sido evaluada y su healing presento un fallo de validacion que produjo una sobrecorreccion estimada del 30 %.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: hereda las capacidades del modelo base, aunque degradadas en ciertas areas.
-- Codigo: retencion de saliencia de 0,728, una de las mas altas, lo que sugiere que la capacidad de generacion de codigo se preserva en gran medida.
-- Matematicas: retencion 0,713.
-- Agente/tool use: retencion 0,747, la mas alta, lo que indica buena preservacion para tareas de agente.
-- Vision: el modelo base es nativamente multimodal (procesa imagenes); la poda no toca el vision tower, pero los tokens de imagen enrutados a traves de expertos podrian verse afectados. La retencion de vision es 0,682, pero el autor indica que es "unmeasured" (n demasiado pequeno en la evaluacion).
-- Multilingue: no especificado, pero el base probablemente soporta chino e ingles.
-- Soporte de tool calling / function calling: probablemente heredado del base, pero no se ha verificado en este checkpoint.
-- Razonamiento multi-step: no se ha evaluado.
-- No se menciona soporte de thinking mode ni audio.
+- Generacion de texto y razonamiento multimodal: pipeline `image-text-to-text`, con entrada conjunta de imagen y texto gracias a la torre de vision de 24 bloques.
+- Generacion de codigo: la evaluacion del build NVFP4 hermano conserva el 94,8 % de la puntuacion HumanEval+ del modelo sin podar en generacion pareada.
+- Contexto largo: ventana de 1.048.576 tokens, adecuada para documentos extensos, repositorios completos o historiales de conversacion prolongados.
+- Decodificacion especulativa mediante el bloque MTP conservado (capa 45).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada (no se documenta explicitamente).
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el autor no publica la lista de idiomas.
 
 ## Casos de uso
 
-- Despliegue en dispositivos edge con restricciones de memoria (Jetson, Thor): el checkpoint ocupa 160,6 GiB en FP8, significativamente menos que el modelo base (que en BF16 ocupa ~642 GB). Aunque sigue siendo grande, permite ejecutarse en sistemas con multiples GPUs de gama alta.
-- Sistemas de generacion de codigo asistida en entornos con recursos limitados: la retencion de codigo es alta (0,728), por lo que puede usarse para autocompletado o generacion de codigo en pipelines de CI/CD, especialmente si se combina con RAG para documentacion.
-- Agentes autonomos con tool calling: la retencion agentic es la mas alta (0,747), lo que lo hace adecuado para tareas de razonamiento con herramientas, como orquestacion de APIs o navegacion web.
-- Asistentes de matematicas y ciencia: con retencion de 0,713 y 0,720 respectivamente, puede servir para resolucion de problemas matematicos o apoyo en investigacion cientifica.
-- Aplicaciones multimodales ligeras (analisis de imagenes con texto): aunque la vision no esta medida, la retencion de 0,682 sugiere que podria funcionar, pero requiere validacion.
-- Sistemas RAG: el autor recomienda emparejar el modelo con recuperacion para compensar la baja retencion en conocimiento factual general (ballast 0,487), por lo que es util en chatbots con acceso a una base de conocimiento externa.
+- Generacion de codigo en produccion: el modelo mantiene el 94,8 % de HumanEval+ en la variante NVFP4 y conserva el bloque MTP para decodificacion especulativa, lo que lo hace util en pipelines de autocompletado y refactorizacion donde el coste por token importa. Conviene limitar el uso a tareas de codigo, dado el comportamiento observado en prompts generales.
+- Analisis de repositorios completos: con 1.048.576 tokens de contexto se puede ingerir un arbol de codigo extenso o una base de documentacion entera en una sola pasada, sin fragmentacion ni recuperacion externa.
+- Procesamiento de documentos con imagenes: la torre de vision permite extraer y razonar sobre tablas, diagramas y capturas dentro de flujos de digitalizacion documental.
+- Despliegue en nodos de 192 GB o superiores: al ocupar 160,6 GiB en FP8, encaja en configuraciones multi-GPU o en aceleradores de memoria unificada grande, sirviendo como maestro de referencia para generar variantes cuantizadas.
+- Destilacion y generacion de datos sinteticos: su alta concordancia top-1 (0,8425) con el modelo sin podar lo hace adecuado como profesor en la generacion de datasets de entrenamiento a un coste menor que el modelo original.
+- Investigacion sobre poda de MoE: el repositorio documenta tres pasadas de seleccion distintas (v1, v2, v3) con metricas comparables, lo que lo convierte en un caso de estudio reproducible para experimentos de pruning.
+- Evaluacion comparativa de cuantizaciones: al existir builds FP8, NVFP4 y GGUF de los mismos pesos, permite medir el impacto aislado de cada formato sobre la calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks generativos (como MMLU, HumanEval, GSM8K) para este checkpoint. El autor indica explicitamente que "Evaluation status: NONE" y que las metricas reportadas son de acuerdo con el profesor (teacher-forced agreement) sobre 241.516 tokens held-out que la calibracion no vio, comparado con el modelo sin podar. Estas metricas no son equivalentes a benchmarks de capacidad.
+| Metrica | Resultado | Contexto |
+|---|---|---|
+| Concordancia top-1 vs. modelo sin podar | 0,8425 | Teacher-forced, 241.516 tokens retenidos (v2 FP8) |
+| Concordancia top-1 vs. modelo sin podar | 0,8386 | Teacher-forced, build NVFP4 v2 |
+| Concordancia top-1 vs. modelo sin podar | 0,8370 | Teacher-forced, v1 FP8 (superado) |
+| HumanEval+ retenido | 94,8 % | Generacion pareada, build NVFP4 v2 frente a modelo sin podar |
+| Prompts que alcanzan el limite de tokens | 44-72 % | Generacion pareada, conocimiento general e instrucciones, build NVFP4 v2 |
+| Estimador de healing de primer momento vs. router replay | 0,7149 vs. 0,9111 | Sobre datos v2; sobrecorreccion de ~30 % en el healing de v3 |
 
-La tabla siguiente muestra las metricas de acuerdo top-1 y ΔNLL por dominio:
-
-| Dominio | Tokens | Top-1 agreement | ΔNLL (student − teacher) |
-|---|---|---|---|
-| Agentic | 69.202 | 0,873 | +0,137 |
-| Matematicas | 66.558 | 0,920 | +0,022 |
-| Ciencia | 45.034 | 0,830 | +0,125 |
-| Finanzas | 22.215 | 0,755 | +0,181 |
-| Ballast | 22.154 | 0,580 | +0,989 |
-| Codigo | 15.821 | 0,919 | +0,052 |
-| Vision | 532 | n demasiado pequeno | n demasiado pequeno |
-
-Ademas, la retencion de saliencia por dominio (fraccion de la saliencia de salida que sobrevive a la poda) es:
-
-| Dominio | Retencion |
-|---|---|
-| Agentic / tool use | 0,747 |
-| Codigo | 0,728 |
-| Ciencia | 0,720 |
-| Matematicas | 0,713 |
-| Vision (imagen-texto) | 0,682 |
-| Finanzas | 0,651 |
-| General / ballast | 0,487 |
-
-Estas metricas indican como de cerca esta el modelo podado del profesor, no su rendimiento absoluto.
+No se han publicado resultados de MMLU, GSM8K ni otros benchmarks estandar en la informacion disponible. Los datos de HumanEval+ y de limite de tokens corresponden al build NVFP4, no a este checkpoint FP8.
 
 ## Requisitos de hardware
 
-- El checkpoint pesa 160,6 GiB en FP8. Para cargar los pesos en VRAM se necesitan
+- VRAM estimada: 160,6 GiB para los pesos en FP8; el autor indica explicitamente que no cabe en un dispositivo de 128 GB.
+- GPU recomendadas: no disponible en la informacion proporcionada; por capacidad, requiere configuraciones multi-GPU o aceleradores con memoria unificada superior a 160 GiB.
+- GPU de consumo: no cabe en ninguna GPU consumer actual en FP8. Para equipos de 128 GB existe la variante NVFP4 de 98,2 GiB; para llama.cpp, los builds GGUF del repositorio hermano.
+- Opciones de despliegue: `transformers` (libreria declarada); vLLM, TGI, llama.cpp u Ollama no se mencionan en la model card. Los builds GGUF estan disponibles en `GLM-5.3-Flash-REAP50-GGUF` para llama.cpp.
+- Latencia y throughput: no disponibles. El bloque MTP permite decodificacion especulativa, pero el autor no publica cifras de tokens por segundo.
+
+## Comparativa con modelos similares
+
+| Modelo | Parametros | Contexto | Concordancia top-1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-REAP50-FP8-v2 (este) | 165,5 B | 1.048.576 | 0,8425 | MIT | 198 descargas, 2 likes |
+| GLM-5.3-Flash (base) | 321,3 B | 1.048.576 | referencia (1,0) | MIT | Repositorio oficial de Z.ai |
+| GLM-5.3-Flash-REAP50-NVFP4-v2 | no disponible | 1.048.576 | 0,8386 | MIT | Repositorio hermano, 98,2 GiB |
+| GLM-5.3-Flash-REAP50-FP8 (v1) | no disponible | 1.048.576 | 0,8370 | MIT | Superado, sin bloque MTP |
+
+No se dispone de datos de benchmarks estandar que permitan comparar con modelos de otros desarrolladores de tamano o categoria similar.
+
+## Limitaciones y advertencias
+
+- Regresion en generacion general: en el build NVFP4 de estos mismos pesos, entre el 44 % y el 72 % de los prompts de conocimiento general e instrucciones alcanzaron el limite de tokens, lo que sugiere un deterioro sustancial de la capacidad de cerrar respuestas en tareas no orientadas a codigo. Este comportamiento no se ha medido en el checkpoint FP8, pero procede de la misma mascara de poda.
+- Perdida de calidad por poda: la concordancia top-1 de 0,8425 implica que aproximadamente una de cada seis predicciones difiere del modelo sin podar, incluso en evaluacion teacher-forced.
+- La version v3 (`pass3-hope/`) es experimental, no ha sido evaluada y su healing se realizo con un estimador que sobrecorrige en torno al 30 %. No debe usarse en produccion.
+- El subdirectorio `pass3-hope/` carece de `preprocessor_config.json` y de procesador, por lo que no es autocontenido para inferencia multimodal.
+- Riesgo de alucinacion: no cuantificado por el autor; la poda de expertos puede eliminar conocimiento especializado de dominio y aumentar la fabricacion de datos en areas poco representadas.
+- Sesgos: no documentados en la informacion disponible.
+- Idiomas: la lista de idiomas soportados no se publica; no se puede garantizar el rendimiento multilingue del modelo base.
+- Restricciones de licencia: licencia MIT, sin restricciones conocidas para uso comercial. Verificar la procedencia de los datos de entrenamiento del modelo base si el uso previsto es sensible.
+- El nombre del repositorio (`-v2`) procede de la release de la segunda pasada; para distinguir versiones hay que guiarse por la ruta: la raiz es v2 y `pass3-hope/` es v3.
+- El modelo tiene 198 descargas y 2 likes, con validacion comunitaria muy limitada.
+
+## Enlaces
+
+- Modelo en Hugging Face: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Variante NVFP4 v2: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2
+- Variante GGUF: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
+- Version v1 FP8 (superada): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
+- Version v1 NVFP4 (superada): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4
+- Paper de referencia citado en los tags: arXiv:2510.13999 (https://arxiv.org/abs/2510.13999)
+- Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE

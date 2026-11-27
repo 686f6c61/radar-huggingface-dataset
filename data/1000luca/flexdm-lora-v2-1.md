@@ -2,106 +2,109 @@
 
 ## Resumen
 
-FlexDM-LoRA v2.1 es un adaptador LoRA desarrollado por el usuario 1000luca sobre el modelo base `google/gemma-4-31B-it`, diseñado específicamente para la toma de decisiones estructuradas. En lugar de generar texto libre, el adaptador lee las probabilidades asociadas a las etiquetas de opción en la posición `Answer: (` del contexto, devolviendo una distribución de probabilidad sobre un conjunto cerrado de opciones (preguntas de elección múltiple o de sí/no). El modelo resuelve el problema de obtener decisiones calibradas y reproducibles a partir de un estado (documento, conversación, lista de dispositivos, etc.) sin depender de la generación autoregresiva.
+FlexDM-LoRA-v2.1 es un adaptador LoRA de aproximadamente 4 GB (repo de 7,9 GB) desarrollado por el usuario 1000luca que convierte el modelo base google/gemma-4-31B-it en un modelo de decisión calibrado. No genera texto: recibe un estado (un documento, una conversación, una lista de dispositivos, un registro JSON) junto con una o varias preguntas de opción múltiple o de sí/no sobre ese estado, y devuelve una probabilidad para cada opción leída directamente de los logits de las etiquetas de opción en el token `Answer: (` en un único prefill.
 
-El adaptador se sirve con vLLM cargando el adaptador sin fusionar, con cuantización FP8 por bloques del modelo base y una política de lectura específica que incluye la duplicación del turno de usuario en peticiones de hasta 3.000 tokens y una relectura con opciones invertidas cuando la opción más probable queda por debajo de 0,6 de probabilidad. La versión 2.1 promedia dos ejecuciones de entrenamiento (semillas 0 y 1) y añade unas 65.000 preguntas nuevas orientadas a formatos que la versión 2.0 cubría deficientemente, alcanzando un Decision Index 0.3 de 68,99 frente al 66,49 de la versión anterior.
+El modelo resuelve el problema de la toma de decisiones tipadas y calibradas sobre contexto, un caso de uso distinto al de la generación abierta: en lugar de producir una respuesta en lenguaje natural, emite distribuciones de probabilidad sobre opciones discretas. Según la model card, se sitúa en cuarta posición de 275 en el Decision Index (edición 0.4.1, datos del tablero del 2026-11-06) con una puntuación Full de 71,61, y obtiene la segunda mejor puntuación en dominios nuevos (79,92) de todo el tablero.
 
-El modelo es relevante porque propone un paradigma distinto al del chat generativo: la decisión se extrae directamente de los logits de las etiquetas, lo que permite obtener distribuciones calibradas, comparables entre opciones y con temperatura ajustada según el número de opciones. Está pensado para integrarse en pipelines de evaluación automática, enrutamiento o clasificación con contexto largo (hasta 131.071 tokens por fila).
+Es relevante ahora porque demuestra que un adaptador ligero sobre un modelo base congelado puede competir con fine-tunes completos en tareas de clasificación y decisión, con un coste de despliegue de un único fichero de adaptador sobre el modelo base sin modificar, cuantizado a FP8 en carga y servido en una sola GPU.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre transformer decoder (Gemma 4, 60 capas de texto); adaptador PEFT |
-| Parametros totales | No disponible (el adaptador LoRA tiene rango 128 sobre las siete proyecciones de las 60 capas de texto; el modelo base es de 31B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 131.071 tokens por fila (max_model_len 131.072) |
-| Tipos de cuantizacion | FP8 por bloques (`fp8_per_block`) del modelo base al cargar en vLLM; adaptador en safetensors |
-| Idiomas soportados | No disponibles |
-| Licencia | CC-BY-SA-4.0 |
-| Formato de pesos | safetensors (`adapter_model.safetensors`), `adapter_config.json`; copia PEFT en `peft/` |
+| Arquitectura | LoRA (PEFT) sobre transformer decoder google/gemma-4-31B-it; rango r=128 |
+| Parámetros totales | No disponible (adaptador LoRA sobre un base de 31B) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Modelo base cuantizado a FP8 por bloques en carga; adaptador en safetensors |
+| Idiomas soportados | Inglés (en) |
+| Licencia | cc-by-sa-4.0 (modelo base Apache-2.0) |
+| Formato de pesos | safetensors (PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre las siete proyecciones (`q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`) de las 60 capas de texto de Gemma 4. El entrenamiento usa PEFT LoRA con rango 64 y `lora_alpha` 128, dropout 0, LoRA en float32 sobre pesos bf16. Cada ejecución hace una época sobre 180.101 preguntas (110.456 peticiones), 1.524 pasos de unos 62.000 tokens (93,9M tokens), AdamW con lr 1e-4, 3% de warmup y decaimiento coseno, clipping de gradiente 1.0, en cuatro RTX PRO 6000 Blackwell en paralelo de datos, durante unas 14 horas.
+El adaptador es un LoRA de rango 128 aplicado sobre google/gemma-4-31B-it (commit `842da3794eaa0b77d5f08bae87a17459d91ff475`), que permanece congelado y sin cambios; en carga se cuantiza a FP8 por bloques. La inferencia no usa decodificación generativa: se lee la probabilidad de cada opción desde los logits de las etiquetas de opción en el token `Answer: (` en un solo prefill, lo que da una distribución calibrada sobre las alternativas en una única pasada.
 
-La versión 2.1 promedia dos ejecuciones (semillas 0 y 1) apilando ambos LoRA de rango 64 en uno de rango 128 cuyo cambio es exactamente la media de los dos (ΔW = ½ ΔW₀ + ½ ΔW₁). El `lora_alpha` almacenado de 89,6 aplica 0,7 de ese cambio. La función de pérdida se calcula por pregunta sobre la distribución servida (softmax de los logits de etiqueta con soft-cap a las temperaturas de servicio): entropía cruzada contra la etiqueta dorada o la distribución del anotador, más 1,0 · KL(profesor ‖ modelo) más 0,3 · Brier (más RPS para escalas de valoración). El profesor es el propio modelo base congelado: Gemma leído por FlexDM promediado sobre el orden original e invertido de opciones, y para las preguntas de razonamiento, la distribución propia de Gemma tras thinking (2 muestras, hasta 3.072-4.096 tokens de pensamiento). No se usa ningún otro modelo como profesor.
-
-Una innovación destacable es la doble copia del adaptador: como las capas de atención completa de Gemma 4 no tienen `v_proj` (`attention_k_eq_v`, la V es la salida de `k_proj`), en transformers el LoRA de `k_proj` afecta tanto a K como a V; en vLLM, la porción V de su `qkv_proj` fusionada tiene su propio LoRA, por lo que la copia servida repite el LoRA de `k_proj` como `v_proj` en las 10 capas afectadas (5, 11, ..., 59). La copia `peft/` es la original para transformers.
+Según la model card, la receta de entrenamiento está completamente divulgada (datos, función de pérdida, regla de selección y descontaminación). El único profesor utilizado es el propio modelo base congelado: no se emplearon salidas de Jev ni de otras entradas del tablero. El autor declara que el adaptador aporta +4,05 puntos de Full respecto al mismo lector sin entrenar (FlexDM, 67,56), con +3,41 en las pruebas privadas de mismas habilidades y +5,00 en las tareas privadas de dominios nuevos, mejorando 24 de las 34 tareas privadas de mismas habilidades.
 
 ## Capacidades
 
-- Toma de decisiones estructuradas: devuelve una distribución de probabilidad sobre cada opción de una pregunta de elección múltiple o de sí/no, leyendo los logits de etiqueta en `Answer: (`.
-- Preguntas de elección múltiple con entre 2 y 255 opciones por pregunta.
-- Decisiones de sí/no con temperatura específica (`temperature_noul` 10,732).
-- Manejo de contexto largo: hasta 131.071 tokens por fila, sin truncamiento (las filas más largas se rechazan como `unsupported`).
-- Relectura de baja confianza: si la opción más probable queda por debajo de 0,6, se relee con las opciones en orden inverso y se promedian ambas distribuciones.
-- Lectura doble para peticiones de hasta 3.000 tokens, uniendo el turno de usuario con `Read the same input again before answering:`.
-- Procesamiento por lotes: una pasada hacia delante por petición con las preguntas de la petición lado a lado.
-- Integración con vLLM 0.30.0 offline `LLM` con `enable_lora`, `max_lora_rank` 128, TRITON_ATTN, prefix caching y `gpu_memory_utilization` 0.70.
-- No genera texto: la respuesta es siempre una distribución sobre las opciones proporcionadas.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Clasificación y decisión tipada: devuelve una probabilidad por opción para preguntas de opción múltiple y de sí/no sobre un estado dado.
+- Calibración de probabilidades: la model card reporta ECE 0,054 y Brier 0,305 en la medición de calibración del tablero.
+- Procesamiento de estados heterogéneos: documentos, conversaciones, listas de dispositivos y registros JSON como entrada.
+- Inferencia en un único prefill: no genera texto, por lo que la latencia es baja (mediana de 155 ms por petición en una RTX PRO 6000 según el tablero).
+- Servido en vLLM con el adaptador cargado sobre el modelo base en FP8.
+- No soporta tool calling, agentes ni razonamiento multi-paso de forma nativa: su función es emitir decisiones, no ejecutar acciones.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: dado un estado con el texto del ticket y una lista de colas o departamentos como opciones, el adaptador devuelve la probabilidad de cada cola; la relectura con opciones invertidas y el umbral de 0,6 permiten derivar a revisión humana los casos ambiguos.
-- Clasificación de documentos largos: con hasta 131.071 tokens por fila, se puede introducir un contrato o un informe completo junto con preguntas de sí/no (por ejemplo, "¿contiene cláusula de confidencialidad?") y obtener la probabilidad de cada respuesta sin truncar el documento.
-- Evaluación automática de exámenes tipo test: el adaptador lee la pregunta y las opciones y devuelve la distribución sobre las etiquetas, lo que permite comparar con la respuesta dorada y calcular métricas calibradas (Brier, RPS) sobre lotes grandes.
-- Selección de herramienta o API en un agente: a partir del estado de la conversación y una lista de herramientas disponibles como opciones, el modelo devuelve la probabilidad de cada herramienta; el bucle del agente puede elegir la de mayor probabilidad o pedir confirmación si la distribución es plana.
-- Moderación y triaje de contenido: con opciones como "permitir", "revisar" o "bloquear", el adaptador produce una distribución calibrada que se puede umbralizar según la política de la aplicación, aprovechando la temperatura ajustada al número de opciones.
-- Diagnóstico sobre listas de dispositivos: dado un inventario de dispositivos y preguntas de sí/no o de elección múltiple sobre su estado, el adaptador devuelve probabilidades por opción, útil en paneles de operaciones que necesitan decisiones reproducibles y auditables.
-- Anotación asistida con distribución de anotadores: la pérdida admite distribuciones de anotadores y escalas de valoración (RPS), por lo que el adaptador puede usarse para predecir la distribución de etiquetas de un conjunto anotado por varias personas.
+- Triaje de tickets de soporte: dado el texto de una incidencia y un conjunto de categorías o preguntas de sí/no (por ejemplo, "¿requiere escalado?"), el modelo devuelve la probabilidad de cada opción, lo que permite umbralizar y enrutar automáticamente con confianza cuantificada.
+- Moderación de contenido con calibración: clasificar conversaciones o documentos contra políticas discretas y usar las probabilidades para fijar umbrales de revisión humana, aprovechando el ECE bajo reportado.
+- Validación de registros JSON: comprobar campos y consistencia de registros estructurados respondiendo preguntas de sí/no sobre el estado, integrándose en pipelines de calidad de datos.
+- Enrutamiento de conversaciones multi-turno: dado el historial de una conversación y opciones de intención, asignar la intención más probable con una distribución calibrada para decidir si se deriva a un humano.
+- Selección entre alternativas en sistemas de recomendación o configuración: dado un estado (por ejemplo, una lista de dispositivos) y opciones candidatas, puntuar cada una con su probabilidad.
+- Evaluación automática de respuestas: dado un par pregunta-respuesta y opciones de veredicto (correcto/incorrecto, útil/no útil), obtener la probabilidad de cada veredicto como señal de anotación.
+- Investigación en calibración y decisión: servir el adaptador en vLLM sobre el modelo base en FP8 en una sola GPU para reproducir los resultados del Decision Index con el kit y el scorer oficiales.
 
 ## Benchmarks y rendimiento
 
-| Metrica | ver 1.0 | ver 2.0 | ver 2.1 |
-|---|---|---|---|
-| Preguntas de entrenamiento | 90.007 | 115.249 | 180.101 |
-| Ejecuciones promediadas | 1 | 1 | 2 (semillas 0 y 1) |
-| Rango / fuerza servidos | 64 / 0,5 | 64 / 0,5 | 128 / 0,7 |
-| Relectura de baja confianza | no | sí | sí |
-| Decision Index 0.3 (índice público) | 65,47 | 66,49 | 68,99 |
+Datos declarados por el autor (no verificados) en la model card:
 
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) para este adaptador.
+| Benchmark | Métrica | Valor |
+|---|---|---|
+| Decision Index 0.4.1 (privado, 2026-11-06) | Full score (4.º de 275, grupo #2 empatado) | 71,61 |
+| Decision Index 0.4.1 (privado) | Mismas habilidades (60% del Full) | 66,07 |
+| Decision Index 0.4.1 (privado) | Dominios nuevos (40% del Full; 2.º de 275) | 79,92 |
+| Decision Index 0.3 (suite pública, 140.178 peticiones) | Índice público corregido por azar (ejecución propia) | 68,99 |
+| Tablero, medición de calibración | Exactitud / confianza media / ECE / Brier | 77,9% / 80,9% / 0,054 / 0,305 |
+
+Comparativa en el tablero (edición 0.4.1, datos del 2026-11-06):
+
+| # | Modelo | Tipo | Mismas habilidades | Dominios nuevos | Full |
+|---:|---|---|---:|---:|---:|
+| 1 | REAX 1.3 | ensemble de dos partes | 69,04 | 81,38 | 73,98 |
+| 2 | GLiDE 27B | fine-tune completo | 69,83 | 78,68 | 73,37 |
+| 3 | KnowLine 31B Gen1.5 | LoRA | 66,79 | 79,59 | 71,91 |
+| 4 | FlexDM-LoRA 2.1 · Gemma-4-31B | LoRA | 66,07 | 79,92 | 71,61 |
+| 5 | Sieve 31B v3 | fine-tune completo | 68,27 | 75,33 | 71,10 |
+| 22 | FlexDM · Gemma-4-31B (sin entrenar) | técnica de inferencia | 62,66 | 74,92 | 67,56 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 75 GB libres en una GPU para el servicio tal como se envió (modelo base de 31B en FP8 por bloques más el adaptador LoRA de rango 128 sin fusionar).
-- GPU recomendadas: una GPU con aproximadamente 75 GB libres; el entrenamiento se realizó en cuatro RTX PRO 6000 Blackwell en paralelo de datos.
-- ¿Cabe en GPU de consumo? No con la configuración de servicio descrita (FP8 por bloques y 75 GB libres); no se dispone de datos de configuraciones con cuantizaciones más agresivas.
-- Opciones de despliegue: vLLM 0.30.0 offline `LLM` con `enable_lora`, `max_lora_rank` 128, TRITON_ATTN, prefix caching, `max_model_len` 131.072 y `gpu_memory_utilization` 0.70; también es compatible con transformers/PEFT mediante la copia `peft/`. Entorno exacto: Python 3.12, vLLM 0.30.0, torch 2.13.0+cu130, transformers 5.16.1.
-- Notas de despliegue: definir `VLLM_USE_DEEP_GEMM=0` y poner el `bin/` del entorno virtual primero en `PATH` (FlashInfer necesita `ninja`).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: el adaptador ocupa unos 4 GB; el modelo base de 31B cuantizado a FP8 por bloques requiere aproximadamente 31 GB, por lo que el conjunto necesita del orden de 35 GB o más de VRAM (estimación a partir de los datos disponibles).
+- GPU recomendadas: RTX PRO 6000 (medición del tablero), A100 80 GB, H100; una GPU única es suficiente según la model card.
+- GPU de consumo: no cabe en GPUs de consumo habituales (24 GB o menos) con el base en FP8; no se dispone de datos para otras cuantizaciones.
+- Despliegue: vLLM con el adaptador LoRA cargado sobre el modelo base en FP8, con los mismos prompts, temperaturas y motor que FlexDM.
+- Latencia: mediana de 155 ms y media de 416 ms por petición en una RTX PRO 6000 según el tablero.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Full (Decision Index) | Licencia |
 |---|---|---|---|---|---|
-| FlexDM-LoRA v2.1 | Adaptador LoRA sobre Gemma-4-31B (rango 128, siete proyecciones, 60 capas) | 131.071 tokens | Decisiones estructuradas por logits de etiqueta | CC-BY-SA-4.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
-| FlexDM-LoRA v2.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | Hugging Face |
-| FlexDM-LoRA v1.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | Hugging Face |
-| Gemma-4-31B-it (base) | 31B | No disponible en la información | Generación de texto conversacional | No disponible en la información | Hugging Face |
-
-No se dispone de datos de benchmarks comparables con otros adaptadores de decisión de la misma categoría en la información proporcionada.
+| FlexDM-LoRA 2.1 (este) | LoRA sobre Gemma-4-31B | 31B (base) | No disponible | 71,61 | cc-by-sa-4.0 |
+| KnowLine 31B Gen1.5 | LoRA | 31B | No disponible | 71,91 | No disponible |
+| Sieve 31B v3 | fine-tune completo | 31B | No disponible | 71,10 | No disponible |
+| FlexDM (sin entrenar) | técnica de inferencia | 31B | No disponible | 67,56 | No disponible |
 
 ## Limitaciones y advertencias
 
-- El adaptador no genera texto: solo devuelve distribuciones sobre opciones predefinidas; no sirve para tareas generativas.
-- Límite estricto de 131.071 tokens por fila y de 2 a 255 opciones por pregunta; las filas más largas se rechazan como `unsupported` y no se truncan.
-- La calibración depende de las temperaturas de servicio (`temperature_choice` 10,9757 con pendiente logarítmica -1,7016, `temperature_noul` 10,732); cambiarlas altera las probabilidades.
-- La relectura con opciones invertidas y el umbral de 0,6 forman parte de la política de servicio; omitirlos cambia el comportamiento respecto al enviado.
-- El adaptador servido depende de la copia específica para vLLM (repetición del LoRA de `k_proj` como `v_proj` en las capas 5, 11, ..., 59); usar la copia `peft/` en vLLM sin ese ajuste serviría V sin el cambio entrenado.
-- Idiomas soportados no disponibles: no se puede garantizar el comportamiento multilingüe.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no aplica de la misma forma que en modelos generativos, pero la distribución puede estar mal calibrada en formatos alejados de los datos de entrenamiento.
-- La licencia CC-BY-SA-4.0 impone compartir bajo la misma licencia las obras derivadas; verificar compatibilidad con el uso comercial previsto.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que limita la evidencia de uso en producción por terceros.
-- Los datos de entrenamiento excluyen fuentes no comerciales o solo de investigación; no se han usado salidas de Jev ni de otras entradas.
+- No genera texto: solo emite probabilidades sobre opciones predefinidas; no sirve para tareas generativas.
+- Idiomas: la model card declara únicamente inglés; el rendimiento en castellano no está documentado.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; hereda los del modelo base Gemma-4-31B-it.
+- Alucinación: al no generar texto libre el riesgo es distinto, pero las probabilidades pueden ser erróneas o sobreconfiadas en estados fuera de distribución; la calibración reportada (ECE 0,054) procede de la medición del tablero y no está verificada de forma independiente.
+- Licencia cc-by-sa-4.0: impone compartir igual (ShareAlike) en obras derivadas, lo que condiciona el uso comercial y la distribución de adaptaciones.
+- Los resultados de benchmarks son declarados por el autor y no verificados; el propio tablero los agrupa como empatados dentro de 0,9 puntos.
+- Dependencia del modelo base google/gemma-4-31B-it (Apache-2.0) sin modificar y de su cuantización FP8 en carga; cambios en el base pueden alterar el comportamiento.
+- Longitud de contexto no disponible: no se puede garantizar el rendimiento con estados muy largos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/1000luca/FlexDM-LoRA-v2.1
+- Modelo en Hugging Face: https://huggingface.co/1000luca/FlexDM-LoRA-v2.1
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Versión anterior 2.0: https://huggingface.co/1000luca/FlexDM-LoRA-v2.0
-- Versión anterior 1.0: https://huggingface.co/1000luca/FlexDM-LoRA-v1.0
-- Repositorio FlexDM: https://github.com/1000luca/FlexDM/tree/v1.0
+- Leaderboard Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Ejecución pública (dataset): https://huggingface.co/datasets/1000luca/FlexDM-LoRA-v2.1-decision-index
+- Envío (PR #367): https://github.com/apolinario/decision-index/pull/367
+- Lector FlexDM: https://github.com/1000luca/FlexDM
+- Todas las versiones: https://huggingface.co/1000luca/FlexDM-LoRA
+- Blog del autor: https://1000luca.github.io/blog/flexdm/

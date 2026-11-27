@@ -2,80 +2,90 @@
 
 ## Resumen
 
-Sage-S2.1-Flash EXL3 3.0bpw es una cuantización de precisión reducida del modelo Sage-S2.1-Flash, un Mixture-of-Experts de 321.000 millones de parámetros desarrollado por InternLM. La conversión la publica el usuario androidli mediante la herramienta exllamav3 y aplica un esquema de cuantización EXL3 con codebook MCG a 3,0 bits por peso, limitado exclusivamente a las proyecciones de los expertos enrutados (`gate_proj`, `up_proj`, `down_proj`). El resto de tensores (atención, expertos compartidos, embeddings, normalizaciones y cabeza MTP) se mantiene en la precisión del modelo original.
+Sage-S2.1-Flash-EXL3-3.0bpw es una cuantizacion EXL3 de 3.0 bits por peso (bpw) del modelo Sage-S2.1-Flash, un Mixture-of-Experts de 321.000 millones de parametros desarrollado por InternLM. La publica el usuario androidli (greatyingzi en GitHub) y su objetivo es reducir el peso del checkpoint hasta 138,3 GiB para que pueda servirse en dos maquinas de clase DGX Spark (2 x 128 GB de memoria unificada) con tensor-parallel 2, algo imposible con el checkpoint original en bfloat16.
 
-El objetivo declarado es permitir la ejecución de un modelo de 321B en dos máquinas de clase DGX Spark con 128 GB de memoria unificada cada una, una GPU por nodo. Esto sitúa el checkpoint en el terreno de la inferencia de gran escala sobre hardware de escritorio de gama alta, un nicho donde las cuantizaciones agresivas de 3 bits resultan críticas para reducir la huella de memoria.
+La cuantizacion solo afecta a los expertos enrutados (gate_proj, up_proj y down_proj de los 288 expertos en cada una de las 42 capas MoE), que concentran casi todos los parametros. La atencion, los expertos compartidos, el router, los embeddings, la cabeza de salida y la torre de vision se mantienen en bfloat16. El resultado es un checkpoint que no carga con Transformers estandar: requiere un motor que entienda `Glm5NextForConditionalGeneration` y el layout EXL3 de expertos enrutados.
 
-En el momento de redactar esta ficha, el repositorio es un marcador de posición: los pesos aún no están disponibles para descarga y la conversión sigue en curso. El autor advierte explícitamente de que no se proporcionará ninguna evaluación independiente de calidad (ni perplejidad, ni KLD, ni benchmarks), por lo que debe tratarse como un checkpoint no validado.
+Es relevante porque demuestra que un MoE de esta escala puede desplegarse en hardware de consumo profesional de gama alta con una perdida de precision acotada en los tensores menos sensibles, aunque el autor no publica ninguna metrica de calidad (perplejidad, KLD ni scores de tareas).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (transformer), según modelo base internlm/Sage-S2.1-Flash |
-| Parametros totales | 321B (modelo base) |
+| Arquitectura | Transformer Mixture-of-Experts con atencion, SSM, torre de vision y capa MTP (multi-token prediction); clase `Glm5NextForConditionalGeneration` |
+| Parametros totales | 74.216.266.590 en el checkpoint cuantizado (modelo base: 321.000 millones, segun la model card) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3, codebook MCG, 3,0 bits por peso (solo expertos enrutados) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | EXL3 3.0 bpw con codebook MCG en expertos enrutados; bfloat16 en atencion, expertos compartidos, MLP denso, router, embeddings, cabeza de salida, normas y torre de vision; float16 en copias de expertos de la capa MTP; float32 en kernels de convolucion, parametros SSM, tablas de hyper-connection y bias de correccion del router |
+| Idiomas soportados | no disponible (smoke test en chino e ingles) |
 | Licencia | MIT |
-| Formato de pesos | EXL3 (exllamav3) |
+| Formato de pesos | safetensors (17 shards, 138,3 GiB) + `model.safetensors.index.json`, `config.json`, tokenizer y processor |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Mixture-of-Experts de 321.000 millones de parámetros. La información disponible no detalla la arquitectura interna del transformer, el número de expertos, el enrutamiento ni la composición del dataset de entrenamiento, por lo que esos datos deben consultarse en la model card del modelo original de InternLM.
+El modelo base es un MoE con 42 capas de mezcla (capas 3 a 44), 288 expertos enrutados por capa y una capa MTP adicional (capa 45) con copias de expertos en float16. El checkpoint incorpora ademas componentes hibridos: parametros SSM, kernels de convolucion, tablas de hyper-connection y una torre de vision con ajustes de video en la configuracion. La cuantizacion EXL3 se aplico solo a las 36.288 proyecciones de expertos enrutados (gate_proj, up_proj, down_proj), que es donde reside la practica totalidad de los parametros.
 
-La cuantización se genera con `convert.py` de exllamav3 a 3,0 bpw con codebook `mcg` y 250 filas de calibración de 2048 tokens. Durante la conversión se cuantizan todos los tensores a 3 bpw y después se reemplazan los no expertos por sus valores de origen, de modo que solo los expertos enrutados quedan cuantizados. Los expertos enrutados provienen de Sage-S2.1-Flash-FP8 y el resto de tensores de Sage-S2.1-Flash. La conversión se reparte entre dos máquinas (proceso primario y worker remoto) de forma bit-exacta, sin alterar los pesos resultantes, usando la herramienta exl3-dist-quant.
+El proceso de conversion se hizo con `convert.py` de exllamav3 (linea v1.6.0) con los parametros `-b 3.0 -cb mcg -hb 16 -eb 16 -mb 16 -vb 16 -cpi 600`, calibrando con 250 secuencias de 2.048 tokens. En una segunda pasada se conservaron los tensores `.mlp.experts.*` del output cuantizado y se tomaron el resto del checkpoint fuente. La conversion se repartio entre dos maquinas con un esquema bit-exacto (herramienta `exl3-dist-quant`). No se documenta el entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto y razonamiento heredados del modelo base Sage-S2.1-Flash (no verificados en este checkpoint).
-- Soporte de entradas multimodales según el modelo base, aunque el autor indica que dependen del motor de inferencia y no están probadas en esta cuantización.
-- Cabeza MTP (multi-token prediction) conservada en precisión de origen.
-- Tool calling, function calling, agentes y capacidades multilingües: no disponible en la información proporcionada para este checkpoint.
+- Generacion de texto y razonamiento: smoke test superado en chino e ingles, incluida aritmetica basica.
+- Codigo y matematicas: no hay evaluacion publicada; la model card solo confirma pruebas de humo.
+- Vision: la configuracion incluye ajustes de vision y video y la torre de vision esta presente, pero el soporte depende del motor de inferencia y no se ha probado.
+- Tool calling / function calling: no disponible.
+- Agentes y razonamiento multi-paso: no disponible.
+- Multilingue: solo verificado en chino e ingles; el resto de idiomas no esta documentado.
+- Decodificacion especulativa: soportada por el motor TensorFold, con ~65% de tasa de aceptacion.
 
 ## Casos de uso
 
-- Despliegue de un MoE de 321B en dos nodos DGX Spark: el objetivo declarado de la cuantización es repartir el modelo entre dos máquinas con 128 GB de memoria unificada, una GPU por nodo, reduciendo la huella de los expertos enrutados a 3,0 bpw.
-- Investigación sobre cuantización extrema: sirve para estudiar el impacto de 3,0 bpw con codebook MCG en un MoE de gran tamaño, comparando contra el modelo FP8 de origen en tareas propias.
-- Experimentación con EXL3 y exllamav3: útil para validar flujos de conversión distribuida y el rendimiento del motor exllamav3 con modelos de esta escala.
-- Inferencia local de gran modelo con memoria limitada: para equipos con dos GPUs de gran VRAM que no pueden alojar el modelo en FP8 o BF16.
-- Evaluación comparativa de precisión reducida: dado que no hay métricas publicadas, encaja en pipelines internos de evaluación que midan perplejidad y calidad por tarea frente al original.
-- Pruebas de motores de inferencia: permite comprobar compatibilidad de EXL3 con herramientas de serving y con la cabeza MTP en escenarios de decodificación especulativa.
+- Despliegue de un MoE de gran escala en hardware de gama alta no-datacenter: dos DGX Spark GB10 (2 x 128 GB de memoria unificada) con tensor-parallel 2 sobre enlace directo de 200 Gb/s con RoCE cargan el checkpoint en 176,9 s y decodifican a 33-37 tok/s.
+- Prototipado de asistentes conversacionales multilingues (chino/ingles): el modelo puede mantener conversaciones multi-turno, aunque la longitud de contexto no esta documentada y conviene validarla antes de fijar el diseno.
+- Investigacion sobre cuantizacion extrema de MoE: sirve como referencia reproducible para estudiar el impacto de 3.0 bpw en expertos enrutados manteniendo atencion en bf16.
+- Evaluacion comparativa de motores de inferencia: util para probar motores que soporten `Glm5NextForConditionalGeneration` y el layout EXL3, como TensorFold, y medir latencia y throughput en entornos de dos nodos.
+- Servicio interno de bajo coste con licencia permisiva: al ser MIT, puede integrarse en productos propietarios sin obligaciones de copyleft, siempre que se valide la calidad en la tarea concreta.
+- Experimentacion multimodal controlada: con la torre de vision presente, se puede explorar entrada de imagen o video si el motor de inferencia lo permite, asumiendo que no esta probado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no se medirán perplejidad, KLD ni métricas de benchmark para este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no hay perplejidad, KLD ni scores de tareas medidos para este checkpoint. Los unicos datos de rendimiento son de serving en 2x DGX Spark GB10 con TensorFold: carga en 176,9 s, 33-37 tok/s de decodificacion, 0,16-0,26 s de time to first token y ~65% de aceptacion en decodificacion especulativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el objetivo son 2 máquinas con 128 GB de memoria unificada cada una (256 GB en total), una GPU por nodo.
-- GPU recomendadas: hardware de clase DGX Spark; no se especifican otras GPU compatibles.
-- GPU de consumo: no disponible; el tamaño del modelo base (321B) y el reparto entre dos nodos sugieren que no cabe en una GPU de consumo convencional.
-- Opciones de despliegue: motor exllamav3 (formato EXL3). No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM/memoria estimada: 138,3 GiB de pesos; el autor la dimensiona para 2 x 128 GB de memoria unificada (dos DGX Spark GB10, una GPU cada una) con tensor-parallel 2.
+- GPU recomendadas: DGX Spark GB10 (verificado). Para el modelo base de 321B en bf16 harian falta varios nodos con A100/H100 de 80 GB; el checkpoint cuantizado no esta pensado para una sola GPU.
+- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB); requiere al menos dos nodos de memoria unificada grande o un servidor multi-GPU con suficiente VRAM agregada.
+- Opciones de despliegue: motor TensorFold (Zig) verificado; no es cargable con Transformers estandar. No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,16-0,26 s de TTFT y 33-37 tok/s de decodificacion en la configuracion de dos DGX Spark descrita.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| androidli/Sage-S2.1-Flash-EXL3-3.0bpw | 321B (MoE) | EXL3 3,0 bpw (expertos) | no disponible | MIT | Pesos aún no publicados |
-| internlm/Sage-S2.1-Flash | 321B (MoE) | Precisión de origen | no disponible | MIT | Disponible en HF |
-| internlm/Sage-S2.1-Flash-FP8 | 321B (MoE) | FP8 | no disponible | MIT | Disponible en HF |
+| Sage-S2.1-Flash-EXL3-3.0bpw (este) | 74,2B en checkpoint (321B base) | no disponible | EXL3 3.0 bpw en expertos | MIT | Hugging Face |
+| internlm/Sage-S2.1-Flash | 321B | no disponible | bf16 | MIT | Hugging Face |
+| internlm/Sage-S2.1-Flash-FP8 | 321B | no disponible | FP8 | MIT | Hugging Face |
+
+No se dispone de datos de benchmarks para establecer una comparacion de rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Pesos no disponibles: el repositorio es un marcador de posición y no hay archivos descargables en el momento de la ficha.
-- Sin validación de calidad: no se han medido perplejidad, KLD ni benchmarks; debe evaluarse en tareas propias antes de usarlo.
-- Cuantización con pérdida: los expertos enrutados a 3,0 bpw introducen degradación respecto al modelo de origen.
-- Multimodalidad no probada: el soporte de entradas multimodales depende del motor de inferencia y no se ha verificado.
-- Idiomas y contexto: no se dispone de información específica para este checkpoint.
-- Licencia MIT heredada del modelo base; conviene verificar las condiciones del modelo original de InternLM para uso comercial.
-- Sesgos y alucinaciones: no documentados para este checkpoint; se heredan los del modelo base.
+- No hay metricas de calidad publicadas: ni perplejidad, ni KLD, ni scores de tareas. El checkpoint solo ha pasado smoke tests en chino e ingles y aritmetica basica.
+- La cuantizacion de expertos es con perdida: el error relativo de Frobenius por capa durante la conversion se mantuvo entre 0,015 y 0,097 en las 45 capas, pero el autor advierte que es un diagnostico interno, no una metrica de calidad.
+- No es cargable con Transformers estandar; requiere un motor que soporte `Glm5NextForConditionalGeneration` y el layout EXL3.
+- Las lineales no cuantizadas se leen como bfloat16: un build que solo acepte float16 las rechazara.
+- La plantilla de chat upstream omite el recordatorio de vision que espera el runtime; hay que servir con una plantilla que lo incluya o desactivar vision.
+- El soporte multimodal (vision y video) depende del motor y no se ha probado.
+- Sesgos conocidos: no documentados; al no haber evaluacion, no se pueden descartar sesgos del modelo base.
+- Riesgo de alucinacion: no medido; sin benchmarks no hay base para estimarlo.
+- Licencia MIT permisiva, sin restricciones de uso comercial conocidas, pero la ausencia de validacion desaconseja usarlo en produccion sin evaluacion propia.
 
 ## Enlaces
 
-- Repositorio HF: https://huggingface.co/androidli/Sage-S2.1-Flash-EXL3-3.0bpw
+- Modelo en Hugging Face: https://huggingface.co/androidli/Sage-S2.1-Flash-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/internlm/Sage-S2.1-Flash
-- Modelo base FP8: https://huggingface.co/internlm/Sage-S2.1-Flash-FP8
-- Herramienta de cuantización distribuida: https://github.com/greatyingzi/exl3-dist-quant
+- Modelo base en FP8: https://huggingface.co/internlm/Sage-S2.1-Flash-FP8
+- Toolkit de cuantizacion: https://github.com/greatyingzi/exl3-dist-quant
+- Autor en GitHub: https://github.com/greatyingzi
+- Autor en Hugging Face: https://huggingface.co/androidli
+- Otros proyectos: https://depthsnap.com/ y https://toolve.net/

@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Time in India - timeanddate.com",
-      "url": "https://www.timeanddate.com/worldclock/india",
-      "snippet": "6:33 pm Kolkata IST UTC +5:30 See all Time Zones in India See Holidays in India Create a Calendar for India"
-    },
-    {
-      "title": "Time in India now",
-      "url": "https://time.is/India/",
-      "snippet": "Sep 19, 2026 · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India."
-    },
-    {
-      "title": "India Standard Time",
-      "url": "https://time.is/IST",
-      "snippet": "Sep 19, 2026 · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India Standard Time (IST)."
-    },
-    {
-      "title": "Current time in India",
-      "url": "https://en.true-time.com/in/",
-      "snippet": "Live exact time in India with seconds. Includes daylight saving time transitions for India. Current time zone UTC+05:30. Information: …"
-    },
-    {
-      "title": "Time in India (LIVE) - Worldometer",
-      "url": "https://www.worldometers.info/time/india/",
-      "snippet": "Sep 19, 2026 · Exact local time now in India. Time Zone, UTC offset, and DST. Clock with seconds, 12/24h formats, sunrise/sunset, …"
-    }
-  ]
+  "sources": []
 }

@@ -60,16 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "whittleOrg (Whittle) – Models - Hugging Face",
-      "url": "https://huggingface.co/whittleOrg/models",
-      "snippet": "Org profile for Whittle on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "Whittle Qwen 3.8 35B A3B by logic65 — VRAM 4.5GB, 256K context | LLM ...",
-      "url": "https://llm-explorer.com/model/logic65%2FWhittle-Qwen-3.8-35B-A3B,3wQmazLNQZM0FSCV5mgRyV",
-      "snippet": "Whittle Qwen 3.8 35B A3B is an open-source 27b LLM by logic65. VRAM 4.5GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    }
-  ]
+  "sources": []
 }

@@ -2,51 +2,51 @@
 
 ## Resumen
 
-MiniMax-H3-Pruned-DMD-FL2VA-Turbo-Fused es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario ibyteohdear en Hugging Face. Se trata de un derivado del transformer de `multimodalart/MiniMax-H3-Pruned`, sobre el que se ha fusionado (fused) un adaptador LoRA DMD de 8 pasos orientado a acelerar la inferencia ("turbo"). El resultado es un checkpoint único que no requiere cargar el LoRA por separado en tiempo de ejecución.
+MiniMax-H3-Pruned-DMD-FL2VA-Turbo-Fused es un modelo de difusion para generacion de video (texto-a-video, imagen-a-video y audio-video) derivado del modelo base multimodalart/MiniMax-H3-Pruned, publicado por el usuario ibyteohdear en Hugging Face. Se distribuye en formato diffusers y esta orientado a la sintesis de clips audiovisuales a partir de prompts textuales o imagenes de referencia, incluyendo la generacion conjunta de pista de audio mediante el autoencoder especifico AutoencoderKLMiniMaxH3Audio.
 
-El modelo conserva la arquitectura del transformer original de MiniMax-H3, con aproximadamente 20.111 millones de parámetros (20,1 B) en formato safetensors y un repositorio de 40,2 GB. La fusión se aplicó sobre 363 capas con un factor de escala de 0,897283 y un rango de LoRA de 16, sin hornear offsets AdaLN. Está pensado para usarse con la librería diffusers y requiere `trust_remote_code=True`.
+El modelo incorpora en su nombre los calificativos DMD, FL2VA y Turbo, que en el ecosistema de difusion suelen asociarse a destilacion (Distribution Matching Distillation), a un pipeline combinado de primer/ultimo fotograma y audio (First-Last to Video-Audio) y a una variante acelerada de pocos pasos. La model card, sin embargo, no documenta explicitamente el proceso de destilacion ni el numero de pasos de inferencia, por lo que estos extremos deben considerarse no verificados a partir de la informacion disponible.
 
-Su relevancia radica en que empaqueta en un solo artefacto la poda del modelo base y la destilación DMD de 8 pasos, lo que reduce el número de pasos de muestreo necesarios y simplifica el despliegue. La model card incluye además un pipeline de referencia en Gradio que combina el transformer con un codificador de texto Qwen3-VL y módulos auxiliares (ClipProj) para la generación de vídeo.
+Su relevancia actual radica en que permite experimentar con generacion de video y audio de forma local o en espacios de Hugging Face, apoyandose en un codificador de texto externo (Qwen3-VL de 8B o 32B en cuantizacion NF4) y en tecnicas de cuantizacion int8 para reducir requisitos de memoria. El repositorio ocupa 40,2 GB y el checkpoint contiene 20.111.462.920 parametros segun los pesos safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusión para vídeo (MiniMax-H3), con LoRA DMD fusionado |
-| Parametros totales | 20.111.462.920 (20,1 B) |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible de forma explícita; el pipeline de referencia usa Int8WeightOnlyConfig (torchao) y bfloat16 |
+| Arquitectura | difusion (pipeline modular MiniMax-H3 en diffusers); detalles internos no disponibles |
+| Parametros totales | 20.111.462.920 |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Longitud de contexto | no disponible (modelo generativo de video, no de texto) |
+| Tipos de cuantizacion | int8 weight-only mediante torchao; NF4 para el codificador de texto Qwen3-VL-32B; otras no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (license: other) |
-| Formato de pesos | safetensors (diffusers) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors (formato diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusión para generación de vídeo condicionada por imagen y texto, heredado de MiniMax-H3 en su variante podada (`MiniMax-H3-Pruned`). Sobre esa base se ha fusionado el adaptador `minimax_h3_dmd_fl2va_8step_turbo_pruned_diffusers.safetensors`, un LoRA de rango 16 con alpha 15,156 y escala de fusión 0,897283, aplicado sobre 363 capas. La fusión se realizó mediante `load_lora_adapter`, fijado de escalado, `fuse_lora`, eliminación de PEFT y guardado por shards. No se hornearon offsets AdaLN.
+El modelo se enmarca en la familia MiniMax-H3 y se distribuye como pipeline modular de diffusers, con bloques separados para preparacion de latentes y layout, ajuste de timesteps, codificacion de texto, denoising y decodificacion. Incluye dos autoencoders especializados: AutoencoderKLMiniMaxH3 para video y AutoencoderKLMiniMaxH3Audio para audio, lo que confirma que el modelo genera simultaneamente contenido visual y sonoro. El codificador de texto no forma parte del checkpoint principal: el codigo de la model card descarga Qwen3-VL (8B o 32B en bnb NF4) como encoder de prompts, con la posibilidad de aplicar una proyeccion ClipProj externa (NicoLab28/ClipProj-MiniMax-H3).
 
-El componente "DMD" y la etiqueta "8step turbo" indican una destilación orientada a reducir el número de pasos de muestreo (8 pasos), lo que acelera la inferencia frente al modelo base. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO. El pipeline de referencia de la model card emplea un codificador de texto Qwen3-VL (8B o 32B, según configuración) junto con módulos ClipProj específicos de MiniMax-H3 y los autoencoders de vídeo y audio (`AutoencoderKLMiniMaxH3`, `AutoencoderKLMiniMaxH3Audio`).
+No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni los detalles del proceso de destilacion DMD. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica informacion operativa verificable es la presencia de soporte para group offloading (apply_group_offloading de diffusers) y cuantizacion int8 del transformer, orientados a reducir el consumo de VRAM.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen y texto (image-text-to-video) mediante un pipeline modular de diffusers.
-- Generación acelerada con destilación DMD de 8 pasos ("turbo"), que reduce el coste de muestreo.
-- Integración con codificadores de texto Qwen3-VL para el condicionamiento textual.
-- Soporte de autoencoder de audio (`AutoencoderKLMiniMaxH3Audio`), lo que sugiere capacidad de generar pistas de audio asociadas al vídeo, aunque no se detalla su funcionamiento.
-- Carga directa sin necesidad de aplicar LoRA por separado (fusión ya incluida en los pesos).
-- Compatibilidad con cuantización Int8 weight-only vía torchao en el pipeline de referencia.
-- Soporte de `trust_remote_code=True` y código personalizado (`custom_code`).
-- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso; no aplica a un modelo de difusión de vídeo.
+- Generacion de video a partir de texto (text-to-video).
+- Generacion de video a partir de imagen (image-to-video), segun el pipeline declarado.
+- Generacion conjunta de audio y video (audio-video), mediante el autoencoder de audio dedicado.
+- Soporte de keyframes de primer y ultimo fotograma (FL2VA), segun la nomenclatura del modelo; su funcionamiento exacto no esta documentado en la model card.
+- Variante "Turbo" orientada a inferencia acelerada; el numero de pasos no se especifica.
+- Integracion con codificadores de texto Qwen3-VL (8B y 32B) para el procesamiento de prompts.
+- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-step, al tratarse de un modelo generativo de medios y no de un LLM conversacional.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Prototipado rápido de vídeo generativo: al estar destilado a 8 pasos, permite iterar sobre prompts imagen-texto con menor coste de cómputo que el modelo base, adecuado para demos y pruebas de concepto.
-- Generación de clips a partir de storyboards: se puede partir de una imagen clave y un prompt textual para producir vídeo, útil en previsualización de escenas.
-- Creación de contenido para redes sociales: generación de clips cortos condicionados por imagen y texto en flujos semiautomáticos.
-- Investigación en destilación de modelos de difusión: el checkpoint fusionado sirve como referencia para estudiar el efecto de fusionar LoRA DMD en un transformer podado.
-- Despliegue en entornos con recursos limitados: la poda del modelo base y la reducción de pasos facilitan su ejecución en hardware más modesto que el modelo completo.
-- Integración en pipelines de diffusers: al cargarse con `AutoModel.from_pretrained` y `trust_remote_code=True`, encaja en flujos existentes basados en diffusers y en pipelines modulares de MiniMax-H3.
-- Experimentación con audio-vídeo: la presencia del autoencoder de audio permite explorar generación conjunta de vídeo y audio en entornos de investigación.
+- Prototipado de clips publicitarios: generar videos cortos con audio a partir de un prompt descriptivo, usando el pipeline texto-a-video para iterar rapidamente sobre conceptos creativos antes de una produccion final.
+- Animacion de imagenes fijas: convertir ilustraciones o fotografias en clips animados mediante el pipeline imagen-a-video, util para presentaciones, redes sociales o contenido editorial.
+- Generacion de video con sonido sincronizado: emplear el autoencoder de audio para producir piezas audiovisuales completas sin postproduccion de sonido, adecuado para demos y maquetas.
+- Interpolacion entre fotogramas clave: usar la variante FL2VA para generar la transicion entre un primer y un ultimo fotograma definidos, aplicable a storyboards y animaticos.
+- Investigacion en difusion audiovisual: servir como base para experimentos academicos sobre generacion conjunta de video y audio, gracias a su estructura modular en diffusers y a la posibilidad de cuantizar el transformer a int8.
+- Despliegue en espacios de Hugging Face: el codigo incluye soporte para Spaces con GPU Zero, lo que permite ofrecer demos publicas de generacion de video sin mantener infraestructura propia.
+- Experimentacion con destilacion y aceleracion: util para estudiar el efecto de variantes DMD/Turbo sobre la calidad audiovisual, comparando con el modelo base MiniMax-H3-Pruned.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con 20,1 B de parámetros en bfloat16, los pesos rondan los 40 GB; en Int8 weight-only se reducirían aproximadamente a la mitad, aunque no se confirma en la información disponible.
-- GPU recomendadas: no disponible. Por tamaño, un checkpoint en bf16 requiere GPUs de clase A100/H100 de 80 GB o configuraciones multi-GPU; no se especifica en la model card.
-- ¿Cabe en consumer GPU? No se confirma. En bf16 no cabría en GPUs de consumo de 24 GB; con cuantización Int8 podría ser viable en GPUs de 48 GB o mediante offloading, pero no hay datos oficiales.
-- Opciones de despliegue: diffusers (con `trust_remote_code=True`), pipelines modulares de MiniMax-H3, y cuantización con torchao (`Int8WeightOnlyConfig`). El pipeline de referencia usa Gradio y `apply_group_offloading`.
-- Latencia y throughput: no disponible. La destilación a 8 pasos sugiere una reducción del número de pasos de muestreo, pero no se publican cifras de latencia.
+- VRAM estimada para inferencia: no disponible de forma explicita. Con 20.111 millones de parametros en bf16, el transformer requiere aproximadamente 40 GB solo en pesos; la cuantizacion int8 weight-only reduce esta cifra a unos 20 GB, y el codificador de texto Qwen3-VL-32B en NF4 anade varios GB adicionales.
+- GPU recomendadas: no documentadas por el autor. Por el volumen de parametros, se requiere al menos una GPU profesional con 40-80 GB (A100 80 GB, H100) para ejecucion comoda en bf16; con cuantizacion int8 y group offloading podria intentarse en GPUs de 24 GB con latencias elevadas.
+- Cabe en GPU consumer: no confirmado. Una RTX 4090 de 24 GB podria ser insuficiente en bf16 sin offloading agresivo; no hay datos del autor al respecto.
+- Opciones de despliegue: diffusers (pipeline modular MiniMax-H3), con soporte de torchao para cuantizacion int8 y apply_group_offloading para descarga de capas a CPU. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibyteohdear/MiniMax-H3-Pruned-DMD-FL2VA-Turbo-Fused | 20,1 B | no disponible | Image-text-to-video (destilado 8 pasos) | minimax-h3-community-license-agreement | Hugging Face, diffusers |
-| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no disponible | Image-text-to-video (podado, sin LoRA turbo) | no disponible | Hugging Face |
-| MiniMax-H3 (modelo original) | no disponible | no disponible | Image-text-to-video | no disponible | no disponible |
+| MiniMax-H3-Pruned-DMD-FL2VA-Turbo-Fused | 20.111 M | no aplica | difusion video+audio | minimax-h3-community-license-agreement | Hugging Face (497 descargas) |
+| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no aplica | difusion video | no disponible | Hugging Face |
+| Otros modelos de video-audio de la familia MiniMax-H3 | no disponible | no aplica | difusion | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia es `minimax-h3-community-license-agreement` (license: other): es necesario revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones.
-- El repositorio está etiquetado como `not-for-all-audiences`, lo que indica contenido potencialmente sensible o no apto para todos los públicos.
-- Al ser un modelo de difusión de vídeo, puede generar contenido sesgado, estereotipado o inapropiado según los datos de entrenamiento del modelo base, no documentados aquí.
-- Riesgo de alucinación visual y de artefactos en la generación de vídeo, especialmente con prompts ambiguos o imágenes de entrada de baja calidad.
-- No se documentan los idiomas soportados para el condicionamiento textual; el pipeline de referencia usa Qwen3-VL, pero no se especifica cobertura lingüística.
-- Requiere `trust_remote_code=True` y código personalizado (`custom_code`), lo que implica ejecutar código del repositorio; conviene auditar el código antes de usarlo en producción.
-- El pipeline de referencia depende de repositorios externos (Qwen3-VL, ClipProj-MiniMax-H3) y de versiones concretas de diffusers, transformers y torchao, lo que puede afectar a la reproducibilidad.
-- No hay información sobre el dataset de entrenamiento ni sobre sesgos específicos medidos; la evaluación de calidad queda a cargo del usuario.
+- La model card no documenta el proceso de entrenamiento, los datos utilizados ni los pasos de inferencia recomendados; la informacion tecnica es muy escasa.
+- El modelo esta etiquetado como "not-for-all-audiences", lo que implica que puede generar contenido no apto para todo publico; se recomienda moderacion en produccion.
+- La licencia minimax-h3-community-license-agreement impone condiciones especificas para uso comercial que deben revisarse antes de desplegar el modelo; no se detallan en la informacion disponible.
+- Riesgo de alucinacion visual y de incoherencias temporales inherente a los modelos de difusion de video; no hay evaluaciones publicadas que lo cuantifiquen.
+- Sesgos conocidos: no documentados.
+- Limitaciones de idioma: no disponibles; el comportamiento multilingue de los prompts depende del codificador Qwen3-VL.
+- El codigo de la model card descarga dependencias externas (Qwen3-VL, ClipProj) de otros repositorios, lo que anade superficie de fallo y posibles cambios de comportamiento ajenos al autor.
+- El uso de cuantizacion int8 y offloading puede degradar la calidad audiovisual; no se han publicado comparativas al respecto.
+- El repositorio ocupa 40,2 GB, lo que exige espacio en disco considerable y tiempos de descarga largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-Pruned-DMD-FL2VA-Turbo-Fused
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
-- Repositorio ClipProj-MiniMax-H3: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
-- Codificador de texto Qwen3-VL 8B (referencia del pipeline): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
-- Codificador de texto Qwen3-VL 32B (referencia del pipeline): https://huggingface.co/prithivMLmods/Qwen3-VL-32B-Instruct-abliterated-v1
+- Codificador de texto alternativo (Qwen3-VL-8B): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- Codificador de texto alternativo (Qwen3-VL-4B): https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2
+- Codificador de texto en NF4: https://huggingface.co/ibyteohdear/qwen3_vl_32b_bnb_nf4
+- Proyeccion ClipProj: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3

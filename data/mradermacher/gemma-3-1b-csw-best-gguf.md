@@ -2,90 +2,89 @@
 
 ## Resumen
 
-`mradermacher/gemma-3-1b-csw-best-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo base `BeardedMonster/gemma-3-1b-csw-best`, un ajuste fino de Gemma 3 de 1B parámetros orientado a lenguas africanas y a fenómenos de code-switching (alternancia de lenguas en una misma conversación) e idioms (expresiones idiomáticas). El trabajo de cuantización lo firma mradermacher, un publicador habitual de GGUF en Hugging Face, mientras que el modelo original proviene de BeardedMonster. La ficha cubre, por tanto, el artefacto distribuido como GGUF; los detalles de entrenamiento y datos del ajuste fino no están documentados en la información disponible.
+`mradermacher/gemma-3-1b-csw-best-GGUF` es una coleccion de cuantizaciones GGUF del modelo `BeardedMonster/gemma-3-1b-csw-best`, un ajuste fino de Gemma 3 de 1.300 millones de parametros orientado a lenguas africanas y a fenomenos de code-switching e idiomatismos. El trabajo de cuantizacion lo firma mradermacher, mientras que el modelo base y su entrenamiento corresponden a BeardedMonster. El repositorio se publico el 24 de noviembre de 2026 y acumula 437 descargas.
 
-El interés práctico del artefacto es que empaqueta un modelo de 1.301.875.840 parámetros (según los safetensors del repo) en un rango de cuantizaciones que va de Q2_K a f16, con pesos entre 1,0 GB y 2,7 GB, lo que permite ejecutarlo en hardware de consumo y en entornos con recursos limitados. Cubre 22 lenguas africanas declaradas (yoruba, hausa, igbo, swahili, zulú, xhosa, afrikáans, amárico, somalí, kinyarwanda, lingala, luganda, shona, chichewa, sesotho, setswana, malgache, wolof, ewe, twi, oromo y tigriña), un conjunto relevante para aplicaciones de NLP de bajos recursos.
+El modelo aborda un problema concreto: la mayoria de los LLM generalistas rinden de forma deficiente en lenguas africanas de bajos recursos y en conversaciones donde se mezclan varios idiomas dentro de un mismo turno (code-switching), algo habitual en contextos urbanos multilingues. El ajuste cubre 22 idiomas declarados en la model card, entre ellos yoruba, hausa, igbo, suajili, zulu, xhosa, afrikaans, amharico, somali, kinyarwanda, lingala y otros.
 
-La relevancia actual radica en la escasez de modelos ligeros con cobertura multilingüe africana y capacidad de manejar mezcla de lenguas, un escenario habitual en conversaciones reales en regiones multilingües. Al estar en GGUF y ser compatible con endpoints, encaja en despliegues con llama.cpp, Ollama o servidores compatibles con la API de Hugging Face.
+La relevancia de esta ficha reside en que ofrece el modelo en formato GGUF con un abanico amplio de cuantizaciones (desde Q2_K hasta f16), lo que permite ejecutarlo en hardware modesto, incluido CPU, algo especialmente util para despliegues en regiones con acceso limitado a GPU. Al tratarse de un modelo de 1.300 millones de parametros, el peso de los ficheros es reducido y la huella de memoria es manejable.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Gemma 3 1B); detalles exactos no disponibles |
-| Parámetros totales | 1.301.875.840 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Arquitectura | Transformer (derivada de Gemma 3 1B); detalles especificos del ajuste no disponibles |
+| Parametros totales | 1.301.875.840 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | yo, ha, ig, sw, zu, xh, af, am, so, rw, ln, lg, sn, ny, st, tn, mg, wo, ee, tw, om, ti |
-| Licencia | other (heredada del modelo base; términos concretos no disponibles) |
-| Formato de pesos | GGUF (conversión desde safetensors del modelo base) |
+| Licencia | other (heredada del modelo base; consultar terminos de Gemma) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un ajuste fino de Gemma 3 1B, una arquitectura transformer decoder-only de la familia Gemma. Los detalles específicos de la arquitectura (número de capas, dimensión oculta, mecanismo de atención, uso de atención lineal o ventanas deslizantes) no están documentados en la información disponible, más allá de la referencia a `gemma3` en las etiquetas. El tamaño de parámetros (1.301.875.840) coincide con la escala de 1B de la familia.
+El modelo es un ajuste fino de Gemma 3 de 1.300 millones de parametros, una arquitectura transformer decoder-only desarrollada originalmente por Google DeepMind. El autor del ajuste, BeardedMonster, lo ha especializado en lenguas africanas y en fenomenos de code-switching e idiomatismos, segun los tags del repositorio. No se dispone de informacion detallada sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el ajuste.
 
-El proceso de cuantización lo realiza mradermacher con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, generando cuantizaciones estáticas (no ponderadas/imatrix, según indica el propio autor). No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de la mezcla multilingüe ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Las etiquetas `african-languages`, `code-switching` e `idioms` sugieren que el ajuste fino se centró en esos fenómenos, pero no hay datos verificables sobre el volumen o la metodología.
+Las cuantizaciones han sido generadas por mradermacher con la herramienta de cuantizacion de llama.cpp, usando el tipo de conversion `hf` y version de cuantizacion 2, con tensor de salida cuantizado. Se ofrecen tanto cuantizaciones estaticas en este repositorio como cuantizaciones ponderadas con imatrix en un repositorio hermano (`gemma-3-1b-csw-best-i1-GGUF`), que suelen ofrecer mejor relacion calidad/tamano.
 
 ## Capacidades
 
-- Generación de texto conversacional en 22 lenguas africanas declaradas, incluyendo yoruba, hausa, igbo, swahili, zulú, xhosa, afrikáans, amárico, somalí, kinyarwanda, lingala, luganda, shona, chichewa, sesotho, setswana, malgache, wolof, ewe, twi, oromo y tigriña.
-- Manejo de code-switching: capacidad declarada de alternar entre lenguas dentro de una misma conversación, un escenario frecuente en contextos multilingües africanos.
-- Comprensión y generación de expresiones idiomáticas (idioms) en las lenguas cubiertas.
-- Conversación multi-turno (etiqueta `conversational`).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que permite servir el modelo mediante la infraestructura de Hugging Face.
-- No se documenta soporte explícito de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (thinking) en la información disponible.
+- Generacion de texto conversacional en 22 lenguas africanas declaradas, incluyendo yoruba, hausa, igbo, suajili, zulu, xhosa, afrikaans, amharico y somali.
+- Manejo de code-switching, es decir, mezcla de idiomas dentro de una misma conversacion o turno.
+- Comprension y generacion de expresiones idiomaticas en los idiomas cubiertos.
+- Capacidad conversacional multi-turno (tag `conversational`).
+- Compatibilidad con endpoints de inferencia (tag `endpoints_compatible`).
+- No se declaran capacidades especificas de tool calling, function calling, vision, audio ni modo de razonamiento explicito en la informacion proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente multilingüe en África subsahariana: el modelo puede gestionar conversaciones en swahili, hausa, yoruba o amárico, y alternar entre lenguas cuando el usuario mezcle idiomas, algo habitual en mercados multilingües. Su tamaño de 1B permite desplegarlo en servidores modestos o incluso en dispositivos locales.
-- Traducción y adaptación de contenido: útil para localizar documentación, mensajes de producto o material educativo hacia lenguas con poca cobertura de modelos grandes, usando las cuantizaciones Q4_K_M o Q5_K_M para equilibrar calidad y coste.
-- Procesamiento de conversaciones reales con code-switching: transcripción y normalización de chats de soporte, foros o redes sociales donde los hablantes mezclan, por ejemplo, swahili e inglés o yoruba e inglés.
-- Educación y tutoría lingüística: generación de ejemplos, explicaciones de expresiones idiomáticas y ejercicios en lenguas africanas, aprovechando la etiqueta `idioms` del ajuste fino.
-- Moderación y clasificación de contenido: al ser un modelo conversacional ligero, puede usarse como primer filtro para detectar contenido inapropiado en lenguas de bajos recursos, antes de escalar a un modelo mayor.
-- Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K a Q4_K_S (1,0-1,1 GB) permiten ejecución en CPU, portátiles y dispositivos edge mediante llama.cpp u Ollama, útil para ONGs, escuelas o aplicaciones offline en zonas con conectividad limitada.
-- Investigación en NLP de bajos recursos: como punto de partida para experimentos de evaluación multilingüe, ajuste adicional o comparación de cuantizaciones sobre las 22 lenguas cubiertas.
+- Atencion al cliente en lenguas africanas: el modelo puede gestionar conversaciones multi-turno con usuarios que escriben en suajili, hausa o yoruba, reduciendo la dependencia de traduccion intermedia y mejorando la naturalidad de las respuestas.
+- Moderacion de contenido multilingue: clasificacion y respuesta a mensajes que mezclan idiomas (por ejemplo, ingles y suajili) en plataformas sociales africanas, donde el code-switching es la norma.
+- Asistentes de mensajeria para ONG y servicios publicos: despliegue en CPU o GPU de gama baja mediante GGUF Q4_K_M (1,1 GB) para dar soporte en zonas con infraestructura limitada.
+- Traduccion asistida y localizacion: generacion de borradores en lenguas de bajos recursos para equipos de localizacion, con revisión humana posterior.
+- Educacion y tutoria: respuestas conversacionales en amharico, zulu o xhosa para plataformas de aprendizaje, aprovechando el conocimiento idiomatico del ajuste.
+- Investigacion en NLP africano: modelo de referencia ligero para experimentos de evaluacion en code-switching, dado su tamano reducido y su disponibilidad en multiples cuantizaciones.
+- Prototipado rapido en entornos con recursos escasos: gracias a las cuantizaciones Q2_K y Q3_K_S (en torno a 1 GB), puede ejecutarse en portatiles sin GPU dedicada para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre aproximadamente 1,0 GB (Q2_K/Q3_K_S) y 2,7 GB (f16) solo para los pesos; hay que añadir el espacio para el contexto y el overhead del runtime (KV cache), que depende de la longitud de contexto (no disponible).
-- GPU recomendadas: cualquier GPU consumer moderna con 4 GB o más de VRAM puede ejecutar las cuantizaciones Q4_K_M o Q5_K_M; para f16 se recomienda al menos 4-6 GB. GPU de datacenter (A100, H100) no son necesarias para este tamaño, aunque pueden usarse para servir muchas peticiones concurrentes.
-- Cabe en GPU consumer: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) y en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de Hugging Face (endpoints_compatible), y cualquier runtime que acepte GGUF. Para el modelo base en safetensors, transformers con PyTorch.
-- Latencia y throughput: no disponibles; al ser un modelo de 1B, se espera baja latencia en GPU consumer, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 1,0-1,5 GB con cuantizaciones Q2_K a Q4_K_M; en torno a 1,5 GB con Q8_0; unos 2,7 GB con f16 (mas overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobrada; tambien cabe en GPUs de gama baja e integradas con suficiente memoria compartida.
+- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos anos, e incluso en CPU pura con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas africanos | Licencia | Formato |
 |---|---|---|---|---|---|
-| gemma-3-1b-csw-best-GGUF (este) | 1,30 B | no disponible | 22 lenguas africanas | other | GGUF |
-| Gemma 3 1B (base oficial de Google) | ~1 B | no disponible en la información | multilingüe amplio | Gemma Terms of Use | safetensors, GGUF |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32k (según documentación pública de Qwen) | multilingüe amplio | Apache 2.0 | safetensors, GGUF |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8k (según documentación pública de Hugging Face) | principalmente inglés | Apache 2.0 | safetensors, GGUF |
+| gemma-3-1b-csw-best (este) | 1,30 B | no disponible | 22 idiomas declarados | other | GGUF, safetensors |
+| Gemma 3 1B (base) | ~1 B | no disponible | Cobertura limitada | Gemma | safetensors, GGUF |
+| Modelos multilingues de ~1-3 B (p. ej. Qwen, Llama small) | 1-3 B | variable | Cobertura parcial | variable | variable |
 
-La comparación con Qwen2.5 y SmolLM2 se basa en datos públicos de sus respectivas documentaciones; los valores de contexto de Gemma 3 1B no se han verificado en la información disponible. La ventaja específica de este artefacto es la cobertura declarada de 22 lenguas africanas y el ajuste para code-switching e idioms, frente a modelos generalistas con mayor cobertura de inglés y chino pero menor especialización en lenguas africanas.
+La comparativa cuantitativa con alternativas concretas no esta disponible en la informacion proporcionada; la ventaja diferencial de este ajuste es su especializacion declarada en lenguas africanas y code-switching frente a los modelos base generalistas.
 
 ## Limitaciones y advertencias
 
-- La licencia es `other`, heredada del modelo base; no se especifican los términos exactos, por lo que es imprescindible revisar la licencia de `BeardedMonster/gemma-3-1b-csw-best` y, en su caso, la de Gemma 3 de Google antes de un uso comercial.
-- No hay información publicada sobre sesgos, datos de entrenamiento ni evaluación de calidad por lengua; la cobertura de 22 lenguas es declarada, pero no verificada mediante benchmarks.
-- Riesgo de alucinación inherente a un modelo de 1B parámetros; en tareas factuales o de razonamiento complejo el rendimiento será limitado.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; para producción se recomienda Q4_K_M o superior.
-- El autor indica que no hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicación, lo que puede afectar la calidad relativa frente a otros repositorios GGUF.
-- No se documenta soporte de tool calling, agentes, visión ni audio; no debe asumirse.
-- Longitud de contexto no disponible: planificar el despliegue sin asumir una ventana concreta.
-- El repo ocupa 13,9 GB por incluir todas las cuantizaciones; descargar solo el archivo GGUF necesario.
+- Alucinacion: como todo LLM de 1,3 B, el riesgo de generar contenido incorrecto o inventado es elevado, especialmente en tareas factuales.
+- Sesgos: los derivados de los datos de ajuste, no documentados en la informacion disponible; pueden aparecer sesgos linguisticos o culturales en las lenguas cubiertas.
+- Contexto: la longitud de contexto no esta documentada en la informacion proporcionada; conviene verificarla antes de disenar aplicaciones con ventanas largas.
+- Licencia: la licencia es `other`, heredada del modelo base Gemma; es imprescindible revisar los terminos de uso de Gemma antes de un despliegue comercial.
+- Calidad de cuantizaciones bajas: Q2_K y Q3_K_S pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para produccion.
+- Cobertura idiomatica: aunque se declaran 22 idiomas, el rendimiento real por idioma no esta documentado; conviene evaluar por idioma antes de usar en produccion.
+- Tamano: con 1,3 B de parametros, el modelo no es adecuado para razonamiento complejo, matematicas avanzadas ni generacion de codigo de alta calidad.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/gemma-3-1b-csw-best-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3-1b-csw-best-GGUF
 - Modelo base: https://huggingface.co/BeardedMonster/gemma-3-1b-csw-best
-- Página de overview de cuantizaciones del autor: https://hf.tst.eu/model#gemma-3-1b-csw-best-GGUF
-- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3-1b-csw-best-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#gemma-3-1b-csw-best-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfica de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

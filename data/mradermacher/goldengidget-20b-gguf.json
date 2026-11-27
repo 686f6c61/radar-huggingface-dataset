@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/GoldenGidget-20B-GGUF",
+  "slug": "mradermacher-goldengidget-20b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GoldenGidget-20B-GGUF",
+  "created_at": "2025-09-08T14:59:06.000Z",
+  "updated_at": "2026-11-27T02:34:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Elfrino/GoldenGidget-20B",
+    "base_model:quantized:Elfrino/GoldenGidget-20B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 19994362880,
+  "parameters_human": "19.99B",
+  "storage_bytes": 136150456640,
+  "storage_human": "136.2 GB",
+  "context_length": 4096,
+  "base_model": "Elfrino/GoldenGidget-20B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

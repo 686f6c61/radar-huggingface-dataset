@@ -2,90 +2,108 @@
 
 ## Resumen
 
-chaski-r2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-0.8B publicado por SZLHOLDINGS dentro de su catálogo de modelos, datasets y Spaces con trazabilidad documentada. El artefacto es un adaptador PEFT (la librería declarada es `peft`) que, empaquetado en safetensors, suma 752.393.024 parámetros y ocupa 6,1 GB en el repositorio. La arquitectura declarada en las etiquetas es `qwen3_5_text`, es decir, la familia Qwen3.5 en su variante de texto, sobre la que se aplica el ajuste.
+chaski-r2 es un adaptador LoRA (presentado en el repositorio como pesos fusionados, "MERGED") desarrollado por SZLHOLDINGS sobre el modelo base Qwen/Qwen3.5-0.8B. Se distribuye como un ajuste fino supervisado (SFT) orientado a generacion de texto conversacional en ingles, entrenado con el dataset propietario SZLHOLDINGS/verticals-sft-v1 y la libreria PEFT/TRL con soporte de Unsloth. El modelo cuenta con 752.393.024 parametros totales segun los pesos en safetensors y un repositorio de 6,1 GB.
 
-El modelo se distribuye con licencia Apache 2.0 y pipeline de `text-generation`. No hay información sobre idiomas soportados ni sobre el proceso de entrenamiento más allá de la referencia al modelo base. La model card es deliberadamente escéptica: el autor declara que cualquier afirmación de calidad no respaldada por un recibo de evaluación medido se marca como UNKNOWN, y en la auditoría del 22 de noviembre de 2026 el artefacto no supera el umbral estricto de cadena de recibos (`UNKNOWN_NO_EVAL_RECEIPT`).
+La relevancia de esta ficha es acotada y conviene ser explicito: la model card del autor incluye etiquetas como `proposal-only` y `research-only`, declara `publication_eligible: false` y `autonomy_eligible: false`, y describe los resultados de evaluacion como `HISTORICAL_OWNER_RECORDS_UNQUALIFIED`. Es decir, el propio publicador desaconseja tratarlo como un artefacto listo para produccion o para publicacion. Las cifras de rendimiento que aparecen en la card (por ejemplo, 3/6 en una "mass-battery" o 11/12 en un "frontier_gpu_summary") no son benchmarks estandar y no permiten comparacion directa con MMLU, HumanEval o GSM8K.
 
-Su relevancia es, por tanto, la de un artefacto experimental de bajo perfil: útil para quien quiera inspeccionar el formato de publicación del estate SZL Holdings o experimentar con un fine-tune PEFT sobre Qwen3.5-0.8B, pero sin métricas públicas que justifiquen su adopción en producción frente al modelo base.
+Por tanto, chaski-r2 debe evaluarse como un experimento de ajuste fino de bajo coste sobre un modelo pequeno de la familia Qwen3.5, util para quien quiera inspeccionar la metodologia de SFT del autor o reproducir el pipeline, no como un modelo de proposito general competitivo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.5, variante de texto; etiqueta `qwen3_5_text`) |
-| Parámetros totales | 752.393.024 (dato real de safetensors) |
-| Parámetros activos | No aplica (no es MoE según la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-0.8B), ajuste mediante LoRA/SFT |
+| Parametros totales | 752.393.024 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Entrenamiento en bf16-LoRA (qlora: false); no se documentan cuantizaciones publicadas (GGUF, AWQ, GPTQ) |
+| Idiomas soportados | Ingles (`language: en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT; librería `peft`) |
+| Formato de pesos | safetensors (repositorio PEFT; la card indica pesos fusionados cargables con `AutoModelForCausalLM`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5. Sobre esa base se aplica un ajuste con PEFT, lo que implica que el repositorio contiene pesos de adaptador (o pesos fusionados, dado el recuento de 752 millones de parámetros) en lugar de un entrenamiento desde cero. La etiqueta `qwen3_5_text` confirma que se trata de la variante exclusivamente textual, sin torre de visión.
+El modelo es un ajuste fino del Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5. El ajuste se realizo con LoRA en precision bf16 (sin QLoRA), usando las librerias transformers, TRL y Unsloth, y el dataset SZLHOLDINGS/verticals-sft-v1. La card indica que el entrenamiento se completo con una perdida final de entrenamiento de 1,4571, verificada mediante un recibo de entrenamiento (`adapter-unsloth/training_receipt.json`). No se especifican el numero de tokens de entrenamiento, la composicion del corpus ni si hubo etapas de RLHF o DPO; solo se declara SFT.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO o SFT supervisado. La model card no documenta ninguna innovación arquitectónica propia: se limita a declarar la identidad del repositorio, enlazar la organización canónica en GitHub y describir el sistema de recibos de auditoría del estate. Cualquier detalle adicional sobre el entrenamiento debe considerarse no disponible.
+La innovacion metodologica que reclama el autor no es arquitectonica sino de gobernanza: un enfoque "receipts-first, fail-closed" en el que cada metrica publicada debe enlazar a un fichero de evidencia medido, y la declaracion explicita de doctrina interna (`doctrine: v11-LOCKED`, `lambda: Conjecture 1 — advisory, never a theorem`). El repositorio se presenta como "MERGED" aunque la libreria declarada sea `peft`, lo que introduce ambiguedad sobre si los pesos publicados son el adaptador o la fusion con el base; la seccion Quickstart sugiere carga directa con `AutoModelForCausalLM`, consistente con pesos fusionados.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, heredada del modelo base Qwen3.5-0.8B.
-- Razonamiento y respuesta a instrucciones: presumiblemente presente por herencia del base, aunque no verificado con evaluaciones publicadas.
-- Generación de código y matemáticas: capacidad esperable del base, sin métricas que la respalden en este artefacto.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas (el campo de idiomas no está disponible).
-- Capacidades especiales (modo thinking, visión, audio): no documentadas; la variante es de texto.
+- Generacion de texto conversacional en ingles, heredada del modelo base Qwen3.5-0.8B y ajustada con datos SFT del autor.
+- Ajuste orientado a "verticales" (el dataset se llama `verticals-sft-v1`), lo que sugiere dominio conversacional acotado mas que conocimiento general.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingue; la card declara unicamente ingles.
+- No se documenta vision, audio ni modo "thinking".
+- No se documenta ventana de contexto especifica; se heredaria la del base, pero el valor no se indica en la informacion disponible.
 
 ## Casos de uso
 
-- Evaluación de formatos de publicación PEFT: el repositorio sirve para estudiar cómo SZL Holdings empaqueta adaptadores y pesos en safetensors con metadatos de auditoría, útil para equipos que diseñen sus propios pipelines de publicación de modelos.
-- Prototipado local de generación de texto: con 752 millones de parámetros, el modelo puede ejecutarse en una GPU de consumo para pruebas de integración de pipelines de inferencia, siempre que se valide la calidad contra el base.
-- Comparación de fine-tunes sobre Qwen3.5-0.8B: útil como muestra en estudios de casos sobre qué aporta un ajuste PEFT frente al modelo original en tareas concretas, midiendo la diferencia con un harness propio.
-- Docencia y experimentación académica: un artefacto pequeño y con licencia permisiva permite reproducir flujos de carga con `transformers` + `peft` sin coste de infraestructura elevado.
-- Base para nuevos ajustes: al ser Apache 2.0 y derivar de Qwen3.5-0.8B, puede servir como punto de partida para fine-tunes adicionales en dominios específicos, con la advertencia de que su calidad no está medida.
-- Integración en pipelines de CI para pruebas de humo: verificar que un servicio de inferencia arranca, carga pesos y devuelve texto coherente con un modelo de este tamaño es barato y rápido.
+- Evaluacion de pipelines de SFT: sirve como caso de estudio reproducible para comparar recetas de LoRA con Unsloth y TRL sobre un base de 0,8 B, revisando los recibos de entrenamiento incluidos en el repositorio.
+- Prototipado de asistentes conversacionales de dominio acotado en ingles: al partir de un base pequeno y haber sido ajustado con un corpus de "verticales", puede emplearse para experimentar con respuestas de estilo consistente en un nicho concreto, siempre con validacion humana.
+- Generacion de texto en entornos con recursos muy limitados: con 752 M de parametros, es viable en GPU de consumo y en CPU con cuantizacion, lo que permite desplegarlo en portatiles para demos internas.
+- Investigacion sobre gobernanza de artefactos de IA: el repositorio documenta doctrina, recibos y estados de elegibilidad, y puede usarse como ejemplo de trazabilidad de afirmaciones en model cards.
+- Filtrado o clasificacion de texto auxiliar: un modelo de este tamano puede adaptarse como componente secundario en pipelines de preprocesado, aunque requeriria un ajuste adicional especifico.
+- Educacion y formacion: util para explicar en talleres como se construye y se documenta un adaptador LoRA sobre un modelo Qwen, incluyendo la lectura critica de metricas no estandar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La propia model card declara explícitamente que no se afirma ningún número de benchmark más allá de lo que una auditoría fechada haya medido, y la auditoría del 22 de noviembre de 2026 concluye `UNKNOWN_NO_EVAL_RECEIPT`: no existe cadena de recibos de evaluación en las rutas estándar (`eval/frontier-v1/DONE.json`, `final/train_receipt.json`).
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Los unicos datos numericos del repositorio son internos y no comparables:
+
+| Recibo | Resultado | Naturaleza |
+|---|---|---|
+| eval_merged_measured.json | sin puntuacion publicada | evaluacion interna |
+| eval_named_n_generate.json | PASS | prueba de generacion nombrada |
+| frontier_gpu_summary.json | 11/12 | resumen interno de GPU |
+| mass-battery-chaski_r2_v2_trained.json | 3/6 | bateria interna (variante v2-trained) |
+| Perdida final de entrenamiento | 1,4571 | metrica de entrenamiento, no de evaluacion |
+
+El autor califica estos registros como `HISTORICAL_OWNER_RECORDS_UNQUALIFIED`, por lo que no deben interpretarse como evidencia de calidad del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,5 GB solo para pesos (752 M de parámetros × 2 bytes), más overhead de activaciones y caché KV según contexto.
-- VRAM estimada en cuantización de 8 bits: alrededor de 0,8 GB de pesos; en 4 bits, alrededor de 0,4 GB. No se publican variantes cuantizadas oficiales, por lo que habría que generarlas localmente.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema. El modelo cabe holgadamente en GPUs de consumo.
-- Despliegue: al ser un artefacto PEFT, la carga requiere `transformers` con `peft`; para servirlo en producción se puede fusionar el adaptador y exportar a vLLM, TGI o llama.cpp (previa conversión a GGUF). No hay recetas oficiales documentadas.
-- Latencia y throughput: no disponibles. Con 752 M de parámetros se espera un throughput alto en GPU moderna, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia en bf16: aproximadamente 1,5 GB solo para pesos (752 M de parametros), mas overhead de activaciones y cache KV; en la practica, entre 2 y 4 GB segun longitud de secuencia y batch.
+- En cuantizacion de 8 bits: alrededor de 0,8-1 GB de pesos; en 4 bits, en torno a 0,4-0,5 GB, aunque el autor no publica artefactos cuantizados.
+- GPU recomendadas: cualquier GPU con 8 GB o mas es suficiente; RTX 3060/4060, RTX 4090, A100 y H100 funcionan sin problema, con la salvedad de que el modelo no aprovecha el hardware de gama alta.
+- Cabe holgadamente en GPU de consumo, incluidos portatiles con 6-8 GB de VRAM, y es viable en CPU para inferencia de baja concurrencia.
+- Opciones de despliegue: transformers (soporte nativo declarado), vLLM y TGI son viables al ser una arquitectura Qwen estandar; llama.cpp y Ollama requeririan convertir los pesos a GGUF, conversion no publicada por el autor.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| SZLHOLDINGS/chaski-r2 | 752 M | No disponible | Apache 2.0 | Fine-tune PEFT de Qwen3.5-0.8B, sin evaluación publicada |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | No disponible en esta ficha | Apache 2.0 (según el base) | Modelo base oficial; referencia para comparar el efecto del ajuste |
-| Qwen3-0.6B | ~0,6 B | 32 768 tokens (según documentación pública de Qwen3) | Apache 2.0 | Alternativa de tamaño similar de la generación anterior de Qwen |
-| Llama 3.2 1B | ~1,2 B | 128 000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | Alternativa de tamaño comparable con contexto largo y licencia con restricciones |
+| SZLHOLDINGS/chaski-r2 | 752 M | no disponible | Apache 2.0 | Adaptador SFT sobre Qwen3.5-0.8B, etiquetado research-only |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible en esta ficha | segun el base | Modelo original sin ajuste; referencia directa de comparacion |
+| Qwen2.5-0.5B / 1.5B | 0,5 B / 1,5 B | 32 K (serie Qwen2.5) | Apache 2.0 | Alternativas de tamano similar con benchmarks publicados y amplio ecosistema |
+| Llama 3.2 1B | 1,2 B | 128 K | Llama 3.2 Community License | Base pequeno con evaluaciones publicas y soporte amplio en llama.cpp |
 
-La comparación con Qwen3-0.6B y Llama 3.2 1B se ofrece como referencia de categoría; no se dispone de métricas de chaski-r2 que permitan comparar rendimiento de forma directa.
+La comparacion de rendimiento con estas alternativas no es posible: chaski-r2 no publica benchmarks estandar y su propio autor descalifica los registros internos. La ventaja practica frente al base Qwen3.5-0.8B seria el ajuste de estilo y dominio, no una mejora demostrada en tareas generales.
 
 ## Limitaciones y advertencias
 
-- Ausencia de evaluación: la auditoría del autor marca el artefacto como `UNKNOWN_NO_EVAL_RECEIPT`; no hay ninguna métrica de calidad, seguridad o sesgo publicada.
-- Riesgo de alucinación: no cuantificado. Al tratarse de un modelo de 0,8 B, la tasa de alucinación esperable es alta en tareas de conocimiento factual.
-- Idiomas: el campo de idiomas no está disponible; no se puede asumir un rendimiento multilingüe correcto sin pruebas propias.
-- Contexto: no se documenta la longitud de ventana, lo que impide planificar casos de uso con documentos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar que el modelo base Qwen3.5-0.8B mantiene la misma licencia y que el ajuste no introduce restricciones adicionales.
-- Formato PEFT: la carga requiere la librería `peft` y el modelo base; no es un artefacto autónomo listo para servir sin pasos previos de fusión o configuración.
-- Trazabilidad incompleta: los recibos de entrenamiento y evaluación no están en las rutas estándar, por lo que la cadena de auditoría queda abierta según el propio autor.
-- Madurez: 385 descargas y 0 likes en el momento de la consulta indican un artefacto de baja adopción y escasa validación por la comunidad.
+- El autor marca el modelo como `proposal-only` y `research-only`, con `publication_eligible: false` y `autonomy_eligible: false`: no esta pensado para produccion ni para uso autonomo.
+- Los resultados de evaluacion estan etiquetados como `HISTORICAL_OWNER_RECORDS_UNQUALIFIED`; no hay benchmarks estandar ni comparaciones verificables de forma independiente.
+- Idioma limitado al ingles segun la card; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Longitud de contexto no documentada; no debe asumirse la del base sin verificacion empirica.
+- Riesgo de alucinacion inherente a un modelo de 0,8 B ajustado con SFT sobre un corpus acotado; la card no incluye evaluaciones de factualidad.
+- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o seguridad.
+- Ambiguedad sobre el artefacto: la libreria es `peft` pero la card lo describe como "MERGED" y ofrece codigo de carga como modelo completo; conviene verificar la estructura real del repositorio antes de integrarlo.
+- Licencia Apache 2.0 permite uso comercial del artefacto, pero el estado research-only del autor y la ausencia de evaluaciones desaconsejan ese uso sin validacion propia.
+- No se publican cuantizaciones (GGUF, AWQ, GPTQ), lo que anade trabajo si se quiere desplegar fuera de transformers.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-r2
-- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Organización canónica en GitHub: https://github.com/szl-holdings
-- Repositorio de generación de cards: https://github.com/szl-holdings/estate-cards
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Repositorio GitHub del autor: https://github.com/szl-holdings
+- Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/verticals-sft-v1
+- Recibo de entrenamiento: https://huggingface.co/SZLHOLDINGS/chaski-r2/blob/main/training_receipt.json
+- Evaluacion fusionada: https://huggingface.co/SZLHOLDINGS/chaski-r2/blob/main/eval_merged_measured.json
+- Evaluacion de generacion nombrada: https://huggingface.co/SZLHOLDINGS/chaski-r2/blob/main/eval_named_n_generate.json
+- Resumen de GPU: https://huggingface.co/SZLHOLDINGS/chaski-r2/blob/main/frontier_gpu_summary.json
+- Bateria interna (mass-battery): https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/benchmark/mass-battery-chaski_r2_v2_trained.json
+- Bateria estate (laptop-lora): https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/receipts/estate-battery-chaski_r2_laptop_lora.json
+- Bateria estate (estate-sft-v1): https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/receipts/estate-battery-chaski_r2_estate_sft_v1.json
+- Recibo de vinculacion del adaptador: https://huggingface.co/SZLHOLDINGS/chaski-r2/blob/main/evidence/2026-09-25-adapter-binding/receipt.json
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Bundle de recibos citado en la card: SZLHOLDINGS/wave-logs, ruta `mesh/2026-11-22/model-receipts/pass3-core/` (en Hugging Face)
-- Ledger de bloqueo citado: szl-holdings/szl-eval-harness, `ledger/blocking_ledger_v1.json` (en GitHub)

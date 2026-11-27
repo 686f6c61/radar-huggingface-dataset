@@ -2,109 +2,106 @@
 
 ## Resumen
 
-Ear es un modelo de identificación de idioma hablado (spoken language identification, LID) desarrollado por Desert-Ant-Labs, diseñado para ejecutarse íntegramente en el dispositivo. Detecta el idioma de una grabación de audio de entre 5 y 30 segundos y devuelve una puntuación de confianza por idioma, además de una marca de fiabilidad cuando las dos hipótesis principales están demasiado próximas. Cubre 102 idiomas y se distribuye como Core ML (5,0 MB) para plataformas Apple y como LiteRT/TFLite (10,7 MB) para Android, Linux, Windows, navegador y Node.
+Ear es un modelo de identificación de idioma hablado (spoken language identification) desarrollado por Desert-Ant-Labs. Su función es determinar en qué idioma se está hablando en un fragmento de audio de entre 5 y 30 segundos, antes de enviar ese audio a un sistema de transcripción. Resuelve un problema concreto en pipelines de ASR multilingüe: elegir el reconocedor o el modelo de transcripción correcto sin intervención del usuario ni llamadas a servicios en la nube.
 
-El modelo resuelve un problema concreto en pipelines de reconocimiento de voz: elegir el modelo de transcripción correcto antes de transcribir. En lugar de lanzar un ASR multilingüe grande o arriesgarse a transcribir en el idioma equivocado, Ear enruta la petición al reconocedor adecuado con una latencia de 7,6 ms en un MacBook Pro. Es relevante ahora porque permite despliegues de ASR multilingüe en movilidad y en el borde sin conexión, sin coste de servidor ni transferencia de audio a la nube.
+El modelo cubre 102 idiomas y está diseñado explícitamente para inferencia en el dispositivo (on-device). Se distribuye en dos formatos: Core ML para plataformas Apple (5,0 MB) y LiteRT/TFLite para Android, Linux, Windows y Node (10,7 MB). La latencia declarada por el autor es de 7,6 ms en un MacBook Pro, lo que lo hace viable en tiempo real incluso en hardware móvil.
 
-La ficha se basa exclusivamente en la model card y en los metadatos publicados en Hugging Face. La información sobre arquitectura interna, composición del dataset de entrenamiento y detalles de cuantización no está disponible en la documentación proporcionada.
+La relevancia actual del modelo está en su enfoque de enrutamiento con control de fiabilidad: devuelve una puntuación de confianza por idioma y marca la respuesta como no fiable cuando las dos hipótesis principales están demasiado próximas, permitiendo al sistema preguntar al usuario o recurrir a un modelo general en lugar de transcribir en el idioma equivocado. El repositorio ocupa 0,1 GB y acumula 732 descargas en Hugging Face.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de clasificación de audio; artefactos Core ML y LiteRT/TFLite) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; ventana de audio de 5 a 30 segundos por clip |
-| Tipos de cuantización | no disponible (se distribuyen artefactos ya compilados: Core ML 5,0 MB, LiteRT 10,7 MB) |
+| Arquitectura | no disponible (modelo de clasificación de audio compilado a LiteRT y Core ML) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; ventana de audio de 5 a 30 segundos |
+| Tipos de cuantizacion | no disponible (se distribuyen artefactos compilados de 5,0 MB en Core ML y 10,7 MB en LiteRT) |
 | Idiomas soportados | 102 idiomas (af, am, ar, as, ast, az, be, bg, bn, bs, ca, ceb, ckb, cs, cy, da, de, el, en, es, et, eu, fa, ff, fi, fil, fr, ga, gl, gu, ha, he, hi, hr, hu, hy, id, ig, is, it, ja, jv, ka, kam, kea, kk, km, kn, ko, ky, lb, lg, ln, lo, lt, luo, lv, mi, mk, ml, mn, mr, ms, mt, my, ne, nl, no, nso, ny, oc, om, or, pa, pl, ps, pt, ro, ru, sd, sk, sl, sn, so, sr, sv, sw, ta, te, tg, th, tr, uk, umb, ur, uz, vi, wo, xh, yo, zh, zu) |
-| Licencia | desert-ant-labs-source-available (source-available, no open source; enlace: https://license.desertant.com/) |
-| Formato de pesos | Core ML (.mlmodelc/.mlpackage) y LiteRT/TFLite; SDK Swift, Kotlin y JavaScript/TypeScript |
-| Plataformas | iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador (WebAssembly + LiteRT.js) y Node (núcleo nativo precompilado) |
-| Tamaño del repositorio | 0,1 GB |
-| Versión de pesos citada | v0.2.0 |
-| Latencia declarada | 7,6 ms en MacBook Pro (por clip) |
+| Licencia | desert-ant-labs-source-available (source-available, no open source) |
+| Formato de pesos | Core ML (Apple) y LiteRT/TFLite (Android, Linux, Windows, Node, navegador) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna del extractor de características ni del clasificador. Lo que sí se documenta es el formato de despliegue: el modelo se compila a Core ML para Apple (aprovechando Core ML y, según las etiquetas, la Neural Engine) y a LiteRT/TFLite para el resto de plataformas, con un build WebAssembly para navegador y un núcleo nativo para Node. El paquete Core ML ocupa 5,0 MB y el de LiteRT 10,7 MB, lo que sitúa el modelo en la categoría de modelos de borde de un dígito o dos dígitos de megabyte.
+La información disponible no detalla la arquitectura interna del modelo (tipo de extractor de características, número de capas, mecanismo de atención o tamaño del encoder). Lo que sí se documenta es el resultado del proceso de compilación: el modelo se distribuye como artefactos optimizados para inferencia en el dispositivo, con un binario Core ML de 5,0 MB para iOS, macOS, tvOS y visionOS, y un binario LiteRT de 10,7 MB para Android, Linux, Windows, navegador (vía WebAssembly y LiteRT.js) y Node (mediante un núcleo nativo precompilado).
 
-No se han publicado en la información disponible el número de tokens o horas de audio de entrenamiento, la composición del dataset, ni si hubo ajuste fino con RLHF/DPO (no aplicable en un clasificador de audio). Tampoco se especifican innovaciones como decodificación especulativa o atención lineal. La innovación funcional documentada es el mecanismo de fiabilidad: además de la etiqueta de idioma y su confianza, el modelo expone `isReliable`, que se activa cuando las dos lenguas principales están demasiado próximas, y una lista de candidatos con probabilidades para permitir lógica de reserva.
+Tampoco se especifican en la información proporcionada el volumen de datos de entrenamiento, la composición del corpus ni si se aplicaron técnicas de ajuste fino con preferencias (RLHF/DPO). La evaluación declarada se realizó sobre conjuntos de test de Common Voice, VoxPopuli, Multilingual LibriSpeech, NST y un conjunto propio de condiciones de inglés (LibriSpeech, AMI, CHiME-6, NOTSOFAR-1), lo que sugiere un entrenamiento orientado a diversidad de dominio y de condiciones acústicas. La innovación destacable no está en la arquitectura sino en la interfaz de salida: puntuaciones de confianza por idioma más una señal booleana de fiabilidad que compara las dos hipótesis principales.
 
 ## Capacidades
 
-- Identificación de idioma hablado entre 102 lenguas a partir de 5 a 30 segundos de audio.
-- Salida de puntuación de confianza por idioma y lista ordenada de candidatos (`candidates`).
-- Indicador de fiabilidad (`isReliable`) para descartar predicciones ambiguas y activar reservas.
-- Ejecución completamente en el dispositivo, sin conexión y sin enviar audio a servidores.
-- Entrada flexible: ruta a fichero de audio o muestras PCM ya decodificadas a cualquier frecuencia de muestreo (por ejemplo, 44.100 Hz), con remuestreo interno.
-- Integración nativa mediante SDK en Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android) y JavaScript/TypeScript (navegador con WebAssembly y Node con núcleo nativo).
-- Descarga diferida del modelo en el primer uso; la creación de la instancia no descarga ni carga nada.
-- No es un modelo generativo: no hace transcripción, traducción, tool calling ni razonamiento multi-paso.
+- Identificación de idioma hablado sobre fragmentos de 5 a 30 segundos de audio.
+- Salida con las principales predicciones ordenadas por probabilidad (`candidates`), idioma ganador (`language`) y confianza asociada (`confidence`).
+- Señal de fiabilidad (`isReliable`) que marca como no concluyente la detección cuando las dos primeras hipótesis están demasiado próximas.
+- Acepta audio desde fichero o muestras ya decodificadas a cualquier frecuencia de muestreo (por ejemplo, 44,1 kHz), con remuestreo interno.
+- Cobertura de 102 idiomas, incluyendo lenguas de bajos recursos (luo, umb, kam, kea, nso, wo, ff, lg, ln).
+- Ejecución completamente offline en el dispositivo, sin llamadas a servicios externos.
+- SDK multiplataforma: Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android), JavaScript/TypeScript (navegador vía WASM y Node vía núcleo nativo).
+- No soporta generación de texto, tool calling, razonamiento multi-paso, visión ni audio-a-texto; es exclusivamente un clasificador de audio.
 
 ## Casos de uso
 
-- Enrutado de ASR multilingüe: identificar el idioma de la grabación antes de invocar el reconocedor específico, de modo que un pipeline con varios modelos monolingües o por familia lingüística no transcriba en la lengua equivocada. La precisión de enrutado declarada (0,99 en Common Voice, 0,998 en VoxPopuli) es el dato que respalda este uso.
-- Asistentes de voz en movilidad sin conexión: el paquete Core ML de 5,0 MB y los 7,6 ms por clip permiten ejecutar la detección en iPhone, iPad o Apple Watch antes de cualquier llamada de red, útil en aviones, zonas rurales o entornos con requisitos de privacidad.
-- Selección automática de idioma en aplicaciones de transcripción de reuniones: con clips de 5 a 30 segundos, el modelo clasifica cada intervención y permite cambiar de modelo de ASR o de diccionario por hablante en una reunión multilingüe.
-- Moderación y analítica de contenido de audio generado por usuarios: clasificar el idioma de las subidas en Android, Linux o Windows antes de encolar el procesamiento, evitando costes de GPU en audios de idiomas no soportados por el ASR principal.
-- Aplicaciones de aprendizaje de idiomas: detectar la lengua que practica el usuario y adaptar el ejercicio, con la ventaja de que `isReliable` permite pedir una repetición cuando la confianza es baja en lugar de puntuar mal al alumno.
-- Atención al cliente telefónica: preclasificar llamadas entrantes por idioma para dirigirlas a la cola de agente o al modelo de ASR adecuado, con la detección ejecutándose en el servidor de borde a coste despreciable.
-- Investigación lingüística y corpus: etiquetado automático de grandes colecciones de audio en 102 lenguas, incluidas lenguas de bajos recursos presentes en la lista (luo, umb, kam, kea, nso, wo, xh), como paso previo a la transcripción.
+- Enrutamiento previo a la transcripción en apps de dictado multilingüe: se ejecuta Ear sobre los primeros segundos de audio y se selecciona el modelo ASR correspondiente (por ejemplo, un reconocedor específico de portugués frente a uno de español), evitando transcripciones en el idioma equivocado.
+- Atención al cliente con líneas de voz internacionales: al recibir una llamada, el sistema detecta el idioma del cliente en los primeros 5-30 segundos y enruta al agente o al bot del idioma adecuado, sin menús interactivos.
+- Subtitulado automático de contenido generado por usuarios: antes de invocar un pipeline de ASR, Ear clasifica el audio subido y descarta o redirige los clips cuyo idioma no está cubierto por el modelo de transcripción contratado.
+- Cumplimiento y moderación de contenido: etiquetar automáticamente el idioma de grabaciones almacenadas para aplicar políticas de retención o revisión por región lingüística, con la ventaja de que el procesado ocurre en el dispositivo y el audio no sale de él.
+- Asistentes de voz embebidos en dispositivos móviles o de borde: con 5,0 MB en Core ML y 7,6 ms de latencia en un MacBook Pro, el modelo cabe en el ciclo de interacción de un asistente sin consumir red ni batería de forma apreciable.
+- Aplicaciones de accesibilidad: detección del idioma del interlocutor para configurar la síntesis de voz, los subtítulos en vivo o la traducción en un dispositivo personal, manteniendo el audio local.
+- Gestión de archivos y bibliotecas multimedia: indexación automática de una fonoteca por idioma para búsqueda y filtrado, ejecutable en un portátil o en un servidor Linux sin GPU.
+- Enrutamiento en centros de transcripción masiva: clasificación rápida de lotes de audio en Node o Linux antes de distribuirlos entre colas de reconocedores especializados, reduciendo el coste de reintentos por idioma incorrecto.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (métricas no verificadas de forma independiente, `verified: false`). La "precisión de enrutado" mide si la elección de reconocedor derivada de la predicción es correcta.
+Resultados declarados por el autor (no verificados de forma independiente; `verified: false` en el model-index). La métrica "recognizer routing accuracy" mide el acierto al seleccionar el reconocedor correcto, presumiblemente contando como acierto los casos marcados como no fiables que se derivan a un modelo general.
 
-| Dataset | Idiomas | Clips (5-30 s) | Precisión LID | Precisión de enrutado |
+| Dataset | Idiomas | Clips (5-30 s) | Accuracy de identificación | Accuracy de enrutamiento |
 |---|---|---|---|---|
-| Common Voice (test) | 15 | 7.500 | 0,980 | 0,990 |
-| VoxPopuli (test) | 16 | 3.221 | 0,993 | 0,998 |
-| Multilingual LibriSpeech (test) | 7 | 2.660 | 0,992 | 0,997 |
-| NST (noruego y sueco, test) | 2 | 1.000 | 0,996 | 1,000 |
+| Common Voice | 15 | 7.500 | 0,980 | 0,990 |
+| VoxPopuli | 16 | 3.221 | 0,993 | 0,998 |
+| Multilingual LibriSpeech | 7 | 2.660 | 0,992 | 0,997 |
+| NST (noruego y sueco) | 2 | 1.000 | 0,996 | 1,000 |
 | Inglés en cuatro condiciones (LibriSpeech, AMI, CHiME-6, NOTSOFAR-1) | 1 | 1.660 | 0,977 | 0,980 |
 
-Latencia declarada: 7,6 ms por clip en un MacBook Pro. No se han publicado datos de throughput, consumo energético ni latencia en dispositivos móviles en la información disponible.
+No se han publicado en la información disponible resultados comparativos frente a otros modelos de identificación de idioma, ni cifras de throughput más allá de la latencia de 7,6 ms por inferencia en un MacBook Pro declarada en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica; el modelo está pensado para CPU, GPU integrada y aceleradores neuronales de dispositivo. El artefacto Core ML ocupa 5,0 MB y el LiteRT 10,7 MB, por lo que el consumo de memoria es del orden de decenas de megabytes incluyendo el runtime.
-- GPU recomendadas: no procede. El despliegue objetivo es Apple Neural Engine/Core ML en plataformas Apple, y CPU/NNAPI/GPU móvil con LiteRT en Android, Linux, Windows y Node.
-- Cabe en cualquier GPU de consumo: sí, y también en dispositivos sin GPU dedicada, incluidos móviles y navegador vía WebAssembly.
-- Opciones de despliegue: SDK oficial `desert-ant-core` en Swift (SPM, desde 5.0.0), Kotlin (`ai.desertant:ear:5.0.0`) y JavaScript (`@desert-ant-labs/ear` con `@litertjs/core` para navegador, o subruta `/native` para Node). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un clasificador de audio.
-- Latencia y throughput: 7,6 ms por clip en MacBook Pro según el autor; sin datos de throughput agregado ni de rendimiento en Android o navegador.
+- VRAM: no aplica; el modelo está pensado para CPU, NPU y GPU integrada. Los artefactos son de 5,0 MB (Core ML) y 10,7 MB (LiteRT), por lo que el consumo de memoria es del orden de decenas de MB incluyendo el runtime.
+- GPU dedicadas: innecesarias. No se documenta soporte de CUDA ni de aceleración en A100, H100 o RTX 4090, y el formato de pesos (Core ML, LiteRT) no está orientado a esos entornos.
+- GPU de consumo: no requiere ninguna; funciona en Apple Neural Engine, GPU integrada y CPU móvil.
+- Despliegue: Core ML en plataformas Apple; LiteRT/TFLite en Android, Linux, Windows, navegador (WASM con LiteRT.js) y Node (núcleo nativo precompilado). SDKs oficiales vía Swift Package Manager, Maven (`ai.desertant:ear`) y npm (`@desert-ant-labs/ear`).
+- Latencia: 7,6 ms por inferencia en un MacBook Pro según el autor. No se publican cifras de throughput en lote ni latencias en dispositivos móviles concretos.
+- Almacenamiento: descarga bajo demanda en el primer uso; el paquete completo del repositorio ocupa 0,1 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tarea | Idiomas | Tamaño de despliegue | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Ear (Desert-Ant-Labs) | LID de audio en dispositivo | 102 | 5,0 MB Core ML / 10,7 MB LiteRT | source-available (desert-ant-labs-source-available) | Hugging Face, SDK Swift/Kotlin/JS |
-| Whisper (OpenAI) | ASR multilingüe con detección de idioma implícita | ~99 | desde ~39 M (tiny) hasta ~1,55 G (large) | MIT | Hugging Face, múltiples runtimes |
-| MMS-LID (Meta) | LID de audio | 126 | cientos de MB | CC-BY-NC 4.0 | Hugging Face |
-| VoxLingua107 (SpeechBrain) | LID de audio | 107 | ~80 MB | Apache 2.0 (según variante) | Hugging Face |
+| Modelo | Tipo | Idiomas | Contexto / ventana | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| desert-ant-labs/ear | Clasificador de audio (LID) | 102 | 5-30 s de audio | source-available | Core ML, LiteRT | On-device, 5,0-10,7 MB, 7,6 ms por inferencia |
+| Whisper (large-v3) | ASR seq2seq | ~99 | 30 s de audio | MIT | safetensors, GGUF, etc. | Detecta idioma como subproducto, pero requiere el modelo completo (cientos de millones a 1.500 M de parámetros) y no está pensado para ejecución de borde |
+| MMS-LID (Meta) | Clasificador de audio (LID) | 100+ | fragmentos cortos | CC-BY-NC | PyTorch | Requiere entorno PyTorch; licencia no comercial |
+| VoxLingua107 (SpeechBrain) | Clasificador de audio (LID) | 107 | fragmentos de pocos segundos | Apache 2.0 | PyTorch | Referencia académica habitual; sin artefactos móviles oficiales |
 
-La comparación con Whisper no es equivalente en tarea: Whisper detecta idioma como subproducto de un modelo generativo mucho mayor, mientras que Ear es un clasificador dedicado de decenas de megabytes. Frente a MMS-LID y VoxLingua107, la ventaja declarada de Ear es el tamaño (5-10,7 MB), la latencia (7,6 ms) y el despliegue nativo en móvil y navegador; la desventaja es la licencia source-available frente a Apache 2.0 o CC-BY-NC, y la ausencia de verificación independiente de sus métricas.
+Los datos de rendimiento de los modelos alternativos no se incluyen en la información proporcionada, por lo que no se establece comparación numérica de precisión. La ventaja diferencial de Ear frente a las alternativas es el tamaño (5-10 MB), la latencia declarada y la disponibilidad de artefactos para Core ML y LiteRT con SDKs oficiales en Swift, Kotlin y JavaScript.
 
 ## Limitaciones y advertencias
 
-- Licencia source-available, no open source: el uso comercial está sujeto a los términos de https://license.desertant.com/, que deben revisarse antes de integrar el modelo en un producto. No se garantiza libertad de modificación ni de redistribución.
-- Métricas no verificadas: todos los resultados de la model card están marcados con `verified: false`; no hay evaluación independiente publicada en la información disponible.
-- Ventana de audio restringida: el modelo está diseñado para clips de 5 a 30 segundos; el comportamiento con clips más cortos o más largos no está documentado.
-- Ambigüedad en lenguas próximas: el propio diseño admite casos en los que las dos hipótesis principales están demasiado cerca; sin lógica de reserva, esas predicciones pueden ser incorrectas. El conjunto NST (noruego/sueco) es el único caso declarado de pares cercanos.
-- Sesgo de dominio desconocido: los benchmarks se basan en corpus de lectura y parlamentarios (Common Voice, VoxPopuli, MLS, LibriSpeech, AMI, CHiME-6, NOTSOFAR-1); el rendimiento en audio telefónico de banda estrecha, ruido industrial o habla infantil no está documentado.
-- Cobertura desigual por idioma: la lista de 102 lenguas incluye lenguas de bajos recursos sin métricas desagregadas publicadas; la precisión por idioma individual no está disponible.
-- No es un modelo generativo: no transcribe, traduce ni razona; cualquier expectativa de ASR o de comprensión semántica queda fuera de su alcance.
-- Dependencia de SDK propietario: la integración pasa por paquetes de Desert-Ant-Labs (SPM, Maven, npm), lo que introduce una dependencia de proveedor en la cadena de despliegue.
-- Descarga en el primer uso: el SDK descarga el modelo de forma diferida, lo que requiere gestión de red, caché y versiones en producción.
+- Licencia source-available (`desert-ant-labs-source-available`), no open source: es imprescindible revisar los términos en https://license.desertant.com/ antes de cualquier uso comercial, redistribución o modificación.
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`); no hay evaluación independiente publicada en la información disponible.
+- La ventana de audio útil es de 5 a 30 segundos; no se documenta comportamiento con clips más cortos ni con audio muy largo sin segmentar.
+- Riesgo de confusión entre lenguas próximas (por ejemplo, noruego y sueco, o variedades iberorromances); el propio diseño del modelo contempla esta situación mediante la señal `isReliable`, que debe gestionarse explícitamente en producción.
+- No se documentan sesgos por acento, edad, sexo del hablante ni condición acústica, más allá del conjunto específico de condiciones de inglés evaluado (AMI, CHiME-6, NOTSOFAR-1).
+- La cobertura de 102 idiomas no implica el mismo rendimiento en todos ellos; los conjuntos de evaluación publicados cubren entre 1 y 16 idiomas, no los 102.
+- El modelo solo clasifica idioma: no transcribe, no traduce y no genera texto. Cualquier capacidad de ASR debe aportarla un modelo separado.
+- La descarga del modelo ocurre en el primer uso, lo que introduce una dependencia de red inicial en apps móviles si no se empaqueta el artefacto con la aplicación.
+- No se documentan requisitos de versiones mínimas de sistema operativo ni de runtime LiteRT/Core ML más allá del enlace a los requisitos del repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/ear
 - Pesos v0.2.0: https://huggingface.co/desert-ant-labs/ear/tree/v0.2.0
 - Repositorio del SDK (desert-ant-core): https://github.com/Desert-Ant-Labs/desert-ant-core
-- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
-- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
-- Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Requisitos para Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Requisitos para Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Requisitos para JavaScript y TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
 - Licencia: https://license.desertant.com/
-- Paquete npm: `@desert-ant-labs/ear` (junto con `@litertjs/core`)
-- Paquete Maven: `ai.desertant:ear:5.0.0`
+- Documentación fuente de la model card: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/ear.md

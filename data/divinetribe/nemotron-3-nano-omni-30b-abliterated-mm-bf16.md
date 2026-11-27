@@ -2,96 +2,99 @@
 
 ## Resumen
 
-Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16 es una compilación no oficial, en formato MLX y precisión completa (bf16), del modelo multimodal Nemotron-3-Nano-Omni-30B de NVIDIA, publicada por el usuario divinetribe. El modelo original es un transformer híbrido con arquitectura NemotronH_Nano_Omni_Reasoning_V3 que procesa texto, imagen y audio en una única pila, con un total de 33.015.598.918 parámetros (aproximadamente 30B en el bloque de lenguaje, con mezcla de expertos). Esta versión aplica una ablación direccional para eliminar la dirección de rechazo del stack lingüístico, manteniendo intactas las torres de visión y audio.
+Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16 es una compilacion no oficial, en precision completa (bf16) y formato MLX, del modelo multimodal Nemotron-3-Nano-Omni-30B de NVIDIA, publicada por el usuario divinetribe. El modelo original es un transformer hibrido con arquitectura NemotronH (combinacion de capas Mamba y atencion) y diseno Mixture-of-Experts, capaz de procesar texto, imagen y audio. Esta version concreta aplica una tecnica de "abliteration" (ablacion direccional) para eliminar la direccion de rechazo del stack linguistico, manteniendo intactas las torres de vision y audio.
 
-La relevancia de esta ficha es doble: por un lado documenta una de las pocas implementaciones abliteradas de un modelo Omni que funciona en Apple Silicon vía MLX; por otro, sirve como referencia técnica de un modelo tri-modal de ~30B con licencia restrictiva (heredada de NVIDIA) y sin datos públicos de benchmarks en la información disponible. El repositorio ocupa 66 GB y contiene 1.481 tensores (401 de lenguaje, 390 de visión, 684 de audio y 6 de proyección).
+El problema que resuelve es la ausencia de builds sin alineamiento de seguridad que funcionen de forma nativa en Apple Silicon: las alternativas existentes estan en NVFP4 o GGUF, no en MLX. El autor afirma que es el primer "Omni abliterado" en MLX. El modelo conserva las capacidades multimodales del original (descripcion de imagenes y transcripcion de audio verificadas) y esta pensado para ejecutarse en Macs con `mlx-vlm` 0.6.12 o superior, o bien convertido a GGUF para llama.cpp.
 
-La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del autor; no se han podido verificar especificaciones oficiales de NVIDIA ni resultados de evaluación independientes. Cualquier dato no confirmado se marca como "no disponible".
+Con 33.015.598.918 parametros totales (segun safetensors), un repo de 66 GB y licencia "other" heredada del modelo base, es una pieza de interes para investigadores que necesitan estudiar comportamiento sin rechazo en entornos locales, no para despliegues de produccion convencionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido multimodal (NemotronH_Nano_Omni_Reasoning_V3); bloque de lenguaje con mezcla de expertos (MoE, según referencias a `switch_mlp` y expertos enrutados), más torres de visión y audio con proyección |
-| Parametros totales | 33.015.598.918 (~33,0B) |
-| Parametros activos | no disponible (el nombre del modelo base sugiere ~3B activos, A3B, pero no se confirma en la información proporcionada) |
+| Arquitectura | Transformer hibrido NemotronH (Mamba + atencion) con Mixture-of-Experts |
+| Parametros totales | 33.015.598.918 |
+| Parametros activos | no disponible (el nombre del modelo base indica 30B-A3B, es decir, ~3B activos, pero no se confirma en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos publicados en bf16 (precisión completa, ~62 GB). Existe una conversión comunitaria a GGUF Q4_K_M publicada por wacomctl672; no se detallan otros niveles |
+| Tipos de cuantizacion | bf16 en este repo; existe conversion GGUF Q4_K_M publicada por terceros |
 | Idiomas soportados | no disponible |
-| Licencia | other (heredada del modelo base de NVIDIA; no se especifican términos concretos) |
-| Formato de pesos | safetensors (MLX, bf16); conversión GGUF disponible por terceros |
+| Licencia | other (heredada del modelo base de NVIDIA) |
+| Formato de pesos | safetensors (MLX); GGUF disponible en repo de terceros |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido de la familia NemotronH, con un bloque de lenguaje que combina capas de atención con capas de estado (mamba, según la mención a `out_proj` de mamba en el método de ablación) y una capa MoE con expertos enrutados (`switch_mlp.fc1/fc2`) más un experto compartido (`down_proj`). A esto se añaden dos torres específicas de modalidad: una de visión y otra de audio, conectadas mediante proyecciones al espacio del lenguaje. El total de tensores es 1.481 (401 lenguaje + 390 visión + 684 audio + 6 proyección), con nombres idénticos a los del modelo base.
+El modelo base emplea la arquitectura NemotronH de NVIDIA, un diseno hibrido que intercala capas de espacio de estados (Mamba) con capas de atencion, y utiliza Mixture-of-Experts en las capas de feed-forward. El checkpoint contiene 1.481 tensores: 401 del stack linguistico, 390 de la torre de vision, 684 de la torre de audio y 6 de proyeccion, con nombres identicos a los del modelo base. El modelo original fue entrenado por NVIDIA con datos multimodales (texto, imagen y audio) e incluye un modo de razonamiento, segun indica el nombre del checkpoint base (`Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16`). No se dispone de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO en la informacion proporcionada.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras etapas de alineación en el modelo original. La model card solo describe el proceso de modificación: una ablación direccional según Arditi et al. aplicada sobre dos bloques (16 y 31), con direcciones ortogonalizadas mediante Gram-Schmidt y eliminadas de todas las proyecciones que escriben en el residual (`out_proj` de mamba, `o_proj` de atención, `fc2` de expertos enrutados, `down_proj` del experto compartido y embeddings de tokens). El autor indica que una ablación de una sola capa deja el modelo rechazando, de ahí el enfoque en dos bloques.
+La innovacion de esta publicacion es el proceso de abliteration. El autor aplica ablacion direccional segun el metodo de Arditi et al., identificando que la direccion de rechazo del modelo esta distribuida en dos bloques (16 y 31), no en uno solo. Ambas direcciones se ortogonalizan mediante Gram-Schmidt y se eliminan de todas las proyecciones que escriben en el flujo residual: `out_proj` de Mamba, `o_proj` de atencion, `fc2` de los expertos enrutados del MoE, `down_proj` del experto compartido y los embeddings de tokens. Las torres de vision y audio se copian sin modificar. El autor verifica la eliminacion del rechazo con 6 de 6 casos en un conjunto danino reservado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno (el nombre del modelo base incluye "Reasoning").
-- Procesamiento de imagen: descripción de imágenes y respuesta a preguntas visuales (pipeline `image-text-to-text`).
-- Procesamiento de audio: transcripción de voz según la model card.
-- Modo multimodal combinado: la conversión GGUF comunitaria usa un `mmproj` que integra audio y visión simultáneamente.
-- Razonamiento de varios pasos (el autor lo incluye como "fighter" en su banco de pruebas de agentes locales).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible.
-- Modo thinking explícito: no disponible.
-- Alineación de seguridad eliminada deliberadamente (abliterated): no rechaza peticiones dañinas, verificado 6/6 en un conjunto reservado según el autor.
+- Generacion de texto y razonamiento en modo "thinking" (heredado del modelo base Reasoning).
+- Comprension de imagenes: descripcion de contenido visual, verificada por el autor.
+- Procesamiento de audio: transcripcion de voz, verificada por el autor.
+- Conversacion multiturno (pipeline `image-text-to-text`, tag `conversational`).
+- Entrada combinada de imagen, audio y texto en una misma peticion.
+- Ejecucion local en Apple Silicon mediante MLX y `mlx-vlm`.
+- Conversion a GGUF con `mmproj` combinado de audio y vision para llama.cpp.
+- Sin direccion de rechazo en el stack linguistico (comportamiento sin alineamiento de seguridad).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion proporcionada.
 
 ## Casos de uso
 
-- Descripción y análisis de imágenes en local sobre Apple Silicon: con `mlx-vlm` 0.6.12+ se puede pasar una imagen y un prompt para obtener descripciones o extraer información, sin enviar datos a la nube.
-- Transcripción de audio en dispositivos Apple: la torre de audio permite convertir voz a texto en local, útil para reuniones o notas de voz con requisitos de privacidad.
-- Asistente de agente local: el autor lo integra en "Claude Code Local", un servidor compatible con la API de Anthropic que ejecuta Claude Code íntegramente en el dispositivo; el modelo actúa como uno de los "fighters" del banco de pruebas Agent-12.
-- Procesamiento multimodal de documentos: combinación de imagen (capturas, escaneos) y texto para extraer y resumir contenido en un pipeline local.
-- Investigación sobre alineación y seguridad: al tener la dirección de rechazo eliminada y documentada, sirve como caso de estudio para medir cómo afecta la ablación a las capacidades y a la tasa de rechazo.
-- Prototipado en Mac con MLX: desarrollo de aplicaciones de visión-lenguaje-audio sin GPU dedicada, usando el formato nativo de Apple.
-- Evaluación comparativa de modelos abliterados: la existencia de una versión GGUF Q4_K_M permite comparar el mismo modelo en MLX y en llama.cpp con distintos backends.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como se distribuye la direccion de rechazo en arquitecturas hibridas Mamba-atencion con MoE, comparando el comportamiento con el checkpoint original de NVIDIA en las mismas entradas.
+- Procesamiento multimodal local en Mac: un investigador puede transcribir audio y describir imagenes sin enviar datos a la nube, usando `mlx-vlm` sobre un Mac con memoria unificada suficiente (el repo pesa 66 GB en bf16).
+- Analisis de contenido audiovisual en entornos air-gapped: al ejecutarse integramente en local, encaja en flujos donde la politica impide el envio de material sensible a APIs externas.
+- Evaluacion de la degradacion por abliteration: comparar las respuestas del modelo abliterado frente al original en tareas de vision y audio permite medir si la ablacion del stack linguistico afecta a la calidad descriptiva.
+- Prototipado de pipelines image-text-to-text en MLX: sirve como banco de pruebas para desarrolladores que construyen aplicaciones sobre `mlx-vlm` con soporte Omni antes de invertir en infraestructura CUDA.
+- Pruebas en llama.cpp con cuantizacion Q4_K_M: la conversion GGUF publicada por terceros permite validar el comportamiento del modelo en CPU y GPUs de gama consumer, comparando la fidelidad frente al bf16 original.
+- Docencia y demostraciones de tecnicas de ablacion direccional: el repositorio documenta el metodo concreto (dos bloques, Gram-Schmidt, lista de proyecciones afectadas), lo que lo convierte en material de referencia para cursos de interpretabilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta una verificación cualitativa: 6/6 en un conjunto reservado de peticiones dañinas tras la ablación, y confirmación de que visión y audio funcionan. No hay cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales (MMMU, AudioBench, etc.).
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta verificaciones cualitativas: eliminacion del rechazo en 6 de 6 casos de un conjunto danino reservado, descripcion correcta de imagenes y transcripcion funcional de audio.
 
 ## Requisitos de hardware
 
-- VRAM/unified memory para bf16: el repositorio ocupa 66 GB y el autor indica ~62 GB de pesos; se necesita un Mac con al menos 64 GB de memoria unificada, y 96 GB o más para trabajar con comodidad (contexto, caché KV y torres multimodales).
-- GPU discretas: no se documenta soporte CUDA en esta compilación MLX; para NVIDIA habría que usar la conversión GGUF o los pesos originales de NVIDIA (no incluidos aquí).
-- GPU de consumo: en bf16 no cabe en ninguna GPU de consumo actual (RTX 4090 tiene 24 GB). La versión GGUF Q4_K_M de wacomctl672 reduce el peso lo suficiente para caber en GPUs de 24 GB y en Macs de 32 GB, según la práctica habitual de cuantización Q4 (no verificado en la información).
-- Opciones de despliegue: `mlx-vlm` >= 0.6.12 con soporte Omni (`python -m mlx_vlm generate`); llama.cpp con la conversión GGUF y el parche a `llama.cpp/conversion/nemotron.py` descrito en la model card; no se mencionan vLLM, TGI ni Ollama.
+- VRAM/memoria estimada: aproximadamente 62-66 GB en bf16 (el repo ocupa 66 GB; el autor indica "~62GB" de precision completa). En GGUF Q4_K_M el peso se reduce aproximadamente a una cuarta parte, aunque no se dispone de la cifra exacta en la informacion proporcionada.
+- GPU recomendadas: no disponible para CUDA; el objetivo declarado es Apple Silicon con memoria unificada. Para el GGUF en llama.cpp se requiere una GPU con VRAM suficiente para Q4_K_M o ejecucion en CPU.
+- Cabe en consumer GPU: en bf16 no cabe en GPUs consumer convencionales (24 GB o menos). La version GGUF Q4_K_M puede caber en GPUs con 24 GB de VRAM, aunque este dato no se confirma en la informacion proporcionada.
+- Macs: requiere un equipo Apple Silicon con memoria unificada holgada para el checkpoint completo; el autor no especifica el minimo.
+- Opciones de despliegue: `mlx-vlm` 0.6.12 o superior (via `python -m mlx_vlm generate`), llama.cpp con el parche al script de conversion `nemotron.py`, y pesos GGUF de terceros (`wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF`). vLLM, TGI y Ollama no se mencionan en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16 (este) | ~33,0B | no disponible | texto, imagen, audio | other | MLX bf16 + GGUF Q4_K_M comunitario |
-| mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16 (base) | ~33,0B | no disponible | texto, imagen, audio | other | MLX bf16 |
-| wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF | ~33,0B | no disponible | texto, imagen, audio | other | GGUF Q4_K_M |
-| Otros modelos Omni abliterados en NVFP4/GGUF (sin identificar) | no disponible | no disponible | texto, imagen, audio | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Modalidades | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16 | 33.015.598.918 | no disponible | texto, imagen, audio | safetensors MLX | other | Hugging Face, 950 descargas |
+| mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16 (base) | mismo checkpoint | no disponible | texto, imagen, audio | safetensors MLX | other | Hugging Face |
+| wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF | mismo checkpoint | no disponible | texto, imagen, audio | GGUF Q4_K_M | other | Hugging Face |
+| Otros builds abliterados del Omni (NVFP4) | mismo checkpoint | no disponible | texto, imagen, audio | NVFP4 | other | mencionados por el autor, sin enlace |
 
-La comparativa se limita a variantes del mismo modelo base porque la información proporcionada no incluye alternativas de otros fabricantes con especificaciones verificables. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
+La diferencia principal frente al modelo base es la eliminacion de la direccion de rechazo; frente a la version GGUF, el formato y la precision (bf16 frente a Q4_K_M); frente a los builds NVFP4, la compatibilidad con Apple Silicon.
 
 ## Limitaciones y advertencias
 
-- Alineación de seguridad eliminada: el modelo no rechaza peticiones dañinas por diseño; el autor lo advierte explícitamente y la responsabilidad del uso recae en el operador.
-- La ablación se aplicó solo al stack de lenguaje; las torres de visión y audio son copias sin modificar, por lo que podrían conservar comportamientos del modelo original en tareas multimodales.
-- Riesgo de alucinación: no evaluado en la información disponible; los modelos abliterados pueden degradar la coherencia y el rechazo de contenido falso.
-- Licencia "other" heredada de NVIDIA: no se detallan los términos comerciales; es imprescindible revisar la licencia del modelo base antes de cualquier uso en producción.
-- Idiomas y contexto no documentados: no se puede garantizar un rendimiento multilingüe ni una ventana de contexto concreta.
-- Requisitos de memoria elevados en bf16 (~62-66 GB), lo que limita su uso a equipos de gama alta o a la cuantización GGUF de terceros.
-- La conversión GGUF requiere un parche manual en `llama.cpp/conversion/nemotron.py`; sin él, la conversión falla en las capas MoE.
-- El repositorio es una publicación de la comunidad (901 descargas, 2 likes en el momento de la consulta) sin validación independiente de NVIDIA; los enlaces de la model card incluyen contenido promocional del autor.
-- No hay datos de benchmarks que permitan estimar la pérdida de calidad respecto al modelo original.
+- La alineacion de seguridad ha sido eliminada deliberadamente: el modelo no rechaza peticiones daninas. El autor declara que la responsabilidad del uso recae en el usuario.
+- La licencia es "other" y se hereda del modelo base de NVIDIA; no se detallan en la informacion proporcionada las condiciones exactas para uso comercial. Es imprescindible revisar los terminos del checkpoint original antes de cualquier despliegue productivo.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; al tratarse de un modelo de 30B con modo de razonamiento, es esperable en tareas de conocimiento factual, pero no hay datos que lo respalden.
+- Sesgos conocidos: no documentados en la informacion proporcionada. La ablacion puede alterar la calibracion del modelo en dominios sensibles, un efecto no medido por el autor.
+- Idiomas soportados: no disponibles. No se confirma soporte de castellano ni de otras lenguas distintas del ingles.
+- Longitud de contexto: no disponible, lo que impide planificar cargas de trabajo con documentos largos.
+- La abliteration se aplico solo al stack linguistico; las torres de vision y audio conservan el comportamiento del modelo original, lo que puede generar respuestas inconsistentes entre modalidades.
+- El build esta orientado a MLX y Apple Silicon; el soporte en llama.cpp requiere un parche manual al script de conversion si se realiza por cuenta propia.
+- El checkpoint tiene 66 GB en bf16, lo que excluye su ejecucion en la mayoria de equipos consumer.
+- La model card incluye estadisticas promocionales y enlaces de afiliacion del autor; conviene tratarlas con cautela y verificar las cifras de descargas en Hugging Face.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16
 - Modelo base: https://huggingface.co/mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16
-- Conversión GGUF comunitaria: https://huggingface.co/wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF
+- Conversion GGUF de terceros: https://huggingface.co/wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF
 - Repositorio de runtime MLX: https://github.com/nicedreamzapp/nemotron-omni-mlx
-- Discusión con detalles de la conversión GGUF: https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16/discussions/1
-- Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
+- Proyecto Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
 - Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
-- Perfil del autor en GitHub: https://github.com/nicedreamzapp
-- Patrocinio del autor: https://github.com/sponsors/nicedreamzapp
+- Discusion con detalles de la conversion GGUF: https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16/discussions/1
+- Perfil del autor: https://huggingface.co/divinetribe
+- GitHub del autor: https://github.com/nicedreamzapp

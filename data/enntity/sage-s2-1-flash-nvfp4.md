@@ -2,127 +2,126 @@
 
 ## Resumen
 
-Sage-S2.1-Flash-NVFP4 es una cuantización calibrada de 4 bits del modelo internlm/Sage-S2.1-Flash, publicada por Enntity. El checkpoint reduce el peso de 643 GB en BF16 a 179 GB, manteniendo una divergencia KL de 0.0531 y un 94.5% de acuerdo top-1 respecto al modelo original. Está diseñado específicamente para cargarse en SparkGLM sobre dos o cuatro NVIDIA DGX Sparks, un motor de inferencia propio del autor.
+Sage-S2.1-Flash-NVFP4 es una cuantización calibrada de 4 bits del modelo internlm/Sage-S2.1-Flash, publicada por Enntity. El modelo base es un transformer multimodal de tipo image-text-to-text con arquitectura híbrida de atención (capas de atención lineal, capas de atención indexada y una torre de visión), diseñado para el ecosistema SparkGLM sobre hardware NVIDIA DGX Spark. Esta versión reduce el peso de 643 GB en BF16 a 179 GB, manteniendo una fidelidad medida frente al original (KL de 0,0531 y 94,5 % de acuerdo top-1).
 
-El modelo base es un transformer multimodal (texto, imagen y vídeo) con arquitectura híbrida: 34 capas de atención lineal y 11 capas de atención indexada, además de una capa de predicción multi-token (MTP). La cuantización emplea NVFP4 para los expertos enrutados (42 capas de 288 expertos), MXFP8 para las proyecciones de atención lineal y el MLP denso, y FP8 para las proyecciones de atención indexada y los expertos compartidos. La torre de visión, embeddings, normas y routers permanecen en BF16.
+El interés de esta ficha reside en que no es un modelo nuevo, sino un checkpoint cuantizado con un esquema mixto muy específico (NVFP4 para expertos enrutados, MXFP8 y FP8 para proyecciones de atención y MLP denso, BF16 para visión, embeddings, normas y routers). El autor documenta el proceso de calibración con GPTQ por experto y publica métricas de fidelidad por categoría, algo poco habitual en checkpoints cuantizados.
 
-La relevancia de esta ficha radica en que documenta un proceso de cuantización con calibración por experto (GPTQ con un Hessiano por experto) y validación estadística rigurosa (intervalos bootstrap del 95%), algo poco habitual en checkpoints cuantizados. No obstante, su utilidad práctica está muy acotada al ecosistema SparkGLM y DGX Spark: no se ha probado en vLLM, SGLang ni llama.cpp.
+El modelo está pensado para servirse en dos o cuatro NVIDIA DGX Spark mediante SparkGLM, con soporte de texto, imagen y vídeo, tool calling y razonamiento multi-paso. La licencia es MIT, igual que la del modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 34 capas de atención lineal + 11 capas de atención indexada, con capa MTP; multimodal (texto, imagen, vídeo) |
-| Parametros totales | no disponible (peso del checkpoint: 179 GB en NVFP4/MXFP8/FP8) |
-| Parametros activos | no disponible (la model card menciona 288 expertos enrutados por capa en 42 capas, lo que sugiere arquitectura MoE, pero no se indica el número de parámetros activos) |
+| Arquitectura | Transformer multimodal híbrido: 34 capas de atención lineal, 11 capas de atención indexada, 42 capas de expertos enrutados (288 expertos por capa), torre de visión, capa MTP (multi-token prediction) |
+| Parámetros totales | 342.798.954.914 (≈342,8 mil millones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (expertos enrutados), MXFP8 1×32 (atención lineal, MLP denso, lm_head, MTP), FP8 128×128 (atención indexada, expertos compartidos), BF16 (visión, embeddings, normas, routers, kv_b_proj) |
-| Idiomas soportados | no disponible (la calibración incluyó prosa en inglés y multilingüe, y evaluación en japonés) |
+| Tipos de cuantización | NVFP4 (expertos enrutados, capas 3-44), MXFP8 con bloques 1×32 (proyecciones de atención lineal, MLP denso de capas 0-2, `lm_head`), FP8 con bloques 128×128 (proyecciones de atención indexada excepto `kv_b_proj`, expertos compartidos), BF16 (torre de visión, embeddings, normas, routers, `kv_b_proj`) |
+| Idiomas soportados | no disponible (la calibración incluye prosa en inglés y multilingüe, y prosa japonesa en la evaluación) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (diseñado para SparkGLM; no se especifica safetensors ni GGUF) |
+| Formato de pesos | safetensors (repo de 178,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Sage-S2.1-Flash emplea una arquitectura transformer híbrida que combina 34 capas de atención lineal con 11 capas de atención indexada, e incorpora una capa de predicción multi-token (MTP). La componente de mezcla de expertos (MoE) se distribuye en 42 capas con 288 expertos enrutados cada una. El checkpoint cuantizado conserva la torre de visión en BF16, lo que habilita entrada de imagen y vídeo, aunque los proyectores de entrada científica del repositorio original (moléculas, estructuras cristalinas, proteínas) no están incluidos.
+El modelo base es un transformer multimodal con una mezcla de mecanismos de atención: 34 capas de atención lineal, 11 capas de atención indexada y 42 capas con mezcla de expertos (288 expertos enrutados por capa). Incorpora además una torre de visión para entrada de imagen y vídeo, y una capa de multi-token prediction (MTP). Los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada.
 
-La cuantización se realizó mediante GPTQ con un Hessiano independiente por experto, calibrado a partir de los pesos BF16 originales (sin partir de otro checkpoint cuantizado). Se usaron 2.229 secuencias de datasets públicos (razonamiento, chat, tool calling, código, prosa en inglés y multilingüe, ciencia y matemáticas), con 600.000 tokens para los expertos y 200.000 para las matrices de 8 bits. Las matrices de 8 bits se recalibraron contra las entradas de capa para recuperar precisión (KL de 0.0625 a 0.0531). La capa MTP se redondeó a nearest, sin calibración.
+Esta versión cuantizada se generó con GPTQ para los expertos enrutados, usando una matriz de Hessian por experto calculada a partir de las entradas propias de ese experto, con 600.000 tokens de calibración. Las matrices de 8 bits (MXFP8 y FP8) se recalibraron contra las entradas de capa con 200.000 tokens de calibración, recuperando precisión frente al redondeo simple (KL de 0,0625 a 0,0531). La calibración usó 2.229 secuencias (2,4 millones de tokens disponibles, 600.000 usados para los expertos) de datasets públicos: chat de razonamiento, chat plano, tool calling, código, prosa en inglés y multilingüe, ciencia y matemáticas. No se partió de ningún otro checkpoint cuantizado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-turno, con evaluación específica en chat de razonamiento (KL 0.0573, top-1 95.35%).
-- Generación de código (KL 0.0276, top-1 96.84% en la categoría Code).
-- Razonamiento matemático (KL 0.0199, top-1 96.35% en Math; sonda aritmética 39/40).
-- Comprensión de imágenes: 3 de 3 preguntas de imagen respondidas correctamente en la validación del autor.
-- Comprensión de vídeo: 2 de 2 preguntas de vídeo respondidas correctamente.
-- Tool calling / function calling: 21 de 21 llamadas correctas en la suite de validación; categoría con KL 0.2772 y top-1 85.93% (la más degradada por la cuantización).
-- Tareas agénticas multi-paso: 20 de 20 tareas completadas en la validación.
-- Recuperación en contexto largo: 12 de 12 aciertos en la prueba de long-context retrieval.
-- Soporte multilingüe parcial: la calibración incluyó prosa multilingüe y se evaluó prosa en japonés (KL 0.0265, top-1 94.04%).
-- Salida estructurada: decodificación a 89.7 tok/s en la prueba de structured output.
+- Generación de texto y razonamiento multi-paso: el modelo razona antes de responder incluso cuando se desactiva el modo thinking en la petición.
+- Entrada multimodal: texto, imágenes y vídeo (pipeline image-text-to-text). Los proyectores de entrada científica del modelo base no están incluidos en esta cuantización.
+- Tool calling / function calling: soporta elección automática de herramienta y elección forzada (`tool_choice` con nombre de herramienta, `required` o `any`), aunque la elección forzada requiere SparkGLM 0.3.6 o superior.
+- Tareas agénticas: la suite de cualificación de SparkGLM reporta 20 de 20 tareas agénticas superadas y 21 de 21 llamadas a herramientas.
+- Generación de código y salida estructurada: decodificación de código a 67,9 tok/s y de salida estructurada a 90,0 tok/s en dos DGX Spark.
+- Capacidades multilingües: la evaluación incluye prosa en inglés y japonés; el conjunto exacto de idiomas soportados no está disponible.
+- Recuperación en contexto largo: 12 de 12 en la prueba de retrieval de contexto largo de SparkGLM.
+- Aritmética y matemáticas: 39 de 40 en la prueba aritmética de SparkGLM.
 
 ## Casos de uso
 
-- Despliegue en clúster DGX Spark: el caso de uso principal y documentado. Con dos Sparks en tensor parallel 2 y SparkGLM 0.3.5, el modelo alcanza 38.4 tok/s en decodificación de prosa y 67.4 tok/s en código, lo que lo hace adecuado para servir un modelo multimodal de gran tamaño en hardware de borde con un consumo energético contenido.
-- Asistente de código en producción: la categoría Code mantiene un top-1 del 96.84% respecto a BF16 y una decodificación de 67.4 tok/s, suficiente para autocompletado y generación de parches en pipelines de CI/CD donde la latencia importa.
-- Automatización de tool calling en agentes: con 21 de 21 llamadas correctas en la suite del autor, el modelo puede orquestar APIs y funciones en flujos agénticos. Requiere la corrección del motor (Enntity/atlas#33) si se usa `tool_choice` forzado.
-- Análisis de documentos con imágenes y vídeo: la torre de visión en BF16 y las 3/3 y 2/2 respuestas correctas en imagen y vídeo permiten usarlo para inspección visual, extracción de información de capturas o resumen de clips cortos.
-- Razonamiento matemático y científico asistido: la categoría Science mantiene KL 0.0159 y top-1 95.18%, y Math KL 0.0199, lo que lo hace apto para tutoría o verificación de cálculos, aunque sin los proyectores de entrada científica del modelo original.
-- Recuperación aumentada con contexto largo: 12 de 12 aciertos en long-context retrieval lo habilitan para RAG sobre corpus extensos, siempre que el motor soporte la ventana de contexto del modelo base (no documentada en esta ficha).
-- Salida estructurada y extracción de datos: 89.7 tok/s en structured output decode lo hacen viable para generar JSON validado en pipelines de ingestión de datos.
+- Asistente conversacional multimodal: el modelo acepta texto, imagen y vídeo en la misma petición, por lo que puede gestionar conversaciones multi-turno donde el usuario adjunta capturas, diagramas o clips. Es adecuado porque la torre de visión se mantiene en BF16, sin pérdida de precisión por cuantización.
+- Automatización de soporte técnico con tool calling: con elección automática de herramienta puede decidir cuándo consultar una API, un CRM o una base de conocimiento. La fidelidad en tool calling es la categoría donde esta cuantización mejora más frente a la alternativa (KL 0,2772 frente a 0,4176; 85,93 % frente a 81,53 % de acuerdo top-1).
+- Pipelines de generación de código: la decodificación de código alcanza 67,9 tok/s en dos DGX Spark, con una fidelidad en código de KL 0,0276 y 96,84 % de acuerdo top-1, adecuada para autocompletado y revisión en CI/CD.
+- Agentes multi-paso sobre documentos largos: la suite de cualificación reporta 12 de 12 en retrieval de contexto largo y 20 de 20 en tareas agénticas, lo que lo hace apto para flujos de investigación que encadenan búsqueda, lectura y síntesis.
+- Análisis de documentación científica y matemática: la fidelidad en ciencia (KL 0,0159) y matemáticas (KL 0,0199) es de las más altas del checkpoint, y la prueba aritmética supera 39 de 40, por lo que sirve para extracción y razonamiento sobre papers y tablas.
+- Despliegue en infraestructura de borde con DGX Spark: el checkpoint está empaquetado para cargarse en dos o cuatro DGX Spark con SparkGLM, con un pool de caché de prompt de 2,22 millones de tokens, lo que permite servir varias sesiones concurrentes en hardware compacto.
+- Salida estructurada y extracción de datos: la decodificación de salida estructurada a 90,0 tok/s y la fidelidad en tool calling lo hacen adecuado para generar JSON validado en pipelines de ingestión.
 
 ## Benchmarks y rendimiento
 
-Fidelidad frente a BF16, medida en PyTorch sobre 224 documentos retenidos (239.711 posiciones), con intervalos bootstrap del 95%:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos publicados son de fidelidad frente al modelo BF16 y de velocidad en DGX Spark.
 
-| Metrica | Este checkpoint | Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4 |
+Fidelidad frente a BF16 (224 documentos reservados, 239.711 posiciones evaluadas, intervalos bootstrap del 95 %):
+
+| Métrica | Este checkpoint | Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4 |
 |---|---|---|
-| KL divergence | 0.0531 [0.0441, 0.0631] | 0.0676 [0.0548, 0.0819] |
-| Acuerdo top-1 | 94.50% [94.10, 94.88] | 93.89% |
-| Incremento de NLL | +0.64% | +0.66% |
+| KL | 0,0531 [0,0441; 0,0631] | 0,0676 [0,0548; 0,0819] |
+| Acuerdo top-1 | 94,50 % [94,10; 94,88] | 93,89 % |
+| Incremento de NLL | +0,64 % | +0,66 % |
 
-Por categoría (32 documentos cada una):
+Fidelidad por categoría (32 documentos por categoría, KL y acuerdo top-1):
 
-| Categoria | Este checkpoint (KL, top-1) | Bizuayeu Mixed-NVFP4 (KL, top-1) |
+| Categoría | Este checkpoint | Bizuayeu Mixed-NVFP4 |
 |---|---|---|
-| Reasoning chat | 0.0573, 95.35% | 0.0679, 94.35% |
-| Code | 0.0276, 96.84% | 0.0263, 96.92% |
-| Math | 0.0199, 96.35% | 0.0234, 96.11% |
-| English prose | 0.0424, 94.25% | 0.0415, 94.40% |
-| Japanese prose | 0.0265, 94.04% | 0.0280, 93.64% |
-| Science | 0.0159, 95.18% | 0.0163, 95.11% |
-| Tool calling | 0.2772, 85.93% | 0.4176, 81.53% |
+| Chat de razonamiento | 0,0573; 95,35 % | 0,0679; 94,35 % |
+| Código | 0,0276; 96,84 % | 0,0263; 96,92 % |
+| Matemáticas | 0,0199; 96,35 % | 0,0234; 96,11 % |
+| Prosa en inglés | 0,0424; 94,25 % | 0,0415; 94,40 % |
+| Prosa en japonés | 0,0265; 94,04 % | 0,0280; 93,64 % |
+| Ciencia | 0,0159; 95,18 % | 0,0163; 95,11 % |
+| Tool calling | 0,2772; 85,93 % | 0,4176; 81,53 % |
 
-Rendimiento de servicio en SparkGLM 0.3.5, dos Sparks (tensor parallel 2), modo Spark:
+Velocidad en dos DGX Spark (tensor parallel 2, modo Spark, medianas de tres ejecuciones):
 
-| Metrica | Sage S2.1 Flash NVFP4 | GLM-5.3-Flash FP4-Local (misma pareja) |
+| Métrica | Sage S2.1 Flash NVFP4 | GLM-5.3-Flash FP4-Local |
 |---|---|---|
-| Decodificacion de prosa | 38.4 tok/s | 37.8 tok/s |
-| Decodificacion de codigo | 67.4 tok/s | 66.2 tok/s |
-| Decodificacion de salida estructurada | 89.7 tok/s | 83.8 tok/s |
+| Decodificación de prosa | 38,6 tok/s | 37,7 tok/s |
+| Decodificación de código | 67,9 tok/s | 66,1 tok/s |
+| Decodificación de salida estructurada | 90,0 tok/s | 88,8 tok/s |
+| Pool de caché de prompt | 2,22 M tokens | 2,38 M tokens |
 
-Pruebas funcionales del autor: aritmética 39/40, long-context retrieval 12/12, tool calls 21/21, tareas agénticas 20/20, imagen 3/3, vídeo 2/2. Suite de calificación de SparkGLM: 97/109 en 0.3.5 tal cual, 109/109 con la corrección del motor.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Pruebas de cualificación de SparkGLM: 109 de 109 en SparkGLM 0.3.6 (97 de 109 en 0.3.5); preguntas de imagen 3 de 3; preguntas de vídeo 2 de 2; aritmética 39 de 40; retrieval de contexto largo 12 de 12; tool calls 21 de 21; tareas agénticas 20 de 20.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint pesa 179 GB, por lo que requiere al menos esa capacidad total, distribuida entre GPUs. En BF16 el modelo base pesa 643 GB.
-- Configuración probada: dos NVIDIA DGX Spark en tensor parallel 2 con SparkGLM 0.3.5 en modo Spark.
-- Configuración no medida: tensor parallel 4 (cuatro Sparks). No hay datos de rendimiento para esta topología.
-- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en una única GPU profesional estándar (A100 80 GB, H100 80 GB) sin sharding en múltiples dispositivos.
-- Opciones de despliegue: únicamente SparkGLM 0.3.5 ha sido probado. vLLM, SGLang, llama.cpp, Ollama y TGI no han sido validados; el layout sigue el checkpoint FP4-Local de NVIDIA para GLM-5.3-Flash, pero no se garantiza compatibilidad.
-- Latencia y throughput: 38.4 tok/s (prosa), 67.4 tok/s (código) y 89.7 tok/s (salida estructurada) en dos Sparks con tensor parallel 2.
-- Configuración de despliegue: definir `CHECKPOINT_REPO=Enntity/Sage-S2.1-Flash-NVFP4` y `CHECKPOINT_REVISION` con el commit fijado en el `.env` de SparkGLM.
+- VRAM estimada: el checkpoint ocupa 179 GB en disco; en inferencia necesita al menos ese espacio en memoria agregada de las GPU, más overhead de activaciones y caché KV.
+- GPU recomendadas: NVIDIA DGX Spark, en configuraciones de dos (tensor parallel 2) o cuatro unidades. El autor no documenta otros aceleradores.
+- GPU de consumo: no disponible; el tamaño del checkpoint (179 GB) y el requisito de SparkGLM lo sitúan fuera del alcance de una GPU de consumo individual.
+- Opciones de despliegue: SparkGLM 0.3.6 (o superior) sobre DGX Spark, instalado mediante LLooM. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 38,6 tok/s en prosa, 67,9 tok/s en código y 90,0 tok/s en salida estructurada con dos DGX Spark; pool de caché de prompt de 2,22 millones de tokens.
+- Modo de servicio: se recomienda el modo Spark (por defecto en `start.sh` de SparkGLM y en la receta de LLooM), que limita el razonamiento previo. En modo Strict la suite de cualificación baja a 97 de 109.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento relativo |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sage-S2.1-Flash-NVFP4 (este) | no disponible (179 GB) | no disponible | MIT | no disponible (SparkGLM) | KL 0.0531, top-1 94.50% |
-| Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4 | no disponible | no disponible | no disponible | no disponible | KL 0.0676, top-1 93.89%; mantiene atención lineal y lm_head en BF16 |
-| GLM-5.3-Flash FP4-Local | no disponible | no disponible | no disponible | FP4-Local (NVIDIA) | 37.8 tok/s prosa, 66.2 tok/s código, 83.8 tok/s structured (misma pareja de Sparks) |
-| internlm/Sage-S2.1-Flash (BF16) | no disponible (643 GB) | no disponible | MIT | BF16 | Referencia de fidelidad (KL 0, top-1 100%) |
+| Enntity/Sage-S2.1-Flash-NVFP4 | 342,8 mil millones | no disponible | safetensors NVFP4/MXFP8/FP8/BF16 | MIT | Hugging Face, 209 descargas |
+| Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4 | mismo modelo base | no disponible | safetensors mixto (mantiene proyecciones de atención lineal y `lm_head` en BF16) | no disponible | Hugging Face |
+| GLM-5.3-Flash FP4-Local | no disponible | no disponible | FP4 | no disponible | citado en la model card como referencia de velocidad |
+| internlm/Sage-S2.1-Flash (BF16) | 342,8 mil millones | no disponible | safetensors BF16 (643 GB) | MIT | Hugging Face |
 
-La comparación con GLM-5.3-Flash FP4-Local se limita a throughput en el mismo hardware; no hay datos de calidad comparables. La comparación con Bizuayeu Mixed-NVFP4 no es estrictamente equivalente porque ese checkpoint conserva más capas en BF16 y usa un conjunto de documentos distinto para sus métricas.
+Frente a Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4, este checkpoint tiene menor KL (0,0531 frente a 0,0676) y mayor acuerdo top-1 (94,50 % frente a 93,89 %), con la mayor diferencia en tool calling. Frente al modelo BF16, ocupa 179 GB en lugar de 643 GB con un incremento de NLL de +0,64 %.
 
 ## Limitaciones y advertencias
 
-- Entradas científicas no soportadas: moléculas, estructuras cristalinas, proteínas y otras entradas de Sage SciPerception requieren los proyectores del repositorio original, ausentes en este checkpoint.
-- Compatibilidad de motores muy restringida: solo SparkGLM 0.3.5 ha sido probado. vLLM, SGLang y otros motores no se han validado, lo que limita su adopción fuera del ecosistema Enntity.
-- Tool calling forzado defectuoso en SparkGLM 0.3.5: las peticiones con `tool_choice` nombrando una herramienta, `required` o `any` pueden devolver la llamada como texto en lugar de como tool call. La corrección está en Enntity/atlas#33 y no se ha incluido en ninguna release de SparkGLM. Las peticiones con elección automática no se ven afectadas.
-- Tokenizer: la regla del tokenizer original codifica cadenas de control como `<tool_call>` dentro del contenido del mensaje como texto plano. SparkGLM tiene su propio manejo de markup literal; sus tests pasan con este checkpoint, pero no es la ruta de código original.
-- Capa MTP redondeada a nearest, no calibrada: puede degradar ligeramente la decodificación especulativa.
-- Borrador de decodificación especulativa no adaptado: el drafter que usa SparkGLM fue entrenado sobre GLM-5.3-Flash, no sobre Sage, lo que puede reducir la eficacia de la decodificación especulativa.
-- Tensor parallel 4 no medido: no hay datos de rendimiento ni de estabilidad en cuatro Sparks.
-- Degradación desigual por categoría: tool calling es la más afectada (KL 0.2772, top-1 85.93%), seguida de reasoning chat (KL 0.0573). Code y prosa inglesa quedan ligeramente por detrás del checkpoint de Bizuayeu.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; debe evaluarse empíricamente antes de uso en producción.
-- Idiomas: no se especifica la lista completa de idiomas soportados; solo hay evidencia de calibración multilingüe y evaluación en japonés.
-- Licencia MIT: permite uso comercial, pero el modelo base y los datasets de calibración pueden tener sus propias condiciones que conviene verificar.
+- La cuantización introduce una degradación medible: KL de 0,0531 y 94,50 % de acuerdo top-1 frente al BF16, con un incremento de NLL de +0,64 %. La categoría más afectada es tool calling (KL 0,2772, 85,93 % de acuerdo top-1).
+- Los proyectores de entrada científica del modelo base no están incluidos, por lo que las capacidades de entrada científica del original no están disponibles en este checkpoint.
+- La elección forzada de herramienta (`tool_choice` con nombre, `required` o `any`) puede devolver la llamada como texto en SparkGLM 0.3.5; requiere SparkGLM 0.3.6 o superior.
+- El modelo razona antes de responder incluso con el thinking desactivado; en modo Strict esto provoca fallos en 12 de 109 pruebas de la suite de cualificación. Se recomienda el modo Spark.
+- Solo se documenta despliegue en DGX Spark con SparkGLM; no hay soporte verificado para vLLM, llama.cpp, Ollama o TGI.
+- El conjunto exacto de idiomas soportados no está disponible; la evaluación cubre inglés y japonés, y la calibración incluye prosa multilingüe sin especificar idiomas.
+- Riesgo de alucinación y sesgos: no hay información publicada en la documentación proporcionada sobre evaluación de sesgos o tasas de alucinación del modelo base ni de esta cuantización.
+- La licencia MIT permite uso comercial, pero se heredan las condiciones y limitaciones del modelo base internlm/Sage-S2.1-Flash.
+- El pool de caché de prompt (2,22 millones de tokens) varía unos pocos por ciento entre arranques, según el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Enntity/Sage-S2.1-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Enntity/Sage-S2.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/internlm/Sage-S2.1-Flash
-- Checkpoint alternativo comparado: https://huggingface.co/Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4
-- Motor de inferencia SparkGLM: https://github.com/Enntity/sparkglm
-- Corrección del motor para tool choice forzado: https://github.com/Enntity/atlas/pull/33
+- Checkpoint alternativo citado: https://huggingface.co/Bizuayeu/Sage-S2.1-Flash-Mixed-NVFP4
+- Repositorio SparkGLM: https://github.com/Enntity/sparkglm
+- Release SparkGLM 0.3.6: https://github.com/Enntity/sparkglm/releases/tag/v0.3.6
+- Resultados de la suite 0.3.6: https://github.com/Enntity/sparkglm/blob/v0.3.6/results/2026-11-18-0.3.6/RESULT.md
+- Repositorio LLooM: https://github.com/Enntity/lloom
+- Pull request del fix de tool choice forzado: https://github.com/Enntity/atlas/pull/33

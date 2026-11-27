@@ -2,52 +2,48 @@
 
 ## Resumen
 
-Qwen3.8-27B-SOM-heretic-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Qwen3.8-27B-SOM-heretic, publicada por el usuario richardyoung en Hugging Face. Se trata de un derivado de la familia Qwen3 con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones), adaptado mediante tecnicas de "abliteration" y "heretic" para eliminar o reducir los mecanismos de rechazo y moderacion del modelo original, orientandolo a investigacion sobre alineamiento y comportamiento de modelos sin censura. El repositorio esta etiquetado como gated (acceso restringido) y requiere aceptar condiciones en Hugging Face antes de la descarga.
+Qwen3.8-27B-SOM-heretic-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Qwen3.8-27B-SOM-heretic, un derivado de la familia Qwen3 con 26.895.998.464 parametros (aproximadamente 27B) publicado por el usuario richardyoung en Hugging Face. El modelo se distribuye bajo licencia Apache 2.0, esta orientado a generacion de texto conversacional y se ofrece en variantes optimizadas para llama.cpp y Ollama, con cuantizaciones generadas mediante imatrix.
 
-La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo de gran tamano (27B) en formato GGUF listo para llama.cpp y Ollama, un proceso de modificacion de pesos orientado a eliminar negativas de seguridad, y una licencia Apache 2.0 que permite uso comercial. El modelo esta pensado para experimentacion e investigacion, no como sustituto directo de un modelo alineado en produccion. La informacion publica disponible es limitada: no se detallan los datos de entrenamiento, los benchmarks ni la composicion exacta del proceso de abliteration.
+La particularidad del modelo es su caracter "heretic" y "abliterated": segun los tags del repositorio, se ha aplicado una tecnica de abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones) para reducir las negativas del modelo a responder determinadas peticiones, lo que lo etiqueta como "uncensored". El sufijo SOM hace referencia a un procedimiento de modificacion de pesos no documentado en la informacion disponible. El repositorio esta marcado como de investigacion y su acceso es restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
-El contexto de 27B y el formato GGUF con cuantizaciones imatrix lo situan en la categoria de modelos desplegables en una sola GPU de gama alta o en configuraciones multi-GPU de consumo. El idioma declarado es unicamente ingles.
+El modelo esta pensado para desarrolladores e investigadores que necesitan ejecutar localmente un LLM de ~27B en hardware de consumo o servidores modestos mediante cuantizacion GGUF, y que quieren estudiar el efecto de tecnicas de abliteration sobre el comportamiento del modelo. No se dispone de informacion publica sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de la familia Qwen3; detalles exactos de la variante no disponibles) |
-| Parametros totales | 26.895.998.464 (aprox. 26,9B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (derivado de la familia Qwen3; detalles no publicados en la informacion disponible) |
+| Parametros totales | 26.895.998.464 (~27B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con cuantizaciones tipo imatrix (variantes concretas no disponibles en la informacion proporcionada) |
+| Tipos de cuantizacion | GGUF (variantes no detalladas en la informacion disponible); cuantizacion con imatrix |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp y Ollama) |
+| Formato de pesos | GGUF (llama.cpp, Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es richardyoung/Qwen3.8-27B-SOM-heretic, un derivado de la familia Qwen3 de aproximadamente 26,9 mil millones de parametros. La informacion disponible no especifica la arquitectura interna exacta (numero de capas, dimension del modelo, tipo de atencion ni si incorpora componentes MoE), por lo que estos datos deben considerarse no disponibles. Por el nombre y el tamano, se trata presumiblemente de un transformer decoder-only denso, coherente con la familia Qwen3.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. Por el nombre y el modelo base (Qwen3.8-27B-SOM-heretic), se trata de un derivado de la familia Qwen3 con aproximadamente 27B parametros, pero no se confirman en la ficha el tipo de atencion, la presencia de capas MoE, ni la longitud de contexto nativa. El repositorio no incluye una model card con detalles de arquitectura.
 
-El aspecto diferencial es el proceso de modificacion de pesos: las etiquetas "heretic" y "abliterated" indican que se ha aplicado una tecnica de abliteration, que consiste en identificar y neutralizar las direcciones de activacion asociadas al rechazo de peticiones, de forma que el modelo deja de negarse a responder a ciertos contenidos. El sufijo "SOM" no se explica en la informacion proporcionada. No se detallan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO posteriores a la modificacion. La cuantizacion GGUF se ha generado con imatrix, un metodo que calibra los factores de cuantizacion usando datos representativos para reducir la perdida de calidad en precisiones bajas.
+Respecto al entrenamiento, el modelo base ha sido sometido a un proceso de abliteration (etiqueta "abliterated" y "heretic"), una tecnica que identifica y elimina la direccion de activacion asociada al rechazo de peticiones, reduciendo la tendencia del modelo a negarse a responder. El tag "SOM" sugiere una modificacion adicional de pesos cuyo procedimiento no esta documentado en la informacion disponible. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO posteriores a la modificacion. La cuantizacion se ha realizado con imatrix, un metodo que calibra los factores de cuantizacion con un corpus de calibracion para mejorar la calidad en precision reducida.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con soporte de dialogos multi-turno.
-- Razonamiento y respuesta a preguntas derivados del modelo base Qwen3 (capacidades exactas no verificadas en la informacion disponible).
-- Generacion de codigo y matematicas heredadas del modelo base, sin datos de benchmark publicados que lo confirmen.
-- Comportamiento sin censura: el proceso de abliteration reduce las negativas a responder, lo que cambia el perfil de comportamiento respecto al modelo original.
-- Compatibilidad con llama.cpp y Ollama, lo que permite inferencia local en CPU y GPU.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
-- Capacidades de vision o audio: no disponibles.
+- Generacion de texto conversacional en ingles (unico idioma declarado en los tags).
+- Respuestas con menor tasa de rechazo que el modelo base, segun la etiqueta "uncensored" y el proceso de abliteration aplicado.
+- Ejecucion local mediante llama.cpp y Ollama, con soporte de cuantizaciones GGUF.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite desplegarlo tras una API compatible.
+- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como cambia el comportamiento de un LLM al eliminar los mecanismos de rechazo, comparando respuestas con el modelo base original en conjuntos de prompts controlados.
-- Analisis de robustez de filtros: util para evaluar si los sistemas de moderacion externos detectan contenido generado por un modelo abliterated, midiendo la eficacia de clasificadores de seguridad aguas abajo.
-- Experimentacion local con modelos de 27B: gracias al formato GGUF e imatrix, se puede ejecutar en estaciones de trabajo con una o varias GPU de consumo, sin depender de APIs externas, para pruebas de generacion de texto a gran escala.
-- Generacion de texto creativo sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, en un entorno controlado y con revision humana posterior.
-- Evaluacion de cuantizaciones: el repositorio sirve para comparar la calidad de distintas variantes GGUF imatrix frente al modelo en precision completa, midiendo perplejidad y coherencia en tareas de generacion.
-- Docencia y divulgacion tecnica: demostraciones sobre que es la abliteration y como se modifica el comportamiento de un modelo, usando el modelo como ejemplo practico en cursos de IA.
-- Prototipado de asistentes conversacionales en ingles: para pruebas internas de dialogo multi-turno donde no se requiera alineamiento estricto y se acepte el riesgo de respuestas no filtradas.
+- Investigacion sobre abliteration: el modelo permite estudiar empiricamente como la eliminacion de la direccion de rechazo afecta a la calidad, la coherencia y la seguridad de las respuestas en un LLM de ~27B, comparandolo con el modelo base sin modificar.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa con tematicas que el modelo base rechazaria, aprovechando la reduccion de negativas.
+- Despliegue local en estaciones de trabajo: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en equipos con GPU de consumo, sin depender de servicios en la nube.
+- Experimentos de cuantizacion: las variantes imatrix permiten comparar la degradacion de calidad entre niveles de cuantizacion sobre un mismo modelo, util para estudiar el impacto de la precision reducida.
+- Prototipado de asistentes conversacionales en ingles: con 27B parametros y formato GGUF, sirve para validar pipelines de atencion al cliente o chat antes de pasar a modelos en produccion.
+- Evaluacion de seguridad y alineamiento: al ser un modelo "uncensored", es util como caso de prueba en pipelines de moderacion y clasificadores de contenido para medir su robustez frente a salidas no filtradas.
+- Fine-tuning posterior sobre la base cuantizada o en precision completa: el modelo base en safetensors puede servir como punto de partida para ajustes especificos, aunque el repo GGUF es solo para inferencia.
 
 ## Benchmarks y rendimiento
 
@@ -55,38 +51,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en cuantizacion Q4_K_M, aproximadamente 16-18 GB para los pesos, mas overhead de contexto; en Q8_0, alrededor de 28-30 GB; en FP16, unos 54 GB.
-- GPU recomendadas: una RTX 4090 (24 GB) puede ejecutar cuantizaciones Q4 y Q5 con contexto moderado; para Q8 o contexto largo se recomienda A100 40/80 GB, H100 o configuraciones multi-GPU.
-- Cabe en GPU de consumo: si, en RTX 3090, RTX 4090, RTX 5090 y GPUs con 24 GB o mas usando cuantizaciones bajas; en GPUs de 16 GB solo con cuantizaciones agresivas (Q3 o inferiores) y contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con la API de llama.cpp; no se indica soporte nativo para vLLM o TGI en formato GGUF.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa para un modelo de ~27B en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 16-18 GB de VRAM, las de 5-6 bits alrededor de 20-24 GB y las de 8 bits en torno a 28-30 GB. Estas cifras son estimaciones generales, no datos publicados para este modelo.
+- GPU recomendadas: no especificadas en la informacion disponible. Para cuantizaciones de 4 bits, GPU de consumo con 24 GB (RTX 3090, RTX 4090) serian el minimo practico; para precisiones mayores, A100 40/80 GB o H100.
+- Cabe en GPU de consumo: probablemente en RTX 3090/4090 con cuantizaciones de 4 bits, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: llama.cpp y Ollama (segun los tags), ademas de servidores compatibles con endpoints. No se confirma soporte de vLLM o TGI para este formato GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-SOM-heretic-GGUF | 26,9B | no disponible | Apache 2.0 | GGUF | Abliterated, solo ingles, gated |
-| Qwen3-32B (original) | 32B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo alineado de referencia de la familia Qwen3 |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Menor tamano, multilingue, alineado |
-| Mistral Small 24B | 24B | 128K | Apache 2.0 | safetensors, GGUF | Tamano comparable, multilingue |
+| Qwen3.8-27B-SOM-heretic-GGUF (este) | ~27B | no disponible | Apache 2.0 | GGUF | Abliterated, acceso gated, solo ingles |
+| Modelo base Qwen3.8-27B-SOM-heretic | ~27B | no disponible | Apache 2.0 | safetensors (presumiblemente) | Sin cuantizar, mismo proceso de modificacion |
+| Familia Qwen3 original | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-La comparacion con el Qwen3-32B original es la mas directa por familia y tamano, pero no se dispone de datos de rendimiento del modelo heretic para establecer diferencias cuantitativas. Frente a Llama 3.1 8B y Mistral Small 24B, el modelo aqui descrito ofrece mayor numero de parametros pero carece de soporte multilingue declarado y de alineamiento de seguridad.
+No se dispone de informacion suficiente para comparar con alternativas concretas de la misma categoria (por ejemplo, otros modelos abliterated de ~27B) sin inventar datos.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: el proceso de eliminacion de rechazos puede degradar la coherencia en tareas que requieren juicio etico o matices, y aumenta el riesgo de generar contenido danino, sesgado o ilegal.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; al ser un derivado modificado, la fiabilidad factual puede diferir del modelo base.
-- Idiomas: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Contexto: la longitud de contexto no esta documentada, lo que impide planificar despliegues con ventanas largas.
-- Licencia: Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad legal del contenido generado por un modelo sin alineamiento.
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face, lo que puede limitar la automatizacion de descargas en pipelines.
-- Falta de documentacion: no hay model card detallada, ni datos de entrenamiento, ni benchmarks, lo que dificulta la evaluacion rigurosa antes de produccion.
-- Procedencia: el autor es un particular, no el equipo oficial de Qwen; la calidad de la modificacion y de las cuantizaciones no esta avalada por el desarrollador original.
+- El modelo ha sido sometido a abliteration, lo que reduce los rechazos y puede aumentar la probabilidad de generar contenido danino, ofensivo o inexacto; no es adecuado para aplicaciones orientadas al publico sin moderacion adicional.
+- Riesgo de alucinacion no evaluado: no hay benchmarks publicados que cuantifiquen su fiabilidad factual.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- La longitud de contexto no esta documentada, lo que impide planificar cargas con ventanas largas.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso automatizado en pipelines.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo "uncensored" conlleva riesgos legales y reputacionales que deben evaluarse segun el caso de uso.
+- El procedimiento "SOM" no esta documentado, por lo que se desconoce que modificaciones exactas se han aplicado a los pesos y su impacto en la calidad.
+- La cuantizacion GGUF introduce degradacion respecto al modelo en precision completa; las variantes de menor bit pueden perder coherencia en tareas de razonamiento largo.
+- No se han publicado evaluaciones de sesgos; se desconoce el comportamiento diferencial por genero, etnia o religion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/richardyoung/Qwen3.8-27B-SOM-heretic-GGUF
 - Modelo base: https://huggingface.co/richardyoung/Qwen3.8-27B-SOM-heretic
-- llama.cpp: https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
-- Familia Qwen3 (referencia): https://huggingface.co/Qwen
+- Referencia arXiv indicada en los tags: arxiv:2611.17846 (no verificada en la informacion disponible)

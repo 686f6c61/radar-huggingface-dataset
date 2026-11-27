@@ -2,113 +2,113 @@
 
 ## Resumen
 
-Gemma-4-E4B-Arabic-It es un ajuste fino del modelo denso Google Gemma 4 E4B-it, desarrollado por Noman Asif dentro de la familia "Gemma-4-Arabic Iso-Active". El objetivo es especializar un modelo de tamano medio en arabe estandar y dialecto saudí, manteniendo al mismo tiempo las capacidades originales en ingles, matematicas y codigo. Se distribuye como un checkpoint denso de transformer con 7.941.100.874 parametros reales en safetensors (frente a los 4.5B declarados en la model card), en formato bfloat16.
+Gemma-4-E4B-Arabic-It es un ajuste fino del modelo multimodal google/gemma-4-E4B-it, desarrollado por el usuario noman-asif, orientado a mejorar el rendimiento en arabe manteniendo las capacidades originales del modelo base. Se trata de un modelo denso de aproximadamente 8.000 millones de parametros totales, del que se activan unos 4.000 millones por token segun los datos de despliegue del autor, con soporte de entrada imagen-texto y generacion de texto. El modelo se distribuye bajo licencia Apache 2.0 y esta pensado para conversacion, generacion de texto y razonamiento en arabe e ingles.
 
-El modelo resuelve el problema de la baja competencia en arabe de los modelos base: sobre Gemma 4 E4B-it, la evaluacion en ArabicMMLU pasa de 24.00 a 57.00, en MadinahQA de 27.50 a 73.00 y en AraTrust de 57.10 a 83.37. Para evitar el olvido catastrofico, el autor aplica un "Zero-Forgetting Retention Shield" con anclas en ingles, matematicas y codigo, de modo que MMLU-Pro baja solo de 67.14 a 63.33 y GSM8K sube de 69.50 a 71.50.
+El problema que aborda es la brecha de rendimiento entre el modelo base y las variantes ajustadas en arabe: el autor publica una comparativa con su variante MoE insignia (26B-A4B) mostrando ganancias medias de +0,22 puntos en benchmarks arabes para esta version densa. La relevancia actual radica en que ofrece una alternativa de menor huella de memoria (14,9 GB de pesos en bfloat16) capaz de servir hasta 50 usuarios concurrentes en una unica A100 de 80 GB con vLLM, segun los datos de despliegue incluidos en la model card.
 
-El pipeline de entrenamiento combina SFT con rsLoRA (r=32, alpha=64) sobre 120k filas (75% arabe, 25% replay), alineamiento con Trust-Region DPO (beta=0.1, tr_alpha=0.6) sobre 20k pares y una fusion posterior con TIES-Merging (lambda=0.85, density=0.70). La licencia es Apache 2.0 y los pesos estan en safetensors, listos para transformers.
+El modelo se publico en noviembre de 2026 y acumula 2.024 descargas y 2 likes en Hugging Face. Incluye un aviso explicito de "Retention-Safe Release" y una puerta de control de olvido catastrofico (zero-forgetting gate) que, en esta variante E4B, aparece como FAILED con una puntuacion de 0,8430, lo que constituye una advertencia importante para su uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Gemma 4) |
-| Parametros totales | 7.941.100.874 (safetensors); la model card declara 4.5B |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (checkpoint publicado en bfloat16) |
-| Idiomas soportados | arabe (estandar y dialecto saudí) e ingles |
+| Arquitectura | Transformer denso multimodal (image-text-to-text), base google/gemma-4-E4B-it |
+| Parametros totales | 7.996.156.490 (aprox. 8,0 B) |
+| Parametros activos | Aprox. 4,0 B por token (modelo denso; el dato de "activos" proviene de la tabla de despliegue del autor) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos publicados en safetensors; el autor reporta despliegue en bfloat16) |
+| Idiomas soportados | Arabe (ar), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bfloat16) |
+| Formato de pesos | Safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer denso derivado de google/gemma-4-E4B-it. El autor declara 4.0B parametros activos y 4.5B totales, aunque el recuento real de safetensors asciende a 7.941.100.874 parametros; esta discrepancia debe tenerse en cuenta al planificar el despliegue. El checkpoint se publica como modelo independiente en bfloat16, no como adaptador LoRA, e incluye la cabeza de generacion de texto y, segun los tags, capacidades image-text-to-text heredadas del modelo base.
+El modelo parte de google/gemma-4-E4B-it, un transformer denso multimodal con capacidad de entrada imagen-texto y salida de texto. La variante ajustada mantiene la arquitectura del base y aplica un ajuste fino supervisado sobre el dataset noman-asif/Arabic-Reasoning-Instruct-30k, seguido de un ajuste por preferencias con DPO sobre noman-asif/Arabic-Preference-DPO-6k. La model card menciona que el modelo base emplea atencion de ventana deslizante (SWA) de 1024 tokens en 25 de sus 30 capas, con 8 cabezas KV en GQA, lo que explica la baja huella de cache KV en despliegue multiusuario.
 
-El entrenamiento consta de tres etapas. Primero, un SFT continuado con rsLoRA (r=32, alpha=64) sobre 120k ejemplos del dataset Arabic-Reasoning-Instruct-120k, con una mezcla del 75% arabe y 25% de replay para preservar capacidades previas. Segundo, un alineamiento con Trust-Region DPO (beta=0.1, tr_alpha=0.6) sobre 20k pares de Arabic-Preference-DPO-20k. Tercero, una fusion TIES-Merging (lambda=0.85, density=0.70) para combinar los pesos ajustados con los originales. El autor etiqueta el modelo con chain-of-thought y dense, lo que sugiere entrenamiento explicito en razonamiento paso a paso en arabe.
+El autor publica una comparativa con la variante MoE 26B-A4B del mismo linaje, que activa 3,8 B de parametros por token. En esa comparativa se reporta que la version E4B obtiene una ganancia media en arabe de +0,22 puntos frente al base, mientras que la 26B-A4B logra +0,23. La puerta de control de olvido catastrofico (zero-forgetting gate) supera el umbral en la variante 26B-A4B (0,9940) pero falla en la E4B (0,8430), lo que indica una perdida de capacidades del modelo base mas acusada en esta version densa. No se detalla en la informacion disponible el numero total de tokens de entrenamiento ni la composicion exacta del dataset.
 
 ## Capacidades
 
-- Generacion de texto conversacional en arabe estandar y dialecto saudí, con especial refuerzo en conocimiento legal y cultural local (el ejemplo de la model card trata sobre derechos laborales en el sistema saudí).
-- Razonamiento con cadena de pensamiento (chain-of-thought), segun los tags del modelo.
-- Razonamiento matematico: GSM8K sube de 69.50 a 71.50 tras el ajuste.
-- Generacion de codigo: HumanEval se situa en 70.12, con una caida de 7.32 puntos respecto al base.
-- Comprension lectora y QA en arabe: MadinahQA 73.00, AlGhafa 74.70, EXAMS-AR 56.00.
-- Capacidades multimodal image-text-to-text heredadas del modelo base (tag image-text-to-text).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el chain-of-thought es el unico indicio.
-- Capacidades multilingues limitadas a arabe e ingles.
+- Generacion de texto conversacional en arabe e ingles.
+- Razonamiento y respuesta a preguntas de conocimiento general y especializado (evaluado en ArabicMMLU, MadinahQA, AlGhafa, EXAMS-AR, AraTrust, MMLU-ProX-Ar, MMMLU-Ar-STEM y MMMLU-Ar-Law-Prof).
+- Entrada multimodal imagen-texto, heredada del modelo base gemma-4-E4B-it.
+- Modo de razonamiento extendido (thinking mode), segun los anclajes de retencion oficiales de Gemma 4 reportados por el autor.
+- Generacion de codigo (evaluado en LiveCodeBench-v6).
+- Razonamiento matematico de competicion (evaluado en AIME-2026).
+- Razonamiento cientifico de nivel graduado (evaluado en GPQA-Diamond).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Atencion al cliente en Arabia Saudi: el modelo puede gestionar conversaciones multi-turno en dialecto saudí y arabe estandar, con un rendimiento de 73.00 en MadinahQA que lo hace adecuado para preguntas frecuentes y soporte de primer nivel en centros de contacto regionales.
-- Asistencia legal y administrativa: el ajuste sobre normativa saudí (ejemplo de derechos laborales en la model card) permite construir asistentes para consultas sobre contratos, visados o legislacion laboral, siempre con supervision humana por el riesgo de alucinacion.
-- Educacion y tutoria en arabe: con EXAMS-AR en 56.00 y AlGhafa en 74.70, puede emplearse para generar explicaciones, resumenes y preguntas de practica en asignaturas escolares y universitarias en arabe.
-- Analisis de sentimiento y moderacion de contenido en redes sociales arabes: su cobertura del dialecto saudí y su AraTrust de 83.37 lo hacen util para clasificar y filtrar contenido en plataformas regionales.
-- Generacion de codigo en entornos bilingues: con HumanEval en 70.12 y soporte de ingles, puede integrarse en asistentes de programacion para equipos que documentan en arabe pero programan en ingles.
-- Razonamiento matematico asistido: GSM8K en 71.50 permite usarlo en herramientas de resolucion de problemas paso a paso para estudiantes, con la ventaja de explicar el procedimiento en arabe.
-- Procesamiento de documentos con imagen y texto: al heredar la modalidad image-text-to-text del base, puede emplearse para extraer y resumir informacion de formularios o facturas en arabe.
+- Atencion al cliente en arabe: el modelo puede gestionar conversaciones multi-turno en arabe estandar con un rendimiento de 67,51 % en ArabicMMLU y 66,94 % en MadinahQA, adecuado para asistentes de soporte de dominio general. Su despliegue en vLLM permite servir hasta 50 usuarios concurrentes en una A100 de 80 GB con 81,5 tokens/s por usuario.
+- Asistencia educativa y tutoria: con un 56,05 % en EXAMS-AR y 82,38 % en MMMLU-Ar-STEM, puede emplearse como generador de explicaciones y respuestas a preguntas de examen, siempre con supervision humana dada la tasa de error.
+- Procesamiento de documentos e imagenes en arabe: la capacidad image-text-to-text del modelo base permite extraer y resumir informacion de capturas, formularios o diagramas acompanados de texto en arabe.
+- Generacion de codigo asistida en entornos bilingues: con un 52,00 % en LiveCodeBench-v6, es util para autocompletado, explicacion de fragmentos y generacion de pruebas en proyectos con documentacion en arabe e ingles.
+- Clasificacion y moderacion de contenido en arabe: su rendimiento en AraTrust (87,74 %) lo hace apto para tareas de verificacion de veracidad y filtrado, integrado en pipelines de moderacion con revision humana.
+- Razonamiento cientifico y legal de apoyo: con 73,95 % en MMMLU-Ar-Law-Prof y 57,07 % en GPQA-Diamond, puede asistir en la primera pasada de analisis de textos legales o cientificos en arabe, dejando la validacion final a expertos.
+- Despliegue en infraestructura limitada: con 14,9 GB de pesos en bfloat16 y 20,0 GB de VRAM total a 50 usuarios concurrentes, es viable en una unica GPU de 80 GB o en GPUs consumer de gama alta con cuantizacion, aunque el autor no publica variantes cuantizadas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (accuracy normalizada, zero-shot salvo indicacion):
+Resultados publicados por el autor en OALL v2 (dataset completo) y anclajes oficiales de retencion de Gemma 4 con thinking mode activado. Se comparan el modelo base y el ajustado en arabe para la variante E4B.
 
-| Benchmark | Metrica | Shots | E4B base (%) | E4B Arabic-It (%) | Delta |
+| Benchmark | Metrica | Shots | Base (%) | Ajustado (%) | Delta (pts) |
 |---|---|---|---|---|---|
-| ArabicMMLU | acc_norm | 0 | 24.00 | 57.00 | +33.00 |
-| MadinahQA | acc_norm | 0 | 27.50 | 73.00 | +45.50 |
-| AlGhafa | acc_norm | 0 | 48.15 | 74.70 | +26.55 |
-| ACVA | acc_norm | 5 | 79.60 | 82.00 | +2.40 |
-| EXAMS-AR | acc_norm | 0 | 34.00 | 56.00 | +22.00 |
-| AraTrust | acc_norm | 0 | 57.10 | 83.37 | +26.27 |
+| ArabicMMLU | acc_norm | 0 | 66,87 | 67,51 | +0,64 |
+| MadinahQA | acc_norm | 0 | 64,96 | 66,94 | +1,98 |
+| AlGhafa | acc_norm | 0 | 74,38 | 74,44 | +0,06 |
+| ACVA | acc_norm | 5 | 81,86 | 82,12 | +0,26 |
+| EXAMS-AR | acc_norm | 0 | 55,68 | 56,05 | +0,37 |
+| AraTrust | acc_norm | 0 | 87,11 | 87,74 | +0,63 |
+| MMLU-ProX-Ar | exact_match | 5 | 64,46 | 64,46 | 0,00 |
+| MMMLU-Ar-STEM | accuracy | 0 | 84,13 | 82,38 | -1,75 |
+| MMMLU-Ar-Law-Prof | accuracy | 0 | 74,20 | 73,95 | -0,25 |
+| MMLU-Pro | english_reasoning | 5 | 69,54 | 69,77 | +0,23 |
+| GPQA-Diamond | graduate_science | 0 | 60,61 | 57,07 | -3,54 |
+| AIME-2026 | competition_math | 0 | 58,33 | 49,17 | -9,16 |
+| LiveCodeBench-v6 | code_generation | 0 | 53,14 | 52,00 | -1,14 |
 
-Anclas de retencion (ingles, matematicas, codigo):
+Rendimiento de servicio con vLLM en 1x A100 80 GB PCIe (512 tokens de prompt en arabe, 256 tokens generados, bfloat16):
 
-| Ancla | Dominio | Shots | E4B base (%) | E4B Arabic-It (%) | Delta |
+| Usuarios concurrentes | TTFT mediana (ms) | TTFT P95 (ms) | Velocidad por usuario (tok/s) | Throughput total (tok/s) | VRAM activa (GB) |
 |---|---|---|---|---|---|
-| MMLU-Pro | razonamiento en ingles | 5 | 67.14 | 63.33 | -3.81 |
-| GSM8K | razonamiento matematico | 5 | 69.50 | 71.50 | +2.00 |
-| HumanEval | generacion de codigo | 0 | 77.44 | 70.12 | -7.32 |
-| ARC-Challenge | ciencia en ingles | 25 | 79.50 | 75.00 | -4.50 |
+| 1 | 30,5 | 31,1 | 99,6 | 99,6 | 16,1 |
+| 10 | 233,2 | 233,3 | 102,1 | 1.020,8 | 16,8 |
+| 30 | 665,7 | 667,6 | 92,7 | 2.780,3 | 18,4 |
+| 40 | 865,9 | 868,1 | 87,3 | 3.492,8 | 19,2 |
+| 50 | 1.079,0 | 1.079,2 | 81,5 | 4.076,1 | 20,0 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 16 GB solo para pesos (7.94B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomiendan 24 GB o mas.
-- En cuantizacion de 8 bits: unos 8 GB de pesos; en 4 bits: unos 4-5 GB, aunque el autor no publica checkpoints cuantizados oficiales.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para produccion en bfloat16; RTX 4090 (24 GB) es suficiente para inferencia en bfloat16 con contexto moderado.
-- GPU de consumo: cabe en RTX 3090/4090 en bfloat16 y en GPUs de 8-12 GB si se cuantiza a 4 bits, siempre que se genere el GGUF o AWQ correspondiente.
-- Opciones de despliegue: transformers (soporte oficial), vLLM, TGI y llama.cpp/Ollama previa conversion a GGUF; el tag endpoints_compatible indica compatibilidad con Inference Endpoints de Hugging Face.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: 14,9 GB solo para pesos en bfloat16; 16,1 GB en total con 1 usuario y 1,2 GB de cache KV y runtime; 20,0 GB con 50 usuarios concurrentes (segun el autor).
+- GPU recomendadas: NVIDIA A100 80 GB PCIe para el escenario multiusuario reportado (tensor_parallel_size=1). Para uso individual, cualquier GPU con al menos 16-20 GB de VRAM en bfloat16.
+- Compatibilidad con GPU consumer: cabe en GPUs de 24 GB o mas (por ejemplo, RTX 3090 o RTX 4090) para un solo usuario en bfloat16; no se han publicado datos de cuantizacion para GPUs de 8-16 GB.
+- Opciones de despliegue: vLLM (PagedAttention y continuous batching, segun la model card); compatible con la libreria transformers. No se mencionan llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: TTFT mediana de 30,5 ms con 1 usuario y 1.079,0 ms con 50 usuarios; throughput agregado de 99,6 tok/s a 4.076,1 tok/s segun la carga concurrente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|---|
-| Gemma-4-E4B-Arabic-It | 7.94B reales (4.5B declarados) | Denso | no disponible | Apache 2.0 | Arabe + dialecto saudí |
-| google/gemma-4-E4B-it (base) | 4.5B declarados | Denso | no disponible | Gemma (terminos propios) | Multilingue general |
-| noman-asif/Gemma-4-26B-A4B-Arabic-It | 25.2B totales / 3.8B activos | MoE (128 expertos, top-8 + 1 compartido) | no disponible | Apache 2.0 | Arabe + dialecto saudí |
-| Modelos arabes densos de ~7B | no disponible | Denso | no disponible | no disponible | Arabe general |
-
-El hermano MoE de la misma familia supera al E4B en casi todas las suites arabes (ArabicMMLU 68.00 frente a 57.00; MadinahQA 76.50 frente a 73.00), a costa de un mayor peso total y de requerimientos de memoria superiores. Frente al base sin ajustar, el E4B Arabic-It mejora entre 22 y 45 puntos en las suites arabes, con una perdida de 3.8 a 7.3 puntos en las anclas inglesas.
+| Modelo | Parametros | Activos por token | Contexto | Licencia | Rendimiento arabe (ArabicMMLU) | Notas |
+|---|---|---|---|---|---|---|
+| Gemma-4-E4B-Arabic-It | 8,0 B | ~4,0 B | No disponible | Apache 2.0 | 67,51 % | Ajuste fino en arabe; gate de olvido FAILED (0,8430) |
+| Gemma-4-26B-A4B-Arabic-It | No disponible | 3,8 B (MoE) | No disponible | No disponible | 76,81 % | Variante MoE del mismo autor; gate de olvido PASSED (0,9940) |
+| google/gemma-4-E4B-it (base) | 8,0 B | ~4,0 B | No disponible | No disponible | 66,87 % | Modelo base sin ajuste en arabe |
 
 ## Limitaciones y advertencias
 
-- Discrepancia entre los parametros declarados (4.5B) y los reales en safetensors (7.94B): los calculos de VRAM deben basarse en el recuento real.
-- Caida de rendimiento en codigo (HumanEval -7.32) y en ciencia en ingles (ARC-Challenge -4.50), lo que desaconseja su uso como modelo principal para tareas de programacion.
-- Riesgo de alucinacion en consultas legales o administrativas saudies: no sustituye asesoramiento profesional.
-- Cobertura limitada a arabe e ingles; no se garantiza un comportamiento correcto en otros idiomas.
-- Sesgos potenciales derivados de los datasets de ajuste (Arabic-Reasoning-Instruct-120k y Arabic-Preference-DPO-20k), cuya composicion y procedencia no se detallan.
-- El dialecto saudí esta reforzado, pero no se documenta el rendimiento en otros dialectos arabes (egipcio, levantino, magrebi).
-- Contexto maximo no especificado: planificar el despliegue con un valor conservador hasta confirmarlo.
-- Aunque la licencia es Apache 2.0, el modelo base Gemma tiene sus propios terminos de uso que conviene revisar antes de un despliegue comercial.
+- Olvido catastrofico: la puerta de control de olvido del autor falla en esta variante (0,8430), lo que indica una degradacion de capacidades del modelo base. En concreto, se observa una caida de -9,16 puntos en AIME-2026, -3,54 en GPQA-Diamond y -1,75 en MMMLU-Ar-STEM respecto al base.
+- Riesgo de alucinacion: no se han publicado evaluaciones especificas de veracidad mas alla de AraTrust (87,74 %), insuficientes para garantizar fiabilidad en dominios especializados.
+- Sesgos conocidos: no disponible en la informacion proporcionada.
+- Limitaciones de contexto: la longitud de contexto no se especifica en la model card; el autor menciona atencion de ventana deslizante de 1024 tokens en 25 de las 30 capas del modelo base, lo que condiciona el rendimiento en contextos largos.
+- Limitaciones de idioma: el ajuste esta orientado a arabe e ingles; el rendimiento en otras lenguas no esta documentado y podria haberse degradado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se desconoce si el modelo base google/gemma-4-E4B-it impone condiciones adicionales; conviene verificar la licencia del base.
+- Caveat para produccion: el autor etiqueta la release como "Retention-Safe" pese al fallo del gate de olvido en la variante E4B; no se recomienda su sustitucion directa del modelo base en tareas de razonamiento matematico o cientifico sin evaluacion previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Hermano MoE: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
-- Dataset SFT: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-120k
-- Dataset DPO: https://huggingface.co/datasets/noman-asif/Arabic-Preference-DPO-20k
-- Repositorio GitHub: https://github.com/nnoman-asif/Gemma-4-Arabic
-- Perfil del autor: https://huggingface.co/noman-asif
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Dataset de instrucciones: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-30k
+- Dataset de preferencias DPO: https://huggingface.co/datasets/noman-asif/Arabic-Preference-DPO-6k

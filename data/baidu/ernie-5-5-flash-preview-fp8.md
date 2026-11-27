@@ -2,105 +2,102 @@
 
 ## Resumen
 
-ERNIE 5.5 Flash Preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Baidu, publicado como checkpoint intermedio de post-entrenamiento sobre ERNIE 5.5 Flash Base. Cuenta con 280.000 millones de parámetros totales y 14.000 millones activos por token, con una ventana de contexto de 1.048.576 tokens (1M), lo que lo sitúa en la liga de modelos de contexto ultralargo orientados a tareas de agente y codificación de larga duración.
+ERNIE 5.5 Flash Preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Baidu, publicado como checkpoint intermedio de post-entrenamiento sobre ERNIE 5.5 Flash Base. Cuenta con 280.000 millones de parametros totales, de los cuales 14.000 millones se activan por token, y una ventana de contexto de 1.048.576 tokens (1M). Su arquitectura combina atencion HCA y MLA-DSA en 43 capas (1 densa y 42 MoE), con 512 expertos enrutados (top-10) mas uno compartido y un vocabulario de 201.216 tokens.
 
-La arquitectura combina 43 capas (1 densa y 42 MoE) con 512 expertos enrutados (top-10) más un experto compartido, e incorpora una mezcla de atención HCA y MLA-DSA. El modelo se distribuye cuantizado de forma nativa: pesos FP8 por bloques, expertos enrutados en MXFP4 (W4A8, entrenado con quantization-aware training), caché KV en FP8 e indexador DSA en FP4. Esta variante concreta del repositorio (FP8) mantiene los pesos en FP8 por bloques junto con la cabeza de borrador DSpark para decodificación especulativa.
+El modelo esta orientado a tareas de codigo, modelado 3D, trabajo de conocimiento y creacion de contenido, e incorpora un modo de razonamiento (thinking) activado por defecto con niveles de esfuerzo configurables (low, medium, high). Incluye una cabeza de borrador DSpark para decodificacion especulativa, lo que acelera tareas de agente de larga duracion con poca perdida de precision.
 
-Su relevancia actual radica en que Baidu lo posiciona como un modelo de agente de propósito general con capacidades destacadas en código, modelado 3D, trabajo de conocimiento y creación de vídeo, publicado bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en pipelines propios. Al ser un checkpoint de preview, el autor advierte de que algunas capacidades pueden quedar por debajo del modelo final, cuyo post-entrenamiento sigue en curso.
+La relevancia actual radica en su context window de 1M tokens, su entrenamiento especifico para flujos agénticos (300.000 espacios de trabajo en dominios financiero y legal, mas de 150.000 entornos de creacion de video) y su licencia Apache 2.0, que facilita su adopcion comercial. Esta version concreta (FP8) ofrece pesos en FP8 blockwise junto con la cabeza DSpark, pensada para hardware sin soporte de kernels FP4.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (43 capas: 1 densa + 42 MoE); atención 37 × HCA (head dim 512) + 6 × MLA-DSA (head dim 256), 64 cabezas |
-| Parametros totales | 280B (299.559.241.286 según safetensors) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE): 43 capas (1 densa + 42 MoE), 37 x HCA (head dim 512) + 6 x MLA-DSA (head dim 256), 64 cabezas |
+| Parametros totales | 299.559.241.286 (~280B segun model card) |
 | Parametros activos | 14B por token |
 | Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | Blockwise FP8; expertos enrutados en MXFP4 (W4A8, QAT); caché KV FP8; indexador DSA FP4; también disponible en BF16 |
-| Idiomas soportados | en, zh |
+| Tipos de cuantizacion | FP8 blockwise (esta version); el repo default usa MXFP4 en expertos enrutados (W4A8); existe variante BF16 |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers); repositorio de 301,9 GB |
+| Formato de pesos | safetensors (libreria transformers) |
 
-Otros datos técnicos: tamaño oculto 4096, vocabulario de 201.216 tokens, 512 expertos enrutados (top-10) más 1 compartido, modo de razonamiento siempre activo (el razonamiento se devuelve en `reasoning_content`), cabeza de borrador DSpark para decodificación especulativa.
+Otros datos: 512 expertos enrutados (top-10) + 1 compartido, hidden size 4096, vocabulario 201.216, cache KV en FP8, indexer DSA en FP4. Tamano del repo: 301,9 GB.
 
 ## Arquitectura y entrenamiento
 
-ERNIE 5.5 Flash Preview es un transformer de tipo Mixture-of-Experts que reutiliza la arquitectura y el tokenizador de ERNIE 5.5 Flash Base. El modelo intercala dos mecanismos de atención: 37 capas con HCA (head dim 512) y 6 capas con MLA-DSA (head dim 256), con 64 cabezas. El enrutamiento MoE selecciona los 10 mejores de 512 expertos enrutados, además de un experto compartido, lo que explica que solo 14B de los 280B parámetros estén activos por token. La innovación técnica más destacable es la inclusión de una cabeza de borrador DSpark para decodificación especulativa, que acelera tareas de agente de larga duración con poca pérdida de precisión.
+ERNIE 5.5 Flash Preview mantiene la arquitectura y el tokenizer de ERNIE 5.5 Flash Base y anade una cabeza de borrador DSpark para decodificacion especulativa. La red combina dos mecanismos de atencion: 37 capas con HCA (head dim 512) y 6 capas con MLA-DSA (head dim 256), con 64 cabezas en total. El modelo es de tipo MoE con 512 expertos enrutados (top-10 por token) mas un experto compartido, sobre 43 capas de las cuales una es densa. La cuantizacion es consciente del entrenamiento: los expertos enrutados se entrenan en MXFP4 (W4A8), con cache KV en FP8 e indexer DSA en FP4.
 
-El entrenamiento parte de ERNIE 5.5 Flash Base, con una fase de mid-training que extiende la longitud de contexto de 128K a 1M tokens, seguida de post-entrenamiento. La model card menciona entrenamiento en 300.000 espacios de trabajo para dominios como finanzas y derecho, con 10 millones de ficheros de referencia en más de 40 tipos de archivo, y más de 150.000 entornos de creación para vídeo. La cuantización no es un añadido posterior: los expertos enrutados se entrenan con quantization-aware training en MXFP4 (W4A8), lo que permite servir el modelo con menor huella de memoria. No se detalla en la información disponible el número exacto de tokens de entrenamiento ni la composición completa del dataset, ni si se emplearon RLHF o DPO.
+Las nuevas capacidades respecto al modelo base provienen de mid-training y post-training. El mid-training extendio la longitud de contexto de entrenamiento de 128K a 1M tokens. El post-training incluyo entrenamiento en 300.000 espacios de trabajo para dominios como finanzas y derecho (10 millones de archivos de referencia en mas de 40 tipos de archivo) y en mas de 150.000 entornos de creacion para video (divulgacion cientifica, comic en movimiento, edicion creativa y temas de actualidad). No se especifican en la informacion disponible el numero total de tokens de entrenamiento ni los detalles de RLHF/DPO. El modelo se describe como un checkpoint intermedio, con post-training en curso.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento siempre activo, devuelto en el campo `reasoning_content`.
-- Codificación en producción: corrección de errores en bases de código reales y construcción de aplicaciones complejas desde cero, con planificación e iteración sobre tareas largas.
-- Desarrollo de videojuegos: conocimiento de Unreal Engine, Unity y Godot; según el autor, completó un juego wuxia en tercera persona en C++ sobre Unreal Engine 5.8 en una tarea de 11 horas y construyó cerca de 100 minijuegos móviles a partir de documentos de diseño.
-- Modelado 3D y diseño: interpreta forma, proporción y relaciones espaciales a partir de descripciones textuales y genera scripts para Blender y software CAD.
-- Trabajo de conocimiento: elaboración de hojas de cálculo, documentos y presentaciones de calidad profesional a partir de material disperso.
-- Creación de vídeo: recopilación, generación y disposición de material, con definición de visuales y ritmo, en trabajos de una a dos horas por pieza.
-- Soporte de agentes y razonamiento multi-paso en arneses de agente (la model card muestra trabajos completados de extremo a extremo).
-- Capacidades multilingües limitadas a inglés y chino.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repositorio).
+- Generacion de texto y razonamiento con modo thinking activado por defecto; el esfuerzo de razonamiento se configura con `reasoning_effort` en low, medium o high (por defecto high) y se desactiva con `enable_thinking: false`.
+- Codigo: correccion en codebases reales, construccion de aplicaciones complejas desde cero y planificacion/ejecucion iterativa en tareas largas.
+- Desarrollo de videojuegos: conocimiento de Unreal Engine, Unity y Godot; en una tarea de 11 horas genero un juego wuxia en tercera persona en C++ sobre Unreal Engine 5.8, y a partir de documentos de diseno construyo cerca de 100 minijuegos moviles.
+- Modelado 3D y diseno: deduce forma, proporcion y relaciones espaciales a partir de texto y escribe scripts para Blender y software CAD.
+- Trabajo de conocimiento: hojas de calculo, documentos y presentaciones de calidad profesional a partir de material disperso.
+- Creacion de video: recopila, genera y organiza material, define visuales y ritmo, y entrega un video terminado en trabajos de una a dos horas.
+- Capacidades agénticas y multi-step reasoning en un arnes de agente (agent harness).
+- Decodificacion especulativa mediante la cabeza DSpark.
+- Idiomas: ingles y chino.
+- No se menciona soporte explicito de tool calling/function calling en la informacion disponible.
+- Modalidad: solo texto (text in, text out); sin vision ni audio.
 
 ## Casos de uso
 
-- Desarrollo de videojuegos asistido: el modelo puede planificar y ejecutar tareas de codificación largas en Unreal Engine, Unity o Godot, generando y depurando C++ o scripts de gameplay en sesiones de varias horas gracias a su ventana de 1M tokens.
-- Modelado 3D paramétrico: a partir de una descripción textual, el modelo deduce proporciones y relaciones espaciales y produce scripts para Blender o CAD, lo que permite automatizar la generación de piezas de ingeniería o arquitectónicas.
-- Automatización de trabajo de conocimiento: procesa material disperso en más de 40 tipos de fichero y entrega hojas de cálculo, documentos o presentaciones, adecuado para dominios como finanzas y derecho por su entrenamiento en 300.000 espacios de trabajo.
-- Producción de vídeo semiautomática: recopila y organiza material, define visuales y ritmo y entrega una pieza terminada en una o dos horas, útil para explicadores de divulgación, cómics animados y ediciones creativas.
-- Agentes autónomos de larga duración: la combinación de contexto de 1M tokens, modo de pensamiento y decodificación especulativa con DSpark lo hace apto para pipelines de agente que encadenan muchos pasos sobre un mismo estado.
-- Migración y refactorización de bases de código: con 1M de contexto puede cargar repositorios completos y razonar sobre dependencias entre ficheros, algo útil en tareas de modernización de código heredado.
-- Generación de minijuegos y prototipos: a partir de documentos de diseño puede producir lotes de prototipos jugables, como los cerca de 100 minijuegos móviles que el autor reporta haber construido.
+- Desarrollo de videojuegos asistido: el modelo puede planificar y ejecutar tareas de codigo largas en Unreal Engine, Unity o Godot, incluyendo la generacion de prototipos completos o minijuegos a partir de documentos de diseno, gracias a su contexto de 1M tokens y a su capacidad de iterar durante horas.
+- Modelado 3D y CAD automatizado: a partir de una descripcion textual, deduce proporciones y relaciones espaciales y genera scripts que manejan Blender o software CAD para construir piezas, edificios o escenas detalladas.
+- Generacion de codigo en produccion: puede corregir codigo en repositorios reales y construir aplicaciones desde cero; su ventana de 1M tokens permite cargar codebases extensos en una sola pasada, y la decodificacion especulativa reduce la latencia en tareas de agente.
+- Automatizacion de trabajo de conocimiento: procesa material disperso en mas de 40 tipos de archivo (entrenado en 300.000 espacios de trabajo de finanzas y derecho) para generar hojas de calculo, documentos e informes profesionales.
+- Creacion de video automatizada: recopila y organiza material, define la narrativa visual y el ritmo, y entrega un video terminado en trabajos de una a dos horas, adecuado para divulgacion cientifica, comic en movimiento o edicion creativa.
+- Investigacion y analisis de documentos extensos: con 1M tokens de contexto puede ingerir libros, expedientes legales o informes financieros completos y razonar sobre ellos en multiples pasos con el modo thinking en nivel high.
+- Asistentes agénticos de larga duracion: integrado en un arnes de agente, puede ejecutar flujos multi-paso sostenidos (planificar, ejecutar, verificar, iterar) en tareas de ingenieria o gestion documental.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el modelo se evalúa en 20 benchmarks y publica una gráfica (`assets/eval-results.png`) con ocho de ellos, además de una tabla con los 20. Sin embargo, los valores numéricos no están incluidos en la información disponible, por lo que no se presentan cifras.
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card referencia una grafica (`assets/eval-results.png`) y una tabla con 20 benchmarks, pero los valores concretos no se incluyen en el texto proporcionado. No se inventan cifras.
 
 ## Requisitos de hardware
 
-- El repositorio FP8 ocupa 301,9 GB, por lo que la inferencia requiere al menos esa cantidad de memoria agregada en pesos, además de la caché KV.
-- La variante por defecto del modelo usa expertos en FP4; en hardware sin kernels FP4 debe usarse el repositorio FP8 o el BF16. Para fine-tuning, el autor recomienda partir del repositorio BF16.
-- VRAM estimada: no disponible de forma explícita; por el tamaño del repositorio, no cabe en GPU de consumo y requiere despliegues multi-GPU o multi-nodo.
-- GPU recomendadas: no especificadas en la información disponible; por el volumen de pesos, se orienta a aceleradores de centro de datos (A100, H100 y sucesores) en configuración multi-GPU.
-- Cabe en consumer GPU: no.
-- Opciones de despliegue: librería transformers; el repositorio declara compatibilidad con endpoints. No se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; el autor destaca que la decodificación es rápida gracias a los expertos FP4 y a la cabeza de borrador DSpark, sin cifras concretas.
+- VRAM estimada para inferencia: con ~280B parametros totales y pesos FP8 blockwise (mas expertos en FP4 en el repo default), el repositorio ocupa 301,9 GB; la inferencia requiere agregar cache KV (en FP8) para el contexto utilizado, que con 1M tokens puede ser muy elevada. No se dispone de cifras oficiales de VRAM minima en la informacion proporcionada.
+- GPU recomendadas: no disponibles en la informacion. Por el volumen de pesos, se requiere un despliegue multi-GPU en hardware de centro de datos (clase A100/H100 o superior); no se confirman modelos concretos.
+- GPU de consumo: no cabe en GPUs de consumo individuales dado el tamano del repositorio (301,9 GB). No se dispone de datos de configuraciones multi-GPU de consumo.
+- Opciones de despliegue: la model card indica compatibilidad con `transformers`; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion disponible. Existe un endpoint compatible (`endpoints_compatible`) y API via Qianfan (Baidu Cloud).
+- Latencia y throughput: no disponibles. La model card menciona que el modelo "decodifica rapido" y que los pesos FP4 de expertos junto con la cabeza DSpark aceleran las tareas de agente largas, pero sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A continuación se resumen los rasgos diferenciales frente a la categoría de MoE de gran tamaño con contexto ultralargo:
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de la misma categoria (MoE de gran escala con contexto de 1M). Se indica "no disponible" para la comparativa cuantitativa. Como referencia estructural, el propio ERNIE 5.5 Flash Base comparte arquitectura y tokenizer con este modelo, y existen variantes del mismo modelo en BF16 y FP4 (repo default) que difieren unicamente en precision.
 
-| Aspecto | ERNIE 5.5 Flash Preview | Alternativas de la categoría |
-|---|---|---|
-| Parámetros totales / activos | 280B / 14B | no disponible |
-| Contexto | 1M tokens | no disponible |
-| Licencia | Apache 2.0 | no disponible |
-| Idiomas | en, zh | no disponible |
-| Cuantización nativa | FP8 + MXFP4 con QAT | no disponible |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| ERNIE-5.5-Flash-Preview-FP8 | ~280B | 14B | 1M | Apache 2.0 | Hugging Face, ModelScope |
+| ERNIE-5.5-Flash-Preview (FP4) | ~280B | 14B | 1M | Apache 2.0 | Hugging Face, ModelScope |
+| ERNIE-5.5-Flash-Preview-BF16 | ~280B | 14B | 1M | Apache 2.0 | Hugging Face, ModelScope |
+| Alternativas de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint intermedio de post-entrenamiento: el propio autor advierte de que algunas capacidades pueden quedar por debajo del modelo final y que el entrenamiento continúa.
-- Idiomas limitados a inglés y chino; no se declara soporte de castellano ni de otras lenguas.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan tasas concretas en la información disponible.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- El modo de pensamiento está siempre activo, lo que incrementa los tokens generados y el coste por consulta en producción.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio por si incluye condiciones adicionales.
-- El tamaño (301,9 GB en FP8) y los 280B parámetros totales excluyen el despliegue en hardware de consumo y exigen infraestructura multi-GPU.
-- La variante por defecto requiere kernels FP4; en hardware sin ellos hay que recurrir a los repositorios FP8 o BF16, con mayor huella de memoria.
-- No se han publicado cifras de benchmarks en la información disponible, lo que limita la evaluación objetiva previa a producción.
+- Es un checkpoint intermedio de post-entrenamiento: la model card advierte que algunas capacidades pueden quedar por debajo de lo esperado porque el entrenamiento no ha finalizado; el rendimiento puede cambiar en la version oficial.
+- Riesgo de alucinacion: no se documenta en la informacion disponible, pero es un riesgo inherente a los modelos de lenguaje; debe validarse la salida en produccion.
+- Sesgos: no se documentan sesgos conocidos en la informacion proporcionada.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Licencia Apache 2.0: permite uso comercial, pero debe revisarse el archivo LICENSE del repositorio para confirmar terminos exactos.
+- Hardware: el tamano del repositorio (301,9 GB) y la ventana de 1M tokens implican requisitos de memoria elevados; en hardware sin kernels FP4 debe usarse la variante FP8 o BF16.
+- Para fine-tuning se recomienda partir del repositorio BF16, no de esta variante FP8.
+- No se confirma soporte de tool calling/function calling ni de vision o audio; la modalidad es exclusivamente texto.
+- El modo thinking esta activado por defecto, lo que incrementa el consumo de tokens y la latencia si no se ajusta `reasoning_effort` o se desactiva.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-FP8
+- Hugging Face (FP8): https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-FP8
+- Hugging Face (repo default, FP4): https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview
+- Hugging Face (BF16): https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-BF16
 - Modelo base: https://huggingface.co/baidu/ERNIE-5.5-Flash-Base
-- Repositorio principal (expertos FP4): https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview
-- Variante BF16: https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-BF16
-- ModelScope: https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Preview-FP8
+- ModelScope (FP8): https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Preview-FP8
 - Blog de lanzamiento: https://ernie.baidu.com/release/ernie-5-5-flash-preview/
-- Chat de ERNIE: https://ernie.baidu.com/web
-- API Qianfan: https://cloud.baidu.com/product/qianfan.html
-- X (Twitter) de Baidu ERNIE: https://x.com/Baidu_ERNIE
+- Chat ERNIE: https://ernie.baidu.com/web
+- API Qianfan (Baidu Cloud): https://cloud.baidu.com/product/qianfan.html
+- X (Twitter) oficial: https://x.com/Baidu_ERNIE
 - Licencia: https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview/blob/main/LICENSE
 - Papers referenciados en los tags: arXiv:2610.24766, arXiv:2610.17959, arXiv:2610.40577

@@ -2,95 +2,116 @@
 
 ## Resumen
 
-GRT-30M-Reranker es un modelo de reranking del tipo cross-encoder desarrollado por MatterWaveAI, diseñado para reordenar un conjunto de documentos candidatos en función de su relevancia respecto a una consulta. Se construye sobre el modelo base MatterWaveAI/grt-30m-embedding y emplea una arquitectura que el autor denomina "rotational transformer", basada en rotaciones de Givens y álgebra de Clifford, con la particularidad de no contener capas `nn.Linear`. Cuenta con 29.305.627 parámetros según la model card (29.844.858 según los pesos en safetensors) y está publicado bajo licencia Apache 2.0.
+GRT-30M-Reranker es un cross-encoder de reordenamiento (reranking) desarrollado por MatterWaveAI, construido sobre el modelo de embeddings GRT-30M-Embedding. A diferencia de los cross-encoders convencionales, que aplican proyecciones lineales densas (`nn.Linear`) para la clasificación final, este modelo implementa una arquitectura denominada `GRTForSequenceClassification` en la que la cabeza de puntuación (`GRTCosineClassificationHead`) funciona sin ninguna capa lineal, empleando productos hermitianos de pares planares y rotaciones de Givens/Clifford.
 
-El modelo resuelve la segunda etapa de los pipelines de recuperación de información: dado un conjunto de documentos previamente recuperados por un bi-encoder, el cross-encoder evalúa cada par consulta-documento de forma conjunta y produce una puntuación de relevancia más precisa. Su tamaño reducido (30M de parámetros) lo hace adecuado para entornos con recursos limitados o para etapas de reranking de baja latencia.
+El modelo cuenta con 29.844.858 parámetros según los pesos safetensors publicados (la model card indica 29.305.759 en su descripción interna) y un tamaño de repositorio de 0,1 GB, lo que lo sitúa en la gama de modelos muy compactos para tareas de ranking. Su propósito es puntuar pares consulta-documento para reordenar candidatos recuperados por un sistema de búsqueda vectorial de primera etapa, mejorando la precisión de recuperación en pipelines RAG y motores de búsqueda semántica.
 
-Es relevante por su enfoque arquitectónico poco habitual (sustitución de proyecciones densas por rotaciones estructuradas) y por su compatibilidad con las interfaces estándar de Hugging Face y sentence-transformers. No obstante, el modelo es muy reciente (publicado en noviembre de 2026), no tiene descargas ni valoraciones registradas en Hugging Face, y no se dispone de información sobre idiomas soportados ni sobre el proceso de entrenamiento.
+Es relevante por su enfoque arquitectónico poco habitual: sustituye las proyecciones lineales por cascadas de rotaciones y álgebra de Clifford, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. La model card documenta resultados de benchmarks propios sobre AllNLI y STS-B, así como una ablación de ocho optimizadores geométricos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Rotational transformer (GRT, Givens rotations, Clifford algebra); cross-encoder `GRTForSequenceClassification` |
-| Parámetros totales | 29.305.627 según model card; 29.844.858 según safetensors |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos en safetensors; compatible con cuantización estándar vía herramientas de Hugging Face, sin datos publicados) |
-| Idiomas soportados | No disponible |
+| Arquitectura | GRTForSequenceClassification (transformer rotacional de 12 bloques con rotaciones de Givens/Clifford, sin capas `nn.Linear`) |
+| Parametros totales | 29.844.858 (safetensors); la model card indica 29.305.759 en su descripcion |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Libreria | sentence-transformers (tambien compatible con `AutoModelForSequenceClassification`) |
+| Pipeline | text-ranking |
+| Modelo base | MatterWaveAI/grt-30m-embedding |
+| Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un cross-encoder construido sobre la arquitectura GRT (rotational transformer) del modelo base grt-30m-embedding. La innovación principal declarada por el autor es la eliminación total de capas `nn.Linear`: en su lugar, el modelo utiliza rotaciones 2D de Givens en cascada y permutaciones tipo butterfly para mezclar pares de coordenadas planares, con un coste de O(D log D) pasos. El autor relaciona este diseño con el álgebra de Clifford y lo enmarca en una familia de modelos denominada "matterwave". La cabeza de clasificación para ranking se implementa como `GRTForSequenceClassification`.
+El modelo se compone de un backbone rotacional de 12 bloques (`GRTModel`) que emplea rotaciones de Givens y estructuras de álgebra de Clifford en lugar de las proyecciones lineales convencionales. Sobre este backbone se sitúa `GRTCosineClassificationHead`, una cabeza de clasificación sin `nn.Linear` que combina dos señales: por un lado, un producto hermitiano de pares planares (`u* v`) sobre 128 pares `(x, y)` con ángulos de fase y escalas aprendidas; por otro, una interacción tardía multi-vector a nivel de token que calcula similitudes coseno rotacionales bidireccionales (`MaxSim`, `MinSim`) y una medida de acuerdo polar léxico (`lex_cos`), calibradas mediante `output_scale` y `bias`.
 
-No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni sobre el proceso de ajuste específico para la tarea de reranking. La model card únicamente indica que el modelo deriva del embedding grt-30m-embedding mediante fine-tuning, pero no detalla la metodología.
+El entrenamiento documentado en la model card se centra en un ajuste fino de la parte superior del modelo: el bloque rotacional final `blocks[-1]` (811.651 parámetros), `final_norm` (128 parámetros) y la cabeza de clasificación (262 parámetros), sumando 812.169 parámetros entrenables y cero capas `nn.Linear`. El esquema controlado emplea 200 pasos con `batch_size = 128` de tripletas con negativos duros de AllNLI más 128 pares graduados de STS-B por paso, `backbone_lr = 1.5e-4` y semilla 42, ejecutado sobre AMD Radeon 8060S (ROCm/gfx1151) con kernels HIP fusionados. La model card también describe una ablación de ocho optimizadores geométricos, riemannianos, simplécticos y de sincronización de Kuramoto-Huygens implementados en `transformers.models.grt.optimization_grt`.
 
 ## Capacidades
 
-- Reranking de documentos: puntúa pares consulta-documento y devuelve una ordenación por relevancia mediante `CrossEncoder.rank`.
-- Integración con sentence-transformers: compatible con la clase `CrossEncoder` y con `AutoModelForSequenceClassification` de Hugging Face.
-- Pipeline híbrido de dos etapas: puede combinarse con el bi-encoder grt-30m-embedding para recuperación y reranking en cascada.
-- Evaluación de similitud semántica: obtiene un Spearman de 61,75 en STS-B test, lo que indica capacidad de capturar similitud semántica a nivel de par.
-- Sin capas `nn.Linear`: la arquitectura basada en rotaciones puede ofrecer ventajas de eficiencia computacional en determinados hardware, aunque no se han publicado mediciones detalladas.
-- No se dispone de información sobre soporte de tool calling, agentes, modo thinking, visión, audio ni capacidades multilingües.
+- Reordenamiento de pares consulta-documento mediante puntuación de similitud (cross-encoder).
+- Puntuación a nivel de token con interacción tardía multi-vector (`MaxSim` bidireccional y `MinSim`).
+- Alineación de fase hermitiana sobre representaciones planares agrupadas circularmente.
+- Integración con `sentence-transformers` `CrossEncoder` y con `AutoModelForSequenceClassification` de Hugging Face.
+- Funcionamiento en pipeline de dos etapas junto al bi-encoder `grt-30m-embedding` (recuperación + reordenamiento).
+- Generación de texto: no disponible (el modelo es un cross-encoder de ranking, no un modelo generativo).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (idiomas no especificados).
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Reranking en motores de búsqueda internos: tras una recuperación inicial con un bi-encoder, el cross-encoder reordena los candidatos para mejorar la precisión de los primeros resultados; su tamaño de 30M permite desplegarlo en la misma instancia que el recuperador.
-- Búsqueda semántica en documentación técnica: dado un conjunto de fragmentos recuperados, el modelo puntúa cada par consulta-fragmento y selecciona los más relevantes para alimentar un sistema RAG.
-- Filtrado de candidatos en sistemas de preguntas y respuestas: el modelo puede descartar documentos irrelevantes antes de pasarlos a un LLM generador, reduciendo el coste de tokens y las alucinaciones por contexto irrelevante.
-- Deduplicación y ordenación de resultados en agregadores de contenido: el cross-encoder permite priorizar artículos o entradas según su afinidad con la consulta del usuario.
-- Evaluación de calidad de recuperación en pipelines de investigación: sirve como componente de referencia para medir MRR y NDCG en experimentos de recuperación de información.
-- Despliegue en entornos con recursos limitados: con 30M de parámetros y un repo de 0,1 GB, puede ejecutarse en CPU o en GPUs de gama baja para tareas de ranking en tiempo real.
-- Prototipado de arquitecturas alternativas: útil para investigadores interesados en arquitecturas sin proyecciones densas y en el estudio de rotaciones de Givens en transformers.
+- Reordenamiento en pipelines RAG: tras recuperar los N candidatos más similares con un bi-encoder, el modelo puntúa cada par consulta-fragmento y reordena los resultados; su tamaño de 0,1 GB permite desplegarlo como segunda etapa con coste mínimo de memoria.
+- Búsqueda semántica en documentación técnica: reordenar resultados de un índice vectorial para mejorar el Recall@1 y el MRR, métricas en las que la model card reporta mejoras frente al bi-encoder base (Recall@1 del 46,0 % frente al 32,5 %).
+- Filtrado de candidatos en sistemas de preguntas y respuestas: usar la puntuación del cross-encoder como umbral para descartar pasajes irrelevantes antes de pasarlos a un modelo generativo.
+- Deduplicación y agrupación de pasajes: la similitud coseno rotacional a nivel de token puede emplearse para detectar pasajes redundantes en un corpus.
+- Evaluación de calidad de recuperación: integrar el modelo en un arnés de evaluación tipo BEIR o AllNLI para medir la mejora de la segunda etapa frente a la primera.
+- Prototipado en hardware de consumo: con 0,1 GB de pesos en safetensors, cabe en GPUs de consumo modestas y permite experimentar con arquitecturas rotacionales sin infraestructura dedicada.
+- Investigación en arquitecturas sin capas lineales: sirve como referencia reproducible para estudiar el efecto de las rotaciones de Givens/Clifford y de optimizadores geométricos en tareas de ranking.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del autor:
+Resultados reportados en la model card del autor (AllNLI con 200 candidatos × 10 consultas y STS-B test):
 
-| Modelo / Pipeline | Arquitectura | AllNLI Rerank MRR@10 | AllNLI Rerank NDCG@10 | Recall@1 | Recall@3 | STS-B Test Spearman | Throughput (pares/s) |
+| Modelo / pipeline | Arquitectura | AllNLI MRR@10 | AllNLI NDCG@10 | Recall@1 | Recall@3 | STS-B test Spearman | Throughput (pares/s) |
 |---|---|---|---|---|---|---|---|
-| grt-30m (base sin alinear) | GRTModel (circular pool) | 37,99 | 52,12 | 20,5% | 41,0% | 32,51 | 120 |
-| grt-30m-embedding (bi-encoder) | SentenceTransformer (circular) | 52,56 | 63,74 | 32,5% | 68,0% | 62,42 | 152 |
-| grt-30m-reranker (cross-encoder) | GRTForSequenceClassification (CrossEncoder) | 56,93 | 67,13 | 38,5% | 70,0% | 61,75 | 123 |
-| Híbrido de dos etapas (embedding + reranker) | Bi-encoder + cross-encoder | 57,05 | 67,21 | 38,5% | 70,0% | 62,94 | 123 |
+| grt-30m (base sin alinear) | GRTModel | 37,99 | 52,12 | 20,5 % | 41,0 % | 32,51 | 120 |
+| grt-30m-embedding (bi-encoder) | SentenceTransformer | 52,56 | 63,74 | 32,5 % | 68,0 % | 62,42 | 152 |
+| grt-30m-reranker (checkpoint calibrado solo cabeza) | CrossEncoder | 56,93 | 67,13 | 38,5 % | 70,0 % | 61,75 | 123 |
+| Hibrido en dos etapas (embedding + reranker solo cabeza) | Bi + Cross | 57,05 | 67,21 | 38,5 % | 70,0 % | 62,94 | 123 |
+| grt-30m-reranker (joint top-block, HessianPairAdam/CyclideAdam) | CrossEncoder | 63,50 | 72,26 | 46,0 % | 76,5 % | 63,12 | 123 |
+| Hibrido en dos etapas (embedding + reranker joint top-block) | Bi + Cross | 62,14 | 71,18 | 44,0 % | 76,0 % | 64,09 | 123 |
 
-El reranker supera al bi-encoder en MRR@10 (56,93 frente a 52,56) y NDCG@10 (67,13 frente a 63,74), con un throughput ligeramente inferior (123 frente a 152 pares/s). El pipeline híbrido obtiene la mejor puntuación global. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ya que el modelo está especializado en ranking.
+Ablación de optimizadores (extracto de los cinco primeros puestos por MRR@10 en AllNLI 200×10):
+
+| Puesto | Optimizador | MRR@10 | NDCG@10 | Recall@1 / @3 | STS-B test Spearman | Tiempo ROCm (200 pasos) |
+|---|---|---|---|---|---|---|
+| 1 | HessianPairAdam (Sophia-Torus) | 63,50 | 72,26 | 46,0 % / 76,0 % | 62,61 | 93,8 s |
+| 2 | HuygensSymplecticAdam | 63,27 | 72,09 | 45,5 % / 76,0 % | 62,49 | 94,0 s |
+| 3 | SymplecticAdam | 63,13 | 72,00 | 45,0 % / 76,0 % | 62,43 | 93,8 s |
+| 4 | CyclideAdam | 63,06 | 71,91 | 45,0 % / 76,5 % | 63,12 | 93,8 s |
+| 5 | GyricAdam | 62,75 | 71,68 | 44,5 % / 76,5 % | 63,08 | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 29,8M de parámetros en fp32, aproximadamente 120 MB de pesos; en fp16, unos 60 MB. El consumo total depende del tamaño del lote y de la longitud de las secuencias.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tarjetas como RTX 3060, RTX 4090, A100 o H100 pueden ejecutarlo sin problemas, aunque el modelo es tan pequeño que el cuello de botella será el preprocesado y el tamaño de lote.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: sentence-transformers (`CrossEncoder`), Hugging Face Transformers (`AutoModelForSequenceClassification`), y potencialmente ONNX Runtime o llama.cpp si se generan los pesos convertidos (no se han publicado conversiones).
-- Latencia y throughput estimados: el autor reporta 123 pares/s en el benchmark de reranking, aunque no especifica el hardware utilizado. No se dispone de mediciones de latencia por par.
+- VRAM estimada para inferencia: inferior a 1 GB en precisión completa (pesos de 0,1 GB en safetensors); en fp16 o int8 el consumo es aún menor.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; la model card documenta ejecución en AMD Radeon 8060S Graphics (ROCm/gfx1151). No se especifican modelos A100/H100/RTX 4090 en la información disponible.
+- Cabe en GPU de consumo: sí, con amplio margen (por ejemplo, GTX 1650, RTX 3050 o superiores).
+- Opciones de despliegue: `sentence-transformers` (`CrossEncoder`), `transformers` (`AutoModelForSequenceClassification`); el autor documenta kernels HIP fusionados para ROCm. Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Latencia y throughput: 123 pares/s según la model card (frente a 152 pares/s del bi-encoder y 120 pares/s del modelo base); tiempo de 200 pasos de entrenamiento en ROCm de aproximadamente 94 s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Tipo | Disponibilidad |
-|---|---|---|---|---|---|
-| MatterWaveAI/grt-30m-reranker | 29,3M | No disponible | Apache 2.0 | Cross-encoder | Hugging Face |
-| BAAI/bge-reranker-base | 278M | 512 tokens | MIT | Cross-encoder | Hugging Face |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 | 22,7M | 512 tokens | Apache 2.0 | Cross-encoder | Hugging Face |
-| jinaai/jina-reranker-v1-tiny-en | 33M | 512 tokens | Apache 2.0 | Cross-encoder | Hugging Face |
+| Modelo | Parametros | Contexto | AllNLI MRR@10 (200×10) | STS-B test Spearman | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MatterWaveAI/grt-30m-reranker | 29,8 M | no disponible | 63,50 | 63,12 | Apache 2.0 | Hugging Face |
+| MatterWaveAI/grt-30m-embedding (bi-encoder) | no disponible | no disponible | 52,56 | 62,42 | Apache 2.0 | Hugging Face |
+| MatterWaveAI/grt-30m (base) | no disponible | no disponible | 37,99 | 32,51 | no disponible | Hugging Face |
+| Cross-encoders de referencia de la misma categoria (p. ej. MiniLM/ms-marco) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de comparaciones directas de rendimiento entre grt-30m-reranker y estos modelos en los mismos benchmarks, por lo que no es posible establecer una comparación cuantitativa fiable. La model card solo compara el modelo con sus propios derivados (grt-30m y grt-30m-embedding).
+No se dispone de datos de benchmarks de terceros ni de comparaciones directas con cross-encoders populares de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo muy reciente (noviembre de 2026) sin descargas ni valoraciones en Hugging Face; no hay evidencia de uso en producción ni validación independiente.
-- No se dispone de información sobre los idiomas soportados; el entrenamiento y los benchmarks publicados parecen centrados en inglés (AllNLI, STS-B), por lo que el rendimiento en castellano es desconocido.
-- No se detalla el proceso de entrenamiento ni la composición de los datos, lo que dificulta evaluar sesgos y riesgos de alucinación en la puntuación.
-- Los benchmarks publicados son limitados (AllNLI y STS-B) y no cubren dominios diversos ni tareas multilingües.
-- La arquitectura sin capas `nn.Linear` es poco habitual; la compatibilidad con herramientas de cuantización y optimización estándar no está documentada.
-- Licencia Apache 2.0 permite uso comercial, pero al no haber validación externa se recomienda evaluar el modelo en el dominio concreto antes de desplegarlo.
-- El throughput reportado (123 pares/s) no especifica el hardware, por lo que no es directamente comparable con otras mediciones.
+- Los benchmarks reportados provienen exclusivamente de la model card del autor; no se han verificado de forma independiente.
+- La longitud máxima de contexto no está documentada, lo que impide garantizar el comportamiento con documentos largos.
+- Los idiomas soportados no están especificados; no hay evidencia de capacidades multilingües.
+- El ajuste fino documentado se limita a 812.169 parámetros (bloque superior y cabeza) durante 200 pasos, lo que puede limitar la adaptación a dominios distintos de AllNLI/STS-B.
+- Riesgo de alucinación no aplicable directamente (modelo de ranking, no generativo), pero la puntuación puede ser poco fiable fuera de la distribución de entrenamiento.
+- No hay información sobre sesgos demográficos o lingüísticos.
+- La discrepancia entre el recuento de parámetros de la model card (29.305.759) y los pesos safetensors (29.844.858) conviene tenerla en cuenta al verificar la arquitectura.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar los términos del modelo base `grt-30m-embedding`.
+- El soporte de despliegue en servidores de inferencia estándar (vLLM, TGI) no está documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-reranker
-- Modelo base (embedding): https://huggingface.co/MatterWaveAI/grt-30m-embedding
+- Modelo base (embeddings): https://huggingface.co/MatterWaveAI/grt-30m-embedding
 - Modelo base sin alinear: https://huggingface.co/MatterWaveAI/grt-30m
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.
+- Repositorio de `transformers` con el módulo `models.grt` y `optimization_grt`: no disponible como enlace directo en la información proporcionada
+- Paper, blog o demo: no disponible en la información proporcionada

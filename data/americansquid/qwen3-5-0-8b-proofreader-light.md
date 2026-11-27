@@ -2,97 +2,96 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Proofreader-Light es un adaptador LoRA de corrección gramatical y de estilo (GEC, *grammatical error correction*) publicado por el usuario americansquid sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo completo, sino un delta de ajuste supervisado fino que continúa un adaptador anterior ya archivado en el propio repositorio (`c4-epoch1/`). El adaptador raíz corresponde a la segunda época sobre el subconjunto C4 GEC de 100.000 pares, y su uso requiere encadenar previamente otro adaptador intermedio (el antiguo "Grammarly") antes de cargarlo.
+Qwen3.5-0.8B-Proofreader-Light es un adaptador LoRA publicado por el usuario americansquid sobre el modelo base Qwen/Qwen3.5-0.8B, orientado a tareas de correccion gramatical y compresion de texto. El adaptador se entreno con Llama Factory y se distribuye en formato PEFT, con pesos en safetensors y una exportacion ONNX incluida en el repositorio. Su proposito es reescribir fragmentos de texto corrigiendo gramatica, ortografia y puntuacion, y opcionalmente condensando el contenido preservando el significado.
 
-El modelo resuelve una tarea muy concreta: recibir texto con errores y devolver una versión corregida, en un formato conversacional. Con 772.845.888 parámetros declarados en los safetensors del repositorio y un tamaño de repositorio de 3,4 GB (que incluye checkpoints intermedios, tokenizador, registros de entrenamiento y cuantizaciones GGUF de la época 1), está pensado para entornos con recursos muy limitados: el propio entrenamiento se ejecutó en CPU con BF16 y 8 hilos de cómputo.
+El modelo resuelve un problema acotado: la correccion automatica de errores gramaticales (GEC) y la compresion de frases en ingles. Se apoya en dos conjuntos de datos: una version filtrada de C4 200M GEC y una conversion filtrada de MSR Text Compression. El entrenamiento se realizo en dos etapas sobre MSR, partiendo de un adaptador previo de estilo Grammarly que actua como prerrequisito obligatorio y debe fusionarse con el modelo base antes de cargar el adaptador raiz.
 
-Su relevancia es doble. Por un lado, ejemplifica un flujo de trabajo poco habitual pero interesante: adaptadores apilados y continuados en lugar de un único fine-tuning, con la cadena de dependencias documentada explícitamente. Por otro, muestra que la corrección de texto se puede abordar con modelos sub-1B cuando el dominio está bien acotado. La información pública sobre licencia, idiomas soportados y benchmarks es, sin embargo, inexistente en el momento de redactar esta ficha.
+La relevancia actual del modelo radica en su tamano reducido (772.845.888 parametros en el modelo base) y en su caracter de adaptador ligero, lo que permite ejecutarlo en CPU o en GPUs de consumo. No obstante, su carga presenta una complejidad poco habitual: requiere una secuencia de fusion especifica (base, adaptador Grammarly, adaptador MSR) y una remapeo de claves de tensores para compatibilidad con Transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre el modelo base Qwen/Qwen3.5-0.8B; arquitectura interna del base no disponible |
-| Parametros totales | 772.845.888 (dato real obtenido de los safetensors del repositorio) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; el entrenamiento uso una longitud maxima de secuencia de 384 tokens |
-| Tipos de cuantizacion | Adaptador en safetensors; el archivo `c4-epoch1/` incluye GGUF en F16, Q8_0 y Q4_K_M (corresponden a la epoca 1, no a la continuacion) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only (modelo base Qwen3.5-0.8B) con adaptador LoRA |
+| Parametros totales | 772.845.888 (modelo base; el adaptador LoRA anade un subconjunto no cuantificado en la informacion) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (se menciona exportacion ONNX y pesos safetensors; no se detallan cuantizaciones) |
+| Idiomas soportados | Ingles (segun la model card) |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) y GGUF (solo para la epoca 1 archivada) |
+| Formato de pesos | safetensors (PEFT/LoRA), ONNX |
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador LoRA, no un modelo completo. La cadena de dependencias es estricta y viene descrita en la propia model card: el adaptador raíz es un delta continuado que exige cargar primero el modelo base Qwen/Qwen3.5-0.8B, aplicar despues el adaptador conservado en `grammarly-adapter/` mediante PEFT y ejecutar `merge_and_unload()`, y solo entonces cargar el adaptador raíz de este repositorio. El autor advierte explicitamente de que no debe aplicarse el adaptador raíz sobre un Qwen base sin modificar, ni volver a añadir el antiguo adaptador Proofreader, porque sus pesos fueron continuados en el sitio. El resultado final puede fusionarse para exportar un modelo autonomo.
+El adaptador se aplica sobre Qwen3.5-0.8B, un transformer decoder-only de 772.845.888 parametros. La LoRA utiliza rango 16, alpha 32 y dropout 0.05, con modulos objetivo q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj. El entrenamiento se realizo en CPU con BF16 y ocho hilos, con un cutoff de secuencia de 384 tokens, batch efectivo de 8 (batch 4, acumulacion 2) y optimizador AdamW con estado reiniciado en cada etapa. La tasa de aprendizaje pico fue de 1e-7 con schedule coseno y 50 pasos de calentamiento, clipping de gradiente de 0.5 y sin weight decay. El enmascaramiento de perdida es response-only y el modo thinking esta desactivado.
 
-El entrenamiento consistio en una unica epoca adicional de ajuste supervisado sobre el subconjunto local C4 GEC de 100.000 pares, recortado a 10.000 pares y dividido en 9.800 ejemplos de entrenamiento y 200 de validacion con semilla 42. Se realizaron 1.225 pasos de optimizador con tamano de lote 4, acumulacion de gradiente 2 (lote efectivo 8), tasa de aprendizaje maxima de 1e-6 con decaimiento coseno y 50 pasos de calentamiento. La longitud maxima de secuencia fue de 384 tokens, con perdida calculada solo sobre la respuesta y modo de razonamiento (*thinking*) desactivado. El entrenamiento se ejecuto en CPU con BF16, 8 hilos de computo y sin *gradient checkpointing*. La perdida final de validacion fue de 0.5334540605545044 y la perdida media de entrenamiento de 0.5155409774001763.
-
-El repositorio conserva ademas `c4-epoch1/`, que preserva el repositorio original completo en la revision `a2487281dab218a3493867f91a772505e921d7aa`, con su adaptador final, checkpoints en los pasos 500, 1000 y 1225, tokenizador, registros de entrenamiento y las cuantizaciones GGUF fusionadas. El repositorio original `americansquid/Qwen3.5-0.8B-Proofreader` fue retirado tras verificar este archivo, y el repositorio Grammarly fue eliminado, conservandose solo dentro de este espacio.
+El proceso consta de dos etapas MSR. La primera partio del adaptador C4 en la revision 611bf55db68c18b9df3832dd54e3ae2dbe7ab382 sobre la revision base 2fc06364715b967f1860aea9cf38778875588b17, con el adaptador Grammarly ya fusionado. La segunda etapa continuo el adaptador local de la epoca 1 (revision e3f77ae898d7be1642b3a0e2b9bd36b866afc379) con un optimizador y scheduler nuevos, ejecutando una epoca adicional con los mismos ajustes. En total suman 2.454 pasos de optimizador entre ambas etapas MSR. El conjunto de datos MSR filtrado contiene 9.815 pares de entrenamiento, 881 de validacion oficial y 1.589 de test reservados; el filtrado retuvo objetivos con al menos tres valoraciones y puntuaciones medias de significado y gramatica de al menos 2.67, excluyendo pares vacios, identicos y duplicados. Cada epoca MSR uso una pasada completa sobre las filas de entrenamiento y los pares de test no se usaron ni para entrenamiento ni para evaluacion de epoca.
 
 ## Capacidades
 
-- Correccion gramatical y de estilo (GEC): reescritura de texto con errores ortograficos, gramaticales o de puntuacion hacia una version corregida.
-- Generacion de texto en formato conversacional, segun la etiqueta `conversational` del repositorio.
-- Respuesta en modo no-razonamiento: el entrenamiento se hizo con *thinking* desactivado, por lo que no se debe esperar una cadena de pensamiento explicita.
-- Ajuste mediante LoRA, lo que permite fusionar el adaptador con el modelo base para obtener un modelo autonomo exportable.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo esta orientado a una tarea de correccion acotada.
-- Capacidades multilingues: no disponible; no se especifica la composicion idiomatica del dataset C4 GEC, aunque por el nombre del corpus se asume procedencia C4.
-- Vision, audio u otras modalidades: no disponible.
+- Correccion gramatical, ortografica y de puntuacion en ingles, con preservacion del significado.
+- Compresion o condensacion de texto: reescritura mas concisa manteniendo el contenido semantico.
+- Generacion de texto conversacional (pipeline text-generation) con plantilla de chat.
+- Soporte de inferencia sin modo thinking (enable_thinking=False en la plantilla).
+- Entrenamiento con enmascaramiento response-only, orientado a tareas de reescritura instruida.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Correccion de textos largos en lote: el modelo puede procesarse sobre parrafos o documentos completos, enviando cada fragmento como una peticion conversacional y recogiendo la version corregida; su tamano sub-1B permite ejecutarlo en CPU o en una GPU modesta para procesar miles de documentos.
-- Preprocesado de corpus para entrenamiento: se puede pasar un corpus de texto en crudo por el modelo para normalizar errores tipograficos y gramaticales antes de usarlo en un pipeline de preentrenamiento o de extraccion de datos.
-- Revision en herramientas de edicion: integrado como servicio local detras de un editor de texto o un corrector tipo plugin, devolviendo sugerencias de correccion sobre el fragmento seleccionado.
-- Moderacion y limpieza de formularios: normalizacion de campos de texto libre enviados por usuarios (comentarios, descripciones, incidencias) antes de almacenarlos o analizarlos.
-- Correccion de subtitulos y transcripciones automaticas: limpieza de salidas de ASR, donde los errores de puntuacion y concordancia son frecuentes, con un coste por token muy bajo.
-- Generacion de pares (texto con errores, texto corregido) para aumentar datos: al ser un modelo pequeno y barato de ejecutar, puede emplearse en bucles de sintesis de ejemplos de entrenamiento para otros sistemas de correccion.
-- Correccion en el borde (*edge*): al caber en cuantizaciones GGUF pequenas, es viable desplegarlo en equipos sin GPU dedicada o en dispositivos con memoria limitada, evitando enviar texto de usuarios a servicios externos.
+- Correccion de textos en ingles en pipelines editoriales: el adaptador puede recibir un parrafo con errores y devolver una version corregida gramaticalmente, integrándose como paso previo a la publicacion en CMS o herramientas de gestion de contenidos.
+- Compresion de resumenes y notas: dado su entrenamiento con MSR Text Compression, puede condensar parrafos largos en versiones mas breves preservando el significado, util para generar extractos o meta-descripciones.
+- Preprocesado de datos para entrenamiento de modelos: limpieza gramatical de corpus en ingles antes de usarlos en fine-tuning, reduciendo ruido ortografico y de puntuacion en datasets de texto.
+- Asistencia a la escritura en entornos de documentacion tecnica: integrado en editores o linters de prosa, puede sugerir reescrituras concisas de fragmentos de documentacion en ingles.
+- Normalizacion de transcripciones o textos generados por OCR: correccion de errores gramaticales y de puntuacion en salidas de reconocimiento de voz o texto extraido de imagenes antes de su almacenamiento.
+- Filtrado y mejora de contenido generado por otros modelos: como etapa de post-procesado para corregir y comprimir respuestas de LLMs en ingles antes de entregarlas al usuario final.
+- Evaluacion de calidad de texto en pipelines de datos: el adaptador puede emplearse para reescribir pares y comparar la salida con el original como senal de calidad gramatical.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica objetiva proporcionada por el autor es la perdida de validacion final (0,5334540605545044) y la perdida media de entrenamiento (0,5155409774001763) de la epoca 2, que no son comparables con metricas estandar de GEC como F0.5 o M2 sobre CoNLL-2014 ni con benchmarks de proposito general.
+La model card solo reporta metricas de perdida del entrenamiento y validacion, no benchmarks estandar (MMLU, HumanEval, GSM8K, etc.).
+
+| Metrica | MSR epoca 1 | MSR epoca 2 |
+|---|---:|---:|
+| Perdida final de validacion MSR | 0.9288356900215149 | 0.8944162130355835 |
+| Perdida media de entrenamiento | 0.9446561466705148 | 0.9055341776542384 |
+| Tiempo de entrenamiento (segundos) | 7905.329 | 7952.7728 |
+| Tiempo de evaluacion (segundos) | 293.3906 | 291.9679 |
+
+No se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir del numero de parametros, no publicada por el autor): en FP16 unos 1,6 GB solo de pesos; en INT8 en torno a 0,8 GB; en Q4_K_M alrededor de 0,5 GB. Hay que sumar la cache KV, que con 384 tokens de secuencia es despreciable.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para FP16; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 irian sobradas. No se requiere GPU de centro de datos.
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU. El propio autor entreno en CPU con BF16 y 8 hilos.
-- Opciones de despliegue: PEFT y Transformers para cargar el adaptador y fusionarlo; llama.cpp y Ollama para las cuantizaciones GGUF (recordando que las GGUF incluidas corresponden a la epoca 1, no a la continuacion ligera); vLLM o TGI para servir el modelo fusionado si se necesita throughput alto.
-- Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 772.845.888 parametros, en FP16 el modelo base ronda 1,5 GB y en FP32 unos 3,1 GB, a lo que se suma el adaptador LoRA. La model card incluye un ejemplo de carga en CPU con dtype float32.
+- GPU recomendadas: no especificadas; por tamano, cabe en GPUs de consumo como RTX 3060, RTX 4060 o superiores, aunque no se documenta compatibilidad probada.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano del modelo base, aunque no se confirma en la informacion.
+- Opciones de despliegue: Transformers con PEFT y safetensors; exportacion ONNX incluida en el repositorio; Llama Factory como framework de entrenamiento. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El entrenamiento se ejecuto en CPU BF16 con ocho hilos, con tiempos de aproximadamente 7.905 y 7.953 segundos por epoca MSR.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados de modelos comparables en la informacion disponible. La unica referencia factible es el propio modelo base, del que tampoco se aportan especificaciones mas alla del identificador.
+No se dispone de datos de benchmarks ni de comparaciones directas en la informacion proporcionada. Como referencia estructural, el modelo se apoya en Qwen3.5-0.8B y comparte categoria con adaptadores LoRA de correccion gramatical sobre modelos pequenos, pero no se han documentado alternativas concretas ni sus metricas.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-0.8B-Proofreader-Light | 772.845.888 (safetensors) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | No disponible | No disponible | No disponible | No disponible |
-| Alternativas de correccion gramatical de tamano similar | No disponible | No disponible | No disponible | No disponible |
+| Qwen3.5-0.8B-Proofreader-Light | 772.845.888 (base) + LoRA | No disponible | No disponible | Hugging Face |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Dependencia estricta de la cadena de adaptadores: cargar el adaptador raiz directamente sobre Qwen base produce un modelo incorrecto. Es obligatorio fusionar antes `grammarly-adapter/` y no volver a aplicar el adaptador de la epoca 1.
-- Las cuantizaciones GGUF disponibles corresponden a la epoca 1, no a la continuacion ligera que da nombre al repositorio. Usarlas supone servir una version anterior del modelo.
-- Las rutas absolutas locales incluidas en `training-config.yaml` deben adaptarse para reentrenar en otra maquina.
-- Superficie de datos muy reducida: 10.000 pares de entrenamiento y 200 de validacion. La generalizacion a dominios, registros o idiomas distintos del corpus C4 GEC no esta verificada.
-- Longitud de contexto de entrenamiento de solo 384 tokens. No hay evidencia de que el modelo mantenga calidad en entradas mas largas, aunque la ficha no declara limite de contexto.
-- Riesgo de alucinacion: no evaluado. En tareas de reescritura, un modelo de este tamano puede introducir cambios de contenido no solicitados o "corregir" texto que ya era correcto.
-- Sesgos conocidos: no documentados. Al derivar de un corpus tipo C4, es probable que herede los sesgos de ese origen, pero no hay analisis disponible.
-- Licencia no especificada: no se puede confirmar la legalidad de un uso comercial. La ausencia de licencia explicita es un riesgo juridico relevante para produccion.
-- Idiomas soportados no declarados: no se puede asumir cobertura multilingue ni siquiera del castellano.
-- Ausencia total de benchmarks publicos: no hay evidencia cuantitativa de calidad en GEC mas alla de la perdida de validacion.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion por parte de la comunidad.
-- Estado de mantenimiento incierto: el autor retiro el repositorio original y el repositorio Grammarly, lo que indica reorganizacion del espacio y posibles enlaces historicos rotos.
+- La carga requiere una secuencia estricta: modelo base Qwen3.5-0.8B, fusion del adaptador Grammarly y carga del adaptador MSR raiz. Aplicar el adaptador raiz directamente sobre el base sin el prerrequisito Grammarly produce resultados incorrectos.
+- Es necesario remapear el prefijo de claves de `model.layers.` a `model.language_model.layers.` para modelos Transformers que usan la segunda convencion; el ejemplo de la model card realiza esta conversion manualmente.
+- El adaptador esta entrenado para ingles; no se documentan otros idiomas.
+- El modo thinking esta desactivado durante el entrenamiento y en el ejemplo de uso.
+- La model card advierte que el ejemplo de generacion es una receta de uso, no una prueba de inferencia registrada, y sugiere evaluar si el adaptador acorta el texto en exceso cuando se solicita solo correccion sin compresion intencional.
+- No se especifica licencia, lo que impide confirmar condiciones de uso comercial.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible.
+- El cutoff de secuencia de entrenamiento es de 384 tokens, lo que puede limitar el rendimiento en textos mas largos.
+- El entrenamiento se realizo en CPU con BF16 y ocho hilos, sin checkpointing de gradientes, lo que condiciona la reproducibilidad en otros entornos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/americansquid/Qwen3.5-0.8B-Proofreader-Light
+- Hugging Face: https://huggingface.co/americansquid/Qwen3.5-0.8B-Proofreader-Light
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Dataset de entrenamiento: https://huggingface.co/datasets/hafidikhsan/c4_200m-gec-train100k-test25k
-- Revision archivada de la epoca 1: `a2487281dab218a3493867f91a772505e921d7aa` (conservada en `c4-epoch1/` dentro del repositorio)
-- Repositorio original retirado: americansquid/Qwen3.5-0.8B-Proofreader (ya no disponible)
-- Repositorio Grammarly original: eliminado, conservado como `grammarly-adapter/` dentro de este repositorio
-- Paper, blog o demo adicionales: no disponibles
+- Dataset C4 200M GEC: https://huggingface.co/datasets/hafidikhsan/c4_200m-gec-train100k-test25k
+- Dataset MSR Text Compression: https://huggingface.co/datasets/microsoft/msr_text_compression
+- Llama Factory (framework de entrenamiento mencionado): no se proporciona enlace en la informacion disponible.

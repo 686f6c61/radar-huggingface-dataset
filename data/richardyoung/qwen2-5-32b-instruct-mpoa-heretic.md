@@ -2,94 +2,87 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-MPOA-heretic es un ajuste fino (fine-tune) del modelo Qwen2.5-32B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored": el ajuste busca eliminar los mecanismos de rechazo y moderacion del modelo original, de modo que responda a peticiones que el modelo base declinaria. El sufijo "MPOA" (multi-prompt optimization alignment) y "heretic" indican la metodologia de alineacion usada para conseguir ese efecto, descrita en los papers referenciados en las etiquetas.
+Qwen2.5-32B-Instruct-MPOA-heretic es un ajuste fino del modelo Qwen2.5-32B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. El objetivo declarado del autor es producir una variante "descenSorada" o "abliterated": un modelo al que se le han reducido o eliminado los mecanismos de rechazo y alineacion de seguridad del modelo original, de modo que responda a peticiones que el modelo base rechazaria. La tecnica empleada se etiqueta como MPOA y heretic, y el autor la describe como reproducible.
 
-El modelo conserva la arquitectura del Qwen2.5-32B-Instruct: un transformer decoder-only denso con aproximadamente 32.760 millones de parametros, ventana de contexto larga (hasta 131.072 tokens segun la ficha del modelo base) y tokenizador Qwen2. Es relevante para quienes necesitan un modelo de 32B con capacidades de razonamiento y generacion solida pero sin filtros de seguridad integrados, por ejemplo en investigacion sobre alineacion, red teaming o generacion creativa sin restricciones.
+El modelo conserva la arquitectura del Qwen2.5-32B-Instruct original: un transformer denso de aproximadamente 32.760 millones de parametros, con licencia Apache 2.0 y pesos en safetensors. El repositorio ocupa 65,5 GB y esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. Solo declara soporte para ingles.
 
-La ficha es escasa en detalles tecnicos: el autor no publica datos de entrenamiento, benchmarks ni curvas de evaluacion. La informacion disponible se limita a los metadatos de Hugging Face y a la herencia del modelo base.
+Su relevancia es acotada y de nicho: interesa a investigadores que estudian el comportamiento de modelos sin alineacion, a quienes necesitan evaluar la eficacia de tecnicas de abliteration y a desarrolladores que quieren comparar el modelo base con su variante modificada. No es un modelo recomendable para produccion orientada al publico general, dado que la eliminacion de los rechazos incrementa el riesgo de generar contenido danino, sesgado o inexacto sin advertencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2) |
-| Parametros totales | 32.763.876.352 (~32,76 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible en esta ficha; el modelo base Qwen2.5-32B-Instruct soporta hasta 131.072 tokens |
-| Tipos de cuantizacion | No disponible (pesos originales en safetensors; cuantizaciones GGUF/AWQ no publicadas por el autor) |
-| Idiomas soportados | Ingles (segun metadatos); el base Qwen2.5 soporta multiples idiomas |
-| Licencia | Apache 2.0 (metadatos); el autor etiqueta tambien openrail++ |
-| Formato de pesos | safetensors (transformers) |
-| Tamano del repositorio | 65,5 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Arquitectura | Transformer denso (familia Qwen2), decoder-only |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-32B-Instruct soporta 32.768 tokens nativos, ampliables; no confirmado para este ajuste) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | en (solo ingles declarado) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-32B-Instruct: un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, attention con RoPE y sesgo QKV, entrenado por Alibaba sobre un corpus multilingue de billones de tokens con fases de pretraining, supervised fine-tuning y RLHF/DPO. El modelo base incorpora decodificacion de contexto largo mediante YaRN y soporta tool calling y generacion estructurada.
+El modelo parte de Qwen2.5-32B-Instruct, un transformer decoder-only denso de la familia Qwen2.5, con atencion por causalidad estandar, RoPE y capas de normalizacion RMSNorm. El ajuste realizado por richardyoung no cambia la arquitectura ni el numero de parametros: modifica los pesos para alterar el comportamiento de rechazo. La informacion disponible no detalla el dataset de ajuste, el numero de tokens utilizados ni si se empleo RLHF o DPO en esta fase; solo se indica que la metodologia MPOA/heretic es reproducible.
 
-El fine-tune de richardyoung aplica una metodologia de "abliteration" (eliminacion de direcciones de rechazo en el espacio de activaciones) combinada con MPOA (multi-prompt optimization alignment), descrita en los papers arxiv:2309.00071 (sobre refusal directions) y arxiv:2407.10671 (sobre alineacion con multiples prompts). El resultado es un modelo que mantiene las capacidades del base pero con los filtros de seguridad atenuados o eliminados. No se publican detalles sobre el dataset de ajuste, el numero de pasos, la tasa de aprendizaje ni si se uso LoRA o full fine-tuning; el tamano del repo (65,5 GB) sugiere pesos completos en bf16, no adaptadores.
+Las etiquetas del repositorio incluyen referencias a tres articulos (arXiv:2309.00071, arXiv:2407.10671 y arXiv:2611.17846), que probablemente documentan la tecnica de abliteration o el proceso de evaluacion, aunque no se dispone de su contenido en la informacion proporcionada. No se han publicado detalles sobre la composicion del corpus de ajuste ni sobre posibles evaluaciones de seguridad posteriores.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en ingles, heredadas del Qwen2.5-32B-Instruct.
-- Razonamiento y matematicas de nivel medio-alto, comparable al base de 32B.
-- Generacion de codigo, con soporte de lenguajes comunes y formateo estructurado.
-- Tool calling y function calling (capacidad del base; no confirmada explicitamente en esta ficha).
-- Generacion estructurada (JSON, XML) y seguimiento de instrucciones complejas.
-- Capacidad multilingue limitada segun metadatos (solo "en" declarado), aunque el base soporta mas idiomas.
-- Ausencia de rechazos: responde a peticiones que el base declinaria (comportamiento "uncensored"/"abliterated").
-- No dispone de vision, audio ni modalidades adicionales.
+- Generacion de texto y conversacion multi-turno en ingles, heredadas del modelo base Qwen2.5-32B-Instruct.
+- Razonamiento, matematicas y generacion de codigo a nivel del modelo base (no se han publicado evaluaciones especificas de esta variante).
+- Respuestas a peticiones que el modelo original rechazaria, por la reduccion de los mecanismos de rechazo (comportamiento "uncensored"/"abliterated").
+- Soporte de tool calling y function calling heredado del modelo base, aunque no verificado en esta variante.
+- Capacidades de agente y razonamiento multi-paso, presumiblemente heredadas, sin documentacion especifica.
+- Capacidades multilingues limitadas al ingles segun la ficha del repositorio.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y refusal: util para estudiar como se comporta un modelo sin filtros y comparar con el base, midiendo diferencias en tasas de rechazo y calidad de respuesta.
-- Red teaming y evaluacion de seguridad: permite generar respuestas "sin moderacion" para probar clasificadores y sistemas de filtrado en pipelines de moderacion.
-- Generacion creativa sin restricciones: escritura de ficcion, dialogos o guiones que el base rechazaria por contenido sensible, con control de estilo via prompts.
-- Analisis de sesgos y robustez: comparar respuestas del modelo abliterated con el base para detectar cambios en sesgos, toxicidad y factualidad.
-- Prototipado de asistentes internos en entornos controlados donde los filtros del base resultan demasiado restrictivos (documentacion tecnica, escenarios hipoteticos).
-- Fine-tuning adicional: al ser un modelo de 32B con pesos completos, sirve como punto de partida para ajustes especializados que requieren un base ya "desbloqueado".
-- Evaluacion de herramientas de inferencia: probar vLLM, TGI o llama.cpp con pesos de 32B en bf16 para medir throughput y latencia en despliegues reales.
+- Investigacion sobre alineacion y seguridad: comparar las respuestas del modelo base con las de esta variante para medir el efecto de la abliteration en la tasa de rechazos y en la calidad de las respuestas.
+- Evaluacion de tecnicas de desalineacion: usar el modelo como referencia reproducible para validar la metodologia MPOA/heretic descrita por el autor.
+- Red teaming controlado: generar respuestas a peticiones sensibles en un entorno aislado para estudiar vectores de ataque y disenar filtros de salida.
+- Analisis de sesgos: examinar como cambia el comportamiento del modelo en temas delicados tras eliminar los rechazos, comparandolo con el original.
+- Generacion de codigo en pipelines internos: el modelo base es competente en programacion y tool calling; esta variante puede usarse en entornos cerrados donde no se requiera moderacion automatica.
+- Experimentacion con tecnicas de cuantizacion y despliegue: al ser un modelo de 32B en safetensors, sirve para probar pipelines de inferencia (vLLM, TGI) con pesos modificados.
+- Docencia y divulgacion: ilustrar en charlas o cursos como se modifica un modelo alineado y que consecuencias tiene, siempre con ejemplos controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones de refusal rate. Cualquier cifra atribuida al modelo base (Qwen2.5-32B-Instruct) no debe trasladarse sin verificacion, dado que el fine-tune puede alterar el rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 65 GB de pesos, mas overhead de KV cache; se recomienda al menos 80 GB (A100 80GB, H100 80GB) para inferencia comoda.
-- En fp16/bf16 con tensor parallelism: 2x A100 40GB o 2x RTX 4090 (24GB) mediante sharding no trivial; 4x RTX 4090 es una configuracion realista con vLLM o TGI.
-- Cuantizacion a 8 bits (GPTQ/AWQ): ~35 GB, cabe en A100 40GB o 2x RTX 4090.
-- Cuantizacion a 4 bits (GGUF Q4_K_M): ~20 GB, cabe en una RTX 4090 24GB o RTX 3090.
-- No cabe en GPUs consumer de 16GB o menos sin cuantizacion agresiva (Q2/Q3) y perdida notable de calidad.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI (tag text-generation-inference), llama.cpp/Ollama previa conversion a GGUF (no publicada por el autor).
-- Latencia y throughput: no disponibles; estimaciones genericas para 32B en bf16 con A100 80GB rondan decenas de tokens/s por peticion, pero no hay datos publicados.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 65 GB solo para pesos, mas overhead de KV cache; se recomienda un minimo de 80 GB.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 35-40 GB; en 4 bits, alrededor de 20-25 GB (estimaciones genericas para un modelo de 32B, no verificadas para esta variante).
+- GPU recomendadas: A100 80 GB, H100 80 GB, o multiples GPU consumer (por ejemplo, 2x RTX 4090 de 24 GB) para FP16.
+- Cabe en GPU consumer: si, con cuantizacion agresiva (4 bits) en una unica RTX 4090 de 24 GB, aunque con margen ajustado y sin datos de rendimiento confirmados.
+- Opciones de despliegue: transformers, text-generation-inference (la ficha incluye la etiqueta endpoints_compatible), y presumiblemente vLLM y llama.cpp si se generan conversiones GGUF (no publicadas).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic | ~32,76 B | No disponible (base: 131.072) | Apache 2.0 (metadatos) | Abliterated, acceso gated, sin benchmarks |
-| Qwen/Qwen2.5-32B-Instruct | ~32,76 B | 131.072 tokens | Apache 2.0 | Modelo base, con filtros de seguridad, benchmarks publicados |
-| Meta-Llama-3.1-70B-Instruct | ~70 B | 128.000 tokens | Llama 3.1 Community | Mayor tamano y contexto similar; requiere mas VRAM |
-| Mistral-Large-Instruct-2407 | ~123 B | 128.000 tokens | Mistral Research | Mucho mayor; no comparable en VRAM |
+| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|
+| Qwen2.5-32B-Instruct-MPOA-heretic | 32,76B | no disponible | apache-2.0 | gated | Variante sin rechazos; solo ingles declarado |
+| Qwen/Qwen2.5-32B-Instruct | 32,76B | 32.768 tokens (nativo) | apache-2.0 | abierto | Modelo base alineado, multilingue |
+| Otras variantes abliterated de Qwen2.5 | variable | variable | variable | variable | Existen multiples ajustes comunitarios similares; no se dispone de datos comparativos verificados |
 
-La comparativa directa mas relevante es con el propio Qwen2.5-32B-Instruct: mismo tamano y arquitectura, pero con filtros de seguridad. Frente a alternativas "uncensored" de la comunidad (por ejemplo variantes abliterated de Llama 3.1 8B/70B), este modelo ofrece 32B con contexto largo del base, aunque con menos documentacion y adopcion (512 descargas, 0 likes).
+No se dispone de informacion suficiente para comparar rendimiento numerico con alternativas.
 
 ## Limitaciones y advertencias
 
-- Riesgo elevado de contenido nocivo: al eliminar los rechazos, el modelo puede generar contenido ilegal, danino o sexual explicito; su uso en produccion requiere moderacion externa obligatoria.
-- Alucinacion: sin benchmarks publicados, no hay evidencia de que el fine-tune preserve la factualidad del base; la abliteration puede degradar ligeramente la calidad en tareas de razonamiento.
-- Sesgos: hereda los sesgos del Qwen2.5-32B-Instruct y el ajuste no documenta mitigaciones; puede amplificar sesgos al eliminar respuestas de cautela.
-- Idioma: metadatos declaran solo ingles; el rendimiento multilingue del base puede no mantenerse.
-- Licencia: los metadatos indican Apache 2.0 y openrail++ simultaneamente; la combinacion es ambigua y conviene verificar las condiciones antes de uso comercial.
-- Acceso restringido (gated): requiere aceptar terminos en Hugging Face, lo que anade friccion para despliegues automatizados.
-- Documentacion escasa: sin dataset, hiperparametros ni evaluaciones, la reproducibilidad es baja pese a la etiqueta "reproducible".
-- Fecha de creacion futura (2026-11-05) en los metadatos: posible inconsistencia que conviene contrastar con el repositorio real.
-- No hay cuantizaciones oficiales publicadas; convertir a GGUF o AWQ requiere trabajo adicional y validacion de calidad.
+- La eliminacion de los rechazos incrementa el riesgo de generar contenido danino, ilegal o sexualmente explicito; no es apto para aplicaciones orientadas al publico sin filtros adicionales.
+- Riesgo elevado de alucinacion y de afirmaciones no verificadas, especialmente en temas sensibles, al haberse reducido los mecanismos de cautela del modelo base.
+- Solo declara soporte para ingles; el rendimiento en castellano no esta documentado y puede degradarse respecto al modelo base multilingue.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso en pipelines automatizados sin gestion de credenciales.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo modificado; el usuario asume la responsabilidad legal del contenido generado.
+- No hay benchmarks publicados que permitan verificar la calidad del ajuste ni compararlo con el modelo base.
+- El repositorio tiene pocas descargas (512) y cero likes, lo que sugiere escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Paper refusal directions (arxiv:2309.00071): https://arxiv.org/abs/2309.00071
-- Paper MPOA (arxiv:2407.10671): https://arxiv.org/abs/2407.10671
+- Paper referenciado (arXiv:2309.00071): https://arxiv.org/abs/2309.00071
+- Paper referenciado (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
+- Paper referenciado (arXiv:2611.17846): no disponible (identificador no verificable en la informacion proporcionada)

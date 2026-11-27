@@ -2,104 +2,94 @@
 
 ## Resumen
 
-AutowareFoundation/auto_e2e es un repositorio publicado en Hugging Face por la organizacion AutowareFoundation bajo licencia Apache-2.0. El unico contenido verificable de su model card es la declaracion de licencia: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento, ejemplos de uso ni resultados de evaluacion. La ficha tampoco declara pipeline (tarea) ni idiomas soportados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+AutoE2E es un modelo de conduccion autonoma end-to-end desarrollado por la Autoware Foundation, publicado en Hugging Face bajo el identificador `AutowareFoundation/auto_e2e`. Convierte imagenes de camaras surround y el historial de movimiento del vehiculo en una trayectoria de conduccion futura, sin depender de mapas HD. El modelo esta disenado para operar en autopistas, vias arteriales y calles urbanas, y sus salidas pueden fusionarse con sensores fisicos como LiDAR y radar para aplicaciones de robotaxi completamente autonomo, o usarse solo con camaras para ADAS de nivel L2++.
 
-El identificador "auto_e2e" y el perfil del publicador (Autoware Foundation, entidad vinculada al stack de conduccion autonoma Autoware) sugieren un modelo de conduccion extremo a extremo, pero se trata de una inferencia basada unicamente en el nombre. Ningun dato de la model card confirma la tarea, la modalidad (texto, vision, multimodal o series temporales), el numero de parametros ni el regimen de entrenamiento.
+La version v1.0 publica dos checkpoints de planificacion de trayectoria: uno entrenado con nuPlan v1.1 (modelo base, util para evaluacion zero-shot y fine-tuning) y otro afinado sobre KITScenes-Multimodal (conduccion en Karlsruhe y con el rig de camaras de KITScenes). El repositorio incluye tambien los informes de evaluacion y los shards de validacion de KITScenes usados en el benchmark comunitario.
 
-En su estado actual el repositorio no es evaluable: sin documentacion tecnica, sin archivos de pesos declarados y sin benchmarks, no permite reproducir resultados ni compararlo con alternativas. Su interes es el de un posible marcador de posicion de un modelo end-to-end de conduccion autonoma; hasta que se publique documentacion adicional, cualquier afirmacion sobre sus capacidades seria especulacion.
+Arquitectonicamente, AutoE2E se concibe como tres modelos cooperantes (Reactivo a 10 Hz, World Action Model a 1 Hz y modelo de razonamiento a 1 Hz), aunque los pesos de la v1.0 solo contienen el modelo reactivo, que es la parte que conduce. El modelo tiene 79,9 M de parametros y su encoder visual parte de una inicializacion BEVFormer V2 R50 T8 congelada. Es relevante ahora porque ofrece un stack completo, reproducible y abierto para investigacion en conduccion end-to-end, un terreno hasta hace poco dominado por modelos cerrados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no consta que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Transformer con encoder BEV (ResNet-50 + BEVFormer V2 T8) y planificador GRU determinista con lookup deformable de caracteristicas BEV; diseno de tres modelos cooperantes (Reactivo, World Action, Razonamiento) |
+| Parametros totales | 79,9 M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (historial de camara de 8 frames a 0,5 s = 3,5 s; historial de ego-motion de 6,4 s a 10 Hz) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la ficha no declara ninguno) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | no disponible (no se declaran archivos de pesos) |
-| Autor / organizacion | AutowareFoundation |
-| Pipeline declarado en Hugging Face | no disponible |
-| Etiquetas de la ficha | license:apache-2.0, region:us |
-| Descargas / likes | 0 / 0 |
-| Fecha declarada de creacion y ultima actualizacion | 2026-09-16 (ambas identicas) |
+| Idiomas soportados | no disponible (modelo de conduccion, no linguistico) |
+| Licencia | cc-by-nc-sa-4.0 |
+| Formato de pesos | no disponible (repositorio PyTorch, 16,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no especifica tipo de arquitectura (transformer, MoE, SSM, hibrida, red convolucional o cualquier otra), numero de parametros, capas, dimensiones ocultas, mecanismo de atencion, ni estrategia de decodificacion.
+AutoE2E procesa 6 vistas surround a 512x512 (con la camara frontal codificada ademas a 1024x1024) y un historial de 8 frames espaciados 0,5 s (3,5 s) mediante fusion temporal BEVFormer V2. El encoder BEV es un ResNet-50 + BEVFormer V2 (T8) con una rejilla BEV de 300x200 que cubre 180 m x 120 m (60 m detras y 120 m delante), inicializado de forma congelada desde la inicializacion oficial BEVFormer V2 R50 T8. Opcionalmente acepta un raster de mapa semantico de 14 canales mas un raster de ruta de 2 canales, de 450x300 celdas a 0,4 m, que puede dejarse vacio; la fusion mapa-imagen se realiza mediante atencion cruzada deformable. El historial de ego-motion cubre 6,4 s a 10 Hz con velocidad, aceleracion longitudinal, velocidad de guinada y curvatura.
 
-Tampoco hay informacion sobre el corpus de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, la procedencia de los datos, ni si se aplicaron fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento. No se documenta ninguna innovacion tecnica asociada (atencion lineal, decodificacion especulativa, destilacion, cuantizacion entrenada, etc.).
+El planificador es un GRU determinista con lookup deformable de caracteristicas BEV que produce 64 pasos de (aceleracion longitudinal, curvatura) a 10 Hz, es decir, 6,4 s, integrados en una trayectoria XY en el marco del ego. Dispone de cabezas auxiliares de segmentacion BEV de 8 clases y reconstruccion de ruta como senales de entrenamiento. El checkpoint base se entrena sobre los logs de sensores de nuPlan v1.1 (epoch 5) y el segundo checkpoint se afina desde ese sobre el split de entrenamiento de KITScenes-Multimodal. No se especifican en la informacion disponible el numero de tokens, la composicion detallada del dataset ni si se emplearon RLHF o DPO.
 
 ## Capacidades
 
-No se documenta ninguna capacidad en la informacion disponible. En concreto, no puede confirmarse:
-
-- Generacion de texto, razonamiento, codigo o matematicas.
-- Capacidades de vision, audio o multimodalidad.
-- Soporte de tool calling o function calling.
-- Soporte de agentes o razonamiento multi-paso.
-- Cobertura multilingue (la ficha no declara idiomas).
-- Modos especiales como thinking mode o decodificacion con presupuesto de razonamiento.
-- Cualquier otra funcionalidad especifica del dominio de conduccion autonoma (prediccion de trayectorias, deteccion, planificacion).
-
-Cualquier atribucion de capacidades a este repositorio en el estado actual seria una suposicion no respaldada por la fuente.
+- Planificacion de trayectoria end-to-end a partir de imagenes de multiples camaras y del historial de movimiento del vehiculo.
+- Conduccion sin mapas HD: el raster de mapa es opcional y puede dejarse vacio.
+- Fusion temporal de historial visual de 3,5 s mediante BEVFormer V2.
+- Prediccion de 6,4 s de trayectoria futura (64 pasos a 10 Hz) expresada como aceleracion y curvatura.
+- Segmentacion BEV auxiliar de 8 clases y reconstruccion de ruta como senales de entrenamiento.
+- Capacidad de fusion con LiDAR y radar para aplicaciones de robotaxi, o uso solo con camaras para ADAS L2++.
+- Evaluacion zero-shot en ciudades nuevas con el checkpoint base de nuPlan.
+- Fine-tuning sobre datos propios y sobre rigs de camaras especificos (ejemplo: KITScenes).
+- No se describe soporte de tool calling, agentes, capacidades multilingues ni modos de razonamiento activos en los pesos v1.0 (las ramas World Action y Razonamiento estan desactivadas).
 
 ## Casos de uso
 
-No es posible enumerar casos de uso verificados: la ficha no describe el modelo, su entrada ni su salida. Los escenarios que figuran a continuacion son hipotesis condicionadas al significado literal del identificador "auto_e2e" y a la naturaleza del publicador; no estan confirmados por ninguna documentacion y no deben tomarse como base para una decision de integracion.
-
-- Conduccion autonoma extremo a extremo (hipotesis no confirmada): el modelo recibiria observaciones de sensores y produciria directamente comandos de control o trayectorias, sustituyendo a un pipeline modular de percepcion, prediccion y planificacion.
-- Prediccion de trayectorias en entornos urbanos (hipotesis no confirmada): integrado en un stack Autoware como modulo de prediccion de agentes a partir de historicos de estado y mapas HD.
-- Etiquetado automatico de datos de conduccion (hipotesis no confirmada): uso del modelo para preanotar secuencias de sensores y reducir el coste de anotacion manual en un pipeline de datos.
-- Validacion en simulacion (hipotesis no confirmada): ejecucion del modelo como agente controlado dentro de un simulador para escenarios de regresion antes de pruebas en vehiculo.
-- Deteccion de casos limite (hipotesis no confirmada): analisis offline de registros de conduccion para localizar situaciones de riesgo o desviaciones respecto al comportamiento esperado.
-- Investigacion academica en conduccion end-to-end (hipotesis no confirmada): reproduccion de resultados y comparacion de arquitecturas sobre un mismo conjunto de evaluacion, siempre que se publiquen pesos y protocolo.
-
-Sin model card, pesos y metricas publicadas, ninguno de estos escenarios puede validarse ni dimensionarse.
+- Investigacion en conduccion end-to-end: el checkpoint base de nuPlan permite reproducir el pipeline completo (codigo, datos, entrenamiento y evaluacion) y servir como linea base para comparar nuevas arquitecturas.
+- Evaluacion zero-shot en ciudades nuevas: el modelo base, entrenado en nuPlan v1.1, se puede evaluar directamente sobre datos de otras ciudades para medir la generalizacion del planner sin reentrenar.
+- Fine-tuning sobre flotas propias: partiendo del checkpoint base, un equipo puede adaptar el planner a su rig de camaras y su ciudad, como demuestra el checkpoint afinado sobre KITScenes para Karlsruhe.
+- ADAS L2++ punto a punto: el modelo solo con camaras puede alimentar funciones de navegacion manos libres en autopista y via arterial, con las capas de seguridad adicionales que requiera el fabricante.
+- Robotaxi con capa de seguridad fisica: las salidas de trayectoria pueden fusionarse con LiDAR y radar para construir un stack de conduccion completamente sin conductor.
+- Benchmark comunitario: los shards de validacion de KITScenes y los informes de evaluacion publicados permiten comparar modelos end-to-end con scripts y datos compartidos (issue #210 del repositorio).
+- Desarrollo de cabezas auxiliares: las cabezas de segmentacion BEV y reconstruccion de ruta sirven para experimentar con senales de entrenamiento auxiliares y supervisión densa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card menciona resultados en ADE/FDE (metros) para una unica trayectoria predicha, con errores laterales y longitudinales medios, sobre KITScenes-Multimodal Validation a 3 s, y una comparacion con otros modelos de pesos abiertos. Sin embargo, la informacion proporcionada se interrumpe antes de incluir los valores numericos de la tabla de resultados.
 
-No consta ninguna metrica de evaluacion (ni MMLU, ni HumanEval, ni GSM8K, ni metricas especificas de conduccion como L2 en trayectoria, colisiones por kilometro, o tasa de desengranche), ni comparaciones con modelos similares.
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El calculo requiere conocer el numero de parametros y la precision de los pesos, datos que no se han publicado.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no determinable sin conocer el tamano del modelo.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT, ONNX Runtime): no disponible; no se declaran formatos de pesos ni runtimes compatibles.
-- Latencia y throughput estimados: no disponible.
-
-Nota metodologica: para estimar VRAM de forma fiable hacen falta, como minimo, el numero de parametros totales, el regimen de precision (fp16, bf16, int8, int4) y la longitud de contexto de trabajo, ya que la memoria de la cache KV puede dominar el consumo en contextos largos.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada; con 79,9 M de parametros el modelo es muy ligero, pero el repositorio ocupa 16,8 GB e incluye checkpoints, informes y shards de datos, por lo que el espacio en disco es el requisito dominante.
+- GPU recomendadas: no disponible. Por tamano, el modelo cabe holgadamente en GPUs consumer, pero no se especifican modelos concretos.
+- Cabe en GPU consumer: previsiblemente si, dado el tamano de 79,9 M de parametros, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: no disponible (el repositorio es PyTorch; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de conduccion).
+- Latencia y throughput estimados: el modelo reactivo esta disenado para operar a 10 Hz y las ramas World Action y Razonamiento a 1 Hz, pero no se publican latencias ni throughput medidos.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables sin conocer la categoria, la tarea y el tamano del modelo.
+La model card anuncia una comparacion con otros modelos de pesos abiertos en KITScenes-Multimodal Validation a 3 s, pero los valores no estan incluidos en la informacion disponible.
 
-| Criterio de comparacion | Estado |
-|---|---|
-| Categoria y tarea del modelo | no disponible |
-| Parametros y contexto | no disponible |
-| Rendimiento en benchmarks | no disponible |
-| Licencia | Apache-2.0 |
-| Disponibilidad de pesos | no consta que se hayan publicado archivos de pesos |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| AutoE2E v1.0 | 79,9 M | historial visual de 3,5 s | cc-by-nc-sa-4.0 | Hugging Face, pesos abiertos |
+| Alternativas open-weights | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card contiene unicamente la declaracion de licencia. No hay informacion sobre uso previsto, entradas, salidas ni restricciones.
-- Sin validacion de la comunidad: 0 descargas y 0 likes, por lo que no hay evidencia de uso, replicacion ni informes de terceros.
-- Sin metadatos de tarea: la ficha no declara pipeline, lo que impide determinar si el repositorio es un modelo, un dataset o un contenedor de artefactos.
-- Riesgo de inferencia incorrecta a partir del nombre: asociar "auto_e2e" a conduccion autonoma extremo a extremo es una hipotesis, no un hecho documentado.
-- Idiomas no declarados: no puede garantizarse soporte de castellano ni de ningun otro idioma.
-- Sin datos de sesgo, alucinacion o robustez: no se ha publicado ninguna evaluacion de sesgos, toxicidad, robustez ante entradas adversarias ni tasas de error.
-- Fechas anomalas: la fecha declarada de creacion y de ultima actualizacion es la misma (2026-09-16), lo que sugiere un unico envio sin mantenimiento posterior; conviene verificar la vigencia del repositorio antes de cualquier uso.
-- Licencia: Apache-2.0 permite uso comercial y modificacion, con obligacion de conservar avisos de copyright y licencia, incluir una copia de la licencia y senalar los cambios realizados. La licencia no implica ninguna garantia sobre el contenido ni sobre los derechos de los datos de entrenamiento, que no se documentan.
-- No apto para produccion en su estado actual: no existen pesos, documentacion ni metricas verificables.
+- La licencia cc-by-nc-sa-4.0 prohibe el uso comercial y exige compartir bajo la misma licencia las obras derivadas; esto limita su uso en productos ADAS o robotaxi comerciales sin acuerdo adicional.
+- Los pesos v1.0 solo contienen el modelo reactivo; las ramas World Action y Razonamiento estan desactivadas y en desarrollo, por lo que no hay deteccion de casos limite ni acondicionamiento del planner por razonamiento.
+- El modelo es solo con camaras en su configuracion base; para conduccion sin conductor se requiere fusion con LiDAR y radar y capas de seguridad adicionales.
+- Riesgo de alucinacion y sesgos: no se documentan en la informacion disponible; al tratarse de un modelo entrenado sobre nuPlan y KITScenes, su comportamiento fuera de la distribucion de esos datos (clima, iluminacion, paises, rigs de camaras) es incierto.
+- Dependencia del rig de camaras: el checkpoint afinado esta ajustado a KITScenes y a Karlsruhe; el checkpoint base requiere fine-tuning para otros rigs.
+- El raster de mapa es opcional, pero su ausencia puede degradar el rendimiento en entornos complejos; no se cuantifica en la informacion disponible.
+- No se especifican limitaciones de idioma ni de contexto porque el modelo no es linguistico.
+- Para produccion: no se publican latencias, tasas de fallo ni protocolos de validacion de seguridad, imprescindibles antes de cualquier despliegue real.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/AutowareFoundation/auto_e2e
-- No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas ajenas al proyecto (YouTube y contenido no relacionado). No se dispone, por tanto, de papers, blogs tecnicos, repositorios de codigo ni demos asociados.
+- Modelo en Hugging Face: https://huggingface.co/AutowareFoundation/auto_e2e
+- Repositorio GitHub: https://github.com/autowarefoundation/auto_e2e
+- Guia de incorporacion al proyecto: https://github.com/autowarefoundation/auto_e2e/blob/main/ONBOARDING.md
+- Issue de benchmark abierto: https://github.com/autowarefoundation/auto_e2e/issues/210
+- Dashboard DataModelConsole: https://d2itskdqq39tx1.cloudfront.net/
+- Discord de Autoware: https://discord.com/invite/Q94UsPvReQ
+- Web de la Autoware Foundation: https://autoware.org/
+- Dataset KITScenes-Multimodal: https://huggingface.co/datasets/KIT-MRT/KITScenes-Multimodal

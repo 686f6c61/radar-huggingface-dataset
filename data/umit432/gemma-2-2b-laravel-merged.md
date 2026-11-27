@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Gemma 2 2B Laravel Expert (merged) es un ajuste fino especializado del modelo Gemma 2 2B IT de Google, desarrollado por el usuario Umit432 y orientado al desarrollo web con PHP y el framework Laravel. El modelo se ha entrenado con Unsloth sobre datasets especializados en programación para responder preguntas técnicas, escribir controladores, modelos, rutas y migraciones de Laravel. Es un modelo ligero de unos 2,6 mil millones de parámetros, distribuido como modelo completo fusionado (merged) en 16 bits, lo que lo hace fácilmente desplegable sin necesidad de gestionar adaptadores LoRA.
+Umit432/gemma-2-2b-laravel-merged es un ajuste fino (fine-tune) del modelo Gemma 2 de 2.000 millones de parametros en su variante instruct, partiendo de la version cuantizada en 4 bits publicada por Unsloth (unsloth/gemma-2-2b-it-bnb-4bit). El autor, Umit432, lo ha entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica la propia model card. El nombre del repositorio sugiere una especializacion en Laravel, aunque la model card no documenta de forma explicita el dataset de entrenamiento ni el objetivo concreto del ajuste.
 
-Su relevancia radica en la tendencia de crear modelos pequeños y especializados por dominio: en lugar de usar un modelo generalista de gran tamaño, este fine-tuning ofrece un asistente de código Laravel que puede ejecutarse en hardware de consumo o incluso localmente en un portátil, con costes de inferencia mínimos. Es útil para desarrolladores que necesitan autocompletado, generación de boilerplate de Laravel o consultas técnicas rápidas sin depender de servicios en la nube.
+El modelo resuelve el caso de uso de generacion de texto conversacional en un tamano que cabe en GPU de consumo, con 2.614.341.888 parametros reales segun los pesos en safetensors. Es relevante para desarrolladores que necesitan un modelo pequeno, con licencia Apache 2.0 y compatible con el ecosistema transformers y text-generation-inference, que puedan desplegar en local o en infraestructura modesta.
 
-Al tratarse de un proyecto comunitario sin model card detallada, buena parte de la documentación técnica (datos de entrenamiento exactos, benchmarks, evaluaciones) no está disponible públicamente, algo que conviene tener en cuenta antes de usarlo en producción.
+La informacion publicada es escasa: no se detallan los datos de entrenamiento, no se han publicado benchmarks y la model card es practicamente la plantilla por defecto de Unsloth. Esta ficha refleja unicamente lo que consta en los metadatos y en la model card, marcando como "no disponible" todo aquello que el autor no ha documentado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador (familia Gemma 2) |
-| Parámetros totales | 2.614.341.888 (~2,61 B) |
-| Parámetros activos | no disponible (no es MoE; arquitectura densa) |
-| Longitud de contexto | no disponible (el modelo base Gemma 2 2B soporta 8.192 tokens) |
-| Tipos de cuantización | 16 bits (versión merged); existe variante GGUF en el mismo repositorio del autor |
-| Idiomas soportados | no disponible |
-| Licencia | Gemma (licencia de Google con términos de uso propios) |
-| Formato de pesos | safetensors (tamaño del repo: 5,3 GB) |
+| Arquitectura | Transformer decoder-only (familia Gemma 2) |
+| Parametros totales | 2.614.341.888 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el modelo base de partida era bnb-4bit; los pesos publicados son safetensors) |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 2 2B IT, la versión instruida del modelo abierto de Google basada en una arquitectura transformer decodificador con mejoras como ventanas deslizantes de atención alternadas con atención global y normalización por RMSNorm. Sobre esta base se aplicó un fine-tuning con la librería Unsloth, que permite entrenar de forma eficiente en memoria y tiempo, aparentemente mediante LoRA (existe una variante del autor llamada gemma-2-2b-laravel-lora) que después se fusionó con los pesos base para obtener este modelo merged en 16 bits.
+El modelo hereda la arquitectura de Gemma 2, un transformer decoder-only con atencion por ventanas alternada y atencion global, normalizacion RMSNorm y activacion GeGLU, propia de la familia Gemma 2 de Google. Al tratarse de un ajuste fino sobre la variante instruct de 2.000 millones de parametros, conserva las capacidades del modelo base, incluyendo su entrenamiento previo con datos multilingues y su alineacion instructiva original.
 
-Los datos de entrenamiento concretos (número de tokens, composición exacta del dataset, uso de RLHF o DPO) no están disponibles en la información publicada. La model card indica únicamente que se emplearon datasets especializados en programación PHP y Laravel, con el objetivo de generar controladores, modelos Eloquent, definiciones de rutas y migraciones.
+El entrenamiento del ajuste fino se realizo con Unsloth y TRL, segun la model card, lo que implica tecnicas de entrenamiento eficiente en memoria (posiblemente LoRA o QLoRA y fusion posterior de pesos, dado el sufijo "merged" del nombre). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplico RLHF o DPO adicional. Tampoco se documenta ninguna innovacion tecnica propia del ajuste.
 
 ## Capacidades
 
-- Generación de código PHP orientado al framework Laravel: controladores, modelos, rutas y migraciones.
-- Respuesta a preguntas técnicas sobre Laravel y desarrollo web en PHP (modelo conversacional).
-- Generación de texto general heredada del modelo base Gemma 2 2B IT (instrucciones, razonamiento básico).
-- Compatibilidad con la librería transformers de Hugging Face y con text-generation-inference.
-- Existe una variante GGUF del mismo autor, lo que permite inferencia local con llama.cpp, Ollama o LM Studio.
-- Soporte de tool calling, agentes o capacidades multimodales: no disponible (no documentado).
+- Generacion de texto conversacional en ingles, heredada del modelo base Gemma 2 2B instruct.
+- Razonamiento basico y respuesta a instrucciones, limitado por el tamano de 2.000 millones de parametros.
+- Generacion de codigo, presumiblemente orientada a PHP y Laravel por el nombre del repositorio, aunque no esta documentado.
+- Soporte de tool calling / function calling: no documentado en la model card.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: la model card solo declara ingles.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- **Generación de boilerplate de Laravel:** crear controladores, modelos Eloquent, rutas y migraciones a partir de descripciones en lenguaje natural, ahorrando tiempo en tareas repetitivas de andamiaje.
-- **Asistente técnico local para Laravel:** integrarlo en un editor como copiloto offline especializado en PHP/Laravel, ejecutándose en una GPU de consumo gracias a sus 2,6 B de parámetros.
-- **Chatbot de documentación interna:** adaptarlo vía prompt para responder dudas del equipo sobre convenciones y patrones de Laravel en proyectos propios.
-- **Prototipado rápido de APIs:** generar esqueletos de endpoints REST con rutas, controladores y validaciones iniciales que el desarrollador refina después.
-- **Formación y aprendizaje:** usarlo como tutor conversacional para desarrolladores junior que aprenden Laravel, explicando conceptos y generando ejemplos.
-- **Revisión y refactorización de código PHP:** proponer mejoras o reescrituras de fragmentos de código Laravel en flujos de trabajo de desarrollo.
-- **Automatización en CI/CD ligera:** generar migraciones o factories a partir de especificaciones en pipelines internas, dada su baja huella de hardware.
+- Asistencia a desarrolladores Laravel: el modelo puede generar snippets de PHP, explicar el funcionamiento de Eloquent, Blade o Artisan y responder dudas sobre el framework, aprovechando el supuesto ajuste fino sobre Laravel. Es adecuado por su tamano reducido y su despliegue sencillo en local.
+- Autocompletado de codigo en el editor: con 2.000 millones de parametros puede ejecutarse en una GPU de consumo y ofrecer sugerencias de baja latencia integradas en plugins de VS Code o similares.
+- Chatbot de documentacion tecnica: servir respuestas sobre APIs y guias internas en ingles, con contexto limitado al que permita la ventana del modelo base.
+- Prototipado rapido de aplicaciones conversacionales: al ser compatible con transformers y text-generation-inference, permite montar un endpoint de generacion de texto en pocos minutos.
+- Generacion de tests unitarios y explicaciones de codigo: util en pipelines de revision donde se requiera un modelo pequeno y desplegable en infraestructura propia.
+- Fine-tuning posterior o experimentacion academica: al estar bajo licencia Apache 2.0 y en formato safetensors, sirve como punto de partida para nuevos ajustes con Unsloth o TRL.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia:** aproximadamente 5,3 GB en FP16 (tamaño del repo de safetensors); en cuantización de 4 bits la cifra baja a alrededor de 1,6–2 GB.
-- **GPUs recomendadas:** cualquier GPU moderna con 6–8 GB de VRAM es suficiente para FP16; para la variante GGUF en 4 bits, incluso GPUs integradas o portátiles con 4 GB de VRAM.
-- **Consumer GPUs:** cabe cómodamente en una RTX 3060 de 12 GB, RTX 4060 o RTX 4090 en 16 bits, e incluso en GPUs de gama baja con cuantización GGUF.
-- **Opciones de despliegue:** transformers de Hugging Face, text-generation-inference (TGI), vLLM y, mediante la variante GGUF del mismo autor, llama.cpp, Ollama y LM Studio.
-- **Latencia y throughput:** no disponible; al ser un modelo de 2,6 B, se espera inferencia rápida en GPU de consumo, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia en fp16: aproximadamente 5,2 GB solo para pesos, mas overhead de activaciones y cache KV.
+- VRAM estimada en cuantizacion 8 bits: en torno a 2,6-3 GB.
+- VRAM estimada en cuantizacion 4 bits: en torno a 1,5-2 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para mayor throughput.
+- Cabe en GPU de consumo: si, en tarjetas con 6 GB o mas en fp16 y en tarjetas con 4 GB o mas en cuantizacion 4 bits.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama (previa conversion a GGUF), entre otras.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Especialidad | Formato | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Umit432/gemma-2-2b-laravel-merged | 2,61 B | PHP / Laravel | safetensors (FP16), GGUF | Gemma |
-| unsloth/gemma-2-2b-it (base) | 2,61 B | Generalista instruido | safetensors, GGUF | Gemma |
-| Qwen2.5-Coder-1.5B / 7B | 1,5–7,2 B | Código multi-lenguaje | safetensors, GGUF | Apache 2.0 / Qwen |
+| Umit432/gemma-2-2b-laravel-merged | 2,61 B | no disponible | Apache 2.0 | Hugging Face |
+| google/gemma-2-2b-it | 2,61 B | no disponible en esta ficha | Gemma Terms of Use | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Hugging Face |
 
-Frente al modelo base, esta versión aporta conocimiento específico de Laravel a costa de posible degradación en tareas generales. Frente a alternativas como Qwen2.5-Coder, la ventaja es la especialización en el ecosistema Laravel y la ligereza; la desventaja es la falta de benchmarks publicados y una licencia (Gemma) con más restricciones que Apache 2.0.
+Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentacion publica; el rendimiento comparado no se puede establecer porque este modelo no publica benchmarks.
 
 ## Limitaciones y advertencias
 
-- **Falta de documentación y evaluación:** no hay benchmarks, ni detalles del dataset de entrenamiento, ni evaluaciones de calidad publicadas; el modelo tiene 0 descargas registradas, lo que sugiere ausencia de validación comunitaria.
-- **Riesgo de alucinación:** como todo modelo de código pequeño, puede generar APIs de Laravel inexistentes o desactualizadas; el código generado debe revisarse siempre.
-- **Sesgos:** hereda los sesgos del modelo base Gemma 2 y de los datasets de código usados en el fine-tuning (no disponibles para auditoría).
-- **Idiomas:** no se documentan los idiomas soportados; el modelo base Gemma 2 2B cubre principalmente inglés, por lo que las consultas en castellano pueden tener peor calidad.
-- **Licencia Gemma:** el uso está sujeto a los términos de la licencia Gemma de Google, que incluye restricciones de uso comercial y políticas de uso aceptable; no es una licencia permisiva tipo MIT o Apache.
-- **Contexto:** al ser un modelo pequeño con ventana limitada (8.192 tokens en el modelo base), puede tener dificultades con archivos o proyectos grandes.
-- **Producción:** dada la ausencia de evaluación pública, se recomienda prueba exhaustiva antes de cualquier despliegue en producción.
+- No se han publicado benchmarks, por lo que no hay evidencia objetiva de mejora frente al modelo base.
+- La model card no documenta el dataset de entrenamiento, lo que impide evaluar sesgos introducidos por el ajuste fino.
+- Riesgo de alucinacion inherente a modelos de 2.000 millones de parametros, especialmente en tareas de razonamiento complejo o codigo extenso.
+- Idioma declarado unicamente ingles; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto no documentada; conviene verificar la configuracion del modelo base antes de usarlo en produccion.
+- Aunque la licencia declarada es Apache 2.0, el modelo deriva de Gemma 2, cuyos terminos de uso originales pueden imponer restricciones adicionales; conviene revisar la compatibilidad antes de un uso comercial.
+- El nombre "laravel" sugiere una especializacion que no esta verificada en la documentacion; no asumir un rendimiento superior en PHP sin evaluacion previa.
+- Repositorio con muy poca traccion (0 likes, 220 descargas) y sin mantenimiento documentado; no hay garantias de soporte.
 
 ## Enlaces
 
-- Modelo merged (esta ficha): https://huggingface.co/Umit432/gemma-2-2b-laravel-merged
-- Variante LoRA del mismo autor: https://huggingface.co/Umit432/gemma-2-2b-laravel-lora
-- Variante GGUF del mismo autor: https://huggingface.co/Umit432/gemma-2-2b-laravel-GGUF
-- Modelo base: https://huggingface.co/unsloth/gemma-2-2b-it
-- Paper de Gemma 2: https://arxiv.org/abs/2408.00118
-- Librería Unsloth: https://github.com/unslothai/unsloth
+- Modelo en Hugging Face: https://huggingface.co/Umit432/gemma-2-2b-laravel-merged
+- Modelo base: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
+- Unsloth (repositorio): https://github.com/unslothai/unsloth
+- TRL de Hugging Face: https://github.com/huggingface/trl
+- Gemma 2 (Google): https://huggingface.co/google/gemma-2-2b-it

@@ -1,94 +1,85 @@
 # openeurollm/Prelude-SFT-Excellent-v0.2
 
 ## Resumen
+Prelude-SFT-Excellent-v0.2 es un ajuste fino supervisado (SFT) del modelo base openeurollm/prelude-anneal300b-256k-rope20m-cont, desarrollado por el proyecto OpenEuroLLM. El modelo parte de una arquitectura de tipo Qwen3 (etiqueta `qwen3` en el repositorio) con 9.093.567.488 parametros totales y un tokenizador propio de 256k entradas (openeurollm/tokenizer-256k). Se ha entrenado sobre el dataset openeurollm/Propella-Excellent-SFT durante dos epocas con un total de 58.365.718.851 tokens de entrada procesados y 54.730.454.404 tokens objetivo supervisados.
 
-Prelude-SFT-Excellent-v0.2 es un ajuste fino supervisado (SFT) del modelo base Prelude, un modelo denso multilingue de 9B parametros desarrollado por OpenEuroLLM como parte de su iniciativa de modelos abiertos europeos. El checkpoint parte de `openeurollm/prelude-anneal300b-256k-rope20m-cont` y se entrena sobre el dataset `OpenEuroLLM-Excellent-SFT` durante dos epocas, con un total de 55.892 pasos y 58.365 millones de tokens de entrada procesados.
+La innovacion principal del checkpoint es el condicionamiento explicito del modo de razonamiento: los ejemplos de razonamiento reciben `/think` o ninguna instruccion al 50 % (`thinking_instruction_probability: 0.5`), mientras que los ejemplos de respuesta directa reciben `/no_think`. Esto permite controlar en inferencia si el modelo debe generar cadena de pensamiento o responder directamente, mediante los argumentos `enable_thinking` y `thinking_instruction`.
 
-La caracteristica tecnica mas destacada es el condicionamiento explicito del modo de razonamiento: el modelo aprende a alternar entre respuestas directas y cadenas de razonamiento mediante los prefijos `/think` y `/no_think`, con una probabilidad de instruccion de pensamiento de 0,5 en los ejemplos de razonamiento. Esto permite controlar en inferencia si el modelo debe razonar paso a paso o responder de forma directa, algo relevante para equilibrar latencia y calidad en produccion.
-
-El modelo tiene 9.093.567.488 parametros en formato safetensors (18,2 GB en BF16) y emplea un tokenizador propio de 256k entradas (`openeurollm/tokenizer-256k`). Su contexto de entrenamiento alcanza los 32.768 tokens con packing activado, aunque el nombre del checkpoint base sugiere extensiones de RoPE hasta 256k. Es un modelo experimental orientado a investigacion y evaluacion, no a despliegue comercial sin revision adicional de licencia.
+Es relevante ahora porque forma parte del esfuerzo europeo OpenEuroLLM por construir modelos abiertos con infraestructura de entrenamiento reproducible (MareNostrum 5, DeepSpeed ZeRO-2, FlashAttention 3) y porque publica todos los detalles de reproduccion (revisiones de dataset, tokenizador y modelo base, PR de codigo y contadores de tokens), algo poco habitual en checkpoints SFT pequenos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3, segun tags del repo) |
-| Parametros totales | 9.093.567.488 (~9,1B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens en entrenamiento (packing); el base sugiere hasta 256k via RoPE |
-| Tipos de cuantizacion | no disponible (solo pesos safetensors BF16 publicados) |
-| Idiomas soportados | no disponible (modelo descrito como multilingue por OpenEuroLLM) |
-| Licencia | no disponible (no se ha asignado licencia especifica al checkpoint; consultar base y dataset) |
-| Formato de pesos | safetensors (BF16) |
+| Arquitectura | Transformer tipo Qwen3 (etiqueta `qwen3`), con atencion FlashAttention 3 en entrenamiento; detalles completos de capas no disponibles |
+| Parametros totales | 9.093.567.488 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens en entrenamiento (empaquetado); contexto nativo del modelo base no disponible (el nombre del base sugiere 256k) |
+| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; no se documentan GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible en la model card |
+| Licencia | no disponible; la model card remite a las licencias del modelo base y del dataset, sin licencia propia asignada al checkpoint |
+| Formato de pesos | safetensors (libreria transformers); repo de 18,2 GB |
 
 ## Arquitectura y entrenamiento
+El modelo es un ajuste fino supervisado sobre el checkpoint openeurollm/prelude-anneal300b-256k-rope20m-cont (revision `47a42eb598c0417691b8054e03dac172241bca6b`). La arquitectura subyacente se etiqueta como `qwen3`, es decir, un transformer decoder-only con tokenizador de 256k entradas. El entrenamiento uso BF16, FlashAttention 3 y kernels Liger, con DeepSpeed ZeRO-2 sobre 32 GPU NVIDIA H100 distribuidas en 8 nodos de MareNostrum 5, con checkpointing de gradientes no reentrante y sin solapamiento de comunicacion.
 
-El modelo es un transformer denso de 9,1B parametros basado en la arquitectura Qwen3, segun los tags del repositorio. El checkpoint base `prelude-anneal300b-256k-rope20m-cont` indica un proceso de annealing sobre 300B tokens con extension de contexto mediante RoPE hasta 256k y un tokenizador de 256k entradas. El ajuste SFT se realizo durante 2 epocas con 55.892 pasos, una longitud maxima de secuencia de 32.768 tokens con packing y perdida calculada solo sobre los tokens del asistente (assistant-only loss), descartando respuestas supervisadas parcialmente truncadas.
-
-El entrenamiento uso AdamW (β₁=0,9, β₂=0,95, ε=1e-8, weight decay 0), learning rate 8e-5 con decaimiento lineal y 3% de warmup, batch efectivo de 32 secuencias empaquetadas, clipping de gradiente 1,0, precision BF16 con FlashAttention 3 y kernels Liger, DeepSpeed ZeRO-2 y gradient checkpointing no reentrante. Se ejecuto en 32 GPU NVIDIA H100 distribuidas en 8 nodos de MareNostrum 5. La innovacion principal es el condicionamiento del modo de pensamiento: los ejemplos de razonamiento reciben `/think` o ninguna instruccion al 50%, mientras que los ejemplos de respuesta directa reciben `/no_think`, lo que ensena al modelo a conmutar entre ambos regimenes mediante el chat template incluido.
+Los hiperparametros documentados son: AdamW con beta1=0.9, beta2=0.95, epsilon=1e-8 y weight decay 0; tasa de aprendizaje 8e-5 con decaimiento lineal y 3 % de warmup; tamano de lote efectivo de 32 secuencias empaquetadas (lote por dispositivo 1); recorte de gradiente 1.0; semillas 42 para entrenamiento y datos. Se realizaron 55.892 pasos en 2 epocas con longitud maxima de secuencia de 32.768 tokens y empaquetado activado. La perdida se aplica solo sobre los turnos del asistente y las respuestas supervisadas truncadas parcialmente se descartan (`truncated_span_action: drop`). La innovacion tecnica destacable es el condicionamiento del objetivo de entrenamiento segun el modo de pensamiento (PR #68 de OpenEuroLLM/post-training), que ensena al modelo a alternar entre razonamiento explicito y respuesta directa segun la instruccion.
 
 ## Capacidades
-
-- Generacion de texto conversacional con ajuste por instrucciones (instruction tuning / SFT).
-- Razonamiento paso a paso controlable mediante el prefijo `/think` y respuestas directas mediante `/no_think`.
-- Control del modo de pensamiento en inferencia mediante los argumentos `enable_thinking` y `thinking_instruction` (`"think"`, `"no_think"` o `None`).
-- Capacidad multilingue heredada del modelo base Prelude (el autor lo describe como multilingue; el listado concreto de idiomas no esta disponible).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el modo de pensamiento podria habilitar cadenas de razonamiento, pero no hay confirmacion en la model card.
-- Capacidades de vision o audio: no disponibles.
-- Compatible con text-generation-inference y endpoints compatibles (segun tags del repo).
+- Generacion de texto conversacional e instrucciones, con ajuste SFT sobre un dataset de instrucciones de alta calidad (Propella-Excellent-SFT).
+- Razonamiento con modo de pensamiento controlable: el prefijo de generacion se selecciona con `enable_thinking`, y `thinking_instruction` acepta `"think"`, `"no_think"` o `None`.
+- Respuesta directa sin cadena de pensamiento cuando se indica `/no_think`.
+- Soporte de plantilla de chat estilo Qwen condicionada por modo de pensamiento, incluida en el checkpoint.
+- Compatibilidad con text-generation-inference y endpoints compatibles (tags del repositorio).
+- Capacidades multilingues: no documentadas en la model card.
+- Tool calling / function calling: no documentado.
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
-
-- Asistentes conversacionales con control de latencia: usar `enable_thinking=False` o `/no_think` para respuestas rapidas en atencion al cliente y activar `/think` solo en consultas complejas, aprovechando la conmutacion aprendida durante el SFT.
-- Generacion de explicaciones tecnicas con trazabilidad: activar el modo de pensamiento para obtener cadenas de razonamiento auditables en dominios como documentacion o soporte especializado.
-- Procesamiento de documentos largos: con contexto de entrenamiento de 32.768 tokens y packing, el modelo puede manejar resumenes y extraccion de informacion sobre documentos extensos, aunque conviene validar el comportamiento mas alla de esa longitud.
-- Investigacion en post-entrenamiento: el checkpoint y el dataset `OpenEuroLLM-Excellent-SFT` estan publicados con revisiones fijas, lo que permite reproducir el SFT o comparar estrategias de condicionamiento de pensamiento.
-- Evaluacion multilingue europea: integrable en pipelines de benchmark de OpenEuroLLM para medir rendimiento en lenguas europeas frente a modelos base.
-- Prototipado de chat con transformers: el repositorio incluye tokenizador y chat template listos para usar con `transformers` y `text-generation-inference`, adecuado para entornos de investigacion con GPU H100 o A100.
+- Asistente conversacional con control de latencia: en produccion se puede invocar con `thinking_instruction="no_think"` para respuestas rapidas de un solo paso y con `"think"` cuando se requiera razonamiento explicito, usando la misma plantilla de chat incluida en el checkpoint.
+- Razonamiento paso a paso auditable: el modo `/think` permite generar cadenas de razonamiento visibles para tareas de analisis, verificacion o depuracion, apropiado porque el modelo fue entrenado especificamente para alternar entre ambos regimenes.
+- Procesamiento de documentos largos: con 32.768 tokens de contexto en entrenamiento y empaquetado activado, es adecuado para resumir o extraer informacion de contratos, informes o expedientes de longitud media en una sola pasada.
+- Generacion de respuestas en pipelines de atencion al cliente: su formato instructivo y la plantilla de chat permiten integrarlo en servicios multi-turno; conviene validar el comportamiento multilingue antes de desplegarlo en idiomas distintos del entrenado.
+- Evaluacion comparativa de tecnicas de condicionamiento de razonamiento: al publicar PR, dataset y contadores de tokens, sirve como referencia reproducible para experimentos de SFT con modos de pensamiento.
+- Despliegue en infraestructura de inferencia estandar: al ser compatible con transformers y text-generation-inference, puede servirse con TGI o vLLM en GPUs de datacenter, y con llama.cpp/Ollama solo si se generan conversiones GGUF (no publicadas).
+- Fine-tuning posterior o destilacion: al estar en safetensors y con licencia pendiente de definir, puede usarse como punto de partida interno, siempre que se resuelva la licencia del modelo base y del dataset.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La coleccion de Hugging Face de OpenEuroLLM menciona un dashboard de evaluaciones multilingues de Prelude frente a baselines, pero no se proporcionan cifras concretas en la informacion facilitada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en BF16: aproximadamente 18,2 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda al menos 24-40 GB para contextos moderados.
-- VRAM estimada en cuantizacion de 8 bits: ~9-10 GB de pesos; en 4 bits: ~5-6 GB, aunque no se han publicado cuantizaciones oficiales.
-- GPU recomendadas: NVIDIA H100 o A100 para entrenamiento y evaluacion a contexto completo; RTX 4090 (24 GB) puede ejecutar el modelo en BF16 con contexto limitado o en cuantizacion 8/4 bits.
-- Cabe en GPU de consumo: si, en RTX 4090 o GPUs con 24 GB o mas usando cuantizacion; en BF16 completo requiere GPUs profesionales.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (soporte declarado en tags); vLLM, llama.cpp u Ollama no estan confirmados para este checkpoint.
+- VRAM estimada para inferencia en BF16: aproximadamente 18,2 GB solo para pesos (9,09 mil millones de parametros a 2 bytes), mas KV cache y activaciones; en la practica se recomiendan 24 GB o mas para contexto largo.
+- Cuantizacion: no se publican pesos cuantizados; una cuantizacion a 8 bits reduciria los pesos a unos 9 GB y a 4 bits a unos 4,5-5 GB, pero requeriria generar las conversiones.
+- GPU recomendadas: H100 o A100 para servicio en BF16 con contexto largo; RTX 4090 (24 GB) puede alojar los pesos en BF16 con margen limitado y contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 4090 o GPUs con 24 GB o mas en BF16 con contexto moderado; en GPUs de 16 GB solo tras cuantizacion (no publicada).
+- Opciones de despliegue: transformers, text-generation-inference (soportado por tags), vLLM; llama.cpp y Ollama requeririan conversion a GGUF no disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Prelude-SFT-Excellent-v0.2 | ~9,1B denso | 32.768 en entrenamiento (base sugiere 256k) | no disponible | Hugging Face, pesos safetensors |
-| Qwen3 (variantes 8B) | ~8B denso | hasta 128k en variantes Qwen3 | Apache 2.0 en la mayoria de variantes | Hugging Face, amplia comunidad |
-| Modelos europeos abiertos tipo Mistral 7B | ~7B denso | 32k en versiones recientes | Apache 2.0 | Hugging Face |
+| Prelude-SFT-Excellent-v0.2 | 9,09 B | 32.768 en entrenamiento | no disponible | Hugging Face (safetensors) |
+| Qwen3-8B (referencia de familia) | ~8 B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
+| Modelos de ~9 B de otras familias | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion detallada con benchmarks no esta disponible; las alternativas se citan por categoria y tamano, no por rendimiento medido frente a este checkpoint.
+No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
-
-- Modelo experimental de investigacion: OpenEuroLLM lo describe como experimental, sin garantias de robustez en produccion.
-- Licencia no asignada al checkpoint: el autor indica que no se ha asignado licencia especifica y remite a las licencias del modelo base y del dataset; el uso comercial requiere revision legal previa.
-- Riesgo de alucinacion: como todo modelo generativo ajustado por SFT, puede producir contenido plausible pero incorrecto, especialmente en modo de respuesta directa sin razonamiento.
-- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
-- Limitaciones de contexto: el entrenamiento se limita a 32.768 tokens; el comportamiento mas alla de esa longitud no esta validado aunque el base soporte RoPE extendido.
-- Idiomas: aunque se describe como multilingue, no se publica la lista de idiomas cubiertos ni evaluaciones por idioma en la informacion disponible.
-- Dependencia del chat template: el condicionamiento de pensamiento depende de usar el tokenizador y template incluidos; un template incorrecto degrada el comportamiento.
-- Sin cuantizaciones oficiales publicadas: desplegar en hardware de consumo requiere generar cuantizaciones propias y validarlas.
+- Licencia sin asignar: la model card indica explicitamente que no se ha asignado licencia propia al checkpoint y remite a las del modelo base y el dataset; el uso comercial queda condicionado a esas licencias, que no se detallan.
+- Idiomas no documentados: no se especifica que idiomas cubre el entrenamiento, lo que supone un riesgo para despliegues en castellano u otras lenguas sin evaluacion previa.
+- Riesgo de alucinacion: como todo modelo generativo ajustado por SFT, puede producir contenido plausible pero incorrecto, especialmente en modo `/no_think` sin verificacion.
+- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad.
+- Contexto: el entrenamiento se limita a 32.768 tokens; aunque el nombre del modelo base sugiere ventanas mayores, no se garantiza un comportamiento correcto mas alla de la longitud entrenada.
+- Capacidades no verificadas: no hay evidencia publicada de tool calling, agentes multi-paso ni capacidades multimodales.
+- Madurez: checkpoint con 390 descargas y 0 likes, sin benchmarks publicados; no recomendable para produccion critica sin evaluacion propia.
+- Reproducibilidad: requiere usar el tokenizador y la plantilla de chat incluidos; usar otra plantilla puede degradar el comportamiento del modo de pensamiento.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/openeurollm/Prelude-SFT-Excellent-v0.2
 - Modelo base: https://huggingface.co/openeurollm/prelude-anneal300b-256k-rope20m-cont
-- Dataset de entrenamiento: https://huggingface.co/datasets/openeurollm/OpenEuroLLM-Excellent-SFT
+- Dataset de entrenamiento: https://huggingface.co/datasets/openeurollm/Propella-Excellent-SFT
 - Tokenizador: https://huggingface.co/openeurollm/tokenizer-256k
 - Repositorio de post-entrenamiento: https://github.com/OpenEuroLLM/post-training
 - PR de implementacion del condicionamiento de pensamiento: https://github.com/OpenEuroLLM/post-training/pull/68
 - Discusion de experimento y evaluacion: https://github.com/OpenEuroLLM/Taskboard/issues/442
-- Coleccion Prelude en Hugging Face: https://huggingface.co/collections/openeurollm/prelude
-- Pagina oficial de Prelude 9B: https://www.openeurollm.eu/prelude

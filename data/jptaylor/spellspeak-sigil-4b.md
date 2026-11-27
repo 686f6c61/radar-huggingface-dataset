@@ -2,118 +2,101 @@
 
 ## Resumen
 
-SpellSpeak Sigil 4B es un modelo de generación de texto afinado para escribir diálogo de personajes no jugables (NPC) en videojuegos. Lo desarrolla jptaylor dentro del proyecto SpellSpeak y deriva de google/gemma-4-E4B-it, el modelo instruct de Gemma 4 en su variante E4B. Su propósito es muy acotado: dado un contexto de personaje (lo que sabe, cree y oculta) más el historial de conversación, producir una única línea de habla en la voz del personaje, en texto plano listo para síntesis de voz. La versión publicada es una release candidate alpha (RC1) y se distribuye principalmente en formato GGUF para llama.cpp, con pesos safetensors a precisión completa para reentrenamiento.
+SpellSpeak Sigil 4B es un modelo de lenguaje afinado para generar una unica linea de dialogo de personaje no jugable (NPC) en videojuegos. Lo desarrolla jptaylor y se construye sobre `google/gemma-4-E4B-it`, del que hereda la arquitectura multimodal (texto, vision y audio) pero cuyo nucleo de texto ronda los 4.000 millones de parametros. Su proposito es concreto: dado un contexto de personaje (descripcion, conocimientos, creencias, secretos y conversacion previa) generar una respuesta en la voz de ese personaje, sin inventar hechos y sin salirse del mundo del juego.
 
-El dato de parámetros totales en safetensors es de 7.941.100.874 (aproximadamente 7,9 mil millones), aunque el nombre comercial del modelo es "4B" y el modelo base se etiqueta como E4B; esta discrepancia entre el nombre y el recuento real de parámetros conviene tenerla presente al planificar despliegues. El modelo está pensado para ejecutarse en la máquina del jugador, no en servidores centrales, y por eso el autor publica cuantizaciones Q4_K_M y Q5_K_M de 4,40 GB y 4,82 GB respectivamente.
+La relevancia del modelo esta en su enfoque de despliegue local: el autor lo presenta como suficientemente pequeno para ejecutarse en la maquina del jugador, con una cuantizacion Q4_K_M de 4,40 GB que cabe en GPU de consumo. La version RC2 (alpha) introduce la capacidad de derivar el estilo de la linea a partir de una lista de palabras clave de voz (`gruff, dockside, terse, calls people "mate"`), mejorando la diferenciacion entre personajes respecto a RC1.
 
-La relevancia actual del modelo está en su enfoque de separación de responsabilidades: el juego mantiene la verdad factual y el modelo solo propone líneas de diálogo, sin herramientas, sin razonamiento explícito y sin decidir consecuencias. Es un caso de uso de IA generativa embebida en producto de consumo con latencia objetivo por debajo de 150 ms para la primera palabra en GPU de centro de datos, según las mediciones del autor.
+Es importante subrayar que se trata de una version alpha: el autor indica que las mediciones se han realizado en GPUs NVIDIA en la nube, no en equipos de jugadores, y que el modelo no dispone de herramientas ni de razonamiento explicito, sino que unicamente propone lineas que el juego decide si acepta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Gemma 4 E4B (no se detalla variante interna en la información disponible) |
-| Parametros totales | 7.941.100.874 (según safetensors) |
+| Arquitectura | Transformer multimodal (base Gemma 4 E4B); nucleo de texto de ~4,0B parametros |
+| Parametros totales | 7.941.100.874 (safetensors, incluye embeddings de 3,49B y partes de audio/vision de 0,48B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (configuración de referencia usada por el autor con `-c 4096`) |
-| Tipos de cuantizacion | Q4_K_M, Q5_K_M (GGUF); safetensors a precisión completa |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Longitud de contexto | 4096 tokens (configuracion recomendada de servido: `-c 4096`) |
+| Tipos de cuantizacion | Q4_K_M (4,40 GB), Q5_K_M (4,82 GB), safetensors en precision completa (15,88 GB) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de google/gemma-4-E4B-it, un modelo instruct de la familia Gemma 4. No se especifica en la información disponible si la variante E4B emplea mezcla de expertos, atención lineal u otra innovación arquitectónica concreta de la familia; lo que sí se documenta es que conserva la tabla por capas característica de Gemma, para la cual llama.cpp ofrece la opción `--lazy-mode on`, que lee la tabla fila a fila en lugar de mantener aproximadamente 1,6 GB en memoria.
+El modelo parte de `google/gemma-4-E4B-it`, un transformer multimodal que incluye tablas de embeddings de 3.490 millones de parametros y componentes de audio y vision de 480 millones. El autor aclara que la denominacion "4B" hace referencia al nucleo de texto del modelo base (unos 4.000 millones de parametros), mientras que Hugging Face contabiliza 8B por incluir todos los tensores de `model.safetensors`. El afinado se ha orientado exclusivamente a la generacion de dialogo de NPC, con un formato de prompt especifico basado en los marcadores de turno de Gemma y una parada en `<turn|>`.
 
-El entrenamiento se orientó a diálogo de juego: el autor indica que el modelo fue entrenado con un layout de prompt específico basado en los marcadores de turno de Gemma, implementado en el código de referencia (`ActorContext` y `render_prompt`). No se publican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. El modelo se distribuye con decodificación voraz (temperature 0, top_k 1) y parada en `<turn|>` como configuración de referencia, y el autor advierte que otros layouts de prompt no han sido probados.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La innovacion destacable de RC2 es el condicionamiento por palabras clave de voz: el prompt renderiza una linea `Voice: <keywords>.` con entre una y seis palabras de un vocabulario controlado (temperamento, humor, registro y region), y el modelo ajusta tono, longitud de respuesta y frases recurrentes en funcion de esas palabras. El autor reporta que una linea de personaje "terse" promedia 5,0 palabras frente a 16,8 de uno "chatty", y que 15 de 15 personajes con frase recurrente la utilizaron.
 
 ## Capacidades
 
-- Generación de una única línea de diálogo en texto plano, sin marcado, emotes ni acotaciones escénicas, lista para TTS.
-- Coherencia con el conocimiento del personaje: responde desde lo que el personaje sabe y cree, y declara no saber cuando corresponde.
-- Gestión de secretos: mantiene información que el personaje debe ocultar y la libera cuando el contexto lo permite.
-- Robustez ante preguntas fuera del mundo ficcional (por ejemplo, referencias a tecnología moderna).
-- Manejo de escenas grupales con múltiples personajes, cada uno en su propia sesión de contexto.
-- Soporte de conversaciones multi-turno dentro de la ventana de contexto configurada.
-- No dispone de tool calling ni function calling; el modelo no ejecuta acciones ni decide consecuencias.
-- No dispone de modo de razonamiento explícito ni de visión o audio.
-- Capacidad multilingüe limitada al inglés.
+- Generacion de una unica linea de dialogo en texto plano, lista para sintesis de voz, sin marcado, emotes ni acotaciones escenicas.
+- Diferenciacion de voz por palabras clave: temperamento, humor, registro y region, con control de longitud segun las palabras elegidas.
+- Uso de frases recurrentes (pet phrases) cuando se proporcionan al personaje.
+- Coherencia con los hechos del prompt: el modelo responde dentro del lore proporcionado y declina responder cuando no dispone de la informacion ("Don't know, mate").
+- Proteccion de secretos del personaje: mantiene la informacion que el personaje no debe revelar.
+- Gestion de preguntas fuera del mundo del juego, respondiendo desde la perspectiva del personaje sin romper la ficcion.
+- Multiples personajes con un solo modelo, manteniendo cada contexto de personaje en su propia sesion.
+- No dispone de tool calling, function calling ni razonamiento explicito: el modelo solo propone, y el juego decide y ejecuta.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Diálogo de NPC en videojuegos: el motor del juego entrega al modelo la descripción del personaje, su conocimiento y el historial, y el modelo devuelve una línea de habla que el juego reproduce mediante síntesis de voz. Es el caso de uso central y para el que fue entrenado.
-- Atención al cliente ficcional en experiencias interactivas: el modelo sostiene conversaciones multi-turno dentro de 4096 tokens manteniendo la voz del personaje y admitiendo desconocimiento cuando la pregunta excede su contexto.
-- Escenas grupales con varios personajes: el juego mantiene sesiones separadas por personaje y el modelo responde a preguntas dirigidas en grupo, capacidad en la que obtiene 97% en el benchmark del autor para Q4_K_M.
-- Comercio y trueques dentro del juego: el modelo propone respuestas a intercambios, y el juego confirma la transacción; el modelo nunca compromete estado por sí mismo.
-- Roleplay y agentes de voz: la salida en texto plano sin marcado simplifica la integración con pipelines de TTS para asistentes conversacionales con personalidad definida.
-- Prototipado rápido de narrativa interactiva: con los GGUF de 4,40 GB y llama.cpp se puede iterar sobre personalidades y guiones sin infraestructura dedicada.
-- Despliegue embebido en la máquina del jugador: el tamaño de archivo y la latencia medida (134 ms de mediana para la primera palabra de un personaje nuevo en una L4) apuntan a este escenario, aunque el autor advierte que no se ha medido en hardware de consumo.
+- Dialogo de NPC en juegos de rol: el motor del juego inyecta la descripcion del personaje, sus creencias y el historial de conversacion, y el modelo devuelve una linea coherente con la voz definida por palabras clave, lo que permite NPCs con personalidad consistente sin escribir arboles de dialogo completos.
+- Generacion de voz para agentes conversacionales: al producir texto plano sin marcado, la salida se envia directamente a un sistema de sintesis de voz, lo que simplifica el pipeline de NPCs hablados.
+- Comercio y transacciones dentro del juego: el modelo propone la linea de respuesta a una oferta o trueque, y el juego es quien confirma la transaccion, evitando que el modelo altere el estado del mundo.
+- Escenas de grupo: con la cuantizacion Q5_K_M, que el autor describe como mejor en escenas de grupo y trueques, un mismo modelo puede interpretar a varios personajes manteniendo contextos separados por sesion.
+- Proteccion de tramas y secretos: en misiones con informacion oculta, el modelo mantiene los secretos del personaje y responde con evasivas en personaje cuando el jugador intenta extraer informacion que no le corresponde.
+- Despliegue local en la maquina del jugador: con Q4_K_M (4,40 GB) y llama.cpp con `--lazy-mode on`, el modelo puede ejecutarse dentro del propio juego sin depender de servicios en la nube, reduciendo costes de inferencia y latencia de red.
+- Prototipado rapido de personajes: el vocabulario controlado de palabras clave permite iterar el tono de un personaje modificando solo la lista de keywords, sin reentrenar ni reescribir guiones.
 
 ## Benchmarks y rendimiento
 
-Resultados de GameBench publicados por el autor (una ejecución por archivo, decodificación voraz). "Untouched Gemma 4 E4B" es el modelo base a precisión completa con prompt largo escrito a mano.
+El autor publica mediciones internas sobre su conjunto "GameBench" y la prueba de palabras clave, comparando RC2 con RC1. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
-| Test (escenas) | Sigil 4B Q4_K_M | Sigil 4B Q5_K_M | Untouched Gemma 4 E4B |
-|---|---:|---:|---:|
-| Core scenes (309) | 69% (213) | 69% (214) | 72% (223) |
-| Unseen worlds (1.000) | 85% (847) | 87% (869) | 72% (715) |
-| Story and setting (103) | 66% (68) | 71% (73) | 66% (68) |
-| Questions in a group (1.500) | 97% (1.449) | 96% (1.446) | 74% (1.103) |
-| Group scenes (1.360) | 87% (1.181) | 92% (1.249) | 62% (841) |
-| Trades (576) | 75% (433) | 80% (460) | 92% (530) |
-| Big numbers (232) | 66% (153) | 48% (112) | 12% (28) |
-| Keeps secrets (246) | 89% (220) | 92% (227) | 89% (218) |
-| Lets secrets go (164) | 97% (159) | 94% (154) | 85% (140) |
-| Under fire (36) | 86% (31) | 92% (33) | 78% (28) |
-| **Media de los diez** | **81,7%** | **82,1%** | **70,1%** |
-
-Rendimiento medido en una NVIDIA L4 en la nube con llama.cpp b11146, todas las capas en GPU, cinco personajes simultáneos:
-
-| Métrica | Q4_K_M | Q5_K_M |
-|---|---:|---:|
-| Archivo | 4,40 GB | 4,82 GB |
-| Memoria GPU | 3,72 GB | 4,15 GB |
-| Primera palabra, personaje nuevo (mediana) | 134 ms | 144 ms |
-| Primera palabra, línea de seguimiento (mediana) | 54 ms | 59 ms |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | RC2 | RC1 | Referencia |
+|---|---|---|---|
+| Distincion de personajes por su linea (43 personajes) | 21,4% | 12,4% | Azar: 2,3% |
+| Longitud media con keyword "terse" | 5,0 palabras | no disponible | no disponible |
+| Longitud media con keyword "chatty" | 16,8 palabras | no disponible | no disponible |
+| Longitud media sin keyword de longitud | 13,4 palabras | 14,3 palabras | no disponible |
+| Uso de frase recurrente cuando se proporciona | 15 de 15 personajes | no disponible | no disponible |
+| Respuestas que superan todas las comprobaciones de hechos (prueba de keywords) | 91,1% | 92,5% | Diferencia dentro del azar |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 3,72 GB para Q4_K_M y 4,15 GB para Q5_K_M, medidos en una NVIDIA L4 con todas las capas en GPU.
-- GPU recomendadas: NVIDIA L4 es la plataforma medida por el autor; no se documentan mediciones en A100, H100 ni RTX 4090.
-- GPU de consumo: el tamaño de archivo y de memoria sugiere que podría caber en GPU de consumo con suficiente VRAM, pero el autor indica explícitamente que no se ha medido en máquinas de jugadores ni en GPU de consumo.
-- Despliegue: llama.cpp, concretamente `llama-server` build b11146 o posterior. Opciones de referencia: `llama-server -m gguf/spellspeak-sigil-4b-Q4_K_M.gguf -c 4096 -np 1 -ngl all --lazy-mode on`. Si se embebe llama.cpp, configurar `lazy_mode = LLAMA_LAZY_MODE_ON` en `llama_model_params`.
-- Otros runtimes: el autor advierte que `--lazy-mode` puede no existir en otros runtimes; vLLM, TGI y Ollama no se mencionan en la información disponible.
-- Latencia: 134 ms (mediana) para la primera palabra de un personaje nuevo y 54 ms para una línea de seguimiento, en L4 con cinco personajes concurrentes. El throughput en tokens por segundo no se publica.
+- VRAM estimada: Q4_K_M ocupa 4,40 GB en disco; Q5_K_M, 4,82 GB; safetensors en precision completa, 15,88 GB. El autor advierte que el tamano del fichero no equivale a su consumo de memoria.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible; las mediciones se realizaron en GPUs NVIDIA en la nube.
+- GPU de consumo: el modelo se presenta como apto para ejecutarse en la maquina del jugador gracias a la cuantizacion Q4_K_M; no se detallan modelos concretos de GPU de consumo validados.
+- Opciones de despliegue: llama.cpp mediante `llama-server` (build b11146 o posterior). El autor indica que otros runtimes pueden no soportar la opcion `--lazy-mode on`, que lee la tabla por capas de Gemma fila a fila en lugar de mantener unos 1,6 GB en memoria; el ahorro no se ha medido en equipos de jugadores.
+- Configuracion de servido recomendada: `llama-server -m gguf/spellspeak-sigil-4b-Q4_K_M.gguf -c 4096 -np 1 -ngl all --lazy-mode on`.
+- Latencia y throughput: no disponibles. El ejemplo de salida se genero en CPU con llama.cpp b11146, y el autor advierte que la redaccion puede variar ligeramente entre maquinas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpellSpeak Sigil 4B | 7.941.100.874 (recuento safetensors) | 4096 (config. de referencia) | Diálogo de NPC, GGUF para llama.cpp | apache-2.0 | Hugging Face, GGUF y safetensors |
-| SpellSpeak Glyph 2B | no disponible | no disponible | Misma familia, tamaño menor | no disponible | Hugging Face (jptaylor/glyph-2b) |
-| google/gemma-4-E4B-it | no disponible en la información | no disponible | Modelo instruct generalista, base de Sigil | no disponible en la información | Hugging Face |
+| SpellSpeak Sigil 4B | ~4,0B nucleo de texto (7,94B totales en safetensors) | 4096 | Dialogo de NPC en juegos, local | Apache 2.0 | GGUF y safetensors en Hugging Face |
+| SpellSpeak Glyph 2B | no disponible | no disponible | Dialogo de NPC en juegos, version menor | no disponible | Hugging Face (jptaylor/spellspeak-glyph-2b) |
+| google/gemma-4-E4B-it | ~4,0B nucleo de texto | no disponible | Modelo base multimodal de proposito general | no disponible | Hugging Face (google/gemma-4-E4B-it) |
 
-La comparación relevante que publica el autor es contra el propio Gemma 4 E4B sin afinar: Sigil supera al base en la media de GameBench (81,7%–82,1% frente a 70,1%), en escenas de mundos no vistos, preguntas en grupo, escenas grupales, secretos y números grandes, pero queda por detrás en core scenes (69% frente a 72%) y en trades (75%–80% frente a 92%). No se dispone de comparaciones con otros modelos de diálogo de juego en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado alpha: el modelo se ha medido en GPU NVIDIA en la nube, no en máquinas de jugadores; GPU y CPU de consumo no están evaluadas.
-- Los números son difíciles para el modelo: el autor recomienda que el juego calcule precios y sumas cuando importen. La puntuación de 66% en "big numbers" para Q4_K_M se señala como sospechosamente alta y debe tratarse con cautela.
-- Core scenes es la métrica honesta de calidad general: 69%, aproximadamente una línea de cada tres falla en ese conjunto escrito a mano.
-- El modelo no tiene herramientas ni razonamiento explícito; no debe usarse para decidir consecuencias, transacciones o estado del juego.
-- El prompt debe seguir el layout entrenado (marcadores de turno de Gemma vía `render_prompt`); otros layouts no han sido probados.
-- Idiomas: solo inglés. No hay soporte multilingüe documentado.
-- Contexto limitado a 4096 tokens en la configuración de referencia.
-- Riesgo de alucinación factual: mitigado por diseño al mantener la verdad en el prompt del juego, pero el modelo puede inventar detalles si se le pide decidir hechos.
-- Licencia apache-2.0 permite uso comercial, pero el modelo base Gemma 4 puede arrastrar términos adicionales de Google que no se detallan en la información disponible; conviene verificar antes de producción.
-- Advertencia de reproducibilidad: el autor indica que la redacción puede variar ligeramente entre máquinas; los mismos archivos dieron un final distinto en un segundo contenedor en la nube.
-- El ahorro de memoria de `--lazy-mode on` no se ha medido en máquinas de jugadores.
+- Version alpha: las mediciones se han realizado en GPUs NVIDIA en la nube, no en equipos de jugadores; el rendimiento en hardware de consumo no esta validado.
+- Solo ingles: el modelo no soporta otros idiomas.
+- Sin herramientas ni razonamiento: no dispone de tool calling ni de razonamiento explicito; solo propone lineas y el juego debe validar y ejecutar cualquier accion.
+- Formato de prompt fijado: el modelo fue entrenado con un diseno de prompt concreto basado en los marcadores de turno de Gemma; otros disenos no han sido probados.
+- Dependencia de runtime: requiere llama.cpp build b11146 o posterior y la opcion `--lazy-mode on` para el ahorro de memoria; otros runtimes pueden no ofrecer esa opcion.
+- Variabilidad de salida: el autor advierte que la redaccion puede cambiar ligeramente entre maquinas; en RC1, una linea termino de forma distinta en un segundo contenedor en la nube.
+- Riesgo de alucinacion: aunque el modelo esta disenado para declinar responder cuando no sabe, no se documentan tasas de alucinacion fuera de las pruebas internas; el 91,1% de respuestas que superan las comprobaciones de hechos implica que cerca de un 9% no las supera.
+- Fuga de secretos: el autor senala que la cuantizacion Q5_K_M es mas debil a la hora de dejar escapar secretos, lo que obliga a elegir la cuantizacion segun el caso de uso.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Gemma tiene sus propios terminos que deben verificarse para produccion.
+- Sin datos publicos de sesgos: no se documentan sesgos conocidos en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jptaylor/spellspeak-sigil-4b
-- Modelo hermano (Glyph 2B): https://huggingface.co/jptaylor/glyph-2b
-- Ejemplos y código fuente: https://github.com/spellspeak/models/tree/main/sigil
-- Modelo base: google/gemma-4-E4B-it (referenciado en la model card; no se proporciona URL directa en la información disponible)
+- Modelo base: https://huggingface.co/google/gemma-4-E4B-it
+- Modelo hermano SpellSpeak Glyph 2B: https://huggingface.co/jptaylor/spellspeak-glyph-2b
+- Ejemplos y codigo fuente: https://github.com/spellspeak/models/tree/main/sigil

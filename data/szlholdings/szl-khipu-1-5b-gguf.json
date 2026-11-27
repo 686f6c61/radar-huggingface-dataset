@@ -48,6 +48,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "plan valid",
+      "dataset": "SZL plan valid (n=11)",
+      "metric": "plan valid pass rate (11/11)",
+      "value": 1
+    },
+    {
+      "task": "grounding",
+      "dataset": "SZL grounding (n=5)",
+      "metric": "grounding pass rate (4/5)",
+      "value": 0.8
+    },
+    {
+      "task": "abstention",
+      "dataset": "SZL abstention (n=6)",
+      "metric": "abstention pass rate (2/6)",
+      "value": 0.3333
+    }
+  ],
   "sources": []
 }

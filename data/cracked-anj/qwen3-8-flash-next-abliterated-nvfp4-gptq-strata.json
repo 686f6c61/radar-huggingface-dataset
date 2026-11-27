@@ -36,7 +36,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 3,
   "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 125743801216,
@@ -49,13 +49,13 @@
     "gguf"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Cracked-ANJ/Orca-Qwen3.8-Flash-Next-Abliterated-NVFP4-GPTQ-Strata",
+  "renamed_at": "2026-11-27T03:10:21.558Z",
   "benchmarks": [],
   "sources": []
 }

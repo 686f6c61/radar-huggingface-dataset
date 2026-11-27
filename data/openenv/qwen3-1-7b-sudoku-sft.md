@@ -2,104 +2,92 @@
 
 ## Resumen
 
-Qwen3-1.7B-Sudoku-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B de Alibaba, desarrollado por el equipo de OpenEnv como parte de su tutorial de entrenamiento con refuerzo (GRPO) para entornos interactivos. El modelo está especializado en resolver sudokus mediante el uso de una herramienta externa `place(row, col, number)`: en cada turno rellena una única celda y emite un razonamiento breve antes de cada movimiento. No es un modelo de propósito general, sino un componente didáctico y experimental pensado para demostrar cómo un modelo pequeño puede aprender a interactuar con herramientas de forma estructurada.
+Qwen3-1.7B-Sudoku-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B de Alibaba, publicado por el proyecto openenv. Su proposito es muy concreto: jugar al Sudoku mediante el uso de una herramienta (`place(row, col, number)`) y razonar brevemente antes de cada movimiento. Se trata, por tanto, de un modelo especializado en una tarea de razonamiento estructurado con tool calling, no de un modelo de proposito general.
 
-El modelo parte de la arquitectura transformer densa de Qwen3-1.7B (1.720.574.976 parámetros) y se entrena con 1.000 partidas de sudoku generadas por un solutorio, en un único epoch de 63 pasos. Su relevancia actual radica en que sirve como punto de partida reproducible para el tutorial de OpenEnv sobre GRPO, que produce el modelo posterior `openenv/Qwen3-1.7B-Sudoku-SFT-GRPO`. Es, por tanto, una pieza de infraestructura educativa más que un modelo listo para producción.
+El modelo se entrena sobre el dataset `openenv/sudoku-tool-calls-sft`, compuesto por 1.000 partidas de Sudoku resueltas por un solver. La arquitectura subyacente es la de Qwen3-1.7B (transformer denso de 1.720.574.976 parametros), y el ajuste se realiza con `SFTTrainer` de TRL durante una epoca (63 pasos) en una unica A100 de 80 GB. Es la pieza inicial de un tutorial de GRPO en OpenEnv: el siguiente paso del pipeline es `openenv/Qwen3-1.7B-Sudoku-SFT-GRPO`.
 
-La ficha que sigue documenta sus especificaciones, su proceso de entrenamiento, sus capacidades reales (limitadas al dominio del sudoku y al tool calling) y sus limitaciones, con especial énfasis en que no debe confundirse con un modelo de razonamiento general.
+Su relevancia es fundamentalmente didactica y de investigacion: sirve como punto de partida reproducible para estudiar refinamiento por RL (GRPO) sobre un modelo pequeno con una tarea verificable, y como ejemplo de entrenamiento SFT de bajo coste (unos 27 minutos y 1,10 USD) con trazabilidad completa de curvas en Trackio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3-1.7B) |
-| Parámetros totales | 1.720.574.976 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el entrenamiento usó max_length 16384) |
-| Tipos de cuantización | no disponible (pesos en bf16; repo de 10,3 GB) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (heredada de Qwen3-1.7B) |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible (heredada de Qwen3-1.7B; el entrenamiento usa max length 16384) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; el repo ocupa 10,3 GB) |
+| Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Modelo base | Qwen/Qwen3-1.7B |
-| Dataset de entrenamiento | openenv/sudoku-tool-calls-sft |
-| Framework | TRL 1.16.0, Transformers 5.21.0, PyTorch 2.15.0, Datasets 5.1.0 |
-| Descargas | 264 |
-| Likes | 0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva la arquitectura del Qwen3-1.7B original: un transformer denso de 1.720 millones de parámetros con atención estándar (no se documenta en la información disponible ninguna modificación estructural). El ajuste se realiza con `SFTTrainer` de TRL durante un único epoch de 63 pasos, con `assistant_only_loss=True` (la pérdida se calcula solo sobre los tokens del asistente, no sobre los del usuario ni los de la herramienta), learning rate de 1e-5 con schedule coseno, batch size 16 y longitud máxima de 16.384 tokens. El entrenamiento se ejecutó en una A100 de 80 GB mediante Hugging Face Jobs, con un coste aproximado de 1,10 dólares y una duración de unos 27 minutos. Se entrenó en fp32 y se publicó en bf16.
+El modelo parte de Qwen3-1.7B y conserva su arquitectura transformer densa. El ajuste fino se realiza con `SFTTrainer` (TRL 1.16.0) usando `assistant_only_loss=True`, de modo que la perdida se calcula unicamente sobre los turnos del asistente. Se entrena durante una epoca (63 pasos) con learning rate 1e-5 y schedule coseno, batch size 16 y longitud maxima de 16384 tokens. El entrenamiento se ejecuta en fp32 sobre una A100 de 80 GB mediante Hugging Face Jobs (aproximadamente 27 minutos, 1,10 USD) y los pesos se publican en bf16.
 
-Los datos de entrenamiento consisten en 1.000 partidas de sudoku jugadas por un solutorio, en las que el modelo rellena una celda por llamada a la herramienta `place(row, col, number)` y escribe un razonamiento breve antes de cada movimiento. No se documenta en la información disponible el uso de RLHF, DPO ni ninguna otra etapa de alineación posterior al SFT. La innovación técnica destacable es el formato de interacción: el modelo aprende a alternar razonamiento en lenguaje natural con llamadas a herramienta estructuradas, un patrón reutilizable en otros entornos de agente.
+El dataset de entrenamiento contiene 1.000 partidas de Sudoku jugadas por un solver, en las que el modelo rellena una celda por llamada a la herramienta `place(row, col, number)` y escribe un razonamiento corto antes de cada movimiento. No se menciona RLHF ni DPO en esta fase; el refinamiento por RL (GRPO) se reserva para el modelo posterior del tutorial.
 
 ## Capacidades
 
-- Resolución de sudokus mediante tool calling: rellena una celda por llamada a `place(row, col, number)`.
-- Razonamiento breve antes de cada movimiento (thinking mode activado, con 384 tokens nuevos por movimiento).
-- Formato conversacional compatible con `text-generation-inference` y endpoints.
-- Soporte de tool calling estructurado (función `place` con tres argumentos).
-- Capacidad de continuar una partida multi-turno hasta completar el tablero o declararlo resuelto.
-- No se documentan capacidades de visión, audio, código general ni matemáticas fuera del dominio del sudoku.
-- Capacidades multilingües: no disponibles (el entrenamiento y la evaluación se documentan en inglés).
+- Generacion de texto y razonamiento paso a paso breve antes de cada accion (thinking mode activado en evaluacion, con 384 nuevos tokens por movimiento).
+- Tool calling / function calling: uso de la herramienta `place(row, col, number)` para rellenar celdas del tablero.
+- Razonamiento multi-paso dentro de una partida: secuencia de movimientos hasta completar o abandonar el Sudoku.
+- Generacion conversacional (tag `conversational`).
+- Capacidades multilingues: no disponibles.
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Tutorial reproducible de SFT y GRPO: el modelo sirve como punto de partida documentado para el tutorial de OpenEnv, que entrena después `openenv/Qwen3-1.7B-Sudoku-SFT-GRPO`; es adecuado porque el pipeline completo (script `sft.py`, curvas en Trackio, evaluación con `evaluate.py`) está publicado y es ejecutable en una sola GPU.
-- Investigación en aprendizaje por refuerzo con entornos interactivos: permite estudiar cómo un modelo de 1,7B aprende a usar una herramienta con recompensa verificable (sudoku resuelto o no), sin necesidad de infraestructura grande.
-- Evaluación de tool calling en modelos pequeños: el formato `place(row, col, number)` con una llamada por turno es un banco de pruebas controlado para medir precisión de argumentos y adherencia al esquema.
-- Generación de datos sintéticos de razonamiento paso a paso: las trazas de razonamiento previas a cada movimiento pueden reutilizarse como corpus para otros experimentos de SFT.
-- Docencia y divulgación: ejemplo autocontenido de ajuste fino con TRL, con coste de 1,10 dólares y 27 minutos de cómputo, adecuado para cursos prácticos de IA.
-- Pruebas de regresión de pipelines de despliegue: al ser un modelo pequeño y con salida estructurada, sirve para validar integraciones de TGI, endpoints y parseo de tool calls antes de pasar a modelos mayores.
-- No se recomienda su uso en atención al cliente, generación de código en producción ni tareas generales de lenguaje, por su especialización estrecha.
+- Investigacion en RL aplicado a LLM: sirve como checkpoint inicial para GRPO en el tutorial de OpenEnv, permitiendo comparar la evolucion antes y despues del refinamiento con recompensas verificables.
+- Evaluacion de tool calling estructurado: el modelo ejerce un unico tool con argumentos tipados (`row`, `col`, `number`), lo que lo convierte en un banco de pruebas controlado para medir precision de llamadas y adherencia al esquema.
+- Estudio de razonamiento verificable en tareas con solucion unica: el Sudoku ofrece una senal de exito binaria y comprobable, ideal para analizar fallos de razonamiento (por ejemplo, el error documentado de leer mal una fila o columna y concluir que falta un 0).
+- Docencia y formacion en ajuste fino: el pipeline completo (dataset, script `sft.py`, curvas en Trackio, coste de 1,10 USD) es replicable en una sola GPU A100 y sirve como ejemplo practico de SFT con `assistant_only_loss`.
+- Generacion de datos sinteticos de partidas: el modelo puede producir trayectorias de juego con razonamiento que sirvan como material adicional para entrenamiento o analisis.
+- Benchmark interno de modelos pequenos en razonamiento restringido: comparar Qwen3-1.7B base frente a este SFT en los conjuntos `puzzles_c65.json` y `puzzles_c55.json` ofrece una medida reproducible de la mejora por SFT.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son los de la model card, evaluados con decodificación greedy sobre 30 puzzles por nivel, ninguno presente en las partidas de entrenamiento:
+Resultados publicados en la model card, en modo greedy, sobre los mismos 30 puzzles por nivel, ninguno presente en las partidas de entrenamiento:
 
-| Modelo | 16 celdas vacías: resueltos | Celdas rellenadas | 26 celdas vacías: resueltos | Celdas rellenadas |
+| Modelo | 16 celdas vacias: resueltos | Celdas rellenadas | 26 celdas vacias: resueltos | Celdas rellenadas |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 0/30 | 1,9 % | 0/30 | 0,1 % |
+| Qwen3-1.7B | 0/30 | 1,9 % | 0/30 | 0,1 % |
 | Qwen3-1.7B-Sudoku-SFT | 19/30 | 79,1 % | 10/30 | 55,8 % |
 
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
+El modelo evaluado juega con thinking activado (384 nuevos tokens por movimiento), mientras que el modelo base se evalua sin thinking.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 3,5 GB solo para pesos (1,72B parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, unos 5-6 GB.
-- En cuantización de 8 bits: alrededor de 1,8 GB de pesos; en 4 bits, alrededor de 1 GB (no se documentan cuantizaciones oficiales publicadas).
-- GPU recomendadas: A100 80 GB para entrenamiento (así se entrenó); para inferencia basta una RTX 3090, RTX 4090, L4 o incluso GPUs consumer con 8 GB o más.
-- Cabe en GPU consumer: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y similares.
-- Opciones de despliegue: compatible con `text-generation-inference` (tag `text-generation-inference` y `endpoints_compatible`); también puede servirse con Transformers, vLLM o llama.cpp si se generan pesos GGUF (no publicados en el repo).
-- Latencia y throughput: no disponibles. La evaluación oficial usa 384 tokens nuevos por movimiento con thinking activado.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 1,72 mil millones de parametros, en bf16 los pesos ocupan aproximadamente 3,4 GB, a lo que hay que sumar la cache KV y el contexto.
+- GPU recomendadas: el entrenamiento se realizo en una A100 de 80 GB; para inferencia no se especifican requisitos.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; por tamano, es plausible en GPU consumer con memoria suficiente, pero no se aporta dato oficial.
+- Opciones de despliegue: transformers (libreria indicada), text-generation-inference (tag `text-generation-inference`) y endpoints compatibles (tag `endpoints_compatible`). No se mencionan llama.cpp, Ollama ni vLLM.
+- Latencia y throughput: no disponibles. El script de evaluacion usa 384 nuevos tokens por movimiento con decodificacion greedy.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento en Sudoku (16 vacias) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openenv/Qwen3-1.7B-Sudoku-SFT | 1,72B | no disponible | Sudoku con tool calling (SFT) | no disponible | Hugging Face, 264 descargas |
-| openenv/Qwen3-1.7B-Sudoku-SFT-GRPO | 1,72B (derivado) | no disponible | Sudoku con tool calling tras GRPO | no disponible | Hugging Face |
-| Qwen/Qwen3-1.7B | 1,72B | no disponible | Propósito general | no disponible en esta ficha | Hugging Face |
-
-La comparación con alternativas de propósito general no es significativa: este modelo está diseñado exclusivamente para el dominio del sudoku y su rendimiento en tareas generales no se ha evaluado. Frente a su base Qwen3-1.7B, la mejora en el dominio es sustancial (de 0/30 a 19/30 en puzzles de 16 celdas vacías), pero no se han publicado comparativas con otros modelos especializados en sudoku.
+| Qwen3-1.7B (base) | 1,72 B | no disponible | 0/30 resueltos, 1,9 % celdas | no disponible | Hugging Face |
+| Qwen3-1.7B-Sudoku-SFT | 1,72 B | no disponible | 19/30 resueltos, 79,1 % celdas | no disponible | Hugging Face |
+| Qwen3-1.7B-Sudoku-SFT-GRPO | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Especialización muy estrecha: solo resuelve sudokus mediante la herramienta `place`; no es apto para tareas generales de lenguaje, código o razonamiento.
-- Fallo característico documentado: malinterpreta una fila o columna, concluye que el dígito que falta es 0 y termina la partida declarándola resuelta.
-- Riesgo de alucinación en el razonamiento previo a cada movimiento: el texto puede no corresponder con el estado real del tablero.
-- Licencia no disponible: no se puede confirmar el uso comercial; conviene verificar la licencia del modelo base Qwen3-1.7B antes de cualquier despliegue.
-- Idiomas no documentados; el entrenamiento y la evaluación se describen en inglés.
-- Longitud de contexto efectiva no documentada, aunque el entrenamiento usó 16.384 tokens.
-- No se han publicado evaluaciones de sesgos, seguridad ni robustez.
-- No debe usarse en producción para atención al cliente, generación de código ni agentes generales; su valor es educativo y experimental.
-- El modelo depende de un parser de tool calls correcto; errores en el parseo de `place(row, col, number)` invalidan la partida.
+- Especializacion extrema: el modelo esta ajustado para jugar al Sudoku con una herramienta concreta; su utilidad fuera de esa tarea no esta documentada y probablemente sea limitada.
+- Fallo caracteristico: el error mas comun es leer mal una fila o columna, concluir que el digito faltante es 0 y terminar la partida como resuelta.
+- Alucinacion en el razonamiento: el modelo puede emitir conclusiones incorrectas sobre el estado del tablero, como muestra el fallo anterior.
+- Sesgos conocidos: no disponibles.
+- Limitaciones de contexto e idioma: no disponibles; no se documentan idiomas soportados.
+- Licencia: no disponible; no se puede confirmar el uso comercial sin consultar al autor.
+- Caveat de produccion: al ser un checkpoint intermedio de un tutorial, no esta pensado como modelo de produccion; el modelo posterior del pipeline es el GRPO.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openenv/sudoku-tool-calls-sft
-- Modelo GRPO derivado: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO
-- Tutorial OpenEnv Sudoku GRPO: https://huggingface.co/docs/openenv/tutorials/sudoku-grpo
+- Modelo GRPO resultante: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO
+- Tutorial de GRPO en OpenEnv: https://openenv.github.io/OpenEnv/main/tutorials/sudoku-grpo
+- Scripts de ejemplo (sft.py, evaluate.py, puzzles): https://github.com/openenv/OpenEnv/tree/main/examples/sudoku
 - Curvas de entrenamiento (Trackio): https://huggingface.co/spaces/openenv/sudoku-runs
-- Repositorio OpenEnv (scripts `sft.py` y `evaluate.py`): https://github.com/openenv/OpenEnv/tree/main/examples/sudoku

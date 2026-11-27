@@ -5,7 +5,7 @@
   "author": "IRONVIT",
   "url": "https://huggingface.co/IRONVIT/IronViT-Hybrid-400M",
   "created_at": "2026-11-26T12:16:36.000Z",
-  "updated_at": "2026-11-26T12:20:52.000Z",
+  "updated_at": "2026-11-26T12:52:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

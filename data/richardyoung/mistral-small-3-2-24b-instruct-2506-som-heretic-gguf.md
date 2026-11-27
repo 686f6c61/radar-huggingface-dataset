@@ -2,98 +2,88 @@
 
 ## Resumen
 
-Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic GGUF es una compilación en formato GGUF del modelo abliterado (con los mecanismos de rechazo eliminados) derivado de mistralai/Mistral-Small-3.2-24B-Instruct-2506. Lo publica el investigador Richard J. Young como material para estudiar la eliminación de rechazos (abliteration) en modelos de pesos abiertos. El proceso de abliteración se realizó con Heretic 2.0, una extensión del método Heretic que aplica una ablación multidireccional guiada por mapas autoorganizados (SOM). El modelo resultante responde a muchas peticiones que el original rechaza: según la model card, la tasa de rechazo sobre 972 prompts dañinos reservados cae del 73,6 % al 7,2 % (70 de 972), medido con el juez WildGuard.
+Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic-GGUF es una cuantizacion en formato GGUF de un modelo derivado de Mistral Small 3.2 24B Instruct (version 2506), publicado por el usuario richardyoung en Hugging Face. El modelo base intermedio, richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic, aplica una tecnica de "abliteration" (eliminacion de rechazos o capas de alineacion) sobre el modelo original de Mistral AI, con el objetivo de producir un modelo "uncensored" orientado a investigacion. La variante SOM del nombre alude a una modificacion adicional no documentada en la informacion disponible.
 
-El modelo subyacente es un transformer denso de 23.572.403.200 parámetros (unos 23,6 mil millones), con licencia Apache 2.0 y pesos publicados en safetensors por el autor original. Esta compilación GGUF incluye, de momento, una cuantización Q4_K_M de 14,3 GB y una matriz de importancia (imatrix) de 20 MB; el autor anuncia que añadirá IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0. Solo incluye texto: el modelo base acepta imágenes, pero el proyector de visión no se distribuye en este repositorio.
+El modelo conserva la arquitectura y el tamano del Mistral Small 3.2 original: aproximadamente 23.570 millones de parametros (23,57B), lo que lo situa en la gama de modelos densos de talla media-alta aptos para despliegue en una sola GPU de 80 GB o en configuraciones multi-GPU consumer. Esta version GGUF esta pensada para inferencia con llama.cpp y Ollama, con cuantizaciones generadas mediante imatrix, lo que facilita su ejecucion en hardware local sin necesidad de infraestructura de servidor dedicada.
 
-La relevancia es doble. Por un lado, sirve como banco de pruebas reproducible para investigar hasta qué punto la abliteración degrada el modelo (el autor mide la divergencia KL del primer token respecto al original, fijada en 0,1 para la variante seleccionada). Por otro, permite ejecutar en hardware de consumo un modelo de 24B con los rechazos suprimidos, algo que interesa tanto a investigadores de seguridad como a quienes estudian los límites de los filtros de alineamiento.
+La relevancia de esta ficha radica en su caracter de modelo derivado no oficial: no es un lanzamiento de Mistral AI, sino una modificacion de la comunidad con fines de investigacion sobre alineacion y comportamiento. Su licencia Apache 2.0 heredada del modelo original permite uso comercial segun los terminos de dicha licencia, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Mistral Small 3.2 24B Instruct 2506); detalles internos no disponibles en la información proporcionada |
-| Parámetros totales | 23.572.403.200 (≈23,6B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | Q4_K_M (14,3 GB); anunciadas IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0; imatrix de 20 MB |
-| Idiomas soportados | Inglés (declarado en la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); pesos fuente en safetensors |
+| Arquitectura | Transformer denso (derivado de Mistral Small 3.2) |
+| Parametros totales | 23.572.403.200 (23,57B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | GGUF con imatrix (variantes concretas no detalladas en la informacion disponible) |
+| Idiomas soportados | en (ingles declarado en la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una ablación del Mistral-Small-3.2-24B-Instruct-2506 original. La modificación no consiste en un reentrenamiento, sino en una intervención sobre los pesos: Heretic 2.0 aplica una ablación multidireccional guiada por un mapa autoorganizado (SOM), una variante del método Heretic estándar que busca direcciones de rechazo en el espacio de activaciones y las suprime. La búsqueda se realizó con 100 ensayos y una regla de selección explícita: minimizar los rechazos por palabra clave en el conjunto de desarrollo (100 prompts de ajuste) sujeto a una divergencia KL del primer token respecto al modelo original menor o igual a 0,1. El ensayo seleccionado produjo 18 rechazos por palabra clave en esos 100 prompts.
+El modelo hereda la arquitectura del Mistral Small 3.2 24B Instruct, un transformer denso de aproximadamente 23,57 mil millones de parametros. La informacion disponible no detalla la configuracion interna (numero de capas, dimensiones de atencion, tipo de atencion, uso de sliding window attention u otras innovaciones del modelo original). Tampoco se especifican los datos de entrenamiento del modelo base ni del derivado: numero de tokens, composicion del dataset, fases de RLHF, DPO o similares no estan documentados en la informacion proporcionada.
 
-Los datos de entrenamiento del modelo original (número de tokens, composición del corpus, fases de RLHF/DPO) no se detallan en la información proporcionada. La compilación GGUF se generó con llama.cpp (commit 468fde9): conversión con `convert_hf_to_gguf.py --outtype bf16` y posterior cuantización con `llama-quantize` en CPU. Las cuantizaciones IQ3_M, IQ4_XS, Q4_K_M y Q5_K_M usan una matriz de importancia calculada sobre la build Q8_0 con calibration_datav3 (128 fragmentos de 512 tokens); Q6_K y Q8_0 son estáticas. Cada archivo Q4_K_M se cargó y respondió a un prompt de prueba antes de subirse.
+La modificacion principal respecto al modelo original es la aplicacion de una tecnica de "abliteration" (denominada heretic en el nombre del repositorio), que busca eliminar o reducir los comportamientos de rechazo aprendidos durante el alineamiento. Esta tecnica suele consistir en identificar direcciones en el espacio de activaciones asociadas a la negativa a responder y proyectarlas fuera, aunque los detalles concretos del procedimiento aplicado por richardyoung no se detallan en la informacion disponible. La cuantizacion GGUF se ha realizado con imatrix, un metodo que calibra los factores de cuantizacion usando un dataset de calibracion para preservar mejor la calidad en precisiones reducidas.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo Instruct original.
-- Razonamiento y respuesta a instrucciones con los rechazos suprimidos: responde a muchas peticiones que el modelo original declina.
-- Capacidad de visión no disponible en esta compilación: el proyector de imágenes no se incluye.
-- Soporte de tool calling / function calling: no confirmado en la información proporcionada para esta variante.
-- Soporte de agentes y razonamiento multietapa: no confirmado en la información proporcionada.
-- Multilingüismo: limitado al inglés según la model card, aunque el modelo base de Mistral suele cubrir más idiomas; no hay datos específicos para esta variante.
-- Modo de razonamiento explícito (thinking): no disponible.
+- Generacion de texto conversacional multi-turno, heredada del modelo Instruct original.
+- Razonamiento general y respuesta a instrucciones en ingles.
+- Generacion de codigo y matematicas (capacidades propias de Mistral Small 3.2, no verificadas especificamente en esta variante).
+- Comportamiento "uncensored": el abliteration reduce los rechazos ante peticiones que el modelo original declinaria, orientado a investigacion sobre alineacion y seguridad.
+- Compatibilidad con llama.cpp, Ollama y endpoints compatibles (segun los tags del repositorio).
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible para esta variante concreta.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion disponible.
+- Capacidades multilingues: la model card solo declara ingles; el soporte de otros idiomas del modelo base no se detalla.
+- Vision y audio: no disponibles en esta variante (el modelo es de texto).
 
 ## Casos de uso
 
-- Investigación sobre abliteración: reproducir el experimento del artículo comparando la tasa de rechazo del modelo original (73,6 %) con la de esta variante (7,2 %) sobre el conjunto de 972 prompts dañinos con el juez WildGuard.
-- Evaluación de defensas frente a la eliminación de rechazos: usar el modelo como adversario controlado para probar clasificadores de seguridad, filtros de salida o técnicas de realineamiento.
-- Estudio de degradación por cuantización: comparar el comportamiento de rechazo entre la versión bf16 (evaluada en el artículo) y las cuantizaciones GGUF, que el autor advierte que no fueron evaluadas y pueden alterar la conducta.
-- Despliegue local en hardware de consumo: la Q4_K_M de 14,3 GB cabe en GPU con 16-24 GB de VRAM y permite experimentar con un modelo de 24B sin infraestructura de datacenter.
-- Análisis de sesgos y alucinaciones en modelos sin alineamiento de rechazo: estudiar cómo cambia la distribución de respuestas al eliminar la capa de rechazo, midiendo la divergencia KL del primer token (0,1 en la variante seleccionada).
-- Reproducibilidad de pipelines de cuantización: el repositorio documenta commit de llama.cpp, parámetros de imatrix y sumas SHA-256, lo que sirve como referencia para construir y verificar GGUF propios.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como el abliteration afecta a la tasa de rechazos y a la calidad de las respuestas, comparando con el Mistral Small 3.2 original en experimentos controlados.
+- Evaluacion de robustez de filtros: util para probar sistemas de moderacion y clasificadores de contenido frente a un modelo que responde a peticiones que el original rechazaria, midiendo la eficacia de las capas de seguridad externas.
+- Despliegue local en estaciones de trabajo: gracias al formato GGUF y a las cuantizaciones con imatrix, puede ejecutarse con llama.cpp u Ollama en equipos con GPU consumer de gama alta, sin depender de APIs externas.
+- Generacion de texto creativo sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas que los modelos alineados suelen evitar, siempre con supervision humana y cumplimiento legal.
+- Prototipado rapido de asistentes conversacionales: integracion en aplicaciones de chat mediante endpoints compatibles con la API de OpenAI, aprovechando el formato GGUF para entornos de desarrollo con recursos limitados.
+- Analisis de sesgos y comportamientos emergentes: estudio de como la eliminacion de capas de rechazo afecta a otros comportamientos del modelo (verbosidad, tono, coherencia) en tareas de evaluacion comparativa.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible corresponden al modelo en precisión completa (bf16), no a los archivos GGUF:
-
-| Métrica | Original | Este modelo (bf16) |
-|---|---|---|
-| Rechazo en 972 prompts dañinos reservados (juez WildGuard) | 73,6 % | 7,2 % (70/972) |
-| Rechazos por palabra clave en los 100 prompts de ajuste (ensayo seleccionado) | — | 18 |
-| Divergencia KL del primer token respecto al original (ensayo seleccionado) | — | 0,1 |
-
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la información disponible, ni para el modelo original ni para esta variante. Las cifras de rechazo de las cuantizaciones GGUF no han sido evaluadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 14,3 GB para la Q4_K_M; previsiblemente en torno a 20-22 GB para Q6_K y 24-26 GB para Q8_0 (estimación por tamaño de archivo, no confirmada).
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para Q4_K_M y Q6_K; A100 40/80 GB o H100 para Q8_0 y para el modelo en bf16 (≈47 GB solo en pesos).
-- GPU de consumo: sí, la Q4_K_M cabe en tarjetas de 16 GB con margen ajustado y en 24 GB con holgura; también puede ejecutarse parcialmente en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf`), Ollama (`ollama run richardyoung/mistral-small-3.2-24b-instruct-2506-som-heretic`), y cualquier runtime compatible con GGUF. Compatible con endpoints según los tags del repositorio.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa para un modelo denso de 23,57B en GGUF, las cuantizaciones de 4 bits suelen requerir en torno a 14-16 GB y las de 8 bits en torno a 25-27 GB, aunque estas cifras no estan confirmadas en la informacion proporcionada.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, cabria esperar viabilidad en A100 40/80 GB, H100 y configuraciones multi-GPU consumer, pero no hay datos oficiales.
+- Cabe en GPU consumer: no confirmado; dependeria de la cuantizacion concreta y de la VRAM disponible.
+- Opciones de despliegue: llama.cpp, Ollama y endpoints compatibles (segun los tags del repositorio). vLLM y TGI no estan confirmados para este formato GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rechazo (972 prompts, WildGuard) | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (SOM-heretic, bf16) | 23,6B | No disponible | 7,2 % | Apache 2.0 | GGUF / safetensors |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 (original) | 23,6B | No disponible | 73,6 % | Apache 2.0 | safetensors |
-| richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic (fuente) | 23,6B | No disponible | 7,2 % | Apache 2.0 | safetensors |
-| Otras variantes abliteradas de Mistral Small 3.2 | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic-GGUF (este) | 23,57B | no disponible | apache-2.0 | GGUF | Variante abliterated de comunidad, acceso gated |
+| Mistral Small 3.2 24B Instruct (original) | ~24B | no disponible en esta ficha | apache-2.0 | safetensors | Modelo oficial de Mistral AI, alineado |
+| Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic (base de este) | 23,57B | no disponible | apache-2.0 | safetensors | Version abliterated sin cuantizar |
 
-La comparación con métodos de abliteración alternativos (por ejemplo, Heretic estándar frente a la variante SOM) se aborda en el artículo citado, pero sus cifras no están en la información proporcionada.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer diferencias cuantitativas entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Modelo sin rechazos: responde a peticiones que el original declina; el autor lo publica para investigación, no como asistente de propósito general.
-- Las cuantizaciones GGUF no fueron evaluadas en el artículo y la cuantización puede alterar el comportamiento de rechazo, en cualquier dirección.
-- Solo texto: el proyector de visión del modelo base no está incluido, por lo que no procesa imágenes.
-- Idioma declarado: inglés; el rendimiento en castellano u otros idiomas no está documentado para esta variante.
-- Riesgo de alucinación: no cuantificado en la información disponible; la ablación puede afectar a la calibración, ya que solo se controló la divergencia KL del primer token (0,1).
-- Sesgos: no documentados; al eliminar la capa de rechazo es probable que afloren sesgos del modelo base, pero no hay mediciones publicadas.
-- Licencia Apache 2.0 permite uso comercial, pero el autor restringe la intención de uso a la investigación sobre eliminación de rechazos y defensas; el usuario asume la responsabilidad legal.
-- Longitud de contexto no confirmada para esta variante; conviene verificarla antes de desplegarla en tareas de contexto largo.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria.
+- Modelo derivado no oficial: no ha sido publicado ni validado por Mistral AI; los resultados pueden diferir del modelo original en calidad y coherencia.
+- El abliteration puede degradar capacidades: la eliminacion de capas de rechazo suele afectar negativamente a la coherencia, la utilidad general y la seguridad del modelo.
+- Riesgo elevado de contenido danino: al reducir los rechazos, el modelo puede generar contenido ofensivo, ilegal o peligroso; requiere filtros externos y supervision en cualquier despliegue.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; los modelos de este tamano pueden inventar hechos, y el abliteration podria agravarlo.
+- Idiomas: solo se declara ingles; el rendimiento en castellano no esta verificado.
+- Licencia: Apache 2.0 permite uso comercial segun sus terminos, pero el acceso esta restringido (gated) y el uso de un modelo abliterated conlleva responsabilidad legal y reputacional para el desplegador.
+- Contexto: la longitud de contexto no esta documentada en la informacion disponible; no asumir la del modelo original sin verificacion.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento en esta variante.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic-GGUF
-- Modelo fuente (safetensors abliterado): https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic
-- Modelo original de Mistral: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
-- Artículo citado: Richard J. Young, "Is Abliteration Getting Harder? Refusal Removal from Open-Weight LLMs with Heretic on Qwen3.8, Gemma 4, Olmo 3.1 and Mistral Small 3.2 Versus Their Predecessors" (2026); enlace arXiv pendiente de publicar según la model card.
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
+- Repositorio Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic-GGUF
+- Modelo base (safetensors): https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic
+- Referencia arXiv citada en los tags: arxiv:2611.17846 (paper no verificado en la informacion disponible)
+- Modelo original de Mistral AI: no disponible en la informacion proporcionada

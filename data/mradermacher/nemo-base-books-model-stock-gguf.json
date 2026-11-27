@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/nemo-base-books-model-stock-GGUF",
+  "slug": "mradermacher-nemo-base-books-model-stock-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nemo-base-books-model-stock-GGUF",
+  "created_at": "2025-09-08T14:48:11.000Z",
+  "updated_at": "2026-11-27T02:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Burnt-Toast/nemo-base-books-model-stock",
+    "base_model:quantized:Burnt-Toast/nemo-base-books-model-stock",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692288288,
+  "storage_human": "84.7 GB",
+  "context_length": 131072,
+  "base_model": "Burnt-Toast/nemo-base-books-model-stock",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

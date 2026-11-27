@@ -2,99 +2,102 @@
 
 ## Resumen
 
-fihrIA-ASR-1.7B-GGUF es la distribucion en formato GGUF del modelo de reconocimiento automatico del habla (ASR) fihrIA-ASR-1.7B, desarrollado por fihriaLab. Se trata de un modelo especializado en dariya (arabe marroqui) construido sobre la arquitectura Qwen3-ASR, con 1.591.682.048 parametros (~1,7B) y entrenado con un tokenizer compartido de 89k tokens especifico para dariya. Esta version GGUF esta empaquetada para su uso con llama.cpp a traves de su pila multimodal (`mtmd`), lo que permite ejecutar el modelo en CPU sin GPU.
+fihrIA-ASR-1.7B-GGUF es la versión cuantizada para CPU del modelo de reconocimiento automático del habla (ASR) de 1.700 millones de parámetros desarrollado por fihriaLab, un laboratorio centrado en tecnologías del lenguaje para el árabe marroquí (dariya). El modelo está construido sobre la arquitectura Qwen3-ASR y se distribuye en formato GGUF para su ejecución mediante la pila multimodal (`mtmd`) de llama.cpp, lo que permite transcribir audio sin GPU. Su propósito es cubrir la transcripción de dariya en condiciones reales, incluyendo el cambio de código (code-switching) natural entre dariya, francés e inglés, y la salida directa en escritura árabe nativa.
 
-La relevancia del modelo radica en su especializacion: frente a sistemas ASR genericos, fihrIA-ASR esta disenado para manejar code-switching natural entre dariya, frances e ingles, y produce salida directa en escritura arabe. El autor declara que el 1.7B alcanza un 6,1% de SER medio en su conjunto de evaluacion, superando a Mistral Voxtral Mini 4B (8,4%) y MoulSot 1.7B (11,2%), con un throughput de 243x tiempo real en una H100.
+La relevancia del modelo radica en que la dariya es una variedad de árabe con escasa representación en sistemas ASR comerciales y de código abierto, y en que el autor reporta resultados de estado del arte entre los modelos abiertos para esta lengua: 6,1 % de SER medio en retenido y 6,54 / 9,23 % de CER en DarijaCS (Prism / Probe) con la cuantización Q4_K_M, por delante de Mistral Voxtral Mini 4B (8,4 % SER) y MoulSot 1.7B (11,2 % SER). El modelo emplea un tokenizador compartido de 89.000 tokens específico para dariya y se publica bajo licencia Apache 2.0, lo que facilita su integración en productos.
 
-Esta build concreta es la ruta de CPU del modelo: incluye una cuantizacion Q4_K_M de ~1.000 MB y un proyector de audio `mmproj` en BF16 de 642 MB, con un consumo de RAM estimado de ~2,6 GB a `-c 8192`. Para GPU, el autor remite al repositorio de safetensors en BF16.
+El repositorio ocupa 9,0 GB e incluye tanto la cuantización Q4_K_M como una versión BF16 en GGUF, además del proyector de audio (`mmproj`) en BF16, que es obligatorio y no intercambiable con el del modelo de 0,6B. La versión de 1,7B se posiciona como el techo de precisión de la familia, mientras que la de 0,6B está optimizada para despliegue en CPU de portátil y tiempo real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3-ASR (transformer multimodal con torre de audio y proyector `mmproj`) |
-| Parametros totales | 1.591.682.048 (~1,7B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (ejemplos de despliegue usan `-c 8192`) |
-| Tipos de cuantizacion | Q4_K_M y BF16 (GGUF); el `mmproj` debe mantenerse en BF16 |
-| Idiomas soportados | ar, ary (dariya); code-switching con frances e ingles |
+| Arquitectura | Qwen3-ASR (transformer multimodal con torre de audio y proyector `mmproj`), empaquetada para llama.cpp `mtmd` |
+| Parámetros totales | 1.591.682.048 (1,7B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible como valor nominal; la evaluación y los ejemplos usan `-c 8192` |
+| Tipos de cuantización | Q4_K_M (1.000 MB) y BF16 (3.188 MB); el `mmproj` se mantiene siempre en BF16 |
+| Idiomas soportados | ar (árabe), ary (dariya marroquí); con code-switching a francés e inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp / `mtmd`) |
-| Tamano del repo | 9,0 GB |
-| Tokenizer | 89k tokens compartido para dariya |
+| Formato de pesos | GGUF (llama.cpp); safetensors BF16 en el repositorio base `fihriaLab/fihrIA-ASR-1.7B` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen3-ASR, una arquitectura multimodal que combina un modelo de lenguaje con una torre de audio y un proyector de caracteristicas (`mmproj`). En la distribucion GGUF, el modelo se divide en dos componentes obligatorios: el modelo de lenguaje cuantizado (`fihria-asr-1.7b-Q4_K_M.gguf`, 1.000 MB, o `fihria-asr-1.7b-BF16.gguf`, 3.188 MB) y el proyector de audio (`mmproj-fihria-asr-1.7b-BF16.gguf`, 642 MB). El autor advierte que los proyectores de audio del 0.6B y del 1.7B no son intercambiables y que el `mmproj` debe permanecer en BF16, ya que su cuantizacion no ha sido validada.
+El modelo parte de Qwen3-ASR y se presenta como un sistema multimodal compuesto por dos piezas: el modelo de lenguaje y un proyector de audio (`mmproj`) que transforma las características acústicas en embeddings consumibles por el LLM. En llama.cpp se ejecuta a través de la pila `mtmd`, que gestiona entradas multimodales. La familia se entrenó con un tokenizador compartido de 89.000 tokens específico para dariya y se evaluó bajo un protocolo unificado entre los tamaños de 0,6B y 1,7B.
 
-El entrenamiento se realizo con un tokenizer compartido de 89k tokens especifico para dariya y el modelo se evalua bajo un protocolo unificado de la familia. La informacion proporcionada no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. El modelo esta optimizado para code-switching natural y para generar salida directa en escritura arabe adaptada a las estructuras linguisticas locales.
+La información disponible no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO. Sí se destaca el diseño orientado al cambio de código: el modelo transcribe de forma robusta frases en las que aparecen palabras en francés e inglés insertadas en dariya hablada, y genera la salida directamente en escritura árabe. La evaluación publicada combina métricas automáticas (SER, CER) con un panel de cuatro jueces LLM independientes sobre 508 clips, lo que constituye la innovación metodológica más destacable del lanzamiento.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (ASR) en dariya con salida en escritura arabe nativa.
-- Manejo robusto de code-switching: transcribe frases mixtas con palabras en frances e ingles embebidas en dariya hablado.
-- Formateo y transcripcion directa en escritura arabe optimizada para estructuras linguisticas locales.
-- Procesamiento de audio mediante la pila multimodal `mtmd` de llama.cpp, que combina modelo de lenguaje y proyector de audio.
-- Ejecucion en CPU sin GPU, con soporte para despliegue en portatiles y dispositivos edge.
-- Integracion con `llama-server` mediante un cliente de referencia (`transcribe.py`, solo stdlib) incluido en el repositorio.
-- No se documentan capacidades de tool calling, agentes, vision, audio generativo ni modo de razonamiento extendido en la informacion disponible.
+- Transcripción de voz a texto en dariya marroquí con salida en escritura árabe nativa.
+- Manejo robusto de code-switching dariya-francés-inglés en una misma frase.
+- Procesamiento de audio a 16 kHz mono (el clip de ejemplo `sample.wav` es de 3,11 s a 16 kHz).
+- Funcionamiento en CPU mediante llama.cpp, sin necesidad de GPU.
+- Servicio cliente-servidor mediante `llama-server` y el script `transcribe.py` incluido (solo biblioteca estándar).
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
+- Soporte de dos niveles de precisión: Q4_K_M para CPU y BF16 para máxima calidad.
+- No se documentan capacidades de diálogo conversacional, tool calling ni razonamiento multi-paso; el modelo es específicamente ASR.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y conversaciones en dariya: el modelo procesa audio y genera texto en escritura arabe, adecuado para equipos que trabajan con hablantes de arabe marroqui y necesitan actas o resumenes en texto.
-- Subtitulado de contenido audiovisual marroqui: permite generar subtitulos en dariya escrita para videos, entrevistas o podcasts, incluyendo fragmentos con prestamos del frances y del ingles.
-- Atencion al cliente en centros de contacto: transcripcion de llamadas en dariya para su posterior analisis, categorizacion o cumplimiento normativo, ejecutable en CPU en infraestructura sin GPU.
-- Despliegue en portatiles y dispositivos edge: con ~2,6 GB de RAM a `-c 8192` y una cuantizacion Q4_K_M, el modelo puede ejecutarse en portatiles estandar, lo que facilita su uso en campo o en entornos con recursos limitados.
-- Investigacion linguistica sobre dariya: generacion de transcripciones para corpus de habla marroqui, con soporte para code-switching, util para estudios sociolinguisticos y de variacion.
-- Procesamiento por lotes en servidores CPU: el autor reporta 5,98x tiempo real en CPU de portatil con Q4 para el 0.6B; el 1.7B esta orientado a maxima precision, por lo que encaja en pipelines de transcripcion donde la exactitud prima sobre la latencia.
-- Integracion en aplicaciones de accesibilidad: conversion de voz a texto en dariya para personas con discapacidad auditiva, con salida en escritura arabe nativa.
+- Transcripción de atención al cliente en dariya: el modelo convierte grabaciones de llamadas de soporte en texto en árabe, incluyendo las palabras en francés que los clientes intercalan de forma habitual en sectores como banca o telecomunicaciones, lo que evita perder información en el cambio de código.
+- Subtitulado de contenido audiovisual marroquí: series, entrevistas y vídeos de redes sociales donde los hablantes alternan dariya y francés; la salida en escritura árabe simplifica la publicación de subtítulos.
+- Despliegue en edge y portátiles: con la cuantización Q4_K_M y el `mmproj` el conjunto ocupa unos 1.642 MB y requiere aproximadamente 2,6 GB de RAM con `-c 8192`, por lo que puede ejecutarse en un portátil estándar sin GPU.
+- Procesamiento por lotes en servidor: con la versión BF16 en safetensors y vLLM se puede aplicar batching para transcribir grandes volúmenes de audio; el autor reporta 243× tiempo real en una H100 con la variante Q4.
+- Investigación lingüística sobre dariya: el tokenizador de 89.000 tokens y las métricas publicadas (SER y CER sobre DarijaCS) permiten usar el modelo como referencia en estudios de ASR de variedades árabes poco representadas.
+- Integración en pipelines de accesibilidad: transcripción en tiempo casi real de conversaciones presenciales o reuniones en dariya mediante `llama-server` y el cliente `transcribe.py`, sin dependencia de servicios en la nube.
+- Generación de corpus anotados: transcripción masiva de archivos de audio para construir datasets etiquetados de dariya con escritura árabe, reutilizables para ajuste fino de otros modelos.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor para las builds Q4_K_M:
+Resultados publicados por el autor con la cuantización Q4_K_M (menor es mejor en SER y CER; mayor es mejor en throughput):
 
-| Metrica | fihrIA-ASR 0.6B | fihrIA-ASR 1.7B | Mistral Voxtral Mini 4B | MoulSot 1.7B |
+| Métrica | fihrIA-ASR 0.6B | fihrIA-ASR 1.7B | Mistral Voxtral Mini 4B | MoulSot 1.7B |
 |---|---|---|---|---|
-| SER medio en held-out ↓ | 7,1% | 6,1% | 8,4% | 11,2% |
-| DarijaCS CER ↓ (Prism / Probe, Q4) | 7,98 / 9,84% | 6,54 / 9,23% | 6,68 / 9,69% | 10,27 / 14,93% |
-| Throughput en H100 ↑ | 255x tiempo real | 243x tiempo real | 34x | 147x |
-| CPU de portatil, Q4 ↑ | 5,98x | no disponible | no disponible | 3,06x |
+| SER medio en retenido ↓ | 7,1 % | 6,1 % | 8,4 % | 11,2 % |
+| DarijaCS CER ↓ (Prism / Probe, Q4) | 7,98 / 9,84 % | 6,54 / 9,23 % | 6,68 / 9,69 % | 10,27 / 14,93 % |
+| Throughput en H100 ↑ | 255× tiempo real | 243× tiempo real | 34× | 147× |
+| CPU de portátil, Q4 ↑ | 5,98× | no disponible | no disponible | 3,06× |
 | Huella, BF16 / Q4 | 1.447 / 721 MB | 3.830 / 1.642 MB | no disponible | no disponible |
 
-Los repositorios de safetensors reportan CER en BF16 (0.6B: 7,98 / 9,80%; 1.7B: 6,24 / 8,71%). Las cifras de la tabla son las de Q4 y son las que deben compararse al desplegar Q4. Los numeros held-out son la media de cuatro jueces LLM independientes sobre 508 clips. Las cifras de DarijaCS de Voxtral son las publicadas por Mistral; el resto son reruns del autor sobre los mismos clips. Menor es mejor para SER y CER; mayor es mejor para throughput.
+En safetensors BF16 el autor reporta CER de 7,98 / 9,80 % (0,6B) y 6,24 / 8,71 % (1,7B). El SER en retenido es la media de cuatro jueces LLM independientes sobre 508 clips; las cifras de DarijaCS de Voxtral son las publicadas por Mistral y el resto son reruns del autor sobre los mismos clips.
 
 ## Requisitos de hardware
 
-- RAM estimada: ~2,6 GB a `-c 8192` para Q4_K_M (incluye ~900 MB de cache KV); ~4,7 GB para BF16 GGUF a `-c 8192`. Reducir `-c` disminuye el consumo.
-- Ficheros en disco: Q4_K_M 1.000 MB + mmproj 642 MB; BF16 GGUF 3.188 MB + mmproj 642 MB.
-- GPU: el autor remite al repositorio de safetensors BF16 para GPU NVIDIA, con backend `qwen-asr`/transformers o vLLM para alto throughput con batching. No se proporcionan requisitos de VRAM especificos para GPU en la informacion disponible.
-- Cabe en CPU de portatil y dispositivos edge; no requiere GPU.
-- Despliegue: llama.cpp build 9199 (`39cf5d619`, 2026-05-17) o superior, con `llama-server` y `llama-mtmd-cli`. Versiones anteriores cargan los ficheros sin error pero producen salida fluida con palabras silenciosamente incorrectas.
-- Throughput: 243x tiempo real en una H100 (Q4) y 5,98x en CPU de portatil para el 0.6B Q4; el dato de CPU para el 1.7B no esta disponible.
+- VRAM: no aplica para la ruta GGUF; es una build orientada a CPU. Para GPU se recomienda el repositorio BF16 en safetensors.
+- RAM en CPU: aproximadamente 2,6 GB con Q4_K_M y `-c 8192` (incluye unos 900 MB de caché KV); aproximadamente 4,7 GB con BF16 GGUF.
+- Ficheros en disco: 1.000 MB (Q4_K_M) + 642 MB (`mmproj` BF16); 3.188 MB (BF16) + 642 MB (`mmproj`).
+- GPU recomendadas: H100 para alto throughput con la ruta safetensors y vLLM (243× tiempo real reportado con Q4); no se especifican requisitos para GPUs de consumo.
+- GPU de consumo: no se documenta soporte ni cifras para RTX 4090 u otras; la vía prevista para consumer es CPU con llama.cpp.
+- Despliegue: llama.cpp build 9199 (`39cf5d619`, 2026-05-17) o superior, obligatoriamente; versiones anteriores cargan los ficheros sin error pero producen palabras silenciosamente incorrectas. También `llama-server` con `transcribe.py`, y vLLM o el backend `qwen-asr`/transformers para la ruta GPU.
+- Latencia y throughput: 5,98× tiempo real en CPU de portátil con la variante 0,6B Q4; para el 1,7B en CPU no se publica cifra. En H100, 243× tiempo real con Q4.
+- Restricción importante: el `mmproj` debe mantenerse en BF16 y debe ser el del mismo tamaño; los proyectores de 0,6B y 1,7B no son intercambiables.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | SER medio ↓ | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | SER retenido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fihrIA-ASR 1.7B | ~1,7B | no disponible | 6,1% | Apache 2.0 | safetensors y GGUF |
-| Mistral Voxtral Mini 4B | 4B | no disponible | 8,4% | no disponible | no disponible |
-| MoulSot 1.7B | 1,7B | no disponible | 11,2% | no disponible | no disponible |
-| fihrIA-ASR 0.6B | ~0,6B | no disponible | 7,1% | Apache 2.0 | safetensors y GGUF |
+| fihrIA-ASR-1.7B | 1,7B | no disponible (uso con `-c 8192`) | 6,1 % | Apache 2.0 | GGUF y safetensors en Hugging Face |
+| fihrIA-ASR-0.6B | 0,6B | no disponible | 7,1 % | Apache 2.0 | GGUF y safetensors en Hugging Face |
+| Mistral Voxtral Mini 4B | 4B | no disponible | 8,4 % | no disponible en la información proporcionada | no disponible en la información proporcionada |
+| MoulSot 1.7B | 1,7B | no disponible | 11,2 % | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- El modelo esta especializado en dariya y arabe; no se documenta soporte para otros idiomas fuera del code-switching con frances e ingles.
-- Riesgo de alucinacion y de transcripciones fluidas pero incorrectas si se usa una build de llama.cpp anterior a 9199; el autor advierte explicitamente de este fallo silencioso.
-- El `mmproj` debe ser el correspondiente al 1.7B y mantenerse en BF16; mezclar proyectores o cuantizarlo no esta validado.
-- No se detallan sesgos conocidos ni limitaciones de contexto en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no documenta garantias ni validacion fuera de su protocolo de evaluacion.
-- Los benchmarks son autodeclarados por el autor, con jueces LLM y reruns propios; las cifras de Voxtral provienen de su publicacion original.
-- El rendimiento en CPU para el 1.7B no esta cuantificado; el dato de 5,98x corresponde al 0.6B.
+- Ámbito lingüístico restringido: el modelo está especializado en dariya (ary) y árabe (ar); no se documenta rendimiento en otras lenguas ni en árabe estándar moderno.
+- Riesgo de alucinación y de errores silenciosos: con builds de llama.cpp anteriores a la 9199 el modelo produce texto fluido pero con palabras incorrectas sin avisar; es imprescindible fijar la versión mínima.
+- Dependencia del proyector de audio: usar un `mmproj` de otro tamaño o cuantizarlo degrada la calidad; el autor no ha validado encoders de audio cuantizados.
+- Sesgos: no se documentan análisis de sesgos por género, dialecto regional o edad; al tratarse de un modelo entrenado sobre dariya, es previsible una menor cobertura de variedades regionales o de habla no nativa, aunque no se aportan datos.
+- Evaluación limitada: las cifras de SER se basan en 508 clips juzgados por LLM, no en transcripción humana exhaustiva; la comparación con Voxtral mezcla cifras propias y publicadas por terceros.
+- Sin datos de entrenamiento publicados: se desconoce el volumen y la composición del corpus, lo que dificulta evaluar cobertura y posibles contaminaciones.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni documenta limitaciones de responsabilidad adicionales.
+- No apto para tareas de diálogo: es un modelo ASR; no debe esperarse razonamiento, tool calling ni generación de texto libre.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/fihriaLab/fihrIA-ASR-1.7B-GGUF
-- Modelo base (safetensors): https://huggingface.co/fihriaLab/fihrIA-ASR-1.7B
-- Repositorio 0.6B (safetensors): https://huggingface.co/fihriaLab/fihrIA-ASR-0.6B
-- Repositorio 0.6B (GGUF): https://huggingface.co/fihriaLab/fihrIA-ASR-0.6B-GGUF
+- Modelo base en safetensors: https://huggingface.co/fihriaLab/fihrIA-ASR-1.7B
+- Modelo 0.6B en safetensors: https://huggingface.co/fihriaLab/fihrIA-ASR-0.6B
+- Modelo 0.6B en GGUF: https://huggingface.co/fihriaLab/fihrIA-ASR-0.6B-GGUF
+- Demo en Space: https://huggingface.co/spaces/fihria/fihrIA-ASR-Demo
 - llama.cpp: https://github.com/ggml-org/llama.cpp

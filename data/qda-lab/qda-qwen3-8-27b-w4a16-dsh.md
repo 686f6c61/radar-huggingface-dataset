@@ -2,56 +2,57 @@
 
 ## Resumen
 
-QDA-Qwen3.8-27B-W4A16-dsh es una cuantizacion de 4 bits de los pesos del modelo multimodal Qwen/Qwen3.8-27B, desarrollada por qda-lab. Se trata de una variante de la receta W4A16 (pesos de 4 bits, activaciones de 16 bits) obtenida mediante el mismo proceso de busqueda automatizada de QDA que la version QDA-Qwen3.8-27B-W4A16, pero empleando un backend de agente de busqueda distinto, denominado `dsh`. El modelo base es un transformer multimodal de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) orientado a tareas de image-text-to-text.
+QDA-Qwen3.8-27B-W4A16-dsh es una cuantización de 4 bits de los pesos del modelo multimodal Qwen/Qwen3.8-27B, publicada por qda-lab. El modelo conserva la arquitectura y el pipeline originales (image-text-to-text, familia `qwen3_5`) pero reduce cada peso a un entero de 4 bits en grupos de 128, con activaciones en 16 bits (esquema W4A16), lo que rebaja el repositorio a 19,6 GB frente a los aproximadamente 55 GB que ocuparían los pesos en BF16 para 27.781.427.952 parámetros.
 
-El interes de esta ficha radica en que demuestra que una cuantizacion agresiva a 4 bits puede no solo preservar sino mejorar ligeramente las metricas del modelo en BF16 en varios benchmarks de razonamiento, matematicas e instrucciones, segun los datos publicados por el autor. La receta combina GPTQ con rotacion de Hadamard integrada en los pesos y una ponderacion de los tokens de calibracion basada en la traza de Fisher, lo que elimina la necesidad de transformaciones en tiempo de inferencia.
+La particularidad de esta variante es que la receta de cuantización no la eligió un humano, sino un proceso de búsqueda automatizada de QDA (el backend `dsh`), que optimiza la asignación de precisión y los parámetros de GPTQ. Según la model card, el resultado iguala o supera ligeramente al modelo base en BF16 en la media de seis benchmarks de razonamiento, matemáticas e instrucciones, con un promedio de 81,2 frente a 80,2.
 
-El modelo se distribuye bajo licencia Apache-2.0, en formato safetensors con metadatos de compressed-tensors, y cuenta con soporte explicito para vLLM y SGLang. El repositorio ocupa 19,6 GB. No se dispone de informacion sobre idiomas soportados ni sobre la longitud de contexto en la informacion proporcionada.
+Es relevante ahora porque permite desplegar un modelo de 27B con capacidades de razonamiento en modo thinking y entrada de imagen en una sola GPU de 24-48 GB, usando vLLM o SGLang con kernels de cuantización comprimida (`compressed-tensors`), sin renunciar de forma apreciable a la calidad del original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), derivada de Qwen3.8; detalles internos no disponibles |
+| Arquitectura | Transformer multimodal (familia `qwen3_5`, pipeline image-text-to-text); detalles internos no disponibles |
 | Parametros totales | 27.781.427.952 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A16 (pesos INT4 en grupos de 128, activaciones de 16 bits) |
+| Tipos de cuantizacion | W4A16: pesos INT4 en grupos de 128, activaciones de 16 bits, GPTQ sobre copia rotada con Hadamard |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con compressed-tensors |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers, vLLM y SGLang |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion del Qwen/Qwen3.8-27B, un transformer multimodal de aproximadamente 27,8 mil millones de parametros. La cuantizacion aplica GPTQ sobre una copia del modelo rotada con Hadamard: los pesos se almacenan como enteros de 4 bits agrupados en bloques de 128, mientras que las activaciones permanecen en 16 bits. La rotacion se pliega dentro de los propios pesos, de modo que no hay transformacion adicional en tiempo de ejecucion.
+El modelo es una cuantización, no un entrenamiento desde cero: parte de la revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` de Qwen/Qwen3.8-27B. Los pesos se convierten a enteros de 4 bits en grupos de 128 mediante GPTQ aplicado sobre una copia del modelo rotada con Hadamard; la rotación se pliega dentro de los propios pesos, de modo que en inferencia no hay transformación en tiempo de ejecución. GPTQ pondera cada token de calibración con una puntuación de traza de Fisher (la incertidumbre del modelo original sobre las siguientes 16 posiciones, con suelo en un cuarto de la media).
 
-El proceso de calibracion utiliza 400 muestras de 2.048 tokens, compuestas por dos ficheros publicos. El primero, `own-answers-768.jsonl`, contiene 768 prompts del dataset qda-lab/qda-calibration-pools (configuracion `reasoning`) junto con las respuestas generadas por el modelo base mediante vLLM con temperatura 1.0, top-k 20, top-p 0.95, semilla 17 y un maximo de 4.096 tokens nuevos. El segundo, `d1-filtered.jsonl`, parte de la configuracion `d1` (2.048 filas) y elimina 37 filas por solapamiento con conjuntos de evaluacion, conservando el resto byte a byte. Cada token de calibracion se pondera mediante una puntuacion de traza de Fisher basada en la incertidumbre del modelo original sobre las siguientes 16 posiciones, con un suelo de un cuarto de la media. La receta fue seleccionada por el buscador automatizado de QDA y es reproducible con la libreria QDA 0.2.0 o superior.
+La calibración usa 400 muestras de 2.048 tokens mezcladas de dos ficheros públicos: `own-answers-768.jsonl` (768 prompts del dataset qda-calibration-pools, config `reasoning`, con las respuestas del propio modelo base generadas con vLLM a temperatura 1,0, top-k 20, top-p 0,95, semilla 17 y hasta 4.096 tokens nuevos) y `d1-filtered.jsonl` (2.011 filas de la config `d1` tras eliminar 37 por solapamiento con conjuntos de evaluación). La receta concreta la seleccionó la búsqueda automática de QDA 0.1.0, y el repositorio `qda-lab/qda-recipe-inputs` permite reproducirla con `qda build`.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo thinking, con resultados destacados en benchmarks de matematicas competitivas (AIME 2025, HMMT Feb 2026) y de conocimiento cientifico (GPQA-Diamond).
-- Procesamiento de imagen y texto (pipeline image-text-to-text), heredado del modelo base Qwen3.8-27B.
-- Generacion de codigo, evaluada mediante LiveCodeBench.
-- Seguimiento de instrucciones, medido con IFBench.
-- Conocimiento general y razonamiento multidisciplinar, medido con MMLU-Pro.
-- Compatibilidad con vLLM y SGLang para despliegue en produccion.
-- Soporte de tool calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno con plantilla de chat de Qwen.
+- Razonamiento en modo thinking, con cierre explícito en `` y control mediante `chat_template_kwargs` (`reasoning_effort`, p. ej. `"medium"`).
+- Razonamiento matemático de competición (evaluado en AIME 2025 y HMMT Feb 2026).
+- Razonamiento científico de nivel experto (GPQA-Diamond).
+- Generación de código (LiveCodeBench) y seguimiento de instrucciones complejas (IFBench).
+- Conocimiento general y multidisciplinar (MMLU-Pro).
+- Entrada de imagen junto a texto (pipeline image-text-to-text), heredada del modelo base.
+- Compatibilidad declarada con vLLM y SGLang mediante kernels de cuantización comprimida.
+- Soporte de decodificación especulativa MTP en el modelo base (desactivada en la evaluación).
+- Tool calling y capacidades de agente: no confirmadas explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: el modelo obtiene 90,8 en AIME 2025 y 76,2 en HMMT Feb 2026 en modo thinking, por lo que es adecuado para tutoria de matematicas competitivas, verificacion de demostraciones y generacion de problemas resueltos paso a paso.
-- Analisis de documentos cientificos con imagenes: al ser un modelo image-text-to-text, puede procesar figuras, tablas y graficos junto con el texto de articulos o informes tecnicos, extrayendo conclusiones y contrastando datos.
-- Evaluacion de conocimiento experto: con 82,4 en GPQA-Diamond, sirve para responder preguntas de nivel doctoral en fisica, quimica y biologia, util en herramientas de formacion interna o asistencia a investigadores.
-- Generacion de codigo en pipelines de desarrollo: con 86,5 en LiveCodeBench, puede integrarse en entornos de revision de codigo, generacion de tests y autocompletado avanzado, desplegado mediante vLLM o SGLang.
-- Sistemas de instrucciones complejas: su 68,4 en IFBench lo hace apto para agentes que deben seguir especificaciones largas y restricciones de formato, como generacion de informes estructurados o extraccion de datos con esquemas estrictos.
-- Despliegue con restricciones de memoria: al ocupar 19,6 GB en pesos INT4, permite servir un modelo de casi 28 mil millones de parametros en GPUs de 24 GB o en configuraciones multi-GPU mas modestas que las requeridas por el modelo en BF16.
-- Reproducibilidad de recetas de cuantizacion: investigadores pueden reconstruir el modelo con la libreria QDA 0.2.0 y los ficheros de `qda-recipe-inputs`, lo que facilita auditar el proceso y adaptarlo a otros modelos.
+- Razonamiento matemático asistido: el modelo resuelve problemas de competición (90,8 en AIME 2025 en modo thinking) y puede usarse como motor de verificación o generación de soluciones paso a paso en plataformas educativas, con la ventaja de caber en una GPU de 24 GB.
+- Análisis de documentos técnicos con imagen: al aceptar entrada image-text-to-text, permite extraer y razonar sobre diagramas, tablas escaneadas o capturas junto a texto explicativo en un mismo prompt.
+- Generación y revisión de código: con 86,5 en LiveCodeBench, es adecuado para asistentes de programación integrados en IDE o pipelines de revisión, desplegado con vLLM para servir múltiples peticiones concurrentes.
+- Evaluación científica automatizada: su rendimiento en GPQA-Diamond (82,4) lo hace útil como modelo de referencia para preguntas de nivel posgrado en dominios STEM, por ejemplo en la validación de bancos de preguntas.
+- Despliegue en infraestructura limitada: al ocupar 19,6 GB en INT4, permite servir un modelo de 27B en una RTX 4090 o A6000 con vLLM, reduciendo el coste frente a alternativas en BF16 que exigen 80 GB.
+- Seguimiento estricto de instrucciones en producción: con 68,4 en IFBench, encaja en tareas de formateo de salida, extracción estructurada y transformación de datos donde el cumplimiento del formato es crítico.
+- Reproducción de investigación en cuantización: la receta y los ficheros de calibración publicados permiten replicar el proceso con QDA 0.1.0 y comparar variantes de búsqueda (`dsh` frente a la receta estándar).
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card, en modo thinking y pass@1 promediado sobre 1 a 32 semillas:
+Resultados en modo thinking, pass@1 promediado sobre 1-32 semillas, con temperatura 1,0, top-p 0,95, top-k 20 y `reasoning_effort: "medium"`:
 
 | Benchmark | BF16 | QDA W4A16 | QDA W4A16-dsh |
 |---|---|---|---|
@@ -61,44 +62,45 @@ Datos publicados por el autor en la model card, en modo thinking y pass@1 promed
 | IFBench | 67,7 | 67,6 | 68,4 |
 | MMLU-Pro | 83,7 | 82,8 | 83,2 |
 | LiveCodeBench | 85,8 | 86,9 | 86,5 |
-| Promedio | 80,2 | 80,6 | 81,2 |
+| Media | 80,2 | 80,6 | 81,2 |
 
-El autor indica que las diferencias entre las dos columnas QDA estan dentro del ruido entre ejecuciones y que una comparacion por pares de preguntas no resuelve diferencias significativas. La columna BF16 procede de la model card de QDA-Qwen3.8-27B-W4A16.
+El autor indica que las diferencias entre las dos columnas QDA están dentro del ruido entre ejecuciones. Configuración de evaluación: hasta 81.920 tokens nuevos en AIME 2025, HMMT Feb 2026 y LiveCodeBench, y 32.768 en GPQA-Diamond, IFBench y MMLU-Pro; 32 repeticiones (semillas 17-48) en AIME y HMMT, 16 (semillas 17-32) en GPQA e IFBench, 4 (semillas 17-20) en LiveCodeBench y 1 (semilla 17) en MMLU-Pro; decodificación especulativa MTP desactivada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 19,6 GB en pesos INT4, por lo que se necesita al menos esa cantidad mas el espacio para cache KV y overhead del runtime; el total depende de la longitud de contexto, que no esta disponible.
-- GPU recomendadas: no disponible en la informacion proporcionada; por tamano de pesos, una GPU de 24 GB (por ejemplo, RTX 4090 o A10G) podria alojar los pesos, aunque el margen para cache KV es limitado.
-- Cabe en consumer GPU: probablemente en GPUs de 24 GB o superiores con contexto corto; no confirmado por el autor.
-- Opciones de despliegue: vLLM (`vllm serve qda-lab/QDA-Qwen3.8-27B-W4A16-dsh`) y SGLang (`python -m sglang.launch_server --model-path qda-lab/QDA-Qwen3.8-27B-W4A16-dsh`).
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada: unos 19,6 GB solo para pesos; con caché KV y overhead de runtime, el consumo práctico parte de aproximadamente 22-24 GB para contextos cortos y crece con la longitud de contexto (no se publica la ventana máxima).
+- GPU recomendadas: H100 y H200 (el autor documenta explícitamente su uso y una incidencia del kernel Machete con CUDA 13), además de A100 80 GB para servir con concurrencia alta.
+- Consumer GPU: cabe en RTX 4090 (24 GB) y en RTX A6000 (48 GB); en GPUs de 24 GB el margen para contexto largo y lotes concurrentes es limitado.
+- Despliegue: vLLM (`VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3.8-27B-W4A16-dsh`) y SGLang (`python -m sglang.launch_server --model-path ...`). En H100/H200 sin toolkit CUDA 13 en la máquina hay que añadir las librerías NVIDIA del entorno virtual a `LD_LIBRARY_PATH` para evitar el fallo `failed to open libnvrtc-builtins.so.13.0`.
+- Latencia y throughput: no disponibles; dependen del hardware y de la longitud de generación (la evaluación usa hasta 81.920 tokens nuevos por ítem en modo thinking, lo que implica generaciones largas).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QDA-Qwen3.8-27B-W4A16-dsh | 27,78 B | no disponible | W4A16 (INT4) | Apache-2.0 | Hugging Face |
-| QDA-Qwen3.8-27B-W4A16 | 27,78 B | no disponible | W4A16 (INT4) | Apache-2.0 | Hugging Face |
-| Qwen/Qwen3.8-27B (BF16) | 27,78 B | no disponible | BF16 | Apache-2.0 | Hugging Face |
+| QDA-Qwen3.8-27B-W4A16-dsh | 27,8B | no disponible | INT4 W4A16 | Apache-2.0 | Hugging Face (qda-lab) |
+| Qwen/Qwen3.8-27B (base) | 27,8B | no disponible | BF16 | Apache-2.0 | Hugging Face (Qwen) |
+| QDA-Qwen3.8-27B-W4A16 | 27,8B | no disponible | INT4 W4A16 | Apache-2.0 | Hugging Face (qda-lab) |
 
-Las tres variantes comparten arquitectura, parametros y licencia. La diferencia entre las dos cuantizaciones QDA es el backend de busqueda de la receta (`dsh` frente al original), con resultados practicamente equivalentes segun el propio autor. No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
+La comparación con modelos de otros fabricantes del mismo tamaño no está disponible en la información proporcionada. Frente al base en BF16, esta variante reduce el peso del repositorio de aproximadamente 55 GB a 19,6 GB y mantiene una media de benchmarks de 81,2 frente a 80,2. Frente a la variante W4A16 estándar, las diferencias quedan dentro del ruido de ejecución.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 4 bits puede degradar tareas no cubiertas por los benchmarks publicados; el autor solo reporta seis metricas.
-- Las mejoras frente a BF16 en algunos benchmarks estan dentro del ruido estadistico segun el propio autor; no deben interpretarse como una mejora real de capacidad.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero es un riesgo inherente a los modelos generativos de este tamano.
-- Idiomas soportados: no disponible; no se puede garantizar un rendimiento multilingue sin datos.
-- Longitud de contexto: no disponible; esto limita la planificacion de despliegues con conversaciones largas o documentos extensos.
-- Licencia: Apache-2.0 para los pesos, pero los ficheros de calibracion tienen licencias propias; en particular, `d1-filtered.jsonl` es CC BY-NC-SA 4.0, lo que afecta a la reutilizacion de los datos de calibracion, no a los pesos.
-- Los prompts de calibracion provienen de NuminaMath-CoT (Apache-2.0), code_contests (CC BY 4.0) y ARC (CC BY-SA 4.0); conviene revisar sus condiciones si se redistribuyen los datos.
-- El modelo se publico con 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de los resultados reportados.
-- La cita del modelo figura como "TBD" en la model card.
+- La cuantización introduce una pérdida mínima pero real: MMLU-Pro baja de 83,7 (BF16) a 83,2 y LiveCodeBench de 86,9 (W4A16) a 86,5; no debe asumirse equivalencia exacta con el modelo original en todos los dominios.
+- El autor advierte que las diferencias entre las dos variantes QDA están dentro del ruido entre ejecuciones; no deben interpretarse como mejoras sistemáticas.
+- Sesgos conocidos: no documentados en la información disponible; al heredar el modelo base, arrastra los sesgos de sus datos de entrenamiento.
+- Riesgo de alucinación: no cuantificado en la model card; el modo thinking con hasta 81.920 tokens de generación puede producir cadenas de razonamiento largas que no garantizan corrección.
+- Idiomas soportados y longitud de contexto: no disponibles, lo que impide confirmar el comportamiento multilingüe o en contextos largos.
+- Requisito operativo específico: en H100/H200 sin CUDA 13 hay que configurar `LD_LIBRARY_PATH`; además, el kernel Machete debe desactivarse en vLLM.
+- Licencia del modelo Apache-2.0, pero los ficheros de calibración conservan sus propias licencias: `d1-filtered.jsonl` es CC BY-NC-SA 4.0 (no comercial) y los prompts de `own-answers-768.jsonl` provienen de NuminaMath-CoT (Apache-2.0), code_contests (CC BY 4.0) y ARC (CC BY-SA 4.0). Esto afecta a la reproducción de la receta, no al uso de los pesos.
+- Reproducir la receta exige QDA 0.1.0, Linux, una GPU NVIDIA y `uv`; no es un proceso portable a otros entornos sin adaptación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A16-dsh
+- Variante W4A16 estándar: https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Variante W4A16 original: https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A16
-- Dataset de calibracion: https://huggingface.co/datasets/qda-lab/qda-calibration-pools
+- Dataset de calibración: https://huggingface.co/datasets/qda-lab/qda-calibration-pools
 - Receta e inputs reproducibles: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-Qwen3.8-27B-W4A16-dsh
+- Repositorio QDA: https://github.com/humanfia/qda
+- Paper referenciado (arXiv:2611.23388): https://arxiv.org/abs/2611.23388

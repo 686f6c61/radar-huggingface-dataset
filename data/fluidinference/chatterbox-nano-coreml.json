@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "THERSA | Groupe Tradeco",
-      "url": "https://thersa.be/",
-      "snippet": "Thersa dispose d’une expertise reconnue en matière de techniques spéciales dans les domaines suivants: chauffage, sanitaire, …"
-    },
-    {
-      "title": "Thersa : votre installateur de chauffage dans la région de Mouscron ...",
-      "url": "https://www.bativox.be/fr/chauffagiste-installateur-chauffage/mouscron/7700/thersa/677/",
-      "snippet": "Contactez Thersa à Mouscron (code postal 7700) pour des travaux en chauffage."
-    },
-    {
-      "title": "THERSA à Mouscron, Chauffage domestique - matériel et ... - europages",
-      "url": "https://www.europages.fr/THERSA/BEL077961-00101.html",
-      "snippet": "THERSA est une entreprise spécialisée dans les **installations sanitaires** et les solutions de **chauffage domestique - matériel et …"
-    },
-    {
-      "title": "Accueil | Therma",
-      "url": "https://www.therma.be/index.php/fr",
-      "snippet": "Therma est un fabricant belge actif dans la protection de terrasse et contre le vent. Les pare-vent et toitures de terrasse de Therma …"
-    },
-    {
-      "title": "Home | Therma",
-      "url": "https://www.therma.be/",
-      "snippet": "Therma is een Belgische fabrikant actief in terras- en windbescherming. De windschermen, glazen schuifwanden en overkappingen …"
-    }
-  ]
+  "sources": []
 }

@@ -49,5 +49,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - pipecat-ai/pipecat: Open Source framework for voice agents ...",
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "snippet": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Build a single voice …"
+    },
+    {
+      "title": "GitHub - pipecat-ai/pipecat-examples: Pipecat example applications.",
+      "url": "https://github.com/pipecat-ai/pipecat-examples",
+      "snippet": "A collection of example applications built with Pipecat, an open-source framework for building voice and multimodal AI applications."
+    }
+  ]
 }

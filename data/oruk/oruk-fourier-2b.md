@@ -1,110 +1,110 @@
 # oruk/oruk-fourier-2b
 
 ## Resumen
-oruk-fourier-2b es un modelo de reconocimiento automatico del habla (ASR) en ingles desarrollado por Oruk, un proveedor de APIs de voz (STT, tono y agentes de voz). Se distribuye bajo licencia CC BY-NC 4.0 en formato nativo de `transformers` mediante la clase `Qwen3ASRForConditionalGeneration`, y deriva del modelo base Qwen/Qwen3-ASR-1.7B, con un ajuste posterior sobre Musci-research/Musci-ASR-qwen-1019-hf.
 
-El modelo cuenta con 2.038.052.480 parametros (aproximadamente 2,04 mil millones) y esta especializado en transcripcion de audio corto en ingles (hasta 30 segundos por clip). Su relevancia actual radica en que ofrece pesos abiertos en multiples formatos de despliegue (safetensors BF16, GGUF Q8_0 para llama.cpp y transcribe.cpp, ONNX INT8 para sherpa-onnx y MLX de 8 bits para Apple Silicon), lo que facilita su ejecucion tanto en servidores con GPU como en portatiles y dispositivos de consumo.
+oruk-fourier-2b es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el usuario oruk y publicado en Hugging Face. Se trata de un ajuste fino del modelo Qwen/Qwen3-ASR-1.7B, orientado a transcripcion de audio en ingles con enfasis en robustez sobre dominios diversos (reuniones, llamadas, discurso espontaneo y audio de dominio publico). Con 2.038.052.480 parametros totales, se posiciona en la franja de modelos ASR de tamano medio que pueden desplegarse en infraestructura modesta.
 
-La propuesta de valor es un ASR compacto con un WER medio agregado de 4,95 % en las siete particiones por defecto del Open ASR Leaderboard y un RTFx agregado de 267,80 sobre una NVIDIA H200, lo que lo situa como una alternativa ligera para dictado, subtitulado y transcripcion de reuniones en ingles.
+El modelo se distribuye en formatos safetensors, ONNX y GGUF, lo que facilita su integracion tanto en pipelines de transformers como en entornos de inferencia optimizados (sherpa-onnx, llama.cpp y derivados). Su relevancia actual radica en que combina un tamano contenido con resultados competitivos en el Open ASR Leaderboard, incluyendo conjuntos exigentes como AMI, Earnings22, SPGISpeech y VoxPopuli.
+
+La licencia es CC-BY-NC-4.0, lo que restringe el uso comercial. Esta pensado para investigadores y desarrolladores que necesiten un ASR de referencia en ingles con pesos abiertos y multiples formatos de despliegue.
 
 ## Especificaciones tecnicas
+
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer condicional para ASR (clase `Qwen3ASRForConditionalGeneration`, derivada de Qwen3-ASR) |
-| Parametros totales | 2.038.052.480 (aprox. 2,04 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (audio de hasta 30 segundos por clip segun la model card) |
-| Tipos de cuantizacion | BF16 (nativo), Q8_0 (GGUF), INT8 (ONNX), 8-bit (MLX) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | CC BY-NC 4.0 |
-| Formato de pesos | safetensors (BF16), GGUF (Q8_0), ONNX (INT8), MLX (8-bit) |
+| Arquitectura | Transformer (derivada de Qwen3-ASR-1.7B) |
+| Parametros totales | 2.038.052.480 |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (incluye Q8_0 documentado), safetensors BF16, ONNX |
+| Idiomas soportados | en (ingles) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
-El modelo sigue la arquitectura de Qwen3-ASR: un encoder de audio acoplado a un decoder de lenguaje de tipo transformer condicional que genera la transcripcion de forma autorregresiva. La clase de implementacion es `Qwen3ASRForConditionalGeneration` y se carga mediante `AutoModelForMultimodalLM` y `AutoProcessor` de `transformers` (la model card indica la version 5.24.0). El checkpoint nativo pesa aproximadamente 4,1 GB en BF16 y el repositorio completo ocupa 13,3 GB, incluyendo todas las variantes de formato.
 
-El entrenamiento parte de Qwen/Qwen3-ASR-1.7B y pasa por un ajuste sobre Musci-research/Musci-ASR-qwen-1019-hf, del que no se detallan en la informacion disponible ni el volumen de tokens, ni la composicion del corpus, ni si hubo etapas de RLHF o DPO. Tampoco se especifican innovaciones de decodificacion (decodificacion especulativa, atencion lineal, etc.). La model card si documenta el pipeline de evaluacion: harness oficial `hf-audio/open-asr-leaderboard-transformers` con `batch_size=64`, `bfloat16`, atencion `sdpa` y `max_new_tokens=512`.
+El modelo parte de Qwen/Qwen3-ASR-1.7B, un modelo de reconocimiento de voz basado en transformer con codificador de audio y decodificador de texto. oruk-fourier-2b es un ajuste fino sobre esa base; la model card no detalla el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifica si se introdujeron innovaciones como decodificacion especulativa o atencion lineal.
+
+La informacion disponible indica que el modelo se evalua en BF16 y en cuantizacion Q8_0 GGUF mediante transcribe.cpp, lo que sugiere que el autor valido el comportamiento tanto en precision completa como en formatos cuantizados orientados a despliegue. Los resultados publicados en la model card proceden de PRs del Open ASR Leaderboard (PR #298 y PR #304), lo que aporta trazabilidad sobre la metodologia de evaluacion.
 
 ## Capacidades
-- Transcripcion de voz a texto en ingles para clips de hasta 30 segundos.
-- Procesamiento de audio mono a 16 kHz (el ejemplo oficial mezcla estereo a mono y remuestrea).
-- Ejecucion en CPU y GPU: selecciona CUDA cuando esta disponible y recurre a CPU en caso contrario.
-- Despliegue en multiples runtimes: `transformers`, llama.cpp, transcribe.cpp, sherpa-onnx, MLX y Speech Kit (integracion con Obsidian).
-- Integracion en aplicaciones de dictado local: Hex y VocaPhone (dictado en puesto de trabajo permitido por el autor).
-- Compatibilidad con la app Handy mediante el GGUF Q8_0.
-- Demo en navegador (Hugging Face Space estatico) con descarga unica del modelo de 2,19 GB en Chromium de escritorio.
-- No se documentan capacidades de tool calling, agentes, vision, audio de salida ni modo de razonamiento extendido.
+
+- Reconocimiento automatico del habla en ingles, incluyendo audio de reuniones, llamadas y discurso espontaneo.
+- Transcripcion de audio de formato largo (long-form), con resultados reportados en Earnings21 y Earnings22.
+- Evaluacion sobre dominios acusticos variados: AMI, Gigaspeech, SPGISpeech, VoxPopuli, URGENT2024 y Voice Arena Monsoon.
+- Soporte de cuantizacion Q8_0 en GGUF para inferencia eficiente.
+- Compatibilidad con sherpa-onnx y con el ecosistema transformers.
+- Capacidad de tool calling, agentes o razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: limitadas a ingles segun la model card.
+- Modo thinking, vision o audio generativo: no disponible.
 
 ## Casos de uso
-- Dictado en puesto de trabajo: el modelo puede transcribir notas de voz cortas en local mediante Hex o VocaPhone, sin enviar audio a la nube, gracias a su tamano de 2,04 B y a las variantes GGUF/MLX que caben en equipos de consumo.
-- Subtitulado de reuniones y entrevistas: con un WER de 6,73 % en AMI-Cleaned y 5,61 % en Earnings22, es adecuado para generar subtitulos en ingles de audio financiero y conversacional, procesando clips de hasta 30 segundos de forma secuencial.
-- Transcripcion por lotes de llamadas de atencion al cliente: su RTFx de 267,80 en H200 permite procesar grandes volumenes de grabaciones en ingles en pipelines batch con `transformers` y `bfloat16`.
-- Aplicaciones de escritorio offline: la integracion con Handy y el GGUF Q8_0 (2,19 GB) permiten transcribir sin conexion tras la descarga inicial, con `HF_HUB_OFFLINE=1` en el flujo de `transformers`.
-- Asistentes de voz embebidos: la variante ONNX INT8 para sherpa-onnx (2,41 GB) posibilita desplegar ASR en entornos con recursos limitados o en dispositivos sin GPU dedicada.
-- Investigacion y evaluacion reproducible: los scripts de evaluacion, el fichero `verification.json` y los resultados por grabacion permiten reproducir el WER en LibriSpeech test-clean y FLEURS, util para comparativas academicas de ASR en ingles.
-- Prototipado en Apple Silicon: la variante MLX de 8 bits (2,48 GB) permite ejecutar el modelo en Mac con Swift o Lumen para demos y pruebas de concepto.
+
+- Transcripcion de reuniones corporativas: el modelo obtiene un WER de 6,73 en AMI-Cleaned, un conjunto de reuniones multiparticipe, por lo que es adecuado para generar actas y resumenes a partir de audio de sala.
+- Analisis de llamadas de atencion al cliente: con WER de 5,61 en Earnings22-Cleaned-AA-chunked, puede emplearse para transcribir conversaciones telefonicas y alimentar sistemas de calidad o analitica.
+- Subtitulado de contenido audiovisual en ingles: su WER de 1,46 en Voxpopuli-AA-Cleaned lo hace util para generar subtitulos en discurso parlamentario y material de dominio publico.
+- Transcripcion de audio financiero y de resultados empresariales: los resultados en Earnings21 y Earnings22 long-form permiten procesar llamadas de resultados con terminologia especializada.
+- Despliegue en dispositivos con recursos limitados: la disponibilidad de GGUF Q8_0 y ONNX permite ejecutar inferencia en CPU o GPUs modestas mediante sherpa-onnx o transcribe.cpp.
+- Investigacion en ASR: sirve como punto de comparacion reproducible en el Open ASR Leaderboard, con resultados declarados en multiples benchmarks y trazabilidad via PRs.
+- Procesamiento por lotes de archivos de audio: la combinacion de safetensors y ONNX facilita integrar el modelo en pipelines de transcripcion masiva en servidores.
 
 ## Benchmarks y rendimiento
-Resultados del Open ASR Leaderboard (ingles corto publico, H200, harness oficial):
 
-| Dataset | WER (%) | RTFx |
-|:---|---:|---:|
-| AMI-Cleaned | 6,73 | 216,26 |
-| Earnings22-Cleaned-AA-chunked | 5,61 | 192,92 |
-| Gigaspeech-Cleaned | 6,50 | 239,28 |
-| SPGISpeech | 1,87 | 291,68 |
-| URGENT2024 | 9,03 | 252,11 |
-| Voice Arena Monsoon | 3,42 | 221,96 |
-| Voxpopuli-AA-Cleaned | 1,46 | 258,62 |
-| **Media (7 splits) / RTFx agregado** | **4,95** | **267,80** |
-| URGENT2024-Clean (extra, excluido de la media) | 4,28 | 248,80 |
+Resultados declarados por el autor en la model card (no verificados de forma independiente salvo donde se indica la fuente):
 
-Resultados adicionales publicados:
-- GGUF Q8_0 con transcribe.cpp v0.4.2 en NVIDIA L40S: 1,40 % WER en LibriSpeech test-clean (2.620 grabaciones) y 3,58 % WER en FLEURS ingles estadounidense (647 grabaciones).
-- Habla solapada de reuniones (16 ventanas publicas de AMI, 27,4 minutos, 4.201 palabras): 17,50 % WER en BF16 sobre A10G, frente al 17,64 % publicado para Qwen3-ASR 1.7B en 8-bit MLX sobre M4 Max; los intervalos de confianza al 95 % se solapan.
+| Dataset | Metrica | Valor |
+|---|---|---|
+| AMI-Cleaned | WER (BF16) | 6,73 |
+| Earnings22-Cleaned-AA-chunked | WER (BF16) | 5,61 |
+| Gigaspeech-Cleaned | WER (BF16) | 6,50 |
+| SPGISpeech | WER (BF16) | 1,87 |
+| URGENT2024 | WER (BF16) | 9,03 |
+| URGENT2024-Clean | WER (BF16) | 4,28 |
+| Voice Arena Monsoon (en_IN) | WER (BF16) | 3,42 |
+| Voxpopuli-AA-Cleaned | WER (BF16) | 1,46 |
+| GigaSpeechBench (PHL-EN, >0,5 s) | WER (BF16, greedy) | 9,68 |
+| LibriSpeech clean | WER (Q8_0 GGUF) | 1,40 |
+| FLEURS en_us | WER (Q8_0 GGUF) | 3,58 |
+| Earnings21 (long-form) | WER (BF16, merge_compounds=True) | 7,43 |
+| Earnings21 (long-form) | WER (BF16, merge_compounds=False) | 7,87 |
+
+No se han publicado en la informacion disponible resultados de benchmarks de otros modelos comparables para establecer una comparacion directa.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: aproximadamente 4,5-5 GB en BF16 (checkpoint de 4,1 GB mas activaciones), en torno a 2,5-3 GB en Q8_0/INT8 y cerca de 2,5 GB en MLX 8-bit.
-- GPU recomendadas: NVIDIA H200 (referencia de los benchmarks, RTFx 267,80), L40S (evaluacion Q8), A10G (evaluacion BF16 en AMI). Cualquier GPU con al menos 6 GB de VRAM puede ejecutar la variante BF16; las variantes cuantizadas bajan el umbral a unos 3 GB.
-- Cabe en GPU de consumo: si, en tarjetas con 6-8 GB o mas (por ejemplo, RTX 3060, RTX 4060, RTX 4090) usando Q8_0 o INT8; en BF16 se recomienda 8 GB o mas.
-- Opciones de despliegue: `transformers` (version 5.24.0), llama.cpp, transcribe.cpp, sherpa-onnx, MLX (Swift o Lumen), Speech Kit para Obsidian y la app Handy.
-- Latencia y throughput: RTFx agregado de 267,80 en H200 con `batch_size=64` y `bfloat16`; RTFx por dataset entre 192,92 (Earnings22) y 291,68 (SPGISpeech). No se publican latencias absolutas ni throughput en otras GPU.
+
+- VRAM estimada para inferencia en BF16: aproximadamente 4 GB solo para pesos (2.038 millones de parametros a 2 bytes), mas overhead de activaciones y del codificador de audio; en la practica se recomienda reservar entre 6 y 8 GB.
+- VRAM estimada en Q8_0 GGUF: alrededor de 2,2-2,5 GB para pesos, por lo que cabe en GPUs consumer de gama media y en CPU con suficiente RAM.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o superiores para BF16; A100 o H100 si se necesita alto throughput por lotes.
+- Cabe en GPU consumer: si, especialmente en cuantizacion Q8_0 o en formatos ONNX.
+- Opciones de despliegue: transformers (safetensors), sherpa-onnx (ONNX), transcribe.cpp y llama.cpp/derivados para GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
-| Modelo | Parametros | Contexto / audio | WER de referencia | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| oruk-fourier-2b | 2,04 B | clips de hasta 30 s | 4,95 % (media Open ASR, 7 splits) | CC BY-NC 4.0 | Pesos abiertos en HF (BF16, GGUF, ONNX, MLX) |
-| Qwen3-ASR 1.7B (base) | 1,7 B | no disponible | 17,64 % WER en AMI solapado (8-bit MLX, M4 Max) | no disponible en la informacion proporcionada | Pesos abiertos en HF |
-| Musci-ASR-qwen-1019-hf | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en HF |
 
-La comparacion directa solo es posible con el modelo base Qwen3-ASR 1.7B en el benchmark de habla solapada de AMI, donde las diferencias (17,50 % frente a 17,64 %) no son estadisticamente significativas segun los intervalos publicados. No se dispone de datos de otros modelos ASR comparables en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|
+| oruk/oruk-fourier-2b | 2.038 M | no disponible | CC-BY-NC-4.0 | safetensors, ONNX, GGUF | Fine-tune de Qwen3-ASR-1.7B, solo ingles |
+| Qwen/Qwen3-ASR-1.7B (base) | ~1.700 M | no disponible | no disponible en esta ficha | safetensors | Modelo base del que deriva |
+| Alternativas ASR de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion |
+
+No se dispone de datos suficientes en la informacion proporcionada para una comparativa cuantitativa con otros modelos ASR.
 
 ## Limitaciones y advertencias
-- Solo soporta ingles; no se documenta soporte multilingue.
-- Disenado para clips de hasta 30 segundos; no se especifica manejo de audio largo ni diarizacion de hablantes.
-- La licencia CC BY-NC 4.0 prohibe el uso comercial sin autorizacion expresa; el autor solo menciona permisos adicionales para dictado local en Hex y VocaPhone.
-- Riesgo de alucinacion y errores en audio con ruido, acentos no estadounidenses o solapamiento de voces: el WER sube al 9,03 % en URGENT2024 y al 17,50 % en AMI con habla solapada.
-- No se detallan sesgos demograficos ni de dominio; la evaluacion se limita a los conjuntos publicos del leaderboard.
-- El rendimiento en produccion depende del runtime y la cuantizacion: los resultados de Q8_0 se obtuvieron con transcribe.cpp v0.4.2 y pueden variar en otras implementaciones.
-- La model card no documenta el proceso de entrenamiento (tokens, composicion del corpus, alineamiento), lo que limita la auditabilidad del modelo.
-- Requiere `transformers` 5.24.0 y fijar la revision del checkpoint para reproducir los resultados publicados.
+
+- Licencia CC-BY-NC-4.0: prohibido el uso comercial sin autorizacion expresa del titular.
+- Solo soporta ingles; no se declaran capacidades multilingues.
+- Los resultados de benchmarks son declarados por el autor y no estan verificados de forma independiente (campo "verified": false en la mayoria).
+- Riesgo de alucinacion y errores de transcripcion en audio con ruido, acentos no nativos o terminologia especializada; el WER de 9,03 en URGENT2024 y 9,68 en GigaSpeechBench PHL-EN indica degradacion en condiciones adversas.
+- No se documenta la longitud de contexto, lo que limita la planificacion de inferencia sobre audios muy largos sin chunking.
+- No hay informacion sobre sesgos demograficos o acusticos del ajuste fino.
+- El modelo base es Qwen3-ASR-1.7B; conviene revisar la licencia y condiciones del modelo base antes de su uso en produccion.
+- No se detallan los datos de entrenamiento, lo que dificulta evaluar la cobertura de dominios y la reproducibilidad.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/oruk/oruk-fourier-2b
-- Web de Oruk: https://oruk.ai/
-- Modelos de Oruk: https://oruk.ai/models
-- Demo en navegador: https://oruk-fourier-2b-local.static.hf.space/index.html
-- Cuaderno Colab: https://huggingface.co/oruk/oruk-fourier-2b/colab
-- Cuaderno Kaggle: https://huggingface.co/oruk/oruk-fourier-2b/kaggle
-- Ejemplo de transcripcion en Python: https://huggingface.co/oruk/oruk-fourier-2b/blob/main/examples/transcribe.py
-- Ejemplo llama.cpp: https://huggingface.co/oruk/oruk-fourier-2b/tree/main/examples/llama-cpp
-- Ejemplo sherpa-onnx: https://huggingface.co/oruk/oruk-fourier-2b/tree/main/examples/sherpa-onnx
-- Ejemplo Speech Kit para Obsidian: https://huggingface.co/oruk/oruk-fourier-2b/tree/main/examples/obsidian-speech-kit
-- Verificacion de evaluacion Open ASR: https://huggingface.co/oruk/oruk-fourier-2b/blob/main/evaluations/open-asr/verification.json
-- Evaluacion Q8 en ingles: https://huggingface.co/oruk/oruk-fourier-2b/tree/main/evaluations/q8-english
-- Resultados AMI de LokalBot: https://huggingface.co/oruk/oruk-fourier-2b/blob/main/evaluations/lokalbot-public-ami/summary.json
-- PR de envio al Open ASR Leaderboard: https://github.com/huggingface/open_asr_leaderboard/pull/298
-- Reproduccion del benchmark LokalBot: https://github.com/Nathan-Roll1/LokalBot/blob/c42c7f1ccb3778d7cf135abf49442e4a84ab2fe8/Benchmarks/transcribe/CloudSTT/results/2026-11-22-fourier/REPORT.md
-- Envio del benchmark a LokalBot: https://github.com/stevyhacker/LokalBot/pull/576
-- Modelo base Qwen3-ASR 1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Modelo intermedio Musci-ASR: https://huggingface.co/Musci-research/Musci-ASR-qwen-1019-hf
-- Otro modelo de Oruk en Hugging Face: https://huggingface.co/oruk/orukeet
+- Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Open ASR Leaderboard PR #298: https://github.com/huggingface/open_asr_leaderboard/pull/298
+- Open ASR Leaderboard Long-Form PR #304: https://github.com/huggingface/open_asr_leaderboard/pull/304
+- Evaluacion GigaSpeechBench PHL-EN: https://huggingface.co/oruk/oruk-fourier-2b/blob/main/evaluations/gigaspeechbench-phl-en/README.md
+- Evaluacion Q8 English: https://huggingface.co/oruk/oruk-fourier-2b/blob/main/evaluations/q8-english/README.md

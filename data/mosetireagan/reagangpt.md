@@ -2,96 +2,100 @@
 
 ## Resumen
 
-ReaganGPT es un modelo de lenguaje de tipo decoder-only autoregressive con arquitectura GPT, desarrollado por Reagan Moseti (usuario `mosetireagan` en Hugging Face) y entrenado completamente desde cero en PyTorch nativo, sin depender de pesos preentrenados ni de modelos fundacionales externos. La versión 0.2, publicada en noviembre de 2026, constituye un ejercicio de escalado controlado y evaluación independiente sobre un corpus ampliado, con tokenizador BPE propio de 2.000 tokens y vocabulario cerrado con byte fallback.
+ReaganGPT 0.3 es un modelo de lenguaje autoregresivo de tipo decoder-only desarrollado desde cero por Reagan Moseti (usuario `mosetireagan` en Hugging Face). No parte de ningun modelo fundacional ni de pesos preentrenados: tanto la arquitectura como el tokenizador BPE se han construido de forma nativa en PyTorch con inicializacion aleatoria de pesos. La version 0.3 incorpora una arquitectura moderna (RMSNorm, RoPE, SwiGLU y atencion via `torch.nn.functional.scaled_dot_product_attention`) y amplia el corpus de entrenamiento hasta los 26.008 documentos y unos 28 millones de tokens empaquetados.
 
-El modelo se distribuye en dos variantes: ReaganGPT 0.2 Micro (1.082.112 parámetros totales, contexto de 256 tokens) y ReaganGPT 0.2 Small (5.382.144 parámetros, contexto de 512 tokens). Ambas emplean bloques Pre-LayerNorm con weight tying entre la matriz de embeddings y la proyección de salida. Su relevancia es fundamentalmente pedagógica y de investigación: documenta de forma transparente el proceso de construcción de un LM desde cero, incluyendo procedencia del corpus, aislamiento de particiones y métricas de perplejidad sobre un conjunto de test estrictamente reservado.
+El modelo se distribuye en tres variantes de tamano: Micro (1,37 M parametros), Small (5,84 M parametros) y Base (27,75 M parametros), con ventanas de contexto de 256, 512 y 1.024 tokens respectivamente y un vocabulario BPE de 4.000 tokens. El checkpoint raiz del repositorio corresponde a la variante Small. Su relevancia es fundamentalmente educativa y de investigacion: sirve como referencia reproducible de un pipeline completo de entrenamiento (tokenizador, corpus limpio con particiones estancas, evaluacion held-out y publicacion de checkpoints) en un orden de magnitud que cabe en cualquier GPU de consumo.
 
-No debe confundirse con un modelo de propósito general. Con 1-5 millones de parámetros y un corpus de entrenamiento de aproximadamente 1,37 MB (~710.000 tokens), su capacidad generativa es muy limitada y su utilidad práctica se circunscribe a experimentación, docencia y validación de pipelines de entrenamiento.
+No es un modelo apto para produccion ni para tareas de razonamiento complejo: con menos de 30 millones de parametros y un corpus de decenas de millones de tokens, su perdida held-out en el conjunto de test es de 4,0096 (perplejidad en torno a 55) para la variante Small, muy lejos de los modelos de miles de millones de parametros. Su interes esta en la transparencia metodologica y en la licencia Apache-2.0, que permite reutilizar codigo y pesos sin restricciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only autoregressive (GPT), Pre-LayerNorm, weight tying |
-| Parametros totales | 1.082.112 (0.2 Micro) / 5.382.144 (0.2 Small) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 256 tokens (0.2 Micro) / 512 tokens (0.2 Small) |
-| Tipos de cuantizacion | No disponible (pesos en PyTorch nativo; no se documentan formatos cuantizados) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer decoder-only autoregresivo (GPT) con RMSNorm, RoPE, SwiGLU y PyTorch SDPA |
+| Parametros totales | 1.365.120 (Micro), 5.844.224 (Small, checkpoint raiz), 27.746.816 (Base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256 tokens (Micro), 512 tokens (Small), 1.024 tokens (Base) |
+| Tipos de cuantizacion | no disponible (pesos en punto flotante nativo de PyTorch; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Checkpoints PyTorch nativos (no se distribuyen safetensors ni GGUF) |
+| Formato de pesos | Checkpoints nativos de PyTorch (carga via `ReaganGPT.from_pretrained`); no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-ReaganGPT emplea bloques Transformer decoder-only con Pre-LayerNorm, atención causal multi-cabeza y weight tying entre la matriz de embeddings de tokens y la proyección final de language modeling. La configuración 0.2 Micro usa `d_model=128`, 4 capas, 4 cabezas de atención de dimensión 32 y contexto de 256 tokens; la 0.2 Small escala a `d_model=256`, 6 capas, 8 cabezas y contexto de 512. Existe una configuración objetivo ReaganGPT-Base (`d_model=512`, 8 capas, contexto 1.024, vocabulario 16.000, 33.936.384 parámetros) que no se ha publicado como checkpoint en la información disponible.
+La arquitectura es un transformer decoder-only clasico con cuatro decisiones de diseno modernas: normalizacion RMSNorm en lugar de LayerNorm, embeddings posicionales rotatorios RoPE con theta=10000, activacion SwiGLU en la MLP y atencion implementada con `scaled_dot_product_attention` de PyTorch (equivalente funcional a flash-attention cuando el backend lo permite). El modelo emplea weight tying entre la matriz de embeddings de tokens y la proyeccion de salida del language modeling. La variante Small usa `d_model=256`, 6 capas, 8 cabezas de atencion de dimension 32 y contexto de 512; la Base escala a `d_model=512`, 8 capas, 8 cabezas de dimension 64 y contexto de 1.024. El tokenizador es un BPE entrenado de forma independiente con byte fallback (tasa de OOV cero) y vocabulario de 4.000 tokens en la version 0.3.
 
-El entrenamiento se realizó desde cero con inicialización aleatoria, sin RLHF ni DPO documentados. El corpus 0.2 consta de 1.852 documentos (1.434.348 caracteres, ~710.000 tokens) procedentes de tres colecciones con licencias permisivas: TinyShakespeare (dominio público), WikiText-2 (CC BY-SA 3.0) y fundamentos de informática y matemáticas (CC0-1.0). Se aplicó deduplicación exacta por SHA-256 y filtrado de casi-duplicados por Jaccard de n-gramas, con partición determinista 80/10/10 basada en hash (1.481 documentos de entrenamiento, 185 de validación, 186 de test). El tokenizador BPE se reentrenó a 2.000 tokens tras comparar configuraciones de 1K, 2K y 4K, seleccionando la de 2K por su equilibrio entre compresión (2,01 caracteres/token) y utilización del vocabulario (87,8%).
+El entrenamiento se realizo sobre 26.008 documentos (69,65 millones de caracteres, aproximadamente 28 millones de tokens subword empaquetados) procedentes de cinco fuentes permisivas: PG-19 de Project Gutenberg (12.000 documentos, dominio publico), WikiText-103 de Salesforce (4.000 documentos, CC BY-SA 3.0), Cosmopedia v2 (4.000 documentos, Apache-2.0), TinyStories (6.000 documentos, CDLA-Permissive-2.0) y ocho tratados tecnicos propios de ciencias de la computacion (CC0-1.0). El pipeline aplica deduplicacion exacta por SHA-256 a nivel de documento y filtrado de casi duplicados por Jaccard de n-gramas con umbral 0,85, seguido de una particion determinista por hash 80/10/10 (20.806 documentos de entrenamiento, 2.600 de validacion y 2.602 de test estanco). No se documenta uso de RLHF, DPO ni ajuste por instrucciones; el modelo es exclusivamente un modelo de lenguaje base.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés sobre dominios limitados al corpus de entrenamiento (literatura clásica, conocimiento enciclopédico y fundamentos técnicos).
-- Modelado de lenguaje a nivel de token con soporte de byte fallback en el tokenizador, lo que garantiza tasa cero de tokens fuera de vocabulario (OOV).
-- Capacidad de continuación de texto condicionada por prompt, con control de temperatura en la generación.
-- No dispone de soporte documentado de tool calling ni function calling.
-- No dispone de capacidades de agente ni razonamiento multi-paso.
-- No dispone de modo thinking, visión, audio ni multimodalidad.
-- Multilingüismo: únicamente inglés; no se documenta entrenamiento en otros idiomas.
+- Generacion de texto autoregresiva en ingles con decodificacion por temperatura, top-k y top-p.
+- Modelado de lenguaje y continuacion de texto sobre dominios literario, enciclopedico, cientifico y narrativo simple.
+- Tokenizacion BPE con byte fallback: puede representar cualquier cadena de bytes sin simbolos desconocidos, aunque el modelo solo ha visto texto en ingles.
+- Capacidad de servir como base de experimentacion para fine-tuning, ablaciones de arquitectura y estudios de escalado a muy pequena escala.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No dispone de modo thinking, vision, audio ni capacidades multimodales.
+- Capacidades multilingues practicamente nulas: el corpus es integramente en ingles y el vocabulario de 4.000 tokens esta optimizado para ese idioma.
 
 ## Casos de uso
 
-- Docencia de arquitecturas Transformer: el modelo sirve como ejemplo mínimo y reproducible de un GPT funcional (1,08 M de parámetros) para ilustrar atención causal, weight tying y Pre-LayerNorm en un curso o taller.
-- Validación de pipelines de entrenamiento: la documentación de splits por hash, deduplicación SHA-256 y métricas de perplejidad permite usar el repositorio como plantilla para verificar que un pipeline propio no presenta fugas de datos.
-- Experimentación con tokenizadores BPE: el análisis comparativo entre vocabularios de 1K, 2K y 4K con métricas de compresión y utilización constituye un caso de estudio replicable para ajustar el tamaño de vocabulario a corpus pequeños.
-- Investigación sobre generalización en modelos pequeños: la comparación entre 0.1 y 0.2 (perplejidad de test de 137,59 a 48,26 en Micro) permite estudiar cómo el volumen y la calidad del corpus afectan a la divergencia y al sobreajuste.
-- Generación de texto de demostración en entornos educativos: con prompts sobre literatura o conceptos técnicos, el modelo produce continuaciones coherentes a nivel local dentro de su ventana de 256-512 tokens.
-- Referencia para pruebas de infraestructura de inferencia: al ser un checkpoint PyTorch nativo de tamaño mínimo, resulta útil para probar scripts de carga, generación y integración con `huggingface_hub` antes de escalar a modelos mayores.
+- Docencia de arquitecturas transformer: el repositorio incluye el codigo completo de definicion del modelo, tokenizador y bucle de entrenamiento, lo que permite recorrer paso a paso como se construye un GPT desde cero sin depender de frameworks de alto nivel.
+- Reproduccion de experimentos de escalado: las tres variantes (1,37 M, 5,84 M y 27,75 M de parametros) permiten estudiar la relacion entre tamano, contexto y perdida held-out con un coste de computo minimo.
+- Pruebas de pipelines de datos: el corpus con particiones estancas por hash y deduplicacion SHA-256/Jaccard sirve como plantilla para validar flujos de limpieza y aislamiento de leakage antes de escalar a corpus mayores.
+- Generacion de texto narrativo corto: la variante Small, entrenada parcialmente con TinyStories, puede producir continuaciones coherentes de frases simples en ingles, util para demostraciones en clase o tutoriales.
+- Fine-tuning de bajo coste: con 5,84 M de parametros, un ajuste completo sobre un dataset pequeno cabe en una GPU de consumo y sirve para ilustrar tecnicas de adaptacion de dominio.
+- Benchmark de infraestructura de inferencia: al ser un modelo diminuto en PyTorch nativo, es util para medir latencias y comparar backends (SDPA, compilacion con `torch.compile`) sin ruido de modelos grandes.
+- Referencia para auditoria de licencias de datos: la model card documenta la procedencia y licencia de cada una de las cinco fuentes del corpus, lo que facilita estudiar practicas de cumplimiento en datasets mixtos.
 
 ## Benchmarks y rendimiento
 
-Evaluación independiente sobre 186 documentos de test estrictamente reservados (144.644 caracteres):
+Evaluacion sobre 2.602 documentos de test estrictamente estancos (6.869.672 caracteres):
 
-| Modelo | Checkpoint | Params totales | Loss (CE) | Perplejidad | Bits por byte |
-|---|---|---|---|---|---|
-| Baseline aleatorio (sin entrenar) | random init | 1.082.112 | 7,6128 | 2023,84 | 5,5353 |
-| ReaganGPT 0.1 Micro | `checkpoints/reagangpt-micro` | 943.616 | 4,9243 | 137,59 | 4,6483 |
-| ReaganGPT 0.1 Small | `checkpoints/reagangpt-small` | 5.105.152 | 4,8767 | 131,19 | 4,6034 |
-| ReaganGPT 0.2 Micro | `checkpoints/reagangpt-v02-micro` | 1.082.112 | 3,8765 | 48,26 | 2,8186 |
-| ReaganGPT 0.2 Small | `checkpoints/reagangpt-v02-small` | 5.382.144 | 3,9570 | 52,30 | 2,8872 |
+| Modelo | Checkpoint | Parametros | Test loss (CE) | Perplejidad | Bits por byte |
+|---|---|---:|---:|---:|---:|
+| Baseline aleatorio (sin entrenar) | inicializacion aleatoria | 1.365.120 | 8,3134 | 4.078,25 | 1,1613 |
+| ReaganGPT 0.2 Micro | `checkpoints/reagangpt-v02-micro` | 1.082.112 | 4,3074 | 74,25 | 0,6017 |
+| ReaganGPT 0.2 Small | `checkpoints/reagangpt-v02-small` | 5.382.144 | 4,3293 | 75,89 | 1,2095 |
+| ReaganGPT 0.3 Micro | `checkpoints/reagangpt-v03-micro` | 1.365.120 | 3,9648 | 52,71 | 0,5538 |
+| ReaganGPT 0.3 Small | `checkpoints/reagangpt-v03-small` | 5.844.224 | 4,0096 | no disponible en la informacion proporcionada (valor truncado en la model card) | no disponible en la informacion proporcionada (valor truncado en la model card) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, HellaSwag) en la informacion disponible. La evaluacion se limita a perdida de entropia cruzada, perplejidad y bits por byte sobre el conjunto de test propio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en ambos casos; los checkpoints ocupan en torno a 0,2 GB en el repositorio, por lo que caben holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, A100, H100); el modelo no aprovecha aceleradores de gama alta por su tamaño.
-- Cabe en CPU: la inferencia es viable en CPU sin GPU dedicada, dado el reducido número de parámetros.
-- Opciones de despliegue: el repositorio proporciona scripts propios (`generate.py`) y API Python (`ReaganGPT.from_pretrained`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, al no distribuirse pesos en formatos estándar como safetensors o GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM para inferencia: inferior a 1 GB en cualquiera de las tres variantes con pesos en fp32. La variante Base (27,75 M de parametros) ocupa aproximadamente 111 MB en fp32 y unos 55 MB en fp16.
+- GPU recomendadas: cualquier GPU con soporte CUDA y SDPA (serie RTX 20xx en adelante, A100, H100). El modelo tambien funciona en CPU sin problema por su tamano.
+- Cabe en cualquier GPU de consumo, incluidas GTX 1050 Ti, RTX 3050, RTX 4060 y superiores, asi como en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: el repositorio proporciona un script `generate.py` y una API Python (`ReaganGPT.from_pretrained`). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, ya que no se publican pesos en formatos estandar como safetensors o GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera generacion en tiempo real incluso en CPU, pero no hay cifras medidas publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ReaganGPT 0.2 Small | 5,38 M | 512 | Apache-2.0 | Hugging Face (PyTorch nativo) |
-| ReaganGPT 0.2 Micro | 1,08 M | 256 | Apache-2.0 | Hugging Face (PyTorch nativo) |
-| GPT-2 Small (referencia de escala) | 124 M | 1.024 | MIT | Hugging Face (safetensors, GGUF) |
-| TinyLlama 1.1B (referencia de escala) | 1,1 B | 2.048 | Apache-2.0 | Hugging Face (safetensors, GGUF) |
+| Modelo | Parametros | Contexto | Vocabulario | Licencia | Enfoque |
+|---|---:|---:|---:|---|---|
+| ReaganGPT 0.3 Small | 5,84 M | 512 | 4.000 | Apache-2.0 | Entrenamiento desde cero, corpus mixto de 28 M tokens |
+| ReaganGPT 0.3 Micro | 1,37 M | 256 | 4.000 | Apache-2.0 | Entrenamiento desde cero, misma familia |
+| ReaganGPT 0.3 Base | 27,75 M | 1.024 | 4.000 | Apache-2.0 | Entrenamiento desde cero, mayor escala |
+| GPT-2 Small (referencia de la familia) | 124 M | 1.024 | 50.257 | MIT | Entrenamiento desde cero sobre WebText, referencia historica de la misma categoria |
+| TinyStories-1M (referencia educativa) | ~1 M | 512 | ~50.000 | MIT | Entrenamiento desde cero sobre TinyStories, enfocado a narrativa infantil |
 
-No se dispone de comparaciones directas con modelos de escala equivalente (1-10 M de parámetros) en la información proporcionada. Las alternativas incluidas se ofrecen únicamente como referencia de escala y de ecosistema de despliegue; la diferencia de órdenes de magnitud en parámetros y datos de entrenamiento hace que cualquier comparación de rendimiento carezca de sentido.
+La comparacion con GPT-2 Small y TinyStories es cualitativa: no se dispone de evaluaciones cruzadas en los mismos benchmarks. ReaganGPT se situa dos ordenes de magnitud por debajo de GPT-2 Small en parametros y corpus, por lo que su rendimiento en tareas generativas abiertas sera sustancialmente inferior. Su ventaja frente a alternativas educativas es la documentacion exhaustiva de procedencia de datos, particiones estancas y metricas held-out.
 
 ## Limitaciones y advertencias
 
-- Capacidad generativa muy limitada: con 1-5 M de parámetros y ~710.000 tokens de entrenamiento, el modelo no alcanza fluidez conversacional ni razonamiento complejo; las continuaciones pueden ser incoherentes más allá de frases cortas.
-- Riesgo elevado de alucinación y de producción de texto gramatical pero factualmente incorrecto, especialmente fuera de los dominios del corpus.
-- Ventana de contexto muy corta (256-512 tokens), insuficiente para documentos largos o conversaciones multi-turno.
-- Entrenado exclusivamente en inglés; no se garantiza comportamiento correcto en castellano u otros idiomas.
-- Sesgos: el corpus incluye literatura clásica y textos enciclopédicos, por lo que puede reproducir sesgos históricos y culturales presentes en esas fuentes; no se documenta ningún proceso de mitigación.
-- Licencia Apache-2.0 permite uso comercial, pero la calidad del modelo hace inviable su uso en producción real; cualquier despliegue comercial requeriría un modelo de mayor escala.
-- No se distribuyen pesos en formatos estándar (safetensors, GGUF), lo que limita la integración con herramientas de inferencia habituales.
-- La model card original está truncada en la información disponible; algunos detalles de la fase de evaluación (por ejemplo, la comparación completa de divergencia entre 0.1 y 0.2) no pueden verificarse.
+- Capacidad generativa muy limitada: con 5,84 M de parametros y 28 M de tokens de entrenamiento, las continuaciones son localmente plausibles pero pierden coherencia global rapidamente. No es apto para tareas de razonamiento, matematicas, codigo ni respuesta a preguntas factuales.
+- Riesgo elevado de alucinacion: el modelo no tiene conocimiento factual fiable y puede producir afirmaciones incorrectas con fluidez superficial.
+- Ventana de contexto corta: 256, 512 o 1.024 tokens segun variante, insuficiente para documentos largos o conversaciones multi-turno.
+- Solo ingles: el corpus y el tokenizador estan orientados a ingles; el rendimiento en castellano u otros idiomas sera deficiente pese al byte fallback.
+- Sin ajuste por instrucciones: no responde a formatos de chat ni a directivas; es un modelo base que continua texto.
+- Sesgos: el corpus incluye literatura pre-1919 de PG-19, WikiText-103 y TinyStories, fuentes con sesgos historicos, culturales y de genero no mitigados. No se documenta ninguna evaluacion de sesgo.
+- Restricciones de licencia: los pesos y el codigo se publican bajo Apache-2.0, lo que permite uso comercial, pero el corpus de entrenamiento mezcla licencias (CC BY-SA 3.0 para WikiText-103, CDLA-Permissive-2.0 para TinyStories, dominio publico para PG-19). El uso comercial del modelo derivado es juridicamente discutible si se reproducen fragmentos sustanciales de las fuentes con copyleft.
+- Sin soporte de formatos estandar: la ausencia de pesos en safetensors o GGUF limita la integracion con ecosistemas como llama.cpp, Ollama o vLLM, y obliga a usar el codigo Python del repositorio.
+- Repositorio de 0,2 GB y 216 descargas en el momento de la consulta: no hay evidencia de validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mosetireagan/reagangpt
-- Repositorio clonable (mismo endpoint): https://huggingface.co/mosetireagan/reagangpt
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.
+- Repositorio clonable via Git: https://huggingface.co/mosetireagan/reagangpt (instrucciones `git clone` en la model card)
+- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

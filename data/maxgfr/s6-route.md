@@ -2,110 +2,111 @@
 
 ## Resumen
 
-s6-route es un enrutador de herramientas (tool router) de muy pequeño tamaño desarrollado por maxgfr dentro del proyecto skycmd. Dado un enunciado de petición y una lista de hasta 7 herramientas (cada una con nombre y una frase descriptiva), el modelo asigna una probabilidad a cada opción, incluida la opción "ninguna de estas herramientas encaja", y devuelve "preguntar al usuario" cuando la probabilidad máxima queda por debajo de un umbral calibrado (τ_ask3 = 0.671047). No es un modelo generativo: es un clasificador de decisión orientado a enrutamiento de llamadas a herramientas en agentes.
+s6-route es un modelo de clasificación de texto de dominio muy restringido: un enrutador de herramientas (tool router) que, dada una petición del usuario y una lista de hasta siete herramientas descritas por un nombre y una frase, devuelve una probabilidad para cada opción y decide entre ejecutar una herramienta, responder "ninguna encaja" o pedir aclaración al usuario. Lo desarrolla maxgfr como parte del proyecto skycmd y se publica bajo licencia Apache 2.0. Su interés radica en que resuelve una tarea concreta de los pipelines de agentes con un coste computacional ínfimo: 974.424 parámetros y un artefacto de 3,7 MB en dos ficheros GGUF, sin necesidad de GPU.
 
-Técnicamente es un sistema híbrido de dos componentes: el modelo ternario s6-route-nano (v2, 2,4 MB) y una copia cuantizada a 4 bits del embedding estático minishlab/potion-base-2M (1,3 MB), fusionados opción por opción mediante `p(i) ∝ (p_model(i) · p_embedding(i))^0.81` y renormalizados. El conjunto pesa 3.692.224 bytes en dos ficheros GGUF y está implementado en Rust, con una ruta WASM SIMD128 para ejecución en navegador.
+Técnicamente no es un transformer generativo, sino un clasificador ternario (pesos ternarios) de "sistema uno" con embeddings estáticos. La versión publicada, s6-route, es una fusión por producto de probabilidades entre el modelo anterior s6-route-nano (que falló su propia puerta de validación) y una copia cuantizada a 4 bits del encoder estático minishlab/potion-base-2M, con un exponente β = 0,81 y un umbral de abstención τ_ask3 = 0,671047. No se entrenó nada para esta versión: los parámetros se eligieron sobre validación y la puerta se leyó una sola vez sobre datos frescos.
 
-Su relevancia es doble: por un lado, demuestra que un enrutador de 3,7 MB puede superar a BM25 y acercarse a all-MiniLM-L6-v2 (91,6 MB) en la tarea de selección de herramienta sobre herramientas nunca vistas; por otro, su model card documenta de forma inusualmente explícita un protocolo de pre-registro con puertas de validación, incluyendo los resultados que no las cumplen y las lecturas alternativas que matizan el resultado principal.
+Es relevante ahora porque demuestra que el enrutamiento de herramientas en agentes puede resolverse con un artefacto de kilobytes desplegable en Rust y WebAssembly, sin GPU ni servicio externo, y porque documenta con inusual honestidad sus condiciones de éxito y sus fallos: la ventaja sobre BM25 desaparece con nombres de herramienta genéricos y se invierte en familias de herramientas nuevas como los servidores MCP.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrido de fusión de decisiones: modelo ternario de decisión (s6-route-nano) + embedding estático cuantizado a 4 bits (potion-base-2M), combinados por producto ponderado con exponente 0.81 |
+| Arquitectura | Clasificador ternario de sistema uno con embeddings estáticos; fusión por producto de probabilidades entre s6-route-nano y potion-base-2M (4 bits) |
 | Parametros totales | 974.424 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrada acotada a una petición + hasta 7 herramientas con una frase cada una) |
-| Tipos de cuantizacion | Ternaria en el modelo de decisión; 4 bits en la tabla de embedding; pesos empaquetados en GGUF |
+| Longitud de contexto | no disponible (entrada: una petición y hasta 7 herramientas, cada una con nombre y una frase) |
+| Tipos de cuantizacion | GGUF; el componente de embeddings es una copia a 4 bits; pesos del clasificador en ternario |
 | Idiomas soportados | en, fr |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (dos ficheros, 3.692.224 bytes en total) |
+| Formato de pesos | GGUF (dos ficheros: s6-route-nano.gguf y s6-route-embed.gguf) |
 
 ## Arquitectura y entrenamiento
 
-El sistema no entrena nada en su versión v3: es una fusión de dos piezas preexistentes. La primera es s6-route-nano (v2), un modelo de decisión ternario de 2,4 MB etiquetado como "system-one" en el proyecto, que produce una distribución de probabilidad sobre las opciones del slate. La segunda es una copia a 4 bits del embedding estático potion-base-2M (1,3 MB), que aporta similitud semántica entre la petición y las descripciones de herramientas mediante coseno. La fusión multiplica ambas distribuciones elevadas a 0,81 y renormaliza; el socio, el exponente β y el umbral τ_ask3 se eligieron sobre validación.
+s6-route no entrena un modelo nuevo. Reutiliza los pesos de s6-route-nano (v2), un clasificador ternario de decisión, y los fusiona opción por opción con una copia a 4 bits del encoder de embeddings estáticos minishlab/potion-base-2M. La regla de fusión es un producto de probabilidades con exponente: p(i) ∝ (p_modelo(i) · p_embedding(i))^0,81, renormalizado sobre el conjunto de opciones. El socio, el exponente β y el umbral de abstención τ_ask3 = 0,671047 se seleccionaron sobre el conjunto de validación; no hubo entrenamiento ni uso de GPU para esta versión.
 
-El diseño metodológico es el elemento más destacable: la model card describe un pre-registro con puertas G1–G4 fijadas antes de leer el conjunto fresco, enmiendas documentadas antes de la lectura y una divulgación explícita de que v3 se diseñó después de leer los volcados de test de v2. La evaluación se hizo sobre 945 peticiones nuevas relativas a herramientas nunca vistas en entrenamiento (273 clústeres), con un 20 % de slates donde la respuesta correcta es "ninguna". La implementación es 100 % Rust (`crates/sky-web/src/router.rs` y `crates/sky-infer/src/embed.rs`), con paridad verificada entre la ruta WASM y la referencia en Python (diferencia máxima de probabilidad 1,6e-6 y 200 de 200 respuestas idénticas sobre 200 slates).
+Los datos de entrenamiento y evaluación provienen del dataset maxgfr/skycmd-route. La evaluación se realizó sobre peticiones frescas relativas a herramientas nunca vistas en entrenamiento (945 peticiones, 273 clústeres) y sobre un conjunto de herramientas MCP de una familia nueva. La metodología sigue un protocolo de pre-registro: el sistema se definió tras leer el test de v2 (a partir de un análisis exploratorio de sus volcados), los parámetros se fijaron en validación y la puerta se leyó una única vez sobre ficheros frescos. El propio autor advierte que la puerta de latencia se fijó en 30 veces la de v2 y se estableció después de medir v2.
 
 ## Capacidades
 
-- Clasificación de decisión sobre un conjunto cerrado de hasta 7 opciones (herramientas más la opción "ninguna").
-- Enrutamiento de llamadas a herramientas a partir de nombre y descripción de una frase por herramienta.
-- Abstención calibrada: emite "preguntar al usuario" cuando la probabilidad máxima es inferior a 0.671047.
-- Salida de probabilidad por opción, no solo etiqueta, lo que permite umbrales aguas abajo.
-- Multilingüe limitado a inglés y francés.
-- Ejecución en navegador vía WASM SIMD128 con lista de herramientas cacheada.
-- Integración en el proyecto skycmd como componente de enrutamiento de agentes.
-- No soporta generación de texto, razonamiento multi-paso, tool calling generativo, visión ni audio.
+- Enrutamiento de herramientas: asigna una probabilidad a cada una de hasta siete herramientas descritas por nombre y una frase, más la opción "ninguna de estas herramientas encaja".
+- Abstención explícita: devuelve la decisión "ask" (preguntar al usuario) cuando la probabilidad máxima queda por debajo de τ_ask3 = 0,671047.
+- Clasificación de texto con salida de tres vías: "tool", "none" o "ask".
+- Calibración de probabilidades: ECE de 0,0162 frente a 0,0779 de BM25 en los tests reportados.
+- Detección de "ninguna herramienta adecuada": F1 de 0,7732 frente a 0,6368 de BM25.
+- Ejecución en navegador mediante WebAssembly y en Rust nativo, sin GPU.
+- Idiomas: inglés y francés.
+- No soporta generación de texto, razonamiento multi-paso, código, matemáticas, visión, audio ni tool calling generativo; es exclusivamente un clasificador de enrutamiento.
 
 ## Casos de uso
 
-- Enrutamiento de intenciones en agentes de línea de comandos: skycmd usa el modelo para decidir qué herramienta invocar ante una petición en lenguaje natural, con un coste de 3,7 MB y latencia de decenas de milisegundos, adecuado para ejecutarse en el propio binario sin servicio externo.
-- Despacho de herramientas en asistentes con catálogo pequeño y cambiante: al aceptar hasta 7 herramientas por slate y generalizar a herramientas no vistas (0.8868 en T2-tools), permite añadir o retirar herramientas sin reentrenar.
-- Puerta de abstención en pipelines de agentes: la calibración (ECE 0.0162) y el umbral τ_ask3 permiten derivar a intervención humana o a un modelo mayor cuando la confianza es baja, reduciendo llamadas erróneas.
-- Ejecución en el navegador: la ruta WASM SIMD128 (30,9 ms de mediana por petición con la lista cacheada) habilita enrutamiento local en aplicaciones web sin backend ni envío de la petición a un servidor.
-- Enrutamiento en dispositivos con recursos muy limitados: los 3,7 MB en dos ficheros GGUF caben en cualquier entorno con unos pocos megabytes de memoria, incluidos entornos embebidos con Rust.
-- Clasificación de intenciones en inglés y francés: los resultados en CLINC150 (0.8040) y MASSIVE (0.5340) lo hacen utilizable como clasificador de intención ligero en esos dos idiomas, con la advertencia de que en MASSIVE queda por debajo de su propio componente de embedding.
-- Filtro previo antes de un modelo grande: usar s6-route para descartar opciones con alta confianza y delegar en un LLM solo los casos ambiguos, aprovechando que la precisión entre el 50 % de slates más confiados es 0.996.
+- Enrutamiento de herramientas en agentes ligeros: dado un catálogo de hasta siete herramientas con nombres distintivos (luces, clima, correo), el modelo elige la herramienta correcta y evita llamadas innecesarias a un LLM grande, con un artefacto de 3,7 MB desplegable en el cliente.
+- Asistentes de voz o chat en el navegador: la demo oficial ejecuta el router vía WebAssembly con dos ficheros GGUF descargados por HTTP, de modo que la decisión de qué herramienta invocar ocurre localmente sin enviar la petición a un servidor.
+- Pasarela de abstención en pipelines de agentes: cuando la probabilidad máxima queda por debajo de 0,671047, el sistema devuelve "ask" y puede derivar la petición a un modelo mayor o a un humano, reduciendo ejecuciones erróneas de herramientas.
+- Filtrado previo en servidores MCP: el modelo puede descartar herramientas irrelevantes antes de exponer el catálogo completo al LLM, aunque el autor advierte que en herramientas MCP nuevas su precisión (0,5530) queda por debajo de BM25 (0,5675) y de all-MiniLM-L6-v2 (0,6630).
+- Despliegue en entornos con restricciones de cómputo: al no requerir GPU y caber en dos ficheros de kilobytes, es adecuado para dispositivos embebidos, funciones serverless o binarios Rust distribuidos con la aplicación.
+- Comparación y línea base en investigación de enrutamiento: el proyecto publica resultados completos, incluidos los fallos, el pre-registro y el código en Rust, lo que lo convierte en una referencia reproducible para evaluar routers de herramientas frente a BM25 y encoders pequeños.
+- Clasificación de intenciones bilingüe (inglés y francés) en dominios con catálogos cerrados y nombres de herramienta descriptivos.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre ficheros frescos (T2-tools: 945 slates, 20 % con "ninguna" como respuesta correcta; el resto: 2.000 cada uno):
+| Metrica | s6-route | BM25 | all-MiniLM-L6-v2 |
+|---|---|---|---|
+| Acierto en T2-tools (945 peticiones frescas, 273 clústeres, herramientas no vistas) | 0,8868 | 0,8169 | 0,9048 |
+| Diferencia frente a BM25 | +0,0698 [0,0455, 0,0952] | — | — |
+| Diferencia sin los tres clústeres mayores | +0,0202 [−0,0062, +0,0481] | — | — |
+| Bootstrap remuestreando clústeres | +0,0698 [−0,0079, +0,1404] | — | — |
+| Acierto con todas las herramientas renombradas tool_<k> | 0,2497 | 0,8138 | no disponible |
+| Acierto en peticiones frescas sobre herramientas MCP | 0,5530 | 0,5675 | 0,6630 |
+| ECE (calibración) | 0,0162 | 0,0779 | no disponible |
+| F1 de la respuesta "none" | 0,7732 | 0,6368 | no disponible |
 
-| Sistema | Tamano | T2-tools | Nombres enmascarados | MetaTool | CLINC150 | MASSIVE (en/fr) |
-|---|---:|---:|---:|---:|---:|---:|
-| s6-route | 3,7 MB | 0.8868 | 0.2497 | 0.5175 | 0.8040 | 0.5340 |
-| s6-route, modo rápido | 3,7 MB | 0.8836 | 0.2899 | 0.5130 | 0.8020 | 0.5300 |
-| s6-route-nano solo (modelo) | 2,4 MB | 0.7926 | 0.0720 | 0.3190 | 0.4240 | 0.3680 |
-| potion-base-2M, coseno, 4 bits (embedding) | 1,3 MB | 0.7386 | 0.7280 | 0.5340 | 0.7855 | 0.4755 |
-| BM25 (herramientas del slate) | sin parámetros | 0.8169 | 0.8138 | 0.4330 | 0.4990 | 0.3205 |
-| BM25 fusionado con el mismo embedding | 1,3 MB | 0.8624 | 0.8423 | 0.5420 | 0.7750 | 0.4515 |
-| all-MiniLM-L6-v2, coseno | 91,6 MB | 0.9048 | 0.9005 | 0.6570 | 0.8790 | 0.5730 |
-| toolrouter (stanley-nv) | 7,66 MB | 0.7735 | 0.7513 | 0.5910 | 0.7470 | 0.5900 |
-
-Métricas adicionales en T2-tools: ECE 0.0162 (MiniLM 0.0254, BM25 0.0779); F1 de la clase "ninguna" 0.7732 (MiniLM 0.8010, BM25 0.6368); precisión entre el 50 %/70 %/90 % de slates más confiados 0.996/0.977/0.929. Bootstrap pareado por slates: +0.0942 [0.0720, 0.1185] sobre el modelo solo, +0.1481 [0.1228, 0.1714] sobre el embedding solo, +0.0243 [0.0085, 0.0413] sobre BM25 fusionado con el embedding y −0.0180 [−0.0381, ...] frente a MiniLM (intervalo truncado en la información disponible).
+La puerta pre-registrada exigía superar a BM25 en T2-tools con el límite inferior del intervalo al 95 % por encima de cero, y alcanzar como mínimo MiniLM − 0,03 (es decir, 0,8748). Ambas condiciones se cumplieron. El autor señala explícitamente que dos lecturas del resultado matizan el aprobado: sin los tres clústeres mayores la ventaja sobre BM25 cae a +0,0202 con intervalo que contiene el cero, y el bootstrap por clústeres también contiene el cero. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) porque el modelo no realiza esas tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en la práctica; el sistema completo ocupa 3.692.224 bytes en disco y puede residir en memoria del sistema o en memoria del navegador.
-- GPU recomendadas: ninguna necesaria. El autor indica explícitamente que no se usó GPU para construir esta versión.
-- GPU de consumo: irrelevante; cabe en cualquier equipo, incluidos entornos sin GPU.
-- Opciones de despliegue: binario Rust del proyecto skycmd, módulo WASM SIMD128 en navegador y, por el formato GGUF, potencialmente llama.cpp u otros cargadores GGUF (no documentado por el autor para este modelo).
-- Latencia: 30,9 ms de mediana por petición en WASM SIMD128 con la lista de herramientas cacheada. No se publican cifras de throughput.
+- VRAM estimada: no requiere GPU; el artefacto completo ocupa 3,7 MB en dos ficheros GGUF y cabe en memoria RAM de cualquier dispositivo.
+- GPU recomendadas: ninguna. El autor indica que no se usó GPU ni para entrenar ni para evaluar esta versión.
+- Cabe en cualquier GPU de consumo y en CPU; también se ejecuta en el navegador vía WebAssembly.
+- Opciones de despliegue: Rust nativo (crates sky-web/src/router.rs y sky-infer/src/embed.rs), WebAssembly mediante el paquete sky_web.js publicado en GitHub Pages, y los ficheros GGUF s6-route-nano.gguf y s6-route-embed.gguf. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que no es un modelo generativo.
+- Latencia y throughput: no se publican cifras absolutas; la puerta de latencia se fijó en 30 veces la de s6-route-nano v2, establecida después de medir v2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros / tamano | Contexto | T2-tools | MetaTool | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Rendimiento en enrutamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| s6-route | 974.424 / 3,7 MB | no disponible | 0.8868 | 0.5175 | Apache 2.0 | Hugging Face, Rust, WASM |
-| all-MiniLM-L6-v2 | 91,6 MB | no disponible | 0.9048 | 0.6570 | no disponible en la información | Hugging Face, ampliamente desplegado |
-| toolrouter (stanley-nv) | 7,66 MB | no disponible | 0.7735 | 0.5910 | no disponible en la información | Hugging Face |
-| BM25 (línea base) | sin parámetros | no disponible | 0.8169 | 0.4330 | no aplica | Cualquier implementación |
+| s6-route | Clasificador ternario + embeddings estáticos | 974.424 | no disponible (hasta 7 herramientas) | 0,8868 en T2-tools; 0,2497 con nombres enmascarados; 0,5530 en MCP | Apache 2.0 | Hugging Face, Rust, WASM |
+| BM25 | Recuperación léxica clásica | 0 (sin modelo) | no aplica | 0,8169 en T2-tools; 0,8138 con nombres enmascarados; 0,5675 en MCP | no aplica | Implementaciones ubicuas |
+| all-MiniLM-L6-v2 | Encoder de frases | no disponible en la información (91,6 MB) | no disponible | 0,9048 en T2-tools; 0,6630 en MCP | no disponible en la información | Hugging Face, Sentence Transformers |
+| s6-route-nano (v2) | Clasificador ternario | no disponible | no disponible | Falló su propia puerta de validación | Apache 2.0 | Hugging Face |
 
-Frente a MiniLM, s6-route pierde 0.0180 puntos en T2-tools con un 96 % menos de tamaño, pero gana en calibración (ECE 0.0162 frente a 0.0254) y en latencia en navegador. Frente a toolrouter, gana en T2-tools (0.8868 frente a 0.7735) y CLINC150 (0.8040 frente a 0.7470), pero pierde en MetaTool (0.5175 frente a 0.5910) y MASSIVE (0.5340 frente a 0.5900).
+La regla que el propio autor deriva de estos datos: s6-route para nombres distintivos y tipos de herramienta familiares; BM25 para nombres genéricos o numerados y para familias nuevas como los servidores MCP; all-MiniLM-L6-v2 cuando la precisión es prioritaria y se pueden asumir unos 92 MB; y mantener BM25 como verificación cruzada.
 
 ## Limitaciones y advertencias
 
-- Dependencia crítica de los nombres de herramientas: al renombrar todas las herramientas como `tool_<k>`, la precisión cae a 0.2497, mientras BM25 mantiene 0.8138. El sistema necesita nombres distintivos.
-- El resultado principal no es robusto a todas las lecturas: sin los tres clústeres mayores la ventaja sobre BM25 baja a +0.0202 [−0.0062, +0.0481], y el bootstrap que remuestrea clústeres da +0.0698 [−0.0079, +0.1404]; ambos intervalos contienen el cero.
-- En MetaTool queda por debajo de su propio componente de embedding (0.5175 frente a 0.5340), dentro de la tolerancia de 0.02 que permite la puerta G2.
-- El objetivo anunciado de ≥ 0.95 de precisión entre peticiones respondidas con cobertura ≥ 0.80 no se cumplió (0.9433 con cobertura 0.8593).
-- El umbral de latencia de 60 ms se fijó después de medir v2, que incumplió su propio umbral de 2 ms (38,9 ms); el autor lo declara explícitamente.
-- v3 se diseñó tras leer el test de v2, lo que el propio autor señala como caveat metodológico; la puerta se leyó una sola vez sobre ficheros frescos.
-- Idiomas limitados a inglés y francés; no hay soporte documentado de otros idiomas.
-- No es un modelo generativo: no puede redactar respuestas, razonar en varios pasos ni invocar herramientas por sí mismo; solo clasifica opciones de un conjunto cerrado de hasta 7.
-- Licencia Apache 2.0, que permite uso comercial, pero conviene verificar la licencia del embedding subyacente (potion-base-2M) para el despliegue combinado.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí de enrutamiento erróneo con confianza alta en dominios alejados de los datos de evaluación.
+- Dependencia crítica de los nombres de herramienta: con todas las herramientas renombradas como tool_<k>, el acierto cae a 0,2497, frente a 0,8138 de BM25. El autor exige nombres distintivos para su uso.
+- Rendimiento inferior en familias nuevas: en herramientas MCP frescas obtiene 0,5530, por debajo de BM25 (0,5675) y de all-MiniLM-L6-v2 (0,6630).
+- Ventaja frágil sobre BM25: sin los tres clústeres mayores del test, la diferencia es +0,0202 con intervalo [−0,0062, +0,0481], que contiene el cero; el bootstrap por clústeres también contiene el cero.
+- Metodología de evaluación cuestionable en parte: el sistema v3 se diseñó tras leer el test de v2, la puerta de latencia se fijó después de medir v2 y el umbral y el exponente se ajustaron en validación. El autor lo declara en el pre-registro.
+- Alcance funcional mínimo: solo clasifica entre hasta siete opciones más "none"; no genera texto, no razona en varios pasos y no soporta tool calling generativo.
+- Idiomas limitados a inglés y francés; no se documenta comportamiento en castellano.
+- Riesgo de calibración fuera de distribución: el umbral τ_ask3 = 0,671047 se fijó sobre validación y puede no transferirse a catálogos de herramientas muy distintos.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base potion-base-2M y el dataset skycmd-route deben verificarse por separado si se redistribuyen.
+- No se han publicado resultados de benchmarks estándar de NLP; las cifras disponibles son específicas de la tarea de enrutamiento y del protocolo del proyecto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/maxgfr/s6-route
-- Modelo base v2: https://huggingface.co/maxgfr/s6-route-nano
-- Embedding utilizado: https://huggingface.co/minishlab/potion-base-2M
-- Demo en Spaces: https://huggingface.co/spaces/maxgfr/s6-route
-- Código fuente: https://github.com/maxgfr/skycmd
-- Resultados y benchmarks: https://github.com/maxgfr/skycmd/blob/main/BENCH.md#s6-route-s6-nano-v3-the-v2-router-fused-with-a-static-embedding-pre-registered-gate-passed
-- Resultados de la evaluación fresca: https://github.com/maxgfr/skycmd/blob/main/runs/s6-nano3/eval-fresh/results.md
+- Modelo base s6-route-nano: https://huggingface.co/maxgfr/s6-route-nano
+- Embeddings estáticos potion-base-2M: https://huggingface.co/minishlab/potion-base-2M
+- Dataset skycmd-route: https://huggingface.co/datasets/maxgfr/skycmd-route
+- Demo interactiva: https://huggingface.co/spaces/maxgfr/s6-route
+- Demo del proyecto skycmd: https://huggingface.co/spaces/maxgfr/skycmd
+- Página del router: https://maxgfr.github.io/skycmd/router/
+- Código fuente (Rust): https://github.com/maxgfr/skycmd
+- Resultados completos, incluidos fallos: https://maxgfr.github.io/skycmd/results/#s6-route-passed
+- Informe técnico: https://maxgfr.github.io/skycmd/paper/
 - Pre-registro: https://github.com/maxgfr/skycmd/blob/main/docs/s6-nano3-prereg.md
-- Página de resultados del proyecto: https://maxgfr.github.io/skycmd/results/
-- Página del enrutador en el sitio del proyecto: https://maxgfr.github.io/skycmd/router/
+- Benchmarks detallados: https://github.com/maxgfr/skycmd/blob/main/BENCH.md#s6-route-s6-nano-v3-the-v2-router-fused-with-a-static-embedding-pre-registered-gate-passed
+- Resultados de la evaluación fresca: https://github.com/maxgfr/skycmd/blob/main/runs/s6-nano3/eval-fresh/results.md
+- Guía de uso en producción: https://maxgfr.github.io/skycmd/use/#tool-routing

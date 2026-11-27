@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SmolLM-360M-Instruct-TigerMath-Evaluated-EvolQuality-SFT-GGUF",
+  "slug": "mradermacher-smollm-360m-instruct-tigermath-evaluated-evolquality-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolLM-360M-Instruct-TigerMath-Evaluated-EvolQuality-SFT-GGUF",
+  "created_at": "2024-12-28T11:53:30.000Z",
+  "updated_at": "2026-11-27T00:02:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:thesven/SmolLM-360M-Instruct-TigerMath-Evaluated-EvolQuality-SFT",
+    "base_model:quantized:thesven/SmolLM-360M-Instruct-TigerMath-Evaluated-EvolQuality-SFT",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729509376,
+  "storage_human": "3.7 GB",
+  "context_length": 2048,
+  "base_model": "thesven/SmolLM-360M-Instruct-TigerMath-Evaluated-EvolQuality-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "1aurent",
   "url": "https://huggingface.co/1aurent/resnet50.medmae_in1k_mocov2_ft_CXR",
   "created_at": "2023-11-28T10:38:31.000Z",
-  "updated_at": "2026-11-23T07:52:49.000Z",
+  "updated_at": "2026-11-23T08:51:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 42,
+  "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 23589838,
   "parameters_human": "23.6M",

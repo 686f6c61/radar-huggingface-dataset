@@ -2,103 +2,93 @@
 
 ## Resumen
 
-Starlight-small-1-GGUF es el repositorio de cuantizaciones en formato GGUF del modelo North-ML1/starlight-small-1, publicado por el usuario mradermacher, conocido por generar versiones cuantizadas de modelos abiertos para inferencia local. El modelo original es un modelo de generación de texto conversacional de tipo "small", con 752.393.024 parámetros (aproximadamente 752 millones), lo que lo sitúa en la gama de modelos compactos que pueden ejecutarse en hardware de consumo e incluso en CPU.
+starlight-small-1 es un modelo de generacion de texto de tipo transformer con 752.393.024 parametros (aproximadamente 0,75 mil millones), desarrollado por North-ML1 y distribuido bajo licencia Apache 2.0. El repositorio que nos ocupa, mradermacher/starlight-small-1-GGUF, no contiene los pesos originales, sino las cuantizaciones estaticas en formato GGUF del modelo base North-ML1/starlight-small-1, generadas por mradermacher con su herramienta habitual de conversion desde safetensors.
 
-El repositorio no aporta información técnica sobre la arquitectura del modelo base, el proceso de entrenamiento, la longitud de contexto o el dataset utilizado: la model card se limita a documentar las cuantizaciones estáticas generadas (desde Q2_K hasta f16), su tamaño en disco y la licencia. El propio README indica que no hay cuantizaciones ponderadas o basadas en imatrix disponibles por el momento, aunque podrían solicitarse mediante una discusión comunitaria.
+El modelo esta etiquetado como conversacional y de generacion de texto, con soporte declarado unicamente para el idioma ingles. Su tamano compacto (menos de mil millones de parametros) lo situa en la categoria de modelos pequenos aptos para inferencia en CPU o en GPUs de consumo, y su publicacion en GGUF facilita su despliegue con llama.cpp, Ollama y otros runners compatibles.
 
-Su relevancia actual es práctica: al estar bajo licencia Apache 2.0 y en formato GGUF, el modelo es directamente desplegable con llama.cpp, Ollama o LM Studio en equipos sin GPU dedicada, con pesos que van de 0,5 GB (Q2_K) a 1,6 GB (f16). No obstante, la ausencia de benchmarks publicados y de documentación del modelo base limita cualquier evaluación rigurosa de su calidad respecto a alternativas de tamaño similar.
+La relevancia de esta ficha radica en que el repositorio GGUF es la via practica de acceso al modelo para la mayoria de desarrolladores: el repo pesa 7,5 GB en total por acumulacion de cuantizaciones, pero cada fichero individual ocupa entre 0,5 GB (Q2_K) y 1,6 GB (f16), lo que permite ejecutarlo en hardware modesto. La informacion publica disponible sobre el modelo base es escasa, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 752.393.024 (aproximadamente 752 M) |
-| Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | inglés (en) |
+| Arquitectura | Transformer (detalle interno no disponible) |
+| Parametros totales | 752.393.024 (segun safetensors del modelo base) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (las cuantizaciones de este repositorio); el modelo base se distribuye en safetensors |
-| Pipeline | text-generation |
-| Librería declarada | transformers |
-| Modelo base | North-ML1/starlight-small-1 |
-| Tamaño del repositorio | 7,5 GB |
-| Fecha de creación del repositorio | 2026-10-06 (según metadatos de Hugging Face) |
-| Última actualización | 2026-10-06 (según metadatos de Hugging Face) |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base en la documentación disponible. Los metadatos de Hugging Face no especifican si se trata de un transformer denso, una arquitectura MoE, un modelo híbrido o un modelo basado en space state models (SSM). Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tamaño del vocabulario. La etiqueta "starlight" apunta a una familia propia de North-ML1, pero no hay material técnico asociado en la información proporcionada.
+No se dispone de informacion publica detallada sobre la arquitectura interna del modelo base North-ML1/starlight-small-1. Por el numero de parametros (752 millones) y la etiqueta de pipeline text-generation con transformers, se trata de un transformer decoder-only de escala pequena, pero no se han publicado datos sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni vocabulario.
 
-Respecto al entrenamiento, no hay datos disponibles sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre posibles innovaciones técnicas (atención lineal, decodificación especulativa, atención por ventanas, etc.). El repositorio de mradermacher documenta únicamente el proceso de cuantización: cuantizaciones estáticas, sin versiones ponderadas o imatrix en el momento de la publicación, y con conversión desde pesos de Hugging Face (convert_type: hf).
+Tampoco hay informacion disponible sobre el corpus de entrenamiento (numero de tokens, composicion del dataset), sobre si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas especificas. El repositorio GGUF documenta exclusivamente el proceso de cuantizacion estatica: se generaron 12 variantes con la herramienta de mradermacher, y el autor indica que las cuantizaciones ponderadas con imatrix no estan disponibles y probablemente no se planifiquen salvo peticion explicita en la seccion de discusiones de la comunidad.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio declara la etiqueta "conversational" y el pipeline "text-generation", por lo que está orientado a diálogo multi-turno.
-- Generación de texto general: al ser un modelo de 752 M de parámetros, sus capacidades de razonamiento complejo son presumiblemente limitadas en comparación con modelos de mayor tamaño; no hay evaluación publicada que lo confirme.
-- Capacidades multilingües: el modelo declara únicamente inglés (en). No se documenta soporte de otros idiomas, incluido el castellano.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere compatibilidad con infraestructuras de despliegue tipo Inference Endpoints.
+- Generacion de texto conversacional: el modelo esta etiquetado como conversacional y de text-generation, orientado a dialogos de un solo turno o multi-turno.
+- Generacion de texto general en ingles: el unico idioma declarado en la model card es el ingles.
+- Razonamiento y codigo: no hay informacion publicada que confirme capacidades especificas de razonamiento, matematicas o generacion de codigo.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado local sin GPU: con cuantizaciones de 0,5 a 0,9 GB (Q2_K a Q8_0), el modelo puede ejecutarse íntegramente en CPU con llama.cpp, lo que permite validar pipelines de generación de texto en portátiles o servidores sin acelerador antes de escalar a modelos mayores.
-- Asistentes conversacionales ligeros en inglés: al declarar la etiqueta "conversational" y estar orientado a text-generation, encaja en bots de chat de dominio acotado (por ejemplo, FAQ internas en inglés) donde el coste por inferencia debe ser mínimo.
-- Generación de texto en el borde (edge computing): su tamaño permite desplegarlo en dispositivos con recursos limitados, como mini-PC o Raspberry Pi con 4-8 GB de RAM, usando Q4_K_S o Q4_K_M.
-- Filtrado y clasificación de texto en pipelines de datos: tareas de etiquetado, resumen corto o reformulación de frases cortas en inglés, donde no se requiere razonamiento profundo ni contexto largo.
-- Base para ajuste fino experimental: al estar bajo Apache 2.0 y contar con pesos en safetensors en el modelo base, puede servir como punto de partida para fine-tuning de bajo coste (LoRA) en tareas concretas en inglés.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 niveles de cuantización del mismo modelo, lo que permite medir empíricamente la degradación de calidad frente a tamaño en un modelo pequeño.
-- Despliegue en entornos con restricciones de licencia permisiva: la licencia Apache 2.0 facilita la integración en productos comerciales, siempre que se respete la atribución y se verifiquen los términos del modelo base.
+- Prototipado rapido de chatbots en local: con cuantizaciones de 0,5 a 0,7 GB, el modelo se puede cargar en un portatil sin GPU dedicada mediante llama.cpp u Ollama, lo que permite validar flujos conversacionales antes de escalar a modelos mayores.
+- Generacion de texto en aplicaciones de escritorio: al ser un modelo de menos de mil millones de parametros, puede embeberse en herramientas de escritorio que necesiten completar texto o mantener conversaciones simples sin conexion a la nube.
+- Filtrado y clasificacion de texto en pipelines: su tamano permite ejecutarlo en CPU junto a otros procesos, por ejemplo para resumir o reescribir fragmentos en ingles dentro de un ETL de datos.
+- Educacion e investigacion: sirve como modelo de referencia para estudiar el efecto de las distintas cuantizaciones GGUF (Q2_K frente a Q8_0) sobre la calidad de salida en un modelo pequeno.
+- Despliegue en entornos con recursos limitados: en contenedores con poca memoria o en dispositivos edge donde no cabe un modelo de 7B o superior, la variante Q4_K_M ofrece un equilibrio razonable entre tamano y calidad.
+- Generacion de respuestas en ingles para asistentes de documentacion: integrado en un pipeline RAG sencillo, puede redactar respuestas a partir de fragmentos recuperados, siempre que el caso de uso tolere la calidad de un modelo de 0,75B.
+- Pruebas de integracion de infraestructura de inferencia: util para validar configuraciones de vLLM, llama.cpp o TGI con un modelo ligero antes de desplegar modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench, Perplexity ni de ninguna otra evaluación. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos correspondían a páginas de estado de servidores de videojuegos sin relación con el tema).
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos del modelo base incluyen puntuaciones de MMLU, HumanEval, GSM8K u otras evaluaciones.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: f16 1,6 GB; Q8_0 0,9 GB; Q6_K 0,7 GB; Q5_K_M y Q5_K_S 0,7 GB; Q4_K_M, Q4_K_S e IQ4_XS 0,6 GB; Q3_K_L y Q3_K_M 0,6 GB; Q3_K_S y Q2_K 0,5 GB. A estas cifras hay que sumar el consumo del contexto (KV cache), cuyo tamaño depende de la longitud de contexto configurada, no documentada.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede alojar las cuantizaciones de 4 bits con margen; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradamente suficientes y quedarán limitadas por el resto del pipeline, no por el modelo.
-- Compatibilidad con GPU de consumo: sí, en todas las cuantizaciones. Incluso las GPU integradas y las CPU modernas pueden ejecutarlo.
-- Ejecución sin GPU: viable en CPU con llama.cpp; los archivos de 0,5-0,9 GB caben en memoria de sistemas con 4 GB de RAM o más.
-- Opciones de despliegue: llama.cpp, Ollama (mediante Modelfile apuntando al GGUF), LM Studio, text-generation-webui, llama-cpp-python y servidores compatibles con GGUF. Para el modelo base en safetensors, transformers, vLLM o TGI (sujeto a que la arquitectura sea soportada por estas herramientas, dato no disponible).
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo en la información proporcionada.
+- VRAM estimada para inferencia: entre 0,5 y 1 GB para las cuantizaciones Q2_K a Q8_0, y aproximadamente 1,6 GB para f16 (mas overhead del runtime).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ejecuta el modelo con holgura. En A100 o H100 el modelo queda sobredimensionado en cuanto a memoria, aunque puede usarse para servir muchas instancias en paralelo.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos anos, e incluso en iGPU con memoria compartida suficiente.
+- Cabe en CPU: si, con llama.cpp; las variantes Q4_K_S y Q4_K_M (0,6 GB) son las recomendadas por el autor por su velocidad.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers. vLLM y TGI no estan confirmados para este modelo en la informacion disponible.
+- Latencia y throughput estimados: no disponibles. A modo orientativo, un modelo de 0,75B en CPU moderna suele generar decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con modelos compactos de propósito general de tamaño comparable. Los datos de las alternativas provienen de sus fichas públicas y no se han verificado contra las fuentes originales en esta ficha; los del modelo tratado figuran como "no disponible" cuando no constan.
+No se dispone de datos de rendimiento del modelo que permitan una comparativa rigurosa. A continuacion se comparan solo caracteristicas objetivas con alternativas de escala similar ampliamente conocidas; los datos de rendimiento de starlight-small-1 no estan publicados.
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Benchmarks públicos |
+| Modelo | Parametros | Contexto | Licencia | Formato | Idiomas |
 |---|---|---|---|---|---|
-| starlight-small-1 (GGUF de mradermacher) | 752 M | no disponible | Apache 2.0 | inglés | no disponibles |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens (según su ficha) | Apache 2.0 | multilingüe | publicados por el autor |
-| SmolLM2-360M | 362 M | 8 192 tokens (según su ficha) | Apache 2.0 | inglés principalmente | publicados por el autor |
-| TinyLlama-1.1B | 1 100 M | 2 048 tokens (según su ficha) | Apache 2.0 | inglés | publicados por el autor |
+| starlight-small-1 | 752 M | No disponible | Apache 2.0 | GGUF, safetensors | Ingles |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Multilingue |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community | safetensors, GGUF | Multilingue |
+| SmolLM2-1.7B | 1,71 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Multilingue |
 
-Diferencias destacables: frente a Qwen2.5-0.5B, el modelo tratado no documenta contexto ni soporte multilingüe, y carece de resultados publicados. Frente a SmolLM2-360M y TinyLlama-1.1B, cuenta con un tamaño intermedio pero sin evidencia pública de calidad. La ventaja común de los cuatro es la licencia permisiva (Apache 2.0) y la disponibilidad en formatos cuantizados para inferencia local.
+La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks publicados de starlight-small-1 que permitan contrastar calidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no se conocen arquitectura, contexto, dataset ni proceso de alineación, lo que impide estimar el comportamiento en producción.
-- Riesgo de alucinación: inherente a los modelos de lenguaje generativos, y presumiblemente elevado en un modelo de 752 M de parámetros sin datos de evaluación publicados.
-- Sesgos conocidos: no disponible. Al no documentarse la composición del dataset de entrenamiento, no es posible identificar sesgos de género, raza, ideología o dominio.
-- Idioma: el modelo declara únicamente inglés. Su uso en castellano u otros idiomas no está soportado ni evaluado, y previsiblemente dará resultados degradados.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas ni planificar el consumo de KV cache.
-- Calidad de las cuantizaciones: las cuantizaciones por debajo de Q4 (Q3_K_S, Q3_K_M, Q2_K) degradan notablemente la perplejidad según las gráficas de referencia enlazadas por el propio cuantizador; se recomienda Q4_K_M o superior para uso real.
-- Cuantizaciones ponderadas no disponibles: el autor indica que las versiones imatrix o weighted no están publicadas y podrían no estarlo.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero conviene verificar la ficha del modelo base (North-ML1/starlight-small-1) por si hubiera condiciones adicionales no reflejadas en las etiquetas.
-- Metadatos anómalos: las fechas del repositorio (2026) y el contador de descargas y likes a cero sugieren un modelo con nula adopción y sin validación por parte de la comunidad.
-- Sin garantías de soporte: no hay paper, blog técnico ni repositorio de código asociado al modelo en la información disponible.
+- Sesgos conocidos: no hay informacion publicada sobre evaluaciones de sesgo; al ser un modelo entrenado presumiblemente con datos web en ingles, es esperable un sesgo hacia perspectivas angloparlantes y occidentales, aunque no esta cuantificado.
+- Riesgo de alucinacion: alto en terminos relativos, dado el reducido numero de parametros (0,75B); no debe usarse como fuente de verdad en dominios facticos sin verificacion.
+- Limitaciones de idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Limitaciones de contexto: la longitud de contexto no esta publicada, lo que impide planificar casos de uso con documentos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no obstante, conviene revisar la licencia del modelo base North-ML1/starlight-small-1 por si anade condiciones adicionales.
+- Caveats para produccion: la ausencia de benchmarks, de documentacion de entrenamiento y de datos de contexto hace arriesgado su uso en produccion sin una evaluacion propia previa; las cuantizaciones Q2_K y Q3_K_M degradan la calidad de forma notable segun las notas del autor.
+- Las cuantizaciones ponderadas con imatrix no estan disponibles; solo existen las estaticas listadas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/starlight-small-1-GGUF
 - Modelo base: https://huggingface.co/North-ML1/starlight-small-1
-- Página de resumen de cuantizaciones del autor para este modelo: https://hf.tst.eu/model#starlight-small-1-GGUF
-- Preguntas frecuentes y solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre uso de archivos GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Búsqueda web: no se encontraron resultados relevantes sobre este modelo; los resultados devueltos correspondían a páginas de estado de servidores de videojuegos sin relación con el tema.
+- Pagina de descargas del autor: https://hf.tst.eu/model#starlight-small-1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

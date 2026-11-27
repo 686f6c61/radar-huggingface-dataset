@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Umit432/gemma-2-2b-laravel-lora · Hugging Face",
-      "url": "https://huggingface.co/Umit432/gemma-2-2b-laravel-lora",
-      "snippet": "This model is a fine-tuned version of Google's Gemma 2 2B IT optimized for PHP and Laravel development. It has been trained using Unsloth on specialized programming datasets to answer questions, write controllers, models, routes, and migrations for Laravel framework."
-    },
-    {
-      "title": "Umit432/gemma-2-2b-laravel-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Umit432/gemma-2-2b-laravel-GGUF",
-      "snippet": "This model is a fine-tuned version of Google's Gemma 2 2B IT optimized for PHP and Laravel development. It has been trained using Unsloth on specialized programming datasets to answer questions, write controllers, models, routes, and migrations for Laravel framework."
-    }
-  ]
+  "sources": []
 }

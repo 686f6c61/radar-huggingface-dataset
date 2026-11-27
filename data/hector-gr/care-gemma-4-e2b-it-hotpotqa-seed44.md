@@ -2,96 +2,97 @@
 
 ## Resumen
 
-CARE-Gemma-4-E2B-it-HotpotQA-seed44 es un ajuste fino de Google DeepMind Gemma 4 E2B-it realizado por Hector G. Rodriguez (con Marcus Rohrbach como coautor del metodo) para verbalizar la confianza del modelo en sus propias respuestas. El modelo se entrena sobre HotpotQA (QA multi-salto sobre Wikipedia) con la tecnica CARE (Cross-question Abstention Reward Estimation), que recompensa las confidencias de forma relativa dentro de un conjunto de preguntas en lugar de compararlas contra la etiqueta binaria de acierto de cada pregunta individual. El objetivo es habilitar selective prediction: responder solo cuando el modelo es fiable y abstenerse o derivar cuando no lo es.
+CARE-Gemma-4-E2B-it-HotpotQA-seed44 es un ajuste fino del modelo multimodal Google Gemma 4 E2B-it, desarrollado por Hector G. Rodriguez para verbalizar la confianza que el modelo tiene en sus propias respuestas mediante el método CARE (Cross-question Abstention Reward Estimation). El objetivo es que el modelo no solo conteste preguntas, sino que emita una puntuación de confianza calibrada que permita aplicar predicción selectiva: abstenerse o derivar a un humano o a un modelo mayor cuando la confianza sea baja.
 
-El checkpoint tiene 5.506.950.723 parametros en safetensors (11 GB de repo), hereda la arquitectura multimodal de Gemma 4 E2B-it (image-text-to-text) y la licencia Apache 2.0 del modelo base. Es relevante porque ataca un problema practico de produccion: los LLM tienden a sobreconfiar, y los rewards binarios tradicionales empujan las confidencias a 0 y 1, destruyendo la informacion de ranking necesaria para fijar umbrales de absteccion con tolerancia al riesgo no nula.
+El modelo parte de una arquitectura Gemma 4 con 5.506.950.723 parámetros totales y ha sido post-entrenado sobre el conjunto de datos HotpotQA de preguntas y respuestas multi-salto en Wikipedia. La innovación clave frente a métodos anteriores es que la recompensa de confianza se calcula de forma relativa entre un conjunto de preguntas, en lugar de contra la etiqueta binaria de acierto/error de cada pregunta individual, lo que produce distribuciones de confianza más informativas para umbrales de riesgo no nulos.
 
-El modelo emite la respuesta dentro de etiquetas `<answer>...</answer>` y la confianza dentro de `<confidence>...</confidence>`, y esta pensado para ordenar respuestas por confianza y aplicar un umbral calibrado sobre datos held-out. Es un checkpoint de investigacion (0 descargas, 0 likes en el momento de la ficha), no un modelo generalista de proposito comercial.
+Es relevante para desarrolladores e investigadores que despliegan sistemas con requisitos de fiabilidad y tolerancia al riesgo controlada, ya que permite maximizar la cobertura (preguntas respondidas) sujeto a un riesgo máximo de error. El checkpoint corresponde a la semilla 44 y el paper reporta resultados como la media de las semillas 43 y 44.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Gemma 4 E2B-it), fine-tune de post-entrenamiento con RL (CARE) |
+| Arquitectura | Transformer multimodal (Gemma 4), con codificadores de visión y audio congelados en este ajuste |
 | Parametros totales | 5.506.950.723 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la evaluacion usa limite de generacion de 4096 tokens) |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 E2B-it (revision `70af34e20bd4b7a91f0de6b22675850c43922a03`), un modelo multimodal image-text-to-text de Google DeepMind. El post-entrenamiento es exclusivamente de texto: los encoders de vision y audio se congelaron y el uso multimodal no fue evaluado. El fine-tune se realiza sobre el dataset `mehuldamani/hotpot_qa` (QA multi-salto sobre Wikipedia) con la tecnica CARE, descrita en el paper *Cross-Question Reliable Reinforcement Learning* de Hector G. Rodriguez y Marcus Rohrbach, y que se apoya en el trabajo RLCR (*Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty*, Damani et al., 2025).
+El modelo es un ajuste fino del Gemma 4 E2B-it de Google DeepMind (revisión `70af34e20bd4b7a91f0de6b22675850c43922a03`), un transformer multimodal con codificadores de visión y audio. En este checkpoint concreto, el post-entrenamiento es exclusivamente de texto: los codificadores de visión y audio se congelaron y el uso multimodal no ha sido evaluado. El entrenamiento se realizó sobre el dataset HotpotQA (`mehuldamani/hotpot_qa`), con configuración de batch por dispositivo 4, acumulación de gradiente 128 y longitud máxima de finalización de 1536 tokens.
 
-La innovacion central de CARE es que el reward no se calcula por par pregunta-respuesta de forma aislada, sino sobre un conjunto: para cada una de varias tolerancias al riesgo, las confidencias del conjunto inducen un umbral de absteccion y cada confianza se recompensa por situarse en el lado correcto del umbral. Asi, cada confianza verbalizada se refuerza en relacion con las de otras preguntas, no contra su propia etiqueta binaria de correccion. La configuracion de entrenamiento esta en `training_config.yaml`: batch por dispositivo 4, acumulacion de gradientes 128 y longitud maxima de completion 1536.
+La innovación técnica es el método CARE, descrito en el paper *Cross-Question Reliable Reinforcement Learning* de Hector G. Rodriguez y Marcus Rohrbach. A diferencia de los métodos que refuerzan la confianza de cada par pregunta-respuesta de forma individual (empujando a 1 en aciertos y a 0 en errores), CARE calcula la recompensa sobre un conjunto de pares: en cada uno de varios umbrales de tolerancia al riesgo, las confidencias del conjunto inducen un umbral de abstención y cada confianza se recompensa por situarse en el lado correcto de dicho umbral. Esto refuerza cada confianza verbalizada en relación con las demás preguntas y no contra su propia etiqueta binaria. El trabajo se apoya en RLCR (*Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty*, Damani et al., 2025).
 
 ## Capacidades
 
-- Generacion de texto y QA multi-salto sobre conocimiento general y Wikipedia.
-- Verbalizacion de confianza: emite `<answer>...</answer>` y `<confidence>...</confidence>` en la misma completion.
-- Selective prediction: permite ordenar respuestas por confianza y fijar umbrales de absteccion o derivacion a humano/modelo mas fuerte.
-- Razonamiento de tipo QA sobre benchmarks de conocimiento general, razonamiento y matematicas (segun la evaluacion OOD reportada).
-- Capacidades multimodales heredadas de Gemma 4 E2B-it: presentes en la arquitectura pero no evaluadas en este checkpoint (encoders congelados).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Generación de texto conversacional y respuesta a preguntas, incluyendo preguntas multi-salto sobre Wikipedia (HotpotQA).
+- Verbalización de la confianza en la propia respuesta: la salida incluye etiquetas `<answer>...</answer>` y `<confidence>...</confidence>`.
+- Predicción selectiva: permite ordenar respuestas por confianza y aplicar umbrales de abstención según la tolerancia al riesgo.
+- Razonamiento multi-salto: entrenado específicamente sobre un dataset de QA que requiere combinar información de varios documentos.
+- Capacidades heredadas del modelo base Gemma 4 E2B-it (visión y audio) presentes en la arquitectura pero no evaluadas ni ajustadas en este checkpoint.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutado con absteccion en pipelines de QA: ejecutar el modelo sobre una pregunta, leer la confianza verbalizada y derivar a un humano o a un modelo mayor cuando la confianza cae por debajo de un umbral calibrado en held-out. Es el caso de uso central del paper.
-- QA sobre documentacion interna con control de riesgo: en un corpus de tipo Wikipedia o documentacion tecnica, ordenar respuestas por confianza y servir solo las que superan el umbral de riesgo tolerado (por ejemplo, 5% o 10%).
-- Filtrado de candidatos en sistemas de retrieval-augmented generation: usar la confianza como señal de reranking para descartar respuestas poco fiables antes de mostrarlas al usuario.
-- Investigacion en calibracion y selective prediction: sirve como checkpoint de referencia para comparar rewards binarios frente a CARE en tareas de QA multi-salto, con semilla fija (seed 44) para reproducibilidad.
-- Evaluacion de riesgo en entornos regulados: en escenarios donde una respuesta incorrecta tiene coste alto, el modelo permite medir cobertura a una tolerancia de riesgo dada (C@r) y documentar el comportamiento del sistema.
-- Generacion de conjuntos de datos con etiquetas de confianza: producir pares respuesta-confianza para entrenar o validar modelos de enrutado y de deteccion de incertidumbre.
+- Atención al cliente con derivación inteligente: el modelo responde consultas y emite una confianza; los casos con confianza por debajo de un umbral se derivan a un agente humano, reduciendo el riesgo de respuestas erróneas en producción.
+- Enrutamiento entre modelos (model cascading): se usa el modelo pequeño para preguntas de alta confianza y se deriva a un modelo mayor o a un humano el resto, optimizando coste y latencia.
+- Control de calidad en pipelines de QA automatizado: ordenar las respuestas generadas por confianza permite a un revisor humano priorizar solo las respuestas dudosas.
+- Investigación en calibración y uncertainty estimation: el checkpoint sirve como referencia reproducible (semilla 44) para comparar métodos de recompensa de confianza frente a CARE.
+- Sistemas de respuesta sobre documentación o bases de conocimiento con requisitos regulatorios: la posibilidad de abstenerse explícitamente ayuda a cumplir políticas de "no responder si no se está seguro".
+- Evaluación de tolerancia al riesgo en dominios sensibles: ajustando el umbral de confianza sobre datos de validación, se puede fijar una cobertura objetivo con un riesgo máximo de error medible.
+- Generación de respuestas multi-salto sobre corpus tipo Wikipedia: útil en asistentes de investigación que combinan información de varias fuentes.
 
 ## Benchmarks y rendimiento
 
-Resultados de selective prediction reportados en la model card para este checkpoint (todas las cifras en %; C@r es cobertura al riesgo r; AURC menor es mejor). ID corresponde a HotpotQA; OOD agrega math-500, gsm8k, commonsenseqa, gpqa, simpleqa y trivia.
+Resultados de predicción selectiva del checkpoint (valores en %). ID corresponde a HotpotQA (hotpot-judge); OOD agrega math-500, gsm8k, commonsenseqa, gpqa, simpleqa y trivia. C@r es la cobertura con riesgo r; AURC, menor es mejor.
 
-| ID C@0 | ID C@1 | ID C@5 | ID C@10 | ID AURC ↓ | ID Acc | OOD C@0 | OOD C@1 | OOD C@5 | OOD C@10 | OOD AURC ↓ | OOD Acc |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 5.4 | 5.4 | 51.9 | 95.6 | 6.1 | 88.1 | 1.2 | 1.2 | 5.9 | 24.2 | 33.1 | 57.4 |
+| Conjunto | C@0 | C@1 | C@5 | C@10 | AURC ↓ | Accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| ID (HotpotQA) | 0,0 | 0,0 | 59,2 | 92,8 | 6,0 | 87,7 |
+| OOD | 1,1 | 2,1 | 3,5 | 19,9 | 34,7 | 55,5 |
 
-El paper reporta, como referencia agregada (media de las semillas 43 y 44 en la tabla de Gemma), mejoras de C@5 en OOD de 12.3% a 23.6% frente a rewards puntuales de coincidencia con la correccion, y en matematicas (MATH-500, GSM8K, Big-Math-Digits) de 0.8% a 42.4%. No se han publicado en la informacion disponible resultados de benchmarks estandar tipo MMLU o HumanEval para este checkpoint.
+El paper reporta que CARE eleva la cobertura al 5% de riesgo (C@5) en MATH-500, GSM8K y Big-Math-Digits del 0,8% al 42,4% frente a recompensas puntuales de acierto, y que, entrenado sobre HotpotQA, mejora C@5 en benchmarks OOD de conocimiento general, razonamiento y matemáticas (CommonsenseQA, GPQA, SimpleQA y TriviaQA) del 12,3% al 23,6%. La tabla del paper para Gemma reporta la media de las semillas 43 y 44.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 5.506.950.723 parametros, en bf16/fp16 el peso ocupa aproximadamente 11 GB, por lo que se necesita margen adicional para KV cache y activaciones.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, una GPU de 24 GB o superior es un punto de partida razonable en precision completa; no confirmado por el autor.
-- Cabe en consumer GPU: probablemente en GPUs de 24 GB en precision completa y en GPUs de 16 GB con cuantizacion, aunque no hay datos publicados que lo confirmen.
-- Opciones de despliegue: la model card exige un runtime compatible con Gemma 4 (libreria transformers); no se documentan soportes de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles. La evaluacion del paper usa una unica completion, temperatura 0 y limite de generacion de 4096 tokens.
-- Requisito de prompt: usar exactamente el system prompt de `system_prompt.txt`, la plantilla de chat guardada y todos los EOS IDs de `generation_config.json`.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 5.506.950.723 parámetros en safetensors, los pesos en FP16 ocupan aproximadamente 11 GB, lo que da una referencia mínima de memoria.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información proporcionada; por tamaño de pesos, sería necesario evaluar cuantizaciones (no publicadas) para GPUs de consumo.
+- Opciones de despliegue: la model card indica que se requiere un runtime compatible con Gemma 4; la librería declarada es transformers. No se confirman vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CARE-Gemma-4-E2B-it-HotpotQA-seed44 | 5.506.950.723 | no disponible | Fine-tune RL para confianza verbalizada (CARE) sobre HotpotQA | apache-2.0 | Hugging Face (0 descargas en el momento de la ficha) |
-| google/gemma-4-E2B-it (base) | no disponible en la informacion | no disponible | Modelo multimodal image-text-to-text de proposito general | apache-2.0 | Hugging Face |
-| Modelos con rewards binarios de correccion (RLCR, Damani et al., 2025) | no disponible | no disponible | Post-entrenamiento para estimar confianza con reward puntual | no disponible | Referencia en paper |
+No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada para establecer una comparativa cuantitativa fiable.
 
-No se dispone de datos suficientes para comparar rendimiento numerico con alternativas concretas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| CARE-Gemma-4-E2B-it-HotpotQA-seed44 | 5.506.950.723 | no disponible | Apache 2.0 | Ajuste CARE para confianza verbalizada |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | Apache 2.0 | Modelo base multimodal sin post-entrenamiento CARE |
+| Alternativas de predicción selectiva | no disponible | no disponible | no disponible | No hay datos en la información disponible |
 
 ## Limitaciones y advertencias
 
-- Una puntuacion de confianza no es una garantia de correccion; el propio autor lo advierte. El umbral debe calibrarse sobre datos held-out adecuados.
-- El checkpoint esta entrenado solo sobre HotpotQA; el rendimiento OOD es notablemente inferior (OOD C@5 de 5.9 frente a ID C@5 de 51.9).
-- El post-entrenamiento es solo de texto: los encoders de vision y audio estan congelados y el uso multimodal no ha sido evaluado.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a un modelo de 5.500 millones de parametros en tareas de conocimiento general.
-- Sesgos conocidos: no disponibles en la informacion proporcionada; hereda los sesgos del modelo base Gemma 4 E2B-it.
-- Idiomas soportados: no disponibles; la evaluacion se limita a benchmarks en ingles.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se incluye la licencia y el aviso de modificacion del modelo base; conviene revisar los terminos de Gemma 4 E2B-it.
-- Requiere un runtime compatible con Gemma 4 y el uso exacto del system prompt, la plantilla de chat y los EOS IDs guardados; un uso distinto puede degradar la calidad de la confianza.
-- Es un checkpoint de investigacion con 0 descargas y 0 likes: no hay evidencia de uso en produccion ni validacion externa.
+- La confianza verbalizada no es una garantía de corrección; debe calibrarse un umbral sobre datos de validación adecuados antes de usarla en producción.
+- El ajuste es solo de texto: los codificadores de visión y audio se congelaron y el uso multimodal no se ha evaluado.
+- Es necesario usar exactamente el system prompt de `system_prompt.txt`, la plantilla de chat guardada y todos los EOS IDs de `generation_config.json`; desviarse puede degradar la calidad de las confidencias.
+- La evaluación del paper se realizó con una sola completion, temperatura 0 y un límite de generación de 4096 tokens; otros ajustes de decodificación no están validados.
+- El modelo está entrenado sobre HotpotQA; su comportamiento en dominios muy distintos (matemáticas, conocimiento general) muestra una cobertura baja a riesgo bajo en OOD (C@0 de 1,1%, C@5 de 3,5%), lo que limita su uso directo fuera de distribución.
+- Sesgos conocidos: no disponibles en la información proporcionada; al heredar el modelo base, es previsible que arrastre sus sesgos, pero no se documentan.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; la propia naturaleza del método busca mitigarlo mediante abstención, no eliminarlo.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar la licencia y el aviso de modificación del modelo base; conviene revisar los términos de Gemma 4 de Google DeepMind.
+- Idiomas soportados no documentados; el entrenamiento se realizó sobre un dataset en inglés, por lo que el rendimiento en castellano no está validado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hector-gr/CARE-Gemma-4-E2B-it-HotpotQA-seed44
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/hotpot_qa
-- Paper CARE (Cross-Question Reliable Reinforcement Learning, Rodriguez y Rohrbach): no disponible como enlace en la informacion proporcionada
-- Paper RLCR (Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty, Damani et al., 2025): no disponible como enlace en la informacion proporcionada
+- Paper CARE (Cross-Question Reliable Reinforcement Learning, Rodriguez y Rohrbach): no disponible en la información proporcionada
+- Paper RLCR (Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty, Damani et al., 2025): no disponible en la información proporcionada

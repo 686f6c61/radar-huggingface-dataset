@@ -2,93 +2,107 @@
 
 ## Resumen
 
-LynnReal-Hand-Fast-preview es un adaptador nativo para generación de vídeo causal a partir de imagen (image-to-video) especializado en el control de manos, publicado por el usuario shaohao011 en Hugging Face. No se trata de un transformer autónomo, sino de un conjunto de pesos LoRA y tensores de condicionamiento por intervalos que deben combinarse con una revisión concreta del modelo base LynnReal-Hand-Base-1.0, un codificador de manos optimizado y un decodificador de vídeo. El checkpoint corresponde a la etapa III, iteración 136, empleando los pesos del adaptador "Live student".
+LynnReal-Hand-Fast-preview es un modelo de mundo (world model) generativo de vídeo controlado por manos, desarrollado por shaohao011 y publicado bajo el paraguas del proyecto LynnReal-AI. El modelo parte de una imagen inicial, un prompt de texto, una secuencia de movimiento de manos y una trayectoria de cámara, y genera vídeo de forma causal y por fragmentos (chunk-by-chunk), lo que permite su uso en escenarios de streaming. Se trata de un fine-tune especializado en muestreo (sampling-specialized) del modelo base LynnReal-Hand-Base-1.0.
 
-El modelo se enmarca en la familia MiniMax H3, de la que deriva el base, y su propósito es generar secuencias de vídeo de 960 × 540 píxeles con 17 fotogramas por bloque completo, manteniendo coherencia en la anatomía y el movimiento de las manos, un punto históricamente problemático en los modelos de generación de vídeo. Incorpora tres transiciones de flow-map y contexto W2 para la generación causal.
+La arquitectura es un transformer causal autorregresivo de aproximadamente 33.138 millones de parámetros (33B), orientado a la generación de vídeo de pocos pasos (few-step generation): tres pasos de muestreo por fragmento. Incorpora un contexto deslizante W2 (el fragmento actual más el fragmento generado precedente, con un ancla fija en el primer fotograma), un codificador compacto de manos y un decodificador Ultra-Fast-VAE. La resolución de salida por defecto es de 960 × 540 con 17 fotogramas RGB por fragmento completo.
 
-Es relevante ahora porque aborda un nicho específico (control fino de manos en vídeo generado) sobre una arquitectura de difusión causal, aunque su publicación es preliminar: el paquete portable aún no ha superado una validación en GPU y las revisiones de dependencias están pendientes de fijarse. El repositorio ocupa 4,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+Su relevancia actual radica en que combina tres tendencias de investigación punteras: modelos de mundo para vídeo, generación controlable de alta fidelidad (control de manos y cámara) y generación autorregresiva en streaming con pocos pasos, lo que lo hace apto para aplicaciones interactivas. El modelo reutiliza componentes de acondicionamiento del release oficial de MiniMax H3 (VAE nativa y codificador Qwen de imagen/texto) y se distribuye con licencia comunitaria MiniMax H3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre transformer de difusión causal (familia MiniMax H3); no es un modelo autónomo |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible (contexto W2 en generación causal; sin cifra de tokens) |
+| Arquitectura | Transformer causal autorregresivo (world model de vídeo) con contexto deslizante W2 y muestreo de pocos pasos |
+| Parametros totales | 33.138.827.904 (~33B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en tokens; contexto de vídeo W2 (fragmento actual + fragmento previo + ancla del primer fotograma), 17 fotogramas RGB por fragmento |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License Agreement (license_name: minimax-h3-community) |
-| Formato de pesos | safetensors |
-| Resolucion de salida | 960 × 540 píxeles |
-| Fotogramas por bloque | 17 |
-| Modelo base | shaohao011/LynnReal-Hand-Base-1.0 |
-| Linaje | MiniMax H3 → LynnReal-Hand-Base-1.0 → LynnReal-Hand-Fast-preview |
-| Etapa / checkpoint | Stage-III, checkpoint 136 (Live student adapter) |
-| Tamano del repositorio | 4,2 GB |
+| Licencia | other (minimax-h3-community) |
+| Formato de pesos | safetensors (repo de 262,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe un adaptador nativo para generación causal con tres transiciones de flow-map y contexto W2. Se trata de pesos LoRA junto con tensores de condicionamiento por intervalos y su configuración de adaptador, diseñados para inyectarse en el modelo base LynnReal-Hand-Base-1.0, que a su vez deriva de MiniMax H3. El pipeline declarado es image-to-video y el adaptador incluye un codificador de manos optimizado y un decodificador de vídeo como dependencias obligatorias. La naturaleza causal de la generación implica que los fotogramas se producen de forma autorregresiva por bloques de 17 frames, lo que permite extender secuencias más allá de un único chunk.
+LynnReal-Hand-Fast se construye sobre un backbone transformer causal de 33B especializado en muestreo, derivado por fine-tune del modelo LynnReal-Hand-Base-1.0. La generación es autorregresiva y causal por fragmentos: cada fragmento se condiciona en la historia ya generada, empleando un contexto deslizante W2 que mantiene el fragmento actual y el inmediatamente anterior, junto con un ancla fija del primer fotograma para preservar la coherencia temporal. El modelo opera con un schedule fijo de tres pasos de muestreo y shift 3.
 
-No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. El autor indica que el checkpoint pertenece a la etapa III y que se usan los pesos del adaptador "Live student", pero no detalla el proceso de destilación ni las métricas de validación. Tampoco se han fijado las revisiones del paquete ni las dependencias exactas, y se advierte explícitamente que el paquete portable no ha pasado una nueva prueba de aceptación en GPU, por lo que las mediciones del experimento original no garantizan el rendimiento de todas las combinaciones de componentes publicadas.
+El paquete incluye el transformer especializado en muestreo, los parámetros de acondicionamiento temporal en streaming, la VAE nativa H3, el codificador Qwen de imagen/texto con tokenizer y processor, el scheduler, el codificador compacto de manos (en `hand_encoder/`) y el decodificador Ultra-Fast-VAE (en `decoder/`). Los componentes de acondicionamiento nativos provienen del release oficial de MiniMax H3. Una innovación destacable es la optimización de memoria AdaLN: el transformer incluye únicamente las tablas de modulación AdaLN requeridas por su schedule de muestreo por defecto, omitiendo las matrices de proyección aprendidas por bloque, lo que reduce el tamaño de descarga y la memoria residente de parámetros; cambiar el schedule exige una nueva exportación. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se empleó RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen (image-to-video) con resolución de 960 × 540 píxeles y 17 fotogramas por bloque completo.
-- Control específico de manos: el adaptador incorpora un codificador de manos optimizado orientado a preservar la anatomía y el movimiento de los dedos.
-- Generación causal por bloques, lo que permite concatenar chunks para secuencias más largas.
-- Tres transiciones de flow-map y contexto W2 para mantener coherencia temporal entre bloques.
-- Integración como LoRA sobre el modelo base, no como modelo independiente.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-step, multilingüismo, audio ni visión general más allá del condicionamiento por imagen de entrada.
+- Generación de vídeo a partir de imagen (image-to-video) condicionada por prompt de texto.
+- Control explícito de movimiento de manos mediante un codificador compacto de manos y una secuencia de vídeo de mano como entrada.
+- Control de cámara mediante arrays de poses de cámara alineados.
+- Generación causal y autorregresiva por fragmentos, apta para streaming de vídeo.
+- Generación de pocos pasos: tres pasos de muestreo por fragmento.
+- Salida a 960 × 540 con 17 fotogramas RGB por fragmento completo.
+- Soporte de longitudes de entrada de 124, 158, 243 o 260 fotogramas, preservando la tasa de fotogramas de entrada.
+- Inferencia estándar y acelerada mediante el runtime LynnReal-Hand (con compilación y captura de CUDA graphs en el primer arranque).
+- Comparación visual opcional contra un vídeo de referencia.
+- Soporte de tool calling / function calling: no disponible.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- **Animación de personajes con manos en primer plano**: el adaptador está especializado en el control de manos, por lo que resulta adecuado para generar clips donde la gestualidad manual es el foco (saludos, señas, manipulación de objetos), usando una imagen de referencia y el base LynnReal-Hand-Base-1.0 como soporte.
-- **Previsualización de storyboards interactivos**: convertir fotogramas clave en clips de 17 frames a 960 × 540 para validar secuencias antes de una producción mayor, aprovechando la generación causal por bloques para encadenar escenas.
-- **Prototipado de interfaces de realidad aumentada o avatares**: generar animaciones de manos coherentes para avatares digitales o tutoriales de gestos, donde la fidelidad anatómica es crítica.
-- **Generación de contenido para demostraciones de producto**: clips cortos que muestran el manejo de un objeto (teclado, herramienta, instrumento) a partir de una sola imagen, útil para fichas de producto o material de marketing.
-- **Investigación en generación de vídeo causal**: servir como punto de partida para estudiar adaptadores LoRA con flow-map y contexto W2 sobre modelos de difusión causal, comparando el comportamiento del "Live student" frente a otras etapas.
-- **Creación de datasets sintéticos de gestos**: producir secuencias de manos con variaciones controladas para entrenar modelos de reconocimiento de gestos o de pose de mano, siempre que la licencia lo permita.
-- **Integración en pipelines de postproducción**: como etapa de refinamiento de manos sobre vídeos generados por el modelo base, corrigiendo artefactos anatómicos en clips ya existentes.
+- Creación de contenido interactivo con avatares: el modelo permite generar vídeo de un personaje cuyas manos siguen una secuencia de movimiento capturada, manteniendo coherencia temporal gracias al contexto W2 y al ancla del primer fotograma.
+- Previsualización de animación y storyboard: a partir de una imagen clave y un prompt, se generan fragmentos de vídeo de 17 fotogramas a 960 × 540 para validar encuadres y movimientos de cámara antes de una producción completa.
+- Control de cámara virtual en postproducción: los arrays de poses de cámara permiten reproducir trayectorias cinematográficas sobre una escena generada, útil para previsualización de planos.
+- Streaming de vídeo generativo en aplicaciones en tiempo real: la naturaleza causal y el rendimiento de 17,94 FPS sostenidos en una H200 lo hacen viable para pipelines de vídeo por fragmentos con baja latencia (0,743 s de respuesta media por fragmento).
+- Investigación en modelos de mundo: sirve como banco de pruebas para estudiar generación autorregresiva de vídeo con condicionamiento multimodal (texto, mano, cámara) y contextos deslizantes.
+- Prototipado de interfaces humano-máquina: la codificación online de la mano permite mapear gestos capturados a movimientos generados, aplicable a demos de telepresencia o animación dirigida por gestos.
+- Evaluación de técnicas de decodificación rápida: la integración de Ultra-Fast-VAE y del path acelerado permite medir compromisos entre latencia, memoria y calidad en generación de vídeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas cuantitativas (FVD, FID, precisión de pose de mano, etc.) ni comparaciones numéricas con otros modelos. Además, se advierte que el paquete portable no ha superado una prueba de aceptación en GPU, por lo que no existen mediciones de rendimiento verificadas para la combinación publicada de componentes.
+Datos reportados por el autor para una ejecución en caliente del runtime acelerado a 960 × 540 en una NVIDIA H200, con tres pasos de muestreo, contexto W2 con ancla del primer fotograma y 17 fotogramas RGB por fragmento:
+
+| Metrica | Valor |
+|---|---|
+| Throughput sostenido | 17,94 FPS |
+| Respuesta media por fragmento | 0,743 s |
+| Memoria GPU máxima asignada | 34,51 GiB |
+
+Notas metodológicas indicadas por el autor: la medición incluye codificación online de la mano, generación, decodificación y entrega de fotogramas por CPU; el throughput sostenido incluye además las actualizaciones de la caché de historia. La ejecución de referencia usa 243 fotogramas con un calentamiento y tres repeticiones medidas. Se excluyen la preparación de acondicionamiento, la carga de pesos, la compilación, la captura de CUDA graphs, el calentamiento y la codificación MP4. El valor de 34,51 GiB es una medición en caliente, no un requisito de GPU en arranque en frío. El informe técnico reporta un resultado separado de 18,03 FPS. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros).
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible. El repositorio ocupa 4,2 GB, pero al ser un adaptador LoRA requiere cargar además el modelo base LynnReal-Hand-Base-1.0, el codificador de manos y el decodificador de vídeo, cuyos requisitos no se detallan.
-- **GPU recomendadas**: no disponible. No se especifican modelos de GPU probados.
-- **Compatibilidad con GPU de consumo**: no disponible; no se confirma que quepa en RTX 4090 u otras GPU consumer.
-- **Opciones de despliegue**: no disponible. No se documentan integraciones con vLLM, llama.cpp, Ollama, TGI ni frameworks de difusión específicos.
-- **Latencia y throughput**: no disponible. El autor indica que las mediciones del experimento original no garantizan el rendimiento de todas las combinaciones de componentes.
+- El release valida únicamente una NVIDIA H200 visible para el decodificador Fast compilado y el path de inferencia acelerado; otras configuraciones de GPU no están validadas.
+- Memoria GPU: 34,51 GiB de asignación máxima en caliente en la configuración de referencia (no es un requisito de arranque en frío). La memoria total depende también de activaciones, cachés y decodificación.
+- Entorno de referencia: Linux, Python 3.10, PyTorch 2.9.1 con CUDA 12.8 y FlashAttention-3; FFmpeg para entrada y salida de vídeo.
+- La VAE nativa y el codificador Qwen se usan durante la preparación del acondicionamiento y pueden descargarse de GPU (offload) antes de la generación.
+- Despliegue: runtime propio LynnReal-Hand (comandos `lynnreal-hand prepare` e `lynnreal-hand infer`, con flag `--accelerated`). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,743 s de respuesta media por fragmento y 17,94 FPS sostenidos en H200 (ver sección de benchmarks).
+- Tamaño del repo: 262,2 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Resolucion / fotogramas | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LynnReal-Hand-Fast-preview | Adaptador LoRA image-to-video (familia MiniMax H3) | 960 × 540, 17 frames/bloque | Contexto W2 (sin cifra) | MiniMax H3 Community | Pesos publicados; paquete portable sin validar en GPU |
-| LynnReal-Hand-Base-1.0 | Modelo base image-to-video | no disponible | no disponible | no disponible | Referenciado como base en Hugging Face |
-| MiniMax H3 | Modelo de generación de vídeo | no disponible | no disponible | MiniMax H3 Community | Referenciado como origen del linaje |
+No se dispone en la información proporcionada de datos de modelos comparables de la misma categoría (world models de vídeo controlables por mano) con parámetros, contexto, rendimiento y licencia verificables. Por tanto, la comparativa se indica como no disponible.
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a linaje, tipo de artefacto y licencia.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LynnReal-Hand-Fast-preview | ~33B | W2 (17 fotogramas por fragmento) | 17,94 FPS en H200 | minimax-h3-community | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **No es un modelo autónomo**: requiere la revisión exacta y compatible de LynnReal-Hand-Base-1.0, el codificador de manos optimizado y el decodificador de vídeo; usar otras revisiones puede romper la inferencia.
-- **Paquete no validado**: el paquete portable no ha pasado una nueva prueba de aceptación en GPU y las revisiones de dependencias no están fijadas, lo que introduce riesgo de reproducibilidad.
-- **Licencia restrictiva**: la MiniMax H3 Community License Agreement incluye restricciones territoriales, de uso y comerciales; los derivados fine-tuned, destilados y comprimidos conservan los términos upstream. La licencia Apache-2.0 del repositorio de código no sustituye a la licencia de los pesos.
-- **Sin datos de sesgos ni alucinación**: no se documentan evaluaciones de sesgo, tasas de alucinación visual ni fallos anatómicos residuales en las manos.
-- **Idiomas no especificados**: no se indica soporte multilingüe ni condicionamiento por texto en idiomas concretos.
-- **Resolución y duración limitadas**: 960 × 540 y 17 fotogramas por bloque; secuencias más largas requieren concatenación causal y pueden acumular deriva temporal.
-- **Escasez de documentación**: sin benchmarks, sin requisitos de hardware y sin métricas de calidad publicadas, la evaluación en producción queda a cargo del integrador.
-- **Madurez temprana**: 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y actualización el mismo día (15 de noviembre de 2026), lo que sugiere una publicación preliminar.
+- Es un release de inferencia con un schedule fijo de tres pasos y shift 3, y contexto W2; cambiar el schedule de muestreo requiere una nueva exportación del modelo.
+- Solo se valida una GPU NVIDIA H200; otros entornos no están soportados por esta versión.
+- El valor de memoria de 34,51 GiB corresponde a una medición en caliente y no debe interpretarse como requisito de arranque en frío.
+- La licencia es "other" bajo el nombre minimax-h3-community; es necesario revisar el archivo LICENSE para conocer las restricciones de uso comercial y redistribución.
+- El modelo reutiliza componentes de MiniMax H3 (VAE nativa y codificador Qwen), por lo que pueden aplicar condiciones adicionales derivadas de dicha licencia.
+- No se detallan sesgos conocidos, tasas de alucinación ni limitaciones idiomáticas en la información disponible.
+- El estado "preview" y el bajo número de descargas (208) y likes (0) sugieren un modelo reciente y poco contrastado por la comunidad.
+- La generación está acotada a las longitudes de entrada admitidas (124, 158, 243 o 260 fotogramas) y a la resolución por defecto de 960 × 540.
+- No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shaohao011/LynnReal-Hand-Fast-preview
-- Modelo base LynnReal-Hand-Base-1.0: https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0
-- MiniMax H3 (origen del linaje): https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia del modelo: archivo LICENSE en el repositorio de Hugging Face
-- Aviso legal: archivo NOTICE en el repositorio de Hugging Face
+- Modelo base: https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0
+- Paper (arXiv): https://arxiv.org/pdf/2611.21479
+- Página del paper en Hugging Face: https://huggingface.co/papers/2611.21479
+- Vídeo en YouTube: https://youtu.be/OdywWF0srpU
+- Repositorio de código: https://github.com/LynnReal-AI/LynnReal
+- Guía de inferencia: https://github.com/LynnReal-AI/LynnReal/blob/main/docs/inference.md
+- Guía de instalación: https://github.com/LynnReal-AI/LynnReal/blob/main/docs/installation.md
+- Preparación de datos: https://github.com/LynnReal-AI/LynnReal/blob/main/docs/data.md
+- Metodología de benchmark: https://github.com/LynnReal-AI/LynnReal/blob/main/docs/benchmark.md

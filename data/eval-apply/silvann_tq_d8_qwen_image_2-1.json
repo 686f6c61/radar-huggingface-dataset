@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "eval-apply/silvann_tq_D8_qwen_image_2.1 · Hugging Face",
-      "url": "https://huggingface.co/eval-apply/silvann_tq_D8_qwen_image_2.1",
-      "snippet": "Built with Qwen. Qwen-Image 2.1 packed for the SiLVANN engine: its diffusion transformer and its text encoder (Qwen3-VL) with every matrix at 8 bits — the encoder's last four layers and every norm exact — 17.5 GB where Qwen ships 31 GB — and its VAE, processor and scheduler as Qwen ships them. The changes are in ATTRIBUTION.md."
-    },
-    {
-      "title": "eval-apply/silvann_tq_D8_qwen3.5_4b · Hugging Face",
-      "url": "https://huggingface.co/eval-apply/silvann_tq_D8_qwen3.5_4b",
-      "snippet": "Qwen/Qwen3.5-4B, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every layer matrix at 8 bits a weight (TurboQuant, a per-row scale), each rotated along its input axis with a blocked Hadamard-and-signs rotation; the embedding and head at 8 bits — the ..."
-    }
-  ]
+  "sources": []
 }

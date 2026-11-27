@@ -5,7 +5,7 @@
   "author": "Felamity-Technologies",
   "url": "https://huggingface.co/Felamity-Technologies/sqlant-1b",
   "created_at": "2026-11-22T12:56:49.000Z",
-  "updated_at": "2026-11-22T20:49:17.000Z",
+  "updated_at": "2026-11-26T06:52:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "model-index",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

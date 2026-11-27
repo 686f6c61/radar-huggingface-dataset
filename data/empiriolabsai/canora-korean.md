@@ -2,55 +2,53 @@
 
 ## Resumen
 
-Canora Korean es un modelo de síntesis de voz (text-to-speech) específico para coreano, desarrollado por EmpirioLabs. Se trata de un ajuste fino (finetune) del conocido Kokoro-82M de hexgrad, lo que le permite heredar la arquitectura y el rendimiento del modelo original: 82 millones de parámetros y una velocidad de inferencia muy alta. El modelo incorpora dos voces predefinidas, `seoyeon` (femenina) y `minjun` (masculina), y está pensado para producir habla natural en coreano con un manejo correcto de números, fechas, horas y precios tal y como los pronuncia un hablante nativo.
+Canora Korean es un modelo de síntesis de voz (text-to-speech) especializado en coreano, desarrollado por EmpirioLabs. Se trata de un ajuste fino (finetune) del conocido Kokoro-82M de hexgrad, lo que le permite heredar la arquitectura y el rendimiento del modelo original manteniendo un tamaño muy reducido de 82 millones de parámetros. El modelo ofrece dos voces predefinidas, `seoyeon` (femenina) y `minjun` (masculina), y está pensado para integrarse en aplicaciones que necesiten generar habla en coreano con calidad cercana a la humana.
 
-La relevancia de este modelo radica en su relación calidad/tamaño: con solo 82M de parámetros ofrece una inteligibilidad comparable a sistemas más pesados como MeloTTS Korean (CER del 3,3 % frente al 3,4 % en 200 frases de evaluación) y una puntuación de naturalidad (UTMOS) superior. Además, se distribuye con pesos ONNX en precisión completa, media e int8, lo que facilita su despliegue tanto en servidores como en entornos web mediante transformers.js, y su licencia Apache 2.0 permite uso comercial sin restricciones.
+La relevancia de este modelo radica en su combinación de tamaño reducido, licencia Apache 2.0 (permite uso comercial sin restricciones) y disponibilidad de pesos en formato ONNX en precisión completa, media e int8, lo que facilita su despliegue tanto en servidores como en el navegador mediante transformers.js. Además, incluye un módulo de conversión de texto a fonemas (G2P) específico para coreano que maneja correctamente números, fechas, horas y precios tal como los pronuncia un hablante nativo.
 
-El modelo está claramente orientado a aplicaciones de producción que requieran TTS en coreano con latencia baja y huella reducida. La inclusión de un módulo de conversión de texto a fonemas (G2P) específico para coreano, escrito en Python puro, elimina dependencias externas y simplifica la integración en pipelines existentes basados en el paquete `kokoro`.
+El modelo se distribuye a través de la librería `kokoro` estándar y está diseñado para ser ligero y rápido: el archivo ONNX int8 ocupa solo 115 MB. Según las mediciones del autor, alcanza una tasa de error de caracteres (CER) del 3,3 % y una puntuación de naturalidad (UTMOS) de hasta 4,23, superando a alternativas como MeloTTS Korean y Piper en las pruebas realizadas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Kokoro-82M (basada en StyleTTS 2, según el tag `style_text_to_speech_2`) |
-| Parámetros totales | 82 millones |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (TTS; se recomienda limitar cada llamada a unas 500 fonemas) |
-| Tipos de cuantización | Precisión completa (FP32), media precisión (FP16) e int8 (ONNX); el archivo int8 pesa 115 MB |
-| Idiomas soportados | Coreano (`ko`) |
+| Arquitectura | Kokoro-82M (red neuronal para TTS, arquitectura no detallada en la información disponible) |
+| Parametros totales | 82 millones |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (modelo TTS, no procesa contexto textual largo; se recomienda limitar a ~500 fonemas por llamada) |
+| Tipos de cuantizacion | ONNX en precisión completa, media precisión (half) e int8; pesos PyTorch (`.pth`) |
+| Idiomas soportados | Coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (`.pth`), ONNX (precisión completa, media e int8), voces en `.pt` |
+| Formato de pesos | PyTorch (`.pth`), ONNX (`.onnx`), voces en `.pt` |
 
 ## Arquitectura y entrenamiento
 
-Canora Korean es un ajuste fino de Kokoro-82M, un modelo de síntesis de voz basado en la arquitectura StyleTTS 2. Esta arquitectura combina un codificador de texto, un modelo de prosodia y un decodificador de audio, y está diseñada para generar habla natural con un número reducido de parámetros. El modelo base Kokoro-82M es conocido por su eficiencia y por su capacidad de ejecutarse en CPU, y Canora Korean conserva esas propiedades.
+Canora Korean es un ajuste fino del modelo Kokoro-82M, una arquitectura de síntesis de voz que no se detalla en la información proporcionada más allá de su tamaño y su integración con la librería `kokoro`. El modelo base Kokoro-82M es conocido por su eficiencia y calidad en TTS, y este finetune adapta sus capacidades al coreano. No se especifican en la información disponible los detalles sobre el dataset de entrenamiento, el número de tokens o pasos, ni si se emplearon técnicas como RLHF o DPO.
 
-No se dispone de información detallada sobre el conjunto de datos de entrenamiento utilizado para el ajuste fino: no se especifican el número de horas de audio, la composición del corpus ni si se emplearon técnicas de RLHF o DPO. La model card únicamente indica que se trata de un finetune del modelo base y que se ha añadido un módulo de conversión de texto a fonemas específico para coreano (`g2p_ko.py`), escrito en Python puro, que gestiona correctamente la lectura de números, fechas, horas y precios. Tampoco se detallan innovaciones técnicas adicionales más allá de las heredadas del modelo base.
+La innovación técnica destacable es la inclusión de un módulo de conversión de texto a fonemas (`g2p_ko.py`) específico para coreano, que normaliza correctamente números, fechas, horas y precios. Además, el modelo se distribuye con pesos ONNX optimizados para ONNX Runtime y transformers.js, lo que permite inferencia en el navegador sin instalación. El rendimiento en velocidad es de 4,0x tiempo real en PyTorch, 4,5x en ONNX de precisión completa y 5,2x en ONNX int8, medido en 4 hilos de un AMD EPYC 7B13.
 
 ## Capacidades
 
-- Síntesis de voz en coreano a partir de texto, con dos voces: `seoyeon` (femenina) y `minjun` (masculina).
-- Lectura correcta de números, fechas, horas y precios según la convención oral coreana (por ejemplo, "4,500원" se lee como "사천오백 원").
-- Generación de audio a 24 kHz (según el ejemplo de código, `sf.write(..., 24000)`).
-- Control de velocidad de habla mediante un parámetro escalar (1.0 = velocidad normal).
-- Ejecución en PyTorch y en ONNX Runtime, con pesos disponibles en FP32, FP16 e int8.
-- Compatibilidad con transformers.js para despliegue en navegador o entornos JavaScript.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni otras capacidades propias de modelos de lenguaje; es exclusivamente un modelo de TTS.
-- No dispone de modo "thinking", visión ni audio de entrada.
+- Generación de voz en coreano con dos voces: `seoyeon` (femenina) y `minjun` (masculina).
+- Lectura correcta de números, fechas, horas y precios según la convención coreana.
+- Síntesis de voz de alta inteligibilidad (CER del 3,3 %) y naturalidad (UTMOS de hasta 4,23).
+- Inferencia en PyTorch, ONNX Runtime y transformers.js (navegador).
+- Módulo de texto a fonemas (G2P) para coreano incluido en el repositorio.
+- No se mencionan capacidades de tool calling, agentes, razonamiento multilingüe ni otras modalidades (visión, audio de entrada).
 
 ## Casos de uso
 
-- **Atención al cliente automatizada en coreano**: el modelo puede generar respuestas habladas para sistemas IVR o asistentes virtuales. Su reducido tamaño (82M) y su velocidad (hasta 5,2x tiempo real en ONNX int8) permiten manejar múltiples llamadas concurrentes en un solo servidor sin necesidad de GPU dedicada.
-- **Lectura de noticias y artículos**: la capacidad de pronunciar correctamente fechas, horas y cifras lo hace adecuado para convertir boletines informativos o artículos en audio. Se pueden procesar textos largos dividiéndolos en frases de hasta 500 fonemas y uniendo los fragmentos de audio.
-- **Sistemas de navegación y transporte**: anuncios de llegadas, salidas y precios en estaciones o aplicaciones de transporte. El modelo lee de forma natural expresiones como "부산행 열차는 오후 2시 35분에 출발합니다" (el tren a Busan sale a las 14:35).
-- **Audiolibros y contenido educativo**: generación de narraciones en coreano con dos voces disponibles, lo que permite alternar voces para diálogos o secciones. La licencia Apache 2.0 permite su uso en productos comerciales sin restricciones.
-- **Integración en aplicaciones web**: gracias a los pesos ONNX y a la compatibilidad con transformers.js, se puede ejecutar la síntesis directamente en el navegador del usuario, reduciendo la latencia y evitando el envío de texto a servidores externos.
-- **Sistemas de accesibilidad**: conversión de texto a voz para personas con discapacidad visual o para la lectura de contenidos en pantalla. El modelo es lo suficientemente ligero como para ejecutarse en dispositivos de gama baja o en CPU.
-- **Generación de avisos y notificaciones**: anuncios de precios, horarios o recordatorios en aplicaciones móviles o altavoces inteligentes, donde la corrección en la lectura de cifras es crítica.
+- **Atención al cliente automatizada en coreano**: el modelo puede generar respuestas habladas naturales para sistemas de IVR o asistentes virtuales, gracias a su bajo coste computacional y su capacidad de leer correctamente números de pedido, fechas y precios.
+- **Lectura de noticias y artículos**: integrado en un pipeline de TTS, puede convertir textos periodísticos en audio con una pronunciación natural de cifras y datos, adecuado para aplicaciones de accesibilidad o podcasts automatizados.
+- **Anuncios por megafonía en transporte**: la voz `minjun` o `seoyeon` puede generar avisos de salidas de trenes, horarios y precios (como en los ejemplos del modelo) para su reproducción en estaciones.
+- **Aprendizaje de coreano**: los estudiantes pueden escuchar la pronunciación de frases y números con una entonación natural, usando el modelo para generar material de práctica auditiva.
+- **Integración en aplicaciones web sin backend**: gracias a los pesos ONNX y transformers.js, se puede ejecutar TTS directamente en el navegador para aplicaciones de lectura en voz alta o asistentes locales.
+- **Generación de audiolibros y contenido bajo demanda**: el modelo es lo suficientemente ligero (115 MB en int8) para desplegarse en servidores modestos o en dispositivos edge, permitiendo sintetizar grandes volúmenes de texto en coreano con dos voces disponibles.
+- **Sistemas de navegación GPS**: puede leer indicaciones de ruta con nombres de calles, distancias y tiempos de llegada de forma natural, usando la voz masculina o femenina según la preferencia del usuario.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados por EmpirioLabs el 2026-11-20, medidos sobre 200 frases coreanas no vistas durante el entrenamiento, son los siguientes. La transcripción se realizó con `openai/whisper-large-v3` y se comparó con el texto original (CER: tasa de error de caracteres, menor es mejor; UTMOS: estimación automática de naturalidad en escala de 1 a 5, mayor es mejor).
+Los resultados publicados por el autor en 200 frases coreanas no vistas durante el entrenamiento, transcritas con `openai/whisper-large-v3` para calcular el CER, son los siguientes:
 
 | Sistema | CER | UTMOS |
 |---|---:|---:|
@@ -61,41 +59,40 @@ Los resultados publicados por EmpirioLabs el 2026-11-20, medidos sobre 200 frase
 
 Para la versión ONNX int8, los resultados son: `seoyeon` 3,48 % CER y UTMOS 3,49; `minjun` 3,13 % CER y UTMOS 3,36.
 
-En cuanto a velocidad, medida sobre 60 frases en 4 hilos de un AMD EPYC 7B13 de 64 núcleos (segundos de audio por segundo de cómputo): PyTorch 4,0x tiempo real, ONNX precisión completa 4,5x, ONNX int8 5,2x. La velocidad depende del procesador y del número de hilos; la arquitectura es la de Kokoro-82M, por lo que el rendimiento coincide con el de este modelo en la misma máquina.
+En cuanto a velocidad, medida en 4 hilos de un AMD EPYC 7B13 con 60 frases (segundos de audio por segundo de cómputo): PyTorch 4,0x tiempo real, ONNX precisión completa 4,5x, ONNX int8 5,2x.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: no se especifica, pero al tratarse de un modelo de 82M de parámetros, la inferencia en FP32 requiere aproximadamente 0,3 GB de memoria; en int8, alrededor de 0,1 GB. Cabe en cualquier GPU consumer e incluso en CPU.
-- **GPU recomendadas**: no se requieren GPU dedicadas; el modelo está diseñado para ejecutarse en CPU. En caso de usar GPU, cualquier modelo con al menos 1 GB de VRAM es suficiente (por ejemplo, GTX 1050, RTX 3050, RTX 4090, A100, H100).
-- **¿Cabe en consumer GPU?**: sí, en cualquier GPU consumer, e incluso en dispositivos de gama baja.
-- **Opciones de despliegue**: PyTorch (paquete `kokoro`), ONNX Runtime, transformers.js. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
-- **Latencia y throughput estimados**: según la model card, 4,0x tiempo real en PyTorch, 4,5x en ONNX FP32 y 5,2x en ONNX int8, medido en 4 hilos de un AMD EPYC 7B13. El throughput exacto dependerá del hardware y del número de hilos.
+- **VRAM estimada**: al ser un modelo de 82M de parámetros, la inferencia cabe en menos de 1 GB de VRAM en precisión completa; en int8, el archivo ONNX es de 115 MB, por lo que puede ejecutarse en CPU sin GPU.
+- **GPU recomendadas**: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es más que suficiente; también funciona en CPU (se han publicado velocidades en AMD EPYC).
+- **Consumer GPU**: sí, cabe en cualquier GPU consumer e incluso en dispositivos de gama baja; también se puede ejecutar en CPU.
+- **Opciones de despliegue**: PyTorch (librería `kokoro`), ONNX Runtime, transformers.js (navegador). No se mencionan vLLM, llama.cpp ni TGI, ya que no es un modelo de lenguaje.
+- **Latencia y throughput**: 4,0x tiempo real en PyTorch, 4,5x en ONNX FP, 5,2x en ONNX int8 (en 4 hilos de AMD EPYC 7B13). El rendimiento depende del procesador y del número de hilos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | CER (coreano) | UTMOS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Canora Korean | 82M | No disponible (TTS) | 3,32–3,34 % | 3,96–4,23 | Apache 2.0 | Hugging Face |
-| MeloTTS Korean | No disponible | No disponible | 3,41 % | 3,82 | No disponible | No disponible |
-| Piper `ko_KR-kss-medium` | No disponible | No disponible | 4,51 % | 3,60 | No disponible | No disponible |
+| Canora Korean | 82M | No aplica (TTS) | 3,32–3,34 % | 3,96–4,23 | Apache 2.0 | Hugging Face, ONNX, transformers.js |
+| MeloTTS Korean | No disponible | No aplica | 3,41 % | 3,82 | No disponible en la información | No disponible |
+| Piper `ko_KR-kss-medium` | No disponible | No aplica | 4,51 % | 3,60 | No disponible en la información | No disponible |
 
-Canora Korean ofrece la mejor puntuación UTMOS de la comparativa y un CER comparable al de MeloTTS Korean, con la ventaja de un tamaño reducido y una licencia permisiva. No se dispone de datos de parámetros, contexto ni licencia para MeloTTS Korean y Piper en la información proporcionada.
+Canora Korean supera a MeloTTS Korean y Piper en CER y UTMOS según las pruebas del autor, con la ventaja adicional de una licencia Apache 2.0 explícita y pesos ONNX listos para desplegar.
 
 ## Limitaciones y advertencias
 
-- **Idioma único**: el modelo solo soporta coreano; no está entrenado para otros idiomas.
-- **Riesgo de alucinación**: como todo modelo de TTS, puede producir pronunciaciones incorrectas en palabras poco frecuentes, nombres propios o extranjerismos. La evaluación se realizó sobre frases genéricas y no cubre todos los dominios.
-- **Longitud de entrada limitada**: se recomienda no superar los 500 fonemas por llamada; para textos más largos es necesario dividir en frases y unir el audio, lo que puede introducir discontinuidades en la prosodia.
-- **Sesgos**: no se han documentado sesgos específicos, pero al ser un modelo entrenado con datos no especificados, podría reflejar sesgos de pronunciación o de estilo presentes en el corpus.
-- **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la licencia. No se especifican restricciones adicionales.
-- **Dependencia de G2P**: la calidad de la síntesis depende del módulo `g2p_ko.py` incluido en el repositorio; si se usa otro conversor de texto a fonemas, los resultados pueden variar.
-- **Caveat para producción**: la velocidad y la calidad pueden degradarse en textos con muchas cifras o símbolos si el módulo G2P no los maneja correctamente; se recomienda validar con datos representativos del dominio de uso.
+- **Sesgos**: no se ha documentado información sobre sesgos en la información proporcionada; al ser un modelo entrenado para coreano, puede reflejar sesgos presentes en los datos de entrenamiento no especificados.
+- **Riesgo de alucinación**: en TTS, el riesgo se traduce en pronunciaciones incorrectas o entonación antinatural en textos fuera del dominio de entrenamiento (palabras extranjeras, jerga, nombres propios).
+- **Limitaciones de contexto o idioma**: solo soporta coreano; no se ha entrenado para otros idiomas. Se recomienda limitar cada llamada a unos 500 fonemas y dividir textos largos en frases.
+- **Restricciones de licencia**: Apache 2.0 permite uso comercial sin restricciones, pero se debe conservar el aviso de licencia y atribución.
+- **Caveats para producción**: el modelo base es Kokoro-82M, por lo que su calidad y limitaciones arquitectónicas son las de este; no se detallan en la información disponible posibles problemas de estabilidad en textos muy largos o con caracteres especiales. La velocidad depende del hardware y del número de hilos.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/empiriolabsai/canora-korean)
+- [Hugging Face: empiriolabsai/canora-korean](https://huggingface.co/empiriolabsai/canora-korean)
+- [Demo en Spaces: Canora text-to-speech](https://huggingface.co/spaces/empiriolabsai/canora-text-to-speech)
 - [Sitio web de EmpirioLabs](https://empiriolabs.ai)
 - [Todos los modelos de EmpirioLabs](https://huggingface.co/empiriolabsai)
 - [Plataforma de EmpirioLabs](https://platform.empiriolabs.ai)
 - [Discord de EmpirioLabs](https://discord.gg/bM52azW4ZD)
-- [Modelo base Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
+- [Modelo base: hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)

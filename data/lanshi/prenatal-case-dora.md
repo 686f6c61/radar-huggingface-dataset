@@ -2,69 +2,69 @@
 
 ## Resumen
 
-`lanshi/prenatal-case-dora` es un clasificador binario de texto especializado en literatura de genetica prenatal. Su tarea concreta es distinguir articulos que son *case report* o *case series* del resto de disenos de estudio (cohorte, cribado/validacion, revision, metodologia, registro). Lo desarrolla el usuario `lanshi` como artefacto de investigacion, no como herramienta de decision clinica.
+`lanshi/prenatal-case-dora` es un clasificador binario de texto biomédico especializado en literatura de genética prenatal. Distingue artículos que son *case report* o *case series* (descripciones de casos clínicos) del resto de diseños de estudio: cohorte, cribado/validación, revisión, metodológico o registro. Lo desarrolla el usuario `lanshi` como artefacto de investigación, no como herramienta de decisión clínica, y se publica bajo licencia Apache-2.0.
 
-Tecnicamente es un fine-tuning con DoRA (Weight-Decomposed Low-Rank Adaptation, variante de LoRA implementada en PEFT) sobre el encoder `NeuML/pubmedbert-base-embeddings`, un BERT de dominio biomedico con 110.093.570 parametros totales. Solo se entrenan 611.330 parametros (0,56 % del total): el adaptador DoRA con rango 16 y alfa 32 sobre las proyecciones `query` y `value`, mas una cabeza lineal de 1536 a 2 dimensiones. El modelo base es un encoder, no un generador: no produce texto, emite una puntuacion de probabilidad.
+El modelo parte del encoder PubMedBERT (`microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext`) y se afina mediante un adaptador DoRA (Weight-Decomposed Low-Rank Adaptation, PEFT) sobre las proyecciones `query` y `value`, con rango 16 y alpha 32. El checkpoint publicado hereda los pesos de `NeuML/pubmedbert-base-embeddings`, un fine-tune tipo SentenceTransformer del mismo encoder. El total de parámetros es de 110.093.570, de los cuales solo 611.330 (el 0,56 %) son entrenables: 608.256 del adaptador DoRA y 3.074 de la cabeza lineal.
 
-El interes practico esta en el pipeline de encoding de documentos largos (chunks de 480 tokens, hasta 12 chunks, pooling concatenado de medias) y en los umbrales de decision calibrados (0,3962 optimo para F1 y 0,3502 para precision >= 0,90), que permiten ajustar el comportamiento del clasificador segun el coste relativo de falsos positivos y falsos negativos. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y se publico el 9 de noviembre de 2026.
+La relevancia práctica está en su función dentro de un pipeline de revisión sistemática: filtra automáticamente artículos de casos clínicos en corpus de genética prenatal, una tarea que de otro modo exige lectura manual. El modelo está pensado para clasificación documental a nivel de artículo completo, con una longitud de entrada gestionada mediante fragmentación en ventanas de 480 tokens.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (BERT) con adaptador DoRA y cabeza lineal de clasificacion |
-| Parametros totales | 110.093.570 |
-| Parametros activos | no disponible (no es MoE); parametros entrenables: 611.330 (0,56 %) |
-| Longitud de contexto | 480 tokens por chunk, hasta 12 chunks por documento (ventana efectiva muestreada, no contigua) |
-| Tipos de cuantizacion | no disponible (el autor no publica variantes cuantizadas; al ser un encoder de 110 M, la cuantizacion es viable pero no esta documentada) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer encoder (PubMedBERT) + adaptador DoRA (PEFT) + cabeza lineal 1536→2 |
+| Parámetros totales | 110.093.570 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 480 tokens por fragmento, hasta 12 fragmentos por documento (ventanas; se conservan las 2 primeras y se muestrean el resto de forma uniforme) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (estado completo: encoder + adaptador DoRA + clasificador) |
+| Formato de pesos | safetensors (librería pytorch) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `NeuML/pubmedbert-base-embeddings`, un BERT base entrenado sobre literatura PubMed, y le aplica un adaptador DoRA de PEFT con rango 16, alfa 32 y modulos objetivo `query` y `value`. DoRA descompone la actualizacion de pesos en magnitud y direccion, lo que suele mejorar la estabilidad del fine-tuning respecto a LoRA clasico con el mismo presupuesto de parametros. Sobre la representacion del encoder se anade una cabeza lineal de 1536 a 2 clases.
+El modelo es un encoder Transformer de tipo BERT (PubMedBERT) con un adaptador DoRA insertado en las proyecciones `query` y `value` de la atención. El proceso de inferencia es de un solo paso hacia delante por documento: se concatenan título, resumen y texto completo, se dividen en ventanas de 480 tokens (máximo 12; se conservan las dos primeras y el resto se muestrea uniformemente), se codifican con PubMedBERT y se agregan mediante la concatenación `L2(mean_all) ‖ L2(mean_first_2)`, produciendo un vector de 1536 dimensiones que alimenta una cabeza lineal de dos clases. El mismo protocolo de fragmentación y agregación se usa en entrenamiento e inferencia.
 
-El encoding de documentos es la parte no estandar. Cada articulo se trocea en fragmentos de 480 tokens, con un maximo de 12 fragmentos: se conservan los 2 primeros y el resto se muestrea de forma uniforme a lo largo del documento. Cada fragmento se pasa por el encoder y se obtiene un vector de 768 dimensiones; luego se calcula la media de todos los chunks y la media de los dos primeros, se normalizan ambos con L2 y se concatenan, dando un vector de 1536 dimensiones que alimenta la cabeza. El entrenamiento usa 864 articulos con anotacion de diseno de estudio (376 de case report/case series y 488 del resto; 110 con etiqueta ausente u "other" se excluyeron). Las etiquetas provienen de un pipeline de anotacion con LLM mas revision, y el autor reconoce ruido: series retrospectivas grandes ocasionalmente etiquetadas como cohorte. El checkpoint final se entreno sobre las 864 filas durante 2 epocas, que es la mediana de la mejor epoca en validacion cruzada.
+El entrenamiento se realizó sobre 864 artículos con anotación de diseño existente: 376 de tipo *case report* / *case series* y 488 de cohorte, cribado, revisión, metodológico, validación o registro; se excluyeron 110 con etiqueta ausente u "otro". Las etiquetas provienen de un pipeline de anotación con LLM más revisión, por lo que contienen cierto ruido (por ejemplo, series retrospectivas grandes ocasionalmente etiquetadas como cohorte). Se aplicó validación cruzada estratificada de 5 pliegues con partición interna de validación para *early stopping* y selección de umbral. El umbral de decisión desplegado es 0,3962 (óptimo de F1 sobre puntuaciones *out-of-fold*) y existe un umbral de alta precisión de 0,3502 (P ≥ 0,90). Se incluyen guardas específicas: para entradas de menos de 128 tokens se exige p ≥ 0,75 para emitir `case` (entre 0,396 y 0,75 devuelve `insufficient`), y las entradas largas con puntuación en [τ − 0,05, τ) se marcan como `insufficient` en lugar de `non-case`. La calibración *out-of-fold* reporta ECE 0,202 y Brier 0,089, que con *temperature scaling* (T = 0,338) bajan a 0,080 y 0,054; la puntuación calibrada se obtiene como `sigmoid(logit(case_score) / 0.338)`, aunque las decisiones siguen usando la puntuación sin calibrar y el umbral.
 
 ## Capacidades
 
-- Clasificacion binaria de diseno de estudio en literatura de genetica prenatal: `case` frente a `non-case`.
-- Puntuacion de probabilidad calibrada con dos umbrales operativos (0,3962 para F1 optimo y 0,3502 para precision >= 0,90).
-- Procesamiento de articulos largos mediante muestreo de chunks (primeros 2 mas fragmentos equiespaciados), lo que permite puntuar texto completo aunque exceda la ventana del encoder.
-- Funciona con titulo solo o con titulo mas cuerpo del articulo; el autor indica que metodos y resultados aportan senal util.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un encoder de clasificacion, no un modelo generativo.
-- No tiene capacidades multilingues: solo ingles.
-- No tiene modo thinking, vision ni audio.
+- Clasificación binaria de documentos biomédicos en *case report* / *case series* frente a otros diseños de estudio.
+- Procesamiento de documentos completos mediante fragmentación en ventanas de 480 tokens con agregación ponderada.
+- Salida de puntuación de probabilidad calibrable y umbrales configurables (F1-óptimo y alta precisión).
+- Emisión de la etiqueta `insufficient` para casos ambiguos o de entrada corta, lo que permite derivar a revisión humana.
+- Dominio especializado en literatura de genética prenatal y biomedicina (PubMedBERT).
+- Capacidad monolingüe: solo inglés.
+- No soporta *tool calling*, *function calling*, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
 
-- Triaje de corpus para revisiones sistematicas: dado un volcado de PubMed sobre genetica prenatal, el modelo puntua cada articulo y permite separar candidatos de case report/case series antes de la lectura manual, reduciendo el volumen de cribado con un umbral de precision ajustable.
-- Construccion de conjuntos de datos etiquetados por diseno de estudio: el clasificador puede preetiquetar articulos y dejar solo la revision humana de los casos cercanos al umbral, lo que acelera la creacion de corpus anotados para otros modelos.
-- Filtrado previo en pipelines de extraccion de variantes: si el objetivo es recolectar variantes descritas en casos clinicos, el modelo descarta cohortes y revisiones antes de aplicar NER o extraccion estructurada, ahorrando computo en las etapas caras.
-- Enrutado dentro de un pipeline documental: el autor mantiene una regla que retiene titulos con "case report", "case series" o "report of N<100 cases"; el modelo se usa como segunda senal para articulos que no cumplen la regla, combinando ambos criterios.
-- Monitorizacion de literatura nueva: ejecutado periodicamente sobre las novedades de PubMed, permite marcar articulos que probablemente sean reportes de caso y priorizar su lectura por parte del equipo clinico o de investigacion.
-- Analisis bibliometrico de disenos de estudio: agregando las puntuaciones sobre un corpus historico se pueden estimar proporciones de disenos de estudio por revista, ano o tematica, siempre con revision experta de los resultados.
-- Seleccion de candidatos para metaanalisis de casos: cuando un metaanalisis requiere solo series de casos, el modelo filtra el corpus inicial y el investigador revisa unicamente los positivos y los casos limite.
+- Filtrado en revisiones sistemáticas de genética prenatal: el modelo se integra como segunda pasada de un pipeline de dos etapas (primero un DoRA de relevancia con umbral 0,7619 que redujo 23.378 a 13.752 documentos; después este modelo, que redujo 13.752 a 8.048 casos) para aislar artículos de casos clínicos antes de la extracción manual de datos.
+- Construcción de corpus de *case reports* para minería de literatura: permite generar conjuntos de datos etiquetados por diseño de estudio a partir de exportaciones de PubMed, con umbral ajustable según se priorice precisión o exhaustividad.
+- Triaje de cribado en revisiones rápidas: con el umbral de alta precisión (0,3502) se obtiene P 0,900 / R 0,960, adecuado cuando el coste de un falso positivo (lectura innecesaria) es alto.
+- Enrutamiento documental en pipelines de extracción de información: los artículos clasificados como `case` se dirigen a extractores específicos de fenotipos o variantes, mientras que el resto sigue otra ruta.
+- Monitorización de literatura nueva: aplicado a los artículos que entran cada mes en PubMed sobre genética prenatal, permite detectar publicaciones de casos clínicos de forma continua y priorizar su lectura.
+- Anotación asistida para revisores: la salida `insufficient` en la banda de revisión y en entradas cortas sirve para derivar a revisión humana los documentos ambiguos, reduciendo el volumen de lectura sin descartar casos dudosos.
+- Investigación metodológica en clasificación de diseños de estudio: el checkpoint y su código permiten reproducir ablaciones (TF-IDF + regresión logística sobre título, etc.) y estudiar la transferencia temporal y por revista.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card, obtenidos con validacion cruzada estratificada de 5 folds, cada uno con split interno de validacion para early stopping y seleccion de umbral:
+Evaluación con validación cruzada estratificada de 5 pliegues; umbrales seleccionados en la partición interna de validación de cada pliegue.
 
-| Metrica | Resultado |
+| Métrica | Resultado |
 |---|---|
 | Test average precision (AP) | 0,987 ± 0,009 |
 | Test F1 | 0,938 ± 0,021 |
-| Test precision (media) | 0,926 |
+| Test precisión (media) | 0,926 |
 | Test recall (media) | 0,952 |
-| Out-of-fold AUC | 0,970 |
-| Out-of-fold AP | 0,965 |
-| OOF con umbral 0,3962 | P 0,942 / R 0,947 / F1 0,944 |
-| OOF con umbral 0,3502 | P 0,900 / R 0,960 |
+| AUC *out-of-fold* | 0,970 |
+| AP *out-of-fold* | 0,965 |
+| OOF con umbral 0,396 | P 0,942 / R 0,947 / F1 0,944 |
+| OOF con umbral 0,350 | P 0,900 / R 0,960 |
 
-Matriz por fold (umbral seleccionado en validacion interna y aplicado al fold reservado):
+Matriz de evaluación por pliegue (test):
 
-| Fold | Umbral | TP | FP | FN | TN | Precision | Recall | F1 | AP | AUC |
+| Pliegue | Umbral | TP | FP | FN | TN | Precisión | Recall | F1 | AP | AUC |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 0 | 0,6465 | 69 | 3 | 6 | 95 | 0,958 | 0,920 | 0,939 | 0,990 | 0,992 |
 | 1 | 0,4327 | 70 | 1 | 5 | 97 | 0,986 | 0,933 | 0,959 | 0,993 | 0,994 |
@@ -73,48 +73,63 @@ Matriz por fold (umbral seleccionado en validacion interna y aplicado al fold re
 | 4 | 0,2449 | 73 | 10 | 2 | 87 | 0,880 | 0,973 | 0,924 | 0,984 | 0,984 |
 | Media | — | — | — | — | — | 0,926 | 0,952 | 0,938 | 0,987 | 0,988 |
 
-Matriz de confusion out-of-fold en los umbrales desplegados:
+Matriz de confusión *out-of-fold* en los umbrales desplegados:
 
-| Umbral | TP | FP | FN | TN | Precision | Recall | F1 |
+| Umbral | TP | FP | FN | TN | Precisión | Recall | F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 0,3962 (F1 optimo) | 356 | 22 | 20 | 466 | 0,942 | 0,947 | 0,944 |
-| 0,3502 (P >= 0,90 en validacion) | 361 | 40 | 15 | 448 | 0,900 | 0,960 | 0,929 |
+| 0,3962 (F1-óptimo) | 356 | 22 | 20 | 466 | 0,942 | 0,947 | 0,944 |
+| 0,3502 (P ≥ 0,90) | 361 | 40 | 15 | 448 | 0,900 | 0,960 | 0,929 |
 
-No se han publicado comparaciones con otros clasificadores en la informacion disponible.
+Validez externa:
+
+| Protocolo | AP | F1 |
+|---|---:|---:|
+| 5 pliegues aleatorios | 0,987 ± 0,009 | 0,938 ± 0,021 |
+| Temporal (entrenamiento ≤2019, test ≥2020) | 0,987 | 0,939 |
+| GroupKFold por revista (183 revistas) | 0,986 ± 0,005 | 0,925 ± 0,019 |
+
+El ranking se transfiere entre épocas y revistas, pero la distribución de puntuaciones no: el umbral temporal es 0,505 frente a 0,396 en dominio, y los pliegues por revista oscilan entre 0,299 y 0,760. La model card recomienda recalibrar el umbral sobre el corpus objetivo o usar `case_score_calibrated`.
+
+Línea base comparada (5 pliegues, mismas particiones): TF-IDF + regresión logística sobre título obtiene AP 0,963 ± 0,007, AUC 0,964, precisión 0,876 y recall 0,894 (la fila aparece truncada en la información disponible; el resto de baselines y ablaciones no está completo).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,45 GB de pesos (110 M parametros), mas activaciones; en la practica cabe en cualquier GPU con 2 GB o mas. En fp16 los pesos ocupan unos 0,22 GB.
-- GPU recomendadas: cualquier GPU moderna es suficiente; una T4, L4, RTX 3060 o superior cubre el caso con holgura. Para lotes grandes en CPU tambien es viable por el tamano reducido del modelo.
-- Cabe en GPU de consumo: si, en practicamente todas las disponibles desde 2018, e incluso en CPU para volumenes moderados.
-- Opciones de despliegue: el repositorio incluye `modeling_case_dora.py`, un modulo autocontenido de inferencia que implementa el chunking, el encoder con DoRA y el pooling. Requiere `torch`, `transformers`, `peft`, `safetensors`, `huggingface_hub` y `numpy`. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama; al no ser un modelo generativo, los servidores de inferencia LLM no son el vehiculo natural.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia estructural, un encoder BERT base procesa del orden de cientos de documentos por segundo en una GPU moderna con lotes adecuados, pero el chunking a 12 fragmentos multiplica el coste por documento.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 110 M de parámetros en FP32 el peso ronda los 0,44 GB, y el repositorio ocupa 0,4 GB.
+- GPU recomendadas: no disponible; por tamaño, cualquier GPU con al menos unos pocos GB de VRAM es suficiente (el modelo es un encoder BERT-base).
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU de consumo moderna (RTX 3060, RTX 4090, etc.), dado el tamaño del checkpoint; no se aportan cifras oficiales.
+- Opciones de despliegue: no disponible en la model card; al ser un modelo PyTorch/Hugging Face con safetensors, es desplegable con las librerías estándar de transformers, aunque no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lanshi/prenatal-case-dora` | 110 M (611 K entrenables) | 480 tokens por chunk, hasta 12 chunks | Clasificacion binaria de diseno de estudio en genetica prenatal | Apache-2.0 | Hugging Face, 0 descargas |
-| `NeuML/pubmedbert-base-embeddings` (modelo base) | 110 M | 512 tokens | Embeddings de literatura biomedica | no disponible en la informacion proporcionada | Hugging Face |
-| BioBERT / PubMedBERT genericos | ~110 M | 512 tokens | Embeddings y tareas biomedicas generales | habitualmente Apache-2.0 o MIT | Hugging Face |
+| `lanshi/prenatal-case-dora` | 110.093.570 | 480 tokens × hasta 12 fragmentos | Clasificación de diseño de estudio en genética prenatal | Apache-2.0 | Hugging Face |
+| `NeuML/pubmedbert-base-embeddings` (modelo base) | no disponible | no disponible | Embeddings biomédicos (SentenceTransformer) | Apache-2.0 | Hugging Face |
+| `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext` | no disponible | no disponible | Encoder biomédico preentrenado (MLM) | MIT | Hugging Face |
 
-No se dispone de datos de rendimiento de las alternativas sobre esta misma tarea, por lo que la comparacion cuantitativa no esta disponible.
+No se dispone de datos de benchmarks comparativos frente a otros clasificadores de diseño de estudio; la única comparación publicada es la línea base TF-IDF + regresión logística descrita en la sección anterior.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigacion: el autor indica explicitamente que no es una herramienta de decision clinica y que no debe usarse para diagnostico ni tratamiento.
-- Ambito restringido a literatura de genetica prenatal en ingles; el rendimiento fuera de ese dominio es desconocido.
-- Ruido en etiquetas: los disenos de estudio se anotaron con un pipeline de LLM mas revision, y series de casos retrospectivas grandes pueden aparecer etiquetadas como cohorte, lo que introduce errores sistematicos en la clase negativa.
-- Truncacion agresiva: los articulos largos se muestrean a 12 chunks (los 2 primeros mas fragmentos equiespaciados), de modo que la evidencia en secciones no muestreadas no se ve y puede perderse informacion decisiva.
-- Umbrales calibrados sobre un corpus concreto de 864 articulos; su transferencia a otras distribuciones (otras revistas, otras especialidades, otros anos) no esta validada.
-- Solo ingles: articulos en otros idiomas no estan soportados.
-- Licencia Apache-2.0, que permite uso comercial, pero los datos de entrenamiento (PDFs de PubMed) no se redistribuyen y las condiciones de uso de esas fuentes deben respetarse por separado.
-- Modelo sin traccion: 0 descargas y 0 likes, sin evidencia de uso independiente ni validacion externa.
-- No es un modelo generativo: no admite instrucciones en lenguaje natural ni produce justificaciones; solo devuelve una puntuacion y una decision.
+- Es un artefacto de investigación, no una herramienta de decisión clínica; no debe usarse para diagnóstico ni para decisiones sobre pacientes.
+- Las etiquetas de entrenamiento provienen de un pipeline LLM + revisión y contienen ruido (por ejemplo, series retrospectivas grandes etiquetadas como cohorte), lo que puede sesgar las fronteras de decisión.
+- La distribución de puntuaciones no se transfiere entre corpus: el umbral óptimo varía de 0,396 en dominio a 0,505 en validación temporal y entre 0,299 y 0,760 según la revista. Es obligatorio recalibrar el umbral en el corpus objetivo.
+- La calibración original es deficiente (ECE 0,202); la puntuación calibrada requiere aplicar *temperature scaling* con T = 0,338 y no se usa para las decisiones por defecto.
+- Solo admite inglés; no hay soporte multilingüe.
+- La guarda de título explícito (`case report` / `case series` / `report of N<100 cases`) vive en el pipeline, no en este checkpoint; usarlo de forma aislada pierde esa señal.
+- Entradas cortas (menos de 128 tokens) o en la banda de revisión se marcan como `insufficient`, lo que puede generar volumen de revisión manual.
+- No soporta *tool calling*, agentes ni razonamiento multi-paso; es un clasificador puro.
+- No se documentan tipos de cuantización ni requisitos de hardware oficiales.
+- Riesgo de alucinación no aplicable en sentido generativo (es un clasificador), pero sí de falsos positivos y negativos en la clasificación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lanshi/prenatal-case-dora
-- Modelo base: https://huggingface.co/NeuML/pubmedbert-base-embeddings
-- Repositorio PEFT (DoRA): https://github.com/huggingface/peft
-- Paper de DoRA: https://arxiv.org/abs/2402.09353
+- Código, entrenamiento y evaluación: https://github.com/lanshi17/fetal-case-literature-classifier
+- Diagrama del modelo (PNG): https://huggingface.co/lanshi/prenatal-case-dora/blob/main/model-architecture.png
+- Placa del sistema (PDF): https://huggingface.co/lanshi/prenatal-case-dora/blob/main/architecture.pdf
+- Filosofía de diseño: https://huggingface.co/lanshi/prenatal-case-dora/blob/main/DESIGN_PHILOSOPHY.md
+- Validación detallada: https://github.com/lanshi17/fetal-case-literature-classifier/blob/main/docs/VALIDATION.md
+- Modelo base (PubMedBERT): https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
+- Pesos de partida (SentenceTransformer): https://huggingface.co/NeuML/pubmedbert-base-embeddings

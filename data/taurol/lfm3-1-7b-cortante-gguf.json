@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Taurol/LFM3-1.7B-Cortante-GGUF",
+  "slug": "taurol-lfm3-1-7b-cortante-gguf",
+  "author": "Taurol",
+  "url": "https://huggingface.co/Taurol/LFM3-1.7B-Cortante-GGUF",
+  "created_at": "2026-11-26T22:07:14.000Z",
+  "updated_at": "2026-11-26T22:08:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "es",
+    "pt",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1427638304,
+  "storage_human": "1.4 GB",
+  "context_length": 262144,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

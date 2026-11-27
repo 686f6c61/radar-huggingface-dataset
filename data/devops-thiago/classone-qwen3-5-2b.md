@@ -2,125 +2,135 @@
 
 ## Resumen
 
-classone-qwen3.5-2b es un modelo de decisión de "Sistema 1" desarrollado por el usuario devops-thiago, construido sobre un ajuste fino completo del backbone Qwen/Qwen3.5-2B (2.213.241.664 parámetros). No es un modelo generativo al uso: en lugar de producir texto token a token, evalúa decisiones estructuradas mediante una arquitectura denominada ClassOne que devuelve salidas tipadas y calibradas en una única pasada hacia delante, sin coste de decodificación.
+ClassOne Qwen3.5-2B es un modelo de decisión de tipo "System 1" desarrollado por el usuario devops-thiago sobre el backbone de Qwen/Qwen3.5-2B. A diferencia de un modelo generativo convencional, no produce texto token a token: evalúa decisiones estructuradas en un único forward pass y devuelve salidas tipadas y calibradas (probabilidades, selecciones categóricas y puntuaciones ordinales) sin sobrecoste de decodificación. Está pensado para tareas de clasificación, verificación, enrutamiento de herramientas y guardarraíles de seguridad en producción.
 
-El modelo expone tres primitivas de decisión: `Noul` (comprobación booleana con probabilidad calibrada), `Choice` (selección categórica sobre 2-255 opciones dinámicas con distribución de probabilidad completa) y `Score` (puntuación ordinal continua sobre 2-10 niveles). Estas salidas se calibran con una pérdida combinada de NLL y Brier normalizado, más un ajuste de temperatura a posteriori.
+El modelo se distribuye como un backbone fusionado y autónomo: se carga como un único modelo, sin adaptador LoRA ni descarga separada del modelo base. Con 2.212.770.624 parámetros y licencia Apache 2.0, apunta a despliegues en el borde (edge) donde la latencia y la privacidad son críticas. El autor reporta una latencia media de 52,49 ms en local frente a 329,90 ms de una API en la nube, es decir, una mejora de 6,3 veces.
 
-Es relevante porque propone un enfoque alternativo a los LLM generativos para tareas de enrutamiento, clasificación y evaluación, con latencias de decenas de milisegundos en hardware de consumo. El repositorio es pequeño (4,5 GB), autónomo (no requiere descarga separada del modelo base ni adaptador) y se publica bajo licencia Apache 2.0, aunque a fecha de la ficha no acumula descargas ni validación independiente.
+Su relevancia actual radica en la propuesta de sustituir llamadas a APIs de decisión en la nube por un modelo pequeño, privado y ejecutable en GPU de consumo, con calibración explícita (ECE, Brier score) como métrica de primera clase. La información disponible procede íntegramente de la model card del autor y de los metadatos de Hugging Face; no se han encontrado resultados de evaluación de terceros sellados para esta variante de 2B.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | ClassOne sobre backbone transformer denso (Qwen3.5-2B), con tres cabezas de decisión (Noul, Choice, Score) |
-| Parametros totales | 2.213.241.664 (aproximadamente 2,21 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en safetensors sin cuantizaciones GGUF/AWQ/GPTQ oficiales) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer (derivada de Qwen3.5), adaptada como modelo de decisión ClassOne con cabeceras de clasificación |
+| Parámetros totales | 2.212.770.624 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | El autor evalúa en FP16 standalone (`--no-quant`) y menciona modos `--quant none`; no se detallan otros formatos cuantizados publicados |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (fragmentado), más `classone_heads.pt` (PyTorch) y adaptador LoRA en `lora_backbone/` |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura ClassOne sustituye el bucle de decodificación autoregresiva por una evaluación en una sola pasada. El backbone es un transformer denso heredado de Qwen/Qwen3.5-2B, sobre el que se montan tres cabezas específicas: `Noul` devuelve P(true) en el intervalo [0, 1]; `Choice` produce una distribución de probabilidad sobre entre 2 y 255 opciones dinámicas; y `Score` calcula el valor esperado de una rúbrica ordinal de 2 a 10 niveles. Las preguntas y el estado se empaquetan mediante un `ClassOnePromptBuilder` que inserta tokens delimitadores propios en el tokenizador.
+El modelo parte del backbone Qwen/Qwen3.5-2B y lo fusiona en un artefacto único que incorpora la arquitectura ClassOne (Classifier One). En lugar de generar secuencias, el modelo evalúa primitivas de decisión en un solo forward pass: `Noul` (comprobación booleana que devuelve una probabilidad calibrada P(true) en [0, 1]), `Choice` (selección categórica entre 2 y 255 opciones dinámicas con distribución de probabilidad completa) y `Score` (puntuación ordinal continua sobre rúbricas de 2 a 10 niveles).
 
-El ajuste se realizó con un adaptador LoRA (rango r=16, alpha=32) cuyos pesos se fusionaron en el backbone final, de modo que el modelo carga de forma autocontenida. La calibración combina una pérdida de log-verosimilitud negativa (NLL) con una pérdida de Brier normalizada, y se aplica un ajuste de temperatura a posteriori que reduce el ECE de 0,178 a 0,034 según la model card. Las etiquetas del repositorio mencionan RLCD (aprendizaje por contraste) y reglas de puntuación propias, pero no se detalla la composición del dataset, el número de tokens de entrenamiento ni si hubo fases de RLHF o DPO.
+La model card etiqueta el modelo con `rlcd` y `proper-scoring-rules`, lo que sugiere el uso de RLCD (Reinforcement Learning from Contrastive Distillation) y reglas de puntuación propias (proper scoring rules) para la calibración de las salidas. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de alineamiento. La innovación principal es la eliminación de la decodificación autoregresiva: la decisión se resuelve en una pasada, lo que reduce drásticamente la latencia frente a modelos generativos del mismo tamaño.
 
 ## Capacidades
 
-- Clasificación estructurada mediante la primitiva `Choice`: selección categórica sobre 2-255 opciones con distribución de probabilidad completa.
-- Verificación booleana calibrada mediante `Noul`: devuelve P(true) en [0, 1] para preguntas de sí/no.
-- Puntuación ordinal mediante `Score`: valor esperado sobre rúbricas de 2 a 10 niveles.
-- Inferencia en una sola pasada hacia delante, sin decodificación autoregresiva ni muestreo token a token.
-- Empaquetado de estado y múltiples preguntas en una misma llamada (`pack` + `evaluate_packed`), lo que permite resolver varias decisiones por pasada.
-- Evaluación de ejes de alineación y seguridad según la model card: fidelidad (faithfulness), honestidad/engaño y ocultación de incertidumbre.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el diseño apunta explícitamente a decisiones de un solo paso, "Sistema 1").
-- Capacidades multilingües: no disponible.
-- Modo "thinking" explícito, visión o audio: no disponible.
+- Clasificación de texto y evaluación de decisiones estructuradas mediante las primitivas Noul, Choice y Score.
+- Verificación de conocimiento y comprobación de hechos (dominio con 100 % de acierto en la suite Decision Index).
+- Triaje de relevancia en recuperación (retrieval) y evaluación de contratos de política lingüística.
+- Guardarraíles de seguridad: detección de contenido dañino y de inyección de prompts.
+- Enrutamiento de herramientas (tool routing) y decisión de cuándo invocar una herramienta.
+- Puntuación por rúbrica y control de calidad.
+- Salidas calibradas con métricas explícitas de ECE y Brier score.
+- No se documentan capacidades de generación de texto libre, código, matemáticas, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: con `Choice` se puede asignar cada incidencia a un equipo (facturación, técnico, etc.) en una única pasada, aprovechando la distribución de probabilidad para derivar a revisión humana cuando la confianza sea baja.
-- Moderación y verificación de contenido: usar `Noul` para responder preguntas binarias calibradas ("¿este mensaje contiene una amenaza?") empleando el valor de P(true) como umbral ajustable según la política de la plataforma.
-- Evaluación automática de respuestas de un LLM: `Score` permite puntuar salidas sobre rúbricas ordinales (por ejemplo, fidelidad a las fuentes en 4 niveles) sin necesidad de un modelo juez generativo.
-- Detección de intención en atención al cliente: clasificar la intención del usuario antes de invocar un modelo generativo, reduciendo el coste total del pipeline al filtrar y dirigir consultas.
-- Encuestas y formularios estructurados: convertir texto libre en respuestas cerradas y escalas Likert, con distribución de probabilidad asociada para análisis estadístico posterior.
-- Clasificación en el borde (edge): según la model card, en una RTX 5060 Ti local se obtienen 52,49 ms de latencia media y 19,1 req/s con coste de inferencia nulo, lo que habilita despliegues on-premise con requisitos de privacidad estrictos.
-- Monitorización de deriva y seguridad de agentes: evaluar ejes como honestidad o ocultación de incertidumbre sobre trazas de un agente mediante los ejes de evaluación incluidos en la model card.
-- Prefiltrado en pipelines RAG: determinar con `Noul` si un fragmento recuperado responde a la consulta antes de pasarlo a un modelo mayor.
+- Guardarraíl de entrada en producción: clasificar cada prompt de usuario como benigno o malicioso antes de enviarlo a un LLM mayor. El modelo reporta 83,00 % de accuracy y 0,8856 de AUROC en WildGuardTest con latencias p50 de 98,1 ms, lo que permite filtrar en línea sin añadir latencia perceptible.
+- Enrutamiento de herramientas en agentes: decidir si una consulta requiere invocar una herramienta y cuál, usando la primitiva Choice. El autor reporta 94,1 % de acierto en la clase `tool_call` del benchmark NVIDIA When2Call, adecuado para orquestadores que delegan la decisión a un modelo pequeño y reservan el modelo grande para la ejecución.
+- Triaje de relevancia en pipelines RAG: puntuar si un fragmento recuperado es relevante para la consulta antes de pasarlo al generador, reduciendo coste y alucinaciones. El dominio de Retrieval & Relevance Triage obtuvo 100 % en la suite Decision Index.
+- Verificación de afirmaciones: comprobar con Noul si una aserción está respaldada por el contexto, con probabilidad calibrada que permite fijar umbrales de confianza. El dominio Knowledge & Verification alcanzó 100 % en la suite self-run.
+- Moderación y cumplimiento de políticas: evaluar respuestas contra contratos de política lingüística y rúbricas de calidad (90 % en Language & Policy Contracts y en Rubric & Quality Scoring).
+- Clasificación de tickets y correos: asignar categoría entre múltiples opciones con distribución de probabilidad completa, útil para enrutamiento a equipos y priorización con umbrales de confianza.
+- Detección de inyección de prompts: aunque el recall reportado es bajo (6,7 %), el AUROC de 0,8232 permite usarlo como señal de ranking combinada con otras reglas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre JevBench (231 tareas públicas, repositorio fstandhartinger/jevbench):
+Resultados autoevaluados por el autor en 2x NVIDIA RTX 5060 Ti 16 GB (13-11-2026, commit c375207). No son evaluaciones de terceros selladas.
 
-| Nivel | Tareas | Precision | ECE | Brier | Latencia mediana (p50) |
+JevBench, suite pública de 231 tareas (FP16 standalone):
+
+| Nivel | Tareas | Accuracy | ECE | Brier | Latencia p50 |
 |---|---|---|---|---|---|
-| Easy | 48 | 100,0% (48/48) | 0,0014 | 0,0000 | 41,9 ms |
-| Original | 72 | 91,7% (66/72) | 0,0655 | 0,0545 | 40,3 ms |
-| Hard | 111 | 38,7% (43/111) | 0,5176 | 0,5171 | 83,6 ms |
-| Agregado | 231 | 68,0% (157/231) | — | — | 40,3 ms |
+| Easy | 48 | 100,0 % (48/48) | 0,0500 | 0,0118 | 108,8 ms |
+| Original | 72 | 83,3 % (60/72) | 0,0579 | 0,1338 | 94,7 ms |
+| Hard | 111 | 47,7 % (53/111) | 0,2761 | 0,3066 | 246,9 ms |
+| Agregado público | 231 | 69,7 % (161/231) | — | — | 108,8 ms |
 
-Desglose del nivel Original según la model card: Original Choice Record 88,9% (32/36); Score 100,0% (12/12); Noul 91,7% (22/24).
+Decision Index (50 tareas, self-run):
 
-Resultados publicados sobre RLCDAlignBench (100 instancias):
-
-| Eje / modo de fallo | Muestras | AUROC | Precision | ECE | Latencia p50 |
-|---|---|---|---|---|---|
-| Faithfulness | 9 | 0,800 | 55,6% | 0,3486 | 184,2 ms |
-| Honesty (deception) | 11 | 0,767 | 72,7% | 0,2207 | 188,9 ms |
-| Concealing uncertainty | 14 | 0,571 | 64,3% | 0,3795 | 115,3 ms |
-| Balanced accuracy global | 100 | 0,568 | 58,0% | 0,3261 | 173,2 ms |
-
-Comparativa de latencia borde vs nube publicada en la model card:
-
-| Sistema | Latencia media | Throughput | Coste de inferencia |
+| Dominio | Peso | Accuracy | Puntuación |
 |---|---|---|---|
-| ClassOne (RTX 5060 Ti local) | 52,49 ms | 19,1 req/s | 0,00 USD |
-| TypeSafe Jev v1.13 (API en la nube) | 329,90 ms | 3,0 req/s | no disponible |
+| Knowledge & Verification | 25,8 % | 100,0 % (10/10) | 100,00 |
+| Language & Policy Contracts | 25,8 % | 90,0 % (9/10) | 90,00 |
+| Retrieval & Relevance Triage | 20,0 % | 100,0 % (10/10) | 100,00 |
+| Tools & Execution Guardrails | 18,3 % | 90,0 % (9/10) | 90,00 |
+| Rubric & Quality Scoring | 10,1 % | 90,0 % (9/10) | 90,00 |
+| Global ponderado | 100,0 % | 94,0 % (47/50) | 94,58 / 100 |
 
-Todos estos resultados son autoinformados por el autor; no se ha localizado validación independiente.
+RLCDAlignBench (100 instancias, self-measured):
+
+| Eje | N | AUROC | Accuracy | ECE | Latencia p50 |
+|---|---|---|---|---|---|
+| Honesty (Deception) | 11 | 0,800 | 72,7 % | 0,2922 | 478,1 ms |
+| Faithfulness | 9 | 0,750 | 66,7 % | 0,3475 | 504,5 ms |
+| Social Bias | 9 | 0,525 | 55,6 % | 0,3164 | 489,3 ms |
+| Refusal (Jailbreaks) | 11 | 0,500 | 54,5 % | 0,3775 | 596,2 ms |
+| Global balanceado | 100 | 0,520 | 50,9 % | 0,2646 | 450,3 ms |
+
+Suites de guardarraíles y enrutamiento:
+
+| Suite | Muestras | Accuracy | Métrica secundaria | ECE | Latencia p50 |
+|---|---|---|---|---|---|
+| WildGuardTest | 100 estratificadas | 83,00 % (82,69 % BalAcc) | 0,8856 AUROC (90,38 % recall dañino, 83,93 % vanilla) | 0,1075 | 98,1 ms |
+| Deepset Prompt Injections | 116 completas | 51,72 % (60/116) | 0,8232 AUROC (100 % especificidad benigna, 6,7 % recall) | 0,4182 | 101,4 ms |
+| NVIDIA When2Call (mcq) | 100 estratificadas | 36,00 % | 94,1 % en `tool_call` (32/34) | 0,3324 | 272,7 ms |
+
+Latencia edge frente a nube (self-measured): 52,49 ms de media (19,1 req/s, coste 0,00 USD, 100 % privado) frente a 329,90 ms (3,0 req/s) de una API en la nube, un factor de 6,3×.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4,6 GB en fp16 (2,21 mil millones de parámetros, ~4,4 GB de pesos más activaciones y buffers), aproximadamente 9 GB en fp32 y en torno a 1,2-2,5 GB con cuantizaciones int4/int8 (no hay cuantizaciones oficiales publicadas).
-- GPU recomendadas: la model card cita una RTX 5060 Ti como plataforma de referencia; por tamaño, cualquier GPU con 6 GB o más de VRAM es suficiente en fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, L4, A10, A100, H100).
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna con 6 GB o más de VRAM, incluidas RTX 3060, RTX 4060, RTX 4070 y superiores.
-- Opciones de despliegue: la model card documenta uso mediante la librería `classone` y `transformers` sobre CUDA con `torch_dtype=torch.float16`. No se menciona soporte oficial de vLLM, llama.cpp, Ollama, TGI ni TensorRT-LLM.
-- Latencia y throughput estimados: 52,49 ms de latencia media y 19,1 req/s en una RTX 5060 Ti local; 40,3 ms de latencia mediana agregada en JevBench y entre 115,3 y 188,9 ms por eje en RLCDAlignBench.
-- Dependencia de software: requiere el paquete `classone` de Python, además de `transformers` y `torch`, y la carga de `classone_heads.pt` para disponer de las cabezas entrenadas.
+- Inferencia en FP16: 2.212.770.624 parámetros implican aproximadamente 4,4 GB de pesos más overhead de activaciones; el autor ejecuta el modelo en 2x NVIDIA RTX 5060 Ti de 16 GB.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos 8 GB de VRAM en FP16 y con margen para cuantizaciones de 8 o 4 bits (si bien no se publican pesos GGUF en la información disponible).
+- GPU recomendadas: RTX 5060 Ti 16 GB (configuración validada por el autor), RTX 4090, A100 y H100 para mayor throughput.
+- Despliegue: el autor menciona modos `--quant` y `--lora` en su harness de evaluación; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. El formato safetensors es compatible con transformers y con servidores que lo soporten.
+- Throughput: 19,1 req/s en la configuración local del autor; latencias p50 por tarea entre 94,7 ms y 596,2 ms según la suite.
 
 ## Comparativa con modelos similares
 
-No se han identificado en la información disponible modelos directamente comparables, ya que ClassOne no es un LLM generativo sino una arquitectura de decisión en una sola pasada. La comparación más cercana es con su propio backbone y con clasificadores de texto convencionales.
-
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| classone-qwen3.5-2b | Clasificador/decision single-pass | 2,21 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
-| Qwen/Qwen3.5-2B | LLM generativo (base) | no disponible | no disponible | Apache 2.0 (segun la model card) | Hugging Face |
-| TypeSafe Jev v1.13 | API de decisiones en la nube | no disponible | no disponible | no disponible | API comercial |
-| Clasificadores tipo BERT/RoBERTa | Codificador + cabeza de clasificación | 0,1-0,4 mil millones | 512 tokens típicos | variable | Hugging Face |
+| classone-qwen3.5-2b | 2,21 B | No disponible | Apache 2.0 | Modelo de decisión System 1 sobre Qwen3.5-2B | Hugging Face |
+| Qwen/Qwen3.5-2B | ~2 B | No disponible | No disponible | LLM generativo base | Hugging Face |
+| classone-qwen3.5-9b | No disponible | No disponible | No disponible | Misma arquitectura ClassOne, mayor tamaño | Hugging Face y Benchmark Heaven |
+
+No se dispone de datos de benchmarks de terceros para esta variante de 2B ni de comparativas publicadas frente a clasificadores dedicados (por ejemplo, DeBERTa o modelos de guardarraíl específicos) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo recién publicado y sin tracción: 0 descargas y 0 likes en Hugging Face en el momento de la ficha, sin validación independiente de los resultados.
-- Rendimiento limitado en tareas difíciles: 38,7% de precisión en el nivel Hard de JevBench, con un ECE de 0,5176, lo que indica una calibración muy deficiente en ese régimen.
-- Calibración desigual en alineación: en RLCDAlignBench el ECE global es 0,3261 y el AUROC de "concealing uncertainty" cae a 0,571, próximo al azar.
-- Todos los benchmarks son autoinformados por el autor y no se han replicado externamente.
-- Idiomas soportados: no disponibles. La model card no especifica cobertura lingüística, lo que impide garantizar un comportamiento correcto en castellano u otros idiomas.
-- Longitud de contexto: no disponible, lo que dificulta planificar despliegues con estados o documentos largos.
-- Naturaleza no generativa: no produce texto; solo responde a las primitivas `Noul`, `Choice` y `Score`. No es apto para tareas de generación, resumen o diálogo abierto.
-- Dependencia de una librería propia (`classone`) y de un formato de empaquetado específico con tokens delimitadores, lo que añade coste de integración.
-- Discrepancias en la model card: atribuye el modelo base Qwen/Qwen3.5-2B a Google, cuando la familia Qwen corresponde a Alibaba; además incluye una etiqueta `gemma` sin justificación aparente. Conviene verificar la procedencia real de los pesos antes de un uso en producción.
-- No se documenta el dataset de entrenamiento ni posibles sesgos heredados del backbone.
-- Licencia Apache 2.0 permite uso comercial, pero el cumplimiento debe verificarse también sobre los términos del modelo base y de las dependencias.
-- Los datos de entrenamiento, la composición del dataset y cualquier fase de alineación no están documentados, lo que limita la auditabilidad.
+- Los resultados son autoevaluados por el autor; no hay evaluación sellada de terceros para esta variante de 2B en Benchmark Heaven (solo se enlaza la entrada de 9B).
+- Rendimiento bajo en el nivel Hard de JevBench (47,7 %) y en el global de RLCDAlignBench (50,9 % de accuracy balanceada, AUROC 0,520), lo que indica poca capacidad discriminativa en casos difíciles y en ejes de sesgo social y rechazo a jailbreaks.
+- Recall muy bajo en detección de inyección de prompts (6,7 %) pese al AUROC de 0,8232: no debe usarse como único filtro de seguridad.
+- Calibración deficiente en varias suites (ECE de 0,4182 en prompt injections y 0,2646 global en RLCDAlignBench), lo que limita el uso de umbrales de probabilidad sin recalibración.
+- No se documentan idiomas soportados; se desconoce el comportamiento fuera del inglés.
+- No se especifica la longitud de contexto, lo que impide planificar casos con documentos largos.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-2B debe verificarse por separado.
+- Riesgo de alucinación no aplica en el sentido generativo (no produce texto libre), pero sí de clasificaciones erróneas con confianza alta.
+- No se publican pesos cuantizados ni integraciones con runtimes de inferencia estándar, lo que puede complicar el despliegue en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/devops-thiago/classone-qwen3.5-2b
-- Repositorio de la arquitectura y el código de entrenamiento: https://github.com/devops-thiago/class-one
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Benchmark JevBench: https://github.com/fstandhartinger/jevbench
-- Citación (BibTeX) proporcionada en la model card: ClassOne: A Fast Single-Pass Decision Architecture for Language Models, Thiago Gonzaga, 2026.
+- Repositorio ClassOne: https://github.com/devops-thiago/class-one
+- JevBench: https://github.com/fstandhartinger/jevbench
+- Dataset Decision Index: https://huggingface.co/datasets/multimodalart/jev-decision-index
+- WildGuardTest: https://huggingface.co/datasets/walledai/WildGuardTest
+- Deepset Prompt Injections: https://huggingface.co/datasets/deepset/prompt-injections
+- NVIDIA When2Call: https://huggingface.co/datasets/nvidia/When2Call
+- Benchmark Heaven (leaderboard JevBench): https://benchmarkheaven.com/jev-models
+- Entrada de la variante 9B en Benchmark Heaven: https://benchmarkheaven.com/jev-models/classone-qwen3.5-9b

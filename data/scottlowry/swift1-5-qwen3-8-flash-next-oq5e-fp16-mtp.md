@@ -2,92 +2,84 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-oQ5e-fp16-mtp es una cuantización mixta del modelo Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. El checkpoint original es un modelo multimodal de aproximadamente 180.000 millones de parámetros que combina un language model de 125.744B, una tabla de embeddings N-gram de 51.200B, un encoder de visión de 0.449B y una cabeza MTP (multi-token prediction) de 2.607B. Esta versión concreta está empaquetada en formato MLX, es decir, pensada para ejecutarse sobre Apple Silicon mediante la librería mlx.
+Swift1.5-Qwen3.8-Flash-Next-oQ5e-fp16-mtp es una cuantizacion mixta de precision del modelo base ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario scottlowry. El checkpoint conserva los 180.000 millones de parametros logicos del modelo original (179.999.981.459 segun los safetensors) pero los almacena en un formato de pesos comprimido que ocupa 130,4 GB en el repositorio. La cuantizacion se ha realizado con la herramienta oQ de oMLX (version v0.7.4.dev1), que aplica distintos esquemas de bits por tensor en funcion de su relevancia, con un promedio efectivo de 5,795 bits por peso para el checkpoint completo.
 
-La contribución de esta ficha no es un modelo nuevo, sino una receta de cuantización de precisión mixta generada con oQ (oMLX v0.7.4.dev1). El resultado ocupa 121,427 GiB en disco (130,382 GB) con un promedio efectivo de 5,795 bits por peso para el checkpoint completo, o 5,713 bits/peso excluyendo la tabla de embeddings N-gram. Es relevante porque permite desplegar un modelo de 180B en hardware de consumo Apple con un compromiso de precisión razonable, algo que en fp16 sería inviable.
+El modelo esta empaquetado para la libreria MLX, el framework de Apple para inferencia en silicio unificado (chips M-series), y emplea la convencion de nombres oQ5e. Incorpora ademas una cabeza MTP (multi-token prediction) de 2.607 millones de parametros y un modulo de vision de 449 millones, lo que sugiere que el modelo base es multimodal. La ficha tecnica del modelo base no esta disponible en la informacion proporcionada, por lo que muchos detalles de arquitectura, entrenamiento y capacidades deben marcarse como no disponibles.
 
-La ficha se basa únicamente en los metadatos de Hugging Face y en la model card del autor. No hay información publicada sobre el modelo base, sus datos de entrenamiento, benchmarks o licencia, por lo que muchos campos se marcan como no disponibles.
+La relevancia de esta publicacion es practica: permite ejecutar un modelo de 180.000 millones de parametros en hardware Apple con memoria unificada, algo inviable con los pesos en FP16 (que requeririan unos 360 GB). La actualizacion del 11 de noviembre de 2026 indica una recuantizacion con una version mas reciente de oMLX, por lo que las copias anteriores deben descartarse.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con cabeza MTP y embeddings N-gram (detalles del base no disponibles) |
-| Parametros totales | 179.999.981.459 (180B) |
+| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; incluye modulo de vision y cabeza MTP) |
+| Parametros totales | 179.999.981.459 (180.000 millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta: affine 5-bit (group 64), affine 8-bit (group 128 y 64), FP16, FP32, I64, N-gram affine 5-bit (group 32) |
+| Tipos de cuantizacion | Mixta: affine 5-bit grupo 64, affine 8-bit grupo 64 y 128, FP16, FP32, N-gram affine 5-bit grupo 32; promedio 5,795 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (MLX), cuantización oQ |
-| Bits efectivos por peso | 5,795 (checkpoint completo); 5,713 excluyendo embeddings N-gram |
-| Tamano del repositorio | 229,3 GB |
-| Desglose de almacenamiento | LM: 82,290 GiB; N-gram: 35,763 GiB; Vision: 1,672 GiB; MTP head: 1,702 GiB |
-| Libreria | mlx |
-| Descargas / likes | 209 / 1 |
+| Formato de pesos | safetensors (MLX), 130,4 GB en repositorio |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe únicamente la composición del checkpoint cuantizado, no la arquitectura interna del modelo base. El desglose indica cuatro componentes: un language model de 125.744B parámetros lógicos, una tabla de embeddings N-gram de 51.200B, un encoder de visión de 0.449B y una cabeza MTP de 2.607B. La presencia de MTP (multi-token prediction) sugiere que el modelo base incorpora decodificación especulativa o predicción de varios tokens por paso, y la tabla N-gram apunta a un mecanismo de embeddings de n-gramas probablemente orientado a memoria o recuperación léxica. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO.
+El checkpoint es una cuantizacion del modelo base ukisai/Swift1.5-Qwen3.8-Flash-Next, cuyo diseno interno no se detalla en la informacion disponible. Por la nomenclatura y los componentes presentes se puede inferir que se trata de un transformer multimodal con modulo de vision (0,449B de parametros en FP32) y una cabeza de prediccion multi-token (MTP) de 2,607B, tecnica habitual para decodificacion especulativa y aceleracion de inferencia. El desglose de almacenamiento indica que el grueso del modelo son el language model (125,744B) y una tabla de embeddings N-gram de 51,200B, lo que apunta a un esquema de atencion o embedding poco convencional que no se describe en la model card.
 
-La innovación técnica de esta publicación es la cuantización mixta con oQ: el 68,507% de los pesos lógicos se almacena en affine 5-bit group 64 (78,955 GiB), el 28,445% en N-gram affine 5-bit group 32 (35,763 GiB), y el resto se reparte entre 8-bit (2,762% combinado), FP16 (0,037%) y FP32 (0,249%). Esta asignación selectiva de precisión preserva en mayor medida las capas sensibles (visión, MTP y algunas partes del LM) mientras comprime agresivamente el grueso del modelo, logrando 5,795 bits/peso efectivos frente a los 16 bits de un checkpoint fp16. El autor re-cuantizó el modelo el 2026-11-11 con oMLX v0.7.4.dev1, por lo que las copias anteriores deben descargarse de nuevo.
+El proceso de cuantizacion, realizado con oQ de oMLX v0.7.4.dev1, asigna precision de forma selectiva: el 68,507% de los pesos logicos (123,313B) se guarda en affine 5-bit con grupo 64 (5,50 bits/peso efectivos); la tabla N-gram (28,445%, 51,200B) usa affine 5-bit con grupo 32 (6,00 bits/peso); un 2,628% (4,731B) se mantiene en affine 8-bit grupo 64; y una fraccion minima (0,286% en total) permanece en FP16 o FP32, presumiblemente capas sensibles como normas o proyecciones de salida. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el language model de 125,744B parámetros lógicos soporta tareas generativas generales, aunque no hay evaluación publicada de su calidad tras la cuantización.
-- Procesamiento de visión: el encoder de visión de 0.449B parámetros indica capacidades multimodales de entrada de imagen, aunque no se detallan tareas concretas.
-- Predicción multi-token (MTP): la cabeza dedicada de 2.607B parámetros sugiere soporte para decodificación especulativa o generación de varios tokens por paso, lo que puede reducir la latencia en inferencia.
-- Recuperación mediante embeddings N-gram: la tabla de 51.200B parámetros lógicos apunta a un mecanismo de memoria o lookup léxico que puede mejorar la coherencia en dominios específicos.
-- Tool calling / function calling: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento: heredadas del modelo base, aunque no se documentan evaluaciones especificas.
+- Procesamiento de vision: el checkpoint incluye un modulo de vision de 0,449B de parametros en FP32, lo que indica capacidad multimodal de entrada de imagenes.
+- Decodificacion multi-token: la cabeza MTP de 2,607B permite generar varios tokens por paso, reduciendo latencia en inferencia.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo thinking o razonamiento explícito: no disponible.
+- Capacidades multilingues: no disponible.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon: el formato MLX y la cuantización a 5,795 bits/peso permiten ejecutar un modelo de 180B en equipos con memoria unificada grande (Mac Studio con 192 GB o superior), algo imposible en fp16. Se usaría con la librería mlx y el runtime oMLX.
-- Prototipado de aplicaciones multimodales en local: el encoder de visión integrado permite experimentar con tareas imagen-texto sin depender de APIs externas, útil para investigación que requiera privacidad de datos.
-- Evaluación de cuantización: este checkpoint sirve como referencia para medir la degradación de un modelo de 180B al pasar de fp16 a 5,795 bits/peso, comparando salidas con el modelo base.
-- Generación de texto asistida con memoria N-gram: en dominios con vocabulario repetitivo (documentación técnica, código, textos legales), la tabla N-gram de 51.200B parámetros puede aportar coherencia léxica; se usaría en pipelines de generación de documentación o resúmenes.
-- Experimentación con decodificación especulativa: la cabeza MTP permite probar técnicas de predicción multi-token para reducir latencia en generación larga, adecuado para investigación en eficiencia de inferencia.
-- Despliegue de bajo coste en estaciones de trabajo Apple: para equipos que ya disponen de Mac Studio o Mac Pro con memoria unificada amplia, este modelo evita el coste de GPUs dedicadas para tareas de generación y análisis de imagen a media escala.
+- Inferencia local en Mac de gama alta: con 130,4 GB de pesos, el modelo cabe en equipos con memoria unificada de 192 GB o superior (Mac Studio M2/M3 Ultra), permitiendo ejecutar un modelo de 180.000 millones de parametros sin GPU dedicada.
+- Prototipado de asistentes multimodales: el modulo de vision integrado permite construir demos de descripcion de imagenes o analisis de documentos escaneados en entornos de desarrollo con MLX.
+- Investigacion sobre cuantizacion: el desglose detallado de bits por tensor lo convierte en un caso de estudio para medir el impacto de la cuantizacion mixta en la calidad del modelo frente al checkpoint original.
+- Aceleracion de inferencia con MTP: la cabeza de prediccion multi-token es util para experimentar con decodificacion especulativa en pipelines de generacion de texto de baja latencia.
+- Despliegue en estaciones de trabajo Apple para tareas de generacion de codigo: si el modelo base conserva las capacidades de la familia Qwen, podria usarse en entornos de desarrollo sin conexion, aunque no hay datos que lo confirmen.
+- Evaluacion comparativa de frameworks: sirve para contrastar el rendimiento de MLX frente a llama.cpp o vLLM con modelos equivalentes en hardware Apple.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el checkpoint ocupa 121,427 GiB en disco; en inferencia MLX se requiere memoria unificada suficiente para los pesos más el estado de activaciones y KV cache. Con 180B parámetros a 5,795 bits/peso, se necesita un equipo con al menos 128 GB de memoria unificada, y 192 GB es recomendable para margen de contexto.
-- GPU recomendadas: Apple Silicon con memoria unificada grande (M2 Ultra con 192 GB, M3 Ultra con 192 GB o superior). No es compatible con GPUs NVIDIA o AMD convencionales en este formato MLX.
-- ¿Cabe en consumer GPU? No en GPUs de consumo con 24 GB o 48 GB. Solo es viable en Apple Silicon de gama alta con memoria unificada de 128 GB o más.
-- Opciones de despliegue: mlx (librería nativa), oMLX (runtime del autor de la cuantización). No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que el formato es MLX y la cuantización oQ es específica.
+- VRAM/memoria unificada estimada: 130,4 GB para los pesos; se recomienda al menos 160-192 GB de memoria unificada para dejar margen al contexto y a los estados de atencion.
+- GPU recomendadas: Apple Silicon con memoria unificada alta (M2 Ultra, M3 Ultra con 192 GB o 512 GB). No es compatible de forma nativa con CUDA.
+- GPU de consumo: no cabe en ninguna GPU consumer con 24 GB (RTX 4090) ni en configuraciones de 48 GB. Solo es viable en hardware Apple de gama alta o en configuraciones multi-GPU con suficiente memoria agregada, aunque MLX no esta pensado para ello.
+- Opciones de despliegue: MLX (libreria nativa del checkpoint), mlx-lm y oMLX. No se ha validado con llama.cpp, Ollama, vLLM ni TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| Swift1.5-Qwen3.8-Flash-Next-oQ5e-fp16-mtp | 180B | no disponible | MLX safetensors (oQ mixta) | no disponible | Hugging Face, 209 descargas |
-| Modelo base Qwen3.8-Flash-Next (fp16) | 180B (presumiblemente) | no disponible | no disponible | no disponible | no disponible en la información |
-| Alternativas de 180B en MLX | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Swift1.5-Qwen3.8-Flash-Next-oQ5e-fp16-mtp | 180.000M | no disponible | MLX safetensors 5,795 bits/peso | no disponible | Apple Silicon |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | 180.000M (presumible) | no disponible | no disponible | no disponible | no disponible |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables en la misma categoría (180B multimodal en MLX) dentro de los datos proporcionados.
+No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base Qwen3.8-Flash-Next antes de cualquier despliegue en producción.
-- Degradación por cuantización: con 5,795 bits/peso efectivos, es esperable una pérdida de calidad frente al checkpoint fp16, especialmente en tareas de razonamiento complejo y matemáticas; no hay evaluación publicada que cuantifique esa pérdida.
-- Dependencia de hardware Apple: el formato MLX limita el despliegue a Apple Silicon; no es portable a GPUs NVIDIA o AMD sin reconversión.
-- Requisito de memoria elevado: 121,427 GiB de pesos implican equipos de gama muy alta (128-192 GB de memoria unificada), lo que excluye la mayoría de estaciones de trabajo.
-- Riesgo de alucinación: no hay datos específicos del modelo base ni evaluaciones de fiabilidad; se debe asumir el riesgo habitual de los LLM de 180B.
-- Idiomas y sesgos: no disponibles; no se puede confirmar el soporte multilingüe ni los sesgos conocidos.
-- Re-cuantización reciente: el autor actualizó el checkpoint el 2026-11-11; las copias anteriores pueden tener comportamiento distinto y deben re-descargarse.
-- Trazabilidad limitada: el repositorio tiene 209 descargas y 1 like, sin pipeline declarado ni documentación del modelo base, lo que reduce la confianza para uso en producción.
+- La cuantizacion a 5,795 bits/peso puede degradar la calidad respecto al checkpoint original en tareas sensibles a precision, como matematicas o generacion de codigo largo.
+- La licencia no esta declarada, lo que impide confirmar si se permite uso comercial; debe consultarse la licencia del modelo base antes de cualquier despliegue en produccion.
+- El checkpoint esta ligado a MLX y no es portable directamente a ecosistemas CUDA sin conversion adicional.
+- No se documentan sesgos, riesgos de alucinacion ni evaluaciones de seguridad del modelo base.
+- La model card advierte de que las copias anteriores al 11 de noviembre de 2026 deben descargarse de nuevo por una recuantizacion; versiones antiguas pueden presentar diferencias de calidad.
+- El repositorio tiene solo 207 descargas y 1 like, por lo que la validacion comunitaria es muy limitada.
+- No hay informacion sobre idiomas soportados ni sobre el comportamiento del modulo de vision en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ5e-fp16-mtp
-- Repositorio de oQ/oMLX: https://github.com/jundot/omlx
-- Modelo base Qwen3.8-Flash-Next: no disponible en la información proporcionada
-- Paper, blog o demo del modelo base: no disponible
+- Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
+- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

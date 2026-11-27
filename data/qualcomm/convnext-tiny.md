@@ -2,94 +2,112 @@
 
 ## Resumen
 
-ConvNext-Tiny es un modelo de clasificación de imágenes basado en la arquitectura ConvNeXt, desarrollado originalmente por el equipo de PyTorch Vision y posteriormente optimizado por Qualcomm para su despliegue en dispositivos con chipsets Snapdragon y otras plataformas de Qualcomm. El modelo clasifica imágenes del dataset ImageNet y también puede utilizarse como backbone para construir modelos más complejos en tareas de visión por computador.
+ConvNext-Tiny es un modelo de clasificación de imágenes basado en la arquitectura ConvNeXt, en su variante "tiny", exportado y optimizado por Qualcomm para su despliegue en dispositivos con hardware Qualcomm (Snapdragon y Dragonwing). El modelo original procede de la implementación de `torchvision` y está entrenado sobre ImageNet; este repositorio no contiene un entrenamiento nuevo, sino artefactos pre-exportados (ONNX, QNN_DLC y TFLite) compilados con Qualcomm AI Hub Workbench para ejecutarse de forma eficiente en NPU.
 
-La versión publicada por Qualcomm en Hugging Face incluye pesos pre-exportados y optimizados para ejecución en dispositivos móviles y embebidos, con soporte para runtimes ONNX, QNN (Qualcomm Neural Network) y TFLite. El modelo tiene 28,6 millones de parámetros y un tamaño de 109 MB en precisión float, reducible a 28,9 MB con cuantización w8a16. Su relevancia radica en que permite ejecutar inferencia de clasificación de imágenes con latencias de 1-3 ms en NPUs de Qualcomm, lo que lo hace adecuado para aplicaciones en tiempo real en dispositivos móviles.
+Con 28,6 millones de parámetros y una resolución de entrada de 224x224, ConvNext-Tiny es un clasificador de propósito general que también puede emplearse como backbone en modelos más complejos. Su relevancia actual radica en la disponibilidad de artefactos cuantizados (w8a16 y w8a8) listos para producción en el ecosistema Qualcomm, con tiempos de inferencia en NPU del orden de 1 a 9 ms según el chipset, lo que lo hace adecuado para visión embebida y aplicaciones móviles.
 
-## Especificaciones tecnicas
+La licencia BSD-3-Clause y la disponibilidad de exportación personalizada mediante la librería `ai-hub-models` facilitan su integración en pipelines propios. No obstante, se trata de un modelo de clasificación de imágenes, no de un modelo de lenguaje, por lo que las secciones relativas a contexto, idiomas o generación de texto no aplican y se marcan como no disponibles.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | ConvNeXt (Tiny) |
-| Parametros totales | 28,6 M |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision) |
-| Tipos de cuantizacion | float, w8a16, w8a8 |
-| Idiomas soportados | no disponible (modelo de vision, no textual) |
+| Arquitectura | ConvNeXt (variante Tiny), red convolucional pura |
+| Parámetros totales | 28,6 M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada 224x224 píxeles) |
+| Tipos de cuantización | float, w8a16, w8a8 |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | PyTorch, ONNX, QNN_DLC, TFLITE |
+| Formato de pesos | ONNX, QNN_DLC, TFLite (artefactos pre-exportados); checkpoint PyTorch vía torchvision |
+| Tamaño del modelo | 109 MB (float), 28,9 MB (w8a16) |
+| Resolución de entrada | 224x224 |
+| Checkpoint | ImageNet |
+| Tamaño del repositorio | 11,5 GB |
 
 ## Arquitectura y entrenamiento
 
-ConvNeXt es una arquitectura de red neuronal convolucional pura, presentada en el articulo "A ConvNet for the 2020s" (arXiv:2201.03545). Moderniza las CNN clasicas incorporando disenos inspirados en transformers, como parches de entrada, normalizacion por capas, kernels grandes y activaciones GELU, pero manteniendo la eficiencia computacional de las convoluciones. La variante Tiny tiene una estructura con cuatro etapas, con dimensiones de canal de 96, 192, 384 y 768, y se entrena en ImageNet-1K con 224x224 píxeles de resolucion de entrada.
+ConvNeXt es una familia de redes convolucionales puras que moderniza el diseño de ResNet incorporando decisiones arquitectónicas inspiradas en los Vision Transformers: convoluciones depthwise de mayor tamaño de kernel (7x7), normalización LayerNorm en lugar de BatchNorm, activación GELU, menos etapas de downsampling y un diseño de bloque tipo "inverted bottleneck". La variante Tiny reduce el número de canales por etapa respecto a las variantes Base y Large, dando lugar a los 28,6 M de parámetros indicados.
 
-El checkpoint incluido en este repositorio es el modelo preentrenado de torchvision, sin fine-tuning adicional. Qualcomm ha aplicado tecnicas de compilacion y cuantizacion especificas para su ejecucion en NPUs, incluyendo formatos w8a16 y w8a8 que reducen el tamano del modelo manteniendo una precision aceptable. No se menciona el uso de RLHF ni DPO, ya que no es un modelo generativo.
+Este repositorio de Qualcomm no documenta un entrenamiento propio: parte del checkpoint de ImageNet disponible en `torchvision` y genera artefactos compilados y perfilados con Qualcomm AI Hub Workbench (QAIRT 2.51, ONNX Runtime 1.30.0). La innovación técnica destacable no está en el entrenamiento, sino en la cadena de exportación y cuantización (float, w8a16, w8a8) orientada a ejecución en NPU de chipsets Qualcomm. No se dispone de información sobre composición del dataset de entrenamiento original, número de tokens (no aplica) ni uso de RLHF/DPO.
 
 ## Capacidades
 
-- Clasificacion de imagenes en las 1000 categorias de ImageNet.
-- Uso como backbone para extraccion de caracteristicas en tareas de deteccion de objetos, segmentacion semantica o clasificacion personalizada.
-- Inferencia en dispositivos moviles y embebidos gracias a la optimizacion para NPUs de Qualcomm.
-- Soporte de multiples formatos de exportacion: ONNX, QNN_DLC y TFLite.
-- Cuantizacion w8a16 y w8a8 para reducir el uso de memoria y acelerar la inferencia.
-- No soporta generacion de texto, tool calling, agentes ni capacidades multimodales mas alla de la vision.
+- Clasificación de imágenes de ImageNet: predice la clase predominante entre las 1000 categorías del dataset.
+- Uso como backbone: puede servir de base para modelos más complejos de detección, segmentación o clasificación específica de dominio.
+- Inferencia en NPU: artefactos optimizados para ejecución acelerada en hardware Qualcomm (Snapdragon y Dragonwing).
+- Cuantización configurable: variantes float, w8a16 y w8a8 para equilibrar precisión y tamaño.
+- Exportación personalizada: posibilidad de recompilar con pesos ajustados (fine-tuning), formas de entrada propias y configuraciones de dispositivo mediante `ai-hub-models`.
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingües: no aplica.
+- Capacidades especiales (thinking mode, visión, audio): únicamente visión por clasificación de imagen; sin audio ni texto.
 
 ## Casos de uso
 
-- Clasificacion de imagenes en tiempo real en aplicaciones moviles: el modelo puede integrarse en apps Android o iOS para etiquetar fotos, detectar objetos o moderar contenido, con latencias de 1-3 ms en chipsets Snapdragon 8 Gen 3 o superiores.
-- Vision artificial en dispositivos IoT: gracias a su compatibilidad con QNN y TFLite, puede desplegarse en camaras inteligentes o dispositivos edge para clasificar escenas o detectar anomalias.
-- Backbone para modelos de deteccion de objetos: al ser un extractor de caracteristicas eficiente, puede usarse como base para entrenar detectores como Faster R-CNN o YOLO en dominios especificos (industria, agricultura, medicina).
-- Filtrado automatico de contenido en redes sociales: el modelo puede clasificar imagenes en categorias predefinidas (violencia, desnudos, spam) con baja latencia y sin depender de la nube.
-- Asistencia a personas con discapacidad visual: una aplicacion puede describir el entorno clasificando objetos comunes en tiempo real usando el modelo en el propio dispositivo.
-- Control de calidad en manufactura: el modelo puede clasificar piezas como defectuosas o correctas a partir de imagenes de camaras industriales, ejecutandose en hardware Qualcomm embebido.
+- Clasificación de imágenes en aplicaciones móviles: integración del artefacto TFLite u ONNX en apps Android para etiquetar fotos en el dispositivo con latencias de 1 a 9 ms en NPU, sin enviar datos a la nube.
+- Visión embebida en cámaras y dispositivos IoT: uso del modelo cuantizado w8a8 (28,9 MB en w8a16) para clasificación en tiempo real en hardware con recursos limitados, como los chipsets Dragonwing.
+- Preprocesado en pipelines de visión: filtrado o categorización rápida de imágenes antes de etapas más costosas (detección, OCR, segmentación), aprovechando su bajo coste computacional.
+- Backbone para fine-tuning: partiendo del checkpoint de ImageNet, adaptar el modelo a dominios específicos (por ejemplo, clasificación de productos o defectos industriales) y reexportarlo con `ai-hub-models`.
+- Prototipado en Qualcomm AI Hub: uso del modelo como referencia para medir latencia y memoria en distintos chipsets antes de comprometerse con una arquitectura mayor.
+- Aplicaciones de accesibilidad: clasificación de escenas o reconocimiento de objetos cotidianos en dispositivos de asistencia que requieren inferencia local y de baja latencia.
+- Benchmarking de hardware: empleo como carga de trabajo estándar para comparar el rendimiento de NPU entre generaciones de Snapdragon y Dragonwing.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K) porque se trata de un modelo de vision, no de lenguaje. El rendimiento reportado se centra en latencia de inferencia en dispositivos Qualcomm. La tabla siguiente resume los tiempos de inferencia para la variante ONNX float en distintos chipsets:
+No se han publicado resultados de benchmarks de precisión (top-1/top-5 en ImageNet) en la información disponible. Sí se incluyen métricas de inferencia por dispositivo:
 
-| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) |
-|---|---|---|---|---|
-| Snapdragon X2 Elite | ONNX | float | 1,333 | 2 |
-| Snapdragon X Elite | ONNX | float | 2,693 | 57 |
-| Snapdragon 8 Gen 3 Mobile | ONNX | float | 2,003 | 0-129 |
-| Snapdragon 8 Gen 1 Mobile | ONNX | float | 9,014 | 1-132 |
-| Snapdragon 8 Elite Mobile | ONNX | float | 1,548 | 0-76 |
-| Snapdragon 8 Elite Gen 5 Mobile | ONNX | float | 1,298 | 0-76 |
-
-Con cuantizacion w8a16, las latencias mejoran notablemente, por ejemplo 0,998 ms en Snapdragon X2 Elite y 1,548 ms en Snapdragon 8 Gen 3 Mobile. No se proporcionan metricas de exactitud (top-1 o top-5) en la informacion disponible, aunque el checkpoint de torchvision alcanza aproximadamente un 82,1% de top-1 en ImageNet segun la documentacion oficial de PyTorch.
+| Chipset | Runtime | Precisión | Tiempo de inferencia | Memoria pico | Unidad de cómputo |
+|---|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | ONNX | float | 1,116 ms | 1-79 MB | NPU |
+| Snapdragon 8 Elite Gen 6 Mobile | ONNX | float | 1,261 ms | 0-80 MB | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | float | 1,307 ms | 0-80 MB | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | float | 1,543 ms | 0-82 MB | NPU |
+| Snapdragon X2 Elite | ONNX | float | 1,323 ms | 2-2 MB | NPU |
+| Snapdragon X Elite | ONNX | float | 2,679 ms | 58-58 MB | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | float | 2,026 ms | 0-135 MB | NPU |
+| Snapdragon 8 Gen 1 Mobile | ONNX | float | 8,561 ms | 0-137 MB | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | w8a16 | 0,868 ms | 0-98 MB | NPU |
+| Snapdragon X2 Elite | ONNX | w8a16 | 0,874 ms | 1-1 MB | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | w8a16 | 1,083 ms | 0-97 MB | NPU |
+| Snapdragon X Elite | ONNX | w8a16 | 2,18 ms | 30-30 MB | NPU |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo float ocupa 109 MB; con cuantizacion w8a16 se reduce a 28,9 MB. La memoria pico durante inferencia en NPU varia entre 1 y 132 MB segun el chipset.
-- GPU recomendadas: no es necesario usar GPU para inferencia en dispositivos Qualcomm, ya que la NPU integrada es suficiente. En entornos de servidor, cualquier GPU con al menos 1 GB de VRAM puede ejecutar el modelo sin problemas.
-- Compatibilidad con consumer GPU: si, cabe en cualquier GPU moderna, incluso en integradas, dado su tamano reducido.
-- Opciones de despliegue: ONNX Runtime, Qualcomm AI Hub Workbench, TFLite, y el paquete Python `qai_hub_models` para exportacion personalizada.
-- Latencia y throughput: en NPUs Qualcomm, la latencia oscila entre 1,3 y 9 ms segun el chipset y la precision. En GPU de servidor, se pueden procesar cientos de imagenes por segundo, aunque no se proporcionan cifras exactas.
+- VRAM estimada: no aplica en el sentido de GPU de escritorio; el modelo está pensado para NPU de Qualcomm. El tamaño de pesos es de 109 MB en float y 28,9 MB en w8a16, por lo que cabe holgadamente en memoria de dispositivos móviles.
+- GPU recomendadas: no disponibles; el perfilado documentado se realiza sobre NPU de chipsets Qualcomm (Snapdragon 8 Gen 1/3, 8 Elite, X Elite, X2 Elite; Dragonwing IQ-8275, IQ-9075, IQ-X7181, Q-8750, QCS8550, QCS8450).
+- ¿Cabe en GPU de consumo? No hay datos de despliegue en GPU de consumo en la información proporcionada; por tamaño (28,6 M de parámetros) sería viable en cualquier GPU moderna, pero no se documenta.
+- Opciones de despliegue: ONNX Runtime (ONNX), QAIRT (QNN_DLC) y TFLite; exportación personalizada con la librería `ai-hub-models` de Qualcomm.
+- Latencia y throughput: latencias de 0,868 ms (w8a16, Snapdragon 8 Elite Gen 5 For Galaxy) hasta 8,561 ms (float, Snapdragon 8 Gen 1) según chipset y precisión; memoria pico entre 0 y 176 MB según configuración.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano (float) | Top-1 ImageNet | Licencia | Formato |
+| Modelo | Parámetros | Entrada | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ConvNext-Tiny (Qualcomm) | 28,6 M | 109 MB | ~82,1% | BSD-3-Clause | ONNX, QNN, TFLite |
-| ResNet-50 | 25,6 M | 98 MB | ~76,1% | BSD-3-Clause | PyTorch, ONNX |
-| EfficientNet-B0 | 5,3 M | 20 MB | ~77,1% | Apache-2.0 | PyTorch, ONNX |
-| MobileNetV3-Large | 5,4 M | 21 MB | ~75,2% | Apache-2.0 | PyTorch, TFLite |
+| ConvNext-Tiny (este) | 28,6 M | 224x224 | BSD-3-Clause | Clasificación ImageNet optimizada para NPU Qualcomm | ONNX, QNN_DLC, TFLite |
+| ConvNeXt-Tiny (torchvision) | ~28,6 M | 224x224 | BSD-3-Clause | Clasificación ImageNet genérica | PyTorch |
+| ResNet-50 | ~25,6 M | 224x224 | BSD-3-Clause (torchvision) | Clasificación ImageNet genérica | PyTorch |
+| MobileNetV3 | ~5,4 M (Large) | 224x224 | BSD-3-Clause (torchvision) | Clasificación eficiente en móvil | PyTorch, TFLite |
 
-ConvNext-Tiny ofrece una mejor precision que ResNet-50 con un tamano similar, y supera claramente a EfficientNet-B0 y MobileNetV3 en exactitud, aunque con mas parametros. Su ventaja principal frente a estas alternativas es la optimizacion especifica para NPUs de Qualcomm, que permite latencias extremadamente bajas en hardware movil.
+La comparación se limita a arquitecturas de clasificación de imagen de tamaño similar; no se dispone de datos de precisión comparada en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo de clasificacion de imagenes, no generativo: no puede producir texto, responder preguntas ni realizar razonamiento.
-- La informacion disponible no incluye datos sobre sesgos o alucinaciones, pero al ser un modelo entrenado en ImageNet, puede presentar sesgos hacia categorias occidentales y no cubrir adecuadamente objetos o escenas de otras culturas.
-- La resolucion de entrada esta fijada en 224x224; imagenes con resoluciones muy diferentes pueden degradar el rendimiento.
-- No se proporcionan metricas de exactitud en la model card de Qualcomm; los valores de top-1 mencionados provienen de la documentacion de torchvision y pueden variar con la cuantizacion.
-- La licencia BSD-3-Clause permite uso comercial, pero el modelo esta optimizado para hardware Qualcomm; su ejecucion en otras plataformas puede requerir reexportacion y no garantiza el mismo rendimiento.
-- El repositorio contiene principalmente archivos pre-exportados; para personalizar el modelo (fine-tuning, cambios de entrada) es necesario usar la libreria `qai_hub_models` y compilar con Qualcomm AI Hub.
+- Es un modelo de clasificación de imágenes, no de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso.
+- Entrenado sobre ImageNet (1000 clases): su precisión fuera de ese dominio depende de fine-tuning; no se documentan métricas de precisión en este repositorio.
+- Riesgo de sesgos heredados del dataset ImageNet (categorías y representaciones desequilibradas).
+- Riesgo de clasificación errónea en imágenes fuera de distribución o con clases no presentes en ImageNet.
+- El repositorio incluye artefactos compilados para hardware Qualcomm; el rendimiento en otras plataformas no está garantizado ni documentado.
+- La cuantización w8a8 puede degradar la precisión respecto a float; no se aportan datos de la caída de precisión.
+- Licencia BSD-3-Clause: permite uso comercial con atribución y sin endoso; conviene revisar los términos de los artefactos de terceros (torchvision, QAIRT) incluidos.
+- El tamaño del repositorio (11,5 GB) se debe a los múltiples artefactos exportados, no al modelo en sí.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/qualcomm/ConvNext-Tiny
-- Qualcomm AI Hub: https://aihub.qualcomm.com/models/convnext_tiny
-- Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/convnext_tiny/README.md
-- Implementacion original en torchvision: https://github.com/pytorch/vision/blob/main/torchvision/models/convnext.py
-- Paper ConvNeXt: https://arxiv.org/abs/2201.03545
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/ConvNext-Tiny
+- Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/convnext_tiny
+- Repositorio ai-hub-models (ConvNext-Tiny): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/convnext_tiny
+- Implementación de referencia en torchvision: https://github.com/pytorch/vision/blob/main/torchvision/models/convnext.py
+- Paper de ConvNeXt (arXiv:2201.03545): https://arxiv.org/abs/2201.03545
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Sitio corporativo de Qualcomm: https://www.qualcomm.com/

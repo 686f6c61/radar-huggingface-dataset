@@ -2,49 +2,49 @@
 
 ## Resumen
 
-TRELLIS.2-4B es un modelo de generación 3D de Microsoft Research, distribuido en este repositorio como una cuantización en formato GGUF a cargo del usuario `gguf-org`. El modelo base, `microsoft/TRELLIS.2-4B`, pertenece a la familia TRELLIS, orientada a la generación de activos 3D estructurados (mallas, campos de radiancia, representaciones Gaussianas 3D) a partir de imágenes de referencia. Esta ficha documenta la versión cuantizada publicada en Hugging Face.
+TRELLIS.2-4B es un modelo de generación 3D desarrollado por Microsoft Research, publicado originalmente como `microsoft/TRELLIS.2-4B`. La ficha que nos ocupa, `gguf-org/trellis2-4b-gguf`, es una conversión a formato GGUF realizada por el usuario `gguf-org`, pensada para su uso con la herramienta `ggk` (citada en la model card) y para facilitar el despliegue en entornos de inferencia local que consumen este formato.
 
-El repositorio GGUF tiene un tamaño de 5,7 GB y declara 7.786.541.462 parámetros en los pesos safetensors del modelo base, pese a que el nombre comercial indique "4B". La discrepancia entre el nombre (4B) y el recuento real de parámetros (~7,8 mil millones) es un dato relevante a tener en cuenta al planificar el despliegue.
+El modelo resuelve la tarea de generar mallas 3D (típicamente en formato `.glb`) a partir de una imagen de referencia, tal como ilustra el ejemplo de la model card (`--ref-image sheep.png -o out.glb`). Se trata, por tanto, de un modelo de imagen-a-3D, no de un modelo de lenguaje: los tags de Hugging Face no incluyen `text-generation` ni `image-text-to-text`, y el pipeline no está declarado.
 
-La licencia declarada es MIT, lo que facilita el uso comercial. La model card es extremadamente escueta: únicamente incluye un ejemplo de invocación con la herramienta `ggk` que toma una imagen PNG de referencia (`sheep.png`) y produce un archivo `.glb`. No se publican especificaciones de contexto, idiomas, benchmarks ni detalles de arquitectura en la información disponible.
+La relevancia de esta publicación radica en que ofrece una versión cuantizada en GGUF de un modelo de Microsoft bajo licencia MIT, lo que reduce la barrera de entrada para experimentar con generación 3D en hardware de consumo. No obstante, la información pública disponible es muy escasa: la model card es prácticamente un esqueleto y no detalla arquitectura, datos de entrenamiento ni benchmarks.
 
 ## Especificaciones técnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parámetros totales | 7.786.541.462 (según safetensors del modelo base) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF (variante NVFP4 mencionada en el ejemplo: `trellis2-4b-nvfp4.gguf`); no se detallan otros niveles |
+| Parametros totales | 7.786.541.462 (según safetensors del repo) |
+| Parametros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | no disponible (modelo de imagen-a-3D, no de texto) |
+| Tipos de cuantizacion | GGUF (el repo incluye al menos una variante `nvfp4` según la model card) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (derivado de safetensors del modelo base) |
+| Formato de pesos | GGUF (repo), safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `microsoft/TRELLIS.2-4B` en los datos proporcionados. Por el contexto de la familia TRELLIS y el ejemplo de la model card (entrada de imagen PNG, salida `.glb`), se trata de un modelo de generación 3D condicionada por imagen, no de un modelo de lenguaje. No obstante, no se confirma en la información disponible el tipo de backbone (transformer, difusión, modelo híbrido u otro), ni los datos de entrenamiento, número de tokens, composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO.
+No se ha publicado información sobre la arquitectura interna de TRELLIS.2-4B en la documentación disponible. El nombre y el uso descrito (imagen de referencia a malla `.glb`) sugieren un modelo generativo 3D, pero no se especifica si emplea un transformer, un modelo de difusión, una representación implícita (por ejemplo, campos de radiancia o SDF) u otra familia. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de ajuste fino con RLHF/DPO, algo por otra parte poco habitual en modelos de generación 3D.
 
-La innovación destacable documentada es la disponibilidad de una cuantización GGUF (con variante NVFP4) que permite ejecutar el modelo mediante la herramienta `ggk`, lo que sugiere un enfoque de inferencia optimizada para hardware con soporte de formatos de baja precisión. No se detallan más innovaciones técnicas.
+La única innovación técnica documentada en esta ficha es la propia cuantización a GGUF, que permite ejecutar el modelo con herramientas compatibles con este formato. La model card menciona el comando `ggk -m trellis2-4b-nvfp4.gguf --ref-image sheep.png -o out.glb`, lo que indica que la variante `nvfp4` (formato de 4 bits de NVIDIA) está soportada por el runtime `ggk`.
 
 ## Capacidades
 
-- Generación de activos 3D: el ejemplo de la model card muestra la conversión de una imagen de referencia (`sheep.png`) en un archivo de malla `.glb` (`out.glb`).
-- Generación condicionada por imagen: la entrada es una imagen de referencia, lo que indica capacidad de image-to-3D.
-- Exportación a formatos estándar de malla: salida en `.glb`, compatible con motores de renderizado y pipelines de gráficos 3D.
+- Generación de mallas 3D en formato `.glb` a partir de una imagen de referencia.
+- Conversión imagen-a-3D orientada a activos 3D de uso general (el ejemplo de la model card es una oveja).
+- Ejecución en formato GGUF mediante la herramienta `ggk`, con soporte de cuantización `nvfp4`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no es un modelo de lenguaje según la evidencia disponible).
-- Capacidades especiales (thinking mode, visión, audio): visión como entrada (imagen de referencia); no se documentan otras.
+- Capacidades multilingües: no disponibles (no es un modelo de texto).
+- Capacidades especiales (modo thinking, visión, audio): únicamente la entrada visual de referencia para la generación 3D; no consta soporte de audio ni de texto.
 
 ## Casos de uso
 
-- Prototipado rápido de activos 3D para videojuegos: a partir de una imagen conceptual (un boceto o una foto de referencia), el modelo genera una malla `.glb` que puede importarse directamente en motores como Unity o Unreal para iterar sobre el diseño antes de la producción final.
-- Generación de assets para comercio electrónico: conversión de fotografías de producto en modelos 3D exportables a visores web (por ejemplo, `<model-viewer>`), lo que permite ofrecer vistas interactivas de producto sin modelado manual.
-- Creación de contenido para realidad aumentada: generación de mallas ligeras en `.glb` para experiencias AR en navegador o móvil, donde el formato glTF es el estándar de facto.
-- Automatización de pipelines de contenido 3D: integración del binario `ggk` en scripts de CI/CD o herramientas internas para generar variantes de un activo a partir de un banco de imágenes de referencia, reduciendo el trabajo manual de modelado.
-- Impresión 3D y visualización científica: generación de mallas a partir de imágenes de referencia para previsualización o fabricación aditiva, siempre que la calidad de la malla sea suficiente (no verificable con los datos disponibles).
-- Investigación en generación 3D: uso del modelo cuantizado como baseline reproducible en experimentos de image-to-3D con requisitos de memoria reducidos gracias al formato GGUF.
+- Prototipado rápido de activos 3D para videojuegos: a partir de un concepto 2D (una imagen de referencia), el modelo genera una malla `.glb` que puede importarse directamente en motores como Unity o Unreal para iterar sobre el diseño.
+- Generación de props para escenas de realidad virtual o aumentada: el flujo `--ref-image` permite convertir fotos o ilustraciones en mallas listas para su uso en visores WebXR, reduciendo el trabajo manual de modelado.
+- Creación de catálogos de producto en 3D: dada una imagen de producto, generar una malla aproximada para vistas previas interactivas en comercio electrónico, con la ventaja de que el formato GGUF permite ejecutarlo en infraestructura propia.
+- Pipeline de impresión 3D: generar un `.glb` a partir de una referencia visual y pasarlo por un slicer para obtener un modelo imprimible, útil en prototipado doméstico.
+- Docencia y divulgación en gráficos por computador: al ser un modelo MIT y cuantizado, es adecuado para demostrar técnicas de generación 3D en aulas con GPUs de consumo.
+- Integración en herramientas de diseño asistido: un plugin que llame al runtime `ggk` con la imagen seleccionada por el usuario y devuelva una malla para su edición posterior en Blender.
 
 ## Benchmarks y rendimiento
 
@@ -52,27 +52,27 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de ~7,8 mil millones de parámetros en cuantización de 4 bits requiere del orden de 4-5 GB solo para los pesos, más el overhead de activaciones y del decodificador 3D; el repositorio GGUF ocupa 5,7 GB, lo que sugiere que el conjunto de pesos cuantizados ronda esa cifra.
-- GPU recomendadas: no disponibles en la documentación. La mención a NVFP4 sugiere soporte para GPUs con aceleración de formatos de baja precisión (arquitecturas recientes de NVIDIA), aunque no se confirma.
-- ¿Cabe en GPU de consumo? Probablemente sí en GPUs con 8-12 GB de VRAM para la variante cuantizada, aunque no hay confirmación oficial ni requisitos publicados.
-- Opciones de despliegue: la model card solo documenta la herramienta `ggk` (`ggk -m trellis2-4b-nvfp4.gguf --ref-image sheep.png -o out.glb`). No se mencionan vLLM, llama.cpp, Ollama ni TGI; dado que no es un modelo de lenguaje, es previsible que estos runners no sean aplicables.
+- VRAM estimada para inferencia: el repo pesa 5,7 GB, por lo que la variante `nvfp4` debería caber en GPUs con 8 GB de VRAM o más; no se dispone de cifras oficiales de consumo.
+- GPU recomendadas: no disponibles. La cuantización `nvfp4` está asociada a GPUs NVIDIA (arquitecturas recientes con soporte de FP4), pero no se confirma en la documentación.
+- ¿Cabe en GPU de consumo? Con 5,7 GB de pesos en GGUF, es plausible en tarjetas de 8-12 GB (RTX 3060, 4060, 4070), aunque no hay confirmación del fabricante.
+- Opciones de despliegue: herramienta `ggk` (citada en la model card); no se mencionan vLLM, llama.cpp, Ollama ni TGI, y al no ser un modelo de texto, es probable que estos últimos no sean aplicables.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparación fundamentada con alternativas de generación 3D.
+No se dispone de información suficiente sobre modelos comparables de imagen-a-3D en la documentación proporcionada para elaborar una comparativa fiable. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- La model card es mínima: no documenta arquitectura, datos de entrenamiento, limitaciones ni sesgos conocidos, lo que dificulta evaluar su idoneidad para producción.
-- Discrepancia entre el nombre ("4B") y el recuento real de parámetros (~7,8 mil millones): conviene verificar los requisitos de memoria reales antes de desplegar.
-- Riesgo de alucinación geométrica: en modelos de generación 3D es habitual producir mallas con topología defectuosa, geometría no cerrada o texturas inconsistentes; no hay documentación que lo descarte.
-- Idiomas y contexto: sin datos; no aplica como modelo de lenguaje según la evidencia disponible.
-- Licencia MIT: permite uso comercial y modificación, pero se recomienda revisar la licencia del modelo base `microsoft/TRELLIS.2-4B` y de los datos de entrenamiento originales, ya que el repositorio solo declara la licencia de la cuantización.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: ecosistema mínimo, sin validación comunitaria ni issues documentados.
-- Dependencia de la herramienta `ggk`, poco documentada en la información disponible; verificar su madurez y soporte antes de integrarla en pipelines.
+- La model card es prácticamente vacía: no hay información sobre sesgos, calidad de las mallas generadas ni dominios de aplicación previstos.
+- Riesgo de alucinación geométrica: al ser un modelo generativo 3D, es esperable que produzca geometrías plausibles pero incorrectas en detalles finos; no hay documentación que lo cuantifique.
+- No hay información sobre idiomas ni sobre texto: no debe usarse como modelo de lenguaje.
+- La licencia MIT del repo permite uso comercial, pero conviene verificar la licencia del modelo base `microsoft/TRELLIS.2-4B` antes de desplegarlo en producción.
+- El número de parámetros declarado en safetensors (7.786.541.462) no coincide con el "4B" del nombre; conviene tratarlo con cautela y verificar la configuración real del modelo base.
+- Al ser una conversión de terceros (`gguf-org`), no hay garantía de fidelidad respecto al modelo original de Microsoft.
+- El runtime `ggk` es poco conocido y no se documenta en la ficha; la compatibilidad con otras herramientas GGUF no está confirmada.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/gguf-org/trellis2-4b-gguf
-- Modelo base en Hugging Face: https://huggingface.co/microsoft/TRELLIS.2-4B
+- Repositorio GGUF: https://huggingface.co/gguf-org/trellis2-4b-gguf
+- Modelo base: https://huggingface.co/microsoft/TRELLIS.2-4B

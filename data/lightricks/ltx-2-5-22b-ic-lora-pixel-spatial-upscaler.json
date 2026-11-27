@@ -5,7 +5,7 @@
   "author": "Lightricks",
   "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler",
   "created_at": "2026-08-11T15:03:29.000Z",
-  "updated_at": "2026-10-22T08:58:29.000Z",
+  "updated_at": "2026-11-26T10:57:51.000Z",
   "license": "ltx-2.x-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "video-to-video",
@@ -27,7 +27,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 172,
+  "likes": 173,
   "downloads_30d": 13952,
   "trending_score": 10,
   "parameters": null,

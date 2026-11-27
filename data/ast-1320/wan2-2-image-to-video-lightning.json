@@ -17,13 +17,13 @@
     "diffusers:WanImageToVideoPipeline",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 14288901184,
   "parameters_human": "14.29B",
-  "storage_bytes": 133907171237,
-  "storage_human": "133.9 GB",
+  "storage_bytes": 123988255509,
+  "storage_human": "124.0 GB",
   "context_length": null,
   "base_model": null,
   "formats": [

@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "aiden-jeon/minipfn-tabpfn-v2-classifier · Hugging Face",
-      "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier",
-      "snippet": "A from-scratch reimplementation of the TabPFN v2 classifier (Hollmann et al., Accurate predictions on small data with a tabular foundation model, Nature 637, 2025). The model and inference follow the paper's Methods, and the training data come from the open TabICL prior. Code: Aiden-Jeon/minipfn ..."
-    },
-    {
-      "title": "aiden-jeon/minipfn-tabpfn-v2-regressor · Hugging Face",
-      "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor",
-      "snippet": "Instructions to use aiden-jeon/minipfn-tabpfn-v2-regressor with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries TabPFN How to use aiden-jeon/minipfn-tabpfn-v2-regressor with TabPFN: ... Notebooks Google Colab Kaggle minipfn TabPFN v2 regressor (reproduction) Model Training Results ..."
-    }
-  ]
+  "sources": []
 }

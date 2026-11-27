@@ -2,88 +2,89 @@
 
 ## Resumen
 
-Llama-3.3-8B-Instruct-apostate-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo c4tdr0ut/Llama-3.3-8B-Instruct-apostate, un fine-tune del Llama 3.3 8B Instruct de Meta. El trabajo de cuantizacion lo firma mradermacher, conocido en el ecosistema por publicar versiones optimizadas de modelos abiertos para inferencia local. El modelo base conserva la arquitectura transformer densa de Llama 3.3 con 8.030.261.248 parametros totales, segun los datos de safetensors.
+Llama-3.3-8B-Instruct-apostate-i1-GGUF es una recopilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo c4tdr0ut/Llama-3.3-8B-Instruct-apostate, un ajuste fino de Llama 3.3 8B Instruct orientado a conversación en inglés. El repositorio no contiene pesos originales en safetensors, sino únicamente ficheros GGUF cuantizados con la técnica i1 (imatrix/weighted), pensados para inferencia local eficiente en llama.cpp y runtimes compatibles.
 
-La relevancia de esta publicacion es practica: ofrece variantes cuantizadas con calibracion imatrix (etiquetadas i1) que reducen el peso del modelo desde los aproximadamente 16 GB en FP16 hasta rangos manejables en GPUs de consumo, manteniendo calidad conversacional. El repo incluye un espectro amplio de tipos de cuantizacion, desde IQ1_S hasta Q6_K, lo que permite ajustar el equilibrio entre calidad y requisitos de memoria.
+El modelo subyacente parte de la familia Llama 3.3 de Meta, con 8.030.261.248 parámetros (aproximadamente 8 mil millones) y arquitectura transformer densa. La relevancia de esta ficha radica en que ofrece un abanico muy amplio de niveles de cuantización (desde IQ1_S de 2,1 GB hasta Q6_K de 6,7 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de gama de entrada hasta estaciones de trabajo.
 
-El modelo esta etiquetado como conversacional y en ingles, y el autor indica compatibilidad con endpoints. La licencia no esta declarada en la informacion disponible, lo que supone una advertencia relevante para uso comercial. Al ser una cuantizacion de un fine-tune comunitario, su calidad depende tanto del modelo base como del proceso de calibracion imatrix aplicado.
+El repositorio tiene 794 descargas y 0 likes en el momento de la consulta, fue creado el 24 de noviembre de 2026 y actualizado el mismo día. La licencia no está declarada en la información disponible, lo que constituye un punto crítico a verificar antes de cualquier uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer densa (derivada de Llama 3.3 8B Instruct) |
-| Parametros totales | 8.030.261.248 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Arquitectura | Transformer denso (derivado de Llama 3.3 8B Instruct) |
+| Parámetros totales | 8.030.261.248 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_NL (small), IQ4_XS, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, más fichero imatrix |
 | Idiomas soportados | en |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (con fichero imatrix adicional) |
+| Formato de pesos | GGUF (transformers como librería declarada, pero los artefactos son GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer denso derivado de Llama 3.3 8B Instruct. No se dispone de informacion detallada sobre el proceso de fine-tune que dio lugar a c4tdr0ut/Llama-3.3-8B-Instruct-apostate, ni sobre el volumen de tokens, la composicion del dataset o si se emplearon tecnicas de alineacion como RLHF o DPO. La model card del repositorio de cuantizacion no documenta estos aspectos.
+La arquitectura corresponde a un transformer denso de la familia Llama 3.3 con 8.030.261.248 parámetros. El modelo original c4tdr0ut/Llama-3.3-8B-Instruct-apostate es un ajuste fino sobre Llama 3.3 8B Instruct, por lo que hereda la arquitectura base de Meta (atención multi-cabeza con RoPE, SwiGLU en las capas feed-forward y normalización RMSNorm). No se dispone de información sobre el dataset de ajuste fino, el número de tokens empleados, la composición de los datos ni si se aplicaron técnicas de RLHF, DPO o similares en el modelo apostate.
 
-La innovacion tecnica de esta publicacion reside en el proceso de cuantizacion: se emplean cuantizaciones con calibracion imatrix (sufijo i1), que ajustan los pesos de forma ponderada por importancia para preservar mejor la calidad en tasas de bits bajas. El repo incluye ademas un fichero imatrix independiente (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Se ofrece tambien una coleccion paralela de cuantizaciones estaticas en mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF.
+La innovación técnica de este repositorio concreto es el uso de cuantizaciones i1 (imatrix/weighted), una variante de cuantización de llama.cpp que emplea una matriz de importancia (imatrix) para ponderar mejor los pesos durante la compresión. Esto permite obtener, a igual tamaño de fichero, una calidad superior a las cuantizaciones estáticas equivalentes, especialmente en los niveles bajos (IQ1, IQ2, IQ3). El repositorio incluye además el fichero imatrix.gguf (0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Existe también una colección paralela de cuantizaciones estáticas en mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo Instruct base.
-- Razonamiento y respuesta a instrucciones en ingles.
-- Generacion de codigo y tareas de matematicas propias de un modelo de 8B, sin datos especificos publicados.
-- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su despliegue en servicios de inferencia.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repo.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto conversacional en inglés, heredada del ajuste fino Instruct.
+- Razonamiento y respuesta a instrucciones en formato chat (pipeline conversacional).
+- Generación de código y tareas de programación básicas, propias de un modelo de 8B.
+- Matemáticas de nivel medio, sin garantías de precisión en problemas complejos.
+- Soporte de tool calling / function calling: no confirmado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Capacidades especiales (visión, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local en ingles: el modelo puede desplegarse en estaciones de trabajo con GPU de consumo usando cuantizaciones Q4_K_M o IQ4_XS, gestionando dialogos multi-turno sin depender de la nube.
-- Prototipado rapido de aplicaciones de chat: gracias a la compatibilidad con endpoints y al formato GGUF, se puede integrar en servidores de inferencia tipo llama.cpp u Ollama para validar productos conversacionales antes de escalar a modelos mayores.
-- Generacion de texto y redaccion asistida en ingles: util para borradores, resumenes y reescritura en entornos con requisitos de privacidad, ya que la inferencia es local.
-- Educacion e investigacion: sirve como sujeto de estudio para analizar el impacto de distintas cuantizaciones (IQ1 a Q6) en la calidad de salida, comparando variantes sobre el mismo modelo base.
-- Evaluacion de fine-tunes comunitarios: permite a investigadores comparar el comportamiento del fine-tune apostate frente al Llama 3.3 8B Instruct original en tareas controladas.
-- Despliegue en hardware limitado: las variantes IQ1_S e IQ2 permiten ejecutar el modelo en equipos con poca VRAM o incluso en CPU, a costa de una perdida notable de calidad, para tareas de baja exigencia.
+- Despliegue local en portátiles y estaciones de trabajo: las cuantizaciones i1-IQ1_S (2,1 GB) e i1-IQ2_M (3,0 GB) permiten ejecutar el modelo en equipos con 8 GB de RAM o VRAM, sacrificando calidad por viabilidad.
+- Asistentes conversacionales en inglés sobre CPU: con i1-Q4_K_M (5,0 GB) se obtiene un equilibrio razonable entre calidad y velocidad en llama.cpp, adecuado para chatbots locales sin GPU.
+- Prototipado rápido de aplicaciones de chat: la variedad de cuantizaciones permite iterar desde un modelo muy ligero hasta uno de mayor fidelidad sin cambiar de repositorio.
+- Evaluación comparativa de cuantizaciones: el repositorio sirve como banco de pruebas para medir la degradación de calidad entre IQ1, IQ2, IQ3, IQ4, Q5 y Q6 sobre un mismo modelo base.
+- Generación de código en entornos sin conexión: un modelo de 8B cuantizado a Q5_K_M (5,8 GB) puede asistir en tareas de autocompletado y explicación de código en inglés dentro de IDE locales.
+- Investigación sobre ajustes finos comunitarios: útil para estudiar cómo se comporta un fine-tune "apostate" frente al Llama 3.3 8B Instruct original en tareas de conversación.
+- Generación de sus propias cuantizaciones: el fichero imatrix.gguf incluido permite a otros autores producir variantes personalizadas con llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 16 GB en FP16 (no incluido en este repo); en GGUF, entre 2 y 3 GB para IQ1/IQ2, entre 4 y 5 GB para Q4_K_M, y en torno a 6-7 GB para Q6_K (estimaciones segun el tamano de los ficheros de cuantizacion).
-- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q6; A100 o H100 no son necesarias para este tamano, aunque pueden usarse para servir multiples instancias.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas para cuantizaciones Q4; las variantes IQ1/IQ2 pueden ejecutarse incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la etiqueta endpoints_compatible sugiere integracion con servicios de inferencia estandar.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM/RAM estimada según cuantización: IQ1_S ~2,1 GB; IQ2_M ~3,0 GB; IQ3_M ~3,9 GB; IQ4_XS ~4,5 GB; Q4_K_M ~5,0 GB; Q5_K_M ~5,8 GB; Q6_K ~6,7 GB. Añadir margen para el contexto y el runtime (típicamente 1-2 GB adicionales).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100 para los niveles altos y contextos largos.
+- Cabe en GPU de consumo: sí, desde una GTX 1650 4 GB con IQ1/IQ2 hasta una RTX 4090 con Q6_K y contexto amplio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no son la vía natural para GGUF, aunque existen soportes parciales.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Llama-3.3-8B-Instruct-apostate-i1-GGUF | 8.030 M | no disponible | GGUF (imatrix) | no disponible | Cuantizacion imatrix de un fine-tune comunitario |
-| mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF | 8.030 M | no disponible | GGUF (estatico) | no disponible | Version de cuantizaciones estaticas del mismo modelo |
-| c4tdr0ut/Llama-3.3-8B-Instruct-apostate | 8.030 M | no disponible | safetensors | no disponible | Modelo base sin cuantizar |
-| Llama 3.3 8B Instruct (Meta) | 8.030 M | 128.000 (segun documentacion de Meta) | safetensors, GGUF | Llama 3.3 Community License | Modelo original del que deriva el fine-tune |
+| mradermacher/Llama-3.3-8B-Instruct-apostate-i1-GGUF | 8,03 B | no disponible | no disponible | GGUF (i1) | Cuantizaciones imatrix de un fine-tune comunitario |
+| mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF | 8,03 B | no disponible | no disponible | GGUF (estáticas) | Mismo modelo base, cuantizaciones estáticas |
+| c4tdr0ut/Llama-3.3-8B-Instruct-apostate | 8,03 B | no disponible | no disponible | safetensors (presumible) | Modelo base del que derivan las cuantizaciones |
+| Meta Llama 3.3 8B Instruct (referencia) | ~8 B | 128 K (según familia Llama 3.3) | Llama 3.3 Community License | safetensors, GGUF | Modelo original; contexto y licencia no verificados en esta ficha |
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la informacion disponible; antes de un uso comercial es imprescindible verificar los terminos del modelo base y del fine-tune.
-- El modelo esta etiquetado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Al ser un fine-tune comunitario sin documentacion de entrenamiento, se desconoce el dataset y los posibles sesgos introducidos.
-- Riesgo de alucinacion inherente a los modelos de 8B, especialmente en tareas de conocimiento factual y razonamiento complejo.
-- Las cuantizaciones de muy baja tasa de bits (IQ1_S, IQ2_XXS) degradan notablemente la calidad; no son recomendables para produccion.
-- La longitud de contexto no esta documentada en el repo; conviene verificar la del modelo base antes de disenar aplicaciones con ventanas largas.
-- El repo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion comunitaria del resultado de la cuantizacion.
+- Licencia no declarada: no se puede confirmar el uso comercial ni las condiciones de redistribución. Verificar en el repositorio base antes de producción.
+- Idioma limitado al inglés según la etiqueta del repositorio; el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación inherente a modelos de 8B, especialmente en tareas de razonamiento complejo y matemáticas.
+- Las cuantizaciones IQ1 e IQ2 (2,1-3,0 GB) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "mostly desperate".
+- El ajuste fino "apostate" no documenta su dataset ni proceso de entrenamiento, lo que impide evaluar sesgos introducidos.
+- No hay información sobre la longitud de contexto soportada; asumir la del modelo base sin confirmación es arriesgado.
+- El repositorio tiene 0 likes y 794 descargas: es un artefacto de nicho sin validación comunitaria amplia.
+- Al ser un fine-tune comunitario, puede presentar sesgos y comportamientos distintos al Llama 3.3 8B Instruct oficial.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.3-8B-Instruct-apostate-i1-GGUF
-- Modelo base del fine-tune: https://huggingface.co/c4tdr0ut/Llama-3.3-8B-Instruct-apostate
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Llama-3.3-8B-Instruct-apostate-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos al autor: https://huggingface.co/mradermacher/model_requests
+- Modelo base: https://huggingface.co/c4tdr0ut/Llama-3.3-8B-Instruct-apostate
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Llama-3.3-8B-Instruct-apostate-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Llama-3.3-8B-Instruct-apostate-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

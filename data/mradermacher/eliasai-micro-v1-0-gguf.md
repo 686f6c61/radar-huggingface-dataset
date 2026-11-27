@@ -2,93 +2,89 @@
 
 ## Resumen
 
-EliasAI-Micro-v1.0-GGUF es la version cuantizada en formato GGUF del modelo ETME-TECH/EliasAI-Micro-v1.0, un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-0.8B-Base. El trabajo de cuantizacion lo realiza mradermacher, un colaborador habitual de la comunidad de Hugging Face especializado en generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo esta orientado a conversacion en aleman (idioma `de`) y se distribuye bajo licencia Apache 2.0.
+EliasAI-Micro-v1.0 es un modelo de lenguaje conversacional en alemán de aproximadamente 1.000 millones de parámetros, desarrollado por ETME-TECH y afinado a partir de la base Qwen/Qwen3.5-0.8B-Base. La versión aquí descrita es una cuantización GGUF estática publicada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-Con aproximadamente 1.006 millones de parametros (en torno a 1B), se trata de un modelo de muy pequeno tamano disenado para inferencia eficiente en hardware modesto, incluidos equipos de consumo. La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un modelo conversacional en aleman en local, con cuantizaciones que van desde 0,6 GB (Q2_K) hasta 2,1 GB (f16), lo que lo hace accesible incluso en GPUs de gama baja o en CPU.
+El modelo está pensado para conversación en alemán y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su tamaño reducido (en torno a 1 GB en cuantizaciones de 4 bits) lo hace apto para ejecución en CPU, GPUs de consumo e incluso dispositivos con poca memoria, cubriendo casos de uso donde un modelo mayor no sería viable por coste o latencia.
 
-La ficha se centra en la version GGUF producida por mradermacher, derivada del modelo original de ETME-TECH, que a su vez parte de la familia Qwen3.5. No se dispone de informacion publica detallada sobre el proceso de entrenamiento del finetune original ni sobre resultados de benchmarks.
+La relevancia actual de esta ficha radica en que ofrece una alternativa ligera y de licencia permisiva para aplicaciones conversacionales en alemán, un idioma con menor cobertura de modelos pequeños de calidad que el inglés. No obstante, la información pública disponible es escasa: la model card del autor no detalla datos de entrenamiento, contexto ni benchmarks, por lo que muchos parámetros técnicos se indican como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-0.8B-Base; detalles no disponibles) |
-| Parametros totales | 1.006.672.704 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | aleman (de) |
+| Arquitectura | Transformer (derivada de Qwen3.5; detalles no disponibles) |
+| Parámetros totales | 1.006.672.704 (~1,0 B) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estáticas); variantes imatrix en repo i1-GGUF |
+| Idiomas soportados | Alemán (de) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base original) |
+| Formato de pesos | GGUF (original en transformers/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del Qwen3.5-0.8B-Base, por lo que hereda la arquitectura transformer de la familia Qwen3.5 en su variante de aproximadamente 1B parametros. El ajuste fino lo realiza ETME-TECH con un enfoque conversacional y orientado al aleman, segun indican las etiquetas `german` y `conversational` de la model card. No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar.
+El modelo se basa en la arquitectura de Qwen3.5, concretamente en la variante Qwen/Qwen3.5-0.8B-Base, sobre la que ETME-TECH realizó un fine-tuning para producir EliasAI-Micro-v1.0, orientado a conversación en alemán. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT específicas; la model card original no detalla estos aspectos.
 
-La version aqui descrita es una cuantizacion estatica generada por mradermacher mediante conversion desde el formato Hugging Face (safetensors) a GGUF. La model card indica que las cuantizaciones ponderadas con imatrix no estan disponibles en el momento de la publicacion. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion proporcionada.
+La versión publicada por mradermacher consiste en cuantizaciones estáticas GGUF generadas mediante conversión desde el checkpoint Hugging Face original (convert_type: hf), con cuantización de tensores de salida. Adicionalmente, el autor ofrece cuantizaciones ponderadas con imatrix en un repositorio separado (EliasAI-Micro-v1.0-i1-GGUF), que suelen preservar mejor la calidad en bits bajos. No se han documentado innovaciones arquitectónicas propias más allá de las heredadas de la base Qwen3.5.
 
 ## Capacidades
 
-- Generacion de texto conversacional en aleman, segun la orientacion declarada del finetune.
-- Conversacion multi-turno (etiqueta `conversational`).
-- Inferencia local eficiente gracias al reducido tamano del modelo y a las cuantizaciones disponibles.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al aleman segun la model card.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generación de texto conversacional en alemán, con orientación a diálogo multi-turno.
+- Comprensión y generación de lenguaje natural en registro coloquial y formal (según el fine-tuning del autor).
+- Razonamiento básico y respuesta a preguntas, limitado por su tamaño de ~1 B de parámetros.
+- Capacidades multilingües: únicamente se declara alemán; no se garantiza rendimiento en otros idiomas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; poco probable en un modelo de este tamaño sin confirmación explícita.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales en aleman en local: el modelo puede gestionar dialogos multi-turno en aleman y ejecutarse en hardware de consumo gracias a sus cuantizaciones de menos de 1 GB, lo que resulta adecuado para prototipos y aplicaciones de escritorio.
-- Despliegue en dispositivos con recursos limitados: las versiones Q4_K_S y Q4_K_M (0,7-0,8 GB) permiten ejecutar el modelo en portatiles sin GPU dedicada mediante llama.cpp u Ollama.
-- Generacion de texto en aleman para tareas auxiliares: redaccion de borradores, respuestas cortas o resumenes en un contexto donde el idioma principal sea el aleman.
-- Chatbots integrados en aplicaciones de escritorio o moviles: el tamano reducido del modelo facilita su empaquetado en aplicaciones que requieran inferencia offline.
-- Experimentacion e investigacion: como base para estudiar tecnicas de cuantizacion o para comparar el rendimiento de un finetune pequeno frente a modelos mayores en aleman.
-- Filtrado o clasificacion de texto en aleman: uso del modelo como componente ligero en pipelines de procesamiento de lenguaje natural donde el coste computacional sea critico.
-- Educacion y demostraciones: ejecucion en entornos docentes o talleres donde no se dispone de GPUs de alta gama.
+- Asistentes conversacionales en alemán para atención al cliente: el modelo puede gestionar diálogos multi-turno en alemán con baja latencia gracias a su tamaño reducido, desplegado en servidores modestos o en el borde.
+- Chatbots embebidos en aplicaciones móviles o de escritorio: su cuantización Q4_K_M (~0,8 GB) permite ejecución local en dispositivos con 2-4 GB de RAM, sin depender de la nube.
+- Prototipado rápido de productos conversacionales en alemán: al ser Apache 2.0 y estar disponible en GGUF, se integra en minutos con llama.cpp u Ollama para validar flujos de conversación.
+- Generación de respuestas en asistentes de voz para el mercado germanófono: combinado con un motor TTS, el modelo puede producir respuestas breves y naturales en alemán con latencia baja en CPU.
+- Filtrado y reformulación de texto en alemán: tareas de resumen corto, reescritura o clasificación conversacional en pipelines de procesamiento de documentos.
+- Educación y práctica de idiomas: como tutor conversacional de alemán en aplicaciones de aprendizaje, ejecutándose localmente para preservar la privacidad del usuario.
+- Entornos con requisitos de privacidad: al poder ejecutarse en local (CPU o GPU de consumo), permite procesar conversaciones sensibles sin enviar datos a servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,6 GB con Q2_K, 0,7-0,8 GB con Q4_K_S/Q4_K_M, 1,2 GB con Q8_0 y 2,1 GB con f16 (los tamanos de archivo son una cota superior razonable de la memoria necesaria, mas el overhead del runtime).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el modelo cabe holgadamente en tarjetas de gama baja como GTX 1650, RTX 3050 o superiores. Para maxima comodidad, una RTX 3060 o superior permite cargar la version f16 con margen.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna e incluso en iGPUs con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base original es compatible con transformers.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia baja en GPU de consumo, pero no se aportan cifras oficiales.
+- VRAM estimada para inferencia: ~0,6-0,8 GB en cuantizaciones Q2_K a Q4_K_M; ~1,2 GB en Q8_0; ~2,1 GB en f16.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060/4060 o superiores son más que suficientes. En A100/H100 el modelo estaría infrautilizado.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650, RTX 3050, RTX 4060, etc.), e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF; también puede usarse el checkpoint original con transformers.
+- Latencia y throughput estimados: no disponibles; por el tamaño (~1 B) se espera inferencia en tiempo real en CPU moderna y muy alta velocidad en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| EliasAI-Micro-v1.0-GGUF (este) | ~1,0B | no disponible | aleman | Apache 2.0 | GGUF |
-| Qwen3.5-0.8B-Base (modelo base) | ~0,8B | no disponible | multilingue (segun familia Qwen) | no disponible en esta ficha | safetensors |
-| Alternativas de ~1B en aleman | no disponible | no disponible | no disponible | no disponible | no disponible |
+| EliasAI-Micro-v1.0 (este) | ~1,0 B | No disponible | Alemán | Apache 2.0 | GGUF, safetensors |
+| Qwen3.5-0.8B-Base (base) | ~0,8 B | No disponible | Multilingüe | No disponible en la información | safetensors, GGUF |
+| Modelos pequeños alemanes (p. ej. variantes de Llama/Mistral afinadas en de) | 1-3 B típicamente | Variable | Alemán | Variable | GGUF, safetensors |
 
-No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria. La comparacion con el modelo base Qwen3.5-0.8B-Base es la referencia mas directa disponible.
+No se dispone de datos de rendimiento comparativo (benchmarks) para establecer una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- El modelo esta orientado exclusivamente al aleman; su rendimiento en castellano u otros idiomas no esta garantizado.
-- Al ser un modelo de ~1B parametros, su capacidad de razonamiento complejo, matematicas y codigo es limitada en comparacion con modelos mayores.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de pequeno tamano; no se han publicado evaluaciones de fidelidad.
-- No se dispone de informacion sobre sesgos conocidos ni sobre la composicion del dataset de entrenamiento.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3.5 y del finetune original de ETME-TECH.
-- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia; se recomienda Q4_K_M o superior para uso en produccion.
-- No se dispone de informacion sobre la longitud de contexto soportada, lo que limita la planificacion de aplicaciones con ventanas largas.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso comunitario ni validacion externa.
+- Sesgos conocidos: no documentados por el autor; al derivar de Qwen3.5 y afinarse en alemán, puede heredar sesgos de la base y del dataset de fine-tuning, no auditados públicamente.
+- Riesgo de alucinación: elevado en un modelo de ~1 B de parámetros; no apto para tareas que requieran alta fidelidad factual sin verificación.
+- Limitaciones de contexto o idioma: solo se declara soporte de alemán; el rendimiento en otros idiomas no está garantizado. La longitud de contexto no está especificada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; conviene revisar la licencia del modelo base Qwen3.5 por si impone condiciones adicionales.
+- Caveats para producción: ausencia de benchmarks y de documentación de entrenamiento; se recomienda evaluar exhaustivamente en el dominio objetivo antes de desplegar. La cuantización Q2_K y Q3_K_M pueden degradar notablemente la calidad; se sugiere Q4_K_M o superior para uso real.
+- La model card no especifica versión de tokenizador, plantilla de chat ni parámetros de generación recomendados, lo que puede afectar a la reproducibilidad.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/EliasAI-Micro-v1.0-GGUF
-- Modelo base original: https://huggingface.co/ETME-TECH/EliasAI-Micro-v1.0
-- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#EliasAI-Micro-v1.0-GGUF
-- FAQ y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- nethype GmbH: https://www.nethype.de/
+- Modelo GGUF: https://huggingface.co/mradermacher/EliasAI-Micro-v1.0-GGUF
+- Modelo original: https://huggingface.co/ETME-TECH/EliasAI-Micro-v1.0
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/EliasAI-Micro-v1.0-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#EliasAI-Micro-v1.0-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

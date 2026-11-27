@@ -2,104 +2,96 @@
 
 ## Resumen
 
-Prismyra decision NVFP4 36L es un checkpoint de pesos derivado del proyecto Prismyra de littlemex, construido sobre el modelo base Qwen/Qwen3.6-35B-A3B-FP8. Se trata de una variante de 36 de las 40 capas del modelo original en la que los 256 expertos enrutados de cada capa se han cuantizado a NVFP4 (coma flotante de 4 bits con escalas de bloque de 16 elementos y una escala FP32 por matriz de experto), mientras que el resto de componentes —atención, proyecciones de Gated DeltaNet, experto compartido y cabeza MTP— permanecen en FP8. El objetivo es reducir el peso del checkpoint de unos 29 GB a unos 18 GB y hacerlo ejecutable en una única GPU Blackwell de gama de estación de trabajo como la RTX PRO 4500.
+Prismyra decision NVFP4 36L es un checkpoint de clasificación y toma de decisiones tipadas construido sobre Qwen3.6-35B-A3B-FP8, desarrollado por el usuario littlemex dentro del proyecto Prismyra. El modelo no es un chat generalista: está especializado en responder preguntas de opción múltiple y tareas de comprensión lectora con decisiones deterministas y compatibles con lotes (batch-invariant), emitiendo salidas tipadas en lugar de texto libre. Se distribuye como un fine-tune con adaptador LoRA de rango 64 sobre el modelo base, y su rasgo técnico más distintivo es la cuantización NVFP4 de los expertos enrutados.
 
-El modelo tiene una vocación muy concreta: tareas de decisión, clasificación y comprensión lectora (reading comprehension), con respuestas de una sola letra en el caso de las evaluaciones. Incorpora un adaptador LoRA de rango 16 denominado L1, fusionado en los pesos no expertos, que se destiló a partir de la propia pasada FP8 de 36 capas del checkpoint y de respuestas de Kimi K3 en filas fuera de la distribución de entrenamiento.
+La arquitectura subyacente es un transformer MoE (tag `qwen3_5_moe`) con 40 capas, del cual este checkpoint conserva 36. Los 256 expertos enrutados por capa, que constituyen la mayor parte de los pesos, se almacenan en NVFP4 (4 bits en coma flotante, escalas de bloque de 16 elementos y una escala FP32 por matriz de experto), mientras que atención, proyecciones gated-delta-net, experto compartido y cabeza de predicción multi-token permanecen en FP8. El resultado es un repositorio de unos 20 GB frente a los 32 GB del checkpoint FP8 equivalente.
 
-Es relevante porque explora la viabilidad de servir un modelo MoE grande con expertos en 4 bits nativos en hardware Blackwell, con una penalización de precisión medida cercana a cero frente a la versión FP8 completa. No obstante, su estado es experimental: el kernel de forward NVFP4 (`prismyra.kernels.nvfp4`) nunca se integró en la versión publicada del paquete `prismyra`, por lo que la ruta de carga aquí descrita no está verificada como instalación reproducible.
+Su relevancia actual es doble: por un lado, demuestra una ruta práctica de cuantización selectiva de expertos MoE que reduce el peso a aproximadamente el 60 % sin tocar el resto de la pila; por otro, exige hardware NVIDIA Blackwell con tensor cores FP4 nativos, lo que lo convierte en un caso de estudio de las dependencias de hardware que introduce NVFP4 en el despliegue de modelos abiertos. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (atención + proyecciones Gated DeltaNet) con 256 expertos enrutados por capa y experto compartido, más cabeza MTP; tag `qwen3_5_moe` |
-| Parametros totales | Aproximadamente 35B nominales (modelo base Qwen3.6-35B-A3B). El archivo `model.safetensors` del repositorio contiene 3.596.444.464 parametros (tensores no expertos); los 256 expertos enrutados por capa se distribuyen aparte en `nvfp4_experts.safetensors` |
-| Parametros activos | Aproximadamente 3B (nomenclatura A3B del modelo base) |
-| Longitud de contexto | no disponible (se menciona un "ceil" de contexto largo del proyecto, sin valor numérico publicado) |
-| Tipos de cuantizacion | Expertos enrutados en NVFP4 (4 bits FP, escalas de bloque de 16 elementos, una escala FP32 por matriz de experto); resto de pesos en FP8; adaptador LoRA de rango 16 fusionado en pesos no expertos |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`layers-*.safetensors`, `mtp.safetensors`, `outside.safetensors`, `nvfp4_experts.safetensors`) + `nvfp4_calib.json` |
+| Arquitectura | Transformer MoE (tag `qwen3_5_moe`), 36 de 40 capas, 256 expertos enrutados por capa, proyecciones gated-delta-net, experto compartido y cabeza MTP |
+| Parametros totales | 3.596.444.464 (según safetensors del repo); el nombre comercial indica 35B-A3B sobre el modelo base Qwen3.6-35B-A3B-FP8 |
+| Parametros activos | No disponible con precisión (el sufijo A3B del modelo base sugiere ~3B activos, dato no confirmado en la información proporcionada) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | NVFP4 para expertos enrutados (escalas de bloque de 16 elementos, una escala FP32 por matriz); FP8 para atención, gated-delta-net, experto compartido y cabeza MTP |
+| Idiomas soportados | Inglés (`en` en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (shards `layers-*`, `mtp.safetensors`, `outside.safetensors`, `nvfp4_experts.safetensors`), más `nvfp4_calib.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura MoE de Qwen3.6-35B-A3B: 40 capas en el original, de las que este checkpoint conserva 36, con 256 expertos enrutados por capa más un experto compartido. Combina mecanismos de atención con proyecciones Gated DeltaNet (una variante de atención lineal/estado recurrente) y una cabeza MTP (multi-token prediction). Los 256 expertos enrutados son los tensores de mayor tamaño del checkpoint, y cuantizarlos solo a ellos reduce el tamaño de 29 GB a 18 GB. La conversión NVFP4 usa códigos de 4 bits empaquetados con escalas por matriz de experto y un fichero de calibración (`nvfp4_calib.json`) con los máximos de activación por capa medidos sobre 128 filas de entrenamiento.
+El modelo parte de Qwen3.6-35B-A3B-FP8, un MoE con 40 capas y 256 expertos enrutados por capa. Prismyra recorta el checkpoint a 36 capas y aplica una cuantización selectiva: solo los expertos enrutados pasan a NVFP4, con escalas de bloque de 16 elementos y una escala FP32 por matriz de experto, mientras que el resto de componentes (atención, proyecciones gated-delta-net, experto compartido y cabeza de predicción multi-token) se mantienen en FP8. Esta decisión concentra la compresión donde está la mayor parte del peso y preserva en mayor precisión las partes sensibles a la calidad.
 
-El adaptador LoRA L1 (rango 16) actúa sobre las proyecciones de atención, las proyecciones Gated DeltaNet y el experto compartido, pero no sobre los expertos enrutados, que se cuantizan desde los pesos FP8 sin adaptar. L1 continúa el entrenamiento desde un adaptador anterior del proyecto (`qat13`) sobre 31.418 filas: destilación contra la propia pasada FP8 de 36 capas en la mayoría de filas, más la respuesta de una sola letra de Kimi K3 (con razonamiento desactivado) en 23.585 filas procedentes de familias de preguntas y variantes de documentos largos no vistas por esa pasada, incluidas 5.696 filas con documentos rellenados hasta el límite de contexto largo del proyecto. Se entrenó durante una época con tasa de aprendizaje 2,5e-5.
+Sobre esa base se entrena un adaptador LoRA de rango 64 con módulos objetivo y hiperparámetros sin cambios respecto a revisiones anteriores. La revisión actual sustituye el LoRA integrado por el adaptador que ya se distribuye en el checkpoint FP8 de 36 capas, que incorpora cuatro conjuntos de datos públicos con licencia clara sobre sentimiento y razonamiento causal o multi-paso (56.026 filas en total, un 4,00 % nuevo en la mezcla de entrenamiento). Según el autor, esto cierra una brecha medida en sentimiento sin regresión en el conjunto de seguridad de producción del proyecto. El adaptador se validó sobre dos conjuntos independientes de 10.000 preguntas cada uno, evaluados en la propia ruta de servicio NVFP4 de este checkpoint. Los expertos enrutados no se tocan en ninguna revisión del LoRA, por lo que los ficheros `nvfp4_experts.safetensors` y `nvfp4_calib.json` permanecen idénticos entre revisiones.
 
-La evaluación se realizó sobre dos mediciones separadas, ninguna de ellas sobre este checkpoint combinado exacto (los expertos NVFP4 y L1 nunca se ejecutaron juntos en una pasada completa de evaluación de producción).
+Los datos de entrenamiento declarados cubren CommonsenseQA, AQuA-RAT, MMLU, CosmosQA, GLUE, SciQ, DREAM, OpenBookQA, RACE, BoolQ, un corpus de sentimiento financiero de Twitter, TweetEval, Balanced COPA y Social IQa.
 
 ## Capacidades
 
-- Generación de texto conversacional (tag `conversational`).
-- Tareas de decisión y clasificación, orientadas a emitir respuestas cortas o de una sola letra.
-- Comprensión lectora (reading comprehension) sobre documentos, incluidas variantes de documento largo.
-- Procesamiento de entrada imagen-texto (pipeline declarado `image-text-to-text`).
-- Soporte de contexto largo (se mencionan filas de entrenamiento con documentos rellenados hasta el límite de contexto del proyecto, sin valor numérico publicado).
-- Capacidad multimodal heredada del modelo base Qwen3.6-35B-A3B (según el pipeline declarado).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (las respuestas de destilación se generaron con el razonamiento desactivado).
-- Capacidades multilingües: no disponible.
-- Modo thinking explícito: no disponible (la destilación de Kimi K3 se hizo con razonamiento desactivado).
+- Clasificación de texto y respuesta a preguntas de opción múltiple con salidas tipadas (`typed-decisions`), en lugar de generación de texto libre.
+- Comprensión lectora y razonamiento de sentido común, causal y multi-paso sobre los dominios cubiertos por los datasets de entrenamiento.
+- Modo zero-shot sobre preguntas nuevas dentro del formato de decisión.
+- Inferencia determinista y compatible con lotes (`deterministic`, `batch-invariant`), pensada para reproducibilidad en producción.
+- Compatibilidad con la API de `autotrust/JEV-27B` mediante el endpoint `POST /v1/decide` (forma `kind`/`state`/`question`/`options`).
+- Servicio concurrente con `--batcher`, que mantiene documentos de varios llamantes en dispositivo con desalojo LRU y contabilidad de fragmentación a nivel de página.
+- Multimodal a nivel de pipeline (`image-text-to-text`), aunque la model card no detalla el alcance real de las capacidades de visión.
+- Capacidad de predicción multi-token (cabeza MTP) en FP8.
 
 ## Casos de uso
 
-- Clasificación automática de documentos y respuestas de examen: el modelo emite una respuesta de una sola letra, adecuado para tareas tipo RACE o BoolQ, donde el formato de salida corto reduce la variabilidad.
-- Comprensión lectora a escala sobre corpus largos: con soporte de contexto largo y entrenamiento específico en variantes de documento extenso, puede responder preguntas sobre pasajes completos sin trocearlos.
-- Filtrado y enrutado de consultas en pipelines de atención al cliente: al ser un modelo de decisión, puede clasificar la intención de una consulta antes de derivarla a otro sistema.
-- Moderación y etiquetado automático: clasificación binaria o multietiqueta de contenido (por ejemplo, familias BoolQ) para colas de revisión.
-- Evaluación asistida de comprensión en plataformas educativas: responder preguntas de opción múltiple sobre materiales de estudio con salida de una letra.
-- Integración multimodal en pipelines de imagen-texto: al declarar pipeline `image-text-to-text`, puede procesar documentos o capturas con texto y emitir una decisión.
-- Generación de código en producción: no disponible como capacidad documentada en este checkpoint (la información no indica soporte específico de código, tool calling ni integración en CI/CD).
+- Clasificación de tickets y correos en producción: el modelo emite decisiones tipadas y deterministas sobre categorías predefinidas, lo que permite integrarlo en pipelines con validación estricta de esquema y resultados reproducibles entre ejecuciones.
+- Moderación y etiquetado de contenido a escala: el `--batcher` mantiene documentos de varios llamantes en GPU con desalojo LRU, adecuado para servicios de etiquetado con alta concurrencia y ventanas de contexto variables.
+- Evaluación automática de exámenes y bancos de preguntas: entrenado sobre MMLU, AQuA-RAT, OpenBookQA, RACE, ARC y DREAM, responde preguntas de opción múltiple con un formato de salida fijo, útil para pipelines de benchmarking interno.
+- Análisis de sentimiento en dominios financiero y redes sociales: la mezcla de entrenamiento incluye sentimiento financiero de Twitter y TweetEval, lo que lo hace apropiado para clasificación de opinión en esos registros.
+- Razonamiento de sentido común en asistentes de decisión: sobre CommonsenseQA, Social IQa, CosmosQA y Balanced COPA, puede resolver preguntas de elección entre opciones en flujos de recomendación o triaje.
+- Sustitución directa de un servicio construido contra la API de JEV: el endpoint `/v1/decide` replica la forma de petición de `autotrust/JEV-27B`, lo que permite migrar sin reescribir el cliente.
+- Inferencia reproducible en auditoría: la invariancia de lote y el determinismo declarados permiten reejecutar la misma decisión y obtener el mismo resultado, requisito habitual en sistemas sujetos a revisión.
 
 ## Benchmarks y rendimiento
 
-Dos mediciones separadas, ninguna sobre este checkpoint combinado (NVFP4 + L1) en una sola pasada. Ambas comparan contra `littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l`, el checkpoint FP8 del que derivan estos pesos.
-
-**NVFP4 en los expertos enrutados, antes de aplicar LoRA**, sobre un conjunto de confirmación de 1.400 preguntas (familia RACE, familia BoolQ, un split de desarrollo tipo Kev), servido por el proyecto directamente (no a través de vLLM) en una RTX PRO 4500:
-
-| Comparacion | Diferencia en puntos | Intervalo 95% |
-|---|---|---|
-| Expertos NVFP4 vs. FP8 del propio proyecto (36 capas) | −0,07 | [−0,86, +0,79] |
-| Expertos NVFP4 (36 capas) vs. FP8 (32 capas, el checkpoint FP8 más profundo que cabe en una RTX PRO 4500) | +1,86 | [0,64, ...] (intervalo truncado en la información disponible) |
-
-No hay resultados publicados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. No se han proporcionado datos de rendimiento (throughput ni latencia).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona dos conjuntos de 10.000 preguntas usados para validar la transferencia del adaptador y una prueba de humo con dos preguntas respondidas correctamente vía API HTTP, pero no incluye cifras de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- GPU con tensor cores de 4 bits FP nativos: arquitectura NVIDIA Blackwell, compute capability 12.0 (por ejemplo, RTX PRO 4500 según las mediciones del autor).
-- No ejecuta la ruta NVFP4 en tarjetas Ada ni Hopper (L40S, H100): el kernel NVFP4 MoE de vLLM del que depende es exclusivo de Blackwell, y el propio proyecto no midió este checkpoint en L40S por ese motivo.
-- VRAM estimada: el repositorio ocupa 21,4 GB y el checkpoint cuantizado se describe como de unos 18 GB para los expertos; se requiere espacio adicional para activaciones y caché durante la inferencia (valor concreto no disponible).
-- Despliegue: el proyecto proporciona `prismyra-serve` con las variables de entorno `PRISMYRA_EXPERTS=nvfp4`, `PRISMYRA_NVFP4_EXPERTS` y `PRISMYRA_NVFP4_CALIB`, e instalación vía `pip install "prismyra[server,fast] @ git+https://github.com/littlemex/Prismyra@v0.3.0"`.
-- El kernel `prismyra.kernels.nvfp4` no está incluido en ninguna versión publicada del paquete `prismyra`, incluida la v0.3.0; sin él, la variable de entorno no tiene efecto y los tensores de expertos quedan ausentes, por lo que la carga falla. La receta no está verificada como instalación reproducible.
-- Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible para este checkpoint (se apoya en kernels NVFP4 de vLLM, pero el formato en disco es propio y no el que espera el loader de cuantización de vLLM).
+- GPU obligatoria: NVIDIA Blackwell con tensor cores FP4 nativos. Verificado únicamente en RTX PRO 4500 (compute capability 12.0, `sm_120`).
+- No funciona en Ada ni Hopper (L40S, H100) para la ruta NVFP4. Blackwell de datacenter (B200/GB200, `sm_100`) no ha sido probado.
+- VRAM estimada: no disponible de forma explícita; el repositorio ocupa 24 GB y los expertos NVFP4 unos 16 GB, frente a unos 29 GB en FP8, lo que da una orientación del orden de magnitud, no una cifra de VRAM en ejecución.
+- No cabe en GPUs de consumo convencionales de generaciones anteriores; requiere una tarjeta Blackwell profesional o superior.
+- Despliegue mediante `prismyra-serve` (paquete `prismyra`, mínimo v0.3.1 para la ruta NVFP4, v0.4.7 recomendado), con variables `PRISMYRA_EXPERTS=nvfp4`, `PRISMYRA_NVFP4_EXPERTS` y `PRISMYRA_NVFP4_CALIB`, y flag `--require-kernels`.
+- Depende de los kernels NVFP4 MoE de vLLM (CUTLASS/FlashInfer), que son exclusivos de Blackwell.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l (este) | ~35B totales, ~3B activos (checkpoint con 3.596.444.464 parametros no expertos) | MoE híbrida 36/40 capas, expertos NVFP4 | NVFP4 (expertos) + FP8 (resto) | apache-2.0 | Pesos publicados; runtime experimental no incluido en el paquete publicado |
-| littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l | ~35B totales, ~3B activos | MoE híbrida 36/40 capas | FP8 | apache-2.0 | Pesos publicados; referencia de la evaluación |
-| Qwen/Qwen3.6-35B-A3B-FP8 (base) | ~35B totales, ~3B activos | MoE híbrida 40 capas | FP8 | no disponible en la información | Modelo base del que derivan los anteriores |
-
-No se dispone de datos de comparación con otras alternativas de la misma categoría (mismo tamaño o misma tarea de decisión/reading comprehension) en la información proporcionada.
+| Prismyra decision NVFP4 36L | 3,596 M en safetensors (base 35B-A3B) | No disponible | NVFP4 expertos + FP8 resto | Apache 2.0 | Solo Blackwell, determinista, decisiones tipadas |
+| Prismyra decision FP8 36L (`littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l`) | Base 35B-A3B, 36 capas | No disponible | FP8 | Apache 2.0 | Mismo adaptador, ~32 GB, sin dependencia de Blackwell |
+| Prismyra decision 35B-A3B NVFP4 (`littlemex/prismyra-decision-35b-a3b-nvfp4`) | Base 35B-A3B | No disponible | NVFP4 con proyecciones gated-delta-net también cuantizadas | Apache 2.0 | Línea más reciente, entrenada solo con datos confirmados para uso comercial |
+| Qwen3.6-35B-A3B-FP8 (`Qwen/Qwen3.6-35B-A3B-FP8`) | 35B-A3B | No disponible | FP8 | No disponible en la información proporcionada | Modelo base generalista, sin especialización en decisiones |
 
 ## Limitaciones y advertencias
 
-- Estado experimental: el forward NVFP4 (`prismyra.kernels.nvfp4`) nunca se fusionó en una versión publicada de `prismyra` (ni en v0.3.0). Cargar correctamente este checkpoint exige ese módulo, una carga `AutoModel.from_pretrained` con los tensores de expertos ausentes de `model.safetensors.index.json` y variables de entorno que apunten a los dos ficheros laterales. Nada de esto se ha reverificado contra la ruta actual de manejo de expertos (`prismyra.kernels.qwen3_moe`), que puede volver a envolver los expertos enrutados tras el intercambio NVFP4 y deshacerlo.
-- Dependencia de hardware estricta: solo funciona la ruta NVFP4 en GPU Blackwell (compute capability 12.0). En Ada o Hopper no se ejecuta.
-- Las dos evaluaciones publicadas nunca se realizaron sobre este checkpoint combinado (NVFP4 + L1), sino por separado y contra el checkpoint FP8, por lo que el rendimiento real del conjunto no está medido en una sola pasada.
-- Formato en disco propio, distinto del layout `compressed-tensors` que espera el loader de cuantización estándar de vLLM.
-- No se han publicado datos de benchmarks estándar (MMLU, HumanEval, GSM8K), de sesgos, de tasas de alucinación ni de idiomas soportados.
-- Riesgo de alucinación: no cuantificado en la información disponible.
-- Restricciones de licencia: licencia apache-2.0, que permite uso comercial; deben respetarse las condiciones heredadas del modelo base Qwen3.6-35B-A3B, cuya licencia específica no se detalla en la información disponible.
-- Sesgos conocidos: no disponibles.
-- Limitaciones de contexto o idioma: no disponibles (solo se menciona un límite de contexto largo sin valor numérico).
+- Dependencia dura de hardware: la ruta NVFP4 solo se ha verificado en RTX PRO 4500. En Ada y Hopper no funciona; en B200/GB200 no está probado. El autor indica que el kernel está diseñado para fallar en lugar de degradar silenciosamente a FP8, pero ese comportamiento no se ha verificado fuera de Blackwell.
+- Idiomas: la model card declara únicamente inglés. No hay soporte multilingüe confirmado.
+- Longitud de contexto no publicada: no es posible planificar despliegues con documentos largos sin medirla.
+- Especialización estrecha: es un modelo de decisión y clasificación, no un generador conversacional. Usarlo como chat generalista produciría resultados fuera de su dominio de entrenamiento.
+- Riesgo de alucinación en las opciones: al operar sobre conjuntos cerrados de opciones, el modo de fallo típico es elegir una opción incorrecta con alta confianza, no inventar texto; conviene calibrar umbrales por dominio.
+- Sesgos: los datasets de entrenamiento incluyen Twitter financiero y TweetEval, con los sesgos demográficos y de registro propios de esas fuentes; la model card no documenta una evaluación de sesgos.
+- Trazabilidad de licencias: el autor señala que esta línea no está entrenada exclusivamente con datos confirmados como aptos para uso comercial y para entrenar modelos derivados; la línea `prismyra-decision-35b-a3b-nvfp4` sí lo está. Aunque la licencia del checkpoint es Apache 2.0, conviene revisar la procedencia de los datos antes de un uso comercial estricto.
+- Madurez: 196 descargas y 0 likes en el momento de la consulta; el proyecto depende de un paquete propio (`prismyra`) instalado desde Git, no desde PyPI estable.
+- El recorte de 40 a 36 capas implica una pérdida deliberada de capacidad respecto al modelo base, no documentada en detalle.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l
-- Checkpoint FP8 de referencia: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l
+- Revisión anterior del checkpoint: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l/tree/e8a881e2121c49f4ef9554b5f2eaa139de6b4761
+- Checkpoint FP8 36 capas: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l
+- Línea NVFP4 con datos solo comerciales: https://huggingface.co/littlemex/prismyra-decision-35b-a3b-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
-- Repositorio GitHub del proyecto Prismyra: https://github.com/littlemex/Prismyra
+- Repositorio del proyecto: https://github.com/littlemex/Prismyra
+- Documentación del endpoint `/v1/decide`: https://github.com/littlemex/Prismyra/blob/a79bbdce9e5ee909120de535f89dae2356885cd6/docs/DECIDE.md
+- Modelo de referencia para la API de decisión: `autotrust/JEV-27B` (referenciado en la model card, sin URL directa en la información proporcionada)

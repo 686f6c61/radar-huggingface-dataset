@@ -2,109 +2,97 @@
 
 ## Resumen
 
-Este repositorio contiene un conjunto de 15 checkpoints (cada 2.000 pasos) resultantes de un fine-tuning del modelo fundacional de robótica `nvidia/GR00T-N1.7-3B` sobre un dataset propio de manipulación con un robot Piper (tarea "lelab sub-task", 371 episodios, 115.784 frames). Lo desarrolla el usuario `khb2439` como proyecto de fin de máster (capstone) y su interés principal no es el modelo en sí, sino el empaquetado: cada checkpoint incluye pesos en safetensors y los siete grafos ONNX necesarios para compilar motores TensorRT en una Jetson AGX Orin.
+`khb2439/capstone-gr00t-n1d7-lelab-subtask-30k-orin` es un checkpoint de ajuste fino (fine-tuning) del modelo fundacional de robotica `nvidia/GR00T-N1.7-3B`, entrenado por el usuario khb2439 sobre un conjunto de datos propio de tareas de manipulacion con un brazo robotico Piper. El modelo resuelve el problema de la politica visomotora (vision-language-action, VLA): dado un par de imagenes de camara, el estado articular del robot y una instruccion de lenguaje natural, predice una secuencia de acciones articulares para ejecutar la tarea.
 
-El modelo pertenece a la familia GR00T N1.7 de NVIDIA, un modelo visión-lenguaje-acción (VLA) que combina un backbone VLM (en este caso `nvidia/Cosmos-Reason2-2B`) con un cabezal de difusión (DiT) que genera chunks de acciones. El fine-tuning congela el LLM y el ViT, y solo entrena el proyector, el modelo de difusión y la capa de adaptación, lo que explica que los ONNX de backbone sean idénticos entre los 15 checkpoints.
+Se trata de un derivado experimental de tipo capstone (proyecto de fin de estudios), no de un modelo de proposito general. El entrenamiento consistio en 30.000 pasos sobre 371 episodios (115.784 fotogramas, aproximadamente 64 minutos de datos de manipulacion) del subconjunto de tareas "lelab sub-task" con el embodiment Piper. El repositorio publica 15 checkpoints intermedios cada 2.000 pasos, sin estados de optimizador, y esta pensado para desplegarse en un NVIDIA Jetson AGX Orin mediante exportacion a ONNX y construccion de motores TensorRT.
 
-Es relevante porque documenta con detalle un flujo de despliegue edge completo: exportación ONNX, compilación TensorRT en Jetson, servidor de política ZeroMQ y verificación numérica contra PyTorch (coseno ≥ 0,999997 en todos los checkpoints). Es un artefacto muy específico, sin benchmarks de tarea publicados, útil como referencia de ingeniería más que como modelo reutilizable fuera de su embodiment.
+La relevancia de esta ficha es acotada: no es un modelo de lenguaje general, sino un ejemplo concreto de como se adapta un VLA de NVIDIA a un hardware de robot especifico y a un conjunto de datos reducido, incluyendo los detalhes de preprocesado de imagen que condicionan la reproducibilidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VLA: backbone VLM (Cosmos-Reason2-2B) + cabezal de difusión (DiT) + encoders de estado/acción; exportado como 7 subgrafos ONNX (ViT, LLM, VL self-attention, state encoder, action encoder, DiT, action decoder) |
-| Parametros totales | 3B (heredados de `nvidia/GR00T-N1.7-3B`) |
+| Arquitectura | Vision-Language-Action (VLA) basada en `nvidia/GR00T-N1.7-3B`; backbone de razonamiento `nvidia/Cosmos-Reason2-2B`; cabeza de difusion para acciones |
+| Parametros totales | 3B (heredados del modelo base `GR00T-N1.7-3B`) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (entrada: instrucción de subtarea en lenguaje natural, 2 cámaras 480×640, estado de 6 dimensiones) |
-| Tipos de cuantizacion | BF16 (LLM y resto del pipeline), FP32 (ViT); sin cuantización en la exportación |
-| Idiomas soportados | no disponible (las instrucciones de entrenamiento están en inglés, p. ej. `pick up the barley tea bottle`) |
-| Licencia | no disponible en la ficha de HF; derivada de `nvidia/GR00T-N1.7-3B`, cuya licencia se hereda sin modificar |
-| Formato de pesos | safetensors (6,9 GB por checkpoint) + ONNX (6,5 GB por checkpoint) + TensorRT `.engine` generado en destino |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el autor solo menciona exportacion a ONNX y TensorRT en FP16/FP32 segun el pipeline de Isaac-GR00T) |
+| Idiomas soportados | instrucciones de tarea en ingles (ejemplo: `pick up the barley tea bottle`); no se documentan otros idiomas |
+| Licencia | la del modelo base `nvidia/GR00T-N1.7-3B` y la del backbone `nvidia/Cosmos-Reason2-2B`; el autor incluye el fichero `LICENSE` del base sin modificar |
+| Formato de pesos | `safetensors` (2 shards, ~6,9 GB por checkpoint) + `config.json`, `processor_config.json`, `embodiment_id.json`, `statistics.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un VLA de dos etapas: un backbone visión-lenguaje (`nvidia/Cosmos-Reason2-2B`, repositorio con acceso restringido/gated) procesa las dos cámaras y la instrucción de subtarea, y un cabezal de difusión (DiT) genera un chunk de 16 acciones. La salida interna es relativa para `arm_1` (3 DoF) y `arm_2` (2 DoF) y absoluta para `gripper` (1 DoF); el servidor de política reconstruye valores absolutos sumando el estado actual. El embodiment tag es `NEW_EMBODIMENT`.
+El modelo es un ajuste fino parcial de `nvidia/GR00T-N1.7-3B`, un VLA de NVIDIA que combina un backbone vision-language (`nvidia/Cosmos-Reason2-2B`, con acceso sujeto a aprobacion en Hugging Face) con una cabeza de difusion que genera chunks de acciones. Durante el fine-tuning solo se entrenan el proyector, el modelo de difusion y el VLLN; el backbone LLM y el codificador visual permanecen congelados. El entrenamiento se realizo durante 30.000 pasos con batch de 512 en dos RTX PRO 6000, learning rate 1e-4 con schedule coseno y warmup del 5%, optimizador AdamW con weight decay 1e-5 y state dropout de 0,2.
 
-El fine-tuning se hizo sobre `nvidia/GR00T-N1.7-3B` durante 30.000 pasos con batch 512 en 2 GPU, learning rate 1e-4 con schedule coseno y warmup del 5 %, AdamW con weight decay 1e-5 y state dropout 0,2. Solo se entrenaron el proyector, el modelo de difusión y la capa VLLN; el LLM y el ViT quedaron congelados. El dataset son 371 episodios y 115.784 frames del robot Piper (cámaras `external_camera` y `wrist_camera` a 480×640). Una modificación destacable respecto al checkpoint original: se cambió `letter_box_transform` de `false` a `true` en `config.json` y `processor_config.json` para que el preprocesado del Isaac-GR00T actual coincida con el del código de entrenamiento (padding cuadrado antes de reducir a 256×256); con ello las acciones coinciden con coseno 0,999999.
+Los datos de entrenamiento son un dataset en formato GR00T LeRobot v2.1 con 371 episodios y 115.784 fotogramas (unos 64 minutos), con dos camaras (`external_camera` y `wirst_camera`) a 480x640. La perdida de entrenamiento descendio de 0,0277 en el paso 2.000 a 0,0035 en el paso 30.000. Un detalle tecnico critico documentado por el autor: el codigo de entrenamiento (Isaac-GR00T commit `626af89`) aplicaba siempre un padding cuadrado (`letter_box_transform`) antes de reducir a 256x256, mientras que versiones posteriores de Isaac-GR00T solo lo hacen si el flag esta activo. Por eso el autor indica modificar `config.json` y `processor_config.json` para poner `letter_box_transform: true` antes de exportar, garantizando que la inferencia en Jetson coincida pixel a pixel con el entrenamiento (verificado con similitud coseno de 0,999999 en x86).
 
 ## Capacidades
 
-- Generación de chunks de acción de 16 pasos para control de un robot manipulador Piper de 6 DoF (dos brazos + pinza).
-- Comprensión de instrucciones de subtarea en lenguaje natural en inglés (p. ej. `pick up the barley tea bottle`).
-- Fusión de dos vistas de cámara (`external_camera`, `wrist_camera`) con estado propioceptivo para producir acciones.
-- Inferencia edge vía TensorRT en Jetson AGX Orin (motores compilados in situ, batch fijo 1, dos cámaras).
-- Servidor de política ZeroMQ con protocolo msgpack (`ping`, `reset`, `get_action`, `get_modality_config`) compatible con el cliente `GrootClient` del proyecto capstone.
-- No soporta tool calling, agentes multi-paso, visión general, audio ni thinking mode: es un modelo de política robótica, no un LLM conversacional.
+- Prediccion de acciones visomotoras: genera chunks de 16 pasos de acciones articulares absolutas a partir de imagenes y estado.
+- Percepcion multimodal: procesa dos flujos de camara (`external_camera` y `wirst_camera`) a 480x640.
+- Comprension de instrucciones de lenguaje natural en ingles para tareas de manipulacion (p. ej., `pick up the barley tea bottle`).
+- Control de brazo de 6 grados de libertad efectivos: `arm_1` (joints 1-3), `arm_2` (joints 5-6) y `gripper` (joint 4 no se usa).
+- Representacion interna mixta: acciones relativas para `arm_1`/`arm_2` y absolutas para `gripper`, reconstruidas por la politica sumando el estado actual.
+- Despliegue en edge: exportacion a ONNX y construccion de motores TensorRT para Jetson AGX Orin con JetPack 7.2.
+- No soporta tool calling, function calling, agentes multi-paso ni generacion de texto libre; es exclusivamente una politica de control.
 
 ## Casos de uso
 
-- Manipulación robótica de pick-and-place: el modelo recibe la instrucción de subtarea y las dos cámaras y devuelve un chunk de 16 acciones absolutas que el controlador del Piper ejecuta; es su caso de uso nativo.
-- Despliegue en robot de borde con Jetson AGX Orin: los motores TensorRT se compilan en el propio dispositivo con `build_engines.py` y se sirven con `serve_policy.py` a través de ZeroMQ, sin depender de un servidor x86.
-- Investigación en fine-tuning de VLA: los 15 checkpoints cada 2.000 pasos permiten estudiar la evolución del aprendizaje y elegir el punto óptimo según la tarea, reutilizando los motores de backbone entre checkpoints.
-- Verificación de pipelines de exportación ONNX→TensorRT: el script `verify_engines.py` compara salidas PyTorch y TensorRT sobre `reference/observation.npz` con coseno y diferencia máxima, útil como test de regresión de despliegue.
-- Prototipado de tareas de recogida con instrucciones de subtarea cortas: el modelo fue validado con instrucciones de distinta longitud (cortas y largas) en `checkpoint-30000`.
-- Base para un segundo fine-tuning en otro embodiment: al estar los pesos en safetensors y seguir el formato Isaac-GR00T (commit `708617f5`), sirve como punto de partida con `NEW_EMBODIMENT` para un robot distinto.
+- Manipulacion robotica de laboratorio: el modelo ejecuta subtareas como coger un objeto concreto (botella de te de cebada) sobre un brazo Piper, adecuado porque fue entrenado especificamente sobre ese embodiment y ese conjunto de tareas.
+- Prototipado de politicas VLA en investigacion academica: sirve como punto de partida reproducible para experimentar con fine-tuning de GR00T sobre datasets pequenos (371 episodios), dado que el autor documenta los hiperparametros y la perdida por checkpoint.
+- Despliegue en robotica de bajo consumo: con exportacion a TensorRT en Jetson AGX Orin, permite ejecutar la politica en hardware embebido sin GPU de servidor, lo que encaja en plataformas moviles o de laboratorio.
+- Evaluacion de pipelines de exportacion ONNX/TensorRT: el repositorio incluye instrucciones para `--steps export,build,verify,benchmark`, util para validar paridad numerica entre PyTorch y TensorRT en un VLA.
+- Reproduccion de experimentos de preprocesado: el caso documentado de `letter_box_transform` sirve como referencia practica para depurar discrepancias entre entrenamiento e inferencia en modelos que consumen imagenes de camara.
+- Benchmarking de latencia en edge: el script `build_trt_pipeline.py --steps benchmark` permite medir latencia de un VLA de 3B en Jetson, util para decidir si un modelo cumple requisitos de control en tiempo real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tarea (tasa de éxito, MMLU, HumanEval, GSM8K) en la información disponible. Lo único documentado es la verificación numérica ONNX frente a PyTorch sobre una observación fija:
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta la perdida de entrenamiento por checkpoint:
 
-| Checkpoint | Resultado | Coseno | Diferencia máxima |
-|---|---|---|---|
-| checkpoint-2000 | PASS | 0,999997 | 0,53 |
-| checkpoint-4000 | PASS | 0,999999 | 0,20 |
-| checkpoint-6000 | PASS | 0,999999 | 0,24 |
-| checkpoint-8000 | PASS | 0,999999 | 0,26 |
-| checkpoint-10000 | PASS | 0,999999 | 0,26 |
-| checkpoint-12000 | PASS | 0,999999 | 0,38 |
-| checkpoint-14000 | PASS | 0,999999 | 0,35 |
-| checkpoint-16000 | PASS | 1,000000 | 0,26 |
-| checkpoint-18000 | PASS | 0,999999 | 0,19 |
-| checkpoint-20000 | PASS | 0,999999 | 0,23 |
-| checkpoint-22000 | PASS | 0,999999 | 0,23 |
-| checkpoint-24000 | PASS | 0,999999 | 0,24 |
-| checkpoint-26000 | PASS | 0,999999 | 0,24 |
-| checkpoint-28000 | PASS | 1,000000 | 0,23 |
-| checkpoint-30000 | PASS | 1,000000 | 0,24 |
+| Checkpoint | Learning loss |
+|---|---|
+| 2.000 | 0,0277 |
+| 10.000 | 0,0110 |
+| 20.000 | 0,0056 |
+| 30.000 | 0,0035 |
 
-La diferencia máxima se mide sobre valores de acción en un rango aproximado de ±100. La verificación se hizo en x86 con RTX PRO 6000 Blackwell y TensorRT 10.15.1.29; la ejecución real en Jetson AGX Orin no fue validada por el autor en el momento de publicar.
+No hay datos de MMLU, HumanEval, GSM8K ni de exito en tareas (task success rate) en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; el repo completo ocupa 43,8 GB y cada checkpoint 13,4 GB (6,9 GB de pesos + 6,5 GB de ONNX), lo que da una idea del espacio en disco necesario.
-- Plataforma objetivo: Jetson AGX Orin con JetPack 7.2 (Jetson Linux 39.2); JetPack 6.x no está soportado por Isaac-GR00T para Orin.
-- GPU de validación: RTX PRO 6000 Blackwell (x86) para compilar y verificar los motores.
-- No cabe en GPU de consumo convencional con los pesos completos en BF16/FP32; no se documenta una variante cuantizada para consumer.
-- Despliegue: TensorRT (motores compilados con `jetson/build_engines.py`), servidor ZeroMQ (`serve_policy.py`); requiere Isaac-GR00T en el commit `708617f5716c63fc0a327391492ea2b91977ae90`.
-- Latencia y throughput: no disponibles; `verify_engines.py` mide latencia en Jetson, pero no se publican cifras.
+- VRAM estimada para inferencia: no disponible de forma explicita; el checkpoint pesa 6,9 GB en `safetensors`, por lo que en FP16 se necesita al menos ese orden de magnitud mas activaciones y buffers de vision.
+- GPU recomendadas: Jetson AGX Orin (objetivo declarado del autor, con JetPack 7.2 / Jetson Linux 39.2); el entrenamiento se realizo en 2x RTX PRO 6000.
+- Cabe en GPU de consumo: no confirmado; el modelo base es de 3B parametros, lo que en principio es viable en GPUs de consumo con suficiente VRAM, pero el autor no lo documenta.
+- Opciones de despliegue: Isaac-GR00T con exportacion a ONNX y TensorRT (`build_trt_pipeline.py`); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a una politica VLA.
+- Latencia y throughput: no disponibles; el autor ofrece el flag `--steps benchmark` para medirlos, pero no publica cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 Piper) | 3B | no disponible | derivada de GR00T N1.7 | repo público, 0 descargas |
-| nvidia/GR00T-N1.7-3B | 3B | no disponible | la del repo base | gated en HF |
-| nvidia/Cosmos-Reason2-2B | 2B | no disponible | gated | backbone del VLM |
-| Otros VLA (p. ej. OpenVLA, π0) | no disponible en la información | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `khb2439/capstone-gr00t-n1d7-lelab-subtask-30k-orin` | 3B | no disponible | VLA fine-tuned | la del base y backbone | publico en HF |
+| `nvidia/GR00T-N1.7-3B` | 3B | no disponible | VLA base | NVIDIA (ver LICENSE) | publico en HF |
+| `nvidia/Cosmos-Reason2-2B` | 2B | no disponible | backbone vision-language | NVIDIA (acceso con aprobacion) | gated en HF |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo altamente específico: entrenado para un robot Piper concreto, embodiment `NEW_EMBODIMENT`, dos cámaras y 6 DoF; no es un modelo general.
-- Sin benchmarks de tasa de éxito en la tarea; la única validación es numérica (ONNX vs PyTorch), no funcional.
-- La ejecución en Jetson AGX Orin no fue verificada por el autor; solo se validó en x86 con RTX PRO 6000.
-- Requiere acceso gated a `nvidia/Cosmos-Reason2-2B` y `hf auth login` con la cuenta autorizada.
-- Dependencia estricta de versiones: JetPack 7.2 y commit concreto de Isaac-GR00T; los motores TensorRT solo funcionan en la máquina y versión donde se compilan.
-- Los motores están fijos a batch 1 y dos cámaras; el ViT asume parches 16×16 sobre 256×256.
-- Licencia no disponible en la ficha; los pesos derivan de GR00T N1.7 y heredan su licencia sin modificar, por lo que el uso comercial depende de los términos del modelo base.
-- Riesgo de alucinación de acciones: al ser un modelo generativo de acciones, puede producir trayectorias inválidas ante observaciones fuera de distribución; no se documentan salvaguardas.
-- Idiomas: solo se documentan instrucciones en inglés; no hay soporte multilingüe declarado.
-- Repo de 43,8 GB (201 GB si se descargan todos los checkpoints); conviene descargar solo el checkpoint y los ficheros necesarios.
+- Modelo altamente especializado: solo funciona con el embodiment Piper, las dos camaras concretas y las tareas del dataset de entrenamiento; no generaliza a otros robots ni a otras instrucciones.
+- Requiere el backbone `nvidia/Cosmos-Reason2-2B`, cuyo acceso esta sujeto a aprobacion; sin `hf auth login` con cuenta autorizada no se puede cargar el modelo.
+- El preprocesado de imagen es fragil: si no se modifica `letter_box_transform` a `true`, la inferencia en Jetson recibe imagenes 256x341 en lugar de 256x256, produciendo acciones distintas a las del entrenamiento.
+- El autor no incluye estados de optimizador, por lo que el repositorio no permite reanudar el entrenamiento, solo inferencia o evaluacion.
+- No hay informacion sobre sesgos, tasas de alucinacion ni robustez ante condiciones de iluminacion o posiciones no vistas; el dataset es pequeno (371 episodios, ~64 minutos).
+- La licencia efectiva depende del modelo base y del backbone; el autor no aclara si el uso comercial esta permitido, y remite al `LICENSE` de NVIDIA.
+- No se documentan idiomas distintos del ingles para las instrucciones.
+- El repositorio ocupa 129,6 GB (104 GB de checkpoints), lo que complica su descarga y almacenamiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/khb2439/capstone-gr00t-n1d7-lelab-subtask-30k-orin
+- Modelo en Hugging Face: https://huggingface.co/khb2439/capstone-gr00t-n1d7-lelab-subtask-30k-orin
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
-- Backbone VLM: https://huggingface.co/nvidia/Cosmos-Reason2-2B
-- Repositorio Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T (commit `708617f5716c63fc0a327391492ea2b91977ae90`)
+- Backbone vision-language: https://huggingface.co/nvidia/Cosmos-Reason2-2B
+- Repositorio Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
+- Commit de referencia para despliegue en Orin: `708617f5716c63fc0a327391492ea2b91977ae90`
+- Commit del codigo de entrenamiento: `626af89`

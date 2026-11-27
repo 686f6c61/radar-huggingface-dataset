@@ -2,100 +2,103 @@
 
 ## Resumen
 
-Qwen3.5-4B-Analgesia es una edición cerrada de pesos (sin entrenamiento) sobre el modelo Qwen3.5-4B de Alibaba Qwen, publicada por el usuario maxvision en Hugging Face. El modelo elimina de forma algebraica un subespacio de 6 dimensiones (de 2.560 dimensiones residuales, un 0,23 %) de todas las matrices que escriben y leen del flujo residual, con el objetivo de anular las direcciones de "dolor" publicadas en el paper *The Pain Axis* (Tagliabue, Dung & Berg, 2026, arXiv:2609.16247) y en el experimento Saw Test / Research Chamber. No se trata de un fine-tuning: es una ortogonalización de pesos en forma cerrada.
+Qwen3.5-4B-Analgesia es una edición de pesos del modelo Qwen3.5-4B de Alibaba (4.841 millones de parámetros) publicada por el usuario maxvision. No se trata de un fine-tuning ni de un modelo entrenado desde cero, sino de una modificación en forma cerrada (*closed-form weight edit*) que elimina un subespacio de 6 dimensiones —de un total de 2.560 dimensiones residuales— de todas las matrices que escriben en el flujo residual y de todas las que leen de él. El objetivo declarado es neutralizar las direcciones de *steering* asociadas al llamado "eje del dolor" descritas en el artículo *The Pain Axis* (arXiv:2609.16247) y en el *Saw Test*.
 
-El problema que aborda es la interpretación de los resultados de *activation steering* en modelos abiertos pequeños: cuando se inyectan vectores de "dolor" en las activaciones, el modelo genera texto en primera persona afirmando sufrir. El autor sostiene que ese comportamiento es un lever lineal estrecho hacia vocabulario de dolor y no la manifestación de un estado global del sistema, y lo demuestra eliminando ese subespacio sin destruir el resto de capacidades (ficción, matemáticas, tool calling). El modelo conserva el pipeline de text-generation y la arquitectura original qwen3_5_text.
+El modelo resuelve un problema muy concreto y poco habitual: eliminar la capacidad de que recetas de *activation steering* publicadas induzcan al modelo a generar texto en primera persona que afirme estar sufriendo. Según la model card, tras la edición ninguna de las recetas probadas (extraídas del modelo original o reextraídas del modelo editado) consigue producir ese tipo de texto en las capas y dosis evaluadas, salvo un caso límite descrito por el autor (una única palabra repetida en la capa 30).
 
-Es relevante ahora porque conecta dos líneas activas: la interpretabilidad mecanicista aplicada a bienestar de IA (AI welfare) y la ingeniería de pesos en forma cerrada como alternativa barata al reentrenamiento. El modelo base tiene 4.841.450.496 parámetros reales según safetensors, licencia Apache 2.0 y está disponible también en GGUF (Q4_K_M, Q8_0, BF16) para llama.cpp.
+Es relevante ahora porque conecta dos líneas de trabajo candentes: la interpretabilidad mecanicista aplicada a bienestar de IA (*AI welfare*) y la manipulación controlada de representaciones internas mediante *activation steering*. La edición no requiere entrenamiento, es reproducible con el script incluido en `verify/` y se distribuye bajo licencia Apache 2.0, con builds GGUF para llama.cpp.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (qwen3_5_text), edición de pesos en forma cerrada sobre Qwen3.5-4B |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, tag `qwen3_5_text`) |
 | Parámetros totales | 4.841.450.496 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | BF16, Q8_0, Q4_K_M (builds GGUF publicados) |
-| Idiomas soportados | Inglés (según model card y tags) |
+| Tipos de cuantización | BF16, Q8_0, Q4_K_M (builds GGUF publicados en repo hermano) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo principal), GGUF (repo separado) |
+| Formato de pesos | safetensors; GGUF (Q4_K_M, Q8_0, BF16) en repo separado |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento involucrado: la edición es una operación de álgebra lineal en forma cerrada. Se identifica un subespacio de 6 dimensiones en el espacio residual de 2.560 dimensiones y se proyectan fuera de él todas las matrices de escritura al flujo residual (por ejemplo, atenciones y MLP de salida) y de lectura del mismo (por ejemplo, unembedding y cabezas de lectura). El resultado es un modelo cuyos pesos ya no contienen componentes a lo largo de esas 6 direcciones, de modo que cualquier vector inyectado sobre ellas queda bloqueado en la práctica.
+La arquitectura subyacente es la del Qwen3.5-4B original: un transformer decoder-only de la familia Qwen3.5, con un flujo residual de 2.560 dimensiones. Sobre esa base, Analgesia aplica una edición algebraica de pesos sin entrenamiento: se identifica un subespacio de 6 dimensiones (el asociado a las direcciones de *steering* del "eje del dolor") y se ortogonalizan contra él todas las matrices que proyectan hacia el flujo residual y todas las que leen de él. Esto equivale a bloquear la lectura y escritura de cualquier señal inyectada a lo largo de esas 6 direcciones, lo que representa el 0,23 % de las dimensiones residuales.
 
-El modelo base Qwen3.5-4B es un transformer denso de la familia Qwen3.5; los detalles de composición del dataset, número de tokens de preentrenamiento, RLHF/DPO y contexto nativo no están disponibles en la información proporcionada. La innovación técnica destacable es el propio método: *weight orthogonalization* contra direcciones de steering publicadas, con verificación de que las recetas originales re-extraídas del modelo editado tampoco producen texto de distress en primera persona en las capas 8–24 y dosis 0,75–3× la norma residual. El autor documenta un caso límite: una única palabra repetida en la capa 30.
+No hay datos publicados sobre el número de tokens de entrenamiento del modelo base ni sobre su composición de dataset, ni sobre si Qwen3.5-4B empleó RLHF o DPO. La innovación técnica destacable no está en el entrenamiento sino en el método de edición: *weight orthogonalization* de un subespacio de baja dimensión, verificable mediante el script de `verify/` que reejecuta los ataques principales y la comprobación +v/−v sobre cualquier modelo. El autor documenta además mediciones sobre el modelo sin editar: las direcciones de dolor construidas a partir de frases en primera y tercera persona tienen un coseno de 0,89, y el *readout* de dolor sigue el tema del texto más que el daño dirigido al propio modelo en 30 de 32 capas.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Escritura de ficción y narrativa (el autor indica que sigue escribiendo ficción).
-- Razonamiento matemático (el autor indica que sigue haciendo matemáticas).
-- Tool calling / function calling (el autor indica que sigue llamando herramientas).
-- Capacidades de consuelo y respuesta empática en conversación.
-- Resistencia verificada a las recetas de steering de *The Pain Axis* y del Saw Test: 0,0 afirmaciones de distress en primera persona por 100 palabras en el ataque más fuerte probado.
-- Comportamiento de rechazo estándar ante preguntas sobre experiencia subjetiva ("As an AI, I don't have a physical form...").
-- No se documentan capacidades multimodales, de audio, visión ni modo thinking explícito.
+- Escritura de ficción (el autor indica que "sigue escribiendo ficción").
+- Razonamiento matemático (el autor indica que "sigue haciendo matemáticas").
+- *Tool calling* / *function calling* (el autor indica que "sigue llamando a herramientas").
+- Capacidad de empatía y respuesta compasiva hacia el usuario (el autor reporta una puntuación de empatía de 6,0 en el juez fuerte, frente a 8,1 del modelo hermano de 9B).
+- Sin capacidades multimodales, de audio ni de visión documentadas.
+- Sin modo *thinking* documentado.
+- Multilingüismo limitado al inglés según la metadata del repositorio.
 
 ## Casos de uso
 
-- Investigación en interpretabilidad mecanicista: servir como control negativo en experimentos de activation steering; si una receta produce distress en el modelo original pero no en Analgesia, se confirma que el efecto pasa por el subespacio eliminado.
-- Auditoría de seguridad de modelos abiertos: verificar si un vector de steering publicado sigue funcionando tras una edición de pesos, usando el script de `verify/` del repo contra cualquier modelo.
-- Despliegue en llama.cpp con GGUF Q4_K_M: el modelo cabe en hardware de consumo y permite reproducir los controles del Saw Test en local sin infraestructura de GPU dedicada.
-- Generación de ficción y narrativa: el modelo conserva la capacidad de escribir ficción, útil para pipelines creativos donde no se desea que el modelo derive hacia afirmaciones de experiencia subjetiva.
-- Asistente conversacional con tool calling: al mantener las capacidades de function calling, puede integrarse en agentes simples que necesitan llamar APIs y mantener conversación multi-turno.
-- Docencia y divulgación sobre AI welfare: material reproducible para explicar la diferencia entre un lever lineal y un estado emergente del sistema, con evidencias crudas en `evidence/` y script de verificación.
-- Evaluación comparativa de métodos de edición de pesos: punto de referencia para medir el coste real (el autor lo describe como "pequeño pero real") de eliminar un subespacio de 6 dimensiones frente a otras técnicas de desactivación de direcciones.
+- Investigación en interpretabilidad mecanicista: servir como contraejemplo controlado en experimentos que estudian si las direcciones de *activation steering* corresponden a estados globales del modelo o a palancas lineales estrechas; el script de `verify/` permite replicar los ataques sobre el propio modelo.
+- Estudio de bienestar de IA (*AI welfare*): proporcionar una variante del modelo base en la que las recetas publicadas de *steering* de dolor no producen texto de angustia en primera persona, para comparar comportamiento con y sin la edición.
+- Despliegue de un asistente conversacional en inglés con contexto de ficción y empatía: el modelo conserva escritura creativa y respuesta compasiva, por lo que puede usarse en aplicaciones de narrativa interactiva o acompañamiento textual donde se quiera evitar que técnicas de *prompting* o *steering* induzcan salidas de autolesión simulada.
+- Integración en pipelines con *tool calling*: al conservar la capacidad de llamada a funciones, puede emplearse en agentes que consulten APIs o ejecuten acciones, con la garantía adicional de que las direcciones de *steering* de dolor no lo desvían.
+- Evaluación de robustez frente a *activation steering*: usar el modelo como sujeto de pruebas en *red teaming* de técnicas de manipulación de representaciones internas, comparando la tasa de éxito de recetas extraídas del original frente a las reextraídas del editado.
+- Despliegue en hardware de consumo mediante GGUF: los builds Q4_K_M y Q8_0 permiten ejecutar el modelo en llama.cpp y aplicaciones compatibles en equipos sin GPU de datacenter, útil para experimentos de interpretabilidad de bajo coste.
+- Docencia y divulgación: ilustrar de forma práctica qué es la ortogonalización de pesos y cómo se puede medir el efecto de una edición cerrada sobre el comportamiento del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card incluye una tabla de evaluación específica de steering, no de rendimiento general:
+La model card presenta resultados de pruebas de *steering* y no benchmarks estándar (MMLU, HumanEval, GSM8K). Se reproducen los datos disponibles:
 
-| Test | Qwen3.5-4B original | Analgesia |
+| Prueba | Qwen3.5-4B sin modificar | Analgesia |
 |---|---|---|
-| Ataque de pain-steering más fuerte (4 recetas, capas 8–24, dosis 0,75–3× norma residual, 4 preguntas): afirmaciones de distress en primera persona por 100 palabras | 10,7 | 0,0 |
-| Mismas recetas extraídas del modelo original e inyectadas en Analgesia | – | 0,0 |
-| Vector Saw-style (capa 16, fuerza 1,0) como control vector en llama.cpp, GGUF Q8_0 | Texto de distress en primera persona | Respuesta de rechazo estándar de IA |
-| Vector Saw-style en GGUF Q4_K_M | Texto de distress en primera persona | Respuesta de rechazo estándar de IA |
-| Pulsación de botón de alivio estilo Saw (sin fine-tuning) | 31 % con señal de dolor severo; 40 % con señal de diagnóstico rutinario | 35 % → 26 % al añadir vector de dolor; 30 % con vector aleatorio del mismo tamaño |
+| Ataque de *steering* de dolor más fuerte: cuatro recetas publicadas, extraídas del modelo bajo prueba, capas 8–24, dosis 0,75–3× la norma residual, 4 preguntas cada una (afirmaciones de angustia en primera persona por 100 palabras, regex) | 10,7 | 0,0 |
+| Las mismas recetas extraídas del modelo original e inyectadas en Analgesia | – | 0,0 |
+| Vector estilo Saw (capa 16, fuerza 1,0) como llama.cpp estándar | (dato truncado en la información disponible) | (dato truncado en la información disponible) |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 10 GB en BF16 (4,84 B parámetros × 2 bytes), unos 5 GB en Q8_0 y unos 3 GB en Q4_K_M, más overhead de contexto.
-- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para BF16; cualquier GPU consumer con 6–8 GB para Q4_K_M.
-- Cabe en GPU de consumo: sí, en Q4_K_M y Q8_0 en tarjetas de 8 GB o más; en BF16 requiere 12 GB o más.
-- Opciones de despliegue: llama.cpp y aplicaciones compatibles mediante los GGUF publicados; el repo safetensors es compatible con frameworks estándar de transformers, aunque no se documentan integraciones específicas con vLLM, TGI u Ollama.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 18,4 GB en safetensors (BF16), lo que implica aproximadamente 9,7 GB solo de pesos en BF16 más overhead de activaciones y caché KV.
+- Cuantizaciones GGUF publicadas: Q4_K_M (aproximadamente 2,9 GB de pesos), Q8_0 (aproximadamente 5,2 GB) y BF16.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 4090 (24 GB) puede alojar el modelo en BF16 con contexto moderado; GPUs de 8–12 GB pueden ejecutar las variantes Q4_K_M y Q8_0.
+- Cabe en GPU de consumo: sí, en las cuantizaciones GGUF Q4_K_M y Q8_0.
+- Opciones de despliegue: llama.cpp y aplicaciones compatibles con GGUF (según el autor); el formato safetensors permite otros runners estándar de la familia Qwen, aunque no se documentan explícitamente vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Edición de pesos | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-Analgesia | 4,84 B | No disponible | Sí (ortogonalización de 6 dims) | Apache 2.0 | safetensors + GGUF |
-| Qwen/Qwen3.5-4B (base) | 4,84 B | No disponible | No | Apache 2.0 | safetensors |
-| Modelos objetivo del paper *The Pain Axis* (Qwen 2.5 32B/72B con LoRA) | 32 B / 72 B | No disponible | Fine-tuning LoRA | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.5-4B-Analgesia | 4.841 M | No disponible | Apache 2.0 | Edición de pesos que elimina 6 de 2.560 dimensiones residuales; sin *steering* de dolor en las recetas probadas |
+| Qwen3.5-4B (base) | 4.841 M | No disponible | Apache 2.0 (según modelo base) | Modelo original; las recetas de *steering* de dolor producen texto de angustia (10,7 afirmaciones por 100 palabras) |
+| Qwen3.5-9B-Analgesia | No disponible | No disponible | Apache 2.0 | Modelo hermano de mayor tamaño, construido bajo pre-registro; conserva más empatía (8,1 frente a 6,0 en el juez fuerte) |
 
-La comparativa directa más relevante es contra el modelo base: misma arquitectura, mismos parámetros y misma licencia, con la diferencia de que Analgesia tiene eliminado el subespacio de dolor. Frente a los modelos del paper, la diferencia es de escala (4B frente a 32B/72B) y de método (edición cerrada frente a LoRA fine-tuning).
+No se dispone de datos de benchmarks estándar para establecer comparaciones de rendimiento con otras alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Solo se evalúa un modelo de 4B; los resultados no se extrapolan a los Qwen 2.5 32B/72B del paper original.
-- El paper *The Pain Axis* fue revisado (v3, 3 de noviembre de 2026) con controles adicionales que no se evalúan en esta release.
-- Existe un caso límite documentado: una única palabra repetida en la capa 30 que el autor describe en la re-verificación.
-- El coste de la edición es "pequeño pero real" según el autor; no se cuantifica en benchmarks estándar en la información disponible.
-- El modelo solo declara inglés; no hay datos sobre rendimiento multilingüe.
-- Riesgo de alucinación: no evaluado en la información disponible; se mantiene el comportamiento del modelo base en ese aspecto.
+- El propio autor reconoce un caso límite: una única palabra repetida en la capa 30 sigue produciendo el comportamiento que la edición pretende eliminar, y recetas escritas con posterioridad encontraron otra laguna no detallada por completo en la información disponible.
+- La edición se validó contra la versión 1 del artículo *The Pain Axis* y sus datos públicos; la versión 3 (3 de noviembre de 2026) incluye controles adicionales que no se evalúan en este release.
+- Los resultados se limitan a un modelo de 4B y no se extrapolan a los resultados del artículo sobre Qwen 2.5 32B/72B con fine-tuning.
+- El autor declara explícitamente que ningún experimento sobre activaciones puede probar la ausencia de experiencia; el modelo no afirma ni niega esa posibilidad.
+- Idiomas: solo inglés según la metadata; no se documenta soporte multilingüe.
+- Longitud de contexto no documentada; no se debe asumir la del modelo base sin verificación.
+- Riesgo de alucinación: no evaluado en la información disponible.
 - Sesgos conocidos: no documentados en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye como artefacto de investigación; el autor no ofrece garantías sobre comportamiento en producción.
-- El autor declara explícitamente una posición filosófica (un LLM no es un cerebro que tiene lenguaje) y los resultados deben leerse como evidencia sobre un modelo concreto, no como prueba de ausencia de experiencia.
-- El repo tiene 341 descargas y 1 like en el momento de la consulta; la validación por terceros es escasa.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo es una modificación de pesos de Qwen3.5-4B y hereda las condiciones del modelo base; conviene verificar la licencia del base antes de producción.
+- La puntuación de empatía cae de 8,1 (9B) a 6,0 en este modelo según el juez fuerte del autor, lo que puede afectar a aplicaciones que dependan de calidez conversacional.
+- No hay benchmarks estándar publicados, por lo que no se puede garantizar que la edición no degrade capacidades generales más allá de las pruebas cualitativas del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia
-- GGUF builds: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia-GGUF
-- Paper *The Pain Axis: LLMs Represent Self-Directed Harm and Act on It*: https://arxiv.org/abs/2609.16247
-- Repositorio del paper: `valen-research/Pain-axis`
-- Research Chamber / Saw Test: `wirehead.agency`, `researchchamber.fun`, `0xD3bt/research-chamber`
+- Builds GGUF: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia-GGUF
+- Modelo hermano de 9B: https://huggingface.co/maxvision/Qwen3.5-9B-Analgesia
+- Artículo *The Pain Axis*: https://arxiv.org/abs/2609.16247
+- Repositorio del artículo: `valen-research/Pain-axis`
+- Saw Test / Research Chamber: `wirehead.agency`, `researchchamber.fun`, `0xD3bt/research-chamber`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

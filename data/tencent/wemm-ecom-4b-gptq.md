@@ -2,102 +2,107 @@
 
 ## Resumen
 
-WeMM-Ecom-4B-GPTQ es la versión cuantizada en GPTQ W4A16 del modelo multimodal WeMM-Ecom-4B, desarrollado por WeChat Vision (Tencent) para la comprensión de contenido en el contexto del comercio electrónico de WeChat. El modelo parte de una arquitectura densa de 4B parámetros (etiquetada como `qwen3_5` en el repositorio) y procesa entradas de texto, imagen, multi-imagen y vídeo, devolviendo respuestas conversacionales. Esta release concreta reduce el peso de los pesos a 4 bits manteniendo las activaciones en 16 bits, lo que facilita el despliegue en infraestructura más modesta sin renunciar a la ventana de contexto de 262.144 tokens.
+WeMM-Ecom-4B-GPTQ es la version cuantizada en GPTQ W4A16 del modelo multimodal WeMM-Ecom-4B, desarrollado por WeChat Vision (Tencent) para la comprension de contenido en el contexto del comercio electronico de WeChat. El modelo original es un transformer denso de aproximadamente 4.500 millones de parametros que procesa entradas de texto e imagen (pipeline image-text-to-text) y esta disenado tanto para tareas especificas de e-commerce como para capacidades visuales y linguisticas de proposito general.
 
-La relevancia del modelo radica en su especialización: la familia WeMM-Ecom está entrenada y evaluada sobre 28 benchmarks de comercio electrónico agrupados en ocho escenarios (atributos de producto, moderación, OCR, recuperación, grounding, razonamiento, benchmarks públicos y conocimiento de producto), además de 64 benchmarks generales en ocho categorías. Según la model card, el checkpoint 4B supera a Qwen3.5-4B en 6,47 puntos de media en la suite de e-commerce y en 0,40 puntos en la suite general.
+La relevancia de esta publicacion radica en dos factores. Por un lado, el modelo base declara una ventaja de 6,47 puntos de media sobre Qwen3.5-4B en el conjunto de 28 benchmarks de e-commerce (ocho escenarios) y de 0,40 puntos en los 64 benchmarks de capacidades generales. Por otro, esta variante GPTQ reduce los pesos a 4 bits con activaciones de 16 bits, lo que facilita el despliegue en infraestructura mas modesta sin renunciar por completo a la fidelidad numerica del checkpoint BF16.
 
-La versión GPTQ conserva la licencia Apache 2.0 del modelo base y se distribuye en formato `compressed-tensors` listo para servirse con el backend homónimo de vLLM (a partir de la versión 0.31.0). El modelo soporta modos "instruct" y "thinking" (razonamiento híbrido), lo que lo hace apto tanto para respuestas directas de baja latencia como para tareas que requieren razonamiento multi-paso sobre imágenes de producto.
+El modelo soporta entradas de texto, imagen, multiples imagenes y video, con una ventana de contexto de 262.144 tokens y un modo hibrido de razonamiento (instruct y thinking). Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, y esta disponible en formatos BF16, FP8, GPTQ y GGUF dentro de la familia WeMM-Ecom (0.8B, 2B, 4B, 9B y 35B-A3B).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (etiqueta `qwen3_5`), con encoder de visión y proyección a espacio de lenguaje |
-| Parametros totales | 4.539.265.536 (aproximadamente 4,54B) |
+| Arquitectura | Transformer denso multimodal (image-text-to-text), familia qwen3_5 |
+| Parametros totales | 4.539.265.536 (aproximadamente 4,5B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GPTQ W4A16 (pesos 4 bits, activaciones 16 bits), grupos de 128 valores, cuantización simétrica; encoder de visión, cabeza de salida y proyecciones sensibles en precisión original |
-| Idiomas soportados | Chino (zh) e inglés (en) |
+| Tipos de cuantizacion | GPTQ W4A16 (4 bits pesos, 16 bits activaciones), grupos de 128 valores con cuantizacion simetrica; tambien disponibles BF16, FP8 y GGUF en la familia |
+| Idiomas soportados | Chino (zh) e ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors empaquetados en formato `compressed-tensors` (GPTQ 4-bit) |
+| Formato de pesos | Safetensors empaquetados en formato `compressed-tensors` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso multimodal de 4B parámetros construido sobre una base etiquetada como `qwen3_5`. Acepta entradas de texto, imagen única, múltiples imágenes y vídeo, y genera respuestas de texto conversacionales. La arquitectura incorpora un encoder de visión cuya salida se proyecta al espacio de tokens del modelo de lenguaje; en esta versión GPTQ, el encoder de visión, la cabeza de salida y ciertas proyecciones sensibles se mantienen en su precisión original para preservar la calidad de la representación visual.
+El modelo es un transformer denso de 4B con torre de vision integrada para entradas image-text-to-text, construido sobre la familia arquitectonica qwen3_5. El checkpoint GPTQ mantiene en precision original (sin cuantizar) el codificador de vision, la cabeza de salida y determinadas proyecciones sensibles, mientras que el resto de los pesos se almacena en 4 bits con grupos simetricos de 128 valores. Esta seleccion de precision busca preservar la calidad perceptiva de la vision y la estabilidad de la generacion frente a la compresion agresiva del resto de capas.
 
-El entrenamiento se orienta a la comprensión de contenido de comercio electrónico, con evaluación sobre 28 benchmarks específicos del dominio (atributos de producto, moderación, OCR, recuperación, grounding, razonamiento, benchmarks públicos y conocimiento de producto) y 64 benchmarks generales. La model card menciona un informe técnico con los resultados completos, pero no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo soporta un modo "thinking" de razonamiento extendido, lo que sugiere algún tipo de entrenamiento orientado a cadenas de razonamiento, aunque el procedimiento concreto no está especificado en la información disponible.
+La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. Si se documenta que el modelo base se evaluo sobre 28 benchmarks de e-commerce agrupados en ocho escenarios (atributos de producto, moderacion, OCR, retrieval, grounding, razonamiento, benchmarks publicos de e-commerce y conocimiento de producto) y sobre 64 benchmarks generales en ocho categorias. La innovacion mas destacable es el modo hibrido de razonamiento (instruct y thinking), que permite alternar respuestas directas con cadenas de razonamiento extendidas segun la tarea.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 262.144 tokens.
-- Comprensión de imágenes: descripción, OCR, reconocimiento de atributos de producto y grounding visual.
-- Comprensión de múltiples imágenes en una misma petición.
-- Comprensión de vídeo como entrada multimodal.
-- Modo "instruct" (respuesta directa) y modo "thinking" (razonamiento extendido multi-paso).
-- Comprensión especializada de comercio electrónico: atributos de producto, moderación de contenido, recuperación de información y conocimiento de producto.
-- Capacidades generales de VQA, comprensión de documentos y gráficos, razonamiento STEM, comprensión espacial, grounding y conteo, seguimiento de instrucciones y tareas centradas en texto.
-- Soporte multilingüe limitado a chino e inglés.
-- Servicio mediante API compatible con OpenAI a través de vLLM (texto, imagen, multi-imagen, vídeo, multi-turno y streaming).
+- Generacion de texto y razonamiento multimodal sobre entradas de imagen y texto.
+- Comprension de multiples imagenes en una misma peticion.
+- Comprension de video como entrada.
+- Modo hibrido de razonamiento: instruct (respuesta directa) y thinking (razonamiento extendido).
+- Comprension especifica de e-commerce: atributos de producto, moderacion de contenido, OCR, retrieval, grounding y conocimiento de producto.
+- Capacidades visuales generales: VQA, comprension de documentos y graficos, razonamiento STEM, comprension espacial, grounding y conteo.
+- Seguimiento de instrucciones y tareas centradas en texto.
+- Conversacion multi-turno con contexto largo (hasta 262.144 tokens).
+- Servicio compatible con la API de OpenAI a traves de vLLM, incluyendo streaming.
+- Soporte bilingue chino-ingles.
 
 ## Casos de uso
 
-- Moderación de listados de producto: el modelo puede analizar imágenes y texto de anuncios para detectar contenido prohibido o atributos inconsistentes, aprovechando sus benchmarks específicos de moderación y su ventana de contexto para procesar fichas completas.
-- Extracción de atributos de producto: a partir de una o varias imágenes de un artículo, el modelo genera descripciones estructuradas (categoría, color, material, talla) útiles para poblar catálogos de e-commerce.
-- OCR y digitalización de etiquetas: lectura de texto en imágenes de producto, etiquetas de envío o documentación de garantía, con salida en texto plano o estructurado.
-- Búsqueda visual y recuperación: generación de representaciones textuales de imágenes de producto para alimentar sistemas de búsqueda o recomendación, apoyándose en las capacidades de retrieval evaluadas en la suite de e-commerce.
-- Asistente de atención al cliente: conversaciones multi-turno con contexto largo sobre pedidos, devoluciones o especificaciones de producto, con capacidad de adjuntar imágenes del artículo.
-- Análisis de vídeo de producto: revisión automática de vídeos de demostración o unboxing para verificar que el contenido coincide con la ficha del artículo.
-- Procesamiento por lotes en pipelines de catálogo: al ser un modelo de 4B cuantizado a 4 bits, puede desplegarse con vLLM en GPUs de gama media para procesar grandes volúmenes de fichas de producto con latencia controlada.
+- Moderacion de contenido en marketplaces: el modelo puede clasificar imagenes y textos de anuncios para detectar productos prohibidos o contenido inapropiado, aprovechando sus benchmarks especificos de moderacion y su ventana de contexto amplia para revisar lotes de publicaciones.
+- Extraccion de atributos de producto: dado un conjunto de imagenes de un articulo, el modelo puede generar fichas estructuradas con color, material, talla o categoria, reduciendo el trabajo manual de catalogacion en plataformas de e-commerce.
+- OCR y digitalizacion de etiquetas: lectura de texto en imagenes de producto, tickets o envases para poblar bases de datos y validar descripciones, apoyandose en las capacidades de OCR evaluadas en el modelo.
+- Busqueda y recuperacion multimodal: generacion de representaciones o descripciones enriquecidas de imagenes de producto para alimentar sistemas de retrieval y busqueda visual dentro de un catalogo.
+- Atencion al cliente con soporte visual: un agente conversacional puede recibir capturas o fotos del cliente (por ejemplo, un producto defectuoso) y responder en multi-turno con contexto largo, usando el modo instruct para respuestas rapidas y el modo thinking para casos complejos.
+- Analisis de resenas con video e imagen: procesamiento de contenido generado por usuarios (fotos y videos de producto) para extraer opiniones, detectar problemas recurrentes y resumir quejas, gracias al soporte de video y multiples imagenes.
+- Asistentes internos para equipos de operaciones: consultas sobre politicas de catalogo, normativa de moderacion o conocimiento de producto, con el modelo actuando como base de un asistente RAG sobre documentacion interna.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el checkpoint 4B supera a Qwen3.5-4B en 6,47 puntos de media en la suite de e-commerce (28 benchmarks, ocho escenarios) y en 0,40 puntos en la suite general (64 benchmarks, ocho categorías), con puntuaciones en escala 0-100. Los resultados detallados se presentan en imágenes dentro de la model card y en el informe técnico, pero los valores numéricos por benchmark no están disponibles en formato textual en la información proporcionada.
+La model card presenta los resultados del checkpoint BF16 (WeMM-Ecom-4B) en forma de graficos e imagenes, sin tablas de valores numericos legibles en el texto proporcionado. Los unicos datos cuantitativos explicitos son las diferencias medias frente a Qwen3.5-4B:
 
-| Comparación | Diferencia media frente a Qwen3.5-4B |
+| Comparativa | Diferencia media (escala 0-100) |
 |---|---|
-| Suite e-commerce (28 benchmarks) | +6,47 puntos |
-| Suite general (64 benchmarks) | +0,40 puntos |
+| Benchmarks de e-commerce (28 benchmarks, 8 escenarios) | +6,47 puntos frente a Qwen3.5-4B |
+| Benchmarks generales (64 benchmarks, 8 categorias) | +0,40 puntos frente a Qwen3.5-4B |
 
-No se han publicado resultados numéricos por benchmark (MMLU, HumanEval, GSM8K u otros) en formato textual en la información disponible.
+No se han publicado en la informacion disponible los valores absolutos por benchmark (MMLU, HumanEval, GSM8K u otros) ni los resultados especificos del checkpoint GPTQ frente al BF16.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 3,8 GB en pesos GPTQ 4-bit; con overhead de activaciones, caché KV para contexto largo y el encoder de visión en precisión original, se recomienda al menos 8-12 GB de VRAM para contextos moderados.
-- Para aprovechar la ventana completa de 262.144 tokens, la caché KV crece de forma significativa y requiere GPUs con 24 GB o más (RTX 4090, A10G, L40S).
-- GPU recomendadas: A100 40/80 GB, H100, L40S para despliegues de producción con contexto largo; RTX 4090 o RTX 3090 para desarrollo y pruebas.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en GPUs de 12-16 GB con contextos reducidos.
-- Opciones de despliegue: vLLM (>= 0.31.0) con backend `compressed-tensors` es la vía documentada; el ecosistema de la familia incluye formatos GGUF y FP8 para otros motores, aunque esta release concreta es GPTQ.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el repositorio ocupa 3,8 GB en disco con pesos GPTQ W4A16; en ejecucion hay que sumar el codificador de vision, la cabeza de salida y las proyecciones en precision original, ademas de la cache KV para contextos largos. Como referencia orientativa, un contexto de 262.144 tokens exige planificacion cuidadosa de memoria.
+- GPU recomendadas: el modelo esta pensado para servicio con vLLM (version >= 0.31.0) usando el backend `compressed-tensors`; son adecuadas GPUs con soporte de kernels de cuantizacion como A100, H100 o L40S. Para el checkpoint BF16 se requiere mas memoria que para esta variante GPTQ.
+- GPU de consumo: la cuantizacion W4A16 y la existencia de una variante GGUF de la familia hacen plausible el despliegue en GPUs de consumo con suficiente VRAM, aunque la informacion proporcionada no confirma requisitos minimos exactos ni modelos concretos compatibles.
+- Opciones de despliegue: vLLM con backend `compressed-tensors` (recomendado por el autor, con API compatible con OpenAI); llama.cpp u Ollama mediante la variante GGUF de la familia; el formato `compressed-tensors` tambien es compatible con otros motores que lo soporten.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formatos | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| WeMM-Ecom-4B-GPTQ | 4,54B (denso) | 262.144 | Apache 2.0 | GPTQ W4A16, safetensors | Especializado en e-commerce, multimodal |
-| WeMM-Ecom-4B (BF16) | 4,54B (denso) | 262.144 | Apache 2.0 | BF16 safetensors | Mismo modelo sin cuantizar |
-| Qwen3.5-4B | 4B (denso) | No disponible | No disponible | No disponible | Referencia de comparación citada en la model card |
-| WeMM-Ecom-9B | 9B (denso) | 262.144 | Apache 2.0 | BF16, FP8, GPTQ, GGUF | Versión superior de la misma familia |
+| WeMM-Ecom-4B-GPTQ | 4,5B (denso) | 262.144 | Apache 2.0 | Safetensors GPTQ W4A16, BF16, FP8, GGUF | Especializado en e-commerce; +6,47 puntos medios sobre Qwen3.5-4B en benchmarks de e-commerce |
+| Qwen3.5-4B | 4B (denso) | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Referencia de comparacion usada por el autor; el modelo lo supera en e-commerce y ligeramente en capacidades generales |
+| WeMM-Ecom-9B | 9B (denso) | No disponible en la informacion | Apache 2.0 (familia) | BF16, FP8, GPTQ, GGUF (familia) | Version superior de la misma familia, para escenarios con mas recursos |
+| WeMM-Ecom-35B-A3B | 35B totales, 3B activos (MoE) | No disponible en la informacion | Apache 2.0 (familia) | BF16, FP8, GPTQ, GGUF (familia) | Segun el autor, supera a modelos abiertos de cientos de miles de millones de parametros en e-commerce |
 
-La model card cita a Qwen3.5-4B como referencia directa, con una ventaja de +6,47 puntos en e-commerce y +0,40 en general para WeMM-Ecom-4B. No se dispone de datos de benchmarks frente a otros modelos multimodales de tamaño similar en la información proporcionada.
+No se dispone de datos suficientes en la informacion proporcionada para comparar rendimiento numerico con alternativas externas a la familia.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a chino e inglés; el rendimiento en castellano no está evaluado ni garantizado.
-- Especialización en comercio electrónico: aunque mantiene capacidades generales, su entrenamiento está sesgado hacia el dominio de producto y puede mostrar menor rendimiento en tareas generales fuera de ese ámbito.
-- Riesgo de alucinación en descripciones de producto, atributos u OCR, especialmente con imágenes de baja calidad o poco habituales; se recomienda validación humana en flujos críticos.
-- La cuantización GPTQ W4A16 puede introducir una degradación ligera de calidad frente al checkpoint BF16; la model card no cuantifica esta pérdida.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye "tal cual", sin garantías; conviene revisar el archivo LICENSE del repositorio.
-- El despliegue cuantizado requiere vLLM >= 0.31.0 con backend `compressed-tensors`; otros motores pueden no soportar este formato directamente.
-- El contexto de 262.144 tokens exige una gestión cuidadosa de la memoria KV en producción; no se han publicado cifras de latencia ni throughput.
-- El modelo tiene muy poca tracción comunitaria en el momento de la ficha (0 descargas, 1 like), por lo que el soporte y la validación externa son limitados.
+- Idiomas: solo se declaran chino e ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Sesgos: no se documentan analisis de sesgo en la informacion proporcionada; al estar orientado al e-commerce de WeChat, puede heredar sesgos de dominio y de la distribucion de datos de esa plataforma.
+- Alucinacion: como modelo generativo multimodal, puede producir descripciones o atributos de producto incorrectos; en produccion conviene validar salidas estructuradas y usar el modo thinking solo cuando el coste de latencia lo permita.
+- Contexto: aunque la ventana es de 262.144 tokens, el uso intensivo de contexto largo incrementa la memoria de cache KV y puede degradar la latencia; no se documentan curvas de rendimiento por longitud.
+- Cuantizacion: el checkpoint GPTQ puede presentar una ligera perdida de calidad frente al BF16; el autor conserva en precision original el codificador de vision, la cabeza de salida y proyecciones sensibles, pero no se publican comparativas numericas GPTQ frente a BF16 en la informacion disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio y las condiciones de los datos de entrenamiento, no detalladas en la model card.
+- Produccion: se recomienda vLLM >= 0.31.0 con backend `compressed-tensors`; otros motores pueden requerir conversion de formato. No se publican datos de throughput ni latencia.
 
 ## Enlaces
 
-- [Hugging Face: tencent/WeMM-Ecom-4B-GPTQ](https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ)
-- [Modelo base: tencent/WeMM-Ecom-4B](https://huggingface.co/tencent/WeMM-Ecom-4B)
-- [Versión FP8: tencent/WeMM-Ecom-4B-FP8](https://huggingface.co/tencent/WeMM-Ecom-4B-FP8)
-- [Versión GGUF: tencent/WeMM-Ecom-4B-GGUF](https://huggingface.co/tencent/WeMM-Ecom-4B-GGUF)
-- [Colección WeMM-Ecom en Hugging Face](https://huggingface.co/collections/tencent/wemm-ecom)
-- [Repositorio GitHub: Tencent/WeMM-Ecom](https://github.com/Tencent/WeMM-Ecom)
-- [Documentación de vLLM](https://docs.vllm.ai/en/latest/getting_started/installation/gpu/)
-- [Sitio corporativo de Tencent](https://www.tencent.com/)
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ
+- Modelo base (BF16): https://huggingface.co/tencent/WeMM-Ecom-4B
+- Variante FP8: https://huggingface.co/tencent/WeMM-Ecom-4B-FP8
+- Variante GGUF: https://huggingface.co/tencent/WeMM-Ecom-4B-GGUF
+- Familia WeMM-Ecom 0.8B: https://huggingface.co/tencent/WeMM-Ecom-0.8B
+- Familia WeMM-Ecom 2B: https://huggingface.co/tencent/WeMM-Ecom-2B
+- Familia WeMM-Ecom 9B: https://huggingface.co/tencent/WeMM-Ecom-9B
+- Familia WeMM-Ecom 35B-A3B: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
+- Coleccion en Hugging Face: https://huggingface.co/collections/tencent/wemm-ecom
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.30662
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2611.30662
+- Repositorio GitHub: https://github.com/Tencent/WeMM-Ecom
+- Licencia: https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ/blob/main/LICENSE
+- Documentacion de vLLM: https://docs.vllm.ai/en/latest/getting_started/installation/gpu/

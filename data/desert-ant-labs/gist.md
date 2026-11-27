@@ -2,52 +2,51 @@
 
 ## Resumen
 
-Gist es un clasificador de texto compacto desarrollado por Desert Ant Labs, orientado a la generación de temas y etiquetas para publicaciones y artículos. A diferencia de los modelos basados en transformers, Gist emplea una arquitectura de dos flujos (two-stream): un embedding estático multilingüe combinado con n-gramas con hashing, sin transformer en la fase de inferencia. El modelo despliega 74 MB en su variante multilingüe y clasifica texto en una taxonomía fija de 36 temas a través de 101 idiomas.
+Gist es un clasificador de texto compacto desarrollado por Desert Ant Labs, disenado especificamente para la generacion de temas y etiquetas (topic tagging) en publicaciones y articulos. A diferencia de los modelos basados en transformers, Gist emplea una arquitectura de dos flujos (two-stream) que combina un embedding estatico multilingue con n-gramas hasheados, eliminando por completo la necesidad de un transformer en inferencia. El modelo resultante ocupa 74 MB en su variante multilingue y esta optimizado para ejecucion en dispositivo (on-device) con coste por llamada nulo.
 
-El modelo resuelve el problema del etiquetado temático de contenido en dispositivos, sin coste por llamada y con ejecución completamente local. Es relevante para aplicaciones móviles, de escritorio y web que necesitan categorizar contenido sin depender de servicios en la nube. Su diseño multi-etiqueta asigna de forma típica dos o tres temas por elemento, y permite agregar puntuaciones a nivel de colección (por ejemplo, temas de un canal o feed).
+El modelo resuelve un problema concreto: la clasificacion multi-etiqueta de contenido textual dentro de una taxonomia fija de 36 topicos, con soporte para 101 idiomas. Es relevante en el contexto actual de despliegue en el borde (edge computing) porque demuestra que tareas de clasificacion semantica pueden realizarse sin infraestructura de servidor, con latencia minima y sin dependencia de APIs externas. La version actual de los pesos es v2.2.0.
 
-La versión actual de los pesos es la v2.2.0, publicada en Hugging Face bajo licencia source-available de Desert Ant Labs. El repositorio ocupa 0,1 GB e incluye artefactos para Core ML, LiteRT/TFLite y SDKs en Swift, Kotlin y JavaScript.
+Gist esta disponible para iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node, a traves de SDKs en Swift, Kotlin y JavaScript. Su diseno multi-etiqueta refleja el hecho de que la mayoria de los contenidos abordan dos o tres temas simultaneamente, y permite agregar las puntuaciones por item a nivel de coleccion (por ejemplo, para obtener los topicos dominantes de un canal o feed).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Clasificador de dos flujos: embedding estático + n-gramas con hashing; sin transformer en inferencia |
+| Arquitectura | Clasificador de dos flujos: embedding estatico + n-gramas hasheados, sin transformer en inferencia |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (optimizado para texto corto: títulos, posts y descripciones) |
+| Longitud de contexto | no disponible (optimizado para texto corto: titulos y descripciones) |
 | Tipos de cuantizacion | int8 (embedding), fp16 (cabeza en Core ML), float32 (cabeza en LiteRT) |
 | Idiomas soportados | 101 |
-| Licencia | desert-ant-labs-source-available |
-| Formato de pesos | Core ML (`gist.mlmodelc`), LiteRT/TFLite (`gist.tflite`), embedding int8 (`gist_embedding.i8`), tokenizer Unigram (`gist_tokenizer.bin`) |
+| Licencia | desert-ant-labs-source-available (source-available, no open source) |
+| Formato de pesos | Core ML (.mlmodelc), LiteRT (.tflite), embedding int8 (.i8), tokenizer Unigram (.bin), JSON de configuracion |
 
 ## Arquitectura y entrenamiento
 
-Gist no utiliza un transformer en la fase de inferencia. La arquitectura consta de dos flujos combinados: un embedding estático multilingüe (int8, 64 MB) que actúa como extractor de características semánticas, y una representación de n-gramas con hashing. Las características fusionadas se proyectan a un vector de 8448 dimensiones (`features [1, 8448]`) y una cabeza clasificadora pequeña genera las probabilidades de los 36 temas (`topic_probs [1, 36]`). La cabeza se distribuye en dos formatos: Core ML (6 MB, fp16) para plataformas Apple y LiteRT/TFLite (13 MB, float32) para Android, Linux, Windows, Node y navegador.
+Gist no utiliza una arquitectura transformer en inferencia. En su lugar, emplea un diseno de dos flujos: un embedding estatico multilingue de 64 MB en int8 actua como extractor de caracteristicas semanticas, y una cabeza clasificadora ligera (6 MB en Core ML, 13 MB en LiteRT) transforma las caracteristicas fusionadas en 36 probabilidades de topicos. La entrada al clasificador es un vector de caracteristicas de dimension [1, 8448], y la salida es [1, 36]. El tokenizer es de tipo Unigram, multilingue, de 4 MB.
 
-El tokenizador es de tipo Unigram (4 MB) y cubre los 101 idiomas soportados. El modelo incluye un umbral ajustado en `gist_config.json` y está calibrado para etiquetar cada elemento con dos o tres temas. La taxonomía de 36 temas se distribuye en `taxonomy.json` (8 KB) con slug, nombre, descripción y mapeo a IAB Content Taxonomy 2.2 y a las categorías de Apple Podcasts. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+El modelo esta disenado para texto corto (titulos, publicaciones, descripciones) y produce clasificacion multi-etiqueta con un umbral ajustado que tipicamente asigna dos o tres topicos por item. La taxonomia de 36 topicos esta mapeada a dos estandares de la industria: IAB Content Taxonomy 2.2 (con IDs enteros estables por nodo) y las categorias de Apple Podcasts, lo que facilita la integracion en sistemas existentes. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación multi-etiqueta de texto en 36 temas fijos, con puntuación de probabilidad por tema.
-- Soporte de 101 idiomas, incluyendo textos en español, chino e inglés entre otros.
-- Agregación de temas a nivel de colección mediante la función `channelTopics` (temas de canal o feed con share y postCount).
-- Decaimiento por recencia opcional en la agregación (requiere `halfLifeDays` y `nowMillis`).
-- Ajuste de resultados mediante `topK` (por defecto 3) y `threshold` (umbral ajustado del modelo).
-- Ejecución completamente en dispositivo, sin coste por llamada ni dependencia de red.
-- SDKs nativos en Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android) y JavaScript (navegador y Node).
-- Variante inglesa reducida de 15 MB para texto en inglés y escritura latina (solo seleccionable desde el SDK de Swift).
-- Mapeo de salida a taxonomías estándar (IAB Content Taxonomy 2.2 y Apple Podcasts).
+- Clasificacion de texto multi-etiqueta en 36 topicos fijos, con puntuaciones de probabilidad por topico.
+- Soporte multilingue para 101 idiomas, incluyendo ejemplos verificados en espanol, chino, ingles y otros.
+- Agregacion de topicos a nivel de coleccion mediante la funcion `channelTopics`, que combina las puntuaciones de multiples publicaciones para obtener los temas dominantes de un canal o feed.
+- Decaimiento por recencia opcional en la agregacion (parametros `halfLifeDays` y `nowMillis`).
+- Ejecucion completamente on-device con coste por llamada nulo.
+- Seleccion de variante: build en ingles de 15 MB (solo Swift SDK) frente a build multilingue de 74 MB.
+- Integracion mediante SDKs en Swift, Kotlin y JavaScript (navegador y Node).
+- No soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling ni agentes. Es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Etiquetado automático de publicaciones en aplicaciones móviles: el modelo se integra mediante el SDK de Swift o Kotlin y clasifica títulos y descripciones localmente, sin enviar contenido a servidores externos y con cero coste por inferencia.
-- Organización de feeds y canales: usando `channelTopics`, se pueden agregar los temas de cada post para determinar los temas dominantes de un canal, con soporte opcional de decaimiento por recencia para priorizar contenido reciente.
-- Moderación y enrutamiento de contenido en plataformas multilingües: la cobertura de 101 idiomas permite clasificar contenido entrante en un único paso y dirigirlo al equipo o sección correspondiente.
-- Indexación y búsqueda temática: las etiquetas generadas alimentan índices de búsqueda o sistemas de recomendación, aprovechando el mapeo a IAB Content Taxonomy 2.2 para interoperar con sistemas publicitarios existentes.
-- Categorización de podcasts: el mapeo directo a categorías de Apple Podcasts permite asignar temas a episodios y programas de forma automática a partir del título y la descripción.
-- Procesamiento por lotes en servidor Node: la variante nativa para Node permite clasificar grandes volúmenes de artículos en pipelines de backend sin coste de API, con el mismo modelo que se ejecuta en el cliente.
-- Aplicaciones de escritorio y web: el paquete JavaScript con LiteRT permite clasificar contenido en el navegador o en Electron, manteniendo el texto del usuario en el dispositivo.
+- Etiquetado automatico de articulos en un CMS: el modelo clasifica titulos y descripciones en los 36 topicos para asignar etiquetas y categorias sin intervencion manual, con latencia minima al ejecutarse en el propio dispositivo del editor o en el servidor.
+- Organizacion de feeds y canales de contenido: usando `channelTopics`, se pueden agregar las puntuaciones de todas las publicaciones de un canal para determinar sus temas dominantes y construir sistemas de recomendacion o navegacion por topicos.
+- Moderacion y enrutamiento de contenido en aplicaciones moviles: al ejecutarse on-device en iOS y Android, permite clasificar contenido generado por el usuario antes de enviarlo a un servidor, reduciendo costes de infraestructura y mejorando la privacidad.
+- Indexacion de podcasts: la taxonomia mapeada a categorias de Apple Podcasts permite clasificar episodios y programas automaticamente para su inclusion en directorios y motores de busqueda.
+- Filtrado y personalizacion en aplicaciones de noticias: el modelo puede clasificar articulos en el dispositivo del usuario para personalizar la seleccion de contenidos sin enviar datos a servidores externos.
+- Analisis de tendencias en redes sociales: la clasificacion multilingue permite procesar publicaciones en 101 idiomas y agregar los topicos resultantes para detectar tendencias por region o comunidad.
+- Enriquecimiento de metadatos en pipelines de datos: integrado en flujos de procesamiento batch o streaming mediante el SDK de Node, permite anadir etiquetas tematicas a grandes volumenes de documentos de forma economica.
 
 ## Benchmarks y rendimiento
 
@@ -55,38 +54,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en el sentido habitual; el modelo está diseñado para ejecución en CPU y en dispositivos móviles. El tamaño de despliegue es de 74 MB en la variante multilingüe y 15 MB en la variante inglesa.
-- GPU recomendadas: no se requieren GPU; el modelo se ejecuta en CPU en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
-- Compatibilidad con GPU de consumo: no aplica; no se documenta uso de GPU.
-- Opciones de despliegue: Core ML (plataformas Apple), LiteRT/TFLite (Android, Linux, Windows, Node, web), SDKs oficiales en Swift, Kotlin y JavaScript (`@desert-ant-labs/gist`).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- El modelo esta disenado para ejecucion on-device y no requiere GPU dedicada. El build multilingue ocupa 74 MB en disco (64 MB de embedding int8 + 6 MB de cabeza Core ML o 13 MB de cabeza LiteRT + 4 MB de tokenizer).
+- El build en ingles ocupa 15 MB y esta disponible unicamente a traves del SDK de Swift.
+- Plataformas soportadas: iOS, macOS, tvOS, visionOS (Core ML); Android, Linux, Windows, Node y navegador (LiteRT).
+- No se especifican requisitos minimos de RAM ni de VRAM en la informacion disponible.
+- Opciones de despliegue: SDKs oficiales de Desert Ant Labs para Swift (Swift Package Manager), Kotlin (Maven con BOM `ai.desertant:bom:6.0.0`) y JavaScript (`@desert-ant-labs/gist` con `@litertjs/core` para navegador, o build nativo precompilado para Node).
+- No se dispone de datos de latencia o throughput en la informacion proporcionada, aunque el autor indica "zero per-call cost" y ejecucion completamente local.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Ejecución |
-|---|---|---|---|---|---|---|
-| Gist (desert-ant-labs) | Clasificador de dos flujos, sin transformer | no disponible (74 MB desplegable) | no disponible (texto corto) | 101 | source-available | En dispositivo |
-| Modelos de clasificación basados en transformers (p. ej. BERT multilingüe) | Transformer encoder | Cientos de millones | 512 tokens típico | Variable | Variable | Servidor o dispositivo con más recursos |
-| APIs de clasificación en la nube | Servicio propietario | no disponible | Variable | Variable | Propietaria | Nube |
-
-La comparativa con alternativas concretas no está disponible en la información proporcionada. Gist se diferencia por su tamaño reducido, la ausencia de transformer en inferencia y la ejecución local en dispositivos móviles, a costa de una taxonomía fija de 36 temas y una orientación a texto corto.
+No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Gist se posiciona en una categoria especifica (clasificacion de topicos on-device sin transformer) para la que no se han facilitado alternativas directas. Los clasificadores transformer multilingues convencionales, como XLM-RoBERTa, operan con arquitecturas y requisitos de recursos sustancialmente distintos, pero no se han incluido datos comparativos en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- La taxonomía está fija en 36 temas; no es posible clasificar en categorías personalizadas sin reentrenar o mapear externamente.
-- El modelo está optimizado para texto corto (títulos, posts y descripciones); el rendimiento en documentos largos no está documentado.
-- No se dispone de información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de clasificaciones erróneas o de baja confianza en textos ambiguos o muy cortos.
-- La licencia es source-available de Desert Ant Labs, no open source; es necesario revisar los términos en https://license.desertant.com/ antes de un uso comercial.
-- La variante inglesa de 15 MB solo es seleccionable desde el SDK de Swift; en otras plataformas se debe usar la variante multilingüe de 74 MB.
-- La agregación `channelTopics` es una función pura sin modelo; el decaimiento por recencia permanece desactivado salvo que se pasen `halfLifeDays` y `nowMillis`.
-- No se han publicado latencias ni throughput, por lo que el rendimiento en producción debe medirse en el dispositivo objetivo.
+- La licencia es `desert-ant-labs-source-available`, no open source. Es necesario revisar los terminos en https://license.desertant.com/ antes de cualquier uso comercial o redistribucion.
+- El modelo solo realiza clasificacion dentro de una taxonomia fija de 36 topicos; no puede generar texto, responder preguntas ni realizar tareas fuera de esa taxonomia.
+- Esta optimizado para texto corto (titulos y descripciones); su rendimiento en documentos largos no esta documentado.
+- No se han publicado datos sobre sesgos, tasas de alucinacion (aunque al ser un clasificador, el riesgo se manifiesta como falsos positivos o asignaciones erroneas de topicos) ni evaluaciones de equidad entre idiomas.
+- El soporte de 101 idiomas no implica calidad uniforme; no se proporcionan metricas por idioma.
+- La seleccion del build en ingles (15 MB) solo esta disponible en el SDK de Swift; en otras plataformas debe usarse el build multilingue de 74 MB.
+- No se especifican requisitos minimos de memoria ni latencias, lo que dificulta la planificacion de capacidad en produccion.
+- El modelo se actualiza periodicamente (version actual v2.2.0); es recomendable fijar la version de los pesos en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/gist
 - Pesos v2.2.0: https://huggingface.co/desert-ant-labs/gist/tree/v2.2.0
-- Demo en vivo (Space): https://huggingface.co/spaces/desert-ant-labs/gist-demo
-- Demo del producto: https://desertant.com/models/gist/
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/desert-ant-labs/gist-demo
+- Demo en el sitio del autor: https://desertant.com/models/gist/
 - Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
 - Licencia: https://license.desertant.com/

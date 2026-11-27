@@ -2,105 +2,97 @@
 
 ## Resumen
 
-`roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80` es un modelo de respuesta a preguntas extractiva (question answering) para persa, obtenido mediante fine-tuning del checkpoint `HooshvareLab/roberta-fa-zwnj-base` sobre un subconjunto del dataset PersianQuAD. Lo publica el usuario Z-Jafari en Hugging Face bajo licencia Apache 2.0 y con el formato estándar de `transformers`. El modelo tiene 117.709.058 parámetros (aproximadamente 117,7 M) y se distribuye en safetensors, con un repositorio de 3,8 GB.
+roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80 es un modelo de respuesta a preguntas extractiva (question answering) para persa, desarrollado por el usuario Z-Jafari. Se trata de un ajuste fino (fine-tuning) del modelo base HooshvareLab/roberta-fa-zwnj-base, una variante de RoBERTa adaptada al persa con tratamiento específico de caracteres ZWNJ (Zero-Width Non-Joiner), sobre un subconjunto del conjunto de datos PersianQuAD (el 80 por ciento destinado a validación, según el nombre del modelo).
 
-Se trata de un fine-tuning ligero y acotado: la model card está generada automáticamente por el `Trainer` de Hugging Face y no documenta ni el dataset exacto, ni la composición de los datos, ni resultados de benchmarks. El autor mantiene una colección de modelos base ajustados sobre PersianQuAD, de la que este checkpoint forma parte, con variantes identificadas por el sufijo `val-80` y `val-None`.
+El modelo resuelve la tarea de localizar la respuesta a una pregunta dentro de un párrafo de contexto, devolviendo el fragmento exacto (span extraction). Con 117,7 millones de parámetros, es un modelo de tamaño base pensado para despliegues ligeros y de baja latencia, no para generación libre de texto. Su relevancia radica en cubrir un nicho poco poblado: QA extractivo en persa con una licencia permisiva (Apache 2.0) y pesos en safetensors compatibles con el ecosistema transformers.
 
-Su relevancia es práctica y limitada: sirve como punto de partida reproducible para tareas de QA extractiva en persa con un encoder de ~117 M de parámetros, desplegable en hardware modesto. No es un modelo generativo ni conversacional, y no debe evaluarse como tal.
+La información pública disponible es escasa: la model card fue generada automáticamente por el Trainer de Hugging Face y no detalla el dataset exacto, la composición del entrenamiento ni los idiomas soportados más allá del persa implícito. Los resultados declarados (exact match 58,6 y F1 64,71) son los únicos datos de rendimiento publicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (RoBERTa), fine-tuning para question answering extractiva |
-| Parametros totales | 117.709.058 (~117,7 M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (el modelo base RoBERTa emplea 512 tokens; el autor no lo declara) |
-| Tipos de cuantizacion | No disponible (pesos en safetensors; admite cuantizacion a FP16/INT8 mediante herramientas externas) |
-| Idiomas soportados | No disponible (entrenado sobre PersianQuAD, por lo que el uso previsto es persa) |
-| Licencia | Apache 2.0 |
+| Arquitectura | Transformer encoder (RoBERTa adaptado a persa con ZWNJ) |
+| Parametros totales | 117.709.058 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (RoBERTa base, habitualmente 512 tokens; no confirmado en la model card) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en fp32; cuantizacion no documentada) |
+| Idiomas soportados | persa (implícito por el modelo base y el dataset; no declarado explícitamente) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Pipeline | question-answering |
-| Modelo base | HooshvareLab/roberta-fa-zwnj-base |
-| Tamano del repositorio | 3,8 GB |
-| Libreria | transformers |
-| Versiones de framework | Transformers 5.22.0, PyTorch 2.11.0+cu130, Datasets 4.8.5, Tokenizers 0.23.3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder RoBERTa adaptado al persa con normalización de ZWNJ (zero-width non-joiner), heredado de `HooshvareLab/roberta-fa-zwnj-base`. Sobre esa base se ha realizado un fine-tuning supervisado para QA extractiva, es decir, localización del span de respuesta dentro de un contexto dado, no generación libre. No se documenta ningún proceso de RLHF, DPO ni ajuste por preferencias.
+El modelo es un encoder transformer de tipo RoBERTa en su configuración base, heredado de HooshvareLab/roberta-fa-zwnj-base. La particularidad del modelo base es el preprocesamiento de caracteres ZWNJ (Zero-Width Non-Joiner), un carácter de control usado en persa para separar morfemas y que suele causar problemas de tokenización en modelos no adaptados. El ajuste fino añade una cabeza de question answering sobre el encoder para extraer el span de respuesta.
 
-Los hiperparámetros declarados en la model card son: learning rate 2e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal, 3 épocas y precisión mixta nativa (AMP). El entrenamiento consta de 3.687 pasos (1.229 por época). La pérdida de validación evoluciona de 1,3557 en la época 1 a 1,2971 en la época 2 y 1,3216 en la época 3, lo que sugiere un ligero sobreajuste en la última época. El dataset de entrenamiento no se especifica ("unknown dataset" en la model card), aunque el nombre del modelo indica que se empleó PersianQuAD con una partición de validación del 80 %.
+El entrenamiento se realizó durante 3 épocas con un learning rate de 2e-05, batch size de 16, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y precisión mixta nativa (AMP). La pérdida de entrenamiento descendió de 1,6639 a 0,6747, mientras que la pérdida de validación alcanzó su mínimo en la época 2 (1,1532) y repuntó en la época 3 (1,2235), lo que sugiere un ligero sobreajuste en la última época. No se documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo técnicas de regularización adicionales. Las versiones de framework declaradas son Transformers 5.22.1, PyTorch 2.14.1+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 ## Capacidades
 
-- Respuesta a preguntas extractiva: dado un contexto y una pregunta en persa, devuelve el span de texto que contiene la respuesta.
-- Manejo de texto persa con normalización de ZWNJ, gracias al tokenizador del modelo base.
-- Integración directa con el pipeline `question-answering` de `transformers`.
-- Compatible con endpoints de inferencia (`endpoints_compatible` en los tags).
-- No soporta generación de texto libre, razonamiento multi-paso, tool calling ni function calling.
-- No dispone de modo thinking, visión, audio ni capacidades multimodales.
-- No se documentan capacidades multilingües; el uso previsto es exclusivamente persa.
+- Respuesta a preguntas extractiva: dado un contexto y una pregunta en persa, devuelve el fragmento exacto del contexto que responde a la pregunta.
+- Comprensión lectora en persa: identificacion de spans relevantes dentro de parrafos.
+- Manejo de caracteres ZWNJ: tokenizacion adaptada a la ortografia persa con separadores morfologicos.
+- No soporta generación de texto libre (no es un modelo causal).
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- Capacidades multilingües: no documentadas; el modelo está orientado al persa.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Búsqueda de respuestas sobre documentación técnica en persa: indexar manuales y permitir consultas extractivas donde el modelo devuelve el fragmento exacto que responde a la pregunta, sin generación.
-- Atención al cliente basada en FAQ: emparejar la consulta del usuario con la respuesta contenida en una base de conocimiento persa, usando el modelo como extractor de spans sobre artículos de ayuda.
-- Extracción de campos en formularios y contratos persas: localizar valores concretos (fechas, importes, nombres) dentro de documentos estructurados semiestructurados.
-- Asistente de lectura sobre artículos académicos en persa: responder preguntas sobre el contenido de un paper proporcionado como contexto.
-- Enriquecimiento de bases de datos documentales: pipeline batch que, para cada documento y conjunto de preguntas predefinidas, extrae respuestas y las almacena como metadatos.
-- Evaluación comparativa de modelos base persas: al ser un fine-tuning reproducible sobre PersianQuAD, sirve como referencia en experimentos de ajuste con otros encoders (XLM-R, mBERT, ParsBERT).
-- Prototipado rápido en local: con ~117 M de parámetros, se puede ejecutar en CPU o en GPUs de gama baja para validar ideas antes de escalar a modelos mayores.
+- Busqueda de respuestas en bases documentales persas: indexar documentos y usar el modelo para extraer la frase exacta que responde a una consulta del usuario, con latencia baja gracias a sus 117,7 M de parámetros.
+- Atención al cliente sobre FAQ en persa: dado un artículo de ayuda como contexto, localizar el pasaje que responde a la pregunta del cliente sin generar texto nuevo, reduciendo el riesgo de alucinación.
+- Extracción de datos estructurados de contratos o formularios persas: localizar campos concretos (fechas, importes, nombres) dentro de párrafos mediante preguntas dirigidas.
+- Asistente de lectura para documentación técnica en persa: resaltar la sección relevante de un manual ante una pregunta del usuario.
+- Preprocesamiento para pipelines RAG en persa: usar el modelo como extractor de evidencia antes de pasar el fragmento a un modelo generativo, mejorando la precisión de las citas.
+- Anotación asistida de corpus: generar spans candidatos para revisión humana en proyectos de anotación de QA en persa.
+- Evaluación de calidad de respuestas: comparar el span extraído por el modelo con la respuesta de referencia para medir la cobertura de un sistema de QA.
 
 ## Benchmarks y rendimiento
 
-El `model-index` del autor no declara resultados de benchmarks (`results: []`). El único dato de evaluación disponible es la pérdida de validación reportada por el `Trainer`:
+Los únicos datos publicados son los declarados por el autor en la model card, sobre el conjunto de evaluación (presumiblemente el 20 por ciento de validación de PersianQuAD, aunque no se detalla):
 
 | Metrica | Valor |
 |---|---|
-| Validation loss (epoca 1) | 1,3557 |
-| Validation loss (epoca 2) | 1,2971 |
-| Validation loss (epoca 3) | 1,3216 |
-| Training loss (epoca 1) | 1,6340 |
-| Training loss (epoca 2) | 1,0399 |
-| Training loss (epoca 3) | 0,6975 |
+| Loss (evaluacion) | 1,2235 |
+| Exact match | 58,6 |
+| F1 | 64,71 |
 
-No se han publicado resultados de benchmarks (EM, F1) en la informacion disponible.
+No se han publicado resultados comparativos con otros modelos en la información disponible. El model-index del repositorio está vacío (results: []).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 0,5 GB para los pesos (117,7 M de parámetros × 4 bytes), más overhead de activaciones; en la práctica, menos de 2 GB en total.
-- VRAM estimada en FP16: aproximadamente 0,25 GB para los pesos.
-- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas con suficiente memoria compartida.
-- Ejecutable en CPU con latencias aceptables para volúmenes moderados, dado el reducido tamaño del modelo.
-- Opciones de despliegue: `transformers` con el pipeline `question-answering`, TorchServe, ONNX Runtime o cuantización INT8 mediante `optimum`. No se documenta soporte específico para vLLM, TGI o llama.cpp (este último no aplica a un encoder de QA).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB para los pesos (117,7 M de parámetros × 4 bytes) más overhead de activaciones y tokenizador; en la práctica, menos de 1 GB.
+- VRAM estimada en fp16: aproximadamente 0,25 GB para los pesos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en CPU con latencia aceptable para volúmenes moderados.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Opciones de despliegue: transformers con pipeline de question-answering, ONNX Runtime, TorchScript, TGI (si se convierte a formato compatible) y llama.cpp no aplica (no es un modelo generativo GGUF). vLLM no es la opción natural para un encoder de QA.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera latencia de milisegundos en GPU y decenas de milisegundos en CPU para contextos de 512 tokens, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80 | ~117,7 M | No disponible | QA extractiva (persa) | Apache 2.0 | Hugging Face |
-| HooshvareLab/roberta-fa-zwnj-base | ~117 M (no confirmado) | No disponible | Modelo base (persa) | No disponible en la informacion | Hugging Face |
-| Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None | No disponible | No disponible | QA extractiva (persa) | No disponible en la informacion | Hugging Face |
+| Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80 | 117,7 M | no disponible | QA extractivo persa | Apache 2.0 | Hugging Face |
+| HooshvareLab/roberta-fa-zwnj-base (modelo base) | ~117 M | no disponible | encoder persa (preentrenamiento) | no disponible en esta ficha | Hugging Face |
+| Otros modelos QA en persa | no disponible | no disponible | QA extractivo | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo (EM/F1) entre estas variantes en la información proporcionada. La comparación se limita a parámetros, tarea y licencia.
+No se dispone de datos de benchmarks comparativos ni de especificaciones de alternativas en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- La model card está generada automáticamente y no documenta el dataset de entrenamiento, la composición de PersianQuAD utilizada ni el proceso de selección de la partición `val-80`.
-- No se declaran métricas de calidad (EM, F1) sobre el conjunto de evaluación, por lo que no es posible verificar su rendimiento real frente a alternativas.
-- El modelo es extractivo: no genera respuestas, no razona y no mantiene conversaciones multi-turno.
-- Riesgo de alucinación estructural: si la respuesta no está contenida literalmente en el contexto, el modelo devolverá un span probablemente incorrecto en lugar de indicar que no hay respuesta.
-- Uso previsto exclusivamente en persa; no se documenta comportamiento en otros idiomas.
-- La longitud de contexto no está declarada; el modelo base RoBERTa limita a 512 tokens, lo que restringe contextos largos.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene validar el modelo en el dominio concreto antes de producción.
-- El repositorio ocupa 3,8 GB, desproporcionado para 117,7 M de parámetros, lo que sugiere la presencia de checkpoints intermedios u otros artefactos; conviene revisar los archivos antes de desplegar.
-- Creado y actualizado en noviembre de 2026, con 0 descargas y 0 likes: no hay evidencia de uso en producción ni validación por parte de la comunidad.
+- La model card está generada automáticamente y no documenta el dataset de entrenamiento, la composición de PersianQuAD ni el proceso de validación; la reproducibilidad es limitada.
+- El nombre del modelo sugiere que se entrenó sobre el 80 por ciento de validación de PersianQuAD, lo que podría implicar solapamiento con el conjunto de evaluación y sobreestimar el rendimiento real.
+- La pérdida de validación aumentó en la época 3, lo que indica posible sobreajuste; el checkpoint final no es necesariamente el mejor.
+- Riesgo de alucinación bajo en QA extractivo (el span proviene del contexto), pero puede devolver spans incorrectos o vacíos si la respuesta no está en el contexto.
+- Sesgos: no documentados; al entrenarse sobre un corpus persa, puede heredar sesgos del dataset base y de PersianQuAD.
+- Limitaciones de idioma: orientado al persa; no se garantiza funcionamiento en otros idiomas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base HooshvareLab/roberta-fa-zwnj-base, no incluida en esta información.
+- Longitud de contexto no confirmada: si se hereda la configuración RoBERTa base, el límite sería 512 tokens, lo que restringe contextos largos.
+- Solo 212 descargas y 0 likes: modelo de baja adopción, sin validación comunitaria ni mantenimiento documentado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80
-- Variante `val-None`: https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None
-- Colección Base-Models-Finetuned-on-PersianQuAD: https://huggingface.co/collections/Z-Jafari/base-models-finetuned-on-persianquad
+- Hugging Face: https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-80
 - Modelo base: https://huggingface.co/HooshvareLab/roberta-fa-zwnj-base
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

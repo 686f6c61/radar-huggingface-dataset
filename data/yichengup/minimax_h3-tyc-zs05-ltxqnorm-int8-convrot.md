@@ -2,56 +2,50 @@
 
 ## Resumen
 
-MiniMax H3 es un modelo de generacion de video a partir de imagen (image-to-video) con salida de audio sincronizado, desarrollado por MiniMaxAI. Este repositorio concreto, publicado por el usuario yichengup, contiene un checkpoint afinado especificamente (fine-tune) del modelo base, cuantizado a int8 y empaquetado como un unico archivo safetensors de 20,97 GB para su uso directo en ComfyUI mediante el nodo `Load Diffusion Model` (version 0.32 o superior). No se trata del checkpoint oficial, sino de una variante derivada con modificaciones en los pesos.
+MiniMax H3 int8 (checkpoint `yichengup/minimax_h3-tyc-zs05-ltxqnorm-int8-convrot`) es una variante afinada y cuantizada a int8 del modelo oficial MiniMax H3, un modelo de generación de vídeo a partir de imagen (image-to-video) con soporte de audio. Lo publica el usuario `yichengup` como un único fichero safetensors de 20,97 GB pensado para cargarse directamente en ComfyUI mediante el nodo `Load Diffusion Model` (ComfyUI 0.32 o superior). No se trata del modelo original de MiniMaxAI, sino de un derivado de la release oficial podada; según la model card, no hubo entrenamiento, solo ajuste y cuantización.
 
-El checkpoint esta optimizado para movimiento rapido y expresivo: acciones veloces como golpes, carreras o giros bruscos ganan fuerza y peso visual frente al modelo original, mientras que el movimiento cotidiano (caminar, girar, gestos pequenos) conserva un ritmo natural. Tambien preserva el movimiento fino de pelo, tela o vegetacion entre poses clave. Como contrapartida, el autor advierte que el movimiento agresivo puede producir tearing, blending o arrastre de objetos cercanos al sujeto en movimiento.
+El modelo resuelve el problema de ejecutar MiniMax H3 en flujos de trabajo locales de ComfyUI con un peso reducido y un único fichero, manteniendo los codificadores de texto y los VAE estándar de H3. Su interés actual radica en que permite generar clips de vídeo con audio desde una imagen de referencia sin depender de infraestructura propietaria, a costa de una licencia comunitaria restrictiva y de una calidad de movimiento que el propio autor describe como agresiva y propensa a artefactos en acciones rápidas.
 
-Por su naturaleza, es una herramienta orientada a creadores que trabajan con ComfyUI y necesitan generar clips cortos con audio a partir de una imagen de referencia, con un equilibrio entre fidelidad de movimiento y coste computacional reducido gracias a la cuantizacion int8. La licencia es la MiniMax H3 Community License, que restringe usos como la generacion de imagenes de personas reales sin consentimiento.
+La información disponible no detalla la arquitectura interna, el número de parámetros, la longitud de contexto ni los datos de entrenamiento del modelo base, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base MiniMax H3, pipeline image-to-video con audio) |
+| Arquitectura | no disponible (modelo base MiniMax H3, difusión para image-to-video con audio) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | int8 (tensorwise + convrot) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License (license: other) |
-| Formato de pesos | safetensors, archivo unico (20,97 GB) |
-| Modelo base | MiniMaxAI/MiniMax-H3 (fine-tune) |
-| Libreria / runtime | minimax-h3, ComfyUI 0.32+ |
-| Tamano del repositorio | 21,0 GB |
-| Pipeline | image-to-video (con audio) |
+| Licencia | minimax-h3-community-license (MiniMax H3 Community License Agreement) |
+| Formato de pesos | safetensors, fichero único (20,97 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base MiniMax H3 en la documentacion proporcionada: no se especifica si emplea transformer, diffusion transformer (DiT), MoE o una arquitectura hibrida, ni el numero de parametros. Lo que si se documenta es que el pipeline es image-to-video con generacion de audio asociada, y que el text encoder y los VAE utilizados son los estandar de H3, sin componentes personalizados.
+No se dispone de información sobre la arquitectura interna del modelo base MiniMax H3 (tipo de backbone, mecanismo de atención, número de parámetros o resolución de vídeo soportada). La model card indica únicamente que este checkpoint es una variante afinada de la release oficial podada de MiniMax H3, sin entrenamiento adicional, y que los pesos incorporan modificaciones respecto a la versión oficial, documentadas en el fichero `NOTICE`.
 
-Este checkpoint es un fine-tune especifico del modelo oficial, no el modelo stock. El autor indica que los pesos incorporan modificaciones respecto al release oficial, documentadas en el archivo `NOTICE`. La cuantizacion aplicada es int8 con esquema tensorwise y convrot, lo que reduce el peso a 20,97 GB en un unico archivo safetensors. No se proporcionan datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre el uso de RLHF, DPO o tecnicas de alineacion.
+La innovación técnica documentada se limita al proceso de cuantización: int8 con esquema tensorwise y una transformación denominada convrot, empaquetada en un único fichero safetensors para su carga directa en ComfyUI. Los codificadores de texto y los VAE son los estándar de H3 y no requieren componentes personalizados. No hay datos sobre volumen de tokens, composición del dataset, RLHF/DPO ni técnicas de decodificación.
 
 ## Capacidades
 
-- Generacion de video a partir de una imagen de entrada (image-to-video) con audio-video asociado.
-- Movimiento rapido con mayor impacto visual: golpes, carreras, giros y snaps con peso real en lugar de desplazamiento flotante.
-- Movimiento cotidiano natural: caminar, girar y gestos pequenos mantienen un ritmo pausado sin rigidez.
-- Preservacion de movimiento fino entre poses clave: pelo, tela, vegetacion y otros elementos detallados siguen moviendose.
-- Integracion directa en ComfyUI mediante el nodo `Load Diffusion Model` (ComfyUI 0.32+).
-- Compatibilidad con el text encoder y los VAE estandar de H3, sin necesidad de componentes personalizados.
-- Capacidades multilingues: no disponible.
-- Tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Modo thinking, vision o audio de entrada: no disponible en la informacion proporcionada.
+- Generación de vídeo a partir de una imagen de entrada (image-to-video).
+- Generación conjunta de vídeo y audio (etiqueta audio-video).
+- Movimiento rápido con mayor contundencia que el checkpoint original: carreras, golpes y giros bruscos.
+- Movimiento cotidiano natural: caminar, girar y gestos pequeños mantienen un ritmo pausado.
+- Preservación de movimiento fino en elementos pequeños: pelo, tela, follaje y detalles similares.
+- Integración nativa en ComfyUI mediante el nodo `Load Diffusion Model`.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo.
 
 ## Casos de uso
 
-- Animacion de ilustraciones y arte conceptual: a partir de una imagen fija se genera un clip corto con movimiento expresivo, util para presentaciones de personajes o portfolios de arte digital.
-- Previsualizacion de escenas de accion: el modelo destaca en golpes, carreras y giros bruscos, por lo que sirve para prototipar beats de accion en animatica antes de produccion final.
-- Generacion de clips para redes sociales: shots cortos con audio integrado a partir de una imagen de referencia, con movimiento llamativo que capta atencion en formatos breves.
-- Motion graphics para publicidad: animacion de productos o elementos graficos con movimiento fino preservado (tela, pelo, vegetacion), adecuado para spots de moda o naturaleza.
-- Iteracion rapida en pipelines de ComfyUI: al ser un unico archivo safetensors int8 cargado con `Load Diffusion Model`, permite cambiar checkpoints en flujos de trabajo existentes sin reconfigurar encoder o VAE.
-- Prototipado de videojuegos y cinemáticas: generar animaciones de referencia para transiciones, ataques o movimientos de camara moderados antes de implementarlas en motor.
-- Experimentacion con audio-video sincronizado: explorar la generacion conjunta de imagen en movimiento y audio en un entorno local con requisitos de VRAM reducidos por la cuantizacion int8.
+- Prototipado rápido de clips animados en ComfyUI: cargar una imagen fija y generar un clip corto con el nodo `Load Diffusion Model`, aprovechando el fichero único de 20,97 GB para evitar configuraciones de múltiples componentes.
+- Animación de retratos y personajes con movimiento sutil: el modelo mantiene vivo el movimiento de pelo y ropa, útil para avatares o presentaciones con imagen de referencia.
+- Generación de vídeo con audio para piezas cortas de redes sociales: la etiqueta audio-video indica salida conjunta de imagen en movimiento y sonido en tomas breves.
+- Previsualización de storyboards: convertir ilustraciones o fotogramas clave en animaciones de referencia antes de una producción mayor, limitando la duración para evitar artefactos.
+- Efectos de acción en tomas cortas: el autor señala que las acciones rápidas ganan fuerza, por lo que encaja en clips de impacto, golpes o carreras de pocos segundos con cámara moderada.
+- Experimentación e investigación en difusión de vídeo: al ser un derivado cuantizado y abierto en pesos, sirve para estudiar el efecto de int8 y del ajuste sobre la calidad de movimiento frente al modelo oficial.
+- Integración en pipelines locales de generación de contenido: al ejecutarse dentro de ComfyUI, puede encadenarse con otros nodos de preprocesado de imagen y postprocesado de vídeo.
 
 ## Benchmarks y rendimiento
 
@@ -59,36 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el checkpoint pesa 20,97 GB en int8, por lo que se requiere una GPU con al menos ~24 GB de VRAM para cargar el archivo completo, mas memoria adicional para activaciones y VAE.
-- GPU recomendadas: no disponible en la informacion proporcionada; por capacidad de memoria, encajan RTX 4090 (24 GB), A100 (40/80 GB) y H100 (80 GB), pero el autor no las cita.
-- Cabe en GPU de consumo: previsiblemente en RTX 4090 (24 GB) por el tamano del checkpoint int8, aunque no se confirma en la documentacion.
-- Opciones de despliegue: ComfyUI 0.32+ con el nodo `Load Diffusion Model`; otros runtimes (vLLM, llama.cpp, Ollama, TGI) no estan indicados y no aplican a este pipeline de difusion.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; el fichero pesa 20,97 GB en int8, por lo que se necesita al menos esa cantidad de memoria para cargar los pesos, más la memoria adicional para activaciones y VAE.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, se requiere una GPU con 24 GB o más de VRAM para el checkpoint en sí.
+- ¿Cabe en GPU de consumo? No se confirma; con 20,97 GB de pesos, solo GPU de consumo con 24 GB o más (por ejemplo, RTX 4090) podrían albergarlo, sujeto a la memoria extra necesaria.
+- Opciones de despliegue: ComfyUI 0.32 o superior mediante `Load Diffusion Model`; no se documentan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yichengup/minimax_h3-tyc-zs05-ltxqnorm-int8-convrot (este) | no disponible | no disponible | safetensors int8, 20,97 GB | MiniMax H3 Community License | Hugging Face, 344 descargas |
-| MiniMaxAI/MiniMax-H3 (base oficial) | no disponible | no disponible | no disponible | MiniMax H3 Community License | Hugging Face (referencia del fine-tune) |
-| Alternativas de image-to-video de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MiniMax H3 int8 (este checkpoint) | no disponible | no disponible | safetensors int8, 20,97 GB | minimax-h3-community-license | Hugging Face, ComfyUI |
+| MiniMaxAI/MiniMax-H3 (oficial) | no disponible | no disponible | no disponible | minimax-h3-community-license | Hugging Face |
+| Otros modelos image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa.
+No se dispone de datos suficientes sobre alternativas comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El movimiento agresivo puede producir tearing, blending o drift; los objetos cercanos a un sujeto en movimiento pueden ser arrastrados junto a el.
-- Los shots cortos y los movimientos de camara moderados funcionan mejor que las secuencias largas o complejas.
-- Es un fine-tune, no el modelo oficial: los pesos difieren del release original y el archivo `NOTICE` documenta los cambios.
-- Licencia MiniMax H3 Community License: prohibido generar imagenes de personas reales sin consentimiento, contenido ilegal o cualquier uso que la licencia upstream proscriba.
-- Riesgo de alucinacion visual y artefactos en escenas con oclusiones complejas o multiples sujetos, derivado del empuje agresivo del movimiento.
-- Idiomas soportados no documentados; al ser un modelo de video, la relevancia linguistica se limita a posibles prompts de texto, cuyo multilingueismo no se confirma.
-- Requiere ComfyUI 0.32+ y el text encoder y VAE estandar de H3; no se documentan otros entornos de despliegue.
-- No se han publicado benchmarks, por lo que la evaluacion de calidad debe hacerse empiricamente.
+- El propio autor advierte de que el movimiento agresivo provoca desgarros, mezclas y deriva en acciones rápidas, y que los objetos cercanos a un sujeto en movimiento pueden arrastrarse con él.
+- Recomendación del autor: usar tomas cortas y movimientos de cámara moderados.
+- Los pesos incluyen modificaciones respecto a la release oficial; el fichero `NOTICE` documenta los cambios.
+- Licencia comunitaria MiniMax H3: prohíbe generar imágenes de personas reales sin consentimiento, contenido ilegal y cualquier uso vetado por la licencia upstream; conviene revisar `LICENSE` y `NOTICE` antes de un uso comercial.
+- No hay información sobre sesgos, riesgo de alucinación visual, idiomas soportados ni límites de contexto.
+- Al ser un derivado afinado sin entrenamiento, su comportamiento puede diferir del modelo oficial en calidad y estabilidad.
+- No se documentan requisitos exactos de VRAM ni rendimiento medido, lo que dificulta planificar despliegues en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/yichengup/minimax_h3-tyc-zs05-ltxqnorm-int8-convrot
+- Hugging Face: https://huggingface.co/yichengup/minimax_h3-tyc-zs05-ltxqnorm-int8-convrot
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3 Community License: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- ComfyUI: https://github.com/comfyanonymous/ComfyUI
+- ComfyUI: no disponible en la información proporcionada.

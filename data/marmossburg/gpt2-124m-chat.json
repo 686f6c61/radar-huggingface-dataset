@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "marmossburg/gpt2-124m-chat",
+  "slug": "marmossburg-gpt2-124m-chat",
+  "author": "marmossburg",
+  "url": "https://huggingface.co/marmossburg/gpt2-124m-chat",
+  "created_at": "2026-11-26T22:25:44.000Z",
+  "updated_at": "2026-11-26T22:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "supervised-fine-tuning",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:marmossburg/gpt2-124m-reproduction",
+    "base_model:finetune:marmossburg/gpt2-124m-reproduction",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 498165423,
+  "storage_human": "498 MB",
+  "context_length": null,
+  "base_model": "marmossburg/gpt2-124m-reproduction",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

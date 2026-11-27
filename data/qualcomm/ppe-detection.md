@@ -2,96 +2,130 @@
 
 ## Resumen
 
-PPE-Detection es un modelo de detección de objetos en tiempo real desarrollado por Qualcomm para identificar equipos de protección individual (EPI) en imágenes. Concretamente, detecta dos clases: casco de seguridad y chaleco reflectante. El modelo está optimizado para ejecutarse en la NPU de los procesadores Snapdragon y Dragonwing de Qualcomm, logrando latencias de inferencia de menos de 1 milisegundo en los chips más recientes. Su arquitectura es propietaria de Qualcomm y fue entrenada con un dataset interno, aunque puede utilizarse con cualquier imagen.
+PPE-Detection es un modelo de deteccion de objetos desarrollado por Qualcomm para identificar en tiempo real si una persona lleva puesto equipo de proteccion individual (EPI/PPE) en entornos industriales. La arquitectura, denominada internamente Gear Guard Net, fue disenada por Qualcomm y entrenada sobre un dataset propietario de la compania, aunque el modelo resultante puede aplicarse a imagenes arbitrarias. Con 6,19 millones de parametros y una resolucion de entrada de 320x192 pixeles, esta optimizado para ejecutarse en la NPU de los chipsets Snapdragon y Dragonwing mediante el runtime QNN de Qualcomm AI Engine Direct.
 
-El modelo se distribuye con pesos preexportados en formatos ONNX, QNN_DLC y TFLITE, listos para desplegarse en dispositivos Android o en sistemas embebidos basados en Qualcomm. Con 6,19 millones de parámetros y un tamaño de solo 23,6 MB en precisión float, está pensado para aplicaciones de visión por computador en el borde, donde la latencia y el consumo de recursos son críticos. Su licencia BSD-3-Clause permite uso comercial sin restricciones significativas.
+El modelo se distribuye como artefactos preexportados (ONNX, QNN_DLC y TFLITE) en precisiones float, w8a16 y w8a8, listos para desplegar en dispositivos moviles, IoT industrial y plataformas embebidas con aceleracion hardware de Qualcomm. Su relevancia actual radica en la demanda de vision artificial en el borde (edge) para seguridad laboral: detectar cascos, chalecos y otra proteccion sin depender de la nube, con latencias inferiores al milisegundo en los chipsets mas recientes.
 
-La relevancia de este modelo radica en su enfoque específico para seguridad laboral: permite monitorizar el cumplimiento de normativas de EPI en entornos industriales, obras de construcción o plantas de fabricación, con una precisión y velocidad suficientes para funcionar en tiempo real sobre hardware de bajo consumo.
+La ficha se basa exclusivamente en la model card publicada en Hugging Face y en los resultados de rendimiento que Qualcomm reporta para distintos SoCs. No se dispone de informacion sobre el dataset de entrenamiento, los benchmarks de precision (mAP) ni los idiomas soportados, por lo que esos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal convolucional para detección de objetos (arquitectura propietaria de Qualcomm, no especificada públicamente) |
+| Arquitectura | Gear Guard Net (detector de objetos, diseno propio de Qualcomm) |
 | Parametros totales | 6,19 M |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de visión) |
-| Tipos de cuantizacion | float32, w8a16, w8a8 |
-| Idiomas soportados | No aplica (modelo de visión) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision) |
+| Tipos de cuantizacion | float, w8a16, w8a8 |
+| Idiomas soportados | no disponible (modelo de vision, sin componente linguistico) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE |
+| Formato de pesos | ONNX, QNN_DLC, TFLITE (artefactos preexportados); PyTorch como libreria base |
+| Resolucion de entrada | 320x192 |
+| Clases de salida | 2 |
+| Tamano del modelo (float) | 23,6 MB |
+| Tamano del modelo (w8a16) | 6,65 MB |
+| Tamano del modelo (w8a8) | 6,23 MB |
+| Tamano del repositorio | 2,4 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta de PPE-Detection no se detalla en la documentación pública. Se trata de un detector de objetos de una sola etapa, probablemente basado en una red troncal convolucional, aunque Qualcomm no ha revelado el diseño concreto. El modelo fue entrenado por Qualcomm sobre un dataset propietario que contiene imágenes de personas con y sin EPI, con anotaciones para las clases casco y chaleco. No se han publicado detalles sobre el número de imágenes, el proceso de aumento de datos ni si se utilizaron técnicas como aprendizaje por transferencia o ajuste fino.
+La model card indica que la arquitectura fue desarrollada por Qualcomm bajo el nombre Gear Guard Net, pero no detalla si se trata de un detector de una etapa (tipo YOLO o SSD) o de dos etapas, ni especifica el backbone, el mecanismo de atencion o la cabeza de deteccion. Tampoco se documenta el numero de tokens de entrenamiento (no aplica en vision, pero si el volumen de imagenes), la composicion del dataset ni si se emplearon tecnicas de aumento de datos, destilacion o ajuste fino. El unico dato disponible es que el entrenamiento se realizo sobre un dataset propietario de Qualcomm.
 
-La optimización para NPU de Qualcomm es un aspecto central: los pesos se cuantizan a 8 bits (w8a8 o w8a16) para reducir el tamaño y acelerar la inferencia sin pérdidas significativas de precisión. El modelo acepta una resolución de entrada de 320x192 píxeles, lo que contribuye a su baja latencia. No se menciona el uso de técnicas como decodificación especulativa o atención lineal, ya que no es un modelo generativo.
+La innovacion tecnica destacable no esta en la arquitectura del modelo en si, sino en el pipeline de exportacion y optimizacion para hardware Qualcomm: los artefactos QNN_DLC se compilan con QAIRT 2.51 y se ejecutan en la NPU del chipset, con variantes cuantizadas w8a16 y w8a8 que reducen el tamano del modelo de 23,6 MB a 6,23 MB y mejoran la latencia entre un 30 % y un 40 % en los SoCs probados. El modelo se integra en la libreria Qualcomm AI Hub Models (version 0.67.0), que permite reexportar con pesos personalizados, formas de entrada a medida y configuraciones de dispositivo y runtime propias.
 
 ## Capacidades
 
-- Detección de objetos en tiempo real: identifica casco de seguridad y chaleco reflectante en imágenes o vídeo.
-- Inferencia de baja latencia: tiempos de procesamiento de 0,4 a 3,7 ms según el chipset, ejecutándose en la NPU.
-- Soporte para múltiples runtimes: ONNX Runtime, Qualcomm AI Runtime (QAIRT) y TensorFlow Lite.
-- Cuantización flexible: versiones float, w8a16 y w8a8 para equilibrar precisión y rendimiento.
-- Despliegue en dispositivos Android y sistemas embebidos Qualcomm (Snapdragon, Dragonwing).
-- Exportación personalizable mediante la librería Qualcomm AI Hub Models, permitiendo ajustar pesos, formas de entrada y configuraciones de compilación.
+- Deteccion de objetos en tiempo real orientada a la verificacion de equipo de proteccion individual (EPI/PPE) en imagenes.
+- Clasificacion binaria de dos clases de salida (la model card no especifica cuales son; presumiblemente presencia/ausencia de proteccion).
+- Inferencia en el dispositivo (edge) sobre NPU de Qualcomm, sin necesidad de conexion a la nube.
+- Ejecucion en multiples runtimes: ONNX Runtime 1.30.0, QNN (QAIRT 2.51) y TensorFlow Lite.
+- Soporte de cuantizacion post-entrenamiento en w8a16 y w8a8 para reducir huella de memoria y latencia.
+- Exportacion personalizada mediante la libreria Qualcomm AI Hub Models (pesos ajustados, formas de entrada, dispositivos objetivo).
+- No dispone de generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni capacidades multilingues: es un modelo puramente visual de deteccion.
 
 ## Casos de uso
 
-- Monitorización de seguridad en obras de construcción: el modelo puede integrarse en cámaras IP o dispositivos móviles para verificar en tiempo real que los trabajadores llevan casco y chaleco. Su baja latencia permite alertar inmediatamente cuando se detecta una infracción.
-- Control de acceso en plantas industriales: antes de permitir la entrada a una zona de alto riesgo, el sistema captura una imagen del trabajador y ejecuta PPE-Detection para comprobar el uso de EPI. Al ser un modelo ligero, puede ejecutarse en un dispositivo edge sin conexión a la nube.
-- Auditoría de cumplimiento normativo: las grabaciones de vídeo de instalaciones pueden procesarse con este modelo para generar informes automáticos sobre el porcentaje de tiempo en que los empleados usan correctamente el EPI, facilitando la documentación para inspecciones.
-- Robótica móvil en entornos industriales: un robot de vigilancia equipado con una cámara puede utilizar PPE-Detection para navegar y detectar incumplimientos de seguridad, enviando alertas a un centro de control.
-- Aplicaciones de realidad aumentada para formación: superponer indicaciones visuales sobre la imagen de un trabajador para señalar si falta el casco o el chaleco, como herramienta didáctica en simulacros de seguridad.
-- Sistemas de videovigilancia inteligente en almacenes y fábricas: integrar el modelo en un servidor de análisis de vídeo para monitorizar múltiples cámaras y generar eventos cuando se detecta a una persona sin EPI, con tiempos de respuesta inferiores a 10 ms por frame.
+- Monitorizacion de seguridad en obra y planta industrial: el modelo se ejecuta en camaras IP con SoC Snapdragon o Dragonwing y detecta en cada fotograma si los operarios llevan casco o chaleco, con latencias de 0,37 a 2,1 ms segun chipset, lo que permite alertas en tiempo real sin enviar video a la nube.
+- Control de acceso a zonas de riesgo: integrado en tornos o puertas con vision embebida, verifica que el trabajador lleva la proteccion exigida antes de permitir el paso, usando la variante w8a8 de 6,23 MB que cabe en memoria de dispositivos de bajo consumo.
+- Inspeccion en drones industriales: al ser un modelo de 6,19 M de parametros y 23,6 MB en float, puede embarcarse en payloads con Snapdragon X Elite o Dragonwing IQ-9075 para sobrevolar instalaciones y auditar el cumplimiento de EPI en zonas de dificil acceso.
+- Auditoria de grabaciones de videovigilancia: procesamiento por lotes de archivos de video en un servidor con acelerador Qualcomm Cloud AI o en un PC con Snapdragon X Elite, usando ONNX float para maximizar precision y revisar cumplimiento normativo a posteriori.
+- Wearables y cascos inteligentes: la variante TFLITE w8a8 (6,23 MB) permite ejecutar el detector en un casco con camara integrada y SoC de bajo consumo, alertando al propio trabajador cuando se lo quita en zona de riesgo.
+- Analitica de cumplimiento para EHS (Environment, Health and Safety): el modelo puede alimentar dashboards que agreguen detecciones por turno y planta, exportando las cajas delimitadoras a un backend para calcular tasas de cumplimiento y generar informes regulatorios.
+- Prototipado rapido con Qualcomm AI Hub Workbench: los equipos de desarrollo pueden subir el modelo a la plataforma alojada de Qualcomm y perfilarlo en dispositivos reales antes de comprometerse con un hardware concreto, gracias a los artefactos preexportados y a la API de la libreria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar de detección de objetos (como mAP o COCO) en la información disponible. Sin embargo, Qualcomm proporciona mediciones de latencia y memoria para diferentes chipsets, que se resumen a continuación. Estos datos provienen de la model card oficial y reflejan el rendimiento en condiciones de referencia.
+La model card no publica metricas de precision (mAP, recall, precision por clase) sobre un conjunto de validacion publico. Si se publican latencias de inferencia y rangos de memoria pico por chipset y runtime. Se reproducen a continuacion los datos disponibles para ONNX en precision float y w8a16:
 
-| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) | Unidad de cómputo |
-|---|---|---|---|---|---|
-| Snapdragon X2 Elite | ONNX | float | 0,578 | 2 | NPU |
-| Snapdragon X Elite | ONNX | float | 1,286 | 13 | NPU |
-| Snapdragon 8 Gen 3 Mobile | ONNX | float | 0,913 | 0-78 | NPU |
-| Snapdragon 8 Gen 1 Mobile | ONNX | float | 2,263 | 1-53 | NPU |
-| Snapdragon 8 Elite Mobile | ONNX | float | 0,676 | 0-58 | NPU |
-| Snapdragon 8 Elite Gen 5 Mobile | ONNX | float | 0,535 | 0-60 | NPU |
-| Snapdragon X2 Elite | ONNX | w8a16 | 0,401 | 1 | NPU |
-| Snapdragon X Elite | ONNX | w8a16 | 0,939 | 6 | NPU |
-| Snapdragon 8 Gen 3 Mobile | ONNX | w8a16 | 0,595 | 0-67 | NPU |
-| Snapdragon 8 Gen 1 Mobile | ONNX | w8a16 | 1,265 | 0-66 | NPU |
-| Qualcomm Dragonwing QCS6490 | ONNX | w8a16 | 3,757 | 0-3 | NPU |
-| Qualcomm Dragonwing IQ-8275 | ONNX | w8a16 | 0,902 | 0-4 | NPU |
-| Qualcomm Dragonwing QCS8550 (Proxy) | ONNX | w8a16 | 0,907 | 0-10 | NPU |
+| Chipset | Precision | Inferencia (ms) | Memoria pico (MB) | Unidad de computo |
+|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | float | 0,508 | 1 - 54 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | float | 0,554 | 0 - 56 | NPU |
+| Snapdragon 8 Elite Gen 6 Mobile | float | 0,662 | 0 - 45 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | float | 0,676 | 0 - 56 | NPU |
+| Dragonwing Q-8750 | float | 0,676 | 0 - 56 | NPU |
+| Snapdragon 8 Gen 3 Mobile | float | 0,863 | 0 - 69 | NPU |
+| Dragonwing QCS8550 (Proxy) | float | 1,253 | 0 - 72 | NPU |
+| Snapdragon X Elite | float | 1,297 | 13 - 13 | NPU |
+| Dragonwing IQ-X7181 | float | 1,297 | 13 - 13 | NPU |
+| Dragonwing IQ-9075 | float | 1,726 | 1 - 4 | NPU |
+| Dragonwing IQ-8275 | float | 1,820 | 1 - 5 | NPU |
+| Snapdragon 8 Gen 1 Mobile | float | 2,123 | 1 - 57 | NPU |
+| QCS8450 | float | 2,123 | 1 - 57 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | w8a16 | 0,370 | 0 - 46 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | w8a16 | 0,450 | 0 - 50 | NPU |
+| Snapdragon X2 Elite | w8a16 | 0,394 | 1 - 1 | NPU |
+| Snapdragon X Elite | w8a16 | 0,938 | 6 - 6 | NPU |
+| Snapdragon 8 Gen 3 Mobile | w8a16 | 0,579 | no disponible en el extracto | NPU |
 
-La tabla completa con todas las variantes (incluyendo w8a8 y QNN_DLC) está disponible en la model card de Hugging Face. En general, las versiones cuantizadas a 8 bits reducen la latencia entre un 20% y un 40% respecto a float, con una disminución de memoria significativa.
+La cuantizacion w8a16 reduce la latencia entre un 20 % y un 30 % respecto a float en los SoCs comparables (por ejemplo, 0,554 ms a 0,370 ms en Snapdragon 8 Elite Gen 5 For Galaxy Mobile). El resto de combinaciones runtime/chipset estan disponibles en la pagina de Qualcomm AI Hub del modelo. No se han publicado resultados de benchmarks de precision (mAP, F1) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado para ejecutarse en la NPU de chipsets Qualcomm. Los tiempos de inferencia listados se obtuvieron en dispositivos con Snapdragon 8 Gen 1, 8 Gen 3, 8 Elite, X Elite, X2 Elite y varias plataformas Dragonwing (QCS6490, QCS8450, QCS8550, IQ-8275, IQ-9075, IQ-X7181, Q-8750).
-- La memoria pico durante la inferencia varía entre 1 MB y 78 MB según el chipset y la precisión, lo que permite su uso en sistemas con recursos muy limitados.
-- No se requieren GPUs dedicadas; el modelo se ejecuta en NPU integradas en SoCs móviles o embebidos. Para pruebas en PC, se puede ejecutar en CPU o GPU mediante ONNX Runtime, aunque no se proporcionan métricas de rendimiento en esos entornos.
-- Opciones de despliegue: ONNX Runtime con el ejecutor QAIRT, Qualcomm AI Hub Workbench para compilar y perfilar, o TensorFlow Lite para aplicaciones Android.
-- La latencia típica en dispositivos de gama alta (Snapdragon 8 Gen 3 o superior) es inferior a 1 ms, lo que permite procesar más de 1000 frames por segundo en teoría, aunque en la práctica el cuello de botella suele estar en la captura de imagen.
+- VRAM estimada para inferencia: no aplica en el sentido tradicional; el modelo se ejecuta en NPU con memoria pico entre 0 y 72 MB segun chipset y precision. En float ocupa 23,6 MB de pesos; en w8a8, 6,23 MB.
+- GPU recomendadas: no se documenta soporte GPU; el modelo esta optimizado para NPU de Qualcomm (Hexagon) via QNN. En PC con Snapdragon X Elite se ejecuta en NPU.
+- Cabe en GPU consumer: no es el caso de uso; el objetivo son SoCs moviles y embebidos. En una RTX 4090 se podria ejecutar via ONNX Runtime en CPU/GPU, pero no es la ruta soportada ni optimizada.
+- Opciones de despliegue: ONNX Runtime 1.30.0, QNN (QAIRT 2.51), TensorFlow Lite, y la libreria Qualcomm AI Hub Models para exportacion personalizada. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un detector visual).
+- Latencia y throughput: latencias de 0,37 a 2,12 ms por inferencia en NPU de los SoCs listados; a 0,37 ms se superan las 2.700 inferencias por segundo en teoria, aunque el throughput real dependera del pipeline de captura y preprocesado.
 
 ## Comparativa con modelos similares
 
-No se dispone de información pública sobre modelos comparables de detección de EPI con las mismas características (mismo tamaño, misma licencia y optimización para Qualcomm). Existen modelos genéricos de detección de objetos como YOLOv8n o SSD MobileNet que podrían adaptarse para esta tarea, pero no se han publicado comparativas directas con PPE-Detection. Por tanto, no se puede establecer una comparación cuantitativa fiable.
+No se dispone de datos de benchmarks de precision del modelo, por lo que una comparativa cuantitativa con alternativas como YOLOv8n, YOLOv5n o MobileNet-SSD no es posible con la informacion proporcionada. A continuacion se comparan solo los atributos documentados:
+
+| Modelo | Parametros | Entrada | Licencia | Formatos | Optimizado para NPU Qualcomm |
+|---|---|---|---|---|---|
+| PPE-Detection (Gear Guard Net) | 6,19 M | 320x192 | BSD-3-Clause | ONNX, QNN_DLC, TFLITE | Si (QAIRT 2.51) |
+| YOLOv8n | no disponible en esta ficha | no disponible | AGPL-3.0 | PyTorch, ONNX | No de forma nativa |
+| YOLOv5n | no disponible en esta ficha | no disponible | GPL-3.0 | PyTorch, ONNX | No de forma nativa |
+| MobileNet-SSD | no disponible en esta ficha | no disponible | Apache-2.0 | Caffe, TFLITE | Parcial via TFLITE |
+
+La ventaja diferencial de PPE-Detection es la disponibilidad de artefactos QNN_DLC precompilados y perfilados para una amplia gama de SoCs Qualcomm, algo que las alternativas genericas no ofrecen. La desventaja es la falta de metricas de precision publicas y el sesgo hacia un caso de uso muy concreto (EPI).
 
 ## Limitaciones y advertencias
 
-- El modelo fue entrenado con un dataset propietario de Qualcomm, por lo que su rendimiento en entornos muy diferentes a los de entrenamiento (iluminación extrema, ángulos inusuales, oclusiones severas) puede degradarse.
-- Solo detecta dos clases: casco y chaleco. No cubre otros EPI como gafas, guantes o protectores auditivos, aunque Qualcomm ha indicado que planea añadir más clases en el futuro.
-- La resolución de entrada es baja (320x192), lo que limita la detección de objetos pequeños o distantes. Para aplicaciones que requieran mayor detalle, puede ser necesario un modelo con mayor resolución.
-- No se han publicado métricas de precisión (mAP, recall, precisión) en la documentación oficial, lo que dificulta evaluar su calidad en comparación con alternativas.
-- El modelo está optimizado para hardware Qualcomm; su rendimiento en otras plataformas (x86, ARM de otros fabricantes) no está garantizado y puede requerir conversiones adicionales.
-- La licencia BSD-3-Clause permite uso comercial, pero el dataset de entrenamiento es propietario, por lo que no se pueden redistribuir los datos ni reentrenar el modelo con ellos sin permiso de Qualcomm.
+- No se publican metricas de precision (mAP, recall, F1) ni el proceso de validacion, por lo que no es posible evaluar la calidad de deteccion antes de desplegar.
+- El dataset de entrenamiento es propietario y no se documenta su composicion, cobertura demografica, condiciones de iluminacion ni variedad de EPI; existe riesgo de sesgo hacia los escenarios representados en dicho dataset.
+- El modelo tiene solo dos clases de salida y la model card no especifica cuales son; hay que verificar en la implementacion de referencia antes de usarlo en produccion.
+- No se documentan los idiomas ni si el modelo incluye metadatos o etiquetas en algun idioma concreto.
+- Riesgo de alucinacion en el sentido de falsos positivos y falsos negativos: sin metricas publicadas no se puede acotar; en un contexto de seguridad laboral, un falso negativo (no detectar la ausencia de casco) tiene consecuencias graves.
+- La licencia BSD-3-Clause permite uso comercial con atribucion, pero el modelo se distribuye "tal cual" y Qualcomm no ofrece garantias; conviene revisar los terminos de QAIRT y de los runtimes de terceros (ONNX Runtime, TensorFlow Lite).
+- El modelo esta optimizado para NPU Qualcomm; ejecutarlo en otros hardware (GPU NVIDIA, CPU x86) es posible via ONNX, pero sin las optimizaciones ni las latencias reportadas.
+- El repositorio ocupa 2,4 GB por incluir todos los artefactos preexportados; conviene descargar solo la variante necesaria.
+- No hay informacion sobre el mantenimiento a largo plazo ni sobre versiones futuras mas alla de la version 0.67.0 de la libreria referenciada.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/qualcomm/PPE-Detection)
-- [Página del modelo en Qualcomm AI Hub](https://aihub.qualcomm.com/models/gear_guard_net)
-- [Repositorio de Qualcomm AI Hub Models (código de exportación)](https://github.com/qualcomm/ai-hub-models/blob/v0.61.0/src/qai_hub_models/models/gear_guard_net)
-- [Blog de Qualcomm sobre modelos personalizados](https://www.qualcomm.com/developer/blog/2024/11/introducing-qualcomm-custom-built-ai-models-qualcomm-ai-hub)
-- [Proyecto de despliegue en Rubik Pi 3 con Edge Impulse](https://www.qualcomm.com/developer/project/deploy-on-device-edge-impulse-ai-on-rubik-pi-3-safety-vision-ppe-object-detection)
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/PPE-Detection
+- Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/gear_guard_net
+- Repositorio Qualcomm AI Hub Models (Gear Guard Net): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/gear_guard_net
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Registro en Qualcomm AI Hub: https://myaccount.qualcomm.com/signup
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-onnx-float.zip
+- Descarga ONNX w8a16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-onnx-w8a16.zip
+- Descarga ONNX w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-onnx-w8a8.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-qnn_dlc-float.zip
+- Descarga QNN_DLC w8a16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-qnn_dlc-w8a16.zip
+- Descarga QNN_DLC w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-qnn_dlc-w8a8.zip
+- Descarga TFLITE float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-tflite-float.zip
+- Descarga TFLITE w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/releases/v0.67.0/gear_guard_net-tflite-w8a8.zip
+- Demo visual: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/gear_guard_net/web-assets/model_demo.png

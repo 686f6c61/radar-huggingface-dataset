@@ -49,6 +49,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Typed decisions (choice, yes/no)",
+      "dataset": "Decision Index 0.4.1 leaderboard (maintainers' private tests, board data of 2026-11-06)",
+      "metric": "Full score (4th of 275, ranked",
+      "value": 71.61
+    },
+    {
+      "task": "Typed decisions (choice, yes/no)",
+      "dataset": "Decision Index 0.4.1 leaderboard (maintainers' private tests, board data of 2026-11-06)",
+      "metric": "Private tests, same skills (60% of Full; on the public scale, as shown on the board)",
+      "value": 66.07
+    },
+    {
+      "task": "Typed decisions (choice, yes/no)",
+      "dataset": "Decision Index 0.4.1 leaderboard (maintainers' private tests, board data of 2026-11-06)",
+      "metric": "Private tasks, new domains (40% of Full; on the public scale, as shown on the board; 2nd of 275)",
+      "value": 79.92
+    },
+    {
+      "task": "Typed decisions (choice, yes/no)",
+      "dataset": "Decision Index 0.3 public suite (140,178 scored requests)",
+      "metric": "Public index, chance-corrected (own run, official kit and scorer)",
+      "value": 68.99
+    }
+  ],
   "sources": []
 }

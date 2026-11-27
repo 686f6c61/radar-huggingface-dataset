@@ -2,112 +2,97 @@
 
 ## Resumen
 
-MediaPipe-ObjectDetector-SSD-MobileNet-V2 es un modelo de detección de objetos empaquetado por la comunidad `litert-community` para su uso con la tarea `ObjectDetector` de MediaPipe y con el runtime LiteRT (anteriormente TensorFlow Lite). Combina una columna vertebral MobileNetV2 con una cabeza de detección SSD a una resolución de entrada de 256 x 256 píxeles, y está entrenado sobre el conjunto de datos COCO (1,5 millones de instancias, 80 clases efectivas sobre 90 posiciones de etiqueta COCO). Su propósito es ofrecer detección de objetos de baja latencia y bajo consumo de memoria en dispositivos móviles y embebidos.
+MediaPipe-ObjectDetector-SSD-MobileNet-V2 es un detector de objetos ligeros empaquetado para la tarea `ObjectDetector` de MediaPipe y el runtime LiteRT (anteriormente TensorFlow Lite). Combina una columna vertebral MobileNetV2 con una cabeza de deteccion SSD Single Shot MultiBox Detector, operando sobre imagenes de entrada de 256 x 256 pixeles RGB y devolviendo hasta 12.276 cajas candidatas con sus puntuaciones sobre las 90 clases del dataset COCO. Lo publica la organizacion comunitaria `litert-community` en Hugging Face, con pesos derivados de las rutas oficiales de Google AI Edge.
 
-El modelo se distribuye en dos variantes de precisión: `ssd_mobilenet_v2_float16.tflite` (5,92 MB) y `ssd_mobilenet_v2_float32.tflite` (11,32 MB). Ambos ficheros incluyen metadatos `TFLITE_METADATA` con el nombre de tarea `ObjectDetector`, versión 1 y autoría de MediaPipe, además de un fichero de etiquetas embebido de 91 líneas (índice 0 reservado para `background`, seguido de las 90 posiciones COCO). Se acompaña además un `labelmap.txt` independiente de 90 líneas.
+El modelo resuelve deteccion de objetos en tiempo real en dispositivos con recursos limitados: moviles Android e iOS, navegador y sistemas embebidos. Frente a alternativas como EfficientDet-Lite, prioriza latencia y huella de memoria sobre precision, lo que lo hace adecuado para pipelines de vision en el borde donde el coste computacional es la restriccion dominante. Se distribuye en dos variantes de precision, float16 (5,92 MB) y float32 (11,32 MB), ambas con metadatos `TFLITE_METADATA` embebidos y un fichero `labels.txt` de 91 lineas asociado.
 
-Es relevante ahora porque representa el formato de distribución moderno de los modelos de visión de Google para el ecosistema LiteRT y MediaPipe Tasks, con soporte homogéneo para Android, iOS, web, Python y Flutter. No es un modelo de lenguaje: es un detector de objetos convolucional clásico, orientado a inferencia en el borde, no a generación de texto ni a razonamiento.
+Es relevante ahora porque LiteRT y MediaPipe Tasks se han consolidado como la via estandar para desplegar vision por computador en movil sin dependencias de servidor, y porque el modelo llega ya empaquetado con etiquetas y metadatos listos para consumir desde Python, Android, iOS, Web y Flutter. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | SSD con columna vertebral MobileNetV2 y cabeza de detección |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada de 256 x 256 x 3) |
-| Tipos de cuantización | float16 y float32 (dos ficheros TFLite) |
-| Idiomas soportados | no disponible (no es un modelo lingüístico; etiquetas en inglés) |
+| Arquitectura | SSD (Single Shot MultiBox Detector) con backbone MobileNetV2 y cabeza de deteccion convolucional |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision, entrada fija de 256 x 256 x 3) |
+| Tipos de cuantizacion | float16 (5,92 MB) y float32 (11,32 MB) |
+| Idiomas soportados | no disponible (modelo de vision, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`.tflite`) con metadatos `TFLITE_METADATA` |
-
-Otras especificaciones relevantes:
-
-| Parámetro | Valor |
-|---|---|
-| Resolución de entrada | 256 x 256 RGB, tensor `[1, 256, 256, 3]` float32 |
-| Normalización | `mean=[127.5]`, `std=[127.5]` |
-| Salida de cajas | `[1, 12276, 4]` float32 |
-| Salida de puntuaciones | `[1, 12276, 91]` float32 |
-| Clases | 80 clases COCO efectivas sobre 91 posiciones (índice 0 = background) |
-| Dataset de entrenamiento | COCO (1,5 millones de instancias) |
-| Tamaño float16 | 5,92 MB (5.918.749 bytes) |
-| Tamaño float32 | 11,32 MB (11.316.189 bytes) |
-| Runtime | LiteRT / MediaPipe Tasks |
-| Plataformas | Android, iOS, web, Python, Flutter |
+| Formato de pesos | TFLite (`.tflite`) con `TFLITE_METADATA` embebido y `labels.txt` asociado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el esquema SSD (Single Shot MultiBox Detector, arXiv:1512.02325) con MobileNetV2 como extractor de características. La entrada se fija a 256 x 256 píxeles RGB y se normaliza con media y desviación de 127,5. La red produce 12.276 propuestas de caja, cada una con cuatro coordenadas y 91 puntuaciones de clase (la posición 0 corresponde a `background` y las 90 restantes a las posiciones de etiqueta COCO). El diseño prioriza latencia y huella de memoria reducidas frente a alternativas como EfficientDet-Lite, lo que se traduce en un modelo de menos de 12 MB en float32 y menos de 6 MB en float16.
+El modelo sigue la arquitectura SSD descrita en el paper arXiv:1512.02325 (Liu et al., 2015), con una columna vertebral MobileNetV2 que extrae caracteristicas a multiples escalas y una cabeza SSD que predice simultaneamente offsets de cajas y puntuaciones por clase. La entrada es un tensor `[1, 256, 256, 3]` en float32 con normalizacion `mean=[127.5]`, `std=[127.5]`. Las salidas son dos tensores: `StatefulPartitionedCall:0` de forma `[1, 12276, 4]` con las coordenadas de las cajas y `StatefulPartitionedCall:1` de forma `[1, 12276, 91]` con las puntuaciones por clase.
 
-El entrenamiento se realizó sobre COCO, con 1,5 millones de instancias anotadas. La información disponible no detalla el número de tokens (no aplica), la composición exacta del dataset más allá de COCO, ni si hubo ajuste fino adicional, destilación o técnicas de aumento de datos específicas. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal, que no aplican a este tipo de modelo convolucional. La innovación práctica reside en el empaquetado: metadatos `TFLITE_METADATA` embebidos con nombre de tarea, versión y fichero de etiquetas asociado, lo que permite a MediaPipe Tasks cargar el modelo sin configuración adicional de etiquetas.
+El entrenamiento se realizo sobre COCO, con aproximadamente 1,5 millones de instancias y 80 clases efectivas mapeadas sobre 90 slots de etiqueta COCO. El fichero de etiquetas embebido tiene 91 lineas: el indice 0 corresponde a `background` y los indices 1 a 90 a las clases COCO. El repositorio incluye ademas un `labelmap.txt` oficial de MediaPipe de 90 lineas (`person` a `toothbrush`) para referencia independiente. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento (no aplica), la composicion completa del dataset ni si hubo etapas de ajuste fino adicionales mas alla del entrenamiento estandar sobre COCO.
+
+La innovacion tecnica principal es el empaquetado: los ficheros incluyen metadatos `TFLITE_METADATA` (nombre `ObjectDetector`, version 1, autor `MediaPipe`) con el fichero `labels.txt` empaquetado como archivo asociado, lo que permite a MediaPipe Tasks cargar el modelo y resolver etiquetas sin configuracion manual. La variante float16 reduce el tamano a la mitad (5,92 MB frente a 11,32 MB) manteniendo la entrada en float32, lo que la hace apta para despliegue en movil con aceleracion por GPU o NPU.
 
 ## Capacidades
 
-- Detección de objetos en imágenes estáticas en modo `IMAGE`.
-- Detección sobre flujos de vídeo en modo `VIDEO` con seguimiento entre fotogramas (según la API de MediaPipe Tasks).
-- Detección en tiempo real sobre stream de cámara en modo `LIVE_STREAM`.
-- Clasificación en 80 clases COCO (persona, vehículos, animales, utensilios, etc.) sobre 91 posiciones de etiqueta.
-- Salida de cajas delimitadoras con coordenadas y puntuación de confianza por detección.
-- Umbral de puntuación configurable (`score_threshold`) y número máximo de resultados (`max_results`).
-- Ejecución en el dispositivo sin conexión a red, en Android, iOS, web, Python y Flutter.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
-- No dispone de capacidades multilingües ni de modo de pensamiento (`thinking mode`); las etiquetas de clase están en inglés.
-- No soporta visión multimodal en el sentido de un modelo de lenguaje con visión; es exclusivamente un detector.
+- Deteccion de objetos en imagenes estaticas en modo `IMAGE` de MediaPipe Tasks.
+- Deteccion en flujo de video en modo `VIDEO` con seguimiento entre fotogramas.
+- Deteccion en tiempo real sobre stream de camara en modo `LIVE_STREAM`.
+- Clasificacion sobre 90 clases COCO (persona, vehiculos, animales, utensilios, alimentos, etc.).
+- Salida de hasta 12.276 cajas candidatas con coordenadas y puntuaciones, filtrables por umbral (`score_threshold`) y numero maximo de resultados (`max_results`).
+- Ejecucion en Android, iOS, Web (JavaScript/TypeScript), Python y Flutter mediante las librerias MediaPipe Tasks y LiteRT.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente visual.
+- No dispone de modo thinking, vision multimodal con lenguaje, audio ni generacion de texto.
 
 ## Casos de uso
 
-- **Detección de personas y objetos en apps móviles**: integrado mediante MediaPipe Tasks en Android (Kotlin/Java) o iOS (Swift), el modelo procesa fotogramas de cámara a 256 x 256 y devuelve cajas con puntuación; su tamaño de 5,92 MB en float16 permite incluirlo en el binario de la app sin descarga adicional.
-- **Moderación de contenido visual en el borde**: filtrado previo de imágenes subidas por usuarios para detectar categorías COCO relevantes (personas, vehículos, animales) antes de enviarlas al servidor, reduciendo ancho de banda y coste de cómputo en la nube.
-- **Automatización de inventario o recuento**: en aplicaciones de retail o logística, el detector puede contar objetos de clases COCO en imágenes capturadas por el dispositivo, con umbral de confianza ajustable según la tolerancia a falsos positivos.
-- **Asistencia a la conducción de bajo coste**: detección de peatones y vehículos en dashcams o dispositivos embebidos con poca memoria, donde el tamaño reducido del modelo y la inferencia local son requisitos críticos.
-- **Procesamiento por lotes en Python**: uso del modelo desde Python con `mediapipe` y `huggingface_hub` para anotar datasets de imágenes o generar etiquetas preliminares en pipelines de visión por computador.
-- **Aplicaciones web interactivas**: uso desde JavaScript en el navegador mediante MediaPipe Web, con el modelo cargado como recurso estático, para demos o herramientas de anotación que funcionan sin backend.
-- **Prototipado rápido en Flutter**: integración multiplataforma en apps Flutter para validar flujos de detección antes de invertir en un modelo personalizado o en un pipeline más complejo.
+- **Deteccion de personas en tiempo real en apps moviles**: integrado via MediaPipe Tasks en Android o iOS, el modelo procesa fotogramas de camara a 256 x 256 y devuelve cajas de la clase `person`, adecuado para apps de videollamada, fitness o control de aforo con latencia baja en dispositivos de gama media.
+- **Moderacion de contenido visual en el borde**: clasificacion de imagenes subidas por usuarios para detectar categorias sensibles (armas, alcohol, determinadas clases COCO) antes de enviarlas al servidor, reduciendo coste de ancho de banda y cumpliendo requisitos de privacidad al no salir la imagen del dispositivo.
+- **Automatizacion de inventario en retail**: deteccion de productos y estanterias en capturas de camara de terminales de mano, aprovechando las clases COCO de utensilios y alimentos para inventario aproximado o alertas de reposicion.
+- **Asistencia a la conduccion y ADAS de bajo coste**: deteccion de vehiculos, peatones y senales de trafico en dashcams o sistemas embebidos, con la variante float16 para caber en SoC con recursos limitados y la float32 cuando se requiere mayor fidelidad numerica.
+- **Procesamiento de imagenes por lotes en Python**: uso en scripts de anotacion automatica o preetiquetado de datasets, cargando el modelo con `mediapipe` y `huggingface_hub` y aplicando umbrales configurables para generar cajas candidatas que un humano revisa despues.
+- **Aplicaciones web de vision sin backend**: despliegue en navegador mediante la API de MediaPipe Tasks Web (TypeScript) para demos interactivas, filtros de camara o herramientas de accesibilidad que detectan objetos en el flujo de video del usuario sin enviar datos a un servidor.
+- **Robots y sistemas embebidos**: integracion en plataformas tipo Raspberry Pi o placas con acelerador LiteRT para navegacion reactiva, evitacion de obstaculos o manipulacion simple basada en las clases COCO detectadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de mAP, latencia ni throughput para este modelo en particular, ni comparaciones numéricas con EfficientDet-Lite u otras variantes.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de mAP, latencia ni throughput para este empaquetado concreto. El paper de referencia de SSD (arXiv:1512.02325) reporta resultados para la familia SSD original, pero no para esta variante MobileNetV2 a 256 x 256 empaquetada por `litert-community`, por lo que no se trasladan aqui cifras que no esten verificadas para este artefacto.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: no aplica en el sentido de GPU dedicada; el modelo está diseñado para CPU, GPU móvil o aceleradores NPU/DSP a través de LiteRT. El fichero float16 ocupa 5,92 MB y el float32 11,32 MB, por lo que la huella de memoria es mínima incluso en dispositivos con 1-2 GB de RAM.
-- **GPU recomendadas**: no se especifican. En escritorio puede ejecutarse en CPU sin problema; en móvil se beneficia de los delegados de GPU de LiteRT (GPU delegate) si están disponibles.
-- **¿Cabe en GPU de consumo?**: sí, con enorme margen; cualquier GPU de consumo puede ejecutarlo, aunque el modelo está pensado para ejecución en el dispositivo, no para servidores con GPU.
-- **Opciones de despliegue**: MediaPipe Tasks (Python, Android, iOS, web, Flutter), LiteRT (antes TensorFlow Lite) con intérprete nativo o delegados de GPU/NNAPI/XNNPACK. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- **Latencia y throughput estimados**: no disponibles en la información proporcionada. La model card no publica cifras de latencia por plataforma.
+- **VRAM/RAM estimada para inferencia**: el modelo ocupa 5,92 MB (float16) o 11,32 MB (float32) en disco; en memoria, la entrada de 256 x 256 x 3 float32 son aproximadamente 786 KB y las salidas suman alrededor de 4,4 MB (12276 x 4 y 12276 x 91 en float32), por lo que el pico de memoria es del orden de decenas de MB incluyendo buffers intermedios.
+- **GPU recomendadas**: no requiere GPU dedicada; se ejecuta en CPU de movil, GPU integrada (Adreno, Mali, Apple GPU) o NPU via delegados LiteRT. En escritorio puede usar cualquier GPU moderna con soporte de delegado GPU de LiteRT.
+- **Compatibilidad con GPU de consumo**: si, cualquier GPU de consumo es sobredimensionada; el modelo esta pensado para ejecutarse en hardware movil y embebido.
+- **Opciones de despliegue**: MediaPipe Tasks (Python, Android, iOS, Web, Flutter), LiteRT runtime, delegados GPU/NNAPI/Core ML/XNNPACK. No aplica vLLM, llama.cpp, Ollama ni TGI, que son para modelos de lenguaje.
+- **Latencia y throughput**: no disponibles en la informacion proporcionada. La resolucion de entrada de 256 x 256 y el backbone MobileNetV2 sugieren latencias del orden de milisegundos en moviles modernos, pero no se aportan cifras verificadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Entrada | Clases | Tamaño | Licencia | Formato |
+| Modelo | Arquitectura | Entrada | Clases | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MediaPipe SSD-MobileNet-V2 (este) | SSD + MobileNetV2 | 256 x 256 | 80 COCO (91 posiciones) | 5,92 MB fp16 / 11,32 MB fp32 | Apache 2.0 | TFLite |
-| EfficientDet-Lite (familia MediaPipe) | EfficientDet-Lite | variable (según variante) | 90 COCO | no disponible en esta ficha | Apache 2.0 | TFLite |
-| SSD-MobileNet-V1 (MediaPipe) | SSD + MobileNetV1 | no disponible | 90 COCO | no disponible en esta ficha | Apache 2.0 | TFLite |
+| MediaPipe-ObjectDetector-SSD-MobileNet-V2 (este) | SSD + MobileNetV2 | 256 x 256 | 90 COCO | 5,92 MB (fp16) / 11,32 MB (fp32) | Apache 2.0 | Hugging Face, LiteRT, MediaPipe Tasks |
+| EfficientDet-Lite (familia MediaPipe) | EfficientDet-Lite | variable (320, 640, etc.) | 90 COCO | mayor que SSD-MobileNetV2 segun variante | Apache 2.0 | MediaPipe Tasks, LiteRT |
+| SSD-MobileNet-V1 (MediaPipe) | SSD + MobileNetV1 | 300 x 300 | 90 COCO | similar o mayor | Apache 2.0 | MediaPipe Tasks, LiteRT |
+| YOLO-family (p. ej. YOLOv8n) | YOLO | 640 x 640 | 80 COCO | ~6 MB | AGPL-3.0 o licencia comercial | Ultralytics, ONNX, TFLite |
 
-La información disponible no incluye métricas de rendimiento comparadas (mAP, latencia) entre estas alternativas, por lo que la comparación se limita a arquitectura, formato y licencia. La model card indica explícitamente que SSD-MobileNet-V2 prioriza menor latencia y huella de memoria frente a EfficientDet-Lite, pero sin cifras que lo cuantifiquen.
+La comparativa se limita a caracteristicas estructurales; no se dispone de datos de mAP ni latencia para este empaquetado concreto que permitan una comparacion cuantitativa fiable. La eleccion entre SSD-MobileNetV2 y EfficientDet-Lite depende del equilibrio precision/latencia requerido, y frente a YOLO-family la licencia Apache 2.0 de este modelo es una ventaja para uso comercial sin obligaciones copyleft.
 
 ## Limitaciones y advertencias
 
-- **Sesgos del dataset**: entrenado sobre COCO, hereda los sesgos de representación de dicho conjunto (predominio de ciertas categorías, contextos y geografías). Las clases no representadas o infrarrepresentadas tendrán peor rendimiento.
-- **Riesgo de falsos positivos y negativos**: el umbral de puntuación es configurable, pero no se publican curvas precisión-recall ni mAP por clase; en producción conviene calibrar `score_threshold` con datos propios.
-- **Limitación de resolución**: la entrada fija de 256 x 256 limita la detección de objetos pequeños o muy alejados en la imagen.
-- **Limitación de clases**: solo detecta las 80 clases COCO; no es extensible a clases personalizadas sin reentrenamiento.
-- **Idioma**: las etiquetas están en inglés; no hay soporte multilingüe de etiquetas en el modelo.
-- **Licencia**: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del dataset COCO y de los metadatos de MediaPipe para atribuciones.
-- **Metadatos y compatibilidad**: el modelo depende de la API de MediaPipe Tasks y del runtime LiteRT; cambios de versión en estas librerías pueden afectar a la carga de metadatos y etiquetas.
-- **No es un modelo generativo**: no debe evaluarse con criterios de LLM (alucinación textual, contexto, tool calling); sus fallos son de detección, no de generación.
-- **Datos incompletos**: no se publican parámetros totales, latencia, throughput ni métricas de precisión, lo que dificulta una evaluación cuantitativa previa al despliegue.
+- **Clases limitadas a COCO**: solo detecta las 90 clases del dataset COCO; cualquier objeto fuera de ese vocabulario no sera reconocido.
+- **Resolucion de entrada fija**: 256 x 256, lo que limita la deteccion de objetos muy pequenos o muy lejanos en imagenes de alta resolucion.
+- **Precision inferior a detectores mas pesados**: el diseno prioriza latencia sobre precision; en escenas densas o con oclusiones puede fallar o producir cajas imprecisas.
+- **Sesgos del dataset COCO**: COCO no es representativo de todas las poblaciones, condiciones de iluminacion ni contextos geograficos; el modelo hereda los sesgos de muestreo del dataset.
+- **Riesgo de falsos positivos y negativos**: el umbral `score_threshold` debe ajustarse por caso de uso; con umbrales bajos aparecen detecciones espurias y con altos se pierden objetos reales.
+- **Sin capacidades de lenguaje**: no procesa texto, no soporta tool calling, agentes ni razonamiento multi-paso; no debe presentarse como un modelo de proposito general.
+- **Licencia Apache 2.0**: permite uso comercial y modificacion con atribucion; no impone restricciones copyleft, pero conviene revisar las licencias de los componentes de MediaPipe y LiteRT que se usen junto al modelo.
+- **Caveat de produccion**: verificar el comportamiento en el hardware objetivo (delegados GPU/NPU pueden alterar resultados numericos respecto a CPU) y validar con un conjunto de datos propio antes de desplegar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-ObjectDetector-SSD-MobileNet-V2
-- Documentación de la tarea Object Detector de MediaPipe: https://developers.google.com/edge/mediapipe/solutions/vision/object_detector
+- Hugging Face: https://huggingface.co/litert-community/MediaPipe-ObjectDetector-SSD-MobileNet-V2
+- Documentacion de MediaPipe Object Detector: https://developers.google.com/edge/mediapipe/solutions/vision/object_detector
 - LiteRT: https://developers.google.com/edge/litert
-- Guía de instalación en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guía de instalación en web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
-- Guía de instalación en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
-- Guía de instalación en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
-- Guía de instalación en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/object_detector
 - Paper SSD (arXiv:1512.02325): https://arxiv.org/abs/1512.02325
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/object_detection/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/object_detection/ios
+- Ejemplo Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/object_detection/python/object_detector.ipynb
+- Ejemplo Web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/object-detector.ts
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/object_detector
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/object_detector

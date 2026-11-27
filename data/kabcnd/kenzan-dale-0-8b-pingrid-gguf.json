@@ -54,19 +54,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": null,
-      "dataset": "dale bash test v2",
-      "metric": "Strict JSON Contract Validity (Q4_K_M / Q3_K)",
-      "value": 100
-    },
-    {
-      "task": null,
-      "dataset": "dale bash test v2",
-      "metric": "Primary Utility Match vs Reference (Q4_K_M PinGrid)",
-      "value": 90.27
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

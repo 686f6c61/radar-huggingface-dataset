@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Enkoa-qwen3.5-0.8b-commerce-sft es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.5-0.8B publicado por el usuario muahseol. Se trata de un modelo de generacion de texto orientado a la simulación de consultas de compra online (commerce), desarrollado como material didáctico para el curso de deep learning del programa AI Campus de Enkoa. El modelo parte de la arquitectura Qwen3.5 en su variante de texto y conserva el tokenizador y la estructura del modelo base.
+enkoa-qwen3.5-0.8b-commerce-sft es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario muahseol. Se trata de un modelo de generacion de texto de aproximadamente 752 millones de parametros, orientado a tareas de atencion al cliente en comercio electronico y desarrollado como material didactico para el curso de deep learning de Enkoa AI Campus. El modelo esta pensado exclusivamente como ejemplo de formacion y su propio autor advierte explicitamente que no debe utilizarse en atencion al cliente real.
 
-Con 752.393.024 parámetros reales (aproximadamente 0,75 mil millones), es un modelo de escala reducida pensado para ejecutarse en entornos de laboratorio y prácticas docentes. La model card indica explícitamente que se trata de un modelo de ejemplo para formación y que no debe usarse en atención al cliente real. La versión publicada corresponde al checkpoint final del ejercicio 01 (4 épocas) sin el proceso de selección por juez que describe el ejercicio 02, lo que la convierte en una variante de sustitución.
+El ajuste se realizo sobre el checkpoint final de la tarea 01 (cuatro epocas) sin el proceso de seleccion de epocas mediante evaluacion con modelo juez que contemplaba la tarea 02 original. El resultado es un modelo de consulta de compras en linea (`commerce_sft_final`) guardado en precision float32, que se emplea en las practicas del modulo de inferencia con vLLM, donde los alumnos descargan el repositorio y lo levantan como servidor.
 
-Su relevancia es fundamentalmente educativa: sirve como ejemplo reproducible para prácticas de SFT y para levantar un servidor de inferencia con vLLM en el aula. No está pensado como modelo de producción ni como referencia de rendimiento en tareas de comercio reales.
+Su relevancia es por tanto educativa y de demostracion de pipelines de SFT e inferencia, no de produccion. La arquitectura corresponde a la familia Qwen3.5 en su variante de texto (`qwen3_5_text`), con licencia Apache 2.0 y soporte unicamente del idioma coreano segun los metadatos del autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3.5, variante de texto: `qwen3_5_text`) |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no es un modelo MoE segun los datos disponibles) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, variante `qwen3_5_text`) |
+| Parametros totales | 752.393.024 (segun safetensors) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en float32) |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5 en su variante específica para texto (`qwen3_5_text`). No se dispone de detalles sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO; la model card únicamente indica que se trata de un SFT sobre un corpus de consultas de compra online.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5 en su variante de texto. Sobre esa base se aplico un ajuste fino supervisado (SFT) orientado a conversaciones de atencion al cliente en comercio electronico, dentro del marco del curso de deep learning de Enkoa AI Campus. El checkpoint publicado corresponde al final de la tarea 01, tras cuatro epocas de entrenamiento, y se guardo en float32.
 
-El proceso de entrenamiento descrito en la model card corresponde a las prácticas del curso: el ejercicio 02 original selecciona la época mediante evaluación con un juez, pero la versión publicada es una variante de sustitución que guarda el checkpoint final del ejercicio 01 (4 épocas) sin ese proceso de selección. Los pesos se publican en float32 y el repositorio ocupa 3,0 GB.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset de SFT ni la existencia de fases posteriores de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal u otras) mas alla de las propias de la arquitectura base. El proposito declarado del autor es servir de ejemplo practico para el modulo de inferencia con vLLM del curso.
 
 ## Capacidades
 
-- Generación de texto conversacional en coreano, orientada a diálogos de consulta de compra online.
-- Respuestas multi-turno dentro de un contexto de conversación (longitud de contexto no disponible).
-- Simulación de atención al cliente en el dominio del comercio electrónico, según el propósito declarado del ajuste.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad de visión, audio ni modo de pensamiento (thinking mode).
-- Capacidad multilingüe limitada al coreano según el campo `language` de la model card.
+- Generacion de texto conversacional en coreano, orientada a dialogos de consulta de compras en linea.
+- Respuesta a preguntas de atencion al cliente dentro del dominio del dataset de SFT (comercio electronico).
+- Inferencia compatible con transformers y con servidores compatibles con la API de endpoints (tag `endpoints_compatible`).
+- Despliegue como servidor de inferencia mediante vLLM, segun el flujo de practicas descrito por el autor.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al coreano segun los metadatos; no se documenta soporte de otros idiomas.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Prácticas de SFT en el aula: el modelo sirve como punto de partida para que los alumnos reproduzcan el ajuste supervisado sobre un corpus de consultas de compra y comparen checkpoints entre épocas.
-- Despliegue de servidor de inferencia con vLLM: la model card indica que la unidad de práctica del motor de inferencia vLLM descarga este repositorio y lo levanta como servidor, por lo que es adecuado para ejercicios de despliegue y pruebas de API.
-- Evaluación de pipelines de generación de texto: al ser un modelo pequeño en float32, permite probar integraciones con transformers y endpoints compatibles sin requerir hardware de gama alta.
-- Demostraciones docentes de conversación multi-turno: útil para ilustrar cómo un modelo ajustado mantiene el hilo de una consulta de compra simulada en coreano.
-- Comparación de estrategias de selección de checkpoint: la diferencia entre esta variante (sin juez, 4 épocas) y la del ejercicio 02 permite estudiar el impacto de la selección de época en la calidad de las respuestas.
-- Reproducción de experimentos educativos: el repositorio y la licencia Apache 2.0 facilitan que otros estudiantes o docentes reproduzcan el flujo completo de entrenamiento y despliegue.
+- Practicas de SFT en cursos de deep learning: el modelo sirve como ejemplo resuelto de ajuste fino supervisado sobre un modelo base pequeno, permitiendo a los alumnos inspeccionar el checkpoint final de cuatro epocas.
+- Practicas de despliegue con vLLM: el repositorio se descarga y se levanta como servidor de inferencia, de modo que los alumnos practican el arranque, la configuracion y las llamadas a un endpoint compatible.
+- Demostracion de pipelines de atencion al cliente: permite ilustrar como un modelo pequeno ajustado puede generar respuestas de consulta de compras en coreano, sin pretension de calidad de produccion.
+- Evaluacion comparativa de checkpoints: al ser el resultado de la tarea 01 sin seleccion por modelo juez, sirve para contrastar con la variante de la tarea 02 y discutir el impacto de la seleccion de epocas.
+- Experimentos academicos de bajo coste: con 752 millones de parametros, se puede ejecutar en hardware modesto para estudiar el comportamiento de un modelo ajustado en un dominio acotado.
+- Base para ejercicios de evaluacion y analisis de errores: los alumnos pueden medir la calidad de las respuestas del modelo en el dominio de comercio electronico y analizar sus fallos como parte del curso.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en float32: aproximadamente 3 GB solo para los pesos (752 M de parámetros × 4 bytes), más overhead de activaciones y KV cache.
-- VRAM estimada en bfloat16: alrededor de 1,5 GB para los pesos, más overhead; no se han publicado pesos cuantizados en el repositorio.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para float32; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes, aunque las de gama alta no son necesarias.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas consumer con 6 GB o más de VRAM en float32.
-- Opciones de despliegue: transformers (librería declarada) y vLLM (mencionado en la model card para la práctica de servidor). No se documenta soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, los pesos en float32 de 752 millones de parametros ocupan aproximadamente 3 GB; en cuantizacion de 16 bits rondarian 1,5 GB y en 8 bits unos 0,75 GB, aunque el autor no publica cuantizaciones.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: por el tamano del modelo, es plausible su ejecucion en GPU de consumo con suficiente VRAM, pero no se confirma en la documentacion disponible.
+- Opciones de despliegue: vLLM (uso previsto por el autor en las practicas), transformers y endpoints compatibles con la API de inferencia.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| enkoa-qwen3.5-0.8b-commerce-sft | 752 M | no disponible | Apache 2.0 | SFT educativo para comercio en coreano | Hugging Face |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible en la información proporcionada | Modelo generalista | Hugging Face |
-| Alternativas de ~0,5-1 B para SFT educativo | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| enkoa-qwen3.5-0.8b-commerce-sft | 752.393.024 | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| Alternativas de ~0,8B ajustadas para dominio | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de ejemplo: la model card advierte explícitamente que es un modelo de formación y que no debe usarse en atención al cliente real.
-- Sesgos conocidos: no documentados, pero al ser un SFT sobre un corpus concreto de comercio puede reflejar los sesgos y el estilo de ese corpus.
-- Riesgo de alucinación: no evaluado ni documentado; en un modelo de 0,75 B entrenado con SFT sobre un dominio acotado, el riesgo de respuestas inventadas es relevante.
-- Limitaciones de idioma: el campo `language` solo declara coreano; el rendimiento en castellano u otros idiomas no está garantizado.
-- Limitaciones de contexto: la longitud de contexto no está documentada en la información disponible.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la propia model card desaconseja el uso en producción real.
-- Caveat de producción: la versión publicada es una variante de sustitución sin selección de época por juez, por lo que puede no representar el mejor checkpoint del proceso de entrenamiento descrito en el ejercicio original.
-- Idiomas y tokenizador: al heredar el tokenizador del modelo base, conviene verificar el comportamiento en textos que mezclen coreano y otros idiomas.
+- El autor advierte explicitamente que es un modelo de ejemplo para formacion y que no debe usarse en atencion al cliente real.
+- El ajuste se realizo sin el proceso de seleccion de epocas mediante modelo juez previsto en la tarea 02, por lo que la calidad puede ser inferior a la de un checkpoint seleccionado.
+- Dominio muy acotado: entrenado para consultas de comercio electronico, con escasa generalizacion fuera de ese ambito.
+- Idioma limitado al coreano; no se documenta soporte de castellano ni de otros idiomas.
+- Riesgo de alucinacion inherente a un modelo de 0,8B ajustado con SFT; no se han publicado evaluaciones que lo cuantifiquen.
+- Sesgos conocidos: no disponible.
+- Longitud de contexto no documentada, lo que limita la planificacion de conversaciones multi-turno largas.
+- Licencia Apache 2.0 permite uso comercial del artefacto, pero el autor desaconseja su uso en produccion por su naturaleza didactica.
+- Pesos en float32: el repositorio ocupa 6,0 GB, lo que incrementa los requisitos de almacenamiento y transferencia frente a versiones cuantizadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Shaveen12/gpt2-reuters-from-scratch",
+  "slug": "shaveen12-gpt2-reuters-from-scratch",
+  "author": "Shaveen12",
+  "url": "https://huggingface.co/Shaveen12/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-27T03:38:12.000Z",
+  "updated_at": "2026-11-27T03:40:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "trained-from-scratch",
+    "reuters",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18116608,
+  "parameters_human": "18.1M",
+  "storage_bytes": 72479193,
+  "storage_human": "72 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

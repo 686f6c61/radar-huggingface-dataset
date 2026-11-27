@@ -27,7 +27,7 @@
     "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 327,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 117640321,
   "parameters_human": "117.6M",
@@ -41,11 +41,11 @@
   "is_conversational": false,
   "gated": false,
   "disabled": false,
-  "removed": true,
-  "removed_at": "2026-10-25T02:44:23.827Z",
-  "removal_pattern": "account_gone",
-  "renamed_to": null,
-  "renamed_at": null,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Gramscii-IT/mmarco-mMiniLMv2-L12-H384-v1-GGUF",
+  "renamed_at": "2026-11-27T03:56:16.303Z",
   "benchmarks": [],
   "sources": [
     {

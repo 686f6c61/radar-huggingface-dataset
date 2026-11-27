@@ -2,89 +2,98 @@
 
 ## Resumen
 
-Voice AI (`neurarank/voice-ai-s2s`) es un modelo fundacional de speech-to-speech (S2S) de extremo a extremo desarrollado por neurarank. Su objetivo es eliminar las tuberías en cascada convencionales `STT -> LLM -> TTS`, procesando audio de entrada y generando audio de salida directamente, sin una transcripción de texto obligatoria en la ruta crítica de inferencia. El modelo se presenta bajo el principio "Audio In → Cognitive Processing → Audio Out".
+VOICE AI S2S FUSION es un modelo de conversación de voz extremo a extremo (speech-to-speech) desarrollado por neurarank que opera directamente sobre señal de audio PCM a 48 kHz, eliminando la arquitectura en cascada tradicional (STT → LLM → TTS). El modelo combina un backbone neuronal de 442M parámetros con arquitectura Sparse MoE, al que se añaden dos adaptadores desacoplados: un adaptador Full-Duplex de 4,53M parámetros para interacción conversacional bidireccional y una Extension Learning Layer de 548K parámetros que actúa como pasarela hacia el Model Context Protocol (MCP) y la ejecución de herramientas.
 
-La arquitectura combina un encoder de voz Causal Conformer, un backbone de mezcla de expertos dispersa (MoE) de 8 capas y 8 expertos con GQA y RoPE, y un decoder acústico causal RVQ con 16 cuantizadores y vocoder MOSS. El modelo tiene aproximadamente 442 millones de parámetros en pesos FP16 y opera a 48 kHz tanto en entrada como en salida de audio PCM.
+La propuesta diferencial es la conversación full-duplex real: el modelo escucha y responde simultáneamente, gestiona barge-in físico con latencia de corte de 25,25 ms y genera backchannels en vietnamita con F1 de 0,9474. Incorpora además un runtime cognitivo con proyecciones multimodales (audio, texto, visión, documento) y un sandbox de seguridad que aísla credenciales del contexto del modelo.
 
-Es relevante para desarrolladores que construyen asistentes de voz conversacionales de baja latencia: el autor reporta un Time to First Audio (TTFA P50) de 111,63 ms y un Real-Time Factor de 0,0138 (unas 72 veces más rápido que la reproducción en tiempo real) sobre Apple Silicon M4 Pro con aceleración MPS. El modelo soporta sesiones de streaming con estado, full-duplex y barge-in.
+Es relevante ahora porque aborda el cuello de botella de latencia de los pipelines conversacionales tradicionales con un TTFA P50 de 111,63 ms y un factor de tiempo real (RTF) de 0,0138, con licencia Apache 2.0 y despliegue disponible vía Docker y Gradio. Sus idiomas declarados son vietnamita e inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal Conformer Speech Encoder → Sparse Mixture-of-Experts Backbone (8 capas, 8 expertos, GQA, RoPE) → Causal Acoustic RVQ Decoder (16 cuantizadores, MOSS Vocoder) |
-| Parametros totales | ~442.360.650 (FP16) |
-| Parametros activos | no disponible |
+| Arquitectura | Sparse MoE Transformer (encoder Causal Conformer + decoder Causal RVQ + vocoder neuronal) |
+| Parametros totales | 442.360.650 (backbone) + 4.532.995 (Full-Duplex Adapter) + 548.684 (Extension Learning Layer) |
+| Parametros activos | top-2 de 8 expertos locales por capa (no se especifica el recuento exacto de parámetros activos) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | vietnamita (vi), ingles (en) |
+| Idiomas soportados | vietnamita (vi), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con `custom_code`, requiere `trust_remote_code=True`) |
+| Formato de pesos | safetensors (backbone), .pt (adaptadores PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura híbrida de tres etapas: un encoder de voz Causal Conformer que procesa audio PCM crudo a 48 kHz, un backbone de mezcla de expertos dispersa de 8 capas con 8 expertos, atención GQA y codificación posicional RoPE, y un decoder acústico causal RVQ con 16 cuantizadores que alimenta un vocoder MOSS para sintetizar la salida de voz a 48 kHz. La naturaleza causal de encoder y decoder es coherente con el uso en streaming: el modelo mantiene estado persistente entre fragmentos de audio y puede emitir audio antes de completar la secuencia.
+El backbone es un transformer MoE disperso de 8 capas con 8 expertos locales y enrutamiento top-2, atención GQA (12 cabezas de query, 4 de key/value) y RoPE. La entrada de audio pasa por un encoder Causal Conformer de 4 capas con tramas latentes de 80 ms (12,5 Hz) y dimensión 768. La salida se genera mediante un decoder Causal RVQ de 16 cuantizadores (codebook de 1024 entradas) seguido de un vocoder neuronal que sintetiza waveform PCM a 48 kHz directamente. El chunk de streaming causal es de 80 ms (3.840 muestras a 48 kHz), con soporte de conversión a 16 kHz para telefonía.
 
-El autor no detalla en la model card el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La innovación técnica destacada es la eliminación de la transcripción de texto en la ruta crítica de inferencia, trabajando sobre representaciones latentes continuas, lo que reduce la latencia frente a cascadas STT-LLM-TTS. También se expone un mecanismo de barge-in con latencia inferior a 15 ms que detiene la síntesis preservando el contexto del prompt en la KV cache.
+Sobre el backbone se montan dos ramas desacopladas. La rama Full-Duplex emplea cross-attention de doble flujo para procesar simultáneamente los streams de ingress (usuario) y egress (asistente), con gestión de barge-in mediante `interrupt()` que cancela la reproducción y hace rollback del KV Cache en 1,25 ms. La Extension Learning Layer traduce vectores latentes a invocaciones de herramientas estructuradas vía MCP, con 24 acciones nativas sobre 7 proveedores de infraestructura. No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO.
 
 ## Capacidades
 
-- Generación de voz de extremo a extremo: entrada de audio PCM a 48 kHz y salida de voz sintetizada a 48 kHz sin transcripción de texto intermedia.
-- Streaming con estado: sesiones que ingieren fragmentos de audio (por ejemplo, 80 ms = 3.840 muestras a 48 kHz) con estado persistente entre llamadas.
-- Full-duplex y barge-in: interrupción de la respuesta en curso con latencia declarada inferior a 15 ms, conservando el contexto en la KV cache.
-- Detección de fin de turno: la API de streaming acepta una señal `is_end_of_turn` para gestionar el cambio de turno conversacional.
-- Multilingüe limitado: vietnamita e inglés.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades de visión o audio más allá del habla: no disponible.
+- Conversación speech-to-speech extremo a extremo sobre audio crudo a 48 kHz, sin pipeline STT/LLM/TTS intermedio.
+- Full-duplex: escucha y respuesta simultáneas mediante cross-attention de doble flujo.
+- Barge-in: detección de interrupción del usuario con corte físico en 25,25 ms y rollback de KV Cache en 1,25 ms.
+- Backchannels conversacionales en vietnamita ("dạ", "vâng", "ừm") con F1 de 0,9474.
+- Tool calling y function calling vía Model Context Protocol (MCP), con pasarela Stdio y HTTP y precisión de selección de herramienta del 100% según el autor.
+- Ejecución de 24 acciones nativas sobre 7 proveedores de infraestructura.
+- Proyecciones multimodales: audio, texto, visión y documento.
+- Sandbox de seguridad cognitiva con protección frente a SSRF, SQLi y command injection, y aislamiento de tokens y credenciales fuera del contexto del modelo.
+- Capacidades multilingües limitadas a vietnamita e inglés.
 
 ## Casos de uso
 
-- Asistentes de voz conversacionales de baja latencia: el modelo puede gestionar turnos de habla con un TTFA P50 de 111,63 ms, adecuado para interacciones donde la respuesta percibida debe ser casi inmediata.
-- Atención al cliente telefónica automatizada: la arquitectura S2S evita la latencia acumulada de STT, LLM y TTS, y el soporte de barge-in permite que el usuario interrumpa al agente sin esperar a que termine la frase.
-- Interfaces de voz manos libres en dispositivos: con ~442 M de parámetros en FP16, el modelo es desplegable en hardware de gama alta de consumo, lo que permite integrarlo en aplicaciones de escritorio o estaciones de trabajo.
-- Traducción oral inglés-vietnamita en tiempo real: al soportar ambos idiomas en el mismo modelo de audio a audio, puede emplearse en escenarios de interpretación conversacional entre hablantes de esas lenguas.
-- Prótesis o asistentes de accesibilidad por voz: el procesamiento directo de audio a audio y la baja latencia facilitan interfaces de conversación natural para usuarios con movilidad reducida.
-- Prototipado de agentes de voz full-duplex: la API de sesión con estado (`create_streaming_session`, `push_audio`, `interrupt`) permite construir demos de conversación bidireccional con interrupciones en tiempo real.
-- Investigación en modelos S2S sin texto: sirve como base para experimentar con arquitecturas que eliminan el cuello de botella de transcripción en pipelines de voz.
+- Atención al cliente telefónica: el modelo procesa audio a 16 kHz vía el conversor de telefonía y responde en full-duplex, permitiendo al usuario interrumpir sin esperar al final del turno gracias al corte de barge-in de 25,25 ms.
+- Asistentes de voz para mercados de Vietnam: los backchannels nativos en vietnamita con F1 de 0,9474 y el soporte de idioma vi lo hacen adecuado para interfaces conversacionales dirigidas a ese mercado.
+- Agentes de voz con ejecución de acciones: la Extension Learning Layer y la pasarela MCP permiten encadenar la intención hablada con invocaciones estructuradas a 24 acciones sobre 7 proveedores de infraestructura, por ejemplo consultas de estado o automatizaciones.
+- Recepción y triaje en kioscos o centralitas: con TTFA P50 de 111,63 ms y RTF de 0,0138, la conversación resulta viable en tiempo real incluso en hardware de gama media.
+- Transcripción y respuesta con contexto documental: las proyecciones multimodales de documento permiten responder consultas habladas apoyadas en material escrito aportado al runtime.
+- Despliegue en entornos con requisitos de seguridad: el sandbox con protección SSRF/SQLi/command injection y el aislamiento de credenciales facilitan integraciones en producción donde el modelo no debe ver secretos.
+- Prototipado e investigación en interacción full-duplex: la app Gradio y el perfil Docker standalone permiten evaluar el comportamiento conversacional sin montar infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Condiciones |
-|---|---|---|
-| Time to First Audio (TTFA P50) | 111,63 ms | Objetivo declarado < 500 ms |
-| Real-Time Factor (RTF) | 0,0138 (72x más rápido que tiempo real) | Apple Silicon M4 Pro, aceleración MPS |
-| Hardware probado | Apple Silicon M4 Pro (MPS) | — |
+| Metrica | Valor |
+|---|---|
+| TTFA P50 (latencia al primer audio) | 111,63 ms |
+| RTF (factor de tiempo real) | 0,0138 (≈13,8 ms por segundo de audio) |
+| PESQ | 4,24 (estudio) / 1,539 (canal con ruido simulado) |
+| STOI | 0,996 |
+| Latencia de barge-in | 25,25 ms |
+| F1 de backchannel | 0,9474 |
+| Precisión de selección de herramienta | 100% (según el autor) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con ~442 M de parámetros en FP16, el peso de los pesos ronda los 0,9 GB, por lo que la huella de memoria es moderada, aunque el consumo real depende del estado de streaming y del vocoder.
-- GPU recomendadas: el autor solo documenta pruebas en Apple Silicon M4 Pro con MPS; no se especifican GPU NVIDIA recomendadas.
-- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño del modelo, aunque no se confirma en la información disponible.
-- Opciones de despliegue: carga mediante `transformers` con `trust_remote_code=True`; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: TTFA P50 de 111,63 ms y RTF de 0,0138 sobre M4 Pro con MPS; no hay datos para otras plataformas.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 442M parámetros en safetensors y un repo de 2,8 GB, la inferencia en fp32 requiere del orden de 1,8 GB solo para pesos, más overhead de activaciones y vocoder. En fp16 el peso del backbone se reduce aproximadamente a la mitad.
+- GPU recomendadas: el autor reporta ejecución en NVIDIA GPU (CUDA) y Apple Silicon (MPS); no se especifican modelos concretos de GPU.
+- Cabe en GPU de consumo: por tamaño de parámetros, sí es plausible en GPUs consumer con suficiente VRAM, aunque el fabricante no publica una lista de compatibilidad verificada.
+- Opciones de despliegue: transformers (librería declarada, con custom_code), Docker (perfil standalone), Gradio (consola interactiva `app.py`). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: TTFA P50 de 111,63 ms y RTF de 0,0138 medidos en Apple Silicon (MPS) o NVIDIA (CUDA).
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (S2S de extremo a extremo) con datos de parámetros, contexto, rendimiento o licencia que permitan una comparación rigurosa.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Idiomas |
+|---|---|---|---|---|---|
+| neurarank/voice-ai-s2s | 442M backbone + 4,53M + 548K adaptadores | no disponible | Speech-to-speech full-duplex con MCP | Apache 2.0 | vi, en |
+| Moshi (Kyutai) | no disponible en la información | no disponible | Speech-to-speech full-duplex | no disponible | no disponible |
+| NVIDIA PersonaPlex | no disponible en la información | no disponible | Comportamiento conversacional full-duplex | no disponible | no disponible |
+
+La model card cita explícitamente a NVIDIA PersonaPlex y Moshi como referencias de las que se adoptaron comportamientos full-duplex; no se dispone de datos de rendimiento comparativo entre ellos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cobertura idiomática limitada a vietnamita e inglés; no se declara soporte para castellano ni otros idiomas.
-- No se documentan sesgos conocidos, pero al ser un modelo de voz entrenado sobre datos no especificados, pueden aparecer sesgos acústicos y demográficos no evaluados.
-- Riesgo de alucinación: no cuantificado; al no generar texto intermedio, la verificación de contenido es más difícil que en pipelines con transcripción.
-- No se detalla la composición del dataset de entrenamiento ni los procesos de alineación, lo que limita la evaluación de seguridad y robustez.
-- El modelo requiere `trust_remote_code=True` y código personalizado (`custom_code`), lo que implica ejecutar código del autor y auditar su procedencia antes de usarlo en producción.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo no incluye garantías ni evaluación de cumplimiento regulatorio para aplicaciones de voz.
-- El rendimiento reportado se limita a Apple Silicon M4 Pro con MPS; no hay datos de latencia o throughput en GPU NVIDIA u otras plataformas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria.
+- Cobertura lingüística restringida a vietnamita e inglés; no hay soporte declarado de castellano.
+- No se especifican la longitud de contexto, los tipos de cuantización ni el volumen o composición de los datos de entrenamiento, lo que dificulta evaluar robustez y sesgos.
+- Los benchmarks publicados son de latencia y calidad de audio; no hay métricas de razonamiento, código o matemáticas, por lo que el rendimiento cognitivo del backbone no está validado de forma independiente.
+- La cifra de 100% de precisión en selección de herramienta procede del propio autor y no se ha verificado externamente.
+- El PESQ cae de 4,24 en estudio a 1,539 en canal con ruido simulado, lo que anticipa degradación notable en condiciones telefónicas reales.
+- Riesgo de alucinación en las respuestas generadas: no se documentan mecanismos de mitigación ni tasas medidas.
+- El modelo requiere `trust_remote_code` (custom_code) para cargarse con transformers, lo que implica ejecutar código del autor.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, la ausencia de documentación sobre sesgos y evaluación limita su idoneidad para producción sin validación propia.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/neurarank/voice-ai-s2s
-- Paper: no disponible
-- Blog: no disponible
-- Repositorio de código: no disponible
-- Demo: no disponible
+- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- No se han encontrado en la información disponible enlaces a papers, blogs, repositorios o demos adicionales.

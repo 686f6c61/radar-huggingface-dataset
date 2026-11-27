@@ -2,95 +2,98 @@
 
 ## Resumen
 
-Oil palm crown detector (YOLOv8s) es un detector de objetos especializado desarrollado por Oluwasola Oyinloye (GitHub @Dexsholex) para localizar coronas individuales de palma de aceite en ortomosaicos RGB de drones (UAV). El modelo convierte un ortomosaico georreferenciado en un inventario de palmas: un punto y una caja por cada palma detectada. Se ha utilizado en producción para contar 718.751 palmas en 12.166,6 ha de una plantación comercial en África Occidental, lo que lo convierte en una herramienta de referencia para inventarios forestales y agrícolas basados en teledetección.
+Oil palm crown detector es un modelo de deteccion de objetos basado en YOLOv8s, desarrollado por Oluwasola Oyinloye (dexsholex), especializado en la identificacion y conteo de coronas de palma aceitera en ortomosaicos RGB capturados por drones (UAV). El modelo resuelve un problema concreto de agricultura de precision: transformar imagenes aereas georreferenciadas en inventarios de palmas, generando una caja y un punto por cada corona detectada. Se distribuye con una unica clase (`oil_palm`) y una resolucion de entrada de 1280 x 1280 px.
 
-Técnicamente es un detector YOLOv8s (variante small de Ultralytics) con una sola clase (`oil_palm`) y entrada de 1280 × 1280 píxeles. Se distribuye en dos formatos equivalentes: pesos PyTorch (`.pt`) para inferencia y fine-tuning con Ultralytics, y ONNX (`.onnx`) para su uso en QGIS mediante el plugin Deepness, ONNX Runtime u otras herramientas. La licencia es AGPL-3.0, heredada de Ultralytics YOLOv8. Su relevancia actual radica en que aborda un problema concreto y costoso (conteo de palmas en plantaciones) con un pipeline open source completo, resultados de validación publicados y una demo interactiva en Hugging Face Spaces.
+El modelo ha sido validado en produccion sobre 718.751 palmas en 12.166,6 hectareas de una plantacion comercial en Africa Occidental, lo que le otorga una trazabilidad de uso real poco habitual en modelos de deteccion remota. Se ofrece en dos formatos: PyTorch (`.pt`) para inferencia y ajuste fino con Ultralytics, y ONNX (`.onnx`) para su integracion en QGIS mediante el plugin Deepness o cualquier runtime ONNX. Ademas, la version 1.2.0 incorpora un segundo checkpoint entrenado conjuntamente con datos de Africa Occidental y Peru.
+
+La relevancia actual del modelo radica en su caracter practico: incluye parametros por defecto embebidos en el ONNX (2,13 cm/px, tiles de 1280 px, 20% de solapamiento, confianza 0,25, IoU 0,45) y un pipeline de codigo abierto que automatiza el teselado, la conversion a coordenadas de mapa, la eliminacion de duplicados y la exportacion a GeoPackage/CSV. Todo ello bajo licencia AGPL-3.0, heredada de Ultralytics YOLOv8.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YOLOv8s (detector de objetos, una clase: `oil_palm`) |
-| Parametros totales | no disponible (YOLOv8s tiene ~11 M de parametros segun la familia Ultralytics, pero no consta en la model card) |
+| Arquitectura | YOLOv8s (Ultralytics), detector de objetos de una etapa |
+| Parametros totales | no disponible (variante "s" de YOLOv8; el numero exacto no se indica en la informacion) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision) |
-| Tipos de cuantizacion | no disponible (solo pesos en precision original) |
-| Idiomas soportados | no aplica (modelo de deteccion de objetos, sin componente textual) |
+| Longitud de contexto | no aplica (modelo de vision; entrada fija de 1280 x 1280 px) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos PyTorch y ONNX en precision original) |
+| Idiomas soportados | no aplica (modelo de vision, sin capacidades linguisticas) |
 | Licencia | AGPL-3.0 |
-| Formato de pesos | PyTorch (`.pt`) y ONNX (`.onnx`), ambos del mismo run de entrenamiento (run 9) |
+| Formato de pesos | `.pt` (PyTorch/Ultralytics) y `.onnx` (ONNX Runtime, QGIS Deepness) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de un YOLOv8s preentrenado en COCO y se ha refinado a lo largo de sucesivas ejecuciones de entrenamiento. El checkpoint publicado (run 9) fue fine-tuned desde el run 4. Los hiperparametros del run 9 son: tamano de imagen 1280 px, batch 6, optimizador AdamW, learning rate inicial 0,0002, hasta 150 epocas con early stopping (paciencia 30); el entrenamiento se detuvo en la epoca 92 y el mejor checkpoint corresponde a la epoca 62. El entrenamiento se realizo en una sola NVIDIA RTX 4070 Laptop GPU de 8 GB, lo que lo hace reproducible con hardware modesto.
+La arquitectura es YOLOv8s, un detector de objetos de una etapa basado en CNN con cabeza de deteccion ancla-libre, una sola clase de salida (`oil_palm`) y entrada de 1280 x 1280 px. El checkpoint liberado (run 9) parte de pesos preentrenados en COCO y se ajusto de forma sucesiva: primero hasta el run 4 y despues desde este hasta el run 9. El entrenamiento empleo tamaño de imagen 1280, batch 6, optimizador AdamW con learning rate inicial 0,0002, hasta 150 epocas con paciencia de early stopping de 30; se detuvo en la epoca 92, con el mejor resultado en la 62.
 
-Los datos de entrenamiento proceden de ortomosaicos RGB de UAV de una plantacion comercial de palma de aceite en Africa Occidental (imagenes y etiquetas propietarias, no publicadas). Se anotaron 435 tiles de 1280 × 1280 px con solapamiento de 256 px, con una caja por corona visible, sumando 4.041 cajas. La particion train/validacion/test (70/15/15) se hizo por sector espacial determinista, no por tiles aleatorios, garantizando que validacion y test provienen de terreno no visto en entrenamiento. La plantacion es joven: la altura de dosel mediana es de 2,33 m (percentiles 5-95: 0,92-3,81 m). Como aumento de datos se uso rotacion de ±180°, volteos horizontal y vertical y mosaic; se desactivaron perspectiva y shear por no ser fisicamente plausibles en imagenes nadir.
+Los datos de entrenamiento proceden de ortomosaicos RGB de UAV de una plantacion comercial de palma aceitera en Africa Occidental (imagenes y etiquetas propietarias, no liberadas). Se anotaron manualmente 435 tiles de 1280 x 1280 px con solapamiento de 256 px, sumando 4.041 cajas de corona. La particion 70/15/15 se realizo por sector espacial mediante un hash determinista, no por tiles aleatorios, de modo que validacion y test provienen de terreno no visto: 313 tiles/2.898 cajas en entrenamiento, 43/427 en validacion y 79/716 en test. La aumentacion incluyo rotacion de hasta ±180 grados, volteos horizontal y vertical, y mosaic; se desactivaron perspectiva y shear por no ser fisicamente plausibles en imagenes nadir. El ajuste se realizo en una unica GPU NVIDIA RTX 4070 Laptop de 8 GB.
+
+La innovacion tecnica destacable no reside en la arquitectura, sino en el diseno del split espacial y en la calibracion del pipeline: el ONNX exportado se verifico contra el modelo PyTorch, con coordenadas de caja que coinciden en 0,001 px y puntuaciones identicas. La version 1.2.0 añade un modelo conjunto (`oil_palm_crown_joint.pt`) entrenado con datos de dos sitios (Africa Occidental y Peru) para mejorar la generalizacion en imagenes de primer plano de 800 x 600 px.
 
 ## Capacidades
 
-- Deteccion de coronas individuales de palma de aceite en tiles de ortomosaicos RGB nadir de UAV, con resolucion cercana a ~2 cm/px.
-- Salida estructurada: en ONNX, tensor `1×5×33600` (centro x, y, ancho, alto, score) antes de supresion de no maximos; en PyTorch, cajas con scores via Ultralytics.
-- Conteo de palmas: integrado con el pipeline open source asociado, genera inventarios georreferenciados en GeoPackage/CSV (un punto y una caja por palma).
-- Uso directo en SIG: el ONNX incorpora parametros por defecto (2,13 cm/px, tiles de 1280 px, solapamiento 20%, confianza 0,25, IoU 0,45) y funciona en QGIS con el plugin Deepness sin escribir codigo.
-- Punto de partida para fine-tuning sobre otras plantaciones o para preetiquetado que los anotadores corrigen en lugar de dibujar cajas desde cero.
-- No soporta imagenes satelitales, fotos oblicuas, otras especies de arboles ni conteos sin verificacion muestral contra conteo manual (fuera del uso previsto).
+- Deteccion de coronas de palma aceitera en ortomosaicos RGB nadir de UAV, con una caja delimitadora y una puntuacion de confianza por palma.
+- Conteo e inventario de palmas a escala de plantacion: el pipeline asociado convierte detecciones a coordenadas de mapa y genera GeoPackage/CSV.
+- Eliminacion de duplicados en zonas de solapamiento entre tiles dentro del pipeline.
+- Inferencia en Python mediante Ultralytics (`model.predict`) o en ONNX Runtime.
+- Integracion sin codigo en QGIS a traves del plugin Deepness, con parametros por defecto embebidos en el archivo ONNX.
+- Pre-etiquetado de imagenes nuevas para que los anotadores corrijan cajas en lugar de dibujarlas desde cero.
+- Punto de partida para ajuste fino en otras plantaciones (fine-tuning sobre el checkpoint liberado).
+- Capacidades multilingues, tool calling, agentes, vision general, audio y modo thinking: no aplica; es un detector de objetos de dominio especifico.
 
 ## Casos de uso
 
-- Inventario comercial de plantaciones: procesamiento de ortomosaicos completos de miles de hectareas para obtener recuentos por bloque, como el despliegue real de 718.751 palmas en 12.166,6 ha.
-- Control de calidad post-plantacion: deteccion de palmas recien plantadas (el dataset de entrenamiento incluye palmas jovenes) para verificar tasas de supervivencia y detectar huecos de replantacion.
-- Preetiquetado para anotacion asistida: los anotadores corrigen cajas existentes en lugar de dibujarlas, acelerando la creacion de datasets para nuevas plantaciones.
-- Integracion en flujos SIG sin codigo: agronomos y tecnicos de SIG pueden ejecutar la deteccion directamente en QGIS con Deepness y obtener capas vectoriales de palmas sobre el ortomosaico.
-- Monitoreo de densidad de dosel y maleza: el entrenamiento incluye escenas con maleza, caminos y suelo desnudo, por lo que discrimina palmas en condiciones de campo reales.
-- Verificacion de pagos o subsidios agrarios: conteo auditable por bloques con resultados por bloque publicados en el repositorio del pipeline.
-- Investigacion en teledeteccion agricola: base reproducible (pesos, pipeline, metricas) para experimentos de conteo de arboles con UAV.
+- Inventario de plantaciones de palma aceitera: procesar ortomosaicos GeoTIFF completos con `scripts/process_block.py` para obtener una base de datos geoespacial de palmas por bloque, con una caja y un punto por corona. Es adecuado porque el modelo fue validado en produccion sobre 718.751 palmas en 12.166,6 ha.
+- Monitorizacion de densidad de plantacion y deteccion de calvas: comparar el conteo detectado con el esperado por bloque para identificar zonas con palmas faltantes o replantadas, aprovechando que el entrenamiento cubrio canopia densa y palmas recien plantadas.
+- Planificacion de labores agricolas: usar el inventario georreferenciado para asignar rutas de cosecha, fertilizacion o inspeccion por sectores del mapa, dado que las detecciones se exportan como features vectoriales con coordenadas de mapa.
+- Pre-etiquetado para anotacion humana: ejecutar el modelo sobre imagenes nuevas de otra plantacion y entregar las cajas como borrador a los anotadores, reduciendo el coste de dibujar cada corona manualmente.
+- Integracion en flujos QGIS de equipos sin perfil de programacion: cargar `oil_palm_crown.onnx` en el plugin Deepness, seleccionar el area y ejecutar, obteniendo cada palma como feature vectorial sin escribir codigo.
+- Ajuste fino para nuevas plantaciones o especies: partir de `oil_palm_crown.pt` y reentrenar con imagenes y etiquetas propias cuando la resolucion, la edad de la plantacion o la region difieran de las condiciones de entrenamiento (~2 cm/px, Africa Occidental).
+- Investigacion en teledeteccion agricola: usar el modelo como linea base reproducible en experimentos de conteo de arboles con UAV, dado que la particion espacial por sector y las metricas de test estan documentadas.
 
 ## Benchmarks y rendimiento
 
-Resultados en el split de test reservado (79 tiles, 716 coronas etiquetadas, nunca usado para entrenar ni para elegir checkpoint):
+Evaluacion sobre el split de test reservado (79 tiles, 716 coronas etiquetadas, nunca usadas en entrenamiento ni en seleccion de checkpoint):
 
-| Model | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+| Modelo | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
 |---|---|---|---|---|
 | Este modelo (run 9) | 0,845 | 0,774 | 0,844 | 0,350 |
-| Baseline anterior (run 4) | 0,727 | 0,637 | 0,698 | 0,279 |
+| Linea base anterior (run 4) | 0,727 | 0,637 | 0,698 | 0,279 |
 
-Precision y recall se miden a la confianza que maximiza F1 (Ultralytics `val`), no a la confianza 0,25 usada en el pipeline. El mAP@0.5:0.95 bajo refleja principalmente el ajuste estricto de las cajas a los bordes de la corona, menos relevante para el conteo. Los datos de conteo contra conteo manual aparecen truncados en la informacion disponible, por lo que no se reproducen aqui.
+Aproximadamente el 85% de las detecciones corresponden a palmas reales y el modelo encuentra unas 77 de cada 100 palmas etiquetadas. No se han publicado resultados de benchmarks en la informacion disponible para comparaciones con otros modelos de deteccion de palma aceitera.
 
 ## Requisitos de hardware
 
-- Entrenamiento: se completo en una NVIDIA RTX 4070 Laptop GPU de 8 GB con batch 6 a 1280 px; cualquier GPU consumer moderna con 8 GB de VRAM es suficiente para fine-tuning similar.
-- Inferencia: YOLOv8s es ligero; una GPU con 4-6 GB de VRAM (por ejemplo RTX 3060 o superior) procesa tiles de 1280 × 1280 px con holgura. Tambien es viable CPU via ONNX Runtime, con mayor latencia.
-- Consumer GPUs: cabe comodamente en RTX 3060/4060/4070 y equivalentes; no requiere A100 ni H100.
-- Despliegue: Ultralytics (Python), ONNX Runtime, QGIS con plugin Deepness (que instala ONNX Runtime automaticamente), y el pipeline propio del autor para ortomosaicos completos. No se menciona soporte para vLLM, TGI u Ollama (no aplicables a un detector de vision).
-- Latencia y throughput exactos: no disponibles; el tamano del repo (~0,1 GB) y la arquitectura YOLOv8s sugieren inferencia rapida en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: no disponible de forma explicita; el entrenamiento se realizo en una RTX 4070 Laptop de 8 GB, lo que indica que la inferencia en precision original cabe holgadamente en GPUs consumer de 8 GB.
+- GPU recomendadas: cualquier GPU NVIDIA con al menos 8 GB para inferencia comoda; el entrenamiento documentado uso una RTX 4070 Laptop (8 GB). Para procesar ortomosaicos grandes en lote, se recomienda una GPU de mayor VRAM (A100, H100) para paralelizar tiles, aunque no se aportan cifras de throughput.
+- Cabe en GPU consumer: si, segun la evidencia del entrenamiento en RTX 4070 Laptop de 8 GB.
+- Opciones de despliegue: Ultralytics (PyTorch, `.pt`), ONNX Runtime (`.onnx`), QGIS con plugin Deepness, y el pipeline propio de Python (`scripts/process_block.py`).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Aspecto | Oil palm crown detector (YOLOv8s) | YOLOv8n (base Ultralytics) | YOLOv8m (base Ultralytics) |
-|---|---|---|---|
-| Parametros | ~11 M (YOLOv8s) | ~3,2 M | ~25,9 M |
-| Tarea | Deteccion especializada en coronas de palma (1 clase) | Deteccion generica (80 clases COCO) | Deteccion generica (80 clases COCO) |
-| Entrada | 1280 × 1280 px | 640 × 640 px por defecto | 640 × 640 px por defecto |
-| Entrenamiento especifico | 4.041 cajas anotadas en plantacion real de palma | Solo COCO | Solo COCO |
-| Licencia | AGPL-3.0 | AGPL-3.0 | AGPL-3.0 |
-| Metricas publicadas | Precision 0,845, Recall 0,774, mAP@0.5 0,844 en su dominio | no disponible para este dominio | no disponible para este dominio |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de deteccion de coronas de palma aceitera en la informacion proporcionada. Como referencia estructural, se compara con la linea base interna del mismo autor:
 
-Frente a alternativas genericas, la ventaja de este modelo es el ajuste de dominio: un YOLOv8 base sin fine-tuning no detectaria coronas de palma en imagenes nadir de UAV. Modelos competidores especificos de conteo de palmas no se han identificado en la informacion disponible.
+| Modelo | Arquitectura | Clase | Entrada | mAP@0.5 | Licencia |
+|---|---|---|---|---|---|
+| Oil palm crown detector (run 9) | YOLOv8s | 1 (`oil_palm`) | 1280 x 1280 | 0,844 | AGPL-3.0 |
+| Linea base run 4 (mismo autor) | YOLOv8s | 1 (`oil_palm`) | 1280 x 1280 | 0,698 | AGPL-3.0 |
+| Otros detectores de palma aceitera | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Dominio estrecho: entrenado solo con imagenes nadir RGB de UAV a ~2 cm/px de una plantacion en Africa Occidental con dosel joven (mediana 2,33 m). No es adecuado para imagenes satelitales, fotos oblicuas, otras especies ni plantaciones maduras con caracteristicas muy distintas.
-- Sesgo geografico y de edad del cultivo: todos los datos proceden de una sola plantacion; el rendimiento en otras regiones, suelos o edades de palma puede degradarse y requiere fine-tuning.
-- Recall del 77,4%: el modelo no encuentra aproximadamente 23 de cada 100 palmas etiquetadas; los conteos deben validarse muestreando contra conteos manuales antes de usarse en decisiones de negocio.
-- La model card advierte explicitamente contra el uso de conteos sin verificacion muestral.
-- Datos de entrenamiento propietarios: las imagenes y etiquetas no se publican, lo que limita la auditoria completa del dataset.
-- Licencia AGPL-3.0: obliga a compartir el codigo fuente de obras derivadas si se ofrece el software como servicio; puede ser restrictivo para productos comerciales cerrados.
-- Riesgo de duplicados en ortomosaicos: el solapamiento entre tiles requiere la fase de deduplicacion del pipeline; usar el modelo aislado sobre tiles sin gestion de solapamiento produce conteos incorrectos.
-- Metricas de precision/recall medidas a la confianza que maximiza F1, no a la configuracion por defecto del pipeline (0,25), por lo que los numeros de produccion pueden diferir.
+- Entrenado exclusivamente con imagenes nadir de UAV a ~2 cm/px; no es adecuado para imagenes de satelite, fotos oblicuas ni otras especies de arboles.
+- Los datos de entrenamiento son propietarios y no se liberan, lo que limita la reproducibilidad exacta del ajuste.
+- El modelo se entreno en una plantacion joven (altura mediana de copa 2,33 m en 1.226 coronas del primer lote), por lo que el rendimiento en plantaciones maduras o con dosel muy cerrado puede degradarse.
+- Precision 0,845 y recall 0,774 en test: aproximadamente un 15% de detecciones son falsos positivos y un 23% de palmas no se detectan; los conteos deben verificarse contra un muestreo manual antes de usarse en decisiones operativas.
+- La licencia AGPL-3.0 impone obligaciones de copyleft sobre el codigo derivado que se distribuya o se ofrezca como servicio en red; debe revisarse antes de un uso comercial propietario.
+- No se documentan sesgos demograficos (no aplica), pero si un sesgo de dominio geografico y de condiciones de captura (resolucion, iluminacion, estacionalidad) no cubiertas en el conjunto de entrenamiento.
+- El modelo conjunto v1.2.0 se entrena con dos sitios (Africa Occidental y Peru); su rendimiento especifico por sitio no se detalla en la informacion disponible.
+- No se proporcionan datos de latencia, throughput ni consumo de VRAM en inferencia, lo que dificulta la planificacion de capacidad en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dexsholex/oil-palm-crown-detector
-- Pipeline completo y resultados por bloque: https://github.com/Dexsholex/oil-palm-crown-detection
-- Demo en navegador (Oil Palm Counter, ejecucion local): https://huggingface.co/spaces/dexsholex/oil-palm-counter
+- Demo en el navegador (Oil Palm Counter): https://huggingface.co/spaces/dexsholex/oil-palm-counter
+- Repositorio del pipeline: https://github.com/Dexsholex/oil-palm-crown-detection
 - Perfil del autor en GitHub: https://github.com/Dexsholex
 - ORCID del autor: https://orcid.org/0009-0003-4990-9944

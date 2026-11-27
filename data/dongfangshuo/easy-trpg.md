@@ -2,86 +2,95 @@
 
 ## Resumen
 
-Easy-TRPG (一键跑团) es un paquete de software distribuido a través de Hugging Face por el usuario dongfangshuo, orientado a la ejecución local de partidas de rol de mesa (TRPG) asistidas por IA. El repositorio no contiene únicamente pesos de un modelo, sino un conjunto de artefactos que incluye una aplicación de escritorio empaquetada para Windows y Linux, junto con pesos en formato safetensors y GGUF. La versión publicada es alpha 1.5 y su propuesta central es el despliegue sin instalación, sin registro y sin configuración de entorno, con chat, motor de partidas, interfaz tipo SillyTavern y gestión de fichas de personaje integrados.
+Easy-TRPG es un paquete de software distribuido a través de Hugging Face por el usuario dongfangshuo, orientado a la ejecución local de partidas de rol de mesa (TRPG, *tabletop role-playing games*) asistidas por IA. No se trata de un modelo de lenguaje aislado, sino de una aplicación empaquetada que integra motores de inferencia (llama-server y Strata), un entorno Python portable y una interfaz de chat con soporte para tarjetas de personaje compatibles con SillyTavern. El repositorio incluye además pesos en formato safetensors y GGUF, con un total de 26.895.998.464 parámetros según los metadatos de los ficheros safetensors.
 
-El componente de modelo asociado declara 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) según los metadatos de safetensors, lo que lo sitúa en la categoría de modelos densos de tamaño medio-grande. El repositorio ocupa 162,7 GB, un tamaño coherente con la presencia de múltiples cuantizaciones GGUF y pesos completos. Los idiomas declarados son chino (zh) e inglés (en), y la licencia es MIT.
+El objetivo declarado es reducir a cero la barrera de entrada para el despliegue local: instalación sin registro, sin configuración de entorno y con paquetes específicos para Windows y Linux. La aplicación incorpora funciones de chat, modos de partida "rápido" y "avanzado", adaptación a pantalla vertical de móvil, envío multimodal de vídeo y audio, y actualización en un clic. El modelo de referencia recomendado por el autor para las partidas es Dongfangshuo-27B-v4, que no es el contenido principal de este repositorio pero sí el que la aplicación sugiere descargar.
 
-La relevancia del proyecto es fundamentalmente práctica: reduce la barrera de entrada para usuarios sin conocimientos técnicos que quieren ejecutar un modelo de rol en local. No obstante, la información técnica publicada sobre arquitectura, entrenamiento y evaluación es muy escasa, y la mayor parte de la model card se dedica a instrucciones de descarga e instalación del software más que a las características del modelo.
+La relevancia actual reside en la combinación de un modelo de ~27.000 millones de parámetros con una distribución tipo "todo en uno" para consumidores, algo poco habitual en el ecosistema open source, donde normalmente el modelo y la aplicación se distribuyen por separado. La licencia MIT y los idiomas declarados (chino e inglés) acotan su público objetivo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parámetros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (se mencionan Q3_K_M y Q4_K_M en las recomendaciones del autor); safetensors en precisión completa |
+| Tipos de cuantización | GGUF (Q3_K_M, Q4_K_M mencionados en la documentación); safetensors en precisión original |
 | Idiomas soportados | chino (zh), inglés (en) |
 | Licencia | MIT |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. Los metadatos no indican que se trate de un modelo de mezcla de expertos (MoE), por lo que el recuento de parámetros totales coincide con el de parámetros activos en caso de ser denso, pero este extremo no se confirma. Tampoco se detallan la longitud de contexto nativa, el esquema de atención ni posibles innovaciones como atención lineal o decodificación especulativa.
+No se dispone de información sobre la arquitectura interna del modelo (transformer denso, MoE, híbrido u otra), ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio se centra en la distribución del software y en las instrucciones de instalación, no en la descripción técnica del modelo.
 
-Respecto al entrenamiento, la model card no especifica el número de tokens, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni el proceso de alineación. El nombre de los modelos recomendados en el ecosistema del autor (Dongfangshuo-27B-v4, Dongfangshuo-27B-Novel, Dongfangshuo-Flash-Next) sugiere una familia derivada de Qwen3.8 de 27B, pero esta relación no se documenta formalmente en la ficha del repositorio Easy-TRPG y no debe tomarse como dato verificado.
+El repositorio sí documenta la infraestructura de inferencia que acompaña al modelo: dos motores, llama-server (basado en llama.cpp) y Strata, ambos integrados en los paquetes de Windows y Linux. La aplicación incluye un Python portable y soporta tanto inferencia local como conexión a APIs en línea, lo que permite usar el software en equipos sin GPU dedicada.
 
 ## Capacidades
 
 - Generación de texto conversacional orientada a rol y narrativa interactiva.
-- Motor de partidas de rol de mesa (TRPG) con gestión de escenas y fichas de personaje dentro de la aplicación.
-- Interfaz compatible con el flujo de trabajo de SillyTavern (etiqueta `sillytavern`).
-- Soporte de personajes y roleplay mediante tarjetas de personaje (character cards).
-- Funcionalidad de chat general integrada en la aplicación.
-- Actualización en caliente del software desde la propia aplicación.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que permite su uso tras una API compatible.
-- Capacidades multilingües limitadas a chino e inglés.
-- No se documentan capacidades de tool calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito.
+- Ejecución de partidas de TRPG con modos "rápido" y "avanzado".
+- Compatibilidad con tarjetas de personaje de SillyTavern (interoperabilidad de formatos).
+- Soporte multimodal de entrada: envío de vídeo y audio según la documentación del paquete.
+- Adaptación de interfaz a pantalla vertical de móvil.
+- Actualización en un clic y actualización en línea desde el propio software.
+- Importación sin pérdida de datos desde versiones anteriores (alpha 1.x) mediante "Configuración → importar desde directorio".
+- Soporte de chino e inglés.
+- No se documenta soporte explícito de *tool calling*, *function calling* ni razonamiento multi-paso basado en agentes.
 
 ## Casos de uso
 
-- Partidas de rol de mesa en local: la aplicación integra el motor de TRPG y el modelo, de modo que un usuario puede iniciar una campaña sin conexión ni configuración de servidores, usando los pesos GGUF Q4_K_M en GPUs de 16 GB.
-- Roleplay conversacional con personajes persistentes: las tarjetas de personaje y la interfaz tipo SillyTavern permiten mantener rasgos y memoria de personaje a lo largo de sesiones multi-turno.
-- Escritura asistida de narrativa: el modelo complementario Dongfangshuo-27B-Novel está orientado a la generación de novelas, y Easy-TRPG sirve como entorno de ejecución para ese flujo.
-- Despliegue en equipos sin GPU dedicada: la variante API del paquete permite usar el software en portátiles ligeros conectando a un endpoint remoto, sin ejecutar el modelo en local.
-- Prototipado de interfaces de rol para desarrolladores: al ser un paquete con licencia MIT y pesos en safetensors y GGUF, se puede reutilizar como base para construir demos de chat narrativo o integrarlo en pipelines propios.
-- Docencia y demostraciones de IA local: el requisito mínimo declarado (GPU serie 20 o superior con 16 GB de VRAM, o 8 GB de VRAM más 32 GB de RAM) hace viable montar talleres donde los asistentes ejecutan el modelo en sus propias máquinas.
-- Evaluación comparativa de cuantizaciones: al ofrecer Q3_K_M y Q4_K_M, permite medir el compromiso entre calidad narrativa y consumo de VRAM en hardware de gama media.
+- Partidas de rol de mesa en local: el paquete permite iniciar una sesión de TRPG sin conexión a internet, con el modelo corriendo en la GPU del usuario y el estado de la partida persistido en el directorio `data/`, lo que facilita retomar campañas largas.
+- Creación de personajes y tramas: el modo de chat y la compatibilidad con tarjetas de SillyTavern permiten definir personalidades y trasfondos reutilizables entre sesiones y compartirlos con otros usuarios.
+- Escritura de ficción asistida: el autor distribuye un modelo específico para novela (Dongfangshuo-27B-Novel) que la aplicación puede descargar e integrar, útil para generar borradores de capítulos con coherencia de personajes.
+- Despliegue en equipos de gama media sin GPU dedicada: la variante API permite usar el software en portátiles delgados conectando a un proveedor en línea, manteniendo la misma interfaz y los mismos archivos de partida.
+- Uso en movilidad: la adaptación a pantalla vertical permite consultar y continuar partidas desde el móvil mediante un navegador, con el motor corriendo en un equipo de escritorio o servidor doméstico.
+- Docencia y talleres de narrativa interactiva: al ser un paquete autocontenido con licencia MIT, se puede distribuir en aulas o talleres sin depender de servicios en la nube ni de registros.
+- Evaluación de modelos de rol: investigadores pueden comparar el comportamiento del modelo recomendado (27B) frente a otras alternativas sustituyendo los pesos en el directorio `models/` sin cambiar la interfaz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el autor indica un mínimo de 16 GB de VRAM para la ejecución local, o bien 8 GB de VRAM combinados con 32 GB de RAM del sistema.
-- GPU recomendadas: se exige una GPU de la serie 20 de NVIDIA o superior; no se especifican modelos concretos como A100, H100 o RTX 4090.
-- Viabilidad en GPU de consumo: sí, según el autor, en tarjetas con 16 GB de VRAM usando la cuantización Q4_K_M; con 12 GB se recomienda Q3_K_M.
-- Opciones de despliegue: la aplicación propietaria empaquetada (Windows y Linux) y el formato GGUF, compatible con runners habituales de llama.cpp; también se declara compatibilidad con endpoints.
-- Latencia y throughput: no disponibles.
+- VRAM mínima indicada por el autor: 16 GB en GPU de serie 20 o superior.
+- Configuración alternativa: 8 GB de VRAM + 32 GB de RAM del sistema.
+- Sin GPU dedicada: es posible usar solo la API en línea (variante "API纯净版").
+- Cuantizaciones recomendadas por el autor para el modelo de 27B: Q4_K_M para 16 GB de VRAM y Q3_K_M para 12 GB de VRAM.
+- El paquete incluye llama-server y Strata como motores de inferencia; no se documenta soporte de vLLM ni TGI.
+- No se proporcionan datos de latencia ni de throughput.
+- Tamaño del repositorio: 166,7 GB, lo que incluye paquetes de software, pesos y material de tutorial.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría con datos verificables de parámetros, contexto, rendimiento y licencia que permitan establecer una comparación rigurosa.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Easy-TRPG (este repositorio) | ~26,9 mil millones | no disponible | MIT | Paquete de software + pesos para TRPG local |
+| Dongfangshuo-27B-v4 | no disponible en esta ficha | no disponible | no disponible | Modelo de rol/chat recomendado por el mismo autor |
+| Dongfangshuo-27B-Novel | no disponible en esta ficha | no disponible | no disponible | Modelo para escritura de novela del mismo autor |
+
+No se dispone de información suficiente para comparar con alternativas de otros autores en parámetros, contexto o rendimiento; los datos de benchmark no están publicados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La documentación técnica es muy escasa: no hay datos de arquitectura, contexto, dataset ni evaluación, lo que impide validar el rendimiento real del modelo.
-- El proyecto está en fase alpha (alpha 1.5), con la inestabilidad y los cambios de comportamiento que ello implica para producción.
-- El soporte lingüístico se limita a chino e inglés; no se declara ni garantiza un rendimiento adecuado en castellano.
-- Riesgo de alucinación inherente a los modelos generativos, especialmente en narrativa de rol donde la coherencia de hechos y fichas de personaje puede degradarse en sesiones largas.
-- No se documentan sesgos conocidos, pero la ausencia de información sobre el dataset de entrenamiento impide evaluar sesgos de género, culturales o de contenido.
-- La licencia MIT permite uso comercial, pero el paquete incluye binarios de software cuya procedencia y dependencias no se detallan; conviene auditar los componentes antes de redistribuirlos.
-- El tamaño del repositorio (162,7 GB) implica requisitos de almacenamiento y ancho de banda considerables para la descarga.
-- La aplicación está empaquetada para Windows y Linux; no se menciona soporte para macOS.
+- La model card está redactada íntegramente en chino; no hay documentación técnica en castellano ni en otros idiomas distintos del chino y el inglés.
+- El proyecto se encuentra en estado "alpha 2.0", con posibles cambios incompatibles entre versiones; el propio autor recomienda migrar manualmente `data/` y `models/` al actualizar.
+- Solo se declaran los idiomas chino e inglés; el rendimiento en castellano no está verificado y podría degradarse notablemente.
+- No se documentan sesgos, tasas de alucinación ni evaluaciones de seguridad del modelo.
+- El contenido del ecosistema está orientado a rol y narrativa, con modelos del mismo autor etiquetados como NSFW; conviene revisar las políticas de uso en entornos profesionales o educativos.
+- Aunque la licencia es MIT, los modelos de terceros que la aplicación recomienda descargar pueden tener licencias distintas; es necesario verificar cada uno por separado antes de un uso comercial.
+- El tamaño del repositorio (166,7 GB) implica requisitos de almacenamiento y ancho de banda considerables para la descarga inicial.
+- No hay información sobre el contexto máximo soportado, lo que impide planificar sesiones de rol de larga duración con garantías.
+- No se documenta soporte de *tool calling* ni de agentes, por lo que integraciones automatizadas más allá del chat requerirían trabajo adicional.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/dongfangshuo/Easy-TRPG
-- Paquete Windows con GPU local: https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_Windows%E7%BA%AF%E5%87%80%E7%89%88_alpha1.5.zip
-- Paquete Windows solo API: https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_API%E7%BA%AF%E5%87%80%E7%89%88_alpha1.5.zip
-- Paquete Linux: https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_Linux%E7%BA%AF%E5%87%80%E7%89%88_alpha1.5.tar.gz
-- Modelo recomendado para partidas y chat: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4
-- Modelo recomendado para escritura de novela: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-Novel
-- Modelo recomendado para equipos con poca VRAM: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-Flash-Next-NSFW
+- Modelo recomendado para rol/chat: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4
+- Modelo recomendado para novela: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-Novel
+- Modelo ligero recomendado: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-Flash-Next-NSFW
+- Paquete Windows: https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_Windows%E7%BA%AF%E5%87%80%E7%89%88_alpha2.0.zip
+- Paquete API (sin GPU): https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_API%E7%BA%AF%E5%87%80%E7%89%88_alpha2.0.zip
+- Paquete Linux: https://huggingface.co/dongfangshuo/Easy-TRPG/resolve/main/AI%E8%B7%91%E5%9B%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0_Linux%E7%BA%AF%E5%87%80%E7%89%88_alpha2.0.tar.gz

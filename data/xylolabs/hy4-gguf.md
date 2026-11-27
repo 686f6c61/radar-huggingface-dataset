@@ -2,59 +2,59 @@
 
 ## Resumen
 
-Hy4 es un modelo multimodal de tipo image-text-to-text desarrollado por Tencent, distribuido en este repositorio por Xylolabs en formato GGUF para su uso con llama.cpp. Se trata de un modelo de arquitectura MoE (mixture of experts) con aproximadamente 770.000 millones de parámetros totales, lo que lo sitúa en la categoría de modelos de gran escala orientados a razonamiento, generación de texto y comprensión de imágenes. Su relevancia actual radica en que permite ejecutar un modelo de este tamaño en hardware de gama alta mediante cuantización agresiva (desde Q8_0 hasta IQ2_XXS) y offloading de expertos a RAM del sistema.
+Hy4-GGUF es la coleccion de cuantizaciones GGUF del modelo multimodal tencent/Hy4, preparada por Xylolabs para su uso con llama.cpp. El modelo base es un transformer de tipo mixture-of-experts (MoE) de gran escala, con 769.907.408.797 parametros totales segun los pesos en safetensors, orientado a tareas de imagen-texto-a-texto (image-text-to-text). La relevancia de esta publicacion radica en que permite ejecutar un modelo de casi 770.000 millones de parametros en hardware de gama alta mediante cuantizacion agresiva, incluyendo opciones que caben en estaciones de trabajo con memoria unificada.
 
-El repositorio ofrece cinco niveles de cuantización (Q8_0, Q6_K, Q4_K_M, IQ3_S e IQ2_XXS), cada uno dividido en 13 partes, además de proyectores de visión (mmproj) en BF16 y Q8_0 e importance matrices para cuantización IQ. El modelo base es tencent/Hy4 y los pesos están publicados bajo la Tencent Hy License, versión 1.0, con términos adicionales para operadores de Model-as-a-Service a gran escala.
+El repositorio ofrece cinco niveles de cuantizacion del modelo de texto (Q8_0, Q6_K, Q4_K_M, IQ3_S e IQ2_XXS), cada uno dividido en 13 partes, ademas de proyectores de vision en BF16 y Q8_0 y matrices de importancia (imatrix) para mejorar la precision de las cuantizaciones de baja profundidad de bits. El tamano total del repositorio es de 2477,3 GB.
 
-La ficha se centra en la versión GGUF, que es la que distribuye Xylolabs, si bien muchos de los datos técnicos del modelo subyacente (arquitectura interna, datos de entrenamiento, benchmarks) no están disponibles en la información proporcionada y se indican como tales.
+La licencia es la Tencent Hy License, Version 1.0, una licencia propia del autor del modelo base que no es de codigo abierto estandar y que debe revisarse antes de cualquier uso comercial. Los idiomas declarados son ingles y chino. El soporte en llama.cpp depende de un pull request (#32517) que, en el momento de la publicacion, no estaba fusionado en la rama principal.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) multimodal image-text-to-text, según tags del repositorio; detalles internos no disponibles |
-| Parámetros totales | 769.907.408.797 (≈770 B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | hasta 1M tokens según la tabla de hardware (configuración de 8×H200/B200 con Q8_0); contextos menores (32K, 64K, 256K) según memoria disponible |
-| Tipos de cuantización | Q8_0, Q6_K, Q4_K_M, IQ3_S, IQ2_XXS; proyectores de visión en BF16 y Q8_0; importance matrices (imatrix e imatrix.ub12288) |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text) |
+| Parametros totales | 769.907.408.797 |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 1M tokens segun configuracion de hardware (512K en 512 GB unificados, 256K en 282-564 GB, 64K en 256 GB) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q4_K_M, IQ3_S, IQ2_XXS; proyectores de vision en BF16 y Q8_0 |
 | Idiomas soportados | en, zh |
-| Licencia | tencent-hy-license (Tencent Hy License, Version 1.0), con términos adicionales para operadores de Model-as-a-Service |
-| Formato de pesos | GGUF (llama.cpp), dividido en 13 partes por cuantización; mmproj separado para visión |
+| Licencia | Tencent Hy License, Version 1.0 (tencent-hy-license) |
+| Formato de pesos | GGUF (llama.cpp), dividido en 13 partes por cuantizacion |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que Hy4 es un modelo MoE multimodal (tags `moe` y `multimodal`), con pipeline image-text-to-text y un proyector de visión independiente empaquetado como `mmproj-Hy4-BF16.gguf` (2,7 GB) o `mmproj-Hy4-Q8_0.gguf` (1,6 GB). El tamaño total de parámetros (≈770 B) y el hecho de que el repositorio incluya importance matrices para cuantización IQ sugieren un modelo de gran escala con expertos dispersos, aunque no se detallan en la información proporcionada el número de expertos, la proporción de parámetros activos ni la arquitectura exacta (transformer denso, MoE híbrido, atención lineal, etc.).
+El modelo base tencent/Hy4 es un transformer multimodal con arquitectura mixture-of-experts, segun las etiquetas del repositorio (moe, multimodal). La publicacion de Xylolabs no detalla la composicion del dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponderia a la model card del modelo base, que no se incluye en la informacion disponible.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Los únicos datos técnicos verificables son los de cuantización: la model card reporta divergencia KL media y acuerdo top-1 frente al modelo BF16 medidos con llama.cpp sobre WikiText-2, chat y texto reservado, con una "attention-rounding floor" de KL ≈0,034 propia del soporte de Hy4 en llama.cpp. El soporte de Hy4 en llama.cpp está disponible a través del PR #32517 hasta su fusión.
+La innovacion tecnica principal de esta publicacion es el proceso de cuantizacion: se han generado matrices de importancia (Hy4.imatrix.gguf e Hy4.imatrix.ub12288.gguf) para guiar las cuantizaciones IQ, y se han medido divergencias KL y acuerdos top-1 frente al modelo BF16 en WikiText-2, datos de chat y texto reservado. Ademas, se incluye un proyector de vision separado (mmproj) para el procesamiento de imagenes, lo que confirma el caracter multimodal del pipeline. El soporte de llama.cpp requiere un build especifico del pull request #32517 y limita el parametro `--ubatch-size` a 8192 o menos para evitar salidas incorrectas.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (tag `conversational`).
-- Comprensión de imágenes y texto combinados (pipeline image-text-to-text), con proyector de visión dedicado.
-- Razonamiento y generación de contenido en inglés y chino (únicos idiomas declarados).
-- Arquitectura MoE que permite, en teoría, mayor capacidad efectiva con coste de cómputo reducido por token, aunque no se dispone de la cifra de parámetros activos.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
+- Generacion de texto conversacional y multimodal: el pipeline image-text-to-text indica entrada conjunta de imagenes y texto.
+- Procesamiento de vision mediante el proyector mmproj en BF16 o Q8_0.
+- Razonamiento y conversacion multi-turno (etiqueta conversational).
+- Soporte multilingue limitado a ingles y chino.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- Ejecucion en llama.cpp mediante llama-cli y llama-server.
+- Capacidad de contexto largo: hasta 1M tokens en configuraciones de 8 x H200 o 8 x B200.
+- No se dispone de informacion sobre tool calling, function calling, modo thinking, audio u otras capacidades especiales.
 
 ## Casos de uso
 
-- Asistente multimodal de atención al cliente: el modelo puede procesar capturas de pantalla, facturas o imágenes de producto junto con texto en conversaciones multi-turno, gracias a su pipeline image-text-to-text y a ventanas de contexto que, en configuraciones de 8×H200 o 8×B200 con Q8_0, alcanzan 1M tokens.
-- Análisis documental con imágenes: extracción y razonamiento sobre documentos escaneados, gráficos o diagramas en inglés o chino, usando el proyector de visión Q8_0 (1,6 GB) para reducir huella de memoria.
-- Despliegue en clústeres de gama alta con offloading: con `--n-cpu-moe N` en llama.cpp es posible mantener los expertos en RAM del sistema y las capas restantes en GPU, lo que permite servir el modelo en configuraciones como 4×H200 (564 GB) con Q4_K_M y contexto de 256K.
-- Investigación en cuantización extrema: el repositorio incluye cinco niveles de cuantización con métricas de divergencia KL y top-1 frente a BF16, lo que lo convierte en un banco de pruebas para estudiar el impacto de IQ2_XXS e IQ3_S en modelos MoE multimodales de gran escala.
-- Generación de código y razonamiento técnico en inglés/chino: aunque no se publican benchmarks específicos, el tamaño del modelo y su naturaleza MoE lo orientan a tareas de razonamiento complejo; conviene validar con evaluaciones propias antes de producción.
-- Procesamiento por lotes en estaciones de trabajo con memoria unificada: en Mac Studio M5 Ultra con 512 GB es posible ejecutar IQ3_S (328 GB) con contexto de 512K, adecuado para pipelines offline de análisis de imágenes y texto.
-- Evaluación comparativa de cuantizaciones: las tablas de KL y top-1 permiten seleccionar el nivel de cuantización adecuado según el hardware y la tolerancia a degradación (por ejemplo, Q4_K_M mantiene 90,8% de top-1 en WikiText-2 frente a BF16).
+- Despliegue de un modelo de casi 770.000 millones de parametros en infraestructura propia: con 4 x H200 (564 GB) se puede ejecutar Q4_K_M con 256K de contexto, lo que permite usar un modelo de escala frontier sin depender de APIs externas.
+- Analisis de documentos e imagenes en ingles y chino: el pipeline image-text-to-text y el proyector de vision permiten procesar capturas, diagramas o documentos escaneados junto con instrucciones textuales.
+- Procesamiento de contexto muy largo: con 8 x H200 o 8 x B200 y la cuantizacion Q8_0 se alcanza 1M de tokens, adecuado para analisis de corpus extensos, auditoria de codigo o revision de expedientes completos.
+- Investigacion en cuantizacion: las tablas de divergencia KL y acuerdo top-1 publicadas permiten estudiar el impacto de la cuantizacion en modelos MoE de gran escala, comparando Q4_K_M propio frente a AngelSlim Q4_K_M.
+- Experimentacion en estaciones de trabajo con memoria unificada: en un Mac Studio M5 Ultra de 512 GB se puede ejecutar IQ3_S con 512K de contexto, util para prototipado y evaluacion sin cluster de GPUs.
+- Servicio de inferencia interno con llama-server: la etiqueta endpoints_compatible y el soporte de llama.cpp permiten levantar un endpoint HTTP para integracion en aplicaciones internas, siempre que se cumpla la licencia Tencent Hy.
+- Evaluacion comparativa de cuantizaciones en produccion: la disponibilidad de cinco niveles permite seleccionar el punto de equilibrio entre calidad (KL) y memoria segun el hardware disponible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas de fidelidad de cuantización frente al modelo BF16:
+Los datos publicados corresponden a divergencia KL media y acuerdo top-1 frente al modelo BF16, no a benchmarks de tareas estandar como MMLU o HumanEval.
 
-| Cuantización | Tamaño | WikiText-2 KL | top-1 | Chat KL | top-1 | Held-out KL | top-1 | Answers |
+| Cuantizacion | Tamano | WikiText-2 KL | top-1 | Chat KL | top-1 | Held-out KL | top-1 | Answers |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| BF16 (flash attention off, parte de WikiText-2) | 1541,7 GB | 0,0336 | 95,1% | — | — | — | — | — |
+| BF16 (flash attention off) | 1541,7 GB | 0,0336 | 95,1% | - | - | - | - | - |
 | Q8_0 | 818,5 GB | 0,0373 | 94,6% | 0,1187 | 93,3% | 0,0173 | 96,0% | 5/5 |
 | Q6_K | 638,3 GB | 0,0431 | 93,8% | 0,1235 | 92,8% | 0,0188 | 95,5% | 5/5 |
 | Q4_K_M | 464,1 GB | 0,0920 | 90,8% | 0,1590 | 91,3% | 0,0408 | 93,8% | 5/5 |
@@ -63,40 +63,53 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | AngelSlim IQ2 | 332,4 GB | 0,5673 | 76,9% | 0,4303 | 83,5% | 0,2802 | 83,8% | 5/5 |
 | IQ2_XXS | 219,4 GB | 0,8881 | 70,1% | 0,5610 | 80,7% | 0,4522 | 80,3% | 5/5 |
 
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+
 ## Requisitos de hardware
 
-- VRAM/RAM estimada según la tabla del autor: un archivo cabe cuando su tamaño más la caché KV en f16 a ese contexto más 2 GB de runtime queda por debajo del 90% de la memoria disponible.
-- GPU consumer: RTX 4090 / RTX 3090 (24 GB) no admiten ningún archivo completo; RTX 5090 (32 GB) solo con offloading y contexto de 32K; RTX 6000 Ada o 2×24 GB (48 GB) con offloading y 32K.
-- GPU profesional: una H100 (80 GB) o RTX PRO 6000 Blackwell (96 GB) con offloading y 32K; una H200 (141 GB) con offloading y 32K; una B200 (≈180 GB usables) con offloading y 32K; una B300 (288 GB) con IQ2_XXS y contexto de 256K.
-- Configuraciones multi-GPU: 2×H200 (282 GB) con IQ2_XXS y 256K; 4×H200 (564 GB) con Q4_K_M y 256K; 8×H200 (1.128 GB) con Q8_0 y 1M; 4×B200 (≈720 GB usables) con Q6_K y 64K; 8×B200 (≈1.440 GB usables) con Q8_0 y 1M.
-- Memoria unificada: DGX Spark (128 GB) y Mac Studio M5 Max (128 GB) no admiten ningún archivo completo; Mac Studio M5 Ultra con 256 GB ejecuta IQ2_XXS (219,4 GB) con 64K (requiere elevar el límite de memoria GPU de macOS); con 512 GB ejecuta IQ3_S (328 GB) con 512K.
-- Opciones de despliegue: llama.cpp (PR #32517, aún no fusionado) con `llama-cli` y `llama-server`; compilación con `-DGGML_CUDA=ON` para NVIDIA. Mantener `--ubatch-size` en 8192 o menos, ya que valores superiores pueden producir salidas incorrectas en esta build.
-- Offloading: usar `--n-cpu-moe N` para mantener los expertos de las primeras N capas en RAM del sistema; reducir N para ganar velocidad mientras el modelo siga cabiendo en GPU.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: desde 219,4 GB (IQ2_XXS) hasta 818,5 GB (Q8_0) para el modelo de texto, mas 1,6-2,7 GB del proyector de vision.
+- RTX 4090 / RTX 3090 (24 GB): no cabe ninguna cuantizacion.
+- RTX 5090 (32 GB): solo mediante offload de expertos a RAM del sistema (`--n-cpu-moe 78`), con contexto de 32K.
+- RTX 6000 Ada o 2 x 24 GB (48 GB): offload, contexto de 32K.
+- Una H100 (80 GB): offload, contexto de 32K.
+- RTX PRO 6000 Blackwell (96 GB): offload, contexto de 32K.
+- DGX Spark (128 GB unificados) y Mac Studio M5 Max (128 GB unificados): no cabe ninguna cuantizacion.
+- Una H200 (141 GB) o una B200 (192 GB): offload, contexto de 32K.
+- Mac Studio M5 Ultra (256 GB unificados): IQ2_XXS con 64K de contexto, requiriendo elevar el limite de memoria GPU de macOS.
+- Mac Studio M5 Ultra (512 GB unificados): IQ3_S con 512K de contexto.
+- Una B300 (288 GB) o 2 x H200 (282 GB): IQ2_XXS con 256K de contexto.
+- 4 x H200 (564 GB): Q4_K_M con 256K de contexto.
+- 4 x B200 (768 GB): Q6_K con 64K de contexto.
+- 8 x H200 (1128 GB) u 8 x B200 (1536 GB): Q8_0 con 1M de contexto.
+- Despliegue: llama.cpp (rama del PR #32517), con llama-cli y llama-server. No se mencionan vLLM, Ollama ni TGI para este formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada. La única comparación interna disponible es entre las propias cuantizaciones del repositorio y la variante "AngelSlim" (Q4_K_M e IQ2) incluida en la tabla de fidelidad, donde las cuantizaciones de Xylolabs muestran menor divergencia KL que las de AngelSlim a tamaños comparables (por ejemplo, Q4_K_M: 0,0920 frente a 0,1464 en WikiText-2). Para alternativas de la misma categoría (MoE multimodal de gran escala) no hay datos en la información disponible.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Xylolabs/Hy4-GGUF | 769,9 B (MoE) | hasta 1M segun hardware | GGUF (5 cuantizaciones) | Tencent Hy License 1.0 | Multimodal, requiere llama.cpp PR #32517 |
+| tencent/Hy4 (base) | 769,9 B (MoE) | no disponible | safetensors | Tencent Hy License 1.0 | Modelo original en BF16, 1541,7 GB |
+| AngelSlim Q4_K_M / IQ2 | no disponible | no disponible | GGUF | no disponible | Referencia de cuantizacion alternativa incluida en las tablas de precision |
+
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a inglés y chino; no se declara soporte de castellano ni de otros idiomas.
-- No se han publicado benchmarks de capacidades (razonamiento, código, matemáticas, visión), por lo que el rendimiento real en tareas downstream es desconocido y debe validarse empíricamente.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se documentan mitigaciones específicas.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Licencia Tencent Hy License 1.0 con términos adicionales para operadores de Model-as-a-Service a gran escala; es necesario revisar `LICENSE` y `NOTICE` antes de un uso comercial, y Xylolabs declara no estar afiliado ni respaldado por Tencent.
-- El soporte en llama.cpp depende del PR #32517, no fusionado; la estabilidad y el rendimiento pueden cambiar entre versiones.
-- Restricción técnica: `--ubatch-size` debe mantenerse en 8192 o menos para evitar salidas incorrectas en esta build.
-- Las cuantizaciones bajas (IQ3_S, IQ2_XXS) degradan notablemente la fidelidad: IQ2_XXS cae a 70,1% de top-1 en WikiText-2 y KL de 0,8881, lo que puede ser inaceptable para tareas sensibles.
-- El tamaño del repositorio (2.477,3 GB) y de cada cuantización (13 partes) complica la descarga y el almacenamiento; se requiere planificación de infraestructura.
-- En hardware consumer (RTX 4090/3090) no cabe ningún archivo completo, ni siquiera con offloading según la tabla del autor.
+- La licencia Tencent Hy License, Version 1.0, no es una licencia de codigo abierto estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial.
+- El soporte en llama.cpp depende de un pull request no fusionado (#32517); la API y el comportamiento pueden cambiar.
+- Con `--ubatch-size` superior a 8192 en este build de llama.cpp pueden producirse salidas incorrectas.
+- Las cuantizaciones IQ3_S e IQ2_XXS muestran una degradacion notable de precision (KL de 0,32 y 0,89 en WikiText-2; top-1 de 82,8% y 70,1%), por lo que no son adecuadas para tareas sensibles a la calidad.
+- Idiomas limitados a ingles y chino; no se declara soporte de castellano.
+- No se dispone de informacion sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad.
+- El modelo base no especifica parametros activos, composicion del dataset ni proceso de alineacion, lo que dificulta evaluar su comportamiento en produccion.
+- El enorme requisito de memoria (minimo 219,4 GB para el modelo de texto) excluye su uso en GPUs de consumo sin offload masivo a RAM del sistema.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Hy4-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy4
 - Licencia: https://huggingface.co/Xylolabs/Hy4-GGUF/blob/main/LICENSE
-- PR de llama.cpp con soporte Hy4: https://github.com/ggml-org/llama.cpp/pull/32517
+- Pull request de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/32517
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
-- Paper arXiv 2512.02556: https://arxiv.org/abs/2512.02556
-- Paper arXiv 2603.12201: https://arxiv.org/abs/2603.12201
+- Repositorio de Xylolabs (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq

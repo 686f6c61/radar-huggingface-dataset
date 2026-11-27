@@ -50,5 +50,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "La solution qui accélère la croissance de votre flotte - SCALAR",
+      "url": "https://zf-scalar.com/fr/",
+      "snippet": "SCALAR, la nouvelle plateforme de gestion de flotte de ZF, connecte en temps réel vos camions, vos remorques et vos équipes. …"
+    },
+    {
+      "title": "SCALAR - ZF Platform",
+      "url": "https://app.zf-scalar.com/",
+      "snippet": "A module of the SCALAR platform."
+    },
+    {
+      "title": "Scalar — API Documentation, SDKs & Hosted MCP Servers",
+      "url": "https://scalar.com/",
+      "snippet": "Infrastructure for APIs in the age of agents. From an agent's first read of your docs to its millionth production call, Scalar is the layer …"
+    },
+    {
+      "title": "An easier way to manage and grow your fleet business - SCALAR",
+      "url": "https://zf-scalar.com/",
+      "snippet": "SCALAR, ZF’s newest fleet management platform, connects all your trucks, trailers, teams, and processes in real time so you can …"
+    },
+    {
+      "title": "Scalar (mathematics) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Scalar_(mathematics)",
+      "snippet": "The term scalar is also sometimes used informally to mean a vector, matrix, tensor, or other, usually, \"compound\" value that is …"
+    }
+  ]
 }

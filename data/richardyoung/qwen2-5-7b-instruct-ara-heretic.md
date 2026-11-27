@@ -2,90 +2,88 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-ARA-heretic es un ajuste fino del modelo Qwen/Qwen2.5-7B-Instruct publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored": el objetivo declarado del autor es eliminar o atenuar los mecanismos de rechazo y las capas de alineacion de seguridad del modelo original, de modo que responda a peticiones que el modelo base rechazaria por defecto. La ficha tecnica se apoya en la arquitectura heredada de Qwen2.5-7B-Instruct, un transformer decoder-only denso de 7.615.616.512 parametros (aproximadamente 7,6 mil millones).
+Qwen2.5-7B-Instruct-ARA-heretic es un ajuste fino del modelo Qwen2.5-7B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" (tambien etiquetada como heretic, uncensored y decensored) que busca eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad del modelo original, manteniendo el resto de capacidades. El modelo conserva la arquitectura transformer densa de Qwen2.5, con 7.615.616.512 parametros reales segun los pesos en safetensors, y hereda el contexto extendido de la familia Qwen2.5.
 
-El modelo conserva la ventana de contexto nativa de la familia Qwen2.5 (hasta 32.768 tokens en el modelo base, ampliable mediante RoPE scaling, aunque el autor no documenta modificaciones en este aspecto). Los pesos se distribuyen en formato safetensors y el repositorio ocupa 15,2 GB, lo que corresponde a los pesos en precision bf16/fp16. La licencia declarada es Apache 2.0, si bien el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
+La relevancia de esta ficha es doble: por un lado, documenta una practica creciente en la comunidad open source, la publicacion de variantes sin censura sobre modelos base bien conocidos; por otro, advierte de las implicaciones tecnicas y legales de usar este tipo de pesos en produccion. El modelo esta pensado para generacion de texto y chat, se distribuye en formato transformers/safetensors y requiere acceso restringido (gated) en Hugging Face.
 
-La relevancia de esta publicacion es acotada: se trata de un modelo derivado de un base muy conocido, con 552 descargas y sin likes en el momento de la consulta. No hay documentacion tecnica publicada por el autor sobre el metodo exacto de ablacion, el dataset empleado ni evaluaciones de rendimiento, por lo que cualquier uso en produccion debe partir de una validacion propia. Su interes practico reside en escenarios de investigacion sobre alineacion, red teaming y estudio de comportamientos de rechazo, mas que en aplicaciones comerciales sensibles.
+El autor declara licencia apache-2.0 en las etiquetas, aunque el modelo base Qwen2.5-7B-Instruct tiene su propia licencia (Apache 2.0 para el modelo de 7B segun la familia Qwen2.5), lo que conviene verificar antes de un uso comercial. El repositorio ocupa 15,2 GB y acumula 552 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2.5) |
+| Arquitectura | Transformer denso (familia Qwen2), segun etiqueta qwen2 |
 | Parametros totales | 7.615.616.512 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la ficha del autor; el modelo base Qwen2.5-7B-Instruct soporta 32.768 tokens nativos |
-| Tipos de cuantizacion | no disponible en el repositorio; al ser compatible con transformers y safetensors, admite cuantizacion estandar (GGUF, AWQ, GPTQ) mediante herramientas externas |
-| Idiomas soportados | en (segun la ficha); el modelo base es multilingue, pero el autor solo declara ingles |
-| Licencia | apache-2.0 |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del base Qwen2.5-7B-Instruct) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no confirmadas) |
+| Idiomas soportados | en (segun etiqueta del repositorio) |
+| Licencia | apache-2.0 (segun etiquetas; verificar condiciones del modelo base) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only denso con atencion por causalidad, normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y sesgos de atencion QKV. El modelo base fue entrenado por Alibaba Qwen con un corpus multilingue de varios billones de tokens y posteriormente sometido a ajuste supervisado y optimizacion por preferencias (RLHF/DPO) para alinearlo como asistente conversacional. La innovacion principal de la familia Qwen2.5 respecto a Qwen2 es la ampliacion del corpus de preentrenamiento (hasta 18 billones de tokens en el modelo base) y mejoras en matematicas y codigo.
+El modelo parte de Qwen/Qwen2.5-7B-Instruct, un transformer decoder-only denso de la familia Qwen2. La informacion disponible no detalla la composicion del dataset de ajuste ni el numero de tokens empleados en el proceso de "abliteration". La tecnica de abliteration suele consistir en identificar direcciones de activacion asociadas a comportamientos de rechazo y proyectarlas fuera de los pesos, sin reentrenamiento completo; sin embargo, el repositorio no documenta el metodo exacto aplicado por richardyoung.
 
-Sobre el proceso de "heretic" o ablacion aplicado por richardyoung no hay informacion tecnica publicada: no se documenta el numero de tokens de ajuste, la composicion del dataset, si se empleo DPO, LoRA o una modificacion directa de pesos (abliteration por proyeccion ortogonal de direcciones de rechazo), ni si hubo evaluacion de la degradacion resultante. Tampoco se especifica si se modifico el tokenizador o la configuracion de atencion. Esta ausencia de trazabilidad es el principal caveat tecnico del modelo.
+No se dispone de informacion sobre si hubo RLHF, DPO u otras fases de alineacion posteriores al ajuste. Las etiquetas incluyen referencias a papers (arxiv:2309.00071, arxiv:2407.10671, arxiv:2611.17846), pero la informacion proporcionada no permite confirmar cual corresponde al metodo de entrenamiento o a la evaluacion. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en ingles, heredadas del modelo base.
-- Razonamiento y respuesta a instrucciones con formato de chat (plantilla ChatML de Qwen).
-- Generacion de codigo y resolucion de problemas matematicos a nivel del Qwen2.5-7B-Instruct original, aunque el ajuste de ablacion puede degradar estas capacidades sin evaluacion publica.
-- Reduccion o eliminacion de rechazos ante peticiones que el modelo base filtraria, segun el proposito declarado del autor.
-- Compatibilidad con text-generation-inference y endpoints compatibles (segun tags del repositorio).
-- Soporte de tool calling y function calling: no documentado por el autor; el modelo base lo soporta, pero no hay garantia tras el ajuste.
-- Capacidades de agente y razonamiento multi-paso: no documentadas para esta variante.
-- Capacidades multilingues: el autor solo declara ingles; no se garantiza el rendimiento del base en otros idiomas.
+- Generacion de texto y conversacion multi-turno, heredadas del base Qwen2.5-7B-Instruct.
+- Razonamiento y matematicas a nivel de modelo de 7B, segun las capacidades del base.
+- Generacion de codigo, presumiblemente conservada del base (no verificada en esta variante).
+- Comportamiento "decensored": reduccion o eliminacion de rechazos ante peticiones que el modelo original declinaria.
+- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion del repositorio.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion disponible.
+- Capacidades multilingues: la etiqueta solo declara en, aunque el base Qwen2.5 es multilingue; no confirmado para esta variante.
 - Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y rechazo: el modelo permite estudiar como responde una variante ablacionada frente a la original en conjuntos de prompts de seguridad, comparando tasas de rechazo y calidad de respuesta. Es su uso mas defendible.
-- Red teaming y evaluacion de robustez: util para probar clasificadores de contenido y filtros de moderacion frente a un modelo que presumiblemente evade rechazos.
-- Generacion creativa sin restricciones tematicas: escritura de ficcion con tematicas sensibles (violencia narrativa, personajes moralmente ambiguos) donde el modelo base suele declinar.
-- Analisis de sesgos y comportamiento: estudio de como la ablacion afecta a la calidad, coherencia y toxicidad en comparacion con el base, mediante evaluaciones propias.
-- Prototipado de asistentes conversacionales en ingles: para pruebas internas donde se prioriza la ausencia de filtros sobre la seguridad en produccion.
-- Fine-tuning posterior controlado: servir como punto de partida para experimentos de ajuste donde los rechazos del base interfieren con el objetivo de investigacion.
+- Investigacion sobre alineacion y seguridad: comparar el comportamiento del modelo abliterated frente al base para estudiar que capacidades y sesgos se ven afectados por la eliminacion de rechazos.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tratar temas sensibles sin filtros de rechazo, con revision humana posterior.
+- Red teaming y evaluacion de robustez: usar la variante como modelo adversario para probar clasificadores de contenido y sistemas de moderacion.
+- Experimentos academicos de interpretabilidad: analizar las direcciones de activacion eliminadas y su efecto en las respuestas.
+- Prototipado de chatbots de nicho: entornos controlados donde el operador asume la responsabilidad del contenido y necesita respuestas sin rechazos por defecto.
+- Benchmarking de tecnicas de abliteration: medir la degradacion de capacidades (razonamiento, codigo) respecto al base en tareas estandar.
+- Fine-tuning posterior: servir como punto de partida para ajustes especificos donde el comportamiento de rechazo del base resulta un obstaculo, siempre con las salvaguardas adecuadas en el pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye evaluaciones de MMLU, HumanEval, GSM8K ni metricas de tasa de rechazo (refusal rate) para esta variante. Los resultados del modelo base Qwen2.5-7B-Instruct no son extrapolables al modelo ablacionado sin medicion propia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16/fp16: aproximadamente 15-16 GB solo para pesos, mas overhead de KV cache; se recomienda 24 GB o mas.
-- Cuantizacion en 8 bits: alrededor de 8 GB de VRAM; en 4 bits (GGUF Q4_K_M o AWQ): alrededor de 4,5-5 GB.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bf16 con contexto moderado; RTX 3090/4080 (16-24 GB) para cuantizacion 8 bits.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizacion 4-8 bits; en GPUs de 8 GB solo con cuantizacion agresiva (Q4 o inferior) y contexto reducido.
-- Opciones de despliegue: transformers, text-generation-inference (declarado compatible), vLLM y llama.cpp/Ollama tras conversion a GGUF (no incluida en el repositorio).
-- Latencia y throughput: no disponibles; no hay mediciones publicadas por el autor.
+- VRAM estimada para inferencia: en fp16, aproximadamente 15,2 GB solo para pesos, mas overhead de KV cache; en cuantizacion 8 bits, en torno a 8 GB; en 4 bits, alrededor de 4-5 GB (estimaciones para un modelo denso de 7,6B parametros; las cuantizaciones no estan confirmadas en el repositorio).
+- GPU recomendadas: A100 40/80 GB, H100 para despliegue en fp16 con contexto largo; L40S o RTX A6000 como alternativas.
+- Consumer GPU: cabe en RTX 4090 (24 GB) en fp16 con contexto moderado; en RTX 3090/4080 y gamas de 12-16 GB requeriria cuantizacion.
+- Opciones de despliegue: transformers, text-generation-inference (etiqueta endpoints_compatible), y previsiblemente vLLM y llama.cpp si se generan cuantizaciones GGUF (no confirmadas).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| richardyoung/Qwen2.5-7B-Instruct-ARA-heretic | 7,6 B | no documentado (base: 32.768) | apache-2.0 | Gated | Variante ablacionada sin evaluacion publica |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 | apache-2.0 | Abierto | Modelo base alineado con RLHF/DPO |
-| Meta Llama 3.1 8B Instruct | 8 B | 128.000 | Llama 3.1 Community License | Gated | Alternativa alineada, contexto mayor |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | Abierto | Alternativa densa de tamano similar |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen2.5-7B-Instruct-ARA-heretic | 7,6B | no disponible | apache-2.0 (segun etiquetas) | Variante abliterated, acceso gated |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | no disponible en esta ficha | Apache 2.0 (familia Qwen2.5) | Modelo base alineado, sin restriccion de acceso declarada |
+| Otras variantes abliterated de Qwen2.5-7B | 7,6B | no disponible | variable | Publicadas por la comunidad con metodos y resultados no estandarizados |
 
-La comparacion de rendimiento entre estas variantes no puede establecerse con datos: no hay benchmarks publicados para el modelo heretic, y la ablacion suele degradar capacidades de razonamiento y codigo de forma no cuantificada.
+La comparacion con alternativas de la misma categoria (modelos densos de 7-8B para chat) queda limitada por la ausencia de benchmarks publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el metodo de ablacion, el dataset de ajuste y las evaluaciones: imposible estimar la degradacion de capacidades.
-- Riesgo elevado de generar contenido danino, sesgado o inexacto al haberse atenuado los mecanismos de rechazo del modelo base.
-- Riesgo de alucinacion probablemente igual o superior al del base, sin medicion.
-- Idioma: solo se declara ingles; el rendimiento multilingue del base puede no conservarse.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso es gated y el uso en produccion exige validacion propia de seguridad y calidad.
-- No apto para aplicaciones orientadas a usuarios finales sin moderacion externa robusta.
-- Sin garantia de soporte de tool calling ni de comportamiento de agente tras el ajuste.
-- La fecha de creacion del repositorio (2026-11-05) y la ausencia de likes o discusion sugieren un artefacto de investigacion sin mantenimiento comunitario.
+- La eliminacion de rechazos puede aumentar la probabilidad de generar contenido danino, sesgado o inexacto; no debe desplegarse en produccion sin moderacion externa.
+- Riesgo de alucinacion heredado del base, potencialmente mayor si el ajuste degrada capacidades de razonamiento (no verificado).
+- La etiqueta de idioma solo declara en; el rendimiento en castellano no esta documentado para esta variante.
+- La licencia apache-2.0 figura en las etiquetas, pero el acceso es restringido (gated) y conviene verificar las condiciones del modelo base y del autor antes de uso comercial.
+- No hay documentacion del dataset ni del metodo de entrenamiento, lo que dificulta la reproducibilidad pese a la etiqueta reproducible.
+- Ausencia de benchmarks: no se puede confirmar cuanto rendimiento se conserva respecto al base.
+- Uso responsable: el operador asume la responsabilidad legal y etica del contenido generado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Paper de referencia Qwen2.5 (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
-- Paper de referencia citado en tags (arXiv:2309.00071): https://arxiv.org/abs/2309.00071
+- Paper referenciado (arxiv:2309.00071): https://arxiv.org/abs/2309.00071
+- Paper referenciado (arxiv:2407.10671): https://arxiv.org/abs/2407.10671
+- Paper referenciado (arxiv:2611.17846): no verificable en la informacion disponible

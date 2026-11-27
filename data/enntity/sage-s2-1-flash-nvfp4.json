@@ -5,7 +5,7 @@
   "author": "Enntity",
   "url": "https://huggingface.co/Enntity/Sage-S2.1-Flash-NVFP4",
   "created_at": "2026-11-18T14:19:40.000Z",
-  "updated_at": "2026-11-18T22:21:03.000Z",
+  "updated_at": "2026-11-26T03:30:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

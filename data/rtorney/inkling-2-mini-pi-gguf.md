@@ -2,107 +2,98 @@
 
 ## Resumen
 
-Inkling-2-Mini Pi GGUF es una cuantización GGUF del modelo base Inkling-2-Mini de Thinking Machines, elaborada por Ruben Torney (RTorney) y optimizada específicamente para su ejecución en una Raspberry Pi 5 con 16 GB de RAM usando llama.cpp sobre CPU. El modelo base es un transformer con arquitectura MoE (mixture of experts) de 26.070.390.272 parámetros totales, distribuido bajo licencia Apache 2.0. La particularidad de esta cuantización es que no busca el archivo más pequeño, sino minimizar los bytes leídos por token, que en la Raspberry Pi es el factor limitante de la velocidad de decodificación (ancho de banda de memoria de aproximadamente 11 GB/s).
+Inkling-2-Mini-Pi-GGUF es un conjunto de cuantizaciones GGUF experimentales del modelo base Inkling-2-Mini, desarrollado por Thinking Machines y publicado bajo licencia Apache 2.0. La cuantización corre a cargo de Ruben Torney (RTorney), que mantiene este repositorio como un "set de investigación personal" orientado a ejecutar un modelo MoE de aproximadamente 26.070 millones de parámetros totales en hardware de gama baja: Raspberry Pi 5 con 16 GB de RAM, móviles Android de 12 GB y equipos ARM en general.
 
-El repositorio incluye dos variantes: `Inkling-2-Mini-pi-speed-B.gguf` (11,55 GB, recomendada) y `Inkling-2-Mini-pi-speed-Blite.gguf` (11,32 GB, variante de velocidad con menor calidad). Ambas son solo texto: el codificador de visión (mmproj) no está incluido. La cuantización se generó con `llama-quantize --pure --allow-requantize --imatrix` a partir de la versión UD-Q8_K_XL de Unsloth, con una matriz de importancia de 245.760 tokens que cubre los 128 expertos de los 24 bloques.
+El repositorio no es un lanzamiento oficial ni una familia completa de cuantizaciones: el autor conserva únicamente cinco recetas que considera en la frontera de calidad/tamaño, descartando el resto tras medirlas con divergencia KL frente a la referencia UD-Q8_K_XL. Los ficheros van desde 8,67 GB (Q2) hasta 15,51 GB (Q4), con una variante específica para Raspberry Pi 5 (Pi, 11,39 GB) que prioriza kernels NEON con dot-product en los tensores que se leen en cada token.
 
-La relevancia de esta ficha radica en que documenta un caso poco habitual: un MoE de 26B parámetros cuantizado para hardware ARM de bajo consumo, con métricas de divergencia KL medidas y estimaciones de rendimiento por bytes leídos por token. Es un ejemplo técnico de cuantización consciente del ancho de banda más que del tamaño.
+La relevancia actual del repositorio radica en dos factores: por un lado, demuestra que un MoE de ~26B puede cuantizarse a tipos mixtos (NVFP4 copiado del origen, IQ4_NL, IQ3_S, IQ2_XXS, Q8_0) manteniendo una calidad medida muy cercana a la referencia Q8 (KLD medio de 0,0066 en Q4 y 0,0352 en la variante Pi); por otro, documenta con transparencia las recetas, el imatrix empleado y los experimentos descartados, lo que lo convierte en material útil para quien quiera reproducir o auditar el proceso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture of experts) con núcleo recurrente (loop controllers) |
-| Parametros totales | 26.070.390.272 |
-| Parametros activos | 8 de 128 expertos por token (según la estimación de bytes leídos) |
-| Longitud de contexto | 8k recomendado en Raspberry Pi (contexto nativo del modelo base no disponible) |
-| Tipos de cuantizacion | Q2_K, Q3_K, Q4_K, Q6_K, Q8_0, IQ4_NL, NVFP4 (copia sin pérdida), BF16, F32 |
-| Idiomas soportados | No disponible (el corpus de la imatrix incluye inglés y francés, pero el modelo card no declara idiomas) |
+| Arquitectura | MoE (según tags del repo; detalles de atención no disponibles) |
+| Parametros totales | 26.070.390.272 (dato safetensors del modelo base) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (la evaluación KL usa contexto 1024) |
+| Tipos de cuantizacion | Q2_0, IQ2_XXS, IQ3_S, IQ4_NL, IQ4_XS, NVFP4, Q8_0 (mixtos por tensor) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (llama.cpp); sin proyector multimodal mmproj |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Inkling-2-Mini es un transformer con arquitectura MoE de 26B parámetros totales, con 128 expertos y 24 bloques. Una característica destacable es la presencia de "loop controllers": el núcleo de bloques 6–17 se ejecuta tres veces por token, de modo que hay 48 aplicaciones de capa por token. Esta estructura recurrente explica parte del diseño de la cuantización, que asigna tipos específicos a los tensores de control de bucle (`blk.N.loop_*`).
+El modelo base Inkling-2-Mini es un MoE de 26.070 millones de parámetros totales según los safetensors publicados. La model card del repositorio cuantizado no detalla la arquitectura interna (número de expertos, dimensión oculta, mecanismo de atención) ni los datos de entrenamiento del modelo original; esa información correspondería a la model card de thinkingmachines/Inkling-2-Mini, que no se incluye en la información disponible. Los tags del repositorio confirman la naturaleza MoE y el pipeline conversacional, y el autor indica explícitamente que el modelo es solo texto, sin proyector de visión.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada. La cuantización se realizó con `llama-quantize` usando una matriz de importancia (imatrix) calculada sobre 245.760 tokens de código, texto de plantilla de chat, inglés y francés, con cobertura de los 6.144 expertos (128 expertos × 24 bloques) y al menos 119 tokens por experto. Las decisiones clave de la receta fueron mantener las proyecciones down en 4 bits (un down a 2 bits colapsaba la calidad: KLD media 0,156 y 86,9 % de top-1) y usar Q4_K en la atención en lugar de Q8_0, ya que la atención se lee en cada una de las 48 aplicaciones por token y es donde se ahorran más bytes. La variante B-lite baja la atención a Q3_K, la cabeza de salida a Q4_K y los loop controllers a Q8_0.
+La innovación técnica de este repositorio está en el proceso de cuantización, no en el modelo. El autor parte del GGUF UD-Q8_K_XL de Unsloth y aplica `llama-quantize --pure --allow-requantize` con una importance matrix completa de 1.082 chunks y 245.760 tokens que cubre los 6.144 expertos. Un detalle relevante: los bloques 0–19 del origen ya almacenan los expertos en NVFP4, por lo que se copian sin recuantizar (añadir error cero frente a Q8), mientras que los bloques 20–23 parten de BF16 y se cuantizan a IQ4_NL. Router, norms y convoluciones se mantienen en F32. La variante Pi elige IQ4_NL para los tensores leídos en cada token (downs y atención) porque ese tipo tiene kernel 4×4 NEON con dot-product en Cortex-A76, mientras que NVFP4, Q2_K y Q3_K no lo tienen y degradan el prefill.
 
 ## Capacidades
 
-- Generación de texto conversacional (el tag del repo incluye `conversational`).
-- Razonamiento y procesamiento de código y notas técnicas (el corpus de evaluación de la imatrix es de código y notas técnicas).
-- Soporte multilingüe limitado según la imatrix (inglés y francés), sin declaración oficial de idiomas.
-- Compatible con endpoints OpenAI (`endpoints_compatible` en los tags), lo que permite servir el modelo con una API compatible.
-- Capacidad de visión: el modelo base podría tener codificador de visión, pero esta cuantización es solo texto (mmproj no incluido).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Generación de texto y conversación multi-turno (el repositorio está etiquetado como conversacional).
+- Razonamiento y código: la evaluación de calidad se realizó sobre un corpus de código y notas técnicas, lo que sugiere uso previsto en ese dominio.
+- Ejecución en ARM de gama baja: variantes pensadas para Raspberry Pi 5 (16 GB) y Android (Termux, 12 GB).
+- Inferencia con llama.cpp y endpoints compatibles (tag `endpoints_compatible`).
+- Solo texto: no incluye proyector multimodal (mmproj), por lo que no hay visión.
+- Tool calling, function calling y comportamiento agéntico: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (idiomas no declarados).
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Inferencia local en Raspberry Pi 5: el modelo está diseñado para ejecutarse en una Pi 5 de 16 GB con llama.cpp sobre CPU, con 4 hilos, `-lm mmap+mlock` y contexto de 8k. Es adecuado para prototipos y demostraciones de un MoE de 26B en hardware de bajo consumo.
-- Servidor OpenAI-compatible en red local: `pi-run.sh server` levanta un servidor compatible con la API de OpenAI en el puerto 8080, útil para integrar el modelo en herramientas que esperan ese formato sin necesidad de GPU.
-- Procesamiento de código y notas técnicas: la imatrix y la evaluación se centraron en código y notas técnicas, por lo que el modelo es adecuado para tareas de asistencia en programación y resumen de documentación técnica en entornos con recursos limitados.
-- Experimentación con cuantización consciente del ancho de banda: el repositorio incluye scripts (`pi-bench.sh`, `pi-setup.sh`) y recetas (`recipe.txt`, `recipe-Blite.txt`) que sirven como referencia para estudiar el impacto de los tipos de tensor en la velocidad de decodificación.
-- Educación y divulgación: permite demostrar en una Raspberry Pi el funcionamiento de un MoE con 128 expertos y capas recurrentes, con métricas de KLD y bytes por token medibles.
-- Evaluación comparativa de cuantizaciones: las tablas de KLD y bytes por token permiten comparar esta receta con UD-Q2_K_XL de Unsloth en un entorno controlado, útil para investigadores que estudian el trade-off calidad/velocidad.
+- Asistente local en Raspberry Pi 5: con la variante Pi (11,39 GB) y 16 GB de RAM, el modelo cabe en un equipo de placa única y permite un asistente conversacional sin conexión, aprovechando los kernels NEON con dot-product para el prefill.
+- Inferencia en móvil Android de gama alta: la variante Q2 (8,67 GB) está pensada para un teléfono de 12 GB con Termux y contexto corto, útil para prototipos de asistentes offline o pruebas de campo sin dependencia de la nube.
+- Evaluación de cuantizaciones en pipelines de investigación: las recetas documentadas (Q2, Pi, Q3, IQ4, Q4) y la tabla de KLD permiten reproducir el bench con `llama-perplexity --kl-divergence` y comparar recetas propias frente a una referencia medida.
+- Generación asistida de código en entornos con recursos limitados: dado que el corpus de evaluación es código y notas técnicas, es razonable usarlo para autocompletado o explicación de fragmentos en un portátil ARM o en un servidor pequeño, siempre con validación humana.
+- Despliegue en clústeres de placas ARM: la variante Pi permite distribuir instancias en nodos de 16 GB para tareas de procesamiento de texto por lotes, con la ventaja de que el formato GGUF es compatible con llama.cpp y endpoints estándar.
+- Docencia y formación en cuantización: el repositorio incluye las recetas exactas (`recipe-Q4.txt`, `recipe-IQ4.txt`, `recipe-Q3.txt`, `recipe-Pi.txt`), los tipos por tensor y los experimentos descartados, lo que lo hace útil como material de estudio sobre tipos mixtos y matrices de importancia.
+- Prototipado de agentes conversacionales en hardware de bajo consumo: para equipos que necesiten un modelo conversacional local sin GPU dedicada, la variante Q3 (13,34 GB) ofrece el mejor equilibrio tamaño/calidad medido dentro de este conjunto.
 
 ## Benchmarks y rendimiento
 
-Métricas de calidad medidas con `llama-perplexity --kl-divergence` contra UD-Q8_K_XL de Unsloth, contexto 1024, 100 chunks, 51.200 tokens puntuados de código y notas técnicas (disjuntos del corpus de la imatrix):
+Los únicos datos publicados son de divergencia KL frente a UD-Q8_K_XL, medidos en una RTX 3090 con `llama-perplexity --kl-divergence`, contexto 1024, 100 chunks y 51.200 tokens puntuados. La perplejidad de referencia Q8 sobre ese texto es 3,014. No hay resultados de MMLU, HumanEval, GSM8K ni similares en la información disponible.
 
-| Quant | Tamano | KLD media | KLD mediana | KLD p99 | Top-1 igual | PPL |
-|---|---|---|---|---|---|---|
-| Unsloth UD-Q2_K_XL | 9,14 GB | 0,0439 | 0,0049 | 0,425 | 93,0 % | 3,100 |
-| Pi speed B (este repo) | 11,55 GB | 0,0387 | 0,0039 | 0,387 | 93,3 % | 3,087 |
-| Pi speed B-lite (este repo) | 11,32 GB | 0,0573 | 0,0064 | 0,549 | 91,9 % | 3,142 |
-
-La PPL de referencia es 3,014. B-lite se midió con los expertos de los bloques 0–9 en CPU por límite de VRAM; B se midió completamente en GPU. El autor advierte que el texto de evaluación es más fácil que el que publica Unsloth, por lo que las filas deben compararse entre sí y no con otras model cards.
-
-Estimación de bytes leídos por token (sin KV cache; cuenta 8 de 128 expertos, 48 aplicaciones de capa, cabeza completa y una fila de embedding):
-
-| Quant | Total | Expertos | Atención | Cabeza | Loop controllers | Techo a 11 GB/s |
-|---|---|---|---|---|---|---|
-| Unsloth UD-Q2_K_XL | 2,93 GB | 1,02 | 1,25 | 0,26 | 0,34 | ~3,8 tok/s |
-| Pi speed B | 2,61 GB | 1,26 | 0,74 | 0,38 | 0,17 | ~4,2 tok/s |
-| Pi speed B-lite | 2,24 GB | 1,26 | 0,57 | 0,26 | 0,09 | ~4,9 tok/s |
-
-El autor indica que estas cifras aún no se han medido en una Raspberry Pi real; deben obtenerse con `scripts/pi-bench.sh`. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Quant | Tamano | KLD media | KLD mediana | KLD p99 | Mismo top-1 | PPL | Δ PPL |
+|---|---|---|---|---|---|---|---|
+| Q4 | 15,51 GB | 0,0066 ± 0,0001 | 0,00054 | 0,075 | 97,4% | 3,019 | +0,005 |
+| IQ4 | 15,00 GB | 0,0096 ± 0,0002 | 0,00085 | 0,106 | 96,7% | 3,020 | +0,006 |
+| Q3 | 13,34 GB | 0,0166 ± 0,0002 | 0,0015 | 0,179 | 95,6% | 3,043 | +0,029 |
+| Pi | 11,39 GB | 0,0352 ± 0,0004 | 0,0035 | 0,348 | 93,7% | 3,078 | +0,064 |
+| Q2 | 8,67 GB | 0,0691 ± 0,0007 | 0,0084 | 0,653 | 91,3% | 3,151 | +0,137 |
+| UD-Q2_K_XL (Unsloth, mismo bench) | 9,14 GB | 0,0439 | 0,0049 | 0,425 | 93,0% | 3,100 | +0,086 |
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el modelo completo debe caber en RAM. Las variantes ocupan 11,55 GB (B) y 11,32 GB (B-lite), por lo que encajan en una Raspberry Pi 5 de 16 GB.
-- GPU recomendadas: no se especifican para esta cuantización; el autor usó una RTX 3090 para medir KLD. Para el modelo base no hay datos de VRAM en la información disponible.
-- Consumer GPU: no hay datos específicos; el tamaño de 11,55 GB podría caber en GPUs con 12 GB o más, pero no se ha verificado.
-- Despliegue: llama.cpp (fork de Unsloth, upstream b12572 más 30 commits fijados), con scripts `pi-setup.sh`, `pi-run.sh` y `pi-bench.sh`. El servidor es compatible con la API de OpenAI en el puerto 8080. No se mencionan vLLM, Ollama ni TGI.
-- Configuración recomendada en Raspberry Pi: 4 hilos, `-lm mmap+mlock` (subir antes el límite de memlock), contexto 8k, refrigeración activa y fuente de 27 W, sin swap ni zram.
-- Latencia y throughput: techo estimado de ~4,2 tok/s (B) y ~4,9 tok/s (B-lite) a 11 GB/s de ancho de banda; no medido en Pi. En máquinas con GPU y expertos en CPU (`-ot`) hay que añadir `--no-op-offload` para evitar NaN en perplejidad y KLD.
+- VRAM/RAM estimada: entre 8,67 GB (Q2) y 15,51 GB (Q4) de memoria para los pesos; hay que sumar el espacio del contexto KV, que depende de la longitud configurada y no está cuantificado en la información disponible.
+- Raspberry Pi 5 de 16 GB: variante Pi (11,39 GB), diseñada para Cortex-A76 con NEON y dot-product (sin i8mm), donde IQ4_NL dispone de kernel 4×4.
+- Móvil Android de 12 GB: variante Q2 (8,67 GB) con Termux y contexto corto.
+- GPU de escritorio: la RTX 3090 se usó para el bench con el modelo completo en GPU (`-ngl 99 --no-op-offload`), lo que confirma que las variantes de 15 GB caben en 24 GB de VRAM. GPU recomendadas concretas (A100, H100, RTX 4090): no disponibles en la información proporcionada.
+- Despliegue: llama.cpp (herramientas `llama-quantize`, `llama-perplexity`); el tag `endpoints_compatible` sugiere compatibilidad con endpoints estándar. vLLM, Ollama y TGI no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Calidad (KLD media) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Inkling-2-Mini Pi speed B | 26,07B (MoE) | 8k recomendado en Pi | 0,0387 | Apache 2.0 | GGUF en este repo |
-| Inkling-2-Mini Pi speed B-lite | 26,07B (MoE) | 8k recomendado en Pi | 0,0573 | Apache 2.0 | GGUF en este repo |
-| Unsloth UD-Q2_K_XL (mismo base) | 26,07B (MoE) | No disponible | 0,0439 | Apache 2.0 | GGUF de Unsloth |
+La información disponible solo permite comparar con el GGUF de Unsloth del mismo modelo base; no hay datos de otros modelos de tamaño o categoría equivalentes.
 
-No se dispone de información sobre otros modelos comparables de la misma categoría (MoE de ~26B para hardware ARM) en la información proporcionada.
+| Modelo | Parametros | Contexto | Calidad medida | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Inkling-2-Mini-Pi-GGUF (Q2) | 26,07B totales | no disponible | KLD 0,0691; top-1 91,3% | Apache 2.0 | Hugging Face |
+| UD-Q2_K_XL (Unsloth, mismo base) | 26,07B totales | no disponible | KLD 0,0439; top-1 93,0% | Apache 2.0 | Hugging Face |
+| Alternativas de otros autores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo texto: el codificador de visión (mmproj) no está incluido, por lo que no hay capacidades multimodales en esta cuantización.
-- Calidad degradada respecto al modelo original: la KLD media de 0,0387 (B) y 0,0573 (B-lite) frente a la referencia implica pérdida de fidelidad, especialmente en B-lite.
-- La variante B-lite reduce la calidad por debajo de UD-Q2_K_XL (KLD 0,0573 frente a 0,0439) a cambio de velocidad.
-- Las cifras de rendimiento en Raspberry Pi son estimaciones por bytes leídos por token, no medidas reales.
-- En máquinas con GPU y expertos en CPU, sin `--no-op-offload` se obtienen NaN en perplejidad y KLD; no se ha comprobado si afecta a ejecuciones solo CPU.
-- El servidor `pi-run.sh` escucha en todas las interfaces sin clave de API; debe usarse en red de confianza o añadir `--api-key`.
-- Requiere el fork de llama.cpp de Unsloth (upstream b12572 más 30 commits fijados); no funciona con llama.cpp estándar sin esos cambios.
-- Sesgos y riesgo de alucinación: no disponible en la información proporcionada.
-- Idiomas: no declarados oficialmente; la imatrix solo cubre inglés y francés, por lo que el rendimiento en castellano no está verificado.
-- Licencia Apache 2.0 permite uso comercial, pero la calidad de la cuantización debe validarse en el caso de uso concreto.
+- Carácter experimental: el autor lo declara explícitamente como "personal research set, not a release"; los números provienen de una única ejecución de KLD sobre un único corpus y pueden variar si cambian la receta, la imatrix o la build de llama.cpp.
+- Solo texto: no se incluye proyector multimodal (mmproj), por lo que no hay capacidades de visión.
+- Idiomas no declarados: no hay información sobre cobertura multilingüe ni sobre calidad fuera del inglés técnico del corpus de evaluación.
+- Contexto no especificado: la evaluación usa 1024 tokens; se desconoce la ventana nativa del modelo base y su comportamiento en contextos largos.
+- Riesgo de alucinación y sesgos: no hay documentación específica en la información disponible; al ser un modelo conversacional, aplican los riesgos habituales y requiere validación en producción.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base thinkingmachines/Inkling-2-Mini y del GGUF de Unsloth del que deriva.
+- Comparaciones de KLD: el propio autor advierte que este texto es más fácil que el corpus multilingüe de Unsloth y que el bench BF16 de Atomic Chat, por lo que las cifras no deben trasladarse a tablas publicadas en otros repositorios.
+- Tipos mixtos: la calidad depende de la receta por tensor; usar una cuantización estándar del mismo tamaño puede dar resultados peores (el autor documenta varios experimentos descartados por estar dominados).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/RTorney/Inkling-2-Mini-Pi-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Perfil del autor: https://huggingface.co/RTorney
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.
+- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

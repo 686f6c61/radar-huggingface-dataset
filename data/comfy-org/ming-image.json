@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/Ming-Image",
   "created_at": "2026-09-24T07:13:14.000Z",
-  "updated_at": "2026-10-10T08:45:41.000Z",
+  "updated_at": "2026-11-26T13:26:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,13 +19,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 67,
+  "likes": 78,
   "downloads_30d": 59270,
-  "trending_score": 10,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 162408496865,
-  "storage_human": "162.4 GB",
+  "storage_bytes": 213214840346,
+  "storage_human": "213.2 GB",
   "context_length": null,
   "base_model": "inclusionAI/Ming-Image-0.1-Design, inclusionAI/Ming-Image-0.1-Design-Layer",
   "formats": [],
@@ -42,7 +42,7 @@
     {
       "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
       "url": "https://github.com/Comfy-Org/ComfyUI",
-      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+      "snippet": "Use --offline to disable the optional paid Comfy API nodes and force all built-in functionality to stay offline, or --disable-partner-nodes …Read more"
     }
   ]
 }

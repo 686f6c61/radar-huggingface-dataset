@@ -2,51 +2,51 @@
 
 ## Resumen
 
-WeMM-Ecom-35B-A3B-GGUF es la versión cuantizada en formato GGUF del modelo multimodal WeMM-Ecom-35B-A3B publicado por Tencent. El repositorio lo mantiene mradermacher, un conocido publicador de cuantizaciones estáticas de modelos open source, y está pensado para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). El modelo base es un transformer multimodal de tipo Mixture of Experts (MoE) con 34.660.610.688 parámetros totales, orientado a tareas de comercio electrónico y conversación.
+WeMM-Ecom-35B-A3B es un modelo multimodal de tipo mezcla de expertos (MoE) desarrollado por Tencent, orientado a conversaciones y tareas del dominio del comercio electronico. Este repositorio concreto, publicado por mradermacher, contiene las cuantizaciones estaticas en formato GGUF del modelo original, lo que permite su ejecucion en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo base esta etiquetado con la arquitectura `qwen3_5_moe`, lo que sugiere una variante MoE de la familia Qwen 3.5, con un total de 34.660.610.688 parametros (aproximadamente 34,7 mil millones) y un nombre que indica 3 mil millones de parametros activos por token.
 
-La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de aproximadamente 35B parámetros en configuraciones de hardware de consumidor mediante cuantizaciones de 2 a 8 bits, algo imposible con los pesos en precisión completa. Al tratarse de una cuantización del modelo de Tencent, hereda sus capacidades multimodales y su enfoque en dominios de e-commerce, aunque la información pública disponible sobre el modelo base es limitada en este repositorio.
+La relevancia de esta ficha radica en que el repositorio GGUF facilita el despliegue local de un modelo multimodal especializado en e-commerce, un nicho con demanda creciente para atencion al cliente, catalogacion de productos y generacion de contenido comercial. El modelo original se distribuye bajo licencia Apache 2.0, y las cuantizaciones mantienen esa misma licencia. El repositorio tiene un tamano de 238,6 GB, coherente con la suma de todas las variantes de cuantizacion incluidas.
 
-El repositorio tiene un tamaño de 34,3 GB e incluye múltiples variantes de cuantización (Q2_K hasta Q8_0, además de IQ4_XS y F16). No se dispone de datos sobre licencia, idiomas soportados ni pipeline en la información proporcionada, por lo que estos aspectos deben verificarse en el repositorio del modelo original de Tencent antes de un uso en producción.
+La informacion disponible sobre el modelo base es limitada: la model card del repositorio GGUF es fundamentalmente una ficha de cuantizacion generada por mradermacher, sin detalles sobre datos de entrenamiento, benchmarks o contexto maximo. Por tanto, varios campos de esta ficha se marcan como "no disponible" de forma explicita.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), transformer multimodal (según nombre del modelo base) |
-| Parametros totales | 34.660.610.688 (34,66B) |
-| Parametros activos | no disponible (el nombre "A3B" sugiere ~3B activos, sin confirmar) |
+| Arquitectura | MoE (mezcla de expertos), etiquetada como `qwen3_5_moe`; multimodal |
+| Parametros totales | 34.660.610.688 (aprox. 34,7 B) |
+| Parametros activos | 3 B (segun el sufijo A3B del nombre; no confirmado en la model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, ademas de mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | zh, en (segun los tags de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base WeMM-Ecom-35B-A3B es un transformer con arquitectura Mixture of Experts, según se deduce de la nomenclatura "A3B" (habitual para indicar parámetros activos en modelos MoE) y del tamaño total de 34,66B parámetros. El prefijo "WeMM" y el sufijo "Ecom" apuntan a un modelo multimodal ("We" de WeChat/Multimodal) especializado en comercio electrónico, desarrollado por Tencent. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
+El modelo sigue una arquitectura de mezcla de expertos (MoE) con un total de aproximadamente 34,7 mil millones de parametros y, segun la convencion de nombres, unos 3 mil millones activos por token. La etiqueta `qwen3_5_moe` indica que deriva de la familia Qwen 3.5 en su variante MoE, y la presencia de ficheros `mmproj` (proyeccion multimodal) en el repositorio confirma que incorpora capacidades de vision, probablemente mediante un proyector que conecta un codificador visual con el modelo de lenguaje. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La innovación principal de este repositorio concreto es la cuantización estática realizada con herramientas de llama.cpp (los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`), que permite reducir el peso del modelo desde los ~69 GB en FP16 hasta aproximadamente 34,3 GB en el conjunto del repositorio, con variantes individuales desde ~12 GB (Q2_K) hasta ~37 GB (Q8_0). No se documentan innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal en la información disponible.
+La model card del repositorio GGUF no aporta detalles sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La informacion disponible se limita a los metadatos de cuantizacion: cuantizaciones estaticas generadas con un proceso de conversion `hf` y `quantize_version: 2`, con `output_tensor_quantised: 1`. Existe ademas un repositorio hermano con cuantizaciones ponderadas/imatrix (`mradermacher/WeMM-Ecom-35B-A3B-i1-GGUF`), que suele ofrecer mejor calidad por bit en modelos MoE.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag "conversational" confirma el uso previsto para diálogo multi-turno.
-- Capacidades multimodales: el nombre del modelo base ("WeMM") sugiere entrada de imagen además de texto, aunque no se detalla en la información disponible.
-- Especialización en comercio electrónico: el sufijo "Ecom" indica entrenamiento o ajuste orientado a tareas de e-commerce (descripción de productos, atención al cliente, recomendación).
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse mediante APIs compatibles con el formato de Hugging Face/OpenAI.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no confirmado en la información disponible.
+- Generacion de texto conversacional en chino e ingles, orientada al dominio del comercio electronico.
+- Procesamiento multimodal: los ficheros `mmproj` indican soporte de entrada de imagenes junto con texto.
+- Conversaciones multi-turno, segun el tag `conversational`.
+- Razonamiento y generacion de contenido comercial (descripciones de producto, respuestas a clientes) por su especializacion en e-commerce.
+- Capacidades multilingues limitadas a zh y en segun los metadatos; no se confirma soporte de otros idiomas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente en comercio electrónico: el modelo puede gestionar conversaciones multi-turno sobre pedidos, devoluciones y productos, aprovechando su ajuste específico al dominio "Ecom". La cuantización Q4_K_M (~20 GB) permite desplegarlo en un servidor con una sola GPU de 24 GB.
-- Generación de descripciones de producto: dado un conjunto de atributos o una imagen del artículo, el modelo puede redactar fichas de producto coherentes y atractivas, una tarea para la que el ajuste de dominio resulta ventajoso.
-- Clasificación y enrutamiento de consultas: integrado en un pipeline de soporte, el modelo puede categorizar tickets de clientes y derivarlos al equipo adecuado, usando la variante Q8_0 para maximizar fidelidad.
-- Despliegue local en estación de trabajo: con la variante Q4_K_S (~18 GB) cabe en una RTX 4090 (24 GB) o en una RTX 3090, permitiendo prototipado sin coste de API.
-- Pruebas de concepto en Ollama/LM Studio: la disponibilidad de GGUF permite cargar el modelo directamente en estas herramientas para evaluar su comportamiento antes de invertir en infraestructura.
-- Investigación sobre cuantización: al ofrecer 12 variantes de cuantización, el repositorio sirve para estudiar la degradación de calidad de un MoE multimodal según el nivel de compresión.
-- Asistente de recomendación de productos: el modelo puede generar recomendaciones personalizadas a partir de historial de compras y catálogo, aprovechando su especialización en e-commerce.
+- Atencion al cliente automatizada en comercio electronico: el modelo puede gestionar conversaciones multi-turno en chino e ingles, respondiendo consultas sobre pedidos, devoluciones y disponibilidad de productos, aprovechando su especializacion en el dominio.
+- Generacion de descripciones de producto: a partir de imagenes de articulos (gracias al modulo multimodal) y atributos estructurados, el modelo puede redactar fichas de producto en zh y en, reduciendo el trabajo manual de catalogacion.
+- Clasificacion y etiquetado de imagenes de producto: el proyector multimodal permite analizar fotografias de articulos para asignar categorias, detectar atributos visuales o verificar la coherencia entre imagen y descripcion.
+- Asistentes de compra conversacionales: integrado en una tienda online, puede recomendar productos, comparar alternativas y resolver dudas en tiempo real, con un coste de inferencia contenido gracias a sus 3 B de parametros activos.
+- Moderacion y analisis de resenas: el modelo puede procesar resenas de clientes y detectar quejas recurrentes, sentimiento o incidencias de calidad, apoyandose en su conocimiento del dominio comercial.
+- Generacion de respuestas para correo y mensajeria postventa: redaccion automatizada de respuestas a reclamaciones y solicitudes de soporte, con tono comercial y en dos idiomas.
+- Despliegue local en entornos con recursos limitados: las cuantizaciones Q4_K_M (21,3 GB) o Q3_K_M (16,9 GB) permiten ejecutar el modelo en estaciones de trabajo con GPU de consumo alta o en servidores con VRAM moderada mediante llama.cpp.
 
 ## Benchmarks y rendimiento
 
@@ -54,50 +54,54 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de archivo y overhead de contexto):
-  - Q2_K: ~12-14 GB
-  - Q3_K_M: ~15-17 GB
-  - Q4_K_S: ~18-20 GB
-  - Q4_K_M: ~20-22 GB
-  - Q5_K_M: ~24-26 GB
-  - Q6_K: ~28-30 GB
-  - Q8_0: ~36-38 GB
-  - F16: ~69 GB
-- GPU recomendadas:
-  - Consumer: RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; RTX 3090 (24 GB) equivalente.
-  - Profesional: A100 40 GB o H100 80 GB para Q8_0 o F16.
-  - Multi-GPU: necesaria para Q6_K en adelante si no se dispone de 40 GB+.
-- Cabe en consumer GPU: sí, hasta Q5_K_M en una GPU de 24 GB; Q6_K y Q8_0 requieren 32 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python; servidores compatibles con endpoints (tag "endpoints_compatible"). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles en la información proporcionada. Al ser un MoE con ~3B activos (según nomenclatura), se espera un throughput superior al de un modelo denso de 35B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia segun cuantizacion (pesos, sin contar cache KV):
+  - Q2_K: 13,0 GB
+  - Q3_K_S: 15,3 GB
+  - Q3_K_M: 16,9 GB
+  - Q3_K_L: 18,2 GB
+  - IQ4_XS: 19,0 GB
+  - Q4_K_S: 20,0 GB
+  - Q4_K_M: 21,3 GB
+  - Q5_K_S: 24,1 GB
+  - Q5_K_M: 24,8 GB
+  - Q6_K: 28,6 GB
+  - Q8_0: 37,0 GB
+  - Proyector multimodal: mmproj-Q8_0 (0,7 GB) o mmproj-f16 (1,0 GB)
+- GPU recomendadas: para Q8_0, una A100 40 GB o H100; para Q4_K_M, una RTX 4090 (24 GB) o A6000 (48 GB); para Q3_K_M, una RTX 4090 o RTX 3090 (24 GB) con margen para cache KV.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en RTX 4080 (16 GB) solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF y con soporte de `mmproj` para la parte multimodal; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI en plataformas de inferencia.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre el modelo base ni sobre alternativas comparables en la información proporcionada para establecer una comparativa rigurosa. Como referencia estructural:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| WeMM-Ecom-35B-A3B (este) | 34,7 B totales / 3 B activos | no disponible | Apache 2.0 | GGUF, safetensors | Multimodal, especializado en e-commerce, zh/en |
+| Qwen3.5 MoE (familia base) | segun variante | no disponible | Apache 2.0 (segun familia) | safetensors, GGUF | Modelo generalista del que deriva; sin especializacion comercial |
+| Alternativas MoE multimodales de ~30-40 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| WeMM-Ecom-35B-A3B (este) | 34,66B (MoE) | no disponible | no disponible | GGUF, safetensors |
-| Alternativas MoE ~30-40B | no disponible | no disponible | no disponible | no disponible |
-
-Se recomienda consultar el repositorio del modelo original (tencent/WeMM-Ecom-35B-A3B) para obtener datos comparativos fiables.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos concretos; los datos de rendimiento y contexto del modelo base no estan publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar el uso comercial; es imprescindible verificar la licencia del modelo base de Tencent antes de desplegarlo en producción.
-- Idiomas no documentados: no hay garantía de calidad en castellano ni en idiomas distintos del inglés o chino; se recomienda evaluar empíricamente.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar detalles de productos, precios o políticas; requiere validación en flujos de e-commerce.
-- Sesgos: no documentados en la información disponible; al estar entrenado para e-commerce, puede reflejar sesgos de catálogo y de datos de clientes.
-- Cuantización agresiva: las variantes Q2_K y Q3_K pueden degradar notablemente la calidad, especialmente en tareas multimodales; se recomienda Q4_K_M o superior para producción.
-- Contexto desconocido: sin datos sobre la ventana de contexto, no se puede garantizar el manejo de conversaciones largas o documentos extensos.
-- Capacidades multimodales no verificadas en GGUF: la conversión a GGUF puede no preservar el proyector multimodal (mmproj); el autor no indica si se incluye, por lo que la entrada de imágenes podría no funcionar.
-- Repositorio con 0 descargas y 0 likes: sin validación comunitaria; el modelo no ha sido probado de forma independiente.
+- La model card del repositorio GGUF no documenta sesgos conocidos, datos de entrenamiento ni evaluaciones de seguridad; se desconoce el comportamiento del modelo en dominios sensibles.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en respuestas sobre disponibilidad de productos, precios o politicas comerciales; conviene validar contra fuentes de verdad.
+- Idiomas soportados limitados a chino e ingles segun los metadatos; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- La longitud de contexto no esta especificada, lo que impide planificar despliegues con documentos largos o historiales extensos.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente el rendimiento; la propia model card advierte que Q3_K_M es de "lower quality".
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base (`tencent/WeMM-Ecom-35B-A3B`) por si impone condiciones adicionales.
+- El repositorio tiene 238,6 GB; la descarga completa de todas las variantes requiere espacio en disco considerable. Conviene descargar solo la cuantizacion necesaria.
+- No hay informacion sobre tool calling ni soporte de agentes, lo que limita su uso en pipelines automatizados complejos sin validacion previa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/WeMM-Ecom-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- llama.cpp (runtime recomendado): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
-- LM Studio: https://lmstudio.ai
+- Licencia del modelo base: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B/blob/main/LICENSE
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/WeMM-Ecom-35B-A3B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#WeMM-Ecom-35B-A3B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

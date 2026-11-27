@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Prima-LelantaclesV6.69-7b-GGUF",
+  "slug": "mradermacher-prima-lelantaclesv6-69-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Prima-LelantaclesV6.69-7b-GGUF",
+  "created_at": "2024-12-22T10:19:48.000Z",
+  "updated_at": "2026-11-27T00:03:21.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:ChaoticNeutrals/Prima-LelantaclesV6.69-7b",
+    "base_model:quantized:ChaoticNeutrals/Prima-LelantaclesV6.69-7b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929815424,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "ChaoticNeutrals/Prima-LelantaclesV6.69-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

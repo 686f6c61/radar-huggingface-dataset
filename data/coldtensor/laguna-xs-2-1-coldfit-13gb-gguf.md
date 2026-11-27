@@ -2,99 +2,102 @@
 
 ## Resumen
 
-Laguna-XS-2.1-Coldfit-13GB es una cuantización GGUF del modelo base poolside/Laguna-XS-2.1, un modelo de mezcla de expertos (MoE) orientado a programación desarrollado por Poolside. La cuantización la publica el usuario ColdTensor bajo el nombre "Coldfit" y reduce el peso en disco de 66,9 GB (BF16) a 13,6 GB, aproximadamente una quinta parte del original, sin podar expertos ni reentrenar. El objetivo declarado es hacer viable un modelo de 33.442.617.088 parámetros en tarjetas gráficas de 16 GB.
+Laguna-XS-2.1-Coldfit-13GB-GGUF es una cuantizacion del modelo base `poolside/Laguna-XS-2.1`, un modelo de mezcla de expertos (MoE) de 33.442.617.088 parametros orientado a generacion de codigo y tareas agenticas. La publica el usuario ColdTensor en Hugging Face bajo licencia `openmdw-1.1`, y su proposito principal es hacer viable la ejecucion del modelo completo en GPUs de consumo: reduce el peso de 66,9 GB (GGUF original) a 13,6 GB, un factor de aproximadamente 5x, manteniendo las 41 capas y los 256 expertos por capa sin poda.
 
-La arquitectura del modelo base es MoE con 40 capas, de las cuales 39 son capas MoE con 256 expertos cada una. La cuantización aplica Q2_K a las matrices gate y up de los expertos, Q3_K a las matrices down de los expertos y Q8_0 al resto de matrices cuantizadas, manteniendo en F32 las normas, el router y los sesgos. El resultado es un único fichero GGUF compatible con llama.cpp.
+La relevancia de esta ficha radica en que permite desplegar un modelo de escala frontera (33B) en tarjetas de 16 GB como la RTX 4080 o la RTX 4060 Ti de 16 GB, con 16K de contexto, y en tarjetas de 24 GB como la RTX 4090 con hasta 256K de contexto usando cache KV en q8_0. Segun la model card, la perdida de rendimiento medida frente al original es de entre 0,7 y 2,0 puntos en cuatro benchmarks (HumanEval+, MBPP+, GSM8K y MMLU-500).
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de cuantización mixta agresiva sobre un MoE grande; por otro, el propio autor califica la evidencia como exploratoria y el veredicto de su revisión interna como "NOT READY". El ajuste a 16 GB no se verificó en una tarjeta de 16 GB real, sino mediante un proxy en una RTX 4090 de 24 GB.
+El modelo esta pensado para generacion de texto y codigo en ingles, con soporte de plantilla de chat de Poolside y modo de razonamiento (thinking) configurable. Se distribuye como un unico archivo GGUF compatible con llama.cpp, lo que simplifica su integracion en entornos locales y servidores OpenAI-compatibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE, 40 capas, 256 expertos en cada una de las 39 capas MoE |
+| Arquitectura | Mezcla de expertos (MoE), 256 expertos por capa, 8 activos por token, 41 capas |
 | Parametros totales | 33.442.617.088 |
-| Parametros activos | no disponible |
-| Longitud de contexto | 32.768 tokens (configuracion de evaluacion: `-c 32768`) |
-| Tipos de cuantizacion | Mixta: expertos gate/up en Q2_K, expertos down en Q3_K, resto en Q8_0; normas, router y sesgos en F32 |
-| Idiomas soportados | en (ingles) |
-| Licencia | openmdw-1.1 (heredada del modelo base) |
-| Formato de pesos | GGUF (fichero unico de 13.595.894.880 bytes) |
+| Parametros activos | no disponible (la model card indica 8 de 256 expertos por token, sin cifra total de parametros activos) |
+| Longitud de contexto | 262.144 tokens (256K) en el modelo base; en esta cuantizacion, 16K en 16 GB, 128K en 24 GB con KV f16 y 256K con KV q8_0 |
+| Tipos de cuantizacion | GGUF cuantizado (Coldfit-13GB); KV cache configurable en f16 o q8_0 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | GGUF (un unico archivo, tipos de tensor estandar) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base poolside/Laguna-XS-2.1 es un transformer de mezcla de expertos con 40 capas, donde 39 capas contienen 256 expertos cada una. Esta cuantización no modifica la arquitectura: conserva los 256 expertos de todas las capas sin poda, sin entrenamiento adicional y sin destilación. La única transformación es la reducción de precisión numérica de los pesos.
+El modelo base es un transformer con arquitectura de mezcla de expertos (MoE): 41 capas, 256 expertos por capa y 8 expertos activados por token, lo que da un total de 33.442.617.088 parametros. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens, ni si se emplearon tecnicas de RLHF, DPO u otras fases de alineacion; esa informacion no esta disponible en el material proporcionado.
 
-La estrategia de cuantización es selectiva por tipo de matriz. Las matrices gate y up de los expertos, que concentran la mayor parte de los parámetros, se almacenan en Q2_K (2-3 bits por valor); las matrices down de los expertos en Q3_K; el resto de matrices cuantizables en Q8_0. Las normas, el router de expertos y los sesgos se mantienen en F32 para preservar la estabilidad del enrutamiento. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens, ni si se aplicaron técnicas de RLHF o DPO, ya que la model card de esta cuantización no los detalla.
+La innovacion tecnica de esta publicacion no reside en el entrenamiento sino en la cuantizacion: ColdTensor ha producido un GGUF de 13,6 GB que conserva las 41 capas y los 256 expertos de cada capa, sin poda, y que carga completamente en GPU con `-ngl 999`. La model card menciona soporte de atencion con ventana deslizante (sliding-window KV cache) y flash attention (`-fa on`), asi como la recomendacion de dejar `--swa-full` desactivado. No se documentan en el material tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con pipeline declarado text-generation.
-- Generación y razonamiento sobre código: el modelo base es un modelo de programación de Poolside, y la evaluación incluye HumanEval+ y MBPP+.
-- Razonamiento matemático de tipo escolar: evaluado en GSM8K con 1.319 problemas.
-- Conocimiento general: evaluado en MMLU-500.
-- Compatible con endpoints (tag `endpoints_compatible`) y con llama.cpp mediante llama-server.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Capacidades especiales (visión, audio, modo thinking): no disponible; la evaluación se realizó con thinking desactivado.
+- Generacion de texto y codigo en ingles, con enfasis en tareas de programacion y razonamiento.
+- Modo de razonamiento (thinking) activable, con presupuesto de tokens de pensamiento configurable (4.096 para codigo, 2.048 para el resto, segun la model card).
+- Razonamiento matematico: la model card reporta resultados en GSM8K.
+- Evaluacion de conocimiento general: resultados reportados en MMLU-500.
+- Generacion de codigo evaluada con HumanEval+ y MBPP+.
+- Compatibilidad con la plantilla de chat de Poolside (`--jinja` en llama.cpp).
+- Servidor OpenAI-compatible mediante `llama-server` (endpoint `/completion` y API en el puerto 8080).
+- Soporte de contexto largo: hasta 256K tokens con KV cache q8_0 en GPU de 24 GB.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni otras modalidades en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue de un modelo de código en estaciones de trabajo con GPU de 16 GB: la cuantización reduce el peso a 13,6 GB, lo que permite cargar el modelo en llama.cpp con contexto de 8K o 16K según las mediciones del autor (13.754 MiB y 14.082 MiB respectivamente).
-- Asistencia a la programación en local sin conexión: el modelo mantiene un 85,9% en HumanEval+ y un 74,5% en MBPP+, por lo que puede usarse para autocompletado y generación de funciones Python en entornos aislados.
-- Resolución de problemas matemáticos de nivel escolar: con un 93,9% en GSM8K, es adecuado para tutores automáticos o verificación de ejercicios en inglés.
-- Evaluación comparativa de técnicas de cuantización: sirve como caso de estudio reproducible de cuantización mixta Q2_K/Q3_K/Q8_0 sobre un MoE de 33B, con métricas de regresión publicadas frente al BF16.
-- Prototipado de pipelines de generación de texto con llama-server: el tag `endpoints_compatible` y el soporte en llama.cpp permiten integrarlo en servicios HTTP locales para pruebas.
-- Investigación sobre degradación por cuantización extrema: el autor documenta la coincidencia token a token (86,1% frente al 96,2% de una conversión estándar), lo que permite estudiar el impacto de los 2-3 bits en los expertos.
-- Respuesta a preguntas de conocimiento general en inglés: con un 80,4% en MMLU-500, puede emplearse en asistentes de consulta interna siempre que se acepte una pérdida de 2 puntos frente al original.
+- Asistente de codigo local en estacion de trabajo: con 16K de contexto en una GPU de 16 GB, el modelo puede mantener conversaciones multi-turno sobre un repositorio pequeno o un conjunto de archivos, generando parches y explicaciones sin enviar codigo a servicios externos.
+- Autocompletado y generacion de funciones en el IDE: la cuantizacion permite ejecutar el modelo en la misma maquina del desarrollador, con latencia aceptable para sugerencias inline y sin depender de la nube.
+- Revision de codigo en pipelines de CI: el modelo puede analizar diffs y generar comentarios de revision en ingles, integrado mediante `llama-server` con API compatible con OpenAI.
+- Generacion de tests unitarios: a partir de una funcion y su docstring, el modelo puede producir casos de prueba, aprovechando su rendimiento en HumanEval+ y MBPP+.
+- Razonamiento matematico y resolucion de problemas: util para asistencia en tareas de analisis cuantitativo o generacion de explicaciones paso a paso con el modo thinking activado.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse completamente en local con llama.cpp, es adecuado para organizaciones que no pueden enviar datos a APIs externas.
+- Prototipado de agentes de codigo: la ventana de 128K en GPU de 24 GB permite incluir contexto amplio de repositorio en tareas de refactorizacion o migracion.
+- Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir la degradacion de un MoE de 33B al cuantizarlo a 13,6 GB.
 
 ## Benchmarks y rendimiento
 
-Datos del panel de regresión del autor, ejecutado el 2026-11-18 con llama-server (llama-prism b12128), thinking desactivado, decodificación greedy y contexto de 32.768 tokens. Las diferencias se expresan en puntos con intervalo de confianza del 95% por bootstrap pareado; los valores p son tests exactos de McNemar y, tras corrección por seis tareas, todos resultan 1.
+La model card proporciona una comparacion directa entre el modelo original y esta cuantizacion, medida con el mismo harness:
 
-| Tarea | Items | Coldfit-13GB | Original BF16 | Diferencia [IC 95%] | p |
-|---|---:|---:|---:|---|---:|
-| HumanEval+ (media de 2 pasadas) | 163 | 85,9% | 86,8% | -0,9 [-4,3, +2,5] | 0,508 |
-| MBPP+ (media de 2 pasadas) | 375 | 74,5% | 75,3% | -0,8 [-3,6, +2,0] | 0,851 |
-| GSM8K (1 pasada) | 1.319 | 93,9% (1.239) | 94,6% (1.248) | -0,7 [-1,7, +0,4] | 0,272 |
-| MMLU-500 (1 pasada) | 500 | 80,4% (402) | 82,4% (412) | -2,0 [-4,8, +0,8] | 0,203 |
+| Benchmark | Original | Coldfit-13GB | Diferencia |
+|---|---:|---:|---:|
+| HumanEval+ | 86,8 | 85,9 | -0,9 |
+| MBPP+ | 75,3 | 74,5 | -0,8 |
+| GSM8K | 94,6 | 93,9 | -0,7 |
+| MMLU-500 | 82,4 | 80,4 | -2,0 |
 
-El autor señala que las cuatro tareas empeoran en la misma dirección, aunque ninguna diferencia es significativa por sí sola, y que los datos permiten pérdidas reales de hasta unos 5 puntos. La coincidencia token a token con el modelo de referencia es del 86,1%, frente al 96,2% de una conversión estándar.
+No se han publicado en la informacion disponible resultados comparativos con otros modelos de la misma categoria.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 13.754 MiB con contexto de 8K y 14.082 MiB con 16K, medidos en una RTX 4090 con llama-server; 14.738 MiB con 32K, valor que el autor describe como ajustado.
-- GPU recomendadas: el autor no valida ninguna GPU de 16 GB; las mediciones se hicieron en una RTX 4090 de 24 GB como proxy. La evaluación de calidad se ejecutó en una NVIDIA DGX Spark.
-- Cabe en GPU de consumo: el autor afirma que 8K y 16K caben bajo 16 GB según la simulación, pero no lo ha cargado en ninguna tarjeta de 16 GB real y el límite de 16 GB no llegó a aplicarse en la prueba proxy.
-- Opciones de despliegue: llama.cpp (llama-server de llama-prism b12128 y también llama.cpp estándar b12359, que cargó el fichero y respondió a un prompt de prueba). No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: 13.754 MiB a 8K de contexto, 14.082 MiB a 16K y 14.738 MiB a 32K en una GPU de 24 GB (mediciones con `nvidia-smi`, incluyendo uso del motor).
+- En GPU de 24 GB: 32K con KV f16 usa 14.291,27 MiB de buffers; 64K, 15.603,27 MiB; 128K, 18.227,27 MiB; 256K, 23.475,27 MiB con f16 y 19.583,18 MiB con q8_0.
+- GPU recomendadas: RTX 4080 / RTX 4060 Ti de 16 GB para 16K de contexto; RTX 4090 o similar de 24 GB para 128K con f16 y 256K con q8_0. No se documentan pruebas en A100 o H100.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB y 24 GB, con las configuraciones indicadas.
+- Opciones de despliegue: llama.cpp (builds recientes con soporte de Laguna; la model card cita stock b12359 y build 11511), `llama-server` con API OpenAI-compatible y `llama-cli`. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Ajustes recomendados: temperatura 1.0, top_k 20, top_p 1.0, thinking activado, sin penalizacion de repeticion, `-ngl 999`, `-fa on`, `-np 1`, `--swa-full` desactivado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Laguna-XS-2.1-Coldfit-13GB | 33.442.617.088 | 32.768 | GGUF mixto Q2_K/Q3_K/Q8_0 | openmdw-1.1 | Cuantización de 13,6 GB; evidencia exploratoria |
-| poolside/Laguna-XS-2.1 (BF16) | 33.442.617.088 | 32.768 | BF16 GGUF (66,9 GB) | openmdw-1.1 | Modelo base de referencia; HumanEval+ 86,8%, GSM8K 94,6% |
-| Conversión estándar del original | 33.442.617.088 | 32.768 | GGUF | openmdw-1.1 | Coincidencia token a token del 96,2% frente al 86,1% de Coldfit |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---:|---|---|---|
+| Laguna-XS-2.1-Coldfit-13GB | 33,4B (MoE, 8/256 expertos) | 256K (segun configuracion de VRAM) | openmdw-1.1 | GGUF 13,6 GB | Cuantizacion del base con perdida de 0,7-2,0 puntos |
+| poolside/Laguna-XS-2.1 (original) | 33,4B (MoE, 8/256 expertos) | 256K | openmdw-1.1 | safetensors / GGUF 66,9 GB | Modelo base sin cuantizar |
+| Alternativas de 33B densas o MoE de codigo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de datos de benchmarks de otros modelos de la misma categoría en la información proporcionada, por lo que la comparativa se limita al modelo base y a una conversión estándar citada por el autor.
+La unica comparacion documentada es frente al modelo base original; no se han proporcionado datos de otros modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La evidencia de calidad es exploratoria y el veredicto de la revisión interna del autor es "NOT READY".
-- El ajuste a 16 GB no se ha verificado en ninguna tarjeta de 16 GB real; la medición es un proxy en una RTX 4090 donde el límite de 16 GB no llegó a aplicarse.
-- Las cuatro tareas evaluadas empeoran respecto al BF16, con pérdidas posibles de hasta unos 5 puntos según el intervalo de confianza.
-- La coincidencia token a token con el modelo de referencia cae al 86,1% (frente al 96,2% de una conversión estándar), por lo que no es equivalente al original.
-- Los expertos se almacenan a 2-3 bits, lo que puede afectar a comportamientos no cubiertos por las cuatro tareas evaluadas.
-- El modelo solo declara soporte de inglés.
-- No se han publicado los scripts de evaluación, lo que limita la reproducibilidad.
-- La licencia openmdw-1.1 se hereda del modelo base; deben revisarse sus términos para uso comercial en el enlace de licencia del repositorio de Poolside.
-- Riesgo de alucinación y sesgos: no disponible en la información proporcionada.
-- El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- Solo soporta ingles; no se documenta capacidad multilingue.
+- La cuantizacion introduce una degradacion medible de entre 0,7 y 2,0 puntos en los benchmarks reportados; en usos distintos a los medidos el impacto podria ser mayor.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan tasas especificas.
+- El modo thinking consume tokens adicionales y requiere fijar un presupuesto para evitar respuestas truncadas; la model card advierte que sin presupuesto el modelo puede agotar el limite de tokens sin responder.
+- La ventana de 256K solo es practica con KV cache q8_0 en GPU de 24 GB; con f16 deja muy poco margen.
+- La licencia `openmdw-1.1` debe revisarse en el enlace oficial antes de uso comercial; no se detallan en la informacion disponible las restricciones concretas.
+- Requiere una version reciente de llama.cpp con soporte de Laguna; versiones antiguas pueden producir respuestas vacias o incorrectas.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la informacion proporcionada.
+- El repositorio tiene un numero bajo de descargas (209) y cero likes en el momento de la consulta, lo que limita la validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ColdTensor/Laguna-XS-2.1-Coldfit-13GB
+- Hugging Face: https://huggingface.co/ColdTensor/Laguna-XS-2.1-Coldfit-13GB-GGUF
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
-- Licencia del modelo base: https://huggingface.co/poolside/Laguna-XS-2.1/blob/main/LICENSE.md
+- Licencia: https://huggingface.co/poolside/Laguna-XS-2.1/blob/main/LICENSE.md
+- llama.cpp: no se proporciona enlace directo en la informacion disponible; la model card cita builds b12359 y 11511.

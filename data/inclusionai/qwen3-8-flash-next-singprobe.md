@@ -2,117 +2,106 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-singprobe es una sonda de seguridad (guardrail) intrínseca desarrollada por el equipo Sing de inclusionAI, construida sobre el modelo base Qwen/Qwen3.8-Flash-Next. A diferencia de los guardrails clásicos, que despliegan un modelo de moderación separado y añaden una segunda pasada de inferencia, SingProbe reutiliza los hidden states del propio modelo base durante la generación para puntuar, token a token, la intención de la consulta, el riesgo de respuesta insegura y el riesgo de alucinación.
+SingProbe es un guardrail de streaming intrínseco construido sobre el modelo base Qwen/Qwen3.8-Flash-Next. En lugar de desplegar un modelo de seguridad independiente, este probe ligero reutiliza los estados ocultos del modelo base durante la generación para puntuar, token a token, la intención de la consulta, la inseguridad de la respuesta y el riesgo de alucinación. Lo desarrolla inclusionAI (Sing Team) y se distribuye con licencia qwen-community-1.0.
 
-El artefacto publicado en Hugging Face no es un LLM completo, sino una sonda ligera de 5,18 millones de parámetros (dato real extraído de los safetensors) que se conecta a las capas 15, 31 y 47 del modelo base. Devuelve 10 salidas por token: 8 clases de intención, una puntuación de inseguridad y una puntuación de alucinación, con menos del 0,5 % de sobrecoste en decodificación.
+El modelo resuelve un problema concreto de producción: la necesidad de filtrar contenido inseguro y detectar alucinaciones sin añadir latencia ni coste computacional significativos. Con solo 5,18 millones de parámetros y un incremento de menos del 0,5 % en el tiempo de decodificación, ofrece una alternativa práctica a los guardrails basados en modelos generativos de 8B, que requieren una pasada adicional completa por cada respuesta.
 
-Su relevancia actual radica en que resuelve el principal problema de los guardrails en streaming: detectar contenido inseguro o alucinaciones mientras se genera, sin penalizar la latencia ni duplicar la infraestructura. Los benchmarks publicados muestran resultados superiores a referencias mucho mayores, como Qwen3Guard-Gen-8B y Qwen3Guard-Stream-8B.
+Es relevante ahora porque combina tres señales de seguridad (intención, inseguridad y alucinación) en una única pasada de inferencia, con resultados que igualan o superan a baselines dedicados de mayor tamaño en las suites evaluadas por el autor. El checkpoint se publicó en octubre de 2026 y se actualizó en noviembre del mismo año.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sonda lineal (probe) sobre hidden states de un transformer base (sing_probe_attn) |
+| Arquitectura | Probe sobre transformer (Qwen3.8-Flash-Next); extrae estados ocultos de las capas 15, 31 y 47 |
 | Parametros totales | 5.182.986 (5,18 M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (la hereda del modelo base Qwen3.8-Flash-Next) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.384 tokens (configuración de ejemplo del servidor SGLang) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles |
-| Licencia | qwen-community-1.0 (other) |
-| Formato de pesos | safetensors |
-
-Datos adicionales de la sonda:
-
-| Parametro | Valor |
-|---|---|
-| Modelo base | Qwen/Qwen3.8-Flash-Next (finetune sobre el mismo) |
-| Capas interceptadas | [15, 31, 47] |
-| Salidas | 8 intents + unsafe + hallucination (label_0 a label_9) |
-| Sobrecoste en decodificacion | < 0,5 % |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (license: other) |
+| Formato de pesos | safetensors, con código personalizado (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-SingProbe es una sonda ligera que se acopla al modelo base Qwen3.8-Flash-Next en tiempo de inferencia. En lugar de ejecutar un clasificador externo, intercepta los hidden states en tres capas concretas del transformer base (15, 31 y 47) y, a partir de ellos, produce en cada token generado tres tipos de puntuación: clasificación de la intención de la consulta del usuario en 8 categorías, puntuación de inseguridad de la respuesta en curso y puntuación de riesgo de alucinación. El tag `sing_probe_attn` sugiere un mecanismo de atención propio de la sonda, aunque la model card no detalla su implementación interna.
+SingProbe no es un modelo generativo autónomo, sino una sonda (probe) acoplada al modelo base Qwen3.8-Flash-Next. Durante la decodificación, intercepta los estados ocultos de tres capas intermedias (15, 31 y 47) y produce diez salidas por token: ocho etiquetas de intención de consulta (label_0 a label_7), una puntuación de inseguridad de respuesta (label_8) y una puntuación de riesgo de alucinación (label_9). El diseño aprovecha la representación interna que el modelo base ya calcula, por lo que no requiere una segunda pasada de inferencia.
 
-La model card no especifica el dataset de entrenamiento, el numero de tokens ni el procedimiento exacto (RLHF/DPO u otros), aunque los benchmarks de evaluación se promedian sobre 6 suites para intención, 8 para seguridad de respuesta, 3 para seguridad en streaming y 6 para detección de alucinaciones. La metodología completa está descrita en el informe técnico de arXiv (arXiv:2608.30703) y el codigo de entrenamiento está disponible en GitHub (inclusionAI/SingProbe).
+La model card no detalla el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El informe técnico referenciado (arXiv:2608.30703) contiene la metodología completa, y los códigos de entrenamiento están disponibles en el repositorio inclusionAI/SingProbe. La innovación principal es el enfoque de guardrail en streaming: las puntuaciones se emiten por token y se exponen en la respuesta de la API, lo que permite abortar una generación insegura a mitad de secuencia en lugar de esperar a completarla.
 
 ## Capacidades
 
-- Clasificacion de la intencion de la consulta en 8 categorias, evaluada token a token durante la generacion.
-- Deteccion de respuestas inseguras (guardrail de seguridad) de forma intrinseca, sin modelo de moderacion separado.
-- Deteccion de alucinaciones en tiempo real mediante una puntuacion AUC por token.
-- Funcionamiento en streaming: emite un diccionario de puntuaciones (label_0 a label_9) por cada token generado, lo que permite abortar o intervenir a mitad de generacion.
-- Sobrecoste de decodificacion inferior al 0,5 %, apto para produccion con latencias criticas.
-- Tasa de falsos positivos muy baja en respuestas benignas: 0,03 % de media en 5 datasets.
-- Integracion nativa con SGLang y vLLM mediante ramas especificas de esos frameworks.
-- No es un modelo generativo: no produce texto, codigo ni razonamiento por si mismo; depende del modelo base.
+- Clasificación de intención de consulta en 8 categorías mediante las etiquetas label_0 a label_7.
+- Detección de inseguridad en la respuesta generada (label_8) con evaluación token a token.
+- Detección de riesgo de alucinación (label_9) durante la generación.
+- Puntuación en streaming: las probabilidades se devuelven por token en meta_info.token_probe_probs, lo que habilita el corte temprano de respuestas problemáticas.
+- Integración con SGLang mediante el flag --probe-ckpt y con vLLM a través de una rama de integración específica.
+- Baja tasa de falsos positivos en respuestas benignas: 0,03 % de media en 5 conjuntos de datos.
+- Overhead de decodificación inferior al 0,5 %.
+- No se documentan capacidades multilingües, de tool calling ni de razonamiento multi-paso propias; estas dependen del modelo base Qwen3.8-Flash-Next.
 
 ## Casos de uso
 
-- Moderacion en streaming para chatbots: el sistema puede cortar o reescribir una respuesta en cuanto la puntuacion de inseguridad supera un umbral, en lugar de esperar a que termine toda la generacion, gracias a la salida por token.
-- Deteccion temprana de alucinaciones en RAG: en un pipeline de generacion aumentada por recuperacion, la puntuacion de alucinacion permite reintentar la respuesta o activar un fallback antes de mostrar contenido erroneo al usuario.
-- Enrutamiento de consultas por intencion: las 8 clases de intencion permiten dirigir cada peticion al agente o modelo adecuado (por ejemplo, separar consultas de codigo de consultas de soporte) sin una pasada adicional de clasificacion.
-- Cumplimiento normativo en atencion al cliente: la clasificacion de intencion combinada con la puntuacion de seguridad facilita auditar conversaciones y aplicar politicas sectoriales (finanzas, salud) en tiempo real.
-- Reduccion de costes de infraestructura de seguridad: al anadir menos del 0,5 % de sobrecoste, sustituye a modelos guardrail de 8B separados, ahorrando VRAM y una segunda pasada de inferencia.
-- Agentes con autochequeo: en bucles agenticos multi-paso, la puntuacion de alucinacion por token puede usarse como senal para activar verificacion externa (tool calling, busqueda web) solo cuando el riesgo es alto.
-- Filtros de seguridad para despliegues multitenant: plataformas que sirven multiples modelos pueden estandarizar la moderacion cargando la sonda junto al modelo base en el mismo servidor SGLang o vLLM.
+- Moderación de contenido en producción: el probe puntúa la inseguridad de cada token generado y permite cortar la respuesta en el momento en que la puntuación supera un umbral, sin esperar a que el modelo termine la secuencia.
+- Detección de alucinaciones en asistentes documentales: al integrarse en el servidor de inferencia, la señal label_9 puede activar una verificación adicional o una respuesta de abstención cuando el riesgo supera el umbral configurado.
+- Enrutado de consultas por intención: las ocho etiquetas de intención permiten dirigir cada petición al pipeline adecuado (soporte, código, consulta sensible) antes de que la respuesta se complete, usando la señal emitida durante la decodificación.
+- Guardrail de bajo coste en despliegues de alto tráfico: con 5,18 M de parámetros y menos del 0,5 % de overhead, se puede mantener activo de forma permanente en un servidor SGLang de ocho GPU sin degradar la latencia percibida por el usuario.
+- Investigación en seguridad de LLM: el repositorio de entrenamiento y el informe técnico permiten reproducir el método y adaptar el probe a otros modelos base.
+- Auditoría y monitorización en tiempo real: las puntuaciones por token se pueden registrar en un sistema de observabilidad para analizar patrones de riesgo y ajustar umbrales de forma empírica.
+- Filtrado de respuestas en aplicaciones de cara al público: la tasa de falsos positivos del 0,03 % en respuestas benignas reduce la fricción de los usuarios legítimos frente a guardrails más agresivos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (media sobre las suites indicadas; mas alto es mejor en todas las metricas):
-
-| Tarea | Metrica | Qwen3.8-Flash-Next-singprobe | Baseline de referencia |
-|---|---|---:|---:|
-| Clasificacion de intencion (6 benchmarks) | F1 | 0,8728 | YuFeng-XGuard-Reason-8B: 0,8714 |
-| Clasificacion de seguridad de respuesta (8 benchmarks) | F1 | 0,8714 | Qwen3Guard-Gen-8B-strict: 0,8604 |
+| Tarea | Métrica | Qwen3.8-Flash-Next-singprobe | Baseline de referencia |
+|---|---|---|---|
+| Clasificación de intención de consulta (6 benchmarks) | F1 | 0,8728 | YuFeng-XGuard-Reason-8B: 0,8714 |
+| Clasificación de seguridad de respuesta (8 benchmarks) | F1 | 0,8714 | Qwen3Guard-Gen-8B-strict: 0,8604 |
 | Seguridad en streaming (3 benchmarks) | R-AUC / T-AUC | 0,9882 / 0,9320 | Qwen3Guard-Stream-8B-strict: 0,9640 / 0,8893 |
-| Deteccion de alucinaciones (6 benchmarks) | AUC | 0,8063 | DRIFT: 0,8000 |
+| Detección de alucinaciones (6 benchmarks) | AUC | 0,8063 | DRIFT: 0,8000 |
 
-Caracteristicas de despliegue publicadas:
-
-| Caracteristica | Resultado |
+| Característica de despliegue | Resultado |
 |---|---|
-| Tasa de falsos positivos en respuestas benignas | 0,03 % (media en 5 datasets) |
-| Sobrecoste en decodificacion | < 0,5 % |
+| Tasa de falsos positivos en respuestas benignas | 0,03 % de media en 5 conjuntos de datos |
+| Overhead de decodificación | < 0,5 % |
 
-No se han publicado benchmarks de MMLU, HumanEval, GSM8K ni similares, ya que no es un modelo generativo.
+Los datos proceden de la model card del autor. No se han publicado resultados adicionales en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM de la sonda: 5,18 millones de parametros en fp32 ocupan aproximadamente 20 MB; en fp16/bf16, unos 10 MB. El consumo real viene determinado por el modelo base Qwen3.8-Flash-Next, cuyas especificaciones no estan disponibles en la informacion proporcionada.
-- GPU recomendadas: no disponible de forma explicita; al integrarse en SGLang o vLLM, cualquier GPU compatible con el modelo base sirve, ya que la sonda anade una carga despreciable.
-- Consumer GPUs: la sonda en si cabe en cualquier GPU moderna; la limitacion la impone el modelo base.
-- Despliegue: mediante la rama de SGLang con soporte de token probes (github.com/jinzhen-lin/sglang, rama token-probe-ling3-flash-main) o la rama de vLLM equivalente (github.com/jinzhen-lin/vllm, rama bailing-v3-token-probe). El lanzamiento se hace con `--probe-ckpt inclusionAI/Qwen3.8-Flash-Next-singprobe` junto al modelo base. No hay soporte documentado para llama.cpp ni Ollama.
-- Latencia y throughput: el sobrecoste de decodificacion es inferior al 0,5 %; no se publican cifras absolutas de latencia ni throughput.
+- El probe en sí ocupa 5,18 M de parámetros (tamaño de repositorio de 0,0 GB), por lo que su huella de memoria es despreciable.
+- El requisito real de hardware lo determina el modelo base Qwen3.8-Flash-Next, que debe servirse junto con el probe.
+- La configuración de ejemplo del autor emplea 8 GPU con tensor parallelism 8 y expert parallelism 8 (--tp-size 8 --ep-size 8), lo que sugiere un modelo base de gran tamaño con arquitectura MoE.
+- Memoria estática configurada al 85 % (--mem-fraction-static 0.85) y un máximo de 32.768 tokens totales en el ejemplo.
+- Opciones de despliegue: SGLang con la build específica de SingProbe (flag --probe-ckpt) y vLLM mediante la rama de integración bailing-v3-token-probe.
+- No se dispone de datos sobre latencia o throughput absolutos ni sobre viabilidad en GPU de consumo; el ejemplo de referencia asume un despliegue multi-GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Enfoque | Rendimiento publicado | Licencia |
+| Modelo | Parámetros | Enfoque | F1 seguridad respuesta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-singprobe | Sonda intrinseca en streaming | 5,18 M | Seguridad + intencion + alucinacion por token | F1 seguridad 0,8714; R-AUC 0,9882 | qwen-community-1.0 |
-| Qwen3Guard-Gen-8B-strict | Guardrail generativo separado | 8B | Clasificacion de seguridad post-generacion | F1 0,8604 | no disponible |
-| Qwen3Guard-Stream-8B-strict | Guardrail generativo en streaming | 8B | Seguridad en streaming | R-AUC 0,9640 / T-AUC 0,8893 | no disponible |
-| YuFeng-XGuard-Reason-8B | Guardrail con razonamiento | 8B | Clasificacion de intencion | F1 0,8714 | no disponible |
+| Qwen3.8-Flash-Next-singprobe | 5,18 M (probe) | Guardrail intrínseco en streaming | 0,8714 | qwen-community-1.0 | Hugging Face |
+| Qwen3Guard-Gen-8B-strict | 8B | Modelo generativo de seguridad | 0,8604 | no disponible en la información | Referencia del autor |
+| Qwen3Guard-Stream-8B-strict | 8B | Guardrail de streaming dedicado | R-AUC 0,9640 / T-AUC 0,8893 | no disponible en la información | Referencia del autor |
+| YuFeng-XGuard-Reason-8B | 8B | Clasificación de intención | F1 intención 0,8714 | no disponible en la información | Referencia del autor |
+| DRIFT | no disponible | Detección de alucinaciones | AUC 0,8000 | no disponible en la información | Referencia del autor |
 
-La ventaja diferencial es el tamano: SingProbe consigue metricas iguales o superiores a guardrails de 8B con menos del 0,1 % de sus parametros y sin segunda pasada de inferencia, aunque requiere el emparejamiento exacto con Qwen/Qwen3.8-Flash-Next.
+La ventaja diferencial del probe es su tamaño (tres órdenes de magnitud menor que los baselines de 8B) y su integración en la pasada de decodificación, frente a los guardrails que requieren una inferencia separada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto ni razonamiento; solo emite puntuaciones de clasificacion y depende por completo del modelo base.
-- Empleo exclusivo con su pareja de modelo base: la model card exige usar exactamente Qwen/Qwen3.8-Flash-Next con este checkpoint; usarlo con otro modelo invalida los resultados.
-- Soporte limitado a ramas concretas de SGLang y vLLM; no hay integracion oficial en las ramas main de esos frameworks ni en llama.cpp u Ollama, lo que puede complicar actualizaciones y mantenimiento.
-- Deteccion de alucinaciones con AUC de 0,8063: util como senal de riesgo, pero insuficiente como unico mecanismo de verificacion factual en aplicaciones criticas.
-- Posibles sesgos heredados del modelo base y de los datasets de entrenamiento de la sonda; la model card no documenta auditorias de sesgo.
-- Licencia qwen-community-1.0 (other): hay que revisar los terminos del enlace a la licencia de Qwen antes de uso comercial; no es una licencia permisiva estandar como Apache 2.0.
-- Repo recien publicado (octubre de 2026), con muy pocas descargas (395) y 2 likes: madurez comunitaria y validacion externa limitadas.
-- Las puntuaciones por token requieren calibracion de umbrales por aplicacion; la model card no publica umbrales recomendados.
+- La model card no documenta sesgos conocidos ni la composición del dataset de entrenamiento, lo que dificulta evaluar su comportamiento en dominios o poblaciones específicas.
+- El probe depende del modelo base Qwen3.8-Flash-Next: no es reutilizable con otros modelos sin reentrenamiento.
+- La licencia qwen-community-1.0 puede imponer restricciones al uso comercial; es necesario revisar el texto completo en el enlace indicado antes de desplegarlo en producción.
+- Los benchmarks publicados son promedios sobre suites seleccionadas por el autor; no se dispone de evaluaciones independientes.
+- La configuración de referencia requiere 8 GPU, lo que limita su uso a entornos con infraestructura multi-GPU.
+- El soporte de vLLM se ofrece mediante una rama de integración específica, no en la versión principal, lo que puede implicar mantenimiento adicional.
+- No se documentan los idiomas soportados; la cobertura lingüística hereda la del modelo base, sin garantías explícitas.
+- La detección de alucinaciones (AUC 0,8063) deja margen de error: no debe usarse como único mecanismo de verificación en aplicaciones críticas.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Informe tecnico (arXiv): https://arxiv.org/abs/2608.30703
-- Codigo de entrenamiento (GitHub): https://github.com/inclusionAI/SingProbe
-- Rama de SGLang con soporte de probes: https://github.com/jinzhen-lin/sglang/tree/token-probe-ling3-flash-main
-- Rama de vLLM con soporte de probes: https://github.com/jinzhen-lin/vllm/tree/bailing-v3-token-probe
 - Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Informe técnico: https://arxiv.org/abs/2608.30703
+- Repositorio de entrenamiento: https://github.com/inclusionAI/SingProbe
+- Build de SGLang con soporte de probe: https://github.com/inclusionAI/SingProbe/tree/main/sglang#token-probe-inference
+- Rama de integración con vLLM: https://github.com/jinzhen-lin/vllm/tree/bailing-v3-token-probe

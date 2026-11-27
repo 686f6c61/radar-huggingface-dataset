@@ -2,109 +2,108 @@
 
 ## Resumen
 
-`nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA` es un adaptador LoRA de rango 32 en BF16 (aproximadamente 310 MB, repo de 0,1 GB) que reproduce sobre el modelo base `Qwen/Qwen3.8-Flash-Next` las mejoras de post-entrenamiento del checkpoint completo `ukisai/Swift1.5-Qwen3.8-Flash-Next` (360 GB). El autor es nchapman y el adaptador se publica bajo la Swift Open License 1.0, heredada del modelo fuente de UkisAI; el modelo base Qwen3.8-Flash-Next es de Qwen y se distribuye con licencia Apache-2.0.
+`nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA` es un adaptador LoRA de rango 32 en BF16 que reproduce, sobre el modelo base `Qwen/Qwen3.8-Flash-Next`, las mejoras de post-entrenamiento del checkpoint completo `ukisai/Swift1.5-Qwen3.8-Flash-Next` (un modelo de aproximadamente 360 GB). El adaptador pesa unos 310 MB (`adapter_model.safetensors`) y se distribuye también como GGUF F16 para `llama.cpp`. Lo publica el usuario nchapman bajo la licencia Swift Open License 1.0.
 
-El hallazgo central de la model card es que el checkpoint Swift-1.5 solo modifica 300 proyecciones `nn.Linear` 2D (las `q/k/v/o_proj` de atención, las `in_proj_qkv`, `in_proj_z` y `out_proj` de atención lineal, y las `gate/up/down_proj` del experto compartido) en sus 48 capas. Los 512 expertos enrutados, las puertas del router, los pesos de mezcla de hiperconexión, la torre de visión, los embeddings y el `lm_head` son idénticos bit a bit al modelo base. Por eso basta un LoRA intrínseco de rango 32 para capturar el 96,1-97,3 % de los pesos BF16 modificados dentro de 1 ULP, sin necesidad de tensores `ParamWrapper` 3D para los expertos.
+El interés técnico del artefacto es su hallazgo arquitectónico: tras inspeccionar los 1658 tensores del checkpoint Swift-1.5 frente al base, el autor concluye que el 97 % del peso (los 512 expertos enrutados, las puertas del router, los pesos de hyper-connection, la torre de visión, los embeddings y el `lm_head`) es bit a bit idéntico al modelo original. Solo 300 proyecciones `nn.Linear` 2D de las 48 capas fueron modificadas, y esas modificaciones admiten una factorización LoRA de rango intrínseco 32 con un salto claro en el espectro de valores singulares entre el componente 32 y el 33.
 
-Su relevancia práctica es inmediata: permite obtener el comportamiento de razonamiento y eficiencia de tokens de Swift-1.5 cargando un adaptador de 310 MB sobre el base en `vLLM` (`--enable-lora`) o en `transformers`/`peft`, sin desplegar un checkpoint de 360 GB. Es un caso claro de destilación espectral de un fine-tuning completo a un adaptador ligero y servible en producción.
+Esto convierte lo que en origen es un modelo de cientos de gigabytes en un delta de 310 MB que, según las mediciones del autor en H100 NVL, recupera entre el 96,1 % y el 97,3 % de los pesos BF16 modificados con un error de como máximo 1 ULP, y reduce la divergencia KL respecto al objetivo de 0,015688 a 0,003185 nats (4,9 veces menor) en decodificación autorregresiva. Es relevante ahora porque permite servir el comportamiento de Swift-1.5 sobre el base (o sobre una versión cuantizada del mismo) con `vLLM --enable-lora` o `llama.cpp`, sin necesidad de alojar el checkpoint completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer híbrido con MoE, atención lineal e hiperconexiones (Qwen3.8-Flash-Next); 48 capas |
-| Parametros totales | Adaptador de ~310 MB (r=32); parámetros totales del modelo base: no disponible |
-| Parametros activos | no disponible (el base es MoE con 512 expertos enrutados, pero no se especifica el número de activos) |
+| Arquitectura | LoRA (PEFT) de rango 32 sobre transformer híbrido Qwen3.8-Flash-Next: 48 capas con atención completa (`self_attn`), atención lineal (`linear_attn`, GatedDeltaNet) y MoE con 512 expertos enrutados más experto compartido |
+| Parametros totales | 60.948.480 (adaptador LoRA); el modelo base Qwen3.8-Flash-Next no declara cifra en la información disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | El adaptador se publica en BF16; el modelo base admite servir cuantizado según la model card, sin detallar formatos |
+| Tipos de cuantizacion | El adaptador se publica en BF16 (safetensors) y en GGUF F16; el modelo base admite cuantizaciones GGUF (el ejemplo de la model card usa `unsloth/Qwen3.8-Flash-Next-GGUF:UD-IQ4_XS`) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (modelo fuente UkisAI); el base Qwen3.8-Flash-Next es Apache-2.0 |
-| Formato de pesos | safetensors (`adapter_model.safetensors`), PEFT |
+| Licencia | swift-open-license-1.0 (modelo base Qwen3.8-Flash-Next: Apache-2.0) |
+| Formato de pesos | safetensors (PEFT, BF16) y GGUF F16 (`Qwen3.8-Flash-Next-Swift-1.5-LoRA.gguf`, `general.architecture = "qwen4exp"`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador no entrena desde cero: se obtiene por descomposición SVD de las diferencias de pesos entre `ukisai/Swift1.5-Qwen3.8-Flash-Next` y `Qwen/Qwen3.8-Flash-Next`. El análisis de los 1658 tensores del checkpoint revela que los 512 expertos enrutados (`mlp.experts.gate_up_proj` y `mlp.experts.down_proj`, 354 GB, el 97 % del checkpoint), las puertas del router, los pesos de hiperconexión, la torre de visión, los embeddings y el `lm_head` son idénticos bit a bit (`max_abs_diff = 0.000000`). Solo 300 proyecciones 2D concentran el cambio, y su espectro singular presenta un acantilado marcado entre el valor 32 y el 33, lo que justifica el rango elegido.
+El adaptador no entrena desde cero: es una descomposición SVD de rango 32 de las diferencias de pesos entre `ukisai/Swift1.5-Qwen3.8-Flash-Next` y `Qwen/Qwen3.8-Flash-Next`. Las 300 matrices 2D afectadas son las proyecciones `self_attn.{q,k,v,o}_proj` (48 módulos), `linear_attn.{in_proj_qkv,in_proj_z,out_proj}` (108 módulos) y `mlp.shared_expert.{gate,up,down}_proj` (144 módulos). La energía SVD capturada con r=32 es del 91,06 % en `self_attn`, 98,12 % en el MLP compartido y 89,80 % en la atención lineal, con un error relativo medio de Frobenius en torno a 0,00083.
 
-La reconstrucción con r=32 captura el 91,06 % de la energía SVD en `self_attn` (48 módulos), el 98,12 % en `shared_mlp` (144 módulos) y el 89,80 % en `linear_attn` (108 módulos), con un error relativo medio de Frobenius en torno a 0,00083. El adaptador se guarda en BF16 y se carga de forma nativa en `vLLM` y en `transformers`/`peft`. No se documentan datos de entrenamiento propios (tokens, composición del dataset, RLHF/DPO) porque el adaptador es una destilación espectral del post-entrenamiento de Swift-1.5, cuyos detalles no se incluyen en la información disponible.
+El modelo base sobre el que se aplica es un transformer híbrido con atención lineal GatedDeltaNet, mezcla de expertos con 512 expertos enrutados y mecanismos de hyper-connection entre atención y MLP; también incorpora torre de visión (pipeline `image-text-to-text`). El adaptador GGUF incluye la permutación de cabezas V de GatedDeltaNet aplicada a `attn_qkv`, `attn_gate` y `ssm_out`, lo que permite cargarlo en `llama.cpp` sobre el base cuantizado. No se detallan en la información disponible los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo RLHF o DPO en la fase original de Swift-1.5.
 
 ## Capacidades
 
-- Razonamiento y modo de pensamiento eficiente en tokens: el adaptador incorpora las mejoras de "efficient-thinking" y "token-efficient" de Swift-1.5.
-- Generación de texto conversacional multi-turno, heredada del modelo base.
-- Procesamiento de imagen y texto: el pipeline es `image-text-to-text`, con torre de visión intacta respecto al base.
-- Capacidades de código y matemáticas implícitas en el modelo base Qwen3.8-Flash-Next (no se detallan métricas específicas).
-- Servible como módulo LoRA en `vLLM` con `--enable-lora` y `--max-lora-rank 32`, lo que permite alternar entre el base y el adaptador sin recargar pesos.
-- Compatible con `transformers` mediante `AutoModelForImageTextToText` y `PeftModel`.
-- Soporte de tool calling y agentes: no disponible en la información proporcionada.
-- Idiomas: no disponible.
+- Generación de texto conversacional multi-turno sobre el modelo base Qwen3.8-Flash-Next.
+- Razonamiento con modo de pensamiento eficiente (etiquetas `reasoning`, `efficient-thinking`, `token-efficient`): el objetivo declarado es reducir tokens de razonamiento manteniendo calidad.
+- Procesamiento de imagen y texto (`pipeline_tag: image-text-to-text`) heredado de la torre de visión del modelo base.
+- Razonamiento matemático y de código: la verificación incluyó 8 tareas de coding, matemáticas y razonamiento además de 56 prompts de `mlabonne/harmless_alpaca`.
+- Compatibilidad nativa con `vLLM` (`--enable-lora`, `--max-lora-rank 32`), `transformers` + `peft` y `llama.cpp` (`llama-server --lora`).
+- Soporte de tool calling y de agentes: no confirmado explícitamente en la información disponible; depende de las capacidades del modelo base.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Despliegue de razonamiento eficiente en producción: cargar el adaptador sobre el base en `vLLM` con `--enable-lora` permite servir el comportamiento de Swift-1.5 sin alojar el checkpoint de 360 GB, reduciendo el almacenamiento y el tiempo de arranque.
-- A/B testing de post-entrenamiento: al ser un módulo LoRA, se puede activar y desactivar por petición para comparar respuestas del base frente a las de Swift-1.5 en el mismo servidor.
-- Evaluación de eficiencia de tokens: útil para medir cuánto reduce Swift-1.5 la longitud de las cadenas de razonamiento frente al base en tareas de matemáticas y código.
-- Fine-tuning adicional sobre el adaptador: al ser PEFT, se puede apilar o continuar el entrenamiento con nuevos datos de dominio sin tocar los 354 GB de expertos.
-- Investigación en destilación espectral: el repositorio documenta la metodología SVD y las métricas de reconstrucción, y sirve como referencia para comprimir fine-tunings completos de modelos MoE a adaptadores ligeros.
-- Prototipado en una sola GPU: el adaptador de 310 MB más el base en BF16 o cuantizado permite experimentar con un modelo multimodal de razonamiento en entornos con recursos limitados.
-- Integración en pipelines de imagen-texto: al conservar la torre de visión, se puede usar para tareas de descripción de imágenes o VQA con el estilo de respuesta de Swift-1.5.
+- Despliegue de Swift-1.5 sin alojar 360 GB: cargar el adaptador de 310 MB sobre `Qwen/Qwen3.8-Flash-Next` en `vLLM` con `--enable-lora` permite servir el comportamiento post-entrenado de Swift-1.5 con una huella de disco mínima y sin duplicar los pesos del base.
+- Servicio multi-tenant con un solo base: al ser un LoRA de rango 32, `vLLM` puede mantener varias variantes (base y Swift-1.5) sobre la misma instancia y enrutar peticiones por módulo LoRA, lo que reduce el coste de GPU por modelo servido.
+- Inferencia en hardware de consumo con `llama.cpp`: el GGUF F16 del adaptador se carga sobre una cuantización del base (por ejemplo `UD-IQ4_XS`) con `-ngl 99`, lo que hace viable probar el comportamiento Swift-1.5 en una estación de trabajo con GPU consumer.
+- Reducción de coste por token en pipelines de razonamiento: el objetivo declarado de eficiencia de tokens encaja en flujos de agentes y cadenas de razonamiento donde el coste dominante es el número de tokens generados; conviene validar la ganancia real con la propia carga de trabajo.
+- Evaluación y comparación de checkpoints: al reproducir el 99,21 % de acuerdo top-1 con Swift-1.5 en la verificación del autor, sirve para estudios de destilación de deltas de pesos y para auditar cuánta capacidad de un post-entrenamiento vive en proyecciones 2D de rango bajo.
+- Prototipado de asistentes multimodal: al heredar la torre de visión del base, puede usarse en demos de image-text-to-text con el comportamiento de razonamiento de Swift-1.5, siempre que se valide la calidad multimodal, no medida en la model card.
 
 ## Benchmarks y rendimiento
 
-Verificación de forward de 48 capas en bfloat16 sobre una NVIDIA H100 NVL, con 64 prompts (56 de `mlabonne/harmless_alpaca` `test[:56]` y 8 tareas de código, matemáticas y razonamiento; 1528 posiciones de token):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí incluye una verificación de fidelidad del adaptador frente al checkpoint objetivo, medida en BF16 sobre 48 capas en una NVIDIA H100 NVL con 64 prompts (56 de `mlabonne/harmless_alpaca` `test[:56]` y 8 tareas de coding, matemáticas y razonamiento; 1528 posiciones de token):
 
 | Metrica | Base Qwen3.8-Flash-Next | Base + Swift-1.5-LoRA (r=32) | Objetivo Swift-1.5 |
 |---|---:|---:|---:|
-| Divergencia KL en todos los tokens (1528) | 0,015688 nats | 0,003185 nats (4,9x menor) | 0,000000 nats |
-| Acuerdo Top-1 en todos los tokens | 97,38 % | 99,21 % | 100,00 % |
+| Divergencia KL en todos los tokens (1528 tokens) | 0,015688 nats | 0,003185 nats (4,9x menor) | 0,000000 nats |
+| Acuerdo top-1 en todos los tokens | 97,38 % | 99,21 % | 100,00 % |
 | Divergencia KL en prefill (64 prompts) | 0,002246 nats | 0,000071 nats (31,7x menor) | 0,000000 nats |
-| Acuerdo Top-1 en prefill | 100,00 % | 100,00 % | 100,00 % |
+| Acuerdo top-1 en prefill | 100,00 % | 100,00 % | 100,00 % |
 | Similitud coseno de logits | 0,994068 | 0,999001 | 1,000000 |
 
 Reconstrucción espectral y de pesos BF16 con r=32:
 
-| Familia | Modulos | Energia SVD capturada | Coincidencia exacta BF16 | Dentro de 1 ULP | Error relativo medio |
+| Familia de modulos | Modulos | Energia SVD capturada | Coincidencia BF16 exacta | Dentro de <= 1 ULP | Error relativo medio |
 |---|---:|---:|---:|---:|---:|
 | `self_attn` (q, k, v, o) | 48 | 91,06 % | 83,28 % | 96,22 % | 0,000828 |
 | `shared_mlp` (gate, up, down) | 144 | 98,12 % | 83,69 % | 96,11 % | 0,000845 |
 | `linear_attn` (in_proj_qkv, in_proj_z, out_proj) | 108 | 89,80 % | 86,39 % | 97,32 % | 0,000829 |
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
-
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa ~310 MB y cabe en cualquier GPU; el requisito real lo marca el modelo base Qwen3.8-Flash-Next.
-- El checkpoint completo de Swift-1.5 ocupa 360 GB, por lo que el adaptador evita almacenar y cargar esa cantidad de pesos.
-- VRAM para el base: no disponible en la información proporcionada.
-- GPU recomendadas: la verificación se realizó en una NVIDIA H100 NVL; no se detallan otras GPU compatibles.
-- Despliegue en `vLLM`: `vllm serve Qwen/Qwen3.8-Flash-Next --enable-lora --max-lora-rank 32 --lora-modules swift-1.5=nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA`.
-- Despliegue en `transformers`: `PeftModel.from_pretrained` sobre `AutoModelForImageTextToText` con `device_map="auto"`.
-- Latencia y throughput: no disponibles.
+- VRAM del adaptador: despreciable, 310 MB en BF16; el coste real lo determina el modelo base Qwen3.8-Flash-Next.
+- VRAM del base: no disponible en la información proporcionada; el checkpoint completo de Swift-1.5 se cita con 360 GB, de los cuales 354 GB son los expertos enrutados, lo que da una idea del orden de magnitud del base en BF16.
+- GPU recomendadas: la verificación del autor se ejecutó en una NVIDIA H100 NVL; para servir el base en BF16 se requiere un nodo multi-GPU de clase H100/A100. En consumer, solo es viable con el base cuantizado en GGUF.
+- GPU consumer: sí, mediante `llama.cpp` con el base en cuantización baja (el ejemplo de la model card usa `UD-IQ4_XS`) y el adaptador GGUF F16; no se especifican modelos concretos ni VRAM mínima.
+- Despliegue: `vLLM` (`--enable-lora --max-lora-rank 32 --lora-modules swift-1.5=...`), `transformers` + `peft` (`PeftModel.from_pretrained` sobre `AutoModelForImageTextToText`) y `llama.cpp` (`llama-server -hf ... --lora ... -ngl 99`).
+- Latencia y throughput: no disponibles. El adaptador añade un coste de cómputo marginal por la multiplicación de las matrices de bajo rango en 300 proyecciones; no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA` | LoRA r=32 sobre Qwen3.8-Flash-Next | ~310 MB (adaptador) | no disponible | Swift Open License 1.0 | Hugging Face |
-| `ukisai/Swift1.5-Qwen3.8-Flash-Next` | Checkpoint completo | 360 GB | no disponible | Swift Open License 1.0 | Hugging Face |
-| `Qwen/Qwen3.8-Flash-Next` | Modelo base | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA | LoRA r=32 sobre Qwen3.8-Flash-Next | 60.948.480 (adaptador) | no disponible | swift-open-license-1.0 | Hugging Face, safetensors + GGUF |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next | Checkpoint completo post-entrenado | no disponible (checkpoint de ~360 GB) | no disponible | swift-open-license-1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Modelo base MoE híbrido con visión | no disponible | no disponible | Apache-2.0 | Hugging Face; GGUF vía `unsloth/Qwen3.8-Flash-Next-GGUF` |
 
-El adaptador es funcionalmente equivalente a Swift-1.5 (99,21 % de acuerdo Top-1) con una huella de 310 MB frente a 360 GB, y conserva la licencia del modelo fuente, más restrictiva que la Apache-2.0 del base. No se dispone de datos de rendimiento de tareas para comparar con otras alternativas.
+La comparativa de rendimiento frente a alternativas de la misma categoría no está disponible: no hay benchmarks estándar publicados para ninguno de los tres en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El adaptador reproduce el 96,1-97,3 % de los pesos modificados dentro de 1 ULP, pero no es una copia exacta: la divergencia KL residual es de 0,003185 nats en todos los tokens.
-- La licencia Swift Open License 1.0 es distinta de la Apache-2.0 del base; conviene revisar las condiciones de uso comercial antes de desplegar el adaptador en producción.
-- No se documentan idiomas soportados ni longitud de contexto, por lo que no se puede garantizar su comportamiento en contextos largos o en idiomas distintos del inglés.
-- No hay datos de benchmarks de tareas (MMLU, HumanEval, GSM8K) ni de sesgos o tasas de alucinación.
-- El adaptador depende del modelo base Qwen3.8-Flash-Next; cualquier cambio en el base invalida la reconstrucción espectral.
-- El modelo base es MoE con 512 expertos enrutados y 354 GB de pesos; el coste de inferencia en VRAM sigue recayendo sobre el base, no sobre el adaptador.
-- La verificación se limita a 64 prompts y 1528 posiciones de token en una H100 NVL; no hay validación a mayor escala publicada.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo día (2026-11-13), por lo que carece de validación comunitaria.
+- El adaptador no es un modelo autónomo: requiere cargar `Qwen/Qwen3.8-Flash-Next` (o una cuantización del mismo) y aplicar el LoRA encima; sin el base no genera nada.
+- La fidelidad medida es del 99,21 % de acuerdo top-1 y 0,003185 nats de KL, no una igualdad exacta con Swift-1.5; en dominios fuera de la muestra de evaluación (56 prompts de Alpaca más 8 tareas) la divergencia puede ser mayor.
+- La verificación se hizo en BF16 sobre H100 NVL; el comportamiento al aplicar el LoRA sobre bases cuantizados (GGUF IQ4_XS y similares) no está medido en la model card.
+- La licencia es Swift Open License 1.0, no Apache-2.0: es distinta de la del base y hay que revisar sus términos antes de uso comercial. El enlace de licencia apunta al repositorio de UkisAI.
+- Riesgo de alucinación, sesgos y comportamiento en idiomas distintos del inglés: no documentados; la lista de idiomas soportados no está disponible.
+- El pipeline declarado es `image-text-to-text`, pero no se aportan métricas de calidad multimodal; no conviene asumir que las mejoras de razonamiento se trasladan a la torre de visión, que según el análisis permanece bit a bit idéntica al base.
+- El repositorio tiene 197 descargas y 0 likes en el momento de la ficha, sin validación independiente de las mediciones del autor.
+- No se confirman capacidades de tool calling ni de agentes multi-paso; dependen del base y deben probarse antes de integrarlas en producción.
 
 ## Enlaces
 
-- Adaptador LoRA: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA
-- Modelo fuente Swift-1.5: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
-- Licencia Swift Open License 1.0: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Dataset de evaluación: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Checkpoint objetivo Swift-1.5: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
+- Licencia Swift Open License 1.0: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
+- GGUF del modelo base citado en la model card: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Dataset de evaluación citado: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- PEFT: https://github.com/huggingface/peft
+- vLLM (soporte LoRA): https://docs.vllm.ai/
+- llama.cpp: https://github.com/ggml-org/llama.cpp

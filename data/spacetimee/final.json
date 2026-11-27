@@ -52,31 +52,5 @@
   "renamed_to": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
   "renamed_at": "2026-11-11T03:55:55.582Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Home - SpacetimeAI",
-      "url": "https://spacetimeai.cc/",
-      "snippet": "One-Click Access Get a single API key to call all connected AI models. No separate applications needed."
-    },
-    {
-      "title": "SpaceTimeAI",
-      "url": "https://spacetimeai.com/index.html",
-      "snippet": "Web site created using create-react-app"
-    },
-    {
-      "title": "Spacetime.io",
-      "url": "https://www.spacetime.io/",
-      "snippet": "Real-time adaptive analytics, visualization, and machine learning. Continuously evolved through augmented, intelligent workflows. Streams of real-time data, layered and enhanced."
-    },
-    {
-      "title": "SpaceTimee (Space Time) - Hugging Face",
-      "url": "https://huggingface.co/SpaceTimee/collections",
-      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a model about 9 hours ago"
-    },
-    {
-      "title": "SpaceTimee (Space Time) - Hugging Face",
-      "url": "https://huggingface.co/SpaceTimee/spaces",
-      "snippet": "AI & ML interests ... Recent Activity updated a Space about 4 hours ago ... updated a model about 4 hours ago"
-    }
-  ]
+  "sources": []
 }

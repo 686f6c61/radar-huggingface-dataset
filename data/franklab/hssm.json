@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "franklab/HSSM",
+  "slug": "franklab-hssm",
+  "author": "franklab",
+  "url": "https://huggingface.co/franklab/HSSM",
+  "created_at": "2023-06-22T16:08:25.000Z",
+  "updated_at": "2026-11-26T22:38:25.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4359057,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franklab : spécialiste du nettoyage et de l'ultra-propreté (santé ...",
+      "url": "https://www.franklab.fr/",
+      "snippet": "Présent dans le monde entier, Franklab apporte des solutions et innovations dans le monde de la détergence et du nettoyage …Read more"
+    },
+    {
+      "title": "Franklab group Worldwide",
+      "url": "https://www.franklab.com/",
+      "snippet": "Franklab is specialist in LCD glass cleaning, photovoltaic silicon wafers, industrial detergents worldwide and Cleaning and hygiene in …Read more"
+    },
+    {
+      "title": "Homepage - Franklab.ch",
+      "url": "https://www.franklab.ch/en",
+      "snippet": "Franklab has worked for more than 45 years in the hospital environment. And has led us to be specialists in the world of health, …Read more"
+    },
+    {
+      "title": "Accueil - Franklab.ch",
+      "url": "https://www.franklab.ch/",
+      "snippet": "Franklab travaille depuis plus de 45 ans dans le milieu hospitalier. Cela nous a conduit à devenir spécialistes dans le monde de la …Read more"
+    },
+    {
+      "title": "The HSSM ecosystem - HSSM",
+      "url": "http://go/v1/AX_6kBxAq767awi6aAFhPkbik95ky7Pvds97v8krgznsvVLyRcXTo3BREwefCbIp3eOUUI78jgm1mMf7OsK1WrgyynTjgUpZ4YLrYsW8DPXHkEOb3XG7nBkWYQYtxLIkV_dI_2b-aXOR8eEvHM8FN638sGWsKJEjI_ZnO49jvp7kBQ4_FMHZuaa-YjXsFKAOXHpJACdd9pAVoQe7IwM",
+      "snippet": "Producers and third-party exporters ... keeping package behavior in the repository that implements and tests it. franklab/HSSM delivers trained network artifacts consumed by HSSM...."
+    }
+  ]
+}

@@ -2,116 +2,111 @@
 
 ## Resumen
 
-Qwen3.5-4B-LokalBot-GGUF es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B, publicado por el desarrollador stevyhacker, calibrado con imatrix y cuantizado en formato Q4_K_M. Está diseñado específicamente para LokalBot, un cliente de IA on-device, y se orienta a tareas de "Think": generación de notas de reunión con trazabilidad de fuente, extracción de decisiones y acciones, retención de memoria de contexto personal, extracción de foco para resúmenes diarios y tool calling nativo en inglés y serbio (tanto en alfabeto latino como cirílico).
+Qwen3.5-4B-LokalBot-GGUF es una familia de fine-tunes cuantizados en formato GGUF del modelo base Qwen/Qwen3.5-4B, publicada por el desarrollador stevyhacker para su aplicación LokalBot. El modelo está especializado en tareas de procesamiento de reuniones en dispositivo (on-device): generación de notas de reunión con trazabilidad de fuentes, extracción de decisiones y acciones, retención de memoria de contexto personal, extracción de foco para resúmenes diarios y tool-calling nativo. Está entrenado y optimizado para inglés y serbio (en alfabeto latino y cirílico).
 
-El modelo resuelve un problema concreto: los modelos base genéricos fallan al procesar transcripciones reales de reuniones con hablantes diarizados sin nombre (por ejemplo, "them 1..8" o "local 1..3"), lo que provoca pérdidas de recall en la extracción de acciones. La versión v4 corrige esta regresión respecto a v3 y supera tanto al modelo base como a versiones anteriores en las cuatro suites de evaluación del autor.
+El checkpoint recomendado es la versión v4, un merge de LoRA con escala 1.0 entrenado sobre 4.117 filas verificadas, que corrige los fallos de extracción de acciones observados en v3 con hablantes diarizados sin nombre. El modelo mantiene una huella de 2,741 GB en cuantización Q4_K_M, idéntica a la del Qwen3.5-4B stock, por lo que es un reemplazo directo en el servidor llama.cpp que LokalBot incluye.
 
-Con 4.205.751.296 parámetros totales y un peso de 2.741 GB en Q4_K_M, el modelo está pensado para ejecutarse en hardware de consumo mediante llama.cpp, con una ventana de contexto de 32K tokens y licencia Apache 2.0.
+La relevancia actual del modelo reside en su enfoque en tareas estructuradas de extracción de información sobre transcripciones de reuniones, con mejoras medibles en latencia, reducción de rechazos del validador y detección de decisiones frente al modelo base, manteniendo licencia Apache 2.0 y un conjunto de datos de entrenamiento compuesto exclusivamente por fuentes abiertas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-4B); no se detalla en la informacion disponible |
-| Parametros totales | 4.205.751.296 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (configuracion de evaluacion: `-c 32768`) |
-| Tipos de cuantizacion | Q4_K_M (unico formato publicado en el repo) |
-| Idiomas soportados | en (ingles), sr (serbio, latin y cirilico); mezcla EN/SR |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors solo como dato del modelo base) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B); no se detalla en la informacion disponible |
+| Parametros totales | 4.205.751.296 (4,2 mil millones) |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Longitud de contexto | 32.768 tokens (configuracion de despliegue en LokalBot: `-c 32768`) |
+| Tipos de cuantizacion | Q4_K_M (imatrix calibrada con EN + SR + JSON); no se listan otras cuantizaciones |
+| Idiomas soportados | Ingles (en) y serbio (sr), incluyendo latin y cirilico |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (4 ficheros: v1, v2, v3, v4; cada uno de 2,741 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del transformer Qwen/Qwen3.5-4B. El autor no detalla en la informacion disponible la arquitectura interna del modelo base (tipo de atención, número de capas, etc.), pero sí especifica que el ajuste se realizó mediante LoRA merge con escala 1.0 en la versión recomendada (v4). El entrenamiento se llevó a cabo sobre 4.117 filas verificadas con Swift, y el autor indica que solo se usaron datos de licencia abierta: datasets públicos Apache-2.0 / ODC-By y ejemplos sintéticos generados por modelos teacher de pesos abiertos. No se emplearon reuniones privadas de usuarios en el entrenamiento.
+El modelo es un fine-tune del Qwen/Qwen3.5-4B, un transformer de 4,2 mil millones de parametros. La informacion disponible no detalla la arquitectura interna del modelo base (tipo de atencion, uso de MoE, SSM o hibridos), por lo que este dato debe consultarse en la model card del modelo base. El fine-tune se realizo mediante LoRA con merge a escala 1.0 (v4) y 0.85 (v3), y los pesos resultantes se cuantizaron a Q4_K_M con una matriz de importancia (imatrix) calibrada sobre datos en ingles, serbio y JSON.
 
-La calibración imatrix cubre inglés, serbio y JSON. El modelo está optimizado para ejecutarse con `enable_thinking=False`, temperatura 0 y contexto de 32K en el servidor llama.cpp incluido en LokalBot. La versión v4 corrige la caída de recall en elementos de acción de reuniones reales que afectaba a v3, causada por listas de hablantes diarizados sin nombre. El autor reporta que v4 supera tanto al modelo base como a v3 en las cuatro suites de evaluación, con un 61,6% menos de rechazos del validador que el modelo base y una latencia mediana 1,43 veces menor.
+El entrenamiento de v4 utilizo 4.117 filas verificadas con Swift, compuestas exclusivamente por fuentes publicas con licencias Apache-2.0, ODC-By-1.0, CC-BY-4.0, MIT y CC0, mas salidas sinteticas de modelos profesor de pesos abiertos validadas contra el validador de evidencia y propiedad de LokalBot. No se usaron reuniones privadas de usuarios. El objetivo del entrenamiento son tareas Think de LokalBot: notas de reunion con enlace a fuentes, extraccion de decisiones y acciones, retencion de memoria de contexto personal, extraccion de foco para Day Digest y tool-calling nativo Ask en ingles y serbio. No se menciona el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y serbio (latino y cirílico).
-- Generación de notas de reunión con enlaces a la fuente (source-linked meeting notes).
-- Extracción de decisiones y elementos de acción a partir de transcripciones de reuniones.
-- Retención de memoria de contexto personal (Personal Context memory retention).
-- Extracción de foco para resúmenes diarios (Day Digest focus extraction).
-- Tool calling nativo (Ask tool-calling), con soporte de bucle de agente multi-paso (`multi-step agent loop` verificado como `True` en la suite SparkX26).
-- Salida estructurada en JSON (calibración imatrix específica para JSON).
-- Manejo de transcripciones diarizadas con hablantes sin nombre (por ejemplo, "them 1..8", "local 1..3").
-- Capacidad multilingüe limitada a inglés y serbio; el autor reporta 0 derivas al ruso y 0 tokens latinos sueltos en salidas en cirílico serbio.
+- Generacion de texto y razonamiento orientado a tareas estructuradas de extraccion de informacion.
+- Generacion de notas de reunion con trazabilidad de fuentes (source-linked meeting notes).
+- Extraccion de decisiones y acciones a partir de transcripciones, incluyendo hablantes diarizados sin nombre (`them 1..8`, `local 1..3`, `them unclear`).
+- Retencion de memoria de contexto personal (Personal Context memory retention), con 118/120 casos en la evaluacion interna.
+- Extraccion de foco para resumenes diarios (Day Digest focus extraction).
+- Tool-calling nativo (Ask) y soporte de agentes multi-paso: 6/6 herramientas nativas y bucle de agente multi-paso superado en la evaluacion SparkX26.
+- Salida estructurada en JSON (imatrix calibrada con JSON).
+- Capacidades multilingues en ingles y serbio (latin y cirilico), con 13/13 en recuperacion serbia en la prueba de memoria.
+- Modo thinking opcional (`enable_thinking`), aunque LokalBot lo ejecuta por defecto con `enable_thinking=false`.
 
 ## Casos de uso
 
-- Generación automática de notas de reunión: el modelo procesa transcripciones diarizadas de hasta 1.115 segmentos y extrae decisiones y acciones con trazabilidad de fuente, gracias a su contexto de 32K tokens y a un recall de acciones del 52,7% en la suite Private28.
-- Extracción de elementos de acción en entornos laborales: con un 52,7% de recall en 150 acciones de referencia y 0 colapsos a cero acciones en reuniones accionables, es adecuado para pipelines que convierten transcripciones en listas de tareas asignadas a propietarios resueltos.
-- Detección de decisiones en reuniones: alcanza 19/19 reuniones con decisiones detectadas en la suite Private28, frente a 6/19 del modelo base, lo que lo hace útil para sistemas que marcan acuerdos y resoluciones.
-- Memoria personal on-device: con un 97,5% de retención perfecta en 120 casos retenidos (100% en serbio y 96,2% en inglés), puede usarse para mantener contexto persistente del usuario en asistentes locales sin enviar datos a la nube.
-- Asistente con tool calling y agentes multi-paso: verificado con 6/6 herramientas nativas y bucle de agente multi-paso en la suite SparkX26, adecuado para asistentes que encadenan llamadas a funciones y razonamiento en varios pasos.
-- Resúmenes diarios y extracción de foco: la tarea Day Digest focus extraction permite generar resúmenes de actividad diaria extrayendo los puntos clave de conversaciones y documentos.
-- Despliegue en hardware de consumo: con 2.741 GB en Q4_K_M y ejecución sobre llama.cpp, cabe en GPU de consumo y permite inferencia local con latencia mediana de 11,84 s en una NVIDIA RTX PRO 6000 Blackwell para extracción de reuniones.
-- Procesamiento bilingüe inglés-serbio: útil para equipos que trabajan en ambos idiomas, incluyendo reuniones mixtas EN/SR y transcripciones en cirílico serbio, con 0 derivas al ruso reportadas.
+- Generacion automatica de actas de reunion: el modelo procesa transcripciones diarizadas y produce notas estructuradas con enlace a la fuente, adecuado por su entrenamiento especifico en reuniones reales y su contexto de 32K tokens.
+- Extraccion de decisiones y acciones en herramientas de productividad: identifica segmentos de decision y acciones con propietario resuelto, con una tasa de rechazos del validador un 60,6% menor que el modelo stock en el holdout Blind21.
+- Memoria de contexto personal en asistentes on-device: retiene y recupera informacion de contexto del usuario con una tasa de retencion del 98,3% en 120 casos held-out, lo que lo hace adecuado para asistentes personales que operan localmente.
+- Resumenes diarios con extraccion de foco (Day Digest): selecciona los puntos focales del dia a partir de notas y eventos, disenado para ejecucion en dispositivo con latencia mediana de 13,64 s en GPU G4.
+- Tool-calling y agentes multi-paso en local: integrable en bucles de agente que requieren llamadas a herramientas nativas en ingles y serbio, con soporte de plantilla Jinja (`--jinja`) en llama.cpp.
+- Procesamiento de reuniones en serbio (latin y cirilico): cubre un idioma poco representado en modelos abiertos, con 13/13 en recuperacion serbia y sin deriva hacia el ruso en la prueba Golden6 (0 impactos de deriva rusa frente a 21 del stock).
+- Despliegue en entornos con privacidad estricta: al ejecutarse en llama.cpp local con pesos GGUF de 2,741 GB, permite procesar transcripciones confidenciales sin salida a la nube, como demuestra el pipeline de replay de LokalBot sobre tunel SSH.
 
 ## Benchmarks y rendimiento
 
-Los resultados proceden de la model card del autor, evaluados en la misma hardware (NVIDIA RTX PRO 6000 Blackwell con llama.cpp, `-c 32768 -ngl 99 --jinja --reasoning on`, `enable_thinking: false`, temperatura 0).
+Evaluacion back-to-back en NVIDIA RTX PRO 6000 Blackwell con llama.cpp v1.0.0 (commit `b1b770d9`), `-c 32768 -ngl 99 --jinja --reasoning on`, `enable_thinking: false`, temperatura 0.
 
-Suite Private28 (28 reuniones reales, 150 acciones de referencia, 58 decisiones de referencia en 19 reuniones):
+| Benchmark | Metrica | Stock Qwen3.5-4B | v4 (s=1.0) |
+|---|---|---|---|
+| Blind21 (21 reuniones EN, 85 acciones ref.) | Trabajos completados | 20/21 | 21/21 |
+| Blind21 | Recall de segmentos de accion | 47/85 (55,3%) | 40/85 (47,1%) |
+| Blind21 | Recall de accion a 2 palabras | 44/85 (51,8%) | 38/85 (44,7%) |
+| Blind21 | Aciertos limpios con propietario resuelto | 38 | 27 |
+| Blind21 | Precision de acciones candidatas | 27,9% (179 emitidas) | 22,8% (193 emitidas) |
+| Blind21 | Tasa de propietario resuelto | 57,0% | 47,2% |
+| Blind21 | Solapamiento de segmentos de decision (40 ref.) | 3/40 (7,5%) | 18/40 (45,0%) |
+| Blind21 | Reuniones con decision acertadas (12 ref.) | 3/12 | 12/12 |
+| Blind21 | Falsos positivos en reuniones sin decision (9) | 6 | 25 |
+| Blind21 | Rechazos del validador | 175 | 69 (-60,6%) |
+| Blind21 | Pasadas de reparacion | 56 | 28 |
+| Blind21 | Latencia mediana de extraccion (GPU G4) | 24,24 s | 13,64 s (1,78x mas rapido) |
+| Private28 (28 reuniones reales, 147 acciones, 58 decisiones) | Recall de acciones | 73/147 (49,7%) | 76/147 (51,7%) |
+| Private28 | Solapamiento de decisiones | 0/58 | 14/58 (24,1%) |
+| Private28 | Rechazos del validador | 160 | 67 (-58,1%) |
+| Private28 | Latencia mediana | 21,88 s | 17,74 s (1,23x mas rapido) |
+| Golden6 (replay Swift en produccion) | Completados / decisiones / acciones | no disponible | 6/6, 8 decisiones, 29 acciones, 1 rechazo, 0 deriva rusa |
+| Golden6 | Latencia mediana | 6,46 s | 5,28 s |
+| Personal Context Memory (120 casos) | Retencion | 81/120 (67,5%), 12 no deseados | 118/120 (98,3%), 1 no deseado |
+| Personal Context Memory (serbio) | Recall | 0/13, 9 no deseados | 13/13, 0 no deseados |
+| SparkX26 (extraccion + tool-calling) | Casos / campos | 8/12, 38/43 | 9/12, 39/43 |
+| SparkX26 | Herramientas nativas | no disponible | 6/6 |
+| ThinkOnSmoke6 (`enable_thinking=true`) | Aprobados | no disponible | 4/6 (1 fuga de etiqueta ``) |
 
-| Metrica | Stock 4B | v3 (s=0.85) | v4 (s=1.0) |
-|---|---:|---:|---:|
-| Trabajos completados | 27/28 | 28/28 | 28/28 |
-| Recall de acciones (150 ref) | 70/150 (46,7%) | 47/150 (31,3%) | 79/150 (52,7%) |
-| Recall de acciones (subconjunto Private12, 70 ref) | 36/70 (51,4%) | 22/70 (31,4%) | 38/70 (54,3%) |
-| Aciertos limpios de accion con propietario resuelto | 59 | 36 | 60 |
-| Colapsos a cero acciones en reuniones accionables | 0 | 6 | 0 |
-| Reuniones con decisiones detectadas (19 ref) | 6/19 | 19/19 | 19/19 |
-| Tasa de propietario resuelto | 59,4% | 66,1% | 59,9% |
-| Rechazos del validador | 185 | 27 | 71 (-61,6% vs. stock) |
-| Derivas al ruso | 0 | 0 | 0 |
-| Latencia mediana de extraccion (GPU G4) | 16,98 s | 9,54 s | 11,84 s (1,43x mas rapido vs. stock) |
-| Recall por propietario de referencia (user / other / unresolved / none) | 16/19 · 30/57 · 9/37 · 15/37 | 11/19 · 16/57 · 8/37 · 12/37 | 15/19 · 29/57 · 14/37 · 21/37 |
-
-Suite Personal Context / Memory Retention (120 casos retenidos):
-
-| Slice | Metrica | Stock 4B | v3 | v4 |
-|---|---|---:|---:|---:|
-| Ingles (96 casos, 52 gold) | Recall util | 31/52 (59,6%) | 52/52 (100,0%) | 50/52 (96,2%) |
-| Ingles | Propuestas no deseadas | 3 | 1 | 1 |
-| Serbio (24 casos, 13 gold) | Recall util | 0/13 (0,0%) | 12/13 (92,3%) | 13/13 (100,0%) |
-| Serbio | Propuestas no deseadas | 9 | 0 | 0 |
-| Combinado (120 casos) | Perfectos / no deseados | 83/120 (69,2%) / 12 | 118/120 (98,3%) / 1 | 117/120 (97,5%) / 1 |
-
-Suite SparkX26 (extraccion estructurada y tool calling nativo): 9/12 casos (39/43 campos), 6/6 herramientas nativas, bucle de agente multi-paso verificado como `True`. Suite Golden6 (replay de produccion en Swift): 6/6 completados, 8 decisiones, 29 acciones, 1 rechazo, 0 derivas al ruso y 0 tokens latinos sueltos en salidas en cirilico serbio.
+Prueba exacta de McNemar de dos colas sobre recall de acciones en Blind21 (v4 vs stock): 10 ganadas, 17 perdidas, p = 0,2478. En Private28: p = 0,7359.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,741 GB de pesos en Q4_K_M; con overhead de contexto de 32K y KV cache, se recomienda al menos 4-6 GB de VRAM para ejecución cómoda (estimación basada en el tamaño del archivo, no publicada por el autor).
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (hardware usada en las evaluaciones del autor). Por tamaño, cabe en GPU de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090.
-- Cabe en GPU de consumo: sí, dado el tamaño de 2,741 GB en Q4_K_M.
-- Opciones de despliegue: llama.cpp (servidor incluido en LokalBot, con `-ngl 99 --jinja --reasoning on`); al ser GGUF, es compatible con el ecosistema llama.cpp, aunque el autor solo documenta y valida el despliegue en LokalBot.
-- Latencia y throughput: latencia mediana de extracción de 11,84 s en la suite Private28 sobre RTX PRO 6000 Blackwell; 1,43 veces más rápido que el modelo base (16,98 s). No se publican datos de throughput (tokens/s).
+- VRAM estimada: aproximadamente 2,741 GB para los pesos en Q4_K_M, mas overhead de contexto KV cache para 32K tokens (no cuantificado en la informacion disponible).
+- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (usada en la evaluacion); cualquier GPU con al menos ~4-6 GB de VRAM libre para pesos y cache.
+- Cabe en GPU de consumo: si, dado el tamano de 2,741 GB del fichero GGUF; cabe en RTX 4090, RTX 3090 y GPUs con 8 GB o mas.
+- Opciones de despliegue: llama.cpp (version fijada v1.0.0, commit `b1b770d9`, con `--jinja` y `--reasoning on`); servidor llama.cpp incluido en LokalBot. No se mencionan vLLM, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: latencia mediana de extraccion de 13,64 s en Blind21 y 17,74 s en Private28 sobre RTX PRO 6000 Blackwell; 5,28 s en Golden6. No se proporcionan cifras de throughput (tokens/s).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---:|---|---|---|---|
-| Qwen3.5-4B-LokalBot v4 (este) | 4.205.751.296 | 32K | GGUF Q4_K_M | Apache-2.0 | Fine-tune especializado en notas de reunion, memoria y tool calling EN/SR |
-| Qwen/Qwen3.5-4B (stock) | 4.205.751.296 (base) | 32K (en la evaluacion) | safetensors / GGUF | Apache-2.0 | Modelo base; recall de acciones 46,7%, 6/19 reuniones con decisiones, 0/13 recall en serbio |
-| Qwen3.5-4B-LokalBot v3 | 4.205.751.296 | 32K | GGUF Q4_K_M | Apache-2.0 | Version previa; 31,3% recall de acciones y 6 colapsos a cero acciones, pero 100% recall en ingles en memoria |
-
-No se dispone en la informacion proporcionada de comparaciones con modelos de otros desarrolladores (por ejemplo, Llama o Gemma de tamano similar); esos datos figuran como no disponibles.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-4B-LokalBot v4 (este) | 4,2 B | 32K | Apache 2.0 | GGUF Q4_K_M | Fine-tune para reuniones, memoria y tool-calling; mejor latencia y menos rechazos que el stock |
+| Qwen/Qwen3.5-4B (stock) | 4,2 B | 32K (config. de despliegue) | Apache 2.0 | safetensors / GGUF | Mayor recall bruto de acciones en Blind21 (55,3% vs 47,1%) y menos falsos positivos en reuniones sin decision (6 vs 25) |
+| Alternativas de 4B para extraccion estructurada | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo especializado: está ajustado para tareas concretas de LokalBot (notas de reunión, memoria personal, extracción de foco, tool calling) y no se ha validado como modelo de propósito general.
-- Idiomas limitados: solo inglés y serbio (latino y cirílico); no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
-- Recall de acciones moderado: el 52,7% en Private28 implica que aproximadamente la mitad de las acciones de referencia no se recuperan; no es adecuado para extracción con requisitos de exhaustividad alta sin revisión humana.
-- Tasa de propietario resuelto del 59,9%: un 40% de las acciones no quedan asignadas a un propietario resuelto.
-- Rechazos del validador: 71 rechazos en la suite Private28, aunque un 61,6% menos que el modelo base.
-- Riesgo de alucinación: no se publican métricas específicas de alucinación; como todo modelo generativo, puede producir contenido no presente en la transcripción.
-- Sesgos: no se documentan sesgos conocidos en la información disponible.
-- Licencia Apache-2.0: permite uso comercial, pero el modelo base Qwen/Qwen3.5-4B debe verificarse por separado para confirmar compatibilidad (el autor indica Apache-2.0 en el fine-tune).
-- Despliegue validado únicamente en llama.cpp dentro de LokalBot con `enable_thinking=False` y temperatura 0; otros ajustes de inferencia pueden degradar el rendimiento reportado.
-- Datos de entrenamiento: 4.117 filas verificadas con Swift y datasets públicos; el rendimiento en dominios distintos a reuniones y memoria personal no está evaluado.
+- En Blind21, el modelo stock supera a v4 en recall bruto de acciones (55,3% vs 47,1%, p = 0,2478) y en precision de acciones candidatas (27,9% vs 22,8%); la mejora de v4 se concentra en decisiones, latencia y reduccion de rechazos.
+- v4 genera mas falsos positivos de decision en reuniones sin decision: 25 frente a 6 del stock en las 9 reuniones cero-decision de Blind21.
+- Con `enable_thinking=true`, v4 aprueba 4/6 en ThinkOnSmoke6 y presenta una fuga de la etiqueta ``; LokalBot lo ejecuta por defecto con `enable_thinking=false`.
+- Cobertura idiomatica limitada a ingles y serbio (latin y cirilico); no se declaran otros idiomas.
+- Riesgo de alucinacion y de deriva linguistica: aunque v4 elimina la deriva hacia el ruso en Golden6 (0 frente a 21 del stock), el modelo sigue siendo un 4B y puede generar contenido no sustentado en la transcripcion.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo esta disenado y validado para el pipeline de LokalBot; su comportamiento fuera de ese pipeline (prompts, validadores y plantillas distintas) no esta evaluado.
+- Los benchmarks se obtuvieron con una version fijada de llama.cpp y una GPU concreta; el rendimiento puede variar con otras configuraciones.
+- No se han publicado datos sobre sesgos demograficos o culturales en la informacion disponible.
 
 ## Enlaces
 

@@ -2,96 +2,95 @@
 
 ## Resumen
 
-AesCode-32B-abliterated-MLX-bf16 es una conversión no oficial del modelo microsoft/AesCode-32B, un finetune de Qwen/Qwen3-VL-32B-Instruct especializado en generar código HTML y CSS a partir de capturas de pantalla (slides, pósters, dashboards, páginas de producto). El modelo base está desarrollado por el equipo de AesCode en Microsoft y se describe en el paper "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards" (arXiv:2610.18860). Esta build concreta la publica el usuario divinetribe en Hugging Face.
+AesCode-32B-abliterated-MLX-bf16 es una conversión al formato MLX (Apple Silicon) en precisión completa bfloat16 del modelo microsoft/AesCode-32B, un ajuste fino de Qwen/Qwen3-VL-32B-Instruct especializado en generar HTML y CSS a partir de capturas de pantalla (diapositivas, pósters, dashboards, páginas de producto). Sobre esa base, el autor divinetribe aplica una ablación direccional del vector de rechazo (metodología Arditi et al., 2024) que elimina el comportamiento de negativa del modelo sin tocar la torre de visión ni las capacidades de código.
 
-La modificación principal es una "abliteración" por dirección de rechazo (Arditi et al., 2024): se proyecta fuera la dirección de rechazo de la torre de lenguaje, dejando intacta la torre de visión (351 tensores `vision_tower.*`). El resultado es un modelo multimodal image-text-to-text de 33.357.390.064 parámetros en bfloat16, empaquetado en formato MLX para ejecutarse en Apple Silicon.
+El modelo resuelve el problema de la generación de código estético a partir de imágenes: recibe una imagen y produce código HTML/CSS que la recrea, con un rendimiento reportado por los autores del modelo base claramente superior a Qwen3-VL-32B y a modelos propietarios como Claude Opus 4.8 o GPT-5.5 en su benchmark de 300 muestras infográficas. La variante abliterated está pensada para entornos locales y privados donde el modelo no debe rechazar peticiones por motivos de seguridad.
 
-Es relevante para desarrolladores que quieran ejecutar localmente, sin nube ni telemetría, un modelo de generación de código a partir de imágenes en un Mac con chip de la serie M, manteniendo la capacidad de visión del backbone Qwen3-VL.
+Con 33.357.390.064 parámetros (~33,4 mil millones), licencia Apache 2.0 y un repositorio de 66,7 GB en safetensors, está empaquetado específicamente para ejecutarse con mlx-vlm en Macs de la serie M. Es relevante ahora porque permite ejecutar un modelo multimodal de 32B de calidad cercana a frontera de forma totalmente offline en hardware de consumo Apple, sin claves de API ni telemetría.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Qwen3VLForConditionalGeneration), torre de visión + torre de lenguaje |
-| Parametros totales | 33.357.390.064 |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (esta build); existen variantes 8-bit y 4-bit de la misma familia |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
+| Arquitectura | Transformer multimodal (Qwen3VLForConditionalGeneration): torre de visión + torre de lenguaje, con proyección al espacio de embeddings |
+| Parametros totales | 33.357.390.064 (~33,4B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantizacion | bf16 (esta build); existen variantes 8-bit y 4-bit en la misma familia |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX, bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base AesCode-32B es un finetune de Qwen/Qwen3-VL-32B-Instruct, un transformer multimodal con torre de visión y torre de lenguaje, orientado a la generación de código estético a partir de imágenes de referencia. Según el paper citado, el entrenamiento emplea "decoupled cross-modal rewards", una estrategia de recompensas multimodales desacopladas para guiar la generación hacia HTML/CSS fiel y visualmente correcto. No se dispone del número de tokens de entrenamiento ni de la composición exacta del dataset en la información proporcionada.
+La arquitectura subyacente es Qwen3-VL-32B-Instruct, un transformer multimodal con una torre de visión (351 tensores `vision_tower.*` preservados en esta build) y una torre de lenguaje de 64 capas. AesCode-32B es un ajuste fino de ese backbone orientado a generación de código estético con recompensas multimodales desacopladas, según el paper "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards" (arXiv:2610.18860). No se dispone de detalles sobre el volumen de tokens de entrenamiento ni la composición exacta del dataset.
 
-Sobre esta base, la build de divinetribe aplica ablación direccional (Arditi et al., 2024): extrae la dirección de rechazo en la capa 44 de 64, calibrada con 32 instrucciones dañinas frente a 32 inofensivas en formato de chat usando el residual del último token. Esa dirección se ortogonaliza en `embed_tokens`, en la proyección de salida de atención de cada capa (`self_attn.o_proj`) y en cada `mlp.down_proj`. La torre de visión y `vision_config` se preservan sin tocar. Precisión bfloat16 sin cuantización.
+La modificación específica de esta build es una ablación direccional del rechazo: se calcula una dirección a partir de la capa 44 de 64 (la de mayor separación normalizada entre instrucciones dañinas y benignas en la ventana media del stack), calibrada con 32 instrucciones dañinas frente a 32 benignas en formato de chat y usando el residuo del último token. Esa dirección se ortogonaliza en `embed_tokens`, en la proyección de salida de atención (`self_attn.o_proj`) de cada capa y en `mlp.down_proj` de cada capa. Solo se modifica la torre de lenguaje; la torre de visión y su `vision_config` quedan intactos. La conversión se realiza en bfloat16 sin cuantización.
 
 ## Capacidades
 
-- Generación de código HTML y CSS a partir de capturas de pantalla: reconstrucción de slides, pósters, dashboards y páginas de producto.
-- Comprensión de imágenes (image-text-to-text) con la torre de visión intacta.
-- Auditoría de páginas web a partir de screenshot: SEO, marketing/conversión y accesibilidad, incluyendo generación de textos alternativos (alt-text).
-- Generación de texto conversacional en inglés.
-- Capacidad de código heredada del backbone Qwen3-VL-32B-Instruct (generación de código en general, no solo HTML/CSS).
-- Comportamiento "abliterated": se elimina la dirección de rechazo del modelo, de modo que no declina peticiones por esa vía.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas a inglés según el campo `language`.
+- Generación de código HTML y CSS a partir de imágenes: recrea capturas de pantalla de diapositivas, pósters, dashboards y páginas de producto como un único archivo HTML con CSS en línea.
+- Comprensión visual multimodal: lectura de elementos de interfaz, jerarquía visual, textos en pantalla, precios, botones y componentes de una página.
+- Auditoría de páginas web a partir de captura: análisis SEO, marketing/conversión y accesibilidad, incluida la generación de textos alternativos (alt-text) para imágenes.
+- Generación de texto conversacional en formato chat.
+- Capacidad de código general heredada del backbone Qwen3-VL-32B.
+- Comportamiento sin rechazo (abliterated): no activa negativas por dirección de rechazo en el modelo de lenguaje.
+- Multilingüe limitado: la model card declara únicamente inglés.
+- No se documenta soporte explícito de tool calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Reconstrucción de mockups a código: dado un screenshot de un diseño (slide, póster, dashboard), el modelo genera un único archivo HTML con CSS inline, útil para prototipado rápido de interfaces.
-- Auditoría SEO y de accesibilidad automatizada: se envía una captura de una página en producción y el modelo identifica elementos on-page (título, H1, botones, selectores), propone mejoras y redacta alt-text para las imágenes.
-- Generación de páginas de producto para e-commerce: a partir de la captura de una ficha de producto, produce el HTML/CSS de una réplica o variante, manteniendo jerarquía visual y elementos de conversión.
-- Prototipado de dashboards y paneles de datos: convierte una imagen de referencia de un dashboard en maquetación HTML/CSS para iterar sobre ella en local.
-- Flujo de trabajo offline en Mac: ejecución con `mlx-vlm` en Apple Silicon sin API keys, sin telemetría y sin conexión, adecuado para entornos con requisitos de privacidad.
-- Integración en herramientas de desarrollo locales: la model card menciona su uso dentro de Claude Code Local en el propio Mac, lo que permite usarlo como backend de generación de código en un asistente local.
-- Evaluación de calidad visual de diseños: el modelo puede describir y criticar elementos visuales de una captura (jerarquía, contraste, disposición) como paso previo a una revisión humana.
+- Recreación de maquetas a partir de capturas: un diseñador sube una captura de una diapositiva o póster y el modelo devuelve un HTML con CSS en línea que la reproduce, útil para prototipado rápido de interfaces sin escribir CSS a mano.
+- Auditoría SEO de páginas de producto: se pasa una captura de la página y el modelo identifica etiquetas de título ausentes, fortalezas del H1 y términos clave, como se demuestra en la model card con una página real de producto.
+- Generación de alt-text accesible: el modelo describe imágenes de producto y miniaturas con textos alternativos utilizables, facilitando el cumplimiento de accesibilidad en catálogos de comercio electrónico.
+- Análisis de conversión en comercio electrónico: evaluación de la jerarquía visual de una página (botón de compra, selector de cantidad, tarjetas de producto) para detectar elementos enterrados o poco visibles.
+- Desarrollo local y privado asistido por IA: integración en Claude Code Local sobre un Mac de la serie M para generar y revisar código sin enviar datos a la nube ni usar claves de API.
+- Prototipado de dashboards y páginas de producto: a partir de una referencia visual, obtener código de partida que un equipo de frontend puede refinar, reduciendo el tiempo de maquetación inicial.
+- Entornos de investigación sin restricciones de rechazo: escenarios donde se necesita que el modelo analice contenido sensible sin negativas, manteniendo intacta la capacidad de visión y código.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles provienen del paper de AesCode y de la model card del modelo base. Corresponden al modelo original AesCode-32B, no a esta build abliterada, y se basan en un benchmark propio de 300 muestras de estilo infográfico puntuadas por cumplimiento de reglas y calidad visual.
+Los datos disponibles provienen del benchmark de los autores de AesCode sobre 300 muestras de estilo infográfico, puntuadas por corrección en el seguimiento de reglas y calidad visual. Corresponden al modelo base AesCode-32B, no a esta build abliterated.
 
 | Modelo (con imagen de referencia) | Overall | Visual |
 |---|---|---|
-| AesCode-32B | 85.89 | 77.44 |
-| Claude Opus 4.8 (sin referencia) | 76.78 | no disponible |
-| GPT-5.5 (sin referencia) | 76.31 | no disponible |
-| Qwen3-VL-32B base (con referencia) | 61.10 | no disponible |
+| AesCode-32B | 85,89 | 77,44 |
+| Claude Opus 4.8 (sin referencia) | 76,78 | No disponible |
+| GPT-5.5 (sin referencia) | 76,31 | No disponible |
+| Qwen3-VL-32B base (con referencia) | 61,10 | No disponible |
 
-No se han publicado resultados de benchmarks independientes para esta build abliterada en la información disponible. La model card indica que la ablación solo afecta a la dirección de rechazo y no debería alterar la calidad de código o visión, y que se re-probó en una tarea real de auditoría de página de producto con resultados equivalentes a la build fiel.
+No se han publicado resultados de benchmarks independientes específicos para esta build abliterated en MLX. El autor indica que la ablación solo afecta a la dirección de rechazo y no debería alterar la calidad de código o visión, y documenta una prueba cualitativa comparativa sobre una página de producto real frente a la build fiel.
 
 ## Requisitos de hardware
 
-- VRAM/unified memory estimada: el repo pesa 66,7 GB en bf16; se necesita al menos esa cantidad de memoria unificada más overhead para cargar el modelo completo. Las variantes 8-bit y 4-bit de la familia reducen el requisito aproximadamente a la mitad y a un cuarto, respectivamente.
-- GPU recomendadas: no aplica GPU dedicada; el formato es MLX y está pensado para Apple Silicon (serie M).
-- ¿Cabe en consumer GPU? No en el sentido habitual (NVIDIA/AMD); requiere un Mac con memoria unificada suficiente (los 66,7 GB en bf16 exigen configuraciones de gama alta de Apple Silicon).
-- Opciones de despliegue: `mlx-vlm` (librería indicada en la model card); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- VRAM/unified memory estimada: en bf16, el repositorio ocupa 66,7 GB, por lo que se necesita un Mac con al menos 64 GB de memoria unificada (recomendable 96 GB o más para margen de contexto y activaciones).
+- GPU recomendadas: Apple Silicon de la serie M (M1/M2/M3/M4 Pro, Max y Ultra). El formato MLX no está pensado para GPU NVIDIA.
+- Variantes para máquinas más pequeñas: la build 8-bit ocupa aproximadamente la mitad y la 4-bit un cuarto, lo que permite ejecución en configuraciones con menos memoria unificada.
+- Opciones de despliegue: `mlx-vlm` (comando `python -m mlx_vlm.generate`); no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
 - Latencia y throughput: no disponibles en la información proporcionada.
+- Ejecución totalmente local: sin inferencia en la nube, sin claves de API y sin telemetría.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (Overall, benchmark AesCode) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B-abliterated-MLX-bf16 (esta build) | 33.357.390.064 | no disponible | HTML/CSS desde screenshot, abliterated, MLX | apache-2.0 | Hugging Face (divinetribe) |
-| microsoft/AesCode-32B | no disponible | no disponible | HTML/CSS desde screenshot (original) | no disponible en la información | Hugging Face (Microsoft) |
-| Qwen/Qwen3-VL-32B-Instruct | no disponible | no disponible | Modelo multimodal general (backbone) | no disponible en la información | Hugging Face (Qwen) |
-| Claude Opus 4.8 | no disponible | no disponible | Modelo propietario general | propietaria | API |
+| AesCode-32B-abliterated-MLX-bf16 | ~33,4B | No disponible | 85,89 (base AesCode-32B) | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3-VL-32B-Instruct | 32B (clase) | No disponible | 61,10 (con referencia) | No disponible en la información | Hugging Face |
+| Claude Opus 4.8 | No disponible | No disponible | 76,78 (sin referencia) | Propietaria | API en la nube |
+| GPT-5.5 | No disponible | No disponible | 76,31 (sin referencia) | Propietaria | API en la nube |
 
-Las cifras de benchmark comparativas entre AesCode-32B y los modelos propietarios figuran en la sección anterior; proceden del benchmark propio de los autores y no de una evaluación independiente.
+La comparación de rendimiento no es estrictamente homogénea: los modelos propietarios se evalúan sin imagen de referencia y AesCode con referencia, según la tabla publicada en la model card del modelo base.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: se ha eliminado la dirección de rechazo, por lo que puede generar contenido que el modelo original declinaría. No hay salvaguardas de seguridad efectivas; el uso en producción requiere filtros externos.
-- Solo inglés: el campo `language` declara únicamente `en`; el rendimiento en castellano no está garantizado.
-- Benchmarks no independientes: los datos de rendimiento provienen del paper de los autores y de la model card del modelo base, no de una evaluación externa.
-- La ablación puede degradar sutilmente otras capacidades; la model card solo reporta una prueba cualitativa en una tarea de auditoría de página de producto.
-- Riesgo de alucinación en la descripción de imágenes y en la generación de código: puede inventar elementos no presentes en el screenshot o producir HTML/CSS que no reproduzca fielmente el diseño.
-- Formato MLX: no es directamente portable a GPUs NVIDIA/AMD ni a los runners habituales (vLLM, TGI, llama.cpp); requiere Apple Silicon y `mlx-vlm`.
-- Requisito de memoria elevado en bf16 (repo de 66,7 GB); en máquinas con menos memoria unificada hay que recurrir a las variantes 8-bit o 4-bit.
-- Build no oficial: el autor es un tercero (divinetribe), no Microsoft; no hay garantía de mantenimiento ni de soporte.
-- Licencia apache-2.0 declarada, pero conviene verificar las condiciones del modelo base y del backbone Qwen3-VL antes de un uso comercial.
+- La ablación elimina la dirección de rechazo, lo que implica que el modelo puede generar contenido dañino o inapropiado sin negarse; no es adecuado para despliegues públicos sin filtros externos.
+- Riesgo de alucinación inherente a los modelos de lenguaje: puede inventar elementos de la imagen, textos o estructuras HTML que no existen en la captura.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está verificado.
+- Longitud de contexto no documentada en la información disponible, lo que dificulta planificar tareas con capturas grandes o conversaciones largas.
+- Formato MLX exclusivo para Apple Silicon: no es portable a GPU NVIDIA sin reconversión.
+- Requisito de memoria elevado en bf16 (66,7 GB de pesos); en Macs con menos de 64 GB hay que recurrir a las variantes 8-bit o 4-bit, con posible pérdida de calidad.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad sobre el contenido generado por una build sin rechazo.
+- Los benchmarks disponibles son del modelo base y del autor, no una evaluación independiente de esta build concreta.
 
 ## Enlaces
 
@@ -100,7 +99,7 @@ Las cifras de benchmark comparativas entre AesCode-32B y los modelos propietario
 - Backbone: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Variante 8-bit: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-8bit
 - Variante 4-bit: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-4bit
-- Línea fiel (no abliterada): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
+- Línea estándar (no abliterated): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
 - Paper de AesCode: https://arxiv.org/abs/2610.18860
 - Paper de ablación direccional (Arditi et al.): https://arxiv.org/abs/2406.11717
 - Claude Code Local: https://github.com/nicedreamzapp/claude-code-local

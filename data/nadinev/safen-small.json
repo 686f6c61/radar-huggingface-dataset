@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "nadinev/safen-small",
+  "slug": "nadinev-safen-small",
+  "author": "nadinev",
+  "url": "https://huggingface.co/nadinev/safen-small",
+  "created_at": "2026-11-26T22:24:48.000Z",
+  "updated_at": "2026-11-26T23:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "south-african-english",
+    "za-en",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 5801975937,
+  "storage_human": "5.8 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

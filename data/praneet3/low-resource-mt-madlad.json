@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "praneet3/low-resource-mt-madlad",
+  "slug": "praneet3-low-resource-mt-madlad",
+  "author": "praneet3",
+  "url": "https://huggingface.co/praneet3/low-resource-mt-madlad",
+  "created_at": "2026-11-25T02:33:10.000Z",
+  "updated_at": "2026-11-25T06:06:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "kha",
+    "brx"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "en",
+    "kha",
+    "brx",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:finetune:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227286163,
+  "storage_human": "227 MB",
+  "context_length": null,
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

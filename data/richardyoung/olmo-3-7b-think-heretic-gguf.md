@@ -2,51 +2,52 @@
 
 ## Resumen
 
-Olmo-3-7B-Think-heretic-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Olmo-3-7B-Think-heretic, una variante "abliterated" (tambien etiquetada como "uncensored" y "heretic") del modelo Olmo 3 de 7B parametros en su version Think, publicada por el usuario richardyoung. El modelo parte de la familia Olmo de Ai2 (Allen Institute for AI) y ha sido modificado mediante tecnicas de abliteration para reducir los mecanismos de rechazo del modelo original, de ahi las etiquetas "heretic" y "abliterated". Esta publicacion concreta ofrece los pesos en GGUF, cuantizados con imatrix, para su uso con llama.cpp y Ollama.
+Olmo-3-7B-Think-heretic-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Olmo-3-7B-Think-heretic, una variante "abliterated" (tambien etiquetada como "heretic" y "uncensored") del modelo Olmo 3 de 7B en su version "Think", es decir, con modo de razonamiento explicito. El autor de la publicacion es el usuario richardyoung, que distribuye los pesos cuantizados para su uso con llama.cpp y Ollama, incluyendo variantes generadas con imatrix.
 
-El interes practico de esta ficha reside en que combina tres cosas: la arquitectura y el entrenamiento del Olmo 3 Think de 7B, la modificacion de comportamiento para eliminar restricciones de rechazo, y un formato de despliegue eficiente en CPU y GPU de consumo. El repositorio tiene 459 descargas y ningun "like", lo que sugiere una publicacion de nicho orientada a experimentacion mas que a uso en produccion. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
+El modelo resuelve el caso de uso de quienes quieren ejecutar localmente un modelo de 7B con capacidad de razonamiento y sin los filtros de rechazo habituales del modelo original, empleando hardware de consumo. La relevancia actual viene de la combinacion de tres factores: el interes creciente por modelos con "thinking mode", la demanda de versiones sin censura para investigacion sobre alineamiento y la disponibilidad de cuantizaciones GGUF que reducen el requisito de VRAM.
 
-La informacion disponible sobre el modelo es limitada: se conocen los parametros totales (7.298.011.136), la licencia Apache 2.0, el pipeline de text-generation y las etiquetas tecnicas, pero no se detallan la composicion del dataset, los resultados de benchmarks ni los idiomas soportados. Esta ficha refleja esa escasez de datos de forma explicita.
+La informacion disponible sobre el modelo es limitada: no se detallan los idiomas soportados, no hay datos de benchmarks publicados en la ficha y el acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Los parametros totales registrados en safetensors son 7.298.011.136.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Olmo 3 de Ai2; transformer decoder-only segun la familia, no confirmado en la informacion) |
+| Arquitectura | no disponible (modelo base Olmo 3 de 7B; arquitectura concreta no especificada en la informacion proporcionada) |
 | Parametros totales | 7.298.011.136 |
-| Parametros activos | no aplica (no es MoE segun los datos disponibles) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (cuantizaciones con imatrix; niveles concretos no disponibles) |
+| Tipos de cuantizacion | GGUF (variantes concretas no listadas; se menciona el uso de imatrix) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp, Ollama) |
+| Formato de pesos | GGUF (para llama.cpp y Ollama) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. El modelo deriva de la familia Olmo 3 de Ai2 en su variante Think de 7B parametros, y ha sido sometido a un proceso de abliteration por parte de richardyoung para producir la variante "heretic". La abliteration es una tecnica que identifica y neutraliza las direcciones de activacion asociadas al comportamiento de rechazo, de modo que el modelo deja de negarse a responder ciertas peticiones. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo base.
+No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la informacion proporcionada. El nombre del modelo indica que deriva de Olmo 3 de 7B en su variante "Think", lo que sugiere un modelo transformer con modo de razonamiento explicito, pero no se confirman detalles como el numero de capas, la dimension oculta, el mecanismo de atencion ni la composicion del dataset de entrenamiento.
 
-El repositorio incluye las etiquetas arxiv:2406.11717 y arxiv:2510.18892, que probablemente corresponden a los papers tecnicos del modelo base y de la tecnica de modificacion, aunque no se detalla su contenido en la informacion proporcionada. La cuantizacion se ha realizado con imatrix, una tecnica de cuantizacion con matriz de importancia que mejora la calidad de los pesos cuantizados respecto a la cuantizacion uniforme.
+La etiqueta "heretic" y "abliterated" indica que el modelo base ha sido sometido a una tecnica de eliminacion de direcciones de rechazo en el espacio de activaciones (abliteration), un procedimiento de edicion de pesos que busca reducir la tendencia del modelo a negarse a responder. No se especifican en la informacion disponible los detalles del proceso de abliteracion, el numero de tokens de entrenamiento, ni si hubo fases de RLHF o DPO. La publicacion incluye referencias a dos papers (arxiv:2406.11717 y arxiv:2510.18892) que probablemente documentan la tecnica, pero su contenido no se detalla aqui.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato de chat (etiqueta "conversational").
-- Modo de razonamiento "Think": el nombre del modelo sugiere soporte de cadena de pensamiento o razonamiento explicito, aunque no se detalla su funcionamiento en la informacion disponible.
-- Comportamiento "abliterated": reduccion o eliminacion de los rechazos del modelo base ante peticiones que el original rechazaria.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
-- Ejecucion en llama.cpp y Ollama gracias al formato GGUF.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en formato multi-turno.
+- Modo de razonamiento explicito ("Think"), heredado del modelo base Olmo 3 7B Think.
+- Ejecucion local mediante llama.cpp y Ollama, gracias al formato GGUF.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su integracion en servicios de inferencia.
+- Comportamiento sin censura: el proceso de abliteracion reduce los rechazos del modelo ante peticiones que el modelo original declinaria.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion disponible.
+- Capacidades multilingues: no disponibles.
+- Capacidades de vision o audio: no disponibles (el pipeline es text-generation).
 
 ## Casos de uso
 
-- Experimentacion con modelos sin filtros de rechazo: investigadores que estudian el comportamiento de modelos abliterated pueden usar esta variante para comparar respuestas frente al Olmo 3 Think original, aprovechando que el GGUF permite ejecucion local sin infraestructura dedicada.
-- Despliegue local en estaciones de trabajo: al estar en GGUF, el modelo puede ejecutarse con llama.cpp u Ollama en equipos sin GPU de datacenter, lo que facilita prototipos de generacion de texto en entornos de desarrollo individuales.
-- Generacion de texto creativo sin restricciones: escritores y creadores que necesitan respuestas sobre temas sensibles pueden usar la variante heretic para evitar rechazos, con la advertencia de que la calidad y seguridad no estan garantizadas.
-- Investigacion sobre alineacion y seguridad: el modelo sirve como caso de estudio de como la abliteration afecta al comportamiento, permitiendo medir la degradacion de capacidades y el aumento de respuestas problematicas respecto al base.
-- Evaluacion de cuantizaciones imatrix: desarrolladores interesados en comparar la calidad de distintos niveles de cuantizacion GGUF pueden usar este repositorio como banco de pruebas sobre un modelo de 7B.
-- Integracion en pipelines de generacion de texto por API compatible: la etiqueta "endpoints_compatible" sugiere que puede servirse detras de una API compatible con OpenAI, util para prototipos de aplicaciones conversacionales.
-- Fine-tuning posterior sobre GGUF: no es un caso directo, ya que el GGUF no es el formato ideal para reentrenamiento; para ello seria preferible el modelo base en safetensors.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como cambia el comportamiento de un modelo tras la abliteracion, comparando respuestas con el Olmo 3 7B Think original en el mismo conjunto de prompts.
+- Despliegue local en estaciones de trabajo: al estar en GGUF, puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada de gama alta, usando cuantizaciones de 4 o 5 bits.
+- Generacion de texto creativo sin restricciones: util para escritura de ficcion, guiones o narrativa que requiera contenido sensible que el modelo original rechazaria.
+- Prototipado rapido de asistentes conversacionales: la compatibilidad con endpoints permite montar un servidor de inferencia local y probar flujos conversacionales antes de pasar a modelos mayores.
+- Analisis de contenido y redaccion tecnica: el modo "Think" puede emplearse para tareas que requieren razonamiento paso a paso, como descomposicion de problemas o explicacion de conceptos.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye variantes generadas con imatrix, lo que permite medir la perdida de calidad entre cuantizaciones sobre el mismo modelo base.
+- Educacion e investigacion academica: al ser Apache 2.0, puede usarse en entornos docentes y proyectos de investigacion sin restricciones de licencia comercial.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +55,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de 7.298 millones de parametros, una cuantizacion de 4 bits ocupa aproximadamente 4-5 GB de pesos, una de 8 bits en torno a 8 GB y fp16 alrededor de 14-15 GB, sin contar el overhead de contexto y el runtime.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, el modelo es apto para GPUs de consumo como RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090 en cuantizaciones de 4 a 8 bits; para fp16 se requeriria una GPU de 16 GB o superior, como RTX 4090, A100 o H100.
-- Cabe en GPU de consumo: si, en cuantizaciones de 4 a 8 bits segun la VRAM disponible, aunque el dato no esta confirmado en la informacion.
-- Opciones de despliegue: llama.cpp y Ollama (etiquetas del repositorio); tambien compatible con endpoints segun la etiqueta correspondiente.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de 7.298 millones de parametros en GGUF, una cuantizacion de 4 bits ronda los 4-5 GB de pesos, una de 5 bits los 5-6 GB y una de 8 bits los 8 GB, a lo que hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: no especificadas en la informacion disponible. Para cuantizaciones de 4-5 bits, una RTX 3060 de 12 GB o superior es suficiente; para 8 bits, se recomienda una RTX 4070 Ti o superior.
+- Cabe en GPU de consumo: si, en principio, en cuantizaciones de 4 y 5 bits; el modelo completo en 16 bits no cabe en GPU de consumo.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. La etiqueta endpoints_compatible sugiere integracion con servidores de inferencia.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| richardyoung/Olmo-3-7B-Think-heretic-GGUF | 7.298 M | no disponible | Apache 2.0 | GGUF | Variante abliterated cuantizada, acceso gated |
-| richardyoung/Olmo-3-7B-Think-heretic | 7.298 M (presumible) | no disponible | no disponible | safetensors (presumible) | Modelo base del que deriva esta cuantizacion |
-| Olmo 3 7B Think (Ai2) | 7B (familia) | no disponible | no disponible | no disponible | Modelo original sin abliteration; datos no confirmados en la informacion |
+| Olmo-3-7B-Think-heretic-GGUF | 7.298 M | no disponible | Apache 2.0 | GGUF | Version abliterated, acceso restringido |
+| Olmo 3 7B Think (original) | ~7.000 M | no disponible | no disponible | safetensors | Modelo base sin abliterar, con filtros de rechazo |
+| Modelos abliterated de 7B de la comunidad (familia Llama/Mistral) | ~7.000 M | variable | variable | GGUF/safetensors | Alternativas de la comunidad con tecnicas similares |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas. La comparacion se limita a parametros, licencia y formato.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina o reduce los rechazos del modelo, lo que implica un mayor riesgo de generar contenido danino, sesgado o inapropiado; no debe desplegarse en produccion orientada al publico sin filtros adicionales.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a los modelos de lenguaje de esta escala.
-- La modificacion heretic puede degradar capacidades del modelo base respecto al Olmo 3 Think original; no hay benchmarks que lo confirmen o desmientan.
-- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingue adecuado.
-- Longitud de contexto no documentada; planificar el despliegue sin asumir ventanas largas.
-- El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
-- Aunque la licencia es Apache 2.0, el uso comercial de una variante abliterated conlleva riesgos reputacionales y de cumplimiento que conviene evaluar juridicamente.
-- El repositorio tiene pocas descargas y ningun "like", sin senales de validacion por parte de la comunidad; tratar como publicacion experimental.
-- El tamano del repo (40.6 GB) sugiere que contiene multiples niveles de cuantizacion, lo que aumenta el espacio en disco necesario.
+- El modelo ha sido abliterated, lo que elimina parte de los filtros de seguridad; puede generar contenido ofensivo, ilegal o peligroso sin advertencia. No es adecuado para produccion orientada a usuarios finales sin capas de moderacion adicionales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad en la informacion disponible; como todo modelo de 7B, es propenso a inventar datos.
+- Sesgos conocidos: no documentados en la informacion disponible; el proceso de abliteracion no elimina los sesgos del corpus de entrenamiento original.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles, lo que impide garantizar su comportamiento en tareas multilingues o de contexto largo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo abliterated; el usuario asume la responsabilidad legal del contenido generado.
+- El modelo base es un modelo de 7B, por lo que su capacidad de razonamiento complejo, codigo y matematicas es inferior a la de modelos de mayor tamano; no se recomienda para tareas que exijan alta precision sin verificacion humana.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic-GGUF
+- Hugging Face: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic-GGUF
 - Modelo base: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic
 - Paper referenciado (arxiv:2406.11717): https://arxiv.org/abs/2406.11717
 - Paper referenciado (arxiv:2510.18892): https://arxiv.org/abs/2510.18892
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com

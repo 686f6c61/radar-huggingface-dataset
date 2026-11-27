@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/WebExplorer-8B-GGUF",
+  "slug": "mradermacher-webexplorer-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WebExplorer-8B-GGUF",
+  "created_at": "2025-09-08T23:02:16.000Z",
+  "updated_at": "2026-11-27T02:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "LLM",
+    "agent",
+    "en",
+    "base_model:hkust-nlp/WebExplorer-8B",
+    "base_model:quantized:hkust-nlp/WebExplorer-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425334528,
+  "storage_human": "73.4 GB",
+  "context_length": 131072,
+  "base_model": "hkust-nlp/WebExplorer-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

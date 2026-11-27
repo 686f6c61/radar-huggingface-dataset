@@ -2,108 +2,107 @@
 
 ## Resumen
 
-Qwen-AgentWorld-35B-A3B-SuperRoc-GGUF es una cuantización GGUF del checkpoint Qwen/Qwen-AgentWorld-35B-A3B, publicada por el usuario kingjones777. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 34.660.610.688 parámetros totales, del que el autor indica 35B en el nombre y A3B como referencia a los parámetros activos por token (dato no confirmado numéricamente en la información disponible). El problema que resuelve esta publicación no es el modelado en sí, sino el despliegue: ofrece un único fichero GGUF cuantizado en formato ROCm-FP4 optimizado para el motor Super Roc sobre hardware Strix Halo (AMD Ryzen AI Max+ 395, gfx1151).
+Qwen-AgentWorld-35B-A3B-SuperRoc-GGUF es una cuantización comunitaria en formato GGUF del modelo Qwen/Qwen-AgentWorld-35B-A3B, publicada por el usuario kingjones777. El modelo base es un transformer de tipo Mixture of Experts (MoE) de Qwen, con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token (según la nomenclatura A3B del nombre). El repositorio contiene una única build cuantizada con el esquema ROCm-FP4 del proyecto ROCmFPX, empaquetada en un fichero de 18,8 GB con cuantización Q4_0 optimizada para hardware AMD Strix Halo.
 
-La relevancia es de nicho pero concreta: permite ejecutar un modelo de ~35B parámetros totales en un equipo con memoria unificada de 128 GB y GPU integrada AMD, con un contexto cargado de 131.072 tokens y un rendimiento medido de 71,83 tok/s en generación con prompt de 1k y 169,03 tok/s con prompt de 8k. No es una publicación de investigación ni un modelo nuevo, sino un artefacto de despliegue con métricas propias.
+La relevancia de esta ficha no está en el modelo en sí, sino en el empaquetado: se trata de una build específica para el motor de inferencia Super Roc, orientado a la APU Ryzen AI Max+ 395 (gfx1151) con memoria unificada de 128 GB. El autor reporta métricas de rendimiento medidas en ese hardware concreto (hasta 1894 tok/s de prompt y 169 tok/s de generación con contexto de 8K) y un contexto cargado de 131.072 tokens. Es, por tanto, una distribución pensada para inferencia local en equipos de escritorio con GPU integrada de gran capacidad de memoria, no para servidores con GPUs discretas.
 
-La licencia declarada es Apache 2.0, heredada del modelo base, y el fichero pesa 18.797.590.976 bytes (17,5 GiB), lo que lo sitúa en el rango de cuantizaciones Q4. El autor advierte explícitamente de que el checkpoint fuente no incluye pesos de visión, por lo que este build es solo texto.
+El checkpoint fuente no incluye pesos de visión, por lo que esta build es exclusivamente de texto. La licencia declarada es Apache 2.0, heredada del modelo base. El repositorio tiene un volumen de descargas muy bajo (198) y ninguna interacción social, lo que sugiere una distribución de nicho orientada a la comunidad de Strix Halo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (MoE), según nomenclatura A3B del modelo base |
-| Parametros totales | 34.660.610.688 (34,66B) |
-| Parametros activos | no disponible (la nomenclatura A3B sugiere ~3B activos, sin confirmación numérica) |
-| Longitud de contexto | 131.072 tokens (contexto cargado y verificado por el autor) |
-| Tipos de cuantizacion | Q4_0 con formato ROCm-FP4 (build FAST-imatrix); única variante publicada |
-| Idiomas soportados | no disponible |
+| Arquitectura | Mixture of Experts (MoE) basada en transformer (modelo base Qwen) |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | Aproximadamente 3B (según nomenclatura A3B del nombre; no confirmado en la información disponible) |
+| Longitud de contexto | 131.072 tokens (contexto cargado en la medición reportada) |
+| Tipos de cuantizacion | Q4_0 con formato ROCm-FP4 (build única: Qwen-AgentWorld-35B-A3B-Q4_0-ROCmFP4-FAST-imatrix.gguf) |
+| Idiomas soportados | No disponible (el autor no declara listado de idiomas; la medición de perplejidad se hizo sobre un documento técnico en inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero único Qwen-AgentWorld-35B-A3B-Q4_0-ROCmFP4-FAST-imatrix.gguf) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base más allá de su carácter MoE y del recuento de parámetros totales. El nombre A3B indica la convención de Qwen para modelos MoE con aproximadamente 3B de parámetros activos por token, aunque no se aporta el número exacto de expertos, la dimensión oculta ni la configuración de atención. Tampoco se especifican los datos de entrenamiento, el volumen de tokens, la composición del corpus ni si hubo fases de RLHF o DPO.
+El modelo base Qwen/Qwen-AgentWorld-35B-A3B es una arquitectura Mixture of Experts de Qwen con 34.660 millones de parámetros totales y, según la convención de nombres, unos 3.000 millones activos por token. La model card de esta build no aporta detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o aprendizaje por refuerzo. Tampoco se documentan innovaciones de atención (linear attention, decodificación especulativa en el modelo base) más allá de la mención a un "drafter" desactivado en las mediciones de Super Roc.
 
-La innovación técnica de esta publicación es el formato de cuantización: ROCm-FP4, desarrollado por el equipo ROCmFPX, aplicado sobre llama.cpp/ggml y empaquetado en un build FAST-imatrix. El autor reporta una perplejidad de 7,51 en wikitext-2 para esta cuantización concreta, lo que permite evaluar la degradación respecto al checkpoint original. El motor Super Roc añade soporte de prompt lookup y caché de prompt (6.961 de 6.986 tokens reutilizados en el segundo turno). No se menciona decodificación especulativa activa: el drafter figura como desactivado en las mediciones.
+La contribución técnica de esta ficha es la cuantización: el autor aplica el formato ROCm-FP4 de ROCmFPX sobre una cuantización Q4_0 con calibración imatrix (importancia matricial), generando un GGUF de 18.797.590.976 bytes. El resultado se ejecuta en el motor Super Roc, un fork de llama.cpp/ggml orientado a ROCm y a la arquitectura gfx1151 de Strix Halo. El autor reporta una perplejidad de 7,51 sobre un documento técnico en inglés de 11.000 tokens con contexto de 4096, como indicador de la degradación introducida por la cuantización.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato chat, con plantilla de chat compatible con el parámetro `chat_template_kwargs.enable_thinking`.
-- Modo thinking desactivable por petición; el comando de ejemplo lo arranca en `off`.
-- Tool calling / function calling: el autor reporta 7/8 llamadas correctas en modo required y 7/8 en modo auto.
-- Razonamiento multi-paso y uso como agente, implícito en el nombre AgentWorld del modelo base.
-- Contexto largo de hasta 131.072 tokens, verificado en carga por el autor.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Visión: no soportada; el checkpoint fuente no incluye pesos de visión y este build es solo texto.
-- Audio: no disponible.
+- Generación de texto conversacional en formato chat (pipeline text-generation, tag conversational).
+- Razonamiento multi-paso y uso como agente: el nombre AgentWorld y las pruebas de tool calling reportadas (7/8 en modo required y 7/8 en modo auto) indican soporte de llamadas a herramientas.
+- Modo "thinking" configurable: desactivado por defecto en el comando de ejemplo, activable por petición mediante chat_template_kwargs.enable_thinking.
+- Generación de código: el autor mide rendimiento específico con dos prompts de código (71,8 tok/s de media).
+- Compatibilidad con endpoints compatibles con la API de OpenAI (tag endpoints_compatible).
+- Procesamiento de contexto largo: carga hasta 131.072 tokens con caché de prompt (se reporta reutilización de 6961 de 6986 tokens en el segundo turno).
+- Capacidades de visión: no disponibles; el checkpoint fuente no incluye pesos de visión y la build es solo texto.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Agentes locales con tool calling: el modelo puede encadenar llamadas a funciones con una tasa de acierto medida de 7/8 en los modos required y auto, suficiente para prototipos de automatización en escritorio sin depender de la nube.
-- Asistentes con contexto largo en equipos Strix Halo: con 131.072 tokens cargados, permite analizar repositorios completos, documentación extensa o historiales de conversación largos en una máquina de 128 GB de memoria unificada.
-- Procesamiento por lotes de documentos en local: el rendimiento de prompt de 1.799,9 tok/s (p1k) y 1.894,2 tok/s (p8k) hace viable ingerir grandes volúmenes de texto de entrada en un solo equipo antes de generar respuestas.
-- Generación de código asistida: el autor mide 71,8 tok/s en dos prompts de código, un ritmo adecuado para autocompletado interactivo en un IDE conectado a un endpoint compatible con la API de OpenAI.
-- Integración en pipelines de desarrollo: al exponerse como endpoint compatible (`endpoints_compatible`) mediante `superroc serve`, puede conectarse a herramientas que esperan la API de OpenAI sin adaptadores adicionales.
-- Despliegue en estaciones de trabajo AMD: el caso de uso central del artefacto es ejecutar un MoE de 35B en hardware AMD consumer/prosumer mediante ROCm-FP4, un escenario históricamente mal cubierto por el ecosistema CUDA.
-- Evaluación de cuantizaciones: con perplejidad declarada en wikitext-2, sirve como referencia para comparar la pérdida de calidad de ROCm-FP4 frente a otras cuantizaciones del mismo modelo base.
+- Asistente de código local en estación de trabajo Strix Halo: el modelo puede generar código con un throughput medido de 71,8 tok/s y soporta tool calling, lo que permite integrarlo en flujos de edición asistida o revisión de parches sin depender de la nube.
+- Agente autónomo con contexto largo: con 131.072 tokens de ventana y caché de prompt, es adecuado para tareas de análisis de repositorios completos, auditoría de documentación extensa o seguimiento de conversaciones multi-turno largas.
+- Automatización de tareas con function calling: las pruebas reportadas (7 de 8 llamadas correctas en modo required y auto) lo hacen utilizable en pipelines de orquestación de herramientas, aunque con una tasa de fallo no despreciable que exige validación y reintentos.
+- Inferencia local en hardware con memoria unificada: al ocupar 18,8 GB en Q4_0, cabe holgadamente en los 128 GB de la APU Ryzen AI Max+ 395 y deja espacio para el contexto KV, lo que permite desplegarlo en un equipo de sobremesa sin GPU discreta.
+- Servicio de chat interno compatible con OpenAI: mediante superroc serve o Lemonade, se puede exponer como endpoint local para aplicaciones que ya consumen la API de OpenAI, sin coste por token.
+- Procesamiento por lotes de documentos técnicos: la perplejidad medida sobre documentación técnica en inglés (7,51) sugiere un comportamiento aceptable en resumen y extracción de información de textos especializados, siempre con verificación humana.
+- Experimentación e investigación en cuantización: sirve como banco de pruebas para evaluar el impacto de ROCm-FP4 frente a otras cuantizaciones Q4 en tareas de agente.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks académicos (MMLU, HumanEval, GSM8K). Los únicos datos medidos son de rendimiento de inferencia y de calidad de cuantización.
+El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). Los únicos datos medidos disponibles son de rendimiento de inferencia y de calidad aproximada:
 
-| Metrica | Valor |
-|---|---|
-| Perplejidad wikitext-2 | 7,51 |
-| Tiempo de carga | 20 s |
-| Prompt tok/s (p1k) | 1.799,9 |
-| Prompt tok/s (p8k) | 1.894,2 |
-| Generación tok/s (p1k) | 71,83 |
-| Generación tok/s (p8k) | 169,03 |
-| Generación de código tok/s | 71,8 (media de 2 prompts) |
-| Tool calls (required) | 7/8 |
-| Tool calls (auto) | 7/8 |
-| Caché de prompt, turno 2 | 6.961 / 6.986 tokens |
-| Contexto cargado | 131.072 tokens |
-| Drafter | desactivado |
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Perplejidad | 7,51 | Documento técnico en inglés de 11K tokens, contexto 4096 |
+| Carga del modelo | 20 s | Ryzen AI Max+ 395, 128 GB, Super Roc 0.20.0 |
+| Prompt tok/s (p1k) | 1799,9 | Una petición simultánea |
+| Prompt tok/s (p8k) | 1894,2 | Una petición simultánea |
+| Generación tok/s (p1k) | 71,83 | Una petición simultánea |
+| Generación tok/s (p8k) | 169,03 | Una petición simultánea |
+| Generación de código tok/s | 71,8 | Media de 2 prompts de código |
+| Tool calls (required / auto) | 7/8 / 7/8 | Pruebas del autor |
+| Caché de prompt, turno 2 | 6961 / 6986 tokens | Reutilización de caché |
+| Contexto cargado | 131.072 tokens | — |
 
-Medido en Ryzen AI Max+ 395 con 128 GB, Super Roc 0.20.0 (release candidate), una petición a la vez, el 23 de noviembre de 2026. No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el fichero GGUF ocupa 18.797.590.976 bytes (17,5 GiB); se necesita al menos esa cantidad de memoria disponible para los pesos, más el espacio para la caché KV correspondiente al contexto configurado.
-- GPU recomendadas: AMD Ryzen AI Max+ 395 (Strix Halo, gfx1151) es el objetivo declarado y el único hardware con métricas publicadas. No hay datos para A100, H100 ni RTX 4090.
-- GPU consumer: encaja en equipos con 32 GB o más de memoria unificada o VRAM, aunque el formato ROCm-FP4 está pensado específicamente para las extensiones de Super Roc; en GPUs NVIDIA habría que recurrir a otro build GGUF del mismo modelo base.
-- Opciones de despliegue: Super Roc (`superroc serve`, con flags `--context`, `--prompt-lookup`, `--think`), Lemonade mediante `lemonade pull` y configuración de `llamacpp.rocm_bin`, y cualquier runtime compatible con GGUF en la medida en que soporte el formato ROCm-FP4.
-- Latencia y throughput: 20 s de carga, 71,83 tok/s de generación con prompt de 1k y 169,03 tok/s con prompt de 8k, con una sola petición concurrente. No se publican datos de concurrencia.
+- VRAM/memoria estimada: 18,8 GB para los pesos en Q4_0 ROCm-FP4, más la memoria del contexto KV. Con 131.072 tokens de contexto la huella adicional puede ser considerable; el autor no reporta el consumo total de memoria con contexto completo.
+- GPU recomendadas: el autor valida exclusivamente en AMD Ryzen AI Max+ 395 (gfx1151, Strix Halo) con 128 GB de memoria unificada. No hay datos de funcionamiento en GPUs discretas.
+- GPU de consumo: cabe en equipos con al menos 20-24 GB de memoria disponible para pesos y contexto, pero la build está optimizada para ROCm en gfx1151; no se confirma compatibilidad con CUDA ni con GPUs NVIDIA.
+- Opciones de despliegue: motor Super Roc (superroc serve), Lemonade (lemonade pull / lemonade chat) y, al ser GGUF, potencialmente llama.cpp y otros runners compatibles con GGUF, aunque el formato ROCm-FP4 puede requerir soporte específico de ROCmFPX.
+- Latencia y throughput: medidos en una sola petición simultánea; 1799,9-1894,2 tok/s de prompt y 71,83-169,03 tok/s de generación según longitud de contexto. No hay datos de concurrencia ni de latencia bajo carga.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-AgentWorld-35B-A3B-SuperRoc-GGUF | 34,66B totales (MoE) | 131.072 | Apache 2.0 | GGUF ROCm-FP4 | Perplejidad 7,51 en wikitext-2; optimizado para Strix Halo |
-| Qwen/Qwen-AgentWorld-35B-A3B (base) | 34,66B totales (MoE) | no disponible | Apache 2.0 | safetensors | Checkpoint original sin cuantizar; sin pesos de visión |
-| Otras cuantizaciones GGUF del mismo base | 34,66B totales (MoE) | depende del build | Apache 2.0 | GGUF | No se dispone de datos comparativos en la información proporcionada |
+| Qwen-AgentWorld-35B-A3B-SuperRoc-GGUF | 34,66B totales, ~3B activos | 131.072 tokens | GGUF Q4_0 ROCm-FP4 | Apache 2.0 | Hugging Face, 198 descargas |
+| Qwen/Qwen-AgentWorld-35B-A3B (base) | 34,66B totales, ~3B activos | No disponible en esta ficha | Safetensors (presumiblemente) | Apache 2.0 | Hugging Face (modelo oficial) |
+| Otras cuantizaciones GGUF del mismo modelo base | 34,66B totales, ~3B activos | Depende del runner | GGUF Q4_K_M, Q5, etc. | Apache 2.0 | Según repositorios de terceros |
+| Modelos MoE de ~30-35B con ~3B activos de otros fabricantes | Rango similar | Variable | Safetensors/GGUF | Variable | No disponible en la información proporcionada |
 
-No se dispone de información sobre modelos alternativos de otros desarrolladores con los que comparar parámetros, contexto y rendimiento de forma rigurosa.
+La comparación con alternativas de la misma categoría no puede completarse con datos verificables a partir de la información disponible; no se aportan cifras de rendimiento comparadas con otros modelos.
 
 ## Limitaciones y advertencias
 
-- Solo texto: el checkpoint fuente no incluye pesos de visión y este build no añade multimodalidad.
-- Idiomas soportados no declarados; no se puede garantizar calidad fuera de los idiomas cubiertos por el modelo base.
-- La perplejidad de 7,51 en wikitext-2 corresponde a esta cuantización Q4_0 ROCm-FP4, no al modelo original; la degradación respecto al checkpoint completo no se cuantifica en la información disponible.
-- Las métricas se han medido con una sola petición simultánea; no hay datos de throughput bajo concurrencia ni de latencia en cola.
-- Dependencia fuerte del ecosistema Super Roc y del hardware Strix Halo: el formato ROCm-FP4 y los flags del motor son específicos, lo que reduce la portabilidad frente a un GGUF estándar.
-- Riesgo de alucinación y sesgos: no documentados por el autor; aplican los del modelo base, sin evaluación publicada en esta ficha.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de las dependencias (llama.cpp/ggml, MIT; componentes ROCmFPX).
-- El repositorio no tiene descargas ni likes y fue creado y actualizado el mismo día, lo que indica una publicación reciente sin validación comunitaria.
-- El nombre del modelo incluye "35B" mientras que el recuento real de safetensors es 34,66B; usar el dato de safetensors para planificación de memoria.
+- Es una cuantización Q4_0: la perplejidad de 7,51 sobre un documento técnico indica degradación respecto al modelo original, que puede afectar a tareas de razonamiento fino, matemáticas o generación de código complejo.
+- Solo texto: el checkpoint fuente no incluye pesos de visión, por lo que no puede procesar imágenes.
+- Sin datos de benchmarks de calidad: no se puede verificar el rendimiento en MMLU, HumanEval o GSM8K; la evaluación del autor se limita a perplejidad y throughput.
+- Tool calling imperfecto: 7 de 8 llamadas correctas implica un 12,5 % de fallos en las pruebas del autor, lo que exige manejo de errores en producción.
+- Build de nicho y sin mantenimiento verificado: 198 descargas, 0 likes, autor individual y un único fichero; no hay garantía de actualizaciones ni de soporte.
+- Dependencia del motor Super Roc: las métricas y el formato ROCm-FP4 están ligados a un motor específico para gfx1151; el comportamiento en llama.cpp estándar u otros runners no está documentado.
+- Idiomas no declarados: el autor no especifica el conjunto de idiomas soportados; la única medición cualitativa es en inglés.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen y de los componentes ROCmFPX y llama.cpp/ggml (MIT) citados en los créditos.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de sesgo ni de seguridad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen-AgentWorld-35B-A3B-SuperRoc-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
 - Motor Super Roc: https://github.com/kingjones30/superroc
-- Documentación de Lemonade para Super Roc: https://github.com/kingjones30/superroc/blob/main/docs/LEMONADE.md
-- ROCmFPX: https://github.com/charlie12345/ROCmFPX
-- llama.cpp / ggml: no se proporciona enlace directo en la información disponible
+- Guía de Lemonade para Super Roc: https://github.com/kingjones30/superroc/blob/main/docs/LEMONADE.md
+- Proyecto ROCmFPX: https://github.com/charlie12345/ROCmFPX
+- llama.cpp / ggml: https://github.com/ggerganov/llama.cpp

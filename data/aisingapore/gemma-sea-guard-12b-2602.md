@@ -2,84 +2,92 @@
 
 ## Resumen
 
-Gemma-SEA-Guard-12B-2602 es un modelo de moderación de contenido desarrollado por el equipo AI Products Pillar de AI Singapore, dentro del proyecto SEA-LION (Southeast Asian Languages In One Network). Se trata de un ajuste fino de Gemma 3 12B IT, entrenado sobre un millón de pares de instrucción con el objetivo de clasificar interacciones entre humanos y asistentes de IA como "seguras" o "inseguras", atendiendo a las sensibilidades culturales de la región del Sudeste Asiático.
+Gemma-SEA-Guard-12B-2602 es un modelo de clasificación de seguridad (safety guard) desarrollado por AI Singapore dentro de la familia SEA-Guard, orientada específicamente al sudeste asiático. Se trata de un ajuste fino supervisado de Google Gemma 3 12B IT sobre aproximadamente un millón de pares de instrucción, con el objetivo de emitir una clasificación binaria en texto ("safe" o "unsafe") sobre peticiones de usuario y respuestas de asistentes LLM.
 
-El modelo destaca por su doble capacidad de procesamiento de texto e imagen (image-text-to-text), lo que permite moderar tanto prompts de texto como imágenes en contextos de seguridad. Su ventana de contexto alcanza los 128 000 tokens, y cubre ocho idiomas: birmano, inglés, indonesio, malayo, tagalo, tamil, tailandés y vietnamita. La licencia es Gemma, de Google, lo que facilita su uso comercial bajo los términos de esa licencia.
+El modelo hereda la arquitectura decoder multimodal de Gemma 3, con capacidad de procesar texto e imágenes (pipeline image-text-to-text) y una ventana de contexto de 128k tokens. Su valor diferencial es la incorporación de criterios de seguridad culturalmente contextualizados para la región SEA, cubriendo birmano, inglés, indonesio, malayo, tagalo, tamil, tailandés y vietnamita, idiomas habitualmente infrarrepresentados en los sistemas de moderación de propósito general.
 
-Su relevancia actual radica en que ofrece una alternativa a los clasificadores de seguridad genéricos (como Llama Guard o Aya Guard) adaptada específicamente a las normas culturales y lingüísticas de la región SEA, un área habitualmente poco representada en los datasets de moderación. El modelo se sirve a través de una API pública, aunque también está disponible para descarga directa en Hugging Face con soporte para vLLM.
+Es relevante ahora porque los filtros de seguridad entrenados sobre todo en inglés y en contextos occidentales fallan sistemáticamente al evaluar contenido en lenguas y marcos culturales del sudeste asiático. SEA-Guard ofrece un clasificador específico, desplegable con vLLM, que puede integrarse como capa de moderación en pipelines de aplicaciones conversacionales y sistemas multimodales de la región.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Gemma 3), decodificador autorregresivo |
-| Parametros totales | no disponible (modelo base: 12 000 millones; el dato de safetensors indica 1 166 448, inconsistente con la arquitectura) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 128 000 tokens |
-| Tipos de cuantizacion | no disponible (se recomienda bfloat16 en la guía de uso) |
-| Idiomas soportados | birmano, ingles, indonesio, malayo, titulo, tamil, tailandes y vietnamita |
+| Arquitectura | Transformer decoder multimodal (Gemma 3), base google/gemma-3-12b-it |
+| Parametros totales | 12B (nominal); el recuento de tensores safetensors reportado es 1.166.448, dato no representativo del total de parametros |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128k tokens |
+| Tipos de cuantizacion | no disponible (formato nativo en safetensors; compatible con cuantizacion estandar de transformers/vLLM) |
+| Idiomas soportados | birmano (my), ingles (en), indonesio (id), malayo (ms), tagalo (tl), tamil (ta), tailandes (th), vietnamita (vi) |
 | Licencia | Gemma (terminos de Google) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una versión finetuneada de Gemma 3 12B IT, un transformer multimodal basado en el decodificador que combina un codificador de vision con un bloque de lenguaje. La arquitectura subyacente mantiene el tokenizer y la estructura de Gemma 3, con capacidad para procesar entradas de imagen junto con texto. El entrenamiento se realizó sobre un millón de pares de instrucciones de seguridad, diseñados específicamente para el contexto cultural del Sudeste Asiático. No se han publicado detalles sobre técnicas de alineación adicionales (como RLHF o DPO) más allá del finetune supervisado sobre los datos de SEA-Guard. El proceso de ajuste está descrito en el paper SEA-Guard (arxiv:2602.01618).
+El modelo parte de Gemma 3 12B IT, un transformer decoder multimodal capaz de procesar entradas de texto e imagen. Mantiene el tokenizador por defecto de Gemma 3 y la ventana de contexto de 128k tokens. La salida está restringida funcionalmente a una clasificación binaria en texto: "safe" o "unsafe", tanto para la petición del usuario como para la respuesta del asistente, e incluye la variante de clasificación imagen-texto.
+
+El ajuste fino se realizó sobre aproximadamente 1 millón de pares de instrucción con criterios de seguridad cultural adaptados al contexto del sudeste asiático. La model card no detalla la composición exacta del dataset ni si se emplearon etapas de RLHF o DPO; remite al paper SEA-Guard (arXiv:2602.01618) para los detalles de los datos de entrenamiento. No se especifica el número total de tokens de entrenamiento ni la mezcla por idioma.
 
 ## Capacidades
 
-- Clasificacion binaria de seguridad: devuelve exclusivamente "safe" o "unsafe" para cada interacción humano-asistente.
-- Moderacion de texto: evalúa si un prompt de usuario es seguro o inseguro.
-- Moderacion de respuesta: analiza la respuesta del asistente para detectar contenido inseguro, incluso si el prompt original era seguro.
-- Moderacion de imagen-texto: acepta una imagen junto con el texto para clasificar solicitudes que incluyen contenido visual.
-- Multilingue para SEA: cubre ocho idiomas de la región, incluyendo birmano, tamil y tagalo, además de ingles.
-- Compatible con vLLM para inferencia rapida en produccion.
-- Uso directo sin finetune adicional ni in-context learning, ya que el modelo ya está entrenado para la tarea de clasificación.
+- Clasificación binaria de seguridad de peticiones de usuario ("safe" / "unsafe").
+- Clasificación de seguridad de respuestas generadas por asistentes LLM, considerando conjuntamente prompt y respuesta.
+- Clasificación de seguridad en entradas multimodales imagen-texto (por ejemplo, peticiones que acompañan una imagen).
+- Comprensión multilingüe en ocho idiomas del sudeste asiático más inglés.
+- Manejo de contexto largo (128k tokens) para conversaciones multi-turno o documentos extensos.
+- Uso directo sin fine-tuning adicional ni in-context learning, según indica el autor.
+- Compatibilidad con vLLM para inferencia de alta velocidad.
+- Posibilidad de continuar el entrenamiento sobre datasets específicos, incluidos conjuntos de seguridad visión-texto.
 
 ## Casos de uso
 
-- Moderacion de contenido en plataformas sociales del Sudeste Asiático: el modelo puede evaluar en tiempo real los comentarios y publicaciones de los usuarios, devolviendo una etiqueta de seguridad binaria que permita a los sistemas automatizados decidir si bloquear, revisar o aceptar el contenido. Su conocimiento cultural local reduce los falsos positivos en expresiones idiomáticas propias de la región.
-- Filtrado de respuestas generadas por asistentes IA: integrado en un pipeline de chatbot, puede clasificar la respuesta generada por el LLM antes de enviarla al usuario, evitando que se muestren respuestas inseguras o culturalmente inapropiadas.
-- Moderacion de imagenes en aplicaciones de citas o redes sociales: al aceptar tanto texto como imagen, puede evaluar si una solicitud que incluye una imagen (por ejemplo, "crea un blog criticando esta foto") es segura o no, protegiendo a los usuarios de contenido ofensivo.
-- Evaluacion de sistemas de moderación en entornos de investigación: los investigadores pueden usar el modelo como referencia o como componente de un conjunto de clasificadores para comparar la calidad de sus propios sistemas de moderación en idiomas del SEA.
-- Auditoria de cumplimiento normativo en empresas de tecnologia: las empresas que operan en la region pueden desplegar el modelo para revisar interacciones registradas y generar informes de seguridad con una clasificacion binaria clara, facil de auditar.
-- Filtrado de prompts para modelos de generacion de contenido: antes de enviar un prompt a un LLM generativo (por ejemplo, un generador de imagenes o de texto), el modelo puede clasificar la solicitud del usuario y bloquearla si es insegura, reduciendo la probabilidad de generar contenido dañino.
+- Moderación de entrada en aplicaciones de chat: el modelo clasifica la petición del usuario antes de enviarla al LLM principal, bloqueando prompts inseguros en birmano, tailandés o vietnamita sin necesidad de traducir al inglés.
+- Moderación de salida en producción: se evalúa la respuesta del asistente junto al prompt original para detectar respuestas dañinas aunque la petición fuera inocua, usando el formato de clasificación prompt+respuesta.
+- Filtrado de contenido en plataformas sociales regionales: clasificación de publicaciones y comentarios en malayo, indonesio y tagalo con criterios culturales locales, reduciendo falsos positivos frente a filtros anglocéntricos.
+- Moderación de contenido generado con imágenes: el modelo evalúa peticiones que incluyen una imagen (por ejemplo, generar un artículo que critique una fotografía), útil en herramientas de generación imagen-texto.
+- Capa de seguridad en pipelines de agentes: integración como guard previo y posterior a cada paso de un agente multi-paso, con contexto de 128k tokens para revisar trayectorias completas.
+- Investigación en seguridad lingüística: evaluación comparativa de la tasa de clasificación correcta en las ocho lenguas SEA frente a clasificadores genéricos, usando el modelo como referencia ajustada al dominio.
+- Cumplimiento y auditoría: registro y clasificación automatizada de interacciones para revisión humana en despliegues regulados, dado que el autor recomienda supervisión humana sobre las salidas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo se presenta como un clasificador binario y no se proporcionan metricas de precision, recall o F1 en la model card ni en los resultados de busqueda web. Se recomienda consultar el paper SEA-Guard (arxiv:2602.01618) para futuras evaluaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al estar basado en Gemma 3 12B, se necesitan aproximadamente 24 GB de VRAM para inferencia en bfloat16. Con cuantizacion de 4 bits (no oficialmente documentada), podria reducirse a unos 8-10 GB.
-- GPU recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) o GPUs con al menos 24 GB de VRAM para una inferencia comoda. Para despliegues mas ligeros, se puede intentar en RTX 3090 con cuantizacion.
-- En consumer GPU: cabe en una RTX 4090 o RTX 3090 (24 GB) en bfloat16, aunque con memoria justa. Para GPUs de 16 GB (como RTX 4080) se requeriria cuantizacion.
-- Opciones de despliegue: el modelo es compatible con vLLM para inferencia rapida, y se puede cargar con transformers (Hugging Face) usando Gemma3ForConditionalGeneration. Tambien puede convertirse a GGUF para su uso con llama.cpp u Ollama, aunque no se proporciona documentacion oficial.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia, un modelo de 12B en una RTX 4090 suele generar entre 20 y 40 tokens por segundo con vLLM, pero no se ha medido para este modelo.
+- VRAM estimada para inferencia en bf16: en torno a 24 GB solo para pesos de un modelo de 12B, más overhead de activaciones y caché KV; en la práctica se recomienda GPU de 40-80 GB para contextos largos.
+- Cuantización a 8 bits: aproximadamente 12-14 GB de pesos, viable en GPU de 24 GB (RTX 4090, A10G, L4 de 24 GB) con contexto moderado.
+- Cuantización a 4 bits: aproximadamente 7-8 GB de pesos, viable en GPU consumer de 12-16 GB, con degradación potencial en la precisión de clasificación no cuantificada por el autor.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB para producción con contexto largo; RTX 4090 o L40S para despliegues de menor concurrencia.
+- Despliegue: soporte explícito de vLLM según la model card; transformers con `Gemma3ForConditionalGeneration` y `AutoProcessor` para uso directo; el resto de runtimes (llama.cpp, Ollama, TGI) no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Tarea principal |
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma-SEA-Guard-12B-2602 | 12B | 128k | 8 idiomas (SEA) | Gemma | Clasificacion binaria de seguridad |
-| Llama Guard 3 (Meta) | 8B | 128k | Multilingue (incluye ingles, espanol, etc.) | Llama 3 Community License | Clasificacion de seguridad (texto) |
-| Aya Guard (Cohere) | 8B | 8k | Multilingue (101 idiomas) | CC-BY-NC | Clasificacion de seguridad (texto) |
-
-La comparativa es orientativa; no se dispone de datos de rendimiento comparativo entre estos modelos en los documentos consultados. Gemma-SEA-Guard se diferencia por su enfoque multimodal (texto + imagen) y por su especializacion en idiomas del Sudeste Asiatico, que no estan bien cubiertos en los otros dos.
+| Gemma-SEA-Guard-12B-2602 | 12B | 128k | 8 idiomas SEA + en | Gemma | Clasificador binario de seguridad, multimodal |
+| google/gemma-3-12b-it (base) | 12B | 128k | multilingue general | Gemma | Modelo general; no especializado en moderación ni en criterios culturales SEA |
+| SEA-LION (familia, otros modelos) | variable | no disponible | SEA | no disponible en esta ficha | Colección de LLM de AI Singapore; el autor indica que SEA-Guard agrupa cuatro modelos, con API pública solo para la variante Gemma |
+| Clasificadores de seguridad genéricos (tipo Llama Guard) | variable | variable | principalmente inglés | variable | No disponibles en la información proporcionada para comparación numérica |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: el modelo hereda los sesgos de Gemma 3 12B IT y del dataset de entrenamiento de SEA-Guard, que puede no ser representativo de todas las culturas dentro de la region SEA. La clasificacion binaria puede simplificar en exceso situaciones complejas.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir respuestas no fundamentadas o irrelevantes, aunque su salida esta limitada a "safe" o "unsafe". Se recomienda supervision humana.
-- Limitaciones de contexto: aunque el contexto es de 128k tokens, el modelo se ha entrenado para clasificar interacciones cortas (prompt y respuesta); no esta optimizado para analizar largas conversaciones.
-- Restricciones de licencia: la licencia Gemma permite uso comercial, pero hay que cumplir con los terminos de Google (prohibicion de uso para actividades maliciosas, restricciones de transferencia de pesos, etc.).
-- Caveat de produccion: el modelo es un clasificador binario; no proporciona explicaciones ni niveles de severidad. Para decisiones criticas (por ejemplo, moderacion de contenido en plataformas grandes) se recomienda combinarlo con un sistema de revision humana y otros clasificadores.
+- El modelo puede alucinar o generar texto no fundamentado pese a su uso como clasificador; el autor recomienda supervisión humana y verificación secundaria de las salidas.
+- La salida está pensada como clasificación binaria; no debe tratarse como determinación absoluta de seguridad.
+- Sesgos conocidos: no se documentan en la model card; al derivar de Gemma 3 y de un dataset de instrucciones no descrito en detalle, pueden persistir sesgos del modelo base y del proceso de anotación.
+- Cobertura lingüística limitada a los ocho idiomas declarados; el rendimiento fuera de ellos no está garantizado.
+- La licencia Gemma impone restricciones de uso comercial y obligaciones de cumplimiento de los términos de Google; revisar antes de despliegues en producción.
+- El recuento de parámetros reportado en safetensors (1.166.448) no es coherente con un modelo de 12B y debe interpretarse con cautela; el tamaño del repositorio (117,8 GB) es consistente con pesos en varios formatos/precisiones.
+- No se publican métricas de precisión, recall ni tasas de falsos positivos/negativos en la información disponible, lo que dificulta estimar su comportamiento en producción.
+- No se detalla la composición del dataset de entrenamiento ni si hubo etapas de alineación adicionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-2602
-- Coleccion SEA-Guard: https://huggingface.co/collections/aisingapore/sea-guard
+- Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Paper SEA-Guard: https://arxiv.org/abs/2602.01618
-- Paper de referencia (Gemma 3): https://arxiv.org/abs/2512.05501
-- Documentacion SEA-LION: https://docs.sea-lion.ai/models/sea-guard/gemma-sea-guard
-- Repositorio SEA-LION: https://github.com/aisingapore/sealion
-- API y playground: https://playground.sea-lion.ai/sea-guard
+- Paper adicional referenciado: https://arxiv.org/abs/2512.05501
+- Colección SEA-Guard: https://huggingface.co/collections/aisingapore/sea-guard-sea-lion-guard-v1
+- Playground y API: https://playground.sea-lion.ai/sea-guard
+- Gestión de claves API: https://playground.sea-lion.ai/key-manager
+- Términos de licencia Gemma: https://ai.google.dev/gemma/terms

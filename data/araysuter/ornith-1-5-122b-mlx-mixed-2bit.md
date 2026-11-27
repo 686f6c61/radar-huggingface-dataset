@@ -2,116 +2,99 @@
 
 ## Resumen
 
-Ornith-1.5-122B-MLX-mixed-2bit es una conversión experimental a MLX del modelo Ornith-1.5-122B (ornith-ai), publicada por el usuario araysuter. Se trata de una cuantización de precisión mixta generada directamente desde el checkpoint BF16 original (revisión `dfa07bab90e90746ffbfc0b0cba3126eb9265de2`), pensada para ejecutar un modelo de 122.562.817.776 parámetros en Apple Silicon con un payload de pesos de 40.621.228.512 bytes (40,62 GB / 37,83 GiB).
+Ornith-1.5-122B-MLX-mixed-2bit es una conversion experimental a formato MLX del modelo Ornith-1.5-122B (desarrollado por ornith-ai), realizada por el usuario araysuter. Se trata de una cuantizacion de precision mixta que combina expertos enrutados a 2 bits con otras proyecciones a 4 bits y routers a 8 bits, reduciendo el checkpoint original en BF16 hasta un payload de pesos de 40,62 GB. El modelo base es un transformer de tipo MoE (mezcla de expertos) con capacidades multimodales de imagen-texto, orientado a generacion conversacional, razonamiento y codigo.
 
-El interés de esta ficha no está en el modelo base, del que la información disponible no detalla entrenamiento ni contexto nativo, sino en la ingeniería de la cuantización: los expertos enrutados se comprimen a 2 bits (afina, group size 64), el resto de proyecciones cuantizadas a 4 bits y los routers y gates de expertos compartidos se mantienen en 8 bits, dejando en BF16 los tensores no cuantizados. El autor documenta el proceso con hashes SHA-256 de origen y destino, verificación estricta de los 2.440 tensores y un manifiesto de conversión.
+La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un modelo de 122.562.817.776 parametros en hardware Apple Silicon mediante MLX, un ecosistema historicamente limitado a modelos de menor tamano. La cuantizacion agresiva a 2 bits en los expertos enrutados permite reducir el peso a practicamente un tercio del que tendria en BF16, a costa de una perdida de calidad que el autor reconoce explicitamente como no medida frente al modelo original.
 
-Es relevante ahora porque demuestra que un MoE de 122B puede caber en una máquina de sobremesa Apple con memoria unificada, a cambio de una degradación de calidad frente a BF16 que el propio autor declara desconocida (no hay ejecución del modelo completo a plena precisión). Los resultados publicados son subconjuntos fijos de 120 preguntas, no puntuaciones de leaderboard.
+El checkpoint incluye pesos de vision y assets del procesador, aunque la inferencia de imagen no ha sido validada en este experimento. Ademas, se excluyen los tensores MTP (multi-token prediction) del modelo fuente, por lo que no se dispone de los pesos de drafting originales. La licencia es MIT, lo que facilita su uso comercial, aunque las limitaciones tecnicas de la conversion deben tenerse en cuenta en entornos de produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); el repositorio etiqueta la arquitectura como `qwen3_5_moe`. El detalle de capas, número de expertos y mecanismo de atención del modelo base no está disponible |
-| Parametros totales | 122.562.817.776 (122,56 B), según safetensors |
+| Arquitectura | Transformer MoE (qwen3_5_moe) multimodal imagen-texto |
+| Parametros totales | 122.562.817.776 (122,56 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 128K tokens (el autor completa una prueba a 128K; el contexto nativo declarado por el modelo base no está disponible) |
-| Tipos de cuantizacion | Mezcla de precisiones: expertos enrutados a 2 bits afina con group size 64; otras proyecciones cuantizadas a 4 bits con group size 64; routers y gates de expertos compartidos a 8 bits con group size 64; tensores no cuantizados en BF16 |
+| Longitud de contexto | 128K (probado por el autor; sin garantia de encaje en todos los perfiles) |
+| Tipos de cuantizacion | Mixta: 2 bits (expertos enrutados, group size 64), 4 bits (otras proyecciones cuantizadas, group size 64), 8 bits (routers y gates de expertos compartidos, group size 64), BF16 (tensores no cuantizados) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (la del repositorio; la del modelo base no se detalla en la información disponible) |
-| Formato de pesos | safetensors para MLX; payload de pesos de 40.621.228.512 bytes (40,62 GB / 37,83 GiB); tamaño total del repositorio 40,6 GB |
+| Licencia | MIT |
+| Formato de pesos | safetensors (MLX), payload de 40.621.228.512 bytes (40,62 GB / 37,83 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos de 122,56 mil millones de parámetros, según la etiqueta `qwen3_5_moe` del repositorio y el recuento de safetensors. La información proporcionada no incluye el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras fases de alineación; tampoco se detalla el número de parámetros activos por token ni la configuración de atención. Lo que sí se documenta es que el modelo base incorpora un modo de razonamiento (la evaluación del autor se ejecuta con *thinking* desactivado) y que el checkpoint original incluye pesos de visión más los assets de procesador.
+El modelo base Ornith-1.5-122B emplea una arquitectura de transformer con mezcla de expertos (MoE), identificada en los tags como `qwen3_5_moe`, lo que sugiere una variante de la familia Qwen 3.5 con enrutamiento de expertos. La conversion a MLX preserva la estructura MoE pero aplica una politica de cuantizacion diferenciada por tipo de tensor: los expertos enrutados (la mayor parte del peso) se cuantizan a 2 bits con grupo de 64, mientras que las proyecciones restantes se mantienen a 4 bits y los routers y gates de expertos compartidos a 8 bits para preservar la precision del enrutamiento. Los tensores no cuantizados permanecen en BF16 tras las transformaciones del loader.
 
-La aportación técnica de este repositorio es la conversión: se parte del checkpoint BF16 y se aplica una política de precisión por tipo de tensor (2 bits en expertos enrutados, 4 bits en el resto de proyecciones cuantizadas, 8 bits en routers y gates), con tensores no cuantizados conservados en BF16 tras las transformaciones del cargador. El conversor verifica los hashes SHA-256 de los shards de origen antes de leer los tensores y comprueba los 2.440 nombres de tensor de salida; `CONVERSION_MANIFEST.json` registra revisión de origen, hashes de entrada y salida, transformaciones, errores de reconstrucción muestreados, pico de asignación de MLX y duración. Los tensores MTP (*multi-token prediction*) del modelo original se excluyen, por lo que este checkpoint no incluye los pesos de *drafting* que permitirían decodificación especulativa.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original, ya que la model card de esta conversion no los detalla. La innovacion tecnica principal de esta ficha es la propia estrategia de cuantizacion mixta: al mantener los routers a 8 bits y las proyecciones no expertas a 4 bits, se intenta mitigar el dano tipico de la cuantizacion extrema a 2 bits, que afecta especialmente a las decisiones de enrutamiento. El autor excluye los tensores MTP del modelo fuente, por lo que esta conversion no ofrece decodificacion especulativa nativa.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en formato chat, con plantilla aplicada mediante `mlx_vlm.prompt_utils.apply_chat_template`.
-- Razonamiento matemático: 24/25 aciertos en el subconjunto de GSM8K (25 ítems) del autor.
-- Generación de código: 17/20 en HumanEval adaptado a chat y evaluado con tests unitarios en sandbox.
-- Seguimiento de instrucciones: 16/25 (64%) con el checker estricto oficial de IFEval en el perfil base de 2 bits.
-- Contexto largo: el autor completa una prueba de 128K tokens de entrada sin caché con el perfil base.
-- Modo de razonamiento (thinking) presente en el modelo base y desactivable; la evaluación publicada se hizo con thinking desactivado.
-- Visión: los pesos de visión y los assets del procesador están incluidos en el repositorio, pero la inferencia de imagen no ha sido validada en este experimento.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: el autor cita Terminal-Bench 4.0 como referencia de modelos comerciales, pero no ejecuta esa prueba sobre esta cuantización.
-- Idiomas: no disponible.
+- Generacion de texto conversacional multi-turno, con soporte de plantilla de chat y modo thinking desactivable.
+- Razonamiento y resolucion de problemas matematicos (evaluado en GSM8K con 24/25 en el subconjunto de prueba).
+- Generacion de codigo (evaluado en HumanEval con 17/20 en el subconjunto de prueba, incluyendo adaptacion a chat y pruebas unitarias en sandbox).
+- Seguimiento de instrucciones estrictas (evaluado en IFEval strict con 16/25).
+- Capacidades multimodales imagen-texto: el checkpoint incluye pesos de vision y assets del procesador, pero la inferencia de imagen no ha sido validada en este experimento.
+- Procesamiento de contexto largo: se probo una ventana de 128K tokens, con 282,54 segundos hasta el primer texto visible y 44,0 tokens/s de generacion reportados por el runtime.
+- Soporte multilingue: no disponible (no se especifican idiomas en la informacion).
+- Tool calling y function calling: no disponible (no se menciona en la model card).
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad declarada; el autor menciona comparaciones con Terminal-Bench 4.0 de modelos comerciales pero no ejecuto dicha prueba.
 
 ## Casos de uso
 
-- Prototipado local de un MoE de gran tamaño en Apple Silicon: cargar el checkpoint con `mlx_vlm` y validar flujos de generación en un Mac con memoria unificada suficiente, sin depender de GPUs NVIDIA ni de APIs externas.
-- Asistencia de código en local: con un 85% en el subconjunto de HumanEval, es utilizable para autocompletado y generación de funciones en un entorno de desarrollo offline, siempre con ejecución de tests unitarios como red de seguridad.
-- Resolución de problemas matemáticos con verificación posterior: el 96% en GSM8K permite usar el modelo como primer generador en un pipeline donde un solver simbólico o un checker valida el resultado final.
-- Procesamiento de documentos extensos: la ventana de 128K probada permite resumir o extraer información de contratos, informes o transcripciones largas en una sola pasada, asumiendo el coste de TTFT (282,54 s en la prueba de 128K) y el consumo de memoria del KV cache.
-- Investigación sobre cuantización: comparar este perfil (2 bits g64, 40,62 GB) con el perfil 2 bits + 3 bits en proyecciones *down* (45,45 GB) y el perfil 2 bits g32 (47,87 GB) para estudiar el compromiso entre tamaño, instrucciones estrictas y precisión en código.
-- Evaluación de infraestructura MLX: banco de pruebas para medir TTFT, throughput y pico de asignación de memoria en distintos backends y longitudes de contexto, usando los receipts y `comparison-results.json` del autor como referencia reproducible.
-- Despliegue educativo o de demostración en un laboratorio: servir el modelo con `mlx_lm`/`mlx_vlm` para clases o demos internas donde la licencia MIT y la ausencia de llamadas a APIs comerciales son requisitos.
+- Asistente conversacional local en Apple Silicon: el modelo puede desplegarse con `mlx-vlm` en un Mac con suficiente memoria unificada, gestionando conversaciones multi-turno con contexto de hasta 128K tokens. Es adecuado para entornos donde la privacidad impide usar APIs en la nube y se dispone de hardware Apple de gama alta.
+- Generacion de codigo en pipelines de desarrollo: con un 85% de acierto en el subconjunto de HumanEval (17/20), puede integrarse como asistente de autocompletado o generacion de funciones en editores y herramientas de CI/CD, aunque requiere validacion humana por la cuantizacion agresiva.
+- Razonamiento matematico y resolucion de problemas: el 96% en GSM8K (24/25) en el subconjunto probado lo hace util para tutoria automatizada o verificacion de calculos en entornos educativos, siempre con supervision.
+- Procesamiento de documentos largos: la ventana de 128K permite resumir o extraer informacion de contratos, informes o articulos extensos, aunque el autor advierte que la prueba de 128K fue una sonda de completado crudo y no una evaluacion general de calidad en contexto largo.
+- Experimentacion e investigacion en cuantizacion: el repositorio incluye manifiestos de conversion, hashes SHA-256 de shards, errores de reconstruccion muestreados y resultados de validacion, lo que lo convierte en una referencia para estudiar el impacto de la cuantizacion mixta 2/4/8 bits en modelos MoE.
+- Despliegue en entornos con restricciones de memoria: con 40,62 GB de pesos, es una opcion para equipos Apple con 64 GB o mas de memoria unificada que no pueden alojar el checkpoint BF16 completo, sacrificando precision por viabilidad.
+- Evaluacion comparativa de backends: util para comparar el rendimiento de MLX/VLM frente a otros backends (como TensorFold con DFlash2) en tareas de generacion y contexto largo, tal como hizo el autor en su comparativa con Swift-1.5.
 
 ## Benchmarks y rendimiento
 
-Suite fija de 120 preguntas del autor: una respuesta greedy por tarea, prompts de chat zero-shot, thinking desactivado y los mismos presupuestos de prompt y salida para todos los modelos. Subconjuntos pequeños, no puntuaciones completas de leaderboard.
+Los datos disponibles provienen de una suite fija de 120 preguntas con respuestas greedy, prompts zero-shot, thinking desactivado y presupuestos de prompt/output identicos. El autor advierte que son subconjuntos pequenos y no establecen puntuaciones completas de benchmark.
 
-| Modelo | Peso (GB) | ARC (50) | GSM8K (25) | HumanEval (20) | IFEval estricto (25) |
+| Modelo | Peso (GB) | ARC (50) | GSM8K (25) | HumanEval (20) | IFEval strict (25) |
 |---|---:|---:|---:|---:|---:|
-| Ornith · 2 bits g64 (este repositorio) | 40,62 | 47/50 (94%) | 24/25 (96%) | 17/20 (85%) | 16/25 (64%) |
-| Ornith · 2 bits + 3 bits en down | 45,45 | 46/50 (92%) | 25/25 (100%) | 16/20 (80%) | 21/25 (84%) |
-| Ornith · 2 bits g32 | 47,87 | 46/50 (92%) | 25/25 (100%) | 16/20 (80%) | 18/25 (72%) |
-| Swift-1.5 · 4 bits + DFlash2 (referencia) | 15,83 | 47/50 (94%) | 25/25 (100%) | 20/20 (100%) | 19/25 (76%) |
+| Ornith 2-bit g64 (esta ficha) | 40,62 | 47/50 (94%) | 24/25 (96%) | 17/20 (85%) | 16/25 (64%) |
+| Ornith 2-bit + 3-bit down | 45,45 | 46/50 (92%) | 25/25 (100%) | 16/20 (80%) | 21/25 (84%) |
+| Ornith 2-bit g32 | 47,87 | 46/50 (92%) | 25/25 (100%) | 16/20 (80%) | 18/25 (72%) |
+| Swift-1.5 4-bit + DFlash2 | 15,83 | 47/50 (94%) | 25/25 (100%) | 20/20 (100%) | 19/25 (76%) |
 
-Rendimiento medido (una sola máquina, un solo intento):
-
-| Escenario | TTFT | Generación | Memoria |
-|---|---:|---:|---:|
-| 20K tokens de entrada sin caché | 17,64 s | ~66,8 tok/s | no disponible |
-| 128K tokens de entrada sin caché (solo perfil base) | 282,54 s | 44,0 tok/s (reportado en runtime) | 49,95 GB de pico de asignación MLX |
-| Swift-1.5 a 20K (referencia) | 21,81 s | ~121,0 tok/s | no disponible |
-
-Referencias de modelos comerciales citadas por el autor (Anthropic, 7 de octubre de 2026, Terminal-Bench 4.0): GPT-6 Luna 16,4% y Claude Haiku 5.5 39,2%. No se ejecutó Terminal-Bench 4.0 sobre esta cuantización ni sobre Swift, y esos porcentajes no son comparables numéricamente con los subconjuntos locales. No hay ejecución del modelo base a plena precisión, por lo que la pérdida de calidad respecto a BF16 es desconocida.
+En rendimiento de inferencia con 20K tokens de entrada no cacheados, el perfil base de Ornith tardo 17,64 segundos hasta el primer texto visible y genero aproximadamente 66,8 tokens/s despues; Swift-1.5 tardo 21,81 segundos y genero unos 121,0 tokens/s. En la prueba de 128K, solo el perfil base completo: 282,54 segundos hasta el primer texto visible, 44,0 tokens/s reportados y 49,95 GB de asignacion pico en MLX. El autor no dispone de una ejecucion del modelo base en precision completa, por lo que la perdida de calidad respecto a BF16 es desconocida.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: el payload de pesos es de 40,62 GB, por lo que se necesita memoria unificada claramente superior a 48 GB; el autor midió un pico de asignación de MLX de 49,95 GB en la prueba de 128K, sin contar el resto de memoria del sistema. El tamaño en disco no determina el requisito de inferencia.
-- Plataforma: Apple Silicon exclusivamente. La validación usa `mlx==0.32.4`, `mlx-vlm==0.7.9` y `mlx-lm==0.32.0`; no hay soporte CUDA en este repositorio.
-- GPU recomendadas: no disponible como lista oficial. Por tamaño, encaja en equipos Apple con 64 GB de memoria unificada o más para contextos moderados; para 128K conviene 96-128 GB (estimación a partir del pico medido, no una cifra publicada por el autor).
-- Cabe en GPU de consumo: no en GPUs NVIDIA de 24 GB por tamaño de pesos; en Apple Silicon de gama alta con memoria unificada amplia, sí.
-- Opciones de despliegue: `mlx-vlm` (carga y generación con visión), `mlx-lm` para texto. No hay conversión GGUF, Ollama, llama.cpp, TGI ni vLLM publicada en este repositorio; vLLM no consume pesos MLX, requeriría otra conversión.
-- Throughput y latencia: ~66,8 tok/s de generación tras el primer token con 20K de entrada y 17,64 s de TTFT; 44,0 tok/s reportados y 282,54 s de TTFT en la prueba de 128K. Además se asignó swap de macOS durante las pruebas.
-- Se recomienda margen de memoria adicional: el propio autor advierte que el contexto de 128K requiere memoria para el modelo, el KV cache, buffers temporales y el sistema operativo.
+- VRAM/memoria estimada para inferencia: el payload de pesos es de 40,62 GB; la prueba a 128K registro 49,95 GB de asignacion pico en MLX, excluyendo otra memoria del sistema. Se requiere memoria unificada suficiente para pesos, cache KV, buffers temporales y el sistema operativo.
+- GPU recomendadas: el modelo esta en formato MLX, disenado para Apple Silicon. No se dispone de informacion sobre ejecucion en GPUs NVIDIA (A100, H100, RTX 4090) con este checkpoint concreto.
+- Compatibilidad con consumer GPU: no aplica directamente al ser MLX; en Apple Silicon se necesita un equipo con memoria unificada de al menos 64 GB para el perfil base, y mas para contexto largo. El autor observo uso de swap de macOS durante las pruebas.
+- Opciones de despliegue: `mlx-vlm` (validado con `mlx==0.32.4`, `mlx-vlm==0.7.9`, `mlx-lm==0.32.0` en Apple Silicon). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
+- Latencia y throughput: 17,64 s hasta el primer texto visible y ~66,8 tokens/s con 20K tokens de entrada; 282,54 s hasta el primer texto visible y 44,0 tokens/s en la prueba de 128K. Son intentos unicos en una sola maquina, no estimaciones repetidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización / peso | Rendimiento publicado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Peso | Notas |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-122B MLX mixed 2-bit (este) | 122,56 B | 128K probado | 2/4/8 bits mixto, 40,62 GB | ARC 94%, GSM8K 96%, HumanEval 85%, IFEval 64% | MIT | Hugging Face, 0 descargas |
-| Ornith-1.5-122B MLX 2-bit + 3-bit down | 122,56 B | no disponible | 2/3/4/8 bits mixto, 45,45 GB | ARC 92%, GSM8K 100%, HumanEval 80%, IFEval 84% | no disponible | Experimento del autor, no publicado como pesos |
-| Ornith-1.5-122B MLX 2-bit g32 | 122,56 B | no disponible | 2 bits g32, 47,87 GB | ARC 92%, GSM8K 100%, HumanEval 80%, IFEval 72% | no disponible | Experimento del autor, no publicado como pesos |
-| Ornith-1.5-122B MLX 4-bit (BobClawblaw) | 122,56 B (base) | no disponible | 4 bits, tamaño no disponible | no disponible | no disponible en la información | Hugging Face |
-| Ornith-1.5-122B BF16 (modelo base) | 122,56 B | no disponible | BF16 | no medido por el autor | no disponible en la información | Hugging Face (`ornith-ai/Ornith-1.5-122B`) |
-| Swift-1.5 4-bit + DFlash2 (referencia del autor) | no disponible | no disponible | 4 bits, 15,83 GB | ARC 94%, GSM8K 100%, HumanEval 100%, IFEval 76%; ~121 tok/s a 20K | no disponible | Configuración existente usada como baseline |
+| Ornith-1.5-122B-MLX-mixed-2bit (esta ficha) | 122,56 B (MoE) | 128K | MIT | MLX safetensors | 40,62 GB | Cuantizacion mixta 2/4/8 bits; sin MTP; vision no validada |
+| Ornith-1.5-122B-MLX-4bit (BobClawblaw) | 122,56 B (MoE) | no disponible | MIT (heredada) | MLX safetensors | no disponible | Checkpoint MLX 4-bit de referencia citado por el autor |
+| Swift-1.5 4-bit + DFlash2 | no disponible | no disponible | no disponible | TensorFold nativo | 15,83 GB | Usado como baseline comparativo; mejor throughput y HumanEval en la muestra |
+| Ornith-1.5-122B (original BF16) | 122,56 B (MoE) | no disponible | MIT | safetensors BF16 | no disponible | Modelo fuente; puntuaciones de benchmarks no atribuibles a la conversion |
 
 ## Limitaciones y advertencias
 
-- La cuantización agresiva a 2 bits puede reducir la precisión; el autor declara explícitamente que no dispone de una ejecución del modelo base en plena precisión, por lo que la pérdida real frente a BF16 es desconocida.
-- El resultado más flojo del perfil publicado es el seguimiento estricto de instrucciones (16/25, 64%), inferior a los otros dos perfiles Ornith y a la referencia Swift; no es adecuado para pipelines que dependan de formato rígido sin validadores adicionales.
-- Los benchmarks son subconjuntos fijos de 120 preguntas con un único intento por tarea y una sola máquina; no constituyen puntuaciones de leaderboard y no deben citarse como tales.
-- Las puntuaciones publicadas por el modelo base no son atribuibles a esta conversión.
-- Los pesos MTP están excluidos, de modo que no se puede usar decodificación especulativa con este checkpoint.
-- Los pesos de visión están incluidos pero la inferencia de imagen no ha sido validada; no hay garantía de que funcione.
-- Solo se completó la prueba de 128K con el perfil base y el autor no reclama que los perfiles mayores quepan en memoria a esa longitud; el resultado a 128K se describe como un sondeo de completación cruda, no como una evaluación de calidad en contexto largo. En esa prueba el marcador de verificación apareció, pero el razonamiento adicional hizo fallar la coincidencia exacta.
-- Durante las pruebas se asignó swap de macOS y el pico de asignación de MLX no incluye el resto de memoria del sistema; en producción hay que dimensionar con margen.
-- Dependencia de hardware Apple Silicon y de versiones concretas de `mlx`, `mlx-vlm` y `mlx-lm`; no hay compatibilidad nativa declarada con TensorFold, vLLM, llama.cpp ni Ollama.
-- La licencia del repositorio es MIT, lo que permite uso comercial de esta conversión, pero la licencia y condiciones del modelo base no se detallan en la información disponible y deben verificarse antes de un despliegue comercial.
-- Sesgos conocidos: no disponible. Riesgo de alucinación: no cuantificado en la información proporcionada.
-- Idiomas soportados: no disponible, por lo que no se puede garantizar un rendimiento aceptable en castellano.
+- La cuantizacion agresiva a 2 bits en los expertos enrutados puede reducir la precision; el autor no dispone de una ejecucion en BF16 del modelo base, por lo que la perdida de calidad real es desconocida.
+- Los benchmarks presentados son subconjuntos pequenos (50, 25 y 20 preguntas) y no constituyen puntuaciones completas de leaderboard; no deben atribuirse al modelo original.
+- La inferencia de imagen no ha sido validada, pese a que el checkpoint incluye pesos de vision y assets del procesador.
+- Se excluyen los tensores MTP del modelo fuente, por lo que no hay pesos de drafting para decodificacion especulativa.
+- La prueba de 128K fue una sonda de completado crudo con fallo de coincidencia exacta por razonamiento adicional; no es una evaluacion general de calidad en contexto largo y no se garantiza que los perfiles mayores encajen en 128K.
+- El modelo esta disenado para MLX en Apple Silicon; no hay evidencia de funcionamiento en GPUs NVIDIA ni en otros backends.
+- Se observo asignacion de swap de macOS durante las pruebas, lo que indica presion de memoria en el equipo de validacion.
+- No se especifican idiomas soportados ni sesgos conocidos; el riesgo de alucinacion no se ha medido en esta conversion.
+- La licencia MIT permite uso comercial, pero las limitaciones tecnicas de la cuantizacion y la falta de validacion multimodal deben evaluarse antes de desplegar en produccion.
+- El modelo es experimental y de un unico autor; no hay garantia de mantenimiento ni soporte.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit
-- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B (revisión de origen `dfa07bab90e90746ffbfc0b0cba3126eb9265de2`)
-- Conversión MLX 4-bit de referencia: https://huggingface.co/BobClawblaw/Ornith-1.5-122B-MLX-4bit/tree/e5eccbc52ed3572157e40e761e040b842845bd
-- Referencia de modelos comerciales citada por el autor (Anthropic, Terminal-Bench 4.0): https://www.anthropic.com/claude-haiku-5-5
-- Artefactos de validación dentro del repositorio: `CONVERSION_MANIFEST.json`, `comparison-results.json`, `evaluation-manifest.json`, `validation-packages.txt`, `quality-comparison.png`, `performance-comparison.png`
-- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las entradas devueltas por el buscador (foros, tipografías y contenido sobre TikTok) no guardan relación con esta ficha y se descartan.
+- Hugging Face: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
+- Checkpoint MLX 4-bit de referencia: https://huggingface.co/BobClawblaw/Ornith-1.5-122B-MLX-4bit/tree/e5eccbc52ed3572157e40e761e040b84284
+- Referencia comercial citada (Anthropic Claude Haiku 5.5): https://www.anthropic.com/claude-haiku-5-5

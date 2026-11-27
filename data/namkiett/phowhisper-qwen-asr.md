@@ -2,86 +2,87 @@
 
 ## Resumen
 
-PhoWhisper-Qwen ASR es un modelo de reconocimiento automático del habla (ASR) en vietnamita construido con una arquitectura Speech-LLM end-to-end. Lo desarrolla el usuario de Hugging Face namkiett y combina un codificador de audio basado en vinai/PhoWhisper-medium con un decodificador de lenguaje Qwen/Qwen2.5-0.5B-Instruct, unidos mediante un módulo adaptador específico. El modelo resuelve la transcripción de audio a texto en vietnamita aprovechando las capacidades lingüísticas de un LLM pequeño para generar la salida.
+PhoWhisper-Qwen ASR es un modelo de reconocimiento automático del habla (ASR) especializado en vietnamita que combina un codificador de audio PhoWhisper con un decodificador basado en un LLM Qwen. Lo desarrolla el usuario namkiett y se distribuye en Hugging Face bajo licencia Apache 2.0. La propuesta arquitectónica es la de un "speech-LLM": en lugar de un decoder CTC o seq2seq clásico, se proyectan las representaciones acústicas al espacio de embeddings de un modelo de lenguaje para generar la transcripción.
 
-El modelo se ha entrenado sobre el conjunto de datos linhtran92/viet_bud500 y se distribuye con licencia Apache 2.0. Su tamaño total es de aproximadamente 10,2 millones de parámetros según los pesos en safetensors, con un repositorio de 0,1 GB. Es relevante como ejemplo de integración encoder-LLM para ASR de bajo coste en un idioma con menos recursos que el inglés, aunque su adopción es todavía muy limitada (0 descargas y 0 likes en el momento de la consulta).
+El modelo emplea como codificador `vinai/PhoWhisper-medium` y como decodificador `Qwen/Qwen2.5-0.5B-Instruct`, unidos mediante un adaptador compuesto por una convolución Conv1D con downsampling 4x y un proyector MLP. El checkpoint publicado contiene 60.613.248 parámetros en formato safetensors, lo que sugiere que los pesos del codificador y del decodificador no se incluyen completos en el repositorio, sino que se cargan desde sus respectivos modelos base.
 
-La propuesta técnica se apoya en tres piezas: el encoder PhoWhisper-medium extrae representaciones acústicas, un adaptador con dos capas Conv1D y un proyector MLP las alinea con el espacio del LLM, y Qwen2.5-0.5B-Instruct genera la transcripción. El contexto y los detalles de entrenamiento no están documentados en la información disponible.
+Su relevancia radica en la escasez de modelos ASR abiertos específicos para vietnamita con arquitectura speech-LLM y licencia permisiva. El modelo está pensado para transcripción de audio de 16 kHz y se integra con `transformers` mediante `trust_remote_code=True`, exponiendo una API simple de transcripción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Speech-LLM (encoder PhoWhisper-medium + adaptador Conv1D/MLP + decoder Qwen2.5-0.5B-Instruct) |
-| Parametros totales | 10.230.400 (segun safetensors) |
+| Parametros totales | 60.613.248 (safetensors publicados) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | vietnamita (vi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (custom_code, requiere trust_remote_code) |
+| Formato de pesos | safetensors (con código custom, `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema Speech-LLM en el que un encoder acústico preentrenado (vinai/PhoWhisper-medium) procesa el audio y un adaptador específico transforma sus salidas para que sean consumidas por un LLM decoder (Qwen/Qwen2.5-0.5B-Instruct). El adaptador consta de dos capas Conv1D que aplican un downsampling 4x sobre la secuencia temporal, seguidas de un proyector MLP que mapea de 1024 a 896 dimensiones, la dimensión de entrada esperada por el LLM.
+La arquitectura sigue el paradigma speech-LLM: un encoder acústico preentrenado (`vinai/PhoWhisper-medium`) extrae representaciones del audio, que pasan por un adaptador formado por una capa Conv1D con factor de downsampling 4x y un proyector MLP. Estas representaciones proyectadas se inyectan en el decodificador `Qwen/Qwen2.5-0.5B-Instruct`, que genera el texto de la transcripción de forma autorregresiva. El checkpoint de pesos indicado en la model card proviene de `namkiett/phowhisper-qwen-phoaudio/phoaudio_final.pt`.
 
-El entrenamiento se realizó sobre el dataset linhtran92/viet_bud500. No se especifican en la información disponible el número de tokens, la composición detallada del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado más allá del entrenamiento del adaptador. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. Tampoco se detalla el esquema de congelación de pesos (si el encoder y el LLM se mantienen congelados y solo se entrena el adaptador, o si hay fine-tuning parcial). El repositorio ocupa 2,0 GB y los 60,6 millones de parámetros publicados en safetensors parecen corresponder principalmente al adaptador y a componentes auxiliares, no al total del sistema.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) en vietnamita, con salida de texto a partir de archivos de audio o arrays numpy.
-- Transcripción end-to-end mediante una única llamada `model.transcribe(...)`.
-- Integración de un LLM pequeño como decoder, lo que permite aprovechar conocimiento lingüístico del modelo Qwen2.5-0.5B-Instruct.
-- Soporte de audio como entrada a través del encoder PhoWhisper-medium.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de salida ni modo thinking.
-- Capacidad multilingüe limitada al vietnamita según la metadata del modelo.
+- Reconocimiento automático del habla en vietnamita a partir de audio de 16 kHz (archivos `.wav`, `.mp3` u arrays NumPy).
+- Transcripción de voz a texto mediante una API de alto nivel (`model.transcribe(...)`).
+- Integración con el ecosistema `transformers` mediante `AutoModel` y código remoto.
+- Generación de texto autorregresiva gracias al decodificador Qwen2.5-0.5B-Instruct.
+- No se documentan capacidades de traducción, diarización, timestamps, tool calling, agentes, visión ni audio más allá del ASR.
+- Capacidad multilingüe: no disponible; el modelo está declarado únicamente para vietnamita.
 
 ## Casos de uso
 
-- Transcripción de reuniones y entrevistas en vietnamita: el modelo puede convertir grabaciones de audio en texto para actas o resúmenes, aprovechando el decoder LLM para producir salidas lingüísticamente coherentes.
-- Subtitulado automático de vídeo en vietnamita: integrado en un pipeline de procesado de audio, permite generar subtítulos para contenido audiovisual en ese idioma.
-- Atención al cliente basada en voz: la transcripción de llamadas o mensajes de voz en vietnamita puede alimentar un sistema posterior de análisis o enrutamiento.
-- Generación de notas clínicas o administrativas dictadas: útil en entornos donde el personal dicta informes en vietnamita y se requiere texto para su revisión.
-- Indexación y búsqueda de archivos de audio: transcribir un corpus de audio permite construir índices de texto y habilitar búsqueda por contenido.
-- Investigación en ASR de bajo recurso: sirve como punto de partida para experimentos de adaptación encoder-LLM en vietnamita, dado su tamaño reducido y licencia permisiva.
-- Prototipado rápido en aplicaciones de voz: su reducido tamaño (0,1 GB) y su API simple permiten desplegarlo en entornos de desarrollo con recursos limitados.
+- Transcripción de reuniones y entrevistas en vietnamita: el modelo convierte grabaciones de audio de 16 kHz en texto plano, adecuado para actas y resúmenes posteriores.
+- Subtitulado automático de vídeo en vietnamita: se puede procesar el audio extraído de cada clip y generar subtítulos con un pipeline de segmentación previa.
+- Atención al cliente y centros de llamadas: transcripción de grabaciones de soporte telefónico para análisis de calidad, búsqueda de palabras clave y auditoría.
+- Generación de corpus textual a partir de archivos de audio: útil para investigadores que necesitan datasets de texto en vietnamita derivados de fuentes orales.
+- Accesibilidad: conversión de contenido hablado (podcasts, clases, notas de voz) en texto legible para personas con discapacidad auditiva.
+- Prototipado de asistentes de voz en vietnamita: el modelo actúa como módulo ASR dentro de un pipeline más amplio de reconocimiento de intención y respuesta.
+- Investigación en speech-LLM: sirve como referencia reproducible para estudiar la conexión encoder Whisper + decoder Qwen en un idioma de bajos recursos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; por el tamaño del repositorio (0,1 GB) y los 10,2 M de parámetros reportados, el modelo es muy ligero, aunque el encoder PhoWhisper-medium y el decoder Qwen2.5-0.5B-Instruct añaden parámetros no reflejados en ese recuento.
-- GPU recomendadas: no disponible; por tamaño, cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) debería ser suficiente, pero no hay datos oficiales.
-- ¿Cabe en GPU consumer? Sí, previsiblemente en la mayoría de GPU consumer actuales, aunque no se dispone de cifras verificadas.
-- Opciones de despliegue: la model card solo documenta uso con `transformers` y `trust_remote_code=True`, junto con `accelerate`, `librosa`, `soundfile` y `torch`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 60,6 millones de parámetros publicados y un decodificador de 0,5B, la inferencia en fp16 requiere del orden de 1-2 GB de VRAM, aunque el total real depende de los pesos cargados desde los modelos base.
+- GPU recomendadas: no especificadas por el autor; por tamaño, una GPU consumer moderna (RTX 3060, RTX 4090) debería ser suficiente.
+- Cabe en GPU consumer: previsiblemente sí, dado el reducido tamaño del decodificador (0,5B) y del adaptador.
+- Opciones de despliegue: `transformers` con `accelerate` y `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| namkiett/phowhisper-qwen-asr | 10.230.400 (safetensors) | no disponible | vi | Apache 2.0 | Speech-LLM encoder PhoWhisper + Qwen2.5-0.5B |
-| vinai/PhoWhisper-medium | no disponible | no disponible | vi | no disponible en la informacion | Encoder ASR vietnamita usado como base |
-| Qwen/Qwen2.5-0.5B-Instruct | no disponible | no disponible | multilingue | no disponible en la informacion | LLM decoder usado en este modelo |
+| PhoWhisper-Qwen ASR (este) | 60,6 M publicados + base Qwen2.5-0.5B | no disponible | vi | Apache 2.0 | Hugging Face |
+| vinai/PhoWhisper-medium | no disponible | no disponible | vi | no disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5 B | no disponible | multilingüe | no disponible | Hugging Face |
+| Whisper (OpenAI) | variable (tiny a large) | 30 s por ventana | multilingüe | MIT | Abierto |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+La comparación con alternativas puramente ASR como Whisper o PhoWhisper no es directa, ya que este modelo introduce un decodificador LLM. No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- El modelo solo está entrenado y declarado para vietnamita; no se garantiza su funcionamiento en otros idiomas.
-- No se documentan sesgos conocidos, pero al entrenarse sobre un único dataset (viet_bud500) puede heredar sus sesgos de dominio y acento.
-- Riesgo de alucinación inherente al uso de un LLM como decoder: puede generar texto plausible no presente en el audio, especialmente con audio ruidoso o fuera de dominio.
-- No se especifican limitaciones de longitud de audio ni de contexto; se desconoce el comportamiento con grabaciones largas.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar el código antes de usarlo en producción.
-- La licencia Apache 2.0 permite uso comercial, pero al incorporar componentes de terceros (PhoWhisper y Qwen2.5) deben revisarse las licencias de esos modelos base.
-- El modelo tiene 0 descargas y 0 likes, sin validación comunitaria ni benchmarks publicados; su madurez para producción es baja.
-- El recuento de parámetros en safetensors (10,2 M) parece no incluir el encoder y el decoder completos, por lo que las estimaciones de recursos basadas solo en ese dato pueden ser engañosas.
+- Solo soporta vietnamita; no se ha validado para otros idiomas.
+- No se documentan sesgos conocidos, pero al derivar de un LLM (Qwen2.5) y de un encoder entrenado con datos vietnamitas, puede heredar sesgos lingüísticos y culturales de ambos.
+- Riesgo de alucinación: al usar un decodificador generativo, existe la posibilidad de que produzca texto no presente en el audio, especialmente con ruido o audio de baja calidad.
+- No se especifican la longitud máxima de audio ni el contexto del decodificador; audios largos pueden requerir segmentación manual.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar el código antes de usarlo en producción.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia de los modelos base (`vinai/PhoWhisper-medium` y `Qwen/Qwen2.5-0.5B-Instruct`), que no se detalla en la información disponible.
+- No hay benchmarks publicados que permitan estimar la calidad de transcripción (WER) en dominios concretos.
+- El repositorio tiene pocas descargas (220) y ningún "like", lo que sugiere poca validación por parte de la comunidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/namkiett/phowhisper-qwen-asr
+- Modelo en Hugging Face: https://huggingface.co/namkiett/phowhisper-qwen-asr
+- Checkpoint de pesos citado: https://huggingface.co/namkiett/phowhisper-qwen-phoaudio
 - Encoder base: https://huggingface.co/vinai/PhoWhisper-medium
-- LLM decoder: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Dataset de entrenamiento: https://huggingface.co/datasets/linhtran92/viet_bud500
+- Decodificador base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

@@ -2,103 +2,112 @@
 
 ## Resumen
 
-WeMM-Ecom-0.8B es un modelo multimodal denso de 0,8 mil millones de parametros desarrollado por WeChat Vision (Tencent) como parte de la familia WeMM-Ecom, orientada a la comprension de contenido multimodal para el e-commerce de WeChat. El modelo parte de Qwen/Qwen3.5-0.8B como base y lo afina para combinar comprension fina de producto (atributos, moderacion, OCR, recuperacion, grounding) con capacidades visuales y de razonamiento de proposito general. Su relevancia radica en que ofrece un punto de entrada ligero dentro de una familia escalable (0.8B, 2B, 4B, 9B y 35B-A3B) que cubre desde despliegues en hardware modesto hasta configuraciones MoE de mayor capacidad.
+WeMM-Ecom-0.8B es un modelo multimodal de tipo image-text-to-text desarrollado por WeChat Vision (Tencent), disenado especificamente para la comprension de contenido en el contexto del comercio electronico de WeChat. Forma parte de la familia WeMM-Ecom, que incluye variantes de 0.8B, 2B, 4B, 9B y 35B-A3B. Este modelo concreto es la variante densa mas pequena de la familia y esta construido como un fine-tuning del modelo base Qwen/Qwen3.5-0.8B.
 
-La arquitectura es un transformer denso multimodal con ventana de contexto de 262.144 tokens, capaz de procesar entradas de texto, imagen, multi-imagen y video. Segun la model card, supera a Qwen3.5-0.8B en 16,43 puntos y a MiniCPM-V-4.7-1B en 13,03 puntos en la media de benchmarks de e-commerce, y mantiene capacidades generales por encima de ambos en la media de benchmarks generales (6,93 y 1,09 puntos respectivamente).
+El modelo resuelve el problema de la comprension multimodal especializada en dominios de comercio electronico: atributos de producto, moderacion de contenido, OCR, recuperacion, grounding, razonamiento sobre productos y conocimiento de catalogo. Combina esta especializacion vertical con capacidades generales de vision-lenguaje y razonamiento, e incorpora un modo de pensamiento hibrido (thinking mode) que permite alternar entre respuestas directas y razonamiento extendido.
 
-El modelo esta publicado con licencia Apache 2.0, pesos en BF16 safetensors y variantes cuantizadas FP8, GPTQ y GGUF, lo que facilita su integracion tanto en pipelines de investigacion como en despliegues de produccion con requisitos de memoria ajustados.
+Con 852.985.920 parametros totales (aproximadamente 0.85B), una ventana de contexto de 262.144 tokens y licencia Apache 2.0, el modelo es relevante por su relacion tamano-rendimiento: segun la model card, supera a Qwen3.5-0.8B en 16,43 puntos y a MiniCPM-V-4.7-1B en 13,03 puntos en la media de benchmarks de comercio electronico, manteniendo capacidades generales competitivas. Su tamano reducido lo hace desplegable en hardware modesto, lo que facilita su integracion en pipelines de produccion a gran escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (base Qwen3.5-0.8B), pipeline image-text-to-text |
-| Parametros totales | 852.985.920 (segun safetensors) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer denso multimodal (image-text-to-text), basado en Qwen3.5-0.8B |
+| Parametros totales | 852.985.920 (aprox. 0.85B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | BF16, FP8, GPTQ, GGUF |
-| Idiomas soportados | Chino (zh) e ingles (en) |
+| Idiomas soportados | Chino (zh), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16); variantes FP8, GPTQ y GGUF publicadas aparte |
+| Formato de pesos | Safetensors (BF16); tambien FP8, GPTQ y GGUF en repositorios derivados |
 
 ## Arquitectura y entrenamiento
 
-WeMM-Ecom-0.8B es un modelo denso de 0,8B parametros construido mediante fine-tuning de Qwen/Qwen3.5-0.8B, un modelo base multimodal de la familia Qwen3.5. La model card no detalla la composicion exacta del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron etapas de RLHF o DPO; esa informacion figura como no disponible en la documentacion proporcionada. Lo que si se explicita es el enfoque: el ajuste combina comprension fina de e-commerce (atributos de producto, moderacion de contenido, OCR, recuperacion, grounding y razonamiento sobre productos) con el mantenimiento de capacidades visuales y linguisticas generales.
+WeMM-Ecom-0.8B es un modelo denso de aproximadamente 0.85B parametros construido mediante fine-tuning sobre Qwen/Qwen3.5-0.8B. La arquitectura es un transformer multimodal que acepta entradas de texto, imagen, multiples imagenes y video, y genera texto. El modelo emplea la libreria transformers (version >= 5.2.0 segun la model card) y se carga mediante `AutoModelForImageTextToText` y `AutoProcessor`.
 
-Una innovacion destacable es el soporte de **hybrid thinking**: el modelo puede operar en modo instruct (respuesta directa) o en modo thinking (razonamiento explicito), con ajustes de muestreo recomendados distintos para cada modo y tarea. Ademas, la familia WeMM-Ecom incluye variantes de mayor tamano, siendo la 35B-A3B un modelo MoE que, segun la model card, supera a modelos open source de cientos de miles de millones de parametros en rendimiento de e-commerce. El modelo acepta entradas de texto, imagen unica, multi-imagen y video, lo que amplia su aplicabilidad mas alla del texto e imagen estaticos.
+El entrenamiento se orienta a dos ejes: comprension fina de comercio electronico y preservacion de capacidades generales de vision-lenguaje. La evaluacion reportada cubre 28 benchmarks en ocho escenarios de comercio electronico (atributos de producto, moderacion, OCR, recuperacion, grounding, razonamiento, benchmarks publicos de e-commerce y conocimiento de producto) y 64 benchmarks en ocho categorias generales (VQA general, comprension de documentos y graficos, razonamiento STEM, comprension espacial, grounding y conteo, comprension multi-imagen, seguimiento de instrucciones y tareas centradas en texto). El modelo soporta modo de pensamiento hibrido (thinking mode) ademas del modo instruct. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multimodal sobre imagenes, multi-imagen y video.
-- Comprension fina de e-commerce: atributos de producto, moderacion de contenido, OCR, recuperacion, grounding y conocimiento de producto.
-- Modo dual instruct / thinking (hybrid thinking) con perfiles de muestreo diferenciados.
-- Comprension general de VQA, documentos, graficos, razonamiento STEM, comprension espacial, grounding, conteo, seguimiento de instrucciones y tareas centradas en texto.
-- Soporte multilingue limitado a chino e ingles.
-- Integracion con Transformers (`AutoModelForImageTextToText`, `AutoProcessor`) y opciones de serving compatibles con OpenAI.
-- No se documenta soporte explicito de tool calling / function calling ni de agentes multi-paso en la informacion disponible.
+- Generacion de texto y razonamiento multimodal sobre imagenes, multiples imagenes y video.
+- Comprension especializada de comercio electronico: atributos de producto, moderacion de contenido, OCR, recuperacion, grounding y conocimiento de producto.
+- Modo de pensamiento hibrido (thinking mode) e modo instruct, con ajustes de muestreo recomendados por modo y tarea.
+- Comprension de documentos y graficos, razonamiento STEM, comprension espacial, grounding y conteo.
+- Comprension multi-imagen y seguimiento de instrucciones.
+- Tareas centradas en texto (text-centric tasks).
+- Capacidades multilingues limitadas a chino e ingles.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de despliegue mediante Transformers y opciones de serving compatibles con OpenAI (segun la model card).
 
 ## Casos de uso
 
-- Moderacion de contenido en marketplace: clasificacion y revision de imagenes y textos de anuncios para detectar productos prohibidos o contenido inapropiado, aprovechando las capacidades de moderacion incluidas en el conjunto de benchmarks de e-commerce.
-- Extraccion de atributos de producto: a partir de fotos de articulos, el modelo puede identificar categoria, material, color y otras propiedades para poblar catalogos de forma automatica, gracias a su comprension fina de atributos.
-- OCR y digitalizacion de etiquetas: lectura de texto en imagenes de envases, etiquetas y fichas tecnicas para extraer datos estructurados, apoyandose en el contexto largo para procesar lotes de documentos.
-- Busqueda y recuperacion multimodal: generacion de representaciones y descripciones de producto que alimenten motores de busqueda visual o textual dentro de una plataforma de e-commerce.
-- Asistencia conversacional al comprador: respuesta a preguntas multi-turno sobre productos con contexto de hasta 262.144 tokens, permitiendo conversaciones largas con historial e imagenes adjuntas.
-- Analisis de resenas con imagen: interpretacion conjunta de fotos de cliente y texto de resena para detectar problemas de calidad o discrepancias entre producto anunciado y recibido.
-- Despliegue en hardware modesto: al ser un modelo de 0,8B con variantes GGUF, puede ejecutarse en entornos con recursos limitados para tareas de clasificacion y extraccion a escala.
+- Moderacion de contenido en marketplaces: el modelo puede clasificar y evaluar imagenes y texto de listados de producto para detectar contenido prohibido, gracias a sus benchmarks especificos de moderacion y su ventana de contexto de 262.144 tokens para procesar fichas completas.
+- Extraccion de atributos de producto: a partir de imagenes y descripciones, el modelo identifica y normaliza atributos (color, talla, material, categoria) para alimentar catalogos estructurados, aprovechando sus capacidades de OCR y comprension de producto.
+- OCR y digitalizacion de documentacion comercial: lectura de etiquetas, facturas y fichas tecnicas en imagen para extraer texto estructurado, adecuado por su evaluacion en tareas de OCR y documentos.
+- Busqueda y recuperacion multimodal: generacion de representaciones o descripciones enriquecidas de productos para motores de busqueda visual y recuperacion, apoyandose en los benchmarks de retrieval del modelo.
+- Atencion al cliente automatizada en e-commerce: gestion de conversaciones multi-turno con imagenes adjuntas (capturas de pedido, fotos de producto defectuoso) gracias a la ventana de contexto larga y al modo instruct.
+- Grounding y verificacion visual: localizacion de elementos en imagenes de producto (por ejemplo, defectos o componentes) para flujos de control de calidad, usando las capacidades de grounding y conteo evaluadas.
+- Procesamiento de video de producto: analisis de videos de demostracion o unboxing para extraer informacion, dado el soporte de entrada de video indicado en la model card.
+- Despliegue en entornos con recursos limitados: su tamano de 0.85B permite ejecucion en GPUs de consumo y en formato GGUF para inferencia en CPU o entornos embebidos.
 
 ## Benchmarks y rendimiento
 
-La model card reporta resultados agregados sobre 28 benchmarks de e-commerce (ocho escenarios) y 64 benchmarks generales (ocho categorias), en escala 0-100. Las tablas completas se presentan como imagenes en la model card y no estan disponibles como cifras textuales en la informacion proporcionada. Los unicos datos numericos explicitos son las diferencias medias frente a modelos comparables:
+La model card reporta resultados en escala 0-100, pero las tablas completas se presentan como imagenes (`assets/ecommerce-benchmarks.png`, `assets/general-benchmarks.png` y tablas instruct/thinking), por lo que los valores numericos por benchmark no estan disponibles en formato textual en la informacion proporcionada. Los datos agregados citados son:
 
-| Comparativa | Diferencia media en benchmarks de e-commerce | Diferencia media en benchmarks generales |
-|---|---|---|
-| WeMM-Ecom-0.8B vs Qwen3.5-0.8B | +16,43 puntos | +6,93 puntos |
-| WeMM-Ecom-0.8B vs MiniCPM-V-4.7-1B | +13,03 puntos | +1,09 puntos |
+| Comparativa | Diferencia en media de benchmarks |
+|---|---|
+| WeMM-Ecom-0.8B vs. Qwen3.5-0.8B (e-commerce) | +16,43 puntos |
+| WeMM-Ecom-0.8B vs. MiniCPM-V-4.7-1B (e-commerce) | +13,03 puntos |
+| WeMM-Ecom-0.8B vs. Qwen3.5-0.8B (general) | +6,93 puntos |
+| WeMM-Ecom-0.8B vs. MiniCPM-V-4.7-1B (general) | +1,09 puntos |
 
-No se han publicado resultados individuales por benchmark (MMLU, HumanEval, GSM8K, etc.) en forma textual en la informacion disponible.
+No se han publicado en la informacion disponible los valores absolutos por benchmark (MMLU, HumanEval, GSM8K u otros) en formato numerico textual.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 1,7 GB solo para pesos (tamano del repo), mas overhead de activaciones y cache KV; en la practica se recomienda reservar 3-4 GB para contexto moderado.
-- Variante FP8: reduce el peso de pesos a aproximadamente la mitad del BF16, con requisitos en torno a 1 GB para pesos.
-- Variante GPTQ: cuantizacion de 4 bits aproximadamente, con pesos en torno a 0,5 GB.
-- Variante GGUF: permite ejecucion en CPU y GPU con cuantizaciones de 4-8 bits; adecuada para equipos consumer.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) puede alojar el modelo en BF16 o FP8; para lotes grandes o contexto muy largo se recomienda A100 o H100.
-- Opciones de despliegue: Transformers (`AutoModelForImageTextToText`), serving compatible con OpenAI, llama.cpp/Ollama via GGUF y frameworks compatibles con GPTQ/FP8.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 1,7 GB para los pesos (tamano del repo), mas overhead de activaciones y cache KV; en la practica, unos 3-4 GB para contextos moderados.
+- VRAM estimada en FP8: aproximadamente 0,9 GB para pesos, con overhead adicional.
+- VRAM estimada en GPTQ (4 bits): aproximadamente 0,5 GB para pesos.
+- GGUF: permite inferencia en CPU y en GPUs de consumo con requisitos de VRAM muy reducidos segun la cuantizacion.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para BF16 en contextos cortos; RTX 3060/4060 o superiores son suficientes. Para contextos largos (hasta 262.144 tokens) se requiere mas VRAM por la cache KV, por lo que se recomiendan A100/H100 o GPUs con 24 GB o mas.
+- Cabe en GPU de consumo: si, en RTX 3060, RTX 4060, RTX 4090 y similares, especialmente en FP8, GPTQ o GGUF.
+- Opciones de despliegue: Transformers (>= 5.2.0), opciones de serving compatibles con OpenAI citadas en la model card, y formatos GGUF para llama.cpp/Ollama. No se confirma en la informacion disponible el soporte explicito de vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| WeMM-Ecom-0.8B | 0,85B denso | 262.144 | Multimodal e-commerce + general | Apache 2.0 | Hugging Face (BF16, FP8, GPTQ, GGUF) |
-| Qwen3.5-0.8B | 0,8B denso | No disponible | Multimodal general | No disponible | Hugging Face |
-| MiniCPM-V-4.7-1B | ~1B denso | No disponible | Multimodal general | No disponible | Hugging Face |
+| WeMM-Ecom-0.8B | 0,85B | 262.144 | Apache 2.0 | Multimodal e-commerce + general | Hugging Face, FP8/GPTQ/GGUF |
+| Qwen3.5-0.8B | 0,8B (aprox.) | no disponible | no disponible | Multimodal general | Modelo base en Hugging Face |
+| MiniCPM-V-4.7-1B | 1B (aprox.) | no disponible | no disponible | Multimodal general | Hugging Face |
 
-Segun la model card, WeMM-Ecom-0.8B supera a ambos comparables tanto en la media de benchmarks de e-commerce como en la media de benchmarks generales, lo que lo posiciona como una opcion especializada sin sacrificar rendimiento general frente a modelos de tamano similar.
+Segun la model card, WeMM-Ecom-0.8B supera a Qwen3.5-0.8B en 16,43 puntos (e-commerce) y 6,93 puntos (general), y a MiniCPM-V-4.7-1B en 13,03 puntos (e-commerce) y 1,09 puntos (general). Los datos de contexto y licencia de los modelos comparables no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo chino e ingles; el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera inferior.
-- Sesgos: no se documentan analisis de sesgos en la informacion disponible; al estar entrenado sobre datos de e-commerce de WeChat, puede heredar sesgos de catalogo y de moderacion de esa plataforma.
-- Alucinacion: como modelo generativo multimodal, puede producir descripciones o atributos incorrectos, especialmente en imagenes de baja calidad o productos poco representados.
-- Contexto: aunque la ventana es de 262.144 tokens, no se documenta el rendimiento efectivo en contextos extremos ni la degradacion esperada.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio y las condiciones de los modelos base y datasets subyacentes.
-- Modo thinking: requiere ajustes de muestreo especificos; usarlo con la configuracion de modo instruct puede degradar la calidad o aumentar innecesariamente la longitud de salida.
-- Cobertura de benchmarks: los resultados completos se presentan como imagenes en la model card, lo que dificulta la verificacion automatica y la comparacion programatica.
+- Idiomas: solo chino e ingles; no se garantiza rendimiento en castellano u otros idiomas.
+- Especializacion: el ajuste fino esta orientado a comercio electronico de WeChat; el rendimiento fuera de ese dominio puede diferir del reportado.
+- Sesgos: no se documentan en la informacion disponible los sesgos conocidos del modelo ni de su dataset de entrenamiento.
+- Alucinacion: como todo modelo generativo, puede producir descripciones o atributos incorrectos; en tareas de moderacion o extraccion de atributos conviene validacion adicional.
+- Contexto: aunque la ventana es de 262.144 tokens, el uso practico de contextos muy largos incrementa la VRAM necesaria para la cache KV.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar el archivo LICENSE del repositorio para condiciones exactas.
+- Produccion: no se publican en la informacion disponible datos de latencia, throughput ni tasas de error en produccion; se recomienda evaluacion propia antes de desplegar.
+- Dependencia de version: requiere transformers >= 5.2.0, lo que puede limitar la compatibilidad con stacks mas antiguos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Ecom-0.8B
-- Licencia: https://huggingface.co/tencent/WeMM-Ecom-0.8B/blob/main/LICENSE
-- Coleccion WeMM-Ecom: https://huggingface.co/collections/tencent/wemm-ecom
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.30662
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2611.30662
 - Repositorio GitHub: https://github.com/Tencent/WeMM-Ecom
+- Coleccion de la familia WeMM-Ecom: https://huggingface.co/collections/tencent/wemm-ecom
 - Variante 2B: https://huggingface.co/tencent/WeMM-Ecom-2B
 - Variante 4B: https://huggingface.co/tencent/WeMM-Ecom-4B
 - Variante 9B: https://huggingface.co/tencent/WeMM-Ecom-9B
 - Variante 35B-A3B: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
-- Cuantizacion FP8: https://huggingface.co/tencent/WeMM-Ecom-0.8B-FP8
-- Cuantizacion GPTQ: https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ
-- Cuantizacion GGUF: https://huggingface.co/tencent/WeMM-Ecom-0.8B-GGUF
+- Version FP8: https://huggingface.co/tencent/WeMM-Ecom-0.8B-FP8
+- Version GPTQ: https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ
+- Version GGUF: https://huggingface.co/tencent/WeMM-Ecom-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Licencia: https://huggingface.co/tencent/WeMM-Ecom-0.8B/blob/main/LICENSE

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "yeopeter1031/aiot-fall-qwen3.5-2b-lora-r1",
+  "slug": "yeopeter1031-aiot-fall-qwen3-5-2b-lora-r1",
+  "author": "yeopeter1031",
+  "url": "https://huggingface.co/yeopeter1031/aiot-fall-qwen3.5-2b-lora-r1",
+  "created_at": "2026-11-27T02:55:22.000Z",
+  "updated_at": "2026-11-27T02:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "structured-output",
+    "research",
+    "ko",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403996128,
+  "storage_human": "404 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

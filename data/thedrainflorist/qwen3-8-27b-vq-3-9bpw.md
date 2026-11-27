@@ -2,90 +2,110 @@
 
 ## Resumen
 
-TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw es una cuantización vectorial (VQ) del modelo Qwen3.8-27B, desarrollada por TheDrainFlorist específicamente para Apple Silicon. El modelo base, Qwen3.8-27B, es un transformer denso de 27 mil millones de parámetros con atención híbrida (solo 16 de 64 capas usan atención completa) y capacidades nativas de visión-lenguaje. Esta build reduce el tamaño del checkpoint a 12,5 GiB mediante cuantización vectorial de los MLP (3,25 bits por peso) y 8 bits para el resto, manteniendo una divergencia KL de 85,8 millinats respecto al profesor bf16, con un 86,1% de acuerdo top-1. Es la build más pequeña que el autor recomienda para uso real, y está diseñada para ejecutarse con `mlx-lm` sin parches, con una memoria residente de aproximadamente 11,61 GiB, lo que permite su uso en equipos con 16 GB de RAM unificada.
+Qwen3.8-27B-VQ-3.9bpw es una cuantización vectorial (vector quantization, VQ) del modelo Qwen3.8-27B de Alibaba Qwen, publicada por el usuario independiente TheDrainFlorist para su ejecución en Apple Silicon mediante MLX. El checkpoint empaqueta el runtime VQ directamente en el repositorio como `model.py`, de modo que funciona con una instalación estándar de `mlx-lm` sin parches adicionales. El objetivo es ofrecer una compresión agresiva (3,9 bits por peso) que reduzca el peso en disco a 12,47 GiB frente a los 51,7 GiB del modelo en bf16, manteniendo una divergencia respecto al profesor bf16 sustancialmente menor que las conversiones afines de 3 bits.
 
-La relevancia de este modelo radica en que ofrece una alternativa de alta calidad para inferencia local en hardware Apple, donde las cuantizaciones MLX son escasas para esta familia de modelos. El autor compara su build VQ con conversiones afines propias (q2, q3, q4, q6, q8) y demuestra que, a 3,9 bpw, supera claramente a la afina q3 en divergencia KL (85,8 frente a 187,8 millinats) con solo 0,6 GiB más, aunque pierde algo de calidad frente a la q4 (45,8 millinats) a cambio de ahorrar 2,5 GiB. No se han publicado mediciones de throughput ni resultados en suites de tareas para este artefacto concreto.
+El modelo base es un transformer de la familia Qwen3.8 con 12.118.822.128 parámetros reales según los safetensors publicados (pese al "27B" del nombre comercial), licencia Apache 2.0 y soporte declarado únicamente de inglés. Incluye una torre de visión bf16 de 333 tensores (0,859 GiB) que se conserva íntegra en todas las builds del autor, por lo que el modelo es multimodal de entrada de imagen aunque la model card no detalla esa faceta.
+
+La relevancia de esta ficha es doble: por un lado, documenta una técnica de cuantización poco común (VQ en lugar de la afín escalar por grupos que usa `mlx_lm.convert`); por otro, el autor publica mediciones de divergencia KL sobre tres corpus (prosa, código y texto literario) que muestran que el daño de la cuantización se concentra en texto literario y que la perplejidad no sirve para ordenar estas builds.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atencion hibrida (Qwen3.8-27B), cuantizacion vectorial (VQ) en MLP |
-| Parametros totales | 27 mil millones (modelo base Qwen3.8-27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | VQ: 3,25 bits/peso en MLP (d=4, K=4096, codebook fp16), resto 8 bits; nominal 3,9 bpw |
-| Idiomas soportados | Ingles (segun model card y tags) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con runtime MLX integrado (model.py) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.8), con torre de visión bf16 de 333 tensores (0,859 GiB); runtime VQ empaquetado como `model.py` |
+| Parametros totales | 12.118.822.128 |
+| Parametros activos | No es MoE; no aplica |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Vector quantization (VQ) a 3,9 bits por peso; builds comparativas afines q2/q3/q4/q6/q8 y VQ 4,5/4,8 bpw del mismo autor |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería `mlx`); repo de 13,4 GB, build de 12,47 GiB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso de 27 mil millones de parametros con una arquitectura de atencion hibrida: de sus 64 capas, solo 16 ejecutan atencion completa (con un intervalo de 4), mientras que las otras 48 utilizan un mecanismo de atencion mas ligero. Esta arquitectura, compartida con el modelo MoE Qwen3.5 de 2,4 billones de parametros, reduce el coste computacional manteniendo la capacidad de modelado. El modelo base es nativamente multimodal (vision-lenguaje) e incluye una torre de vision de 0,859 GiB que se conserva en esta build.
+El checkpoint es una cuantización, no un modelo entrenado desde cero: hereda la arquitectura y los pesos del Qwen3.8-27B original y aplica cuantización vectorial sobre las matrices lineales. La diferencia frente al recetario comunitario estándar (`mlx_lm.convert`, group_size 64, afín) es que VQ sustituye la escala y el cero por grupo por un codebook vectorial, lo que a 3,9 bpw permite conservar más información que una afín de 3 bits. El runtime incluido implementa kernels VQ densos que leen activaciones directamente de memoria de dispositivo (sin staging por tiles de threadgroup) y evalúan el prefill de forma incremental; según el autor, los cambios de kernel son bit-idénticos o equivalentes a 1 ULP.
 
-La cuantizacion vectorial se aplica exclusivamente al trio de MLP densos. Cada subvector de 4 pesos se codifica con un indice de 12 bits en un codebook fp16 de 4096 entradas por tensor, con una escala fp16 por cada (fila, 64 pesos), resultando en 3,25 bits por peso en la superficie cuantizada. El resto de tensores se cuantizan a 8 bits. Los codebooks se ajustan mediante k-means en el espacio de pesos puro, sin usar hessiana, estadisticas de activacion ni corpus de calibracion. El ajuste no esta seedeado, por lo que el artefacto es reproducible en receta y geometria pero no bit a bit. No hay entrenamiento adicional; es una cuantizacion post-entrenamiento.
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni etapas de RLHF/DPO en la información proporcionada; esos detalles corresponden al modelo base Qwen3.8-27B, cuya model card no se ha facilitado. La build incluye soporte de decodificación especulativa mediante un sidecar MTP (`mtp-head-q6.safetensors`) que funciona con la rama `mtp-stage1` del fork de exo del autor, activable con `exo --mtp` o `EXO_MTP=1`; con MTP activo, exo sirve peticiones de forma secuencial, por lo que no es apto para cargas concurrentes o multiagente.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen3.8-27B.
-- Razonamiento paso a paso y resolucion de problemas matematicos (el modelo base esta evaluado en MathVision con prompt de razonamiento).
-- Generacion de codigo y mejora en tareas de productividad de oficina, segun las capacidades del modelo base.
-- Capacidades de vision-lenguaje: la torre de vision bf16 (0,859 GiB) se incluye en el checkpoint, aunque no se han medido tareas de vision en esta build.
-- Soporte de tool calling y function calling: no se menciona explicitamente, pero el modelo base Qwen3.8 soporta estas capacidades; no hay confirmacion para esta cuantizacion.
-- Capacidades multilingues: el modelo base soporta multiples idiomas, pero esta build solo declara ingles en su model card.
+- Generación de texto conversacional y de instrucciones en inglés (pipeline `text-generation`, tags `conversational`).
+- Entrada multimodal de imagen: todas las builds conservan la torre de visión bf16 de 0,859 GiB, aunque la model card no detalla el uso.
+- Decodificación especulativa opcional vía cabecera MTP en el fork de exo (`--mtp`), con la salvedad de servido secuencial.
+- Ejecución en Apple Silicon sobre `mlx-lm` estándar, sin parches, gracias al runtime VQ empaquetado.
+- Despliegue multi-Mac mediante exo (instrucciones referenciadas a Knurlogic).
+- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso explícito ni modo thinking; no disponibles.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon: el caso principal. Con 11,61 GiB de memoria residente, puede ejecutarse en Macs con 16 GB de RAM unificada usando `mlx-lm`, ideal para desarrollo y prototipado sin conexion.
-- Asistente de codigo en entornos offline: dado que el modelo base destaca en generacion de codigo, esta build permite ejecutar un asistente de programacion en una Mac sin depender de APIs externas, con una ventana de contexto razonable (aunque no se especifica la longitud).
-- Chat conversacional para aplicaciones de escritorio: al ser una cuantizacion ligera, puede integrarse en aplicaciones locales de chat o agentes conversacionales que requieran privacidad y baja latencia.
-- Educacion e investigacion: util para experimentar con cuantizacion vectorial y comparar su rendimiento frente a cuantizaciones afines, ya que el autor proporciona metricas detalladas de divergencia KL y acuerdo top-1.
-- Generacion de contenido asistida: redaccion de textos, resumenes o traducciones (aunque solo se declara ingles) en entornos sin conexion.
-- Prototipado de agentes con razonamiento multi-paso: el modelo base tiene capacidades de razonamiento, y esta build permite probar flujos de agente en hardware local antes de escalar a modelos mayores.
+- Inferencia local en Mac con memoria unificada limitada: con 12,47 GiB en disco y pico de memoria igual al tamaño en disco según el autor, cabe en equipos de 16-24 GB de memoria unificada, algo imposible con el bf16 de 51,7 GiB.
+- Asistente conversacional en inglés sobre documentos largos: el modelo base Qwen3.8 está orientado a instrucciones; la build mantiene la torre de visión, lo que permite consultas sobre capturas o páginas escaneadas junto a texto.
+- Clúster doméstico multi-Mac con exo: el autor documenta reparto entre varias máquinas, útil para servir el modelo a un equipo pequeño sin GPU dedicada.
+- Prototipado de pipelines de generación de código: la divergencia KL en el corpus de código público es la más baja de los tres (39,8 mnats/tok), por lo que es el dominio donde la cuantización degrada menos.
+- Evaluación de técnicas de cuantización: sirve como referencia práctica de VQ frente a afín para investigadores que comparen recetas con la misma instrumentación KL de tres corpus.
+- Experimentos de decodificación especulativa: la cabecera MTP y el fork de exo permiten medir el impacto de la decodificación especulativa en un modelo de ~12B en hardware Apple.
+- Generación de texto creativo o literario solo con cautela: es el dominio con mayor divergencia (581,7 mnats/tok), por lo que no se recomienda para producción literaria sin validación humana.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona mediciones propias comparando esta build VQ con conversiones afines del mismo autor (no con artefactos de terceros). Se evaluo contra el profesor bf16 en el mismo corpus con `mlx-lm` sin modificar. Los resultados son:
+El autor publica divergencia KL (millinats por token) frente al profesor bf16, medida sobre la caché top-64 del profesor con 12.288 tokens en tres corpus (prosa, código público y literario):
 
-| Build | Tamano | KL a bf16 (mnats/tok) | Acuerdo top-1 | Perplexidad |
+| Build | GiB | Prosa | Código | Literario | Media | Top-1 |
+|---|---|---|---|---|---|---|
+| **VQ-3.9bpw (este modelo)** | **12,47** | **140,4** | **39,8** | **581,7** | **254,0** | **86,0%** |
+| Afín q4 (del autor) | 14,95 | 67,4 | 23,2 | 314,3 | 135,0 | 90,5% |
+| VQ-4.5bpw | 14,45 | 54,4 | 20,9 | 287,6 | 120,9 | 90,9% |
+| VQ-4.8bpw | 15,45 | 61,2 | 16,5 | 207,3 | 95,0 | 91,1% |
+| Afín q8 (del autor) | 27,48 | 3,2 | 0,6 | 4,9 | 2,9 | 98,5% |
+
+Medición antigua (solo prosa, 2.048 tokens, no comparable fila a fila con la anterior; el autor la mantiene por trazabilidad):
+
+| Build | Tamaño | KL a bf16 (mnats/tok) | Top-1 | Perplejidad |
 |---|---|---|---|---|
-| Afina q2 (propia) | 8,69 GiB | 1426,9 | 46,1% | 16,435 |
-| Afina q3 (propia) | 11,82 GiB | 187,8 | 79,5% | 5,832 |
-| **Este modelo (VQ 3.9 bpw)** | **12,47 GiB** | **85,8** | **86,1%** | **5,229** |
-| Afina q4 (propia) | 14,95 GiB | 45,8 | 89,8% | 5,206 |
-| Afina q6 (propia) | 21,21 GiB | 3,71 | 96,8% | 5,260 |
-| Afina q8 (propia) | 27,48 GiB | 1,25 | 98,5% | 5,241 |
+| Afín q2 (del autor) | 8,69 GiB | 1426,9 | 46,1% | 16,435 |
+| Afín q3 (del autor) | 11,82 GiB | 187,8 | 79,5% | 5,832 |
+| **Este modelo** | **12,47 GiB** | **85,8** | **86,1%** | 5,229 |
+| Afín q4 (del autor) | 14,95 GiB | 45,8 | 89,8% | 5,206 |
+| Afín q6 (del autor) | 21,21 GiB | 3,71 | 96,8% | 5,260 |
+| Afín q8 (del autor) | 27,48 GiB | 1,25 | 98,5% | 5,241 |
 | bf16 | 51,7 GiB | 0 | 100% | — |
 
-El autor advierte que la perplexidad apenas varia entre builds (5,19-5,35) y no es un indicador fiable para esta familia; la divergencia KL es la metrica adecuada. No se han publicado resultados en suites de tareas estandar (MMLU, HumanEval, GSM8K) para este artefacto.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor advierte explícitamente que la perplejidad no ordena estas builds y que debe usarse KL.
 
 ## Requisitos de hardware
 
-- Memoria: aproximadamente 11,61 GiB de RAM unificada en tiempo de ejecucion (el checkpoint en disco ocupa 12,47 GiB, pero la torre de vision no se carga con `mlx-lm`). Se recomienda un equipo con 16 GB de RAM unificada como minimo.
-- GPU: cualquier chip Apple Silicon (M1, M2, M3 o superiores) con suficiente memoria unificada. No requiere GPU discreta.
-- Compatibilidad: funciona con `mlx-lm` sin parches; el runtime VQ se incluye en el checkpoint como `model.py`.
-- Despliegue: se ejecuta con `python -m mlx_lm generate --model TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw --prompt "..." --max-tokens 512`.
-- Latencia y throughput: no medidos en este artefacto; el autor no proporciona cifras.
+- VRAM/memoria unificada: el pico de memoria iguala el tamaño en disco, 12,47 GiB, más overhead del runtime y del contexto; en la práctica requiere un Mac con al menos 16 GB de memoria unificada, y 24 GB o más para contextos largos.
+- GPU: exclusivamente Apple Silicon (MLX). No hay soporte CUDA documentado en esta build; las GPU NVIDIA (A100, H100, RTX 4090) no son un objetivo de este checkpoint.
+- Cabe en GPU de consumo Apple: cualquier Mac con chip M-series y memoria unificada suficiente (M1/M2/M3/M4 en configuraciones de 16 GB o superiores).
+- Despliegue: `mlx-lm` estándar (el runtime VQ viaja en el repo como `model.py`); multi-Mac con el fork de exo del autor; decodificación especulativa con `exo --mtp` o `EXO_MTP=1`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el autor menciona mejoras de prefill de hasta 1,46x en geometrías con codebooks grandes, hasta 1,34x por la relajación de subvectores irregulares, un brazo fusionado d8 y una memoización de routing de ~2%, pero solo en las geometrías afectadas; no se publican cifras absolutas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-La comparativa mas directa es con las conversiones afines del mismo autor, ya que no existen otras cuantizaciones MLX publicadas de Qwen3.8-27B. Frente a otros modelos cuantizados para Apple Silicon, no hay datos suficientes. La tabla anterior muestra la comparacion con las builds afines. En terminos de calidad por GiB, esta build VQ ofrece un equilibrio notable: duplica la calidad de la afina q3 con solo 0,6 GiB mas, y se acerca a la afina q4 (85,8 vs 45,8 millinats) ahorrando 2,5 GiB. Por encima de ~5 bpw, la cuantizacion afina supera a la VQ, por lo que esta build es optima en el rango de 3-4 bpw.
+| Modelo | Parámetros | Contexto | Tamaño | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-VQ-3.9bpw (este) | 12,12B | no disponible | 12,47 GiB | Apache 2.0 | MLX, Apple Silicon |
+| Afín q4 del mismo autor | 12,12B | no disponible | 14,95 GiB | Apache 2.0 | MLX |
+| VQ-4.5bpw del mismo autor | 12,12B | no disponible | 14,45 GiB | Apache 2.0 | MLX |
+| Qwen3.8-27B bf16 (base) | 12,12B | no disponible | 51,7 GiB | Apache 2.0 | safetensors |
+
+La comparación relevante es interna a la escalera del autor: frente a la afín q4 pierde calidad (254,0 vs 135,0 mnats de media KL) a cambio de 2,5 GiB menos; frente a la afín q3 gana calidad de forma clara (85,8 vs 187,8 mnats en prosa) por 0,6 GiB más. No se dispone de comparación con cuantizaciones MLX de terceros del mismo modelo base, porque según el autor no existían en el momento de la publicación.
 
 ## Limitaciones y advertencias
 
-- No se han medido throughput ni resultados en suites de tareas estandar (MMLU, HumanEval, etc.) para este artefacto; las unicas metricas son las del autor sobre divergencia KL y acuerdo top-1.
-- La perplexidad no es un indicador fiable para esta familia de modelos; puede inducir a error si se usa como unica metrica.
-- Los comparadores afines son conversiones propias del autor, no artefactos de la comunidad, lo que debilita la evidencia comparativa.
-- La cuantizacion VQ pierde ventaja frente a la afina por encima de ~5 bits por peso; esta build esta disenada para el rango bajo de bits.
-- El ajuste de codebooks no esta seedeado, por lo que el artefacto no es bit a bit reproducible, aunque la receta y geometria si lo son.
-- Solo se declara soporte para ingles; las capacidades multilingues del modelo base no estan confirmadas en esta build.
-- No se especifica la longitud de contexto soportada tras la cuantizacion; se desconoce si hay degradacion respecto al modelo base.
-- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion.
+- Solo inglés declarado; no hay evidencia de calidad multilingüe en esta build.
+- El daño de cuantización se concentra en texto literario (581,7 mnats/tok, varias veces peor que en prosa), por lo que la generación creativa es el caso de uso más arriesgado.
+- Riesgo de alucinación inherente al modelo base, no mitigado por la cuantización; no se documentan evaluaciones de factualidad.
+- La perplejidad no es una métrica fiable para comparar estas builds; el autor demuestra que la afín q8 lee la perplejidad más alta pese a ser la más cercana al bf16.
+- Dependencia de Apple Silicon y de `mlx-lm`: no hay ruta documentada a CUDA, vLLM, llama.cpp u Ollama.
+- El runtime VQ viaja como `model.py` en el repositorio; revisiones anteriores fallaron al cargar con `ModuleNotFoundError` en instalaciones limpias (corregido en la reparación de 2026-09), lo que obliga a fijar revisión si se automatiza el despliegue.
+- Con MTP activo, exo sirve peticiones de forma secuencial: no apto para cargas concurrentes o multiagente.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y sus obligaciones de atribución deben verificarse en la model card de Qwen/Qwen3.8-27B.
+- El nombre comercial "27B" no coincide con los 12,12B reales de los safetensors; conviene dimensionar el hardware por el dato real.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Pagina de QwenCloud para Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b
-- Benchmarks y velocidad (BenchLM): https://benchlm.ai/models/qwen3-8-27b
-- Documentacion de vLLM Ascend para Qwen3.8-27B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Fork de exo con soporte MTP: https://github.com/noahzelezny/exo
+- Knurlogic (instrucciones de ejecución, multi-Mac, drafting y visión): https://github.com/noahzelezny/Knurlogic

@@ -2,104 +2,102 @@
 
 ## Resumen
 
-KyokoHori-Lora es un LoRA de personaje para modelos de difusión SDXL, entrenado específicamente sobre el checkpoint waiIllustriousSDXL v17 (variante Illustrious/NoobAI orientada a ilustración anime). Lo publica el usuario abbuibuibui en Hugging Face y su función es reproducir de forma consistente el rostro, el cabello y los uniformes del personaje Kyoko Hori, de la obra *Horimiya*, en generaciones controladas por prompt. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre una base SDXL concreta.
+KyokoHori-Lora es un LoRA de personaje para modelos de difusion de la familia Stable Diffusion XL, concretamente entrenado sobre el modelo base waiIllustriousSDXL v17 (un merge de la familia Illustrious/NoobAI orientado a ilustracion anime). Lo desarrolla el usuario abbuibuibui y reproduce el personaje de Kyoko Hori (堀京子) del manga y anime *Horimiya*. No es un modelo fundacional ni un checkpoint completo: es un adaptador de bajo rango que se aplica sobre un SDXL ya existente para inyectar la identidad visual del personaje.
 
-El repositorio incluye los pesos de siete épocas de entrenamiento (E1 a E7), con recomendación explícita de usar E6 a fuerza 0.8. El autor documenta una evaluación comparativa propia con matrices de escenas y fuerzas, además de los tokens de activación para identidad y para cada variante de vestuario. El dataset de entrenamiento (78 imágenes con captions) está publicado por separado.
+El repositorio contiene en realidad tres linajes de LoRA distintos: el original para Illustrious/WAI (directorio raiz), una variante para AutismMix Pony (subdirectorio `autism_pony/`) y una variante para MOSS-Image (subdirectorio `moss/`). Cada uno requiere su modelo base y sus prompts correspondientes; mezclarlos produce resultados incorrectos. El linaje principal incluye los pesos de siete epocas (E1-E7), con recomendacion explicita de usar E6 a fuerza 0.8 como configuracion por defecto.
 
-Es relevante para quien genere ilustración anime con pipelines SDXL/Illustrious y necesite consistencia de personaje entre escenas, ya que el autor aporta pesos por época, ejemplos sin retoque y una metodología de selección reproducible, algo poco habitual en LoRAs de personaje.
+La relevancia de esta ficha es acotada: se trata de un LoRA de personaje de nicho, con 206 descargas y sin likes en el momento de la consulta, pensado para generacion de imagenes de fan art. Su interes tecnico esta en la documentacion de entrenamiento (78 imagenes curadas, captions con `keep_tokens = 2`, evaluacion comparativa publica entre epocas y fuerzas) mas que en capacidades generales de IA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre UNet y ambos text encoders de SDXL / Illustrious |
-| Parametros totales | Rango 64, alpha 32; tamaño de cada fichero 456.495.788 bytes (unos 456 MB) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de difusión de imagen, no aplica ventana de texto) |
-| Tipos de cuantizacion | no disponible; se distribuye en safetensors (fp32/fp16 según el peso; el entrenamiento usó bf16 en cómputo y fp32 en VAE y estados del optimizador) |
-| Idiomas soportados | en, zh (idiomas declarados en la model card; los prompts se escriben en inglés o chino) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; modelo base waiIllustriousSDXL v17 |
+| Parametros totales | no disponible (cada archivo de pesos ocupa 456.495.788 bytes) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion texto-a-imagen) |
+| Tipos de cuantizacion | no disponible (se distribuye en safetensors; no se documentan variantes GGUF ni fp8) |
+| Idiomas soportados | en, zh (prompts en ingles y chino) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (7 ficheros, uno por época) |
-| Modelo base | waiIllustriousSDXL-v17 (`waiIllustriousSDXL_v170`) |
-| Libreria | diffusers |
-| Resolucion recomendada | 832×1216 |
-| Fuerza recomendada | 0.8 (rango útil 0.6–0.8) |
-| Sampler y pasos | Euler a, 28 pasos, CFG 4.5, CLIP skip 2 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 32 aplicado tanto al UNet como a los dos text encoders del modelo base SDXL en su variante Illustrious. El entrenamiento usó AdamW con estados en fp32, cómputo en bf16, VAE en fp32 y atención SDPA, sin optimizador de 8 bits y sin gradient checkpointing. Las tasas de aprendizaje documentadas son 1e-4 para el UNet; el valor para los text encoders aparece truncado en la model card y no puede confirmarse.
+El adaptador es un LoRA aplicado sobre un UNet de SDXL. El modelo base, waiIllustriousSDXL v17, es un merge de la familia Illustrious, derivada a su vez de SDXL y especializada en ilustracion anime. El LoRA no modifica la arquitectura del modelo base: anade matrices de bajo rango en las capas de atencion para desplazar la distribucion de salida hacia el personaje objetivo. El repositorio incluye los pesos de siete epocas de entrenamiento, cada uno de 456.495.788 bytes, con SHA-256 documentado para E6.
 
-El dataset consta de 78 imágenes curadas con sus ficheros `.txt` de caption, generados con `keep_tokens = 2` y un formato que empieza por `kyoko_hori, <outfit>`. La distribución por vestuario es: uniforme con chaleco 27 imágenes, uniforme de invierno 29, camiseta deportiva 12 y abrigo con bufanda 10. El autor publica los pesos de las siete épocas y una evaluación comparativa propia (rondas de cribado a 0.8 y matriz de 10 escenas × 4 fuerzas sobre E5, E6 y E7), de la que concluye que E6 a 0.8 ofrece la mejor consistencia de identidad en retrato, cuerpo completo y escena nocturna compleja.
+El dataset de entrenamiento consta de 78 imagenes curadas con sus correspondientes archivos `.txt` de caption, publicadas en `abbuibuibui/KyokoHori-Dataset`. Los captions siguen el esquema `kyoko_hori, <outfit>` y se entrenaron con `keep_tokens = 2`, lo que fija los dos primeros tokens (identidad y outfit) para que no sean alterados por el shuffle de captions. La distribucion por outfit es: uniforme con chaleco 27 imagenes, uniforme de invierno 29, camiseta deportiva 12 y abrigo con bufanda 10. No se documenta el numero de pasos, la tasa de aprendizaje, el optimizador ni si hubo regularizacion con imagenes de clase.
+
+La innovacion tecnica destacable no esta en la arquitectura sino en la metodologia de evaluacion: el autor publica una comparativa horizontal con columnas por epoca y filas por fuerza del LoRA, generada en una DGX con ComfyUI y sin retoque posterior. La matriz de seleccion cubre 10 escenas por 4 fuerzas (0.4, 0.6, 0.8 y 1.0) para los candidatos E5, E6 y E7.
 
 ## Capacidades
 
-- Generación de ilustración anime del personaje Kyoko Hori con identidad estable (pelo castaño largo, ojos marrones) mediante el token `kyoko_hori`.
-- Control de vestuario mediante tokens dedicados: `kyoko_hori_vest_uniform`, `kyoko_hori_winter_uniform`, `kyoko_hori_sports_shirt`, `kyoko_hori_winter_coat_scarf`.
-- Consistencia entre planos: retrato frontal, tres cuartos, perfil, cuerpo completo, sentada y fondos simples o complejos.
-- Integración en pipelines SDXL/Illustrious mediante sintaxis de LoRA en el prompt (`<lora:kyoko_hori-000006:0.8>`).
-- Compatibilidad declarada con merges de Illustrious y NoobAI, además del checkpoint base recomendado.
-- Soporte de prompts en inglés y chino.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de texto, audio o vídeo: es exclusivamente un adaptador de generación de imagen.
+- Generacion de imagenes de un personaje concreto (Kyoko Hori) sobre modelos base SDXL de la familia Illustrious/NoobAI.
+- Control de identidad mediante el token de activacion `kyoko_hori`, que fija pelo largo castano y ojos castanos.
+- Control de vestuario mediante tokens especificos: `kyoko_hori_vest_uniform`, `kyoko_hori_winter_uniform`, `kyoko_hori_sports_shirt` y `kyoko_hori_winter_coat_scarf`.
+- Composicion de escena mediante prompts de texto convencionales de SDXL (pose, encuadre, fondo, iluminacion).
+- Variantes para otros modelos base: AutismMix Pony y MOSS-Image, con tokens y prompts propios.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es exclusivamente un modelo de difusion imagen.
 
 ## Casos de uso
 
-- Ilustración de fan art consistente: usar E6 a 0.8 con el token de identidad y el token de vestuario para obtener al personaje con el mismo rostro en distintas composiciones, apoyándose en la matriz de evaluación publicada para elegir fuerza.
-- Series de viñetas o doujinshi corto: mantener `kyoko_hori` fijo y alternar `kyoko_hori_vest_uniform` y `kyoko_hori_winter_uniform` para escenas de interior y exterior sin perder identidad entre paneles.
-- Fondos complejos para escenas narrativas: la evaluación del autor incluye una escena de calle nocturna donde E6 conserva la lectura del personaje, lo que sirve para ilustraciones ambientadas.
-- Prototipado rápido de personaje en estudio pequeño: al ser un LoRA de unos 456 MB por época, se puede cargar y descargar en ComfyUI sin reentrenar la base, comparando E5, E6 y E7 en la misma sesión.
-- Comparación metodológica de épocas: el repositorio conserva los siete checkpoints con sus hojas de evaluación, útil para estudiar sobreajuste y leakage de identidad en LoRAs de personaje.
-- Integración en flujos de trabajo con diffusers: al declarar `library_name: diffusers`, el adaptador se puede cargar mediante la API de LoRA de diffusers sobre el pipeline SDXL correspondiente para generación por lotes.
-- Referencia para entrenamiento de nuevos personajes: el dataset público y la configuración documentada (rango 64/alpha 32, captions con `keep_tokens = 2`) sirven de plantilla para reproducir el proceso con otro personaje.
+- Generacion de fan art de personaje: aplicar el LoRA a fuerza 0.8 sobre waiIllustriousSDXL v17 con el token `kyoko_hori` produce retratos consistentes del personaje; adecuado para ilustracion de comunidad y proyectos no comerciales amparados por la licencia.
+- Creacion de hojas de personaje y referencias visuales: los tokens de outfit permiten generar el mismo personaje con uniforme de chaleco, uniforme de invierno, camiseta deportiva o abrigo con bufanda, util para mantener coherencia en un proyecto de comic o novela visual.
+- Prototipado de escenas para doujinshi o webcomic: combinando el token de identidad con prompts de encuadre (primer plano, tres cuartos, perfil, cuerpo entero) se obtienen bocetos de panel con un personaje estable entre viñetas.
+- Pruebas de integracion en pipelines ComfyUI: el autor documenta ajustes concretos (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216) que sirven como configuracion de referencia para validar un flujo de trabajo con LoRAs de personaje.
+- Investigacion sobre entrenamiento de LoRA de personaje: el repositorio publica la matriz de evaluacion por epoca y fuerza, lo que permite estudiar el efecto del numero de epocas y del peso del adaptador sobre la fidelidad de identidad y la fuga de estilo.
+- Comparacion de linajes sobre distintos modelos base: disponer de variantes para Illustrious, AutismMix Pony y MOSS-Image permite evaluar como se transfiere un mismo personaje entre familias de checkpoints SDXL.
+- Generacion de material promocional no comercial para comunidades de fans: siempre que se respete la licencia CreativeML OpenRAIL-M y los derechos del titular del personaje.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor aporta únicamente evaluación cualitativa comparativa entre épocas y fuerzas (hojas de imágenes sin retocar), no métricas cuantitativas como FID, CLIP score o similitud facial.
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la informacion disponible. El autor aporta una evaluacion cualitativa comparativa entre epocas:
 
-| Candidato | Resultado observado según el autor | Decisión |
+| Candidato | Resultado observado | Decision |
 |---|---|---|
-| E1 | Identidad correcta (pelo y ojos marrones), rostro más suave | Alternativa temprana |
-| E5 | Identidad estable, algo menos asentada que E6 en cuerpo completo | Alternativa |
-| E6 | Rostro consistente a 0.6–0.8; la calle nocturna sigue leyéndose como el mismo personaje | Recomendado a 0.8 |
-| E7 | Muy cercano a E6; 1.0 no aporta ganancia clara | Alternativa de época final |
+| E1 | Identidad ya correcta (pelo y ojos castanos), rostro mas suave | Alternativa temprana |
+| E5 | Identidad estable, ligeramente menos asentada que E6 en cuerpo entero | Alternativa |
+| E6 | Rostro consistente a fuerza 0.6-0.8; la escena nocturna sigue leyendose como el mismo personaje | Recomendado a 0.8 |
+| E7 | Muy proximo a E6; 1.0 no aporta ganancia clara | Alternativa de epoca final |
+
+El autor advierte de fuga de identidad: sin el token de personaje, a fuerza 0.8 el modelo sigue inclinando rostro y pelo hacia este personaje, lo que constituye leakage y no una estudiante generica guiada solo por prompt.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; al ser un LoRA sobre SDXL, el requisito dominante es el del checkpoint base (no incluido en el repositorio), no el del adaptador.
-- Tamaño en disco: 456.495.788 bytes por fichero; repositorio completo de 3,2 GB por incluir las siete épocas.
-- GPU recomendadas: el autor generó las imágenes de evaluación en una DGX con ComfyUI; no especifica el modelo de GPU.
-- GPU de consumo: no se documenta prueba en tarjetas consumer, por lo que no puede confirmarse qué modelos concretos lo ejecutan con holgura.
-- Opciones de despliegue: ComfyUI (usado por el autor), diffusers (librería declarada) y, en general, cualquier runtime que cargue LoRAs SDXL en safetensors.
+- VRAM estimada para inferencia: no disponible de forma explicita; al ser un LoRA sobre SDXL, los requisitos son los del modelo base (tipicamente 8-12 GB en fp16 con optimizaciones, mas en resoluciones altas).
+- GPU recomendadas: el autor genero las imagenes de evaluacion en una DGX con ComfyUI; no especifica el modelo de GPU.
+- Cabe en GPU de consumo: si, siempre que el checkpoint base SDXL quepa; tarjetas de 8 GB o mas con `--medvram` o `--lowvram` en A1111/ComfyUI.
+- Opciones de despliegue: ComfyUI (configuracion documentada por el autor), Automatic1111/Forge y otros frontends compatibles con LoRA en safetensors; no se documenta soporte en vLLM, TGI ni llama.cpp (no aplica a difusion).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros LoRAs de personaje comparables (mismo personaje, mismo modelo base o misma categoría) en los datos proporcionados, por lo que la comparación cuantitativa no está disponible. A modo de referencia estructural, frente a un LoRA genérico de estilo, este adaptador se distingue por publicar pesos por época con evaluación comparativa y dataset abierto; frente a un fine-tuning completo de SDXL, su tamaño (unos 456 MB por época) y su naturaleza de adaptador lo hacen mucho más ligero de distribuir y de intercambiar.
+| Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| KyokoHori-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 832x1216 en la config recomendada | creativeml-openrail-m | Hugging Face, 206 descargas |
+| AutismMix Pony (variante del mismo repo) | LoRA de personaje | AutismMix Pony | no disponible | creativeml-openrail-m | Incluido en el mismo repositorio |
+| MOSS-Image (variante del mismo repo) | LoRA de personaje | MOSS-Image | no disponible | creativeml-openrail-m | Incluido en el mismo repositorio |
+| Otros LoRA de personaje de Horimiya | LoRA de personaje | SDXL / Illustrious | no disponible | variable | no disponible |
 
-| Criterio | KyokoHori-Lora (E6) | LoRA de personaje típico | Fine-tuning completo SDXL |
-|---|---|---|---|
-| Parametros | Rango 64 / alpha 32 | no disponible | no disponible |
-| Contexto | no aplica | no aplica | no aplica |
-| Rendimiento | evaluación cualitativa del autor | no disponible | no disponible |
-| Licencia | creativeml-openrail-m | variable | variable |
-| Disponibilidad | Hugging Face, 7 épocas | variable | variable |
+No se dispone de datos de benchmarks ni de otros LoRA comparables de la misma franquicia en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos del personaje y de la obra original pertenecen a sus titulares; el autor lo declara explícitamente como fan-made.
-- La licencia CreativeML OpenRAIL-M impone restricciones de uso (prohibición de usos dañinos y obligación de propagar las restricciones a los derivados); conviene revisar el texto completo antes de uso comercial.
-- Dependencia estricta del modelo base: está entrenado sobre waiIllustriousSDXL v17 y su uso con otros checkpoints SDXL puede degradar la identidad o el estilo.
-- Leakage de identidad documentado: sin el token de personaje, a fuerza 0.8 la generación sigue inclinándose hacia este rostro y cabello, lo que puede contaminar prompts genéricos.
-- Riesgo de sobreajuste en vestuario: el autor advierte que E7 no mejora a E6 a fuerza 1.0 y que E1 tiene el rostro más suave; usar fuerzas fuera de 0.6–0.8 no está validado.
-- Sesgos y alucinaciones: no hay evaluación de sesgos ni de fidelidad anatómica más allá del negative prompt de ejemplo; como todo modelo de difusión, puede producir anatomía incorrecta, manos defectuosas y texto ilegible.
-- Idiomas: solo se declaran inglés y chino para los prompts; no hay soporte documentado de castellano.
-- Sin datos de benchmarks cuantitativos ni de rendimiento en hardware consumer, lo que limita la planificación de producción.
+- Fuga de identidad: a fuerza 0.8, el LoRA inclina rostro y pelo hacia el personaje incluso sin el token de activacion; no debe usarse como LoRA generico de estudiante.
+- Dependencia estricta del modelo base: el linaje raiz requiere waiIllustriousSDXL v17 o un merge Illustrious/NoobAI; los linajes `autism_pony/` y `moss/` requieren sus propios checkpoints y no son intercambiables.
+- Riesgo de sobreajuste por epoca: E1 presenta rostro mas suave y E7 no aporta ganancia clara frente a E6 a fuerza 1.0; usar la epoca equivocada degrada la fidelidad.
+- Dataset pequeno (78 imagenes): la cobertura de poses, angulos y expresiones es limitada, lo que puede reducir la robustez en escenas muy alejadas de las de entrenamiento.
+- Sin benchmarks cuantitativos publicados: la seleccion de E6 se basa en evaluacion visual cualitativa del propio autor, no en metricas objetivas.
+- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibicion de usos daninos listados en el anexo de la licencia) y exige mantener el aviso de licencia; no concede derechos sobre el personaje.
+- Derechos de propiedad intelectual: es una obra derivada no oficial de *Horimiya*; los derechos del personaje y de la obra original pertenecen a sus titulares, lo que limita el uso comercial del personaje en si.
+- Idiomas: prompts documentados en ingles y chino; no hay validacion en castellano.
+- Sin garantias de calidad en produccion: no se documentan pruebas de estabilidad en lotes grandes, ni de reproducibilidad entre versiones de ComfyUI o de las librerias de difusion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/abbuibuibui/KyokoHori-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/KyokoHori-Dataset
-- Notas de evaluación en chino: `evaluation/横向测评记录.md` dentro del repositorio
-- README en chino: `README_zh.md` dentro del repositorio
-- Modelo base: waiIllustriousSDXL v17 (`waiIllustriousSDXL_v170`), no se proporciona enlace directo en la información disponible
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada
+- README en chino: https://huggingface.co/abbuibuibui/KyokoHori-Lora/blob/main/README_zh.md
+- Notas de evaluacion en chino: https://huggingface.co/abbuibuibui/KyokoHori-Lora/blob/main/evaluation/%E6%A8%AA%E5%90%91%E6%B5%8B%E8%AF%84%E8%AE%B0%E5%BD%95.md
+- Variante AutismMix Pony: https://huggingface.co/abbuibuibui/KyokoHori-Lora/tree/main/autism_pony
+- Variante MOSS-Image: https://huggingface.co/abbuibuibui/KyokoHori-Lora/tree/main/moss
+- Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

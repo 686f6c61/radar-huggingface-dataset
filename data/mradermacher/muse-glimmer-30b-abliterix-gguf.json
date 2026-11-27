@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Çin'de saat kaç",
-      "url": "https://saatkac.info.tr/China",
-      "snippet": "13 hours ago · Çin için şu anda saat kaç, saat dilimi, saat farkı, güneşin doğuş ve batış saati."
-    },
-    {
-      "title": "Pekin, Çin'de saat kaç",
-      "url": "https://saatkac.info.tr/Beijing",
-      "snippet": "13 hours ago · Pekin, Çin için şu anda saat kaç, saat dilimi, saat farkı, güneşin doğuş ve batış saati."
-    },
-    {
-      "title": "Çin'de Şu Anda Saat Kaç",
-      "url": "https://www.saat-kac.net/su-anda-cinde-saat-kac.html",
-      "snippet": "1 day ago · Çin'de saat kaç? Şu anda Çin'de saatin kaç olduğunu öğrenmek için buraya tıklayın."
-    },
-    {
-      "title": "Çin Saati | Çin'de Şu Anki Zaman - RT",
-      "url": "https://www.rapidtables.org/tr/calc/time/china-time.html",
-      "snippet": "4 days ago · Çin zamanı. Çin'de şu anki yerel saat."
-    },
-    {
-      "title": "Çin Saati - Çin'de Saat Kaç?",
-      "url": "https://canlisaat.com/dunya-saatleri/cin/",
-      "snippet": "3 days ago · Çin'deki saati merak edenler için, Çin saat dilimine göre anlık olarak saatin kaç olduğunu gösteren saat uygulaması."
-    }
-  ]
+  "sources": []
 }

@@ -2,102 +2,104 @@
 
 ## Resumen
 
-MikanHinatsuki-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado por el usuario abbuibuibui sobre el checkpoint comunitario waiIllustriousSDXL v17. Reproduce a Mikan Hinatsuki (阳夏木蜜柑), personaje de la serie *The Demon Girl Next Door* (Machikado Mazomu), en el estilo anime de la familia Illustrious. Es un derivado no oficial: los derechos del personaje siguen en manos de sus titulares.
+MikanHinatsuki-Lora es una coleccion de LoRAs de personaje para modelos de difusion de imagenes, centrada en Mikan Hinatsuki (阳夏木蜜柑), personaje de la serie anime *The Demon Girl Next Door* (*Machikado Mazomu*). Lo desarrolla el usuario abbuibuibui y se publica bajo licencia CreativeML OpenRAIL-M. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que debe aplicarse sobre un modelo base SDXL concreto para generar imagenes del personaje.
 
-El modelo resuelve un problema muy concreto: fijar la identidad visual del personaje (melena larga rubia, ojos azules y varios conjuntos de ropa) en un checkpoint SDXL base sin que el generador tenga que describirlo de forma exhaustiva en cada prompt. Se distribuye como siete ficheros safetensors correspondientes a las epocas E1 a E7, cada uno de 456.497.900 bytes, con recomendacion explicita de la epoca E6 a fuerza 0.8.
+El repositorio contiene tres linajes independientes entrenados sobre bases distintas: el linaje original sobre waiIllustriousSDXL v17 (ficheros en la raiz), un segundo linaje sobre AutismMix Pony (carpeta `autism_pony/`) y un tercer linaje sobre MOSS-Image (carpeta `moss/`). Cada linaje tiene sus propios tokens de activacion, prompts y negativos, y el autor advierte explicitamente de que no deben mezclarse. El peso recomendado del linaje principal es la epoca E6 a fuerza 0.8.
 
-Su relevancia es acotada pero clara para quien trabaje con generacion de imagenes de personajes: incluye una evaluacion horizontal publica (E5, E6 y E7 cruzadas con cuatro intensidades de LoRA en diez escenas), etiquetas de activacion bien definidas y un dataset de 79 pares de imagenes con siete conjuntos de ropa. Todo ello con licencia CreativeML OpenRAIL-M y soporte de los ecosistemas diffusers y ComfyUI.
+La relevancia de esta ficha es acotada: se trata de un LoRA de personaje con 200 descargas y 1 like en el momento de la consulta, orientado a generacion de arte anime con Stable Diffusion XL. Su interes tecnico esta en la documentacion del proceso de entrenamiento (rank 64, alpha 32, 7 epocas, dataset de 79 pares) y en la evaluacion comparativa publicada entre epocas y fuerzas de aplicacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre SDXL (checkpoint base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (rango 64, alpha 32; ficheros de 456.497.900 bytes cada uno) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL / Illustrious; no es un modelo autonomo |
+| Parametros totales | no disponible (cada fichero pesa 456.497.900 bytes) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de difusion) |
-| Tipos de cuantizacion | no disponible (pesos fp16/bf16 en safetensors) |
-| Idiomas soportados | en, zh (prompts) |
+| Longitud de contexto | no aplica (modelo de difusion de imagenes) |
+| Tipos de cuantizacion | no disponible; se distribuye en safetensors (bf16 presumiblemente) |
+| Idiomas soportados | en, zh (etiquetas de prompt y documentacion) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (7 ficheros, E1 a E7) |
-| Libreria | diffusers (compatible tambien con ComfyUI) |
-| Modelo base | waiIllustriousSDXL v17 |
-| Rango / alpha del LoRA | 64 / 32 |
-| Epoca recomendada | E6 (fuerza 0.8) |
-| Dataset | 79 pares, 7 conjuntos de ropa, repeats 3 |
-| Epocas de entrenamiento | 7 |
+| Formato de pesos | safetensors |
+| Modelo base | waiIllustriousSDXL v17 (linaje principal); AutismMix Pony; MOSS-Image |
+| Rank / alpha | 64 / 32 (linaje principal) |
+| Epocas entrenadas | 7 (E1-E7) |
+| Tamano del repositorio | 7,9 GB |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un LoRA de bajo rango (rank 64, alpha 32) inyectado sobre los bloques de atencion de un UNet SDXL. El checkpoint base es waiIllustriousSDXL v17, una variante comunitaria de SDXL orientada a ilustracion anime dentro del linaje Illustrious. El entrenamiento uso AdamW en bf16 con buckets de resolucion con tope de 1536 y siete epocas sobre un dataset de 79 pares de imagenes que cubren siete conjuntos de ropa distintos (forma de chica magica, vestido amarillo, blusa de flores, vestido estampado de flores, camiseta verde, top de rayas naranjas y uniforme escolar).
+El adaptador es un LoRA de rango 64 con alpha 32, entrenado con AdamW en precision bf16 y buckets con tope de 1536. El linaje principal parte de waiIllustriousSDXL v17 y se entreno durante 7 epocas sobre un dataset de 79 pares de imagenes con 7 conjuntos de vestuario, con 3 repeticiones por muestra. Las captions usaron `keep_tokens = 2`, y el autor senala que los colores de pelo y ojos se omitieron con frecuencia en las captions, por lo que conviene anadirlos explicitamente en el prompt.
 
-Las leyendas se construyeron con `keep_tokens = 2`, omitiendo con frecuencia el color de pelo y de ojos, por lo que la model card advierte que conviene anadir esos descriptores en el prompt. El sujeto base es la etiqueta `1girl`. No se documenta uso de RLHF, DPO ni tecnicas de alineacion adicionales, algo esperable en un LoRA de personaje. La innovacion practica no esta en la arquitectura sino en la evaluacion: una comparativa publica por rondas que justifica la eleccion de E6 como epoca por defecto.
+El repositorio alberga tres linajes entrenados sobre bases distintas, cada uno en su propio subdirectorio o en la raiz. El linaje AutismMix Pony se entreno sobre AutismMix Pony y las muestras se renderizaron con AutismMix Confetti; el linaje MOSS-Image se entreno sobre MOSS-Image. El autor insiste en no mezclar pesos, prompts ni negativos entre linajes. La evaluacion publicada incluye una ronda inicial sobre E1-E7 a fuerza 0.8 y una matriz sobre E5, E6 y E7 cruzada con diez escenas y cuatro fuerzas (0.4, 0.6, 0.8 y 1.0), de la que se concluye que E6 a 0.8 es la configuracion recomendada para el linaje principal.
 
 ## Capacidades
 
-- Generacion de imagenes de un personaje concreto (Mikan Hinatsuki) en estilo anime, sobre la base estilistica de Illustrious SDXL.
-- Control de identidad mediante la etiqueta de activacion `mikan_hinatsuki`.
-- Seleccion de conjunto de ropa mediante etiquetas especificas: `mikan_hinatsuki_magical_girl_form`, `mikan_hinatsuki_yellow_dress`, `mikan_hinatsuki_flower_blouse`, `mikan_hinatsuki_flower_print_dress`, `mikan_hinatsuki_green_tee`, `mikan_hinatsuki_orange_striped_top` y `mikan_hinatsuki_school_uniform`.
-- Retratos, planos de tres cuartos, perfil, cuerpo entero, poses sentadas y escenas con fondo simple o complejo (noche, calle).
-- Ajuste fino de la intensidad del LoRA entre 0.4 y 1.0, con 0.8 como valor recomendado.
-- Prompts bilingues en ingles y chino, segun los idiomas declarados.
-- Sin soporte de tool calling, agentes, vision, audio ni razonamiento multi-paso: es un modelo de difusion de imagen, no un LLM.
+- Generacion de imagenes de un personaje concreto (Mikan Hinatsuki) sobre modelos base SDXL/Illustrious, Pony y MOSS-Image.
+- Control de identidad mediante el token `mikan_hinatsuki`, con pelo largo, pelo rubio y ojos azules como rasgos por defecto en el linaje principal.
+- Control de vestuario mediante tokens especificos: `mikan_hinatsuki_magical_girl_form`, `mikan_hinatsuki_yellow_dress`, `mikan_hinatsuki_flower_blouse`, `mikan_hinatsuki_flower_print_dress`, `mikan_hinatsuki_green_tee`, `mikan_hinatsuki_orange_striped_top` y `mikan_hinatsuki_school_uniform`.
+- Ajuste de fuerza del adaptador entre 0.4 y 1.0 para modular la fidelidad al personaje frente a la libertad creativa del modelo base.
+- Compatibilidad con flujos de trabajo de ComfyUI y con la libreria diffusers.
+- Soporte de prompts en ingles y chino en la documentacion y en las captions.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es exclusivamente un modelo de imagen.
 
 ## Casos de uso
 
-- Generacion de ilustraciones de personaje para fan art y proyectos derivados: aplicar el LoRA sobre waiIllustriousSDXL en ComfyUI con Euler a, 28 pasos, CFG 4.5 y CLIP skip 2 a 832x1216 produce retratos estables del personaje sin necesidad de describir su apariencia.
-- Creacion de hojas de personaje y referencias visuales consistentes: combinando la etiqueta de identidad con cada una de las siete etiquetas de ropa se obtiene un conjunto coherente de vistas del mismo personaje para documentacion o diseño.
-- Prototipado de escenas narrativas: las pruebas publicadas sobre fondo simple, fondo nocturno y escena compleja permiten usar el LoRA para bocetar viñetas o keyframes de una historia corta.
-- Ilustracion de contenido para comunidades de fans: la licencia OpenRAIL-M permite uso comercial con restricciones, lo que habilita encargos o merchandising no oficial dentro de los limites de la licencia y de los derechos del personaje.
-- Experimentacion con tecnicas de entrenamiento de LoRA: el repositorio sirve como caso de estudio reproducible (rank 64, 79 pares, 7 epocas, evaluacion por rondas) para quien quiera replicar el flujo con otro personaje.
-- Integracion en pipelines de generacion por lotes: al ser safetensors compatible con diffusers, se puede cargar en scripts de Python para producir variaciones masivas de un mismo personaje con control de semilla y fuerza del LoRA.
+- Ilustracion de fan art del personaje: aplicar el LoRA a fuerza 0.8 sobre waiIllustriousSDXL v17 con el prompt de ejemplo del autor para obtener retratos y cuerpos completos coherentes con el diseno de Mikan Hinatsuki.
+- Generacion de variantes de vestuario: usar los tokens de vestuario entrenados (uniforme escolar, vestido amarillo, camiseta verde, blusa de flores) para producir un conjunto de imagenes consistentes del mismo personaje en distintos atuendos.
+- Creacion de material para comunidades de fanes: el LoRA permite generar paneles ilustrativos o portadas para ficcion y discusion en foros, con la salvedad de la licencia y de los derechos del personaje original.
+- Pruebas de pipelines de difusion: sirve como caso de estudio para evaluar como afecta la fuerza del adaptador (0.4 a 1.0) y la epoca elegida a la fidelidad del personaje en un flujo ComfyUI con Euler a, 28 pasos, CFG 4.5 y CLIP skip 2.
+- Comparacion entre linajes: al incluir pesos para tres bases distintas (Illustrious, Pony y MOSS-Image), permite medir diferencias de estilo y fidelidad entre familias de modelos SDXL con el mismo dataset.
+- Integracion en herramientas de generacion por lotes: al ser un safetensors de 456 MB por fichero, se puede cargar y descargar en pipelines automatizados de renderizado sin el coste de un modelo completo.
+- Referencia para entrenamiento de LoRAs de personaje: la documentacion de hiperparametros (rank 64, alpha 32, 7 epocas, 79 pares, 3 repeticiones) sirve como plantilla para quien entrene adaptadores similares.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos (FID, CLIP score, similitud facial) en la informacion disponible. La model card incluye unicamente una evaluacion cualitativa por rondas:
+No se han publicado resultados de benchmarks cuantitativos en la informacion disponible. La evaluacion del autor es cualitativa y se limita a comparaciones visuales entre epocas y fuerzas de aplicacion:
 
-| Ronda | Candidatos | Condiciones | Conclusion publicada |
-|---|---|---|---|
-| Ronda 1 | E1 a E7 | Fuerza 0.8 | Seleccion inicial de candidatos |
-| Ronda 3 | E5, E6, E7 | 10 escenas x 4 fuerzas (0.4, 0.6, 0.8, 1.0) | E6 recomendada a 0.8 |
+| Comparacion | Resultado observado | Decision |
+|---|---|---|
+| E5 a 0.8 | Pelo rubio largo y ojos azules usables; forma de chica magica a menudo presente | Alternativa |
+| E6 a 0.8 | Retrato estable: pelo rubio largo, ojos azules, forma de chica magica; silueta de Mikan consistente | Recomendada |
+| E7 a 0.8 | Muy proxima a E6 | Alternativa final |
 
-Segun el autor, E5 mantiene pelo rubio largo y ojos azules usables con forma de chica magica frecuente; E6 presenta retrato estable con silueta reconocible de Mikan; E7 queda muy proxima a E6 como alternativa final.
+No se proporcionan metricas como FID, CLIP score ni similitud facial.
 
 ## Requisitos de hardware
 
-- El LoRA en si ocupa 456.497.900 bytes por fichero (unos 435 MiB), por lo que solo es necesario cargar una epoca a la vez.
-- El requisito real lo marca el checkpoint base waiIllustriousSDXL v17, un SDXL completo: se recomienda una GPU con al menos 8-12 GB de VRAM en fp16, aunque no se dispone de cifras oficiales en la informacion proporcionada.
-- GPU de consumo: tarjetas tipo RTX 3060 12 GB, RTX 4070 o RTX 4090 deberian poder ejecutar SDXL con el LoRA; las cifras exactas no estan disponibles.
-- GPU profesionales: A100 o H100 no son necesarias para inferencia, pero aceleran el entrenamiento y la generacion por lotes.
-- Despliegue: ComfyUI es el entorno usado en la evaluacion oficial (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216). Tambien es compatible con diffusers en Python. No se documenta soporte en llama.cpp, Ollama, vLLM ni TGI, que no aplican a modelos de difusion.
-- Latencia y throughput: no disponibles.
+- El LoRA en si pesa 456.497.900 bytes por fichero (unos 456 MB), por lo que el requisito real de VRAM lo determina el modelo base SDXL sobre el que se aplica, no el adaptador.
+- Para SDXL en precision bf16 se requiere una GPU con al menos 8-10 GB de VRAM en configuraciones optimizadas; en fp32 el requisito es mayor. No se dispone de mediciones especificas para este LoRA en la informacion proporcionada.
+- GPU recomendadas: no disponible en la informacion; por la naturaleza del modelo base, cabria esperar RTX 3060/4060 Ti en adelante, pero el autor no publica requisitos.
+- Cabe en GPU de consumo si el modelo base SDXL cabe; el adaptador anade una sobrecarga marginal de memoria.
+- Opciones de despliegue: ComfyUI (flujo usado por el autor), diffusers y, presumiblemente, Automatic1111 u otros frontends compatibles con LoRA SDXL; no se documentan vLLM, llama.cpp, Ollama ni TGI porque no aplican a modelos de difusion.
+- Latencia y throughput: no disponibles. El autor documenta ajustes de muestreo (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216) pero no tiempos de generacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| MikanHinatsuki-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
-| LoRA de personaje generico sobre SDXL | LoRA de personaje | SDXL 1.0 | variable | no aplica | segun autor | Hugging Face / Civitai |
-| Checkpoint Illustrious completo | Checkpoint | SDXL | ~2.6B (UNet SDXL, no confirmado para esta variante) | no aplica | segun autor | Hugging Face / Civitai |
+No se dispone de informacion sobre otros LoRAs de personaje comparables en la documentacion proporcionada. La comparacion interna entre linajes del propio repositorio es la siguiente:
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas concretas; la comparativa anterior es estructural y no de rendimiento.
+| Linaje | Modelo base | Carpeta | Epoca recomendada | Fuerza recomendada | Tokens de identidad |
+|---|---|---|---|---|---|
+| Principal | waiIllustriousSDXL v17 | raiz | E6 | 0.8 | `mikan_hinatsuki` |
+| AutismMix Pony | AutismMix Pony | `autism_pony/` | E6 | 1.0 | `mikan_hinatsuki` |
+| MOSS-Image | MOSS-Image | `moss/` | no disponible | no disponible | no disponible |
+
+No se conocen modelos alternativos de terceros para el mismo personaje en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos de Mikan Hinatsuki y de *The Demon Girl Next Door* pertenecen a sus titulares; el autor declara explicitamente que es fan-made.
-- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibicion de usos daninos descritos en la licencia); conviene revisar el texto completo antes de producción.
-- Riesgo de sobreajuste a las siete ropas del dataset: prendas no vistas pueden generar resultados inconsistentes.
-- La model card advierte que las leyendas omiten a menudo color de pelo y ojos, por lo que es necesario anadir `long hair, blonde hair, blue eyes` en el prompt para evitar derivas.
-- Sesgos: al entrenarse sobre un unico personaje y un dataset pequeno (79 pares), puede reproducir sesgos estilisticos del checkpoint base y del dataset, incluyendo sesgos de representacion propios de Illustrious.
-- Alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta (manos, extremidades) y detalles incoherentes, especialmente en escenas complejas.
-- Limitaciones de idioma: solo se declaran ingles y chino para prompts; no hay garantia de buen comportamiento con prompts en castellano.
-- Contexto: no aplica longitud de contexto, pero si resolucion; el autor valida 832x1216 sin hires ni ADetailer, y no documenta comportamiento a otras resoluciones.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni validacion externa independiente.
+- Es un LoRA de personaje no oficial: los derechos sobre Mikan Hinatsuki y la obra original pertenecen a sus titulares; el autor lo declara como derivado hecho por fanes.
+- La licencia CreativeML OpenRAIL-M impone restricciones de uso (prohibicion de usos daninos descritos en la licencia) y conviene revisarla antes de cualquier uso comercial.
+- Los tres linajes no son intercambiables: mezclar pesos, prompts o negativos entre waiIllustrious, AutismMix Pony y MOSS-Image produce resultados incorrectos segun el autor.
+- El dataset es pequeno (79 pares, 7 vestuarios), lo que limita la variedad de poses y expresiones y aumenta el riesgo de sobreajuste a las composiciones del conjunto de entrenamiento.
+- Las captions omiten con frecuencia el color de pelo y ojos, por lo que es necesario anadirlos en el prompt para evitar derivas de identidad.
+- No hay datos publicados sobre sesgos, tasas de alucinacion visual ni evaluaciones cuantitativas de fidelidad.
+- El modelo solo genera imagenes; no procesa texto, audio ni codigo, y no admite tool calling ni razonamiento.
+- El repositorio ocupa 7,9 GB por la acumulacion de tres linajes y multiples epocas; conviene descargar solo el fichero necesario.
+- La fecha de creacion indicada (2026-11-04) es futura respecto a la mayoria de referencias habituales; conviene verificar la vigencia del repositorio antes de usarlo en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/abbuibuibui/MikanHinatsuki-Lora
-- ModelScope: https://www.modelscope.cn/models/abbuibuibui/MikanHinatsuki-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MikanHinatsuki-Dataset
-- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio de Hugging Face)
-- README en chino: `./README_zh.md` (dentro del repositorio de Hugging Face)
+- ModelScope: https://www.modelscope.cn/models/abbuibuibui/MikanHinatsuki-Lora
+- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
+- README en chino: `README_zh.md` (dentro del repositorio)

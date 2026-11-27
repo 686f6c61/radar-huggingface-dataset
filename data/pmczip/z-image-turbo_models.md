@@ -2,97 +2,85 @@
 
 ## Resumen
 
-Z-Image-Turbo_Models es un repositorio de adaptadores LoRA publicado por el usuario pmczip sobre el modelo base de generación de imágenes Tongyi-MAI/Z-Image-Turbo (familia ZiT). No se trata de un modelo completo, sino de un conjunto de pesos adicionales en formato safetensors que se cargan junto al modelo base mediante la librería diffusers para condicionar la generación text-to-image hacia retratos fotorrealistas.
+Z-Image-Turbo_Models es una colección de adaptadores LoRA publicada por el usuario pmczip sobre el modelo base de difusión Tongyi-MAI/Z-Image-Turbo. No se trata de un modelo fundacional nuevo, sino de un conjunto de pesos LoRA (formato safetensors, librería diffusers) orientados a texto-a-imagen (t2i) con estética fotorrealista y especializados en la generación de retratos de mujeres con rasgos faciales consistentes. El repositorio ocupa 14,3 GB y acumula 3915 descargas y 13 likes desde su creación en enero de 2026.
 
-El propósito declarado del repositorio, según sus etiquetas y los ejemplos de la model card, es reproducir el parecido (likeness) de mujeres identificables, en su mayoría figuras públicas, mediante tokens de activación ofuscados en leetspeak (por ejemplo `4j133`, `britn3y5p34r5`, `chri5tin4ch0n6`). Los prompts de ejemplo combinan ese token con una descripción de rasgos físicos y una escena rural fija, lo que indica un entrenamiento muy acotado a un tipo de encuadre y estilo concretos.
+El problema que aborda es el de la consistencia de identidad en generación de imágenes: los LoRA permiten fijar un rostro concreto mediante un token textual corto (por ejemplo, cadenas ofuscadas como "4j133" o "britn3y5p34r5") y reutilizarlo en distintas composiciones, escenas e iluminaciones. Los ejemplos de la model card muestran prompts con atributos controlados (color de pelo, color de ojos, prendas como cazadora vaquera y jersey de cuello alto, localización en un rancho, luz de mañana) que se mantienen estables entre generaciones.
 
-El repositorio acumula 4.524 descargas y 12 likes, tiene un tamaño de 13,8 GB y se distribuye bajo una licencia propia ("bespoke-lora-trained-license") enlazada a los términos de Civitai. Su relevancia práctica es doble: por un lado ilustra el estado del arte en personalización de modelos de difusión mediante LoRA; por otro, plantea problemas serios de derechos de imagen, consentimiento y cumplimiento normativo que cualquier equipo debe evaluar antes de usarlo.
+Es relevante ahora porque Z-Image-Turbo es una de las bases de difusión rápida más utilizadas en 2026 para generación de imágenes en pocos pasos, y la comunidad está produciendo adaptadores LoRA que amplían sus capacidades sin necesidad de reentrenar el modelo completo. La licencia, sin embargo, es una licencia personalizada (bespoke-lora-trained-license) que condiciona seriamente el uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre un modelo de difusión text-to-image (modelo base: Tongyi-MAI/Z-Image-Turbo). Arquitectura interna del adaptador no disponible |
-| Parametros totales | No disponible (el repositorio no publica el número de parámetros del adaptador ni del modelo base) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica en el sentido de contexto de texto; la longitud de prompt útil depende del codificador de texto del modelo base, no disponible |
-| Tipos de cuantizacion | No disponible. Los pesos se distribuyen en safetensors; la cuantización aplicable depende del modelo base y del runtime |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre modelo de difusión Tongyi-MAI/Z-Image-Turbo |
+| Parametros totales | no disponible (el repo ocupa 14,3 GB; el número de parámetros del LoRA no se especifica) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de imagen; la longitud de prompt efectiva depende del codificador de texto del modelo base, no disponible) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (inglés) |
-| Licencia | other — bespoke-lora-trained-license (enlace a https://multimodal.art/civitai-licenses) |
-| Formato de pesos | safetensors (adaptador LoRA), librería diffusers |
-| Pipeline declarado | text-to-image |
-| Modelo base | Tongyi-MAI/Z-Image-Turbo |
-| Tamaño del repositorio | 13,8 GB |
-| Descargas / likes | 4.524 / 12 |
-| Fecha de creación / última actualización | 2026-01-06 / 2026-09-16 |
+| Licencia | bespoke-lora-trained-license (licencia personalizada basada en los términos de Civitai) |
+| Formato de pesos | safetensors (compatible con diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene un adaptador LoRA, una técnica de ajuste eficiente que congela los pesos del modelo base e inyecta matrices de bajo rango en capas concretas del modelo de difusión. Por tanto, la arquitectura efectiva es la del modelo base Tongyi-MAI/Z-Image-Turbo (difusión text-to-image, familia ZiT, etiquetada en el repositorio como `z-image_turbo` y `ZiT`), más las capas LoRA añadidas. El autor no documenta en la información disponible ni el rango del adaptador, ni las capas objetivo, ni el número de pasos de entrenamiento, ni el dataset utilizado.
+El artefacto es un conjunto de adaptadores LoRA que se cargan sobre el modelo base de difusión Z-Image-Turbo de Tongyi-MAI. Los LoRA introducen matrices de bajo rango en las capas del modelo base, de modo que el modelo congelado conserva su conocimiento general y los adaptadores aportan la especialización (en este caso, identidades faciales concretas y una estética fotorrealista de retrato). La arquitectura subyacente del modelo base es un modelo de difusión texto-a-imagen; los detalles concretos de su arquitectura (tipo de UNet, transformer de difusión o híbrido, número de parámetros, codificador de texto) no se especifican en la información proporcionada.
 
-Lo que sí puede inferirse de la model card es el patrón de entrenamiento: cada token de activación (una cadena alfanumérica que imita un nombre escrito en leetspeak) se asocia a un conjunto fijo de atributos —color de pelo, color de ojos, chaqueta vaquera, jersey de cuello alto negro, vaqueros, exteriores en un rancho, mañana, luz brillante—. Ese sesgo de captura indica un dataset de entrenamiento muy homogéneo en composición, pose y vestuario, lo que explica que el adaptador funcione bien en ese registro concreto y probablemente degrade fuera de él. No hay información sobre regularización, uso de captions automáticos, ni sobre si se aplicaron técnicas de mitigación de sesgo o filtrado de identidad.
+No se dispone de datos sobre el conjunto de entrenamiento: número de imágenes, resolución, número de pasos, learning rate, técnica de captions o si se emplearon métodos de regularización. La model card únicamente documenta el uso mediante prompts con tokens de identidad ofuscados y una plantilla de atributos (pelo, ojos, ropa, escena, iluminación). No se menciona ningún proceso de RLHF, DPO ni ajuste por preferencias, algo que no aplica a modelos de difusión en el sentido habitual.
 
 ## Capacidades
 
-- Generación de imágenes fotorrealistas de retratos femeninos condicionada por un token de identidad específico.
-- Activación de identidades concretas mediante tokens ofuscados en leetspeak, presumiblemente para dificultar la moderación automática de contenido y el filtrado por nombre.
-- Control de atributos secundarios por prompt: color y tipo de pelo, color de ojos, vestuario (chaqueta vaquera, jersey de cuello alto, vaqueros) y entorno (exteriores, rancho, luz de mañana).
-- Integración con el ecosistema diffusers del modelo base (carga de pesos safetensors en pipelines text-to-image).
-- Compatibilidad esperable con otras interfaces que aceptan LoRA en safetensors, aunque no está documentada en el repositorio.
-- No dispone de tool calling, function calling, razonamiento multi-paso, capacidades de agente, visión de entrada ni audio: es un generador de imágenes, no un modelo multimodal conversacional.
-- Multilingüismo: limitado a inglés (`en`) según la metadata del repositorio.
+- Generación de imágenes texto-a-imagen (t2i) con estética fotorrealista.
+- Reproducción de identidades faciales consistentes mediante tokens de activación cortos y ofuscados.
+- Control de atributos del retrato a través del prompt: color y estilo de pelo, color de ojos, prendas de vestir, expresión (labios), localización y condiciones de luz.
+- Compatibilidad con el ecosistema diffusers y con el modelo base Z-Image-Turbo, lo que permite combinarlo con otros LoRA y con las herramientas estándar de muestreo.
+- Soporte de prompts en inglés; no se documenta soporte multilingüe.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión inversa, audio ni modo "thinking", por tratarse de un modelo generativo de imagen.
 
 ## Casos de uso
 
-- Investigación sobre personalización de modelos de difusión: el adaptador sirve como caso de estudio de hasta qué punto un LoRA de bajo rango puede memorizar una identidad concreta a partir de un dataset pequeño, útil para trabajos académicos sobre memorización y privacidad en modelos generativos.
-- Auditoría de sistemas de moderación: los tokens en leetspeak y la temática de las imágenes permiten probar si los filtros de seguridad de plataformas y APIs de generación detectan correctamente contenido de parecido a personas reales sin consentimiento documentado.
-- Evaluación de riesgo de deepfakes: reproduce condiciones realistas para medir la eficacia de clasificadores de imágenes sintéticas y de detección de identidades suplantadas, con fines defensivos.
-- Producción de contenido con consentimiento explícito: si se dispone de autorización por escrito de la persona representada, el adaptador puede emplearse para generar material promocional o editorial consistente en un estilo fotográfico concreto.
-- Comparación de pipelines de inferencia: al ser un LoRA safetensors sobre un modelo de difusión, permite medir el coste adicional (VRAM y latencia) de cargar adaptadores en pipelines de producción frente a ejecutar el modelo base sin adaptar.
-- Docencia sobre ética y legislación de IA: el repositorio es un ejemplo didáctico de las tensiones entre licencias "abiertas", derechos de imagen y uso comercial de modelos generativos.
-- Benchmarking interno de control de prompt: útil para comprobar cómo de robusto es un adaptador cuando se varían atributos fuera de la distribución de entrenamiento (otras poses, interiores, vestuario distinto).
+- Creación de personajes consistentes para narrativa visual: usar un token de identidad fijo junto con variaciones de escena e iluminación para ilustrar cómics, storyboards o novelas gráficas manteniendo el mismo rostro entre viñetas.
+- Pruebas de vestuario y estilismo virtual: fijar una identidad y variar prendas (cazadora vaquera, jersey de cuello alto, vaqueros) para previsualizar combinaciones antes de una sesión de fotografía real.
+- Generación de material para prototipos de aplicaciones: crear avatares fotorrealistas y coherentes para maquetas de apps sociales, perfiles o demos de producto.
+- Exploración de iluminación y localizaciones: el mismo sujeto en un rancho con luz de mañana frente a otros escenarios, útil para directores de arte que comparan opciones rápidamente.
+- Investigación sobre sesgos y representación: al permitir control fino de atributos físicos, sirve para estudiar cómo el modelo base representa distintos fenotipos y cómo los LoRA de identidad afectan a la diversidad de salidas.
+- Pruebas de robustez de pipelines t2i: integrar el LoRA en un pipeline diffusers para evaluar latencia, estabilidad de identidad y sensibilidad al prompt antes de desplegar un sistema de generación de retratos.
+- Docencia y demostraciones técnicas: ilustrar en talleres cómo funciona un LoRA de identidad y cómo se construyen tokens de activación ofuscados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas cuantitativas (FID, CLIP score, similitud facial, precisión de identidad) ni comparaciones numéricas con otros adaptadores.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible de forma específica. El consumo lo determina el modelo base Z-Image-Turbo, no el adaptador; hay que sumar a la VRAM del base el espacio de los pesos LoRA cargados en memoria.
-- Tamaño del repositorio: 13,8 GB en disco, lo que sugiere que el paquete agrupa varios adaptadores o versiones y no un único LoRA pequeño. Conviene revisar el árbol de ficheros antes de descargarlo completo.
-- GPU recomendadas: no disponible en la información proporcionada. La idoneidad de A100, H100, RTX 4090 o RTX 3090 depende del modelo base y del runtime escogido, que el repositorio no documenta.
-- Compatibilidad con GPU de consumo: no confirmada. Los modelos de difusión text-to-image de última generación suelen ejecutarse en GPU de consumo con cuantización agresiva, pero no hay datos verificables para este caso concreto.
-- Opciones de despliegue: las etiquetas del repositorio indican diffusers como librería principal. Cualquier otro runtime (ComfyUI, interfaces de nodos, servidores de inferencia) es una posibilidad razonable al tratarse de safetensors LoRA, pero no está documentado ni garantizado por el autor.
-- Latencia y throughput: no disponibles. No se publican tiempos de inferencia, número de pasos de muestreo ni comparativas de velocidad.
+- VRAM estimada para inferencia: no disponible de forma específica; depende del modelo base Z-Image-Turbo y de la precisión de carga (fp16, bf16, fp8). El repo de 14,3 GB sugiere que la carga completa en fp16 requiere del orden de 14-16 GB de VRAM solo para los pesos, más el overhead del pipeline.
+- GPU recomendadas: no disponibles en la información proporcionada. Por el tamaño del repo, se necesitan GPU con al menos 16-24 GB de VRAM para una carga cómoda; GPU de 8-12 GB probablemente requieran cuantización u offloading.
+- ¿Cabe en GPU de consumo? No confirmado. Tarjetas como RTX 4090 (24 GB) o RTX 3090 (24 GB) serían las candidatas más probables; GPU de 8 GB requerirían cuantización y offloading, sin garantía de funcionamiento fluido.
+- Opciones de despliegue: diffusers (librería declarada), con posibilidad de integración en ComfyUI y otras interfaces basadas en diffusers; no se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión.
+- Latencia y throughput: no disponibles. Z-Image-Turbo está diseñado para generación en pocos pasos, pero no se aportan cifras concretas de tiempo por imagen ni de imágenes por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto / prompt | Licencia | Disponibilidad | Rendimiento |
-|---|---|---|---|---|---|---|
-| pmczip/Z-Image-Turbo_Models | Adaptador LoRA de parecido sobre Z-Image-Turbo | No disponible | No disponible (depende del base) | bespoke-lora-trained-license (Civitai) | Hugging Face, diffusers | No disponible |
-| Tongyi-MAI/Z-Image-Turbo (modelo base) | Modelo de difusión text-to-image completo | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
-| Adaptadores LoRA de identidad públicos en Civitai/HuggingFace | Adaptadores LoRA de retrato | Variable | No aplica | Habitualmente licencias Civitai con restricciones comerciales | Amplia | No comparable sin métricas homogéneas |
-| Modelos de retrato con licencia comercial (p. ej. suites de estudio) | Modelos cerrados con gestión de derechos | No disponible | No disponible | Comercial, con consentimiento del retratado | APIs de pago | No disponible |
+| Modelo | Tipo | Base | Contexto/idioma | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Z-Image-Turbo_Models (pmczip) | LoRA de identidad t2i | Tongyi-MAI/Z-Image-Turbo | en | bespoke-lora-trained-license | Hugging Face, 3915 descargas |
+| Tongyi-MAI/Z-Image-Turbo | Modelo base de difusión t2i | — | no disponible | no disponible en la información | Hugging Face |
+| LoRA de identidad sobre Flux / SDXL | LoRA de identidad t2i | Flux, SDXL | en (habitual) | variable según autor | Hugging Face, Civitai |
 
-No se dispone de datos numéricos que permitan una comparación cuantitativa fiable con alternativas concretas.
+La comparación cuantitativa con alternativas no está disponible: no se aportan parámetros, contexto ni métricas de rendimiento del modelo base ni de otros LoRA. La diferencia principal frente a adaptadores genéricos es la especialización en retratos fotorrealistas de mujeres con tokens de identidad ofuscados y la dependencia explícita del modelo base Z-Image-Turbo.
 
 ## Limitaciones y advertencias
 
-- Riesgo legal alto: el adaptador está entrenado para reproducir el parecido de personas reales identificables, en su mayoría celebridades. La generación y difusión de estas imágenes puede infringir derechos de imagen, de personalidad y normativa de protección de datos en función de la jurisdicción.
-- Consentimiento: no hay ninguna evidencia en el repositorio de que las personas representadas hayan autorizado el entrenamiento ni el uso del adaptador.
-- Ofuscación deliberada de tokens: los nombres se codifican en leetspeak, lo que dificulta la detección automática del sujeto representado y complica las labores de moderación.
-- Licencia restrictiva: la licencia `other` con nombre "bespoke-lora-trained-license" remite a los términos de Civitai, que suelen limitar el uso comercial y la redistribución. Es imprescindible leerlos antes de cualquier despliegue en producción; no se puede asumir uso comercial libre.
-- Sesgo de dominio evidente: los ejemplos de entrenamiento comparten vestuario, pose, localización y franja horaria. Se espera un deterioro notable de la calidad fuera de ese registro.
-- Sesgo demográfico: todos los tokens documentados corresponden a mujeres, mayoritariamente con rasgos y peinados occidentales. No hay garantía de diversidad ni de equidad en la representación.
-- Alucinación visual: como todo modelo de difusión, puede producir anatomías incorrectas, artefactos en manos y ojos, y atributos inconsistentes entre generaciones.
-- Idioma: solo inglés. Los prompts en castellano pueden degradar la calidad del resultado, ya que el codificador de texto del modelo base no está documentado para otros idiomas en este repositorio.
-- Trazabilidad: al ser un adaptador sobre un modelo base de terceros, los resultados dependen de la versión del base; los cambios en Z-Image-Turbo pueden romper la compatibilidad.
-- Repositorio no auditado: no hay información sobre el dataset de entrenamiento, los procesos de filtrado, ni sobre si contiene material con derechos de autor o contenido no consentido.
-- Uso responsable: no debe emplearse para suplantación de identidad, contenido sexual no consentido, desinformación o acoso.
+- Sesgos conocidos: no documentados por el autor. Al especializarse en retratos de mujeres con atributos físicos concretos, puede heredar y amplificar sesgos de representación del modelo base y del dataset de entrenamiento del LoRA.
+- Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir anatomía incorrecta, manos deformadas, artefactos en texto y detalles incoherentes, especialmente fuera de la composición de retrato para la que fue entrenado.
+- Limitaciones de idioma: solo se declara inglés; los prompts en castellano pueden degradar la fidelidad de los atributos.
+- Restricciones de licencia: la bespoke-lora-trained-license (vinculada a los términos de Civitai) impone condiciones específicas sobre uso comercial, redistribución y obra derivada. Es imprescindible revisar el enlace de licencia antes de cualquier despliegue en producción.
+- Riesgo legal y ético por likeness: los tokens de identidad parecen corresponder a personas reales (celebridades). Generar imágenes de personas identificables sin consentimiento puede infringir derechos de imagen y normativa aplicable en la UE y España.
+- Dependencia del modelo base: el LoRA no funciona de forma autónoma; requiere cargar Tongyi-MAI/Z-Image-Turbo, cuyas condiciones de uso también aplican.
+- Falta de documentación técnica: no se detallan hiperparámetros de entrenamiento, composición del dataset ni métricas, lo que dificulta evaluar su robustez y reproducibilidad.
+- Mantenimiento incierto: el repositorio se actualizó por última vez en noviembre de 2026 y no se documenta un plan de soporte.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/pmczip/Z-Image-Turbo_Models
+- Hugging Face: https://huggingface.co/pmczip/Z-Image-Turbo_Models
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Licencia referenciada: https://multimodal.art/civitai-licenses
-- Resultados de búsqueda web: las consultas no devolvieron ninguna página relacionada con este modelo, su autor o su modelo base; los resultados obtenidos eran páginas en chino sobre ortografía francesa, un videojuego, el símbolo de virgulilla, ficheros .DS_Store y conversión de unidades de almacenamiento. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.
+- Licencia: https://multimodal.art/civitai-licenses

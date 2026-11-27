@@ -2,105 +2,96 @@
 
 ## Resumen
 
-MiniMax-H3-ClipProj-GGUF es un conjunto de matrices de proyección que permiten sustituir el codificador de texto Qwen3-VL-32B por variantes más pequeñas (Qwen3-VL-2B, 4B u 8B) en toda la familia MiniMax-H3. Lo publica romara-labs como conversión GGUF del proyecto original NicoLab28/ClipProj-MiniMax-H3, con el objetivo de reducir drásticamente los requisitos de memoria y cómputo del pipeline de generación de vídeo e imagen de MiniMax-H3 sin reentrenar el modelo de difusión.
+MiniMax-H3-ClipProj-GGUF es un conjunto de matrices de proyección en formato GGUF publicadas por romara-labs que permiten sustituir el codificador de texto Qwen3-VL-32B por variantes más pequeñas (Qwen3-VL-8B, 4B o 2B) en el pipeline de generación de MiniMax-H3. El modelo base original es NicoLab28/ClipProj-MiniMax-H3, del que esta publicación es una conversión directa a GGUF sin cuantización adicional. No se trata de un modelo generativo autónomo: es un componente auxiliar que alinea el espacio de embeddings de un codificador de texto reducido con la condicion textual de 5.120 dimensiones que esperan los modelos de difusión de la familia MiniMax-H3.
 
-El componente clave es que MiniMax-H3, MiniMax-H3-Image y P-H3-Image comparten una condicionamiento de texto de 5.120 dimensiones, de modo que una única matriz de proyección sirve para los tres modelos. El repositorio contiene seis ficheros GGUF (variantes Ridge y MLP para encoders de 4B y 8B, más dos variantes legacy para 2B) y ocupa 1,5 GB. No es un modelo generativo autónomo: requiere el modelo de difusión, el codificador de texto compatible y los VAE correspondientes, que no se incluyen.
+La relevancia de esta pieza es práctica: MiniMax-H3, MiniMax-H3-Image y P-H3-Image comparten la misma dimensión de condicionamiento textual, por lo que una única matriz de proyección sirve para los tres pipelines. Esto permite ejecutar generación de vídeo e imagen con encoders de 2B a 8B en lugar del encoder de 32B original, reduciendo drásticamente los requisitos de VRAM y haciendo viable el despliegue en hardware de consumo.
 
-La relevancia inmediata es práctica: permite ejecutar MiniMax-H3 en entornos con menos VRAM usando stable-diffusion.cpp (fork de Romara Labs), a costa de validar empíricamente la calidad, ya que las matrices se calibraron sobre prompts de vídeo y la calidad en texto-a-imagen no está sistemáticamente validada.
+El repositorio incluye seis ficheros GGUF organizados por tamaño de encoder (2B, 4B, 8B) y por tipo de proyección (Ridge o MLP). La serie v3.1 cubre los encoders de 4B y 8B, mientras que los ficheros de 2B corresponden a la serie legacy v1, cuya compatibilidad en tiempo de ejecución no ha sido verificada por el autor. El modelo cuenta con 127.967.232 parámetros en sus pesos safetensors de referencia y un tamaño de repositorio de 1,5 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Matrices de proyección lineal sobre embeddings de texto (variantes Ridge y MLP); arquitectura GGUF personalizada `clipproj`, no un modelo `llama.cpp` estándar |
-| Parametros totales | 127.967.232 (según safetensors del repo) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | no disponible (depende del codificador Qwen3-VL emparejado) |
-| Tipos de cuantizacion | Conversión GGUF sin cuantización adicional (preserva precisión de tensores); variantes Ridge y MLP |
-| Idiomas soportados | no disponibles (heredados del codificador Qwen3-VL y del modelo MiniMax-H3) |
-| Licencia | MiniMax H3 Community License Agreement (`license: other`) |
-| Formato de pesos | GGUF (ficheros `mmh3-*-ClipProj-*.gguf`) |
-
-Ficheros incluidos:
-
-| Fichero | Codificador compatible | Proyección |
-|---|---|---|
-| `mmh3-4b-ClipProj-v3.1.gguf` | Qwen3-VL-4B | Ridge |
-| `mmh3-4b-ClipProj-v3.1-mlp.gguf` | Qwen3-VL-4B | MLP |
-| `mmh3-8b-ClipProj-v3.1.gguf` | Qwen3-VL-8B | Ridge |
-| `mmh3-8b-ClipProj-v3.1-mlp.gguf` | Qwen3-VL-8B | MLP |
-| `mmh3-2b-ClipProj-v1.gguf` | Qwen3-VL-2B | Legacy v1 |
-| `mmh3-2b-ClipProj-v1-mlp.gguf` | Qwen3-VL-2B | Legacy v1, MLP |
+| Arquitectura | Matriz de proyección lineal (Ridge) o perceptrón multicapa (MLP) sobre embeddings de Qwen3-VL; arquitectura GGUF personalizada `clipproj` |
+| Parametros totales | 127.967.232 |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | no disponible (depende del encoder Qwen3-VL asociado) |
+| Tipos de cuantizacion | Conversión a GGUF que preserva la precisión de los tensores; no se añade cuantización |
+| Idiomas soportados | no disponible |
+| Licencia | MiniMax H3 Community License Agreement |
+| Formato de pesos | GGUF (arquitectura `clipproj`); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un transformer generativo, sino de un adaptador de proyección que transforma los embeddings de salida de un codificador Qwen3-VL pequeño (2B, 4B u 8B) al espacio de condicionamiento de 5.120 dimensiones que espera MiniMax-H3. Se ofrecen dos familias: proyección Ridge (lineal regularizada) y proyección MLP (perceptrón multicapa, ficheros de mayor tamaño). La serie v3.1 corresponde a los pesos de NicoLab28/ClipProj-MiniMax-H3 convertidos a GGUF preservando la precisión de los tensores, sin cuantización adicional.
+El componente es una proyección que transforma los embeddings de salida de un codificador Qwen3-VL de menor tamaño (2B, 4B u 8B) al espacio de condicionamiento textual de 5.120 dimensiones que consumen los modelos de difusión de MiniMax-H3. Se ofrecen dos variantes por tamaño de encoder: una proyección Ridge, de menor tamaño en disco, y una proyección MLP, de mayor tamaño. La serie v3.1 (4B y 8B) es la recomendada; los ficheros de 2B pertenecen a la serie legacy v1 y su revisión de origen exacta no pudo confirmarse.
 
-Las matrices se calibraron sobre prompts de vídeo. No hay información disponible sobre el volumen de datos de calibración, la composición del dataset ni si intervinieron procesos de RLHF o DPO, ya que no se trata de un modelo entrenado por refuerzo sino de un ajuste de proyección supervisado sobre pares de embeddings. Los ficheros legacy v1 para 2B son anteriores a la serie v3.1 y su revisión exacta de origen no pudo confirmarse según la model card.
+Las matrices fueron calibradas sobre prompts de vídeo. Según la model card, no se ha realizado una validación sistemática de la calidad en generación de imagen a partir de texto, y los flujos con imagen o vídeo de referencia no han sido validados. La conversión a GGUF preserva la precisión de los tensores originales del repositorio NicoLab28/ClipProj-MiniMax-H3 y no introduce cuantización adicional. No se dispone de información sobre el volumen de datos de calibración, la composición del dataset ni el uso de técnicas de ajuste como RLHF o DPO.
 
 ## Capacidades
 
-- Traducción del espacio de embeddings de Qwen3-VL-2B/4B/8B al condicionamiento de 5.120 dimensiones de MiniMax-H3.
-- Compatibilidad con MiniMax-H3 (vídeo), MiniMax-H3-Image y P-H3-Image con una única matriz por tamaño de codificador.
-- Variantes Ridge (menor tamaño) y MLP (mayor capacidad de ajuste no lineal).
-- Integración con el fork de stable-diffusion.cpp de Romara Labs mediante los flags `--llm`, `--cliproj` y `--llm_vision`.
-- Prioridad de `--cliproj` sobre el conector de texto de P-H3-Image cuando ambos están presentes.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-step: no es un modelo de lenguaje.
-- No dispone de modo thinking, visión ni audio propios; la visión depende del vision tower del codificador emparejado.
-- Capacidades multilingües: no disponibles de forma explícita, dependen del codificador Qwen3-VL subyacente.
+- Proyección de embeddings de texto de Qwen3-VL-8B, Qwen3-VL-4B y Qwen3-VL-2B al espacio de condicionamiento de 5.120 dimensiones de MiniMax-H3.
+- Compatibilidad con los tres pipelines de la familia: MiniMax-H3 (vídeo), MiniMax-H3-Image y P-H3-Image.
+- Sustitución del encoder Qwen3-VL-32B por encoders de menor tamaño, con la consiguiente reducción de memoria y cómputo.
+- Dos variantes de proyección por encoder: Ridge y MLP.
+- Integración con el fork de stable-diffusion.cpp de Romara Labs mediante los flags `--llm` y `--cliproj`.
+- En P-H3-Image, `--cliproj` tiene precedencia sobre el conector de texto nativo de P-H3 cuando ambos están presentes.
+- Soporte de torre de visión separada mediante el flag `--llm_vision` si el encoder la almacena por separado.
+- No es un modelo autónomo: no genera texto, código ni respuestas; no soporta tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Generación de vídeo en GPU de gama media: sustituir el codificador Qwen3-VL-32B por Qwen3-VL-4B más `mmh3-4b-ClipProj-v3.1.gguf` reduce la huella de memoria del pipeline y permite ejecutar MiniMax-H3 en hardware con menos VRAM.
-- Texto-a-imagen con MiniMax-H3-Image: usar la misma matriz de proyección para el pipeline de imagen, asumiendo que la calidad no está sistemáticamente validada y requiere evaluación propia.
-- Experimentación con P-H3-Image: aprovechar la precedencia de `--cliproj` sobre el conector de texto nativo para probar codificadores alternativos sin modificar el grafo del modelo.
-- Despliegue en entornos con CPU o GPU integrada: al ser GGUF y ejecutarse vía stable-diffusion.cpp, permite prototipado en máquinas sin aceleradores de datacenter.
-- Investigación sobre compresión de codificadores de texto: comparar Ridge frente a MLP y 2B frente a 4B/8B para medir la degradación de fidelidad en la condicionamiento.
-- Evaluación comparativa de encoders: mantener varias matrices en disco (1,5 GB total) y alternar codificadores según presupuesto de latencia en pipelines de generación por lotes.
-- Reproducibilidad de investigación: partir de los pesos originales de NicoLab28 y verificar la conversión GGUF sin pérdida de precisión de tensores.
+- Generación de vídeo con MiniMax-H3 en hardware limitado: al sustituir el encoder de 32B por el de 4B u 8B, el pipeline completo cabe en GPUs con menos VRAM, lo que permite prototipar generación de vídeo en estaciones de trabajo de gama alta consumer.
+- Generación de imagen con MiniMax-H3-Image: la misma matriz de proyección sirve para el pipeline de imagen, de modo que un único despliegue cubre vídeo e imagen sin duplicar el encoder de texto.
+- Despliegue con P-H3-Image: el flag `--cliproj` permite usar el encoder reducido en lugar del conector de texto nativo de P-H3, simplificando la pila de inferencia a un solo encoder Qwen3-VL.
+- Experimentación e investigación sobre destilación de encoders: el componente permite comparar la calidad de salida con encoders de 2B, 4B y 8B sobre el mismo modelo de difusión, aislando el efecto del tamaño del encoder.
+- Reducción de costes en inferencia por lotes: al emplear un encoder de 4B en lugar de 32B, el coste de codificación de prompts en pipelines de generación masiva de vídeo o imagen disminuye de forma proporcional al tamaño del encoder.
+- Integración en herramientas de línea de comandos basadas en stable-diffusion.cpp: el fork de Romara Labs permite incorporar la proyección en scripts de generación existentes añadiendo únicamente dos flags a los comandos de MiniMax-H3.
+- Evaluación comparativa Ridge frente a MLP: los ficheros `-mlp` permiten medir la diferencia de calidad y de tamaño en disco entre ambas variantes de proyección para un mismo encoder.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; depende del codificador emparejado (Qwen3-VL-2B/4B/8B), del modelo de difusión MiniMax-H3 y de los VAE, ninguno incluido en este repo.
-- GPU recomendadas: no disponible. El repo no documenta perfiles de hardware objetivo.
-- Compatibilidad con GPU de consumo: plausible al usar codificadores de 2B/4B/8B en GGUF, pero sin datos de VRAM publicados por el autor.
-- Opciones de despliegue: fork de Romara Labs de stable-diffusion.cpp (instrucciones de compilación con patch en `github.com/romara-labs/stable-diffusion.cpp/tree/master/patch`). No es compatible con `llama.cpp` estándar por la arquitectura GGUF personalizada `clipproj`.
-- Flags de ejecución: `--llm /ruta/qwen3-vl-4b.gguf --cliproj /ruta/mmh3-4b-ClipProj-v3.1.gguf`, y `--llm_vision` si el vision tower se almacena por separado.
+- VRAM estimada para la proyección: no disponible de forma aislada; el componente añade una matriz de 127.967.232 parámetros, con variantes Ridge (menor) y MLP (mayor). El repositorio completo ocupa 1,5 GB.
+- La VRAM total del pipeline depende del encoder Qwen3-VL elegido (2B, 4B u 8B), del modelo de difusión MiniMax-H3 y de los VAE, ninguno de los cuales se incluye en este repositorio.
+- GPU recomendadas: no disponibles en la información proporcionada. La reducción del encoder de 32B a 4B u 8B está orientada a disminuir los requisitos frente al pipeline original.
+- Encoders compatibles: Qwen3-VL-8B-Instruct, Qwen3-VL-4B-Instruct y Qwen3-VL-2B-Instruct.
+- Opciones de despliegue: fork de Romara Labs de stable-diffusion.cpp, compilado con las instrucciones de parche del repositorio. La arquitectura `clipproj` no es un modelo autónomo de llama.cpp.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| romara-labs/MiniMax-H3-ClipProj-GGUF | Adaptador de proyección GGUF | 127.967.232 | no disponible | MiniMax H3 Community License | Hugging Face, 0 descargas |
-| NicoLab28/ClipProj-MiniMax-H3 | Proyección original (formato nativo) | no disponible | no disponible | MiniMax H3 Community License (según repo derivado) | Hugging Face |
-| Qwen3-VL-32B (codificador original) | Codificador de texto/visión | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
-| Qwen3-VL-4B-Instruct (codificador sustituto) | Codificador de texto/visión | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
+| Componente | Encoder asociado | Tipo de proyección | Tamaño relativo | Licencia |
+|---|---|---|---|---|
+| mmh3-8b-ClipProj-v3.1 | Qwen3-VL-8B | Ridge | Menor | MiniMax H3 Community License |
+| mmh3-8b-ClipProj-v3.1-mlp | Qwen3-VL-8B | MLP | Mayor | MiniMax H3 Community License |
+| mmh3-4b-ClipProj-v3.1 | Qwen3-VL-4B | Ridge | Menor | MiniMax H3 Community License |
+| mmh3-4b-ClipProj-v3.1-mlp | Qwen3-VL-4B | MLP | Mayor | MiniMax H3 Community License |
+| mmh3-2b-ClipProj-v1 | Qwen3-VL-2B | Legacy v1 | No verificado | MiniMax H3 Community License |
+| mmh3-2b-ClipProj-v1-mlp | Qwen3-VL-2B | Legacy v1, MLP | No verificado | MiniMax H3 Community License |
 
-La comparación relevante no es frente a otros modelos generativos, sino frente al codificador original de 32B que este adaptador permite evitar. No hay datos de rendimiento publicados para cuantificar la pérdida de calidad.
+No se dispone de información sobre componentes alternativos de terceros que realicen la misma función de proyección para MiniMax-H3, por lo que la comparativa se limita a las variantes publicadas en este mismo repositorio.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: sin el modelo de difusión MiniMax-H3, el codificador compatible y los VAE no genera nada.
-- Las matrices se calibraron sobre prompts de vídeo; la calidad en texto-a-imagen no está sistemáticamente validada.
-- Los flujos con imagen o vídeo de referencia no están validados en este repositorio.
-- Los ficheros legacy v1 para 2B tienen compatibilidad de runtime y revisión de origen no verificadas.
-- La arquitectura GGUF `clipproj` es personalizada y no funciona en `llama.cpp` estándar; requiere el fork de Romara Labs.
-- Licencia MiniMax H3 Community License Agreement: revisar términos antes de uso comercial o redistribución; no es una licencia permisiva tipo Apache o MIT.
-- Sesgos y riesgo de alucinación: no aplicables de forma directa al ser un adaptador, pero heredados del codificador y del modelo de difusión subyacentes.
-- Sin datos publicados de benchmarks, VRAM, latencia ni idiomas: cualquier decisión de producción exige evaluación empírica propia.
-- Repositorio con 0 descargas y 0 likes en el momento de la ficha: madurez y soporte comunitario limitados.
+- No es un modelo generativo: requiere el modelo de difusión MiniMax-H3, un encoder Qwen3-VL compatible y los VAE correspondientes, que no se incluyen en el repositorio.
+- Las matrices se calibraron sobre prompts de vídeo; la calidad en generación de imagen a partir de texto no se ha validado sistemáticamente.
+- Los flujos con imagen de referencia o vídeo de referencia no han sido validados con estas proyecciones.
+- Los ficheros de 2B pertenecen a la serie legacy v1; su compatibilidad en tiempo de ejecución y su revisión de origen exacta no han sido verificadas por el autor.
+- La arquitectura GGUF `clipproj` es específica del fork de stable-diffusion.cpp de Romara Labs y no funciona como modelo de llama.cpp.
+- La licencia MiniMax H3 Community License Agreement impone condiciones específicas de uso y redistribución; es necesario revisar el texto completo antes de cualquier uso comercial.
+- No se dispone de información sobre sesgos, tasas de alucinación o cobertura idiomática, al no ser un modelo de lenguaje autónomo.
+- El rendimiento y la fidelidad de la condicion textual dependen del encoder elegido; no se han publicado métricas objetivas que cuantifiquen la pérdida de calidad frente al encoder de 32B.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/romara-labs/MiniMax-H3-ClipProj-GGUF
-- Proyecto original de proyecciones: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
-- Modelo base de difusión: https://huggingface.co/Comfy-Org/MiniMax-H3
-- Codificador de referencia: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
-- Fork de stable-diffusion.cpp: https://github.com/romara-labs/stable-diffusion.cpp
-- Instrucciones de compilación con patch: https://github.com/romara-labs/stable-diffusion.cpp/tree/master/patch
-- Licencia MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Repositorio Hugging Face: https://huggingface.co/romara-labs/MiniMax-H3-ClipProj-GGUF
+- Modelo base de la proyección: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- Fork de stable-diffusion.cpp de Romara Labs: https://github.com/romara-labs/stable-diffusion.cpp
+- Instrucciones de compilación con parche: https://github.com/romara-labs/stable-diffusion.cpp/tree/master/patch
+- Licencia MiniMax H3 Community License Agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Encoder Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Encoder Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Encoder Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

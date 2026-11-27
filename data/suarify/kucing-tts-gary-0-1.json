@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Suarify/kucing-tts-gary-0.1",
+  "slug": "suarify-kucing-tts-gary-0-1",
+  "author": "Suarify",
+  "url": "https://huggingface.co/Suarify/kucing-tts-gary-0.1",
+  "created_at": "2026-11-27T03:05:39.000Z",
+  "updated_at": "2026-11-27T03:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "onnx",
+    "style_text_to_speech_2",
+    "malay",
+    "tts",
+    "kucing-tts",
+    "gary",
+    "ms",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8456545,
+  "storage_human": "8 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

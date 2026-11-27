@@ -2,111 +2,108 @@
 
 ## Resumen
 
-Inkling-2-Mini-MLX-4bit es una cuantización de 4 bits en formato MLX del modelo multimodal Inkling-2-Mini, desarrollado originalmente por Thinking Machines. El autor de esta conversión es el usuario aufklarer, que la publica como un bundle de pesos afines (affine MLX) orientado a inferencia nativa en Swift mediante el runtime speech-swift. El modelo resuelve generación de texto e imagen-a-texto (image-text-to-text) en hardware Apple Silicon, con un enfoque práctico en despliegue local sobre memoria unificada.
+Inkling 2 Mini MLX 4bit es una cuantización de pesos en formato MLX del modelo multimodal Inkling 2 Mini, desarrollado originalmente por Thinking Machines. Se trata de un modelo vision-lenguaje de arquitectura Mixture-of-Experts (MoE) con 26.388.641.280 parámetros totales, exportado en precisión mixta (INT4 para expertos, INT8 para atención y vocabulario, precisión original para visión, routing y normalización) para ejecución nativa en Apple Silicon mediante MLX.
 
-El modelo base es un transformer de tipo mixture-of-experts (MoE) con 26.388.641.280 parámetros totales y un esquema de repetición de capas: almacena 24 capas de decoder pero visita 48 por token, repitiendo sus doce capas intermedias tres veces. La cuantización reduce el peso en disco a aproximadamente 16,1 GB (16.141.320.192 bytes, 39 shards), con pesos de expertos en INT4 (group size 64), matrices de atención y vocabulario en INT8, y visión, routing, normalización, posición relativa y controladores de loop en precisión de origen.
+El modelo resuelve la necesidad de desplegar un VLM de gran tamaño en hardware de consumo Apple con memoria unificada, sin depender de CUDA. Su relevancia actual radica en que permite generación de texto e imágenes en local sobre macOS con un runtime Swift específico (speech-swift), con un peso de tensores de aproximadamente 16,1 GB distribuidos en 39 shards.
 
-Es relevante ahora porque demuestra una ruta de ejecución de un MoE multimodal de gran tamaño en un portátil Apple M5 Pro con 48 GB de memoria unificada, a través de un parche de código abierto sobre speech-swift, con validación de 25 casos de aceptación (texto, aritmética, código, JSON, SQL y cinco idiomas) y soporte de imágenes fijas. No obstante, el ecosistema de ejecución es incipiente y no está integrado en la rama principal del repositorio.
+La arquitectura emplea un esquema de "loop" poco habitual: almacena 24 capas de decoder pero visita 48 capas por token, repitiendo tres veces sus doce capas intermedias. Esta cuantización concreta está pensada para inferencia nativa en Swift, no para el stack Python estándar de MLX-VLM, que no fue validado para esta release según el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con repetición de capas (24 capas almacenadas, 48 visitas por token) |
+| Arquitectura | Mixture-of-Experts (MoE) con decoder de 24 capas almacenadas y 48 visitas por token (repetición triple de las 12 capas intermedias) |
 | Parametros totales | 26.388.641.280 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 8.192 tokens por defecto (presupuesto total de contexto del runtime); 1.024 merged patches por imagen por defecto |
-| Tipos de cuantizacion | INT4 afín (group size 64) para expertos; INT8 para atención y vocabulario; precisión de origen para visión, routing, normalización, posición relativa y controladores de loop |
-| Idiomas soportados | no disponible (validación puntual en alemán, español, francés, chino y japonés; sin paridad multilingüe garantizada) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX, affine), 39 shards, ~16,1 GB |
-| Libreria | mlx (runtime Swift speech-swift) |
-| Hardware probado | Apple M5 Pro, 48 GB memoria unificada, macOS 27.2 |
-| Revision del modelo base | ed40e7da625f594fc9c4990f5f66be24873c22d7 |
+| Longitud de contexto | no disponible (la validación usó un presupuesto total de 8.192 tokens) |
+| Tipos de cuantizacion | INT4 affine (expertos, group size 64), INT8 (atención y vocabulario), precisión original (visión, routing, normalización, relative-position, loop controllers); existe variante INT5 |
+| Idiomas soportados | no disponible (validación puntual en alemán, español, francés, chino y japonés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX affine), 39 shards, ~16,1 GB de tensores |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE con una innovación estructural concreta: el modelo almacena 24 capas de decoder y visita 48 capas por token, repitiendo tres veces sus doce capas intermedias. El runtime Swift comparte los pesos entre visitas y mantiene un historial independiente de atención y convolución para cada visita de capa. Esta repetición de capas intermedias actúa como un mecanismo de profundidad efectiva sin duplicar almacenamiento de pesos, y es la razón por la que el modelo combina un recuento de parámetros relativamente contenido con una profundidad de cómputo mayor.
+El modelo base es un transformer MoE multimodal con capacidad de procesamiento de imagen y texto. La particularidad estructural es el esquema de capas en bucle: el checkpoint almacena 24 capas de decoder, pero en cada token se visitan 48 capas al repetir tres veces las doce capas centrales. El runtime Swift comparte los pesos entre visitas y mantiene un historial independiente de atención y convolución para cada visita de capa, lo que reduce el footprint de memoria a costa de cómputo adicional.
 
-La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras etapas de alineación en el modelo base. Tampoco se especifica el número de expertos ni la fracción de parámetros activos por token. La cuantización, por su parte, es una exportación afín MLX que no usa la ruta de carga ModelOpt original; los nombres de tensores siguen el layout de Inkling 2 de MLX-VLM. Se documentan pruebas del exportador (20 tests de CPU, cuatro conversiones de muestras reales, nueve tests de configuración/CLI, tres tests de referencia pequeña, cuatro tests de runtime con pesos completos y dos tests de CLI real), con una desviación RMS normalizada del 1,29 % en los top-20 scores y el mismo token top entre las versiones de Python y Swift MLX probadas.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO en el modelo original. La cuantización es de tipo affine MLX: los expertos se almacenan en INT4 con group size 64, las matrices de atención y vocabulario en INT8, y el resto de parámetros (visión, routing, normalización, controladores de bucle) se mantienen en la precisión del checkpoint fuente. El autor indica que el exportador valida la decodificación NVFP4/MXFP8 contra los dequantizadores nativos de MLX, con un drift RMS normalizado del 1,29% en los top-20 scores frente al checkpoint original y el mismo token top en las versiones Python/Swift de MLX probadas.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con memoria de conversación.
-- Razonamiento aritmético y comprensión de documentos largos (probado con un prompt de 2.032 tokens).
-- Lectura y reparación de código, además de generación de JSON y SQL (el SQL generado se ejecutó sobre un fixture en memoria aislado).
-- Comprensión de imágenes fijas: conteo de objetos, posición relativa de formas, lectura de texto impreso (por ejemplo, "MEET AT 4 PM") y gráficos de barras etiquetados.
-- Capacidad multilingüe puntual: un prompt cada uno en alemán, español, francés, chino y japonés dentro del conjunto de aceptación.
-- Modo de razonamiento oculto (hidden reasoning): el modelo puede emitir razonamiento antes de la respuesta visible, incluso con effort 0.
-- No implementa parsing nativo de tool calls, ni entrada de audio o vídeo, ni decodificación especulativa DSpark en esta versión.
+- Generación de texto conversacional multi-turno, con memoria de conversación verificada en las pruebas de aceptación.
+- Comprensión de imágenes estáticas: conteo de objetos, posición relativa de formas, lectura de texto impreso y gráficos de barras etiquetados.
+- Razonamiento aritmético básico y resolución de problemas sencillos.
+- Lectura y reparación de código, generación de JSON y SQL.
+- Capacidad multilingüe parcial: se validaron prompts en alemán, español, francés, chino y japonés, aunque el autor advierte que no constituye evidencia de paridad multilingüe amplia.
+- Razonamiento oculto (hidden reasoning): los tiempos reportados incluyen esta fase.
+- Propuesta de acciones locales (answer, summarize, describe_image, clarify) mediante generación de texto libre validada con JSON; no hay decodificación JSON restringida nativa ni parseo de tool calls implementado.
+- No dispone de tool calling nativo ni de parsing de function calling en el runtime incluido.
 
 ## Casos de uso
 
-- Asistente conversacional local en macOS: el modelo gestiona conversaciones multi-turno con memoria y un presupuesto de contexto de 8.192 tokens, adecuado para un asistente de escritorio que no envía datos a la nube, sobre un Apple M5 Pro con 48 GB.
-- Descripción y análisis de imágenes en dispositivos Apple: con un presupuesto de 1.024 merged patches por imagen, sirve para tareas de accesibilidad (describir fotos), extracción de texto impreso en capturas y lectura de gráficos simples.
-- Revisión y reparación de código en el editor: la validación incluye lectura y corrección de código, por lo que puede integrarse en un flujo de revisión local donde el código no sale del portátil.
-- Generación de consultas SQL y JSON: útil para prototipos de agentes de datos o asistentes de BI que transforman lenguaje natural en SQL validable, dado que el modelo produjo SQL ejecutable en las pruebas.
-- Procesamiento de documentos con contexto medio: con 2.032 tokens probados y un límite de 8.192, encaja en resumen y extracción de información de informes, contratos o notas técnicas de extensión moderada.
-- Soporte multilingüe ligero: atención al cliente o traducción asistida en alemán, español, francés, chino y japonés, siempre con la advertencia de que no hay garantía de paridad multilingüe.
-- Inferencia 100 % local y privada en Swift: integrable en aplicaciones macOS nativas mediante la API `Inkling2Chat` de speech-swift, sin dependencia de servicios externos.
+- Procesamiento de documentos con imágenes en local: el modelo puede leer texto impreso en capturas y describir gráficos, adecuado para digitalización de facturas o informes escaneados en un Mac sin conexión a servicios en la nube.
+- Asistente de escritorio privado: con ~16 GB de tensores cabe en un Mac con 48 GB de memoria unificada, permitiendo conversaciones multi-turno con memoria sin enviar datos a terceros.
+- Generación y reparación de código en entornos macOS: útil para pipelines de desarrollo local donde se requiere leer fragmentos de código y proponer correcciones, integrándose vía el runtime Swift.
+- Automatización de clasificación de imágenes con razonamiento: conteo de objetos, detección de posición relativa y lectura de etiquetas, aplicable a control de calidad visual en pequeños lotes.
+- Generación de consultas SQL y JSON estructurado: validado con ejecución real sobre un fixture en memoria, útil para asistentes de bases de datos en herramientas internas.
+- Enrutamiento de decisiones locales: el ejemplo de decisión del runtime permite clasificar la intención del usuario (responder, resumir, describir imagen, aclarar) con fallback a "clarify" ante salidas inválidas, útil en asistentes de voz o interfaces conversacionales.
+- Traducción y atención multilingüe ligera: con soporte verificado en cinco idiomas, puede emplearse para resúmenes o respuestas en español, francés, alemán, chino y japonés en contextos acotados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la información disponible. El autor documenta una validación de aceptación de 25/25 casos fijos (20 prompts de texto, cuatro imágenes sintéticas y un documento largo) ejecutada con build de depuración, temperatura 0, top-k 0, top-p 1, repetition penalty 1, effort 0, límite de 512 tokens de generación y presupuesto de contexto de 8.192 tokens. El propio autor advierte que estos casos seleccionados no constituyen un benchmark estándar ni evidencia de calidad general, y que no se ejecutó una comparación completa contra el checkpoint original.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor reporta 25/25 casos de aceptación fijos superados con el runtime Swift (20 prompts de texto, 4 imágenes sintéticas y un documento largo de 2.032 tokens), con temperatura 0, top-k 0, top-p 1, penalización de repetición 1, effort 0, límite de 512 tokens de generación y presupuesto total de contexto de 8.192 tokens. Estas pruebas no constituyen un benchmark estándar ni garantizan inteligibilidad general.
 
-| Prueba | Resultado | Notas |
-|---|---|---|
-| Casos de aceptación (texto, imagen, documento) | 25/25 | Build debug, temperatura 0, 512 tokens de generación |
-| Deriva RMS normalizada (top-20 scores) | 1,29 % | Mismo token top entre versiones Python/Swift MLX |
-| Tests del exportador (CPU) | 20 pasados | Verificación de decodificación NVFP4/MXFP8 contra dequantizers nativos de MLX |
-| Tests de conversión de muestras reales | 4 pasados | — |
-| Tests de configuración/CLI | 9 pasados | — |
-| Tests de runtime con pesos completos | 4 pasados | — |
-| Tests de CLI real | 2 pasados | — |
+| Prueba | Resultado |
+|---|---|
+| Casos de aceptación (texto, imagen, documento) | 25/25 superados |
+| Drift RMS normalizado vs. checkpoint original (top-20) | 1,29% |
+| Coincidencia de token top vs. original | Sí (misma versión MLX Python/Swift) |
+| Tests del exportador CPU | 20 superados |
+| Tests de conversión de muestras reales | 4 superados |
+| Tests de argumentos CLI/configuración | 9 superados |
+| Tests de referencia pequeña | 3 superados |
+| Tests de runtime con pesos completos | 4 superados |
+| Tests CLI reales | 2 superados |
 
 ## Requisitos de hardware
 
-- VRAM/memoria: el bundle en disco ocupa ~16,1 GB, pero el runtime consume más memoria que el tamaño de los tensores en disco; el autor no publica una cifra exacta de memoria en ejecución.
-- Hardware probado: Apple M5 Pro con 48 GB de memoria unificada y macOS 27.2.
-- GPU: al ser MLX, requiere Apple Silicon (memoria unificada); no se documenta soporte para GPU NVIDIA ni CUDA.
-- Viabilidad en consumer: cabe en equipos Apple Silicon con memoria unificada suficiente; el autor no confirma configuraciones de 16 o 24 GB, y advierte que contextos mayores necesitan pruebas separadas de memoria y calidad.
-- Despliegue: runtime Swift speech-swift (con parche `source/speech-swift-inkling2.patch` sobre el commit `acc12681e84cbeab885130fab740a8e3db95a5f1`), build mediante `make build` (incluye paso de metallib MLX). La generación en Python con MLX-VLM sin modificar no fue validada para esta release.
-- Concurrencia: las peticiones deben serializarse sobre una única instancia del modelo.
-- Latencia y throughput: no disponibles; los tiempos de la validación incluyen razonamiento oculto pero no se presentan cifras agregadas de throughput.
+- Memoria unificada estimada: ~16,1 GB solo de tensores, más overhead de runtime y contexto; el autor probó con 48 GB en un Apple M5 Pro.
+- GPU recomendadas: Apple Silicon con memoria unificada amplia (M5 Pro con 48 GB validado); no se soportan GPUs NVIDIA/AMD en este formato MLX.
+- Cabe en GPU de consumo Apple: sí, en configuraciones con al menos 24-32 GB de memoria unificada (no verificado oficialmente más allá del M5 Pro de 48 GB).
+- Opciones de despliegue: runtime nativo Swift en speech-swift (commit 15eda930df3d); MLX-VLM Python no validado para esta release; el path de carga ModelOpt upstream no interpreta estos pesos.
+- Latencia y throughput: no disponibles de forma agregada; el autor enlaza los timings de los 25 casos de aceptación en validation/quality-results.json.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada. La comparación se limita a lo verificable:
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-MLX-4bit (este) | 26,39 B totales | 8.192 tokens (runtime) | MLX safetensors INT4/INT8 | Apache 2.0 | Runtime Swift, texto e imagen fija |
-| thinkingmachines/Inkling-2-Mini (base) | no disponible | no disponible | safetensors original | Apache 2.0 (heredada) | Checkpoint sin cuantizar; sin comparación de calidad publicada |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No hay datos en la información disponible |
+| Inkling 2 Mini MLX 4bit (este) | 26,4 B (MoE) | no disponible | apache-2.0 | safetensors MLX, 4-bit | Hugging Face, runtime Swift |
+| Inkling 2 Mini MLX 5bit | 26,4 B (MoE) | no disponible | apache-2.0 | safetensors MLX, 5-bit (~19,2 GB) | Hugging Face, mismo runtime |
+| Inkling 2 Mini (original) | 26,4 B (MoE) | no disponible | apache-2.0 (según base) | safetensors | Hugging Face, revision ed40e7da |
+
+No se dispone de información sobre otros modelos comparables de la misma categoría (VLM MoE para Apple Silicon) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El límite de salida incluye el razonamiento oculto y el framing; incluso con effort 0 puede generar razonamiento antes de la respuesta, de modo que un límite corto puede producir una respuesta visible vacía.
-- El presupuesto de contexto por defecto es de 8.192 tokens; contextos mayores requieren pruebas de memoria y calidad no realizadas.
-- La memoria en ejecución supera el tamaño de los tensores en disco.
-- Las peticiones deben serializarse sobre una única instancia del modelo.
-- No hay parsing nativo de tool calls, ni entrada de audio o vídeo, ni decodificación especulativa DSpark.
-- La implementación Swift no estaba fusionada en la rama principal de speech-swift en el momento de la publicación; requiere aplicar un parche y compilar.
-- La generación en Python con MLX-VLM sin modificar no fue validada.
-- La validación de 25 casos no es un benchmark estándar ni garantiza inteligibilidad general ni paridad multilingüe; no se ejecutó comparación completa contra el checkpoint original.
-- Riesgo de sesgos y alucinaciones: no documentado en la información disponible; aplican los riesgos habituales de un modelo generativo sin evaluación publicada al respecto.
-- La licencia Apache 2.0 permite uso comercial, pero el estado experimental del runtime y la ausencia de benchmarks estándar desaconsejan producción sin evaluación propia.
-- El probe Core ML es solo una prueba de operadores (expertos enrutados, pesos compartidos repetidos y tres historiales de caché en FP16 e INT4), no una exportación completa a Core ML ni un resultado de rendimiento en Neural Engine.
+- Los 25 casos de aceptación son una selección fija y no constituyen un benchmark estándar ni garantizan calidad general; el propio autor lo advierte.
+- No hay evidencia de paridad multilingüe amplia: solo se probó un prompt por idioma en cinco lenguas.
+- El soporte Python con MLX-VLM no fue validado para esta release; el uso previsto es el runtime Swift.
+- No implementa decodificación JSON restringida nativa ni parsing de tool calls; el ejemplo de acciones locales ejecuta acciones solo tras validación externa y hace fallback a "clarify".
+- Riesgo de alucinación no cuantificado; no se reportan evaluaciones de sesgo.
+- El esquema de capas en bucle implica cómputo extra por token (48 visitas sobre 24 capas almacenadas), lo que puede afectar la latencia frente a un transformer convencional del mismo tamaño.
+- La licencia apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base thinkingmachines/Inkling-2-Mini antes de producción.
+- Solo se ha probado en macOS 27.2 con Apple M5 Pro; el comportamiento en otros chips Apple no está documentado.
+- El modelo base original puede tener sus propias limitaciones de sesgo y alucinación no reflejadas en esta ficha.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit
-- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Revisión del modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini/tree/ed40e7da625f594fc9c4990f5f66be24873c22d7
-- Runtime speech-swift: https://github.com/soniqo/speech-swift
-- Commit base del parche: https://github.com/soniqo/speech-swift/commit/acc12681e84cbeab885130fab740a8e3db95a5f1
-- Resultados de validación de calidad: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/validation/quality-results.json
-- Revisión semántica y comprobación SQL: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/validation/quality-review.json
-- Fixtures de imagen y prompts: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/tree/main/validation
-- Parche de código fuente: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/source/speech-swift-inkling2.patch
-- Checksum del parche: https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/source/base.json
+- [Hugging Face: aufklarer/Inkling-2-Mini-MLX-4bit](https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit)
+- [Modelo base: thinkingmachines/Inkling-2-Mini](https://huggingface.co/thinkingmachines/Inkling-2-Mini)
+- [Revision del modelo base (ed40e7da)](https://huggingface.co/thinkingmachines/Inkling-2-Mini/tree/ed40e7da625f594fc9c4990f5f66be24873c22d7)
+- [Variante INT5: aufklarer/Inkling-2-Mini-MLX-5bit](https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-5bit)
+- [Runtime speech-swift](https://github.com/soniqo/speech-swift)
+- [Commit del runtime validado (15eda930df3d)](https://github.com/soniqo/speech-swift/commit/15eda930df3d6cad07a0cd25e8d22dfdd9a040c3)
+- [Ejemplo de decisiones locales](https://github.com/soniqo/speech-swift/blob/15eda930df3d6cad07a0cd25e8d22dfdd9a040c3/docs/inference/inkling2-mini-decisions.md)
+- [Ejemplos de arquitectura e imagen](https://github.com/soniqo/speech-swift/blob/15eda930df3d6cad07a0cd25e8d22dfdd9a040c3/docs/models/inkling2-mini.md)
+- [Resultados de calidad (validation/quality-results.json)](https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/validation/quality-results.json)
+- [Revisión semántica y SQL (validation/quality-review.json)](https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/blob/main/validation/quality-review.json)
+- [Fixtures de imagen y prompts](https://huggingface.co/aufklarer/Inkling-2-Mini-MLX-4bit/tree/main/validation)

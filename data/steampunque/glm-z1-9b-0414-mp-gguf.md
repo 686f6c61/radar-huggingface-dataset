@@ -2,118 +2,103 @@
 
 ## Resumen
 
-Esta ficha describe `steampunque/GLM-Z1-9B-0414-MP-GGUF`, una cuantización GGUF del modelo de razonamiento `THUDM/GLM-Z1-9B-0414` (Zhipu AI / Z.ai), publicada por el usuario steampunque. No se trata de un modelo nuevo, sino de una receta de cuantización de precisión mixta por capas (`Q4_E_H`) aplicada sobre los pesos originales en safetensors. El modelo resultante ocupa un único archivo GGUF de 6,2 GB, un tamano equivalente al de una cuantización `Q4_K_M` estándar (misma cifra de 6,2e9 bytes), por lo que está pensado para ejecución en GPU de consumo.
+GLM-Z1-9B-0414-MP-GGUF es una cuantización GGUF de precisión mixta por capas del modelo GLM-Z1-9B-0414, desarrollado originalmente por THUDM (Zhipu AI / Z.ai). El modelo base es un transformer de 9.463.193.600 parámetros (aproximadamente 9,46 mil millones) entrenado con RL para razonamiento, con un modo "thinking" explícito que genera cadenas de razonamiento antes de la respuesta final. Esta versión GGUF la publica el usuario steampunque bajo licencia MIT.
 
-El interés técnico de esta publicación está en su enfoque de cuantización híbrida: en lugar de aplicar un único tipo de quant a todas las capas, asigna niveles distintos (Q4_K, Q5_K y Q6_K) capa por capa, mantiene el embedding de tokens y la capa de salida en Q6_K y permite forzar los tensores de atención (QKV) en F16 durante la inferencia. Según el autor, esta configuración se optimizó sobre un conjunto de prompts de razonamiento y sacrifica muy poco en perplejidad (15,2 frente a 14,9 de un `Q4_K_M` convencional) a cambio de una mayor velocidad de generación cuando se combina con decodificación especulativa.
+La contribución principal de esta ficha no es el modelo en sí, sino la estrategia de cuantización híbrida por capas (denominada Q4_E_H), que asigna distintos niveles de cuantización K-quant (desde Q4_K hasta Q6_K) a cada capa según su sensibilidad, con embeddings y tensores de salida en Q6_K y la dimensión FFN rellenada a múltiplos de 256 para permitir cuantización K. El resultado ocupa aproximadamente 6,2e9 bytes (un tamaño cercano a Q4_K_M) manteniendo una perplejidad de 15,2 frente a 14,9 del Q4_K_M estándar, es decir, una degradación mínima.
 
-El modelo base es un transformer denso de 9.463.193.600 parámetros y aproximadamente 9,46 mil millones de parámetros efectivos, entrenado con RL y con modo de pensamiento. La cuantización se distribuye bajo licencia MIT y está etiquetada como compatible con endpoints conversacionales. El autor advierte de forma explícita de que el modelo es "extremadamente débil" en generación de código, por lo que su nicho real es el razonamiento matemático y analítico, no la programación.
+El modelo es relevante para quienes quieren ejecutar un modelo de razonamiento de ~9B en hardware de consumo (por ejemplo, una RTX 4070 de 12 GB) con decodificación especulativa mediante un draft model Qwen3 0.6B, alcanzando según el autor unas 101 tokens por segundo frente a 68 sin draft en ese hardware. La información disponible sobre el modelo base (idiomas, contexto, benchmarks oficiales) es limitada en esta ficha.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (modelo base GLM-Z1-9B-0414 de Zhipu AI / Z.ai); dimensión intermedia de FFN 13.696, ampliada a 13.824 en esta cuantización |
-| Parametros totales | 9.463.193.600 (9,46 mil millones) |
-| Parametros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | No especificada en la model card de la cuantización; las pruebas de rendimiento del autor se ejecutan con 32k tokens de contexto |
-| Tipos de cuantizacion | GGUF híbrida por capas `Q4_E_H`: mezcla de Q4_K, Q5_K y Q6_K según capa, embedding de tokens en Q6_K, tensor de salida en Q6_K y opción de QKV en F16 en inferencia |
+| Arquitectura | Transformer (GLM-4, familia GLM-Z1); cuantización GGUF por capas |
+| Parametros totales | 9.463.193.600 (~9,46B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el autor prueba con 32k NKV) |
+| Tipos de cuantizacion | Q4_E_H (híbrida por capas: Q4_K, Q5_K, Q6_K, Q8_0, F16, F32 según capa; embeddings y salida en Q6_K) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (archivo único `GLM-Z1-9B-0414.Q4_E_H.gguf`) |
-| Tamano del archivo principal | 6,2e9 bytes (6,2 GB) |
-| Tamano del repositorio | 26,5 GB |
-| Perplejidad declarada | 15,2 (frente a 14,9 de un Q4_K_M del mismo modelo) |
-| Modo de pensamiento | Si; el autor lo describe como "RL trained thinking model" |
-| Descargas / likes | 83 descargas, 2 likes |
-| Fechas | Creado el 21-07-2025; actualizado el 12-10-2026 |
+| Formato de pesos | GGUF (archivo GLM-Z1-9B-0414.Q4_E_H.gguf, ~6,2e9 B) |
 
 ## Arquitectura y entrenamiento
 
-La cuantización se aplica sobre `THUDM/GLM-Z1-9B-0414`, un transformer denso decoder-only de la familia GLM-4. La model card de esta publicación no detalla la arquitectura interna del modelo base (número de capas, cabezas de atención, tipo de positional encoding ni composición del dataset de entrenamiento); esa información corresponde al repositorio original de THUDM. Lo que sí aporta el autor es el mapa de capas usado para la cuantización, que abarca 40 capas (índices 0 a 39) y permite deducir la estructura de bloques: atención (`attn_q`, `attn_k`, `attn_v`, `attn_o`) y bloque feed-forward (`ffn`, `ffn_g`, `ffn_u`, `ffn_d`).
+El modelo base GLM-Z1-9B-0414 es un transformer de la familia GLM-4/Z1 de THUDM, entrenado con refuerzo (RL) para razonamiento, según indica el autor de la cuantización ("This is a RL trained thinking model"). No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso concreto de RLHF/DPO más allá de la mención al entrenamiento con RL.
 
-El elemento diferencial es la estrategia de precisión mixta. Las capas 0 y 39 se mantienen en Q6_K; las capas 1, 8, 16 y 24 en Q5_K; y el grueso central en Q4_K, con variantes de los subbloques `Q4_K_654`, `Q4_K_665`, `Q5_K_554`, `Q5_K_666` o `Q6_K_886` según la posición. La dimensión de las FFN se rellena (*padding*) hasta un múltiplo de 256, pasando de 13.696 a 13.824, con el objetivo de poder usar cuantizaciones K en esos tensores. El embedding de tokens y el tensor de salida se fijan en Q6_K mediante los flags `--token-embedding-type Q6_K` y `--output-tensor-type Q6_K`. El autor indica que los niveles de cuantización se optimizaron empíricamente sobre un conjunto curado de prompts de razonamiento, con Q4_K como mínimo, para minimizar la pérdida de entropía.
-
-En cuanto al entrenamiento del modelo base, la única referencia disponible en esta información es que se trata de un modelo entrenado con RL (*reinforcement learning*) y orientado a razonamiento. No se dispone del número de tokens de entrenamiento, la composición del dataset ni los detalles del pipeline de alineamiento (RLHF, DPO u otros). El autor menciona además que la cuantización puede combinarse con decodificación especulativa usando Qwen3 0.6B como modelo borrador, siempre que el motor de inferencia soporte traducción dinámica de vocabulario entre borrador y objetivo.
+La innovación técnica de esta publicación es la cuantización híbrida por capas: cada una de las 40 capas recibe un tipo K-quant distinto (por ejemplo, la capa 0 en Q6_K_886, las capas 2-7 en Q4_K_654, las capas 24-35 en Q5_K_665, la capa 39 en Q6_K_886), con el objetivo de minimizar la pérdida de entropía manteniendo un tamaño similar a Q4_K_M. La dimensión FFN se rellena a múltiplos de 256 (de 13696 a 13824 y de 27392/27648 a múltiplos pares) para permitir el uso de K-quants. Además, el autor documenta que el modelo se puede acelerar con decodificación especulativa usando Qwen3 0.6B como draft model si el motor de inferencia soporta traducción dinámica de vocabulario entre draft y target.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato de diálogo (etiqueta `conversational` en el repositorio).
-- Razonamiento paso a paso en modo de pensamiento, derivado de su entrenamiento con RL.
-- Razonamiento matemático: el autor publica un espacio de benchmarks específicamente orientado a matemáticas.
-- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`), lo que facilita su integración en servicios de inferencia que aceptan GGUF o modelos equivalentes.
-- Decodificación especulativa: puede acelerarse con un modelo borrador (Qwen3 0.6B) si el motor soporta traducción dinámica de vocabulario, con una mejora medida de 68 a 101 tokens por segundo.
+- Generación de texto conversacional y razonamiento con modo "thinking" (el modelo genera cadena de razonamiento antes de responder).
+- Razonamiento matemático: el autor publica benchmarks de matemáticas en su space de Hugging Face.
+- Generación de código: el autor advierte explícitamente que el modelo es "extremadamente débil" en problemas de generación de código.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling / function calling: no se documenta en la model card; no disponible.
-- Visión, audio u otras modalidades: no disponibles; el modelo es exclusivamente de texto.
-- Generación de código: capacidad presente de forma residual, pero el propio autor la califica como "extremadamente débil".
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo thinking facilita cadenas de razonamiento.
+- Decodificación especulativa compatible con Qwen3 0.6B como draft model (requiere soporte de traducción dinámica de vocabulario).
 
 ## Casos de uso
 
-- Razonamiento matemático asistido en local: el modelo está optimizado para cadenas de razonamiento y el autor mantiene un espacio de evaluación centrado en matemáticas, lo que lo hace adecuado para resolver problemas algebraicos, verificación de resultados y explicación de pasos intermedios en un portátil con GPU de gama media.
-- Asistente conversacional offline en estación de trabajo: con 6,2 GB de pesos y ejecución completa en una GPU de 12 GB, se puede desplegar un chatbot de uso interno sin conexión a servicios cloud, útil en entornos con restricciones de confidencialidad de datos.
-- Servicio de baja latencia con decodificación especulativa: combinando el archivo Q4_E_H con Qwen3 0.6B como borrador en llama.cpp se alcanzan 101 tokens por segundo en una RTX 4070, cifra suficiente para interfaces de chat interactivas con respuesta casi instantánea.
-- Generación de cadenas de pensamiento para anotación de datos: el modelo puede producir justificaciones razonadas paso a paso que después se filtran y revisan para construir datasets de entrenamiento de modelos más pequeños.
-- Evaluación comparativa de técnicas de cuantización: la receta Q4_E_H y sus parámetros (padding de FFN, tipos por capa, QKV en F16) sirven como caso de estudio reproducible para investigadores que comparan cuantización uniforme frente a cuantización híbrida.
-- Despliegue en productos comerciales con licencia permisiva: al distribuirse bajo MIT, la cuantización puede integrarse en productos propietarios sin obligación de apertura del código, siempre que se verifiquen también las condiciones del modelo base.
-- Prototipado rápido de agentes de razonamiento: el formato GGUF permite cargar el modelo en llama.cpp, Ollama o LM Studio sin infraestructura de GPU dedicada, reduciendo el coste de experimentación.
-- Caso de uso no recomendado: generación de código en producción. El autor advierte explícitamente de un rendimiento muy pobre en tareas de programación, por lo que no debería usarse para autocompletado, refactorización o revisión de código.
+- Razonamiento matemático en local: ejecutar el modelo en una GPU de consumo para resolver problemas de matemáticas paso a paso, aprovechando el modo thinking y el tamaño reducido de la cuantización (~6,2e9 B).
+- Asistente conversacional con razonamiento: desplegar en llama.cpp u Ollama para conversaciones multi-turno donde se requiera explicar el razonamiento antes de la respuesta.
+- Inferencia de bajo coste en hardware limitado: al caber en 12 GB de VRAM (RTX 4070) con capas y contexto en GPU, es adecuado para prototipos y demos en estaciones de trabajo modestas.
+- Aceleración con decodificación especulativa: usar Qwen3 0.6B como draft model en motores que soporten traducción de vocabulario para aumentar el throughput (según el autor, de 68 a 101 tps en una RTX 4070).
+- Evaluación de estrategias de cuantización: servir como caso de estudio de cuantización híbrida por capas para investigadores que comparen Q4_K_M frente a Q4_E_H (perplejidad 14,9 frente a 15,2).
+- Fine-tuning o experimentación con modelos de razonamiento pequeños: por su licencia MIT y tamaño contenido, es útil como base para experimentos académicos de razonamiento.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT facilita su integración en productos comerciales, aunque conviene revisar la licencia del modelo base.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos cuantitativos aportados por el autor son de perplejidad y de velocidad de generación. El autor enlaza un espacio de benchmarks matemáticos, pero no se incluyen resultados numéricos en la información disponible.
+El autor no publica una tabla de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí publica una comparación de perplejidad entre cuantizaciones y datos de rendimiento de inferencia:
 
-| Metrica | Q4_K_M de referencia | Q4_E_H (esta publicacion) |
+| Metrica | Q4_K_M | Q4_E_H |
 |---|---|---|
-| Tamano del archivo | 6,2e9 bytes | 6,2e9 bytes |
+| Tamano (bytes) | 6,2e9 | 6,2e9 |
 | Perplejidad (PPL) | 14,9 | 15,2 |
 
-| Configuracion de inferencia | QKV | Borrador | Contexto | Tokens por segundo |
-|---|---|---|---|---|
-| Q4_E_H, sin decodificacion especulativa | F16 | 0 | 32k | 68 |
-| Q4_E_H, decodificacion especulativa | F16 | 4 | 32k | 101 |
+Rendimiento de inferencia en llama.cpp sobre RTX 4070 (12 GB VRAM), capas y contexto en GPU, 32k NKV:
 
-Medición realizada en una RTX 4070 con 12 GB de VRAM, con todas las capas y el contexto residentes en GPU. No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks estándar en la información disponible.
+| Cuantizacion | QKV | ND | NKV | Gen tps | Comentario |
+|---|---|---|---|---|---|
+| Q4_E_H | F16 | 0 | 32k | 68 | Sin draft |
+| Q4_E_H | F16 | 4 | 32k | 101 | Spec 4 (draft Qwen3 0.6B) |
+
+Los benchmarks de matemáticas del autor están disponibles en https://huggingface.co/spaces/steampunque/benchlm. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo de pesos pesa 6,2 GB. El autor ejecuta el modelo con todas las capas y 32k tokens de contexto dentro de una GPU de 12 GB, por lo que el consumo total (pesos más caché KV) queda por debajo de ese umbral.
-- GPU recomendadas: RTX 4070 (12 GB) verificada por el autor como configuración de referencia. Cualquier GPU con 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090, A100, H100) puede alojar el modelo completo.
-- GPU de consumo: sí, cabe en GPUs de gama media-alta con 12 GB. En tarjetas de 8 GB es previsible que requiera offload parcial de capas a CPU, con la consiguiente pérdida de velocidad (estimación no verificada en la información disponible).
-- Opciones de despliegue: llama.cpp es el motor de referencia citado por el autor. Al ser un GGUF estándar, también es compatible con motores que consumen este formato (Ollama, LM Studio, koboldcpp). Para vLLM o TGI sería necesario partir de los pesos originales en safetensors, no de este archivo GGUF.
-- Decodificación especulativa: requiere un motor que soporte traducción dinámica de vocabulario entre modelo borrador y modelo objetivo; el autor propone Qwen3 0.6B como borrador.
-- Latencia y throughput: 68 tokens por segundo sin borrador y 101 tokens por segundo con 4 tokens de borrador, en RTX 4070 con 32k de contexto y todas las capas en GPU.
-- Compatibilidad de versión: la receta de cuantización fue actualizada el 12-10-2026, por lo que conviene usar una versión de llama.cpp reciente que reconozca el mapa de capas actual.
+- VRAM estimada: el archivo pesa ~6,2e9 B (~6,2 GB en disco); con contexto y overhead de llama.cpp, cabe en 12 GB de VRAM con capas y contexto en GPU (probado por el autor en RTX 4070).
+- GPU recomendadas: RTX 4070 (12 GB) validada por el autor; GPUs con 12 GB o más de VRAM en general; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en tarjetas de 12 GB o superiores (RTX 4070, 4070 Ti, 4080, 4090, etc.).
+- Opciones de despliegue: llama.cpp (probado por el autor), Ollama, y cualquier motor compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia.
+- Latencia y throughput: 68 tps sin draft y 101 tps con decodificación especulativa (draft Qwen3 0.6B, 4 tokens) en RTX 4070 con 32k de contexto en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Observaciones |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| steampunque/GLM-Z1-9B-0414-MP-GGUF (Q4_E_H) | 9,46B | No disponible en la ficha; probado a 32k | GGUF | MIT | PPL 15,2; 101 tps con decodificación especulativa en RTX 4070 |
-| THUDM/GLM-Z1-9B-0414 (modelo base) | 9,46B | No disponible en la información proporcionada | Safetensors | No disponible en la información proporcionada | Precisión completa; requiere más VRAM que la versión GGUF |
-| Cuantización Q4_K_M equivalente del mismo modelo | 9,46B | No disponible | GGUF | MIT (según metadatos del repositorio) | PPL 14,9; tamaño idéntico de 6,2e9 bytes |
-| Qwen3 0.6B | 0,6B | No disponible | GGUF | No disponible en la información proporcionada | Usado únicamente como modelo borrador para decodificación especulativa, no como alternativa |
+| GLM-Z1-9B-0414-MP-GGUF (esta ficha) | ~9,46B | No disponible | MIT | GGUF Q4_E_H | Cuantización híbrida por capas, PPL 15,2 |
+| GLM-Z1-9B-0414 (base, THUDM) | ~9,46B | No disponible | No disponible en esta ficha | safetensors | Modelo original sin cuantizar |
+| Qwen3 0.6B | ~0,6B | No disponible | No disponible en esta ficha | No disponible | Usado como draft model para decodificación especulativa |
 
-No se dispone de datos de benchmarks comparativos frente a otros modelos de razonamiento de tamaño similar (por ejemplo, destilaciones de DeepSeek-R1 en la franja de 7-9B) en la información proporcionada, por lo que no se incluyen en la tabla.
+No se dispone en la información proporcionada de datos de benchmarks comparativos con otros modelos de razonamiento de tamaño similar (por ejemplo, Qwen3-8B o DeepSeek-R1-Distill), por lo que la comparativa de rendimiento queda como "no disponible".
 
 ## Limitaciones y advertencias
 
-- Rendimiento en código: el autor afirma de forma explícita que el modelo es "extremadamente débil" en problemas de generación de código. No debe usarse en tareas de programación sin una validación previa muy estricta.
-- Perplejidad ligeramente superior: 15,2 frente a 14,9 de un Q4_K_M convencional, un incremento del 2 % aproximadamente. La receta híbrida no mejora la perplejidad, sino la velocidad en configuraciones con decodificación especulativa.
-- Riesgo de alucinación: no se han publicado evaluaciones de fiabilidad, veracidad ni tasas de alucinación en la información disponible. Al ser un modelo de razonamiento con modo de pensamiento, puede generar cadenas de razonamiento plausibles pero incorrectas.
-- Idiomas: no se declara ningún conjunto de idiomas soportados. No hay garantía de calidad fuera del inglés, y en particular no hay evidencia de un buen rendimiento en castellano.
-- Contexto: la model card no especifica la longitud máxima de contexto del modelo base. Las pruebas usan 32k tokens, pero no se confirma que ese sea el límite real ni cómo degrada la calidad al acercarse a él.
-- Licencia: la cuantización se distribuye bajo MIT, lo que en principio permite uso comercial. Aun así, conviene verificar la licencia del modelo base `THUDM/GLM-Z1-9B-0414` antes de un despliegue comercial, ya que la información proporcionada no la detalla.
-- Receta dependiente de la versión: el mapa de cuantización por capas se actualizó el 12-10-2026. Versiones antiguas de llama.cpp pueden no interpretar correctamente los tensores o el padding de las FFN.
-- Repositorio de 26,5 GB: aunque el archivo principal pesa 6,2 GB, el repositorio completo ocupa 26,5 GB. Conviene descargar únicamente el archivo `.gguf` necesario.
-- Validación comunitaria baja: 83 descargas y 2 likes en el momento de redactar esta ficha. No existe un volumen amplio de reportes independientes que confirmen el comportamiento declarado.
-- Información incompleta sobre el modelo base: la model card de esta cuantización no documenta la composición del dataset, el proceso de alineamiento ni el número de tokens de entrenamiento del modelo original.
+- Rendimiento en código: el autor advierte explícitamente que el modelo es "extremadamente débil" en generación de código; no debe usarse como asistente de programación sin validación.
+- Perplejidad ligeramente superior al Q4_K_M estándar (15,2 frente a 14,9), aunque la diferencia es pequeña.
+- La información sobre idiomas soportados no está disponible; no se garantiza un buen rendimiento en castellano.
+- La longitud de contexto oficial del modelo base no se detalla en la información proporcionada; el autor prueba con 32k NKV.
+- Riesgo de alucinación inherente a los modelos de razonamiento entrenados con RL; el modo thinking no elimina errores factuales.
+- La licencia MIT aplica a esta cuantización, pero conviene verificar la licencia del modelo base THUDM/GLM-Z1-9B-0414 antes de uso comercial.
+- La decodificación especulativa con Qwen3 0.6B requiere que el motor de inferencia soporte traducción dinámica de vocabulario entre draft y target; no todos los motores lo hacen.
+- El repositorio se actualizó el 25/11/2026 con un cambio en el campo `tokenizer.ggml.clean_spaces = False` y una plantilla de chat distinta; verificar compatibilidad con versiones antiguas de llama.cpp.
 
 ## Enlaces
 
-- Repositorio de la cuantización: https://huggingface.co/steampunque/GLM-Z1-9B-0414-MP-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/steampunque/GLM-Z1-9B-0414-MP-GGUF
+- Modelo base: https://huggingface.co/THUDM/GLM-Z1-9B-0414
 - Archivo GGUF directo: https://huggingface.co/steampunque/GLM-Z1-9B-0414-MP-GGUF/resolve/main/GLM-Z1-9B-0414.Q4_E_H.gguf
-- Modelo base (THUDM): https://huggingface.co/THUDM/GLM-Z1-9B-0414
-- Modelo base (zai-org): https://huggingface.co/zai-org/GLM-Z1-9B-0414
 - Benchmarks de matemáticas del autor: https://huggingface.co/spaces/steampunque/benchlm
 - Hilo de discusión sobre cuantización híbrida por capas en llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/13040
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a contenido no relacionado con la ficha.

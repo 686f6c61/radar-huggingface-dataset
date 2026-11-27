@@ -1,100 +1,107 @@
 # Maxenith/MAX-9B
 
 ## Resumen
+MAX-9B es un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 9B) desarrollado por Maxenith, obtenido mediante fine-tuning supervisado del modelo base Qwen/Qwen3.5-9B. Esta orientado a tareas de razonamiento y matematicas, e incorpora un modo de pensamiento (thinking mode) heredado de la familia Qwen. El modelo se distribuye en formato safetensors para la libreria transformers y cuenta con una variante cuantizada AWQ de 4 bits publicada por el mismo autor.
 
-MAX-9B es un modelo de generación de texto publicado en Hugging Face por el usuario Maxenith bajo el identificador `Maxenith/MAX-9B`. Se distribuye en formato `safetensors` para la librería `transformers` y cuenta con 8.953.803.264 parámetros totales según los metadatos del repositorio, lo que lo sitúa en la franja de los modelos de aproximadamente 9.000 millones de parámetros. La etiqueta de arquitectura declarada es `qwen3_5_text`, lo que sugiere una base derivada de la familia Qwen 3.5 en su variante exclusivamente textual.
+El problema que aborda es la eficiencia en la generacion de cadenas de razonamiento: segun la model card, en el conjunto de test completo de GSM8K alcanza un 94,3% de exactitud frente al 89,1% del modelo base, generando aproximadamente un 54% menos de tokens (982 frente a 2.141 de media). En MATH-500 reporta un 92,2% tras reintentar las preguntas con razonamiento incompleto con un limite ampliado a 16.000 tokens.
 
-La relevancia de esta ficha es limitada por la escasez de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, sin licencia declarada, sin idiomas especificados y sin resultados de evaluación. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado el 21 de noviembre de 2026 con apenas 25 segundos de diferencia, lo que apunta a una publicación inicial sin iteración posterior.
+Es relevante por su relacion calidad-eficiencia en tareas matematicas y por su compatibilidad con endpoints estandar de transformers, lo que facilita su integracion. No obstante, el autor no ha publicado comparativas exhaustivas frente al modelo base en todos los benchmarks ni ha realizado una descontaminacion formal completa, por lo que los resultados deben interpretarse con cautela.
 
-En consecuencia, esta ficha documenta con rigor únicamente lo verificable a partir de los metadatos y del tamaño de los pesos (17,9 GB en el repositorio), y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluaci��n de calidad, seguridad o idoneidad para producción debe considerarse pendiente hasta que exista documentación técnica o resultados reproducibles.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, etiqueta `qwen3_5_text` (detalles no disponibles) |
-| Parámetros totales | 8.953.803.264 (≈8,95 mil millones) |
-| Parámetros activos | no disponible (no se declara que sea MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, tag qwen3_5_text) |
+| Parametros totales | 8.953.803.264 (~8,95B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/AWQ/GPTQ no publicadas por el autor) |
+| Tipos de cuantizacion | safetensors bf16 (original); AWQ 4 bits (variante Maxenith/MAX-9B-AWQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
+| Licencia | Apache License 2.0 (segun model card; el campo de licencia del repo figura como no disponible) |
 | Formato de pesos | safetensors |
-| Tamaño del repositorio | 17,9 GB |
-| Librería | transformers |
-| Pipeline | text-generation |
-| Etiquetas | transformers, safetensors, qwen3_5_text, text-generation, conversational, endpoints_compatible, region:us |
-| Fecha de creación | 2026-11-21 |
-| Fecha de actualización | 2026-11-21 |
 
 ## Arquitectura y entrenamiento
+MAX-9B es un fine-tuning del modelo Qwen/Qwen3.5-9B, que emplea una arquitectura transformer decoder-only identificada con el tag qwen3_5_text. El modelo conserva el mecanismo de chat template del base con soporte para modo pensamiento (enable_thinking=True), que separa la cadena de razonamiento del texto final mediante el token de cierre ``. No se dispone de informacion sobre innovaciones arquitectonicas adicionales (atencion lineal, decodificacion especulativa u otras) en la documentacion proporcionada.
 
-La única información arquitectónica disponible es la etiqueta `qwen3_5_text`, que indica una variante textual de la familia Qwen 3.5. No se publican detalles sobre número de capas, dimensión oculta, cabezas de atención, tipo de atención (completa, lineal o híbrida), función de activación, normalización ni uso de mezcla de expertos. El recuento de 8,95 mil millones de parámetros y un repositorio de 17,9 GB son coherentes con pesos en precisión bf16/fp16 (aproximadamente 2 bytes por parámetro), sin indicios de cuantización en el checkpoint principal.
-
-No hay información sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni proporción de código, matemáticas o multilingüe. Tampoco se documenta si hubo ajuste supervisado, RLHF, DPO u otra fase de alineación, ni si se aplicaron técnicas de decodificación especulativa, destilación o poda. La model card incluye la referencia genérica a Lacoste et al. (2019) para el cálculo de emisiones de carbono, pero los campos de hardware, horas de cómputo y emisiones están sin rellenar.
+El entrenamiento se realizo sobre datos de razonamiento Open Thoughts. Segun la auditoria de contaminacion incluida en la model card, las fuentes declaradas de fine-tuning son OpenR1-Math-220k (93.733 registros escaneados), Mixture-of-Thoughts (349.317) y OpenThoughts-114k (113.957), con un total de 557.007 registros analizados y solo 2 coincidencias exactas normalizadas con GSM8K y MATH-500. El autor indica que se seleccionaron 5.000 muestras de cada fuente, aunque la auditoria escaneo los repositorios completos, no la seleccion exacta. No se detalla si hubo RLHF, DPO u otras etapas de alineacion posteriores al fine-tuning supervisado.
 
 ## Capacidades
-
-- Generación de texto conversacional: la etiqueta `conversational` sugiere un ajuste orientado a diálogo multi-turno, aunque no se documenta el formato de prompt ni las plantillas de chat.
-- Generación de texto general: pipeline `text-generation` declarado en los metadatos.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
-- Capacidades de razonamiento, código y matemáticas: no disponibles (no documentadas).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; la etiqueta `qwen3_5_text` apunta a una variante exclusivamente textual, sin módulos multimodales declarados.
+- Generacion de texto conversacional con soporte de chat template y roles (system, user, assistant).
+- Razonamiento matematico paso a paso en modo pensamiento, con formato de respuesta controlable mediante prompts.
+- Resolucion de problemas aritmeticos (GSM8K) y matematicos de nivel competitivo (MATH-500, niveles 1 a 5).
+- Razonamiento eficiente: genera cadenas de pensamiento mas cortas que el modelo base con mayor exactitud en GSM8K.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el modo pensamiento permite cadenas de razonamiento largas.
+- Capacidades multilingues: no disponible (no se declaran idiomas).
+- Capacidades especiales: thinking mode activable mediante `enable_thinking=True`; no se declaran vision ni audio.
 
 ## Casos de uso
-
-- Prototipado de asistentes conversacionales: al estar etiquetado como `conversational` y ser compatible con `transformers`, puede cargarse con `AutoModelForCausalLM` para experimentar con diálogo multi-turno en entornos de investigación, siempre que se defina una plantilla de chat propia al no estar documentada.
-- Evaluación comparativa interna: su tamaño de ~9B permite incluirlo como línea base en pruebas A/B frente a otros modelos de la misma franja antes de comprometerse con un proveedor.
-- Servicio mediante Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` facilita desplegarlo como endpoint gestionado para pruebas de integración sin montar infraestructura propia.
-- Fine-tuning específico de dominio: al publicarse en safetensors y con `transformers`, es susceptible de ajuste con PEFT/LoRA sobre datos propios (por ejemplo, atención al cliente o documentación técnica), aunque la licencia no declarada obliga a aclarar los términos antes de un uso comercial.
-- Investigación sobre modelos de ~9B: útil como sujeto de estudios de interpretabilidad, análisis de sesgos o medición de alucinación en modelos de tamaño medio.
-- Generación de texto en pipelines offline: al no requerir APIs externas, puede integrarse en flujos por lotes (resúmenes, borradores, clasificación generativa) en máquinas con GPU de 24 GB o más.
-- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse on-premise, encaja en escenarios donde los datos no pueden salir de la organización, sujeto a validar previamente su calidad y licencia.
+- Tutoria matematica automatizada: el modelo puede resolver problemas aritmeticos y algebraicos mostrando el razonamiento paso a paso, adecuado para plataformas educativas que necesitan explicaciones detalladas con alta exactitud en problemas de nivel escolar (94,3% en GSM8K).
+- Verificacion de soluciones y generacion de problemas: dado su rendimiento en MATH-500 (92,2%), puede emplearse para generar y comprobar ejercicios de niveles 1 a 5, con especial solidez en niveles 1 y 2 (97,7% y 98,9%).
+- Asistente de razonamiento en entornos de investigacion: su modo pensamiento y su eficiencia de tokens (982 de media en GSM8K frente a 2.141 del base) lo hacen adecuado para pipelines donde el coste por token generado es relevante.
+- Generacion de cadenas de razonamiento para destilacion o anotacion: puede producir trazas de razonamiento matematico que sirvan como datos de entrenamiento para modelos menores, con la cautela de revisar posibles errores.
+- Despliegue en infraestructura limitada mediante la variante AWQ 4 bits: reduce el uso de VRAM aproximadamente un 50% respecto al modelo en bf16, lo que permite servir el modelo en GPUs de gama alta para consumidores.
+- Integracion en aplicaciones conversacionales con requisitos de razonamiento: al usar el chat template estandar de transformers, puede desplegarse detras de endpoints compatibles y gestionar conversaciones multi-turno con contexto gestionado por el servidor.
+- Evaluacion comparativa de eficiencia: util como referencia en estudios que midan la relacion entre longitud de razonamiento y exactitud frente al modelo base Qwen3.5-9B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+GSM8K (conjunto de test completo, 1.319 preguntas, thinking mode, greedy decoding, bf16):
+
+| Modelo | Exactitud | Margen 95% | Tokens generados (media) | Razonamiento incompleto |
+|---|---|---|---|---|
+| MAX-9B | 94,3% | ±1,2 | 982 | 34 |
+| Qwen3.5-9B (base) | 89,1% | ±1,7 | 2.141 | 88 |
+
+En las 1.215 preguntas donde ambos modelos completaron el razonamiento: MAX-9B 98,0% frente a 95,9% del base.
+
+MATH-500 (500 problemas):
+
+| Configuracion | Exactitud | Razonamiento incompleto |
+|---|---|---|
+| Limite de 10.000 tokens | 435/500 = 87,0% | 55 |
+| Reintento de incompletas con 16.000 tokens | 461/500 = 92,2% (margen 95% aprox. ±2,4) | 27 |
+
+Desglose por nivel en MATH-500 (primer intento): nivel 1, 42/43 (97,7%); nivel 2, 89/90 (98,9%); nivel 3, 98/105 (93,3%); nivel 4, 117/128 (91,4%); nivel 5, 115/134 (85,8%). Tokens generados medios en el primer intento: 3.126.
+
+No se han publicado resultados de otros benchmarks (MMLU, HumanEval, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en bf16/fp16: aproximadamente 18 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, 20-24 GB como mínimo para contextos cortos.
-- VRAM estimada en cuantización de 8 bits: en torno a 9-10 GB para pesos, más overhead; requiere cuantización propia, ya que el autor no publica versiones cuantizadas.
-- VRAM estimada en cuantización de 4 bits (GPTQ/AWQ/GGUF Q4): aproximadamente 5-6 GB para pesos, más overhead; igualmente requiere generar la cuantización a partir del checkpoint original.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para inferencia en precisión completa sin restricciones de contexto; RTX 4090 (24 GB) para bf16 con contextos moderados; RTX 3090 (24 GB) en las mismas condiciones.
-- GPU de consumo: cabe en RTX 4090 y RTX 3090 en bf16 con contexto limitado; en tarjetas de 12-16 GB (RTX 4070 Ti, RTX 4080) solo mediante cuantización a 8 o 4 bits.
-- Opciones de despliegue: `transformers` de forma nativa; vLLM y TGI para serving de alto throughput (requieren verificar compatibilidad con la arquitectura `qwen3_5_text`); llama.cpp/Ollama solo tras convertir los pesos a GGUF, conversión no publicada por el autor.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada en bf16: aproximadamente 18 GB solo para pesos (8,95B parametros x 2 bytes), mas overhead de activaciones y KV cache; se recomienda al menos 24 GB para inferencia comoda.
+- Variante AWQ 4 bits: reduce el uso de VRAM aproximadamente un 50% segun la model card, lo que situa los pesos en torno a 5-6 GB y permite su uso en GPUs de consumo con 8-12 GB, dependiendo de la longitud de contexto.
+- GPUs recomendadas: A100 (40/80 GB), H100 (80 GB) o RTX 4090 (24 GB) para bf16; RTX 3090/4080 o superiores para la variante AWQ.
+- Cabe en GPU de consumo: si, en RTX 4090 en bf16 (24 GB, ajustado) y en GPUs de 8-12 GB con la variante AWQ 4 bits.
+- Opciones de despliegue: transformers (referencia oficial), vLLM, TGI o llama.cpp/Ollama si se generan pesos GGUF (no se proporcionan GGUF oficiales en la informacion disponible); la variante AWQ requiere un runtime compatible con AWQ (vLLM, AutoAWQ).
+- Latencia y throughput: no disponibles; el modelo genera aproximadamente 982 tokens de media en GSM8K, lo que reduce el coste de generacion frente al base.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| MAX-9B | ≈8,95B | no disponible | no disponible | Hugging Face, safetensors | Model card vacía, 0 descargas |
-| Qwen2.5-7B | 7,6B | 32.768 tokens (128K en variantes ampliadas) | Apache 2.0 (mayoría de variantes) | Hugging Face, GGUF, AWQ, GPTQ | Documentación completa y benchmarks publicados |
-| Llama 3.1 8B | 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, GGUF, múltiples cuantizaciones | Amplio ecosistema y evaluación pública |
-| Mistral 7B v0.3 | 7,2B | 32.000 tokens | Apache 2.0 | Hugging Face, GGUF, AWQ | Referencia habitual en la franja 7-8B |
+| Modelo | Parametros | Contexto | GSM8K | MATH-500 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MAX-9B | ~8,95B | no disponible | 94,3% | 92,2% | Apache 2.0 | Hugging Face (safetensors y AWQ) |
+| Qwen3.5-9B (base) | ~9B | no disponible | 89,1% | no disponible | no disponible | Hugging Face |
+| Otros modelos de razonamiento de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación es estructural: MAX-9B no publica contexto, licencia ni resultados, por lo que no puede contrastarse su rendimiento real frente a estas alternativas. La etiqueta `qwen3_5_text` sugiere parentesco con la familia Qwen, pero sin confirmación del autor ni versión concreta.
+La unica comparativa documentada por el autor es frente a su modelo base Qwen3.5-9B en GSM8K. No se dispone de datos de benchmarks de terceros ni de comparaciones con otros modelos de razonamiento del mismo tamano en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de model card: no hay información sobre datos de entrenamiento, alineación, evaluación ni uso previsto, lo que impide auditar sesgos o riesgos.
-- Licencia no declarada: no puede asumirse uso comercial permitido; es imprescindible contactar con el autor antes de cualquier despliegue en producción.
-- Idiomas no declarados: se desconoce si el modelo está entrenado en castellano o si su rendimiento en este idioma es aceptable.
-- Contexto desconocido: no puede planificarse su uso en tareas de contexto largo sin medir previamente la ventana efectiva.
-- Riesgo de alucinación no cuantificado: sin benchmarks ni evaluaciones, no hay evidencia de fiabilidad factual.
-- Sesgos desconocidos: al no documentarse el corpus, no pueden identificarse sesgos de género, etnia, idioma o dominio.
-- Madurez del repositorio: 0 descargas, 1 like y creación/actualización en el mismo minuto indican una publicación sin validación comunitaria.
-- Compatibilidad de serving no verificada: el soporte en vLLM, TGI o llama.cpp para la arquitectura `qwen3_5_text` debe comprobarse empíricamente.
-- Sin cuantizaciones oficiales: cualquier GGUF, AWQ o GPTQ tendrá que generarlo el usuario, con el riesgo de degradación asociado.
-- Fecha de creación futura respecto a la mayoría de checkpoints públicos: conviene verificar la procedencia y el origen de los pesos antes de confiar en ellos.
+- La decodificacion greedy puede provocar bucles de repeticion en modelos de razonamiento, lo que infla el numero de respuestas incompletas; no se han ejecutado evaluaciones con sampling recomendado ni con multiples semillas.
+- Diferencias de pocos puntos en benchmarks de este tamano estan dentro del ruido estadistico (margen combinado de aproximadamente ±2,1 en GSM8K).
+- No se realizo una comprobacion formal de descontaminacion contra el test de GSM8K antes del entrenamiento; la auditoria posterior encontro 2 coincidencias exactas normalizadas en 557.007 registros, pero no cubre datos de preentrenamiento del modelo base, parafrasis semanticas ni casi duplicados.
+- En MATH-500 no se ejecuto una comparacion con el modelo base bajo las mismas condiciones, y la exactitud sobre preguntas con razonamiento completado sobreestima el rendimiento global al excluir las mas dificiles (27 quedaron incompletas incluso con 16.000 tokens).
+- El modelo puede alucinar en problemas matematicos fuera de la distribucion de entrenamiento; el rendimiento cae en el nivel 5 de MATH-500 (85,8%).
+- No se declaran idiomas soportados, por lo que el rendimiento multilingue es desconocido.
+- El campo de licencia del repositorio figura como no disponible, aunque la model card declara Apache 2.0; conviene verificar la licencia antes de uso comercial.
+- No se documentan capacidades de tool calling ni de agentes, lo que limita su uso en pipelines que dependan de function calling.
+- La auditoria de contaminacion no cubre el Identity Adapter v5, que no fue auditado de forma independiente.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Maxenith/MAX-9B
-- Perfil del autor: https://huggingface.co/Maxenith
-- Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
+- Variante AWQ 4 bits: https://huggingface.co/Maxenith/MAX-9B-AWQ
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Script de evaluacion GSM8K: gsm8k_full_final.py (incluido en el repositorio del modelo)
+- Resultados GSM8K: results_MAX-9B.json y results_Original.json (en el repositorio)
+- Resultados MATH-500: evals/math500_max9b.json y evals/math500_rerun16k.json (en el repositorio)
+- Auditoria de contaminacion: evals/ (informe detallado en el repositorio)
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
+- Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

@@ -2,103 +2,103 @@
 
 ## Resumen
 
-Hy4-flash-W4A16-Merlin es una cuantización de 4 bits de los expertos enrutados del modelo Hy4-flash de Tencent, publicada por el usuario halt95. El modelo base es un MoE (mixture of experts) de 220.000 millones de parámetros totales, de los cuales 64.000 millones corresponden a los parámetros Engram. Esta build reduce el peso en disco y en memoria a 152,6 GB manteniendo la ventana de contexto completa de 262.144 tokens sobre cuatro GPU de 24 GB, algo que el checkpoint original en BF16 no permite.
+Hy4-flash-W4A16-Merlin es una compilación cuantizada del modelo Hy4-flash de Tencent, un modelo de lenguaje de arquitectura MoE (Mixture of Experts) con 89.558 millones de parámetros totales según los safetensors del repositorio. La cuantización, realizada por el usuario halt95, aplica W4A16 (pesos de 4 bits, activaciones de 16 bits) a los expertos enrutados mediante round-to-nearest simétrico con grupo de tamaño 128 y sin calibración, mientras que las proyecciones de atención se mantienen en FP8 y el resto de componentes en BF16. El resultado ocupa 152,6 GB y está diseñado para ejecutarse en cuatro GPU de 24 GB (RTX 3090) con el contexto completo de 262.144 tokens.
 
-La ficha se publica dentro del ecosistema Merlin, un fork de vLLM optimizado para GPU Ampere y Ada. El checkpoint requiere Merlin 3.0.2.2 o superior; ni las versiones anteriores de Merlin ni vLLM estándar pueden servirlo. Los expertos enrutados se almacenan en W4A16 (pesos de 4 bits, activaciones de 16 bits) mediante cuantización RTN simétrica con grupo de 128 y sin calibración, mientras que las proyecciones de atención que Tencent distribuye en FP8 conservan sus bytes originales y las tablas Engram residen en RAM del host.
+El modelo resuelve el problema de desplegar un MoE de gran tamaño con contexto largo en hardware de consumo o de gama media, algo imposible con el checkpoint original en BF16. Para ello se apoya en el motor Merlin, un fork de vLLM optimizado para arquitecturas Ampere y Ada, que incorpora decodificación especulativa con un drafter DFly2, caché KV en FP8 y offload de las tablas Engram a RAM del host. Es relevante porque demuestra que un modelo de 220B totales (incluyendo 63,5B de parámetros Engram) puede servirse con 262K de contexto en cuatro RTX 3090 sin NVLink, con velocidades de decodificación de 75,7 tok/s a 4K y 89,3 tok/s a 262K en un solo stream.
 
-El interés actual del checkpoint es práctico: demuestra que un MoE de 220B con contexto de 256K puede desplegarse en hardware consumer de gama alta (RTX 3090) sin NVLink, con un pool de KV en FP8 en VRAM y decodificación especulativa mediante un drafter DFly2 de 5 capas. El autor reporta 75,7 tok/s en decodificación de un solo flujo a 4K y 1.608 tok/s de prefill sobre un prompt de 100K.
+La ficha se centra en la versión cuantizada W4A16, que requiere Merlin 3.0.2.2 o superior; ni las versiones anteriores de Merlin ni vLLM estándar pueden servir este checkpoint. El modelo base es tencent/Hy4-flash y la licencia es la Tencent Hy License 1.0, que impone restricciones de uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (latent-MoE) con Engram y decodificación especulativa DFly2 |
-| Parámetros totales | 89.558.262.182 (safetensors del checkpoint); 220B en el modelo base, incluidos 64B de Engram |
-| Parámetros activos | 16 expertos enrutados de 512 por capa (no se indica el total activo) |
+| Arquitectura | MoE (Mixture of Experts) con expertos enrutados, atención con proyecciones FP8, tablas Engram y drafter DFly2 para decodificación especulativa |
+| Parametros totales | 89.558.262.182 (según safetensors); la model card del autor menciona 220B totales incluyendo 63,5B de parámetros Engram |
+| Parametros activos | 512 expertos por capa, 16 activos (no se especifica el número exacto de parámetros activos) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantización | W4A16 RTN simétrica (grupo 128) en expertos enrutados; FP8 block-128 en proyecciones de atención; FP8 en tablas Engram; INT4 en el drafter DFly2; BF16 en el resto; KV cache FP8 (`fp8_ds_mla`) |
-| Idiomas soportados | en |
-| Licencia | Tencent Hy License 1.0 (`tencent-hy-license`) |
-| Formato de pesos | safetensors con layout `compressed-tensors` (149 shards, 191.005 tensores) |
+| Tipos de cuantizacion | W4A16 (RTN simétrico, grupo 128) para expertos enrutados; FP8 block-128 para proyecciones de atención; FP8 para tablas Engram; INT4 para capas lineales del drafter; BF16 para el resto |
+| Idiomas soportados | en (inglés) |
+| Licencia | tencent-hy-license (Tencent Hy License 1.0) |
+| Formato de pesos | safetensors, layout compressed-tensors; requiere el motor Merlin (fork de vLLM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Hy4-flash es un MoE con 512 expertos enrutados por capa de los que se activan 16, y una arquitectura que el autor denomina latent-MoE. Incorpora además cuatro tablas Engram (64B de parámetros en el modelo original) que actúan como memoria asociativa y que en esta build se mantienen en FP8 con una escala por fila, alojadas en RAM del host fijada (`EngramConfig cpu_offload=True`) en lugar de en VRAM. El checkpoint incluye un drafter DFly2 de 5 capas para decodificación especulativa, con capas lineales en INT4 y normas y proyecciones pequeñas en BF16.
+La arquitectura es un MoE con 512 expertos enrutados por capa y 16 activos, complementado con tablas Engram (cuatro tablas de 660 millones de filas de 96 valores cada una) que actúan como memoria externa y se mantienen en RAM del host en formato FP8. Las proyecciones de atención `q_b_proj`, `o_proj` y `linear_gate` de las capas 1 a 41 conservan los bytes FP8 del checkpoint tencent/Hy4-flash-FP8, mientras que el resto de tensores (capa 0, otras proyecciones de atención, expertos compartidos, routers, indexers, normas, lm_head, embeddings y encoder de visión) permanecen en BF16. La cuantización W4A16 de los expertos usa round-to-nearest simétrico con grupo de tamaño 128 y sin calibración, lo que simplifica el proceso pero puede introducir cierta pérdida de calidad frente a métodos con calibración.
 
-La cuantización aplicada es puramente post-entrenamiento: no hay calibración ni fine-tuning. Los expertos enrutados usan round-to-nearest simétrico con grupo de 128 sobre pesos de 4 bits y activaciones de 16 bits. Las proyecciones `q_b_proj`, `o_proj` y `linear_gate` de las capas 1 a 41 copian sin modificar los bytes FP8 block-128 publicados por Tencent en `tencent/Hy4-flash-FP8`. El resto de tensores (capa 0, proyecciones de atención restantes, expertos compartidos, proyecciones latentes, routers, indexers, normas, `lm_head`, embedding de tokens y encoder de visión) permanece en BF16. El embedding de tokens se mantiene en RAM del host durante el servicio. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base.
-
-Existe una segunda build en la rama `engram-bf16` que conserva las filas Engram en BF16 originales de Tencent (unos 118 GiB fijados en RAM, 126,7 GB) y que el autor no ha podido probar por falta de RAM en su host de cuatro tarjetas. La build por defecto (`main`) usa Engram en FP8 con unos 60 GiB (64,68 GB) fijados en RAM.
+El checkpoint incluye un drafter DFly2 de 5 capas con capas lineales en INT4, utilizado para decodificación especulativa. La caché KV se almacena en FP8 con formato `fp8_ds_mla`. El modelo base fue entrenado por Tencent; no se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación técnica destacable de esta compilación es la combinación de cuantización W4A16 en expertos, offload de tablas Engram a RAM del host, decodificación especulativa con DFly2 y caché KV en FP8, todo orquestado por el motor Merlin para permitir el despliegue en cuatro GPU de 24 GB con contexto completo.
 
 ## Capacidades
 
 - Generación de texto y conversación multi-turno en inglés.
-- Razonamiento con modo thinking activable y nivel de esfuerzo de razonamiento configurable (las mediciones se hicieron con `thinking on` y `reasoning effort high`).
-- Contexto largo de hasta 262.144 tokens, con pool de KV en FP8 en VRAM.
-- Decodificación especulativa mediante el drafter DFly2 incluido en el checkpoint.
-- Cuantización de pesos y activaciones compatible con el motor Merlin para GPU Ampere (sm86) y Ada.
-- El checkpoint contiene los pesos del encoder de visión, pero Merlin no los carga: la entrada de imágenes no está soportada en este despliegue.
-- No se documenta soporte de tool calling, function calling ni comportamiento agéntico multi-paso en la información disponible.
-- Idiomas: únicamente inglés según los metadatos del modelo.
+- Razonamiento con modo "thinking" activable y esfuerzo de razonamiento configurable (high en las mediciones).
+- Soporte de decodificación especulativa mediante el drafter DFly2, que acelera la generación.
+- Contexto largo de hasta 262.144 tokens, adecuado para documentos extensos y conversaciones prolongadas.
+- Tool calling y function calling: no se menciona explícitamente en la información disponible; el modelo base podría soportarlo, pero no está confirmado para esta compilación.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la información proporcionada.
+- Capacidades multilingües: solo inglés según la model card.
+- Visión: el encoder de visión está presente en los archivos, pero Merlin no lo carga, por lo que la entrada de imágenes no está soportada.
+- Audio: no disponible.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos en una sola pasada: con 262.144 tokens de contexto, el modelo puede ingerir contratos, informes o bases de código completas sin trocear, algo viable en cuatro RTX 3090 gracias al pool de KV en FP8.
-- Asistencia conversacional en inglés con razonamiento explícito: el modo thinking con esfuerzo alto permite generar cadenas de razonamiento antes de responder, útil en soporte técnico donde se requiere justificar conclusiones.
-- Despliegue en laboratorios con hardware consumer: el checkpoint está medido sobre 4× RTX 3090 sin NVLink a 220 W, lo que permite servir un MoE de 220B en infraestructura de gama alta de escritorio en lugar de clústeres de A100/H100.
-- Evaluación de cuantización W4A16 frente a BF16: el autor publica la divergencia KL contra el modelo BF16, lo que convierte este checkpoint en una referencia para estudiar el impacto de la cuantización de 4 bits en MoE de gran tamaño.
-- Investigación sobre decodificación especulativa: el drafter DFly2 en INT4 integrado permite medir tasas de aceptación y ganancias de throughput en un modelo real de 220B.
-- Servicio de inferencia de bajo coste por token: con 75,7 tok/s en decodificación de un solo flujo y 1.608 tok/s de prefill en 100K, es adecuado para cargas interactivas moderadas sobre hardware reutilizado.
-- Pruebas de motores de inferencia alternativos: al requerir Merlin 3.0.2.2 o superior, sirve para validar el fork de vLLM en Ampere frente a configuraciones estándar.
+- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 262.144 tokens de ventana, manteniendo el hilo de la conversación y el historial de interacciones sin truncamientos.
+- Análisis de documentos extensos: con 262K de contexto, puede procesar informes, contratos o artículos de investigación completos en una sola pasada, extrayendo información y respondiendo preguntas sobre el contenido.
+- Generación de código en producción: aunque no se confirma tool calling, el modelo base está orientado a generación de texto y podría integrarse en pipelines de revisión de código o generación de documentación técnica, siempre que se valide su calidad en este dominio.
+- Asistentes de razonamiento prolongado: el modo "thinking" con esfuerzo alto permite abordar problemas que requieren cadenas de razonamiento largas, como planificación o resolución de problemas complejos.
+- Procesamiento de corpus legales o científicos: la ventana de 262K tokens permite analizar múltiples documentos relacionados y generar resúmenes o comparativas sin perder contexto.
+- Despliegue en infraestructura de gama media: al caber en cuatro RTX 3090 (24 GB cada una), es adecuado para laboratorios o empresas con hardware Ampere que no pueden permitirse A100/H100, manteniendo contexto completo y velocidades de decodificación de 75-89 tok/s.
+- Servicio de chat con latencia controlada: la decodificación especulativa y la caché KV en FP8 permiten servir un solo stream con latencia aceptable para aplicaciones interactivas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor sí publica métricas de velocidad medidas con Merlin 3.0.2.2 (release candidate) sobre 4× RTX 3090 sin NVLink, 220 W y P2P activado, el 2026-11-21:
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye mediciones de velocidad, pero no de calidad (MMLU, HumanEval, GSM8K, etc.). Se menciona una comparación de divergencia KL contra BF16 en la sección Quality, pero no se proporcionan los valores numéricos en la información extraída.
 
-| Métrica | Condiciones | Valor |
-|---|---|---|
-| Decodificación, un flujo | Thinking on, effort high, T=0, prefill en frío, mediana de 3 envíos, 4K | 75,7 tok/s |
-| Prefill | Envío en frío, prompt de 100K, tokens / tiempo hasta primer token | 1.608 tok/s |
-| Pool de KV en VRAM | FP8 (`fp8_ds_mla`), íntegramente en VRAM | 609.398 tokens |
-| Divergencia KL frente a BF16 | Build FP8 Engram por defecto | Reportada en la sección Quality de la model card (valor no incluido en la información disponible) |
+| Metrica | Valor |
+|---|---|
+| Decodificacion a 4K (1 stream, K=3) | 75,7 tok/s |
+| Decodificacion a 262K (1 stream, K=5) | 89,3 tok/s |
+| Prefill en prompt de 100K | 1.608 tok/s |
+| Pool de KV en VRAM | 609.398 tokens (FP8) |
+
+Medido en Merlin 3.0.2.2 sobre 4× RTX 3090 sin NVLink, 220 W, P2P activado, el 2026-11-21.
 
 ## Requisitos de hardware
 
-- VRAM: el checkpoint pesa 152,6 GB y está medido sobre 4× RTX 3090 de 24 GB (96 GB en total), con las tablas Engram y el embedding de tokens en RAM del host.
-- RAM del host: unos 60 GiB (64,68 GB) fijados para Engram en FP8 en la build por defecto; la build `engram-bf16` requiere unos 118 GiB fijados y unos 198 GiB de RAM disponibles antes del arranque.
-- GPU recomendadas: RTX 3090 (Ampere, sm86) es la plataforma validada; el motor está optimizado para Ampere y Ada. No se documenta soporte en Hopper ni en otras arquitecturas.
-- Cabe en GPU consumer: sí, en cuatro RTX 3090 de 24 GB; no se documenta una configuración con menos tarjetas.
-- Despliegue: exclusivamente mediante Merlin 3.0.2.2 o superior (`tools/merlin/launch.py` o `./setup.sh --model hy4flash`). vLLM estándar y versiones anteriores de Merlin no pueden servirlo.
-- Latencia y throughput: 75,7 tok/s de decodificación de un solo flujo a 4K y 1.608 tok/s de prefill con prompt de 100K, según las mediciones del autor.
+- VRAM estimada para inferencia: los pesos sin Engram ocupan 88,0 GB en las GPU; las tablas Engram (64,7 GB en FP8) se alojan en RAM del host. Se necesitan cuatro GPU de 24 GB (96 GB totales) para alojar los pesos y la caché KV.
+- GPU recomendadas: RTX 3090 (Ampere, sm86) es la plataforma medida; el motor Merlin está optimizado para Ampere y Ada. No se especifican otras GPU compatibles.
+- ¿Cabe en consumer GPU? Sí, en cuatro RTX 3090 de 24 GB. No cabe en una sola GPU de consumo.
+- Opciones de despliegue: exclusivamente el motor Merlin 3.0.2.2 o superior (fork de vLLM). No es compatible con vLLM estándar ni con llama.cpp, Ollama o TGI.
+- Latencia y throughput: decodificación de 75,7 tok/s a 4K y 89,3 tok/s a 262K en un solo stream; prefill de 1.608 tok/s en un prompt de 100K. Medido con thinking activado y esfuerzo alto, T=0, mediana de 3 envíos en frío.
+- RAM del host: aproximadamente 60 GiB para Engram en FP8 (unos 140 GiB disponibles antes del arranque). Para la variante BF16 Engram se necesitan unos 118 GiB y 198 GiB disponibles, respectivamente; esta variante no fue probada en hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Despliegue |
-|---|---|---|---|---|---|
-| halt95/Hy4-flash-W4A16-Merlin | 89,6B en safetensors (220B en base) | 262.144 | W4A16 + FP8 + INT4 drafter | Tencent Hy License 1.0 | Merlin ≥ 3.0.2.2 |
-| tencent/Hy4-flash | 220B (64B Engram) | 262.144 | BF16 | Tencent Hy License 1.0 | vLLM estándar |
-| tencent/Hy4-flash-FP8 | 220B (64B Engram) | 262.144 | FP8 block-128 | Tencent Hy License 1.0 | vLLM estándar |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo base tencent/Hy4-flash y su versión FP8 (tencent/Hy4-flash-FP8) son las referencias directas, pero no se aportan datos de rendimiento comparativo.
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento de calidad frente a estos u otros modelos de la misma categoría. La comparativa se limita a parámetros, contexto, formato y licencia.
+| Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| halt95/Hy4-flash-W4A16-Merlin | 89,5B (safetensors); 220B según model card | 262.144 | Tencent Hy License 1.0 | Hugging Face, requiere Merlin |
+| tencent/Hy4-flash | No disponible | No disponible | Tencent Hy License 1.0 | Hugging Face |
+| tencent/Hy4-flash-FP8 | No disponible | No disponible | Tencent Hy License 1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Solo inglés: los metadatos del modelo declaran únicamente `en`, sin soporte multilingüe documentado.
-- Sin visión en este despliegue: los pesos del encoder están en los ficheros, pero Merlin no los carga, por lo que no se aceptan imágenes.
-- Dependencia estricta de Merlin 3.0.2.2 o superior; no es servible con vLLM estándar ni con versiones anteriores del fork, lo que limita la portabilidad.
-- La cuantización W4A16 sin calibración (RTN) introduce degradación de calidad respecto a BF16; el autor publica la divergencia KL pero no se incluye el valor en la información disponible.
-- La build `engram-bf16` no ha sido probada en hardware por falta de RAM del host del autor; no hay datos de velocidad ni calidad para esa variante.
-- El checkpoint tiene 0 descargas y 0 likes en el momento de la consulta, y la model card contiene marcadores `TODO-AT-UPLOAD` sin resolver en la tabla de ficheros, lo que indica que la publicación puede estar incompleta.
-- Licencia Tencent Hy License 1.0: es necesario revisar sus términos antes de cualquier uso comercial, ya que no es una licencia de código abierto estándar.
-- Riesgo de alucinación y sesgos: no se documentan evaluaciones de sesgo ni de robustez en la información disponible.
-- El uso de RAM del host es elevado (unos 60 GiB fijados en la build por defecto), lo que condiciona el nodo de despliegue.
+- Sesgos conocidos: no se documentan en la información disponible; al ser un modelo entrenado principalmente en inglés, puede presentar sesgos culturales y lingüísticos propios de los datos de entrenamiento.
+- Riesgo de alucinación: no se cuantifica; como todo modelo generativo, puede producir información falsa o inventada, especialmente en dominios especializados.
+- Limitaciones de contexto o idioma: solo soporta inglés según la model card; el contexto máximo es de 262.144 tokens, pero no se garantiza un rendimiento uniforme en todo el rango.
+- Restricciones de licencia: la Tencent Hy License 1.0 puede imponer restricciones al uso comercial; es necesario revisar los términos completos antes de desplegar en producción.
+- Caveat importante: requiere Merlin 3.0.2.2 o superior; no funciona con vLLM estándar ni con otras herramientas de inferencia. La variante BF16 Engram no ha sido probada en hardware y requiere más RAM del host.
+- La cuantización W4A16 sin calibración puede degradar la calidad respecto al modelo original en BF16; no se proporcionan métricas de calidad comparativas en la información disponible.
+- El encoder de visión está presente pero no se carga, por lo que no hay soporte de imágenes.
+- El modelo está pensado para texto únicamente; no se mencionan capacidades de audio u otras modalidades.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/halt95/Hy4-flash-W4A16-Merlin
-- Modelo base: https://huggingface.co/tencent/Hy4-flash
-- Versión FP8 del modelo base: https://huggingface.co/tencent/Hy4-flash-FP8
-- Motor Merlin (fork de vLLM): https://github.com/halt95/merlin-engine
-- Changelog de Merlin con las cifras medidas: https://github.com/halt95/merlin-engine/blob/merlin-v3.0.2.2/docs/CHANGELOG.md#measured-on-merlin-3022
-- Licencia: https://huggingface.co/halt95/Hy4-flash-W4A16-Merlin/blob/main/LICENSE
-- Discord del autor: https://discord.gg/jVDYAwdGzt
-- Ko-fi del autor: https://ko-fi.com/halt95
+- [Hugging Face: halt95/Hy4-flash-W4A16-Merlin](https://huggingface.co/halt95/Hy4-flash-W4A16-Merlin)
+- [Modelo base: tencent/Hy4-flash](https://huggingface.co/tencent/Hy4-flash)
+- [Versión FP8: tencent/Hy4-flash-FP8](https://huggingface.co/tencent/Hy4-flash-FP8)
+- [Repositorio del motor Merlin](https://github.com/halt95/merlin-engine)
+- [Changelog de Merlin 3.0.2.2](https://github.com/halt95/merlin-engine/blob/merlin-v3.0.2.2/docs/CHANGELOG.md#measured-on-merlin-3022)
+- [Licencia Tencent Hy License 1.0](https://huggingface.co/halt95/Hy4-flash-W4A16-Merlin/blob/main/LICENSE)
+- [Discord de la comunidad](https://discord.gg/jVDYAwdGzt)
+- [Ko-fi del autor](https://ko-fi.com/halt95)

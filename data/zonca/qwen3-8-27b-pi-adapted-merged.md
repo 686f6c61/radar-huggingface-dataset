@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted-merged es un checkpoint publicado por zonca que combina los pesos del modelo base Qwen/Qwen3.8-27B con el adaptador LoRA harness-hub/Qwen3.8-27B-pi-adapted, entrenado por Hugging Face con AsyncGRPO dentro del agente de programación pi. El resultado se distribuye como un merge en float16 (18 shards de safetensors, unos 55 GB), pensado para que cualquiera pueda cuantizarlo a formatos de despliegue sin perder la cabeza de predicción multi-token (MTP) del modelo original.
+zonca/Qwen3.8-27B-pi-adapted-merged es un checkpoint derivado de Qwen/Qwen3.8-27B en el que se ha fusionado (merge) el adaptador LoRA harness-hub/Qwen3.8-27B-pi-adapted, entrenado por Hugging Face con AsyncGRPO dentro del agente de programación pi (earendil-works/pi). El resultado se publica en float16 en lugar de bfloat16 para preservar la resolución de los deltas del adaptador, y conserva intactos los tensores de la cabeza de predicción multi-token (MTP), lo que habilita decodificación especulativa nativa en el motor MLX de Ollama sobre Apple Silicon.
 
-El adaptador aporta, según su propia model card, mejoras sustanciales en tareas de agente de código: SWE-bench Pro (hard 51) pasa del 39,2% al 64,7% y Terminal-Bench 2.1 del 39,5% al 55,8%, con menos de la mitad de turnos por tarea resuelta. Este repositorio no añade evaluación propia: su única afirmación es que el merge es fiel al adaptador y conserva los tensores MTP, lo que permite decodificación especulativa en el motor MLX de Ollama (unos 30 tok/s frente a los ~15 tok/s que permitiría el ancho de banda de memoria en un M4 Pro).
+El modelo resuelve un problema práctico de distribución: no existía una copia fusionada de este adaptador que mantuviera la cabeza MTP y que sirviera como base para cuantizar. Al publicar un checkpoint fusionado en float16, cualquier usuario puede generar sus propios artefactos downstream (MLX nvfp4 para Ollama o GGUF para llama.cpp) sin perder el adaptador ni la capacidad de auto-drafting.
 
-Es relevante porque no existía una copia mergeada de este adaptador que mantuviera la cabeza MTP en un formato cuantizable, y porque el merge se hizo en float16 en lugar de bfloat16 para preservar la resolución del delta del LoRA (RMS ~1e-5 sobre pesos de magnitud 0,1-0,9). El modelo es multimodal (pipeline image-text-to-text), está etiquetado solo en inglés y se publica bajo licencia Apache 2.0.
+Con 27.781.427.952 parámetros (unos 27,8 mil millones) y un repositorio de 55,6 GB repartido en 18 shards de safetensors, se trata de un modelo multimodal image-text-to-text de la familia qwen3.5/qwen3.8, licencia Apache 2.0, orientado a tareas de agente de código. Su relevancia actual radica en las mejoras reportadas por el adaptador original: SWE-bench Pro (hard 51) de 39,2% a 64,7% y Terminal-Bench 2.1 de 39,5% a 55,8%, con menos de la mitad de turnos por tarea resuelta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con 64 capas, de las cuales 16 son de atención completa; incluye torre de visión y cabeza de predicción multi-token (MTP) con 15 tensores `mtp.*` (familia Qwen3.8) |
-| Parametros totales | 27B (según denominación del modelo base) |
+| Arquitectura | Transformer de la familia qwen3.5/qwen3.8 con 16 capas de atención completa y 64 capas totales, cabeza de predicción multi-token (MTP) y torre de visión |
+| Parametros totales | 27.781.427.952 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | El repo publica float16; el autor documenta conversión a nvfp4 (MLX nativo de Ollama) y a GGUF con `llama-quantize` (por ejemplo Q4_K_M) |
+| Tipos de cuantizacion | El repositorio se publica en float16; el autor documenta conversión a nvfp4 nativo de MLX (Ollama) y a GGUF (llama.cpp); no se publican builds oQ/oQ4e |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (18 shards `model-*.safetensors` en float16, ~55 GB), `config.json` con `dtype: float16`, `model.safetensors.index.json`, tokenizer, chat template y ficheros de preprocesador; `merge_report.json` con el registro por tensor del merge |
+| Formato de pesos | safetensors (18 shards, float16, ~55 GB), más config.json, model.safetensors.index.json, tokenizer, chat template y ficheros de preprocesador; merge_report.json con el registro por tensor |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de 64 capas con 16 capas de atención completa, torre de visión (pipeline image-text-to-text) y una cabeza de predicción multi-token (MTP) de 15 tensores que habilita autodrafting para decodificación especulativa. Sobre él se aplicó el adaptador LoRA `harness-hub/Qwen3.8-27B-pi-adapted`, entrenado por Hugging Face con AsyncGRPO dentro del agente de programación pi (repositorio earendil-works/pi). El LoRA tiene r=32 y alpha=64 (escala 2,0, convención PEFT) y toca 256 módulos: `q_proj`, `k_proj`, `v_proj` y `o_proj` en las 16 capas de atención completa, y `gate_proj`, `up_proj` y `down_proj` en las 64 capas. La torre de visión, embeddings, norms y los 15 tensores `mtp.*` se copian sin modificar.
+El modelo base es un transformer de la familia qwen3.5/qwen3.8 con 64 capas, de las cuales 16 son de atención completa, más una torre de visión (pipeline image-text-to-text) y una cabeza MTP de 15 tensores `mtp.*` que permite auto-drafting para decodificación especulativa. El adaptador LoRA se entrenó con AsyncGRPO dentro del agente de programación pi y afecta a 256 módulos: `q_proj`, `k_proj`, `v_proj` y `o_proj` en las 16 capas de atención completa, y `gate_proj`, `up_proj` y `down_proj` en las 64 capas. El rango es r = 32 con alpha = 64 (escala 2.0, convención de PEFT).
 
-El merge se calcula en float32 como `W + (alpha / r) * B @ A` y se escribe en float16, no en bfloat16: el delta del LoRA tiene un RMS de ~1e-5 frente a pesos con máximo absoluto de 0,1 a 0,9, es decir, un cambio de ~1e-4 por peso, por debajo de la resolución de bfloat16 a esa magnitud. Según mediciones citadas en la model card, en bfloat16 sobrevive entre el 65% y el 82% del delta, mientras que en float16 sobrevive entre el 99,9% y el 100%. Los tensores no tocados por el adaptador se promocionan de bfloat16 a float16 de forma exacta. El proceso se ejecuta en streaming, shard a shard, con un pico de memoria inferior a 1 GB, y se verificó antes de publicar: todos los tensores base presentes, dtype float16, formas sin cambios, tensores no tocados bit-idénticos al base y cada tensor mergeado bit-idéntico a una recomputación independiente con `einsum`. Los scripts `merge_lora.py` y `verify_merged.py` son genéricos para cualquier checkpoint shardeado y cualquier LoRA PEFT.
+La fusión se realizó en float32 con la fórmula `W + (alpha / r) * B @ A` y se escribió en float16, no en bfloat16. El motivo es cuantitativo: el delta del LoRA tiene un RMS de aproximadamente 1e-5 frente a pesos con máximo absoluto de 0,1 a 0,9, es decir, un cambio de alrededor de 1e-4 por peso, por debajo de la resolución de bfloat16 a esa magnitud. Una fusión independiente del mismo adaptador midió que en bfloat16 solo sobrevive entre el 65% y el 82% del delta, frente al 99,9-100% en float16. Los tensores no tocados por el adaptador se promocionan de bfloat16 a float16 de forma exacta. El proceso se ejecutó en streaming, shard a shard, con un pico de memoria inferior a 1 GB, y se verificó que cada tensor fusionado fuera bit-idéntico a un recálculo independiente con `einsum`, que los tensores no tocados fueran bit-idénticos al base y que los 256 pares LoRA casaran con un tensor del base sin sobrantes.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés.
-- Capacidades multimodales de entrada imagen-texto (pipeline image-text-to-text, torre de visión incluida).
-- Agente de código: el adaptador fue entrenado dentro del agente pi para tareas de ingeniería de software multi-paso.
-- Uso de terminal y resolución de tareas tipo Terminal-Bench, con reducción de turnos por tarea según el autor del adaptador.
-- Decodificación especulativa mediante la cabeza MTP cuando se despliega en MLX (Ollama con cuantización nvfp4).
-- Compatibilidad con tool calling y flujos de agente: no se detalla explícitamente en la información disponible, aunque el entrenamiento con AsyncGRPO dentro de un agente de código lo hace plausible; no hay confirmación documentada.
-- Modo thinking: el adaptador se entrenó con thinking desactivado; debe enviarse `"think": false` o el equivalente en el cliente.
+- Generación de texto y razonamiento en inglés, con modo thinking desactivado en el adaptador (requiere enviar `"think": false` o el equivalente del cliente).
+- Programación y resolución de tareas de ingeniería de software dentro de un agente (entrenado específicamente para el agente pi).
+- Ejecución de tareas de terminal y flujos multi-paso (Terminal-Bench 2.1 en el adaptador original).
+- Entrada de imagen y texto (pipeline image-text-to-text, torre de visión preservada en la fusión).
+- Tool calling / function calling, con renderer y parser `qwen3.5` en Ollama si las llamadas salen malformadas.
+- Decodificación especulativa mediante la cabeza MTP cuando se ejecuta en el motor MLX (unos 30 tok/s de decode frente a los ~15 tok/s que permite el ancho de banda de memoria en un M4 Pro).
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Agente de código autónomo en local: desplegado con Ollama en Apple Silicon en nvfp4, el modelo conserva la cabeza MTP y la decodificación especulativa, lo que permite ejecutar bucles de agente sobre repositorios sin depender de la nube, a unos 30 tok/s en un M4 Pro según el autor.
-- Resolución de incidencias en CI/CD: el adaptador mejora SWE-bench Pro (hard 51) del 39,2% al 64,7% con menos de la mitad de turnos, lo que lo hace adecuado para pipelines que abren parches automáticos ante fallos de test.
-- Automatización de tareas de terminal: con Terminal-Bench 2.1 en 55,8% (frente a 39,5% del base), puede encadenar comandos, inspeccionar salidas y corregir errores en entornos tipo shell.
-- Asistente de refactorización con contexto visual: al aceptar entrada imagen-texto, puede recibir capturas de diagramas de arquitectura o de errores de IDE junto con el código y proponer cambios coherentes.
-- Evaluación de adaptadores LoRA en investigación: el repo sirve como checkpoint base float16 verificable para medir la fidelidad del merge y comparar contra el adaptador sin mergear bajo el arnés pi.
-- Generación de código con llama.cpp en hardware modesto: la conversión a GGUF Q4_K_M permite ejecutar el modelo en equipos sin Apple Silicon, aceptando la pérdida de la cabeza MTP y, por tanto, de la decodificación especulativa.
-- Base para cuantizaciones propias: al publicarse como float16 sin cuantizar, equipos con requisitos de precisión específicos pueden generar sus propios artefactos (nvfp4, oQ, Q4_K_M) sin partir de un binario ya degradado.
+- Agente de código autónomo en local: el adaptador se entrenó dentro del agente pi y eleva SWE-bench Pro (hard 51) de 39,2% a 64,7%, por lo que es adecuado para resolver issues y parchear repositorios con menos turnos por tarea.
+- Automatización de tareas de terminal: Terminal-Bench 2.1 sube de 39,5% a 55,8% con el adaptador, lo que lo hace útil para pipelines que ejecutan comandos, interpretan salida y corrigen errores de forma iterativa.
+- Desarrollo asistido en Apple Silicon: importado como nvfp4 nativo de MLX en Ollama, conserva los 15 tensores MTP y mantiene la decodificación especulativa a unos 30 tok/s en un M4 Pro, adecuado para sesiones interactivas de coding en portátil.
+- Integración en CI/CD como revisor de parches: al soportar tool calling y multi-step reasoning, puede conectarse a herramientas de build y test para proponer y validar cambios antes de fusionar.
+- Procesamiento de capturas y diagramas: al aceptar entrada image-text-to-text, puede analizar screenshots de errores o diagramas de arquitectura y generar explicaciones o código a partir de ellos.
+- Base para cuantización propia: al ser un checkpoint fusionado en float16 con nombres de tensor y fronteras de shard idénticos al base, sirve para generar builds GGUF con `convert_hf_to_gguf.py` o builds MLX adaptados al hardware del usuario.
+- Reproducción de experimentos de merge: los scripts de zonca/lora-merge-tools aceptan cualquier checkpoint shardeado y cualquier LoRA PEFT, por lo que el repositorio sirve como referencia verificable para fusionar adaptadores sin perder precisión.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son los del autor del adaptador, medidos sobre el adaptador sin mergear bajo el agente pi. El autor de este repositorio no ha realizado benchmarks propios.
+Los únicos datos publicados corresponden al adaptador original harness-hub/Qwen3.8-27B-pi-adapted, no a este checkpoint fusionado:
 
-| Benchmark | Base Qwen3.8-27B | Con adaptador pi (sin mergear) |
+| Benchmark | Base Qwen3.8-27B | Con adaptador pi |
 |---|---|---|
 | SWE-bench Pro (hard 51) | 39,2% | 64,7% |
 | Terminal-Bench 2.1 | 39,5% | 55,8% |
 
-Rendimiento de decodificación citado: ~30 tok/s en un M4 Pro con MLX y decodificación especulativa (MTP), frente a los ~15 tok/s que impondría el ancho de banda de memoria sin ella. No se han publicado resultados de benchmarks del checkpoint mergeado en la información disponible.
+El autor reporta además que el adaptador resuelve las tareas con menos de la mitad de turnos por tarea resuelta. No se han publicado resultados de benchmarks del checkpoint fusionado en la información disponible, ni mediciones de MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- Pesos publicados: 18 shards safetensors en float16, ~55 GB en total; el repo de Hugging Face ocupa 9,6 GB (posiblemente por compresión o LFS parcial), pero la descarga completa para conversión requiere unos 55 GB libres según el autor.
-- Inferencia en float16: no cabe en GPUs de consumo; requiere aproximadamente 55 GB de VRAM o memoria unificada, lo que apunta a A100 80 GB, H100 80 GB o Apple Silicon con 64 GB o más de memoria unificada.
-- Cuantización nvfp4 vía Ollama: pensada para Apple Silicon; el autor cita un M4 Pro como referencia de rendimiento.
-- GGUF Q4_K_M vía llama.cpp: permite desplegar en GPUs de consumo con suficiente VRAM para un modelo de 27B cuantizado a 4 bits; no se especifica la VRAM exacta en la información disponible.
-- Despliegue: MLX nativo a través de Ollama (`ollama create -q nvfp4`), llama.cpp (`convert_hf_to_gguf.py` + `llama-quantize`). No se mencionan vLLM ni TGI en la documentación del repo.
-- Latencia y throughput: ~30 tok/s en M4 Pro con MLX y MTP; ~15 tok/s sin decodificación especulativa en el mismo hardware. Sin datos para otras plataformas.
-- `ollama create` necesita unos 55 GB de disco libre para la descarga más el artefacto convertido, y cuantiza en la propia máquina.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 55,6 GB en float16, por lo que la inferencia sin cuantizar requiere al menos esa cantidad de memoria unificada o VRAM.
+- GPU recomendadas: no disponibles en la información proporcionada; el autor documenta explícitamente el uso en Apple Silicon (M4 Pro) mediante MLX y Ollama.
+- Cabe en consumer GPU: no confirmado; en float16 son necesarios ~55 GB, por lo que no cabe en GPUs de consumo de 24 GB sin cuantizar. La conversión a nvfp4 o GGUF reduciría el requisito, pero no se publican cifras.
+- Opciones de despliegue: Ollama con motor MLX nativo (cuantización `nvfp4`, requiere Ollama 0.34.1 o superior; en versiones anteriores añadir `--experimental` a `ollama create`) y llama.cpp mediante `convert_hf_to_gguf.py` (pierde la cabeza MTP y, con ello, la decodificación especulativa). No se mencionan vLLM ni TGI.
+- Latencia y throughput: unos 30 tok/s de decode en un M4 Pro con MLX y decodificación especulativa, frente a los ~15 tok/s que permite el ancho de banda de memoria sin ella. El repositorio incluye `bench_ollama.py` para medir prefill y decode.
+- Disco: `ollama create` necesita aproximadamente 55 GB libres para la descarga más el artefacto convertido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| zonca/Qwen3.8-27B-pi-adapted-merged | 27B | no disponible | apache-2.0 | safetensors float16 | Merge fiel del adaptador pi, conserva MTP |
-| Qwen/Qwen3.8-27B (base) | 27B | no disponible | no disponible en la información | safetensors bfloat16 | Sin el adaptador: 39,2% en SWE-bench Pro y 39,5% en Terminal-Bench 2.1 |
-| harness-hub/Qwen3.8-27B-pi-adapted | 27B + LoRA r=32 | no disponible | no disponible en la información | adaptador PEFT | Requiere cargar el base y el adaptador por separado; sin MTP en formato mergeado previo |
+| zonca/Qwen3.8-27B-pi-adapted-merged | 27,8 B | no disponible | Apache 2.0 | safetensors float16 | Adaptador pi fusionado, MTP preservada |
+| Qwen/Qwen3.8-27B (base) | 27,8 B | no disponible | Apache 2.0 | safetensors | Sin adaptador; SWE-bench Pro 39,2%, Terminal-Bench 2.1 39,5% |
+| harness-hub/Qwen3.8-27B-pi-adapted | 27,8 B (base + LoRA) | no disponible | no disponible | LoRA PEFT | Adaptador sin fusionar; SWE-bench Pro 64,7%, Terminal-Bench 2.1 55,8% |
 
 No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El autor no ha ejecutado benchmarks propios sobre el checkpoint mergeado; las cifras de SWE-bench Pro y Terminal-Bench 2.1 corresponden al adaptador sin mergear bajo pi y no están verificadas en esta versión.
-- El adaptador se entrenó con thinking desactivado; usar el modo thinking puede degradar el comportamiento esperado.
-- El adaptador está entrenado específicamente para el agente pi y para tareas de software; su rendimiento fuera de ese dominio no está documentado.
-- La conversión a GGUF descarta la cabeza MTP, por lo que se pierde la decodificación especulativa y baja el throughput.
-- El modelo solo está etiquetado en inglés; no hay evidencia de capacidades multilingües.
-- No se documenta la longitud de contexto soportada, lo que impide planificar despliegues con ventanas largas.
-- Riesgo de alucinación y sesgos: no evaluados en la información disponible; al ser un modelo de código, existe riesgo de generar parches plausibles pero incorrectos, especialmente sin ejecución de tests.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base y el adaptador deben cumplir sus propias condiciones; el adaptador no declara licencia en la información disponible.
-- El proceso de conversión y cuantización requiere espacio en disco considerable (~55 GB) y tiempo de cómputo en la máquina del usuario.
+- El adaptador se entrenó con thinking desactivado; es necesario enviar `"think": false` o el equivalente del cliente, o el comportamiento puede degradarse.
+- El modelo solo declara soporte de inglés; no se garantiza calidad en castellano ni en otros idiomas.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos en tareas de código y terminal.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Longitud de contexto: no disponible; conviene verificarla en el `config.json` del repositorio antes de desplegar.
+- La conversión a GGUF no transporta la cabeza MTP, por lo que se pierde la decodificación especulativa y baja el throughput de decode.
+- En Ollama, si las tool calls salen malformadas, hay que añadir `RENDERER qwen3.5` y `PARSER qwen3.5` al Modelfile y recrear el modelo.
+- La importación como MLX debe hacerse sobre Ollama 0.34.1 o superior; en versiones anteriores se requiere `--experimental`.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda conservar los avisos de atribución del modelo base y del adaptador.
+- El repositorio no incluye builds GGUF ni oQ/oQ4e; el usuario debe generarlos y asumir la verificación de calidad.
+- El checkpoint se publica en float16 por una razón de precisión del merge; cuantizarlo agresivamente puede reducir la fracción del delta del adaptador que sobrevive.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zonca/Qwen3.8-27B-pi-adapted-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Adaptador LoRA: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
-- Repositorio del agente pi: https://github.com/earendil-works/pi
-- Gist con los scripts de merge y verificación: https://gist.github.com/zonca
+- Adaptador LoRA original: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Agente pi: https://github.com/earendil-works/pi
+- Herramientas de merge y verificación: https://github.com/zonca/lora-merge-tools

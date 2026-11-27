@@ -2,103 +2,95 @@
 
 ## Resumen
 
-Xylolabs/phi-4-GGUF es una colección de cuantizaciones en formato GGUF del modelo microsoft/phi-4, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. El modelo base es un transformer denso de 14.659.507.200 parámetros (aproximadamente 14,7 mil millones) desarrollado originalmente por Microsoft, y esta publicación se limita a la conversión de pesos y a la cuantización, sin reentrenamiento ni modificación de la arquitectura.
+Xylolabs/phi-4-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo microsoft/phi-4, publicada por Xylolabs para su uso con llama.cpp en CUDA, Metal o CPU. No se trata de un modelo nuevo, sino de una distribucion optimizada del phi-4 original de Microsoft, un transformer denso de aproximadamente 14.660 millones de parametros orientado a generacion de texto y razonamiento. El repositorio incluye cuatro archivos cuantizados: Q5_K_M, Q4_K_M, IQ4_XS e IQ4_XS-imat.
 
-El interés de esta ficha reside en que ofrece versiones optimizadas en tamaño y calidad de un modelo de razonamiento de tamaño medio, con métricas de degradación explícitas (KL medio y coincidencia top-1 frente a BF16) medidas sobre 16.280 posiciones de texto en inglés y coreano. Los cuatro ficheros publicados cubren el rango de 8,19 GB a 10,50 GB, lo que permite desplegar el modelo en GPUs de consumo como la RTX 4090 o la RTX 3090 con 24 GB de VRAM y contexto de 16K.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 15.000 millones de parametros en hardware de consumo, algo inviable con los pesos en BF16 (unos 29 GB). Con la cuantizacion Q4_K_M (9,059 GB) o IQ4_XS (8,259 GB) el modelo cabe en GPUs de 12-16 GB de VRAM, y con Q5_K_M (10,5 GB) en GPUs de 24 GB como la RTX 4090 o la RTX 3090 con contexto de hasta 16K segun las recomendaciones del autor.
 
-La licencia es MIT, lo que facilita el uso comercial sin las restricciones habituales de otros modelos de pesos abiertos. La relevancia actual del artefacto es práctica: proporciona una vía directa para ejecutar phi-4 en infraestructura local con cuantizaciones verificadas y una tabla de recomendación de hardware publicada por el propio autor.
+El modelo esta publicado bajo licencia MIT, soporta ingles y coreano segun los metadatos del repositorio, y esta pensado para inferencia local mediante llama-cli o llama-server. La model card incluye una tabla de precision frente a BF16 con metricas de divergencia KL y acuerdo top-1, lo que permite elegir el nivel de cuantizacion con criterio tecnico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base microsoft/phi-4); pesos convertidos a GGUF |
+| Arquitectura | Transformer denso (modelo base microsoft/phi-4) |
 | Parametros totales | 14.659.507.200 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16K recomendado en la tabla de hardware del autor; el modelo base phi-4 soporta más, pero no se especifica en esta ficha |
+| Longitud de contexto | 16K recomendado por el autor en la tabla de hardware; contexto nativo del modelo base no especificado en la informacion disponible |
 | Tipos de cuantizacion | Q5_K_M, Q4_K_M, IQ4_XS, IQ4_XS-imat |
 | Idiomas soportados | en, ko |
 | Licencia | MIT |
-| Formato de pesos | GGUF (un fichero por cuantización, con tokenizer y chat template originales) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto no entrena ningún modelo: es una conversión de los pesos de microsoft/phi-4 a GGUF y su posterior cuantización con llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior). La arquitectura subyacente es la del phi-4 original, un transformer denso de unos 14,7 mil millones de parámetros; esta ficha no dispone de detalles sobre la composición del dataset de entrenamiento, el número de tokens ni las fases de RLHF o DPO del modelo base, por lo que no se afirma nada al respecto.
+Esta publicacion no introduce arquitectura nueva: es una conversion a GGUF y cuantizacion de microsoft/phi-4, un transformer denso de 14.660 millones de parametros. La model card no detalla la composicion del dataset de entrenamiento original, el numero de tokens ni si hubo fases de RLHF o DPO; esos datos corresponden a la documentacion del modelo base de Microsoft y no se reproducen aqui.
 
-La innovación técnica de esta publicación es la cuantización con importance matrix (imat): el fichero IQ4_XS-imat reduce el tamaño a 8,19 GB y mejora ligeramente la fidelidad frente a IQ4_XS sin imat (KL medio de 0,0197 frente a 0,0206; top-1 del 93,03 % frente al 92,62 %). Las métricas se calculan contra una pasada BF16 de referencia en transformers sobre 16.280 posiciones de texto en inglés y coreano. El fichero Q5_K_M es el de mayor fidelidad (KL medio 0,0055; top-1 95,96 %) y Q4_K_M se sitúa en un punto intermedio (KL 0,0180; top-1 93,65 %).
+La innovacion tecnica de este repositorio esta en el proceso de cuantizacion y en su evaluacion. El autor publica una tabla de precision frente a BF16 con divergencia KL sobre WikiText-2 y sobre un conjunto held-out, ademas del acuerdo top-1, comparando sus propios archivos con los de Unsloth y con las cuantizaciones nativas de llama.cpp. Destaca la variante IQ4_XS-imat, generada con importance matrix, que con 8,187 GB obtiene mejor KL (0,017889 en WikiText-2) que el IQ4_XS sin imatrix (0,018695) pese a ocupar menos espacio. Las conversiones se validaron con el commit cd959bae99ff4bed22bef2604f45241c09bbb8c8 de llama.cpp.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y coreano, con chat template incluido en cada fichero GGUF.
-- Razonamiento y matemáticas: heredadas del modelo base phi-4, orientado a tareas de razonamiento; no se aportan benchmarks específicos en esta publicación.
-- Generación de código: capacidad del modelo base, sin datos de evaluación en esta ficha.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada para esta cuantización.
-- Soporte de agentes y razonamiento multi-paso: no documentado en esta publicación.
-- Capacidades multilingües: limitadas a inglés y coreano según los metadatos del repositorio.
-- Capacidades especiales (visión, audio, thinking mode): no disponibles; el pipeline declarado es text-generation.
+- Generacion de texto conversacional y de un solo turno, con soporte de plantilla de chat via `--jinja` en llama.cpp.
+- Razonamiento y resolucion de problemas de tipo matematico y logico, heredados del modelo base phi-4.
+- Generacion de codigo y explicaciones tecnicas.
+- Soporte multilingue limitado a ingles y coreano segun los metadatos del repositorio.
+- Inferencia en CPU, CUDA y Metal gracias al backend GGUF de llama.cpp.
+- Compatibilidad con `llama-server` para exponer el modelo como API HTTP compatible con endpoints.
+- No se documentan en la informacion disponible capacidades de vision, audio, tool calling nativo ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés o coreano: con Q5_K_M (10,5 GB) cabe en una RTX 4090 o RTX 3090 de 24 GB con contexto de 16K, lo que permite desplegar un chatbot multi-turno sin depender de la nube.
-- Razonamiento y resolución de problemas sobre texto: el modelo base phi-4 está orientado a tareas de razonamiento; la cuantización Q5_K_M conserva el 95,96 % de coincidencia top-1 frente a BF16, adecuada cuando la fidelidad importa más que el tamaño.
-- Procesamiento de documentos largos en local: con 16K de contexto recomendado por el autor se pueden resumir o extraer información de contratos, informes o artículos sin fragmentación agresiva.
-- Despliegue en estaciones de trabajo con GPU única de 24 GB: la tabla del autor confirma RTX 4090, RTX 3090, RTX 5090 (32 GB) y RTX 6000 Ada (48 GB) como objetivos válidos para Q5_K_M a 16K.
-- Ejecución en Apple Silicon: Mac Studio M5 Max y M5 Ultra (memoria unificada de 128 a 512 GB) están listados como hardware compatible con Q5_K_M a 16K, útil para desarrollo y prototipado en macOS.
-- Servicio HTTP con llama-server: el mismo binario acepta los flags de llama-cli, de modo que se puede exponer el modelo como API compatible con endpoints para integraciones internas.
-- Escenarios con restricciones de memoria: IQ4_XS-imat (8,19 GB) reduce el consumo manteniendo un top-1 del 93,03 %, útil en GPUs de 16 GB o en entornos con KV cache grande.
-- Uso comercial sin fricción: la licencia MIT permite integrar el modelo en productos propietarios siempre que se respeten las cláusulas de atribución del fichero NOTICE.
+- Asistente de codigo en local: con Q4_K_M (9,059 GB) el modelo cabe en una GPU de 12 GB y permite autocompletado y explicacion de fragmentos sin enviar codigo a servicios externos, util en entornos con requisitos de confidencialidad.
+- Chatbot de atencion al cliente en ingles o coreano: desplegado con `llama-server` sobre una RTX 4090 con Q5_K_M y contexto de 16K, puede gestionar conversaciones multi-turno con historial amplio.
+- Procesamiento por lotes de documentos: la variante IQ4_XS-imat (8,187 GB) permite ejecutar el modelo en una sola GPU de 16 GB y procesar resumenes o extraccion de informacion sobre corpus en ingles.
+- Prototipado en estaciones de trabajo Apple Silicon: con Metal y 128 GB de memoria unificada (Mac Studio) se puede ejecutar Q5_K_M con contexto de 16K segun la tabla del autor.
+- Educacion e investigacion: al ser MIT y ejecutable en CPU, sirve para experimentos de evaluacion de cuantizaciones comparando KL y top-1 entre archivos.
+- Sustitucion de APIs en entornos air-gapped: al no requerir conectividad, se puede integrar en pipelines internos que necesiten generacion de texto sin dependencia de la nube.
+- Evaluacion comparativa de cuantizaciones: los datos de KL y top-1 publicados permiten seleccionar el archivo con el mejor compromiso tamano/precision para un hardware concreto.
 
 ## Benchmarks y rendimiento
 
-La publicación no incluye benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.). Sí aporta métricas de fidelidad de la cuantización frente a BF16:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor publica metricas de fidelidad de cuantizacion frente a BF16:
 
-| Cuantizacion | Tamano | KL medio vs BF16 | Top-1 igual vs BF16 |
-|---|---|---|---|
-| Q5_K_M | 10,50 GB | 0,0055 | 95,96 % |
-| Q4_K_M | 9,06 GB | 0,0180 | 93,65 % |
-| IQ4_XS | 8,26 GB | 0,0206 | 92,62 % |
-| IQ4_XS-imat | 8,19 GB | 0,0197 | 93,03 % |
+| Cuantizacion | Tamano | WikiText-2 KL | Top-1 | Held-out KL | Top-1 |
+|---|---:|---:|---:|---:|---:|
+| Q5_K_M | 10,500 GB | 0,005030 | 96,270% | 0,003265 | 97,118% |
+| Q4_K_M | 9,059 GB | 0,016550 | 94,039% | 0,012006 | 94,725% |
+| IQ4_XS | 8,259 GB | 0,018695 | 93,539% | 0,013586 | 94,412% |
+| IQ4_XS-imat | 8,187 GB | 0,017889 | 93,598% | 0,012414 | 94,471% |
 
-Las métricas cubren 16.280 posiciones de texto en inglés y coreano. No se han publicado resultados de benchmarks de tareas en la información disponible.
+Como referencia, el autor incluye tambien Q8_0 (0,000465 KL, 98,706% top-1), Q6_K (0,002103 KL, 97,583% top-1) y Q3_K_M (0,051110 KL, 89,721% top-1) de otros publicadores.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 8,19 GB (IQ4_XS-imat) y 10,50 GB (Q5_K_M) solo para los pesos; hay que sumar la KV cache en f16 al contexto elegido y unos 2 GB para el runtime.
-- Regla del autor: un fichero es válido si su tamaño más la KV cache a ese contexto más 2 GB queda por debajo del 90 % de la memoria disponible.
-- GPUs recomendadas por el autor (todas con Q5_K_M a 16K): RTX 4090 y RTX 3090 (24 GB), RTX 5090 (32 GB), RTX 6000 Ada o 2 x 24 GB (48 GB), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), H200 (141 GB), B200 (192 GB), B300 (288 GB).
-- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 con 24 GB usando Q5_K_M a 16K; también en RTX 5090.
-- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y Mac Studio M5 Ultra (256 y 512 GB) están listados como compatibles.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server) en el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior, con soporte CUDA (`-DGGML_CUDA=ON`), Metal y CPU. No se documentan vLLM, TGI ni Ollama en la información proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: Q5_K_M 10,5 GB, Q4_K_M 9,059 GB, IQ4_XS 8,259 GB, IQ4_XS-imat 8,187 GB (solo pesos; hay que sumar la cache KV para el contexto).
+- GPU recomendadas por el autor: RTX 4090 o RTX 3090 (24 GB) con Q5_K_M y contexto 16K; RTX 5090 (32 GB); RTX 6000 Ada o 2 x 24 GB (48 GB); H100 (80 GB); RTX PRO 6000 Blackwell (96 GB); DGX Spark (128 GB unificada); Mac Studio M5 Max (128 GB); H200 (141 GB); B200 (192 GB); Mac Studio M5 Ultra (256 GB y 512 GB); B300 (288 GB).
+- Cabe en GPU de consumo: si. Q4_K_M e IQ4_XS caben en GPUs de 12 GB; Q5_K_M requiere 16-24 GB para contexto amplio.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con CUDA, Metal o CPU. No se documentan otras opciones como vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de tareas para comparar el rendimiento de esta cuantización con alternativas. La comparación se limita a parámetros, contexto, licencia y formato:
-
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Xylolabs/phi-4-GGUF (esta ficha) | 14,66 B | 16K recomendado en tabla del autor | MIT | GGUF (4 cuantizaciones) | Métricas KL y top-1 publicadas frente a BF16 |
-| microsoft/phi-4 (modelo base) | 14,66 B | no disponible en esta ficha | MIT | safetensors | Referencia original; sin cuantizar |
-| Otras cuantizaciones GGUF de phi-4 | 14,66 B | depende del despliegue | MIT (heredada) | GGUF | No se dispone de datos concretos en la información proporcionada |
-
-No se han identificado en la información disponible modelos comparables de otro tamaño o familia con datos verificables; la comparativa con alternativas como Qwen o Llama queda como "no disponible".
+| Xylolabs/phi-4-GGUF | 14,66 B | 16K recomendado | MIT | GGUF | Cuantizaciones Q5_K_M, Q4_K_M, IQ4_XS, IQ4_XS-imat con tabla de KL publicada |
+| microsoft/phi-4 | 14,66 B | no disponible en la informacion | MIT | safetensors | Modelo base en BF16; requiere ~29 GB de VRAM |
+| Unsloth phi-4 (cuantizaciones) | 14,66 B | no disponible | MIT | GGUF | Referenciado en la tabla de precision del autor con Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K |
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran inglés y coreano; el rendimiento en castellano no está garantizado ni evaluado.
-- Sesgos: no se documentan análisis de sesgo en la publicación; al heredar el modelo base, arrastra los sesgos de sus datos de entrenamiento, que no se detallan.
-- Alucinación: no se aportan tasas de alucinación ni evaluaciones de veracidad; como todo modelo generativo, puede producir contenido plausible pero incorrecto.
-- Cuantización: Q4_K_M, IQ4_XS e IQ4_XS-imat degradan la fidelidad frente a BF16 (top-1 entre 92,62 % y 93,65 %); para tareas sensibles a la precisión conviene usar Q5_K_M o los pesos originales.
-- Contexto: la tabla de hardware del autor asume 16K; no se especifica en esta ficha el contexto máximo real del modelo base ni el comportamiento más allá de esa longitud.
-- Licencia: MIT permite uso comercial, pero el fichero NOTICE nombra al titular del copyright del modelo original; es necesario conservar la atribución.
-- Afiliación: Xylolabs declara no estar afiliada ni respaldada por los autores del modelo original.
-- Producción: no se publican latencias ni throughput, por lo que el dimensionamiento debe hacerse con pruebas propias.
-- Fecha de creación del repositorio: 2026-11-15, con última actualización el 2026-11-23.
+- Al ser una cuantizacion, introduce perdida de precision respecto a BF16: Q4_K_M baja al 94,039% de acuerdo top-1 en WikiText-2 y Q3_K_M al 89,721%, por lo que no se recomienda Q3 o inferior para tareas sensibles.
+- Riesgo de alucinacion inherente al modelo base; no se documentan mitigaciones adicionales en esta publicacion.
+- Sesgos conocidos del modelo base no documentados en la informacion disponible.
+- Idiomas soportados limitados a ingles y coreano segun los metadatos; el rendimiento en castellano no esta garantizado ni evaluado.
+- La licencia MIT permite uso comercial, pero el autor recomienda citar la release original de Microsoft Phi-4.
+- El contexto de 16K es una recomendacion practica del autor para el hardware listado, no necesariamente el limite nativo del modelo base.
+- La model card no documenta soporte de tool calling ni de agentes multi-paso; conviene validarlo antes de usarlo en produccion.
+- Requiere una version concreta de llama.cpp (commit cd959bae) para reproducir los resultados; versiones distintas pueden dar metricas diferentes.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/phi-4-GGUF
 - Modelo base: https://huggingface.co/microsoft/phi-4
-- Licencia en el repositorio: https://huggingface.co/Xylolabs/phi-4-GGUF/blob/main/LICENSE
+- Licencia: https://huggingface.co/Xylolabs/phi-4-GGUF/blob/main/LICENSE
 - llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs citado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio de Xylolabs referenciado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq

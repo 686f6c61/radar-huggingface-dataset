@@ -2,52 +2,54 @@
 
 ## Resumen
 
-RusMind 3.2 Momentum es un modelo de lenguaje afinado por DICPlay a partir de Google Gemma 4 E2B-it, orientado a inferencia local en dispositivo (moviles y equipos modestos) y a conversacion en ruso como idioma principal, con soporte de ingles. Se distribuye en formato GGUF y se presenta como la variante mas ligera de la familia RusMind 3.2, con un tamano de descarga de aproximadamente 2,5 GB en su cuantizacion para navegador y 3,4 GB en Q4_K_M.
+RusMind 3.2 Momentum es un modelo de lenguaje ajustado (fine-tune) por DICPlay a partir de google/gemma-4-E2B-it, orientado a inferencia en dispositivo (on-device) y funcionamiento completamente offline. Se distribuye exclusivamente en formato GGUF y esta pensado para ejecutarse en telefonos moviles y ordenadores de gama baja, con un tamano de fichero de entre 2,5 y 5,0 GB segun la cuantizacion. El modelo forma parte de la familia RusMind 3.2, en la que Momentum es la variante mas ligera.
 
-El modelo parte de una base de aproximadamente 4.647 millones de parametros (segun el dato de safetensors del repositorio) y se ha afinado con datos propios de DICPlay centrados en lengua, historia, cultura, legislacion y geografia de Rusia. Su propuesta de valor es el procesamiento totalmente offline: la conversacion no abandona el dispositivo, lo que resulta relevante para aplicaciones de privacidad y para entornos sin conectividad.
+El modelo esta especializado en ruso como idioma principal, con soporte de ingles, y ha sido entrenado con datos propios de DICPlay sobre historia y cultura de Rusia, legislacion rusa, regiones y pueblos del pais, y valores familiares tradicionales. Su propuesta de valor es la privacidad: todo el procesamiento ocurre en el dispositivo del usuario, sin enviar datos a la nube.
 
-Es relevante ahora porque compite en el segmento de modelos pequenos ejecutables en consumer hardware, un nicho donde la mayoria de alternativas no ofrecen afinado especifico para ruso ni distribucion en GGUF lista para llama.cpp y navegador. La licencia, no obstante, es propia y restringe el uso comercial sin contrato con el autor.
+Con 4.647.450.147 parametros totales reportados en safetensors y una ventana de contexto de 4096 tokens, se posiciona como una alternativa ligera para asistentes conversacionales locales. La licencia es propia (RusMind License), con uso libre solo para fines personales, no comerciales, de investigacion y evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de google/gemma-4-E2B-it) |
-| Parametros totales | 4.647.450.147 (dato de safetensors) |
+| Arquitectura | Transformer (fine-tune de google/gemma-4-E2B-it); detalles internos no disponibles |
+| Parametros totales | 4.647.450.147 (reportado en safetensors); el fichero GGUF distribuido ronda los 2,5 GB en su variante Lite |
 | Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (segun la model card, en la version para navegador) |
-| Tipos de cuantizacion | Q4_K_M (Lite y principal), Q8_0; la version de navegador usa Q4_K_M con embeddings aligerados |
-| Idiomas soportados | ruso (principal), ingles |
-| Licencia | RusMind License (DICPlay), con base Apache 2.0 de Gemma 4 E2B |
-| Formato de pesos | GGUF (archivos completos y particionado en 9 fragmentos de hasta 1 GB) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | Lite (~2,5 GB, Q4_K_M con embeddings aligerados), Q4_K_M (3,4 GB), Q8_0 (5,0 GB) |
+| Idiomas soportados | Ruso (principal) e ingles |
+| Licencia | RusMind License (DICPlay); modelo base Gemma 4 E2B bajo Apache 2.0 |
+| Formato de pesos | GGUF (fichero unico y version troceada en 9 partes de hasta 1 GB para carga en navegador) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de que el modelo deriva de google/gemma-4-E2B-it, un modelo de la familia Gemma 4 de Google. No se especifica si emplea atencion lineal, mezcla de expertos u otras innovaciones, ni se documentan el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo parte de google/gemma-4-E2B-it, un transformer ajustado por instrucciones desarrollado por Google bajo licencia Apache 2.0. DICPlay ha realizado un fine-tune sobre datos propios centrados en el idioma ruso y su contexto cultural: historia y cultura de Rusia, legislacion de la Federacion Rusa, regiones y pueblos del pais, y valores familiares tradicionales, en ruso e ingles. No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO adicionales sobre el ajuste original de Gemma.
 
-El autor indica que el afinado se realizo sobre conjuntos de datos propios de DICPlay centrados en historia y cultura de Rusia, legislacion de la Federacion Rusa, regiones y pueblos del pais, valores familiares tradicionales y acontecimientos clave, en ruso e ingles. No se aportan detalles sobre el volumen de estos datos ni sobre el proceso de alineacion.
+La innovacion principal del modelo no es arquitectonica sino de despliegue: la distribucion en GGUF troceado en nueve partes de menos de 1 GB facilita la carga progresiva en el navegador mediante wllama/llama.cpp, permitiendo ejecucion offline tras una unica descarga. La variante Lite emplea embeddings aligerados para reducir el tamano hasta aproximadamente 2,5 GB. No se detallan en la informacion disponible innovaciones como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ruso e ingles.
-- Comprension de contexto cultural, historico y legal ruso gracias al afinado especifico.
-- Ejecucion totalmente offline en dispositivo, sin envio de datos a servidores.
-- Integracion con llama.cpp y con aplicaciones compatibles con GGUF (LM Studio, Ollama, PocketPal).
-- Ejecucion en navegador mediante wllama y el sitio rusmind.ru, con descarga unica del modelo.
-- Expresion de incertidumbre: el autor afirma que el modelo indica "no lo se" cuando no esta seguro.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en ruso e ingles, con enfasis en contexto cultural ruso.
+- Respuestas sobre historia, cultura, geografia, regiones y legislacion de Rusia.
+- Asistencia en tareas de estudio y preguntas cotidianas.
+- Modo conversacional multiturno mediante `llama-cli -cnv` y otras interfaces compatibles con GGUF.
+- Ejecucion completamente offline en dispositivo, sin enviar datos a servidores externos.
+- Integracion en aplicaciones de escritorio y moviles compatibles con GGUF (LM Studio, Ollama, PocketPal).
+- Carga en navegador mediante wllama con ficheros troceados.
+- Declaracion explicita de incertidumbre ("no lo se") cuando el modelo no esta seguro, segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de vision, audio o modo thinking: no disponibles en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistencia conversacional offline en moviles: el modelo se ejecuta en el propio telefono con la cuantizacion Lite (2,5 GB) y responde sin conexion, lo que permite asistentes personales en zonas sin cobertura o en entornos con requisitos de privacidad.
-- Explicacion de amenazas de seguridad en lenguaje llano: DICPlay lo emplea en DIC.Antivirus PRO para describir al usuario que es una amenaza detectada, por que es peligrosa y que hacer, un caso de uso ya en produccion.
-- Consulta de normativa y tramites rusos: el afinado sobre legislacion de la Federacion Rusa permite responder preguntas sobre procedimientos administrativos y derechos, siempre con caracter informativo y sin sustituir asesoramiento profesional.
-- Educacion y apoyo al estudio: el modelo ayuda con deberes y explicaciones en ruso, adecuado para estudiantes que necesitan respuestas rapidas en dispositivos de gama baja.
-- Atencion al cliente en ruso con despliegue local: integrado via llama.cpp en un servicio interno, permite gestionar conversaciones multi-turno dentro de los 4096 tokens de contexto sin coste de API ni salida de datos.
-- Generacion de contenido editorial en ruso: redaccion de textos divulgativos sobre historia, cultura o regiones de Rusia, aprovechando el corpus de afinado especifico.
-- Prototipado rapido en navegador: mediante wllama y los fragmentos GGUF de hasta 1 GB, se puede desplegar una demo funcional en una pagina web sin backend.
+- Asistente conversacional offline en moviles: el modelo cabe en 2,5 GB en su variante Lite y puede ejecutarse con llama.cpp o PocketPal sin conexion, lo que lo hace adecuado para escenarios con conectividad limitada o requisitos estrictos de privacidad.
+- Atencion al ciudadano sobre legislacion rusa: el fine-tune sobre normativa de la Federacion Rusa permite responder consultas basicas sobre derechos, tramites y regulaciones, siempre con caracter informativo y no como sustituto de asesoramiento legal profesional.
+- Apoyo educativo en historia y cultura de Rusia: util para estudiantes que necesiten repasar contenidos curriculares en ruso, con la ventaja de funcionar en equipos modestos de centros educativos.
+- Integracion en productos de escritorio de DICPlay: el propio fabricante lo emplea en DIC.Antivirus PRO para explicar en lenguaje llano las amenazas detectadas, lo que demuestra su viabilidad en asistentes embebidos dentro de aplicaciones.
+- Despliegue en navegador sin backend: gracias a la distribucion troceada y a wllama, se puede ofrecer un chat privado en una pagina web que descarga el modelo una vez y luego opera sin red.
+- Prototipado rapido de asistentes en ruso: investigadores y desarrolladores pueden evaluar comportamiento linguistico en ruso con un solo fichero GGUF y hardware consumer, sin necesidad de GPU dedicada.
+- Traduccion y redaccion bilingue ru-en: para tareas de redaccion y adaptacion de textos entre ruso e ingles en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
@@ -55,43 +57,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 2,5 GB para la version Lite, 3,4 GB para Q4_K_M y 5,0 GB para Q8_0, mas el overhead del runtime.
-- Cabe en GPU de consumo: si, en tarjetas con 4-6 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) para Q4_K_M; Q8_0 requiere 6-8 GB.
-- Ejecucion en CPU: viable en equipos modestos y telefonos de gama media-alta, dado el tamano del modelo.
-- GPU de datacenter: no se documenta soporte ni rendimiento en A100 o H100; el modelo esta orientado a inferencia local.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), LM Studio, Ollama, PocketPal, wllama en navegador y el sitio rusmind.ru.
+- VRAM/RAM estimada para inferencia: aproximadamente 2,5 GB para la variante Lite, 3,4 GB para Q4_K_M y 5,0 GB para Q8_0, mas el overhead del runtime.
+- GPU recomendadas: no se especifican en la informacion disponible; por tamano, cualquier GPU consumer con 6-8 GB de VRAM puede alojar las variantes Lite y Q4_K_M.
+- Cabe en GPU consumer: si, en modelos como RTX 3060, RTX 4060 o superiores para las variantes Lite y Q4_K_M; la variante Q8_0 requiere 8 GB o mas.
+- Ejecucion en CPU: viable en telefonos y ordenadores de gama baja segun la model card, especialmente con la variante Lite.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), LM Studio, Ollama, PocketPal, wllama en navegador y la propia web rusmind.ru.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| RusMind 3.2 Momentum | 4.647 M | 4096 tokens | ru, en | RusMind License (comercial con contrato) | GGUF |
+| RusMind 3.2 Momentum | 4,65 B (reportado) | 4096 | ru, en | RusMind License (uso comercial restringido) | GGUF |
+| RusMind 3.2 Vspyshka (Vspyshka) | no disponible | no disponible | ru, en | RusMind License | no disponible |
 | google/gemma-4-E2B-it (base) | no disponible | no disponible | multilingue | Apache 2.0 | safetensors, GGUF |
-| RusMind 3.2 Vspyshka (misma familia) | no disponible | no disponible | ru, en | RusMind License | GGUF |
-| RusMind 3.2 Znanie (misma familia) | no disponible | no disponible | ru, en | RusMind License | no disponible |
+| T-Bank T-Pro / T-Lite | no disponible | no disponible | ru, en | no disponible | no disponible |
 
-La comparacion con alternativas de otros fabricantes (T-Bank T-Pro/T-Lite, Sber GigaChat, YandexGPT) no puede establecerse en terminos de parametros, contexto o rendimiento porque la informacion proporcionada solo incluye sus cifras de descargas, no sus especificaciones tecnicas.
+La comparativa con modelos de terceros (T-Pro, T-Lite, GigaChat, YandexGPT) solo puede establecerse por volumen de descargas segun la model card (66.548 descargas mensuales para la familia RusMind frente a 55.045 de T-Bank, 48.818 de Sber y 22.316 de Yandex, datos de octubre de 2026). No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: el uso comercial, la redistribucion, la reventa y la publicacion de versiones modificadas o afinadas requieren contrato escrito con DICPlay; no es una licencia de codigo abierto al uso.
-- Contexto limitado: 4096 tokens, insuficiente para documentos largos o conversaciones extensas sin estrategias de recuperacion externa.
-- Cobertura linguistica reducida: solo ruso e ingles; el rendimiento en castellano no esta documentado ni garantizado.
-- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad; el modelo puede generar afirmaciones incorrectas sobre legislacion, historia o datos factuales.
-- Sesgo tematico: el afinado sobre historia, cultura y valores especificos de Rusia puede introducir sesgos editoriales en las respuestas sobre esos temas.
-- Uso informativo: los propios autores advierten que las respuestas medicas, juridicas y financieras tienen caracter de referencia y no sustituyen asesoramiento profesional.
-- Ausencia de benchmarks: no hay datos publicos de MMLU, HumanEval, GSM8K ni evaluaciones equivalentes, lo que impide verificar el rendimiento frente a alternativas.
-- Datos de descargas no verificables de forma independiente en esta ficha; las cifras de la model card proceden del propio autor.
+- Ventana de contexto limitada a 4096 tokens, insuficiente para documentos largos o conversaciones muy extensas.
+- Cobertura linguistica restringida a ruso e ingles; el rendimiento en castellano no esta documentado ni garantizado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en consultas legales, medicas o financieras, que la propia model card califica como informativas.
+- Sesgos potenciales derivados del dataset de ajuste, centrado en narrativas oficiales sobre historia, cultura y legislacion rusas; puede reflejar una perspectiva parcial en temas controvertidos.
+- Licencia RusMind restrictiva: el uso comercial, la redistribucion, la publicacion de versiones modificadas o fine-tuneadas y la integracion en productos requieren contrato escrito con DICPlay.
+- El modelo se distribuye "tal cual", sin garantias.
+- No se documentan capacidades de tool calling ni de razonamiento multi-paso, lo que limita su uso en pipelines agenticos.
+- El dato de parametros (4,65 B) corresponde a safetensors, mientras que el fichero GGUF Lite pesa 2,5 GB; la discrepancia sugiere cuantizacion agresiva o embeddings reducidos, lo que puede implicar perdida de calidad frente al modelo base.
+- No hay informacion publica sobre benchmarks que permita validar el rendimiento real frente al modelo base Gemma 4 E2B.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-3.2-Momentum
 - Repositorio de versiones anteriores: https://huggingface.co/DICPlay/RusMind-Momentum
+- Demo web: https://rusmind.ru
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Demo en navegador: https://rusmind.ru
-- Archivo Lite (2,5 GB): https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Lite.gguf
-- Archivo Q4_K_M (3,4 GB): https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Q4_K_M.gguf
-- Archivo Q8_0 (5,0 GB): https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Q8_0.gguf
+- Fichero Lite: https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Lite.gguf
+- Fichero Q4_K_M: https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Q4_K_M.gguf
+- Fichero Q8_0: https://huggingface.co/DICPlay/RusMind-3.2-Momentum/blob/main/RusMind-Momentum-3.2-Q8_0.gguf
 - Contacto del autor (Telegram): https://t.me/DanKirillin
 - Contacto del autor (MAX): https://max.ru/u/f9LHodD0cOIENg5eShucR-RyhC02ijx-XXjPGcPbjBRy6_KKvmdKIu9tdQU

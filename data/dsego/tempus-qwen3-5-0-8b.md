@@ -2,102 +2,105 @@
 
 ## Resumen
 
-tempus-qwen3.5-0.8b es un ajuste fino de Qwen/Qwen3.5-0.8B especializado en una única tarea: extraer las horas de reloj mencionadas en un mensaje de chat en inglés y resolver, a partir del contexto, si una hora escueta como "7" se refiere a la mañana o a la tarde. El modelo devuelve una línea `texto=HH:MM` por cada hora encontrada, con el texto copiado literalmente del mensaje, o la palabra `none` si no hay ninguna. Lo desarrolla el usuario dsego como parte del proyecto tempus, que incluye variantes de 230M y 2B parámetros; esta es la opción intermedia en precisión y tamaño.
+tempus-qwen3.5-0.8b es un ajuste fino (LoRA, rango 16) del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario dsego. Su cometido es muy específico: leer un único mensaje de chat en inglés y extraer todas las horas de reloj que aparecen en él, decidiendo por el contexto si un "7" suelto se refiere a la mañana o a la tarde. Resuelve un problema de extracción estructurada de información temporal, no de generación generalista.
 
-El modelo parte de una arquitectura transformer de 772.845.888 parámetros (aproximadamente 0,8B) y se distribuye exclusivamente en formato GGUF para llama.cpp, con cuantizaciones Q4_K_M y Q8_0, además de una variante con vocabulario recortado para reducir la descarga en navegador. Su relevancia práctica está en el nicho: es una pieza de preprocesado determinista, barata y ejecutable en local (incluso en WebAssembly dentro de una pestaña del navegador) para normalizar expresiones temporales antes de pasarlas a un sistema mayor.
+El modelo se distribuye únicamente en formato GGUF para llama.cpp, con tres variantes de cuantización (Q4_K_M, Q8_0 y una versión "trim" con vocabulario reducido). Su tamaño (772.845.888 parámetros en safetensors, 1,8 GB de repositorio) permite ejecutarlo en una pestaña de navegador mediante el build WebAssembly de llama.cpp.
 
-No es un modelo conversacional generalista: el autor recomienda enviar el mensaje como un único turno de usuario, sin system prompt, con el modo de razonamiento desactivado y decodificación greedy. La licencia es Apache 2.0, la misma que el modelo base.
+Es relevante por su enfoque de especialización extrema: en lugar de competir en capacidades generales, optimiza una tarea concreta con métricas publicadas de exactitud y latencia. El autor lo sitúa como opción intermedia de una familia de tres modelos (230M, 0.8B y 2B), y advierte que es demasiado lento para un presupuesto de 100 ms en CPU.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen/Qwen3.5-0.8B, ajuste fino con LoRA) |
-| Parametros totales | 772.845.888 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5-0.8B, ajuste LoRA rango 16) |
+| Parámetros totales | 772.845.888 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M y Q8_0 (GGUF); variante "trim" en Q4_K_M con vocabulario recortado |
-| Idiomas soportados | en (inglés únicamente) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); pesos base en safetensors según metadatos del repo |
+| Tipos de cuantización | Q4_K_M, Q8_0, Q4_K_M con vocabulario reducido (trim) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors solo como referencia del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino mediante LoRA de rango 16 sobre Qwen/Qwen3.5-0.8B, realizado con Unsloth durante 3 épocas sobre 11.299 mensajes sintéticos. Tras el entrenamiento, los adaptadores se fusionaron con los pesos base y se convirtieron a GGUF. La configuración exacta está en `configs/qwen3.5-0.8b-v2-s0-compact.yaml` del repositorio del proyecto. No se incluye el componente de visión del modelo base: es un modelo exclusivamente de texto.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer de 772 millones de parámetros, y se ajusta mediante LoRA de rango 16 con Unsloth durante 3 épocas sobre 11.299 mensajes sintéticos. Posteriormente los pesos se fusionan (merge) y se convierten a GGUF. La configuración exacta está en `configs/qwen3.5-0.8b-v2-s0-compact.yaml` del repositorio del proyecto.
 
-El prompt de inferencia es fijo y minimalista: un turno de usuario delimitado por `<|im_start|>user ... <|im_end|>` seguido de `<|im_start|>assistant` con un bloque `<think>` vacío, lo que desactiva el razonamiento explícito. La salida esperada es una línea `text=HH:MM` por hora detectada o `none`. Los datos de entrenamiento y evaluación son sintéticos, generados y verificados por modelos de lenguaje con una revisión humana puntual, lo que constituye una limitación explícita del autor.
+No se documenta el número de tokens de entrenamiento ni la composición detallada del dataset más allá de que es sintético, redactado y verificado por modelos de lenguaje con una pequeña revisión humana. No se menciona RLHF ni DPO. La innovación técnica principal no está en la arquitectura sino en el formato de salida: una línea `text=HH:MM` por cada hora detectada, o la palabra `none`, con decodificación greedy (temperatura 0) y sin system prompt. El modelo base incluye componente de visión, pero esta versión es solo texto y no lo incorpora.
 
 ## Capacidades
 
-- Extracción de horas de reloj en mensajes de chat en inglés, devolviendo el fragmento textual exacto y su lectura en formato de 24 horas.
-- Resolución contextual de horas ambiguas: distingue si un "7" desnudo corresponde a mañana o tarde según la situación descrita en el mensaje.
-- Reconocimiento de las formas "noon" y "midnight" además de horas escritas con dígitos.
-- Descarte deliberado de duraciones, tiempos relativos y periodos vagos, que ignora por diseño.
-- Salida estructurada y verificable: el cliente puede validar que cada línea contiene una hora válida y descartar respuestas malformadas.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso; tampoco visión ni audio.
-- Capacidad multilingüe: ninguna más allá del inglés.
+- Extracción de horas de reloj en mensajes de chat en inglés, con resolución de ambigüedad contextual (mañana/tarde).
+- Reconocimiento de horas escritas con dígitos, además de "noon" y "midnight".
+- Descarte deliberado de duraciones, horas relativas y periodos vagos (devuelve `none`).
+- Formato de salida estructurado y verificable (`text=HH:MM` por línea).
+- Ejecución en navegador mediante WebAssembly de llama.cpp.
+- No soporta tool calling ni function calling de forma documentada.
+- No soporta agentes ni razonamiento multi-paso; el modo thinking debe desactivarse.
+- Sin capacidades multilingües: solo inglés.
+- Sin visión ni audio.
 
 ## Casos de uso
 
-- Normalización de agendas en asistentes de mensajería: antes de crear un evento de calendario, el modelo convierte "dinner at 7" en `7=19:00` para que el sistema de agenda reciba una hora inequívoca en formato de 24 horas.
-- Preprocesado en pipelines de NLP sobre historiales de chat: se ejecuta sobre cada mensaje para etiquetar menciones temporales y alimentar un extractor de eventos posterior, con la ventaja de que la salida es un formato fijo y fácil de parsear.
-- Ejecución en el navegador: la variante trim en Q4_K_M (448 MB) permite desplegar la extracción de horas mediante el build WebAssembly de llama.cpp sin enviar el texto del usuario a un servidor; el autor advierte que el estado guardado del prompt llena la memoria tras unas 80 respuestas y su demo reinicia el worker cada 16.
-- Moderación y enrutado de mensajes: detectar si un mensaje contiene una cita horaria concreta para dirigirlo a un flujo de recordatorios en lugar de a un asistente general.
-- Extracción de features para modelos mayores: usar la salida como señal estructurada que se inyecta en el contexto de un LLM de mayor tamaño, reduciendo el coste de que este resuelva la ambigüedad temporal por sí mismo.
-- Servicio de bajo coste en CPU: con una latencia mediana de 340 ms en 4 núcleos de un Ryzen 3600 para Q4_K_M, es viable en un servicio compartido sin GPU para volúmenes moderados; para presupuestos de 100 ms en CPU el autor remite a la variante de 230M.
+- Extracción de horas en asistentes de mensajería: el modelo procesa cada mensaje entrante y devuelve las horas normalizadas a formato de 24 horas, listas para insertar en un calendario o recordatorio.
+- Preprocesado para sistemas de agenda: dado un chat de conversación, se extraen las horas mencionadas y se resuelven ambigüedades ("dinner at 7" se convierte en 19:00) antes de pasarlas a un motor de scheduling.
+- Filtrado de falsos positivos en pipelines de extracción temporal: los 1.021 mensajes de prueba sin hora real muestran solo un 0,7% de respuestas erróneas con Q4_K_M, lo que permite usarlo como verificador previo.
+- Despliegue en el navegador: con el archivo trim de 448 MB y el build WebAssembly de llama.cpp, se puede ofrecer la extracción de horas en una aplicación web sin backend, reiniciando el worker cada 16 respuestas para evitar el agotamiento de memoria.
+- Etiquetado y enriquecimiento de datasets de chat: procesar corpus de mensajes en inglés para anotar horas mencionadas con su lectura de 24 horas, con una latencia de 39 ms por mensaje en RTX 3090.
+- Prototipado rápido en local: con 542 MB en Q4_K_M cabe en cualquier equipo y permite validar la tarea de extracción antes de invertir en el modelo de 2B o en el de 230M según el presupuesto de latencia.
+- Servicio de normalización temporal en CPU: con 340 ms de mediana en 4 núcleos de un Ryzen 3600, es apto para procesamiento por lotes o flujos asíncronos donde no se exige respuesta instantánea.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (mejor de tres ejecuciones, elegido con las mismas evaluaciones; la media de las tres ejecuciones está en la columna derecha):
+Las métricas son de exact match por mensaje (hora encontrada, span correcto y lectura de 24 horas correcta). La columna de media de tres ejecuciones corresponde a Q8_0.
 
-| Evaluacion | Q4_K_M | Q8_0 | Media de tres ejecuciones (Q8_0) |
+| Evaluación | Q4_K_M | Q8_0 | Media de tres ejecuciones (Q8_0) |
 |---|---|---|---|
 | Principal (530 mensajes) | 97,0% | 97,2% | 96,7% |
-| Principal, hora del día implícita solo por la situación | 91,5% | 92,1% | 90,6% |
-| Nueva (378 mensajes de situaciones no vistas en entrenamiento) | 98,4% | 98,4% | 98,1% |
-| Nueva, hora del día implícita solo por la situación | 95,5% | 95,5% | 94,8% |
-| Respuestas erróneas en 1.021 mensajes sin hora de reloj | 7 (0,7%) | 8 (0,8%) | 0,6% |
-| Latencia CPU, mediana, 4 núcleos de Ryzen 3600 compartido | 340 ms | 421 ms | 413 ms |
+| Principal, hora del día solo implícita por la situación | 91,5% | 92,1% | 90,6% |
+| Nuevos (378 mensajes de situaciones no vistas en entrenamiento) | 98,4% | 98,4% | 98,1% |
+| Nuevos, hora del día solo implícita por la situación | 95,5% | 95,5% | 94,8% |
+| Respuestas erróneas en 1.021 mensajes sin hora | 7 (0,7%) | 8 (0,8%) | 0,6% |
+| Latencia CPU, mediana, 4 núcleos de Ryzen 3600 compartido | 340 ms | 421 ms | 412 ms |
 | Latencia GPU, mediana, RTX 3090 | 39 ms | 40 ms | 41 ms |
 
-La métrica es coincidencia exacta por mensaje: todas las horas encontradas, con el span correcto y la lectura en 24 horas correcta. La variante trim obtiene 97,0% en la evaluación principal con respuestas idénticas al Q4_K_M sin recortar, 98,1% en la evaluación nueva y 5 respuestas erróneas (0,5%) en los mensajes sin hora. Aproximadamente la mitad de las respuestas erróneas en mensajes sin hora no son horas válidas (por ejemplo, `35=35:00` para "it's 35 degrees out"), de modo que un cliente que valide la respuesta las descarta.
+El archivo trim obtiene 97,0% en la evaluación principal, con respuestas idénticas al Q4_K_M sin recortar, 98,1% en la evaluación de mensajes nuevos y 5 respuestas erróneas (0,5%) en los mensajes sin hora. Difiere del archivo sin recortar en 5 de los otros 1.399 mensajes, aunque esas dos ejecuciones se hicieron en procesadores distintos (CPU y GPU), lo que altera empates cercanos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB para Q4_K_M (542 MB de fichero) y para Q8_0 (834 MB); la variante trim ocupa 448 MB.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; el autor reporta 39-41 ms de latencia mediana en una RTX 3090.
-- Cabe holgadamente en cualquier GPU de consumo (RTX 3060, RTX 4060, RTX 4090) e incluso en iGPU con suficiente memoria compartida.
-- Despliegue: llama.cpp (probado en el tag b12292) mediante `llama-server`; también build WebAssembly de llama.cpp para navegador.
-- Latencia: 340 ms (Q4_K_M) y 421 ms (Q8_0) de mediana en CPU con 4 núcleos de un Ryzen 3600 compartido; 39-40 ms en RTX 3090. No se publica throughput (tokens/s).
-- Configuración obligatoria: temperatura 0 (greedy), sin system prompt, un único turno de usuario y modo de razonamiento desactivado.
+- VRAM estimada: aproximadamente 0,5 GB para Q4_K_M (542 MB) y 0,85 GB para Q8_0 (834 MB), más overhead del runtime.
+- GPU recomendadas: RTX 3090 medida con 39-40 ms de latencia mediana; cualquier GPU con al menos 2 GB de VRAM libre es suficiente.
+- Cabe en GPU de consumo: sí, en cualquier tarjeta con 2 GB o más de VRAM; también en CPU.
+- Despliegue: llama.cpp (probado en el tag b12292), con `llama-server --model qwen3.5-0.8b-v2-Q4_K_M.gguf`; build WebAssembly para navegador. No se documentan otras opciones (vLLM, Ollama, TGI).
+- Latencia: 340 ms de mediana en CPU (4 núcleos de Ryzen 3600 compartido) y 39 ms en RTX 3090 con Q4_K_M. No se publica throughput.
+- En navegador, los estados de prompt guardados llenan la memoria tras unas 80 respuestas; el demo del repositorio reinicia el worker cada 16.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Latencia CPU (mediana) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tempus-qwen3.5-0.8b | 772.845.888 | no disponible | Extracción de horas en inglés | Apache 2.0 | GGUF en Hugging Face |
-| tempus-lfm2.5-230m | no disponible (230M según el nombre) | no disponible | Extracción de horas en inglés; pensado para presupuesto de 100 ms en CPU | no disponible en la información proporcionada | Hugging Face (dsego/tempus-lfm2.5-230m) |
-| tempus (variante 2B) | no disponible (2B según la model card) | no disponible | Extracción de horas en inglés; mayor precisión en situaciones desconocidas según el autor | no disponible en la información proporcionada | Referenciado en la model card, sin enlace |
-| Qwen/Qwen3.5-0.8B | 0,8B (modelo base) | no disponible | Modelo generalista multimodal (incluye visión) | Apache 2.0 (según la licencia del derivado) | Hugging Face |
+| tempus-qwen3.5-0.8b | 772.845.888 | no disponible | 340 ms (Q4_K_M) | Apache 2.0 | GGUF en Hugging Face |
+| tempus-lfm2.5-230m | no disponible | no disponible | no disponible (pensado para 100 ms en CPU) | no disponible | Hugging Face (dsego/tempus-lfm2.5-230m) |
+| tempus (versión 2B) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
+| Qwen/Qwen3.5-0.8B (base) | 772.845.888 | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks de las variantes 230M y 2B en la información proporcionada, por lo que no es posible comparar rendimiento numéricamente entre ellas.
+El autor indica que este modelo es más preciso en situaciones desconocidas que el de 230M y una cuarta parte del tamaño del de 2B. No se dispone de datos de benchmarks de los otros modelos de la familia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: cualquier mensaje en otro idioma queda fuera del ámbito soportado.
+- Solo inglés; no procesa otros idiomas.
 - Solo reconoce horas escritas con dígitos, además de "noon" y "midnight"; las horas escritas con letras no están soportadas.
-- Ignora por diseño duraciones, tiempos relativos y periodos vagos, lo que puede sorprender si se espera una interpretación más amplia.
-- Los datos de entrenamiento y evaluación son sintéticos, redactados y verificados por modelos de lenguaje con una revisión humana puntual; el rendimiento en dominios reales puede diferir.
-- Riesgo de falsos positivos en mensajes sin hora: 0,7-0,8% de respuestas erróneas en la evaluación de 1.021 mensajes sin hora, aproximadamente la mitad de ellas con formato de hora inválido; es recomendable validar la salida en el cliente.
-- El modelo no es conversacional ni generalista: usarlo fuera del prompt y la configuración previstos (sin system prompt, greedy, thinking desactivado) degrada la calidad.
-- En el build WebAssembly de llama.cpp, los estados guardados del prompt llenan la memoria tras unas 80 respuestas; hay que reiniciar el worker periódicamente.
-- Licencia Apache 2.0, que permite uso comercial sin restricciones adicionales conocidas; conviene verificar igualmente los términos del modelo base Qwen3.5-0.8B.
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta: es un artefacto reciente y sin validación comunitaria amplia.
+- Ignora por diseño duraciones, horas relativas y periodos vagos.
+- Los datos de entrenamiento y evaluación son sintéticos, generados y verificados por modelos de lenguaje con una pequeña revisión humana, lo que puede introducir sesgos del generador.
+- Riesgo de alucinación en mensajes sin hora: el 0,7-0,8% de las respuestas son erróneas, y aproximadamente la mitad de ellas no son horas válidas (por ejemplo, "35=35:00" para "it's 35 degrees out"); un cliente que valide la respuesta las descarta.
+- No debe usarse con system prompt ni con thinking activado; el prompt debe enviarse como un único turno de usuario con `temperature 0`.
+- En navegador, la memoria se agota tras unas 80 respuestas si no se reinicia el worker.
+- Licencia Apache 2.0, igual que el modelo base, sin restricciones comerciales adicionales documentadas.
+- El modelo base incluye visión, pero esta versión no la incorpora; es solo texto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dsego/tempus-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Variante de 230M: https://huggingface.co/dsego/tempus-lfm2.5-230m
-- Repositorio del proyecto (código, datos y resultados): https://github.com/dsegovia90/tempus_finetune
+- Modelo de 230M de la misma familia: https://huggingface.co/dsego/tempus-lfm2.5-230m
+- Código, datos y resultados completos: https://github.com/dsegovia90/tempus_finetune
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,102 +2,96 @@
 
 ## Resumen
 
-Ornith-1.5-9B-W4A16-HGPTQ es una cuantizacion de 4 bits del modelo multimodal ornith-ai/Ornith-1.5-9B, publicada por el usuario nchapman. El checkpoint original es un modelo de 9.409.813.744 parametros (~9,41 mil millones) que procesa texto e imagenes (pipeline image-text-to-text) y que, segun los tags del repositorio, emplea la arquitectura qwen3_5, con bloques hibridos de GatedDeltaNet y atencion completa. Esta version cuantizada reduce el peso del checkpoint de 17,98 GiB en BF16 a 7,62 GiB, un factor de compresion de 2,36x.
+Ornith-1.5-9B-W4A16-HGPTQ es una cuantización de 4 bits del modelo denso Ornith-1.5-9B de Ornith AI, un modelo de aproximadamente 9.000 millones de parametros construido sobre la arquitectura hibrida de Qwen y orientado a tareas multimodales de imagen-texto. La cuantización la firma nchapman y emplea el esquema GPTQ con rotacion de Hadamard en formato W4A16 (pesos de 4 bits, activaciones de 16 bits), empaquetado mediante compressed-tensors para su uso directo en vLLM y en el runtime propietario warp34.
 
-La relevancia de esta ficha radica en que demuestra una tecnica de cuantizacion poco habitual: GPTQ con rotacion Hadamard en linea y descomposicion de Cholesky (HGPTQ), aplicada de forma simultanea a las capas de texto, al cabezal de prediccion multi-token (MTP) nativo y al codificador visual. Ademas, la model card publica una evaluacion comparativa detallada frente al modelo base en BF16, lo que permite cuantificar la perdida de calidad por perplexity, divergencia KL y precision Top-1 en tareas de vision y borrador especulativo.
+El interes practico del modelo reside en que reduce el peso en disco de 17,98 GiB en BF16 a 6,67 GiB, lo que permite desplegar un modelo multimodal de casi 11.000 millones de parametros reales en GPUs de consumo de 12 GB o mas sin renunciar a la torre de vision ni al cabezal de prediccion multi-token (MTP) integrado. Segun la model card, conserva un 97,0 % de concordancia top-1 en vision aislada y un 94,7 % de concordancia en el borrador especulativo MTP respecto al modelo base de 16 bits.
 
-El modelo esta pensado para despliegue en produccion con vLLM y compressed-tensors, con licencia Apache 2.0, lo que facilita su uso comercial. No obstante, se trata de un artefacto de cuantizacion derivado: su comportamiento, capacidades y limitaciones heredan las del modelo base, del cual la informacion disponible en esta busqueda es limitada.
+Es relevante ahora porque combina tres piezas que rara vez aparecen juntas en un artefacto de 6,67 GiB: vision, decodificacion especulativa nativa mediante MTP y un formato de cuantizacion estandar compatible con vLLM 0.34 o superior. La licencia MIT del modelo base facilita su adopcion comercial, aunque la informacion disponible sobre el modelo original es escasa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con bloques GatedDeltaNet y atencion completa (familia qwen3_5), con MTP nativo y torre de vision ViT |
-| Parametros totales | 9.409.813.744 (~9,41 mil millones) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer denso hibrido basado en Qwen (tag `qwen3_5`), con torre de vision y cabezal MTP; `custom_code` en transformers |
+| Parametros totales | 10.703.777.520 (segun safetensors); el nombre comercial indica 9B |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | W4A16 (pesos 4 bits, activaciones 16 bits), group size 64; GPTQ con rotacion Hadamard en linea y Cholesky (HGPTQ); formato compressed-tensors |
-| Idiomas soportados | No disponible en la informacion proporcionada (la evaluacion menciona prompts multilingues) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
+| Tipos de cuantizacion | W4A16 GPTQ con rotacion de Hadamard; cabezal de salida en 8 bits; variante alternativa W2.6A16 (RCO) para GPUs de 8 GB |
+| Idiomas soportados | No disponible |
+| Licencia | MIT (heredada del modelo base ornith-ai/Ornith-1.5-9B) |
+| Formato de pesos | safetensors con compressed-tensors (GPTQ empaquetado 4/8 bits) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-9B emplea una arquitectura hibrida de 32 bloques que combina capas GatedDeltaNet (atencion lineal con estado recurrente) y capas de atencion completa, segun se deduce de la descripcion de las 200 capas lineales cuantizadas (`q_proj`, `k_proj`, `v_proj`, `o_proj`, `in_proj_qkv`, `in_proj_z`, `out_proj`, `gate_proj`, `up_proj`, `down_proj`). Incluye un modulo de prediccion multi-token (MTP) nativo con 7 capas lineales, utilizado como borrador para decodificacion especulativa, y una torre de vision de 27 bloques ViT mas dos proyecciones de fusion espacial (merger). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base.
+El modelo base es un transformer denso de la familia Qwen hibrida, segun la model card, con dos componentes adicionales que se conservan intactos tras la cuantizacion: una torre de vision para entrada imagen-texto y un cabezal de Multi-Token Prediction (MTP) que actua como borrador especulativo integrado. Ornith AI describe el modelo como resultado de un proceso de auto-mejora end-to-end, aunque no se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La innovacion tecnica de este checkpoint es el esquema de cuantizacion HGPTQ. Antes de cuantizar, los pesos se rotan offline a lo largo de la dimension de entrada mediante una matriz de Walsh-Hadamard de Sylvester determinista (`W' = W H_b / sqrt(b)`), con `b=64` para la mayoria de capas y `b=16` para `v_vision_fc2`. En tiempo de ejecucion se aplica la misma rotacion a las activaciones de entrada antes de la GEMM W4A16, mediante HadaCore y `CompressedTensorsLinearTransformMethod`. Como la matriz es determinista (`randomize: false`), no se almacenan matrices de transformacion en el checkpoint, lo que elimina sobrecoste de almacenamiento. La cuantizacion usa GPTQ con descomposicion de Cholesky, `group_size=64` y `actorder="static"`, y se aplica a 317 capas lineales en total: 200 de texto, 7 del MTP y 110 de vision. Se mantienen en BF16 `embed_tokens`, `lm_head`, `in_proj_a`, `in_proj_b`, `mtp.fc`, `visual.patch_embed.proj`, normas y sesgos. La calibracion se realizo, segun la busqueda web, con 999 muestras de nvidia/Nemotron-Cascade-2-SFT-Data respetando las proporciones del dataset.
+La cuantizacion de nchapman aplica GPTQ con calibracion sobre el modelo completo: columna vertebral de texto, torre de vision y borrador MTP se calibran y cuantizan conjuntamente, con la cabeza de salida en 8 bits. La rotacion de Hadamard se usa para mejorar la fidelidad de los pesos de 4 bits y permitir servir en CUDA a plena velocidad sin flags adicionales en warp34. No se especifican el tamano del conjunto de calibracion ni el algoritmo exacto de rotacion en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional con modo chat, segun la configuracion de generacion (`temperature 1.0`, `top_p 0.95`, `top_k 20`).
-- Razonamiento matematico y cientifico: la evaluacion de perplexity incluye prompts de matematicas y ciencia.
-- Generacion de codigo: la evaluacion de texto contempla prompts de programacion.
-- Uso de herramientas (tool use): incluido explicitamente en el conjunto de evaluacion de perplexity de texto.
-- Capacidades multilingues: la evaluacion incluye prompts multilingues, aunque no se detallan los idiomas concretos.
-- Vision multimodal: respuesta a preguntas sobre imagenes (VQA), interpretacion de graficos, documentos y OCR.
-- Comprension de interfaces de usuario y capturas de pantalla (evaluado con ScreenSpot) y OCR matematico.
-- Decodificacion especulativa nativa mediante el modulo MTP, que actua como borrador para acelerar la generacion.
-- Compatibilidad con vLLM y compressed-tensors para servir el modelo en produccion.
+- Generacion de texto conversacional en formato chat.
+- Comprension de imagenes y respuesta texto a partir de entradas imagen-texto (pipeline `image-text-to-text`).
+- Razonamiento multi-paso y decodificacion especulativa nativa mediante el cabezal MTP, que acelera la generacion al proponer varios tokens por paso.
+- Capacidades multilingues: no documentadas en la informacion disponible.
+- Soporte de tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes: no documentado en la informacion disponible.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno de texto con un checkpoint de 7,62 GiB, lo que permite desplegarlo en una unica GPU con memoria moderada y atender peticiones concurrentes mediante vLLM.
-- Extraccion de datos de documentos: gracias a su capacidad de OCR y VQA, puede procesar facturas, formularios e informes escaneados y devolver campos estructurados, usando la torre de vision cuantizada con una perdida de precision Top-1 de solo el 3,97 % frente a BF16.
-- Analisis de graficos y dashboards: la evaluacion especifica de graficos y documentos sugiere su uso para interpretar capturas de paneles de control y responder preguntas sobre tendencias o valores.
-- Automatizacion de interfaces (RPA visual): la evaluacion con ScreenSpot indica capacidad para localizar elementos en capturas de pantalla, util en agentes que operan aplicaciones de escritorio o web.
-- Asistente de programacion en pipelines de CI/CD: el soporte de tool use y generacion de codigo permite integrarlo en flujos que invocan funciones externas (ejecucion de tests, consulta de repositorios) con una penalizacion de perplexity de solo el 2,45 % respecto al modelo sin cuantizar.
-- Generacion acelerada en produccion: el modulo MTP conserva un 94,11 % de precision Top-1 como borrador aislado, lo que permite activar decodificacion especulativa en vLLM para reducir la latencia por token generado.
-- Despliegue en entornos con VRAM limitada: el checkpoint de 7,62 GiB cabe en GPUs de consumo con 12-16 GB de VRAM, lo que habilita prototipado local de un modelo multimodal de 9B sin infraestructura de centro de datos.
+- Asistente multimodal en local para desarrolladores: con 6,67 GiB en disco cabe en una RTX 3060 de 12 GB, lo que permite montar un chatbot que acepte capturas de pantalla o fotografias y responda en texto sin depender de la nube.
+- Analisis de documentos con imagenes: el modelo puede recibir paginas escaneadas o diagramas junto con una pregunta textual, aprovechando la torre de vision cuantizada con un 97,0 % de concordancia top-1 respecto al base de 16 bits.
+- Prototipado rapido de aplicaciones imagen-texto: al ser compatible con vLLM 0.34+ y con el pipeline de transformers, se puede integrar en un endpoint compatible con la API de OpenAI para pruebas de producto.
+- Servicio de inferencia de bajo coste en produccion: el uso de MTP como decodificador especulativo integrado reduce el numero de pasos de decodificacion, lo que resulta adecuado para cargas interactivas con latencia sensible.
+- Despliegue en estaciones de trabajo con una sola GPU consumer: warp34 permite servir el modelo con pesos empaquetados de 4 y 8 bits sin configuracion adicional, util para entornos de desarrollo sin cluster.
+- Evaluacion comparativa de cuantizaciones: al existir una variante W2.6A16 para 8 GB, el par permite medir el impacto de la cuantizacion en calidad de vision y en aceptacion del borrador MTP dentro de un mismo pipeline.
+- Fine-tuning ligero sobre la base cuantizada: no recomendado directamente sobre GPTQ, pero el modelo base BF16 con licencia MIT puede servir de punto de partida para adaptaciones con LoRA antes de cuantizar.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona una evaluacion comparativa directa frente al modelo base en BF16 (evaluacion teacher-forced, no benchmarks estandar como MMLU o HumanEval):
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente reporta metricas de fidelidad de la cuantizacion frente al modelo base de 16 bits:
 
-| Evaluacion | BF16 base | W4A16-HGPTQ | Variacion |
-|---|---:|---:|---:|
-| Tamano de safetensors | 17,98 GiB | 7,62 GiB | 2,36x mas pequeno |
-| Perplexity de texto (378 prompts, 840k tokens) | 6,6829 | 6,8463 | +2,45 % |
-| Divergencia KL de texto (ponderada / media por token) | 0,0000 | 0,1835 / 0,7255 | No aplica |
-| Perplexity holdout general y multilingue (76 prompts, 20k tokens) | 15,0115 | 15,6462 | +4,23 % |
-| MTP nativo, Top-1 (11.583 posiciones) | 100,0 % (NLL 2,8335) | 94,11 % (NLL 2,8504) | -5,89 puntos |
-| MTP nativo, Top-1 extremo a extremo | No disponible | 77,22 % (KL 0,5436) | No aplica |
-| Vision VQA, graficos, documentos y OCR, similitud coseno / Top-1 (96 imagenes) | 1,0000 / 100,0 % | 0,9790 / 96,03 % | -3,97 puntos Top-1 |
-| Vision UI, ScreenSpot y OCR matematico, similitud coseno / Top-1 (48 imagenes) | 1,0000 / 100,0 % | 0,9829 / 96,30 % | -3,70 puntos Top-1 |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Metrica | Resultado |
+|---|---|
+| Concordancia top-1 en vision aislada vs. BF16 | 97,0 % |
+| Concordancia del borrador MTP vs. BF16 | 94,7 % |
+| Reduccion de tamano en disco | 2,7x (17,98 GiB BF16 a 6,67 GiB) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-9 GB para los pesos en W4A16 (7,62 GiB) mas overhead de activaciones, cache KV y contexto; el consumo real depende de la longitud de contexto y del numero de secuencias concurrentes, dato no disponible.
-- GPUs recomendadas: A100, H100 o L40S para despliegue de produccion con vLLM; RTX 4090 (24 GB) para inferencia de alta concurrencia.
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas de VRAM (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) para contexto moderado y una sola secuencia; con 16 GB hay margen para lotes mayores.
-- Opciones de despliegue: vLLM con compressed-tensors es la ruta soportada explicitamente por el autor; transformers como libreria declarada. No se menciona soporte de llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles. La decodificacion especulativa via MTP puede reducir la latencia, pero no se publican cifras de tokens por segundo.
+- VRAM estimada: aproximadamente 6,67 GiB de pesos; con cache KV y contexto extendido se recomienda un minimo de 12 GB para margen operativo.
+- GPU recomendadas: RTX 30/40-series con 12 GB o mas (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090); A100 y H100 tambien son compatibles via vLLM, aunque el modelo esta optimizado para el segmento consumer.
+- Cabe en GPU consumer: si, en cualquier GPU con 12 GB o mas; para 8 GB existe la variante W2.6A16-HGPTQ-RCO de 5,55 GiB.
+- Opciones de despliegue: warp34 (runtime recomendado por el autor), vLLM 0.34+ con `--trust-remote-code`, y transformers con `custom_code`. No se menciona soporte de llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles; la model card solo indica que el MTP integrado actua como decodificador especulativo y que la cuantizacion permite servir a plena velocidad en CUDA.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Ornith-1.5-9B-W4A16-HGPTQ (este) | 9,41 B | No disponible | Texto + imagen | Apache 2.0 | Hugging Face, 0 descargas |
-| ornith-ai/Ornith-1.5-9B (base BF16) | 9,41 B | No disponible | Texto + imagen | Apache 2.0 | Hugging Face |
-| nchapman/Ornith-1.5-9B-W4A16-GPTQ | 9,41 B | No disponible | Texto + imagen | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Vision | MTP | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Ornith-1.5-9B-W4A16-HGPTQ | 10,7B (9B nominal) | No disponible | Si | Si | MIT | Hugging Face, 217 descargas |
+| Ornith-1.5-9B (BF16) | 10,7B | No disponible | Si | Si | MIT | Hugging Face |
+| Ornith-1.5-9B-W2.6A16-HGPTQ-RCO | 10,7B | No disponible | Si | Si | MIT | Hugging Face, 5,55 GiB |
 
-No se dispone de datos de rendimiento de benchmarks estandar para establecer una comparacion cuantitativa con modelos de otras familias; la unica comparacion documentada es frente al modelo base en BF16 y frente a la variante GPTQ del mismo autor, cuyos resultados no se detallan en la informacion proporcionada.
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce perdida de calidad medible: +2,45 % de perplexity en texto, +4,23 % en el holdout multilingue y una caida de hasta 5,89 puntos en la precision Top-1 del borrador MTP.
-- El rendimiento del MTP extremo a extremo cae al 77,22 % de Top-1, lo que reduce la eficacia de la decodificacion especulativa frente al modelo BF16.
-- La rotacion Hadamard en linea exige un runtime compatible con compressed-tensors y HadaCore; otros motores de inferencia pueden no soportar el `transform_config` y producir resultados incorrectos si ignoran la rotacion de activaciones.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo conversacional de 9B, cabe esperar alucinaciones en tareas de conocimiento factual, pero no hay evaluacion publicada al respecto.
-- Idiomas soportados no confirmados: la evaluacion incluye prompts multilingues, pero no se especifica que idiomas cubre con calidad.
-- Longitud de contexto no disponible, lo que impide garantizar el rendimiento en tareas de contexto largo.
-- El repositorio registra 0 descargas y 0 likes, por lo que no hay evidencia de uso en produccion ni validacion independiente de los resultados reportados por el autor de la cuantizacion.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base podria tener terminos adicionales no reflejados en esta ficha; conviene verificar la model card de ornith-ai/Ornith-1.5-9B antes de desplegar.
+- La cuantizacion a 4 bits introduce una perdida medible: un 3,0 % de discrepancia top-1 en vision y un 5,3 % en el borrador MTP respecto al modelo BF16. En tareas visuales de precision (OCR fino, lectura de tablas densas) conviene validar contra el modelo base.
+- No hay datos publicados sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad del modelo base ni de la version cuantizada.
+- El contexto maximo no esta documentado, lo que impide planificar cargas con ventanas largas sin pruebas previas.
+- Los idiomas soportados no estan documentados; no se puede asumir un rendimiento multilingue equivalente al de la familia Qwen sin verificacion empirica.
+- El soporte de tool calling y de agentes no esta confirmado en la informacion disponible; si se requiere para produccion, debe validarse explicitamente.
+- Requiere `--trust-remote-code` en vLLM y transformers por el uso de `custom_code`, lo que implica ejecutar codigo del repositorio y anade superficie de riesgo en entornos no controlados.
+- La licencia MIT del modelo base permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio original para confirmar que no existen terminos adicionales.
+- El modelo tiene 217 descargas y 0 likes en el momento de la consulta, por lo que la validacion comunitaria es practicamente inexistente.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/nchapman/Ornith-1.5-9B-W4A16-HGPTQ
+- Hugging Face: https://huggingface.co/nchapman/Ornith-1.5-9B-W4A16-HGPTQ
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Variante GPTQ del mismo autor: https://huggingface.co/nchapman/Ornith-1.5-9B-W4A16-GPTQ
-- Dataset de calibracion: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
+- Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/blob/main/LICENSE
+- Variante para 8 GB: https://huggingface.co/nchapman/Ornith-1.5-9B-W2.6A16-HGPTQ-RCO
+- Runtime warp34: https://github.com/nchapman/warp34
+- Laboratorio de cuantizacion: https://github.com/nchapman/warp34-quant-lab
+- Informe tecnico de la cuantizacion: TECHNICAL.md (referenciado en la model card, sin URL directa disponible)

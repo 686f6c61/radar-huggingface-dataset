@@ -2,139 +2,132 @@
 
 ## Resumen
 
-Indic Tiny TTS: Kannada es un modelo de síntesis de voz (text-to-speech) extremadamente compacto, desarrollado por sulabhkatiyar, especializado en la lectura de texto en escritura kannada. Con solo 8,9 millones de parámetros según los pesos en safetensors (la model card declara 22,5 millones, discrepancia que conviene verificar antes de desplegar), el modelo está diseñado para inferencia en CPU sin GPU, lo que lo sitúa en la categoría de TTS "on-device" para aplicaciones de baja latencia y recursos limitados. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequeños, uno por idioma, que cubren 11 lenguas indias y el inglés indio.
+Indic Tiny TTS: Kannada es un modelo de síntesis de voz (text-to-speech) extremadamente compacto, desarrollado por el usuario independiente sulabhkatiyar, especializado en la lectura de texto en escritura kannada. Con solo 8,9 millones de parámetros según los pesos en safetensors (22,5 millones según la model card del autor), el modelo ofrece dos voces, femenina y masculina, y está diseñado para ejecutarse en CPU sin necesidad de GPU. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por doce modelos pequeños, uno por idioma, que cubren once lenguas indias y el inglés indio.
 
-El modelo resuelve el problema de la síntesis de voz en kannada con un coste computacional mínimo: según la model card, alcanza un CER del 1,05 % en frases de noticias de FLORES-200 y del 3,66 % en un conjunto de prueba retenido, con un factor de tiempo real de 0,026 en un núcleo de Apple M1 (38 veces más rápido que tiempo real) y 0,136 en un hilo de CPU x86 (7 veces más rápido). Ofrece dos voces, femenina y masculina, y se distribuye en formatos PyTorch y ONNX Runtime.
+El modelo resuelve el problema de la síntesis de voz de calidad en kannada en entornos con recursos limitados, donde los modelos convencionales de TTS (VITS, Parler-TTS, F5) resultan demasiado pesados o lentos. Su propuesta de valor es la eficiencia: alcanza una tasa de error de caracteres (CER) de 1,05 % en frases de noticias de FLORES-200, superando a cinco modelos abiertos de kannada de mayor tamaño y empatando con otros dos, según los datos publicados por el autor.
 
-Su relevancia actual radica en la combinación de tamaño reducido, licencia permisiva (CC-BY-4.0) y rendimiento competitivo frente a modelos mucho mayores: la model card afirma que iguala la tasa de error de `ai4bharat/indic-parler-tts` (937,8 M) con 1/42 del tamaño y de `ai4bharat/IndicF5` (350,6 M) con 1/16 del tamaño, siendo aproximadamente 120 y 127 veces más rápido en una GPU T4, respectivamente.
+Es relevante ahora porque demuestra que un modelo de menos de 25 millones de parámetros puede igualar en inteligibilidad a modelos de 350 a 937 millones de parámetros, con un factor de tiempo real de 0,026 en un solo hilo de CPU Apple M1 (38 veces más rápido que tiempo real) y 0,136 en un hilo x86. Esto lo hace adecuado para despliegue en dispositivos, aplicaciones de accesibilidad y sistemas de lectura en entornos sin aceleración por hardware.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo TTS; se distribuye en PyTorch y ONNX) |
-| Parámetros totales | 8.933.897 según safetensors; la model card declara 22,5 M |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | no disponible (modelo TTS; la model card no detalla la arquitectura interna) |
+| Parametros totales | 8.933.897 (safetensors); 22,5 M según la model card |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (se mencionan pesos PyTorch y ONNX Runtime, sin detallar cuantizaciones) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | kannada (kn) |
-| Licencia | CC-BY-4.0 |
+| Licencia | cc-by-4.0 |
 | Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo (no se especifica si es un transformer autorregresivo, un modelo acústico tipo VITS, un difusor ligero u otra familia). La model card únicamente indica que se trata de un modelo TTS de 22,5 millones de parámetros con dos voces (femenina y masculina), que lee escritura kannada y que puede ejecutarse tanto con PyTorch como con ONNX Runtime, lo que sugiere una exportación a ONNX para despliegue en CPU. No se han publicado detalles sobre el tipo de tokenizador, el vocoder, la representación acústica ni la estrategia de decodificación.
+La model card no especifica la arquitectura interna del modelo (no se indica si es VITS, FastSpeech, un transformer acústico o un modelo híbrido). Lo que sí se documenta es que el modelo se distribuye en formatos safetensors y ONNX, y que puede ejecutarse tanto con PyTorch como con ONNX Runtime. El tamaño del repositorio es de 0,2 GB, coherente con un modelo de menos de 10 millones de parámetros en safetensors.
 
-En cuanto a los datos de entrenamiento, la model card especifica el uso del dataset `sulabhkatiyar/indic-tts-mini-24k`, con audio a 24 kHz. La voz masculina procede de AI4Bharat Rasa, derivada del corpus completo `sulabhkatiyar/indic-tts-multilingual-prepared`, mientras que la voz femenina proviene del corpus LIMMITS / SYSPIN. También se citan como datasets asociados `ai4bharat/Rasa` e `iAkashPaul/limmits-2024`. No se indica el número total de horas de audio, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO u otros ajustes posteriores al entrenamiento. Tampoco se documentan innovaciones técnicas específicas más allá de la optimización para inferencia en CPU y la exportación a ONNX.
+El entrenamiento se realizó sobre el dataset sulabhkatiyar/indic-tts-mini-24k, a 24 kHz. La voz masculina proviene de AI4Bharat Rasa, derivada del corpus completo sulabhkatiyar/indic-tts-multilingual-prepared, mientras que la voz femenina procede del corpus LIMMITS / SYSPIN. También se citan como datasets relacionados ai4bharat/Rasa y iAkashPaul/limmits-2024. No se detalla el número de tokens, la composición exacta del dataset ni si hubo etapas de RLHF o DPO, que en un modelo TTS de este tipo no serían el mecanismo habitual.
 
 ## Capacidades
 
 - Síntesis de voz a partir de texto en escritura kannada, con salida de audio a 24 kHz.
 - Dos voces seleccionables: femenina (`voice="female"`) y masculina.
-- Inferencia en CPU sin necesidad de GPU, con soporte para PyTorch y ONNX Runtime.
-- Ejecución en un solo hilo de CPU, lo que facilita el despliegue en dispositivos de bajos recursos.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo TTS).
-- No se documentan capacidades multilingües más allá del kannada.
-- No se documentan modos especiales como thinking mode, visión o audio de entrada.
+- Ejecución en CPU sin GPU, con soporte para PyTorch y ONNX Runtime.
+- Inferencia en dispositivos (on-device), gracias a su tamaño reducido.
+- Lectura de frases de noticias y texto general en kannada con baja tasa de error de caracteres.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio de entrada ni modo de pensamiento; es un modelo exclusivamente TTS.
+- Capacidad multilingüe limitada al kannada; no se indica soporte de otros idiomas.
 
 ## Casos de uso
 
-- Lectura de noticias y contenidos web en kannada: el modelo sintetiza frases de noticias con un CER del 1,05 % en FLORES-200, adecuado para servicios de lectura por voz de artículos y boletines con una calidad de pronunciación alta.
-- Asistentes de voz en dispositivos móviles y embebidos: al ejecutarse 38 veces más rápido que tiempo real en un hilo de Apple M1 y 7 veces en un hilo x86, permite integrar respuestas habladas en aplicaciones sin conexión ni GPU.
-- Accesibilidad para personas con discapacidad visual: lectura de texto en kannada en pantalla con latencia baja y sin depender de servicios en la nube, lo que preserva la privacidad del contenido leído.
-- Sistemas de anuncios y megafonía automatizada: generación de avisos pregrabados o dinámicos en kannada para transporte público, aeropuertos o comercios, con dos voces para alternar mensajes.
-- Aprendizaje de idiomas y materiales educativos: creación de audios de apoyo para estudiantes de kannada, con pronunciación consistente y posibilidad de generar grandes volúmenes de audio en CPU.
-- Integración en pipelines de CI/CD para generar locuciones de prueba: al ser un modelo pequeño (repo de 0,2 GB) y con licencia CC-BY-4.0, se puede incluir en flujos automatizados de generación de audio para tests o demos sin coste de GPU.
-- Prototipado rápido de productos de voz en kannada: el tamaño reducido y la exportación ONNX permiten iterar en local y desplegar en servidores sin acelerador hardware.
+- Lectura de noticias y artículos en kannada: el modelo logra un CER de 1,05 % en frases de noticias de FLORES-200, por lo que es adecuado para convertir titulares y cuerpos de noticia en audio inteligible con dos voces disponibles.
+- Accesibilidad para personas con discapacidad visual: al ejecutarse en CPU a 38 veces tiempo real en un hilo de Apple M1, puede integrarse en lectores de pantalla y aplicaciones de escritorio sin depender de servicios en la nube.
+- Asistentes de voz en dispositivos de gama baja: con un factor de tiempo real de 0,136 en un hilo x86, cabe en netbooks, Raspberry Pi o móviles de gama media para respuestas habladas en kannada.
+- Audiolibros y contenido educativo: la voz femenina y masculina permiten narrar materiales didácticos o textos largos por lotes, con un coste computacional mínimo en comparación con modelos de 350 M o 937 M de parámetros.
+- Sistemas de megafonía y avisos automatizados: la baja latencia y la ejecución sin GPU facilitan la generación de anuncios pregrabados en kannada para transporte, aeropuertos o comercios.
+- Integración en pipelines de datos: al estar disponible en ONNX y safetensors, puede incorporarse a flujos de preprocesamiento o aumento de datos (data augmentation) para entrenar modelos de reconocimiento de voz en kannada.
+- Prototipado rápido de interfaces de voz: el tamaño de 0,2 GB del repositorio permite descargar y probar el modelo en minutos, sin infraestructura de GPU.
 
 ## Benchmarks y rendimiento
 
-La model card presenta resultados de tasa de error de caracteres (CER) sobre dos conjuntos de evaluación. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a un modelo TTS.
+Datos publicados por el autor en la model card. CER = tasa de error de caracteres; menor es mejor.
 
-**FLORES-200, frases de noticias (100)**
+FLORES-200, frases de noticias (100):
 
-| Modelo | Tamaño | CER, % | Error extra frente a este modelo (IC 95 %) | Resultado |
-|---|---:|---:|---:|---|
-| Este modelo | 22,5 M | 1,05 | — | — |
-| `ai4bharat/IndicF5` | 350,6 M | 0,70 | -0,36 [-0,55, -0,17] | mejor el suyo |
-| `Sammy-Mohan/Kokoro-82M-Kannada` | 131,4 M | 0,96 | -0,09 [-0,31, +0,14] | igual |
-| `github.com/AI4Bharat/Indic-TTS` (kn.zip) | 65,6 M | 1,23 | +0,18 [-0,08, +0,44] | igual |
-| `ai4bharat/vits_rasa_13` | 31,3 M | 1,78 | +0,73 [+0,42, +1,03] | mejor el nuestro |
-| `SYSPIN/vits_Kannada_Female` + `SYSPIN/vits_Kannada_Male` | 29,1 M | 2,13 | +1,07 [+0,71, +1,45] | mejor el nuestro |
-| `ai4bharat/indic-parler-tts` | 937,8 M | 2,30 | +1,25 [+0,39, +2,45] | mejor el nuestro |
-| `facebook/mms-tts-kan` | 29,1 M | 3,31 | +2,26 [+1,73, +2,85] | mejor el nuestro |
-| `multilingual-tts/VITS-OpenBible-Kannada` | 29,1 M | 5,90 | +4,85 [+4,01, +5,73] | mejor el nuestro |
+| Modelo | Tamano | CER, % | Resultado frente a este modelo |
+|---|---:|---:|---|
+| **Este modelo** | 22,5 M | **1,05** | — |
+| ai4bharat/IndicF5 | 350,6 M | 0,70 | mejor el suyo |
+| Sammy-Mohan/Kokoro-82M-Kannada | 131,4 M | 0,96 | igual |
+| AI4Bharat/Indic-TTS (kn.zip) | 65,6 M | 1,23 | igual |
+| ai4bharat/vits_rasa_13 | 31,3 M | 1,78 | mejor el nuestro |
+| SYSPIN/vits_Kannada_Female + Male | 29,1 M | 2,13 | mejor el nuestro |
+| ai4bharat/indic-parler-tts | 937,8 M | 2,30 | mejor el nuestro |
+| facebook/mms-tts-kan | 29,1 M | 3,31 | mejor el nuestro |
+| multilingual-tts/VITS-OpenBible-Kannada | 29,1 M | 5,90 | mejor el nuestro |
 
-**Conjunto de prueba retenido (299 frases)**
+Frases de test reservadas (299):
 
-| Modelo | Tamaño | CER, % | Error extra frente a este modelo (IC 95 %) | Resultado |
-|---|---:|---:|---:|---|
-| Este modelo | 22,5 M | 3,66 | — | — |
-| `github.com/AI4Bharat/Indic-TTS` (kn.zip) | 65,6 M | 3,84 | +0,18 [-0,69, +1,11] | igual |
-| `facebook/mms-tts-kan` | 29,1 M | 9,42 | +5,76 [+4,72, +6,93] | mejor el nuestro |
-| `Sammy-Mohan/Kokoro-82M-Kannada` | 131,4 M | 3,68 | +0,02 [-0,80, +1,03] | igual |
-| `ai4bharat/vits_rasa_13` | 31,3 M | 4,12 | +0,46 [-0,40, +1,26] | igual |
-| `SYSPIN/vits_Kannada_Female` + `SYSPIN/vits_Kannada_Male` | 29,1 M | 6,16 | +2,49 [+1,33, +4,12] | mejor el nuestro |
+| Modelo | Tamano | CER, % | Resultado frente a este modelo |
+|---|---:|---:|---|
+| **Este modelo** | 22,5 M | **3,66** | — |
+| AI4Bharat/Indic-TTS (kn.zip) | 65,6 M | 3,84 | igual |
+| facebook/mms-tts-kan | 29,1 M | 9,42 | mejor el nuestro |
+| Sammy-Mohan/Kokoro-82M-Kannada | 131,4 M | 3,68 | igual |
+| ai4bharat/vits_rasa_13 | 31,3 M | 4,12 | igual |
+| SYSPIN/vits_Kannada_Female + Male | 29,1 M | 6,16 | mejor el nuestro |
 
-**Modelos mayores, mismas frases retenidas**
+Comparación con modelos grandes en las mismas frases reservadas:
 
-| Modelo | Tamaño | Frases | CER, % | Este modelo, mismas frases, % | Error extra frente a este modelo (IC 95 %) | Resultado |
-|---|---:|---:|---:|---:|---:|---|
-| `ai4bharat/IndicF5` | 350,6 M | 40 | 2,44 | 3,71 | -1,27 [-3,06, +0,76] | igual |
-| `ai4bharat/indic-parler-tts` | 937,8 M | 40 | 3,27 | 3,71 | -0,44 [-2,08, +0,99] | igual |
+| Modelo | Tamano | Frases | CER, % | Este modelo, mismas frases, % | Resultado |
+|---|---:|---:|---:|---:|---|
+| ai4bharat/IndicF5 | 350,6 M | 40 | 2,44 | 3,71 | igual |
+| ai4bharat/indic-parler-tts | 937,8 M | 40 | 3,27 | 3,71 | igual |
 
-**Velocidad**
+Velocidad:
 
-| Hardware | Configuración | Más rápido que tiempo real | Factor de tiempo real |
+| Hardware | Configuracion | Mas rapido que tiempo real | Factor de tiempo real |
 |---|---|---:|---:|
-| CPU x86 (Intel Xeon @ 2,20 GHz, 4 vCPU) | PyTorch, 1 hilo | 7× | 0,136 |
-| Apple M1, CPU | PyTorch, 1 hilo | 38× | 0,026 |
-| GPU NVIDIA T4 | PyTorch | 62× | 0,016 |
+| CPU x86 (Intel Xeon @ 2,20 GHz, 4 vCPU) | PyTorch, 1 hilo | 7x | 0,136 |
+| Apple M1, CPU | PyTorch, 1 hilo | 38x | 0,026 |
+| NVIDIA T4 | PyTorch | 62x | 0,016 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en CPU; en GPU, el modelo es de tamaño muy reducido (repo de 0,2 GB), por lo que cabría en cualquier GPU con al menos 1 GB de memoria, aunque no se publica una cifra exacta.
-- GPU recomendadas: NVIDIA T4 es la única documentada en la model card (62× tiempo real). No se documentan pruebas en A100, H100 o RTX 4090.
-- Cabe en GPU de consumo: sí, por tamaño (8,9 M de parámetros según safetensors), aunque no se han publicado mediciones específicas en RTX 4090 u otras GPU de consumo.
-- Opciones de despliegue: PyTorch y ONNX Runtime son los soportes documentados. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
-- Latencia y throughput: factor de tiempo real de 0,026 en Apple M1 (1 hilo), 0,136 en CPU x86 (1 hilo) y 0,016 en T4, medidos sobre 30 frases retenidas.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño del modelo (menos de 9 M de parámetros en safetensors, repositorio de 0,2 GB), la huella de memoria es mínima y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: NVIDIA T4 es suficiente (62 veces tiempo real); no se requiere A100 ni H100. El modelo está pensado para CPU.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPU; también funciona sin GPU.
+- Opciones de despliegue: PyTorch y ONNX Runtime, según la model card. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo TTS de este tipo.
+- Latencia y throughput: factor de tiempo real de 0,026 en un hilo de Apple M1, 0,136 en un hilo x86 y 0,016 en T4.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | CER FLORES-200, % | CER retenido, % | Licencia | Disponibilidad |
-|---|---:|---|---:|---:|---|---|
-| Este modelo | 8,9 M (safetensors) / 22,5 M (model card) | no disponible | 1,05 | 3,66 | CC-BY-4.0 | Hugging Face, ONNX |
-| `ai4bharat/IndicF5` | 350,6 M | no disponible | 0,70 | 2,44 (40 frases) | no disponible | Hugging Face |
-| `ai4bharat/indic-parler-tts` | 937,8 M | no disponible | 2,30 | 3,27 (40 frases) | no disponible | Hugging Face |
-| `Sammy-Mohan/Kokoro-82M-Kannada` | 131,4 M | no disponible | 0,96 | 3,68 | no disponible | Hugging Face |
-| `facebook/mms-tts-kan` | 29,1 M | no disponible | 3,31 | 9,42 | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | CER FLORES-200, % | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| **Indic Tiny TTS: Kannada** | 8,9 M (safetensors) / 22,5 M (card) | no disponible | 1,05 | cc-by-4.0 | Hugging Face |
+| ai4bharat/IndicF5 | 350,6 M | no disponible | 0,70 | no disponible | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | no disponible | 2,30 | no disponible | Hugging Face |
+| facebook/mms-tts-kan | 29,1 M | no disponible | 3,31 | no disponible | Hugging Face |
+| ai4bharat/vits_rasa_13 | 31,3 M | no disponible | 1,78 | no disponible | Hugging Face |
+
+El modelo destaca por su relación tamaño-calidad: iguala en CER a modelos de 350 M y 937 M de parámetros en las frases reservadas, y supera a la mayoría de alternativas de tamaño similar, con la ventaja adicional de ejecutarse en CPU.
 
 ## Limitaciones y advertencias
 
-- Solo soporta kannada; no se documentan otros idiomas ni cambios de código lingüístico.
-- La model card no detalla sesgos de género, dialecto o registro; las dos voces disponibles (femenina y masculina) pueden no representar la diversidad dialectal del kannada.
-- Riesgo de alucinación no aplica en el sentido de generación de texto, pero sí existe riesgo de pronunciación incorrecta en palabras fuera del dominio de entrenamiento (nombres propios, siglas, términos técnicos), no cuantificado en la información disponible.
-- Discrepancia entre el número de parámetros de los pesos safetensors (8.933.897) y el declarado en la model card (22,5 M); conviene verificar antes de dimensionar el despliegue.
-- No se documentan limitaciones de longitud de contexto ni de duración máxima de audio generado.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; no se especifican restricciones adicionales, pero debe citarse al autor.
-- No se han publicado métricas de naturalidad perceptual (MOS) ni evaluaciones con hablantes nativos; el CER es una métrica de inteligibilidad, no de calidad subjetiva.
-- La model card marca `inference: false`, lo que puede indicar que la inferencia automática en Hugging Face no está habilitada; el despliegue requiere cargar los pesos manualmente con PyTorch u ONNX Runtime.
+- Sesgos conocidos: no se documentan en la model card; al entrenarse con corpus concretos (Rasa, LIMMITS/SYSPIN), puede heredar sesgos de hablante, registro y dominio de esos datasets.
+- Riesgo de alucinación: en TTS se traduce en pronunciación incorrecta o entonación anómala en palabras fuera del dominio de entrenamiento; el CER de 3,66 % en frases reservadas indica que persisten errores en texto no visto.
+- Limitaciones de contexto o idioma: el modelo solo soporta kannada; no se documenta contexto de texto máximo ni manejo de texto mixto con otros alfabetos.
+- Restricciones de licencia: cc-by-4.0 permite uso comercial con atribución; es necesario citar al autor y la licencia.
+- Caveats para producción: la model card marca `inference: false`, lo que puede indicar que la inferencia no está habilitada en el Hub; la discrepancia entre los 8,9 M de parámetros en safetensors y los 22,5 M de la model card debe verificarse antes de dimensionar recursos. No se documentan la arquitectura interna ni los detalles de cuantización, lo que limita la reproducibilidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-kannada
+- Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-kannada
 - Colección INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset multilingüe preparado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared
 - Dataset AI4Bharat Rasa: https://huggingface.co/datasets/ai4bharat/Rasa
 - Dataset LIMMITS 2024: https://huggingface.co/datasets/iAkashPaul/limmits-2024
-- Modelo comparado `ai4bharat/IndicF5`: https://huggingface.co/ai4bharat/IndicF5
-- Modelo comparado `ai4bharat/indic-parler-tts`: https://huggingface.co/ai4bharat/indic-parler-tts
-- Modelo comparado `Sammy-Mohan/Kokoro-82M-Kannada`: https://huggingface.co/Sammy-Mohan/Kokoro-82M-Kannada
-- Modelo comparado `facebook/mms-tts-kan`: https://huggingface.co/facebook/mms-tts-kan
-- Modelo comparado `ai4bharat/vits_rasa_13`: https://huggingface.co/ai4bharat/vits_rasa_13
+- Modelo comparado ai4bharat/IndicF5: https://huggingface.co/ai4bharat/IndicF5
+- Modelo comparado ai4bharat/indic-parler-tts: https://huggingface.co/ai4bharat/indic-parler-tts
+- Modelo comparado facebook/mms-tts-kan: https://huggingface.co/facebook/mms-tts-kan
 - Repositorio AI4Bharat Indic-TTS: https://github.com/AI4Bharat/Indic-TTS
-- Modelo comparado `SYSPIN/vits_Kannada_Female`: https://huggingface.co/SYSPIN/vits_Kannada_Female
-- Modelo comparado `SYSPIN/vits_Kannada_Male`: https://huggingface.co/SYSPIN/vits_Kannada_Male
-- Modelo comparado `multilingual-tts/VITS-OpenBible-Kannada`: https://huggingface.co/multilingual-tts/VITS-OpenBible-Kannada
-- Muestras de audio: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-kannada/tree/main/samples

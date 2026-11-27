@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "Filippo/qwen38-pi-pi-pilot-20261126-212445",
+  "slug": "filippo-qwen38-pi-pi-pilot-20261126-212445",
+  "author": "Filippo",
+  "url": "https://huggingface.co/Filippo/qwen38-pi-pi-pilot-20261126-212445",
+  "created_at": "2026-11-26T21:30:37.000Z",
+  "updated_at": "2026-11-26T21:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LE FILIPPO | Site officiel, avis, réservation et commande en ligne",
+      "url": "https://lefilippo.fr/",
+      "snippet": "Chez Le Filippo la passion et l'amour de la cuisine Italienne est au Rendez vous! On vous propose un voyage culinaire à la fois …Read more"
+    },
+    {
+      "title": "Filippo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Filippo",
+      "snippet": "Filippo is an Italian male given name, which is the equivalent of the English name Philip, from the Greek Philippos, meaning \"horse …Read more"
+    },
+    {
+      "title": "Online Shoe Shop - Collection 2026/2027 | Filippo",
+      "url": "https://www.filippo.pl/en/",
+      "snippet": "We have a wide selection of Polish and foreign brands such as Marco Tozzi, Caprice, S.Oliver, Tamaris, Jana, Eska, Rieker. What …Read more"
+    },
+    {
+      "title": "Filippo Ganna — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Filippo_Ganna",
+      "snippet": "Filippo Ganna, né le 25 juillet 1996 à Verbania (Piémont, Italie), est un coureur cycliste italien, membre de l'équipe Ineos. Il pratique …Read more"
+    },
+    {
+      "title": "LE FILIPPO | Site officiel, avis, réservation et commande en ligne",
+      "url": "https://lefilippo.fr/fr/booking",
+      "snippet": "Le Filippo 54 Rue Cambronne 75015 Paris France +33143061973 fr © Copyright 2026 - Le Filippo - tous droits réservés Site réalisé …Read more"
+    }
+  ]
+}

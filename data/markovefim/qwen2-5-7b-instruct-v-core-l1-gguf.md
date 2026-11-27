@@ -2,96 +2,88 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-V-CORE-L1-GGUF es una compilación cuantizada en formato GGUF del modelo Qwen/Qwen2.5-7B-Instruct, desarrollada por el usuario MarkovEfim. El modelo base, creado por Alibaba Qwen, es un transformer denso de 7.615.616.512 parámetros orientado a instrucciones, con capacidades de generación de texto, razonamiento y código. Esta versión concreta aplica una metodología de cuantización propietaria denominada vcore-l1-certified, que combina optimización de la mediana en norma ℓ₁ con agrupación de valores atípicos por canal, respaldada por pruebas formales en Lean 4.
+Qwen2.5-7B-Instruct-V-CORE-L1-GGUF es una cuantización GGUF del modelo Qwen2.5-7B-Instruct de Alibaba, producida por E. S. Markov mediante su pipeline V-CORE v5.0.0. La particularidad del artefacto es que el autor afirma que el proceso de cuantización está respaldado por 24 módulos Lean 4 verificados mecánicamente, sin `sorry`s, lo que lo convierte en una propuesta poco habitual: una cuantización con certificación formal de su procedimiento.
 
-La relevancia de esta ficha radica en que documenta un caso de cuantización extrema (de FP16 a Q4_0) con métricas declaradas de error relativo en norma ℓ₁ del 10,66 % y una compresión de 2,60×, lo que reduce el peso de 14.525,7 MB a 5.587,0 MB. El resultado es un artefacto de 5,9 GB en el repositorio, pensado para inferencia local con llama.cpp en entornos con recursos limitados.
+El modelo base, Qwen2.5-7B-Instruct, es un transformer denso de 7.615.616.512 parámetros con 128.000 tokens de contexto, entrenado por el equipo Qwen de Alibaba. Esta versión GGUF conserva la arquitectura y los pesos del original, pero se distribuye en un único fichero de 5.587,0 MB (2,60x de compresión respecto a los pesos originales), pensado para inferencia con `llama.cpp` y runtimes compatibles.
 
-El modelo conserva la licencia Apache 2.0 del original y declara soporte para inglés y ruso. No obstante, la información pública disponible es muy escasa: cero descargas, sin pipeline declarado y sin resultados de benchmarks propios, por lo que las evaluaciones de calidad deben inferirse del modelo base y de la métrica de error de cuantización reportada por el autor.
+La relevancia del artefacto es doble: por un lado, ofrece una ruta de despliegue de Qwen2.5-7B-Instruct en hardware modesto (el autor cita una NVIDIA Tesla T4); por otro, introduce en el ecosistema de cuantización una metodología de verificación formal que, si se consolida, podría servir para auditar la fidelidad de las cuantizaciones en entornos donde la reproducibilidad es crítica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Qwen2.5-7B-Instruct) |
+| Arquitectura | Transformer denso (Qwen2.5), cuantizado a GGUF |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-7B-Instruct soporta hasta 131.072 tokens, dato no confirmado en esta ficha) |
-| Tipos de cuantizacion | GGUF Q4_0 + F16 |
-| Idiomas soportados | en, ru |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (tamano del repo: 5,9 GB) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-7B-Instruct soporta 128.000 tokens) |
+| Tipos de cuantizacion | GGUF (artefacto unico `Qwen2.5-7B-Instruct-V-CORE-L1-v5.gguf`, 5.587,0 MB, 2,60x de compresion); niveles adicionales no disponibles |
+| Idiomas soportados | en, ru (segun tags del repositorio) |
+| Licencia | AGPL-3.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer denso de 7.615.616.512 parámetros, correspondiente a la familia Qwen2.5-Instruct de Alibaba. La model card de esta compilación no detalla la composición del dataset de entrenamiento original, el número de tokens utilizados ni si hubo fases de RLHF o DPO; esos datos pertenecen a la documentación del modelo base y no se reproducen aquí.
+El modelo subyacente es Qwen2.5-7B-Instruct, un transformer denso decoder-only de 7.615.616.512 parámetros. No se trata de un modelo MoE ni de una arquitectura híbrida SSM: es un transformer clásico con atención completa y las mejoras introducidas por Qwen en la familia 2.5 (RoPE, RMSNorm, SwiGLU y sesgos de atención QKV). El entrenamiento original del modelo base incluye preentrenamiento sobre un corpus multilingüe de gran escala y un post-entrenamiento con instrucciones y preferencias humanas, si bien la model card de este repositorio no detalla ni el número de tokens ni la composición del dataset.
 
-La innovación técnica de esta versión es el pipeline de cuantización vcore-l1-certified, que aplica una optimización de la mediana basada en la norma ℓ₁ con umbrales críticos exactos y agrupación de valores atípicos por canal. El autor afirma que el procedimiento está respaldado por pruebas formales en Lean 4 mediante la librería l1-projection-complexity-lean4 v3.0.0. El resultado es una cuantización Q4_0 con capas F16 selectivas que alcanza una compresión de 2,60× respecto a FP16, con un error relativo en norma ℓ₁ del 10,66 % sobre los pesos. No se documentan técnicas de decodificación especulativa ni atención lineal.
+La innovación de este artefacto no está en el entrenamiento, sino en el proceso de cuantización: V-CORE v5.0.0 aplica una proyección con métrica L1 respaldada por 24 módulos Lean 4 verificados mecánicamente (sin `sorry`s). El autor publica el entorno de verificación (Tesla T4 + C++17 AVX2 con `vcore-run`) y los proofs en repositorios separados de GitHub. No se especifican en la información disponible los detalles del algoritmo de cuantización (número de bits por peso, granularidad de grupo, calibración) más allá del tamaño final del fichero y el factor de compresión.
 
 ## Capacidades
 
-- Generación de texto e instrucciones en inglés y ruso, heredadas del modelo base Qwen2.5-7B-Instruct.
-- Razonamiento y resolución de problemas de complejidad media, propio de un modelo de 7,6B parámetros.
-- Generación de código y matemáticas, capacidad documentada en la familia Qwen2.5-Instruct.
-- Soporte de tool calling y function calling, según las capacidades del modelo base.
-- Capacidad de seguir instrucciones multi-turno dentro de la ventana de contexto del modelo original.
-- No se declaran capacidades de visión, audio ni modo de razonamiento extendido (thinking mode) en esta compilación.
-- La cuantización Q4_0 puede degradar ligeramente la precisión en tareas sensibles a pesos de baja magnitud; el autor reporta un error ℓ₁ del 10,66 %.
+- Generación de texto e instrucciones en inglés y ruso, heredadas de Qwen2.5-7B-Instruct.
+- Razonamiento de propósito general y matemáticas de nivel medio, según las capacidades del modelo base.
+- Generación de código, incluyendo lenguajes de programación habituales; el autor etiqueta el artefacto con `lean4` y `formal-verification`, aunque no se documenta un ajuste específico en Lean 4.
+- Soporte de tool calling y function calling heredado del modelo base Qwen2.5-Instruct.
+- Capacidad de razonamiento multi-paso y uso en pipelines de agentes, limitada por el contexto efectivo que permita el runtime GGUF.
+- Capacidades multilingües limitadas a los idiomas declarados (en, ru) en los tags del repositorio.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito en la información disponible.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo sin GPU dedicada de gran VRAM: al ocupar 5,9 GB en GGUF Q4_0, el modelo puede ejecutarse con llama.cpp en CPU o en GPUs de consumo, lo que permite prototipado y pruebas sin infraestructura cloud.
-- Asistentes conversacionales en inglés y ruso: el modelo mantiene las capacidades instructivas del base y puede gestionar diálogos multi-turno en ambos idiomas declarados.
-- Generación de código en entornos de desarrollo integrado: gracias al soporte de tool calling heredado, puede integrarse en pipelines de asistencia a la programación con llama.cpp como backend.
-- Procesamiento de documentación técnica bilingüe (en/ru): útil para traducción asistida, resumen y extracción de información en organizaciones con contenido en ambos idiomas.
-- Despliegue en dispositivos edge o contenedores con límite de memoria: el tamaño de 5,9 GB y el formato GGUF permiten empaquetar el modelo en imágenes Docker o entornos con menos de 8 GB de RAM/VRAM.
-- Evaluación de pipelines de cuantización: este artefacto sirve como referencia para comparar la metodología vcore-l1-certified frente a cuantizaciones GGUF estándar en términos de error ℓ₁ y calidad percibida.
-- Experimentación académica con modelos certificados formalmente: el uso de Lean 4 para respaldar el procedimiento de cuantización lo hace adecuado para estudios sobre verificabilidad de compresión de redes neuronales.
+- Despliegue en hardware de gama media: el fichero GGUF de 5,59 GB permite ejecutar el modelo en una GPU con 8-12 GB de VRAM (por ejemplo, RTX 3060/4060 o Tesla T4), algo inviable con los pesos en fp16.
+- Inferencia en CPU con `llama.cpp`: al ser un GGUF único, se puede ejecutar en servidores sin GPU usando AVX2, útil para entornos de desarrollo y pruebas.
+- Asistente de código en local: el modelo base conserva capacidad de generación de código y tool calling, por lo que puede integrarse en editores o pipelines de CI/CD que requieran privacidad de datos.
+- Prototipado de agentes con tool calling: Qwen2.5-7B-Instruct soporta function calling, lo que permite construir agentes multi-paso sobre el runtime GGUF.
+- Evaluación de metodologías de cuantización verificada: investigadores pueden reproducir el pipeline V-CORE y comparar la fidelidad del artefacto frente a cuantizaciones estándar (Q4_K_M, Q5_K_M, etc.).
+- Procesamiento de texto en inglés y ruso: atención al cliente o resumen documental en estos dos idiomas, aprovechando el soporte declarado.
+- Auditoría de reproducibilidad: el enlace a los proofs Lean 4 y al DOI de Zenodo permite a equipos de compliance verificar el procedimiento de cuantización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas de compresión y error de cuantización:
-
-| Metrica | FP16 baseline | V-CORE GGUF |
-|---|---|---|
-| Tamano del modelo | 14.525,7 MB | 5.587,0 MB (2,60× compresion) |
-| Error relativo en norma L1 | 0,00 % | 10,66 % |
-| Formato | Safetensors FP16 | GGUF (Q4_0 + F16) |
-
-No hay datos de MMLU, HumanEval, GSM8K ni de comparación con otras cuantizaciones del mismo modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6-7 GB en Q4_0, considerando el peso de 5,9 GB más overhead de contexto y buffers de llama.cpp.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 o H100 para mayor throughput; también viable en CPU con suficiente RAM.
-- Cabe en GPUs de consumo: sí, en modelos con 8 GB o más de VRAM (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070). En GPUs de 6 GB puede requerir offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama (mediante importación del GGUF), y cualquier runtime compatible con GGUF. No se declara compatibilidad explícita con vLLM o TGI, que requieren formatos safetensors.
+- VRAM estimada para inferencia: aproximadamente 6-7 GB para el fichero GGUF de 5,59 GB, más overhead de contexto y caché KV.
+- GPU recomendadas: NVIDIA Tesla T4 (citada por el autor), RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para mayor throughput; A100/H100 para despliegues de alta concurrencia.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM (RTX 3060 Ti, RTX 4060, RTX 3070, etc.); en 6 GB puede requerir offloading parcial a CPU.
+- Opciones de despliegue: `llama.cpp` (soporte nativo GGUF), `vcore-run` (runtime propio en C++17 AVX2 del autor), Ollama y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversión.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-V-CORE-L1-GGUF (este) | 7,6B | no disponible en esta ficha | GGUF Q4_0 | Apache 2.0 | Hugging Face, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,6B | 131.072 tokens (según documentación del base) | Safetensors FP16/BF16 | Apache 2.0 | Hugging Face, ampliamente usado |
-| Qwen2.5-7B-Instruct-GGUF (cuantizaciones oficiales/comunitarias) | 7,6B | 131.072 tokens (según documentación del base) | GGUF Q2-Q8 | Apache 2.0 | Hugging Face, múltiples variantes |
-| Llama-3.1-8B-Instruct | 8B | 131.072 tokens | Safetensors, GGUF | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Qwen2.5-7B-Instruct-V-CORE-L1-GGUF | 7,62 B | no disponible (base: 128k) | GGUF | AGPL-3.0 | Cuantizacion con verificacion formal Lean 4 |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 | safetensors | Apache-2.0 (modelo base) | Modelo original sin cuantizar |
+| Cuantizaciones GGUF estandar de Qwen2.5-7B-Instruct (p. ej. Q4_K_M) | 7,62 B | 128.000 (segun runtime) | GGUF | Apache-2.0 | Sin certificacion formal; ampliamente adoptadas |
 
-La comparación de rendimiento no está disponible: no hay benchmarks publicados para esta compilación que permitan contrastar calidad frente a cuantizaciones estándar del mismo modelo base.
+La diferencia clave frente a las cuantizaciones estándar es la licencia: el artefacto se distribuye bajo AGPL-3.0, mientras que el modelo base Qwen2.5-7B-Instruct es Apache-2.0. Esto puede condicionar su uso en productos propietarios.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: heredados del modelo base Qwen2.5-7B-Instruct; no se documentan evaluaciones de sesgo específicas para esta cuantización.
-- Riesgo de alucinación: presente como en cualquier LLM de 7,6B; la cuantización Q4_0 puede incrementar ligeramente la degradación en tareas de razonamiento fino.
-- Limitaciones de contexto o idioma: solo se declaran inglés y ruso; el contexto efectivo no se especifica en esta ficha y debe consultarse en la documentación del modelo base.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar los términos del modelo base Qwen2.5-7B-Instruct.
-- Caveat de producción: el repositorio tiene 0 descargas y 1 like, sin pipeline declarado ni benchmarks; la metodología vcore-l1-certified no ha sido validada de forma independiente en la información disponible.
-- El error relativo ℓ₁ del 10,66 % es una métrica agregada de pesos; no garantiza equivalencia funcional con el modelo FP16 en todas las tareas.
-- El tamaño del repo (5,9 GB) frente al tamaño declarado del modelo (5.587,0 MB) sugiere posibles archivos adicionales o metadatos; verificar antes de desplegar.
+- La licencia AGPL-3.0 es copyleft fuerte: el uso en servicios de red puede obligar a liberar el código del servicio, a diferencia del modelo base Apache-2.0.
+- El artefacto es una cuantización; puede degradar ligeramente la calidad respecto a los pesos fp16/bf16 originales, aunque no se publican métricas de divergencia.
+- La verificación formal Lean 4 certifica el procedimiento de cuantización, no la calidad del modelo resultante ni la ausencia de sesgos.
+- Idiomas declarados limitados a inglés y ruso; el rendimiento en castellano no está garantizado por el autor.
+- Riesgo de alucinación inherente a los modelos de 7B, especialmente en tareas de razonamiento complejo o dominios especializados.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- El repositorio tiene un único like y 539 descargas, lo que sugiere una adopción limitada; conviene validar el artefacto antes de usarlo en producción.
+- La fecha de creación del repositorio (2026-11-24) y el DOI de Zenodo deben verificarse antes de citarlos en trabajos académicos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/MarkovEfim/Qwen2.5-7B-Instruct-V-CORE-L1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Repositorio de pruebas formales Lean 4 (l1-projection-complexity-lean4 v3.0.0): no disponible enlace directo en la información proporcionada.
-- Paper o blog de la metodología vcore-l1-certified: no disponible.
-- Demo o espacio de inferencia: no disponible.
+- DOI Zenodo: https://doi.org/10.5281/zenodo.24527692
+- Runtime V-CORE: https://github.com/fomamarkov-creator/vcore-l1-certified
+- Proofs Lean 4: https://github.com/fomamarkov-creator/l1-projection-complexity-lean4

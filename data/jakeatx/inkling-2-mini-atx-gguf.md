@@ -2,96 +2,104 @@
 
 ## Resumen
 
-Inkling-2-Mini-ATX-GGUF es una cuantización en formato GGUF del modelo base thinkingmachines/Inkling-2-Mini, publicada por el usuario jakeatx. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 26.070.385.152 parámetros totales, orientado a generación de texto conversacional. Esta versión GGUF está específicamente optimizada para ejecutarse íntegramente en tarjetas gráficas de 24 GB de la serie RTX 30 (arquitectura Ampere), con una ventana de contexto por defecto de 262.144 tokens.
+Inkling-2-Mini-ATX-GGUF es una cuantizacion del modelo multimodal Inkling 2 Mini de Thinking Machines, empaquetada en formato GGUF por el usuario jakeatx para su uso con llamAmpere, un fork de llama.cpp optimizado para GPUs Ampere (RTX 30-series) de 24 GB. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 26.070.385.152 parametros totales y capacidad de procesamiento image-text-to-text, es decir, acepta tanto texto como imagenes como entrada.
 
-La relevancia de esta ficha radica en que no se trata de una cuantización GGUF convencional: los archivos requieren un fork específico de llama.cpp denominado llamAmpere (versión v0.7.4 o superior), y no cargan en llama.cpp estándar. El autor emplea formatos de cuantización propietarios (NVFP4Q8 y AI4) combinados con un modelo drafter separado para decodificación especulativa, lo que permite mantener precisiones de 5,4 y 4,4 bits por peso respectivamente.
+La relevancia de esta ficha radica en que el pack permite ejecutar el modelo completo en una unica GPU de 24 GB (RTX 3090, 3090 Ti, 4090) con una ventana de contexto por defecto de 262.144 tokens y hasta 614.400 tokens con el fichero de 4.4 bits por peso, algo poco habitual en modelos de este tamano. Incluye un drafter de decodificacion especulativa y un proyector de vision opcional, lo que habilita entrada de imagenes a traves de una API compatible con OpenAI.
 
-El repositorio incluye dos variantes de pesos principales y un drafter, sumando 32,4 GB en total. La licencia es Apache 2.0, heredada del modelo base, y el pipeline declarado es text-generation sin proyector de visión, por lo que la entrada es exclusivamente textual.
+La licencia es Apache 2.0, la misma que el modelo base, lo que facilita su uso comercial. Los pesos se distribuyen exclusivamente en GGUF y requieren llamAmpere v0.7.4 o superior; no cargan en llama.cpp estandar, un caveat critico para cualquier despliegue en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), según tags del repositorio |
+| Arquitectura | Transformer MoE (mezcla de expertos), multimodal image-text-to-text |
 | Parametros totales | 26.070.385.152 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens por defecto; hasta 319.488 en una GPU de 24 GB con el archivo de 5,4 bpw |
-| Tipos de cuantizacion | NVFP4Q8 a 5,4 bpw; AI4 a 4,4 bpw; drafter en Q8_0 |
+| Longitud de contexto | 262.144 tokens por defecto; hasta 385.024 (fichero 5.4 bpw) y 614.400 (fichero 4.4 bpw) en una GPU de 24 GB |
+| Tipos de cuantizacion | NVFP4Q8 a 5.4 bits por peso; AI4 a 4.4 bits por peso; drafter Q8_0; proyectores de vision F16 y Q8_0; cache KV de 4 bits (SJ-KVaRN) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (requiere llamAmpere v0.7.4 o superior; no compatible con llama.cpp estándar) |
+| Formato de pesos | GGUF (llama.cpp / llamAmpere) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura de mezcla de expertos (MoE), tal como indican las etiquetas del repositorio. No se dispone de información sobre el número de parámetros activos por token, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detalla en la información disponible ninguna innovación arquitectónica del modelo base más allá de su naturaleza MoE.
+El modelo base Inkling 2 Mini emplea una arquitectura de mezcla de expertos (MoE) con 26.070 millones de parametros totales segun los safetensors publicados. La model card de esta cuantizacion no detalla el numero de parametros activos por token, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifica la innovacion arquitectonica concreta del modelo base mas alla de su naturaleza MoE y multimodal.
 
-La contribución técnica de esta ficha es la cuantización: el autor genera pesos GGUF con esquemas NVFP4Q8 (5,4 bits por peso) y AI4 (4,4 bits por peso), e incluye un modelo drafter independiente en Q8_0 de 0,45 GB para decodificación especulativa. El preset `24ink` configura una caché KV de 4 bits, una sola ranura de servidor y la ventana de contexto de 262.144 tokens. La decodificación especulativa con el drafter es la que permite las tasas de decodificación reportadas en una única RTX 3090.
+La contribucion tecnica de este repositorio es el propio proceso de cuantizacion y el runtime. Los ficheros NVFP4Q8 (5.4 bpw) y AI4 (4.4 bpw) estan calibrados para GPUs Ampere y requieren llamAmpere, un fork de llama.cpp que implementa cache KV de 4 bits (SJ-KVaRN) y decodificacion especulativa mediante un drafter Q8_0 de 0.45 GB. El pack incluye ademas un proyector de vision (mmproj) en F16 o Q8_0 que permite procesar imagenes; en una GPU de 24 GB el proyector ocupa aproximadamente 0.75 GB de VRAM y el drafter permanece activo. La divergencia KL frente al modelo de precision completa es de 0.0032 para el fichero de 5.4 bpw y 0.0060 para el de 4.4 bpw, con una coincidencia del token superior del 98,1 % y 97,1 % respectivamente.
 
 ## Capacidades
 
-- Generación de texto conversacional, según el pipeline declarado (text-generation) y la etiqueta `conversational`.
-- Razonamiento multi-turno con ventanas de contexto muy largas (262.144 tokens por defecto, hasta 319.488 en configuración de 5,4 bpw).
-- Decodificación especulativa mediante drafter separado, que acelera la generación.
-- Compatibilidad con API compatible con OpenAI a través de `llama-server`.
-- Entrada exclusivamente textual: el repositorio no incluye proyector de visión.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Generacion de texto conversacional multi-turno con contexto muy largo (hasta 614.400 tokens en el fichero de 4.4 bpw).
+- Entrada de imagenes (image-text-to-text) mediante el proyector mmproj, con soporte de partes `image_url` en `/v1/chat/completions`.
+- Razonamiento y respuesta a preguntas sobre documentos extensos gracias a la ventana de contexto.
+- Decodificacion especulativa con drafter para acelerar la generacion.
+- API compatible con OpenAI servida por llama-server en http://127.0.0.1:8080.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking explicito, audio u otras modalidades: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos en local: con 262.144 tokens de contexto, el modelo puede ingerir informes, expedientes o bases de código completas en una sola pasada sobre una RTX 3090, sin fragmentación ni recuperación externa.
-- Asistentes conversacionales de escritorio: desplegado con `llama-server` en un equipo con GPU de 24 GB, ofrece una API compatible con OpenAI que se integra directamente en aplicaciones de chat existentes sin cambios de cliente.
-- Análisis de repositorios de código: la ventana extendida permite cargar varios archivos y mantener coherencia entre ellos en tareas de revisión o explicación de código, siempre que el modelo base tenga capacidad de código (no confirmado en la información disponible).
-- Resumen y extracción de información en flujos por lotes: el throughput de prefill reportado (1.728 tok/s con el archivo de 5,4 bpw y 2.037 tok/s con el de 4,4 bpw a 100K de prompt) hace viable procesar prompts largos en pipelines automatizados.
-- Experimentación e investigación en cuantización: el repositorio sirve como referencia práctica para evaluar los esquemas NVFP4Q8 y AI4 frente a cuantizaciones GGUF convencionales en hardware Ampere.
-- Despliegue en estaciones de trabajo con Windows: el autor proporciona instrucciones y binarios para PowerShell, lo que facilita entornos de desarrollo no Linux con GPU de 24 GB.
-- Prototipado de agentes con contexto largo: la combinación de ventana extendida y decodificación especulativa permite mantener historiales de conversación y estado de herramientas durante sesiones prolongadas en una sola GPU.
+- Analisis de documentos largos en una sola GPU de 24 GB: con 262.144 tokens de contexto por defecto (y hasta 614.400 con el fichero de 4.4 bpw), el modelo puede ingerir contratos, informes o bases de codigo completas sin fragmentacion, lo que simplifica pipelines de RAG al reducir la necesidad de chunking.
+- Asistente conversacional local con privacidad: al ejecutarse integramente en una RTX 3090 o 4090 mediante llamAmpere, los datos no salen del equipo, adecuado para entornos con requisitos de confidencialidad.
+- Procesamiento de imagenes y texto combinados: con el proyector mmproj, el servidor acepta imagenes en la API compatible con OpenAI, util para extraer informacion de capturas, diagramas o documentos escaneados junto a preguntas en texto.
+- Evaluacion de modelos multimodales en investigacion: la disponibilidad de dos cuantizaciones con distinta precision (5.4 y 4.4 bpw) y metricas de divergencia KL publicadas permite estudiar el impacto de la cuantizacion en la calidad de salida.
+- Despliegue de bajo coste en estaciones de trabajo: el fichero de 4.4 bpw ocupa 14,37 GB y alcanza 614.400 tokens de contexto maximo, lo que permite montar un servidor de inferencia en hardware de gama alta de consumo sin GPUs de datacenter.
+- Aceleracion de prototipos con decodificacion especulativa: el drafter Q8_0 de 0.45 GB eleva el rendimiento a 185,2 tok/s en prompts de 3K y 141,8 tok/s en prompts de 100K sobre una RTX 3090, frente a 51,3 y 33,3 tok/s de llama.cpp estandar, lo que agiliza iteraciones de desarrollo.
+- Chat de codigo y agentes sobre repositorios: la ventana de contexto y las velocidades de prefill de hasta 2.692 tok/s a 100K tokens permiten indexar y consultar repositorios grandes en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor únicamente reporta métricas de velocidad de inferencia en una RTX 3090 con llamAmpere v0.7.4, preset `24ink` y drafter activo, a contexto de 262.144 tokens:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card si incluye metricas de velocidad y calidad de cuantizacion:
 
-| Archivo | Prompt 3K (tok/s) | Prompt 32K (tok/s) | Prompt 100K (tok/s) | Prefill a 100K (tok/s) |
-|---|---|---|---|---|
-| NVFP4Q8 5,4 bpw | 169,4 | 166,1 | 127,2 | 1.728 |
-| AI4 4,4 bpw | no disponible | no disponible | 136,3 | 2.037 |
+| Metrica | NVFP4Q8 5.4 bpw | AI4 4.4 bpw | llama.cpp estandar (UD-Q4_K_XL) |
+|---|---:|---:|---:|
+| Tamano | 17,6 GB | 14,4 GB | 17,6 GB |
+| Decode, prompt 3K (tok/s) | 185,2 | 188,7 | 51,3 |
+| Decode, prompt 32K (tok/s) | 179,0 | 186,9 | 48,4 |
+| Decode, prompt 100K (tok/s) | 141,8 | 144,9 | 33,3 |
+| Prefill a 100K (tok/s) | 2.462 | 2.692 | 249 |
+| Contexto maximo | 385.024 | 614.400 | 278.528 |
+| KLD media | 0,0032 | 0,0060 | 0,0032 |
+| Coincidencia token superior | 98,1 % | 97,1 % | 97,9 % |
+
+Medido en una RTX 3090 Ti limitada a 350 W con llamAmpere v0.7.5, preset `24ink`, drafter activo y cache KV de 4 bits (llama.cpp estandar usa cache KV de 8 bits y sin drafter).
 
 ## Requisitos de hardware
 
-- VRAM: el modelo está diseñado para caber íntegramente en 24 GB. El archivo de 5,4 bpw ocupa 17,56 GB y el de 4,4 bpw ocupa 14,37 GB, más 0,45 GB del drafter y la caché KV de 4 bits.
-- GPU recomendadas: RTX 3090 y demás tarjetas Ampere de 24 GB (serie RTX 30). El autor indica que para tarjetas de 8, 10 y 12 GB existe un repositorio separado (Inkling-2-Mini-ATX-SmallCard-GGUF).
-- Cabe en GPU de consumo: sí, en modelos de 24 GB de la serie RTX 30, siempre que se use el fork llamAmpere.
-- Opciones de despliegue: exclusivamente llamAmpere v0.7.4 o superior mediante `llama-server` con el preset `24ink`. No carga en llama.cpp estándar, por lo que vLLM, TGI, Ollama y otras herramientas convencionales no son opciones válidas según la información disponible.
-- Latencia y throughput: decodificación de 127,2 a 169,4 tok/s según longitud de prompt con el archivo de 5,4 bpw; prefill de 1.728 a 2.037 tok/s a 100K. El archivo de 4,4 bpw es más rápido en decodificación a 100K (136,3 frente a 127,2 tok/s).
+- VRAM: 24 GB recomendados para ejecutar el modelo completo en GPU; el fichero de 5.4 bpw ocupa 17,56 GB y el de 4.4 bpw 14,37 GB, mas 0,45 GB del drafter y hasta 0,75 GB del proyector de vision.
+- GPUs objetivo: RTX 3090, 3090 Ti y 4090 (Ampere o superior). Para tarjetas de 8, 10 y 12 GB existe el repositorio jakeatx/Inkling-2-Mini-ATX-SmallCard-GGUF.
+- Cabe en GPU de consumo: si, en RTX 3090/3090 Ti/4090 de 24 GB; no en tarjetas de 8-12 GB con estos ficheros.
+- Software: llamAmpere v0.7.4 o superior (v0.7.5 es mas rapido con los mismos ficheros), disponible para Linux y Windows. No funciona en llama.cpp estandar.
+- Despliegue: llama-server con el preset `24ink`; API compatible con OpenAI en http://127.0.0.1:8080. No se mencionan vLLM, TGI, Ollama ni otras opciones en la informacion disponible.
+- Rendimiento: 185,2 tok/s de decodificacion con prompt de 3K y 141,8 tok/s con prompt de 100K (fichero 5.4 bpw); prefill de 2.462 tok/s a 100K. El fichero de 4.4 bpw es ligeramente mas rapido y admite mayor contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación más directa posible es entre las dos cuantizaciones del propio repositorio:
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---:|---|---|---|
+| Inkling-2-Mini-ATX-GGUF (5.4 bpw) | 26,07 B (MoE) | 262.144 por defecto; 385.024 max. | GGUF | Apache 2.0 | Requiere llamAmpere; incluye drafter y vision |
+| Inkling-2-Mini-ATX-GGUF (4.4 bpw) | 26,07 B (MoE) | 262.144 por defecto; 614.400 max. | GGUF | Apache 2.0 | Menor tamano, mayor contexto, KLD 0,0060 |
+| Inkling 2 Mini (modelo base) | 26,07 B (MoE) | no disponible | safetensors | Apache 2.0 | Precision completa; referencia de calidad |
+| Unsloth UD-Q4_K_XL (llama.cpp estandar) | 26,07 B (MoE) | 278.528 | GGUF | Apache 2.0 | Sin drafter; 51,3 tok/s a 3K, 33,3 tok/s a 100K |
 
-| Criterio | NVFP4Q8 5,4 bpw | AI4 4,4 bpw |
-|---|---|---|
-| Tamano | 17,56 GB | 14,37 GB |
-| Precision | 5,4 bits por peso | 4,4 bits por peso |
-| Contexto maximo en 24 GB | 319.488 tokens | 262.144 tokens (por defecto) |
-| Decodificacion a 100K | 127,2 tok/s | 136,3 tok/s |
-| Prefill a 100K | 1.728 tok/s | 2.037 tok/s |
-| Uso recomendado | Mayor precision | Equilibrado, mas rapido a 100K |
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia de un fork no estándar: los archivos no cargan en llama.cpp estándar y requieren llamAmpere v0.7.4 o superior, lo que limita la portabilidad y la integración con ecosistemas convencionales.
-- Sin soporte de visión: el repositorio no incluye proyector de visión; la entrada es solo texto.
-- Idiomas no declarados: no se especifica qué idiomas soporta el modelo base, lo que impide garantizar calidad multilingüe.
-- Sin datos de benchmarks de calidad: no hay resultados publicados de MMLU, HumanEval, GSM8K ni evaluaciones equivalentes, por lo que el rendimiento cualitativo no puede verificarse a partir de la información disponible.
-- Riesgo de alucinación y sesgos: no disponible en la documentación; debe asumirse el comportamiento del modelo base, cuyas características de alineación no se detallan.
-- Licencia: Apache 2.0 permite uso comercial, pero el autor remite a la política de uso aceptable del modelo base, que debe consultarse antes de un despliegue en producción.
-- Madurez del repositorio: cero descargas y cero likes en el momento de la consulta, creado y actualizado el mismo día; no hay evidencia de validación comunitaria.
-- Compatibilidad de hardware restringida: el preset y los esquemas de cuantización están ajustados a GPUs Ampere de 24 GB; otros hardware requieren el repositorio alternativo del mismo autor.
+- Dependencia de un runtime no estandar: los ficheros no cargan en llama.cpp oficial; es obligatorio usar llamAmpere v0.7.4 o superior, lo que limita la portabilidad y el soporte a largo plazo.
+- Hardware restringido: el pack esta calibrado para GPUs Ampere de 24 GB; en otras arquitecturas o capacidades hay que recurrir al repositorio SmallCard o a otras cuantizaciones.
+- Idiomas soportados no documentados: no se puede garantizar el rendimiento en castellano ni en otros idiomas distintos de los evaluados por el autor.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad o tasas de alucinacion en la informacion disponible.
+- Sesgos: no se documentan sesgos conocidos del modelo base ni del proceso de cuantizacion.
+- Perdida de calidad por cuantizacion: el fichero de 4.4 bpw presenta una divergencia KL de 0,0060 frente a 0,0032 del de 5.4 bpw; para tareas sensibles a la precision conviene el fichero de mayor bits por peso.
+- Soporte de tool calling, agentes y modo thinking no confirmado: la model card no los menciona, por lo que no deben asumirse en produccion sin validacion previa.
+- Licencia Apache 2.0: permite uso comercial, pero se remite a la politica de uso aceptable del modelo base, que debe revisarse antes de desplegar.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/jakeatx/Inkling-2-Mini-ATX-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Repositorio para tarjetas pequeñas: https://huggingface.co/jakeatx/Inkling-2-Mini-ATX-SmallCard-GGUF
+- Variante para tarjetas pequenas: https://huggingface.co/jakeatx/Inkling-2-Mini-ATX-SmallCard-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

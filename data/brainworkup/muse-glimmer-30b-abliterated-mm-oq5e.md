@@ -2,72 +2,87 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Abliterated-MM-oQ5e es una cuantización en 5 bits del modelo base Muse-Glimmer-30B-Abliterated-MM, publicada por el usuario brainworkup en Hugging Face. El modelo base, del que se desconoce el origen exacto, parece ser un modelo de la familia "Muse-Glimmer" con capacidades multimodales (MM) y un proceso de "abliteración" aplicado, que típicamente elimina los mecanismos de rechazo y alineación de seguridad en modelos de lenguaje. Esta versión concreta ha sido cuantizada con la herramienta oMLX (oQ) en formato MLX safetensors, orientada a su ejecución en hardware Apple Silicon.
+Muse-Glimmer-30B-Abliterated-MM-oQ5e es una cuantizacion de 5 bits del modelo Muse-Glimmer-30B-Abliterated-MM-bf16, publicada por el usuario brainworkup en Hugging Face. Se trata de un derivado de la familia Muse-Glimmer-30B, cuyo origen se atribuye a meta-models, y que ha pasado por un proceso de "abliteracion" (eliminacion de mecanismos de rechazo) antes de ser cuantizado con la herramienta oQ de oMLX v0.6.3rc1 en formato MLX safetensors con grupo de 64.
 
-A pesar de que el nombre sugiere 30B parámetros, los datos reales de safetensors indican 7.331.196.928 parámetros (aproximadamente 7,3 mil millones), lo que sugiere que el modelo base original tiene esa cantidad de parámetros o que la cuantización ha reducido el número de parámetros almacenados (algo poco común). El repositorio ocupa 23,8 GB, coherente con un modelo de ~7B cuantizado a 5 bits con group size 64. La fecha de creación es el 20 de agosto de 2026 y la actualización del mismo día, lo que indica que es una versión reciente.
+El modelo cuenta con 29.776.626.688 parametros (aproximadamente 29,8 mil millones) y un repositorio de 23,8 GB, lo que es coherente con una cuantizacion de 5 bits de un modelo de ese tamano. La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 30B en hardware Apple Silicon mediante MLX, aunque con la advertencia de que se trata de una cuantizacion de terceros sin model card detallada ni garantias de calidad.
 
-No se dispone de información adicional sobre el modelo base, su licencia, idiomas soportados ni capacidades específicas, por lo que esta ficha se limita a los datos técnicos disponibles en la página de Hugging Face.
+La informacion publicada es muy escasa: no se especifican licencia, idiomas, pipeline, contexto ni detalles de entrenamiento. Esta ficha documenta lo que se puede verificar a partir de los metadatos y advierte explicitamente de las lagunas existentes.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere "Muse-Glimmer" pero no se especifica el tipo de red) |
-| Parametros totales | 7.331.196.928 (según safetensors) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (tipo de modelo declarado: muse_glimmer) |
+| Parametros totales | 29.776.626.688 (29,8B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 5 bits, group size 64 (oMLX mixed-precision) |
+| Tipos de cuantizacion | 5 bits, group size 64, formato MLX safetensors (oQ mixed-precision) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | MLX safetensors (cuantizado con oQ/oMLX) |
+| Formato de pesos | safetensors (MLX), repositorio de 23,8 GB |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base. El nombre sugiere que podría tratarse de un transformer multimodal (MM), pero no hay confirmación. La cuantización se ha realizado con la herramienta oMLX (versión 0.6.3rc1) del repositorio jundot/omlx, utilizando una técnica de cuantización de precisión mixta (mixed-precision) que asigna diferentes bits a distintas capas o tensores según su sensibilidad. Los detalles específicos del entrenamiento del modelo original (número de tokens, composición del dataset, métodos de alineación como RLHF o DPO) no están disponibles.
+No se dispone de informacion sobre la arquitectura interna del modelo base Muse-Glimmer-30B. El tag `muse_glimmer` sugiere una familia propia, pero no se documenta si se trata de un transformer denso, un MoE o una arquitectura hibrida. El numero de parametros (29,8B) es el unico dato estructural verificable.
 
-El término "Abliterated" en el nombre sugiere que el modelo ha sido sometido a un proceso de abliteración, una técnica que modifica los pesos del modelo para eliminar los mecanismos de rechazo y los comportamientos de seguridad aprendidos, permitiendo generar contenido sin restricciones de seguridad. Este proceso no está documentado en la model card.
+Respecto al entrenamiento, no hay datos sobre numero de tokens, composicion del dataset ni uso de RLHF/DPO. El sufijo "Abliterated" indica que el modelo base paso por un proceso de abliteracion, una tecnica de modificacion de pesos que elimina la direccion de rechazo en el espacio de activaciones para reducir las negativas del modelo a ciertas peticiones. El sufijo "MM" podria sugerir capacidades multimodales, pero no se confirma en la informacion disponible. La cuantizacion se realizo con oQ (oMLX v0.6.3rc1) en modo mixed-precision a 5 bits con group size 64.
 
 ## Capacidades
 
-No se dispone de información detallada sobre las capacidades del modelo en la información proporcionada. Basándonos únicamente en el nombre y las tags, se puede inferir lo siguiente:
-
-- El modelo podría ser multimodal (MM), pero no hay evidencia concreta en la documentación.
-- Al ser "abliterado", es probable que no aplique restricciones de seguridad en la generación de contenido, lo que podría incluir contenido sensible o inapropiado.
-- No se especifican capacidades de tool calling, agentes, razonamiento multi-step, ni idiomas soportados.
-
-Dado que no hay información verificable, no se pueden enumerar capacidades concretas.
+- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje de 29,8B, aunque no se detalla en la model card.
+- Razonamiento y conocimiento general: no documentado.
+- Generacion de codigo: no documentado.
+- Matematicas: no documentado.
+- Vision: el sufijo "MM" podria indicar multimodalidad, pero no se confirma.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-No se dispone de casos de uso documentados ni de ejemplos de aplicación práctica. La información disponible no permite recomendar el modelo para ningún escenario específico sin conocer sus capacidades reales. Cualquier uso en producción sería arriesgado debido a la falta de documentación y a la naturaleza "ablizada" del modelo, que podría generar contenido no deseado o inseguro.
+- Inferencia local en Apple Silicon: al estar en formato MLX, el modelo esta pensado para ejecutarse en Macs con chip M-series mediante la libreria MLX, aprovechando la memoria unificada para cargar los 23,8 GB de pesos.
+- Experimentacion con modelos abliterated: util para investigadores que estudian el efecto de la abliteracion en el comportamiento del modelo y su alineacion.
+- Prototipado de asistentes conversacionales: un modelo de 29,8B puede manejar conversaciones multi-turno, aunque se desconoce su ventana de contexto real.
+- Evaluacion comparativa de cuantizaciones: sirve para medir la perdida de calidad de una cuantizacion de 5 bits frente al bf16 original en tareas de generacion.
+- Investigacion sobre seguridad y robustez: el caracter abliterated lo hace interesante para estudiar jailbreaks y mecanismos de rechazo.
+- Despliegue en entornos con memoria unificada limitada: la cuantizacion de 5 bits reduce el footprint frente al bf16, permitiendo cargar el modelo en equipos con 32-64 GB de RAM unificada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre rendimiento en tareas como MMLU, HumanEval, GSM8K, etc. No se puede comparar con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al estar cuantizado en formato MLX, el modelo está diseñado para ejecutarse en hardware Apple Silicon (M1/M2/M3/M4) utilizando el framework MLX.
-- El tamaño del repositorio es de 23,8 GB, lo que indica que la memoria unificada del Mac debe ser al menos 24 GB para cargar el modelo completo en memoria (recomendable 32 GB o más para dejar espacio al sistema operativo y al runtime).
-- No se indican opciones de despliegue en GPU NVIDIA ni en CPU estándar, ya que MLX es exclusivo de Apple.
-- No se proporcionan datos de latencia ni throughput.
+- VRAM/RAM estimada: aproximadamente 23,8 GB para los pesos en 5 bits, mas overhead de ejecucion (KV cache y buffers), por lo que se recomienda al menos 32 GB de memoria unificada.
+- GPU recomendadas: no aplica GPU CUDA; el formato es MLX, orientado a Apple Silicon (M1/M2/M3/M4 Pro, Max y Ultra).
+- Cabe en consumer GPU: no en el sentido tradicional de CUDA; en Apple Silicon, si en equipos con 32 GB o mas de memoria unificada.
+- Opciones de despliegue: MLX y oMLX (herramienta de cuantizacion); no se garantiza compatibilidad con llama.cpp, vLLM, Ollama o TGI al ser pesos MLX.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. El nombre "Muse-Glimmer-30B" no corresponde a un modelo conocido públicamente en la literatura o en la comunidad, y no se han encontrado referencias externas. Por tanto, no se puede establecer una comparativa con alternativas como Llama 3, Mistral, Qwen, etc.
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| Muse-Glimmer-30B-Abliterated-MM-oQ5e | 29,8B | no disponible | no disponible | MLX safetensors 5-bit | Hugging Face (208 descargas) |
+| Muse-Glimmer-30B-Abliterated-MM-bf16 | no disponible | no disponible | no disponible | safetensors bf16 | Hugging Face |
+| Muse-Glimmer-30B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento ni de otros modelos comparables de la misma familia con informacion verificable.
 
 ## Limitaciones y advertencias
 
-- La licencia es desconocida, por lo que no se puede garantizar el uso comercial o la redistribución.
-- El modelo ha sido "ablizado", lo que implica que puede generar contenido inapropiado, ofensivo, ilegal o peligroso sin filtros de seguridad. Su uso en producción conlleva un alto riesgo de daño reputacional y legal.
-- No se dispone de información sobre sesgos, alucinaciones o limitaciones de contexto.
-- La discrepancia entre el nombre "30B" y los parámetros reales (7,3B) es confusa y podría indicar un error de etiquetado o una arquitectura inusual.
-- El modelo fue actualizado el 20 de agosto de 2026, pero no se especifican cambios respecto a la versión anterior.
-- No hay información sobre el dataset de entrenamiento ni sobre las técnicas de alineación utilizadas.
+- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible contactar con el autor o consultar el modelo base antes de usarlo en produccion.
+- Modelo abliterated: la eliminacion de mecanismos de rechazo puede aumentar la probabilidad de generar contenido inapropiado, danino o inseguro, y reduce las salvaguardas de alineacion.
+- Cuantizacion de terceros: la cuantizacion a 5 bits puede introducir degradacion de calidad respecto al bf16 original; no hay evaluaciones publicadas que lo cuantifiquen.
+- Falta de documentacion: sin model card detallada, no se conocen sesgos, idiomas soportados, contexto real ni datos de entrenamiento.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones especificas para este modelo.
+- Compatibilidad limitada: al ser pesos MLX, no se pueden usar directamente en stacks CUDA (vLLM, TGI) sin conversion.
+- Advertencia del autor: la version actual reemplaza a una anterior publicada antes del 2026-08-20; quienes descargaron la version previa deben volver a descargar los pesos.
 
 ## Enlaces
 
-- Hugging Face: [brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e](https://huggingface.co/brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e)
-- Repositorio de la herramienta oMLX: [https://github.com/jundot/omlx](https://github.com/jundot/omlx)
-
-No se han encontrado otros enlaces (papers, blogs, demos) relacionados con este modelo.
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e
+- Modelo base (bf16): https://huggingface.co/divinetribe/Muse-Glimmer-30B-Abliterated-MM-bf16
+- Modelo base original: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

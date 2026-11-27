@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Search Images - Bing",
-      "url": "https://www.bing.com/camera",
-      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
-    },
-    {
-      "title": "Bing Images",
-      "url": "https://www.bing.com/images/",
-      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
-    },
-    {
-      "title": "Search - Microsoft Bing",
-      "url": "https://www2.bing.com/",
-      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
-    },
-    {
-      "title": "Collections - Bing",
-      "url": "https://www.bing.com/saves/",
-      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
-    },
-    {
-      "title": "Search - Bing",
-      "url": "https://www.bing.com/spotlight/imagepuzzle",
-      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
-    }
-  ]
+  "sources": []
 }

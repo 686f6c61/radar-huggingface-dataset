@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "engenho-ai/KuroEar-PTBR",
+  "slug": "engenho-ai-kuroear-ptbr",
+  "author": "engenho-ai",
+  "url": "https://huggingface.co/engenho-ai/KuroEar-PTBR",
+  "created_at": "2026-11-27T02:20:21.000Z",
+  "updated_at": "2026-11-27T02:20:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "engenho-ai",
+    "linha-kuro",
+    "speech-to-text",
+    "asr",
+    "pt-br",
+    "automatic-speech-recognition",
+    "pt",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617825448,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

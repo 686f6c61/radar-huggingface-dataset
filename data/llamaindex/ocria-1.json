@@ -36,9 +36,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 133,
+  "likes": 137,
   "downloads_30d": 419,
-  "trending_score": 43,
+  "trending_score": 45,
   "parameters": 5174964736,
   "parameters_human": "5.17B",
   "storage_bytes": 10380452104,
@@ -59,9 +59,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "LlamaIndex | AI Agents for Document OCR + Workflows",
+      "title": "LlamaIndex – Turn documents into AI-ready context",
       "url": "https://www.llamaindex.ai/",
-      "snippet": "npm install @llamaindex/liteparse 02 LiteParse Parse Any Document. Locally. Fast. Open-source document parsing from the team …Read more"
+      "snippet": "Turn documents into AI-ready context LlamaIndex is an applied AI lab pioneering the frontier in price-performance for document …Read more"
     },
     {
       "title": "LlamaIndex Framework, by the makers of LlamaParse",
@@ -79,9 +79,9 @@
       "snippet": "The developer-trusted framework for building context-aware AI agents LlamaIndex empowers developers with everything needed to …Read more"
     },
     {
-      "title": "Qu’est-ce que LlamaIndex - IBM",
-      "url": "https://www.ibm.com/fr-fr/think/topics/llamaindex",
-      "snippet": "LlamaIndex est un cadre d’harmonisation des données open source pour la production d’applications de grands modèles de langage …Read more"
+      "title": "Welcome to LlamaIndex ! | LlamaIndex Python Documentation",
+      "url": "https://llamaindex.openml.io/",
+      "snippet": "LlamaIndex provides the tools to build any of context-augmentation use case, from prototype to production. Our tools allow you to …Read more"
     }
   ]
 }

@@ -2,89 +2,88 @@
 
 ## Resumen
 
-Gargantua Pro es un modelo de lenguaje de 12B parámetros desarrollado por el proyecto OpenTARS, un asistente de IA local para Linux que controla el escritorio, abre aplicaciones, ejecuta comandos y automatiza tareas. Este modelo es la variante "grande" de la familia Gargantua: parte de `google/gemma-4-12b-it` (licencia Apache-2.0) y ha sido afinado por el equipo de OpenTARS sobre datos propios de uso de herramientas (tool-use). Su función principal es gestionar tareas de agente de varios pasos: planificar, invocar herramientas, verificar resultados y continuar hasta completar el objetivo.
+Gargantua Pro es un modelo de lenguaje de 11.907.350.576 parámetros (aproximadamente 12B) desarrollado por MastLLM para el asistente openTARS. Se trata de un ajuste fino (fine-tuning) de google/gemma-4-12b-it, orientado específicamente a tareas de agente: planificación de pasos, invocación de herramientas, verificación de resultados y ejecución iterativa hasta completar un objetivo. El modelo se distribuye en formato GGUF cuantizado Q4_K_M (7,4 GB) y está pensado para ejecución local con llama.cpp y Ollama.
 
-La arquitectura subyacente corresponde a un transformer decoder-only de la familia Gemma 4, con 11.907.350.576 parámetros totales (unos 12B). Se distribuye exclusivamente en formato GGUF cuantizado Q4_K_M (7.4 GB, solo texto), lo que lo orienta al despliegue local mediante llama.cpp y Ollama. Soporta los idiomas portugués e inglés, y está diseñado para ejecutarse en GPU con aproximadamente 8 GB de VRAM o en CPU con RAM suficiente.
+La propuesta de valor es la integración nativa con el conjunto de 19 herramientas de openTARS, el mismo conjunto que emplea Gargantua 2 pero sobre una base de mayor tamaño. El modelo está entrenado sobre datos propios de uso de herramientas de MastLLM y se apoya en el renderer y parser `gemma4` incluidos en Ollama para el formateo de llamadas a funciones.
 
-Su relevancia radica en que es un modelo de agente local, sin dependencia de la nube, con soporte de tool calling integrado en Ollama (renderer y parser `gemma4` nativos) y un conjunto de 19 herramientas compartidas con Gargantua 2. Es la primera release del proyecto y no se han publicado resultados de benchmarks.
+Es relevante ahora porque ofrece un modelo de ~12B con licencia Apache-2.0, capacidades de tool-use y despliegue local en hardware de consumo (unos 8 GB de VRAM según el autor), lo que facilita entornos de agente sin dependencia de API externas. Es la primera release del proyecto y, según el autor, todavía no se han publicado cifras de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 4) |
+| Arquitectura | Transformer (derivada de google/gemma-4-12b-it); detalles internos no disponibles |
 | Parametros totales | 11.907.350.576 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF) |
-| Idiomas soportados | Portugues (pt), ingles (en) |
+| Tipos de cuantizacion | Q4_K_M (GGUF); otras cuantizaciones no disponibles |
+| Idiomas soportados | pt, en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (fichero `gargantua-pro-gemma4-12b-Q4_K_M.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-Gargantua Pro se construye sobre `google/gemma-4-12b-it`, un transformer decoder-only de aproximadamente 12B parámetros. El proyecto OpenTARS ha realizado un fine-tuning sobre datos propios de tool-use, orientado específicamente a que el modelo invoque correctamente las 19 herramientas del asistente en el primer intento y mantenga el bucle de agente (planificar, ejecutar, comprobar, continuar). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+El modelo parte de la base google/gemma-4-12b-it y ha sido sometido a un fine-tuning por MastLLM sobre datos propios de uso de herramientas (tool-use). No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La arquitectura concreta (número de capas, dimensiones, mecanismos de atención) tampoco se detalla más allá de su origen en la familia Gemma 4.
 
-La model card indica que el modelo es "text only" y que la decodificación se realiza mediante llama.cpp, con renderer y parser `gemma4` integrados en Ollama. No se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas SSM.
+La innovación destacable es la especialización en flujos de agente sobre un conjunto fijo de 19 herramientas, con integración directa del renderer y parser `gemma4` en Ollama para el manejo del protocolo de tool calling. El formato de distribución es GGUF cuantizado Q4_K_M, lo que prioriza el despliegue local frente a la precisión completa. No se documentan técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en portugués e inglés.
-- Razonamiento de agente multi-paso: planificación de tareas, ejecución secuencial de herramientas y verificación de resultados.
-- Tool calling / function calling a través de la API estándar de Ollama, con un conjunto de 19 herramientas compartidas con Gargantua 2.
-- Automatización de escritorio: apertura de aplicaciones, clic en botones por nombre, escritura y ejecución de comandos (a través de las herramientas del asistente OpenTARS).
-- Búsqueda web y control de pantalla, según las capacidades del asistente que lo integra.
-- Capacidades multilingües limitadas a portugués e inglés.
-- No se documentan capacidades de visión, audio ni modo "thinking" explícito en la información disponible.
+- Generación de texto conversacional en portugués e inglés.
+- Razonamiento multi-paso orientado a agentes: planificación, ejecución de herramientas, verificación de resultados e iteración.
+- Tool calling / function calling mediante la API estándar de Ollama, con un conjunto de 19 herramientas del ecosistema openTARS.
+- Ejecución local en llama.cpp y Ollama.
+- Integración con la aplicación openTARS, que inyecta automáticamente las 19 herramientas.
+- Capacidades de visión, audio o modo "thinking" explícito: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de escritorio local en Linux: el modelo gestiona conversaciones multi-turno y decide qué herramienta del asistente invocar (abrir apps, pulsar botones, escribir texto) sin salir de la máquina, gracias a su integración nativa con Ollama y al conjunto de 19 herramientas.
-- Automatización de tareas administrativas: ejecución de comandos y secuencias de clics para tareas repetitivas (organización de ficheros, lanzamiento de scripts), usando el bucle de agente para verificar el resultado de cada paso.
-- Agente de búsqueda y extracción de información: el modelo planifica consultas, invoca la herramienta de búsqueda web del asistente y sintetiza los resultados en portugués o inglés.
-- Prototipado de agentes con tool calling: al exponer la API estándar de Ollama, sirve como base para desarrollar y probar flujos de agente en local antes de desplegarlos en producción.
-- Despliegue en estaciones de trabajo con GPU de consumo: con ~8 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070), permite ejecutar un agente de 12B sin coste de API ni envío de datos a la nube.
-- Entornos con requisitos de privacidad: al ejecutarse íntegramente en local mediante llama.cpp u Ollama, es adecuado para tareas sobre datos sensibles donde no se permite el envío a servicios externos.
-- Asistencia en portugués: el modelo está afinado y etiquetado para portugués, lo que lo hace útil para asistentes dirigidos a usuarios lusohablantes.
+- Automatización de tareas de agente en local: el modelo puede planificar y ejecutar secuencias de llamadas a herramientas a través de Ollama, manteniendo el bucle de planificación-verificación hasta completar el objetivo, sin necesidad de API en la nube.
+- Asistente de escritorio openTARS: integración directa con la aplicación del proyecto, que envía las 19 herramientas al modelo y gestiona las respuestas de tool calling de forma nativa.
+- Desarrollo y pruebas de pipelines de agentes: al ser Apache-2.0 y ejecutable con llama.cpp, resulta adecuado para prototipar lógicas de tool-use en entornos de CI o máquinas de desarrollo con GPU de 8 GB.
+- Automatización de tareas ofimáticas o de sistema mediante herramientas: el modelo puede encadenar llamadas a funciones expuestas por el entorno (lectura de ficheros, ejecución de comandos, consultas) siguiendo el patrón de agente del proyecto.
+- Asistencia técnica en portugués e inglés: conversaciones multi-turno en ambos idiomas, aprovechando el soporte bilingüe declarado.
+- Despliegue en hardware de consumo: con cuantización Q4_K_M y ~8 GB de VRAM, permite ejecutar un agente de 12B en estaciones de trabajo o portátiles con GPU dedicada, útil para demos y entornos con requisitos de privacidad.
+- Investigación sobre fine-tuning para tool-use: como modelo derivado de Gemma 4 con datos propios de MastLLM, sirve de referencia para estudiar la especialización de un modelo base en agentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente: "We have not published benchmark numbers for it yet."
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente en la model card que es la primera release y que todavía no ha publicado cifras de rendimiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 8 GB para el fichero Q4_K_M de 7.4 GB, según la model card.
-- GPU recomendadas: no se especifican modelos concretos; cualquier GPU con ~8 GB o más de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, A100, H100) debería poder alojar el modelo cuantizado.
-- Ejecución en CPU: posible con RAM suficiente (el fichero ocupa 7.4 GB; se recomienda al menos 16 GB de RAM del sistema).
-- Opciones de despliegue: llama.cpp y Ollama (renderer y parser `gemma4` integrados). No se documenta soporte para vLLM o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 8 GB según el autor, para la cuantización Q4_K_M (7,4 GB de fichero).
+- Alternativa en CPU: ejecución posible con suficiente RAM del sistema, según la model card.
+- GPU recomendadas: no se especifican modelos concretos; por el requisito de ~8 GB encajan GPU de consumo con 8 GB o más de VRAM (por ejemplo, gama RTX xx70/xx80 con 8-16 GB) y GPU de datacenter (A100, H100) para mayor throughput, aunque estos últimos no se mencionan en la información.
+- Cabe en GPU de consumo: sí, según el requisito de ~8 GB de VRAM indicado por el autor.
+- Opciones de despliegue: llama.cpp y Ollama (con renderer y parser `gemma4` integrados). Otros motores como vLLM o TGI no se mencionan.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Gargantua Pro (OpenTARS) | 11,9B | no disponible | GGUF (Q4_K_M) | Apache-2.0 | Fine-tune de Gemma 4 12B para tool-use; 19 herramientas |
-| Gargantua (OpenTARS) | 4B (Qwen3 4B) | no disponible | GGUF | no disponible | Modelo menor del mismo proyecto, orientado a un solo trabajo |
-| Gemma 4 12B IT (Google) | ~12B | no disponible | safetensors / GGUF | Apache-2.0 | Modelo base sin fine-tuning específico de agente |
+| Modelo | Parametros | Contexto | Tool calling | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Gargantua Pro | ~11,9B | no disponible | Sí (19 herramientas, API Ollama) | Apache-2.0 | GGUF Q4_K_M | Fine-tune de Gemma 4 12B para agentes |
+| google/gemma-4-12b-it (base) | ~12B | no disponible | Capacidad base no detallada | Apache-2.0 (según model card) | no disponible | Modelo base sin especialización en tool-use |
+| Gargantua 2 | no disponible | no disponible | Sí (mismas 19 herramientas) | no disponible | no disponible | Versión anterior del proyecto openTARS, base más pequeña |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y capacidades declaradas.
 
 ## Limitaciones y advertencias
 
-- Modelo "text only": no procesa imágenes, audio ni vídeo.
-- Idiomas limitados a portugués e inglés; el rendimiento en otros idiomas no está documentado.
-- No se han publicado benchmarks, por lo que el rendimiento real en tareas de agente no está cuantificado.
-- Riesgo de alucinación inherente a los modelos de lenguaje; en un agente que ejecuta comandos y clics, una invocación errónea de herramienta puede tener efectos reales en el sistema.
-- Solo se distribuye en cuantización Q4_K_M; no hay versiones de mayor precisión (FP16, Q8) en la información disponible.
-- La longitud de contexto no está documentada, lo que limita la planificación de tareas de contexto largo.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo base (Gemma 4) puede tener términos adicionales que conviene revisar.
-- Primera release del proyecto: sin historial de estabilidad ni soporte a largo plazo documentado.
-- Descargas y likes en Hugging Face: 0 en el momento de la consulta, lo que indica adopción aún nula.
+- Es la primera release del modelo y no se han publicado benchmarks; el rendimiento real en tareas de agente no está validado de forma pública.
+- Idiomas limitados a portugués e inglés; el castellano no está declarado como idioma soportado.
+- Riesgo de alucinación inherente a modelos de ~12B, especialmente en cadenas largas de razonamiento y llamadas a herramientas; requiere verificación de resultados en producción.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Gemma 4, hereda los sesgos del modelo base, no evaluados aquí.
+- Longitud de contexto no especificada, lo que impide planificar escenarios de contexto largo con garantías.
+- Solo se distribuye una cuantización (Q4_K_M), con la consiguiente pérdida de precisión frente a pesos completos.
+- La licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base google/gemma-4-12b-it antes de desplegar en producción.
+- Dependencia del renderer y parser `gemma4` de Ollama para el tool calling; otros motores pueden requerir adaptación manual del protocolo.
+- El conjunto de herramientas está acoplado al ecosistema openTARS (19 herramientas); su uso fuera de ese contexto requiere definir y validar un esquema propio.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/OpenTARS/Gargantua-Pro
-- Repositorio GitHub del proyecto: https://github.com/project-opentars/OpenTARS
-- Página del proyecto: https://project-opentars.github.io/OpenTARS/
-- Modelo Gargantua en Ollama: https://ollama.com/ProjectOpenTARS/Gargantua
-- Modelo base: google/gemma-4-12b-it (referenciado en la model card; sin URL directa en la información disponible)
+- Proyecto openTARS: https://mastllm.github.io/OpenTARS/
+- Perfil del autor en Hugging Face (MastLLM): https://huggingface.co/Mast-LLM
+- Modelo base: https://huggingface.co/google/gemma-4-12b-it

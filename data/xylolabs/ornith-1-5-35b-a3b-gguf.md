@@ -2,93 +2,100 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-GGUF es la version cuantizada en formato GGUF del modelo Ornith-1.5-35B-A3B, desarrollado originalmente por Ornith AI y convertido a GGUF por Xylolabs para su uso con llama.cpp en CUDA, Metal o CPU. Se trata de un modelo de generacion de texto de arquitectura Mixture of Experts (MoE), con 35.505.251.456 parametros totales y aproximadamente 3.000 millones de parametros activos por token, segun indica el sufijo "A3B" de su nombre. La unica cuantizacion publicada en este repositorio es Q4_K_M, con un tamano de 21,71 GB.
+Ornith-1.5-35B-A3B-GGUF es la version cuantizada en formato GGUF del modelo Ornith-1.5-35B-A3B, desarrollado originalmente por el equipo Ornith (ornith-ai) y convertida a GGUF por Xylolabs. Se trata de un modelo de generacion de texto de 35.505.251.456 parametros totales con una arquitectura de mezcla de expertos (MoE), tal como indica el sufijo "A3B" (aproximadamente 3 mil millones de parametros activos por token). El modelo base esta pensado para inferencia local y en servidores mediante llama.cpp, con soporte para CUDA, Metal y CPU.
 
-El modelo resuelve el problema de desplegar un modelo MoE de 35B en hardware de consumo o en estaciones de trabajo con memoria limitada, ofreciendo una perdida de calidad medida y documentada: un KL medio de 0,0792 y un 87,63% de coincidencia top-1 respecto a la pasada BF16 de referencia en transformers, evaluado sobre 8.188 posiciones de texto en ingles y coreano. La ventana de contexto es de 256.000 tokens segun las recomendaciones de hardware del autor, aunque el ejemplo de ejecucion usa 8.192 tokens y la tabla de hardware sugiere 32K en GPUs de 24 GB.
+Esta version GGUF resuelve el problema de desplegar un modelo MoE de gran tamano en hardware de consumo y estaciones de trabajo, ofreciendo una unica cuantizacion Q4_K_M de 21,71 GB que mantiene una fidelidad razonable respecto al BF16 de referencia (KL medio de 0,0792 y 87,63% de coincidencia top-1 en 8.188 posiciones de texto en ingles y coreano). La model card del autor incluye una tabla detallada de recomendaciones de hardware que abarca desde una RTX 4090 de 24 GB hasta una B300 de 288 GB, con ventanas de contexto que van de 32K a 256K tokens.
 
-Es relevante ahora porque combina una licencia MIT permisiva, soporte multilingue limitado a ingles y coreano, y una tabla de compatibilidad de hardware que abarca desde una RTX 4090 hasta una B300, incluyendo el modo de offload de expertos a RAM del sistema (`--n-cpu-moe`), lo que permite ejecutar el modelo en equipos de 24 GB con contexto reducido.
+El modelo es relevante ahora porque permite ejecutar un MoE de 35B con activacion de ~3B en GPUs de consumo mediante offload de expertos a RAM del sistema, y porque su licencia MIT facilita el uso comercial. La informacion disponible es limitada en cuanto a arquitectura detallada, datos de entrenamiento y benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), transformer; detalles de capas y atencion no disponibles |
+| Arquitectura | Mezcla de expertos (MoE), segun el sufijo A3B; detalles de la arquitectura no disponibles |
 | Parametros totales | 35.505.251.456 |
-| Parametros activos | aproximadamente 3.000 millones (inferido del sufijo A3B; cifra exacta no disponible) |
-| Longitud de contexto | hasta 256K segun la tabla de hardware del autor; 32K en GPUs de 24 GB; el ejemplo de ejecucion usa 8.192 tokens |
-| Tipos de cuantizacion | Q4_K_M (unica publicada) |
-| Idiomas soportados | ingles (en), coreano (ko) |
+| Parametros activos | Aproximadamente 3B (inferido del sufijo A3B); cifra exacta no disponible |
+| Longitud de contexto | Hasta 256K tokens segun la tabla de hardware del autor; 32K en RTX 4090/3090 con offload; 128K en RTX 5090 |
+| Tipos de cuantizacion | Q4_K_M (unica cuantizacion publicada) |
+| Idiomas soportados | Ingles (en), coreano (ko) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible confirma que el modelo base es una arquitectura Mixture of Experts con 35.505 millones de parametros totales y aproximadamente 3.000 millones activos por token. El repositorio GGUF no detalla el numero de capas, la dimension del modelo, el numero de expertos ni el mecanismo de enrutamiento. Tampoco se especifican los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El titulo de la cita del modelo original, "Ornith-1.5: From Self-Scaffolding to Self-Improvement", sugiere tecnicas de auto-mejora y andamiaje automatico, pero no se aportan detalles tecnicos en la informacion proporcionada.
+El modelo base Ornith-1.5-35B-A3B emplea una arquitectura de mezcla de expertos con 35.505.251.456 parametros totales y aproximadamente 3 mil millones de parametros activos por token, segun se deduce del sufijo "A3B". No se dispone de informacion detallada sobre el numero de expertos, la estrategia de enrutamiento, el tipo de atencion ni la composicion exacta del dataset de entrenamiento en la informacion proporcionada. La cita del modelo base, titulada "Ornith-1.5: From Self-Scaffolding to Self-Improvement", sugiere que el entrenamiento incluye tecnicas de auto-mejora y andamiaje automatico, aunque no se detallan los metodos concretos (RLHF, DPO u otros) en la documentacion disponible.
 
-La innovacion documentada en este repositorio es la conversion y cuantizacion a GGUF: un unico archivo por cuantizacion que incluye el modelo de lenguaje completo, el tokenizer original y la plantilla de chat. El autor reporta metricas de fidelidad de la cuantizacion Q4_K_M frente a BF16 en transformers: KL medio de 0,0792 y 87,63% de coincidencia top-1 sobre 8.188 posiciones de ingles y coreano. Ademas, se documenta el soporte de offload de pesos de expertos a RAM del sistema mediante el flag `--n-cpu-moe N` de llama.cpp, que permite mantener en GPU los pesos no-expertos y los expertos de las primeras capas, enviando el resto a memoria del sistema.
+La version GGUF ha sido convertida y cuantizada por Xylolabs a partir de los pesos del modelo base. La unica cuantizacion publicada es Q4_K_M, con un tamano de 21,71 GB. El autor reporta metricas de fidelidad frente a una pasada BF16 en transformers: KL medio de 0,0792 y 87,63% de coincidencia top-1, evaluadas sobre 8.188 posiciones de texto en ingles y coreano. No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y coreano.
-- Razonamiento y generacion de texto de proposito general, segun el pipeline `text-generation` y la etiqueta `conversational`.
-- Soporte de plantilla de chat incluida en el archivo GGUF, compatible con `--jinja` de llama.cpp.
-- Ejecucion en llama.cpp sobre CUDA, Metal o CPU, con soporte de offload parcial de expertos a RAM.
-- Capacidades de tool calling, function calling, agentes, vision, audio o modo thinking: no disponibles en la informacion proporcionada.
-- Capacidades multilingues adicionales al ingles y coreano: no disponibles.
+- Generacion de texto conversacional en ingles y coreano, segun los idiomas declarados en la model card.
+- Razonamiento y generacion de texto de proposito general, propio de un modelo base de tipo text-generation.
+- Soporte de plantilla de chat incluida en el archivo GGUF, lo que permite uso conversacional multi-turno mediante `--jinja` en llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integracion en servicios de inferencia.
+- Capacidad de ejecucion con contexto largo (hasta 256K tokens en hardware con memoria suficiente, segun la tabla del autor).
+- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional en ingles o coreano: el modelo puede gestionar dialogos multi-turno usando la plantilla de chat incluida en el GGUF y `llama-server`, con contexto configurable hasta 256K en hardware de 80 GB o superior.
-- Despliegue en estaciones de trabajo con una sola GPU de 24 GB: mediante offload de expertos con `--n-cpu-moe` y contexto de 32K, adecuado para prototipos y entornos de desarrollo sin infraestructura de centro de datos.
-- Procesamiento de documentos largos en coreano e ingles: la ventana de hasta 256K tokens permite analizar contratos, informes o transcripciones extensas en una sola pasada en hardware con 48 GB o mas.
-- Servicio de inferencia local con llama.cpp: `llama-server` expone una API compatible con endpoints, lo que permite integrar el modelo en aplicaciones internas sin dependencia de la nube.
-- Traduccion y generacion bilingue ingles-coreano: el modelo esta entrenado para ambos idiomas, lo que lo hace util en flujos de localizacion y atencion al cliente en esos mercados.
-- Experimentacion e investigacion en MoE cuantizados: el repositorio aporta metricas de fidelidad de cuantizacion (KL y top-1) que permiten evaluar el impacto de Q4_K_M frente a BF16 en tareas controladas.
-- Ejecucion en hardware Apple Silicon: la tabla del autor confirma compatibilidad con Mac Studio M5 Max y M5 Ultra mediante Metal, con contexto de hasta 256K en configuraciones de 128 GB o mas.
+- Asistente conversacional local en ingles y coreano: el modelo puede gestionar conversaciones multi-turno gracias a la plantilla de chat incluida y a una ventana de contexto que llega a 256K tokens en hardware con memoria suficiente, lo que permite mantener historiales largos sin truncar.
+- Despliegue en estaciones de trabajo con una sola GPU de 24 GB: mediante offload de expertos a RAM del sistema (`--n-cpu-moe 40`), se puede ejecutar el modelo en una RTX 4090 o RTX 3090 con contexto de 32K, adecuado para prototipado y desarrollo local.
+- Procesamiento de documentos largos en coreano e ingles: con 256K tokens de contexto en GPUs de 48 GB o mas (RTX 6000 Ada, H100, H200, B200), el modelo puede resumir o analizar contratos, informes o transcripciones extensas en una sola pasada.
+- Servicio de inferencia autoalojado: la compatibilidad con `llama-server` y el tag `endpoints_compatible` permiten exponer el modelo como API interna para aplicaciones de empresa que requieran soberania de datos y licencia MIT.
+- Generacion de contenido bilingue: util para equipos que producen material en ingles y coreano (documentacion, marketing, soporte) y necesitan un unico modelo local sin depender de APIs externas.
+- Investigacion y experimentacion con modelos MoE: el formato GGUF y la unica cuantizacion Q4_K_M facilitan reproducir experimentos de cuantizacion y medir el impacto en calidad (KL y top-1) sobre hardware asequible.
+- Educacion y demos offline: al caber en equipos con memoria unificada (Mac Studio, DGX Spark), permite demostraciones sin conexion en entornos con restricciones de red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El unico dato de rendimiento publicado es la fidelidad de la cuantizacion:
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento reportado por el autor es la fidelidad de la cuantizacion Q4_K_M frente a BF16:
 
-| Metrica | Q4_K_M frente a BF16 |
+| Metrica | Valor |
 |---|---|
-| KL medio | 0,0792 |
-| Coincidencia top-1 | 87,63% |
+| KL medio vs BF16 | 0,0792 |
+| Coincidencia top-1 vs BF16 | 87,63% |
 | Posiciones evaluadas | 8.188 (ingles y coreano) |
+| Tamano del archivo | 21,71 GB |
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el archivo Q4_K_M ocupa 21,71 GB. El autor recomienda que el tamano del archivo mas la cache KV en f16 al contexto elegido mas 2 GB de runtime queden por debajo del 90% de la memoria disponible.
-- GPU de 24 GB (RTX 4090, RTX 3090): requiere offload de expertos a RAM del sistema; contexto recomendado de 32K.
-- GPU de 32 GB (RTX 5090): archivo completo en GPU con contexto de 128K.
-- GPU de 48 GB (RTX 6000 Ada o 2 x 24 GB): contexto de 256K.
-- GPU de 80 GB (H100): contexto de 256K.
-- GPU de 96 GB (RTX PRO 6000 Blackwell): contexto de 256K.
-- GPU de 141 GB (H200), 192 GB (B200), 288 GB (B300): contexto de 256K.
-- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y Mac Studio M5 Ultra (256 GB y 512 GB) con contexto de 256K.
-- Opciones de despliegue: llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior), con `llama-cli` y `llama-server`; soporte de CUDA (`-DGGML_CUDA=ON`) y Metal.
+- VRAM estimada para inferencia: el archivo Q4_K_M ocupa 21,71 GB; con overhead de contexto y KV cache, se recomienda al menos 24 GB de VRAM para contexto de 32K.
+- GPUs recomendadas segun el autor:
+  - RTX 4090 / RTX 3090 (24 GB): offload de expertos, contexto 32K.
+  - RTX 5090 (32 GB): contexto 128K.
+  - RTX 6000 Ada o 2 x 24 GB (48 GB): contexto 256K.
+  - H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB unificada): contexto 256K.
+  - H200 (141 GB), B200 (192 GB), Mac Studio M5 Ultra (256 GB y 512 GB unificada), B300 (288 GB): contexto 256K.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con offload de expertos a RAM del sistema (`--n-cpu-moe 40`), y en RTX 5090 con contexto de 128K.
+- Opciones de despliegue: llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior), con `llama-cli` y `llama-server`; soporte de CUDA, Metal y CPU. No se mencionan otras herramientas como vLLM, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa. Como referencia estructural, el propio modelo base Ornith-1.5-35B-A3B en safetensors seria la alternativa directa en BF16, con mayor requisito de memoria, y otras cuantizaciones del mismo modelo base no estan documentadas en este repositorio.
+No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. El modelo base Ornith-1.5-35B-A3B es la referencia directa, pero no se ofrecen datos de benchmarks ni comparativas con alternativas de la misma categoria. Se indica, por tanto, como no disponible.
+
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Ornith-1.5-35B-A3B-GGUF (este) | 35,5B totales / ~3B activos | Hasta 256K | MIT | GGUF |
+| Ornith-1.5-35B-A3B (base) | 35,5B totales / ~3B activos | No disponible | MIT | No disponible |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a ingles y coreano; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
-- Unica cuantizacion disponible (Q4_K_M), con una perdida medible frente a BF16: 87,63% de coincidencia top-1 implica que aproximadamente una de cada ocho predicciones top-1 difiere de la referencia.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad en la informacion disponible.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- La licencia MIT permite uso comercial, pero el repositorio incluye un aviso `NOTICE` que atribuye la autoria del modelo original a su titular; Xylolabs declara no estar afiliado ni respaldado por los autores originales.
-- El contexto maximo de 256K depende del hardware; en GPUs de 24 GB el autor recomienda limitarse a 32K.
-- El uso de `--n-cpu-moe` reduce el rendimiento al mover expertos a RAM del sistema; el autor no publica cifras de latencia en ese modo.
-- No se documentan capacidades de tool calling, agentes, vision ni audio, por lo que no deben asumirse en produccion sin validacion previa.
+- Idiomas limitados: solo se declaran ingles y coreano; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de tasas de alucinacion para este modelo.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos ni sobre el proceso de alineacion del modelo base.
+- Contexto: aunque el autor indica hasta 256K tokens, el contexto efectivo puede degradarse y depende del hardware; en RTX 4090/3090 con offload se limita a 32K.
+- Cuantizacion unica: solo se publica Q4_K_M, con una perdida medible frente a BF16 (KL 0,0792, top-1 87,63%); no hay opciones de mayor o menor precision en este repositorio.
+- Licencia: MIT, lo que permite uso comercial, pero se recomienda revisar los terminos del modelo base y las condiciones de la licencia original.
+- Dependencia de version de llama.cpp: el autor exige un commit concreto o posterior, lo que puede complicar la integracion en entornos con versiones fijas.
+- Informacion escasa: no hay benchmarks publicados, ni detalles de entrenamiento, ni datos sobre tool calling o agentes, lo que limita la evaluacion para produccion.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Pagina del modelo original: https://ornith.ai/ornith_1_5.html
-- Licencia: https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-GGUF/blob/main/LICENSE
+- Pagina del modelo Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
 - Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Licencia: https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-GGUF/blob/main/LICENSE

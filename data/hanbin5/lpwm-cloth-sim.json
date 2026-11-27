@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "hanbin5/lpwm-cloth-sim",
+  "slug": "hanbin5-lpwm-cloth-sim",
+  "author": "hanbin5",
+  "url": "https://huggingface.co/hanbin5/lpwm-cloth-sim",
+  "created_at": "2026-11-26T18:05:10.000Z",
+  "updated_at": "2026-11-26T20:47:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "video-prediction",
+    "dataset:hanbin5/cloth-sim",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1449324658,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Women's Denim Clothes - Primark",
+      "url": "https://www.primark.com/en-gb/r/women/clothing/denim",
+      "snippet": "Explore our collection of women’s denim, a versatile foundation for everyday outfits, casual styling, and travel-ready looks. From …Read more"
+    }
+  ]
+}

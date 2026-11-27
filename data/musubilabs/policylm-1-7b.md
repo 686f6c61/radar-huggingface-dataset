@@ -2,118 +2,100 @@
 
 ## Resumen
 
-PolicyLM-1.7B es un clasificador de moderación de contenido de pesos abiertos desarrollado por Musubi (musubilabs). Recibe un mensaje de texto junto con una política de moderación y devuelve una puntuación entre 0 y 1 para cada categoría de esa política, lo que permite decidir en el momento si un mensaje debe marcarse o no. Está pensado para entornos donde cada mensaje necesita una decisión inmediata: chat en vivo, comentarios y publicaciones de usuarios.
+PolicyLM-1.7B es un clasificador de moderacion de contenido de pesos abiertos desarrollado por Musubi Labs. Recibe un mensaje de texto y una politica de moderacion (definida por el usuario o una taxonomia integrada) y devuelve una puntuacion entre 0 y 1 para cada categoria de la politica, permitiendo tomar una decision inmediata sobre si el mensaje debe marcarse. Esta disenado para entornos que requieren una decision en tiempo real, como chats en vivo, comentarios y publicaciones de usuarios.
 
-El modelo deriva por ajuste fino (finetune) de BidirLM/BidirLM-1.7B-Embedding, un transformer bidireccional de aproximadamente 1,73 mil millones de parámetros (1.728.429.057 según los pesos en safetensors). Funciona en dos modos: un modo `explicit` en el que el operador escribe sus propias categorías como reglas cortas en tiempo de inferencia, sin reentrenar, y un modo `aegis` con una taxonomía integrada de 23 categorías procedente de Aegis 2.0 de NVIDIA. Evalúa hasta 16 categorías por política y puntúa todas ellas en una sola pasada.
+El modelo se construye mediante fine-tuning supervisado sobre BidirLM-1.7B-Embedding, un modelo de embeddings bidireccional de 1,7 mil millones de parametros. Su principal innovacion es el modo `explicit`, que permite definir categorias de politica como reglas cortas en el momento de la inferencia sin necesidad de reentrenamiento. Tambien ofrece un modo `aegis` con una taxonomia integrada de 23 categorias basada en NVIDIA Aegis 2.0.
 
-Su relevancia práctica está en la relación entre coste y velocidad: 1,7 B de parámetros, sin `trust_remote_code` ni descargas adicionales, con una mediana declarada de 35 ms por mensaje corto de chat en una NVIDIA L4 de 24 GB (22 ms en una H100) con hasta seis categorías, y capaz de ejecutarse en CPU de portátil o en Apple Silicon. Se distribuye bajo licencia Apache-2.0 y cubre 19 idiomas.
+Es relevante ahora porque cubre una necesidad practica de la industria: la moderacion automatizada de contenido con politicas personalizables, multilingue (19 idiomas evaluados), ligera (ejecutable en una GPU L4 de 24 GB, CPU de portatil o Apple Silicon) y con licencia Apache-2.0, lo que facilita su adopcion comercial sin restricciones.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer bidireccional (BidirLM), ajustado para clasificación multietiqueta de texto |
-| Parametros totales | 1.728.429.057 (aproximadamente 1,73 B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en safetensors; no se documentan variantes GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | 19: arabe (ar), checo (cs), aleman (de), ingles (en), espanol (es), frances (fr), hindi (hi), italiano (it), japones (ja), coreano (ko), malayo (ms), neerlandes (nl), polaco (pl), portugues (pt), ruso (ru), sueco (sv), tamil (ta), tailandes (th), chino (zh) |
+| Arquitectura | Transformer bidireccional (fine-tuning de BidirLM-1.7B-Embedding) |
+| Parametros totales | 1.728.429.057 (1,7B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | ar, cs, de, en, es, fr, hi, it, ja, ko, ms, nl, pl, pt, ru, sv, ta, th, zh (19 idiomas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (tamano del repositorio: 3,5 GB) |
-
-Datos adicionales de la ficha: pipeline `text-classification`, revisión descargable etiquetada como `v1.2`, dependencias declaradas `transformers==4.57.6`, `torch>=2.5.1`, `safetensors>=0.4` y `huggingface_hub>=0.34,<1.0`. La model card marca `inference: false`, es decir, no está habilitado en la Inference API de Hugging Face y debe ejecutarse en infraestructura propia.
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que se trata de un ajuste fino sobre BidirLM/BidirLM-1.7B-Embedding, un modelo bidireccional orientado a representaciones (embedding), y de que la salida es multietiqueta: una puntuación independiente por categoría más una puntuación agregada de "Prompt harmful" que determina la marca final en modo `aegis`. El modelo se usa como clasificador, no como generador, y no requiere `trust_remote_code` para cargarse.
+El modelo parte de BidirLM-1.7B-Embedding, un transformer bidireccional orientado a representaciones de texto (embeddings), y se somete a un proceso de fine-tuning para convertirlo en un clasificador multilabel de moderacion. La salida es una puntuacion por categoria (hasta 16 por politica) mas una puntuacion global de "Prompt harmful" en el modo `aegis`, que determina la decision final.
 
-Los conjuntos de datos declarados para el ajuste son nvidia/Nemotron-Safety-Guard-Dataset-v3, Alibaba-AAIG/XGuard-Train-Open-200K y ToxicityPrompts/PolyGuardMix. La taxonomía integrada de 23 categorías proviene del artículo de Aegis 2.0 (arXiv:2501.09004, sección 3). No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, la proporción por idioma ni si se emplearon técnicas de alineación como RLHF o DPO; ninguno de estos datos está disponible en la información proporcionada. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal, que en cualquier caso no aplicarían a un clasificador bidireccional sin generación autoregresiva.
-
-La innovación funcional destacable es el modo `explicit`: las categorías se definen en inferencia mediante una regla de violació, una regla de no violació y una excepción que prevalece. Esto permite adaptar el clasificador a una política concreta sin reentrenamiento, algo que la model card sitúa como ventaja frente a otros modelos de la categoría.
+Los datos de entrenamiento provienen de tres conjuntos publicos: nvidia/Nemotron-Safety-Guard-Dataset-v3, Alibaba-AAIG/XGuard-Train-Open-200K y ToxicityPrompts/PolyGuardMix. La model card no detalla el numero exacto de tokens ni la composicion precisa del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La innovacion principal es el modo `explicit`, que permite al modelo interpretar reglas de politica escritas en lenguaje natural en tiempo de inferencia, sin reentrenamiento, lo que lo diferencia de clasificadores de seguridad con taxonomias fijas. El modelo es autocontenido: no requiere `trust_remote_code` ni descargas adicionales, y funciona offline.
 
 ## Capacidades
 
-- Clasificación multietiqueta de contenido: devuelve una puntuación de 0 a 1 por cada categoría de la política, además de un indicador booleano `flagged` y la lista de categorías incumplidas.
-- Políticas personalizadas en tiempo de inferencia (modo `explicit`): cada categoría se define con reglas de violació, de no violació y una excepción que prevalece, sin reentrenamiento.
-- Taxonomía integrada (modo `aegis`) de 23 categorías de Aegis 2.0: violencia, contenido sexual, planificación o confesión de delitos, armas ilegales, sustancias controladas, suicidio y autolesión, contenido sexual con menores, odio identitario, PII y privacidad, acoso, amenazas, blasfemias, "necesita precaución", otros, manipulación, fraude y engaño, malware, decisiones gubernamentales de alto riesgo, política/desinformación/teorías conspirativas, derechos de autor y plagio, consejos no autorizados, actividad ilegal e inmoralidad o falta de ética, más una puntuación agregada "Prompt harmful".
-- Procesamiento por lotes mediante `classify_batch(messages, policy)`.
-- Umbrales de decisión configurables: presets `precision` (por defecto) y `balanced`, umbral por llamada y umbral por categoría individual.
-- Multilingüe, evaluado según el autor en mensajes de 19 idiomas.
-- Funcionamiento offline y autocontenido, sin descarga secundaria de artefactos.
-- Inferencia en CPU, Apple Silicon y GPU de 24 GB o superior.
-
-No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, audio, tool calling, function calling ni razonamiento multi-paso. La model card excluye explícitamente el análisis de imágenes y del historial de conversación.
+- Clasificacion multilabel de contenido: devuelve una puntuacion de 0 a 1 por cada categoria de la politica definida.
+- Politicas personalizables en inferencia (`explicit`): el usuario define categorias con reglas de violacion, no violacion y excepciones, sin reentrenar.
+- Taxonomia integrada (`aegis`): 23 categorias de seguridad de NVIDIA Aegis 2.0 (violencia, contenido sexual, planificacion criminal, armas, sustancias, autolesion, odio, PII, acoso, amenazas, fraude, malware, etc.) mas una puntuacion "Prompt harmful".
+- Clasificacion por lotes mediante `classify_batch`.
+- Ajuste de umbral (cutoff) por modo (`precision` o `balanced`) o por categoria individual.
+- Multilingue: evaluado en 19 idiomas.
+- Inferencia en CPU, Apple Silicon y GPU (L4, H100).
+- No soporta tool calling, agentes, vision ni audio: es exclusivamente un clasificador de texto.
 
 ## Casos de uso
 
-- Moderación de chat en vivo: cada mensaje entrante se puntúa en una sola pasada contra la política del servicio y se marca si supera el umbral; con una mediana declarada de 35 ms por mensaje corto en una L4, el filtrado puede hacerse de forma síncrona en la ruta de mensajes sin bloquear la conversación.
-- Moderación de comentarios y publicaciones en plataformas UGC: se aplica el preset `precision` (umbral 0,335 en modo `explicit` y 0,69 en `aegis`) cuando las violaciones son poco frecuentes, y `balanced` (0,275 y 0,45) cuando una violación no detectada cuesta más que un falso positivo.
-- Aplicación de normas internas de comunidad específicas: gracias al modo `explicit`, un equipo puede traducir su código de conducta a categorías con reglas cortas y adaptar el modelo a su política sin reentrenar ni mantener un dataset etiquetado propio.
-- Triaje previo a revisión humana: el modelo identifica qué regla concreta se incumple, de modo que la cola de revisión manual puede priorizarse por categoría en lugar de por un único indicador binario.
-- Filtrado de entradas en un pipeline de datos o de entrenamiento: dado que puntúa por lotes y es multilingüe en 19 idiomas, puede usarse para descartar o etiquetar mensajes tóxicos en corpus recogidos de fuentes abiertas.
-- Cribado genérico de seguridad con infraestructura mínima: el modo `aegis` permite desplegar un filtro de seguridad estándar en una única GPU de 24 GB, en CPU de portátil o en Apple Silicon, útil para prototipos, entornos de desarrollo o servicios con tráfico moderado.
-- Validación automatizada de políticas antes de desplegarlas: al permitir fijar umbrales por categoría, un equipo puede calibrar el corte sobre mensajes etiquetados propios y comparar configuraciones antes de activarlas en producción.
+- Moderacion de chat en vivo: el modelo clasifica cada mensaje contra las categorias de politica del operador en una sola pasada, con una mediana de 35 ms por mensaje corto en una L4, lo que permite filtrar en tiempo real sin bloquear la conversacion.
+- Moderacion de comentarios y publicaciones en comunidades: se definen reglas explicitas (por ejemplo, amenazas, doxxing, spam) y el modelo devuelve que reglas incumple cada publicacion, facilitando la revision y la accion automatica.
+- Filtrado de contenido en plataformas multilingues: al estar evaluado en 19 idiomas, puede aplicarse a foros y redes con audiencias diversas sin desplegar un modelo por idioma.
+- Deteccion de fuga de credenciales y PII: con una categoria personalizada de "Credential sharing" o la categoria integrada de PII/Privacy, el modelo puede marcar mensajes que solicitan o revelan contrasenas o claves de acceso.
+- Triaje previo a revision humana: en flujos donde la decision final requiere justificacion escrita, PolicyLM actua como primera capa que descarta la mayoria de mensajes limpios y deriva solo los sospechosos a moderadores humanos.
+- Despliegue en entornos con recursos limitados: al ejecutarse en CPU de portatil o Apple Silicon, permite moderacion local en aplicaciones de escritorio, herramientas internas o entornos sin GPU.
+- Cumplimiento de politicas de comunidad personalizadas: organizaciones que cambian sus reglas con frecuencia pueden actualizar las categorias en inferencia sin reentrenar el modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información disponible. La model card afirma que, en el benchmark propio de políticas personalizadas del autor, PolicyLM-1.7B supera a todos los demás modelos probados por debajo de 20 000 millones de parámetros, pero no se aportan cifras, nombres de los modelos comparados ni métricas concretas, por lo que esta afirmación no puede verificarse con los datos disponibles.
+La model card afirma que, en el benchmark de politicas personalizadas del autor, el modelo supera a todos los demas modelos por debajo de 20B parametros que probaron. Sin embargo, no se publican las cifras concretas de ese benchmark ni resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
-Los únicos datos de rendimiento medibles publicados son de latencia y umbrales:
+Datos de latencia proporcionados por el autor:
 
-| Metrica | Valor declarado |
-|---|---|
-| Latencia mediana por mensaje corto de chat, 1x NVIDIA L4 (24 GB), hasta 6 categorias | 35 ms |
-| Latencia mediana por mensaje corto de chat, 1x NVIDIA H100 | 22 ms |
-| Categorias por politica | hasta 16 |
-| Umbral por defecto, modo `explicit` (`precision`) | 0,335 |
-| Umbral por defecto, modo `aegis` (`precision`) | 0,69 |
-| Umbral modo `explicit` (`balanced`) | 0,275 |
-| Umbral modo `aegis` (`balanced`) | 0,45 |
+| Escenario | Hardware | Latencia mediana |
+|---|---|---|
+| Mensaje corto de chat, hasta 6 categorias | NVIDIA L4 (24 GB) | 35 ms |
+| Mensaje corto de chat, hasta 6 categorias | NVIDIA H100 | 22 ms |
 
-No se publican cifras de throughput (mensajes por segundo), consumo de memoria medido ni resultados de precisión, exhaustividad o F1 sobre conjuntos de evaluación independientes.
+No se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 3,5 GB solo para los pesos (tamaño del repositorio, coherente con precisión de 16 bits); en la práctica hay que sumar memoria para activaciones y el tokenizador, por lo que un presupuesto de 4 a 6 GB es razonable. Cargado en fp32 serían aproximadamente 6,9 GB. Para cuantizaciones de 8 bits, una estimación teórica ronda los 1,8 GB, aunque no se documentan variantes cuantizadas oficiales.
-- GPU validadas por el autor: NVIDIA L4 de 24 GB (35 ms de mediana) y NVIDIA H100 (22 ms de mediana).
-- Compatibilidad con GPU de consumo: sí. Con 1,73 B de parámetros cabe en tarjetas de 8 GB o superiores (por ejemplo, RTX 3060, RTX 4060, RTX 4070, RTX 4090) siempre que se use precisión de 16 bits. También se ejecuta en CPU de portátil y en Apple Silicon según la model card.
-- Opciones de despliegue: inferencia directa con PyTorch y Transformers (versión fijada en 4.57.6), usando la carpeta `inference/` incluida en el repositorio, que debe copiarse íntegra si se quiere reutilizar el helper `PolicyLM`. El modelo usa una API de clasificación (`classify`, `classify_batch`) y no un bucle generativo. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni otros servidores de inferencia.
-- Latencia y throughput estimados: 35 ms de mediana por mensaje corto en L4 con hasta seis categorías y 22 ms en H100, según el autor. La latencia crece con el número de categorías y la longitud del mensaje, aunque no se publican curvas al respecto. El throughput agregado no está disponible.
+- VRAM estimada: el repo ocupa 3,5 GB en safetensors (pesos en precision original). En FP16 requiere aproximadamente 3,5 GB de VRAM; en cuantizaciones de 8 bits o 4 bits el requisito baja, aunque los tipos de cuantizacion no estan documentados.
+- GPU recomendadas: NVIDIA L4 (24 GB) para produccion con latencia de 35 ms; NVIDIA H100 para 22 ms. Cabe holgadamente en cualquier GPU consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4090).
+- Cabe en GPU consumer: si, y tambien en CPU de portatil y Apple Silicon, segun el autor.
+- Opciones de despliegue: el autor proporciona un script de inferencia propio (`inference/quickstart.py` y el modulo `policylm_infer`) basado en transformers 4.57.6, torch >=2.5.1 y safetensors. No se documenta soporte explicito para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: 35 ms por mensaje corto en L4 con hasta 6 categorias; 22 ms en H100. El throughput por lotes no esta documentado.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye resultados cuantitativos de terceros, por lo que la comparación se limita a parámetros, licencia y formato de publicación. Los datos de rendimiento de los modelos alternativos aparecen como no disponibles porque no se han facilitado en esta búsqueda.
+No se dispone de datos de benchmarks comparativos publicados en la informacion proporcionada. La model card solo indica que supera a todos los modelos por debajo de 20B parametros probados en su benchmark de politicas personalizadas, sin nombrarlos ni dar cifras. Como referencia de categoria, se trata de un clasificador de moderacion de ~1,7B parametros con licencia Apache-2.0, base BidirLM-1.7B-Embedding y taxonomia opcional Aegis 2.0.
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Rendimiento comparado |
-|---|---|---|---|---|---|
-| PolicyLM-1.7B (musubilabs) | 1,73 B | no disponible | Apache-2.0 | Clasificador multietiqueta con política definible en inferencia y taxonomía Aegis 2.0 | Referencia base; sin cifras publicadas |
-| Llama Guard 3 8B (Meta) | 8 B | no disponible | Licencia comunitaria de Llama 3.2 | Clasificador de seguridad con taxonomía fija | no disponible |
-| ShieldGemma 2B (Google) | 2 B | no disponible | Licencia de Gemma | Clasificador de seguridad con taxonomía fija | no disponible |
-| Nemotron Safety Guard (NVIDIA) | no disponible | no disponible | no disponible | Clasificador de seguridad; su dataset v3 se usó en el entrenamiento de PolicyLM | no disponible |
-
-La única comparación cualitativa aportada por el autor es la afirmación de que PolicyLM-1.7B supera a todos los modelos por debajo de 20 B probados en su benchmark interno de políticas personalizadas, sin cifras que la respalden en la información disponible.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| PolicyLM-1.7B | 1,7B | No disponible | Apache-2.0 | Clasificador multilabel con politicas personalizables |
+| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Fuera de alcance declarado: la aplicación de normas de seguridad infantil (el contenido sospechoso debe derivarse a herramientas dedicadas), ser la única salvaguarda frente a autolesión, funcionar como frontera de seguridad frente a usuarios adversarios y moderar respuestas de asistentes.
-- No proporciona justificación escrita de la decisión, por lo que no es adecuado para procesos de apelación, expulsiones o retiradas de contenido que exijan motivación documentada.
-- Analiza texto de uno en uno; no procesa imágenes ni historial de conversación, lo que limita su uso en moderación contextual o multimodal.
-- Riesgo de alucinación y de error de calibración: al ser un clasificador, su riesgo no es inventar hechos, sino producir falsos positivos o falsos negativos. El propio autor recomienda calibrar el umbral sobre mensajes etiquetados propios antes de usarlo, y advierte de que en casos donde una violación no detectada cuesta mucho más que un falso positivo conviene usar otro enfoque.
-- Sesgos: no se documentan análisis de sesgo ni evaluaciones de equidad por grupo demográfico, idioma o variedad dialectal. Las categorías sensibles (odio identitario, contenido sexual, autolesión) pueden comportarse de forma desigual entre los 19 idiomas declarados, sin datos públicos al respecto.
-- Cobertura idiomática: se declaran 19 idiomas y una evaluación en mensajes de esos idiomas, pero no se especifica el reparto de datos de entrenamiento por lengua, por lo que el rendimiento en idiomas con menos presencia (por ejemplo, tamil, malayo o tailandés) podría ser inferior al del inglés.
-- Sin datos sobre la longitud de contexto soportada: mensajes muy largos pueden truncarse por el tokenizador sin que la model card documente el límite.
-- Licencia: Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se cumplan las condiciones del texto. Conviene verificar las licencias de los datasets de entrenamiento por separado si se planea redistribuir el modelo o derivados.
-- Producción: la model card marca `inference: false` (no está disponible en la Inference API de Hugging Face) y fija `transformers==4.57.6`, por lo que el despliegue exige infraestructura propia y control de versiones. No hay soporte documentado para servidores de inferencia populares como vLLM, TGI u Ollama, y la revisión `v1.2` debe descargarse explícitamente.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica una adopción pública todavía muy limitada y, por tanto, poca validación externa independiente.
+- El autor declara explicitamente fuera de alcance la aplicacion de seguridad infantil: el contenido sospechoso de ese tipo debe derivarse a herramientas dedicadas.
+- No debe ser el unico mecanismo de proteccion frente a autolesion.
+- No es una frontera de seguridad contra usuarios adversariales.
+- No esta disenado para moderar respuestas de asistentes, solo mensajes de entrada.
+- No procesa imagenes ni historial de conversacion: solo texto, un mensaje a la vez.
+- No proporciona una razon escrita de la decision, por lo que no es adecuado para apelaciones, baneos o retiradas de contenido que requieran justificacion.
+- Riesgo de alucinacion y de falsos positivos/negativos: el autor recomienda calibrar el cutoff con mensajes etiquetados propios antes de produccion.
+- Los sesgos conocidos no estan documentados en la informacion disponible.
+- La longitud de contexto no esta especificada, lo que limita la planificacion para mensajes largos.
+- Licencia Apache-2.0: permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar los terminos de los datasets de entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/musubilabs/policylm-1.7b
-- Modelo base: https://huggingface.co/BidirLM/BidirLM-1.7B-Embedding
-- Articulo de Aegis 2.0 (taxonomia de 23 categorias): https://arxiv.org/abs/2501.09004
-- Dataset nvidia/Nemotron-Safety-Guard-Dataset-v3: https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3
+- Paper de Aegis 2.0: https://arxiv.org/abs/2501.09004
+- Dataset NVIDIA Nemotron-Safety-Guard-Dataset-v3: https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3
 - Dataset Alibaba-AAIG/XGuard-Train-Open-200K: https://huggingface.co/datasets/Alibaba-AAIG/XGuard-Train-Open-200K
 - Dataset ToxicityPrompts/PolyGuardMix: https://huggingface.co/datasets/ToxicityPrompts/PolyGuardMix
-- Descarga de la revision v1.2: `hf download musubilabs/policylm-1.7b --revision v1.2 --local-dir policylm-1.7b`
-
-No se han encontrado en la busqueda web articulos, repositorios, demos ni documentacion adicional del modelo distintos de los enlaces anteriores.
+- Modelo base BidirLM-1.7B-Embedding: https://huggingface.co/BidirLM/BidirLM-1.7B-Embedding

@@ -2,99 +2,102 @@
 
 ## Resumen
 
-Qwen3.5-4B-Web-Designer es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario banyohavlusu23 en Hugging Face. Su proposito es convertir una peticion en lenguaje natural ("una landing page para mi cafeteria", "un pequeno juego de carreras en el navegador") en una unica pagina HTML autocontenida, con diseno tematico, textos reales, CSS y JavaScript en un solo archivo. El modelo piensa brevemente antes de escribir y esta pensado para ejecutarse en un portatil.
+Qwen3.5-4B-Web-Designer es un ajuste fino (fine-tune) del modelo base Qwen3.5-4B de Alibaba Cloud, publicado por el usuario independiente banyohavlusu23. El modelo está especializado en una tarea muy concreta: transformar una petición en lenguaje natural ("una landing page para mi cafetería", "un pequeño juego de carreras en el navegador") en una única página HTML autocontenida, con diseño temático, textos reales y CSS y JavaScript embebidos en el mismo fichero. Está pensado para ejecutarse en un portátil.
 
-El ajuste se realizo mediante QLoRA (rango 16, alpha 32) sobre 1.443 ejemplos de peticion-a-pagina, generados por DeepSeek V4.1 Flash a partir de prompts reales del arena WebDev de LMArena y propios del autor. El modelo resultante se distribuye tanto en pesos fusionados bf16 (safetensors) como en cuantizaciones GGUF Q4_K_M y Q8_0 para llama.cpp.
+El modelo resuelve el problema de generar prototipos web funcionales de forma local y sin dependencia de APIs externas. Con 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) y un contexto de entrenamiento de 4.096 tokens, el ajuste se realizó mediante QLoRA sobre una GPU de consumo (RTX 4060 Laptop de 8 GB), lo que lo convierte en un ejemplo representativo de fine-tuning accesible para desarrolladores individuales.
 
-Es relevante porque demuestra que un modelo de 4B parametros, ajustado con un conjunto de datos pequeno y curado por calidad (solo se conservaron paginas que funcionaban en navegador), puede mejorar de forma medible la tasa de exito en generacion de paginas web completas: del 35% al 53% de paginas funcionales sobre el modelo base en la misma bateria de 74 prompts.
+Su relevancia actual radica en que demuestra que un modelo pequeño, ajustado con un dataset curado de solo 1.443 ejemplos y validado empíricamente en navegador, puede mejorar de forma medible la tasa de páginas funcionales generadas (del 35 % al 53 % en la evaluación del autor) frente al modelo base, manteniéndose ejecutable en hardware de gama media.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-4B; detalles no disponibles) |
-| Parametros totales | 4B (heredados del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 10.240 tokens en la configuracion de llama-server recomendada (contexto nativo del base no disponible) |
-| Tipos de cuantizacion | Q4_K_M (2,7 GB), Q8_0 (4,5 GB); pesos bf16 fusionados |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B; detalles internos del base no disponibles) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 4.096 tokens (longitud de entrenamiento); el autor recomienda ejecutar con `-c 10240` |
+| Tipos de cuantizacion | Q4_K_M (4 bits, 2,7 GB) y Q8_0 (8 bits, 4,5 GB) |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bf16 fusionado) y GGUF |
+| Formato de pesos | GGUF (repositorio GGUF); pesos fusionados del fine-tune no detallados |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer de 4.000 millones de parametros, y se ajusta mediante QLoRA con rango 16 y alpha 32, durante 2 epocas, con secuencias de 4.096 tokens, sobre una unica GPU RTX 4060 Laptop de 8 GB de VRAM. Posteriormente el adaptador se fusiona en los pesos base. El conjunto de entrenamiento consta de 1.443 ejemplos de peticion-a-pagina: peticiones reales de diseno web procedentes del arena WebDev de LMArena y propias del autor, cada una respondida por DeepSeek V4.1 Flash con un breve plan de diseno y una pagina HTML completa.
+El modelo parte de Qwen3.5-4B, un transformer de aproximadamente 4,2 mil millones de parámetros. El ajuste fino se realizó con QLoRA (rank 16, alpha 32), durante 2 épocas, con una longitud de secuencia de 4.096 tokens, sobre una única RTX 4060 Laptop GPU con 8 GB de VRAM. Posteriormente, los adaptadores se fusionaron en los pesos del modelo base. Los detalles arquitectónicos internos del modelo base (tipo de atención, composición de capas, uso de decodificación especulativa u otras innovaciones) no se especifican en la información disponible.
 
-La innovacion principal esta en el filtrado del dataset: cada pagina generada se abrio en un navegador y solo se conservo si funcionaba, lo que orienta el ajuste hacia codigo HTML/CSS/JS ejecutable y no solo plausible. El modelo conserva el comportamiento de "pensar antes de escribir" del base, pero lo reduce: la mediana de tokens de razonamiento baja de 657 a 414, lo que acorta la latencia y deja mas presupuesto de tokens para la pagina. La salida esperada es un plan corto seguido de un unico bloque ```html.
+El dataset de entrenamiento consta de 1.443 ejemplos de pares petición-página. Las peticiones provienen del arena WebDev de LMArena (dataset `lmarena-ai/arena-webdev-preferences`, CC BY 4.0) y de peticiones propias del autor. Cada respuesta fue generada por DeepSeek V4.1 Flash con un breve plan de diseño seguido de la página completa. Todas las páginas se abrieron en un navegador y solo se conservaron las que funcionaban, lo que constituye un filtrado de calidad basado en ejecución real. No se menciona el uso de RLHF o DPO; el proceso es supervisado (SFT) sobre datos filtrados.
 
 ## Capacidades
 
-- Generacion de paginas HTML autocontenidas (HTML + CSS + JavaScript en un solo archivo).
-- Diseno web tematico: tipografia, espacios en blanco, degradados, animaciones y textos de relleno coherentes con la peticion.
-- Razonamiento breve previo a la generacion (plan de diseno corto).
-- Soporte de frameworks y recursos externos via CDN (Tailwind, Google Fonts).
-- Generacion de pequenos juegos e interactividad en JavaScript.
-- Capacidades multilingues: solo se declara ingles (en).
-- Tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Vision, audio u otras modalidades: no disponible.
+- Generación de páginas HTML autocontenidas: produce un único fichero con HTML, CSS y JavaScript embebidos, listo para guardar como `page.html` y abrir en el navegador.
+- Diseño web temático: genera tipografía limpia, espacios en blanco generosos, degradados y animaciones suaves, orientado a landings y sitios con acabado profesional.
+- Generación de texto de marketing: incluye copy real en las páginas generadas.
+- Modo de razonamiento breve: produce un plan de diseño corto antes de escribir el código (mediana de 414 tokens de pensamiento en la evaluación del autor).
+- Uso de CDNs: las páginas cargan Tailwind y Google Fonts desde sus CDNs.
+- Generación de pequeños juegos y aplicaciones en navegador (por ejemplo, un juego de carreras).
+- Capacidad conversacional y de generación de texto heredada del modelo base Qwen3.5-4B.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales: no se documentan visión ni audio.
 
 ## Casos de uso
 
-- Prototipado rapido de landing pages: a partir de una descripcion textual se obtiene un `page.html` listo para abrir en el navegador, util para validar una idea de diseno en segundos sin escribir CSS.
-- Generacion de maquetas para clientes: agencias o freelancers pueden producir variantes de una pagina (cafeteria, estudio, producto) y presentarlas como propuesta inicial antes del desarrollo real.
-- Creacion de paginas de aterrizaje para campanas: el modelo genera textos y estructura orientados a conversion, con secciones y llamadas a la accion, adecuado para pruebas A/B tempranas.
-- Desarrollo de pequenos juegos web: peticiones como "un juego de carreras en el navegador" producen un HTML con logica JavaScript funcional, util para demos y material educativo.
-- Material didactico de frontend: sirve como generador de ejemplos de HTML/CSS/JS para cursos, ya que entrega codigo completo y ejecutable en un unico archivo.
-- Generacion local en portatil: con el GGUF Q4_K_M (2,7 GB) se puede ejecutar en un equipo de consumo sin conexion, lo que facilita su uso en entornos con privacidad o sin GPU dedicada.
-- Iteracion rapida en herramientas tipo IDE o chat: integrado en LM Studio u Ollama, permite refinar una pagina conversando, aprovechando el contexto de 10.240 tokens configurado.
+- Prototipado rápido de landing pages: a partir de una descripción breve del negocio (por ejemplo, una cafetería), el modelo genera una página completa con diseño, textos y estilos que el desarrollador puede abrir directamente en el navegador para validar una idea en segundos.
+- Generación de maquetas para clientes: agencias y freelancers pueden producir borradores visuales de sitios antes de invertir tiempo en el desarrollo real, reduciendo el ciclo de feedback inicial.
+- Creación de pequeños juegos y demos interactivas: el modelo es capaz de generar juegos sencillos en el navegador (el autor cita un juego de carreras), útiles para demos, prototipos educativos o contenido interactivo.
+- Aprendizaje y experimentación con fine-tuning: el modelo sirve como caso de estudio reproducible de QLoRA sobre hardware de consumo, con dataset, hiperparámetros y metodología de evaluación documentados.
+- Generación de componentes y páginas de ejemplo para documentación técnica: útil para crear ejemplos autocontenidos que se puedan incrustar en tutoriales o manuales.
+- Ejecución local y privada: al distribuirse en GGUF y funcionar con llama.cpp, Ollama y LM Studio, permite generar páginas sin enviar prompts a servicios en la nube, adecuado para entornos con requisitos de privacidad.
+- Iteración sobre diseño existente: dado que el modelo acepta peticiones en lenguaje natural, se puede usar para regenerar o variar el estilo de una página con instrucciones sucesivas.
 
 ## Benchmarks y rendimiento
 
-Evaluacion del autor sobre 74 prompts no vistos en entrenamiento, 2 paginas por prompt (148 paginas), con el GGUF Q4_K_M, abriendo cada pagina en navegador y considerandola funcional si termina, carga, no lanza errores de JavaScript y sus botones responden.
+Evaluación del autor sobre 74 prompts no vistos en entrenamiento, 2 páginas por prompt, comparando el modelo base y el fine-tune (GGUF Q4_K_M). Cada página se abre en un navegador y se considera "funcional" si termina, carga, no lanza errores de JavaScript y sus botones responden.
 
 | Metrica | Qwen3.5-4B (base) | Qwen3.5-4B-Web-Designer |
 |---|---|---|
-| Paginas funcionales | 52/148 (35%) | 78/148 (53%) |
-| Paginas terminadas | 111/148 (75%) | 141/148 (95%) |
-| Tokens de razonamiento (mediana) | 657 | 414 |
+| Paginas funcionales | 52/148 (35 %) | 78/148 (53 %) |
+| Paginas terminadas | 111/148 (75 %) | 141/148 (95 %) |
+| Tokens de pensamiento antes de escribir (mediana) | 657 | 414 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 3 GB para Q4_K_M (2,7 GB de pesos) y unos 5 GB para Q8_0 (4,5 GB de pesos), mas overhead de contexto.
-- Pesos bf16 fusionados: en torno a 8 GB, requiere GPU con al menos 8-10 GB o ejecucion en CPU.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (el autor entreno en una RTX 4060 Laptop de 8 GB); para mayor throughput, RTX 4090, A100 o H100.
-- Cabe en GPU consumer: si, en tarjetas de 8 GB o mas con Q4_K_M; tambien en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio, Ollama; pesos safetensors para Transformers.
-- Configuracion recomendada: `llama-server -m Qwen3.5-4B-Web-Designer-Q4_K_M.gguf --jinja -c 10240 -ngl 99`, temperatura 0,7, top-p 0,95, top-k 20, hasta 8.192 tokens nuevos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 2,7 GB con Q4_K_M y 4,5 GB con Q8_0 (tamaños de fichero indicados por el autor).
+- GPU recomendadas: el autor entrenó en una RTX 4060 Laptop de 8 GB; para inferencia basta con GPUs de consumo con al menos 4-6 GB de VRAM libre.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 y superiores; también en portátiles con 8 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`), Ollama, LM Studio. El autor documenta `llama-server -hf banyohavlusu23/Qwen3.5-4B-Web-Designer-GGUF:Q4_K_M --jinja -c 10240 -ngl 99` y `ollama run hf.co/banyohavlusu23/Qwen3.5-4B-Web-Designer-GGUF:Q4_K_M`.
+- Parámetros de generación recomendados: temperatura 0,7, top-p 0,95, top-k 20, hasta 8.192 tokens nuevos.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Web-Designer | 4B | 10.240 (config. recomendada) | Generacion de paginas web | Apache-2.0 | Hugging Face (GGUF + safetensors) |
-| Qwen3.5-4B (base) | 4B | no disponible | Proposito general | Apache-2.0 | Hugging Face |
-| DeepSeek V4.1 Flash | no disponible | no disponible | Proposito general (genero el dataset) | no disponible | no disponible |
+| Qwen3.5-4B-Web-Designer | 4,2 B | 4.096 (entrenamiento) | Fine-tune para generación de páginas web | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-4B (base) | 4,2 B | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
+| DeepSeek V4.1 Flash | no disponible | no disponible | Generador de datos de entrenamiento (API) | no disponible | no disponible |
 
-No se dispone de datos de benchmarks estandar ni de otros ajustes finos comparables en la informacion proporcionada.
+La comparación directa con otros fine-tunes especializados en generación web no está disponible en la información proporcionada. El único contraste cuantificado es frente al modelo base, con una mejora de 18 puntos porcentuales en páginas funcionales (35 % a 53 %).
 
 ## Limitaciones y advertencias
 
-- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
-- Tasa de exito limitada: un 53% de paginas funcionales implica que cerca de la mitad de las generaciones pueden presentar fallos de JavaScript o interaccion, por lo que requiere revision humana antes de produccion.
-- Riesgo de alucinacion en textos, nombres de marca y datos de contacto generados; no deben publicarse sin verificacion.
-- Dependencia de CDN externos (Tailwind, Google Fonts): las paginas no son totalmente offline y pueden degradarse sin conexion.
-- Modelo no oficial, no afiliado a Qwen ni a Alibaba Cloud; el soporte y mantenimiento dependen del autor.
-- El conjunto de datos de prompts (lmarena-ai/arena-webdev-preferences) es CC BY 4.0 y las paginas de entrenamiento fueron generadas por DeepSeek V4.1 Flash; conviene revisar los terminos de dichos recursos para usos derivados.
-- Licencia Apache-2.0 permite uso comercial, pero no se ofrecen garantias de calidad ni de seguridad del codigo generado.
-- Sin datos publicados sobre sesgos, robustez ante prompts adversarios ni evaluaciones independientes.
+- Idioma: el modelo solo declara soporte de inglés; las peticiones y los textos generados en castellano pueden degradarse.
+- Contexto limitado: entrenado con 4.096 tokens; aunque se puede ejecutar con ventanas mayores, la calidad más allá del contexto de entrenamiento no está garantizada.
+- Tasa de fallo significativa: incluso el fine-tune solo genera páginas funcionales en el 53 % de los casos evaluados, por lo que requiere revisión humana.
+- Dependencia de CDNs: las páginas cargan Tailwind y Google Fonts desde CDNs externos, lo que rompe el aislamiento y puede fallar en entornos sin red o con bloqueo de terceros.
+- Alucinación: como modelo generativo, puede producir contenido inventado en los textos de las páginas.
+- Sesgos: no se documentan sesgos específicos; al derivar del modelo base, hereda los sesgos de este, no evaluados en la model card.
+- Licencia: Apache-2.0 permite uso comercial, pero el autor aclara que es un proyecto no oficial, no afiliado a Qwen ni a Alibaba Cloud; conviene revisar `NOTICE` y `LICENSE`.
+- Procedencia de datos: las páginas de entrenamiento fueron generadas por DeepSeek V4.1 Flash y los prompts provienen de LMArena (CC BY 4.0); deben respetarse las atribuciones correspondientes.
+- Madurez: proyecto con 417 descargas y 7 likes en el momento de la consulta, sin validación independiente de los resultados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/banyohavlusu23/Qwen3.5-4B-Web-Designer
-- Galeria de paginas generadas: https://huggingface.co/spaces/banyohavlusu23/Qwen3.5-4B-Web-Designer-Gallery
+- Repositorio GGUF: https://huggingface.co/banyohavlusu23/Qwen3.5-4B-Web-Designer-GGUF
+- Galería de páginas generadas: https://huggingface.co/spaces/banyohavlusu23/Qwen3.5-4B-Web-Designer-Gallery
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de prompts: https://huggingface.co/datasets/lmarena-ai/arena-webdev-preferences

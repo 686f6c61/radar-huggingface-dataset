@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen's most powerful open-source image ...",
-      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
-      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
-    },
-    {
-      "title": "Qwen-Image-2.1 - Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "mflux/src/mflux/models/qwen21 at main · mflux-community/mflux",
-      "url": "https://github.com/mflux-community/mflux/tree/main/src/mflux/models/qwen21",
-      "snippet": "Qwen Image 2.1 For instruction-based single/multiple-reference editing, prefix KV caching, and RGBA output, see reference editing and uv run mflux-generate-qwen-2.1-edit. The existing command below retains its text-to-image and strength-based img2img behavior."
-    },
-    {
-      "title": "mflux-community/qwen-image-2-1-mflux-q4 · Hugging Face",
-      "url": "https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q4",
-      "snippet": "Community conversion by MFlux-Community -- not an official release from the original model's authors. The original model's license applies unchanged, see License."
-    },
-    {
-      "title": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation",
-      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
-      "snippet": "Qwen-Image-2.1 unifies text-to-image generation and image editing in a single model, with just 7B parameters in its visual generation component and native support for generating and editing transparent images."
-    }
-  ]
+  "sources": []
 }

@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Colibri-Engine/Qwen3-Coder-30B-A3B-colibri-int4",
+  "renamed_at": "2026-11-27T04:40:38.319Z",
   "benchmarks": [],
   "sources": [
     {

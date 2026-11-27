@@ -2,92 +2,92 @@
 
 ## Resumen
 
-guardspec-classifier (v3b) es un clasificador de riesgo de prompt injection desarrollado por guard-spec, pensado como la capa L2 de Guard Spec, una pasarela de guardarraíles autoalojada para LLM. No es un modelo generativo: recibe texto (prompts de usuario, documentos recuperados, salidas de herramientas o definiciones de herramientas) y devuelve una puntuación de riesgo de manipulación. Se distribuye como modelo ONNX con cuantización INT8 dinámica de 118,5 MB.
+guardspec-classifier es un clasificador de riesgo de prompt injection y jailbreak de pequeno tamano, desarrollado por el proyecto Guard Spec. No es un modelo generativo: es un clasificador de texto (text-classification) que asigna una probabilidad de riesgo a cada entrada, pensado para actuar como capa L2 de una pasarela de seguridad autohospedada que filtra inyecciones antes de que lleguen al LLM. Se distribuye como modelo ONNX en INT8 (118,5 MB) para CPU y en FP16 (235,6 MB) para GPU, con licencia Apache 2.0.
 
-Técnicamente parte de `intfloat/multilingual-e5-small` (arquitectura BERT de 12 capas, tamaño oculto 384, unos 118 millones de parámetros) y se afina con una cabeza sigmoide multi-etiqueta de 8 clases. Está entrenado únicamente en inglés y vietnamita, con aproximadamente 30.800 filas de entrenamiento y 7.572 de validación. Su relevancia actual radica en que ofrece una señal de seguridad determinista, ligera y desplegable en CPU, integrable en pipelines que filtran entradas antes de que lleguen al LLM.
+El modelo parte de `intfloat/multilingual-e5-small`, un encoder BERT multilingue, y se ha afinado especificamente para detectar intentos de manipulacion de instrucciones del sistema. La version v8g es la predeterminada desde Guard Spec v0.11.0 y sustituye a v8e, que queda disponible en una rama para rollback. Su interes actual radica en que ofrece una barrera de seguridad ligera, multilingue (ingles y vietnamita) y desplegable en CPU, sin depender de un LLM generativo para la deteccion.
 
-La versión v3b (2026-11-04) es el clasificador por defecto de Guard Spec. Incluye artefactos de calibración (Platt scaling y fusión logística con las capas L1 y L3 de la pasarela) y umbrales documentados, lo que permite reproducir el comportamiento del gateway fuera de él. La licencia Apache-2.0 y el hecho de que todas las fuentes de datos permitan uso comercial facilitan su adopción en producción.
+El modelo cubre un nicho concreto: clasificacion binaria benigno/malicioso con umbral calibrado, integrable en pipelines OpenAI-compatibles mediante la pasarela Guard Spec o de forma autonoma con onnxruntime. Su tamano reducido y su formato ONNX lo hacen adecuado para entornos con recursos limitados o para despliegues en el borde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (base: intfloat/multilingual-e5-small), 12 capas, hidden size 384, cabeza sigmoide multi-etiqueta de 8 clases |
-| Parametros totales | Aproximadamente 118 millones |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 256 tokens por ventana; textos más largos se dividen en ventanas tomando el riesgo máximo |
-| Tipos de cuantizacion | INT8 dinámica (pesos QInt8, per channel); se distribuye solo en INT8 ONNX |
-| Idiomas soportados | Inglés (en) y vietnamita (vi) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`model_int8.onnx`, 118.521.330 bytes), más `tokenizer.json`, `config.json`, `thresholds.json` y `calibration.json` |
+| Arquitectura | Transformer encoder BERT (base: intfloat/multilingual-e5-small) |
+| Parametros totales | no disponible (modelo base e5-small; el autor no declara el recuento) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 256 tokens (truncado configurado en el tokenizador) |
+| Tipos de cuantizacion | INT8 (CPU) y FP16 (GPU) |
+| Idiomas soportados | ingles (en), vietnamita (vi) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (`model_int8.onnx`, `model_fp16.onnx`) con `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer tipo BERT derivado de `multilingual-e5-small` (revisión `614241f622f53c4eeff9890bdc4f31cfecc418b3`, licencia MIT). Sobre el encoder se añade una cabeza de clasificación multi-etiqueta con activación sigmoide y 8 etiquetas: `benign`, `direct_injection`, `indirect_injection`, `jailbreak`, `prompt_extraction`, `data_exfiltration`, `tool_poisoning` y `obfuscation`. La puntuación de riesgo se define como 1 − sigmoid(logit_benign); las puntuaciones por etiqueta de ataque son orientativas.
+El modelo es un encoder BERT derivado de `intfloat/multilingual-e5-small`, reentrenado como clasificador binario con dos etiquetas (la etiqueta 0 corresponde a "benigno"). La salida es un logit por etiqueta; la probabilidad de riesgo se obtiene como `1 - sigmoid(logit[0])`. El tokenizador aplica truncado a 256 tokens y padding, y el modelo se ejecuta con onnxruntime (CPUExecutionProvider o CUDAExecutionProvider).
 
-El ajuste fino se realizó con aproximadamente 30.800 filas de entrenamiento y 7.572 de validación en inglés y vietnamita, a partir de fuentes públicas cuya licencia permite redistribución y uso comercial (por ejemplo, `deepset/prompt-injections`, entre otras). No se especifica en la información disponible el número total de tokens de entrenamiento ni si se emplearon RLHF o DPO, algo esperable por otra parte en un clasificador. La innovación principal no está en la arquitectura, sino en el empaquetado para producción: cuantización INT8 dinámica, artefactos de calibración (Platt scaling con A = 0,9731 y B = 0,1567, y fusión logística con pesos L1/L2/L3 de 0,4582/0,9094/0,2769 y sesgo 0,4955) y umbrales independientes documentados (`risk_threshold` 0,1911 con FPR benigno ≤ 1% en validación).
+La version v8g parte de la receta de v8e con cinco adiciones al conjunto de entrenamiento (rondas R8b a R8d, brazo EPL2), cada una dirigida a un fallo observado de v8e: 1.573 prompts de persona y sistema empresariales benignos (en y vi) para reducir falsos positivos en role-play; 1.500 ventanas benignas de documentacion tecnica (RFCs, READMEs, paginas man) emparejadas con ventanas del mismo host con payload de ataque, mas 1.000 ventanas de ataque adicionales; 400 ataques con payload dividido en fragmentos ("A = ..., B = ..., haz A + B") y 400 uniones y sumas benignas; y 400 filas benignas con instrucciones negadas o entrecomilladas ("por favor, no ignores las instrucciones anteriores"). Es una de tres semillas (20261107) de un brazo que cumplio todos los criterios preinscritos en cada semilla frente a la banda de tres semillas de v8e; la semilla se eligio por la regla preinscrita de mayor deteccion en eval/data entre las semillas que pasaron. No se detalla en la informacion disponible el volumen total de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación multi-etiqueta de riesgo de prompt injection en texto, con 8 etiquetas de ataque y una de benigno.
-- Detección de injection directa e indirecta, jailbreak, extracción de system prompt, exfiltración de datos, envenenamiento de herramientas y ofuscación.
-- Puntuación de prompts de usuario, documentos recuperados, salidas de herramientas y definiciones de herramientas antes de que los vea el LLM.
-- Salida numérica determinista (logits y probabilidades), apta para umbrales y políticas automatizadas.
-- Ejecución en CPU mediante ONNX Runtime, sin necesidad de GPU.
-- Multilingüe limitado a inglés y vietnamita.
-- No genera texto ni razona: es exclusivamente un clasificador.
-- No soporta tool calling, agentes ni modos de pensamiento; esas capacidades pertenecen al LLM que protege.
+- Clasificacion de riesgo de prompt injection y jailbreak por entrada de texto, con salida de probabilidad por etiqueta.
+- Deteccion de prompts de persona y rol maliciosos, y reduccion de falsos positivos en prompts de rol benignos.
+- Deteccion de ataques con payload dividido en fragmentos que se combinan.
+- Manejo de instrucciones negadas o entrecomilladas sin marcarlas como ataque.
+- Clasificacion de documentacion tecnica benigna sin bloquearla (RFCs, READMEs, paginas man).
+- Soporte multilingue limitado a ingles y vietnamita.
+- No soporta tool calling, function calling, agentes, vision, audio ni generacion de texto: es un clasificador, no un LLM.
+- Calibracion disponible: `thresholds.json` con `risk_threshold` y `calibration.json` con escalado de Platt; la salida cruda no esta calibrada al umbral 0.85 de la pasarela.
 
 ## Casos de uso
 
-- Filtrado de prompts de usuario en una pasarela LLM: cada prompt se puntúa con el clasificador y se bloquea o deriva a revisión si supera el umbral, reduciendo el riesgo de jailbreaks antes de llegar al modelo generativo.
-- Protección frente a injection indirecta en RAG: los documentos recuperados se puntúan antes de insertarse en el contexto, de modo que un documento manipulado no introduce instrucciones maliciosas en el prompt final.
-- Validación de salidas de herramientas y APIs: las respuestas de herramientas externas se clasifican para detectar intentos de envenenamiento o instrucciones ocultas antes de reinyectarlas en el bucle del agente.
-- Auditoría de definiciones de herramientas en sistemas con function calling: el clasificador evalúa descripciones de herramientas en busca de `tool_poisoning` y permite rechazar registros sospechosos.
-- Defensa en profundidad junto a reglas y allow-lists: al ser una señal barata en CPU, se combina como capa L2 con reglas (L1) y similitud de embeddings (L3), tal como hace Guard Spec con fusión logística.
-- Despliegue en entornos con recursos limitados: al ocupar 118,5 MB en INT8 y ejecutarse en CPU, encaja en contenedores pequeños, edge o funciones serverless donde un modelo guardián basado en LLM sería inviable.
-- Monitorización y telemetría de seguridad: registrar la distribución de puntuaciones de riesgo permite detectar campañas de ataque y ajustar umbrales con datos propios.
+- Filtrado previo en pasarelas LLM: integrar el clasificador como capa L2 en Guard Spec para bloquear inyecciones antes de que alcancen el modelo generativo, con verificacion SHA-256 de los pesos en el manifiesto de la pasarela.
+- Proteccion de asistentes de atencion al cliente: clasificar cada turno entrante y descartar intentos de manipulacion del system prompt antes de reenviar la conversacion al LLM, con latencia baja por ser un encoder pequeno en INT8.
+- Moderacion de entradas en aplicaciones de chat: ejecutar el modelo en CPU con onnxruntime para marcar mensajes de riesgo en tiempo real sin necesidad de GPU.
+- Deteccion de jailbreaks en entornos multilingues en/vietnamita: usar la clasificacion binaria para bloquear prompts de role-play maliciosos en ingles y vietnamita.
+- Analisis de documentacion y contenido tecnico: aprovechar las ventanas de documentacion benigna del entrenamiento para reducir falsos positivos al clasificar RFCs, READMEs y paginas man en pipelines de ingesta.
+- Deteccion de ataques con payload dividido: clasificar fragmentos y combinaciones ("A = ..., B = ..., haz A + B") en sistemas que procesan texto por partes.
+- Despliegue en el borde o en VMs pequenas: usar la variante INT8 de 118,5 MB con `DETECTOR_LAYERS=l1,l2` en el quickstart de Guard Spec para entornos con recursos limitados.
+- Rollback controlado: cambiar `L2_MODEL=guardspec-classifier@v8e` para volver a la version anterior si v8g introduce regresiones en produccion.
 
 ## Benchmarks y rendimiento
 
-La model-index del autor declara el nombre `guardspec-classifier-v3b` con una lista de resultados vacía. No se han publicado resultados de benchmarks en la información disponible. Los únicos datos de rendimiento documentados son de validación interna: un umbral independiente de 0,1911 con una tasa de falsos positivos sobre benignos ≤ 1% en el conjunto de validación.
+El model-index oficial declara la entrada `guardspec-classifier-v8g` con `results: []`, es decir, sin resultados de benchmarks publicados. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas numericas de deteccion o falsos positivos; solo menciona cualitativamente que v8e bloqueaba un 2-3 % de prompts de role-play en ingles frescos y que v8g cumple los criterios preinscritos en cada semilla. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 0 GB; el modelo está pensado para inferencia en CPU.
-- Memoria RAM: en torno a 200-300 MB para cargar el modelo ONNX INT8 y el tokenizer, más el espacio de trabajo de ONNX Runtime.
-- GPU recomendadas: no necesarias. Cualquier GPU compatible con ONNX Runtime (por ejemplo, T4, L4, A100, H100 o RTX 4090) puede usarse, pero no aporta ventajas claras frente a CPU para este tamaño.
-- Cabe holgadamente en cualquier equipo de consumo; no requiere GPU de consumo.
-- Opciones de despliegue: ONNX Runtime (CPUExecutionProvider o proveedores CUDA/TensorRT), integración nativa en Guard Spec (imagen `guard-spec-gateway-full` o variable `L2_MODEL_DIR`), y contenedores ligeros. No se distribuye en GGUF, por lo que llama.cpp u Ollama no aplican directamente.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: minima; el modelo INT8 ocupa 118,5 MB y el FP16 235,6 MB en disco, con huella en memoria del orden de cientos de MB.
+- GPU recomendadas: cualquiera compatible con CUDAExecutionProvider de onnxruntime; no se especifican modelos concretos (A100, H100, RTX 4090) en la informacion disponible.
+- Cabe en GPU de consumo: si, cualquier GPU consumer con soporte CUDA para onnxruntime; tambien funciona en CPU sin GPU.
+- Opciones de despliegue: onnxruntime (CPUExecutionProvider o CUDAExecutionProvider), la pasarela Guard Spec con Docker Compose v2 y `scripts/quickstart.sh`, y el comando `models pull guardspec-classifier@v8g` (con `-provider cuda` para incluir el FP16).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| guardspec-classifier v3b | ~118 M | 256 tokens/ventana | en, vi | Apache-2.0 | ONNX INT8 | Clasificador de prompt injection, no generativo |
-| Modelo base: intfloat/multilingual-e5-small | ~118 M | 512 tokens | Multilingüe | MIT | safetensors, ONNX | Embeddings; no clasifica injection por sí mismo |
-| Clasificadores de injection basados en LLM (genéricos) | Miles de millones | Variable | Variable | Variable | Variable | Mayor coste y latencia; no disponibles datos concretos en esta ficha |
+No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la informacion proporcionada. Como referencia estructural, el modelo se apoya en `intfloat/multilingual-e5-small` (encoder BERT multilingue) y compite en la categoria de clasificadores de guardrail ligeros, pero no se aportan cifras de alternativas para una comparacion cuantitativa.
 
-No se dispone en la información proporcionada de resultados de benchmarks comparativos con alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y formato.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| guardspec-classifier v8g | no disponible | 256 tokens | Apache 2.0 | ONNX INT8/FP16 | Clasificador en/vi de prompt injection |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Solo cubre inglés y vietnamita; el rendimiento en otros idiomas no está garantizado.
-- No es un modelo de moderación de contenido: juzga si el texto intenta manipular un LLM, no si la petición es dañina, tóxica o ilegal.
-- Riesgo de falsos positivos y falsos negativos; el autor desaconseja usarlo como único control sin revisión humana o respaldo de políticas.
-- No detecta ataques ocultos en imágenes, audio ni adjuntos binarios.
-- El texto se trunca a 256 tokens por ventana; ataques repartidos en textos muy largos requieren segmentación y agregación por máximo.
-- La puntuación de riesgo bruta no está calibrada al umbral de bloqueo de 0,85 del gateway; para uso aislado debe aplicarse la calibración de `calibration.json` o usar `risk_threshold` (0,1911).
-- Las puntuaciones por etiqueta de ataque son orientativas; las decisiones deben basarse en la puntuación de riesgo.
-- El modelo no usa el prefijo `query: ` de e5, a diferencia de la capa L3; introducirlo alteraría las puntuaciones.
-- Aunque la licencia Apache-2.0 permite uso comercial, conviene fijar la revisión (`revision=`) al descargar para garantizar reproducibilidad.
-- Sesgos concretos no documentados en la información disponible.
+- Solo cubre ingles y vietnamita; no se garantiza deteccion en otros idiomas.
+- Contexto truncado a 256 tokens: entradas mas largas se recortan y pueden perder la parte del ataque.
+- La salida cruda no esta calibrada al umbral 0.85 de la pasarela; es necesario usar `risk_threshold` de `thresholds.json` o el escalado de Platt de `calibration.json`.
+- Riesgo de falsos positivos en prompts de rol, documentacion tecnica y frases negadas o entrecomilladas, aunque v8g incorpora datos para mitigarlo; se recomienda validacion en shadow mode antes de produccion.
+- Riesgo de falsos negativos ante ataques novedosos no representados en el entrenamiento; el autor no publica metricas de deteccion ni de falsos positivos.
+- No es un LLM: no genera texto ni razona; su unica salida es una clasificacion binaria de riesgo.
+- Licencia Apache 2.0 permite uso comercial, pero se debe fijar una revision (`revision=`) en produccion porque `main` cambia de version.
+- La version v8f esta marcada como candidata en shadow mode y no validada; no debe usarse en produccion.
+- No se detallan sesgos conocidos en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/guard-spec/guardspec-classifier
+- Hugging Face: https://huggingface.co/guard-spec/guardspec-classifier
+- Rama v8g: https://huggingface.co/guard-spec/guardspec-classifier/tree/v8g
+- Rama v8e (rollback): https://huggingface.co/guard-spec/guardspec-classifier/tree/v8e
 - Repositorio Guard Spec: https://github.com/guard-spec/guard-spec
+- Quick start de Guard Spec: https://github.com/guard-spec/guard-spec#quick-start
+- Documentacion: https://guardspec.io/docs/
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
-- Paper de referencia citado en los tags: arXiv:2402.05672 (https://arxiv.org/abs/2402.05672)
-- Dataset de referencia: https://huggingface.co/datasets/deepset/prompt-injections

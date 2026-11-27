@@ -2,104 +2,109 @@
 
 ## Resumen
 
-nano-edge-tts-standalone es un sistema de síntesis de voz (text-to-speech) en inglés desarrollado por el autor independiente drmhse, que condensa el conocido modelo Kokoro-82M en apenas 3,27 millones de parámetros aprendidos. La propuesta es radical: no reutiliza ninguna red neuronal de Kokoro, sino únicamente sus datos (el front end grafema-a-fonema misaki, el vocabulario de fonemas y las 28 voces inglesas). Todo lo demás se entrena desde cero mediante destilación de conocimiento y un decodificador a nivel de trama basado en síntesis armónica más ruido (harmonic-plus-noise) y DDSP.
+nano-edge-tts-standalone es un modelo de síntesis de voz (text-to-speech) de tan solo 3,27 millones de parámetros, destilado a partir de Kokoro-82M por el autor independiente drmhse. A diferencia de la versión v1, que conservaba el lado de texto de Kokoro (28,5M de parámetros), esta versión reemplaza tanto el codificador de texto como el decodificador, de modo que no ejecuta ninguna red de Kokoro ni requiere instalar su software auxiliar (misaki, spaCy, espeak-ng). De Kokoro solo conserva datos: el vocabulario de fonemas, los 28 vectores de voz en inglés y el front-end de texto.
 
-El modelo resuelve un problema muy concreto: desplegar TTS de calidad aceptable en entornos con recursos extremadamente limitados (CPU, dispositivos edge, sistemas embebidos) donde cargar 327 MB de pesos y ejecutar 81,8 millones de parámetros es inviable. Frente a Kokoro-82M, reduce el peso en disco de 327 MB a 13 MB y multiplica por 29 la velocidad de inferencia en un solo hilo de CPU (factor de tiempo real de 0,0048 frente a 0,1415), con un pico de memoria de 0,60 GB frente a 1,78 GB.
+El modelo resuelve el problema de desplegar TTS neuronal de calidad razonable en entornos con recursos muy limitados, como CPU de un solo hilo, dispositivos edge o navegador. Su arquitectura combina un lado de texto (1,52M) que convierte fonemas, etiquetas POS de sus palabras y la voz en features, duraciones, pitch y energía, con un mapeador (0,96M, 80 frames/s) y un renderizador (0,79M, 160 frames/s) que fijan ganancias por frecuencia sobre un tren de pulsos y ruido blanco. Dos STFT inversas generan el audio final, sin ninguna red a la tasa de muestreo de audio.
 
-La arquitectura se divide en un lado de texto (1,52M) que convierte fonemas, etiquetas gramaticales y voz en features, duraciones, tono y energía; un mapeador (0,96M) a 80 tramas/s; y un renderizador (0,79M) a 160 tramas/s que fija ganancias por frecuencia sobre un tren de pulsos y ruido blanco. Dos STFT inversas generan el audio, sin ninguna red a frecuencia de audio. El proyecto se publica con licencia Apache 2.0, paper, cadena de entrenamiento completa y código reproducible.
+Es relevante porque demuestra que la destilación de conocimiento puede comprimir un TTS de 81,8M de parámetros a 3,27M (25 veces menos) manteniendo una calidad competitiva en el Open TTS Leaderboard (0,69 % de word error y 4,465 de UTMOS), con un factor de tiempo real de 0,0050 en PyTorch y 0,0045 en ONNX Runtime sobre un hilo de CPU, es decir, entre 28 y 31 veces más rápido que Kokoro.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline neuronal en cascada: lado de texto + mapeador a 80 tramas/s + renderizador harmonic-plus-noise/DDSP a 160 tramas/s, con dos STFT inversas |
-| Parametros totales | 3,27M aprendidos (1,52M lado de texto, 0,96M mapeador, 0,79M renderizador) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (voces americanas af_*/am_* y britanicas bf_*/bm_*) |
+| Arquitectura | TTS híbrido: lado de texto (transformer ligero) + mapeador + renderizador harmonic-plus-noise con DDSP y dos STFT inversas |
+| Parametros totales | 3,27M (lado de texto 1,52M, mapeador 0,96M, renderizador 0,79M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos de 13 MB en disco, sin detalle de cuantizacion) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (nano-tts.safetensors, 13 MB; variante nano-tts-g2.safetensors) |
+| Formato de pesos | safetensors/PyTorch y grafos ONNX (repo con pytorch y onnx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una destilación de Kokoro-82M sin ejecutar ninguna de sus redes. Conserva solo datos: el front end misaki (grafema a fonema), el vocabulario de fonemas y las 28 voces inglesas. El lado de texto (1,52M parámetros) recibe fonemas, las etiquetas de parte de la oración que misaki ya calcula, y el vector de voz, y produce features, duraciones, tono y energía. Un mapeador de 0,96M parámetros opera a 80 tramas por segundo y un renderizador de 0,79M a 160 tramas por segundo fija ganancias por frecuencia sobre un tren de pulsos y ruido blanco; dos STFT inversas sintetizan el audio final. Ninguna red se ejecuta a frecuencia de audio, lo que explica el bajo coste computacional.
+El modelo es el resultado de una cadena de destilación de conocimiento desde Kokoro-82M. La arquitectura se divide en tres componentes aprendidos: un lado de texto de 1,52M de parámetros que recibe fonemas, etiquetas de parte de la oración de las palabras y el vector de voz, y produce features, duraciones, pitch y energía; un mapeador de 0,96M que opera a 80 frames por segundo; y un renderizador de 0,79M que opera a 160 frames por segundo. El renderizador fija ganancias por frecuencia sobre un tren de pulsos y sobre ruido blanco (enfoque harmonic-plus-noise con DDSP), y el audio final se obtiene con dos STFT inversas. Ninguna red se ejecuta a la tasa de muestreo de audio, lo que explica el bajo coste computacional.
 
-El entrenamiento emplea destilación de conocimiento desde Kokoro-82M y se documenta de forma reproducible: el repositorio incluye la cadena completa de checkpoints con sus argumentos y logs (`chain/`), el código exacto y un script que va desde libros públicos hasta los pesos finales (`code/`), además del paper. Existe una variante de decodificador (`nano-tts-g2.safetensors`) con el renderizador F4 afinado sobre las features propias de este lado de texto con un crítico de 4–12 kHz, más cercana a Kokoro en las métricas objetivas aunque aún no evaluada por escucha.
+El entrenamiento parte de datos de Kokoro (vocabulario de fonemas, 28 vectores de voz ingleses y front-end de texto) pero todos los pesos son nuevos. La model card documenta la cadena completa de checkpoints con argumentos y logs en el directorio `chain/`, el código exacto en `code/` y un script reproducible desde libros públicos hasta los pesos finales. La versión 2.2 (la actual) afina el decodificador con su post-filtro activado durante el entrenamiento (checkpoint `G5S`), lo que corrige el realce artificial de la banda de 4–8 kHz presente en 2.1 (que estaba entre +2,1 y +5,0 dB por encima de Kokoro) y reduce el grano de 160 Hz aproximadamente a la mitad. La versión 2.1 había afinado el lado de texto (`FT4_map`) para recuperar palabras como "boy" y "noise" que se perdían en 2.0. No se especifica en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Síntesis de voz en inglés a 24 kHz en formato float32.
-- 28 voces preentrenadas de Kokoro: americanas (af_*, am_*) y británicas (bf_*, bm_*).
-- Conversión grafema-a-fonema mediante misaki, con etiquetado gramatical de spaCy.
-- Modelado de duración, tono y energía por fonema.
-- Generación de audio en CPU, MPS (Apple Silicon) o CUDA.
-- Inferencia extremadamente ligera: 13 MB de pesos y 0,60 GB de pico de memoria en todo el pipeline con front end.
-- No soporta tool calling, agentes, visión, audio de entrada ni modo thinking; es exclusivamente TTS.
+- Síntesis de voz en inglés a partir de texto, con 28 voces predefinidas (af_heart, af_bella, am_michael, am_fenrir, entre otras).
+- Conversión de texto a fonemas mediante front-end empaquetado, sin dependencias de misaki, spaCy ni espeak-ng.
+- Control de duración, pitch y energía por fonema a través del lado de texto.
+- Generación de audio de alta fidelidad relativa mediante renderizado harmonic-plus-noise con DDSP.
+- Inferencia en CPU de un solo hilo con factor de tiempo real de 0,0050 (PyTorch) y 0,0045 (ONNX Runtime).
+- Síntesis por lotes (batched synthesis) y wrapper de `transformers`.
+- Exportación a ONNX para despliegue en entornos sin PyTorch.
+- Reproducibilidad completa: cadena de entrenamiento, código y script de reconstrucción publicados.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-step; es exclusivamente un modelo TTS.
+- No soporta visión, audio de entrada ni otros idiomas distintos del inglés.
 
 ## Casos de uso
 
-- Síntesis de voz en dispositivos edge y embebidos: con 13 MB de pesos y 0,60 GB de pico de memoria, cabe en placas de recursos limitados y en navegadores o apps móviles donde Kokoro-82M no es viable.
-- Lectura por voz de artículos y documentos en aplicaciones de accesibilidad: el factor de tiempo real de 0,0048 en un hilo de CPU permite generar audio más rápido de lo que se reproduce, sin GPU.
-- Asistentes de voz locales y offline: al no requerir conexión ni servidor de inferencia, se integra en asistentes de escritorio o domésticos que priorizan privacidad.
-- Generación de audiolibros y pódcast a escala: el bajo coste por segundo de audio y la variedad de 28 voces permiten procesar grandes volúmenes de texto en pipelines por lotes.
-- Prototipado rápido de interfaces de voz: la API de una sola función (`tts(texto, voice='bm_george')`) y el script de línea de comandos facilitan integrar TTS en demos y pruebas de concepto.
-- Sistemas de alertas y notificaciones habladas: la latencia mínima y el reducido consumo de memoria lo hacen adecuado para mensajes cortos generados en tiempo real en entornos con CPU compartida.
-- Investigación en destilación y decodificación neuronal de audio: la cadena de entrenamiento reproducible y el paper permiten reutilizar el método para otros modelos TTS.
+- Lectura de artículos y documentos en aplicaciones móviles: el modelo cabe en 13 MB de pesos y consume 0,60 GB de memoria pico con ONNX Runtime, por lo que puede ejecutarse en el propio dispositivo sin conexión, leyendo texto en inglés con una de las 28 voces.
+- Asistentes de voz embebidos en dispositivos IoT o edge: con un factor de tiempo real de 0,0045 en un hilo de CPU, puede sintetizar respuestas de voz en tiempo real en hardware de bajas prestaciones donde Kokoro-82M no cabría.
+- Accesibilidad para personas con discapacidad visual: integración en lectores de pantalla que necesiten síntesis local, rápida y con bajo consumo de memoria, sin depender de servicios en la nube.
+- Generación de audiolibros y pódcast automatizados: la calidad medida en el Open TTS Leaderboard (0,69 % de word error, UTMOS 4,465) y la capacidad de síntesis por lotes permiten procesar textos largos por fragmentos con voces consistentes.
+- Sistemas de navegación y avisos por voz en vehículos: la latencia baja y la ausencia de dependencias externas facilitan el despliegue en unidades de infoentretenimiento con CPU limitada.
+- Pruebas de integración continua (CI) para pipelines de audio: al ser reproducible y ligero, puede usarse como generador de voz de referencia en tests automatizados de sistemas de reconocimiento de voz o de procesamiento de audio.
+- Demos educativas y de investigación sobre destilación de modelos: la cadena de entrenamiento publicada permite estudiar cómo se comprime un TTS de 81,8M a 3,27M parámetros con pérdida mínima de calidad.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor comparan directamente con Kokoro-82M:
+| Metrica | Kokoro-82M | nano-edge-tts v2.0 | nano-edge-tts v2.2 (este) |
+|---|---|---|---|
+| Parametros aprendidos | 81,8M | 3,27M | 3,27M |
+| Pesos en disco | 327 MB | 13 MB | 13 MB |
+| Factor de tiempo real, un hilo CPU (PyTorch) | 0,1415 | 0,0048 (29× más rápido) | 0,0050 (28× más rápido) |
+| Factor de tiempo real, un hilo CPU (ONNX Runtime) | no disponible | no disponible | 0,0045 (31× más rápido) |
+| Memoria pico con front-end (PyTorch) | 1,78 GB | 0,60 GB | 0,71 GB |
+| Memoria pico con front-end (ONNX Runtime) | no disponible | no disponible | 0,60 GB |
+| Errores de palabra con Whisper small.en (60 frases no vistas) | 36 | 39 | 35 |
+| Palabras objetivo difíciles pronunciadas (dos reconocedores, 27 voces) | 81,8 % | 59,3 % | 78,9 % |
+| Open TTS Leaderboard inglés, word error / UTMOS | 0,66 % / 4,51 | 0,77 % / 4,441 | 0,69 % / 4,465 |
 
-| Metrica | Kokoro-82M | nano-edge-tts-standalone |
-|---|---:|---:|
-| Parametros aprendidos | 81,8M | 3,27M |
-| Pesos en disco | 327 MB | 13 MB |
-| Factor de tiempo real (1 hilo CPU, texto a audio) | 0,1415 | 0,0048 (29× mas rapido) |
-| Pico de memoria del pipeline con front end | 1,78 GB | 0,60 GB |
-| Errores de palabra con Whisper small.en (60 frases no vistas) | 36 | 41 (40 en una repeticion con nueva semilla de ruido) |
-| A/B ciego contra Kokoro-82M (24 ensayos, 1 oyente) | preferido 7 | preferido 2, igual 15 |
-
-Las mediciones de tiempo se realizaron con seis frases (44 s de audio), mejor de tres ejecuciones, PyTorch sobre CPU de portátil Apple Silicon. Las frases de prueba provienen de tres libros no usados en entrenamiento. El A/B ciego lo realizó un único oyente (el autor) con 20 clips expresivos y 4 repeticiones ocultas. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) por tratarse de un modelo TTS.
+Los datos de Kokoro en el leaderboard se publicaron en la versión 1.7.0 con otro hardware; los de este modelo se ejecutaron localmente en un hilo de CPU. Las cifras de palabras difíciles corresponden a 4.806 objetivos (34 palabras con sonidos raros o confundibles, solas, en mitad de frase y a final de frase, más 20 preguntas cortas), contando una palabra como pronunciada solo si faster-whisper small.en y wav2vec2-large-960h la detectan.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; el pipeline completo con front end consume 0,60 GB de memoria pico en CPU.
-- GPU recomendadas: no necesarias. Funciona en CPU, MPS (Apple Silicon) y CUDA (`load(device='mps')` o `load(device='cuda')`).
-- Cabe en cualquier GPU consumer e incluso en CPU de portátil; el factor de tiempo real de 0,0048 en un solo hilo deja margen amplio para tiempo real.
-- Despliegue: PyTorch con el script incluido `nano_tts.py`; requiere `kokoro==0.9.4` solo por su front end (`KPipeline(model=False)`), además de `safetensors` y `soundfile`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS).
-- Latencia y throughput: 29× más rápido que Kokoro-82M en un hilo de CPU según las mediciones del autor; no se publican cifras absolutas de latencia por frase.
+- VRAM estimada para inferencia: no requiere GPU; el modelo está diseñado para CPU. Memoria pico de 0,71 GB en PyTorch y 0,60 GB en ONNX Runtime con el front-end incluido.
+- GPU recomendadas: no disponibles ni necesarias; el modelo no está pensado para aceleración GPU y la información no documenta rendimiento en GPU.
+- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, etc.) por su tamaño ínfimo, pero no se han publicado cifras de latencia en GPU.
+- Opciones de despliegue: PyTorch nativo, ONNX Runtime, wrapper de `transformers`; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
+- Latencia y throughput: factor de tiempo real de 0,0050 en PyTorch y 0,0045 en ONNX Runtime sobre un hilo de CPU (Apple Silicon), medido sobre seis frases de muestra (unos 45 s de audio), mejor de tres ejecuciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Pesos | RTF (1 hilo CPU) | Memoria pico | Licencia | Idiomas |
-|---|---:|---:|---:|---:|---|---|
-| nano-edge-tts-standalone | 3,27M | 13 MB | 0,0048 | 0,60 GB | Apache 2.0 | en |
-| Kokoro-82M | 81,8M | 327 MB | 0,1415 | 1,78 GB | Apache 2.0 | en (y otros segun variante) |
-| nano-edge-tts | 30,2M | no disponible | no disponible | no disponible | no disponible | en |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| nano-edge-tts-standalone (este) | 3,27M | no disponible | Apache 2.0 | Hugging Face | Destilado de Kokoro, solo inglés, 28 voces, sin dependencias externas |
+| Kokoro-82M | 81,8M | no disponible | Apache 2.0 | Hugging Face | Modelo base; requiere misaki, spaCy y espeak-ng; 25× más parámetros |
+| nano-edge-tts v1 | 30,2M | no disponible | Apache 2.0 | Hugging Face | Versión previa; conserva el lado de texto de Kokoro (28,5M) |
+| Otros TTS ligeros (p. ej. Piper, VITS pequeños) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
-La comparación principal es con Kokoro-82M, del que deriva: este modelo es 25× más pequeño en parámetros, 25× más ligero en disco y 29× más rápido en CPU, a costa de un ligero empeoramiento en inteligibilidad (41 frente a 36 errores de palabra con Whisper small.en) y de una preferencia subjetiva inferior en el A/B ciego (2 frente a 7 victorias, con 15 empates de 24). nano-edge-tts es el predecesor directo, que conservaba el lado de texto de Kokoro (28,5M) y solo sustituía el decodificador. No se dispone de datos de otros modelos TTS comparables en la información proporcionada.
+La comparación se limita a la familia nano-edge-tts y su modelo base Kokoro-82M, ya que la información disponible no incluye datos de otros modelos TTS comparables en parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: las 28 voces son americanas y británicas; no hay soporte multilingüe.
-- Calidad inferior a Kokoro-82M en las métricas objetivas: 41 errores de palabra frente a 36 con Whisper small.en en 60 frases no vistas.
-- La evaluación subjetiva es muy limitada: un único oyente (el autor), 24 ensayos, con 15 empates; no constituye una validación perceptual robusta.
-- Riesgo de alucinación y errores de pronunciación inherente a los sistemas TTS, especialmente en nombres propios, siglas y texto fuera de distribución; el front end misaki puede fallar en grafías ambiguas.
-- Dependencia del front end de Kokoro (`kokoro==0.9.4` y spaCy) para el etiquetado gramatical, lo que añade peso y dependencias al despliegue aunque no se descarguen pesos de Kokoro.
-- La variante `nano-tts-g2.safetensors` no ha sido evaluada por escucha; sus ventajas son solo objetivas.
-- Licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las licencias de las dependencias (misaki, spaCy, kokoro) y de las voces utilizadas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria independiente.
-- No se documentan límites de longitud de texto por inferencia; el contexto no está definido.
+- Solo soporta inglés; no hay soporte multilingüe documentado.
+- El modelo es exclusivamente TTS: no genera texto, no razona, no hace tool calling ni soporta agentes.
+- Riesgo de errores de pronunciación en palabras con sonidos raros o confundibles: la tasa de acierto en palabras difíciles es del 78,9 %, inferior al 81,8 % de Kokoro-82M.
+- El word error en el Open TTS Leaderboard (0,69 %) es ligeramente superior al de Kokoro (0,66 %), aunque la diferencia es pequeña.
+- La calidad de voz depende de las 28 voces predefinidas; no se documenta clonación de voz ni voces personalizadas.
+- No se han publicado datos sobre sesgos demográficos o acentos más allá de las voces incluidas.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo deriva de Kokoro-82M (también Apache 2.0), por lo que conviene verificar el cumplimiento de ambas licencias en producción.
+- Las cifras de rendimiento se midieron en un portátil con CPU Apple Silicon; el rendimiento en otros hardware puede variar.
+- La información no detalla el proceso de cuantización ni los formatos exactos de los pesos más allá de PyTorch y ONNX.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/drmhse/nano-edge-tts-standalone
+- Modelo en Hugging Face: https://huggingface.co/drmhse/nano-edge-tts-standalone
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
-- Predecesor nano-edge-tts: https://huggingface.co/drmhse/nano-edge-tts
-- Front end misaki: https://github.com/hexgrad/misaki
-- Paper (PDF): https://huggingface.co/drmhse/nano-edge-tts-standalone/blob/main/paper/paper.pdf
-- Muestras de audio: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/main/samples
-- Resultados: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/main/results
-- Cadena de entrenamiento: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/main/chain
-- Código: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/main/code
+- Versión previa nano-edge-tts v1: https://huggingface.co/drmhse/nano-edge-tts
+- Paper: https://huggingface.co/drmhse/nano-edge-tts-standalone/blob/main/paper/paper.pdf
+- Open TTS Leaderboard: https://huggingface.co/spaces/hf-audio/open_tts_leaderboard
+- Tag v2.1: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/v2.1
+- Tag v2.1-g2: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/v2.1-g2
+- Tag v2.0: https://huggingface.co/drmhse/nano-edge-tts-standalone/tree/v2.0
+- Muestras de audio: https://huggingface.co/drmhse/nano-edge-tts-standalone/resolve/main/samples/af_heart_kokoro.wav (y equivalentes para af_bella, am_michael, am_fenrir)

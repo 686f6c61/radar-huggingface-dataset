@@ -2,93 +2,91 @@
 
 ## Resumen
 
-Janus-35B-HERETIC es un modelo de lenguaje de tipo mixtura de expertos (MoE) con aproximadamente 34.700 millones de parámetros totales y unos 3.000 millones activos por token, derivado de Qwen 3.6 35B-A3B. Lo publica el usuario FoolDev en Hugging Face como un reempaquetado del modelo abliterado y sin censura de llmfan46 (`llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`), que a su vez parte del base multimodal de Qwen. El repositorio distribuye únicamente pesos en formato GGUF, concretamente el Q4_K_M original del autor upstream, sin reentrenamiento ni recuantización por parte de FoolDev.
+Janus-35B-HERETIC es un modelo de lenguaje multimodal de tipo mixture-of-experts (MoE) derivado de la familia Qwen 3.6, concretamente de la variante 35B-A3B (unos 34.700 millones de parámetros totales con aproximadamente 3.000 millones activos por token). Lo publica el usuario FoolDev en Hugging Face y parte del modelo `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`, que a su vez es una "abliteración" (eliminación de comportamientos de rechazo) del Qwen 3.6 35B-A3B original. El resultado es un modelo orientado a razonamiento, conversación, agentes y uso multimodal (entrada de imagen y texto), distribuido en formato GGUF y empaquetado para su uso directo con Ollama.
 
-El modelo se presenta como una variante orientada a razonamiento, conversación, uso de herramientas y agentes, con la capa de rechazo atenuada mediante técnicas de abliteration. Su interés práctico reside en la combinación de una ventana de contexto nativa muy amplia (262.144 tokens, extensible a 1.010.000 con YaRN) con un coste de inferencia reducido gracias a los aproximadamente 3.000 millones de parámetros activos, lo que permite desplegarlo en hardware de gama alta de consumo con cuantizaciones de 4 bits.
+La propuesta de valor es doble: por un lado, la eficiencia de un MoE con solo ~3B de parámetros activos, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamaño; por otro lado, una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.010.000 con YaRN. El modelo se distribuye bajo licencia Apache 2.0 y cubre 22 idiomas, incluido el español.
 
-La model card es explícita sobre la procedencia: el campo `Teacher: Claude Fable 5` y la lista de conjuntos de datos del frontmatter provienen de revisiones anteriores y no están verificados por el autor actual del repositorio. Un dataset listado (`Crownelius/Opus-4.7-Reasoning`) no es accesible públicamente. Conviene tratar esa atribución como no confirmada y evaluar el modelo por su comportamiento empírico, no por su supuesta receta de destilación.
+Es relevante ahora porque combina tres tendencias del ecosistema abierto: arquitecturas MoE eficientes, modelos "sin censura" (uncensored/heretic) para investigación sobre alineamiento y rechazo, y distribución en GGUF lista para Ollama. Conviene advertir, no obstante, que el propio autor reconoce que el repositorio es un reempaquetado de una cuantización ajena (Q4_K_M de llmfan46) sin entrenamiento ni cuantización propios, y que la atribución de datasets y "teacher" del modelo base no está verificada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture of experts), base Qwen 3.6 35B-A3B |
-| Parametros totales | 34.660.610.688 (~34,7B) |
+| Arquitectura | Transformer MoE (mixture-of-experts), base Qwen 3.6 35B-A3B |
+| Parametros totales | ~34.660.610.688 (34,7B) |
 | Parametros activos | ~3B por token |
-| Longitud de contexto | 262.144 nativo; 1.010.000 extensible con YaRN (no integrado) |
-| Tipos de cuantizacion | GGUF Q4_K_M (21,23 GB) como opción publicada; otras cuantizaciones no disponibles en el repo |
+| Longitud de contexto | 262.144 tokens nativos; hasta 1.010.000 con YaRN (no incluido por defecto) |
+| Tipos de cuantizacion | GGUF Q4_K_M (distribución principal); otras cuantizaciones no disponibles en la información |
 | Idiomas soportados | en, zh, ru, es, fr, it, ja, ko, de, ar, tr, pl, sv, nl, he, id, uk, fa, pt, ms, fi, el (22 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (librería `gguf`); safetensors no disponible en este repo |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con capas de mixtura de expertos: 34,7B parámetros totales con aproximadamente 3B activos por token, lo que reduce el coste computacional de la inferencia respecto a un modelo denso del mismo tamaño. El modelo base es Qwen 3.6 35B-A3B, descrito como multimodal en la model card, y sobre él se aplicó una abliteration de estilo Heretic que atenúa el comportamiento de rechazo entrenado en las capas base.
+El modelo es un transformer con arquitectura de mezcla de expertos (MoE): de los ~34,7B parámetros totales, solo ~3B se activan por token, lo que permite un throughput alto con un coste de memoria de pesos completo. Hereda la base multimodal Qwen 3.6 35B-A3B, por lo que el pipeline declarado es `image-text-to-text` e incluye un proyector de visión (vision projector) que el autor empaqueta para Ollama.
 
-El repositorio de FoolDev no entrena ni cuantiza: redistribuye byte a byte el Q4_K_M de llmfan46 junto con un envoltorio de Ollama (archivos `template`, `system` y `params` en la raíz, además de un `Modelfile`). La model card menciona un proceso de destilación con datos de razonamiento de "Claude Fable 5" y seis conjuntos de datos (Creative_Writing_ShareGPT_Enhanced, rStar-Coder, dataclaw-peteromallet, Opus-4.7-Reasoning, UltraData-Math y Crow-Heretic-TeichAI-Unified), pero el propio autor advierte que esa información procede de revisiones anteriores de la ficha, que el base actual no la reclama y que nada en el repositorio la reproduce o mide. No se dispone de número de tokens de entrenamiento, composición del dataset ni detalles de RLHF/DPO verificables.
+Sobre el entrenamiento hay que ser explícito: el repositorio **no entrena ni cuantiza**. Lo que se publica es el Q4_K_M de `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`, byte a byte, con un envoltorio de Ollama propio (ficheros `template`, `system`, `params` y `Modelfile`). La model card lista datasets (`Crownelius/Creative_Writing_ShareGPT_Enhanced`, `microsoft/rStar-Coder`, `peteromallet/dataclaw-peteromallet`, `Crownelius/Opus-4.7-Reasoning`, `openbmb/UltraData-Math`, `Crownelius/Crow-Heretic-TeichAI-Unified`) y un "teacher" (Claude Fable 5), pero el propio autor aclara que son atribuciones heredadas de revisiones anteriores de la card, que el base actual no las reclama y que al menos `Crownelius/Opus-4.7-Reasoning` no es accesible públicamente (HTTP 401). Deben tratarse como atribución no verificada, no como registro de entrenamiento. La "abliteración" del modelo base es la innovación técnica relevante: se eliminan direcciones de activación asociadas al rechazo, lo que reduce la negativa a responder pero también los mecanismos de seguridad alineados.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con ventana de contexto nativa de 262.144 tokens.
-- Razonamiento explícito: el modelo declara capacidad de "thinking" en Ollama (`ollama show` lista `thinking` entre sus capacidades).
-- Generación de código, con soporte declarado para tool calling / function calling mediante plantilla específica incluida en el repo.
-- Uso en agentes y razonamiento multi-paso, según los tags `agent` y `reasoning` del repositorio.
-- Capacidades multimodales heredadas del base Qwen 3.6 35B-A3B (declaradas en los tags; no verificadas en los pesos GGUF publicados).
-- Soporte multilingüe amplio: 22 idiomas, incluidos español, inglés, chino, ruso, francés, alemán, árabe, japonés, coreano, portugués e hindi, entre otros.
-- Modo sin censura: la abliteration reduce los rechazos del modelo base, orientándolo a contenido creativo y conversacional sin filtros heredados.
+- Generación de texto conversacional multi-turno con contexto largo (262K nativos).
+- Razonamiento explícito: el modelo expone una capacidad `thinking` en Ollama.
+- Capacidades multimodales: entrada de imagen y texto (pipeline `image-text-to-text`) mediante proyector de visión.
+- Tool calling / function calling: la plantilla de herramientas está incluida y la capacidad `tools` aparece registrada en Ollama.
+- Uso como agente: soporta razonamiento multi-paso y encadenamiento de herramientas.
+- Capacidades de código y matemáticas (heredadas de la base Qwen 3.6 y de los datasets de destilación atribuidos, no verificados).
+- Multilingüe en 22 idiomas, incluido español.
+- Modo "uncensored": comportamiento de rechazo reducido por diseño (abliteración).
 
 ## Casos de uso
 
-- Atención al cliente automatizada: la ventana de 262.144 tokens permite mantener conversaciones muy largas y adjuntar historiales completos o documentación de producto sin truncar, con un coste de inferencia bajo gracias a los ~3B parámetros activos.
-- Generación de código en producción: el soporte de tool calling y la plantilla incluida permiten integrarlo en pipelines de CI/CD o asistentes de IDE que invocan funciones externas (ejecutar tests, consultar APIs) mediante llamadas estructuradas.
-- Agentes autónomos multi-paso: los tags `agent` y `reasoning` y el modo thinking lo hacen adecuado para bucles de planificación y ejecución de herramientas donde se requiere descomponer tareas y mantener estado durante muchas iteraciones.
-- Procesamiento de documentos largos: resumen, extracción de entidades y question answering sobre contratos, informes o bases de código que superan los 100.000 tokens, aprovechando el contexto nativo sin necesidad de recuperación externa.
-- Escritura creativa sin restricciones: el ajuste abliterado y el dataset Creative_Writing_ShareGPT_Enhanced lo orientan a narrativa, guiones y contenido editorial donde los filtros de rechazo del base resultan un obstáculo.
-- Asistencia matemática y razonamiento técnico: el dataset UltraData-Math y el modo thinking permiten usarlo para resolución de problemas paso a paso, verificación de cálculos y tutoría técnica.
-- Despliegue local en estaciones de trabajo: al caber en ~23-25 GiB de VRAM con Q4_K_M y contexto completo, sirve para prototipado y uso personal en una GPU de 24-32 GB sin depender de APIs en la nube.
-- Traducción y atención multilingüe: con 22 idiomas declarados, puede cubrir soporte en español, inglés, chino, árabe o portugués desde un único modelo.
+- **Atención al cliente automatizada:** conversaciones multi-turno con historial largo gracias a los 262K tokens de contexto, sin truncar el hilo en sesiones extensas.
+- **Agentes con herramientas en producción:** integración de function calling en pipelines de automatización (consultas a APIs, ejecución de acciones) aprovechando la capacidad `tools` y el bajo coste por token del MoE.
+- **Análisis de documentos largos:** resumen y extracción de información sobre contratos, informes o bases de conocimiento de cientos de miles de tokens, con contexto extendido vía YaRN si se acepta la degradación asociada.
+- **Procesamiento de imágenes con texto (OCR semántico, descripción, VQA):** uso del proyector de visión para tareas image-text-to-text en local.
+- **Asistencia a la programación:** generación y revisión de código, con soporte de tool calling para integrarse en flujos de CI/CD o asistentes de IDE.
+- **Investigación sobre alineamiento y rechazo:** el carácter "heretic/uncensored" lo hace útil para estudiar cómo la abliteración afecta a la negativa, la utilidad y los sesgos, en un entorno controlado.
+- **Despliegue local en hardware de gama alta de consumo:** al ser GGUF Q4_K_M, puede ejecutarse con Ollama en estaciones con suficiente VRAM/RAM (ver requisitos).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas comparativas, y el autor advierte que no se han medido las afirmaciones sobre datos de entrenamiento o destilación.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas comparativas, y el autor no aporta mediciones de calidad propias.
 
 ## Requisitos de hardware
 
-- VRAM estimada con Q4_K_M y contexto nativo completo (262.144 tokens): ~25,4 GiB con caché KV en f16 por defecto de Ollama; ~23,0 GiB con `OLLAMA_KV_CACHE_TYPE=q8_0`.
-- Con contexto reducido a 65.536 tokens: ~21,6 GiB medidos sobre este mismo blob el 2026-09-18.
-- GPU recomendadas: tarjetas con 24 GB o más, como RTX 3090, RTX 4090, RTX 5090, A100 40/80 GB, H100 o L40S. Para contexto completo conviene 32 GB o más.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con contexto recortado o caché KV cuantizada; en 32 GB (RTX 5090) con más holgura.
-- Opciones de despliegue: Ollama (soporte nativo vía `ollama run hf.co/FoolDev/Janus-35B-HERETIC` o build local con `Modelfile`), llama.cpp por ser GGUF, y servidores compatibles con endpoints de Hugging Face. vLLM y TGI no están confirmados para este blob GGUF concreto.
-- Para reducir la caché KV a la mitad, arrancar el servidor Ollama con `OLLAMA_KV_CACHE_TYPE=q8_0 OLLAMA_FLASH_ATTENTION=1 ollama serve`.
-- Latencia y throughput: no disponibles. Al activar solo ~3B parámetros por token, el throughput debería ser sustancialmente mayor que el de un modelo denso de 35B, pero no se han publicado cifras medidas.
+- **VRAM/RAM estimada:** con el contexto nativo completo de 262.144 tokens, ~25,4 GiB con caché KV f16 por defecto y ~23,0 GiB con `OLLAMA_KV_CACHE_TYPE=q8_0`. Con `num_ctx=65536`, ~21,6 GiB medidos. Añadir ~1,1 GiB en el peor caso si se usa el proyector de visión del one-liner de Hugging Face.
+- **Cuantización:** Q4_K_M como distribución principal; el tamaño del repo es de 162,3 GB (incluye todas las revisiones y blobs en historial de git).
+- **GPU recomendadas:** no especificadas en la información. Por el volumen de pesos en Q4_K_M y el contexto, se requiere hardware de gama alta; GPUs de 24 GB o más (RTX 4090, A100, H100) son el rango razonable, aunque el dato exacto no está confirmado por el autor.
+- **¿Cabe en consumer GPU?** No confirmado. El KV cache a contexto completo (~23-25 GiB) ya supera los 24 GB de una RTX 4090 en solitario; reducir `num_ctx` es obligatorio en ese caso.
+- **Despliegue:** Ollama (soporte oficial vía `ollama run hf.co/FoolDev/Janus-35B-HERETIC` o build local con `Modelfile`), llama.cpp (base de Ollama). vLLM y TGI no están confirmados para este GGUF.
+- **Latencia y throughput:** no disponibles. El ratio de ~3B parámetros activos sugiere un throughput alto por token, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| Janus-35B-HERETIC | ~34,7B | ~3B | 262.144 (1,01M con YaRN) | Apache 2.0 | GGUF Q4_K_M | Abliterado, sin benchmarks publicados |
-| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic | ~34,7B | ~3B | no disponible en la información | Apache 2.0 (según base) | safetensors y GGUF | Modelo base directo de este repo; sin reempaquetar |
-| Qwen/Qwen3.6-35B-A3B | ~34,7B | ~3B | 262.144 nativo | Apache 2.0 | safetensors | Base original con alineamiento y filtros de rechazo |
-| FoolDev/Thanatos-27B-HERETIC | ~27B (denso, según nombre) | no disponible | no disponible | no disponible | GGUF | Modelo hermano del mismo autor, citado en la model card |
+| Janus-35B-HERETIC | ~34,7B | ~3B | 262K (1M YaRN) | Apache 2.0 | GGUF | Abliterado, multimodal, uncensored |
+| Qwen 3.6 35B-A3B (base) | ~34,7B | ~3B | 262K | Apache 2.0 | safetensors/GGUF | Modelo original alineado |
+| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic | ~34,7B | ~3B | 262K | Apache 2.0 | GGUF | Base directa de este repo |
 
-La comparación con alternativas densas de tamaño similar (por ejemplo, modelos de 27-32B) no está disponible con datos verificables en la información proporcionada. La ventaja diferencial de Janus-35B frente a su base es el empaquetado para Ollama con plantilla de tool calling y la atenuación de rechazos; frente al Qwen original, la ausencia de alineamiento de seguridad.
+No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Atribución de entrenamiento no verificada: los datasets y el "teacher" Claude Fable 5 que figuran en la ficha provienen de revisiones anteriores y el autor actual no los respalda; uno de los datasets (`Crownelius/Opus-4.7-Reasoning`) devuelve 401 en el Hub.
-- Modelo sin censura: la abliteration elimina parte de los rechazos del base, por lo que puede generar contenido dañino, sesgado o inapropiado sin las salvaguardas del Qwen original. No es apto para aplicaciones orientadas al público sin capas de moderación adicionales.
-- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni benchmarks; al ser un modelo destilado y abliterado, la fiabilidad factual debe validarse en el dominio de uso.
-- Contexto extendido degradado: el contexto más allá de ~262.000 tokens requiere YaRN, que no está integrado en los pesos; sin configuración adicional, el rendimiento decae.
-- Idiomas: aunque se declaran 22 idiomas, no hay métricas por idioma; la calidad en lenguas de bajos recursos (finés, griego, malayo, persa) puede ser inferior a la del inglés o el chino.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías y la licencia del base Qwen debe respetarse en la cadena de derivación.
-- Estabilidad del repositorio: el modelo base cambió tres veces el 2026-09-18 (ida y vuelta entre este MoE y un denso Qwen 3.8 27B); si se descargó ese día, conviene volver a hacer `ollama pull` para asegurar la coincidencia con la ficha actual.
-- Sin soporte oficial: es un fork personal con 362 descargas y 3 likes en el momento de la consulta; no hay garantías de mantenimiento ni de soporte.
+- **Atribución no verificada:** los datasets y el "teacher" listados no están confirmados por el modelo base; uno de los datasets no es accesible públicamente. No deben citarse como registro de entrenamiento.
+- **Sin entrenamiento ni cuantización propios:** el repo reempaqueta el Q4_K_M de llmfan46; la calidad depende enteramente de ese artefacto.
+- **Riesgo de alucinación:** inherente a los modelos de lenguaje; sin benchmarks publicados no hay evidencia de mitigación.
+- **Sesgos:** la abliteración elimina mecanismos de rechazo, lo que puede aumentar la probabilidad de contenido sesgado, ofensivo o inseguro. No es adecuado para aplicaciones orientadas al público sin filtros adicionales.
+- **Seguridad:** el carácter "uncensored/heretic" implica que las salvaguardas alineadas están reducidas; requiere supervisión y capas de moderación en producción.
+- **Contexto extendido:** más allá de ~262K tokens el rendimiento degrada porque YaRN no está incluido por defecto.
+- **Licencia:** Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad sobre el contenido generado y sobre el cumplimiento normativo (por ejemplo, en la UE).
+- **Compatibilidad Ollama:** el proyector de visión solo está probado en versiones concretas (0.32.15, 0.33.3, 0.40.6, 0.40.17); en versiones antiguas puede fallar incluso en texto.
+- **Inestabilidad del repo:** el modelo base cambió tres veces el 2026-09-18; conviene verificar la revisión descargada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FoolDev/Janus-35B-HERETIC
-- Modelo base (llmfan46): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
-- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Modelo hermano Thanatos-27B-HERETIC: https://huggingface.co/FoolDev/Thanatos-27B-HERETIC
+- Hugging Face: https://huggingface.co/FoolDev/Janus-35B-HERETIC
+- Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
+- Modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Modelo hermano: https://huggingface.co/FoolDev/Thanatos-27B-HERETIC
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
-- Banner del repositorio: https://huggingface.co/FoolDev/Janus-35B-HERETIC/resolve/main/banner.svg

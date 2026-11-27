@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Haas-ja-v1.0: 6.12% CER Japanese ASR Model [2026]",
-      "url": "https://tech-insider.org/haas-ja-v1-0-japanese-asr-6-12-percent-cer-open-model-2026/",
-      "snippet": "Haas-ja-v1.0, an open Japanese speech-recognition model from Third Intelligence, reports a 6.12% strict CER under Apache 2.0. What is confirmed."
-    },
-    {
-      "title": "Haas-ja-v1.0: 6.12% CER Japanese Speech Model [2026]",
-      "url": "https://shattered.io/haas-ja-v1-0-japanese-speech-recognition-6-12-percent-cer-open-model-2026/",
-      "snippet": "Third Intelligence has released Haas-ja-v1.0, an open Japanese speech recognition model built for fast, accurate transcription. In its release post, researcher Tatsu Matsushima wrote, “We have developed a new Japanese speech recognition model, Haas-ja-v1.0, and released it as open source!”, as GIGAZINE reported on November 2. The dated announcement puts the release on October 30, 2026."
-    }
-  ]
+  "sources": []
 }

@@ -1,80 +1,85 @@
 # crw72/Qwen3-Coder-Next-oQ4e-fp16
 
 ## Resumen
-Qwen3-Coder-Next-oQ4e-fp16 es una cuantizacion de precision mixta del modelo Qwen/Qwen3-Coder-Next, desarrollada por el usuario crw72 mediante la herramienta oQ (oMLX v0.8.0rc1). El modelo resultante pesa 46 GB en disco (42,881 GiB de pesos logicos) y esta empaquetado en formato MLX safetensors, pensado para su ejecucion en hardware Apple Silicon. El checkpoint completo contiene 79.674.391.296 parametros (aproximadamente 79,7 mil millones) y emplea una media efectiva de 4,623 bits por peso.
 
-La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de codigo de gran tamano en equipos con memoria unificada de 64 GB o superior, algo inviable con los pesos originales en bf16/fp16 (que ocuparian del orden de 160 GB). La cuantizacion mezcla capas en 4 bits afines (grupo 64) con un pequeno subconjunto en 8 bits y fp16, preservando presumiblemente las capas mas sensibles a la precision.
+Qwen3-Coder-Next-oQ4e-fp16 es una cuantización mixta del modelo Qwen/Qwen3-Coder-Next, publicada por el usuario crw72 bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 79.674 millones de parámetros orientado a tareas de generación de código, convertido a cuantización de precisión mixta mediante la herramienta oQ (oMLX v0.8.0) y empaquetado en formato MLX para su ejecución en hardware Apple Silicon. El modelo base procede de la familia Qwen3-Next de Alibaba, si bien la model card del repositorio no detalla arquitectura interna, contexto ni datos de entrenamiento del original.
 
-La informacion disponible sobre la arquitectura interna, el entrenamiento y los benchmarks del modelo base no esta presente en los datos proporcionados; esta ficha se limita a los datos verificables del repositorio de cuantizacion y del modelo base referenciado.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de código de gran tamano en equipos con memoria unificada de Apple, gracias a una tasa efectiva de 4,623 bits por peso que reduce el checkpoint a 42,881 GiB de almacenamiento. No obstante, la información publicada es muy limitada: no se documentan benchmarks, idiomas soportados, longitud de contexto ni detalles del proceso de entrenamiento del modelo base, por lo que muchas especificaciones deben marcarse como no disponibles.
+
+Esta ficha describe exclusivamente lo que puede verificarse a partir de los metadatos de Hugging Face y de la model card del autor de la cuantización. Cualquier dato sobre capacidades, rendimiento o requisitos que no aparezca en dichas fuentes se indica explícitamente como no disponible, sin inferencias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen/Qwen3-Coder-Next, familia qwen3_next) |
+| Arquitectura | no disponible (modelo base Qwen3-Next; detalles no publicados en la model card) |
 | Parametros totales | 79.674.391.296 (79,674B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Precision mixta oQ: affine 4-bit grupo 64 (77,309B, 4,50 bits/peso), affine 8-bit grupo 128 (0,151B, 8,25 bits/peso), affine 8-bit grupo 64 (2,162B, 8,50 bits/peso), FP16 (0,052B, 16 bits/peso); media efectiva 4,623 bits/peso |
+| Tipos de cuantizacion | Cuantizacion mixta oQ (oMLX v0.8.0): affine 4-bit grupo 64, affine 8-bit grupo 128, affine 8-bit grupo 64 y FP16; media efectiva 4,623 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX), 46,043 GB / 42,881 GiB |
+| Formato de pesos | safetensors (libreria mlx) |
 
 ## Arquitectura y entrenamiento
-No se dispone de informacion sobre la arquitectura del modelo base (tipo de transformer, uso de MoE, atencion lineal o hibrida) ni sobre el corpus de entrenamiento, el numero de tokens o las fases de RLHF/DPO. El tag `qwen3_next` sugiere que pertenece a la familia Qwen3 Next, pero los detalles tecnicos no estan documentados en la informacion proporcionada.
 
-La innovacion destacable de esta publicacion es el proceso de cuantizacion en si: oQ (oMLX v0.8.0rc1) aplica precision mixta asignando 4 bits afines con grupo de 64 a la practica totalidad de los pesos (97,032%), mientras que un 2,714% (2,162B) se mantiene en 8 bits con grupo 64 y un 0,190% (0,151B) en 8 bits con grupo 128; solo 0,052B permanecen en FP16. Esta distribucion busca reducir el error de cuantizacion en las capas mas sensibles sin disparar el tamano del checkpoint.
+La model card del repositorio de cuantización no proporciona información sobre la arquitectura interna del modelo base Qwen/Qwen3-Coder-Next, ni sobre el volumen o composición de sus datos de entrenamiento, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. El tag `qwen3_next` sugiere pertenencia a la familia Qwen3-Next, pero no se detalla en la información disponible si emplea transformer denso, mezcla de expertos, arquitectura híbrida o mecanismos de atención lineal.
+
+Lo que sí está documentado es el proceso de cuantización. El checkpoint se generó con oQ (oMLX v0.8.0) aplicando precisión mixta: el 97,032% de los pesos lógicos (77,309B) se almacena en affine 4-bit con grupo de 64, mientras que un 2,714% (2,162B) se conserva en affine 8-bit grupo 64, un 0,190% (0,151B) en affine 8-bit grupo 128 y un 0,065% (0,052B) en FP16. El resultado son 42,881 GiB de almacenamiento (46,043 GB) para el conjunto del modelo de lenguaje, con una media efectiva de 4,623 bits por peso. El autor indica que el checkpoint fue recuantizado el 2026-11-19 y recomienda volver a descargarlo si se dispone de una copia anterior.
 
 ## Capacidades
-- Generacion de codigo: el modelo base esta etiquetado como Coder, por lo que se orienta a tareas de programacion, aunque no hay documentacion explicita de capacidades en los datos disponibles.
-- Razonamiento y generacion de texto general: no disponible.
+
+- Generación de código: el modelo base está etiquetado como Qwen3-Coder-Next, lo que indica especialización en tareas de programación, aunque la model card no enumera capacidades concretas.
+- Generación de texto y razonamiento: no disponible en la información proporcionada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Inferencia local en Apple Silicon: capacidad efectiva derivada del formato MLX del checkpoint.
+- Capacidades multilingües: no disponible (los idiomas no están declarados en los metadatos).
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Ejecución en Apple Silicon: soportada mediante la librería MLX, según los tags del repositorio.
 
 ## Casos de uso
-- Asistencia a la programacion en local: ejecutar el modelo en un Mac con memoria unificada suficiente para autocompletar, refactorizar y explicar codigo sin enviar el codigo a servicios en la nube, lo que resulta adecuado para entornos con requisitos de confidencialidad.
-- Revision de codigo en pipelines internos: integrar el modelo como paso de analisis previo a la revision humana, aprovechando su condicion de modelo Coder para detectar patrones problematicos en diffs.
-- Generacion de tests unitarios: dado un modulo existente, producir casos de prueba adicionales en local, reduciendo la dependencia de APIs externas.
-- Documentacion tecnica automatizada: generar docstrings y documentacion de API a partir del codigo fuente, tarea repetitiva y bien acotada que se beneficia de la inferencia local.
-- Migracion de bases de codigo: traducir fragmentos entre lenguajes o frameworks mediante instrucciones, con el modelo ejecutandose en el propio equipo del desarrollador.
-- Prototipado offline en entornos air-gapped: usar el checkpoint MLX en maquinas sin conectividad, donde no es posible recurrir a servicios de inferencia remotos.
-- Experimentacion con cuantizacion: servir como referencia practica para estudiar el impacto de la precision mixta oQ en la calidad de salida frente al modelo base.
+
+- Asistencia de programación en local sobre Mac: el checkpoint en formato MLX permite ejecutar un modelo de código de 79,674B en equipos Apple Silicon con memoria unificada suficiente (42,881 GiB de pesos), sin depender de servicios en la nube.
+- Autocompletado y generación de código en el IDE: al estar orientado a código y caber en estaciones de trabajo con memoria unificada amplia, puede integrarse en flujos de desarrollo locales para sugerencias y refactorizaciones.
+- Prototipado y experimentación con cuantización mixta: útil para investigadores que quieran evaluar el impacto de la cuantización oQ 4-bit/8-bit/FP16 frente al modelo base en tareas de código.
+- Pipelines de revisión de código offline: en entornos con requisitos de privacidad, el despliegue local con MLX evita enviar el código a APIs externas.
+- Evaluación comparativa de checkpoints cuantizados: sirve como referencia para medir degradación de calidad respecto a Qwen/Qwen3-Coder-Next en benchmarks propios.
+- Desarrollo de herramientas para macOS: al usar la librería MLX, encaja en aplicaciones nativas de Apple que requieran inferencia local de un modelo grande de código.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-- VRAM/memoria unificada estimada: el checkpoint ocupa 42,881 GiB de pesos (46,043 GB en disco), por lo que se necesita memoria unificada de al menos 48 GB solo para los pesos; con margen para el grafo de computacion y la cache KV, se recomienda 64 GB o mas.
-- GPU recomendadas: el formato es MLX, orientado a Apple Silicon (series M1/M2/M3/M4 con memoria unificada de 64 GB o superior, como M2 Max/M3 Max/M4 Max o Ultra). No hay soporte documentado para GPU NVIDIA en esta publicacion.
-- Cabe en GPU consumer: no aplica en el sentido habitual; en Apple Silicon requiere configuraciones de gama alta con memoria unificada amplia.
-- Opciones de despliegue: MLX (libreria declarada) y oMLX; no hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI con este checkpoint concreto.
+
+- VRAM/memoria estimada para inferencia: al menos 42,881 GiB solo para los pesos (46,043 GB en disco); se requiere memoria adicional para el contexto y los estados intermedios, aunque la cifra exacta no está disponible.
+- GPU recomendadas: el formato MLX está diseñado para Apple Silicon (series M1/M2/M3/M4 y variantes Pro/Max/Ultra); no se documenta soporte para GPU NVIDIA o AMD en esta información.
+- ¿Cabe en GPU de consumo? En GPUs convencionales de consumo (p. ej. 24 GB de VRAM) no cabe por el tamano del checkpoint; en Apple Silicon, requiere configuraciones con memoria unificada de 64 GB o superior, si bien el requisito exacto no está publicado.
+- Opciones de despliegue: librería MLX (mlx-lm y ecosistema oMLX); no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| crw72/Qwen3-Coder-Next-oQ4e-fp16 | 79,674B | no disponible | 4,623 bits/peso medio (oQ) | apache-2.0 | safetensors MLX |
-| Qwen/Qwen3-Coder-Next (base) | 79,674B | no disponible | bf16/fp16 (original) | apache-2.0 | safetensors |
-| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| crw72/Qwen3-Coder-Next-oQ4e-fp16 | 79,674B | no disponible | apache-2.0 | safetensors (MLX) | Cuantización mixta 4,623 bits/peso, 42,881 GiB |
+| Qwen/Qwen3-Coder-Next (base) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible en esta ficha | Modelo original sin cuantizar |
+| Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas en la información proporcionada |
 
-La unica comparacion verificable es con el modelo base: este checkpoint reduce el almacenamiento de aproximadamente 160 GB (pesos en 16 bits) a 42,881 GiB, a cambio de una perdida de precision media de 4,623 bits por peso. No se dispone de datos sobre otras cuantizaciones comparables del mismo modelo base.
+No se dispone de datos suficientes para comparar rendimiento con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
-- Perdida de precision: la cuantizacion a 4,623 bits/peso medio puede degradar la calidad de generacion frente al modelo base, especialmente en tareas de razonamiento complejo o codigo con dependencias sutiles; no se han publicado evaluaciones comparativas.
-- Plataforma restringida: el formato MLX limita el uso a hardware Apple Silicon; no es directamente portable a CUDA.
-- Sesgos: no disponibles; no hay documentacion sobre sesgos del modelo base en la informacion proporcionada.
-- Riesgo de alucinacion: no evaluado; al ser un modelo de codigo, existe riesgo de generar APIs o funciones inexistentes, por lo que se recomienda validacion automatica de la salida.
-- Idiomas: no disponibles; no se puede confirmar el soporte multilingue.
-- Contexto: no disponible; no se puede planificar el uso con ventanas largas sin verificar la documentacion del modelo base.
-- Licencia: apache-2.0 permite uso comercial, pero conviene revisar los terminos del modelo base Qwen/Qwen3-Coder-Next por si imponen condiciones adicionales.
-- Madurez: el repositorio tiene 0 descargas y 0 likes, sin pipeline declarado, por lo que no hay evidencia de validacion comunitaria.
-- Uso en produccion: al ser una cuantizacion de terceros, no cuenta con el respaldo del equipo original de Qwen; para produccion se recomienda evaluar exhaustivamente la calidad frente al modelo base.
+
+- La cuantización a 4,623 bits/peso puede introducir degradación de calidad respecto al modelo base; no se han publicado evaluaciones que cuantifiquen dicha pérdida.
+- La model card no documenta sesgos conocidos, riesgo de alucinación ni limitaciones idiomáticas del modelo base.
+- No se especifica la longitud de contexto soportada, lo que impide garantizar su comportamiento en tareas de contexto largo.
+- El formato MLX limita el despliegue a hardware Apple Silicon; no se documenta compatibilidad con otras plataformas.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen/Qwen3-Coder-Next antes de un uso comercial en producción.
+- El repositorio tiene un volumen muy bajo de descargas (221) y ningún "like", y no procede de un canal oficial; se recomienda validar el checkpoint antes de usarlo en entornos críticos.
+- El autor recomienda volver a descargar el modelo si se posee una versión anterior a la recuantización del 2026-11-19.
 
 ## Enlaces
+
 - Repositorio Hugging Face: https://huggingface.co/crw72/Qwen3-Coder-Next-oQ4e-fp16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
-- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
+- Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

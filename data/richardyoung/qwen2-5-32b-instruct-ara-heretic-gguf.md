@@ -2,104 +2,86 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-ARA-heretic-GGUF es una distribucion en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-ARA-heretic, una version "abliterated" (con los mecanismos de rechazo eliminados) de Qwen/Qwen2.5-32B-Instruct. La ablacion se realizo con Heretic 2.0, en concreto con su metodo Arbitrary-Rank Ablation (ARA), una tecnica de optimizacion que busca direcciones de ablacion de rango arbitrario para minimizar la divergencia respecto al modelo original. El autor del modelo es Richard J. Young y el repositorio GGUF lo publica bajo el identificador richardyoung.
+Qwen2.5-32B-Instruct-ARA-heretic-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-ARA-heretic, a su vez un derivado afinado del Qwen2.5-32B-Instruct de Alibaba. El autor, richardyoung, aplica técnicas de "abliteration" (eliminación de rechazos) sobre el modelo base para producir una variante sin censura orientada a investigación. Esta versión GGUF está pensada para su uso con llama.cpp y Ollama, lo que permite ejecutar el modelo en hardware local con distintos niveles de cuantización.
 
-El modelo conserva la arquitectura del Qwen2.5-32B-Instruct original: un transformer denso de 32.763.876.352 parametros (aproximadamente 32,8 mil millones) con una ventana de contexto de 32.768 tokens en la version original de Qwen2.5. El interes de esta publicacion no es tanto la capacidad generica del modelo como la posibilidad de reproducir y evaluar el efecto de la ablacion de rechazos sobre un modelo de ese tamano, empaquetado en cuantizaciones GGUF listas para llama.cpp y Ollama.
+El modelo conserva la arquitectura transformer decoder-only de Qwen2.5 con 32.763.876.352 parámetros totales, y hereda la ventana de contexto nativa de la familia Qwen2.5 (hasta 128K tokens, aunque no se confirma explícitamente en la información disponible para este derivado). El repositorio ocupa 54,7 GB y emplea cuantización con imatrix, técnica que mejora la calidad de los pesos cuantizados mediante una matriz de importancia.
 
-La relevancia actual es doble: por un lado, proporciona artefactos practicos (Q4_K_M, imatrix y futuras cuantizaciones IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0) para ejecutar un modelo de 32B en hardware de consumo; por otro, forma parte de un trabajo de investigacion sobre la dificultad creciente de la abliteracion en modelos recientes. La model card advierte explicitamente de que los ficheros se publican para investigacion sobre eliminacion de rechazos y su evaluacion, no como asistente de proposito general.
+Su relevancia radica en ofrecer un modelo de 32B sin restricciones de contenido, en formato listo para inferencia local, con licencia Apache 2.0. No obstante, el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, y el modelo está etiquetado únicamente para inglés, lo que limita su uso en otros idiomas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen2.5-32B-Instruct; no se detalla en la model card) |
-| Parametros totales | 32.763.876.352 (aproximadamente 32,8B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-32B-Instruct soporta 32.768 tokens, pero la model card no lo confirma para esta variante) |
-| Tipos de cuantizacion | Q4_K_M (publicada); IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0 anunciadas como "en proceso"; imatrix incluida |
-| Idiomas soportados | en (segun la model card y los tags) |
-| Licencia | apache-2.0 (con las mismas restricciones de uso que el modelo fuente) |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5) |
+| Parámetros totales | 32.763.876.352 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (la familia Qwen2.5 soporta hasta 128K, sin confirmar para este derivado) |
+| Tipos de cuantización | GGUF con imatrix (niveles concretos no disponibles) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp, Ollama) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del Qwen2.5-32B-Instruct: un transformer denso de 32,8B parametros. La model card de esta variante GGUF no aporta detalles adicionales sobre la arquitectura interna (numero de capas, dimensiones, atencion, etc.), por lo que esos datos deben consultarse en la model card original de Qwen. La innovacion tecnica de esta publicacion no esta en el preentrenamiento ni en el ajuste por instrucciones, sino en la modificacion de pesos mediante ablacion de direcciones.
+El modelo es un transformer decoder-only de 32B parámetros, heredado directamente de Qwen2.5-32B-Instruct. Sobre esa base, el autor aplicó un proceso de "abliteration" (denominado "heretic" en el nombre) que modifica los pesos para eliminar el comportamiento de rechazo ante solicitudes que el modelo original declinaría. No se dispone de información sobre el número de tokens de entrenamiento adicional, la composición del dataset de ajuste ni si se emplearon técnicas de RLHF o DPO en este derivado concreto.
 
-El proceso de abliteracion se realizo con Heretic 2.0 y su metodo Arbitrary-Rank Ablation (ARA). Segun la model card, se ejecuto una busqueda de 100 pruebas y se selecciono la variante con menos rechazos por palabra clave en el conjunto de desarrollo, sujeto a una divergencia KL de primer token respecto al original menor o igual a 0,1. La variante elegida presenta una divergencia KL de primer token de 0,062 y 10 rechazos por palabra clave sobre los 100 prompts de ajuste. Los resultados reportados en el articulo (no en esta model card) indican que el modelo completo en bf16 reduce la tasa de rechazo del 76,8% al 6,1% (59 de 972) sobre prompts daninos reservados, evaluados con el juez WildGuard. Los ficheros GGUF no fueron evaluados en el articulo y el autor advierte de que la cuantizacion puede alterar el comportamiento de rechazo.
-
-La conversion a GGUF se realizo con llama.cpp (commit 468fde9): convert_hf_to_gguf.py con --outtype bf16 y posterior llama-quantize en CPU. Las cuantizaciones IQ3_M, IQ4_XS, Q4_K_M y Q5_K_M emplean una importance matrix calculada sobre la build Q8_0 con calibration_datav3 (128 fragmentos de 512 tokens); Q6_K y Q8_0 son estaticas. Cada fichero Q4_K_M se cargo y respondio a un prompt de prueba antes de la subida, y se incluyen sumas SHA-256 en SHA256SUMS.
+La cuantización GGUF se realizó con imatrix, una técnica que calcula una matriz de importancia a partir de datos de calibración para asignar mayor precisión a los pesos más relevantes. Esto permite reducir el tamaño del modelo (54,7 GB en el repositorio, que incluye varias cuantizaciones) manteniendo una calidad superior a la cuantización uniforme. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada del ajuste por instrucciones de Qwen2.5-32B-Instruct.
-- Razonamiento y respuesta a instrucciones de complejidad media-alta, propio de un modelo denso de 32B.
-- Generacion de codigo y matematicas: capacidades propias del modelo base Qwen2.5-32B-Instruct, aunque no se documentan explicitamente en esta model card.
-- Cumplimiento de solicitudes que el modelo original rechaza: la ablacion elimina buena parte de los rechazos (6,1% de rechazo residual frente al 76,8% del original en la evaluacion del articulo con el modelo bf16).
-- Soporte de tool calling y function calling: no documentado en la informacion proporcionada para esta variante.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion proporcionada.
-- Capacidades multilingues: la model card solo declara ingles ("en"); no se confirman otros idiomas.
-- Modo thinking, vision o audio: no disponible.
+- Generación de texto conversacional multi-turno, heredada de Qwen2.5-32B-Instruct.
+- Razonamiento y resolución de problemas de complejidad media-alta gracias a sus 32B parámetros.
+- Generación de código y matemáticas (capacidades típicas de la familia Qwen2.5, no verificadas explícitamente para este derivado).
+- Comportamiento sin censura: el proceso de abliteration elimina los rechazos ante contenido sensible, orientado a investigación.
+- Soporte de tool calling / function calling: no confirmado en la información disponible para este derivado.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas explícitamente.
+- Multilingüe: limitado a inglés según la etiqueta del repositorio.
+- Sin capacidades de visión ni audio (modelo solo de texto).
 
 ## Casos de uso
 
-- Investigacion sobre eliminacion de rechazos: el modelo sirve como artefacto reproducible para medir la eficacia de ARA y de Heretic 2.0 sobre un transformer de 32B, comparando tasas de rechazo y divergencia KL respecto al original.
-- Evaluacion de defensas frente a abliteracion: permite a equipos de seguridad estudiar como se comportan clasificadores, filtros de salida y mecanismos de moderacion ante un modelo con rechazos suprimidos, usando la cuantizacion Q4_K_M en entornos de laboratorio.
-- Estudio del impacto de la cuantizacion en el comportamiento de rechazo: al disponer de Q4_K_M y de futuras IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0, se puede medir si la cuantizacion reintroduce o elimina rechazos de forma no uniforme.
-- Despliegue local en hardware de consumo para experimentacion: la cuantizacion Q4_K_M (19,9 GB) permite ejecutar un modelo de 32,8B en una GPU con 24 GB de VRAM o en configuraciones con offload a CPU, usando llama.cpp u Ollama.
-- Pruebas de pipelines de inferencia GGUF: el repositorio incluye una imatrix y sumas SHA-256, lo que facilita validar la cadena de conversion y cuantizacion en pipelines de CI internos.
-- Analisis de sesgos y comportamiento en dominios sensibles: al no rechazar tantas solicitudes como el original, permite estudiar respuestas del modelo ante prompts que el modelo base evitaba, siempre en el marco de investigacion y con las salvaguardas adecuadas.
-- Comparativas de rendimiento entre cuantizaciones: util para medir latencia, throughput y calidad de generacion de Q4_K_M frente a las versiones de mayor precision cuando esten disponibles.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de un LLM sin rechazos, comparándolo con el original para analizar qué información se suprime y cómo afecta el abliteration a las respuestas.
+- Inferencia local en estaciones de trabajo: al estar en GGUF, puede ejecutarse con llama.cpp u Ollama en equipos con GPU de consumo alta o configuraciones multi-GPU, sin depender de APIs en la nube.
+- Generación de texto creativo sin restricciones: útil para escritura de ficción que aborde temas sensibles donde el modelo original rechazaría la solicitud.
+- Evaluación de cuantizaciones: el uso de imatrix permite comparar la degradación de calidad entre distintos niveles de cuantización GGUF sobre un modelo de 32B, un caso de estudio útil para investigadores de eficiencia.
+- Prototipado de chatbots conversacionales: con 32B parámetros ofrece respuestas de mayor calidad que modelos de 7B-13B en tareas de diálogo, adecuado para pruebas internas.
+- Red teaming y pruebas de robustez: sirve como modelo "sin salvaguardas" para evaluar la eficacia de filtros y sistemas de moderación externos.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos cuantitativos publicados en la model card son los del modelo completo en bf16, no de los ficheros GGUF:
-
-| Metrica | Original | Este modelo (bf16) |
-|---|---|---|
-| Rechazo en 972 prompts daninos reservados (juez WildGuard) | 76,8% | 6,1% (59/972) |
-| Rechazos por palabra clave en los 100 prompts de ajuste (prueba seleccionada) | no disponible | 10 |
-| Divergencia KL de primer token respecto al original (prueba seleccionada) | no disponible | 0,062 |
-
-No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, ni para el modelo bf16 ni para los ficheros GGUF. El autor indica explicitamente que las cuantizaciones no fueron evaluadas en el articulo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M: aproximadamente 19,9 GB solo para los pesos, mas overhead de contexto KV; en la practica requiere alrededor de 22-24 GB para contexto moderado.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q4_K_M con contexto limitado; A100 40/80 GB o H100 para mayor contexto y throughput; configuraciones multi-GPU para las futuras Q6_K y Q8_0.
-- Cabe en GPU de consumo: si, Q4_K_M en GPUs de 24 GB; en GPUs de 16 GB o menos sera necesario offload parcial a CPU o usar cuantizaciones IQ3_M o IQ4_XS cuando esten disponibles.
-- Opciones de despliegue: llama.cpp (llama-cli con -hf), Ollama (ollama run hf.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic-GGUF:Q4_K_M); vLLM y TGI no estan documentados para este repositorio GGUF.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada: un modelo de 32B en GGUF requiere aproximadamente 20-24 GB en cuantización Q4, 28-32 GB en Q5/Q6 y 60-65 GB en FP16. Los niveles exactos de cuantización del repositorio no están disponibles.
+- GPU recomendadas: A100 80GB o H100 para FP16; RTX 4090 (24 GB) para cuantizaciones Q4; configuraciones multi-GPU (2x RTX 3090/4090) para cuantizaciones mayores.
+- Cabe en GPU de consumo: sí, en RTX 4090 con cuantización Q4, y en GPUs de 24 GB o superiores con cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama (ambos etiquetados en el repositorio). vLLM y TGI no están confirmados para este formato GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-32B-Instruct-ARA-heretic-GGUF | 32,8B | no disponible (base: 32.768) | GGUF (Q4_K_M) | apache-2.0 | Abliterado con Heretic 2.0/ARA; rechazo residual 6,1% en bf16 |
-| Qwen/Qwen2.5-32B-Instruct | 32,8B | 32.768 | safetensors | apache-2.0 | Modelo original con rechazos intactos (76,8% en la evaluacion del articulo) |
-| richardyoung/Qwen2.5-32B-Instruct-ARA-heretic | 32,8B | no disponible | safetensors (bf16) | apache-2.0 | Version completa sin cuantizar del mismo modelo abliterado |
-| Otras variantes abliterated de Qwen2.5-32B | 32,8B | variable | safetensors/GGUF | variable | No se dispone de datos comparativos en la informacion proporcionada |
+| Qwen2.5-32B-Instruct-ARA-heretic-GGUF | 32,7B | No disponible | Apache 2.0 | GGUF | Sin censura, solo inglés, acceso restringido |
+| Qwen2.5-32B-Instruct (original) | 32,7B | 128K | Apache 2.0 | Safetensors, GGUF | Con alineación y rechazos, multilingüe |
+| Modelos abliterated de 32B (otros autores) | ~32B | Variable | Variable | GGUF | Alternativas sin censura, datos no disponibles |
 
-No se dispone de comparativas de rendimiento de capacidad general con modelos alternativos en la informacion proporcionada.
+La comparativa directa con otras variantes abliterated no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: el autor declara explicitamente que no es un asistente de proposito general y que su uso previsto es la investigacion sobre eliminacion de rechazos y su medicion.
-- Eliminacion de rechazos: el modelo cumple muchas solicitudes que el original rechaza, lo que implica un riesgo elevado de generar contenido danino si se usa sin salvaguardas externas.
-- Cuantizacion no evaluada: los ficheros GGUF no fueron evaluados en el articulo y la cuantizacion puede cambiar el comportamiento de rechazo; los datos de 6,1% corresponden solo al modelo bf16.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; es un riesgo inherente a los modelos de lenguaje de este tamano.
-- Idioma: solo se declara ingles; no se confirman capacidades multilingues.
-- Contexto: la model card no confirma la ventana de contexto efectiva de esta variante; debe verificarse antes de usarla en produccion.
-- Licencia: apache-2.0, pero con las mismas restricciones de uso que el modelo fuente; el usuario es responsable del uso licito.
-- Sin benchmarks de capacidad: no hay datos de MMLU, HumanEval, GSM8K ni similares para esta variante, por lo que no se puede caracterizar su calidad general respecto al original.
-- Sesgos: no documentados en la informacion proporcionada; se heredan los del modelo base y pueden verse alterados por la ablacion.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso comunitario ni validacion externa.
+- El proceso de abliteration puede degradar capacidades generales del modelo (razonamiento, coherencia) respecto al original; no se han publicado evaluaciones que lo cuantifiquen.
+- Riesgo elevado de generar contenido dañino, ofensivo o inexacto al carecer de salvaguardas; no apto para producción orientada al usuario final sin filtros externos.
+- Sesgos conocidos del modelo base Qwen2.5, potencialmente amplificados por la eliminación de rechazos.
+- Riesgo de alucinación inherente a los LLM, sin mitigaciones específicas documentadas.
+- Soporte limitado a inglés según la etiqueta del repositorio; el rendimiento en castellano no está garantizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin censura puede infringir normativas locales; el usuario asume la responsabilidad legal.
+- No se confirman capacidades de tool calling ni de agente para este derivado concreto.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic-GGUF
-- Modelo base abliterado (safetensors): https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Licencia del modelo original: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
-- Articulo citado (arXiv pendiente de enlace): "Is Abliteration Getting Harder? Not Uniformly: Refusal Removal by Direction-Based Ablation and ARA in Heretic on the Qwen3.8, Gemma 4, Olmo 3.1 and Mistral Small 3.2 LLMs Versus Their Predecessors", Richard J. Young, 2026
-- llama.cpp: https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic-GGUF
+- Modelo base (no cuantizado): https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
+- Referencia arXiv citada en los tags: arxiv:2611.17846 (no verificada en la información disponible)

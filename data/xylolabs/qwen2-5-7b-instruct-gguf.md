@@ -2,98 +2,100 @@
 
 ## Resumen
 
-Xylolabs/Qwen2.5-7B-Instruct-GGUF es una cuantización en formato GGUF del modelo Qwen2.5-7B-Instruct, desarrollado originalmente por el equipo Qwen de Alibaba. Este repositorio, publicado por Xylolabs, distribuye una única variante Q4_K_M de 4,683 GB pensada para su ejecución con llama.cpp en hardware de consumo y estaciones de trabajo. El modelo base es un transformer denso de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) con licencia Apache 2.0.
+Xylolabs/Qwen2.5-7B-Instruct-GGUF es una cuantizacion en formato GGUF del modelo Qwen/Qwen2.5-7B-Instruct, publicada por Xylolabs para su uso con llama.cpp. El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer decoder-only denso de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) orientado a generacion de texto conversacional e instrucciones. Esta version concreta solo distribuye el fichero Q4_K_M de 4,683 GB, lo que la hace directamente desplegable en GPU de consumo.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo instructivo de 7B en local con un equilibrio razonable entre tamaño y fidelidad respecto al original en BF16. El autor publica métricas de divergencia KL y acuerdo top-1 frente a BF16 para justificar la elección de la cuantización, algo poco habitual en repositorios de cuantizaciones de terceros.
+La relevancia de esta ficha radica en que el autor aporta mediciones de degradacion por cuantizacion frente a BF16 (divergencia KL y top-1 sobre WikiText-2 y un conjunto held-out), algo poco habitual en repositorios GGUF de terceros. Con Q4_K_M se obtiene un top-1 del 91,402% en WikiText-2 y del 92,353% en held-out, con una KL de 0,034830 y 0,027718 respectivamente, lo que permite evaluar el coste de precision de forma cuantitativa antes de adoptarlo en produccion.
 
-El repositorio declara únicamente los idiomas inglés (en) y coreano (ko) en sus metadatos, aunque el modelo base Qwen2.5 es multilingüe por diseño. Esta discrepancia debe tenerse en cuenta al evaluar el soporte real de idiomas, especialmente para castellano.
+Se trata, por tanto, de una opcion practica para servir el modelo Qwen2.5-7B-Instruct en entornos con VRAM limitada (24 GB o menos) manteniendo una ventana de contexto de 32K segun la tabla de hardware del autor. La licencia Apache 2.0 del modelo base se conserva en esta redistribucion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Qwen2.5-7B-Instruct) |
+| Arquitectura | Transformer decoder-only denso (Qwen2), pesos convertidos a GGUF |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32K tokens (según tabla de recomendación de hardware del autor) |
-| Tipos de cuantizacion | Q4_K_M (único fichero publicado) |
-| Idiomas soportados | en, ko (según metadatos del repositorio) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 32K (segun tabla de hardware del autor) |
+| Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repo) |
+| Idiomas soportados | en, ko (segun metadatos del repo) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (fichero `Qwen2.5-7B-Instruct-Q4_K_M.gguf`, 4,683 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen2.5-7B-Instruct, un transformer denso decoder-only de aproximadamente 7,6 mil millones de parámetros. Esta ficha corresponde a una conversión a GGUF y cuantización Q4_K_M realizada por Xylolabs sobre los pesos oficiales; el repositorio no documenta detalles adicionales sobre el entrenamiento del modelo base (número de tokens, composición del dataset, etapas de RLHF o DPO), por lo que esos datos deben consultarse en la model card original de Qwen. El autor indica que la conversión se verificó con la build de llama.cpp `cd959bae99ff4bed22bef2604f45241c09bbb8c8`.
+El modelo subyacente es un transformer decoder-only denso de la familia Qwen2.5, con 7.615.616.512 parametros. Esta publicacion no reentrena ni modifica la arquitectura: Xylolabs convierte los pesos originales de Qwen/Qwen2.5-7B-Instruct a formato GGUF y los cuantiza a Q4_K_M. El repositorio no documenta el numero de tokens de entrenamiento, la composicion del dataset ni las fases de alineacion (RLHF/DPO) del modelo base; esos datos corresponden a la model card original de Qwen, que el autor enlaza como referencia para el informe tecnico y la citacion.
 
-La innovación técnica destacable de este repositorio no está en la arquitectura, sino en la evaluación de la cuantización: se publican métricas de divergencia KL media respecto a BF16 y de acuerdo top-1, medidas con llama.cpp sobre WikiText-2 y un conjunto held-out. Para Q4_K_M se reporta una KL de 0,034830 en WikiText-2 (top-1 del 91,402 %) y una KL de 0,027718 en held-out (top-1 del 92,353 %). El autor incluye además comparativas con cuantizaciones propias de llama.cpp (Q8_0, Q6_K, Q5_K_M, Q3_K_M) y con ficheros de otros proveedores, lo que permite situar la pérdida de fidelidad de esta conversión concreta.
+La innovacion tecnica de esta ficha es la evaluacion de cuantizacion. El autor compara su Q4_K_M con las cuantizaciones propias de llama.cpp (Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M) frente a BF16, midiendo divergencia KL y top-1 en WikiText-2 y en un conjunto held-out. Los resultados muestran que Q4_K_M se situa en KL 0,034830 (WikiText-2) y 0,027718 (held-out), mientras que Q5_K_M baja a 0,010590 y 0,008788, y Q3_K_M sube a 0,111754 y 0,089577. La ejecucion se valido con la build de llama.cpp `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior, usando `--jinja` para el chat template.
 
 ## Capacidades
 
-- Generación de texto conversacional e instructiva, heredada del ajuste instructivo de Qwen2.5-7B-Instruct.
-- Razonamiento y resolución de problemas de complejidad media, adecuado para un modelo de 7B.
-- Generación de código y asistencia en tareas de programación (capacidad del modelo base; el repositorio no aporta evaluaciones propias).
-- Capacidades multilingües del modelo base Qwen2.5; los metadatos del repositorio solo declaran inglés y coreano.
-- Ejecución local con llama.cpp mediante `llama-cli` con la opción `--jinja` para plantillas de chat.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags del repositorio).
-- No se documentan en este repositorio capacidades de visión, audio, tool calling específico ni modo de razonamiento extendido; deben verificarse en la model card del modelo base.
+- Generacion de texto conversacional e instrucciones, heredadas del modelo base Qwen2.5-7B-Instruct.
+- Razonamiento de varios pasos y respuesta a instrucciones complejas (capacidad del modelo base, no verificada de forma independiente en esta cuantizacion).
+- Generacion de codigo y matematicas (capacidad del modelo base Qwen2.5-7B-Instruct; no se aportan benchmarks en este repo).
+- Soporte de tool calling / function calling heredado del modelo base; el autor recomienda `--jinja` en llama-cli, lo que sugiere el uso del chat template con soporte de herramientas.
+- Capacidades multilingues limitadas segun los metadatos del repo a en y ko; el modelo base Qwen2.5 soporta mas idiomas, pero este repositorio no los declara.
+- Contexto largo de hasta 32K tokens segun la tabla de hardware del autor.
+- No se declaran capacidades de vision ni audio en esta publicacion.
 
 ## Casos de uso
 
-- Asistente conversacional local: desplegar el modelo con llama.cpp en una estación de trabajo para mantener conversaciones multi-turno con hasta 32K tokens de contexto, sin dependencia de servicios en la nube.
-- Prototipado rápido en equipos de desarrollo: usar el fichero Q4_K_M de 4,7 GB para validar pipelines de generación de texto antes de pasar a variantes de mayor precisión o a modelos mayores.
-- Generación de código en entornos con requisitos de privacidad: ejecutar el modelo en local para autocompletado y explicación de código sin enviar datos a terceros, aprovechando la licencia Apache 2.0.
-- Procesamiento de documentos largos: gracias a la ventana de 32K tokens, resumir o extraer información de contratos, informes o transcripciones que no caben en modelos de contexto corto.
-- Educación y experimentación académica: reproducir experimentos de cuantización y medir la degradación respecto a BF16 usando las métricas KL y top-1 publicadas como referencia.
-- Despliegue en hardware de consumo: ejecutar el modelo en una RTX 4090 o RTX 3090 (24 GB) con contexto de 32K, según la tabla de recomendación del autor, para tareas de asistencia y generación de contenido.
-- Integración en herramientas de línea de comandos: usar `llama-cli` con plantillas Jinja para incorporar el modelo en scripts de automatización de texto.
+- Asistente conversacional autoalojado: el fichero Q4_K_M de 4,683 GB permite ejecutar el modelo en una RTX 4090 o RTX 3090 de 24 GB con 32K de contexto, adecuado para chatbots internos con conversaciones multi-turno largas.
+- Generacion de codigo en pipelines de desarrollo: al heredar el comportamiento de Qwen2.5-7B-Instruct y soportar `--jinja`, puede integrarse en flujos de autocompletado o revision de codigo ejecutados en local, sin depender de APIs externas.
+- Procesamiento de documentos largos: con 32K de contexto se pueden resumir contratos, informes o hilos de correo completos en una sola pasada, manteniendo los datos en infraestructura propia.
+- Despliegue en estaciones de trabajo Apple Silicon: la tabla del autor indica compatibilidad con Mac Studio M5 Max y M5 Ultra (memoria unificada de 128 a 512 GB), lo que permite servir el modelo en equipos de escritorio profesionales.
+- Prototipado rapido con llama.cpp: al ser un unico fichero GGUF validado con una build concreta, es util para pruebas de concepto y evaluacion de la calidad de Qwen2.5-7B antes de invertir en despliegues mayores.
+- Atencion al cliente con datos sensibles: al ejecutarse en hardware propio y con licencia Apache 2.0, encaja en escenarios con requisitos de residencia de datos o sin salida a Internet.
+- Evaluacion de cuantizacion: los datos de KL y top-1 permiten usar este fichero como referencia para decidir si Q4_K_M es suficiente o si conviene subir a Q5_K_M o Q6_K en funcion del margen de VRAM.
 
 ## Benchmarks y rendimiento
 
-El repositorio no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) del modelo. Sí incluye métricas de fidelidad de la cuantización frente a BF16 medidas con llama.cpp:
+El autor publica metricas de fidelidad de cuantizacion frente a BF16 (no benchmarks de tareas como MMLU o HumanEval):
 
-| Cuantizacion | Tamano | WikiText-2 KL | Top-1 | Held-out KL | Top-1 |
+| Cuantizacion | Tamano | WikiText-2 KL | WikiText-2 top-1 | Held-out KL | Held-out top-1 |
 |---|---:|---:|---:|---:|---:|
-| llama.cpp Q8_0 | 8,099 GB | 0,001288 | 98,098 % | 0,001302 | 98,020 % |
-| llama.cpp Q6_K | 6,254 GB | 0,004518 | 96,446 % | 0,004115 | 96,863 % |
-| llama.cpp Q5_K_M | 5,445 GB | 0,010590 | 94,990 % | 0,008788 | 95,471 % |
-| Q4_K_M (este repo) | 4,683 GB | 0,034830 | 91,402 % | 0,027718 | 92,353 % |
-| llama.cpp Q3_K_M | 3,808 GB | 0,111754 | 85,029 % | 0,089577 | 86,775 % |
+| llama.cpp Q8_0 | 8,099 GB | 0,001288 | 98,098% | 0,001302 | 98,020% |
+| llama.cpp Q6_K | 6,254 GB | 0,004518 | 96,446% | 0,004115 | 96,863% |
+| llama.cpp Q5_K_M | 5,445 GB | 0,010590 | 94,990% | 0,008788 | 95,471% |
+| Q4_K_M (este repo) | 4,683 GB | 0,034830 | 91,402% | 0,027718 | 92,353% |
+| llama.cpp Q4_K_M | 4,683 GB | 0,034830 | 91,402% | 0,027718 | 92,353% |
+| llama.cpp Q3_K_M | 3,808 GB | 0,111754 | 85,029% | 0,089577 | 86,775% |
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 4,683 GB; el autor estima que un fichero encaja cuando su tamaño más la caché KV en f16 a ese contexto más 2 GB de runtime queda por debajo del 90 % de la memoria disponible.
-- GPU recomendadas por el autor: RTX 4090 y RTX 3090 (24 GB) con contexto de 32K; RTX 5090 (32 GB); RTX 6000 Ada o 2 × 24 GB (48 GB); H100 (80 GB); RTX PRO 6000 Blackwell (96 GB); H200 (141 GB); B200 (192 GB); B300 (288 GB).
-- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 con 24 GB a contexto de 32K según la tabla del autor.
-- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y Mac Studio M5 Ultra (256 GB y 512 GB) aparecen soportados con contexto de 32K.
-- Opciones de despliegue: llama.cpp (build `cd959bae` o posterior) mediante `llama-cli -m Qwen2.5-7B-Instruct-Q4_K_M.gguf --jinja`. El repositorio no documenta explícitamente otros runtimes (Ollama, vLLM, TGI), aunque al ser GGUF estándar deberían poder cargarlo herramientas compatibles.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: 4,683 GB de pesos en Q4_K_M; con cache KV para 32K de contexto el consumo real es mayor y depende de la implementacion.
+- GPU recomendadas segun el autor: RTX 4090 / RTX 3090 (24 GB, contexto 32K), RTX 5090 (32 GB), RTX 6000 Ada o 2 x 24 GB (48 GB), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), H200 (141 GB), B200 (192 GB), B300 (288 GB).
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090 y RTX 5090 con 32K de contexto segun la tabla del autor.
+- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y Mac Studio M5 Ultra (256 GB y 512 GB).
+- Opciones de despliegue: llama.cpp (build `cd959bae` o posterior, con `--jinja`). No se documentan otras opciones como vLLM, Ollama o TGI en este repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Xylolabs/Qwen2.5-7B-Instruct-GGUF (este) | 7,6B | 32K | GGUF Q4_K_M | Apache 2.0 | Cuantización de terceros con métricas KL publicadas |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32K (según modelo base) | safetensors | Apache 2.0 | Modelo original en BF16; referencia de calidad |
-| Cuantizaciones oficiales de llama.cpp de Qwen2.5-7B-Instruct | 7,6B | 32K | GGUF (Q8_0 a Q3_K_M) | Apache 2.0 | Mismo modelo base; el autor las usa como referencia de fidelidad |
+|---|---:|---|---|---|---|
+| Xylolabs/Qwen2.5-7B-Instruct-GGUF (Q4_K_M) | 7,6 B | 32K | GGUF Q4_K_M | Apache 2.0 | Top-1 91,402% en WikiText-2 frente a BF16 |
+| Qwen/Qwen2.5-7B-Instruct (original) | 7,6 B | no disponible en esta ficha | safetensors | Apache 2.0 | Modelo base sin cuantizar; referencia de calidad |
+| llama.cpp Q5_K_M de Qwen2.5-7B-Instruct | 7,6 B | no disponible | GGUF Q5_K_M | Apache 2.0 | 5,445 GB; top-1 94,990% en WikiText-2 |
+| llama.cpp Q3_K_M de Qwen2.5-7B-Instruct | 7,6 B | no disponible | GGUF Q3_K_M | Apache 2.0 | 3,808 GB; top-1 85,029% en WikiText-2 |
 
-No se dispone en la información proporcionada de comparativas con otros modelos de 7B de la misma categoría (por ejemplo, Llama 3.1 8B Instruct o Mistral 7B Instruct) en términos de benchmarks de tareas.
+No se dispone de datos comparativos de rendimiento en tareas frente a otras familias de modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no documentados en el repositorio; el modelo base Qwen2.5 puede heredar sesgos de sus datos de entrenamiento.
-- Riesgo de alucinación: inherente a los modelos de 7B; no se han publicado evaluaciones específicas de factualidad en este repositorio.
-- Idiomas: los metadatos solo declaran inglés y coreano; el soporte de castellano no está garantizado por el autor, aunque el modelo base Qwen2.5 es multilingüe.
-- Cuantización: Q4_K_M introduce una pérdida medible de fidelidad (KL de 0,034830 en WikiText-2, top-1 del 91,402 %); para tareas sensibles a la precisión puede ser preferible una cuantización mayor o los pesos originales en BF16.
-- Licencia: Apache 2.0 permite uso comercial, pero el autor indica que Xylolabs no está afiliado ni respaldado por los autores del modelo original; debe conservarse el fichero `NOTICE` con la atribución.
-- Producción: el repositorio no documenta latencia, throughput ni pruebas de carga; conviene validar el rendimiento en el hardware objetivo antes de desplegar.
-- Fecha de creación del repositorio: los metadatos indican 2026-11-14, fecha que conviene verificar antes de citar el recurso.
+- Solo se distribuye la cuantizacion Q4_K_M; no hay variantes Q5, Q6 u Q8 en este repositorio, lo que limita el ajuste fino entre calidad y VRAM.
+- La cuantizacion Q4_K_M introduce una degradacion medible: top-1 del 91,402% en WikiText-2 frente a BF16, con KL de 0,034830. Para tareas sensibles a la precision puede ser insuficiente.
+- Los metadatos del repositorio declaran solo en y ko; el soporte multilingue real del modelo base no esta verificado en esta publicacion.
+- No se aportan benchmarks de tareas (MMLU, HumanEval, GSM8K) ni evaluaciones de sesgo o alucinacion en esta ficha; los riesgos de alucinacion son los del modelo base y no se han medido aqui.
+- La licencia Apache 2.0 se conserva, pero el autor no documenta cambios en los terminos respecto al modelo original; conviene revisar el fichero LICENSE del repositorio.
+- La ejecucion se valido con una build concreta de llama.cpp (`cd959bae`); versiones anteriores pueden no interpretar correctamente el chat template con `--jinja`.
+- El repositorio tiene un volumen bajo de adopcion (562 descargas, 0 likes), por lo que no hay evidencia comunitaria extensa sobre su comportamiento en produccion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Qwen2.5-7B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Build de llama.cpp referenciada: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
 - Licencia en el repositorio: https://huggingface.co/Xylolabs/Qwen2.5-7B-Instruct-GGUF/blob/main/LICENSE
-- llama.cpp (build de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs citado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio del autor (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq

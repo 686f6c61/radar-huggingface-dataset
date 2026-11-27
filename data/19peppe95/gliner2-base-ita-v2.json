@@ -61,16 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "19Peppe95/gliner2-base-ita-v1 · Hugging Face",
-      "url": "https://huggingface.co/19Peppe95/gliner2-base-ita-v1",
-      "snippet": "Token Classification model with 0.3B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
-      "url": "https://github.com/fastino-ai/GLiNER2",
-      "snippet": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub."
-    }
-  ]
+  "sources": []
 }

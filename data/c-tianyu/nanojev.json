@@ -28,7 +28,7 @@
     "base_model:finetune:Qwen/Qwen3-0.6B",
     "region:us"
   ],
-  "likes": 93,
+  "likes": 94,
   "downloads_30d": 762,
   "trending_score": 12,
   "parameters": null,

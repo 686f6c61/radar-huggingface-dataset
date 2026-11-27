@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/liberalis-cogitator-llama-3.1-8b-GGUF",
+  "slug": "mradermacher-liberalis-cogitator-llama-3-1-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/liberalis-cogitator-llama-3.1-8b-GGUF",
+  "created_at": "2025-09-08T10:59:33.000Z",
+  "updated_at": "2026-11-27T02:36:20.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Locutusque/liberalis-cogitator-llama-3.1-8b",
+    "base_model:quantized:Locutusque/liberalis-cogitator-llama-3.1-8b",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820238080,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "Locutusque/liberalis-cogitator-llama-3.1-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

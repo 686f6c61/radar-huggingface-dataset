@@ -2,123 +2,107 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-NVFP4 es una compilación cuantizada a 4 bits en formato NVFP4 del modelo SenseNova-Loop-9B, desarrollado originalmente por SenseNova. Esta versión la publica el usuario Kaleto y está orientada específicamente a la inferencia rápida con vLLM sobre GPUs NVIDIA Blackwell, con especial atención a la DGX Spark y su chip GB10. El modelo base emplea una arquitectura de transformer con bucles ("looped transformer"), en la que las capas 4 a 27 se ejecutan dos veces, dando lugar a 56 ejecuciones efectivas sobre 32 capas almacenadas.
+SenseNova-Loop-9B-NVFP4 es una cuantizacion de 4 bits en formato NVFP4 (W4A16) del modelo multimodal sensenova/SenseNova-Loop-9B, publicada por el usuario Kaleto. El modelo base es un transformer con bucles (looped transformer) de aproximadamente 9.656 millones de parametros que procesa texto e imagenes (pipeline image-text-to-text) y que emplea una arquitectura hibrida con 24 capas Gated DeltaNet y 8 capas de atencion completa, ademas de un esquema de dos flujos mHC (Sinkhorn) alrededor de las capas con bucles.
 
-El modelo resuelve el problema del coste de memoria y de la velocidad de decodificación del modelo original en BF16, que ocupa unos 17 GiB en memoria. Esta versión NVFP4 reduce el peso en memoria a 7,7 GiB y multiplica por aproximadamente 2,8 la velocidad de decodificación en una única GB10, alcanzando 21,2 tok/s en un solo flujo y 81,1 tok/s con cuatro flujos concurrentes. Es relevante ahora porque permite desplegar un modelo de casi 10.000 millones de parámetros en hardware de borde con memoria unificada, dejando espacio para caché KV y otros modelos.
+Esta version cuantizada esta pensada especificamente para servir el modelo con vLLM sobre GPU NVIDIA Blackwell, en particular la DGX Spark con GB10. El objetivo es reducir el peso en memoria de 17,8 GiB (BF16) a 7,2 GiB incluyendo la torre de vision, manteniendo esta en BF16, y acelerar la decodificacion hasta 26 tok/s en un solo flujo y 36,6 tok/s con decodificacion especulativa MTP.
 
-La cuantización W4A16 (pesos a 4 bits, activaciones en BF16) se generó con nvidia-modelopt 0.43 y conserva en precisión original componentes sensibles como el `lm_head`, los embeddings, las normas, los routers mHC, las compuertas de bucle, el tower de visión y la cabeza MTP. El modelo se distribuye bajo licencia Apache 2.0 y su repo ocupa 9,4 GB en disco.
+Su relevancia actual radica en que permite ejecutar un modelo multimodal de ~9,7B parametros con contexto extendido (hasta 512K mediante YaRN x2) en hardware de memoria unificada relativamente modesto, liberando espacio para la cache KV y otros modelos. La licencia es Apache 2.0, lo que facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | SenseNovaLoopForConditionalGeneration: 32 capas almacenadas, capas 4–27 ejecutadas dos veces (56 ejecuciones), mHC de dos flujos (Sinkhorn), 24 capas Gated DeltaNet + 8 capas de atención completa, YaRN ×2 hasta 512K |
-| Parámetros totales | 9.656.254.576 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | hasta 512K tokens (YaRN ×2) |
-| Tipos de cuantización | NVFP4 (E2M1, una escala E4M3 por cada 16 pesos y una escala FP32 por tensor), W4A16_NVFP4: pesos 4 bits, activaciones BF16 |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoint nvidia-modelopt 0.43), librería vLLM, código personalizado (`custom_code`) |
-| Modelo base | sensenova/SenseNova-Loop-9B, revisión `3e1ba6e8` |
-| Tamaño en disco | 9,4 GB (BF16: 19 GB) |
-| Peso en memoria | 7,7 GiB |
-| Capas cuantizadas | 200 lineales: `mlp.{gate,up,down}_proj` (32 capas), `self_attn.{q,k,v,o}_proj` (8 capas), `linear_attn.{in_proj_qkv,in_proj_z,out_proj}` (24 capas) |
-| Componentes sin cuantizar | `lm_head`, `embed_tokens`, normas, routers mHC (FP32), `loop_gate`, DeltaNet `in_proj_a/b`, `conv1d`, `A_log`/`dt_bias` (FP32), tower de visión, cabeza MTP |
-| Calibración | 64 × 1.024 tokens de texto mixto (noticias, wiki EN/DE, código, chat, role-play), ejecutados por el forward con bucles real |
+| Arquitectura | SenseNovaLoopForConditionalGeneration: 32 capas almacenadas, capas 4-27 ejecutadas dos veces (56 ejecuciones), dos flujos mHC (Sinkhorn), 24 Gated DeltaNet + 8 capas de atencion completa, YaRN x2 hasta 512K, vocabulario 248.320 |
+| Parametros totales | 9.656.254.576 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 512K tokens (YaRN x2 sobre el modelo base) |
+| Tipos de cuantizacion | NVFP4 (E2M1, una escala E4M3 por cada 16 pesos y una escala FP32 por tensor); quant_algo W4A16_NVFP4 (pesos de 4 bits, activaciones BF16) |
+| Idiomas soportados | no disponible (la calibracion incluyo texto en ingles y aleman, pero no se declara una lista oficial de idiomas) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (checkpoint de nvidia-modelopt 0.43), libreria vllm; tamano del repo 12,6 GB, 7,9 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con bucles: almacena 32 capas, pero las capas 4 a 27 se ejecutan dos veces, lo que resulta en 56 ejecuciones efectivas. La arquitectura combina 24 capas Gated DeltaNet (atención lineal) con 8 capas de atención completa, e incorpora un mecanismo mHC de dos flujos basado en Sinkhorn alrededor de las capas con bucle. El vocabulario es de 248.320 tokens y el contexto se extiende hasta 512K mediante YaRN ×2. Incluye además un tower de visión y una cabeza MTP (multi-token prediction).
+El modelo base emplea una arquitectura de transformer con bucles: almacena 32 capas, pero las capas 4 a 27 se ejecutan dos veces, lo que resulta en 56 ejecuciones efectivas. Alrededor de las capas con bucles se situa un mecanismo de dos flujos mHC basado en Sinkhorn. La atencion es hibrida: 24 capas usan Gated DeltaNet (atencion lineal) y 8 capas usan atencion completa. El vocabulario es de 248.320 tokens y el contexto se extiende hasta 512K mediante YaRN x2. Incluye una torre de vision para entrada de imagenes y una cabeza MTP (multi-token prediction) para decodificacion especulativa.
 
-La calibración de la cuantización se realizó con 64 secuencias de 1.024 tokens de texto mixto (noticias, Wikipedia en inglés y alemán, código, chat y role-play), pasadas por el forward con bucles real, de modo que los rangos de activación se recogieron sobre las dos pasadas de cada capa con bucle. No se dispone de información sobre el número total de tokens de entrenamiento del modelo base, la composición del dataset original ni si se aplicaron técnicas de RLHF o DPO.
+Esta publicacion concreta es una cuantizacion, no un reentrenamiento. Se cuantizaron 200 capas lineales: `mlp.{gate,up,down}_proj` en las 32 capas, `self_attn.{q,k,v,o}_proj` en 8 capas, `linear_attn.{in_proj_qkv,in_proj_z,out_proj}` en 24 capas, y tambien `lm_head`. Se mantuvieron intactos (identicos al original) `embed_tokens`, todas las normalizaciones, los routers mHC (FP32), `loop_gate`, `in_proj_a/b` de DeltaNet, `conv1d`, `A_log`/`dt_bias` (FP32), la torre de vision y la cabeza MTP. La calibracion se realizo con 64 secuencias de 1.024 tokens de texto mixto (noticias, wiki en ingles y aleman, codigo, chat, role-play) ejecutadas a traves del forward real con bucles, recogiendo rangos de activacion en ambas pasadas de cada capa con bucles.
 
-La innovación técnica principal de esta compilación es el uso de NVFP4 con escalas E4M3 por bloque de 16 pesos y una escala FP32 por tensor, junto con la preservación en precisión original de los componentes sensibles a la cuantización. Se ha publicado también una variante hermana, SenseNova-Loop-9B-NVFP4-MLP, que cuantiza únicamente las MLPs y queda más cerca del BF16 a cambio de menor velocidad (12 tok/s).
+Como innovacion destacable, la version del 19 de noviembre de 2026 cuantiza tambien el LM head (248K x 4096), que se lee completo en cada token decodificado; esto aporto un 22 % de velocidad adicional (31 % con MTP) y 2 GB menos de memoria, con un coste de precision (KLD medio de 0,160 frente a 0,153). No se dispone de informacion sobre el entrenamiento original del modelo base (numero de tokens, composicion del dataset, RLHF/DPO).
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno.
-- Razonamiento y matemáticas (capacidades heredadas del modelo base; sin datos de benchmarks específicos en la información disponible).
-- Generación de código (el dataset de calibración incluye código, lo que sugiere soporte, aunque no se detallan métricas).
-- Procesamiento multimodal: incluye tower de visión, por lo que el modelo base es de tipo conditional generation con entrada de imagen.
-- Predicción multi-token mediante la cabeza MTP.
-- Contexto largo de hasta 512K tokens gracias a YaRN ×2.
-- Capacidades multilingües: la calibración incluye textos en inglés y alemán, pero no se especifica la lista oficial de idiomas soportados.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles y aleman (idiomas usados en la calibracion y en las pruebas de velocidad), con soporte multilingue no documentado oficialmente.
+- Comprension de imagenes y texto (image-text-to-text) mediante la torre de vision, mantenida en BF16.
+- Razonamiento multi-turno y respuestas de hasta 384 tokens nuevos en las pruebas realizadas.
+- Decodificacion especulativa mediante la cabeza MTP incluida (BF16), con `--speculative-config '{"method": "mtp", "num_speculative_tokens": 1}'`.
+- Contexto largo de hasta 512K tokens gracias a YaRN x2.
+- Modo "thinking" desactivable (las pruebas de velocidad se hicieron con thinking off).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue en DGX Spark o GB10: el modelo está optimizado para vLLM sobre Blackwell y cabe en 7,7 GiB de memoria unificada, lo que permite servir un modelo de 9,6B parámetros en hardware de borde con espacio para caché KV y otros modelos.
-- Servicio de chat con múltiples usuarios concurrentes: con 81,1 tok/s agregados en cuatro flujos concurrentes en una GB10, es adecuado para asistentes conversacionales con carga moderada.
-- Procesamiento de documentos largos: el contexto de hasta 512K tokens permite analizar contratos, informes o bases de código extensas en una sola pasada.
-- Generación de código en entornos con recursos limitados: al ocupar solo 7,7 GiB, puede convivir con otras herramientas en la misma GPU y acelerar tareas de autocompletado o revisión de código.
-- Prototipado de aplicaciones multimodales: la presencia del tower de visión permite experimentar con tareas imagen-texto en hardware Blackwell de gama de borde.
-- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de NVFP4 frente a GGUF Q4_K_M o MLX en términos de KLD y coincidencia de token principal.
-- Investigación sobre arquitecturas con bucles: al conservar routers mHC, compuertas de bucle y DeltaNet en precisión original, es útil para estudiar el comportamiento de transformers con bucle en producción.
+- Servicio de chat en DGX Spark o GB10: el modelo decodifica a 26 tok/s en un flujo y 90 tok/s agregados en cuatro flujos concurrentes, adecuado para asistentes conversacionales en hardware de memoria unificada.
+- Despliegue multimodal en el borde: al cargar en 7,2 GiB con la torre de vision incluida, permite procesar imagenes y texto en un unico dispositivo dejando memoria libre para la cache KV.
+- Procesamiento de documentos largos: con contexto de hasta 512K tokens via YaRN x2, puede resumir o responder preguntas sobre corpus extensos en una sola pasada.
+- Generacion de codigo y explicaciones tecnicas: las pruebas de calidad y velocidad incluyen tareas de codigo y explicacion en ingles y aleman, lo que respalda su uso en asistentes de programacion.
+- Traduccion y contenido multilingue ingles-aleman: la calibracion y las pruebas cubren ambos idiomas, por lo que es adecuado para flujos de traduccion y redaccion bilingue.
+- Inferencia de alta concurrencia con vLLM: el plugin `vllm-sensenova-loop` y la decodificacion MTP permiten servir varias peticiones simultaneas con throughput agregado de 126 tok/s en cuatro flujos.
+- Prototipado de agentes con razonamiento por pasos: el contexto largo y la generacion multi-turno permiten encadenar pasos de razonamiento, aunque el soporte de tool calling no esta documentado.
 
 ## Benchmarks y rendimiento
 
-Rendimiento en DGX Spark (GB10), vLLM 0.31.0 con el plugin `vllm-sensenova-loop`, caché KV en BF16, decodificación greedy, prompt de prefill de ~4,8K tokens, decodificación de 256 tokens, sin decodificación especulativa:
+La model card no incluye resultados de benchmarks academicos (MMLU, HumanEval, GSM8K, etc.). Los datos disponibles son de velocidad y calidad de cuantizacion en DGX Spark (GB10) con vLLM 0.31.0, cache KV en BF16, seis tareas de chat en ingles y aleman, thinking off, hasta 384 tokens nuevos, greedy:
 
-| Compilación | Peso en memoria | Prefill tok/s | Decode 1 flujo | Decode 4 flujos (total) |
-|---|---:|---:|---:|---:|
-| BF16 (fuente) | 16,9 GiB | 1.785 | 7,5 tok/s | 31,1 tok/s |
-| Esta compilación | 7,7 GiB | 1.492 | 21,2 tok/s | 81,1 tok/s |
-| NVFP4-MLP | 10,5 GiB | 1.563 | 12,4 tok/s | 54,6 tok/s |
-
-Calidad frente a otras compilaciones de 4 bits, medida con KLD medio sobre 72.633 posiciones (chunks de 2.048 tokens, solo se puntúa la segunda mitad, distribución completa de 248K tokens comparada contra el GGUF BF16 de SenseNova):
-
-| Compilación | Tamaño | KLD medio ↓ | Mismo token principal ↑ |
+| Build | Pesos en memoria | Sin MTP (1 flujo / 4 flujos) | Con MTP, 1 token draft |
 |---|---:|---:|---:|
-| AtomicChat AD-Q4_K_M (GGUF, imatrix) | 5,96 GB | 0,054 | 92,6 % |
-| NVFP4-MLP | 12,4 GB | 0,087 | 90,0 % |
-| SenseNova Q4_K_M (GGUF oficial) | 5,82 GB | 0,111 | 89,2 % |
-| balllvin NVFP4 (QAD) | 8,9 GB | 0,139 | 87,3 % |
-| Esta compilación | 9,4 GB | 0,151 | 86,8 % |
+| BF16 (original) | 17,8 GiB | 7,5 / 22 tok/s | 12,2 / 31 tok/s |
+| Este build (NVFP4) | 7,2 GiB | 25,9 / 90 tok/s | 36,6 / 126 tok/s |
+| Este build antes del 2026-11-19 (LM head BF16) | 8,5 GiB | 21,3 / 75 tok/s | 27,9 / 99 tok/s |
+| NVFP4-MLP (hermano) | 10,0 GiB | 14,0 / 53 tok/s | 24,6 / 76 tok/s |
+| SenseNova AWQ (oficial) | 5,5 GiB | 27,5 / 77 tok/s | 39,4 / 104 tok/s |
 
-Como referencia, en la misma máquina el fork de llama.cpp de SenseNova (`blueswhen/llama.cpp@24ea7bb7`, CUDA, `-fa on`) ejecutó los GGUF Q4_K_M a ~600 tok/s de prefill y 4 tok/s de decodificación. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Notas de rendimiento: la memoria incluye la torre de vision; MTP anade 0,5 GiB. El token draft de la cabeza MTP se acepta el 67 % de las veces. Mas tokens draft (2 o 3) se aceptan con mas frecuencia pero no son mas rapidos en GB10. Con temperatura 1,0 / top_p 0,95 / top_k 20 en lugar de greedy, la velocidad en un flujo baja aproximadamente un 4 %. Como referencia, el fork de llama.cpp de SenseNova (CUDA, `-fa on`) con GGUF Q4_K_M alcanzo unos 600 tok/s de prefill y 4 tok/s de decodificacion en la misma maquina.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 7,7 GiB de pesos en memoria; añadir la caché KV en BF16, cuyo tamaño depende de la longitud de contexto y del número de flujos concurrentes.
-- GPUs recomendadas: NVIDIA Blackwell, en particular DGX Spark / GB10 y GB10. En GPUs NVIDIA anteriores a Blackwell no está probado, aunque vLLM puede ejecutar pesos NVFP4 mediante Marlin.
-- Cabe en GPU de consumo: no confirmado para GPUs de consumo; el hardware medido es una DGX Spark con GB10.
-- Opciones de despliegue: vLLM 0.31.0 con el plugin `vllm-sensenova-loop` (única opción medida). Para llama.cpp se recomiendan los GGUF de AtomicChat o SenseNova, que requieren el fork de llama.cpp de SenseNova. Para Apple Silicon existen builds MLX, por ejemplo de NetProjects.
-- Latencia y throughput: prefill de 1.492 tok/s, decodificación de 21,2 tok/s con un flujo y 81,1 tok/s con cuatro flujos en una GB10, sin decodificación especulativa.
+- VRAM/memoria estimada: 7,2 GiB de pesos en memoria incluyendo la torre de vision; MTP anade 0,5 GiB. El repo ocupa 12,6 GB y 7,9 GB en disco.
+- GPU recomendadas: NVIDIA Blackwell, en particular DGX Spark / GB10 y GB10; tambien otras GPU Blackwell con vLLM.
+- GPU consumer: no se especifica compatibilidad con GPU consumer; en GPU NVIDIA pre-Blackwell el modelo podria ejecutarse via Marlin en vLLM, pero el autor indica que no lo ha medido.
+- Opciones de despliegue: vLLM 0.31.0 con el plugin `vllm-sensenova-loop`; para llama.cpp se requieren los GGUF de AtomicChat o SenseNova y el fork de llama.cpp de SenseNova; en Apple Silicon existen builds MLX (por ejemplo, de NetProjects).
+- Latencia y throughput: 26 tok/s en un flujo y 90 tok/s en cuatro flujos sin MTP; 36,6 tok/s y 126 tok/s respectivamente con MTP en GB10.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Rendimiento en GB10 |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-NVFP4 (este) | 9,66B | 512K | NVFP4 safetensors | Apache 2.0 | Hugging Face (Kaleto) |
-| SenseNova-Loop-9B-NVFP4-MLP | 9,66B | 512K | NVFP4 safetensors | Apache 2.0 | Hugging Face (Kaleto) |
-| SenseNova-Loop-9B Q4_K_M (GGUF oficial) | 9,66B | 512K | GGUF | Apache 2.0 | Hugging Face (SenseNova) |
-| AtomicChat SenseNova-Loop-9B AD-Q4_K_M | 9,66B | 512K | GGUF | Apache 2.0 | Hugging Face (AtomicChat) |
-| SenseNova-Loop-9B BF16 (fuente) | 9,66B | 512K | safetensors BF16 | Apache 2.0 | Hugging Face (SenseNova) |
+| Kaleto/SenseNova-Loop-9B-NVFP4 (este) | 9,66B | hasta 512K | NVFP4 W4A16 | apache-2.0 | 25,9 / 90 tok/s (sin MTP); 36,6 / 126 tok/s (MTP) |
+| Kaleto/SenseNova-Loop-9B-NVFP4-MLP | 9,66B | hasta 512K | NVFP4 (solo MLP) | apache-2.0 | 14,0 / 53 tok/s; 24,6 / 76 tok/s |
+| sensenova/SenseNova-Loop-9B-AWQ | 9,66B | hasta 512K | AWQ | apache-2.0 | 27,5 / 77 tok/s; 39,4 / 104 tok/s |
+| sensenova/SenseNova-Loop-9B (BF16) | 9,66B | hasta 512K | BF16 safetensors | apache-2.0 | 7,5 / 22 tok/s; 12,2 / 31 tok/s |
 
-Todas las alternativas comparten la misma arquitectura y tamaño; las diferencias están en el formato de cuantización, el equilibrio calidad/velocidad y el motor de inferencia recomendado. No se dispone de comparación con modelos de otras familias en la información proporcionada.
+El build NVFP4-MLP prioriza la precision (cuantiza solo las MLP) a costa de velocidad y memoria (10,0 GiB). El AWQ oficial ocupa menos memoria (5,5 GiB) y es algo mas rapido en un flujo (27,5 tok/s) pero menor en throughput agregado sin MTP (77 frente a 90 tok/s). El BF16 original es aproximadamente 3 veces mas lento y ocupa 17,8 GiB.
 
 ## Limitaciones y advertencias
 
-- La calidad de esta compilación es la más baja del conjunto comparado en KLD (0,151) y en coincidencia de token principal (86,8 %), por debajo de las alternativas GGUF Q4_K_M y NVFP4-MLP.
-- El modelo está pensado para velocidad en Blackwell; si prima la precisión por byte, la variante NVFP4-MLP o los GGUF son mejores opciones.
-- Solo se ha medido en DGX Spark / GB10; el rendimiento en otras GPUs Blackwell o anteriores no está verificado.
-- Requiere vLLM con el plugin `vllm-sensenova-loop` y código personalizado (`custom_code`), lo que añade complejidad de despliegue.
-- No es compatible directamente con llama.cpp ni con Apple Silicon; para esos entornos hay que usar otros builds.
-- La lista de idiomas soportados no está publicada; la calibración solo cubre inglés y alemán, además de código y chat.
-- No hay datos publicados sobre sesgos, tasa de alucinación ni evaluaciones de seguridad en la información disponible.
-- El modelo base incluye visión, pero no se detallan limitaciones específicas del tower de visión en esta compilación.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los componentes de terceros.
+- La cuantizacion introduce perdida de precision: el KLD medio es 0,160 frente a 0,153 de la version con LM head en BF16 y presumiblemente menor en BF16 completo.
+- Solo se ha medido en GB10; el rendimiento en otras GPU Blackwell o en GPU pre-Blackwell via Marlin no esta verificado.
+- La torre de vision se mantiene en BF16, por lo que las capacidades visuales conservan la precision del original, pero anaden 0,85 GiB de memoria.
+- La lista oficial de idiomas no esta documentada; la calibracion solo cubre ingles y aleman.
+- El soporte de tool calling, agentes y function calling no esta documentado en la informacion disponible.
+- Riesgo de alucinacion y sesgos: no se han publicado evaluaciones especificas en la informacion proporcionada.
+- Requiere el plugin `vllm-sensenova-loop` y vLLM 0.31.0; no es un checkpoint estandar que funcione en cualquier motor sin adaptacion.
+- En llama.cpp el rendimiento es muy bajo (4 tok/s de decodificacion) por la juventud de la implementacion de la arquitectura con bucles.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar los terminos del modelo base y de las dependencias (nvidia-modelopt, vLLM).
 
 ## Enlaces
 
-- Hugging Face (esta compilación): https://huggingface.co/Kaleto/SenseNova-Loop-9B-NVFP4
+- Hugging Face (este modelo): https://huggingface.co/Kaleto/SenseNova-Loop-9B-NVFP4
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Variante NVFP4-MLP: https://huggingface.co/Kaleto/SenseNova-Loop-9B-NVFP4-MLP
+- Revision anterior con LM head en BF16: https://huggingface.co/Kaleto/SenseNova-Loop-9B-NVFP4/tree/b8e8307d
+- Hermano NVFP4-MLP: https://huggingface.co/Kaleto/SenseNova-Loop-9B-NVFP4-MLP
+- AWQ oficial: https://huggingface.co/sensenova/SenseNova-Loop-9B-AWQ
 - GGUF de AtomicChat: https://huggingface.co/AtomicChat/SenseNova-Loop-9B-GGUF
-- GGUF oficial de SenseNova: https://huggingface.co/sensenova/SenseNova-Loop-9B-GGUF
-- Build MLX de NetProjects: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-6bit
-- NVFP4 de balllvin: https://huggingface.co/balllvin/SenseNova-Loop-9B-NVFP4
+- GGUF de SenseNova: https://huggingface.co/sensenova/SenseNova-Loop-9B-GGUF
+- Build MLX: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-6bit
 - nvidia-modelopt: https://github.com/NVIDIA/TensorRT-Model-Optimizer
-- Fork de llama.cpp de SenseNova: `blueswhen/llama.cpp@24ea7bb7` (referenciado en la model card, sin URL directa disponible)

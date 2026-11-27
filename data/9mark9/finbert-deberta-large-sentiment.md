@@ -2,115 +2,106 @@
 
 ## Resumen
 
-`finbert-deberta-large-sentiment` es un clasificador de sentimiento financiero en ingles desarrollado por el usuario 9mark9. Se construye mediante fine-tuning de `microsoft/deberta-v3-large` (435 millones de parametros) sobre una mezcla de datos financieros: Financial PhraseBank, tuits financieros y titulares de notas de prensa. La tarea es de clasificacion de texto en tres clases: negativo, neutral y positivo. Resuelve el problema del analisis de sentimiento en dominios financieros, donde los modelos genericos de proposito general rinden peor por la terminologia y el tono especificos del sector.
+`finbert-deberta-large-sentiment` es un modelo de clasificación de sentimiento financiero desarrollado por el usuario 9mark9. Se trata de un ajuste fino (fine-tuning) de `microsoft/deberta-v3-large` (435 millones de parámetros) para clasificar texto financiero corto en tres categorías: negativo, neutro y positivo. El modelo se presenta como la versión "hermana mayor" y más precisa de `finbert-minilm-sentiment`, un modelo compacto del mismo autor con 33,4 millones de parámetros.
 
-El modelo se posiciona como la version grande de un hermano compacto (`9mark9/finbert-minilm-sentiment`, 33,4 M de parametros). La propuesta de valor es clara: cuando la precision importa mas que la latencia, esta variante ofrece mejoras de entre 3 y 4 puntos porcentuales en conjuntos de validacion frente al modelo pequeno, a costa de 13 veces mas parametros y aproximadamente 19 veces mas latencia en CPU. La licencia MIT y el formato safetensors facilitan su integracion en pipelines de produccion.
+El modelo resuelve el problema de analizar el tono de noticias financieras, tuits sobre mercados y titulares de notas de prensa, una tarea crítica para sistemas de trading algorítmico, monitorización de riesgo reputacional y análisis de opinión en tiempo real sobre activos cotizados. La propuesta de valor es clara: máxima precisión a costa de mayor latencia, con un rendimiento declarado de 90,16 % de accuracy en tuits financieros y 99,41 % en Financial PhraseBank.
 
-Es relevante ahora porque el analisis de sentimiento financiero a escala (noticias, redes sociales, comunicados) sigue siendo una tarea de alto volumen donde un clasificador ligero y preciso es preferible a un LLM generativo por coste y determinismo. El modelo declara resultados muy altos en PhraseBank (99,41 % de accuracy) y solidos en tuits financieros (90,16 %), con la advertencia de que los numeros dependen de la version de `transformers` utilizada.
+Es relevante ahora porque demuestra que un encoder de 435M parámetros bien ajustado puede superar de forma consistente a modelos generativos mucho más grandes en una tarea de clasificación acotada, con una licencia MIT que permite uso comercial sin restricciones y un tamaño de repositorio de solo 1,7 GB, lo que facilita su despliegue en infraestructura propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (DeBERTa-v3, atencion desacoplada y embeddings de posicion mejorados) |
+| Arquitectura | Transformer encoder (DeBERTa-v3, atención desenredada y embedding de posición relativa) |
 | Parametros totales | 435.064.835 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la model card indica evaluacion con 96 tokens; el maximo de DeBERTa-v3-large es 512, no confirmado por el autor) |
-| Tipos de cuantizacion | no disponible (pesos publicados en fp32/safetensors; no se documentan variantes GGUF, ONNX ni int8) |
-| Idiomas soportados | en (ingles) |
+| Longitud de contexto | no disponible (entrenado con 96 tokens según la model card) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, fp32) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Modelo base | microsoft/deberta-v3-large |
 | Pipeline | text-classification |
-| Tarea | Clasificacion de sentimiento financiero (negativo / neutral / positivo) |
-| Tamano del repositorio | 1,7 GB |
-| Libreria | transformers |
-| Descargas | 39 |
+| Etiquetas | negative / neutral / positive |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder basado en DeBERTa-v3-large, que introduce atencion desacoplada (contenido y posicion calculados por separado) y un mecanismo de embeddings de posicion mejorado respecto a DeBERTa-v2. Sobre este backbone se anade una cabeza de clasificacion de tres clases para la tarea de sentimiento financiero. No se trata de un modelo generativo ni de mezcla de expertos: es un clasificador discriminativo puro, lo que implica que su salida es una distribucion sobre tres etiquetas y no texto libre.
+El modelo parte de `microsoft/deberta-v3-large`, un transformer encoder de 435M parámetros que introduce atención desenredada (disentangled attention) y embeddings de posición relativa, mejoras que le permiten capturar dependencias sintácticas y semánticas con mayor eficacia que BERT o RoBERTa en tareas de comprensión. Sobre esta base se aplicó un ajuste fino supervisado para clasificación de tres clases, con una cabeza de clasificación estándar.
 
-El entrenamiento parte de los pesos preentrenados de `microsoft/deberta-v3-large` y aplica fine-tuning con la misma mezcla de datos que la version compacta v3: Financial PhraseBank, tuits financieros de `zeroshot/twitter-financial-news-sentiment` y titulares de notas de prensa de `Jean-Baptiste/financial_news_sentiment`. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta de la mezcla, la presencia de RLHF/DPO (no aplicable a una tarea de clasificacion) ni hiperparametros de fine-tuning. Si se documenta que los conjuntos de evaluacion son held-out y no se usaron para entrenar ni para seleccionar el modelo, y que las diferencias frente al modelo pequeno se acompanan de intervalos de confianza bootstrap (2.000 remuestreos). La evaluacion se realizo en fp32 con 96 tokens de longitud.
-
-Una innovacion destacable es la transparencia metodologica: el autor reporta intervalos de confianza pareados y advierte explicitamente de que los resultados cambian segun la version de `transformers` (4.57.6 frente a 5.x), sin aislar la causa. Esta trazabilidad es poco habitual en fine-tunes pequenos y facilita la reproducibilidad.
+El entrenamiento utilizó la misma mezcla de datos que el modelo compacto del autor (v3): Financial PhraseBank, tuits financieros y titulares de notas de prensa. Las revisiones de los datasets están fijadas en `training/common.py`. El autor documenta explícitamente que la evaluación se realizó en fp32 con 96 tokens de longitud y con un entorno fijado (torch 2.8.0, transformers 4.57.6), y advierte que con transformers 5.x los resultados en tuits bajan de 90,16 % a 89,53 %. No se documentan fases de RLHF ni DPO, al tratarse de una tarea de clasificación supervisada. La regla de publicación se fijó antes del entrenamiento: solo se publicaría si la accuracy en tuits superaba al modelo v3 en al menos 2,0 puntos.
 
 ## Capacidades
 
-- Clasificacion de sentimiento financiero en tres clases (negativo, neutral, positivo) sobre texto corto en ingles.
-- Analisis de frases de informes financieros, titulares de noticias y mensajes de redes sociales de tematica bursatil.
-- Salida de probabilidades por clase, apta para umbrales y agregaciones posteriores.
-- No dispone de generacion de texto, razonamiento, codigo ni matematicas: es un clasificador, no un LLM.
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidad multilingue limitada al ingles; no se declaran otros idiomas.
-- No incluye modo thinking, vision ni audio.
-- Compatible con `text-embeddings-inference` y endpoints compatibles segun los tags del repositorio.
+- Clasificación de sentimiento financiero en tres clases (negativo, neutro, positivo) sobre texto corto en inglés.
+- Análisis de titulares de noticias financieras y notas de prensa.
+- Análisis de sentimiento en tuits sobre mercados y activos financieros.
+- Procesamiento de frases de informes financieros (Financial PhraseBank).
+- Inferencia en fp32 con ventana de 96 tokens, adecuada para frases y titulares cortos.
+- No soporta tool calling, function calling, agentes, generación de texto, razonamiento multi-paso, visión ni audio.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Monitorizacion de sentimiento en noticias financieras: el modelo clasifica titulares y entradas de prensa en tiempo real para alimentar paneles de riesgo reputacional o de mercado, aprovechando su alta precision en PhraseBank (99,41 %) para textos formales.
-- Analisis de redes sociales bursatiles: clasificacion de tuits financieros a gran volumen (90,16 % de accuracy en validacion) para detectar cambios de tono en torno a un valor o sector, con un coste computacional bajo frente a un LLM generativo.
-- Filtrado previo en pipelines de senales de trading: el clasificador actua como primera etapa que descarta o prioriza noticias segun su polaridad antes de pasarlas a modelos mas costosos, reduciendo el volumen a procesar.
-- Enriquecimiento de bases de datos de eventos financieros: etiquetado retrospectivo de grandes corpus de comunicados y titulares para construir series temporales de sentimiento por empresa o sector.
-- Moderacion y triaje de alertas en mesas de analisis: clasificacion automatica de mensajes entrantes para que los analistas prioricen los de sentimiento negativo o inusual.
-- Investigacion academica en finanzas computacionales: uso como baseline fuerte y reproducible (licencia MIT, intervalos de confianza publicados) para comparar metodos de analisis de sentimiento en dominios financieros.
-- Integracion en APIs de datos financieros: servicio de clasificacion bajo demanda para clientes que necesitan etiquetar textos propios con un modelo ligero y determinista, desplegable con `transformers` o `text-embeddings-inference`.
+- Monitorización de sentimiento en tiempo real sobre tuits financieros: el modelo clasifica cada tuit en bearish/bullish/neutral con un 90,16 % de accuracy en el conjunto de validación, lo que permite alimentar paneles de sentimiento de mercado con una granularidad por activo.
+- Análisis de titulares de notas de prensa para alertas de riesgo: con un 78,28 % de accuracy en titulares de notas de prensa, se puede integrar en un pipeline que marque comunicados corporativos con tono negativo para revisión humana inmediata.
+- Filtrado previo en sistemas de trading algorítmico: la clasificación de sentimiento de noticias y tuits puede actuar como señal auxiliar o filtro de entrada antes de ejecutar estrategias, aprovechando la licencia MIT para uso comercial sin restricciones.
+- Enriquecimiento de bases de datos de noticias financieras: procesar por lotes miles de titulares históricos para etiquetar su tono y construir series temporales de sentimiento por empresa o sector.
+- Análisis de opinión en foros y redes sociales financieras: clasificar comentarios de inversores minoristas para detectar cambios de percepción sobre un valor, con la ventaja de un modelo de 435M parámetros que cabe en una GPU consumer.
+- Moderación y triaje de contenido en plataformas financieras: detectar mensajes con tono negativo o alarmista para su revisión por parte de equipos de compliance.
+- Investigación académica en finanzas computacionales: servir como baseline fuerte y reproducible (entorno fijado, revisiones de datasets fijadas) para experimentos de análisis de sentimiento financiero.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente; `verified: false` en el model-index). Evaluacion en fp32 con 96 tokens y `transformers` 4.57.6. Las diferencias se comparan con el modelo compacto `9mark9/finbert-minilm-sentiment` (v3), con intervalos de confianza bootstrap al 95 %.
+Resultados declarados por el autor (no verificados de forma independiente, `verified: false` en el model-index). Todos en fp32 con transformers 4.57.6 y 96 tokens.
 
-| Conjunto | n | Accuracy v3 | Accuracy este modelo | Cambio (puntos) [IC 95 %] | Macro-F1 v3 | Macro-F1 este modelo | Cambio [IC 95 %] |
+| Conjunto | n | Accuracy v3 (MiniLM) | Accuracy este modelo | Cambio (puntos) [IC 95 %] | Macro-F1 v3 | Macro-F1 este modelo | Cambio [IC 95 %] |
 |---|---|---|---|---|---|---|---|
-| PhraseBank `AllAgree` test (15 %) | 340 | 97,94 | 99,41 | +1,47 [+0,00, +3,24] | 96,43 | 99,28 | +2,85 [+0,28, +5,97] |
-| Tuits financieros, validacion | 2.388 | 86,43 | 90,16 | +3,73 [+2,47, +5,07] | 83,00 | 87,93 | +4,94 [+3,36, +6,57] |
-| Titulares de prensa (JB), test | 267 | 75,28 | 78,28 | +3,00 [-2,25, +8,24] | 59,04 | 61,37 | +2,33 [-9,45, +14,79] |
-| SEntFiN headlines, test | 933 | 75,99 | 79,74 | +3,75 [+1,29, +6,22] | 76,27 | 80,30 | +4,03 [+1,53, +6,51] |
+| PhraseBank AllAgree test (15 %) | 340 | 97,94 | **99,41** | +1,47 [+0,00, +3,24] | 96,43 | **99,28** | +2,85 [+0,28, +5,97] |
+| Tuits financieros, validación | 2.388 | 86,43 | **90,16** | +3,73 [+2,47, +5,07] | 83,00 | **87,93** | +4,94 [+3,36, +6,57] |
+| Titulares notas de prensa (JB), test | 267 | 75,28 | **78,28** | +3,00 [-2,25, +8,24] | 59,04 | **61,37** | +2,33 [-9,45, +14,79] |
+| SEntFiN titulares, test | 933 | 75,99 | **79,74** | +3,75 [+1,29, +6,22] | 76,27 | **80,30** | +4,03 [+1,53, +6,51] |
 
-Precision / recall por clase (negativo / neutral / positivo):
+Precisión y recall por clase (negativo / neutro / positivo):
 
-| Conjunto | Precision v3 | Recall v3 | Precision este modelo | Recall este modelo |
+| Conjunto | Precisión v3 | Recall v3 | Precisión este modelo | Recall este modelo |
 |---|---|---|---|---|
 | PhraseBank | 0,953 / 1,000 / 0,944 | 0,911 / 0,990 / 0,988 | 0,978 / 1,000 / 0,989 | 1,000 / 0,990 / 1,000 |
 | Tuits | 0,725 / 0,946 / 0,752 | 0,850 / 0,870 / 0,857 | 0,831 / 0,947 / 0,819 | 0,879 / 0,908 / 0,897 |
-| JB headlines | 0,667 / 0,764 / 0,733 | 0,167 / 0,853 / 0,667 | 0,667 / 0,794 / 0,766 | 0,167 / 0,865 / 0,727 |
+| JB titulares | 0,667 / 0,764 / 0,733 | 0,167 / 0,853 / 0,667 | 0,667 / 0,794 / 0,766 | 0,167 / 0,865 / 0,727 |
 | SEntFiN | 0,850 / 0,676 / 0,811 | 0,722 / 0,825 / 0,723 | 0,891 / 0,696 / 0,866 | 0,792 / 0,836 / 0,762 |
 
-Nota del autor: con `transformers` 5.x los mismos pesos obtienen 89,53 % en tuits (+3,10 frente a v3, IC 95 % [+1,80, +4,44]) y el resto de conjuntos no cambia. Se recomienda instalar `transformers>=4.51,<5` para reproducir los numeros reportados.
+Nota: con transformers 5.x, el mismo modelo obtiene 89,53 % en tuits (+3,10 sobre v3, IC 95 % [+1,80, +4,44]); el resto de conjuntos no cambia. El autor no aisló qué cambio de la librería causa la diferencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 1,7 GB de pesos mas overhead de activaciones; en la practica, menos de 2 GB para lotes pequenos.
-- VRAM estimada en fp16/bf16: aproximadamente 0,9 GB de pesos; en int8, alrededor de 0,45 GB (cuantizaciones no documentadas oficialmente, estimaciones a partir del numero de parametros).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; A100, H100, L4, T4, RTX 4090, RTX 3090 y RTX 3060 son suficientes y en la mayoria de casos sobredimensionadas para un encoder de 435 M.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 2060 en adelante) e incluso en iGPU con suficiente memoria compartida.
-- Despliegue: `transformers` (Pipeline de text-classification), `text-embeddings-inference` (tag declarado), servidores de inferencia compatibles con endpoints de Hugging Face. No se documentan variantes GGUF para llama.cpp/Ollama ni ONNX.
-- Latencia y throughput: no se publican cifras absolutas; la model card indica que este modelo tiene aproximadamente 19 veces la latencia en CPU del compacto de 33,4 M de parametros. En GPU la diferencia se reduce, pero sigue siendo notablemente mas lento que el modelo pequeno.
+- VRAM estimada para inferencia en fp32: aproximadamente 1,7 GB de pesos (435M parámetros × 4 bytes), más overhead de activaciones; en la práctica menos de 3 GB para lotes pequeños.
+- VRAM estimada en fp16/bf16: aproximadamente 0,9 GB de pesos; en la práctica menos de 2 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A10, A100 o H100 funcionan sin problema.
+- Cabe holgadamente en GPU consumer: sí, en cualquier GPU consumer moderna con 4 GB o más.
+- Opciones de despliegue: transformers (pipeline de text-classification), Text Embeddings Inference (el tag `text-embeddings-inference` está presente), endpoints compatibles, y exportación a ONNX para servir con ONNX Runtime.
+- Latencia y throughput: el autor indica que este modelo tiene aproximadamente 19 veces la latencia en CPU del modelo compacto de 33,4M parámetros; no se publican cifras absolutas de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Accuracy tuits financieros | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Accuracy tuits financieros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `9mark9/finbert-deberta-large-sentiment` | 435 M | no disponible | 90,16 % (validacion) | MIT | Hugging Face |
-| `9mark9/finbert-minilm-sentiment` (v3) | 33,4 M | no disponible | 86,43 % (validacion) | no disponible en la informacion | Hugging Face |
-| FinBERT (ProsusAI/finbert) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face |
-| DeBERTa-v3-large base | 435 M | 512 tokens (segun arquitectura, no confirmado por el autor) | no aplica (no es clasificador de sentimiento) | MIT | Hugging Face |
+| finbert-deberta-large-sentiment | 435M | 96 tokens (entrenamiento) | 90,16 % | MIT | Hugging Face |
+| 9mark9/finbert-minilm-sentiment (v3) | 33,4M | no disponible | 86,43 % | no disponible | Hugging Face |
+| ProsusAI/finbert | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| yiyanghkust/finbert-tone | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
-La comparacion principal es interna: frente al modelo compacto del mismo autor, esta variante gana entre 1,5 y 4 puntos de accuracy segun el conjunto, a cambio de 13 veces mas parametros y unas 19 veces mas latencia en CPU. Frente a FinBERT y otras alternativas no se dispone de datos comparativos en la informacion proporcionada.
+La comparación directa disponible en la información es con el modelo compacto del mismo autor, que ofrece un 86,43 % de accuracy en tuits frente al 90,16 % de este modelo, a cambio de una latencia en CPU aproximadamente 19 veces menor. Para el resto de alternativas del ecosistema FinBERT no se dispone de datos de rendimiento en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no soporta castellano ni otros idiomas; el rendimiento en textos no ingleses no esta evaluado.
-- Clasificador de tres clases: no genera explicaciones ni texto; la salida es una etiqueta y probabilidades.
-- Riesgo de alucinacion no aplicable en sentido generativo, pero si de clasificacion erronea en textos ambiguos, ironicos o con sentimiento mixto; el recall en la clase negativa de titulares JB es muy bajo (0,167), lo que indica dificultad para detectar negativos sutiles en ese dominio.
-- Sensibilidad a la version de la libreria: los resultados en tuits cambian de 90,16 % a 89,53 % entre `transformers` 4.x y 5.x; conviene fijar la version en produccion.
-- Resultados no verificados de forma independiente (`verified: false`); proceden del autor del modelo.
-- Longitud de contexto no documentada por el autor; la evaluacion usa 96 tokens, por lo que el comportamiento en textos largos no esta caracterizado.
-- Sin cuantizaciones oficiales publicadas (GGUF, ONNX, int8); el despliegue en CPU a gran escala puede ser costoso frente al modelo compacto.
-- Licencia MIT: permite uso comercial y modificacion, pero no se documentan garantias ni limitaciones adicionales por parte del autor.
-- Sin datos de sesgo demografico o geografico; al estar entrenado en textos financieros en ingles, puede reflejar sesgos del dominio (por ejemplo, sobrerrepresentacion de empresas cotizadas en mercados anglosajones).
-- Modelo con muy baja adopcion (39 descargas, 0 likes): no hay evidencia de uso en produccion ni comunidad que reporte fallos.
+- Solo admite inglés; no se ha entrenado ni evaluado en castellano ni en otros idiomas.
+- Ventana de contexto corta (96 tokens en entrenamiento): no apta para documentos largos, solo frases y titulares.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí de clasificación errónea en textos ambiguos o con sarcasmo, especialmente en la clase negativa: el recall de la clase negativa en titulares JB es de solo 0,167.
+- Los resultados declarados no están verificados de forma independiente (`verified: false`); dependen críticamente de la versión de transformers (diferencia de 0,63 puntos en tuits entre 4.x y 5.x).
+- El conjunto de titulares JB muestra intervalos de confianza que cruzan cero en accuracy y macro-F1, por lo que la mejora frente al modelo compacto no es estadísticamente significativa en ese conjunto.
+- Sesgos conocidos: no documentados por el autor; al entrenarse con datos financieros en inglés, puede reflejar sesgos de dominio y de las fuentes de noticias utilizadas.
+- Licencia MIT: permite uso comercial, modificación y redistribución sin restricciones, pero se recomienda conservar el aviso de copyright.
+- En producción, fijar la versión de transformers (`>=4.51,<5`) para reproducir los números reportados.
 
 ## Enlaces
 

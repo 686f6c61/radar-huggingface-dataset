@@ -2,52 +2,50 @@
 
 ## Resumen
 
-WeMM-Video-4B es el checkpoint denso de 4B de la familia WeMM-Video, desarrollada por Tencent para la comprensión y el razonamiento conjunto de audio y vídeo. El modelo acepta texto, imágenes, audio y vídeo como entrada y genera respuestas de texto, combinando fotogramas de vídeo con su banda sonora original para describir eventos, transcribir voz y razonar sobre lo que se ve y se oye. Es relevante porque cubre una modalidad poco frecuente en modelos abiertos de este tamaño: el entendimiento audio-visual nativo, no solo vídeo silencioso.
+WeMM-Video-4B es un modelo multimodal denso de 4B (5.611.749.896 parámetros reales según los safetensors) desarrollado por Tencent, diseñado para comprensión y razonamiento conjunto de audio y vídeo. Forma parte de la familia WeMM-Video, una línea bilingüe chino-inglés que acepta texto, imágenes, audio y vídeo como entradas y genera respuestas de texto. El modelo resuelve el problema de razonar de forma conjunta sobre lo que se ve y lo que se oye en un vídeo, algo que los modelos puramente visuales no pueden abordar.
 
-La familia se ha preentrenado con aproximadamente 1,2 billones de tokens multimodales y se ha post-entrenado con técnicas de destilación multi-profesor (OPD), DPO anti-repetición (MrDPO) y aprendizaje por refuerzo especializado. El modelo está disponible en BF16 safetensors, con variantes cuantizadas FP8 Block128, AWQ W4A16, GGUF Q4_K_M y NVFP4 W4A16, y se distribuye bajo licencia Apache 2.0.
+La arquitectura combina codificadores de visión y audio independientes que convierten los medios en tokens que el modelo de lenguaje procesa junto al texto, con marcas temporales en los fotogramas de vídeo. Se entrenó con aproximadamente 1,2 billones de tokens multimodales y un post-entrenamiento que incluye OPD multi-profesor, MrDPO anti-repetición y aprendizaje por refuerzo especializado.
 
-El checkpoint declara 5.611.749.896 parámetros en los ficheros safetensors (pese a la denominación "4B" de la familia), un repositorio de 11,2 GB y soporte bilingüe chino-inglés. La longitud de contexto no se especifica en la información disponible.
+Es relevante ahora porque cubre una modalidad (vídeo con banda sonora original) poco frecuente en modelos de este tamaño, con licencia Apache 2.0, variantes cuantizadas oficiales (FP8, AWQ, GGUF, NVFP4) y soporte de despliegue en vLLM y SGLang mediante parches específicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con codificadores de visión y audio separados que proyectan tokens al modelo de lenguaje (tag `qwen3_5`, `custom_code`) |
-| Parametros totales | 5.611.749.896 (según safetensors) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (el ejemplo de servicio usa `--max-model-len 8192`) |
+| Arquitectura | Transformer multimodal con codificadores de visión y audio separados que alimentan tokens al modelo de lenguaje (base qwen3_5) |
+| Parametros totales | 5.611.749.896 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible (el ejemplo de servicio usa `--max-model-len 8192`) |
 | Tipos de cuantizacion | BF16, FP8 Block128, AWQ W4A16, GGUF Q4_K_M, NVFP4 W4A16 |
-| Idiomas soportados | inglés (en), chino (zh) |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16), más variantes FP8, AWQ, GGUF y NVFP4 |
+| Formato de pesos | Safetensors (BF16, 10,45 GiB); GGUF para la variante cuantizada |
 
 ## Arquitectura y entrenamiento
 
-WeMM-Video-4B sigue una arquitectura multimodal en la que codificadores de visión y audio independientes convierten los medios en tokens que el modelo de lenguaje procesa junto al texto. Los fotogramas de vídeo incorporan marcas temporales (timestamps), lo que permite al modelo razonar sobre la secuencia temporal de los eventos. El pipeline declarado es `video-text-to-text` y la etiqueta de arquitectura apunta a `qwen3_5` con código personalizado (`trust_remote_code=True`).
+WeMM-Video-4B es un transformer multimodal denso en el que dos codificadores especializados, uno de visión y otro de audio, transforman los medios en tokens que el modelo de lenguaje procesa de forma conjunta con el texto. Los fotogramas de vídeo llevan marcas temporales, lo que permite al modelo razonar sobre la secuencia de eventos y alinear lo visual con la banda sonora original. La familia se preentrenó con aproximadamente 1,2 billones de tokens multimodales.
 
-El entrenamiento consta de un preentrenamiento con aproximadamente 1,2 billones de tokens multimodales, seguido de un post-entrenamiento en tres fases: destilación multi-profesor (OPD), DPO anti-repetición (MrDPO) y aprendizaje por refuerzo con especialistas. El modelo admite dos modos de chat: instructivo por defecto (`enable_thinking=False`) y modo razonamiento (`enable_thinking=True`).
+El post-entrenamiento combina tres fases: OPD multi-profesor (destilación desde varios modelos docentes), MrDPO anti-repetición (una variante de DPO orientada a reducir bucles y repeticiones en la generación) y aprendizaje por refuerzo especializado. El modelo soporta dos modos de chat mediante `enable_thinking`: modo instruct (respuesta directa, por defecto) y modo razonamiento (respuesta con cadena de pensamiento).
 
 ## Capacidades
 
-- Comprensión conjunta de vídeo y audio: describe eventos y resume el habla a partir de fotogramas y banda sonora.
-- Transcripción de voz en audio e vídeo.
-- Comprensión de vídeo silencioso, audio independiente, imágenes y texto.
-- Razonamiento multimodal: el ejemplo de la model card incluye preguntas de aritmética temporal y descripción de imágenes.
-- Modo de razonamiento explícito activable mediante `enable_thinking=True`.
-- Respuestas en chino e inglés.
-- Procesamiento de vídeo con control de FPS, número mínimo/máximo de fotogramas y píxeles totales.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Comprensión conjunta de audio y vídeo: describe eventos, transcribe el habla y razona sobre lo que se ve y se oye en la misma secuencia.
+- Procesamiento de vídeo silencioso, audio independiente, imágenes y texto como entradas individuales.
+- Generación de respuestas en chino e inglés.
+- Modo razonamiento opcional (`enable_thinking=True`) además del modo instruct por defecto.
+- Extracción de características (`feature-extraction`) además de generación video-text-to-text.
+- Procesamiento de vídeo configurable en fps, número mínimo y máximo de fotogramas y píxeles totales.
+- No se documenta soporte explícito de tool calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Análisis de reuniones y videoconferencias: el modelo puede procesar el vídeo junto con la pista de audio para transcribir intervenciones y resumir lo tratado, aprovechando el procesamiento conjunto de fotogramas y sonido.
-- Accesibilidad audiovisual: generación de descripciones de escenas y subtítulos combinados para contenido de vídeo, útil en plataformas de streaming o archivos audiovisuales.
-- Moderación y catalogación de vídeo: clasificación y descripción automática de clips con audio (por ejemplo, detección de eventos descritos verbalmente) en pipelines de ingestión de contenido.
-- Análisis de material de vigilancia o deportivo: descripción de lo que ocurre en pantalla con marcas temporales, permitiendo localizar eventos en el tiempo.
-- Transcripción y análisis de podcasts o grabaciones de audio: uso del modo audio independiente para transcribir y responder preguntas sobre el contenido hablado.
-- Asistentes multimodales en aplicaciones: integración vía vLLM o SGLang con soporte de imagen, vídeo y audio en la misma petición (`--limit-mm-per-prompt`), para interfaces conversacionales que reciben medios del usuario.
-- Investigación en comprensión audio-visual: base de 4B parámetros con pesos abiertos y variantes cuantizadas para experimentación académica en entornos con recursos limitados.
+- Análisis de reuniones y videoconferencias: el modelo puede transcribir el habla de la grabación y resumir lo tratado, combinando la pista de audio con los fotogramas para identificar ponentes o contenido visual compartido.
+- Accesibilidad y subtitulado enriquecido: generar descripciones de escenas con contexto sonoro (no solo diálogo) para vídeos en inglés o chino, útil en plataformas de contenido.
+- Moderación y auditoría de vídeo: detectar y describir eventos audiovisuales en clips, con marcas temporales que permiten localizar el momento concreto.
+- Documentación de material de archivo: catalogar vídeos históricos o científicos (por ejemplo, grabaciones de misiones espaciales) describiendo imagen y sonido de forma conjunta.
+- Asistentes de análisis de contenido multimedia: integrar el modelo en pipelines que reciben un MP4 con banda sonora y devuelven un informe textual estructurado.
+- Investigación en multimodalidad: usar la variante de extracción de características para experimentar con representaciones conjuntas de audio y vídeo.
+- Procesamiento por lotes en servidor: desplegar con vLLM o SGLang (con parche WeMM) para atender peticiones de imagen, vídeo y audio con límites configurables por prompt.
 
 ## Benchmarks y rendimiento
 
@@ -55,37 +53,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso en BF16: 10,45 GiB en ficheros de pesos; el repositorio completo ocupa 11,2 GB. La VRAM necesaria debe dimensionarse para los pesos completos, las entradas multimedia y la caché de generación (según la model card).
-- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por tamaño, el BF16 requiere GPUs con al menos ~16-24 GB de VRAM considerando overhead; las variantes AWQ W4A16, GGUF Q4_K_M y NVFP4 permiten despliegue en GPUs de consumo, aunque no se confirman modelos concretos.
-- Cabe en GPU de consumo: probable con las variantes cuantizadas (AWQ, GGUF Q4_K_M, NVFP4); no confirmado explícitamente en la información disponible.
-- Opciones de despliegue: Transformers (con `trust_remote_code=True`), vLLM parcheado (0.18.0 y 0.31.0 para BF16, con `--mamba-ssm-cache-dtype float32` y `--no-enable-prefix-caching`) y SGLang (perfil WeMM BF16). Requiere instalar el parche de runtime de WeMM.
+- Pesos BF16: 10,45 GiB de archivos de pesos; el repositorio completo ocupa 11,2 GB.
+- VRAM estimada: superior a los pesos por la caché de generación y los tokens de medios; para BF16 conviene reservar al menos 16-24 GB según la resolución y duración del vídeo.
+- Variantes cuantizadas oficiales que reducen requisitos: FP8 Block128, AWQ W4A16, GGUF Q4_K_M y NVFP4 W4A16.
+- GPU recomendadas: A100 o H100 para BF16 en producción; GPUs consumer de gama alta (por ejemplo, RTX 4090) previsiblemente viables con cuantización, aunque no se confirma en la información disponible.
+- Despliegue: vLLM parcheado (0.18.0 y 0.31.0 para BF16) y SGLang con parche WeMM BF1; también Transformers con `trust_remote_code=True`.
+- El ejemplo de vLLM usa `--max-model-len 8192`, `--mamba-ssm-cache-dtype float32` y límites multimodales de 4 imágenes, 2 vídeos y 2 audios por prompt.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la información proporcionada para establecer una comparativa fiable. Como referencia estructural, se trata de un modelo denso de ~5,6B parámetros, multimodal (texto, imagen, audio y vídeo), bilingüe en/zh y con licencia Apache 2.0, lo que lo sitúa en la categoría de modelos audio-visuales abiertos de tamaño medio; la comparación concreta con alternativas queda como no disponible.
+No disponible: la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
-- Longitud de contexto no especificada; el ejemplo de servicio de vLLM usa 8192 tokens, lo que puede limitar el análisis de vídeos largos o conversaciones extensas.
-- Riesgo de alucinación inherente a los modelos generativos multimodales; no se documentan evaluaciones de fidelidad en la información disponible.
-- Sesgos: no se documentan sesgos conocidos en la model card.
-- Requiere `trust_remote_code=True` y código personalizado, lo que implica revisar el código remoto antes de usarlo en producción.
-- El despliegue con vLLM requiere un parche específico de runtime y versiones concretas (0.18.0 / 0.31.0), lo que añade complejidad operativa.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los codificadores y datos subyacentes, no detalladas en la información disponible.
-- El procesamiento de vídeo exige configurar FPS y límites de fotogramas/píxeles; una configuración inadecuada puede degradar la calidad de la respuesta o el consumo de memoria.
+- Idiomas limitados a inglés y chino; no se documenta soporte de castellano.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad en la información disponible.
+- Sesgos: no se documentan análisis de sesgo en la model card.
+- Requiere `trust_remote_code=True` y código personalizado (`custom_code`), lo que implica ejecutar código del autor.
+- El despliegue en vLLM y SGLang exige parches específicos del proyecto; no funciona con instalaciones estándar sin ellos.
+- La longitud de contexto no se especifica; el ejemplo de servicio limita a 8192 tokens.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los codificadores y datos subyacentes.
+- No se documenta soporte de tool calling ni de flujos de agentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Video-4B
-- Colección WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
 - Informe técnico (arXiv): https://arxiv.org/abs/2611.26409
 - Página del paper en Hugging Face: https://huggingface.co/papers/2611.26409
 - Repositorio GitHub: https://github.com/Tencent/WeMM-Video
+- Colección WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
 - Variante FP8 Block128: https://huggingface.co/tencent/WeMM-Video-4B-FP8
 - Variante AWQ W4A16: https://huggingface.co/tencent/WeMM-Video-4B-AWQ
 - Variante GGUF Q4_K_M: https://huggingface.co/tencent/WeMM-Video-4B-GGUF
 - Variante NVFP4 W4A16: https://huggingface.co/tencent/WeMM-Video-4B-NVFP4
 - Guía de servicio: https://github.com/Tencent/WeMM-Video/blob/main/docs/serving.md
-- Parche de runtime: https://github.com/Tencent/WeMM-Video/blob/main/patch/README.md
+- Instalación del parche de runtime: https://github.com/Tencent/WeMM-Video/blob/main/patch/README.md

@@ -30,7 +30,7 @@
     "license:cc-by-nc-sa-4.0",
     "region:us"
   ],
-  "likes": 9,
+  "likes": 10,
   "downloads_30d": 220,
   "trending_score": 0,
   "parameters": null,
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/sa",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    },
-    {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/youtube/home-refresh-1",
-      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/watch?v=y2QS1C1n_V0",
-      "snippet": "قناة فرفشة Playing from يا لولو في نونو - قناة فرفشة للأطفال Mix"
-    },
-    {
-      "title": "حرف الياء ي - يا يـو يي- أشكال الحرف - كتابة حرف الياء-الأصوات الطّويلة ...",
-      "url": "https://www.youtube.com/watch?v=I5-WQxF_LLc",
-      "snippet": "Jun 20, 2022 · و ي - من الألف إلى الياء ، فيديوهات تعليمية للأطفال والمبتدئين، (الحركات) الأصوات القصيرة (الفتحة،الضّمّة ..."
-    },
-    {
-      "title": "YouTube Arabia",
-      "url": "https://www.youtube.com/YouTubeArabia/about",
-      "snippet": "Share your videos with friends, family, and the world"
-    }
-  ]
+  "sources": []
 }

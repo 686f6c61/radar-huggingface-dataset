@@ -2,48 +2,51 @@
 
 ## Resumen
 
-ager-1.0 es un modelo de lenguaje de aproximadamente 9.200 millones de parametros (9.197.093.888 segun los pesos en safetensors) desarrollado por QianqianTech y orientado al dominio de la agricultura, segun la etiqueta `agriculture` de su model card. La version aqui descrita es una cuantizacion estatica en formato GGUF realizada por mradermacher sobre el modelo base original, lo que permite su ejecucion en hardware de consumo mediante llama.cpp y herramientas compatibles.
+ager-1.0 es un modelo de lenguaje de la familia Qwen, desarrollado por QianqianTech, especializado en el dominio de la agricultura. Esta ficha corresponde a la version cuantizada en formato GGUF publicada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo base cuenta con 9.197.093.888 parametros (aproximadamente 9.200 millones), lo que lo situa en la categoria de modelos de tamano medio, y esta etiquetado con los idiomas chino (zh) e ingles (en).
 
-El modelo esta etiquetado como conversacional y declara soporte para chino (`zh`) e ingles (`en`). Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su modificacion. La model card del repositorio GGUF no aporta detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks; toda la informacion tecnica disponible se limita a los metadatos de pesos, etiquetas y los ficheros de cuantizacion publicados.
+La relevancia de este modelo radica en su especializacion vertical: frente a los modelos generalistas, ager-1.0 se orienta a tareas del sector agrario, un nicho donde la terminologia tecnica, los datos agronomicos y las recomendaciones de cultivo requieren un conocimiento especifico. La publicacion de cuantizaciones GGUF (desde Q2_K hasta f16) permite ejecutar el modelo en hardware de consumo, algo especialmente util para investigadores y desarrolladores que trabajan en entornos rurales o con infraestructura limitada.
 
-Su relevancia practica reside en la especializacion sectorial: frente a modelos generalistas del mismo tamano, un modelo afinado para agricultura puede ofrecer terminologia y respuestas mas ajustadas en consultas agronomicas, siempre que se valide su calidad con evaluaciones propias, ya que no se han publicado metricas publicas.
+Esta ficha documenta exclusivamente la version cuantizada de mradermacher, que mantiene la licencia Apache 2.0 del modelo original. La informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada, por lo que varios apartados tecnicos se marcan como no disponibles. El repositorio ocupa 85,5 GB e incluye tanto los pesos cuantizados como los suplementos multimodales (mmproj).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformers; detalles internos no publicados) |
+| Arquitectura | no disponible (modelo base de la familia Qwen, segun tags) |
 | Parametros totales | 9.197.093.888 (~9,2 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q4_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS (segun metadatos); publicados en el repo: mmproj-Q8_0, mmproj-f16, Q4_K_S, f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj-Q8_0 y mmproj-f16 |
 | Idiomas soportados | chino (zh), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); modelo base original presumiblemente en safetensors |
+| Formato de pesos | GGUF (cuantizado) y safetensors (modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo base QianqianTech/ager-1.0 en la documentacion proporcionada. Los metadatos indican que se carga con la libreria `transformers` y que el proceso de cuantizacion se realizo con `convert_type: hf` y `output_tensor_quantised: 1`, lo que sugiere un transformer denso estandar convertido desde pesos Hugging Face. El tamano de ~9,2 B de parametros es coherente con un modelo de la familia de 7-9 B, pero no se confirma la familia arquitectonica concreta.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base QianqianTech/ager-1.0 en la documentacion proporcionada. Los tags del repositorio lo vinculan a la familia Qwen y a la libreria transformers, y la presencia de archivos mmproj en las cuantizaciones indica capacidades multimodales (vision), lo que sugiere una arquitectura tipo transformer multimodal con proyector visual. El tamano de 9,2 mil millones de parametros es coherente con variantes de la familia Qwen de esa escala.
 
-Tampoco se detallan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. La unica pista sobre el dominio es la etiqueta `agriculture` y la naturaleza conversacional declarada. La presencia de ficheros `mmproj` (multi-modal supplement) en el repositorio GGUF sugiere que el modelo base podria tener capacidad multimodal de vision, aunque la model card no lo confirma explicitamente.
+En cuanto al entrenamiento, no se han publicado en la informacion disponible datos sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. El tag "agriculture" y la descripcion del modelo base apuntan a un ajuste fino orientado al dominio agrario, pero se desconoce el corpus utilizado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational`.
-- Especializacion declarada en dominio agricola (etiqueta `agriculture`), orientada a consultas agronomicas.
-- Soporte de chino e ingles como idiomas principales.
-- Posible capacidad multimodal: el repositorio incluye ficheros `mmproj-Q8_0` y `mmproj-f16`, suplementos multimodales de llama.cpp, lo que apunta a entrada de imagenes, aunque no se documenta formalmente.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite su despliegue en infraestructuras de inferencia estandar.
-- No se documentan capacidades de tool calling, function calling, agentes o modo de razonamiento explicito.
+- Generacion de texto conversacional en chino e ingles, con especializacion en el dominio de la agricultura.
+- Procesamiento multimodal: la presencia de archivos mmproj (Q8_0 y f16) indica soporte de entrada de imagenes junto con texto.
+- Razonamiento y respuesta a preguntas tecnicas del sector agrario (cultivos, suelos, plagas, recomendaciones), segun la orientacion del modelo base.
+- Conversacion multi-turno (tag "conversational").
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su integracion en servicios de inferencia.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Asistencia agronomica conversacional: atender consultas de agricultores sobre plagas, fertilizacion o riego en chino o ingles, aprovechando el ajuste de dominio del modelo base.
-- Soporte tecnico en cooperativas agricolas: desplegar un asistente local con la cuantizacion Q4_K_S (5,6 GB) en estaciones de trabajo con GPU de consumo para consultas internas sin conexion.
-- Analisis de documentacion tecnica agraria: resumir y extraer informacion de manuales, fichas de productos fitosanitarios o informes de cosecha en los idiomas soportados.
-- Prototipado de chatbots sectoriales: usar el modelo como base para experimentar con RAG sobre bases de conocimiento agricolas, dado su bajo coste de despliegue en formato GGUF.
-- Educacion y formacion agraria: generar material didactico o responder preguntas de estudiantes en un contexto controlado, con validacion humana de las respuestas.
-- Investigacion comparativa de modelos de dominio: emplear el modelo como referencia en estudios sobre especializacion sectorial frente a modelos generalistas del mismo tamano.
+- Asistencia agronomica conversacional: el modelo puede responder consultas de agricultores sobre tecnicas de cultivo, fertilizacion o manejo de plagas en chino e ingles, aprovechando su ajuste al dominio agrario.
+- Analisis de imagenes de cultivos: gracias a los suplementos mmproj, puede procesar fotografias de plantas o parcelas junto con una consulta textual para identificar posibles problemas visuales (con las cautelas propias de un modelo no verificado en benchmarks).
+- Generacion de documentacion tecnica agraria: redaccion de fichas de cultivo, guias de manejo o resumenes de practicas agricolas a partir de notas o datos estructurados.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M (5,9 GB) o Q5_K_M (6,8 GB) permiten ejecutar el modelo en estaciones de trabajo o portatiles con GPU de consumo, util en explotaciones rurales o investigación de campo.
+- Prototipado rapido de asistentes sectoriales: integracion via llama.cpp u Ollama para construir demos de chatbots agrarios sin infraestructura de datacenter.
+- Investigacion en NLP de dominio: uso como base para experimentos de ajuste fino o evaluacion en tareas agrarias en chino e ingles, dado su caracter especializado y su licencia permisiva.
+- Traduccion tecnica zh-en en contexto agricola: apoyo en la localizacion de documentacion agronomica entre ambos idiomas.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +54,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 5,6 GB con Q4_K_S (recomendada por el autor como rapida), 18,5 GB con f16, y entre 3 y 10 GB para las cuantizaciones Q2_K a Q8_0 segun su tamano.
-- GPU recomendadas: para f16, GPU de 24 GB o mas (RTX 3090/4090, A100, H100); para Q4_K_S, GPU de 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 4070).
-- Cabe en GPU de consumo: si, con cuantizaciones Q4_K_S o inferiores en tarjetas de 8 GB o mas; las cuantizaciones Q2_K y Q3_K pueden caber en 6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI si se dispone de los pesos originales en safetensors.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion):
+  - Q2_K (4,1 GB): ~5-6 GB de VRAM.
+  - Q4_K_M (5,9 GB): ~7-8 GB de VRAM.
+  - Q5_K_M (6,8 GB): ~8-9 GB de VRAM.
+  - Q8_0 (9,9 GB): ~11-12 GB de VRAM.
+  - f16 (18,5 GB): ~20-22 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB o superior para cuantizaciones Q4/Q5; RTX 4090 (24 GB) para Q8_0 o f16; A100/H100 para despliegues de alta concurrencia con f16.
+- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM usando Q4_K_M o inferiores; Q2_K puede caber en GPUs de 6 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere integracion con servidores de inferencia tipo OpenAI-compatible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Dominio | Licencia | Formato |
-|---|---|---|---|---|---|
-| ager-1.0 (este) | ~9,2 B | no disponible | Agricultura | Apache 2.0 | GGUF, safetensors |
-| Modelos generalistas de ~7-9 B (p. ej. Qwen, Llama) | 7-9 B | 8K-128K tipicamente | Generalista | Variable | GGUF, safetensors |
-| Modelos de dominio medico/legal de ~7 B | ~7 B | Variable | Sectorial | Variable | GGUF, safetensors |
+No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base que permitan una comparativa rigurosa con alternativas. A continuacion se ofrece una comparacion estructural basica con modelos de tamano similar de la familia Qwen, marcando los datos no verificados.
 
-No se dispone de datos de rendimiento comparativo del modelo frente a alternativas, por lo que la comparativa se limita a parametros, licencia y disponibilidad. No se identifican en la informacion proporcionada modelos comparables especificos del dominio agricola.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| ager-1.0 (esta ficha) | ~9,2 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en agricultura, multimodal (mmproj) |
+| Qwen2.5-7B | ~7,6 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Generalista, multilingue amplio |
+| Qwen2.5-14B | ~14,7 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Generalista, mayor capacidad |
+| Llama 3.1 8B | ~8 B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Generalista, multilingue |
+
+Los datos de Qwen y Llama 3.1 provienen de documentacion publica general y no de la informacion proporcionada en esta busqueda; se incluyen solo como referencia estructural.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a modelos generalistas sin pruebas propias.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente critico en recomendaciones agronomicas (dosis de fitosanitarios, tratamientos) donde un error puede tener consecuencias economicas o medioambientales.
-- Cobertura idiomatica limitada a chino e ingles; el rendimiento en castellano no esta garantizado ni documentado.
-- Longitud de contexto desconocida, lo que impide planificar tareas de contexto largo con garantias.
-- La cuantizacion Q4_K_S y las de menor bits introducen perdida de calidad respecto a f16; para tareas de precision debe validarse el impacto.
-- Aunque la licencia Apache 2.0 permite uso comercial, la falta de documentacion sobre el dataset de entrenamiento impide verificar la procedencia de los datos y posibles sesgos.
-- El modelo base no documenta filtros de seguridad ni alineamiento; en produccion conviene anadir capas de moderacion.
-- La capacidad multimodal sugerida por los ficheros `mmproj` no esta confirmada ni documentada, por lo que no debe asumirse en disenos de producto.
+- Sesgos conocidos: no documentados en la informacion disponible; al estar entrenado principalmente en chino e ingles, puede presentar sesgos culturales y linguisticos de esos corpus.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; en un dominio tecnico como la agricultura, las recomendaciones erroneas (dosis de fertilizantes, tratamientos fitosanitarios) pueden tener consecuencias reales, por lo que se requiere validacion por expertos.
+- Limitaciones de contexto e idioma: solo se declaran chino e ingles; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (QianqianTech/ager-1.0) y de cualquier componente multimodal incluido.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- No se dispone de informacion verificada sobre contexto maximo, tool calling ni rendimiento en benchmarks, lo que limita la evaluacion para casos de uso exigentes.
+- El repositorio tiene 511 descargas y 0 likes, lo que indica una adopcion muy baja y escasa validacion comunitaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/ager-1.0-GGUF
 - Modelo base: https://huggingface.co/QianqianTech/ager-1.0
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#ager-1.0-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#ager-1.0-GGUF
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

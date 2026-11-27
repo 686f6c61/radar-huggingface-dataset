@@ -2,98 +2,104 @@
 
 ## Resumen
 
-vox-mens-qwen3-4b es un adaptador QLoRA publicado por el usuario brbrainerd sobre el modelo base Qwen/Qwen3-4B. Su propósito es especializar un modelo de lenguaje generalista de 4.000 millones de parámetros en la generación de código en Vox, un lenguaje de programación propio del ecosistema voxlang.org. El adaptador forma parte de la familia "Vox MENS", una serie de adaptadores organizados por tamaño (hub-and-spoke) que comparten un mismo lenguaje objetivo, vox-lang.
+vox-mens-qwen3-4b es un adaptador QLoRA publicado por brbrainerd sobre el modelo base Qwen/Qwen3-4B. Forma parte de la familia "Vox MENS", una serie de adaptadores cuyo objetivo es especializar modelos generalistas en la generación de código para **Vox**, un lenguaje de programación propio documentado en voxlang.org. El adaptador se entrenó con la librería `vox` y pesos en formato Candle, y está pensado para integrarse en el ecosistema de herramientas del autor (playground, suite de evaluación y corpus de entrenamiento verificados).
 
-El modelo no se distribuye como pesos completos, sino como un adaptador entrenado con QLoRA y empaquetado en la librería `vox`, con dependencia declarada de `candle`. El repositorio ocupa 0,2 GB, lo que confirma que se trata de un conjunto de pesos delta y no de un modelo completo. El autor marca el adaptador como "gate-passed", es decir, que ha superado un control de calidad interno definido por el propio proyecto.
+El modelo resuelve un problema muy concreto: que un LLM generalista genere código sintácticamente válido y semánticamente correcto en un lenguaje de nicho que apenas aparece en los datos de preentrenamiento. Según la model card, el adaptador "arregla" 10 de 52 ítems de un banco de pruebas propio (held-out) y "rompe" 1, lo que da un pass@1 de 0,25 en generación de código sin modo thinking.
 
-La relevancia de esta ficha es acotada: no es un modelo de propósito general, sino una pieza de un pipeline concreto de generación de código en un lenguaje de nicho. Se publica bajo licencia Apache 2.0 y declara únicamente el idioma inglés. Su interés práctico depende por completo de que el usuario trabaje con el lenguaje Vox y con la toolchain `vox`/`candle`.
+Es relevante ahora por dos motivos. Primero, porque demuestra una metodología reproducible de adaptación de sub-lenguajes (QLoRA sobre un 4B) con métricas de regresión explícitas en modo thinking (GSM8K, MATH500 y un bench propio). Segundo, porque el autor lo marca como **superseded**: la familia ha evolucionado a la línea Qwen3.5/Qwen3.8 (0,8B–27B), y este checkpoint se conserva solo por compatibilidad hacia atrás y como fallback.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador QLoRA sobre Qwen3-4B, transformer decoder-only) |
-| Parámetros totales | no disponible (modelo base Qwen3-4B: 4B) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el adaptador se distribuye en el formato de la librería `vox`) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (librería `vox`, dependiente de `candle`; no se declara safetensors ni GGUF) |
+| Arquitectura | Transformer decoder-only (Qwen3) con adaptador QLoRA |
+| Parametros totales | 4B (modelo base Qwen3-4B); parametros del adaptador: no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | QLoRA (cuantizacion del base durante el entrenamiento); formatos de inferencia: no disponible |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | adaptador para la libreria `vox` (Candle); repo de 0,2 GB; safetensors/PEFT no confirmado para este checkpoint |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye mediante QLoRA sobre Qwen/Qwen3-4B, fijado a la revisión `1cfa9a7208912126459214e8b04321603b3df60c`. Qwen3-4B es un transformer decoder-only del que esta ficha no recibe detalles adicionales de arquitectura, contexto ni composición del dataset de preentrenamiento; por tanto, esos datos se marcan como no disponibles. El adaptador en sí es un conjunto de pesos de bajo rango que modifica el comportamiento del modelo base para alinearlo con el lenguaje Vox.
+El modelo es un adaptador QLoRA sobre Qwen3-4B, un transformer decoder-only de la familia Qwen3. El adaptador se entrena con la librería `vox` (basada en Candle, el framework de tensores en Rust) y se distribuye como un repo ligero de 0,2 GB, coherente con un checkpoint de adaptador y no con pesos completos. La model card indica que el spoke del adaptador es `vox-lang` y que su estado es "gate-passed" (superó la puerta de calidad definida por el autor).
 
-El entrenamiento se enmarca en el proyecto Vox MENS, que organiza adaptadores por tamaño y estado ("gate passed"). El autor reporta un pico de memoria de entrenamiento medido de 28.280 MiB (`peak_source`: run_summary) para la variante de 4B, y señala explícitamente que no se ha medido ninguna cifra de memoria de servicio. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO. La model card menciona que, sobre un conjunto de 52 ítems, el adaptador corrige 10 y rompe 1 en comparación con el modelo base.
+No se detalla en la informacion disponible el número de tokens de entrenamiento, la composición exacta del dataset (más allá de estar orientado a código Vox) ni si hubo RLHF/DPO. Sí se menciona un corpus de entrenamiento verificado enlazado en la model card (`vox-mens-data-vox-lang`) y una suite de evaluación (`vox-mens-eval-vox-lang-bench`). El pico de memoria medido durante el entrenamiento del 4B es de 28 280 MiB (`peak_source`: run_summary), y no se ha medido una cifra de memoria de servicio (serving).
+
+La innovación principal no es arquitectónica sino metodológica: un pipeline de adaptación de un lenguaje de programación de nicho con evaluación de regresión en modo thinking, para verificar que la especialización en código no degrada el razonamiento del modelo base.
 
 ## Capacidades
 
-- Generación de código en Vox: funciones, estructuras de control, tipos genéricos (`List[int]`, `Result[list[int]]`), bucles `while`, declaración de acciones y ejemplos de uso con `main`.
-- Corrección de errores de sintaxis del modelo base: el adaptador transforma salidas que no parsean en programas Vox válidos, según los ejemplos de ordenación por selección y burbuja.
-- Razonamiento en modo thinking: se reportan métricas de regresión en gsm8k_think, math500_think y vox_think, lo que indica que el adaptador conserva (o se evalúa contra) el modo de razonamiento extendido de Qwen3.
-- Generación de texto general: heredada del modelo base Qwen3-4B, aunque el adaptador está orientado a código.
-- Capacidades multilingües: limitadas al inglés según la declaración de idiomas del repositorio.
-- Tool calling, function calling, agentes y multi-step reasoning: no disponible en la información proporcionada.
-- Visión, audio u otras modalidades: no disponible.
+- Generación de código en **Vox**, el lenguaje objetivo del adaptador (funciones, acciones, control de flujo, listas, etc.).
+- Generación de texto general heredada del base Qwen3-4B.
+- Razonamiento en modo thinking (el modelo base Qwen3 soporta modo thinking; los benchmarks de regresión se ejecutan en ese modo).
+- Razonamiento matemático (evaluado en GSM8K y MATH500 en modo thinking).
+- Capacidades multilingües: limitadas al inglés según la model card (`language: en`).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Generación de funciones Vox en un editor o IDE: el adaptador produce código que parsea correctamente con la sintaxis de Vox, lo que permite autocompletar funciones completas a partir de una descripción en lenguaje natural, como se muestra en los ejemplos de selection sort y bubble sort.
-- Migración de código desde otros lenguajes a Vox: dado un fragmento en Python o similar, el modelo puede reescribirlo en Vox respetando construcciones como `fn ... to ...`, `let mut` y `while`, reduciendo el trabajo manual de traducción.
-- Corrección de salidas inválidas del modelo base: en pipelines que ya usan Qwen3-4B para generar Vox, este adaptador corrige casos en los que el modelo base emite sintaxis que no parsea, lo que mejora la tasa de éxito sin cambiar de modelo.
-- Docencia y ejemplos de Vox: generación de programas de ejemplo (ordenaciones, operaciones CRUD simuladas como `delete_item`) para documentación, tutoriales o tests de la toolchain.
-- Pruebas automatizadas de la toolchain Vox: el adaptador puede emplearse para generar corpus de programas Vox válidos que alimenten tests de parser, formateador o analizador estático.
-- Evaluación comparativa de adaptadores: al formar parte de una familia organizada por tamaño (hub-and-spoke), sirve para medir el efecto del tamaño del modelo base en la calidad de generación de Vox dentro de un mismo pipeline.
+- **Generación de código Vox en el editor**: el adaptador está entrenado específicamente para producir Vox válido a partir de descripciones en lenguaje natural, por lo que encaja en asistentes de código o plugins que autocompleten funciones Vox. Es su caso de uso principal y el que miden los ejemplos de la model card (selection sort, bubble sort, definición de acciones).
+- **Migración de fragmentos de código a Vox**: dado un algoritmo descrito o escrito en otro lenguaje, usar el adaptador para reescribirlo en sintaxis Vox, aprovechando que el base Qwen3-4B ya conoce los lenguajes comunes y el adaptador aporta el dialecto.
+- **Generación de tests y ejemplos de Vox**: producir fragmentos de código de ejemplo para documentación, tutoriales o suites de prueba del propio lenguaje, ya que el adaptador ha sido validado contra un bench held-out de 52 ítems.
+- **Fallback en pipelines existentes del ecosistema Vox MENS**: la model card lo marca como superseded y conservado para "fallback pulls"; sirve como respaldo cuando los checkpoints más nuevos (Qwen3.5/Qwen3.8) no están disponibles o fallan en un entorno concreto.
+- **Investigación sobre adaptación de lenguajes de nicho**: el par adaptador + suite de evaluación + corpus verificados permite reproducir el experimento de QLoRA sobre un 4B y medir la degradación en razonamiento (GSM8K, MATH500) frente a la mejora en código.
+- **Prototipado en entornos con memoria unificada limitada**: con un pico de entrenamiento medido de ~28 GB, el 4B es el "peldaño medio" de la familia, adecuado para estaciones de trabajo o portátiles con memoria unificada generosa, según la propia model card.
+- **Evaluación comparativa de adaptadores**: al publicar métricas de regresión en modo thinking, sirve como referencia para comparar el efecto de distintos adaptadores sobre el mismo base Qwen3-4B.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model-index. No están verificados (`verified: false`).
+Datos declarados por el autor en el model-index (no verificados, `verified: false`):
 
-| Tarea | Dataset | Métrica | Valor |
+| Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
-| Generación de código Vox | Vox held-out bench (52 ítems) | pass@1 (qwen3_non_thinking_codegen_v1) | 0,2500 |
-| Regresión de razonamiento (thinking) | gsm8k_think (128 ítems) | accuracy | 0,8047 |
-| Regresión de razonamiento (thinking) | math500_think (128 ítems) | accuracy | 0,5156 |
-| Regresión de razonamiento (thinking) | vox_think (128 ítems) | accuracy | 0,7969 |
+| Generacion de codigo Vox | Vox held-out bench (52 items) | pass@1 (qwen3_non_thinking_codegen_v1) | 0,2500 |
+| Regresion de razonamiento (thinking) | gsm8k_think (128 items) | accuracy | 0,8047 |
+| Regresion de razonamiento (thinking) | math500_think (128 items) | accuracy | 0,5156 |
+| Regresion de razonamiento (thinking) | vox_think (128 items) | accuracy | 0,7969 |
 
-El autor indica además que, sobre los 52 ítems del bench, el adaptador corrige 10 y rompe 1 respecto al modelo base. No se han publicado resultados de MMLU, HumanEval estándar ni GSM8K completo en la información disponible.
+Contexto adicional de la model card: de los 52 ítems del held-out bench, el adaptador corrige 10 y rompe 1 respecto al base. El base Qwen3-4B falla en `humaneval_vox_050_selection_sort` ("does not parse", count 6) y el adaptador lo resuelve. No se han publicado en la informacion disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K completo) para este checkpoint.
 
 ## Requisitos de hardware
 
-- El adaptador se sirve junto al modelo base Qwen3-4B; la VRAM total depende de la cuantización del base, no del adaptador (0,2 GB en el repositorio).
-- Pico de memoria de entrenamiento medido: 28.280 MiB (unos 27,6 GiB) para la variante de 4B, según `run_summary`.
-- Memoria de servicio: no medida ni publicada por el autor.
-- GPU recomendadas: no disponible en la información proporcionada; por tamaño del base (4B), es razonable esperar que quepa en GPU de consumo con cuantización, pero el autor no lo confirma.
-- Opciones de despliegue: la librería declarada es `vox` con dependencia de `candle`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- **VRAM estimada para inferencia**: no disponible en la informacion proporcionada. El único dato medido es el pico de entrenamiento: 28 280 MiB (~27,6 GiB) para el 4B.
+- **GPU recomendadas**: no disponible en la informacion proporcionada. Por tamaño del base (4B), cabría esperar GPUs de 24 GB o más en precisión completa, pero el autor no publica cifras de serving.
+- **¿Cabe en GPU consumer?**: no confirmado por el autor; depende de la cuantización elegida, que tampoco se detalla.
+- **Opciones de despliegue**: la librería nativa es `vox` (Candle). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI para este checkpoint.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especialidad | Licencia | Estado |
 |---|---|---|---|---|---|
-| vox-mens-qwen3-4b | base 4B + adaptador QLoRA | no disponible | Código Vox (vox-lang) | Apache 2.0 | Hugging Face, librería `vox` |
-| Qwen/Qwen3-4B | 4B | no disponible en esta ficha | Propósito general | no disponible en esta ficha | Hugging Face |
-| Otros adaptadores Vox MENS | varios tamaños | no disponible | Código Vox | no disponible | Ecosistema voxlang.org |
+| vox-mens-qwen3-4b | 4B (adaptador QLoRA) | no disponible | Codigo Vox | apache-2.0 | Superseded |
+| Qwen/Qwen3-4B (base) | 4B | no disponible en esta ficha | Generico | apache-2.0 | Activo |
+| Vox MENS Qwen3.5/Qwen3.8 (0,8B–27B) | 0,8B–27B | no disponible | Codigo Vox | no disponible | Activo (linea actual) |
 
-No se dispone de datos de benchmarks comparables de alternativas en la información proporcionada, por lo que no se incluye una comparación cuantitativa de rendimiento.
+La comparación más directa es contra su propio modelo base: el adaptador mejora la generación de Vox (10 ítems corregidos frente a 1 roto en el held-out bench) manteniendo un razonamiento en modo thinking de 0,8047 en GSM8K y 0,5156 en MATH500. Frente a la línea sucesora Qwen3.5/Qwen3.8 del mismo autor, este checkpoint queda como opción legacy. No se dispone de datos de benchmarks de la línea sucesora en la informacion proporcionada para comparar numéricamente.
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: el adaptador está entrenado para Vox; su uso fuera de ese lenguaje no está respaldado por las métricas publicadas.
-- pass@1 de 0,25 en el bench held-out de 52 ítems: tres de cada cuatro ítems no se resuelven, según los datos del autor.
-- Métricas no verificadas: todos los resultados de la model-index tienen `verified: false`.
-- Solo inglés declarado: no hay soporte multilingüe documentado.
-- Sin datos de sesgo, alucinación ni robustez en la información disponible.
-- Licencia Apache 2.0 en el adaptador, pero el uso comercial debe verificar también la licencia del modelo base Qwen3-4B, que no se detalla en esta ficha.
-- El adaptador depende de la toolchain `vox` y de `candle`; la portabilidad a otros runtimes no está documentada.
-- El autor no ha medido memoria de servicio, por lo que las estimaciones de despliegue en producción no están respaldadas por datos.
-- Repositorio con 0 "likes" y 3.896 descargas en la fecha de consulta: adopción limitada y poca validación externa.
+- **Modelo superseded**: el propio autor lo marca como reemplazado por la línea Qwen3.5/Qwen3.8; no se recomienda para nuevos despliegues.
+- **Idioma**: solo inglés (`language: en`); el soporte multilingüe no está declarado.
+- **Alcance estrecho**: la especialización es en Vox; fuera de ese lenguaje el adaptador no aporta ventajas sobre el base y podría degradar ligeramente otras tareas.
+- **Benchmarks no verificados**: todas las métricas del model-index tienen `verified: false` y proceden de suites propias del autor, no de evaluaciones independientes.
+- **Riesgo de alucinación**: no cuantificado en la informacion disponible; como todo LLM, puede generar APIs o construcciones de Vox inexistentes.
+- **Sesgos**: no documentados en la informacion disponible.
+- **Licencia**: apache-2.0, lo que permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3-4B y de los datos de entrenamiento enlazados.
+- **Formato de pesos**: adaptador para la librería `vox`/Candle; la portabilidad a otros runtimes (PEFT/safetensors estándar) no está confirmada para este checkpoint concreto.
+- **Contexto**: la longitud de contexto no se especifica en la informacion proporcionada; no asumir la del base sin verificar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
-- Referencia de modelos MENS (estados y hub-and-spoke): https://voxlang.org/reference/mens-models/
-- Leyenda de estados: https://voxlang.org/reference/mens-models/#state-legend
-- Ejemplos en las tarjetas: https://voxlang.org/reference/mens-models/#examples-on-the-cards
+- Indice Vox Mens: https://huggingface.co/brbrainerd/vox-mens-index
+- Playground: https://huggingface.co/spaces/brbrainerd/vox-mens-playground
+- Suite de evaluacion: https://huggingface.co/datasets/brbrainerd/vox-mens-eval-vox-lang-bench
+- Corpus de entrenamiento verificado: https://huggingface.co/datasets/brbrainerd/vox-mens-data-vox-lang
+- Documentacion de modelos MENS: https://voxlang.org/reference/mens-models/
+- Referencia del lenguaje Vox: https://voxlang.org

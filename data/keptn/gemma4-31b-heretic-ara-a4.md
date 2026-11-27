@@ -2,112 +2,122 @@
 
 ## Resumen
 
-Gemma 4 31B heretic-ara a4 es una cuantización de 4 bits del modelo `trohrbaugh/gemma-4-31b-it-heretic-ara`, que a su vez deriva de `google/gemma-4-31B-it-assistant`. El autor, keptn, empaqueta los pesos en un único archivo de 19,95 GiB en formato `.rad`, propietario del motor de inferencia radiance, optimizado para GPUs AMD RDNA4 (en concreto las Radeon AI PRO R9700). El modelo conserva la torre de visión y el cabezal asistente de Gemma 4 para decodificación especulativa, y mantiene la ventana de contexto de 262.144 tokens.
+`keptn/gemma4-31b-heretic-ara-a4` es una cuantizacion en un unico fichero del modelo `trohrbaugh/gemma-4-31b-it-heretic-ara`, una variante de Gemma 4 31B-it de Google a la que se le han eliminado los rechazos mediante el metodo ARA (Arbitrary-Rank Ablation) de Heretic. El paquete lo publica el usuario keptn y esta empaquetado especificamente para el motor de inferencia radiance sobre GPUs AMD RDNA4, con pesos del tronco en int4 con punto cero (GPTQ) y activaciones en int8.
 
-La particularidad del modelo es doble. Por un lado, la variante "heretic-ara" implica que un proceso previo (método ARA de Heretic) ha eliminado los mecanismos de rechazo del modelo original, de modo que se trata de un modelo "abliterated" o sin censura. Por otro, la cuantización es mixta: los pesos del tronco van en int4 con punto cero (GPTQ), las activaciones en int8 y el `lm_head` en int8, una combinación que busca reducir el impacto en calidad frente a cuantizaciones más agresivas.
+El modelo resuelve el problema de desplegar un modelo multimodal de 31B parametros con contexto de 262.144 tokens en hardware AMD de consumo profesional (Radeon AI PRO R9700 de 32 GB), algo que con pesos bf16 seria inviable en una sola tarjeta. El fichero `gemma4-31b-heretic-ara-a4.rad` ocupa 19,95 GiB e incluye la cabeza asistente de Gemma 4 para decodificacion especulativa con 3 tokens draft.
 
-Es relevante ahora porque demuestra que es posible ejecutar un modelo multimodal de 31B con contexto de 256k en hardware AMD de consumo profesional, con throughput medido y con una pérdida de calidad cuantificada (KL medio de 0,0248 frente al modelo bf16 de referencia). No obstante, la licencia Apache 2.0 declarada convive con una herencia de pesos de Gemma, lo que conviene verificar antes de un uso comercial.
+Es relevante ahora porque combina tres tendencias: cuantizacion agresiva W4A8 con GPTQ, soporte de vision y video, y un ecosistema de inferencia alternativo a CUDA (ROCm/RDNA4) con decodificacion especulativa. La licencia es Apache 2.0, aunque el modelo base es Gemma 4 de Google, lo que introduce matices legales que se detallan mas abajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Gemma 4), con torre de visión y cabezal asistente para decodificación especulativa |
-| Parametros totales | 31B (según nombre del modelo base; no se detalla el desglose) |
-| Parametros activos | no disponible (no es un modelo MoE según la información disponible) |
+| Arquitectura | Transformer multimodal (tronco Gemma 4) con vision tower y cabeza asistente para decodificacion especulativa |
+| Parametros totales | 31B (segun nombre del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Pesos int4 con punto cero (GPTQ, escala f16 cada 128 pesos); activaciones int8 (escala por token y 128 valores); `lm_head` int8 con escala bf16 cada 128 pesos; torre de visión y resto del cabezal asistente en bf16 |
+| Tipos de cuantizacion | int4 con punto cero (GPTQ) en lineales del tronco; activaciones int8; lm_head int8; cabeza asistente bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | `.rad` (formato propietario del motor radiance; archivo único de 19,95 GiB) |
+| Formato de pesos | `.rad` (formato propietario de radiance), 19,95 GiB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Gemma 4 31B-it, un transformer multimodal que acepta texto, imagen y vídeo. Sobre él, trohrbaugh aplicó el método ARA de Heretic v1.2.0 (con personalizaciones) para eliminar los rechazos, dando lugar a `gemma-4-31b-it-heretic-ara`. keptn parte de esa revisión (`f961f79e`) y sustituye los ficheros de configuración, plantilla de chat, tokenizador, configuración de generación y del procesador por los de Google (`gemma-4-31B-it`, revisión `842da379`), manteniendo pesos y vocabulario intactos.
+El modelo es una cuantizacion del checkpoint `trohrbaugh/gemma-4-31b-it-heretic-ara`, que a su vez deriva de `google/gemma-4-31B-it-assistant`. La decensura se realizo con Heretic y su metodo ARA (Arbitrary-Rank Ablation), que elimina direcciones de rechazo del espacio de activaciones. Sobre ese checkpoint, keptn aplico GPTQ con un conjunto de calibracion propio (`keptn/quant-calibration`) para producir pesos int4 con punto cero, una escala f16 cada 128 pesos en todas las capas lineales del tronco. Las activaciones se cuantizan a int8 con una escala por token y 128 valores, y el `lm_head` usa int8 con escala bf16 cada 128 pesos.
 
-La cuantización se realizó con GPTQ sobre el conjunto de calibración `keptn/quant-calibration-v1` (revisión `3969b2f9`), con las mismas filas y tokens que `keptn/gemma4-31b-a4`. Cada capa lineal del tronco se cuantizó a int4 con punto cero u8 y una escala f16 por cada 128 pesos; q, k y v comparten una pasada GPTQ, y en las capas 0 a 3 la salida de atención y ambos pesos feed-forward recibieron dos rondas de descenso por coordenadas. Se añadió el cabezal asistente de Google en bf16 (salvo los `lm_head`, redondeados a int8) con 3 tokens de borrador para decodificación especulativa. El resultado se empaqueta con `rad-convert` usando el método de cuantización `compressed-tensors`.
+La innovacion tecnica principal es el empaquetado con la cabeza asistente de Gemma 4 en bf16 para decodificacion especulativa con 3 tokens draft, integrada en radiance 2.0.0 o superior. El vision tower es byte-identico al de Google segun el autor. La version 2.0 (2026-11-16) sustituye a la 1.0 (w4a8 con SmoothQuant en q/k/v), reduciendo el KL medio a la mitad a costa de un 34 % mas de latencia de decode en cuatro tarjetas. No se documentan detalles sobre el dataset de preentrenamiento original de Gemma 4 ni sobre el proceso de RLHF/DPO, mas alla de que el checkpoint base es la variante `-it` (instruction-tuned).
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno, con plantilla de chat de Google.
-- Comprensión de imágenes y vídeo como entrada (pipeline `image-text-to-text`).
-- Modo "thinking" opcional por petición mediante `chat_template_kwargs: {"enable_thinking": true}`.
-- Decodificación especulativa con el cabezal asistente de Gemma 4 (3 tokens de borrador), que acelera la generación.
-- Contexto largo de hasta 262.144 tokens (con `max-model-len: 262144` y `max-num-seqs: 2`).
-- Modelo "abliterated": no aplica rechazos por defecto, lo que permite respuestas sobre temas que el modelo original evitaría.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente en la información proporcionada.
-- Capacidades multilingües: no disponibles (los idiomas no se especifican).
+- Generacion de texto y razonamiento en modo chat con plantilla de Gemma 4.
+- Modo thinking activable por peticion mediante `chat_template_kwargs: {"enable_thinking": true}`.
+- Entrada multimodal: texto, imagen y video (pipeline `image-text-to-text`).
+- Decodificacion especulativa con la cabeza asistente de Gemma 4 (3 tokens draft).
+- Respuestas sin rechazos: el modelo contesta peticiones que el original rechazaria (segun el autor).
+- Contexto largo de hasta 262.144 tokens (con `max-model-len: 262144`).
+- Multi-turno con KV cache en int8.
+- No se documenta soporte explicito de tool calling ni de function calling en la informacion disponible.
+- No se documenta soporte de audio.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentos largos con imágenes intercaladas: el contexto de 262.144 tokens permite procesar manuales, informes o expedientes completos junto con sus figuras en una sola pasada, sin trocear el contenido.
-- Transcripción y descripción de vídeo: la entrada de vídeo combinada con el contexto largo permite resumir grabaciones extensas o extraer eventos concretos de una secuencia.
-- Asistente conversacional sin filtros para investigación: el proceso de abliteración lo hace adecuado para estudiar el comportamiento del modelo en temas sensibles, análisis de sesgos o generación de contenido que el modelo original rechazaría.
-- Despliegue en estaciones de trabajo AMD: al ejecutarse en radiance sobre RDNA4 con 1, 2 o 4 tarjetas de 32 GB, encaja en entornos con GPUs Radeon AI PRO R9700 sin depender de CUDA.
-- Servicio de inferencia con concurrencia moderada: con 4 tarjetas alcanza 477 tokens/s agregados en 4 streams y 4.328 tokens/s de prefill a 24k, suficiente para un endpoint interno con varias sesiones simultáneas.
-- Evaluación de cuantización: sirve como referencia práctica para medir el impacto de int4/int8 frente a bf16 (KL medio 0,0248, 95,9% de coincidencia en el token superior) en tareas de generación abierta.
-- Prototipado de pipelines multimodales en local: el archivo único de 19,95 GiB simplifica el despliegue con Docker y permite levantar el servidor con una configuración YAML mínima.
+- Asistencia conversacional de contexto largo: con 262.144 tokens de ventana, el modelo puede mantener conversaciones multi-turno sobre documentos extensos o transcripciones completas sin truncar, usando KV cache int8 para reducir memoria.
+- Analisis de imagenes y video en local: al aceptar entradas de imagen y video, sirve para tareas de descripcion, extraccion de informacion o resumen de contenido visual en flujos donde no se quiere enviar datos a la nube.
+- Despliegue en hardware AMD: pensado para Radeon AI PRO R9700 (RDNA4) con ROCm, permite montar inferencia en estaciones de trabajo AMD sin depender de CUDA, con configuracion de 1, 2 o 4 tarjetas.
+- Servicio de inferencia con multiples streams: la configuracion documentada soporta `max-num-seqs: 8` y 4 streams concurrentes con hasta 477 tokens/s agregados en 4 tarjetas, adecuado para un pequeño equipo interno.
+- Investigacion sobre alineacion y decensura: util para estudiar el efecto de ARA sobre el comportamiento de rechazo, comparando con el checkpoint bf16 heretic o con el Gemma 4 original.
+- Generacion de contenido sin filtros editoriales: el modelo responde a peticiones que el original rechaza, lo que lo hace adecuado para entornos controlados de escritura creativa o investigacion, asumiendo la responsabilidad de uso.
+- Prototipado rapido con decodificacion especulativa: la cabeza asistente incluida acelera el decode sin necesidad de un modelo draft externo, util para iterar en demos interactivas.
 
 ## Benchmarks y rendimiento
 
-Calidad medida con `--kld-ref` de radiance 2.1.0 sobre las respuestas a las 80 preguntas de MT-Bench (ambos turnos, 42.283 tokens de respuesta), comparando con el modelo heretic en bf16:
+Calidad respecto al checkpoint heretic bf16 (no respecto al Gemma 4 original de Google), medida con `--kld-ref` sobre 42.283 tokens de respuesta a las 80 preguntas de MT-Bench (ambos turnos, thinking off):
 
-| Modelo | KL medio | KL percentil 99 | Token superior coincidente | Ratio de perplejidad |
-|---|---|---|---|---|
-| Este archivo (a4) | 0,0248 | 0,337 | 95,9% | ×0,985 |
-| keptn/gemma4-31b-heretic-ara-w4a8 | 0,0529 | 0,732 | 94,4% | ×1,048 |
-| keptn/gemma4-31b-heretic-ara-i8g | 0,00249 | 0,0324 | 98,7% | ×1,006 |
+| Metrica | Este fichero (v2.0) | v1.0 (w4a8) | keptn/gemma4-31b-heretic-ara-i8g |
+|---|---|---|---|
+| KL medio | 0,0248 | 0,0529 | 0,00249 |
+| KL percentil 99 | 0,337 | 0,732 | 0,0324 |
+| Top token coincidente | 95,9 % | 94,4 % | 98,7 % |
+| Ratio de perplejidad | x0,985 | x1,048 | x1,006 |
 
-Rendimiento en Radeon AI PRO R9700 a 300 W, radiance 2.1.0, KV en i8, 3 tokens de borrador, thinking desactivado, BetterBench 0.6.1 (temperatura 0,7, mediana de tokens/s):
+Velocidad en Radeon AI PRO R9700 a 300 W, radiance 2.1.0, KV i8, 3 tokens draft, thinking off (BetterBench 0.6.1, temperatura 0,7, mediana de tokens por segundo):
 
-| Métrica | 1 tarjeta | 2 tarjetas | 4 tarjetas |
+| Metrica | 1 tarjeta | 2 tarjetas | 4 tarjetas |
 |---|---|---|---|
 | Decode, un stream | 82,5 | 128,8 | 183,2 |
 | Prefill a 24k tokens | 1.705 | 2.770 | 4.328 |
 | 4 streams, total | 138 | 356 | 477 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Tampoco se han medido rechazos con este fichero; la model card remite a los numeros XSTest y OR-Bench de la version 1.0.
 
 ## Requisitos de hardware
 
-- VRAM: el archivo ocupa 19,95 GiB; se necesitan tarjetas de 32 GB (probado en Radeon AI PRO R9700). Con KV en i8 y contexto completo de 262.144 tokens conviene reservar margen adicional.
-- GPUs soportadas: exclusivamente AMD RDNA4 según la model card (Radeon AI PRO R9700 probada con 1, 2 y 4 tarjetas). No se menciona soporte para NVIDIA ni para otras arquitecturas AMD.
-- Configuraciones válidas: 1, 2 o 4 tarjetas. Tres tarjetas no funcionan porque Gemma tiene 32 cabezas de atención y no se dividen entre tres.
-- Cabe en GPU de consumo: no se indica compatibilidad con GPUs de consumo; el requisito declarado es de 32 GB por tarjeta en RDNA4.
-- Despliegue: motor radiance 2.0.0 o superior (probado con 2.1.0), mediante imagen Docker `stilldeadcode/radiance:2.1.0`. No hay soporte indicado para vLLM, llama.cpp, Ollama ni TGI, dado el formato `.rad` propietario.
-- Latencia y throughput: ver tabla de la sección anterior; el prefill a 24k varía de 1.705 a 4.328 tokens/s según el número de tarjetas, y el decode de un stream de 82,5 a 183,2 tokens/s.
-- Opciones de configuración: `tp` (1, 2 o 4), `p2p` activado con varias tarjetas, `kv-cache-dtype: i8`, `max-model-len` ajustable, `vision-tower-placement: ram` y `num-speculative-tokens: 3`.
+- VRAM: el fichero ocupa 19,95 GiB; con KV cache i8 y contexto de 65.536 tokens cabe en una tarjeta de 32 GB. El autor indica que la memoria no se midio con este fichero, sino que se asume igual a `keptn/gemma4-31b-a4` por formato, tamano y capas.
+- GPU recomendadas: Radeon AI PRO R9700 (32 GB, RDNA4) probada en configuraciones de 1, 2 y 4 tarjetas. No se documenta soporte de GPUs NVIDIA ni de otras arquitecturas AMD.
+- Configuracion de tensor parallel: `tp: 1`, `tp: 2` o `tp: 4`. Tres tarjetas no funcionan porque las 32 cabezas de atencion no se dividen entre tres.
+- Contexto completo (262.144 tokens): requiere `max-model-len: 262144` y `max-num-seqs: 2`.
+- Opciones de despliegue: exclusivamente radiance 2.0.0 o superior (imagen Docker `stilldeadcode/radiance:2.0.0`). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, dado el formato `.rad`.
+- El vision tower puede colocarse en RAM (`vision-tower-placement: ram`) para liberar VRAM.
+- Latencia y throughput: ver tabla de benchmarks (82,5 a 183,2 tokens/s en decode segun numero de tarjetas).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / cuantización | Calidad (KL medio) | Licencia | Hardware |
-|---|---|---|---|---|---|---|
-| keptn/gemma4-31b-heretic-ara-a4 | 31B | 262.144 | `.rad`, int4/int8 GPTQ | 0,0248 | apache-2.0 | AMD RDNA4, radiance |
-| keptn/gemma4-31b-heretic-ara-w4a8 | 31B | no disponible | w4a8 | 0,0529 | no disponible | radiance |
-| keptn/gemma4-31b-heretic-ara-i8g | 31B | no disponible | int8 | 0,00249 | no disponible | radiance |
-| trohrbaugh/gemma-4-31b-it-heretic-ara | 31B | no disponible | bf16 | referencia | no disponible | transformers |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Hardware |
+|---|---|---|---|---|---|
+| keptn/gemma4-31b-heretic-ara-a4 | 31B | 262.144 | `.rad`, int4 GPTQ + int8 act. | apache-2.0 | AMD RDNA4, radiance |
+| keptn/gemma4-31b-heretic-ara-i8g | 31B | no disponible | `.rad`, int8 | apache-2.0 | AMD RDNA4, radiance |
+| trohrbaugh/gemma-4-31b-it-heretic-ara | 31B | no disponible | bf16 (safetensors presumiblemente) | no disponible | GPUs con suficiente VRAM |
+| google/gemma-4-31B-it-assistant | 31B | no disponible | bf16 | licencia Gemma (no Apache 2.0) | GPUs con suficiente VRAM |
 
-Frente a las otras cuantizaciones del mismo autor, el formato a4 ofrece mejor fidelidad que w4a8 (KL 0,0248 frente a 0,0529) a costa de mayor tamaño, mientras que i8g es notablemente más fiel (KL 0,00249) pero presumiblemente más pesado. No se dispone de datos para comparar con alternativas de otros desarrolladores en la misma categoría.
+Frente a la variante i8g del mismo autor, este fichero sacrifica precision (KL medio 0,0248 frente a 0,00249) a cambio de la mitad de tamano y menor coste de memoria. Frente al checkpoint heretic bf16, permite ejecutarlo en una sola tarjeta de 32 GB. No se dispone de datos para comparar con alternativas de otros ecosistemas (por ejemplo, cuantizaciones GGUF para llama.cpp) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteración elimina los rechazos del modelo: puede generar contenido sensible, dañino o inexacto sin filtros, lo que exige salvaguardas externas en producción.
-- Riesgo de alucinación inherente a los modelos de lenguaje; la cuantización int4 añade una pequeña degradación adicional (KL medio 0,0248, percentil 99 de 0,337).
-- La licencia declarada es Apache 2.0, pero los pesos derivan de Gemma de Google; conviene verificar los términos de la licencia original de Gemma antes de un uso comercial.
-- Compatibilidad restringida: solo funciona con el motor radiance y GPUs AMD RDNA4; no hay soporte documentado para CUDA, vLLM, llama.cpp ni Ollama.
-- Tres tarjetas no son una configuración válida por la división de las 32 cabezas de atención.
-- El contexto completo de 262.144 tokens limita la concurrencia a `max-num-seqs: 2`, lo que reduce el throughput agregado.
-- Los idiomas soportados no están documentados, por lo que no se puede garantizar un rendimiento uniforme fuera del inglés.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria adicional.
-- El formato `.rad` es propietario y dependiente de la versión del motor (radiance 2.0.0 o superior).
+- Modelo decensurado: responde a peticiones que el Gemma 4 original rechaza. El autor declara explicitamente que la responsabilidad de uso recae en el usuario.
+- La licencia declarada es Apache 2.0, pero el modelo base es Gemma 4 de Google, cuya licencia original impone restricciones de uso (incluida una politica de uso aceptable). Conviene verificar la compatibilidad antes de uso comercial.
+- La calidad se ha medido solo contra el checkpoint heretic bf16, no contra el Gemma 4 original de Google; no hay datos de degradacion respecto al modelo de referencia de Google.
+- Imagenes y video no se han probado con este fichero, aunque el vision tower es byte-identico al de Google.
+- La memoria real no se ha medido con este fichero; las estimaciones se heredan de `keptn/gemma4-31b-a4`.
+- Los rechazos no se han medido en la version 2.0; los datos XSTest y OR-Bench corresponden a la version 1.0.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a modelos de 31B cuantizados a int4.
+- Idiomas soportados no documentados.
+- Dependencia exclusiva del motor radiance y del hardware AMD RDNA4; no hay portabilidad a otros stacks de inferencia.
+- La configuracion de tres tarjetas no es valida por la division de cabezas de atencion.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/keptn/gemma4-31b-heretic-ara-a4
+- Version 1.0 (w4a8): https://huggingface.co/keptn/gemma4-31b-heretic-ara-a4/tree/v1.0
+- Variante int8: https://huggingface.co/keptn/gemma4-31b-heretic-ara-i8g
 - Modelo base heretic: https://huggingface.co/trohrbaugh/gemma-4-31b-it-heretic-ara
-- Cuantización w4a8 del mismo autor: https://huggingface.co/keptn/gemma4-31b-heretic-ara-w4a8
-- Cuantización i8g del mismo autor: https://huggingface.co/keptn/gemma4-31b-heretic-ara-i8g
-- Cuantización a4 del modelo original: https://huggingface.co/keptn/gemma4-31b-a4
-- Motor de inferencia radiance: https://codeberg.org/StillDeadcode/radiance
-- Conjunto de calibración: https://huggingface.co/keptn/quant-calibration-v1
+- Modelo base de Google: https://huggingface.co/google/gemma-4-31B-it-assistant
+- Motor radiance: https://codeberg.org/StillDeadcode/radiance
+- Guia Docker de radiance: https://codeberg.org/StillDeadcode/radiance/src/branch/main/docs/DOCKER.md#run-it
+- PR de soporte Gemma 4 en radiance: https://codeberg.org/StillDeadcode/radiance/pulls/75
+- Heretic: https://github.com/p-e-w/heretic
+- Metodo ARA (PR de Heretic): https://github.com/p-e-w/heretic/pull/211
+- Dataset MT-Bench: https://huggingface.co/datasets/lmsys/mt_bench_human_judgments
+- Conjunto de calibracion: https://huggingface.co/keptn/quant-calibration
+- Variante de referencia de memoria: https://huggingface.co/keptn/gemma4-31b-a4

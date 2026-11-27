@@ -2,109 +2,118 @@
 
 ## Resumen
 
-Smart-Home Energy SLM es un modelo de lenguaje de 186,7 millones de parámetros (109,1 M según la model card del autor, que excluye el embedding atado) desarrollado por Design-Thinking-SLM. Se trata de un modelo entrenado desde cero (from scratch) sobre la arquitectura Qwen3, sin reutilizar pesos preentrenados: solo se tomó prestado el tokenizer de Qwen/Qwen3-8B. Su propósito es responder preguntas cortas y estructuradas sobre lecturas de electricidad doméstica: cálculo de costes, conversiones de unidades, clasificación de niveles de carga, detección de picos y previsiones a corto plazo.
+Smart-Home Energy SLM es un modelo de lenguaje de pequeno tamano (SLM) de 186,8 millones de parametros totales (109,1 millones segun la model card; la discrepancia se explica por la tabla de embeddings de 151.669 entradas y el desacoplamiento de la embedding de entrada) desarrollado por Design-Thinking-SLM. Responde preguntas cortas y estructuradas sobre lecturas de electricidad domestica: calcula costes, clasifica niveles de carga, detecta picos y genera previsiones a corto plazo a partir de datos de consumo citados en la propia pregunta.
 
-El modelo se entrenó sobre la configuración `large` del dataset Design-Thinking-SLM/smart-home-energy-slm, compuesto por 148.363 pares pregunta-respuesta construidos a partir de una vivienda belga (UCI Appliances Energy Prediction) y 20 viviendas del Reino Unido (REFIT). Es relevante como ejemplo de SLM (small language model) especializado y desplegable en hardware muy modesto: el entrenamiento completo cupo en una GPU de portátil RTX 5060 con 8 GB, en 96,8 minutos.
+Lo relevante tecnicamente es que fue entrenado desde cero (from scratch) sobre pesos aleatorios, sin reutilizar pesos preentrenados: solo se tomo prestado el tokenizador de Qwen/Qwen3-8B. Adopta la arquitectura Qwen3 (grouped-query attention con RMSNorm por cabeza en q/k, SwiGLU, RMSNorm y RoPE) con 8 capas, anchura 512 y FFN de 2.048. El entrenamiento completo cupo en una unica GPU de portatil RTX 5060 (8 GB) en 96,8 minutos.
 
-La limitación principal es su alcance: solo comprende preguntas formuladas como los prompts del dataset. No ha visto inglés general, por lo que el chat libre produce texto incoherente. Es, por tanto, un modelo de tarea específica, no un asistente conversacional general.
+El modelo no es un asistente general: solo entiende preguntas con la formulacion del dataset de entrenamiento y produce texto roto ante conversacion libre. Su valor esta en demostrar que un dominio estrecho y bien delimitado puede resolverse con un modelo diminuto desplegable en local, con una tasa alta de respuestas correctas y, sobre todo, con la capacidad de decir "cannot be determined" cuando los datos no permiten responder.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo Qwen3 (GQA con q/k RMSNorm por cabeza, SwiGLU, RMSNorm, RoPE) |
-| Parametros totales | 186.776.064 (safetensors); 109,1 M según la model card (77,7 M corresponden a la tabla de embeddings de 151.669 entradas) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only estilo Qwen3 (GQA con RMSNorm por cabeza en q/k, SwiGLU, RMSNorm, RoPE) |
+| Parametros totales | 186.776.064 (safetensors); 109,1M segun model card (77,7M corresponden a la tabla de embeddings de 151.669 entradas) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 448 tokens |
-| Tipos de cuantizacion | float32 (safetensors); float16 en GGUF (379 MB) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | safetensors (float32), GGUF (float16), checkpoint PyTorch original (`qwen3_slm.pt`) |
+| Tipos de cuantizacion | float32 (safetensors); float16 en GGUF |
+| Idiomas soportados | en (ingles) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | safetensors (float32), GGUF (float16, 379 MB), checkpoint PyTorch original (qwen3_slm.pt) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3 con 8 capas, anchura de 512, FFN de 2.048, 8 cabezas de atención con 4 grupos KV y dimensión de cabeza 64. La tabla de embeddings (151.669 entradas) concentra 77,7 M de los 109,1 M de parámetros. El entrenamiento partió de pesos aleatorios y usó solo el tokenizer de Qwen/Qwen3-8B. La pérdida es entropía cruzada calculada únicamente sobre los tokens de respuesta, con AdamW (β = 0,9/0,95, weight decay 0,1), learning rate 3e-4, 300 actualizaciones de warm-up y decaimiento coseno hasta 3e-5. Se ejecutaron 72.000 pasos (3,9 épocas) con batch efectivo de 8 × 4 pasos de acumulación de gradiente.
+El modelo es un transformer decoder-only con la arquitectura Qwen3: 8 capas, anchura 512, FFN de 2.048, 8 cabezas de atencion con 4 grupos KV y dimension de cabeza 64. Usa grouped-query attention con RMSNorm por cabeza aplicado a queries y keys, activacion SwiGLU, RMSNorm y embeddings rotatorios (RoPE). La tabla de embeddings tiene 151.669 entradas, lo que concentra 77,7M de los 109,1M de parametros declarados en la model card.
 
-El entrenamiento se realizó en una única RTX 5060 Laptop GPU de 8 GB, con un pico de 4,6 GiB y un tiempo total de 96,8 minutos. La mejor pérdida de validación fue 0,0611 (sobre tokens de respuesta) en el paso 69.000, checkpoint que se publica. Una innovación técnica destacable es el ajuste de conversión: el notebook de entrenamiento escala los embeddings de tokens por √512, algo que la implementación Qwen3 de Hugging Face no hace; la conversión pliega ese factor en un embedding de entrada no atado (`tie_word_embeddings: false`), y los logits coinciden con el modelo original dentro de 1,5 × 10⁻⁵.
+El entrenamiento partio de pesos aleatorios, sin inicializacion desde un modelo preentrenado. Se uso el dataset Design-Thinking-SLM/smart-home-energy-slm en su configuracion `large`: 148.363 pares pregunta-respuesta construidos a partir de una vivienda belga (UCI Appliances Energy Prediction) y 20 viviendas del Reino Unido (REFIT). La perdida es entropia cruzada calculada unicamente sobre los tokens de respuesta. Optimizador AdamW (beta 0,9 y 0,95, weight decay 0,1) con learning rate 3e-4, 300 actualizaciones de warm-up y decaimiento coseno hasta 3e-5. Batch efectivo de 8 x 4 pasos de acumulacion de gradiente, 72.000 pasos (3,9 epocas). El mejor checkpoint (paso 69.000) alcanzo una perdida de validacion de 0,0611 sobre tokens de respuesta.
+
+Una innovacion tecnica destacable es el tratamiento de la escala de embeddings: el notebook de entrenamiento escala los token embeddings por raiz de 512, algo que la implementacion Qwen3 de Hugging Face no hace. La conversion pliega esa escala en una embedding de entrada desacoplada (`tie_word_embeddings: false`), y los logits coinciden con el modelo original con un error menor de 1,5 x 10^-5.
 
 ## Capacidades
 
-- Cálculo de costes eléctricos y conversiones de unidades a partir de lecturas citadas en la pregunta.
-- Clasificación de niveles de carga (level_classify).
-- Detección y marcado de picos de consumo (spike_check).
-- Previsión del siguiente paso y de la próxima hora (next-step, next-hour).
-- Estadísticas de ventana temporal (window_stats) y comparación entre estancias (room_compare).
-- Respuesta "cannot be determined" ante preguntas no respondibles con los datos: ocupación, electrodoméstico activo, averías, tarifas o sensores ausentes.
-- Rechazo de premisas falsas (false_premise).
-- Generación de texto de formato fijo y corto; sin soporte documentado de tool calling, function calling, agentes, visión, audio ni modo thinking.
-- Multilingüe: no; solo inglés y solo con el fraseo del dataset.
+- Calculo de costes energeticos a partir de una lectura y una tarifa dadas en la pregunta.
+- Conversiones de unidades (Wh, kWh, intervalos temporales).
+- Clasificacion de niveles de carga (bajo, medio, alto) segun la lectura.
+- Deteccion de picos de consumo (spike check).
+- Prevision del siguiente paso y de la siguiente hora a partir de las lecturas citadas.
+- Comparacion entre habitaciones (room_compare) y estadisticas de ventana temporal (window_stats).
+- Extraccion de caracteristicas temporales y de ruido en las lecturas.
+- Rechazo de premisas falsas: identifica cuando una afirmacion de la pregunta contradice los datos.
+- Respuesta "cannot be determined" ante preguntas no respondibles con los datos disponibles (ocupacion, que aparato estaba encendido, averias, tarifas, sensores ausentes).
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- Capacidad multilingue: solo ingles.
+- No dispone de modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Asistente de facturación doméstica: dado un precio por kWh y una lectura de consumo en un intervalo, el modelo calcula el coste del periodo. Es adecuado porque el cálculo de costes y conversiones de unidades es una de sus tareas con mejor rendimiento (95,5 % exact match).
-- Clasificación automática de niveles de carga: integrar el modelo en un panel de monitorización para etiquetar lecturas como bajas, medias o altas; la tarea level_classify alcanza el 100 % de exact match en el conjunto de evaluación UCI.
-- Detección de anomalías de consumo: usar spike_check para marcar intervalos con picos inusuales antes de enviarlos a un sistema de alertas, con la cautela de que el exact match en esta tarea es del 38,5 % (UCI) y 45,0 % (REFIT).
-- Validación de datos de sensores: el modelo rechaza premisas falsas y responde "cannot be determined" cuando faltan datos, lo que permite usarlo como filtro de coherencia en pipelines de ingesta de lecturas domésticas.
-- Previsión a corto plazo en domótica: generar previsiones del siguiente paso o de la próxima hora a partir de la lectura actual para alimentar reglas de automatización; conviene tratar la salida como sugerencia, dado el rendimiento limitado en daily_profile (5,0 % UCI, 14,5 % REFIT).
-- Despliegue en dispositivos de borde: con 379 MB en GGUF float16 y contexto de 448 tokens, puede ejecutarse vía Ollama o llama.cpp en hardware de bajo consumo dentro de una pasarela doméstica, sin depender de la nube.
-- Educación y demostración de SLM from scratch: el repositorio incluye el notebook ejecutado, scripts de exportación y evaluación, lo que lo hace útil como caso de estudio reproducible de entrenamiento y conversión de un modelo Qwen3 pequeño.
+- Analisis de facturas de electricidad domesticas: el modelo calcula el coste de un intervalo concreto a partir de la lectura en Wh y la tarifa en EUR/kWh, integrable en un panel de consumo que traduzca las lecturas del contador a coste monetario.
+- Deteccion de anomalias de consumo: con la tarea spike_check, un sistema de monitorizacion puede enviar cada lectura y obtener una clasificacion de si constituye un pico, lo que permite disparar alertas sin depender de umbrales fijos manuales.
+- Prevision a corto plazo en domotica: genera la prevision del siguiente paso y de la siguiente hora, adecuada para ajustar la programacion de electrodomesticos o la carga de baterias en un hogar con tarifa horaria.
+- Clasificacion de carga para recomendaciones de eficiencia: la tarea level_classify permite etiquetar intervalos como consumo bajo, medio o alto y alimentar informes de habitos energeticos.
+- Comparativa entre estancias: room_compare permite responder que habitacion consumio mas en un intervalo, util en paneles de viviendas con sensores por zona.
+- Asistente de validacion de datos: la capacidad de responder "cannot be determined" lo hace apropiado como capa de control en pipelines de ingestion que deben rechazar preguntas sin datos suficientes en lugar de inventar una respuesta.
+- Analisis de series temporales de sensores: las tareas time_features y window_stats extraen caracteristicas temporales y estadisticas de ventana que pueden alimentar modelos de forecasting de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 3.956 preguntas de test retenidas (hasta 200 por grupo tarea/fuente), decodificación greedy, exact match sobre la respuesta completa, con intervalos de Wilson al 95 %. Se compara con la primera versión del modelo (solo corpus UCI).
+Evaluacion sobre 3.956 preguntas de test reservadas (hasta 200 por grupo tarea/fuente), decodificacion greedy, con intervalos de Wilson al 95%. Se compara con la primera version del modelo, entrenada solo con el corpus UCI y evaluada sobre las mismas preguntas.
 
-| Tarea | Fuente | n | v1 (solo UCI) | Este modelo | IC 95 % |
+| Tarea | Fuente | n | v1 (solo UCI) | Este modelo | IC 95% |
 |---|---|---|---|---|---|
-| false_premise | UCI | 200 | 98,0 % | 100,0 % | 98,1–100 |
-| level_classify | UCI | 156 | 100,0 % | 100,0 % | 97,6–100 |
-| lights_activity | UCI | 200 | 100,0 % | 100,0 % | 98,1–100 |
-| noise_features | UCI | 200 | 100,0 % | 100,0 % | 98,1–100 |
-| unanswerable | UCI | 200 | 100,0 % | 100,0 % | 98,1–100 |
-| units_cost | UCI | 200 | 95,0 % | 95,5 % | 91,7–97,6 |
-| time_features | UCI | 200 | 50,5 % | 87,5 % | 82,2–91,4 |
-| time_features | REFIT | 200 | 11,5 % | 61,5 % | 54,6–68,0 |
-| window_stats | REFIT | 200 | 13,0 % | 51,5 % | 44,6–58,3 |
-| room_compare | UCI | 200 | 45,0 % | 46,5 % | 39,7–53,4 |
-| spike_check | REFIT | 200 | 5,0 % | 45,0 % | 38,3–51,9 |
-| spike_check | UCI | 200 | 15,5 % | 38,5 % | 32,0–45,4 |
-| window_stats | UCI | 200 | 18,0 % | 37,0 % | 30,6–43,9 |
-| outdoor_weather | UCI | 200 | 21,5 % | 25,0 % | 19,5–31,4 |
-| daily_profile | REFIT | 200 | 1,5 % | 14,5 % | 10,3–20,0 |
-| daily_profile | UCI | 200 | 0,0 % | 5,0 % | 2,7–9,0 |
-| **Agregado** | UCI | 2.356 | 61,2 % | 69,0 % | 67,1–70,9 |
-| **Agregado** | REFIT | 800 | 7,8 % | 43,1 % | 39,7–46,6 |
+| false_premise | UCI | 200 | 98,0% | 100,0% | 98,1-100 |
+| level_classify | UCI | 156 | 100,0% | 100,0% | 97,6-100 |
+| lights_activity | UCI | 200 | 100,0% | 100,0% | 98,1-100 |
+| noise_features | UCI | 200 | 100,0% | 100,0% | 98,1-100 |
+| unanswerable | UCI | 200 | 100,0% | 100,0% | 98,1-100 |
+| units_cost | UCI | 200 | 95,0% | 95,5% | 91,7-97,6 |
+| time_features | UCI | 200 | 50,5% | 87,5% | 82,2-91,4 |
+| time_features | REFIT | 200 | 11,5% | 61,5% | 54,6-68,0 |
+| window_stats | REFIT | 200 | 13,0% | 51,5% | 44,6-58,3 |
+| room_compare | UCI | 200 | 45,0% | 46,5% | 39,7-53,4 |
+| spike_check | REFIT | 200 | 5,0% | 45,0% | 38,3-51,9 |
+| spike_check | UCI | 200 | 15,5% | 38,5% | 32,0-45,4 |
+| window_stats | UCI | 200 | 18,0% | 37,0% | 30,6-43,9 |
+| outdoor_weathe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Prueba exacta de McNemar entre v1 y este modelo: p < 10⁻³³ en preguntas UCI (el dato de REFIT queda truncado en la información disponible). No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+La metrica es exact match sobre la respuesta completa. Los resultados muestran un rendimiento casi perfecto en tareas de clasificacion y rechazo, y margen de mejora claro en tareas de estadisticas de ventana y comparacion entre habitaciones. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en float32: el repo ocupa 1,6 GB; el modelo completo en float32 requiere del orden de 0,75 GB de VRAM más overhead de activaciones.
-- Inferencia en GGUF float16: 379 MB de pesos, apto para GPUs consumer de gama baja, iGPU y CPU.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para float16; el entrenamiento se validó en una RTX 5060 Laptop de 8 GB. Para float32, 4 GB o más.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU moderna (GTX 1650, RTX 3060, RTX 4060, etc.) y en CPU.
-- Opciones de despliegue: Ollama (incluye `Modelfile`), llama.cpp vía GGUF, transformers con `AutoModelForCausalLM`, y text-generation-inference (el repo declara compatibilidad con endpoints).
-- Latencia y throughput: no disponibles en la información proporcionada. El contexto de 448 tokens y la decodificación greedy del Modelfile limitan la generación a respuestas cortas.
+- VRAM para inferencia: el modelo en float16 ocupa unos 379 MB (GGUF), por lo que cabe holgadamente en cualquier GPU consumer con 4 GB o mas; en float32 el peso ronda los 750 MB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) o incluso CPU. El entrenamiento original se completo en una RTX 5060 Laptop con 8 GB.
+- Cabe en GPU consumer: si, en practicamente todas las disponibles actualmente.
+- Opciones de despliegue: transformers (AutoModelForCausalLM), llama.cpp, Ollama (imagen ojaschaudhary20/energy-slm o hf.co/Design-Thinking-SLM/smart-home-energy-qwen3-scratch), text-generation-inference (tag text-generation-inference en el repo).
+- Latencia y throughput: no disponibles de forma explicita; con 109M de parametros y contexto de 448 tokens, la generacion greedy de hasta 160 tokens es del orden de decimas de segundo en GPU consumer y de pocos segundos en CPU.
 
 ## Comparativa con modelos similares
 
-No se han publicado comparativas con modelos de la misma categoría en la información disponible. Como referencia estructural, el modelo se inspira en la arquitectura Qwen3 (cuyo tokenizer reutiliza de Qwen/Qwen3-8B), pero no comparte pesos ni escala con la familia Qwen3. Frente a SLM generalistas del rango de 100-200 M de parámetros, la diferencia clave es la especialización: mayor precisión en tareas de energía doméstica del dataset y ausencia total de capacidad conversacional general. No hay datos de benchmarks comparativos que permitan una tabla de rendimiento frente a alternativas.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Smart-Home Energy SLM (este) | 109,1M (model card) / 186,8M (safetensors) | 448 | cc-by-4.0 | Dominio energetico, entrenado desde cero |
+| Qwen3-0.6B | 0,6B | 32.768 | Apache 2.0 | Proposito general, preentrenado |
+| SmolLM2-135M | 135M | 8.192 | Apache 2.0 | Proposito general, preentrenado |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | Proposito general, preentrenado |
+
+La comparacion directa con modelos de proposito general no es significativa en tareas de dominio: este modelo supera a los generalistas en sus tareas especificas (coste, clasificacion de carga, rechazo de preguntas no respondibles) pero falla por completo en conversacion libre. Su ventaja es el tamano minimo y la licencia permisiva; su desventaja, la ausencia de capacidades generales. No se dispone de datos de benchmarks comparativos directos con estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo entiende preguntas con el fraseo del dataset; el chat libre produce texto roto porque no ha visto inglés general.
-- Contexto muy corto (448 tokens) y entrenamiento sobre preguntas individuales; el Modelfile de Ollama envía solo el último mensaje.
-- Rendimiento bajo en tareas complejas: daily_profile (5,0 % UCI, 14,5 % REFIT), outdoor_weather (25,0 % UCI) y room_compare (46,5 % UCI).
-- Riesgo de alucinación limitado por el rechazo explícito de premisas falsas y preguntas no respondibles, pero no eliminado; validar salidas en producción.
-- Sesgos: entrenado con datos de una vivienda belga y 20 viviendas del Reino Unido, por lo que los patrones de consumo no son representativos de otras regiones, climas o tarifas.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; revisar los términos de los datasets de origen (UCI Appliances Energy Prediction y REFIT) antes de redistribuir datos derivados.
-- La discrepancia entre los 186,7 M de parámetros del safetensors y los 109,1 M de la model card debe tenerse en cuenta al planificar memoria y al citar el modelo.
-- No soporta tool calling, agentes, visión ni audio; no debe presentarse como asistente general.
+- Solo entiende preguntas con la formulacion del dataset de entrenamiento; la conversacion libre produce texto incoherente.
+- Contexto muy corto (448 tokens), insuficiente para conversaciones multi-turno o documentos largos.
+- Solo ingles.
+- No soporta tool calling, agentes ni razonamiento multi-paso.
+- Riesgo de alucinacion en preguntas fuera de distribucion; el modelo mitiga parcialmente este riesgo con la respuesta "cannot be determined", pero no lo elimina.
+- Sesgos conocidos: no documentados en la informacion disponible; el dataset se limita a una vivienda belga y 20 viviendas del Reino Unido, por lo que los patrones de consumo pueden no generalizar a otras regiones o tipos de vivienda.
+- Rendimiento moderado en tareas de estadisticas de ventana (37-51,5%) y comparacion entre habitaciones (46,5%), insuficiente para uso critico sin validacion adicional.
+- Licencia cc-by-4.0: permite uso comercial con atribucion; no se documentan restricciones adicionales.
+- El modelo no se ha evaluado en produccion; su uso en sistemas de facturacion o control de energia requiere verificacion humana.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Design-Thinking-SLM/smart-home-energy-qwen3-scratch
-- Dataset de entrenamiento: https://huggingface.co/datasets/Design-Thinking-SLM/smart-home-energy-slm
-- Tokenizer base: https://huggingface.co/Qwen/Qwen3-8B
-- Dataset UCI Appliances Energy Prediction: no disponible en la información proporcionada
-- Dataset REFIT: no disponible en la información proporcionada
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada
+- Hugging Face: https://huggingface.co/Design-Thinking-SLM/smart-home-energy-qwen3-scratch
+- Dataset: https://huggingface.co/datasets/Design-Thinking-SLM/smart-home-energy-slm
+- Ollama: https://ollama.com/ojaschaudhary20/energy-slm
+- Tokenizador base: https://huggingface.co/Qwen/Qwen3-8B
+- Dataset UCI Appliances Energy Prediction: no disponible en la informacion proporcionada
+- Dataset REFIT: no disponible en la informacion proporcionada

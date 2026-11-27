@@ -2,102 +2,105 @@
 
 ## Resumen
 
-LFM3-Audio-2B-LiteRT es la conversión al formato LiteRT (`.litertlm` y grafos `.tflite`) del modelo multimodal de audio LFM3-Audio-2B de Liquid AI, publicada por la comunidad litert-community. El modelo original acepta texto o voz como entrada y produce texto, voz o ambos, cubriendo reconocimiento automático del habla, síntesis de voz, conversación por voz, preguntas sobre grabaciones y llamadas a herramientas. Esta versión está pensada para ejecución local en dispositivos móviles y equipos de sobremesa sin conexión de red, empleando el runtime LiteRT-LM 0.18.1 y LiteRT 2.3.0.
+LFM3-Audio-2B-LiteRT es la conversion al formato LiteRT (antes TensorFlow Lite) del modelo multimodal de audio LiquidAI/LFM3-Audio-2B, publicada por la comunidad litert-community. El modelo original, desarrollado por Liquid AI, acepta texto o voz como entrada y produce texto, voz o ambos, cubriendo reconocimiento automatico del habla, sintesis de voz, conversacion por voz, preguntas sobre grabaciones y llamadas a herramientas. Esta version empaqueta el decodificador en int4, el embedder en int8 y el codificador de audio en fp16 dentro de un unico fichero `.litertlm` de 1,53 GB, pensado para ejecucion completamente local en telefonos Android y Mac sin conexion de red.
 
-La conversión incluye un decodificador cuantizado a int4 con embedder int8 y codificador de audio con pesos lineales en fp16, todo empaquetado en un único fichero de 1,53 GB con una ventana de contexto de 2.048 tokens. La salida de voz no la genera LiteRT-LM por sí solo: requiere cuatro grafos adicionales (proyección de profundidad, pasada del decodificador de profundidad, embed de trama y decodificador del códec de audio) que la aplicación debe orquestar en un bucle propio.
+La relevancia de esta ficha esta en que permite llevar un modelo any-to-any de audio a hardware de consumo: en un Galaxy S26 (Snapdragon SM8850) el decodificador escribe 40,61 tokens por segundo en GPU y genera un segundo de voz en 0,40 s (factor de tiempo real 0,44), mientras que en un Pixel 8a (Tensor G3) baja a 12,95 tokens/s y 0,81 s por segundo de voz. En un Mac con M4 Max alcanza 167,88 tokens/s en decodificacion por WebGPU.
 
-Su relevancia actual reside en que demuestra la viabilidad de un modelo any-to-any de audio en hardware de consumo: en un Galaxy S26 (Snapdragon SM8850) el decodificador de texto alcanza 40,61 tokens/s en GPU y la síntesis de voz corre a un factor de tiempo real de 0,44; en un Pixel 8a (Tensor G3) se obtienen 12,95 tokens/s y un factor de 0,88. La licencia es la LFM1.0 del modelo original, con restricciones que deben revisarse antes de un uso comercial.
+Es importante subrayar que LiteRT-LM por si solo no produce voz: la salida hablada requiere cuatro grafos LiteRT adicionales y un bucle implementado en la propia aplicacion, ya que el siguiente token de entrada en modo voz es una suma de embeddings de 12 codebooks que LiteRT-LM no puede alimentar directamente. La conversion se realizo con litert-torch y litert-lm-builder 0.18.1 sobre LiteRT 2.3.0, con mediciones del 29 de octubre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de audio any-to-any de Liquid AI convertido a LiteRT; decodificador transformer con decodificador de profundidad para códecs de voz; codificador de audio integrado |
-| Parametros totales | 2B (según el nombre del modelo base; el desglose exacto no está disponible) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | Decodificador int4, embedder int8, codificador de audio con pesos lineales fp16; pasada de profundidad en float32, int8 (pesos int8, activaciones float32) y compilada AOT para NPU Snapdragon SM8850 |
-| Idiomas soportados | Inglés (verificado por el autor de la conversión); la model card del modelo original lista 18 idiomas para transcripción, síntesis y traducción, y conversación por voz solo en inglés |
-| Licencia | LFM1.0 (`other`, enlace a LICENSE en el repo) |
-| Formato de pesos | `.litertlm` (modelo principal), `.tflite` (grafos auxiliares de voz), `litertlm_manifest.json` |
+| Arquitectura | No disponible en la informacion proporcionada (modelo base LiquidAI/LFM3-Audio-2B; decodificador transformer con codificador de audio y decodificador de profundidad para codecs) |
+| Parametros totales | 2B (segun el nombre del modelo base) |
+| Parametros activos | No disponible |
+| Longitud de contexto | 2048 tokens |
+| Tipos de cuantizacion | Decodificador int4, embedder int8, codificador de audio fp16; grafo de profundidad en float32 e int8; compilacion AOT para NPU SM8850 |
+| Idiomas soportados | Ingles (verificado); el modelo base declara 18 idiomas para transcripcion, sintesis y traduccion, y conversacion por voz solo en ingles |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | `.litertlm` (LiteRT-LM) y `.tflite` (LiteRT) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-Audio-2B de Liquid AI es un modelo any-to-any que combina un codificador de audio con un decodificador de lenguaje y un decodificador de profundidad que genera los códigos acústicos de un códec de audio. La conversión a LiteRT mantiene esa estructura: el fichero `.litertlm` contiene el decodificador int4, el embedder int8, el codificador de audio con pesos lineales fp16, el tokenizer y la plantilla de chat. La síntesis de voz se realiza con un bucle externo que, por cada trama de 80 ms, proyecta el último estado oculto del decodificador, ejecuta tres pasadas del decodificador de profundidad para revelar los 12 códigos de la trama, los convierte en el embedding de entrada siguiente (suma de 12 embeddings de codebook) y decodifica 12 tramas (0,96 s) a audio de 24 kHz mediante el decodificador del códec.
+El modelo base LFM3-Audio-2B es un modelo any-to-any de audio de Liquid AI que combina un codificador de audio con un decodificador de lenguaje y un decodificador de profundidad para la generacion de codecs de voz. La conversion a LiteRT mantiene esa estructura en varios grafos: el fichero `.litertlm` contiene el decodificador int4, el embedder int8, el codificador de audio con pesos lineales en fp16, el tokenizer y la plantilla de chat. La generacion de voz se reparte en grafos separados: proyeccion de la ultima capa oculta hacia el decodificador de profundidad, una pasada del decodificador de profundidad (tres pasadas revelan los 12 codigos de una trama de 80 ms), un embedder de trama que convierte los 12 codigos en la siguiente entrada del decodificador y un decodificador de codec que transforma 12 tramas (0,96 s) en audio a 24 kHz.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La conversión se realizó con litert-torch y litert-lm-builder 0.18.1 y se ejecutó con LiteRT 2.3.0; las mediciones de rendimiento están fechadas el 29 de octubre de 2026 (salida de voz en Pixel 8a el 31 de octubre de 2026). El tokenizer del fichero `.litertlm` es byte a byte el `tokenizer.json` del repositorio de origen.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La innovacion tecnica destacable de esta version es el pipeline de conversion y despliegue: cuantizacion mixta por componente, compilacion ahead-of-time para la NPU Snapdragon SM8850 y un bucle de aplicacion que orquesta los grafos para la salida de voz, con un tokenizer copiado byte a byte del repositorio original.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR): transcripción de audio a texto.
-- Síntesis de voz (TTS): generación de audio a 24 kHz a partir de texto, mediante los grafos auxiliares y un bucle de aplicación.
-- Conversación por voz: entrada de voz y respuesta en texto o voz (solo inglés verificado).
-- Preguntas sobre grabaciones: consultas en lenguaje natural sobre el contenido de un audio.
-- Entrada multimodal: acepta texto o voz y produce texto, voz o ambos.
-- Llamadas a herramientas (tool calls): el modelo original soporta function calling según la model card de origen.
-- Traducción: la model card del modelo original lista 18 idiomas para transcripción, síntesis y traducción.
-- Ejecución totalmente local sin red: CPU y GPU en Android y Mac; NPU en Snapdragon SM8850 para la pasada de profundidad.
-- Procesamiento de ventanas de audio de 30 s por pasada del codificador.
+- Reconocimiento automatico del habla (transcripcion de audio a texto) en ingles verificado.
+- Sintesis de voz (texto a voz) mediante los grafos adicionales y el bucle de aplicacion.
+- Conversacion por voz (voice chat) en ingles.
+- Respuestas en texto, en voz o en ambas modalidades.
+- Preguntas sobre una grabacion de audio (audio question answering).
+- Llamadas a herramientas (tool calls) segun la model card del modelo base.
+- Procesamiento de ventanas de audio de hasta 30 s por pasada del codificador.
+- Traduccion y transcripcion en 18 idiomas segun el modelo base (no verificado en esta conversion).
+- Ejecucion completamente local sin red en Android y Mac, en CPU, GPU y NPU (SM8850).
 
 ## Casos de uso
 
-- Transcripción en directo en aplicaciones móviles: el modelo procesa ventanas de 30 s de audio en 94,4 ms en un Galaxy S26 (3,1 ms por segundo de audio), lo que permite subtitulado y notas de voz sin conexión.
-- Asistentes de voz embebidos: con conversación por voz en inglés y respuesta hablada generada a 0,40 s por segundo de audio en Galaxy S26, se pueden construir asistentes que funcionen íntegramente en el dispositivo sin enviar audio a la nube.
-- Accesibilidad: lectura en voz alta de texto y descripción hablada de contenido para usuarios con discapacidad visual, aprovechando la síntesis local y la baja latencia del primer audio (0,71 s en Galaxy S26, 1,50 s en Pixel 8a).
-- Análisis de grabaciones: preguntas en lenguaje natural sobre reuniones, entrevistas o notas de voz, usando la ventana de contexto de 2.048 tokens para mantener el hilo de la consulta.
-- Dictado y post-procesado de texto: integración del ASR en teclados o editores móviles, con el decodificador de texto a 40,61 tokens/s en GPU de Galaxy S26 para corrección y formateo posterior.
-- Traducción de audio a texto: la model card del modelo original indica soporte de traducción en 18 idiomas, lo que permite transcribir y traducir grabaciones en el dispositivo.
-- Automatización con tool calling: el soporte de llamadas a herramientas del modelo original permite encadenar acciones (calendario, búsqueda local) en asistentes on-device.
-- Prototipado en Mac: con 167,88 tokens/s de decodificación en GPU WebGPU de un M4 Max, se puede iterar en el diseño de la aplicación antes de desplegar en móvil.
+- Transcripcion local en movil: la aplicacion graba audio y lo pasa por el codificador (94,4 ms por ventana de 30 s en Galaxy S26) para obtener texto sin enviar datos a la nube, adecuado para notas de voz y subtitulado offline.
+- Asistente de voz sin conexion: el modelo responde en texto y, con los grafos de sintesis, en voz, con un primer audio tras 0,71 s en Galaxy S26 y 1,50 s en Pixel 8a, suficiente para interacciones conversacionales.
+- Preguntas sobre grabaciones: reuniones, entrevistas o clases grabadas se procesan en ventanas de 30 s para extraer respuestas concretas gracias al contexto de 2048 tokens.
+- Accesibilidad: lectura en voz alta de texto en pantalla y dictado por voz en dispositivos de gama media, con un factor de tiempo real de 0,44 en hardware de 2026.
+- Traduccion y transcripcion multilingue: el modelo base declara 18 idiomas para transcripcion y traduccion, util para aplicaciones de viaje o atencion multilingue (requiere validacion en esta conversion).
+- Automatizacion con herramientas en el dispositivo: las llamadas a herramientas del modelo base permiten construir agentes locales que consultan calendarios, contactos o servicios del telefono sin salir del dispositivo.
+- Prototipado en Mac: con 167,88 tokens/s en decodificacion por WebGPU en un M4 Max, sirve para desarrollar y depurar el bucle de voz antes de desplegar en Android.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido por el autor de la conversión (no son benchmarks académicos como MMLU o HumanEval):
+Rendimiento medido por el autor de la conversion (no son benchmarks academicos):
 
-| Dispositivo | Tarea | Ejecución | Resultado |
-|---|---|---|---|
-| Galaxy S26 (Snapdragon SM8850) | Texto: prefill 1.024 tokens + 256 tokens | GPU | prefill 1.295,4 tokens/s; decodificación 40,61 tokens/s; primer token 0,81–0,82 s |
-| Galaxy S26 | Audio de entrada: ventana de 30 s | GPU | 94,4 ms por ventana (3,1 ms por segundo de audio) |
-| Galaxy S26 | Salida de voz | decodificador CPU, pasada de profundidad NPU, códec GPU | 0,40 s por segundo de audio; factor de tiempo real 0,44; primer audio 0,71 s |
-| Pixel 8a (Tensor G3) | Texto: respuestas a preguntas cortas | GPU | decodificación 12,95 tokens/s (mediana de 7 respuestas); primer token 1,14 s |
-| Pixel 8a | Audio de entrada: ventana de 30 s | GPU | 360,7 ms por ventana (12 ms por segundo de audio) |
-| Pixel 8a | Salida de voz | decodificador y decodificador de profundidad CPU (int8), códec GPU | 0,81 s por segundo de audio; factor de tiempo real 0,88; primer audio 1,50 s |
-| Mac (Apple M4 Max) | Texto: prefill 1.024 tokens + 256 tokens | GPU (WebGPU) | prefill 3.898 tokens/s; decodificación 167,88 tokens/s; primer token 0,27 s |
-| Mac (Apple M4 Max) | Texto: prefill 1.024 tokens + 256 tokens | CPU | prefill 354 tokens/s; decodificación 64,19 tokens/s; primer token 2,90 s |
+| Dispositivo | Tarea | Resultado |
+|---|---|---|
+| Galaxy S26 (SM8850, GPU) | Texto: prefill 1024 tokens + 256 tokens | prefill 1295,4 tokens/s; decodificacion 40,61 tokens/s; primer token 0,81-0,82 s |
+| Galaxy S26 (GPU) | Entrada de audio, ventana de 30 s | 94,4 ms por ventana (3,1 ms por segundo de audio) |
+| Galaxy S26 (app Android) | Salida de voz | 0,40 s por segundo de voz; factor de tiempo real 0,44; primer audio 0,71 s |
+| Pixel 8a (Tensor G3, GPU) | Texto: respuestas cortas | decodificacion 12,95 tokens/s; primer token 1,14 s |
+| Pixel 8a (GPU) | Entrada de audio, ventana de 30 s | 360,7 ms por ventana (12 ms por segundo de audio) |
+| Pixel 8a (app Android) | Salida de voz | 0,81 s por segundo de voz; factor de tiempo real 0,88; primer audio 1,50 s |
+| Mac M4 Max (WebGPU) | Texto: prefill 1024 + 256 tokens | prefill 3898 tokens/s; decodificacion 167,88 tokens/s; primer token 0,27 s |
+| Mac M4 Max (CPU) | Texto: prefill 1024 + 256 tokens | prefill 354 tokens/s; decodificacion 64,19 tokens/s; primer token 2,90 s |
+
+No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento: el fichero principal `.litertlm` ocupa 1,53 GB; los grafos auxiliares de voz suman aproximadamente 1,04 GB (100,7 MB de proyección, 84,6 MB de pasada int8, 169,6 MB de pasada NPU, 198,3 MB de embed de trama y 152,5 MB de decodificador del códec). El repo completo son 4,1 GB.
-- GPU recomendadas: GPU integrada de Snapdragon SM8850 (Galaxy S26) y Tensor G3 (Pixel 8a) verificadas; GPU WebGPU de Apple M4 Max verificada. No se han publicado pruebas en A100, H100 ni RTX 4090.
-- NPU: la pasada de profundidad tiene una variante compilada AOT exclusiva para la NPU Snapdragon SM8850.
-- Hardware de consumo: el modelo está diseñado para ejecutarse en teléfonos Android de gama alta y en Mac; no se documenta su funcionamiento en GPU de escritorio NVIDIA.
-- Despliegue: LiteRT-LM 0.18.1 (runtime) y LiteRT 2.3.0; la salida de voz requiere un bucle propio en la aplicación que orqueste los grafos `.tflite`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ver la tabla de benchmarks; el primer token tarda entre 0,27 s (M4 Max GPU) y 1,14 s (Pixel 8a), y la síntesis de voz va de 0,40 s a 0,81 s por segundo de audio.
+- VRAM/almacenamiento: el fichero principal ocupa 1,53 GB; los grafos de voz suman aproximadamente 0,87 GB en la variante int8 (100,7 MB + 84,6 MB + 198,3 MB + 152,5 MB + 334,1 MB en float32 si se usa esa pasada). El repositorio completo ocupa 4,1 GB.
+- GPU recomendadas: Snapdragon SM8850 (Galaxy S26) con aceleracion GPU y NPU; Tensor G3 (Pixel 8a) en GPU; Apple M4 Max por WebGPU. No se documentan requisitos para A100, H100 o RTX 4090.
+- Cabe en hardware de consumo: si, en telefonos Android de 2025-2026 y en Mac; no se proporcionan datos para GPU de escritorio NVIDIA.
+- Opciones de despliegue: LiteRT-LM 0.18.1 (binario `litert_lm_advanced_main`), LiteRT 2.3.0 y una aplicacion Android propia que orquesta los grafos de voz. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; en Galaxy S26 el prefill alcanza 1295,4 tokens/s y la decodificacion 40,61 tokens/s; en Mac M4 Max por WebGPU, 3898 tokens/s de prefill y 167,88 tokens/s de decodificacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Despliegue |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| LFM3-Audio-2B-LiteRT | 2B | 2.048 tokens | Inglés verificado (18 en el original) | LFM1.0 | LiteRT-LM en Android y Mac |
-| LiquidAI/LFM3-Audio-2B | 2B | no disponible | 18 idiomas (conversación por voz solo inglés) | LFM1.0 | Framework original de Liquid AI |
-| Alternativas comparables de audio on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM3-Audio-2B-LiteRT (esta ficha) | 2B | 2048 | Ingles verificado; 18 en el base | lfm1.0 | LiteRT-LM en Android y Mac |
+| LiquidAI/LFM3-Audio-2B | 2B | No disponible | 18 (transcripcion/sintesis); ingles en voice chat | lfm1.0 | Framework original de Liquid AI |
+| Otros modelos de audio any-to-any | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa.
+No se dispone en la informacion proporcionada de datos de rendimiento de modelos alternativos que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- La salida de voz no funciona solo con LiteRT-LM: requiere implementar un bucle de aplicación con cuatro grafos adicionales y gestionar la realimentación de embeddings, algo que LiteRT-LM no puede hacer por sí mismo.
-- El contexto está limitado a 2.048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Solo se ha verificado el inglés; aunque el modelo original declara 18 idiomas, no hay validación de esta conversión en otros idiomas.
-- La licencia LFM1.0 es `other` y puede imponer restricciones al uso comercial; es necesario revisar el fichero LICENSE antes de desplegar en producción.
-- Riesgo de alucinación inherente a los modelos generativos, especialmente en transcripciones con ruido o audio de baja calidad.
-- No se han publicado evaluaciones de sesgos para esta conversión.
-- El rendimiento depende fuertemente del dispositivo: en Pixel 8a la síntesis de voz está cerca del límite de tiempo real (factor 0,88), lo que deja poco margen para cargas concurrentes.
-- La variante NPU de la pasada de profundidad solo funciona en Snapdragon SM8850; en otros dispositivos debe usarse la variante int8 en CPU.
-- No hay datos publicados sobre latencia o throughput en GPU de escritorio NVIDIA, por lo que no se puede garantizar su viabilidad en servidores.
+- Solo se ha verificado el ingles; el resto de los 18 idiomas del modelo base no esta validado en esta conversion.
+- La salida de voz no funciona con LiteRT-LM por si solo: requiere cuatro grafos adicionales y un bucle propio en la aplicacion, lo que aumenta la complejidad de integracion.
+- Contexto limitado a 2048 tokens, insuficiente para documentos largos o conversaciones muy extensas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en preguntas sobre grabaciones largas o con ruido.
+- Sesgos no documentados en la informacion disponible; al ser un modelo entrenado principalmente en ingles, puede presentar sesgos culturales y linguisticos.
+- Licencia lfm1.0 con posibles restricciones para uso comercial; es necesario revisar el fichero LICENSE antes de desplegar en produccion.
+- La compilacion AOT para NPU solo cubre el SoC Snapdragon SM8850; en otros dispositivos la pasada de profundidad se ejecuta en CPU con el fichero int8.
+- El rendimiento medido corresponde a versiones concretas de software (LiteRT-LM 0.18.1, LiteRT 2.3.0) y puede variar con actualizaciones.
+- No hay datos publicados sobre calidad de transcripcion (WER) ni de sintesis (MOS) en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
-- Licencia LFM1.0: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT/blob/main/LICENSE
+- Licencia: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT/blob/main/LICENSE
+- Repositorio de grafos de voz: https://huggingface.co/litert-community/LFM3-Audio-2B-LiteRT (mismos ficheros `.tflite` del repositorio)
+- LiteRT-LM v0.18.1: no disponible como enlace directo en la informacion proporcionada
+- LiteRT 2.3.0: no disponible como enlace directo en la informacion proporcionada

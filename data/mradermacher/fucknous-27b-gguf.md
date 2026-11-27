@@ -2,81 +2,91 @@
 
 ## Resumen
 
-FuckNous-27B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base FuckNous-27B, publicado por el usuario Mulatram en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino una conversión y cuantización del modelo original en formato Hugging Face (convert_type: hf) a varios niveles de precision GGUF, pensada para su uso con llama.cpp y derivados como Ollama o LM Studio.
+FuckNous-27B-GGUF es la versión cuantizada en formato GGUF del modelo Mulatram/FuckNous-27B, publicada por el usuario mradermacher, conocido en el ecosistema por distribuir cuantizaciones estáticas de modelos open source. El modelo base cuenta con 26.895.998.464 parámetros (aproximadamente 27B), lo que lo sitúa en la gama de modelos medianos-grandes orientados a inferencia local y despliegue en servidores con GPUs de gama alta o múltiples consumer GPUs.
 
-La relevancia de esta ficha es limitada y conviene advertirlo desde el principio: el nombre del modelo (que incluye un insulto en ingles dirigido a Nous Research) sugiere un modelo de broma o un ajuste fino no convencional, y no hay informacion publica sobre su entrenamiento, licencia, idiomas o rendimiento. El dato de parametros proporcionado por los safetensors del repo (460.730.096, es decir, unos 0,46 mil millones) contradice el "27B" del nombre, lo que indica que el modelo subyacente no es un 27B real o que la conversion se hizo sobre un checkpoint parcial.
+La relevancia de esta publicación radica en que facilita el acceso al modelo base en formatos ligeros (desde Q2_K de 11,2 GB hasta Q8_0 de 28,7 GB), permitiendo su ejecución en hardware que no podría cargar los pesos completos en precisión f16. El repositorio incluye además suplementos multimodales (mmproj) en Q8_0 y f16, lo que sugiere que el modelo base incorpora capacidades de visión, aunque la model card no lo detalla explícitamente.
 
-Por tanto, esta ficha documenta lo que se puede verificar (el proceso de cuantizacion, los formatos disponibles y el tamano del repo) y marca explicitamente como "no disponible" todo lo que no consta. No se recomienda su uso en produccion sin una evaluacion previa del modelo base.
+La información disponible sobre el modelo original es muy limitada: no se especifican arquitectura, contexto, licencia ni datos de entrenamiento. Esta ficha documenta lo que puede verificarse a partir de los metadatos y la model card del repositorio GGUF, indicando explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente transformer, sin confirmar) |
-| Parametros totales | 460.730.096 (segun safetensors del repo); el nombre indica "27B", dato no verificado |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base transformers; probable transformer decoder-only por el tamaño y formato, sin confirmar) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés, según la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base esta en formato Hugging Face |
-| Tamano del repo | 1,6 GB |
-| Version de cuantizacion | quantize_version: 2 |
-| Tensor de salida cuantizado | si (output_tensor_quantised: 1) |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base FuckNous-27B. La model card del repositorio GGUF se limita a los metadatos del proceso de cuantizacion (version 2 del cuantizador, salida con tensor cuantizado, tipo de conversion "hf") y a la lista de cuantizaciones generadas. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se dispone de información sobre la arquitectura interna del modelo base Mulatram/FuckNous-27B. Por el recuento de parámetros (~26,9B) y el formato de publicación (transformers + GGUF), se trata presumiblemente de un transformer decoder-only, pero no se confirma en la documentación disponible. Tampoco se detallan datos de entrenamiento, número de tokens, composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-La discrepancia entre el nombre ("27B") y el recuento real de parametros de los safetensors (460.730.096) es el unico dato tecnico objetivo disponible y debe interpretarse con cautela: puede deberse a un modelo base mucho mas pequeno del que sugiere el nombre, a un checkpoint incompleto o a un error en el proceso de publicacion. En cualquier caso, el paquete GGUF resultante tiene un tamano de 1,6 GB, coherente con un modelo de menos de mil millones de parametros y no con uno de 27B.
+La model card del repositorio GGUF es puramente técnica y se centra en el proceso de cuantización estática. No se mencionan innovaciones arquitectónicas (atención lineal, decodificación especulativa, MoE, SSM híbrido) ni detalles sobre el pipeline de entrenamiento. La presencia de archivos mmproj indica que el modelo base incorpora un proyector multimodal, lo que sugiere capacidades de visión, pero no se especifica el codificador visual ni la resolución de imagen soportada.
 
 ## Capacidades
 
-- Generacion de texto: presumiblemente soportada al ser un modelo de lenguaje, aunque no hay documentacion que lo confirme.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible.
+- Generación de texto conversacional: el tag `conversational` en los metadatos indica que el modelo está orientado a diálogo multi-turno.
+- Capacidades multimodales: la existencia de archivos mmproj (Q8_0 y f16) sugiere soporte de entrada de imágenes, aunque no se detalla en la model card.
+- Idiomas: únicamente se declara inglés (`en`); no se confirman capacidades multilingües.
+- Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-No se puede afirmar ninguna capacidad concreta mas alla de la generacion de texto generica, dado que no hay model card del modelo base ni evaluaciones publicadas.
+- Modo thinking o razonamiento explícito: no disponible.
+- Capacidades de código y matemáticas: no disponible.
 
 ## Casos de uso
 
-- Experimentacion local con llama.cpp: el paquete GGUF permite cargar el modelo en entornos de escritorio para pruebas informales, aunque su utilidad real depende de la calidad del modelo base, que no esta documentada.
-- Pruebas de cuantizacion y comparacion de precisiones: util para estudiar como afectan Q2_K, Q4_K_M o Q8_0 a la perplejidad de un modelo pequeno, si se dispone de un conjunto de evaluacion propio.
-- Docencia sobre formatos GGUF: sirve como ejemplo practico de un repositorio de cuantizaciones estaticas generado con la herramienta de mradermacher.
-- Integracion en pipelines de prueba con Ollama o LM Studio: para validar la infraestructura de despliegue antes de sustituir el modelo por uno de produccion.
-- Analisis de repositorios de bajo uso: como caso de estudio de modelos publicados sin documentacion, licencia ni evaluacion.
-- No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autononos ni ninguna aplicacion con requisitos de calidad, seguridad o cumplimiento, dada la ausencia total de garantias sobre el modelo base.
+- Asistente conversacional local en inglés: con cuantizaciones Q4_K_M (16,8 GB) o Q5_K_M (19,4 GB), el modelo puede desplegarse en una única GPU de 24 GB (RTX 4090, A10G, L4) para diálogos multi-turno con baja latencia, adecuado para prototipos y entornos de desarrollo sin conexión.
+- Procesamiento de documentos con imágenes: los archivos mmproj permiten, en teoría, pasar imágenes junto con texto a un runtime compatible (llama.cpp con soporte multimodal), útil para extracción de información de capturas, diagramas o formularios.
+- Despliegue en estaciones de trabajo con GPUs de consumo: la versión Q4_K_S (15,7 GB) cabe en GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16GB) con contexto moderado, habilitando asistentes privados sin depender de la nube.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece un espectro amplio de cuantizaciones (Q2_K a Q8_0) que permite medir el impacto de la compresión en calidad y velocidad sobre el mismo modelo base, útil para investigación en eficiencia de inferencia.
+- Fine-tuning posterior o destilación: al existir pesos safetensors del modelo base, se puede partir de ellos para ajuste fino y luego cuantizar de nuevo, integrándose en pipelines de investigación.
+- Servicio de inferencia con llama.cpp u Ollama: las cuantizaciones GGUF son directamente compatibles con llama.cpp, Ollama y otros runtimes ligeros, lo que facilita montar un endpoint HTTP local para pruebas de integración con aplicaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repo ocupa 1,6 GB, por lo que la cuantizacion mas grande (x-f16) rondaria ese orden de magnitud y las cuantizaciones Q4_K_M o Q5_K_M serian considerablemente menores (del orden de varios cientos de MB), aunque no se dispone de cifras exactas por archivo.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM deberia poder cargar las cuantizaciones pequenas; no se dispone de datos de rendimiento en A100, H100 o RTX 4090.
-- Cabe en GPU consumer: si, previsiblemente en practicamente cualquier GPU moderna e incluso en CPU, dado el reducido tamano del repo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. No se ha verificado compatibilidad con vLLM o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización, sin contar overhead de contexto):
+  - Q2_K: ~11,2 GB
+  - Q3_K_M: ~13,6 GB
+  - Q4_K_M: ~16,8 GB
+  - Q5_K_M: ~19,4 GB
+  - Q6_K: ~22,2 GB
+  - Q8_0: ~28,7 GB
+  - mmproj f16: ~1,0 GB adicional para multimodal
+- GPUs recomendadas: A100 40GB/80GB, H100 para Q8_0 con contexto largo; RTX 4090 (24 GB) para Q5_K_M o Q6_K; RTX 4080 / 4060 Ti 16GB para Q4_K_S.
+- Cabe en consumer GPU: sí, en RTX 4090 (hasta Q6_K), RTX 4080 y 4060 Ti 16GB (Q4_K_S/M), y en GPUs de 12 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; para el modelo base en safetensors, vLLM o TGI (no confirmado para esta arquitectura concreta).
+- Latencia y throughput: no disponibles; dependerán del hardware, la cuantización y el runtime.
 
 ## Comparativa con modelos similares
 
-No disponible. No hay informacion suficiente sobre el modelo base (arquitectura, tamano real, licencia) para identificar alternativas comparables con rigor. La unica comparacion objetiva posible es con otras cuantizaciones del mismo modelo base, que no aportan informacion sobre calidad.
+No disponible. La información proporcionada no incluye datos de rendimiento ni características del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría (p. ej. modelos de ~27B como Gemma 2 27B, Qwen2.5 32B o Mistral Large). Se recomienda consultar la model card del modelo base (Mulatram/FuckNous-27B) para obtener datos comparativos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card del modelo base: no se conocen datos de entrenamiento, sesgos, idiomas ni alineamiento.
-- Discrepancia entre el nombre ("27B") y los parametros reales (460.730.096): no se debe asumir que sea un modelo de 27B.
-- Licencia no disponible: no hay garantia de uso comercial ni claridad sobre las obligaciones de atribucion.
-- Riesgo elevado de alucinacion y de comportamiento impredecible, al no existir evaluaciones publicadas.
-- El nombre del modelo incluye un insulto dirigido a Nous Research, lo que sugiere un origen no profesional o de broma; no es apropiado para entornos corporativos o de cara al publico.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso ni de validacion por parte de la comunidad.
-- No usar en produccion sin una evaluacion exhaustiva previa y sin verificar la licencia del modelo base.
+- Información muy escasa: no se documentan arquitectura, contexto, licencia ni datos de entrenamiento, lo que impide evaluar su idoneidad para producción.
+- Licencia no disponible: no puede confirmarse el uso comercial; es imprescindible verificar la licencia del modelo base antes de cualquier despliegue.
+- Idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas es desconocido.
+- Riesgo de alucinación: inherente a los modelos generativos; sin benchmarks ni documentación de alineación, no puede estimarse su magnitud.
+- Sesgos: no documentados; al desconocerse el dataset de entrenamiento, no pueden evaluarse sesgos conocidos.
+- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad; la propia model card advierte que Q3_K_M es de "lower quality" y recomienda Q4_K_S/M para uso general.
+- No se ofrecen cuantizaciones con imatrix (weighted), lo que puede reducir la calidad frente a versiones imatrix de otros repositorios.
+- El nombre del modelo y del autor base no aportan información sobre su procedencia ni garantías de mantenimiento.
+- Fecha de creación futura en los metadatos (2026-11-23): conviene verificar la integridad y procedencia del repositorio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/FuckNous-27B-GGUF
 - Modelo base: https://huggingface.co/Mulatram/FuckNous-27B
+- Página de descargas del autor: https://hf.tst.eu/model#FuckNous-27B-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de comparación de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests

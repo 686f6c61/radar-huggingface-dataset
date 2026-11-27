@@ -53,5 +53,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
+    },
+    {
+      "title": "SenseNovaAI - World's Most Powerful AI Social Media Automation ...",
+      "url": "https://www.sensenova.in/",
+      "snippet": "Supercharge your brand with SenseNovaAI. Enterprise-grade AI social media automation, Instagram auto-replies, Facebook DM …Read more"
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: …",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "The fastest way to experience SenseNova-U1 is through SenseNova-Studio — a 🆓 free online playground where you can try the …Read more"
+    },
+    {
+      "title": "SenseNova - Hugging Face",
+      "url": "https://huggingface.co/sensenova",
+      "snippet": "Org profile for SenseNova on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SenseNova-Loop-9B-Preview - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "snippet": "Oct 30, 2026 · Image-Text-to-Text model with 10B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
 }

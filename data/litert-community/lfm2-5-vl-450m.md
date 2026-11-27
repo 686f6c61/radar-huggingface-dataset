@@ -2,112 +2,103 @@
 
 ## Resumen
 
-LFM2.5-VL-450M es un modelo de lenguaje y visión (VLM) de 450 millones de parámetros desarrollado originalmente por Liquid AI y convertido por la comunidad litert-community al formato LiteRT-LM (`.litertlm`) para inferencia en dispositivo. El modelo combina un backbone de texto híbrido de la familia LFM2 (16 capas con convoluciones cortas con compuerta y atención de consultas agrupadas, vocabulario de 64k) con una torre de visión SigLIP2 compacta de 12 capas y dimensión oculta 768. Su relevancia radica en que es un VLM funcional en un tamaño que cabe en prácticamente cualquier dispositivo: el archivo int4 ocupa 0,41 GB y el int8 0,56 GB.
+LFM2.5-VL-450M es un modelo de visión y lenguaje (VLM) de 450 millones de parámetros desarrollado por Liquid AI, distribuido en formato LiteRT-LM por la comunidad `litert-community` para inferencia en dispositivo (on-device). Combina un backbone de texto híbrido de la familia LFM2 con una torre de visión SigLIP2 compacta, lo que le permite procesar texto e imágenes en un único pipeline con un peso de tan solo 0,41 GB en cuantización int4.
 
-La conversión a LiteRT-LM permite ejecutar texto e imagen de extremo a extremo sobre el runtime pip de `litert-lm`, con soporte de CPU y GPU (OpenCL en macOS y Android; Metal en iOS falla en la creación del motor para esta familia). El modelo procesa una imagen por prompt, redimensionada a 512×512 y convertida en 256 tokens suaves, con una ventana de contexto máxima de 4096 tokens de caché KV.
+El modelo resuelve el problema de llevar capacidades multimodales a entornos con recursos muy limitados: móviles, dispositivos embebidos, navegadores y aplicaciones de escritorio sin GPU dedicada. Su tamaño reducido y el formato `.litertlm` (optimizado para el runtime LiteRT-LM de Google, sucesor de TensorFlow Lite) lo hacen adecuado para despliegues donde un VLM de miles de millones de parámetros resultaría inviable.
 
-Es importante señalar que la versión publicada arrastra un defecto conocido del runtime: en `litert-lm` 0.16.0 y en `main`, solo el cuarto superior de la imagen llega al modelo, lo que invalida cualquier tarea posicional (localizar, contar, enumerar). El repositorio incluye una compilación corregida (`LFM2.5-VL-450M_int4_fixB.litertlm`) que reexporta los grafos de visión con el pixel-unshuffle 2×2 dentro del codificador.
+Es relevante ahora porque LiteRT-LM se ha consolidado como runtime de referencia para IA en dispositivo en Android y macOS, y porque este modelo es la variante pequeña de la familia LFM2.5-VL, que también incluye una versión de 3B. La model card advierte de un defecto conocido en el runtime que afecta a la percepción posicional de la imagen, corregido parcialmente mediante un build alternativo incluido en el repositorio.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida: backbone de texto LFM2 (16 capas, convoluciones cortas con compuerta + atención GQA) + torre de visión SigLIP2 (12 capas, hidden 768) |
-| Parámetros totales | 450M (según denominación del modelo; desglose exacto no disponible) |
+| Arquitectura | Híbrida: backbone de texto LFM2 (16 capas, convoluciones cortas con compuerta + atención con consultas agrupadas) + torre de visión SigLIP2 (12 capas, dimensión oculta 768) |
+| Parámetros totales | 450M (aproximado, según denominación del modelo) |
 | Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens máximo de caché KV |
-| Tipos de cuantización | int8 dinámica (lineales de texto, convoluciones, embedding y torre de visión); int4 blockwise-32 OCTAV en lineales de texto con embedding y lm_head en int8 y torre de visión en int8 |
+| Longitud de contexto | 4096 tokens (caché KV máxima) |
+| Tipos de cuantización | int8 dinámica (texto, visión) e int4 blockwise-32 con embedding y lm_head en int8 |
 | Idiomas soportados | No disponible |
 | Licencia | LFM Open License v1.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base original en formato PyTorch no especificado en la información disponible |
-| Entrada de imagen | 1 imagen por prompt, redimensionada a 512×512, 256 tokens suaves; PNG/JPEG vía `--attachment` |
-| Backend | CPU y GPU (OpenCL en macOS/Android); Metal en iOS falla en la creación del motor |
-| Runtime mínimo verificado | `litert-lm` 0.19.0 para los archivos int4 e int8 |
-| Plantilla de chat | ChatML-style embebida en el archivo; placeholders de imagen insertados por el procesador de datos LFM2 del runtime (modelo no-thinking) |
-| Tamaño de archivo | int4: 0,41 GB; int8: 0,56 GB; int4_fixB: 0,41 GB |
+| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base original en formato PyTorch/safetensors no se detalla en la información disponible |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura híbrida: el backbone de texto LFM2 consta de 16 capas que alternan convoluciones cortas con compuerta y atención de consultas agrupadas (GQA), con un vocabulario de 64k tokens. La torre de visión es un SigLIP2 compacto de 12 capas con dimensión oculta 768. La imagen se procesa a 512×512 y se proyecta a 256 tokens suaves mediante un adaptador de visión. Una particularidad técnica relevante es que la familia LFM2.5-VL realiza el pixel-unshuffle 2×2 en el adaptador de visión, no en el codificador, lo que provoca incompatibilidad con la suposición del runtime LiteRT-LM y origina el defecto posicional descrito.
+El modelo emplea una arquitectura híbrida: el backbone de texto LFM2 consta de 16 capas que combinan convoluciones cortas con compuerta (gated short-convolutions) y atención con consultas agrupadas (grouped-query attention), con un vocabulario de 64k tokens. La torre de visión es un SigLIP2 compacto de 12 capas y dimensión oculta 768. Cada imagen se procesa a 512×512 píxeles y se convierte en 256 tokens suaves que se inyectan en la secuencia de texto mediante marcadores de posición gestionados por el procesador de datos LFM2 del runtime.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La conversión a LiteRT-LM se realizó con `litert_torch.convert`; según la model card, una conversión de un modelo PyTorch sin modificar coincidió con el original hasta 4e-7 en un Galaxy S26 con LiteRT 2.2.0 sobre Android 16. El proceso de conversión incluye la cuantización de lineales de texto, convoluciones, embedding y torre de visión, y en la variante int4 se aplica cuantización blockwise-32 OCTAV.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card del repositorio LiteRT no detalla el proceso de entrenamiento del modelo base original (LiquidAI/LFM2.5-VL-450M), solo su conversión y cuantización. La innovación técnica destacable es el propio formato `.litertlm`, que empaqueta el codificador de visión, el adaptador visual y los metadatos de marcadores de posición de imagen en un único archivo ejecutable por el runtime, junto con la cuantización int4 blockwise-32 de las capas lineales de texto.
 
 ## Capacidades
 
-- Generación de texto conversacional y respuesta a preguntas en formato ChatML.
-- Comprensión de imágenes: descripción (captioning), preguntas sobre color dominante, OCR de texto grande y reconocimiento de formas.
-- Conteo de objetos en imágenes (con las limitaciones posicionales indicadas).
-- Procesamiento de una imagen por prompt, redimensionada automáticamente por el runtime a 512×512.
-- Inferencia en dispositivo sobre CPU y GPU (OpenCL en macOS y Android).
-- Modelo no-thinking: no dispone de modo de razonamiento extendido.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de audio: no disponibles.
+- Generación de texto y respuesta a preguntas en formato conversacional (plantilla ChatML incluida en el archivo).
+- Comprensión de imágenes: descripción de escenas, preguntas sobre color dominante, OCR de texto grande, identificación de formas y conteo de objetos (con las limitaciones posicionales indicadas más abajo).
+- Procesamiento de una imagen por prompt, redimensionada automáticamente a 512×512 por el runtime.
+- Soporte de entrada PNG y JPEG mediante el parámetro `--attachment` del CLI de `litert-lm`.
+- Modelo no-thinking (sin modo de razonamiento extendido).
+- Inferencia en CPU y GPU (OpenCL en macOS y Android; Metal en iOS no soportado para esta familia).
+- No se documenta soporte de tool calling, function calling ni capacidades de agente multi-paso en la información disponible.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de accesibilidad en móvil: el modelo puede describir el contenido de una foto capturada por el usuario y responder preguntas sobre color o texto visible, ejecutándose en CPU sobre el propio dispositivo con un archivo int4 de 0,41 GB y sin conexión a red.
-- OCR ligero en aplicaciones de digitalización: con la compilación `int4_fixB`, que restaura la imagen completa, puede extraer texto grande de documentos o etiquetas en escenarios donde no se requiere precisión de coordenadas, integrándose en un pipeline Android mediante `litert-lm run --attachment`.
-- Clasificación y verificación visual en el borde: preguntas deterministas sobre fixtures sintéticos (color dominante, forma, palabra más grande) permiten usarlo como verificador rápido en pruebas automatizadas de aplicaciones de cámara.
-- Moderación o etiquetado de imágenes en local: al no requerir subida a la nube, encaja en flujos donde la privacidad impide enviar capturas a un servicio externo, aceptando la limitación de una sola imagen por prompt y 4096 tokens de contexto.
-- Prototipado de interfaces multimodales: su tamaño reducido permite iterar rápidamente en el diseño de asistentes que combinan texto e imagen en dispositivos de gama media, usando el runtime pip de `litert-lm` como entorno de desarrollo.
-- Evaluación comparativa de runtimes en el borde: sirve como referencia para medir el comportamiento de LiteRT-LM frente a otras alternativas en Android y macOS, especialmente para detectar regresiones en el camino de visión (como el issue #3246).
-- Tareas de captioning en aplicaciones de galería: generar descripciones breves de fotos para indexación local, aprovechando que el captioning funciona correctamente incluso con el archivo estándar pese al recorte superior de la imagen.
+- Asistente visual en aplicaciones móviles Android: integrado mediante el runtime LiteRT-LM y el paquete `com.google.ai.edge.litert`, el modelo puede describir fotos tomadas por el usuario o responder preguntas sobre ellas sin enviar datos a la nube, con un peso de 0,41 GB que cabe en el almacenamiento de cualquier terminal moderno.
+- OCR ligero en dispositivos de campo: para digitalizar carteles, etiquetas o documentos con texto de gran tamaño dominante, el modelo funciona correctamente en CPU y no requiere conectividad, lo que resulta útil en entornos industriales o rurales sin red.
+- Accesibilidad para personas con discapacidad visual: descripción de imágenes en tiempo real desde la cámara del teléfono, aprovechando la inferencia local para preservar la privacidad y evitar latencia de red.
+- Moderación de contenido visual en el propio dispositivo: clasificación y descripción de imágenes subidas por usuarios antes de enviarlas a un servidor, reduciendo el tráfico y cumpliendo requisitos de privacidad.
+- Automatización de escritorio en macOS: el modelo puede integrarse en herramientas de captura de pantalla para identificar el color o el texto dominante de una ventana, aunque las tareas de localización espacial precisa (enumerar elementos, contar objetos) no son fiables con el build estándar.
+- Prototipado e investigación en IA en el borde: sirve como banco de pruebas para evaluar pipelines multimodales completos (codificador visual + adaptador + LLM) en hardware de consumo, con un coste de almacenamiento mínimo y sin necesidad de GPU.
+- Aplicaciones educativas interactivas: preguntas y respuestas sobre imágenes de libros de texto o diagramas simples, donde la precisión posicional no es crítica.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son pruebas de sanidad internas del repositorio, no benchmarks estándar (MMLU, HumanEval, GSM8K). Se ejecutaron con CLI pip de `litert-lm` 0.16.0, decodificación greedy, motor nuevo por pregunta y `--cache no`, sobre cinco fixtures sintéticos deterministas de visión y ocho preguntas de texto.
+La model card incluye comprobaciones de calidad realizadas por el autor de la conversión, no benchmarks estándar de la comunidad:
 
 | Configuración | Texto (8 preguntas) | Imagen (5 preguntas) |
 |---|---|---|
-| PyTorch bf16 (referencia) | — | 5/5 |
+| PyTorch bf16 (referencia) | No disponible | 5/5 |
 | LiteRT int4-b32, CPU (recomendado) | 8/8 | 4/5 |
 | LiteRT int8, CPU | 6/8 | 3/5 |
 
-En la prueba de bandas numeradas sobre imagen 512×512, el archivo estándar devuelve una secuencia incorrecta (`1 2 3 4 4 4 1 2 3 3 1 2 2 1 1 2 2 1 1`) frente a la esperada `1 … 16`; la compilación `int4_fixB` devuelve `1 … 16` en `litert-lm` 0.16.1 y 0.17.0 (medido el 2026-09-16). En la captura de 10 objetivos del issue LiteRT-LM#3246, el archivo corregido obtiene 1/10 y el estándar 0/10.
-
-No se han publicado resultados de benchmarks estándar en la información disponible.
+Las pruebas de imagen son cinco fixtures sintéticos deterministas: color dominante, OCR de texto grande, forma, conteo de tres cuadrados y palabra más grande. El build int4 falla solo la pregunta de forma. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el archivo int4 ocupa 0,41 GB y el int8 0,56 GB; el repositorio completo pesa 4,1 GB. Al ejecutarse en dispositivo, el consumo se cubre con memoria del sistema, no con VRAM dedicada.
-- GPU recomendadas: no aplica en el sentido de centros de datos; el backend GPU soportado es OpenCL en macOS y Android. En iOS, Metal falla en la creación del motor (issue LiteRT-LM#3129) y debe usarse CPU.
-- Cabe en cualquier GPU de consumo y en móviles de gama media; no requiere A100, H100 ni RTX 4090.
-- Opciones de despliegue: runtime pip `litert-lm` (versión mínima verificada 0.19.0 para los archivos int4 e int8), con CLI `litert-lm run … --attachment`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- VRAM/RAM estimada: 0,41 GB para el archivo int4 y 0,56 GB para el int8, más el espacio de trabajo del runtime y la caché KV de hasta 4096 tokens.
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. En macOS y Android puede usar GPU vía OpenCL. En iOS, Metal falla al crear el motor para esta familia (incidencia LiteRT-LM#3129); se recomienda CPU.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU dedicada, dado su tamaño inferior a 1 GB.
+- Opciones de despliegue: runtime `litert-lm` (versión mínima verificada 0.19.0 para los archivos int4 e int8 estándar), CLI con soporte de `--attachment` para imágenes y `--cache no` para pruebas deterministas.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Visión | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-450M (LiteRT-LM) | 450M | 4096 | Sí, 1 imagen/prompt, 512×512 → 256 tokens | LFM Open License v1.0 | `.litertlm` |
-| LFM2.5-VL-3B (LiteRT-LM) | 3B | No disponible | Sí | LFM Open License v1.0 (según modelo base) | `.litertlm` |
-| LiquidAI/LFM2.5-VL-450M (original) | 450M | No disponible | Sí | LFM Open License v1.0 | Pesos PyTorch (formato no especificado) |
+| LFM2.5-VL-450M (LiteRT) | 450M | 4096 | `.litertlm` | LFM Open License v1.0 | Hugging Face (litert-community) |
+| LFM2.5-VL-3B (LiteRT) | 3B (aproximado) | No disponible | `.litertlm` | LFM Open License v1.0 | Hugging Face (litert-community) |
+| LFM2.5-VL-450M (base) | 450M | No disponible | PyTorch/safetensors | LFM Open License v1.0 | Hugging Face (LiquidAI) |
 
-La comparación con alternativas de otros fabricantes (por ejemplo, VLMs de tamaño similar en formato GGUF u ONNX) no está disponible en la información proporcionada. El modelo de 3B de la misma familia es la referencia natural: el archivo de 450M prioriza tamaño mínimo y ubicuidad, mientras que las capacidades de grounding por coordenadas se atribuyen al modelo de 3B según la model card.
+La comparativa se limita a la propia familia LFM2.5-VL porque la información proporcionada no incluye datos de otros modelos comparables de la misma categoría (VLM de menos de 1B parámetros para dispositivo). El modelo de 3B de la misma familia ofrece mayor capacidad de grounding espacial (puntuación 1/10 frente a 0/10 del archivo estándar en la prueba de captura de pantalla de LiteRT-LM#3246), según la model card.
 
 ## Limitaciones y advertencias
 
-- Defecto posicional conocido: en `litert-lm` 0.16.0 y en `main`, solo el cuarto superior de la imagen llega al modelo, lo que produce respuestas erróneas y bien formateadas en tareas de localización, conteo, enumeración y preguntas posicionales, sin emitir error.
-- El defecto afecta a todos los archivos LFM2.5-VL, no solo a este, por la ubicación del pixel-unshuffle 2×2 en el adaptador de visión (issue LiteRT-LM#3246).
-- La compilación `int4_fixB` restaura el área visible pero no el grounding por coordenadas, que sigue siendo una capacidad del modelo de 3B; obtiene 1/10 en la prueba de 10 objetivos.
-- Una sola imagen por prompt y contexto máximo de 4096 tokens de caché KV, lo que limita conversaciones multimodales largas.
-- Metal en iOS falla en la creación del motor para esta familia; es necesario usar CPU en iOS.
-- El modelo no dispone de modo thinking ni de razonamiento extendido.
-- No hay información sobre sesgos, tasas de alucinación ni cobertura idiomática; deben evaluarse empíricamente antes de producción.
-- Licencia LFM Open License v1.0: es necesario revisar el archivo LICENSE del repositorio para confirmar las condiciones de uso comercial, ya que la model card la etiqueta como `other`.
-- La calidad medida en texto es superior en int4 (8/8) que en int8 (6/8) en las pruebas del repositorio, lo que contradice la intuición habitual de que mayor precisión implica mejor calidad.
-- Los resultados de calidad proceden de fixtures sintéticos y ocho preguntas de texto, no de benchmarks estandarizados; la generalización a dominios reales no está validada.
+- Defecto conocido del runtime: en `litert-lm` 0.16.0 y en `main`, solo el cuarto superior de la imagen llega al modelo, lo que provoca respuestas posicionales incorrectas (localizar, contar, enumerar, "cuál está abajo") sin error visible. Afecta a todos los archivos LFM2.5-VL por una suposición de factor de reducción en la ruta de visión del runtime (LiteRT-LM#3246).
+- El build `LFM2.5-VL-450M_int4_fixB.litertlm` corrige la visibilidad del área completa en las versiones 0.16.1 y 0.17.0, pero no restaura el grounding por coordenadas, que sigue siendo una capacidad del modelo de 3B.
+- Contexto limitado a 4096 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Una sola imagen por prompt.
+- Modelo no-thinking: no dispone de modo de razonamiento extendido.
+- Riesgo de alucinación inherente a modelos de 450M; las respuestas de texto pueden ser plausibles pero incorrectas, especialmente en dominios especializados.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe equilibrado.
+- Licencia LFM Open License v1.0: es necesario revisar sus términos para uso comercial, ya que no es una licencia de código abierto estándar (OSI).
+- En iOS, la ruta Metal no funciona para esta familia; es obligatorio usar CPU.
+- El tamaño del repositorio (4,1 GB) incluye múltiples variantes del archivo, no un único peso.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/litert-community/LFM2.5-VL-450M
-- Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Modelo hermano de 3B: https://huggingface.co/litert-community/LFM2.5-VL-3B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Issue del defecto posicional: https://github.com/google-ai-edge/LiteRT-LM/issues/3246
-- Issue de Metal en iOS: https://github.com/google-ai-edge/LiteRT-LM/issues/3129
+- Incidencia del defecto de visión: https://github.com/google-ai-edge/LiteRT-LM/issues/3246
+- Incidencia de Metal en iOS: https://github.com/google-ai-edge/LiteRT-LM/issues/3129
 - Script de reexportación de visión: https://github.com/john-rocky/LiteRT-Models/blob/screen-agent/screen-agent/tools/reexport_vision_unshuffle.py
 - Script de reempaquetado: https://github.com/john-rocky/LiteRT-Models/blob/screen-agent/screen-agent/tools/repack_vision.py
-- Medición de fidelidad de conversión en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- Benchmark de referencia en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

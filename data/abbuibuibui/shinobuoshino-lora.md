@@ -2,89 +2,93 @@
 
 ## Resumen
 
-ShinobuOshino-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado sobre el checkpoint waiIllustriousSDXL v17 (familia Illustrious). Lo desarrolla el usuario abbuibuibui y reproduce el personaje Shinobu Oshino (忍野忍) de la serie *Monogatari*. No es un modelo de lenguaje: es un adaptador de bajo rango que se carga junto al modelo base para condicionar la generacion de imagenes hacia ese personaje concreto.
+ShinobuOshino-Lora es un LoRA de personaje para modelos de difusion SDXL, concretamente entrenado sobre el modelo base waiIllustriousSDXL v17, que representa al personaje Shinobu Oshino (忍野忍) de la serie *Monogatari*. Lo desarrolla el usuario abbuibuibui como derivado no oficial y lo publica en Hugging Face bajo licencia creativeml-openrail-m. Resuelve el problema de generar de forma consistente y fiable un personaje de anime concreto con rasgos muy definidos (pelo rubio corto y despeinado con ahoge, ojos amarillo dorado, orejas puntiagudas) dentro de pipelines de generacion texto-a-imagen basados en SDXL.
 
-El repositorio publica siete checkpoints intermedios correspondientes a las epocas E1-E7 del entrenamiento, con un peso de 456.494.684 bytes por fichero (unos 456 MB) y un total de 3,2 GB en el repositorio. El autor documenta una evaluacion comparativa propia y recomienda el checkpoint E6 a fuerza 0,8 como configuracion por defecto, reservando E5 y E7 como alternativas.
+El repositorio es en realidad una coleccion de tres linajes de LoRA: los pesos originales en la raiz (WAI/Illustrious), una variante para AutismMix Pony en `autism_pony/` y una variante para MOSS-Image en `moss/`. Cada linaje requiere su propio modelo base, prompts y negativos, y no deben mezclarse. El autor proporciona siete epocas (E1-E7) del linaje principal y recomienda E6 a fuerza 0.8 tras una evaluacion comparativa publica.
 
-Su relevancia es acotada: se trata de un adaptador de personaje de nicho, sin descargas ni interacciones en el momento de la consulta, orientado a flujos de generacion de imagen anime en ComfyUI o diffusers. Aporta tokens de activacion especificos para identidad y para dos conjuntos de vestuario, lo que facilita la reproducibilidad frente a LoRAs sin documentacion de prompting.
+La relevancia actual es la de un LoRA de personaje de proposito especifico, con documentacion de entrenamiento detallada (rango 64, alpha 32, 74 pares de imagenes, 7 epocas) y evaluacion horizontal entre epocas y fuerzas. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango para generacion de imagenes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre UNet de SDXL (modelo base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (rango LoRA 64, alpha 32) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL (waiIllustriousSDXL v17) |
+| Parametros totales | no disponible (cada archivo LoRA pesa 456.494.684 bytes; rank 64, alpha 32) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de difusion) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; admite fp16/bf16 segun el pipeline) |
-| Idiomas soportados | en, zh (etiquetas del repositorio; los prompts de imagen admiten otros idiomas segun el text encoder del base) |
+| Longitud de contexto | no aplica (modelo de difusion texto-a-imagen) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en bf16/fp16 para difusion) |
+| Idiomas soportados | en, zh (prompts en ingles y chino) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre el modelo base waiIllustriousSDXL v17, un checkpoint SDXL afinado para ilustracion anime dentro del ecosistema Illustrious. El entrenamiento uso AdamW en bf16, buckets con tope de 1536 y 7 epocas. El dataset consta de 74 pares de imagenes repartidos entre los conjuntos White_Dress y Pink_Sailor_Dress, con repeticiones 2. Las captions se generaron con `keep_tokens = 2`, de modo que el color de pelo y de ojos a menudo se omite en el texto y debe anadirse manualmente en el prompt.
+El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre el modelo de difusion SDXL waiIllustriousSDXL v17. El entrenamiento se realizo con AdamW en bf16, con buckets de hasta 1536 y 7 epocas. El conjunto de datos consta de 74 pares de imagenes correspondientes a dos atuendos (White_Dress y Pink_Sailor_Dress), con repeticion 2. Las captions se generaron con `keep_tokens = 2`, y el autor advierte que el color de pelo y ojos a menudo se omite en las captions, por lo que conviene anadirlo explicitamente en el prompt. El entrenamiento y la evaluacion se llevaron a cabo en un NVIDIA DGX Spark con ComfyUI.
 
-El autor documenta el proceso de seleccion de checkpoint: una primera ronda evaluo E1-E7 a fuerza 0,8 y una tercera ronda cruzo E5, E6 y E7 con 10 escenas y 4 fuerzas (0,4, 0,6, 0,8 y 1,0). El entrenamiento y la evaluacion se realizaron en un NVIDIA DGX Spark con ComfyUI. No se documentan tecnicas adicionales como decodificacion especulativa ni atencion lineal, por tratarse de un adaptador y no de un modelo generativo completo.
+La innovacion practica no esta en la arquitectura sino en la documentacion del proceso de seleccion de epoca: una ronda 1 cribo E1-E7 a fuerza 0.8 y una ronda 3 hizo una matriz sobre E5, E6 y E7 por 10 escenas y 4 fuerzas (0.4, 0.6, 0.8, 1.0). El resultado recomienda E6 a 0.8. El repositorio incluye ademas dos linajes adicionales entrenados sobre AutismMix Pony y MOSS-Image, con sus propios pesos y showcases, lo que permite reutilizar el personaje en distintas familias de modelos base.
 
 ## Capacidades
 
-- Generacion de imagenes del personaje Shinobu Oshino sobre el modelo base waiIllustriousSDXL v17.
-- Control de identidad mediante el token `shinobu_oshino` (asociado a twintails, pelo rubio y ojos amarillos).
-- Control de vestuario mediante los tokens `shinobu_oshino_white_dress` (vestido blanco, sandalias rojas y blancas) y `shinobu_oshino_pink_sailor_dress` (vestido rosa con cuello marinero, brazaletes verdes, zapatos blancos con lazos rojos).
-- Soporte de retratos frontales, tres cuartos, perfil, cuerpo completo, poses sentadas y escenas nocturnas, segun la evaluacion publicada.
-- Funcionamiento con y sin token de vestuario (el autor incluye una muestra "no outfit token").
-- Integracion con ComfyUI y con la libreria diffusers.
-- No dispone de tool calling, razonamiento multi-paso, vision, audio ni modo thinking: es exclusivamente un adaptador de generacion de imagen.
+- Generacion de imagenes de personaje: reproduce a Shinobu Oshino con rasgos consistentes (pelo rubio corto despeinado con ahoge, mechones puntiagudos, ojos amarillo dorado, orejas puntiagudas).
+- Control de atuendo mediante tokens especificos: `shinobu_oshino_white_dress` y `shinobu_oshino_pink_sailor_dress`.
+- Identidad controlada por el token `shinobu_oshino`.
+- Compatibilidad con prompts en ingles y chino.
+- Integracion en pipelines SDXL via diffusers y en ComfyUI.
+- Variantes para AutismMix Pony y MOSS-Image dentro del mismo repositorio.
+- No soporta tool calling, agentes, razonamiento multi-paso ni texto generativo: es un adaptador de difusion.
 
 ## Casos de uso
 
-- Ilustracion de fan art consistente: cargar el LoRA E6 a 0,8 sobre waiIllustriousSDXL v17 y usar el token `shinobu_oshino` para obtener el personaje con rasgos estables (twintails rubios, ojos amarillos) en multiples angulos.
-- Series de imagenes para publicaciones o blogs: la evaluacion cubre retrato, tres cuartos, perfil, cuerpo completo y pose sentada, lo que permite generar un conjunto coherente de ilustraciones del mismo personaje.
-- Escenas con vestuario alternativo: alternar `shinobu_oshino_white_dress` y `shinobu_oshino_pink_sailor_dress` para producir variantes de vestuario sin reentrenar.
-- Integracion en pipelines de diffusers: al publicarse como LoRA en formato safetensors compatible con diffusers, puede cargarse programaticamente en scripts de generacion por lotes.
-- Pruebas de comparacion de checkpoints: los siete ficheros E1-E7 permiten reproducir la matriz de evaluacion del autor (fuerzas 0,4 a 1,0) y ajustar el equilibrio entre fidelidad al personaje y libertad creativa.
-- Generacion de material de referencia para ilustradores: usar el LoRA como base para bocetos de personaje antes de un retoque manual, dado que el autor documenta resultados sin hires ni ADetailer.
+- Ilustracion de fan art de personaje: usar el token `shinobu_oshino` junto con el atuendo deseado y los rasgos fisicos explicitos para obtener retratos consistentes del personaje en distintas poses y angulos.
+- Generacion de hojas de personaje: la evaluacion del autor cubre retrato frontal, tres cuartos, perfil, cuerpo completo y sentada, lo que permite producir una hoja de referencia coherente con una sola semilla y fuerza fija.
+- Prototipado de escenas para narrativa visual: combinar el LoRA con prompts de escena (calle nocturna, fondo simple) para generar ilustraciones de ambientacion con el personaje integrado.
+- Creacion de material para proyectos derivados: al ser un derivado no oficial bajo creativeml-openrail-m, puede usarse para experimentacion y proyectos personales respetando las restricciones de la licencia.
+- Reutilizacion en distintas familias de modelos base: los linajes AutismMix Pony y MOSS-Image permiten mantener el personaje al cambiar de base segun el estilo deseado.
+- Evaluacion comparativa de epocas: el repositorio sirve como referencia metodologica para quien entrene LoRA de personaje, con matrices de fuerza y escenas documentadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la informacion disponible. El autor solo aporta una evaluacion cualitativa:
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc.) en la informacion disponible. El autor publica una evaluacion cualitativa por rondas:
 
-| Candidato | Observacion documentada | Decision |
+| Ronda | Candidatos | Configuracion | Conclusion |
+|---|---|---|---|
+| Ronda 1 | E1-E7 | Fuerza 0.8 | Criba inicial de epocas |
+| Ronda 3 | E5, E6, E7 | 10 escenas x 4 fuerzas (0.4/0.6/0.8/1.0) | E6 recomendada a 0.8 |
+
+| Candidato | Observacion del autor | Decision |
 |---|---|---|
-| E5 | Twintails rubios y ojos amarillos usables; orejas puntiagudas aparecen con frecuencia | Alternativa |
-| E6 | Retrato nitido, ojos amarillos con anillo, orejas puntiagudas, tirantes del vestido blanco; cuerpo completo con vestido blanco sin mangas y sandalias rojas/blancas; variante sailor rosa con brazaletes verdes y zapatos blancos con lazos | Recomendado a 0,8 |
-| E7 | Resultado cercano a E6 | Alternativa final |
-
-Ajustes de muestreo reportados por el autor: ComfyUI, sampler Euler a, 28 pasos, CFG 4,5, CLIP skip 2, resolucion 832x1216, sin hires ni ADetailer.
+| E5 | Pelo rubio corto con mechones y ojos amarillos usables; orejas puntiagudas aparecen a menudo | Alternativa |
+| E6 | Retrato nitido, ojos amarillos con anillo luminoso, orejas puntiagudas, tirantes del vestido blanco; cuerpo completo con sandalias rojas/blancas; variante sailor rosa con pulseras verdes | Recomendada a 0.8 |
+| E7 | Cercana a E6 | Alternativa final |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el LoRA anade unos 456 MB de pesos al modelo base; el consumo dominante es el del SDXL completo (tipicamente 8-10 GB en fp16 con offloading, mas segun resolucion y batch).
-- GPU recomendadas: NVIDIA DGX Spark (usada por el autor para entrenamiento y evaluacion); para inferencia, cualquier GPU con 12 GB o mas de VRAM en fp16 resulta suficiente para SDXL a 832x1216.
-- GPU de consumo: cabe en tarjetas de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090) con el modelo base en fp16; en 8 GB requiere cuantizacion del base u offloading.
-- Opciones de despliegue: ComfyUI (flujo documentado por el autor), diffusers, Automatic1111/Forge y otros frontends compatibles con LoRA SDXL.
-- Latencia y throughput: no disponibles; dependen del modelo base, GPU y pasos de muestreo (28 pasos en la configuracion de referencia).
+- VRAM estimada: no disponible de forma explicita; al ser un LoRA sobre SDXL, requiere la VRAM del modelo base SDXL mas el adaptador (cada archivo LoRA pesa unos 456 MB).
+- GPU recomendadas: el autor entreno y evaluo en un NVIDIA DGX Spark; no se especifican GPU de inferencia concretas.
+- Cabe en GPU de consumo: si el modelo base SDXL cabe (por ejemplo, RTX 4090 con 24 GB), el LoRA anade una sobrecarga modesta; no se confirma en la informacion disponible.
+- Opciones de despliegue: diffusers (libreria declarada) y ComfyUI (usado en los showcases del autor).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre LoRAs alternativos de Shinobu Oshino ni de metricas comparativas con otros adaptadores de personaje en la informacion proporcionada.
+No se dispone de datos de otros LoRA de personaje comparables en la informacion proporcionada. Se puede comparar con los otros linajes del mismo repositorio:
 
-| Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ShinobuOshino-Lora (E6) | waiIllustriousSDXL v17 | LoRA r64/alpha32 (456 MB por fichero) | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
-| Alternativas de personaje SDXL | no disponible | no disponible | no aplica | no disponible | no disponible |
+| Linaje | Modelo base | Epoca recomendada | Fuerza | Formato |
+|---|---|---|---|---|
+| WAI/Illustrious (raiz) | waiIllustriousSDXL v17 | E6 | 0.8 | safetensors |
+| AutismMix Pony (`autism_pony/`) | AutismMix Pony (muestras con AutismMix Confetti) | E6 | 1.0 | safetensors |
+| MOSS-Image (`moss/`) | MOSS-Image | no disponible | no disponible | safetensors |
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos del personaje Shinobu Oshino pertenecen a sus titulares originales; el autor lo declara como fan-made.
-- La licencia creativeml-openrail-m impone restricciones de uso comercial y obligaciones de atribucion; conviene revisar sus terminos antes de un uso en produccion.
-- Las captions omiten con frecuencia el color de pelo y ojos (`keep_tokens = 2`), por lo que es necesario anadirlos en el prompt para evitar derivas de identidad.
-- El autor reporta aparicion frecuente de orejas puntiagudas en E5; no se documenta si persiste en E6/E7 en todos los angulos.
-- No hay datos de sesgos, tasas de alucinacion visual ni evaluaciones cuantitativas de fidelidad; la seleccion de E6 se basa en una evaluacion cualitativa del propio autor.
-- El repositorio no registra descargas ni interacciones en el momento de la consulta, por lo que no existe validacion externa de la calidad.
-- Depende estrictamente del modelo base waiIllustriousSDXL v17; su comportamiento con otros checkpoints SDXL o Illustrious no esta documentado.
-- No es un modelo de lenguaje: no soporta texto, codigo, matematicas, tool calling ni agentes.
+- Es un derivado no oficial: los derechos del personaje pertenecen a sus propietarios originales.
+- Licencia creativeml-openrail-m: impone restricciones de uso comercial; revisar los terminos antes de cualquier explotacion comercial.
+- No mezclar linajes: los pesos de la raiz, `autism_pony/` y `moss/` requieren modelos base, prompts y negativos distintos; mezclarlos produce resultados incorrectos.
+- Las captions omiten con frecuencia el color de pelo y ojos, por lo que es necesario anadirlos en el prompt para evitar desviaciones.
+- El autor observa que en E5 aparecen orejas puntiagudas con frecuencia; puede haber artefactos morfologicos segun epoca y fuerza.
+- Riesgo de sobreajuste al atuendo: el dataset solo cubre dos conjuntos (White_Dress y Pink_Sailor_Dress), lo que limita la generalizacion a otras vestimentas.
+- El repositorio ocupa 7.9 GB, lo que incluye multiples epocas y linajes; conviene descargar solo el archivo necesario.
+- No hay datos cuantitativos de calidad ni de sesgos; la evaluacion es cualitativa y realizada por el propio autor.
 
 ## Enlaces
 

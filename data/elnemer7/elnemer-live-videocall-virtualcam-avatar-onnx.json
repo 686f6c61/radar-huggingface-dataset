@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "elnemer7/ElNeMeR-Live-VideoCall-VirtualCam-Avatar-ONNX",
+  "slug": "elnemer7-elnemer-live-videocall-virtualcam-avatar-onnx",
+  "author": "elnemer7",
+  "url": "https://huggingface.co/elnemer7/ElNeMeR-Live-VideoCall-VirtualCam-Avatar-ONNX",
+  "created_at": "2026-11-27T03:52:02.000Z",
+  "updated_at": "2026-11-27T03:52:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "humanitarian-ai",
+    "digital-forensics",
+    "mahmoud-elnemer",
+    "live-deepfake",
+    "virtualcam-detection",
+    "video-call-safety",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40943,
+  "storage_human": "40943 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to create your first Monero (XMR) account with Ledger device …",
+      "url": "https://support.ledger.com/article/How-to-create-your-first-Monero-XMR-account-with-Ledger-device-and-Feather-Wallet",
+      "snippet": "4 days ago · Can I create a Monero account with Ledger Wallet™ (formerly Ledger Live)? No, unfortunately, Ledger Wallet does not …Read more"
+    }
+  ]
+}

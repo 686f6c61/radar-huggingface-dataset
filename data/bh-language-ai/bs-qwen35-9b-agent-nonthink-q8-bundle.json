@@ -5,7 +5,7 @@
   "author": "BH-Language-AI",
   "url": "https://huggingface.co/BH-Language-AI/bs-qwen35-9b-agent-nonthink-q8-bundle",
   "created_at": "2026-11-11T13:00:17.000Z",
-  "updated_at": "2026-11-11T13:00:18.000Z",
+  "updated_at": "2026-11-26T11:13:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "BH-Language-AI/bh-agentmujo-1-9b-9q-bundle",
+  "renamed_at": "2026-11-27T02:44:16.897Z",
   "benchmarks": [],
   "sources": []
 }

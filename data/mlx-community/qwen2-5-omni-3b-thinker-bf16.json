@@ -44,29 +44,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen2.5 - a mlx-community Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/mlx-community/qwen25",
-      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio"
-    },
-    {
-      "title": "Qwen/Qwen2.5-Omni-3B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B",
-      "snippet": "Qwen2.5-Omni Overview Introduction Qwen2.5-Omni is an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner. Key Features Omni and Novel Architecture: We propose Thinker-Talker architecture, an end-to-end multimodal model designed to perceive diverse ..."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
-      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
-      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
-    },
-    {
-      "title": "Qwen2.5-Omni - openlm.ai",
-      "url": "https://openlm.ai/qwen2.5-omni/",
-      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
-    },
-    {
-      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
-      "url": "https://github.com/mx4ai/qwen2.5",
-      "snippet": "2024.09.19: We released the Qwen2.5 series. This time there are 3 extra model sizes: 3B, 14B, and 32B for more possibilities. Check our blog for more! 2024.06.06: We released the Qwen2 series. Check our blog! 2024.03.28: We released the first MoE model of Qwen: Qwen1.5-MoE-A2.7B! Temporarily, only HF transformers and vLLM support the model. We will soon add the support of llama.cpp, mlx-lm ..."
+      "title": "MLX Community",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
     }
   ]
 }

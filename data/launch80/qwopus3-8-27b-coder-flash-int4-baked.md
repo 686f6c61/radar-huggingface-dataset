@@ -2,129 +2,114 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-Int4-baked es una cuantización GPTQ INT4 del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un fine-tune de Qwen3.8-27B orientado a generación de código y uso de herramientas. Lo publica Launch80, que documenta públicamente el proceso de cuantización, la metodología de calibración y las métricas de degradación respecto al original en BF16. El modelo conserva la torre de visión y la pipeline image-text-to-text del original, de modo que mantiene capacidades multimodales de entrada.
+Qwopus3.8-27B-Coder-Flash-Int4-baked es una cuantizacion GPTQ INT4 del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, publicada por Launch80. El trabajo destaca porque no se limita a cuantizar el cuerpo del transformer: tambien cuantiza a INT4 en disco la cabeza de salida (`lm_head`, 248.320 x 5.120) y la cabeza borrador MTP (multi-token prediction) empleada en decodificacion especulativa. El resultado es un checkpoint de 17,0 GB que cabe y se sirve a contexto completo de 262.144 tokens en una unica GPU Intel Arc Pro B65 de 32 GB, con vLLM estandar y sin parches de pesos.
 
-La relevancia de esta revisión es que va más allá de un cuantizado convencional: el `lm_head` y la cabeza draft MTP (multi-token prediction) también se han cuantizado a INT4 sobre disco, con calibración Hessiana, de forma que el checkpoint completo cabe en una única GPU Intel Arc Pro B65 de 32 GB y se sirve con vLLM estándar a la ventana completa de 262.144 tokens sin parches de pesos. El autor declara explícitamente que es un trabajo en curso y publica tanto los aciertos como un fallo de validación (T4 y T7).
+El modelo base es un transformer de 27.781.427.952 parametros (27,78B) orientado a codigo y uso de herramientas, con torre de vision (pipeline `image-text-to-text`) y una arquitectura interna que el autor etiqueta como `qwen3_8`, con atencion lineal GDN (gated delta network) en parte de sus proyecciones. Esta revision (v1.1.1) no cambia pesos respecto a v1.1: solo actualiza la model card y documenta un parche de arranque para vLLM-XPU que elimina una sincronizacion host por paso en la fase de verificacion, elevando el rendimiento del perfil rapido a 92,5-96,0 tok/s.
 
-El modelo resuelve el problema de desplegar un modelo de ~27,8 mil millones de parámetros con contexto de 256K en hardware de gama profesional de 32 GB, manteniendo tool calling y decodificación especulativa. Está pensado para entornos de desarrollo asistido por IA, agentes de código y pipelines que necesitan contexto largo con latencia controlada.
+La relevancia practica es doble: por un lado, demuestra que es viable cuantizar cabezas criticas (salida y draft) sin degradar de forma inaceptable la calidad; por otro, publica un estudio con umbrales pre-registrados y hasheados antes de evaluar, incluyendo los fallos. Es un caso poco habitual de transparencia en cuantizacion, con comparacion directa frente al GGUF Q4_K_M del autor original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con capas GDN (gated delta network) y cabeza MTP para decodificación especulativa; torre de visión integrada (hereda de Qwen3.8-27B) |
-| Parametros totales | 27.781.427.952 (~27,8 B) |
+| Arquitectura | Transformer con atencion lineal GDN (gated delta network), torre de vision y cabeza MTP para decodificacion especulativa; etiqueta interna `qwen3_8` |
+| Parametros totales | 27.781.427.952 (27,78B) |
 | Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GPTQ INT4 simétrico, group size 128, `desc_act` off, `act_group_aware` on; cuerpo, `lm_head` y MTP cuantizados; embeddings, norms, torre de visión y `in_proj_a`/`in_proj_b` de GDN en BF16 |
-| Idiomas soportados | no disponible (la model card no lista idiomas; hereda los del modelo base) |
+| Tipos de cuantizacion | GPTQ INT4 simetrico, grupo 128, `desc_act` off, `act_group_aware` on; embeddings, norms, torre de vision y `in_proj_a`/`in_proj_b` en BF16; cuerpo, `lm_head` y `mtp.*` en INT4 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (GPTQ INT4), 17,0 GB en disco |
+| Formato de pesos | safetensors (GPTQ INT4 en disco), 17,0 GB; repo de 34,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantización del fine-tune Qwopus3.8-27B-Coder-Flash, que a su vez parte de Qwen3.8-27B. La arquitectura combina capas transformer con mecanismos GDN (gated delta network), una torre de visión para entrada image-text-to-text y una cabeza MTP que actúa como drafter para decodificación especulativa. El cuerpo del modelo consta de 400 capas lineales cuantizadas a GPTQ INT4 simétrico con grupo 128 mediante GPTQModel 7.3.2, ejecutado sobre la propia Intel Arc Pro B65.
+El checkpoint es una cuantizacion, no un entrenamiento nuevo. El cuerpo del modelo base consta de 400 lineales transformadas a GPTQ INT4 simetrico con grupo 128 mediante GPTQModel 7.3.2, ejecutado sobre la propia Intel Arc Pro B65. La calibracion uso 512 muestras de 2.048 tokens: 153 de C4, 204 de codigo, 53 de chat y 102 de conversaciones de tool-calling procedentes de NousResearch/hermes-function-calling-v1 (commit `@dae3e1d`), renderizadas con la plantilla de chat del modelo e incluyendo llamadas paralelas. El sha256 de calibracion esta en `quant-meta.json`.
 
-La calibración del cuerpo usó 512 muestras de 2.048 tokens: 153 de C4, 204 de código, 53 de chat y 102 de conversaciones de tool calling extraídas de NousResearch/hermes-function-calling-v1 (`@dae3e1d`), renderizadas con la plantilla de chat del propio modelo e incluyendo la mitad de llamadas paralelas. El `lm_head` (248.320 × 5.120) y las nueve lineales del MTP se cuantizaron por separado con captura de Hessianos mediante hooks en vLLM sobre wikitext, chat y código, seleccionando el damping y la mezcla de slices con menor error en filas reservadas. Todas las lineales horneadas superan a round-to-nearest: `lm_head` 4,68 % frente a 8,18 %; `mtp.fc` 6,98 % frente a 11,47 %; `mtp.down_proj` 7,57 % frente a 11,96 %. El sha256 de calibración está en `quant-meta.json`.
-
-El autor documenta que la inclusión de datos de tool calling en la calibración fue un arreglo post-hoc: el primer horneado, sin esas muestras, perdía 7,75 puntos en BFCL porque el modelo terminaba el turno tras la primera llamada paralela. Esta revisión es el rehorneado con calibración corregida.
+La innovacion principal es el "bake" de la cabeza de salida y de la cabeza MTP: en lugar de dejarlas en BF16 (lo que anularia el ahorro y romperia el encaje en 32 GB), se cuantizaron con GPTQ usando matrices de Hessian capturadas mediante hooks en vLLM sobre wikitext, chat y codigo, con busqueda en rejilla de damping y mezclas de slices. Todas las lineales horneadas superan a round-to-nearest: `lm_head` 4,68% frente a 8,18%; `mtp.fc` 6,98% frente a 11,47%; `mtp…down_proj` 7,57% frente a 11,96%. El autor documenta un bug encontrado y corregido en el proceso, descrito en su blog.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con modo de razonamiento configurable vía `--reasoning-parser qwen3`.
-- Generación y edición de código, incluyendo tareas de HumanEval+, MBPP+ y LiveCodeBench v6 según la evaluación del autor.
-- Tool calling y function calling, con soporte de llamadas paralelas (parser `qwen3_xml` en vLLM).
-- Entrada multimodal image-text-to-text gracias a la torre de visión heredada, conservada en BF16.
-- Decodificación especulativa mediante cabeza MTP con k=6 tokens draft.
-- Contexto largo de hasta 262.144 tokens, útil para repositorios completos o documentos extensos.
-- Capacidades multilingües: no disponible (no se detallan en la model card).
-- Matemáticas: evaluado en GSM8K según la lista de tareas del autor, sin resultados publicados en esta revisión.
+- Generacion de texto y razonamiento general, con modo de conversacion multi-turno.
+- Generacion y comprension de codigo, incluida resolucion de problemas tipo HumanEval, MBPP y LiveCodeBench.
+- Razonamiento matematico (GSM8K) e instrucciones complejas (IFEval).
+- Tool calling y function calling, con soporte de llamadas paralelas; evaluado con BFCL.
+- Capacidades de agente y razonamiento multi-paso mediante tool use.
+- Entrada de imagen y texto (pipeline `image-text-to-text`, torre de vision en BF16).
+- Decodificacion especulativa nativa con cabeza MTP cuantizada (k=6 o k=7 segun perfil).
+- Recuperacion en contexto largo: 100% en needle retrieval a 32k y 128k segun el autor.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Asistente de código en IDE con contexto de repositorio completo: la ventana de 262.144 tokens permite cargar varios ficheros y el historial de conversación sin truncar, y la cuantización INT4 mantiene el modelo en 17 GB, apto para una estación de trabajo con GPU de 32 GB.
-- Agentes de refactorización multi-step: el soporte de tool calling con llamadas paralelas y el parser `qwen3_xml` permiten encadenar lecturas de ficheros, ejecución de tests y aplicación de parches en un bucle agéntico.
-- Automatización de revisión de código en CI/CD: el modelo puede analizar diffs y generar comentarios estructurados vía function calling, integrándose en pipelines con vLLM como servidor compatible con la API de OpenAI.
-- Generación de tests y documentación a partir de código fuente: con contexto largo puede procesar módulos enteros y producir docstrings o suites de pruebas coherentes con las firmas existentes.
-- Despliegue en hardware Intel Arc: es uno de los pocos checkpoints de este tamaño calibrado y validado específicamente en XPU con vLLM, lo que lo hace adecuado para entornos con Arc Pro B65 en lugar de GPU NVIDIA.
-- Servicio conversacional con entrada de imágenes: la pipeline image-text-to-text permite casos como explicar diagramas de arquitectura o capturas de errores junto con código.
-- Evaluación de latencia en producción: con 75,8 tok/s de decodificación ponderada y 216 ms de TTFT p50 en la B65, es viable para asistentes interactivos con un solo stream; a 8 concurrentes alcanza 210,9 tok/s agregados.
+- Servicio de codigo en produccion sobre hardware Intel: el checkpoint se carga en vLLM 0.30 con backend XPU sin parches de pesos, lo que permite desplegar asistencia de codigo con contexto de 262.144 tokens en una sola Arc Pro B65 de 32 GB.
+- Agentes con tool calling en pipelines de CI/CD: la cuantizacion se calibro con conversaciones de function calling (incluidas llamadas paralelas), y el modelo mantiene 88,25 en el subconjunto BFCL, adecuado para agentes que invocan APIs de build, test y despliegue.
+- Analisis de repositorios completos: con 262.144 tokens de ventana y needle retrieval del 100% a 128k, permite revisar diffs grandes, auditar dependencias o responder preguntas sobre varios ficheros en una sola pasada.
+- Asistencia multimodal en documentacion tecnica: al aceptar imagen y texto, puede procesar capturas de diagramas, errores de consola o interfaces junto a explicaciones textuales.
+- Despliegue en estaciones de trabajo con GPU de consumo alta: los 17,0 GB en disco permiten inferencia en GPUs de 24 GB o mas con cuantizacion adicional o contexto reducido; el perfil rapido alcanza 92,5-96,0 tok/s en la B65.
+- Evaluacion comparativa de tecnicas de cuantizacion: util como referencia reproducible para estudiar el impacto de cuantizar `lm_head` y cabezas MTP, con umbrales pre-registrados y metricas de KLD y acuerdo top-1 publicadas.
+- Prototipado de agentes con razonamiento multi-paso en entornos con vLLM: la decodificacion especulativa integrada acelera bucles de agente sin necesidad de un drafter externo.
 
 ## Benchmarks y rendimiento
 
-Calidad frente a BF16, con umbrales pre-registrados y hasheados antes de evaluar. La referencia BF16 se ejecutó en RTX PRO 6000 con vLLM 0.30 CUDA; este checkpoint en Arc Pro B65 con vLLM 0.30 XPU.
+Calidad frente a BF16, con umbrales pre-registrados y hasheados antes de evaluar. La referencia BF16 se ejecuto en una RTX PRO 6000 (vLLM 0.30, CUDA) y este checkpoint en una Arc Pro B65 (vLLM 0.30, XPU), con MTP k=6.
 
-| # | Medida | Umbral | Este checkpoint | Resultado |
-|---|---|---|---|---|
-| T1 | Perplejidad wikitext-2 | ≤ +3 % | +1,71 % | pasa |
-| T2 | Perplejidad corpus de código | ≤ +3 % | +1,83 % | pasa |
-| T3 | KL media de siguiente token (1,05 M tokens, top-64) | ≤ 0,05 | 0,0412 | pasa |
-| T4 | Acuerdo top-1 de siguiente token | ≥ 93 % | 92,84 % | falla (por 0,16 pt) |
-| T5 | BFCL tool calling (400 ítems), emparejado | Δ ≥ −2 pts o IC incluye 0 | 88,25 % vs 89,0 %, Δ −0,75 [−3,0, +1,5] | pasa |
-| T5 | Otras seis tareas | igual | pendiente de reejecución | pendiente |
-| T6 | KLD frente al GGUF Q4_K_M de Jackrong | el nuestro ≤ el suyo | no medido | pendiente |
-| T7 | Greedy, decodificación especulativa on = off | idéntico | 26/32 en el primer horneado; las 6 diferencias son empates exactos o por redondeo FP16 | falla tal como está escrito |
+| Medida | Umbral | Este checkpoint | Resultado |
+|---|---|---|---|
+| Perplejidad wikitext-2 | ≤ +3% | +1,72% | pasa |
+| Perplejidad corpus de codigo | ≤ +3% | +1,83% | pasa |
+| KLD media next-token (1,05M tokens, top-64) | ≤ 0,05 | 0,0412 | pasa |
+| Acuerdo top-1 next-token | ≥ 93% | 92,84% | falla (por 0,16 pt) |
+| Siete tareas, pass@1 emparejado, greedy | Δ ≥ −2 pts o IC incluye 0 | 7/7 tareas | pasa |
+| KLD frente a Q4_K_M GGUF de Jackrong | el nuestro ≤ el suyo | 0,0412 vs 0,0250 | falla |
+| Greedy, spec decoding on = off | identico | 26/32; las 6 diferencias en empate | falla tal como se definio |
 
-En el primer horneado, las otras seis tareas (HumanEval+, MBPP+, LiveCodeBench v6, GSM8K, MMLU-Pro, IFEval) quedaron dentro del umbral pre-registrado, pero están pendientes de reejecución sobre este checkpoint exacto.
+| Tarea | BF16 | Este checkpoint | Δ pts [IC 95%] |
+|---|---:|---:|---|
+| GSM8K | 86,96 | 86,66 | −0,30 [−1,21, +0,61] |
+| IFEval | 80,22 | 80,78 | +0,55 [−2,22, +3,14] |
+| MMLU-Pro subset | 71,80 | 70,90 | −0,90 [−2,70, +0,90] |
+| HumanEval+ | 90,24 | 88,41 | −1,83 [−5,49, +1,83] |
+| MBPP+ | 76,98 | 75,66 | −1,32 [−3,17, +0,53] |
+| BFCL subset (400) | 89,00 | 88,25 | −0,75 [−3,00, +1,50] |
+| LiveCodeBench v6 slice | 41,14 | 40,57 | −0,57 [−5,14, +4,00] |
 
-Rendimiento en Arc Pro B65 32 GB, vLLM 0.30.0 XPU, KV en fp8, un solo stream, MTP k=6, contexto 262k (BetterBench, 1 warmup + 5 pasadas):
-
-| Métrica | Valor |
-|---|---|
-| Decodificación ponderada | 75,8 tok/s |
-| TTFT p50 | 216 ms |
-| Prefill a 2K | 1.283 tok/s |
-| Prefill a 64K | 856 tok/s |
-| Agregado a 8 concurrentes | 210,9 tok/s |
-
-El cuello de botella es la cabeza draft, no el cuerpo INT4: el fine-tune de Jackrong dejó la MTP byte-idéntica a la de Qwen3.8-27B base, por lo que draftea al estilo del modelo base y acepta unos 3 tokens por paso. El autor apunta a 115 tok/s en la B65 con un drafter adaptado.
+Comparacion de fidelidad frente al GGUF Q4_K_M del autor original, sobre las mismas 512 x 2.048 tokens: KLD media 0,0250 frente a 0,0412; acuerdo top-1 94,92% frente a 92,84%; perplejidad wikitext-2 +0,73% frente a +1,72%. El GGUF se ejecuto en llama.cpp (b11723, SYCL) en la B65; Q8_0 medido igual da 0,0024, lo que acota el termino entre motores. Rendimiento del perfil rapido con drafter INT4 DFlash2 (k=7, 128k): 89,3 tok/s en v1.1 y 92,5/96,0 tok/s en v1.1.1.
 
 ## Requisitos de hardware
 
-- VRAM/VRAM equivalente: 17,0 GB de pesos en disco; con KV cache fp8 y contexto 262.144 se sirve en una GPU de 32 GB (validado en Intel Arc Pro B65 32 GB).
-- GPU recomendadas: Intel Arc Pro B65 32 GB (plataforma validada por el autor); cualquier GPU con al menos 24-32 GB para contexto largo.
-- GPU de consumo: cabe en RTX 4090 (24 GB) si se reduce `--max-model-len` o se limita el KV cache; con 262k completos no cabe en 24 GB.
-- Opciones de despliegue: vLLM 0.30.0 con backend XPU o CUDA; el autor usa la imagen XPU con tres parches de corrección para decodificación especulativa (MTP nightly, MTP boundary, GDN mixed). No se menciona soporte en llama.cpp, Ollama ni TGI.
-- Latencias y throughput: 75,8 tok/s de decodificación ponderada, 216 ms TTFT p50, 1.283 tok/s de prefill a 2K y 856 tok/s a 64K, 210,9 tok/s agregados a 8 concurrentes.
-- Comando de servicio de referencia:
-
-```bash
-vllm serve Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked \
-  --quantization gptq --dtype float16 --kv-cache-dtype fp8 --max-model-len 262144 \
-  --speculative-config '{"method":"mtp","num_speculative_tokens":6}' \
-  --enable-auto-tool-choice --tool-call-parser qwen3_xml --reasoning-parser qwen3
-```
+- VRAM estimada: 17,0 GB de pesos en disco; con cache KV para 262.144 tokens se ajusta en 32 GB en la Arc Pro B65 segun el autor.
+- GPU validada: Intel Arc Pro B65 32 GB con vLLM 0.30 y backend XPU.
+- Referencia BF16: RTX PRO 6000 con vLLM 0.30 y CUDA (solo para evaluacion comparativa).
+- GPU de consumo: no se documenta soporte en consumer; los 17,0 GB permiten intentarlo en GPUs de 24 GB con contexto reducido, pero no esta validado por el autor.
+- Despliegue: vLLM (recomendado, con decodificacion especulativa MTP) y llama.cpp para el GGUF equivalente; Ollama y TGI no se mencionan.
+- Latencia y throughput: 92,5-96,0 tok/s en la B65 con el perfil rapido (k=7, 128k); 89,3 tok/s en v1.1.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash-Int4-baked (este) | ~27,8 B | 262.144 | GPTQ INT4 g128, head y MTP horneados | Apache 2.0 | Hugging Face, servible en vLLM XPU/CUDA |
-| Jackrong/Qwopus3.8-27B-Coder-Flash (base BF16) | ~27,8 B | 262.144 | BF16 | Apache 2.0 | Hugging Face; requiere ~55 GB en BF16 |
-| GGUF Q4_K_M de Jackrong | ~27,8 B | 262.144 (según runtime) | GGUF Q4_K_M | Apache 2.0 | Hugging Face; comparación KLD pendiente (T6) |
-
-No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparación de rendimiento se limita a las métricas de degradación frente a BF16 ya tabuladas.
+| Este checkpoint (INT4 baked) | 27,78B | 262.144 | safetensors GPTQ INT4 | Apache 2.0 | 17,0 GB; KLD 0,0412; top-1 92,84%; vLLM XPU |
+| Jackrong/Qwopus3.8-27B-Coder-Flash (BF16) | 27,78B | 262.144 | safetensors BF16 | Apache 2.0 | Referencia de calidad; no cabe en 32 GB |
+| Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF Q4_K_M | 27,78B | 262.144 | GGUF | Apache 2.0 | 16,8 GB; KLD 0,0250; top-1 94,92%; llama.cpp |
+| Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF Q8_0 | 27,78B | 262.144 | GGUF | Apache 2.0 | KLD 0,0024; mayor tamano |
 
 ## Limitaciones y advertencias
 
-- Trabajo en curso: el autor declara explícitamente que la revisión no está completa; seis de las siete tareas de calidad están pendientes de reejecución sobre este checkpoint exacto.
-- El umbral T4 (acuerdo top-1 ≥ 93 %) no se cumple: 92,84 %, un fallo de 0,16 puntos.
-- El umbral T7 falla tal como está redactado: la decodificación especulativa no es bit-idéntica a la greedy sin especulación en 6 de 32 casos, aunque el autor los atribuye a empates exactos o redondeo FP16.
-- La calibración con datos de tool calling fue un arreglo post-hoc tras perder 7,75 puntos en BFCL en el primer horneado; conviene validar tool calling en el dominio propio antes de producción.
-- La cabeza MTP no está adaptada al fine-tune, lo que limita la velocidad de decodificación a unos 3 tokens aceptados por paso.
-- Requiere tres parches de vLLM-XPU para decodificación especulativa; no es un despliegue estándar sin ajustes en Intel Arc.
-- Sesgos conocidos: no disponibles (la model card no los documenta).
-- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de modelos de código y razonamiento.
-- Idiomas soportados: no disponibles; no se garantiza cobertura multilingüe más allá de la del modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3.8-27B conviene verificar las condiciones de la cadena de modelos base.
-- No se han publicado resultados de benchmarks de MMLU, HumanEval o GSM8K con cifras concretas para este checkpoint; solo se indica que están pendientes de reejecución.
+- El acuerdo top-1 next-token queda en 92,84%, por debajo del 93% pre-registrado; es un fallo declarado por el autor.
+- La fidelidad frente a BF16 es peor que la del GGUF Q4_K_M (KLD 0,0412 frente a 0,0250); para maxima fidelidad en llama.cpp conviene el GGUF.
+- La decodificacion especulativa no es bit-identica al modo greedy sin ella: 6 de 32 casos difieren, todos en empates exactos o a un paso FP16 de 0,0156.
+- El modelo es un work in progress (v1.1.1) y las validaciones se hicieron en un unico entorno (Arc Pro B65, vLLM XPU); no hay validacion en CUDA ni en GPUs de consumo.
+- Riesgo de alucinacion y sesgos: no documentados por el autor; aplican los del modelo base.
+- Idiomas soportados no declarados; no se garantiza cobertura multilingue.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de calibracion pueden tener condiciones propias que deben verificarse.
+- El metodo de comparacion con el GGUF difiere del pre-registrado (se uso llama.cpp SYCL en lugar de una base GGUF BF16), segun admite el autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked
+- Hugging Face: https://huggingface.co/Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
-- Estudio completo de la cuantización: https://launch80.com/blog/qwopus-coder-int4-bake-study
-- Informe de calidad pre-registrado: https://launch80.com/a/123a9c0b-5fba-40e4-b5ad-8033ed77e408
-- Resultados de velocidad BetterBench: https://launch80.com/a/30aa8ae2-f00c-409a-a4a9-2e298fc81f67
+- GGUF del autor original: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF
+- Estudio del bake: https://launch80.com/blog/qwopus-coder-int4-bake-study
+- Estudio de calidad: https://launch80.com/a/84829a3a-a0b2-407f-ab38-59cd2d5006fa
 - Discord de Launch80: https://discord.gg/launch80
-- Dataset de calibración de tool calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
+- Dataset de calibracion: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

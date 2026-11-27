@@ -2,113 +2,124 @@
 
 ## Resumen
 
-Haas-ja-v1.0-mlx es una conversión no oficial al formato MLX del modelo de reconocimiento automático del habla (ASR) en japonés `third-intelligence/Haas-ja-v1.0`, desarrollado por Third Intelligence, Inc. El modelo original emplea una arquitectura FastConformer como codificador y un decodificador TDT (Token-and-Duration Transducer), con una red de predicción basada en Kimi Delta Attention. Esta conversión, publicada por el usuario `basyauma-tech`, permite ejecutar el modelo en Apple Silicon sin NeMo, CUDA ni Triton, que son requisitos del entorno oficial del modelo original (Linux + GPU NVIDIA + NeMo 2.7).
+Haas-ja-v1.0-mlx es una conversión no oficial al framework MLX del modelo de reconocimiento automático del habla (ASR) Haas-ja-v1.0, desarrollado originalmente por Third Intelligence, Inc. El modelo base está especializado en japonés y combina un encoder FastConformer con un decoder TDT (Token-and-Duration Transducer) cuya red de predicción utiliza Kimi Delta Attention. Esta versión MLX permite ejecutar el modelo en Apple Silicon sin necesidad de NeMo, CUDA ni Triton, eliminando la dependencia de Linux y GPUs NVIDIA que imponía el entorno oficial (NeMo 2.7).
 
-El modelo resuelve la transcripción de voz en japonés con una precisión publicada de 6,12 % de CER estricto en el conjunto de evaluación asr-ja-bench v1.1 (promedio de los cinco subconjuntos), y valores medidos de 3,65 % en FLEURS y 4,51 % en JVNV para esta conversión MLX. Con 615,9 millones de parámetros y un tamaño de repositorio de 1,2 GB, es un modelo compacto que cabe en memoria unificada de cualquier Mac con Apple Silicon y ofrece un rendimiento de unas 256 veces el tiempo real (RTFx) en un M5 Max.
+La conversión la firma el usuario basyauma-tech y mantiene los pesos en bf16 originales, aplicando únicamente una reordenación de ejes y la eliminación del tensor `num_batches_tracked`, que no interviene en la inferencia. Aunque Hugging Face clasifica el repositorio como `quantized`, el modelo no está cuantizado; existe una variante aparte de 8 bits (aproximadamente 0,73 GB). El modelo tiene 615.871.520 parámetros y un tamaño de repositorio de 1,2 GB.
 
-La relevancia actual radica en que democratiza el acceso a un ASR japonés de alta calidad en hardware de consumo Apple, sin dependencia de ecosistemas CUDA, y con licencia Apache 2.0 que permite uso comercial. No obstante, la conversión no incluye código de inferencia: este debe obtenerse del repositorio GitHub `basyauma-tech/haas-ja-local`.
+Su relevancia radica en que democratiza el acceso a un ASR japonés de calidad estado del arte en hardware de consumo Apple, con un rendimiento medido de RTFx en torno a 254-256 sobre un M5 Max y una huella de memoria moderada (1,57 GB de RSS en configuración por defecto). Es una pieza útil para transcripción local de audio japonés en entornos macOS sin infraestructura GPU dedicada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (codificador) + TDT (decodificador), red de predicción con Kimi Delta Attention |
+| Arquitectura | Encoder FastConformer + decoder TDT (Token-and-Duration Transducer) con red de predicción Kimi Delta Attention |
 | Parametros totales | 615.871.520 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa fragmentos de hasta 30 s; audio más largo se segmenta automáticamente) |
-| Tipos de cuantizacion | bfloat16 (pesos sin cuantizar; la etiqueta "quantized" de Hugging Face es incorrecta según el autor) |
-| Idiomas soportados | japonés (ja) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bfloat16, 1.231.827.296 bytes), tokenizer SentencePiece (BPE, 3.072 vocabulario) |
+| Longitud de contexto | no disponible (procesa fragmentos de hasta 30 segundos; audio superior se segmenta) |
+| Tipos de cuantizacion | bf16 (este repositorio, sin cuantizar); variante 8-bit disponible en basyauma-tech/Haas-ja-v1.0-mlx-8bit |
+| Idiomas soportados | japones (ja) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (bf16, 1.231.827.296 bytes), tokenizer SentencePiece BPE de 3.072 tokens |
 
 ## Arquitectura y entrenamiento
 
-El modelo original Haas-ja-v1.0 combina un codificador FastConformer con un decodificador TDT (Token-and-Duration Transducer). La innovación técnica destacable es el uso de Kimi Delta Attention en la red de predicción, lo que según el autor requiere Triton y CUDA para su ejecución, excluyendo CPU y macOS del entorno oficial. El modelo se distribuye originalmente como un único archivo `.nemo` para NeMo 2.7.
+El modelo base sigue la arquitectura FastConformer para el encoder, una variante de Conformer con atención por bloques que reduce el coste computacional en secuencias de audio largas. El decoder es un TDT (Token-and-Duration Transducer), que predice simultáneamente el token y su duración, lo que permite un alineamiento temporal implícito y mejora la robustez frente a variaciones de velocidad del habla. La red de predicción del decoder incorpora Kimi Delta Attention, un mecanismo de atención lineal que reduce el coste cuadrático en la predicción autoregresiva.
 
-Esta conversión MLX no modifica los valores de los pesos: mantiene los tensores en bfloat16, reordena los ejes de las convoluciones para adaptarlos al layout de MLX y elimina la clave `num_batches_tracked` (no usada en inferencia). No se ha realizado cuantización alguna. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La verificación numérica de la conversión reporta diferencias máximas de 9,54e-07 en log-mel, 4,36e-06 de error relativo en la salida del codificador y 1,16e-06 en los logits de la red de combinación, con coincidencia total de la secuencia de tokens en 6 utterances de FLEURS.
+No se dispone en la información proporcionada de detalles sobre el volumen de datos de entrenamiento, la composición del corpus, ni si se aplicaron fases de RLHF o DPO. El modelo original fue entrenado y evaluado en el entorno oficial de NeMo 2.7 sobre GPUs NVIDIA (H200 para las cifras publicadas). La conversión MLX no reentrena ni modifica los pesos más allá del reordenamiento de ejes, por lo que las capacidades y sesgos del modelo base se conservan íntegramente.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en japonés (transcripción de audio a texto).
-- Procesamiento de audio de hasta 30 segundos por fragmento; audio más largo se segmenta automáticamente buscando el punto más silencioso en una ventana de ±2 s alrededor de los 30 s.
-- Generación de marcas de tiempo a nivel de token (inicio y fin en segundos, resolución de 80 ms correspondiente a los frames del codificador).
-- Acepta formatos de audio legibles por soundfile (WAV, FLAC, etc.); convierte a mono promediando canales y remuestrea a 16 kHz con soxr.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni otras modalidades (visión, audio generativo). Es exclusivamente un modelo ASR.
+- Reconocimiento automático del habla en japonés a partir de audio en formatos compatibles con soundfile (WAV, FLAC y otros), con conversión interna a 16 kHz mono mediante soxr.
+- Segmentación automática de audio largo: fragmenta audio de más de 30 segundos eligiendo el punto de corte en la ventana de 0,1 segundos más silenciosa dentro de los 30 ± 2 segundos de cada fragmento, y concatena los resultados.
+- Salida con marcas de tiempo a nivel de token en incrementos de 80 ms, exportable a JSON con una línea por archivo.
+- Procesamiento por lotes de un solo archivo (batch 1); no soporta streaming ni etiquetado de hablantes.
+- No soporta vocabulario personalizado del paquete oficial Haas-ASR.
+- No realiza puntuación ni normalización de estilo (no permite especificar kanji, kana o formato numérico en la salida).
+- Ejecución local en Apple Silicon sin dependencias de torch, CUDA, NeMo ni Triton.
 
 ## Casos de uso
 
-- Transcripción de reuniones y entrevistas en japonés: el modelo procesa audio largo mediante segmentación automática en fragmentos de 30 s, con un rendimiento de 33,8 minutos de audio en 6,97 s en un M5 Max, lo que lo hace adecuado para transcripciones casi en tiempo real en local.
-- Subtitulado y generación de transcripciones con marcas de tiempo: la opción `--json --timestamps` produce marcas por token con resolución de 80 ms, útil para alinear subtítulos o para análisis temporal de habla.
-- Aplicaciones de dictado y notas de voz en macOS: al ejecutarse en Apple Silicon sin CUDA, puede integrarse en apps nativas de Mac con un consumo de memoria de 1,57 GB de RSS en el peor caso medido.
-- Procesamiento por lotes de archivos de audio en pipelines locales: el CLI `haas-ja-local transcribe` permite automatizar la transcripción de directorios completos sin dependencias de GPU NVIDIA.
-- Investigación en ASR japonés: al ser una conversión fiel con verificación numérica documentada, sirve como referencia para comparar implementaciones MLX frente a PyTorch/NeMo en el benchmark asr-ja-bench.
-- Transcripción de contenido multimedia japonés (podcasts, vídeos) en entornos sin acceso a infraestructura cloud, gracias a la licencia Apache 2.0 y a la ejecución totalmente local.
+- Transcripción local de reuniones y entrevistas en japonés en estaciones de trabajo macOS: el modelo procesa audio de hasta 30 segundos por fragmento con segmentación automática y permite obtener transcripciones con marcas de tiempo en JSON, adecuadas para generar subtítulos o índices de búsqueda.
+- Subtitulado y alineamiento temporal de vídeo: la salida con timestamps cada 80 ms permite sincronizar subtítulos con el audio en herramientas de postproducción, aunque las marcas son por token y no por palabra.
+- Archivado y búsqueda de contenido audiovisual japonés: transcripción por lotes de grabaciones largas (el ejemplo documentado procesa 33,8 minutos en 6,97 segundos incluyendo carga del modelo) para indexar y hacer searchable un archivo de audio.
+- Investigación en ASR y evaluación de modelos: al ser una conversión fiel con pesos bf16 y código de inferencia abierto, sirve como referencia para comparar implementaciones MLX frente a PyTorch/NeMo con el benchmark asr-ja-bench v1.1 y el framework jacer.
+- Prototipado rápido en portátiles Apple: con una huella de 1,57 GB de RSS y arranque de 0,15 segundos con caché del sistema operativo, permite iterar sobre pipelines de ASR sin infraestructura GPU.
+- Transcripción de notas de voz y grabaciones cortas en aplicaciones macOS: la API de Python (`load_model`, `transcribe`) y la CLI facilitan integrar el modelo en scripts o herramientas internas para audio de menos de 30 segundos, donde el modelo alcanza su mejor CER.
+- Evaluación de calidad de audio y control de ruido: aunque no está diseñado para ello, la sensibilidad a silencios y ruido documentada permite usar el modelo como sonda para detectar segmentos problemáticos en grabaciones.
 
 ## Benchmarks y rendimiento
 
-Resultados de CER (%) en asr-ja-bench v1.1, medidos con jacer v1.2.0 en Apple M5 Max (MLX 0.32.4, Metal, batch 1):
+Resultados publicados por el autor de la conversión sobre asr-ja-bench v1.1 con jacer v1.2.0, medidos en Apple M5 Max (128 GB), macOS 27.2, mlx 0.32.4, batch 1, encoder bf16 y redes de predicción/unión en float32. Unidades en porcentaje (CER, menor es mejor).
 
-| Subconjunto | Utterances | Duracion (h) | Metrica | Esta conversion | Valor publicado (NeMo, H200) |
-|---|---:|---:|---|---:|---:|
-| FLEURS | 650 | 2,36 | CER strict | 3,65 | 3,65–3,67 |
-| FLEURS | 650 | 2,36 | CER flex | 2,98 | no disponible |
-| FLEURS | 650 | 2,36 | CER kana | 2,33 | no disponible |
-| JVNV | 1.375 | 3,33 | CER strict | 4,51 | 4,50–4,53 |
-| JVNV | 1.375 | 3,33 | CER flex | 3,06 | no disponible |
-| JVNV | 1.375 | 3,33 | CER kana | 2,25 | no disponible |
+| Subconjunto | Utterances | Audio (h) | Metrica | Esta conversion | Valor publicado | Diferencia (pp) |
+|---|---:|---:|---|---:|---:|---:|
+| FLEURS | 650 | 2,36 | CER strict | 3,65 | 3,65-3,67 | 0,00 |
+| FLEURS | 650 | 2,36 | CER flex | 2,98 | no verificado | - |
+| FLEURS | 650 | 2,36 | CER kana | 2,33 | no verificado | - |
+| JVNV | 1.375 | 3,33 | CER strict | 4,51 | 4,50-4,53 | 0,00 |
+| JVNV | 1.375 | 3,33 | CER flex | 3,06 | no verificado | - |
+| JVNV | 1.375 | 3,33 | CER kana | 2,25 | no verificado | - |
 
-Rendimiento y memoria en FLEURS (647 utterances, 2,35 h, M5 Max):
+Los valores publicados corresponden al entorno oficial (NeMo, bf16, H200). No se han medido JSUT basic5000, TEDxJP-10K ni SpeechBSD. La comparación entre la implementación MLX (bf16) y la referencia PyTorch (float32) muestra coincidencia de tokens y texto en 632 de 650 utterances de FLEURS (97,2 %); de las 18 discrepancias, 12 son solo de puntuación.
 
-| Metrica | Cache 1 GiB (por defecto) | Sin limite |
+Rendimiento medido sobre 647 utterances de FLEURS (2,35 h), batch 1, sin contar carga de audio:
+
+| Metrica | Por defecto (cache 1 GiB) | Sin limite (referencia) |
 |---|---:|---:|
 | RTFx (mediana por utterance) | 254,2 | 250,9 |
-| RTFx (total) | 256,1 | 255,9 |
+| RTFx (total audio / total tiempo) | 256,1 | 255,9 |
 | RSS pico | 1,57 GB | 2,68 GB |
-| Memoria pico MLX | 1,76 GB | 1,82 GB |
-| Footprint pico macOS | 3,19 GB | 14,40 GB |
+| Asignacion pico mlx | 1,76 GB | 1,82 GB |
+| Huella de memoria pico macOS | 3,19 GB | 14,40 GB |
 
-Tiempo medio por utterance: 0,050 s; carga del modelo: 0,15 s. Audio de 33,8 min procesado en 6,97 s (incluyendo arranque y carga), con RSS pico de 1,74 GB. El modelo original reporta un CER estricto global de 6,12 % en los cinco subconjuntos de asr-ja-bench v1.1 según fuentes secundarias; no se han medido los subconjuntos JSUT basic5000, TEDxJP-10K ni SpeechBSD en esta conversión.
+En una prueba con 33,8 minutos de audio divididos en 68 fragmentos, el CLI completo (incluyendo arranque y carga del modelo) tardó 6,97 segundos con un RSS máximo de 1,74 GB y una huella pico de 3,48 GB.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: aproximadamente 1,2 GB para los pesos en bfloat16; RSS pico medido de 1,57 GB con caché de 1 GiB. Con caché ilimitado, el footprint de macOS puede alcanzar 14,40 GB en ejecuciones largas (comportamiento de MLX, no fuga de memoria).
-- GPU recomendadas: Apple Silicon exclusivamente (MLX solo funciona en macOS). Verificado en Apple M5 Max con 128 GB de memoria unificada, macOS 27.2 y mlx 0.32.4. No verificado en Intel Mac ni en equipos con 16 GB o menos.
-- Cabe en cualquier Mac con Apple Silicon; el límite práctico es la memoria unificada disponible y la versión de macOS compatible con MLX.
-- Opciones de despliegue: paquete `haas-ja-local[mlx]` desde GitHub (Python 3.12, dependencias mlx, numpy, sentencepiece, soundfile, soxr). No compatible con vLLM, llama.cpp, Ollama ni TGI, que no soportan esta arquitectura ni MLX.
-- Latencia y throughput: RTFx de 254–256 en M5 Max, batch 1 (el código de inferencia solo soporta batch 1). No hay datos para otros chips Apple.
+- Plataforma: exclusivamente Apple Silicon (Mac). No funciona en Linux, Windows ni GPUs NVIDIA/AMD.
+- Memoria: pesos en bf16 de aproximadamente 1,2 GB; RSS pico medido de 1,57 GB con caché Metal de 1 GiB por defecto. La huella pico de macOS llega a 3,19 GB en configuración por defecto y a 14,40 GB sin límite de caché, debido a la retención de buffers Metal liberados (no es una fuga).
+- GPU recomendadas: Apple M5 Max (único hardware verificado, 128 GB). No se han probado otros chips Apple Silicon, ni Macs Intel, ni equipos con 16 GB o menos de memoria.
+- Cabe en GPUs de consumo: sí, en Apple Silicon de gama alta; no se ha verificado en chips de gama baja ni en equipos con memoria unificada reducida.
+- Opciones de despliegue: paquete `haas-ja-local[mlx]` (instalable desde GitHub), CLI `haas-ja-local transcribe` y API de Python (`load_model`, `transcribe`, `load_audio`). No compatible con vLLM, llama.cpp, Ollama ni TGI, al ser un modelo de audio y no de texto.
+- Dependencias de ejecución: Python 3.12 (>=3.12,<3.13), mlx, numpy, sentencepiece, soundfile, soxr. No requiere torch.
+- Latencia y throughput: RTFx mediana de 254,2 y agregada de 256,1 sobre M5 Max; 0,050 s de mediana por utterance de FLEURS sin límite de caché. El modelo original declara RTFx sobre H200 con batch 512, no comparable con estas cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / audio | CER japones | Licencia | Plataforma |
+| Modelo | Parametros | Contexto / audio | Licencia | Entorno | Notas |
 |---|---|---|---|---|---|
-| Haas-ja-v1.0-mlx (esta conversion) | 615,9 M | fragmentos de 30 s, segmentacion automatica | 3,65 % FLEURS strict; 4,51 % JVNV strict | Apache 2.0 | Apple Silicon (MLX) |
-| Haas-ja-v1.0 (original) | 615,9 M | fragmentos de 30 s | 3,65 % FLEURS strict; 4,50–4,53 % JVNV strict | Apache 2.0 | Linux + NVIDIA + NeMo 2.7 |
-| Alternativas ASR japonesas | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Haas-ja-v1.0-mlx (este) | 615,9 M | fragmentos de hasta 30 s, segmentacion automatica | Apache-2.0 | MLX, Apple Silicon | Conversion no oficial, bf16, sin cuantizar |
+| third-intelligence/Haas-ja-v1.0 | no disponible | no disponible | Apache-2.0 | NeMo 2.7, Linux + NVIDIA | Modelo base oficial; referencia de CER publicado |
+| basyauma-tech/Haas-ja-v1.0-mlx-8bit | no disponible | no disponible | Apache-2.0 | MLX, Apple Silicon | Variante cuantizada a 8 bits, ~0,73 GB |
+| Sanami/haas-ja-onnx | no disponible | no disponible | Apache-2.0 | ONNX Runtime | Conversion float32 usada solo para comparacion numerica; no redistribuye pesos |
 
-No se dispone de datos de benchmarks de otros modelos ASR japoneses en la información proporcionada, por lo que la comparativa con alternativas de terceros no está disponible.
+No se dispone en la información proporcionada de comparaciones con otros modelos ASR japoneses (por ejemplo, Whisper o modelos de la familia ReazonSpeech), por lo que no se incluyen cifras de rendimiento cruzadas.
 
 ## Limitaciones y advertencias
 
-- Conversión no oficial: no está afiliada, aprobada ni respaldada por Third Intelligence, Inc. El autor lo declara explícitamente.
-- Solo japonés: no soporta otros idiomas; el vocabulario SentencePiece es de 3.072 tokens específico para japonés.
-- Solo Apple Silicon y macOS: MLX no funciona fuera de macOS; no hay soporte para Intel Mac, Linux, Windows ni GPU NVIDIA en esta conversión.
-- No incluye código de inferencia: debe instalarse desde el repositorio GitHub `basyauma-tech/haas-ja-local`; el repositorio de Hugging Face solo contiene pesos, configuración y tokenizer.
-- Batch 1 únicamente: el código de inferencia no soporta procesamiento por lotes, lo que limita el throughput en comparación con el modelo original (batch 512 en H200).
-- Segmentación de audio largo: la estrategia de corte por silencio puede degradar la precisión en audio con habla continua sin pausas claras o con ruido de fondo constante; no se ha validado en grabaciones largas reales con el mismo hablante.
-- Rendimiento no verificado en equipos con 16 GB o menos de memoria unificada ni en chips Apple distintos del M5 Max.
-- Riesgo de alucinación: como todo modelo ASR, puede generar texto plausible en segmentos con ruido, silencio o habla solapada; no se han publicado análisis específicos de este comportamiento.
-- Sesgos: no se han documentado sesgos demográficos, dialectales o de género en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero la atribución a Third Intelligence y el aviso de conversión no oficial deben conservarse (archivos LICENSE y NOTICE incluidos).
-- La etiqueta "quantized" de Hugging Face es incorrecta: los pesos están en bfloat16 sin cuantizar.
+- Es una conversión no oficial: no está afiliada, aprobada ni respaldada por Third Intelligence, Inc. La atribución debe mantenerse según el archivo NOTICE.
+- El modelo omite con frecuencia muletillas del habla («えー», «あの») y no permite especificar la representación de kanji, kana o números en la salida.
+- Puede emitir palabras cortas en segmentos de silencio o ruido. En pruebas sintéticas de 10 s de silencio y ruido blanco débil no produjo salida, pero no se ha verificado con grabaciones reales.
+- La segmentación de audio de más de 30 segundos degrada el CER: en 33,8 minutos concatenados de FLEURS, el CER strict pasa de 4,10 % (por utterance) a 6,44 % (segmentación a ~30 s). Aproximadamente 1 punto se debe a la concatenación de hablantes distintos y 1,4 puntos a cortes en mitad de utterance (50 de 67 fronteras). En grabaciones reales de un solo hablante el impacto podría ser menor.
+- Solo soporta batch 1; no hay streaming, etiquetado de hablantes ni vocabulario personalizado del paquete oficial Haas-ASR.
+- Las marcas de tiempo son por token, no por palabra.
+- Solo se ha verificado en un único equipo (M5 Max, 128 GB, macOS 27.2, mlx 0.32.4); no hay datos para Macs Intel, equipos con 16 GB o menos, ni batch superior a 1.
+- La evaluación JVNV usó remuestreo a 16 kHz con ffmpeg 9.0.2 en lugar de la versión 7.1 prevista, por lo que podría haber diferencias menores respecto al audio oficial.
+- Riesgo de alucinación y sesgos: no se documentan análisis específicos de sesgo en la información disponible; al ser un modelo entrenado para japonés, su uso fuera de ese idioma no está soportado.
+- Licencia Apache-2.0 permite uso comercial, pero debe conservarse la atribución a Third Intelligence, Inc. y el aviso de conversión no oficial.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/basyauma-tech/Haas-ja-v1.0-mlx
-- Modelo original: https://huggingface.co/third-intelligence/Haas-ja-v1.0
-- Repositorio de inferencia: https://github.com/basyauma-tech/haas-ja-local
-- Registro de verificación (precisión y velocidad): https://github.com/basyauma-tech/haas-ja-local/blob/main/docs/verification/2026-11-08-mac-mlx.md
-- Registro de verificación (coincidencia numérica): https://github.com/basyauma-tech/haas-ja-local/blob/main/docs/verification/2026-11-08-mac-numerics.md
-- Dataset de evaluación asr-ja-bench: https://huggingface.co/datasets/third-intelligence/asr-ja-bench
-- Herramienta de métricas jacer: https://github.com/third-intelligence/jacer
-- Artículo técnico (tech-insider.org): https://tech-insider.org/haas-ja-v1-0-japanese-asr-6-12-percent-cer-open-model-2026/
-- Artículo técnico (shattered.io): https://shattered.io/haas-ja-v1-0-japanese-speech-recognition-6-12-percent-cer-open-model-2026/
+- Repositorio Hugging Face: https://huggingface.co/basyauma-tech/Has-ja-v1.0-mlx (URL indicada en la información: https://huggingface.co/basyauma-tech/Haas-ja-v1.0-mlx)
+- Variante 8-bit: https://huggingface.co/basyauma-tech/Haas-ja-v1.0-mlx-8bit
+- Modelo base oficial: https://huggingface.co/third-intelligence/Haas-ja-v1.0
+- Código de inferencia: https://github.com/basyauma-tech/haas-ja-local
+- Documentación de precisión y velocidad: https://github.com/basyauma-tech/haas-ja-local/blob/main/docs/verification/2026-11-08-mac-mlx.md
+- Documentación de coincidencia numérica: https://github.com/basyauma-tech/haas-ja-local/blob/main/docs/verification/2026-11-08-mac-numerics.md
+- Dataset de evaluación: https://huggingface.co/datasets/third-intelligence/asr-ja-bench
+- Framework de evaluación jacer: https://github.com/third-intelligence/jacer
+- Paquete oficial de inferencia Haas-ASR: https://github.com/third-intelligence/Haas-ASR
+- Conversión MLX alternativa: https://github.com/matsuurajun/haas-mlx
+- Conversión ONNX float32: https://huggingface.co/Sanami/haas-ja-onnx
+- NVIDIA NeMo: https://github.com/NVIDIA/NeMo
+- flash-linear-attention: https://github.com/fla-org/flash-linear-attention

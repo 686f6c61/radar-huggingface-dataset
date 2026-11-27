@@ -2,124 +2,104 @@
 
 ## Resumen
 
-Occamy-1.0-oQ6e-mtp es una cuantización comunitaria del modelo occamy-1.0 de Accio-Lab, publicada por el usuario qinghuali, que fusiona en un único conjunto de pesos el modelo base (35B-A3B MoE con codificador visual) y su cabecera de predicción multi-token (MTP). El resultado se exporta en formato MLX con la receta oQ6e de oMLX (6 bits mixtos) para ejecutarse de forma nativa en Apple Silicon con decodificación especulativa activada.
+Occamy-1.0-oQ6e-mtp es una cuantizacion comunitaria del modelo multimodal occamy-1.0 de Accio-Lab, empaquetada especificamente para el runtime oMLX sobre Apple Silicon. El autor del repositorio, qinghuali, fusiona en un unico artefacto de pesos el modelo base y su cabecera de prediccion multi-token (MTP), que el proyecto original distribuye por separado y requiere un runtime SGLang parcheado. El resultado se cuantiza con la receta oQ6e de oMLX y se publica como safetensors MLX, con licencia Apache 2.0.
 
-El modelo hereda la arquitectura del checkpoint original: 35.951.822.704 parámetros totales, unos 3B activos por token, 40 capas más una capa MTP, 256 expertos (8 enrutados y 1 compartido por token), atención híbrida lineal (GDN) combinada con atención completa, ventana de contexto de 262.144 tokens y un codificador visual de 27 capas que se mantiene sin cuantizar.
+El modelo subyacente es un transformer de mezcla de expertos (MoE) de 35.951.822.704 parametros totales y aproximadamente 3.000 millones activos por token, con 40 capas mas una capa MTP, 256 expertos (8 enrutados y 1 compartido por token), atencion hibrida con capas de atencion lineal GDN intercaladas con atencion completa cada cuatro capas, y una ventana de contexto de 262.144 tokens. Incorpora ademas un codificador visual de 27 capas que se preserva a precision completa en esta cuantizacion, por lo que la pipeline declarada es image-text-to-text.
 
-Su relevancia es doble. Por un lado, simplifica el despliegue de MTP: el repositorio oficial entrega la cabecera como artefacto separado que exige un runtime SGLang parcheado, mientras que aquí los 19 tensores `mtp.*` quedan integrados en el índice de pesos y `text_config.mtp_num_hidden_layers` pasa de 0 a 1. Por otro, permite ejecutar un MoE de 35B con visión en un Mac con 64 GB de memoria unificada (unos 29 GB de pesos cargados) con una velocidad de decodificación mediana de 110,5 tok/s. No es una publicación oficial y no ha sido validada por Accio-Lab.
+Su relevancia practica es doble. Por un lado, permite ejecutar un MoE de 35B con capacidades multimodales y contexto largo en un equipo de sobremesa con memoria unificada de 64 GB, algo que el checkpoint BF16 original no permite con holgura. Por otro lado, integra la decodificacion especulativa MTP en los propios pesos, con una tasa de aceptacion de borradores medida del 77,95 % y una mediana de 110,5 tokens por segundo en un Mac Studio M4 Max. Conviene subrayar que es una publicacion no oficial, no validada por Accio-Lab, y que las metricas proceden de registros de uso real y no de un benchmark controlado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (tag `qwen3_5_moe`): capas de atención lineal GDN combinadas con capas de atención completa (una de cada cuatro); 40 capas + 1 capa MTP |
-| Parametros totales | 35.951.822.704 (≈35B) |
-| Parametros activos | ≈3B por token (35B-A3B); 256 expertos, 8 enrutados + 1 compartido por token |
+| Arquitectura | Transformer MoE hibrido con atencion lineal GDN y atencion completa cada 4 capas; codificador visual de 27 capas; capa MTP adicional |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | Aproximadamente 3.000 millones (8 expertos enrutados + 1 compartido por token) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | oQ6e de oMLX: base 6 bits (expertos 6 bits, grupo 64; parte de lenguaje ≈6,6 bpw; archivo completo con torre visual ≈6,7 bpw), con embeddings, proyecciones de atención/GDN y expertos compartidos en 8 bits; normas, enrutado MoE, capa MTP fusionada y torre visual completa sin cuantizar. Existen repos oficiales GGUF / MLX / FP8 / NVFP4 sin MTP |
+| Tipos de cuantizacion | oQ6e de oMLX: base de 6 bits (expertos a 6 bits, grupo 64; ~6,6 bpw en la parte linguistica, ~6,7 bpw en el archivo completo); embeddings, proyecciones de atencion/GDN y expertos compartidos a 8 bits; normas, router MoE, capa MTP fusionada y torre visual sin cuantizar |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | MLX safetensors, 6 fragmentos, 30,28 GB (28,20 GiB) |
-| Codificador visual | 27 capas, preservado a precisión completa |
-| Pipeline | no disponible |
-| Libreria de inferencia | mlx (oMLX 0.7.0) |
-| Descargas / likes | 2 / 0 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors MLX (6 fragmentos, 30,28 GB / 28,20 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una mezcla de expertos (MoE) de 35B totales y 3B activos por token, con 256 expertos de los que se enrutan 8 más 1 compartido en cada token. La pila de 40 capas alterna capas de atención lineal GDN con capas de atención completa (una de cada cuatro), lo que reduce el coste de memoria del caché KV para el contexto largo de 262.144 tokens. Sobre esa base se añade una capa MTP (`mtp_num_hidden_layers: 1`) que actúa como cabecera de borrador para decodificación especulativa, y un codificador visual de 27 capas heredado del checkpoint original.
+La arquitectura heredada del checkpoint original combina 40 capas de transformer con una capa adicional de prediccion multi-token. El bloque de mezcla de expertos emplea 256 expertos con enrutamiento disperso de 8 expertos activos mas uno compartido por token, lo que explica la relacion entre los 35B parametros totales y los aproximadamente 3B activos. La atencion es hibrida: la mayoria de capas usan atencion lineal del tipo GDN y cada cuarta capa aplica atencion completa, un diseno orientado a sostener el contexto de 262.144 tokens con un coste de atencion reducido. El modelo incorpora ademas un codificador visual de 27 capas para entrada image-text-to-text.
 
-No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre etapas de RLHF o DPO del modelo base; esta ficha solo describe una recuantización, no un reentrenamiento. La innovación técnica del repositorio es de empaquetado e inferencia: fusiona la cabecera MTP oficial en el directorio del modelo igual que hace el helper `assemble_head.py` de upstream y aplica cuantización mixta con calibración imatrix (`oqe_code_multilingual`, 128×512, cobertura de expertos del 100 %). El tag del repositorio referencia `arxiv:2609.11977`.
+Sobre el entrenamiento del modelo base no se proporciona informacion en los materiales disponibles: no se detallan el volumen de tokens, la composicion del corpus, ni si hubo fases de RLHF o DPO. Lo que si documenta esta ficha es el proceso de cuantizacion. El autor fusiona los 19 tensores `mtp.*` de la cabecera oficial occamy-1.0-MTP en el indice de pesos del modelo base y ajusta `text_config.mtp_num_hidden_layers` de 0 a 1, replicando el comportamiento del helper `assemble_head.py` del proyecto original. Despues aplica la cuantizacion dinamica oQ6e de oMLX con calibracion imatrix (oqe_code_multilingual, 128x512, cobertura de expertos del 100 %), elevando a 8 bits las partes sensibles y dejando intactos a precision completa las normas, el router, la capa MTP y toda la torre visual. La innovacion tecnica destacable es, por tanto, el empaquetado de la decodificacion especulativa MTP dentro de los pesos para que oMLX la active de forma nativa, sin el runtime parcheado que exige la distribucion oficial.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en modo agente, con modo de pensamiento (thinking) recomendado por upstream para uso agéntico general.
-- Llamada a herramientas y salida estructurada: en los registros medidos, 71 de 113 peticiones fueron de tool calling o salida estructurada, con una tasa de aceptación del borrador MTP del 85,7 %.
-- Razonamiento multi-paso y flujos agénticos multi-turno, con prompts observados de hasta 142.277 tokens.
-- Contexto largo: 262.144 tokens declarados en el config heredado, aprovechables para repositorios, expedientes o historiales extensos.
-- Capacidad multimodal de entrada: incluye la torre visual de 27 capas del modelo original, preservada a precisión completa.
-- Decodificación especulativa mediante predicción multi-token: mediana de 2,83 tokens generados por ciclo de verificación, frente a 1 token por pasada en decodificación sin MTP.
-- Generación de texto largo en una sola respuesta: en los registros hay generaciones de 5.675 tokens a 128,2 tok/s y de 5.463 tokens a 123,8 tok/s.
-- Capacidades multilingües: no disponible.
+- Generacion de texto conversacional y razonamiento en modo agente, con modo de pensamiento (thinking) segun la recomendacion de muestreo del proyecto original.
+- Procesamiento de imagen y texto combinados (pipeline image-text-to-text) mediante el codificador visual de 27 capas, conservado a precision completa.
+- Llamada a herramientas y salida estructurada: los registros del autor separan 71 peticiones de tool calling y estructuradas, con una tasa de aceptacion MTP del 85,7 %.
+- Razonamiento multi-paso y sesiones de agente interactivas, con prompts observados de hasta 142.277 tokens dentro del contexto de 262.144.
+- Contexto largo de 262.144 tokens, adecuado para documentos extensos, historiales de conversacion largos y bases de codigo.
+- Decodificacion especulativa MTP integrada, con profundidad adaptativa de borrador configurable hasta 3.
+- Capacidades multilingues: no disponible (no se declaran idiomas en el repositorio).
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con 262.144 tokens de contexto el modelo puede mantener conversaciones multi-turno con historial completo, fichas de producto y políticas internas sin truncar, y el modo de salida estructurada facilita devolver respuestas clasificadas o campos JSON para el CRM.
-- Agentes de código en local: soporta tool calling y salida estructurada, por lo que puede integrarse en pipelines de CI/CD como revisor de parches o generador de tests, con la ventaja de que todo el cómputo permanece en el equipo.
-- Despliegue on-premise con datos sensibles: al ejecutarse íntegramente en Apple Silicon mediante oMLX, no requiere enviar prompts a servicios externos, lo que encaja en entornos con requisitos de confidencialidad (legal, sanidad, banca).
-- Análisis de documentación extensa: los registros de uso incluyen prompts de hasta 142.277 tokens, de modo que es viable resumir o interrogar repositorios completos, contratos o informes largos en una sola ventana.
-- Extracción de datos estructurados: la aceptación MTP del 85,7 % en salidas estructuradas y una mediana de 122,5 tok/s en ese tipo de contenido lo hacen adecuado para lotes de extracción de entidades o normalización de registros.
-- Asistente de desarrollo con razonamiento: activando el modo thinking y los parámetros de muestreo recomendados por upstream (temperature 1.0, top_p 0.95, top_k 20, presence_penalty 1.5) puede abordar depuración y explicación de código paso a paso.
-- Procesamiento de documentos escaneados o capturas: la torre visual heredada permite tareas de imagen a texto, si bien la decodificación especulativa con visión (vision-MTP) queda desactivada por defecto.
-- Generación de contenido largo: para informes o documentación técnica extensa, las generaciones medidas superan los 5.000 tokens a más de 120 tok/s en un M4 Max.
+- Agente de codigo en local sobre Apple Silicon: el modelo puede sostener sesiones de tool calling con salida estructurada, donde la aceptacion MTP medida es del 85,7 % y la mediana de decodificacion de 122,5 tok/s, lo que reduce la latencia percibida en bucles de edicion y ejecucion de herramientas.
+- Asistente de analisis de documentos largos: con 262.144 tokens de contexto puede ingerir informes, expedientes o bases de codigo completas en una sola peticion, sin troceado agresivo ni perdida de referencias cruzadas.
+- Atencion al cliente automatizada multi-turno: la ventana de contexto permite mantener historiales extensos y adjuntar capturas o documentos; el modo thinking ayuda en consultas que requieren razonamiento previo.
+- Procesamiento de imagenes con texto asociado: al conservar la torre visual a precision completa, es adecuado para extraccion de datos de capturas, diagramas o formularios combinados con instrucciones textuales.
+- Generacion de texto largo en estacion de trabajo: los registros incluyen generaciones de 5.675 tokens a 128,2 tok/s y 5.463 tokens a 123,8 tok/s, utiles para redaccion tecnica o resumenes extensos por lotes.
+- Prototipado e investigacion de decodificacion especulativa: el repositorio expone estadisticas por peticion (aceptacion por profundidad, tokens por ciclo, parking de MTP), lo que lo convierte en un banco de pruebas realista para estudiar MTP en produccion.
+- Despliegue de un MoE de 35B en hardware de sobremesa: con unos 29 GB de memoria unificada en carga, encaja en equipos de 64 GB para entornos de desarrollo, demos internas o procesamiento por lotes sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo aporta métricas de ejecución de la decodificación especulativa, obtenidas de registros de uso real en una única máquina y sin ejecución de referencia con MTP desactivado.
+No se han publicado resultados de benchmarks en la informacion disponible. Los unicos datos de rendimiento son mediciones de uso real del autor sobre oMLX 0.7.0 en un Mac Studio M4 Max de 64 GB, con MTP activado y profundidad adaptativa maxima de 3, en 113 peticiones y 81.444 tokens generados:
 
-Configuración de la medición: oMLX 0.7.0, este repositorio, MTP activado con profundidad adaptativa máxima 3, Mac Studio con Apple M4 Max y 64 GB de memoria unificada, temperatura 0.7, una petición concurrente, entre el 8 y el 10 de octubre de 2026. Total: 113 peticiones con estadísticas MTP, 81.444 tokens generados, prompts de 52 a 142.277 tokens. La velocidad se define como tokens generados divididos entre el tiempo de petición menos el TTFT, excluyendo el prefill.
+| Metrica | Valor |
+|---|---|
+| Aceptacion de borradores (global) | 48.501 / 62.218 = 77,95 % |
+| Aceptacion por profundidad d1 / d2 / d3 | 79,43 % / 76,26 % / 77,29 % |
+| Tokens por ciclo de verificacion (mediana) | 2,83 (p10 2,25; p90 3,36) |
+| Decodificacion (mediana) | 110,5 tok/s (p10 78,0; p90 146,9) |
+| Decodificacion maxima observada | 165,7 tok/s |
+| Tool calls / estructurado (71 peticiones) | 85,7 % de aceptacion; 122,5 tok/s de mediana |
+| Texto libre (42 peticiones) | 75,8 % de aceptacion; 96,6 tok/s de mediana |
 
-| Métrica | Aceptado / propuesto | Tasa |
-|---|---:|---:|
-| Global | 48.501 / 62.218 | 77,95 % |
-| Profundidad 1 | 23.626 / 29.743 | 79,43 % |
-| Profundidad 2 | 16.568 / 21.727 | 76,26 % |
-| Profundidad 3 | 8.307 / 10.748 | 77,29 % |
-
-| Métrica | Mediana | p10 | p90 |
-|---|---:|---:|---:|
-| Tokens por ciclo de verificación | 2,83 | 2,25 | 3,36 |
-| Velocidad de decodificación (tok/s) | 110,5 | 78,0 | 146,9 |
-
-| Tipo de salida | Peticiones | Aceptación | Decodificación mediana |
-|---|---:|---:|---:|
-| Tool calls / estructurada | 71 | 85,7 % | 122,5 tok/s |
-| Texto libre | 42 | 75,8 % | 96,6 tok/s |
-
-Velocidad máxima de decodificación observada: 165,7 tok/s. El autor no reclama ningún multiplicador de aceleración, ya que no existe comparación con MTP desactivado para este artefacto en oMLX.
+El autor no declara ningun multiplicador de aceleracion: no hay ejecucion de referencia con MTP desactivado sobre este mismo artefacto, por lo que no existe comparacion directa MTP on frente a MTP off.
 
 ## Requisitos de hardware
 
-- Memoria: el repositorio ocupa 30,28 GB (28,20 GiB) y requiere aproximadamente 30 GB de memoria unificada libre para los pesos, más el caché KV y el contexto.
-- Carga medida en producción: unos 29 GB de pesos cargados en un Mac Studio con M4 Max y 64 GB.
-- Plataforma: exclusivamente Apple Silicon con macOS 15 o superior, al ser un artefacto MLX para oMLX; no hay pesos GGUF ni safetensors estándar en este repositorio.
-- GPU recomendadas: no disponible para CUDA; el modelo base en BF16 puede servirse en Transformers, vLLM o SGLang, pero la cabecera MTP fusionada de este repositorio requiere oMLX y, en el caso de la cabecera separada oficial, un SGLang parcheado.
-- Cabe en GPU de consumo: no aplica en el sentido habitual, ya que no se distribuye para GPUs NVIDIA o AMD; en el ecosistema Apple encaja en equipos con 64 GB o más de memoria unificada.
-- Opciones de despliegue: oMLX 0.7.0 mediante `omlx serve --model-dir /path/to/models --port 8000`, con endpoint compatible con OpenAI en `http://127.0.0.1:8000/v1`, interfaz de aplicación de oMLX o herramientas de agente.
-- Latencia y throughput: mediana de 110,5 tok/s de decodificación (p10 78,0; p90 146,9; máximo observado 165,7) con MTP activado y profundidad adaptativa hasta 3, en una sola petición concurrente.
-- Requisitos de configuración: activar MTP en los ajustes del modelo y mantener desactivado vision-MTP (valor por defecto).
+- Memoria unificada: aproximadamente 29 GB en carga de pesos; el autor exige unos 30 GB libres para pesos mas cache KV y contexto. Un equipo de 64 GB es el minimo practico recomendado.
+- Plataforma: exclusivamente Apple Silicon con macOS 15 o superior; el formato es safetensors MLX y el runtime es oMLX (probado con la version 0.7.0).
+- GPU dedicadas tipo A100, H100 o RTX 4090: no aplica a este artefacto, que no esta pensado para CUDA. Para esas plataformas habria que acudir a los repositorios oficiales del modelo base.
+- Cabe en GPU de consumo: si, en el sentido de que cabe en equipos Apple con memoria unificada de 64 GB (M4 Max y superiores). No se documenta su uso en GPUs de consumo con memoria discreta.
+- Opciones de despliegue: oMLX (`omlx serve --model-dir ... --port 8000`) con endpoint compatible con OpenAI en `/v1`; requiere activar MTP en la configuracion del modelo. El checkpoint BF16 original se sirve con Transformers, vLLM o SGLang, y la cabecera MTP oficial con SGLang parcheado.
+- Latencia y throughput: mediana de 110,5 tok/s en decodificacion (p10 78,0; p90 146,9) y 2,83 tokens por ciclo de verificacion, en una sola peticion concurrente.
 
 ## Comparativa con modelos similares
 
-Los comparables directos son los propios artefactos de la familia occamy-1.0, ya que no se dispone de datos de otros modelos de la misma categoría en la información proporcionada.
+| Modelo | Parametros | Contexto | Modalidad | Formato / runtime | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Occamy-1.0-oQ6e-mtp (este repositorio) | 35,95B totales / ~3B activos | 262.144 | Imagen y texto | MLX safetensors, oQ6e 6 bits, MTP fusionado, oMLX | Apache 2.0 | Comunitaria, 198 descargas, 1 like |
+| Accio-Lab/occamy-1.0 (oficial) | 35,95B totales / ~3B activos | 262.144 | Imagen y texto | BF16 safetensors, Transformers / vLLM / SGLang | Apache 2.0 | Oficial |
+| Accio-Lab/occamy-1.0-MTP (oficial) | Cabecera MTP de 1,69 GB | No aplica (depende del base) | No aplica | SGLang parcheado (bases BF16 / NVFP4) | Apache 2.0 | Oficial |
+| Repositorios oficiales GGUF / MLX / FP8 / NVFP4 | 35,95B totales / ~3B activos | 262.144 | Imagen y texto | llama.cpp / mlx-lm / FP8 / NVFP4, sin MTP | Apache 2.0 | Oficial |
 
-| Artefacto | Cabecera MTP | Formato / runtime | Precisión | Licencia |
-|---|---|---|---|---|
-| occamy-1.0 (oficial, Accio-Lab) | No | BF16 safetensors · Transformers / vLLM / SGLang | BF16 | apache-2.0 (según etiqueta del derivado) |
-| occamy-1.0-MTP (oficial, Accio-Lab) | Cabecera separada (1,69 GB) | SGLang parcheado (bases BF16 / NVFP4) | BF16 / NVFP4 | no disponible |
-| Repos oficiales GGUF / MLX / FP8 / NVFP4 | No | llama.cpp / mlx-lm y otros | varias | no disponible |
-| Este repositorio (comunitario) | Fusionada en los pesos | MLX safetensors · oMLX (oQ6e, 6 bits) | 6 bits mixtos | apache-2.0 |
-
-Frente al resto de la familia, este artefacto es el único que integra la cabecera MTP en el propio directorio de pesos y el único cuantizado con receta oQ6e para oMLX. No se dispone de comparación de calidad (benchmarks) frente a los artefactos oficiales en BF16, por lo que no puede cuantificarse la pérdida por cuantización.
+La comparacion con modelos de otros laboratorios del mismo tamano o categoria no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Publicación no oficial: el autor indica explícitamente que no está verificada por Accio-Lab; el repositorio lo mantiene el usuario qinghuali.
-- Ausencia de benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni de calidad general, ni comparación con el modelo base en BF16, por lo que la degradación por cuantización a 6 bits no está medida.
-- Las cifras de rendimiento provienen de registros de uso real en una sola máquina, con una sola petición concurrente y sin ejecución de referencia con MTP desactivado; no debe interpretarse como un multiplicador de aceleración garantizado.
-- El comportamiento de muestreo de la cabecera MTP no está validado por el autor del repositorio ni por upstream; las sesiones medidas usaron temperatura 0.7, mientras que upstream recomienda temperature 1.0, top_p 0.95, top_k 20 y presence_penalty 1.5 con thinking activado.
-- La decodificación con MTP puede aparcarse a mitad de petición si la aceptación se degrada (visible como `finish=parked`), lo que afecta a la velocidad puntual.
-- Idiomas soportados: no documentados en la información disponible; no puede confirmarse cobertura multilingüe ni su calidad.
-- Riesgo de alucinación: no se ha publicado ninguna evaluación específica de veracidad o alucinación para este artefacto ni para el modelo base en la información disponible.
-- Ventana de contexto: los 262.144 tokens son una capacidad declarada del config heredado; el uso real de contextos muy largos incrementa el consumo de caché KV por encima de los ~29-30 GB de pesos y puede superar la memoria de equipos de 64 GB.
-- Restricciones de plataforma: al ser un artefacto MLX, no es desplegable en GPUs NVIDIA o AMD sin reconvertir; queda ligado al ecosistema Apple Silicon y a oMLX.
-- La licencia declarada es apache-2.0, pero conviene verificar los términos del modelo base de Accio-Lab antes de un uso comercial, ya que la licencia del upstream no se detalla en la información disponible.
-- Adopción mínima: 2 descargas y 0 likes, sin validación por parte de la comunidad.
+- Publicacion no oficial: el autor declara explicitamente que Accio-Lab no ha validado este artefacto; para produccion conviene evaluar tambien el checkpoint oficial.
+- Las metricas de rendimiento proceden de registros de uso real en una sola maquina, con una sola peticion concurrente y sin linea base con MTP desactivado; no deben extrapolarse como garantia de rendimiento.
+- El comportamiento de muestreo de la cabecera MTP no esta validado ni por el autor de esta cuantizacion ni por el proyecto original. Las sesiones medidas usaron temperatura 0,7, mientras que el proyecto original recomienda temperatura 1,0, top_p 0,95, top_k 20 y presence_penalty 1,5 con thinking activado.
+- El runtime puede aparcar MTP a mitad de peticion si la aceptacion se degrada (visible como `finish=parked`); es comportamiento normal, pero implica variabilidad de latencia.
+- La cuantizacion a 6 bits puede degradar tareas sensibles a precision numerica; no se aportan evaluaciones de calidad frente al BF16 original.
+- Idiomas soportados no disponibles: no se puede garantizar un rendimiento homogeneo fuera de los idiomas cubiertos por el modelo base.
+- Riesgo de alucinacion y sesgos: no se documentan analisis especificos en la informacion disponible; aplican los riesgos habituales de un modelo generativo de este tamano.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero al ser una modificacion conviene conservar los avisos de licencia y atribucion del modelo base.
+- Dependencia de plataforma: solo Apple Silicon con oMLX; no es portable a CUDA sin recurrir a otros artefactos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/qinghuali/Occamy-1.0-oQ6e-mtp
+- Repositorio de esta cuantizacion: https://huggingface.co/qinghuali/Occamy-1.0-oQ6e-mtp
 - Modelo base oficial: https://huggingface.co/Accio-Lab/occamy-1.0
 - Cabecera MTP oficial: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
-- Referencia del paper citada en las etiquetas: https://arxiv.org/abs/2609.11977
 - Runtime oMLX: https://omlx.ai
+- Paper referenciado en los tags (arXiv:2609.11977): https://arxiv.org/abs/2609.11977
+- Apoyo al autor: https://ko-fi.com/qinghuali

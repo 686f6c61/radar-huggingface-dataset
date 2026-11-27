@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "rausch/mlo-moe-routing",
+  "slug": "rausch-mlo-moe-routing",
+  "author": "rausch",
+  "url": "https://huggingface.co/rausch/mlo-moe-routing",
+  "created_at": "2026-11-26T23:35:23.000Z",
+  "updated_at": "2026-11-27T00:09:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mixture-of-experts",
+    "language-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104791072131,
+  "storage_human": "104.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue chez Rausch - Rausch systèmes d'inspection télévisée",
+      "url": "https://www.rausch.international/fr",
+      "snippet": "Les entreprises agissant sous l'égide de RAUSCH sont les leaders dans le développement et la production de produits innovants : …Read more"
+    },
+    {
+      "title": "RAUSCH - Naturel. Efficacité. Bien-être.",
+      "url": "https://rausch.ch/fr",
+      "snippet": "Avec sa grande variété de produits pour le cuir chevelu, les cheveux et le corps, RAUSCH propose des soins sur mesure à toutes …Read more"
+    },
+    {
+      "title": "Emballages alimentaires RAUSCH - plus de 3 000 produits",
+      "url": "https://www.rausch-packaging.com/ch-fr/",
+      "snippet": "Chez RAUSCH, nous sommes certifiés PEFC et FSC®. Cette certification atteste que les produits en bois, tels que le carton ondulé …Read more"
+    },
+    {
+      "title": "Rausch — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rausch",
+      "snippet": "Rausch Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. Pour les articles ayant des titres …Read more"
+    },
+    {
+      "title": "Rausch | Buy single-origin chocolate and pralines online",
+      "url": "https://rausch.de/en",
+      "snippet": "Chocolate made from pure fine flavour cocoa with up to 400 aromas. Discover handmade pralines and gifts directly at Rausch. Direct …Read more"
+    }
+  ]
+}

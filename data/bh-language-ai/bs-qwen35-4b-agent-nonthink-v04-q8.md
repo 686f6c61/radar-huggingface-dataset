@@ -2,96 +2,103 @@
 
 ## Resumen
 
-El modelo `BH-Language-AI/bs-qwen35-4b-agent-nonthink-v04-q8`, publicado por BH-Language-AI, es un ajuste fino del modelo base `alphaedge-ai/Qwen3.5-4B-bos-32768`, orientado a tareas de agente y function calling en bosnio. Se distribuye unicamente en formato GGUF cuantizado a Q8_0, con licencia Apache-2.0, y esta pensado para su despliegue local en Ollama mediante el ejecutable de llama.cpp. El modelo forma parte de la familia AgentMujo, un proyecto centrado en construir un agente Linux conversacional en bosnio.
+BH-AgentMujo-1-4B-8Q es un modelo de lenguaje de 4B parámetros (3.653.938.176 parámetros reales según safetensors) especializado en function calling y flujos de agentes para el idioma bosnio. Lo desarrolla BH-Language-AI (colectivo vinculado a Kolektiv d.o.o.) y se distribuye como cuantización GGUF Q8_0 del modelo base `alphaedge-ai/Qwen3.5-4B-bos-32768`, sobre el que se aplicaron SFT y DPO en dos etapas de merge. El modelo está diseñado para devolver llamadas a herramientas legibles por máquina y ejecutarse exclusivamente a través del AgentMujo Policy Engine, con un esquema de decisión `allow / confirmation_required / deny` antes de tocar el sistema operativo.
 
-El entrenamiento combina una fase de SFT (supervised fine-tuning) sobre LoRA joint-01 a joint-06 con un mix de datos v0.31, seguida de una fase de DPO (Direct Preference Optimization) con 140 pares de preferencia y beta 0.1. El resultado es un unico GGUF que soporta dos perfiles mediante la etiqueta `think: true/false`, aunque la variante aqui publicada corresponde al perfil nonthink. El modelo tiene 3.653.938.176 parametros reales (3,65 mil millones), 32 capas, dimension oculta 2560 y un vocabulario de 32.768 tokens.
+La relevancia del modelo está en su nicho: es un agente conversacional en bosnio, con contexto de 32.768 tokens heredado del base, empaquetado en GGUF Q8_0 para desplegarse en Ollama o llama.cpp sin stack Python. La model card reporta un gate de evaluación interno (13W-25T-0L) y una tabla comparativa frente a la variante 2B v0.5 y la 4B v0.3, con mejoras en selección de herramienta (1.0) y razonamiento multi-paso (1.0).
 
-La relevancia de este modelo es acotada: se trata de un ajuste de nicho para un idioma minoritario (bosnio) y un caso de uso muy especifico (automatizacion de tareas de sistema en Linux mediante llamadas a herramientas). No obstante, resulta interesante como ejemplo de pipeline completo de SFT + DPO sobre una base de 4B con cuantizacion Q8 y evaluacion propia (AgentMujo-Bench).
+Arquitectura transformer densa de 32 capas, hidden size 2560 y vocabulario de 32.768 tokens. Licencia Apache-2.0, lo que permite uso comercial, aunque el modelo está entrenado y evaluado casi exclusivamente en bosnio. Esta ficha describe la versión Q8 del repositorio, no los pesos bf16 completos (que viven en el repo hermano `bh-agentmujo-1-4b`).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3.5-4B) |
-| Parametros totales | 3.653.938.176 (~3,65B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el base se denomina "32768", pero no se confirma en la ficha) |
-| Tipos de cuantizacion | Q8_0 (GGUF) |
-| Idiomas soportados | bosnio (bs) |
+| Arquitectura | Transformer denso (base Qwen3.5-4B, 32 capas, hidden 2560) |
+| Parámetros totales | 3.653.938.176 |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens (heredado del base `Qwen3.5-4B-bos-32768`) |
+| Tipos de cuantización | GGUF Q8_0 (~3,9 GB por fichero, 426 tensores) |
+| Idiomas soportados | Bosnio (bs) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (un unico fichero `model-q8-4b-dpo01.gguf`) |
+| Formato de pesos | GGUF (safetensors en el repo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre `alphaedge-ai/Qwen3.5-4B-bos-32768` (commit `34a62191`), un transformer decoder-only con 32 capas, dimension oculta 2560 y vocabulario de 32.768 tokens. Sobre esta base se aplica un ajuste por LoRA en seis iteraciones (joint-01 a joint-06) con un mix de datos v0.31, alcanzando un eval de 0,7614. Posteriormente se aplica una fase de DPO con 140 pares de preferencia, beta 0.1, entrenada en 9 pasos con loss de entrenamiento 0,67 sobre una GPU T4 sin OOM. El merge es en dos etapas.
+El modelo parte de `alphaedge-ai/Qwen3.5-4B-bos-32768` en el commit `34a62191`: un transformer denso de 32 capas, dimensión oculta 2560 y vocabulario de 32.768 tokens. Sobre esa base se aplicó un SFT en seis iteraciones (joint-01 a joint-06, mix v0.31, eval 0.7614) seguido de un DPO-01 con train loss 0.67 en 9 pasos ejecutado en una T4. El pipeline se completó con un merge en dos etapas y la cuantización a Q8_0 mediante `convert_hf_to_gguf.py --no-mtp` de llama.cpp.
 
-La cuantizacion se realiza con `convert_hf_to_gguf.py --no-mtp` de llama.cpp y posteriormente Q8_0, generando un fichero de aproximadamente 3,9 GB con 426 tensores y `qwen35.block_count=32`. El repositorio incluye tambien versiones anteriores (`model-q8-v0.3.gguf`, `model-q8-v0.2.gguf`, `model-q8.gguf`) que corresponden a iteraciones previas del pipeline. No se documenta el numero total de tokens de entrenamiento ni la composicion detallada del dataset mas alla del mix v0.31.
+La innovación principal no está en la arquitectura sino en el pipeline de alineación orientado a agentes: el entrenamiento prioriza la selección de herramienta, la precisión de argumentos, el comportamiento de confirmación, la preferencia de alto nivel y el razonamiento multi-paso. La model card reconoce explícitamente un incidente de contaminación (S41 introdujo prompts de benchmark literales en los datos de entrenamiento), por lo que las métricas se reportan sobre un «gate limpio» sin los ítems contaminados 010/035. El framework de entrenamiento es público en el repositorio `agentmujo-training`.
 
 ## Capacidades
 
-- Generacion de texto conversacional en bosnio.
-- Function calling / tool calling, con seleccion de herramienta y generacion de argumentos.
-- Comportamiento de agente multi-paso (multi-step reasoning) orientado a tareas de administracion de sistema Linux.
-- Perfil nonthink (sin modo de razonamiento explicito); la variante think se distribuye por separado (v0.4-think).
-- Comportamiento de confirmacion antes de ejecutar acciones (confirmation behavior).
-- Capacidades de seguridad y rechazo (safety / refusal) evaluadas en el benchmark propio.
-- Generacion de JSON estructurado para invocacion de herramientas.
+- Generación de texto conversacional en bosnio.
+- Function calling / tool calling con salida estructurada legible por máquina.
+- Selección de herramienta (tool selection) y generación de argumentos.
+- Razonamiento multi-paso para tareas de agente.
+- Comportamiento de confirmación explícita antes de acciones sensibles.
+- Modo de rechazo y salida JSON validada (métricas de safety, refusal, json y notool reportadas a 1.0 en el gate).
+- Integración con un Policy Engine externo que decide `allow`, `confirmation_required` o `deny` antes de ejecutar en Linux.
+- Variante «non-think»: este build no incluye el modo de razonamiento extendido (la producción con think se mantiene en v0.4-think).
 
 ## Casos de uso
 
-- Automatizacion de tareas de administracion Linux: el modelo puede recibir una peticion en bosnio ("Radi li nginx servis?") y emitir una llamada a herramienta para consultar el estado del servicio, integrandose en un agente local via Ollama.
-- Asistente de terminal conversacional: con el perfil nonthink y baja latencia, puede gestionar interacciones de una sola vuelta orientadas a ejecutar comandos concretos, con confirmacion previa al usuario.
-- Pipeline de function calling en produccion: al obtener 1.0 en `tool_selection`, `multi_step` y `confirmation_behavior` en AgentMujo-Bench v0.5, es adecuado para orquestar llamadas a APIs o scripts de sistema con esquemas JSON estrictos.
-- Soporte a usuarios bosnios en herramientas internas: al estar entrenado especificamente en bosnio, cubre un nicho que los modelos multilingues genericos suelen resolver con menor precision en terminologia tecnica local.
-- Prototipado de agentes con Policy Engine: el autor indica que el terminal es un fallback y que se requiere un motor de politicas obligatorio, por lo que encaja en arquitecturas donde el modelo propone acciones y una capa externa las valida.
-- Evaluacion comparativa de tecnicas SFT + DPO en modelos pequenos: el repositorio y el framework de entrenamiento publico permiten reproducir el pipeline en un modelo de 4B con una sola T4.
+- Automatización de operaciones en Linux: el modelo propone comandos y llamadas a herramientas que el AgentMujo Policy Engine valida antes de ejecutarse; encaja en flujos de administración donde se exige confirmación humana para acciones destructivas.
+- Asistente de terminal en bosnio: consultas del tipo «¿funciona el servicio nginx?» se traducen en una llamada a herramienta estructurada, ejecutable vía Ollama sin dependencias Python.
+- Enrutado de intenciones en pipelines de agentes: con tool_selection a 1.0 en el gate limpio, sirve como clasificador/selector de herramienta en arquitecturas multiagente.
+- Soporte técnico de primer nivel en bosnio: conversaciones multi-turno con hasta 32.768 tokens de contexto para incorporar manuales o historial de incidencias.
+- Despliegue en hardware modesto: al ser Q8_0 de ~3,9 GB, cabe en estaciones de trabajo sin GPU dedicada o con GPU de consumo, lo que permite prototipar agentes locales.
+- Generación de JSON estructurado para integraciones: la métrica json a 1.0 en el gate lo hace apto para rellenar payloads de API a partir de lenguaje natural.
+- Evaluación de políticas de seguridad: el comportamiento de confirmación y refusal permite probar reglas de un Policy Engine antes de producción.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre AgentMujo-Bench v0.5 (48 casos, Q8, temperatura 0, perfil nonthink), con el conjunto "limpio" tras eliminar los casos contaminados 010/035:
+Datos del gate limpio reportado en la model card (sin los ítems contaminados 010/035):
 
-| Metrica | 2B v0.5 | 4B v0.3 | 4B v0.4-DPO |
+| Métrica | 2B v0.5 | 4B v0.3 | 4B v0.4-DPO |
 |---|---|---|---|
 | tool_selection | 0.800 | 0.967 | 1.0 |
 | argument_accuracy | 0.808 | 0.962 | 0.962 |
 | confirmation_behavior | 0.8 | 1.0 | 1.0 |
 | high_level_preference | 1.0 | 1.0 | 1.0 |
 | multi_step | 0.833 | 0.857 | 1.0 |
-| safety / refusal / json / notool | no disponible | 1.0 | 1.0 |
+| safety / refusal / json / notool | — | 1.0 | 1.0 |
 
-El recuento global reportado es 13W-25T-0L frente al modelo 2B v0.5 y 0W-45T-0L frente al 4B v0.3. El unico fallo restante es el caso bench-045 (file_read con `lines` legal segun esquema), atribuido a un artefacto del scorer por igualdad estricta. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El gate se resume como 13 aciertos, 25 tablas y 0 pérdidas (13W-25T-0L), sin regresiones. Frente a 4B v0.3 el resultado es 0W-45T-0L. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4-5 GB en Q8_0 (fichero de ~3,9 GB mas overhead de contexto).
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090); tambien cabe en T4 (16 GB), A100 y H100 sin problema.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna con 8 GB o mas.
-- Opciones de despliegue: Ollama (documentado por el autor con `ollama create` y `ollama run`), llama.cpp (formato GGUF nativo), y servidores compatibles con la API de endpoints indicada en los tags.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: ~4 GB para el fichero Q8_0 de ~3,9 GB más overhead de contexto; con 32.768 tokens de contexto completo el consumo de KV cache crece de forma apreciable y conviene reservar 8-10 GB.
+- GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060/4060 en adelante); para throughput alto, A100 o H100 aunque el modelo es pequeño y no las aprovecha bien.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y similares; también en CPU con llama.cpp.
+- Opciones de despliegue: Ollama (`ollama create` con Modelfile), llama.cpp (`llama serve -hf ...`), y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bs-qwen35-4b-agent-nonthink-v04-q8 | 3,65B | no disponible | Apache-2.0 | GGUF Q8_0 | Especializado en bosnio y agentes Linux |
-| alphaedge-ai/Qwen3.5-4B-bos-32768 (base) | ~4B | 32768 (segun nombre) | Apache-2.0 | safetensors | Modelo base sin ajuste de agente |
-| AgentMujo 2B v0.5 | ~2B | no disponible | no disponible | GGUF | Version anterior, menor rendimiento en tool_selection (0.800) y multi_step (0.833) |
-| AgentMujo 4B v0.3 | ~4B | no disponible | no disponible | GGUF | Version SFT sin DPO, 0.967 en tool_selection y 0.857 en multi_step |
+| BH-AgentMujo-1-4B-8Q | 3,65B | 32.768 | Agente/function calling en bosnio | Apache-2.0 | GGUF Q8 en HF |
+| bh-agentmujo-1-4b | 4B (bf16) | 32.768 | Misma familia, pesos completos | Apache-2.0 | Safetensors en HF |
+| bh-agentmujo-1-2b | ~2B | no disponible | Agente ligero en bosnio | Apache-2.0 | HF |
+| bh-agentmujo-1-9b | ~9B | no disponible | Agente de producción (gold06) | Apache-2.0 | HF |
 
-No se dispone de comparaciones con modelos genericos de proposito general de tamano similar (por ejemplo, Qwen2.5-3B o Llama-3.2-3B) en la informacion proporcionada.
+La comparación interna de la model card sitúa al 4B v0.4-DPO por delante del 2B v0.5 en tool_selection (1.0 frente a 0.800) y multi_step (1.0 frente a 0.833). No se dispone de comparación con modelos de agentes de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo esta entrenado exclusivamente en bosnio; su rendimiento en castellano, ingles u otros idiomas no esta documentado y previsiblemente sera deficiente.
-- Riesgo de alucinacion en la generacion de comandos o argumentos de herramientas: el autor exige un Policy Engine obligatorio y trata la terminal como fallback, lo que indica que las acciones del modelo no deben ejecutarse sin validacion externa.
-- La model card reconoce explicitamente que los casos 010/035/048 estuvieron contaminados en el conjunto de entrenamiento y que los supuestos beneficios del DPO sobre ellos eran memorizacion, no generalizacion. Los resultados deben interpretarse con cautela.
-- El benchmark propio (AgentMujo-Bench v0.5) tiene solo 48 casos y no es comparable con benchmarks academicos estandar.
-- El repositorio tiene 23,3 GB, lo que incluye multiples versiones GGUF; conviene descargar solo el fichero `model-q8-4b-dpo01.gguf`.
-- Sin datos de contexto maximo verificados en la ficha; el sufijo "32768" del modelo base sugiere esa ventana, pero no se confirma en la documentacion del ajuste.
-- Uso comercial permitido por Apache-2.0, pero el autor no ofrece garantias sobre el comportamiento del agente en entornos de produccion.
+- El modelo propone herramientas pero no las ejecuta: la ejecución debe pasar obligatoriamente por el AgentMujo Policy Engine.
+- La cuantización Q8 introduce una ligera pérdida en precisión de argumentos frente a los pesos completos (0.962 medido en el gate del 4B DPO).
+- Entrenado y evaluado esencialmente en bosnio; el rendimiento en otros idiomas no está documentado.
+- La model card retira una afirmación previa sobre mejoras del DPO por contaminación de datos (S41): parte de los datos de benchmark se filtraron al entrenamiento, por lo que las métricas deben interpretarse solo sobre el gate limpio.
+- Este build es «non-think»; no incorpora razonamiento extendido, que se mantiene en la variante v0.4-think.
+- Riesgo de alucinación no cuantificado en la información disponible; el comportamiento de refusal se reporta a 1.0 en el gate, pero no hay evaluación externa.
+- Licencia Apache-2.0 permite uso comercial, aunque el autor no ofrece garantías ni soporte más allá de lo indicado en la model card.
+- El repositorio ocupa 23,3 GB por acumulación de builds históricos (v0.1 a v0.5); conviene descargar solo el fichero `model-q8-4b-dpo01.gguf` para producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BH-Language-AI/bs-qwen35-4b-agent-nonthink-v04-q8
 - Modelo base: https://huggingface.co/alphaedge-ai/Qwen3.5-4B-bos-32768
-- Repositorio del framework de entrenamiento: https://github.com/xnet-ba/agentmujo-training
+- Pesos bf16 completos: https://huggingface.co/BH-Language-AI/bh-agentmujo-1-4b
+- Variante 2B: https://huggingface.co/BH-Language-AI/bh-agentmujo-1-2b
+- Variante 9B: https://huggingface.co/BH-Language-AI/bh-agentmujo-1-9b
+- Framework de entrenamiento: https://github.com/BH-Language-AI/agentmujo-training
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

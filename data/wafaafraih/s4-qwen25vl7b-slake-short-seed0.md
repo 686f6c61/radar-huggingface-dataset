@@ -1,90 +1,78 @@
 # WafaaFraih/s4-qwen25vl7b-slake-short-seed0
 
 ## Resumen
+WafaaFraih/s4-qwen25vl7b-slake-short-seed0 es un adaptador LoRA publicado en Hugging Face por el usuario WafaaFraih, entrenado sobre el modelo base unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit. No se trata de un modelo completo, sino de pesos delta (adaptador PEFT) que deben cargarse junto al modelo base cuantizado en 4 bits para su uso. El entrenamiento se realizo con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, segun las etiquetas del repositorio.
 
-`s4-qwen25vl7b-slake-short-seed0` es un ajuste fino (fine-tuning) del modelo multimodal Qwen2.5-VL-7B-Instruct, publicado por el usuario WafaaFraih en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit`) y se ha entrenado mediante GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en DeepSeekMath para mejorar el razonamiento matemático en modelos de lenguaje abiertos.
+El nombre del repositorio sugiere que el ajuste esta orientado a tareas sobre el conjunto de datos SLAKE (dataset medico de imagenes y preguntas en ingles y chino) y con configuracion "short" y semilla 0, aunque la model card no documenta estos detalles. El modelo hereda las capacidades multimodales (vision y lenguaje) de Qwen2.5-VL-7B-Instruct, un modelo de 7 mil millones de parametros desarrollado por Alibaba Qwen.
 
-El nombre del repositorio sugiere un entrenamiento orientado al conjunto de datos SLAKE (un benchmark de conocimiento médico visual y lingüístico) en su variante "short" y con semilla 0, aunque la model card no documenta explícitamente el dataset, los hiperparámetros ni los objetivos del entrenamiento. El modelo hereda la arquitectura y capacidades del Qwen2.5-VL-7B original, incluyendo procesamiento de imagen y texto, pero no se han publicado detalles sobre el procedimiento de entrenamiento ni evaluaciones de rendimiento.
-
-La relevancia de esta ficha es limitada: se trata de un experimento de ajuste fino con GRPO sobre un modelo multimodal de 7 000 millones de parámetros, sin documentación técnica ni benchmarks publicados. Es útil como referencia para quienes investigan técnicas de RL aplicadas a modelos visión-lenguaje, pero no constituye un artefacto listo para producción.
+La relevancia de esta ficha es limitada: se trata de un experimento de investigacion con documentacion practicamente inexistente (la model card es una plantilla sin rellenar), 199 descargas y cero likes. Es util como referencia para quienes quieran reproducir o inspeccionar un ajuste GRPO+LoRA sobre Qwen2.5-VL, pero no como modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (hereda de Qwen2.5-VL-7B-Instruct); detalles exactos no disponibles |
-| Parametros totales | 7 000 millones (heredados del modelo base Qwen2.5-VL-7B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-VL-7B soporta contexto largo, pero no se confirma en esta ficha) |
-| Tipos de cuantizacion | El modelo base de partida esta cuantizado en 4 bits (bnb-4bit); el repositorio contiene pesos en safetensors de 0.3 GB, lo que sugiere un adaptador o pesos parciales |
-| Idiomas soportados | no disponibles |
-| Licencia | no disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors |
-| Libreria | transformers |
-| Framework de entrenamiento | TRL 1.15.0, Transformers 5.17.0, PyTorch 2.11.0+cu130, Datasets 4.8.5, Tokenizers 0.23.3 |
-| Metodo de entrenamiento | GRPO (Group Relative Policy Optimization) |
-| Fecha de creacion | 2026-11-13 |
+| Arquitectura | Adaptador LoRA (PEFT) sobre transformer multimodal Qwen2.5-VL (vision-lenguaje) |
+| Parametros totales | No disponible (el adaptador ocupa 0.3 GB; el modelo base Qwen2.5-VL-7B tiene 7B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-VL-7B) |
+| Tipos de cuantizacion | Modelo base en bnb-4bit; el adaptador se distribuye en safetensors |
+| Idiomas soportados | No disponible |
+| Licencia | No disponible |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA); el modelo base en formato Unsloth cuantizado 4 bits |
 
 ## Arquitectura y entrenamiento
+El adaptador se aplica sobre Qwen2.5-VL-7B-Instruct, un transformer decoder-only multimodal que procesa imagenes y texto. El repositorio base utilizado es la version de Unsloth cuantizada en 4 bits (bnb-4bit), lo que permite el ajuste con requisitos de VRAM reducidos. El adaptador en si es un conjunto de matrices LoRA de bajo rango, segun la libreria PEFT 0.21.2 indicada en la model card.
 
-El modelo hereda la arquitectura de Qwen2.5-VL-7B-Instruct, un transformer multimodal que combina un codificador visual con un decodificador de lenguaje de 7 000 millones de parámetros. No se dispone de detalles específicos sobre la arquitectura interna en la información proporcionada, más allá de que se trata de un modelo visión-lenguaje capaz de procesar imágenes y texto.
-
-El entrenamiento se realizó mediante GRPO, una variante de aprendizaje por refuerzo sin modelo crítico (critic-free) que estima la línea base a partir de la media de recompensas de un grupo de respuestas muestreadas para la misma pregunta. La model card no especifica el número de tokens de entrenamiento, la composición del dataset, ni los hiperparámetros utilizados. El nombre del repositorio sugiere el uso del dataset SLAKE (conocimiento médico visual) en configuración "short", pero esto no está confirmado en la documentación. El tamaño del repositorio (0.3 GB) es coherente con un adaptador LoRA o con pesos parciales derivados del modelo base cuantizado en 4 bits, no con un modelo completo de 7B en precisión completa.
+El entrenamiento emplea GRPO (Group Relative Policy Optimization), un algoritmo de RL sin modelo critico que genera multiples respuestas por prompt y normaliza las recompensas dentro del grupo. Las etiquetas indican el uso de TRL, Transformers y Unsloth. No se documentan hiperparametros, numero de pasos, composicion del dataset ni proceso de recompensa. El nombre del repositorio apunta a SLAKE (dataset de VQA medica) con configuracion "short" y semilla 0, pero esta informacion no esta confirmada en la model card, que permanece como plantilla sin rellenar.
 
 ## Capacidades
-
-- Generación de texto y razonamiento multimodal: al heredar Qwen2.5-VL-7B, se espera capacidad de responder preguntas sobre imágenes y texto, aunque no se han validado en esta ficha.
-- Procesamiento de imágenes: el modelo base es visión-lenguaje, por lo que se asume entrada de imágenes junto a texto.
-- Razonamiento matemático y de conocimiento: el uso de GRPO sugiere un entrenamiento orientado a mejorar el razonamiento, pero no hay evidencia publicada de su eficacia.
-- Tool calling / function calling: no confirmado en la información disponible (el modelo base Qwen2.5-VL lo soporta, pero no se verifica en este ajuste).
-- Capacidades de agente y razonamiento multi-paso: no confirmadas.
-- Capacidades multilingües: no disponibles.
-- Modo thinking: no disponible.
+- Generacion de texto y respuesta a preguntas, heredadas del modelo base Qwen2.5-VL-7B-Instruct.
+- Procesamiento de imagenes combinadas con texto (vision-lenguaje), segun el modelo base.
+- Razonamiento multimodal potencialmente orientado a dominio medico por el dataset SLAKE sugerido en el nombre.
+- Soporte de conversacion multi-turno (pipeline text-generation, tag conversational).
+- Capacidades de tool calling y agentes: no documentadas para este adaptador; el modelo base Qwen2.5-VL las soporta, pero no se confirma que el ajuste las preserve.
+- Capacidades multilingues: no disponibles (el modelo base soporta multiples idiomas, pero el adaptador no lo documenta).
 
 ## Casos de uso
-
-- Investigación en RL aplicado a modelos visión-lenguaje: el modelo sirve como ejemplo reproducible (semilla 0) de ajuste con GRPO sobre un VLM de 7B, útil para estudiar la estabilidad del entrenamiento y la variabilidad entre semillas.
-- Experimentos de razonamiento sobre conocimiento médico visual: si el dataset empleado es SLAKE, podría usarse para evaluar la capacidad del modelo de responder preguntas sobre imágenes médicas, aunque sin benchmarks publicados no se puede garantizar su rendimiento.
-- Evaluación comparativa de técnicas de alineación: permite comparar GRPO frente a SFT o DPO en modelos multimodales de tamaño medio.
-- Prototipado de asistentes visuales en entornos de investigación: con 7B parámetros y cuantización 4 bits, puede desplegarse en GPUs de consumo para pruebas exploratorias, no para producción.
-- Docencia y formación: útil para demostrar el flujo completo de entrenamiento con TRL y Unsloth sobre un modelo multimodal.
-- Reproducibilidad de experimentos: al estar asociado a una semilla concreta (seed0), facilita la replicación de resultados en estudios de RL.
+- Investigacion en RL para vision-lenguaje: usar el adaptador como punto de partida para reproducir experimentos GRPO sobre Qwen2.5-VL con el dataset SLAKE y comparar semillas.
+- Analisis de ajuste fino con LoRA: inspeccionar los pesos delta para estudiar que capas modifica un entrenamiento GRPO de corta duracion sobre un modelo cuantizado en 4 bits.
+- Experimentos de VQA medica: evaluar si el ajuste mejora la respuesta a preguntas sobre imagenes radiologicas del dataset SLAKE frente al modelo base, siempre con supervision experta.
+- Docencia y formacion: ejemplo practico de pipeline Unsloth + TRL + PEFT para entrenar adaptadores multimodales con recursos limitados.
+- Pruebas de robustez y alineacion: medir como un ajuste RL de corta duracion altera el comportamiento del modelo base en tareas fuera de dominio.
+- Base para ajustes posteriores: cargar el adaptador como inicializacion y continuar el entrenamiento con datos propios o con otras tecnicas (DPO, SFT).
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: al partir de un modelo de 7B cuantizado en 4 bits, se estiman aproximadamente 4-6 GB de VRAM para los pesos, más overhead de activaciones y contexto (no confirmado oficialmente).
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100 para inferencia en precisión completa o mayor contexto; GPUs con 8-12 GB podrían ejecutar la versión 4-bit.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4070, RTX 4090, siempre que se use la cuantización 4-bit del modelo base.
-- Opciones de despliegue: transformers (pipeline de generación), vLLM y TGI si se dispone de pesos completos compatibles; llama.cpp/Ollama no aplican directamente a un VLM multimodal sin conversión adicional.
+- El adaptador ocupa 0.3 GB, pero requiere cargar el modelo base Qwen2.5-VL-7B, que en 4 bits necesita aproximadamente 5-6 GB de VRAM para los pesos, mas memoria para el procesador de vision y el contexto.
+- GPU recomendadas: A100 40/80 GB o H100 para entrenamiento o inferencia con contexto largo; RTX 4090 (24 GB) o RTX 3090 para inferencia en 4 bits con margen.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizacion 4 bits; en GPUs de 8-12 GB puede requerir cuantizaciones mas agresivas o descarga parcial de capas.
+- Despliegue: Transformers + PEFT (carga del adaptador sobre el base), Unsloth para carga rapida, vLLM si se fusiona el adaptador con el base; llama.cpp/Ollama solo si se convierte a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s4-qwen25vl7b-slake-short-seed0 | 7B | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste GRPO sobre Qwen2.5-VL-7B, sin benchmarks |
-| Qwen2.5-VL-7B-Instruct | 7B | contexto largo (segun documentacion oficial de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face, muy extendido | Modelo base, con benchmarks publicados por el autor |
-| LLaVA-1.6-7B | 7B | 4K-8K (segun variante) | Apache 2.0 / Llama (segun variante) | Hugging Face | VLM comparable en tamaño, con evaluaciones publicadas |
-| InternVL2-8B | 8B | 8K (segun documentacion) | MIT (segun variante) | Hugging Face | Alternativa multimodal de tamaño similar |
+| WafaaFraih/s4-qwen25vl7b-slake-short-seed0 | 7B (base) + adaptador LoRA | No disponible | Adaptador GRPO/LoRA multimodal | No disponible | Hugging Face |
+| Qwen2.5-VL-7B-Instruct | 7B | No disponible en esta ficha | Modelo multimodal completo | No disponible en esta ficha | Hugging Face |
+| Otros adaptadores SLAKE sobre Qwen2.5-VL | 7B (base) + adaptador | No disponible | LoRA/GRPO | No disponible | No disponible |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de documentación técnica: no se especifican dataset, hiperparámetros, número de pasos ni función de recompensa, lo que impide evaluar la calidad del ajuste.
-- Sin benchmarks publicados: no hay evidencia de que el modelo mejore al base en ninguna tarea.
-- Licencia no especificada: la model card indica "licence: license" sin concreción, lo que impide determinar si el uso comercial está permitido. Además, la licencia del modelo base Qwen2.5-VL-7B debe respetarse.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin evaluación específica no se puede cuantificar.
-- Sesgos: no documentados; se heredan los del modelo base y los del dataset de entrenamiento (posiblemente SLAKE, con sesgos propios del dominio médico).
-- Contexto e idiomas: no confirmados; el modelo base soporta múltiples idiomas, pero este ajuste podría haber degradado capacidades no evaluadas.
-- Formato de pesos de 0.3 GB: sugiere un adaptador o pesos parciales; es necesario verificar si requiere cargar el modelo base para funcionar correctamente.
-- No apto para producción sin validación previa: 0 descargas y 0 likes indican que no ha sido probado por la comunidad.
+- La model card es una plantilla sin rellenar: no hay informacion sobre datos, hiperparametros, licencia ni uso previsto.
+- Licencia no disponible: no se puede garantizar el uso comercial; hay que verificar la licencia del modelo base y del adaptador por separado.
+- Al ser un adaptador entrenado con GRPO sobre un dataset especifico (probablemente SLAKE), puede degradar el rendimiento general del modelo base fuera de ese dominio.
+- Riesgo de alucinacion inherente al modelo base, potencialmente acentuado por un ajuste RL de corta duracion.
+- En dominio medico, cualquier salida debe ser revisada por profesionales; el modelo no es un dispositivo medico.
+- No se documentan sesgos, idiomas soportados ni limitaciones de contexto.
+- El adaptador requiere el modelo base exacto (unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit) para cargarse correctamente.
+- Cero likes y 199 descargas: sin validacion comunitaria ni evidencia de calidad.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/WafaaFraih/s4-qwen25vl7b-slake-short-seed0
+- Hugging Face: https://huggingface.co/WafaaFraih/s4-qwen25vl7b-slake-short-seed0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit
-- Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
-- Repositorio TRL: https://github.com/huggingface/trl
+- Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ML: https://mlco2.github.io/impact#compute

@@ -2,91 +2,95 @@
 
 ## Resumen
 
-Zenith VN 0.5B es un modelo de lenguaje causal de tipo conversacional desarrollado por el usuario de Hugging Face trangthanhdai (bajo el nombre de proyecto udVietNamspeedrace). Se trata de un ajuste fino (fine-tuning) mediante LoRA del modelo base Qwen1.5-0.5B-Chat, orientado a proporcionar un asistente ligero para usuarios vietnamitas. El modelo hereda la arquitectura Qwen1 del modelo original y cuenta con aproximadamente 464 millones de parámetros reales según los pesos en safetensors.
+Zenith VN 0.5B es un modelo de lenguaje causal de tipo conversacional desarrollado por el usuario trangthanhdai bajo el proyecto udVietNamspeedrace. Se trata de un fine-tuning supervisado del modelo Qwen1.5-0.5B-Chat (arquitectura Qwen2) orientado al idioma vietnamita, con el ingles como idioma secundario. El modelo se presenta como un asistente experimental para conversacion general, conocimiento basico y asistencia en temas de tecnologia y programacion, y su proposito declarado es servir como base para futuros desarrollos de IA en vietnamita.
 
-El objetivo declarado del proyecto es ofrecer una base para el desarrollo de IA conversacional en vietnamita, cubriendo comprensión y respuesta en conversaciones, conocimiento general, asistencia en temas de tecnología y programación, y autoidentificación como "Zenith VN". Es un proyecto experimental, con un volumen de descargas muy bajo (73 descargas y 1 like en el momento de la consulta) y sin resultados de benchmarks publicados.
+Con 463.987.712 parametros reales (aproximadamente 0,5 mil millones), el modelo se posiciona en la gama ultraligera, lo que permite su ejecucion en hardware modesto. El entrenamiento se realizo mediante SFT con adaptadores LoRA sobre una cuantizacion de 4 bits (QLoRA), y los pesos se exportan en formato safetensors. El modelo registra tipos personalizados (`zenith_vn`, `ZenithVNConfig`, `ZenithVNForCausalLM`) que requieren un bloque de registro previo en Transformers antes de cargarlo con las clases `Auto*`.
 
-Por su tamaño reducido y su naturaleza derivada de Qwen1.5-0.5B-Chat, el modelo es relevante principalmente como ejemplo de adaptación lingüística de bajo coste y como base para experimentación, no como un modelo de producción de alto rendimiento. La licencia no está declarada explícitamente en la ficha, lo que constituye una limitación importante para su uso comercial.
+La relevancia de este modelo es limitada pero concreta: cubre el nicho de asistentes conversacionales en vietnamita de muy bajo coste computacional, un idioma con relativamente poca representacion en modelos abiertos de gran tamano. No obstante, se trata de un proyecto experimental sin benchmarks publicados ni licencia definida, lo que condiciona seriamente su uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen1 (transformer causal decoder-only), con posible código custom (`configuration_zenith.py`, `modeling_zenith.py`) |
-| Parametros totales | 463.987.712 (aprox. 0,5 mil millones) |
+| Arquitectura | Transformer causal (Qwen2), tipo `zenith_vn` |
+| Parametros totales | 463.987.712 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen1.5-0.5B-Chat; no confirmada en la ficha) |
-| Tipos de cuantizacion | Entrenamiento en 4-bit QLoRA; pesos exportados en safetensors (FP16/BF16 presumiblemente); no se listan cuantizaciones GGUF/AWQ/GPTQ |
-| Idiomas soportados | vietnamita (vi), inglés (en) |
-| Licencia | no disponible (derivada de Qwen1.5-0.5B-Chat; debe respetarse la licencia original) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Entrenamiento en 4-bit QLoRA; pesos exportados en safetensors (precision de inferencia no especificada) |
+| Idiomas soportados | vietnamita (principal), ingles |
+| Licencia | no disponible (la model card remite a verificar derechos de los componentes) |
 | Formato de pesos | safetensors |
+| Modelo base | Qwen/Qwen1.5-0.5B-Chat |
+| Metodo de entrenamiento | Supervised Fine-Tuning (SFT) con LoRA |
+| Tamano del repositorio | 0,9 GB |
+| Descargas | 523 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen1 de Qwen1.5-0.5B-Chat, un transformer causal decoder-only de aproximadamente 0,5 mil millones de parámetros. Sobre esta base se aplicó un ajuste fino supervisado (SFT) con LoRA, utilizando cuantización de 4 bits (QLoRA) durante el entrenamiento. El proceso descrito en la model card incluye: carga del modelo preentrenado, preparación de datasets conversacionales en vietnamita, cuantización 4-bit, configuración de adaptadores LoRA, SFT, fusión de los pesos LoRA en el modelo base y exportación final en safetensors.
+El modelo emplea la arquitectura Qwen2, un transformer causal decoder-only con atencion de tipo multi-head y RoPE, heredada directamente de Qwen1.5-0.5B-Chat. Sobre esa base se definen clases personalizadas (`ZenithVNConfig`, `ZenithVNForCausalLM`, `ZenithVNTokenizer`) que heredan de sus equivalentes de Qwen2 y se registran en el mecanismo `Auto*` de Transformers bajo el `model_type` `zenith_vn`. Esta capa de personalizacion no altera la arquitectura subyacente, sino que permite identificar el modelo como propio y cargarlo con su tokenizer asociado.
 
-Las herramientas empleadas fueron Python, PyTorch, Hugging Face Transformers, PEFT, TRL, Datasets, Accelerate y BitsAndBytes. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo etapas de RLHF o DPO. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La presencia de archivos `configuration_zenith.py` y `modeling_zenith.py` en la estructura esperada del repositorio sugiere la posibilidad de código de arquitectura personalizado, aunque la model card indica que los archivos reales pueden diferir.
+El entrenamiento consistio en un fine-tuning supervisado (SFT) con adaptadores LoRA sobre el modelo base cuantizado a 4 bits (QLoRA), usando el stack PyTorch, Transformers, PEFT, TRL, Datasets, Accelerate y BitsAndBytes. El proceso descrito incluye preparacion de datasets conversacionales, configuracion de LoRA, SFT, fusion de los pesos LoRA en el modelo y exportacion final. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en vietnamita e inglés.
+- Generacion de texto conversacional multi-turno en vietnamita e ingles.
 - Respuesta a preguntas de conocimiento general.
-- Asistencia en temas de tecnología y programación (según declaración del autor).
-- Autoidentificación como "Zenith VN".
-- Soporte de plantilla de chat mediante `apply_chat_template` con roles de usuario/asistente.
-- No se documenta soporte de tool calling o function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades de visión, audio ni modo "thinking".
-- Capacidad multilingüe limitada a vietnamita e inglés según los tags.
+- Asistencia en temas de tecnologia y programacion a nivel basico.
+- Identificacion de si mismo como Zenith VN dentro de la conversacion.
+- Uso de plantilla de chat (`chat_template`) cuando el tokenizer la expone; en su defecto, el autor documenta un formato de prompt alternativo `User: ...\nAssistant:`.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (la model card declara capacidades de razonamiento limitadas).
+- Capacidades de vision o audio: no disponibles.
+- Modo de razonamiento explicito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional en vietnamita para prototipos: el modelo puede gestionar diálogos multi-turno básicos mediante su plantilla de chat, adecuado para experimentar con interfaces de chat ligeras en entornos de desarrollo.
-- Base para fine-tuning adicional en vietnamita: al ser un modelo pequeño derivado de Qwen1.5-0.5B-Chat, sirve como punto de partida para experimentos de adaptación lingüística con LoRA en hardware modesto.
-- Respuesta a preguntas frecuentes en vietnamita: puede emplearse en demos de atención al cliente de baja complejidad, siempre con revisión humana y sin garantías de precisión.
-- Asistencia básica en programación: el autor declara soporte para temas de tecnología y programación, útil para entornos educativos o de prueba, no para producción crítica.
-- Investigación sobre ajuste fino eficiente: su pipeline QLoRA + LoRA + fusión de pesos documentado lo convierte en un caso de estudio reproducible para quienes aprenden PEFT.
-- Experimentación con código custom de Transformers: la posible presencia de `modeling_zenith.py` permite estudiar la carga de arquitecturas personalizadas con `trust_remote_code`, siempre tras revisar el código.
-- Despliegue en CPU o GPU de gama baja para pruebas: con ~0,5B parámetros, es viable para demos locales, aunque el autor no proporciona cifras de latencia ni throughput.
+- Asistente conversacional en vietnamita para prototipos: el modelo puede mantener conversaciones multi-turno basicas usando su plantilla de chat, adecuado para demos y pruebas de concepto de productos orientados al mercado vietnamita con recursos computacionales minimos.
+- Chatbot de atencion al cliente de bajo coste: por su tamano de 0,5B, puede desplegarse en CPU o GPU de gama baja para responder consultas frecuentes en vietnamita, siempre con supervision humana y sin depender de el para informacion critica.
+- Generacion de respuestas en ingles y vietnamita para aplicaciones bilingues: util en herramientas de soporte que necesiten alternar entre ambos idiomas, aunque la calidad en ingles sera inferior a la de modelos multilingues mayores.
+- Base para fine-tuning posterior en vietnamita: su licencia indefinida y su naturaleza experimental lo hacen apto como punto de partida interno para experimentar con QLoRA sobre dominios especificos (por ejemplo, soporte tecnico), reutilizando el pipeline documentado por el autor.
+- Educacion y divulgacion sobre IA en vietnamita: sirve como ejemplo didactico de como adaptar un modelo pequeno con LoRA y publicarlo en Hugging Face, incluido el registro de clases personalizadas en Transformers.
+- Asistencia basica en programacion para usuarios vietnamitas: puede responder dudas sencillas de tecnologia y fragmentos de codigo, integrado en un IDE o bot interno, con la advertencia de que su razonamiento es limitado y requiere verificacion.
+- Experimentacion con cuantizacion y despliegue ligero: su tamano permite probar pipelines de inferencia en entornos con poca VRAM (por ejemplo, portatiles o dispositivos edge), aunque el autor no documenta conversiones a GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni evaluaciones comparativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 1 GB para los pesos (0,46B parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, alrededor de 1,5-2 GB según longitud de secuencia.
-- VRAM estimada en 4-bit: aproximadamente 0,3-0,5 GB para pesos, más overhead; viable en GPUs de gama baja.
-- GPU recomendadas: no especificadas por el autor; por tamaño, cabe en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problemas.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer con al menos 2-4 GB de VRAM en FP16, y en GPUs integradas o CPU con cuantización.
-- Opciones de despliegue: Transformers (documentado en la model card); vLLM, llama.cpp, Ollama y TGI no están documentados ni se confirma compatibilidad (no hay pesos GGUF publicados).
-- Latencia y throughput: no disponibles; el autor no proporciona cifras.
+- VRAM estimada para inferencia en FP16: aproximadamente 1 GB solo para pesos (0,46B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, entre 1,5 y 2,5 GB segun longitud de secuencia.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,5 GB para pesos; en 4 bits, aproximadamente 0,25 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior permite inferencia holgada. En GPUs de datacenter (A100, H100) el modelo queda enormemente sobredimensionado en cuanto a capacidad.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas de VRAM, e incluso en CPU con suficiente RAM del sistema.
+- Opciones de despliegue: Transformers (con el bloque de registro de clases personalizadas), y potencialmente vLLM o TGI si se resuelve la compatibilidad con el `model_type` personalizado; llama.cpp y Ollama requeririan conversion a GGUF, no documentada por el autor.
+- Latencia y throughput estimados: no disponibles. El autor solo indica que la inferencia en CPU es posible pero mas lenta y que el rendimiento depende del hardware y la configuracion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Zenith VN 0.5B | ~0,46B | no disponible | vi, en | no disponible | safetensors | Fine-tuning LoRA de Qwen1.5-0.5B-Chat; experimental |
-| Qwen1.5-0.5B-Chat | ~0,5B | 32K (según documentación oficial de Qwen, no confirmado en esta ficha) | multilingüe | Apache 2.0 (según modelo original) | safetensors | Modelo base; mayor cobertura multilingüe y licencia clara |
-| Qwen2.5-0.5B-Instruct | ~0,5B | 32K (según documentación oficial, no confirmado aquí) | multilingüe | Apache 2.0 (según modelo original) | safetensors, GGUF | Generación posterior de Qwen; mejor soporte de ecosistema |
-| SmolLM2-360M-Instruct | ~0,36B | 8K (según documentación oficial, no confirmado aquí) | principalmente inglés | Apache 2.0 | safetensors, GGUF | Alternativa pequeña orientada a inglés |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Zenith VN 0.5B | 463.987.712 | no disponible | vi, en | no disponible | Hugging Face (523 descargas) |
+| Qwen1.5-0.5B-Chat (base) | ~0,5B | 32K (segun documentacion de Qwen; no verificado en esta ficha) | multilingue | Apache 2.0 (segun Qwen; no verificado aqui) | Hugging Face |
+| Modelos vietnamitas abiertos de tamano similar | no disponible | no disponible | vi | no disponible | no disponible |
 
-Nota: los datos de contexto y licencia de los modelos comparados provienen de conocimiento general y no de la información proporcionada en esta ficha; deben verificarse en sus respectivas model cards.
+La comparativa directa con alternativas vietnamitas especificas no esta disponible en la informacion proporcionada. Frente a su modelo base, Zenith VN anade el ajuste conversacional en vietnamita, pero pierde la claridad de licencia y la documentacion tecnica del original.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el propio autor advierte de capacidades de razonamiento limitadas y posible generación de información inexacta.
-- Riesgo de alucinación: alta probabilidad en un modelo de 0,5B sin benchmarks publicados; no apto para asesoramiento profesional.
-- Conocimiento limitado al modelo base y a los datos de entrenamiento no documentados.
-- Comprensión incompleta de expresiones vietnamitas según el autor.
-- Licencia no declarada explícitamente: la model card indica que debe respetarse la licencia de Qwen1.5-0.5B-Chat y confirmarse antes de distribuir; esto bloquea o condiciona el uso comercial hasta aclararse.
-- Posible código custom (`modeling_zenith.py`): requiere revisión manual antes de usar `trust_remote_code=True` por riesgo de seguridad.
-- Sin datos de benchmarks, contexto confirmado ni cifras de latencia: difícil evaluar su rendimiento frente a alternativas.
-- Volumen de adopción muy bajo (73 descargas, 1 like): poca validación comunitaria.
-- No se documentan cuantizaciones GGUF ni integración con vLLM/Ollama, lo que limita el despliegue en producción.
+- Modelo experimental: el propio autor lo describe como un proyecto en desarrollo, con capacidades de razonamiento limitadas.
+- Riesgo de alucinacion: la model card advierte explicitamente de que puede generar informacion inexacta.
+- Conocimiento limitado al dataset de entrenamiento, cuya composicion no se documenta.
+- Cobertura del vietnamita incompleta: puede no comprender todas las expresiones del idioma.
+- No apto para sustituir asesoramiento profesional (medico, legal, financiero).
+- Licencia no disponible: la model card remite a verificar los derechos de los componentes, datasets y materiales de entrenamiento antes de redistribuir; esto impide un uso comercial claro sin revision legal.
+- Requiere codigo personalizado (`custom_code`) y un bloque de registro manual en Transformers; esto complica la integracion con herramientas de inferencia estandar y exige revisar el codigo Python del repositorio antes de ejecutarlo, tal como advierte el autor.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
+- Contexto maximo no documentado: no se puede planificar su uso en tareas de contexto largo.
+- Sin soporte documentado de tool calling, agentes, vision ni audio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/trangthanhdai/Zenith-0.5B
-- Perfil del autor: https://huggingface.co/trangthanhdai
-- Modelo base Qwen1.5-0.5B-Chat: https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat
+- Modelo base: https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat
+- No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

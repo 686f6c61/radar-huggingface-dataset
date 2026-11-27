@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.8-27B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
-    },
-    {
-      "title": "Qwen3.8-27B - GitHub",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen 3.8 27B - a AtomicChat Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/AtomicChat/qwen-38-27b",
-      "snippet": "AtomicChat/Qwen3.8-27B-GGUF-metrics Updated about 6 hours ago Upvote 1 Sort: Collection"
-    },
-    {
-      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "snippet": "Guide to running Qwen3.8 quants including Qwen3.8-27B on your local setup."
-    },
-    {
-      "title": "Qwen3.8 - lmstudio.ai",
-      "url": "https://lmstudio.ai/models/qwen3.8",
-      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
-    }
-  ]
+  "sources": []
 }

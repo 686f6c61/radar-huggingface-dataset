@@ -2,119 +2,111 @@
 
 ## Resumen
 
-Sophon-Realtime-32B-Flash-4bit es la variante cuantizada a 4 bits de Sophon-Realtime-32B-Flash, un modelo de voz a voz (speech-to-speech) full-duplex desarrollado por adventists-ai. El modelo integra en un único sistema tres etapas: escucha continua de audio, decisión de turno de palabra y generación de la respuesta hablada con etiquetas de sonido. Su objetivo es habilitar conversaciones en tiempo real con latencia baja, sin los pipelines fragmentados habituales de ASR + LLM + TTS.
+Sophon-Realtime-32B-Flash-4bit es una versión cuantizada a 4 bits del modelo full-duplex de voz a voz Sophon-Realtime-32B-Flash, desarrollado por adventists-ai. El modelo original integra en un único sistema las etapas de escucha, decisión de turno de palabra, generación de respuesta (con etiquetas de sonido) y síntesis de voz, de modo que mantiene una conversación hablada en tiempo real con capacidad de ser interrumpido. Esta variante comprime los pesos del componente "thinker" a 4 bits para reducir el requisito de memoria de aproximadamente 55 GB a unos 30 GB, permitiendo desplegar el sistema completo en una sola GPU de 32 GB en lugar de una de 80 GB.
 
-La innovación principal de esta versión es la compresión del "thinker" (el componente de razonamiento) a pesos de 4 bits, lo que reduce el consumo de memoria de aproximadamente 55 GB a unos 30 GB. Esto permite desplegar el modelo completo en una única GPU de 32 GB en lugar de una de 80 GB, manteniendo la misma API, voces y clonación de voz que la versión completa. Está pensado para una o dos conversaciones simultáneas, frente a las hasta 40 de la versión Flash sin cuantizar.
+La relevancia práctica del modelo reside en esa reducción de huella: mantiene el mismo código, API, voces y clonación de voz zero-shot que la versión completa, a cambio de una pérdida de conocimiento de aproximadamente 1,5 puntos en pruebas de opción múltiple y de desactivar la entrada de imagen. Está pensado para escenarios de una o dos conversaciones simultáneas, no para despliegues de alta concurrencia.
 
-El modelo se distribuye bajo licencia Apache-2.0, soporta chino e inglés, y se ejecuta sobre vLLM y vLLM-Omni con CUDA MPS para compartir la GPU entre las tres etapas. El repositorio ocupa 25,8 GB en formato safetensors.
+La arquitectura interna no se detalla en la información disponible; la model card describe el sistema como un pipeline de tres etapas (escucha, decisión de turno y habla) ejecutado sobre vLLM y vLLM-Omni con CUDA MPS. Los idiomas soportados son chino (zh) e inglés (en), y la licencia es Apache-2.0 tanto para el código como para los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline de tres etapas (escucha, decisión de turno, síntesis de voz) sobre un thinker de 32B comprimido a 4 bits; no se detalla la arquitectura interna del transformer |
-| Parametros totales | 32B (denominación del modelo; no se desglosa el reparto entre etapas) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (frente a 8192 en la versión Flash completa) |
-| Tipos de cuantizacion | 4 bits (pesos del thinker); no se especifica el esquema exacto (GPTQ, AWQ, etc.) |
-| Idiomas soportados | chino (zh), inglés (en) |
-| Licencia | Apache-2.0 (código y pesos; ver NOTICE para fuentes) |
-| Formato de pesos | safetensors |
-| Version | 1.1.6 |
-| Memoria en uso | ~30 GB (presupuesto de 32 GB) |
-| Tamano del repo | 25,8 GB |
+| Arquitectura | no disponible (sistema full-duplex de voz a voz con pipeline de tres etapas sobre vLLM/vLLM-Omni) |
+| Parametros totales | no disponible (el nombre indica 32B en el modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4096 tokens (la version completa soporta 8192) |
+| Tipos de cuantizacion | 4 bits (pesos del thinker); no se detallan esquemas adicionales |
+| Idiomas soportados | chino (zh), ingles (en) |
+| Licencia | Apache-2.0 (codigo y pesos; ver NOTICE para fuentes) |
+| Formato de pesos | safetensors (libreria vllm) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema full-duplex de voz a voz que combina tres etapas sobre una única GPU: escucha del audio de entrada, decisión del momento de turno y generación de la respuesta con etiquetas de sonido que guían la síntesis de voz. El componente de razonamiento (thinker) es un modelo de 32B cuyos pesos se han comprimido a 4 bits en esta variante; el resto del pipeline (voces, clonación zero-shot, API) es idéntico al de la versión Flash completa. La inferencia se ejecuta con vLLM 0.30 y vLLM-Omni 0.30, con CUDA MPS activado para que las tres etapas compartan memoria de GPU.
+La información disponible no describe la arquitectura interna del modelo base (tipo de transformer, composición del dataset, número de tokens de entrenamiento ni si hubo RLHF o DPO). Lo que sí se documenta es la organización funcional del sistema: un modelo full-duplex que escucha, decide cuándo tomar el turno, redacta la respuesta con etiquetas de sonido y la sintetiza, ejecutándose como un pipeline de tres etapas que comparten GPU mediante CUDA MPS.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card tampoco detalla innovaciones de atención o decodificación más allá del diseño full-duplex. La cuantización a 4 bits del thinker es la modificación técnica central de esta versión, con un impacto medido de aproximadamente 1,5 puntos en conocimiento (CMMLU y MMLU-Pro) y sin cambios significativos en la escritura de etiquetas de sonido, la claridad del habla ni la gestión de turnos.
+La variante 4bit aplica cuantización exclusivamente a los pesos del thinker; el resto del sistema (API, etiquetas de sonido, voces, clonación zero-shot y system prompt) es idéntico al modelo Flash completo. El despliegue se realiza sobre vLLM 0.30 y vLLM-Omni 0.30 con un plugin específico, y la primera ejecución compila kernels durante unos 5-10 minutos.
 
 ## Capacidades
 
-- Conversación de voz a voz en tiempo real con procesamiento full-duplex (escucha mientras genera).
-- Decisión autónoma de turno de palabra: detecta cuándo debe responder y cuándo callar.
-- Generación de respuestas habladas con etiquetas de sonido que controlan la prosodia y la expresión.
-- Clonación de voz zero-shot, con las mismas voces que la versión Flash completa.
-- Razonamiento y conocimiento general en chino e inglés (CMMLU 85,5; MMLU-Pro 57,1).
-- API compatible con `/v1/chat/completions` y `/v1/realtime`.
-- Entrada de imagen desactivada en esta variante para ahorrar memoria (activa en Flash).
+- Conversación de voz a voz full-duplex en tiempo real, con capacidad de ser interrumpido por el usuario.
+- Decisión automática de turno de palabra (turn-taking) durante la conversación.
+- Generación de respuestas habladas con etiquetas de sonido (sound tags) para indicar expresiones no verbales.
+- Clonación de voz zero-shot.
 - Soporte de system prompt para configurar el comportamiento del asistente.
-- No se documenta soporte explícito de tool calling ni de razonamiento multi-paso con agentes.
+- API compatible con OpenAI Realtime (`/v1/realtime` y `/v1/chat/completions`).
+- Capacidades multilingües limitadas a chino e inglés.
+- Entrada de imagen desactivada en esta variante (la versión completa sí la soporta).
 
 ## Casos de uso
 
-- Asistentes de voz en tiempo real para atención al cliente: el modelo gestiona conversaciones multi-turno con decisión de turno autónoma y latencia de primera respuesta de audio de 0,24 s (mediana) en una H100, adecuado para interacción telefónica o por voz.
-- Agentes conversacionales embebidos en dispositivos con una sola GPU de 32 GB: al caber en una H100 de 32 GB o en una RTX PRO 6000 Blackwell, permite desplegar un asistente de voz completo sin infraestructura de 80 GB.
-- Clonación de voz para locución personalizada: la funcionalidad zero-shot permite generar respuestas con la voz del usuario en aplicaciones de accesibilidad o avatares.
-- Pruebas de concepto y demos de voz a voz: el script `client_example.py` y la API `/v1/realtime` facilitan prototipos rápidos con audio WAV de entrada.
-- Sistemas de interpretación bidireccional chino-inglés: el soporte nativo de ambos idiomas y la síntesis de voz permiten construir interfaces de traducción hablada en tiempo real.
-- Evaluación de modelos full-duplex en investigación: la variante 4 bits permite reproducir experimentos de turn-taking y latencia en hardware más asequible que la versión completa.
-- Despliegue con mayor concurrencia en GPUs de 48 GB o más: reutilizando los pesos 4 bits con un presupuesto de memoria mayor se alcanzan 8 respuestas largas simultáneas con retraso máximo de 0,2 s en una H100.
+- Asistentes de voz interactivos de baja latencia: con una mediana de 0,24 s entre el final del habla del usuario y el primer fragmento de audio en una H100, el modelo es adecuado para interfaces conversacionales donde la fluidez percibida es crítica.
+- Atención al cliente telefónica automatizada: el sistema gestiona conversaciones habladas multi-turno con interrupciones, aunque su ventana de 4096 tokens limita la longitud del historial.
+- Pruebas de concepto y demos en una sola GPU de 32 GB: permite validar un producto de voz full-duplex sin aprovisionar hardware de 80 GB.
+- Prototipado de agentes de voz con clonación de voz: útil para generar locuciones personalizadas en aplicaciones de accesibilidad o contenido.
+- Evaluación de pipelines de voz en investigación: el modelo sirve como referencia para estudiar turn-taking, latencia y calidad de síntesis en sistemas full-duplex.
+- Despliegue en estaciones de trabajo con RTX PRO 6000 Blackwell para una o dos conversaciones simultáneas, con latencias de 0,27-0,41 s en una conversación.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (comparación entre Flash-4bit y Flash, misma GPU H100, CUDA MPS):
-
-| Metrica | Flash-4bit | Flash |
+| Metrica | Flash-4bit | Flash (completo) |
 |---|---|---|
-| CMMLU (2000 preguntas, chino) | 85,5 | 87,1 |
-| MMLU-Pro (2000 preguntas, inglés, 10 opciones) | 57,1 | 58,4 |
-| Respuestas con etiqueta de sonido (600 turnos) | 13,0% | 14,2% |
-| Tasa de error del habla, chino (80 respuestas, mediana) | 1,6% | 0,8% |
-| Tasa de error del habla, inglés (69 respuestas, mediana) | 0% | 0% |
-| Turn-taking (40 turnos): demasiado pronto / sin respuesta | 11 / 1 | 10 / 2 |
+| CMMLU, 2000 preguntas (chino, opcion multiple) | 85,5 | 87,1 |
+| MMLU-Pro, 2000 preguntas (ingles, 10 opciones) | 57,1 | 58,4 |
+| Respuestas que usan etiqueta de sonido (600 turnos hablados) | 13,0 % | 14,2 % |
+| Tasa de error del habla de la respuesta, chino, 80 respuestas (mediana) | 1,6 % | 0,8 % |
+| Tasa de error del habla, ingles, 69 respuestas (mediana) | 0 % | 0 % |
+| Turn-taking, 40 turnos en tiempo real: inicio demasiado pronto / sin respuesta | 11 / 1 | 10 / 2 |
 
-Latencia (H100, configuración de 32 GB, `/v1/chat/completions`, audio del usuario a primer fragmento de audio):
+Latencia (una H100, configuración de 32 GB, `/v1/chat/completions`, del habla del usuario al primer fragmento de audio):
 
-| Escenario | Primera respuesta mediana / P90 | Retraso de reproducción |
+| Escenario | Primera respuesta (mediana / P90) | Retraso de reproduccion |
 |---|---|---|
-| 1 conversación, 10 turnos, chino | 0,24 / 0,26 s | 0 |
-| 1 conversación, 10 turnos, inglés | 0,24 / 0,27 s | 0 |
-| 2 conversaciones simultáneas, respuestas largas | 0,29–0,32 s | 0 |
-| 2 conversaciones × 10 turnos | 0,27 / 0,34 s | 0 |
-| `/v1/realtime`, fin del habla a primer audio | 0,60 / 0,75 s | – |
+| 1 conversacion, 10 turnos, chino / ingles | 0,24 / 0,26 s · 0,24 / 0,27 s | 0 |
+| 2 conversaciones simultaneas, respuestas largas | 0,29-0,32 s | 0 |
+| 2 conversaciones x 10 turnos | 0,27 / 0,34 s | 0 |
+| `/v1/realtime`, fin del habla a primer audio | 0,60 / 0,75 s | no aplica |
 
-En una RTX PRO 6000 Blackwell: primera respuesta de 0,27–0,41 s con una conversación (retraso 0) y de 0,37–0,48 s con dos conversaciones largas simultáneas (retraso de 0,3–0,75 s al inicio de la respuesta). No se ha probado en una RTX 5090 real.
+En una RTX PRO 6000 Blackwell, una conversación presenta 0,27-0,41 s de latencia; dos conversaciones simultáneas con respuestas largas sufren un retraso de 0,3-0,75 s al inicio de la respuesta.
 
 ## Requisitos de hardware
 
-- VRAM: aproximadamente 30 GB en uso con un presupuesto de 32 GB; el thinker en 4 bits necesita unos 23 GB solo al arrancar.
-- GPU recomendadas: H100 (32 GB de configuración), RTX PRO 6000 Blackwell. Una RTX 5090 (32,6 GB) es teóricamente suficiente pero no se ha validado; requiere ejecución headless y la GPU libre.
-- GPUs de 24 GB no son suficientes.
-- Con 48 GB o más se pueden usar los pesos 4 bits con mayor presupuesto de memoria (`gpu_memory_utilization`, `max_model_len`, `max_num_seqs`); en una H100 con ajustes de la versión completa ocupa unos 42 GB y soporta 8 respuestas largas simultáneas con retraso máximo de 0,2 s.
-- Despliegue: vLLM 0.30 y vLLM-Omni 0.30, con CUDA MPS activado; scripts `install.sh`, `start.sh` y `stop.sh` del repositorio.
-- El primer arranque compila kernels durante 5–10 minutos y requiere el CUDA toolkit (`CUDA_HOME`).
-- Throughput: una o dos conversaciones simultáneas de forma fiable; dos respuestas largas simultáneas pueden sufrir un retraso breve al inicio en la generación Blackwell.
+- VRAM estimada: aproximadamente 30 GB en uso con la configuración de 32 GB (medido en 30,5 GB en una RTX PRO 6000 con presupuesto de 32 GB); descarga de unos 25 GB.
+- El thinker cuantizado a 4 bits necesita por sí solo unos 23 GB al arrancar, por lo que las GPU de 24 GB no son suficientes.
+- GPU recomendadas: una H100 (80 GB) permite usar los pesos 4-bit con la configuración completa, ocupando unos 42 GB y gestionando 8 respuestas largas simultáneas con un retraso máximo de 0,2 s; una RTX PRO 6000 Blackwell funciona con la configuración de 32 GB.
+- Cabe en GPU de consumo de gama alta con 32 GB o más (por ejemplo, RTX 5090 con 32,6 GB), aunque el autor advierte que no se ha probado en una RTX 5090 real y recomienda ejecutarlo sin cabeza y sin otros procesos en la GPU.
+- Despliegue: vLLM 0.30 y vLLM-Omni 0.30 con el plugin de Sophon-Realtime, Python 3.12, CUDA MPS activado; el primer arranque compila kernels (5-10 minutos) y requiere el CUDA toolkit.
+- Con 48 GB o más se puede subir `gpu_memory_utilization`, `max_model_len` y `max_num_seqs` sobre los mismos pesos 4-bit.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Memoria | Idiomas | Licencia | Entrada de imagen |
-|---|---|---|---|---|---|---|
-| Sophon-Realtime-32B-Flash-4bit | 32B (thinker 4 bits) | 4096 | ~30 GB | zh, en | Apache-2.0 | No |
-| Sophon-Realtime-32B-Flash | 32B | 8192 | ~55 GB | zh, en | Apache-2.0 | Sí |
-| Modelos full-duplex de voz a voz comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Entrada de imagen | Memoria en uso | Licencia |
+|---|---|---|---|---|---|
+| Sophon-Realtime-32B-Flash-4bit | 32B (base) | 4096 tokens | No | ~30 GB | Apache-2.0 |
+| Sophon-Realtime-32B-Flash | 32B (base) | 8192 tokens | Si | ~55 GB | Apache-2.0 |
 
-La única alternativa directamente comparable documentada es la versión Flash completa del mismo autor, que ofrece mayor contexto, entrada de imagen y hasta 40 conversaciones simultáneas a cambio de una GPU de 80 GB.
+No se dispone de información sobre otros modelos comparables de voz a voz full-duplex en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 4 bits reduce el conocimiento en aproximadamente 1,5 puntos (CMMLU y MMLU-Pro), una diferencia estadísticamente significativa con 2000 preguntas emparejadas.
-- Las respuestas largas (en torno a 100 s) pierden precisión en su segunda mitad; según el autor, el problema proviene de la etapa de voz, no del thinker cuantizado.
-- La entrada de imagen está desactivada en esta variante.
-- El contexto se reduce a la mitad (4096 frente a 8192 tokens).
-- Solo soporta chino e inglés; no se documentan otros idiomas.
-- La gestión de turnos muestra fallos: en 40 turnos reales, 11 arranques demasiado pronto y 1 sin respuesta.
-- No validado en RTX 5090; en Blackwell, dos respuestas largas simultáneas pueden retrasarse al inicio.
-- No se documentan sesgos específicos ni evaluaciones de alucinación; al ser un modelo de voz a voz, el riesgo de respuestas incorrectas con apariencia fluida es relevante en producción.
-- Licencia Apache-2.0 permite uso comercial, pero debe revisarse el fichero `NOTICE` para las fuentes de los datos y pesos.
-- Requiere compilación de kernels en el primer arranque y el CUDA toolkit, lo que complica despliegues automatizados.
+- La cuantización a 4 bits reduce el conocimiento en aproximadamente 1,5 puntos (CMMLU 85,5 frente a 87,1; MMLU-Pro 57,1 frente a 58,4), una diferencia estadísticamente significativa sobre 2000 preguntas emparejadas.
+- La tasa de error del habla en chino empeora (1,6 % frente a 0,8 % de mediana) y la proporción de respuestas con etiqueta de sonido baja (13,0 % frente a 14,2 %).
+- El turn-taking presenta 11 inicios demasiado pronto y 1 falta de respuesta en 40 turnos reales, ligeramente peor que la versión completa (10 / 1).
+- En respuestas de varios minutos se pierde ocasionalmente la última frase o dos (problema conocido documentado en el changelog).
+- La ventana de contexto se reduce a 4096 tokens y la entrada de imagen está desactivada.
+- Solo soporta chino e inglés.
+- Pensado para una o dos conversaciones simultáneas; no es adecuado para alta concurrencia.
+- En RTX PRO 6000 Blackwell, dos respuestas largas simultáneas sufren un retraso de 0,3-0,75 s al inicio.
+- No se han publicado datos sobre sesgos ni sobre tasas de alucinación en la información disponible.
+- La licencia Apache-2.0 permite uso comercial, pero debe consultarse el archivo `NOTICE` para las fuentes de los pesos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash-4bit
-- Versión completa Flash: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
+- Modelo base completo: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/adventists-ai/Sophon-Realtime
 - Repositorio GitHub: https://github.com/adventists-ai/sophon-realtime
-- Directorio Flash del repositorio: https://github.com/adventists-ai/sophon-realtime/tree/main/flash
 - Changelog: https://github.com/adventists-ai/sophon-realtime/blob/main/CHANGELOG.md
-- Issues: https://github.com/adventists-ai/sophon-realtime/issues
+- Documentación de la API: https://api.adventists.ai/console/docs
+- Consola de la API: https://api.adventists.ai/console/
+- Issues del repositorio: https://github.com/adventists-ai/sophon-realtime/issues

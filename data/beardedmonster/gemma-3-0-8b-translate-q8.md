@@ -2,95 +2,99 @@
 
 ## Resumen
 
-`BeardedMonster/gemma-3-0.8b-translate-Q8` es un modelo de traducción inglés a lenguas africanas derivado de Gemma 3 (arquitectura Gemma-3-1B-it) mediante un proceso de *vocabulary pruning* y cuantización FP8 E4M3. Lo publica BeardedMonster (Jeffrey Otoibhi, Aletheia AI) como parte de la familia SabiYarn, y su propósito es cubrir la traducción automática hacia un conjunto muy amplio de lenguas africanas, muchas de ellas con recursos digitales escasos.
+`gemma-3-0.8b-translate-Q8` es una cuantización GGUF de 8 bits (Q8_0) del modelo `BeardedMonster/gemma-3-1b-translate-best`, un ajuste fino de Gemma 3 orientado exclusivamente a la traducción de inglés a lenguas africanas. El autor, BeardedMonster (Aletheia AI), parte de la arquitectura Gemma 3 de Google y aplica un ajuste con refuerzo (GRPO) para especializar el modelo en una tarea concreta: traducir texto en inglés a 124 lenguas africanas distintas, identificadas mediante etiquetas de idioma de tres letras.
 
-El modelo parte de `BeardedMonster/gemma-3-1b-translate-best`, un ajuste fino con SFT y RL (GRPO) del Gemma-3-1B-it, al que se le recorta el vocabulario de 262.144 a 111.964 tokens (con cierre de merges BPE y conservación de los 256 tokens de byte) y se le aplica cuantización FP8 con escala de pesos por tensor y escala de activaciones dinámica. El resultado son 826.878.592 parámetros (unos 0,83B) y aproximadamente 0,96 GB de pesos.
+La característica técnica más destacable es la poda del vocabulario: el tokenizador original de Gemma 3 (262.144 tokens) se reduce a 111.966 tokens eliminando piezas raras, secuencias largas de espacios y tokens HTML no utilizados, junto con sus filas de embedding correspondientes. Esto deja el modelo en 826.880.896 parámetros (0,83B) y reduce el tamaño del repositorio a 2,9 GB. Según el autor, en 16 pruebas comparativas la versión podada produjo exactamente las mismas traducciones que la versión de vocabulario completo.
 
-Es relevante porque demuestra que un modelo de menos de mil millones de parámetros puede cubrir 125 etiquetas de lengua africana (105 con datos de SFT) manteniendo la calidad del padre sin cuantizar: en su evaluación interna de 500 frases y 20 lenguas, el chrF++ macro por lengua es 40,73, idéntico al del modelo fp32. La contrapartida es una dependencia estricta de vLLM y un tokenizador propio incompatible con el del Gemma original.
+El modelo es relevante por su enfoque de nicho: cubre 124 lenguas africanas (muchas de ellas de bajos recursos) en un tamaño que cabe en hardware de consumo, con una licencia que permite uso comercial con atribución. No es un modelo de propósito general: solo traduce de inglés a lenguas africanas y no soporta la dirección inversa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma-3-1B-it), con vocabulario podado |
-| Parametros totales | 826.878.592 (aprox. 0,83B) |
+| Arquitectura | Transformer decoder-only (Gemma 3), cuantizado a GGUF Q8_0 |
+| Parametros totales | 826.880.896 (0,83B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de vLLM usa `max_model_len=4096`) |
-| Tipos de cuantizacion | FP8 E4M3 (escala de pesos por tensor, escala de activaciones dinamica) |
-| Idiomas soportados | Ingles como origen; 125 etiquetas de lengua africana como destino (105 con datos de SFT, 20 sin ellos) |
-| Licencia | `sabiyarn-commercial-use-with-attribution` (uso comercial con atribucion obligatoria; se aplican tambien los Gemma Terms of Use) |
-| Formato de pesos | safetensors (FP8), libreria vLLM |
+| Longitud de contexto | no disponible (el ejemplo de uso emplea `n_ctx=4096`) |
+| Tipos de cuantizacion | Q8_0 (8 bits); solo se distribuye esta variante |
+| Idiomas soportados | Inglés (entrada) y 124 lenguas africanas (salida), entre ellas yoruba, hausa, igbo, suajili, zulú, xhosa, amárico, somalí, afrikáans, bambara, wolof, fon, ewe, twi, lingala, kikuyu, luganda, malgache, entre otras |
+| Licencia | other (uso comercial libre con atribución a "Translation models by Aletheia AI" y cita del paper; se aplican además los Gemma Terms of Use y la Prohibited Use Policy) |
+| Formato de pesos | GGUF (archivo `gemma-3-0.8b-translate-Q8_0.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura decoder-only de Gemma 3 en su variante de 1B (Gemma-3-1B-it). Sobre esa base, el autor aplica dos transformaciones encadenadas. Primero, una poda de vocabulario de 262.144 a 111.964 tokens con cierre de merges: se conserva cada token cuyo componente BPE se mantiene y se preservan los 256 tokens de byte, de modo que cualquier texto sigue siendo codificable. Las 125 etiquetas de lengua (`<yor>`, `<hau>`, etc.) permanecen como tokens únicos, y los identificadores se renumeran por completo, por lo que el mapa `vocab_keep_ids.json` es imprescindible para relacionar los nuevos ids con los originales de Gemma 3.
+El modelo hereda la arquitectura decoder-only de Gemma 3 de Google, sobre la que se aplica un ajuste fino supervisado seguido de optimización con GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo. El pipeline declarado es `translation` y la tarea se formula como una conversación de un solo turno con el formato `Translate the text to {Language name}:  {English text}` (dos espacios tras los dos puntos, tal como en el entrenamiento). El modelo responde con una etiqueta de idioma de tres letras como token único (`<yor>`, `<hau>`, etc.) seguida de la traducción.
 
-El ajuste del modelo padre combina SFT sobre pares inglés-lengua africana con una fase final de RL mediante GRPO. La cuantización posterior es FP8 E4M3 con escala de pesos por tensor y escala de activaciones dinámica, declarada en `config.json` con `quant_method: fp8`, de forma que vLLM la detecta sin argumentos adicionales. La innovación técnica destacable no es arquitectónica sino de eficiencia: reducir el vocabulario y cuantizar a FP8 permite servir un traductor multilingüe de 125 lenguas en menos de 1 GB de pesos sin pérdida medible de chrF++ respecto al padre fp32.
+La innovación principal es la poda del vocabulario: se reduce de 262.144 a 111.966 tokens eliminando piezas no utilizadas durante el entrenamiento y la evaluación, junto con sus embeddings. Se conservan las 125 etiquetas de idioma y todos los tokens especiales (`<bos>`, `<eos>`, `<pad>`, `<unk>`, `<mask>`, `[multimodal]`, `<start_of_turn>`, `<end_of_turn>`, `<start_of_image>`, `<end_of_image>`). Como consecuencia, los identificadores de token ya no coinciden con los de Gemma 3 original (`<yor>` es el id 6, `<hau>` el 7), pero el tokenizador dentro del GGUF es autocontenido. La decodificación recomendada es greedy (`temperature=0`), con `max_new_tokens=256` para frases cortas o párrafos breves.
 
 ## Capacidades
 
-- Traducción unidireccional de inglés a lenguas africanas: 125 etiquetas de lengua, 105 de ellas con datos de ajuste supervisado.
-- Salida estructurada: el modelo emite primero la etiqueta de lengua como un único token y después la traducción, terminando en `<end_of_turn>` (id 106).
-- Cobertura de lenguas de gran difusión (yoruba, hausa, igbo, suajili, zulú, xhosa, amárico, somalí, afrikáans) y de lenguas con muchos menos recursos (ewe, fon, wolof, bambara, tiv, umbundu, kamba, luo, kanuri, dogon, etc.).
-- Manejo de frases sueltas y párrafos cortos por prompt; el autor recomienda dividir documentos largos en frases.
-- Decodificación greedy recomendada (`temperature=0`), con `frequency_penalty=0.1` opcional como protección contra bucles de repetición en entradas largas.
-- No soporta tool calling, function calling, agentes, visión ni audio según la información disponible; es un modelo especializado exclusivamente en traducción.
+- Traducción de inglés a 124 lenguas africanas, con etiqueta de idioma de salida en formato `<xxx>`.
+- Conversación de un solo turno con plantilla de chat Gemma 3 incrustada en el GGUF.
+- Manejo de frases y párrafos cortos; el autor recomienda dividir documentos largos en frases.
+- Etiquetado de idioma de salida mediante token único, lo que facilita el postprocesado.
+- No soporta traducción desde lenguas africanas al inglés ni entre lenguas africanas.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Traducción de documentación técnica y guías de producto al suajili, hausa o yoruba: al ser un modelo de 0,83B y menos de 1 GB, se puede desplegar en el mismo nodo que el servicio de documentación y traducir párrafo a párrafo con llamadas por frase.
-- Localización de interfaces y cadenas de UI para mercados africanos: la salida con etiqueta de lengua permite enrutar y validar automáticamente el idioma destino, y el coste por token es mínimo al tener un vocabulario podado de 111.964 entradas.
-- Atención al cliente multilingüe en países con varias lenguas oficiales: se puede integrar como paso previo de traducción en un pipeline donde un LLM mayor razona en inglés y este modelo produce la respuesta en la lengua del usuario (yoruba, igbo, pcm, twi, etc.).
-- Traducción de contenidos educativos y sanitarios a lenguas de bajos recursos (ewe, fon, wolof, bambara, tiv): el modelo cubre lenguas que los traductores comerciales suelen omitir, y el requisito de atribución es compatible con proyectos de ONG y publicaciones.
-- Procesamiento por lotes de corpus: vLLM permite enviar en una sola llamada un lote con la misma frase en cinco lenguas distintas, lo que abarata la generación de corpus paralelos para investigación lingüística.
-- Subtitulado y transcripción traducida: al aceptar frases cortas con `max_new_tokens=256`, encaja en un pipeline que segmenta audio transcrito en inglés y traduce cada segmento a la lengua destino antes de recomponer los subtítulos.
-- Sistemas de mensajería y notificaciones personalizadas: la latencia baja esperable de un modelo de 0,83B en FP8 sobre GPU Hopper/Ada/Blackwell permite traducir notificaciones en tiempo real sin depender de APIs externas.
+- Localización de contenido hacia lenguas africanas de bajos recursos: el modelo permite traducir documentación, interfaces o material divulgativo a idiomas como yoruba, hausa o bambara, donde los servicios comerciales suelen tener cobertura limitada.
+- Traducción en el borde o en entornos sin conectividad: con 0,83B de parámetros en Q8_0 (unos 0,9 GB de pesos), puede ejecutarse en CPU con llama.cpp, lo que lo hace adecuado para despliegues en dispositivos modestos o servidores sin GPU.
+- Procesamiento por lotes de corpus de inglés a lenguas africanas: al ser determinista con decodificación greedy, resulta apropiado para pipelines de traducción masiva con resultados reproducibles.
+- Atención multilingüe en organizaciones con presencia en África subsahariana: permite generar respuestas o avisos en la lengua local del usuario a partir de un texto fuente en inglés, integrado en un backend con llama-cpp-python.
+- Investigación en traducción automática de bajos recursos: sirve como línea base pequeña y reproducible para comparar con modelos mayores en FLORES+, NTREX-128 o MAFAND-MT.
+- Filtrado y enriquecimiento de datos multilingües: la etiqueta de idioma de salida permite verificar o anotar la lengua de destino en conjuntos de datos de entrenamiento.
+- Generación de subtítulos o resúmenes localizados: dado que acepta párrafos cortos, puede integrarse en un pipeline que traduzca fragmentos de texto previamente segmentados.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado |
-|---|---|
-| chrF++ macro por lengua (500 frases, 20 lenguas, referencias) | 40,73 |
-| chrF++ del padre fp32 sin cuantizar (misma evaluacion) | 40,73 |
-| Rango de variantes FP8 evaluadas | 40,73 a 41,00 |
-| Salidas greedy que difieren en redaccion del fp32 | 86% |
+Resultados publicados por el autor para el modelo fuente en precisión completa (no específicamente para este GGUF Q8_0):
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, BLEU) en la información disponible. La única métrica reportada es la evaluación interna de traducción descrita en la model card.
+| Benchmark | Métrica | Resultado | Cobertura |
+|---|---|---|---|
+| FLORES+ devtest | chrF++ | 35,28 | 54 lenguas |
+| FLORES+ devtest | spBLEU | 14,03 | 54 lenguas |
+| FLORES+ devtest | AfriCOMET | 0,681 | 40 lenguas |
+| NTREX-128 | chrF++ (implícito) | 40,05 | 24 lenguas |
+| MAFAND-MT | chrF++ (implícito) | 44,21 | 15 lenguas |
+
+No se han publicado resultados de benchmarks específicos para esta cuantización Q8_0 en la información disponible. El autor indica que, en 16 pruebas con 8 lenguas, la versión podada dio exactamente la misma traducción que la versión de vocabulario completo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 1 GB solo para pesos FP8; con overhead de KV cache y runtime de vLLM, un espacio de trabajo de 4-8 GB es holgado para contexto de 4.096 tokens.
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (probada por el autor con vLLM 0.32.0); el objetivo son GPU con soporte FP8, es decir, Hopper (H100), Ada (L40S, RTX 4090) y Blackwell. Otras GPU no fueron probadas.
-- Cabe en GPU de consumo con soporte FP8 (por ejemplo, RTX 4090); en GPU sin FP8 nativo no hay soporte declarado.
-- Opciones de despliegue: exclusivamente vLLM (la cuantización se lee de `config.json` con `quant_method: fp8`). Transformers no puede cargar estos pesos; para ese runtime hay que usar el padre `BeardedMonster/gemma-3-1b-translate-best` en bf16 o fp32. No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1 GB para los pesos Q8_0 (2,9 GB de repositorio incluyen otros archivos; el GGUF ronda los 0,9-1 GB), más la caché KV según el contexto configurado.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problema. El autor probó con Metal en Apple Silicon.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en CPU.
+- Opciones de despliegue: llama.cpp (`llama-completion`, `llama-cli`, servidor con endpoint de chat), llama-cpp-python; el GGUF incluye la plantilla de chat de Gemma.
+- Latencia y throughput: no disponibles de forma numérica; el autor reporta pruebas con llama.cpp build 11669 en Metal con decodificación greedy y `-ngl 99`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Runtime |
+| Modelo | Parámetros | Contexto | Idiomas de destino | Licencia | Formato |
 |---|---|---|---|---|---|
-| gemma-3-0.8b-translate-Q8 | 826,9M | no disponible (ejemplo con 4.096) | Traduccion EN a 125 lenguas africanas, FP8 | SabiYarn con atribucion + Gemma Terms | vLLM |
-| gemma-3-1b-translate-best (padre) | aprox. 1,0B | no disponible | Misma tarea, vocabulario original, bf16/fp32 | SabiYarn con atribucion + Gemma Terms | vLLM y Transformers |
-| Gemma-3-1B-it (base de Google) | aprox. 1,0B | no disponible | Modelo generalista instruido, sin especializacion en lenguas africanas | Gemma Terms of Use | Multiples |
+| gemma-3-0.8b-translate-Q8 | 0,83B | no disponible | 124 lenguas africanas | other (comercial con atribución) | GGUF Q8_0 |
+| NLLB-200 (Meta) | 0,6B / 1,3B / 3,3B / 54B | 512 tokens | 200 lenguas | CC-BY-NC 4.0 (no comercial) | safetensors |
+| M2M-100 (Meta) | 0,4B / 1,2B / 10B | 1024 tokens | 100 lenguas | MIT | safetensors |
+| Gemma 3 1B (base) | 1B | 32K tokens | multilingüe general | Gemma Terms of Use | safetensors, GGUF |
 
-No se dispone de datos de benchmarks comparativos frente a otros traductores especializados en lenguas africanas en la información proporcionada.
+No se dispone de comparativas de rendimiento directas entre este modelo y las alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Traducción unidireccional: solo inglés como origen; no se declara soporte para traducir entre lenguas africanas ni hacia el inglés.
-- Veinte de las 125 etiquetas de lengua no tienen datos de SFT, por lo que su calidad es previsiblemente inferior y no está medida.
-- El tokenizador es propio y los ids no coinciden con los de Gemma 3: mezclar tokenizadores o reutilizar ids del padre produce resultados incorrectos.
-- Requiere vLLM; Transformers no puede cargar los tensores FP8 con `weight_scale`. No hay soporte declarado para llama.cpp, Ollama o TGI.
-- El prompt debe seguir el formato exacto de entrenamiento, con dos espacios tras los dos puntos y el nombre de la lengua (no el código ISO); desviarse de ese formato degrada la salida.
-- Recomendado greedy; el muestreo no está validado y puede introducir derivas en lenguas de bajos recursos.
-- Riesgo de bucles de repetición en entradas largas, mitigado solo parcialmente con `frequency_penalty=0.1`; el autor recomienda segmentar documentos en frases.
-- Licencia de uso comercial con atribución obligatoria a "SabiYarn translation models by Jeffrey Otoibhi (Aletheia AI)" y cita del paper en preparación; además se aplican los Gemma Terms of Use y la Prohibited Use Policy de Google, lo que impone restricciones adicionales al uso comercial.
-- No se han publicado evaluaciones de sesgo, alucinación ni robustez fuera de la métrica chrF++ interna; la evaluación se limita a 500 frases y 20 lenguas.
+- Solo traduce de inglés a lenguas africanas; no soporta la dirección inversa ni traducción entre lenguas africanas.
+- La calidad varía según la lengua: los benchmarks cubren 54 lenguas en FLORES+, 40 en AfriCOMET y solo 15 en MAFAND-MT, por lo que muchas de las 124 lenguas declaradas no tienen evaluación publicada.
+- Riesgo de alucinación y de traducciones inexactas en lenguas de muy bajos recursos o en textos largos; el autor recomienda segmentar documentos en frases.
+- El prompt debe usar el nombre de la lengua (p. ej. "Yoruba"), nunca el código ISO; el formato exacto (dos espacios tras los dos puntos) afecta al resultado.
+- La etiqueta de idioma de salida (`<yor>`, etc.) es un token de vocabulario normal, no especial, por lo que debe eliminarse manualmente con una expresión regular.
+- Los identificadores de token no coinciden con los de Gemma 3 original; herramientas que asuman el vocabulario estándar de Gemma fallarán.
+- Licencia restrictiva en la práctica: requiere atribución a "Translation models by Aletheia AI", cita del paper y cumplimiento de los Gemma Terms of Use y la Prohibited Use Policy de Google.
+- No se documentan sesgos específicos ni evaluaciones de seguridad; al derivar de Gemma 3, hereda los sesgos del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/gemma-3-0.8b-translate-Q8
-- Modelo padre (bf16/fp32, compatible con Transformers): https://huggingface.co/BeardedMonster/gemma-3-1b-translate-best
-- Licencia del modelo: https://huggingface.co/BeardedMonster/gemma-3-0.8b-translate-Q8/blob/main/LICENSE.md
-- Gemma Terms of Use y Prohibited Use Policy: https://ai.google.dev/gemma/terms
-- Paper del autor: en preparación, sin enlace disponible en la información proporcionada.
+- Hugging Face: https://huggingface.co/BeardedMonster/gemma-3-0.8b-translate-Q8
+- Modelo base (precisión completa): https://huggingface.co/BeardedMonster/gemma-3-1b-translate-best
+- Gemma 3 (Google): https://huggingface.co/google/gemma-3-1b-it
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python
+- Paper de referencia: citado en la model card como "accompanying paper"; no se proporciona URL en la información disponible.

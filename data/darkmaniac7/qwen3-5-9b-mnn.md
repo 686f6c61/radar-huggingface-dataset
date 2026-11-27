@@ -2,104 +2,105 @@
 
 ## Resumen
 
-Qwen3.5-9B-MNN es una conversion al formato MNN (Mobile Neural Network, de Alibaba) del modelo Qwen/Qwen3.5-9B, publicada por el usuario darkmaniac7 como espejo del repositorio oficial taobao-mnn/Qwen3.5-9B-MNN. El objetivo es ejecutar un modelo de ~9.000 millones de parametros en dispositivos moviles y CPUs sin GPU dedicada, algo que el formato original (safetensors) no permite de forma directa. La relevancia actual esta en el despliegue on-device: inferencia local, sin conexion y sin enviar datos a un servidor.
+Qwen3.5-9B-MNN es un paquete de inferencia on-device del modelo Qwen3.5 9B de Alibaba, convertido al formato MNN (Mobile Neural Network) de taobao-mnn y distribuido por TokForge para ejecutarse en telefonos Android. El modelo base es un transformer hibrido de 9.000 millones de parametros que combina capas de atencion lineal Gated DeltaNet con capas de atencion completa, e incorpora un codificador visual para entrada de texto e imagen. Este repositorio concreto cuantiza los pesos a 4 bits (bloque de 64, HQQ) manteniendo los embeddings en bf16, y anade una cabeza opcional de prediccion multi-token (MTP) para decodificacion especulativa en la ruta CPU de MNN.
 
-El repositorio reproduce byte a byte (mismos sha256) los ficheros del mirror de taobao-mnn y anade un cabezal opcional de prediccion multi-token (MTP) exportado con la herramienta MNN-TokForge. Este cabezal habilita decodificacion especulativa con profundidad 1 sobre la ruta de CPU de MNN, manteniendo el tronco sin modificar: el tronco verifica cada token propuesto, por lo que la calidad de salida es la del propio tronco. El autor reporta tasas de aceptacion de borradores del 94% en RAG, 85% en codigo, 61% en chat y 55% en consultas de asesoramiento, medidas solo en host.
+La relevancia del paquete radica en que permite ejecutar un modelo multimodal de 9B parametros con 262.144 tokens de contexto directamente en un telefono, sin conexion, sobre CPU. TokForge lo cataloga para dispositivos con 12 GB de RAM o mas, y ofrece un pack NPU adicional (Qwen3.5-9B-NPU-catalogpair) para Snapdragon 8 Elite Gen 5 que delega la lectura de prompts largos a la NPU mientras la CPU genera la respuesta. El repositorio ocupa 7,51 GB repartidos en 13 ficheros, con licencia Apache-2.0 heredada del modelo base.
 
-El paquete incluye ademas un componente visual (visual.mnn y visual.mnn.weight, 259 MB), lo que indica que la conversion conserva capacidad multimodal de imagen. El repositorio ocupa 7,5 GB y se distribuye bajo licencia Apache-2.0, la misma del modelo base y de la conversion original.
+La ficha describe el bundle tal como se publica: los ficheros troncales son identicos byte a byte al original de taobao-mnn (salvo `config.json`, que anade `dynamic_option: 2`), y la unica aportacion propia del autor es la cabeza MTP opcional. Esto implica que las capacidades, el entrenamiento y los benchmarks corresponden al modelo Qwen3.5 9B original, no a un modelo nuevo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen/Qwen3.5-9B) con componente visual; conversion a MNN. No se detalla la arquitectura interna en la informacion disponible |
-| Parametros totales | 9B nominales (segun la denominacion del modelo base Qwen/Qwen3.5-9B); el recuento exacto no esta disponible |
-| Parametros activos | No aplica: la informacion disponible no describe una arquitectura MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | 4 bits con bloque de 64 (`quant_bit 4 --quant_block 64`) confirmado para el cabezal MTP de 32k; el esquema exacto del tronco no se detalla. Los embeddings se distribuyen en bf16 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Qwen3.5 hibrida: 32 capas (24 Gated DeltaNet de atencion lineal + 8 de atencion completa), con codificador visual |
+| Parametros totales | 9B (modelo base); pesos cuantizados a 4 bits en este bundle |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion proporcionada) |
+| Longitud de contexto | 262.144 tokens en el modelo original |
+| Tipos de cuantizacion | 4 bits con bloque de 64 y HQQ en los pesos; embeddings en bf16; ruta CPU int8 tileada en MNN con cuantizacion de activaciones por bloque |
+| Idiomas soportados | 201 idiomas y dialectos (segun el modelo base); el campo `language` del repo solo indica "multilingual" |
 | Licencia | Apache-2.0 |
-| Formato de pesos | MNN: `llm.mnn`, `llm.mnn.weight`, `llm.mnn.json`, `llm_config.json`, `embeddings_bf16.bin`, `tokenizer.txt`, `visual.mnn`, `visual.mnn.weight`; cabezal MTP en `mtp-v32k.mnn`, `mtp-v32k.mnn.weight`, `mtp-v32k.mnn.vocab` |
+| Formato de pesos | Bundle MNN: `llm.mnn` (grafo), `llm.mnn.weight` (pesos), `embeddings_bf16.bin`, `visual.mnn` + `visual.mnn.weight`, `mtp-v32k.mnn` + `.weight` + `.vocab`, `tokenizer.txt` |
+| Vocabulario | 248.320 tokens |
+| Tamano del repo | 7,51 GB (13 ficheros) |
+| Libreria de inferencia | MNN (taobao-mnn) |
+| Plataforma objetivo | Android (CPU); pack NPU opcional para Snapdragon 8 Elite Gen 5 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversion, no un entrenamiento nuevo. La model card no aporta informacion sobre el entrenamiento del modelo base Qwen/Qwen3.5-9B (numero de tokens, composicion del dataset, uso de RLHF o DPO): esos datos no estan disponibles en la informacion proporcionada. Lo unico documentado es el proceso de exportacion: el tronco se corresponde con el mirror de taobao-mnn en el commit `149e1e052267ffa377b87e3bb0ddb75f46217a9a`, y el cabezal MTP se exporto desde Qwen/Qwen3.5-9B en el commit `c202236235762e1c871ad0ccb60c8ee5ba337b9a` mediante `llmexport --mtp --mtp_only --quant_bit 4 --quant_block 64`.
+El modelo base Qwen3.5 9B emplea una arquitectura hibrida de 32 capas en la que 24 son capas Gated DeltaNet (atencion lineal con estado recurrente) y 8 son capas de atencion completa. Esta combinacion reduce el coste computacional y de memoria del contexto largo respecto a un transformer puramente atencional, lo que hace viable una ventana de 262.144 tokens en hardware movil. El modelo incorpora ademas un codificador visual para entrada image-text-to-text y un vocabulario de 248.320 tokens, coherente con la cobertura de 201 idiomas y dialectos que declara el autor.
 
-La innovacion tecnica destacable es el cabezal de prediccion multi-token (MTP) para decodificacion especulativa. Se carga declarando `speculative_type: "mtp"`, `mtp_model: "mtp-v32k.mnn"` y `draft_predict_length: 1`, con un vocabulario borrador de 32k tokens en formato int32 (`mtp-v32k.mnn.vocab`). El borrador propone tokens y el tronco los verifica uno a uno, de modo que la salida final no se degrada respecto al tronco sin MTP. La aceptacion de borradores se ha medido unicamente en host, y TokForge la comprueba por telefono antes de activarla.
+El bundle MNN no reentrena el modelo: es una conversion de los pesos originales de Qwen a un grafo MNN con cuantizacion de 4 bits (bloque 64, HQQ) y embeddings en bf16. La conversion y el merito corresponden al equipo taobao-mnn; el repositorio de darkmaniac7 replica ese tronco sin cambios y anade una cabeza MTP de 237 MB (`mtp-v32k.mnn.weight`) con su vocabulario de 132 KB, pensada para decodificacion especulativa multi-token en la ruta CPU. El unico cambio en `config.json` es `dynamic_option: 2`, que activa cuantizacion de activaciones por bloque en la ruta int8 tileada de MNN para telefonos sin instrucciones Arm i8mm. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens vistos ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen/Qwen3.5-9B.
-- Procesamiento de imagenes: el paquete incluye el grafo y los pesos del codificador visual (`visual.mnn`, 547.632 bytes, y `visual.mnn.weight`, 258.831.244 bytes).
-- Decodificacion especulativa mediante cabezal MTP opcional, con profundidad de borrador 1 y verificacion por el tronco.
-- Inferencia en CPU y en dispositivo, sin necesidad de GPU, gracias al runtime MNN.
-- Rendimiento diferencial por tarea en el modo MTP: la tasa de aceptacion de borradores varia de forma marcada segun el tipo de consulta (94% en RAG frente a 55% en asesoramiento), lo que sugiere un comportamiento irregular segun el dominio.
+- Generacion de texto y razonamiento: el modelo base piensa antes de responder por defecto (modo thinking), segun la model card.
+- Entrada multimodal texto + imagen: pipeline `image-text-to-text` con codificador visual incluido en el bundle (`visual.mnn`).
+- Cobertura multilingue amplia: 201 idiomas y dialectos declarados para el modelo base.
+- Contexto largo: ventana de 262.144 tokens en el modelo original, adecuada para documentos extensos o conversaciones prolongadas.
+- Inferencia on-device sin conexion: una vez descargado el bundle, el chat funciona sin red.
+- Decodificacion especulativa: cabeza MTP opcional para acelerar la generacion en CPU.
+- Aceleracion NPU opcional: con Snapdragon 8 Elite Gen 5 y TokForge 1.3.9.6 o superior, un pack NPU separado procesa los prompts largos.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible en la informacion proporcionada.
-- Cobertura multilingue: no disponible en la informacion proporcionada.
-- Modo thinking o modos de razonamiento diferenciados: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional totalmente offline en movil: al estar empaquetado en MNN, el modelo puede ejecutarse en la CPU del terminal sin enviar texto del usuario a ningun servidor, lo que resulta adecuado para aplicaciones de mensajeria, notas o diario personal donde la privacidad es un requisito duro.
-- Descripcion y analisis de imagenes en el dispositivo: la presencia de `visual.mnn` permite tareas de comprension de imagen (etiquetado, descripcion de fotografias, extraccion de texto de capturas) sin subir la imagen a la nube, util en apps de galeria o escaneo de documentos.
-- RAG local sobre documentacion corporativa: es el escenario con mayor tasa de aceptacion de borradores MTP reportada (94%), por lo que encaja bien en un pipeline de recuperacion aumentada donde el modelo responde a preguntas sobre un corpus fijo y repetitivo en formato.
-- Autocompletado de codigo en entornos sin conexion: con un 85% de aceptacion de borradores en la prueba de codigo, el cabezal MTP resulta especialmente rentable en este dominio, lo que permite integrarlo en editores o terminales de campo sin acceso a red.
-- Asistente de campo para tecnicos y personal movil: consultas de procedimiento y comprobaciones puntuales en zonas sin cobertura. Conviene tener en cuenta que la tasa de aceptacion en asesoramiento fue la mas baja (55%), por lo que la aceleracion por MTP sera menor en este tipo de consultas largas y abiertas.
-- Chat de proposito general con latencia reducida en CPU: con un 61% de aceptacion en conversacion, el modo especulativo aporta una mejora moderada sin alterar la calidad de salida, ya que el tronco verifica cada token.
-- Prototipado de despliegue en CPU sin GPU: el formato MNN permite validar el comportamiento del modelo base en hardware modesto antes de decidir una inversion en infraestructura de GPU.
+- Asistente conversacional offline en movil: el bundle permite mantener conversaciones multi-turno sin conexion en telefonos con 12 GB de RAM o mas, usando los 262.144 tokens de contexto del modelo base para conservar historial largo.
+- Analisis de imagenes en el dispositivo: gracias al codificador visual incluido, se pueden enviar fotos junto a preguntas de texto (por ejemplo, lectura de documentos o descripcion de escenas) sin subir datos a un servidor.
+- Procesamiento de documentos largos en local: la ventana de contexto del modelo base permite resumir o consultar contratos, articulos o transcripciones extensas directamente en el telefono.
+- Traduccion y asistencia multilingue: la cobertura de 201 idiomas del modelo base lo hace util para traduccion y redaccion en dispositivos de usuarios con distintos idiomas.
+- Prototipado de aplicaciones moviles con MNN: desarrolladores que integren la libreria MNN pueden usar este bundle como referencia de conversion de un modelo Qwen3.5 9B a 4 bits con embeddings bf16.
+- Evaluacion de decodificacion especulativa en edge: la cabeza MTP opcional permite medir la ganancia de la prediccion multi-token en CPU movil frente a la generacion autoregresiva estandar.
+- Aceleracion con NPU en hardware de gama alta: en Snapdragon 8 Elite Gen 5 con 24 GB de RAM, el pack NPU complementario reduce la latencia de lectura de prompts largos manteniendo la generacion en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento documentado son las tasas de aceptacion de borradores del cabezal MTP, medidas en host (no en dispositivo):
-
-| Tarea | Borradores aceptados (profundidad 1) |
-|---|---|
-| RAG | 94% |
-| Codigo | 85% |
-| Chat | 61% |
-| Asesoramiento | 55% |
-
-No se dispone de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estandar para este modelo o su base en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Huella en disco del repositorio: 7,5 GB, repartidos entre el tronco cuantizado (`llm.mnn.weight`, 4.961.957.226 bytes), los embeddings en bf16 (`embeddings_bf16.bin`, 2.034.237.440 bytes) y el codificador visual (`visual.mnn.weight`, 258.831.244 bytes).
-- Memoria estimada en ejecucion: en torno a 7,5-9 GB considerando los pesos, los embeddings y el overhead del runtime y de la cache KV. Es una estimacion derivada de los tamanos de fichero, no un dato publicado.
-- No cabe en GPUs consumer de 8 GB de VRAM sin offload. En tarjetas de 24 GB (RTX 3090, RTX 4090) habria margen de sobra, aunque el objetivo declarado del formato MNN es la ejecucion en CPU y dispositivo, no en GPU.
-- En movil, el requisito practico es un terminal con 8-12 GB de RAM o superior. No se publica una lista oficial de dispositivos compatibles.
-- Cabezal MTP: anade 236.794.054 bytes de pesos mas un vocabulario de 132.160 bytes, un coste marginal frente al tronco.
-- Opciones de despliegue: runtime MNN y MNN-TokForge, que es el camino soportado. vLLM, llama.cpp, TGI y Ollama no cargan pesos en formato MNN de forma nativa; para usarlos habria que reconvertir desde Qwen/Qwen3.5-9B.
-- Latencia y throughput: no disponibles. La unica referencia cuantitativa es que `draft_predict_length` esta fijado a 1, es decir, se propone un unico token por paso especulativo.
+- RAM del dispositivo: 12 GB o mas para el bundle principal, segun el catalogo de TokForge.
+- Pack NPU opcional: requiere unos 6,6 GB adicionales de memoria mientras el modelo esta cargado, lo que en la practica exige un telefono de 24 GB.
+- SoC compatible con el pack NPU: Snapdragon 8 Elite Gen 5 con TokForge 1.3.9.6 o superior.
+- Ruta de ejecucion por defecto: CPU del telefono Android; MNN selecciona la ruta int8 tileada con cuantizacion de activaciones por bloque en telefonos sin instrucciones Arm i8mm.
+- Tamano de descarga: 7,51 GB en 13 ficheros.
+- GPUs de escritorio (A100, H100, RTX 4090): no disponible; el bundle esta orientado a MNN en Android y no se documenta su ejecucion en GPU de servidor.
+- Opciones de despliegue: aplicacion TokForge (Google Play en Android, TestFlight en iOS) o la libreria MNN directamente.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion disponible no permite comparar con modelos de terceros de la misma categoria, ya que no se aportan especificaciones ni resultados del modelo base. La comparacion factible es con el propio linaje del repositorio:
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-9B-MNN (este repo) | 9B, 4 bits HQQ | 262.144 tokens | Bundle MNN para Android CPU, con MTP opcional | Apache-2.0 | Mirror de taobao-mnn con cabeza MTP anadida |
+| taobao-mnn/Qwen3.5-9B-MNN | 9B, 4 bits HQQ | 262.144 tokens | Bundle MNN para Android CPU | Apache-2.0 (segun el repo espejo) | Conversion original de taobao-mnn, sin MTP |
+| Qwen/Qwen3.5-9B | 9B | 262.144 tokens | Pesos originales (formato no detallado en la informacion) | Apache-2.0 | Modelo base de Alibaba, multimodal |
 
-| Modelo | Formato | Tamano | Licencia | Relacion |
-|---|---|---|---|---|
-| darkmaniac7/Qwen3.5-9B-MNN | MNN | 7,5 GB de repositorio | Apache-2.0 | Este repositorio; mirror del de taobao-mnn mas cabezal MTP opcional |
-| taobao-mnn/Qwen3.5-9B-MNN | MNN | No disponible | Apache-2.0 (segun el autor del mirror) | Origen byte a byte del tronco (commit `149e1e0522`) |
-| Qwen/Qwen3.5-9B | No disponible | 9B nominales | No disponible | Modelo base; origen del cabezal MTP (commit `c2022362`) |
-
-No se dispone de datos de contexto, rendimiento ni licencia del modelo base en la informacion proporcionada.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento relativo entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo dia (2026-10-10). No hay evidencia de uso en produccion ni validacion por terceros.
-- Es un mirror de terceros, no una publicacion oficial. Aunque el autor afirma que los ficheros del tronco son identicos byte a byte al original y proporciona los sha256, la verificacion queda en manos del usuario.
-- El cabezal MTP ha sido validado solo en host. El propio autor indica que TokForge comprueba la aceptacion por telefono antes de activarla, lo que implica que el rendimiento en dispositivo puede diferir del reportado.
-- Rendimiento muy irregular segun la tarea: la aceptacion de borradores cae del 94% en RAG al 55% en asesoramiento, de modo que la ganancia de velocidad por decodificacion especulativa no es uniforme.
-- No se documentan sesgos conocidos, riesgo de alucinacion, limitaciones de contexto ni cobertura idiomatica del modelo base en la informacion proporcionada.
-- La longitud de contexto no esta documentada, lo que impide dimensionar la cache KV y planificar despliegues con conversaciones o documentos largos.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el usuario debe verificar que la licencia del modelo base Qwen/Qwen3.5-9B sea compatible, dato que no se aporta.
-- Dependencia fuerte del runtime MNN: la integracion en stacks habituales de servidor (vLLM, TGI) requeriria una reconversion a partir del modelo base, no de estos pesos.
-- La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados eran contenidos no pertinentes. Por tanto no hay documentacion externa, articulos ni discusiones tecnicas que respalden la ficha mas alla de la propia model card.
+- El repositorio no es un modelo nuevo: replica el bundle de taobao-mnn sin cambios en el tronco; cualquier limitacion del modelo base Qwen3.5 9B se hereda integra.
+- Riesgo de alucinacion: no se documenta ninguna mitigacion especifica en la informacion disponible; aplican las limitaciones habituales de un modelo de 9B.
+- Sesgos: no se detallan sesgos conocidos en la model card; la cobertura de 201 idiomas no garantiza calidad uniforme en todos ellos.
+- Restriccion de plataforma: el bundle esta pensado para MNN en Android; no se documenta su uso en servidores, GPUs de escritorio ni otros runtimes.
+- Requisito de memoria elevado para movil: 12 GB de RAM minimo y 24 GB en la practica si se usa el pack NPU, lo que excluye a la mayoria de telefonos del mercado.
+- El ajuste `dynamic_option: 2` en `config.json` altera el comportamiento de la ruta int8 de MNN; quien ejecute el bundle con MNN por su cuenta debe tenerlo en cuenta.
+- La cabeza MTP es opcional y solo se usa en la ruta CPU de TokForge; su ganancia real de latencia no esta cuantificada en la informacion proporcionada.
+- Licencia Apache-2.0: permite uso comercial, pero se debe conservar la atribucion al equipo taobao-mnn por la conversion y al equipo Qwen por el modelo.
+- No hay datos publicados de benchmarks, latencia ni throughput que permitan validar el rendimiento en produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-9B-MNN
-- Repositorio de origen del tronco (taobao-mnn): https://huggingface.co/taobao-mnn/Qwen3.5-9B-MNN
+- Repositorio Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-9B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Commits citados en la model card: `149e1e052267ffa377b87e3bb0ddb75f46217a9a` (taobao-mnn) y `c202236235762e1c871ad0ccb60c8ee5ba337b9a` (Qwen)
-- Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio resultados relevantes.
+- Conversion original de taobao-mnn: https://huggingface.co/taobao-mnn/Qwen3.5-9B-MNN
+- Pack NPU complementario: https://huggingface.co/darkmaniac7/Qwen3.5-9B-NPU-catalogpair
+- Web de TokForge: https://tokforge.ai
+- Discord de TokForge: https://discord.gg/Acv3CBtfVm
+- TokForge en Google Play: https://play.google.com/store/apps/details?id=dev.tokforge
+- TokForge en iOS TestFlight: https://testflight.apple.com/join/jnufjzRr
+- Coleccion TokForge Chat Models (MNN): https://huggingface.co/collections/darkmaniac7/tokforge-chat-models-mnn-69cdcddc86ea126668a5e9e8
+- Coleccion TokForge Qwen Models (MNN): https://huggingface.co/collections/darkmaniac7/tokforge-qwen-models-mnn-69cc8b98317551109a7ae907
+- Coleccion TokForge Vision Models: https://huggingface.co/collections/darkmaniac7/tokforge-vision-models-6af3fdd73fff746c25bdd4fd
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

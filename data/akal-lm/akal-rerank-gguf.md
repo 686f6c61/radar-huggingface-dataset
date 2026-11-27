@@ -2,99 +2,105 @@
 
 ## Resumen
 
-Akal-Rerank-GGUF es un reranker del tipo cross-encoder desarrollado por la iniciativa Akal LM (organización `akal-lm`, investigador principal Muhammad Luqni Baehaqi) y publicado bajo licencia Apache 2.0. Se trata de una conversión a formato GGUF del modelo base `madebyaris/rerank-indonesia`, un clasificador de secuencias basado en XLM-RoBERTa de 12 capas y 118 millones de parámetros, orientado a la segunda etapa de filtrado en pipelines de generación aumentada por recuperación (RAG). Su propuesta diferencial es ejecutarse íntegramente en CPU sin GPU, con una huella en disco de 119 MB (cuantización Q4_K_M) y un consumo máximo de RAM de unos 550 MB, lo que lo hace apto para despliegues en el borde (edge) y entornos sin acelerador.
+Akal-Rerank-GGUF es un reranker de tipo cross-encoder cuantizado en formato GGUF, desarrollado por Muhammad Luqni Baehaqi dentro de la iniciativa Akal LM (`akal-lm`). Se construye sobre el modelo base `madebyaris/rerank-indonesia`, un clasificador de secuencias XLM-RoBERTa de 12 capas y 118 millones de parametros, y se distribuye con licencia Apache 2.0. Su proposito es actuar como segunda etapa de precision en pipelines de Retrieval-Augmented Generation (RAG) que corren sobre CPUs sin GPU, y ademas como puerta de abstención epistémica antes de invocar al generador LLM.
 
-El modelo incorpora una matriz de importancia (importance matrix, `imatrix_rerank_indo_id.dat`) calibrada sobre pares consulta-pasaje en indonesio, que según la model card reduce el tamaño en disco un 73,5 % frente a los pesos FP32 de PyTorch, recorta el pico de RAM hasta un 53,9 % y acelera el arranque en frío 3,35 veces, manteniendo una correlación de Pearson de 0,9993–0,9999 con los logits en FP32. Además de reordenar candidatos, el modelo se presenta como una "puerta de abstención epistémica": si la puntuación máxima del cross-encoder cae por debajo de un umbral (τ = 4,48 en Q4_K_M), el sistema puede descartar la consulta como no respondible antes de invocar al generador LLM.
+El modelo resuelve dos problemas concretos del RAG en produccion: la desambiguacion de documentos casi duplicados que un bi-encoder no distingue por similitud coseno, y la deteccion de consultas no respondibles o con premisas falsas. Para ello emplea una matriz de importancia contrastiva especifica para indonesio (`imatrix_rerank_indo_id.dat`) que guia la cuantizacion y preserva la correlacion de logits con FP32 en el rango 0.9993-0.9999.
 
-Su relevancia actual radica en que cubre un hueco concreto: rerankers de muy bajo coste computacional para RAG en indonesio e inglés que funcionan en hardware modesto, con métricas publicadas de abstención (AUROC 99,85 %) y de reordenación (MRR@10 del 100 % en el conjunto de evaluación propio). El contexto de este modelo es el de una familia de componentes encadenados (retriever `Akal-Embed-GGUF` y generador `Akal-1B-GGUF`) pensada para despliegues offline.
+Con 117.640.321 parametros totales y un tamano de repositorio de 0.3 GB, el modelo ofrece una huella de 119 MB en Q4_K_M y 126 MB en Q8_0, lo que lo hace viable en entornos de borde y en despliegues offline. Esta pensado para el par de idiomas indonesio-ingles, aunque su arquitectura XLM-RoBERTa subyacente es multilingue. Su relevancia actual radica en que demuestra que un reranker de calidad utilizable en produccion cabe en una fraccion minima de RAM y se ejecuta en CPU con latencias de pocos segundos en frio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Cross-encoder XLM-RoBERTa (clasificador de secuencias, 12 capas), pooling `RANK` |
-| Parámetros totales | 117.640.321 (118 M) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Cross-encoder XLM-RoBERTa de 12 capas, pooling=RANK (sequence classification) |
+| Parametros totales | 117.640.321 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF Q4_K_M (con imatrix en indonesio) y Q8_0 |
-| Idiomas soportados | Indonesio (id) e inglés (en) |
+| Tipos de cuantizacion | GGUF Q4_K_M (con imatrix de indonesio) y Q8_0 |
+| Idiomas soportados | Indonesio (id) e ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (también existen pesos PyTorch FP32 del modelo base) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un cross-encoder basado en XLM-RoBERTa de 12 capas y 118 millones de parámetros, configurado como clasificador de secuencias con pooling de tipo `RANK`. A diferencia de los bi-encoders, procesa conjuntamente el par (consulta, pasaje) mediante atención cruzada token a token, lo que permite resolver distinciones finas entre documentos con vocabulario casi idéntico (por ejemplo, procedimientos operativos con nombres muy similares). El modelo base es `madebyaris/rerank-indonesia`; la model card no detalla el volumen de tokens de entrenamiento ni la composición exacta del dataset original, aunque sí indica que la conversión GGUF se calibró con una matriz de importancia contrastiva específica para indonesio (`imatrix_rerank_indo_id.dat`).
+El modelo es un cross-encoder basado en XLM-RoBERTa, con 12 capas y 118 millones de parametros, configurado como clasificador de secuencias con `pooling=RANK`. A diferencia de un bi-encoder, procesa conjuntamente el par `(query, passage)` mediante atencion cruzada token a token, lo que le permite resolver distinciones factuales finas entre documentos con vocabulario casi identico. El modelo base es `madebyaris/rerank-indonesia`, y la variante GGUF se ha calibrado con una matriz de importancia contrastiva especifica para indonesio (`imatrix_rerank_indo_id.dat`) durante el proceso de cuantizacion.
 
-La innovación técnica principal no está en el entrenamiento sino en la cuantización: el uso de una importance matrix calibrada sobre pares consulta-pasaje en indonesio permite cuantizar a Q4_K_M preservando la fidelidad de los logits (correlación de Pearson de 0,999301 frente a FP32 y 100 % de acuerdo en el Top-1). No se menciona en la información disponible el uso de RLHF, DPO ni decodificación especulativa, algo esperable en un modelo de ranking y no generativo.
+El autor no detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO; el modelo base es un clasificador supervisado de ranking. La innovacion tecnica destacable es el uso de la matriz de importancia para cuantizar a Q4_K_M preservando una correlacion de Pearson de logits frente a FP32 de 0.999301, con una reduccion del 73.5% en tamano en disco, una reduccion de hasta el 53.9% en RAM pico (550 MB frente a 1.209 MB en PyTorch FP32) y una aceleracion de 3.35x en arranque en frio por CLI (2.21 s frente a 7.41 s).
 
 ## Capacidades
 
-- Reordenación (reranking) de pares consulta-pasaje mediante puntuación cruzada, para segunda etapa de filtrado en pipelines RAG.
-- Puntuación de relevancia calibrada que permite umbralizar y actuar como puerta de abstención epistémica antes de invocar al LLM generador.
-- Discriminación de near-duplicates: resuelve diferencias sutiles entre documentos con vocabulario casi idéntico gracias a la atención cruzada.
-- Capacidades multilingües limitadas a indonesio e inglés.
-- Inferencia en CPU pura mediante llama.cpp, sin necesidad de GPU.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en el repositorio).
-- No es un modelo generativo: no produce texto, tool calling ni razonamiento multi-paso.
+- Reranking de pares `(query, passage)` mediante cross-attention, con puntuacion de logits por par.
+- Filtrado de precision en segunda etapa sobre candidatos recuperados por un bi-encoder (por ejemplo, `akal-lm/Akal-Embed-GGUF`).
+- Abstención epistémica: evaluacion del maximo logit de reranking frente a un umbral tau para interceptar consultas no respondibles o con premisa falsa antes de invocar al LLM generador.
+- Resolucion de near-duplicates y confusores de vocabulario casi identico.
+- Inferencia en CPU pura sin GPU, mediante llama.cpp.
+- Soporte de idiomas indonesio e ingles; la arquitectura XLM-RoBERTa subyacente es multilingue, aunque la calibracion imatrix es especifica para indonesio.
+- Integracion como etapa de ranking en pipelines RAG; no es un modelo generativo ni soporta tool calling ni razonamiento multi-paso por si mismo.
 
 ## Casos de uso
 
-- Filtrado de segunda etapa en RAG empresarial en indonesio: tras recuperar el Top-10 con un bi-encoder como `Akal-Embed-Indo`, el cross-encoder reordena los candidatos y eleva el Hit@1 del 96,36 % al 100 % en el benchmark propio del autor, resolviendo confusiones entre documentos casi idénticos.
-- Puerta de abstención antes del generador: evaluando si la puntuación máxima supera el umbral τ = 4,48, el sistema intercepta consultas fuera de dominio o con premisas falsas (AUROC del 99,85 %) y evita que el LLM genere respuestas alucinadas, ahorrando además coste de inferencia.
-- Despliegue en el borde sin GPU: con 119 MB en disco y unos 550 MB de pico de RAM, cabe en dispositivos de bajo consumo, intranets aisladas o portátiles modestos, donde un reranker basado en GPU no sería viable.
-- Búsqueda documental interna en organismos con corpus en indonesio e inglés: procedimientos operativos, manuales y normativa donde las consultas requieren distinguir entre documentos con títulos y contenido muy parecidos.
-- Asistencia offline en campo: aplicaciones de consulta de manuales técnicos en entornos sin conectividad, ejecutando el pipeline completo (retriever, reranker y generador de 1B) en CPU local.
-- Evaluación y monitorización de calidad de recuperación: el modelo puede usarse como juez de relevancia para medir y depurar pipelines de búsqueda existentes, comparando sus puntuaciones con las de otras etapas.
+- RAG empresarial en indonesio sobre CPU sin GPU: el modelo actua como etapa 2 tras un bi-encoder, reordenando el Top-10 de candidatos y elevando el Hit@1 del 96.36% al 100% en el benchmark interno del autor, con 119 MB de huella y 550 MB de RAM pico.
+- Puerta de abstención antes del generador: con un umbral tau=4.48 (Q4_K_M) o tau=4.98 (Q8_0), el sistema intercepta consultas fuera de dominio o con premisas falsas con un AUROC de 99.85%, evitando que el LLM genere respuestas alucinadas.
+- Desambiguacion de procedimientos operativos: en documentacion con SOPs casi identicos (por ejemplo, "Pencucian Kasur Harian Pad Merah" frente a "Pemolesan Akhir Pad Putih"), el cross-encoder resuelve la distincion token a token que la similitud coseno no captura.
+- Busqueda documental en borde o entornos air-gapped: al ejecutarse con llama.cpp en CPU y pesar 119-126 MB, se puede desplegar en dispositivos de borde, portatiles modestos o servidores sin acelerador.
+- Filtrado de candidatos en motores de busqueda interna: integrado como etapa de reranking sobre resultados de un retriever denso, mejora el MRR@10 del 98.18% al 100% en el benchmark interno del autor.
+- Evaluacion de calidad de recuperacion en pipelines MIRACL indonesio: el modelo se ha validado sobre 150 consultas de Wikipedia en indonesio con Top-20 candidatos (3.000 pares query-passage, 362.963 tokens), lo que lo hace util para tareas de evaluacion y ajuste de umbrales en produccion.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre un Intel Core i5-8250U con 4 hilos y CPU pura. El primer conjunto es un benchmark propio en indonesio: 65 documentos multdominio (25 near-duplicates), 67 consultas (55 respondibles y 12 trampa), reordenando el Top-10 de `Akal-Embed-Indo Q4_K_M`.
+Resultados del benchmark interno de dominio indonesio del autor (Intel Core i5-8250U, 4 hilos, CPU pura; 65 documentos, 67 consultas con 12 trampas no respondibles, Top-10 de `Akal-Embed-Indo Q4_K_M`):
 
-| Variante | Formato / precisión | Disco | Pico de RAM | Hit@1 (etapa 1 → etapa 2) | MRR@10 | AUROC abstención | Pearson vs FP32 |
+| Variante | Formato / precision | Tamano disco | RAM pico | Hit@1 (etapa 1 -> etapa 2) | MRR@10 | AUROC abstención | Bal. Acc abstención | Pearson vs FP32 |
+|---|---|---|---|---|---|---|---|---|
+| Solo bi-encoder (etapa 1) | Akal-Embed-Indo Q4_K_M | 119.0 MB | 515.8 MB | 96.36% | 98.18% | 86.97% | 87.12% | — |
+| Akal-Rerank-Indo Q4_K_M | GGUF Q4_K_M + imatrix ID | 119.1 MB | 550.3 MB | 96.36% -> 100.0% | 100.0% | 99.85% | 99.09% (tau=4.48) | 0.999301 |
+| Akal-Rerank-Indo Q8_0 | GGUF Q8_0 | 126.4 MB | 547.1 MB | 96.36% -> 100.0% | 100.0% | 99.70% | 98.18% (tau=4.98) | 0.999962 |
+| rerank-indonesia sin calibrar | GGUF Q4_K_M sin imatrix | 119.1 MB | 550.3 MB | 96.36% -> 100.0% | 100.0% | 99.70% | 98.18% | 0.998995 |
+| rerank-indonesia referencia | PyTorch FP32 | 448.8 MB | 942.6 MB | 96.36% -> 100.0% | 100.0% | 99.70% | 98.18% | 1.000000 |
+| mMiniLMv2-L12-mMARCO | GGUF Q4_K_M + imatrix ID | 119.1 MB | 550.2 MB | 96.36% -> 100.0% | 100.0% | 99.85% | 99.09% | 0.998901 |
+
+Resultados en MIRACL indonesio (`mteb/MIRACLReranking` split `id` dev; 150 consultas Wikipedia, Top-20 candidatos, 3.000 pares, 362.963 tokens):
+
+| Variante | Tamano disco | RAM pico (RSS) | Hit@1 (etapa 1 -> etapa 2) | Hit@3 | MRR@10 | nDCG@10 | Pearson vs FP32 |
 |---|---|---|---|---|---|---|---|
-| Bi-encoder solo (etapa 1) | Q4_K_M | 119,0 MB | 515,8 MB | 96,36 % | 98,18 % | 86,97 % | — |
-| Akal-Rerank-Indo Q4_K_M | GGUF Q4_K_M + imatrix | 119,1 MB | 550,3 MB | 96,36 % → 100,0 % | 100,0 % | 99,85 % | 0,999301 |
-| Akal-Rerank-Indo Q8_0 | GGUF Q8_0 | 126,4 MB | 547,1 MB | 96,36 % → 100,0 % | 100,0 % | 99,70 % | 0,999962 |
-| rerank-indonesia sin calibrar | GGUF Q4_K_M sin imatrix | 119,1 MB | 550,3 MB | 96,36 % → 100,0 % | 100,0 % | 99,70 % | 0,998995 |
-| rerank-indonesia base | PyTorch FP32 | 448,8 MB | 942,6 MB | 96,36 % → 100,0 % | 100,0 % | 99,70 % | 1,000000 |
+| Solo bi-encoder (etapa 1) | 119.0 MB | 515.8 MB | 60.00% | 80.67% | 70.51% | 60.44% | — |
 
-El segundo conjunto corresponde a MIRACL indonesio (`mteb/MIRACLReranking`, split dev): 150 consultas de Wikipedia por Top-20 candidatos (3.000 pares, 362.963 tokens). La información disponible en la model card está truncada, por lo que solo se recogen los datos de la etapa 1: Hit@1 del 60,00 %, Hit@3 del 80,67 %, MRR@10 del 70,51 % y nDCG@10 del 60,44 %. Los resultados de las variantes de Akal-Rerank en este benchmark no están disponibles en la información proporcionada.
+Los datos de la tabla MIRACL para las variantes del reranker no estan completos en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; la inferencia es en CPU. Pico de RAM medido de 550,3 MB (Q4_K_M) y 547,1 MB (Q8_0) con llama.cpp.
-- GPU recomendadas: ninguna; el modelo está diseñado para CPU. No se han publicado requisitos de GPU.
-- Cabe en cualquier equipo de consumo: el tamaño de 119–126 MB en disco y ~550 MB de RAM permiten ejecutarlo en portátiles, mini-PC y dispositivos de borde.
-- Opciones de despliegue: llama.cpp (referencia principal), y por extensión los runners compatibles con GGUF, como Ollama. El repositorio está etiquetado como `endpoints_compatible`.
-- Latencia y throughput: la model card cita un arranque en frío de 2,21 s frente a 7,41 s en FP32 (3,35 veces más rápido) en un i5-8250U con 4 hilos. No se detallan cifras de throughput en la información disponible.
+- VRAM estimada para inferencia: no aplica, el modelo esta disenado para inferencia en CPU; en GPU la huella seria marginal dado su tamano.
+- RAM pico medida: 550.3 MB en Q4_K_M y 547.1 MB en Q8_0 (frente a 942.6 MB en PyTorch FP32).
+- GPU recomendadas: no requeridas; cualquier GPU consumer puede alojarlo, pero el diseno apunta a CPU.
+- Cabe en cualquier consumer GPU y en practicamente cualquier CPU moderna; el benchmark de referencia se ejecuto en un Intel Core i5-8250U con 4 hilos.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), con integracion via CLI o libreria; no se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- Latencia y throughput: arranque en frio por CLI de 2.21 s en Q4_K_M frente a 7.41 s en PyTorch FP32 (aceleracion de 3.35x); el throughput concreto no esta disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Akal-Rerank-GGUF | 118 M | No disponible | id, en | Apache 2.0 | GGUF (Q4_K_M, Q8_0) | Reranker CPU con puerta de abstención calibrada |
-| madebyaris/rerank-indonesia | 118 M | No disponible | id | No disponible | PyTorch FP32 | Modelo base sin cuantizar; ~449 MB en disco |
-| mMiniLMv2-L12-mMARCO | No disponible | No disponible | Multilingüe | No disponible | GGUF Q4_K_M + imatrix | Usado como referencia en el benchmark del autor; resultados equivalentes en Hit@1/MRR |
-
-La comparativa con otros rerankers de la misma categoría (por ejemplo, `bge-reranker-base` o `jina-reranker`) no está disponible en la información proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Akal-Rerank-GGUF (este modelo) | 117.640.321 | No disponible | GGUF Q4_K_M / Q8_0 | Apache 2.0 | Cross-encoder CPU, indonesio/ingles, con abstención calibrada |
+| madebyaris/rerank-indonesia (base) | 118M | No disponible | PyTorch FP32 | No disponible | Cross-encoder XLM-RoBERTa sin cuantizar |
+| mMiniLMv2-L12-mMARCO | No disponible | No disponible | GGUF Q4_K_M + imatrix | No disponible | Cross-encoder multilingue comparado en el benchmark del autor |
+| Akal-Embed-GGUF (etapa 1) | No disponible | No disponible | GGUF | No disponible | Bi-encoder denso de 384 dimensiones, recuperacion sub-15 ms |
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística restringida a indonesio e inglés; el rendimiento en castellano u otros idiomas no está documentado y previsiblemente será deficiente.
-- Los benchmarks publicados proceden del propio autor y de conjuntos de evaluación pequeños (67 consultas en el benchmark propio, 150 en MIRACL), por lo que deben interpretarse con cautela.
-- La longitud máxima de contexto no se especifica en la información disponible; conviene verificar el límite de tokens del modelo base antes de usarlo con pasajes largos.
-- El umbral de abstención (τ = 4,48 para Q4_K_M, τ = 4,98 para Q8_0) está calibrado sobre el corpus del autor; en dominios distintos requerirá recalibración para mantener la tasa de falsos rechazos bajo control.
-- Riesgo de alucinación no aplica directamente al ser un modelo de ranking, pero una calibración incorrecta del umbral puede provocar rechazos indebidos de consultas válidas o aceptación de consultas no respondibles.
-- No se documentan sesgos específicos del modelo base ni del proceso de cuantización en la información disponible.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base `madebyaris/rerank-indonesia`, cuya licencia no se detalla en la información proporcionada.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
+- El modelo esta calibrado especificamente para indonesio; su rendimiento en otros idiomas, aunque la arquitectura XLM-RoBERTa sea multilingue, no esta validado en la informacion disponible.
+- Los benchmarks presentados son internos del autor y de escala reducida (65 documentos y 67 consultas en el benchmark de dominio; 150 consultas en MIRACL); no deben extrapolarse sin validacion propia.
+- El umbral de abstención (tau=4.48 en Q4_K_M, tau=4.98 en Q8_0) esta calibrado para el benchmark del autor y requiere reajuste en dominios distintos.
+- Riesgo de alucinacion: no aplica directamente al ser un modelo de ranking, pero su uso como puerta de abstención depende de la calibracion del umbral; un tau mal ajustado puede dejar pasar consultas no respondibles o bloquear consultas validas.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base `madebyaris/rerank-indonesia` debe verificarse por separado; su licencia no consta en la informacion disponible.
+- No es un modelo generativo: no soporta tool calling, agentes ni razonamiento multi-paso por si mismo; debe combinarse con un retriever y un generador.
+- La longitud de contexto no esta documentada; para pasajes largos conviene validar el truncamiento antes de desplegar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/akal-lm/Akal-Rerank-GGUF
+- Modelo en Hugging Face: https://huggingface.co/akal-lm/Akal-Rerank-GGUF
 - Modelo base: https://huggingface.co/madebyaris/rerank-indonesia
-- Retriever complementario (etapa 1): https://huggingface.co/akal-lm/Akal-Embed-GGUF
-- Generador complementario: https://huggingface.co/akal-lm/Akal-1B-GGUF
-- Preprint de investigación (Vol. 3, CC-BY 4.0): https://huggingface.co/akal-lm/Akal-Rerank-GGUF/resolve/main/Akal_Vol3_Architecture_Research_Paper.pdf
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Retriever etapa 1: https://huggingface.co/akal-lm/Akal-Embed-GGUF
+- Generador LLM complementario: https://huggingface.co/akal-lm/Akal-1B-GGUF
+- Preprint de investigacion (Vol. 3, CC-BY 4.0): https://huggingface.co/akal-lm/Akal-Rerank-GGUF/resolve/main/Akal_Vol3_Architecture_Research_Paper.pdf
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil del autor: https://huggingface.co/luqni

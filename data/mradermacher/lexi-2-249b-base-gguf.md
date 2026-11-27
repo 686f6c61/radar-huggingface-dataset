@@ -2,89 +2,88 @@
 
 ## Resumen
 
-Lexi 2.249B es un modelo de lenguaje de tipo transformer, derivado de la familia Qwen2 según las etiquetas del repositorio, con 2.245.681.664 parámetros totales (aproximadamente 2.250 millones). Lo desarrolla Reallexi-llc, que lo ha afinado sobre el conjunto de datos `reallexi/lexi-coder-v3-datasest` para tareas de generación de código. Esta ficha documenta la versión cuantizada en formato GGUF publicada por mradermacher, un conocido creador de cuantizaciones de la comunidad, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+Lexi 2.249B es un modelo de lenguaje de 2.245.681.664 parámetros (aproximadamente 2,25 mil millones) desarrollado por Reallexi-llc, especializado en tareas de programación. Se trata de un fine-tune del modelo base Reallexi-llc/lexi-2-249b-base, entrenado sobre el dataset reallexi/lexi-coder-v3-datasest, y orientado explícitamente a casos de uso de generación y asistencia de código. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El modelo está orientado a programación y conversación, con etiquetas que lo clasifican como `coding`, `conversational` y `fine-tuned`. Su tamaño compacto (2.250 millones de parámetros) lo sitúa en la categoría de modelos pequeños capaces de ejecutarse en GPU de consumo e incluso en CPU con cuantizaciones agresivas. El repositorio GGUF ocupa 20,4 GB e incluye once variantes de cuantización, desde Q2_K (1,0 GB) hasta f16 (4,6 GB).
+El modelo pertenece a la familia arquitectónica Qwen2, según las etiquetas del repositorio, lo que lo sitúa en la estirpe de transformers decoder-only con atención causal estándar. Su tamaño compacto (2,25B) lo hace adecuado para despliegues locales, entornos con recursos limitados y aplicaciones donde la latencia y el coste de inferencia son críticos, sacrificando capacidad bruta frente a modelos de mayor escala.
 
-La relevancia de esta publicación radica en que facilita el despliegue local del modelo base sin necesidad de infraestructura de servidor, aunque con las limitaciones propias de un modelo de este tamaño y de una licencia heredada que no es plenamente abierta. No se dispone de información pública sobre benchmarks, longitud de contexto ni detalles del entrenamiento más allá de lo indicado en la model card.
+La relevancia de esta ficha radica en que ofrece una alternativa ligera y cuantizada para tareas de codificación, con un conjunto amplio de cuantizaciones estáticas (desde Q2_K hasta f16) que cubren desde 1,0 GB hasta 4,6 GB de peso en disco. No obstante, la información pública disponible sobre el modelo base es escasa: no se detallan la longitud de contexto, la composición exacta del dataset ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen2, según etiquetas del repositorio) |
-| Parametros totales | 2.245.681.664 (aproximadamente 2,25 mil millones) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
+| Arquitectura | Transformer decoder-only (familia Qwen2, según etiquetas del repositorio) |
+| Parametros totales | 2.245.681.664 (~2,25B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Other; hereda los términos del modelo base y del conjunto de datos (`inherits-base-model-and-dataset-terms`) |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye en safetensors |
+| Idiomas soportados | en (inglés) |
+| Licencia | other (inherits-base-model-and-dataset-terms) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que Lexi 2.249B es un transformer derivado de Qwen2, afinado por Reallexi-llc sobre el conjunto de datos `reallexi/lexi-coder-v3-datasest`, orientado a código. El número de parámetros reales, extraído de los safetensors del modelo base, es de 2.245.681.664. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado más allá del fine-tuning indicado.
+La arquitectura corresponde a un transformer decoder-only de la familia Qwen2, según las etiquetas declaradas por el autor de la cuantización. El modelo es un fine-tune del base Reallexi-llc/lexi-2-249b-base, entrenado sobre el dataset reallexi/lexi-coder-v3-datasest, orientado a tareas de codificación. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición detallada del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO o ajuste supervisado más allá del fine-tuning declarado.
 
-La versión documentada aquí es una cuantización estática realizada por mradermacher con `quantize_version: 2` y `convert_type: hf`. El autor indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicación. No se dispone de información sobre innovaciones técnicas específicas (atención lineal, decodificación especulativa, modos de razonamiento extendido, etc.).
+La innovación técnica destacable en esta ficha es la disponibilidad de cuantizaciones estáticas GGUF producidas por mradermacher, que permiten ejecutar el modelo en CPU y GPU de consumo mediante llama.cpp. El autor indica además que existen cuantizaciones ponderadas/imatrix en un repositorio separado (lexi-2-249b-base-i1-GGUF), lo que sugiere un proceso de cuantización con matriz de importancia para preservar calidad en bits bajos. No se documentan otras innovaciones como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con etiqueta `conversational` en el repositorio.
-- Generación y asistencia en código, dado el fine-tuning sobre un dataset de programación y la etiqueta `coding`.
-- Ejecución local mediante GGUF en llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.).
-- Compatibilidad con endpoints según la etiqueta `endpoints_compatible` del repositorio.
-- Capacidades multilingües limitadas al inglés según el campo `language: en`.
-- No se ha documentado soporte de tool calling, function calling, agentes, visión, audio ni modos de razonamiento extendido.
+- Generación de texto y código: el modelo está etiquetado como "coding" y afinado sobre un dataset específico de programación, por lo que su capacidad principal es la asistencia en tareas de escritura y finalización de código.
+- Conversación: la etiqueta "conversational" indica soporte para diálogo multi-turno, aunque no se detalla el formato de plantilla de chat.
+- Razonamiento y matemáticas: no disponible explícitamente en la información proporcionada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés ("en") según la model card.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Autocompletado de código en el editor: con 2.250 millones de parámetros y cuantizaciones Q4_K_M de 1,5 GB, puede ejecutarse en local para sugerir fragmentos de código en tiempo real sin enviar datos a un servicio externo.
-- Asistente de programación en estaciones de trabajo sin GPU dedicada: la variante Q2_K (1,0 GB) permite inferencia en CPU con llama.cpp para tareas de consulta puntual.
-- Generación de pruebas unitarias: el modelo, afinado sobre un dataset de código, puede producir esqueletos de tests a partir de funciones existentes, integrándose en scripts de desarrollo.
-- Documentación de código: generación de docstrings y comentarios explicativos en inglés para bases de código, aprovechando su naturaleza conversacional y de código.
-- Chatbot técnico de soporte: para responder preguntas frecuentes sobre APIs o lenguajes en inglés, desplegado con Ollama en un servidor pequeño.
-- Prototipado rápido de aplicaciones de IA generativa: al ocupar menos de 2 GB en Q4_K_M, sirve para validar pipelines de inferencia antes de migrar a modelos mayores.
-- Experimentación educativa: modelo ligero para estudiar el comportamiento de un transformer afinado en código y comparar el efecto de distintas cuantizaciones en la calidad de salida.
+- Autocompletado de código en IDE: el modelo, con 2,25B parámetros y cuantización Q4_K_M de 1,5 GB, puede ejecutarse localmente en un portátil y ofrecer sugerencias de código con baja latencia, integrándose en extensiones tipo Continue o similares mediante un servidor llama.cpp.
+- Asistencia de programación en entornos con recursos limitados: al caber en GPUs de consumo e incluso en CPU con cuantizaciones Q2_K/Q3_K, es adecuado para estaciones de trabajo sin aceleradores dedicados o para despliegues en el borde.
+- Generación de fragmentos de código en pipelines de CI/CD: con cuantización Q8_0 (2,5 GB) se puede desplegar en contenedores para tareas de generación de tests, documentación de funciones o refactorización asistida, siempre con revisión humana.
+- Chat de soporte técnico para desarrolladores: la etiqueta "conversational" y el enfoque en código permiten usarlo como asistente de dudas de programación en inglés, con contexto limitado por la ventana no documentada.
+- Prototipado rápido de aplicaciones de IA: su reducido tamaño permite iterar rápidamente en local con Ollama o llama.cpp antes de escalar a modelos mayores, reduciendo costes de experimentación.
+- Fine-tuning adicional sobre dominios específicos: al ser un modelo pequeño y con pesos GGUF y safetensors disponibles, sirve como base para ajustes ligeros en nichos de código concretos (por ejemplo, un lenguaje o framework específico).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,0 GB en Q2_K, 1,5 GB en Q4_K_M, 1,9 GB en Q6_K, 2,5 GB en Q8_0 y 4,6 GB en f16 (tamaños de archivo indicados por el autor; el consumo real en memoria añade overhead del runtime y del contexto).
-- GPU recomendadas: cualquier GPU de consumo con 4 GB o más de VRAM puede ejecutar las cuantizaciones Q4 y Q5; una RTX 3060, RTX 4060 o superior permite f16 con holgura. Para despliegues en servidor, una A100 o H100 no aporta ventajas significativas dado el tamaño del modelo, salvo por agregación de peticiones.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluidas tarjetas con 4-6 GB de VRAM para Q4_K_M y Q5_K_M.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El modelo base en safetensors puede servirse con transformers, vLLM o TGI, aunque no se han publicado configuraciones validadas para estos últimos.
-- Latencia y throughput estimados: no disponibles. Al tratarse de un modelo de 2.250 millones de parámetros, se espera una latencia baja en GPU de consumo, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: entre 1,0 GB (Q2_K) y 4,6 GB (f16) solo para los pesos; añadir overhead de contexto y KV cache (típicamente 0,5–2 GB adicionales según longitud de contexto).
+- GPU recomendadas: cualquier GPU con al menos 4–6 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son válidas, aunque para este tamaño las consumer son suficientes.
+- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas con 6 GB o más; las cuantizaciones Q2_K y Q3_K pueden ejecutarse incluso en iGPU o CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF; también es posible usar transformers con los pesos safetensors del modelo base.
+- Latencia y throughput estimados: no disponible en la información proporcionada; para un modelo de 2,25B en Q4_K_M se espera un throughput alto en GPU de consumo, pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lexi 2.249B (esta ficha) | 2.245.681.664 | No disponible | Other (hereda términos del base y dataset) | GGUF, safetensors | Hugging Face |
-| Qwen2.5-Coder-1.5B | 1.500 millones (aproximado) | No disponible en esta ficha | Apache 2.0 (según el modelo original de Qwen) | Safetensors, GGUF | Hugging Face |
-| Qwen2.5-Coder-3B | 3.000 millones (aproximado) | No disponible en esta ficha | Apache 2.0 (según el modelo original de Qwen) | Safetensors, GGUF | Hugging Face |
-| CodeGemma-2B | 2.000 millones (aproximado) | No disponible en esta ficha | Gemma Terms of Use | Safetensors, GGUF | Hugging Face |
+| Lexi 2.249B (este) | 2,25B | no disponible | other (hereda términos) | GGUF + safetensors | Fine-tune para código, solo inglés |
+| Qwen2.5-Coder-1.5B | 1,5B | 32K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo oficial de código, multilingüe |
+| Qwen2.5-Coder-3B | 3B | 32K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo oficial de código, multilingüe |
+| DeepSeek-Coder-1.3B | 1,3B | 16K (según versión) | DeepSeek License | safetensors, GGUF | Enfocado a código, inglés/chino |
 
-La comparación se basa en la categoría de tamaño y tarea (modelos pequeños orientados a código). No se dispone de datos de rendimiento de Lexi 2.249B para establecer comparaciones cuantitativas; los datos de los modelos alternativos deben verificarse en sus respectivas fichas oficiales.
+La comparativa se basa en modelos de tamaño y propósito similares ampliamente conocidos; los datos de contexto de los alternativos pueden variar según la versión y no se han verificado contra la información proporcionada para este modelo. La principal ventaja de Lexi es su disponibilidad en múltiples cuantizaciones GGUF listas para usar; su principal desventaja frente a Qwen2.5-Coder es la licencia restrictiva ("other") y la falta de documentación sobre contexto y rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al ser un fine-tuning sobre un dataset de código en inglés, puede reflejar sesgos presentes en dicho corpus.
-- Riesgo de alucinación: inherente a los modelos de 2.250 millones de parámetros; la precisión factual y la corrección de código pueden degradarse en tareas complejas.
-- Limitaciones de contexto e idioma: el modelo solo declara inglés (`language: en`) y no se ha publicado la longitud de contexto soportada, lo que impide planificar su uso en conversaciones o bases de código extensas.
-- Restricciones de licencia: la licencia es `other` y hereda los términos del modelo base (`Reallexi-llc/lexi-2-249b-base`) y del dataset (`reallexi/lexi-coder-v3-datasest`). Es imprescindible revisar ambas licencias antes de cualquier uso comercial; no es una licencia de código abierto estándar.
-- Caveat para producción: no hay benchmarks publicados, ni datos de entrenamiento detallados, ni garantías de calidad; el modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de salida en tareas de código, donde los errores sintácticos son críticos.
-- El autor de las cuantizaciones no ha publicado variantes ponderadas o con imatrix, que suelen ofrecer mejor relación calidad/tamaño.
+- Sesgos conocidos: no documentados; al entrenarse solo en inglés y sobre un dataset de código, puede presentar sesgos hacia convenciones de programación occidentales y un rendimiento limitado en otros idiomas.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; en generación de código puede producir APIs inexistentes o fragmentos sintácticamente válidos pero funcionalmente incorrectos, por lo que requiere revisión humana.
+- Limitaciones de contexto o idioma: solo inglés declarado; la longitud de contexto no está documentada, lo que impide planificar usos con ventanas largas.
+- Restricciones de licencia: la licencia es "other" y hereda los términos del modelo base y del dataset; es imprescindible revisar las condiciones de Reallexi-llc/lexi-2-249b-base y del dataset reallexi/lexi-coder-v3-datasest antes de cualquier uso comercial.
+- Caveats para producción: la falta de benchmarks y de documentación sobre entrenamiento y contexto dificulta la evaluación objetiva; se recomienda validar el modelo en el dominio concreto antes de desplegarlo. El autor de la cuantización advierte que las cuantizaciones Q3_K_M son de menor calidad y que las IQ suelen ser preferibles a las no-IQ de tamaño similar.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/lexi-2-249b-base-GGUF
 - Modelo base: https://huggingface.co/Reallexi-llc/lexi-2-249b-base
-- Conjunto de datos de fine-tuning: https://huggingface.co/datasets/reallexi/lexi-coder-v3-datasest
-- Página de descargas del autor de cuantizaciones: https://hf.tst.eu/model#lexi-2-249b-base-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/lexi-2-249b-base-i1-GGUF
+- Página de descarga del cuantizador: https://hf.tst.eu/model#lexi-2-249b-base-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/reallexi/lexi-coder-v3-datasest
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

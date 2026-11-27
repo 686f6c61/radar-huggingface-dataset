@@ -2,54 +2,65 @@
 
 ## Resumen
 
-Gemma 4 12B Unified GGUF es una colección de cuatro cuantizaciones GGUF del modelo `google/gemma-4-12B-it`, publicadas por Xylolabs como referencia de precisión para sus propios exports de Tenstorrent Tensix. El repositorio no entrena ni modifica el modelo: convierte el checkpoint bf16 original a formatos Q3_K_M-imat, IQ4_XS, IQ4_XS-imat y Q5_K_M mediante la herramienta `quantize` de llama.cpp, preservando 667 tensores de las 48 capas del decodificador de texto, el tokenizer y la plantilla de chat original.
+Gemma 4 12B it GGUF es una familia de cuantizaciones GGUF del modelo denso `google/gemma-4-12B-it`, publicada por Xylolabs como referencia de comparación para sus exportaciones propias al hardware Tensix de Tenstorrent. El paquete no introduce pesos nuevos: convierte el checkpoint bf16 original con la herramienta `quantize` de llama.cpp y distribuye cuatro variantes (Q3_K_M-imat, IQ4_XS-imat, IQ4_XS y Q5_K_M) que contienen exclusivamente el decodificador de texto, es decir, 667 tensores de las 48 capas del decoder, el tokenizer y la plantilla de chat original, omitiendo los codificadores de visión y audio del modelo base.
 
-La relevancia de esta publicación es doble. Por un lado, ofrece al ecosistema llama.cpp una referencia cuantizada verificada del Gemma 4 12B instruct, con métricas de divergencia (KL medio y acuerdo top-1) frente al bf16 almacenado. Por otro, sirve como banco de pruebas reproducible para comparar la fidelidad de las cuantizaciones GGUF estándar contra implementaciones alternativas sobre hardware no-GPU.
+El modelo base cuenta con 11.907.350.576 parámetros totales (aproximadamente 11,9 mil millones), lo que lo sitúa en la franja de modelos densos de tamaño medio que caben con holgura en GPU de consumo de 24 GB. La relevancia de esta publicación es doble: por un lado ofrece una vía práctica de ejecutar Gemma 4 12B en llama.cpp con cuantizaciones de 6 a 8,5 GB, y por otro documenta con métricas de divergencia KL y acuerdo top-1 la pérdida de fidelidad de cada nivel de cuantización frente al bf16 de referencia, algo poco habitual en repositorios GGUF de terceros.
 
-El modelo base tiene 11.907.350.576 parámetros (aproximadamente 11,9B) y una arquitectura híbrida de atención con 48 capas, de las cuales 8 usan atención completa y 40 emplean una ventana deslizante de 1.024 tokens. Las cuantizaciones ocupan entre 6,087 GB y 8,547 GB, lo que permite ejecutarlo en GPUs de consumo de 24 GB con contexto muy amplio. La licencia es Apache 2.0.
+La licencia declarada es Apache 2.0 y los idiomas anotados en la model card son inglés y coreano. El repositorio ocupa 28,0 GB e incluye los cuatro ficheros GGUF, de modo que el usuario debe descargar únicamente el que corresponda a su presupuesto de memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4 Unified), atención híbrida: 8 capas full attention + 40 capas sliding window 1.024 tokens |
-| Parametros totales | 11.907.350.576 (11,9B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 256K segun la tabla de hardware del autor; metadatos originales sin modificar |
-| Tipos de cuantizacion | Q3_K_M-imat, IQ4_XS, IQ4_XS-imat, Q5_K_M |
-| Idiomas soportados | Inglés (en), coreano (ko) |
+| Arquitectura | Transformer denso (decodificador de texto de Gemma 4 12B Unified, 48 capas) |
+| Parametros totales | 11.907.350.576 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 256K tokens segun la tabla de hardware del autor; los metadatos originales del contexto no se modifican en la conversion |
+| Tipos de cuantizacion | Q3_K_M-imat (6,087 GB), IQ4_XS-imat (6,635 GB), IQ4_XS (6,691 GB), Q5_K_M (8,547 GB) |
+| Idiomas soportados | en, ko (segun model card; el modelo base puede tener un perfil multilingue mas amplio, no documentado aqui) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (llama.cpp), 667 tensores por fichero; matriz de embedding/salida compartida en Q6_K y normas/constantes RoPE en float32 |
+
+Detalle de tipos de tensor por variante:
+
+| Variante | Tipos y recuentos de tensor |
+|---|---|
+| Q3_K_M-imat | F32: 338, Q3_K: 192, Q4_K: 131, Q5_K: 5, Q6_K: 1 |
+| IQ4_XS-imat | F32: 338, IQ4_XS: 328, Q6_K: 1 |
+| IQ4_XS | F32: 338, IQ4_XS: 322, Q5_K: 6, Q6_K: 1 |
+| Q5_K_M | F32: 338, Q5_K: 284, Q6_K: 45 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `google/gemma-4-12B-it` es un transformer decoder-only de 11,9B parámetros con una configuración de atención híbrida poco habitual: de las 48 capas del decodificador de texto, 8 mantienen atención completa (1 KV head, tamaño de cabeza 512) y 40 aplican una ventana deslizante de 1.024 tokens. Esta combinación reduce el coste del KV cache en contextos largos, ya que solo una fracción de las capas acumula estado de atención completo.
+El modelo subyacente es un transformer denso de decodificador de texto con 48 capas y unos 11,9 mil millones de parametros, parte de la familia Gemma 4 en su variante "Unified" (que en el modelo base incluye codificadores de vision y audio). Esta publicacion GGUF conserva unicamente el decodificador de texto: los cuatro ficheros contienen 667 tensores procedentes de las 48 capas del decoder, mas el tokenizer y la plantilla de chat original, y prescinden de los modulos de vision y audio. La matriz de embedding y de salida compartida se mantiene en Q6_K en las cuatro variantes, y las normas y constantes RoPE conservan precision float32, lo que eleva el numero medio de bits por encima del preset nominal.
 
-Esta publicación concreta no incluye entrenamiento ni fine-tuning: Xylolabs parte del checkpoint bf16 de Google y aplica la herramienta `quantize` de llama.cpp. Los archivos `-imat` conservan matrices de importancia preexistentes (los nombres de calibración son solo etiquetas de metadatos; no se incluye dataset de calibración). En las cuatro variantes, la matriz compartida de embedding/output se almacena en Q6_K y las normas y constantes RoPE se mantienen en float32, lo que eleva el número medio de bits por encima del preset nominal. Los encoders de visión y audio del modelo base se omiten: solo se preserva el decodificador de texto.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo base en la informacion proporcionada. La conversion y cuantizacion las realiza Xylolabs con la herramienta `quantize` de llama.cpp a partir del checkpoint bf16; las variantes con sufijo `-imat` reutilizan resultados de importance matrix existentes, aunque los ficheros de calibracion historicos son solo etiquetas de metadatos y no se incluyen en el repositorio. La innovacion documentada es la evaluacion de fidelidad de la cuantizacion: divergencia KL media frente a bf16 y acuerdo top-1 sobre 16 secuencias de 1.024 tokens (16.232 posiciones puntuadas) en texto plano y de chat en ingles y coreano.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y coreano con plantilla de chat original preservada.
-- Modo de razonamiento (thinking mode) activable o desactivable mediante `--chat-template-kwargs '{"enable_thinking":true/false}'`.
-- Ejecución local en CPU y GPU mediante llama.cpp, sin dependencias de frameworks de deep learning.
-- Compatible con endpoints (tag `endpoints_compatible`) para despliegue como servicio de generación.
-- Al omitirse los encoders de visión y audio, las cuantizaciones son exclusivamente texto: no procesan imágenes ni audio.
-- Soporte de cuantizaciones con y sin importance matrix para ajustar el compromiso precisión/memoria.
+- Generacion de texto conversacional en ingles y coreano, con plantilla de chat original preservada.
+- Modo de razonamiento ("thinking") del modelo base, activable o desactivable mediante `--chat-template-kwargs '{"enable_thinking":...}'` en llama.cpp; la evaluacion del autor incluye siete recomprobaciones con thinking activado.
+- Coherencia multi-turno mediante la plantilla Jinja (`--jinja`) y el flag `--single-turn` para consultas aisladas.
+- Inferencia local en CPU, GPU y Apple Silicon a traves de llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en el repositorio).
+- No incluye vision ni audio: los codificadores correspondientes del modelo base fueron omitidos en la conversion.
+- No se documenta soporte explicito de tool calling ni de function calling en la informacion disponible.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: con 8,547 GB (Q5_K_M) cabe en una RTX 4090 o RTX 3090 de 24 GB dejando espacio para el KV cache y alcanzando contextos de hasta 256K según la tabla del autor, útil para asistentes personales y prototipado sin cloud.
-- Validación de pipelines de cuantización: los datos de KL medio y acuerdo top-1 frente a bf16 permiten usar estos archivos como referencia para verificar conversiones propias o comparar backends alternativos (por ejemplo, Tensix frente a llama.cpp).
-- Despliegue en entornos con memoria limitada: la variante Q3_K_M-imat (6,087 GB) permite ejecutar un modelo de 11,9B en GPUs de 12-16 GB, a costa de un KL medio de 0,999 y un acuerdo top-1 del 68,10%.
-- Atención al cliente multilingüe inglés-coreano: el modelo conserva la plantilla de chat instructiva y soporta conversaciones multi-turno con contexto largo gracias a las capas de atención completa combinadas con sliding window.
-- Generación de texto por lotes en servidores sin GPU dedicada: llama.cpp permite ejecución en CPU con los mismos GGUF, adecuado para tareas de clasificación, resumen o extracción en pipelines offline.
-- Pruebas de regresión de calidad: el conjunto de 33 respuestas más 7 rechecks con thinking activado documentado por el autor sirve como banco de pruebas reproducible para detectar degradaciones al cambiar de cuantización o de versión de llama.cpp.
+- Despliegue local en estaciones de trabajo con GPU de 24 GB: con el fichero Q5_K_M (8,5 GB) cabe en una RTX 4090 o RTX 3090 y, segun el autor, permite aprovechar la ventana de 256K tokens, lo que habilita asistentes de codigo o analisis de documentos largos sin servicios en la nube.
+- Referencia de calidad de cuantizacion: equipos que entrenan o exportan sus propias cuantizaciones pueden comparar la divergencia KL y el acuerdo top-1 de sus ficheros contra estos cuatro checkpoints, que actuan como linea base reproducible en llama.cpp.
+- Evaluacion de hardware alternativo: el repositorio se publica explicitamente como contraparte llama.cpp de las exportaciones Tensix de Tenstorrent, de modo que sirve para validar la fidelidad numerica de aceleradores no GPU frente a una implementacion de referencia en CPU/GPU convencional.
+- Procesamiento de texto en coreano e ingles: con idiomas anotados en y ko, es adecuado para pipelines bilingues de resumen, clasificacion o generacion en esos dos idiomas, sin asumir calidad en otros.
+- Prototipado de agentes conversacionales con contexto largo: la ventana de 256K y la plantilla de chat Jinja permiten mantener historiales extensos en tareas de soporte o analisis documental antes de invertir en infraestructura mayor.
+- Experimentacion con modos de razonamiento: el soporte de `enable_thinking` permite alternar entre respuestas directas y cadenas de razonamiento para medir coste y latencia en tareas de matematicas o logica.
+- Integracion en entornos con restricciones de memoria: las variantes IQ4_XS (6,6 GB) y Q3_K_M-imat (6,1 GB) permiten ejecutar el modelo en equipos con menos VRAM o en configuraciones con offload parcial a CPU.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (divergencia frente al bf16 almacenado, 16 secuencias de 1.024 tokens, 16.232 posiciones evaluadas en inglés y coreano):
+El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Si documenta metricas de fidelidad de cuantizacion frente al checkpoint bf16 almacenado:
 
-| Cuantizacion | KL medio | KL / Q4_K_M | Acuerdo top-1 | Respuestas correctas |
+| Variante | KL media vs bf16 | KL / Q4_K_M | Acuerdo top-1 | Respuestas correctas (gate) |
 |---|---:|---:|---:|---|
 | Q3_K_M-imat | 0,999333 | 1,134x | 68,10% | 33/33 + 7/7 thinking |
 | IQ4_XS-imat | 0,695671 | 0,789x | 73,42% | 33/33 + 7/7 thinking |
@@ -57,41 +68,45 @@ Datos publicados por el autor en la model card (divergencia frente al bf16 almac
 | Q5_K_M | 0,367732 | 0,417x | 80,96% | 33/33 + 7/7 thinking |
 | Q4_K_M (referencia actual) | 0,881231 | 1,000x | 69,79% | 33/33 + 7/7 thinking |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+La evaluacion cubre 16 secuencias emparejadas de 1.024 tokens y 16.232 posiciones puntuadas en texto plano y de chat en ingles y coreano, con contexto de 8.192 tokens. Las cifras de KL de la model card incluyen dos tablas con valores distintos por variante (0,0445 y 0,1658 para Q5_K_M e IQ4_XS en el texto introductorio, frente a 0,367732 y 0,983883 en la tabla de evaluacion); la tabla anterior recoge los valores de la seccion de evaluacion, que son los que se comparan contra Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM estimada: tamaño del archivo + KV cache en f16 al contexto elegido + aproximadamente 2 GB de overhead de runtime, todo ello por debajo del 90% de la memoria disponible. Las 40 capas con sliding window añaden un cache fijo de unos 0,3 GB.
-- GPUs de consumo: RTX 4090 y RTX 3090 (24 GB) ejecutan Q5_K_M con contexto de hasta 256K; RTX 5090 (32 GB) idem.
-- GPUs profesionales: RTX 6000 Ada o 2 x 24 GB (48 GB) y H100 (80 GB) soportan Q5_K_M a 256K; en configuraciones de dos tarjetas es necesario repartir capas entre ellas. RTX PRO 6000 Blackwell (96 GB) también listada por el autor.
-- Despliegue: llama.cpp (versión verificada v0.9.0 en el ejemplo de la model card); el tag `endpoints_compatible` sugiere compatibilidad con servidores de endpoints basados en llama.cpp.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: 6,1 GB (Q3_K_M-imat), 6,6 GB (IQ4_XS e IQ4_XS-imat) y 8,5 GB (Q5_K_M) para los pesos; hay que sumar KV cache y buffers de trabajo, que no se cuantifican en las cifras anteriores.
+- GPU recomendadas por el autor: RTX 4090 y RTX 3090 (24 GB), RTX 5090 (32 GB), RTX 6000 Ada o 2 x 24 GB (48 GB, requiere repartir capas entre ambas tarjetas), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), H200 (141 GB).
+- Sistemas con memoria unificada: DGX Spark (128 GB) y Mac Studio M5 Max (128 GB), ambos con Q5_K_M y contexto de 256K segun el autor.
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB o mas con Q5_K_M; en tarjetas de 12-16 GB seria necesario usar las variantes de 6 GB o hacer offload parcial a CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli`, y por extension `llama-server`); el comando de ejemplo esta verificado con llama.cpp v0.9.0. No se documentan otras herramientas (vLLM, TGI, Ollama) en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---:|---|---|---|
-| Gemma 4 12B it GGUF (Xylolabs) | 11,9B | hasta 256K segun hardware | GGUF (4 cuantizaciones) | Apache 2.0 | Solo decodificador de texto; KL y top-1 medidos frente a bf16 |
-| Gemma 4 12B it (base, google) | 11,9B | no disponible | safetensors bf16 | Apache 2.0 | Incluye encoders de visión y audio; requiere ~24 GB en bf16 |
-| Q4_K_M del mismo modelo | 11,9B | hasta 256K segun hardware | GGUF | Apache 2.0 | Referencia interna del autor: KL 0,881231, top-1 69,79% |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Gemma 4 12B it GGUF (Xylolabs) | 11,9B | 256K (segun autor) | GGUF, 4 variantes de 6,1 a 8,5 GB | Apache 2.0 | Solo decodificador de texto; metrica KL publicada |
+| google/gemma-4-12B-it (bf16) | 11,9B | no disponible | safetensors bf16 | Apache 2.0 (segun este repo) | Modelo base completo, incluye vision y audio |
+| Exportaciones Tensix de Xylolabs | 11,9B | no disponible | formato Tensix | no disponible | Contraparte de hardware Tenstorrent de esta publicacion |
 
-No se dispone de datos de benchmarks estándar para comparar el rendimiento absoluto con otras familias de modelos de tamaño similar.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento frente a alternativas.
 
 ## Limitaciones y advertencias
 
-- Solo texto: los encoders de visión y audio del modelo base se han eliminado, por lo que estas cuantizaciones no admiten entradas multimodales.
-- Idiomas limitados a inglés y coreano según los metadatos; el rendimiento en castellano no está documentado y no debería asumirse.
-- Riesgo de alucinación inherente al modelo base; las cuantizaciones de baja precisión (Q3_K_M-imat, IQ4_XS) degradan el acuerdo top-1 hasta el 68%, lo que puede aumentar errores en tareas sensibles.
-- Las matrices de importancia de los archivos `-imat` proceden de calibraciones previas no incluidas; su reproducibilidad exacta no está garantizada.
-- El ejemplo de la model card limita explícitamente el contexto a 2.048 tokens con `-c 2048`; el contexto de 256K depende de la memoria disponible y debe configurarse manualmente.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar los términos del modelo base de Google y las políticas de uso aceptable asociadas.
-- No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K) que permitan evaluar capacidades absolutas; las métricas disponibles miden solo fidelidad de cuantización.
+- Solo texto: los codificadores de vision y audio del modelo base han sido omitidos, por lo que estas cuantizaciones no pueden procesar imagenes ni audio.
+- Idiomas documentados limitados a ingles y coreano; el rendimiento en castellano u otros idiomas no esta verificado en esta publicacion.
+- Perdida de fidelidad medible: incluso Q5_K_M presenta un acuerdo top-1 del 80,96% frente a bf16, y Q3_K_M-imat baja al 68,10%; para tareas sensibles a la precision conviene validar contra el checkpoint original.
+- Inconsistencia en las cifras de KL dentro de la propia model card (dos conjuntos de valores para las mismas variantes), lo que exige cautela al citar los numeros.
+- Riesgo de alucinacion inherente al modelo base; no se documentan evaluaciones especificas de factualidad en esta publicacion.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos del modelo base ni de estas cuantizaciones.
+- Licencia Apache 2.0 declarada en el repositorio; conviene verificar los terminos del modelo base `google/gemma-4-12B-it` antes de uso comercial, ya que la model card de la cuantizacion no detalla restricciones adicionales.
+- El comando de ejemplo limita el contexto a 2.048 tokens con `-c 2048`; para aprovechar los 256K hay que ajustar ese parametro y prever memoria adicional para KV cache.
+- Los ficheros `-imat` conservan resultados de importance matrix pero no incluyen el dataset de calibracion, lo que dificulta reproducir exactamente el proceso.
+- Repositorio con muy baja adopcion (1 like, 3.160 descargas en la fecha de actualizacion), por lo que no hay validacion independiente de las metricas publicadas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/gemma-4-12B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
-- Documentación GGUF en llama.cpp: https://huggingface.co/docs/hub/gguf-llamacpp
-- Código llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio Tensix de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Licencia: https://huggingface.co/Xylolabs/gemma-4-12B-it-GGUF/blob/main/LICENSE
+- Licencia del repositorio: https://huggingface.co/Xylolabs/gemma-4-12B-it-GGUF/blob/main/LICENSE
+- Codigo llama.cpp referenciado (commit cd959bae99ff4bed22bef2604f45241c09bbb8c8): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Documentacion de GGUF en llama.cpp: https://huggingface.co/docs/hub/gguf-llamacpp
+- Repositorio de Xylolabs para exportaciones Tensix: https://github.com/XylolabsInc/tensix-bfp-gptq

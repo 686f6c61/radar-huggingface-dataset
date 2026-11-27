@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "TrendStory — AI Video Generator for TikTok, Reels & Shorts",
-      "url": "https://www.trendstory.io/en",
-      "snippet": "Everyone uses TrendStory ! Every viral video you see everywhere is made with TrendStory!"
-    },
-    {
-      "title": "TrendStory — Générateur de vidéos IA pour TikTok, Reels et Shorts",
-      "url": "https://www.trendstory.io/",
-      "snippet": "Tout le monde utilise TrendStory ! Toutes les vidéos virales que tu vois partout sont générées par TrendStory !"
-    },
-    {
-      "title": "TrendStory — Make it a story.",
-      "url": "https://trendstory.app/",
-      "snippet": "Choose a vibe, reimagine your photo, animate it, or make it something you can keep with TrendStory."
-    },
-    {
-      "title": "How TrendStory Works — Make it a story.",
-      "url": "https://trendstory.app/howto",
-      "snippet": "See how to upload a photo, choose a vibe, and make your own TrendStory creation."
-    },
-    {
-      "title": "Connexion — TrendStory",
-      "url": "https://www.trendstory.io/login",
-      "snippet": "Connecte-toi à ton compte TrendStory."
-    }
-  ]
+  "sources": []
 }

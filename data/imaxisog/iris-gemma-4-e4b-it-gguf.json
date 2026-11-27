@@ -59,6 +59,43 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "English Fix",
+      "dataset": "Iris blind test, English Fix (50 drafts)",
+      "metric": "accepted (%)",
+      "value": 90
+    },
+    {
+      "task": "Professional and Friendly",
+      "dataset": "Iris blind test, Professional and Friendly (100 answers)",
+      "metric": "would send (%)",
+      "value": 93
+    },
+    {
+      "task": "Shorter and Clearer",
+      "dataset": "Iris blind test, Shorter and Clearer (100 answers)",
+      "metric": "would send (%)",
+      "value": 90
+    },
+    {
+      "task": "Funny",
+      "dataset": "Iris blind test, Funny (50 answers)",
+      "metric": "would send (%)",
+      "value": 66
+    },
+    {
+      "task": "Hindi and Hinglish, Fix (into English)",
+      "dataset": "Iris blind test, Hindi and Hinglish, Fix (into English) (82 drafts)",
+      "metric": "accepted (%)",
+      "value": 95
+    },
+    {
+      "task": "Hindi and Hinglish, tones (into English)",
+      "dataset": "Iris blind test, Hindi and Hinglish, tones (into English) (240 answers)",
+      "metric": "would send (%)",
+      "value": 76
+    }
+  ],
   "sources": []
 }

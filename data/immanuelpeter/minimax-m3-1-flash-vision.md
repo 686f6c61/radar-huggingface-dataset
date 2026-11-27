@@ -2,86 +2,91 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-Vision es un paquete de pesos extraido del modelo multimodal MiniMaxAI/MiniMax-M3.1-Flash, publicado por el usuario immanuelpeter. No se trata de un modelo generativo completo, sino de la "torre" de vision (Tower) y el proyector (Projector) aislados del modelo padre: incluye unicamente los modulos de extraccion de caracteristicas visuales, sin ningun peso del modelo de lenguaje. El repositorio ocupa 1,7 GB y contiene 631.185.920 parametros en formato safetensors.
+MiniMax-M3.1-Flash Vision es un paquete de pesos que aísla el componente de visión (Tower y Projector) del modelo multimodal MiniMax-M3.1-Flash, publicado originalmente por MiniMaxAI. El repositorio, mantenido por el usuario immanuelpeter, extrae únicamente el codificador de imágenes y el proyector multimodal del checkpoint padre, sin incluir el modelo de lenguaje. Su propósito es permitir la extracción de características visuales de forma independiente, con un pipeline declarado de `image-feature-extraction`.
 
-El interes de esta publicacion es de ingenieria: permite reutilizar el encoder visual de un modelo frontera multimodal de forma independiente, por ejemplo para extraccion de caracteristicas de imagen, pipelines de vision congelada o investigacion sobre alineamiento vision-lenguaje. El autor documenta una validacion tensor a tensor contra los pesos originales del modelo padre, lo que aporta trazabilidad sobre la fidelidad de la extraccion.
+El modelo resuelve un problema práctico de ingeniería: reutilizar el front-end visual de un VLM grande sin cargar los pesos completos del modelo de lenguaje, lo que facilita tareas de indexación de imágenes, preprocesado en pipelines multimodales o investigación sobre representaciones visuales. El paquete contiene 631.185.920 parámetros totales (515 tensores del Tower más 8 tensores del Projector), con un tamaño de repositorio de 1,7 GB.
 
-Conviene subrayar que el repositorio no incluye benchmarks propios ni un modelo de lenguaje asociado, y que la licencia MiniMax Community del modelo padre se aplica a estos pesos. La fecha de creacion registrada es el 7 de noviembre de 2026, y el modelo cuenta con cero descargas y cero "likes" en el momento de redactar esta ficha.
+Es relevante ahora porque los VLM de gran escala se distribuyen habitualmente como checkpoints monolíticos, y la separación modular del codificador visual permite desplegarlo en hardware mucho más modesto. No obstante, se trata de un artefacto derivado, no de un modelo entrenado de forma independiente: su calidad depende enteramente del checkpoint padre MiniMax-M3.1-Flash.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Torre de vision transformer (ViT) con RoPE 3D y proyector de tokens; sin modelo de lenguaje |
+| Arquitectura | Vision Transformer (Tower) con proyector MLP; clase `MiniMaxM3VLVisionModel` |
 | Parametros totales | 631.185.920 |
-| Parametros activos | no disponible (no es MoE; el modelo padre si es MoE) |
-| Longitud de contexto | no disponible (el modelo padre soporta hasta 1M tokens, pero esta ficha no incluye LM) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors con dtypes originales; BF16 en validacion) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión; no aplica ventana de texto) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors con dtypes originales) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-community (MiniMax Community License) |
-| Formato de pesos | safetensors (`model.safetensors` con 515 tensores de la Tower; `projector.safetensors` con 8 tensores del Projector) |
+| Licencia | minimax-community (MiniMax Community License); código auxiliar MIT |
+| Formato de pesos | safetensors (`model.safetensors`, `projector.safetensors`) |
+
+Detalles adicionales de la arquitectura del Tower: 32 capas, dimensión oculta 1280, 16 cabezas de atención, dimensión intermedia 5120, patch size 14, RoPE 3D, tamaño de imagen 672. Compresión de tokens 2x2 espacial con patch temporal de tamaño 2.
 
 ## Arquitectura y entrenamiento
 
-La Tower es un transformer de vision de 32 capas, anchura 1280, 16 cabezas de atencion y anchura de MLP de 5120, con patch size 14 y patch temporal 2, e incorpora RoPE 3D (lo que indica soporte de entradas de imagen y video). El tamano nominal de imagen es 672; a 448 pixeles la Tower produce 1024 tokens de anchura 1280, que tras un "bench" de fusion de vecinos espaciales 2x2 se reducen a 256 tokens de anchura 5120. El Projector transforma esos 256 tokens en 256 tokens de anchura 6144, listos para alimentar un modelo de lenguaje.
+El componente Tower es un transformer de visión de 32 capas con 1280 dimensiones ocultas y 16 cabezas de atención, que procesa parches de 14 píxeles con RoPE tridimensional (lo que permite modelar posición espacial y temporal). Aplica una compresión de tokens mediante fusión espacial 2x2 y un patch temporal de tamaño 2; las imágenes estáticas se duplican como dos fotogramas para alimentar el embedding temporal. El Projector es un MLP con la secuencia `Linear(1280, 6144)`, GELU, `Linear(6144, 6144)`, aplanado de cuatro parches de 6144 dimensiones, `Linear(24576, 6144)`, GELU y `Linear(6144, 6144)`, que proyecta las características visuales al espacio del modelo de lenguaje del checkpoint padre.
 
-No hay informacion sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO) en la documentacion proporcionada, ya que este repositorio solo redistribuye pesos extraidos del modelo padre MiniMaxAI/MiniMax-M3.1-Flash (revision `54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e`). La innovacion tecnica del paquete es la extraccion limpia y verificable: el autor valida que cada tensor de la Tower y del Projector coincide exactamente con los del modelo padre, y que las salidas en BF16 coinciden en ocho profundidades de la Tower, tokens fusionados y tokens proyectados sobre imagenes sinteticas a 56 y 448 pixeles. Tambien documenta que cambiar el tamano nominal de imagen entre 672 y 2016 no altera esas salidas.
+No se dispone de información sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la documentación proporcionada. El repositorio no entrena el modelo: exporta los tensores del checkpoint padre MiniMax-M3.1-Flash conservando sus dtypes originales. La validación declarada consiste en una comprobación de paridad que compara los 515 tensores del Tower y los 8 del Projector con el checkpoint padre fijado mediante `torch.equal`, y verifica que las salidas del Tower, la versión fusionada y la proyectada coinciden con la implementación nativa a 56 y 448 píxeles.
 
 ## Capacidades
 
-- Extraccion de caracteristicas visuales de imagen (pipeline `image-feature-extraction`).
-- Procesamiento de entradas con parche temporal 2 y RoPE 3D, lo que sugiere soporte de fotogramas de video (dos fotogramas repetidos en el benchmark del autor).
-- Redimensionado dinamico mediante el procesador nativo del modelo padre; el benchmark usa redimensionado bicubico del lado corto, recorte central a 448 y normalizacion CLIP.
-- Generacion de tokens visuales fusionados (256 tokens de anchura 5120) y proyectados (256 tokens de anchura 6144) para su uso por un modelo de lenguaje externo.
-- No incluye generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni capacidades multilingues: esos pesos no estan en el repositorio.
-- Requiere Transformers 5.17.0, PyTorch y Pillow; la carga se hace con `MiniMaxM3VLVisionModel.from_pretrained` y `projector.py`.
+- Extracción de características visuales de imágenes mediante el Tower y el Projector.
+- Generación de embeddings proyectados en el espacio del modelo de lenguaje padre (dimensión 6144).
+- Procesamiento de imágenes con tamaño nativo de 672 píxeles y parches de 14.
+- Soporte de compresión espacial 2x2 y temporal de parches para reducir el número de tokens visuales.
+- Integración con la librería `transformers` (clase `MiniMaxM3VLVisionModel`).
+- No incluye generación de texto, razonamiento, código, matemáticas ni tool calling: el modelo de lenguaje no forma parte de este repositorio.
+- No se documentan capacidades multilingües, de audio ni modos de pensamiento.
 
 ## Casos de uso
 
-- Extraccion de embeddings visuales para busqueda y recuperacion de imagenes: la Tower produce representaciones de 1280 dimensiones que pueden indexarse en bases vectoriales para sistemas de busqueda multimodal.
-- Preprocesamiento de vision para un LLM externo: el Projector entrega 256 tokens de anchura 6144 que pueden inyectarse en un modelo de lenguaje compatible para tareas de captioning o VQA, siempre que se respete la licencia.
-- Investigacion sobre alineamiento vision-lenguaje: al disponer de la Tower y el Projector por separado, se pueden estudiar las representaciones intermedias en las ocho profundidades validadas sin cargar el modelo completo.
-- Clasificacion y etiquetado de imagenes a gran escala: usar la Tower congelada como extractor de caracteristicas y entrenar cabezas ligeras encima para tareas de dominio especifico.
-- Analisis de video de bajo coste: el patch temporal 2 y el RoPE 3D permiten procesar pares de fotogramas para deteccion de cambios o resumen visual.
-- Benchmarking y validacion de portes: el repositorio incluye manifiesto de hashes y scripts de validacion, util para auditar la fidelidad de extracciones de pesos en pipelines de MLOps.
-- Prototipado de pipelines multimodales en entornos de investigacion con GPUs modestas, dado el tamano contenido del paquete (1,7 GB).
+- Indexación y búsqueda visual: extraer embeddings de un corpus de imágenes con el Tower y el Projector para construir un índice vectorial y realizar búsqueda por similitud, sin necesidad de cargar el VLM completo.
+- Preprocesado en pipelines multimodales: usar el paquete como front-end visual de un sistema que combine estas características con un LLM independiente, manteniendo el componente de visión aislado y versionado.
+- Investigación sobre representaciones visuales: analizar las activaciones de las 32 capas del Tower o la salida proyectada de 6144 dimensiones para estudiar cómo se codifica la información espacial y temporal.
+- Clasificación y etiquetado de imágenes por transferencia: congelar el Tower y entrenar una cabeza ligera sobre las características extraídas para tareas de clasificación específicas de dominio.
+- Detección de duplicados y near-duplicates: comparar embeddings proyectados para identificar imágenes repetidas o visualmente similares en grandes catálogos.
+- Despliegue en hardware modesto: al pesar 1,7 GB y no incluir el modelo de lenguaje, el codificador visual puede ejecutarse en GPUs de consumo para tareas de extracción por lotes.
+- Validación de paridad en pipelines de migración: usar el script de exportación y las comprobaciones de paridad como referencia para verificar que una implementación propia reproduce el comportamiento del checkpoint padre.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que "no benchmark score is implied by this release" y remite a vision-tower-bench para el informe de deriva de tensores, no para metricas de calidad.
+No se han publicado resultados de benchmarks en la informacion disponible. La única validación documentada es la comprobación de paridad de tensores y salidas frente al checkpoint padre a 56 y 448 píxeles, que no constituye una evaluación de rendimiento en tareas downstream.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 631 millones de parametros, en BF16 el peso ronda 1,26 GB; en FP32 unos 2,5 GB. La activacion depende de la resolucion de entrada (1024 tokens a 448 pixeles) y es moderada.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM libre es suficiente; una RTX 3060, RTX 4060 o superior funciona con holgura. Para lotes grandes, A100 o H100 aportan mayor throughput.
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU consumer moderna con 6 GB o mas.
-- Opciones de despliegue: al ser un modulo de vision con clases nativas de Transformers, el despliegue natural es via `transformers` 5.17.0 con PyTorch; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para este paquete.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1,3-1,7 GB en precisión original (el repositorio ocupa 1,7 GB); alrededor de 0,7-1 GB si se convierte a FP16/BF16, aunque no se documentan cuantizaciones oficiales.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 4090, A100 o H100 ofrecen margen sobrado y mayor throughput en procesamiento por lotes.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores.
+- Opciones de despliegue: `transformers` (librería declarada); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo de texto.
+- Latencia y throughput: no disponibles en la información proporcionada. La documentación advierte que debe procesarse una imagen por llamada, porque la atención nativa de HF acopla las imágenes en una misma llamada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash-Vision (este) | 631 M (solo vision) | no aplica (sin LM) | minimax-community | Hugging Face, 0 descargas | Tower + Projector aislados, validados tensor a tensor |
-| MiniMaxAI/MiniMax-M3.1-Flash | no disponible | hasta 1M tokens | minimax-community | Hugging Face y NVIDIA NIM | Modelo padre multimodal MoE completo con atencion dispersa, QAT y decodificacion especulativa DSpark |
-| MiniMax-M3 | no disponible | no disponible | minimax-community | Hugging Face | Generacion anterior; comparte arquitectura y preprocesado con M3.1-Flash pero con pesos distintos |
+| MiniMax-M3.1-Flash Vision (este) | 631 M (solo visión) | no aplica | Extracción de características visuales | minimax-community | Hugging Face |
+| MiniMaxAI/MiniMax-M3.1-Flash (padre) | no disponible | no disponible | VLM completo (visión + lenguaje) | minimax-community | Hugging Face |
+| CLIP ViT-L/14 | ~428 M | no aplica | Embeddings imagen-texto | MIT (variante OpenAI) | Hugging Face |
+| SigLIP | ~400 M (variantes base) | no aplica | Embeddings imagen-texto | Apache 2.0 (variantes) | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+La comparación con CLIP y SigLIP es aproximada: ambos son codificadores visuales de tamaño similar, pero entrenados con objetivos contrastivos imagen-texto, mientras que este paquete es un extractor de características de un VLM generativo. No se dispone de datos de rendimiento comparativo para establecer una evaluación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: carece de pesos de lenguaje, por lo que no puede responder preguntas, generar texto ni ejecutar tool calling por si solo.
-- La licencia MiniMax Community (license: other) impone restricciones que deben revisarse en LICENSE y NOTICE antes de cualquier uso comercial; no es una licencia permisiva tipo Apache o MIT.
-- Sesgos: no documentados en la informacion disponible; al heredar los pesos del modelo padre, podria arrastrar los sesgos de sus datos de entrenamiento, que tampoco se detallan.
-- Riesgo de alucinacion: no aplica directamente al no generar texto, pero los embeddings pueden producir recuperaciones erroneas si se usan sin validacion.
-- Limitaciones de idioma y contexto: no disponibles; el paquete no incluye procesamiento linguistico.
-- El repositorio tiene cero descargas y cero "likes", sin mantenedor institucional; conviene verificar hashes y manifiesto antes de usarlo en produccion.
-- Requiere una version muy concreta de Transformers (5.17.0); otras versiones pueden no cargar las clases nativas.
-- El autor advierte que M3 y M3.1-Flash comparten arquitectura pero difieren en pesos; mezclar artefactos de ambas versiones puede producir resultados inconsistentes.
+- No es un modelo autónomo: carece del modelo de lenguaje, por lo que no puede generar texto ni responder preguntas; solo produce características visuales.
+- Artefacto derivado: la calidad y los sesgos dependen íntegramente del checkpoint padre MiniMax-M3.1-Flash, sobre el que no se documentan detalles de entrenamiento en esta ficha.
+- Restricciones de licencia: se rige por la MiniMax Community License, que puede imponer condiciones al uso comercial; es necesario revisar `LICENSE` antes de desplegar en producción. El código auxiliar es MIT.
+- Procesamiento de una imagen por llamada: la atención nativa de HF acopla las imágenes en una misma llamada, lo que limita el batching directo y puede afectar al throughput.
+- Idiomas no documentados: al ser un componente visual, la dimensión lingüística no aplica, pero tampoco se especifican sesgos culturales o demográficos del codificador.
+- Riesgo de alucinación: no aplica directamente al no generar texto, pero los embeddings pueden heredar sesgos representacionales del modelo padre.
+- Sin benchmarks downstream publicados: no hay evidencia cuantitativa de su rendimiento en tareas como clasificación, recuperación o VQA.
+- Repositorio con pocas descargas (221) y sin likes: menor validación comunitaria que los checkpoints oficiales.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/immanuelpeter/MiniMax-M3.1-Flash-Vision
-- Modelo padre: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- MiniMax-M3.1-Flash en NVIDIA NIM: https://build.nvidia.com/minimaxai/minimax-m3.1-flash
-- vision-tower-bench (validacion y scripts): https://github.com/immanuel-peter/vision-tower-bench
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
+- Script de paridad: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/parity/minimax_m3.py
+- Script de exportación: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/adapters/minimax_m3.py
+- Ejemplo de inferencia: `examples/inference.py` dentro del repositorio

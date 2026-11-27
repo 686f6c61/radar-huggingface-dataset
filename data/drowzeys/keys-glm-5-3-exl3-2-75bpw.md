@@ -2,124 +2,115 @@
 
 ## Resumen
 
-keys-GLM-5.3-EXL3-2.75BPW es una cuantización comunitaria del modelo GLM-5.3 de Z.ai (zai-org), publicada por el usuario drowzeys. Se trata de una conversión completa del checkpoint BF16 original a formato EXL3 con precisión mixta por experto, con una media de 2,75 bits por peso en los expertos enrutados. El objetivo declarado es poder servir los 753B parámetros del GLM-5.3 original (arquitectura `glm_moe_dsa`) en cuatro estaciones NVIDIA DGX Spark (GB10, 128 GB de memoria unificada cada una), con espacio para un pool de KV de 200K tokens o de 1M tokens usando decode-context-parallel de 4. No hay ablación ni ajuste fino: los pesos son los del modelo base, solo cuantizados.
+keys-GLM-5.3-EXL3-2.75BPW es una cuantización de precisión mixta del modelo GLM-5.3 de zai-org, publicada por el usuario drowzeys. Se trata de un checkpoint EXL3 (formato de exllamav3 basado en trellis) que reduce los pesos originales en BF16 a una media de 2,75 bits por peso (bpw) en los expertos enrutados, manteniendo en BF16 los componentes críticos como el router, las normas, los embeddings, el `lm_head` y las proyecciones `kv_b`. El objetivo declarado es servir el modelo completo de 753B en cuatro estaciones NVIDIA DGX Spark (GB10, 128 GB de memoria unificada cada una) con espacio para una reserva de KV de 200K tokens.
 
-El modelo base GLM-5.3 es un transformer de tipo Mixture-of-Experts con atención dispersa (DSA), 78 capas y 256 expertos enrutados por capa en las capas 3 a 77, más una capa MTP (Multi-Token Prediction) para decodificación especulativa. Esta ficha describe únicamente el artefacto cuantizado: un repositorio de 81 shards safetensors que ocupan 258 GB en disco (276,3 GB de tamaño total del repo) y 67,5 GiB por rango en un despliegue con tensor-parallel 4.
+El modelo base, GLM-5.3, es un transformer de mezcla de expertos (MoE) con arquitectura `glm_moe_dsa` y 753.000 millones de parámetros totales. La cuantización no modifica ni reentrena los pesos: parte del checkpoint BF16 original y aplica una asignación de anchura de bits por experto (2, 3 o 4 bits) según una política registrada en `quantization_config.json`. El resultado son 81 shards safetensors que suman 258 GB, aproximadamente 277 GB de repositorio.
 
-La relevancia actual del artefacto reside en que demuestra que es viable ejecutar un MoE de escala 753B en hardware de escritorio/prosumer agregado (cuatro GB10), con velocidades de decodificación medidas de 23,8 tok/s en prosa y 30,9 tok/s en código sobre un perfil de 200K de contexto. El principal cuello de botella reconocido por el autor es el preprocesado de prompt (prefill), que califica como «problema abierto» con margen estimado de mejora de hasta 2x.
+La relevancia de esta ficha radica en que documenta una de las pocas rutas prácticas para ejecutar un modelo de 753B en hardware de consumo profesional (DGX Spark) sin recurrir a clústeres de A100/H100. Incluye un motor de inferencia específico (TensorFold) con paralelismo tensorial 4, decodificación especulativa mediante la capa MTP del propio modelo y cifras de rendimiento medidas en ese hardware concreto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `glm_moe_dsa` (Mixture-of-Experts con atención dispersa DSA, transformer) |
-| Parametros totales | 138.092.850.560 según safetensors del repo cuantizado; el modelo base GLM-5.3 completo declara 753B |
+| Arquitectura | Transformer MoE (`glm_moe_dsa`), con capa MTP (multi-token prediction) en la capa 78 |
+| Parametros totales | 138.092.850.560 (según safetensors del repo cuantizado); el modelo base GLM-5.3 declara 753B |
 | Parametros activos | no disponible |
-| Longitud de contexto | Hasta 1.000.000 tokens con `--decode-context-parallel-size 4` (pool de 1,23M tokens); perfil estándar de 200.000 tokens |
-| Tipos de cuantizacion | EXL3 trellis con codebook `mul1`; precisión mixta por experto (2/3/4 bits en expertos enrutados, media 2,75 bpw); 5 bits en atención, expertos compartidos y MLP densos; 8 bits en expertos de la capa MTP; BF16 en `kv_b`, router, normas, embeddings y `lm_head`; KV cache en fp8 |
+| Longitud de contexto | 1M tokens verificados con needles a 115K, 456K y 905K; reserva KV de 200K por defecto |
+| Tipos de cuantizacion | EXL3 trellis `mul1`, anchura por experto: 2-bit (5.436 expertos), 3-bit (13.128), 4-bit (636), media 2,75 bpw; capa MTP a 8 bits; atención, expertos compartidos, MLPs densos e indexer `wq_b` a 5 bits; `kv_b`, `wk`, `weights_proj`, router, normas, embeddings y `lm_head` en BF16 |
 | Idiomas soportados | en, zh |
-| Licencia | `other`, nombre `glm-5.3`, ligada a la licencia del modelo base |
-| Formato de pesos | safetensors (EXL3), 81 shards, 258 GB |
+| Licencia | `glm-5.3` (license: other; enlace a la licencia del modelo base) |
+| Formato de pesos | safetensors (81 shards, 258 GB), EXL3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3 emplea la arquitectura `glm_moe_dsa`, un transformer con capas de atención dispersa (DSA) y Mixture-of-Experts. Según la model card, las capas 3 a 77 contienen 256 expertos enrutados cada una, además de expertos compartidos, MLP densos en las capas 0-2 y una capa MTP (capa 78) dedicada a predicción multi-token. El checkpoint original está entrenado en BF16; esta publicación no añade entrenamiento ni ajuste: es una conversión pura del BF16 a EXL3.
+El modelo base GLM-5.3 emplea una arquitectura de mezcla de expertos denominada `glm_moe_dsa`, con 256 expertos enrutados por capa en las capas 3 a 77 y expertos compartidos. La cuantización conserva la estructura completa y aplica compresión selectiva: los expertos enrutados reciben anchuras individuales de 2, 3 o 4 bits (media 2,75 bpw), mientras que los componentes sensibles a la precisión permanecen en BF16 o 5 bits. La capa MTP (capa 78) se mantiene a 8 bits para preservar su función de borrador especulativo.
 
-La innovación técnica de esta ficha es el esquema de cuantización de precisión mixta por experto. La anchura de bits se asigna individualmente a cada experto enrutado en función de cuánto daña su error de cuantización a la salida de la capa, medido sobre activaciones de calibración. El reparto resultante es 5.436 expertos a 2 bits, 13.128 a 3 bits y 636 a 4 bits, lo que da una media de 2,75 bpw. Las anchuras se registran en `quantization_config.json` con el formato `keys35-v1`. El autor reporta que sustituir las capas no-expertas de 5 bits por FP8 produce un empate en perplejidad (3,567/2,911 frente a 3,560/2,913), por lo que mantiene EXL3 por ser más rápido. El despliegue recomendado usa decodificación especulativa MTP con k=2 y kernels EXL3 de exllamav3 1.5.0.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni si hubo RLHF o DPO en la información proporcionada. La model card solo documenta el proceso de cuantización, no el entrenamiento del modelo base. Como innovación técnica destacable, el checkpoint incluye la capa MTP nativa que actúa como modelo borrador para decodificación especulativa sin necesidad de un draft externo; opcionalmente se puede usar DFlash2 (incoai/GLM-5.3-DFlash2, licencia CC BY-NC-ND 4.0) como borrador alternativo. La proyección `kv_a_proj_with_mqa` se almacena con anchura 640 (576 salidas reales más relleno de ceros hasta el tile de 128 columnas).
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (`pipeline: text-generation`, `conversational`).
-- Razonamiento de dominio general y generación de código, evidenciado por las métricas de perplejidad separadas para prosa y código.
-- Decodificación especulativa mediante la capa MTP del modelo base (hasta 2 tokens especulativos por paso verificados).
-- Atención dispersa a nivel de token (DSA) más allá de 2048 tokens, lo que permite manejar contextos largos con coste reducido.
-- Capacidades multilingües limitadas a inglés y chino.
-- Soporte de contexto largo: hasta 200K tokens en el perfil estándar y hasta 1M tokens con decode-context-parallel 4 (validado con una prueba de aguja a 128K).
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente en la información proporcionada.
-- Capacidades de visión o audio: no disponibles.
-- Nota: las capacidades funcionales heredadas del GLM-5.3 base no se detallan en la model card de esta cuantización; solo se documentan rendimiento, formato y despliegue.
+- Generación de texto conversacional y de razonamiento: el modelo base es un modelo de razonamiento y las cifras publicadas se miden con "thinking on".
+- Generación de código: se han publicado benchmarks de velocidad específicos para prosa y código.
+- Contexto largo: soporta hasta 1M tokens con needles verificados a 115K, 456K y 905K.
+- Decodificación especulativa mediante MTP propio (por defecto) o DFlash2 opcional.
+- Prompt reuse / caché de prefijo: reenvío idéntico en 0,15 s; nuevo turno con system prompt de 14,7K en 0,38 s.
+- Servidor compatible con OpenAI en el rango 0 (puerto 8890) mediante TensorFold.
+- Soporte de agentes: probado con frameworks Hermes y OpenClaw con `PARALLEL=4 CONTEXT=32768`.
+- Capacidades multilingües limitadas a inglés y chino según los tags del repo.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de un LLM de 753B en hardware prosumer agregado: cuatro DGX Spark con tensor-parallel 4 permiten ejecutar el modelo con un pool de KV de 200K tokens, algo inviable en una GPU única. Es el caso de uso central y el que motivó la publicación.
-- Atención al cliente con contexto muy largo: con 200K tokens de ventana, el modelo puede mantener hilos conversacionales de muchos turnos o incorporar documentación extensa en el prompt sin truncar.
-- Análisis de repositorios de código completos: la ventana de 200K tokens y las buenas métricas de perplejidad en código (2,913) permiten pasar ficheros y módulos enteros para tareas de revisión o generación.
-- Procesado de documentos largos en chino e inglés: soporte nativo de ambos idiomas para resumen, extracción y traducción sobre entradas de decenas de miles de tokens, especialmente en el perfil de 1M con decode-context-parallel 4.
-- Investigación en cuantización: el repositorio sirve como referencia reproducible de cuantización EXL3 de precisión mixta por experto, con `quantization_config.json` y `KEYS35_ASSEMBLY_REPORT.json` documentando la asignación de bits.
-- Despliegue batch con vLLM: la configuración medida (TP=4, fp8 KV, `--max-num-seqs 8`, CUDA graphs completos) está pensada para servir varias secuencias concurrentes con decodificación especulativa MTP.
-- Validación de pipelines alternativos: la rama experimental TensorFold-native sirve este mismo checkpoint sin vLLM (~18 tok/s en prosa), útil para comparar kernels y estrategias de decodificación.
+- Servicio de razonamiento en contexto largo sobre cuatro DGX Spark: el checkpoint está dimensionado para caber en 4×128 GB con reserva KV de 200K, lo que permite desplegar un modelo de 753B en hardware de sobremesa profesional sin clúster de datacenter.
+- Atención al cliente con conversaciones multi-turno: el prompt reuse reduce el coste de reenvío de system prompts largos (0,38 s con 14,7K tokens frente a 13,5 s sin caché), lo que hace viable mantener conversaciones con contexto de decenas de miles de tokens.
+- Análisis de documentos extensos y needles en 1M de tokens: útil para auditoría de contratos, revisión de códigos legales o búsqueda semántica en corpus muy grandes, con decode sostenido de 33-37 tok/s a profundidades de 115K-905K.
+- Asistencia a la programación con agentes: integración con frameworks tipo Hermes u OpenClaw usando `PARALLEL=4 CONTEXT=32768`, donde cada paso de agente arranca en 0,15-1 s gracias a la caché de prefijo.
+- Generación de código en pipelines internos: con DFlash2 como borrador se alcanzan 47,7 tok/s en código corto y 39,4 tok/s a 32K, adecuado para tareas de refactorización o generación de tests en lote.
+- Investigación y evaluación de cuantizaciones extremas: el repo documenta la asignación por experto en `quantization_config.json` (formato `keys35-v1`), lo que sirve como referencia para estudiar el impacto de precisiones mixtas en MoE de gran escala.
+- Despliegue multiusuario ligero: con 4 streams en paralelo se obtienen 78,7 tok/s agregados en prosa y 100,2 tok/s en código, suficiente para un equipo pequeño con cargas interactivas.
 
 ## Benchmarks y rendimiento
 
-Calidad de la cuantización frente al BF16 original:
+Datos publicados por el autor en la model card, medidos en 4× DGX Spark (GB10) con la imagen `2026-10-05`, thinking on:
 
 | Métrica | Valor |
 |---|---|
-| Perplejidad, prosa (12.223 tokens) | 3,560 |
-| Perplejidad, código (3.882 tokens) | 2,913 |
-| Perplejidad con capas no-expertas FP8 | 3,567 / 2,911 (empate) |
-| Divergencia KL frente a BF16 (`model_diff`, 65.536 tokens) | 0,124 nats (inversa 0,146; mediana por token 0,017; p90 0,30) |
-| Acuerdo top-1 con BF16 | 89,6 % (top-2 62,7 %) |
-| Perplejidad sobre los mismos tokens | 2,938 (BF16 2,750) |
-| Etiqueta en top-5 | 91,2 % (BF16 91,6 %) |
+| Prosa (greedy, 300 tokens, petición completa) | 40,2 tok/s |
+| Código (misma configuración) | 39,0 tok/s |
+| Prompt de 25K tokens (prefill + respuesta) | 25,3 s |
+| Prefill a 128K tokens | 1.038 tok/s (TTFT 125 s) |
+| Turno 2 de conversación de 93K (prompt reuse) | 0,85 s al primer token (85,7 s sin reuse) |
+| 4 streams agregados, prosa / código | 78,7 / 100,2 tok/s |
+| 1M contexto: needles a 115K / 456K / 905K | PASS; decode 37,0 / 35,7 / 33,7 tok/s |
 
-Rendimiento medido en 4 x DGX Spark (una sola secuencia, contexto de 32K, temperatura 1,0, top-p 0,95, 512 tokens):
+| Single stream, thinking on | MTP = 2 (por defecto) | DFlash2 (opcional) |
+|---|---|---|
+| Contexto corto, greedy: prosa / código | 37,7 / 41,4 tok/s | 36,1 / 47,7 tok/s |
+| 32K contexto, muestreado (T=1.0): prosa / código | 31,7 / 34,9 tok/s | 33,4 / 39,4 tok/s |
 
-| Perfil | Prosa | Código | Mixto | Tokens/paso | Paso |
-|---|---|---|---|---|---|
-| 200K contexto, RoCE all-reduce | 23,8 tok/s | 30,9 tok/s | 26,1 | 1,88 | 79 ms |
-| 1M contexto, decode-context-parallel 4 | 16,6 tok/s | 21,1 tok/s | 18,1 | 1,82-2,28 | 108-110 ms |
-
-Procesado de prompt (perfil 200K): 749 tok/s a 4K, 733 a 32K y 668 a 128K tokens, con un TTFT de 195 s a 128K. El perfil de 1M superó una prueba de aguja a 128K con 409 tok/s de prefill a 32K. El motor TensorFold-native experimental sirve el mismo checkpoint a unos 18 tok/s en prosa y 20 tok/s en código con contexto corto.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Despliegue de referencia: 4 x NVIDIA DGX Spark (GB10), cada una con 128 GB de memoria unificada, en tensor-parallel 4.
-- Peso por rango: 67,5 GiB de pesos por rank con TP=4.
-- Tamaño total de pesos: 258 GB (81 shards safetensors); 276,3 GB de repo.
-- KV cache: fp8, configurado con `--kv-cache-memory-bytes 14092861440` (unos 13,1 GiB) para el perfil de 200K; pool de 1,23M tokens en el perfil de 1M.
-- No cabe en una GPU de consumo única (RTX 4090, 24 GB) ni en configuraciones de una sola GPU de 80 GB; requiere agregación de memoria entre varias máquinas.
-- Opciones de despliegue: vLLM con soporte EXL3 (imagen propia del autor, no pública todavía) con kernels de exllamav3 1.5.0, método MoE `exl3_mixedk`, `exl3_dense` para capas no-expertas, decodificación especulativa MTP y CUDA graphs completos. Alternativa experimental: motor nativo TensorFold (rama no fusionada en upstream).
-- Configuración clave de vLLM (TP=4): `--kv-cache-dtype fp8 --max-model-len 200000 --max-num-seqs 8 --async-scheduling --cudagraph-capture-sizes 1 2 3 4 6 8 12 24 --speculative-config '{"method":"mtp","num_speculative_tokens":2}'`.
-- Throughput estimado: 23,8-30,9 tok/s en decodificación con el perfil de 200K; 16,6-21,1 tok/s con el de 1M.
-- Latencia: TTFT de 195 s para un prompt de 128K tokens; 668-749 tok/s de prefill según longitud.
+- VRAM/memoria unificada: 4 nodos DGX Spark (GB10) con 128 GB cada uno; ~9-15 GB libres por Spark durante el servicio, sin swap.
+- GPU recomendadas: exclusivamente DGX Spark (GB10) según la receta publicada; no se documenta funcionamiento en A100, H100 ni RTX 4090.
+- Consumer GPU: no cabe en ninguna GPU de consumo individual; el checkpoint pesa 258 GB y requiere paralelismo tensorial 4.
+- Opciones de despliegue: TensorFold (motor nativo `glm_moe_dsa`, TP4, un rank por Spark) es la vía recomendada; el tag `vllm` aparece en el repo pero la model card indica explícitamente "no vLLM in the serving path". No se documenta llama.cpp, Ollama ni TGI.
+- Imagen preconstruida: `ghcr.io/drowzeys/keys-tensorfold-glm53-tp4-dgx-spark:2026-10-05` (también `:latest`), CUDA 13 / GB10.
+- Latencia y throughput: ver tabla de benchmarks; TTFT de 125 s a 128K de prefill, 0,85 s en turno 2 con prompt reuse a 93K.
+- Ajustes de memoria: `vm.swappiness=1`, `vm.compaction_proactiveness=0`, descarte de shards de la page cache al cargar y espera entre carriles en `one-shot.sh`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato / precision | Tamaño | Contexto | Rendimiento | Licencia |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| keys-GLM-5.3-EXL3-2.75BPW (este) | EXL3, 2,75 bpw mixto por experto | 258 GB | 200K (hasta 1M con DCP 4) | 23,8-30,9 tok/s; KL 0,124 nats; top-1 89,6 % | glm-5.3 |
-| keys-GLM-5.3-EXL3 | EXL3, anchura uniforme | no disponible | no disponible | no disponible | glm-5.3 |
-| keys-GLM-5.3-EXL3-3.0BPW-abliterated | EXL3 3,0 bpw, ablacionado | no disponible | 1.024K (según LLM Explorer) | KL 0,102 nats; top-1 91,1 % | glm-5.3 |
-| zai-org/GLM-5.3 (BF16 base) | BF16 | 753B parámetros | no disponible | Perplejidad 2,750 (referencia) | glm-5.3 |
-
-Comparativa orientativa: la variante 3.0BPW ablacionada reporta menor KL (0,102 nats) y mayor acuerdo top-1 (91,1 %) que esta versión de 2,75 bpw, a costa de más bits y de una modificación del comportamiento del modelo (ablación). Frente al BF16 base, esta cuantización introduce una divergencia media de 0,124 nats y aproximadamente uno de cada diez argmax difiere del modelo sin cuantizar.
+| keys-GLM-5.3-EXL3-2.75BPW (este) | 753B (138B según safetensors del cuantizado) | 1M | glm-5.3 (other) | Hugging Face, 206 descargas | Cuantización mixta por experto, pensada para 4× DGX Spark |
+| keys-GLM-5.3-EXL3 (uniforme) | 753B | no disponible | glm-5.3 (other) | Hugging Face (drowzeys) | Versión anterior de anchura uniforme; referencia del propio autor |
+| zai-org/GLM-5.3 (BF16) | 753B | no disponible | glm-5.3 | Hugging Face | Modelo base sin cuantizar; requiere hardware de datacenter |
+| incoai/GLM-5.3-DFlash2 | no disponible | no disponible | CC BY-NC-ND 4.0 | Hugging Face | Borrador especulativo opcional, no comercial |
 
 ## Limitaciones y advertencias
 
-- La cuantización a 2,75 bpw introduce divergencia frente al BF16: KL de 0,124 nats y un 89,6 % de acuerdo top-1 implican que alrededor del 10 % de las decisiones argmax difieren del modelo original.
-- Riesgo de alucinación inherente al modelo base, no mitigado por la cuantización; la model card no documenta medidas de alineación adicionales.
-- Idiomas limitados a inglés y chino; no se declara soporte de castellano ni de otros idiomas.
-- Restricciones de licencia: el uso está sujeto a la licencia `glm-5.3` del modelo base de Z.ai; conviene revisar sus términos antes de cualquier uso comercial.
-- Dependencia de software no público: el despliegue con vLLM requiere la imagen propia del autor (no publicada) y kernels EXL3 específicos; vLLM estándar no soporta todavía este formato.
-- El prefill es un cuello de botella reconocido: 668 tok/s a 128K y TTFT de 195 s en ese escenario; el autor estima que podría mejorarse hasta 2x.
-- Requisitos de hardware muy elevados: cuatro DGX Spark como mínimo, 258 GB de pesos y agregación de memoria entre máquinas; no es desplegable en una GPU de consumo.
-- La rama TensorFold-native es experimental, no fusionada en upstream y más lenta (18-20 tok/s) que la ruta vLLM.
-- El repositorio tiene muy poca adopción (21 descargas, 1 like) y fue actualizado una sola vez el mismo día de su creación, por lo que no cuenta con validación externa amplia.
-- Los recuentos de parámetros difieren entre fuentes (138B según metadatos de safetensors de este repo, 753B para el base, 165B en LLM Explorer), lo que refleja distintas formas de contar pesos cuantizados; conviene no interpretar el valor de safetensors como parámetros efectivos del modelo.
-- No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) que permitan una evaluación funcional directa.
+- La cuantización a 2,75 bpw media introduce pérdida de precisión frente al BF16; no se han publicado evaluaciones de calidad (MMLU, HumanEval) que cuantifiquen esa degradación.
+- El checkpoint está pensado y probado exclusivamente para 4× DGX Spark con TensorFold; no hay evidencia de funcionamiento en otras configuraciones.
+- Idiomas limitados a inglés y chino; no se declara soporte de castellano.
+- Licencia `glm-5.3` (other): es responsabilidad del usuario revisar los términos del modelo base antes de uso comercial.
+- El borrador opcional DFlash2 tiene licencia CC BY-NC-ND 4.0, lo que impide su uso comercial y su redistribución; el fine-tune del borrador realizado por el autor no puede publicarse por esta razón.
+- Riesgo de alucinación inherente al modelo base; no se documentan evaluaciones de fidelidad.
+- El rendimiento medido es con "thinking on"; no se publican cifras con thinking off, por lo que la latencia en modo rápido es desconocida.
+- El prefill a 128K tarda 125 s (TTFT), lo que limita casos de uso interactivos con prompts muy largos sin caché de prefijo.
+- La gestión de memoria en GB10 requiere ajustes específicos del sistema operativo; sin ellos el servicio puede recurrir a swap.
+- Sesgos conocidos del modelo base: no disponible en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW
-- Variante de anchura uniforme: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3
-- Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
-- Perfil del autor en Hugging Face: https://huggingface.co/zai-org
-- Repositorio exllamav3 (turboderp): https://github.com/turboderp-org/exllamav3
-- Kernel universal EXL3 experts (ashhart / TensorFold): https://github.com/ashhart/TensorFold
-- Repositorio de la variante 3.0BPW abliterada: https://github.com/drowzeys/keys-GLM-5.3-EXL3-3.0BPW-abliterated-vLLm-cuda-Exl3
-- Perfil de GitHub del autor: https://github.com/drowzeys
-- Ficha en LLM Explorer: https://llm-explorer.com/model/drowzeys%2Fkeys-GLM-5.3-EXL3,2pLaXD4DArT1btohFrNmAL
+- Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
+- Cuantización uniforme previa: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3
+- Borrador DFlash2: https://huggingface.co/incoai/GLM-5.3-DFlash2
+- TensorFold (motor): https://github.com/ashhart/TensorFold
+- Rama TensorFold glm53-tp4: https://github.com/drowzeys/TensorFold/tree/glm53-tp4-2026-10-05
+- Receta TP4 4× DGX Spark: https://github.com/drowzeys/keys-TensorFold-GLM-5.3-TP4-4x-DGX-Spark
+- AGENTS.md para agentes: https://github.com/drowzeys/keys-TensorFold-GLM-5.3-TP4-4x-DGX-Spark/blob/main/AGENTS.md
+- Fine-tune del borrador: https://github.com/drowzeys/keys-TensorFold-GLM-5.3-TP4-4x-DGX-Spark/tree/main/draft-finetune

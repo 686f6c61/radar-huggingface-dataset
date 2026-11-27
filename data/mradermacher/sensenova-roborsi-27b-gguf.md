@@ -2,100 +2,90 @@
 
 ## Resumen
 
-SenseNova-RoboRSI-27B-GGUF es una cuantización estática en formato GGUF del modelo SenseNova-RoboRSI-27B, desarrollado originalmente por SenseNova (el equipo de modelos de IA de SenseTime) y convertido a GGUF por el usuario mradermacher. El modelo base cuenta con aproximadamente 26.900 millones de parámetros (26.895.998.464 según los safetensors de referencia), lo que lo sitúa en la categoría de modelos densos de gran tamaño, y el repositorio GGUF ocupa 28,2 GB en total al incluir múltiples variantes de cuantización.
+SenseNova-RoboRSI-27B es un modelo vision-language (VLM) orientado a robótica y IA encarnada (embodied AI), desarrollado originalmente por SenseNova y distribuido en formato GGUF por el cuantizador mradermacher. El modelo resuelve el problema de conectar percepción visual con generación de políticas de control robótico mediante el paradigma "code-as-policy", es decir, producir código ejecutable que actúa como plan de acción del robot. Su enfoque de "recursive self-improvement" (RSI) sugiere un entrenamiento iterativo donde el propio modelo refina sus políticas a partir de retroalimentación.
 
-El nombre "RoboRSI" sugiere un enfoque orientado a robótica o a razonamiento iterativo (RSI, posiblemente *Reasoning / Self-Improvement*), aunque la model card disponible no detalla la arquitectura interna, los datos de entrenamiento ni las capacidades específicas más allá de la etiqueta "conversational". El modelo está etiquetado como compatible con endpoints y está pensado para su uso conversacional.
+Con aproximadamente 26.900 millones de parámetros (26.895.998.464 según los safetensors del modelo base), se sitúa en la franja de modelos de 27B, un tamaño que permite despliegue en hardware de gama alta de consumo mediante cuantización agresiva. La versión aquí descrita es una conversión estática a GGUF que incluye tanto los pesos del modelo de lenguaje como los ficheros mmproj necesarios para el procesamiento multimodal.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de ~27B parámetros en hardware de consumo o en entornos con recursos limitados mediante cuantización GGUF, algo imposible con los pesos completos en precisión nativa. No obstante, la información pública disponible es muy escasa, por lo que muchos apartados de esta ficha deben marcarse como no disponibles.
+Es relevante ahora porque combina tres tendencias activas: modelos de lenguaje que actúan como agentes, integración de visión para tareas físicas y el formato GGUF como vía de democratización del despliegue local. La licencia Apache 2.0 facilita su uso comercial, aunque la información pública sobre arquitectura interna, contexto y datos de entrenamiento es escasa en la model card disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer denso, inferido por el tamaño y el formato; no confirmado en la model card) |
+| Arquitectura | no disponible (vision-language model; detalles internos no publicados en la model card) |
 | Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
-| Tamano del repositorio | 28,2 GB |
-| Version de cuantizacion | 2 |
-| Tipo de conversion | hf (desde pesos Hugging Face) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (segun metadatos de la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo base SenseNova-RoboRSI-27B en la documentación proporcionada. Por el número de parámetros (~26,9B) y el pipeline conversacional, se trata presumiblemente de un transformer denso, pero la model card del repositorio GGUF no confirma ni la arquitectura exacta, ni el número de capas, ni la dimensión de los embeddings, ni el tipo de atención.
+La model card del repositorio GGUF no detalla la arquitectura interna del modelo base. Los metadatos lo etiquetan como vision-language-model con capacidades de embodied-ai, agent, code-as-policy y recursive-self-improvement, lo que indica que combina un codificador visual con un modelo de lenguaje para producir políticas de control expresadas como código. El término "RSI" (recursive self-improvement) apunta a un esquema de entrenamiento iterativo en el que el modelo genera y evalúa sus propias trayectorias o políticas para mejorar sucesivamente.
 
-Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición del dataset), sobre si se aplicaron técnicas de alineación como RLHF o DPO, ni sobre innovaciones técnicas específicas (decodificación especulativa, atención lineal, mezcla de expertos, etc.). El único dato técnico relevante de la conversión es que se generaron cuantizaciones estáticas con `quantize_version: 2` y `output_tensor_quantised: 1`, partiendo de los pesos en formato Hugging Face del modelo original. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa y, por tanto, se omite.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones concretas como decodificación especulativa o atención lineal. Los ficheros mmproj (Q8_0 y f16) confirman la presencia de un proyector multimodal necesario para procesar imágenes junto al texto, pero sus dimensiones y arquitectura no se especifican.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" indica que el modelo está orientado a diálogo multi-turno.
-- Razonamiento: el sufijo "RSI" del nombre sugiere capacidades de razonamiento iterativo o auto-mejora, aunque no se detalla en la información disponible.
-- Posible orientación a robótica: el prefijo "Robo" del nombre apunta a un uso en entornos robóticos o de razonamiento espacial/embodied, sin confirmación documental.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el nombre sugiere razonamiento, pero no hay confirmación).
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto y razonamiento multimodal a partir de entradas de imagen y texto.
+- Comprensión de escenas visuales orientada a robótica (percepción de objetos y entorno).
+- Generación de políticas como código (code-as-policy): el modelo produce código ejecutable que describe la acción del robot.
+- Capacidades de agente con razonamiento multi-paso, según las etiquetas agent y embodied-ai.
+- Auto-mejora recursiva (recursive-self-improvement) como rasgo declarado del entrenamiento.
+- Soporte de conversación multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
+- Idiomas: inglés únicamente según los metadatos disponibles.
 
 ## Casos de uso
 
-- Despliegue conversacional en local: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en una estación de trabajo con GPU de consumo para prototipar asistentes conversacionales sin depender de la nube.
-- Investigación sobre razonamiento: si el modelo implementa de hecho capacidades de razonamiento iterativo (según sugiere el nombre RSI), puede emplearse como banco de pruebas para estudiar cadenas de razonamiento y auto-corrección en modelos de ~27B.
-- Evaluación de cuantizaciones: el repositorio ofrece 12 variantes de cuantización, lo que permite comparar la degradación de calidad entre Q2_K y Q8_0 sobre el mismo modelo base, un caso de uso típico para investigadores que estudian el impacto de la cuantización.
-- Prototipado de robótica y agentes embodied: si el modelo base está orientado a robótica, las versiones GGUF permiten integrarlo en simuladores o en hardware de borde con recursos limitados.
-- Fine-tuning y destilación: las cuantizaciones de mayor precisión (Q8_0, x-f16) pueden servir como referencia para comparar con versiones afinadas o destiladas del mismo modelo.
-- Despliegue en entornos sin GPU dedicada: las variantes Q2_K y Q3_K_S reducen el peso lo suficiente como para intentar inferencia en CPU con llama.cpp, útil para demos y pruebas de concepto.
+- Planificación de tareas robóticas en manipulación: el modelo recibe una imagen del entorno y un objetivo en lenguaje natural, y genera código de política que un stack de control (por ejemplo, ROS) puede ejecutar para mover un brazo o una pinza.
+- Generación de scripts de control para simulación: integrado en entornos como Isaac Sim o MuJoCo, el modelo traduce instrucciones a código Python que define trayectorias y condiciones de parada, acelerando el prototipado de políticas antes de transferirlas al robot real.
+- Asistente de depuración de políticas existentes: dado un fragmento de código de control y una imagen del fallo, el modelo razona sobre la discrepancia entre la percepción y la acción esperada y propone correcciones.
+- Automatización de tareas de inspección visual: el modelo analiza imágenes de una línea de producción y genera código que describe rutinas de detección o señalización de anomalías.
+- Investigación en IA encarnada: sirve como base para experimentos de code-as-policy y self-improvement, permitiendo comparar políticas generadas por el modelo con políticas aprendidas por refuerzo clásico.
+- Despliegue local en laboratorio: gracias a las cuantizaciones Q4_K_M (16,8 GB) y Q5_K_M (19,4 GB), puede ejecutarse en una estación de trabajo con una sola GPU de 24 GB para experimentación sin depender de la nube.
+- Generación de documentación técnica de robots: a partir de imágenes del montaje y del código de control, el modelo redacta guías de operación o procedimientos de mantenimiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada según el tamaño del modelo y la cuantización):
-  - Q2_K: ~10-11 GB
-  - Q3_K_S / Q3_K_M / Q3_K_L: ~12-14 GB
-  - Q4_K_S / Q4_K_M / IQ4_XS: ~15-17 GB
-  - Q5_K_S / Q5_K_M: ~18-20 GB
-  - Q6_K: ~21-23 GB
-  - Q8_0: ~28-29 GB
-  - x-f16: ~54 GB
-- GPU recomendadas:
-  - Consumer: RTX 4090 (24 GB) puede ejecutar hasta Q6_K con comodidad y Q8_0 con offloading parcial; RTX 3090 (24 GB) similar.
-  - Profesional: A100 40/80 GB, H100 80 GB para x-f16 y Q8_0 sin offloading.
-- ¿Cabe en GPU de consumo? Sí, las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs de 16-24 GB; las variantes Q2/Q3 caben en GPUs de 12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (llama-cpp-python, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda llama.cpp para este formato.
-- Latencia y throughput: no disponibles; dependen en gran medida del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más el overhead del contexto y del proyector multimodal. Orientativamente: Q2_K ~11,2 GB, Q4_K_M ~16,8 GB, Q5_K_M ~19,4 GB, Q8_0 ~28,7 GB, más 0,7-1,0 GB del mmproj.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y contextos largos; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con margen; RTX 3090 (24 GB) igualmente válida para Q4/Q5.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M o Q5_K_M; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, y servidores compatibles con endpoints (el modelo lleva el tag endpoints_compatible). Para el modelo base en safetensors, vLLM o TGI si el soporte multimodal está disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| SenseNova-RoboRSI-27B-GGUF | ~26,9B | no disponible | no disponible | GGUF | Esta ficha |
-| Modelos densos de ~27B en GGUF (p. ej. Gemma 2 27B, Qwen2.5 32B) | 27-32B | 8K-128K (según modelo) | variable | GGUF, safetensors | Alternativas establecidas con documentación y benchmarks públicos |
-| Modelos MoE de tamaño similar (p. ej. Mixtral 8x7B) | ~47B totales, ~13B activos | 32K | Apache 2.0 | GGUF, safetensors | Mayor eficiencia por token activo, pero no es comparable en arquitectura |
+| SenseNova-RoboRSI-27B (este) | ~26,9B | no disponible | Apache 2.0 | GGUF, safetensors | VLM para robótica, code-as-policy |
+| Modelos VLM generalistas de ~27B (p. ej. familia Qwen2.5-VL-32B) | ~32B | hasta 128K en algunas variantes | Apache 2.0 en varias variantes | safetensors, GGUF | Uso general, no especializados en robótica |
+| Modelos de robótica open source de menor tamaño (p. ej. variantes de OpenVLA) | ~7B | no disponible | varía | safetensors | Específicos de manipulación, no code-as-policy |
 
-No se dispone de datos de rendimiento del modelo para una comparación cuantitativa fiable; la comparativa anterior es meramente estructural.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa fiable con alternativas. La comparativa anterior es orientativa por categoría y tamaño, no por rendimiento medido.
 
 ## Limitaciones y advertencias
 
-- Información pública muy limitada: no hay model card detallada, benchmarks ni documentación de la arquitectura, lo que dificulta evaluar su calidad antes de desplegarlo.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (sensenova/SenseNova-RoboRSI-27B) antes de usarlo en producción.
-- Riesgo de alucinación: inherente a los modelos generativos de este tamaño; sin datos de alineación no se puede estimar su magnitud.
-- Sesgos: no documentados; se desconoce la composición del corpus de entrenamiento.
-- Idiomas: no confirmados; no se garantiza un buen rendimiento en castellano.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S): pueden degradar notablemente la calidad y la coherencia, especialmente en tareas de razonamiento.
-- Contexto: se desconoce la longitud máxima soportada; no asumir ventanas largas sin verificación.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-23): conviene verificar la autenticidad y vigencia del repositorio.
+- La model card del repositorio GGUF no documenta sesgos conocidos; al ser un modelo entrenado principalmente en inglés, el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación inherente a los modelos generativos: el código de política producido puede ser sintácticamente válido pero semánticamente incorrecto, con riesgo físico en robots reales. Requiere validación en simulación y supervisión humana antes de ejecución.
+- Idiomas: solo inglés según los metadatos; no se declara soporte multilingüe.
+- Longitud de contexto no documentada, lo que dificulta planificar tareas de largo horizonte.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base podría tener condiciones adicionales no reflejadas en la conversión GGUF; conviene verificar el repositorio original.
+- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad y pueden afectar especialmente a la coherencia del código generado; se recomienda Q4_K_M o superior para producción.
+- No hay información sobre latencia, throughput ni precisión de las cuantizaciones frente al modelo original.
+- El repositorio tiene muy pocas interacciones (1 like) y fue creado recientemente; la madurez y el soporte de la comunidad son limitados.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/SenseNova-RoboRSI-27B-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-RoboRSI-27B
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- llama.cpp (runtime recomendado para GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Página de descargas del cuantizador: https://hf.tst.eu/model#SenseNova-RoboRSI-27B-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

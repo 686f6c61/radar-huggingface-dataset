@@ -2,88 +2,84 @@
 
 ## Resumen
 
-Arbora Qwen3.8-27B drafter es un modelo borrador (drafter) especializado para decodificación especulativa, desarrollado por el autor anónimo arbora-anon como parte del material de código del artículo "Arbora: Unleashing the Parallelism of Block Diffusion Drafters in Speculative Decoding", actualmente en revisión anónima. No es un modelo de propósito general: su función es proponer tokens candidatos que un modelo objetivo de mayor tamaño (z-lab/Qwen3.8-27B-DFlash2, de 27 000 millones de parámetros) verifica en paralelo, acelerando así la generación sin alterar la distribución de salida del modelo grande.
+Arbora Qwen3.8-27B drafter es un modelo auxiliar de decodificacion especulativa (speculative decoding) disenado para acelerar la inferencia de su modelo objetivo, z-lab/Qwen3.8-27B-DFlash2. No es un modelo de proposito general: es un "drafter" que propone tokens candidatos que el modelo objetivo verifica en paralelo, reduciendo el coste por token generado sin alterar la distribucion de salida. Lo publica el autor anonimo arbora-anon como parte del material de codigo del articulo "Arbora: Candidate-Aware Mixture of Speculators for Block Diffusion Drafters", actualmente en revision anonima.
 
-El modelo parte del checkpoint z-lab/Qwen3.8-27B-DFlash2 y se entrena durante tres épocas adicionales sobre respuestas generadas por el propio modelo objetivo. Incorpora copias de la matriz de embeddings y de la cabeza de salida del modelo objetivo, lo que explica que, pese a tener 4 467 201 280 parámetros totales (aproximadamente 4,47 mil millones), el repositorio ocupe 8,9 GB en safetensors: el drafter reutiliza esas matrices compartidas en lugar de aprenderlas desde cero.
+El modelo parte de los pesos de z-lab/Qwen3.8-27B-DFlash2 y se entrena tres epocas adicionales siguiendo el layout de la libreria speculators. Con 4.467.201.280 parametros (aproximadamente 4,5 mil millones), esta muy por debajo de los 27 mil millones del modelo objetivo, lo que permite ejecutarlo en la misma GPU o en una secundaria con un coste de memoria moderado. El repositorio ocupa 8,9 GB e incluye copias del embedding y de la cabeza de salida del modelo objetivo, necesarias para el proceso de exportacion a SGLang.
 
-Su relevancia es acotada pero técnica: se publica como artefacto de investigación reproducible para el ecosistema SGLang, con un script de exportación específico (`training/path_scorer/export_d2_for_sglang.py`) que genera el layout de servicio bajo el nombre local `qwen3.8-27b-drafter`. No está pensado para inferencia autónoma ni para uso directo como chatbot, sino como componente de un pipeline de decodificación especulativa junto a su modelo objetivo.
+Su relevancia es practica: la decodificacion especulativa es una de las tecnicas mas extendidas para reducir la latencia en serving de LLM, y este drafter esta especificamente ajustado a las respuestas del modelo objetivo, lo que en teoria mejora la tasa de aceptacion de tokens frente a un drafter generico. La licencia Apache 2.0 facilita su integracion en produccion, aunque el uso esta condicionado a disponer del modelo objetivo y del pipeline de exportacion del proyecto Arbora.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Drafter de decodificación especulativa (block diffusion drafter, layout "speculators"); arquitectura interna no detallada en la información disponible |
-| Parametros totales | 4 467 201 280 (4,47 B) |
+| Arquitectura | Drafter de decodificacion especulativa (block diffusion drafter, layout speculators); arquitectura interna no detallada |
+| Parametros totales | 4.467.201.280 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`), con copias de embeddings y cabeza de salida del modelo objetivo; exportación adicional al layout SGLang |
-| Modelo base | z-lab/Qwen3.8-27B-DFlash2 |
-| Tamano del repositorio | 8,9 GB |
-| Configuracion | `config.json` con formato de configuracion "speculators" |
+| Formato de pesos | safetensors (model.safetensors + config.json) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un drafter de difusión por bloques (block diffusion drafter) diseñado para explotar el paralelismo en decodificación especulativa, según el título del artículo asociado. En lugar de generar candidatos token a token de forma autorregresiva, un drafter de difusión por bloques propone bloques completos de tokens que el modelo objetivo verifica después. El checkpoint se distribuye con el layout denominado "speculators" y contiene copias de la matriz de embeddings y de la cabeza de salida del modelo objetivo (z-lab/Qwen3.8-27B-DFlash2), lo que permite alinear el espacio de tokens del drafter con el del verificador sin duplicar el coste de aprendizaje de esas matrices.
+El modelo es un drafter para decodificacion especulativa construido sobre el layout de la libreria speculators y derivado de z-lab/Qwen3.8-27B-DFlash2, al que se anaden tres epocas de entrenamiento adicional. El articulo asociado lo enmarca en una propuesta de "mixture of speculators" consciente de candidatos para drafters de difusion por bloques (block diffusion drafters), es decir, drafters que proponen bloques de tokens en lugar de tokens individuales. La model card no detalla la arquitectura interna (numero de capas, dimension oculta, mecanismo de atencion), por lo que estos datos no estan disponibles.
 
-El entrenamiento parte del checkpoint z-lab/Qwen3.8-27B-DFlash2 y añade tres épocas adicionales. Los datos de entrenamiento son respuestas generadas por el propio modelo objetivo a partir de una colección de prompts que el autor no publica; el release de código describe la receta y los scripts que permiten reconstruir los datos de entrenamiento a partir de cualquier fichero de prompts. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO (en un drafter de este tipo el objetivo habitual es la destilación de la distribución del objetivo, pero el detalle no se documenta en la model card).
+El entrenamiento se realizo sobre las propias respuestas del modelo objetivo, un enfoque de destilacion orientado a alinear la distribucion del drafter con la del verificador y maximizar la tasa de aceptacion. El repositorio incluye copias del embedding y de la cabeza de salida del modelo objetivo, lo que sugiere que el drafter reutiliza esas componentes para mantener coherencia de vocabulario. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; al tratarse de un drafter, el ajuste por preferencias no seria el mecanismo habitual.
 
 ## Capacidades
 
-- Generación de tokens candidatos para decodificación especulativa: propone bloques de tokens que el modelo objetivo verifica en paralelo.
-- Aceleración de inferencia del modelo objetivo z-lab/Qwen3.8-27B-DFlash2 sin modificar su distribución de salida (la verificación garantiza equivalencia con la decodificación del objetivo).
-- Integración con SGLang mediante el script de exportación incluido en el release de código.
-- Reutilización del vocabulario y de la cabeza de salida del modelo objetivo, lo que facilita la compatibilidad de tokenizador.
-- No se documentan capacidades de tool calling, razonamiento multi-paso, visión, audio ni modo "thinking": no es un modelo de propósito general.
-- Capacidades multilingües: no disponibles (dependen del vocabulario del modelo objetivo, no documentado en esta ficha).
+- Generacion de tokens candidatos para decodificacion especulativa: su funcion principal es proponer tokens que el modelo objetivo Qwen3.8-27B-DFlash2 verifica, acelerando la generacion.
+- Drafting por bloques: el enfoque de block diffusion drafters implica proponer bloques de tokens en paralelo, no solo el siguiente token.
+- Integracion con SGLang: el flujo de exportacion documentado genera un artefacto consumible por SGLang como DRAFTER.
+- Compatibilidad con el pipeline Arbora: se usa como drafter en los modos path-scorer, experts y serving-files de arbora/run.sh.
+- No es un modelo de chat autonomo: no se documentan capacidades de tool calling, agentes, vision, audio ni modo thinking.
+- Capacidades multilingues: no documentadas; dependen del vocabulario heredado del modelo objetivo, pero no se especifican idiomas.
 
 ## Casos de uso
 
-- Aceleración de servicio de LLM en producción: desplegar el drafter junto a z-lab/Qwen3.8-27B-DFlash2 en SGLang para reducir la latencia por token en cargas de generación larga, aprovechando que el drafter propone bloques de tokens verificados en paralelo por el modelo grande.
-- Reducción de coste por token en APIs de inferencia: al aumentar el número de tokens aceptados por paso de verificación, se reduce el número de pasos del modelo objetivo y, con ello, el coste computacional por respuesta generada.
-- Investigación en decodificación especulativa: servir como punto de partida reproducible para experimentos con drafters de difusión por bloques, ya que el release incluye la receta y los scripts para reconstruir los datos de entrenamiento desde cualquier fichero de prompts.
-- Reproducción de resultados del artículo Arbora: el checkpoint permite replicar los experimentos del paper en revisión anónima y comparar el rendimiento del drafter frente a alternativas autorregresivas.
-- Ajuste fino adicional del drafter: al entrenarse "desde este directorio" según la model card, sirve como inicialización para adaptar el drafter a un dominio concreto (por ejemplo, código o texto jurídico) regenerando datos con el modelo objetivo sobre prompts del dominio.
-- Evaluación de pipelines de serving: útil para equipos que quieran medir la ganancia real de la decodificación especulativa en su infraestructura (SGLang) antes de adoptarla en producción, con un drafter alineado al vocabulario del objetivo.
+- Aceleracion de serving en produccion: desplegar el drafter junto al modelo objetivo en SGLang para reducir la latencia por token en cargas de generacion larga, aprovechando que el drafter es unas seis veces mas pequeno que el objetivo.
+- Reduccion de coste en GPU: al ocupar 8,9 GB el repositorio completo, el drafter puede residir en la misma GPU que el modelo objetivo o en una secundaria, disminuyendo el numero de GPUs necesarias frente a servir solo el modelo grande con mayor latencia.
+- Investigacion en decodificacion especulativa: usar el modelo como punto de partida reproducible para experimentar con mezclas de speculators y comparar tasas de aceptacion, dado que el codigo del articulo Arbora esta publicado.
+- Evaluacion de drafters ajustados al objetivo: medir el impacto de tres epocas adicionales de entrenamiento sobre las respuestas del modelo objetivo frente al checkpoint base z-lab/Qwen3.8-27B-DFlash2.
+- Despliegue de asistentes de codigo de baja latencia: en pipelines donde el modelo objetivo genera codigo, el drafter acelera la salida en escenarios de autocompletado o generacion de parches, siempre que el objetivo sea Qwen3.8-27B-DFlash2.
+- Reproduccion de resultados academicos: servir el modelo con el pipeline Arbora para replicar las filas DFlash2 del articulo y validar la metodologia de mixture of speculators.
+- Integracion en CI/CD de modelos: automatizar la exportacion con export_d2_for_sglang.py y validar la latencia en entornos de staging antes de promover a produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de tasa de aceptación (acceptance rate), speedup ni comparaciones numéricas con otros drafters.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasas de aceptacion, speedup, latencia ni metricas de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en safetensors ocupan 8,9 GB (aproximadamente 8,3 GB en precisión de 16 bits para 4,47 B de parámetros, más las copias de embeddings y cabeza de salida del objetivo). En FP16 se requiere del orden de 9-10 GB de VRAM solo para el drafter; en BF16, similar.
-- El drafter debe co-residir con el modelo objetivo (27 B), por lo que el requisito agregado de VRAM lo determina principalmente el objetivo, no el drafter.
-- GPU recomendadas: para el conjunto drafter + objetivo de 27 B en BF16 se necesitan GPUs de clase A100/H100 de 80 GB o múltiples GPUs; el drafter por sí solo cabe en una RTX 4090 (24 GB) o A10G (24 GB).
-- Cabe en GPU de consumo: el drafter aislado sí (RTX 4090, RTX 3090 de 24 GB); el sistema completo con el objetivo de 27 B no cabe en una única GPU de consumo en BF16.
-- Opciones de despliegue: SGLang, mediante el script `training/path_scorer/export_d2_for_sglang.py` que genera el layout de servicio. No se documentan soportes para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; dependen de la tasa de aceptación del drafter y del hardware del objetivo, y no se publican cifras en la información disponible.
+- VRAM estimada para inferencia: el repositorio pesa 8,9 GB en safetensors; en precision de entrenamiento (probablemente bf16/fp16) los pesos de 4,47 mil millones de parametros ocupan en torno a 8,9 GB, a lo que hay que sumar cache KV y overhead del runtime. No se documentan cuantizaciones, por lo que no hay cifras para GGUF o int8.
+- GPU recomendadas: no especificadas por el autor. Por tamano, una GPU con 16-24 GB de VRAM deberia alojar el drafter, pero debe convivir con el modelo objetivo de 27 mil millones de parametros, que requiere hardware adicional o mayor.
+- Cabe en GPU consumer: previsiblemente si en RTX 4090 (24 GB) o RTX 3090 (24 GB) para el drafter aislado; no se confirma en la informacion disponible.
+- Opciones de despliegue: SGLang mediante export_d2_for_sglang.py; el pipeline Arbora (arbora/run.sh). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones de drafters comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A modo de contexto estructural:
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| arbora-qwen3.8-27b-drafter | 4,47 B | no disponible | Drafter especulativo para Qwen3.8-27B-DFlash2 | Apache 2.0 | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 (modelo base) | 27 B (aproximado por el nombre) | no disponible | Modelo objetivo | no disponible | Hugging Face |
+| Drafters genericos de decodificacion especulativa | no disponible | no disponible | Drafter no ajustado al objetivo | variable | variable |
 
-| Modelo | Parametros | Contexto | Licencia | Rol |
-|---|---|---|---|---|
-| arbora-qwen3.8-27b-drafter | 4,47 B | no disponible | Apache 2.0 | Drafter de decodificación especulativa para z-lab/Qwen3.8-27B-DFlash2 |
-| z-lab/Qwen3.8-27B-DFlash2 | 27 B (según nombre; no verificado en la información) | no disponible | no disponible | Modelo objetivo que verifica las propuestas del drafter |
-| Otros drafters de la familia Qwen | no disponible | no disponible | no disponible | Alternativas de la misma categoría |
+No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: sin el modelo objetivo z-lab/Qwen3.8-27B-DFlash2 no produce salidas útiles; su uso aislado carece de sentido.
-- Los datos de entrenamiento no se publican: la colección de prompts utilizada no está disponible, lo que limita la reproducibilidad exacta del entrenamiento (aunque el release incluye scripts para reconstruir datos desde cualquier fichero de prompts).
-- Riesgo de alucinación: las propuestas del drafter son verificadas por el objetivo, por lo que la calidad final depende del objetivo; aun así, una baja tasa de aceptación degrada el speedup y puede hacer que la decodificación especulativa sea más lenta que la decodificación estándar.
-- Sesgos conocidos: no documentados; al derivar del modelo objetivo, hereda los sesgos de este, no evaluados en la información disponible.
-- Limitaciones de contexto e idioma: no documentadas; dependen del modelo objetivo.
-- Licencia Apache 2.0: permite uso comercial, pero deben respetarse los avisos de terceros recogidos en el fichero `NOTICE` del repositorio.
-- Estado de investigación: asociado a un artículo en revisión anónima, con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción ni de validación independiente.
-- Despliegue restringido: solo se documenta el layout SGLang; no hay soporte declarado para otros motores de inferencia.
+- Modelo auxiliar, no autonomo: no puede usarse como LLM de proposito general; requiere el modelo objetivo Qwen3.8-27B-DFlash2 y el pipeline de exportacion para funcionar.
+- Dependencia fuerte del objetivo: al estar entrenado sobre las respuestas de un modelo concreto, su tasa de aceptacion caera si se empareja con otro modelo.
+- Documentacion escasa: la model card no detalla contexto, cuantizaciones, idiomas ni arquitectura interna, lo que dificulta planificar el despliegue.
+- Estado de revision: el articulo asociado esta en revision anonima; los resultados pueden cambiar y el codigo se aloja en un enlace anonimo (anonymous.4open.science).
+- Riesgo de alucinacion: no aplica de forma directa porque el modelo objetivo verifica los tokens, pero un drafter mal ajustado degrada el speedup sin mejorar la calidad.
+- Licencia: Apache 2.0 permite uso comercial, pero deben revisarse los avisos de terceros en NOTICE y la licencia del modelo base.
+- Sin garantias de produccion: no hay benchmarks publicados ni validacion independiente; conviene medir la tasa de aceptacion en el hardware y carga reales antes de desplegar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/arbora-anon/arbora-qwen3.8-27b-drafter
 - Modelo base: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Código y instrucciones del paper (revisión anónima): https://anonymous.4open.science/r/arbora-7ABE
+- Codigo del proyecto Arbora (revision anonima): https://anonymous.4open.science/r/arbora-7ABE

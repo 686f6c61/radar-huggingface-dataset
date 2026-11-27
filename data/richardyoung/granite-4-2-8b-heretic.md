@@ -2,89 +2,93 @@
 
 ## Resumen
 
-Granite-4.2-8b-heretic es una variante "abliterated" (decensored) del modelo IBM Granite 4.2 de 8B parámetros, publicada por el usuario richardyoung en Hugging Face. Se trata de un fine-tune del modelo oficial `ibm-granite/granite-4.2-8b` en el que se han eliminado o atenuado los mecanismos de rechazo y alineación de seguridad, manteniendo la arquitectura y capacidades del modelo original: generación de texto, razonamiento con modo "thinking", tool calling y soporte multilingüe en 12 idiomas.
+Granite-4.2-8b-heretic es una variante "decensored" (también etiquetada como *abliterated* o *uncensored*) del modelo IBM Granite 4.2 de 8B parámetros, publicada por el usuario richardyoung en Hugging Face. El modelo parte de `ibm-granite/granite-4.2-8b` y aplica técnicas de modificación de pesos orientadas a eliminar o atenuar los mecanismos de rechazo y alineación de seguridad del modelo original, manteniendo las capacidades base de generación, razonamiento, *thinking mode* y *tool calling*.
 
-El modelo conserva los 8.791.592.960 parámetros del Granite 4.2 original y una licencia Apache 2.0, lo que lo hace atractivo para experimentación e investigación sobre alineación, robustez y comportamiento de modelos sin censura. Es relevante ahora porque la familia Granite 4.x de IBM se ha posicionado como una alternativa open source empresarial a modelos propietarios, y esta variante permite estudiar qué se pierde y qué se gana al eliminar las capas de seguridad.
+La relevancia de esta ficha es doble: por un lado documenta un modelo derivado de la familia Granite 4.2 de IBM, orientada a casos de uso empresariales con licencia Apache 2.0; por otro, advierte de que se trata de una modificación no oficial, distribuida con acceso restringido (*gated*) y sin garantías de comportamiento seguro. El repositorio ocupa 17,6 GB y contiene pesos en safetensors para la librería transformers.
 
-El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. El repositorio ocupa 17,6 GB en formato safetensors y está pensado para su uso con transformers.
+Con 8.791.592.960 parámetros totales y soporte declarado para doce idiomas (en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh), el modelo se posiciona en la franja de 8B densos, adecuada para despliegue en una sola GPU de gama alta o en configuraciones cuantizadas sobre hardware de consumo. No se dispone de información publicada sobre la longitud de contexto, el número de tokens de entrenamiento ni resultados de benchmarks específicos de esta variante.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de IBM Granite 4.2; detalles específicos de capas y atención no disponibles en la información proporcionada) |
-| Parámetros totales | 8.791.592.960 |
-| Parámetros activos | No aplica (no es MoE según los datos disponibles) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | No disponible en la información proporcionada (los pesos publicados son safetensors; se asume compatibilidad con cuantizaciones estándar de transformers, pero no se confirma) |
+| Arquitectura | Transformer denso (familia IBM Granite 4.2); detalles internos no disponibles |
+| Parametros totales | 8.791.592.960 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos publicados en safetensors; cabe esperar cuantizaciones derivadas vía herramientas estándar, sin confirmación oficial) |
 | Idiomas soportados | en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del IBM Granite 4.2 8B, por lo que hereda su arquitectura transformer y su proceso de preentrenamiento original. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si el modelo base utilizó RLHF o DPO; estos datos corresponden a la documentación oficial de IBM Granite 4.2, no incluida en la ficha proporcionada.
+El modelo es un fine-tune del checkpoint `ibm-granite/granite-4.2-8b`, un transformer denso de aproximadamente 8,8B parámetros. La información disponible no detalla la composición del dataset de entrenamiento original de Granite 4.2, el número de tokens utilizados, ni si se emplearon fases de RLHF o DPO. Tampoco se especifica la innovación arquitectónica concreta de la familia Granite 4.2 más allá de las capacidades declaradas en las etiquetas: *reasoning*, *thinking* y *tool-calling*.
 
-La innovación principal de esta variante es el proceso de "abliteration" o decensoring aplicado por richardyoung, que modifica los pesos para reducir la tendencia del modelo a rechazar peticiones. El modelo conserva las capacidades del base, incluyendo el modo de razonamiento ("thinking") y el soporte de tool calling, tal como reflejan los tags del repositorio. No se dispone de información sobre la metodología exacta de abliteration empleada ni sobre el volumen de datos de fine-tune utilizado.
+La modificación introducida por richardyoung se enmarca en las técnicas conocidas como *abliteration* o *decensoring*, que típicamente consisten en identificar direcciones en el espacio de activaciones asociadas a comportamientos de rechazo y proyectarlas fuera de los pesos, o en fine-tunes dirigidos sobre datos que evitan respuestas de negación. La ficha del repositorio no documenta el método exacto, los datos adicionales empleados ni las métricas de degradación asociadas al proceso. El autor etiqueta el resultado como "reproducible", lo que sugiere que el procedimiento de generación está documentado en el repositorio, aunque no se dispone del detalle en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" explícito (heredado de Granite 4.2).
-- Tool calling / function calling.
-- Soporte multilingüe en 12 idiomas: inglés, alemán, español, francés, japonés, portugués, árabe, checo, italiano, coreano, neerlandés y chino.
-- Comportamiento "uncensored": menor probabilidad de rechazar peticiones que el modelo base.
-- Compatible con endpoints (tag `endpoints_compatible`).
-- Capacidades de código y matemáticas: no confirmadas explícitamente en la información proporcionada, aunque plausibles en la familia Granite 4.x.
+- Generación de texto conversacional multi-turno en doce idiomas.
+- Razonamiento explícito mediante *thinking mode* (etiqueta `thinking`).
+- Razonamiento general y resolución de problemas (etiqueta `reasoning`).
+- *Tool calling* / *function calling* para integración con APIs y herramientas externas.
+- Capacidades de agente y razonamiento multi-paso derivadas del modelo base.
+- Generación de código y matemáticas (capacidades habituales de la familia Granite, no verificadas específicamente en esta variante).
+- Comportamiento "decensored": reducción esperada de rechazos ante peticiones que el modelo base declinaría; el grado exacto de supresión no está documentado.
+- Compatibilidad con endpoints estándar (etiqueta `endpoints_compatible`).
+- No se declara soporte de visión ni de audio.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: comparar el comportamiento de este modelo con el Granite 4.2 original para estudiar qué tipos de peticiones se aceptan o rechazan y cómo varía la calidad de las respuestas al eliminar las capas de rechazo.
-- Evaluación de robustez de filtros: usar el modelo como generador adversarial en pipelines de red teaming para probar clasificadores de contenido y sistemas de moderación.
-- Generación de datos sintéticos para dominios sensibles: crear datasets de entrenamiento o evaluación en áreas donde el modelo base podría negarse a responder (por ejemplo, narrativa de ficción con contenido violento o análisis de seguridad ofensiva en entornos controlados).
-- Asistentes conversacionales internos: desplegar el modelo en entornos corporativos donde el equipo acepta la responsabilidad de moderar las salidas, aprovechando su soporte multilingüe y tool calling.
-- Experimentación con tool calling en agentes: integrar el modelo en frameworks de agentes que requieran function calling sin restricciones de contenido en las respuestas intermedias.
-- Investigación lingüística multilingüe: analizar el comportamiento del modelo en los 12 idiomas soportados y comparar la calidad y los sesgos entre lenguas.
-- Prototipado rápido con transformers: al estar en formato safetensors y ser compatible con la librería transformers, sirve para pruebas de concepto sin necesidad de conversiones adicionales.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo varía la tasa de rechazo y la calidad de respuesta tras aplicar técnicas de *abliteration*, comparando pares de prompts con el modelo base. Es adecuado porque se ofrece como artefacto reproducible sobre un checkpoint conocido y con licencia permisiva.
+- Generación de datos sintéticos para *red teaming*: sirve para producir respuestas a prompts que el modelo original rechazaría, alimentando conjuntos de evaluación de filtros de seguridad. Requiere revisión humana del material generado.
+- Asistencia conversacional multi-turno en doce idiomas: con contexto suficiente (no documentado) y licencia Apache 2.0, puede integrarse en prototipos de atención al cliente internos donde se prefiera un modelo de 8B desplegable en una sola GPU.
+- Automatización con *tool calling*: el modelo puede conectarse a APIs mediante function calling para tareas de extracción de datos, consultas a bases de datos o ejecución de acciones, integrándose en pipelines de agentes.
+- Generación de código en entornos controlados: para autocompletado y explicación de fragmentos en repositorios internos, con la salvedad de que no se han publicado benchmarks de código específicos de esta variante.
+- Fine-tuning posterior sobre dominios especializados: al ser un modelo de 8B con licencia Apache 2.0, es viable reentrenarlo o adaptarlo con LoRA sobre corpus propios (legal, médico, industrial) sin las restricciones de licencias copyleft.
+- Evaluación comparativa de robustez: útil para medir la degradación de capacidades (MMLU, GSM8K, HumanEval) tras el proceso de decensoring frente al Granite 4.2 original, siempre que se ejecuten los benchmarks por cuenta propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 17,6 GB solo para los pesos, más overhead de activaciones y KV cache; se recomienda al menos 24 GB de VRAM.
-- En cuantización de 8 bits: en torno a 9-10 GB de pesos, viable en GPUs de 16 GB.
-- En cuantización de 4 bits: en torno a 5-6 GB de pesos, viable en GPUs consumer de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, etc.).
-- GPU recomendadas para fp16: A100 40/80 GB, H100, L40S, RTX 4090 (24 GB, justo para los pesos).
-- Cabe en GPU consumer: sí, especialmente con cuantización de 4 u 8 bits.
-- Opciones de despliegue: transformers (formato nativo del repo), vLLM, TGI y llama.cpp/Ollama tras conversión a GGUF (la conversión no está confirmada en la información disponible).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 17,6 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda 24 GB o más.
+- VRAM estimada en cuantización de 8 bits: en torno a 9-10 GB para pesos, más overhead; viable en GPUs de 16 GB.
+- VRAM estimada en cuantización de 4 bits: en torno a 5-6 GB para pesos; viable en GPUs de 8 GB, con degradación de calidad no medida en esta variante.
+- GPUs recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para FP16; RTX 4080/4070 Ti Super (16 GB) para 8 bits; RTX 3060/4060 (8-12 GB) para 4 bits.
+- Cabe en GPU de consumo: sí, en RTX 4090 en BF16 y en GPUs de 8-16 GB con cuantización.
+- Opciones de despliegue: transformers (formato nativo), vLLM y TGI para serving en FP16/BF16; llama.cpp y Ollama para GGUF cuantizado (requiere conversión propia, no se distribuyen GGUF en el repo); endpoints compatibles según etiqueta del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| richardyoung/granite-4.2-8b-heretic | 8,79 B | No disponible | Apache 2.0 | Gated | Variante decensored del Granite 4.2 8B |
-| ibm-granite/granite-4.2-8b | 8,79 B (según modelo base) | No disponible | Apache 2.0 | Público (presumiblemente) | Modelo base oficial con alineación de seguridad |
-| Alternativas de 7-8B decensored (p. ej. variantes abliterated de Llama 3.1 8B o Qwen 2.5 7B) | 7-8 B | Variable según base | Licencias diversas (Llama, Apache 2.0) | Variable | No se dispone de datos concretos en la información proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| richardyoung/granite-4.2-8b-heretic | 8,79B | No disponible | Apache 2.0 | Variante decensored, acceso gated, sin benchmarks publicados |
+| ibm-granite/granite-4.2-8b | 8,79B (aprox.) | No disponible | Apache 2.0 | Modelo base oficial, alineado, con soporte y documentación de IBM |
+| Llama 3.1 8B Instruct | 8,03B | 128K (según ficha oficial de Meta) | Llama 3.1 Community License | Referencia de la franja 8B; licencia con restricciones de uso |
+| Qwen2.5 7B Instruct | 7,6B (aprox.) | 128K (según ficha oficial de Alibaba) | Apache 2.0 | Alternativa densa de tamaño similar con licencia permisiva |
 
-La comparativa con modelos de la misma categoría (variantes abliterated de otros modelos 7-8B) no puede completarse con datos verificados a partir de la información disponible.
+La comparación de rendimiento entre estos modelos no puede establecerse con datos de esta ficha, ya que no se han publicado benchmarks de la variante heretic. Para contexto y parámetros de los modelos alternativos se citan las cifras oficiales de sus respectivas fichas; para Granite 4.2 base no se dispone de la longitud de contexto en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": la eliminación de los mecanismos de rechazo implica un mayor riesgo de generar contenido dañino, ofensivo, ilegal o inexacto. No es adecuado para aplicaciones de cara al público sin moderación adicional.
-- Riesgo de alucinación: no se dispone de datos específicos sobre la tasa de alucinación de esta variante; el proceso de abliteration puede degradar la coherencia y la precisión factual del modelo base.
-- El proceso de abliteration puede afectar negativamente a capacidades como el razonamiento, el tool calling o la calidad multilingüe; no hay evaluaciones publicadas que lo confirmen o descarten.
-- Contexto máximo: no disponible; no se debe asumir una ventana concreta sin consultar la documentación del modelo base.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario asume toda la responsabilidad legal y ética sobre las salidas generadas.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
-- Sesgos: no se han documentado sesgos específicos de esta variante; se heredan los del modelo base, potencialmente amplificados por la falta de alineación.
-- Fecha de creación del repositorio (2026-09-28) y actualización (2026-10-20): verificar que los pesos corresponden a la versión esperada antes de usarlos en producción.
+- Modelo derivado no oficial: no está respaldado por IBM ni por el equipo de Granite; los problemas de calidad o seguridad deben reportarse al autor del repositorio.
+- Acceso restringido (*gated*): requiere aceptar condiciones en Hugging Face antes de descargar; esto puede limitar la automatización en pipelines de CI/CD.
+- Supresión de rechazos: el proceso de decensoring puede aumentar la probabilidad de generar contenido dañino, sesgado o inexacto; no debe desplegarse en aplicaciones orientadas al público sin filtros adicionales.
+- Riesgo de alucinación: inherente a los modelos de 8B; no se han publicado evaluaciones de factualidad específicas de esta variante.
+- Degradación potencial: las técnicas de abliteration pueden reducir capacidades de razonamiento o instrucción; no hay benchmarks que cuantifiquen la pérdida frente al modelo base.
+- Idiomas: se declaran doce idiomas, pero no se documenta el nivel de calidad por idioma; el rendimiento en checo, coreano o neerlandés puede ser inferior al de inglés.
+- Contexto: la longitud de ventana no está disponible, lo que impide planificar casos de uso con documentos largos sin verificación empírica.
+- Licencia: Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad legal del contenido generado y de las obligaciones de transparencia aplicables (por ejemplo, el AI Act europeo para sistemas de alto riesgo).
+- Sin GGUF ni cuantizaciones oficiales: el despliegue en llama.cpp u Ollama requiere conversión propia y validación de calidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/richardyoung/granite-4.2-8b-heretic
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
-- Paper referenciado (arxiv:2406.11717): no se dispone del título en la información proporcionada
-- Paper referenciado (arxiv:2510.18892): no se dispone del título en la información proporcionada
+- Paper referenciado en las etiquetas (arXiv:2406.11717): https://arxiv.org/abs/2406.11717
+- Paper referenciado en las etiquetas (arXiv:2510.18892): https://arxiv.org/abs/2510.18892

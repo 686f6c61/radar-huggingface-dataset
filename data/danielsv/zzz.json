@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "danielsv/zzz",
+  "slug": "danielsv-zzz",
+  "author": "danielsv",
+  "url": "https://huggingface.co/danielsv/zzz",
+  "created_at": "2026-11-15T14:46:08.000Z",
+  "updated_at": "2026-11-26T21:09:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 58053294174,
+  "storage_human": "58.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

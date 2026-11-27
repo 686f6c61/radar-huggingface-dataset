@@ -2,52 +2,52 @@
 
 ## Resumen
 
-Align es un modelo de refinamiento de marcas temporales a nivel de palabra (forced alignment) desarrollado por Desert Ant Labs. No es un modelo de reconocimiento de voz en sentido estricto: recibe una transcripcion ya existente, generada por cualquier motor de ASR (Whisper, `SpeechAnalyzer` de Apple, etc.), junto con el audio original, y devuelve las mismas palabras con tiempos de inicio y fin mas precisos. El ejemplo de la model card ilustra el efecto: la palabra "world" pasa de 2,61-3,04 s a 2,57-2,98 s.
+Align es un modelo de refinamiento de marcas de tiempo a nivel de palabra (word-timestamp refinement) desarrollado por Desert Ant Labs. No es un modelo de reconocimiento de voz al uso: recibe una transcripcion ya existente, generada por cualquier motor de ASR (Apple SpeechAnalyzer, Whisper u otros), junto con el audio original, y devuelve las mismas palabras con tiempos de inicio y fin mas precisos. El problema que resuelve es el desalineamiento tipico de los subtitulos y cortes generados por reconocedores automaticos, que suelen desviarse decenas o cientos de milisegundos respecto al audio real.
 
-Su relevancia practica esta en el tamano y el despliegue: los pesos compilados ocupan aproximadamente 560 KB en Core ML y el refinamiento de un resultado tipico se completa en pocos milisegundos en el propio dispositivo. Esto lo hace apto para subtitulado, edicion automatica y pipelines de transcripcion en tiempo real sin coste de servidor. El modelo cubre nueve idiomas (aleman, ingles, espanol, frances, italiano, japones, coreano, portugues y chino) y se distribuye a traves de SDKs para Swift, Kotlin y JavaScript, ademas de formatos LiteRT/TFLite y Core ML.
+La propuesta es deliberadamente minimalista: modelos de 560 KB compilados en Core ML, con variantes LiteRT/TFLite, que refinan un resultado tipico en pocos milisegundos y se ejecutan en el dispositivo. Soporta nueve idiomas (aleman, ingles, espanol, frances, italiano, japones, coreano, portugues y chino) y plataformas muy diversas: iOS, macOS, tvOS, visionOS, Android, Linux, Windows y Node. En Apple dispone ademas de una integracion directa con SpeechAnalyzer mediante `StreamingRefiner`.
 
-La informacion publica no detalla la arquitectura interna ni el volumen de datos de entrenamiento; la model card se centra en la API, el comportamiento de los fallbacks y las plataformas soportadas. La licencia es propietaria de tipo source-available, lo que condiciona su uso comercial.
+Su relevancia actual radica en que el refinamiento de timestamps es una pieza critica en pipelines de subtitulado, edicion automatica de video y busqueda sobre audio, y tradicionalmente exigia modelos de alineacion forzada mucho mas pesados o servicios en la nube. Align traslada esa funcion al dispositivo con un coste computacional casi despreciable y sin enviar audio a servidores externos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo acustico de forced alignment; se distribuye compilado en Core ML y LiteRT/TFLite) |
-| Parametros totales | no disponible |
+| Arquitectura | no disponible (modelos compilados para Core ML y LiteRT/TFLite; arquitectura interna no especificada) |
+| Parametros totales | no disponible (peso del artefacto: 560 KB en Core ML compilado) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventana de busqueda por palabra; audio de entrada hasta 37 horas si la frecuencia no es 16 kHz) |
-| Tipos de cuantizacion | no disponible (pesos compilados; ~560 KB en Core ML) |
+| Longitud de contexto | no disponible (ventana de busqueda por palabra; no se documenta en tokens) |
+| Tipos de cuantizacion | no disponible (artefactos precompilados Core ML y LiteRT) |
 | Idiomas soportados | de, en, es, fr, it, ja, ko, pt, zh (9 idiomas) |
-| Licencia | desert-ant-labs-source-available (propietaria, enlace: https://license.desertant.com/) |
-| Formato de pesos | Core ML compilado, LiteRT/TFLite; SDKs Swift, Kotlin y JavaScript (Node nativo) |
+| Licencia | desert-ant-labs-source-available (source available, no open source) |
+| Formato de pesos | Core ML compilado y LiteRT/TFLite; distribucion via SDK (Swift, Kotlin, JavaScript) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del modelo, el numero de parametros ni la composicion del dataset de entrenamiento. Por la funcion que desempena, se trata de un modelo acustico de alineamiento forzado que, dada una secuencia de palabras y el audio correspondiente, busca los limites temporales optimos de cada palabra dentro de una ventana de busqueda. La model card menciona explicitamente esa ventana y advierte de que las correcciones que caen en su borde se descartan, lo que sugiere un mecanismo de busqueda local acotada en lugar de un alineamiento global sobre toda la secuencia.
+La informacion disponible no detalla la arquitectura interna del modelo (tipo de red, capas, atencion, etc.), solo el formato de despliegue: artefactos compilados para Core ML en plataformas Apple y LiteRT/TFLite para el resto, con un peso de 560 KB en la variante Core ML. No se especifica el numero de parametros ni la composicion del dataset de entrenamiento.
 
-El modelo se distribuye compilado para Core ML y LiteRT/TFLite, con un peso aproximado de 560 KB, lo que indica una red de muy baja capacidad optimizada para latencia. No hay informacion disponible sobre el numero de tokens o horas de audio empleados en el entrenamiento, ni sobre si se aplicaron tecnicas de RLHF o ajuste supervisado. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal.
+El funcionamiento descrito es el de un refinador de alineacion: dado un conjunto de palabras con tiempos aproximados y el audio correspondiente a 16 kHz, el modelo ajusta los limites de cada palabra. La API impone validaciones estrictas de entrada (tiempos finitos entre -1 y 10.000.000 segundos, frecuencia de muestreo positiva, audio no vacio, audio no-16 kHz limitado a menos de 37 horas) y define mecanismos de fallback: si la correccion cae en el borde de la ventana de busqueda, si el rango corregido terminaria antes de empezar, o si falta contexto futuro en modo streaming, se conserva el timestamp original. Estos fallbacks comprueban estructura, no precision, por lo que una correccion plausible pero erronea puede aplicarse igualmente. No se documenta el uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
 
 ## Capacidades
 
-- Refinamiento de marcas temporales a nivel de palabra sobre transcripciones producidas por otros motores de ASR, devolviendo las mismas palabras con tiempos de inicio y fin mas ajustados.
-- Integracion con `SpeechAnalyzer` de Apple (iOS 26 y posteriores) mediante `StreamingRefiner`, que corrige solo los resultados finalizados y deja intactos los volatiles.
-- Soporte multilingue en nueve idiomas: aleman, ingles, espanol, frances, italiano, japones, coreano, portugues y chino.
-- Ejecucion en dispositivo en iOS, macOS, tvOS, visionOS, Android, Linux, Windows y Node.
-- Comprobacion previa de idioma soportado mediante `isSupported`, con devolucion de las palabras sin cambios (sin excepcion) para idiomas no soportados.
-- Validacion de entrada: tiempos finitos entre -1 y 10.000.000 segundos, frecuencia de muestreo finita y positiva, audio no vacio.
-- Marcado por palabra del resultado mediante el flag `refined`, que distingue las correcciones aplicadas de los tiempos originales conservados.
-- No incluye generacion de texto, razonamiento, codigo, matematicas, vision, tool calling ni capacidades de agente.
+- Refinamiento de marcas de tiempo a nivel de palabra sobre transcripciones existentes de cualquier motor de ASR.
+- Alineacion forzada (forced alignment) de palabras contra el audio.
+- Procesamiento en dispositivo, sin dependencia de red tras la descarga inicial de pesos.
+- Soporte multilingue para 9 idiomas: aleman, ingles, espanol, frances, italiano, japones, coreano, portugues y chino.
+- Integracion con Apple SpeechAnalyzer (iOS 26 y posteriores) mediante `StreamingRefiner`, con correccion de resultados finalizados y paso sin cambios de los resultados volatiles.
+- Modo streaming con gestion de contexto futuro no almacenado en buffer.
+- API multiplataforma: Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android), JavaScript/TypeScript (Node con subruta `/native` precompilada para linux-x64, linux-arm64 y darwin-arm64).
+- Comprobacion sincrona y asincrona de idioma soportado (`isSupported`), con devolucion de palabras sin cambios para idiomas no soportados.
+- Descarga y cache de pesos desde Hugging Face en el primer uso, con opcion de empaquetarlos con la aplicacion.
 
 ## Casos de uso
 
-- Subtitulado y captioning: el refinamiento a nivel de palabra permite que los subtitulos cambien exactamente en el limite de cada palabra, lo que mejora la legibilidad y el sincronismo en reproductores y plataformas de video.
-- Edicion automatica de video y audio: los cortes basados en palabras ("cut on word") requieren tiempos precisos; Align corrige los limites que devuelve el ASR y evita cortes a mitad de palabra en herramientas de edicion y creadores de contenido.
-- Resaltado de palabras en karaoke y lectura guiada: aplicaciones de aprendizaje de idiomas y de lectura sincronizada pueden iluminar cada palabra en el instante exacto en que se pronuncia.
-- Postprocesado de transcripciones de Whisper u otros motores: se pasa la salida del ASR junto con el audio y se obtiene la misma transcripcion con marcas temporales mas ajustadas, sin cambiar el texto.
-- Pipeline en tiempo real con `SpeechAnalyzer` en Apple: `StreamingRefiner` corrige los resultados finalizados mientras el audio se sigue transcribiendo, adecuado para notas de voz, reuniones y dictado en iOS 26 o posterior.
-- Busqueda y navegacion dentro de audio: con tiempos precisos por palabra se puede saltar a una frase concreta en un podcast o una grabacion larga, o generar enlaces profundos a fragmentos.
-- Procesamiento por lotes en servidor o en Node: el subpath `/native` de JavaScript permite ejecutar el refinamiento en Linux x64/arm64 y macOS arm64 dentro de pipelines de transcripcion masiva.
-- Aplicaciones moviles sin conectividad: al ejecutarse en dispositivo y descargar los pesos una sola vez, encaja en apps de grabacion y transcripcion que deben funcionar sin red.
+- Subtitulado automatico de video: se pasa la transcripcion de Whisper o SpeechAnalyzer junto al audio y se obtienen subtitulos cuyos tiempos caen sobre la palabra exacta, lo que reduce el desfase perceptible en reproduccion.
+- Edicion automatica basada en texto (text-based editing): en editores de video que permiten cortar por transcripcion, los limites de corte precisos evitan clips que empiezan o terminan a mitad de palabra.
+- Generacion de clips y highlights: al refinar los tiempos de las palabras clave, los fragmentos extraidos respetan el inicio y fin reales del habla, util en herramientas de resumen de reuniones o podcasts.
+- Busqueda y navegacion sobre audio: con timestamps fiables a nivel de palabra se puede saltar a la ocurrencia exacta de un termino en una grabacion larga, por ejemplo en apps de notas de voz o archivos de entrevistas.
+- Accesibilidad y karaoke: resaltado sincronizado de palabras en tiempo real sobre el audio reproducido, usando `StreamingRefiner` para corregir resultados finalizados mientras se transcribe.
+- Procesamiento por lotes en servidor o CI: la subruta `/native` de Node permite refinar transcripciones en pipelines de Linux (x64 y arm64) sin GPU, integrable en flujos de postproduccion o indexacion masiva.
+- Aplicaciones moviles offline: al ejecutarse en dispositivo con 560 KB, encaja en apps de Android e iOS que necesitan subtitulos precisos sin enviar audio a la nube por privacidad o conectividad.
 
 ## Benchmarks y rendimiento
 
@@ -55,45 +55,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Los pesos compilados ocupan aproximadamente 560 KB en Core ML, por lo que el consumo de memoria es minimo y no requiere GPU dedicada.
-- GPU recomendadas: no aplica; el modelo esta disenado para ejecucion en dispositivo (CPU y aceleradores integrados como Neural Engine en Apple o NNAPI en Android).
-- Cabe en cualquier GPU de consumo: si, por el tamano de los pesos; no se documentan requisitos especificos de A100, H100 o RTX 4090.
-- Opciones de despliegue: SDKs oficiales para Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android), JavaScript con subpath `/native` para Node (linux-x64, linux-arm64, darwin-arm64); formatos Core ML y LiteRT/TFLite.
-- Latencia y throughput: la model card indica "pocos milisegundos" por resultado tipico en dispositivo; no se publican cifras concretas de throughput.
-- Descarga de pesos: el SDK descarga los pesos desde Hugging Face en el primer uso y los cachea; es posible descargarlos antes (por ejemplo, durante el onboarding) o distribuirlos con la aplicacion.
+- VRAM estimada: no aplica en el sentido habitual; el artefacto Core ML ocupa 560 KB y el modelo se ejecuta en CPU/GPU/NPU del dispositivo segun la plataforma. No se dispone de cifras de memoria en ejecucion.
+- GPU recomendadas: no se especifican; el diseno es para inferencia en dispositivo, no para servidores con GPU dedicada.
+- Cabe en GPU de consumo: si, por tamano, aunque el objetivo declarado es la ejecucion en dispositivos moviles y de escritorio sin acelerador dedicado.
+- Opciones de despliegue: SDK oficial para Swift, Kotlin y JavaScript (Node, subruta `/native`); artefactos Core ML y LiteRT/TFLite. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: se indica que refina un resultado tipico en pocos milisegundos en dispositivo; no se publican cifras concretas de latencia ni de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Align (desert-ant-labs) | Refinamiento de timestamps / forced alignment | no disponible (~560 KB compilado) | no disponible | 9 | source-available propietaria | Hugging Face + SDKs Swift/Kotlin/JS |
-| Whisper (OpenAI) | ASR completo | 39M-1,55B | 30 s de audio | ~99 | MIT | Abierta, ampliamente desplegada |
-| wav2vec 2.0 (Meta) | ASR / representaciones acusticas | 95M-317M | no disponible | multilingue (segun checkpoint) | MIT / CC-BY-NC segun variante | Abierta |
-| `SpeechAnalyzer` (Apple) | ASR del sistema | no disponible | no disponible | multilingue | propietaria de Apple | Integrada en iOS 26+ |
+No se dispone de datos de benchmarks ni de especificaciones comparables de otros modelos de refinamiento de timestamps en la informacion proporcionada. La tabla siguiente recoge unicamente lo que se conoce de Align; las celdas de alternativas quedan como no disponibles.
 
-La comparacion es aproximada: Align no transcribe, sino que corrige los tiempos de una transcripcion existente, por lo que compite con utilidades de forced alignment (por ejemplo, Montreal Forced Aligner o los modulos de timestamps de Whisper) mas que con motores de ASR completos. No se dispone de datos publicos de precision comparada.
+| Modelo | Tipo | Idiomas | Contexto | Licencia | Despliegue |
+|---|---|---|---|---|---|
+| Align (Desert Ant Labs) | Refinamiento de word timestamps | 9 | no disponible | source available | Core ML, LiteRT, SDK Swift/Kotlin/JS |
+| Alternativas de alineacion forzada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No transcribe: requiere una transcripcion previa y el audio correspondiente; no sustituye a un motor de ASR.
-- Los fallbacks comprueban estructura, no precision: una correccion plausible pero incorrecta se aplica igualmente.
-- Se conserva el tiempo original cuando la correccion cae en el borde de la ventana de busqueda, cuando el rango corregido terminaria antes de empezar o, en streaming, cuando el contexto futuro aun no esta en el buffer.
-- Si un modelo falla al ejecutarse, `refine` lanza un error y no aplica fallback.
-- Una palabra situada mas de 1,2 s despues del final del audio no tiene material contra el que alinearse y conserva sus tiempos originales con `refined` en falso.
-- Idiomas no soportados: `refine` devuelve las palabras sin cambios y no lanza excepcion, lo que puede pasar desapercibido si no se comprueba `isSupported` antes de construir el pipeline.
-- Audio a una frecuencia distinta de 16 kHz debe ser mas corto de 37 horas; el audio no puede estar vacio.
-- No se documentan sesgos, tasas de alucinacion (no genera texto) ni evaluaciones de precision publicadas.
-- Licencia propietaria source-available: es imprescindible revisar los terminos en https://license.desertant.com/ antes de un uso comercial o de redistribuir los pesos.
-- Dependencia de los SDKs oficiales y de la descarga de pesos desde Hugging Face en el primer uso; conviene planificar el cacheo o la distribucion empaquetada en produccion.
+- No es un modelo de ASR: requiere una transcripcion previa; no transcribe audio por si mismo.
+- Solo soporta nueve idiomas; para cualquier otro, `refine` devuelve las palabras sin cambios y no lanza error, lo que puede pasar desapercibido si no se comprueba `isSupported` antes.
+- Los fallbacks por borde de ventana, rango invertido o falta de contexto en streaming comprueban estructura, no precision: una correccion plausible pero incorrecta se aplica igualmente.
+- Si el modelo falla al ejecutarse, `refine` lanza un error y no recurre al timestamp original.
+- Una palabra situada mas de 1,2 s despues del final del audio conserva sus tiempos de entrada con `refined` en falso.
+- En modo streaming solo se corrigen los resultados finalizados; los volatiles pasan sin cambios.
+- Restricciones de entrada estrictas: tiempos finitos entre -1 y 10.000.000 segundos, frecuencia de muestreo positiva, audio no vacio y audio distinto de 16 kHz limitado a menos de 37 horas.
+- La licencia es source available (desert-ant-labs-source-available), no open source; es necesario revisar los terminos en el enlace de licencia antes de un uso comercial.
+- No se documentan sesgos conocidos, tasas de alucinacion ni limites de contexto en tokens; esta informacion no esta disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/align
 - Pesos v1.1.0: https://huggingface.co/desert-ant-labs/align/tree/v1.1.0
 - Licencia: https://license.desertant.com/
-- Repositorio del SDK (desert-ant-core): https://github.com/Desert-Ant-Labs/desert-ant-core
+- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
 - Documentacion de requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
-- Documentacion de Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
-- Documentacion de JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
-- Descarga y cacheo de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
-- Paquete npm: https://www.npmjs.com/package/@desert-ant-labs/align
+- Documentacion de requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Documentacion de requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descarga y cache de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching

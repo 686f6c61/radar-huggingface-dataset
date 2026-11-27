@@ -2,48 +2,54 @@
 
 ## Resumen
 
-Qwen3-1.7B-Wordle-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B de Alibaba, publicado por el usuario sergiopaniego en el ecosistema de OpenEnv. El modelo está especializado en jugar a Wordle a través de una herramienta `guess` (tool calling), emitiendo un razonamiento breve antes de cada intento. No es un modelo de propósito general mejorado, sino un artefacto de investigación pensado como punto de partida para el tutorial de aprendizaje por refuerzo (GRPO) de OpenEnv.
+Qwen3-1.7B-Wordle-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B de Alibaba, publicado por el usuario sergiopaniego en el contexto del proyecto OpenEnv. El modelo está especializado en jugar al Wordle (el juego de adivinar una palabra de cinco letras) mediante una herramienta `guess` y un razonamiento breve antes de cada intento. No es un modelo de propósito general, sino un artefacto de investigación pensado como punto de partida para un entrenamiento posterior con GRPO.
 
-El entrenamiento consistió en una única época (63 pasos) sobre el dataset `openenv/wordle-tool-calls-sft`, compuesto por 1.000 partidas de Wordle resueltas por un solver. El modelo base tiene 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) y se distribuye en formato safetensors en bf16, con un repositorio de 31 GB que incluye los checkpoints de entrenamiento.
+El modelo base Qwen3-1.7B es un transformer denso de 1.720.574.976 parámetros (1,7 mil millones) con capacidades de razonamiento en modo thinking. Sobre él se aplicó una época de entrenamiento supervisado (63 pasos) usando el dataset `openenv/wordle-tool-calls-sft`, compuesto por 1.000 partidas de Wordle jugadas por un solver. El resultado es un modelo que pasa de 0/30 victorias (Qwen3-1.7B sin ajustar, decodificación greedy) a 10/30 en el conjunto de 30 palabras de prueba del entorno.
 
-Su relevancia es fundamentalmente didáctica y de investigación: demuestra cómo un SFT corto y barato (unos 7 minutos en una A100 80GB, 0,30 USD) transforma un modelo de 1,7B que no acierta ninguna palabra (0/30) en uno que acierta 10/30 en una evaluación greedy sobre 30 secretos del entorno. Es la base sobre la que se construye `openenv/Qwen3-1.7B-Wordle-SFT-GRPO`.
+Su relevancia es fundamentalmente educativa y de investigación: demuestra un flujo completo de SFT ligero (7 minutos en una A100 80GB, 0,30 USD) sobre un modelo pequeño, con integración de tool calling y razonamiento, como antesala de un ciclo de RL (GRPO) en el tutorial de OpenEnv. No está pensado para uso en producción general, sino como caso de estudio reproducible de entrenamiento de agentes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino supervisado |
+| Arquitectura | Transformer denso (Qwen3), con modo thinking |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (entrenamiento con max length 2048) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (el entrenamiento usó max length 2048) |
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card indica "licence: license" sin especificar) |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | Qwen/Qwen3-1.7B |
+| Dataset de entrenamiento | openenv/wordle-tool-calls-sft |
+| Framework | TRL 1.16.0, Transformers 5.20.2, PyTorch 2.14.1, Datasets 5.1.0 |
+| Tamano del repo | 31.0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer decoder-only de la familia Qwen3, y se ajusta mediante `SFTTrainer` de TRL 1.16.0 con `assistant_only_loss=True`, es decir, la pérdida se calcula únicamente sobre los tokens del asistente y no sobre los del entorno o la herramienta. El entrenamiento consistió en una época de 63 pasos con learning rate 1e-5 y schedule coseno, batch size 16 y longitud máxima de 2048 tokens. Se ejecutó en una única A100 80GB mediante Hugging Face Jobs, con un coste aproximado de 0,30 USD y unos 7 minutos de duración total. El modelo se entrenó en fp32 y se publica en bf16.
+El modelo hereda la arquitectura del Qwen3-1.7B: un transformer denso decoder-only con modo de razonamiento (thinking). El ajuste fino se realizó con `SFTTrainer` de TRL durante una época (63 pasos), con `assistant_only_loss=True` (la pérdida se calcula solo sobre los tokens del asistente, no sobre el prompt), learning rate de 1e-5 con schedule coseno, batch size 16 y longitud máxima de 2048 tokens. El entrenamiento se ejecutó en una única A100 80GB mediante Hugging Face Jobs, con un coste aproximado de 0,30 USD y unos 7 minutos de duración.
 
-El dataset de entrenamiento, `openenv/wordle-tool-calls-sft`, contiene 1.000 partidas de Wordle jugadas por un solver. La innovación técnica principal no está en la arquitectura, sino en el formato de interacción: el modelo aprende a invocar una herramienta `guess` y a generar un razonamiento corto antes de cada intento, lo que lo convierte en un caso de estudio de tool calling y razonamiento multi-paso en un entorno con feedback parcial (las pistas de Wordle). No se menciona uso de RLHF ni DPO en esta fase; el RL llega en la etapa posterior con GRPO.
+Los datos de entrenamiento provienen del dataset `openenv/wordle-tool-calls-sft`, que contiene 1.000 partidas de Wordle jugadas por un solver. Cada partida incluye llamadas a la herramienta `guess` y un razonamiento corto previo a cada intento, lo que enseña al modelo a estructurar la resolución del juego como un agente con tool calling. El modelo se entrenó en fp32 y se publicó en bf16. No se aplicó RLHF ni DPO en esta etapa; el siguiente paso del tutorial es un entrenamiento GRPO que produce `openenv/Qwen3-1.7B-Wordle-SFT-GRPO`.
 
 ## Capacidades
 
-- Generación de texto con razonamiento breve antes de cada acción (thinking previo a la llamada a herramienta).
-- Tool calling / function calling: invoca la herramienta `guess` con una palabra de cinco letras como argumento.
-- Razonamiento multi-paso dentro de un episodio: encadena intentos usando el feedback del entorno (letras correctas, presentes y ausentes).
-- Juego de Wordle en inglés sobre el vocabulario del entorno OpenEnv/TextArena (156 sustantivos como secretos posibles).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidades de visión, audio o matemáticas avanzadas: no disponibles o no evaluadas en esta ficha.
+- Generación de texto conversacional con formato de chat (pipeline `text-generation`, tag `conversational`).
+- Razonamiento breve (thinking) antes de cada acción, heredado del modelo base Qwen3.
+- Tool calling / function calling: invoca la herramienta `guess` para proponer palabras en el juego.
+- Resolución del juego Wordle: selecciona palabras de cinco letras y aprovecha la retroalimentación del entorno.
+- Capacidades multilingües: no documentadas específicamente para este ajuste.
+- Capacidades de propósito general del modelo base (código, matemáticas, etc.): presentes en teoría, pero degradadas o no evaluadas tras el ajuste específico.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Investigación en RL aplicado a agentes: el modelo sirve como política inicial (SFT warmup) para entrenar con GRPO en el tutorial de OpenEnv, permitiendo estudiar cómo el refuerzo mejora una política que ya sabe usar la herramienta pero acierta poco (10/30).
-- Evaluación de tool calling en entornos con feedback parcial: útil para medir la capacidad de un modelo pequeño de integrar información de retorno (pistas de Wordle) en decisiones sucesivas, con un script de evaluación reproducible (`evaluate.py`).
-- Reproducción de experimentos docentes: el bajo coste (0,30 USD, 7 minutos en A100) y el código público lo hacen adecuado para cursos y talleres sobre SFT con TRL y Hugging Face Jobs.
-- Pruebas de pipelines de agentes con `transformers` y TGI: el modelo está etiquetado como compatible con Text Generation Inference y endpoints, por lo que puede desplegarse como servicio para probar integraciones de agentes.
-- Comparación de metodologías SFT frente a SFT+GRPO: al existir la variante `openenv/Qwen3-1.7B-Wordle-SFT-GRPO`, permite aislar el efecto del refuerzo sobre el mismo punto de partida.
-- Generación de datos sintéticos de partidas: puede usarse para producir trazas de razonamiento y llamadas a herramienta que sirvan como datos adicionales de entrenamiento o para análisis de errores.
+- Investigación en entrenamiento de agentes: sirve como punto de partida reproducible para el tutorial de GRPO de OpenEnv, permitiendo estudiar la transición de SFT a RL con un coste mínimo.
+- Evaluación de tool calling en entornos controlados: el modelo invoca una herramienta `guess` con un esquema definido, útil para probar pipelines de function calling y parseo de argumentos.
+- Docencia y demostraciones de SFT ligero: con 7 minutos de entrenamiento en una A100, es un ejemplo práctico de ajuste fino con `assistant_only_loss` y TRL.
+- Benchmark de razonamiento estructurado en juegos: el conjunto `secrets30.txt` permite medir la mejora de 0/30 a 10/30 con decodificación greedy, como test de razonamiento paso a paso.
+- Base para experimentos de RL: al ser el checkpoint previo a GRPO, permite comparar directamente SFT frente a SFT+GRPO en la misma tarea.
+- Prototipado de agentes con entorno remoto: se puede ejecutar contra el espacio `openenv-wordle.hf.space` usando `evaluate.py`, útil para validar integraciones de agentes con entornos HTTP.
+- Estudio de decodificación con thinking: la opción `--thinking --max-new-tokens 512` permite analizar el efecto del razonamiento explícito en tareas de búsqueda con retroalimentación.
 
 ## Benchmarks y rendimiento
 
@@ -52,45 +58,46 @@ El dataset de entrenamiento, `openenv/wordle-tool-calls-sft`, contiene 1.000 par
 | Qwen3-1.7B (base) | 0/30 |
 | Qwen3-1.7B-Wordle-SFT (este modelo) | 10/30 |
 
-Las 30 palabras provienen de `secrets30.txt`, extraídas de los 156 sustantivos de los que TextArena toma sus secretos, la misma lista usada en entrenamiento. Cada modelo se entrenó una sola vez, por lo que el autor advierte que los números deben interpretarse como una única ejecución sobre las palabras de este entorno. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Las 30 palabras provienen de los 156 sustantivos de los que TextArena extrae sus secretos, la misma lista usada en entrenamiento, y cada modelo se entrenó una sola vez. El autor advierte que los números deben interpretarse como una única ejecución sobre las palabras de este entorno. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,5 GB en bf16 para los pesos (1,72B parámetros); alrededor de 2 GB en cuantización de 8 bits y 1 GB en 4 bits, aunque no se han publicado cuantizaciones oficiales.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16 con contexto moderado; A100 80GB fue la usada en entrenamiento.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 12GB, RTX 4060 Ti 16GB, RTX 4070, RTX 4080 y RTX 4090, así como en GPUs integradas con suficiente memoria unificada.
-- Opciones de despliegue: `transformers`, Text Generation Inference (TGI, etiqueta `text-generation-inference`), endpoints compatibles de Hugging Face; llama.cpp u Ollama requerirían conversión a GGUF no publicada.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: con 1,72 mil millones de parámetros, en bf16 requiere aproximadamente 3,5 GB solo para pesos; en fp16 similar; en cuantización de 8 bits unos 1,8 GB; en 4 bits alrededor de 1 GB (estimaciones teóricas, no publicadas por el autor).
+- GPU recomendadas: el entrenamiento se realizó en una A100 80GB, pero la inferencia cabe holgadamente en GPUs consumer.
+- Cabe en GPU consumer: sí, en tarjetas con 8 GB o más (RTX 3060, RTX 4060, RTX 4090, etc.), dependiendo de la cuantización y la longitud de contexto.
+- Opciones de despliegue: transformers (librería nativa), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), vLLM y llama.cpp/Ollama previa conversión a GGUF (no se proporcionan pesos GGUF en el repo).
+- Latencia y throughput: no disponibles. El entrenamiento completo (63 pasos, batch 16, max length 2048) tardó unos 7 minutos en una A100 80GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento Wordle (30 palabras) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento Wordle (30 palabras) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Wordle-SFT | 1,72B | no disponible | 10/30 | no disponible | Hugging Face |
-| Qwen3-1.7B (base) | 1,72B | no disponible | 0/30 | no disponible | Hugging Face |
-| openenv/Qwen3-1.7B-Wordle-SFT-GRPO | 1,72B (derivado) | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| Qwen3-1.7B-Wordle-SFT | 1,72 B | no disponible | 10/30 | no disponible | Hugging Face |
+| Qwen3-1.7B (base) | 1,72 B | no disponible | 0/30 | no disponible | Hugging Face |
+| Qwen3-1.7B-Wordle-SFT-GRPO | 1,72 B (heredados) | no disponible | no disponible en la información | no disponible | Hugging Face |
 
-La comparativa natural es con el modelo base y con la variante GRPO del mismo linaje. No se dispone de datos de otros modelos comparables en la misma tarea dentro de la información proporcionada.
+La comparación directa más relevante es con el modelo base (sin ajuste) y con la variante GRPO del mismo proyecto, que no aporta métricas en la información disponible. No se dispone de datos de otros modelos comparables de la misma categoría (agentes especializados en Wordle) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: el modelo está entrenado para Wordle y el vocabulario del entorno; su rendimiento en tareas generales no está evaluado y probablemente se degrada respecto al base.
-- Riesgo de alucinación en el razonamiento: el "thinking" previo a cada `guess` puede contener afirmaciones incorrectas sobre las pistas, aunque la acción final sea válida.
-- Sesgo de evaluación: los resultados (10/30) corresponden a una única ejecución sobre 30 palabras de la misma lista usada en entrenamiento; no hay validación sobre un conjunto retenido distinto.
-- Licencia no especificada: la model card no concreta la licencia, por lo que el uso comercial no está garantizado y requiere consulta al autor y a la licencia del modelo base Qwen3-1.7B.
-- Idiomas no declarados: no hay información sobre soporte multilingüe; el entorno de Wordle es en inglés.
-- Contexto de entrenamiento limitado a 2048 tokens: partidas largas o razonamientos extensos pueden truncarse.
-- Formato de pesos únicamente safetensors: no hay GGUF ni cuantizaciones oficiales, lo que limita el despliegue en entornos de bajos recursos sin conversión manual.
-- Artefacto de tutorial: su finalidad es didáctica y de investigación; no está pensado como modelo de producción para atención al cliente ni generación general.
+- Modelo altamente especializado: su rendimiento fuera de la tarea de Wordle no está evaluado y probablemente sea inferior al del modelo base.
+- Riesgo de alucinación en el razonamiento previo a cada intento: el modelo puede generar justificaciones plausibles pero incorrectas.
+- Sesgos conocidos: no documentados por el autor; hereda los del modelo base Qwen3-1.7B, no evaluados aquí.
+- Limitaciones de idioma: no se documentan idiomas soportados; el entrenamiento se realizó sobre un dataset específico de Wordle en inglés.
+- Licencia no disponible: no se puede confirmar el uso comercial; hay que verificar la licencia del modelo base Qwen3-1.7B y la del autor antes de cualquier uso en producción.
+- Los resultados de 10/30 corresponden a una única ejecución sobre 30 palabras del mismo entorno de entrenamiento; no deben generalizarse.
+- El modelo está pensado como checkpoint intermedio para GRPO, no como producto final.
+- El repositorio ocupa 31 GB, lo que puede dificultar su descarga y almacenamiento en entornos limitados.
+- No se proporcionan pesos cuantizados (GGUF, AWQ, GPTQ) en el repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openenv/wordle-tool-calls-sft
-- Variante GRPO: https://huggingface.co/openenv/Qwen3-1.7B-Wordle-SFT-GRPO
-- Tutorial OpenEnv Wordle GRPO: https://huggingface.co/docs/openenv/tutorials/wordle-grpo
-- Script de entrenamiento y evaluación: https://github.com/openenv/OpenEnv/tree/main/examples/wordle
-- Lista de secretos de evaluación: https://github.com/openenv/OpenEnv/blob/main/examples/wordle/secrets30.txt
+- Modelo GRPO resultante: https://huggingface.co/openenv/Qwen3-1.7B-Wordle-SFT-GRPO
+- Tutorial de OpenEnv Wordle (GRPO): https://openenv.github.io/OpenEnv/main/tutorials/wordle-grpo
+- Script de entrenamiento SFT: https://github.com/openenv/OpenEnv/tree/main/examples/wordle
 - Curvas de entrenamiento (Trackio): https://huggingface.co/spaces/openenv/wordle-runs
-- Entorno Wordle en Hugging Face Spaces: https://openenv-wordle.hf.space
+- Lista de palabras de evaluación: https://github.com/openenv/OpenEnv/blob/main/examples/wordle/secrets30.txt
+- Entorno Wordle desplegado: https://openenv-wordle.hf.space

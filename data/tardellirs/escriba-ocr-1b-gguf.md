@@ -2,104 +2,106 @@
 
 ## Resumen
 
-Escriba-OCR-1B-GGUF es la distribucion en formato GGUF de Escriba-OCR-1B, un modelo vision-lenguaje de aproximadamente 596 millones de parametros (etiquetado comercialmente como "1B") especializado en el reconocimiento de texto manuscrito (HTR/OCR) de redacciones en portugues, concretamente ensayos escritos a mano por estudiantes para el examen ENEM de Brasil. Lo desarrolla el usuario tardellirs y se distribuye bajo licencia CC BY-NC 4.0. Su rasgo definitorio es que preserva los errores del alumno en la transcripcion, en lugar de corregirlos, lo que lo hace util para evaluacion educativa.
+Escriba-OCR-1B-GGUF es la distribucion en formato GGUF del modelo Escriba-OCR-1B, un modelo de vision-lenguaje de aproximadamente 596 millones de parametros (denominado "1B" por el autor) especializado en reconocimiento de texto manuscrito (HTR, por sus siglas en ingles) en redacciones escolares en portugues de Brasil. Lo desarrolla el usuario tardellirs y esta disenado especificamente para preservar los errores ortograficos y gramaticales del alumno en la transcripcion, en lugar de corregirlos, algo poco habitual en sistemas OCR convencionales.
 
-La relevancia de esta version GGUF es practica: permite ejecutar el modelo en CPU convencional mediante llama.cpp, sin GPU, de modo que las redacciones de los estudiantes no tienen que salir de los ordenadores del centro educativo. Los ficheros cuantizados reducen el modelo a entre 0,66 GB y 2,0 GB en disco (incluyendo el proyector de vision), con una calidad de transcripcion equivalente a los pesos originales segun las mediciones del autor.
+El modelo parte de LightOnOCR-3-1B (LightOn, licencia Apache 2.0) y se ha ajustado sobre el corpus BRESSAY, un conjunto de redacciones manuscritas del examen ENEM. Esta version GGUF esta pensada para ejecutarse en CPU convencional mediante llama.cpp, sin necesidad de GPU, lo que permite procesar redacciones dentro del propio centro escolar sin que las imagenes salgan de la red local. Segun el autor, la cuantizacion Q4_K_M combinada con el proyector visual Q4_K_M ocupa 0,66 GB y mantiene un CER del 2,60 %, practicamente identico al de los pesos originales en vLLM.
 
-El modelo se construye sobre LightOnOCR-3-1B (© LightOn, Apache 2.0) y se entrena con el corpus BRESSAY. Esta ficha cubre la variante GGUF; los detalles completos de entrenamiento y benchmarks remiten a la model card del modelo base.
+La relevancia actual del modelo reside en su enfoque "error-preserving" aplicado a un dominio educativo muy concreto (portugues brasileno, redacciones ENEM) y en su diseno para despliegue en hardware modesto. No obstante, su licencia CC BY-NC 4.0 restringe el uso a fines no comerciales, y su ambito linguistico y de tarea es muy estrecho.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje (image-text-to-text); transformer con proyector de vision, derivada de LightOnOCR-3-1B |
-| Parametros totales | 596.049.920 (segun safetensors del modelo base) |
+| Arquitectura | Vision-lenguaje (modelo base LightOnOCR-3-1B); pesos en formato GGUF para llama.cpp |
+| Parametros totales | 596.049.920 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8192 tokens en la configuracion de servidor recomendada (`-c 8192`) |
-| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 (modelo); Q4_K_M, Q8_0, F16 (proyector de vision) |
-| Idiomas soportados | Portugues (pt), portugues de Brasil; no se declaran otros idiomas |
+| Longitud de contexto | 8192 tokens (configuracion recomendada en llama-server); contexto de entrenamiento no disponible |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 (modelo de lenguaje); Q4_K_M, Q8_0, F16 (proyector visual) |
+| Idiomas soportados | Portugues (pt) y portugues de Brasil (segun tags de la model card); lista oficial de idiomas no disponible |
 | Licencia | CC BY-NC 4.0 (solo uso no comercial) |
-| Formato de pesos | GGUF (para llama.cpp) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un vision-lenguaje de tipo image-text-to-text que combina un codificador de vision con un modelo de lenguaje y un proyector multimodal, partiendo de la base LightOnOCR-3-1B. La inferencia procesa la imagen de la pagina (redimensionada a 1200 px en el lado mayor, lo que genera aproximadamente 1700 tokens visuales) y produce la transcripcion como texto generado de forma autorregresiva.
+El modelo sigue una arquitectura de vision-lenguaje: un codificador de imagen (proyector visual, empaquetado como `mmproj-*.gguf`) que convierte la pagina en aproximadamente 1.700 tokens visuales a 1200 px de resolucion, y un modelo de lenguaje que genera la transcripcion. El modelo base es LightOnOCR-3-1B de LightOn, sobre el que se realizo un ajuste especifico para el corpus BRESSAY de redacciones manuscritas del ENEM.
 
-El entrenamiento se realizo sobre el corpus BRESSAY, un conjunto de redacciones manuscritas en portugues, con el objetivo explicito de preservar los errores ortograficos y gramaticales del estudiante. La model card de esta variante GGUF no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO; esos datos corresponden a la model card del modelo base. La innovacion principal no es arquitectonica sino de objetivo: una transcripcion fiel y con errores conservados, orientada a evaluacion educativa.
+El entrenamiento esta orientado a preservar los errores del alumno (enfoque "error-preserving"), de modo que la salida refleja fielmente lo escrito, incluidas faltas de ortografia y desviaciones gramaticales. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el uso de RLHF o DPO. La model card indica que la inferencia debe realizarse con configuraciones fijas: redimensionar la pagina a 1200 px en el lado mayor, enviar unicamente la imagen sin prompt de texto y decodificar de forma greedy con `repetition_penalty=1.05`. La conversion a GGUF se realizo con `convert_hf_to_gguf.py` (con `--mmproj` para el proyector) y la cuantizacion con `llama-quantize`; segun el autor, la salida F16 coincide con la salida vLLM de los pesos originales en aproximadamente un 1 % de caracteres.
 
 ## Capacidades
 
-- Reconocimiento de texto manuscrito (HTR) sobre imagenes de redacciones en portugues.
-- Transcripcion que preserva errores del alumno (error-preserving), en lugar de normalizar o corregir.
-- Entrada exclusivamente de imagen, sin prompt de texto: el modelo espera solo la imagen de la pagina.
-- Salida de texto plano con la transcripcion de la pagina.
-- Ejecucion en CPU sin GPU mediante llama.cpp, con API compatible con OpenAI a traves de `llama-server`.
-- Procesamiento pagina a pagina, con decodificacion greedy (`--temp 0`, `repetition_penalty=1.05`).
-- Soporte de cuantizacion de 4, 5, 6, 8 y 16 bits tanto del modelo como del proyector de vision.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision general, audio ni modo "thinking".
+- Reconocimiento de texto manuscrito (HTR) en redacciones escolares en portugues de Brasil.
+- Transcripcion que preserva errores ortograficos y gramaticales del alumno (error-preserving).
+- Procesamiento de imagen a texto en un unico paso, sin prompt textual de entrada.
+- Ejecucion en CPU mediante llama.cpp, sin GPU.
+- Servidor compatible con la API de OpenAI a traves de `llama-server`.
+- Integracion con herramientas de linea de comandos y visor local del repositorio `tardellirs/escriba-ocr`.
+- Capacidades multilingues: limitadas al portugues (pt / pt-BR) segun la informacion disponible; no se documentan otras lenguas.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Digitalizacion de redacciones del ENEM en centros educativos: el modelo transcribe las redacciones manuscritas en un servidor local con CPU, de modo que los documentos de los alumnos no salen de la red del centro.
-- Evaluacion pedagogica con errores conservados: al mantener las faltas del estudiante, el profesorado puede analizar patrones de error ortografico y gramatical sin que el OCR los enmascare.
-- Despliegue en aulas con hardware modesto: con Q4_K_M + proyector Q4_K_M (0,66 GB, unos 2,7 GB de RAM pico) funciona en un equipo de escritorio convencional, sin GPU.
-- Correccion asistida por lotes: el cliente `escriba transcribe photos/ --name class-3a` genera un `.txt` por imagen, lo que permite procesar una clase completa y volcar las transcripciones a un pipeline de evaluacion.
-- Revision y verificacion manual: el visor local (`escriba viewer`) permite comparar pagina e transcripcion en el navegador para auditar resultados.
-- Archivo y conservacion documental: transcripcion masiva de examenes manuscritos para su indexacion y busqueda posterior.
-- Investigacion en HTR educativo: uso del modelo como linea base para estudios sobre reconocimiento de escritura manuscrita en portugues con preservacion de errores.
+- Digitalizacion de redacciones escolares en el aula: el modelo transcribe las redacciones manuscritas de los alumnos en un servidor local con CPU, de modo que las imagenes no salen de los equipos del centro. Es adecuado por su bajo consumo de RAM (2,7 GB de pico) y su ejecucion sin GPU.
+- Evaluacion pedagogica con preservacion de errores: al mantener las faltas del alumno, el profesorado puede analizar patrones de error ortografico y gramatical sobre la transcripcion sin perder informacion que un OCR corrector eliminaria.
+- Preparacion de datos para el examen ENEM: permite convertir lotes de redacciones manuscritas en texto plano para su analisis estadistico o su uso como corpus de investigacion, dado que el modelo esta ajustado sobre BRESSAY.
+- Despliegue en infraestructura escolar modesta: con la configuracion Q4_K_M + mmproj Q4_K_M (0,66 GB) puede ejecutarse en un servidor de 4 vCPU y 16 GB de RAM, lo que lo hace viable en centros con recursos limitados.
+- Pipeline de correccion asistida: la salida en texto por pagina (un `.txt` por imagen mediante `escriba transcribe`) puede alimentar herramientas posteriores de analisis o revision humana.
+- Investigacion en HTR educativo: sirve como referencia para estudiar tecnicas de reconocimiento que preservan errores en lugar de normalizarlos, con resultados de CER medidos sobre el split de test de BRESSAY.
+- Visor local de paginas y transcripciones: el comando `escriba viewer` levanta una interfaz web en `http://127.0.0.1:8000` para revisar paginas y transcripciones, util para revision manual en el aula.
 
 ## Benchmarks y rendimiento
 
-El autor publica mediciones sobre 30 paginas aleatorias del split de test de BRESSAY, en una VM de 4 vCPU (AMD EPYC Turin, 16 GB RAM) con llama.cpp compilado con `GGML_NATIVE=ON`. CER insensible a mayusculas, por pagina y limitado al 100%.
+Resultados medidos por el autor sobre 30 paginas aleatorias del split de test de BRESSAY, en una VM de 4 vCPU (AMD EPYC Turin, 16 GB RAM), con llama.cpp compilado con `GGML_NATIVE=ON`, una pagina a la vez. CER insensible a mayusculas, por pagina y acotado al 100 %. Tiempos y velocidades son medianas; la RAM es el pico del servidor sobre las 30 paginas.
 
-| Variante | Ficheros (texto + vision) | CER | Tiempo por pagina | Codificacion de imagen | Generacion de texto | RAM pico |
+| Variante | Archivos (texto + vision) | CER | Tiempo por pagina | Codificacion de imagen | Generacion de texto | RAM pico |
 |---|---|---|---|---|---|---|
-| Pesos originales, vLLM en GPU (referencia) | 2,0 GB | 2,56% | 2,3 s | no disponible | no disponible | no disponible |
-| F16 + mmproj F16 | 2,0 GB | 2,60% | 69 s | 41 s | 28 tok/s | 3,6 GB |
-| Q8_0 + mmproj Q8_0 | 1,1 GB | 2,60% | 70 s | 49 s | 38 tok/s | 2,9 GB |
-| Q4_K_M + mmproj F16 | 1,2 GB | 2,55% | 55 s | 37 s | 47 tok/s | 3,0 GB |
-| Q4_K_M + mmproj Q8_0 | 0,85 GB | 2,54% | 66 s | 48 s | 45 tok/s | 2,8 GB |
-| Q4_K_M + mmproj Q4_K_M | 0,66 GB | 2,60% | 53 s | 35 s | 45 tok/s | 2,7 GB |
+| Pesos originales, vLLM en GPU (referencia) | 2,0 GB | 2,56 % | 2,3 s | no disponible | no disponible | no disponible |
+| F16 + mmproj F16 | 2,0 GB | 2,60 % | 69 s | 41 s | 28 tok/s | 3,6 GB |
+| Q8_0 + mmproj Q8_0 | 1,1 GB | 2,60 % | 70 s | 49 s | 38 tok/s | 2,9 GB |
+| Q4_K_M + mmproj F16 | 1,2 GB | 2,55 % | 55 s | 37 s | 47 tok/s | 3,0 GB |
+| Q4_K_M + mmproj Q8_0 | 0,85 GB | 2,54 % | 66 s | 48 s | 45 tok/s | 2,8 GB |
+| Q4_K_M + mmproj Q4_K_M | 0,66 GB | 2,60 % | 53 s | 35 s | 45 tok/s | 2,7 GB |
 
-Las diferencias de CER entre cuantizaciones son de 0,05 puntos o menos, dentro del ruido entre paginas. Redimensionar a 1000 px en lugar de 1200 px reduce el tiempo en aproximadamente un tercio, pero eleva el CER en torno a 0,4 puntos, por lo que el autor no lo recomienda. No se publican resultados de MMLU, HumanEval ni GSM8K para este modelo.
+Segun el autor, las diferencias entre variantes cuantizadas estan dentro de 0,05 puntos, por debajo del ruido entre paginas. Redimensionar a 1000 px en lugar de 1200 px reduce el tiempo en aproximadamente un tercio pero eleva el CER en torno a 0,4 puntos, por lo que no se recomienda. No se han publicado en la informacion disponible resultados de benchmarks generales tipo MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en la configuracion recomendada; la inferencia es en CPU. RAM pico medida entre 2,7 GB (Q4_K_M + mmproj Q4_K_M) y 3,6 GB (F16 + mmproj F16).
-- GPU recomendadas: no requeridas. La referencia de calidad se obtuvo con vLLM en GPU (2,3 s por pagina), pero la model card no especifica el modelo de GPU.
-- Cabe en hardware de consumo: si, en cualquier CPU moderna; el propio modelo esta pensado para ejecutarse sin GPU. Las CPU sin AVX-512 son mas lentas.
-- Opciones de despliegue: `llama-server` (API compatible con OpenAI), `llama-mtmd-cli` (linea de comandos) y el cliente/visor `escriba` (repositorio github.com/tardellirs/escriba-ocr). No se documenta soporte para vLLM, TGI ni Ollama en esta variante.
-- Latencia y throughput medidos en 4 vCPU: entre 53 y 70 s por pagina segun variante; generacion de texto de 28 a 47 tok/s; la mayor parte del tiempo se consume en la codificacion de la imagen (35 a 49 s).
-- Configuracion de servidor recomendada: `--temp 0 --repeat-penalty 1.05 -c 8192 --cache-ram 0 -np 1`; `--cache-ram 0` evita que la cache de prompt crezca hasta 8 GB y `-np 1` evita el error "failed to find a memory slot" al dividirse el contexto en varios slots.
+- VRAM estimada: no aplica para GGUF en CPU; en GPU, los pesos originales en vLLM ocupan 2,0 GB.
+- RAM recomendada: 2,7 GB de pico con Q4_K_M + mmproj Q4_K_M; 3,6 GB con la variante F16.
+- GPU recomendadas: no se especifican; el modelo esta pensado para CPU. Los pesos originales se ejecutan en vLLM sobre GPU (referencia medida a 2,3 s por pagina).
+- Cabe en CPU convencional: si, con la configuracion Q4_K_M + mmproj Q4_K_M (0,66 GB de archivos).
+- CPUs sin AVX-512 son mas lentas segun el autor.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-mtmd-cli`), cliente y visor del repositorio `tardellirs/escriba-ocr`, API compatible con OpenAI. No se documenta soporte de vLLM, TGI ni Ollama para esta version GGUF.
+- Latencia y throughput en CPU (4 vCPU AMD EPYC Turin): 53 s por pagina con Q4_K_M + mmproj Q4_K_M, de los cuales 35 s corresponden a codificacion de imagen y la generacion ronda los 45 tok/s.
+- Configuracion recomendada del servidor: `--temp 0 --repeat-penalty 1.05 -c 8192 --cache-ram 0 -np 1`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Escriba-OCR-1B-GGUF | 596 M | 8192 | GGUF / llama.cpp en CPU | CC BY-NC 4.0 | Especializado en HTR de portugues con preservacion de errores |
-| LightOnOCR-3-1B | no disponible | no disponible | safetensors | Apache 2.0 | Modelo base de Escriba; uso general de OCR, no especifico de portugues educativo |
-| Escriba-OCR-1B (original) | 596 M | no disponible | safetensors / vLLM en GPU | CC BY-NC 4.0 | Pesos de referencia; requiere GPU y ofrece 2,3 s por pagina |
+| Escriba-OCR-1B-GGUF | 596 M | 8192 (config. recomendada) | HTR error-preserving pt-BR, CPU | CC BY-NC 4.0 | GGUF en Hugging Face |
+| LightOnOCR-3-1B (base) | no disponible | no disponible | OCR general | Apache 2.0 | Hugging Face |
+| Pesos originales Escriba-OCR-1B | 596 M | no disponible | HTR error-preserving pt-BR | CC BY-NC 4.0 | Safetensors en Hugging Face |
 
-No se dispone en la informacion proporcionada de otros modelos comparables de HTR para portugues con preservacion de errores.
+La informacion disponible no incluye otros modelos OCR comparables con datos de rendimiento medidos sobre BRESSAY, por lo que la comparativa se limita al modelo base y a los pesos originales.
 
 ## Limitaciones y advertencias
 
-- Licencia CC BY-NC 4.0: uso exclusivamente no comercial. Los datos de entrenamiento (BRESSAY) solo pueden usarse para investigacion y docencia no comerciales, lo que restringe cualquier despliegue productivo comercial.
-- Ambito linguistico limitado al portugues (de Brasil); no se declaran capacidades multilingues.
-- Entrenado especificamente con redacciones manuscritas del ENEM; el rendimiento fuera de ese dominio (otra caligrafia, otros formatos, otras lenguas) no esta documentado.
-- Riesgo de error de transcripcion: el CER de referencia es de aproximadamente 2,5% a 2,6%, por lo que la salida no debe considerarse exacta sin revision.
-- La preservacion de errores es intencionada: el modelo no corrige ortografia ni gramatica, lo que lo hace inadecuado para tareas que requieran texto normalizado.
-- Requiere seguir estrictamente la configuracion de entrenamiento (imagen a 1200 px en el lado mayor, solo imagen sin prompt, decodificacion greedy con `repetition_penalty=1.05`); desviarse de ella puede degradar la calidad.
-- En CPU sin AVX-512 el rendimiento es notablemente inferior; la latencia de 53 a 70 s por pagina limita su uso en escenarios de alto volumen en tiempo real.
-- No se documentan sesgos especificos, pero al derivar de un modelo base y de un corpus educativo concreto puede heredar sesgos de ambos.
-- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, por lo que no debe emplearse como modelo generalista.
+- Licencia CC BY-NC 4.0: uso exclusivamente no comercial. El corpus de entrenamiento BRESSAY solo puede usarse para investigacion y docencia no comercial.
+- Ambito linguistico restringido al portugues (pt / pt-BR); no se documenta soporte de otros idiomas.
+- Disenado especificamente para redacciones manuscritas del ENEM; su rendimiento fuera de ese dominio no esta documentado.
+- Riesgo de alucinacion y de errores de transcripcion: el CER medido es del 2,54-2,60 % sobre el split de test, no es cero.
+- Requiere seguir estrictamente la configuracion de inferencia (1200 px, solo imagen, greedy con `repetition_penalty=1.05`); desviarse puede degradar la calidad.
+- En llama-server es necesario `-np 1` y `--cache-ram 0`; con la configuracion por defecto de varios slots, una pagina de aproximadamente 1.700 tokens puede fallar con "failed to find a memory slot", y la cache de prompt puede crecer hasta 8 GB de RAM.
+- El rendimiento en CPU depende de AVX-512; CPUs mas antiguas son mas lentas.
+- No se documentan sesgos especificos, pero al tratarse de texto manuscrito de estudiantes puede reflejar sesgos presentes en el corpus BRESSAY.
+- No se documenta soporte de tool calling ni de agentes; no debe asumirse.
 
 ## Enlaces
 
 - Modelo GGUF en Hugging Face: https://huggingface.co/tardellirs/Escriba-OCR-1B-GGUF
-- Modelo base (pesos originales): https://huggingface.co/tardellirs/Escriba-OCR-1B
+- Modelo base Escriba-OCR-1B: https://huggingface.co/tardellirs/Escriba-OCR-1B
 - Modelo base de LightOn: https://huggingface.co/lightonai/LightOnOCR-3-1B
-- Repositorio del cliente y visor escriba-ocr: https://github.com/tardellirs/escriba-ocr
+- Paper: https://arxiv.org/abs/2611.29874
+- Repositorio de cliente y visor: https://github.com/tardellirs/escriba-ocr
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Dataset BRESSAY: https://zenodo.org/records/11637681
-- Logotipo del modelo: https://huggingface.co/tardellirs/Escriba-OCR-1B-GGUF/resolve/main/assets/escriba-logo.png
+- Corpus BRESSAY: https://zenodo.org/records/11637681

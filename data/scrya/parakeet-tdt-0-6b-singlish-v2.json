@@ -1,0 +1,120 @@
+{
+  "schema": 2,
+  "id": "Scrya/parakeet-tdt-0.6b-singlish-v2",
+  "slug": "scrya-parakeet-tdt-0-6b-singlish-v2",
+  "author": "Scrya",
+  "url": "https://huggingface.co/Scrya/parakeet-tdt-0.6b-singlish-v2",
+  "created_at": "2026-11-27T00:02:07.000Z",
+  "updated_at": "2026-11-27T00:03:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "nemo",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "parakeet",
+    "tdt",
+    "transducer",
+    "singapore-english",
+    "singlish",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 5017592400,
+  "storage_human": "5.0 GB",
+  "context_length": null,
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 3 SDM (test)",
+      "metric": "Normalised WER",
+      "value": 9.71
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 3 SDM (test)",
+      "metric": "Formatted WER (casing and punctuation count)",
+      "value": 16.25
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 3 Same Room (test)",
+      "metric": "Normalised WER",
+      "value": 9.63
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 3 Same Room (test)",
+      "metric": "Formatted WER (casing and punctuation count)",
+      "value": 15.32
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 4 (test)",
+      "metric": "Normalised WER",
+      "value": 13.95
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 4 (test)",
+      "metric": "Formatted WER (casing and punctuation count)",
+      "value": 22.22
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 5 (test)",
+      "metric": "Normalised WER",
+      "value": 6.25
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 5 (test)",
+      "metric": "Formatted WER (casing and punctuation count)",
+      "value": 12.36
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 6.3 (test)",
+      "metric": "Normalised WER",
+      "value": 6.16
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IMDA National Speech Corpus, Part 6.3 (test)",
+      "metric": "Formatted WER (casing and punctuation count)",
+      "value": 13.61
+    }
+  ],
+  "sources": []
+}

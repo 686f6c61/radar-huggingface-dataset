@@ -2,11 +2,11 @@
 
 ## Resumen
 
-lm3_landmark_detector__yolo26x_pose_640_canonical es un modelo de deteccion de puntos clave (keypoint detection) especializado en la estimacion del esqueleto de hojas individuales recortadas de pliegos de herbario. Lo desarrolla el usuario phyloforfun dentro del proyecto LeafMachine3 (LM3), una herramienta de digitalizacion y analisis automatizado de colecciones botanicas. El modelo predice 31 puntos anatomicos que describen la lamina foliar, el nervio medio, el peciolo y los ejes de anchura, lo que permite medir rasgos morfologicos de forma reproducible.
+lm3_landmark_detector__yolo26x_pose_640_canonical es un modelo de estimacion de pose (keypoint detection) desarrollado por phyloforfun dentro del proyecto LeafMachine3. Su funcion es predecir un esqueleto de 31 puntos clave sobre recortes de hojas individuales procedentes de pliegos de herbario, siguiendo el esquema `mid15_pet5`. Se trata de un YOLO26x-pose end-to-end (sin NMS) construido sobre los pesos base `yolo26x-pose.pt` de Ultralytics.
 
-Tecnicamente se trata de un YOLO26x-pose en configuracion end-to-end (sin NMS), derivado de los pesos base `yolo26x-pose.pt` de Ultralytics. Trabaja sobre recortes de una sola hoja con un margen blanco del 10 % por cada lado, redimensionados a 640 px con letterbox en RGB, y devuelve una caja de clase `leaf` mas 31 keypoints con sus coordenadas y confianza. Se distribuye en cuatro formatos (PyTorch, ONNX, TorchScript y OpenVINO) y es el modelo `landmark_detector` por defecto de LeafMachine3, sustituyendo a la version anterior `lm3_landmark_detector__yolo26x_pose_640` con la misma interfaz de entrada, salida y orden de keypoints.
+El modelo resuelve un problema especifico de digitalizacion botanica: la extraccion geometrica consistente de la morfologia foliar (apice, base, nervio medio, peciolo y anchura) a partir de imagenes de especimenes. Esta version "canonical" sustituye a `lm3_landmark_detector__yolo26x_pose_640` manteniendo la misma entrada, salida y orden de keypoints, pero entrenada sobre etiquetas corregidas con una regla anatomica unica.
 
-La relevancia actual del modelo reside en la correccion sistematica de etiquetas: frente a la version previa, se aplico una regla anatomica unica a todas las hojas (izquierda y derecha relativas al nervio medio con el apice hacia arriba), lo que afecto a 8.632 de los 15.178 recortes. Esto convierte el modelo en una pieza util para pipelines de fenotipado morfologico a gran escala en colecciones de herbario, donde la coherencia del etiquetado geometrico es critica para la comparabilidad de las mediciones.
+Es relevante porque es el modelo `landmark_detector` por defecto de LeafMachine3 3.0.0, con soporte multiformato (PyTorch, ONNX, TorchScript, OpenVINO, Core ML) y un conjunto de correcciones de etiquetado documentado que afecta a 8.632 de 15.178 recortes. Entrada de 640 px con letterbox, un unico box de clase `leaf` y 31 keypoints con confianza.
 
 ## Especificaciones tecnicas
 
@@ -15,84 +15,74 @@ La relevancia actual del modelo reside en la correccion sistematica de etiquetas
 | Arquitectura | YOLO26x pose, end-to-end (NMS-free) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, entrada de 640 px) |
-| Tipos de cuantizacion | no disponible (se distribuyen pesos en PyTorch, ONNX, TorchScript y OpenVINO) |
-| Idiomas soportados | no disponible (modelo de vision, sin capacidades linguisticas) |
+| Longitud de contexto | no aplica (modelo de vision) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos en fp32 para Core ML; ONNX, TorchScript, OpenVINO y PyTorch sin cuantizar declarada) |
+| Idiomas soportados | no aplica (modelo de vision) |
 | Licencia | AGPL-3.0 |
-| Formato de pesos | `best.pt` (PyTorch/Ultralytics), `model.onnx`, `model.torchscript`, `model_openvino_model/` |
-| Pipeline | keypoint-detection |
-| Libreria | ultralytics |
-| Entrada | recorte de hoja con borde blanco del 10 % por lado, letterbox 640, RGB |
-| Salida | 1 caja clase `leaf` + 31 keypoints (x, y, conf) |
-| Keypoints | 31 (lamina_tip; apex_left/center/right; midvein_0..14; base_left/center/right; lamina_base; petiole_0..4, petiole_tip; width_left, width_right) |
-| Tamano del repo | 0,8 GB |
-| Fecha de entrenamiento | 2026-11-06 |
-| Version LM3 | 3.0.0 (minima soportada) |
+| Formato de pesos | PyTorch (`best.pt`), ONNX (`model.onnx`), TorchScript (`model.torchscript`), OpenVINO (`model_openvino_model/`), Core ML fp32 (`model.mlpackage/`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura YOLO26x-pose de Ultralytics en modalidad end-to-end, es decir, sin supresion de no maximos (NMS) en la etapa de post-proceso, lo que simplifica el despliegue y reduce la latencia en produccion. La cabeza de pose predice simultaneamente la caja del objeto y los 31 keypoints, con un `flip_idx` definido para el volteo horizontal que intercambia los puntos izquierda/derecha de apice, base y anchura. El modelo parte de los pesos base `yolo26x-pose.pt` y se reentrena sobre el dataset especifico de landmarks foliares.
+El modelo es un detector de pose YOLO26x de Ultralytics en configuracion end-to-end, es decir, sin supresion no maxima (NMS) en la etapa de inferencia. Predice un unico box de clase `leaf` junto con 31 keypoints, cada uno con coordenadas (x, y) y confianza. Los keypoints siguen el esquema `mid15_pet5`: `lamina_tip`; `apex_left`, `apex_center`, `apex_right`; `midvein_0` a `midvein_14`; `base_left`, `base_center`, `base_right`; `lamina_base`; `petiole_0` a `petiole_4`, `petiole_tip`; `width_left`, `width_right`. Incluye un `flip_idx` definido para el intercambio izquierda/derecha en aumentado de datos.
 
-El entrenamiento se realizo sobre el dataset `LM3_Landmarks_Pose_it2`, construido el 2026-11-04 corrigiendo las etiquetas de `LM3_Landmarks_Pose` (23 proyectos de landmarks en Labelbox). Se mantienen las mismas imagenes, el mismo split 80/10/10 y el mismo remuestreo `mid15_pet5`. El conjunto contiene 15.178 recortes de una sola hoja, con una instancia `leaf` por imagen: 12.225 imagenes de entrenamiento (357.929 instancias de keypoints), 1.387 de validacion (40.598 instancias) y 1.566 de test (45.807 instancias). Las correcciones no fueron reanotaciones manuales, sino calculos derivados de la geometria dibujada: orden izquierda/derecha relativo al nervio medio, direccion del nervio medio (con `midvein_0` siempre en el extremo del apice), posicion del `petiole_tip` en el extremo libre, fusion de angulos dibujados como dos brazos separados, recálculo del vertice interior en angulos con vertices extra y uso de la cuerda mas larga para la anchura. 234 puntos o pares no orientables se marcaron como no etiquetados y 39 recortes sin informacion utilizable se descartaron. No se especifica en la informacion disponible si hubo RLHF, DPO ni tecnicas de aumento mas alla del preprocesado descrito.
+El entrenamiento se realizo el 2026-11-06 (iteracion 3) sobre el dataset `LM3_Landmarks_Pose_it2`, construido el 2026-11-04 corrigiendo las etiquetas de `LM3_Landmarks_Pose` (23 proyectos de Labelbox). Se mantienen las mismas imagenes, el mismo split 80/10/10 y el mismo remuestreo `mid15_pet5`. El conjunto consta de 15.178 recortes de hoja individual, con un unico `leaf` por imagen: 12.225 imagenes de entrenamiento (357.929 instancias de keypoints), 1.387 de validacion (40.598 instancias) y 1.566 de test (45.807 instancias). No se reanoto manualmente nada; las correcciones se calcularon a partir de la geometria dibujada y afectaron a 8.632 recortes. Se corrigieron el orden izquierda/derecha (anchura 5.351, apice 4.562, base 4.990), la direccion del nervio medio (619), la punta del peciolo (2.342 movidos, 151 rellenados), angulos dibujados como dos brazos separados (apice 304, base 303), angulos con vertices extra (apice 310, base 406) y anchura con vertices extra (63). 234 puntos o pares no orientables se marcaron como no etiquetados y 39 recortes sin nada utilizable se descartaron. La entrada requiere un borde blanco del 10% por lado antes del letterbox a 640; los recortes sin ese padding no estan soportados.
 
 ## Capacidades
 
-- Deteccion de 31 keypoints anatomicos por hoja: apice (izquierda, centro, derecha), nervio medio (`midvein_0` a `midvein_14`), base (izquierda, centro, derecha), base de la lamina, peciolo (`petiole_0` a `petiole_4` y `petiole_tip`) y ejes de anchura (izquierda y derecha).
-- Deteccion de la caja delimitadora de la hoja con una unica clase `leaf`.
-- Estimacion de confianza por keypoint, lo que permite filtrar puntos poco fiables en el post-proceso.
-- Consistencia geometrica izquierda/derecha gracias a la regla anatomica aplicada en el etiquetado y al `flip_idx` definido para aumento por volteo.
-- Inferencia end-to-end sin NMS, adecuada para despliegues de baja latencia.
-- Exportacion a ONNX, TorchScript y OpenVINO para ejecucion en CPU, iGPU y entornos libtorch.
-- No dispone de capacidades de generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes, multilingues, vision general, audio ni modo de pensamiento; es un modelo puro de vision para una tarea especifica.
+- Deteccion de pose sobre recortes de hoja individual con 31 keypoints y confianza por punto.
+- Deteccion de un unico box de clase `leaf` por imagen.
+- Prediccion de esqueleto foliar: apice, base, nervio medio (15 puntos), peciolo (6 puntos) y anchura.
+- Inferencia end-to-end sin NMS, lo que simplifica el postprocesado.
+- Exportacion a multiples runtimes: ONNX (runtime por defecto de LM3), Core ML en GPU de Apple, TorchScript/libtorch, OpenVINO para CPU/iGPU Intel y PyTorch para reentrenamiento.
+- Integracion como modelo por defecto del modulo `landmark_detector` de LeafMachine3 3.0.0.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo de vision puro.
 
 ## Casos de uso
 
-- Digitalizacion de colecciones de herbario: el modelo procesa recortes de hojas individuales extraidos de pliegos escaneados y devuelve el esqueleto de 31 puntos, permitiendo generar bases de datos morfologicas a partir de imagenes ya digitalizadas en masa.
-- Fenotipado morfologico comparativo: con los keypoints de apice, base, nervio medio y anchura se pueden calcular longitudes, ratios y angulos de la lamina de forma reproducible entre especimenes, algo critico cuando se comparan colecciones de distintas instituciones.
-- Medición automatizada de rasgos foliares: la salida estructurada (coordenadas normalizadas y confianza) permite derivar metricas como la relacion longitud/anchura, la posicion del peciolo o la curvatura del nervio medio sin intervencion manual.
-- Control de calidad de anotaciones: dado que el modelo fue entrenado sobre etiquetas corregidas, puede usarse para detectar discrepancias en nuevas anotaciones de landmarks y priorizar la revision humana de los casos con baja confianza.
-- Integracion en pipelines de investigacion botanica: al distribuirse en ONNX y OpenVINO, puede incorporarse en flujos de procesamiento por lotes en servidores sin GPU o en estaciones de trabajo con CPU Intel, reduciendo el coste de infraestructura.
-- Entrenamiento y ajuste fino: el archivo `best.pt` permite reentrenar o adaptar el modelo a nuevas especies o morfologias dentro de la libreria Ultralytics, manteniendo el mismo esquema de 31 keypoints.
-- Analisis de variabilidad intraespecifica: al aplicar el mismo modelo a multiples hojas de una misma especie, se pueden estudiar distribuciones de rasgos geometricos y detectar outliers morfologicos.
+- Digitalizacion de colecciones de herbario: el modelo extrae la geometria foliar de cada recorte de hoja para alimentar bases de datos morfometricas, aprovechando la consistencia del esquema de 31 keypoints y la correccion anatomica de las etiquetas.
+- Morfometria automatizada: calculo de longitud de nervio medio, anchura maxima, longitud de peciolo y angulos apical/basal a partir de los keypoints predichos, con aplicacion en taxonomia y estudios de forma.
+- Pipelines de fenotipado de alta productividad: procesamiento por lotes de miles de especimenes mediante el runtime ONNX u OpenVINO, con el padding del 10% aplicado de forma programatica antes del letterbox.
+- Despliegue en macOS: uso del paquete Core ML fp32 para ejecutar la deteccion en la GPU de Apple dentro de flujos de trabajo de LeafMachine3 en estaciones de trabajo Mac.
+- Despliegue en CPU Intel: variante OpenVINO para servidores o equipos sin GPU dedicada en laboratorios de botanica.
+- Reentrenamiento y adaptacion: partiendo de `best.pt`, ajustar el modelo a nuevas especies, regiones o esquemas de etiquetado manteniendo el orden de keypoints y el `flip_idx`.
+- Control de calidad de anotaciones: comparar las predicciones con etiquetas existentes para detectar inconsistencias de orden izquierda/derecha, direccion del nervio medio o posicion del peciolo, que son precisamente los errores corregidos en esta version.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de un archivo `evaluation_comparison.json` que contiene la comparacion con el modelo por defecto anterior, pero no se incluyen sus cifras en la informacion proporcionada.
+No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card menciona un fichero `evaluation_comparison.json` con la comparacion frente al modelo por defecto anterior (`lm3_landmark_detector__yolo26x_pose_640`), pero no se incluyen las cifras en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repositorio ocupa 0,8 GB e incluye los pesos en cuatro formatos, pero no se detalla el tamano del checkpoint individual ni el consumo de memoria en ejecucion.
-- GPU recomendadas: no disponible. Al ser un YOLO26x-pose a 640 px, es esperable que funcione en GPU de consumo, pero no se confirma en la informacion disponible.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El tamano del repo es de 2,8 GB, lo que incluye todos los formatos exportados, no solo un conjunto de pesos.
+- GPU recomendadas: no disponible. El modelo base es un YOLO26x-pose de Ultralytics, pero no se especifican requisitos de GPU en la model card.
 - Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
-- Opciones de despliegue: Ultralytics (PyTorch), onnxruntime (runtime por defecto de LM3), libtorch (TorchScript) y OpenVINO para CPU/iGPU Intel. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput estimados: no disponibles.
+- Opciones de despliegue: ONNX Runtime (runtime por defecto de LM3), Core ML en macOS (GPU de Apple, fp32), TorchScript/libtorch, OpenVINO para CPU/iGPU Intel y PyTorch mediante Ultralytics.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Keypoints | Entrada | Formatos | Licencia | Estado |
-|---|---|---|---|---|---|---|
-| lm3_landmark_detector__yolo26x_pose_640_canonical | YOLO26x pose end-to-end | 31 | 640 px, recorte con borde 10 % | PyTorch, ONNX, TorchScript, OpenVINO | AGPL-3.0 | Modelo por defecto de LM3, version 3.0.0 |
-| lm3_landmark_detector__yolo26x_pose_640 | YOLO26x pose | 31 | 640 px, mismo esquema | no disponible en la informacion | AGPL-3.0 | Version anterior, sustituida por la canonical |
-| Otros modelos de la familia leafmachine3 en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible | Listados bajo el tag `leafmachine3` |
+| Modelo | Arquitectura | Keypoints | Formatos | Licencia | Estado |
+|---|---|---|---|---|---|
+| lm3_landmark_detector__yolo26x_pose_640_canonical | YOLO26x pose end-to-end | 31 (`mid15_pet5`) | PyTorch, ONNX, TorchScript, OpenVINO, Core ML | AGPL-3.0 | Modelo por defecto de LM3 3.0.0 |
+| lm3_landmark_detector__yolo26x_pose_640 | YOLO26x pose end-to-end | 31 (`mid15_pet5`) | no disponible en la informacion | AGPL-3.0 | Sustituido por la version canonical |
+| Otros modelos de keypoint detection de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion con alternativas externas a LeafMachine3 no esta disponible en la informacion proporcionada.
+La unica comparacion documentada es con el modelo anterior del mismo autor, que comparte entrada, salida y orden de keypoints y queda reemplazado por esta version entrenada con etiquetas corregidas.
 
 ## Limitaciones y advertencias
 
-- El modelo solo acepta recortes con el borde blanco del 10 % por lado; los recortes sin ese margen no estan soportados y deben preprocesarse igual que en entrenamiento.
-- Esta disenado exclusivamente para hojas individuales recortadas de pliegos de herbario; no se ha validado en otros dominios visuales ni en escenas con multiples hojas.
-- La salida se limita a una unica instancia `leaf` por imagen, por lo que no gestiona composiciones con varias hojas en el mismo recorte.
-- Los 234 puntos o pares no orientables se marcaron como no etiquetados, de modo que el modelo puede mostrar menor fiabilidad en configuraciones anatomicas ambiguas.
-- No se han publicado resultados de benchmarks en la informacion disponible, por lo que el rendimiento cuantitativo frente a alternativas no puede verificarse.
-- La licencia AGPL-3.0 impone obligaciones de copyleft en red para servicios que expongan el modelo modificado; para uso comercial propietario es necesario revisar el cumplimiento o contactar con el autor.
-- Riesgo de alucinacion de keypoints: como todo detector de pose, puede predecir puntos con confianza alta en zonas anatomicas mal definidas; se recomienda umbral de confianza y revision humana en aplicaciones criticas.
-- Los sesgos del modelo dependen de la distribucion del dataset `LM3_Landmarks_Pose_it2` (15.178 recortes de 23 proyectos Labelbox), no distribuido publicamente, lo que limita la reproducibilidad del entrenamiento.
-- No se dispone de informacion sobre latencia, consumo de memoria ni throughput, lo que impide dimensionar infraestructura a partir de los datos publicados.
+- Dominio muy restringido: solo recortes de hoja individual procedentes de pliegos de herbario; no esta pensado para imagenes generales ni para hojas en contexto natural sin recorte previo.
+- Requiere el padding blanco del 10% por lado antes del letterbox a 640; los recortes sin padding no estan soportados y produciran resultados incorrectos.
+- Las imagenes y etiquetas del dataset no se distribuyen, lo que limita la reproducibilidad del entrenamiento.
+- 234 puntos o pares quedaron marcados como no etiquetados por no ser orientables, y 39 recortes se descartaron; puede haber casos ambiguos en produccion con el mismo problema.
+- Riesgo de sesgo hacia la composicion del dataset `LM3_Landmarks_Pose_it2` (23 proyectos de Labelbox), sin informacion sobre diversidad taxonomica o geografica.
+- Riesgo de alucinacion de keypoints en hojas danadas, incompletas u ocluidas; las confianzas por punto deben usarse para filtrar.
+- Licencia AGPL-3.0: impone obligaciones de copyleft para uso en red y distribucion; revisar compatibilidad antes de uso comercial propietario. Los pesos base de Ultralytics tambien son AGPL-3.0.
+- No disponible informacion sobre latencia, throughput ni requisitos minimos de hardware, lo que dificulta el dimensionamiento en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/phyloforfun/lm3_landmark_detector__yolo26x_pose_640_canonical
 - Modelo anterior sustituido: https://huggingface.co/phyloforfun/lm3_landmark_detector__yolo26x_pose_640
-- Modelos con tag `leafmachine3` en Hugging Face: https://huggingface.co/models?other=leafmachine3
-- Repositorio de Ultralytics (pesos base `yolo26x-pose.pt`): no disponible en la informacion proporcionada
-- Paper o blog tecnico de LeafMachine3: no disponible en la informacion proporcionada
+- Ultralytics (framework y pesos base YOLO26x-pose): https://github.com/ultralytics/ultralytics
+- No se han proporcionado otros enlaces (papers, blogs, demos) en la informacion disponible.

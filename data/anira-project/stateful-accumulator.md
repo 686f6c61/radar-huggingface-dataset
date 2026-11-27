@@ -2,87 +2,86 @@
 
 ## Resumen
 
-El modelo `stateful-accumulator` del proyecto anira es un modelo de prueba mínimo con estado explícito, diseñado para validar el soporte de pares de entrada/salida de estado en el framework de inferencia de audio anira. No es un modelo de lenguaje ni un modelo generativo: se trata de una red acumuladora con estado que se exporta a múltiples runtimes de inferencia (ONNX Runtime, LiteRT, LibTorch, ExecuTorch y Core ML) y que sirve como referencia para comprobar que todos los backends producen resultados coherentes cuando se realimenta el estado entre llamadas consecutivas.
+Stateful accumulator network es un modelo de prueba mínimo publicado por el proyecto anira, una iniciativa centrada en la inferencia de modelos de audio en tiempo real. No es un modelo de lenguaje ni un modelo generativo: es una red neuronal diminuta con estado explícito de entrada y salida, diseñada para validar el pipeline de exportación y ejecución multiplataforma de anira (LibTorch, ONNX Runtime, LiteRT, ExecuTorch y Core ML nativo). Su función es servir como referencia canónica para verificar que todos los backends producen resultados equivalentes al alimentar el estado de forma recurrente entre llamadas.
 
-Su relevancia es fundamentalmente de ingeniería: permite verificar la corrección de pipelines de exportación y de ejecución en distintos motores (CPU, Core ML en Apple, Vulkan en GPU) con desviaciones máximas del orden de 1,5e-07 a 1,8e-07 respecto a ONNX Runtime. El repositorio es extremadamente pequeño (0,0 GB) y contiene únicamente los pesos exportados, los scripts de exportación y la licencia.
+El modelo existe en dos variantes, mono y estéreo, y cada una se distribuye en seis formatos distintos (ONNX, TFLite, LibTorch, ExecuTorch para CPU, ExecuTorch para Core ML, ExecuTorch para Vulkan y MLPackage nativo de Core ML). Los ficheros pesan entre 1.470 bytes y 14.419 bytes, lo que da una idea de su escala: no contiene parámetros entrenados en el sentido habitual, sino una operación de acumulación con estado persistente.
 
-No se dispone de información sobre arquitectura de red neuronal concreta, número de parámetros, longitud de contexto ni idiomas soportados, ya que la model card no los documenta y el tamaño de los ficheros (1.470 bytes para ONNX) indica un grafo de cómputo trivial orientado a pruebas de integración, no a inferencia de producción.
+Su relevancia es instrumental. Para desarrolladores que integran modelos de audio en aplicaciones de tiempo real (plug-ins de audio, procesamiento de señal en el dispositivo), este repositorio documenta el contrato exacto de entrada/salida con estado y proporciona un banco de pruebas reproducible para comparar precisión entre runtimes. La licencia Apache-2.0 permite reutilizarlo sin restricciones.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (red acumuladora con estado explícito; grafo mínimo de prueba) |
-| Parametros totales | No disponible (ficheros de 1.470 a 14.419 bytes según formato) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (eje temporal dinámico en ONNX; sin contexto de lenguaje) |
-| Tipos de cuantizacion | No disponible (exportaciones en float32 para Core ML; sin cuantización documentada) |
-| Idiomas soportados | No disponible (no es un modelo de lenguaje) |
+| Arquitectura | Red con estado explícito (acumulador); no es un transformer ni un modelo de lenguaje |
+| Parámetros totales | No disponible (modelo de prueba mínimo; el fichero ONNX más pequeño pesa 1.470 bytes) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica; eje temporal dinámico en ONNX, fijado por la descripción del modelo en anira |
+| Tipos de cuantización | No disponible; los artefactos se distribuyen en float32 según los chequeos de Core ML |
+| Idiomas soportados | No aplica (modelo de audio/señal, no lingüístico) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX, TFLite (LiteRT), PyTorch (.pt LibTorch), ExecuTorch (.pte CPU/Core ML/Vulkan), Core ML (.mlpackage) |
+| Formato de pesos | ONNX, TFLite (LiteRT), LibTorch (.pt), ExecuTorch (.pte: CPU, Core ML, Vulkan), Core ML MLPackage |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como una "minimal stateful test model" cuyo estado se expone como entrada y salida explícitas, con variantes mono y estéreo. Esto implica una arquitectura recurrente o con memoria interna que se realimenta entre llamadas: en cada invocación se pasa el estado previo como tensor de entrada y se recibe el estado actualizado como tensor de salida, lo que permite streaming de audio por bloques. No se documenta el tipo de capa (LSTM, GRU, acumulador puro), el número de capas, las dimensiones ocultas ni el proceso de entrenamiento.
+La arquitectura es un acumulador con estado: en cada llamada recibe una entrada y un estado previo, y devuelve una salida junto con el estado actualizado, de modo que el consumidor debe realimentar el estado en la llamada siguiente. Esta estructura replica el patrón de los modelos de audio con estado recurrente (por ejemplo, LSTMs para procesamiento de guitarra, mencionadas en los scripts de exportación como `--guitar-lstm`), pero sin la complejidad de una red entrenada: es una implementación mínima pensada para validar el contrato de estado.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF/DPO). El modelo se distribuye como artefacto de prueba dentro del repositorio `anira-project/example-models` (commit `d1bc5cf`, directorio `StatefulAccumulatorNetwork/models/`), y su función es servir de referencia para validar exportaciones: cada exportación se compara contra ONNX Runtime durante ocho llamadas consecutivas con entrada aleatoria y estado realimentado, midiendo la desviación relativa al pico de salida.
-
-La innovación técnica destacable no está en el modelo en sí, sino en la infraestructura de verificación: el script `tools/check_streaming.py` ejecuta doce llamadas consecutivas sobre todos los formatos y comprueba que coinciden; las desviaciones documentadas son 1,5e-07 y 1,8e-07 para ExecuTorch Core ML y Core ML nativo, mientras que la variante Vulkan se exporta pero no se ejecuta en el entorno de validación por falta de runtime Vulkan.
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF/DPO, porque el modelo no se entrena para una tarea de aprendizaje: es un artefacto de prueba. La innovación técnica relevante no está en el modelo sino en el pipeline de exportación: conversión de ONNX a PyTorch mediante `onnxsim` (formas estáticas) y `onnx2torch` con conversores trazables, seguida de exportación a LiteRT, ExecuTorch (CPU, Core ML y Vulkan) y Core ML nativo, con verificación de equivalencia numérica contra ONNX Runtime sobre ocho llamadas consecutivas con realimentación de estado y desviación relativa al pico de salida.
 
 ## Capacidades
 
-- Acumulación de estado entre llamadas consecutivas con estado explícito de entrada y salida.
-- Procesamiento de señal mono y estéreo (dos variantes por formato).
-- Streaming por bloques con realimentación de estado, adecuado para audio en tiempo real.
-- Ejecución multiplataforma: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch (XNNPACK/portable en CPU, Core ML en Apple, Vulkan en GPU) y Core ML nativo (macOS 13, iOS 16).
-- Verificación de equivalencia numérica entre backends (desviación máxima documentada de 1,5e-07 a 1,8e-07).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo de lenguaje.
+- Acumulación con estado explícito: entrada y salida de estado en cada llamada, en variantes mono y estéreo.
+- Ejecución multiplataforma verificada: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch (XNNPACK o kernels portables en CPU, Core ML en Apple, Vulkan en GPU) y Core ML MLPackage nativo.
+- Streaming recurrente: el estado se realimenta entre llamadas consecutivas, lo que permite procesar señales por bloques sin perder continuidad.
+- Verificación de equivalencia entre backends: desviación máxima frente a ONNX Runtime de 1,5e-07 y 1,8e-07 en ExecuTorch Core ML y Core ML nativo.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües; no es un modelo de lenguaje.
+- No dispone de modo thinking, visión ni audio generativo.
 
 ## Casos de uso
 
-- Validación de pipelines de exportación: usar el modelo como caso de prueba para comprobar que un nuevo exportador (por ejemplo, a un runtime emergente) produce salidas equivalentes a ONNX Runtime dentro de la tolerancia esperada.
-- Test de integración de motores de inferencia: verificar que un backend (Core ML, Vulkan, XNNPACK) maneja correctamente tensores de estado de entrada y salida en llamadas sucesivas, detectando regresiones en la gestión de memoria o en el orden de los tensores.
-- Referencia para streaming de audio: servir como ejemplo mínimo de cómo estructurar un modelo con estado realimentado para procesamiento por bloques en aplicaciones de audio en tiempo real.
-- Desarrollo del framework anira: el modelo acompaña a las descripciones de modelo en `anira foundation models` (`models/stateful-accumulator`) y se usa para probar la capa de abstracción de modelos del framework.
-- Pruebas de paridad numérica entre plataformas: comparar la salida de la misma red en CPU, GPU (Vulkan) y Neural Engine (Core ML) para cuantificar diferencias de precisión antes de desplegar modelos reales.
-- Formación y documentación: ejemplo didáctico de exportación multi-formato (ONNX a TFLite, LibTorch, ExecuTorch y Core ML) con scripts reproducibles (`export/export_litert.py`, `export/export_executorch.py`, `export/export_coreml.py`, `export/export_libtorch.py`).
+- Validación de pipelines de exportación: usar el modelo como referencia para comprobar que una nueva versión del exportador a TFLite, ExecuTorch o Core ML produce resultados numéricamente equivalentes a ONNX Runtime antes de aplicarlo a modelos reales.
+- Pruebas de integración de runtimes de inferencia: verificar que un runtime (ONNX Runtime, LiteRT, ExecuTorch) gestiona correctamente tensores de estado de entrada y salida en llamadas sucesivas, con formas mono y estéreo.
+- Desarrollo de plug-ins de audio en tiempo real: servir de plantilla para implementar el contrato de estado recurrente que necesitan los modelos de procesamiento de audio por bloques (por ejemplo, emulación de amplificadores o efectos con LSTM).
+- CI/CD de motores de inferencia: incluir el modelo en la batería de tests automatizados de anira foundation models (`tools/check_streaming.py`) para detectar regresiones numéricas entre versiones de los exportadores.
+- Benchmark de precisión entre backends: comparar la desviación de cada backend (Core ML, Vulkan, CPU) frente a la referencia ONNX Runtime en doce llamadas consecutivas con estado realimentado.
+- Docencia y ejemplos mínimos: ilustrar el patrón de modelos con estado explícito en frameworks móviles (Core ML, ExecuTorch) con un artefacto de tamaño despreciable que cabe en cualquier dispositivo.
+- Verificación de despliegue en dispositivos Apple y Android: probar la ruta Core ML (macOS 13, iOS 16) y la ruta Vulkan en GPUs móviles antes de portar modelos de audio de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta desviaciones numéricas respecto a ONNX Runtime:
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta desviaciones numéricas frente a ONNX Runtime:
 
 | Formato | Ficheros | Desviación máxima |
 |---|---|---|
 | ExecuTorch, Core ML (Apple, float32) | `executorch/*_coreml.pte` | 1,5e-07; 1,8e-07 |
-| ExecuTorch, Vulkan (GPU) | `executorch/*_vulkan.pte` | Exportado; no ejecutado (sin runtime Vulkan) |
-| Core ML ML program (motor nativo de anira, v3; macOS 13, iOS 16) | `coreml/*.mlpackage` | 1,5e-07; 1,8e-07 |
+| ExecuTorch, Vulkan (GPUs) | `executorch/*_vulkan.pte` | Exportado; no ejecutado (sin runtime Vulkan) |
+| Core ML ML program (motor nativo de anira, previsto para v3; macOS 13, iOS 16) | `coreml/*.mlpackage` | 1,5e-07; 1,8e-07 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: despreciable; los ficheros de pesos ocupan entre 1.470 bytes (ONNX) y 14.419 bytes (ExecuTorch Core ML). Cabe en cualquier dispositivo con unos pocos kilobytes de memoria libre.
-- GPU recomendadas: no aplica; cualquier GPU compatible con Vulkan puede ejecutar la variante `*_vulkan.pte`, y cualquier chip Apple con Neural Engine puede ejecutar la variante Core ML.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso en microcontroladores y dispositivos móviles.
-- Opciones de despliegue: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch 1.3.1 (CPU con XNNPACK o kernels portables, Core ML, Vulkan) y Core ML nativo.
-- Latencia y throughput: no disponibles; no se documentan mediciones de rendimiento.
+- VRAM estimada: despreciable; los artefactos pesan entre 1.470 bytes (ONNX) y 14.419 bytes (ExecuTorch Core ML).
+- GPU recomendadas: no aplica; cualquier GPU compatible con Vulkan puede ejecutar la variante `*_vulkan.pte`, y cualquier Mac o dispositivo Apple con macOS 13 o iOS 16 puede ejecutar Core ML.
+- Cabe en cualquier GPU de consumo y en dispositivos móviles; no requiere acelerador dedicado.
+- Opciones de despliegue: ONNX Runtime, LiteRT/TensorFlow Lite, LibTorch, ExecuTorch 1.3.1 (CPU con XNNPACK o kernels portables, Core ML, Vulkan) y Core ML nativo (previsto en anira v3).
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables en la información proporcionada; se trata de un artefacto de prueba específico del framework anira, sin equivalentes públicos documentados en la model card.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (modelos de prueba con estado explícito para validación de exportadores). Los modelos de audio con estado recurrente a los que alude el pipeline (LSTM para guitarra) no se distribuyen en este repositorio ni se detallan en la model card.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de producción: es un modelo de prueba (`test-model`) pensado para validar integraciones, no para resolver tareas reales.
-- No es un modelo de lenguaje: no genera texto, no razona, no responde preguntas ni procesa instrucciones.
-- No se documentan sesgos, pero tampoco se documenta el proceso de entrenamiento, por lo que no puede evaluarse su comportamiento fuera del propósito de prueba.
-- Riesgo de alucinación: no aplica en el sentido habitual, pero cualquier uso fuera de la verificación de estado producirá salidas sin significado útil.
-- La variante Vulkan se exporta pero no se ha ejecutado en el entorno de validación del autor (sin runtime Vulkan), por lo que su corrección no está verificada empíricamente en la model card.
-- La variante Core ML nativa depende del motor de anira v3 y requiere macOS 13 o iOS 16 como mínimo.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero al ser un modelo de prueba no aporta valor funcional en producción.
-- Verificar el SHA256 de cada fichero al descargar y fijar una revisión concreta del repositorio, tal como recomienda el autor.
+- No es un modelo funcional para producción: es un artefacto de prueba sin capacidad predictiva útil fuera de la validación de pipelines.
+- No dispone de parámetros entrenados para una tarea de aprendizaje; no debe evaluarse con métricas de calidad de modelo (MMLU, HumanEval, etc.).
+- La variante Vulkan se exportó pero no se ejecutó en el entorno de verificación (sin runtime Vulkan), por lo que su equivalencia numérica no está confirmada.
+- El motor Core ML nativo de anira llegará con la versión v3; la ruta MLPackage requiere macOS 13 o iOS 16.
+- El eje temporal es dinámico en ONNX; para exportar a otros formatos es necesario proporcionar la descripción del modelo en anira foundation models.
+- No hay información sobre sesgos, alucinación ni limitaciones idiomáticas porque el modelo no procesa lenguaje.
+- Licencia Apache-2.0: permite uso comercial y modificación, pero se recomienda fijar una revisión concreta y verificar el SHA256 de cada fichero al descargarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/anira-project/stateful-accumulator
-- Repositorio de modelos de ejemplo: https://github.com/anira-project/example-models (commit `d1bc5cf`, directorio `StatefulAccumulatorNetwork/models/`)
+- Repositorio de modelos de ejemplo: https://github.com/anira-project/example-models (commit `d1bc5cf`, ruta `StatefulAccumulatorNetwork/models/`)
+- Script de conversión ONNX a PyTorch: https://github.com/anira-project/models/blob/main/tools/export/onnx_to_torch.py
+- Script de verificación de exportaciones: https://github.com/anira-project/models/blob/main/tools/export/check.py
 - Descarga con revisión fijada: https://huggingface.co/anira-project/stateful-accumulator/resolve/<revision>/onnx/stateful_accumulator_network_mono.onnx
-- Licencia: fichero `LICENSE` en el repositorio (Apache-2.0, copiado del repositorio fuente)

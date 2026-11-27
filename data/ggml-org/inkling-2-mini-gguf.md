@@ -2,94 +2,90 @@
 
 ## Resumen
 
-Inkling 2 Mini es un modelo multimodal de tipo imagen-texto-a-texto desarrollado originalmente por Thinking Machines y distribuido en formato GGUF por el repositorio `ggml-org`. Se trata de un modelo de mezcla de expertos (MoE) con 26.070 millones de parámetros totales, diseñado para entrada de imagen y texto, y pensado para ejecutarse localmente mediante `llama.cpp` y la aplicación `llama.app`. Su relevancia actual radica en que combina una arquitectura MoE con bucle de capas (looped MoE) y capacidades de visión dentro de un tamaño manejable para hardware de consumo cuando se cuantiza a 4 bits.
+Inkling 2 Mini es un modelo multimodal de tipo image-text-to-text desarrollado por Thinking Machines, distribuido en formato GGUF por el repositorio ggml-org. Se trata de un modelo de mezcla de expertos (MoE) con 26.070 millones de parametros totales y 128 expertos, de los cuales 8 se activan por token. Su caracteristica arquitectonica mas distintiva es el uso de un nucleo recurrente (loop core): las capas 6 a 17 se ejecutan tres veces por token, de modo que cada token atraviesa 48 evaluaciones de capa utilizando los pesos de solo 24 capas.
 
-La innovación principal es su estructura de "loop core": de las 24 capas del modelo, las capas 6 a 17 se ejecutan 3 veces por token, de modo que cada token atraviesa 48 evaluaciones de capa utilizando los pesos de solo 24. Esto permite aumentar la profundidad efectiva del razonamiento sin incrementar el número de parámetros. El checkpoint original almacena los expertos enrutados en NVFP4 (capas 0-19) y MXFP8 (capas 20-23), y las versiones GGUF ofrecen cuantizaciones desde BF16 hasta IQ4_NL calibrada con imatrix.
+El modelo acepta entrada de imagen y texto, lo que lo situa en la categoria de modelos de vision-lenguaje con capacidad conversacional. La version publicada por ggml-org incluye el codificador de vision (mmproj) y varias cuantizaciones optimizadas para inferencia local con llama.cpp y llama.app, lo que facilita su despliegue fuera de infraestructura de datacenter.
 
-El modelo incluye un codificador de visión (mmproj) y un parámetro `reasoning_effort` que permite ajustar la profundidad de razonamiento entre `none` y `max`. El repositorio acumula cerca de 500.000 descargas, lo que indica una adopción considerable en la comunidad de inferencia local.
+Su relevancia actual radica en la combinacion de un diseno MoE recurrente con cuantizaciones de 4 bits calibradas (NVFP4 e IQ4_NL) que reducen el peso a 17,6 GB manteniendo una divergencia KL muy baja frente al BF16, lo que permite ejecutar un modelo de 26.000 millones de parametros con entrada de imagen en hardware de gama alta de consumo o en una unica GPU profesional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con bucle de capas (looped mixture-of-experts) |
-| Parametros totales | 26.070.385.152 (26,07 mil millones) |
-| Parametros activos | 8 expertos activos por token de 128 totales (número de parámetros activos no disponible) |
+| Arquitectura | Transformer MoE con nucleo recurrente (24 capas, capas 6-17 ejecutadas 3 veces por token; 48 evaluaciones de capa por token) y entrada de imagen |
+| Parametros totales | 26.070.385.152 |
+| Parametros activos | 8 expertos de 128 por token (parametros activos totales no disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, IQ4_NL (calibrada con imatrix); mmproj en BF16 y Q8_0 |
+| Tipos de cuantizacion | BF16, Q8_0, NVFP4, IQ4_NL (con imatrix); mmproj en BF16 y Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-Inkling 2 Mini es un modelo de mezcla de expertos con 128 expertos enrutados de los cuales se activan 8 por token. Consta de 24 capas, pero las capas 6 a 17 forman un "loop core" que se ejecuta 3 veces por token, lo que resulta en 48 evaluaciones de capa efectivas con los pesos de 24. Cada pasada del bucle mantiene su propia caché KV y de convolución, un detalle relevante para la gestión de memoria durante la inferencia. El checkpoint original almacena los expertos enrutados de las capas 0-19 en NVFP4 y los de las capas 20-23 en MXFP8; las versiones BF16 de los GGUF hacen upcast de esos expertos a BF16.
+Inkling 2 Mini emplea una arquitectura de mezcla de expertos con 128 expertos enrutados y 8 activos por token, organizada en 24 capas. Las capas 6 a 17 constituyen un nucleo recurrente que se ejecuta tres veces por token, de forma que cada token pasa por 48 evaluaciones de capa reutilizando los pesos de 24 capas. Cada pasada mantiene su propia cache KV y de convolucion, lo que incrementa el coste de memoria de estado respecto a un transformer convencional de profundidad equivalente.
 
-La cuantización IQ4_NL de este repositorio cuantiza los expertos NVFP4 (`ffn_gate_up_exps` y `ffn_down_exps` de las capas 0-19) a IQ4_NL y mantiene el resto de matrices en Q8_0, con los pesos del controlador del bucle en F32. La calibración imatrix se calculó a partir del BF16 sobre los datos de calibración v6 de bartowski, con las conversaciones renderizadas mediante la plantilla de chat del modelo. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
+El checkpoint original almacena los expertos enrutados de las capas 0-19 en NVFP4 y los de las capas 20-23 en MXFP8. La publicacion GGUF de ggml-org conserva esos expertos NVFP4 con sus escalas por experto y almacena el resto de matrices en Q8_0; la variante IQ4_NL cuantiza esos mismos expertos a 4 bits con calibracion mediante imatrix, calculada a partir del BF16 sobre los datos de calibracion v6 de bartowski con las conversaciones renderizadas a traves de la plantilla de chat del modelo. Los pesos del controlador del bucle se mantienen en F32. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Entrada de imagen (image-text-to-text) mediante codificador de visión mmproj.
-- Razonamiento con profundidad ajustable mediante `reasoning_effort`: `none`, `minimal`, `low`, `medium`, `high` (por defecto), `xhigh`, `max`, o un valor numérico entre 0.0 y 0.99.
-- Arquitectura MoE con 8 expertos activos por token, orientada a eficiencia computacional.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- Soporte de ejecución local mediante `llama.cpp` y `llama serve`.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente, aunque el ajuste de `reasoning_effort` sugiere capacidad de razonamiento extendido.
+- Generacion de texto conversacional multi-turno.
+- Comprension de imagenes combinada con texto (pipeline image-text-to-text), con codificador de vision incluido en los ficheros mmproj.
+- Razonamiento con profundidad configurable mediante el parametro `reasoning_effort`: `none`, `minimal`, `low`, `medium`, `high` (por defecto), `xhigh`, `max`, o un valor numerico entre 0.0 y 0.99.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y despliegue via llama.cpp y llama.app.
 
 ## Casos de uso
 
-- Asistente conversacional local con entrada de imagen: el modelo puede recibir una imagen junto con una pregunta y generar una respuesta textual, adecuado para aplicaciones de escritorio o entornos sin conexión gracias a su despliegue vía `llama.cpp`.
-- Análisis de documentos y capturas: al aceptar image-text-to-text, puede procesar capturas de pantalla, diagramas o documentos escaneados y responder preguntas sobre su contenido.
-- Razonamiento ajustable según la tarea: con `reasoning_effort` se puede configurar en `none` o `minimal` para respuestas rápidas de baja latencia, o en `high`/`max` para problemas que requieren cadenas de razonamiento más largas.
-- Despliegue en hardware de consumo: la cuantización IQ4_NL de 17,6 GB permite ejecutar el modelo en GPUs con 24 GB de VRAM o en configuraciones con memoria unificada, algo inviable con el BF16 de 52,2 GB.
-- Prototipado de aplicaciones multimodales: el tag `endpoints_compatible` y el formato GGUF facilitan la integración en servicios de inferencia compatibles con la API de endpoints.
-- Investigación sobre arquitecturas MoE con bucle: el modelo sirve como caso de estudio para evaluar el impacto del "loop core" en calidad frente a coste computacional, comparando las distintas cuantizaciones y niveles de `reasoning_effort`.
+- Asistente conversacional multimodal local: el modelo puede mantener dialogos multi-turno con imagenes intercaladas, adecuado para prototipos de asistencia visual que deben ejecutarse en hardware propio sin depender de APIs externas.
+- Analisis de documentos con capturas o diagramas: al aceptar imagen y texto, permite extraer y comentar informacion de graficos, tablas rasterizadas o esquemas tecnicos junto a preguntas en lenguaje natural.
+- Control de profundidad de razonamiento por tarea: el parametro `reasoning_effort` permite fijar `low` o `minimal` para tareas de extraccion rapida y `high` o `max` para problemas que requieren cadenas de razonamiento largas, ajustando latencia y coste computacional.
+- Despliegue en estaciones de trabajo con una sola GPU: la cuantizacion NVFP4 o IQ4_NL (17,6 GB) hace viable servir el modelo en GPUs de 24 GB o superiores, util para entornos de desarrollo y evaluacion interna.
+- Evaluacion comparativa de cuantizaciones: las metricas de divergencia KL publicadas (Q8_0 0.0030, NVFP4 0.0029, IQ4_NL 0.0095 sobre wikitext-2) permiten seleccionar el equilibrio entre tamano y fidelidad para un pipeline concreto.
+- Generacion de descripciones y respuestas sobre imagenes en aplicaciones de accesibilidad: el modelo puede describir contenido visual y responder preguntas de seguimiento en una misma conversacion.
+- Integracion en herramientas basadas en llama.cpp: al estar en formato GGUF con mmproj separado, se integra en aplicaciones de escritorio y servidores locales que ya usan el ecosistema ggml.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento proporcionados son métricas de fidelidad de cuantización:
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de calidad proporcionada es la divergencia KL frente al BF16 sobre wikitext-2 (40 x 512 tokens):
 
-| Cuantizacion | Tamano | Divergencia KL vs BF16 (wikitext-2, 40 x 512 tokens) | Coincidencia top token |
-|---|---|---|---|
-| Q8_0 | 27,8 GB | 0,0030 | 97,6% |
-| IQ4_NL | 17,6 GB | 0,0095 | 95,5% |
-| BF16 | 52,2 GB | referencia | referencia |
+| Cuantizacion | KL divergence | Coincidencia de token top-1 |
+|---|---|---|
+| Q8_0 | 0.0030 | 97,6 % |
+| NVFP4 | 0.0029 | 97,6 % |
+| IQ4_NL | 0.0095 | 95,5 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: BF16 requiere aproximadamente 52,2 GB; Q8_0 unos 27,8 GB; IQ4_NL unos 17,6 GB. Añadir el codificador de visión mmproj (642 MB en BF16 o 346 MB en Q8_0).
-- GPU recomendadas: para BF16, GPUs de 80 GB como A100 o H100; para Q8_0, GPUs de 32-40 GB como A100 40 GB; para IQ4_NL, GPUs de 24 GB como RTX 4090 o RTX 3090.
-- Cabe en GPU de consumo: sí, con la cuantización IQ4_NL en GPUs de 24 GB de VRAM (RTX 4090, RTX 3090) o en sistemas con memoria unificada suficiente.
-- Opciones de despliegue: `llama.cpp` mediante `llama serve -hf ggml-org/Inkling-2-Mini-GGUF:IQ4_NL`, y `llama.app`. Otros motores compatibles con GGUF no están confirmados en la información disponible.
+- Peso en disco de las cuantizaciones: BF16 52,2 GB, Q8_0 27,8 GB, NVFP4 17,6 GB, IQ4_NL 17,6 GB; mmproj de vision 642 MB (BF16) o 346 MB (Q8_0).
+- VRAM estimada para inferencia: al menos el tamano de los pesos mas la cache KV y de convolucion de las tres pasadas del nucleo recurrente; el valor exacto de la cache no esta disponible en la informacion proporcionada.
+- NVFP4 e IQ4_NL (17,6 GB) caben en GPUs de consumo de 24 GB (por ejemplo, RTX 4090) y en GPUs profesionales tipo A100 o H100 con amplio margen.
+- Q8_0 (27,8 GB) requiere GPUs de 32 GB o mas, o bien reparto entre varias GPU.
+- BF16 (52,2 GB) requiere una GPU de 80 GB (A100/H100) o configuracion multi-GPU.
+- Opciones de despliegue: llama.cpp y llama.app (`llama serve -hf ggml-org/Inkling-2-Mini-GGUF:NVFP4`); soporte en vLLM, TGI u Ollama no disponible en la informacion proporcionada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Los datos disponibles no permiten establecer una comparativa fiable con alternativas de la misma categoría (MoE multimodal de ~26 mil millones de parámetros) en términos de parámetros, contexto, rendimiento o licencia.
-
-| Modelo | Parametros totales | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Inkling 2 Mini | 26,07 mil millones | no disponible | no disponible | GGUF / safetensors |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria con datos verificables de parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- La licencia no está disponible en la información proporcionada, por lo que no se puede confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo base `thinkingmachines/Inkling-2-Mini` antes de usarlo en producción.
-- Los idiomas soportados no están documentados; no se puede garantizar un rendimiento adecuado fuera de los idiomas con los que fue entrenado.
-- La longitud de contexto no está especificada, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- El modelo es una cuantización GGUF del checkpoint original; las cuantizaciones IQ4_NL introducen una divergencia KL de 0,0095 y una coincidencia de top token del 95,5% frente a BF16, lo que implica una pérdida de calidad medible.
-- Riesgo de alucinación: no cuantificado en la información disponible, pero inherente a los modelos generativos.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- La arquitectura de bucle con cachés KV y de convolución independientes por pasada puede complicar la gestión de memoria en despliegues con contexto largo.
-- El uso de `reasoning_effort` alto o máximo incrementa el coste computacional por token, ya que implica más pasadas de razonamiento.
+- Licencia no disponible: no puede confirmarse el uso comercial ni las condiciones de redistribucion; debe consultarse el modelo base thinkingmachines/Inkling-2-Mini antes de cualquier despliegue en produccion.
+- Idiomas soportados no documentados: el rendimiento fuera del ingles (u otros idiomas no confirmados) es incierto.
+- Longitud de contexto no disponible: no es posible planificar casos de uso con documentos largos sin verificacion previa.
+- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad factua.
+- La cuantizacion IQ4_NL presenta mayor divergencia (KL 0.0095, 95,5 % de coincidencia top-1) que NVFP4 y Q8_0; en tareas sensibles a la precision conviene usar NVFP4 o Q8_0.
+- El nucleo recurrente mantiene caches KV y de convolucion independientes por cada una de las tres pasadas, lo que aumenta el consumo de memoria de estado frente a un transformer de 24 capas.
+- El codificador de vision se distribuye como fichero mmproj separado; un despliegue sin el desactiva la capacidad multimodal.
+- No hay informacion sobre sesgos conocidos ni sobre el proceso de alineacion del modelo base.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Aplicación llama.app: https://llama.app
-- Datos de calibración de bartowski: https://gist.github.com/bartowski1182/e26453c0404e24eb317543ec5360f87a
-- Archivo imatrix: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF/blob/main/imatrix.gguf
+- Fichero imatrix: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF/blob/main/imatrix.gguf
+- Datos de calibracion v6 de bartowski: https://gist.github.com/bartowski1182/e26453c0404e24eb317543ec5360f87a
+- llama.app: https://llama.app

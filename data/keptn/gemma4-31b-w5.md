@@ -2,120 +2,117 @@
 
 ## Resumen
 
-Gemma 4 31B-it · int5 · for radiance (`keptn/gemma4-31b-w5`) es una cuantización de peso int5 del modelo multimodal `google/gemma-4-31B-it` de Google, preparada específicamente para el motor de inferencia radiance sobre GPUs AMD RDNA4. El autor del repositorio es keptn, un tercero que no es Google: lo que se distribuye es un único fichero de 23,36 GiB (`gemma4-31b-w5.rad`) que contiene todas las capas lineales del tronco cuantizadas con GPTQ a int5, más la cabeza auxiliar (assistant head) de Google para decodificación especulativa con 3 tokens de borrador.
+keptn/gemma4-31b-w5 es una cuantizacion int5 (GPTQ) del modelo multimodal google/gemma-4-31B-it, empaquetada en un unico fichero de 23,36 GiB para el motor de inferencia radiance sobre GPUs AMD RDNA4. No es un modelo nuevo: es una distribucion de pesos optimizada para ejecutar Gemma 4 31B en hardware AMD con memoria limitada, manteniendo una fidelidad cercana al original en bf16. El autor, keptn, publica una familia de cuantizaciones para radiance (int8, int5, w4a8) dirigidas al mismo motor.
 
-El problema que resuelve es claro: hacer caber un modelo de ~31 mil millones de parámetros con visión y contexto de 262.144 tokens en tarjetas AMD de 32 GB, algo que en bf16 requeriría más de 60 GiB solo de pesos. La relevancia de esta ficha radica en que es una de las pocas cuantizaciones int5 documentadas con métricas de fidelidad (KL frente al original bf16) y con mediciones de rendimiento reales en Radeon AI PRO R9700, lo que permite evaluar el compromiso entre compresión y calidad con datos, no con promesas.
+La relevancia de esta ficha es doble. Por un lado, documenta una ruta practica para servir un modelo de 31B con vision y contexto de 262.144 tokens en una o varias Radeon AI PRO R9700 de 32 GB. Por otro, el repositorio esta archivado desde el 2026-11-26 y el propio autor recomienda migrar a keptn/gemma4-31b-exl3, con ficheros mas pequenos para la misma calidad y compatibles con radiance 2.3.0 o superior. Cualquier despliegue nuevo deberia partir de esa alternativa.
 
-Arquitecturalmente se trata de un transformer multimodal (texto, imagen y vídeo) con pipeline image-text-to-text, licencia Apache 2.0 y soporte de modo de razonamiento (thinking) activable por petición. Requiere obligatoriamente radiance con el PR #361, todavía sin versión estable publicada.
+La cuantizacion afecta solo a las capas lineales del tronco (int5 con punto cero y una escala f16 por cada 128 pesos); lm_head y la cabeza del asistente van en int8. El modelo conserva las capacidades multimodales del original (texto, imagen y video) y la decodificacion especulativa mediante la cabeza asistente de Google.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (texto, imagen y vídeo) con assistant head para decodificación especulativa (MTP) |
-| Parametros totales | ~31 mil millones (base: google/gemma-4-31B-it) |
-| Parametros activos | no disponible (no se indica si es MoE; todo apunta a modelo denso) |
+| Arquitectura | Transformer multimodal (tronco de Gemma 4 31B con torre de vision), pesos cuantizados int5 GPTQ |
+| Parametros totales | 31B (modelo base google/gemma-4-31B-it) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Tronco: int5 GPTQ (punto cero u8, una escala f16 por 128 pesos); activaciones f16 hasta 64 filas, int8 (una escala por token y 128 valores) por encima; lm_head int8 con escala bf16 por 128 pesos; assistant head y vision tower en bf16 |
-| Idiomas soportados | no disponible (hereda los de google/gemma-4-31B-it; la ficha no los enumera) |
+| Tipos de cuantizacion | int5 GPTQ en capas lineales del tronco; activaciones f16 hasta 64 filas y int8 por encima; lm_head int8; cabeza asistente int8 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Fichero propio `.rad` (23,36 GiB) para radiance; cuantización declarada como compressed-tensors; no hay safetensors ni GGUF en este repo |
+| Formato de pesos | `.rad` (formato propietario de radiance), 23,36 GiB; incluye `config.json` |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no es un modelo entrenado desde cero, sino una cuantización post-entrenamiento. El proceso documentado en la model card es el siguiente: se parte del checkpoint bf16 `google/gemma-4-31B-it` (revisión `842da379`), se añade la assistant head oficial de Google `google/gemma-4-31B-it-assistant` (revisión `627c5ec1`) para habilitar decodificación especulativa tipo MTP con 3 tokens de borrador, y después se cuantizan con GPTQ todas las capas lineales del tronco a int5. Las matrices q, k y v comparten una única pasada de GPTQ. No se aplicó SmoothQuant.
+El modelo base es google/gemma-4-31B-it, un transformer multimodal de 31.000 millones de parametros con torre de vision que acepta texto, imagen y video. Esta publicacion no entrena ni ajusta el modelo: aplica cuantizacion GPTQ post-entrenamiento sobre las capas lineales del tronco, con pesos int5, un punto cero y una escala f16 por cada 128 pesos. Las activaciones se mantienen en f16 hasta 64 filas y pasan a int8 (una escala por token y 128 valores) en lotes mayores. El lm_head se cuantiza a int8 con escala bf16 por cada 128 pesos, y la cabeza del asistente tambien lleva su lm_head en int8.
 
-La calibración se realizó con un corpus propio de 110 conversaciones y 165.626 tokens (el mismo conjunto de calibración del fichero W4A8 del mismo autor). El resultado se empaqueta con `rad-convert` en un fichero `.rad` con `quantization_config.quant_method=compressed-tensors`. Sobre el modelo base original de Google no se ofrecen detalles de entrenamiento en esta ficha (tokens, composición del dataset, RLHF/DPO): no disponible.
-
-Un detalle técnico relevante: Gemma 4 tiene 32 cabezas de atención, lo que impide el paralelismo tensorial con 3 GPUs (no divisible); el despliegue soporta 1, 2 o 4 tarjetas.
+La innovacion practica esta en el motor de destino: radiance implementa kernels w5a16 y w5a8i8 propios (via su libreria libquant) para RDNA4, ademas de decodificacion especulativa con la cabeza asistente de Gemma 4 en bf16 y 3 tokens de borrador. El soporte de Gemma 4 en radiance parte del trabajo inicial de sfjes en el PR #75 del proyecto. No se dispone de informacion sobre el dataset de entrenamiento del modelo base ni sobre las fases de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto e instrucciones: hereda las capacidades conversacionales de `gemma-4-31B-it`, con plantilla de chat oficial de Google (temperatura 1.0, top_p 0.95, top_k 64 como valores recomendados).
-- Entrada multimodal: acepta texto, imágenes y vídeo (pipeline image-text-to-text); el vision tower se mantiene en bf16, lo que preserva la calidad multimodal.
-- Modo thinking: razonamiento extendido activable por petición mediante `"chat_template_kwargs": {"enable_thinking": true}`.
-- Decodificación especulativa (MTP): 3 tokens de borrador generados por la assistant head en bf16, con ganancias medibles de throughput.
-- Contexto largo: hasta 262.144 tokens, con configuración de KV cache en fp8.
-- Tool calling y capacidades de agente: no disponible en la información de esta ficha (dependería del modelo base google/gemma-4-31B-it; la model card no lo menciona).
-- Audio: la model card menciona mediciones de "vision or audio encoder", lo que sugiere entrada de audio, aunque solo se publican datos de imágenes y vídeo.
+- Generacion de texto y razonamiento conversacional multi-turno, con modo thinking activable por peticion mediante `chat_template_kwargs: {"enable_thinking": true}`.
+- Entrada de imagen (image-text-to-text) y de video, con torre de vision integrada.
+- Decodificacion especulativa con la cabeza asistente de Google (3 tokens de borrador), que acelera la generacion.
+- Contexto largo de hasta 262.144 tokens, configurable en el motor.
+- Servicio multi-stream: hasta 8 secuencias concurrentes segun configuracion.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentos con visión local: gracias a la entrada de imágenes y a que el vision tower permanece en bf16, es adecuado para extraer información de PDFs escaneados, facturas o formularios (la propia model card valida con DocVQA) sin enviar datos a la nube.
-- Resumen de vídeos largos: acepta vídeo como entrada (validado con MVBench) y su contexto de 262.144 tokens permite procesar transcripciones y fotogramas de material extenso en una sola sesión.
-- Chat privado con contexto largo en estación de trabajo AMD: con una única Radeon AI PRO R9700 de 32 GB cabe el modelo completo con más de 145.000 tokens de KV pool compartido, ideal para entornos con requisitos de confidencialidad.
-- Servicios de inferencia multi-usuario: con 2 o 4 tarjetas y radiance en modo servidor (hasta 8 secuencias simultáneas), sirve como backend de chat para equipos pequeños con throughput agregado de 333-525 tokens/s.
-- Razonamiento con thinking mode para tareas complejas: activando `enable_thinking` por petición, se puede usar para problemas de análisis o planificación que se benefician de cadenas de razonamiento más largas, a cambio de mayor latencia.
-- Comparación de fidelidad de cuantizaciones: la model card incluye métricas KL frente al original bf16, útil como referencia metodológica para equipos que evalúan cuánta calidad se pierde al comprimir a int5 frente a int8 o w4a8.
-- Procesamiento por lotes de prompts largos: el prefill de 4.214 tokens/s con 4 tarjetas permite indexar o resumir grandes volúmenes de texto (corpus internos, documentación técnica) de forma eficiente.
+- Analisis de documentos con imagen: el modelo procesa DocVQA y AI2D con una fidelidad respecto al bf16 de 16/20 respuestas identicas y un KL medio de 0,471, suficiente para extraccion de datos de facturas, formularios o graficos en entornos AMD.
+- Comprension de video: con 4/5 respuestas identicas al original en MVBench (5 clips, 4 fotogramas cada uno), es viable para resumen de clips cortos, moderacion de contenido audiovisual o indexacion de metadatos.
+- Asistente conversacional de contexto largo: con 262.144 tokens y hasta 8 secuencias en 4 tarjetas (2.097.248 tokens de pool KV compartido), permite atender sesiones de atencion al cliente con historiales extensos y documentos adjuntos.
+- Despliegue en infraestructura AMD existente: al ejecutarse en radiance sobre RDNA4, encaja en clusters con Radeon AI PRO R9700 donde no se quiere introducir GPUs NVIDIA; el escalado de 1 a 4 tarjetas multiplica el decode de 70,9 a 201,3 tokens/s.
+- Procesamiento batch de imagenes y texto: con prefill de 1.421 tokens/s en una tarjeta y 4.214 en cuatro, es adecuado para pipelines de clasificacion o descripcion de imagenes a gran escala.
+- Generacion asistida con decodificacion especulativa: los 3 tokens de borrador de la cabeza asistente reducen la latencia en tareas de redaccion interactiva, con un decode de 124,8 tokens/s en dos tarjetas.
+- Prototipado e investigacion multimodal: el formato de 23,36 GiB cabe en una sola GPU de 32 GB, lo que simplifica la experimentacion con modelos de 31B multimodales sin infraestructura distribuida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí ofrece métricas de fidelidad y velocidad propias:
+Calidad frente al original bf16 en las 80 preguntas de MT-Bench (ambos turnos, 42.283 tokens de respuesta, thinking desactivado):
 
-**Fidelidad frente al original bf16** (80 preguntas de MT-Bench, 42.283 tokens de respuesta, KL sobre tokens de respuesta):
-
-| Fichero | KL media | KL percentil 99 | Top token igual | Ratio de perplejidad |
-|---|---|---|---|---|
-| gemma4-31b-w5 (este) | 0,00803 | 0,107 | 97,8 % | ×1,010 |
-| keptn/gemma4-31b-i8g | 0,00236 | 0,0311 | 98,8 % | ×1,004 |
-| keptn/gemma4-31b-w4a8 | 0,0517 | 0,721 | 94,6 % | ×1,056 |
-
-**Velocidad** (Radeon AI PRO R9700 a 215 W, radiance 1.13.0 + rama w5, KV fp8, 3 draft tokens, thinking off, BetterBench 0.6.1, mediana):
-
-| Medición | 1 tarjeta | 2 tarjetas | 4 tarjetas |
+| Metrica | Este fichero (w5) | keptn/gemma4-31b-i8g | keptn/gemma4-31b-a4 v1.0 (w4a8) |
 |---|---|---|---|
-| Decode, un stream | 70,9 tok/s | 124,8 tok/s | 201,3 tok/s |
-| Prefill a 24k tokens | 1.421 tok/s | 2.559 tok/s | 4.214 tok/s |
-| 4 streams, total | 198 tok/s | 333 tok/s | 525 tok/s |
+| KL medio | 0,00803 | 0,00236 | 0,0517 |
+| KL percentil 99 | 0,107 | 0,0311 | 0,721 |
+| Token top identico | 97,8% | 98,8% | 94,6% |
+| Ratio de perplejidad | x1,010 | x1,004 | x1,056 |
 
-**Fidelidad multimodal** (greedy, thinking off, 2 tarjetas): en imágenes (DocVQA y AI2D, 20 casos) coincide la respuesta en 16/20 casos; en vídeo (MVBench, 5 clips de 4 fotogramas) en 4/5 casos.
+Rendimiento en Radeon AI PRO R9700 a 215 W (radiance 1.13.0, KV fp8, 3 tokens de borrador, thinking off; BetterBench 0.6.1, temperatura 0,7, mediana de tokens/s):
+
+| Metrica | 1 tarjeta | 2 tarjetas | 4 tarjetas |
+|---|---|---|---|
+| Decode, un stream | 70,9 | 124,8 | 201,3 |
+| Prefill a 24k tokens | 1.421 | 2.559 | 4.214 |
+| 4 streams, total | 198 | 333 | 525 |
+
+Fidelidad multimodal frente al bf16 original (greedy, thinking off, 2 tarjetas):
+
+| Entrada | Casos | Respuesta identica | KL medio | Token top identico |
+|---|---|---|---|---|
+| Imagenes (DocVQA y AI2D) | 20 | 16/20 | 0,471 | 66/70 |
+| Video (MVBench, 5 clips) | 5 | 4/5 | 0,0272 | 31/32 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero pesa 23,36 GiB; se necesitan tarjetas de 32 GB. Con 1 GPU de 32 GB cabe el modelo más KV cache en fp8 (145.264-209.456 tokens de contexto total según número de secuencias); con 2 GPUs, hasta 524.304-970.480 tokens; con 4, hasta 2.097.248 tokens.
-- GPUs compatibles: AMD RDNA4, probado en Radeon AI PRO R9700 (32 GB) en configuraciones de 1, 2 y 4 tarjetas. No hay soporte documentado para NVIDIA.
-- Consumer GPUs: no disponible; la ficha solo documenta la R9700 (tarjeta profesional). Con 32 GB de VRAM por tarjeta, las consumer de gama alta no cumplen el requisito documentado.
-- Configuraciones válidas: 1, 2 o 4 tarjetas. Tres tarjetas no funcionan porque las 32 cabezas de atención no se reparten en tres.
-- Motor de inferencia: exclusivamente radiance, y no cualquier versión: hay que compilar la rama del PR #361 (aún sin release). El despliegue se hace vía Docker (`docker/build.sh -t gfx1201`) con acceso a `/dev/kfd` y `/dev/dri`, `ROCR_VISIBLE_DEVICES` para seleccionar tarjetas y `--tp 1/2/4` (con `--p2p on` en multi-GPU).
-- Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible; el formato `.rad` propietario de radiance no es compatible con ellos.
-- Rendimiento esperado: 70,9 tok/s de decodificación con una tarjeta (201,3 con cuatro) y prefill de hasta 4.214 tok/s, siempre con decodificación especulativa activada.
+- VRAM: el fichero ocupa 23,36 GiB; se necesita al menos una GPU de 32 GB para cargarlo con margen para KV cache.
+- GPUs probadas: Radeon AI PRO R9700 de 32 GB, en configuraciones de 1, 2 y 4 tarjetas. No hay datos de otras GPUs en la informacion disponible.
+- Consumer GPU: no disponible; el modelo esta orientado a RDNA4 profesional y no se documenta su ejecucion en tarjetas de consumo.
+- Topologia: 3 tarjetas no funcionan porque las 32 cabezas de atencion no se dividen entre tres.
+- Despliegue: exclusivamente mediante el motor radiance (imagen Docker `stilldeadcode/radiance:2.0.0` o superior; el fichero tambien se lee en 1.16.0-1.17.0 con flags de linea de comandos). No hay soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Configuracion recomendada: `tp: 2`, `p2p: on`, `kv-cache-dtype: i8`, `max-model-len: 65536`, `max-num-seqs: 8`, `num-speculative-tokens: 3`, `vision-tower-placement: ram`.
+- Contexto completo: `max-model-len: 262144` con `max-num-seqs: 2`; el pool KV compartido alcanza 524.352 tokens en 2 tarjetas y 2.097.248 en 4 con 8 secuencias.
+- Throughput: 70,9-201,3 tokens/s en decode segun numero de tarjetas; 1.421-4.214 tokens/s en prefill a 24k.
 
 ## Comparativa con modelos similares
 
-Comparativa con las cuantizaciones alternativas del mismo autor para el mismo modelo base (datos de la propia model card):
-
-| | gemma4-31b-w5 (este) | keptn/gemma4-31b-i8g | keptn/gemma4-31b-w4a8 |
-|---|---|---|---|
-| Cuantización | int5 GPTQ (pesos), act. f16/int8 | int8 (pesos y activaciones, según nombre) | pesos 4 bits, activaciones 8 bits |
-| KL media vs bf16 | 0,00803 | 0,00236 | 0,0517 |
-| Top token igual | 97,8 % | 98,8 % | 94,6 % |
-| Ratio de perplejidad | ×1,010 | ×1,004 | ×1,056 |
-| Motor | radiance (AMD RDNA4) | radiance (AMD RDNA4) | radiance (AMD RDNA4) |
-| Licencia | Apache 2.0 | no disponible en esta ficha | no disponible en esta ficha |
-
-Como referencia de categoría, frente al original `google/gemma-4-31B-it`: el original en bf16 requiere más del doble de VRAM (~60+ GiB solo de pesos) y no incluye la assistant head para especulación, pero ofrece máxima fidelidad y compatibilidad con el ecosistema estándar de Hugging Face. No hay datos comparativos publicados frente a modelos de otros fabricantes de tamaño similar: no disponible.
+| Modelo | Parametros | Contexto | Calidad (KL medio MT-Bench) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| keptn/gemma4-31b-w5 | 31B | 262.144 | 0,00803 | Apache 2.0 | Archivado; motor radiance |
+| keptn/gemma4-31b-i8g | 31B | no disponible | 0,00236 | Apache 2.0 | Activo; motor radiance |
+| keptn/gemma4-31b-a4 (w4a8) | 31B | no disponible | 0,0517 | Apache 2.0 | Activo; motor radiance |
+| keptn/gemma4-31b-exl3 | 31B | no disponible | no disponible | Apache 2.0 | Recomendado por el autor; radiance 2.3.0+ |
 
 ## Limitaciones y advertencias
 
-- Dependencia de un PR sin fusionar: el modelo requiere radiance con el PR #361, que todavía no está en ninguna versión estable. Cualquier despliegue en producción depende de código no liberado oficialmente.
-- Formato propietario: el fichero `.rad` solo funciona con radiance. No hay safetensors ni GGUF, por lo que no es usable con vLLM, llama.cpp, Ollama, TGI ni transformers.
-- Restricción de topología: solo funcionan configuraciones de 1, 2 o 4 tarjetas; con 3 GPUs el modelo no arranca (32 cabezas de atención indivisibles).
-- Solo AMD RDNA4: no hay soporte documentado para NVIDIA ni para generaciones anteriores de AMD.
-- Degradación medible frente a bf16: aunque la KL media es baja (0,00803), en el percentil 99 la divergencia sube a 0,107 y el top token coincide en el 97,8 % de los casos; en tareas sensibles a la exactitud (matemáticas, código crítico) conviene validar frente al original. La fidelidad multimodal es menor: solo 16/20 respuestas idénticas en imágenes.
-- Sesgos: al ser una cuantización de `google/gemma-4-31B-it`, hereda los sesgos del modelo base de Google; esta ficha no documenta sesgos específicos: no disponible.
-- Alucinaciones: riesgo inherente al modelo base; el modo thinking y la decodificación especulativa no lo mitigan. No hay evaluaciones de alucinación publicadas.
-- Idiomas: la ficha no enumera los idiomas soportados; hay que consultar la model card de `google/gemma4-31B-it`.
-- Licencia: Apache 2.0, sin restricciones de uso comercial conocidas en este repositorio; no obstante, conviene verificar los términos de uso de Gemma aplicables al modelo base de Google.
-- Advertencia general: el repo tiene 0 descargas y 1 like en el momento de la ficha, es decir, prácticamente sin validación comunitaria.
+- Repositorio archivado desde el 2026-11-26: no recibira actualizaciones. El autor recomienda keptn/gemma4-31b-exl3, con ficheros mas pequenos para la misma calidad.
+- Dependencia total del motor radiance: el formato `.rad` no es portable a vLLM, llama.cpp, Ollama ni TGI, lo que limita la portabilidad y crea dependencia de un unico proyecto.
+- Restriccion de hardware: solo RDNA4 documentado; sin soporte conocido en GPUs NVIDIA o en tarjetas de consumo.
+- Topologia limitada: no se puede repartir en 3 tarjetas por la division de las 32 cabezas de atencion.
+- Perdida de calidad medible: 97,8% de tokens top identicos y perplejidad x1,010 frente al bf16; superior a la variante int8 (98,8% y x1,004).
+- Vision menos fiel que el texto: KL medio de 0,471 en imagenes frente a 0,00803 en texto, con 4 de 20 respuestas distintas al original.
+- Sesgos, alucinacion y cobertura idiomatica: no disponible en la informacion proporcionada; deben evaluarse sobre el modelo base google/gemma-4-31B-it.
+- Licencia Apache 2.0 heredada del modelo base, sin restricciones adicionales conocidas para uso comercial.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/keptn/gemma4-31b-w5
+- Modelo en Hugging Face: https://huggingface.co/keptn/gemma4-31b-w5
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Assistant head (draft model): https://huggingface.co/google/gemma-4-31B-it-assistant
-- Cuantización int8 alternativa del mismo autor: https://huggingface.co/keptn/gemma4-31b-i8g
-- Motor de inferencia radiance: https://codeberg.org/StillDeadcode/radiance
-- PR #361 de radiance (requerido): https://codeberg.org/StillDeadcode/radiance/pulls/361
-- Framework de model cards del autor: https://codeberg.org/keptn42/radiance-model-cards-framework
-- Dataset de juicio de MT-Bench usado como referencia: https://huggingface.co/datasets/lmsys/mt_bench_human_judgments
+- Alternativa recomendada: https://huggingface.co/keptn/gemma4-31b-exl3
+- Cuantizacion int8 comparable: https://huggingface.co/keptn/gemma4-31b-i8g
+- Cuantizacion w4a8: https://huggingface.co/keptn/gemma4-31b-a4/tree/v1.0
+- Motor radiance: https://codeberg.org/StillDeadcode/radiance
+- Guia Docker de radiance: https://codeberg.org/StillDeadcode/radiance/src/branch/main/docs/DOCKER.md#run-it
+- PR #75 (soporte inicial de Gemma 4 en radiance): https://codeberg.org/StillDeadcode/radiance/pulls/75
+- Dataset MT-Bench human judgments: https://huggingface.co/datasets/lmsys/mt_bench_human_judgments

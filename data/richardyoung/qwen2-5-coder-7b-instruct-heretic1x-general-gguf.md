@@ -2,50 +2,52 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general, que a su vez deriva del Qwen2.5-Coder-7B-Instruct de Alibaba. La variante "heretic1x-general" indica un proceso de modificación orientado a reducir los rechazos del modelo (técnica conocida como abliteration o "heretic"), aplicado sobre el modelo instructivo de código con el objetivo de obtener respuestas menos restrictivas en dominios generales. El autor de la cuantización y del modelo intermedio es richardyoung, un publicador independiente en Hugging Face.
+Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general, una variante "abliterated" (sin censura) del Qwen2.5-Coder-7B-Instruct de Alibaba. El autor, richardyoung, aplica técnicas de "heretización" para eliminar los mecanismos de rechazo del modelo original, manteniendo las capacidades de generación de código y conversación del Qwen2.5-Coder-7B-Instruct. El resultado es un modelo de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) orientado a investigación sobre alineación y comportamiento de modelos.
 
-El modelo resuelve el problema de ejecutar localmente un modelo de 7.600 millones de parámetros especializado en código y conversación, con pesos cuantizados listos para llama.cpp y Ollama. Al estar en formato GGUF, permite su despliegue en CPU y GPU de consumo con requisitos de memoria reducidos frente a los pesos originales en safetensors. La relevancia actual radica en la combinación de un modelo base sólido en generación de código (familia Qwen2.5-Coder) con un proceso de modificación que busca eliminar capas de rechazo, algo demandado por la comunidad de investigación y por desarrolladores que necesitan respuestas sin filtros en entornos controlados.
+La relevancia de esta ficha radica en que documenta una de las muchas variantes "uncensored" que circulan en el ecosistema open source, útiles para estudiar cómo las técnicas de abliteration afectan a las capacidades del modelo base y qué riesgos introduce su uso en producción. El modelo está disponible únicamente en inglés, con licencia Apache 2.0, y su acceso está restringido (gated) en Hugging Face, requiriendo aceptar condiciones adicionales.
 
-La información pública disponible sobre esta ficha es limitada: se trata de un repositorio con acceso restringido (gated), con 839 descargas y 1 like en el momento de la consulta, y sin documentación técnica detallada sobre el proceso de entrenamiento o los benchmarks. El modelo declara únicamente el idioma inglés y licencia Apache 2.0.
+Al estar basado en Qwen2.5-Coder-7B-Instruct, hereda la arquitectura transformer decoder-only del Qwen2.5 original, con un contexto nativo de 32.768 tokens (ampliable hasta 131.072 mediante RoPE scaling en el modelo base, aunque esta información no se confirma en la ficha del GGUF). La cuantización GGUF permite su despliegue en hardware consumer mediante llama.cpp y Ollama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-Coder-7B-Instruct) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-7B-Instruct) |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | GGUF (multiples niveles de cuantizacion; niveles concretos no disponibles) |
-| Idiomas soportados | en (ingles declarado) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (para llama.cpp y Ollama) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-Coder soporta 32.768 tokens nativos) |
+| Tipos de cuantizacion | GGUF (multiples niveles de cuantizacion habituales en llama.cpp; niveles especificos no disponibles) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a Qwen2.5-Coder-7B-Instruct, un transformer decoder-only denso de 7.600 millones de parámetros desarrollado por Alibaba. El modelo intermedio richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general aplica una modificación de tipo "heretic" (abliteration) sobre el modelo instructivo original, orientada a reducir la tasa de rechazos en la generación. No se dispone de información pública sobre el dataset utilizado en ese proceso de modificación, el número de tokens empleados, ni si se aplicaron técnicas de RLHF o DPO adicionales.
+La arquitectura subyacente es la de Qwen2.5-Coder-7B-Instruct: un transformer decoder-only con atención por ventanas deslizantes (sliding window attention) en algunas capas, normalización RMSNorm, activación SwiGLU y embeddings RoPE. El modelo base Qwen2.5-Coder-7B-Instruct fue entrenado por Alibaba con un corpus masivo que incluye código, texto técnico y datos de conversación, seguido de un proceso de instrucción (SFT) y optimización preferencial (DPO/RLHF) para alineamiento.
 
-La cuantización a GGUF se realizó con el pipeline de llama.cpp, y los tags del repositorio mencionan el uso de imatrix (matriz de importancia) para mejorar la calidad de las cuantizaciones de baja precisión. No se especifican los niveles de cuantización concretos incluidos en el repositorio, aunque el tamaño total del repo (32,3 GB) sugiere la presencia de múltiples variantes. No hay información sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+Sobre esta base, richardyoung aplica una técnica de "heretización" o "abliteration" que consiste en identificar y modificar las direcciones de activación asociadas a los rechazos de seguridad, eliminando la capacidad del modelo de negarse a responder. El resultado se cuantiza a GGUF mediante imatrix (importance matrix), una técnica que mejora la calidad de la cuantización preservando los pesos más relevantes. No se dispone de información detallada sobre el número exacto de tokens de entrenamiento adicionales, la composición del dataset de heretización ni si se aplicó RLHF tras la modificación.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con herencia del modelo instructivo Qwen2.5-Coder.
-- Generación y asistencia en código: el modelo base está especializado en tareas de programación (autocompletado, explicación, refactorización, generación de tests).
-- Razonamiento multi-turno en formato chat, con plantilla de conversación heredada de Qwen2.5.
-- Modificación "heretic": menor tendencia a rechazar peticiones, orientada a investigación sobre alineación y filtros de seguridad.
-- Capacidad multilingüe limitada: el repositorio declara únicamente inglés, aunque el modelo base Qwen2.5 soporta más idiomas; no se garantiza su calidad tras la modificación.
-- Soporte de tool calling y function calling: no confirmado explícitamente en la información proporcionada; el modelo base Qwen2.5-Coder-Instruct lo soporta, pero la modificación heretic puede alterar este comportamiento.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas en la información disponible.
+- Generación de texto y conversación multi-turno en inglés.
+- Generación y explicación de código en múltiples lenguajes de programación (heredado de Qwen2.5-Coder).
+- Razonamiento matemático y lógico de nivel medio.
+- Respuestas sin rechazo a solicitudes que el modelo original rechazaría (comportamiento "uncensored").
+- Soporte de formato conversacional (chat template de Qwen).
+- Compatibilidad con llama.cpp, Ollama y endpoints compatibles con OpenAI.
+- No se confirma soporte de tool calling o function calling en esta variante.
+- No se confirma soporte de agentes multi-paso ni modo "thinking".
+- Capacidades multilingües limitadas al inglés según la ficha.
 
 ## Casos de uso
 
-- Asistente de código en local: el modelo puede integrarse en editores (VS Code, Neovim) mediante llama.cpp u Ollama para autocompletado y explicación de fragmentos, aprovechando su especialización en programación y su tamaño de 7,6B parámetros que cabe en GPU de consumo.
-- Investigación sobre alineación y filtros de seguridad: la variante heretic permite estudiar cómo la abliteration afecta a la tasa de rechazos y a la calidad de las respuestas, comparando con el modelo original Qwen2.5-Coder-7B-Instruct.
-- Generación de código en pipelines de CI/CD: puede emplearse para generar tests unitarios o parches automáticos en entornos controlados, con la cautela de que la licencia Apache 2.0 permite uso comercial pero la modificación heretic requiere revisión de seguridad.
-- Chat técnico sin conexión: despliegue en estaciones de trabajo sin acceso a internet para consultas de programación, gracias al formato GGUF y a la ejecución con llama.cpp en CPU o GPU.
-- Prototipado rápido de aplicaciones conversacionales: el formato GGUF y la compatibilidad con Ollama facilitan levantar un endpoint local de chat en minutos para pruebas de concepto.
-- Análisis de código legacy: el modelo puede resumir y documentar bases de código antiguas en inglés, aprovechando su entrenamiento en código y su ventana de contexto (no confirmada en esta ficha).
-- Evaluación comparativa de cuantizaciones: el repositorio incluye múltiples variantes GGUF, lo que permite medir el impacto de la cuantización en la calidad de generación de código.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteration afecta a las respuestas del modelo base en dominios sensibles, comparando comportamientos antes y después de la modificación.
+- Análisis de sesgos y robustez: útil para auditar qué tipos de contenido genera un modelo sin salvaguardas y diseñar mejores filtros o políticas de despliegue.
+- Generación de código en entornos controlados: al heredar las capacidades de Qwen2.5-Coder, puede asistir en tareas de programación dentro de pipelines internos donde no se requiere moderación automática.
+- Despliegue local con Ollama o llama.cpp: la cuantización GGUF permite ejecutar el modelo en estaciones de trabajo con GPU consumer para pruebas y prototipado.
+- Evaluación comparativa de cuantizaciones: útil para medir la degradación de calidad entre distintos niveles GGUF y el efecto de imatrix en tareas de código y razonamiento.
+- Fine-tuning posterior: al estar en formato GGUF y con licencia Apache 2.0, puede servir como base para experimentos de ajuste o destilación en investigación.
+- Pruebas de red teaming: escenario controlado para generar respuestas adversarias y evaluar sistemas de moderación externos.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +55,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4-5 GB para cuantización Q4_K_M, 5-6 GB para Q5_K_M y 7-8 GB para Q8_0 (estimaciones basadas en el tamaño de 7,6B parámetros; los niveles exactos incluidos no están confirmados).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones altas; A100 o H100 para despliegues con mayor throughput.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM para cuantizaciones Q4/Q5; en 6 GB solo con cuantizaciones más agresivas (Q3 o inferiores).
-- Opciones de despliegue: llama.cpp, Ollama (tag `ollama` en el repo), y servidores compatibles con GGUF como llama-cpp-python. No se confirma soporte de vLLM o TGI para este formato.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 4-5 GB para cuantización Q4_K_M, 6-7 GB para Q5_K_M, 8-9 GB para Q8_0 y alrededor de 15 GB para FP16 (estimación basada en 7,6 mil millones de parámetros; los tamaños exactos de cada archivo GGUF no se detallan en la información proporcionada).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones altas; A100 o H100 para FP16 y despliegues de mayor throughput.
+- Cabe en GPU consumer: sí, en cuantizaciones Q4 y Q5 en GPUs con 8 GB o más de VRAM; Q8_0 requiere 12 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con la API de OpenAI (endpoints_compatible según los tags). No se confirma soporte de vLLM o TGI para esta cuantización GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF | 7,6B | no disponible | Apache 2.0 | GGUF | Variante heretic, acceso restringido |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens (modelo base) | Apache 2.0 | safetensors, GGUF | Modelo original sin modificar |
-| Qwen/Qwen2.5-Coder-7B-Instruct-GGUF | 7,6B | 32.768 tokens (modelo base) | Apache 2.0 | GGUF | Cuantización oficial |
-| Meta Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Alternativa generalista, licencia más restrictiva |
-
-La comparativa se basa en datos públicos de los modelos originales; los datos de contexto del modelo heretic no están confirmados y podrían diferir del base.
+| richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF | 7,6 B | No disponible | Apache 2.0 | GGUF | Variante abliterated, solo ingles, acceso gated |
+| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7,6 B | 32.768 tokens nativos | Apache 2.0 | safetensors, GGUF | Modelo original alineado, multilingue, benchmarks publicos |
+| Qwen2.5-7B-Instruct (Alibaba) | 7,6 B | 32.768 tokens nativos | Apache 2.0 | safetensors, GGUF | Modelo generalista alineado, multilingue |
+| Otras variantes abliterated de Qwen2.5 (varios autores) | 7,6 B | Variable | Apache 2.0 | GGUF, safetensors | Comportamiento similar sin censura, calidad variable |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- La modificación heretic reduce los rechazos del modelo, lo que puede aumentar la probabilidad de generar contenido inapropiado, ofensivo o inseguro; no debe desplegarse en producción orientada a usuarios finales sin capas adicionales de moderación.
-- Riesgo de alucinación inherente a los modelos de 7B, especialmente en tareas de código complejas o APIs poco documentadas.
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado y probablemente sea inferior al del modelo base Qwen2.5.
-- Licencia Apache 2.0 permite uso comercial, pero la modificación heretic puede entrar en conflicto con políticas de seguridad corporativas o con las condiciones de uso de Hugging Face.
-- No hay información pública sobre sesgos específicos introducidos por la abliteration ni sobre evaluaciones de seguridad.
-- El tamaño del repo (32,3 GB) implica múltiples cuantizaciones; conviene verificar qué niveles están incluidos antes de descargar.
-- La fecha de creación indicada (2026-11-11) es posterior a la fecha actual de consulta, lo que sugiere un posible error en los metadatos del repositorio; conviene verificar la integridad de los archivos.
+- Modelo "abliterated": elimina los rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sesgado sin filtros. No apto para despliegues públicos sin moderación externa.
+- Sesgos conocidos: hereda los sesgos del corpus de entrenamiento de Qwen2.5 y puede amplificarlos al no aplicar salvaguardas.
+- Riesgo de alucinación: como todo modelo de 7 B, puede inventar información, especialmente en tareas de razonamiento complejo o datos factuales.
+- Limitación de idioma: solo inglés según la ficha, a pesar de que el modelo base Qwen2.5-Coder es multilingüe; el proceso de heretización puede haber degradado capacidades en otros idiomas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso está restringido (gated) en Hugging Face y el usuario debe aceptar condiciones adicionales; además, el uso comercial de un modelo sin salvaguardas conlleva riesgos legales y reputacionales.
+- Contexto: no se confirma la longitud de contexto efectiva en esta cuantización; el modelo base soporta 32.768 tokens, pero la cuantización y la heretización podrían afectar al rendimiento en contextos largos.
+- Calidad de cuantización: al ser GGUF, existe degradación respecto a FP16; los niveles bajos (Q2, Q3) pueden afectar notablemente a tareas de código.
+- No se confirma soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- Fecha de creación y actualización en 2026: verificar que el modelo base y las dependencias (llama.cpp, Ollama) sean compatibles con la versión de GGUF utilizada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF
-- Modelo base intermedio: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general
-- Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+- Modelo base (no GGUF): https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general
+- Qwen2.5-Coder-7B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com
+- Documentación de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5-coder/

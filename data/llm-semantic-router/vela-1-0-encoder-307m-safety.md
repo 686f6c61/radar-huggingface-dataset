@@ -2,102 +2,97 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Safety es un clasificador de texto basado en un encoder ModernBERT de 307.531.778 parametros, desarrollado por el equipo de vLLM Semantic Router (`llm-semantic-router`). Se trata de un ajuste fino (finetune) del modelo `llm-semantic-router/Vela-1.0-Encoder-307M`, especializado en detectar riesgo de contenido general y devolver una senal de seguridad que permita enrutar cada peticion hacia el tratamiento adecuado dentro de una arquitectura de router semantico.
+Vela-1.0-Encoder-307M-Safety es un clasificador de texto encoder-only derivado de ModernBERT, afinado por el proyecto vLLM Semantic Router para detectar riesgo de contenido general y enrutar peticiones hacia el tratamiento de seguridad adecuado. Con 307.531.778 parámetros y una capacidad de entrada de 32.768 tokens (incluyendo tokens especiales), está pensado como componente de un router semántico: no genera respuestas, sino que emite una señal de riesgo que decide si una consulta requiere manejo reforzado (por ejemplo, soporte en crisis) o puede procesarse por la vía normal.
 
-El modelo no genera texto: es un encoder discriminativo orientado a `text-classification`. Su funcion dentro del ecosistema Vela es actuar como componente de guardrail o de enrutado, de modo que un gateway de LLM pueda decidir si una consulta requiere un manejo con soporte adicional (incluido soporte en crisis) o si puede procesarse por la via estandar. El autor remarca explicitamente que una senal de riesgo no implica rechazo automatico de la peticion.
+El modelo parte del checkpoint base `vllm-sr/Vela-1.0-Encoder-307M` y se distribuye con licencia Apache 2.0 en formatos safetensors y ONNX, lo que facilita su despliegue tanto en PyTorch/Transformers como en entornos de inferencia optimizados. Su relevancia actual radica en que sustituye al anterior clasificador mmBERT Safety del mismo proyecto, ampliando la ventana de contexto de 8K a 32K tokens y mejorando el rendimiento en conjuntos multilingües (CultureGuard cubre 12 idiomas).
 
-Con 307 millones de parametros y una capacidad de entrada de 32.768 tokens (incluyendo tokens especiales), el modelo ocupa un nicho poco cubierto: clasificacion de seguridad con contexto muy largo, peso reducido y licencia Apache 2.0, lo que permite desplegarlo en el mismo plano que el router sin depender de un modelo generativo de gran tamano como clasificador auxiliar. El repositorio ocupa 1,3 GB y se distribuye unicamente en safetensors para `transformers`.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor; los datos no presentes se indican explícitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (transformer encoder bidireccional) |
+| Arquitectura | ModernBERT (encoder-only, transformer) |
 | Parametros totales | 307.531.778 |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 32.768 tokens de capacidad de entrada, incluidos tokens especiales |
-| Tipos de cuantizacion | no disponible (no se publican variantes GGUF, AWQ, GPTQ ni bitsandbytes) |
-| Idiomas soportados | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (incluyendo tokens especiales) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (la evaluacion incluye CultureGuard, que cubre 12 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
-
-Otros datos verificables: pipeline `text-classification`, libreria `transformers`, repositorio de 1,3 GB, compatible con `text-embeddings-inference` y con `endpoints_compatible`, modelo base `llm-semantic-router/Vela-1.0-Encoder-307M` con relacion `finetune`, fecha de creacion 2026-09-13.
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es ModernBERT, un encoder transformer bidireccional de la familia BERT modernizada, que sustituye la atencion global completa por un esquema de atencion alterna (capas locales y capas globales) y emplea embeddings posicionales rotatorios, lo que reduce el coste computacional y de memoria en secuencias largas. Esa base es la que permite al modelo declarar 32.768 tokens de capacidad de entrada manteniendo un tamano de parametros de 307 millones. El modelo es un fine-tune del encoder base Vela-1.0-Encoder-307M; el autor no detalla en la model card el numero de tokens de entrenamiento, la composicion del dataset, la politica de anotacion ni si se aplicaron tecnicas de alineamiento como RLHF o DPO, por lo que esos datos no estan disponibles.
+El modelo es un fine-tuning de `vllm-sr/Vela-1.0-Encoder-307M`, un encoder ModernBERT de 307M parámetros. ModernBERT es una familia de encoders transformer que incorpora atención con rotación posicional (RoPE), alternancia entre atención local y global, y capas de embedding sin sesgo, lo que permite ventanas de contexto más largas que los encoders clásicos. La tarea es clasificación de texto binaria orientada a seguridad, con una etiqueta de riesgo de contenido general.
 
-La innovacion relevante no esta en la arquitectura, sino en el uso: el modelo se integra en el proyecto vLLM Semantic Router como senal de riesgo dentro de un pipeline de enrutado, y su salida esta pensada para condicionar el tratamiento posterior de la peticion (por ejemplo, activar flujos de soporte) en lugar de bloquear directamente. La model card advierte que una senal de riesgo puede requerir un manejo con apoyo, incluido soporte en crisis, y no implica rechazo automatico.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO (poco habituales en clasificadores encoder). La model card sí indica que los conjuntos de desarrollo (Reviewed safety, AEGIS y CultureGuard) se usaron para la selección del modelo, y advierte que no son pruebas independientes. No se documentan innovaciones técnicas adicionales como decodificación especulativa, al no tratarse de un modelo generativo.
 
 ## Capacidades
 
-- Clasificacion de texto para deteccion de riesgo de contenido general, con etiquetas de salida devueltas por el pipeline `text-classification` (se puede solicitar el conjunto completo de puntuaciones con `top_k=None`).
-- Procesamiento de entradas muy largas: hasta 32.768 tokens incluidos los especiales, lo que permite clasificar documentos completos o conversaciones extensas sin trocear.
-- Enrutado semantico: la salida se usa como senal para derivar la peticion a un flujo de tratamiento concreto dentro de un gateway LLM.
-- Inferencia discriminativa de coste bajo: al no ser generativo, no produce tokens de salida y el coste por peticion es una unica pasada forward.
-- Ejecucion en CPU: la model card documenta el uso con `device=-1`, es decir, sin GPU.
-- Compatibilidad declarada con `text-embeddings-inference` y con endpoints compatibles.
-- No soporta generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni function calling: es un encoder clasificador, no un modelo de chat ni un agente.
-- No se documentan capacidades multilingues especificas; el campo de idiomas no esta disponible.
+- Clasificación de texto para detección de riesgo de contenido general (content safety).
+- Emisión de una señal de riesgo que puede activar un manejo de soporte (incluido soporte en crisis) sin implicar rechazo automático.
+- Procesamiento de entradas largas de hasta 32.768 tokens sin truncamiento.
+- Cobertura multilingüe parcial: la evaluación con CultureGuard abarca 12 idiomas, aunque el listado oficial de idiomas no está disponible.
+- Integración como componente de enrutamiento semántico en el stack vLLM Semantic Router.
+- Compatibilidad con `text-embeddings-inference` y endpoints compatibles según los tags del repositorio.
+- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso: es un encoder de clasificación.
 
 ## Casos de uso
 
-- Enrutado de seguridad en un gateway LLM: colocado delante del modelo generativo, clasifica cada peticion entrante y emite una senal que el router usa para decidir que flujo de tratamiento aplicar, con un coste de inferencia muy inferior al de usar un guardrail generativo.
-- Moderacion de contenido en plataformas UGC: clasificacion por lotes de comentarios, publicaciones o mensajes de foro para separar candidatos de revision humana, aprovechando la ventana de 32.768 tokens para evaluar hilos completos en lugar de mensajes aislados.
-- Deteccion de riesgo con derivacion a soporte: en aplicaciones de salud mental o comunidades vulnerables, la senal de riesgo permite activar recursos de apoyo o lineas de crisis en lugar de rechazar la consulta, siguiendo el criterio explicito de la model card.
-- Pre-filtro economico antes de un modelo mayor: descarta o marca el trafico de bajo riesgo para que solo una fraccion de las peticiones pase por un clasificador de seguridad mas caro, reduciendo el coste por millon de peticiones.
-- Curaccion y etiquetado de datasets: clasificacion masiva de corpus para auditar la presencia de contenido de riesgo antes de usarlos en entrenamiento o evaluacion.
-- Despliegue on-premise o en el borde: al ser un modelo de 307 millones de parametros con licencia Apache 2.0 y ejecucion en CPU documentada, encaja en entornos con requisitos de soberania de datos donde no se puede enviar el texto a un servicio externo.
-- Analisis de seguridad en pipelines RAG: clasificar los documentos recuperados antes de incorporarlos al contexto del modelo generativo, evitando que material de riesgo entre en la ventana de contexto.
-- Investigacion sobre clasificacion de seguridad: servir como linea base reproducible y de licencia permisiva para comparar enfoques de deteccion de riesgo con contexto largo.
+- Enrutamiento de seguridad en pasarelas de LLM: el modelo clasifica cada petición entrante y decide si se envía al modelo generativo estándar o a un flujo con salvaguardas adicionales, gracias a su capacidad de 32K tokens para analizar conversaciones completas.
+- Moderación de contenido en plataformas: clasificación de mensajes de usuario para detectar riesgo y derivar los casos sensibles a revisión humana o a respuestas de soporte.
+- Detección de riesgo en soporte al cliente: análisis de conversaciones multi-turno largas antes de responder, evitando truncar el historial y perdiendo señales de riesgo.
+- Filtrado previo en pipelines de datos: etiquetado de grandes volúmenes de texto para excluir o marcar contenido peligroso antes de usarlo en entrenamiento o análisis.
+- Cumplimiento y auditoría: generación de señales de riesgo documentables sobre interacciones registradas, con umbral de probabilidad configurable (0,5 en la evaluación publicada).
+- Despliegue en entornos con ONNX Runtime: al publicarse pesos ONNX, puede ejecutarse en infraestructura sin PyTorch, con latencias propias de un encoder de 307M.
+- Investigación en seguridad multilingüe: evaluación comparativa de clasificadores de seguridad en los 12 idiomas cubiertos por CultureGuard.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye tablas de metricas (exactitud, F1, precision, recall, AUC) ni evaluaciones comparativas frente a otros clasificadores de seguridad, y la busqueda web realizada no devolvio datos de evaluacion del modelo. No se deben asumir cifras de rendimiento.
+Macro F1 (×100) sobre los conjuntos de desarrollo indicados por el autor, comparado con el modelo original mmBERT Safety. Umbral de probabilidad de inseguro: 0,5; FP32 nativo y entradas completas sin truncamiento.
+
+| Evaluacion | mmBERT original | Vela |
+|---|---:|---:|
+| Reviewed safety (473 peticiones) | 76,53 | 85,30 |
+| AEGIS (1.187 peticiones) | 92,23 | 84,76 |
+| CultureGuard (3.594 peticiones) | 72,07 | 79,56 |
+
+El autor advierte que estos conjuntos informaron la selección del modelo y no constituyen pruebas independientes. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible, lo cual es esperable en un clasificador encoder.
 
 ## Requisitos de hardware
 
-- Peso de los parametros: aproximadamente 1,23 GB en fp32, 615 MB en fp16/bf16, 307 MB en int8 y 154 MB en int4. Son calculos a partir del numero de parametros publicado, no mediciones del autor.
-- Memoria adicional: el uso de una ventana de hasta 32.768 tokens incrementa la memoria de activaciones, especialmente en lotes grandes. La arquitectura ModernBERT esta disenada para limitar ese coste, pero no hay cifras publicadas de VRAM para el limite de contexto completo.
-- GPU consumer: cabe con holgura en cualquier GPU con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070), y tambien en GPUs de 24 GB (RTX 3090, RTX 4090) para lotes grandes o contexto completo.
-- GPU de datacenter: A100, H100, L40S o similares no son necesarias para el modelo en si; se justifican si se comparte nodo con el resto del router o si se requiere throughput muy alto por batching.
-- CPU: la model card muestra el uso con `device=-1`, por lo que la inferencia en CPU es un escenario soportado para cargas de baja concurrencia.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")` (versiones 4.57.6 o 5.17.0 segun el autor), Text Embeddings Inference (etiqueta declarada en el repo) y endpoints compatibles. vLLM puede servir modelos encoder de clasificacion, aunque no se documenta configuracion especifica para este checkpoint. No hay variantes GGUF publicadas, por lo que su uso directo en llama.cpp u Ollama requeriria conversion y no esta garantizado.
-- Latencia y throughput: no disponible. No se publican mediciones de latencia ni de peticiones por segundo.
+- VRAM estimada para inferencia en FP32: aproximadamente 1,2 GB solo para pesos (307M × 4 bytes), más activaciones y overhead; en FP16/BF16 rondaría 0,6 GB de pesos. No se documentan cuantizaciones oficiales.
+- Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para cargas moderadas.
+- GPU recomendadas para alto throughput: A100, H100 o L40S para procesamiento por lotes a gran escala; no se publican cifras de latencia ni throughput.
+- Opciones de despliegue: `transformers` (versiones 4.57.6 o 5.17.0 según la model card), ONNX Runtime con los pesos ONNX incluidos, y `text-embeddings-inference` según los tags del repositorio.
+- El tamaño del repositorio es de 2,5 GB, lo que incluye pesos en varios formatos.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos de benchmarks ni especificaciones verificables de alternativas, por lo que no es posible establecer una comparativa numerica fiable. Como referencia cualitativa, dentro de la propia coleccion Vela existe el modelo base `llm-semantic-router/Vela-1.0-Encoder-307M`, del que este checkpoint es un fine-tune especializado en seguridad: misma arquitectura y mismo tamano, pero sin la especializacion en la tarea de clasificacion de riesgo.
-
-| Modelo | Tipo | Parametros | Contexto | Licencia | Datos comparativos |
+| Modelo | Parametros | Contexto | Macro F1 (Reviewed safety) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Safety | Encoder clasificador (ModernBERT) | 307.531.778 | 32.768 tokens | Apache 2.0 | no disponible |
-| Vela-1.0-Encoder-307M | Encoder (ModernBERT), modelo base | no disponible en la informacion | no disponible | no disponible | no disponible |
-| Otros clasificadores de seguridad open source | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Vela-1.0-Encoder-307M-Safety | 307M | 32.768 tokens | 85,30 | Apache 2.0 | Hugging Face (safetensors, ONNX) |
+| mmBERT Safety (original) | no disponible (base mmBERT-base) | 8.192 tokens | 76,53 | no disponible | Hugging Face |
 
-La busqueda web realizada no aporto especificaciones ni resultados de alternativas comparables, de modo que cualquier cifra sobre modelos de terceros seria una invencion.
+No se dispone de información sobre otros clasificadores de seguridad comparables en la documentación proporcionada; los datos de la comparativa se limitan al modelo predecesor del mismo proyecto.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce respuestas ni texto, solo etiquetas y puntuaciones de clasificacion. No puede sustituir a un LLM en ninguna tarea de generacion.
-- Riesgo de falsos positivos y falsos negativos inherente a cualquier clasificador de seguridad. La model card insiste en que una senal de riesgo no equivale a un rechazo automatico, por lo que el sistema que lo integre debe definir su propia politica de actuacion.
-- Sesgos desconocidos: no se documenta la composicion del dataset de ajuste fino, la distribucion de idiomas, la demografia ni la metodologia de anotacion, lo que impide evaluar sesgos sistematicos por idioma, registro o colectivo.
-- Cobertura idiomatica no declarada: el campo de idiomas no esta disponible. No se debe asumir un rendimiento uniforme fuera del idioma o idiomas mayoritarios del entrenamiento.
-- Sin resultados de evaluacion publicados: no hay metricas verificables de exactitud, F1, precision ni recall, ni evaluaciones de robustez frente a ataques adversariales o evasion.
-- Uso en dominios sensibles: en aplicaciones de salud mental o crisis, la senal del modelo no debe ser el unico criterio de decision; la propia model card plantea el riesgo como desencadenante de soporte, no como juicio clinico.
-- Contexto largo sin medicion publicada: aunque se declaran 32.768 tokens de entrada, no hay datos de como se degrada la calidad de clasificacion en longitudes cercanas al limite.
-- Licencia Apache 2.0: permisiva y apta para uso comercial, sin las restricciones de las licencias de otros guardrails propietarios, pero la licencia no cubre garantias de idoneidad ni de ausencia de sesgos.
-- Repositorio sin adopcion: en el momento de los datos consultados, el modelo registra 0 descargas y 0 likes, por lo que no existe evidencia de comunidad, incidencias reportadas ni validacion independiente.
-- Infraestructura de despliegue limitada: al no publicarse variantes cuantizadas ni GGUF, las opciones de servir el modelo siguen dependiendo de `transformers` o de servidores compatibles con safetensors.
+- Los conjuntos de evaluación son de desarrollo y participaron en la selección del modelo; no son pruebas independientes, por lo que las cifras pueden sobreestimar el rendimiento real.
+- El modelo empeora frente al original en AEGIS (84,76 frente a 92,23), lo que sugiere un comportamiento desigual según el dominio de riesgo.
+- Una señal de riesgo no equivale a un rechazo: el sistema que lo integra debe definir la política de actuación; un umbral mal calibrado puede producir falsos positivos o negativos.
+- No se documentan sesgos conocidos, idiomas soportados oficialmente ni riesgos específicos de alucinación (no es un modelo generativo).
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción ni sobre el cumplimiento normativo en dominios regulados.
+- Al ser un clasificador, no debe usarse como sustituto de revisión humana en casos de crisis o contenido sensible.
+- No se publican datos sobre cuantización, latencia ni throughput, lo que dificulta planificar despliegues de alta concurrencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Safety
-- Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Documentacion de vLLM Semantic Router: https://vllm-sr.ai/
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Colección Vela: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Modelo original mmBERT Safety: https://huggingface.co/vllm-sr/mmbert-safety-binary-merged
+- Documentación: https://vllm-sr.ai/
 - Blog: https://vllm-sr.ai/blog/
-- Repositorio GitHub del proyecto: https://github.com/vllm-project/semantic-router
-- Canal de Slack del proyecto: https://vllm-dev.slack.com/archives/C09CTGF8KCN
-
-Nota: la busqueda web realizada devolvio unicamente guias genericas sobre modelos de lenguaje (Wikipedia, GeeksforGeeks, articulos divulgativos y un ranking de LLM), sin relacion con este modelo ni con clasificadores de seguridad, por lo que no se incluyen como enlaces relevantes.
+- GitHub: https://github.com/vllm-project/semantic-router
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

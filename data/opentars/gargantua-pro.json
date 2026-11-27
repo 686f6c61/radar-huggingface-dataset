@@ -49,16 +49,5 @@
   "renamed_to": "Mast-LLM/Gargantua-Pro",
   "renamed_at": "2026-11-23T04:38:33.816Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - project-opentars/OpenTARS: Local AI assistant for Linux. Opens ...",
-      "url": "https://github.com/project-opentars/OpenTARS",
-      "snippet": "Local AI assistant for Linux. Opens apps, clicks buttons by name, types, searches the web, sees the screen and runs commands. 100% on your machine through Ollama, with its own trained model, Gargantua. - project-opentars/OpenTARS"
-    },
-    {
-      "title": "ProjectOpenTARS/Gargantua",
-      "url": "https://ollama.com/ProjectOpenTARS/Gargantua",
-      "snippet": "The official AI of openTARS, the 100% local assistant that controls your Linux desktop. Gargantua is a Qwen3 4B fine-tuned for one job: using openTARS tools the right way, on the first try."
-    }
-  ]
+  "sources": []
 }

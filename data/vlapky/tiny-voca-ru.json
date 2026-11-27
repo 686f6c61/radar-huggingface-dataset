@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "vlapky/tiny-voca-ru",
+  "slug": "vlapky-tiny-voca-ru",
+  "author": "vlapky",
+  "url": "https://huggingface.co/vlapky/tiny-voca-ru",
+  "created_at": "2026-11-26T21:52:01.000Z",
+  "updated_at": "2026-11-26T21:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "russian",
+    "lightweight",
+    "tiny-voca",
+    "ru",
+    "dataset:egnch/tiny-voca-ru-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4534411,
+  "parameters_human": "4.5M",
+  "storage_bytes": 51241676,
+  "storage_human": "51 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

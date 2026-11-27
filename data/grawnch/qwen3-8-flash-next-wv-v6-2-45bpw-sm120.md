@@ -2,109 +2,113 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120 es un checkpoint cuantizado a 2,45 bits por peso del modelo Qwen/Qwen3.8-Flash-Next, publicado por el usuario Grawnch. Se trata de una compilación autocontenida orientada exclusivamente a GPUs NVIDIA Blackwell con arquitectura `sm_120`, que empaqueta el modelo base de 180.000 millones de parámetros junto con un runtime SASS precompilado (`qfn_sm120_unified` v22.4.0) y un drafter de decodificación especulativa DFlash2.
+Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120 es una cuantizacion nativa de 2,45 bits por peso del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Grawnch. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado (finetune/cuantizacion) que empaqueta los pesos originales en formato safetensors junto con un runtime propietario optimizado exclusivamente para GPUs NVIDIA Blackwell con arquitectura `sm_120`. El modelo base es un MoE de 180.000 millones de parametros totales con 48 capas hibridas (36 Gated DeltaNet y 12 Qwen Sparse Attention), 512 expertos enrutados mas uno compartido y conexiones hiper-residuales de cuatro flujos (mHC).
 
-El modelo base es un transformer híbrido con 48 capas que combina 36 capas Gated DeltaNet (GDN) con 12 capas de Qwen Sparse Attention (QSA), estructura MoE con 512 expertos enrutados más 1 compartido y Hyper-Connections mHC de 4 flujos. La cuantización emplea una técnica denominada wave-quant que combina un indexer QSA disperso de 128K de contexto con una tabla de embeddings N-Gram por capa en Q4_0 almacenada en RAM del host.
+La relevancia de esta publicacion radica en que comprime un MoE de 180B hasta 79,5 GB en disco y unos 54,43 GiB de VRAM residente en modo all-VRAM, lo que permite servirlo en una sola GPU profesional Blackwell (RTX PRO 6000 de 96 GB) o en una RTX 5090 de 32 GB mediante tiering hibrido VRAM/RAM. Incorpora ademas decodificacion especulativa con un drafter DFlash2 calibrado y un indexador QSA disperso de 128K, lo que se traduce en tasas de decodificacion de entre 183 y 665 tok/s segun el tamano de lote.
 
-Su relevancia es doble: por un lado demuestra que un MoE de 180B puede ejecutarse en una única GPU Blackwell de 96 GB con un consumo de VRAM residente de 54,43 GiB; por otro, el runtime incluido expone endpoints compatibles con OpenAI, Anthropic Messages y OpenAI Responses, lo que facilita su integración en herramientas agénticas como Claude Code o Codex CLI.
+El modelo esta pensado para generacion de texto conversacional y agentica, con soporte nativo de tool calling, streaming de argumentos JSON y endpoints compatibles con OpenAI, Anthropic Messages y OpenAI Responses. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido MoE: 36 capas Gated DeltaNet (GDN) + 12 capas Qwen Sparse Attention (QSA), Hyper-Connections mHC de 4 flujos |
-| Parametros totales | 180 000 millones (modelo base) |
-| Parametros activos | 512 expertos enrutados + 1 compartido (número de parámetros activos no disponible) |
-| Longitud de contexto | 128K (indexer QSA disperso Top-2048) |
-| Tipos de cuantizacion | 2,45 bpw (wave-quant); tabla PLE en Q4_0; indexer QSA a 128K |
+| Arquitectura | Transformer MoE hibrido: 36 capas Gated DeltaNet (GDN) + 12 capas Qwen Sparse Attention (QSA), con 4-stream mHC Hyper-Connections |
+| Parametros totales | 180B (modelo base) |
+| Parametros activos | no disponible (512 expertos enrutados + 1 compartido; no se especifica el numero activo por token) |
+| Longitud de contexto | 128K (indexador QSA disperso); el servidor de ejemplo arranca con `--max-seq 8192` |
+| Tipos de cuantizacion | 2,45 bpw en safetensors; capa PLE en Q4_0 puro; indexador QSA disperso de 128K |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (shards `globals.safetensors`, `layers_00_03` a `layers_44_47`, `ple_q4_0.safetensors`, `qsa_indexer.safetensors`) |
+| Formato de pesos | safetensors (mas drafter DFlash2 y wheel de runtime `qfn_sm120_unified`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base combina atención lineal y sparse attention en un esquema híbrido: 36 de las 48 capas usan Gated DeltaNet, un mecanismo de atención lineal con compuertas, mientras que las 12 restantes emplean Qwen Sparse Attention con un indexer que selecciona los Top-2048 tokens relevantes sobre una ventana de 128K. La capa MoE cuenta con 512 expertos enrutados y uno compartido, y las Hyper-Connections mHC de 4 flujos conectan las representaciones entre capas. El checkpoint incorpora además un drafter DFlash2 calibrado para decodificación especulativa.
+El modelo base Qwen3.8-Flash-Next emplea una arquitectura MoE hibrida que combina 36 capas Gated DeltaNet (un mecanismo de atencion lineal con estado recurrente) y 12 capas de Qwen Sparse Attention (QSA), con un total de 48 capas. Cada capa MoE contiene 512 expertos enrutados mas un experto compartido, y el bloque incorpora conexiones hiper-residuales de cuatro flujos (mHC). El checkpoint WV6 no reentrena el modelo: aplica una cuantizacion agresiva a 2,45 bpw, conserva la capa PLE en Q4_0 puro dentro de safetensors y anade un indexador QSA disperso de 128K para el contexto largo.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base. La model card del checkpoint cuantizado no documenta el proceso de calibración de la cuantización wave-quant más allá de indicar que el indexer QSA y la tabla PLE en Q4_0 están calibrados. La innovación técnica destacable es el empaquetado de un runtime SASS exclusivo para `sm_120` que evita la compilación JIT en GPUs Blackwell, junto con la decodificación especulativa DFlash2 integrada.
+La innovacion tecnica principal de esta publicacion es el empaquetado de un runtime SASS-only especifico para `sm_120` (Blackwell) que incluye decodificacion especulativa con un drafter DFlash2 calibrado, cache de prefijo asincrono fijado en memoria y un servidor multiprotocolo. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens vistos, ni si se aplicaron fases de RLHF o DPO; esos datos no aparecen en la model card proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional con streaming SSE y contenido de razonamiento separado (`reasoning_content`).
-- Razonamiento matemático avanzado, evidenciado por un 80,0% de Pass@1 en AIME 2025.
-- Generación de código con soporte de FIM (`<|fim_prefix|>`) y un 76,0% de Pass@1 en LiveCodeBench v6.
+- Generacion de texto conversacional multi-turno con modo de razonamiento explicito (``) y `reasoning_content` en las respuestas.
+- Razonamiento matematico y resolucion de problemas (AIME 2025 con 80,0% Pass@1 segun la model card).
+- Generacion de codigo en produccion, incluida la modalidad FIM (fill-in-the-middle) mediante el token `<|fim_prefix|>`.
 - Tool calling y function calling con streaming incremental de argumentos JSON token a token.
 - Soporte de agentes multi-paso mediante endpoints compatibles con OpenAI Chat Completions, Anthropic Messages (Claude Code) y OpenAI Responses (Codex CLI).
-- Modo thinking con presupuesto configurable por petición (`thinking_token_budget`, `thinking.budget_tokens`).
-- Salidas estructuradas con `response_format` (`json_object` / `json_schema`) y FSM en GPU (100% de JSON válido observado).
-- Decodificación especulativa con el drafter DFlash2 integrado.
-- Caché de prefijo asíncrona anclada para compartir prefijos de sistema y esquemas de herramientas entre peticiones.
-- Capacidades multilingües: no disponible.
-- Capacidades de visión o audio: no disponibles.
+- Salida estructurada con `response_format` (`json_object` y `json_schema`) y FSM de JSON restringido por gramatica en GPU.
+- Control de presupuesto de razonamiento por peticion (`thinking_token_budget`, `thinking.budget_tokens`) con inyeccion limpia de ``.
+- Deteccion de repeticiones y guardas de bucle, `min_tokens`, `stop_token_ids` y ramificacion `n > 1`.
+- Cache de prefijo asincrono para compartir system prompts y esquemas de herramientas entre peticiones, con `cache_salt` para aislamiento por inquilino.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia de código en producción: el modelo puede integrarse en pipelines de CI/CD mediante el endpoint `/v1/completions` con FIM para autocompletado en editores, y su Pass@1 del 76,0% en LiveCodeBench v6 lo hace adecuado para revisión y generación de parches.
-- Agentes autónomos de línea de comandos: los endpoints nativos de Anthropic Messages y OpenAI Responses permiten conectarlo directamente a Claude Code o Codex CLI sin adaptadores intermedios, con tool calling en streaming.
-- Atención al cliente multi-turno: la ventana de 128K y la caché de prefijo anclada permiten mantener conversaciones largas reutilizando el prefijo de sistema entre peticiones, reduciendo el coste de prefill.
-- Razonamiento matemático asistido: con un 80,0% de Pass@1 en AIME 2025, es viable para tutoría, verificación de demostraciones y generación de problemas con solución.
-- Extracción de datos estructurados: el modo `json_schema` con FSM en GPU garantiza salidas JSON válidas, útil para pipelines de ETL y parsing de documentos.
-- Servicio multi-tenant con aislamiento: el parámetro `cache_salt` permite aislar la caché de prefijo por inquilino, adecuado para despliegues SaaS sobre una única GPU RTX PRO 6000.
-- Investigación sobre cuantización extrema: el checkpoint sirve como referencia reproducible para estudiar el impacto de 2,45 bpw en un MoE de 180B con atención híbrida.
+- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno con contexto largo gracias a su ventana de 128K y a la cache de prefijo asincrona, que reutiliza el system prompt entre peticiones y reduce la latencia en despliegues con muchos usuarios concurrentes.
+- Generacion de codigo en produccion: soporta tool calling, FIM y salida estructurada, por lo que puede integrarse en pipelines de CI/CD para autocompletar, revisar parches o generar tests con validacion JSON garantizada por el FSM en GPU.
+- Agentes autonomos de multiples pasos: los endpoints compatibles con Anthropic Messages y OpenAI Responses permiten conectarlo directamente a Claude Code o Codex CLI sin adaptadores, con streaming incremental de los argumentos de cada herramienta.
+- Asistencia matematica y cientifica: el rendimiento en AIME 2025 (24/30) y su modo de razonamiento con presupuesto de tokens lo hacen adecuado para tutoria o resolucion asistida de problemas, controlando el coste mediante `thinking_token_budget`.
+- Despliegue en una sola GPU profesional: con 54,43 GiB de VRAM residente en modo all-VRAM cabe en una RTX PRO 6000 de 96 GB, lo que permite servir un MoE de 180B sin cluster ni paralelismo multi-nodo.
+- Inferencia en estacion de trabajo con RTX 5090: el modo hibrido VRAM/RAM mantiene menos de 28 GiB residentes en GPU, habilitando prototipado y demos locales de un modelo de gran escala en hardware de consumo profesional.
+- Servicio de API interna compatible con OpenAI: el servidor expone `/v1/chat/completions`, `/v1/models`, `/metrics` (Prometheus) y `/slots`, lo que facilita integrarlo como backend en herramientas existentes sin reescribir clientes.
+- Generacion de JSON estrictamente valido: con `response_format: json_schema` y el FSM en GPU se obtiene un 100% de JSON valido a 248,76 tok/s en lote de 4, util para extraccion de datos o enrutamiento estructurado.
 
 ## Benchmarks y rendimiento
 
+Datos declarados por el autor en la model card, medidos sobre una NVIDIA RTX PRO 6000 Blackwell:
+
 | Benchmark / metrica | Resultado |
-|---|---|
-| AIME 2025 (`MathArena/aime_2025`, 30 problemas, Pass@1) | 24/30 (80,0%), 265,3 tok/s, `mean_tau` = 4,26 |
-| LiveCodeBench v6 completo (175 problemas, presupuesto 96K, Pass@1) | 133/175 (76,0%), 386,6 tok/s |
+|---|---:|
+| Perplejidad 8K QSA (`All_8192` / `Mid_2048_4096` / `Late_4096_8192`) | 3,1068 / 2,7302 / 3,2251 |
+| AIME 2025 (`MathArena/aime_2025`, 30 problemas, Pass@1) | 24/30 (80,0%), 265,3 tok/s, mean_tau 4,26 |
+| LiveCodeBench v6 completo (175 problemas, presupuesto 96K, Pass@1) | 133/175 (76,0%) |
 | LiveCodeBench v6 Easy | 97,67% (42/43) |
 | LiveCodeBench v6 Medium | 92,31% (48/52) |
 | LiveCodeBench v6 Hard-Top30 | 70,0% (21/30) |
-| Perplejidad 8K QSA (`All_8192`) | 3,1068 |
-| Perplejidad 8K QSA (`Mid_2048_4096`) | 2,7302 |
-| Perplejidad 8K QSA (`Late_4096_8192`) | 3,2251 |
-| Throughput especulativo B=1 | 183,70 tok/s (`mean_tau` = 3,491) |
-| Throughput especulativo B=2 (16K Sparse-QSA) | 306,00 tok/s (`mean_tau` = 4,667) |
-| Throughput especulativo B=4 | 349,76 tok/s (`mean_tau` = 3,917) |
-| Throughput especulativo B=8 | 477,13 tok/s (`mean_tau` = 3,559) |
-| Throughput especulativo B=16 | 665,65 tok/s (`mean_tau` = 3,568) |
-| JSON FSM en GPU (B=4) | 248,76 tok/s, 100% JSON válido, `mean_tau` = 3,538 |
+| Throughput especulativo B=1 | 183,70 tok/s (mean_tau 3,491) |
+| Throughput especulativo B=2 (16K QSA disperso) | 306,00 tok/s (mean_tau 4,667) |
+| Throughput especulativo B=4 | 349,76 tok/s (mean_tau 3,917) |
+| Throughput especulativo B=8 | 477,13 tok/s (mean_tau 3,559) |
+| Throughput especulativo B=16 | 665,65 tok/s (mean_tau 3,568) |
+| JSON FSM en GPU (B=4) | 248,76 tok/s, 100% JSON valido, mean_tau 3,538 |
 
-No se han publicado resultados de benchmarks comparativos frente a otros modelos en la información disponible.
+No se han publicado en la informacion disponible resultados comparativos con otros modelos (MMLU, HumanEval u otros) mas alla de los anteriores.
 
 ## Requisitos de hardware
 
-- VRAM residente en modo `all_vram`: 54,43 GiB en GPU, más 26,82 GiB de tabla PLE en RAM anclada del host.
-- Modo híbrido en RTX 5090 de 32 GiB: menos de 28,0 GiB residentes en GPU (`fits_32gib_rtx5090 = true`), con tiering hacia RAM del host y un mínimo de 64 GB de RAM del sistema.
-- GPU soportadas: exclusivamente NVIDIA Blackwell `sm_120`, es decir, RTX PRO 6000 (96 GB) o RTX 5090 (32 GB).
-- No es compatible con GPUs Ampere, Ada Lovelace ni Hopper, ya que el runtime es SASS precompilado para `sm_120`.
-- Entorno de software: Linux x86_64, Python 3.13, `torch==2.14.1+cu130` (CUDA 13.0) y `transformers>=5.22.1`.
-- Despliegue: servidor propio incluido en la wheel `qfn_sm120_unified` (`python -m qfn_sm120_unified.serve`), con soporte de batching continuo, endpoints OpenAI, Anthropic y Responses, métricas Prometheus en `/metrics` y gestión de slots en `/slots`.
-- No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Throughput observado: de 183,70 tok/s con lote 1 a 665,65 tok/s con lote 16 en RTX PRO 6000.
+- VRAM estimada en modo all-VRAM: 54,43 GiB residentes en GPU, mas 26,82 GiB de PLE fijados en RAM del host (`ple_q4_0.safetensors`).
+- Modo hibrido para RTX 5090 de 32 GB: menos de 28,0 GiB residentes en GPU (`fits_32gib_rtx5090 = true`), con tiering VRAM/RAM.
+- GPU soportadas por el runtime: NVIDIA Blackwell `sm_120` (RTX PRO 6000 de 96 GB o RTX 5090 de 32 GB con al menos 64 GB de RAM de sistema). El wheel universal cubre `sm_80`-`sm_120a` en Linux y Windows, pero el checkpoint esta empaquetado para `sm_120`.
+- Requisitos de software: Linux x86_64, Python 3.13, `torch==2.14.1+cu130` (CUDA 13.0), `transformers>=5.22.1` y `safetensors`.
+- Despliegue: runtime propietario `qfn_sm120_unified` (v22.4.0) instalado via `wv_runtime_installer` 1.5.2; expone servidor compatible con OpenAI, Anthropic y OpenAI Responses. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Throughput observado: de 183,70 tok/s (B=1) a 665,65 tok/s (B=16) en decodificacion especulativa; 248,76 tok/s con JSON FSM en B=4.
+- Tamano en disco del repositorio: 79,5 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato / runtime | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120 (este) | 180B (MoE) | 128K | Apache 2.0 | safetensors cuantizado 2,45 bpw | Solo Blackwell `sm_120`; runtime propio |
-| Qwen/Qwen3.8-Flash-Next (base) | 180B (MoE) | 128K | Apache 2.0 | safetensors sin cuantizar | Requiere hardware de mayor capacidad; datos de despliegue no disponibles |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+| Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120 (este) | 180B (MoE) | 128K | Apache 2.0 | safetensors + runtime `sm_120` propietario | Cuantizado a 2,45 bpw; solo Blackwell |
+| Qwen/Qwen3.8-Flash-Next (base) | 180B (MoE) | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar; requiere mucho mas VRAM |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks comparables en la informacion proporcionada |
+
+No se han encontrado en la informacion proporcionada otros modelos cuantizados directamente comparables con resultados de benchmarks publicados.
 
 ## Limitaciones y advertencias
 
-- Dependencia total de hardware Blackwell `sm_120`: el runtime es SASS precompilado y no funciona en arquitecturas anteriores ni en otras marcas de aceleradores.
-- El modo de 32 GiB en RTX 5090 requiere tiering hacia RAM del host y al menos 64 GB de memoria del sistema, lo que degrada la latencia frente al modo `all_vram`.
-- La cuantización a 2,45 bpw puede introducir degradación en tareas sensibles a la precisión numérica; no se han publicado comparativas frente al modelo base sin cuantizar.
-- La model card no documenta sesgos conocidos, tasas de alucinación ni evaluación de seguridad.
-- No se especifican los idiomas soportados, por lo que el rendimiento fuera del inglés y el chino es desconocido.
-- La licencia Apache 2.0 permite uso comercial, pero el autor del checkpoint no ofrece garantías sobre la calidad del proceso de cuantización.
-- El repositorio tiene 0 likes y fue creado en noviembre de 2026, con un ciclo de actualización de tres días; conviene verificar la integridad de los shards antes de desplegar en producción.
-- El servidor incluido expone endpoints sin autenticación por defecto; debe configurarse `--api-key` o `QFN_API_KEY` en entornos accesibles.
-- La tabla PLE en Q4_0 reside en RAM del host, lo que añade un punto de fallo y requiere memoria anclada suficiente.
+- Dependencia de hardware: el checkpoint esta empaquetado para `sm_120` (Blackwell) y el runtime es SASS-only; no funcionara en GPUs Ampere, Ada u Hopper sin una version distinta del runtime.
+- Runtime propietario: la inferencia requiere el wheel `wv_runtime_installer` y el paquete `qfn_sm120_unified`, no integrables con vLLM, llama.cpp, Ollama o TGI, lo que limita la portabilidad y la auditoria del codigo.
+- Cuantizacion agresiva a 2,45 bpw: aunque la perplejidad 8K declarada es de 3,1068, no se ofrecen comparaciones con el modelo base sin cuantizar, por lo que la degradacion real frente a los pesos originales no esta cuantificada.
+- Idiomas soportados no declarados: la model card no especifica la cobertura multilingue, lo que impide garantizar calidad fuera del ingles.
+- Sesgos conocidos: no se documenta ninguna evaluacion de sesgos, toxicidad o alineacion en la informacion disponible.
+- Riesgo de alucinacion: inherente a los modelos generativos; el autor menciona guardas de repeticion y presupuesto de razonamiento, pero no se aportan metricas de fidelidad factual.
+- Repositorio de 79,5 GB: la descarga y el almacenamiento requieren planificacion; se recomienda `HF_XET_HIGH_PERFORMANCE=1` para acelerar la transferencia.
+- Ausencia de likes y de validacion externa: el modelo acumula 1.719 descargas y 0 likes en el momento de la consulta, sin evaluaciones independientes conocidas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el runtime asociado se distribuye por separado y conviene revisar sus terminos antes de desplegarlo en produccion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v6-2.45bpw-SM120
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Runtime universal: https://huggingface.co/Grawnch/wv-runtime-binaries
+- Wheel del instalador: https://huggingface.co/Grawnch/wv-runtime-binaries/resolve/main/wheels/wv_runtime_installer-1.5.2-py3-none-any.whl
 - Benchmark AIME 2025: https://huggingface.co/datasets/MathArena/aime_2025
+- Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

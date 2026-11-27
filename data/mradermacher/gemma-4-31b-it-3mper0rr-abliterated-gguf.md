@@ -2,50 +2,50 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF` es una distribucion de pesos en formato GGUF de un modelo de lenguaje de 30.697.345.596 parametros (aproximadamente 31B) derivado de la familia Gemma 4 en su variante instruct. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF de modelos abiertos, mientras que el modelo base es `3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated`, una version "abliterated" (con las direcciones de rechazo atenuadas o eliminadas) del Gemma 4 31B instruct.
+`mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF` es una coleccion de cuantizaciones GGUF del modelo `3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated`, un derivado "abliterated" (es decir, con los rechazos de seguridad atenuados mediante intervencion en los pesos) del modelo instructivo Gemma 4 de 31 mil millones de parametros. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de versiones GGUF de la comunidad, y el modelo base procede del usuario 3MPER0RR.
 
-El modelo resuelve el problema de desplegar un LLM de ~31B en hardware de consumo o en entornos con recursos limitados mediante cuantizacion K-quant e IQ-quant, con tamanos que van desde 12,0 GB (Q2_K) hasta 32,7 GB (Q8_0). La relevancia actual radica en que permite ejecutar localmente un modelo de gran contexto y capacidades multimodales (se incluyen ficheros `mmproj` para el proyector multimodal) sin depender de infraestructura en la nube.
+El modelo resuelve el problema de ejecutar un LLM de aproximadamente 30.700 millones de parametros en hardware de consumo o en entornos con recursos limitados, ofreciendo desde cuantizaciones de 2 bits (12,0 GB) hasta 8 bits (32,7 GB). Al tratarse de una variante abliterated, esta orientado a usuarios que necesitan respuestas sin los filtros de rechazo habituales del modelo original, lo que lo hace relevante para investigacion sobre alineamiento, generacion creativa sin restricciones y evaluacion de sesgos.
 
-La informacion disponible no detalla la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks. La model card se limita a describir el proceso de cuantizacion y los ficheros generados. La licencia declarada es Apache 2.0 y el unico idioma listado es el ingles.
+La informacion disponible es limitada: la model card del repositorio GGUF es una plantilla automatica de cuantizacion y no documenta arquitectura, contexto, datos de entrenamiento ni benchmarks. Los datos tecnicos que se ofrecen a continuacion proceden del repositorio de Hugging Face y de la convencion de nombres del modelo base; el resto se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4; detalles no disponibles) |
-| Parametros totales | 30.697.345.596 (~30,7B) |
+| Arquitectura | no disponible (modelo base Gemma 4; familia transformer, sin confirmar en la informacion proporcionada) |
+| Parametros totales | 30.697.345.596 (segun safetensors del modelo base) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ademas mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
+| Idiomas soportados | en (segun metadatos; el modelo base podria soportar mas, pero no se confirma) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con ficheros mmproj para el componente multimodal) |
+| Formato de pesos | GGUF (el modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Gemma 4 en variante instruct (sufijo `it`), aunque la informacion proporcionada no especifica el numero de capas, la dimension del modelo, el mecanismo de atencion ni la longitud de contexto nativa. La unica innovacion documentada en esta ficha es el proceso de "abliteration" aplicado por el autor del modelo base, una tecnica de edicion de pesos que busca reducir el comportamiento de rechazo del modelo sin reentrenamiento, y la posterior cuantizacion GGUF realizada por mradermacher.
+No se dispone de informacion detallada sobre la arquitectura en la documentacion proporcionada. El modelo base se distribuye en formato safetensors y pertenece a la familia Gemma 4, lo que sugiere una arquitectura transformer decoder-only, pero la model card no confirma capas, atencion, contexto ni vocabulario. La presencia de ficheros `mmproj` indica que el modelo base incorpora un proyector multimodal, es decir, capacidad de procesar imagenes ademas de texto, aunque no se detalla el codigo del vision encoder.
 
-El proceso de cuantizacion incluye versiones K-quant estaticas y, segun la model card, existe un repositorio separado con cuantizaciones ponderadas/imatrix (`gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF`). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO en el modelo original.
+Respecto al entrenamiento, la informacion disponible no incluye numero de tokens, composicion del dataset, ni si hubo RLHF, DPO o ajuste instructivo. La etiqueta "abliterated" implica que se ha aplicado una tecnica de ortogonalizacion o ablacion de direcciones en el espacio de activaciones para reducir la tendencia del modelo a rechazar peticiones, pero no se documenta el metodo concreto ni el alcance de la intervencion. El autor de la cuantizacion solo indica que se trata de "static quants" del modelo base, sin imatrix (los quants con imatrix estan en un repositorio separado).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
-- Capacidades multimodales: el repositorio incluye ficheros `mmproj-Q8_0` y `mmproj-f16` que permiten el procesamiento de entradas visuales junto con texto.
-- Instruccion y seguimiento de conversaciones multi-turno (variante `it`).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- No se documenta soporte explicito de tool calling, function calling ni razonamiento multi-paso.
-- No se documenta modo de razonamiento (thinking mode), audio ni otras capacidades especiales.
-- Multilingue: no disponible; solo se declara ingles.
+- Generacion de texto conversacional: el modelo base es de tipo instructivo (`-it`), orientado a dialogos multi-turno.
+- Capacidad multimodal: la presencia de ficheros `mmproj` indica soporte de entrada de imagenes, aunque no se detalla su alcance.
+- Respuestas sin filtros de rechazo: la variante abliterated elimina o atenua las negativas del modelo original ante peticiones sensibles.
+- Idiomas: los metadatos solo declaran ingles (`en`); no se confirma soporte multilingue.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Modo de razonamiento o thinking: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
 
 ## Casos de uso
 
-- Despliegue local de un asistente conversacional: con la cuantizacion Q4_K_M (18,8 GB) el modelo puede ejecutarse en una GPU de consumo de 24 GB como la RTX 4090, ofreciendo respuestas conversacionales en ingles sin conexion a servicios externos.
-- Procesamiento de documentos con imagenes: los ficheros `mmproj` permiten usar el modelo para tareas de descripcion de imagenes, extraccion de texto de capturas o analisis de diagramas combinados con preguntas en lenguaje natural.
-- Investigacion sobre alineacion y seguridad: al tratarse de una variante "abliterated", resulta util para estudiar el comportamiento del modelo sin las capas de rechazo, comparando respuestas frente al Gemma 4 instruct original.
-- Prototipado en estaciones de trabajo con una sola GPU: las cuantizaciones Q3_K_S (13,9 GB) o IQ4_XS (17,0 GB) permiten iterar rapidamente en tarjetas de 16-24 GB con llama.cpp u Ollama.
-- Generacion de texto por lotes en servidores sin acelerador dedicado: la version Q2_K (12,0 GB) puede ejecutarse en CPU con memoria RAM suficiente, aunque con menor calidad.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 11 variantes de cuantizacion del mismo modelo, lo que facilita estudios de degradacion de calidad frente a tamano.
-- Fine-tuning o distillation sobre un modelo base sin restricciones de rechazo: la licencia Apache 2.0 y el formato GGUF permiten su uso como punto de partida en pipelines de investigación.
+- Investigacion sobre alineamiento y seguridad: comparar el comportamiento del modelo abliterated frente al Gemma 4 original permite estudiar como la ablacion de direcciones afecta a la tasa de rechazos y a la calidad de las respuestas.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde el modelo original rechazaria peticiones.
+- Despliegue en hardware de consumo: con la cuantizacion Q4_K_M (18,8 GB) el modelo puede ejecutarse en una GPU con 24 GB de VRAM, algo imposible con los pesos en safetensors (mas de 60 GB en fp16).
+- Experimentacion con modelos multimodales en local: los ficheros `mmproj` permiten probar entrada de imagenes junto con texto usando llama.cpp, sin depender de APIs en la nube.
+- Analisis de sesgos: al eliminar los filtros de seguridad, el modelo puede revelar sesgos latentes que el ajuste instructivo ocultaba, util para auditorias de equidad.
+- Prototipado de asistentes conversacionales en ingles: con la cuantizacion Q5_K_M (21,9 GB) se obtiene un equilibrio entre calidad y requisitos de memoria para pruebas de concepto.
+- Evaluacion de tecnicas de cuantizacion: el repositorio ofrece 11 variantes de cuantizacion del mismo modelo, lo que permite medir el impacto de cada tipo en perplejidad y calidad de generacion.
 
 ## Benchmarks y rendimiento
 
@@ -53,48 +53,53 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
-  - Q2_K: ~12,0 GB de pesos; ~14-16 GB con contexto moderado.
-  - Q3_K_S: ~13,9 GB; ~16-18 GB.
-  - IQ4_XS: ~17,0 GB; ~19-21 GB.
-  - Q4_K_M: ~18,8 GB; ~21-23 GB.
-  - Q5_K_M: ~21,9 GB; ~24-26 GB.
-  - Q6_K: ~25,3 GB; ~27-30 GB.
-  - Q8_0: ~32,7 GB; ~35-38 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; A100 40 GB o H100 para Q6_K y Q8_0; RTX 3090 (24 GB) para Q4_K_M.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 (24 GB) con Q4_K_M o inferiores; en tarjetas de 16 GB solo con Q3_K_S o Q2_K.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere integracion con endpoints tipo TGI o vLLM, aunque no se detalla.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: 12,0 GB
+  - Q3_K_S: 13,9 GB
+  - Q3_K_M: 15,4 GB
+  - Q3_K_L: 16,7 GB
+  - IQ4_XS: 17,0 GB
+  - Q4_K_S: 17,9 GB
+  - Q4_K_M: 18,8 GB
+  - Q5_K_S: 21,4 GB
+  - Q5_K_M: 21,9 GB
+  - Q6_K: 25,3 GB
+  - Q8_0: 32,7 GB
+  - mmproj-Q8_0: 0,9 GB adicionales; mmproj-f16: 1,3 GB adicionales
+- GPU recomendadas: para Q4_K_M o inferiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q6_K y Q8_0 se recomienda A100 40 GB, H100 80 GB o configuraciones multi-GPU.
+- Cabe en consumer GPU: si, en GPUs de 16 GB con cuantizaciones Q3_K_S o inferiores (con contexto reducido); en GPUs de 24 GB con Q4_K_M y Q5_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los quants con imatrix estan en el repositorio `mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF`. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-31b-it-3MPER0RR-abliterated-GGUF (este) | ~30,7B | no disponible | Apache 2.0 | GGUF | Variante abliterated cuantizada |
-| Gemma 4 31B IT (original) | ~30,7B | no disponible | no disponible en esta ficha | safetensors | Modelo base sin abliteration |
-| Gemma 2 27B IT | ~27B | 8K | Gemma license | safetensors, GGUF | Generacion anterior, menor tamano |
-| Qwen2.5 32B Instruct | ~32B | 128K | Apache 2.0 | safetensors, GGUF | Alternativa de tamano similar con contexto largo |
+| gemma-4-31b-it-3MPER0RR-abliterated-GGUF (este) | 30,7 B | no disponible | apache-2.0 | GGUF | Cuantizaciones estaticas, sin imatrix |
+| gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF | 30,7 B | no disponible | apache-2.0 | GGUF | Mismo modelo con cuantizaciones imatrix |
+| 3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated | 30,7 B | no disponible | apache-2.0 | safetensors | Modelo base sin cuantizar |
+| Gemma 4 31B IT (original) | 30,7 B | no disponible | no disponible | safetensors | Modelo de referencia con filtros de seguridad |
 
-La comparativa con Gemma 4 31B IT y Gemma 2 27B IT se basa en conocimiento general de la familia; los datos concretos de contexto y licencia del Gemma 4 original no estan disponibles en la informacion proporcionada.
+No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La variante "abliterated" elimina o atenua los mecanismos de rechazo, lo que puede producir respuestas a solicitudes daninas o inapropiadas; no es recomendable para aplicaciones orientadas al publico sin capas adicionales de moderacion.
-- Riesgo de alucinacion inherente a los LLM de esta escala; no se han publicado evaluaciones de fidelidad.
-- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
-- La longitud de contexto no esta documentada, lo que impide planificar cargas de trabajo con ventanas largas.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad; la model card recomienda Q4_K_M o superiores para uso general.
-- La licencia Apache 2.0 se aplica a esta distribucion, pero debe verificarse la licencia del modelo base Gemma 4 original, que puede imponer restricciones adicionales de uso comercial.
-- El repositorio tiene 348 descargas y 0 likes, lo que indica poca validacion comunitaria.
-- No se documentan resultados de benchmarks ni evaluaciones de seguridad.
+- La variante abliterated elimina o reduce los rechazos de seguridad: el modelo puede generar contenido danino, ofensivo o ilegal sin advertir. No es apto para aplicaciones de cara al publico sin capas de moderacion adicionales.
+- Riesgo elevado de alucinacion: no se han publicado evaluaciones de fidelidad factual para este derivado.
+- Idiomas: los metadatos solo declaran ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Contexto: se desconoce la longitud de ventana; no debe asumirse un contexto largo sin verificacion empirica.
+- Licencia apache-2.0: permite uso comercial, pero el modelo base y su derivado abliterated pueden estar sujetos a los terminos de Gemma; conviene revisar la licencia del modelo original antes de desplegar en produccion.
+- Cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan notablemente la calidad; el autor recomienda Q4_K_S o Q4_K_M para uso general y Q6_K o Q8_0 cuando la calidad es critica.
+- La model card no documenta el proceso de abliteration ni sus efectos colaterales sobre capacidades como matematicas o codigo.
+- El repositorio tiene 981 descargas y 0 likes, lo que indica una validacion comunitaria muy limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-31b-it-3MPER0RR-abliterated-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- README de referencia para GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests

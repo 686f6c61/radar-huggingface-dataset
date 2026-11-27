@@ -2,106 +2,105 @@
 
 ## Resumen
 
-Qwen3-Embedding-8B-AX8860-llama.cpp es un paquete de despliegue publicado por AXERA-TECH que adapta el modelo de embeddings Qwen3-Embedding-8B (desarrollado originalmente por el equipo Qwen de Alibaba) para ejecutarse sobre la NPU de cuatro nucleos del SoC AX8860 de la propia Axera. No se trata de un modelo nuevo: los pesos provienen integramente del GGUF del modelo base, y el aporte del repositorio es la infraestructura de ejecucion (kernels NPU, binarios estaticos de llama.cpp y scripts de arranque y benchmark).
+Qwen3-Embedding-8B-AX8860-llama.cpp es una distribucion empaquetada del modelo de embeddings Qwen3-Embedding-8B de Alibaba Qwen, adaptada por AXERA-TECH para ejecutarse en la NPU de cuatro nucleos del SoC AX8860 mediante una bifurcacion de llama.cpp con backend ggml-axera. El modelo base es un transformer de 36 capas con dimension oculta 4096 que produce vectores de embedding de 4096 dimensiones, con 7.567.295.488 parametros totales. El repositorio incluye los pesos en formato GGUF BF16 (15,1 GB), los binarios estaticos para la placa (`llama-embedding` y `llama-server`), los kernels NPU precompilados y scripts de ejecucion y benchmark.
 
-El modelo base es un transformer de 36 capas con dimension oculta de 4096 que genera vectores de embedding de 4096 dimensiones, orientado a recuperacion de informacion, busqueda semantica y tareas de similitud textual. Con 7.567.295.488 parametros totales y un contexto fijo de 4096 tokens, esta pensado para cargas de trabajo de embeddings en produccion mas que para generacion de texto.
+El problema que resuelve es la ejecucion de un modelo de embeddings de gran tamano en hardware de borde con aceleracion NPU, sin depender de una GPU dedicada ni de servicios en la nube. La distribucion expone una API compatible con OpenAI (`/v1/embeddings`) y permite tanto la generacion de vectores individuales como el procesamiento por lotes desde fichero de texto, lo que facilita su integracion en pipelines de recuperacion (RAG) desplegados on-premise.
 
-La relevancia de este paquete es que demuestra la viabilidad de ejecutar un modelo de embeddings de casi 8.000 millones de parametros en hardware de borde (edge) con aceleracion NPU, con una fidelidad numerica muy alta respecto a la referencia en CPU (coseno minimo de 0,999595 en 20 frases de prueba) y latencias de 232 ms para 256 tokens y 3,4 s para 4096 tokens.
+Es relevante ahora porque demuestra la viabilidad de servir un modelo de embeddings de 8B en silicio de borde con contexto fijo de 4096 tokens y latencias medidas en el propio paquete: 232,4 ms para 256 tokens, 838,3 ms para 1024 tokens y 3421,5 ms para 4096 tokens. La ficha se centra en esta distribucion concreta; los datos del modelo base que no figuren en la informacion proporcionada se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (36 capas, hidden 4096), modelo de embeddings |
+| Arquitectura | Transformer (modelo base Qwen3-Embedding-8B); 36 capas, hidden 4096, embeddings de 4096 dimensiones |
 | Parametros totales | 7.567.295.488 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 tokens (fijo) |
-| Tipos de cuantizacion | BF16 (unico formato incluido en el paquete) |
-| Idiomas soportados | no disponible (la model card del paquete no los declara; el benchmark de correccion usa frases en chino e ingles) |
+| Parametros activos | no disponible (no es MoE segun la informacion proporcionada) |
+| Longitud de contexto | 4096 tokens (fijo en esta distribucion) |
+| Tipos de cuantizacion | BF16 (unico formato empaquetado en este repositorio) |
+| Idiomas soportados | no disponible de forma oficial; la validacion de correctitud cubre chino e ingles |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (BF16, 15,1 GB) |
-| Dimension del embedding | 4096 |
-| Hardware objetivo | NPU AX8860 de 4 nucleos (SDK V0.5.0 o superior) |
-| Runtime | llama.cpp con ggml-axera (fork ZHEQIUSHUI/llama.cpp @ 1970d6c5d) |
-| Tamano del repo | 15,2 GB |
+| Formato de pesos | GGUF (BF16), 15,1 GB |
+| Pooling | last (`--pooling last`) |
+| Backend de ejecucion | llama.cpp con ggml-axera sobre NPU AX8860 (4 nucleos) |
+| Requisitos de SDK | AX8860 con SDK V0.5.0 o superior |
+| Tamano del repositorio | 15,2 GB |
+| Descargas / likes | 198 / 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3-Embedding-8B, un transformer denso de 36 capas y 4096 dimensiones ocultas que produce representaciones vectoriales de 4096 dimensiones. El paquete no aporta informacion sobre el proceso de entrenamiento del modelo base (numero de tokens, composicion del corpus, uso de RLHF/DPO o tecnicas de contraste); esa informacion corresponderia a la model card original de Qwen, que no se incluye en los datos disponibles.
+El modelo subyacente es Qwen3-Embedding-8B, un transformer de 36 capas con dimension oculta 4096 que genera representaciones vectoriales de 4096 dimensiones para tareas de recuperacion y similitud semantica. Esta distribucion no reentrena el modelo: parte de los pesos originales y los convierte a GGUF BF16. En tiempo de carga, los bancos de pesos BF16 se convierten y se copian como bloques completos a la memoria CMM de la NPU, y la cache KV se mantiene tambien en BF16.
 
-La innovacion tecnica de este repositorio es de caracter de despliegue: los bancos de pesos BF16 se convierten en tiempo de carga y se copian como bloques completos a la memoria CMM del SoC, con una KV cache tambien en BF16. Todo el modelo se empaqueta como un unico kernel NPU descrito por un `manifest.json`. El servidor se arranca con `--embedding --pooling last -np 1`, es decir, pooling sobre el ultimo token y una sola ranura de procesamiento. El binario `llama-server` expone una API compatible con el endpoint `/v1/embeddings` de OpenAI.
+La innovacion tecnica principal es el backend ggml-axera integrado en la bifurcacion de llama.cpp de ZHEQIUSHUI (commit `6613735ce`), que compila el modelo completo en un unico kernel NPU descrito por `manifest.json`. El servidor se lanza con `--embedding --pooling last -np 1`, y la invocacion directa requiere `LD_LIBRARY_PATH=/opt/lib`, `GGML_AXERA_KERNEL_DIR=<repo>/kernels` y `-ngl 99`. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni sobre si el modelo base uso RLHF o DPO.
 
 ## Capacidades
 
 - Generacion de embeddings de texto normalizados en L2, con 4096 dimensiones por entrada.
-- Procesamiento por lotes: el script `run.sh -f texts.txt` genera un embedding por linea de entrada.
-- Servicio HTTP compatible con OpenAI (`/v1/embeddings`), lo que permite integrarlo en pipelines existentes sin cambios de cliente.
+- Procesamiento por lotes: una linea de un fichero de texto produce un embedding (`./run.sh -f texts.txt`).
+- Servidor compatible con OpenAI: endpoint `/v1/embeddings` que acepta listas de cadenas de entrada.
 - Soporte de prefijos de instruccion para consultas de recuperacion, segun lo especificado en la model card del modelo base.
-- Capacidades multilingues: no declaradas explicitamente en el paquete; la validacion de correccion cubre chino e ingles.
-- No soporta generacion de texto, tool calling, razonamiento multi-paso ni modalidades de vision o audio: es exclusivamente un modelo de extraccion de caracteristicas (feature extraction).
+- Uso en tareas de similitud semantica, busqueda densa y recuperacion aumentada por generacion (RAG).
+- Capacidad multilingue: la validacion del paquete cubre oraciones en chino e ingles; el resto de idiomas no esta documentado en esta distribucion.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso, y no tiene modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Busqueda semantica sobre corpus documentales: indexar fragmentos de hasta 4096 tokens y recuperar por similitud coseno; el contexto fijo de 4096 tokens encaja con chunking estandar de RAG.
-- RAG (retrieval-augmented generation) en el borde: desplegar el servidor de embeddings en el propio dispositivo AX8860 evita enviar documentos sensibles a la nube y elimina la latencia de red.
-- Deduplicacion y agrupamiento de documentos: generar embeddings por lotes con `run.sh -f` y aplicar clustering sobre los vectores de 4096 dimensiones.
-- Clasificacion zero-shot por similitud: comparar la representacion de un texto con las de etiquetas descriptivas, util para triaje de tickets o moderacion sin entrenamiento adicional.
-- Sistemas de recomendacion basados en contenido: vectorizar catalogos de articulos y perfiles de usuario para calcular afinidad semantica.
-- Monitorizacion de similitud en produccion: detectar derivas o duplicados en flujos de datos comparando embeddings de referencias historicas frente a nuevas entradas.
-- Evaluacion de calidad de traduccion o parafrasis: medir similitud semantica entre original y variante mediante coseno sobre los vectores generados.
+- Busqueda semantica on-premise: indexar documentos con los embeddings de 4096 dimensiones y resolver consultas con prefijo de instruccion; la NPU del AX8860 permite mantener el servicio en el propio dispositivo sin GPU.
+- RAG en entornos con requisitos de privacidad: el modelo se ejecuta integramente en la placa y expone `/v1/embeddings`, de modo que los textos no salen de la infraestructura local.
+- Deduplicacion y agrupamiento de documentos: calcular embeddings por lotes desde fichero y agrupar por similitud coseno; la validacion reporta una similitud minima de 0,999595 frente a la referencia de transformers en CPU.
+- Clasificacion y enrutado por similitud: comparar la consulta del usuario contra un conjunto de prototipos embebidos para dirigirla al flujo o al modelo generativo adecuado.
+- Sistemas de recomendacion basados en contenido: representar items y perfiles de usuario como vectores y ordenar candidatos por cercania en el espacio de 4096 dimensiones.
+- Filtrado y moderacion semantica: detectar entradas proximas a patrones conocidos comparando embeddings en tiempo de peticion, con latencias de 232,4 ms para entradas de 256 tokens.
+- Evaluacion de calidad de traduccion o parafrasis: medir la similitud entre pares de oraciones en chino e ingles, el escenario cubierto por la validacion del paquete.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido con `bench.sh` sobre NPU AX8860 de 4 nucleos, tres ejecuciones por tamano de entrada:
+Rendimiento de inferencia medido con `bench.sh` en la NPU AX8860 de cuatro nucleos, tres ejecuciones por tamano de entrada:
 
-| Longitud de entrada | Mediana | Minimo | Maximo |
+| Entrada | Latencia mediana | Minimo | Maximo |
 |---|---:|---:|---:|
 | 256 tokens | 232,4 ms | 230,4 ms | 438,7 ms |
 | 1024 tokens | 838,3 ms | 836,4 ms | 891,9 ms |
 | 4096 tokens (entrada real 4095) | 3421,5 ms | 3420,0 ms | 3554,0 ms |
 
-Correccion frente a la referencia de transformers en CPU:
+Correctitud frente a la referencia de transformers en CPU: 20 oraciones en chino e ingles, coseno minimo 0,999595 y coseno medio 0,999746; en 4 consultas de recuperacion, el orden de documentos y el top-1 coinciden exactamente con la referencia.
 
-| Metrica | Valor |
-|---|---|
-| Coseno minimo (20 frases chino/ingles) | 0,999595 |
-| Coseno medio | 0,999746 |
-| Coincidencia de orden y top-1 en 4 consultas de recuperacion | 100 % |
-
-No se han publicado resultados de benchmarks estandar (MMLU, MTEB, etc.) en la informacion disponible.
+No se han publicado en la informacion disponible resultados de benchmarks academicos (MMLU, MTEB, HumanEval, GSM8K u otros) para esta distribucion.
 
 ## Requisitos de hardware
 
-- Hardware obligatorio: SoC AX8860 con NPU de 4 nucleos y SDK V0.5.0 o superior. No se contempla ejecucion en GPU convencional con este paquete.
-- Memoria: el GGUF BF16 ocupa 15,1 GB; el repositorio completo son 15,2 GB. Los bancos de pesos se copian integros a la memoria CMM del SoC, por lo que se requiere capacidad de memoria del sistema acorde.
-- No cabe en GPU de consumo (RTX 4090, etc.) con este paquete tal cual; seria necesario convertir los pesos a otro formato y usar llama.cpp estandar, extremo no documentado en la informacion disponible.
-- Despliegue: binarios estaticos `llama-embedding` y `llama-server` incluidos en `bin/`, con `LD_LIBRARY_PATH=/opt/lib`, `GGML_AXERA_KERNEL_DIR=<repo>/kernels` y `-ngl 99`.
-- La NPU queda ocupada en exclusiva por el proceso (`-np 1`), lo que limita el paralelismo a una peticion simultanea.
-- Latencia y throughput: ver tabla de benchmarks; el coste escala de forma aproximadamente lineal con la longitud de entrada.
+- Hardware obligatorio: SoC AX8860 con NPU de cuatro nucleos y SDK V0.5.0 o superior. La distribucion no esta pensada para GPU de escritorio ni para CPU generica.
+- Memoria: los pesos BF16 ocupan 15,1 GB y se copian como bancos completos a la memoria CMM de la NPU; el modelo toma los cuatro nucleos NPU en exclusiva durante la ejecucion.
+- VRAM estimada en GPU: no disponible; el paquete no incluye pesos para CUDA ni para otros backends.
+- GPU recomendadas: no aplica a esta distribucion. Para ejecutar el modelo base Qwen3-Embedding-8B en GPU haria falta el repositorio original, cuyos requisitos no se detallan en la informacion proporcionada.
+- Despliegue: binarios estaticos `llama-embedding` y `llama-server` incluidos en `bin/`, con `run.sh` como lanzador. No se documenta soporte para vLLM, Ollama ni TGI en este paquete.
+- Throughput: con 838,3 ms por entrada de 1024 tokens en una unica instancia (`-np 1`), el rendimiento ronda 1,2 entradas por segundo a esa longitud; a 256 tokens, aproximadamente 4,3 entradas por segundo. No se documenta procesamiento concurrente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Dimension embedding | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Dimension de embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Embedding-8B-AX8860 (este paquete) | 7,57 B | 4096 | 4096 | no disponible | GGUF BF16 + binarios AX8860 |
-| Qwen/Qwen3-Embedding-8B (modelo base) | 7,57 B | no disponible en los datos | 4096 | no disponible | Hugging Face (pesos originales) |
-| Otros modelos de embeddings de ~8 B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-Embedding-8B-AX8860-llama.cpp (esta ficha) | 7,57B | 4096 | 4096 | no disponible | GGUF BF16 para NPU AX8860 |
+| Qwen/Qwen3-Embedding-8B (modelo base) | 7,57B | no disponible en la informacion | 4096 | no disponible en la informacion | Pesos originales en Hugging Face |
+| Alternativas de otros tamanos o familias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo (MTEB u otros) para establecer una comparacion cuantitativa con alternativas.
+La informacion proporcionada no incluye datos de rendimiento del modelo base ni de modelos competidores, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Contexto fijo de 4096 tokens: no admite entradas mas largas sin truncado; el benchmark envia 4095 tokens para dejar margen al token adicional que pueda anadir el servidor.
-- La NPU de 4 nucleos queda monopolizada por el proceso, con una sola ranura (`-np 1`); no es adecuado para servir cargas concurrentes altas.
-- Solo se distribuyen pesos en BF16; no hay variantes cuantizadas a menor precision en el paquete, lo que fija el requisito de memoria en 15,1 GB.
-- Dependencia estricta de hardware y SDK propietarios (AX8860, SDK V0.5.0+), lo que limita la portabilidad.
-- La licencia no esta declarada en la informacion disponible; debe verificarse en el repositorio del modelo base antes de cualquier uso comercial.
-- Los idiomas soportados no estan declarados; la validacion solo cubre chino e ingles, por lo que el comportamiento en castellano no esta verificado en este paquete.
-- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de representaciones pobres en dominios o idiomas alejados de la distribucion de entrenamiento del modelo base.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin historial de uso en produccion documentado.
+- Contexto fijo de 4096 tokens: las entradas mas largas no se pueden procesar y el benchmark envia 4095 tokens para dejar margen al token adicional del servidor.
+- Exclusividad de hardware: el runtime ocupa los cuatro nucleos NPU del AX8860, lo que impide compartir la NPU con otras cargas simultaneas.
+- Dependencia de plataforma: requiere SDK V0.5.0 o superior y los kernels precompilados del repositorio; no es portable a otras NPU ni a GPU sin recompilar el backend.
+- Un unico formato de pesos (BF16): no se ofrecen variantes cuantizadas de menor precision, lo que fija el consumo de memoria en 15,1 GB.
+- Modelo no generativo: no produce texto ni admite tool calling, agentes o razonamiento multi-paso; su unico cometido es generar embeddings.
+- Idiomas: la validacion solo cubre chino e ingles; el comportamiento en castellano u otros idiomas no esta verificado en esta distribucion.
+- Licencia no disponible: antes de un uso comercial es necesario consultar la licencia del modelo base Qwen/Qwen3-Embedding-8B y la de la bifurcacion de llama.cpp utilizada.
+- Riesgo de sesgo y alucinacion: no se documentan evaluaciones de sesgo; como modelo de representacion, puede reproducir sesgos presentes en los datos de entrenamiento del modelo base y producir similitudes erroneas en dominios alejados de su distribucion.
+- Madurez: primera publicacion el 2026-11-15, con 198 descargas y 1 like; no hay historial de mantenimiento mas alla de la version inicial.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-Embedding-8B-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-Embedding-8B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
-- Fork de llama.cpp utilizado: https://github.com/ZHEQIUSHUI/llama.cpp (commit `1970d6c5d`)
+- Bifurcacion de llama.cpp utilizada: https://github.com/ZHEQIUSHUI/llama.cpp (commit `6613735ce`)
+- Documentacion, paper o blog de AXERA-TECH sobre esta distribucion: no disponible en la informacion proporcionada
+- Demo o espacio interactivo: no disponible en la informacion proporcionada

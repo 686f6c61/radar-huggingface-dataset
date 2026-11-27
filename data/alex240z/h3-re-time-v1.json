@@ -5,7 +5,7 @@
   "author": "Alex240z",
   "url": "https://huggingface.co/Alex240z/H3-Re-Time-v1",
   "created_at": "2026-11-26T04:30:43.000Z",
-  "updated_at": "2026-11-26T05:07:06.000Z",
+  "updated_at": "2026-11-26T07:02:08.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "video-to-video",
@@ -22,7 +22,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

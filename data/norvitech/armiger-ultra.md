@@ -2,110 +2,117 @@
 
 ## Resumen
 
-Armiger Ultra es un clasificador de metadatos de BitTorrent desarrollado por NorviTech. No es un modelo generativo de propósito general, sino un sistema especializado que combina un transformer byte-level con codificación posicional RoPE y un conjunto de especialistas hermanos ("OOF sibling specialists") para predecir categorías de contenido, detectar junk/malware y estimar disponibilidad de swarm a partir de los metadatos de un torrent. Se distribuye como ficheros ONNX (FP32 de 33,9 MB e INT8 de 8,9 MB) y está diseñado para ejecutarse íntegramente en CPU, sin necesidad de GPU ni de API de inferencia de pago.
+Armiger Ultra es un clasificador de metadatos de BitTorrent desarrollado por NorviTech (bajo la firma del autor spencernorton). No es un modelo generativo: recibe metadatos de torrents (nombres de ficheros, estructura del conjunto, etiquetas) y devuelve predicciones de categoria, deteccion de contenido no deseado, clasificacion de audio por idioma y estimaciones de disponibilidad del swarm. Resuelve un problema concreto de los indexadores de BitTorrent: enrutar y filtrar automaticamente decenas de miles de entradas sin inspeccionar el contenido real.
 
-El modelo se enmarca en el ecosistema Armiger, que incluye conectores para indexadores como Bitmagnet y Rats Search, y una aplicación Docker autocontenida. Su relevancia actual radica en que aborda un problema de producción concreto (clasificación y filtrado de metadatos en indexadores P2P) con un consumo de recursos muy bajo: según la model card, procesa 5,134 ms por fila en lotes de 32 con un pico de RSS de 1.531 MiB, lo que lo hace viable en hardware modesto.
+La version documentada es la 3.17.0 (bundle `v3.17.0-rc3`), una arquitectura hibrida de cuatro planos disenada desde cero que combina un escaner de seguridad de entrada completa, un tri-encoder de 7,14 M de parametros (SentencePiece Unigram de 32K subpalabras, Byte ConvNeXt, File-Set PMA, encoder de audio aislado y cabeza CRF BIO+Pointer para spans UTF-8), una capa de autoridad externa binaria con proyecciones lexicas FP16 y un meta-stacker GBDT en ONNX puro con puerta de admision selectiva en dos regimenes.
 
-La versión documentada es el bundle 3.15.4 (`v5.4-pareto`), con licencia Apache-2.0 y soporte declarado para nueve idiomas (en, ja, fr, de, es, it, ru, ko, zh). El repositorio ocupa 1,0 GB y acumula 890 descargas y 11 likes en Hugging Face.
+Su relevancia practica esta en el coste: se ejecuta integramente en CPU, sin GPU ni API de inferencia de pago, con dos artefactos ONNX de 27,3 MiB (FP32) y 7,0 MiB (INT8), y un runtime 100 % libre de `torch`. La model card reporta una latencia de inferencia en produccion de 8,05 ms y una reduccion del RSS del contenedor de 1.212,0 MiB a 283,1 MiB tras el corte en vivo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer byte-level con RoPE + combinador híbrido vectorizado y especialistas hermanos OOF (`v5.4-pareto`) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Hibrida de 4 planos: escaner de seguridad + tri-encoder (SentencePiece Unigram 32K, Byte ConvNeXt, File-Set PMA, encoder de audio aislado, CRF BIO+Pointer) + autoridad externa binaria con proyecciones lexicas FP16 + meta-stacker GBDT en ONNX |
+| Parametros totales | 7,14 M en el tri-encoder (Plane 1); el resto de planos son componentes no neuronales o compactos |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP32 (33,9 MB) e INT8 (8,9 MB) |
+| Tipos de cuantizacion | FP32 (`armiger_ultra.fp32.onnx`, 27,3 MiB) e INT8 (`armiger.int8.onnx`, 7,0 MiB) |
 | Idiomas soportados | en, ja, fr, de, es, it, ru, ko, zh |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un transformer que opera sobre bytes (byte-level) con codificación posicional RoPE, complementado por un combinador híbrido vectorizado y un conjunto de especialistas hermanos entrenados con esquema out-of-fold (OOF). El modelo no se limita a la predicción neuronal: integra reglas de idioma de metadatos, calibración, cribado Policy-2 de junk/malware y estimación de disponibilidad de swarm, además de coincidencia contra autoridades externas compactas. El resultado es un pipeline de clasificación híbrido que produce predicciones neuronales y flags de política en una sola pasada.
+La arquitectura `v3.17.0` (`root_sha = 181b4712311ba49f59e0aa0f0d97a4ea574568adeb0b7fedc2f237b6090fb1fd`) se organiza en cuatro planos. El Plane 0 es un escaner de seguridad sobre la entrada completa. El Plane 1 es un tri-encoder de 7,14 M de parametros que combina tokenizacion SentencePiece Unigram de 32K subpalabras, un Byte ConvNeXt para la representacion a nivel de bytes, un File-Set PMA (Pooling by Multihead Attention) para agregar el conjunto de ficheros del torrent, un encoder de audio `P(x)` aislado para clasificacion audio-idioma y una cabeza CRF BIO+Pointer que extrae spans UTF-8. El Plane 2 contiene una autoridad externa binaria compacta (`authority_v317.aidx`, `validated_zero_cue_catalog.zcb3`) y proyecciones lexicas FP16 resueltas con un unico matmul. El Plane 3 es un meta-stacker GBDT en ONNX puro con una puerta de admision selectiva de dos regimenes.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card sí documenta una evaluación "sealed" post-freeze sobre un holdout prospectivo de 2.795 filas (1.500 de producción uniforme y 1.295 de estrés difícil), con adjudicación ciega por doble proveedor y verificación de que el conjunto no se había abierto antes del freeze. Destaca la paridad FP32/INT8 del 99,8927% (2.792/2.795) y la integridad de roundtrip UTF-8 en 2.795/2.795 spans.
+El diseno es deliberadamente de "clean-sheet" y sin dependencias de `torch`: `0` ficheros `.pkl` y `100 %` de runtime libre de PyTorch. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO; esos datos no estan disponibles. La validacion reportada se apoya en conjuntos sellados (`R26-live`, `N = 2.520`; `R27-live`, `N = 44.672` filas prospectivas), siete suites de regresion completas (`N = 10.851`) y 180 canarios de red-team de seguridad, inyeccion y droppers.
 
 ## Capacidades
 
-- Clasificación de metadatos de torrents en categorías de contenido (incluida la categoría multi-fichero `game`).
-- Detección de junk estructural y semántico mediante el cribado Policy-2.
-- Cribado de malware y contenido honeypot como flags de política.
-- Predicción de disponibilidad de swarm (swarm-availability estimates).
-- Coincidencia contra autoridades externas y aplicación de reglas de idioma de metadatos.
-- Calibración de salidas y abstención ante casos ambiguos.
-- Soporte multilingüe en nueve idiomas para los metadatos analizados.
-- Ejecución en CPU sin GPU ni API de pago.
-- Integración con indexadores (Bitmagnet, Rats Search) mediante conectores.
+- Clasificacion de metadatos de BitTorrent en 11 categorias con una exactitud reportada del 90,36 % en `R26-live`.
+- Deteccion de contenido para adultos (`xxx`) con recall del 95,21 % y deteccion de categoria `unknown` con recall del 69,03 %.
+- Clasificacion de audio por idioma mediante el encoder `P(x)` aislado, con recall no-ingles reportado del 87,77 %.
+- Filtrado de basura y malware (junk/malware screening, Policy-2) con recall del 97,31 % y especificidad limpia del 99,04 %.
+- Estimacion de disponibilidad del swarm (swarm-availability) a partir de metadatos.
+- Extraccion de spans UTF-8 mediante cabeza CRF BIO+Pointer, con validacion reportada del 100 % en los canarios.
+- Coincidencia contra autoridad externa compacta (catalogos binarios) para validacion de entradas.
+- Capacidades multilingues en en, ja, fr, de, es, it, ru, ko y zh.
+- No soporta generacion de texto, tool calling, razonamiento multi-paso ni agentes: es un clasificador, no un LLM.
 
 ## Casos de uso
 
-- Filtrado de admisión en indexadores BitTorrent: el modelo evalúa cada metadato antes de publicarlo y aplica el cribado Policy-2; la model card reporta una admisión BitAgent del 99,000% con cero fugas de junk en el holdout de producción.
-- Moderación de contenido en plataformas P2P: los flags de adult-content, honeypot y junk permiten bloquear o marcar entradas automáticamente antes de que lleguen al usuario final.
-- Enriquecimiento de catálogos de medios: la clasificación por categoría (audio, subtítulos, juegos, etc.) permite etiquetar y organizar automáticamente grandes volúmenes de metadatos.
-- Estimación de salud de swarm: las predicciones de disponibilidad ayudan a priorizar resultados con mayor probabilidad de descarga efectiva en buscadores de torrents.
-- Despliegue en infraestructura modesta: al ejecutarse en CPU con 8,9 MB en INT8 y 5,134 ms/fila en batch-32, puede integrarse en contenedores Docker de un solo nodo sin acelerador.
-- Pipeline de seguridad en gateways de descarga: el cribado de malware y la detección de honeypots permiten añadir una capa de decisión previa a la entrega de metadatos a clientes.
-- Clasificación por lotes a gran escala: el soak de 32.768 filas con un delta máximo de 5,92 MiB de RSS demuestra estabilidad para procesamiento continuo.
+- Indexacion de BitTorrent en Bitmagnet: el modelo se conecta como clasificador para etiquetar automaticamente cada entrada del indexador, aprovechando su ejecucion en CPU y su latencia de 8,05 ms para procesar colas de decenas de miles de torrents sin coste de GPU.
+- Despliegue en Rats Search: integracion mediante los conectores oficiales para enrutar resultados por categoria y descartar entradas no deseadas antes de mostrarlas al usuario.
+- Moderacion y filtrado de contenido para adultos: la deteccion de `xxx` con recall del 95,21 % permite marcar o excluir entradas en portales con politicas de contenido, sin inspeccionar el payload real.
+- Deteccion de malware y droppers disfrazados: el screening Policy-2, con precision reportada del 100 % (144/144) en la auditoria de exencion de software/juegos, sirve para bloquear ejecutables maliciosos camuflados en indexadores publicos.
+- Clasificacion audio-idioma para catalogacion: el encoder `P(x)` identifica el idioma de pistas de audio a partir de metadatos, util para organizar bibliotecas multimedia multilingues.
+- Estimacion de disponibilidad del swarm: las predicciones de swarm-availability permiten priorizar o despriorizar entradas en un motor de busqueda segun su probabilidad de estar bien sembradas.
+- Enriquecimiento de pipelines de datos: como paso previo en un ETL que normaliza y etiqueta catalogos de torrents antes de almacenarlos, con despliegue en contenedor Docker (`ghcr.io/spencernorton/armiger-ultra:3.17.0`).
+- Auditoria de seguridad de entradas: el Plane 0 y los 180 canarios de red-team (inyeccion SQL, XSS, path traversal, prompt injection) permiten usar el modelo como capa de saneamiento de metadatos no confiables.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Armiger Ultra 3.15.4 | v3.12.0 | Diferencia |
-|---|---|---|---|
-| Producción uniforme (N=1.500) | 94,133% | 85,933% | +8,200 pp (McNemar p=3,05e-25) |
-| Producción + estrés (N=2.795) | 92,630% | 72,057% | +20,572 pp (p=1,19e-136) |
-| Admisión BitAgent | 99,000% | 98,800% | +0,200 pp (0 fugas de junk) |
-| Junk estructural Policy-2 (producción) | 100,00% (140/140) | no disponible | no disponible |
-| Junk estructural Policy-2 (combinado) | 98,99% (394/398) | no disponible | no disponible |
-| Junk semántico (combinado) | 91,55% (65/71) | no disponible | no disponible |
-| Especificidad de junk limpio (producción) | 99,705% | no disponible | no disponible |
-| Especificidad de junk limpio (combinado) | 99,570% | no disponible | no disponible |
-| Paridad FP32/INT8 | 99,8927% (2.792/2.795) | no disponible | no disponible |
-| Roundtrip UTF-8 | 2.795/2.795 | no disponible | no disponible |
-| Latencia CPU batch-32 p50 | 5,134 ms/fila | 21,881 ms/fila | 4,26x más rápido |
-| Pico de RSS | 1.531 MiB | 2.762 MiB | -1,20 GiB |
-| Categoría `game` multi-fichero (R22-live) | 93,33% (112/120) | 95,00% (114/120) | -1,67 pp |
+| Conjunto | Metrica | Resultado |
+|---|---|---|
+| `R26-live` (N = 2.520) | Exactitud 11 clases | 90,36 % (+14,13 pp vs v3.16.1) |
+| `R26-live` | Exactitud 10 clases sin `unknown` | 91,37 % |
+| `R26-live` | Recall `xxx` | 95,21 % (+12,77 pp) |
+| `R26-live` | Recall `unknown` | 69,03 % (+67,26 pp) |
+| `R26-live` | Recall audio `P(x)` no-ingles | 87,77 % |
+| `R26-live` | Recall junk | 97,31 % (especificidad limpia 99,04 %) |
+| `R26-live` | Corrupcion de media admitida | 0,00 % (0/822) |
+| `heldout_20261026` (N = 2.670) | Exactitud | 98,05 % (+18,39 pp) |
+| `R22-live` (N = 2.795) | Exactitud | 94,67 % (+20,54 pp) |
+| Suite 1 Multilingual (N = 1.000) | Exactitud | 98,60 % |
+| Suite 2 Game (N = 755) | Exactitud | 99,60 % |
+| Suite 3 Structural (N = 735) | Exactitud | 98,64 % |
+| Suite 4 Adversarial (N = 896) | Exactitud | 98,21 % |
+| Suite 5 Multilingual Stress (N = 2.000) | Exactitud | 99,00 % |
+| Auditoria de desacuerdo R27 (253 filas) | Ratio de victorias v3.17.0 | 6,23x (McNemar p = 1,98e-28) |
+| Auditoria Policy-2 (144 filas) | Precision de exencion | 100,00 % |
+| Canarios red-team (180) | Superados | 100,00 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica; el modelo está diseñado para inferencia en CPU.
-- GPU recomendadas: no requiere GPU. En caso de ejecutarse sobre GPU, no se documentan requisitos.
-- Cabe en cualquier CPU consumer: el fichero INT8 ocupa 8,9 MB y el FP32 33,9 MB.
-- Memoria RAM: pico de RSS de 1.531 MiB en la evaluación batch-32; delta máximo de 5,92 MiB en un soak de 32.768 filas.
-- Opciones de despliegue: ONNX Runtime (formato nativo), contenedor Docker oficial `ghcr.io/spencernorton/armiger-ultra:3.15.4`, integración con Bitmagnet y Rats Search mediante conectores.
-- Latencia y throughput: 5,134 ms por fila en batch-32 (p50) en CPU, según la model card.
-- Canal de actualización configurable mediante la variable `ARMIGER_UPDATE_CHANNEL` (`off` mantiene el modelo fijado al bundle incluido).
+- Inferencia exclusivamente en CPU; no requiere GPU ni API de pago.
+- VRAM: no aplica (modelo ONNX de 7,0 MiB en INT8 y 27,3 MiB en FP32).
+- Memoria del contenedor en produccion: RSS de 283,1 MiB tras el corte (frente a 1.212,0 MiB de la version anterior, -76,6 %).
+- Crecimiento de RSS en soak de 4.096 filas: +0,88 MiB (359,04 MiB de RSS del worker, 460,37 MiB de pico del cgroup).
+- Cabe en cualquier GPU de consumo, pero no la necesita; tambien en CPU de un solo nucleo o en entornos edge.
+- Opciones de despliegue: contenedor Docker (`ghcr.io/spencernorton/armiger-ultra:3.17.0`), runtime ONNX, integracion con Bitmagnet y Rats Search mediante conectores oficiales.
+- Latencia de inferencia en produccion: 8,05 ms (frente a 38,62 ms de la version anterior, 4,80x mas rapido).
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Armiger Ultra (NorviTech) | Clasificador de metadatos BitTorrent (byte-level transformer + híbrido) | no disponible | no disponible | Apache-2.0 | ONNX (FP32/INT8) | 94,133% en producción uniforme; CPU-only |
-| Armiger Standalone (NorviTech) | Clasificador INT8 enfocado | no disponible | no disponible | Apache-2.0 | ONNX INT8 | Versión reducida del mismo ecosistema |
-| Alternativas genéricas de clasificación de texto | Transformer de texto | variable | variable | variable | safetensors/ONNX | No especializadas en metadatos BitTorrent ni en cribado Policy-2 |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Armiger Ultra 3.17.0 | 7,14 M (tri-encoder) | no disponible | Clasificacion de metadatos BitTorrent | Apache-2.0 | ONNX en HF, Docker |
+| Armiger (Standalone) | no disponible | no disponible | Clasificacion INT8 enfocada | Apache-2.0 | ONNX en HF |
+| Armiger v3.16.1 | no disponible | no disponible | Clasificacion de metadatos BitTorrent | Apache-2.0 | Version anterior |
 
-No se dispone en la información proporcionada de modelos de terceros directamente comparables en la tarea específica de clasificación de metadatos BitTorrent con cribado de junk/malware y estimación de swarm.
+No se dispone de datos de benchmarks de modelos de terceros comparables en la informacion proporcionada; la comparativa se limita a las variantes del propio autor.
 
 ## Limitaciones y advertencias
 
-- El modelo clasifica únicamente los metadatos suministrados; no inspecciona el contenido real de los medios ni certifica su legalidad.
-- Las salidas de audio/subtítulos, junk, contenido adulto y honeypot son predicciones o flags de política, no verdades absolutas.
-- El rendimiento en la categoría multi-fichero `game` es inferior al de la versión anterior (-1,67 pp, 2 filas netas en archivos comprimidos de juegos indie/VN).
-- El junk semántico combinado se sitúa en 91,55% (65/71), por debajo del junk estructural (98,99%), lo que indica mayor dificultad en casos semánticamente ambiguos.
-- No se documentan sesgos específicos ni tasas de alucinación (no es un modelo generativo, por lo que el riesgo de alucinación se traduce en falsos positivos/negativos de clasificación).
-- No se especifican limitaciones de longitud de contexto ni de idioma más allá de los nueve idiomas declarados.
-- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías sobre la exactitud de las predicciones en producción.
-- El modelo depende de reglas y autoridades externas integradas; cambios en esas fuentes pueden alterar el comportamiento sin reentrenamiento.
+- El modelo clasifica unicamente metadatos suministrados; no inspecciona el payload real de los medios ni certifica la legalidad del contenido.
+- Las salidas de audio/subtitulo, junk, contenido para adultos y honeypot son predicciones o flags de politica, no verdades absolutas.
+- El recall de la categoria `unknown` es del 69,03 %, de modo que aproximadamente un tercio de las entradas desconocidas pueden clasificarse erroneamente.
+- No es un modelo generativo: no admite tool calling, razonamiento multi-paso ni agentes.
+- La model card no documenta sesgos conocidos, composicion del dataset de entrenamiento ni volumen de tokens; no disponible.
+- El autor no detalla la longitud de contexto soportada; no disponible.
+- Aunque la licencia es Apache-2.0 y permite uso comercial, conviene revisar las condiciones del bundle y de los catalogos de autoridad externa incluidos.
+- En produccion se recomienda fijar el canal de actualizacion (`ARMIGER_UPDATE_CHANNEL=off`) para evitar cambios de modelo no controlados.
+- La model card esta redactada en tono promocional y contiene afirmaciones de rendimiento no verificables de forma independiente; conviene tratarlas como datos del autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/NorviTech/armiger-ultra
-- Modelo standalone INT8: https://huggingface.co/NorviTech/armiger
-- Repositorio y guías de instalación: https://github.com/spencernorton/armiger
-- Release v3.15.4: https://github.com/spencernorton/armiger/releases/tag/v3.15.4
-- Conectores para indexadores: https://github.com/spencernorton/Armiger-Connectors
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/armiger-ultra
+- Modelo Armiger Standalone: https://huggingface.co/NorviTech/armiger
+- Repositorio GitHub y guias de instalacion: https://github.com/spencernorton/armiger
+- Release v3.17.0: https://github.com/spencernorton/armiger/releases/tag/v3.17.0
+- Conectores de indexadores: https://github.com/spencernorton/Armiger-Connectors
 - DH-Waypoint: https://github.com/spencernorton/DH-Waypoint
-- Documentación de evaluación: https://github.com/spencernorton/armiger/blob/main/docs/evaluation.md
-- Guías de configuración: https://github.com/spencernorton/armiger#choose-your-setup
-- Resumen de modelos NorviTech: https://norvitech.com/ai-models/#armiger
+- Documentacion de evaluacion: https://github.com/spencernorton/armiger/blob/main/docs/evaluation.md
+- Guias de configuracion: https://github.com/spencernorton/armiger#choose-your-setup
+- Vision general de modelos NorviTech: https://norvitech.com/ai-models/#armiger
+- Imagen Docker: ghcr.io/spencernorton/armiger-ultra:3.17.0

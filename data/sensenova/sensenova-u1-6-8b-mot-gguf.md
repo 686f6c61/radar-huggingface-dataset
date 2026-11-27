@@ -2,88 +2,88 @@
 
 ## Resumen
 
-SenseNova-U1.6-8B-MoT-GGUF es la versión cuantizada en formato GGUF del checkpoint base SenseNova-U1.6-8B-MoT, un modelo de generación y edición de imágenes desarrollado por SenseNova (OpenSenseNova). El modelo base se distribuye con licencia Apache 2.0 y está pensado para ejecutarse mediante el runtime Python propio del proyecto, no mediante los runners GGUF genéricos habituales como llama.cpp u Ollama.
+SenseNova-U1.6-8B-MoT-GGUF es la distribucion en formato GGUF del checkpoint base SenseNova-U1.6-8B-MoT, un modelo multimodal de generacion y edicion de imagenes desarrollado por SenseTime (organizacion SenseNova). El modelo resuelve tareas de text-to-image, image-to-image e image-text-to-image, e incorpora una capacidad nativa de autocorreccion mediante generacion intercalada de texto e imagen: genera una infografia, la revisa contra el prompt y corrige los errores tipograficos preservando el diseno.
 
-El repositorio contiene tres archivos de pesos cuantizados (Q4_0, Q6_K y Q8_0) que permiten reducir el espacio en disco y, presumiblemente, los requisitos de memoria respecto al checkpoint original. La model card indica que el modelo base tiene aproximadamente 8B de parámetros según su nombre, aunque el recuento real de parámetros reportado en safetensors es de 17.532.854.464, una discrepancia que el autor no explica en la información disponible.
+La version U1.6 se centra en tres ejes respecto a U1.5: estetica refinada (retratos, posters e ilustraciones), autocorreccion nativa y mayor precision de texto en infografias densas. Segun la model card, la calidad estetica subjetiva mejora un 10 % sobre U1.5 y la autocorreccion aporta una mejora relativa media del 7 % en las tareas de infografia densa de UltraTextBench frente a la generacion de una sola pasada.
 
-La relevancia de esta ficha radica en que se trata de una publicación muy reciente (noviembre de 2026) con apenas 3 descargas y 0 likes, orientada a text-to-image, image-to-image e image-text-to-image, y con soporte declarado únicamente para inglés y chino. No se han publicado resultados de benchmarks ni detalles de arquitectura o entrenamiento en la información disponible.
+Este repositorio concreto contiene unicamente pesos cuantizados (Q4_0, Q6_K y Q8_0) para el runtime Python SenseNova-U1, no el checkpoint original en safetensors. El modelo base declara 17.532.854.464 parametros totales en safetensors, pese al sufijo "8B" del nombre, y soporta ingles y chino bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre incluye "MoT", sin más detalle en la model card) |
-| Parametros totales | 17.532.854.464 (según safetensors); el nombre comercial indica "8B" |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo multimodal de difusion/generacion de imagenes con generacion intercalada texto-imagen; la model card no detalla el backbone) |
+| Parametros totales | 17.532.854.464 (dato de safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE; "MoT" no se explicita en la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_0, Q6_K, Q8_0 |
+| Tipos de cuantizacion | Q4_0, Q6_K, Q8_0 (GGUF) |
 | Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (archivos Q4_0, Q6_K, Q8_0); checkpoint base en safetensors |
-
-Tamaños de los archivos publicados:
-
-| Archivo | Cuantizacion | Tamano (GB decimales) |
-|---|---|---|
-| `SenseNova-U1.6-8B-MoT-Q4_0.gguf` | Q4_0 | 12,28 |
-| `SenseNova-U1.6-8B-MoT-Q6_K.gguf` | Q6_K | 16,62 |
-| `SenseNova-U1.6-8B-MoT-Q8_0.gguf` | Q8_0 | 20,70 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna en la información disponible. El nombre del modelo incluye el sufijo "MoT", pero la model card no explica su significado ni describe si se trata de un transformer, un modelo híbrido o una arquitectura específica para difusión o generación multimodal. Tampoco se indica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna del modelo: la model card del repositorio GGUF no describe el backbone, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El sufijo "MoT" del nombre no se explica en la documentacion proporcionada. Lo que si se documenta es la capacidad de generacion intercalada de texto e imagen, que habilita el bucle de autocorreccion: el modelo produce una imagen, la evalua contra el prompt y regenera corrigiendo el texto incrustado.
 
-La model card únicamente describe el proceso de inferencia mediante el runtime SenseNova-U1, con parámetros como `--num_steps 50`, `--width 1024 --height 1024`, `--dtype bfloat16`, `--attn_backend auto` y `--vram_mode balanced`. Estos parámetros sugieren un pipeline iterativo de generación de imágenes, pero no permiten inferir la arquitectura subyacente. No hay información sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+Respecto a la evolucion desde U1.5, la model card indica mejoras en composicion, variedad creativa y estilo contemporaneo, con un 10 % de mejora en calidad estetica subjetiva en evaluaciones de usuario, y una mejora relativa media del 7 % en precision de texto sobre UltraTextBench gracias a la autocorreccion. No se especifican innovaciones de decodificacion, atencion lineal ni tecnicas de inferencia especulativa.
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto (text-to-image), con resolución configurable (el ejemplo usa 1024x1024).
-- Edición de imágenes (image-editing) e image-to-image, según las etiquetas del repositorio.
-- Generación condicionada por imagen y texto (image-text-to-image).
-- Control de semilla (`--seed`) y número de pasos de inferencia (`--num_steps`), lo que permite reproducibilidad y ajuste calidad/velocidad.
-- Soporte multilingüe limitado a inglés y chino.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- No se documenta modo thinking, audio ni otras capacidades especiales.
+- Generacion de imagenes a partir de texto (text-to-image) con resoluciones configurables; el ejemplo oficial usa 1152x864 y 50 pasos.
+- Edicion de imagenes (image-to-image) e image-text-to-image.
+- Generacion intercalada de texto e imagen, base de la autocorreccion nativa.
+- Autocorreccion de infografias: revision del resultado contra el prompt y correccion de errores tipograficos manteniendo tipografia expresiva y maquetacion.
+- Estilos documentados: retratos (cinematografico, flash directo, blanco y negro, CCD, camara instantanea), ilustraciones (pintura china a tinta, mural, grabado, ukiyo-e, impasto, pastel, anime, 2.5D/3D, fieltro, arcilla, collage de papel) y posters (ilustrado, conceptual, producto, graffiti, collage, retro, plano, comic, Y2K, neo-brutalismo, estilo internacional suizo).
+- Soporte multilingue limitado a ingles y chino.
+- No se documenta soporte de tool calling, function calling ni comportamiento agentico multi-paso.
 
 ## Casos de uso
 
-- Generación de ilustraciones para prototipado de producto: el modelo permite generar imágenes a 1024x1024 con semilla fija, lo que facilita iterar variaciones reproducibles de un mismo concepto antes de encargar arte final.
-- Edición de imágenes en flujos de marketing: la capacidad image-to-image permite modificar imágenes existentes (fondos, estilos) manteniendo la composición, útil para adaptar creatividades a distintos formatos.
-- Creación de assets para videojuegos y aplicaciones: con cuantización Q4_0 (12,28 GB) se puede desplegar en entornos con memoria limitada para generar sprites, texturas o conceptos preliminares.
-- Generación condicionada por imagen y texto: útil para tareas de variación controlada donde se parte de una referencia visual y una instrucción textual, como catálogos de producto.
-- Experimentación en investigación: al ser Apache 2.0 y estar disponible en GGUF, sirve para comparar el efecto de distintas cuantizaciones (Q4_0 vs Q6_K vs Q8_0) sobre la calidad de imagen generada.
-- Prototipado local en estaciones de trabajo con GPU consumer: la versión Q4_0 reduce el peso a 12,28 GB, lo que permite probar el modelo sin depender de infraestructura en la nube, siempre que se use el runtime oficial.
-- Localización de contenido visual para mercados anglófonos y chinos: el soporte declarado de en y zh permite generar prompts y contenido en ambos idiomas.
+- Generacion de creatividades publicitarias: el modelo produce posters en estilos muy definidos (retro, Y2K, neo-brutalismo, suizo) con composicion controlada, adecuado para iterar variantes de campana sin intervencion de disenador en cada ciclo.
+- Infografias con texto legible: gracias a la autocorreccion nativa, puede generar una infografia, revisar la fidelidad del texto frente al prompt y corregir errores, lo que reduce el numero de regeneraciones manuales en flujos de contenido editorial.
+- Ilustracion editorial y de producto: los estilos de ilustracion documentados (tinta, grabado, impasto, collage) permiten generar material para articulos, portadas y packaging con coherencia estetica.
+- Edicion de imagenes existentes: el pipeline image-to-image permite retocar o transformar fotografia de producto manteniendo el encuadre, util en catalogos de e-commerce.
+- Prototipado de conceptos visuales: con resoluciones como 1152x864 y control de semilla, sirve para explorar direcciones de arte antes de produccion final.
+- Generacion local con cuantizacion: la version Q4_0 (12,28 GB) permite desplegar el modelo en una unica GPU de consumo de gama alta, util para estudios que no pueden enviar prompts a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Metrica | Resultado | Referencia |
+|---|---|---|
+| Calidad estetica subjetiva (evaluacion de usuario) | +10 % sobre U1.5 | Model card U1.6 |
+| Precision de texto en infografia densa (UltraTextBench) | +7 % relativo medio con autocorreccion frente a una sola pasada | Model card U1.6 |
+
+No se han publicado en la informacion disponible resultados numericos de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) ni comparaciones cuantitativas con modelos de generacion de imagen de la competencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. Como referencia, los pesos ocupan 12,28 GB (Q4_0), 16,62 GB (Q6_K) y 20,70 GB (Q8_0), a lo que hay que sumar memoria para activaciones, el tokenizador y el resto del pipeline de generación.
-- GPU recomendadas: no disponible. El ejemplo de la model card usa `--device cuda --dtype bfloat16`, lo que sugiere GPUs con soporte bfloat16 (Ampere o superior, como A100, H100, RTX 3090/4090).
-- ¿Cabe en GPU consumer? Con Q4_0 (12,28 GB de pesos) es plausible en GPUs de 16 GB o más, pero no hay confirmación oficial ni cifras de memoria total necesaria.
-- Opciones de despliegue: exclusivamente el runtime SenseNova-U1 (`uv sync --locked --extra gguf`), con el script `examples/t2i/inference.py`. No se documenta compatibilidad con llama.cpp, Ollama, vLLM ni TGI.
-- Latencia y throughput: no disponible. El ejemplo usa 50 pasos de inferencia, pero no se publican tiempos.
+- VRAM estimada: Q4_0 ocupa 12,28 GB en disco, Q6_K 16,62 GB y Q8_0 20,70 GB; a ello hay que sumar overhead del runtime, por lo que se recomienda margen adicional sobre el tamano del fichero.
+- GPU recomendadas: no se especifican en la model card; por tamano, una RTX 4090 (24 GB) puede alojar Q4_0 y Q6_K, y probablemente Q8_0 con margen ajustado. Para Q8_0 con holgura o lotes mayores, se requieren GPU profesionales tipo A100 o H100.
+- Cabe en GPU de consumo: si, al menos las variantes Q4_0 y Q6_K en tarjetas de 24 GB.
+- Despliegue: el repositorio esta pensado para el runtime Python SenseNova-U1 con el extra `gguf` (`uv sync --locked --extra gguf`). No se documenta soporte para llama.cpp, Ollama, vLLM ni TGI en la informacion disponible.
+- Parametros de inferencia del ejemplo oficial: `--dtype bfloat16 --attn_backend auto --vram_mode balanced --num_steps 50`. No se publican cifras de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparación rigurosa con alternativas de generación de imágenes de tamaño similar.
+No disponible. La informacion proporcionada no incluye datos de modelos comparables de la misma categoria (generacion y edicion de imagenes con texto) ni sus especificaciones, por lo que no es posible establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Solo se declaran idiomas inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
-- No hay información sobre sesgos, riesgo de alucinación visual o limitaciones de fidelidad en la generación.
-- El modelo requiere un runtime propietario del proyecto (SenseNova-U1); los archivos GGUF no son necesariamente compatibles con herramientas GGUF estándar.
-- La discrepancia entre el nombre "8B" y los 17.532.854.464 parámetros reales debe tenerse en cuenta al planificar recursos.
-- El repositorio tiene muy poca tracción (3 descargas, 0 likes) y fue creado en noviembre de 2026; no hay evidencia de validación comunitaria.
-- Aunque la licencia es Apache 2.0, conviene revisar los términos del modelo base y del runtime para uso comercial en producción.
-- No se documentan límites de resolución, número máximo de pasos ni restricciones de contenido.
+- La model card indica que las notas de limitaciones de U1.6 se aplican tambien a estos pesos, pero el texto disponible esta truncado y no detalla su contenido.
+- Idiomas limitados a ingles y chino; no se garantiza calidad en castellano para el texto generado dentro de las imagenes.
+- Riesgo de errores tipograficos en infografias densas: la autocorreccion mitiga pero no elimina el problema (mejora del 7 %, no del 100 %).
+- La evaluacion estetica reportada es subjetiva (juicio de usuarios), no una metrica objetiva reproducible.
+- Los ejemplos de imagen del repositorio fueron generados con el checkpoint base, no con los ficheros GGUF; el rendimiento de las cuantizaciones puede diferir del original.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado principalmente con datos en ingles y chino, es previsible un sesgo cultural y estetico hacia esas poblaciones.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datasets de entrenamiento, no detalladas aqui.
+- El repositorio GGUF no incluye el codigo del runtime; depende del repositorio GitHub OpenSenseNova/SenseNova-U1 y de sus requisitos de CUDA y drivers.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-GGUF
+- Repositorio GGUF: https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT
-- Runtime SenseNova-U1 (GitHub): https://github.com/OpenSenseNova/SenseNova-U1
-- Guía de instalación: https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/installation.md
+- Runtime Python: https://github.com/OpenSenseNova/SenseNova-U1
+- Guia de instalacion: https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/installation.md
+- Showcases U1.6: https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/u1.6_showcases.md
+- Organizacion en Hugging Face: https://huggingface.co/sensenova
+- Plataforma SenseNova: https://www.sensenova.ai/

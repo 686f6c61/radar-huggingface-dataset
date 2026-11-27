@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-SOM-heretic-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen2.5-7B-Instruct-SOM-heretic, un derivado del Qwen2.5-7B-Instruct de Alibaba que ha sido sometido a un proceso de "abliteration" (eliminación de rechazos) mediante la herramienta Heretic. El resultado es un modelo conversacional de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) con la alineación de seguridad parcialmente desactivada, orientado a investigación sobre comportamiento de modelos y generación de texto sin filtros de rechazo.
+Qwen2.5-7B-Instruct-SOM-heretic-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Qwen2.5-7B-Instruct-SOM-heretic, un derivado del Qwen2.5-7B-Instruct de Alibaba. El autor, richardyoung, ha aplicado una tecnica de "abliteration" (eliminacion de rechazos o *heretic*) sobre el modelo instructivo original para reducir las negativas a responder ciertas peticiones, y lo ha publicado tanto en safetensors como en GGUF para su uso con llama.cpp y Ollama.
 
-El modelo conserva la arquitectura transformer decoder-only densa de la familia Qwen2.5, con la ventana de contexto nativa de 32.768 tokens que caracteriza a esta generación (aunque la ficha del repositorio no documenta explícitamente este dato). La variante GGUF está pensada para su uso con llama.cpp y Ollama, lo que permite ejecución en CPU y GPU de consumo, y emplea cuantizaciones generadas con imatrix para preservar la calidad en bits bajos.
+El modelo conserva la arquitectura transformer densa de Qwen2.5-7B, con 7.615.616.512 parametros y una ventana de contexto nativa de 32.768 tokens (128K con RoPE scaling, segun la documentacion de Qwen2.5). La cuantizacion GGUF permite ejecutarlo en hardware de consumo, lo que lo hace atractivo para experimentacion local con modelos "sin censura".
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de modelo "uncensored" derivado de un base ampliamente utilizado; por otro, advierte de que el acceso está restringido en Hugging Face (gated), de que la licencia declarada es Apache 2.0 y de que el único idioma listado es el inglés, lo que limita su uso en producción multilingüe.
+Es relevante ahora porque combina un modelo base ampliamente conocido y bien documentado (Qwen2.5-7B-Instruct) con un proceso de modificacion de alineamiento que interesa a la comunidad de investigacion en seguridad y a desarrolladores que necesitan un modelo sin rechazos para tareas creativas o de rol. La ficha se centra en lo que se puede verificar de la informacion disponible; muchos datos tecnicos del proceso de abliteration no estan publicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2.5) |
-| Parametros totales | 7.615.616.512 (aproximadamente 7,6 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el base Qwen2.5-7B-Instruct declara 32.768 tokens) |
-| Tipos de cuantizacion | GGUF con cuantizaciones generadas mediante imatrix (niveles concretos no disponibles) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only denso (base Qwen2.5-7B-Instruct) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens nativos (128K con RoPE scaling segun Qwen2.5; no verificado en esta ficha) |
+| Tipos de cuantizacion | GGUF (multiples niveles Q2-Q8 segun repo; no detallado en la informacion) |
+| Idiomas soportados | en (declarado en la model card; el base Qwen2.5 soporta multiples idiomas) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repo de 32,3 GB); el modelo base se distribuye en safetensors |
+| Formato de pesos | GGUF (repo); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only denso con atención por ventanas deslizantes y atención completa combinadas, normalización RMSNorm, activación SwiGLU y embeddings de tokens compartidos con la cabeza de salida. Sobre esta base, el autor richardyoung aplica un proceso de abliteration con la herramienta Heretic (etiqueta "heretic" en el repositorio), que identifica y suprime direcciones de activación asociadas a la negativa a responder, reduciendo la tasa de rechazos del modelo alineado original.
+El modelo hereda la arquitectura de Qwen2.5-7B-Instruct: un transformer decoder-only denso con atencion por query/key/value con sesgo, RMSNorm, SwiGLU en las capas feed-forward y RoPE para codificacion posicional. El entrenamiento original de Qwen2.5 incluyo un corpus multilingue de billones de tokens seguido de fases de alineamiento (SFT y RLHF/DPO) para el modelo instructivo.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset de ajuste fino ni si se emplearon técnicas de RLHF o DPO en esta variante concreta; el repositorio solo indica que deriva del modelo base richardyoung/Qwen2.5-7B-Instruct-SOM-heretic. La cuantización a GGUF se realizó con imatrix (importance matrix), una técnica que calibra la cuantización con datos de activación para minimizar la pérdida de calidad en niveles de bits bajos. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
+Sobre esa base, el autor ha aplicado un proceso de "heretic"/abliteration: una modificacion de los pesos orientada a reducir la probabilidad de respuestas de rechazo ante peticiones sensibles. La informacion disponible no detalla el metodo exacto (direccion de rechazo, capas afectadas, magnitud de la intervencion) ni si hubo entrenamiento adicional. El modelo se distribuye con cuantizacion GGUF generada con imatrix, lo que sugiere un calibrado por importancia para preservar calidad en niveles bajos de bits. No hay datos publicados sobre el dataset de calibracion ni sobre evaluaciones del proceso de abliteration.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés.
-- Razonamiento y respuesta a instrucciones heredadas de Qwen2.5-7B-Instruct.
-- Generación de código y resolución de problemas matemáticos (capacidades del base, no verificadas en esta variante).
-- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo alineado rechazaría.
-- Compatibilidad con llama.cpp y Ollama para inferencia local.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
-- Soporte de tool calling y function calling: no documentado en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no documentadas en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
-- Modo thinking, visión o audio: no disponibles.
+- Generacion de texto conversacional multi-turno, heredada de Qwen2.5-7B-Instruct.
+- Razonamiento y matematicas de nivel medio, con el rendimiento tipico del base (sin benchmarks publicados para esta variante).
+- Generacion de codigo en multiples lenguajes, ya que Qwen2.5-7B-Instruct esta entrenado para ello.
+- Soporte de tool calling / function calling heredado del base instructivo (no verificado en esta variante).
+- Capacidades multilingues del base (Qwen2.5 soporta decenas de idiomas), aunque la model card solo declara `en`.
+- Modo "sin rechazos" (abliterated/uncensored): responde a peticiones que el modelo original rechazaria.
+- Ejecucion local via llama.cpp y Ollama gracias al formato GGUF.
+- No se declaran capacidades de vision, audio ni thinking mode explicito.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteration altera la tasa de rechazos y la distribución de respuestas frente a un base alineado, comparando pares de prompts en entornos controlados.
-- Evaluación de robustez de filtros: sirve como contraparte "sin filtros" para medir la eficacia de clasificadores de contenido y guardrails desplegados en pipelines de moderación.
-- Inferencia local en estaciones de trabajo: al estar en GGUF, puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada, útil para prototipado rápido de aplicaciones conversacionales en inglés.
-- Generación de texto creativo sin restricciones temáticas: escritura de ficción o guiones que aborden temas sensibles, con revisión humana obligatoria por el riesgo de contenido inapropiado.
-- Red teaming de aplicaciones LLM: generación de prompts adversarios y respuestas de referencia para probar la resistencia de sistemas desplegados.
-- Docencia y demostraciones: ilustrar en un aula cómo funciona la abliteration y qué implica desactivar la alineación, usando el modelo junto a su base alineado como comparación.
-- Pruebas de cuantización: evaluar el impacto de imatrix y de distintos niveles GGUF sobre la calidad de un modelo de 7,6 B en tareas de generación libre.
+- Experimentacion en seguridad de IA: investigadores pueden estudiar como cambia el comportamiento de un modelo al eliminar el alineamiento de rechazo, comparando respuestas con el Qwen2.5-7B-Instruct original en el mismo prompt.
+- Generacion creativa sin restricciones: escritura de ficcion con violencia, temas adultos o contenido controvertido donde el modelo original se negaria; util para guionistas y autores que trabajan con material sensible.
+- Role-play y juegos de mesa narrativos: el modelo mantiene conversaciones multi-turno con contexto de hasta 32K tokens, adecuado para campanas largas o personajes con memoria extendida.
+- Prototipado local en hardware de consumo: al estar en GGUF, se puede ejecutar con Ollama o llama.cpp en portatiles con GPU de 8-16 GB, sin depender de APIs externas.
+- Evaluacion de robustez de filtros: equipos de moderacion pueden usar el modelo como generador adversarial para probar sus propios sistemas de deteccion de contenido danino.
+- Investigacion sobre alucinacion y sesgo: al ser un derivado modificado, permite comparar la tasa de alucinacion y los sesgos frente al base, aislando el efecto del proceso de abliteration.
+- Chatbot de personaje en entornos controlados: para demos o prototipos donde se requiere un tono sin filtros y el despliegue es local y privado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni evaluaciones del efecto de la abliteration sobre el rendimiento. Cualquier cifra del Qwen2.5-7B-Instruct original no es trasladable sin verificar la degradacion introducida por la modificacion de pesos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta en la información proporcionada; para un modelo denso de 7,6 B en GGUF, las cuantizaciones de 4 bits suelen ocupar del orden de 4-5 GB y las de 8 bits del orden de 8-9 GB, sin contar el espacio de contexto.
-- GPU recomendadas: no documentadas en el repositorio; por tamaño, una RTX 3090, RTX 4090, A10G, L4 o A100 son suficientes para cuantizaciones de 4 a 8 bits.
-- GPU de consumo: sí cabe en tarjetas con 8 GB o más de VRAM en cuantizaciones de 4 bits; en 16 GB o más con cuantizaciones mayores.
-- Opciones de despliegue: llama.cpp, Ollama (etiquetas del repositorio); otras opciones como vLLM o TGI no están documentadas para este formato GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 4-5 GB en Q4_K_M, 8-9 GB en Q8_0, y en torno a 15 GB en FP16 (estimacion segun el tamano de 7.6B parametros; no publicada en el repo).
+- GPU recomendadas: RTX 3060 12 GB o superior para Q4/Q5; RTX 4090 o A100 para Q8 y contexto largo.
+- Cabe en GPU de consumo: si, en RTX 3060, 4060 Ti 16 GB, 4070, 4080 y 4090 con cuantizaciones Q4-Q8.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa; requeririan el modelo en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-GGUF | 7,6 B | No disponible | Apache 2.0 | GGUF | Variante abliterated, acceso restringido, solo inglés |
-| Qwen2.5-7B-Instruct (Alibaba) | 7,6 B | 32.768 tokens (según ficha oficial) | Apache 2.0 | safetensors, GGUF | Base alineado, multilingüe, ampliamente soportado |
-| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic | 7,6 B | No disponible | Apache 2.0 | safetensors | Modelo base del que deriva esta cuantización |
+| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-GGUF | 7.6B | 32K (128K con RoPE) | apache-2.0 | GGUF | Abliterated, acceso restringido |
+| Qwen/Qwen2.5-7B-Instruct | 7.6B | 32K (128K con RoPE) | apache-2.0 | safetensors, GGUF | Base original con alineamiento completo |
+| Meta Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Alternativa con contexto largo y licencia mas restrictiva |
+| Mistral 7B Instruct v0.3 | 7.2B | 32K | apache-2.0 | safetensors, GGUF | Alternativa densa de tamano similar |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
+La diferencia clave frente a los alternativas es el proceso de abliteration y el acceso restringido (gated), que limita su distribucion y su uso en pipelines automatizados sin aceptar condiciones.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Modelo "uncensored": la abliteration reduce los rechazos, por lo que puede generar contenido dañino, ofensivo o ilegal; requiere moderación y supervisión humana en cualquier uso.
-- Solo inglés declarado: no se garantiza calidad en castellano ni en otros idiomas.
-- Riesgo de alucinación: inherente a los modelos de 7,6 B; mayor si la abliteration degrada la coherencia del base.
-- Licencia Apache 2.0 declarada, pero el uso comercial debe verificar las condiciones del modelo base Qwen2.5-7B-Instruct y del proceso de derivación.
-- Sin benchmarks publicados: no hay evidencia cuantitativa del impacto de la abliteration sobre MMLU, HumanEval u otras tareas.
-- Sin datos de contexto verificados para esta variante; conviene no asumir la ventana nativa del base sin probarla.
-- Repositorio con 513 descargas y 0 likes: comunidad pequeña, sin validación externa significativa.
+- El proceso de abliteration degrada el alineamiento de seguridad: el modelo puede generar contenido danino, ilegal o sexual sin filtros, lo que exige supervision humana en produccion.
+- Riesgo de alucinacion: como cualquier modelo de 7B, tiende a inventar hechos, citas y referencias; la modificacion de pesos puede agravar este comportamiento al eliminar rechazos ante peticiones dudosas.
+- Acceso restringido: el repo es gated y requiere aceptar condiciones en Hugging Face, lo que complica la descarga automatizada y el uso en CI/CD.
+- Idiomas: la model card solo declara `en`; el rendimiento en castellano no esta verificado y puede ser inferior al del base.
+- Sesgos: hereda los sesgos del corpus de entrenamiento de Qwen2.5 y no hay evaluaciones publicadas del efecto de la abliteration sobre ellos.
+- Licencia apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo modificado; conviene revisar las condiciones del repo gated.
+- No hay benchmarks publicados: no se puede cuantificar la perdida de calidad respecto al base.
+- La fecha de creacion (2026-11-11) y el identificador arXiv referenciado (2611.17846) no son verificables en la informacion disponible; tratarlos con cautela.
 
 ## Enlaces
 
-- https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-GGUF
-- https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic
-- https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-GGUF
+- Modelo base (safetensors): https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic
+- Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- Paper referenciado (no verificado): arxiv:2611.17846

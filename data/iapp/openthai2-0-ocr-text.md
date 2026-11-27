@@ -2,113 +2,111 @@
 
 ## Resumen
 
-OpenThai2.0-OCR-Text es un sistema OCR (reconocimiento óptico de caracteres) para texto impreso en tailandés e inglés, desarrollado por iApp Technology en el marco del proyecto OpenThai (anteriormente OpenThaiGPT) y publicado con pesos abiertos junto con su runtime. El repositorio, ahora renombrado internamente como OpenThai2.1-OCR-Text-20261118 (versión 2.1.4), es el motor que impulsa iApp Document OCR v3.0. No es un modelo generativo de lenguaje: es un pipeline de dos etapas compuesto por un detector PP-OCRv6-tiny (1,8 MB) y un reconocedor CTC de líneas entrenado por iApp (2,4 MB), ambos exportados a ONNX y pensados para ejecutarse exclusivamente en CPU mediante OpenVINO u ONNX Runtime.
+OpenThai2.0-OCR-Text es un sistema OCR (reconocimiento óptico de caracteres) para texto impreso en tailandés e inglés, desarrollado por iApp Technology dentro del proyecto OpenThai (anteriormente OpenThaiGPT) y publicado con pesos abiertos junto a su runtime. El repositorio, aunque conserva el nombre OpenThai2.0-OCR-Text, aloja en la actualidad la versión OpenThai2.1-OCR-Text-20261118 (v2.1.4), que mantiene los ficheros de modelo de v2.0.0 con un runtime nuevo y, desde 2.1.2, un segundo reconocedor para fuentes tailandesas sin bucle (loopless). Es el motor que hay detrás de iApp Document OCR v3.0.
 
-La propuesta de valor es el rendimiento en hardware modesto: aproximadamente 0,5 segundos de CPU por página A4 densa, lo que equivale a unas 950 páginas por minuto en 8 núcleos Xeon. El modelo devuelve, para cada línea detectada, su caja delimitadora, el texto en orden de lectura y una puntuación de confianza. Está optimizado para documentos tailandeses impresos, incluyendo libros antiguos de imprenta con marcas tonales flotantes, documentos de la Royal Gazette, presupuestos, recibos y digitalizaciones judiciales.
+El sistema combina un detector PP-OCRv6-tiny (1,8 MB) con un reconocedor CTC de líneas en tailandés entrenado por iApp (2,4 MB). Ambos se distribuyen como modelos ONNX que se ejecutan sobre OpenVINO u ONNX Runtime, exclusivamente en CPU. El rendimiento declarado es de aproximadamente 0,5 segundos de CPU por página A4 densa, lo que equivale a unas 950 páginas por minuto en 8 núcleos Xeon.
 
-La versión 2.1 introduce mejoras específicas y medibles: recuperación de marcas tonales en libros de los años 30 (de 128 marcas perdidas sobre 159 a solo 23), lectura por columnas en páginas de dos y tres columnas, un segundo reconocedor para tipografías tailandesas sin bucle (Kanit, Prompt, Sukhumvit Set) que evita confusiones con letras latinas, y corrección de celdas de tabla con un solo dígito o letra. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+La relevancia del modelo radica en su enfoque: OCR de alta velocidad para tailandés impreso sin necesidad de GPU, con mejoras específicas para libros antiguos (marcas de tono flotantes), maquetación multicolumna, fuentes modernas sin bucle y preservación de dígitos y puntos decimales en contextos sensibles como recibos e identificadores fiscales. Devuelve el texto en orden de lectura con una caja y una confianza por línea, pero no genera tablas ni Markdown.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline OCR de dos etapas: detector PP-OCRv6-tiny + reconocedor CTC de líneas (red convolucional/recurrente, detalles no especificados) |
-| Parámetros totales | no disponible (pesos de 1,8 MB el detector y 2,4 MB el reconocedor) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (procesa líneas de texto, no secuencias de lenguaje) |
-| Tipos de cuantización | no disponible (modelos ONNX ya optimizados para CPU; no se documentan variantes cuantizadas) |
-| Idiomas soportados | tailandés (th) e inglés (en), incluido texto mixto th+en |
+| Arquitectura | Pipeline OCR de dos etapas: detector PP-OCRv6-tiny + reconocedor CTC de líneas en tailandés (red propia de iApp) |
+| Parametros totales | No disponible (pesos: detector 1,8 MB, reconocedor 2,4 MB) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (procesa líneas de texto, no secuencias de contexto) |
+| Tipos de cuantizacion | No disponible (se distribuye como modelos ONNX; no se documentan variantes cuantizadas) |
+| Idiomas soportados | Tailandés (th) e inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (ejecutable sobre OpenVINO u ONNX Runtime) |
 
 ## Arquitectura y entrenamiento
 
-El sistema sigue un diseño clásico de OCR en cascada. La primera etapa es un detector PP-OCRv6-tiny de 1,8 MB que localiza las cajas de texto en la imagen de la página. La segunda etapa es un reconocedor CTC de líneas de 2,4 MB entrenado por iApp específicamente para tailandés, que transcribe cada recorte. La versión 2.1.2 añade un segundo reconocedor (`rec2.onnx`, la misma red entrenada también con tipografías sin bucle) que solo se invoca cuando la primera lectura contiene letras latinas incrustadas dentro de una palabra tailandesa, y cuyo resultado solo se conserva si reduce el número de esas letras espurias. Esto preserva el rendimiento en digitalizaciones judiciales, que casi nunca activan la segunda pasada.
+El sistema es un pipeline OCR clásico de detección y reconocimiento. La etapa de detección emplea PP-OCRv6-tiny, un detector de cajas de texto de 1,8 MB. La etapa de reconocimiento usa un modelo CTC de líneas entrenado por iApp (2,4 MB) para tailandés. En la versión 2.1.2 se añade un segundo reconocedor (`rec2.onnx`), la misma red entrenada además con fuentes sin bucle, que solo se invoca cuando la primera lectura contiene letras latinas dentro de una palabra tailandesa; la segunda lectura se conserva únicamente si reduce el número de esas letras. Las líneas sin esa señal no se releen.
 
-El entrenamiento se realizó sobre datos propios de iApp, cuya composición exacta, número de tokens o muestras y uso de técnicas de alineación no se detallan en la información disponible. Sí se documentan los conjuntos de evaluación empleados: ThaiOCRBench (páginas completas), SEA-DocBench Thai, Wikisource (libros antiguos), Royal Gazette, documentos presupuestarios, 400 páginas sintéticas de recibos y 600 recibos reales de NECTEC. La innovación técnica destacable es el post-procesado geométrico de la versión 2.1: las cajas de marcas tonales flotantes se asocian a su línea, se amplía el recorte para incluirlas y se relee la línea, lo que reduce el error de carácter del 21,5 % al 5,9 % en la página 324 del libro de 1935. También se implementa una heurística de orden de lectura que distingue listas (lectura por filas) de columnas de prosa (lectura por columnas) según si las líneas a ambos lados de un hueco empiezan de forma similar.
+No se detallan en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset. Sí se documentan innovaciones de post-proceso destacables: la relectura de líneas de libros antiguos para recuperar marcas de tono flotantes (se adjuntan las cajas de marcas a su línea y se amplía el recorte para releerla), la lectura columna a columna en páginas de dos y tres columnas, la distinción entre listas y columnas de prosa (2.1.1), la detección de fuentes sin bucle mediante el segundo reconocedor (2.1.2) y la conservación de celdas de tabla de un solo dígito o letra (2.1.3). Una relectura nunca altera un dígito, lo que protege recibos e identificadores fiscales.
 
 ## Capacidades
 
-- Reconocimiento de texto impreso en tailandés, inglés y texto mixto th+en, devolviendo caja, texto y confianza por línea.
-- Detección y transcripción de páginas completas en orden de lectura, con soporte para una, dos y tres columnas, incluidos títulos o pies que cruzan las columnas.
-- Recuperación de marcas tonales y vocales superiores flotantes en libros de imprenta antiguos (años 30).
-- Lectura de tipografías tailandesas modernas sin bucle (Kanit, Prompt, Sukhumvit Set) sin confundirlas con letras latinas.
-- Conservación de celdas de tabla con un solo dígito o una sola letra, y escritura correcta de puntos decimales en importes.
-- Estabilidad numérica: una relectura no altera dígitos, por lo que recibos e identificadores fiscales mantienen sus cifras.
-- Inferencia exclusiva en CPU mediante OpenVINO u ONNX Runtime, sin requisito de GPU.
-- No genera tablas ni Markdown; para esa funcionalidad el autor remite a OpenThai2.1-OCR-Markdown-20261118.
-- No dispone de tool calling, razonamiento multi-paso ni capacidades de agente: es un modelo de imagen a texto especializado.
+- Reconocimiento de texto impreso en tailandés e inglés a partir de imágenes de página.
+- Detección de líneas con caja delimitadora y puntuación de confianza por línea.
+- Devolución del texto en orden de lectura.
+- Lectura columna a columna en páginas de dos y tres columnas, incluidas páginas con título o pie que cruza las columnas.
+- Distinción entre listas (lectura fila a fila) y prosa en columnas (lectura columna a columna).
+- Recuperación de marcas de tono y vocales superiores flotantes en libros impresos antiguos (década de 1930).
+- Lectura de fuentes tailandesas modernas sin bucle (Kanit, Prompt, Sukhumvit Set) sin confundirlas con letras latinas.
+- Conservación de celdas de tabla de un solo dígito o letra y de puntos decimales en importes.
+- Ejecución exclusiva en CPU sobre OpenVINO u ONNX Runtime.
+- No genera tablas ni Markdown (para ello remite a OpenThai2.1-OCR-Markdown-20261118).
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Digitalización masiva de libros tailandeses antiguos: el pipeline recupera marcas tonales que otros OCR descartan y mejora la tasa de palabras halladas en diccionario del 86,5 % al 93,2 % en un libro completo de 416 páginas, lo que lo hace adecuado para proyectos de preservación en archive.org o bibliotecas nacionales.
-- Procesamiento de la Royal Gazette y boletines oficiales: la lectura por filas de listas de comités y la preservación de sellos de fecha en márgenes (por ejemplo, "12 ก.ค. 2560") permiten extraer nombres y cargos sin mezclar columnas, con una precisión reportada del 96,3 %.
-- Automatización de cuentas y recibos: al no alterar dígitos en las relecturas y conservar puntos decimales, el modelo sirve para extraer importes e identificadores fiscales de recibos escaneados, con recall de campos sin cambios en 600 recibos reales de NECTEC.
-- Digitalización de expedientes judiciales: mantiene un rendimiento del 96,84 % en sentencias y corrige sellos de fecha que antes se leían mal, lo que permite indexar resoluciones judiciales escaneadas en sistemas de gestión documental.
-- Extracción de texto de documentos presupuestarios y administrativos con tablas: la conservación de celdas de un solo carácter y la lectura correcta de columnas facilitan la captura de datos estructurados en hojas de cálculo impresas.
-- Despliegue en entornos sin GPU: al ejecutarse en CPU con OpenVINO a unas 950 páginas por minuto en 8 núcleos Xeon, es viable en servidores de bajo coste, oficinas sin infraestructura acelerada o dispositivos edge para digitalización de archivos físicos.
-- Procesamiento de documentos bilingües th+en: con una tasa de error del 2,54–2,58 % en líneas mixtas, cubre contratos, manuales y formularios con terminología en inglés.
+- Digitalización masiva de libros antiguos tailandeses: la relectura de líneas con marcas de tono flotantes reduce el error de caracteres del 21,5 % al 5,9 % en la página de prueba de 1935, y eleva la tasa de palabras halladas en diccionario del 86,5 % al 93,2 % en el libro completo de 416 páginas.
+- Procesamiento de recibos y documentos fiscales: la garantía de que una relectura nunca cambia un dígito, con recall de campos sin cambios en 600 recibos reales de NECTEC y sin variación media en 400 páginas sintéticas, lo hace apto para extracción de importes e identificadores.
+- Digitalización de publicaciones oficiales: en el Royal Gazette alcanza una precisión de 96,3 tras la corrección de orden de listas en 2.1.1.
+- Procesamiento de documentos judiciales: lecturas estables en escaneos de juzgados (96,84 en la versión 2.1.2), con corrección de sellos de fecha de margen.
+- Indexación y búsqueda de corpus periodísticos multicolumna: la lectura columna a columna en páginas de dos y tres columnas facilita la extracción ordenada de texto para motores de búsqueda.
+- Despliegue en servidores sin GPU: con unos 0,5 segundos de CPU por página A4 densa y unas 950 páginas por minuto en 8 núcleos Xeon, permite digitalizar grandes volúmenes en infraestructura CPU convencional.
+- Digitalización de material con tipografía moderna: la detección de fuentes sin bucle reduce las letras latinas espurias de 58 a 11 en 12 páginas con cuatro fuentes no vistas en entrenamiento.
 
 ## Benchmarks y rendimiento
 
-| Prueba | v2.0.0 | v2.1 / 2.1.2 / 2.1.4 |
+| Prueba | v2.0.0 | v2.1 / v2.1.x |
 |---|---|---|
-| Página 324 (libro de 1935): error de carácter | 21,5 % | 5,9 % |
-| Página 324: marcas tonales perdidas (de 159) | 128 | 23 |
-| Página 324, seis versiones (original y cinco en blanco y negro): error | 20,9–21,5 % | 5,2–6,2 % |
+| Página 324 (libro de 1935): tasa de error de caracteres | 21,5 % | 5,9 % |
+| Página 324: marcas de tono perdidas (de 159) | 128 | 23 |
+| Página 324, seis versiones (original y cinco tratamientos en blanco y negro): error | 20,9–21,5 % | 5,2–6,2 % |
 | Libro completo de 416 páginas: palabras halladas en diccionario tailandés | 86,5 % | 93,2 % |
-| Libros antiguos (Wikisource, 200 páginas): precisión | 77,1 | 78,8 |
-| ThaiOCRBench páginas completas: precisión | 82,0 | 84,1 (2.1.2) |
-| SEA-DocBench Thai | 54,1 | 55,5 |
-| Royal Gazette | 96,3 | 96,3 (2.1.1) |
-| Sentencias judiciales | 96,88 | 96,84 (2.1.2) |
-| Letras latinas espurias, 12 páginas en 4 fuentes no entrenadas | 58 (2.1.1) | 11 (2.1.2) |
-| Error de carácter en esas páginas | 0,58 % (2.1.1) | 0,33 % (2.1.2) |
-| Letras latinas espurias, Sukhumvit Set a 40/26/32 px | 14/20/5 (2.1.1) | 1/2/0 (2.1.2) |
-| Líneas en inglés y th+en, error (fuentes no vistas / vistas) | 3,06 / 3,19 % (2.1.1) | 2,58 / 2,54 % (2.1.2) |
-| Media de 12 conjuntos impresos: precisión | 88,2 (2.1.1) | 88,3 (2.1.2) |
+| Libros antiguos (Wikisource, 200 páginas de prueba): precisión | 77,1 | 78,8 |
+| ThaiOCRBench páginas completas: precisión | 82,0 (v2.0.0) / 83,8 (2.1.1) | 84,1 (2.1.2) |
+| SEA-DocBench tailandés | 54,1 | 55,5 |
+| Royal Gazette | 96,3 (2.1.0 bajó a 96,1) | 96,3 (2.1.1) |
+| Letras latinas espurias, 12 páginas en 4 fuentes no entrenadas | — | 58 (2.1.1) → 11 (2.1.2) |
+| Tasa de error de caracteres en esas páginas | — | 0,58 % (2.1.1) → 0,33 % (2.1.2) |
+| Letras latinas espurias, Sukhumvit Set a 40/26/32 px | — | 14/20/5 (2.1.1) → 1/2/0 (2.1.2) |
+| Líneas en inglés y tailandés+inglés: error (fuentes no vistas / vistas) | — | 3,06/3,19 % (2.1.1) → 2,58/2,54 % (2.1.2) |
+| Media impresa en 12 conjuntos: precisión | — | 88,2 (2.1.1) → 88,3 (2.1.2) |
+| Sentencias judiciales | — | 96,88 (2.1.1) → 96,84 (2.1.2) |
 
-No se han publicado resultados de benchmarks comparativos con otros motores OCR (Tesseract, PaddleOCR, etc.) en la información disponible.
+Las 22 condiciones de robustez se superan en todas las versiones documentadas.
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente en CPU; no requiere GPU ni VRAM dedicada.
-- Modelos de 1,8 MB (detector) y 2,4 MB (reconocedor), más un segundo reconocedor `rec2.onnx` en la versión 2.1.2 en adelante.
-- Rendimiento de referencia: aproximadamente 0,5 segundos de CPU por página A4 densa, unas 950 páginas por minuto en 8 núcleos Xeon.
+- Inferencia exclusivamente en CPU; no se documenta soporte de GPU.
+- Modelos ligeros: detector de 1,8 MB y reconocedor de 2,4 MB, más un segundo reconocedor en 2.1.2.
+- Rendimiento declarado: aproximadamente 0,5 segundos de CPU por página A4 densa; unas 950 páginas por minuto en 8 núcleos Xeon.
 - Las páginas de libros antiguos tardan entre un 15 % y un 30 % más porque sus líneas se leen dos veces.
-- Despliegue mediante OpenVINO o ONNX Runtime; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Cabe en cualquier equipo de consumo, incluidos portátiles y mini-PC, al no necesitar acelerador gráfico.
-- Latencia y throughput detallados por núcleo no disponibles más allá de la cifra agregada indicada.
+- Despliegue mediante ONNX Runtime u OpenVINO.
+- No se documentan requisitos de VRAM ni modelos de GPU recomendados al no ser un sistema orientado a GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Idiomas | Licencia | Ejecución | Notas |
 |---|---|---|---|---|---|
-| OpenThai2.1-OCR-Text | OCR impreso (detector + CTC) | th, en | Apache 2.0 | CPU (OpenVINO/ONNX Runtime) | Optimizado para tailandés antiguo y moderno; pesos muy pequeños |
-| OpenThai2.1-OCR-Markdown | OCR a Markdown | th, en | no disponible | no disponible | Mismo ecosistema, añade salida de tablas y Markdown |
-| Tesseract | OCR genérico | multilingüe | Apache 2.0 | CPU | No dispone de comparativa publicada en esta información |
-| PaddleOCR | OCR genérico | multilingüe | Apache 2.0 | CPU/GPU | No dispone de comparativa publicada en esta información |
-
-No se dispone de datos de rendimiento comparativo con Tesseract, PaddleOCR ni otros motores en la información proporcionada; la comparativa se limita a características estructurales.
+| OpenThai2.1-OCR-Text | OCR detección + reconocimiento | th, en | Apache 2.0 | CPU (ONNX/OpenVINO) | Motor de iApp Document OCR v3.0; ~950 páginas/min en 8 núcleos Xeon |
+| OpenThai2.1-OCR-Markdown-20261118 | OCR con salida Markdown | th, en | No disponible en la información | No disponible | Mismo proyecto; genera tablas y Markdown, capacidad que este modelo no cubre |
+| Alternativas OCR de propósito general | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Solo procesa texto impreso; no está diseñado para manuscritos ni para texto en imágenes naturales.
-- No genera tablas ni Markdown; para ello debe usarse el modelo OpenThai2.1-OCR-Markdown-20261118.
-- El soporte lingüístico se limita a tailandés e inglés; otros idiomas no están cubiertos.
-- Persiste un fallo conocido no corregido: la sara am (ำ) de la tipografía Thonburi a tamaños grandes, que no implica letras latinas y por tanto no activa la segunda pasada del reconocedor.
-- La corrección de sellos de fecha en sentencias judiciales reduce ligeramente la métrica global (96,88 a 96,84) porque el texto de referencia de la prueba no incluye sellos.
-- El orden de lectura por columnas puede confundir listas con columnas de prosa en casos límite; la heurística de la versión 2.1.1 mitiga pero no elimina el riesgo.
-- No se documentan sesgos demográficos o culturales del reconocedor; al ser un modelo OCR, el riesgo principal es de error de transcripción, no de generación de contenido.
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el autor recomienda fijar la revisión (`revision="v2.1.4"`) para garantizar la reproducibilidad.
-- El repositorio aparece con tamaño de 0,0 GB en Hugging Face, lo que sugiere que los pesos pueden descargarse desde ubicaciones externas o que el tamaño reportado no refleja el contenido real; conviene verificar antes de desplegar.
+- Solo reconoce texto impreso en tailandés e inglés; no se documentan otros idiomas.
+- No genera tablas ni Markdown; para esa funcionalidad remite a OpenThai2.1-OCR-Markdown-20261118.
+- No se documentan sesgos conocidos del modelo en la información disponible.
+- Riesgo de alucinación no documentado; al ser un sistema OCR, el riesgo principal es de error de reconocimiento, no de generación libre.
+- Problema no resuelto: la sara am (ำ) de la fuente Thonburi a tamaños grandes, que no implica letras latinas.
+- En sentencias judiciales, la versión 2.1.2 baja ligeramente de 96,88 a 96,84 porque el texto de referencia de la prueba no incluye sellos de fecha.
+- Las páginas de libros antiguos requieren más tiempo de proceso (15–30 % adicional) por la doble lectura de líneas.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del runtime y de los modelos auxiliares distribuidos junto al modelo.
+- El repositorio conserva el nombre OpenThai2.0-OCR-Text aunque aloja la versión 2.1.4; para reproducibilidad debe fijarse `revision="v2.1.4"` o `revision="v2.0.0"` según corresponda.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai2.0-OCR-Text
 - Modelo Markdown relacionado: https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118
-- Guía de ejecución (inglés): https://iapp.co.th/en/blog/openthai2p0-ocr-how-to-run
-- Guía de ejecución (tailandés): https://iapp.co.th/blog/openthai2p0-ocr-how-to-run
-- Guía de ejecución (chino): https://iapp.co.th/zh-CN/blog/openthai2p0-ocr-how-to-run
-- Activos de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
+- Guía paso a paso (inglés): https://iapp.co.th/en/blog/openthai2p0-ocr-how-to-run
+- Guía paso a paso (tailandés): https://iapp.co.th/blog/openthai2p0-ocr-how-to-run
+- Guía paso a paso (chino): https://iapp.co.th/zh-CN/blog/openthai2p0-ocr-how-to-run
+- Recursos de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
 - Libro de prueba en archive.org: `unset00002427` (archive.org)

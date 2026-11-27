@@ -2,87 +2,84 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-DiM-heretic es un ajuste fino del modelo Qwen2.5-32B-Instruct de Alibaba Qwen, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored": el ajuste fino busca eliminar los mecanismos de rechazo y censura del modelo original, de modo que responda a peticiones que el modelo base declinaría. La técnica se enmarca en la familia de métodos conocidos como "abliteration" o "heretic", orientados a modificar direcciones de activación asociadas a comportamientos de rechazo sin reentrenar desde cero.
+Qwen2.5-32B-Instruct-DiM-heretic es un ajuste fino (finetune) del modelo Qwen2.5-32B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored": el ajuste tiene como objetivo eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad del modelo original, de modo que responda a peticiones que el modelo base tiende a declinar. La metodologia "DiM" (probablemente Directional Modulation u otra tecnica de intervencion sobre direcciones de activacion) aparece en el nombre, aunque no se documenta en la informacion disponible.
 
-El modelo conserva la arquitectura del Qwen2.5-32B-Instruct: un transformer decoder-only denso de aproximadamente 32.760 millones de parámetros, con una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 en la familia Qwen2.5). Está pensado para generación de texto y chat en inglés, con licencia Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
+El modelo conserva la arquitectura y el tamano del Qwen2.5-32B-Instruct original: un transformer denso de aproximadamente 32.760 millones de parametros (32,76 B), con licencia Apache 2.0 y pesos en safetensors. El repositorio ocupa 65,5 GB y esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-Su relevancia es doble: por un lado, sirve como caso de estudio de las técnicas de modificación de comportamiento en modelos abiertos; por otro, plantea de forma explícita los dilemas de seguridad, responsabilidad y licencia que acompañan a los modelos "sin censura". No se han publicado resultados de benchmarks propios en la información disponible.
+Su relevancia es acotada y de nicho: interesa a investigadores que estudian el comportamiento de modelos sin alineacion, a quienes necesitan evaluar robustness de filtros de seguridad y a desarrolladores que quieran un modelo conversacional de gran tamano sin rechazos. No es un modelo recomendado para produccion con usuarios finales sin controles adicionales, dado que la remocion de salvaguardas implica riesgos claros de contenido danino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2) |
-| Parametros totales | 32.763.876.352 (~32,8 B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la ficha del autor; el base Qwen2.5-32B-Instruct soporta 32.768 tokens nativos (131.072 ampliado) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no listadas) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer denso (familia Qwen2), decoder-only |
+| Parametros totales | 32.763.876.352 (32,76 B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-32B-Instruct soporta hasta 131.072 tokens, pero no se confirma para este finetune) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no listadas) |
+| Idiomas soportados | en (segun la model card); el modelo base es multilingue, pero la ficha declara solo ingles |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen2.5-32B-Instruct, un transformer decoder-only denso con atención de múltiples cabezas con RoPE, normalización RMSNorm y FFN con SwiGLU. El ajuste fino aplicado por richardyoung se etiqueta como "heretic", "uncensored", "decensored" y "abliterated", lo que indica una modificación dirigida a suprimir las respuestas de rechazo del modelo base. No se detalla en la información disponible el método exacto (abliteration por proyección de direcciones, DPO con pares de rechazo, o una combinación), ni el volumen de datos, ni si hubo RLHF/DPO adicional.
+El modelo parte de Qwen2.5-32B-Instruct, un transformer decoder-only denso de la familia Qwen2. La informacion disponible no detalla la composicion del dataset de preentrenamiento original ni el volumen de tokens. El finetune de richardyoung aplica una tecnica de "abliteration" (eliminacion de la direccion de rechazo en el espacio de activaciones) etiquetada como "DiM", orientada a reducir la tasa de respuestas negativas del modelo base. No se especifica el numero de pasos, el dataset de ajuste ni si se empleo DPO, RLHF u otra optimizacion; la model card solo indica que el proceso es "reproducible".
 
-Los tags incluyen referencias a los papers arXiv:2309.00071 y arXiv:2407.10671, que corresponden a trabajos sobre refusal direction y abliteration en modelos abiertos. El entrenamiento del base Qwen2.5-32B-Instruct incluyó un corpus multilingüe de hasta 18 billones de tokens, con fases de SFT y RLHF; el ajuste heretic opera sobre ese checkpoint ya alineado. No hay información pública sobre la composición del dataset de ajuste ni sobre evaluaciones de regresión de capacidades tras la modificación.
+La model card referencia tres articulos de arXiv (2309.00071, 2407.10671 y 2611.17846), presumiblemente relacionados con las tecnicas de intervencion o evaluacion aplicadas. No se documentan innovaciones arquitectonicas propias: el modelo hereda la atencion estandar de Qwen2 y las capacidades del base.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés.
-- Razonamiento, matemáticas y código heredados del base Qwen2.5-32B-Instruct.
-- Respuestas a peticiones que el modelo original rechazaría (comportamiento "uncensored").
-- Soporte de tool calling / function calling heredado del base (no verificado tras el ajuste).
-- Capacidad de agentes y razonamiento multi-paso (heredada, no verificada).
-- Multilingüe limitado: la ficha declara solo inglés, aunque el base soporta más idiomas.
-- Sin visión ni audio: es un modelo puramente textual.
+- Generacion de texto conversacional multi-turno en ingles.
+- Razonamiento, matematicas y generacion de codigo heredados de Qwen2.5-32B-Instruct.
+- Respuestas a peticiones que el modelo base rechazaria (comportamiento "uncensored"/"decensored").
+- Soporte de tool calling y function calling heredado del modelo base (no verificado en este finetune).
+- Capacidades multilingues del base (aunque la ficha declara solo ingles).
+- No se documentan capacidades de vision, audio ni modo "thinking" explicito.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: estudiar cómo varía la tasa de rechazo y la calidad de respuesta tras aplicar técnicas de abliteration, comparando con el base Qwen2.5-32B-Instruct.
-- Red teaming y evaluación de robustez: usar el modelo como sujeto de pruebas para medir la eficacia de filtros de salida y clasificadores de seguridad en pipelines propios.
-- Generación creativa sin restricciones editoriales: escritura de ficción, guiones o contenido narrativo con temáticas sensibles, donde el modelo base tendería a rechazar.
-- Análisis de contenido y datos sensibles: resumen y clasificación de textos que incluyen lenguaje explícito o temas delicados en entornos controlados de investigación.
-- Experimentación con técnicas de modificación de comportamiento: replicar el pipeline heretic/abliteration sobre otros checkpoints y usar este modelo como referencia.
-- Asistente conversacional autoalojado en inglés: despliegue en infraestructura propia para chat general, con la advertencia de que la ausencia de rechazos exige filtros externos.
-- Generación de código y tareas técnicas: aprovechar las capacidades de programación del base en entornos donde no se requiere moderación de contenido.
+- Investigacion sobre alineacion y seguridad: analizar como cambia la tasa de rechazo y la calidad de respuesta tras la abliteracion, comparando con el modelo base en un conjunto fijo de prompts.
+- Red teaming y evaluacion de filtros: generar respuestas que un modelo alineado bloquearia para probar clasificadores de contenido y sistemas de moderacion.
+- Generacion de datos sinteticos para entrenamiento: producir corpus diversos en dominios sensibles donde el modelo base se niega, siempre bajo supervision y revision humana.
+- Estudio de robustez de salvaguardas: medir la eficacia de tecnicas de intervencion sobre direcciones de activacion (abliteration) frente a metodos de defensa.
+- Asistencia conversacional interna en entornos controlados: prototipos de chat donde el equipo asume el riesgo y aplica sus propios filtros de salida.
+- Analisis de sesgos y comportamiento: comparar distribuciones de respuesta entre el modelo heretic y el original para documentar el efecto de la desalineacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos propios del ajuste heretic ni comparación con el base Qwen2.5-32B-Instruct en MMLU, HumanEval, GSM8K u otras pruebas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16/BF16: ~65,5 GB de pesos, por lo que se necesitan al menos 2× A100 40 GB, 1× A100 80 GB, 1× H100 80 GB o 2× RTX 4090 24 GB con tensor parallelism.
-- Cuantización INT8: ~33 GB, cabe en una A100 40 GB o en 2× RTX 4090.
-- Cuantización 4-bit (GPTQ/AWQ/GGUF Q4): ~18-20 GB, cabe en una RTX 4090 24 GB o RTX 3090 24 GB.
-- No cabe en GPUs consumer de 16 GB o menos ni en CPU con latencia aceptable.
-- Despliegue: transformers, text-generation-inference (tag `text-generation-inference`), vLLM, llama.cpp/Ollama si se generan cuantizaciones GGUF (no publicadas en el repo).
-- Latencia y throughput: no disponibles; dependen del hardware y la cuantización.
+- VRAM estimada en BF16/FP16: aproximadamente 65 GB solo para pesos, mas KV cache; requiere 80 GB o mas por GPU (A100 80GB, H100 80GB) o multi-GPU.
+- Cuantizacion a 8 bits: ~33 GB, viable en una A100 40GB o dos RTX 4090.
+- Cuantizacion a 4 bits: ~17-20 GB, cabe en una RTX 4090 (24 GB) o RTX 3090, con margen limitado para contexto largo.
+- Despliegue recomendado: vLLM o TGI para servidores con GPU; llama.cpp/Ollama para cuantizaciones GGUF en consumer (no se confirman pesos GGUF publicados).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| richardyoung/Qwen2.5-32B-Instruct-DiM-heretic | ~32,8 B | no disponible (base: 32.768) | apache-2.0 | Ajuste heretic/abliterated, acceso restringido, solo inglés |
-| Qwen/Qwen2.5-32B-Instruct | ~32,8 B | 32.768 (131.072 ampliado) | apache-2.0 | Base alineado, multilingüe, acceso abierto |
-| Qwen/Qwen2.5-Coder-32B-Instruct | ~32,8 B | 131.072 | apache-2.0 | Especializado en código, alineado |
-| Meta Llama 3.3 70B Instruct | ~70 B | 128.000 | Llama 3.3 Community License | Mayor tamaño, multilingüe, licencia con restricciones |
+| Qwen2.5-32B-Instruct-DiM-heretic | 32,76 B | no disponible | apache-2.0 | Finetune abliterated, acceso gated |
+| Qwen2.5-32B-Instruct (base) | 32,76 B | 131.072 tokens | apache-2.0 | Modelo alineado de referencia |
+| Qwen2.5-14B-Instruct | 14,7 B | 131.072 tokens | apache-2.0 | Alternativa menor, mas facil de desplegar |
+
+No se dispone de datos de rendimiento comparativo para el finetune heretic.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": no aplica rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o explícito; requiere filtros externos en producción.
-- Riesgo elevado de alucinación y de respuestas plausibles pero incorrectas en temas sensibles.
-- Solo declara inglés; el rendimiento en otros idiomas puede degradarse respecto al base.
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; no es descargable de forma anónima.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del ajuste; la responsabilidad legal del uso recae en el desplegador.
-- No hay benchmarks publicados que confirmen que las capacidades del base se conservan tras la modificación.
-- El ajuste heretic puede degradar la coherencia en tareas que dependen de negativas legítimas (por ejemplo, asistencia médica o legal).
-- Fecha de creación en la ficha (2026-11-05) resulta anómala respecto a la cronología esperada; conviene verificar metadatos antes de confiar en ellos.
+- La eliminacion de salvaguardas implica riesgo elevado de generar contenido danino, ilegal o inseguro; no apto para uso directo con usuarios finales sin moderacion.
+- Riesgo de alucinacion heredado del modelo base, potencialmente agravado por la perdida de coherencia tras la intervencion.
+- La ficha declara solo ingles; el comportamiento multilingue no esta verificado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face.
+- Licencia Apache 2.0 permite uso comercial, pero el responsable del despliegue asume la responsabilidad legal del contenido generado.
+- No se documentan sesgos especificos ni evaluaciones de seguridad del finetune.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Paper refusal direction: https://arxiv.org/abs/2309.00071
-- Paper Qwen2.5: https://arxiv.org/abs/2407.10671
+- https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic
+- https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
+- https://arxiv.org/abs/2309.00071
+- https://arxiv.org/abs/2407.10671
+- https://arxiv.org/abs/2611.17846

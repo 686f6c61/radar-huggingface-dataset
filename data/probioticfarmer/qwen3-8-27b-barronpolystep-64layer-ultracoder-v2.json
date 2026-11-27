@@ -36,43 +36,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Code Generation",
-      "dataset": "EvalPlus HumanEval+",
-      "metric": "HumanEval (Base)",
-      "value": 75.61
-    },
-    {
-      "task": "Code Generation",
-      "dataset": "EvalPlus HumanEval+",
-      "metric": "HumanEval+ (80x Strict)",
-      "value": 71.34
-    },
-    {
-      "task": "Code Generation",
-      "dataset": "EvalPlus MBPP+",
-      "metric": "MBPP (Base)",
-      "value": 73.54
-    },
-    {
-      "task": "Code Generation",
-      "dataset": "EvalPlus MBPP+",
-      "metric": "MBPP+ (35x Strict)",
-      "value": 60.58
-    },
-    {
-      "task": "Code Generation",
-      "dataset": "BigCodeBench-Hard",
-      "metric": "BigCodeBench-Hard Pass@1",
-      "value": 23.65
-    },
-    {
-      "task": "Mathematical Reasoning",
-      "dataset": "MATH-500 (Level 4/5 TIR)",
-      "metric": "Pass@1 (TIR)",
-      "value": 93.33
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

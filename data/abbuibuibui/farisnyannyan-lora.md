@@ -2,93 +2,94 @@
 
 ## Resumen
 
-FarisNyannyan-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado especificamente sobre el checkpoint waiIllustriousSDXL v17. Desarrollado por el usuario abbuibuibui, reproduce a Faris Nyannyan (Akiha Rumiho), personaje de la visual novel y anime *Steins;Gate*. El modelo resuelve un problema acotado: generar representaciones consistentes del personaje con sus atuendos canonicos dentro del ecosistema Illustrious, sin necesidad de reentrenar un checkpoint completo.
+FarisNyannyan-Lora es un LoRA de personaje no oficial para el modelo de difusion SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17. Reproduce a Faris Nyannyan (Akiha Rumiho), personaje de la visual novel y anime *Steins;Gate*, y esta desarrollado por el usuario abbuibuibui. El repositorio es en realidad una coleccion de tres linajes de pesos: el LoRA original para WAI/Illustrious en la raiz, un LoRA para AutismMix Pony bajo `autism_pony/` y un LoRA para MOSS-Image bajo `moss/`, cada uno con su propio modelo base y sus propios prompts de activacion.
 
-Tecnicamente es un adaptador de bajo rango (rank 64, alpha 32) sobre una base SDXL, con siete epocas publicadas como ficheros safetensors independientes de 456.496.468 bytes cada uno. El autor recomienda la epoca E6 a fuerza 0.8 tras una evaluacion comparativa propia entre E5, E6 y E7 en diez escenas y cuatro intensidades. El repositorio ocupa 3,2 GB e incluye el dataset de entrenamiento (88 pares de imagenes, 6 atuendos) y material de evaluacion.
+El modelo resuelve el problema de consistencia de personaje en generacion de imagenes anime: permite fijar la identidad visual de Faris (coletas taladro rosas, flequillo recto, ojos castano rojizos) y hasta seis variantes de vestuario mediante tokens especificos. Se distribuye en siete epocas de entrenamiento (E1-E7), con E6 recomendada por el autor a fuerza 0.8 tras una evaluacion comparativa en tres rondas.
 
-Su relevancia es practica para la comunidad de generacion de imagenes anime: los LoRA de personaje son el mecanismo estandar para fijar identidad visual en pipelines de ComfyUI o Automatic1111, y este paquete documenta de forma inusualmente explicita el proceso de seleccion de epoca y los tokens de activacion. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de estilizacion/identidad.
+Es relevante para quienes trabajan con pipelines de generacion de imagen en produccion (ComfyUI, Automatic1111, diffusers) porque documenta de forma inusualmente detallada el proceso de seleccion de epoca, los tokens de activacion y las limitaciones conocidas del LoRA, algo poco habitual en LoRAs de personaje. El tamano del repositorio es de 7.9 GB, aunque cada fichero de pesos individual pesa 456.496.468 bytes (aproximadamente 435 MB).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre difusion latente SDXL (base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (adaptador de bajo rango; rank 64, alpha 32) |
-| Parametros activos | no aplica |
-| Longitud de contexto | no aplica |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, precision de entrenamiento bf16) |
-| Idiomas soportados | en, zh (prompts e interfaz) |
+| Arquitectura | LoRA sobre SDXL (checkpoint base waiIllustriousSDXL v17); linajes adicionales sobre AutismMix Pony y MOSS-Image |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion de imagen) |
+| Tipos de cuantizacion | no disponible (pesos LoRA en safetensors; la cuantizacion depende del checkpoint base) |
+| Idiomas soportados | en, zh (prompts de texto) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (ficheros LoRA de 456.496.468 bytes cada uno) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se inyecta en las capas de atencion y proyeccion de un UNet SDXL. Se entreno con rango 64 y alpha 32, optimizador AdamW en bf16, buckets con limite de 1536 y 7 epocas. El dataset consta de 88 pares imagen-texto con 6 atuendos distintos y un factor de repeticion de 3. Las captions se generaron con `keep_tokens = 2`, lo que explica que el color de pelo y ojos se omita con frecuencia en los textos de entrenamiento y deba anadirse explicitamente en inferencia.
+Se trata de un adaptador LoRA de rango 64 y alpha 32 aplicado sobre un UNet SDXL. El entrenamiento se realizo con AdamW en bf16, con buckets de resolucion con tope de 1536 y 7 epocas. El dataset consta de 88 pares imagen-texto que cubren 6 conjuntos de vestuario, con 3 repeticiones por muestra. Las captions se generaron con `keep_tokens = 2`, lo que explica que el color de pelo y de ojos a menudo se omita en el texto y deba anadirse manualmente en el prompt. No se documenta el uso de RLHF ni DPO, algo esperable en un LoRA de difusion.
 
-Cada epoca se publica como un fichero separado (`faris_nyannyan-000001` a `000006` y `faris_nyannyan.safetensors` como E7), todos del mismo tamano. El autor documento una evaluacion en dos rondas: una criba inicial de E1-E7 a fuerza 0.8 y una matriz posterior de E5, E6 y E7 por 10 escenas y 4 intensidades (0.4, 0.6, 0.8, 1.0). La conclusion es que E6 ofrece la silueta mas estable del personaje (coletas taladro lavanda, iris concentricos morados, capucha rosa con orejas de gato) y que E7 es practicamente equivalente como alternativa final. No hay innovaciones arquitectonicas: es un LoRA de personaje convencional con documentacion de seleccion de checkpoint poco habitual.
+La innovacion tecnica principal no esta en la arquitectura sino en la metodologia de evaluacion: el autor publica una evaluacion horizontal en tres rondas. La ronda 1 criba E1-E7 a fuerza 0.8; la ronda 3 ejecuta una matriz sobre E5, E6 y E7 con 10 escenas y 4 fuerzas (0.4, 0.6, 0.8 y 1.0). De ahi se concluye que E6 a 0.8 ofrece la silueta mas estable de Faris para este paquete. El repositorio incluye tres linajes independientes con checksums SHA-256 publicados (por ejemplo, E6 del linaje WAI: `C06C287703C484E47402148525192D4413F8AB07F8128C0BF540D04E699C320F`).
 
 ## Capacidades
 
-- Generacion de imagenes de personaje con identidad consistente mediante el token `faris_nyannyan`.
-- Control de atuendo mediante tokens especificos: `faris_nyannyan_pink_cat_hood` (atuendo principal), `faris_nyannyan_maid_uniform` (uniforme de maid cafe), `faris_nyannyan_future_soldier_uniform`, `faris_nyannyan_green_dress`, `faris_nyannyan_orange_ruffle_dress` y `faris_nyannyan_pink_white_dress`.
-- Composicion de escena completa: retrato frontal, tres cuartos, perfil, cuerpo entero, plano sentado, fondos simples y fondos nocturnos complejos.
-- Estilizacion anime compatible con el ecosistema Illustrious/SDXL (prompts con `masterpiece, best quality, very aesthetic, absurdres, anime screencap`).
-- Soporte de prompts en ingles y chino.
-- No soporta tool calling, agentes, razonamiento multi-paso, vision ni audio: es un modelo de sintesis de imagen.
+- Generacion de imagenes anime del personaje Faris Nyannyan con identidad consistente mediante el token `faris_nyannyan`.
+- Control de vestuario mediante tokens dedicados: `faris_nyannyan_pink_cat_hood` (capucha de gato rosa), `faris_nyannyan_maid_uniform` (uniforme de maid), `faris_nyannyan_future_soldier_uniform`, `faris_nyannyan_green_dress`, `faris_nyannyan_orange_ruffle_dress` y `faris_nyannyan_pink_white_dress`.
+- Retratos de cara, planos de tres cuartos, perfil, cuerpo completo, poses sentadas y escenas con fondo simple o complejo (incluida escena nocturna).
+- Compatibilidad con prompts en ingles y chino.
+- Integracion con ComfyUI (configuracion documentada: Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216, sin hires ni ADetailer).
+- Tres linajes de pesos para tres modelos base distintos (WAI/Illustrious, AutismMix Pony y MOSS-Image), sin mezcla de prompts ni negativos entre ellos.
+- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video; es exclusivamente un adaptador de generacion de imagen.
 
 ## Casos de uso
 
-- Ilustracion de fan art de *Steins;Gate*: el LoRA fija la identidad del personaje con un solo token, lo que permite iterar composiciones sin perder el parecido entre generaciones.
-- Creacion de fichas de personaje para proyectos derivados: combinando los seis tokens de atuendo se pueden producir hojas de referencia coherentes del mismo personaje en distintos vestuarios.
-- Prototipado rapido en ComfyUI: con Euler a, 28 pasos, CFG 4.5, CLIP skip 2 y 832x1216 se obtienen resultados usables sin hires fix ni ADetailer, ideal para bocetos de baja latencia.
-- Generacion de material para doujinshi o novelas visuales amateur: el adaptador se puede encadenar con otros LoRA de estilo o composicion en el mismo grafo de nodos.
-- Pruebas de investigacion sobre control de identidad en difusion: el paquete incluye evaluacion comparativa entre epocas e intensidades, util como referencia metodologica para estudiar el efecto de la fuerza del LoRA.
-- Integracion en pipelines automaticos de generacion por lotes: al ser un fichero safetensors de ~456 MB por epoca, se puede cargar y descargar en memoria de GPU de forma rapida entre trabajos.
-- Docencia sobre entrenamiento de LoRA: el repositorio publica dataset, configuracion (rank, alpha, optimizador, buckets, repeticiones) y criterios de seleccion, lo que lo convierte en un ejemplo didactico completo.
+- Ilustracion de fan art de *Steins;Gate*: cargar el LoRA E6 a fuerza 0.8 en ComfyUI con el checkpoint waiIllustriousSDXL v17 y el prompt de ejemplo del autor para obtener retratos consistentes del personaje sin reentrenar.
+- Creacion de hojas de personaje para proyectos derivados: usar los distintos tokens de vestuario (`pink_cat_hood`, `maid_uniform`, `green_dress`, etc.) para generar un conjunto coherente de variantes del mismo personaje en una sola sesion.
+- Prototipado de webcomics o doujinshi: la estabilidad de silueta de E6 en cuerpo completo (capelet rosa, vestido blanco, zapatos negros con lazo) permite mantener continuidad visual entre paneles.
+- Generacion de assets para juegos o mods de tematica anime: el LoRA puede producir retratos de personaje a 832x1216 listos para integrarse en dialogos o fichas de personaje.
+- Pruebas de evaluacion de LoRAs de personaje: el repositorio sirve como referencia metodologica por su matriz documentada de epocas y fuerzas, util para investigadores que comparen tecnicas de entrenamiento de adaptadores.
+- Experimentacion con modelos base alternativos: los linajes `autism_pony/` y `moss/` permiten comparar el mismo personaje bajo AutismMix Pony (fuerza recomendada 1.0) y MOSS-Image, util para decidir que checkpoint encaja mejor en un pipeline concreto.
+- Generacion de escenas nocturnas o con fondos complejos: la evaluacion del autor incluye escenas nocturnas y de fondo complejo, lo que da indicaciones sobre el comportamiento del LoRA fuera de retratos simples.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud de identidad) en la informacion disponible. El autor aporta unicamente una evaluacion cualitativa:
+No se han publicado resultados de benchmarks numericos (FID, CLIP score, etc.) en la informacion disponible. El autor aporta una evaluacion cualitativa comparativa:
 
-| Ronda | Candidatos | Condiciones | Conclusion |
-|---|---|---|---|
-| Round 1 | E1-E7 | Fuerza 0.8 | Criba inicial; E5-E7 pasan a la matriz |
-| Round 3 | E5, E6, E7 | 10 escenas x 4 fuerzas (0.4/0.6/0.8/1.0) | E6 recomendado a 0.8; E7 alternativa final; E5 alternativo |
+| Candidato | Observacion | Decision |
+|---|---|---|
+| E5 | Coletas taladro moradas y ojos morados anillados usables; capucha de gato a menudo presente | Alternativa |
+| E6 | Retrato: coletas taladro lavanda, iris morados concentricos, capucha de gato rosa. Cuerpo completo: capelet rosa, vestido blanco, zapatos negros con lazo; silueta estable | Recomendada a 0.8 |
+| E7 | Muy cercana a E6 | Alternativa final |
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un adaptador sobre SDXL, el consumo lo determina el checkpoint base. En fp16, SDXL completo requiere aproximadamente 8-10 GB de VRAM para inferencia a 832x1216; el LoRA anade un sobrecoste marginal (menos de 1 GB).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100 para lotes grandes. Cualquier GPU con 8 GB o mas puede ejecutar el modelo base con optimizaciones.
-- Cabe en GPU de consumo: si, en RTX 3060 12 GB en adelante; en GPUs de 6-8 GB puede requerir `--medvram` o `--lowvram` en Automatic1111 o el uso de modelos en fp16/bf16.
-- Opciones de despliegue: ComfyUI (configuracion documentada por el autor), Automatic1111/Forge, Diffusers (libreria declarada en el repo), InvokeAI.
-- Latencia y throughput: no disponibles. La configuracion de referencia (Euler a, 28 pasos, CFG 4.5, 832x1216) es moderada; en una RTX 4090 se situa en el orden de pocos segundos por imagen, pero no hay medicion publicada.
+- VRAM estimada: no disponible de forma especifica para el LoRA; depende del checkpoint base SDXL (waiIllustriousSDXL v17, AutismMix Pony o MOSS-Image) y de la resolucion. A 832x1216 con SDXL en fp16 se suele requerir en torno a 8-12 GB de VRAM, aunque este dato no se confirma en la informacion proporcionada.
+- GPU recomendadas: no disponible en la documentacion del autor. Por el tamano del checkpoint base (SDXL), son habituales RTX 3060 12 GB, RTX 4070, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: si, siempre que el checkpoint base SDXL quepa; el LoRA en si pesa unos 435 MB por fichero.
+- Opciones de despliegue: ComfyUI (configuracion documentada por el autor), y por compatibilidad con safetensors SDXL, tambien diffusers, Automatic1111 y Forge; no se documentan vLLM, llama.cpp ni Ollama (no aplican a difusion).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| FarisNyannyan-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (a menudo CreativeML) | Civitai, Hugging Face |
-| LoRA de personaje Illustrious de terceros | LoRA de personaje | Illustrious-XL | variable | no aplica | variable | Civitai, Hugging Face |
-| Checkpoint Illustrious-XL completo | Modelo base | SDXL | no disponible | no aplica | variable | Hugging Face |
+No se dispone de datos de otros LoRAs de personaje comparables en la informacion proporcionada (parametros, contexto, rendimiento o licencia). Se indica "no disponible" para una comparativa cuantitativa. Como referencia cualitativa, el propio repositorio contiene tres linajes del mismo personaje que pueden compararse entre si:
 
-No se dispone de datos cuantitativos de rendimiento para establecer una comparacion numerica con alternativas concretas. La comparacion relevante es de ecosistema: este LoRA solo es funcional sobre waiIllustriousSDXL v17 o bases compatibles con Illustrious, y su calidad esta ligada a la de ese checkpoint.
+| Linaje | Modelo base | Epoca recomendada | Fuerza recomendada | Notas |
+|---|---|---|---|---|
+| WAI/Illustrious (raiz) | waiIllustriousSDXL v17 | E6 | 0.8 | Look verificado: coletas taladro, flequillo recto, ojos castano rojizos; deriva ocasional a lavanda |
+| AutismMix Pony (`autism_pony/`) | AutismMix Pony (muestras con AutismMix Confetti) | E6 | 1.0 | Look verificado: pelo rosa, coletas largas, flequillo, ojos castano rojizos, diadema de orejas de gato negra |
+| MOSS-Image (`moss/`) | MOSS-Image | no disponible | no disponible | Tercer linaje; no se detallan metricas en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- La capucha con orejas de gato y la diadema de orejas negras pueden desaparecer en algunas escenas; el autor recomienda reforzar con el token de atuendo explicito y anadir `cat ears` en el prompt.
-- Las captions se entrenaron con `keep_tokens = 2` y a menudo omiten color de pelo y ojos; es necesario anadirlos manualmente (`purple hair, purple eyes`) para evitar derivas cromaticas.
-- La identidad de referencia del paquete son coletas taladro moradas, no la representacion mas comun de pelo rosa; esto puede generar discrepancias con expectativas de otros fans.
-- Riesgo de sobreajuste a la base: fuera de waiIllustriousSDXL v17 el comportamiento no esta garantizado.
-- Es una obra derivada no oficial; los derechos del personaje pertenecen a sus titulares (5pb./Nitroplus/MAGES). La licencia creativeml-openrail-m impone restricciones de uso comercial y obligaciones de atribucion que deben revisarse antes de cualquier despliegue productivo.
-- No hay datos de sesgo ni evaluaciones de seguridad publicadas; como todo modelo de difusion anime, puede reproducir estereotipos visuales del dataset de entrenamiento.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
-- El campo `pipeline` no esta disponible en los metadatos de Hugging Face, lo que puede complicar la carga automatica con Diffusers sin especificar la clase manualmente.
+- La capucha de orejas de gato o la diadema de orejas de gato negra pueden desaparecer en algunas escenas; se recomienda usar el token de vestuario explicito junto con `cat ears` o palabras equivalentes.
+- El color de pelo y ojos no siempre se conserva: algunos renders de WAI derivan hacia lavanda o morado, por lo que conviene declarar el color explicitamente en el prompt.
+- Es un derivado hecho por fans, no oficial; los derechos del personaje y de la franquicia siguen siendo de sus titulares.
+- La licencia creativeml-openrail-m impone restricciones de uso comercial que deben revisarse antes de emplearlo en produccion; no se detallan aqui las clausulas concretas.
+- No se deben mezclar pesos, prompts ni negativos entre los tres linajes (WAI, AutismMix Pony y MOSS-Image): cada uno requiere su modelo base.
+- Riesgo de sobreajuste o de deriva estilistica fuera de las condiciones evaluadas (fuerza 0.8, resolucion 832x1216, sampler Euler a); no se documenta comportamiento a otras resoluciones o samplers.
+- No hay datos publicados sobre sesgos, tasas de alucinacion visual ni evaluacion cuantitativa de fidelidad al personaje.
+- El repositorio incluye unicamente pesos LoRA; el checkpoint base debe obtenerse por separado y cumple su propia licencia.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/abbuibuibui/FarisNyannyan-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/FarisNyannyan-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/FarisNyannyan-Lora
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio
-- README en chino: `README_zh.md` dentro del repositorio
+- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
+- README en chino: `README_zh.md` (dentro del repositorio)

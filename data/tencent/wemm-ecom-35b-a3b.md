@@ -2,107 +2,110 @@
 
 ## Resumen
 
-WeMM-Ecom-35B-A3B es un modelo multimodal de tipo mixture-of-experts (MoE) desarrollado por WeChat Vision (Tencent), disenado especificamente para la comprension de contenido en el ambito del comercio electronico de WeChat. El modelo parte del checkpoint Qwen/Qwen3.5-35B-A3B y se ajusta de forma fina para combinar una comprension detallada de productos, atributos, moderacion y OCR con capacidades generales de vision-lenguaje y razonamiento.
+WeMM-Ecom-35B-A3B es un modelo multimodal de tipo image-text-to-text desarrollado por WeChat Vision (Tencent) dentro de la familia WeMM-Ecom, orientada a la comprension de contenido de comercio electronico. Se construye como un fine-tune del modelo base Qwen/Qwen3.5-35B-A3B, una arquitectura MoE de 35.107.181.936 parametros totales con aproximadamente 3.000 millones de parametros activos, y anade capacidades especificas de entendimiento de producto, moderacion, OCR, grounding y razonamiento sobre imagenes y video.
 
-Con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token, el modelo ofrece una ventana de contexto de 262.144 tokens, lo que lo situa en la gama alta de modelos multimodales eficientes en computo. Segun la model card, supera a Qwen3.5-35B-A3B en 3,92 puntos y a MiniCPM-V-4.7-35B-A3B en 8,22 puntos en la media de benchmarks de comercio electronico, y mantiene capacidades generales a la par de modelos del mismo tamano.
+El modelo resuelve el problema de la comprension multimodal especializada en dominios de e-commerce: identificacion de atributos de producto, moderacion de contenido, extraccion de texto en imagenes de catalogo y razonamiento sobre fichas de producto. Segun la model card, supera al modelo base Qwen3.5-35B-A3B en 3,92 puntos de media en benchmarks de e-commerce y mantiene capacidades generales equiparables a modelos del mismo tamano, ademas de superar a modelos abiertos de cientos de miles de millones de parametros en la suite de e-commerce.
 
-Su relevancia actual radica en la combinacion de un contexto muy largo, soporte de texto, imagen, multi-imagen y video, y modos de "thinking" e "instruct" conmutables, todo bajo licencia Apache 2.0 y con formatos de cuantizacion listos para despliegue (BF16, FP8, GPTQ y GGUF).
+Es relevante porque combina un contexto de 262.144 tokens, soporte de entradas de texto, imagen, multi-imagen y video, y modos de inferencia hibridos (instruct y thinking) en un unico checkpoint con licencia Apache 2.0. La disponibilidad de formatos BF16, FP8, GPTQ y GGUF facilita su despliegue tanto en entornos de servidor como en hardware mas modesto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal MoE (base Qwen3.5-35B-A3B) |
-| Parametros totales | 35B |
-| Parametros activos | ~3B |
+| Arquitectura | Mixture-of-Experts (MoE) basada en Qwen3.5-35B-A3B; pipeline image-text-to-text |
+| Parametros totales | 35.107.181.936 |
+| Parametros activos | Aproximadamente 3.000 millones (MoE) |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | BF16, FP8, GPTQ, GGUF |
-| Idiomas soportados | zh, en |
+| Idiomas soportados | Chino (zh) e ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16); variantes FP8, GPTQ y GGUF |
+| Formato de pesos | Safetensors (BF16); variantes FP8, GPTQ y GGUF publicadas por separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal con arquitectura mixture-of-experts heredada de Qwen3.5-35B-A3B: 35B parametros totales con aproximadamente 3B activos por token, lo que reduce el coste de inferencia frente a un modelo denso equivalente. Procesa entradas de texto, imagen, multi-imagen y video, y ofrece dos modos de generacion: "instruct" (respuesta directa) y "thinking" (razonamiento extendido). La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion figura como no disponible en el material proporcionado.
+El modelo emplea una arquitectura Mixture-of-Experts (MoE) heredada de Qwen3.5-35B-A3B, con 35.107 millones de parametros totales y aproximadamente 3.000 millones activos por token. Incorpora un codificador visual para entradas de imagen, multi-imagen y video, integrado en el pipeline image-text-to-text. El checkpoint se distribuye en Safetensors BF16 con un tamano de repositorio de 70,2 GB.
 
-El ajuste fino se orienta a tareas de comercio electronico (atributos de producto, moderacion, OCR, retrieval, grounding, razonamiento y conocimiento de producto) sin sacrificar rendimiento general. La evaluacion reportada cubre 28 benchmarks de comercio electronico en ocho escenarios y 64 benchmarks generales en ocho categorias, con puntuaciones en escala 0-100.
+El entrenamiento parte del modelo base Qwen3.5-35B-A3B mediante fine-tuning orientado a e-commerce, segun indica la model card. La evaluacion se organiza en 28 benchmarks de e-commerce distribuidos en ocho escenarios (atributos de producto, moderacion, OCR, retrieval, grounding, razonamiento, benchmarks publicos de e-commerce y conocimiento de producto) y 64 benchmarks generales en ocho categorias. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. El modelo soporta un modo hibrido de pensamiento (thinking) y un modo instruct, lo que sugiere entrenamiento con datos de razonamiento de cadena de pensamiento, aunque este extremo no se confirma explicitamente en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multimodal (VQA, STEM, documentos y graficos).
-- Comprension de imagenes, multiples imagenes y video como entrada (pipeline image-text-to-text).
-- Comprension especifica de comercio electronico: atributos de producto, moderacion de contenido, OCR, retrieval, grounding y conocimiento de producto.
-- Modo "thinking" con razonamiento extendido y modo "instruct" para respuestas directas.
-- Capacidades multilingues limitadas a chino (zh) e ingles (en).
-- Comprension de documentos y graficos, razonamiento espacial, grounding y conteo, seguimiento de instrucciones y tareas centradas en texto.
-- No se especifica en la informacion disponible soporte explicito de tool calling, function calling ni de agentes multi-paso.
+- Generacion de texto y razonamiento multimodal sobre imagenes, multi-imagen y video.
+- Comprension especializada de e-commerce: atributos de producto, moderacion de contenido, OCR en imagenes de catalogo, retrieval, grounding y conocimiento de producto.
+- Modo hibrido de pensamiento (thinking) e instruct, con ajustes de muestreo recomendados por modo y tarea.
+- Capacidades generales de VQA, comprension de documentos y graficos, razonamiento STEM, comprension espacial, grounding y conteo, comprension multi-imagen, seguimiento de instrucciones y tareas centradas en texto.
+- Soporte multilingue limitado a chino e ingles.
+- No se documenta en la informacion disponible soporte explicito de tool calling o function calling.
+- No se documenta en la informacion disponible soporte explicito de agentes multi-paso.
+- Compatible con endpoints (tag `endpoints_compatible`) y con opciones de serving compatibles con OpenAI.
 
 ## Casos de uso
 
-- Catalogacion automatica de productos: extraer atributos (color, talla, material, categoria) a partir de imagenes y descripciones de producto, aprovechando el ajuste especifico en atributos de producto y OCR.
-- Moderacion de contenido en marketplace: clasificar imagenes y textos de anuncios para detectar contenido no permitido, usando los benchmarks de moderacion reportados por el autor.
-- Busqueda y retrieval multimodal: generar representaciones o descripciones enriquecidas de productos para mejorar la recuperacion por imagen o por texto en un catalogo de comercio electronico.
-- Atencion al cliente con contexto largo: gestionar conversaciones multi-turno con historial extenso e imagenes adjuntas (capturas, fotos de producto) gracias a la ventana de 262.144 tokens.
-- Analisis de resenas y contenido generado por usuarios: procesar resenas con imagenes o video para extraer quejas, sentimiento y defectos de producto de forma estructurada.
-- Verificacion de fichas de producto: comprobar coherencia entre imagen, titulo y especificaciones mediante grounding y razonamiento visual.
-- Procesamiento de video de demostracion de producto: resumir o etiquetar videos de uso del producto para enriquecer la ficha o el sistema de recomendacion.
+- Moderacion de contenido en marketplace: el modelo puede clasificar imagenes y texto de anuncios para detectar productos prohibidos o contenido inapropiado, apoyandose en sus benchmarks de moderacion y en el modo thinking para casos ambiguos.
+- Extraccion de atributos de producto: a partir de fotos de catalogo, el modelo identifica materiales, colores, tallas y categorias, usando OCR y grounding para localizar elementos en la imagen.
+- Generacion de fichas de producto: con contexto de 262.144 tokens, puede procesar descripciones largas y multiples imagenes de un mismo producto para redactar fichas coherentes en chino o ingles.
+- Busqueda y retrieval multimodal: indexacion y recuperacion de productos a partir de consultas en lenguaje natural o imagenes de referencia, aprovechando las capacidades de retrieval evaluadas en la suite de e-commerce.
+- Atencion al cliente automatizada: gestion de conversaciones multi-turno sobre pedidos, devoluciones o caracteristicas de producto, con soporte de imagenes enviadas por el usuario para diagnosticar incidencias.
+- Analisis de resenas con video e imagen: procesamiento de video de producto y resenas visuales para resumir opiniones o detectar discrepancias entre la descripcion y el articulo recibido.
+- Verificacion de cumplimiento en catalogos: comparacion entre imagen de producto y texto de la ficha para detectar inconsistencias, apoyandose en el modo thinking para razonamiento multi-paso.
 
 ## Benchmarks y rendimiento
 
-La model card reporta comparativas agregadas, pero los resultados detallados se presentan solo como imagenes (tablas en PNG) y no como cifras textuales; por tanto, no se reproducen numeros por benchmark individual.
+La model card reporta resultados en escala 0-100 sobre 28 benchmarks de e-commerce (ocho escenarios) y 64 benchmarks generales (ocho categorias), pero los valores numericos completos se presentan unicamente en imagenes dentro del repositorio, no como tablas de texto. Los datos agregados disponibles son:
 
-| Comparativa (media de benchmarks) | Diferencia frente a WeMM-Ecom-35B-A3B |
+| Comparativa | Diferencia media (escala 0-100) |
 |---|---|
-| Comercio electronico vs. Qwen3.5-35B-A3B | -3,92 puntos |
-| Comercio electronico vs. Qwen3.6-35B-A3B | -3,36 puntos |
-| Comercio electronico vs. MiniCPM-V-4.7-35B-A3B | -8,22 puntos |
-| General vs. Qwen3.5-35B-A3B | -0,17 puntos |
-| General vs. MiniCPM-V-4.7-35B-A3B | -5,60 puntos |
-| General vs. Valley3-32B | -9,13 puntos |
+| E-commerce vs. Qwen3.5-35B-A3B | +3,92 puntos |
+| E-commerce vs. Qwen3.6-35B-A3B | +3,36 puntos |
+| E-commerce vs. MiniCPM-V-4.7-35B-A3B | +8,22 puntos |
+| General vs. Qwen3.5-35B-A3B | +0,17 puntos |
+| General vs. MiniCPM-V-4.7-35B-A3B | +5,60 puntos |
+| General vs. Valley3-32B | +9,13 puntos |
 
-No se han publicado resultados numericos por benchmark (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+No se han publicado en la informacion disponible resultados numericos por benchmark individual (MMLU, HumanEval, GSM8K u otros); los desgloses completos estan en las imagenes `assets/ecommerce-instruct-table.png`, `assets/ecommerce-thinking-table.png`, `assets/general-instruct-table.png` y `assets/general-thinking-table.png` del repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: en torno a 70 GB solo para pesos, mas memoria para KV cache y activaciones; requiere multiples GPU o GPU de 80 GB con paralelismo.
-- VRAM estimada en FP8: aproximadamente 35 GB para pesos, viable en una GPU de 48-80 GB.
-- VRAM estimada en GPTQ (4 bits): en torno a 18-20 GB para pesos, con margen para contexto y cache.
-- VRAM estimada en GGUF (segun cuantizacion, p. ej. Q4): aproximadamente 18-22 GB; las variantes de menor bit permiten acercarse a GPU de consumo de 24 GB.
-- GPU recomendadas: A100 80 GB, H100 80 GB para BF16; L40S, A6000 o RTX 4090 (24 GB) para cuantizaciones de 4-8 bits con contexto moderado.
-- Cabe en GPU de consumo (RTX 4090, 3090) solo en cuantizaciones GGUF/GPTQ de baja precision y con ventanas de contexto reducidas.
-- Opciones de despliegue: Transformers (>=5.2.0), endpoints compatibles con OpenAI, y presumiblemente vLLM/llama.cpp segun los formatos publicados; no se detalla configuracion de TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada en BF16: aproximadamente 70 GB de pesos, por lo que requiere al menos 80 GB de VRAM para inferencia sin cuantizar (A100 80GB, H100 80GB).
+- VRAM estimada en FP8: en torno a 35-40 GB, viable en A100 40GB, L40S 48GB o RTX 6000 Ada.
+- VRAM estimada en GPTQ (4 bits): en torno a 18-20 GB, viable en RTX 4090 24GB y RTX 5090.
+- VRAM estimada en GGUF (segun cuantizacion, p. ej. Q4_K_M): aproximadamente 20-22 GB, viable en GPU de consumo de 24 GB o en configuraciones CPU+GPU.
+- GPU recomendadas: H100 o A100 80GB para BF16; L40S o A100 40GB para FP8; RTX 4090/5090 para GPTQ y GGUF.
+- Opciones de despliegue: Transformers (>=5.2.0), con soporte de serving compatible con OpenAI segun la model card; llama.cpp/Ollama mediante los pesos GGUF publicados.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| WeMM-Ecom-35B-A3B | 35B totales / ~3B activos | 262.144 | Apache 2.0 | Ajuste especifico de comercio electronico; multimodal |
-| Qwen3.5-35B-A3B | 35B totales / ~3B activos (segun modelo base) | no disponible | no disponible | Modelo base; superado por WeMM-Ecom en benchmarks de e-commerce |
-| MiniCPM-V-4.7-35B-A3B | 35B totales / ~3B activos (segun nombre) | no disponible | no disponible | Superado por WeMM-Ecom en e-commerce y general |
-| Valley3-32B | 32B | no disponible | no disponible | Superado por WeMM-Ecom en benchmarks generales |
+| Modelo | Parametros | Contexto | E-commerce (media) | General (media) | Licencia |
+|---|---|---|---|---|---|
+| WeMM-Ecom-35B-A3B | 35B totales / ~3B activos | 262.144 | Referencia | Referencia | Apache 2.0 |
+| Qwen3.5-35B-A3B | 35B totales / ~3B activos | No disponible | -3,92 vs. WeMM | -0,17 vs. WeMM | No disponible |
+| Qwen3.6-35B-A3B | 35B totales / ~3B activos | No disponible | -3,36 vs. WeMM | No disponible | No disponible |
+| MiniCPM-V-4.7-35B-A3B | 35B totales / ~3B activos | No disponible | -8,22 vs. WeMM | -5,60 vs. WeMM | No disponible |
+| Valley3-32B | 32B | No disponible | No disponible | -9,13 vs. WeMM | No disponible |
 
-Los datos de contexto y licencia de los modelos comparados no aparecen en la informacion proporcionada.
+Los datos de contexto, licencia y parametros de los modelos comparados no se detallan en la informacion proporcionada y se marcan como no disponibles.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo chino e ingles; el rendimiento en castellano u otros idiomas no esta documentado.
-- Sesgos: no se documentan evaluaciones de sesgo; al estar ajustado sobre datos de comercio electronico de WeChat, puede heredar sesgos de ese dominio y de la distribucion de productos china.
-- Alucinacion: como modelo generativo multimodal, puede producir descripciones o atributos inexistentes; en catalogacion y moderacion conviene validacion humana o reglas de negocio.
-- El modo "thinking" incrementa el consumo de tokens y la latencia; la model card recomienda perfiles de muestreo y presupuestos de salida distintos por modo y tarea.
-- Los resultados de benchmarks se presentan como imagenes en la model card; no hay cifras textuales verificables por benchmark individual.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio y las condiciones del modelo base Qwen3.5-35B-A3B.
-- El repositorio figura con 0 descargas y 0,0 GB de tamano en el momento de la consulta, lo que sugiere que los pesos pueden no estar completamente disponibles o que el modelo es muy reciente.
+- Idiomas limitados a chino e ingles; no se documenta soporte de castellano ni de otros idiomas, lo que restringe su uso en mercados hispanohablantes sin evaluacion previa.
+- Riesgo de alucinacion en la generacion de atributos de producto o descripciones, especialmente en modo instruct sin verificacion posterior.
+- Sesgos potenciales derivados de los datos de entrenamiento orientados al ecosistema de e-commerce de WeChat, que pueden no reflejar catalogos o practicas de otros mercados.
+- La model card no detalla la composicion del dataset de entrenamiento ni los procesos de alineacion, lo que dificulta auditar sesgos.
+- El rendimiento en benchmarks se reporta en escala 0-100 y solo de forma agregada en el texto; los valores por benchmark requieren consultar las imagenes del repositorio.
+- Aunque la licencia es Apache 2.0, conviene revisar el archivo LICENSE del repositorio para confirmar terminos de uso comercial y atribucion.
+- El contexto de 262.144 tokens implica un coste elevado de memoria KV-cache en produccion; se recomienda cuantizacion y gestion cuidadosa del contexto en despliegues de alta concurrencia.
+- No se documenta soporte explicito de tool calling ni de flujos agénticos, por lo que su integracion en pipelines de agentes requiere validacion adicional.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
 - Coleccion WeMM-Ecom: https://huggingface.co/collections/tencent/wemm-ecom
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.30662
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2611.30662
 - Repositorio GitHub: https://github.com/Tencent/WeMM-Ecom
-- Licencia: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B/blob/main/LICENSE
 - Variante FP8: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-FP8
 - Variante GPTQ: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ
 - Variante GGUF: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
-- Familia: https://huggingface.co/tencent/WeMM-Ecom-0.8B, https://huggingface.co/tencent/WeMM-Ecom-2B, https://huggingface.co/tencent/WeMM-Ecom-4B, https://huggingface.co/tencent/WeMM-Ecom-9B
-- Tencent Vision: https://tencentvision.org/
+- Modelos de la familia: https://huggingface.co/tencent/WeMM-Ecom-0.8B, https://huggingface.co/tencent/WeMM-Ecom-2B, https://huggingface.co/tencent/WeMM-Ecom-4B, https://huggingface.co/tencent/WeMM-Ecom-9B
+- Licencia: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B/blob/main/LICENSE

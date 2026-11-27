@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
-      "url": "https://www.zhihu.com/question/1903231775980913051",
-      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
-    },
-    {
-      "title": "Gerenciar configurações do canal - Ajuda do YouTube",
-      "url": "https://support.google.com/youtube/answer/2976814?hl=pt-BR",
-      "snippet": "Gerenciar configurações do canal Você pode gerenciar as configurações do seu canal no YouTube Studio. É possível mudar desde …"
-    },
-    {
-      "title": "Tidak dapat mengakses YouTube - Bantuan YouTube - Google Help",
-      "url": "https://support.google.com/youtube/answer/6159254?hl=id",
-      "snippet": "Tidak dapat mengakses YouTube Jika saat membuka youtube.com Anda melihat halaman error, bukan halaman YouTube, hal itu …"
-    },
-    {
-      "title": "YouTube公司 - 知乎",
-      "url": "https://www.zhihu.com/topic/19550532",
-      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
-    },
-    {
-      "title": "Télécharger l'application mobile YouTube",
-      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
-      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
-    }
-  ]
+  "sources": []
 }

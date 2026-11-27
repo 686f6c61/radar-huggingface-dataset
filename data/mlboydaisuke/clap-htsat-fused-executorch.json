@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - LAION-AI/CLAP: Contrastive Language-Audio Pretraining",
-      "url": "https://github.com/LAION-AI/CLAP",
-      "snippet": "Contrastive Language-Audio Pretraining. Contribute to LAION-AI/CLAP development by creating an account on GitHub."
-    },
-    {
-      "title": "CLAP · Hugging Face",
-      "url": "https://huggingface.co/docs/transformers/model_doc/clap",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "CLAP HTSAT-Fused: Zero-Shot Audio Classification & Retrieval Model",
-      "url": "https://toolseekai.com/en/models/laionclap-htsat-fused",
-      "snippet": "CLAP HTSAT-Fused is a contrastive language-audio pretraining model for zero-shot audio classification, retrieval, and feature extraction. Uses HTSAT audio encoder and RoBERTa text encoder. Apache-2.0 license."
-    },
-    {
-      "title": "clap-htsat-fused · Models",
-      "url": "https://www.modelscope.cn/models/laion/clap-htsat-fused",
-      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
-    },
-    {
-      "title": "clap-htsat-fused by laion | Mixpeek Model Hub",
-      "url": "https://mixpeek.com/model/laion/clap-htsat-fused",
-      "snippet": "CLAP learns aligned audio and text representations through contrastive learning, similar to how CLIP works for images and text. The HTSAT-fused variant uses the HTS-AT audio transformer fused with RoBERTa text embeddings."
-    }
-  ]
+  "sources": []
 }

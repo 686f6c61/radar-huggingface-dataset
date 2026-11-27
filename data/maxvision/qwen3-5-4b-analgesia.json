@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MaxVision | Rugged Portable Workstations, Servers & Displays",
-      "url": "https://www.maxvision.com/",
-      "snippet": "From shipboard consoles to UAV ground control stations, our rugged MaxVision systems deliver mission-critical compute, display, …"
-    },
-    {
-      "title": "Maxvision Technology Corp.",
-      "url": "https://en.maxvision.com.cn/",
-      "snippet": "Data Security At Maxvision, the security of sensitive data is strongly emphasized. Therefore, we make a firm commitment that: Data …"
-    },
-    {
-      "title": "Rugged Portable Workstations & Edge Servers | MaxVision",
-      "url": "https://www.maxvision.com/products/",
-      "snippet": "MaxVision delivers high-performance, fully customizable portable workstations, servers, computers and displays built from the …"
-    },
-    {
-      "title": "Qui est Maxvision ? - Robot Magazine",
-      "url": "https://www.robot-magazine.fr/qui-est-maxvision/",
-      "snippet": "Maxvision est une entreprise technologique spécialisée dans la robotique intelligente et l’intelligence artificielle. Elle développe des …"
-    },
-    {
-      "title": "MaxVision",
-      "url": "https://www.maxvision.io/",
-      "snippet": "MaxVision equips professional A/V and music industry manufacturers with time tested tools to visualize data and track sell-through …"
-    }
-  ]
+  "sources": []
 }

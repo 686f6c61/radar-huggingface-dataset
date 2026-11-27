@@ -2,109 +2,104 @@
 
 ## Resumen
 
-Moderator es un clasificador de imágenes especializado en detección de contenido NSFW (desnudos y actividad sexual) desarrollado por Desert-Ant-Labs. A diferencia de la mayoría de modelos de moderación disponibles, está entrenado exclusivamente con datos de procedencia controlada: imágenes con licencias permisivas (dominio público o Creative Commons) y datos sintéticos generados internamente, sin scraping de internet. El modelo se distribuye en formatos compilados para inferencia en dispositivo (Core ML int8 y LiteRT/TFLite int8) con un tamaño de apenas 9,7 MB y 9,2 MB respectivamente.
+Moderator es un clasificador de imágenes disenado para detectar desnudez y contenido sexual antes de que una imagen se suba o se muestre en una aplicación. Lo desarrolla Desert Ant Labs y se distribuye como pesos compilados para Core ML (int8) y LiteRT/TFLite (int8), con un tamano de 9,7 MB y 9,2 MB respectivamente. El modelo no es un transformer generativo, sino un clasificador de visión compacto pensado para ejecutarse íntegramente en el dispositivo.
 
-La propuesta de valor es la moderación local: la imagen nunca abandona el dispositivo del usuario, lo que elimina riesgos de privacidad y cumple con requisitos de RGPD en aplicaciones que procesan contenido sensible. El modelo devuelve una puntuación continua de 0 a 1 junto con decisiones por región anatómica (pezones, genitales, nalgas, desnudo y acto sexual), lo que permite implementar políticas granulares como permitir torso desnudo pero bloquear genitales.
+La propuesta diferencial es doble: por un lado, la inferencia es local, de modo que las imágenes no salen del dispositivo del usuario; por otro, el autor afirma que el entrenamiento se ha realizado exclusivamente con datos con licencia permisiva (dominio público o Creative Commons) y datos sintéticos, sin scraping de internet. Esto resulta relevante para equipos que necesitan moderación de contenido con trazabilidad de datos y cumplimiento normativo.
 
-Está pensado para integración en aplicaciones móviles y web mediante SDKs oficiales en Swift, Kotlin y JavaScript/TypeScript, con soporte para iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node. No es un modelo de lenguaje ni un transformer generativo: es un clasificador de imágenes convolucional o híbrido compilado para ejecución eficiente en hardware de consumo.
+El modelo devuelve una puntuación continua de 0 a 1 junto con decisiones por región (pezones, genitales, nalgas, desnudez y acto sexual), lo que permite políticas granulares como permitir torso desnudo pero bloquear genitales. Se integra mediante SDKs oficiales para Swift, Kotlin y JavaScript, con soporte para iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (clasificador de imágenes compilado para Core ML y LiteRT) |
-| Parámetros totales | No disponible |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo de visión, no de texto) |
-| Tipos de cuantización | int8 (pesos compilados en Core ML y LiteRT/TFLite) |
-| Idiomas soportados | No disponible (modelo de clasificación visual, sin procesamiento de texto) |
-| Licencia | desert-ant-labs-source-available (source-available, no open source) |
+| Arquitectura | no disponible (clasificador de imágenes; pesos distribuidos como Core ML y LiteRT/TFLite) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | int8 (pesos Core ML y TFLite ya cuantizados) |
+| Idiomas soportados | no aplica (clasificación de imágenes) |
+| Licencia | desert-ant-labs-source-available (licencia propia, enlace en https://license.desertant.com/) |
 | Formato de pesos | Core ML compilado (`.mlmodelc`) y LiteRT/TFLite (`.tflite`) |
-| Tamaño de pesos | 9,7 MB (Core ML int8) / 9,2 MB (LiteRT int8) |
+| Tamano de pesos | 9,7 MB (Core ML int8), 9,2 MB (TFLite int8) |
+| Entrada | imagen (archivo, imagen de plataforma o píxeles RGB/RGBA) |
+| Salida | puntuación NSFW 0-1, decisión booleana y confianza por región |
+| Regiones detectadas | `nipples`, `genitals`, `buttocks`, `nude`, `sexAct` |
 | Plataformas | iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador, Node |
-| Pipeline | image-classification |
-| Entrada | Imagen (archivo, imagen de plataforma o píxeles RGB/RGBA) |
-| Salida | Score NSFW 0–1, decisión booleana con umbral, scores por región |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo (número de capas, tipo de backbone, resolución de entrada o técnica de compresión). Lo que sí se especifica es que los pesos se distribuyen compilados y cuantizados a int8 para dos runtimes: Core ML en plataformas Apple y LiteRT/TFLite en el resto. El modelo se evalúa sobre recortes multiescala y sus reflejos (ajuste `accurate`), y la puntuación final es el máximo entre los recortes evaluados.
+La información disponible no detalla la arquitectura interna (familia de backbone, número de capas o parámetros). Lo que sí se especifica es el pipeline de inferencia: el SDK puntúa varios recortes (crops) de la imagen y toma el máximo de las puntuaciones. El ajuste `quality` controla cuántos recortes se evalúan: `fast` puntúa un único recorte central, `balanced` puntúa cuatro teselas multiescala y `accurate` (por defecto) puntúa esas teselas y sus reflejos. La puntuación final es la mayor de las puntuaciones de región que la política configurada tiene en cuenta.
 
-El entrenamiento destaca por su procedencia de datos completamente controlada: ninguna imagen se ha extraído de internet. Los ejemplos positivos provienen de material de dominio público o Creative Commons, complementados con datos sintéticos generados internamente. No se especifica el número de imágenes de entrenamiento, la composición exacta del dataset, la resolución de entrenamiento ni si se aplicaron técnicas de ajuste fino adicional (RLHF no aplica; podría haber calibración por umbral, pero no se documenta). Tampoco se detalla la función de pérdida ni el esquema de aumentación de datos.
+En cuanto a los datos, el autor afirma que ninguna imagen se ha extraído de internet: todo el corpus de entrenamiento es de dominio público, Creative Commons o sintético. No se han publicado el número de imágenes, la composición exacta del dataset, ni si hubo etapas de ajuste fino supervisado adicionales. Tampoco se documentan técnicas como destilación, pruning o aumentación más allá de lo implícito en el pipeline de recortes.
 
 ## Capacidades
 
-- Clasificación binaria de contenido NSFW con puntuación continua de 0 a 1 y umbral configurable (por defecto 0,5).
-- Detección por región anatómica: `nipples`, `genitals`, `buttocks`, `nude` y `sexAct`, con una puntuación independiente por cada una.
-- Políticas configurables: modo `standard` y modo `allowTopless`, que ignora el torso desnudo aislado pero sigue bloqueando genitales, nalgas, desnudo completo y actividad sexual.
-- Ajuste de calidad/velocidad con tres modos: `fast` (un recorte central), `balanced` (cuatro teselas multiescala) y `accurate` (teselas más sus reflejos, configuración de evaluación).
+- Clasificación binaria de contenido NSFW con umbral configurable (por defecto 0,5).
+- Puntuación continua de 0 a 1 por imagen, útil para ranking y umbrales ajustables.
+- Detección por región: pezones, genitales, nalgas, desnudez global y acto sexual.
+- Políticas predefinidas: `standard` y `allowTopless`, que ignora el torso desnudo aislado pero sigue marcando genitales, nalgas, desnudez total y actividad sexual.
+- Tres modos de calidad que intercambian recall por velocidad: `fast`, `balanced` y `accurate`.
 - Procesamiento en dispositivo sin envío de imágenes a servidores externos.
-- Manejo correcto de orientación EXIF en la decodificación de archivos y datos.
-- Cancelación de análisis mediante cancelación de la tarea invocante (en Swift lanza `CancellationError`).
-- Soporte multiplataforma mediante SDKs oficiales en Swift, Kotlin y JavaScript/TypeScript.
-- Descarga y caché automática de pesos desde Hugging Face en el primer uso.
-- No soporta tool calling, agentes, razonamiento multi-paso ni procesamiento de texto: es exclusivamente un clasificador visual.
+- Soporte de orientación EXIF en la decodificación de archivos y `Data` (SDK Swift).
+- Cancelación de tareas en curso mediante `CancellationError` (SDK Swift).
+- Integración multiplataforma mediante SDKs oficiales (Swift, Kotlin, JavaScript) y descarga y caché automática de pesos desde Hugging Face.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades de texto: es exclusivamente un clasificador de imágenes.
 
 ## Casos de uso
 
-- Moderación previa a la subida en aplicaciones de fotos y redes sociales: el SDK analiza la imagen en el dispositivo antes de enviarla al servidor, de modo que el contenido NSFW nunca llega a los sistemas backend ni a los logs. Adecuado por su tamaño reducido y su ejecución local.
-- Filtrado en aplicaciones de mensajería y dating: integración en el pipeline de envío de imágenes para bloquear o difuminar contenido sexual antes de que el destinatario lo vea, con política `allowTopless` para apps de playa o natación.
-- Moderación de vídeo en tiempo casi real: el modo `fast` puntúa un único recorte central por fotograma con una latencia mínima; el muestreo entre fotogramas recupera la exhaustividad (74 % de recall por fotograma, 97 % de especificidad).
-- Cumplimiento normativo y privacidad (RGPD): aplicaciones que no pueden enviar imágenes de usuarios a servicios en la nube encuentran aquí un clasificador que opera íntegramente en el dispositivo, sin transferencia de datos personales.
-- Protección infantil en plataformas educativas o foros: bloqueo automático de imágenes con desnudos o actividad sexual antes de su publicación, con umbral ajustable para priorizar la seguridad sobre la experiencia de usuario.
-- Moderación en aplicaciones de escritorio y web: el paquete npm con núcleo nativo precompilado para Node permite moderar subidas en servidores propios sin depender de APIs externas, y la variante de navegador puede filtrar previsualizaciones antes de mostrarlas.
-- Verificación de contenido generado por IA: filtrado de salidas de modelos de generación de imágenes en pipelines locales antes de mostrarlas al usuario final.
+- Moderación previa a la subida en apps de fotos o redes sociales: el SDK analiza la imagen antes de enviarla al backend, de modo que el contenido NSFW se bloquea o difumina en el propio dispositivo y solo viaja lo permitido.
+- Filtrado de avatares y fotos de perfil: con el modo `accurate` y umbral ajustado se reduce el riesgo de falsos positivos en fotos de playa o ropa interior, manteniendo el bloqueo de desnudez real.
+- Moderación de vídeo en tiempo casi real: el modo `fast` puntúa un único recorte central por fotograma, y el muestreo entre fotogramas recupera recall, lo que lo hace adecuado para pipelines de vídeo donde la latencia importa.
+- Aplicaciones de mensajería con detección de imágenes no solicitadas: el modelo se ejecuta localmente en el cliente, evitando que la imagen se transmita a un servidor de moderación y reduciendo la exposición de datos sensibles.
+- Cumplimiento de políticas con granularidad regional: la detección por región permite implementar políticas como permitir torso desnudo (`allowTopless`) en plataformas donde esa política es aceptable, bloqueando genitales y actividad sexual.
+- Moderación en aplicaciones de escritorio y web: el SDK de JavaScript permite integrar el clasificador en navegador (con LiteRT) o en Node con `sharp` para procesar lotes de imágenes en servidor.
+- Pre-filtro en pipelines de curación de datasets: descartar imágenes NSFW antes de que entren en procesos de anotación o entrenamiento, reduciendo costes y riesgos legales.
+- Control parental en apps infantiles: clasificación local de imágenes recibidas o compartidas, con umbral conservador para priorizar el bloqueo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que no aplican a un clasificador de imágenes. El autor sí publica métricas de recall y especificidad por modo de calidad:
+El autor publica métricas de recall y especificidad por modo de calidad, pero no benchmarks estándar (MMLU, HumanEval, etc., que no aplican a un clasificador de imágenes).
 
 | Modo de calidad | Recall | Especificidad | Uso recomendado |
 |---|---:|---:|---|
-| `fast` | 74 % | 97 % | Fotogramas de vídeo; el muestreo entre fotogramas recupera recall |
-| `balanced` | 84 % | 95 % | Mayor recall por fotograma |
-| `accurate` (por defecto) | 88 % | 94 % | Imágenes individuales |
+| `fast` | 74% | 97% | Fotogramas de vídeo; el muestreo entre fotogramas recupera recall |
+| `balanced` | 84% | 95% | Mayor recall por fotograma |
+| `accurate` (por defecto) | 88% | 94% | Imágenes individuales |
 
-No se especifica el conjunto de evaluación, el tamaño de la muestra ni la definición exacta de positivo/negativo empleada para calcular estas métricas.
+No se han publicado resultados de benchmarks estándar de clasificación de imágenes (por ejemplo, AUC, F1 o comparativas con otros clasificadores NSFW) en la información disponible. Las cifras anteriores son las declaradas por el autor en la model card y no han sido verificadas de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en el sentido habitual; el modelo pesa 9,2–9,7 MB en int8 y se ejecuta en memoria unificada o RAM del dispositivo.
-- Cabe holgadamente en cualquier GPU de consumo, e incluso en dispositivos móviles sin GPU dedicada (CPU o NPU integrada).
-- Plataformas Apple: ejecución mediante Core ML, con posible aceleración por Neural Engine en chips Apple Silicon y A-series.
-- Android, Linux, Windows y Node: ejecución mediante LiteRT/TFLite, con aceleración por CPU, GPU o NNAPI según el dispositivo.
-- Navegador: ejecución mediante `@litertjs/core` con WebAssembly/WebGPU según disponibilidad.
-- Opciones de despliegue: SDKs oficiales de Desert-Ant-Labs para Swift, Kotlin y JavaScript/TypeScript; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: no disponibles en la información proporcionada. El modo `fast` está pensado para vídeo, lo que sugiere latencias de milisegundos por fotograma en hardware móvil moderno, pero no se aportan cifras concretas.
+- VRAM estimada: no aplica en el sentido habitual; los pesos ocupan 9,2-9,7 MB en int8 y la inferencia se ejecuta en CPU, GPU integrada o aceleradores del dispositivo (Core ML en Apple, LiteRT en el resto).
+- GPU recomendadas: no se especifican; el modelo está pensado para ejecutarse en el hardware del dispositivo (móvil, portátil, navegador) sin GPU dedicada.
+- Cabe en cualquier dispositivo consumer: móviles Android e iOS, Mac, PC con Windows o Linux, y navegador.
+- Opciones de despliegue: SDKs oficiales de Desert Ant Labs para Swift (Core ML), Kotlin (LiteRT) y JavaScript (LiteRT en navegador, núcleo nativo en Node). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles. El autor solo indica que el modo `fast` es el más rápido y el `accurate` el más costoso, sin cifras de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamaño | Licencia | Ejecución local | Notas |
-|---|---|---|---|---|---|
-| desert-ant-labs/moderator | Clasificador NSFW | 9,2–9,7 MB (int8) | Source-available | Sí (Core ML, LiteRT) | Datos de entrenamiento controlados; scores por región |
-| Alternativas open source de moderación NSFW | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
-
-No se dispone de información suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoría. Los clasificadores NSFW comerciales habituales (APIs de moderación en la nube) no son comparables en licencia ni en modelo de despliegue, y no se han aportado datos de benchmarks cruzados.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A modo cualitativo, las alternativas habituales en moderación NSFW de imágenes (clasificadores basados en CNN o transformers de visión, a menudo con pesos de decenas o cientos de MB) no se han evaluado aquí con métricas comparables. La ventaja declarada de Moderator frente a alternativas genéricas es su tamano reducido (menos de 10 MB), la ejecución en dispositivo y la procedencia controlada de los datos de entrenamiento. Cualquier comparación de rendimiento con modelos concretos requeriría una evaluación independiente que no está en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia source-available, no open source: el uso comercial, la redistribución y la modificación están sujetos a los términos de `https://license.desertant.com/`, que deben revisarse antes de integrar el modelo en producción.
-- Las puntuaciones por región no son probabilidades calibradas: un 0,8 no significa un 80 % de probabilidad. Solo sirven para ordenar imágenes, no para interpretar como confianza estadística.
-- El recall del modo `fast` es del 74 %, insuficiente para moderación de imágenes individuales; está pensado para vídeo con muestreo entre fotogramas.
-- El modelo está afinado para pasar fotos reales de bañador y lencería, lo que puede producir falsos negativos en contenido ambiguo o en imágenes de baja calidad, ilustraciones o contenido generado por IA.
-- No se documentan sesgos demográficos, de tono de piel, de complexión corporal ni de género; dado el uso de datos sintéticos, existe riesgo de que la distribución de entrenamiento no represente bien a todos los grupos.
-- No se especifican los idiomas ni la cobertura geográfica de las políticas de moderación; el modelo clasifica contenido visual, pero las políticas (`allowTopless`) reflejan una interpretación cultural concreta.
-- No se han publicado métricas de calibración, curvas ROC/PR ni evaluación en conjuntos de test independientes.
-- El modelo descarga pesos desde Hugging Face en el primer uso; en entornos sin red o con restricciones de salida es necesario preempaquetar los pesos.
-- No se detalla el comportamiento ante imágenes corruptas, formatos exóticos o resoluciones extremas más allá del manejo de EXIF.
-- Al ser un clasificador puramente visual, no detecta contenido NSFW en texto, audio o vídeo sin muestreo de fotogramas.
+- Las puntuaciones por región no son probabilidades calibradas: un 0,8 no implica un 80% de probabilidad, solo un ranking relativo.
+- El recall en modo `fast` es del 74%, lo que implica falsos negativos relevantes si se usa en imágenes individuales; está pensado para vídeo con muestreo entre fotogramas.
+- El umbral por defecto (0,5) puede requerir ajuste según la política y el coste relativo de falsos positivos y negativos.
+- No se documentan sesgos demográficos, de tono de piel, de género o culturales; la evaluación por subgrupos no está publicada.
+- La licencia es propia (`desert-ant-labs-source-available`), no una licencia open source estándar; es imprescindible revisar los términos en https://license.desertant.com/ antes de uso comercial.
+- El modelo solo clasifica imágenes; no procesa texto, audio ni vídeo de forma nativa (el vídeo se aborda fotograma a fotograma desde la aplicación).
+- La descarga de pesos se realiza desde Hugging Face en el primer uso y se cachea; en entornos sin red o con restricciones de salida esto debe planificarse.
+- No se han publicado detalles de arquitectura, parámetros ni composición exacta del dataset, lo que limita la auditoría técnica independiente.
+- El modelo está marcado como `not-for-all-anecdotes`/`not-for-all-audiences` en Hugging Face por la naturaleza del contenido que detecta; su uso debe acompañarse de controles adecuados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/moderator
 - Pesos v1.1.0: https://huggingface.co/desert-ant-labs/moderator/tree/v1.1.0
-- Demo oficial: https://desertant.com/models/moderator/
-- Repositorio del SDK (desert-ant-core): https://github.com/Desert-Ant-Labs/desert-ant-core
-- Documentación del SDK y requisitos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md
+- Demo: https://desertant.com/models/moderator/
 - Licencia: https://license.desertant.com/
-- Documentación de descarga y caché de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
+- Repositorio del SDK (desert-ant-core): https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentación de requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Documentación de requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Documentación de requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descarga y caché de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching

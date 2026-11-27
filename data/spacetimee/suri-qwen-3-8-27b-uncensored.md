@@ -2,109 +2,101 @@
 
 ## Resumen
 
-Suri Qwen 3.8 27B Uncensored es un ajuste fino del modelo Qwen/Qwen3.8-27B (27.356.728.560 parámetros reales según los pesos safetensors del repositorio) publicado por el desarrollador SpaceTimee, cuyo objetivo declarado es eliminar las barreras de alineación del modelo base para obtener respuestas directas sin advertencias ni matices moralizantes. La model card lo describe explícitamente como un modelo "sin censura" (去对齐, desalineado) construido sobre Qwen3.8 27B, con capacidades multimodales implícitas en la etiqueta de pipeline `image-text-to-text`.
+Suri Qwen 3.8 27B Uncensored es un ajuste fino del modelo Qwen3.8 27B de Alibaba, publicado por el desarrollador independiente SpaceTimee (Space Time). Su objetivo declarado es eliminar las capas de alineacion y rechazo del modelo original, de modo que responda a practicamente cualquier peticion sin advertencias, moralizacion ni filtros de seguridad. Se distribuye bajo el pipeline `image-text-to-text`, lo que indica que conserva la torre de vision del modelo base, aunque la model card no documenta explicitamente las capacidades multimodales.
 
-El modelo se distribuye exclusivamente en formato safetensors bajo la librería transformers, con un repositorio de 54,8 GB, y declara soporte únicamente para chino (zh) e inglés (en). No se especifica la licencia, ni la longitud de contexto, ni la composición del dataset de ajuste, lo que limita seriamente su evaluación para uso en producción.
+El modelo cuenta con 27.781.427.952 parametros reales (segun los pesos en safetensors) y un repositorio de 58,4 GB, lo que sugiere pesos en precision bf16 o fp16. La model card lo etiqueta como `qwen3_5` en la libreria de transformers, con soporte declarado solo para chino e ingles. No se especifica la longitud de contexto, la licencia ni los datos de entrenamiento empleados en el desalineado.
 
-Su relevancia actual es doble: por un lado, sirve como caso de estudio de técnicas de "abliteración"/desalineación sobre modelos densos de ~27B; por otro, sus métricas publicadas son tasas de éxito de ataque (ASR) sobre conjuntos de prompts dañinos, no benchmarks de capacidad, lo que lo convierte en un artefacto de investigación sobre seguridad de modelos más que en un modelo de propósito general.
+La relevancia de esta ficha es doble: por un lado, documenta un caso de "abliteracion" o desalineado de un modelo de 27B con resultados medidos en suites de seguridad; por otro, advierte de que los incrementos de "tasa de exito de ataque" (ASR) del 94% en AdvBench implican riesgos reales si el modelo se despliega sin controles. Es un objeto de estudio para investigacion en seguridad de IA, no un modelo recomendable para produccion abierta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.8; etiquetas del repo: `qwen3_5`, `qwen3.8`). No se detalla si es denso o MoE en la informacion disponible |
-| Parametros totales | 27.356.728.560 (~27,36 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (familia Qwen3.8; tag `qwen3_5` en transformers) |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible. El repositorio solo publica pesos safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni FP8 |
-| Idiomas soportados | Chino (zh) e ingles (en) |
+| Tipos de cuantizacion | no disponible (repo solo con safetensors; sin GGUF publicado) |
+| Idiomas soportados | chino (zh), ingles (en) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (libreria transformers) |
-| Tamano del repositorio | 54,8 GB |
-| Modelos base | Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B |
-| Pipeline declarado | image-text-to-text |
-| Descargas / likes | 161 descargas, 12 likes |
-| Fecha de creacion / actualizacion | 2026-09-23 / 2026-09-27 |
+| Formato de pesos | safetensors |
+| Tamano del repositorio | 58,4 GB |
+| Modelo base | Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B |
+| Pipeline | image-text-to-text |
+| Descargas / likes | 213 / 17 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica sobre la arquitectura interna mas alla de la pertenencia a la familia Qwen3.8 y de las etiquetas `qwen3_5` y `qwen3.8` del repositorio. La model card no indica numero de capas, dimensiones ocultas, tipo de atencion, ni si se trata de un transformer denso o de una mezcla de expertos (MoE). Tampoco se documenta la longitud de contexto soportada, un dato esencial dado que los modelos Qwen de esta generacion suelen ofrecer ventanas amplias.
+No se dispone de informacion detallada sobre la arquitectura interna mas alla de que deriva de Qwen3.8 27B, un transformer denso de 27B parametros con capacidad multimodal (pipeline `image-text-to-text`). La model card no documenta numero de capas, dimensiones ocultas, mecanismos de atencion ni si incorpora decodificacion especulativa u otras optimizaciones.
 
-Respecto al entrenamiento, la informacion disponible se limita a la descripcion del autor: es un modelo "sin censura (desalineado)" derivado de Qwen3.8 27B. No se publican el numero de tokens de ajuste, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO, abliteration de direcciones de rechazo u otras. El autor reconoce que "el modelo conserva preferencias de alineacion residuales que pueden corregirse mediante prompt", y recomienda anteponer un system prompt de desbloqueo, lo que sugiere una desalineacion incompleta mas que una eliminacion total de los comportamientos de rechazo.
-
-La unica innovacion documentada es de tipo practico: la publicacion de una tabla comparativa de tasas de exito de ataque (ASR) frente al modelo base y frente a otro ajuste similar, algo inusual en model cards y que situa el artefacto en el terreno de la investigacion en seguridad y red-teaming.
+Respecto al entrenamiento, el autor no publica el dataset, el numero de tokens ni la metodologia exacta de desalineado. La model card solo indica que el modelo "residualiza preferencias de alineacion corregibles por prompt" y sugiere un system prompt explicito para eliminar cualquier contenido de advertencia. Los resultados de ASR publicados (AdvBench 94,04%, HarmBench 81,33%) indican que el proceso de desalineado fue agresivo y efectivo, probablemente mediante tecnicas de abliteracion (modificacion de direcciones de rechazo en los pesos) o fine-tuning con datos adversarios. No se menciona RLHF, DPO ni ninguna fase de alineacion posterior.
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino e ingles, con estilo marcado por la desalineacion: respuestas directas sin advertencias ni descargos de responsabilidad.
-- Procesamiento de entrada de imagen y texto, segun la etiqueta de pipeline `image-text-to-text` declarada en el repositorio. La model card no detalla el alcance real de esta capacidad.
-- Modo de razonamiento y modo sin razonamiento: la model card enlaza dos PDFs de ejemplos de salida, uno en "thinking mode" y otro en "non-thinking mode".
-- Ajuste de comportamiento mediante system prompt: el autor documenta un prompt concreto para reforzar la ausencia de contenido moralizante.
-- Parametros de muestreo recomendados por el autor: temperature 0,7-1,0; top_p 0,8-0,95; repetition_penalty 1-1,1.
-- No se documenta soporte de tool calling, function calling, uso de agentes, multi-step reasoning ni otras capacidades especiales (audio, vision detallada, etc.) en la informacion disponible.
+- Generacion de texto conversacional en chino e ingles.
+- Razonamiento con modo "thinking" y modo directo (la model card enlaza ejemplos de salida en ambos modos).
+- Procesamiento de imagen y texto como entrada (pipeline `image-text-to-text`), aunque no se detallan tareas concretas de vision.
+- Respuestas sin rechazo ni advertencias a peticiones que el modelo base filtraria.
+- Soporte de system prompts para modificar el comportamiento (el autor documenta uno para eliminar moralizacion residual).
+- Tool calling y function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Investigacion en seguridad de IA y red-teaming: el modelo sirve como sujeto de prueba para medir tasas de exito de ataque (ASR) y estudiar hasta que punto un ajuste de desalineacion revierte las defensas de un modelo alineado, comparando con el modelo base Qwen3.8-27B.
-- Evaluacion de robustez de clasificadores de contenido: al generar respuestas que un modelo alineado rechazaria, permite probar guardarrailes, filtros de moderacion y sistemas de deteccion de contenido dañino en un entorno controlado.
-- Analisis academico de la alineacion residual: el propio autor indica que el modelo conserva preferencias de alineacion corregibles por prompt, lo que lo hace util para estudiar la persistencia de sesgos de alineacion tras un ajuste agresivo.
-- Estudio de tecnicas de "abliteracion" y desalineacion: comparar Suri Qwen 3.8 27B con 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored permite analizar que metodos producen mayor ASR por categoria de daño.
-- Generacion de texto sin restricciones de estilo para escritura creativa adulta o narrativa de genero oscuro, siempre que el uso cumpla la legislacion aplicable y las condiciones de servicio de la plataforma de despliegue.
-- Experimentacion con modelos multimodales de ~27B en tareas de descripcion de imagen y dialogo imagen-texto, dado el pipeline `image-text-to-text` declarado, aunque sin garantias documentadas de calidad.
-- Despliegue en pipelines de transformers o text-generation-inference para pruebas internas de inferencia a escala media, aprovechando que el repositorio esta etiquetado como compatible con TGI y endpoints.
+- Investigacion en seguridad de IA: evaluar la eficacia de tecnicas de desalineado comparando las tasas ASR del modelo con las del Qwen3.8 27B original en AdvBench y HarmBench, tal como hace el propio autor en su tabla.
+- Pruebas de robustez de filtros: usar el modelo como generador adversario para estresar clasificadores de contenido y sistemas de moderacion en pipelines de produccion.
+- Red teaming interno: simular escenarios de abuso controlados en entornos aislados para identificar vectores de ataque antes de desplegar modelos alineados.
+- Generacion creativa sin restricciones: escritura de ficcion con tematicas sensibles (violencia, contenido adulto) en un entorno privado, donde el modelo no introduce advertencias ni cortes.
+- Estudio de sesgos y alucinacion: analizar como el desalineado afecta a la fidelidad factual y a los sesgos del modelo base en tareas de pregunta-respuesta.
+- Evaluacion comparativa de tecnicas de alineacion: servir como referencia "no alineada" frente al Qwen3.8 27B base y a otros modelos desalineados como Qwen3.8-27B-Heretic-Abliterated-Uncensored.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados por el autor son tasas de exito de ataque (ASR, attack success rate) sobre conjuntos de prompts dañinos. Un valor mas alto indica mayor disposicion del modelo a cumplir la peticion dañina, por lo que no deben interpretarse como una medida de calidad o capacidad del modelo.
+Los unicos datos publicados son tasas de exito de ataque (ASR) en suites de seguridad, extraidas de la model card. No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
-| Modelo | AdvBench ASR (520) | HarmBench ASR (300) | Cybercrime e intrusion (67) | Quimico y biologico (56) | Actividades ilegales (65) | Desinformacion (65) | Acoso (25) | Contenido dañino (22) |
+| Modelo | AdvBench ASR (520) | HarmBench ASR (300) | Cybercrime & Intrusion (67) | Chemical & Biological (56) | Illegal Activities (65) | Misinformation & Disinformation (65) | Harassment & Bullying (25) | Harmful Content (22) |
 |---|---|---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 0,38 % | 6,00 % | 8,96 % | 1,79 % | 1,54 % | 15,38 % | 0,00 % | 0,00 % |
-| SpaceTimee/Suri-Qwen-3.8-27B-Uncensored | 94,04 % | 81,33 % | 83,58 % | 92,86 % | 72,31 % | 86,15 % | 64,00 % | 77,27 % |
-| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored | 88,65 % | 76,67 % | 68,66 % | 85,71 % | 66,15 % | 90,77 % | 68,00 % | 77,27 % |
-
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, MATH, MT-Bench u otros) en la informacion disponible.
+| Qwen/Qwen3.8-27B | 0,38% | 6,00% | 8,96% | 1,79% | 1,54% | 15,38% | 0,00% | 0,00% |
+| SpaceTimee/Suri-Qwen-3.8-27B-Uncensored | 94,04% | 81,33% | 83,58% | 92,86% | 72,31% | 86,15% | 64,00% | 77,27% |
+| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored | 88,65% | 76,67% | 68,66% | 85,71% | 66,15% | 90,77% | 68,00% | 77,27% |
 
 ## Requisitos de hardware
 
-- VRAM estimada en precision completa (bf16/fp16, segun los 27,36 mil millones de parametros): en torno a 55-68 GB, coherente con el tamano de repositorio de 54,8 GB.
-- Cuantizacion a 8 bits: aproximadamente 27-30 GB de VRAM.
-- Cuantizacion a 4 bits: aproximadamente 14-17 GB de VRAM, aunque el repositorio no publica pesos ya cuantizados.
-- GPU profesionales: viable en una sola A100 80 GB, H100 80 GB o H200 en bf16; tambien en A100 40 GB o L40S 48 GB si se aplica cuantizacion.
-- GPU de consumo: no cabe en bf16 en ninguna GPU consumer. En 4 bits podria ejecutarse en una RTX 4090 o RTX 3090 de 24 GB, y en 8 bits en una RTX 5090 o similar, siempre con cuantizacion aplicada por el usuario.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` en el repositorio) y, si el usuario genera sus propios pesos cuantizados, llama.cpp, Ollama o vLLM. No hay GGUF oficial publicado.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni requisitos de memoria en la model card.
+- VRAM estimada para inferencia en bf16/fp16: aproximadamente 56 GB solo para pesos, mas overhead de KV cache y activaciones; se recomienda un minimo de 64-80 GB.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 28-30 GB; en 4 bits: alrededor de 15-18 GB (estimaciones teoricas, no verificadas por el autor).
+- GPU recomendadas: A100 80 GB, H100 80 GB o 2x RTX 4090/A6000 en paralelo para precision completa.
+- Cabe en GPU de consumo: si, en configuraciones de 4 bits (por ejemplo, RTX 4090 24 GB con cuantizacion agresiva), aunque no hay GGUF publicado en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag incluido), endpoints compatibles. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI con version concreta.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque | ASR AdvBench / HarmBench |
+| Modelo | Parametros | Contexto | AdvBench ASR | HarmBench ASR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SpaceTimee/Suri-Qwen-3.8-27B-Uncensored | 27,36 B | no disponible | zh, en | no disponible | Ajuste sin censura sobre Qwen3.8-27B | 94,04 % / 81,33 % |
-| Qwen/Qwen3.8-27B (base) | no disponible (mismo orden, ~27 B) | no disponible | no disponible | no disponible | Modelo alineado de referencia | 0,38 % / 6,00 % |
-| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored | no disponible | no disponible | no disponible | no disponible | Desalineacion por abliteration | 88,65 % / 76,67 % |
+| Suri-Qwen-3.8-27B-Uncensored | 27,78B | no disponible | 94,04% | 81,33% | no disponible | Hugging Face, 213 descargas |
+| Qwen3.8-27B (base) | 27B (aproximado) | no disponible | 0,38% | 6,00% | no disponible | Hugging Face (oficial) |
+| Qwen3.8-27B-Heretic-Abliterated-Uncensored | 27B (aproximado) | no disponible | 88,65% | 76,67% | no disponible | Hugging Face |
 
-Suri Qwen 3.8 27B Uncensored supera a la variante Heretic-Abliterated en AdvBench, HarmBench, ciberdelincuencia, quimico-biologico e infracciones, y queda por detras en desinformacion (86,15 % frente a 90,77 %) y en acoso (64,00 % frente a 68,00 %), con empate en contenido dañino (77,27 %). No se dispone de datos de contexto, licencia ni rendimiento de capacidad para ninguno de los tres modelos en la informacion proporcionada.
+No se dispone de datos de benchmarks de capacidad ni de contexto para establecer una comparacion funcional mas alla de las tasas ASR.
 
 ## Limitaciones y advertencias
 
-- Riesgo grave de generacion de contenido dañino: las tasas de ASR publicadas (94,04 % en AdvBench y 81,33 % en HarmBench) indican que el modelo cumple la gran mayoria de peticiones dañinas, incluidas categorias de ciberdelincuencia, quimico-biologico y actividades ilegales.
-- Licencia no disponible: al no declararse licencia, no puede asumirse permiso de uso comercial, redistribucion ni modificacion. Es imprescindible contactar con el autor antes de cualquier uso en produccion.
-- Origen de los datos de ajuste desconocido: no se detalla el dataset, el numero de tokens ni el metodo de desalineacion, lo que impide auditar sesgos introducidos durante el ajuste.
-- Alineacion residual reconocida por el autor: el modelo conserva comportamientos de rechazo que solo se corrigen parcialmente mediante system prompt, por lo que el comportamiento no es totalmente predecible.
-- Idiomas limitados a chino e ingles: no hay evidencia de soporte para castellano u otras lenguas, con riesgo de degradacion notable en generacion multilingue.
-- Longitud de contexto no documentada: no puede planificarse su uso en tareas de contexto largo sin verificacion empirica previa.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual ni de calibracion; un modelo desalineado tiende ademas a reducir las cautelas verbales que normalmente señalan incertidumbre.
-- Capacidad multimodal sin verificar: la etiqueta `image-text-to-text` sugiere entrada de imagen, pero la model card no describe el encoder visual ni el rendimiento en tareas de vision.
-- Cumplimiento normativo: el despliegue publico de este modelo puede entrar en conflicto con el reglamento europeo de IA y con las politicas de uso de proveedores de inferencia; los terminos de servicio de la plataforma de hosting deben revisarse antes de exponerlo.
-- Uso responsable: cualquier empleo debe limitarse a entornos de investigacion controlados, con registro de interacciones y sin exposicion a usuarios finales no supervisados.
+- Modelo deliberadamente desalineado: presenta tasas ASR superiores al 80% en HarmBench y superiores al 90% en AdvBench, lo que implica que genera contenido danino con alta probabilidad ante peticiones adversarias.
+- Riesgo legal y de cumplimiento: su uso en la UE puede entrar en conflicto con la AI Act y con normativas de moderacion de contenido; no hay licencia declarada, lo que impide verificar condiciones de uso comercial.
+- Alucinacion: no hay datos sobre fidelidad factual; el proceso de desalineado puede degradar la calibracion y la calidad de las respuestas.
+- Idiomas limitados: solo chino e ingles declarados; el rendimiento en castellano no esta verificado.
+- Contexto desconocido: no se documenta la ventana de contexto, lo que impide planificar cargas de trabajo con documentos largos.
+- Sin cuantizaciones publicadas: no hay GGUF ni AWQ en el repositorio, lo que limita el despliegue en hardware de consumo sin conversion manual.
+- Mantenimiento incierto: desarrollador individual, sin repositorio de codigo, paper ni proceso de soporte documentado.
+- Sesgos: no se han publicado evaluaciones de sesgo; el desalineado puede amplificar estereotipos presentes en los datos del modelo base.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Modelo base alternativo: https://huggingface.co/unsloth/Qwen3.8-27B
-- Modelo comparable (Heretic-Abliterated-Uncensored): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
-- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
-- Ejemplo de salida en modo sin razonamiento: images/non-thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
-- Perfil del desarrollador en linux.do: https://linux.do/u/spacetime
-- La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; el unico resultado obtenido (heartscardclassic.com) no guarda relacion con el modelo y se descarta.
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
+- Modelo comparable Heretic-Abliterated: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
+- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (referenciado en la model card)
+- Ejemplo de salida en modo directo: images/non-thinking-mode-output.pdf (referenciado en la model card)
+- Comunidad del autor: https://linux.do/u/spacetime

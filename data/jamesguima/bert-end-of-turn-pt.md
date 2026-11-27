@@ -2,97 +2,97 @@
 
 ## Resumen
 
-`JamesGuima/bert-end-of-turn-pt` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario JamesGuima, construido sobre una arquitectura BERT con 108.924.674 parametros en formato safetensors y un tamano de repositorio de 0,4 GB. El repositorio no incluye model card sustantiva: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion del autor sobre datos de entrenamiento, idioma, licencia o tarea objetivo.
+`bert-end-of-turn-pt` es un modelo de clasificación binaria de secuencias, obtenido mediante fine-tuning de `neuralmind/bert-base-portuguese-cased` (BERT base en portugues), especializado en la deteccion de fin de turno conversacional (End-of-Turn, EoT) o fin de enunciado (End-of-Utterance, EoU) en portugues de Brasil. Lo desarrolla Jaime Guimaraes, investigador del Laboratorio de Inteligencia y Tecnologia Computacional (LITC) de la Universidade Federal de Minas Gerais (UFMG), y se publica con licencia MIT.
 
-La unica informacion fiable disponible son los metadatos del Hub: pipeline `text-classification`, etiquetas `bert`, `safetensors`, `text-embeddings-inference` y `endpoints_compatible`, y la referencia `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto de carbono de Lacoste et al. (2019) citado en la plantilla, no a un paper del modelo. El sufijo `pt` del identificador sugiere portugués, pero es una inferencia no confirmada por el autor.
+El modelo resuelve un problema concreto en agentes conversacionales de voz y chat: decidir cuando el usuario ha terminado de hablar o de escribir. En lugar de aplicar un tiempo de espera fijo de 3 a 5 segundos, o de enviar fragmentos incompletos a un LLM grande, este BERT actua como portero en tiempo real: clasifica cada mensaje como completo (`LABEL_1`) o incompleto (`LABEL_0`) en decenas de milisegundos, permitiendo enrutar solo las peticiones completas al modelo de razonamiento y reducir coste y latencia.
 
-Se trata, por tanto, de un checkpoint sin documentar, con cero descargas y cero likes en el momento de la consulta, y cuya evaluacion rigurosa exigiria inspeccionar los pesos y el tokenizador directamente. Esta ficha recoge lo verificable y marca explicitamente como "no disponible" todo lo que el autor no ha publicado.
+Con 108,9 millones de parametros, una ventana de inferencia de 64 tokens y una latencia declarada de 15 a 25 ms en CPU, el modelo esta disenado para integrarse en bucles de streaming y WebSocket, no para generar texto. Es relevante ahora porque el coste por token de los LLM de gran capacidad hace que filtrar entradas fragmentadas tenga un retorno economico directo, y porque el endpointing preciso es un cuello de botella clasico en agentes de voz.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (encoder transformer bidireccional), segun la etiqueta `bert` del Hub |
+| Arquitectura | Transformer encoder BERT base (BertForSequenceClassification, clasificacion binaria de secuencias) |
 | Parametros totales | 108.924.674 |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (BERT estandar admite 512 tokens posicionales) |
-| Tipos de cuantizacion | no disponible; solo se publican pesos safetensors sin cuantizaciones GGUF/AWQ/GPTQ |
-| Idiomas soportados | no disponible (el sufijo `pt` del nombre sugiere portugues, sin confirmar) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Libreria | transformers |
-| Pipeline | text-classification |
-| Tamano del repositorio | 0,4 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-20 |
-| Fecha de actualizacion | 2026-09-20 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 64 tokens (configurado para entrenamiento e inferencia; el BERT base subyacente admite hasta 512 posiciones) |
+| Tipos de cuantizacion | No disponible (el autor no documenta variantes GGUF, ONNX ni cuantizadas) |
+| Idiomas soportados | Portugues de Brasil (pt-BR) |
+| Licencia | MIT |
+| Formato de pesos | Safetensors (repo de 0,4 GB, libreria `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-El unico dato arquitectonico confirmado es la etiqueta `bert` del Hub y el recuento de parametros, 108.924.674, coherente con la escala de un BERT-base (aproximadamente 110 millones de parametros). Se trata de un encoder transformer bidireccional con atencion completa, orientado a tareas de clasificacion de secuencias mediante una cabeza sobre el token `[CLS]` o mediante pooling. No hay informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion, tamano de vocabulario ni configuracion exacta, ya que el autor no ha publicado el `config.json` en la model card.
+El modelo parte de `neuralmind/bert-base-portuguese-cased`, un BERT base con vocabulario y preentrenamiento en portugues, y se afina como `BertForSequenceClassification` con dos etiquetas: `LABEL_1` (turno completo) y `LABEL_0` (turno incompleto). La secuencia de entrada se trunca y rellena a `max_length = 64`, una decision deliberada para mantener baja la latencia en inferencia por turno de chat.
 
-Tampoco existe informacion sobre el procedimiento de entrenamiento: se desconocen el corpus, el numero de tokens, si hubo preentrenamiento desde cero o ajuste fino sobre un checkpoint previo, y si se aplicaron tecnicas de alineacion como RLHF o DPO (poco habituales en modelos encoder de clasificacion). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card, y no describe este modelo. La etiqueta `text-embeddings-inference` indica unicamente compatibilidad de despliegue con el servidor TEI de Hugging Face.
+El entrenamiento se realizo sobre el dataset `RichardSakaguchiMS/brazilian-customer-service-conversations`, con aumento de datos generado por un cortador heuristico (`extract_and_break_smart`) que trunca turnos conversacionales entre el 20 % y el 70 % de su longitud en palabras para producir ejemplos negativos realistas. Se anadio adaptacion de dominio con patrones conversacionales cortos (saludos, confirmaciones, consultas bancarias) y sobremuestreo para estabilizar la prediccion en entradas breves. La configuracion usa AdamW con tasa de aprendizaje de 5e-5, early stopping monitorizado sobre `eval_f1` y priorizacion de precision en `LABEL_1` para minimizar falsos positivos que interrumpirian al usuario. No se documenta uso de RLHF ni DPO, algo esperable en un clasificador supervisado.
 
 ## Capacidades
 
-- Clasificacion de texto: la unica capacidad confirmada por el pipeline declarado (`text-classification`). El numero de etiquetas y su semantica son desconocidos.
-- Deteccion de fin de turno (end-of-turn): inferida unicamente del nombre del repositorio, sin confirmacion del autor. De ser cierta, implicaria clasificacion binaria sobre transcripciones o representaciones acusticas de habla conversacional.
-- Idiomas: no disponible. La hipotesis de portugues se basa solo en el sufijo del identificador.
-- Tool calling / function calling: no disponible, y en principio no aplicable a un encoder de clasificacion.
-- Capacidades de agente o razonamiento multi-paso: no disponibles; no son propias de esta arquitectura.
-- Generacion de texto: no aplicable; BERT es un encoder sin decodificador.
-- Vision, audio o modo "thinking": no disponibles.
+- Clasificacion binaria de fin de turno: distingue enunciados semanticamente y sintacticamente completos de fragmentos a medio escribir o a medio pronunciar.
+- Deteccion de endpointing en tiempo real: pensado para bucles de streaming y WebSocket con latencia declarada de 15 a 25 ms en CPU por secuencia (batch de 1, `max_length` 64).
+- Enrutamiento de LLM (gatekeeper): permite decidir si un mensaje va a un modelo grande de razonamiento o a uno pequeno y economico.
+- Debouncing adaptativo: activa una espera de 3 a 5 segundos solo cuando la prediccion es `LABEL_0`, en lugar de aplicar un timeout fijo.
+- Clasificacion de texto corto en portugues de Brasil: estabilizado mediante sobremuestreo de saludos, confirmaciones y consultas bancarias breves.
+- Integracion estandar con `transformers`: compatible con `pipeline("text-classification")`, `AutoTokenizer`, `AutoModelForSequenceClassification` y con Text Embeddings Inference (`text-embeddings-inference`, `endpoints_compatible`).
+- No soporta generacion de texto, tool calling, razonamiento multi-paso, vision ni audio; es exclusivamente un clasificador.
 
 ## Casos de uso
 
-Nota: dado que el autor no documenta la tarea, los casos siguientes asumen la hipotesis de deteccion de fin de turno sugerida por el nombre del repositorio. Deben validarse experimentalmente antes de cualquier uso en produccion.
-
-- Deteccion de fin de turno en asistentes de voz: si el modelo clasifica correctamente el final de intervencion de un hablante a partir de transcripciones parciales, permitiria reducir la latencia percibida en asistentes conversacionales al anticipar cuando el usuario ha terminado de hablar, en lugar de esperar un timeout fijo de silencio.
-- Turn-taking en sistemas de dialogo multi-turno: integrado en un gestor de dialogo, el clasificador puede decidir cuando el sistema debe tomar la palabra en una conversacion, mejorando la naturalidad de la interaccion en comparacion con heuristicas de silencio.
-- Moderacion y enrutado de conversaciones: como clasificador binario barato (108,9 M de parametros), puede etiquetar fragmentos de transcripcion en pipelines de analitica de contact center, por ejemplo para segmentar automaticamente intervenciones de agente y cliente.
-- Puntuacion automatica de transcripciones: la deteccion de limites de turno puede alimentar un modulo de restauracion de puntuacion o de segmentacion de texto en sistemas de subtitulado y actas de reunion.
-- Preprocesado para modelos mayores: usar este encoder como filtro previo de bajo coste que decida cuando invocar un modelo generativo grande, reduciendo el coste computacional por turno.
-- Extraccion de embeddings para clasificacion downstream: con la etiqueta `text-embeddings-inference` y compatibilidad con endpoints, puede desplegarse como servicio de embeddings o clasificacion ligero sobre textos en portugues, si el idioma se confirma.
-- Investigacion sobre prosodia y toma de turno: util como linea base de 108,9 M de parametros para comparar contra modelos acusticos o multimodales en tareas de prediccion de transiciones de habla.
+- Atencion al cliente automatizada en portugues: el clasificador se coloca delante del agente conversacional para retener mensajes fragmentados como "Eu gostaria de saber sobre o" hasta que el usuario complete la idea, evitando respuestas a medias y reprocesos.
+- Enrutador inteligente de coste y calidad: los mensajes con `LABEL_1` se envian a un modelo grande (GPT-4o, Claude 3.5 Sonnet en los ejemplos del autor) y los `LABEL_0` a un modelo economico (Gemini Flash, GPT-4o-mini) o a un acuse de recibo breve, reduciendo el gasto en tokens.
+- Agentes de voz con endpointing de baja latencia: con 15 a 25 ms en CPU, puede ejecutarse en el mismo nodo del orquestador de voz y decidir si cerrar el turno antes de invocar el reconocimiento o el LLM de respuesta.
+- Debouncing adaptativo en chats web: sustituye el timeout fijo por una espera condicionada a la prediccion, de modo que las respuestas rapidas no sufren retardo artificial y los mensajes largos no se cortan.
+- Triaje en banca y servicios financieros: entrenado con conversaciones de atencion al cliente y consultas bancarias, encaja en flujos de "pix", limites de tarjeta y redefinicion de contrasenas, donde un turno incompleto mal enrutado genera errores operativos.
+- Filtro previo en pipelines de datos conversacionales: clasificar transcripciones para separar turnos completos de fragmentos, util para limpiar datasets de dialogo o para segmentar logs de atencion al cliente antes de anonimizar o analizar.
+- Control de interrupciones en asistentes telefonicos: priorizar la precision en `LABEL_1` evita que el agente empiece a hablar mientras el usuario aun esta construyendo la frase, un fallo especialmente visible en IVR y call centers.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye seccion de evaluacion cumplimentada y el autor no reporta metricas de ningun tipo (accuracy, F1, latencia ni throughput).
+El autor no publica una tabla de resultados por benchmark, sino una unica metrica objetivo y datos de latencia. Se recogen a continuacion tal como aparecen en la model card.
+
+| Metrica | Valor declarado |
+|---|---|
+| F1-score (objetivo en test held-out) | 0,85 |
+| Precision en `LABEL_1` | Priorizada durante el entrenamiento (sin cifra publicada) |
+| Latencia media en CPU (batch 1, max_length 64) | 15-25 ms por secuencia |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible, ni comparaciones numericas con otros modelos de endpointing.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 436 MB en FP32, 218 MB en FP16/BF16, 109 MB en INT8 y en torno a 55 MB en cuantizacion de 4 bits (calculo derivado de los 108.924.674 parametros, no de mediciones publicadas). A ello hay que sumar el espacio de activaciones, que para secuencias cortas es de decenas de MB.
-- GPU recomendadas: cualquier GPU moderna sirve; el modelo no requiere A100 ni H100. Una RTX 3060, RTX 4090 o incluso una GTX 1650 son mas que suficientes. El despliegue en GPU dedicada solo se justifica por volumen de peticiones, no por memoria.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU con mas de 2 GB de VRAM, y tambien en CPU. La inferencia en CPU sobre lotes pequenos es viable para este tamano.
-- Opciones de despliegue: `transformers` con PyTorch, Hugging Face Text Embeddings Inference (etiqueta `text-embeddings-inference`), y exportacion a ONNX con Optimum para servir con ONNX Runtime o NVIDIA Triton. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
-- Latencia y throughput estimados: no disponible. No hay mediciones publicadas por el autor.
+- VRAM estimada para inferencia: aproximadamente 0,4-0,5 GB en FP32 (108,9 M de parametros), y del orden de 0,2-0,3 GB en FP16. Cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no requiere GPU. El autor reporta 15-25 ms por secuencia en CPU, suficiente para produccion en tiempo real; una GPU consumer (RTX 3060, RTX 4090) solo aporta margen para lotes grandes o muchos flujos concurrentes.
+- Cabe en GPU consumer: si, en cualquier modelo con al menos 1 GB de memoria, incluidas GTX 1650 o inferiores.
+- Opciones de despliegue: `transformers` (pipeline o `AutoModelForSequenceClassification`), Text Embeddings Inference (el repo esta marcado como `endpoints_compatible` y `text-embeddings-inference`), y servidores de inferencia compatibles con Hugging Face Endpoints. No se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma nativa sin conversion.
+- Latencia y throughput: 15-25 ms por secuencia en CPU con batch de 1 y `max_length` 64, segun el autor; el throughput agregado no esta documentado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea declarada | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| JamesGuima/bert-end-of-turn-pt | 108.924.674 | no disponible | text-classification (fin de turno, sin confirmar) | no disponible | Hugging Face |
-| bert-base-uncased (Google) | ~110 M | 512 | encoder generico, ajustable | Apache 2.0 | Hugging Face |
-| BERTimbau base (neuralmind) | ~110 M | 512 | encoder en portugues de Brasil | MIT | Hugging Face |
-| XLM-RoBERTa base (Meta) | ~278 M | 512 | encoder multilingue | MIT | Hugging Face |
+No se dispone de datos publicados de otros clasificadores de fin de turno en portugues de Brasil en la informacion proporcionada, por lo que la comparacion se limita a referencias estructurales.
 
-La comparacion es necesariamente limitada: el modelo analizado no publica licencia, idiomas, contexto ni metricas, de modo que la unica dimension comparable con fiabilidad es el recuento de parametros. BERTimbau base es el candidato mas cercano si se confirma que el modelo esta orientado al portugues; bert-base-uncased lo es si esta en ingles; XLM-RoBERTa base cubre escenarios multilingues a costa de triplicar el tamano.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `JamesGuima/bert-end-of-turn-pt` | 108,9 M | 64 tokens (configurado) | Clasificacion EoT binaria, pt-BR | MIT | Hugging Face, 199 descargas, 1 like |
+| `neuralmind/bert-base-portuguese-cased` (modelo base) | ~108 M | 512 tokens | Modelo de lenguaje enmascarado, pt | MIT | Hugging Face |
+| Clasificadores EoT en ingles (familia BERT) | No disponible | No disponible | Clasificacion EoT, en | No disponible | No disponible |
+
+La ventaja diferencial frente al modelo base es la especializacion en una tarea binaria concreta con latencia medida; la limitacion frente a alternativas multilingues es que solo cubre pt-BR.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros ni evaluacion.
-- Licencia no especificada: al no declararse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion. Cualquier uso en produccion requiere contactar con el autor.
-- Tarea e idioma no confirmados: la hipotesis de deteccion de fin de turno en portugues se deduce del nombre del repositorio y no esta respaldada por el autor.
-- Riesgo de sesgos desconocido: sin informacion sobre el corpus de entrenamiento no es posible evaluar sesgos demograficos, dialectales o de dominio.
-- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de falsos positivos y falsos negativos en la clasificacion, cuya magnitud se desconoce.
-- Sin validacion externa: cero descargas y cero likes implican ausencia de uso comunitario reportado y de verificacion independiente.
-- Fechas de creacion y actualizacion anomales (2026-09-20), lo que sugiere un artefacto de subida automatizada o de metadatos; conviene tratarlo con cautela.
-- Advertencia para produccion: no debe desplegarse sin una evaluacion propia sobre un conjunto de validacion representativo del dominio objetivo, y sin verificar previamente la configuracion real del modelo cargando el `config.json` y el tokenizador.
+- Alcance linguistico restringido: entrenado y evaluado solo en portugues de Brasil; su comportamiento en portugues europeo, espanol o en mezclas de idiomas no esta documentado.
+- Ventana de 64 tokens: los turnos largos se truncan, por lo que la prediccion en mensajes extensos puede basarse solo en el prefijo. No es adecuado para clasificar parrafos completos.
+- Riesgo de falso positivo en `LABEL_1`: aunque el entrenamiento prioriza precision para evitarlo, una clasificacion erronea de turno completo interrumpe al usuario; conviene calibrar el umbral de confianza en produccion.
+- Dominio acotado: el dataset de entrenamiento son conversaciones de atencion al cliente brasilenas con aumento heuristico; el rendimiento en dominios muy distintos (soporte tecnico especializado, jerga, dialectos) no esta validado.
+- Metrica unica: el unico dato de calidad publicado es un F1 objetivo de 0,85, sin matriz de confusion, sin desglose por clase ni evaluacion externa independiente.
+- Sin cuantizaciones publicadas: no hay pesos GGUF ni ONNX en el repo, lo que limita el despliegue en llama.cpp u Ollama sin trabajo adicional de conversion.
+- Adopcion muy baja: 199 descargas y 1 like en el momento de la consulta, lo que implica poca validacion por parte de la comunidad.
+- Licencia MIT: permite uso comercial y modificacion con atribucion; no obstante, la responsabilidad sobre sesgos derivados de los datos de atencion al cliente recae en el integrador.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JamesGuima/bert-end-of-turn-pt
-- Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact
-- Documentacion de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference
-- No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.
+- Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
+- Dataset de entrenamiento: https://huggingface.co/datasets/RichardSakaguchiMS/brazilian-customer-service-conversations
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

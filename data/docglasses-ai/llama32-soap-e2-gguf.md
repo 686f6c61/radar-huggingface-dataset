@@ -2,53 +2,52 @@
 
 ## Resumen
 
-Llama 3.2 1B SOAP (e2) es un ajuste fino del modelo meta-llama/Llama-3.2-1B-Instruct orientado a la generacion de notas clinicas con estructura SOAP (Subjetivo, Objetivo, Analisis, Plan) a partir de la transcripcion de una consulta medico-paciente. Lo desarrolla Docglasses-AI y se distribuye unicamente en formato GGUF Q6_K para su ejecucion en llama.cpp, con un enfoque explicito hacia la inferencia en dispositivo movil Android (aplicacion DocGlasses).
+llama32-soap-e2-gguf es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.2-1B-Instruct, publicado por Docglasses-AI en formato GGUF para su uso con llama.cpp. El modelo esta especializado en la generacion de notas clinicas con estructura SOAP (Subjetivo, Objetivo, Analisis, Plan), un formato estandar en la documentacion medica. Segun la model card, esta pensado para integrarse en SarvaDoc / GenieX como sistema de resumen on-device, es decir, ejecutandose localmente en dispositivos moviles.
 
-El modelo hereda la arquitectura transformer decoder-only de Llama 3.2 1B, con 1.235.814.432 parametros totales y una ventana de contexto operativa de 4096 tokens segun la configuracion publicada por el autor. El repositorio ocupa 1,0 GB y contiene el peso cuantizado Q6_K, un JSON de configuracion movil y un fichero TypeScript con los prompts, el parser de campos y la logica de anclaje del plan.
+El modelo cuenta con 1.235.814.432 parametros totales, lo que lo situa en la categoria de modelos pequenos optimizados para inferencia en hardware limitado. Se distribuye exclusivamente en formato GGUF con dos cuantizaciones (Q4_K_M y Q6_K), lo que refuerza su orientacion a despliegues en telefono y entornos con recursos restringidos. El repositorio ocupa 1,8 GB.
 
-Su relevancia es acotada pero concreta: demuestra un caso de uso de resumen clinico local, sin conexion y de baja latencia, sobre hardware modesto. La model card restringe explicitamente el uso a investigacion, advierte de que no es un producto sanitario y exige revision por parte de un clinico. No se han publicado resultados de benchmarks en la informacion disponible.
+Su relevancia actual radica en la combinacion de un dominio muy vertical (documentacion clinica SOAP) con un formato de despliegue ligero (GGUF + llama.cpp), lo que permite procesar informacion medica sin enviar datos a la nube, un aspecto critico por motivos de privacidad y cumplimiento normativo en el ambito sanitario. La licencia es "other" y el autor advierte explicitamente de que no es un dispositivo de diagnostico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.2), ajuste fino supervisado sobre Llama-3.2-1B-Instruct |
+| Arquitectura | Transformer (derivada de Llama 3.2 1B Instruct) |
 | Parametros totales | 1.235.814.432 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 4096 tokens (configuracion de ejecucion publicada) |
-| Tipos de cuantizacion | Q6_K (unico peso publicado); el modelo base admite otras cuantizaciones GGUF |
-| Idiomas soportados | no disponibles (la model card esta redactada en ingles y no declara cobertura linguistica) |
-| Licencia | llama3.2 (Llama 3.2 Community License) |
-| Formato de pesos | GGUF (fichero `llama32-soap-e2-Q6_K.gguf`, 1.021.800.128 bytes) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M, Q6_K (GGUF) |
+| Idiomas soportados | ingles (segun model card) |
+| Licencia | other |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.2 1B Instruct: un transformer decoder-only denso con atencion causal estandar, normalizacion RMSNorm, activacion SwiGLU y sesgo RoPE, sin mecanismos MoE ni atencion lineal. El ajuste fino se ha realizado sobre el checkpoint Instruct de Meta, segun declara el campo `base_model` y la model card; no se especifican el numero de tokens de entrenamiento, la composicion del dataset clinico, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
+El modelo parte de meta-llama/Llama-3.2-1B-Instruct, un transformer decoder-only de 1.235.814.432 parametros. Sobre esa base se ha realizado un ajuste fino supervisado orientado a la tarea de generar notas clinicas SOAP; la model card identifica la version como "epoch-2", lo que sugiere un entrenamiento de al menos dos epocas sobre un dataset de dominio clinico. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO adicionales.
 
-La innovacion tecnica destacable no esta en la arquitectura sino en el pipeline de inferencia descrito por el autor: recorte de la transcripcion a 3500 caracteres (1750 iniciales, separador `\n...\n` y 1750 finales), plantilla de chat de Llama 3.2 sin cabecera de fecha, temperatura 0, 4 hilos de CPU y parada en `<|eot_id|>` y `<|end_of_text|>`. La salida se fuerza a cuatro bloques de texto plano (`Subjective:`, `Objective:`, `Assessment:`, `Plan:`) y se prohibe pedir JSON. Posteriormente se aplica `parseFields(raw)` y `assembleFinalSummary(fields, dialogue)` con la transcripcion completa, de modo que el anclaje del plan elimina ordenes y medicaciones inventadas.
+La innovacion tecnica principal no reside en la arquitectura, sino en el empaquetado: el modelo se distribuye en GGUF con cuantizaciones Q4_K_M (807.694.016 bytes) y Q6_K, acompanado de un fichero de prompt (`soap_prompt.ts`) y una configuracion para movil (`llama32_mobile_config.json`). Esto indica un pipeline de despliegue pensado para llama.cpp en dispositivos, con un prompt predefinido que guia la generacion hacia el formato SOAP.
 
 ## Capacidades
 
-- Generacion de texto conversacional y resumen estructurado a partir de una transcripcion de consulta.
-- Redaccion de notas clinicas en formato SOAP con cuatro secciones fijas en texto plano.
-- Extraccion de campos mediante un parser determinista posterior a la generacion (`parseFields`).
-- Anclaje del plan contra el dialogo original para descartar ordenes y farmacos no mencionados.
-- Ejecucion totalmente local en llama.cpp sobre CPU, sin dependencia de red.
-- Compatibilidad con endpoints (`endpoints_compatible` segun los tags del repositorio).
-- No se declara soporte de tool calling ni de function calling.
-- No se declara soporte de agentes ni de razonamiento multi-paso.
-- No se declara soporte de vision ni de audio (la transcripcion se aporta como texto).
-- Cobertura multilingue no documentada; el prompt de referencia (`prompt: e2`) esta en ingles.
+- Generacion de texto especializada en notas clinicas con estructura SOAP (Subjetivo, Objetivo, Analisis, Plan).
+- Resumen de informacion clinica orientado a la app SarvaDoc / GenieX.
+- Inferencia on-device mediante llama.cpp en formato GGUF.
+- Conversacion multi-turno (el tag "conversational" aparece en la ficha de Hugging Face).
+- Capacidades generales heredadas de Llama 3.2 1B Instruct (generacion de texto, instrucciones), aunque el ajuste fino puede haber reducido su polivalencia.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la model card declara unicamente ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Resumen clinico en dispositivo Android: el modelo se ejecuta en llama.cpp con 4 hilos de CPU y contexto de 4096 tokens, lo que permite generar la nota SOAP en el propio telefono tras la consulta, sin enviar datos del paciente a un servidor.
-- Documentacion de consulta ambulatoria: a partir de una transcripcion recortada a 3500 caracteres, produce las cuatro secciones SOAP que el profesional revisa y firma, reduciendo el tiempo de tecleo posterior a la visita.
-- Triaje de notas para revision: el parser `parseFields` separa Subjetivo, Objetivo, Analisis y Plan en campos estructurados que pueden volcarse a una historia clinica electronica tras validacion humana.
-- Filtrado de alucinaciones en el plan terapeutico: `assembleFinalSummary` contrasta el plan generado con el dialogo completo y elimina ordenes y medicaciones que no aparecen en la transcripcion, un control necesario en dominio sanitario.
-- Prototipado de asistentes clinicos de bajo coste: al ser un modelo de 1,2 B en Q6_K (aproximadamente 1 GB de pesos), sirve como banco de pruebas para pipelines de resumen medico en hardware sin GPU.
-- Evaluacion de ajustes finos en dominio clinico: util para investigadores que quieran comparar estrategias de prompting (e2 frente a e3, segun `soap_prompt.ts`) sobre una base Llama 3.2 1B.
-- Demostraciones de privacidad por diseno: escenario de consulta donde la inferencia local evita el tratamiento de datos de salud por terceros, relevante para cumplimiento normativo.
+- Documentacion clinica asistida en consulta: el modelo genera borradores de notas SOAP a partir de la transcripcion o el resumen de una consulta, reduciendo el tiempo de papeleo del profesional sanitario.
+- Resumen on-device en aplicaciones moviles: gracias a su tamano (1,2B parametros) y a la cuantizacion Q4_K_M (unos 808 MB), puede ejecutarse en un telefono con llama.cpp sin enviar datos clinicos a servidores externos.
+- Prototipado de asistentes de salud con privacidad por diseno: util para equipos que necesitan validar un flujo SOAP local antes de invertir en modelos mayores o infraestructura cloud.
+- Generacion de plantillas de notas estructuradas: el prompt incluido (`soap_prompt.ts`) permite estandarizar la salida en las cuatro secciones SOAP para su integracion en historiales electronicos.
+- Educacion y simulacion clinica: generacion de ejemplos de notas SOAP para formacion de estudiantes o pruebas de sistemas de documentacion.
+- Evaluacion comparativa de ajustes finos en dominio medico: sirve como baseline ligero para medir la calidad de modelos especializados frente a Llama 3.2 1B Instruct sin ajustar.
+- Integracion en pipelines de CI/CD para validacion de prompts: el fichero de configuracion movil permite automatizar pruebas de regresion del prompt SOAP en cada version.
 
 ## Benchmarks y rendimiento
 
@@ -56,40 +55,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,1-1,3 GB con Q6_K (pesos de 1,02 GB mas cache KV para 4096 tokens en un modelo de 1,2 B); en CPU la memoria residente es del orden de 1,2-1,5 GB.
-- GPU recomendadas: no se especifican; el autor orienta el modelo a CPU movil. Cualquier GPU consumer con 2 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) puede alojarlo con holgura.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer actual e incluso en iGPU con memoria unificada suficiente.
-- Despliegue: llama.cpp es el runtime de referencia; tambien es compatible con Ollama y otros frontends que consuman GGUF. vLLM y TGI no estan indicados por el autor para este artefacto.
-- Parametros de ejecucion declarados: 4 hilos de CPU, temperatura 0, maximo de 896 tokens nuevos, contexto 4096.
-- Latencia y throughput: no disponibles. Con 1,2 B parametros en Q6_K sobre 4 hilos de CPU moviles es razonable esperar una generacion de varios cientos de tokens en decenas de segundos, pero no hay medicion publicada.
+- VRAM estimada: aproximadamente 0,8 GB para Q4_K_M y en torno a 1,1-1,3 GB para Q6_K (estimacion a partir del tamano de los ficheros; no confirmada por el autor).
+- GPU recomendadas: al ser un modelo de 1,2B en GGUF, puede ejecutarse en CPU; para GPU, cualquier tarjeta con 2 GB o mas de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100), aunque las GPU de gama alta no aportan ventaja significativa frente a CPU en este tamano.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer moderna e incluso en telefonos moviles segun la orientacion del autor.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y cualquier runtime compatible con GGUF; la ficha indica compatibilidad con endpoints.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Docglasses-AI/llama32-soap-e2-gguf | 1,24 B | 4096 | GGUF Q6_K | llama3.2 | Resumen clinico SOAP en dispositivo |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128k (modelo base) | safetensors, GGUF | llama3.2 | Instrucciones generales |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128k (modelo base) | safetensors, GGUF | llama3.2 | Instrucciones generales, mayor calidad |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32k | safetensors, GGUF | Apache 2.0 | Instrucciones multilingues |
+| llama32-soap-e2-gguf | 1,24B | no disponible | GGUF | other | Notas clinicas SOAP |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128K (segun la familia Llama 3.2) | safetensors, GGUF | Llama 3.2 Community License | Instrucciones generales |
+| Llama-3.2-3B-Instruct | 3,2B | 128K (segun la familia Llama 3.2) | safetensors, GGUF | Llama 3.2 Community License | Instrucciones generales, mayor capacidad |
 
-La comparativa se limita a modelos de la misma familia y tamano; no se dispone de datos de rendimiento del ajuste SOAP frente a alternativas, por lo que la comparacion es estructural (parametros, contexto, licencia) y no de calidad.
+La comparativa se limita a la familia de origen porque no se dispone de datos de benchmarks ni de otros ajustes SOAP comparables en la informacion proporcionada. Frente a Llama-3.2-1B-Instruct, este modelo sacrifica polivalencia general a cambio de especializacion en notas SOAP; frente a la variante de 3B, ofrece menor huella de memoria a costa de capacidad de razonamiento.
 
 ## Limitaciones y advertencias
 
-- Uso exclusivamente de investigacion: la model card indica "Research use only. Not a medical device".
-- Toda nota generada debe ser revisada por un clinico antes de incorporarse a la historia del paciente.
-- Riesgo de alucinacion en ordenes y medicaciones; el autor mitiga con anclaje contra la transcripcion, pero el filtro es heuristico y no garantiza ausencia de errores.
-- Ventana de contexto efectiva de 4096 tokens y recorte a 3500 caracteres de transcripcion: consultas largas pierden informacion por truncamiento.
-- Salida restringida a texto plano en cuatro bloques; no se debe solicitar JSON al modelo.
-- Cobertura linguistica no documentada; el prompt de referencia esta en ingles, por lo que el comportamiento en castellano no esta validado.
-- Sesgos: no se documentan evaluaciones de sesgo, equidad ni robustez en poblaciones diversas.
-- Licencia Llama 3.2 Community License: impone obligaciones de atribucion ("Built with Llama"), restricciones de uso (entre ellas, no entrenar modelos competidores con sus salidas) y umbrales de usuarios activos mensuales para determinados usos; conviene revisar el texto completo antes de un despliegue comercial.
-- Repositorio sin descargas ni likes en el momento de la consulta y con fecha de creacion posterior a la de esta ficha: no hay validacion externa de la comunidad.
-- No apto para diagnostico autonomo, triaje de urgencias ni decision terapeutica sin supervision.
+- No es un dispositivo de diagnostico: el autor lo advierte explicitamente en la model card. No debe usarse para decisiones clinicas sin supervision profesional.
+- Riesgo de alucinacion: como todo modelo de 1,2B de parametros, puede inventar contenido clinico plausible pero incorrecto; requiere revision humana.
+- Sesgos conocidos: no documentados en la informacion disponible; hereda los sesgos de Llama 3.2 1B Instruct y del dataset de ajuste fino, no descrito.
+- Limitaciones de idioma: declarado solo para ingles; el rendimiento en castellano no esta documentado.
+- Licencia "other": las condiciones exactas de uso comercial no estan detalladas en la informacion proporcionada; es necesario consultar los terminos del repositorio y la licencia de Llama 3.2.
+- Contexto: la longitud de contexto no esta especificada; no se debe asumir la ventana de 128K de la familia Llama 3.2 sin confirmacion.
+- Datos de entrenamiento no publicados: no se puede evaluar la representatividad del dataset clinico ni posibles sesgos demograficos.
+- Adopcion limitada: 205 descargas y 0 likes en el momento de la consulta, lo que implica poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Docglasses-AI/llama32-soap-e2-gguf
+- Hugging Face: https://huggingface.co/Docglasses-AI/llama32-soap-e2-gguf
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-- Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama.cpp: https://github.com/ggerganov/llama.cpp

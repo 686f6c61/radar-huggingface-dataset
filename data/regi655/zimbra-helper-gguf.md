@@ -2,96 +2,102 @@
 
 ## Resumen
 
-Zimbra-helper (GGUF) es un modelo de lenguaje ligero de 1,94 mil millones de parámetros, creado por el usuario Regi655 a partir de Qwen3.5-2B mediante fine-tuning con LoRA. Está especializado en responder preguntas sobre Zimbra, la suite open source de correo y colaboración, dirigido a usuarios que migran desde Microsoft Outlook, Exchange o Gmail. El modelo no memoriza la documentación: está entrenado para leer extractos que se le pasan en el prompt (patrón RAG) y responder con pasos numerados y nombres exactos de menús, o admitir que no sabe.
+`zimbra-helper-GGUF` es un modelo de lenguaje de 1.942.653.248 parametros (aproximadamente 1,9 mil millones), publicado por el usuario Regi655, que consiste en un fine-tuning mediante LoRA del modelo base Qwen/Qwen3.5-2B. Su proposito es responder preguntas sobre Zimbra, la suite open source de correo y colaboracion, orientado a usuarios que migran desde Microsoft Outlook, Exchange o Gmail. El modelo se distribuye unicamente en formato GGUF cuantizado Q4_K_M y esta disenado para ejecutarse en local, incluso solo con CPU.
 
-El modelo alimenta a **Zimbo**, un asistente de escritorio offline que combina este modelo con búsqueda semántica sobre 17.360 fragmentos de la documentación oficial de Zimbra 9/10 y su wiki. Se distribuye en formato GGUF cuantizado a Q4_K_M (1,3 GB), funciona con unos 1,4 GB de VRAM o directamente en CPU, y puede descargarse directamente desde Ollama. Su licencia Apache 2.0 permite cualquier uso, incluido el comercial.
+La caracteristica tecnica mas relevante es que el modelo no ha memorizado la documentacion de Zimbra: esta entrenado para leer extractos de documentacion que se le pasan en el prompt (patron RAG) y responder exclusivamente a partir de ellos, con pasos numerados y nombres exactos de menus, o admitir que no lo sabe. Sin extractos en el contexto tiende a inventar menus y comandos, por lo que su uso correcto exige un pipeline de recuperacion previa. En la aplicacion de referencia (Zimbo) los extractos provienen de una busqueda semantica con Snowflake Arctic Embed L v2.0 sobre 3.101 fragmentos de 7 guias oficiales de Zimbra 9/10.
+
+El modelo esta pensado como motor de un asistente de escritorio offline llamado Zimbo, disponible para Linux y Windows, que se apoya en Ollama. Su licencia Apache 2.0 y su reducido consumo de memoria (aproximadamente 1,4 GB de VRAM con contexto de 4.096 tokens) lo hacen adecuado para despliegues en hardware modesto. Es relevante ahora por la combinacion de tamano pequeno, enfoque RAG estricto y ejecucion totalmente offline, un patron cada vez mas comun para asistentes de documentacion tecnica especializada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen3.5-2B), encoder visivo eliminado, fine-tuning LoRA |
-| Parametros totales | 1.942.653.248 (~1,94 B, solo parte textual) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4.096 tokens (configuracion recomendada en el Modelfile) |
-| Tipos de cuantizacion | Q4_K_M |
+| Arquitectura | Transformer decoder-only (base Qwen3.5-2B) con fine-tuning LoRA; encoder visual eliminado |
+| Parametros totales | 1.942.653.248 (aproximadamente 1,9 mil millones, solo parte textual) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 4.096 tokens (configuracion recomendada de entrenamiento y uso) |
+| Tipos de cuantizacion | Q4_K_M (unico publicado) |
 | Idiomas soportados | Italiano (principal), ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (1,3 GB); base original en safetensors |
+| Formato de pesos | GGUF (`zimbra-helper.gguf`, aproximadamente 1,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B (revision de Unsloth `fffbc0d8711cf87df6d1f97938c5e50ef94aadc7`), al que se aplico fine-tuning LoRA de rango 32 (alpha 32) sobre las capas de atencion y MLP, entrenando 21,8 M de parametros (0,98 % del total) durante 2 epocas con learning rate 1e-4 en planificador cosine y batch efectivo de 16. La loss se calculo solo sobre las respuestas y el entrenamiento se realizo con Unsloth en una RTX 3070 Ti de 8 GB en unos 30 minutos. Antes de la cuantizacion se elimino el encoder visivo del modelo base (331 M de parametros), ya que el caso de uso es puramente textual.
+El modelo parte de Qwen/Qwen3.5-2B (revision de Unsloth `fffbc0d8711cf87df6d1f97938c5e50ef94aadc7`), un transformer decoder-only de aproximadamente 1,9 mil millones de parametros en su parte textual, al que se le ha eliminado el encoder visual. Sobre esa base se aplico un fine-tuning LoRA de rango 32 y alpha 32 sobre las capas de atencion y MLP, con 21,8 millones de parametros entrenados (0,98% del total), 2 epocas, learning rate 1e-4 con scheduler cosine y batch efectivo de 16. La loss se calculo unicamente sobre las respuestas. El entrenamiento se realizo con Unsloth en una RTX 3070 Ti de 8 GB en aproximadamente 30 minutos.
 
-El dataset consta de 2.376 ejemplos de entrenamiento y 111 de validacion en formato RAG: cada ejemplo incluye extractos numerados de la documentacion de Zimbra y una pregunta con su respuesta. Todas las respuestas fueron generadas localmente con un modelo open source (qwen3.5:9b, Apache 2.0) a partir de la documentacion oficial, e incluyen unas 2.000 parejas pregunta/respuesta sobre las guias oficiales, 245 parejas curadas sobre temas de migracion desde Outlook/Gmail (con reformulaciones coloquiales) y ejemplos de "no lo sé", extractos no pertinentes y preguntas sobre identidad y limites del asistente. Un filtro automatico descarto respuestas que mencionaban menus o comandos ausentes del texto fuente. El modelo se entreno con el modo de razonamiento (*thinking*) de Qwen3.5 desactivado, y debe usarse asi en produccion (`"think": false` en Ollama o `enable_thinking` desactivado en llama.cpp).
+El dataset consta de 2.287 ejemplos de entrenamiento y 107 de validacion en formato RAG: un mensaje de sistema que define el rol de asistente de migracion a Zimbra, cuatro extractos numerados de la documentacion (cada uno precedido de guia y ruta de titulos) y la pregunta del usuario. Todas las respuestas del dataset fueron generadas por un modelo open ejecutado en local. El modelo se entreno con el modo de razonamiento (thinking) de Qwen3.5 desactivado, y se recomienda usarlo igual, con `--think=false` o `enable_thinking` desactivado.
 
 ## Capacidades
 
-- Respuesta a preguntas sobre Zimbra basada exclusivamente en extractos de documentacion proporcionados en el prompt (patron RAG).
-- Generacion de procedimientos paso a paso con pasos numerados y nombres exactos de menus.
-- Reproduccion fiel de comandos de administracion de Zimbra (zmprov, zmcontrol) tal como aparecen en la documentacion.
-- Comparaciones con equivalentes de Outlook y Gmail para facilitar la migracion.
-- Rechazo honesto: admite cuando los extractos no contienen la respuesta en lugar de inventar menus u opciones.
-- Generacion conversacional en italiano (idioma principal) e ingles.
-- Sin capacidades de vision (encoder eliminado), sin tool calling y sin capacidad de ejecutar acciones sobre servidores o cuentas.
+- Generacion de texto conversacional especializado en documentacion de Zimbra 9/10.
+- Respuesta fundamentada en extractos de documentacion proporcionados en el prompt (RAG estricto), con instruccion explicita de no inventar menus, opciones ni comandos.
+- Produccion de procedimientos con pasos numerados y nombres exactos de menus y opciones.
+- Reproduccion literal de comandos de administracion (por ejemplo `zmprov`, `zmcontrol`) tal como aparecen en la documentacion.
+- Comparacion con el equivalente en Outlook/Gmail cuando resulta util.
+- Capacidad de admitir desconocimiento y sugerir donde buscar cuando los extractos no contienen la respuesta.
+- Multilingue limitado: italiano como idioma principal e ingles.
+- No soporta tool calling ni function calling segun la informacion disponible.
+- No soporta agentes ni razonamiento multi-paso autonomo; el modo thinking debe permanecer desactivado.
+- Sin capacidades de vision, audio ni otras modalidades (encoder visual eliminado).
+- No ejecuta acciones sobre el servidor ni la cuenta del usuario: solo explica como realizarlas.
 
 ## Casos de uso
 
-- **Asistente de escritorio offline para migracion a Zimbra**: es el proposito original; Zimbo lo usa con busqueda semantica (Snowflake Arctic Embed L v2.0) sobre la documentacion oficial para responder dudas de usuarios que llegan desde Outlook, Exchange o Gmail.
-- **Chatbot de soporte para administradores de Zimbra**: con un pipeline RAG sobre documentacion de administracion, puede explicar procedimientos con comandos zmprov o zmcontrol exactos.
-- **Ayuda integrada en webmail self-hosted**: su tamano (1,4 GB de VRAM o CPU pura) permite incrustarlo en servidores de correo domesticos o PYMEs sin GPU dedicada.
-- **FAQ automatica sobre las dos interfaces de Zimbra** (Classic y Modern Web App): el modelo puede indicar rutas de menus concretas si los extractos correspondientes se incluyen en el contexto.
-- **Base para asistentes verticales similares**: el metodo (LoRA rango 32 + dataset RAG sintetico filtrado + GGUF Q4_K_M) es replicable para otras suites de software con documentacion publica.
-- **Demostraciones educativas de RAG local**: al ser pequeño, Apache 2.0 y ejecutable con Ollama o llama.cpp, es util para prototipar pipelines RAG completos en un portatil.
+- Asistente de escritorio offline para migracion a Zimbra: es el caso de uso nativo del modelo, integrado en Zimbo, que combina busqueda semantica sobre 3.101 fragmentos de 7 guias oficiales con este modelo como generador de respuestas. Funciona en Linux y Windows sin conexion tras la instalacion.
+- Soporte de helpdesk interno sobre Zimbra: el modelo puede responder consultas de usuarios finales ("donde se configura la firma", "como activar la respuesta automatica") a partir de extractos de la guia de usuario, reduciendo el volumen de tickets repetitivos.
+- Asistencia a administradores de sistemas: explicacion de procedimientos de administracion con comandos exactos (`zmprov`, `zmcontrol`) extraidos de la documentacion, util para equipos que migran desde Exchange.
+- Base para un chatbot RAG de documentacion tecnica: el patron de entrenamiento (extractos numerados con guia y ruta de titulos, respuesta solo sobre el contexto) es reutilizable para otras suites o productos con documentacion estructurada, sustituyendo el corpus y reentrenando el LoRA.
+- Generacion de guias de migracion personalizadas: el modelo puede redactar comparativas paso a paso entre Outlook/Gmail y Zimbra, utiles para material de formacion interno.
+- Despliegue en entornos con hardware limitado o air-gapped: con aproximadamente 1,4 GB de VRAM en Q4_K_M y ejecucion viable solo con CPU (aproximadamente 28 token/s en un Intel i7-12700K), es apto para equipos de oficina sin GPU o con requisitos de confidencialidad que impiden usar servicios en la nube.
+- Prototipado rapido de asistentes especializados: el bajo coste de entrenamiento (unos 30 minutos en una RTX 3070 Ti) permite iterar sobre el corpus y el formato de prompt con facilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Los datos de evaluacion publicados por el autor son:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta mediciones de velocidad de inferencia:
 
 | Metrica | Valor |
 |---|---|
-| Loss de validacion inicial | 0,922 |
-| Loss de validacion final | 0,834 (sin overfitting) |
-| Test cualitativo | 10 preguntas tipicas con la busqueda de Zimbo; mayoritariamente correctas y concisas, admite no saber cuando no hay respuesta en la documentacion |
-
-Rendimiento medido de inferencia:
-
-| Hardware | Velocidad |
-|---|---|
-| RTX 3070 Ti | ~200 tokens/s |
-| Intel i7-12700K (solo CPU) | ~28 tokens/s |
+| Velocidad en RTX 3070 Ti | Aproximadamente 200 token/s |
+| Velocidad en CPU Intel i7-12700K | Aproximadamente 28 token/s |
+| VRAM con contexto de 4.096 tokens | Aproximadamente 1,4 GB |
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: ~1,4 GB con contexto de 4.096 tokens (GGUF Q4_K_M de 1,3 GB).
-- **Ejecucion en CPU**: totalmente viable; ~28 tokens/s en un Intel i7-12700K, suficiente para uso interactivo.
-- **GPUs recomendadas**: cualquier GPU consumer con mas de 2 GB de VRAM libres (RTX 3060, 3070 Ti, 4060 o superiores); no se requiere hardware de centro de datos.
-- **Despliegue**: Ollama (descarga directa con `ollama pull hf.co/Regi655/zimbra-helper-GGUF` o creacion con el Modelfile incluido, temperatura 0,3 y contexto 4.096) y llama.cpp u otros runtimes compatibles con GGUF (desactivando `enable_thinking` en el template).
-- **Latencia**: no disponible como cifra oficial; los ~200 tokens/s en RTX 3070 Ti y ~28 tokens/s en CPU son las unicas medidas publicadas.
+- VRAM estimada: aproximadamente 1,4 GB con contexto de 4.096 tokens en cuantizacion Q4_K_M.
+- GPU recomendadas: RTX 3070 Ti (velocidad medida de aproximadamente 200 token/s); cualquier GPU consumer con 2 GB o mas de VRAM es suficiente. No se requieren A100 ni H100.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada moderna; tambien funciona solo con CPU (aproximadamente 28 token/s en un Intel i7-12700K).
+- Opciones de despliegue: Ollama (via `ollama pull hf.co/Regi655/zimbra-helper-GGUF` o creando el modelo con el `Modelfile` incluido), llama.cpp y otros runtimes compatibles con GGUF.
+- Parametros de inferencia recomendados: temperatura 0,3, top_p 0,9, num_ctx 4.096 y thinking desactivado (`--think=false` en CLI, `"think": false` en la API de Ollama, `enable_thinking` desactivado en el template).
+- Latencia y throughput: aproximadamente 200 token/s en RTX 3070 Ti y aproximadamente 28 token/s en CPU Intel i7-12700K, segun mediciones del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Especializacion |
-|---|---|---|---|---|---|
-| Regi655/zimbra-helper-GGUF | 1,94 B | 4.096 tokens | GGUF (Q4_K_M) | Apache 2.0 | RAG sobre documentacion de Zimbra, italiano/ingles |
-| Qwen/Qwen3.5-2B (base) | ~2,27 B (con encoder visivo) | no disponible | safetensors, GGUF comunitarios | Apache 2.0 | Modelo generalista multilingue |
-| qwen3.5:9b (usado para generar el dataset) | 9 B | no disponible | GGUF | Apache 2.0 | Generalista, mayor capacidad pero mayores requisitos |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|---|
+| zimbra-helper-GGUF | 1,9 B (texto) | 4.096 | it, en | Apache 2.0 | GGUF Q4_K_M | RAG especializado en Zimbra |
+| Qwen/Qwen3.5-2B (base) | 1,9 B (texto) | no disponible | no disponible | no disponible | safetensors, GGUF | Modelo generalista |
+| Modelos generalistas de 2-3 B (por ejemplo, variantes pequenas de Qwen o Llama) | 2-3 B | variable | multilingue | variable | safetensors, GGUF | Proposito general, sin especializacion |
 
-La ventaja de zimbra-helper frente a su modelo base es la fiabilidad en el dominio: respuestas con estructura RAG, pasos numerados y rechazo de preguntas fuera de los extractos, a costa de la versatilidad generalista y sin capacidades de vision.
+La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada. La diferencia principal frente al modelo base es la especializacion en el formato RAG de Zimbra, el ajuste del comportamiento (no inventar, pasos numerados, comandos literales) y la eliminacion del encoder visual, que reduce el peso y el consumo.
 
 ## Limitaciones y advertencias
 
-- **Uso obligatorio con RAG**: sin extractos de documentacion en el prompt, el modelo tiende a inventar menus y comandos. No debe usarse como chatbot generalista sin retrieval.
-- **Modelo pequeño**: puede equivocarse, especialmente si los extractos proporcionados no son pertinentes; el propio autor recomienda verificar siempre contra la documentacion oficial.
-- **Confusion de interfaces**: la documentacion de Zimbra cubre Classic y Modern Web App, y el modelo a veces mezcla los nombres de menus entre ambas.
-- **Cobertura desigual**: las preguntas de administracion avanzada estan menos representadas en el dataset.
-- **Sin agenticidad**: no tiene herramientas ni acceso al sistema; solo explica, no ejecuta.
-- **Idiomas**: optimizado para italiano e ingles; el rendimiento en castellano no esta evaluado y probablemente sea inferior.
-- **Modo thinking**: debe mantenerse desactivado; el modelo fue entrenado sin razonamiento explicito.
-- **Respuestas sinteticas**: todo el dataset fue generado por otro LLM y filtrado automaticamente, no verificado manualmente de forma exhaustiva, por lo que pueden persistir errores heredados.
-- **Licencia**: Apache 2.0 no impone restricciones de uso comercial.
+- Sin extractos de documentacion en el contexto, el modelo tiende a inventar menus y comandos; su uso correcto exige un pipeline RAG.
+- El modelo no ha memorizado la documentacion de Zimbra; no debe usarse como fuente de conocimiento por si solo.
+- Cobertura linguistica limitada a italiano (principal) e ingles; el rendimiento en castellano no esta documentado.
+- Contexto maximo de 4.096 tokens, lo que limita el numero y tamano de los extractos incluidos en el prompt.
+- Entrenado con thinking desactivado; activar el modo de razonamiento de Qwen3.5 puede degradar la calidad de las respuestas.
+- Dataset de entrenamiento pequeno (2.287 ejemplos) y generado por un modelo open en local, con el riesgo de sesgos y errores heredados de ese generador.
+- Riesgo de alucinacion en nombres de menus, rutas y comandos cuando los extractos son ambiguos o incompletos.
+- El modelo no ejecuta acciones sobre el servidor ni la cuenta del usuario; solo describe procedimientos.
+- Licencia Apache 2.0: permite uso comercial, pero no se documentan garantias ni evaluaciones independientes de calidad.
+- Un unico tipo de cuantizacion publicado (Q4_K_M); no hay variantes de mayor o menor precision disponibles.
+- El modelo esta acoplado a la version de la documentacion usada (Zimbra 9/10); cambios en la interfaz o en los comandos pueden dejarlo desactualizado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Regi655/zimbra-helper-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Descarga de Zimbo (asistente de escritorio): https://huggingface.co/Regi655/zimbra-helper-GGUF/resolve/main/zimbo/Zimbo.zip
+- Descarga de Zimbo offline (con modelos incluidos): https://huggingface.co/Regi655/zimbra-helper-GGUF/resolve/main/zimbo/Zimbo-offline.zip
+- Ollama: https://ollama.com/download

@@ -101,16 +101,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "TranscribePsy 254M: 10 Min of Audio in 1.65s on iPhone | explainx.ai ...",
-      "url": "https://www.explainx.ai/blog/tether-transcribepsy-250m-on-device-speech-recognition-2026",
-      "snippet": "Tether QVAC released TranscribePsy, a 254M-parameter Apache 2.0 speech recognition model for 25 European languages. Numbers, how to run it, and caveats."
-    },
-    {
-      "title": "GitHub - tether-ai-research/qvac-transcribepsy: State-of-the-art ...",
-      "url": "https://github.com/tether-ai-research/qvac-transcribepsy",
-      "snippet": "¹ Common Voice is the mean over its 24 languages; the 8-language model has no comparable mean. Against models three to four times its size, TranscribePsy-250M-EU still has the lowest Multilingual LibriSpeech error: 6.58, against 7.71 for omniASR-CTC-1B-v2, 7.76 for Whisper-Medium, 10.65 for OWSM-CTC-v4 and 12.60 for Qwen3-ASR-0.6B. Per-dataset results are in the TranscribePsy-250M-EU and ..."
-    }
-  ]
+  "sources": []
 }

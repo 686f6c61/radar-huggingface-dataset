@@ -2,91 +2,89 @@
 
 ## Resumen
 
-Zoro-1 es un modelo de lenguaje de 4.538 millones de parámetros desarrollado por trillionlabs, construido como un fine-tuning del modelo base Qwen/Qwen3.5-4B. Su rasgo diferencial es la incorporación de técnicas de difusión por bloques (block-diffusion) e inferencia híbrida con decodificación auto-especulativa, orientadas a reducir la latencia en dispositivos locales (on-device) sin renunciar a la calidad de generación. El modelo está etiquetado específicamente para casos de uso de agentes y tool calling, con un mecanismo denominado "typed decisions" y "jev" que no aparece documentado en la información disponible.
+Zoro-1 es un modelo de lenguaje de 4.538.646.016 parámetros desarrollado por trillionlabs, obtenido mediante ajuste fino (finetune) del modelo base Qwen/Qwen3.5-4B. Su propuesta diferencial no es tanto el tamaño como la técnica de generación: emplea decodificación por difusión de bloques (block-diffusion) en un esquema híbrido que combina atención transformer convencional con pasos de difusión, junto con decodificación auto-especulativa (self-speculative-decoding). El modelo está orientado explícitamente a casos de uso de agentes, tool calling y toma de decisiones tipadas (typed-decisions), y se distribuye con vocación de ejecución en dispositivo (on-device).
 
-El modelo se distribuye en formato safetensors con un repositorio de 18,2 GB, lo que sugiere pesos en precisión completa o bf16 para sus 4.538 millones de parámetros. La licencia es Apache 2.0, aunque el acceso está restringido: es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. En el momento de redactar esta ficha, el modelo acumula 61 descargas y 4 likes, lo que indica una adopción todavía muy temprana.
+La relevancia de Zoro-1 en el ecosistema actual radica en dos frentes. Por un lado, demuestra que es posible aplicar esquemas de difusión por bloques sobre un transformer denso de 4B parámetros sin salir del ecosistema Qwen, lo que abre la puerta a acelerar la inferencia manteniendo calidad. Por otro lado, su enfoque en decisiones estructuradas y tool calling lo posiciona como candidato para pipelines de agentes donde la salida debe ser parseable y determinista en formato, no solo texto libre.
 
-Su relevancia actual radica en la combinación poco habitual de un transformer denso de tamaño medio (4B) con técnicas de difusión para generación de texto, un enfoque que busca acelerar la inferencia en hardware consumer y que encaja con la tendencia de modelos pequeños especializados en agentes y ejecución local.
+El modelo se publica bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. El repositorio ocupa 26,6 GB e incluye pesos en safetensors. No se han publicado en la información disponible detalles sobre idiomas soportados ni sobre resultados de benchmarks.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con block-diffusion / hybrid-diffusion (base Qwen3.5) |
-| Parámetros totales | 4.538.646.016 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (repo en safetensors; no se documentan GGUF ni AWQ) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer híbrido con block-diffusion (hybrid-diffusion) sobre base Qwen3.5; decodificación auto-especulativa |
+| Parametros totales | 4.538.646.016 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
-| Modelo base | Qwen/Qwen3.5-4B |
-| Acceso | Restringido (gated), requiere aceptar condiciones |
-| Tamaño del repositorio | 18,2 GB |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Zoro-1 parte de Qwen/Qwen3.5-4B, un transformer denso de 4.538 millones de parámetros, y le aplica un esquema de fine-tuning con block-diffusion e hybrid-diffusion. La difusión por bloques consiste en generar tokens en grupos (bloques) mediante un proceso iterativo de denoising en lugar de la generación autorregresiva token a token, lo que en teoría permite paralelizar parte del cálculo y reducir el número de pasos secuenciales. La etiqueta "hybrid-diffusion" sugiere una combinación de generación autorregresiva y difusión, aunque los detalles concretos de la proporción y el mecanismo no están documentados en la información disponible.
+Zoro-1 parte de Qwen/Qwen3.5-4B, un transformer denso de aproximadamente 4,5 mil millones de parámetros, y le aplica un ajuste fino que introduce un mecanismo de generación por difusión de bloques (block-diffusion) en régimen híbrido. En lugar de generar token a token de forma estrictamente autorregresiva, el modelo produce bloques de tokens mediante pasos de difusión, lo que en la práctica permite paralelizar parte de la decodificación y reducir el número de pasos secuenciales. A esto se suma la decodificación auto-especulativa, en la que el propio modelo actúa como borrador y verificador, sin necesidad de un modelo auxiliar externo.
 
-El modelo incorpora además decodificación auto-especulativa (self-speculative decoding), una técnica en la que el propio modelo propone varios tokens candidatos y luego los verifica, acelerando la generación sin necesidad de un modelo draft separado. Las etiquetas "agent", "tool-calling", "typed-decisions" y "jev" apuntan a un entrenamiento orientado a tareas agénticas, pero no se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. Tampoco hay datos publicados sobre innovaciones adicionales como atención lineal o decodificación especulativa con modelo externo.
+Los tags del repositorio indican un entrenamiento orientado a agentes, tool calling y decisiones tipadas, lo que sugiere que el ajuste fino incorporó datos de interacción con herramientas y de salida estructurada. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF o DPO. Tampoco se detallan innovaciones adicionales como atención lineal o decodificación especulativa con modelo separado; la innovación declarada es la combinación de difusión por bloques con autospeculación.
 
 ## Capacidades
 
 - Generación de texto y razonamiento general, heredados del modelo base Qwen3.5-4B.
-- Tool calling y function calling, según las etiquetas del repositorio.
-- Soporte para flujos agénticos y razonamiento multi-paso (etiqueta "agent").
-- Mecanismo "typed decisions", sin documentación pública disponible sobre su funcionamiento.
-- Inferencia on-device gracias a las técnicas de difusión y decodificación auto-especulativa.
-- Capacidades multilingües: no disponibles (no se especifican idiomas).
-- No se documentan capacidades de visión, audio ni modo thinking explícito.
+- Tool calling y function calling, con énfasis en la integración con herramientas externas.
+- Toma de decisiones tipadas (typed-decisions): salidas estructuradas y tipadas pensadas para ser consumidas por sistemas automatizados.
+- Soporte para flujos de agente y razonamiento multi-paso.
+- Decodificación auto-especulativa, que acelera la generación sin modelo borrador externo.
+- Generación por bloques mediante difusión, orientada a mejorar el throughput en inferencia.
+- Ejecución en dispositivo (on-device), según los tags del repositorio.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes locales en dispositivos de gama alta: el modelo puede ejecutarse en un portátil con GPU consumer gracias a sus 4,5B de parámetros y a las técnicas de difusión que reducen pasos de generación, lo que lo hace adecuado para asistentes de escritorio sin conexión.
-- Automatización de tareas con tool calling: integración en pipelines donde el modelo debe invocar APIs, consultar bases de datos o ejecutar funciones, aprovechando su entrenamiento orientado a agentes.
-- Agentes de soporte en entornos con requisitos de privacidad: al poder desplegarse on-device, permite gestionar conversaciones multi-turno sin enviar datos a la nube, útil en sectores regulados.
-- Prototipado rápido de aplicaciones agénticas: su licencia Apache 2.0 y su tamaño moderado facilitan iterar sobre flujos multi-paso en entornos de desarrollo sin grandes inversiones en infraestructura.
-- Generación de código asistida en IDE: el modelo puede integrarse en extensiones de editor para autocompletado y refactorización, con la ventaja de la baja latencia que promete la decodificación auto-especulativa.
-- Investigación en métodos de difusión para texto: Zoro-1 sirve como banco de pruebas para estudiar block-diffusion e hybrid-diffusion en un modelo de 4B con pesos abiertos, comparando su comportamiento frente a la generación autorregresiva clásica.
+- Agentes autónomos con tool calling: Zoro-1 puede gestionar bucles de razonamiento multi-paso invocando funciones externas, gracias a su ajuste específico en tool calling y decisiones tipadas, lo que reduce la necesidad de post-procesar la salida para extraer llamadas válidas.
+- Orquestación de APIs en backend: el modelo puede emitir decisiones estructuradas (por ejemplo, selección de endpoint y parámetros) en formato tipado, integrándose directamente en un servicio que valide el esquema antes de ejecutar la acción.
+- Asistentes en dispositivo: con 4,5B parámetros y pesos safetensors, es viable desplegarlo en hardware de gama alta de consumo o en estaciones de trabajo locales, útil para asistentes que no pueden enviar datos a la nube.
+- Automatización de soporte técnico con clasificación de intenciones: la salida tipada permite mapear cada consulta a una categoría y a una acción concreta, facilitando el enrutado a humanos o a otros sistemas.
+- Generación acelerada de respuestas en producción: la decodificación auto-especulativa y la difusión por bloques están pensadas para reducir latencia en servicios con alto volumen de peticiones cortas y medianas.
+- Evaluación de pipelines de agentes: al ser un modelo pequeño con capacidades de agente, sirve como componente de bajo coste para prototipar y validar arquitecturas de agentes antes de escalar a modelos mayores.
+- Extracción de datos estructurados de documentos: el enfoque en decisiones tipadas lo hace adecuado para convertir texto libre en registros con esquema fijo, siempre que se valide la salida con un parser estricto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 9 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, se recomienda al menos 12-16 GB para contexto moderado.
-- VRAM estimada en cuantización de 8 bits: alrededor de 5-6 GB de pesos, viable en GPUs de 8 GB con contexto limitado.
-- VRAM estimada en cuantización de 4 bits: alrededor de 3 GB de pesos, aunque no se documentan pesos GGUF oficiales en el repositorio.
-- GPUs recomendadas: RTX 4090 (24 GB) o RTX 4080 (16 GB) para bf16; RTX 4070 (12 GB) o superiores para cuantización de 8 bits.
-- Cabe en GPUs consumer de gama alta y media-alta; en GPUs de 8 GB requeriría cuantización.
-- Opciones de despliegue: no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI; al ser safetensors sobre base Qwen3.5, es probable que funcione con Transformers, pero no está confirmado.
-- Latencia y throughput: no disponibles; las técnicas de difusión y decodificación auto-especulativa están orientadas a mejorarlos, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 9 GB solo para pesos (4,54B parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, se recomienda al menos 16 GB para contexto moderado.
+- Cuantización a 8 bits: alrededor de 4,5-5 GB de pesos; a 4 bits: alrededor de 2,5-3 GB, aunque el repositorio no publica variantes GGUF ni cuantizadas.
+- GPU recomendadas: A100 40/80 GB, H100 para despliegues de alto throughput; RTX 4090 (24 GB) y RTX 3090 (24 GB) para inferencia en FP16 con contexto limitado.
+- ¿Cabe en GPU de consumo? Sí, en tarjetas con 16-24 GB en FP16, y en GPUs de 8-12 GB si se cuantiza, siempre que se generen los pesos cuantizados a partir de los safetensors.
+- Opciones de despliegue: vLLM, TGI y llama.cpp/Ollama son candidatos habituales para transformers densos, pero no se confirma en la información disponible compatibilidad específica con el esquema de block-diffusion; conviene verificar el código de inferencia del repositorio antes de asumir soporte en estos motores.
+- Latencia y throughput: no disponibles; la propuesta del modelo es precisamente mejorar estos valores frente a la decodificación autorregresiva estándar, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| Zoro-1 | 4,54B | No disponible | Apache 2.0 | Restringido (gated) | Block-diffusion, tool calling, on-device |
-| Qwen3.5-4B (base) | ~4B | No disponible | Según Qwen | Público | Modelo base autorregresivo estándar |
-| Qwen2.5-3B | 3,09B | 32.768 tokens | Apache 2.0 | Público | Referencia de la familia Qwen, sin difusión |
-| Llama 3.2 3B | 3,21B | 128.000 tokens | Llama 3.2 Community | Público | Alternativa densa de tamaño similar |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Zoro-1 (trillionlabs) | 4,54B | no disponible | Apache 2.0 | Finetune de Qwen3.5-4B con block-diffusion y autospeculación; acceso gated |
+| Qwen3.5-4B (base) | ~4B | no disponible | no disponible en esta ficha | Modelo base del que deriva Zoro-1; sin las técnicas de difusión ni el ajuste para agentes |
+| Alternativas de ~4B con tool calling | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar rendimiento |
 
-La comparación directa con Qwen3.5-4B es la más relevante, ya que Zoro-1 es un fine-tuning del mismo. Frente a modelos como Qwen2.5-3B o Llama 3.2 3B, Zoro-1 ofrece un tamaño ligeramente superior y técnicas de inferencia acelerada, pero carece de datos públicos de contexto, benchmarks y disponibilidad sin restricciones.
+No se dispone de información suficiente para comparar benchmarks con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: los pesos requieren aceptar condiciones en Hugging Face, lo que puede complicar despliegues automatizados o en entornos corporativos.
-- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente al modelo base ni frente a alternativas.
-- Documentación muy escasa: no se detallan datos de entrenamiento, composición del dataset, idiomas ni proceso de alineación, lo que dificulta evaluar sesgos y riesgos.
-- Riesgo de alucinación inherente a los modelos de 4B, potencialmente agravado por la falta de información sobre RLHF o DPO.
-- Las técnicas de difusión para texto son menos maduras que la generación autorregresiva; pueden producir inconsistencias en tareas de razonamiento largo o generación estructurada.
-- Licencia Apache 2.0 permite uso comercial, pero al ser un fine-tuning de Qwen3.5-4B conviene verificar las condiciones de la licencia del modelo base.
-- Adopción muy temprana (61 descargas, 4 likes): no hay evidencia de comunidad, issues resueltos ni soporte.
-- No se documentan cuantizaciones oficiales, lo que limita el despliegue en hardware de gama baja.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas en CI/CD.
+- Sin datos de benchmarks: no hay evidencia publicada en la información disponible sobre MMLU, HumanEval, GSM8K u otras métricas, por lo que no se puede validar su calidad frente al modelo base.
+- Idiomas no documentados: se desconoce qué idiomas cubre con garantías; el uso en castellano debería validarse empíricamente.
+- Riesgo de alucinación: como todo modelo de 4B ajustado para agentes, puede emitir llamadas a herramientas con parámetros plausibles pero incorrectos; es imprescindible validar la salida tipada con un esquema estricto.
+- Compatibilidad de inferencia: el esquema de block-diffusion puede no estar soportado por los motores estándar (vLLM, TGI, llama.cpp); hay que revisar el código del repositorio.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de Qwen3.5-4B conviene verificar las condiciones del modelo base y de la gated access.
+- Sin información sobre sesgos: no se han publicado evaluaciones de sesgo ni de seguridad.
+- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin confirmar la ventana real del modelo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/trillionlabs/Zoro-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.
+- Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

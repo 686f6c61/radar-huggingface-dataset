@@ -2,103 +2,108 @@
 
 ## Resumen
 
-Whisper-medium-ch-hz es un ajuste fino de `openai/whisper-medium` (763.857.920 parametros) especializado en el reconocimiento automatico del habla del dialecto de Huzhou (湖州话), una variedad del chino wu hablada en la ciudad de Huzhou, provincia de Zhejiang. Lo desarrolla BillWang7, un autor individual, y resuelve un problema concreto: los sistemas ASR estandar, incluido Whisper original, estan entrenados para mandarin y cantonés y fallan estrepitosamente con dialectos regionales. El modelo transcribe audio en dialecto de Huzhou y produce la salida en caracteres chinos simplificados (mandarin escrito), no en transcripcion fonetica.
+Whisper-medium-ch-hz es un modelo de reconocimiento automático del habla (ASR) especializado en el dialecto de Huzhou (湖州话), una variedad del chino wu que se habla en la ciudad de Huzhou, provincia de Zhejiang. Lo desarrolla BillWang7 y parte de Whisper-medium-Wu de WenetSpeech-Wu, un Whisper-medium ya entrenado con aproximadamente 8.000 horas de chino wu, que a su vez se afina sobre emisiones informativas de Huzhou y grabaciones de hablantes cotidianos. La salida se escribe en caracteres mandarín simplificado, de modo que la tarea se aproxima a una traducción de habla a texto estándar.
 
-El modelo parte de la arquitectura encoder-decoder transformer de Whisper medium, con una ventana de entrada de 30 segundos y 1.500 posiciones de contexto en el decoder. Se ha entrenado sobre 15.354 clips (unas 15 horas) del dataset propio `BillWang7/huzhou-dialect-speech`, en su mayoria audio de informativos. La relevancia actual es practica: demuestra que un ajuste fino relativamente modesto sobre un modelo base de tamano medio puede reducir el CER de un 120,7% (linea base) a un 26,8% en un dialecto de bajos recursos, un salto de calidad que hace viable la transcripcion automatica de contenido dialectal para archivo, subtitulado o preservacion linguistica.
+El problema que aborda es concreto: los sistemas ASR convencionales, Whisper incluido, están diseñados para mandarín y cantonés y fallan de forma catastrófica con dialectos regionales. El propio autor documenta que el Whisper-medium original de OpenAI obtiene un 98,8 % de CER en noticias de Huzhou y un 93,5 % en hablantes reales, es decir, prácticamente no transcribe nada útil. Esta versión v2 (noviembre de 2026) reduce esas cifras a 22,6 % y 33,2 % de CER respectivamente.
 
-El modelo tiene 34 descargas y 0 likes en Hugging Face, se distribuye en formato safetensors dentro de un repositorio de 10,5 GB y su licencia no esta declarada. Es, por tanto, un artefacto de investigacion y uso personal mas que un modelo listo para produccion a gran escala.
+La relevancia actual del modelo es doble: por un lado cubre una lengua sin forma escrita estándar y con muy pocos recursos, y por otro demuestra una receta reproducible de ajuste fino sobre un modelo base dialectal en lugar de sobre un modelo genérico. Con 763,9 millones de parámetros y licencia Apache-2.0, es desplegable en hardware modesto y utilizable comercialmente sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (Whisper medium) |
+| Arquitectura | Transformer encoder-decoder (Whisper-medium) |
 | Parametros totales | 763.857.920 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | ventana de audio de 30 s; 1.500 posiciones en el decoder (arquitectura Whisper) |
-| Tipos de cuantizacion | no disponible (repo en safetensors fp32/fp16; no se documentan GGUF ni otras) |
-| Idiomas soportados | zh (mandarin escrito como salida); entrada: dialecto de Huzhou (wu) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (libreria transformers) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | ventana de audio de 30 segundos (ventana nativa de Whisper); no disponible un contexto en tokens declarado |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
+| Idiomas soportados | zh (chino); entrada en dialecto wu de Huzhou, salida en mandarín simplificado |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Whisper medium sin modificaciones estructurales: un encoder transformer que procesa espectrogramas mel de 80 canales sobre ventanas de 30 segundos y un decoder autoregresivo que genera tokens de texto con tokens especiales de idioma y tarea. El ajuste fino conserva la tokenizacion y el vocabulario multilingue originales, y el autor indica que la salida se fuerza con `language="zh"` y `task="transcribe"`.
+El modelo es un Whisper-medium estándar: un transformer encoder-decoder con atención completa, preprocesado log-Mel de 80 canales y ventana de entrada de 30 segundos a 16 kHz. No introduce innovaciones arquitectónicas propias; el valor está en el ajuste fino. La secuencia de entrenamiento es en dos etapas: primero se parte de Whisper-medium-Wu (fichero `whisper/whisper-medium.pt` del proyecto WenetSpeech-Wu, Apache-2.0), entrenado sobre unas 8.000 horas de chino wu, y después se afina sobre el corpus de Huzhou, que combina emisiones informativas de la misma cadena y grabaciones de hablantes ordinarios, en su mayoría conversaciones telefónicas.
 
-El entrenamiento uso 15.354 clips de entrenamiento (aproximadamente 15 horas) del dataset Huzhou Dialect Speech, con 4.000 pasos, tamano de lote 64, learning rate 1e-5, 500 pasos de warmup y precision fp16. Cada 1.000 pasos se evaluo sobre el split de test y se conservo el checkpoint con menor error. El autor reconoce explicitamente que el split de test guio la seleccion de checkpoint (aunque nunca se entreno sobre el), lo que implica que la metrica reportada no es una estimacion completamente ciega del rendimiento en datos no vistos. No se documenta RLHF, DPO ni ninguna tecnica de alineacion adicional; es un ajuste fino supervisado puro sobre transcripciones.
+El conjunto de datos propio es `BillWang7/huzhou-dialect-speech`. La evaluación se hace sobre dos conjuntos retenidos: 1.705 clips de noticias de la misma cadena que el entrenamiento y 385 clips de 17 sesiones de hablantes reales que la v2 nunca vio. La decodificación usada en todos los experimentos es idéntica: `language="zh"`, `task="transcribe"` y el mecanismo de temperature fallback de Whisper con `compression_ratio_threshold=1.35` para cortar bucles de repetición. No se documenta en la información disponible el uso de RLHF, DPO ni decodificación especulativa.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (ASR) de dialecto de Huzhou, con salida en caracteres chinos simplificados (mandarin escrito).
-- Transcripcion de clips de audio de hasta 30 segundos, la ventana nativa de Whisper.
-- Procesamiento de audio a 16 kHz mono; el codigo de ejemplo incluye remuestreo desde la frecuencia original.
-- Manejo de vocabulario coloquial y toponimos locales, con errores documentados en nombres propios y palabras dialectales sin equivalente directo en mandarin.
-- No soporta tool calling ni function calling.
-- No esta disenado para razonamiento multi-paso ni uso como agente.
-- No dispone de modo thinking, vision ni audio generativo; es exclusivamente ASR.
-- Capacidad multilingue limitada al par dialecto de Huzhou (entrada) / mandarin (salida); no se documenta soporte para otros idiomas.
+- Transcripción de voz a texto en dialecto de Huzhou, con salida en caracteres mandarín simplificado.
+- Reconocimiento robusto en audio telefónico de baja calidad y en habla espontánea, no solo en locución profesional.
+- Manejo de clips de hasta 30 segundos por ventana, con la mecánica estándar de Whisper para audio más largo.
+- Mecanismo de temperature fallback para evitar repeticiones degeneradas en pasajes difíciles.
+- Compatibilidad con el pipeline `automatic-speech-recognition` de transformers y con endpoints compatibles.
+- No se documentan capacidades de tool calling, agentes, visión, audio generativo ni modo de razonamiento extendido; es un modelo puramente ASR.
 
 ## Casos de uso
 
-- Transcripcion de archivos audiovisuales locales: digitalizar grabaciones de informativos, entrevistas o programas de radio de Huzhou y obtener texto en mandarin simplificado para catalogos y buscadores, aprovechando que el modelo fue entrenado precisamente sobre ese tipo de audio.
-- Subtitulado de contenido dialectal: generar subtitulos en mandarin escrito para videos en dialecto de Huzhou, con la ventaja de que la salida ya esta en caracteres estandar y no requiere transliteracion posterior.
-- Preservacion linguistica y documentacion: transcribir corpus orales de hablantes mayores para construir archivos textuales del dialecto, aceptando el CER del 26,8% como base que un revisor humano corrige despues.
-- Investigacion en ASR de bajos recursos: servir como punto de partida o linea base para experimentos de ajuste fino en otras variedades del wu, dado que el codigo de entrenamiento y evaluacion esta publicado en notebooks.
-- Asistentes de accesibilidad para hablantes de dialecto: convertir voz en dialecto a texto mandarin para personas con dificultades auditivas o para interfaces que solo aceptan texto estandar.
-- Prototipado de aplicaciones de transcripcion en el entorno local de Huzhou: servicios municipales, turismo o medios comunitarios que necesiten procesar audio dialectal sin depender de APIs comerciales que no cubren esta variedad.
-- Evaluacion comparativa de modelos ASR: usar el split de test del dataset y el script `evaluate.ipynb` para medir CER de otros modelos frente a este en la misma tarea.
+- **Subtitulado de informativos locales de Huzhou**: el modelo alcanza 22,6 % de CER en noticias de la misma cadena que el entrenamiento, suficiente para generar subtítulos borrador que un editor revise, con un ahorro grande frente a la transcripción manual.
+- **Digitalización de archivos audiovisuales familiares**: grabaciones domésticas de personas mayores que solo hablan Huzhou pueden transcribirse a mandarín escrito, que es el caso de uso original del proyecto (la abuela del autor).
+- **Atención telefónica en servicios públicos de Zhejiang**: las 17 sesiones retenidas con audio telefónico y 33,2 % de CER indican que el modelo es viable para triaje automático de llamadas, derivando al operador humano cuando la confianza es baja.
+- **Investigación lingüística sobre el wu**: permite obtener transcripciones masivas y alineadas de corpus orales para estudios fonéticos y léxicos, algo imposible con ASR genérico que falla al 93-99 %.
+- **Preservación de patrimonio inmaterial**: entrevistas, cuentos y canciones tradicionales en Huzhou pueden transcribirse y archivarse en formato de texto buscable, con la salvedad de que el dialecto carece de ortografía estándar y la salida siempre es una interpretación en mandarín.
+- **Preetiquetado para entrenar modelos ASR dialectales**: las transcripciones del modelo sirven como pseudoetiquetas para ampliar corpus de otras variedades wu, dado que parte de un modelo base ya entrenado en 8.000 horas de wu.
+- **Accesibilidad en entornos sanitarios y residencias**: con audio telefónico y frases cotidianas como caso central, puede asistir en la comunicación con pacientes mayores que solo se expresan en dialecto.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (no verificados de forma independiente):
+Datos declarados por el autor en la model card (no verificados de forma independiente). La decodificación es idéntica en los tres modelos comparados.
 
-| Modelo | Dataset | Metrica | Valor |
-|---|---|---|---|
-| whisper-medium-ch-hz | Huzhou Dialect Speech (test, 1.705 clips) | CER | 26,8% |
-| whisper-medium-ch-hz | Huzhou Dialect Speech (test, mismos 100 clips que la linea base) | CER | 22,8% |
-| openai/whisper-medium (linea base) | Huzhou Dialect Speech (test, primeros 100 clips) | CER | 120,7% |
+CER (menor es mejor):
 
-El CER de la linea base supera el 100% porque el modelo original genera texto no relacionado con la referencia, produciendo mas caracteres erroneos que los presentes en la transcripcion correcta. El autor advierte que la seleccion de checkpoint se hizo sobre el split de test, por lo que las cifras pueden estar optimistas respecto a un conjunto de evaluacion completamente independiente.
+| Conjunto de prueba | Clips | openai/whisper-medium | v1 (2024) | v2 (este modelo) |
+|---|---:|---:|---:|---:|
+| Noticias (misma cadena que entrenamiento) | 1.705 | 98,8 % | 26,7 % | 22,6 % (IC 95 %: 21,5-23,7 %) |
+| Hablantes reales (17 sesiones retenidas) | 385 | 93,5 % | 52,9 % | 33,2 % (IC 95 %: 31,1-35,5 %) |
+
+BLEU (mayor es mejor, tokenizador `zh` de sacrebleu):
+
+| Conjunto de prueba | openai/whisper-medium | v1 (2024) | v2 (este modelo) |
+|---|---:|---:|---:|
+| Noticias | 3,6 | 63,0 | 68,6 |
+| Hablantes reales | 4,0 | 31,2 | 52,0 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: en torno a 1,5-2 GB para los pesos (763,9 M de parametros) mas el overhead de activaciones y buffers de audio; en la practica, 3-4 GB son suficientes.
-- En fp32, los pesos ocupan aproximadamente 3 GB; la VRAM total recomendada ronda los 6 GB.
-- GPU recomendadas: cualquier GPU consumer moderna sirve. Cabe holgadamente en RTX 3060 12 GB, RTX 4060, RTX 4070, RTX 4090; en el ambito profesional, A100, H100 y L4 estan sobredimensionadas para este modelo.
-- Tambien puede ejecutarse en CPU para transcripcion por lotes no interactiva, con latencia mayor.
-- Opciones de despliegue: transformers (codigo de ejemplo del autor), y al ser arquitectura Whisper estandar, es compatible con implementaciones habituales como faster-whisper, whisper.cpp o vLLM (previa conversion de pesos); el autor proporciona ademas una demo interactiva en Docker en su repositorio de GitHub.
-- Latencia y throughput: no disponibles; no se publican mediciones.
+- VRAM estimada para inferencia en fp16: en torno a 1,5-2 GB para los pesos (763,9 M de parámetros) más el overhead de activaciones y buffers de audio; cómodo por debajo de 4 GB en la práctica.
+- En fp32, los pesos ocupan aproximadamente 3 GB; sigue cabiendo en cualquier GPU consumer moderna.
+- GPU recomendadas: RTX 3060, RTX 4060, RTX 4090, A10, L4, A100 y H100; el modelo es lo bastante pequeño como para no necesitar GPU de datacenter.
+- Cabe en GPU consumer de gama baja e incluso en CPU, aunque la latencia en CPU será notablemente mayor.
+- Opciones de despliegue: transformers (receta oficial de la model card), vLLM con soporte de Whisper, TGI, y conversión a otros formatos vía herramientas de la comunidad; no se documenta explícitamente soporte de llama.cpp u Ollama en la información disponible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de audio | Idioma/dialecto | CER en Huzhou | Licencia |
-|---|---|---|---|---|---|
-| whisper-medium-ch-hz | 763,9 M | 30 s | Huzhou (wu) → mandarin | 26,8% | no disponible |
-| openai/whisper-medium | 769 M | 30 s | 99 idiomas (mandarin, cantonés) | 120,7% (100 clips) | MIT (modelo original) |
-| openai/whisper-large-v3 | 1.550 M | 30 s | 99 idiomas, mejor ASR multilingue | no evaluado en este dataset | MIT (modelo original) |
-| Modelos ASR especificos para dialectos chinos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto de audio | CER noticias Huzhou | CER hablantes reales | Licencia |
+|---|---:|---|---:|---:|---|
+| whisper-medium-ch-hz v2 | 763,9 M | 30 s | 22,6 % | 33,2 % | Apache-2.0 |
+| whisper-medium-ch-hz v1 | 763,9 M | 30 s | 26,7 % | 52,9 % | Apache-2.0 |
+| openai/whisper-medium | 769 M | 30 s | 98,8 % | 93,5 % | MIT |
+| Whisper-medium-Wu (WenetSpeech-Wu) | 763,9 M | 30 s | no disponible | no disponible | Apache-2.0 |
 
-La comparacion directa solo es posible contra el modelo base, porque el autor no publica resultados frente a otros ajustes finos de dialectos chinos. Whisper-large-v3, siendo mas grande y con mejor rendimiento general en mandarin, no ha sido evaluado en este dataset, por lo que no puede afirmarse su comportamiento en dialecto de Huzhou.
+La comparación con Whisper-medium-Wu como modelo base es cualitativa: se sabe que está entrenado con unas 8.000 horas de wu, pero la información disponible no incluye sus métricas sobre el conjunto de Huzhou, por lo que no se puede cuantificar la mejora atribuible al ajuste fino específico.
 
 ## Limitaciones y advertencias
 
-- El entrenamiento se hizo mayoritariamente sobre audio de informativos; la precision cae en conversacion casual, hablantes mayores con acento marcado y grabaciones con ruido.
-- Errores frecuentes en nombres propios, toponimos y palabras dialectales sin equivalente directo en mandarin.
-- La salida es mandarin escrito, no una transcripcion fonetica del dialecto; no sirve para estudios foneticos del wu.
-- El split de test se uso para seleccionar checkpoint, por lo que el CER reportado puede ser optimista frente a datos realmente no vistos.
-- La licencia no esta declarada: no hay autorizacion explicita para uso comercial y conviene contactar con el autor antes de integrarlo en un producto.
-- El modelo base Whisper tiene sesgos conocidos hacia determinados acentos y registros; el ajuste fino no los corrige y puede reforzar el sesgo hacia el estilo de los informativos.
-- Riesgo de alucinacion: Whisper puede generar texto plausible no presente en el audio, especialmente en silencios o audio degradado; en un modelo con CER del 26,8% este riesgo es considerable y exige revision humana en flujos criticos.
-- Ventana de 30 segundos: los audios mas largos requieren segmentacion manual o mediante pipeline externo.
-- Solo un idioma de entrada documentado (dialecto de Huzhou); no se garantiza comportamiento en otras variedades del wu ni en mandarin estandar.
-- Repositorio de 10,5 GB y solo 34 descargas: ecosistema minimo, sin validacion independiente de la comunidad.
+- El CER mide caracteres cambiados, no frases incorrectas. Como el dialecto de Huzhou no tiene forma escrita estándar, una paráfrasis correcta en mandarín cuenta como error: el ejemplo documentado 他们未必等得了半年 → 他们不一定等得了半年 puntúa un 33 % de CER pese a conservar el significado.
+- Las frases cortas se penalizan más que las largas en la métrica CER.
+- No se ha medido la tasa de preservación semántica completa; solo hay CER y BLEU.
+- El modelo solo cubre una variedad dialectal concreta; no debe esperarse buen rendimiento en otras variedades wu, en mandarín estándar ni en cantonés.
+- Riesgo de bucles de repetición en pasajes difíciles, mitigado con `compression_ratio_threshold=1.35` y temperature fallback; sin esa configuración la calidad puede degradarse.
+- Ventana de 30 segundos: los audios largos requieren segmentación previa.
+- Sesgos: el corpus de entrenamiento combina noticias y grabaciones de un número limitado de hablantes; no se documenta la distribución demográfica ni posibles sesgos de edad, género o procedencia dentro de Huzhou.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base WenetSpeech-Wu y del corpus de audio original.
+- Solo 210 descargas y 0 likes en el momento de la consulta: ecosistema pequeño, poca validación externa y métricas no verificadas de forma independiente.
+- El repositorio ocupa 13,5 GB, lo que incluye presumiblemente las dos revisiones (v1 y v2); conviene descargar solo la revisión necesaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BillWang7/whisper-medium-ch-hz
-- Modelo base: https://huggingface.co/openai/whisper-medium
-- Dataset: https://huggingface.co/datasets/BillWang7/huzhou-dialect-speech
-- Repositorio con demo Docker: https://github.com/BillWang7/whisper-huzhou-asr
-- Notebook de entrenamiento: `training.ipynb` (incluido en el repositorio del modelo)
-- Notebook de evaluacion: `evaluate.ipynb` (incluido en el repositorio del modelo)
-- Resultados por clip: `evaluation.csv` (incluido en el repositorio del modelo)
+- Dataset de Huzhou: https://huggingface.co/datasets/BillWang7/huzhou-dialect-speech
+- Demo web: https://huzhou-asr.com
+- Repositorio del proyecto y demo: https://github.com/BillWang7/whisper-huzhou-asr
+- Informe técnico: https://github.com/BillWang7/whisper-huzhou-asr/blob/main/docs/technical-report.md
+- Resultados de experimentos: https://github.com/BillWang7/whisper-huzhou-asr/blob/main/training/results.md
+- Modelo base WenetSpeech-Wu: https://huggingface.co/ASLP-lab/WenetSpeech-Wu-Speech-Understanding
+- Paper referenciado en los tags: arxiv:2601.11027 (no disponible su contenido en la información proporcionada)

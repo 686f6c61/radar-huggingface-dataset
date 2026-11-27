@@ -5,7 +5,7 @@
   "author": "DreamMachines",
   "url": "https://huggingface.co/DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256",
   "created_at": "2026-09-18T02:22:15.000Z",
-  "updated_at": "2026-09-18T13:22:21.000Z",
+  "updated_at": "2026-11-25T17:15:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 3353433872,
   "parameters_human": "3.35B",

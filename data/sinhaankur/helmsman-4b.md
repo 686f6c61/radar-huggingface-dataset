@@ -1,97 +1,77 @@
 # sinhaankur/helmsman-4b
 
 ## Resumen
+helmsman-4b es un ajuste fino por destilación del modelo Qwen/Qwen3-4B-Instruct-2507, desarrollado por el usuario independiente sinhaankur. Se trata de un modelo personal de 4.022 millones de parámetros cuyo objetivo es responder de forma fundamentada sobre el corpus propio de su autor: su escritura, casos de estudio, el motor de universo/cielo que construyó, sus estándares de diseño y patrones de código. No aspira a ser un asistente generalista, sino un especialista en su dominio que corre en local.
 
-helmsman-4b es un modelo de lenguaje de 4.022 millones de parámetros derivado de Qwen/Qwen3-4B-Instruct-2507 mediante un proceso de destilación con QLoRA y posterior fusión de los pesos del adaptador en el modelo base. Lo desarrolla el usuario sinhaankur y está concebido como un especialista en responder preguntas ancladas a un conjunto documental reducido, en concreto el demonio de inferencia local Unhosted. No es un modelo de propósito general: su valor está en el despliegue en dispositivo (on-device) con un tamaño manejable y una ventana de contexto heredada de 262.000 tokens.
+La versión v2 (noviembre de 2026) se re-destiló sobre 420 pares generados a partir del contenido real del autor, sustituyendo el enfoque anterior de preguntas y respuestas sobre documentos. El entrenamiento se realizó con QLoRA (r=16, α=32, 3 épocas) sobre Apple Silicon y el adaptador se fusionó en los pesos base, por lo que el repositorio distribuye el modelo completo, no un adaptador.
 
-El modelo se entrenó con 305 pares sintéticos (prompt, respuesta) generados por un profesor Claude de clase Opus, con una receta QLoRA de rango 16 y alpha 32 sobre proyecciones de atención y MLP, seguida de fusión. Se distribuye en safetensors fp16 (unos 8 GB) y en un GGUF Q4_K_M de aproximadamente 2,5 GB, lo que permite ejecutarlo en un portátil con llama.cpp u Ollama.
+Es relevante como ejemplo de flujo de trabajo de destilación personal: un único desarrollador genera datos sintéticos con un profesor tipo Claude, entrena en hardware de consumo y publica el resultado en safetensors y GGUF. Su utilidad práctica queda acotada al dominio para el que fue entrenado, y el propio autor advierte que en conversación abierta no supera al modelo base.
 
-Es relevante ahora porque ejemplifica un patrón de especialización barata y reproducible (entrenamiento de unos 30 minutos en Apple Silicon) sobre un modelo base moderno, con licencia AGPL-3.0-or-later heredada. La contrapartida es un alcance muy acotado: fuera de su dominio documental no supera al modelo base y no fue entrenado para tool calling.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3, modelo base Qwen3-4B-Instruct-2507) |
-| Parámetros totales | 4.022.468.096 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 262.000 tokens (heredada del modelo base) |
-| Tipos de cuantización | fp16 (safetensors), Q4_K_M (GGUF); base entrenada en 4-bit NF4 durante QLoRA |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-4B-Instruct-2507) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens (heredada del modelo base) |
+| Tipos de cuantizacion | fp16 (safetensors) y Q4_K_M (GGUF); otras cuantizaciones no disponibles |
+| Idiomas soportados | inglés (en) |
 | Licencia | AGPL-3.0-or-later |
-| Formato de pesos | safetensors (fp16), GGUF (Q4_K_M) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only denso de 4.000 millones de parámetros con 262.144 tokens de contexto y modo instruct sin bloque de razonamiento. Sobre esa base se aplicó un ajuste fino supervisado con QLoRA: base cuantizada en 4 bits NF4, dtype de cómputo bf16 y doble cuantización, con LoRA de rango 16 y α=32 aplicado a todas las proyecciones de atención y MLP. Se entrenaron 3 épocas con tasa de aprendizaje 2e-4, batch efectivo 16, scheduler coseno y 5 % de warmup, con semilla 42.
 
-El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only de 4B parámetros en su variante Instruct no-thinking, con una ventana de contexto de 262.000 tokens. Sobre esa base se aplicó un ajuste supervisado (SFT) con QLoRA: el modelo base se cargó en 4-bit NF4 con dtype de cómputo bf16 y doble cuantización, y se entrenaron adaptadores LoRA de rango 16 y alpha 32 sobre todas las proyecciones de atención y MLP. El entrenamiento usó 3 épocas, tasa de aprendizaje 2e-4, batch efectivo de 16, schedule coseno y 5 % de warmup, con semilla 42 para reproducibilidad. Posteriormente el adaptador se fusionó en los pesos base y se exportó a GGUF.
-
-Los datos de entrenamiento consisten en 305 pares (prompt, respuesta) sintéticos generados con un profesor Claude de clase Opus, una completion de chat por documento fuente del proyecto Unhosted. No se aplicó RLHF ni DPO. La receta de generación de datos (`gen_data.py`) y entrenamiento (`train.py`) reside en el repositorio del proyecto Unhosted, aunque el `train.jsonl` crudo no se distribuye en el repositorio del modelo. No se documentan innovaciones arquitectónicas propias más allá de la fusión del adaptador; el modelo conserva la plantilla de chat de Qwen3-Instruct no-thinking, lo que obliga a ajustar la plantilla en Ollama para evitar respuestas vacías.
+Los datos de entrenamiento son sintéticos: la v2 emplea 420 pares (prompt, respuesta) generados contra un profesor de la clase Claude Opus a partir del contenido propio del autor, mientras que la v1 usó 305 pares sobre un conjunto de documentos. El entrenamiento se ejecutó en Apple Silicon en bf16, con aproximadamente 30 minutos por ejecución. Tras el SFT, el adaptador LoRA se fusionó en los pesos base y se exportó a GGUF. No se documenta entrenamiento con RLHF ni DPO.
 
 ## Capacidades
-
-- Generación de texto conversacional en inglés, con respuestas ancladas al conjunto documental de entrenamiento.
-- Respuesta a preguntas fundamentadas (grounded QA) sobre los documentos del dominio Unhosted.
-- Resumen y síntesis de documentos del corpus de entrenamiento.
-- Ejecución local en dispositivo con cuantización Q4_K_M (aproximadamente 2,5 GB).
-- Compatibilidad con transformers, llama.cpp, Ollama y text-generation-inference.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Tool calling / function calling: no entrenado para ello.
-- Modo thinking: no; es una variante Instruct no-thinking.
-- Visión y audio: no disponibles.
+- Generación de texto conversacional fundamentada en el corpus de entrenamiento del autor.
+- Respuestas sobre diseño, patrones de código, escritura y trabajo creativo del dominio del autor.
+- Ejecución en local y en dispositivos de consumo gracias a su tamaño y a la cuantización Q4_K_M.
+- Plantilla de chat compatible con transformers, llama.cpp y Ollama (con template específico para el modo instruct).
+- Sin soporte de tool calling ni function calling: el autor indica explícitamente que no fue entrenado para ello.
+- Sin capacidades multimodales, de audio ni de visión.
+- Sin modo thinking: es un modelo instruct no-thinking, y usar la plantilla por defecto de Qwen3 en Ollama produce respuestas vacías.
 
 ## Casos de uso
-
-- Asistente local de documentación del demonio Unhosted: el modelo responde preguntas sobre los documentos del proyecto con los que fue destilado, ejecutándose en un portátil en 4-bit sin conexión a red.
-- Resumen de documentos técnicos del corpus: dada su ventana de 262K tokens heredada, puede ingerir documentos largos y sintetizar sus puntos clave, aunque su calidad óptima se limita al dominio entrenado.
-- Demostración de destilación reproducible: sirve como ejemplo práctico de pipeline QLoRA + fusión + exportación GGUF para equipos que quieran especializar un modelo base pequeño con pocos datos sintéticos.
-- Prototipado de asistentes on-device: al caber en un portátil con Q4_K_M, permite validar flujos de chat local antes de invertir en modelos mayores.
-- Evaluación de técnicas de cuantización: el par fp16/Q4_K_M permite comparar degradación de calidad en un modelo de 4B con contexto largo.
-- Base para experimentos de ajuste adicional: al ser un modelo fusionado y autónomo, se puede reajustar con nuevos datos sin gestionar adaptadores separados.
-- Filtrado y respuesta en pipelines de documentación interna: integrable vía llama.cpp u Ollama en scripts que consulten un corpus fijo.
+- Consulta sobre el corpus personal del autor: el modelo responde preguntas sobre su escritura, casos de estudio y estándares de diseño porque fue destilado específicamente sobre ese material.
+- Asistente de documentación técnica interna: puede resumir y responder sobre un conjunto documental cerrado, que es el escenario para el que se diseñó la v1.
+- Inferencia local en portátil: con el GGUF Q4_K_M (~2,5 GB) se puede ejecutar en Ollama o llama.cpp en un equipo sin GPU dedicada.
+- Prototipado de pipelines de destilación: sirve como referencia reproducible para quien quiera generar datos sintéticos con un profesor y entrenar un especialista con QLoRA en hardware de consumo.
+- Base para experimentos de ajuste personal: al estar fusionado y publicado en safetensors, se puede partir de él para nuevos ciclos de re-destilación, que es precisamente el flujo que sigue el autor.
+- Demostración de despliegue en local con plantillas de chat corregidas: el repositorio incluye el template y los parámetros necesarios para evitar las respuestas vacías en Ollama, útil como ejemplo de integración.
 
 ## Benchmarks y rendimiento
-
-| Métrica | Este modelo |
-|---|---|
-| LLM-as-judge (escala 0-46) | 32,5 / 46 |
-| Normalizado | 71 % |
-
-El conjunto de evaluación son 46 prompts reservados generados con una semilla distinta a la de entrenamiento, de modo que el entrenador nunca los vio. La evaluación mide únicamente QA fundamentado en distribución; no hay resultados publicados de MMLU, HumanEval, GSM8K ni comparativas con otros modelos.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta una evaluación con juez LLM sobre un split reservado: en una prueba A/B factual estrecha, la v2 obtuvo ~2,9/5 frente a ~3,9/5 de la v1. El propio autor señala que las preguntas de la v1 se solapan con su entrenamiento y que la v2 sacrifica algo de recall factual a cambio de mayor cobertura de su dominio.
 
 ## Requisitos de hardware
-
-- VRAM estimada en fp16: aproximadamente 8 GB para los pesos, más overhead de activaciones y KV cache; se recomienda 12-16 GB para contexto moderado.
-- VRAM estimada en Q4_K_M: aproximadamente 2,5-3 GB, apta para GPU de consumo y para CPU.
-- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para fp16 con contexto largo; cualquier GPU con 8 GB o más para Q4_K_M.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y similares con Q4_K_M; en fp16 requiere al menos 8-12 GB.
-- Opciones de despliegue: transformers (fp16), llama.cpp (`llama-cli -hf`), Ollama (con plantilla personalizada para evitar respuestas vacías), text-generation-inference.
-- Latencia y throughput: no disponibles; el autor solo indica que el entrenamiento tardó unos 30 minutos por ejecución en Apple Silicon en bf16.
+- VRAM estimada: ~8 GB en fp16 (pesos de ~8 GB según la model card); ~2,5 GB en Q4_K_M.
+- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para fp16; para 4 bits basta con una GPU de gama media o incluso CPU.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en fp16 y en equipos modestos con la cuantización Q4_K_M.
+- Opciones de despliegue: transformers (fp16), llama.cpp, Ollama (con el template incluido en el repositorio) y text-generation-inference (etiqueta endpoints_compatible).
+- Latencia y throughput: no disponibles; el autor solo indica que el entrenamiento tarda ~30 minutos por ejecución en Apple Silicon.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| helmsman-4b | 4,02B | 262K | AGPL-3.0-or-later | Especialista destilado en dominio Unhosted | Hugging Face (safetensors + GGUF) |
-| Qwen3-4B-Instruct-2507 | 4B | 262K | según modelo base | Propósito general, Instruct no-thinking | Hugging Face |
-| Modelos de 4B ajustados con QLoRA (genéricos) | ~4B | variable | variable | Especialización ligera | Hugging Face |
-
-La comparación directa con alternativas concretas no está disponible en la información proporcionada; el único punto de referencia documentado es el modelo base, respecto al cual el autor afirma que helmsman-4b no mejora en chat abierto no relacionado con los documentos de entrenamiento.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| helmsman-4b | 4,02 B | 262.144 | AGPL-3.0 | Especialista destilado sobre corpus personal; sin tool calling |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4 B | 262.144 | no disponible en la información | Modelo generalista; el autor indica que helmsman-4b no lo supera en chat abierto |
+| Alternativas de 4B para uso local | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
-
-- Fuera de su dominio documental, el modelo no supera al base Qwen3-4B-Instruct-2507 en chat abierto.
-- No fue entrenado para tool calling ni function calling; su uso en agentes requiere otro modelo.
-- Es una destilación: los modos de fallo del profesor Claude y los defectos de sus salidas se transmiten al alumno.
-- No apto para aplicaciones críticas de seguridad.
-- Entrenado únicamente en inglés; el soporte multilingüe es limitado.
-- Riesgo de alucinación en preguntas fuera del corpus de entrenamiento.
-- Licencia AGPL-3.0-or-later: impone obligaciones de copyleft para uso en red y comercial; revisar compatibilidad antes de producción.
-- La plantilla de chat de Ollama debe ajustarse manualmente (o usar los ficheros `template` y `params` del repo) para evitar respuestas vacías en la variante Instruct.
-- El conjunto de evaluación es pequeño (46 prompts) y solo mide QA en distribución; no hay benchmarks estándar publicados.
-- El `train.jsonl` crudo no se distribuye, lo que limita la reproducibilidad completa del dataset.
+- Especialización estrecha: fuera del corpus de entrenamiento no es mejor que el modelo base, según el propio autor.
+- Sin soporte de tool calling ni function calling, lo que lo descarta para pipelines de agentes.
+- No apto para usos críticos de seguridad: los modos de fallo del profesor de destilación se propagan al modelo.
+- Riesgo de alucinación en preguntas factuales; la evaluación A/B del autor muestra un descenso de ~3,9/5 a ~2,9/5 en la v2.
+- Solo inglés: no se declara soporte de castellano ni de otros idiomas.
+- Licencia AGPL-3.0-or-later, que impone obligaciones de copyleft para uso en red y puede ser restrictiva en productos comerciales.
+- Trampa de plantilla en Ollama: usar la plantilla por defecto de Qwen3 produce respuestas vacías; es obligatorio emplear el template incluido en el repositorio.
+- Corpus de entrenamiento muy pequeño (305 pares en v1, 420 en v2), lo que limita la generalización.
+- El autor advierte que la model card anterior describía erróneamente el repositorio como adaptador LoRA; el artefacto publicado es el modelo fusionado.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/sinhaankur/helmsman-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Proyecto Unhosted (receta de destilación): https://github.com/unhosted-ai

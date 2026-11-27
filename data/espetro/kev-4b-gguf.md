@@ -2,106 +2,89 @@
 
 ## Resumen
 
-Kev 4B es un modelo de decisión de tipo "System One": recibe un documento de estado y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad calibrada por pregunta en un único forward pass, sin generar texto. Está construido sobre el backbone Qwen/Qwen3.5-4B-Base (revisión 1001bb4d) al que se le añade un adaptador LoRA (r=16, 33,8 millones de parámetros entrenables) y una cabeza pointer, según la documentación del proyecto original jaredpalmer/kev. El repositorio que nos ocupa, espetro/kev-4b-gguf, es un empaquetado GGUF en cuantización q8_0 que incluye la cabeza pointer y la temperatura de calibración ya fundidas en el archivo (tensores `dec.head_*` y metadatos `kev.*`).
+Kev 4B v1.0 es un modelo de decisión de estilo "System One" empaquetado en formato GGUF. No es un modelo generativo convencional: parte del backbone Qwen3.5-4B y le añade una cabeza pointer entrenada que devuelve probabilidades calibradas para preguntas tipadas (elección, sí/no, etc.) en lugar de generar texto libre. Lo desarrolla el usuario espetro a partir del trabajo original de jaredpalmer (Kev v1.0), fusionando el adaptador LoRA y el fichero `head.pt` sobre Qwen/Qwen3.5-4B-Base.
 
-El modelo resuelve un problema muy concreto: sustituir la generación de texto libre por decisiones estructuradas y calibradas, algo útil cuando se necesita enrutar, clasificar o etiquetar sin depender de un parser posterior. Implementa el contrato público `/v1/systemone` de TypeSafe y se sirve mediante un fork de llama.cpp mantenido por el autor (rama `kev`), que expone los endpoints `/v1/systemone` y `/studio` de forma automática.
+La relevancia actual del modelo reside en su enfoque: en lugar de pedir a un LLM que "responda" una clasificación o un enrutamiento, Kev expone un endpoint TypeSafe (`/v1/systemone`) que devuelve probabilidades calibradas por criterio. Esto lo hace adecuado para pipelines de decisión deterministas donde la latencia y la interpretabilidad importan más que la generación de texto.
 
-Su relevancia actual es doble: por un lado, propone un patrón de "modelo de decisión" alternativo al chat convencional; por otro, el empaquetado GGUF permite ejecutarlo en llama.cpp estándar (como un Qwen3.5 normal, ignorando las cabezas) e incluso en el navegador mediante una build WASM. El recuento real de parámetros en safetensors es de 4.207.062.528 (unos 4,2 mil millones), coherente con el nombre "4B"; conviene señalar que el cuerpo de la model card menciona "Kev-0.8B", una inconsistencia de nomenclatura del propio autor.
+El paquete GGUF incluye la cabeza pointer y la temperatura de calibración (2.4061) horneadas como tensores `dec.head_*` y metadatos `kev.*`, de modo que el modelo funciona con el fork de llama.cpp de espetro, aunque sigue cargándose en llama.cpp estándar como un Qwen3.5 normal (ignorando la cabeza).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen/Qwen3.5-4B-Base, revision 1001bb4d) con adaptador LoRA (r=16) y cabeza pointer para preguntas tipadas; empaquetado GGUF con tensores `dec.head_*` y metadatos `kev.*` |
-| Parametros totales | 4.207.062.528 (aproximadamente 4,2 mil millones) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | q8_0 (única cuantización de este repositorio; el autor desaconseja q4 porque degrada la calibración) |
-| Idiomas soportados | No disponible en este repositorio (una variante comunitaria, DreamBlooms/kev-4b-GGUF, declara inglés) |
-| Licencia | Apache-2.0 (pesos y cabeza); el bundle de origen es 0BSD y el runtime MIT |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tarea declarada | Clasificación de texto / modelo de decisión (según etiquetas del ecosistema y la variante DreamBlooms) |
-| Tamano del repositorio | 4,5 GB |
+| Arquitectura | Transformer decoder (backbone Qwen3.5-4B) + cabeza pointer entrenada para decisión |
+| Parametros totales | 4.207.062.528 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 y F16 (incluidos en el repo); otras cuantizaciones no disponibles |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base de origen) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de un transformer decoder-only denso (Qwen3.5-4B-Base) y le superpone dos componentes específicos: un adaptador LoRA de rango 16, con 33,8 millones de parámetros entrenables, y una cabeza pointer que transforma el estado oculto en probabilidades sobre opciones tipadas. La documentación del proyecto original describe el flujo como "un documento (el estado) y un conjunto de preguntas tipadas a la entrada, una distribución de probabilidad por pregunta a la salida, en un solo forward pass", explícitamente sin generación de texto. El GGUF de este repositorio añade, además, la temperatura de calibración empaquetada como metadato, de modo que el runtime no necesita recalibrar.
+El modelo se construye sobre Qwen/Qwen3.5-4B-Base (commit `1001bb4d`) al que se le aplica un adaptador LoRA y un `head.pt` procedentes de jaredpalmer/kev-4b (commit `6cfce5c`). La fusión se realiza con el pipeline `tools/kev` del fork espetro/llama.cpp: `kev_v10_merge.py` para fusionar el adaptador, `convert_hf_to_gguf --no-mtp` para la conversión, `kev_head.py` para integrar la cabeza y `kev_pack.py` para el empaquetado final.
 
-En cuanto a los datos de entrenamiento, la única referencia disponible son los 10 datasets que lista la variante comunitaria DreamBlooms/kev-4b-GGUF; no se especifica el número de tokens, la composición del corpus ni si hubo fases de RLHF o DPO. Tampoco se documentan detalles del proceso de calibración más allá de que la temperatura va fundida en el archivo.
-
-Como innovaciones destacables: el patrón de "modelo de decisión" con tipos de pregunta (`choice`, con instrucciones y criterios de clasificación), el contrato TypeSafe `/v1/systemone`, la integración con las herramientas `kev_pack.py` y `llama-decide`, y la posibilidad de ejecución en navegador mediante una build WASM de llama.cpp que carga el archivo de forma diferida.
+La innovación técnica clave es la cabeza pointer: en lugar de generar tokens, el modelo produce probabilidades calibradas sobre un conjunto de opciones tipadas definidas en la petición. La temperatura de calibración (2.4061) queda fijada en los metadatos `kev.*`. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Decisión y clasificación tipada: dado un estado textual y un conjunto de preguntas con tipo (`choice`) e instrucciones, devuelve una distribución de probabilidad por pregunta en un solo forward pass.
-- Salida calibrada: la temperatura de calibración está fundida en el GGUF, por lo que las probabilidades se emiten ya ajustadas sin post-proceso.
-- Sin generación de texto: por diseño, el contrato `systemone` no produce texto libre, sino probabilidades.
-- Compatibilidad con llama.cpp estándar: el archivo carga como un Qwen3.5 ordinario; en ese caso los tensores `dec.head_*` y los metadatos `kev.*` se ignoran y el modelo se comporta como un modelo de lenguaje convencional.
-- Servido mediante fork: con el fork `espetro/llama.cpp` (rama `kev`), `llama-server` expone `/v1/systemone` y `/studio` de forma automática, y existe la herramienta de línea de comandos `llama-decide`.
-- Ejecución en navegador: se puede cargar en una build WASM de llama.cpp (según el autor, unos 1 GB en vivo, con q8_0 como única cuantización recomendada).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Visión, audio o modo "thinking": no disponible.
+- Decisión tipada: devuelve probabilidades calibradas para preguntas de tipo `choice` (y presumiblemente otros tipos) con criterios definidos por el usuario.
+- Enrutamiento y clasificación: asignación de casos a departamentos o categorías mediante el endpoint `/v1/systemone`.
+- Interfaz TypeSafe: expone `/v1/systemone` y `/studio` a través del servidor de llama.cpp modificado.
+- Compatibilidad con llama.cpp estándar: los ficheros cargan como un Qwen3.5 normal, ignorando metadatos y cabeza.
+- Modo CLI: herramienta `llama-decide` para ejecutar decisiones en lote desde JSON.
+- Demo en navegador: cuantización 0.8B ejecutable en llama.cpp WASM.
+- Generación de texto: no es la función principal; el modelo está orientado a decisión, no a generación libre.
 
 ## Casos de uso
 
-- Enrutado de tickets de atención al cliente: el propio autor propone el ejemplo de un pedido que llega tarde y con la talla equivocada, con una pregunta `choice` que decide entre "returns" (cambios y reembolsos) y "shipping" (retrasos y paquetes perdidos). Es adecuado porque devuelve probabilidades calibradas en lugar de una cadena que haya que parsear.
-- Triaje y clasificación de correo entrante: alimentar el cuerpo del mensaje como estado y definir preguntas tipadas (departamento, urgencia, intención) para asignar colas de trabajo sin intervención humana en el primer nivel.
-- Moderación de contenido y etiquetado: al emitir distribuciones de probabilidad, permite fijar umbrales explícitos y derivar a revisión humana los casos con baja confianza.
-- Enrutador de agentes o de modelos: usar la salida calibrada como señal de decisión para escoger qué herramienta, submodelo o flujo ejecutar a continuación, aprovechando que la inferencia es un único forward pass.
-- Clasificación de documentos en back-office: facturas, contratos o formularios donde se necesita asignar categorías múltiples con criterios definidos en lenguaje natural en el campo `instructions`, sin entrenar un clasificador específico por tarea.
-- Demos y prototipos sin backend: la carga vía WASM en el navegador permite desplegar una interfaz de decisión interactiva (por ejemplo, un asistente de clasificación interno) sin infraestructura de servidor.
-- Filtrado previo en pipelines de datos: descartar o priorizar muestras en un conjunto de datos según probabilidades de pertenencia a categorías definidas ad hoc.
-- Investigación sobre calibración: al llevar la temperatura fundida y ser un modelo pequeño, sirve como banco de pruebas para estudiar calibración en tareas de elección múltiple frente a la generación de texto.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del caso y un mapa de criterios (por ejemplo, `returns` frente a `shipping`) y devuelve la probabilidad de cada categoría, permitiendo umbrales de confianza para escalado humano.
+- Triaje de incidencias en producción: clasificación determinista de alertas o logs en categorías predefinidas con probabilidades calibradas, integrable en pipelines de observabilidad.
+- Moderación de contenido con criterios tipados: definir categorías de riesgo y obtener probabilidades por categoría en lugar de texto libre, facilitando la auditoría.
+- Clasificación de correo entrante: asignación de mensajes a bandejas o equipos mediante preguntas de tipo `choice` con instrucciones y criterios explícitos.
+- Decisión en agentes multi-paso: usar la cabeza como módulo de selección de siguiente acción (tool o rama) dentro de un agente, aprovechando la calibración para decidir cuándo delegar.
+- Validación de formularios o datos estructurados: comprobar si un campo cumple criterios tipados y devolver probabilidad, útil en pipelines de calidad de datos.
+- Despliegue local en entornos con restricciones: al ser GGUF Q8_0 de 4,3 GB, puede ejecutarse en estaciones de trabajo sin GPU dedicada mediante llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La variante comunitaria DreamBlooms/kev-4b-GGUF incluye una sección de "Eval Results (legacy)" en su ficha, pero no se aportan cifras concretas (MMLU, HumanEval, GSM8K ni métricas de calibración como ECE) en la información consultada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos: el repositorio ocupa 4,5 GB, coherente con una cuantización q8_0 de un modelo de 4,2 mil millones de parámetros.
-- VRAM estimada para inferencia: en torno a 5-6 GB con contexto moderado, sumando pesos, caché KV y overhead del runtime. La cifra exacta depende del contexto configurado, que no está documentado.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4080/4090, A100 o H100 para despliegues con concurrencia. Cualquier GPU con 8 GB o más debería bastar para una sola sesión en q8_0.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más de VRAM. También es viable en CPU con memoria unificada suficiente (Apple Silicon, por ejemplo).
-- Navegador: el autor indica que la build WASM necesita aproximadamente 1 GB en vivo, una cifra que no cuadra con el tamaño del archivo en disco y que conviene verificar en la práctica; solo recomienda q8_0 para este escenario.
-- Opciones de despliegue: llama.cpp (con el fork `espetro/llama.cpp`, rama `kev`, mediante `llama-server` y `llama-decide`), llama.cpp stock para uso como modelo de texto, y compilación WASM para navegador. Compatibilidad con vLLM, TGI u Ollama: no disponible.
-- Latencia y throughput: no disponible. Al tratarse de un único forward pass sin decodificación autorregresiva, la latencia debería ser sustancialmente menor que la de un modelo generativo del mismo tamaño, pero no se aportan mediciones.
+- VRAM estimada: aproximadamente 4,3 GB para Q8_0 y 8,4 GB para F16 (tamaño de fichero; el consumo real en inferencia puede ser algo superior por el contexto y buffers).
+- GPU recomendadas: no se especifican; por tamaño, cualquier GPU con al menos 6-8 GB de VRAM puede alojar Q8_0 (RTX 3060, RTX 4060, RTX 4090, A100, H100).
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más para Q8_0; F16 requiere 12 GB o más.
+- Opciones de despliegue: llama.cpp (fork espetro/llama.cpp con soporte `kev`), `llama-server`, `llama-decide`; llama.cpp estándar carga el modelo como Qwen3.5 sin cabeza. vLLM, TGI u Ollama no están documentados para este paquete.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| espetro/kev-4b-gguf | 4,2 mil millones | No disponible | Decisión tipada (GGUF empaquetado con cabeza y calibración) | Apache-2.0 | Hugging Face, GGUF |
-| taigrr/kev-4b-gguf | Mismo backbone (4,2 mil millones) | No disponible | Bundle de origen (gojev) con cabeza | Bundle 0BSD; pesos Apache-2.0 | Hugging Face, GGUF |
-| DreamBlooms/kev-4b-GGUF | Mismo backbone | No disponible | Clasificación de texto (variante comunitaria, declara inglés y 10 datasets) | Apache-2.0 | Hugging Face, GGUF |
-| Qwen/Qwen3.5-4B-Base | No disponible en la información | No disponible | Modelo de lenguaje base | No disponible en la información | Hugging Face |
+| Kev 4B v1.0 (este) | 4,2 B | no disponible | Decisión tipada con cabeza pointer | Apache-2.0 | GGUF en HF |
+| Qwen3.5-4B-Base | ~4 B | no disponible | Generación de texto | Apache-2.0 | HF |
+| jaredpalmer/kev-4b | ~4 B | no disponible | Decisión (LoRA + head.pt, safetensors) | Apache-2.0 | HF |
 
-No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparación se limita a procedencia, formato y licencia.
+La comparativa con modelos de clasificación dedicados (por ejemplo, encoders tipo DeBERTa) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No genera texto por diseño en el contrato `systemone`: usarlo como modelo de decisión requiere el fork de llama.cpp. En llama.cpp estándar se comporta como un Qwen3.5 normal y las cabezas se ignoran silenciosamente, lo que puede llevar a confusión si se espera el comportamiento de decisión.
-- Inconsistencia documental: la model card titula "Kev 4B" pero el cuerpo menciona "Kev-0.8B"; el recuento real de parámetros (4,2 mil millones) respalda la lectura de 4B. Conviene verificar cualquier afirmación de la ficha contra el archivo.
-- Cuantización sensible: el autor advierte que q4 desvía lo suficiente como para romper la calibración, así que en producción conviene quedarse en q8_0.
-- Idiomas no declarados en este repositorio. Si el caso de uso no es en inglés, hay que validar el comportamiento antes de desplegar.
-- Longitud de contexto no documentada; no se puede garantizar el manejo de documentos largos.
-- Riesgo de mala calibración fuera de dominio: al no publicarse métricas de calibración ni la composición del conjunto de entrenamiento, no hay forma de saber si las probabilidades son fiables en dominios alejados de los datos de entrenamiento.
-- Sesgos: no disponible. No se documenta ningún análisis de sesgo.
-- Licencias múltiples: los pesos y la cabeza son Apache-2.0, el bundle de origen es 0BSD y el runtime del fork es MIT. Apache-2.0 permite uso comercial, pero conviene revisar la cadena completa de componentes si se redistribuye.
-- Madurez: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, sin discusiones ni validación comunitaria, por lo que no hay evidencia externa de robustez en producción.
-- Fechas del repositorio: creado y actualizado el 23 de septiembre de 2026 según los metadatos de Hugging Face.
+- El modelo está diseñado para decisión tipada, no para generación de texto libre; usarlo como LLM conversacional no es su propósito.
+- La cabeza pointer y la calibración solo se aprovechan con el fork espetro/llama.cpp; en llama.cpp estándar se ignoran y el modelo se comporta como Qwen3.5 base.
+- No se dispone de información sobre sesgos, idiomas soportados ni evaluación de alucinación.
+- La temperatura de calibración está fijada (2.4061); modificarla puede degradar la calibración de probabilidades.
+- Solo se ofrecen cuantizaciones Q8_0 y F16; no hay Q4 ni otras variantes en este repo.
+- El repo tiene pocas descargas (197) y un solo like, lo que sugiere poca validación comunitaria.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las licencias del backbone y del trabajo original (ambas Apache-2.0 según la model card).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/espetro/kev-4b-gguf
-- Fork de llama.cpp con soporte Kev: https://github.com/espetro/llama.cpp
-- Demo en navegador (WASM): https://espetro.github.io/llama.cpp/
-- Repositorio del proyecto original: https://github.com/jaredpalmer/kev
-- Model card de Kev-4B en el repositorio original: https://github.com/jaredpalmer/kev/blob/main/docs/model-cards/kev-4b.md
-- Bundle de origen (gojev): https://huggingface.co/taigrr/kev-4b-gguf
-- Discusiones del bundle de origen: https://huggingface.co/taigrr/kev-4b-gguf/discussions
-- Variante comunitaria: https://huggingface.co/DreamBlooms/kev-4b-GGUF
-- Buscador de modelos GGUF (referencia del ecosistema): https://local-ai-zone.github.io/
-- Scripts de conversión GGUF de IBM (referencia del ecosistema): https://github.com/IBM/gguf
+- Hugging Face: https://huggingface.co/espetro/kev-4b-gguf
+- Modelo original: https://huggingface.co/jaredpalmer/kev-4b
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
+- Repositorio del trabajo original: https://github.com/jaredpalmer/kev
+- Fork de llama.cpp: https://github.com/espetro/llama.cpp
+- Demo en navegador: https://espetro.github.io/llama.cpp/
+- Cuantización demo: https://huggingface.co/espetro/kev-4b-demo-gguf

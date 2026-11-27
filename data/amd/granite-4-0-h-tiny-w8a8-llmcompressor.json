@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AMD ׀ together we advance_IA",
-      "url": "https://www.amd.com/fr.html",
-      "snippet": "Sep 9, 2026 · AMD est à la pointe de l'industrie en matière de coût total de possession, d'efficacité et de capacités d'IA avancées. …"
-    },
-    {
-      "title": "AMD ׀ together we advance_AI",
-      "url": "https://www.amd.com/en.html",
-      "snippet": "Sep 2, 2026 · AMD delivers leadership high-performance and adaptive computing solutions to advance data center AI, AI PCs, …"
-    },
-    {
-      "title": "AMD - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/AMD",
-      "snippet": "Through its Xilinx acquisition in 2022, AMD offers field-programmable gate array (FPGA) products. AMD was founded in 1969 by …"
-    },
-    {
-      "title": "AMD Radeon Adrenalin Graphics Driver 26.9.1 Hotfix - TechSpot",
-      "url": "https://www.techspot.com/downloads/drivers/essentials/amd-radeon-hotfix/",
-      "snippet": "Sep 3, 2026 · Take advantage of the ALT+R hotkey to open AMD Software: Adrenalin Edition directly in-game, making it even more …"
-    },
-    {
-      "title": "Advanced Micro Devices — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Advanced_Micro_Devices",
-      "snippet": "En 1995 AMD introduit le microprocesseur AMD-K5 premier microprocesseur compatible avec l'architecture x86 et conçu de manière …"
-    }
-  ]
+  "sources": []
 }

@@ -48,11 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AI 技术新趋势· HuggingFace + GitHub Trending - ChaosAI · 众智",
-      "url": "https://chaosaiagent.com/industry-data/ai-trends",
-      "snippet": "累计下载, 发布日期. 1, alansmithee-cpu/Behemoth_1.1_1.2_2.2_Magnum_V4, alansmithee-cpu, 0, 2026-11-22 ... 8, mradermacher/Gloomy-Dusk-26B-A4B-i1-GGUF ..."
-    }
-  ]
+  "sources": []
 }

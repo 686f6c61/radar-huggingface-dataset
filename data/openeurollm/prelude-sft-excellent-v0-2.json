@@ -47,16 +47,5 @@
   "renamed_to": "openeurollm/Prelude-SFT-Propella-Excellent-v0.2",
   "renamed_at": "2026-11-26T13:16:24.315Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Prelude - a openeurollm Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/openeurollm/prelude",
-      "snippet": "Artefacts of Prelude release. Note Dashboard of multilingual evaluations done for Prelude against baselines."
-    },
-    {
-      "title": "Prelude 9B | OpenEuroLLM",
-      "url": "https://www.openeurollm.eu/prelude",
-      "snippet": "Prelude is OpenEuroLLM's experimental 9B multilingual dense base model, published with intermediate checkpoints and training resources."
-    }
-  ]
+  "sources": []
 }

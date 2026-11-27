@@ -2,83 +2,114 @@
 
 ## Resumen
 
-GrimmCoder_v2 es un modelo publicado en Hugging Face por el usuario Bayhakl1 bajo licencia Apache 2.0. La model card asociada al repositorio se limita a declarar la licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que apunta a una publicacion recien creada o de difusion muy limitada.
+GrimmCoder_v2 es un modelo de lenguaje especializado en generacion y completado de codigo Python, desarrollado por Bayhakl1 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer decoder-only de estilo LLaMA entrenado desde cero, con aproximadamente 107 millones de parametros totales (100,69 millones sin contar embeddings) y una longitud de contexto de 2048 tokens. Su proposito es ofrecer un modelo ligero y desplegable en hardware modesto para tareas de autocompletado de codigo y relleno de huecos (fill-in-the-middle).
 
-Por el nombre ("Coder") cabe inferir una orientacion a generacion de codigo, pero esta interpretacion no esta respaldada por ninguna documentacion tecnica del autor. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos.
+El modelo se presenta como la fase 2 de un entrenamiento en dos etapas: un preentrenamiento sobre `bigcode/starcoderdata` (7,93 mil millones de tokens) seguido de un ajuste fino sobre `Avelina/python-edu-cleaned` (774,1 millones de tokens, 6000 pasos con decaimiento coseno de 1e-4 a 1e-5). Esta orientado exclusivamente a Python y soporta tanto completado izquierda-a-derecha como FIM en formatos PSM y SPM.
 
-Dado que no existe informacion tecnica verificable, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse. Se recomienda tratar el modelo como no evaluado hasta que el autor publique documentacion o artefactos verificables.
+Su relevancia actual radica en que demuestra que un modelo de apenas 107M de parametros puede resolver una fraccion medible de problemas de HumanEval (9,15% pass@1 en modo greedy) con una validez sintactica superior al 90% en varias configuraciones de decodificacion, lo que lo hace util para entornos con recursos limitados, prototipado rapido y experimentacion educativa en torno a modelos de codigo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | LLaMA (`LlamaForCausalLM`, pre-norm, RoPE, SwiGLU, GQA, embeddings ligados) |
+| Parametros totales | ~106.980.096 (~100,69M sin embeddings) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2048 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el autor no documenta cuantizaciones oficiales) |
+| Idiomas soportados | codigo (Python) e ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors |
+
+Especificaciones adicionales de arquitectura:
+
+| Parametro | Valor |
+|---|---|
+| Hidden size (d_model) | 768 |
+| Numero de capas | 16 |
+| Cabezas de atencion | 12 query / 4 KV (GQA) |
+| Tamano intermedio FFN | 2048 (SwiGLU) |
+| Vocabulario | 8192 (BPE a nivel de byte entrenado sobre Python) |
+| Tokens de entrenamiento | ~8,70B totales (7,93B preentrenamiento + 774,1M ajuste fino) |
+| Perdida de validacion | 1,2260 (paso 6000) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer denso, MoE, SSM, hibrido u otra), el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+GrimmCoder_v2 es un transformer decoder-only con la arquitectura LLaMA clasica: normalizacion pre-norm, embeddings rotatorios (RoPE), activacion SwiGLU, atencion con query grouping (GQA, 12 cabezas de query y 4 de clave/valor) y embeddings de entrada y salida ligados. Con 16 capas, dimension oculta de 768 y FFN de 2048, el modelo queda en torno a los 107M de parametros, un tamano que permite inferencia en CPU y GPU de gama baja.
 
-La model card unicamente contiene la declaracion de licencia Apache 2.0. No hay informacion sobre el proceso de entrenamiento ni sobre posibles modelos base o destilaciones.
+El entrenamiento se realizo en dos fases. La primera consistio en un preentrenamiento sobre `bigcode/starcoderdata` hasta alcanzar 7,93 mil millones de tokens. La segunda fase, de la que resulta esta version, ajusto el modelo sobre `Avelina/python-edu-cleaned` durante 6000 pasos con una tasa de aprendizaje con decaimiento coseno de 1e-4 a 1e-5, sumando 774,1 millones de tokens adicionales. El vocabulario de 8192 tokens se entreno especificamente sobre codigo Python con BPE a nivel de byte. El modelo fue entrenado de forma nativa para FIM, con una proporcion 50/50 entre los formatos PSM y SPM, e incorpora tokens especiales dedicados (`<|fim_prefix|>`, `<|fim_middle|>`, `<|fim_suffix|>`, `<|endoftext|>`, `<|pad|>`). No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
 
 ## Capacidades
 
-- No hay documentacion publicada que confirme capacidades concretas.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma capacidad multilingue ni el conjunto de idiomas cubiertos.
-- No se confirma soporte de vision, audio ni modos de razonamiento explicito.
-- El nombre del repositorio sugiere orientacion a codigo, pero se trata de una inferencia no verificada.
+- Generacion de codigo Python izquierda-a-derecha a partir de un prompt o firma de funcion.
+- Completado fill-in-the-middle (FIM) nativo, insertando codigo entre un prefijo y un sufijo, con soporte de formatos PSM y SPM.
+- Generacion de codigo sintacticamente valido en la mayoria de los casos (hasta 96,3% de validez sintactica en HumanEval con decodificacion muestreada).
+- Manejo de tokens especiales dedicados para delimitar documentos y tareas FIM.
+- Capacidad limitada de razonamiento y resolucion de problemas de programacion (9,15% pass@1 en HumanEval).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas a codigo Python e ingles; no se documentan otros lenguajes naturales.
+- Capacidades de vision o audio: no disponibles.
+- Modo de pensamiento (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Evaluacion comparativa interna: el modelo puede incorporarse a un banco de pruebas propio para medir su comportamiento real frente a alternativas documentadas, dado que no existen resultados publicados.
-- Generacion de codigo en prototipos: si el modelo cumple lo que sugiere su nombre, podria emplearse en entornos de prototipado no criticos, siempre tras validacion manual de las salidas.
-- Experimentacion academica: util como objeto de estudio sobre publicaciones de modelos sin documentacion tecnica y su impacto en la reproducibilidad.
-- Pruebas de integracion en pipelines: permite verificar la compatibilidad con frameworks de inferencia (por ejemplo, transformers o vLLM) una vez identificado el formato de pesos.
-- Fine-tuning exploratorio: la licencia Apache 2.0 facilita ajustes posteriores si el autor publica pesos utilizables.
-- Analisis de riesgo de cadena de suministro: sirve como caso practico para ilustrar la necesidad de verificar procedencia y artefactos antes de adoptar un modelo en produccion.
-
-En todos los casos, el uso en produccion exigiria primero obtener los pesos, verificar su integridad y realizar una evaluacion propia.
+- Autocompletado en editores de codigo: el modelo puede integrarse como motor de completado en-linea en IDE o editores ligeros, generando continuaciones de funciones Python a partir de la firma y el contexto previo, gracias a su ventana de 2048 tokens y su entrenamiento especifico en Python.
+- Relleno de huecos en refactorizacion: mediante FIM, permite insertar el cuerpo de una funcion entre la firma y las llamadas posteriores, util en herramientas que reescriben o completan bloques de codigo existentes.
+- Asistencia en notebooks educativos: su entrenamiento sobre `Avelina/python-edu-cleaned` lo hace adecuado para generar ejemplos y ejercicios de Python en entornos de aprendizaje, con bajo coste computacional.
+- Prototipado rapido en local: al caber en GPU de consumo y en CPU, sirve para experimentar con pipelines de generacion de codigo sin depender de APIs externas ni de infraestructura grande.
+- Generacion de tests unitarios sencillos: puede completar esqueletos de funciones de test a partir de la firma y del codigo bajo prueba, siempre con revision humana dada su tasa de acierto limitada.
+- Investigacion sobre modelos de codigo pequenos: util como linea base reproducible para estudiar tecnicas de FIM, tokenizacion BPE sobre Python y ajuste fino en dominios acotados.
+- Despliegue en entornos con restricciones de privacidad: su tamano reducido y licencia Apache 2.0 permiten ejecutarlo on-premise para completado de codigo sin enviar datos a servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluacion sobre `openai/openai_humaneval` (164 problemas de Python) con `transformers` en bfloat16 sobre CUDA:
+
+| Modelo | Modo y decodificacion | pass@1 | Resueltos | Sintaxis valida |
+|---|---|---|---|---|
+| GrimmCoder_v2 | L2R greedy (`do_sample=False`) | 9,15% | 15/164 | 137/164 (83,5%) |
+| GrimmCoder_v2 | L2R `t=0.2, rep=1.1` | 9,15% | 15/164 | 158/164 (96,3%) |
+| GrimmCoder_v2 | FIM (PSM) greedy | 9,15% | 15/164 | 151/164 (92,1%) |
+| GrimmCoder_v2 | FIM (PSM) `t=0.2, rep=1.1` | 8,54% | 14/164 | 153/164 (93,3%) |
+| GrimmCoder (base preentrenamiento) | L2R greedy | 5,49% | 9/164 | 126/164 (76,8%) |
+| GrimmCoder (base preentrenamiento) | L2R `t=0.2, rep=1.1` | 4,88% | 8/164 | 155/164 (94,5%) |
+| GrimmCoder (base preentrenamiento) | FIM (PSM) greedy | 4,27% | 7/164 | 122/164 (74,4%) |
+
+Problemas distintos resueltos en conjunto entre todos los modos evaluados: 20/164 (HumanEval/12, 16, 22, 23, 28, 29, 30, 31, 34, 35, 42, 45, 48, 50, 52, 53, 55, 58, 60, 61).
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el numero de parametros.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no determinable sin conocer el tamano del modelo.
-- Opciones de despliegue: no confirmadas; no se ha verificado la disponibilidad de pesos en formatos compatibles con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el modelo tiene ~107M de parametros; en bfloat16 ocupa aproximadamente 214 MB de pesos, y en float32 unos 428 MB. Con overhead de activaciones y cache KV para 2048 tokens, la inferencia cabe holgadamente en menos de 2 GB de VRAM.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; funciona en RTX 3060, RTX 4060, RTX 4090, A100 o H100 sin problemas, aunque las GPU de gama alta estaran infrautilizadas.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: `transformers` (soporte nativo documentado), `text-generation-inference` (etiqueta presente en el repo) y endpoints compatibles. No se documenta soporte explicito de llama.cpp, Ollama o TGI en la informacion disponible, aunque el formato safetensors permite conversion a GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables sin conocer el tamano, la arquitectura y el dominio de aplicacion del modelo.
+| Modelo | Parametros | Contexto | HumanEval pass@1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GrimmCoder_v2 | ~107M | 2048 | 9,15% (greedy) | Apache 2.0 | Hugging Face |
+| GrimmCoder (base) | ~107M | 2048 | 5,49% (greedy) | Apache 2.0 | Hugging Face |
+| Alternativas de ~100M especializadas en codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion |
-|---|---|---|---|---|
-| GrimmCoder_v2 | no disponible | no disponible | Apache 2.0 | Solo declaracion de licencia |
-| Alternativas | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la informacion proporcionada de datos de benchmarks de modelos comparables de tamano similar (por ejemplo, variantes pequenas de CodeParrot, CodeGen o SantaCoder) que permitan una comparacion cuantitativa fiable. La unica comparacion directa disponible es con el checkpoint base de preentrenamiento del mismo autor, que GrimmCoder_v2 supera en pass@1 (9,15% frente a 5,49%) y en validez sintactica.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se puede verificar arquitectura, tamano, datos de entrenamiento ni evaluaciones.
-- Riesgo de alucinacion: no evaluado; sin benchmarks ni pruebas publicadas no es posible estimar su fiabilidad.
-- Sesgos: desconocidos, al no documentarse la composicion del dataset ni procesos de alineacion.
-- Idiomas: sin confirmar; no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero esta permitividad no compensa la falta de informacion tecnica sobre el modelo.
-- Procedencia: repositorio sin descargas ni interacciones registradas; conviene verificar la identidad del autor y la integridad de los artefactos antes de cualquier uso.
-- Produccion: no recomendable sin una evaluacion propia exhaustiva y sin confirmacion del formato y la disponibilidad real de los pesos.
+- Riesgo de alucinacion: como todo modelo generativo de codigo, puede producir APIs inexistentes, imports invalidos o logica incorrecta que compile pero no funcione.
+- Rendimiento limitado: un pass@1 del 9,15% en HumanEval implica que mas del 90% de los problemas no se resuelven correctamente; no es adecuado como unico generador en produccion sin revision humana.
+- Ambito restringido a Python: el modelo fue entrenado exclusivamente sobre codigo Python; no se garantiza un rendimiento aceptable en otros lenguajes.
+- Idioma: solo se documentan capacidades en codigo e ingles; no hay soporte de castellano ni de otros idiomas naturales.
+- Ventana de contexto corta: 2048 tokens limita el contexto disponible para archivos grandes o conversaciones multi-turno.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible; al entrenarse sobre datos de codigo publico, puede reproducir patrones y estilos presentes en `bigcode/starcoderdata`.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el usuario debe verificar las condiciones de los datasets de entrenamiento (`bigcode/starcoderdata` y `Avelina/python-edu-cleaned`) por si imponen restricciones adicionales sobre los pesos derivados.
+- Caveat para produccion: el modelo tiene un numero muy bajo de descargas (210) y likes (1), y fue creado en noviembre de 2026; no cuenta con un ecosistema de validacion amplio, por lo que conviene evaluarlo en el dominio concreto antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Bayhakl1/GrimmCoder_v2
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/Bayhakl1/GrimmCoder_v2
+- Dataset de ajuste fino: https://huggingface.co/datasets/Avelina/python-edu-cleaned
+- Dataset de preentrenamiento: https://huggingface.co/datasets/bigcode/starcoderdata
+- Benchmark HumanEval: https://huggingface.co/datasets/openai/openai_humaneval

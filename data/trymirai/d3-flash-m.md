@@ -2,100 +2,99 @@
 
 ## Resumen
 
-d3-flash-M es una versión cuantizada a 4 bits del modelo d3-flash, publicada por trymirai (Mirai Labs) bajo licencia Apache 2.0. No es un modelo generativo al uso: es un modelo de decisión (decision model) que devuelve probabilidades sobre un conjunto ordenado de opciones, respuestas sí/no o niveles de puntuación. Su propósito es resolver tareas de clasificación zero-shot, enrutamiento semántico y selección de herramientas dentro de pipelines de agentes, donde se necesita una respuesta categórica calibrada en lugar de texto libre.
+d3-flash-M es una versión cuantizada a 4 bits del modelo d3-flash, publicada por Mirai Labs (usuario `trymirai` en Hugging Face). No es un modelo generativo al uso: es un modelo de decisión de texto que, dada una petición estructurada (un `state` y una `question`), devuelve probabilidades sobre un conjunto ordenado de opciones (preguntas de elección, sí/no o puntuación). El modelo base es `vllm-sr/d3-flash` y esta release se distribuye como checkpoint cuantizado sin entrenamiento adicional.
 
-El checkpoint parte del modelo base vllm-sr/d3-flash y aplica cuantización post-entrenamiento INT4 asimétrica con grupos de 64, escalas en BF16 y transformadas de Hadamard aleatorias (RHT32) para tratar valores atípicos, junto con el método YAQA. El resultado conserva una precisión del 95,45 % sobre 5.500 decisiones de texto de CLINC150+OOS, solo 0,38 puntos porcentuales por debajo del profesor sin cuantizar, lo que lo hace relevante para despliegue local con requisitos de memoria reducidos.
+El interés de esta ficha está en que documenta una técnica de cuantización concreta (YAQA, con transformadas de Hadamard aleatorias por bloques) aplicada a un modelo de decisión, con una evaluación held-out sobre 5.500 decisiones de CLINC150+OOS. Según la model card, alcanza un 95,45 % de accuracy, solo 0,38 puntos porcentuales por debajo del modelo profesor sin cuantizar, y reduce la KL media respecto al profesor en un factor de 8,4× frente a una cuantización RTN equivalente.
 
-El modelo tiene 4.158.126.080 parámetros, un repositorio de 12,9 GB y una cabeza de decisión de 255 códigos sobre un espacio oculto de 4096 dimensiones. La arquitectura subyacente, según la documentación del autor, combina 8 capas de atención completa no causal con 24 capas Gated DeltaNet causales, lo que lo sitúa en la familia de modelos híbridos transformer-SSM. No se han publicado datos sobre longitud de contexto ni idiomas soportados.
+El checkpoint tiene 4.158.126.080 parámetros y ocupa 17,2 GB en el repositorio. La licencia es Apache 2.0. La información pública disponible es escasa en cuanto a idiomas, datos de entrenamiento del modelo base y benchmarks generales; esta ficha indica explícitamente qué datos no están disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 8 capas de atención completa no causal + 24 capas Gated DeltaNet causales (según documentación del autor) |
-| Parámetros totales | 4.158.126.080 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer híbrido: 8 capas de atención completa (no causal) y 24 capas Gated DeltaNet (causales), según la model card; deriva de la familia Qwen3.5 según las notas de integración |
+| Parametros totales | 4.158.126.080 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | INT4 asimétrica, grupo 64, escalas BF16, zero points empaquetados en 4 bits; RHT32; YAQA post-entrenamiento; cabeza de decisión en FP32 |
+| Tipos de cuantizacion | INT4 asimétrica con grupo de tamaño 64, escalas BF16, puntos cero empaquetados en enteros de 4 bits; capa de salida de decisión en FP32 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (un único model.safetensors con backbone INT4 G64 y readout FP32) |
+| Formato de pesos | safetensors (`model.safetensors`), con `config.json` de tipo `DecisionModelConfig` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un checkpoint cuantizado, no un modelo entrenado desde cero. El backbone de texto se cuantiza a INT4 asimétrico con tamaño de grupo 64, escalas BF16 y zero points empaquetados. Los valores atípicos se tratan con transformadas de Hadamard aleatorias por bloques de tamaño 32 (RHT32). Las matrices del transformer usan YAQA como método de cuantización post-entrenamiento, mientras que el embedding de entrada y la cabeza de decisión se cuantizan con round-to-nearest. La calibración empleó 3.072 decisiones de texto balanceadas en 12 conjuntos públicos del Decision Index, cubriendo razonamiento, inferencia de lenguaje natural, clasificación de intención, recuperación, selección de herramientas y humor. Los objetivos de Fisher se muestrearon del profesor congelado sin cuantizar a temperatura 1, con una salida de decisión enmascarada por petición y gradientes a través de todo el contexto de entrada.
+El modelo base d3-flash es un transformer híbrido que combina capas de atención completa con capas Gated DeltaNet. La model card de esta release cuantizada especifica que las 8 capas de atención completa son no causales y las 24 capas Gated DeltaNet son causales. El modelo no genera texto libre: incorpora una cabeza de decisión (`decoder.embedding.output_embedding.weights`) de 255 × 4096 en FP32 que produce una distribución softmax sobre hasta 255 códigos de respuesta ordenados, con temperatura 1,0.
 
-La cabeza de decisión es una matriz FP32 de 255 × 4096 almacenada en `decoder.embedding.output_embedding.weights` con anotación `FullPrecisionSpec`; materializa los pesos efectivos de RTN, incluida su cuantización y transformada de Hadamard. El `config.json` usa un `DecisionModelConfig` con un objeto `decision` que contiene los 255 códigos ordenados de respuesta y la temperatura de softmax (1,0). En tiempo de inferencia se realiza un prefill de contexto completo por pregunta, se aplica el readout FP32 al estado oculto final tras la normalización RMS en la última posición real del prompt, se enmascaran las opciones no usadas y se aplica softmax a temperatura 1. Las 8 capas de atención completa permanecen no causales; las 24 capas Gated DeltaNet permanecen causales. No hubo entrenamiento de pesos ni destilación con conciencia de cuantización.
+Esta release no entrena pesos: aplica cuantización post-entrenamiento con el método YAQA. La calibración usó 3.072 decisiones de texto, equilibradas entre 12 conjuntos públicos del Decision Index (razonamiento, inferencia de lenguaje natural, clasificación de intenciones, recuperación, selección de herramientas y humor). Los objetivos de Fisher se muestrearon del profesor congelado a temperatura 1, con una salida de decisión enmascarada por petición y gradientes a través de todo el contexto de entrada. Se aplicaron transformadas de Hadamard aleatorias por bloques (tamaño 32) para tratar valores atípicos; la matriz de embedding de entrada y la cabeza de decisión usan redondeo al más cercano (RTN). No hubo entrenamiento de pesos ni destilación con conciencia de cuantización.
 
 ## Capacidades
 
-- Clasificación zero-shot con opciones: devuelve la opción de mayor probabilidad entre hasta 255 criterios ordenados.
-- Preguntas de sí/no (`noul`): devuelve la probabilidad de verdadero, con descripciones opcionales para cada valor.
-- Puntuación (`score`): devuelve el índice de nivel esperado sobre 2 a 10 niveles ordenados.
-- Entrada de estado flexible: acepta texto plano o JSON como `state`.
-- Instrucciones personalizadas: permite sustituir el texto de pregunta por defecto mediante `instructions`.
-- Enrutamiento semántico y selección de herramientas dentro de pipelines de agentes.
-- Integración con Uzu: despacho por `type: "DecisionModelConfig"`, reutilización de cargadores de capas Qwen3.5 y matriz M, lectura directa de `tokenizer.json` y paso de la petición estructurada a MiniJinja.
-- Modelo solo texto (text-only); no se documentan capacidades multimodales en este checkpoint.
-- No se documenta soporte de tool calling generativo, agentes multi-paso ni modo de razonamiento explícito; la salida es una distribución de probabilidad, no texto.
+- Clasificación zero-shot mediante peticiones estructuradas: tipo `choice` (hasta 255 opciones ordenadas), tipo `noul` (falso/verdadero, con descripciones opcionales) y tipo `score` (entre 2 y 10 niveles ordenados).
+- Devolución de probabilidades calibradas por opción, no solo la etiqueta ganadora; permite umbrales y análisis de incertidumbre.
+- Acepta `state` en texto plano o JSON, lo que facilita integrarlo en pipelines que ya manejan payloads estructurados.
+- Instrucciones opcionales que sustituyen el texto de pregunta por defecto.
+- Integración prevista con Uzu y con el ecosistema de Semantic Router (según las notas de la model card).
+- No es un modelo generativo: no produce texto libre, código, matemáticas ni razonamiento en cadena visible.
+- No se documentan capacidades multimodales, de audio ni de tool calling generativo en esta release.
 
 ## Casos de uso
 
-- Enrutamiento de intenciones en atención al cliente: dado un mensaje de usuario como `state`, el modelo devuelve la probabilidad de cada intención predefinida (cancelar, soporte, facturación) en una sola pasada, lo que permite derivar la conversación al flujo correcto sin generar texto.
-- Selección de herramientas en agentes: con un catálogo de herramientas como criterios de una pregunta `choice`, el modelo elige la herramienta más probable antes de invocar un LLM generativo, reduciendo coste y latencia en el bucle del agente.
-- Filtrado de seguridad y moderación: una pregunta `noul` con descripciones permite obtener la probabilidad de que un contenido sea tóxico o inseguro, con umbral ajustable en producción.
-- Puntuación de relevancia en recuperación (RAG): la pregunta `score` con niveles ordenados devuelve el nivel esperado de relevancia de un documento respecto a una consulta, útil para reordenar resultados antes de pasarlos al generador.
-- Clasificación de tickets y correos entrantes: el modelo asigna categorías a texto o JSON estructurado con una ventana de contexto completa por petición, adecuado para colas de soporte con taxonomías de hasta 255 categorías.
-- Inferencia de lenguaje natural para validación de datos: comprobar si una premisa implica una hipótesis en pipelines de limpieza o enriquecimiento de datos, devolviendo probabilidad de verdadero/falso.
-- Enrutamiento local en Apple Silicon: al estar cuantizado a INT4 y orientado a despliegue local, encaja en aplicaciones de escritorio o edge que necesitan decisiones rápidas sin enviar datos a la nube.
+- Enrutado de intenciones en asistentes conversacionales: con la pregunta de tipo `choice` y un conjunto de intenciones como criterios, el modelo devuelve la probabilidad de cada una; es adecuado porque la evaluación held-out sobre CLINC150+OOS mide exactamente esta tarea con un 95,45 % de accuracy.
+- Selección de herramientas en agentes: dado el estado de la conversación y una lista de herramientas como opciones, el modelo puntúa cuál invocar; la calibración con datasets de tool selection en el Decision Index respalda este uso.
+- Filtrado de seguridad y moderación: con preguntas `noul` se obtiene la probabilidad de "verdadero" para políticas concretas, lo que permite fijar umbrales por política en lugar de depender de una respuesta binaria rígida.
+- Puntuación de relevancia en recuperación (reranking): con el tipo `score` de 2 a 10 niveles se puede ordenar pares consulta-documento y usar el nivel esperado como señal continua para reordenar resultados.
+- Clasificación de tickets de soporte: el `state` admite JSON, de modo que se pueden pasar campos estructurados del ticket y obtener la categoría más probable entre las definidas como criterios.
+- Detección de intención fuera de dominio: al disponer de probabilidades por opción, se puede rechazar una petición cuando la masa de probabilidad se reparte de forma difusa, algo útil en atención al cliente automatizada.
+- Despliegue local en Apple Silicon: la propia model card enmarca la cuantización en la línea de trabajo de Mirai sobre eficiencia en silicio de Apple, lo que sugiere su uso en entornos de inferencia local con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 5.500 decisiones de texto de CLINC150+OOS, retenidas por completo de la calibración, con las mismas peticiones y máscaras de opciones a temperatura 1:
+Los únicos datos publicados corresponden a la evaluación held-out de la propia model card sobre 5.500 decisiones de CLINC150+OOS, con las mismas peticiones y máscaras de opciones a temperatura 1. CLINC150+OOS quedó completamente fuera de la calibración.
 
-| Checkpoint | Accuracy ↑ | Macro F1 ↑ | Teacher KL ↓ |
+| Checkpoint | Accuracy ↑ | Macro F1 ↑ | KL respecto al profesor ↓ |
 |---|---:|---:|---:|
 | d3-flash sin cuantizar (profesor) | 95,84 % | 96,43 % | 0,00000 |
-| INT4 G64 · RTN | 93,40 % | 93,82 % | 0,07883 |
-| d3-flash-M · YAQA | 95,45 % | 96,13 % | 0,00938 |
+| INT4 G64 con RTN | 93,40 % | 93,82 % | 0,07883 |
+| d3-flash-M con YAQA | 95,45 % | 96,13 % | 0,00938 |
 
-YAQA reduce el KL medio respecto al profesor en 8,4 veces en comparación con RTN. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos para este checkpoint.
+No se han publicado en la información disponible resultados de benchmarks generales (MMLU, HumanEval, GSM8K u otros) para esta release.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 12,9 GB con pesos INT4 G64 y cabeza FP32; se puede esperar un uso de memoria en el rango de 6-10 GB para el backbone cuantizado más el readout FP32 de 255 × 4096, aunque no se proporciona una cifra oficial.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, cabría en GPUs de consumo con 12-16 GB de VRAM o más, pero no se confirma compatibilidad.
-- Cabe en GPU de consumo: probablemente sí en modelos con 12 GB o más, sin confirmación oficial.
-- Opciones de despliegue: el autor valida la inferencia cuantizada con `clean_quant` (`DecisionModel.load`); para integración en Uzu se reutilizan cargadores de capas Qwen3.5 y MiniJinja. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
-- Latencia y throughput: no disponibles. El autor indica que cada pregunta requiere su propio prefill de contexto completo, lo que condiciona el coste por decisión.
+- El repositorio ocupa 17,2 GB, pero los pesos del backbone están empaquetados en INT4 con grupo 64; la VRAM real de inferencia depende del runtime y de si se materializan pesos en BF16 durante la carga.
+- La cabeza de decisión se mantiene en FP32 (255 × 4096), un coste marginal en memoria.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño (≈4,16 mil millones de parámetros), un checkpoint INT4 de este tipo es candidato a caber en GPU de consumo con 8-16 GB de VRAM, pero no hay confirmación del autor.
+- La model card menciona explícitamente la línea de trabajo de Mirai sobre eficiencia en Apple Silicon, por lo que el despliegue en Mac con memoria unificada es un escenario previsto.
+- Opciones de despliegue: la model card cita la validación con `clean_quant` (`DecisionModel.load`) y la integración con Uzu y Semantic Router. No se documentan vLLM, llama.cpp, Ollama ni TGI para esta release.
+- Latencia y throughput: no disponibles. La model card indica que cada pregunta requiere un prefill completo de contexto, lo que condiciona el coste por decisión.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Precisión CLINC150+OOS |
-|---|---:|---|---|---|---:|
-| d3-flash-M (este) | 4,16 B | no disponible | INT4 G64 + YAQA | Apache 2.0 | 95,45 % |
-| d3-flash (profesor) | no disponible | no disponible | sin cuantizar | Apache 2.0 | 95,84 % |
-| d3-flash INT4 G64 RTN | no disponible | no disponible | INT4 G64 RTN | Apache 2.0 | 93,40 % |
+| Modelo | Parámetros | Contexto | Accuracy en CLINC150+OOS | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| d3-flash-M (esta release) | 4.158.126.080 | no disponible | 95,45 % | Apache 2.0 | Hugging Face |
+| d3-flash (profesor, sin cuantizar) | no disponible | no disponible | 95,84 % | Apache 2.0 (según enlace de licencia) | Hugging Face |
+| Cuantización INT4 G64 con RTN del mismo modelo | 4.158.126.080 (equivalente) | no disponible | 93,40 % | Apache 2.0 | Referencia interna de la model card |
 
-No se dispone de información sobre otros modelos de decisión comparables de la misma categoría en la documentación proporcionada.
+No se dispone de datos de otros modelos de decisión comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, solo distribuciones de probabilidad sobre opciones, sí/no o niveles de puntuación.
-- La cabeza de decisión está limitada a 255 códigos ordenados; taxonomías mayores requieren trocear la pregunta.
-- Cada pregunta necesita un prefill de contexto completo, lo que limita el throughput en comparación con modelos que reutilizan caché entre consultas.
+- Es un modelo de decisión, no un LLM generativo: no produce texto libre ni código, y no debe evaluarse con benchmarks generativos al uso.
+- La evaluación publicada se limita a CLINC150+OOS; no hay evidencia de rendimiento en otros dominios o idiomas.
+- Los idiomas soportados no están documentados, lo que impide garantizar cobertura multilingüe en producción.
+- La cuantización introduce una pérdida medible: 0,38 puntos de accuracy y una KL de 0,00938 frente al profesor; en dominios alejados de la distribución de calibración la degradación podría ser mayor.
+- La calibración usó solo 3.072 decisiones de 12 datasets públicos; dominios muy específicos pueden quedar mal representados.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de calibración deficiente: probabilidades altas en opciones incorrectas cuando la petición se sale del dominio.
 - El orden de las opciones es significativo y debe preservarse; alterarlo puede cambiar el resultado.
-- La temperatura de softmax está fijada a 1,0 en la configuración; modificarla altera la calibración.
-- La evaluación publicada se limita a CLINC150+OOS; no hay datos de robustez en dominios distintos ni en otros idiomas.
-- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación; al ser un clasificador, el riesgo principal es una calibración deficiente fuera de la distribución de calibración.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar el enlace de licencia del modelo base vllm-sr/d3-flash.
-- La documentación del autor menciona capas Qwen3.5 y Gated DeltaNet; conviene verificar la arquitectura real antes de integrarla en producción.
-- El checkpoint se publicó en octubre de 2026 y tiene 43 descargas y 0 likes, por lo que la validación comunitaria es mínima.
+- Cada pregunta exige un prefill completo de contexto, lo que encarece el uso con estados largos.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar el enlace de licencia del modelo base (`vllm-sr/d3-flash`) por si impone condiciones adicionales.
+- La información de la model card está fechada en 2026 y parte de sus referencias (blog, integración Uzu) no son verificables con los datos disponibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/trymirai/d3-flash-M
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Licencia del modelo base: https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/LICENSE
-- Blog de cuantización de Mirai: https://trymirai.com/blog/quantization
+- Blog de cuantización de Mirai Labs: https://trymirai.com/blog/quantization
 - Sitio de Mirai Labs: https://trymirai.com

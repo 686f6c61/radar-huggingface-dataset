@@ -2,91 +2,109 @@
 
 ## Resumen
 
-Spine CLI Qwen3.5-2B Round 2 GGUF Q8_0 es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-2B, desarrollado por el usuario NA2RU2. Su proposito es muy concreto: generar un unico comando de scaffolding de Spine CLI a partir de una peticion de desarrollo escrita en coreano. No es un modelo de proposito general, sino un modelo especializado en una tarea cerrada de traduccion de intencion a comando.
+Spine CLI Qwen3.5-2B GGUF es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-2B, desarrollado por el usuario NA2RU2 y publicado en Hugging Face. Su proposito es muy concreto: convertir una peticion de desarrollo escrita en coreano en un unico comando de la herramienta Spine CLI, cubriendo ocho generadores y 29 acciones adicionales, incluyendo la configuracion de proyectos, los contratos de ejecucion y los flujos de trabajo de Spine Cloud. No es un modelo de proposito general, sino un clasificador/generador de comandos altamente especializado.
 
-El modelo parte de Qwen3.5-2B, un transformer denso de aproximadamente 1.940 millones de parametros, y se distribuye exclusivamente en formato GGUF cuantizado a Q8_0 para su uso con llama.cpp. El repositorio ocupa 2,1 GB e incluye el tokenizer junto con los pesos del modelo con las actualizaciones LoRA de la segunda ronda ya fusionadas.
+El modelo parte de Qwen3.5-2B (1.942.653.248 parametros reales en safetensors) y se ha entrenado mediante SFT y destilacion sobre el dataset NA2RU2/spine-cli-sft-ko. Los pesos finales del LoRA se han fusionado en el modelo base y se distribuyen en formato GGUF con cuantizacion Q8_0 (2,08 GB), lo que permite cargarlo directamente en llama.cpp y servirlo con `llama-server` exponiendo una API compatible con `/v1/chat/completions`.
 
-Su relevancia es acotada pero clara: demuestra como un modelo pequeno (2B) puede alcanzar una precision alta (95,3% de coincidencia exacta de comando en el conjunto de evaluacion) en una tarea de dominio estrecho mediante ajuste fino supervisado. Es util para quien quiera desplegar un asistente de CLI local, ligero y sin dependencia de APIs externas.
+Su relevancia actual es la de un ejemplo de modelo vertical: un LLM pequeno, cuantizado y con licencia Apache 2.0 que resuelve una tarea de dominio muy acotada con alta precision (96,0 % de comandos exactos en generacion y 92,8 % en seleccion de otras acciones) sin necesidad de infraestructura GPU de gran tamano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3.5-2B) |
-| Parametros totales | 1.942.653.248 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (el ejemplo de uso emplea --ctx-size 4096) |
-| Tipos de cuantizacion | Q8_0 (unico fichero publicado) |
+| Arquitectura | Transformer (derivada de Qwen3.5-2B; detalles de atencion no disponibles) |
+| Parametros totales | 1.942.653.248 (1,94 B) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 4096 tokens (valor usado en el ejemplo de despliegue del autor) |
+| Tipos de cuantizacion | Q8_0 (unica publicada en este repo) |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (archivo `spine-cli-qwen3.5-2b-Q8_0.gguf`, 2,08 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso derivado de Qwen3.5-2B. Sobre la base en BF16 (revision `15852e8c16360a2fea060d615a32b45270f8a8fc`) se aplico un ajuste fino supervisado en dos rondas. El adaptador LoRA de la primera ronda (2B) se continuo durante una epoca con 2.880 ejemplos de entrenamiento y 400 de validacion. El adaptador de la segunda etapa emplea rango 16 y alpha 32, y sus actualizaciones se han fusionado en los pesos finales antes de la cuantizacion a Q8_0.
+El modelo es un finetune del Qwen3.5-2B (revision `15852e8c16360a2fea060d615a32b45270f8a8fc`). Sobre ese modelo base se entreno un LoRA (SHA-256 `52b05d6caf1ab1ceb1d74d8c6b37afa2a6075ee2704a36acc58694f8f7c741cc`) que posteriormente se fusiono con los pesos originales antes de la conversion a GGUF. La informacion disponible no detalla la arquitectura interna de Qwen3.5-2B (tipo de atencion, numero de capas, dimension oculta), por lo que esos datos se consideran no disponibles.
 
-El dataset de entrenamiento es `NA2RU2/spine-cli-sft-ko-2b-round2`, compuesto por pares de peticion en coreano y comando Spine CLI esperado. No se documentan en la informacion disponible el numero total de tokens de entrenamiento, la composicion detallada del dataset ni el uso de RLHF o DPO. El ejemplo de la model card desactiva el modo de razonamiento (`enable_thinking: false`, `--reasoning off`), lo que sugiere que el modelo base dispone de un modo thinking que aqui se desactiva para forzar la salida directa del comando.
+El entrenamiento se documento en el dataset NA2RU2/spine-cli-sft-ko, en una revision fijada (`37a2bef288c5e8f65d9ffee3399389e883b11d59`), que incluye siete etapas de SFT y destilacion junto con los archivos originales de entrenamiento. Las dos ultimas etapas ampliaron las correcciones verificadas por profesor a 236 ejemplos y anadieron repeticion equilibrada de comandos (balanced command replay). No se menciona uso de RLHF o DPO; el proceso descrito es SFT mas destilacion. La evaluacion se realizo con decodificacion greedy sobre una DGX Spark, con 300 peticiones de generacion y 111 peticiones de otras acciones CLI, excluyendo del entrenamiento las peticiones GT independientes.
 
 ## Capacidades
 
-- Generacion de un unico comando Spine CLI a partir de una peticion de desarrollo en coreano.
-- Salida directa sin explicaciones ni bloques de codigo, segun el prompt de sistema recomendado.
-- Generacion de planes de creacion en JSON cuando se solicita explicitamente (por ejemplo, estructuras de transporte con campos tipados).
-- Inferencia de texto mediante llama.cpp y servidor compatible con la API de chat completions (`/v1/chat/completions`).
-- Soporte de plantilla de chat con control de modo thinking (`chat_template_kwargs.enable_thinking`).
-- No se documentan capacidades de tool calling generico, vision, audio ni razonamiento multi-paso fuera del dominio de la CLI.
+- Generacion de un unico comando de Spine CLI a partir de una peticion de desarrollo en coreano, sin explicaciones ni bloques de codigo.
+- Cobertura de ocho generadores de Spine CLI y 29 acciones adicionales (configuracion de proyecto, contratos de ejecucion, flujos de Spine Cloud).
+- Seleccion de accion CLI y emision de flags y valores correctos para cada comando.
+- Soporte de conversacion mediante el endpoint `/v1/chat/completions` (pipeline `text-generation`, tag `conversational`).
+- Compatibilidad con endpoints (`endpoints_compatible`) y despliegue en llama.cpp / `llama-server`.
+- Capacidad de razonamiento explicito desactivable: el ejemplo de uso recomienda `--reasoning off`.
+- Multilingue: no disponible; el modelo declara unicamente coreano (`ko`).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Vision, audio o modos especiales: no disponible.
 
 ## Casos de uso
 
-- Asistente de linea de comandos local: el modelo traduce una peticion en lenguaje natural coreano a un comando Spine CLI concreto, ejecutable directamente en el terminal sin salir del entorno de desarrollo.
-- Automatizacion de scaffolding en pipelines internos: integrado en scripts que reciben una descripcion de tarea y generan el comando de creacion de estructuras de proyecto de forma determinista (temperature 0).
-- Generacion de planes JSON para revision previa: en lugar de escribir ficheros, el modelo puede producir un plan de creacion en JSON que un proceso posterior valide antes de aplicar cambios.
-- Formacion de desarrolladores noveles en Spine CLI: actua como capa de traduccion entre la intencion del usuario y la sintaxis correcta de la herramienta, reduciendo errores de sintaxis.
-- Despliegue en entornos con recursos limitados: al ser un modelo de 2B cuantizado a Q8_0 (2,08 GB), puede ejecutarse en estaciones de trabajo sin GPU dedicada o con GPU de consumo.
-- Prototipado de asistentes de dominio especifico: sirve como referencia de como un ajuste fino LoRA pequeno sobre una base de 2B logra alta precision en una tarea cerrada, replicable para otras CLIs internas.
-- Servicio local sin dependencia de la nube: al ejecutarse con llama-server, permite mantener peticiones de desarrollo dentro de la red interna sin enviar datos a APIs externas.
+- Automatizacion de andamiaje de proyectos: el modelo traduce una peticion en coreano como "crea un proyecto layered-v1" al comando `spine` correspondiente, lo que permite generar scaffolds de proyecto desde un chat o un bot interno sin que el desarrollador memorice la CLI.
+- Generacion de comandos de ejecucion en pipelines: dado un contrato de ejecucion descrito en lenguaje natural, el modelo emite el comando `spine` con los flags y valores adecuados, integr able en scripts de CI/CD que invoquen la CLI.
+- Asistente de consola para equipos coreanos: con temperatura 0 y hasta 160 tokens de salida, se puede desplegar un endpoint local (por ejemplo con `llama-server` en `127.0.0.1:8080`) que responda a peticiones de desarrolladores y devuelva solo el comando listo para ejecutar.
+- Flujos de Spine Cloud: el modelo cubre acciones de la nube de Spine, por lo que puede usarse para generar comandos de gestion de recursos o despliegues descritos en lenguaje natural.
+- Ensenanza y onboarding: al devolver el comando exacto para una tarea descrita, sirve como herramienta de formacion para nuevos miembros del equipo que aprenden la CLI de Spine.
+- Enrutado de peticiones en un agente mayor: al ser un modelo de 1,94 B y 2,08 GB en Q8_0, puede actuar como subcomponente de un sistema de agentes que clasifique la intencion del usuario y delegue la ejecucion en la CLI, manteniendo baja latencia y huella de memoria reducida.
+- Validacion de comandos: combinado con la metrica de "flags and values" (97,0 % en generacion), puede usarse para verificar o sugerir la sintaxis correcta de comandos en editores y linters internos.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Coincidencia exacta de comando completa (Q8_0) | 286/300 (95,3%) |
+Evaluacion con decodificacion greedy sobre DGX Spark, 300 peticiones de generacion y 111 de otras acciones CLI. Los datos de entrenamiento excluyen las peticiones GT independientes.
 
-Los datos proceden de la evaluacion BF16 y Q8_0 publicada por el autor (`evaluation.md`). No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Metrica | BF16 con LoRA | GGUF Q8_0 |
+|---|---:|---:|
+| Rol de generacion | 296/300 (98,7 %) | 297/300 (99,0 %) |
+| Comando exacto (generacion) | 288/300 (96,0 %) | 288/300 (96,0 %) |
+| Flags y valores (generacion) | 292/300 (97,3 %) | 291/300 (97,0 %) |
+| Seleccion de otros comandos | 106/111 (95,5 %) | 106/111 (95,5 %) |
+| Comando exacto (otros) | 103/111 (92,8 %) | 103/111 (92,8 %) |
+| Flags y valores (otros) | 106/111 (95,5 %) | 106/111 (95,5 %) |
+| Salidas obsoletas `g route` | 0 | 0 |
+| Salidas obsoletas `g slice` | 0 | 0 |
+
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,1 GB para el fichero Q8_0, mas overhead de contexto y runtime de llama.cpp (del orden de 3-4 GB en total con contexto de 4096 tokens).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; tarjetas como RTX 3060, RTX 4060 o superiores son suficientes.
-- Cabe en GPU de consumo: si, practicamente cualquier GPU moderna de consumo e incluso CPU sola con suficiente RAM.
-- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de la API compatible con OpenAI; tambien puede usarse con otros runners que acepten GGUF.
-- Latencia y throughput estimados: no disponible. El ejemplo de uso fija `--ctx-size 4096` y `max_tokens 160`, lo que sugiere respuestas cortas y baja latencia esperada.
+- VRAM estimada para inferencia: aproximadamente 2,1 GB para los pesos Q8_0, mas overhead de contexto (4096 tokens) y estado de KV cache; en la practica, unos 3-4 GB en total.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor realizo la evaluacion en una DGX Spark.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores; tambien puede ejecutarse en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--hf-repo NA2RU2/spine-cli-qwen3.5-2b-GGUF --hf-file spine-cli-qwen3.5-2b-Q8_0.gguf`), y cualquier runtime compatible con GGUF. Otros motores (vLLM, TGI, Ollama) no se mencionan en la informacion proporcionada.
+- Parametros de inferencia recomendados por el autor: `--ctx-size 4096 --reasoning off`, temperatura 0 y hasta 160 tokens de salida.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
-|---|---|---|---|---|---|
-| Spine CLI Qwen3.5-2B (este) | ~1,94 B | no disponible | GGUF Q8_0 | Apache 2.0 | Ajuste fino especializado en comandos Spine CLI (coreano) |
-| Qwen/Qwen3.5-2B (base) | ~1,94 B | no disponible | safetensors, GGUF | Apache 2.0 | Modelo generalista multilingue |
-| Modelos de 2B de proposito general | ~2 B | variable | variable | variable | Razonamiento y generacion general |
+No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada. A continuacion se comparan caracteristicas estructurales con el modelo base y con alternativas genericas del mismo orden de tamano, indicando los datos no disponibles.
 
-La comparativa con alternativas de la misma categoria (asistentes de CLI especializados) no esta disponible en la informacion proporcionada. La diferencia principal frente a su base es la especializacion: el ajuste fino sacrifica generalidad a cambio de una precision del 95,3% en la tarea objetivo.
+| Modelo | Parametros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| Spine CLI Qwen3.5-2B GGUF | 1,94 B | 4096 (uso recomendado) | Apache 2.0 | GGUF Q8_0 | Finetune vertical para Spine CLI (coreano) |
+| Qwen/Qwen3.5-2B (base) | 1,94 B | no disponible | no disponible | safetensors | Modelo generalista |
+| Alternativas de ~2 B para generacion de comandos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo altamente especializado: no debe esperarse buen rendimiento fuera de la generacion de comandos Spine CLI en coreano.
-- Idioma limitado al coreano; no se documenta soporte fiable de castellano ni de otros idiomas.
-- Riesgo de alucinacion en comandos: aunque la precision es alta (95,3%), un 4,7% de fallos implica comandos incorrectos; conviene validar la salida antes de ejecutarla en produccion.
-- Solo se publica cuantizacion Q8_0; no hay variantes mas ligeras (Q4, Q5) ni pesos en safetensors en este repositorio.
-- Longitud de contexto no documentada; el ejemplo usa 4096 tokens, por lo que peticiones muy largas pueden degradar el resultado.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion comunitaria independiente.
-- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3.5-2B conviene revisar tambien las condiciones de la licencia del modelo base.
-- El modo thinking debe desactivarse explicitamente para obtener la salida de comando directa; de lo contrario, el modelo podria emitir razonamiento adicional.
+- Modelo de dominio muy estrecho: solo genera comandos de Spine CLI; no es adecuado como modelo de chat o generacion general.
+- Idioma: unicamente coreano declarado; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Riesgo de alucinacion: aunque las metricas de comando exacto son altas (96,0 % y 92,8 %), entre el 3 % y el 7 % de las salidas no son exactas, por lo que en produccion conviene validar el comando antes de ejecutarlo.
+- Dependencia de la version de Spine CLI: el modelo esta entrenado contra una version concreta de la CLI; si la herramienta cambia sus comandos o flags, el modelo puede emitir comandos obsoletos (las metricas muestran 0 salidas de `g route` y `g slice`, pero no garantizan compatibilidad futura).
+- Contexto limitado: el ejemplo de despliegue usa 4096 tokens; peticiones muy largas pueden truncarse.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar la atribucion indicada en el archivo NOTICE del repositorio.
+- El repositorio solo publica la cuantizacion Q8_0; no hay variantes mas pequenas (Q4, Q5) en la informacion disponible, lo que limita el despliegue en hardware con menos de 4 GB de VRAM.
+- El modelo base Qwen3.5-2B y sus propios sesgos y limitaciones subyacentes no se detallan en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/NA2RU2/spine-cli-qwen3.5-2b-GGUF
-- Dataset de entrenamiento: https://huggingface.co/datasets/NA2RU2/spine-cli-sft-ko-2b-round2
-- Evaluacion BF16 y Q8_0: https://huggingface.co/NA2RU2/spine-cli-qwen3.5-2b-GGUF/blob/main/evaluation.md
-- Sumas SHA-256: https://huggingface.co/NA2RU2/spine-cli-qwen3.5-2b-GGUF/blob/main/SHA256SUMS
+- Modelo en Hugging Face: https://huggingface.co/NA2RU2/spine-cli-qwen3.5-2b-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/NA2RU2/spine-cli-sft-ko
+- Revision fijada del dataset: https://huggingface.co/datasets/NA2RU2/spine-cli-sft-ko/tree/37a2bef288c5e8f65d9ffee3399389e883b11d59
+- Repositorio de Spine CLI: https://github.com/NARUBROWN/spine-cli
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Evaluacion por accion: evaluation.md (en el repositorio del modelo)
+- Checksums: SHA256SUMS (en el repositorio del modelo)
+- Licencia: LICENSE (en el repositorio del modelo)
+- Atribucion: NOTICE (en el repositorio del modelo)
+- Revision GGUF anterior: https://huggingface.co/NA2RU2/spine-cli-qwen3.5-2b-GGUF/tree/10d6c905aadccc2ab2b6d08a8107ed637be961df

@@ -1,103 +1,91 @@
 # Xylolabs/Ministral-3-14B-Instruct-2512-GGUF
 
 ## Resumen
+Ministral-3-14B-Instruct-2512-GGUF es una cuantización en formato GGUF del modelo mistralai/Ministral-3-14B-Instruct-2512-BF16, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. El modelo base es un transformer denso de aproximadamente 13.506 millones de parámetros (13,5B) orientado a generación de texto y conversación, distribuido bajo licencia Apache 2.0. Esta versión concreta incluye únicamente el modelo de lenguaje y el tokenizer original con su plantilla de chat; la torre de visión del modelo base no está incluida, por lo que el resultado es estrictamente text-only.
 
-Ministral-3-14B-Instruct-2512-GGUF es una cuantización en formato GGUF del modelo Ministral-3-14B-Instruct-2512-BF16, desarrollado originalmente por Mistral AI y empaquetado para llama.cpp por Xylolabs. Se trata de un modelo de lenguaje de 13.506.073.600 parámetros (aproximadamente 13,5 mil millones) orientado a generación de texto e instrucciones, distribuido bajo licencia Apache 2.0. El repositorio contiene una única cuantización IQ4_XS generada con importance matrix, de 7,411 GB, pensada para ejecutarse en GPUs de consumo y estaciones de trabajo con memoria limitada.
+El problema que resuelve esta ficha es práctico: permitir ejecutar un modelo de 13,5B en hardware de consumo y estaciones de trabajo mediante una única cuantización IQ4_XS generada con importance matrix (imat), que ocupa 7,411 GB y mantiene una divergencia KL frente a BF16 de 0,011683 en WikiText-2 y 0,011220 en un conjunto held-out, con un acuerdo top-1 del 94,529% y 94,784% respectivamente. Es relevante ahora porque ofrece un equilibrio medido entre tamaño en disco y fidelidad respecto al modelo original, con cifras de precisión publicadas frente a otras cuantizaciones del mismo modelo.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de la familia Ministral 3 (14B) en hardware relativamente modesto, como una RTX 4090 de 24 GB, manteniendo una ventana de contexto de hasta 64K tokens según las recomendaciones del autor. El modelo base es de tipo text-only (la torre de visión no se incluye en los ficheros GGUF), lo que lo hace adecuado para tareas puramente lingüísticas y de razonamiento.
-
-El paquete está verificado con el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` de llama.cpp y es compatible con backends CUDA, Metal y CPU. La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks del modelo base es limitada en la model card del cuantizador, por lo que varios apartados de esta ficha se marcan como no disponibles.
+La ficha se centra en la versión GGUF de Xylolabs. Los datos de arquitectura interna, contexto máximo nativo y composición del entrenamiento del modelo base no están disponibles en la información proporcionada, por lo que se indican como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (hereda la del modelo base Ministral-3-14B-Instruct-2512-BF16; detalles internos no disponibles) |
-| Parametros totales | 13.506.073.600 (~13,5B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | Hasta 256K tokens según hardware; 64K recomendado en GPUs de 24 GB (RTX 4090/3090) |
-| Tipos de cuantizacion | IQ4_XS con importance matrix (único fichero publicado: `IQ4_XS-imat`, 7,411 GB) |
-| Idiomas soportados | en (inglés), ko (coreano) |
+| Arquitectura | Transformer denso (detalles internos no disponibles); empaquetado GGUF para llama.cpp |
+| Parametros totales | 13.506.073.600 (13,5B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible como valor nativo del modelo base; la model card documenta despliegues con 64K, 128K y 256K de contexto según memoria disponible |
+| Tipos de cuantizacion | Una sola cuantización publicada en este repo: IQ4_XS con importance matrix (IQ4_XS-imat), 7,411 GB. La model card compara además Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_0, Q4_1, IQ4_NL, IQ4_XS, Q3_K_M, Q3_K_S, Q2_K, Q2_K_L, UD-Q8_K_XL, UD-Q6_K_XL, UD-Q5_K_XL, UD-Q4_K_XL, UD-Q3_K_XL, UD-Q2_K_XL, UD-IQ3_XXS, UD-IQ2_M y UD-IQ2_XXS de otros autores |
+| Idiomas soportados | Inglés (en) y coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (un fichero por cuantización, con tokenizer y chat template incluidos; sin torre de visión) |
+| Formato de pesos | GGUF (un archivo por cuantización; incluye tokenizer y plantilla de chat) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer denso de 13,5B parámetros del que no se detallan en la información disponible ni el número de capas, ni las dimensiones de atención, ni si emplea mecanismos como atención lineal o decodificación especulativa. La model card del GGUF no documenta el proceso de entrenamiento del modelo original: no hay datos sobre volumen de tokens, composición del dataset ni uso de RLHF o DPO. Lo que sí se documenta es el proceso de cuantización: se generó una cuantización IQ4_XS utilizando una importance matrix (imat), y se publicaron métricas de fidelidad frente a BF16 sobre WikiText-2 y un conjunto held-out, con divergencia KL y acuerdo top-1. El repositorio incluye la plantilla de chat original, lo que permite usar el formato conversacional del modelo base a través de `--jinja` en llama.cpp.
 
-La model card del cuantizador no detalla la arquitectura interna del modelo base más allá de identificarlo como Ministral-3-14B-Instruct-2512-BF16, un transformer decoder-only de aproximadamente 13,5 mil millones de parámetros. No se especifican en la información disponible el número de capas, la dimensión oculta, el tipo de atención ni si emplea técnicas como atención lineal o decodificación especulativa. Tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
-
-El trabajo técnico documentado en este repositorio es la cuantización: se ha generado una única variante IQ4_XS utilizando una importance matrix (`-imat`), lo que mejora la fidelidad respecto a una cuantización IQ4_XS estándar. Según la tabla de precisión del autor, esta cuantización IQ4_XS-imat presenta una divergencia KL media de 0,011683 en WikiText-2 y un 94,529% de acuerdo top-1 con el modelo BF16, frente a la IQ4_XS de Unsloth (0,011853 de KL y 94,397% top-1) y muy por encima de cuantizaciones de 3 bits o menos. El paquete se ha validado con llama.cpp en el commit indicado.
+La innovación técnica destacable de esta publicación no está en el modelo, sino en la metodología de evaluación de la cuantización: la model card ofrece una tabla comparativa extensa con decenas de cuantizaciones de distintos autores (llama.cpp, Unsloth y la propia IQ4_XS-imat), lo que permite elegir el archivo en función de la fidelidad y del presupuesto de memoria. La versión IQ4_XS-imat se sitúa, según esos datos, con una KL de 0,011683 y un top-1 de 94,529% en WikiText-2, ligeramente mejor que la IQ4_XS sin imat (KL 0,011853, top-1 94,397%) y peor que Q4_K_M de llama.cpp en KL (0,011679) aunque con top-1 superior (94,775% para Q4_K_M).
 
 ## Capacidades
-
-- Generación de texto conversacional e instrucciones en inglés y coreano.
-- Razonamiento y respuesta a prompts de tipo instruct (el nombre del modelo indica variante Instruct).
-- Ejecución local en llama.cpp con soporte de chat template original (flag `--jinja`).
-- Compatible con `llama-cli` y `llama-server`, lo que permite exponer una API compatible con endpoints.
-- Modelo text-only: no incluye torre de visión ni capacidades multimodales en este paquete.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generación de texto y conversación multi-turno, con plantilla de chat incluida en el archivo GGUF.
+- Razonamiento y respuesta a instrucciones, al ser una variante Instruct del modelo base.
+- Capacidades multilingües limitadas a inglés y coreano según los metadatos del repo.
+- Ejecución local en llama.cpp sobre CUDA, Metal o CPU, con soporte de `llama-cli` y `llama-server`.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como servidor compatible con la API de chat.
+- No incluye visión: la torre de visión del modelo base fue eliminada en esta cuantización, por lo que es estrictamente text-only.
+- No se documenta en la información disponible soporte explícito de tool calling, function calling, modo thinking ni capacidades de agente multi-paso.
 
 ## Casos de uso
-
-- Asistente conversacional local en inglés o coreano: el modelo puede gestionar diálogos multi-turno gracias a la ventana de contexto de 64K tokens recomendada en GPUs de 24 GB, lo que permite mantener historiales largos sin truncar.
-- Generación de texto y redacción asistida en estaciones de trabajo sin conexión: al ejecutarse en llama.cpp sobre CPU, Metal o CUDA, es adecuado para entornos con requisitos de privacidad donde no se puede enviar texto a la nube.
-- Procesamiento de documentos largos: con hasta 128K o 256K tokens de contexto en hardware de 48 GB o superior (H100, RTX 6000 Ada, Mac Studio), se pueden resumir o extraer información de contratos, informes o transcripciones extensas.
-- Servicio de inferencia ligero con `llama-server`: el paquete expone una API compatible con endpoints, lo que permite desplegar un microservicio de generación de texto en una sola GPU de 24 GB.
-- Prototipado e investigación en PLN: al ser Apache 2.0 y ejecutable en una RTX 4090, sirve para experimentar con prompts, evaluaciones y ajustes sin depender de infraestructura cloud.
-- Traducción y asistencia bilingüe inglés-coreano: dentro de los idiomas declarados, puede emplearse para tareas de traducción o atención al cliente en coreano con contexto largo.
-- Filtrado y clasificación de texto a escala moderada: con throughput razonable en una GPU de consumo, puede etiquetar o resumir lotes de documentos en pipelines internos.
+- Asistente conversacional local: desplegar `llama-server` con la cuantización IQ4_XS-imat en una RTX 4090 o 3090 (24 GB) y servir conversaciones multi-turno con hasta 64K de contexto, aprovechando la plantilla de chat incluida y la fidelidad del 94,5% top-1 frente a BF16.
+- Generación de texto en estaciones de trabajo sin GPU dedicada de gran memoria: usar llama.cpp en CPU o Metal con el archivo de 7,4 GB, adecuado para portátiles y equipos con 16 GB de RAM o más.
+- Procesamiento de documentos largos en inglés o coreano: con 128K de contexto en configuraciones de 48 GB de VRAM (RTX 6000 Ada o 2 x 24 GB), el modelo puede resumir o extraer información de contratos, informes o hilos de soporte extensos.
+- Prototipado rápido de aplicaciones de chat: el tag `endpoints_compatible` y el soporte de `llama-server` permiten exponer el modelo como API compatible y conectarlo a frontends existentes sin reentrenamiento.
+- Evaluación comparativa de cuantizaciones: la tabla de precisión publicada permite seleccionar la variante adecuada según el compromiso entre tamaño (desde 4,057 GB en UD-IQ2_XXS hasta 17,117 GB en UD-Q8_K_XL) y fidelidad, útil para equipos que calibran despliegues.
+- Inferencia en hardware Apple Silicon: con una Mac Studio M5 Max de 128 GB de memoria unificada, la model card documenta contexto de 256K, lo que habilita tareas de análisis de corpus largos en local.
+- Entornos con requisitos de licencia permisiva: al ser Apache 2.0, puede integrarse en productos comerciales sin las restricciones de licencias copyleft, siempre que se respeten las condiciones de atribución.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí publica métricas de fidelidad de cuantización frente a BF16, que se resumen a continuación para la variante de este repo y algunas alternativas relevantes:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de la cuantización frente al modelo BF16:
-
-| Cuantizacion | Tamano | WikiText-2 KL | Top-1 | Held-out KL | Top-1 |
+| Cuantizacion | Tamano | WikiText-2 KL | WikiText-2 top-1 | Held-out KL | Held-out top-1 |
 |---|---:|---:|---:|---:|---:|
 | IQ4_XS-imat (este repo) | 7,411 GB | 0,011683 | 94,529% | 0,011220 | 94,784% |
 | Unsloth IQ4_XS | 7,432 GB | 0,011853 | 94,397% | 0,011744 | 94,892% |
 | llama.cpp Q4_K_M | 8,239 GB | 0,011679 | 94,775% | 0,010556 | 95,049% |
-| Unsloth UD-Q4_K_XL | 8,366 GB | 0,007897 | 95,809% | 0,006969 | 96,108% |
-| llama.cpp Q8_0 (referencia) | 14,359 GB | 0,000402 | 98,799% | 0,000447 | 98,775% |
+| Unsloth Q4_K_M | 8,239 GB | 0,008789 | 95,456% | 0,007975 | 95,843% |
+| llama.cpp Q8_0 | 14,359 GB | 0,000402 | 98,799% | 0,000447 | 98,775% |
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: el fichero IQ4_XS-imat ocupa 7,411 GB; el autor recomienda sumar el KV cache en f16 a la longitud de contexto deseada más 2 GB para el runtime, y que el total quede por debajo del 90% de la memoria disponible.
-- GPU recomendadas según el autor:
-  - RTX 4090 / RTX 3090 (24 GB): 64K de contexto.
-  - RTX 5090 (32 GB): 64K de contexto.
-  - RTX 6000 Ada o 2 x 24 GB (48 GB): 128K de contexto.
-  - H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB unificada), H200 (141 GB), B200 (~192 GB), Mac Studio M5 Ultra (256 GB y 512 GB): 256K de contexto.
-- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 y RTX 5090 con 64K de contexto; también en equipos Apple Silicon con memoria unificada.
-- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con backends CUDA, Metal o CPU, verificado en el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8`. No se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
+- VRAM estimada para inferencia: el archivo IQ4_XS-imat ocupa 7,411 GB; con overhead de contexto y caché KV, se recomienda al menos 10-12 GB de VRAM para contexto moderado.
+- GPU recomendadas según la model card: RTX 4090 y RTX 3090 (24 GB) para 64K de contexto; RTX 5090 (32 GB) para 64K; RTX 6000 Ada o 2 x 24 GB (48 GB) para 128K; H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada) y Mac Studio M5 Max (128 GB unificada) para 256K.
+- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 y RTX 5090 con contexto de 64K; también en equipos Apple Silicon con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp (probado con el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8`), con `llama-cli` y `llama-server`; soporte de CUDA (`-DGGML_CUDA=ON`), Metal y CPU.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Ministral-3-14B-Instruct-2512-GGUF (este) | ~13,5B | 64K–256K según hardware | GGUF IQ4_XS-imat (7,4 GB) | Apache 2.0 | Hugging Face (Xylolabs) |
-| Ministral-3-14B-Instruct-2512-BF16 (base) | ~13,5B | no disponible en la info | BF16 | Apache 2.0 | Hugging Face (mistralai) |
-| Cuantizaciones Unsloth del mismo base (Q4_K_M, UD-Q4_K_XL, IQ4_XS) | ~13,5B | depende de la ejecución | GGUF (7,4–8,4 GB) | Apache 2.0 | Hugging Face (Unsloth) |
+| Ministral-3-14B-Instruct-2512-GGUF (este) | 13,5B | Hasta 256K según hardware (documentado) | Apache 2.0 | GGUF (IQ4_XS-imat) | Text-only, en/ko, 7,4 GB |
+| mistralai/Ministral-3-14B-Instruct-2512-BF16 | 13,5B | No disponible | Apache 2.0 | Safetensors BF16 | Modelo base, incluye torre de visión |
+| Cuantizaciones Unsloth del mismo base (UD-Q4_K_XL, Q4_K_M, etc.) | 13,5B | No disponible | Apache 2.0 | GGUF | Alternativas con métricas de fidelidad comparables publicadas en la model card |
+| llama.cpp Q4_K_M del mismo base | 13,5B | No disponible | Apache 2.0 | GGUF | 8,239 GB, KL 0,011679 en WikiText-2 |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada, por lo que la comparación se limita a parámetros, formato, licencia y disponibilidad.
+No se dispone de información sobre otros modelos de la misma categoría (por ejemplo, alternativas de 13-14B de otros fabricantes) en la documentación proporcionada, por lo que la comparativa se limita a variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
-
-- Modelo text-only: este paquete GGUF no incluye la torre de visión del modelo base; cualquier tarea multimodal queda fuera de alcance.
-- Idiomas declarados limitados a inglés y coreano; el rendimiento en castellano u otros idiomas no está documentado.
-- La cuantización IQ4_XS-imat introduce pérdida de precisión: 94,529% de acuerdo top-1 y KL de 0,011683 frente a BF16 en WikiText-2, lo que puede afectar a tareas sensibles a matices.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad en la información disponible.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad del modelo base en la model card del cuantizador.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene revisar los términos del modelo base de Mistral AI para confirmar obligaciones adicionales.
-- El contexto máximo práctico depende del hardware: 64K en GPUs de 24 GB y hasta 256K en GPUs de 80 GB o más; superar la memoria disponible provoca degradación o fallo.
-- La única cuantización publicada es IQ4_XS-imat; no hay variantes de mayor o menor precisión en este repositorio.
-- Verificado únicamente con un commit concreto de llama.cpp; otras versiones pueden requerir ajustes.
+- No incluye visión: la torre de visión del modelo base fue eliminada, por lo que no puede procesar imágenes aunque el modelo original sí pudiera.
+- Idiomas limitados: solo inglés y coreano según los metadatos; el rendimiento en castellano no está documentado y podría ser deficiente.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de factualidad para esta cuantización.
+- Pérdida de fidelidad por cuantización: la IQ4_XS-imat presenta una KL de 0,011683 frente a BF16 en WikiText-2, lo que implica una degradación medible aunque moderada; para tareas sensibles a la precisión puede ser preferible Q8_0 o el modelo BF16.
+- Sesgos conocidos: no documentados en la información disponible; deben asumirse los del modelo base, no evaluados aquí.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se deben conservar los avisos de licencia y atribución correspondientes.
+- Dependencia de la versión de llama.cpp: la model card indica que se probó con un commit concreto; versiones distintas pueden requerir ajustes.
+- El contexto máximo real depende de la memoria disponible y de la configuración de llama.cpp; los valores de 64K, 128K y 256K son escenarios documentados, no un límite nativo confirmado del modelo.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-GGUF
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
 - Licencia: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-GGUF/blob/main/LICENSE
-- llama.cpp (commit verificado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Gráfico de KL media: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/accuracy-mean-kl.png
+- Gráfico de acuerdo top-1: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/accuracy-top1.png

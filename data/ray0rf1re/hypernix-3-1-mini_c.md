@@ -2,107 +2,99 @@
 
 ## Resumen
 
-hyperNix-3.1-mini_c es un ajuste fino de tipo chat (chat-tune) del modelo base Compactbot/hypernix-3.1-mini, desarrollado por el usuario ray0rf1re. Se trata de un modelo de lenguaje pequeno (SLM) de aproximadamente 48,7 millones de parametros, entrenado desde cero con la libreria propia HyperNix. El ajuste se realizo sobre el conjunto de datos HuggingFaceTB/smol-smoltalk con 440.871 ejemplos y funcion de perdida calculada unicamente sobre los turnos del asistente, lo que reduce la val_loss de 6,9494 (modelo sin ajustar) a 2,6645.
+hyperNix-3.1-mini_c es un modelo de lenguaje de pequeno tamano (SLM) de aproximadamente 48,7 millones de parametros, publicado por el usuario ray0rf1re en Hugging Face. Se trata de un ajuste fino conversacional (chat-tune) del modelo base Compactbot/hypernix-3.1-mini, desarrollado con la libreria propia HyperNix y entrenado desde cero sobre la arquitectura denominada hypernix0x-v2. El modelo esta pensado para generar respuestas breves y sencillas en ingles, como admite explicitamente su propia model card.
 
-El modelo emplea una arquitectura transformer de 8 capas con d_model de 512, 8 cabezas de atencion y 2 cabezas KV (GQA), una longitud maxima de secuencia de 512 tokens y un vocabulario de 32.000 tokens. Su proposito es ofrecer un modelo conversacional minimo, ejecutable en hardware muy modesto, util para experimentacion, prototipado rapido y despliegue en entornos con recursos limitados.
+El ajuste se realizo sobre el dataset HuggingFaceTB/smol-smoltalk (440.871 ejemplos) aplicando perdida solo sobre los turnos del asistente, lo que reduce el val_loss de 6,9494 (modelo sin ajustar) a 2,6645. Es relevante en el contexto de los modelos compactos experimentales: demuestra que es posible obtener un comportamiento conversacional basico con menos de 50 millones de parametros y una ventana de contexto muy limitada de 512 tokens.
 
-Es relevante ahora porque demuestra que es posible obtener un comportamiento de chat funcional con menos de 50 millones de parametros cuando se parte de un modelo base preentrenado y se aplica un ajuste supervisado cuidadoso. Su licencia Apache 2.0 facilita su uso comercial y su modificacion, aunque sus capacidades son deliberadamente limitadas: el propio autor advierte que hay que esperar respuestas cortas y simples.
+Su interes practico es acotado: sirve como banco de pruebas para la libreria HyperNix, para experimentos de ajuste fino de bajo coste y para estudiar el comportamiento de SLM entrenados desde cero. No compite con modelos de proposito general en razonamiento, codigo o conocimiento factual, y su adopcion en produccion requeriria validacion adicional dada la escasez de documentacion tecnica y de benchmarks publicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (implementacion HyperNix / BrewerModel) |
-| Parametros totales | 48.706.048 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (hypernix0x-v2), 8 capas, d_model 512, 8 cabezas de atencion, 2 cabezas KV (GQA), RoPE theta 100000 |
+| Parametros totales | 48.706.048 (~48,7 M) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (max seq len) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion no documentada) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | no disponible (solo pesos safetensors en el repo; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ingles (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (lm_head atado, no almacenado) |
-
-Especificaciones adicionales declaradas en la model card:
-
-| Parametro | Valor |
-|---|---|
-| Capas | 8 |
-| d_model | 512 |
-| Cabezas de atencion | 8 |
-| Cabezas KV | 2 (GQA) |
-| RoPE theta | 100000 |
-| Vocabulario | 32000 |
-| Tamano del repo | 0,2 GB |
-| Libreria | hypernix |
+| Formato de pesos | safetensors (model.safetensors; lm_head atado, no almacenado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 8 capas con atencion multi-cabeza con consultas agrupadas (8 cabezas de consulta y 2 cabezas KV), dimension de modelo de 512 y embeddings posicionales rotatorios (RoPE) con theta de 100.000. El vocabulario es de 32.000 tokens y la longitud maxima de secuencia es de 512 tokens. La capa de salida (lm_head) esta atada a los embeddings de entrada y no se almacena como tensor independiente en el checkpoint, por lo que la carga requiere `strict=False`.
+El modelo es un transformer decoder-only de 8 capas con dimension de modelo 512, 8 cabezas de atencion y 2 cabezas KV (atencion con query grouping, GQA), embeddings rotatorios con theta 100000 y un vocabulario de 32.000 tokens. La cabeza de salida (lm_head) esta atada a los embeddings y no se almacena por separado en el fichero de pesos, lo que explica en parte el reducido tamano del repositorio (0,2 GB). La arquitectura pertenece a la familia propietaria hypernix0x-v2 y se carga mediante la clase BrewerModel de la libreria hypernix.
 
-El modelo base hypernix-3.1-mini fue entrenado desde cero por ray0rf1re. Segun la informacion disponible, el ajuste supervisado directo sobre el modelo base fallo en tres ocasiones porque los priors de respuesta multiple y de eco eran demasiado fuertes para un modelo de 48 millones de parametros con ese volumen de datos. La solucion adoptada fue continuar el preentrenamiento con mas datos y aplicar despues el ajuste supervisado sobre esa base. Este checkpoint concreto es el resultado del chat-tune sobre smol-smoltalk (440.871 ejemplos) con perdida calculada solo sobre los turnos del asistente, alcanzando una val_loss de 2,6645 frente a 6,9494 del modelo sin ajustar. No se dispone de informacion sobre el numero total de tokens de preentrenamiento, la composicion del dataset original ni el uso de RLHF o DPO.
-
-El formato de prompt es textual y simple: `User: <texto>\nAssistant: <texto>`, con el token EOS terminando el turno. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+El entrenamiento parte de Compactbot/hypernix-3.1-mini, que segun la model card fue sometido a un run de preentrenamiento continuado en la infraestructura de Compact AI. Sobre esa base se aplico un ajuste fino supervisado con el dataset HuggingFaceTB/smol-smoltalk (440.871 ejemplos), usando perdida calculada unicamente sobre los tokens del asistente. No se documenta uso de RLHF, DPO ni tecnicas de decodificacion especulativa. El formato de prompt es `User: <texto>\nAssistant: <texto>`, con EOS como terminador de turno.
 
 ## Capacidades
 
-- Generacion de texto conversacional de un solo turno o multi-turno corto, con respuestas breves y simples.
-- Dialogo de chat siguiendo el formato de prompt `User:` / `Assistant:`.
-- Razonamiento basico y respuesta a preguntas sencillas, limitado por el tamano del modelo.
-- Capacidad multilingue: no documentada; los idiomas soportados figuran como no disponibles.
-- Tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado; poco probable dado el tamano.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Generacion de codigo y matematicas: no documentada; el autor advierte que hay que esperar respuestas cortas y simples.
+- Generacion de texto conversacional breve en ingles, orientada a respuestas cortas y simples.
+- Dialogo de un solo turno o multi-turno muy limitado, condicionado por la ventana de 512 tokens.
+- Seguimiento del formato de prompt `User:` / `Assistant:` con terminacion por EOS.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de codigo, matematicas avanzadas, vision ni audio.
+- Multilingue: no; la model card declara unicamente ingles.
+- No se documenta modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Prototipado de pipelines de chat: permite validar el formato de prompt, el bucle de inferencia y la integracion con la libreria HyperNix antes de escalar a modelos mayores, gracias a su tamano de 0,2 GB y su bajo coste de carga.
-- Experimentacion academica con SLM: sirve como punto de partida para estudiar el efecto del ajuste supervisado con perdida solo en el asistente en modelos de menos de 50 millones de parametros, comparando la val_loss de 6,9494 frente a 2,6645.
-- Despliegue en dispositivos con recursos muy limitados: sus 48,7 millones de parametros y su contexto de 512 tokens permiten ejecutarlo en CPU o en GPUs de gama baja para tareas de generacion de texto breve.
-- Asistente de respuestas cortas en entornos embebidos: adecuado para respuestas de una o dos frases en aplicaciones donde la latencia y el consumo de memoria son criticos.
-- Base para ajustes finos especificos de dominio: al estar bajo licencia Apache 2.0 y ser un modelo pequeno, se puede reentrenar rapidamente sobre datasets de nicho con recursos modestos.
-- Educacion y demostraciones: util para explicar el funcionamiento interno de un transformer decoder-only con GQA y RoPE sin necesidad de infraestructura costosa.
-- Pruebas de integracion de la libreria hypernix: el snippet de carga con `BrewerModel` y `BrewerConfig` permite verificar la compatibilidad de la herramienta en entornos de desarrollo.
+- Prototipado de la libreria HyperNix: sirve como ejemplo funcional de carga de pesos safetensors con BrewerModel y BrewerConfig para desarrolladores que evaluan el ecosistema.
+- Experimentos academicos con SLM: permite estudiar el efecto del ajuste fino supervisado con perdida solo en el asistente sobre un modelo de ~49 M de parametros, comparando val_loss antes (6,9494) y despues (2,6645).
+- Generacion de respuestas cortas en entornos con recursos minimos: al ocupar menos de 0,2 GB en safetensors, puede ejecutarse en CPU o en GPUs de gama baja para tareas de completado simple en ingles.
+- Base para ajustes finos de dominio: su licencia Apache 2.0 y su tamano permiten reentrenarlo en un dataset pequeno especifico (por ejemplo, respuestas de FAQ) en hardware de consumo.
+- Evaluacion de formatos de prompt: util para probar plantillas conversacionales y terminadores EOS en pipelines de investigacion antes de escalar a modelos mayores.
+- Docencia y divulgacion: ejemplo didactico de arquitectura transformer decoder-only con GQA y RoPE, con configuracion completa publicada en el repositorio.
+- Pruebas de regresion en pipelines de inferencia: modelo ligero para validar integraciones de carga de safetensors y tokenizacion en CI sin coste de GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento documentado es la perdida de validacion del ajuste supervisado:
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento reportado es la perdida de validacion del ajuste conversacional:
 
-| Metrica | Modelo sin ajustar | Modelo ajustado |
-|---|---|---|
-| val_loss (smol-smoltalk) | 6,9494 | 2,6645 |
+| Metrica | Valor |
+|---|---|
+| val_loss (modelo sin ajustar) | 6,9494 |
+| val_loss (hyperNix-3.1-mini_c) | 2,6645 |
+| Dataset de ajuste | HuggingFaceTB/smol-smoltalk (440.871 ejemplos) |
+
+No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de otras evaluaciones estandar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en precision completa (48,7 millones de parametros, checkpoint de 0,2 GB); con cuantizacion a 8 o 4 bits el consumo seria de decenas de megabytes, aunque no se documentan formatos de cuantizacion.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas como RTX 3060, RTX 4060 o superiores, e incluso en GPUs integradas.
-- Cabe en consumer GPU: si, en practicamente cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: la model card solo documenta la carga mediante la libreria `hypernix` (`BrewerModel` + `BrewerConfig` + `safetensors`). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en precision completa (48,7 M de parametros en fp32 ocupan aproximadamente 195 MB); en fp16 alrededor de 100 MB.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; el modelo cabe holgadamente en GTX 1650, RTX 3060, RTX 4090, A100 o H100.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna e incluso en CPU.
+- Opciones de despliegue: la model card solo documenta carga mediante la libreria hypernix (BrewerModel + safetensors). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; al no publicarse pesos GGUF, llama.cpp y Ollama no son viables sin conversion previa.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| hyperNix-3.1-mini_c | 48,7 M | 512 tokens | Apache 2.0 | Hugging Face (ray0rf1re) |
-| Compactbot/hypernix-3.1-mini (modelo base) | no disponible (misma familia, ~49 M segun el autor) | no disponible | no disponible | Hugging Face (Compactbot) |
-| ray0rf1re/HyperNix.3-mini | no disponible | no disponible | no disponible | Hugging Face (ray0rf1re) |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| hyperNix-3.1-mini_c | ~48,7 M | 512 | Ingles | Apache 2.0 | Libreria propia hypernix; sin benchmarks publicados |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 | Ingles y otros | Apache 2.0 | Mayor tamano y contexto; ecosistema transformers estandar |
+| Qwen2.5-0.5B | 494 M | 32.768 | Multilingue | Apache 2.0 | Mucho mayor capacidad y contexto; soporte amplio de herramientas |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Ingles | Apache 2.0 | Un orden de magnitud mas grande; benchmarks publicados |
 
-No se dispone de datos de rendimiento comparativo ni de modelos alternativos de la misma categoria documentados en la informacion proporcionada.
+La comparacion directa con estos modelos es desfavorable en capacidad y contexto, pero hyperNix-3.1-mini_c se distingue por su tamano minimo y por estar construido sobre una pila propia (hypernix) en lugar de transformers. No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Tamano muy reducido: con 48,7 millones de parametros, las respuestas son cortas y simples; no es adecuado para razonamiento complejo, codigo o matematicas.
-- Contexto limitado a 512 tokens, insuficiente para conversaciones largas o documentos extensos.
-- Riesgo elevado de alucinacion y de respuestas incoherentes fuera de dominios simples, inherente a los SLM.
-- El ajuste supervisado directo sobre el modelo base fallo tres veces segun la documentacion, lo que sugiere inestabilidad en el entrenamiento de esta familia a esta escala.
-- Idiomas soportados no documentados; no se garantiza un comportamiento correcto en castellano ni en otros idiomas distintos del ingles de smol-smoltalk.
-- No se documentan sesgos conocidos, pero al entrenarse sobre smol-smoltalk puede heredar los sesgos de ese corpus.
-- La carga requiere `strict=False` porque el lm_head esta atado y no se almacena; hay que tenerlo en cuenta en pipelines de despliegue.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el modelo base y los datos de entrenamiento pueden tener sus propias condiciones no documentadas aqui.
-- Sin soporte documentado para tool calling, agentes ni formatos de cuantizacion estandar, lo que limita su integracion en produccion.
+- Tamano muy reducido (~49 M de parametros): se deben esperar respuestas cortas, simples y con conocimiento factual muy limitado, tal como advierte el propio autor.
+- Ventana de contexto de 512 tokens: insuficiente para documentos largos, conversaciones extensas o prompts complejos.
+- Solo ingles: no hay soporte documentado de otros idiomas, incluido el castellano.
+- Riesgo elevado de alucinacion: al ser un modelo pequeno entrenado sobre smol-smoltalk, la probabilidad de generar afirmaciones incorrectas es alta.
+- Sesgos: no se documenta ninguna evaluacion de sesgos; al entrenarse sobre un dataset conversacional general, puede reproducir sesgos presentes en el mismo.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad mas alla del val_loss, por lo que no se recomienda su uso en produccion sin evaluacion propia.
+- Dependencia de la libreria hypernix: la carga requiere BrewerModel y BrewerConfig, lo que limita la portabilidad frente a transformers; no hay pesos GGUF ni integraciones con servidores de inferencia estandar.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Compactbot/hypernix-3.1-mini debe verificarse por si tuviera condiciones adicionales.
+- Repositorio con muy poca traccion (213 descargas, 1 like): escasa comunidad y soporte, lo que reduce la fiabilidad a largo plazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ray0rf1re/hyperNix-3.1-mini_c
 - Modelo base: https://huggingface.co/Compactbot/hypernix-3.1-mini
-- Modelo relacionado del mismo autor: https://huggingface.co/ray0rf1re/HyperNix.3-mini
+- Dataset de ajuste (smol-smoltalk): https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
+- Dataset smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
+- Paper, blog o repositorio de la libreria hypernix: no disponible en la informacion proporcionada.

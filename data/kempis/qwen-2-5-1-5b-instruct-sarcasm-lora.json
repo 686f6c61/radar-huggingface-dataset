@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Ap1s/qwen-2.5-1.5b-instruct-Sarcasm-LoRA",
+  "renamed_at": "2026-11-27T04:45:16.534Z",
   "benchmarks": [],
   "sources": [
     {

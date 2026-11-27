@@ -2,108 +2,116 @@
 
 ## Resumen
 
-AbsoluteZero-nli-4b es un cross-encoder especializado en inferencia de lenguaje natural (NLI) desarrollado por dleemiller, construido mediante ajuste fino del modelo base Qwen/Qwen3.5-4B. Resuelve la tarea de determinar si una premisa (texto) implica, contradice o es neutral respecto a una hipotesis (afirmacion), devolviendo probabilidades calibradas. Su propuesta diferencial es el "modo think": ademas del pase rapido clasico de un cross-encoder, el modelo puede generar una traza de razonamiento corta antes de emitir el veredicto, lo que permite auditar por que se tomo una decision de clasificacion.
+AbsoluteZero-nli-4b es un cross-encoder especializado en inferencia de lenguaje natural (NLI) desarrollado por dleemiller sobre el modelo base Qwen/Qwen3.5-4B. Resuelve el problema de clasificar la relacion logica entre un texto (premisa) y una afirmacion (hipotesis): implicacion, contradiccion o neutralidad. Su relevancia actual radica en que combina dos modos de inferencia: un modo rapido de un solo paso por la red y un modo "think" que genera una traza de razonamiento breve antes de emitir el veredicto, lo que permite auditar por que el modelo clasifica de una determinada manera.
 
-Con 4.205.766.656 parametros y soporte de documentos de hasta 32k tokens, el modelo esta orientado a tareas de clasificacion zero-shot, deteccion de alucinaciones, verificacion de hechos (fact-checking), evaluacion de groundedness en pipelines RAG, moderacion y revision de contratos. La licencia Apache-2.0 facilita su uso comercial. Segun el autor, ocupa el primer puesto en el OpenNLI Skill Index (a fecha 11-03-26) en modo rapido.
+El modelo tiene 4.205.766.656 parametros y admite documentos de hasta 32.000 tokens, lo que lo hace adecuado para contratos, politicas y pasajes RAG largos. Se distribuye bajo licencia Apache-2.0 y esta pensado para tareas de deteccion de alucinaciones, fact-checking, groundedness en RAG, moderacion y clasificacion zero-shot.
 
-Es relevante ahora porque cubre una necesidad creciente en sistemas RAG y agenticos: verificar de forma barata y observable si una respuesta generada esta respaldada por el contexto recuperado, con trazabilidad del razonamiento en los casos dificiles (cuantificadores, negaciones, logica multi-paso).
+Su interes practico es doble: por un lado, ofrece probabilidades calibradas de implicacion, contradiccion y neutralidad; por otro, las trazas de razonamiento permiten agrupar fallos de clasificacion y probar variaciones de la hipotesis contra un conjunto de validacion, una capacidad poco habitual en encoders zero-shot clasicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen3.5) adaptado como cross-encoder con cabeza de clasificacion; tipo `qwen3_5_text` con codigo personalizado |
+| Arquitectura | Cross-encoder sobre transformer decoder Qwen3.5 (qwen3_5_text) con cabeza de clasificacion NLI; codigo personalizado (custom_code) |
 | Parametros totales | 4.205.766.656 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 32k tokens (documentos) |
+| Parametros activos | no disponible (no es MoE segun la informacion proporcionada) |
+| Longitud de contexto | hasta 32.000 tokens (documentos) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (repo de 8.4 GB) |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B y lo adapta como cross-encoder para NLI. Incorpora una cabeza de clasificacion que permite un modo rapido de un solo pase hacia delante, similar a los cross-encoders tradicionales. Adicionalmente, dispone de un modo think en el que el modelo genera una traza de razonamiento breve (del orden de ~50 tokens en ANLI y ~200 tokens en problemas de logica de primer orden) que luego es leida por la cabeza de puntuacion para emitir el veredicto final.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer de tipo decoder, y lo adapta como cross-encoder para NLI anadiendo una cabeza de clasificacion que devuelve probabilidades sobre las tres etiquetas (implicacion, contradiccion, neutralidad). El pipeline declarado es zero-shot-classification y la libreria de referencia es sentence-transformers, con soporte de codigo personalizado (trust_remote_code).
 
-El entrenamiento se apoya en los datasets propios dleemiller/FineCat-NLI y dleemiller/FineCat-NLI-Reason, y las etiquetas del modelo indican el uso de destilacion de conocimiento (knowledge-distillation) y GRPO (Group Relative Policy Optimization) como tecnicas de alineacion/optimizacion. No se detalla en la informacion disponible el numero total de tokens de entrenamiento ni la composicion exacta del dataset. La innovacion principal es la combinacion de clasificacion rapida y razonamiento observable en un mismo modelo.
+El entrenamiento se apoya en los datasets propios dleemiller/FineCat-NLI y dleemiller/FineCat-NLI-Reason, y las etiquetas del repositorio mencionan knowledge-distillation y GRPO (Group Relative Policy Optimization). La innovacion principal es el modo "think": el modelo genera una traza corta de razonamiento (aproximadamente 50 tokens de media en ANLI y unos 200 en problemas de logica de primer orden) que la cabeza de puntuacion lee antes de emitir el veredicto, lo que permite inspeccionar el razonamiento en casos dificiles como negaciones, cuantificadores y logicas de varios pasos. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento ni la composicion completa del dataset.
 
 ## Capacidades
 
-- Clasificacion NLI: etiqueta pares premisa-hipotesis como entailment, contradiction o neutral con probabilidades calibradas.
-- Clasificacion zero-shot: mediante plantillas de hipotesis ("This text is about {label}").
-- Modo think con trazas de razonamiento auditables para casos dificiles (logica multi-paso, cuantificadores, negaciones, contratos largos).
-- Deteccion de alucinaciones y verificacion de groundedness en respuestas generadas.
-- Verificacion de hechos (fact-checking) contra pasajes de referencia.
-- Soporte de documentos largos de hasta 32k tokens.
-- Capacidades multilingues: limitadas al ingles segun los metadatos.
-- No se documenta soporte de tool calling ni de agentes multi-paso en la informacion disponible.
+- Clasificacion NLI de tres vias (implicacion, contradiccion, neutralidad) con probabilidades calibradas.
+- Clasificacion zero-shot y etiquetado de textos mediante hipotesis generadas ("This text is about X").
+- Deteccion de alucinaciones y verificacion de groundedness en pipelines RAG.
+- Modo rapido: un solo paso forward con cabeza de clasificacion, similar a un cross-encoder convencional.
+- Modo think: genera una traza de razonamiento breve e inspeccionable antes del veredicto.
+- Razonamiento multi-paso sobre negaciones, cuantificadores y logica de primer orden.
+- Fact-checking y moderacion mediante afirmaciones de politica como hipotesis.
+- Extraccion clinica y revision de contratos sobre documentos largos (hasta 32k tokens).
+- Capacidad multilingue: solo ingles segun la informacion disponible.
+- No se documenta soporte de tool calling ni comportamiento agentico generico.
 
 ## Casos de uso
 
-- Grounding en RAG: dado un conjunto de pasajes recuperados y una respuesta generada, el modelo verifica si la respuesta esta implicada por el contexto (86.4% en RAGTruth), permitiendo filtrar respuestas no respaldadas antes de mostrarlas al usuario.
-- Deteccion de alucinaciones en produccion: comprobar cada afirmacion de un LLM contra las fuentes citadas y marcar como no soportadas aquellas con baja probabilidad de entailment.
-- Clasificacion zero-shot de tickets y resenas: etiquetar texto en categorias arbitrarias mediante plantillas de hipotesis, sin entrenamiento adicional (93.4% en zs_meta con 18 tareas).
-- Guardrails y moderacion: evaluar mensajes frente a afirmaciones de politica (92.5% en CrossingGuard) para bloquear contenido que viole normas definidas como hipotesis.
-- Revision de contratos: verificar si un contrato permite o prohibe clausulas concretas, como compartir datos con terceros (92.9% en ContractNLI), usando documentos largos de hasta 32k tokens.
-- Extraccion clinica y verificacion de notas: comprobar afirmaciones sobre el paciente (por ejemplo, situacion laboral) contra notas clinicas (98.2% en SDOH-NLI).
-- Auditoria de clasificadores: usar el modo think para inspeccionar las trazas de razonamiento en fallos de clasificacion y ajustar las hipotesis de forma sistematica.
+- Groundedness en RAG: se pasan los pasajes recuperados como premisa y la respuesta generada como hipotesis; el modelo devuelve la probabilidad de implicacion y permite descartar respuestas no sustentadas (86,4 % en RAGTruth segun el autor).
+- Deteccion de alucinaciones en produccion: integrado como verificador posterior al LLM generador, filtra afirmaciones que el contexto no implica antes de mostrarlas al usuario.
+- Moderacion y guardrails: se formula la politica como hipotesis ("This message violates the policy") y se usa la probabilidad de implicacion como senal de bloqueo (92,5 % en CrossingGuard segun el autor).
+- Clasificacion zero-shot de tickets o resenas: se construyen hipotesis por categoria ("This text is about billing") y se elige la de mayor probabilidad de implicacion, sin entrenamiento adicional.
+- Revision de contratos: con contexto de hasta 32k tokens, se evaluan afirmaciones como "The agreement permits sharing data with third parties" sobre el contrato completo (92,9 % en ContractNLI segun el autor).
+- Extraccion clinica y cribado SDOH: se verifica si una nota clinica implica afirmaciones sobre el paciente, por ejemplo situacion laboral (98,2 % en SDOH-NLI segun el autor).
+- Fact-checking editorial: se contrastan afirmaciones contra documentos fuente y se usa el modo think en los casos ambiguos para obtener una traza auditable del veredicto.
+- Analisis de fallos automatizado: las trazas permiten agrupar errores de clasificacion y probar variantes de la hipotesis contra un conjunto de validacion antes de desplegar cambios.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
 | Dataset | Metrica | Valor |
 |---|---|---|
-| FineCat-NLI (test) | Accuracy | 0.8533 |
-| MultiNLI (validation matched) | Accuracy | 0.9207 |
-| MultiNLI (validation mismatched) | Accuracy | 0.9226 |
-| SNLI (test) | Accuracy | 0.9367 |
-| ANLI round 1 (test) | Accuracy | 0.826 |
-| ANLI round 2 (test) | Accuracy | 0.706 |
-| ANLI round 3 (test) | Accuracy | 0.6542 |
-| WANLI (test) | Accuracy | 0.772 |
-| LingNLI (validation) | Accuracy | 0.883 |
-| Benchmark de 45 datasets NLI/zero-shot/grounding (media macro) | Macro accuracy | 0.8383 |
+| FineCat-NLI (test) | Accuracy | 0,8533 |
+| MultiNLI (validation matched) | Accuracy | 0,9207 |
+| MultiNLI (validation mismatched) | Accuracy | 0,9226 |
+| SNLI (test) | Accuracy | 0,9367 |
+| ANLI round 1 (test) | Accuracy | 0,826 |
+| ANLI round 2 (test) | Accuracy | 0,706 |
+| ANLI round 3 (test) | Accuracy | 0,6542 |
+| WANLI (test) | Accuracy | 0,772 |
+| LingNLI (validation) | Accuracy | 0,883 |
+| Benchmark de 45 datasets NLI / zero-shot / grounding (media macro) | Macro accuracy | 0,8383 |
 
-Resultados de aplicacion en modo rapido (segun la model card):
+Resultados adicionales por aplicacion citados en la model card (modo rapido):
 
-| Uso | Benchmark | Resultado |
+| Aplicacion | Benchmark | Resultado |
 |---|---|---|
-| Clasificacion zero-shot / tagging | zs_meta (18 tareas) | 93.4% |
-| Grounding en RAG | RAGTruth | 86.4% |
-| Guardrails / moderacion | CrossingGuard | 92.5% |
-| Extraccion clinica | SDOH-NLI | 98.2% |
-| Revision de contratos | ContractNLI | 92.9% |
+| Clasificacion zero-shot / tagging | zs_meta (18 tareas) | 93,4 % |
+| Grounding en RAG | RAGTruth | 86,4 % |
+| Guardrails / moderacion | CrossingGuard | 92,5 % |
+| Extraccion clinica | SDOH-NLI | 98,2 % |
+| Revision de contratos | ContractNLI | 92,9 % |
+
+El autor declara el primer puesto en el OpenNLI Skill Index (11-03-26, modo rapido). No se han publicado en la informacion disponible comparaciones directas con otros modelos en estos benchmarks.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 8-9 GB solo para pesos, mas memoria para activaciones y contexto largo.
-- Con cuantizacion de 8 bits: en torno a 4-5 GB de pesos; con 4 bits: en torno a 2.5-3 GB (estimacion orientativa, no confirmada por el autor).
-- GPU profesionales recomendadas: A100, H100 o L40S para contextos de 32k tokens y alto throughput.
-- GPU de consumo: cabe en RTX 4090 (24 GB) en fp16 sin problema; en tarjetas de 8-12 GB (RTX 3070/4070) seria necesario cuantizar.
-- Opciones de despliegue: la libreria indicada es `sentence-transformers` (CrossEncoder con `trust_remote_code=True`); el formato safetensors permite cargas con Transformers. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: con 4,2B parametros, en FP16 requiere aproximadamente 8,4 GB solo para pesos; en BF16 similar. En cuantizacion de 8 bits rondaria 4-5 GB y en 4 bits unos 2,5-3 GB, mas overhead de contexto (los tipos de cuantizacion no estan documentados por el autor).
+- El contexto de hasta 32k tokens incrementa el consumo de memoria KV; para documentos largos conviene reservar VRAM adicional.
+- GPU recomendadas: A100 40/80 GB o H100 para lotes grandes y contexto maximo; RTX 4090 (24 GB) y RTX 3090 (24 GB) suficientes para FP16 con contexto moderado.
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 y similares con 16 GB o mas en FP16; en 8 GB o menos seria necesario cuantizar.
+- Despliegue: sentence-transformers (CrossEncoder con trust_remote_code) es la via documentada; al ser un modelo con codigo personalizado, la compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta confirmada en la informacion disponible.
+- Latencia y throughput: no disponibles. El modo think anade unos 50 tokens de generacion en ANLI y unos 200 en logica de primer orden, por lo que es mas lento que el modo rapido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Notas |
-|---|---|---|---|---|---|
-| AbsoluteZero-nli-4b | 4.2B | 32k | Cross-encoder NLI con modo think | Apache-2.0 | Resultados NLI y grounding publicados por el autor |
-| Cross-encoders NLI clasicos (p. ej. DeBERTa NLI) | ~0.1-0.4B | 512 tokens tipicamente | Cross-encoder | Variable | Sin trazas de razonamiento ni contexto largo; datos comparativos no disponibles en esta ficha |
-| LLM generativo generalista (p. ej. Qwen3.5-4B base) | 4B | Variable | Decoder generativo | Apache-2.0 | No especializado en NLI calibrado; requiere prompting para clasificar |
+No se dispone en la informacion proporcionada de resultados de modelos comparables (por ejemplo, cross-encoders NLI de la familia DeBERTa o modelos NLI de mayor tamano) medidos en los mismos benchmarks, por lo que la comparacion cuantitativa no esta disponible. A nivel cualitativo:
 
-No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Modo think | Licencia |
+|---|---|---|---|---|
+| AbsoluteZero-nli-4b | 4,2B | 32k | Si | Apache-2.0 |
+| Cross-encoders NLI tipo DeBERTa | no disponible | no disponible | No | variable |
+| Modelos NLI sobre LLM de 7-8B | no disponible | no disponible | variable | variable |
+
+La ventaja diferencial declarada es la combinacion de contexto largo, trazas de razonamiento inspeccionables y licencia Apache-2.0 en un unico modelo.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo esta entrenado y evaluado principalmente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Los resultados de benchmarks son declarados por el autor y no estan verificados de forma independiente (`verified: false`).
-- El rendimiento cae en tareas de razonamiento complejo: ANLI round 3 alcanza 0.6542 y round 2 0.706, lo que indica dificultad con inferencias de varios pasos y adversarias.
-- El modo think incrementa la latencia al generar trazas de razonamiento; conviene reservarlo para casos dificiles.
-- Riesgo de sesgos heredados del corpus de entrenamiento (SNLI, MultiNLI y datasets propios), no documentados en detalle.
-- Aunque la licencia Apache-2.0 permite uso comercial, el modelo usa codigo personalizado (`trust_remote_code=True`), lo que implica ejecutar codigo del autor; conviene auditarlo antes de produccion.
-- No se documentan garantias de calibracion fuera de los dominios evaluados; el umbral de probabilidad debe ajustarse por caso de uso.
-- Capacidades de tool calling y agentes no documentadas.
+- Solo soporta ingles; el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera degradado.
+- Los benchmarks son declarados por el autor y no estan verificados de forma independiente (verified: false en la model-index).
+- El rendimiento cae de forma notable en ANLI r2 (0,706) y r3 (0,6542), lo que indica dificultad con inferencias adversarias y de varios pasos.
+- Riesgo de alucinacion en las trazas del modo think: la justificacion generada puede no reflejar el criterio real de clasificacion.
+- Requiere trust_remote_code, lo que implica ejecutar codigo personalizado del autor; conviene auditar el repositorio antes de desplegarlo en produccion.
+- No se documentan sesgos conocidos ni evaluaciones de robustez frente a dominios fuera de los benchmarks citados.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-4B debe verificarse por separado para confirmar compatibilidad.
+- Al ser un cross-encoder de clasificacion, no es un modelo generativo general: no debe usarse como LLM conversacional.
+- No hay informacion sobre cuantizaciones oficiales ni sobre compatibilidad con motores de inferencia de alto rendimiento.
 
 ## Enlaces
 

@@ -2,105 +2,116 @@
 
 ## Resumen
 
-OpenThai2.1-OCR-Markdown-20261118 es un modelo de visión-lenguaje especializado en convertir imágenes de páginas de documentos en Markdown estructurado, con tablas representadas como HTML y fórmulas como LaTeX. Lo desarrolla iApp Technology en el marco del proyecto OpenThai (anteriormente OpenThaiGPT), y se presenta como un ajuste fino en tailandés e inglés del modelo NVIDIA Nemotron 3.5 Parse, de 630,8 millones de parámetros. El modelo resuelve el problema del parseo de documentos tailandeses e ingleses en producción: extrae texto, tablas, fórmulas y estructura de bloques (con cajas de layout, clases de bloque y orden de lectura) a partir de una única imagen de página.
+OpenThai2.1-OCR-Markdown-20261118 es un modelo de conversión de imágenes de documentos a Markdown, especializado en tailandés e inglés, desarrollado por iApp Technology en el marco del proyecto OpenThai (anteriormente OpenThaiGPT) y lanzado junto con AIEAT. Se trata de un ajuste fino del modelo NVIDIA Nemotron 3.5 Parse (0,63B), y hereda de él tanto la arquitectura como la pila completa de servicio y posprocesamiento, de modo que puede desplegarse en cualquier infraestructura compatible con el modelo base.
 
-La versión 2.1, publicada el 18 de noviembre de 2026, amplía el entrenamiento a fotografías de móvil y a nueve tipos de página adicionales (artículos académicos, libros, cómics, exámenes, revistas, periódicos, informes, diapositivas y libros de texto), e incorpora salida estándar en tailandés (la vocal ำ como un único carácter U+0E33), fórmulas multilínea en un bloque `gathered` y omisión de cabeceras y pies de página en el Markdown resultante. Mantiene el mismo tamaño y velocidad que la versión 2.0.
+El modelo resuelve el problema de digitalizar documentos tailandeses e ingleses preservando su estructura: devuelve Markdown con tablas en HTML (con spans de fila y columna), fórmulas en LaTeX y, para cada bloque, su caja delimitadora y su clase, todo en orden de lectura. La versión 2.1 amplía el entrenamiento a fotografías de móvil y a nueve tipos de página adicionales (artículos académicos, libros, cómics, exámenes, revistas, periódicos, informes, diapositivas y libros de texto), además de los documentos oficiales que ya cubría la versión 2.0.
 
-El modelo es relevante porque ofrece un pipeline completo de OCR estructurado en tailandés con un coste computacional bajo (1,5 segundos por página en una H100) y una licencia OpenMDW-1.1 que permite uso comercial. No obstante, queda por detrás de Typhoon OCR V2 2B en los benchmarks generales MDPBench, olmOCR-bench y OmniDocBench, aunque supera a ese modelo en el conjunto específico th-docs-tables v1.
+Su relevancia actual radica en que ofrece un rendimiento competitivo en documentos tailandeses con un coste computacional muy bajo: 630,8 millones de parámetros, 2,52 GB de pesos en float32 y 1,5 segundos por página en una única H100. La licencia OpenMDW-1.1 permite uso comercial, lo que lo hace atractivo para pipelines de digitalización a escala en el sudeste asiático.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision encoder C-RADIOv4-SO400M (439,0 M) + text decoder mBART de 10 capas y anchura 1.024 (191,8 M) |
-| Parámetros totales | 630.800.504 (630,8 M) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Vision encoder C-RADIOv4-SO400M (439,0M) + decodificador de texto mBART de 10 capas y anchura 1.024 (191,8M); tarea image-text-to-text |
+| Parametros totales | 630.800.504 (630,8M) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos publicados en float32; servido en bfloat16) |
+| Tipos de cuantizacion | No disponible; los pesos se publican en float32 y se sirven en bfloat16 |
 | Idiomas soportados | Tailandés (th) e inglés (en) |
-| Licencia | OpenMDW-1.1 (`license: other`) |
-| Formato de pesos | safetensors (`model.safetensors`, float32, 2,52 GB) |
-| Entrada | Una imagen de página ajustada a 1.664 × 2.048 píxeles (ancho × alto) |
-| Salida | Markdown con tablas en HTML (rowspan/colspan) y fórmulas en LaTeX, más cajas y clases de bloque en orden de lectura |
-| Modelo base | `nvidia/Nemotron-3.5-Parse` |
-| Hardware recomendado | Una GPU NVIDIA, servido con vLLM |
-| Velocidad | 1,5 s por página en una H100 (mediana de 12 páginas de tablas) |
-| Versión | 2.1, 18 de noviembre de 2026 (tag `v2.1.0`); 2.0 disponible en `v2.0.0` |
+| Licencia | OpenMDW-1.1 (licencia "other", con avisos de copyright y atribución de NVIDIA incluidos sin modificar) |
+| Formato de pesos | safetensors (`model.safetensors`, float32, 2,52 GB); repositorio de 7,8 GB |
+| Resolucion de entrada | Una imagen de página ajustada a 1.664 × 2.048 píxeles (ancho × alto) |
+| Modelo base | nvidia/Nemotron-3.5-Parse |
+| Hardware de referencia | Una GPU NVIDIA, servido con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura de Nemotron 3.5 Parse: un codificador visual C-RADIOv4-SO400M de 439,0 M de parámetros que procesa la imagen de página a 1.664 × 2.048 píxeles, acoplado a un decodificador de texto mBART de 10 capas y anchura 1.024 con 191,8 M de parámetros. La salida combina la generación de Markdown con la predicción de cajas de layout, clases de bloque y orden de lectura, de modo que el resultado no es solo texto plano sino una representación estructurada de la página.
+La arquitectura es un modelo multimodal de imagen a texto compuesto por un codificador visual C-RADIOv4-SO400M de 439,0M de parámetros y un decodificador de texto mBART de 10 capas y anchura 1.024 con 191,8M de parámetros. El modelo recibe una única imagen de página reescalada a 1.664 × 2.048 píxeles y genera Markdown con tablas en HTML y fórmulas en LaTeX, acompañado de las cajas delimitadoras y las clases de cada bloque en orden de lectura. Conserva la arquitectura, el tokenizador y el código de servicio del modelo base de NVIDIA.
 
-El entrenamiento consistió en un ajuste fino completo (full fine-tune) durante una época sobre 77.900 filas, en 2.435 pasos de tamaño de lote 32, ejecutado en una única H100. Los pesos publicados no son directamente el resultado del ajuste fino, sino una mezcla en el espacio de pesos: un 70 % del modelo ajustado y un 30 % del modelo base Nemotron 3.5 Parse. Esta técnica de blending busca preservar capacidades del modelo original (como el parseo de fórmulas y la estructura general) mientras se incorpora la especialización en tailandés y en los nuevos tipos de página. No se especifica en la información disponible la composición exacta del dataset de entrenamiento ni si se emplearon técnicas de RLHF o DPO.
+El entrenamiento consistió en un ajuste fino completo durante una época sobre 77.900 filas (2.435 pasos de 32) en una sola H100. Los pesos publicados son una mezcla en el espacio de pesos: un 70% del ajuste fino y un 30% del modelo base. La versión 2.1 incorpora entrenamiento sobre páginas fotografiadas con móvil y nueve tipos de página adicionales, además de mejoras de posprocesamiento: fórmulas multilínea agrupadas en `$$\begin{gathered}...\end{gathered}$$`, exclusión de cabeceras y pies de página del Markdown por defecto, omisión de páginas en blanco (que antes provocaban texto inventado) y normalización del carácter tailandés ำ como un único punto de código (U+0E33). El repositorio incluye un borrador de decodificación especulativa denominado DFlash2, que reduce el tiempo por página de 1,5 s a 0,44 s.
 
 ## Capacidades
 
-- Conversión de imágenes de páginas de documentos a Markdown estructurado, con tablas representadas como HTML (incluyendo `rowspan` y `colspan`) y fórmulas como LaTeX entre delimitadores `$$`.
-- Manejo de fórmulas multilínea, que se emiten como un único bloque `$$\begin{gathered}...\end{gathered}$$`.
-- Extracción de estructura de layout: cajas delimitadoras, clases de bloque y orden de lectura para cada bloque de la página.
-- Omisión por defecto de cabeceras y pies de página en el Markdown generado, manteniéndolos en la lista de bloques.
-- Detección de páginas en blanco: el componente `DocumentParser` no envía una hoja vacía al modelo, evitando la invención de texto.
-- Salida estándar en tailandés: la vocal ำ se escribe como un único carácter (U+0E33) y las celdas de tabla no incluyen `rowspan="1"` ni `colspan="1"` redundantes.
-- Procesamiento de fotografías de móvil y de nueve tipos de página: artículos académicos, libros, cómics, exámenes, revistas, periódicos, informes, diapositivas y libros de texto, en tailandés e inglés.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el modelo es un parser de página única, no un agente conversacional).
-- Capacidades multilingües limitadas a tailandés e inglés.
+- Conversión de imágenes de páginas de documentos a Markdown estructurado, con tablas representadas en HTML y spans de fila y columna.
+- Extracción de fórmulas matemáticas en LaTeX, incluidas fórmulas de varias líneas agrupadas en un único bloque `gathered`.
+- Detección de layout: devuelve una caja delimitadora y una clase para cada bloque, en orden de lectura.
+- Procesamiento de documentos tailandeses e ingleses, incluyendo documentos oficiales, artículos académicos, libros, cómics, exámenes, revistas, periódicos, informes, diapositivas y libros de texto.
+- Robustez ante fotografías de móvil, no solo ante escaneos limpios.
+- Exclusión automática de cabeceras y pies de página del Markdown de salida, manteniéndolos en la lista de bloques.
+- Detección de páginas en blanco, que se devuelven vacías en lugar de con texto inventado.
+- Salida tailandesa normalizada (ำ como U+0E33) y celdas de tabla sin `rowspan="1"` ni `colspan="1"` redundantes.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso ni agentes; el modelo está especializado en parsing de documentos.
 
 ## Casos de uso
 
-- Digitalización de documentos oficiales tailandeses: el modelo convierte formularios y documentos administrativos en Markdown estructurado, con tablas en HTML y cajas de layout, lo que permite indexar y buscar el contenido en sistemas de gestión documental. Es adecuado porque obtiene 94,0 en th-docs-tables v1, el mejor resultado de su categoría en ese conjunto.
-- Extracción de tablas de informes financieros y contables: gracias a la representación HTML con `rowspan` y `colspan`, las tablas complejas se preservan con su estructura de filas y columnas, lo que facilita su posterior conversión a CSV o su carga en bases de datos.
-- Procesamiento de artículos académicos y libros de texto: la versión 2.1 está entrenada específicamente en estos tipos de página, incluyendo fórmulas matemáticas en LaTeX, lo que permite construir corpus de investigación a partir de PDFs escaneados o fotografías.
-- Digitalización de exámenes y material educativo: el modelo maneja diapositivas, exámenes y libros de texto, y omite cabeceras y pies de página, lo que reduce el ruido en el Markdown resultante y facilita la reutilización del contenido en plataformas de e-learning.
-- Procesamiento de fotografías de documentos tomadas con móvil: al estar entrenado en páginas fotografiadas, es adecuado para aplicaciones de captura móvil en las que el usuario fotografía un documento y espera una transcripción estructurada, con un rendimiento en tailandés fotografiado aproximadamente 10 puntos superior al de la versión 2.0.
-- Extracción de contenido de periódicos y revistas: el modelo está entrenado en estos tipos de página y preserva el orden de lectura de los bloques, lo que permite reconstruir el flujo editorial de una página maquetada.
-- Pipeline de OCR a gran escala con vLLM: con 1,5 s por página en una H100 y un tamaño de 630,8 M de parámetros, el modelo puede desplegarse en un servicio vLLM para procesar lotes de documentos con un coste computacional contenido.
+- Digitalización masiva de documentos oficiales tailandeses: el modelo mantiene un rendimiento de 94,0 en th-docs-tables v1 y 69,5 en ThaiOCRBench tables, adecuado para convertir expedientes administrativos escaneados a Markdown indexable en sistemas de gestión documental.
+- Extracción de tablas financieras y administrativas: la salida HTML con spans de fila y columna permite reconstruir tablas complejas y cargarlas directamente en bases de datos o hojas de cálculo sin post-procesado manual de la estructura.
+- Procesamiento de fotografías de documentos tomadas con móvil: la versión 2.1 sube unos 10 puntos en páginas tailandesas fotografiadas de MDPBench, lo que lo hace apto para aplicaciones de captura con cámara en movilidad (por ejemplo, recepción de facturas o formularios en campo).
+- Conversión de artículos académicos y libros de texto con fórmulas: la salida en LaTeX entre delimitadores `$$` facilita la reutilización en entornos de publicación científica, wikis técnicas o plataformas de e-learning.
+- Construcción de corpus para entrenamiento de modelos en tailandés: el pipeline puede convertir grandes volúmenes de páginas a Markdown limpio, sin cabeceras ni pies de página, para alimentar datasets de preentrenamiento o ajuste fino.
+- Digitalización de prensa y revistas históricas: al cubrir los tipos de página de periódicos y revistas, permite extraer artículos y maquetas multicolumna preservando el orden de lectura.
+- Despliegue en infraestructura modesta: con 630,8M de parámetros y 2,52 GB de pesos en float32, puede servirse en una única GPU y procesar páginas a 1,5 s en una H100 (0,44 s con el borrador DFlash2), lo que viabiliza servicios de OCR a escala media sin clústeres dedicados.
 
 ## Benchmarks y rendimiento
 
-| Modelo | th-docs-tables v1 (65 págs.) | ThaiOCRBench tables (193 imgs.) | Thai text impreso (12 sets) | MDPBench EN+TH (320 págs.) | MDPBench Thai | olmOCR-bench | OmniDocBench v1.6 | Segundos por página |
+| Modelo | th-docs-tables v1 (65 pág.) | ThaiOCRBench tables (193 img.) | Texto tailandés impreso (12 sets) | MDPBench EN+TH (320 pág.) | MDPBench Thai | olmOCR-bench | OmniDocBench v1.6 | Segundos por página |
 |---|---|---|---|---|---|---|---|---|
-| OpenThai2.1-OCR-Markdown-20261118 | 94,0 | 69,5 | 90,2 | 82,5 | 80,7 | 73,1 | 79,6 | 1,5 |
-| OpenThai2.0-OCR-Markdown | 95,2 | 68,9 | 90,3 | 73,7 | 72,7 | 50,9 | 61,8 | 1,5 |
+| **OpenThai2.1-OCR-Markdown-20261118** | 94,0 | **69,5** | 90,2 | 82,5 | 80,7 | 73,1 | 79,6 | 1,5 |
+| OpenThai2.0-OCR-Markdown | **95,2** | 68,9 | **90,3** | 73,7 | 72,7 | 50,9 | 61,8 | 1,5 |
 | Nemotron 3.5 Parse (base) | 91,3 | 68,3 | 89,0 | 79,6 | 77,4 | 62,4 | 80,1 | 1,8 |
-| Typhoon OCR V2 2B | 91,6 | 67,6 | 89,6 | 87,0 | 85,0 | 84,7 | 91,5 | 1,0 |
+| Typhoon OCR V2 2B | 91,6 | 69,4 | 89,5 | **87,0** | **85,0** | **84,7** | **91,5** | **1,0** |
 
-En negrita en la model card original figuran los mejores valores por columna. Frente a Typhoon OCR V2 2B, con intervalos de confianza pareados al 95 %: th-docs-tables v1 +2,3 [+0,4; +4,8] (por delante); ThaiOCRBench tables +1,9 [−1,0; +4,9] (no significativo); texto tailandés +0,69 [−0,31; +1,51] (no significativo); MDPBench −4,5 [−7,0; −2,0] (por detrás); MDPBench Thai −4,3 [−8,4; −0,4] (por detrás); olmOCR-bench −11,6 (±1,0 y ±0,8) (por detrás); OmniDocBench v1.6 −11,8 (por detrás).
+Comparación directa frente a Typhoon OCR V2 2B con intervalos de confianza pareados al 95%:
 
-Frente a OpenThai2.0 en los mismos conjuntos: th-docs-tables v1 −1,2 [−2,9; +0,3] y ThaiOCRBench tables +0,6 [−1,6; +2,7], ninguno significativo; texto tailandés 90,24 frente a 90,31; olmOCR-bench +22,2 y OmniDocBench +17,8.
+| Benchmark | Diferencia | Resultado |
+|---|---|---|
+| th-docs-tables v1 | +2,3 [+0,4; +4,8] | por delante |
+| ThaiOCRBench tables | +0,1 [−2,7; +2,9] | no significativo |
+| Texto tailandés | +0,73 [+0,19; +1,24] | por delante |
+| MDPBench | −4,5 [−7,0; −2,0] | por detrás |
+| MDPBench Thai | −4,3 [−8,4; −0,4] | por detrás |
+| olmOCR-bench | −11,6 (±1,0 y ±0,8) | por detrás |
+| OmniDocBench v1.6 | −11,8 | por detrás |
+
+En velocidad, el modelo tarda 1,5 s por página en una H100 (mediana de 12 páginas de tablas, servido con vLLM y una página a la vez); con el borrador DFlash2 incluido en el repositorio baja a 0,44 s. En la misma H100, Typhoon OCR V2 2B con su borrador EAGLE-3 tarda 1,15 s frente a los 0,45 s de este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos se publican en float32 (2,52 GB); servidos en bfloat16 el peso es de aproximadamente 1,26 GB, más el coste de activaciones y del codificador visual. No se especifica una cifra oficial de VRAM mínima.
-- GPU recomendadas: una GPU NVIDIA; la model card cita una H100 para el servicio con vLLM y reporta 1,5 s por página en ese hardware.
-- Cabe en GPU de consumo: no se especifica en la información disponible; por tamaño de parámetros (630,8 M) debería caber en GPUs de consumo con suficiente VRAM, pero no hay confirmación oficial.
-- Opciones de despliegue: vLLM es el stack de servicio indicado por el autor; el modelo incluye su propio stack de serving y postprocesado (`nemotron_parse`) heredado de Nemotron 3.5 Parse. No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 1,5 s por página en una H100 procesando una página a la vez (mediana de 12 páginas de tablas); el modelo base tarda 1,8 s y Typhoon OCR V2 2B, 1,0 s.
+- VRAM estimada para inferencia: los pesos ocupan 2,52 GB en float32 y se sirven en bfloat16 (aproximadamente 1,26 GB solo para pesos); el total dependerá del backend, de los buffers de activación y del procesamiento de imágenes a 1.664 × 2.048 píxeles. No se publica una cifra oficial de VRAM total.
+- GPU recomendadas: una única GPU NVIDIA; el rendimiento de referencia (1,5 s por página) está medido en una H100.
+- GPU de consumo: no se documenta explícitamente el soporte en GPU de consumo; por tamaño de pesos (2,52 GB en float32) es plausible en tarjetas con suficiente VRAM, pero no hay datos oficiales de rendimiento en RTX 4090 u otras.
+- Opciones de despliegue: vLLM es el backend de referencia utilizado por el autor. El modelo requiere `custom_code` (paquete `nemotron_parse`), por lo que no es un transformer estándar. No se documenta soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 1,5 s por página en H100 (una página a la vez); 0,44 s con el borrador DFlash2; 0,45 s frente a 1,15 s de Typhoon OCR V2 2B con EAGLE-3 en la misma GPU.
+- Componentes adicionales: el repositorio incluye el borrador de decodificación especulativa DFlash2 y el paquete de posprocesamiento `nemotron_parse` (con las modificaciones de Markdown y la comprobación de páginas en blanco).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | MDPBench EN+TH | olmOCR-bench | OmniDocBench v1.6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| OpenThai2.1-OCR-Markdown-20261118 | 630,8 M | th, en | 82,5 | 73,1 | 79,6 | OpenMDW-1.1 | Hugging Face |
-| OpenThai2.0-OCR-Markdown | 630,8 M | th, en | 73,7 | 50,9 | 61,8 | OpenMDW-1.1 | Hugging Face (tag `v2.0.0`) |
-| Nemotron 3.5 Parse (base) | 630,8 M (arquitectura equivalente) | No disponible | 79,6 | 62,4 | 80,1 | OpenMDW-1.1 | Hugging Face (`nvidia/Nemotron-3.5-Parse`) |
-| Typhoon OCR V2 2B | 2 B | No disponible | 87,0 | 84,7 | 91,5 | No disponible | No disponible |
+| OpenThai2.1-OCR-Markdown-20261118 | 630,8M | th, en | 82,5 | 73,1 | 79,6 | OpenMDW-1.1 | Hugging Face (iapp) |
+| OpenThai2.0-OCR-Markdown | 630,8M | th, en | 73,7 | 50,9 | 61,8 | OpenMDW-1.1 | Hugging Face (tag v2.0.0) |
+| Nemotron 3.5 Parse (base) | 630,8M | th, en | 79,6 | 62,4 | 80,1 | OpenMDW-1.1 | Hugging Face (nvidia) |
+| Typhoon OCR V2 2B | 2B | th, en | 87,0 | 84,7 | 91,5 | No disponible en la información proporcionada | No disponible en la información proporcionada |
+
+Frente a su modelo base, OpenThai2.1 mejora en MDPBench (+2,9), olmOCR-bench (+10,7) y th-docs-tables (+2,7), y baja ligeramente en OmniDocBench v1.6 (−0,5). Frente a Typhoon OCR V2 2B, que es tres veces mayor, queda por detrás en MDPBench (−4,5), olmOCR-bench (−11,6) y OmniDocBench (−11,8), pero por delante en th-docs-tables (+2,3) y en texto tailandés impreso (+0,73), con paridad estadística en ThaiOCRBench tables. En velocidad, OpenThai2.1 con DFlash2 (0,44 s) es más rápido que Typhoon OCR V2 2B con EAGLE-3 (1,15 s) en la misma H100.
 
 ## Limitaciones y advertencias
 
-- Queda por detrás de Typhoon OCR V2 2B en MDPBench (−4,5 puntos), MDPBench Thai (−4,3), olmOCR-bench (−11,6) y OmniDocBench v1.6 (−11,8); la diferencia se concentra en páginas fotografiadas, tablas y fórmulas.
-- Frente a la versión 2.0, pierde 1,2 puntos en th-docs-tables v1 (no significativo), aunque gana de forma sustancial en olmOCR-bench y OmniDocBench.
-- El modelo solo soporta tailandés e inglés; no hay soporte declarado para otras lenguas.
-- Es un parser de página única, no un modelo conversacional ni un agente; no se documenta soporte de tool calling ni razonamiento multi-paso.
-- La licencia OpenMDW-1.1 es una licencia "other"; debe revisarse el texto completo en el enlace oficial antes de un uso comercial, y se mantienen las obligaciones de atribución de NVIDIA (copyright, avisos de terceros y atribución del tokenizer).
-- Los pesos publicados son una mezcla 70/30 del ajuste fino y el modelo base, lo que puede introducir comportamientos residuales del modelo original no documentados en detalle.
-- No se dispone de información sobre sesgos conocidos, tasas de alucinación medidas ni límites de longitud de contexto.
-- El rendimiento en páginas en blanco se ha corregido en 2.1 mediante una comprobación previa en `DocumentParser`, pero el modelo subyacente podría seguir inventando texto si se le envía directamente una imagen vacía sin ese filtro.
+- Rendimiento inferior a Typhoon OCR V2 2B en MDPBench (−4,5 puntos), especialmente en páginas fotografiadas y tablas, y muy inferior en olmOCR-bench (−11,6) y OmniDocBench v1.6 (−11,8), sobre todo en fórmulas.
+- La versión 2.1 no mejora a la 2.0 en th-docs-tables v1 (94,0 frente a 95,2) ni en texto tailandés (90,2 frente a 90,3); si el caso de uso se limita a documentos oficiales tailandeses, la 2.0 puede ser preferible.
+- Cobertura lingüística limitada a tailandés e inglés; no se documenta soporte de otros idiomas.
+- El modelo está especializado en parsing de documentos: no se documentan capacidades de razonamiento general, código, matemáticas fuera de la transcripción de fórmulas, tool calling ni agentes.
+- Riesgo de alucinación en páginas problemáticas: la model card indica que versiones anteriores inventaban texto en páginas en blanco, lo que motivó la comprobación añadida en `DocumentParser`; conviene validar la salida en documentos de baja calidad.
+- Requiere `custom_code` y el paquete `nemotron_parse`; no es un transformer estándar, lo que puede complicar la integración con herramientas que no soporten código personalizado.
+- La licencia OpenMDW-1.1 incluye avisos de copyright, atribución de terceros y atribución del tokenizador de NVIDIA que deben conservarse; es responsabilidad del usuario revisar los términos completos antes del uso comercial.
+- No se publican datos sobre sesgos demográficos o culturales del modelo.
+- Las cifras de rendimiento proceden de la model card del autor y no se han verificado de forma independiente en esta ficha.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118
-- Versión 2.0 (tag `v2.0.0`): https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118/tree/v2.0.0
+- Versión anterior (tag v2.0.0): https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118/tree/v2.0.0
 - Modelo base NVIDIA Nemotron 3.5 Parse: https://huggingface.co/nvidia/Nemotron-3.5-Parse
+- Model card original de NVIDIA en el repositorio: `NVIDIA_NEMOTRON_PARSE_README.md`
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Assets de la model card (OpenThai · iApp Technology): https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
+- Recursos gráficos de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets/resolve/main/openthai-iapp-logos.png

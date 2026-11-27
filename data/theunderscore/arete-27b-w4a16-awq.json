@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NousResearch/Arete-27B - Hugging Face",
-      "url": "https://huggingface.co/NousResearch/Arete-27B",
-      "snippet": "Text Generation model with 27B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
-      "url": "https://nousresearch.com/arete",
-      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
-    }
-  ]
+  "sources": []
 }

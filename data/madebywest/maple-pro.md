@@ -2,103 +2,106 @@
 
 ## Resumen
 
-Maple Pro es una variante afinada por preferencias del modelo Maple (deepgrove/maple-preview), una arquitectura MoE de tipo ternario con 20.214.030.336 parámetros totales y aproximadamente 1.000 millones de parámetros activos por token. Lo publica el usuario madebywest en Hugging Face bajo licencia MIT, distribuido como un único archivo GGUF de 6,2 GB que fusiona 64 tensores LoRA de atención y 121 tensores base actualizados por DPO en un solo artefacto. El modelo resuelve el problema de obtener una versión "lista para usar" del Maple base con mejor calidad conversacional, de instrucciones y de agente, manteniendo el mismo coste de inferencia.
+Maple Pro es un ajuste fino del modelo base Maple (deepgrove/maple-preview, licencia MIT), un transformer de mezcla de expertos (MoE) de 20.214.030.336 parametros totales con aproximadamente 1000 millones de parametros activos por token. El autor, madebywest, lo distribuye como un unico fichero GGUF de 6,6 GB con pesos ternarios (TQ2_0) en los expertos y atencion en F16, optimizado para Apple Silicon. Sobre el modelo base se ha aplicado una campana de destilacion on-policy y DPO (optimizacion directa de preferencias) con 1129 pares, orientada a mejorar el seguimiento estricto de instrucciones.
 
-La relevancia actual del modelo está en su formato: es un MoE ternario (TQ2_0) pensado para Apple Silicon vía Metal y LM Studio, con un contexto nativo de 128K que el GGUF extiende a 256K mediante un único campo de metadatos, sin flags de rope-scaling. El autor reporta mejoras o empates en las 12 métricas de su suite local frente al modelo base, incluyendo HumanEval+ 44/50, GSM8K 90,5/100 e IFEval 65/100.
+El modelo resuelve un problema concreto: mejorar la adherencia a instrucciones estrictas del base sin degradar sus niveles medidos de matematicas y codigo. La comparacion head-to-head contra el base original, con layout GGUF, runtime y harness identicos, muestra una mejora de +1 eje en una bateria de 12 ejes de instrucciones (11/12 frente a 10/12), manteniendo GSM8K en 335/400 (83,8 %) y HumanEval en 124/164 (75,6 %), este ultimo dentro del ruido de muestreo.
 
-La ficha se basa exclusivamente en la model card y los metadatos del repositorio; no se dispone de información sobre el dataset de entrenamiento del modelo base, la composición de idiomas ni resultados de benchmarks estándar publicados de forma independiente.
+Es relevante ahora por su combinacion de tamano efectivo (~1B activo), contexto nativo de 128K ampliable a 256K sin flags de rope-scaling, y un formato ternario que permite ejecutarlo en un solo fichero de 6,6 GB. La contrapartida es una dependencia fuerte del runtime: el tipo ternario TQ2_0 solo tiene kernels estables en Metal y CPU, lo que condiciona su despliegue en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE ternaria (TQ2_0) con atención híbrida SWA (18/24 capas con ventana 512); arquitectura `maple` |
+| Arquitectura | Transformer MoE con atencion hibrida (sliding window attention en 18 de 24 capas, ventana 512) |
 | Parametros totales | 20.214.030.336 |
-| Parametros activos | ~1B (aproximadamente 1.000 millones) |
-| Longitud de contexto | 128K nativo; 256K habilitado por metadatos del GGUF (verificado con needle test) |
-| Tipos de cuantizacion | Ternaria TQ2_0 (original, `maple-pro.gguf`); Q2_K (`maple-pro-Q2_K.gguf`, 7,0 GB); Q4_K_M mencionado en la guía de resolución de problemas (`maple-pro-Q4_K_M.gguf`) |
-| Idiomas soportados | No disponible (la model card no detalla cobertura lingüística) |
+| Parametros activos | ~1B (aproximadamente 1000 millones) |
+| Longitud de contexto | 128K nativo; metadatos GGUF permiten 256K (verificado sin flags) |
+| Tipos de cuantizacion | Ternario TQ2_0 en expertos y atencion de capas 0-7; F16 en proyecciones de atencion; fichero unico GGUF de 6,6 GB |
+| Idiomas soportados | No disponible (la model card menciona pruebas multilingues IT/ES) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (6.641.372.704 bytes, 291 tensores en la build c7) |
+| Formato de pesos | GGUF (un unico fichero, 291 tensores) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un MoE con pesos de expertos en formato ternario TQ2_0 y atención híbrida con sliding window attention en 18 de las 24 capas (ventana de 512 tokens), lo que permite extrapolación nativa ×2 hasta 256K sin rope-scaling. Las proyecciones de atención se almacenan en F16 tras la fusión, mientras que las capas 0–7 conservan la atención ternaria original y los pesos de expertos permanecen byte-idénticos al modelo base. El checkpoint final integra 64 tensores LoRA de atención y 121 tensores base actualizados por DPO (normas, routers de expertos, QK-norms).
+El modelo base es un MoE de 20B con aproximadamente 1B de parametros activos y 72 expertos, con atencion hibrida: 18 de las 24 capas usan sliding window attention con ventana de 512, lo que permite extrapolar el contexto x2 de forma nativa hasta 256K sin rope-scaling. Los pesos de los expertos son ternarios (TQ2_0), lo que reduce drasticamente el espacio ocupado a costa de depender de kernels especificos.
 
-El entrenamiento de la build c7 (18 de noviembre de 2026) consistió en una receta one-shot: SFT sobre 2.500 iteraciones con sobremuestreo del 66% en matemáticas, un currículo de coding v1 de 4.193 bytes con BON y correcciones de teacher, seguido de DPO con 1.129 pares de preferencia. El autor indica que probó 17 configuraciones y que esta es la primera que domina simultáneamente en los 12 ejes evaluados. No se especifica el número de tokens de entrenamiento ni la composición completa del dataset.
+El ajuste fino consistio en una receta one-shot: SFT de 2500 iteraciones (66 % de sobremuestreo en matematicas, curriculum de coding v1 con 4193 ejemplos BON y correcciones del teacher) seguida de DPO con 1129 pares de preferencia, con destilacion on-policy. Se fusionaron 64 tensores LoRA de atencion y 121 tensores base actualizados por DPO (normas, routers de expertos, QK-norms) en un unico GGUF. Las proyecciones de atencion se almacenan en F16 (precision mixta), salvo las capas 0-7 que conservan la atencion ternaria del base; los pesos de los expertos ternarios son byte-identicos al base oficial (72/72 tensores MD5 identicos).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto largo (hasta 256K tokens).
-- Razonamiento matemático: GSM8K 90,5/100 en la suite local del autor.
-- Generación de código: HumanEval+ 44/50 y probe de coding de 24/26 tareas.
-- Seguimiento de instrucciones: IFEval 65/100 con el checker oficial, IF-10 8/10 e IF-30 19/30.
-- Tool calling / function calling: 12/12 en el eval de herramientas del autor.
-- Razonamiento sobre documentos y extracción: DROP-30 20/30.
-- Capacidades de agente de navegador: 5/10 en el browser-agent probe (frente a 3/10 del base).
-- Conocimiento factual: 23/25 en el test de conocimiento del autor.
-- Eficiencia de respuesta: mediana de 570 tokens por respuesta (−25% frente a los 759 del base).
+- Generacion de texto conversacional y razonamiento general.
+- Matematicas: GSM8K con 83,8 % de acierto en modo greedy.
+- Codigo: HumanEval pass@1 del 75,6 % (124/164) a temperatura 0,2; record de 129/164 en otra ejecucion.
+- Seguimiento estricto de instrucciones: pasa la prueba "responde con exactamente 3 palabras", que el base falla.
+- Formato de tool-call: paridad con el base segun la bateria de 12 ejes.
+- Capacidades multilingues IT/ES: paridad con el base en la bateria de evaluacion.
+- Contexto largo: recall de 5 agujas de 4/5 a 256K nativo (3/5 en el rango 16K-131K).
+- No se documentan capacidades de vision, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Asistente conversacional local en Apple Silicon: el GGUF ternario de 6,2 GB se carga en LM Studio sobre Metal y ofrece ~75 tok/s en un M4 de 16 GB, lo que permite desplegar un asistente privado sin conexión con contexto de 256K para conversaciones largas.
-- Generación de código en pipelines de desarrollo: con HumanEval+ 44/50 y soporte de tool calling 12/12, puede integrarse como generador de parches o completados en flujos de CI/CD, invocando herramientas externas (tests, linters) mediante function calling.
-- Automatización de agentes de navegador: el probe de agente de navegador sube de 3/10 a 5/10 respecto al base, suficiente para prototipos de navegación guiada por instrucciones en entornos controlados.
-- Extracción de información de documentos largos: con 256K de contexto verificado por needle test (4/5 de recall) y DROP-30 20/30, es adecuado para resumir o extraer campos de contratos, informes o expedientes extensos en una sola pasada.
-- Razonamiento matemático asistido: GSM8K 90,5/100 permite usarlo como tutor o verificador de problemas aritméticos de varios pasos en aplicaciones educativas, con la ventaja de ejecutarse en local.
-- Clasificación y respuesta a instrucciones en producción de bajo coste: IFEval 65/100 e IF-30 19/30 lo hacen viable para tareas de transformación de texto guiadas por instrucciones donde el coste por token importa, al tener solo ~1B de parámetros activos.
-- Despliegue en hardware sin GPU dedicada: el runtime `maple` está disponible en llama.cpp mainline en modo CPU-only, de modo que puede servirse vía `llama-server` con API compatible con OpenAI en máquinas sin acelerador.
+- Asistente conversacional local en Apple Silicon: el fichero unico de 6,6 GB con ~1B activo se ejecuta en LM Studio sobre Metal con latencia baja, adecuado para prototipos y uso personal en un Mac.
+- Procesamiento de documentos largos: con 256K de contexto nativo verificado, puede resumir o extraer informacion de contratos, informes o bases de codigo extensas sin trocear, ajustando el slider de contexto en LM Studio.
+- Generacion de codigo asistida: con HumanEval del 75,6 % y soporte de formato tool-call, sirve para autocompletado y generacion de funciones en entornos de desarrollo locales donde no se quiere enviar codigo a la nube.
+- Razonamiento matematico en pipelines educativos: GSM8K del 83,8 % en greedy permite resolver problemas aritmeticos de varios pasos de forma reproducible, util para generar soluciones paso a paso.
+- Evaluacion de seguimiento de instrucciones: su mejora medida en el gate de 12 ejes lo hace util como modelo de referencia para comparar tecnicas de alineamiento en experimentos de DPO y destilacion.
+- Despliegue en CPU sin GPU: al ser correcto en CPU en cualquier sistema operativo, puede servirse con llama-server en servidores sin acelerador, aceptando menor throughput a cambio de compatibilidad.
+- Experimentacion con cuantizacion ternaria: sirve como banco de pruebas para estudiar el comportamiento de kernels TQ2_0 y la precision mixta en arquitecturas MoE.
 
 ## Benchmarks y rendimiento
 
-Resultados de la suite local del autor (semillas y condiciones idénticas entre base y Pro):
+Comparacion head-to-head contra el base stock, misma maquina, mismo runtime (llama.cpp 2.69.0, Apple Metal) y mismo harness:
 
-| Eje | Base Maple | Maple Pro |
+| Suite | Base Maple | Maple Pro |
 |---|---|---|
-| Coding probe (26 tareas) | 20 | 24 |
-| GSM8K (pooled n=200) | 90/100 | 90,5/100 |
-| HumanEval+ (50) | 44 | 44 |
-| IFEval (checker oficial, 100) | 63 | 65 |
-| Tools eval (12) | 11 | 12/12 |
-| Knowledge (25) | 22 | 23 |
-| Browser-agent probe (10) | 3 | 5 |
-| IF-10 / IF-30 | 7 / 19 | 8 / 19 |
-| DROP-30 | 20 | 20 |
-| Mediana tokens/respuesta | 759 | 570 (−25%) |
+| Gate de instrucciones (12 ejes) | 10/12 | 11/12 |
+| GSM8K (400 problemas, greedy) | 335 (83,8 %) | 335 (83,8 %) |
+| HumanEval pass@1 (164, temp 0,2) | 132 (80,5 %) | 124 (75,6 %) |
 
-Resultados adicionales citados en la cabecera de la model card para la build c7: gate 11/12, HumanEval 129/164 (78,7%) y GSM8K 334,7/400 en tres ejecuciones (335/335/334). No se han publicado resultados de benchmarks estándar verificados de forma independiente en la información disponible.
+Recall de contexto largo (5 agujas, wikitext-2, profundidades 10/30/50/70/90 %):
+
+| Contexto | Modo | Recall |
+|---|---|---|
+| 16K-131K | nativo | 3/5 |
+| 256K | nativo (sin flags) | 4/5 |
+| 256K | YaRN x2 | 4/5 |
+| 384K | YaRN x3 | 2/5 (falla) |
+
+La diferencia en HumanEval esta dentro del ruido de muestreo (±5 problemas por ejecucion); el record de esta build es 129/164. No se han publicado resultados de benchmarks adicionales (MMLU, MMLU-Pro u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo ternario ocupa 6,2 GB en disco; la KV cache a 256K requiere ~3,3 GB adicionales sobre los pesos. En GPUs con menos de 16 GB de VRAM hay que reducir la longitud de contexto.
-- GPU recomendadas: Apple Silicon (M-series) con Metal es la plataforma verificada de extremo a extremo; en CUDA/Vulkan los kernels ternarios son experimentales y pueden producir logits corruptos.
-- Consumer GPU: cabe en GPUs de 16 GB o más si se usa la variante Q2_K (7,0 GB) o se reduce el contexto; en Apple Silicon un M4 de 16 GB lo ejecuta con ~75 tok/s en decodificación.
-- Opciones de despliegue: LM Studio (runtime ≥ 2.55, verificado con 2.65.1), llama.cpp mainline (v0.4.1, solo CPU) y el fork de DeepGrove (Apache-2.0) con `llama-server` y API compatible con OpenAI.
-- Configuración recomendada en el fork: `--cpu-moe --no-op-offload -ot 'blk\.[0-7]\.attn_[a-z]+\.weight=CPU'` para dejar los matmuls ternarios en CPU cuando el backend Metal no los implementa.
-- Throughput medido: ~75 tok/s en M4 de 16 GB (el base maple-preview alcanza ~94 tok/s).
+- VRAM estimada: los pesos ocupan 6,6 GB; la cache KV a 256K anade aproximadamente 3,3 GB, por lo que el contexto completo requiere en torno a 10 GB.
+- Apple Silicon: via principal de despliegue; Metal implementa los matmuls ternarios TQ2_0 y esta verificado de extremo a extremo en LM Studio.
+- CPU: correcto en cualquier sistema operativo con llama.cpp; recomendable con GPU offload a 0 si se usa Windows o Linux.
+- GPU CUDA/Vulkan: los kernels ternarios son experimentales y pueden producir logits basura y respuestas vacias (EOS inmediato); no recomendado en produccion con esas plataformas.
+- GPU con menos de 16 GB de VRAM: reducir la longitud de contexto para evitar problemas de memoria.
+- Despliegue: LM Studio (runtime ≥ 2.55), llama.cpp mainline desde v0.4.1 (solo CPU) o el fork de DeepGrove (Apache-2.0) compilado con `llama-server` y `--cpu-moe --no-op-offload`.
+- Latencia y throughput: no disponibles de forma numerica en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Maple Pro | 20B totales, ~1B activos | 128K nativo / 256K GGUF | MIT | GGUF ternario, Q2_K, Q4_K_M | Optimizado para Apple Silicon; DPO sobre Maple |
-| Maple (deepgrove/maple-preview) | 20B totales, ~1B activos | 128K nativo | MIT | GGUF | Modelo base; Maple Pro mejora o empata en los 12 ejes de la suite del autor |
-| Otras alternativas de ~20B MoE | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la información proporcionada |
+| Modelo | Parametros | Contexto | HumanEval | GSM8K | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Maple Pro | 20,2B totales / ~1B activos | 128K nativo, 256K GGUF | 75,6 % (124/164) | 83,8 % | MIT | GGUF ternario |
+| Maple (base stock) | 20,2B totales / ~1B activos | 128K nativo, 256K GGUF | 80,5 % (132/164) | 83,8 % | MIT | GGUF ternario |
+| Otros modelos de ~20B MoE | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+La unica comparacion documentada es contra el propio base, con layout y runtime identicos; no se aportan datos frente a modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- Los kernels ternarios TQ2_0 no tienen implementación estable fuera de Metal: en CUDA/Vulkan el modelo puede devolver respuestas vacías por emisión inmediata de EOS. Es un problema de runtime, no del modelo.
-- El soporte de la arquitectura `maple` en llama.cpp mainline es CPU-only desde v0.4.1; el fork de DeepGrove tampoco implementa los matmuls ternarios en Metal, por lo que hay que forzar esos tensores a CPU.
-- El contexto más allá de 256K falla: con YaRN ×3 a 384K el recall cae a 2/5, y el autor indica que se necesita entrenamiento de contexto largo para superarlo.
-- El recall a 256K es 4/5, con confusiones de vinculación entre needles de forma similar; no es un contexto perfecto.
-- Riesgo de alucinación no cuantificado en la información disponible; el test de conocimiento del autor es de solo 25 preguntas.
-- No hay información sobre sesgos, cobertura idiomática ni evaluación de seguridad.
-- Los benchmarks proceden de la suite local del autor, con tamaños de muestra pequeños (12 a 200 ítems) y sin verificación independiente.
-- La licencia MIT permite uso comercial, pero conviene revisar la licencia del modelo base (deepgrove/maple-preview, también MIT según la model card).
-- El modelo base es `deepgrove/maple-preview`; no se documentan los datos de entrenamiento originales ni posibles restricciones derivadas.
+- Dependencia de runtime: el tipo ternario TQ2_0 no tiene kernels GPU estables fuera de Metal; en CUDA/Vulkan el modelo puede devolver respuestas vacias. Es un problema de kernel, no del modelo.
+- Contexto: 384K falla (recall 2/5); el recall a 256K es 4/5 con confusiones de vinculacion entre agujas de forma similar, uniformes en todas las longitudes.
+- Codigo: el resultado de HumanEval es inferior al del base en la ejecucion reportada (124 frente a 132), aunque dentro del ruido; no debe interpretarse como mejora en coding.
+- Idiomas: no se detalla la lista completa de idiomas soportados; solo se verifica paridad en pruebas IT/ES.
+- Riesgo de alucinacion y sesgos: no se documentan evaluaciones especificas de sesgo ni de tasas de alucinacion en la informacion disponible.
+- Licencia MIT: permite uso comercial, pero el modelo base y el fork de llama.cpp tienen sus propias condiciones (el fork es Apache-2.0); conviene revisar la cadena completa de licencias antes de produccion.
+- Build unica: solo se distribuye `maple-pro.gguf` (build c7); la v1 original no esta subida y solo existe como backup local del autor.
+- Reproducibilidad: las cifras de HumanEval varian ±5 problemas entre ejecuciones; GSM8K es casi determinista (±1 problema).
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/madebywest/maple-pro
+- Modelo en Hugging Face: https://huggingface.co/madebywest/maple-pro
 - Modelo base: https://huggingface.co/deepgrove/maple-preview
 - Fork de llama.cpp de DeepGrove: https://github.com/deepgrove-ai/llama.cpp

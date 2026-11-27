@@ -2,80 +2,96 @@
 
 ## Resumen
 
-AH-Mechanic-1-4B-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo AH-Mechanic-1-4B, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene pesos en safetensors ni un modelo original, sino una serie de ficheros GGUF generados mediante cuantizacion con imatrix (matriz de importancia) a partir del modelo base alojado en ahtx/AH-Mechanic-1-4B. Su utilidad es permitir la ejecucion del modelo en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
+AH-Mechanic-1-4B es un modelo de lenguaje de aproximadamente 4.326 millones de parámetros (4,3B) especializado en tareas de administración de sistemas Linux, operaciones de shell y agentes de tool calling. El modelo original fue desarrollado por ahtx y esta ficha documenta la versión cuantizada publicada por mradermacher bajo el identificador `mradermacher/AH-Mechanic-1-4B-i1-GGUF`. Se distribuye en formato GGUF con cuantizaciones generadas mediante imatrix, lo que permite ejecutarlo en hardware de consumo con llama.cpp y derivados.
 
-El modelo base apunta a un tamano nominal de 4B (segun el nombre del repositorio), aunque la informacion disponible no permite confirmar la arquitectura, el contexto nativo ni el proceso de entrenamiento. La model card del repositorio de cuantizacion es practicamente un volcado de metadatos de la herramienta de conversion y no incluye descripcion funcional, licencia ni idiomas declarados.
+La relevancia de esta publicación radica en que ofrece un conjunto amplio de cuantizaciones (desde i1-Q2_K de 2,1 GB hasta i1-Q6_K de 3,7 GB) de un modelo afinado específicamente para tareas de sysadmin, bash y agentes conversacionales. El etiquetado del repositorio indica que el modelo base se construye sobre la familia Qwen 3.5, aunque no se detalla la variante exacta ni la arquitectura interna en la información disponible.
 
-La relevancia de este repositorio es operativa: ofrece un conjunto amplio de niveles de cuantizacion (desde IQ1_S hasta Q6_K) etiquetados como "i1", lo que sugiere el uso de la matriz de importancia para preservar calidad en tasas de bits bajas. No obstante, al no haber descargas ni validacion publica, debe tratarse como un artefacto de disponibilidad incierta y sin garantias de calidad documentadas.
+El repositorio acumula 393 descargas y no registra likes en el momento de la consulta. La licencia es Apache 2.0, lo que facilita su uso comercial. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: ahtx/AH-Mechanic-1-4B) |
-| Parametros totales | 1.550.888 (dato de safetensors reportado en el repo); el nombre del modelo indica 4B, discrepancia no resuelta con la informacion disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q2_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se convirtio desde formato HF |
+| Arquitectura | No disponible (etiquetado como qwen3.5; no se detalla la arquitectura interna) |
+| Parámetros totales | 4.326.350.848 (≈4,3B) |
+| Parámetros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_0, i1-IQ4_XS, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (más fichero imatrix) |
+| Idiomas soportados | Inglés (según la model card: `language: en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones imatrix); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base AH-Mechanic-1-4B: la model card del repositorio de cuantizacion no describe si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion. Tampoco se documentan los datos de entrenamiento, el volumen de tokens, la composicion del corpus ni si se aplicaron fases de ajuste supervisado, RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. El etiquetado `qwen3.5` sugiere que el modelo base `ahtx/AH-Mechanic-1-4B` deriva de la familia Qwen 3.5, pero no se especifica la variante, el número de capas, la dimensión oculta ni el mecanismo de atención. Tampoco se documenta si emplea atención lineal, decodificación especulativa u otras innovaciones.
 
-Lo unico verificable es el proceso de cuantizacion: los metadatos indican `quantize_version: 2`, `convert_type: hf` y el uso de cuantizaciones ponderadas por imatrix ("weighted/imatrix quants"), una tecnica que estima la importancia de cada tensor a partir de activaciones de calibracion para reducir la perdida de calidad en bits bajos. El conjunto de cuantizaciones incluye variantes IQ (importancia) y K-quants clasicas, lo que permite elegir entre tamano y fidelidad. No se documenta ninguna innovacion arquitectonica adicional.
+Respecto al entrenamiento, la model card no detalla el volumen de tokens, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Los tags del repositorio (`linux`, `sysadmin`, `agent`, `tool-calling`, `bash`) indican que el afinamiento se orientó a tareas de administración de sistemas y ejecución de comandos, pero no se aportan métricas ni descripciones del corpus. La cuantización imatrix fue realizada por mradermacher con la versión 2 del proceso de cuantización y conversión desde Hugging Face.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no se documenta explicitamente en la informacion disponible.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (vision, audio, modo thinking): no disponible.
-- Ejecucion local: capacidad operativa confirmada por el formato GGUF, compatible con llama.cpp y derivados.
+- Generación de texto conversacional en inglés, orientada a interacciones multi-turno.
+- Tool calling y function calling, según los tags del repositorio.
+- Comportamiento de agente para tareas de administración de sistemas y operaciones de shell.
+- Generación y razonamiento sobre comandos bash y scripts de automatización.
+- Soporte de tareas de sysadmin Linux (diagnóstico, configuración, gestión de servicios).
+- Capacidad multimodal: la model card indica explícitamente que se trata de un modelo de visión y que los ficheros `mmproj` (si existen) se alojan en el repositorio estático `mradermacher/AH-Mechanic-1-4B-GGUF`.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documentan capacidades de audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Inferencia local en equipos con poca memoria: las variantes IQ1_S, IQ2_XXS e IQ3_XXS permiten cargar el modelo en GPUs de gama baja o en CPU con RAM limitada, a costa de una perdida de calidad que no esta cuantificada publicamente.
-- Despliegue en CPU con llama.cpp: el formato GGUF y la disponibilidad de niveles Q4_K_M y Q5_K_M facilitan ejecutar el modelo en servidores sin GPU para tareas de generacion de texto de baja latencia.
-- Prototipado rapido en estaciones de trabajo: la variante Q6_K permite evaluar el comportamiento del modelo base con una fidelidad cercana al original antes de invertir en infraestructura mayor.
-- Pruebas de integracion con Ollama o LM Studio: los ficheros GGUF son consumibles por estas herramientas, lo que permite validar flujos de inferencia en local sin depender de APIs.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece una matriz amplia de niveles, util para medir el impacto de la cuantizacion en la calidad de salida sobre una misma tarea.
-- Experimentacion academica con modelos pequenos: si el modelo base resulta ser de ~1,5B parametros reales, encaja en escenarios de investigacion con presupuesto de computo reducido, aunque la falta de documentacion limita su reproducibilidad.
+- Asistente de operaciones Linux: el modelo puede interpretar peticiones en lenguaje natural y traducirlas a comandos bash concretos, lo que resulta adecuado para un modelo afinado específicamente en sysadmin y tool calling.
+- Automatización de diagnóstico de servidores: integrado en un agente que ejecuta comandos de inspección (por ejemplo, `systemctl`, `journalctl`, `df`) y razona sobre la salida para proponer remedios, aprovechando su entrenamiento en bash y administración de sistemas.
+- Generación de scripts de automatización: dado un objetivo operativo, el modelo produce scripts de shell y los explica paso a paso, útil en pipelines de aprovisionamiento y tareas repetitivas de mantenimiento.
+- Agente de tool calling en pipelines de CI/CD: al soportar function calling, puede conectarse a herramientas externas (APIs de despliegue, orquestadores) y decidir qué acción invocar en cada paso del flujo.
+- Chatbot de soporte técnico especializado: con contexto conversacional multi-turno, puede guiar a operadores menos experimentados en la resolución de incidencias de sistema, manteniendo el hilo de la conversación.
+- Despliegue en entornos con hardware limitado: las cuantizaciones i1-Q4_K_M (2,9 GB) e i1-Q5_K_M (3,3 GB) permiten ejecutar el modelo en estaciones de trabajo o portátiles sin GPU dedicada de gama alta, lo que facilita prototipos locales de asistentes de administración.
+- Análisis de imágenes de pantalla o diagramas de infraestructura: si se dispone de los ficheros `mmproj` del repositorio estático, el modelo puede procesar entradas visuales junto con texto, por ejemplo para interpretar capturas de terminal o diagramas de red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision, ya que no se confirma el numero real de parametros ni la arquitectura. Como referencia orientativa, un modelo denso de ~1,5B en Q4_K_M ocuparia del orden de 1 GB de pesos, y en Q6_K alrededor de 1,3 GB; un modelo de 4B en Q4_K_M rondaria los 2,5 GB. Estas cifras son estimaciones genericas y no estan verificadas para este repositorio.
-- GPU recomendadas: no disponible. Cualquier GPU consumer con 4-8 GB de VRAM deberia poder ejecutar las variantes Q4 y Q5 si el modelo es de 1,5B-4B, pero no hay datos publicados que lo confirmen.
-- Cabe en GPU consumer: probablemente si en tarjetas con 6-8 GB de VRAM para cuantizaciones Q4_K_M o inferiores, segun el tamano real del modelo base.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización, con overhead de contexto adicional):
+  - i1-Q2_K: ~2,1 GB de pesos; ~3 GB de VRAM en total con contexto moderado.
+  - i1-IQ3_M / i1-Q3_K_M: ~2,4–2,5 GB de pesos; ~3,5 GB en total.
+  - i1-Q4_K_M: ~2,9 GB de pesos; ~4 GB en total.
+  - i1-Q5_K_M: ~3,3 GB de pesos; ~4,5 GB en total.
+  - i1-Q6_K: ~3,7 GB de pesos; ~5 GB en total.
+- GPU recomendadas: no se especifican en la documentación. Por tamaño, cualquier GPU con al menos 4–6 GB de VRAM puede alojar las cuantizaciones Q4/Q5; tarjetas como RTX 3060, RTX 4060, RTX 4090 o A100/H100 son sobradamente suficientes y permitirán contextos más largos y mayor throughput.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6 GB o más de VRAM para las cuantizaciones Q4 y Q5; las Q2/Q3 caben en GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF (por ejemplo, servidores basados en llama.cpp con API compatible con OpenAI). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: no disponibles. No se han publicado mediciones en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base que permita identificar alternativas comparables en parametros, contexto o rendimiento, ni se han publicado metricas de este repositorio.
+No se dispone de datos de rendimiento del modelo ni de alternativas directamente comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa de categoría (modelos de ~4B orientados a agentes y tool calling), podrían considerarse familias como Qwen 2.5/3 de 4B o Llama 3.2 de 3B, pero no se aportan métricas que permitan comparar parámetros, contexto o rendimiento con AH-Mechanic-1-4B.
+
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| AH-Mechanic-1-4B (esta ficha) | ~4,3B | No disponible | Apache 2.0 | GGUF (i1) |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no describe el modelo base, su entrenamiento, sus capacidades ni sus limitaciones.
-- Licencia no declarada: no se especifica la licencia del modelo base ni de las cuantizaciones, lo que impide determinar si el uso comercial esta permitido. No debe usarse en produccion sin aclarar este punto con el autor original (ahtx).
-- Discrepancia en el tamano: el nombre indica 4B pero el dato de safetensors reporta 1.550.888 parametros; la cifra real no esta confirmada.
-- Sin validacion publica: cero descargas y cero likes en el momento de la consulta, sin evaluaciones independientes de calidad.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones que lo cuantifiquen.
-- Sesgos: desconocidos, al no documentarse la composicion de los datos de entrenamiento.
-- Idiomas: no declarados; el rendimiento fuera del idioma o idiomas de entrenamiento puede degradarse sin aviso.
-- Cuantizaciones extremas: las variantes IQ1 e IQ2 pueden degradar notablemente la coherencia; no se han publicado mediciones de perplexity para este repositorio.
-- Repositorio de terceros: se trata de una recuantizacion no oficial; el soporte y la responsabilidad recaen en el autor del modelo base.
+- El modelo está afinado y etiquetado únicamente para inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- No se han publicado evaluaciones de sesgo, toxicidad o robustez; se desconoce el comportamiento en dominios alejados de sysadmin y bash.
+- Riesgo de alucinación inherente a los modelos de ~4B, especialmente en la generación de comandos destructivos o incorrectos; se recomienda validación humana antes de ejecutar cualquier salida en producción.
+- La información sobre la longitud de contexto no está disponible, lo que impide garantizar conversaciones multi-turno largas o el procesamiento de ficheros extensos.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base `ahtx/AH-Mechanic-1-4B` y de la familia Qwen 3.5 subyacente antes de un uso comercial a gran escala.
+- Las cuantizaciones de baja precisión (i1-Q2_K, i1-Q3_K_S) degradan la calidad; para uso en producción se recomienda i1-Q4_K_M o superior.
+- La capacidad de visión depende de ficheros `mmproj` alojados en un repositorio separado; sin ellos, el modelo funciona solo como modelo de texto.
+- No se documentan garantías de soporte, mantenimiento ni actualizaciones por parte del autor del modelo base.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/AH-Mechanic-1-4B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/AH-Mechanic-1-4B-i1-GGUF
+- Repositorio de cuantizaciones estáticas (incluye posibles `mmproj`): https://huggingface.co/mradermacher/AH-Mechanic-1-4B-GGUF
 - Modelo base: https://huggingface.co/ahtx/AH-Mechanic-1-4B
+- Página de descargas del autor: https://hf.tst.eu/model#AH-Mechanic-1-4B-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor de las cuantizaciones: https://www.nethype.de/

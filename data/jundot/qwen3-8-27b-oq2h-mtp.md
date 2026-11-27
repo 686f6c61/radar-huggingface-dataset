@@ -2,98 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ2h-mtp es una cuantización de precisión mixta del modelo Qwen/Qwen3.8-27B, un modelo denso de visión-lenguaje de 27.000 millones de parámetros construido sobre la arquitectura Qwen3.5. La publica el usuario Jundot mediante su herramienta oQ (omlx), un planificador de cuantización de precisión mixta orientado al ecosistema MLX de Apple Silicon. El checkpoint incluye el backbone de lenguaje, el codificador visual y la cabeza de predicción multi-token (MTP), y está pensado para ejecutarse en hardware Apple con el runtime oMLX 0.8.0 o superior.
+Qwen3.8-27B-oQ2h-mtp es una cuantizacion mixta de precision del modelo Qwen/Qwen3.8-27B, un modelo denso de vision-lenguaje de 27.000 millones de parametros construido sobre la arquitectura Qwen3.5. Lo publica el usuario Jundot bajo el identificador Jundot/Qwen3.8-27B-oQ2h-mtp y esta pensado exclusivamente para el ecosistema MLX de Apple Silicon, mediante la herramienta oQ (oMLX) desarrollada por el mismo autor.
 
-El interés de esta ficha no reside en el modelo base, sino en la técnica de compresión: el formato oQh almacena cada capa lineal del decodificador como códigos enteros con una única escala por fila de salida, aplicada sobre una entrada rotada mediante una transformada de Hadamard por bloques con signo. Al eliminar las escalas y sesgos por grupo del formato anterior (oQe), el planificador libera aproximadamente 0,5 bits por peso y los reinvierte en más bits para los tensores más sensibles, de modo que un fichero oQh ocupa lo mismo que un oQe del mismo nivel pero con menor divergencia KL respecto al modelo BF16.
+El modelo original resuelve tareas de comprension de imagen y video combinadas con generacion de texto y razonamiento, con una ventana de contexto nativa de 262.144 tokens. La version cuantizada reduce el checkpoint completo a 11,8 GB (11,02 GiB) con un promedio efectivo de 3,407 bits por peso, lo que permite ejecutar un modelo de 27B en equipos con memoria unificada moderada.
 
-El resultado es un checkpoint de 11,8 GB en disco (11,02 GiB) que mantiene 262.144 tokens de contexto nativo y capacidades de comprensión de imagen y vídeo, con un promedio efectivo de 3,407 bits por peso para el conjunto completo y 3,152 bits por peso para el backbone de lenguaje. Es, por tanto, una opción para desplegar un VLM de 27B en equipos con memoria unificada moderada, a costa de requerir un runtime específico y no estándar.
+La relevancia de esta ficha radica en que emplea el formato oQh, una variante propietaria de oMLX que aplica una transformada de Hadamard a los pesos antes de cuantizarlos para reducir la divergencia KL respecto al modelo en BF16. Requiere oMLX 0.8.0 o superior y no es cargable por otros motores MLX genericos, lo que limita su portabilidad pero mejora la calidad a bajos bits.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas Gated DeltaNet y Gated Attention (Qwen3.5), más codificador visual y cabeza MTP |
-| Parametros totales | 27.781B lógicos (5.724.930.800 según safetensors del repo; discrepancia no aclarada en la información disponible) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer hibrido con capas Gated DeltaNet y Gated Attention (familia Qwen3.5), con encoder de vision y cabeza MTP |
+| Parametros totales | 27.781 millones (5.724.930.800 en el fichero safetensors principal; el total incluye backbone, vision encoder y MTP) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | oQh 2/3/4/5 bits con escala por fila; affine 3/4/5 bits con grupo 64; BF16 en tensores seleccionados |
-| Idiomas soportados | No disponible (la model card menciona prompts en 7 idiomas para la evaluación FLORES+ y Aya, sin listarlos) |
+| Tipos de cuantizacion | oQh mixta: 2, 3, 4 y 5 bits con escala por fila; affine 3, 4 y 5 bits con grupo 64; BF16 para un 1,857% de los pesos |
+| Idiomas soportados | No disponible (la model card no detalla la lista; el modelo base Qwen3.5 es multilingue) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX), formato oQh |
-| Bits efectivos por peso | 3,407 (checkpoint completo); 3,152 (backbone de lenguaje) |
-| Tamano en disco | 11,833 GB / 11,020 GiB |
-| Libreria / runtime | mlx; requiere oMLX >= 0.8.0 con soporte oQh |
-| Pipeline | image-text-to-text |
-| Modelo base | Qwen/Qwen3.8-27B |
+| Formato de pesos | safetensors en formato oQh (MLX), libreria mlx |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso de 27B con un diseño híbrido que combina capas Gated DeltaNet (atención lineal con estado recurrente) y capas Gated Attention clásicas. Esta mezcla busca reducir el coste de atención en contextos largos manteniendo la calidad de recuperación de la atención completa. El checkpoint incorpora además un codificador visual de 0,461B de parámetros y una cabeza de predicción multi-token (MTP) de 0,425B, que permite decodificación especulativa interna para acelerar la generación. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo original.
+El modelo base Qwen3.8-27B es un transformer denso con una disposicion hibrida que combina capas Gated DeltaNet (atencion lineal con estado recurrente) y capas Gated Attention clasica. Incluye un encoder de vision para entrada de imagen y video, y una cabeza de multi-token prediction (MTP) que permite decodificacion especulativa interna. El checkpoint cuantizado conserva los tres componentes: backbone de lenguaje (26.896 millones de pesos logicos, 9,869 GiB), encoder de vision (0,461 millones, 0,858 GiB) y cabeza MTP (0,425 millones, 0,293 GiB).
 
-La innovación técnica de este checkpoint concreto es el formato oQh. Cada matriz lineal del decodificador se cuantiza a códigos enteros con una sola escala por fila de salida, calculada tras aplicar una transformada de Hadamard por bloques con signo a la entrada; los códigos se eligen optimizando contra las estadísticas de activación de cada capa. La distribución de bits resultante concentra el 70,8% de los pesos lógicos en 3 bits y el 10,9% en 2 bits, mientras reserva 5 bits para 1,51B de parámetros sensibles y mantiene en BF16 0,516B (incluyendo embedding de tokens, cabeza de salida y cabeza MTP, que permanecen en grupos affine). Según la model card, a igual tamaño que oQ2, oQh reduce la divergencia KL frente a BF16 un 47% en FLORES+, un 46% en Aya y un 41% en código.
+La cuantizacion oQh aplica una rotacion de Hadamard a los pesos antes de cuantizarlos, lo que reduce el numero de escalas necesarias y libera espacio para asignar mas bits a las tensiones mas sensibles. El resultado es un checkpoint del mismo tamano que el formato oQe pero con menor divergencia KL: en el nivel oQ2, la KL frente a BF16 baja de 0,19 a 0,10 en FLORES+ (-47%), de 0,21 a 0,11 en Aya (-46%) y de 0,13 a 0,078 en codigo Python (-41%). La distribucion de bits concentra el 70,8% de los pesos en 3 bits con escala por fila y reserva 5 bits para un 5,4% de tensiones sensibles; los embeddings de tokens, la cabeza de salida y la cabeza MTP permanecen en grupos affine. No se dispone de informacion sobre el dataset de entrenamiento original ni sobre el proceso de RLHF o DPO del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-turno con ventana nativa de 262.144 tokens.
-- Comprensión de imagen y vídeo (pipeline image-text-to-text), incluyendo preguntas sobre contenido visual.
-- Generación y análisis de código, con evaluación específica de divergencia KL sobre fuente Python en la model card.
-- Capacidades multilingües: la evaluación del autor usa prompts en 7 idiomas (FLORES+ y Aya), aunque no se detalla la lista ni el nivel de competencia por idioma.
-- Decodificación multi-token (MTP) integrada en el checkpoint, orientada a acelerar la inferencia.
-- No se documenta en la información disponible soporte explícito de tool calling, function calling ni flujos de agentes multi-paso; debe verificarse contra la model card del modelo base.
+- Generacion de texto y razonamiento multi-turno con contexto de hasta 262.144 tokens.
+- Comprension de imagen y video (pipeline image-text-to-text) mediante el encoder de vision integrado.
+- Generacion de codigo, con divergencia KL medida sobre fuentes Python.
+- Capacidades multilingues heredadas del modelo base (la model card no detalla la lista de idiomas).
+- Decodificacion especulativa mediante la cabeza de multi-token prediction (MTP) incluida en el checkpoint.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Modo thinking explicito: no confirmado en la informacion disponible.
 
 ## Casos de uso
 
-- Análisis de documentos escaneados y capturas en local: el codificador visual permite extraer y razonar sobre texto e imágenes sin enviar datos a la nube, con 262.144 tokens de contexto para documentos extensos.
-- Asistencia sobre vídeo en equipos Apple Silicon: el modelo puede procesar secuencias de fotogramas y responder preguntas temporales, aprovechando el contexto largo para resumir grabaciones completas.
-- Generación de código en un IDE local: con 27B de parámetros y evaluación específica sobre Python, es adecuado para autocompletado y refactorización en un Mac Studio o MacBook Pro de gama alta, sin depender de APIs externas.
-- Prototipado de agentes visuales en investigación: la ventana de 262K tokens permite mantener historiales largos de interacción con imágenes intermedias, útil para experimentos de razonamiento multi-paso sobre entornos gráficos.
-- Traducción y análisis multilingüe: los datos de FLORES+ y Aya sugieren uso en tareas de traducción y comprensión multilingüe, aunque la lista exacta de idiomas debe confirmarse con el modelo base.
-- Despliegue en estaciones de trabajo con memoria unificada de 16-32 GB: el tamaño de 11,8 GB deja margen para el KV cache y el codificador visual en configuraciones de 24 GB o superiores.
-- Evaluación comparativa de técnicas de cuantización: sirve como referencia para medir la pérdida de calidad de oQh frente a oQe y BF16 en tareas de texto, código y multilingüe.
+- Analisis de documentos con imagenes en local: el modelo puede procesar capturas, diagramas y texto escaneado junto con instrucciones largas gracias a los 262.144 tokens de contexto, sin enviar datos a la nube.
+- Asistencia sobre video: resumen y respuesta a preguntas sobre clips o grabaciones mediante el encoder de vision, adecuado para revision de material audiovisual en equipos Apple Silicon.
+- Generacion de codigo en estaciones de trabajo macOS: la cuantizacion preserva calidad en Python (KL de 0,078 frente a BF16) y el checkpoint de 11 GB cabe en memoria unificada de 16 GB o superior.
+- Prototipado de agentes multimodales: la cabeza MTP permite decodificacion especulativa que acelera la generacion en flujos iterativos, util para experimentar con pipelines de agentes antes de desplegar en servidor.
+- Investigacion en cuantizacion de bajo bit: el checkpoint sirve como referencia reproducible para comparar oQh frente a oQe y otros esquemas en tareas multilingues (FLORES+, Aya) y de codigo.
+- Procesamiento por lotes de imagenes etiquetadas: clasificacion y descripcion de catalogos de productos o archivos fotograficos en un Mac Studio, con coste cero de API.
+- Traduccion y analisis multilingue de material con soporte visual: el modelo base cubre varios idiomas y la evaluacion del autor incluye 7 lenguas en FLORES+ y Aya.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta divergencia KL frente al modelo BF16 para los formatos oQe y oQh:
+La model card no publica resultados en benchmarks estandar (MMLU, HumanEval, GSM8K). El unico dato de rendimiento disponible es la divergencia KL frente al modelo en BF16, comparando oQe y oQh al mismo nivel de compresion:
 
 | Nivel | Tamano | KL FLORES+ (oQe -> oQh) | KL Aya (oQe -> oQh) | KL codigo (oQe -> oQh) |
 |---|---|---|---|---|
 | oQ2 | 9,9 GiB | 0,19 -> 0,10 (-47%) | 0,21 -> 0,11 (-46%) | 0,13 -> 0,078 (-41%) |
 | oQ3 | 12,2 GiB | 0,066 -> 0,040 (-39%) | 0,082 -> 0,040 (-51%) | 0,052 -> 0,037 (-28%) |
+| oQ4 | 15,2 GiB | 0,016 -> 0,012 (-26%) | 0,018 -> 0,013 (-27%) | 0,013 -> 0,012 (-13%) |
 
-Estas cifras corresponden a builds solo de texto (sin codificador visual ni cabeza MTP) y no sustituyen a evaluaciones de tareas como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: el checkpoint completo ocupa 11,02 GiB; con KV cache para 262K tokens y el codificador visual, se recomienda un mínimo de 24 GB de memoria unificada, y 32 GB o más para contextos largos.
-- GPU compatibles: exclusivamente Apple Silicon (MLX). No hay soporte para CUDA, ROCm ni CPU genérica en este formato.
-- Equipos consumer: cabe en MacBook Pro con M-series Pro/Max de 24-36 GB y en Mac Studio; no es viable en equipos con 16 GB si se usan contextos largos.
-- Despliegue: requiere oMLX 0.8.0 o superior con soporte oQh. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que no reconocen el formato oQh.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Memoria: el checkpoint completo ocupa 11,02 GiB; se recomienda al menos 16 GB de memoria unificada para inferencia con contexto moderado y 24-32 GB para contextos largos o procesamiento de video.
+- GPU recomendadas: Apple Silicon con memoria unificada (series M2 Pro/Max/Ultra, M3 Max/Ultra, M4 Pro/Max). No es compatible con GPU NVIDIA o AMD porque el formato oQh es especifico de MLX.
+- Cabe en consumer GPU: si, en equipos Apple Silicon de gama alta con 16 GB o mas de memoria unificada; no en GPU de consumo con 8-12 GB de VRAM por la incompatibilidad de formato.
+- Despliegue: exclusivamente mediante oMLX 0.8.0 o superior. No es cargable por llama.cpp, vLLM, TGI, Ollama ni otros motores MLX genericos.
+- Latencia y throughput: no disponibles en la informacion proporcionada. La cabeza MTP incluida puede reducir la latencia de decodificacion, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato / motor |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-oQ2h-mtp (este) | 27,781B lógicos | 262.144 | oQh / MLX (oMLX >= 0.8.0) | Apache-2.0 | Cuantización mixta 3,407 bits/ peso |
-| Qwen/Qwen3.8-27B (BF16) | 27,781B | 262.144 | safetensors / múltiples | Apache-2.0 | Modelo de referencia sin pérdida de cuantización; requiere ~55 GB |
-| Qwen3.8-27B oQ2 (oQe) | 27,781B | 262.144 | oQe / MLX | Apache-2.0 | Mismo tamaño que oQh, mayor KL según la model card |
-| Alternativas de 27B densas con visión | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
+| Qwen3.8-27B-oQ2h-mtp (este) | 27,78B | 262.144 | Si (imagen y video) | Apache-2.0 | oQh / oMLX 0.8.0+ |
+| Qwen/Qwen3.8-27B (base) | 27B | 262.144 | Si | Apache-2.0 | safetensors BF16 / cualquier motor compatible |
+| Qwen3.8-27B en oQe (mismo autor) | 27,78B | 262.144 | Si | Apache-2.0 | MLX estandar / cualquier motor MLX |
+| Alternativas de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+La comparacion mas directa es con el checkpoint oQe del mismo autor y nivel oQ2: mismo tamano (9,9 GiB para el backbone), pero oQh reduce la KL entre un 41% y un 47% segun la tarea. Frente al modelo base en BF16, el checkpoint cuantizado ocupa aproximadamente una cuarta parte del espacio a costa de la divergencia medida en la tabla anterior.
 
 ## Limitaciones y advertencias
 
-- Dependencia de runtime: el formato oQh solo lo carga oMLX 0.8.0 o superior; versiones anteriores fallan al cargar el checkpoint. Esto limita la portabilidad y la integración en pipelines estándar.
-- Exclusividad de plataforma: MLX implica Apple Silicon; no hay ruta de despliegue en servidores NVIDIA o AMD sin reconvertir el modelo.
-- Discrepancia de parámetros: la model card indica 27,781B lógicos, pero el recuento de safetensors del repo es de 5.724.930.800; conviene verificar el inventario real de tensores antes de dimensionar memoria.
-- Pérdida de calidad por cuantización: con 3,407 bits/peso efectivos, la divergencia KL frente a BF16 es no nula (0,10 en FLORES+ para oQ2), lo que puede degradar tareas de razonamiento fino o código complejo.
-- Idiomas no especificados: la model card no lista los 7 idiomas evaluados ni garantiza cobertura; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de sesgos para este checkpoint; debe asumirse el comportamiento del modelo base, no verificado aquí.
-- Tool calling y agentes: no se documenta soporte explícito; no debe asumirse en producción sin pruebas.
-- Licencia Apache-2.0: permite uso comercial, pero el autor remite a la licencia del modelo base; conviene revisar los términos de Qwen/Qwen3.8-27B por si añaden restricciones adicionales.
-- Repo sin descargas ni likes y creado recientemente: no hay evidencia de comunidad ni de validación independiente de la calidad del checkpoint.
+- Dependencia de oMLX 0.8.0 o superior: versiones anteriores no pueden cargar el checkpoint y otros motores MLX genericos tampoco, lo que ata el modelo a una unica herramienta.
+- Cuantizacion agresiva: 3,407 bits por peso de media implica perdida de calidad medible (KL de 0,10 en FLORES+ a nivel oQ2); no es adecuado para tareas que exijan fidelidad cercana al BF16.
+- Riesgo de alucinacion: inherente al modelo base y potencialmente amplificado por la cuantizacion en tareas de razonamiento largo o generacion de codigo complejo.
+- Idiomas: la model card no documenta la lista de idiomas soportados; conviene validar el rendimiento en el idioma objetivo antes de produccion.
+- Vision y video: aunque el encoder se conserva, la cuantizacion mixta puede degradar tareas de percepcion fina (OCR, detalles pequenos); no se publican metricas especificas de vision.
+- Uso comercial: la licencia Apache-2.0 permite uso comercial, pero el formato oQh y la dependencia de oMLX pueden condicionar el despliegue en infraestructura no Apple.
+- Sin benchmarks estandar: no hay datos de MMLU, HumanEval o GSM8K que permitan comparar directamente con otros modelos de 27B.
+- Adopcion baja: 200 descargas y 0 likes en el momento de la consulta, lo que reduce la validacion comunitaria del checkpoint.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2h-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2h-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio oQ / omlx: https://github.com/jundot/omlx
+- Repositorio oQ / oMLX: https://github.com/jundot/omlx
 - Pull request del formato oQh: https://github.com/jundot/omlx/pull/5317

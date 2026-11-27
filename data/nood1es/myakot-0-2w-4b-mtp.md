@@ -2,93 +2,84 @@
 
 ## Resumen
 
-Myakot-0.2w-4b-mtp es un modelo multimodal de tipo image-text-to-text publicado por el usuario nood1es en Hugging Face, derivado del modelo base Qwen/Qwen3.5-4B de Alibaba. Se distribuye con licencia Apache 2.0 y está empaquetado para su uso con transformers, con artefactos adicionales en formato GGUF orientados a inferencia local mediante llama.cpp. El repositorio ocupa 72,2 GB e incluye pesos en safetensors con 4.326.350.848 parámetros reales.
+Myakot-0.2w-4b-mtp es un modelo publicado por el usuario nood1es en Hugging Face, distribuido bajo licencia Apache 2.0 y empaquetado principalmente en formato GGUF para su uso con herramientas de inferencia local. Segun la model card del autor, el modelo no introduce ninguna modificacion tecnica respecto a su base: se trata de Qwen/Qwen3.5-4B con el nombre "Myakot" aplicado, es decir, un renombrado del modelo original sin fine-tuning ni cambios de arquitectura declarados.
 
-El modelo hereda la arquitectura híbrida de Qwen3.5, que combina capas de atención lineal Gated DeltaNet con capas de atención completa (Gated Attention) y un encoder de visión, además de un módulo MTP (multi-token prediction) entrenado con múltiples pasos que habilita decodificación especulativa. La ventana de contexto nativa es de 262.144 tokens, extensible hasta 1.010.000 tokens según la documentación del modelo base.
+El modelo cuenta con 4.326.350.848 parametros en formato safetensors y esta etiquetado con el pipeline image-text-to-text, lo que sugiere capacidades multimodales heredadas de la base Qwen3.5-4B. El sufijo "mtp" en el nombre no viene acompanado de ninguna explicacion tecnica en la informacion disponible, por lo que no es posible confirmar a que se refiere.
 
-Su relevancia radica en que ofrece capacidades multimodales y de razonamiento propias de la familia Qwen3.5 en un tamaño de 4B parámetros, lo que permite despliegues en hardware de consumo y flujos de trabajo con decodificación especulativa MTP que, según la documentación de Unsloth, aceleran la generación entre 1,5 y 2 veces. No obstante, la model card del autor no aporta información específica sobre el proceso de ajuste aplicado ni sobre benchmarks propios de esta variante.
+Su relevancia practica es limitada: al ser un renombrado de un modelo existente, cualquier evaluacion de capacidades, rendimiento y limitaciones debe remitirse al modelo original Qwen3.5-4B. La ficha siguiente documenta lo que se puede verificar a partir de los metadatos disponibles y senala explicitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal híbrido con vision encoder: Gated DeltaNet (atención lineal) + Gated Attention, más módulo MTP |
-| Parametros totales | 4.326.350.848 (4B según model card) |
-| Parametros activos | no disponible (no se indica que sea MoE en la información proporcionada) |
-| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 tokens |
-| Tipos de cuantizacion | GGUF (incluye variantes Unsloth Dynamic 2.0, p. ej. UD-Q4_K_XL); safetensors en precisión original |
-| Idiomas soportados | 201 idiomas y dialectos según el modelo base Qwen3.5; no se detalla lista específica para esta variante |
+| Arquitectura | no disponible (heredada de Qwen/Qwen3.5-4B; no detallada en la informacion proporcionada) |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo incluye pesos GGUF; no se detallan los niveles) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) y GGUF |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Qwen3.5-4B, un transformer causal con encoder de visión. El layout de capas es 8 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)), es decir, bloques de tres capas de atención lineal Gated DeltaNet seguidos de una capa de atención completa. La dimensión oculta es 2560, con 32 capas, FFN de dimensión intermedia 9216 y embeddings de tokens de 248.320 entradas (con padding), atados a la salida LM. Gated DeltaNet usa 32 cabezas lineales para V y 16 para QK con dimensión de cabeza 128; Gated Attention usa 16 cabezas para Q y 4 para KV con dimensión de cabeza 256 y RoPE de 64 dimensiones.
+No se dispone de informacion sobre la arquitectura interna del modelo en la documentacion proporcionada. El autor indica que se trata de Qwen/Qwen3.5-4B renombrado, por lo que la arquitectura, el proceso de entrenamiento, el volumen de tokens y las tecnicas de alineacion (RLHF, DPO u otras) corresponderian al modelo base, cuyos detalles no se incluyen en esta ficha por falta de datos verificables en la informacion suministrada.
 
-El entrenamiento del modelo base combina pre-entrenamiento y post-entrenamiento con fusión temprana de tokens multimodales, entrenamiento con múltiples pasos de MTP y escalado de RL en entornos multiagente. La model card del autor no documenta el proceso de ajuste específico aplicado para producir esta variante Myakot, ni el volumen o composición de datos adicionales. La innovación técnica más destacable es el módulo MTP, que permite decodificación especulativa en llama.cpp mediante el flag `--spec-type draft-mtp` (renombrado desde `--spec-type mtp` en mayo de 2026), con `--spec-draft-n-max 6` como configuración de referencia.
+Tampoco se documenta ninguna innovacion tecnica propia. El sufijo "mtp" del nombre no aparece explicado en la model card, y no hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones. El pipeline declarado es image-text-to-text, lo que apunta a un modelo multimodal, pero no se aportan detalles sobre el codificador visual ni sobre el entrenamiento conjunto de modalidades.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: procesa entradas de imagen y texto (pipeline image-text-to-text) y genera respuestas en lenguaje natural.
-- Razonamiento y código: hereda las capacidades de Qwen3.5 en razonamiento, programación y agentes según la documentación del modelo base.
-- Comprensión visual: encoder de visión integrado con fusión temprana de tokens multimodales.
-- Tool calling / function calling: soporte mejorado, con parseo de objetos anidados para aumentar la tasa de éxito en llamadas a herramientas.
-- Soporte de rol Developer: compatible con entornos como Codex y OpenCode.
-- Capacidades multilingües: cobertura de 201 idiomas y dialectos según el modelo base.
-- Decodificación especulativa MTP: genera varios tokens por paso para acelerar la inferencia.
-- Fine-tuning local: soportado mediante Unsloth según la documentación enlazada.
+- Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica uso previsto para dialogos multi-turno.
+- Procesamiento de imagen y texto: el pipeline image-text-to-text sugiere entrada de imagenes junto con texto, aunque no se detalla el alcance.
+- Capacidades de razonamiento, codigo y matematicas: no documentadas en la informacion disponible; dependerian del modelo base Qwen3.5-4B.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; el campo de idiomas del repositorio no esta cumplimentado.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Asistentes de atención al cliente multimodales: el modelo puede gestionar conversaciones multi-turno con contexto de hasta 262.144 tokens y procesar capturas de pantalla o imágenes enviadas por el usuario, lo que resulta adecuado para soporte técnico que requiera interpretar errores visuales.
-- Automatización de documentación técnica: con contexto largo y capacidad de visión, puede resumir manuales extensos, diagramas de arquitectura y capturas de interfaces en una sola pasada.
-- Generación de código en pipelines: el soporte de tool calling con parseo de objetos anidados y el rol Developer permiten integrarlo en flujos tipo Codex u OpenCode para autocompletar, revisar y refactorizar código.
-- Agentes multi-paso en local: el tamaño de 4B y los GGUF con cuantización UD-Q4_K_XL permiten ejecutar agentes con llamadas a herramientas en hardware de consumo, usando decodificación especulativa MTP para reducir latencia.
-- Análisis de imágenes en entornos con recursos limitados: al caber en GPU de consumo, sirve para clasificación y descripción de imágenes en aplicaciones de campo o prototipos sin infraestructura cloud.
-- Evaluación e investigación de arquitecturas híbridas: la combinación de Gated DeltaNet y Gated Attention con MTP lo convierte en una base útil para estudiar eficiencia de atención lineal y decodificación especulativa en modelos pequeños.
-- Despliegue multilingüe: con cobertura de 201 idiomas según el modelo base, puede emplearse en traducción y atención al cliente en mercados con idiomas minoritarios.
+- Prototipado rapido de asistentes conversacionales: al estar disponible en GGUF y con licencia Apache 2.0, puede desplegarse en local para validar flujos de dialogo antes de comprometerse con un modelo mayor.
+- Pruebas de pipelines multimodales imagen-texto: el pipeline declarado permite experimentar con entrada de imagenes y texto en entornos de desarrollo sin coste de API.
+- Evaluacion comparativa de herramientas de inferencia: sirve como caso de prueba para medir el comportamiento de llama.cpp, Ollama u otros runners con un modelo de ~4.300 millones de parametros.
+- Entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su integracion en productos comerciales sin obligaciones de atribucion adicionales mas alla de las de la licencia.
+- Educacion y experimentacion: su tamano moderado permite ejecutarlo en hardware de consumo para fines de aprendizaje sobre modelos multimodales.
+- Base para fine-tuning propio: al ser un renombrado de Qwen3.5-4B, un equipo puede partir de el y aplicar sus propios ajustes, aunque seria mas directo partir del modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor incluye una referencia a una figura de benchmarks del modelo base Qwen3.5, pero no se proporcionan cifras numéricas en la información disponible, por lo que no se presentan datos en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_XL, aproximadamente 2,5-3 GB para los pesos de 4B más overhead de contexto KV; con contexto de 8.192 tokens y KV cache, se recomienda al menos 6-8 GB de VRAM.
-- GPU recomendadas: RTX 4090, RTX 3090, RTX 4070 Ti o superiores para inferencia cómoda con contexto largo; A100/H100 para despliegues con contexto máximo o múltiples usuarios.
-- Cabe en GPU de consumo: sí, en GPUs con 8 GB o más de VRAM usando GGUF Q4; con cuantizaciones más agresivas podría caber en 6 GB, aunque el contexto máximo requeriría offloading.
-- Opciones de despliegue: llama.cpp (con soporte MTP mediante `--spec-type draft-mtp`), transformers, vLLM, SGLang, KTransformers y Unsloth para fine-tuning.
-- Latencia y throughput: la documentación de Unsloth indica una aceleración de 1,5-2x con decodificación especulativa MTP; no se proporcionan cifras absolutas de tokens por segundo en la información disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de ~4.300 millones de parametros, las estimaciones habituales serian del orden de 8-9 GB en FP16 y de 3-4 GB en cuantizaciones de 4 bits, aunque estas cifras no estan confirmadas para este repositorio.
+- GPU recomendadas: no especificadas por el autor. Por tamano, cabria esperar funcionamiento en GPUs de consumo como RTX 3060, RTX 4060 o superiores, y en GPUs de datacenter como A100 o H100 para despliegues de mayor throughput.
+- Compatibilidad con GPU de consumo: probable por el tamano del modelo, pero no verificada en la informacion proporcionada.
+- Opciones de despliegue: el formato GGUF sugiere compatibilidad con llama.cpp y derivados como Ollama; la presencia de safetensors permite usar transformers. No se confirma soporte de vLLM ni TGI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Myakot-0.2w-4b-mtp | 4,3B | 262.144 (ext. 1.010.000) | Apache 2.0 | Hugging Face (nood1es) |
-| Qwen3.5-4B | 4B | 262.144 (ext. 1.010.000) | Apache 2.0 | Hugging Face (Qwen) |
-| Qwen3-VL (tamaño comparable) | no disponible | no disponible | no disponible | Hugging Face (Qwen) |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Myakot-0.2w-4b-mtp | 4.326.350.848 | no disponible | Apache 2.0 | safetensors, GGUF | Renombrado de Qwen3.5-4B segun el autor |
+| Qwen/Qwen3.5-4B | ~4.300 millones (segun denominacion) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Modelo base original; sus capacidades son las que hereda Myakot |
+| Alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de otros modelos comparables en la informacion suministrada |
 
-La comparativa se limita al modelo base y a la familia Qwen3-VL mencionada en la model card; no se dispone de datos de rendimiento numérico para contrastar. No se identifican en la información proporcionada otras alternativas de 4B multimodales con MTP para una comparación más amplia.
+La comparativa mas relevante es con el propio modelo base: al no existir modificaciones declaradas, Myakot-0.2w-4b-mtp no ofrece ventajas tecnicas frente a Qwen/Qwen3.5-4B, y este ultimo cuenta con documentacion oficial mas completa.
 
 ## Limitaciones y advertencias
 
-- No se documenta el proceso de ajuste ni los datos usados para crear esta variante, por lo que se desconoce si introduce sesgos o degradaciones respecto al modelo base.
-- Riesgo de alucinación inherente a los modelos generativos, sin evaluación específica publicada para esta variante.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria conocida.
-- El soporte MTP en llama.cpp no admite todavía `-np > 1` ni `--mmproj`, lo que limita el despliegue multimodal con decodificación especulativa y el servido concurrente.
-- La lista concreta de idiomas soportados por esta variante no está disponible; la cobertura de 201 idiomas corresponde al modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero al ser un derivado conviene verificar los términos del modelo base Qwen3.5-4B.
-- El tamaño del repositorio (72,2 GB) implica requisitos de almacenamiento considerables para la descarga completa.
+- Ausencia de valor anadido tecnico: el autor declara que es el modelo base renombrado, por lo que no aporta mejoras de rendimiento, alineacion ni capacidades.
+- Documentacion insuficiente: no se detallan idiomas, contexto, cuantizaciones ni arquitectura, lo que dificulta la evaluacion previa a produccion.
+- Riesgo de alucinacion: no evaluado para este repositorio; debe asumirse el comportamiento del modelo base, no documentado aqui.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas del repositorio esta vacio.
+- Licencia: Apache 2.0 permite uso comercial, pero al tratarse de un renombrado conviene verificar la licencia y los terminos del modelo original Qwen/Qwen3.5-4B antes de desplegarlo.
+- Trazabilidad: la falta de documentacion sobre el proceso de conversion a GGUF impide verificar la fidelidad de los pesos cuantizados respecto al original.
+- Advertencia de produccion: para entornos reales es preferible usar directamente Qwen/Qwen3.5-4B, con soporte oficial y documentacion completa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nood1es/Myakot-0.2w-4b-mtp
+- Modelo en Hugging Face: https://huggingface.co/nood1es/Myakot-0.2w-4b-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Guía de ejecución MTP de Unsloth: https://unsloth.ai/docs/models/qwen3.5#mtp-guide
-- Guía de Qwen3.5 en Unsloth: https://unsloth.ai/docs/models/qwen3.5
-- Guía de fine-tuning de Qwen3.5: https://unsloth.ai/docs/models/qwen3.5/fine-tune
-- Unsloth Dynamic 2.0 GGUF: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf
-- Repositorio Unsloth: https://github.com/unslothai/unsloth/
-- PR de MTP en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/22673
-- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
-- Qwen Chat: https://chat.qwen.ai

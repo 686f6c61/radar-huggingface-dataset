@@ -2,95 +2,101 @@
 
 ## Resumen
 
-AoiHinami-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint comunitario waiIllustriousSDXL v17, que reproduce a Aoi Hinami (日南葵), personaje de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui en Hugging Face como derivado no oficial, e incluye los pesos de las siete épocas de entrenamiento (E1–E7) en formato safetensors, con recomendación explícita de usar E6 a fuerza 0.8.
+AoiHinami-Lora es un LoRA de personaje para modelos de difusion SDXL, desarrollado por el usuario abbuibuibui. Reproduce a Aoi Hinami (日南葵), personaje de la serie *Bottom-tier Character Tomozaki*, sobre el checkpoint base waiIllustriousSDXL v17. Es un derivado no oficial, creado por un particular y no vinculado a los titulares de la franquicia. El repositorio se publica bajo licencia CreativeML OpenRAIL-M y esta etiquetado para los idiomas ingles y chino.
 
-El modelo resuelve un problema acotado: la generación consistente de un personaje de anime concreto con atuendos escolares definidos (blazer navy con corbata roja, uniforme de verano con falda de cuadros azul) y rasgos faciales estables (pelo castaño ondulado, a menudo medio recogido, ojos marrones, lunar bajo un ojo). No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre un UNet SDXL ya entrenado.
+El modelo resuelve un problema acotado: la generacion consistente de un personaje concreto (identidad facial, peinado, color de ojos y varios conjuntos de ropa) dentro de un pipeline SDXL/Illustrious. Para ello emplea tokens de activacion especificos (`minami_nanami` para identidad y variantes por atuendo) y se distribuye en varias epocas de entrenamiento (E1-E7), de las que el autor recomienda E6 a fuerza 0.8. El repositorio ocupa 7,9 GB e incluye, ademas de la linea principal WAI/Illustrious, dos linajes adicionales: AutismMix Pony (bajo `autism_pony/`) y MOSS-Image (bajo `moss/`), con pesos y prompts independientes.
 
-Es relevante para quien construya pipelines de generación de imágenes de personajes en ComfyUI o diffusers y necesite un adaptador ligero (unos 456 MB por época) con tokens de activación documentados y una evaluación comparativa pública entre épocas. El repo ocupa 3,2 GB por acumular los siete safetensors.
+Es relevante ahora por su caracter practico: es un ejemplo de LoRA de personaje con evaluacion comparativa publicada (rondas de cribado y matriz de fuerza), documentacion bilingue y dataset propio enlazado. No obstante, su alcance es muy especializado y su utilidad se limita a la generacion de imagenes de este personaje sobre checkpoints de la familia SDXL/Illustrious/Pony.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre UNet de SDXL (modelo base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (peso por fichero: 456.496.972 bytes) |
+| Arquitectura | LoRA sobre difusion latente SDXL (checkpoint base waiIllustriousSDXL v17); linajes adicionales sobre AutismMix Pony y MOSS-Image |
+| Parametros totales | no disponible (rango 64, alpha 32; cada archivo de pesos pesa 456.497.868 bytes) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de difusión) |
-| Tipos de cuantizacion | no disponible; pesos en safetensors de precisión nativa del entrenamiento |
-| Idiomas soportados | en, zh (etiquetas de la model card) |
+| Longitud de contexto | no aplica (modelo de generacion de imagen) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en precision de entrenamiento; no se documentan variantes GGUF/FP8) |
+| Idiomas soportados | en, zh (etiquetas del repositorio; los prompts de ejemplo estan en ingles) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (compatible con diffusers y ComfyUI) |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un adaptador LoRA de rango bajo inyectado en las capas de atención del UNet de SDXL. El modelo base es waiIllustriousSDXL v17, un merge comunitario de la familia Illustrious, orientado a ilustración anime. El entrenamiento se realizó sobre el dataset público abbuibuibui/AoiHinami-Dataset, con captions que usan `keep_tokens = 2` y conservan el nombre del personaje y el token de atuendo; según la model card, los colores de pelo y ojos suelen omitirse en las captions porque el modelo los aprende por identidad.
+El modelo es un adaptador LoRA de bajo rango aplicado sobre un UNet de SDXL. El entrenamiento principal se realizo sobre waiIllustriousSDXL v17 con rango 64 y alpha 32, sobre un conjunto de 71 pares imagen-texto con 2 repeticiones por par, en una DGX Spark usando ComfyUI. El dataset esta publicado como `abbuibuibui/AoiHinami-Dataset`. Se generaron siete epocas (E1-E7); los archivos numerados `minami_nanami-000001` a `000006` corresponden a E1-E6 y el archivo sin numerar `minami_nanami.safetensors` es E7. El autor documenta que las captions a menudo omiten color de pelo y ojos, por lo que recomienda anadirlos explicitamente en el prompt.
 
-Se publican siete checkpoints correspondientes a otras tantas épocas. El autor realizó una evaluación horizontal con matriz de 10 escenas por 4 fuerzas sobre E5, E6 y E7, y seleccionó E6 como predeterminado a fuerza 0.8. No se documentan en la información disponible el número de pasos, el learning rate, el tamaño del dataset ni la composición exacta de las imágenes de entrenamiento.
+El repositorio es en realidad una coleccion de tres linajes entrenados por separado. La linea principal (WAI/Illustrious) queda en la raiz del repositorio. La linea AutismMix Pony, bajo `autism_pony/`, se entreno sobre AutismMix Pony y se muestra con AutismMix Confetti; en esta linea el aspecto verificado es pelo corto rojo oscuro, despeinado, con flequillo y ojos verdes, y el autor advierte explicitamente de que no debe mezclarse con los pesos ni los prompts de WAI/Illustrious. La tercera linea, MOSS-Image, se ubica en `moss/`. No se documentan tecnicas como RLHF, DPO ni decodificacion especulativa, al no tratarse de un modelo de lenguaje.
 
 ## Capacidades
 
-- Generación de retratos y cuerpos completos del personaje Aoi Hinami con identidad estable (pelo castaño ondulado, ojos marrones, lunar bajo un ojo).
-- Control de atuendo mediante tokens dedicados: `aoi_hinami_blazer_uniform`, `aoi_hinami_summer_uniform`, `aoi_hinami_green_jacket`, `aoi_hinami_sports_t_shirt`, `aoi_hinami_yellow_t_shirt`, `aoi_hinami_yukata`.
-- Composición de escenas complejas: la model card documenta resultados correctos en escena nocturna callejera a fuerza 0.8.
-- Fallback a ropa casual (gabardina beige, camisa blanca, pantalón oscuro) cuando se omite el token de atuendo.
-- Integración con el ecosistema SDXL: funciona en ComfyUI y en diffusers, y es compatible con merges de Illustrious y NoobAI.
-- No soporta tool calling, agentes, razonamiento multi-paso ni otras capacidades de modelos de lenguaje; es exclusivamente un adaptador de generación de imágenes.
+- Generacion de imagenes de personaje (Aoi Hinami) sobre checkpoints SDXL de la familia Illustrious, con identidad consistente mediante el token `minami_nanami`.
+- Control de atuendo mediante tokens dedicados: `minami_nanami_blazer_uniform`, `minami_nanami_summer_uniform`, `minami_nanami_casual_cardigan`, `minami_nanami_home_loungewear`, `minami_nanami_sports_t_shirt` y `minami_nanami_yukata`.
+- Retratos frontales, tres cuartos y perfil, asi como cuerpo completo, escenas sentadas y fondos complejos (calle nocturna), segun la evaluacion publicada por el autor.
+- Generacion sin token de atuendo: a fuerza 0.8 produce una camiseta azul claro holgada y zapatillas blancas, manteniendo pelo rubio y ojos azules.
+- Ajuste de fuerza del LoRA (evaluado en 0.4, 0.6, 0.8 y 1.0) para modular la intensidad del personaje.
+- Prompts negativos recomendados para corregir deriva de color de pelo y ojos (`brown hair`, `black hair`, `pink hair`, `brown eyes`, `green eyes`, `red eyes`, `twintails`, `short hair`).
+- Linea Pony con un aspecto visual distinto (pelo corto rojo oscuro y ojos verdes) sobre checkpoints de la familia Pony.
+- Compatibilidad con ComfyUI; ajustes de referencia del autor: Euler a, 28 pasos, CFG 4.5, CLIP skip 2, resolucion 832x1216, sin hires ni ADetailer.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio: es un adaptador de generacion de imagen, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Ilustración de fan art de personaje: cargar E6 a 0.8 sobre waiIllustriousSDXL v17 y generar retratos o cuerpos completos con el prompt de ejemplo de la model card, útil para creadores que necesiten consistencia de identidad entre imágenes.
-- Producción de viñetas o storyboards de doujinshi: al mantener el mismo token de identidad y atuendo entre prompts, se obtiene coherencia visual entre paneles sin reentrenar nada.
-- Generación de variantes de vestuario: los tokens de uniforme de invierno, verano, chándal, camiseta o yukata permiten ilustrar al personaje en distintos contextos con un solo adaptador.
-- Pruebas comparativas de LoRAs de personaje: el repo incluye matrices de evaluación públicas (épocas en columnas, fuerzas en filas), lo que sirve como referencia metodológica para quien evalúe adaptadores propios.
-- Integración en pipelines de ComfyUI con parámetros fijos: Euler a, 28 pasos, CFG 4.5, CLIP skip 2 y resolución 832×1216 están documentados y reproducen los resultados de la model card.
-- Prototipado rápido en diffusers: al ser safetensors compatible con la librería, se puede cargar mediante `load_lora_weights` en scripts de Python para generar lotes de imágenes de personaje en servidores con GPU.
-- Escenas nocturnas o de exterior: la evaluación documenta un resultado correcto de cuerpo completo caminando bajo farolas a fuerza 0.8, útil para ilustraciones ambientadas fuera del entorno escolar.
+- Ilustracion de fanart consistente: usar el token `minami_nanami` junto con el de atuendo para generar multiples imagenes del personaje manteniendo rasgos faciales y paleta (rubio y azul) entre iteraciones, gracias a la identidad codificada en el LoRA.
+- Creacion de hojas de personaje y referencias visuales: la evaluacion publicada cubre retrato frontal, tres cuartos y perfil, lo que permite generar un conjunto de vistas coherentes para documentacion o fichas de personaje.
+- Escenas narrativas y viñetas: combinando el token de identidad con descripciones de entorno (por ejemplo, calle nocturna) se obtienen composiciones de cuerpo entero aptas para ilustrar relatos o guiones graficos.
+- Prototipado de variaciones de vestuario: los tokens de uniforme de invierno, uniforme de verano, cardigan, ropa de casa, camiseta deportiva y yukata permiten explorar rapidamente distintas apariencias del mismo personaje sin reentrenar.
+- Integracion en pipelines de ComfyUI: al ser un safetensors compatible con diffusers, puede cargarse como nodo LoRA en flujos automatizados de generacion por lotes con los parametros de referencia del autor (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216).
+- Experimentacion con fuerza del adaptador: la matriz publicada E5/E6/E7 x 0.4/0.6/0.8/1.0 sirve como punto de partida para calibrar la intensidad del personaje segun el estilo deseado.
+- Comparacion de linajes: el repositorio incluye variantes para Illustrious, AutismMix Pony y MOSS-Image, lo que permite evaluar como se comporta el mismo personaje bajo distintas bases SDXL manteniendo pesos separados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la información disponible. La model card incluye únicamente una evaluación cualitativa comparativa entre épocas:
+No se han publicado resultados de benchmarks en la informacion disponible. El autor aporta una evaluacion comparativa cualitativa entre epocas y fuerzas, resumida a continuacion:
 
-| Candidato | Resultado observado | Decisión |
+| Candidato | Observacion del autor | Decision |
 |---|---|---|
-| E1–E4 | Color de identidad ya castaño/castaño; el uniforme a cuerpo completo se asienta más tarde | Alternativas tempranas/medias |
-| E5 | Blazer completo correcto con manos a la espalda; uniforme de verano sobre el hombro con pequeño lazo azul en el pelo | Alternativa de matriz |
-| E6 | Retrato con rostro sereno y lunar más visible; silueta de blazer igual a E5; uniforme de verano a 0.8 mantiene camisa blanca de manga corta y falda azul; escena nocturna estable | Recomendado a 0.8 |
-| E7 | Rostro y blazer casi idénticos a E6; sin ganancia clara sobre E6 a 0.8 | Alternativa de época final |
+| E5 | Rubio y azul fijados; retrato algo severo | Alternativa |
+| E6 | Retrato mas claro; uniforme de blazer completo con escudo, corbata roja, falda de cuadros y calcetines altos | Recomendado a 0.8 |
+| E7 | Rostro practicamente identico a E6 | Alternativa final |
+
+Rondas documentadas: ronda 1 con E1-E7 a fuerza 0.8 (rostro, blazer, verano) y ronda 3 con matriz E5/E6/E7 x 0.4/0.6/0.8/1.0 sobre diez vistas (rostro, tres cuartos, perfil, blazer, verano, sentada, fondo simple, noche, sin atuendo y sin trigger).
 
 ## Requisitos de hardware
 
-- El adaptador pesa 456 MB por época; el repo completo ocupa 3,2 GB.
-- Requiere cargar además el modelo base SDXL (waiIllustriousSDXL v17), que en fp16 ocupa del orden de 6,5 GB de VRAM solo para los pesos del UNet y el VAE; el consumo real depende de la resolución y del pipeline.
-- GPU recomendadas: tarjetas con 8 GB o más de VRAM para inferencia a 832×1216 en fp16; el autor generó las evaluaciones en una DGX con ComfyUI.
-- Cabe en GPU de consumo: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, entre otras, siempre que se disponga de al menos 8 GB de VRAM para el conjunto base + LoRA.
-- Opciones de despliegue: ComfyUI (configuración documentada por el autor) y diffusers en Python. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible de forma especifica para el LoRA; depende del checkpoint base SDXL y de la resolucion. El autor entreno en una DGX Spark con ComfyUI.
+- GPU recomendadas: no disponible en la informacion proporcionada. Al ser un adaptador SDXL, requiere la VRAM del checkpoint base completo, no solo la del LoRA (cada archivo de pesos del adaptador pesa unos 456 MB).
+- Cabe en GPU de consumo: no confirmado en la informacion disponible; la viabilidad dependera del checkpoint SDXL subyacente y de la cuantizacion aplicada a este.
+- Opciones de despliegue: ComfyUI (entorno usado por el autor, con ajustes Euler a / 28 pasos / CFG 4.5 / CLIP skip 2 / 832x1216); al publicarse como safetensors con libreria diffusers, es compatible con pipelines basados en diffusers. No se documentan opciones como llama.cpp, vLLM, Ollama o TGI, que no aplican a modelos de difusion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Contexto/tamano | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| AoiHinami-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 456 MB por época | creativeml-openrail-m | Hugging Face, 58 descargas |
-| LoRAs de personaje en Civitai | LoRA de personaje | SDXL / Illustrious / Pony | variable | variable según autor | Civitai |
-| LoRAs de personaje en Hugging Face | LoRA de personaje | SDXL / Illustrious | variable | variable | Hugging Face |
+No se dispone de datos de otros LoRA de personaje comparables en la informacion proporcionada. Como referencia interna, el propio repositorio ofrece tres linajes del mismo personaje:
 
-No se dispone en la información proporcionada de datos concretos de modelos alternativos comparables (parámetros, contexto, benchmarks) para establecer una comparación cuantitativa.
+| Linaje | Base de entrenamiento | Checkpoint de muestra | Aspecto verificado | Ubicacion |
+|---|---|---|---|---|
+| WAI/Illustrious | waiIllustriousSDXL v17 | waiIllustriousSDXL v17 | Pelo largo rubio, ojos azules | Raiz del repositorio |
+| AutismMix Pony | AutismMix Pony | AutismMix Confetti | Pelo corto rojo oscuro despeinado, flequillo, ojos verdes | `autism_pony/` |
+| MOSS-Image | no disponible | no disponible | no disponible | `moss/` |
+
+El autor advierte de que no deben mezclarse bases, prompts ni negativos entre linajes.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos del personaje y de la obra original pertenecen a sus titulares; la model card lo declara explícitamente como fan-made.
-- La licencia CreativeML OpenRAIL-M impone restricciones de uso (prohibición de usos dañinos o ilegales descritos en la licencia) y exige revisar sus términos antes de cualquier uso comercial.
-- El modelo base waiIllustriousSDXL v17 es un merge comunitario con su propia licencia; el uso comercial del LoRA queda condicionado también por la del base.
-- Riesgo de deriva de identidad a fuerzas altas: a 1.0 la falda del uniforme de verano puede virar a un cuadro más rojizo y la camisa puede alargar las mangas; se recomienda 0.6–0.8.
-- Sin el token de nombre, a fuerzas medias el rostro y el pelo del personaje siguen filtrándose en las generaciones, lo que puede contaminar prompts no relacionados.
-- El lunar bajo el ojo y el peinado medio recogido no siempre aparecen de forma espontánea; deben escribirse explícitamente en el prompt si se quieren fijar.
-- Solo se documentan prompts en inglés y notas en chino; no hay evidencia de soporte para prompts en castellano.
-- No se documentan sesgos, tasas de alucinación ni métricas de calidad cuantitativas; la evaluación es cualitativa y realizada por el propio autor.
-- El repo acumula siete épocas (3,2 GB) cuando solo se recomienda E6; conviene descargar únicamente el fichero necesario.
+- Modelo altamente especializado: solo genera un personaje concreto; no es un modelo de proposito general ni un modelo de lenguaje.
+- Riesgo de deriva de atributos: las captions de entrenamiento omiten a menudo color de pelo y ojos, por lo que es necesario reforzarlos en el prompt y usar negativos para evitar tonos no deseados.
+- Confusion de nomenclatura: el repositorio se llama AoiHinami-Lora, pero los archivos y el token de activacion conservan `minami_nanami`; el autor lo documenta como correccion de personaje.
+- Riesgo de mezcla de linajes: usar pesos de `autism_pony/` o `moss/` con el prompt o el checkpoint de WAI/Illustrious produce resultados incorrectos; el aspecto visual difiere entre linajes.
+- Numeral de epocas poco intuitivo: no existe `minami_nanami-000007.safetensors`; el archivo sin numerar corresponde a E7.
+- Alucinacion: no aplica en el sentido de texto; en imagen se traduce en artefactos, poses incorrectas o atuendos mal renderizados fuera de las condiciones evaluadas.
+- Sesgos: no documentados por el autor; al entrenarse sobre un unico personaje de anime, la diversidad de representaciones es limitada por el dataset.
+- Licencia: CreativeML OpenRAIL-M, que impone restricciones de uso (incluidas clausulas de uso aceptable) y requiere revisar sus terminos antes de cualquier uso comercial. Es un derivado no oficial de una franquicia ajena, sin respaldo de los titulares de derechos.
+- Produccion: sin benchmarks cuantitativos, sin garantias de estabilidad entre versiones del checkpoint base y sin soporte del autor; la calidad depende del checkpoint SDXL sobre el que se aplique.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/AoiHinami-Lora
-- Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/AoiHinami-Dataset
-- Notas de evaluación en chino: https://huggingface.co/abbuibuibui/AoiHinami-Lora/blob/main/evaluation/横向测评记录.md
-- README en chino: https://huggingface.co/abbuibuibui/AoiHinami-Lora/blob/main/README_zh.md
+- Hugging Face: https://huggingface.co/abbuibuibui/AoiHinami-Lora
+- Dataset: https://huggingface.co/datasets/abbuibuibui/AoiHinami-Dataset
+- ModelScope: https://www.modelscope.cn/models/abbuibuibui/AoiHinami-Lora
+- Notas de evaluacion en chino (dentro del repositorio): `evaluation/横向测评记录.md`
+- README en chino (dentro del repositorio): `README_zh.md`

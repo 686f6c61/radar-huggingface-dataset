@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "HMC83/name-detector-32m-cells",
+  "slug": "hmc83-name-detector-32m-cells",
+  "author": "HMC83",
+  "url": "https://huggingface.co/HMC83/name-detector-32m-cells",
+  "created_at": "2026-11-26T21:54:10.000Z",
+  "updated_at": "2026-11-26T21:54:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "redaction",
+    "person-names",
+    "ner",
+    "ettin",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "dataset:DFKI-SLT/few-nerd",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-32m",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32031746,
+  "parameters_human": "32.0M",
+  "storage_bytes": 256521516,
+  "storage_human": "257 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "misc",
+      "url": "http://www.lislesurplus.com/misc/",
+      "snippet": "9050 ex cell o model 14 808 optical comparator -- #9050 - ex-cell-o ... Conveyor tramp metal detector tectron model 18 604 a -- Conveyor tramp metal ..."
+    },
+    {
+      "title": "Zoom Account ID/ Client ID / Client Secret - Zoom Developer Forum",
+      "url": "https://devforum.zoom.us/t/zoom-account-id-client-id-client-secret/108498",
+      "snippet": "Apr 23, 2024 · Hi all, I’m trying to add zoom to a 3rd party provisioning tool and it needs the Connection Name, Account ID, Client ID …"
+    }
+  ]
+}

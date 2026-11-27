@@ -2,89 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-4B-empero-v27-Hermes-agentic-subagent-toolcalls es un ajuste fino (LoRA) de 4.000 millones de parámetros orientado específicamente al uso como subagente dentro del arnés Hermes. Lo publica el usuario ferry-el-kom sobre el modelo base Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2, que a su vez es una destilación de razonamiento al estilo Claude sobre la familia Qwen3.5. La versión v27 no busca mejorar capacidades generales, sino corregir modos de fallo observados al ejecutar la v26b como agente real: informes de éxito confabulados, entregables escritos fuera del directorio de trabajo, fabricación de entradas cuando falla la resolución de rutas y falta de cumplimiento de condiciones de parada.
+Qwen3.8-4B-empero v27 es un ajuste fino (LoRA) de tipo estudiante destilado sobre el modelo Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2, publicado por el usuario ferry-el-kom en Hugging Face. Su proposito declarado es actuar como subagente dentro del arnes Hermes Agent, especializado en ejecucion de tareas agenticas con llamadas a herramientas (tool calls) y disciplina de entrega de resultados. El modelo se distribuye principalmente en formato GGUF (q8_0 y q4_K_M) y esta pensado para ejecucion local en equipos de gama consumer.
 
-El modelo se distribuye en formato GGUF (q8_0 y q4_K_M) con el tokenizador y la plantilla de chat embebidos, y está pensado para servir en local con LM Studio, Ollama o llama.cpp. Su licencia MIT y su reducido tamaño lo hacen atractivo para orquestaciones de agentes con múltiples subagentes en hardware de consumo, aunque la ausencia de benchmarks publicados y de un README con especificaciones formales obliga a tratarlo como un artefacto experimental.
+Con 4.326.350.848 parametros totales (aproximadamente 4,3 mil millones), se situa en la categoria de modelos pequenos orientados a agentes. La model card indica que fue entrenado con trazas de profesores en la nube (GLM-5.2/5.3 y DeepSeek) sobre flujos de trabajo de produccion industrial con privilegios root, lo que condiciona fuertemente su comportamiento esperado: ejecucion de comandos sudo, parcheo de firmware, flasheo de dispositivos y automatizacion de lineas de produccion.
 
-La relevancia actual radica en el enfoque: entrenamiento conductual sobre ventanas de corrección (480 ventanas en 5 familias) en lugar de ampliación de conocimiento, una práctica cada vez más común para convertir modelos pequeños en componentes fiables de pipelines agénticos.
+La relevancia actual del modelo radica en su enfoque en corregir fallos medidos de comportamiento agentico (informes de exito confabulados, entregables fuera del directorio de trabajo, fabricacion de entradas, incumplimiento de ordenes de parada y falta de verificacion), un problema practico comun en pipelines de agentes. La licencia es MIT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5), con capa MTP/nextn para decodificación especulativa |
-| Parametros totales | 4B (aproximado, según nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible como valor oficial; la model card menciona funcionamiento con caché KV q8_0 a 72k+ tokens en 8 GB de VRAM |
-| Tipos de cuantizacion | q8_0 (4,29 GiB) y q4_K_M (2,59 GiB) publicados; otras cuantizaciones no disponibles |
-| Idiomas soportados | no disponible (el dataset incluye correcciones de comprensión de rumano, lo que sugiere cobertura multilingüe parcial) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B), con capa MTP/nextn para decodificacion especulativa |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible de forma oficial; la model card menciona KV cache q8_0 funcionando a 72k+ de contexto en 8 GB de VRAM |
+| Tipos de cuantizacion | q8_0 y q4_K_M en GGUF (publicados); el modelo base admite otras cuantizaciones estandar |
+| Idiomas soportados | no disponible; la model card menciona comprension del rumano entre las correcciones de comportamiento |
 | Licencia | MIT |
-| Formato de pesos | GGUF (tokenizador y plantilla de chat embebidos); safetensors no disponible en la información |
+| Formato de pesos | GGUF (q8_0, q4_K_M); el repositorio ocupa 7,4 GB |
+| Libreria declarada | hermes |
+| Modelo base | Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 |
+| Tokenizer | Snapshot `5185de0c` de Jackrong Qwen3.5-4B, cargado con `fix_mistral_regex=True`; plantilla de chat y tokenizer embebidos en los GGUF |
+| SHA-256 tokenizer.json | `87a7830d63fc…` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2, una destilación de razonamiento sobre la arquitectura Qwen3.5 de 4B parámetros. Sobre esa base se aplica un LoRA nuevo con r=32 y α=64, entrenado durante 2 épocas y 426 pasos con secuencia de 1280 tokens, learning rate 2e-5, batch de 16 y semilla 5, alcanzando una pérdida final de 0,79. El dataset totaliza 3.401 ventanas: 2.921 normalizadas de la versión v21 más 480 ventanas de corrección conductual.
+El modelo parte de la arquitectura transformer de Qwen3.5-4B y aplica un LoRA nuevo (r=32, alpha=64, all-linear) sobre una base normalizada v21 de 2.921 ventanas, a la que se anaden 480 ventanas de correccion de comportamiento en cinco familias orientadas a fallos medidos: golden (disciplina de entregables, 195 ventanas), rituals (flujo de trabajo, 75), stop-conditions (50), behavioral (130, cubriendo stop-command, timeout-aware, foreground-first, PID-tracking, verify-before-destroy, version de Python, confirmacion de tarea y comprension del rumano) y anti-fabrication (30, con reverify-path, ask-clarification y report-absent). El entrenamiento consistio en 426 pasos (2 epocas), con SEQ 1280 y LR 2e-5, alcanzando una perdida final de entrenamiento de 0,79.
 
-Las 480 ventanas de corrección se organizan en cinco familias: disciplina de entregables «golden» (195), rituales de flujo de trabajo (75), condiciones de parada (50), correcciones conductuales (130, que cubren parada ante comandos, gestión de timeouts, prioridad de ejecución en primer plano, seguimiento de PID, verificación antes de destruir, versión de Python, confirmación de tareas y comprensión de rumano) y anti-fabricación (30, con reverificación de rutas, solicitud de aclaración e informe de ausencia). Los GGUF contienen 441 tensores, incluida la capa MTP/nextn necesaria para la inferencia de Qwen3.5, que puede desactivarse si no se emplea decodificación especulativa.
+La destilacion se realizo a partir de profesores en la nube (GLM-5.2/5.3 y DeepSeek) que operaban en flujos de produccion industrial con privilegios root: comandos sudo, depuracion a nivel de software y hardware en microcontroladores y ECU/MCU, dispositivos Android/MicroPython/Linux/RTOS embebidos, flasheo de ROMs, parcheo de firmwares, construccion de ROMs y sistemas operativos personalizados, sustitucion de funciones, reconstruccion de paneles de control y conduccion autonoma de lineas de produccion. La innovacion tecnica destacable es la capa MTP/nextn incluida en los GGUF (441 tensores en total), que permite decodificacion especulativa opcional.
 
 ## Capacidades
 
-- Generación de texto y razonamiento destilado al estilo de cadenas de pensamiento de Claude, heredado del modelo base.
-- Llamada a herramientas (tool calling / function calling), eje central del ajuste fino.
-- Comportamiento como subagente dentro de un arnés de orquestación (Hermes), con herencia de directorio de trabajo de sesión recomendada.
-- Cumplimiento de condiciones de parada y gestión de timeouts en ejecución de comandos.
-- Seguimiento de PID y verificación previa a operaciones destructivas.
-- Anti-fabricación: reverificación de rutas, solicitud de aclaración y reporte explícito de ausencias en lugar de inventar entradas.
-- Comprensión de rumano en el contexto de las correcciones conductuales entrenadas.
-- Decodificación especulativa opcional mediante la capa MTP/nextn.
-- Capacidades generales de código y matemáticas: no disponibles de forma verificada (sin benchmarks).
+- Generacion de texto conversacional y razonamiento orientado a tareas.
+- Ejecucion agentica con llamadas a herramientas (tool calling / function calling) dentro del arnes Hermes Agent.
+- Comportamiento de subagente con disciplina de entregables: escritura de resultados dentro del directorio de trabajo.
+- Cumplimiento de condiciones de parada (stop-conditions) y respeto de ordenes de stop del usuario.
+- Verificacion previa a acciones destructivas (verify-before-destroy) y seguimiento de PID.
+- Manejo de timeouts y ejecucion en primer plano (foreground-first).
+- Anti-fabricacion: peticion de aclaracion cuando falta una ruta o archivo, en lugar de crearlo.
+- Comprension multilingue parcial, con correcciones especificas para rumano.
+- Soporte de decodificacion especulativa mediante la capa MTP/nextn.
+- Capacidad potencial de ejecutar comandos sudo y operaciones de sistema, heredada de los profesores.
 
 ## Casos de uso
 
-- Orquestación multiagente en local: el modelo actúa como subagente especializado en ejecutar subtareas con tool calling dentro de un agente mayor, con un peso de 2,59 GiB en q4_K_M que permite desplegar varias instancias en una sola GPU de consumo.
-- Automatización de tareas de sistema con salvaguardas: las correcciones de parada ante comandos, gestión de timeouts y verificación antes de destruir lo hacen adecuado para scripts que operan sobre ficheros y procesos, donde un modelo genérico tendería a ejecutar acciones irreversibles.
-- Pipelines de CI/CD con informes fiables: las ventanas anti-fabricación (reverificación de rutas, reporte de ausencia) reducen el riesgo de que el agente declare éxito sin haber producido el artefacto, un fallo crítico en integración continua.
-- Asistente de terminal para desarrolladores: con LM Studio u Ollama y una ventana de contexto ampliada mediante caché KV q8_0 (72k+ tokens en 8 GB de VRAM), puede mantener sesiones largas de depuración y edición de código.
-- Evaluación de arneses agénticos: sirve como sujeto de prueba controlado para medir disciplina de entregables y cumplimiento de parada en comparación con la v26b y otros finetunes.
-- Despliegue en hardware modesto: al caber en 8 GB de VRAM con cuantización q4_K_M, es viable en portátiles y GPUs de gama media para prototipos de agentes sin coste de API.
-- Procesamiento de instrucciones multilingües con rumano: las correcciones específicas de comprensión de rumano lo hacen útil en flujos de trabajo que combinan castellano/inglés con contenido en rumano.
+- Automatizacion de tareas de administracion de sistemas: el modelo puede encadenar comandos, verificar rutas y respetar condiciones de parada, lo que lo hace adecuado para scripts de mantenimiento en Ubuntu 22.04 con guardrails explicitos.
+- Subagente en pipelines de agentes Hermes: se integra como subagente especializado en tool calls, con prompts de sistema cortos por categoria, reduciendo la deriva en tareas de varios pasos.
+- Depuracion de dispositivos embebidos: entrenado con trazas de depuracion de ECU/MCU y dispositivos Android/MicroPython/Linux/RTOS, puede asistir en la identificacion de fallos y en la aplicacion de parches controlados.
+- Gestion de flasheo y parcheo de firmware: util en laboratorios de validacion donde se requiere reflashear ROMs o aplicar parches, siempre con aislamiento y confirmacion de tarea.
+- Asistente de operaciones con verificacion obligatoria: su entrenamiento anti-fabricacion lo hace apropiado para tareas donde reportar numeros sin comprobar es inaceptable, como inventarios o comprobaciones de estado.
+- Despliegue local en estaciones de trabajo con GPU consumer: los GGUF q4_K_M (2,59 GiB) y q8_0 (4,29 GiB) permiten ejecucion en LM Studio, Ollama o llama.cpp, con KV cache q8_0 a 72k+ de contexto en 8 GB de VRAM.
+- Atencion a incidencias con ordenes de parada: adecuado para entornos donde el operador necesita detener el agente de forma fiable, gracias a las ventanas de stop-conditions.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente referencia una comparacion cualitativa con la version v26b a partir de un benchmark de agente real, sin cifras numericas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 3 GB para q4_K_M (2,59 GiB de pesos) y unos 5 GB para q8_0 (4,29 GiB), más el espacio de caché KV.
-- La model card indica que la caché KV en q8_0 funciona bien a 72k+ tokens de contexto con 8 GB de VRAM.
-- GPU recomendadas: no disponibles de forma explícita; por tamaño, cualquier GPU con 8 GB o más (RTX 3060/4060, RTX 4070, etc.) debería alojar el modelo con contexto amplio. A100/H100 no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, con q4_K_M en GPUs de 4-6 GB y con q8_0 en GPUs de 8 GB o más.
-- Opciones de despliegue: LM Studio, Ollama y llama.cpp, según la model card. vLLM y TGI no se mencionan.
+- VRAM estimada: aproximadamente 2,6 GiB para q4_K_M y 4,3 GiB para q8_0 en pesos; la model card indica que el KV cache q8_0 funciona a 72k+ de contexto en 8 GB de VRAM.
+- GPU recomendadas: no disponibles de forma explicita; por tamano, cabe en GPU consumer de 8 GB o superior (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 3070) y en GPUs de datacenter como A100 o H100 sin problema.
+- Cabe en GPU consumer: si, en modelos con al menos 8 GB de VRAM para las cuantizaciones publicadas.
+- Opciones de despliegue: LM Studio, Ollama y llama.cpp segun la model card; la libreria declarada es hermes. No se mencionan vLLM ni TGI.
 - Latencia y throughput: no disponibles.
+- Notas de serving: herencia de cwd de sesion, reparacion automatica de rutas con espacios, MTP/nextn opcional si no se usa decodificacion especulativa, y prompt de sistema corto recomendado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-4B-empero-v27 (este) | 4B | no disponible (72k+ con KV q8_0) | Subagente Hermes con tool calling y correcciones conductuales | MIT | GGUF en Hugging Face |
-| Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 (base) | 4B | no disponible | Destilación de razonamiento | no disponible | Hugging Face |
-| Qwen3.5-4B (modelo original de Alibaba) | 4B | no disponible | Modelo generalista | no disponible | Hugging Face |
+| Qwen3.8-4B-empero v27 | 4,33 B | no disponible (72k+ con KV q8_0 en 8 GB) | MIT | GGUF | Especializado en agentes Hermes y tool calls |
+| Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva |
+| Alternativas de 4B de proposito general | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Sin benchmarks publicados: no hay evidencia cuantitativa de mejora frente a la v26b ni frente al modelo base; las afirmaciones de la model card son cualitativas.
-- Modelo experimental con 0 descargas y 0 likes en el momento de la consulta; no ha pasado por validación comunitaria.
-- Riesgo de alucinación persistente: aunque el ajuste incluye 30 ventanas anti-fabricación, un modelo de 4B sigue siendo propenso a confabular en tareas largas o ambiguas.
-- Idiomas no declarados formalmente; la cobertura multilingüe más allá del rumano e inglés no está verificada.
-- Longitud de contexto oficial no especificada; el dato de 72k+ proviene de una nota de servicio con caché KV q8_0, no de una ficha técnica.
-- El comportamiento está optimizado para el arnés Hermes; fuera de ese entorno, las correcciones conductuales pueden no activarse o interferir con otros flujos.
-- La licencia MIT permite uso comercial, pero al derivar de Qwen3.5 conviene verificar las condiciones de la licencia del modelo original de Alibaba antes de producción.
-- El nombre del modelo («Qwen3.8») no se corresponde con una versión oficial de Qwen; es una denominación del autor y puede generar confusión.
+- Comportamiento no probado fuera de Linux Ubuntu 22.04; en otros sistemas operativos el comportamiento es desconocido.
+- Riesgo elevado de acciones destructivas: el modelo puede ejecutar comandos sudo, aplicar parches y reflashear firmware, heredado de profesores con privilegios root. La model card advierte explicitamente de usarlo con guardrails.
+- Riesgo de alucinacion residual pese a las ventanas anti-fabricacion; la correccion se midio sobre fallos concretos y no garantiza ausencia total.
+- Idiomas soportados no documentados; solo se menciona el rumano en las correcciones de comportamiento.
+- Longitud de contexto oficial no disponible; el dato de 72k+ proviene de una nota de serving, no de una especificacion formal.
+- Sesgos conocidos: no disponibles.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el modelo base y los datos de destilacion pueden tener condiciones propias no detalladas.
+- El dataset de entrenamiento es privado, lo que limita la auditabilidad.
+- El prompt de sistema debe mantenerse corto; prompts largos pueden degradar el comportamiento entrenado.
+- Modelo de 4B con 241 descargas y 0 likes: ecosistema de validacion muy limitado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-v27-Hermes-agentic-subagent-toolcalls
 - Modelo base: https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2
-- Artículo de referencia sobre Hermes Agent + Qwen 3.8: http://go/v1/AayHsHR_XlMCawQ_2AHFwXQW4BjNwWKyyTnkxwI3g2WurRWG3nvYy9eOHqcIUPZSldgkFCZ_dofVxCysBiU_TVtpP9hoWoSJ5GR6ePQMR-ILBYUQvkq1s7zikLy6q1g3-eI72OXFxO8qFubHVzGUZFkzKIjJaGz10sE_sHiJ3I7jqSVTS1D-pLIrwyveh3d2VhSl7eGPNDI_w0955q3OWhw7DfSOEDwBzBJ9Bw
+- Dataset de entrenamiento (privado): ferry-el-kom/hermes-agentic-tooluse-v27-sft-dataset
+- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

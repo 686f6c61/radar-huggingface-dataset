@@ -2,107 +2,100 @@
 
 ## Resumen
 
-OrdoPy-Coder-0.5B es un modelo especializado en código y razonamiento desarrollado por layer8labs8, obtenido mediante fine-tuning de Qwen/Qwen2.5-Coder-0.5B-Instruct con el motor de entrenamiento OrdoTrain. El modelo se centra en tres pilares: instrucciones en inglés, razonamiento lógico y matemático paso a paso, y generación de código Python verificado por AST (árbol de sintaxis abstracta). Con 494 millones de parámetros totales, es un modelo compacto orientado a tareas de programación y depuración.
+OrdoPy-Coder-0.5B es un ajuste fino del modelo Qwen2.5-Coder-0.5B-Instruct orientado a la generacion de codigo en Python. Lo desarrolla el usuario layer8labs8 y se distribuye bajo licencia Apache 2.0. El modelo parte de la arquitectura Qwen2ForCausalLM con 494 millones de parametros y una ventana de contexto de 32K tokens, y su objetivo es mejorar la calidad del codigo generado mediante un proceso de rejection sampling sobre problemas de programacion con tests unitarios.
 
-La arquitectura subyacente es Qwen2 (transformer decoder-only), heredada del modelo base, con una longitud de contexto no especificada en la información disponible. El entrenamiento se realizó sobre Kaggle con dos GPUs Tesla T4 durante 441,7 minutos, con 8.416 pasos globales y el mejor checkpoint fijado en el paso 5.800. Se utilizaron 203.989 muestras verificadas y deduplicadas, con un currículo en dos fases y enmascaramiento de pérdida SFT solo en las respuestas del asistente.
+La receta de entrenamiento consiste en generar cuatro soluciones por problema sobre 2.000 problemas del dataset KodCode, ejecutarlas contra sus tests unitarios y conservar unicamente las que pasan (maximo dos por problema), con soluciones de referencia de GPT-4o como relleno en los casos no resueltos (limitado al 20% de los datos). Sobre ese conjunto de 1.106 ejemplos se entrena un adaptador LoRA (r=32 sobre todas las capas lineales) que despues se fusiona en los pesos finales.
 
-Su relevancia radica en la mejora sustancial de rendimiento frente al modelo base en benchmarks de ejecución real: pasa de 9,76% a 40,85% en HumanEval y de 36,58% a 46,30% en MBPP, con un incremento combinado de 18,05 puntos porcentuales en 421 tareas. Es un ejemplo de cómo un currículo de datos bien diseñado puede elevar el rendimiento de un modelo pequeño sin aumentar su tamaño.
+La relevancia de esta ficha es doble: por un lado, es un ejemplo de pipeline de ajuste fino con verificacion ejecutable (rejection sampling) sobre un modelo pequeno; por otro, su model card incluye una autoevaluacion honesta que reconoce que la version 2 queda practicamente a la par del modelo base y corrige errores de medicion de la version 1. Es un modelo pequeno, ligero (unos 1 GB en float16) y pensado para entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
+| Arquitectura | Qwen2ForCausalLM (transformer decoder-only, 24 capas, hidden size 896) |
 | Parametros totales | 494.032.768 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 32K tokens |
+| Tipos de cuantizacion | float16 en el repositorio; no se documentan otras cuantizaciones oficiales (GGUF, AWQ, GPTQ no disponibles) |
+| Idiomas soportados | ingles (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (model.safetensors en float16) + tokenizer ChatML de Qwen |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Qwen2 del modelo base Qwen2.5-Coder-0.5B-Instruct, un transformer decoder-only con atención causal estándar. El fine-tuning se realizó con el motor OrdoTrain, un sistema de currículo de streaming sistemático, sobre dos GPUs Tesla T4 en Kaggle durante 441,7 minutos y 8.416 pasos globales, con el mejor checkpoint en el paso 5.800.
+El modelo es un transformer decoder-only de la familia Qwen2, con 24 capas, dimension oculta de 896 y 494 millones de parametros, heredado directamente de Qwen2.5-Coder-0.5B-Instruct. No incorpora innovaciones arquitectonicas propias: el trabajo se centra en el ajuste fino. El entrenamiento usa LoRA con r=32 y alpha=64 aplicado a todas las capas lineales, learning rate de 1e-4, una epoca y perdida calculada solo sobre los tokens del asistente; el adaptador se fusiona posteriormente en los pesos.
 
-El entrenamiento utilizó 203.989 muestras verificadas por AST y deduplicadas, descartando 61.672 muestras redundantes mediante selección RHO, con una compresión de cómputo de 2,28x gracias a estratificación dinámica por longitud. El currículo fue en dos fases: la primera (30% inicial) con 45% lógica, 35% Python y 20% inglés; la segunda (70% restante) con 65% Python, 20% de anclaje de replay lógico y 15% de anclaje de inglés. Las fuentes de datos fueron KodCode/KodCode-V1-SFT-4o, microsoft/orca-math-word-problems-200k y yahma/alpaca-cleaned, con particiones sin solapamiento y sin repetición de épocas (una época por dominio). Se aplicó enmascaramiento de pérdida SFT con -100 solo en los turnos del asistente. No se menciona uso de RLHF ni DPO en la información disponible.
+El dataset se construye con rejection sampling: el modelo base genera cuatro soluciones por cada uno de 2.000 problemas de KodCode-V1-SFT-4o, cada solucion se ejecuta contra los tests unitarios del problema y solo se conservan las que pasan (hasta dos por problema). Los problemas sin solucion valida se rellenan con soluciones de referencia de GPT-4o, con un tope del 20% del total, resultando en 1.106 ejemplos de entrenamiento. La seleccion de la epoca se hizo sobre las particiones train y validation de MBPP, nunca sobre test. No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de código Python con verificación sintáctica mediante AST durante el entrenamiento.
-- Razonamiento lógico y matemático paso a paso (entrenado con orca-math-word-problems-200k).
-- Depuración y explicación de código en inglés (entrenado con alpaca-cleaned en el dominio english_debug).
-- Generación de texto conversacional con plantilla de chat (apply_chat_template).
-- Seguimiento de instrucciones en inglés.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso más allá del razonamiento paso a paso.
-- No se documenta capacidad de visión, audio ni modo thinking explícito.
-- Capacidad multilingüe limitada al inglés según la model card.
+- Generacion de codigo en Python, incluyendo funciones con firma y docstring especificados por el usuario.
+- Generacion de texto general conversacional, heredada del modelo base instruct.
+- Razonamiento basico sobre problemas de programacion con tests unitarios (formato de competicion y ejercicios estilo HumanEval/MBPP).
+- Soporte de plantilla de chat ChatML de Qwen (roles user/assistant), adecuada para conversaciones multi-turno.
+- Capacidad multilingue limitada: la model card declara solo ingles.
+- No se documenta soporte explicito de tool calling, function calling, agentes, vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Generación de funciones Python en pipelines de CI/CD: el modelo puede producir funciones como `is_palindrome_clean` a partir de una descripción, con una tasa de acierto Pass@1 del 40,85% en HumanEval, adecuado para tareas de autocompletado con revisión humana posterior.
-- Asistente de depuración en inglés: dado su entrenamiento en el dominio english_debug (loss 1,4409 en Alpaca held-out), puede explicar errores y proponer correcciones en conversaciones multi-turno.
-- Resolución de problemas matemáticos de enunciado: entrenado con orca-math-word-problems-200k y evaluado en GSM8K (exactitud de token del 74,68%), útil para tutores automáticos de aritmética básica.
-- Prototipado rápido en entornos con recursos limitados: con 494M de parámetros y pesos en safetensors de 2,0 GB, se puede desplegar en una sola GPU consumer para pruebas de generación de código.
-- Generación de tests unitarios sencillos: a partir de una función Python, el modelo puede proponer casos de prueba, aprovechando su entrenamiento en código verificado por AST.
-- Educación en programación: puede generar explicaciones paso a paso de algoritmos y fragmentos de código comentados en inglés para plataformas de aprendizaje.
-- Filtrado y clasificación de fragmentos de código: su especialización en Python permite usarlo como generador de candidatos en sistemas de búsqueda o recomendación de código.
+- Autocompletado de funciones Python en editores: el modelo puede generar funciones completas a partir de una firma y una descripcion, con un coste de inferencia muy bajo (aproximadamente 1 GB de VRAM en float16), lo que permite ejecutarlo en local junto al IDE.
+- Generacion de tests unitarios: dado un fragmento de codigo, el modelo puede proponer casos de prueba; su entrenamiento con tests ejecutables lo hace razonablemente alineado con ese formato, aunque requiere revision humana.
+- Prototipado rapido de scripts de utilidades: tareas de transformacion de cadenas, parsing, manejo de ficheros o funciones de conveniencia donde la latencia y el coste importan mas que la precision absoluta.
+- Ensenanza y ejercicios de programacion: al ser un modelo pequeno y con contexto de 32K, puede usarse en entornos educativos con recursos limitados para explicar o completar ejercicios, siempre con supervision.
+- Filtrado y clasificacion de codigo en pipelines de CI: integrado como generador de parches candidatos que despues se validan con la suite de tests del proyecto, aprovechando la receta de rejection sampling con la que fue entrenado.
+- Despliegue en dispositivos con GPU consumer: al caber en GPUs de gama baja y en CPU con cuantizacion (no oficial), sirve para demos, prototipos y entornos de desarrollo sin infraestructura dedicada.
+- Base para nuevos ajustes finos: al ser Apache 2.0 y de tamano reducido, es un punto de partida economico para experimentar con LoRA y rejection sampling sobre dominios concretos.
 
 ## Benchmarks y rendimiento
 
-Resultados de ejecución oficiales (Pass@1, 421 tareas, subproceso aislado de 3,0 s):
+Resultados publicados en la model card, evaluados con el harness oficial de EvalPlus en modo greedy pass@1, en la misma ejecucion sobre Kaggle 2x T4 en float16:
 
-| Suite | Baseline (Qwen2.5-Coder-0.5B-Instruct) | OrdoPy-Coder-0.5B (paso 5800) | Delta |
-|---|---|---|---|
-| HumanEval (164 tareas) | 9,76% (16/164) | 40,85% (67/164) | +31,09% (4,19x) |
-| MBPP Sanitized (257 tareas) | 36,58% (94/257) | 46,30% (119/257) | +9,72% |
-| Combinado (421 tareas) | 26,13% (110/421) | 44,18% (186/421) | +18,05% |
+| Benchmark | Base, oficial | Base, misma ejecucion | v2 (este modelo) | v1 (version anterior) |
+|---|---|---|---|---|
+| HumanEval | 61.6 | 57.9 | 61.0 | 48.8 |
+| HumanEval+ | 57.3 | 53.7 | 55.5 | 46.3 |
+| MBPP | 52.4 | 52.1 | 51.1 | 48.4 |
+| MBPP+ | 43.7 | 44.2 | 41.0 | 42.1 |
+| Media | no disponible | 52.0 | 52.2 | 46.4 |
 
-Pérdida y exactitud de token en particiones held-out sin fuga de datos:
-
-| Dominio | Baseline (perplejidad / exactitud) | OrdoPy-Coder-0.5B (perplejidad / exactitud) |
-|---|---|---|
-| python_code (MBPP Sanitized Val) | 1,0226 (2,78 / 76,44%) | 0,9843 (2,68 / 78,40%) |
-| logic_math (GSM8K Official Test) | 1,4752 (4,37 / 73,21%) | 1,4096 (4,09 / 74,68%) |
-| english_debug (Alpaca Held-Out) | 1,6227 (5,07 / 59,53%) | 1,4409 (4,22 / 61,58%) |
+El autor senala que la version 2 mejora claramente a la version 1 (+5,8 puntos de media) pero queda practicamente a la par del modelo base: mejor en HumanEval y HumanEval+, peor en MBPP y MBPP+, con diferencias dentro del ruido entre ejecuciones (una sola semilla). No supera al modelo base en conjunto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1 GB para los pesos (494M parámetros × 2 bytes), más overhead de activaciones y KV cache.
-- VRAM estimada en cuantización de 8 bits: aproximadamente 0,5 GB; en 4 bits: aproximadamente 0,25 GB (estimaciones teóricas, no verificadas en la model card).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el entrenamiento se realizó en Tesla T4, por lo que es plenamente funcional en esa clase de hardware.
-- Cabe en GPUs consumer: sí, en RTX 3060, RTX 4060, RTX 4090 y similares, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers (documentado en la model card), text-generation-inference (tag endpoints_compatible), y previsiblemente llama.cpp/Ollama si se generan pesos GGUF (no documentado).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 1 GB en float16 segun la model card; en cuantizaciones de 8 o 4 bits (no oficiales) seria inferior, aunque no se publican artefactos cuantizados.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en T4 (usada por el autor), RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problemas de memoria.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers (referencia oficial), text-generation-inference (etiqueta tgi en el repo), endpoints compatibles; llama.cpp y Ollama no tienen artefactos oficiales publicados, aunque seria posible convertirlos a GGUF.
+- Latencia y throughput: no se publican mediciones. Por el tamano (494M) se espera una latencia baja en GPU, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | HumanEval | MBPP | Licencia | Idiomas |
-|---|---|---|---|---|---|---|
-| OrdoPy-Coder-0.5B | 494M | No disponible | 40,85% | 46,30% | Apache 2.0 | en |
-| Qwen2.5-Coder-0.5B-Instruct (base) | 494M | No disponible | 9,76% | 36,58% | Apache 2.0 | multilingüe |
-| Modelos de ~0,5B de código de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | HumanEval | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| OrdoPy-Coder-0.5B (este) | 494M | 32K | 61.0 (misma ejecucion) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B-Instruct (base) | 494M | 32K | 57.9 (misma ejecucion) / 61.6 (oficial) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1.5B | 32K | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-1.3B-Instruct | 1.3B | 16K | no disponible en la informacion | Licencia propia | Hugging Face |
 
-La comparación directa más fiable es con su modelo base, ya que la información proporcionada no incluye datos de benchmarks de alternativas de tamaño similar. El modelo base declara soporte multilingüe, mientras que OrdoPy-Coder-0.5B se limita al inglés.
+La comparativa con alternativas de mayor tamano no puede hacerse con datos de benchmarks verificados en la informacion disponible; se indica "no disponible" para no inventar cifras.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de inglés; no se garantiza calidad en castellano ni en otros idiomas.
-- La longitud de contexto no está documentada; no se debe asumir la ventana de 32K típica de Qwen2.5 sin verificación.
-- Riesgo de alucinación en código: aunque el entrenamiento usó verificación AST, la inferencia no verifica sintaxis ni ejecuta el código generado.
-- El rendimiento en HumanEval (40,85%) sigue siendo bajo en términos absolutos para uso autónomo en producción; requiere revisión humana o tests automáticos.
-- No se documenta soporte de tool calling, function calling ni agentes, lo que limita su uso en pipelines agénticos.
-- El entrenamiento se realizó en GPUs T4 con un currículo de una sola época por dominio; el sobreajuste a los tres datasets citados (KodCode, orca-math, alpaca) puede reducir la generalización fuera de esos dominios.
-- Sesgos conocidos: no documentados en la model card; al derivar de Qwen2.5-Coder-0.5B-Instruct, hereda los sesgos del modelo base y de los datasets de fine-tuning.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las licencias de los datasets de entrenamiento (KodCode, orca-math, alpaca) por posibles restricciones adicionales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación externa por parte de la comunidad.
+- Rendimiento practicamente identico al modelo base: la mejora sobre Qwen2.5-Coder-0.5B-Instruct no es concluyente y podria estar dentro del ruido entre ejecuciones.
+- La version 1 del repositorio (etiqueta `v1`) tiene peor rendimiento que el modelo base en los cuatro benchmarks y su model card original contenia un error de medicion reconocido por el autor; no debe usarse como referencia.
+- Modelo pequeno: capacidad limitada para tareas de razonamiento complejo, refactorizaciones amplias o proyectos con muchas dependencias.
+- Solo declara soporte de ingles; el rendimiento en castellano no esta evaluado.
+- Riesgo de alucinacion de APIs, librerias o firmas de funciones, especialmente en codigo que el modelo no ha visto; se recomienda validacion con tests.
+- Sesgos: no se documenta una evaluacion de sesgos; al heredar del modelo base, arrastra los sesgos de sus datos de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-Coder-0.5B-Instruct tambien es Apache 2.0, por lo que no hay restricciones adicionales conocidas.
+- No hay artefactos cuantizados oficiales ni benchmarks de latencia/throughput publicados.
+- La fecha de creacion del repositorio (2026-11-15) y la referencia a GPT-4o en el dataset conviene verificarlas antes de citar el modelo en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/layer8labs8/OrdoPy-Coder-0.5B
-- Repositorio OrdoTrain: https://github.com/layer8labs8/OrdoTrain
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- Dataset KodCode: https://huggingface.co/datasets/KodCode/KodCode-V1-SFT-4o
-- Dataset orca-math: https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k
-- Dataset alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
+- Dataset KodCode-V1-SFT-4o: https://huggingface.co/datasets/KodCode/KodCode-V1-SFT-4o
+- Repositorio de entrenamiento OrdoTrain: https://github.com/layer8labs8/OrdoTrain
+- Harness EvalPlus: https://github.com/evalplus/evalplus
+- Paper de Qwen2.5-Coder: https://arxiv.org/abs/2409.12186

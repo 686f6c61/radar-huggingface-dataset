@@ -2,83 +2,85 @@
 
 ## Resumen
 
-Hy4-flash es un modelo de lenguaje multimodal desarrollado por Tencent (familia Hunyuan) que combina un backbone de mezcla de expertos (MoE) con un codificador visual. Con 220.250 millones de parametros totales en safetensors (155,5B del backbone, 63,5B de embeddings Engram, 0,43B del ViT y 0,85B del drafter DFly2), activa aproximadamente 11,3B de parametros de texto mas 0,43B de vision por token. Acepta nativamente entradas de texto e imagen y genera texto.
+Hy4-flash es un modelo de lenguaje multimodal desarrollado por Tencent dentro de la familia Hunyuan (Hy). Se trata de un Mixture-of-Experts (MoE) de 220.251.201.958 parámetros totales, de los cuales solo se activan aproximadamente 12B por token (11,3B de texto más 0,43B de visión). Acepta de forma nativa entradas de texto e imagen, genera texto y ofrece una ventana de contexto de hasta 1.048.576 tokens (1M). Se posiciona como el modelo Hy más rentable hasta la fecha, orientado a cargas de trabajo de largo contexto con un coste de inferencia contenido.
 
-El modelo esta disenado para maximizar la relacion coste-rendimiento: su naturaleza MoE de activacion dispersa (16 de 512 expertos enrutados por capa, mas un experto compartido) permite un throughput alto con un coste de inferencia bajo en relacion con su tamano total. Incorpora una ventana de contexto de hasta 1.048.576 tokens (1M), lo que lo situa en la categoria de modelos de contexto largo.
+Su columna vertebral lingüística tiene 42 capas (una densa y 41 MoE) con conexiones residuales iHC (identity Hyper-Connections) y atención híbrida que intercala atención dispersa (IndexPool) y sliding-window attention en una proporción 1:3. Incorpora tres innovaciones destacables: LatentMoE (expertos enroutados en un espacio latente de menor dimensión, 16 de 512 expertos activos más uno compartido por token), embeddings N-gram (Engram) con representaciones de bigramas y trigramas recuperadas mediante hash multicaBeza, y un drafter especulativo integrado, DFly2, de 0,85B parámetros.
 
-Es relevante ahora porque introduce tres cambios arquitectonicos frente a Hy4: atencion hibrida (atencion dispersa IndexPool intercalada con sliding-window attention en proporcion 1:3), LatentMoE (expertos enrutados operando en un espacio latente de menor dimension) y embeddings N-gram (Engram) recuperados mediante hash multi-cabeza. Ademas, incluye un drafter de decodificacion especulativa (DFly2) integrado que reutiliza la cache KV del modelo objetivo.
+El modelo es relevante ahora por su combinación de contexto extremo (1M), multimodalidad nativa y eficiencia de activación (12B activos sobre 220B totales), lo que lo sitúa en la categoría de modelos MoE de gran escala pensados para despliegue económico. Se distribuye bajo licencia propia Tencent Hy License y está disponible en Hugging Face, ModelScope y AtomGit, además de una versión GGUF mantenida por un tercero.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con atencion hibrida (dispersa + SWA) y MLA |
-| Parametros totales | 220.251.201.958 (220,25B): 155,5B backbone + 63,5B Engram + 0,43B ViT + 0,85B DFly2 |
-| Parametros activos | 11,3B texto + 0,43B vision por token |
+| Arquitectura | Mixture-of-Experts (MoE) con backbone transformer, atención híbrida (dispersa + SWA), MLA e iHC |
+| Parametros totales | 220.251.201.958 (155,5B backbone + 63,5B Engram + 0,43B ViT + 0,85B DFly2) |
+| Parametros activos | 11,3B texto + 0,43B visión por token (aproximadamente 12B) |
 | Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | No especificados en la informacion disponible; existe un repositorio GGUF de terceros (AngelSlim/Hy4-flash-GGUF) |
-| Idiomas soportados | No disponible |
-| Licencia | Tencent Hy License (license:other) |
-| Formato de pesos | safetensors (transformers) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (existe repositorio GGUF de terceros) |
+| Idiomas soportados | No disponible en la informacion proporcionada |
+| Licencia | Tencent Hy License (tencent-hy-license, categoria "other") |
+| Formato de pesos | safetensors (libreria transformers); GGUF disponible en repositorio comunitario |
 
 ## Arquitectura y entrenamiento
 
-El backbone linguistico tiene 42 capas: una capa densa feed-forward y 41 capas MoE. El tamano oculto es de 3.072 y el vocabulario de 120.832 tokens. Las conexiones residuales usan iHC (identity Hyper-Connections) con 4 flujos residuales. La atencion combina atencion dispersa (IndexPool, seleccion de hasta 2.048 tokens por seleccion a nivel de grupo) y sliding-window attention (ventana causal de 512 tokens) con el patron de capas 2 dispersas seguidas de 10 bloques de (3 SWA + 1 dispersa), resultando en 12 capas dispersas y 30 SWA. La formulacion de atencion es Multi-head Latent Attention (MLA) con q_lora_rank 1.024 y kv_lora_rank 512, y codificacion posicional MRoPE intercalada para multimodalidad.
+La arquitectura es un MoE con 42 capas de lenguaje: una capa densa con FFN de tamaño intermedio 13.824 y 41 capas MoE. Cada capa MoE contiene 512 expertos enroutados más un experto compartido, con dimensión latente de 1.536 y tamaño intermedio de experto de 1.536; por token se activan 16 expertos enroutados. El tamaño oculto es 3.072 y el vocabulario de 120.832 tokens. Las conexiones residuales usan iHC (identity Hyper-Connections) con 4 flujos residuales.
 
-El bloque MoE usa LatentMoE: los expertos enrutados operan en un espacio latente de 1.536 dimensiones, con 512 expertos enrutados por capa (16 activados por token) y un experto compartido. Los embeddings N-gram (Engram) anaden representaciones aprendidas de bigramas y trigramas recuperadas mediante 8 cabezas hash por orden, con un vocabulario hash de 10,3M por cabeza y dimension de embedding de 768 por orden, insertadas en las capas 1, 11, 21 y 31. El codificador visual (27 capas, hidden size 1.152, 16 cabezas, parches 16x16, posicion 128x128, merging 2x2) se conecta al backbone mediante un proyector MLP. El drafter DFly2 de 5 capas y 0,85B parametros reutiliza la cache KV y los indices dispersos del modelo objetivo para decodificacion especulativa de coste constante. No se detalla en la informacion proporcionada el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO.
+La atención es híbrida: se intercalan atención dispersa y sliding-window attention en un patrón de 2 capas dispersas seguidas de 10 bloques de (3 SWA + 1 dispersa), resultando en 12 capas dispersas y 30 SWA. La formulación es Multi-head Latent Attention (MLA) con q_lora_rank 1.024, kv_lora_rank 512, dimensión de cabeza QK de 192 + 64 (no-RoPE + RoPE) y dimensión de cabeza de valor 256. La atención dispersa selecciona hasta 2.048 tokens mediante selección a nivel de grupo; la SWA usa una ventana causal de 512 tokens. El codificado posicional multimodal es MRoPE intercalado, con bases RoPE de 10.000.000 (dispersa) y 10.000 (SWA).
+
+Sobre el backbone se añade un módulo Engram de embeddings N-gram: bigramas y trigramas con 8 cabezas hash por orden, vocabulario hash de 10,3M por cabeza y dimensión de embedding de 768 por orden (8 × 96), inyectados en las capas 1, 11, 21 y 31; la tabla de embeddings suma 63,4B parámetros. El codificador visual (27 capas, hidden 1.152, intermedio 4.304, 16 cabezas, parches 16×16, posición 128×128, fusión 2×2) está adaptado de SigLIP2-So400m-Patch16-Res512 y se conecta mediante un proyector MLP. El drafter DFly2 (5 capas, 0,85B) reutiliza la caché KV y los índices dispersos del modelo objetivo para decodificación especulativa de largo contexto a coste constante. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generacion de texto e inferencia conversacional multi-turno.
-- Comprension de imagenes (image-text-to-text) mediante el codificador SigLIP2 adaptado.
-- Razonamiento y tareas de codigo y agentes (la model card reporta evaluacion interna de BPB en code & agent).
-- Contexto largo de hasta 1M tokens, adecuado para documentos extensos y conversaciones prolongadas.
-- Decodificacion especulativa integrada (DFly2) para acelerar la generacion.
-- Soporte de API compatible con OpenAI segun la model card.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Generación de texto e instrucciones conversacionales multi-turno.
+- Comprensión de imágenes y respuesta texto a partir de entradas image-text-to-text.
+- Razonamiento y matemáticas (categoría inferida de los benchmarks citados en la model card).
+- Generación de código y tareas de agente (la model card menciona validación interna de código y agente).
+- Ventana de contexto de 1M tokens para documentos y conversaciones extensas.
+- Decodificación especulativa integrada mediante DFly2 (0,85B) con reutilización de caché KV.
+- Soporte de API compatible con OpenAI según la model card.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de documentos extensos: con 1M tokens de contexto, el modelo puede procesar informes completos, expedientes o bases de codigo sin fragmentacion, manteniendo coherencia entre secciones.
-- Asistentes multimodales: al aceptar imagen y texto de forma nativa, sirve para responder preguntas sobre capturas, diagramas o documentos escaneados en una misma conversacion.
-- Generacion de codigo en pipelines: su evaluacion interna en tareas de codigo y agentes sugiere uso en generacion y revision de codigo, con despliegue via vLLM o SGLang.
-- Atencion al cliente automatizada: la ventana de 1M tokens y el coste reducido por token (11,3B activos) permiten gestionar historiales largos y multiples sesiones concurrentes con menor coste de GPU.
-- Procesamiento de imagenes a escala: el codificador visual integrado permite clasificar, describir o extraer informacion de lotes de imagenes dentro de flujos documentales.
-- Despliegue de bajo coste en produccion: el patron MoE con 11,3B activos y el drafter especulativo DFly2 reducen el coste por token frente a modelos densos de tamano comparable, adecuado para servicios de alto volumen.
-- Investigacion en contexto largo: util para experimentos de recuperacion y razonamiento sobre corpus de hasta 1M tokens con soporte de decodificacion especulativa de coste constante.
+- Análisis de repositorios completos: con 1M tokens de contexto, el modelo puede ingerir grandes bases de código, documentación y trazas de ejecución en una sola pasada para responder preguntas de arquitectura o detectar regresiones.
+- Atención al cliente automatizada: conversaciones multi-turno prolongadas con historial extenso y adjuntos de imágenes (capturas, facturas) gracias a la entrada multimodal y la ventana de 1M tokens.
+- Procesamiento documental multimodal: extracción y razonamiento sobre informes con tablas, gráficos e imágenes escaneadas, usando el codificador visual SigLIP2 y el proyector MLP.
+- Agentes de código en CI/CD: integración mediante API compatible con OpenAI para revisión automática de pull requests, generación de parches y ejecución de pasos multi-step con tool calling.
+- Investigación sobre documentos largos: resumen y QA sobre corpus jurídicos, científicos o financieros que exceden las ventanas habituales de 128K-256K tokens.
+- Despliegue económico en producción: al activar solo ~12B parámetros por token, el coste de inferencia por petición es menor que el de un modelo denso de 220B, lo que lo hace adecuado para servicios de alto volumen.
+- Subtitulado y descripción de imágenes a escala: pipeline image-text-to-text para catalogación de activos visuales con contexto largo acumulado.
 
 ## Benchmarks y rendimiento
 
-La model card menciona resultados de BPB (bits-per-byte) en validacion interna de codigo y agentes, pero los valores numericos no estan incluidos en la informacion proporcionada. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+La model card menciona resultados de benchmarks (sección "Appendix: Benchmark results") y una gráfica de bits-per-byte (BPB) en validación interna de código y agente, pero los valores numéricos no están incluidos en la información proporcionada. No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 220,25B parametros totales, los pesos en BF16 requieren aproximadamente 440 GB (el repositorio ocupa 440,5 GB). En cuantizacion de 8 bits, en torno a 220 GB; en 4 bits, en torno a 110 GB. Estas cifras son estimaciones a partir del numero de parametros, no datos publicados.
-- GPU recomendadas: para BF16 se necesitan multiples aceleradores de 80 GB (A100/H100) en configuracion tensor-parallel; para cuantizaciones de 4 bits podria desplegarse en configuraciones de 2-4 GPU de 80 GB.
-- GPU de consumo: no cabe en GPUs de consumo individuales (RTX 4090 de 24 GB) por el tamano total; solo seria viable con cuantizaciones extremas y offloading, no documentado.
-- Opciones de despliegue: transformers, vLLM, SGLang y API compatible con OpenAI; existe un repositorio GGUF de terceros (AngelSlim/Hy4-flash-GGUF) para llama.cpp/Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada; la decodificacion especulativa DFly2 esta disenada para reducir latencia en contexto largo a coste constante.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia de orden de magnitud, el repositorio pesa 440,5 GB en safetensors (probablemente en BF16/FP16); la inferencia en precisión completa requiere agregados de memoria muy superiores a una GPU consumer.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cabe esperar despliegues multi-GPU (A100/H100) para precisión completa.
+- GPU consumer: no cabe en una RTX 4090 en precisión completa; sería necesaria cuantización agresiva (existe repositorio GGUF comunitario, aunque no se detallan los niveles disponibles).
+- Opciones de despliegue: transformers, vLLM, SGLang, API compatible con OpenAI, DFly2 para decodificación especulativa y cuantización (secciones documentadas en la model card).
+- Latencia y throughput: no disponibles en la información proporcionada; DFly2 está diseñado para decodificación especulativa de largo contexto a coste constante.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Activos | Contexto | Multimodal | Licencia |
 |---|---|---|---|---|---|
-| Hy4-flash (Tencent) | 220,25B | 11,3B texto + 0,43B vision | 1M | Tencent Hy License | Hugging Face, ModelScope, GitCode, GGUF de terceros |
-| Hy4 (Tencent) | no disponible | no disponible | no disponible | Tencent Hy License | referencia en la model card |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Tencent Hy4-flash | 220B (155,5B backbone + 63,5B Engram) | ~12B | 1M | Si (texto + imagen) | Tencent Hy License |
+| Hy4 (referencia citada en la model card) | No disponible | No disponible | No disponible | No disponible | Tencent Hy License |
+| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone en la informacion proporcionada de datos de rendimiento de modelos comparables para establecer una comparativa cuantitativa.
+No se dispone en la información proporcionada de datos de modelos comparables de terceros (parámetros, contexto, rendimiento o licencia) para establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a los modelos generativos; no se aportan tasas ni evaluaciones especificas.
-- Idiomas soportados: no disponibles; la model card solo ofrece version en chino e ingles, lo que sugiere foco en esos idiomas, pero no se confirma.
-- Licencia: Tencent Hy License (license:other); es necesario revisar los terminos del archivo LICENSE antes de cualquier uso comercial, ya que puede incluir restricciones.
-- Contexto: aunque soporta 1M tokens, el rendimiento efectivo en contextos extremos no esta documentado.
-- Hardware: el tamano total de 220B hace inviable el despliegue en GPUs de consumo sin cuantizaciones agresivas no documentadas.
-- Madurez: el modelo tiene muy pocas descargas y likes en Hugging Face en el momento de la consulta, y la informacion publica es limitada.
+- Sesgos conocidos: no documentados en la información proporcionada; cabe esperar los sesgos habituales de los datos de entrenamiento, no auditados aquí.
+- Riesgo de alucinación: no cuantificado en la información disponible; debe validarse en producción, especialmente en tareas de código y datos factuales.
+- Idiomas soportados: no especificados; la model card está en inglés y chino, pero no se confirma la cobertura multilingüe.
+- Contexto: aunque la ventana es de 1M tokens, la calidad efectiva en el extremo superior no está documentada con benchmarks en la información disponible.
+- Licencia: Tencent Hy License (categoría "other"), no es una licencia open source estándar; es imprescindible revisar el texto completo antes de uso comercial.
+- Despliegue: el tamaño (440,5 GB en safetensors) y los 220B parámetros totales exigen infraestructura multi-GPU para precisión completa; la cuantización GGUF es de un repositorio comunitario, no oficial.
+- Decodificación especulativa: DFly2 depende de la caché KV y los índices dispersos del modelo objetivo; su comportamiento fuera del régimen de largo contexto no está documentado.
 
 ## Enlaces
 
@@ -86,6 +88,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 - Licencia: https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE
 - Web oficial: https://hy.tencent.ai/research/hy4-flash
 - GitHub: https://github.com/Tencent-Hunyuan/Hy4-flash
+- GGUF (comunitario): https://huggingface.co/AngelSlim/Hy4-flash-GGUF
 - ModelScope: https://modelscope.cn/models/Tencent-Hunyuan/Hy4-flash
-- GitCode: https://ai.gitcode.com/tencent_hunyuan/Hy4-flash
-- GGUF (terceros): https://huggingface.co/AngelSlim/Hy4-flash-GGUF
+- AtomGit: https://ai.gitcode.com/tencent_hunyuan/Hy4-flash
+- README en chino: https://huggingface.co/tencent/Hy4-flash/blob/main/README_CN.md

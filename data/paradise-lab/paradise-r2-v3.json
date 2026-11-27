@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "paradise-lab/paradise-r2-v3",
+  "slug": "paradise-lab-paradise-r2-v3",
+  "author": "paradise-lab",
+  "url": "https://huggingface.co/paradise-lab/paradise-r2-v3",
+  "created_at": "2026-11-27T03:58:57.000Z",
+  "updated_at": "2026-11-27T04:13:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982498,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paradise - Série TV 2025 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=36027.html",
+      "snippet": "Découvrez la série TV Paradise de Dan Fogelman avec Sterling K. Brown (Xavier Collins), Julianne Nicholson (Sinatra/Samantha)."
+    },
+    {
+      "title": "Paradise (2025 TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paradise_(2025_TV_series)",
+      "snippet": "Paradise is an American post-apocalyptic political thriller television series created by Dan Fogelman and starring Sterling K. Brown, …Read more"
+    },
+    {
+      "title": "Coldplay - Paradise (Official Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=1G4isv_Fylg",
+      "snippet": "Oct 18, 2011 · Coldplay's tenth studio album Moon Music available to listen/ buy now! https://coldplay.lnk.to/MoonMusic 🌙Coldplay - …Read more"
+    },
+    {
+      "title": "Regarder Paradise | Épisodes complets - Disney+",
+      "url": "https://www.disneyplus.com/fr-fr/browse/entity-2b4b8988-50c9-4097-bf93-bc34a99a5b4f?msockid=30793ff2aed16e86266d27ecaf956f75",
+      "snippet": "La série « Paradise » se déroule dans une communauté paisible habitée par les puissants de ce monde. Mais sa tranquillité vole en …Read more"
+    },
+    {
+      "title": "Paradise - Film 2026 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=308394.html",
+      "snippet": "Paradise est un film réalisé par Jérémy Comte avec Daniel Atsu Hukporti, Joey Boivin-Desmeules."
+    }
+  ]
+}

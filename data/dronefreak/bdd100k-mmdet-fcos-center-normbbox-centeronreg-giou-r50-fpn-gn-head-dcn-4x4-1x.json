@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "dronefreak/bdd100k-mmdet-fcos-center-normbbox-centeronreg-giou-r50-fpn-gn-head-dcn-4x4-1x",
+  "slug": "dronefreak-bdd100k-mmdet-fcos-center-normbbox-centeronreg-giou-r50-fpn-gn-head-dcn-4x4-1x",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-mmdet-fcos-center-normbbox-centeronreg-giou-r50-fpn-gn-head-dcn-4x4-1x",
+  "created_at": "2026-11-26T22:19:00.000Z",
+  "updated_at": "2026-11-26T22:19:48.000Z",
+  "license": "bdd100k",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [],
+  "tags": [
+    "mmdetection",
+    "safetensors",
+    "fcos",
+    "object-detection",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "driving-scenes",
+    "bdd100k",
+    "mirror",
+    "dataset:dronefreak/BDD100K",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33184868,
+  "parameters_human": "33.2M",
+  "storage_bytes": 863232456,
+  "storage_human": "863 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50:95 (val, reported by the authors)",
+      "value": 30.1
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (val, reported by the authors)",
+      "value": 54.9
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@75 (val, reported by the authors)",
+      "value": 27.9
+    }
+  ],
+  "sources": []
+}

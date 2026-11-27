@@ -5,7 +5,7 @@
   "author": "GetmanY1",
   "url": "https://huggingface.co/GetmanY1/wav2vec2-base-conformer-12l-fi-471k-finetuned",
   "created_at": "2026-11-24T14:19:06.000Z",
-  "updated_at": "2026-11-24T14:19:12.000Z",
+  "updated_at": "2026-11-26T13:40:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -2,80 +2,107 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo multimodal denso de 27.800 millones de parámetros desarrollado por el equipo Qwen de Alibaba, lanzado el 14 de agosto de 2026. Está construido sobre la base arquitectónica de Qwen3.5 y destaca por su capacidad para procesar texto, imágenes y vídeo, con una ventana de contexto de 262.144 tokens. El modelo original se distribuye bajo licencia Apache 2.0, lo que permite su uso local sin necesidad de API.
+AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ es una cuantizacion de 3 bits del modelo multimodal Qwen3.8-27B de Qwen, empaquetada en formato MLX para su ejecucion en Apple Silicon. El trabajo lo firma AtomicChat, el equipo detras de la aplicacion Atomic Chat, que se especializa en convertir pesos abiertos a formatos ligeros para inferencia local y offline. El repositorio ocupa 12,69 GB en un unico `model.safetensors`, lo que permite ejecutar un modelo de 27.356 millones de parametros en equipos con memoria unificada modesta.
 
-La versión aquí descrita, `AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ`, es una conversión realizada por AtomicChat al formato MLX (librería de Apple para inferencia en silicio de Apple) con cuantización de 3 bits. Su objetivo es reducir el consumo de memoria y permitir la ejecución del modelo en hardware de consumo, como Macs con chip M-series o GPUs con VRAM limitada. El repositorio incluye pesos en formato safetensors y ocupa 11,8 GB.
+El modelo resuelve el problema de desplegar un VLM de gran tamano en Macs sin GPU dedicada: mantiene la torre de vision en bf16 (0,46B de parametros, 0,92 GB) y aplica cuantizacion uniforme de 3 bits con group size 64 a todas las matrices del modelo de lenguaje (26,9B de pesos), con un proceso de busqueda de clipping por grupo y un paso posterior de destilacion de pesos (DWQ) usando la build de 8 bits como profesor. El resultado son 3,50 bits por peso de media y una divergencia KL de 0,215 frente a su conversion bf16 de referencia.
 
-Cabe señalar una discrepancia importante: el nombre del modelo sugiere 27B de parámetros, pero los archivos safetensors contienen 3.364.314.624 parámetros (~3,36B). Esta diferencia no está explicada en la documentación disponible y podría deberse a un error en el repositorio o a una versión reducida del modelo. Se recomienda verificar antes de su uso en producción.
+Es relevante porque demuestra que un VLM de 27B con entrada de imagen puede caber en 12,7 GB con una perdida de fidelidad acotada y medible, y porque publica las metricas de calibracion de toda la familia de cuantizaciones (desde 3,50 hasta 5,00 bpw), lo que permite elegir el punto de equilibrio entre tamano y calidad con datos en la mano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (visión-lenguaje) basado en Qwen3.5 |
-| Parametros totales | 3.364.314.624 (según safetensors; el modelo original Qwen3.8-27B tiene 27,8B según fuentes web) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens (según documentación del modelo original) |
-| Tipos de cuantizacion | 3-bit (CLIP-DWQ) |
-| Idiomas soportados | en (inglés) según Hugging Face; el modelo original probablemente soporta más idiomas, pero no se especifica |
-| Licencia | No disponible en Hugging Face; Apache 2.0 según fuentes web del modelo original |
-| Formato de pesos | safetensors (MLX) |
+| Arquitectura | Transformer multimodal (modelo de lenguaje Qwen3.8 + torre de vision CLIP); la model card no detalla mas la arquitectura |
+| Parametros totales | 27.356.728.560 (27,36B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 3 bits uniforme, group size 64, con busqueda de clipping y DWQ; torre de vision en bf16 |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 segun la model card (el campo de licencia del repo aparece como no disponible) |
+| Formato de pesos | safetensors (MLX), un unico `model.safetensors` de 12,69 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo original Qwen3.8-27B es un transformer denso multimodal que procesa texto, imágenes y vídeo. Está construido sobre la arquitectura de Qwen3.5 e incorpora mejoras específicas en tareas de programación, automatización de oficina y flujos de trabajo agénticos de largo horizonte. Según la documentación oficial, el modelo es capaz de completar tareas complejas de múltiples pasos con mayor fiabilidad que versiones anteriores.
+El modelo base es Qwen3.8-27B, un VLM de Qwen con pipeline `image-text-to-text`. La model card no aporta detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO; esa informacion corresponde al modelo original y no se reproduce aqui. Lo que si se documenta es el proceso de cuantizacion: se parte de la conversion bf16 a MLX del original (AtomicChat/Qwen3.8-27B-MLX-bf16), se aplica una conversion a 3 bits con busqueda de clipping para el rango de cuantizacion de cada grupo y despues DWQ (Distillation-based Weight Quantization), que ajusta escalas y offsets por destilacion tomando la build MLX de 8 bits como profesor. El run de DWQ dura entre una y dos horas en una sola GPU.
 
-La versión MLX aquí presentada aplica una cuantización de 3 bits con la técnica denominada CLIP-DWQ (no se dispone de detalles técnicos sobre esta técnica). La cuantización reduce el tamaño de los pesos y acelera la inferencia en hardware compatible con MLX, a costa de una posible pérdida de precisión. No se han publicado detalles sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF, DPO, etc.) en la información disponible.
+La innovacion tecnica destacable es el propio esquema DWQ combinado con busqueda de clipping: frente a una conversion plana de 3 bits (group 64, sin clipping ni DWQ) que mide KLD 0,223 y 78,5% de coincidencia top-1, esta version baja a 0,215 y 79,6%. La mejora es modesta pero consistente, y la familia completa permite escalar hasta 5,00 bpw con KLD 0,031 y 91,5% de top-1. Las metricas se obtuvieron con mlx-lm 0.31.3 y mlx-vlm 0.6.15 sobre 1x H200 NVL, evaluando 24 fragmentos de 4096 tokens de texto neutral reservado y puntuando solo la segunda mitad de cada fragmento.
 
 ## Capacidades
 
-- Procesamiento multimodal: acepta entradas de texto, imágenes y vídeo, lo que permite tareas de descripción visual, respuesta a preguntas sobre contenido visual y análisis de vídeo.
-- Generación de texto: produce respuestas coherentes y contextualizadas en inglés.
-- Razonamiento y resolución de problemas: diseñado para tareas complejas de razonamiento lógico y matemático.
-- Generación de código: soporta programación en múltiples lenguajes, con especial énfasis en tareas de desarrollo y depuración.
-- Flujos de trabajo agénticos: capaz de ejecutar tareas de múltiples pasos de forma autónoma, lo que sugiere soporte para tool calling y planificación.
-- Automatización de oficina: puede generar documentos, resumir correos, crear presentaciones y otras tareas de productividad.
-- Multilingüe: aunque Hugging Face indica solo inglés, el modelo original de Qwen suele ser multilingüe; no se confirma en esta versión.
+- Generacion de texto conversacional multi-turno en ingles.
+- Entrada de imagen y texto (`image-text-to-text`): la torre de vision se conserva en bf16 para preservar calidad en la percepcion visual.
+- Razonamiento y generacion de codigo heredados del modelo base Qwen3.8-27B (no se detallan capacidades especificas en la model card).
+- Soporte de plantilla de chat (`tokenizer.chat_template`) para formateo de conversaciones.
+- Ejecucion local y offline en Apple Silicon mediante MLX.
+- Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Asistente de programación local: el modelo puede integrarse en entornos de desarrollo (VS Code, Jupyter) para autocompletar código, explicar fragmentos y sugerir correcciones, gracias a su capacidad de generación de código y razonamiento.
-- Análisis de imágenes y vídeo en local: permite extraer información de capturas, diagramas o vídeos sin enviar datos a la nube, útil en entornos con requisitos de privacidad.
-- Automatización de tareas de oficina: puede redactar informes, resumir actas, generar borradores de correos electrónicos y preparar presentaciones a partir de instrucciones en lenguaje natural.
-- Agente autónomo para investigación: con su capacidad de razonamiento multi-paso, puede buscar información, contrastar fuentes y elaborar resúmenes estructurados.
-- Chatbot de atención al cliente: con 262.144 tokens de contexto, puede mantener conversaciones largas y recordar detalles de interacciones previas, adecuado para soporte técnico.
-- Prototipado rápido de aplicaciones multimodales: al ejecutarse en local con MLX, permite desarrollar y probar aplicaciones que combinan texto e imagen sin costes de API.
+- Asistente conversacional local en Mac: cargar el repo con `mlx-lm` y usar `generate` con la plantilla de chat permite tener un asistente de 27B funcionando sin conexion, con 12,7 GB de pesos en disco y memoria unificada como unico requisito.
+- Analisis de imagenes en escritorio: con `mlx-vlm` y el mismo identificador de repositorio se puede enviar una imagen junto a una pregunta y obtener una descripcion o extraccion de informacion, manteniendo la torre de vision en bf16 para no degradar la calidad visual.
+- Prototipado de aplicaciones VLM sin infraestructura cloud: el tamano de 12,69 GB permite iterar en un portatil Apple Silicon antes de mover el pipeline a produccion con el modelo completo.
+- Procesamiento por lotes de documentos escaneados en local: al ejecutarse offline, es adecuado para flujos con requisitos de privacidad donde las imagenes no pueden salir del equipo.
+- Evaluacion comparativa de cuantizaciones: la familia publica mediciones de KLD y top-1 para cinco niveles de bpw, lo que sirve para elegir el punto de compresion adecuado en funcion de la memoria disponible y la tolerancia a la perdida de fidelidad.
+- Integracion en la aplicacion Atomic Chat: el modelo esta empaquetado por el mismo equipo que desarrolla la app, por lo que encaja directamente en ese entorno de inferencia local.
+- Educacion e investigacion sobre cuantizacion: el repositorio documenta el metodo (clipping search + DWQ) y publica los logs de calibracion, lo que lo convierte en material de referencia para estudiar tecnicas de compresion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K u otras métricas para esta versión cuantizada ni para el modelo original en las fuentes consultadas.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card solo reporta metricas de fidelidad de cuantizacion frente a la conversion bf16:
+
+| Repositorio | Layout | Bits por peso | En disco | KLD media | Mismo top-1 |
+|---|---|---:|---:|---:|---:|
+| AD-3.50bpw-DWQ-12.7GB (este) | 3 bits uniforme | 3,50 | 12,69 GB | 0,215 | 79,6% |
+| AD-3.70bpw-DWQ-13.4GB | mlx-lm `mixed_3_4` | 3,70 | 13,37 GB | 0,166 | 82,4% |
+| AD-3.80bpw-DWQ-13.7GB | per-tensor | 3,80 | 13,69 GB | 0,148 | 82,3% |
+| AD-4.50bpw-DWQ-16.0GB | 4 bits uniforme | 4,50 | 16,05 GB | 0,053 | 89,5% |
+| AD-5.00bpw-DWQ-17.7GB | per-tensor | 5,00 | 17,74 GB | 0,031 | 91,5% |
+| 3 bits plano (referencia) | group 64, sin clipping ni DWQ | 3,00 | no disponible | 0,223 | 78,5% |
+| 4 bits plano (referencia) | group 64, sin clipping ni DWQ | 4,00 | no disponible | 0,056 | 89,1% |
 
 ## Requisitos de hardware
 
-- Tamaño del repositorio: 11,8 GB, lo que indica que los pesos cuantizados ocupan aproximadamente esa cantidad. Se recomienda al menos 12 GB de memoria unificada o VRAM para cargar el modelo completo.
-- Compatibilidad MLX: diseñado para Apple Silicon (M1, M2, M3, M4) con memoria unificada. Un Mac con 16 GB o más puede ejecutar el modelo con comodidad.
-- GPUs de consumo: aunque MLX está orientado a Apple, los pesos safetensors podrían convertirse a otros formatos (GGUF, etc.) para ejecutarse en GPUs NVIDIA con CUDA, pero no se proporcionan instrucciones.
-- Opciones de despliegue: MLX (librería nativa), posiblemente llama.cpp si se convierte a GGUF, o vLLM si se adapta. No se mencionan otras herramientas.
-- Latencia y throughput: no disponibles.
+- VRAM o memoria unificada: los pesos ocupan 12,69 GB; se necesita memoria adicional para el contexto KV y las activaciones, por lo que conviene disponer de al menos 16 GB de memoria unificada.
+- GPU recomendadas: el harness de evaluacion uso 1x H200 NVL, pero el destino real del formato MLX es Apple Silicon (serie M). No se especifican modelos concretos de Mac en la model card.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon con memoria unificada suficiente; no se documenta compatibilidad con GPU NVIDIA consumer para este formato.
+- Opciones de despliegue: `mlx-lm` (pip install mlx-lm) para el modelo de texto y `mlx-vlm` (pip install mlx-vlm) para entrada de imagen, ambos con el mismo identificador de repositorio.
+- Latencia y throughput: no disponibles. No hay ejecucion en Mac registrada por el autor.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa. El modelo original Qwen3.8-27B compite con otros modelos multimodales densos de tamaño similar, como Qwen3.5-27B o Qwen3.6-27B, pero no se han encontrado especificaciones detalladas de estos en las fuentes consultadas. La versión cuantizada 3-bit es una adaptación específica para MLX, por lo que su comparativa directa con otras versiones cuantizadas (por ejemplo, 4-bit o 8-bit) no está documentada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ (este) | 27,36B | no disponible | MLX safetensors, 3,50 bpw | apache-2.0 | KLD 0,215; 79,6% top-1; 12,69 GB |
+| AtomicChat/Qwen3.8-27B-MLX-AD-4.50bpw-DWQ-16.0GB | 27,36B | no disponible | MLX safetensors, 4,50 bpw | apache-2.0 | KLD 0,053; 89,5% top-1; 16,05 GB |
+| AtomicChat/Qwen3.8-27B-MLX-AD-5.00bpw-DWQ-17.7GB | 27,36B | no disponible | MLX safetensors, 5,00 bpw | apache-2.0 | KLD 0,031; 91,5% top-1; 17,74 GB |
+| AtomicChat/Qwen3.8-27B-GGUF | 27,36B | no disponible | GGUF | apache-2.0 | Misma base en formato llama.cpp; metricas no comparables con las MLX |
+
+No se dispone de informacion sobre modelos de otros autores comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Discrepancia en el número de parámetros: el nombre indica 27B, pero los safetensors contienen ~3,36B. Esto puede deberse a un error de empaquetado o a una versión reducida no documentada. Verificar antes de usar.
-- Cuantización de 3 bits: la pérdida de precisión puede afectar la calidad de las respuestas, especialmente en tareas de razonamiento complejo o generación de código.
-- Idioma: solo se confirma inglés. El uso en otros idiomas puede dar resultados subóptimos.
-- Licencia: aunque el modelo original es Apache 2.0, la ficha de Hugging Face indica "no disponible". Se recomienda contactar con el autor para aclarar los términos de uso de esta conversión.
-- Sin benchmarks publicados: no hay evidencia objetiva del rendimiento de esta versión cuantizada.
-- Repositorio sin actividad: 0 descargas y 0 likes, lo que sugiere que no ha sido probado por la comunidad.
+- Las metricas de fidelidad se midieron en CUDA (1x H200 NVL); no hay ejecucion en Mac registrada para este archivo concreto.
+- La entrada de imagen no se probo en este archivo segun la model card, a pesar de que la torre de vision se conserva.
+- KLD y top-1 se calcularon sobre un unico conjunto de texto reservado y no miden calidad en chat, uso de herramientas ni contexto largo.
+- El modelo solo declara soporte de ingles (`language: en`), lo que limita su uso en castellano.
+- La licencia aparece como apache-2.0 en la model card, pero el campo de licencia del repositorio figura como no disponible; conviene verificar antes de un uso comercial.
+- La cuantizacion a 3,50 bpw implica una perdida de fidelidad no trivial (79,6% de coincidencia top-1 frente a bf16), superior a la de las variantes de 4,50 y 5,00 bpw.
+- No se documentan sesgos conocidos, riesgo de alucinacion ni limitaciones de contexto especificas; esa informacion corresponde al modelo base Qwen/Qwen3.8-27B y no se incluye aqui.
+- El formato MLX limita el despliegue a entornos Apple Silicon; para otras plataformas existe la build GGUF del mismo equipo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ
-- Página del modelo en Atomic Chat: https://atomic.chat/models/qwen3-8-27b
-- Repositorio oficial de Alibaba Cloud: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Repositorio oficial de QwenLM: https://github.com/QwenLM/Qwen3.8
-- Página en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Repositorio relacionado (versión 3-bit g32): https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-g32
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Conversion bf16 MLX: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-bf16
+- Variante 3,70 bpw: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-3.70bpw-DWQ-13.4GB
+- Variante 3,80 bpw: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-3.80bpw-DWQ-13.7GB
+- Variante 4,50 bpw: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-4.50bpw-DWQ-16.0GB
+- Variante 5,00 bpw: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-5.00bpw-DWQ-17.7GB
+- Build GGUF: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
+- Logs de metricas: https://huggingface.co/datasets/AtomicChat/Qwen3.8-27B-MLX-metrics/tree/main/logs
+- Aplicacion Atomic Chat: https://atomic.chat/
+- Repositorio GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

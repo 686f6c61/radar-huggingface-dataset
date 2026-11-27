@@ -2,86 +2,91 @@
 
 ## Resumen
 
-Vybecheck-flant5-adapters es un adaptador LoRA (PEFT) entrenado por VYBE (`vybechief`) sobre `google/flan-t5-large`, un modelo seq2seq instruido de 780 millones de parametros. Su funcion es muy concreta: convertir terminos de jerga juvenil e internet (slang) en definiciones en lenguaje llano en ingles, siguiendo el patron `Define this slang term: {term}`. Esta pensado como paso de reescritura sustituible dentro de VYBE Bridge, un sistema de la plataforma vybecheck.tech.
+VYBE Flan-T5 Adapter es un adaptador LoRA experimental construido sobre `google/flan-t5-large` y publicado por el usuario `vybechief`. Su proposito es muy concreto: recibir un termino de jerga (slang) y devolver una definicion breve en ingles en lenguaje llano. Forma parte de la linea de investigacion del autor denominada "minimal intelligence", centrada en construir y evaluar una capacidad estrecha y aislada, no un sistema generalista de conversacion.
 
-El proyecto es explicitamente experimental y su historial de revisiones es ilustrativo: las versiones `main` y `job-v2` a `job-v6` fallaron repetidamente la prueba de retencion (holdout) con el termino "No Cap", que el modelo traducia erroneamente como prenda de vestir o carino en lugar de "mentira". La revision `job-v7` supero esa prueba tras reentrenar con r=64, muestreo sobredimensionado de la familia semantica de verdad/mentira y ejemplos negativos dificiles. Aun asi, el Bridge en produccion sigue usando OpenAI hasta un cambio explicito.
+El adaptador es de tipo PEFT LoRA sobre arquitectura seq2seq (etiqueta `SEQ_2_SEQ_LM`), con un formato de prompt congelado para la revision `job-v7`: `Define this slang term: {term}`. El modelo base, `flan-t5-large`, aporta el conocimiento linguistico; el adaptador anade el ajuste especifico para la tarea de definicion de jerga. El repositorio ocupa 1,2 GB y acumula 209 descargas y 1 like en el momento de la consulta.
 
-Es relevante como caso de estudio de ajuste fino LoRA estrecho y con validacion por sondas, aunque su utilidad general esta muy limitada: no es un chatbot ni un modelo de proposito general, sino un componente especializado de mapeo de glosario.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de uso muy acotado (glosado de slang) con un ciclo de vida de revisiones poco habitual: la rama `main` corresponde a un adaptador historico de Colab que fallo una comprobacion de regresion documentada, y la revision recomendada es `job-v7` (commit inmutable `c043785c6eaafd5659602707631b6c31c22edf61`). Por otro, advierte explicitamente de que el adaptador no es el sistema completo de VYBE ni el motor de reescritura Bridge, y de que sus salidas no deben tratarse como autoritativas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT, SEQ_2_SEQ_LM) sobre Flan-T5 (transformer seq2seq encoder-decoder) |
-| Parametros totales | no disponible (solo se distribuye el adaptador; el repo pesa 1,2 GB) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la del modelo base Flan-T5-large no se indica en la model card) |
-| Tipos de cuantizacion | no disponible (pesos en precision nativa del adaptador) |
-| Idiomas soportados | Ingles (definiciones; los terminos de slang pueden ser multilingues) |
+| Arquitectura | Transformer seq2seq (T5) con adaptador LoRA (PEFT) sobre `google/flan-t5-large` |
+| Parametros totales | No disponible (el modelo base `flan-t5-large` tiene aproximadamente 780 M; el adaptador LoRA anade un subconjunto no especificado) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base T5, no documentada en la model card) |
+| Tipos de cuantizacion | No disponible (el repositorio publica pesos del adaptador en safetensors; no se documentan variantes GGUF ni cuantizaciones) |
+| Idiomas soportados | Ingles para las definiciones de salida; los terminos de entrada pueden ser jerga multilingue |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA; requiere el modelo base google/flan-t5-large) |
+| Formato de pesos | safetensors (adaptador LoRA via PEFT); el modelo base se carga por separado desde `google/flan-t5-large` |
 
 ## Arquitectura y entrenamiento
 
-El adaptador sigue la configuracion estandar de PEFT para modelos seq2seq (`SEQ_2_SEQ_LM`) aplicada a Flan-T5-large. La revision vigente (`job-v7`) usa LoRA con rango r=64, alpha=128, dropout 0 y learning rate 2e-4 durante 20 epocas, inyectando adaptadores en las proyecciones de atencion `q, k, v, o` y en las capas FFN `wi_0, wi_1, wo` de T5. Las versiones anteriores empleaban r=32 y 10 epocas. El entrenamiento se realizo en Hugging Face Jobs con una instancia `a10g-small` (NVIDIA A10G); la revision `main` original se entreno en Colab.
+El adaptador se apoya en `google/flan-t5-large`, un transformer encoder-decoder de la familia T5 afinado previamente con instrucciones (FLAN). Sobre esa base se aplica un ajuste LoRA de tipo PEFT, lo que mantiene congelados los pesos del modelo base y entrena unicamente matrices de bajo rango. El pipeline declarado es `text2text-generation` y el tipo de modelo PEFT es `SEQ_2_SEQ_LM`. El formato de prompt congelado para la revision `job-v7` es `Define this slang term: {term}`, y en el ejemplo de la model card se recomienda generar con `max_new_tokens=48` y `num_beams=4`.
 
-Los datos de entrenamiento son un glosario privado de slang revisado manualmente, con pares termino → definicion corta. Se descartaron frases de ejemplo de uso y las filas inversas de direccion `to-genz`; solo se conserva la direccion `to-plain`. En `job-v7` la familia semantica de verdad/mentira se sobremuestrea hasta un tercio de los pasos y se anaden ejemplos negativos dificiles (hat/caption) para evitar el colapso semantico de "cap". La validacion se hace mediante una sonda de retencion: `job-v7` supera el gate `HOLD_OUT_PASS` al definir "No Cap" como glosa de veracidad ("A lie. Not a hat."), mientras que `main` y `job-v2` a `job-v6` la fallaron. No hay RLHF ni DPO; el ajuste es supervisado simple.
+En cuanto a datos, la model card referencia un mix del Hub denominado `vybechief/vybe-to-plain-mix`, aunque el texto proporcionado se interrumpe antes de detallar su composicion, numero de tokens o proceso de entrenamiento. No se documentan fases de RLHF ni DPO. La model card menciona que las fuentes lexicograficas abiertas permitidas solo pueden enriquecer borradores de investigacion no revisados, y que las filas de comunidad requieren consentimiento en la version `2026-10-30` antes de su uso en entrenamiento; no se especifica si ese material forma parte del adaptador publicado. No hay informacion sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Definicion de terminos de slang en lenguaje llano en ingles, con el prefijo congelado `Define this slang term: {term}` (solo en `job-v7`).
-- Generacion de glosas de veracidad para la familia "cap / No Cap" (mentira, de verdad, en serio).
-- Reescritura unidireccional `to-plain`: termino de slang → significado. La direccion inversa (`to-genz`) fue eliminada del entrenamiento.
-- No soporta chat abierto, razonamiento general, codigo, matematicas, vision ni tool calling; son casos explicitamente fuera de alcance segun la model card.
-- No debe usarse como mecanismo de puntuacion de riesgo de VYBE ni como fuente de verdad.
+- Generacion de definiciones breves en ingles a partir de un termino de jerga o frase corta.
+- Tarea estrictamente acotada de texto a texto (term → definition); no es chat abierto.
+- Acepta terminos de jerga potencialmente multilingues como entrada, aunque la salida es en ingles.
+- No realiza recuperacion, ranking ni curacion de glosarios (son componentes separados de VYBE).
+- No interpreta intencion del hablante, sarcasmo, relaciones ni matices culturales como capacidades evaluadas.
+- No escribe pares `translatedText` del motor Bridge; esa funcion corresponde a la ruta de reescritura con OpenAI.
+- No soporta tool calling, function calling ni razonamiento multi-paso de agentes.
+- No dispone de modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Normalizacion de slang en moderation de contenido: dentro de VYBE Bridge, el adaptador traduce terminos de jerga a lenguaje llano antes de aplicar reglas o puntuaciones deterministicas, facilitando que un clasificador posterior entienda el texto original.
-- Sustitucion economica de una API comercial: al ser un adaptador LoRA sobre Flan-T5-large (780M de parametros), puede ejecutarse en GPU modesta o CPU, reduciendo el coste frente a la llamada a OpenAI que usa actualmente el Bridge en produccion.
-- Glosarios dinamicos de jerga juvenil: plataformas sociales o de gamificacion pueden integrarlo para mostrar explicaciones automaticas de terminos de slang a usuarios que no los conocen.
-- Herramienta educativa o de accesibilidad: explicar expresiones de internet a personas mayores o no nativas, siempre restringido al glosario revisado del proyecto.
-- Componente de pipeline con verificacion externa: el diseno previsto contempla un puntuador determinista aparte, por lo que el adaptador encaja como paso de reescritura auditable y reemplazable.
-- Caso de estudio de MLOps con LoRA: el historial de revisiones con gates de retencion (`main`, `job-v2` a `job-v7`) es un ejemplo documentado de iteracion con validacion por sondas y despliegue por revisiones en repositorios PEFT.
-
-Fuera de estos escenarios, el propio autor desaconseja su uso: no debe inventar significados ajenos al glosario revisado ni servir para produccion en las revisiones `main` o `job-v2` a `job-v6`.
+- Glosado de jerga como capa de ultimo recurso: cuando el glosario revisado y la recuperacion semantica no encuentran una acepcion, el adaptador puede generar una definicion breve de apoyo. La model card lo describe como "fallback-assist" opcional, no como fuente autoritativa.
+- Enriquecimiento de borradores de investigacion lexicografica: usar la salida del adaptador como punto de partida para que revisores humanos validen o descarten definiciones antes de incorporarlas a un glosario.
+- Prototipado de pipelines de normalizacion de lenguaje informal: integrar el adaptador en un flujo que detecte terminos de jerga en textos de redes sociales y genere una glosa preliminar para su posterior revision.
+- Evaluacion comparativa de adaptadores LoRA: servir como artefacto de referencia para estudiar el comportamiento de un LoRA seq2seq de bajo coste frente al modelo base sin adaptar en una tarea narrow.
+- Docencia y experimentacion con PEFT: el ejemplo de carga con `PeftModel.from_pretrained` y `revision="job-v7"` sirve como plantilla reproducible para practicas sobre adaptadores con revisiones fijadas.
+- Pruebas de regresion de calidad: el caso documentado "No Cap" (salida historica `A lie. Not a hat.`) puede utilizarse como prueba de humo para verificar que se carga la revision correcta y no la rama `main` fallida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica evaluacion referenciada es la sonda de retencion interna: `job-v7` pasa el gate `HOLD_OUT_PASS` (definicion de "No Cap" como glosa de veracidad), mientras que `main` y `job-v2` a `job-v6` lo fallaron. No hay metricas MMLU, HumanEval, GSM8K ni similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una comprobacion de regresion documentada ("No Cap regression check") que la rama `main` no supero, pero no se aportan metricas numericas (MMLU, HumanEval, GSM8K u otras) ni comparaciones cuantitativas con modelos similares.
 
 ## Requisitos de hardware
 
-- El adaptador pesa 1,2 GB en el repositorio; combinado con el modelo base Flan-T5-large (780M de parametros, aproximadamente 3 GB en fp16), la inferencia completa requiere en torno a 4-5 GB de VRAM en fp16, o menos con cuantizacion (estimacion no confirmada en la model card).
-- Cabe con holgura en GPUs de consumo: RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas modernas; tambien es viable en CPU dada la talla del modelo base.
-- El entrenamiento de `job-v7` se realizo en una instancia `a10g-small` (NVIDIA A10G, 24 GB de VRAM) mediante Hugging Face Jobs; la revision `main` original se entreno en Colab.
-- Despliegue: transformers + PEFT (version 0.21.2 en entrenamiento) segun el ejemplo de la model card. El autor despliega workers en RunPod que cargan el repo por revision. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI; al ser un adaptador PEFT sobre T5, llama.cpp y Ollama no lo cargan directamente.
-- No hay datos publicos de latencia ni throughput.
+- VRAM estimada: no disponible de forma explicita. El modelo base `flan-t5-large` (aproximadamente 780 M de parametros) en fp32 ronda los 3 GB de pesos; en fp16/bf16, alrededor de 1,5 GB. El adaptador LoRA anade una cantidad marginal. Estas cifras son estimaciones a partir del tamano del modelo base, no datos publicados en la model card.
+- GPU recomendadas: no documentadas. Por el tamano del modelo base, cabria esperar ejecucion comoda en GPU consumer modernas (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 4090) y en GPU de datacenter (A100, H100) sin necesidad de ellas.
+- Cabe en GPU consumer: si, segun el tamano del modelo base; no confirmado por el autor.
+- Opciones de despliegue: carga via `transformers` + `peft` (ejemplo oficial de la model card). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. La model card menciona un despliegue en RunPod con la variable `HF_ADAPTER_REVISION=job-v7` / `PINNED_ADAPTER_REVISION = "job-v7"` y `RUNPOD_SLANG_GLOSS=1` en publicaciones de API, aunque el autor aclara que no se re-probo un endpoint RunPod en vivo durante la sesion de documentacion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros base | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vybechief/vybecheck-flant5-adapters | LoRA sobre Flan-T5-large | 780M (base) | Slang → definicion en ingles | Apache 2.0 | HF, revisiones `main` y `job-v2` a `job-v7` |
-| google/flan-t5-large (base) | Transformer seq2seq instruido | 780M | Instruccion general | Apache 2.0 | HF |
-| google/flan-t5-xl | Transformer seq2seq instruido | 3B | Instruccion general | Apache 2.0 | HF |
+| vybecheck-flant5-adapters (`job-v7`) | Adaptador LoRA sobre flan-t5-large (~780 M base) | No disponible | Definicion de jerga (term → definition) | Apache 2.0 | Hugging Face, revision fijada obligatoria |
+| google/flan-t5-large (base sin adaptar) | ~780 M | No disponible en esta ficha | Texto a texto general con instrucciones | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA alternativos para glosado de slang | No disponible | No disponible | Definicion de jerga | Variable | No identificados en la informacion proporcionada |
 
-Comparado con su modelo base, el adaptador no amplia capacidades generales: restringe el comportamiento a la tarea de definicion de slang con un prefijo fijo. Frente a un LLM comercial como el que usa el Bridge en produccion (OpenAI, no especificado en la model card), ofrece un coste por inferencia mucho menor y despliegue propio, a cambio de un dominio muy estrecho y riesgo de alucinacion de definiciones. No hay alternativas publicas comparables de adaptadores LoRA para slang con gates de validacion documentados: no disponible.
+No se dispone de datos de rendimiento comparativo entre estas opciones; la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Riesgo alto de alucinacion: la model card advierte que el adaptador puede generar definiciones fluentes pero incorrectas; no debe usarse como fuente de verdad.
-- El glosario de entrenamiento es privado, curado e incompleto; el modelo no debe usarse para inventar significados fuera de ese glosario.
-- Las revisiones `main` y `job-v2` a `job-v6` fallaron la sonda de retencion y estan marcadas explicitamente como no desplegables; los workers de RunPod que no fijan revision cargan `main`, lo que es un riesgo operativo documentado por el propio autor.
-- El Bridge en produccion sigue usando OpenAI; este adaptador no es la ruta activa de reescritura.
-- Solo genera definiciones en ingles; los terminos de entrada pueden ser multilingues pero la salida es inglesa.
-- No sirve como chatbot, sistema de razonamiento ni puntuador de riesgo de VYBE.
-- La licencia Apache 2.0 permite uso comercial sin restricciones relevantes, al igual que el modelo base.
-- No se ha estimado el impacto medioambiental de los entrenamientos, segun la model card.
+- La rama `main` corresponde a un adaptador historico de Colab que fallo una comprobacion de regresion documentada; cargarla sin `revision=` produce resultados no validos para la tarea prevista. Es obligatorio fijar `revision="job-v7"` o el commit inmutable `c043785c6eaafd5659602707631b6c31c22edf61`.
+- El widget "Use this model" generado por Hugging Face puede cargar la revision por defecto; hay que pasar `revision=` explicitamente en el codigo.
+- El adaptador puede producir definiciones incorrectas, incompletas o enganosas, incluso para terminos conocidos; las respuestas fluidas pero erroneas son un modo de fallo esperado.
+- Las salidas no deben tratarse como autoritativas; se recomienda preferir siempre las acepciones del glosario revisado.
+- No interpreta intencion, sarcasmo, relaciones ni matices culturales; esa capacidad ("contextual intelligence") queda fuera del alcance demostrado y sin plazo de entrega establecido.
+- No es un chatbot general, ni un backend CaaS, ni un sistema de puntuacion de riesgo.
+- Alcance linguistico limitado: definiciones solo en ingles; los terminos de entrada pueden ser multilingues pero no se garantiza cobertura.
+- Estado experimental: aunque exista una ruta de fallback-assist documentada, el adaptador no es production-ready ni sustituye al escritor de pares Bridge.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias de calidad ni de idoneidad para produccion.
+- No se documentan sesgos especificos, pero al derivar de un modelo base entrenado con datos web es esperable un sesgo linguistico y cultural no auditado.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/vybechief/vybecheck-flant5-adapters
+- Modelo en Hugging Face: https://huggingface.co/vybechief/vybecheck-flant5-adapters
 - Modelo base: https://huggingface.co/google/flan-t5-large
-- Plataforma VYBE: https://vybecheck.tech
-- Paper del modelo base: Chung et al., *Scaling Instruction-Finetuned Language Models* (Flan-T5), referenciado en la model card (enlace directo no disponible)
+- Mix de datos de entrenamiento referenciado: https://huggingface.co/datasets/vybechief/vybe-to-plain-mix
+- Repositorio del autor en Hugging Face: https://huggingface.co/vybechief
+- Commit inmutable de la revision recomendada: `c043785c6eaafd5659602707631b6c31c22edf61` (rama `job-v7` del repositorio del adaptador)
+- No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

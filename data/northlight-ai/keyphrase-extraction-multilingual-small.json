@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "id": "northlight-ai/keyphrase-extraction-multilingual-small",
+  "slug": "northlight-ai-keyphrase-extraction-multilingual-small",
+  "author": "northlight-ai",
+  "url": "https://huggingface.co/northlight-ai/keyphrase-extraction-multilingual-small",
+  "created_at": "2026-11-26T22:30:40.000Z",
+  "updated_at": "2026-11-26T22:32:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "keyphrase-extraction",
+    "keyword-extraction",
+    "multilingual",
+    "8k-context",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642691,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1430246346,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "papyrus-e (EN human author keyphrases)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 33.66
+    },
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "papyrus-f (FR human author keyphrases)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 34.94
+    },
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "WikiNews-FR (FR news)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 35.36
+    },
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "TermITH (FR scholarly)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 31.55
+    },
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "DUC-2001 (EN news)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 17.7
+    },
+    {
+      "task": "Extractive Keyphrase Extraction",
+      "dataset": "Inspec (EN scientific)",
+      "metric": "Exact-Match Present F1@M",
+      "value": 23.91
+    }
+  ],
+  "sources": []
+}

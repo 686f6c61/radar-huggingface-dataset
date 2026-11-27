@@ -2,114 +2,109 @@
 
 ## Resumen
 
-Scalar Phos Pro es un modelo de lenguaje de 8.030 millones de parametros desarrollado por scalar-ai, obtenido mediante un ajuste fino con QLoRA sobre Meta Llama 3.1 8B Instruct. Se distribuye como adaptadores LoRA (formato PEFT) y como pesos cuantizados GGUF Q4_K_M, lo que permite tanto el reentrenamiento y la fusion con el modelo base como la inferencia local en hardware de consumo. La arquitectura es un transformer denso autorregresivo de 32 capas, 32 cabezas de atencion con Grouped-Query Attention, dimension oculta de 4096 y un vocabulario de 128.256 tokens.
+Scalar Phos Pro es un modelo de lenguaje de tipo decoder-only derivado de Meta Llama 3.1 8B Instruct mediante un ajuste fino supervisado (SFT) con QLoRA. Lo publica el usuario `scalar-ai` en Hugging Face y se distribuye como adaptador PEFT (no como pesos completos), por lo que requiere cargar el modelo base y aplicar el adaptador. Su objetivo declarado es mejorar el seguimiento de instrucciones especializadas y el razonamiento general manteniendo un despliegue ligero.
 
-El modelo se presenta como una variante "instruction-tuned" orientada a seguimiento de instrucciones especializado y razonamiento general, manteniendo el contexto nativo de 128.000 tokens de Llama 3.1. Su relevancia practica radica en que conserva el ecosistema de despliegue de Llama 3.1 (transformers, peft, llama.cpp, Ollama, LM Studio, TGI) y anade una capa de ajuste que, segun el autor, mejora el seguimiento de instrucciones, aunque los datos publicados de MMLU lo sitúan por debajo del modelo base en todas las categorias evaluadas.
+El modelo conserva la arquitectura del base: transformer denso autorregresivo de 32 capas, 32 cabezas de atención con Grouped-Query Attention, dimensión oculta 4096 y vocabulario de 128.256 tokens. Mantiene la ventana de contexto de 128.000 tokens de Llama 3.1, lo que lo hace utilizable en tareas de contexto largo, aunque el ajuste fino se haya hecho con datos que no se detallan.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face; no hay informacion publica sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la composicion de la mezcla SFT. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un modelo de publicacion reciente y escasa validacion externa.
+Es relevante ahora por dos motivos: se publica junto con repositorios derivados (versión fusionada y cuantizaciones GGUF para Ollama/llama.cpp/LM Studio), lo que facilita su evaluación local, y porque el autor publica un resultado de MMLU zero-shot (66,55 %) que, aunque inferior al del modelo base, permite situarlo en la franja de modelos de 7-9B. La licencia es la Llama 3.1 Community License, con las restricciones habituales de Meta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso autorregresivo (Llama 3.1), 32 capas, GQA, RoPE |
-| Parametros totales | 8.030 millones (~8B) |
+| Arquitectura | Transformer denso autorregresivo (decoder-only), derivado de Llama 3.1 8B Instruct |
+| Parametros totales | 8.030.261.248 (~8,03B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 128.000 tokens |
-| Tipos de cuantizacion | FP16, BF16, 4-bit (QLoRA), GGUF Q4_K_M |
-| Idiomas soportados | Ingles (segun metadatos y model card) |
+| Tipos de cuantizacion | FP16, BF16, 4-bit (QLoRA/PEFT); GGUF Q4_K_M, Q5_K_M y Q8_0 en el repo derivado |
+| Idiomas soportados | Ingles (declarado en la model card y en los metadatos); el modelo base soporta mas idiomas, pero el ajuste fino no los declara |
 | Licencia | Llama 3.1 Community License Agreement |
-| Formato de pesos | Safetensors (adaptadores LoRA PEFT) y GGUF (Q4_K_M) |
-| Dimension oculta | 4096 |
-| Cabezas de atencion | 32 (Grouped-Query Attention) |
-| Vocabulario | 128.256 tokens |
-| Metodo de ajuste | QLoRA (SFT con TRL sobre Unsloth) |
-| Modelo base | meta-llama/Llama-3.1-8B-Instruct |
-| Libreria | peft |
-| Tamano del repositorio | 11,3 GB |
+| Formato de pesos | Safetensors (adaptador PEFT/LoRA); GGUF en el repositorio `scalar-phos-pro-gguf`; pesos fusionados en `scalar-phos-pro-merged` |
+
+Otros datos tecnicos: 32 capas, 32 cabezas de atencion con GQA, dimension oculta 4096, vocabulario de 128.256 tokens, embeddings posicionales rotatorios (RoPE). Tamano del repositorio del adaptador: 16,2 GB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer denso decoder-only con 32 capas, atencion multi-cabeza con Grouped-Query Attention (32 cabezas de consulta), embeddings posicionales rotatorios (RoPE) y una dimension oculta de 4096. El modelo hereda el vocabulario de 128.256 tokens y la ventana de contexto de 128.000 tokens del modelo base, sin modificaciones arquitectonicas indicadas en la model card.
+La arquitectura es la de Llama 3.1 8B Instruct sin modificaciones estructurales: un transformer denso decoder-only con RoPE y Grouped-Query Attention. El ajuste se realizo con QLoRA (Quantized Low-Rank Adaptation), es decir, el modelo base se cuantiza a 4 bits y se entrenan adaptadores de bajo rango, lo que reduce los requisitos de memoria del entrenamiento. Las herramientas citadas en los metadatos son `peft`, `trl` y `unsloth`, lo que sugiere un pipeline de SFT con TRL sobre Unsloth.
 
-El ajuste se realizo mediante QLoRA, es decir, cuantizacion de 4 bits del modelo base con adaptadores de bajo rango entrenados en precision superior. Los tags del repositorio indican el uso de TRL para SFT y Unsloth para la optimizacion del entrenamiento. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni hiperparametros del ajuste (rango LoRA, alpha, learning rate, epochs). Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o atencion lineal; el valor anadido declarado es exclusivamente el ajuste de instrucciones.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF/DPO adicionales ni los hiperparametros del QLoRA (rango, alpha, capas objetivo). Tampoco se documenta ninguna innovacion tecnica propia (decodificacion especulativa, atencion lineal, etc.); el modelo se limita a heredar las capacidades del base y el efecto del ajuste fino.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instruction following en ingles, heredado del modelo base y refinado con SFT.
-- Razonamiento general y respuesta a preguntas de cultura general, humanidades y ciencias sociales (evaluado en MMLU).
-- Razonamiento matematico y STEM basico, con rendimiento declarado inferior al del modelo base en la categoria STEM de MMLU (55,96 % frente a 58,1 %).
-- Soporte de tool calling y function calling heredado de Llama 3.1 Instruct, aunque no se documenta entrenamiento especifico adicional en este aspecto.
-- Capacidad de conversacion multi-turno dentro de la ventana de 128.000 tokens.
-- Despliegue dual: adaptadores LoRA para reentrenamiento o fusion, y GGUF para inferencia local.
-- No se declaran capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
+- Generacion de texto conversacional e instruction-following, heredado de Llama 3.1 8B Instruct y reforzado con SFT.
+- Razonamiento general y respuesta a preguntas; el autor reporta MMLU zero-shot de 66,55 %.
+- Procesamiento de contexto largo: hasta 128.000 tokens, util para documentos extensos y conversaciones multi-turno.
+- Capacidad multilingue limitada por lo declarado: la model card solo lista ingles, aunque el base soporta varios idiomas.
+- Tool calling / function calling: no documentado explicitamente en la informacion disponible; el base Llama 3.1 lo soporta, pero no se confirma que el ajuste lo preserve.
+- Modo de razonamiento explicito (thinking): no disponible.
+- Vision o audio: no disponible; el modelo es solo texto.
+- Despliegue compatible con text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`).
 
 ## Casos de uso
 
-- Asistente conversacional en ingles para soporte interno: el modelo puede mantener dialogos multi-turno con contexto largo gracias a los 128.000 tokens de ventana, adecuado para resumir hilos de correo o documentacion extensa antes de responder.
-- Prototipado rapido de aplicaciones de texto en local: el GGUF Q4_K_M permite ejecutar el modelo en un portatil con GPU de consumo mediante Ollama o LM Studio, sin depender de APIs externas.
-- Base para ajuste fino adicional: al distribuirse como adaptadores LoRA PEFT, un equipo puede cargar el adaptador sobre Llama 3.1 8B, fusionarlo y continuar el entrenamiento con su propio dataset sectorial usando TRL o Unsloth.
-- Generacion de documentacion tecnica en ingles: el modelo puede redactar borradores y resumenes de especificaciones a partir de contextos largos, aunque requiere revision humana por el riesgo de alucinacion.
-- Clasificacion y extraccion de informacion en pipelines por lotes: con vLLM o TGI se puede servir el modelo fusionado en BF16 para tareas de etiquetado y extraccion estructurada en ingles.
-- Evaluacion comparativa de ajustes QLoRA: util como referencia para investigadores que quieran medir el efecto de un SFT sobre Llama 3.1 8B Instruct con el mismo protocolo MMLU zero-shot.
-- Chatbot de dominio limitado en ingles: para preguntas frecuentes y guiones cerrados donde el contexto de 128k permite inyectar manuales completos como system prompt.
+- Asistente conversacional especializado: al estar ajustado con SFT sobre instrucciones, puede usarse como chatbot de dominio con prompts de sistema que fijen el rol y el estilo de respuesta, aprovechando la ventana de 128k para historiales largos.
+- Procesamiento de documentos extensos: resumen, extraccion de entidades y respuesta sobre contratos o informes de decenas de miles de tokens sin trocear, gracias al contexto de 128k heredado del base.
+- Generacion de codigo asistida: el modelo base rinde razonablemente en tareas de codigo; este ajuste puede integrarse en asistentes de IDE o pipelines de revision, aunque no hay benchmarks de codigo publicados para esta variante.
+- Clasificacion y etiquetado de texto a escala: con prompts few-shot y despliegue en vLLM o TGI, puede procesar lotes de documentos para categorizacion, moderacion o enrutamiento.
+- Prototipado local en estaciones de trabajo: las cuantizaciones GGUF (Q4_K_M, Q5_K_M, Q8_0) y el soporte de Ollama/LM Studio permiten probar el modelo en un portatil con GPU consumer antes de decidir un despliegue mayor.
+- Evaluacion comparativa interna: como adaptador PEFT ligero (16,2 GB de repo, pero solo el adaptador se entrena), sirve para experimentar con fine-tuning sobre Llama 3.1 8B y comparar contra el base en tareas propias.
+- Base para fine-tuning posterior: al publicarse como adaptador LoRA, se puede continuar el entrenamiento o fusionar con el base segun convenga.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la model card corresponden a MMLU zero-shot con EleutherAI lm-evaluation-harness. No se han publicado resultados de HumanEval, GSM8K, BBH ni otros benchmarks en la informacion disponible.
+El unico benchmark publicado en la informacion disponible es MMLU zero-shot con `lm-evaluation-harness` de EleutherAI. La tabla del autor compara con Llama 3.1 8B Instruct, Qwen2.5 7B Instruct, Gemma 2 9B Instruct, GPT-4o-mini y Claude 3 Haiku:
 
-| Benchmark / Categoria | Scalar Phos Pro | Llama-3.1-8B-Instruct | Qwen2.5-7B-Instruct | Gemma-2-9B-Instruct |
-|---|---|---|---|---|
-| Parametros | 8,0B (QLoRA) | 8,0B | 7,6B | 9,2B |
-| MMLU global | 66,55 % | 69,4 % | 74,2 % | 71,3 % |
-| Ciencias sociales | 78,06 % | 80,2 % | 83,1 % | 79,5 % |
-| Humanidades | 69,23 % | 71,5 % | 76,4 % | 73,0 % |
-| Otros (negocio/medicina) | 68,72 % | 70,8 % | 75,9 % | 72,4 % |
-| STEM | 55,96 % | 58,1 % | 63,5 % | 60,2 % |
+| Benchmark / categoria | Scalar Phos Pro | Llama-3.1-8B-Instruct | Qwen2.5-7B-Instruct | Gemma-2-9B-Instruct | GPT-4o-mini | Claude 3 Haiku |
+|---|---|---|---|---|---|---|
+| Parametros / clase | 8,0B (QLoRA) | 8,0B | 7,6B | 9,2B | ~8B equivalente | ~8B equivalente |
+| MMLU global | 66,55 % | 69,4 % | 74,2 % | 71,3 % | 70,2 % | 75,2 % |
+| Ciencias sociales | 78,06 % | 80,2 % | 83,1 % | 79,5 % | 81,0 % | 82,4 % |
+| Humanidades | 69,23 % | 71,5 % | 76,4 % | 73,0 % | 72,8 % | 76,9 % |
+| Otros (negocio/medicina) | 68,72 % | 70,8 % | 75,9 % | 72,4 % | 73,1 % | 77,0 % |
+| STEM | 55,96 % | 58,1 % | 63,5 % | 60,2 % | 58,4 % | 64,1 % |
 
-El ajuste QLoRA no mejora al modelo base en ninguna categoria de MMLU segun los propios datos del autor; la caida oscila entre 1,4 y 2,5 puntos porcentuales segun la categoria.
+No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, MMLU-Pro, etc.) en la informacion disponible. Cabe senalar que el modelo queda por debajo del base en todas las categorias reportadas, lo que sugiere que el ajuste fino no mejora el rendimiento general medido por MMLU.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16/FP16: aproximadamente 16 GB para los pesos (8B x 2 bytes) mas overhead de activaciones y cache KV; en la practica, 18-24 GB para contexto moderado.
-- VRAM estimada en GGUF Q4_K_M: en torno a 5-6 GB de pesos, con 8-10 GB recomendados para contexto largo.
-- GPU recomendadas para BF16: NVIDIA A100 40 GB, H100, L40S o RTX 4090 (24 GB) para contexto corto y batches pequenos.
-- GPU de consumo: el GGUF Q4_K_M cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores; en GPUs de 8 GB puede requerir offload parcial a CPU.
-- Despliegue: llama.cpp, Ollama y LM Studio para el GGUF; transformers + peft para los adaptadores; vLLM y TGI para servir el modelo fusionado en BF16.
-- Latencia y throughput: no se han publicado mediciones en la informacion disponible.
+- VRAM para inferencia en BF16/FP16: aproximadamente 16 GB solo para pesos, mas overhead de KV cache; en la practica, 20-24 GB para contextos moderados.
+- VRAM en 4-bit (QLoRA/GGUF Q4_K_M): alrededor de 5-6 GB de pesos, con 8-10 GB recomendables para contexto largo.
+- GPU recomendadas: A100 40/80 GB o H100 para despliegue en BF16 con contexto completo de 128k; RTX 4090 (24 GB) para BF16 con contexto moderado; RTX 3090/4080 (16-24 GB) o GPUs de 12 GB para cuantizaciones GGUF.
+- Cabe en GPU consumer: si, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y superiores usando GGUF Q4_K_M o Q5_K_M.
+- Opciones de despliegue: `transformers` + `peft` (adaptador), vLLM y TGI (tag `text-generation-inference`, `endpoints_compatible`), llama.cpp/Ollama/LM Studio mediante los GGUF del repo derivado.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scalar Phos Pro | 8,0B | 128k | 66,55 % | Llama 3.1 Community | PEFT + GGUF en HF |
-| Llama-3.1-8B-Instruct | 8,0B | 128k | 69,4 % | Llama 3.1 Community | Pesos completos en HF |
-| Qwen2.5-7B-Instruct | 7,6B | 128k (32k nativo, extendido) | 74,2 % | Apache 2.0 (variante 7B) | Pesos completos en HF |
-| Gemma-2-9B-Instruct | 9,2B | 8k | 71,3 % | Gemma Terms of Use | Pesos completos en HF |
+| Scalar Phos Pro | 8,03B (adaptador QLoRA) | 128k | 66,55 % | Llama 3.1 Community | Hugging Face (adaptador, merged y GGUF) |
+| Llama 3.1 8B Instruct | 8,0B | 128k | 69,4 % | Llama 3.1 Community | Hugging Face (Meta) |
+| Qwen2.5 7B Instruct | 7,6B | 128k (32k nativo, ampliable) | 74,2 % | Apache 2.0 (segun version) | Hugging Face (Alibaba) |
+| Gemma 2 9B Instruct | 9,2B | 8k | 71,3 % | Gemma Terms of Use | Hugging Face (Google) |
 
-Scalar Phos Pro no supera a ninguno de los tres modelos comparables en MMLU y ofrece menos contexto nativo que Qwen2.5 y Llama 3.1 en el caso de Gemma-2. Su ventaja relativa es la distribucion en formato LoRA y GGUF ya preparada, y su principal desventaja es la ausencia de validacion externa y el bajo rendimiento declarado frente al modelo base.
+Scalar Phos Pro no supera a ninguno de sus comparables en MMLU segun los datos del propio autor; su interes esta en el formato de publicacion (adaptador ligero, versiones fusionadas y GGUF) y en servir de base para experimentacion, no en el rendimiento bruto.
 
 ## Limitaciones y advertencias
 
-- El MMLU publicado es inferior al del modelo base en todas las categorias; el ajuste QLoRA no aporta mejoras medibles en los datos disponibles.
-- Solo se declara soporte de ingles; no hay evidencia de capacidades multilingues mas alla de las heredadas del modelo base.
-- Riesgo de alucinacion inherente a un modelo de 8B ajustado con SFT sin etapa de RLHF documentada.
-- No se documenta el dataset de entrenamiento, por lo que no se pueden evaluar sesgos introducidos por el ajuste ni la calidad de la mezcla SFT.
-- Licencia Llama 3.1 Community: uso comercial permitido con restricciones (politica de uso aceptable, obligacion de atribucion y de nombrar el modelo "Llama" en productos derivados, limite de 700 millones de usuarios mensuales para el licenciatario).
-- El repositorio tiene 0 descargas y 1 like, sin validacion independiente ni reportes de la comunidad.
-- El contexto de 128k es el nativo del modelo base; no se ha verificado el rendimiento real en contextos muy largos tras el ajuste.
-- El despliegue via adaptadores LoRA requiere descargar el modelo base por separado (licencia propia de Meta) y fusionar o cargar con peft.
+- Rendimiento inferior al modelo base en MMLU: el ajuste fino parece degradar ligeramente el rendimiento general medido; conviene validar en la tarea concreta antes de adoptarlo.
+- Solo declara ingles: aunque el base es multilingue, el ajuste no documenta datos en otros idiomas, por lo que el rendimiento en castellano es incierto.
+- Riesgo de alucinacion: inherente a los modelos de 8B; no hay evaluaciones de factualidad publicadas.
+- Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad; hereda los sesgos de Llama 3.1 y los del dataset de SFT, que no se describe.
+- Tool calling no confirmado: no se documenta si el ajuste preserva la capacidad de function calling del base.
+- Licencia Llama 3.1 Community: permite uso comercial con condiciones (atribucion, limite de 700 millones de usuarios mensuales, politica de uso aceptable); revisar el texto completo antes de produccion.
+- Documentacion escasa: sin datos de dataset, hiperparametros ni evaluaciones adicionales; la trazabilidad del ajuste es limitada.
+- Al ser un adaptador PEFT, el despliegue requiere cargar primero el base (8B) y aplicar el adaptador, lo que anade complejidad frente a usar pesos fusionados o GGUF.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/scalar-ai/scalar-phos-pro
+- Repositorio GGUF: https://huggingface.co/scalar-ai/scalar-phos-pro-gguf
+- Repositorio de pesos fusionados: https://huggingface.co/scalar-ai/scalar-phos-pro-merged
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
+- Licencia Llama 3.1: https://www.llama.com/llama3_1/license/
+- Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783
 - EleutherAI lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
-- PEFT: https://github.com/huggingface/peft
-- TRL: https://github.com/huggingface/trl
+- PEFT (Hugging Face): https://github.com/huggingface/peft
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Unsloth: https://github.com/unslothai/unsloth
-- llama.cpp: https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com/
-- vLLM: https://github.com/vllm-project/vllm
-- TGI: https://github.com/huggingface/text-generation-inference

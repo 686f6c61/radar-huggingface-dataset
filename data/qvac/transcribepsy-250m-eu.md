@@ -2,104 +2,111 @@
 
 ## Resumen
 
-TranscribePsy-250M-EU es un modelo de reconocimiento automático del habla (ASR) multilingüe de 253,95 millones de parámetros, desarrollado por Tether AI Research (QVAC Psy) y publicado en Hugging Face bajo el identificador `qvac/TranscribePsy-250M-EU`. Se obtiene por destilación y poda estructurada del modelo profesor NVIDIA Parakeet-TDT-0.6B-v3 (627M), y está diseñado específicamente para inferencia en dispositivos de borde: portátiles y teléfonos móviles. Cubre 25 lenguas europeas, entre ellas el castellano, y se distribuye con licencia Apache 2.0.
+TranscribePsy-250M-EU es un modelo compacto de reconocimiento automatico del habla (ASR) multilingue de 254 millones de parametros, desarrollado por qvac (Tether) y destilado a partir de nvidia/parakeet-tdt-0.6b-v3. Esta disenado especificamente para su despliegue en dispositivos de borde (portatiles y telefonos moviles), cubriendo 25 lenguas europeas entre las que se incluyen el espanol, el aleman, el frances, el italiano, el portugues y el neerlandes, ademas de lenguas eslavas, balticas y el maltes.
 
-El modelo emplea una arquitectura FastConformer con codificador de 24 capas y dimensión 640, junto con un decodificador de tipo transducer (TDT). Se entrenó sobre 564.102 horas de audio (117 millones de enunciados). Su relevancia actual radica en que ofrece una precisión que, según la model card, supera a modelos tres o cuatro veces mayores en benchmarks multilingües, manteniendo un coste computacional apto para CPU de teléfono y para el Neural Engine de Apple.
+El modelo emplea una arquitectura FastConformer con decodificador de tipo transducer (TDT) y un diseno de adaptadores enrutados por idioma denominado CAFE, descrito en el paper arXiv:2610.19134. Con solo 254M de parametros, el autor reporta que supera en precision a modelos de tres a cuatro veces su tamano en las suites de evaluacion Multilingual LibriSpeech y Common Voice, y que lidera la categoria de ~250M en las tres suites probadas (Open ASR Leaderboard, MLS y Common Voice).
 
-La familia TranscribePsy-250M incluye cuatro entregables: este checkpoint PyTorch (25 idiomas), una variante `EU-sub` restringida a los 8 idiomas de Multilingual LibriSpeech, y builds GGUF (Q8_0) y Core ML de esa variante para despliegue en CPU móvil y Apple Neural Engine respectivamente.
+Su relevancia actual radica en la combinacion de tres factores: pesos abiertos bajo licencia Apache 2.0, un rendimiento en error por palabra que compite con modelos mucho mayores, y un ecosistema de despliegue ya publicado (GGUF de 8 bits para CPUs de telefono y Core ML para el Apple Neural Engine), lo que lo convierte en una opcion realista para transcripcion on-device en produccion sin depender de la nube.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (codificador, 24 capas, dim. 640) + decodificador transducer TDT |
-| Parámetros totales | 253.954.838 (254,45M, incluye el diseño CAFE) |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | FastConformer con decodificador transducer TDT y adaptadores enrutados por idioma (CAFE) |
+| Parametros totales | 253.954.838 (dato real de safetensors) |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | float32 en el checkpoint PyTorch; build Q8_0 en la variante GGUF; build Core ML en la variante correspondiente |
+| Tipos de cuantizacion | Q8_0 (build GGUF de la variante EU-sub); Core ML (variante EU-sub); pesos PyTorch originales |
 | Idiomas soportados | 25: bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, it, lv, lt, mt, pl, pt, ro, ru, sk, sl, es, sv, uk |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoint NeMo/PyTorch); GGUF y Core ML en las variantes derivadas |
+| Formato de pesos | safetensors (checkpoint PyTorch/NeMo); variantes GGUF y Core ML en repos separados |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema ASR end-to-end con codificador FastConformer de 24 capas y dimensión oculta de 640, acoplado a un decodificador transducer TDT (Token-and-Duration Transducer). Se inicializa mediante poda estructurada del profesor Parakeet-TDT-0.6B-v3, de 627M de parámetros, seguida de un proceso de destilación. La model card menciona un diseño propio denominado CAFE, que según el autor mejora el compromiso entre el inglés y las otras 24 lenguas manteniendo estable el entrenamiento; los 254,45M de parámetros corresponden a 253,95M del modelo base más 0,50M atribuidos a ese componente.
+El modelo sigue la arquitectura FastConformer, una variante eficiente del Conformer con atencion submuestreada, acoplada a un decodificador transducer TDT (Token-and-Duration Transducer). Sobre esta base, el autor incorpora CAFE, un diseno de adaptadores enrutados por idioma que permite cubrir 25 lenguas europeas manteniendo un tamano compacto. El modelo es un finetune destilado de nvidia/parakeet-tdt-0.6b-v3, que actua como profesor.
 
-El entrenamiento utilizó 564.102 horas de audio distribuidas en 117 millones de enunciados. No se detalla en la información disponible la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO (no procede en un modelo ASR). Tampoco se especifican innovaciones adicionales como decodificación especulativa o atención lineal.
+No se dispone en la informacion proporcionada de datos sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (procedimientos no habituales en ASR). El paper asociado (arXiv:2610.19134) describe el diseno CAFE y es la referencia tecnica para los detalles de entrenamiento. La familia incluye una variante EU-sub entrenada sobre los ocho idiomas de Multilingual LibriSpeech, con menor error en esos idiomas, y builds GGUF (Q8_0) y Core ML de dicha variante para despliegue en CPU de telefono y en el Apple Neural Engine respectivamente.
 
 ## Capacidades
 
-- Transcripción de voz a texto multilingüe en 25 lenguas europeas, incluido el castellano.
-- Reconocimiento en modalidad streaming u offline según el motor de inferencia empleado (no se detalla en la información disponible).
-- Ejecución en dispositivos de borde: CPU de teléfono (build GGUF con motor `qvac-fabric-speech.cpp`) y Apple Neural Engine (build Core ML).
-- Rendimiento en tiempo real: factor de tiempo real de 0,052 en promedio sobre seis teléfonos con el build GGUF; 10 minutos de audio transcritos en 1,65 s en un iPhone 17 Pro Max con el build Core ML.
-- Arranque en frío de 252 ms y pico de memoria de 534 MiB a ventanas de 10 s (build GGUF).
-- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio de entrada más allá del propio ASR, ni modo de razonamiento explícito.
+- Reconocimiento automatico del habla multilingue en 25 lenguas europeas con un unico modelo.
+- Transcripcion de audio de formato corto y largo (la variante Core ML procesa 10 minutos de audio en 1,65 segundos en un iPhone 17 Pro Max).
+- Enrutamiento implicito por idioma mediante adaptadores CAFE, sin necesidad de especificar el idioma en inferencia.
+- Despliegue on-device: builds para CPU de telefono (GGUF Q8_0 via qvac-fabric-speech.cpp) y para Apple Neural Engine (Core ML).
+- Inferencia de baja latencia: factor de tiempo real de 0,052 y arranque en frio de 252 ms en el build GGUF.
+- Consumo de memoria reducido: 534 MiB de pico a 10 segundos de audio en el build GGUF.
+- No se documentan capacidades de traduccion, diarizacion, deteccion de emociones ni tool calling; el modelo es exclusivamente ASR.
 
 ## Casos de uso
 
-- Subtitulado y transcripción en tiempo real en aplicaciones móviles: el modelo cabe en CPU de teléfono con 534 MiB de pico de memoria y un factor de tiempo real de 0,052, lo que permite generar subtítulos con holgura sobre el ritmo del habla.
-- Asistentes de voz offline en dispositivos sin conectividad: al ejecutarse localmente en GGUF o Core ML, permite dictado y comandos de voz sin enviar audio a la nube, con implicaciones directas de privacidad.
-- Transcripción de reuniones y notas de voz en portátil: con 1,02 GB en float32 y variantes cuantizadas, se puede integrar en aplicaciones de escritorio que procesen grabaciones de decenas de minutos en segundos.
-- Indexación y búsqueda de archivos de audio corporativos: la cobertura de 25 lenguas europeas permite transcribir archivos multilingües con un único modelo, simplificando pipelines de archivado y búsqueda semántica.
-- Accesibilidad para personas con discapacidad auditiva: subtitulado en directo de conversaciones presenciales en el propio dispositivo, sin depender de servicios externos.
-- Procesamiento por lotes en servidores modestos: al ser un modelo de 254M, permite transcripciones de alto volumen en GPUs de gama media o incluso CPU, reduciendo el coste por hora de audio frente a modelos de mayor tamaño.
-- Atención al cliente y centros de contacto: transcripción de llamadas en varias lenguas europeas para análisis de calidad y generación de resúmenes, con la ventaja de que el modelo puede desplegarse on-premise.
+- Transcripcion de reuniones y notas de voz en el dispositivo: el modelo procesa audio localmente con 534 MiB de pico de memoria, lo que permite transcribir conversaciones en portatiles y telefonos sin enviar datos a la nube, relevante por privacidad y por coste de infraestructura.
+- Subtitulado automatico de video en produccion: con un factor de tiempo real de 0,052, un minuto de audio se transcribe en aproximadamente tres segundos en CPU de telefono, lo que hace viable generar subtitulos en lote para catalogos multilingues europeos.
+- Asistentes de voz embebidos en aplicaciones moviles: el build Core ML sobre el Apple Neural Engine procesa 10 minutos de audio en 1,65 segundos con menos de la mitad de disco y 1,7x menos memoria que otro modelo Core ML de ASR, adecuado para dictado y comandos de voz.
+- Atencion al cliente y centros de contacto: la cobertura de 25 lenguas europeas permite transcribir llamadas y chats de voz en mercados como Espana, Alemania, Francia, Italia, Polonia o los paises nordicos con un unico modelo, simplificando el pipeline de analitica de voz.
+- Cumplimiento y archivado de audio regulado: al ejecutarse on-device con licencia Apache 2.0, permite transcribir grabaciones sensibles (sanitario, legal, administracion publica) sin salida de datos a terceros.
+- Investigacion en linguistica computacional: la disponibilidad de pesos, scripts de evaluacion y el paper CAFE facilita reproducir experimentos de ASR multilingue y comparar estrategias de adaptadores por idioma.
+- Accesibilidad: transcripcion en tiempo real de clases, conferencias y contenido audiovisual para personas con discapacidad auditiva, con latencia compatible con subtitulado en directo.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (WER, menor es mejor):
+Resultados de error por palabra (WER, menor es mejor) reportados por el autor:
 
-| Suite de benchmark | Cobertura | TranscribePsy-250M-EU | Whisper-small (242M) | omniASR-CTC-300M-v2 (326M) | OWSM v4 small (370M) |
-|---|---|---|---|---|---|
-| Open ASR Leaderboard | Media de suites inglesa corta y multilingüe | 8,02 | 12,34 | 15,31 | 9,72 |
-| Multilingual LibriSpeech | Media de 8 idiomas | 6,58 | 11,51 | 11,89 | 11,84 |
-| Common Voice v25 | Media de 24 idiomas | 21,56 | 38,17 | 32,23 | 37,74 |
+| Suite | TranscribePsy-250M-EU | Whisper-small (242M) | omniASR-CTC-300M-v2 (326M) | OWSM v4 small (370M) |
+|---|---|---|---|---|
+| Open ASR Leaderboard | 8,02 | 12,34 | 15,31 | 9,72 |
+| Multilingual LibriSpeech (media 8 idiomas) | 6,58 | 11,51 | 11,89 | 11,84 |
+| Common Voice | 21,56 | 38,17 | 32,23 | 37,74 |
 
-Comparación con modelos de mayor tamaño en Multilingual LibriSpeech (WER): TranscribePsy-250M-EU 6,58 frente a Qwen3-ASR-0.6B (782M) 12,60, omniASR-CTC-1B-v2 (976M) 7,71, Whisper-Medium (764M) 7,76 y OWSM-CTC-v4 (1,01B) 10,65. En Common Voice v25, TranscribePsy-250M-EU obtiene 21,56 y solo queda por detrás de omniASR-CTC-1B-v2 (20,07).
+Comparacion con modelos de mayor tamano en Multilingual LibriSpeech y Common Voice:
 
-Rendimiento en dispositivo (build GGUF de la variante EU-sub, media sobre seis teléfonos): factor de tiempo real 0,052, pico de memoria 534 MiB a 10 s y arranque en frío de 252 ms. La latencia es 2,6 veces menor que la del siguiente modelo más rápido (omniASR-CTC-300M-v2), 5,7 veces menor que Whisper-small y entre 7,5 y 15 veces menor que los tres modelos de mayor tamaño evaluados. Con el build Core ML en el Neural Engine de un iPhone 17 Pro Max: 10 minutos de audio en 1,65 s, con menos de la mitad de espacio en disco y 1,7 veces menos memoria que otro modelo ASR Core ML.
+| Modelo | Parametros | MLS | Common Voice |
+|---|---|---|---|
+| TranscribePsy-250M-EU | 254M | 6,58 | 21,56 |
+| Qwen3-ASR-0.6B | 782M | 12,60 | no disponible |
+| omniASR-CTC-1B-v2 | 976M | 7,71 | 20,07 |
+| Whisper-Medium | 764M | 7,76 | no disponible |
+| OWSM-CTC-v4 | 1,01B | 10,65 | no disponible |
+
+Metricas de despliegue on-device (build GGUF de EU-sub, media de seis telefonos): factor de tiempo real 0,052, pico de memoria 534 MiB a 10 s, arranque en frio 252 ms. La latencia es 2,6x menor que omniASR-CTC-300M-v2, 5,7x menor que Whisper-small y entre 7,5x y 15x menor que los tres modelos mayores comparados.
 
 ## Requisitos de hardware
 
-- Checkpoint PyTorch (float32): 1,02 GB en disco; VRAM estimada en torno a 1-2 GB para inferencia con lotes pequeños (estimación a partir del tamaño de pesos, no publicada por el autor).
-- Build GGUF Q8_0: pico de 534 MiB de memoria a ventanas de 10 s en teléfonos; apto para CPU sin GPU.
-- Build Core ML: ejecutable en Apple Neural Engine (procesadores Apple Silicon y A-series recientes).
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería ser suficiente para el checkpoint PyTorch.
-- Despliegue: NeMo (formato nativo del checkpoint), motor `qvac-fabric-speech.cpp` para GGUF y Core ML para Apple. No se documenta soporte de vLLM, llama.cpp estándar, Ollama ni TGI en la información disponible.
-- Latencia y throughput: ver sección de benchmarks (0,052 RTF en teléfonos; 1,65 s para 10 minutos de audio en iPhone 17 Pro Max).
+- VRAM estimada para inferencia: no disponible de forma explicita; con 254M de parametros en fp16 el peso ronda los 0,5 GB y en Q8_0 aproximadamente 0,25 GB, mas el pico de memoria de trabajo reportado de 534 MiB a 10 s de audio.
+- GPU recomendadas: no se documentan requisitos de GPU; el modelo esta orientado a CPU y aceleradores de borde.
+- Cabe en GPU de consumo: si, cualquier GPU consumer moderna puede alojar el modelo completo en memoria; no se publican cifras de throughput por GPU.
+- Despliegue: NeMo (checkpoint PyTorch), qvac-fabric-speech.cpp con GGUF Q8_0 para CPU de telefono, Core ML para Apple Neural Engine. No se mencionan vLLM, llama.cpp ni TGI (no aplicables a ASR).
+- Latencia y throughput: factor de tiempo real de 0,052 en CPU de telefono (build GGUF); 10 minutos de audio en 1,65 s en un iPhone 17 Pro Max (build Core ML).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Licencia | WER MLS | WER Common Voice |
+| Modelo | Parametros | Idiomas | Licencia | Formato | WER MLS |
 |---|---|---|---|---|---|
-| TranscribePsy-250M-EU | 254M | 25 | Apache 2.0 | 6,58 | 21,56 |
-| Whisper-small | 242M | multilingüe (no se detalla el número) | no disponible en la información | 11,51 | 38,17 |
-| omniASR-CTC-300M-v2 | 326M | no disponible | no disponible | 11,89 | 32,23 |
-| OWSM v4 small | 370M | no disponible | no disponible | 11,84 | 37,74 |
-| Whisper-Medium | 764M | multilingüe | no disponible | 7,76 | no disponible en la tabla |
-| omniASR-CTC-1B-v2 | 976M | no disponible | no disponible | 7,71 | 20,07 |
+| TranscribePsy-250M-EU | 254M | 25 europeas | Apache 2.0 | safetensors, GGUF, Core ML | 6,58 |
+| Whisper-small | 242M | multilingue amplio | MIT (según modelo original de OpenAI) | PyTorch, GGUF via terceros | 11,51 |
+| omniASR-CTC-300M-v2 | 326M | multilingue | no disponible en la informacion | no disponible | 11,89 |
+| OWSM v4 small | 370M | multilingue | no disponible en la informacion | no disponible | 11,84 |
 
-TranscribePsy-250M-EU es el de menor tamaño de la comparativa y obtiene el mejor WER en Multilingual LibriSpeech y en Open ASR Leaderboard; en Common Voice solo lo supera omniASR-CTC-1B-v2, con casi cuatro veces más parámetros.
+TranscribePsy-250M-EU es el unico de la comparativa con builds oficiales para CPU de telefono y Apple Neural Engine publicados por el propio autor, y el de menor WER en MLS entre los modelos de tamano similar.
 
 ## Limitaciones y advertencias
 
-- No se documentan en la información disponible análisis de sesgos por idioma, acento o género.
-- Riesgo de alucinación inherente a los sistemas ASR transducer: posibles sustituciones, omisiones o inserciones de palabras, especialmente en audio ruidoso o con acentos no representados en el entrenamiento.
-- La cobertura se limita a 25 lenguas europeas; no se soportan otras lenguas ni se detalla el comportamiento en code-switching.
-- La longitud de contexto de audio no está especificada; el rendimiento medido se refiere a ventanas de 10 s en el caso de los benchmarks en teléfono.
-- El checkpoint publicado es float32; para despliegue en borde es necesario usar las variantes GGUF o Core ML, que cubren solo 8 idiomas (las de Multilingual LibriSpeech), no los 25.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo profesor (NVIDIA Parakeet-TDT-0.6B-v3) y de los datasets de entrenamiento, no detalladas en la información disponible.
-- El autor atribuye el rendimiento a su propio motor (`qvac-fabric-speech.cpp`); la reproducibilidad con otros motores de inferencia no está documentada.
+- Cobertura limitada a 25 lenguas europeas; no soporta arabe, chino, japones, coreano ni lenguas africanas o indigenas.
+- El WER en Common Voice (21,56) es notablemente superior al de MLS (6,58), lo que sugiere menor robustez ante audio espontaneo, ruidoso o con acentos marcados.
+- No se publican datos sobre sesgos por acento, genero, edad o dialecto dentro de cada idioma.
+- Riesgo de alucinacion y de transcripciones erroneas en audio con ruido, solapamiento de hablantes o dominio muy especializado (terminologia medica, juridica, jerga).
+- El modelo es exclusivamente ASR: no realiza traduccion, diarizacion ni comprension semantica.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los datasets de entrenamiento subyacentes (no detalladas en la informacion disponible).
+- La variante EU-sub tiene menor error en sus ocho idiomas, pero cubre menos lenguas; elegir en funcion del caso de uso.
+- No se dispone de informacion sobre el comportamiento con audio de muy larga duracion mas alla del ejemplo de 10 minutos en Core ML.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qvac/TranscribePsy-250M-EU
-- Variante EU-sub (PyTorch, 8 idiomas): https://huggingface.co/qvac/TranscribePsy-250M-EU-sub
-- Variante EU-sub GGUF (Q8_0): https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-gguf
-- Variante EU-sub Core ML: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml
-- Modelo profesor: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Repositorio del motor de inferencia: https://github.com/tether-ai-research/qvac-transcribepsy
-- Página de productos QVAC: https://qvac.tether.io/products/models
-- Artículo de análisis: https://www.explainx.ai/blog/tether-transcribepsy-250m-on-device-speech-recognition-2026
-- Referencia arXiv indicada en los tags: arxiv:2610.19134 (no verificada en la información disponible)
+- Variante EU-sub: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub
+- Build GGUF: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-gguf
+- Build Core ML: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml
+- Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Paper CAFE: https://arxiv.org/abs/2610.19134
+- Motor de inferencia: https://github.com/tetherto/qvac-fabric-speech.cpp
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Catalogo QVAC: https://qvac.tether.io/products/models

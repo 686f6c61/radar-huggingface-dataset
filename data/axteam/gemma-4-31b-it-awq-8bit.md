@@ -2,105 +2,116 @@
 
 ## Resumen
 
-axteam/gemma-4-31B-it-AWQ-8bit es una cuantizacion de 8 bits del modelo multimodal google/gemma-4-31B-it (commit 842da37), publicada por el usuario axteam para servir el modelo de forma eficiente con vLLM. Se trata de una derivada, no de un modelo entrenado desde cero: el autor ha aplicado AWQ en su variante INT8 (esquema W8A16, pesos simetricos de 8 bits con group size 32 y activaciones en BF16), almacenada en el formato pack-quantized de compressed-tensors. El repositorio ocupa 35,1 GB y el checkpoint en disco se declara en unos 32,7 GB.
+`axteam/gemma-4-31B-it-AWQ-8bit` es una cuantizacion post-entrenamiento (PTQ) de 8 bits del modelo multimodal `google/gemma-4-31B-it`, producida por el equipo axteam para servir eficientemente con vLLM. Aplica la tecnica AWQ (activation-aware weight quantization) en esquema W8A16: pesos INT8 simetricos con tamano de grupo 32 y activaciones en BF16, almacenados en formato `compressed-tensors` `pack-quantized`. El objetivo es reducir el peso en disco y los requisitos de memoria de inferencia manteniendo practicamente intacta la calidad del modelo original.
 
-El modelo base es un Gemma 4 de la familia Google DeepMind, con pipeline image-text-to-text, es decir, soporta entrada de imagen y texto. Segun la model card, la arquitectura se describe como "Gemma 4 · Dense", aunque el propio documento menciona que el router de MoE se mantiene en BF16, lo que introduce una ambiguedad relevante sobre si el modelo subyacente es denso o de mezcla de expertos. Los parametros totales reales leidos de los safetensors son 10.223.251.812 (aproximadamente 10,2 mil millones), una cifra que no coincide con el "31B" del nombre del repositorio ni con el nombre del modelo base, por lo que debe tratarse con cautela.
+El modelo base es un transformer denso de la familia Gemma 4 de Google, con capacidad de procesamiento de imagen y texto (`image-text-to-text`) y modo conversacional con plantilla de chat corregida en julio de 2026. La cuantizacion conserva en BF16 el torre de vision, la proyeccion visual, los embeddings de tokens (atados con `lm_head`) y todas las normalizaciones, lo que supone aproximadamente el 6 % de los parametros sin cuantizar.
 
-Su relevancia practica es acotada pero concreta: es una variante de servicio lista para vLLM que preserva el tokenizer, el chat_template, el processor_config y el generation_config byte a byte respecto al original, y que segun las mediciones del autor mantiene una fidelidad muy alta frente al BF16 (perplejidad 1.1127 frente a 1.1120, un 0,1 % peor, y un 99,2 % de coincidencia top-1). No dispone de descargas ni likes en el momento de la consulta y no se han publicado resultados de benchmarks estandar.
+Es relevante ahora porque permite desplegar un modelo multimodal de gran tamano en infraestructura con menos VRAM que la version BF16, con una recuperacion media del 99,9 % respecto al original en los benchmarks medidos. El repositorio ocupa 35,1 GB y declara 10.223.251.812 parametros en los safetensors, un dato que debe contrastarse con la nomenclatura "31B" del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4; la model card indica "Dense", pero tambien menciona un router de MoE en BF16 (contradiccion no resuelta) |
-| Parametros totales | 10.223.251.812 segun safetensors (el nombre del repo y del modelo base indican 31B; discrepancia no explicada) |
-| Parametros activos | no disponible |
+| Arquitectura | Gemma 4, transformer denso (vision + texto) |
+| Parametros totales | 10.223.251.812 (segun safetensors del repo); el nombre del modelo base indica 31B |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ INT8 W8A16, pesos INT8 simetricos, group size 32, activaciones BF16, formato compressed-tensors pack-quantized |
-| Idiomas soportados | no disponible en metadatos; el conjunto de calibracion es mayoritariamente coreano y la evaluacion interna mezcla ingles y coreano |
-| Licencia | apache-2.0 en los metadatos de Hugging Face, pero la model card remite a la Gemma 4 license de Google |
-| Formato de pesos | safetensors (compressed-tensors pack-quantized) |
-
-Otros datos del repositorio: tamano del repo 35,1 GB, tamano en disco declarado ~32,7 GB, creado el 2026-10-10, actualizado el 2026-10-10, 0 descargas y 0 likes, libreria transformers, compatible con endpoints.
+| Tipos de cuantizacion | AWQ INT8 W8A16 (pesos INT8 simetricos, grupo 32, activaciones BF16); vision tower, proyeccion visual, embeddings y norms en BF16 |
+| Idiomas soportados | no disponible en la model card; calibracion con 256 muestras de predominio coreano |
+| Licencia | apache-2.0 (enlace a licencia Gemma 4 de Google) |
+| Formato de pesos | safetensors con compressed-tensors `pack-quantized` |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no entrena ningun modelo: aplica cuantizacion post-entrenamiento sobre google/gemma-4-31B-it. El esquema es AWQ INT8 en modo W8A16: los pesos se almacenan en enteros de 8 bits simetricos con un tamano de grupo de 32, mientras que las activaciones se mantienen en BF16. Se conservan sin cuantizar en BF16 el torre de vision, la proyeccion de vision, los embeddings de tokens (atados con lm_head), el router de MoE y todas las normas, que representan una fraccion pequena del total de parametros. El objetivo declarado es preservar la calidad en los componentes mas sensibles a la cuantizacion.
+El modelo base es un transformer denso de la familia Gemma 4 con capacidad multimodal (entrada de imagen y texto). Esta build no entrena el modelo: parte de los pesos BF16 publicados de `google/gemma-4-31B-it` (commit `842da37`) y aplica cuantizacion post-entrenamiento sin reentrenamiento. La tecnica AWQ identifica los canales de peso que multiplican las activaciones de mayor magnitud y los protege mediante escalado por canal antes del redondeo; el escalado se pliega en capas adyacentes (por ejemplo, LayerNorm hacia q/k/v). La calibracion usa 256 muestras de predominio coreano, de las cuales 32 son respuestas autogeneradas en modo thinking.
 
-La calibracion se realizo con 256 muestras, mayoritariamente en coreano, de las cuales 32 son respuestas autogeneradas en modo thinking. El tokenizer, el chat_template (incluida la correccion de Google de julio de 2026), el processor_config y el generation_config son identicos byte a byte al original; el config.json es el del modelo base mas un bloque quantization_config. El autor indica que la variante de atencion cuantizada empleada es "AWQ attention". No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF o DPO para el modelo base dentro de esta informacion, y tampoco innovaciones arquitectonicas propias mas alla del proceso de cuantizacion.
+La cuantizacion afecta a atencion y MLP (gate/up, up→down), mientras que el torre de vision, la proyeccion visual, los embeddings de tokens (atados con `lm_head`) y todas las normalizaciones permanecen en BF16. El tokenizador, `chat_template`, `processor_config` y `generation_config` son identicos byte a byte al original; `config.json` es el original mas un bloque `quantization_config`. No se empleo QAT (fine-tuning con cuantizacion simulada): es PTQ puro, con la fidelidad propia de AWQ frente a RTN.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con plantilla de chat identica a la del modelo original de Google.
-- Procesamiento de imagen y texto (pipeline image-text-to-text), lo que habilita tareas de vision-lenguaje.
-- Modo thinking: se activa anadiendo el token `<|think|>` al inicio del prompt de sistema para habilitar razonamiento paso a paso.
-- Muestreo recomendado por Google: temperature=1.0, top_p=0.95, top_k=64.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso mas alla del modo thinking: no disponible.
-- Capacidades multilingues: no disponibles en los metadatos; la evaluacion y la calibracion del autor son en ingles y coreano.
-- Capacidades de audio: no disponibles.
+- Generacion de texto conversacional multi-turno con plantilla de chat compatible con el modelo original.
+- Procesamiento de imagen y texto (`image-text-to-text`): descripcion de imagenes y respuestas condicionadas por imagen.
+- Razonamiento en modo thinking (la calibracion incluye respuestas de ese modo, lo que sugiere soporte del mismo).
+- Razonamiento matematico y resolucion de problemas (GSM8K medido en 91,66 con 5-shot estricto).
+- Capacidades multilingues: los benchmarks incluyen KMMLU y HAE-RAE (coreano), aunque la model card no declara una lista de idiomas.
+- Integracion con vLLM y formato `compressed-tensors`, lo que facilita su uso en pipelines de serving.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Servicio de chat multimodal en produccion con vLLM: el modelo se puede levantar con `vllm serve axteam/gemma-4-31B-it-AWQ-8bit` y atender conversaciones que combinen imagen y texto, aprovechando que el tokenizer y la plantilla de chat son identicos a los del modelo oficial de Google.
-- Razonamiento paso a paso sobre documentos e imagenes: activando `<|think|>` en el prompt de sistema, es adecuado para tareas que requieren descomposicion explicita, como interpretacion de graficos o diagramas acompanados de preguntas analiticas.
-- Despliegue con restricciones de VRAM frente al BF16: al reducir el peso de los pesos a INT8, permite servir el modelo en GPUs donde la version BF16 no cabria, con una perdida de fidelidad medida de solo un 0,1 % en perplejidad.
-- Evaluacion de pipelines de cuantizacion: sirve como punto de comparacion reproducible frente a otras variantes cuantizadas del mismo base (por ejemplo, alternativas AWQ o NVFP4) usando el mismo harness.
-- Integracion en plataformas de endpoints compatibles: el tag endpoints_compatible y el formato compressed-tensors lo orientan a infraestructuras de inferencia gestionada que soporten vLLM.
-- Prototipado de asistentes con contexto conversacional: la plantilla de chat byte-identica facilita migrar prompts ya validados sobre el modelo base sin reescribir el formato de mensajes.
-- Investigacion sobre cuantizacion AWQ en modelos multimodales: la decision de mantener en BF16 la torre de vision, la proyeccion, los embeddings, el router y las normas constituye un caso de estudio sobre que componentes conviene excluir de la cuantizacion.
+- Serving conversacional de alto rendimiento: desplegar el modelo con vLLM 0.32.0 en produccion para atender conversaciones multi-turno, aprovechando la compatibilidad nativa con `compressed-tensors` y la reduccion de memoria frente a BF16.
+- Descripcion y analisis de imagenes: usar el pipeline `image-text-to-text` para generar descripciones o responder preguntas sobre imagenes, manteniendo el torre de vision en BF16 para preservar calidad.
+- Asistencia matematica y razonamiento: el rendimiento medido en GSM8K (91,66) lo hace adecuado para tutoria o resolucion de problemas paso a paso en entornos educativos.
+- Procesamiento de documentacion con imagenes: extraer y describir contenido visual en flujos de digitalizacion, combinando entrada de imagen y generacion de texto.
+- Evaluacion comparativa de cuantizaciones: servir como referencia AWQ-8bit frente a FP8, NVFP4 y AWQ-4bit en experimentos de fidelidad y coste, dado que el autor publica metricas comparables.
+- Despliegue en infraestructura con VRAM limitada: reducir el peso en disco a 35,1 GB y la memoria de inferencia respecto a BF16, permitiendo servir el modelo en GPUs que no admitirian la version completa.
+- Aplicaciones multilingues con foco en coreano: los benchmarks KMMLU y HAE-RAE indican evaluacion en ese idioma, aunque la ficha no declara la lista completa de idiomas soportados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni similares) en la informacion disponible. El autor unicamente reporta metricas de fidelidad respecto al modelo BF16 original, medidas sobre un conjunto interno mixto ingles/coreano con el mismo harness aplicado a referencias publicas (cyankiwi AWQ y RedHatAI NVFP4):
+Resultados medidos con lm-evaluation-harness sobre vLLM, greedy, prompts estilo completion sin plantilla de chat. MMLU es la variante generativa (`mmlu_generative`), no comparable con puntuaciones por log-likelihood. Porcentajes entre parentesis: recuperacion respecto a BF16.
 
-| Metrica | Este modelo | Original BF16 |
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit (este repo) | NVFP4A16 | NVFP4 | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generativa) | 56,46 | 56,07 (99,3 %) | 56,41 (99,9 %) | 58,32 (103,3 %) | 58,51 (103,6 %) | 57,12 (101,2 %) |
+| GSM8K (5-shot, estricto) | 91,81 | 91,89 (100,1 %) | 91,66 (99,8 %) | 91,96 (100,2 %) | 91,74 (99,9 %) | 92,34 (100,6 %) |
+| ARC-Challenge (0-shot) | 57,59 | 58,36 (101,3 %) | 57,68 (100,1 %) | 57,76 (100,3 %) | 56,91 (98,8 %) | 57,17 (99,3 %) |
+| Winogrande (5-shot) | 66,22 | 66,14 (99,9 %) | 65,82 (99,4 %) | 65,59 (99,0 %) | 64,96 (98,1 %) | 66,77 (100,8 %) |
+| KMMLU (5-shot, directo) | 25,02 | 23,89 (95,5 %) | 25,21 (100,8 %) | 26,55 (106,1 %) | 26,78 (107,0 %) | 25,02 (100,0 %) |
+| HAE-RAE (0-shot) | 76,81 | 75,25 (98,0 %) | 76,81 (100,0 %) | 77,09 (100,4 %) | 77,09 (100,4 %) | 78,09 (101,7 %) |
+| **Media** | **62,32** | **61,93 (99,4 %)** | **62,27 (99,9 %)** | **62,88 (100,9 %)** | **62,66 (100,6 %)** | **62,75 (100,7 %)** |
+| **Media sin KMMLU** | **69,78** | **69,54 (99,7 %)** | **69,68 (99,9 %)** | **70,14 (100,5 %)** | **69,84 (100,1 %)** | **70,30 (100,7 %)** |
+
+Nota del autor sobre KMMLU: con estos prompts estilo completion el BF16 original puntua 25,02, nivel de azar para preguntas de 4 opciones (el `gemma-4-31B` base BF16 obtiene 67,35 con el mismo harness), por lo que esa fila no refleja capacidad en coreano ni perdida por cuantizacion.
+
+Evaluacion de fidelidad frente al BF16 original en un conjunto interno mixto ingles/coreano:
+
+| Metrica | Este modelo | BF16 original |
 |---|---|---|
 | Perplejidad (menor es mejor) | 1,1127 | 1,1120 (+0,1 %) |
-| Coincidencia top-1 del siguiente token | 99,2 % | 99,4 % |
-
-El propio autor advierte que estas cifras miden fidelidad frente al modelo base, no puntuaciones absolutas de tarea. No se proporcionan numeros de las referencias externas (cyankiwi AWQ, RedHatAI NVFP4) ejecutadas con el mismo harness.
+| Acuerdo top-1 siguiente token | 99,2 % | 99,4 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 33 GB solo para pesos (INT8), a lo que hay que sumar la cache KV y el overhead de activaciones en BF16; en la practica se recomienda contar con 40 GB o mas para contexto largo.
-- GPUs recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB o A6000 48 GB para servir en una sola tarjeta con margen.
-- Consumer GPU: no cabe en una RTX 4090 o RTX 5090 de 24 GB. Seria necesario repartir el modelo entre dos GPU consumer (por ejemplo, 2 x RTX 4090 = 48 GB) mediante tensor parallelism de vLLM.
-- Opciones de despliegue: vLLM es el camino soportado explicitamente por el autor y por el formato compressed-tensors pack-quantized. El soporte en llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible.
-- Tamano en disco: aproximadamente 32,7 GB segun la model card, con un repositorio de 35,1 GB.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repo ocupa 35,1 GB en disco y las activaciones son BF16, por lo que se necesita margen adicional sobre el peso de los pesos.
+- Runtime: vLLM; la arquitectura esta en vLLM ≥ 0.19.0 y se probo con vLLM 0.32.0 (texto en los benchmarks; imagen en una comprobacion de descripcion de imagen el 2026-11-02).
+- Dependencias de vLLM 0.32: Python 3.11–3.14, torch 2.13 (build CUDA 13.0).
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no disponible; el tamano de pesos (35,1 GB) supera la VRAM de la mayoria de GPU de consumo, pero la ficha no confirma modelos concretos.
+- Opciones de despliegue: vLLM con soporte `compressed-tensors`; llama.cpp, Ollama o TGI no se mencionan en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| axteam/gemma-4-31B-it-AWQ-8bit | 10,2 B segun safetensors (nombre: 31B) | no disponible | AWQ INT8 W8A16 | apache-2.0 en metadatos / Gemma 4 license | Hugging Face, 0 descargas |
-| google/gemma-4-31B-it (BF16 original) | 31B segun nomenclatura | no disponible | ninguna | Gemma 4 license | Hugging Face |
-| cyankiwi AWQ (referencia publica) | no disponible | no disponible | AWQ | no disponible | citada por el autor, sin resultados publicados aqui |
-| RedHatAI NVFP4 (referencia publica) | no disponible | no disponible | NVFP4 | no disponible | citada por el autor, sin resultados publicados aqui |
+Comparacion con las otras cuantizaciones del mismo modelo base publicadas por el autor, segun los datos de la model card:
 
-En el material de busqueda se mencionan como contemporaneos de la familia Gemma 4 los tamanos 31B y 26B-A4B, ademas de inclusionAI Ling 3.0 Flash y Qwen 3.6 35B, pero no se aportan especificaciones ni resultados comparables que permitan una tabla rigurosa. Se indica de forma generica que AWQ suele superar en calidad a otras alternativas al mismo ancho de bits, sin cifras de respaldo.
+| Modelo | Metodo | Media (sin KMMLU) | Perplejidad | Licencia |
+|---|---|---|---|---|
+| **gemma-4-31B-it-AWQ-8bit (este)** | AWQ INT8 W8A16 | 69,68 (99,9 %) | 1,1127 | apache-2.0 |
+| gemma-4-31B-it FP8-dynamic | FP8 dinamico | 69,54 (99,7 %) | no disponible | no disponible |
+| gemma-4-31B-it NVFP4 | NVFP4 | 69,84 (100,1 %) | no disponible | no disponible |
+| gemma-4-31B-it AWQ-4bit | AWQ 4 bits | 70,30 (100,7 %) | no disponible | no disponible |
+
+No se dispone de datos para comparar con modelos de otros autores de la misma categoria y tamano en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parametros: el nombre del repositorio y del modelo base indican 31B, mientras que los safetensors declaran 10.223.251.812 parametros. No hay explicacion en la informacion disponible y conviene verificar el checkpoint antes de dimensionar infraestructura.
-- Ambiguedad arquitectonica: la model card describe la arquitectura como "Dense" pero a la vez indica que se preserva en BF16 el router de MoE, lo que es contradictorio.
-- Licencia ambigua: los metadatos de Hugging Face marcan apache-2.0, pero la model card remite a la Gemma 4 license de Google. Para uso comercial debe revisarse la licencia de Gemma 4, que impone condiciones propias a los derivados.
-- Riesgo de alucinacion: no se documenta ningun ajuste especifico ni evaluacion de veracidad; al ser una cuantizacion, hereda las limitaciones del modelo base.
-- Sesgos: no hay informacion sobre sesgos. El conjunto de calibracion es mayoritariamente coreano, lo que puede sesgar el comportamiento en otros idiomas tras la cuantizacion, aunque no se han publicado mediciones por idioma.
-- Idiomas: los metadatos no declaran idiomas soportados. La evaluacion del autor es en ingles y coreano, por lo que el rendimiento en castellano no esta verificado.
-- Contexto: no se especifica la longitud de contexto del modelo base ni si la cuantizacion la preserva; en la practica, la VRAM disponible limitara el contexto util.
-- Madurez: el repositorio tiene 0 descargas y 0 likes y fue creado y actualizado el mismo dia, por lo que no cuenta con validacion de la comunidad.
-- Despliegue: el formato compressed-tensors pack-quantized esta orientado a vLLM; no hay confirmacion de compatibilidad con otros motores de inferencia.
-- Evaluacion parcial: las unicas metricas publicadas son perplejidad y acuerdo top-1 frente al BF16, no puntuaciones absolutas de tarea, por lo que no permiten estimar la calidad real del modelo.
+- Es una cuantizacion PTQ: no hay reentrenamiento ni QAT, por lo que la fidelidad es la propia de AWQ y no la de un checkpoint QAT de Google.
+- La calibracion es de predominio coreano (256 muestras), lo que puede sesgar el comportamiento en otros idiomas; la model card no declara la lista de idiomas soportados.
+- La fila KMMLU de los benchmarks no es interpretable como capacidad en coreano: el propio BF16 original puntua a nivel de azar con esos prompts.
+- MMLU se midio con la variante generativa de lm-eval; no es comparable con puntuaciones obtenidas por log-likelihood.
+- Riesgo de alucinacion: no cuantificado en la informacion proporcionada; aplica el riesgo general de los modelos generativos.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Longitud de contexto: no disponible, lo que impide planificar cargas con ventanas largas.
+- Discrepancia entre el nombre "31B" y los 10.223.251.812 parametros de los safetensors: conviene verificar antes de dimensionar infraestructura.
+- Restricciones de licencia: la licencia declarada es apache-2.0 con enlace a la licencia Gemma 4 de Google; revisar los terminos de uso comercial de Gemma 4 antes de desplegar en produccion.
+- Requiere vLLM ≥ 0.19.0 y se probo con 0.32.0; versiones anteriores no soportan la arquitectura.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Free AI Models: Licences, Hardware and the Catch (2026): https://valuestreamai.com/free-models
-- Fine-Tuning LLMs: A Guide From Our Gemma 4 Case Study: https://themobilereality.com/blog/ai/fine-tuning-open-weight-llm-gemma/
-- The IOL-AI Challenge (arXiv): https://arxiv.org/html/2608.18011
-- Part 3: Choosing Models and Building RAG and Agent Workflows: https://vegardit.com/en/blog/running-llms-locally-models-rag-coding-agents/
-- Osaurus (@OsaurusAI) en X: https://x.com/OsaurusAI
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

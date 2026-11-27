@@ -2,118 +2,119 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-speculator.dflash2 es un modelo borrador (*draft model*) de decodificación especulativa en BF16, desarrollado conjuntamente por el equipo Speculators de RedHatAI e Inferact. No es un modelo generativo autónomo: su función es acelerar la inferencia del modelo verificador `meta-models/Muse-Spark-Open-816B-A42B-NVFP4`, un modelo de mezcla de expertos (MoE) de 816.000 millones de parámetros totales y 42.000 millones activos, proponiendo varios tokens candidatos por paso que el verificador acepta o rechaza en bloque.
+Muse-Spark-Open-816B-A42B-speculator.dflash2 es un modelo borrador (draft model) de decodificación especulativa en BF16, desarrollado conjuntamente por RedHatAI (equipo Speculators) e Inferact, para acelerar la inferencia del modelo verificador meta-models/Muse-Spark-Open-816B-A42B-NVFP4. No es un modelo generativo autónomo: su función es proponer tokens candidatos que el modelo grande verifica en bloque, reduciendo el coste por token generado sin alterar la distribución de salida del verificador.
 
-El modelo emplea cinco capas transformer y consume los estados ocultos del verificador en las capas 42, 46, 50, 54 y 58, proponiendo hasta siete tokens borrador por paso de verificación. Con 3.377 millones de parámetros (aproximadamente 3,4 B) y un repositorio de 6,8 GB en safetensors, se trata de una pieza de infraestructura más que de un modelo de propósito general: su relevancia radica en reducir la latencia de un modelo de 816 B en producción sin alterar la distribución de salida del verificador.
+Técnicamente se trata de una red de cinco capas transformer que consume los estados ocultos del verificador en las capas 42, 46, 50, 54 y 58, y propone hasta siete tokens borrador por paso de verificación. Con 3.377.529.472 parámetros reales (según safetensors) y un repositorio de 6,8 GB, está pensado para desplegarse junto al verificador en vLLM mediante el método de especulación `dflash` con rechazo por bloques y verificación adaptativa.
 
-La licencia es la Muse Model License (identificador `other`), heredada del modelo base, y el despliegue está pensado para vLLM con soporte de `custom_code`. La información pública disponible no detalla idiomas soportados ni datos de entrenamiento del borrador más allá de su configuración de capas y del proceso de destilación implícito en la decodificación especulativa.
+Su relevancia es práctica: en la suite de aceptación publicada alcanza una longitud de aceptación agrupada de 4,215 tokens por paso de verificación sobre 3.543 prompts, lo que se traduce en un ahorro sustancial de cómputo del modelo de 816B en cargas de razonamiento, código y contexto largo (hasta 1.048.576 tokens). La licencia Muse Model License condiciona el uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer borrador para decodificación especulativa (DFlash2), 5 capas, con estados ocultos del verificador en capas 42, 46, 50, 54 y 58 |
-| Parámetros totales | 3.377.529.472 (aproximadamente 3,4 B) |
-| Parámetros activos | no aplica (no es MoE; el verificador asociado es MoE con 42 B activos) |
-| Longitud de contexto | 1.048.576 tokens (configuración de evaluación del verificador) |
-| Tipos de cuantización | BF16 para el borrador; el verificador opera en NVFP4 con caché KV FP8 E4M3 |
+| Arquitectura | Transformer draft de 5 capas para decodificación especulativa (DFlash2), con entrada de estados ocultos del verificador en capas 42, 46, 50, 54 y 58 |
+| Parametros totales | 3.377.529.472 |
+| Parametros activos | no disponible (no es MoE el borrador; el verificador asociado es 816B-A42B) |
+| Longitud de contexto | 1.048.576 tokens en la configuración de evaluación del verificador |
+| Tipos de cuantizacion | Pesos en BF16; el verificador asociado usa NVFP4 y caché KV FP8 E4M3 |
 | Idiomas soportados | no disponible |
-| Licencia | muse-model-license (identificador `other`) |
-| Formato de pesos | safetensors (con `custom_code`) |
+| Licencia | muse-model-license (license: other) |
+| Formato de pesos | safetensors (custom_code, requiere `--trust-remote-code`) |
 
 ## Arquitectura y entrenamiento
 
-El borrador sigue el esquema DFlash2: cinco capas transformer que toman como entrada los estados ocultos intermedios del verificador en las capas 42, 46, 50, 54 y 58, además de los tokens ya generados, y emiten hasta siete propuestas de token por paso. La verificación se realiza con muestreo de rechazo por bloques (*block rejection sampling*) y muestreo probabilístico del borrador, con verificación adaptativa opcional (`enable_adaptive_verification`). El verificador es un MoE de 816 B totales y 42 B activos, servido con paralelismo de tensores 4 y paralelismo de expertos, en NVFP4, con cómputo en BF16 y caché KV en FP8 E4M3.
+El modelo es un borrador DFlash2 de cinco capas transformer que se apoya en los estados ocultos intermedios del verificador Muse-Spark-Open-816B-A42B-NVFP4 en cinco puntos concretos (capas 42, 46, 50, 54 y 58). En cada paso de verificación propone hasta siete tokens borrador, que el verificador valida en bloque mediante rechazo por bloques (`rejection_sample_method: block`) con muestreo probabilístico del borrador (`draft_sample_method: probabilistic`). La integración se realiza a través del método `dflash` de vLLM, con soporte de verificación adaptativa (`enable_adaptive_verification`).
 
-No se dispone de información pública sobre el volumen de tokens de entrenamiento del borrador, la composición del dataset ni si se empleó RLHF o DPO. La innovación técnica principal es el acoplamiento a estados ocultos de capas intermedias del verificador, que permite al borrador anticipar la distribución del modelo grande con solo 3,4 B de parámetros y siete tokens propuestos por paso, lo que en la práctica multiplica la longitud de aceptación por encima de 4 tokens por paso en benchmarks de código y matemáticas.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO para el borrador. La evaluación publicada se ejecutó con el verificador en NVFP4, el borrador y el cómputo en BF16, caché KV FP8 E4M3, tensor parallelism 4 más expert parallelism, CUDA graphs activados y prefix caching desactivado, con temperatura 1.0, top-p 0.95, top-k 64 y esfuerzo de razonamiento `xhigh`.
 
 ## Capacidades
 
-- Generación de tokens borrador para decodificación especulativa sobre el verificador Muse-Spark-Open-816B-A42B-NVFP4; no genera texto de forma autónoma.
-- Propuesta de hasta siete tokens por paso de verificación con muestreo probabilístico y rechazo por bloques.
-- Soporte de verificación adaptativa (`enable_adaptive_verification`) para ajustar el número de tokens propuestos según la carga.
-- Integración nativa con vLLM mediante `--speculative-config` y el método `dflash`.
-- Compatible con el parser de razonamiento (`muse`) y el parser de tool calling (`muse`) del verificador, por lo que hereda las capacidades de agentes y function calling del modelo base.
-- Métricas por petición de decodificación especulativa (`--per-request-spec-decode-metrics summary`) para monitorizar aceptación en producción.
+- Decodificación especulativa: propone hasta siete tokens por paso de verificación para el verificador Muse-Spark-Open-816B-A42B-NVFP4.
+- Aprovechamiento de estados ocultos del verificador en cinco capas, lo que alinea las propuestas con la distribución del modelo grande.
+- Verificación adaptativa: el número efectivo de tokens especulados se ajusta dinámicamente según la aceptación observada.
+- Compatibilidad con vLLM mediante `--speculative-config` con método `dflash`.
+- No genera respuestas de forma autónoma ni soporta tool calling, agentes o razonamiento multi-step por sí mismo: esas capacidades residen en el verificador.
 - No se documentan capacidades multilingües, de visión ni de audio propias del borrador.
 
 ## Casos de uso
 
-- Servicio de inferencia de un MoE de 816 B con latencia reducida: el borrador se despliega junto al verificador en vLLM y eleva la longitud de aceptación agrupada a 4,215 tokens por paso, lo que reduce el número de pasos de verificación necesarios para generar la misma salida.
-- Generación de código en producción: en HumanEval y MBPP la longitud de aceptación alcanza 4,477 y 4,474 respectivamente, por lo que pipelines de autocompletado y generación de tests sobre el verificador se benefician de un mayor throughput efectivo.
-- Razonamiento matemático por lotes: en GSM8K y MATH-500 la aceptación llega a 4,558 y 4,613, adecuado para procesos batch de resolución de problemas donde el coste por token generado es crítico.
-- Recuperación aumentada con contexto largo: en MRCR con 8 agujas la longitud de aceptación es 5,476 y la posición 1 acepta el 91,10 %, lo que hace viable servir ventanas de hasta 1.048.576 tokens con decodificación especulativa.
-- Asistentes conversacionales multi-turno: en MT-Bench la aceptación es 3,744, suficiente para reducir la latencia percibida en diálogos con hasta 64 secuencias concurrentes y 16.384 tokens por lote.
-- Evaluación comparativa de configuraciones de serving: las métricas por posición (1 a 7) permiten calibrar el número óptimo de tokens especulativos y decidir si activar la verificación adaptativa según el perfil de carga (concurrencias de 1 a 32).
-- Investigación en decodificación especulativa: el modelo sirve como referencia reproducible para estudiar el efecto de los estados ocultos de capas intermedias en la tasa de aceptación por categoría (código, matemáticas, humanidades, escritura, multilingüe).
+- Aceleración de inferencia en producción del verificador de 816B: desplegar el borrador junto a Muse-Spark-Open-816B-A42B-NVFP4 en vLLM con `--speculative-config` para reducir el número de pasos de verificación por token emitido, con una longitud de aceptación agrupada de 4,215 en la suite publicada.
+- Servicio de razonamiento matemático de alto volumen: en GSM8K la longitud de aceptación es 4,558 y en MATH-500 de 4,613, por lo que cargas de problemas matemáticos con salidas largas se benefician especialmente del ahorro de cómputo del verificador.
+- Generación de código en pipelines de CI/CD: con HumanEval en 4,477 y MBPP en 4,474 de longitud de aceptación, y 4,273 en la categoría Coding de SPEED-Bench, el borrador es adecuado para autocompletado y generación de tests donde el verificador produce bloques de código extensos.
+- Procesamiento de contexto largo: en MRCR con 8 agujas la longitud de aceptación alcanza 5,476, lo que hace al borrador idóneo para tareas de recuperación y síntesis sobre documentos de hasta 1.048.576 tokens.
+- RAG empresarial: la categoría RAG de SPEED-Bench registra 4,272 de aceptación, de modo que respuestas ancladas a documentación recuperada mantienen una tasa de aceptación alta y reducen la latencia del verificador.
+- Despliegue multilingüe: la categoría Multilingual de SPEED-Bench obtiene 4,342, lo que respalda su uso en asistentes con salidas en varios idiomas siempre que el verificador los soporte.
+- Resumen y extracción de información: con 4,199 en Summarization, es adecuado para resumir actas, informes o hilos de soporte donde el verificador genera texto descriptivo largo.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados miden aceptación de decodificación especulativa, no precisión del modelo. Configuración: 4 GPU NVIDIA B200 (4 GPU B300 para MRCR extendido), verificación adaptativa desactivada, 7 tokens propuestos, temperatura 1,0, top-p 0,95, top-k 64, esfuerzo de razonamiento `xhigh`, 4.096 tokens de salida máximo.
+Los datos publicados miden aceptación de decodificación especulativa, no precisión de respuesta ni speedup final. Configuración: 4 GPU NVIDIA B200 (4 B300 para MRCR extendido), verificación adaptativa desactivada en todas las filas, 4.096 tokens máximos por llamada.
 
 | Benchmark | Prompts | Longitud de aceptación | Posición 1 | Posición 4 | Posición 7 |
 |---|---:|---:|---:|---:|---:|
-| GSM8K | 1.319 | 4,558 | 83,51 % | 47,58 % | 26,30 % |
-| HumanEval | 164 | 4,477 | 82,78 % | 45,91 % | 26,08 % |
-| MBPP | 500 | 4,474 | 82,84 % | 45,97 % | 25,70 % |
-| MATH-500 | 500 | 4,613 | 83,78 % | 48,55 % | 27,17 % |
-| MT-Bench | 80 | 3,744 | 77,72 % | 33,48 % | 15,01 % |
-| SPEED-Bench qualitative | 880 | 3,762 | 77,68 % | 34,01 % | 14,93 % |
-| MRCR, 8 needles | 100 | 5,476 | 91,10 % | 61,94 % | 41,39 % |
-| Agrupado | 3.543 | 4,215 | 81,02 % | 41,65 % | 21,63 % |
+| GSM8K | 1.319 | 4,558 | 83,51% | 47,58% | 26,30% |
+| HumanEval | 164 | 4,477 | 82,78% | 45,91% | 26,08% |
+| MBPP | 500 | 4,474 | 82,84% | 45,97% | 25,70% |
+| MATH-500 | 500 | 4,613 | 83,78% | 48,55% | 27,17% |
+| MT-Bench | 80 | 3,744 | 77,72% | 33,48% | 15,01% |
+| SPEED-Bench qualitative | 880 | 3,762 | 77,68% | 34,01% | 14,93% |
+| MRCR, 8 needles | 100 | 5,476 | 91,10% | 61,94% | 41,39% |
+| Agrupado | 3.543 | 4,215 | 81,02% | 41,65% | 21,63% |
 
-Desglose de SPEED-Bench qualitative por categoría (80 prompts por categoría, 4.096 tokens máximos):
+Desglose por categoría de SPEED-Bench qualitative (80 prompts por categoría, 4.096 tokens máximos):
 
 | Categoría | Longitud de aceptación | Posición 1 | Posición 7 |
 |---|---:|---:|---:|
-| Coding | 4,273 | 81,62 % | 22,69 % |
-| RAG | 4,272 | 81,43 % | 22,83 % |
-| Multilingual | 4,342 | 80,99 % | 24,22 % |
-| Summarization | 4,199 | 82,36 % | 19,06 % |
-| Math | 4,051 | 80,56 % | 18,04 % |
-| Reasoning | 3,974 | 80,03 % | 17,14 % |
-| STEM | 3,711 | 77,55 % | 13,71 % |
-| QA | 3,584 | 75,97 % | 12,49 % |
-| Humanities | 3,422 | 74,40 % | 10,55 % |
-| Writing | 3,265 | 73,53 % | 9,24 % |
+| Coding | 4,273 | 81,62% | 22,69% |
+| Humanities | 3,422 | 74,40% | 10,55% |
+| Math | 4,051 | 80,56% | 18,04% |
+| QA | 3,584 | 75,97% | 12,49% |
+| RAG | 4,272 | 81,43% | 22,83% |
+| Reasoning | 3,974 | 80,03% | 17,14% |
+| STEM | 3,711 | 77,55% | 13,71% |
+| Writing | 3,265 | 73,53% | 9,24% |
+| Multilingual | 4,342 | 80,99% | 24,22% |
+| Summarization | 4,199 | 82,36% | 19,06% |
+| Roleplay | 3,599 | 76,46% | no disponible en el extracto |
 
-No se han publicado resultados de precisión (MMLU, HumanEval pass@1, GSM8K exact match) del verificador en la información disponible, ni curvas de speedup numéricas más allá de la descripción de la metodología (concurrencias 1, 4, 8, 16 y 32; verificación adaptativa on/off frente a base no especulativa).
+La model card define la longitud de aceptación como 1 + tokens borrador aceptados / pasos de verificación, incluido el token aportado por el verificador, y la posición k como la fracción de pasos que aceptan al menos k tokens borrador (posiciones numeradas de 1 a 7). Los contadores se suman antes de dividir. No se publican curvas de speedup numéricas en la información disponible, solo la metodología (concurrencias 1, 4, 8, 16 y 32, con verificación adaptativa on/off y base no especulativa).
 
 ## Requisitos de hardware
 
-- El borrador en sí ocupa 6,8 GB en BF16, pero no es utilizable de forma aislada: requiere el verificador Muse-Spark-Open-816B-A42B-NVFP4 en NVFP4.
-- Configuración de referencia de la evaluación: 4 GPU NVIDIA B200 con paralelismo de tensores 4 y paralelismo de expertos; 4 GPU NVIDIA B300 para el conjunto extendido de MRCR.
-- No se documenta el uso de VRAM total del verificador; por el tamaño del modelo (816 B en NVFP4) se requiere un nodo multi-GPU de clase数据中心; no cabe en GPU de consumo.
-- Caché KV en FP8 E4M3, `--gpu-memory-utilization 1.0`, `--max-model-len 1048576`, `--max-num-seqs 64` y `--max-num-batched-tokens 16384` en la configuración medida.
-- Despliegue mediante vLLM con `--trust-remote-code`, `--enable-auto-tool-choice`, `--tool-call-parser muse` y `--reasoning-parser muse`; se requiere `VLLM_ENABLE_CUDA_COMPATIBILITY=0` y `GLOO_SOCKET_IFNAME=lo` en el entorno de evaluación.
-- No se publican cifras de latencia ni throughput absolutos (tokens/s); solo métricas de aceptación de la especulación.
+- VRAM estimada para el borrador: aproximadamente 6,8 GB de pesos en BF16 (3.377.529.472 parámetros), más overhead de activaciones y estados ocultos del verificador; el repositorio ocupa 6,8 GB.
+- El verificador asociado (816B-A42B en NVFP4) requiere múltiples aceleradores de datacenter: la evaluación oficial usa 4 GPU NVIDIA B200 con tensor parallelism 4 y expert parallelism.
+- GPU recomendadas: NVIDIA B200 y B300 para el conjunto verificador + borrador; no se documenta funcionamiento en GPU de consumo.
+- No cabe en GPU de consumo (RTX 4090, 24 GB) junto al verificador; el borrador por sí solo no es útil sin el verificador.
+- Opciones de despliegue: vLLM con `--speculative-config '{"method":"dflash",...}'`, `--trust-remote-code`, `--tensor-parallel-size 4`, `--enable-expert-parallel`, `--kv-cache-dtype fp8_e4m3`, `--max-model-len 1048576`, `--max-num-seqs 64`, `--max-num-batched-tokens 16384`, `--gpu-memory-utilization 1.0`, `--reasoning-parser muse`, `--enable-auto-tool-choice` y `--tool-call-parser muse`.
+- Para medir speedup, la model card indica eliminar `--per-request-spec-decode-metrics summary` y comparar con la base sin configuración especulativa.
+- Latencia y throughput: no se publican cifras absolutas de tokens por segundo; solo métricas de aceptación y la metodología de las curvas de speedup.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| RedHatAI/Muse-Spark-Open-816B-A42B-speculator.dflash2 | 3,4 B (borrador) | 1.048.576 (verificador) | Borrador DFlash2 para verificador MoE de 816 B | muse-model-license | Hugging Face, vLLM |
-| meta-models/Muse-Spark-Open-816B-A42B-NVFP4 | 816 B totales / 42 B activos | 1.048.576 | Verificador MoE objetivo | muse-model-license | Hugging Face |
-| Otros borradores de decodificación especulativa para modelos de clase 800 B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Rol | Parámetros | Contexto | Licencia | Formato |
+|---|---|---:|---:|---|---|
+| RedHatAI/Muse-Spark-Open-816B-A42B-speculator.dflash2 | Borrador DFlash2 para verificador de 816B | 3,38B | 1.048.576 (verificador) | muse-model-license | safetensors BF16 |
+| meta-models/Muse-Spark-Open-816B-A42B-NVFP4 | Verificador objetivo | 816B totales, 42B activos | 1.048.576 | muse-model-license | safetensors NVFP4 |
+| Otros borradores EAGLE/Medusa para el mismo verificador | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre borradores alternativos comparables (por ejemplo, de otros equipos o con métodos distintos de DFlash2) en la documentación proporcionada.
+No se dispone en la información proporcionada de otros borradores comparables publicados para este verificador ni de métricas de aceptación de alternativas, por lo que la comparación cuantitativa con modelos de la misma categoría queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: sin el verificador Muse-Spark-Open-816B-A42B-NVFP4 no produce salidas útiles.
-- Las métricas publicadas miden aceptación de la especulación, no precisión ni calidad de las respuestas; no deben interpretarse como rendimiento del modelo base.
-- La tasa de aceptación cae con la posición: en el conjunto agrupado, la posición 7 solo se acepta el 21,63 % de las veces, por lo que proponer siete tokens no siempre compensa el coste de verificación.
-- El rendimiento depende fuertemente de la carga: concurrencias altas y verificación adaptativa alteran la longitud de aceptación; los datos de referencia usan concurrencia 64 (4 en MRCR).
-- No hay información sobre sesgos, riesgo de alucinación ni cobertura idiomática del borrador; estos riesgos son los del verificador y deben evaluarse por separado.
-- La licencia muse-model-license incluye una política de uso (`usage policy`) que puede restringir el uso comercial; es necesario revisar `LICENSE.md` antes de desplegar en producción.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
-- Requiere `custom_code` y `--trust-remote-code` en vLLM, lo que implica ejecutar código del repositorio y revisar su procedencia en entornos sensibles.
-- La configuración de evaluación desactiva el prefix caching y fija `--gpu-memory-utilization 1.0`, lo que deja poco margen para otros procesos en las GPU.
+- No es un modelo generativo: sin el verificador Muse-Spark-Open-816B-A42B-NVFP4 no produce respuestas útiles.
+- Las métricas publicadas miden aceptación de decodificación especulativa, no precisión, calidad de respuesta ni speedup; la model card lo advierte explícitamente.
+- La aceptación cae con la posición: del 81,02% en posición 1 al 21,63% en posición 7 en el conjunto agrupado, y en categorías como Writing o Humanities el séptimo token apenas se acepta en torno al 9-10%.
+- El rendimiento depende del dominio: Writing (3,265) y Humanities (3,422) están muy por debajo de MRCR (5,476) y MATH-500 (4,613).
+- Requiere `--trust-remote-code` y código personalizado (`custom_code`), lo que implica revisar el código remoto antes de desplegar.
+- Licencia muse-model-license con política de uso asociada; es necesario revisar LICENSE.md antes de cualquier uso comercial.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación del borrador; estas propiedades dependen del verificador.
+- La configuración de evaluación desactiva prefix caching y fija `--gpu-memory-utilization 1.0`, lo que exige nodos dedicados y limita la convivencia con otras cargas.
+- Los resultados se obtuvieron en 4 GPU B200 (y B300 para MRCR extendido); el comportamiento en otras topologías o precisiones no está documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RedHatAI/Muse-Spark-Open-816B-A42B-speculator.dflash2
 - Modelo base (verificador): https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B-NVFP4
 - Organización Inferact: https://huggingface.co/Inferact
-- Repositorio Speculators: https://github.com/vllm-project/speculators
+- Repositorio Speculators (vLLM): https://github.com/vllm-project/speculators
 - Licencia Muse Model License: https://huggingface.co/RedHatAI/Muse-Spark-Open-816B-A42B-speculator.dflash2/blob/main/LICENSE.md

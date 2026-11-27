@@ -2,99 +2,100 @@
 
 ## Resumen
 
-`gliner2-base-ita-v2` es un modelo de extraccion de informacion en italiano desarrollado por el usuario 19Peppe95, segunda iteracion de su pipeline de ajuste sobre GLiNER2. Parte de `fastino/gliner2-multi-v1` (modelo multilingue zero-shot de Fastino) y le inyecta conocimiento especializado en datos personales (PII) y campos estructurados de documentos administrativos, fiscales, legales y sanitarios italianos, tomando como referencia `DeepMount00/GLiNER_PII_ITA`. El resultado es un token-classifier de 307,10 M de parametros (277,54 M en el encoder `microsoft/mdeberta-v3-base` y 16,53 M en la cabeza `span_rep`) que permite definir esquemas de entidades en tiempo de inferencia sin reentrenamiento.
+GLiNER2-Base-ITA-v2 es un extractor de entidades zero-shot y *schema-driven* especializado en documentos administrativos, fiscales, legales y sanitarios en italiano. Lo desarrolla el autor independiente 19Peppe95 como evolución de su versión anterior (v1) y se publica bajo licencia Apache 2.0. El modelo resuelve la extracción de entidades nombradas (NER), datos personales (PII) y campos estructurados con roles semánticos a partir de esquemas definidos en tiempo de inferencia, sin necesidad de reentrenamiento por tipo de documento.
 
-La relevancia tecnica del modelo no esta en el tamano sino en el metodo: el autor aplica merging de pesos por task arithmetic restringido a los layers 0-4, magnitude pruning al 50% seguido de proyeccion low-rank SVD (k=24) sobre los task vectors, expansion de `max_width` de 8 a 26 para cubrir referencias normativas italianas largas, y un micro fine-tuning con trust-region de la cabeza `span_rep`. Todas las modificaciones viven en `model.safetensors` y `config.json`, sin regex ni post-procesado en runtime.
+Arquitectónicamente es un GLiNER2 de 307.098.645 parámetros totales: 277,54 M en el encoder `microsoft/mdeberta-v3-base`, 16,53 M en la cabeza `span_rep` y el resto repartido entre el módulo `count_lstm` y los proyectores de esquema. Se construye mediante *model merging* y aritmética de tareas sobre `fastino/gliner2-multi-v1` y `DeepMount00/GLiNER_PII_ITA`, con una descomposición SVD de bajo rango.
 
-Es relevante ahora porque demuestra una via de especializacion barata (sin entrenamiento completo) para NER zero-shot en un idioma concreto y un dominio regulado (PII, facturacion, sanidad), publicada con licencia Apache 2.0. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que debe tratarse como un artefacto de investigacion sin validacion externa.
+Su relevancia actual radica en que aborda dos limitaciones concretas de los modelos base: el horizonte de anchura de span insuficiente para la puntuación fiscal italiana (referencias normativas como «art.10 c.1 n.18 D.P.R. 633/1972» ocupan 18 tokens) y la falta de adaptación de la cabeza `span_rep` a convenciones documentales italianas (distinción entre número de factura y códigos de protocolo, importe de impuesto de timbre frente a base imponible, eliminación de tratamientos honoríficos en los nombres).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GLiNER2 sobre encoder transformer `microsoft/mdeberta-v3-base` + cabeza `span_rep` (SpanMarkerV0) + modulos `count_lstm` y proyectores de esquema |
-| Parametros totales | 307.098.645 (277,54 M encoder, 16,53 M `span_rep`, resto `count_lstm` y proyectores) |
+| Arquitectura | GLiNER2 (encoder transformer `microsoft/mdeberta-v3-base` + cabeza de representación de spans `span_rep` + módulo `count_lstm` + proyectores de esquema) |
+| Parametros totales | 307.098.645 (277,54 M encoder, 16,53 M cabeza `span_rep`) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el encoder mdeberta-v3-base soporta 512 tokens; no confirmado en la model card) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors sin variantes GGUF/ONNX publicadas) |
-| Idiomas soportados | italiano (principal), multilingue (heredado del base `fastino/gliner2-multi-v1`) |
+| Longitud de contexto | no disponible (el modelo opera sobre ventanas de span con `max_width = 26` tokens) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Italiano (`it`) y multilingüe (`multilingual`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`), configuracion en `config.json`; repo de 1,2 GB |
+| Formato de pesos | safetensors (`model.safetensors`), configuración en `config.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es GLiNER2, un esquema unificado de extraccion de informacion basado en un encoder transformer (aqui `microsoft/mdeberta-v3-base`) con una cabeza de representacion de spans (`SpanMarkerV0`) que calcula representaciones dinamicas hasta `max_width` sin embeddings posicionales fijos. El modelo no se entrena desde cero: parte de `fastino/gliner2-multi-v1` y aplica tres estadios secuenciales documentados en la model card.
+El modelo parte de la arquitectura GLiNER2, un extractor de spans que representa entidades como pares (inicio, fin) sobre una ventana deslizante acotada por `max_width`. El encoder es `microsoft/mdeberta-v3-base`, sobre el que se monta una cabeza `span_rep` que puntúa candidatos de span, un módulo `count_lstm` y proyecciones que codifican el esquema de etiquetas proporcionado en inferencia. El word-splitter interno sigue el patrón `\w+(?:[-_]\w+)*|\S`, lo que fragmenta puntos y barras como tokens independientes y penaliza referencias normativas largas.
 
-El primer estadio expande `max_width` de 16 a 26 (tanto en la raiz de `config.json` como en `span_head`), lo que segun la ablacion del autor recupera +24 verdaderos positivos exactos sobre 145 entidades, cubriendo referencias normativas de 17-23 tokens como `art.10 c.1 n.18 D.P.R. 633/1972`. El segundo estadio calcula el task vector entre `DeepMount00/GLiNER_PII_ITA` y `fastino/gliner2-multi-v1` solo en los layers 0-4 (60 tensores, excluyendo LayerNorm), aplica magnitude pruning al 50% y luego SVD truncada con k=24 sobre las 30 matrices 2D, escalando el update por 0,14; los layers 5-11 quedan intactos. El tercer estadio congela el encoder y hace 35 pasos de AdamW (lr=3e-4, weight_decay=1e-2) sobre la cabeza `span_rep` (16,53 M parametros) con 4 frases sinteticas disjuntas del test set, usando una perdida que combina margen sobre logits y regularizacion MSE (lambda=12,0) con trust-region de 3,5%. No se documentan datos de RLHF/DPO ni el volumen de tokens de preentrenamiento del base.
+La construcción de la v2 se articula en tres estadios. El primero amplía `max_width` de 16 a 26, tanto en la raíz de `config.json` como en `span_head`; dado que `SpanMarkerV0` calcula las representaciones de span de forma dinámica hasta `max_width`, no hay matrices de embedding atadas a la anchura y el cambio es puramente estructural. Sobre `fastino/gliner2-multi-v1`, este ajuste aislado recupera 24 verdaderos positivos exactos de 145 entidades (razones sociales completas, causales médicas y técnicas y referencias normativas de 17 a 23 tokens). El segundo estadio aplica *model merging* y aritmética de tareas con descomposición SVD de bajo rango sobre los modelos base. El tercer estadio adapta de forma restringida la cabeza `span_rep`, que en Fastino y en la v1 permanecía congelada. La v1 ya había introducido el merging lineal selectivo sobre los layers 0 a 4 (60 tensores, α = 0,12, excluyendo LayerNorm y dejando intactos los layers 5 a 11 para no desalinear el espacio profundo del encoder respecto a la cabeza GLiNER2). Todas las modificaciones residen exclusivamente en los pesos y la configuración, sin expresiones regulares ni reglas heurísticas de post-procesado en tiempo de ejecución.
 
 ## Capacidades
 
-- Extraccion zero-shot de entidades nombradas (NER) definiendo las etiquetas en tiempo de inferencia mediante esquema.
-- Deteccion de datos personales (PII) en italiano: nombres, codigos fiscales, direcciones, datos de contacto.
-- Extraccion de campos estructurados de documentos administrativos, fiscales, legales y sanitarios (numeros de factura, importes, causales, referencias normativas).
-- Soporte de esquemas con multiples tipos de entidad y restricciones por campo.
-- Capacidad multilingue heredada del base `fastino/gliner2-multi-v1` (no validada especificamente en la model card para otros idiomas).
-- Tolerancia a spans largos (hasta 26 tokens) gracias a la expansion de `max_width`.
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio: es un modelo de token-classification, no generativo.
+- Extracción de entidades nombradas (NER) zero-shot: las etiquetas se definen en tiempo de inferencia mediante un esquema, sin reentrenamiento.
+- Extracción de PII sobre documentos italianos, heredada del linaje `DeepMount00/GLiNER_PII_ITA`.
+- Extracción *schema-driven* de campos estructurados con roles semánticos (por ejemplo, distinguir base imponible de impuesto de timbre, o número de factura de código de protocolo).
+- Manejo de spans de hasta 26 tokens, suficiente para referencias normativas italianas de 17 a 23 tokens.
+- Capacidad multilingüe declarada, aunque el ajuste específico está orientado al italiano.
+- Procesamiento de documentos administrativos, fiscales, legales y sanitarios.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
 
-- Anonimizacion y cumplimiento RGPD en facturas y documentos fiscales italianos: definir un esquema con `nome`, `codice_fiscale`, `partita_iva`, `indirizzo` y ejecutar el modelo sobre cada documento para enmascarar PII antes de almacenar o enviar a terceros.
-- Digitalizacion de facturacion electronica: extraer `numero_fattura`, `importo_totale`, `imposta_di_bollo` y `causale` de PDFs convertidos a texto, aprovechando el ajuste especifico de la v2 para no confundir el bollo con el importe principal.
-- Procesamiento de documentacion sanitaria: extraer diagnosticos, codigos de procedimiento y datos del paciente de informes clinicos, usando el esquema para delimitar cada campo sin reentrenar.
-- Tramitacion administrativa y legal: detectar referencias normativas completas (`art.10 c.1 n.18 D.P.R. 633/1972`) y partes intervinientes en escritos, gracias a `max_width=26`.
-- Enriquecimiento de bases de datos documentales: poblar tablas estructuradas a partir de contratos y escrituras, definiendo el esquema por tipo documental y ejecutando el modelo en lote.
-- Preprocesado para pipelines RAG: identificar entidades y campos clave en documentos italianos antes de indexarlos, de modo que el recuperador pueda filtrar por entidad o fecha.
-- Clasificacion y triaje de correspondencia: extraer remitente, asunto y referencias de practica (`PROT...`, `PRAT...`) para enrutar comunicaciones al departamento correcto.
+- Extracción de campos en facturación electrónica italiana: el modelo recibe un esquema con etiquetas como «numero_fattura», «imponibile», «imposta_bollo» y «codice_fiscale», y devuelve los spans correspondientes. La adaptación de `span_rep` evita confundir el número de factura con códigos de protocolo o práctica y asigna al impuesto de timbre el importe de 2,00 € en lugar del importe principal.
+- Anonimización y cumplimiento de PII en documentos sanitarios y legales: al ser un extractor de datos personales entrenado sobre corpus italiano, permite localizar nombres, identificadores fiscales y referencias antes de almacenar o compartir el documento.
+- Digitalización de expedientes administrativos: con `max_width = 26` captura referencias normativas completas como «art.10 c.1 n.18 D.P.R. 633/1972», que los modelos base truncan a 16 tokens y pierden el prefijo «art.».
+- Normalización de nombres de personas en contratos y escrituras: el modelo alinea los límites del span a la convención sin título honorífico, descartando «Ing.», «Dott.», «Sig.ra» o preámbulos condominiales del nombre propio.
+- Enriquecimiento de metadatos en pipelines de gestión documental: la extracción schema-driven permite definir un esquema distinto por tipo de documento sin reentrenar, lo que simplifica el despliegue sobre lotes heterogéneos de documentos fiscales y administrativos.
+- Construcción de conjuntos de datos etiquetados: el modelo puede usarse como pre-etiquetador en un flujo de anotación humana, reduciendo el coste de revisión en corpus italianos de dominio administrativo.
+- Extracción de entidades en textos multilingües: aunque el ajuste está orientado al italiano, la ficha declara soporte multilingüe y validación externa sobre `WikiNEuRal` y `MultiNERD`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, F1 en datasets publicos) en la informacion disponible. La model card solo reporta ablaciones internas del autor sobre su propio conjunto de 145 entidades:
+Los resultados publicados proceden de un benchmark diagnóstico de desarrollo sobre 12 documentos fiscales y administrativos italianos con 145 entidades Gold, además de una validación externa sobre tres conjuntos públicos (600 textos, 1.213 entidades Gold). El propio autor advierte que el conjunto de desarrollo guió las decisiones de diseño y que sus cifras deben leerse como coherencia diagnóstica interna, no como estimación confirmativa sobre datos held-out.
 
-| Configuracion | Cambio | Efecto reportado |
-|---|---|---|
-| Stadio 0 -> Stadio 1 | `max_width` 8 -> 26 sobre `fastino/gliner2-multi-v1` | +24 verdaderos positivos exactos sobre 145 entidades |
-| Stadio 2 | Pruning 50% + SVD k=24 en layers 0-4 | Recupera codigos fiscales italianos compactos (p. ej. `LMBBRC87M62F205Q`) no extraidos por el base a `mw=26` |
-| Stadio 3 | Fine-tuning `span_rep` (35 pasos, trust-region 3,5%) | Corrige confusiones numero de factura / codigos de protocolo, importe principal / bollo, y prefijos de tratamiento en nombres |
+| Benchmark | Metrica | gliner2-base-ita-v2 | fastino/gliner2-multi-v1 (mw=8) | v1 (mw=26) |
+|---|---|---|---|---|
+| Documentos fiscales y administrativos IT (145 entidades) | Exact F1 | 0,9041 (IC 95%: 0,8561–0,9453) | 0,7537 | no disponible |
+| Documentos fiscales y administrativos IT (145 entidades) | Partial F1 | 0,9589 (IC 95%: 0,9236–0,9892) | 0,8358 | no disponible |
+| Documentos fiscales y administrativos IT, a igual ventana mw=26 | Δ Exact F1 vs fastino | +0,0450 (IC 95% apareado: +0,0073 a +0,0827; p unilateral = 0,0080) | referencia | — |
+| Documentos fiscales y administrativos IT, a igual ventana mw=26 | Δ Exact F1 vs v1 | +0,0440 (IC 95% apareado: +0,0058 a +0,0861; p unilateral = 0,0135) | — | referencia |
+| ai4privacy | Exact F1 | +1,54 puntos sobre fastino mw=8 | referencia | no disponible |
+| WikiNEuRal | Exact F1 | +0,88 puntos sobre fastino mw=8 | referencia | no disponible |
+| MultiNERD | Exact F1 | +0,60 puntos sobre fastino mw=8 | referencia | no disponible |
+| Media externa ponderada por entidades | F1 | 0,7749 | no disponible | 0,7716 |
 
-Estos datos no son comparables con benchmarks publicos y no han sido verificados de forma independiente.
+El incremento en Exact F1 frente a la v1 y a Fastino se atribuye a partes iguales a la desambiguación semántica (impuesto de timbre frente a base imponible, número de factura frente a código de práctica) y al alineamiento de los límites de los nombres a la convención sin título honorífico. La mejora no es significativa en Partial F1, donde el intervalo de la diferencia incluye el cero.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 1,3 GB solo de pesos (307 M parametros), mas activaciones; en la practica cabe en cualquier GPU consumer con 4 GB o mas.
-- En FP16/BF16: alrededor de 0,7 GB de pesos; en int8: unos 0,35 GB.
-- GPU recomendadas: RTX 3060/4060 o superiores para lotes pequenos; A100/H100 no son necesarias por el tamano del modelo.
-- Cabe holgadamente en GPU consumer (RTX 3090, RTX 4090, incluso portatiles con 6-8 GB).
-- Opciones de despliegue: la libreria `gliner2` (referenciada en la model card); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al no haber pesos GGUF no es desplegable directamente en llama.cpp/Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, el repositorio ocupa 1,2 GB en safetensors, lo que sugiere que el modelo completo en fp32 rondaría 1,2 GB y en fp16 unos 0,6 GB, aunque estas cifras no están confirmadas por el autor.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el reducido tamaño del repositorio sugiere que podría ejecutarse en GPUs de consumo, pero no hay datos publicados al respecto.
+- Opciones de despliegue: la librería declarada es `gliner2`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parametros | Contexto / anchura de span | Exact F1 (benchmark fiscal IT) | Licencia | Relación |
 |---|---|---|---|---|---|
-| `19Peppe95/gliner2-base-ita-v2` | 307,10 M | no disponible | it, multilingue | Apache 2.0 | Especializado en PII y documentos italianos; ajuste por merging + SVD |
-| `19Peppe95/gliner2-base-ita-v1` | ~307 M (misma base) | no disponible | it, multilingue | Apache 2.0 | Version previa con `max_width=16` y merging denso en layers 0-4 |
-| `fastino/gliner2-multi-v1` | no disponible | no disponible | multilingue | no disponible en la informacion | Base multilingue zero-shot de Fastino; sin especializacion italiana |
-| `DeepMount00/GLiNER_PII_ITA` | no disponible | no disponible | it | no disponible en la informacion | Fuente del task vector para PII en italiano |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+| 19Peppe95/gliner2-base-ita-v2 | 307,10 M | `max_width = 26` | 0,9041 | Apache 2.0 | Este modelo |
+| 19Peppe95/gliner2-base-ita-v1 | no disponible (derivado de GLiNER2 base) | `max_width = 16` | Δ −0,0440 frente a v2 (a igual mw=26) | Apache 2.0 | Versión anterior del mismo autor |
+| fastino/gliner2-multi-v1 | no disponible | `max_width = 8` por defecto | 0,7537 | no disponible en la información | Modelo base multilingüe |
+| DeepMount00/GLiNER_PII_ITA | no disponible | no disponible | no disponible | no disponible en la información | Modelo base especializado en PII italiana |
 
 ## Limitaciones y advertencias
 
-- Modelo sin validacion externa: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; los resultados de las ablaciones son autoinformados por el autor.
-- El fine-tuning de la cabeza `span_rep` se hizo con solo 4 frases sinteticas, lo que limita la generalizacion a dominios y formatos no representados.
-- El ajuste esta orientado a italiano; el rendimiento en otros idiomas, aunque heredado del base multilingue, no esta documentado.
-- Al ser un extractor de spans y no un modelo generativo, puede producir falsos positivos en textos con formatos atipicos (tablas, OCR ruidoso) y no razona sobre el contexto mas alla del encoder.
-- Riesgo de alucinacion de entidades: como todo NER zero-shot, puede asignar etiquetas a spans que no cumplen el criterio del esquema si las etiquetas son ambiguas.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene auditar el modelo en el dominio concreto antes de produccion.
-- No hay pesos cuantizados ni formatos alternativos publicados, lo que limita el despliegue en entornos sin Python/`gliner2`.
-- La expansion de `max_width` a 26 aumenta el coste computacional de la cabeza de spans en inferencia (mas combinaciones de spans por mencion).
+- El benchmark principal es un conjunto de desarrollo de 12 documentos y 145 entidades que guió las decisiones de diseño; sus cifras no constituyen una estimación confirmativa sobre datos held-out.
+- La mejora frente a la v1 y a Fastino no es estadísticamente significativa en Partial F1, solo en Exact F1.
+- El modelo está diseñado para extracción schema-driven con roles semánticos, no como sustituto generalista de modelos NER o PII especializados.
+- El ajuste específico se orienta al italiano; el rendimiento en otras lenguas no está cuantificado más allá de la validación externa agregada.
+- El word-splitter fragmenta puntos y barras como tokens independientes, por lo que estructuras con puntuación densa siguen consumiendo presupuesto de anchura aunque `max_width` se haya ampliado a 26.
+- No se documentan sesgos conocidos ni tasas de alucinación en la información disponible.
+- No se documentan restricciones adicionales de licencia para uso comercial más allá de la licencia Apache 2.0 declarada.
+- No hay datos publicados sobre cuantización, latencia, throughput ni requisitos de hardware, lo que dificulta planificar un despliegue en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/19Peppe95/gliner2-base-ita-v2
-- Version anterior v1: https://huggingface.co/19Peppe95/gliner2-base-ita-v1
-- Modelo base multilingue: https://huggingface.co/fastino/gliner2-multi-v1
-- Modelo fuente de PII italiano: https://huggingface.co/DeepMount00/GLiNER_PII_ITA
-- Repositorio GLiNER2 de Fastino: https://github.com/fastino-ai/GLiNER2
-- Encoder base: https://huggingface.co/microsoft/mdeberta-v3-base
+- Modelo en Hugging Face: https://huggingface.co/19Peppe95/gliner2-base-ita-v2
+- Versión anterior v1: https://huggingface.co/19Peppe95/gliner2-base-ita-v1
+- Modelo base multilingüe: https://huggingface.co/fastino/gliner2-multi-v1
+- Modelo base de PII italiana: https://huggingface.co/DeepMount00/GLiNER_PII_ITA
+- Encoder: https://huggingface.co/microsoft/mdeberta-v3-base

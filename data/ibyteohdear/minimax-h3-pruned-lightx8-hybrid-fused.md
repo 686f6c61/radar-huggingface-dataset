@@ -2,91 +2,93 @@
 
 ## Resumen
 
-MiniMax-H3-Pruned-LightX8-hybrid-Fused es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario ibyteohdear en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos: parte del transformer del modelo `multimodalart/MiniMax-H3-Pruned` y le incorpora el adaptador LoRA `lightx2v_hybrid-4to8step-Turbo_r48_diffusers.safetensors` con escala 1 (alpha 48 sobre rank 48), de modo que el comportamiento "turbo" queda integrado directamente en los pesos y no requiere cargar adaptadores en tiempo de inferencia.
+MiniMax-H3-Pruned-LightX8-hybrid-Fused es un modelo de generación de vídeo (texto-a-vídeo, imagen-a-vídeo y audio-vídeo) publicado por el usuario ibyteohdear en Hugging Face. Se trata de un ajuste fino (finetune) del modelo multimodalart/MiniMax-H3-Pruned, que a su vez deriva de la familia MiniMax-H3. El modelo emplea la librería diffusers y se distribuye en formato safetensors con un total de 20.111.462.920 parámetros (~20,1 mil millones). El repositorio ocupa 40,2 GB.
 
-El resultado es un único fichero de transformer que permite generar vídeo con 4 u 8 pasos de muestreo, empleando el scheduler euler/simple, con shifts de 6 para vídeo y 3 para audio, y resolución de hasta 768p. La fusión afecta a 312 capas y no incorpora módulos AdaLN del LoRA ni offsets AdaLN en el sesgo plegado. El modelo se distribuye bajo la licencia comunitaria de MiniMax-H3 y está etiquetado como no apto para todas las audiencias.
+El modelo está orientado a la síntesis de vídeo con soporte de audio, e incluye en su model card un pipeline modular de diffusers que combina un codificador de texto basado en Qwen3-VL (en variantes de 4B, 8B o 32B cuantizada a NF4), autoencoders específicos para vídeo y audio (AutoencoderKLMiniMaxH3 y AutoencoderKLMiniMaxH3Audio), y pasos modulares de preparación de latentes, layout, timesteps y denoising. La integración con torchao permite cuantización Int8 weight-only, y se menciona soporte de group offloading para gestionar la memoria.
 
-Su relevancia práctica es doble: por un lado reduce drásticamente el coste de inferencia frente a un modelo de difusión de vídeo estándar (4-8 pasos frente a decenas), y por otro simplifica el despliegue al no necesitar conmutación de adaptadores LoRA entre modos de 4 y 8 pasos. El repositorio ocupa 40,2 GB y el transformer declarado contiene 20.111.462.920 parámetros.
+Es relevante ahora porque combina generación de vídeo y audio en un único pipeline, con variantes de cuantización y offloading pensadas para reducir los requisitos de VRAM, y porque su licencia de comunidad (minimax-h3-community-license-agreement) condiciona el uso comercial. La información pública disponible es escasa y procede casi exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusión 3D para vídeo (MiniMax-H3), con rama de audio; clase de código remoto pruned |
-| Parametros totales | 20.111.462.920 (transformer) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Difusión para vídeo/audio (pipeline modular de diffusers con autoencoders KL para vídeo y audio); detalles internos del transformer no disponibles |
+| Parametros totales | 20.111.462.920 (~20,1 B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no especificados en la model card; el código de ejemplo aplica Int8WeightOnlyConfig (torchao) y bfloat16 |
+| Tipos de cuantizacion | Int8 weight-only (torchao); el codificador de texto puede usar NF4 (variante 32B bnb_nf4); otras no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors (sharded), librería diffusers, requiere `trust_remote_code=True` |
+| Formato de pesos | safetensors (librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusión para generación conjunta de vídeo y audio, derivado de MiniMax-H3 en su variante "pruned" (poda de parámetros respecto al modelo original). La innovación principal de esta ficha no es arquitectónica sino de empaquetado: el autor ha fusionado un LoRA turbo de rango 48 (alpha 48) en 312 capas del transformer mediante el flujo `load_lora_adapter -> pin scaling -> fuse_lora -> strip peft keys -> sharded save`. El LoRA no contiene módulos AdaLN, por lo que no se han plegado offsets AdaLN en el sesgo.
+El modelo es un sistema de difusión para generación de vídeo con audio, implementado sobre la librería diffusers mediante un pipeline modular. El código de la model card muestra componentes diferenciados: un codificador de texto (Qwen3VLForConditionalGeneration, en variantes de 4B, 8B o 32B), autoencoders KL específicos para vídeo y audio, y bloques modulares para la preparación de latentes, layout, timesteps, denoising y decodificación. Se incluye además un componente ClipProj (proyección CLIP con normalización y MLP) que actúa como adaptador entre el espacio del codificador de texto y el del modelo generativo.
 
-No se dispone de información sobre el dataset de entrenamiento original, el número de tokens, ni sobre procesos de RLHF/DPO. La model card tampoco detalla innovaciones como decodificación especulativa o atención lineal. El pipeline de inferencia se construye con los bloques modulares de diffusers para MiniMax-H3 (`MiniMaxH3PrepareLatentsStep`, `MiniMaxH3DenoiseStep`, `MiniMaxH3DecodeStep`, etc.) y utiliza un codificador de texto externo basado en Qwen3-VL (8B o 32B según configuración) junto con proyecciones CLIP específicas (`mmh3-8b-ClipProj-v3.1`).
+El nombre "Pruned-LightX8-hybrid-Fused" sugiere un proceso de poda (pruning) y fusión de componentes respecto al modelo base multimodalart/MiniMax-H3-Pruned, aunque no se detallan en la información disponible los datos de entrenamiento (número de tokens, composición del dataset) ni si hubo RLHF/DPO. El pipeline incorpora técnicas de gestión de memoria como `apply_group_offloading`, cuantización Int8 weight-only vía torchao y decodificación por pasos modulares. No se dispone de información sobre innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen de referencia y un prompt de texto (image-text-to-video).
-- Generación de audio asociada al vídeo, con shift de audio independiente (3) respecto al shift de vídeo (6).
-- Muestreo rápido con 4 u 8 pasos de difusión gracias al LoRA turbo fusionado, sin necesidad de cambiar de adaptador.
-- Resolución de salida de hasta 768p.
-- Codificación de texto mediante Qwen3-VL (variantes 8B y 32B en el código de ejemplo), lo que aporta comprensión de instrucciones multimodales para el prompt.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso ni agentes; es un modelo generativo de medios, no un LLM conversacional.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de vídeo a partir de texto (text-to-video).
+- Generación de vídeo a partir de imagen (image-to-video), pipeline declarado en los metadatos.
+- Generación de vídeo con audio (audio-video), según los tags del modelo.
+- Codificación de texto multimodelo mediante Qwen3-VL (variantes 4B, 8B y 32B), lo que aporta comprensión de texto e imagen para el condicionamiento.
+- Soporte de cuantización Int8 y NF4 para reducir requisitos de memoria.
+- Soporte de group offloading para ejecución con memoria limitada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (idiomas no declarados).
+- Modo thinking, visión o audio como entrada: no disponible más allá del condicionamiento por texto/imagen y la salida con audio.
 
 ## Casos de uso
 
-- Prototipado rápido de vídeo generativo: con 4 pasos de muestreo y un único checkpoint fusionado, un equipo puede iterar sobre prompts e imágenes de referencia sin gestionar adaptadores LoRA ni pipelines de varias etapas.
-- Generación de clips publicitarios cortos: a partir de una imagen de producto y un prompt descriptivo, el modelo produce vídeo con audio sincronizado hasta 768p, adecuado para piezas de redes sociales.
-- Previsualización de storyboards: convertir fotogramas clave o ilustraciones en animaciones breves para validar una secuencia antes de producirla con herramientas de mayor coste.
-- Creación de contenido para videojuegos y animación: generar loops o transiciones a partir de arte conceptual, aprovechando la rama de audio para ambiente.
-- Investigación en difusión de vídeo: el checkpoint fusionado sirve como referencia para estudiar el efecto de plegar LoRAs turbo en transformers de difusión de 20B parámetros y comparar calidad entre 4 y 8 pasos.
-- Despliegue en infraestructura limitada: el uso de cuantización Int8WeightOnly y group offloading en el código de ejemplo permite ejecutar el pipeline en GPUs con menos VRAM que las requeridas por el modelo completo en bfloat16.
-- Generación de material audiovisual para doblaje o localización: la separación de shifts de vídeo y audio facilita ajustar la sincronía en piezas con voz.
+- Generación de vídeo publicitario a partir de un brief de texto: el pipeline text-to-video permite crear clips cortos con audio sincronizado, útil para prototipos creativos rápidos antes de una producción final.
+- Animación de imágenes fijas para redes sociales: el modo image-to-video permite dar movimiento a fotografías o ilustraciones, generando clips con audio para publicaciones.
+- Creación de contenido audiovisual para previsualización de guiones: un guionista puede convertir descripciones textuales en vídeos con audio para validar escenas antes de rodar.
+- Prototipado de videojuegos y experiencias interactivas: generación de cinemáticas o assets de vídeo con audio para maquetas y demos internas.
+- Generación de material educativo: creación de vídeos explicativos con narración o audio a partir de texto, útil para cursos y tutoriales.
+- Investigación en generación multimodal: el modelo sirve como base para experimentar con poda, fusión de componentes y cuantización (Int8, NF4) en pipelines de difusión de vídeo.
+- Pruebas de concepto en entornos con VRAM limitada: gracias al group offloading y a la cuantización, puede ejecutarse en configuraciones de GPU más modestas para validar ideas antes de escalar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El transformer contiene 20.111.462.920 parámetros; en bfloat16 esto supone aproximadamente 40 GB solo para los pesos del transformer, a los que se suman el VAE de vídeo, el VAE de audio, el codificador de texto Qwen3-VL (8B o 32B) y las proyecciones CLIP.
-- El repositorio completo ocupa 40,2 GB, lo que da una idea del peso mínimo en disco.
-- Para bfloat16 se recomienda al menos una A100 80 GB o H100 80 GB; con el codificador de texto de 32B la demanda aumenta y puede requerir varias GPUs o offloading.
-- Con cuantización Int8WeightOnly (torchao) y `apply_group_offloading` el consumo de VRAM baja considerablemente, pero no se especifican cifras exactas en la model card.
-- No se indica compatibilidad con GPUs de consumo (RTX 4090, 3090, etc.); dado el tamaño, es improbable que quepa completo en una GPU de 24 GB sin offloading agresivo y cuantización.
-- Opciones de despliegue: diffusers con `AutoModel.from_pretrained(..., trust_remote_code=True)` y los bloques modulares de MiniMax-H3; el código de ejemplo incluye una app Gradio y soporte para Hugging Face Spaces con `spaces.GPU`.
-- No se proporcionan datos de latencia ni throughput.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con ~20,1 B parámetros, en bf16/fp16 se requerirían del orden de 40 GB solo para pesos, más memoria para activaciones y autoencoders; con cuantización Int8 weight-only se reduciría aproximadamente a la mitad, y con NF4 (en el codificador de texto de 32B) aún menos, aunque no se especifican cifras exactas.
+- GPU recomendadas: no disponible en la información. Por tamaño, cabría esperar GPUs de datacenter (A100 80 GB, H100) para ejecución completa en precisión nativa; no confirmado por el autor.
+- ¿Cabe en consumer GPU?: no disponible de forma confirmada. El uso de group offloading y cuantización sugiere que se busca reducir la huella, pero no se indica qué GPU consumer (por ejemplo RTX 4090 de 24 GB) es suficiente.
+- Opciones de despliegue: diffusers (pipeline modular), con soporte de torchao para cuantización y `apply_group_offloading` para offloading. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo de este tipo).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / resolución | Pasos de muestreo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Pruned-LightX8-hybrid-Fused (este) | 20,1B (transformer) | hasta 768p | 4 u 8 | minimax-h3-community-license-agreement | Hugging Face, diffusers |
-| multimodalart/MiniMax-H3-Pruned (base) | no disponible | no disponible | no disponible (sin turbo fusionado) | minimax-h3-community-license-agreement | Hugging Face |
-| MiniMax-H3 (original, no pruned) | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | no disponible en la información |
+| MiniMax-H3-Pruned-LightX8-hybrid-Fused | ~20,1 B | no disponible | Difusión vídeo/audio | minimax-h3-community-license-agreement | Hugging Face (diffusers) |
+| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no disponible | Difusión vídeo | no disponible | Hugging Face |
+| Otros modelos de vídeo de la familia MiniMax-H3 | no disponible | no disponible | Difusión vídeo | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está etiquetado como `not-for-all-audiences`; puede generar contenido inapropiado y requiere moderación en producción.
-- No se documentan sesgos conocidos, pero al ser un modelo generativo de vídeo y audio existe riesgo de amplificar estereotipos presentes en los datos de entrenamiento originales (no detallados).
-- Riesgo de alucinación visual y de incoherencias temporales inherente a la difusión de vídeo; no se cuantifica en la model card.
-- La licencia `minimax-h3-community-license-agreement` impone condiciones específicas para uso comercial que deben revisarse antes de desplegar; no es una licencia open source estándar.
-- El modelo depende de código remoto (`trust_remote_code=True`) y de la clase pruned específica, no de `MiniMaxH3Transformer3DModel`; cargarlo con la clase equivocada fallará.
-- Requiere componentes externos no incluidos en el repo (codificador Qwen3-VL, proyecciones ClipProj de NicoLab28), lo que añade dependencias y posibles roturas por cambios en repos de terceros.
-- El pipeline de ejemplo usa rutas absolutas (`/mnt/data/huggingface`) y variables de entorno específicas de un entorno concreto; no es portable tal cual.
-- No hay información sobre idiomas soportados ni sobre calidad multilingüe de los prompts.
-- El tamaño del transformer (20B) limita el despliegue a hardware de gama alta o a configuraciones con cuantización y offloading.
+- La model card incluye el tag `not-for-all-audiences` y el pipeline está marcado como `10eros`, lo que indica contenido para adultos; no es apto para todos los públicos.
+- Licencia `minimax-h3-community-license-agreement`: es necesario revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones.
+- Riesgo de alucinación y artefactos visuales/auditivos inherente a los modelos de difusión; no se documentan tasas de error.
+- Idiomas soportados no declarados; no se garantiza un rendimiento multilingüe.
+- No se documentan sesgos conocidos ni datos de entrenamiento, lo que dificulta evaluar riesgos de sesgo.
+- Requisitos de hardware elevados (~20,1 B parámetros, repo de 40,2 GB) y sin cifras oficiales de VRAM; la ejecución en consumer GPU no está confirmada.
+- El modelo es un finetune de un modelo podado; puede heredar limitaciones del modelo base.
+- La información pública es muy escasa (1 like, 502 descargas), lo que reduce la validación comunitaria y la fiabilidad de despliegues en producción.
+- El código de la model card incluye lógica específica de Hugging Face Spaces y rutas locales; requiere adaptación para otros entornos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-Pruned-LightX8-hybrid-Fused
+- Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-Pruned-LightX8-hybrid-Fused
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
-- Repositorio de proyecciones CLIP: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
-- Codificador de texto (8B): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
-- Codificador de texto (32B): https://huggingface.co/prithivMLmods/Qwen3-VL-32B-Instruct-abliterated-v1
+- Repositorio ClipProj (referenciado en el código): https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- Codificador de texto Qwen3-VL 32B NF4 (referenciado): https://huggingface.co/ibyteohdear/qwen3_vl_32b_bnb_nf4
+- Codificador de texto Qwen3-VL 8B (referenciado): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- Codificador de texto Qwen3-VL 4B (referenciado): https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2

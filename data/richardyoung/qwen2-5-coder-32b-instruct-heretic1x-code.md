@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Qwen2.5-Coder-32B-Instruct-heretic1x-code es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-Coder-32B-Instruct, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored" generada con la técnica Heretic 1.x, cuyo objetivo es eliminar los mecanismos de rechazo y alineación de seguridad del modelo original sin recurrir a un reentrenamiento completo. El modelo conserva la arquitectura y los pesos base de Qwen2.5-Coder-32B-Instruct, por lo que mantiene sus capacidades de generación de código, razonamiento y conversación.
+Qwen2.5-Coder-32B-Instruct-heretic1x-code es un ajuste fino (finetune) del modelo Qwen2.5-Coder-32B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. El modelo pertenece a la familia "heretic" (versión 1.x), una línea de variantes "abliterated" o "decensored" que aplican técnicas de modificación de pesos para eliminar o reducir los mecanismos de rechazo (refusals) aprendidos durante el alineamiento del modelo original. El objetivo declarado es la investigación sobre comportamiento de modelos y la eliminación de restricciones conversacionales.
 
-El modelo resuelve un problema muy concreto: disponer de un modelo de código de 32B parámetros sin las restricciones de contenido del modelo original, orientado a investigación sobre alineación, interpretabilidad y comportamiento de modelos abliterated. No está pensado como un modelo de producción generalista, sino como una herramienta de estudio para quienes necesitan analizar cómo se comporta un modelo de código cuando se eliminan sus capas de rechazo.
+Se trata de un transformer denso de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones), derivado de la arquitectura Qwen2, con licencia declarada Apache 2.0 en las etiquetas, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. El modelo está orientado a generación de texto y código, con soporte conversacional, y está etiquetado únicamente para inglés.
 
-Con 32.763.876.352 parámetros reales (según safetensors), un repositorio de 65,6 GB y licencia Apache 2.0, es relevante ahora porque la familia Qwen2.5-Coder se ha consolidado como referencia en modelos de código abiertos, y las variantes abliterated permiten a investigadores comparar comportamientos alineados frente a no alineados sobre la misma base. El acceso está restringido (gated): requiere aceptar condiciones en Hugging Face.
+Su relevancia es acotada y de nicho: no es un modelo de propósito general recomendado para producción, sino una variante de investigación que ilustra las técnicas de "abliteration" aplicadas a un modelo de código de gran tamaño. Para desarrolladores e investigadores, resulta útil como caso de estudio sobre alineamiento, seguridad y modificación de pesos, más que como herramienta de despliegue estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), basado en Qwen2.5-Coder-32B-Instruct |
+| Arquitectura | Transformer denso (familia Qwen2), derivado de Qwen2.5-Coder-32B-Instruct |
 | Parametros totales | 32.763.876.352 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-Coder-32B-Instruct, no confirmada) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF/AWQ no listadas en el repo) |
-| Idiomas soportados | en (ingles, segun tag del modelo) |
-| Licencia | apache-2.0 (el modelo declara ademas openrail++ en tags; acceso gated) |
-| Formato de pesos | safetensors |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-Coder-32B-Instruct soporta 32.768 tokens nativos, ampliables; no confirmado para este finetune) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no listadas) |
+| Idiomas soportados | Ingles (segun etiqueta del repositorio) |
+| Licencia | Apache 2.0 (segun etiquetas); acceso restringido con aceptacion de condiciones |
+| Formato de pesos | Safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-Coder-32B-Instruct, un transformer decoder-only de la familia Qwen2 con 32.763.876.352 parámetros. Sobre esa base se aplica la técnica Heretic 1.x, un procedimiento de "abliteration" que modifica selectivamente las direcciones de activación asociadas a los comportamientos de rechazo, sin necesidad de un fine-tune supervisado completo ni de RLHF adicional. El resultado es un modelo que conserva la mayor parte de las capacidades del original pero elimina las respuestas de negativa ante contenido considerado sensible.
+El modelo parte de la arquitectura Qwen2, un transformer decoder-only denso con atención completa y las innovaciones habituales de la familia Qwen2 (RoPE, normalización RMSNorm, activación SwiGLU y atención con query-key normalization). El modelo base, Qwen2.5-Coder-32B-Instruct, fue entrenado por Alibaba sobre un corpus masivo de código y texto, con fases de preentrenamiento, ajuste supervisado y alineamiento por preferencias.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset de abliteration ni si hubo etapas de DPO o RLHF en este ajuste concreto. Tampoco se documentan innovaciones técnicas adicionales más allá de la propia metodología Heretic 1.x. Los detalles del proceso de entrenamiento del modelo base (Qwen2.5-Coder-32B-Instruct) no se incluyen en la información proporcionada.
+Sobre ese base, el autor aplica la técnica denominada "heretic" (versión 1.x), que consiste en una modificación dirigida de pesos orientada a suprimir la dirección de activación asociada a los rechazos, un procedimiento emparentado con la "abliteration". No se dispone en la información proporcionada de detalles sobre el volumen de datos de ajuste, la composición del dataset, el uso de RLHF/DPO adicional ni hiperparámetros del proceso. Tampoco se documentan innovaciones técnicas propias más allá de la modificación de pesos mencionada.
 
 ## Capacidades
 
-- Generación de texto y código: hereda las capacidades del modelo base Qwen2.5-Coder-32B-Instruct para completar, explicar y refactorizar código en múltiples lenguajes de programación.
-- Razonamiento y matemáticas: mantiene las habilidades del modelo base en tareas de razonamiento paso a paso y resolución de problemas matemáticos.
-- Conversación multi-turno: formato instruct, adecuado para diálogos con historial.
-- Comportamiento "decensored": ausencia de rechazos ante solicitudes que el modelo original bloquearía, lo que lo hace útil para investigación sobre alineación.
-- Soporte de tool calling / function calling: presumiblemente heredado del modelo base, aunque no se documenta explícitamente en la información disponible.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente en la información proporcionada.
-- Capacidades multilingües: el tag de idioma indica únicamente inglés ("en"); no se confirman otros idiomas.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto y conversación multi-turno en inglés.
+- Generación y explicación de código, heredada del modelo base Qwen2.5-Coder-32B-Instruct.
+- Razonamiento sobre problemas de programación y matemáticas, en la medida en que lo conserva el base.
+- Reducción o eliminación de rechazos ante peticiones que el modelo original declinaría (comportamiento "decensored"), objetivo central de la variante.
+- Soporte de tool calling / function calling: no confirmado explícitamente para este finetune en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas explícitamente para este finetune.
+- Capacidades multilingües: limitadas a inglés según la etiqueta del repositorio.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo cambia el comportamiento de un modelo de código al eliminar sus capas de rechazo, comparándolo directamente con Qwen2.5-Coder-32B-Instruct sobre los mismos prompts.
-- Análisis de robustez de filtros: útil para evaluar si los sistemas de moderación externos detectan contenido generado por modelos abliterated, y para diseñar defensas en pipelines de producción.
-- Generación de código sin restricciones en entornos controlados: en laboratorios o sandboxes donde se necesita que el modelo no rechace solicitudes legítimas de código sensible (por ejemplo, análisis de malware con fines defensivos).
-- Estudio de interpretabilidad: analizar las direcciones de activación modificadas por Heretic 1.x para entender qué representaciones internas codifican el rechazo.
-- Evaluación comparativa de modelos: servir como contrapunto no alineado en benchmarks de comportamiento, útil para papers sobre abliteration.
-- Docencia e investigación académica: experimentos sobre sesgos, seguridad y comportamiento de LLMs en entornos de investigación con acceso controlado.
-- Pruebas de red teaming: generar prompts y respuestas adversarias para entrenar clasificadores de seguridad.
+- Investigación sobre alineamiento y seguridad: el modelo sirve para estudiar cómo la modificación de pesos afecta a la tasa de rechazos y a la utilidad general, comparándolo con el base Qwen2.5-Coder-32B-Instruct en evaluaciones controladas.
+- Análisis de "abliteration": permite reproducir y auditar el efecto de la técnica heretic 1.x sobre un modelo de código de 32B, midiendo degradación en benchmarks de código y razonamiento.
+- Generación de código en entornos de investigación: puede emplearse para tareas de autocompletado y síntesis de código en pipelines internos donde no se requieran salvaguardas conversacionales estrictas.
+- Red teaming y evaluación de robustez: útil para construir conjuntos de prompts adversarios y medir la resistencia de sistemas de moderación externos frente a un modelo sin rechazos.
+- Estudio de sesgos y comportamiento: al carecer de las capas de rechazo del base, facilita observar respuestas del modelo ante temas sensibles en contextos académicos.
+- Experimentación con despliegue de modelos de 32B: sirve como banco de pruebas para cuantización, serving con vLLM o TGI y medición de throughput en hardware propio, dado su tamaño representativo.
+- Docencia sobre ética de IA: caso práctico para ilustrar los límites y riesgos de las técnicas de eliminación de alineamiento.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16/BF16, aproximadamente 65,5 GB solo para pesos, más overhead de activaciones y KV cache; se recomienda al menos 80 GB de VRAM.
-- En cuantización de 8 bits: aproximadamente 33 GB de VRAM.
-- En cuantización de 4 bits: aproximadamente 17-20 GB de VRAM, lo que lo hace viable en GPUs consumer de gama alta.
-- GPU recomendadas: A100 80GB, H100 80GB, H200 para FP16; RTX 4090 (24 GB) solo con cuantización de 4 bits y contexto limitado; múltiples RTX 3090/4090 en paralelo para FP16.
-- Cabe en consumer GPU: sí, únicamente con cuantización agresiva (4 bits) en RTX 4090, RTX 3090 o similares con 24 GB de VRAM.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference`), vLLM, llama.cpp/Ollama si se generan cuantizaciones GGUF (no incluidas en el repo).
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 65 GB solo para pesos, más overhead de activaciones y KV cache; se recomienda 80 GB o más.
+- VRAM estimada en cuantización de 8 bits: en torno a 33-35 GB de pesos, más overhead; viable en GPU de 48 GB o configuraciones multi-GPU.
+- VRAM estimada en cuantización de 4 bits: en torno a 17-20 GB de pesos, más overhead; podría caber en una RTX 4090 (24 GB) con contexto reducido, aunque no se dispone de cuantizaciones publicadas para este finetune.
+- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU (por ejemplo, 2x RTX 4090 o 2x A6000) para FP16.
+- Cabe en GPU de consumo: solo con cuantización agresiva (4 bits) y contexto limitado; no confirmado por falta de artefactos GGUF/AWQ publicados.
+- Opciones de despliegue: transformers (soporte nativo según etiquetas), text-generation-inference (TGI, etiqueta presente), endpoints compatibles; vLLM, llama.cpp u Ollama requerirían conversión o cuantización no publicada.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-Coder-32B-Instruct-heretic1x-code | 32,76B | no disponible | apache-2.0 | Gated | Variante abliterated con Heretic 1.x |
-| Qwen/Qwen2.5-Coder-32B-Instruct | 32,76B | no disponible en la informacion | apache-2.0 | Abierto | Modelo base alineado, con rechazos |
-| Otras variantes abliterated de Qwen2.5-Coder | no disponible | no disponible | variable | variable | No se dispone de datos comparativos en la informacion proporcionada |
+| richardyoung/Qwen2.5-Coder-32B-Instruct-heretic1x-code | 32,8B | No disponible (base: 32.768) | Apache 2.0 (etiqueta) | Gated | Variante decensored de investigación |
+| Qwen/Qwen2.5-Coder-32B-Instruct | 32,8B | 32.768 (ampliable) | Apache 2.0 | Abierto | Modelo base, alineado y con salvaguardas |
+| Otras variantes abliterated de Qwen2.5-Coder | ~32B | Variable | Variable | Variable | No disponibles datos concretos en la informacion proporcionada |
+| Modelos de código de ~30B (por ejemplo, CodeLlama-34B) | ~34B | 16.384 | Llama 2 custom | Abierto | Alternativa de otra familia; comparación de rendimiento no disponible |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento de esta variante frente a su modelo base u otras alternativas.
+La comparación de rendimiento cuantitativo entre estas alternativas no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "decensored": elimina los rechazos de seguridad del modelo original, por lo que puede generar contenido sensible, ofensivo o peligroso. No apto para aplicaciones de cara al público sin moderación externa.
-- Riesgo de alucinación: heredado del modelo base; la abliteration no corrige ni agrava necesariamente este comportamiento, pero no hay evaluación disponible.
-- Idiomas: el tag indica únicamente inglés; el rendimiento en castellano no está verificado.
-- Licencia: aunque el repo declara apache-2.0, los tags incluyen openrail++ y el acceso es gated; conviene revisar las condiciones exactas antes de uso comercial.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso en pipelines automatizados.
-- Contexto: no se documenta la longitud de contexto efectiva de esta variante; se asume la del modelo base, pero no está confirmada.
-- Sin benchmarks publicados: no hay evidencia de que la abliteration no haya degradado capacidades de código o razonamiento.
-- Uso responsable: recomendado exclusivamente para investigación, red teaming y análisis de seguridad en entornos controlados.
+- El modelo ha sido modificado para eliminar rechazos; puede generar contenido dañino, ilegal o inseguro sin las salvaguardas del base. No es apto para producción orientada al usuario final sin moderación externa.
+- Riesgo elevado de alucinación, potencialmente agravado por la modificación de pesos; no se han publicado evaluaciones que cuantifiquen la degradación.
+- Idiomas: solo inglés según la etiqueta; el rendimiento en castellano no está garantizado.
+- Licencia: aunque las etiquetas indican Apache 2.0, el acceso es restringido (gated) y las condiciones de uso deben aceptarse en Hugging Face; conviene verificar los términos reales antes de cualquier uso comercial.
+- La técnica de abliteration puede degradar capacidades del modelo base (código, razonamiento, coherencia); no hay benchmarks publicados que lo confirmen o descarten.
+- Sesgos: no documentados para este finetune; hereda los del base y la modificación puede alterar su manifestación.
+- Fecha de creación indicada en el repositorio (2026-11-09) y escaso número de descargas (716) y likes (0) sugieren poca validación comunitaria.
+- No se dispone de cuantizaciones oficiales ni de artefactos de despliegue listos para vLLM, llama.cpp u Ollama.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-32B-Instruct-heretic1x-code
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-32B-Instruct-heretic1x-code
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
-- No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web proporcionada.
+- No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales asociados a esta variante.

@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Ling3.2-air-FP8-GGUF",
   "created_at": "2026-11-24T12:23:10.000Z",
-  "updated_at": "2026-11-25T01:19:20.000Z",
+  "updated_at": "2026-11-26T10:40:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

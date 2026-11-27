@@ -2,92 +2,88 @@
 
 ## Resumen
 
-`agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3` es un checkpoint de aprendizaje por refuerzo (RL) construido sobre `Qwen/Qwen3-4B-Instruct-2507`. No es un modelo entrenado desde cero ni un ajuste supervisado al uso: se parte del modelo base Qwen3-4B sin semilla de SFT y se aplica RL directamente con el algoritmo GRPO mediante la libreria OpenRLHF. El checkpoint guardado corresponde al paso global 46 de la ejecucion de RL homonima y el propio autor lo etiqueta como la mejor revision de la ejecucion atendiendo a la metrica pass@8.
+`agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3` es un checkpoint de aprendizaje por refuerzo (RL) derivado de `Qwen/Qwen3-4B-Instruct-2507`. Lo publica el usuario agurung como parte de una campana experimental de RL aplicada directamente sobre el modelo base de Qwen3-4B, sin una fase previa de SFT (supervised fine-tuning) propia. El objetivo declarado es mejorar la generacion de codigo verificable: el modelo se entrena con recompensa binaria de correccion de codigo (1.0 si el programa generado pasa los tests del problema, 0.0 en caso contrario).
 
-El objetivo declarado es la generacion de codigo verificablemente correcta. La senal de recompensa es binaria: 1.0 si el programa generado supera los tests del problema y 0.0 en caso contrario, con penalizaciones adicionales para truncamiento y respuestas excesivamente largas. El entrenamiento se apoya en un subconjunto de problemas dificiles ("frontier") del conjunto cobalt-train, concretamente aquellos que el modelo base resolvia como maximo en 2 de 64 muestras.
+El checkpoint corresponde al paso global 110 de la ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_iid16_s3` y el autor lo identifica como el mejor hasta la fecha segun la metrica pass@8 dentro de esa ejecucion. El conjunto de entrenamiento y validacion es el denominado "cobalt-train ≤2/64 frontier": 1833 problemas de entrenamiento y 112 de validacion reservados, seleccionados porque el modelo base los resolvia como maximo en 2 de 64 muestras bajo un escaneo de dificultad iid_canonical@64.
 
-Su relevancia practica es doble. Por un lado, es un ejemplo abierto y reproducible de un experimento de RL sobre modelos pequenos con la receta completa publicada (hiperparametros, penalizaciones, logs en Weights & Biases). Por otro, con 3.973.556.832 parametros (~3,97B) y pesos en safetensors, es un modelo lo bastante compacto como para desplegarse en hardware de gama alta de consumo, lo que lo hace atractivo para experimentacion en generacion de codigo.
+Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion: no hay model card con resultados de evaluacion, no se declara licencia ni idiomas, y el nombre del repositorio codifica hiperparametros del experimento. Su interes actual reside en que documenta una receta concreta de GRPO con penalizaciones anti-truncamiento (estilo ProRL y DAPO) sobre un modelo de 4B, un tamano manejable en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredado de Qwen3-4B-Instruct-2507); la etiqueta `nemotron_h` aparece en los tags pero no se confirma en la model card |
-| Parametros totales | 3.973.556.832 (~3,97B) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible; el repositorio publica pesos en safetensors, sin GGUF ni cuantizaciones precalculadas |
+| Arquitectura | Transformer decoder-only (derivado de Qwen3-4B; tag `nemotron_h` en Hugging Face) |
+| Parametros totales | 3.973.556.832 (~3,97 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3-4B-Instruct-2507; no confirmada en la informacion) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion posible via herramientas externas, no documentada) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (libreria transformers) |
 
-Nota: el repositorio ocupa 182,8 GB, un tamano muy superior al de un unico checkpoint de ~4B en precision completa, lo que sugiere que contiene pesos auxiliares o multiples artefactos del experimento. El checkpoint principal se sirve en la raiz del repositorio (rama `main`).
-
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4.000 millones de parametros. El autor no describe cambios estructurales sobre dicha base: el experimento es exclusivamente de optimizacion por RL, no de modificacion arquitectonica. El modelo se carga directamente desde la raiz del repositorio sin subcarpeta.
+El modelo parte de `Qwen/Qwen3-4B-Instruct-2507`, un transformer decoder-only de aproximadamente 4B parametros. Sobre esa base se aplica RL directo sin semilla SFT adicional: el autor indica explicitamente "no SFT seed — RL applied directly to the base model". El algoritmo es GRPO (Group Relative Policy Optimization) con ventajas normalizadas por grupo y sin penalizacion KL, implementado con OpenRLHF.
 
-El entrenamiento emplea GRPO (Group Relative Policy Optimization) con ventajas normalizadas por grupo y sin penalizacion KL. La receta incluye dos mecanismos de modelado de recompensa destacables: una penalizacion "stop-properly" (estilo ProRL) que asigna recompensa -1,0 a las muestras truncadas, y una penalizacion DAPO de sobrelongitud que aplica un castigo aditivo creciente hasta -0,25 a las respuestas que caen en los ultimos 1024 tokens antes del limite. Los hiperparametros concretos son: 8 muestras por prompt, tamano de lote de rollout y de entrenamiento de 128, maximo de 4096 tokens nuevos por rollout, 2 episodios, y tasa de aprendizaje del actor constante de 1e-06. Los datos de entrenamiento son 1833 problemas de entrenamiento y 112 de validacion del "frontier" cobalt-train (problemas resueltos por el modelo base en 2 de 64 muestras como maximo). Las metricas de evaluacion de este checkpoint no figuren en el log de entrenamiento.
+La receta incluye varias innovaciones de shaping de recompensa orientadas a evitar respuestas truncadas y divagaciones: una penalizacion "stop-properly" que asigna recompensa -1.0 a las muestras truncadas (estilo ProRL), y una penalizacion DAPO de sobrelongitud que aplica un castigo aditivo creciente hasta -0.25 a las respuestas que caen en los ultimos 1024 tokens antes del limite. Los hiperparametros clave son 8 muestras por prompt, batch de rollout y de entrenamiento de 128, maximo de 4096 tokens nuevos por rollout, 2 episodios, learning rate del actor de 1e-06 constante y evaluacion de validacion a temperatura 1.0. El entrenamiento se realizo sobre 1833 problemas de codigo seleccionados por dificultad (resueltos como maximo en 2 de 64 muestras por el modelo base).
 
 ## Capacidades
 
-- Generacion de texto e instrucciones: hereda la capacidad conversacional e instructiva de Qwen3-4B-Instruct-2507.
-- Generacion de codigo: capacidad principal optimizada por RL, con recompensa basada en superacion de tests; el checkpoint se selecciona precisamente por su pass@8.
-- Razonamiento paso a paso orientado a problemas de programacion dificiles, derivado del entrenamiento sobre el subconjunto "frontier".
-- Formato de salida de programa completo (el reward de correctitud evalua programas generados contra tests).
-- Tool calling / function calling: no especificado en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no especificado en la informacion proporcionada.
-- Capacidades multilingues: no disponible (el modelo base Qwen3 es multilingue, pero el efecto del RL sobre idiomas distintos del usado en entrenamiento no se documenta).
-- Modo "thinking" explicito: no especificado en la informacion proporcionada.
-- Vision o audio: no soportado (el pipeline declarado es unicamente text-generation).
+- Generacion de texto y razonamiento general, heredados de Qwen3-4B-Instruct-2507.
+- Generacion de codigo con enfasis en correccion funcional verificable mediante tests, que es la senal de recompensa del entrenamiento.
+- Razonamiento multi-paso orientado a resolver problemas de programacion.
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada (probablemente heredado del modelo base, pero no verificado).
+- Capacidades de agente: no documentadas en la informacion disponible.
+- Capacidades multilingues: no documentadas; los idiomas figuran como no disponibles.
+- Modo thinking explicito: no documentado para este checkpoint.
 
 ## Casos de uso
 
-- Generacion de codigo en pipelines de evaluacion: el modelo esta optimizado para producir programas que pasan baterias de tests, por lo que encaja en bucles de resolucion de problemas tipo benchmark o en la generacion de soluciones candidatas que luego se filtran por tests automatizados.
-- Investigacion en RL para LLM: al publicar receta, hiperparametros y logs, sirve como referencia reproducible para estudiar GRPO, penalizaciones anti-truncamiento y senales de recompensa binarias en modelos pequenos.
-- Asistencia de programacion en local: con ~4B parametros y pesos safetensors, puede desplegarse en una GPU de consumo para autocompletado y generacion de funciones sin dependencia de la nube.
-- Generacion de tests unitarios a partir de enunciados: el entrenamiento sobre problemas con baterias de tests favorece que el modelo entienda la relacion entre especificacion y verificacion.
-- Experimentos de destilacion o comparacion de tecnicas de RL: el checkpoint, junto con otros pasos de la misma ejecucion, permite estudiar la evolucion del rendimiento por paso global.
-- Entornos educativos de programacion: uso como generador de soluciones de referencia para problemas de dificultad alta, siempre con verificacion posterior mediante ejecucion.
-- Punto de partida para fine-tuning posterior: al estar sobre una base instruct conocida, puede servir como inicializacion para ajustes especificos de dominio en codigo.
+- Generacion de codigo verificable en pipelines de evaluacion: el modelo esta optimizado para producir programas que pasan tests, por lo que encaja en entornos de sintesis de codigo con validacion automatica (por ejemplo, generacion de funciones a partir de especificaciones y ejecucion de la suite de pruebas).
+- Investigacion en RL para codigo: sirve como checkpoint de referencia para reproducir o comparar recetas GRPO con penalizaciones anti-truncamiento sobre modelos de 4B.
+- Generacion de soluciones en entornos competitivos o de practica: dado su entrenamiento en problemas tipo "frontier" de dificultad calibrada, es adecuado para tareas de programacion con veredicto binario.
+- Fine-tuning posterior: al ser un checkpoint de 4B en safetensors y compatible con transformers, puede usarse como punto de partida para SFT o RL adicional en dominios especificos.
+- Servicio de inferencia local con vLLM: el autor documenta el comando `vllm serve`, lo que permite desplegarlo en una GPU para experimentacion y prototipado.
+- Evaluacion comparativa de tecnicas de RL: util para medir el efecto de la penalizacion DAPO y ProRL frente a GRPO estandar en tareas de codigo.
+- Prototipado de asistentes de programacion en local: con ~4B parametros cabe en GPUs de consumo, lo que facilita pruebas de concepto sin infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que este checkpoint es el mejor de su ejecucion segun pass@8, pero aclara explicitamente que las metricas de evaluacion de este checkpoint no figuran en el log de entrenamiento. No se dispone de cifras de MMLU, HumanEval, GSM8K ni de pass@8 absoluto.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que las metricas de evaluacion de este checkpoint "no estan disponibles en el log de entrenamiento". El unico dato de rendimiento declarado es que se trata del mejor checkpoint por pass@8 dentro de la ejecucion, sin cifra concreta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculos estandar segun el numero de parametros, no datos publicados por el autor): ~8 GB en FP16/BF16, ~4-5 GB en INT8 y ~2,5-3 GB en cuantizacion INT4/GGUF Q4.
-- GPU recomendadas: para precision completa, una RTX 4090 (24 GB) o A100 40 GB; para cuantizacion, tarjetas con 8-12 GB de VRAM son suficientes.
-- Cabe en GPU de consumo: si, gracias a su tamano (~3,97B), en GPUs tipo RTX 3060 12 GB, RTX 4070 o RTX 4090, especialmente con cuantizacion.
-- Opciones de despliegue: transformers (`AutoModelForCausalLM`), vLLM (`vllm serve ... --revision main`). No se documenta soporte oficial para llama.cpp u Ollama, ya que no se publican pesos GGUF.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~4B parametros, en FP16/BF16 se requieren aproximadamente 8 GB de pesos mas overhead de activaciones y cache KV; en cuantizacion de 8 bits, unos 4-5 GB; en 4 bits, unos 2,5-3 GB. Estas cifras son estimaciones generales, no datos del autor.
+- GPU recomendadas: no especificadas por el autor. Para servicio con vLLM se recomienda una GPU con al menos 16-24 GB (por ejemplo, RTX 4090, A10, L4) para margen de contexto y concurrencia.
+- GPU de consumo: previsiblemente cabe en RTX 3090/4090 y en GPUs de 12-16 GB con cuantizacion, aunque no hay confirmacion oficial.
+- Opciones de despliegue: transformers (documentado), vLLM (documentado por el autor con `vllm serve`). Otras opciones como llama.cpp, Ollama o TGI no estan documentadas para este checkpoint y requeririan conversion a GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-... (este) | ~3,97B | no disponible | RL GRPO sobre generacion de codigo | no disponible | safetensors en Hugging Face, transformers + vLLM |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion proporcionada | Instruct generalista | no disponible en la informacion proporcionada | safetensors, ampliamente soportado |
-| Otros modelos pequenos de codigo de ~3-4B (por ejemplo, variantes Coder de la familia Qwen) | ~3-4B | no disponible | Fine-tuning supervisado en codigo | variable | amplia disponibilidad |
+| Este checkpoint (cobalt-seeded-rl...) | ~3,97B | no disponible | RL GRPO sobre Qwen3-4B para codigo | no disponible | Hugging Face (214 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta ficha | Instruct generalista | no disponible en esta ficha | Hugging Face (modelo base) |
+| Alternativas de ~4B para codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion cuantitativa de rendimiento entre estas alternativas no puede establecerse con la informacion disponible, ya que no se han publicado cifras de benchmarks para este checkpoint.
+La comparacion cuantitativa con alternativas no es posible con la informacion proporcionada: no hay benchmarks publicados de este checkpoint ni datos de rendimiento del modelo base en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Rendimiento no verificado publicamente: no hay metricas de evaluacion en la model card, por lo que el rendimiento real frente a la base Qwen3-4B-Instruct-2507 no puede cuantificarse sin evaluacion propia.
-- Riesgo de sobreajuste al dominio de entrenamiento: el RL se aplico sobre un subconjunto "frontier" muy especifico (1833 problemas), lo que puede degradar la generalidad fuera de ese tipo de tareas.
-- Riesgo de alucinacion: como cualquier modelo generativo, puede producir codigo sintacticamente plausible pero incorrecto; el propio diseno de la recompensa (correctitud binaria por tests) implica que la verificacion automatica es necesaria.
-- Idiomas: no se documenta el comportamiento multilingue ni el efecto del RL sobre idiomas distintos del usado en entrenamiento.
-- Licencia: no disponible, lo que supone un riesgo para uso comercial hasta que el autor la concrete.
-- Contexto: al no documentarse la longitud de contexto efectiva, no se garantiza el manejo de entradas largas.
-- Deriva de truncamiento: aunque el entrenamiento penaliza respuestas truncadas, no se garantiza que el modelo termine correctamente en tareas muy extensas.
-- Conservacion del modo instruct: al aplicarse RL directamente sobre la base sin SFT de semilla, existe riesgo de degradacion de capacidades conversacionales generales (por ejemplo, seguimiento de formato o rechazo de contenido problematico) respecto al modelo Instruct original.
+- Ausencia total de evaluacion publicada: no hay metricas de benchmarks ni resultados de validacion en la model card, solo la afirmacion de que es el mejor checkpoint por pass@8 de la ejecucion.
+- Licencia no declarada: no se puede asumir uso comercial; es imprescindible verificar la licencia del modelo base Qwen3-4B-Instruct-2507 antes de cualquier despliegue en produccion.
+- Idiomas no declarados: no hay garantia de comportamiento multilingue ni de calidad fuera del ingles o del dominio de codigo.
+- Riesgo de alucinacion: como todo modelo generativo, puede producir codigo sintacticamente plausible pero incorrecto; la senal de recompensa es binaria y no garantiza correccion fuera del conjunto de entrenamiento.
+- Sesgo de dominio: entrenado exclusivamente en problemas de codigo del "cobalt-train ≤2/64 frontier", por lo que su rendimiento fuera de ese tipo de tareas puede degradarse respecto al modelo base.
+- Naturaleza experimental: el nombre del repositorio codifica hiperparametros y el autor lo describe como checkpoint de una ejecucion de investigacion, no como un modelo final pulido.
+- Posible sobreajuste al formato de evaluacion: la validacion se hace a temperatura 1.0 con prompts canonical clean_eval, lo que puede no reflejar el comportamiento en otros formatos de prompt.
+- Contexto no confirmado: aunque el modelo base Qwen3-4B-Instruct-2507 tiene una ventana conocida, la model card no la declara para este checkpoint.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Logs de entrenamiento (Weights & Biases): proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_iid16_s3` (sin URL directa en la informacion proporcionada)
-- Log local de entrenamiento: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_iid16_s3/openrlhf_train.log` (ruta interna del autor, no accesible publicamente)
-- OpenRLHF (framework de entrenamiento): no se proporciona URL en la informacion disponible
+- Logs de entrenamiento: Weights & Biases, proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2-ncp5-n3nc-iid16-s3` (no se proporciona URL directa)
+- OpenRLHF (framework de entrenamiento): no se proporciona enlace en la informacion disponible
+- Paper de GRPO, ProRL o DAPO: no se proporcionan enlaces en la informacion disponible

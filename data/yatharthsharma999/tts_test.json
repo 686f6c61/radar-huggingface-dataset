@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "YaTharThShaRma999/tts_test",
+  "slug": "yatharthsharma999-tts_test",
+  "author": "YaTharThShaRma999",
+  "url": "https://huggingface.co/YaTharThShaRma999/tts_test",
+  "created_at": "2026-11-27T03:33:41.000Z",
+  "updated_at": "2026-11-27T03:43:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 302830976,
+  "parameters_human": "302.8M",
+  "storage_bytes": 681722541,
+  "storage_human": "682 MB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

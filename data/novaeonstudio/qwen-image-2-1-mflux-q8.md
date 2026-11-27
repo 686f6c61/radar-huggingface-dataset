@@ -2,108 +2,100 @@
 
 ## Resumen
 
-NovaeonStudio/qwen-image-2.1-mflux-q8 es una cuantizacion a 8 bits del modelo de difusion Qwen-Image-2.1 de Alibaba Qwen, reempaquetada en formato nativo de mflux para su ejecucion sobre Apple Silicon mediante MLX. No es un modelo original: los pesos son los oficiales sin cambios (relacion `quantized`), unicamente comprimidos con `mflux-save --quantize 8`. El build lo firma Novaeon.Studio y resuelve un hueco concreto: cuando se publico Qwen-Image-2.1 no existia un paquete 8-bit listo para mflux, solo el modelo en precision completa.
+`NovaeonStudio/qwen-image-2.1-mflux-q8` es una cuantización de 8 bits del modelo de difusión texto-a-imagen `Qwen/Qwen-Image-2.1`, empaquetada por Novaeon.Studio en el formato nativo de la librería mflux para su ejecución sobre Apple Silicon mediante MLX. No es un modelo nuevo: es un repack de los pesos oficiales de Qwen, sin fine-tuning ni fusiones, orientado a que la comunidad Mac pueda cargar el modelo de forma directa con el pipeline dedicado `mflux-generate-qwen-2.1`.
 
-El modelo hereda la arquitectura del base: un componente de generacion visual de aproximadamente 7.000 millones de parametros organizado en 32 capas DiT (Diffusion Transformer) de un solo flujo, acompanado de un text encoder Qwen2.5-VL y un VAE de imagen. La tarea es text-to-image (pipeline `text-to-image`), aunque el modelo base es unificado y tambien cubre edicion de imagenes con referencias.
+El problema que resuelve es operativo: cuando se publicó Qwen-Image-2.1 no existía un paquete de 8 bits listo para mflux, solo el modelo base en precisión completa. Esta build reduce el peso en disco a unos 22 GB y el pico de memoria en ejecución a unos 18,4 GB, lo que la hace viable en máquinas Apple Silicon con 24 GB o más de memoria unificada, evitando cuantizaciones en tiempo de ejecución y descargas de más de 40 GB.
 
-Su relevancia practica esta en el consumo de recursos: ocupa unos 22 GB en disco y pico de memoria en torno a 18,4 GB, de modo que cabe en una maquina Apple Silicon de 24 GB o mas. Segun las mediciones del autor sobre un M5 Max, rinde a ~1,4 s por paso, con un borrador de 8 pasos en unos 14 segundos a 768². La licencia es la heredada del modelo base (`qwen-image-2.1-license`, categoria `other`), por lo que conviene revisarla antes de cualquier uso comercial.
+La arquitectura subyacente es un transformer de difusión (DiT) con un text encoder Qwen2.5-VL y un VAE de imagen. El modelo está pensado para generación de imágenes fotorrealistas con buen rendimiento en materiales e iluminación, y tolera inferencia con pocos pasos (8 pasos con guidance 1.0 para borradores rápidos). La licencia es de investigación, no comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) de un solo flujo, 32 capas en el componente de generacion visual; text encoder Qwen2.5-VL y VAE de imagen |
-| Parametros totales | ~7.000 millones en el componente de generacion visual (modelo base); total del pipeline completo no disponible |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (modelo de difusion; procesa prompts de texto, no contexto de tokens extensible declarado) |
-| Tipos de cuantizacion | 8-bit (mflux). Existe una variante comunitaria en 4-bit (`mflux-community/qwen-image-2-1-mflux-q4`) |
+| Arquitectura | Transformer de difusion (DiT) con text encoder Qwen2.5-VL y VAE de imagen |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo texto-a-imagen; el contexto aplica al prompt de texto) |
+| Tipos de cuantizacion | 8 bits (mflux 8-bit, generado con `mflux-save --quantize 8`) |
 | Idiomas soportados | en (ingles) |
-| Licencia | other — `qwen-image-2.1-license` (heredada del modelo base) |
-| Formato de pesos | safetensors (formato nativo mflux / Apple MLX) |
+| Licencia | qwen-research-license (solo investigacion y evaluacion; uso comercial requiere licencia aparte de Qwen) |
+| Formato de pesos | safetensors (shards por componente: `transformer/`, `text_encoder/`, `vae/`, `processor/`) |
 
 ## Arquitectura y entrenamiento
 
-El componente de generacion visual es un transformer de difusion (DiT) de un solo flujo con 32 capas, disenado por Qwen para equilibrar calidad, eficiencia de inferencia y versatilidad. El pipeline completo se compone de cuatro partes distribuidas en el repositorio: `transformer/` (fragmentos cuantizados del DiT, shards 0-3 mas indice), `text_encoder/` (codificador Qwen2.5-VL, shards 0-7 mas indice), `vae/` (VAE de imagen) y `processor/` (tokenizer y plantilla de chat). Este build concreto no introduce ningun cambio en los pesos ni fine-tuning ni merge alguno: es una cuantizacion directa del modelo oficial.
+El modelo base Qwen-Image-2.1 es un modelo de difusion texto-a-imagen cuya columna vertebral es un transformer de difusion (DiT). El paquete incluye cuatro componentes: el transformer DiT cuantizado (shards 0-3 mas indice), el text encoder basado en Qwen2.5-VL (shards 0-7 mas indice), el VAE de imagen y el procesador con tokenizer y chat template. Esta build concreta es una cuantizacion directa de los pesos oficiales a 8 bits mediante mflux, sin reentrenamiento, fine-tuning ni fusion de pesos.
 
-Sobre el entrenamiento del modelo base, la informacion disponible en la busqueda web no detalla el numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO; esos datos figuran como no disponibles. Lo que si se documenta es que Qwen-Image-2.1 unifica generacion text-to-image y edicion de imagenes en un unico modelo de ~7B en su componente visual, con soporte nativo para generar y editar imagenes con transparencia (RGBA). La implementacion en mflux anade capacidades de edicion por instrucciones con una o varias referencias, cache de KV por prefijo (prefix KV caching) y salida RGBA a traves de comandos especificos (`mflux-generate-qwen-2.1-edit`), aunque este paquete cuantizado esta orientado al pipeline text-to-image (`mflux-generate-qwen-2.1`). Como innovaciones tecnicas destacables del base se citan cuatro mejoras orientadas a compacidad y eficiencia; el detalle completo no esta en la informacion proporcionada.
+No se dispone en la informacion proporcionada de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo base. La innovacion tecnica destacable de este repack es el formato nativo mflux sobre MLX, que permite cargar el modelo en segundos y mantener coherencia con muy pocos pasos de muestreo (8 pasos con guidance 1.0), lo que abarata los borradores y acelera las iteraciones.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) con calidad fotografica, segun las muestras del autor en materiales, iluminacion y realismo de camara.
-- Coherencia a bajo numero de pasos: el base se mantiene estable a 8 pasos con guidance 1.0, lo que permite borradores rapidos.
-- Ajuste de fidelidad al prompt mediante `--guidance` (1.0 en borrador, 2.5-3.5 en resultado final).
-- Control de resolucion: valores de 1024 a 1536 recomendados, en multiplos de 16, con 1328² como valor por defecto sugerido.
-- Reproducibilidad mediante semilla (`--seed`).
-- Ejecucion local en Apple Silicon a traves de mflux 0.20.0 o superior (MLX), sin cuantizacion en tiempo de ejecucion.
-- El modelo base, no este build, anade edicion de imagenes guiada por instrucciones con referencias multiples, cache de KV por prefijo y salida RGBA.
-- Tool calling / function calling: no aplica (modelo de generacion de imagen, no de texto conversacional).
-- Soporte de agentes y razonamiento multi-paso: no aplica.
-- Capacidades multilingues: no; la etiqueta de idioma oficial es unicamente `en`.
-- Vision como entrada: el text encoder es Qwen2.5-VL, pero este pipeline esta orientado a text-to-image; las capacidades de edicion/entrada de imagen pertenecen al flujo de edicion del base.
+- Generacion de imagenes texto-a-imagen con enfasis en materiales, iluminacion y realismo fotografico.
+- Borradores rapidos con pocos pasos (8 pasos, guidance 1.0) manteniendo coherencia.
+- Generacion final de mayor detalle con 20-30 pasos y guidance 2.5-3.5.
+- Resoluciones configurables entre 1024 y 1536 (multiplos de 16), con 1328x1328 como valor por defecto recomendado.
+- Control de semilla para resultados reproducibles.
+- Capacidad limitada de renderizar texto en imagen; el autor recomienda minimizarlo y componer texto real despues.
+- Soporte de prompts en ingles (unico idioma declarado).
+- No se documentan capacidades de tool calling, agentes, vision de entrada, audio ni modo de razonamiento, al tratarse de un modelo de generacion de imagen.
 
 ## Casos de uso
 
-- Fotografia de producto sintetica: generar bodegones de producto (cristal, perfumeria, materiales) con control de iluminacion mediante lenguaje fotografico ("rim light", "macro detail", "85 mm"), adecuado por el buen rendimiento del base en materiales y luz.
-- Moodboards y direccion de arte: iterar rapidamente con borradores de 8 pasos (~14 s a 768²) para validar paletas y composiciones antes de gastar pasos en un resultado final a 20-30 pasos.
-- Ilustracion de escenas y arquitectura: generar corredores, interiores y entornos con iluminacion volumetrica y narrativa atmosferica, usando resoluciones panoramicas (por ejemplo 1792×1008).
-- Concept art para videojuegos y ocio digital: producir assets con coherencia de paleta; el modelo base soporta salida RGBA con transparencia (a traves del pipeline de edicion de mflux), util para sprites y elementos superpuestos.
-- Contenido de marketing con paleta de marca: forzar una identidad cromatica constante mediante prompts especificos ("midnight navy background, amber-to-coral glow, indigo accents") para piezas graficas de redes o web.
-- Prototipado local en Mac sin GPU dedicada: desarrollo y pruebas de pipelines de difusion en un portatil o equipo Apple Silicon con 24 GB o mas de memoria unificada, evitando descargar el modelo en precision completa (40 GB+).
-- Pruebas de integracion de mflux en flujos propios: servir el modelo desde scripts en linea de comandos para generar lotes de imagenes reproducibles con semilla fija, util en entornos de investigacion y evaluacion comparativa.
-- Generacion de ilustraciones para documentacion tecnica o blogs: crear imagenes de apoyo (escenas de centros de datos, diagramas conceptuales) sin depender de servicios en la nube.
+- Prototipado visual rapido en Mac: usar los 8 pasos con guidance 1.0 para generar borradores en unos 14 segundos a 768x768 y validar direcciones creativas antes de invertir en renders finales.
+- Fotografia de producto sintetica: generar bodegones con lenguaje de iluminacion ("rim light", "volumetric", "85 mm") para maquetas de ecommerce o presentaciones, aprovechando el rendimiento del base en materiales y reflejos.
+- Concept art de arquitectura y escenarios: prompts de interiores o exteriores con paletas controladas (por ejemplo, "midnight navy background, amber-to-coral glow, indigo accents") para previsualizacion de entornos.
+- Exploracion de paletas de marca: fijar una paleta consistente mediante el prompt y generar variaciones de una misma direccion visual para revision interna.
+- Iteracion creativa local sin nube: al requerir unos 18,4 GB de pico de memoria, se puede ejecutar en un portatil Apple Silicon de 24 GB o mas, manteniendo el flujo de trabajo offline y sin coste por imagen.
+- Investigacion en difusion: servir como base cuantizada reproducible para experimentos de muestreo con pocos pasos, comparativas de guidance o estudios de calidad frente al modelo en precision completa.
+- Generacion de material de referencia para equipos de diseno: crear imagenes de referencia que luego se retocan o se usan como guia en herramientas de diseno, dado el caracter no comercial de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (tipo FID, CLIP, MMLU o HumanEval, estos ultimos no aplicables) en la informacion disponible. El autor unicamente reporta mediciones de rendimiento de inferencia sobre un Apple M5 Max de 128 GB en 8 bits:
+No se han publicado resultados de benchmarks de calidad (tipo MMLU, HumanEval o metricas de imagen como FID) en la informacion disponible. Los unicos datos de rendimiento son mediciones de velocidad y memoria del autor sobre un Apple M5 Max de 128 GB:
 
-| Resolucion | Pasos | Tiempo | Pico de memoria |
+| Resolucion | Pasos | Tiempo | Memoria pico |
 |---|---|---|---|
-| 768² | 8 | ~14 s | ~18,4 GB |
-| 1328² | 8 | ~30 s (incluye carga) | ~18 GB |
+| 768x768 | 8 | ~14 s | ~18,4 GB |
+| 1328x1328 | 8 | ~30 s (incluye carga) | ~18 GB |
 
-El tiempo escala aproximadamente de forma lineal con el numero de pasos y con el area en pixeles. La primera llamada paga un coste unico de carga del modelo; las llamadas posteriores, con el modelo residente en memoria, son mas rapidas. El autor cita ~1,4 s por paso como referencia.
+El tiempo escala de forma aproximadamente lineal con el numero de pasos y el area en pixeles. La primera llamada incluye un coste de carga del modelo; las llamadas posteriores con el modelo residente son mas rapidas. La velocidad medida es de aproximadamente 1,4 s por paso en M5 Max.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: pico de ~18,4 GB a 768² con 8 pasos; ~18 GB a 1328². En disco, ~22 GB (el repositorio completo pesa 24,0 GB).
-- Memoria unificada recomendada: 24 GB o mas en Apple Silicon para un funcionamiento comodo segun el autor.
-- Hardware de referencia: el build se creo y midio en un Apple M5 Max con 128 GB de memoria unificada.
-- GPU compatibles: al ser un paquete MLX/mflux, esta pensado para Apple Silicon (chips M-series). No esta orientado a GPU NVIDIA o AMD; para esas plataformas habria que usar el modelo base en otro runtime.
-- Cabe en portatil consumer: si, en equipos Apple Silicon con 24 GB o mas de memoria unificada.
-- Opciones de despliegue: mflux (0.20.0 o superior) mediante los comandos `mflux-generate-qwen-2.1` y el flujo de edicion asociado. No se documentan aqui soportes para vLLM, llama.cpp, Ollama ni TGI, dado que es un modelo de difusion y no un LLM.
-- Latencia y throughput: ~1,4 s por paso en M5 Max; ~14 s para un borrador de 8 pasos a 768²; ~30 s a 1328² incluyendo la carga.
+- Memoria pico en ejecucion: unos 18,4 GB a 768x768 con 8 pasos; unos 18 GB a 1328x1328.
+- Espacio en disco: unos 22 GB para los pesos cuantizados (el repositorio ocupa 24,0 GB).
+- Hardware objetivo: Apple Silicon con memoria unificada de 24 GB o mas; el autor lo construyo y midio en un Apple M5 Max de 128 GB.
+- No esta pensado para GPU NVIDIA ni CUDA: el formato es MLX/mflux, no GGUF ni safetensors estandar para vLLM, TGI o llama.cpp.
+- Opciones de despliegue: mflux 0.20.0 o superior, mediante el comando `mflux-generate-qwen-2.1`.
+- No se debe volver a aplicar `--quantize` al cargar el modelo, ya que los pesos ya estan cuantizados a 8 bits.
+- Latencia y throughput: aproximadamente 1,4 s por paso en M5 Max; 8 pasos en unos 14 s a 768x768 y unos 30 s a 1328x1328 incluyendo carga.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros (componente visual) | Formato / runtime | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / motor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NovaeonStudio/qwen-image-2.1-mflux-q8 (este build) | ~7B | safetensors / mflux (MLX, Apple Silicon) | 8-bit | qwen-image-2.1-license (other) | Hugging Face, 0 descargas, 1 like |
-| Qwen/Qwen-Image-2.1 (base) | ~7B | safetensors (precision completa) | ninguna | qwen-image-2.1-license (other) | Hugging Face, modelo oficial |
-| mflux-community/qwen-image-2-1-mflux-q4 | ~7B | safetensors / mflux (MLX) | 4-bit | licencia del base sin cambios | Hugging Face, conversion comunitaria |
+| NovaeonStudio/qwen-image-2.1-mflux-q8 | no disponible | no disponible | safetensors 8-bit / mflux (MLX) | qwen-research-license (no comercial) | Hugging Face, 213 descargas |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | precision completa / varios | qwen-research-license (no comercial) | Hugging Face (oficial) |
+| Otros modelos texto-a-imagen para Apple Silicon | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativos entre estas variantes ni frente a alternativas de otros fabricantes en la informacion proporcionada; por tanto, la comparativa se limita a formato, cuantizacion y disponibilidad. Cualquier comparacion de calidad con modelos como FLUX u otros no esta respaldada por datos en las fuentes consultadas y figura como no disponible.
+La comparativa directa mas relevante es con el modelo base Qwen-Image-2.1 en precision completa: esta build reduce el peso en disco a unos 22 GB y el pico de memoria a unos 18,4 GB, a cambio de una cuantizacion a 8 bits cuyos efectos en calidad no se han cuantificado en la informacion disponible. No se dispone de datos de otros modelos comparables de la misma categoria en el material proporcionado.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion a 8 bits: puede perder algo de fidelidad frente al modelo base en precision completa, aunque el autor afirma mantener la coherencia a bajo numero de pasos.
-- No se ha publicado ninguna evaluacion de sesgos del modelo ni de este build concreto; se desconoce el comportamiento en prompts sensibles.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede producir detalles incoherentes.
-- Texto renderizado: el propio autor advierte de que tiende a corromper cadenas de texto largas; recomienda componer el texto real o los logotipos por separado.
-- Idiomas: soporte declarado unicamente en ingles; los prompts en otros idiomas pueden degradar el resultado.
-- Licencia: `other` / `qwen-image-2.1-license`. El autor indica explicitamente revisarla antes de un uso comercial; las condiciones exactas de explotacion no se detallan en la informacion disponible.
-- Alcance del pipeline: este paquete se orienta a text-to-image. Las funciones de edicion con referencias, cache de KV por prefijo y salida RGBA pertenecen al flujo del modelo base en mflux, no se garantizan en esta cuantizacion tal como se documenta.
-- Portabilidad: al ser MLX/mflux, no es directamente desplegable en GPU NVIDIA/AMD; requiere hardware Apple Silicon.
-- Advertencia de operacion: el modelo ya esta cuantizado; no debe volverse a aplicar `--quantize`.
-- Madurez: el repositorio tiene 0 descargas y 1 like, y la ultima actualizacion es del 1 de octubre de 2026, por lo que carece de validacion amplia de la comunidad.
+- Licencia de investigacion: solo permite uso, copia y modificacion para investigacion o evaluacion; cualquier uso comercial requiere una licencia separada de Qwen (contacto indicado en la model card).
+- Es una version modificada (cuantizada a 8 bits) del modelo base; los posibles sesgos del base se heredan y no se documentan en esta ficha.
+- Riesgo de alucinacion visual y de artefactos: como todo modelo de difusion, puede generar detalles incoherentes, anatomia incorrecta o texturas erroneas.
+- Renderizado de texto deficiente: el autor advierte que puede garblear cadenas largas; recomienda componer texto y logotipos reales despues.
+- Solo soporta prompts en ingles; no se declaran capacidades multilingues.
+- Dependencia de hardware: exclusivo de Apple Silicon via MLX/mflux; no es desplegable en CUDA, vLLM, TGI ni llama.cpp sin conversion adicional.
+- No se deben aplicar cuantizaciones adicionales al cargar (`--quantize`), ya que los pesos ya estan a 8 bits.
+- No hay datos publicados de calidad (FID, CLIP score u otras metricas) que permitan evaluar la perdida de fidelidad frente al modelo en precision completa.
+- El rendimiento medido corresponde a un M5 Max de 128 GB; en equipos con 24 GB el margen de memoria es ajustado y podria limitar resoluciones altas o procesos concurrentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/qwen-image-2.1-mflux-q8
-- Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Repositorio GitHub oficial Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
-- Blog de Qwen sobre Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Proyecto mflux (motor de cuantizacion y ejecucion): https://github.com/filipstrand/mflux
-- Implementacion del modelo qwen21 en mflux-community: https://github.com/mflux-community/mflux/tree/main/src/mflux/models/qwen21
-- Variante 4-bit comunitaria: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q4
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio mflux: https://github.com/filipstrand/mflux
 - Novaeon.Studio: https://novaeon.studio
+- Licencia (archivo LICENSE en el repositorio): https://huggingface.co/NovaeonStudio/qwen-image-2.1-mflux-q8/blob/main/LICENSE
+- Atribuciones (archivo NOTICE en el repositorio): https://huggingface.co/NovaeonStudio/qwen-image-2.1-mflux-q8/blob/main/NOTICE

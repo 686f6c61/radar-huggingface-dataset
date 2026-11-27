@@ -2,96 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp es un fine-tune del modelo base Qwen/Qwen3.8-27B, publicado por el usuario brainworkup en Hugging Face. Se distribuye como un checkpoint de aproximadamente 27.781 millones de parametros en formato safetensors con cuantizacion de 6 bits (etiqueta "oQ6e") y licencia Apache 2.0. La model card describe un ajuste fino de multiples etapas con tecnicas que el autor denomina "Cold Fusion", "GAIN Training" y "Multi-stage tuning", orientado a eliminar restricciones de alineacion (el tag "uncensored" y "heretic") y a incorporar un sistema de modos de operacion embebido.
+Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp es una cuantizacion de precision mixta del modelo DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, publicada por el usuario brainworkup. Se trata de un modelo multimodal (image-text-to-text) de la familia Qwen3.5, con 27.781 millones de parametros, afinado por DavidAU con un enfoque "uncensored" y optimizado para inferencia en hardware Apple Silicon mediante la libreria MLX. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.8.0rc1), que aplica una mezcla de precisiones (6 bits, 8 bits y BF16) para lograr un promedio efectivo de 6.872 bits por peso.
 
-El modelo se presenta como multimodal (pipeline image-text-to-text) y con soporte para 16 idiomas: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita. La model card menciona 27 modos de razonamiento, 27 modos de instruccion, 15 "AI Constructs", 5 "Super AI Constructs" y 21 "AGI Constructs", asi como un sistema interactivo que se activa escribiendo "help" en el prompt.
+El modelo incorpora una cabeza MTP (Multi-Token Prediction) de 0.425B de parametros y un codificador visual de 0.461B, lo que lo habilita para tareas de imagen-texto. El checkpoint completo ocupa 23.9 GB en disco (22.2 GiB de pesos), lo que permite ejecutarlo en equipos con 32 GB de memoria unificada o superior. La licencia declarada es Apache 2.0, aunque el modelo base procede de un fine-tuning comunitario sobre Qwen3.5.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no tiene descargas ni likes en el momento de la consulta, el autor del fine-tune no es el desarrollador del modelo base, y gran parte de las afirmaciones de la model card (rendimiento, modos, constructos) no estan respaldadas por benchmarks publicos ni por documentacion tecnica verificable. Esta ficha recoge unicamente lo que consta en la informacion disponible y marca explicitamente como "no disponible" todo aquello que no se puede confirmar.
+Su relevancia actual radica en que ofrece una via practica para ejecutar un modelo de ~28B con capacidades multimodales y contexto largo en portatiles Apple Silicon, con un rendimiento medido en el propio repositorio (hasta 56 tok/s de generacion en un M3 Max de 48 GB con MTP activado). Es, por tanto, una opcion orientada a desarrolladores que trabajan en local con MLX y necesitan un modelo sin filtros de contenido para tareas de investigacion o generacion creativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen/Qwen3.8-27B); detalles internos no disponibles |
-| Parametros totales | 27.781.427.952 (27,78 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 256.000 tokens segun la model card (minimo recomendado 32k; 64k-128k sugerido) |
-| Tipos de cuantizacion | Checkpoint en 6 bits (oQ6e); el autor remite a repositorios GGUF separados para otras cuantizaciones |
+| Arquitectura | Transformer denso de la familia Qwen3.5, con cabeza MTP y codificador visual |
+| Parametros totales | 27.781.427.952 (27.781B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (los benchmarks llegan a 32.768 tokens de prompt) |
+| Tipos de cuantizacion | Precision mixta oQ: affine 6-bit grupo 64 (88.345% de pesos), affine 8-bit grupo 64 (9.798%), BF16 (1.857%); promedio 6.872 bits/peso |
 | Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers); GGUFs en repositorio aparte del autor original |
+| Formato de pesos | safetensors (MLX), cuantizacion oQ |
+| Tamano del repo | 23.9 GB (22.226 GiB de pesos) |
+| Libreria | mlx |
+| Modelo base | DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base Qwen/Qwen3.8-27B mas alla de que se trata de un transformer. El fine-tune se describe como un "branch from scratch" y una escision de un proyecto mayor del autor original (DavidAU), con ajuste fino en multiples etapas sobre los datasets DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. Las tecnicas citadas ("Cold Fusion", "GAIN Training", "Multi-stage tuning", "Turbo Brilliance V2 50x AGI") no vienen acompanadas de descripcion tecnica, hiperparametros, numero de tokens de entrenamiento ni composicion del dataset, por lo que no es posible evaluar su naturaleza ni su efecto real sobre el modelo.
+La arquitectura subyacente es un transformer denso de la familia Qwen3.5, con 26.896B de parametros en el modelo de lenguaje, 0.461B en el modulo de vision y 0.425B en la cabeza MTP (Multi-Token Prediction). La cabeza MTP permite decodificacion especulativa interna, lo que explica las mejoras de velocidad observadas en los benchmarks del autor (hasta 56 tok/s de generacion frente a 19 tok/s del GGUF Q6_K en el mismo hardware). El modelo es multimodal: acepta imagenes y texto como entrada y genera texto.
 
-Tampoco se documenta si hubo RLHF, DPO u otra fase de alineacion, ni que innovaciones de inferencia incorpora (decodificacion especulativa, atencion lineal, etc.). La etiqueta "mtp" del nombre del repositorio sugiere multi-token prediction, pero no se confirma en la model card. En resumen: la arquitectura y el proceso de entrenamiento no estan documentados de forma verificable en la informacion proporcionada.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. El fine-tuning "Heretic-Uncensored" de DavidAU sugiere un entrenamiento orientado a eliminar los filtros de rechazo del modelo original, pero no se detallan los datos ni el procedimiento. La cuantizacion oQ, por su parte, asigna 6 bits a la mayoria de las capas lineales, 8 bits a un subconjunto de 2.722B de pesos (probablemente capas sensibles como embeddings o atencion) y mantiene 0.516B en BF16.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de instrucciones, con modos de razonamiento e instruccion seleccionables segun la model card (27 de cada).
-- Procesamiento multimodal image-text-to-text segun el pipeline declarado y la etiqueta del repositorio.
-- Soporte declarado de 16 idiomas, incluido el espanol.
-- Escritura creativa, ficcion, narrativa y roleplaying, segun los tags del repositorio.
-- Generacion de codigo y uso como "Coder AI Construct" segun la model card.
-- Sistema embebido de ayuda interactiva: al introducir "help" como prompt se despliegan los modos y sistemas disponibles.
-- "Constructos" de agente y de profesor universal mencionados en los tags (Agent AI Construct, Universal Teacher AI Construct), sin documentacion tecnica adicional.
-- No se confirma soporte de tool calling, function calling ni de razonamiento multi-paso con herramientas; no disponible.
+- Generacion de texto y razonamiento general, heredadas del modelo base Qwen3.5.
+- Procesamiento de imagen y texto (pipeline image-text-to-text), con un codificador visual de 0.461B de parametros.
+- Generacion de codigo y matematicas, segun las capacidades tipicas de la familia Qwen3.5 (no verificadas con benchmarks en la informacion disponible).
+- Decodificacion especulativa mediante cabeza MTP, que acelera la generacion en inferencia MLX.
+- Soporte multilingue en 16 idiomas: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita.
+- Modo "uncensored": el fine-tuning elimina los rechazos de contenido, lo que permite generar material que los modelos alineados rechazarian.
+- No se dispone de informacion sobre soporte de tool calling, function calling ni agentes multi-paso en la documentacion proporcionada.
 
 ## Casos de uso
 
-- Escritura creativa y ficcion: el modelo esta ajustado explicitamente para generacion narrativa, guiones y roleplaying, con modos de instruccion que permiten fijar tono y genero; adecuado para prototipado de contenido editorial.
-- Conversacion multi-turno con contexto largo: con una ventana declarada de hasta 256k tokens, puede mantener hilos extensos o procesar documentos largos en una sola pasada, util para asistentes de analisis documental.
-- Generacion de codigo asistida: los tags incluyen "coder" y la model card menciona un "Coder AI Construct"; puede emplearse en tareas de autocompletado y explicacion de codigo, aunque sin garantias de calidad verificadas por benchmarks.
-- Traduccion y atencion multilingue: al cubrir 16 idiomas, sirve para prototipos de traduccion o atencion al cliente en varios idiomas, con la salvedad de que no hay evaluaciones publicadas de calidad por idioma.
-- Experimentacion en investigacion sobre alineacion: al ser un modelo "uncensored" y "heretic", es util como objeto de estudio para analizar el efecto de eliminar restricciones de seguridad en modelos de este tamano.
-- Despliegue local en hardware de gama alta: al estar disponible en 6 bits y con GGUFs alternativos, puede ejecutarse en estaciones de trabajo con GPU de 24-48 GB para tareas de generacion offline.
-- Generacion de imagenes vectoriales o diagramas descritos en texto (el autor muestra ejemplos de SVG), como apoyo a tareas de diseno tecnico.
+- Investigacion sobre alineacion y censura: el modelo permite estudiar como un fine-tuning "uncensored" modifica el comportamiento de rechazo respecto al Qwen3.5 original, comparando respuestas ante prompts sensibles en un entorno controlado.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas que los modelos alineados suelen rechazar, ejecutandose en local en un Mac con 32 GB o mas.
+- Procesamiento de documentos con imagenes: al ser multimodal, puede extraer y resumir informacion de capturas, diagramas o documentos escaneados, combinando el codificador visual con el modelo de lenguaje.
+- Asistente personal en local para Apple Silicon: con 23.9 GB de pesos y MLX, cabe en un M3/M4 Max de 48 GB y ofrece hasta 56 tok/s de generacion con MTP, adecuado para uso interactivo sin conexion.
+- Analisis de codigo en entornos aislados: el contexto de hasta 32.768 tokens (segun los benchmarks) permite revisar modulos completos o varios ficheros en una sola pasada, en un portatil sin GPU dedicada.
+- Traduccion multilingue offline: los 16 idiomas soportados permiten construir un pipeline de traduccion local para equipos que no pueden enviar datos a la nube.
+- Prototipado de aplicaciones multimodales: sirve como banco de pruebas para desarrolladores que quieran validar flujos image-text-to-text en MLX antes de desplegar en infraestructura mayor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye ejemplos cualitativos (una prueba de "V2 Turbo Brilliance 50x" con unos 8000 tokens de instrucciones procesados en aproximadamente 60 segundos y una salida de unos 3000 tokens), pero no ofrece metricas estandar como MMLU, HumanEval o GSM8K, ni comparaciones cuantitativas con otros modelos.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente proporciona mediciones de rendimiento de inferencia en un MacBook Pro M3 Max de 48 GB, comparando el GGUF Q6_K en Splash con la cuantizacion oQ6e en oMLX con y sin MTP.
+
+| Configuracion | PP1024/TG128 (TG tok/s) | PP4096/TG128 (TG tok/s) | PP8192/TG128 (TG tok/s) | PP16384/TG128 (TG tok/s) | PP32768/TG128 (TG tok/s) | Memoria pico |
+|---|---|---|---|---|---|---|
+| GGUF Q6_K en Splash | 19.0 | 14.1 | 12.5 | 5.8 | no medido | 25.63-27.06 GB |
+| oMLX + MTP (oQ6e) | 38.8 | 56.0 | 17.1 | 10.9 | 15.0 | 28.27-30.32 GB |
+| oMLX + DFlash (MTP off) | 15.0 | 13.8 | 12.6 | 6.4 | 8.3 | 25.94-28.90 GB |
+| oMLX baseline (sin MTP ni DFlash) | 36.9 | 30.0 | 26.5 | no medido | no medido | 26.7-28.3 GB |
+
+En batching continuo con oMLX + MTP, el rendimiento escala de 38.8 tok/s (batch 1) a 167.0 tok/s (batch 8), un speedup de 4.31x. El TTFT con prompt de 1.024 tokens es de 4.889 ms con MTP y de 3.045 ms con DFlash.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en 6 bits: aproximadamente 21-24 GB solo para los pesos, mas overhead de contexto; con 64k-128k tokens de contexto la VRAM efectiva puede superar los 30-40 GB.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB o RTX 6000 Ada para contexto completo; RTX 4090 (24 GB) puede ser insuficiente en 6 bits con contextos largos y requeriria cuantizaciones GGUF de 4 bits.
-- Cabe en GPU de consumo: solo con cuantizaciones GGUF de 4 bits o inferiores y contextos reducidos; no disponible el dato exacto de VRAM para cada cuantizacion.
-- Opciones de despliegue: transformers (formato nativo del repositorio); llama.cpp, Ollama o vLLM para las versiones GGUF publicadas por el autor original en repositorios separados.
-- Latencia y throughput: no disponibles; el unico dato es el ejemplo cualitativo de la model card (unos 60 segundos para procesar 8000 tokens de entrada y generar 3000 de salida), sin especificar hardware.
+- VRAM/memoria unificada: 22.2 GiB de pesos; en la practica, los benchmarks reportan un pico de 28.3-30.3 GB con MTP activado y contexto de hasta 32.768 tokens. Se recomienda un equipo con al menos 32 GB de memoria unificada; 48 GB es lo comodo.
+- GPU recomendadas: Apple Silicon (M3 Max, M4 Max, M2 Ultra) por ser un checkpoint MLX. No es compatible directamente con CUDA sin conversion.
+- Cabe en GPU consumer: si, en equipos Apple con memoria unificada de 32 GB o superior. No esta pensado para RTX 4090 (24 GB) por el formato MLX y el pico de memoria.
+- Opciones de despliegue: oMLX (con MTP y DFlash), Splash (app de escritorio), y en general el ecosistema MLX de Apple. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
+- Latencia y throughput: en M3 Max 48 GB, TTFT de 3.0-4.9 s para 1.024 tokens de prompt, y generacion de 38.8-56.0 tok/s en single request segun configuracion. Con contexto de 32.768 tokens, el TTFT sube a 290 s con MTP y el throughput baja a 15 tok/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| brainworkup/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp | 27,78 B | 256k (declarado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin benchmarks publicos |
-| Qwen/Qwen3.8-27B (modelo base) | 27,78 B | no disponible en esta ficha | Apache 2.0 (segun el fine-tune) | Hugging Face | Base oficial; referencia de calidad |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF | 27,78 B | 256k (declarado) | Apache 2.0 | Hugging Face | Mismo linaje, versiones GGUF del autor original |
-| DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored | ~40 B | no disponible | Apache 2.0 (segun repositorio) | Hugging Face | Version mayor del mismo linaje, mas exigente en hardware |
+| brainworkup/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp | 27.781B | no disponible (benchmarks hasta 32.768) | MLX safetensors, oQ6e | Apache 2.0 | Multimodal, MTP, optimizado para Apple Silicon |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27.781B (estimado) | no disponible | safetensors (original) | Apache 2.0 (heredada) | Modelo base sin cuantizar; requiere mas memoria |
+| Qwen3.8-27B-Ultimate-Heretic-Uncn-Turbo-Brilli-50x-AGI-NEO-MTP-Q6_K (GGUF) | 27.781B (estimado) | no disponible | GGUF Q6_K | Apache 2.0 (heredada) | Version GGUF del mismo fine-tuning; mas lenta en M3 Max segun el autor |
 
-No se dispone de datos de rendimiento comparado entre estos modelos; la comparativa se limita a parametros, contexto, licencia y disponibilidad.
+No se dispone de datos de benchmarks de calidad que permitan comparar el rendimiento cognitivo con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored" y "heretic": el ajuste elimina deliberadamente restricciones de seguridad, por lo que puede generar contenido toxico, ilegal o danino; no es apto para produccion orientada al publico sin filtros adicionales.
-- Ausencia total de benchmarks publicos: no hay evidencia verificable de calidad, razonamiento o codigo frente al modelo base.
-- Riesgo elevado de alucinacion: los fine-tunes creativos y sin alineacion tienden a inventar datos; no se documenta ninguna mitigacion.
-- Trazabilidad dudosa: el repositorio lo publica un tercero (brainworkup) sobre un fine-tune de DavidAU, con 0 descargas y 0 likes; no hay garantia de integridad ni de mantenimiento.
-- La model card contiene afirmaciones no verificables ("27 modos de razonamiento", "AGI Constructs", "Turbo Brilliance") sin documentacion tecnica que las respalde.
-- Contexto declarado de 256k sin evidencia de evaluacion de recuperacion en contextos largos.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base y los datasets de entrenamiento pueden imponer condiciones adicionales no detalladas; verificar antes de desplegar.
-- Idiomas: aunque se listan 16, no hay evaluaciones de calidad por idioma; el espanol esta incluido pero sin datos de rendimiento.
-- Soporte de tool calling y agentes no confirmado; no disenar pipelines que dependan de ello sin validacion previa.
+- Modelo "uncensored": el fine-tuning elimina los filtros de rechazo, por lo que puede generar contenido ofensivo, ilegal o peligroso. No es apto para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un fine-tuning comunitario sobre Qwen3.5, la fiabilidad en tareas de conocimiento puede degradarse respecto al modelo original.
+- Idiomas: aunque se declaran 16 idiomas, no hay evaluacion de calidad por idioma; el rendimiento en lenguas distintas del ingles y el chino puede ser irregular.
+- Contexto: la longitud maxima de contexto no se especifica en la informacion disponible; los benchmarks solo llegan a 32.768 tokens de prompt, y el rendimiento cae drasticamente a esa longitud (TTFT de 290 s con MTP).
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base es un fine-tuning de terceros sobre Qwen3.5; conviene verificar las condiciones del modelo original de Qwen antes de un despliegue comercial.
+- Hardware: checkpoint en formato MLX, ligado al ecosistema Apple Silicon; no es directamente portable a CUDA sin conversion y re-cuantizacion.
+- Cuantizacion agresiva: 6.872 bits/peso de media implica perdida de precision respecto al BF16 original; no se han publicado evaluaciones de la degradacion resultante.
+- Soporte limitado: 225 descargas y 0 likes en el momento de la consulta; es un artefacto de un unico autor sin validacion de la comunidad.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/brainworkup/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio GGUF del autor original: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
-- Version 40B del mismo linaje: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored
-- GGUFs de la version 40B: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
-- Variante 40B Build2: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Build2
-- Transformer con looping experimental: https://huggingface.co/DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
-- Proyecto origen del fine-tune: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Coleccion Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
-- Perfil del autor original: https://huggingface.co/DavidAU
+- Hugging Face: https://huggingface.co/brainworkup/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ6e-mtp
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- Version GGUF del fine-tuning: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Herramienta de cuantizacion oMLX: https://github.com/jundot/omlx
+- Benchmark de rendimiento publicado: https://omlx.ai/benchmarks/performance/tkf6e1q6

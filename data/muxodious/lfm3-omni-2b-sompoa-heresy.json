@@ -104,16 +104,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LFM3-Omni-2B - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
-      "snippet": "2B omni model that understands text, images, video, and audio, and answers in text, speech, or both ← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech."
-    },
-    {
-      "title": "Liquid AI Launches LFM3 Family of Six Open-Weight 2B-Class Models",
-      "url": "https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/",
-      "snippet": "Liquid AI announced LFM3 on October 27, 2026, a new generation of open-weight Liquid Foundation Models that brings text, vision, audio, omni, and decision models onto one shared backbone. The first release, detailed in a post on the Hugging Face blog, covers six models in the 2B parameter range. Six Models on One Shared Backbone Every LFM3 model branches from the same LFM3-1.7B-Base. LFM3-1.7B ..."
-    }
-  ]
+  "sources": []
 }

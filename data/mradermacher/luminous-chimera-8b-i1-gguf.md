@@ -2,88 +2,100 @@
 
 ## Resumen
 
-Luminous-Chimera-8B-i1-GGUF es una redistribución en formato GGUF del modelo Luminous-Chimera-8B, publicado por el usuario mradermacher. Se trata de una conversión de pesos a cuantizaciones de la familia GGUF generadas con el método i1 (imatrix), pensadas para su uso con llama.cpp y con el resto de herramientas que consumen este formato. El modelo original procede del repositorio Kanjdoes/Luminous-Chimera-8B, del que no se ofrece información adicional en la model card.
+Luminous-Chimera-8B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Luminous-Chimera-8B, un merge de modelos generado con mergekit por el usuario Kanjdoes. El trabajo de cuantización lo firma mradermacher, un publicador habitual de cuantizaciones GGUF para la comunidad de inferencia local. El modelo base tiene 8.030.261.312 parámetros (aproximadamente 8 mil millones) y está pensado para ejecución en CPU y GPU de consumo mediante llama.cpp y herramientas compatibles.
 
-El modelo cuenta con 8.030.261.312 parámetros según los pesos en safetensors del repositorio original, lo que lo sitúa en la categoría de modelos densos de aproximadamente 8.000 millones de parámetros. El repositorio ocupa 7,0 GB e incluye un conjunto amplio de cuantizaciones que abarca desde IQ1_S hasta Q6_K, lo que permite desplegarlo en hardware muy variado, desde equipos de consumo con poca VRAM hasta estaciones de trabajo con GPU de gama alta.
+El interés de esta ficha reside en que permite ejecutar un modelo de 8B en hardware modesto. Las cuantizaciones i1 (imatrix) están calibradas con un fichero de importancia generado a partir de datos de calibración, lo que en la práctica mejora la calidad respecto a cuantizaciones estáticas del mismo tamaño. El repositorio ofrece 26 variantes que van desde 2,1 GB (i1-IQ1_S) hasta 6,7 GB (i1-Q6_K), cubriendo desde escenarios de memoria muy limitada hasta calidad casi equivalente a la del modelo original en FP16.
 
-La relevancia de esta ficha es fundamentalmente práctica: se trata de una distribución de cuantizaciones, no de un modelo nuevo. La información publicada por el autor es mínima (sin licencia, sin idiomas declarados, sin pipeline y sin benchmarks), por lo que la mayor parte de los datos técnicos del modelo base no están disponibles en el material consultado. El valor del repositorio reside en la disponibilidad de pesos GGUF listos para inferencia local.
+La información disponible es escasa: la model card del repositorio de cuantización no documenta el proceso de merge del modelo base, no incluye datos de entrenamiento, benchmarks ni licencia explícita. Además, el campo de idioma declarado es únicamente inglés. Todo ello condiciona la evaluación: se trata de un artefacto de cuantización, no de un modelo con documentación técnica completa, y su uso en producción debería ir precedido de una validación propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo transformer denso, inferido por el tamaño y el formato; no confirmado en la información) |
-| Parametros totales | 8.030.261.312 |
-| Parametros activos | no aplica (no se ha confirmado que sea MoE) |
+| Arquitectura | no disponible (modelo base es un merge con mergekit; arquitectura del transformer subyacente no documentada en la información disponible) |
+| Parametros totales | 8.030.261.312 (8B) |
+| Parametros activos | no aplica (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; también se ofrece el fichero imatrix y existe un repositorio de cuantizaciones estáticas (Luminous-Chimera-8B-GGUF) |
+| Idiomas soportados | en (inglés, según la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors |
-| Tamano del repositorio | 7,0 GB |
-| Metodo de cuantizacion | i1 (imatrix, cuantizacion ponderada) |
-| Compatibilidad | endpoints_compatible, conversacional |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación consultada. Por el número de parámetros (8.030.261.312) y el formato de conversión (convert_type: hf), se trata de un modelo denso de aproximadamente 8.000 millones de parámetros convertido desde pesos Hugging Face. La model card no detalla si emplea atención estándar, atención lineal, mezcla de expertos u otra variante, ni proporciona datos sobre el número de tokens de entrenamiento, la composición del dataset o las fases de alineación (RLHF, DPO u otras).
+El repositorio es una cuantización, no un modelo entrenado desde cero. El modelo base, Kanjdoes/Luminous-Chimera-8B, se generó con mergekit, una herramienta de fusión de pesos que combina dos o más modelos mediante técnicas como SLERP, TIES, DARE o passthrough. La model card no detalla qué modelos se fusionaron, con qué método ni con qué proporciones, ni tampoco la arquitectura concreta del transformer subyacente (número de capas, dimensiones ocultas, cabezas de atención, tipo de atención). Tampoco se documenta ningún proceso de entrenamiento adicional, RLHF, DPO ni datos de preentrenamiento o ajuste fino.
 
-La innovación técnica documentada se limita al proceso de cuantización: las cuantizaciones i1 emplean una matriz de importancia (imatrix) calculada a partir de datos de calibración, lo que mejora la calidad de los cuantizados agresivos (especialmente los de 1 a 3 bits) frente a las cuantizaciones estándar. El repositorio incluye la etiqueta `quantize_version: 2` y `output_tensor_quantised: 1`, indicadores del pipeline de conversión de llama.cpp. No se documentan técnicas como decodificación especulativa ni modos de razonamiento explícito.
+La innovación técnica relevante está en el proceso de cuantización. mradermacher genera cuantizaciones i1 (imatrix) usando un fichero de importancia calculado con datos de calibración, lo que permite asignar más bits a los tensores con mayor impacto en la perplejidad y menos a los demás. Según las notas del autor, las variantes IQ suelen superar a las Q de tamaño similar, y algunas i1 (por ejemplo i1-IQ3_S, 3,8 GB) superan a las Q3_K equivalentes. El repositorio incluye además el propio fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Se desconoce el conjunto de calibración empleado y si se usó el mismo que en otras cuantizaciones del autor.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio está etiquetado como `conversational`, lo que sugiere un ajuste orientado a diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que los pesos pueden servirse a través de infraestructura compatible con la API de Hugging Face.
-- Inferencia local: al estar en formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otras herramientas del ecosistema.
-- Tool calling / function calling: no disponible en la información consultada.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales (visión, audio, modo thinking): no disponible.
+- Generación de texto conversacional: la model card etiqueta el modelo como "conversational", lo que sugiere uso en diálogo multi-turno, aunque no se detalla el formato de plantilla de chat.
+- Razonamiento general y respuesta a instrucciones: capacidades heredadas del modelo base fusionado, sin documentación específica de rendimiento.
+- Ejecución local en CPU y GPU: al estar en GGUF, es compatible con llama.cpp y derivados, lo que permite inferencia sin GPU dedicada en las cuantizaciones más pequeñas.
+- Idiomas: únicamente inglés declarado; no hay evidencia de capacidades multilingües.
+- Tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multimodales (visión, audio): no documentadas; el repositorio no incluye proyector multimodal (mmproj) en la lista de ficheros.
+- Modo "thinking" o razonamiento extendido: no documentado.
 
 ## Casos de uso
 
-- Despliegue local en equipos de consumo: gracias a las cuantizaciones Q4_K_M e IQ4_XS, el modelo puede ejecutarse en GPU con 8-12 GB de VRAM, lo que permite prototipar asistentes conversacionales sin infraestructura cloud.
-- Experimentación con cuantizaciones agresivas: la disponibilidad de cuantizaciones IQ1 e IQ2 permite estudiar la degradación de calidad en modelos de 8B bajo compresión extrema, útil para investigación sobre eficiencia de inferencia.
-- Chatbot de escritorio o integrado en aplicaciones: el etiquetado `conversational` y el formato GGUF facilitan su integración en aplicaciones de escritorio mediante llama.cpp u Ollama.
-- Evaluación comparativa de cuantizaciones: al incluir más de veinte variantes del mismo modelo, es útil para medir el equilibrio entre tamaño, velocidad y calidad en pipelines de evaluación propios.
-- Servicio de inferencia ligero: con la etiqueta `endpoints_compatible`, puede desplegarse en servidores compatibles con la API de Hugging Face para entornos de prueba.
-- Fines educativos: adecuado para demostrar el flujo completo de conversión a GGUF y cuantización con imatrix en cursos o talleres de IA open source.
+- Prototipado local en portátiles sin GPU: la variante i1-IQ2_XS (2,7 GB) o i1-Q3_K_S (3,8 GB) permite ejecutar un modelo de 8B en CPU con llama.cpp, útil para validar ideas antes de escalar a infraestructura con GPU.
+- Asistentes conversacionales en inglés sobre hardware de consumo: con i1-Q4_K_M (5,0 GB) cabe en GPUs de 8 GB de VRAM y ofrece un equilibrio razonable entre calidad y velocidad para chatbots de uso personal o interno.
+- Generación de texto en entornos con requisitos de privacidad: al ejecutarse en local, los datos no salen del equipo, lo que encaja en escenarios donde no se puede enviar información a APIs externas.
+- Pruebas de integración con llama.cpp y servidores compatibles con la API de OpenAI: el tag "endpoints_compatible" sugiere que puede servirse mediante endpoints compatibles, útil para sustituir un backend en pruebas sin cambiar el código cliente.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye 26 variantes del mismo modelo, lo que permite medir el impacto de la cuantización en perplejidad y calidad para una tarea concreta antes de fijar una variante en producción.
+- Generación de cuantizaciones propias: el fichero imatrix publicado (0,1 GB) permite a otros usuarios producir sus propias variantes i1 con llama.cpp, útil para equipos que necesitan un tamaño o tipo de cuantización no disponible en el repositorio.
+- Fines educativos y de investigación sobre merge de modelos: sirve para estudiar el comportamiento de un merge de 8B en distintas precisiones sin necesidad de infraestructura de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantización no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y tampoco se han encontrado datos del modelo base en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,5-2 GB con IQ1_S/IQ1_M; 2,5-3,5 GB con IQ2/IQ3; 4,5-5,5 GB con Q4_K_M; 6-7 GB con Q6_K (estimaciones basadas en el tamaño de los cuantizados, no confirmadas por el autor).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones medias y altas; A100 o H100 para servir los pesos sin cuantizar o con máxima calidad.
-- Cabe en GPU de consumo: sí, las cuantizaciones Q4 y Q5 caben en GPU de 8-12 GB; las IQ2 e IQ3 caben en GPU de 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de Hugging Face.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (el tamaño del fichero GGUF es una aproximación práctica; hay que sumar overhead de contexto y caché KV):
+  - i1-IQ1_S: ~2,1 GB
+  - i1-IQ2_XS: ~2,7 GB
+  - i1-IQ3_S: ~3,8 GB
+  - i1-Q4_K_M: ~5,0 GB
+  - i1-Q5_K_M: ~5,8 GB
+  - i1-Q6_K: ~6,7 GB
+- GPU recomendadas: no hay recomendaciones oficiales. Por tamaño, las cuantizaciones Q4 caben en RTX 3060/4060 de 8 GB, RTX 4070/4080 y superiores; las Q5 y Q6 requieren 8-12 GB según contexto. Para despliegue con concurrencia, A100 o H100 con vLLM no aplican directamente porque vLLM no consume GGUF de forma nativa; para GGUF se usa llama.cpp o servidores basados en él.
+- Cabe en GPU de consumo: sí, todas las variantes caben en GPUs de 8 GB o menos, salvo que se use un contexto muy largo (la caché KV puede añadir varios GB).
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama (importando el GGUF), LM Studio, text-generation-webui y otros frontends compatibles con GGUF. Para el modelo base en safetensors, transformers con PyTorch.
+- Latencia y throughput: no disponibles en la información proporcionada. Dependen del hardware, del tamaño de cuantización y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Luminous-Chimera-8B-i1-GGUF | 8.030 M | no disponible | no disponible | GGUF (i1) | Hugging Face |
-| Meta Llama 3.1 8B Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, ecosistema amplio |
-| Mistral 7B Instruct | 7.240 M | 32.000 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ecosistema amplio |
-| Qwen2.5 7B Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | Hugging Face, ecosistema amplio |
+| Luminous-Chimera-8B-i1-GGUF (este) | 8B | no disponible | no disponible | GGUF (26 variantes i1) | Merge cuantizado con imatrix; solo inglés declarado |
+| Luminous-Chimera-8B (base) | 8B | no disponible | no disponible | safetensors | Modelo original del que deriva esta cuantización |
+| Luminous-Chimera-8B-GGUF (estático) | 8B | no disponible | no disponible | GGUF (Q2_K a Q6_K, IQ, Q4_0/Q4_1) | Mismo modelo con cuantizaciones estáticas de mradermacher; alternativa sin calibración imatrix |
 
-La comparación con Llama 3.1 8B, Mistral 7B y Qwen2.5 7B se ofrece como referencia de categoría; no se dispone de datos de rendimiento de Luminous-Chimera-8B que permitan una comparación cuantitativa.
+No se dispone de datos de benchmarks ni de otros modelos comparables documentados en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La licencia no está declarada, por lo que no puede confirmarse el uso comercial; es imprescindible verificar la licencia del modelo base (Kanjdoes/Luminous-Chimera-8B) antes de cualquier despliegue en producción.
-- No se declaran idiomas soportados; el rendimiento multilingüe es desconocido y podría ser limitado fuera del inglés.
-- No hay información sobre la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
-- No se han publicado benchmarks, por lo que la calidad real del modelo frente a alternativas establecidas es desconocida.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- Las cuantizaciones IQ1 e IQ2 pueden degradar notablemente la coherencia y la fidelidad factual; no se recomiendan para producción.
-- Riesgo de alucinación: inherente a los modelos de 8B; sin datos de alineación ni evaluaciones, el riesgo no puede acotarse.
-- Al ser una redistribución de cuantizaciones, la responsabilidad sobre sesgos y comportamiento recae en el modelo base, del que no hay documentación disponible en la información consultada.
+- Licencia no especificada: no se puede confirmar si el uso comercial está permitido. Es imprescindible contactar con el autor del modelo base (Kanjdoes) antes de usarlo en producción.
+- Modelo base sin documentación técnica: se desconoce qué modelos se fusionaron, con qué método y con qué datos, lo que impide evaluar sesgos, calidad y robustez de forma rigurosa.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de 8B sin datos de evaluación publicados; no hay evidencia de mitigación mediante RLHF o DPO.
+- Idioma limitado al inglés: no se declaran capacidades en castellano ni en otros idiomas, por lo que su uso en español no está respaldado por la documentación.
+- Contexto desconocido: al no documentarse la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas ni en tareas de recuperación de información extensa.
+- Cuantizaciones de muy baja precisión: las variantes IQ1 e IQ2 pierden calidad de forma notable; el propio autor las describe como "for the desperate" o "mostly desperate". No son adecuadas para producción.
+- Repositorio de 93,8 GB: descargar el repositorio completo no es práctico; conviene descargar solo el fichero GGUF de la variante elegida.
+- Sin garantías de soporte: el autor no ofrece SLA ni mantenimiento; la fecha de creación (2026-11-24) y la de actualización (2026-11-24) indican que no ha habido revisiones posteriores.
+- Ficheros multi-parte: algunas variantes pueden estar divididas en varios ficheros; es necesario consultar el README de TheBloke enlazado por el autor para concatenarlas correctamente.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Luminous-Chimera-8B-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Luminous-Chimera-8B-i1-GGUF
 - Modelo base: https://huggingface.co/Kanjdoes/Luminous-Chimera-8B
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Luminous-Chimera-8B-GGUF
+- Página de descargas del autor para este modelo: https://hf.tst.eu/model#Luminous-Chimera-8B-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de tipos de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del autor: https://www.nethype.de/

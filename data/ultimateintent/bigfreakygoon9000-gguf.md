@@ -2,50 +2,51 @@
 
 ## Resumen
 
-BigFreakyGoon9000 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-Flash-Next, distribuido por el usuario UltimateIntent bajo el identificador `UltimateIntent/BigFreakyGoon9000-GGUF`. Se trata de un modelo experimental orientado a roleplay, escritura creativa y narrativa, con etiquetas explicitas de contenido para adultos y abliteration (eliminacion de rechazos de seguridad). El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base, aunque la model card no aporta detalles tecnicos sobre esta faceta.
+BigFreakyGoon9000 es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-Flash-Next, publicado por el usuario UltimateIntent bajo el identificador `UltimateIntent/BigFreakyGoon9000-GGUF`. El modelo está empaquetado exclusivamente en formato GGUF para su uso con llama.cpp y se distribuye con un tamaño de repositorio de 1092,9 GB, lo que refleja la presencia de múltiples cuantizaciones de un modelo de gran tamaño (176.943.899.520 parámetros según los datos de safetensors del modelo base). La model card lo etiqueta como `qwen4exp`, lo que sugiere una variante experimental de la familia Qwen.
 
-La relevancia de este modelo es limitada y muy nichada: se publica unicamente en formato GGUF para su uso con llama.cpp, acumula 17 descargas y ningun "like" en el momento de la consulta, y su model card consiste casi integramente en CSS de presentacion sin especificaciones tecnicas utiles (sin numero de parametros, sin longitud de contexto, sin datos de entrenamiento ni benchmarks). El repositorio ocupa 1004,5 GB, un tamano desproporcionado que sugiere multiples cuantizaciones de un modelo base de gran tamano, pero no permite inferir la arquitectura ni el numero de parametros.
+El objetivo declarado del autor es el roleplay, la escritura creativa y la narración de historias, con un ajuste fino orientado a contenido para adultos (etiquetas `erp`, `nsfw`, `not-for-all-audiences`) y una técnica de "abliteration" que busca eliminar los mecanismos de rechazo del modelo base. La pipeline declarada es `image-text-to-text`, lo que indica capacidades multimodales heredadas del modelo base, aunque la model card no detalla el funcionamiento de la entrada de imagen.
 
-Por tanto, esta ficha debe leerse como una evaluacion de lo que el autor declara explicitamente, marcando como "no disponible" todo aquello que la informacion proporcionada no cubre. No se debe asumir ninguna capacidad, rendimiento o especificacion que no este documentada.
+La relevancia de esta ficha es doble: por un lado, documenta un caso de ajuste fino comunitario de gran escala sobre una arquitectura reciente; por otro, sirve de advertencia sobre los riesgos de los modelos "abliterated" y de las licencias comunitarias heredadas, que imponen restricciones específicas al uso comercial. Cabe señalar que la información pública disponible es escasa y que muchos datos técnicos no están confirmados por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: Qwen/Qwen3.8-Flash-Next; arquitectura del base no detallada en la informacion) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-Flash-Next; arquitectura exacta no documentada en la informacion proporcionada) |
+| Parametros totales | 176.943.899.520 (dato de safetensors del modelo base) |
+| Parametros activos | no disponible (no se confirma que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo es GGUF; se desconoce que niveles Q se incluyen) |
+| Tipos de cuantizacion | GGUF (multiples cuantizaciones en el repositorio; niveles concretos no especificados) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (declarada como "other" con `license_name: qwen-community-1.0`) |
-| Formato de pesos | GGUF (libreria: llama-cpp) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en la model card) |
+| Formato de pesos | GGUF (libreria `gguf`, compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Se sabe que es un fine-tune (relacion `finetune`) sobre Qwen/Qwen3.8-Flash-Next y que incorpora una etapa de abliteration, tecnica que modifica los pesos para eliminar direcciones de rechazo y reducir las negativas del modelo ante ciertas peticiones. Las etiquetas incluyen `lora`, lo que sugiere que el ajuste se realizo mediante LoRA, aunque no se especifica si los adaptadores se fusionaron en los pesos finales ni el rango o los hiperparametros empleados.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen/Qwen3.8-Flash-Next en la documentacion proporcionada: no se confirma si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni se especifican mecanismos de atencion (lineal, decodificacion especulativa, etc.). El unico dato estructural fiable es el numero total de parametros del modelo base (176.943.899.520), que situa al modelo en la categoria de gran escala, coherente con un repositorio de mas de 1 TB en GGUF.
 
-No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no incluye ninguna seccion de entrenamiento, evaluacion o uso responsable; el contenido visible es fundamentalmente maquetacion CSS.
+En cuanto al entrenamiento, la model card indica que se trata de un finetune con LoRA sobre el modelo base, con un ajuste orientado a roleplay, escritura creativa y contenido para adultos. La etiqueta `abliteration` sugiere que se aplico una tecnica de modificacion de pesos para reducir o eliminar los comportamientos de rechazo aprendidos durante el alineamiento del modelo base. No se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO adicionales. Tampoco se detalla el proceso de cuantizacion a GGUF ni los niveles disponibles.
 
 ## Capacidades
 
-- Generacion de texto orientada a roleplay, escritura creativa y narrativa, segun las etiquetas del autor.
-- Contenido para adultos (ERP, NSFW) declarado explicitamente como proposito del ajuste.
-- Abliteration: reduccion deliberada de los mecanismos de rechazo del modelo base.
-- Pipeline declarado image-text-to-text, lo que implicaria entrada de imagen y texto; sin confirmacion tecnica en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking, vision o audio: no disponible mas alla de la etiqueta image-text-to-text.
+- Generacion de texto conversacional y narrativo, con enfasis declarado en roleplay y escritura creativa.
+- Narracion de historias y ficcion de formato largo, segun las etiquetas del autor.
+- Capacidades multimodales heredadas del modelo base: la pipeline declarada es `image-text-to-text`, aunque no se documenta el soporte real de entrada de imagen en el GGUF.
+- Contenido para adultos y escenarios de roleplay explicito (etiquetas `erp`, `nsfw`), habilitado por la abliteration.
+- Compatibilidad con llama.cpp y, por extension, con herramientas que consumen GGUF (Ollama, servidores compatibles con la API de llama.cpp).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Roleplay conversacional: el ajuste esta disenado para mantener personajes y narrativas multi-turno; su idoneidad depende de la ventana de contexto del modelo base, que no se especifica.
-- Escritura creativa y narrativa: generacion de ficcion, dialogos y tramas, aprovechando el ajuste especifico sobre el modelo base.
-- Prototipado de experiencias interactivas para adultos: entornos controlados donde se requiera contenido explicito y el operador asuma la responsabilidad legal y etica.
-- Investigacion sobre abliteration: estudio de como la eliminacion de rechazos afecta al comportamiento del modelo, util para equipos de seguridad y alineamiento.
-- Experimentacion con cuantizaciones GGUF: el repo incluye pesos GGUF, por lo que sirve para probar despliegue en llama.cpp en distintos niveles de cuantizacion (niveles concretos no disponibles).
-- Evaluacion comparativa de fine-tunes sobre Qwen3.8-Flash-Next: como caso de estudio de ajustes comunitarios de bajo uso y escasa documentacion.
+- Roleplay conversacional de larga duracion: el modelo esta ajustado especificamente para mantener personajes y narrativas multi-turno, por lo que es adecuado para aplicaciones de entretenimiento conversacional donde la coherencia de personaje es prioritaria.
+- Escritura creativa asistida: generacion de ficcion, dialogos y tramas narrativas, aprovechando el ajuste fino sobre textos creativos y la ausencia de filtros de rechazo para tematicas adultas.
+- Prototipado de narrativa interactiva: integracion en motores de ficcion interactiva o videojuegos narrativos mediante llama.cpp, con el modelo sirviendo las respuestas de personajes no jugadores.
+- Investigacion sobre abliteration: el modelo sirve como caso de estudio para analizar como la eliminacion de rechazos afecta a la calidad, la coherencia y la seguridad de un modelo de gran escala.
+- Evaluacion de cuantizaciones GGUF a gran escala: el repositorio, con mas de 1 TB de pesos, permite estudiar el impacto de distintas cuantizaciones en un modelo de ~177.000 millones de parametros.
+- Experimentacion con contenido multimodal: dado que la pipeline declarada es `image-text-to-text`, puede emplearse para probar la interaccion imagen-texto en el contexto de narrativa, siempre que la implementacion GGUF lo soporte.
+- Despliegue local en entornos controlados: para usuarios que necesitan un modelo de roleplay sin dependencia de APIs externas, aunque los requisitos de hardware son muy elevados.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +54,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; depende del tamano del modelo base, que no se especifica.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible; el repo de 1004,5 GB sugiere un modelo base grande, pero no se puede confirmar que quepa en GPUs consumer.
-- Opciones de despliegue: llama.cpp (declarado mediante la libreria GGUF); otras opciones como vLLM, Ollama o TGI no estan confirmadas en la informacion.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de ~177.000 millones de parametros requiere aproximadamente 350 GB en FP16, unos 177 GB en cuantizacion de 8 bits y en torno a 90-100 GB en cuantizaciones de 4 bits; estas cifras son estimaciones genericas y no datos confirmados del autor.
+- GPU recomendadas: para cuantizaciones de 4 bits se necesitan configuraciones multi-GPU de gama profesional (varias A100 80 GB o H100 80 GB); en FP16 se requiere un nodo multi-GPU de gran capacidad.
+- GPU de consumo: no cabe en GPUs de consumo individuales (RTX 4090 con 24 GB, etc.) en ninguna cuantizacion razonable; seria necesario repartir el modelo entre varias GPU o usar memoria del sistema con llama.cpp, con latencias muy altas.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama y servidores compatibles con la API de llama.cpp. vLLM y TGI no se documentan para este repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| BigFreakyGoon9000 | no disponible | no disponible | qwen-community-1.0 | GGUF | Fine-tune experimental para roleplay/NSFW con abliteration |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | qwen-community-1.0 | no disponible | Modelo base del que deriva este ajuste |
-| Alternativas de roleplay/NSFW de la comunidad | no disponible | no disponible | variable | GGUF | No se dispone de datos verificables en la informacion proporcionada |
+| BigFreakyGoon9000 | ~177.000 M | no disponible | qwen-community-1.0 | GGUF | Finetune de roleplay con abliteration |
+| Qwen/Qwen3.8-Flash-Next (base) | ~177.000 M | no disponible | qwen-community-1.0 | safetensors (segun dato de parametros) | Modelo base sin ajuste de roleplay |
+| Alternativas de roleplay de la familia Qwen | no disponible | no disponible | variable | GGUF/safetensors | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card no aporta especificaciones, datos de entrenamiento ni evaluaciones, lo que impide validar su calidad.
-- Riesgo elevado de alucinacion y de comportamiento impredecible al ser un ajuste experimental con abliteration.
-- Contenido explicito y NSFW: no apto para uso general, menores ni entornos corporativos sin control.
-- La abliteration elimina barreras de seguridad del modelo base, lo que incrementa el riesgo de generar contenido danino, ilegal o sesgado.
-- Licencia qwen-community-1.0: es necesario revisar sus terminos para uso comercial; no se detalla en la informacion si permite uso comercial del fine-tune.
-- Idiomas y contexto no documentados: no se puede garantizar soporte multilingue ni ventanas largas.
-- Uso muy bajo (17 descargas, 0 likes): sin validacion por parte de la comunidad.
-- El pipeline image-text-to-text declarado no esta respaldado por documentacion tecnica; no asumir capacidades multimodales sin verificacion.
-- Repositorio de 1004,5 GB: requiere almacenamiento considerable y descarga selectiva de cuantizaciones.
+- Contenido para adultos: el modelo esta disenado explicitamente para generar contenido NSFW y erotico; no es apto para menores ni para entornos sin control de acceso.
+- Abliteration: la eliminacion de mecanismos de rechazo reduce las salvaguardas del modelo base, lo que aumenta el riesgo de generar contenido danino, ofensivo o ilegal si se usa sin moderacion adicional.
+- Alucinacion: al ser un finetune orientado a ficcion y roleplay, la fidelidad factual no es un objetivo del ajuste; no debe usarse como fuente de informacion verificada.
+- Sesgos: no se documentan evaluaciones de sesgo; los sesgos del modelo base y del dataset de ajuste (no publicado) pueden amplificarse.
+- Idiomas: no se especifican los idiomas soportados; el rendimiento fuera del ingles y el chino (habituales en la familia Qwen) no esta garantizado.
+- Licencia: la licencia `qwen-community-1.0` impone condiciones especificas para uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de cualquier despliegue productivo.
+- Falta de documentacion tecnica: no se detallan contexto, cuantizaciones disponibles, datos de entrenamiento ni benchmarks, lo que dificulta la evaluacion rigurosa.
+- Requisitos de hardware extremos: el tamano del modelo limita su uso a infraestructuras de gran capacidad.
+- Antiguedad y mantenimiento: el repositorio se creo en noviembre de 2026 y cuenta con solo 13 likes; no hay garantia de soporte o actualizaciones.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/UltimateIntent/BigFreakyGoon9000-GGUF
+- Repositorio Hugging Face: https://huggingface.co/UltimateIntent/BigFreakyGoon9000-GGUF
 - Licencia: https://huggingface.co/UltimateIntent/BigFreakyGoon9000-GGUF/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

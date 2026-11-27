@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 207,
+  "downloads_30d": 210,
   "trending_score": 0,
   "parameters": 763857920,
   "parameters_human": "763.9M",
@@ -57,7 +57,25 @@
       "task": null,
       "dataset": "Huzhou Dialect Speech (test split)",
       "metric": "CER",
-      "value": 26.77
+      "value": 22.6
+    },
+    {
+      "task": null,
+      "dataset": "Huzhou Dialect Speech (test split)",
+      "metric": "BLEU",
+      "value": 68.6
+    },
+    {
+      "task": null,
+      "dataset": "Huzhou Dialect Speech (real speakers, 17 held-out recording sessions)",
+      "metric": "CER",
+      "value": 33.2
+    },
+    {
+      "task": null,
+      "dataset": "Huzhou Dialect Speech (real speakers, 17 held-out recording sessions)",
+      "metric": "BLEU",
+      "value": 52
     }
   ],
   "sources": []

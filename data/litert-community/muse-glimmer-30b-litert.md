@@ -2,94 +2,99 @@
 
 ## Resumen
 
-Muse-Glimmer-30B — LiteRT-LM es una conversión a formato LiteRT (`.litertlm`) del modelo vision-language Muse-Glimmer-30B de Meta, orientado a tareas agénticas sobre hardware local. El modelo original es un modelo multimodal de 30B parámetros que lee texto e imágenes y genera respuestas precedidas de un mensaje de razonamiento interno, cuyo nivel de esfuerzo ("Reasoning strength": low, medium, high o xhigh) se controla desde el mensaje de sistema. Esta conversión cuantiza el decodificador de texto a int4 (bloques de 128 pesos) con capa de salida int8, y mantiene el codificador de visión en fp32.
+Muse-Glimmer-30B-LiteRT es una conversión del modelo multimodal Muse-Glimmer-30B de Meta al formato LiteRT-LM, orientada a inferencia en dispositivo local. La conversión la ha realizado la comunidad litert-community usando litert-torch 0.10.0, ai-edge-quantizer 0.10.0 y litert-lm-builder 0.19.0 para LiteRT-LM 0.19.0. El modelo resuelve el problema de ejecutar un modelo visión-lenguaje de 30.000 millones de parámetros en hardware de consumo sin necesidad de infraestructura de servidor, empaquetando los pesos en un único fichero `.litertlm` de 23,4 GB.
 
-La relevancia de esta ficha reside en el despliegue on-device: el archivo de 23,4 GB funciona con LiteRT-LM 0.19.0 y ha sido verificado sobre la GPU de un Apple M4 Max, donde alcanza 18,33 tokens/s de decodificación tras procesar una imagen de 448 × 448. La arquitectura combina un decodificador denso de texto de 52 capas (patrón de tres capas sliding-window más una global, repetido) con un codificador de visión de 50 capas. El contexto de esta conversión es de 2.048 tokens con caché KV incluida en el archivo.
+El modelo base es un decodificador de texto denso de 52 capas que alterna tres capas de ventana deslizante con una capa global, acompañado de un codificador visual de 50 capas. Antes de cada respuesta genera un mensaje de razonamiento cuya extensión se controla mediante la línea "Reasoning strength" del mensaje de sistema (low, medium, high o xhigh). La conversión fija la resolución de imagen en 448 × 448 (256 tokens de imagen) y una ventana de contexto de 2.048 tokens.
+
+La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un VLM de 30B en un Apple M4 Max a 18,33 tokens/s en decodificación con el codificador visual en GPU, con un footprint de 26 GiB. Es una referencia práctica para quien quiera desplegar modelos multimodales en local sin depender de la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador denso de texto (52 capas; 3 sliding-window + 1 global, repetido) + codificador de visión de 50 capas; modelo vision-language |
-| Parametros totales | 30B (aproximado, según denominación del modelo; no desglosado en la ficha) |
-| Parametros activos | no disponible (arquitectura densa, no MoE) |
-| Longitud de contexto | 2.048 tokens (caché KV de 2.048 en este archivo) |
-| Tipos de cuantizacion | Pesos del decodificador int4 (blockwise, 128 por bloque); capa de salida int8; embedding table en int8; codificador de visión y adaptador en fp32; activaciones declaradas fp32 |
+| Arquitectura | Transformer denso multimodal: decodificador de texto de 52 capas (3 capas de ventana deslizante + 1 capa global, patrón repetido) y codificador visual de 50 capas |
+| Parametros totales | 30B (según nombre del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens (KV cache fijada en la conversión) |
+| Tipos de cuantizacion | Pesos del decodificador en int4 por bloques de 128, capa de salida int8, tabla de embeddings en int8, codificador visual y adaptador en fp32, activaciones declaradas fp32 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM 0.19.0, convertido con litert-torch 0.10.0, ai-edge-quantizer 0.10.0 y litert-lm-builder 0.19.0) |
+| Formato de pesos | `.litertlm` (LiteRT-LM), 23.393.996.524 bytes |
+| Resolucion de imagen | 448 × 448 fija (256 tokens de imagen), una imagen por conversación |
+| Firmas de prefill | 32 / 128 / 1.024 tokens |
+| Sampler por defecto | top-k 64, top-p 0.95, temperature 1.0 (heredado del `generation_config.json` del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura consta de dos módulos principales. El decodificador de texto es un transformer denso de 52 capas con un patrón de atención híbrido: tres capas con ventana deslizante (sliding-window) seguidas de una capa global, patrón que se repite a lo largo de la red. Esta disposición reduce el coste computacional de la atención manteniendo conectividad global periódica. El codificador de visión tiene 50 capas y se ejecuta en fp32 en esta conversión; procesa imágenes a resolución fija de 448 × 448, que se convierten en 256 tokens de imagen.
+La arquitectura del modelo base combina un decodificador de texto denso de 52 capas con un patrón de atención híbrido: tres capas con ventana deslizante seguidas de una capa de atención global, patrón que se repite a lo largo de la red. Esta disposición reduce el coste de atención en secuencias largas manteniendo capacidad de modelado global. El codificador visual consta de 50 capas y produce 256 tokens por imagen a una resolución fija de 448 × 448. El modelo incorpora un modo de razonamiento explícito: antes de la respuesta final emite un mensaje de razonamiento cuya longitud se gradúa mediante el parámetro "Reasoning strength".
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO), no se ha publicado información en la documentación disponible. Como rasgo funcional destacable, el modelo genera antes de cada respuesta un mensaje de razonamiento explícito cuya extensión se controla mediante el campo "Reasoning strength" del mensaje de sistema (low, medium, high o xhigh). La salida llega con tokens de formato intercalados (por ejemplo, `to=self<|message|>…<|eom|><|start|>assistant to=user<|message|>`), que conviene filtrar en la aplicación. La configuración de generación por defecto del modelo original es top-k 64, top-p 0,95 y temperatura 1,0.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La conversión a LiteRT-LM aplica cuantización de pesos del decodificador a int4 con bloques de 128 elementos y capa de salida en int8, mientras que el codificador visual y el adaptador se mantienen en fp32. El fichero incluye tokenizador, plantilla de chat y manifiesto de metadatos.
 
 ## Capacidades
 
-- Comprensión conjunta de imagen y texto (pipeline image-text-to-text): responde preguntas sobre imágenes introducidas a 448 × 448 (256 tokens de imagen).
-- Razonamiento previo a la respuesta: escribe un mensaje de razonamiento antes de la respuesta final, con nivel de esfuerzo ajustable (low, medium, high, xhigh) vía mensaje de sistema.
-- Diseñado para tareas agénticas sobre hardware local, según la descripción del modelo base de Meta.
-- Generación de texto en conversaciones multi-turno: admite preguntas de seguimiento sobre la misma imagen dentro de la misma conversación (una imagen por conversación en las pruebas documentadas).
-- Ejecución on-device con backends GPU y CPU de LiteRT-LM; el camino GPU usa WebGPU.
-- Muestreo configurable: greedy (top_k=1) verificado en las mediciones; por defecto top-k 64, top-p 0,95, temperatura 1,0.
-- No hay evidencia documentada de tool calling, function calling, capacidades de audio ni de otros idiomas.
+- Generación de texto y razonamiento explícito previo a la respuesta, con cuatro niveles de intensidad configurables (low, medium, high, xhigh).
+- Comprensión de imágenes y respuesta a preguntas visuales (pipeline `image-text-to-text`).
+- Procesamiento de una imagen por conversación a resolución fija de 448 × 448.
+- Conversaciones multi-turno dentro de la ventana de 2.048 tokens.
+- Orientación a tareas agénticas en hardware local, según la descripción del modelo base.
+- No se documenta soporte de tool calling ni function calling en la información disponible.
+- No se documenta soporte de audio ni de vídeo.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- **Asistente visual local para fotografía personal**: el usuario pregunta cuántos objetos aparecen en una foto o qué contiene una escena; la imagen se redimensiona a 448 × 448 con PIL (aplicando rotación EXIF) y se envía con una pregunta corta. Al ejecutarse íntegramente en el dispositivo, las fotos no salen del terminal, lo que es adecuado para privacidad.
-- **Agentes on-device en portátiles Apple Silicon**: el modelo está pensado para tareas agénticas en hardware local; con 18,33 tokens/s de decodificación en GPU de M4 Max y 0,41 s en preguntas de seguimiento, puede integrarse en flujos agénticos de varios pasos que inspeccionen imágenes.
-- **Análisis de capturas de pantalla en aplicaciones de escritorio**: un agente puede enviar capturas redimensionadas a 448 × 448 y pedir descripciones o verificaciones de estado de la interfaz, aprovechando el pipeline image-text-to-text sin depender de la nube.
-- **Prototipado de apps multimodales con LiteRT-LM**: la API Python de litert-lm (engine, conversaciones, sampler configurable) permite construir demos de chat con imagen en pocas líneas, filtrando los tokens de formato de la respuesta.
-- **Clasificación y verificación visual con razonamiento controlado**: ajustando "Reasoning strength" a low se minimiza la latencia para tareas simples (contar objetos, leer texto visible), reservando niveles altos para problemas que requieran más deliberación, siempre dentro del límite de 2.048 tokens.
-- **Procesado por lotes en local de imágenes con preguntas cortas**: con prefill de 148 tok/s en GPU, un script puede procesar colecciones de imágenes (una por conversación) respondiendo preguntas estructuradas sin coste de API.
-- **Despliegue con requisitos de privacidad estrictos (salud, documentos)**: al no requerir conexión, es apto para entornos donde los datos no pueden enviarse a servicios externos, con la reserva del contexto limitado a 2.048 tokens.
+- Preguntas sobre fotografías en local: una aplicación de escritorio puede cargar el fichero `.litertlm` y responder preguntas sobre una imagen redimensionada a 448 × 448, como demuestra la app `picture_questions` de litert-samples para macOS con GPU. Adecuado por su footprint de 26 GiB y su latencia de 2,57 s hasta el primer texto en M4 Max.
+- Asistencia visual sin conexión: en entornos sin red (campo, industria, sanidad) el modelo puede describir o interpretar imágenes capturadas localmente, evitando el envío de datos a servicios externos.
+- Prototipado de agentes multimodales en estación de trabajo: con 18,33 tokens/s de decodificación en GPU de Apple M4 Max, permite iterar sobre flujos de razonamiento visual con el modo "Reasoning strength" ajustable.
+- Análisis de capturas o documentos escaneados: conversión de una página a 448 × 448 y consulta sobre su contenido textual o visual, útil para extracción rápida de información en pipelines locales.
+- Evaluación comparativa de VLM en dispositivo: la app de referencia permite alternar entre este fichero y Qwen2.5-VL-72B-Instruct sobre la misma interfaz, lo que facilita estudios comparativos de calidad y latencia.
+- Docencia y demostraciones de IA en local: un equipo con 32 GB de memoria o más puede ejecutar el modelo sin GPU dedicada de servidor, mostrando el ciclo completo de razonamiento y respuesta en tiempo real.
+- Integración en aplicaciones macOS mediante la API C de LiteRT-LM 0.19.0: el modelo puede incrustarse en apps nativas que requieran inferencia multimodal con gestión de memoria controlada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se han publicado mediciones de rendimiento de inferencia en un Apple M4 Max (128 GB, macOS 27.0, litert-lm 0.19.0 desde PyPI, camino GPU sobre WebGPU), con una imagen de 448 × 448 y pregunta corta (292–298 tokens de prompt, 256 de ellos la imagen), decodificación greedy y "Reasoning strength: low":
+Rendimiento medido en Apple M4 Max (128 GB, macOS 27.0), litert-lm 0.19.0, API de Python, imagen de 448 × 448 y pregunta corta (292–298 tokens de prompt, 256 de ellos la imagen), decodificación greedy y "Reasoning strength: low.".
 
-| Backend | Prefill (tok/s) | Decode (tok/s) | Primer token (s) | Primer texto (s) | Seguimiento: primer texto (s) | Memoria pico |
-|---|---:|---:|---:|---:|---:|---|
-| GPU (visión en GPU, este archivo) | 148,0 | 18,33 | 2,03 | 2,57 | 0,41 | 26 GiB (footprint) |
-| CPU (visión en CPU, build anterior) | 14,9–15,6 | 7,20–7,48 | 19,3–19,7 | 21,1–21,7 | 6,8 | 1,1 GiB (footprint); 22 GiB residente, casi todo mapeado |
+| Backend | Prefill (tok/s) | Decode (tok/s) | Time to first token (s) | Primer texto (s) | Segunda pregunta: primer texto (s) | Memoria pico |
+|---|---:|---:|---:|---:|---:|---:|
+| GPU, codificador visual en GPU (este fichero) | 148,0 | 18,33 | 2,03 | 2,57 | 0,41 | 26 GiB (footprint) |
+| CPU, codificador visual en CPU (build anterior) | 14,9 / 15,6 | 7,20 / 7,48 | 19,7 / 19,3 | 21,7 / 21,1 | 6,8 | 1,1 GiB (footprint); 22 GiB residentes, casi todo ficheros mapeados |
 
-Notas: las cifras de GPU son medianas de tres preguntas en conversaciones nuevas (rango de decode: 12,29–18,37 tok/s). La primera pregunta de cada proceso compila los programas GPU del codificador de visión (18,7 s adicionales). Crear el engine desde SSD interno tarda 23,4 s.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: footprint pico de 26 GiB en GPU (Apple M4 Max) con el archivo de 23,4 GB; en CPU, footprint de 1,1 GiB con ~22 GiB de archivos mapeados residentes (caché de pesos y modelo).
-- GPU recomendada: la verificación publicada es sobre la GPU integrada de un Apple M4 Max (128 GB de memoria unificada) vía WebGPU. No hay mediciones en GPUs NVIDIA discretas.
-- Consumer GPUs: cabe en un Apple M4 Max de 128 GB con margen; en equipos con menos memoria unificada o GPUs de escritorio convencionales, los 23,4 GB del archivo y los 26 GiB de footprint hacen probable que no quepa en tarjetas de 24 GB como la RTX 4090, aunque no hay mediciones que lo confirmen.
-- CPU: funciona, pero aproximadamente 2,5 veces más lento en decodificación (7,2–7,5 tok/s) y con prefill de ~15 tok/s.
-- Despliegue: LiteRT-LM 0.19.0 (`pip install litert-lm==0.19.0`), con backends GPU o CPU. No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI con este formato `.litertlm`.
-- Latencia: primer token en 2,03 s en GPU (incluye el codificador de visión); 0,41 s en preguntas de seguimiento sobre la misma imagen. La primera consulta de un proceso añade 18,7 s de compilación de programas GPU.
+- VRAM/memoria: footprint de 26 GiB en GPU en el M4 Max medido; en CPU, 1,1 GiB de footprint con 22 GiB residentes (mayoritariamente ficheros mapeados). El fichero pesa 23,4 GB en disco.
+- GPU recomendadas: Apple M4 Max con 128 GB (medido). La app de referencia `picture_questions` requiere un Mac con 32 GB de memoria o más. No se documentan requisitos para GPU NVIDIA.
+- GPU de consumo: no se confirma compatibilidad con RTX 4090 u otras GPU de consumo; la información solo cubre el path GPU vía WebGPU en macOS.
+- Despliegue: LiteRT-LM 0.19.0 (`pip install litert-lm==0.19.0`), con backends GPU o CPU mediante `interfaces.Backend.GPU()` / `interfaces.Backend.CPU()`. También API C para apps nativas. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia: 2,03 s hasta el primer token y 2,57 s hasta el primer texto en GPU; 19,7 s y 21,7 s respectivamente en CPU. Segunda pregunta sobre la misma imagen: 0,41 s hasta el primer texto en GPU.
+- Throughput: 18,33 tok/s de decodificación en GPU (rango 12,29–18,37) y 7,20–7,48 tok/s en CPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos publicados para modelos de la misma categoría en la información proporcionada. Comparativa cualitativa por categoría y formato:
-
-| Modelo | Tipo | Parametros | Contexto | Formato | Licencia |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B (LiteRT) | Vision-language, razonamiento ajustable | 30B | 2.048 (esta conversión) | `.litertlm` (int4) | Apache 2.0 |
-| Modelos vision-language on-device de tamaño similar (p. ej. variantes LiteRT de modelos multimodales) | no disponible | no disponible | no disponible | `.litertlm` / `.tflite` | variable |
-| Muse-Glimmer-30B (modelo base de Meta) | Vision-language | 30B | no disponible | pesos originales | no disponible |
+| Muse-Glimmer-30B-LiteRT (este) | 30B | 2.048 tokens | `.litertlm` | Apache 2.0 | Cuantizado int4, visión 448 × 448, on-device |
+| Muse-Glimmer-30B (base) | 30B | no disponible | safetensors (presumible) | Apache 2.0 | Modelo original de Meta, sin cuantizar |
+| Qwen2.5-VL-72B-Instruct | 72B | no disponible | no disponible | no disponible | Usado como alternativa en la app `picture_questions` de litert-samples |
+
+No se dispone de datos de benchmarks que permitan comparar calidad entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contexto muy limitado: 2.048 tokens en esta conversión. Una imagen consume 256 tokens y el mensaje de razonamiento debe caber en el contexto; con "Reasoning strength: high" o superior, un razonamiento largo puede desbordar la ventana.
-- Resolución de imagen fija a 448 × 448: las imágenes se estiran sin conservar la relación de aspecto, lo que puede degradar el reconocimiento en fotos con proporciones muy distintas.
-- Una sola imagen por conversación en las pruebas documentadas.
-- La salida incluye tokens de formato interno (`<|message|>`, `<|eom|>`, `<|start|>`, etc.) que la aplicación debe filtrar; el ejemplo oficial usa un `split("<|message|>")`.
-- Sin mensaje de sistema, la plantilla aplica "Reasoning strength: high" por defecto, configuración no medida con este archivo.
-- La primera consulta de cada proceso añade ~18,7 s de compilación GPU del codificador de visión, y crear el engine tarda 23,4 s desde SSD.
-- Sesgos, riesgo de alucinación y idiomas soportados: no disponible; no se ha publicado evaluación al respecto.
-- Restricciones de licencia: Apache 2.0, sin limitaciones conocidas para uso comercial.
-- La fila de rendimiento en CPU procede de una build anterior de los mismos pesos (caché KV de 4.096, sin reescritura GPU del codificador de visión), por lo que no es estrictamente comparable con la fila GPU.
+- La ventana de contexto está fijada en 2.048 tokens en esta conversión; un mensaje de razonamiento largo debe caber en ese límite, lo que puede truncar respuestas con "Reasoning strength" alto.
+- Solo se admite una imagen por conversación y a resolución fija de 448 × 448, con recorte por redimensionado bicúbico que no preserva la relación de aspecto.
+- El modo "Reasoning strength: high" (valor por defecto si no se envía mensaje de sistema) no fue medido con este fichero.
+- La fila de CPU corresponde a un build anterior de los mismos pesos, aproximadamente 2,5 veces más lento en decodificación que el build actual.
+- No se documentan sesgos conocidos, tasas de alucinación ni cobertura idiomática.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base y de las herramientas de conversión.
+- La información de rendimiento proviene de un único dispositivo (Apple M4 Max); no hay datos para otras plataformas.
+- El modelo está orientado a hardware local; no se documenta soporte para servidores de inferencia estándar.
 
 ## Enlaces
 
-- Modelo LiteRT: https://huggingface.co/litert-community/Muse-Glimmer-30B-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/Muse-Glimmer-30B-LiteRT
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- LiteRT-LM (PyPI): `pip install litert-lm==0.19.0`
-- No se han encontrado enlaces adicionales a papers, blogs de anuncio, repositorios de código o demos en la información disponible.
+- App de ejemplo `picture_questions` (macOS): https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert_lm/picture_questions/macos
+- Repositorio litert-samples: https://github.com/google-ai-edge/litert-samples

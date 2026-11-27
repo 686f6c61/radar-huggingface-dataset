@@ -1,106 +1,82 @@
 # DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
 
 ## Resumen
+Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF es un ajuste fino (finetune) de tipo "abliterated/heretic" y sin censura, publicado por el usuario DavidAU en Hugging Face. Se distribuye principalmente en formato GGUF para inferencia local y deriva de un modelo base del mismo autor (`DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source`), a su vez construido sobre la familia Qwen. El modelo tiene 26.895.998.464 parámetros reales según los pesos safetensors, lo que lo sitúa en la categoría de ~27B.
 
-Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF es un ajuste fino (finetune) de la comunidad publicado por DavidAU sobre el modelo base Qwen/Qwen3.8-27B. Se distribuye en formato GGUF para inferencia local con llama.cpp y derivados, y está etiquetado explícitamente como «abliterated», «uncensored», «heretic» y «not-for-all-audiences», es decir, con las capas de rechazo eliminadas deliberadamente mediante técnicas de abliteration. El modelo está empaquetado con un tema de terror y Halloween y con un conjunto de presets propietarios del autor: 13 modos de razonamiento, 13 modos de instrucción, 10 «EVIL AI Constructs», «Turbo-Brilliance Evil Ed» y un «Halloween O/S».
+El modelo está orientado a entretenimiento: escritura creativa de terror, rol y simulaciones de personajes ("EVIL AI Constructs"). Incorpora lo que el autor denomina "Halloween O/S", una capa de comportamiento que actúa como procesador por defecto de la salida, junto con 13 modos de razonamiento, 13 modos de instrucción y 10 constructos de personajes predefinidos (Joker, Harley Quinn, Borg Queen, Jason, Freddy Krueger, Norman Bates, Pennywise, Vecna, Mind Flayer y Chucky). El pipeline declarado es image-text-to-text, con soporte multimodal mediante ficheros mmproj.
 
-El problema que aborda es doble: por un lado, ofrecer una variante sin restricciones de contenido para escritura de ficción de terror, roleplay y narrativa interactiva; por otro, servir como banco de pruebas para estudiar el efecto de la eliminación de rechazos sobre el comportamiento del modelo. Con 27 000 millones de parámetros, se sitúa en la franja en la que la cuantización a 4 bits permite ejecución en una única GPU de 24 GB, lo que lo hace relevante para quienes quieren un modelo creativo grande en hardware de consumo.
+Es relevante ahora por su popularidad dentro del nicho de modelos locales sin censura para escritura y rol (más de 6.800 descargas y 34 likes en el momento de la consulta), y porque ejemplifica las técnicas de "abliteration"/"heretic" aplicadas a modelos de ~27B con cuantizaciones GGUF e imatrix. No obstante, el propio autor lo etiqueta como "for entertainment purposes only" y advierte de que no debe usarse con herramientas ni tomarse su salida como información fiable.
 
-La información pública disponible es escasa: el repositorio no incluye tabla de benchmarks, no detalla la longitud de contexto heredada del modelo base ni el volumen de datos de entrenamiento, y en el momento de la consulta muestra un tamaño de 0,0 GB con 0 descargas y 15 «likes». El acceso está restringido (gated) y la licencia declarada es Apache 2.0, aunque limitada a inglés.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, heredada del modelo base Qwen/Qwen3.8-27B (no se detalla en la información disponible) |
-| Parámetros totales | 27 000 M (según la denominación del modelo) |
-| Parámetros activos | No aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF; los niveles concretos (Q2_K–Q8_0, F16) no se detallan en la información disponible |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (etiquetas del repo: transformers, unsloth) |
-| Pipeline declarado | image-text-to-text |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Fecha de creación / actualización | 2026-10-22 / 2026-10-29 |
-| Descargas / likes | 0 / 15 |
+| Arquitectura | Transformer (derivado de la familia Qwen; detalles de atención no disponibles) |
+| Parametros totales | 26.895.998.464 (~27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible como cifra oficial; el autor recomienda un mínimo de 64k, o más para conversaciones largas |
+| Tipos de cuantizacion | GGUF en múltiples cuantizaciones (se mencionan IQ4_XS y cuantizaciones superiores con imatrix); listado completo no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo principal); safetensors en el modelo base/fuente; ficheros mmproj para imagen |
 
 ## Arquitectura y entrenamiento
+La información disponible no detalla la arquitectura interna más allá de que es un transformer derivado de la familia Qwen con ~27B parámetros. El modelo es un finetune del modelo fuente del mismo autor, y ha sido sometido a técnicas de "abliteration"/"heretic" para eliminar el rechazo (uncensored). Según la model card, se entrenó sobre un dataset de terror ("trained on Horror dataset") con constructos de IA de terror procedentes de "Turbo Brilliance".
 
-El modelo parte de los pesos de Qwen/Qwen3.8-27B, un transformer decoder-only de 27 000 millones de parámetros, y se publica como finetune. El autor no documenta en la información disponible el número de tokens de ajuste, la composición del dataset, ni si se emplearon etapas de RLHF, DPO o ajuste supervisado clásico. Las herramientas citadas en las etiquetas (`unsloth`) apuntan a un flujo de ajuste eficiente en memoria, pero no se aporta configuración de entrenamiento.
-
-La innovación declarada no está en la arquitectura sino en el post-procesado y el empaquetado: eliminación de rechazos («abliterated», «heretic»), tematización de terror y un sistema de presets de prompt que el autor denomina «Halloween O/S», con 13 modos de razonamiento, 13 modos de instrucción y 10 «EVIL AI Constructs» para simulación de personajes. La conversión a GGUF permite ejecución en CPU/GPU híbrida, pero no se especifica el método de cuantización ni si se preservaron las capacidades multimodales que sugiere la etiqueta `image-text-to-text`.
+Como innovaciones destacables, el autor menciona el "Halloween O/S" como capa de procesamiento por defecto que controla toda la salida del modelo, disponible en variantes low, medium y xhigh, y una construcción de "precisión" de 2.000-4.000 tokens por constructo. También se indica que las cuantizaciones son MTP (multi-token prediction) salvo una IQ4_XS, y que se emplea imatrix en las cuantizaciones de mayor calidad. No se dispone de datos sobre número de tokens de entrenamiento, composición exacta del dataset ni uso de RLHF/DPO.
 
 ## Capacidades
-
-- Generación de texto en inglés con estilos narrativos de terror, horror y géneros afines.
-- Escritura creativa de ficción: relatos, descripciones atmosféricas, diálogo de personajes.
-- Roleplay y simulación de personajes, incluyendo los 10 «EVIL AI Constructs» definidos por el autor.
-- 13 modos de razonamiento («reasoning modes») y 13 modos de instrucción seleccionables mediante prompt.
-- Modo «thinking»/razonamiento explícito, según las etiquetas del repositorio.
-- Comportamiento sin rechazos ante peticiones que un modelo alineado rechazaría (abliterated).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no documentadas; los «modos» son presets de prompt, no un framework de agentes.
-- Multilingüe: no; únicamente inglés declarado.
-- Visión: el pipeline declarado es `image-text-to-text`, pero no se documenta ningún módulo ni uso de imagen en la información disponible.
-- Compatibilidad con endpoints declarada en las etiquetas (`endpoints_compatible`).
+- Generación de texto y escritura creativa de ficción en todos los géneros, con énfasis en terror y horror.
+- Rol e interpretación de personajes ("roleplaying") mediante 10 constructos predefinidos y la posibilidad de "conjurar" personajes arbitrarios.
+- 13 modos de razonamiento ("thinking") y 13 modos de instrucción ("instruct"), accesibles mediante comandos como `[summon:help]`.
+- Razonamiento multi-turno dentro de conversaciones largas (contexto recomendado de 64k o superior).
+- Capacidad multimodal image-text-to-text: acepta imágenes si se descarga un fichero mmproj junto a los GGUF.
+- Multilingüe limitado: el modelo declara únicamente inglés (`en`).
+- No se documenta soporte de tool calling/function calling; de hecho, el autor advierte explícitamente de no habilitar herramientas.
 
 ## Casos de uso
-
-- Escritura de ficción de terror y horror: el modelo está tematizado y ajustado para este género, de modo que genera atmósfera, tensión y violencia narrativa sin los rechazos habituales de los modelos alineados; útil para autores que necesitan primeros borradores rápidos de relatos o novelas.
-- Diseño de personajes y lore para videojuegos: los «EVIL AI Constructs» y los modos de instrucción permiten mantener voces de personaje consistentes en guiones de NPC, con variantes de personalidad malvada o antagonista.
-- Roleplay en campañas de rol de mesa (TTRPG): el modelo sostiene diálogos multi-turno en inglés con tono de terror; útil para másters que necesitan improvisar NPC y descripciones en sesión.
-- Prototipado de narrativa interactiva y ficción ramificada: los modos de razonamiento permiten pedir al modelo que planifique tramas antes de escribir la escena, lo que facilita generar árboles de decisión coherentes.
-- Contenido temático para eventos de Halloween: generación de textos para experiencias de terror, escape rooms o atracciones, donde el tono explícito es un requisito y no un defecto.
-- Investigación sobre alineación y abliteration: al ser una variante con los rechazos eliminados sobre un base conocido, sirve como caso de estudio para medir cuánto se degrada la instrucción general, la seguridad y la coherencia al aplicar estas técnicas, comparándolo con Qwen3.8-27B original.
-- Red teaming y evaluación de filtros: útil para generar prompts y respuestas adversarias con las que probar clasificadores de contenido y políticas de moderación antes de desplegarlas.
-- Despliegue local en estaciones de trabajo: al publicarse en GGUF, se puede servir con llama.cpp u Ollama en equipos sin acceso a API, algo relevante para talleres de escritura o demos offline.
+- Escritura de ficción de terror: el modelo genera relatos y narrativa de horror con coherencia multi-turno, apoyándose en un contexto recomendado de 64k para tramas largas.
+- Rol interactivo con personajes: permite encarnar a los 10 constructos predefinidos o a personajes personalizados mediante el comando de invocación, adecuado para entretenimiento y juegos de rol.
+- Creación de contenido temático de Halloween: útil para generar guiones, ambientación y diálogos de eventos temáticos, dado su entrenamiento específico en terror.
+- Prototipado de experiencias conversacionales de ficción: sirve para experimentar con personajes y flujos narrativos antes de llevarlos a producción.
+- Exploración de técnicas de abliteration/heretic: investigadores pueden estudiar el comportamiento de un modelo sin censura en tareas creativas controladas.
+- Generación de descripciones a partir de imágenes: gracias al pipeline image-text-to-text y los ficheros mmproj, puede narrar o ambientar escenas a partir de una imagen en contextos creativos.
+- Experimentación local con GGUF: su empaquetado en GGUF e imatrix facilita pruebas en hardware de consumo con llama.cpp u Ollama.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones de calidad creativa, y tampoco se aportan comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-Estimaciones calculadas a partir de 27 000 M de parámetros; no son cifras publicadas por el autor.
-
-- VRAM aproximada de pesos: ~54 GB en FP16, ~29 GB en Q8_0, ~22 GB en Q6_K, ~19 GB en Q5_K_M, ~16,5 GB en Q4_K_M, ~13 GB en Q3_K_M, ~10 GB en Q2_K. Hay que sumar la caché KV, que crece con el contexto y no se puede dimensionar al no conocerse la longitud de contexto del modelo base.
-- GPU de datacenter: A100 40/80 GB y H100 80 GB para FP16 sin cuantizar; A100 40 GB o L40S 48 GB para Q8_0 con contexto moderado.
-- GPU de consumo: RTX 4090 / 3090 (24 GB) funcionan con Q4_K_M y contexto limitado; RTX 4080 (16 GB) obliga a Q3_K_M o Q2_K; tarjetas de 12 GB solo admiten Q2_K con contexto muy reducido o descarga parcial a CPU.
-- Apple Silicon: un Mac con 32 GB de memoria unificada puede ejecutar Q4_K_M; 64 GB permite Q6_K u Q8_0 con contexto amplio.
-- Opciones de despliegue: llama.cpp (`llama-server`), Ollama, LM Studio, y conversión a otros runners compatibles con GGUF. vLLM y TGI requerirían pesos en safetensors o soporte GGUF, no confirmado para este repo.
-- Latencia y throughput estimados: no disponibles. Como referencia cualitativa, la velocidad dependerá del número de capas descargadas a GPU y del contexto; no se han publicado mediciones.
+- VRAM estimada: no disponible de forma oficial; para ~27B en GGUF, las cuantizaciones bajas (p. ej. IQ4_XS) reducen el requisito frente a cuantizaciones altas, pero no se ofrecen cifras concretas.
+- GPU recomendadas: no disponible en la información proporcionada.
+- ¿Cabe en GPU de consumo? No se especifica; el formato GGUF y las cuantizaciones bajas sugieren viabilidad en GPUs de consumo de gama alta, pero sin datos confirmados.
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; también se puede usar con otros runners compatibles con GGUF. El autor indica descargar un fichero mmproj en la misma carpeta para el soporte de imágenes.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Acceso | Particularidad |
-|---|---|---|---|---|---|---|
-| DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF | 27 000 M | No disponible | Apache 2.0 | GGUF | Gated | Terror, abliterated, presets de prompt |
-| Qwen/Qwen3.8-27B (base) | 27 000 M | No disponible | No disponible en la información | Safetensors (previsible) | No disponible | Modelo alineado de referencia |
-| Qwen3.8-27B-Uncensored-GGUF (build de terceros) | 27 000 M | No disponible | No disponible | GGUF, F16 + 12 niveles de cuantización (Q2_K en adelante) | No disponible | Misma base sin rechazos, sin tematización |
-| DavidAU/Qwen3.8-27B-Halloween-Terror (variante no GGUF) | 27 000 M | No disponible | Apache 2.0 (según repo) | No disponible | No disponible | Misma temática en pesos completos |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF | ~27B | no disponible (recomendado ≥64k) | apache-2.0 | GGUF | Finetune de terror sin censura, orientado a rol |
+| Modelo fuente del mismo autor (`...-source`) | ~27B | no disponible | apache-2.0 | safetensors | Base del finetune |
+| Otros finetunes Qwen de ~27B sin censura | ~27B | variable | variable | GGUF/safetensors | No se dispone de datos concretos para comparar rendimiento |
 
-No hay datos de rendimiento publicados para ninguno de los cuatro, por lo que la comparación se limita a parámetros, formato, licencia y disponibilidad.
+No se dispone de datos de benchmarks ni de comparativas de rendimiento con alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- Contenido no apto para todo público: el modelo está etiquetado `not-for-all-audiences` y entrenado para eliminar rechazos; puede producir violencia explícita, contenido sexual o material ofensivo sin aviso.
-- Riesgo elevado de alucinación y de degradación de instrucciones: la abliteration suele afectar a la capacidad de seguir instrucciones complejas y a la coherencia en tareas de razonamiento; no hay evaluaciones que cuantifiquen ese deterioro en este build.
-- Solo inglés declarado; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
-- Licencia Apache 2.0 declarada, pero conviene verificar las condiciones del modelo base Qwen3.8-27B y del acceso gated antes de un uso comercial; el autor puede imponer restricciones adicionales en la tarjeta del repositorio.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que impide descarga anónima y automatizada.
-- Disponibilidad dudosa de los pesos: el repositorio muestra 0,0 GB de tamaño, 0 descargas y solo 15 «likes»; verifica que los ficheros GGUF estén realmente subidos antes de planificar un despliegue.
-- Validación comunitaria prácticamente nula: sin descargas ni benchmarks, no hay evidencia independiente de calidad.
-- Discrepancia de pipeline: se declara `image-text-to-text`, pero no se documenta ningún módulo de visión; asume que es un modelo de texto hasta que se demuestre lo contrario.
-- Los «13 reasoning modes», «13 instruct modes» y «EVIL AI Constructs» no son módulos entrenados verificables, sino presets de prompt definidos por el autor; su comportamiento depende de que se copien literalmente.
-- Sesgos: al derivar de un base entrenado mayoritariamente en inglés y al reforzar temáticas de terror, es probable que amplifique estereotipos en la caracterización de personajes; no hay auditoría publicada.
-- No apto como modelo de producción orientado a usuarios finales sin una capa de moderación externa.
+- Modelo "uncensored"/"abliterated": puede generar contenido sensible, ofensivo o inapropiado; el autor lo marca como "not-for-all-audiences".
+- Riesgo elevado de alucinación: el propio autor advierte de no creer lo que dice el "O/S" ni los constructos y de verificar cualquier dato serio.
+- Uso previsto exclusivamente de entretenimiento ("for entertainment purposes only"); no apto para producción ni para tareas que requieran fiabilidad factual.
+- No habilitar herramientas ("tools"/"use tools"): el autor lo desaconseja explícitamente.
+- Idioma limitado al inglés; no se garantiza calidad en castellano.
+- Aunque la licencia es apache-2.0, el contenido generado puede plantear riesgos legales o éticos según el uso; conviene revisar las condiciones del modelo base.
+- El contexto recomendado (≥64k) implica requisitos de memoria considerables en conversaciones largas.
+- Los constructos de personajes pueden estar sujetos a derechos de propiedad intelectual de terceros; su uso comercial es responsabilidad del usuario.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
-- README del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF/blob/main/README.md
-- Variante no GGUF del mismo autor: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror/tree/main
-- Repositorio de terceros con instrucciones de despliegue local (no oficial): https://github.com/Wassimyounes01/qwen38-uncensored
-- Artículo de terceros sobre cuantizaciones GGUF y llama.cpp (no oficial): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Artículo de terceros sobre el build abliterated en GGUF (no oficial): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
+- Modelo fuente: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- FAQs del autor: https://huggingface.co/DavidAU/support
+- Apoyo al autor: https://buymeacoffee.com/davidbelton

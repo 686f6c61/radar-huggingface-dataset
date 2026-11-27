@@ -2,94 +2,97 @@
 
 ## Resumen
 
-`univ_ecapa_tdnn_small_ge2e` es un extractor de embeddings de locutor (speaker embeddings) implementado en JAX/Flax y distribuido por el autor `wq2012` dentro del proyecto FlaxSpeaker. Emplea una arquitectura ECAPA-TDNN en su variante `small`, con pooling temporal atencional (`asp`), objetivo de entrenamiento GE2E softmax y puntuación por similitud coseno. El modelo produce representaciones de 192 dimensiones a partir de audio a 16 kHz procesado con un frontend propio de 80 bandas Mel en logaritmo natural, VAD por energía y CMVN.
+`univ_ecapa_tdnn_small_ge2e` es un extractor de embeddings de hablante (speaker embeddings) de 1,68 millones de parámetros, implementado en JAX/Flax y publicado por el autor `wq2012` dentro del proyecto FlaxSpeaker. Resuelve la tarea de verificación e identificación de hablante: dado un fragmento de audio, produce un vector de 192 dimensiones que permite comparar voces mediante similitud coseno. Su relevancia radica en que es una reimplementación limpia desde cero (sin código ni datos propietarios) de algoritmos publicados por Google, lo que lo convierte en una referencia reproducible y ligera para experimentación.
 
-El checkpoint es una reimplementación desde cero en JAX/Flax de los algoritmos descritos en los papers GE2E, Dr-Vectors, ATP y PFAS, entrenada sobre un corpus controlado de tres dominios (LibriSpeech, CN-Celeb2 y VoxCeleb1) con 381 locutores y 9.447 enunciados. Con 1.684.418 parámetros de inferencia (1.690.176 en safetensors incluyendo pesos auxiliares), es un modelo deliberadamente pequeño pensado como referencia de benchmark dentro del ecosistema FlaxSpeaker, no como un sistema de producción a gran escala.
+La arquitectura combina un backbone ECAPA-TDNN en variante `small`, pooling temporal atencional (`asp`) y un objetivo de entrenamiento GE2E softmax con centroides leave-one-out exactos. El modelo se entrenó sobre un corpus controlado multi-dominio de 381 hablantes y 9.447 utterances (LibriSpeech + CN-Celeb2 + VoxCeleb1) durante 4.600 pasos, alcanzando convergencia en ese presupuesto reducido.
 
-Su relevancia actual es acotada pero clara: ofrece un punto de comparación reproducible, con métricas publicadas (EER, minDCF, ROC-AUC con intervalos de confianza bootstrap), exportaciones a TFLite en fp32 e int8, y una implementación íntegramente en JAX que facilita la portabilidad a aceleradores y entornos embebidos. No obstante, sus tasas de error (EER de ~17,6 % en 1-utt y ~14,1 % en 3-utt sobre el split de evaluación multi-dominio) están muy lejos de los sistemas ECAPA-TDNN entrenados sobre VoxCeleb2-dev, que alcanzan ~0,9 % EER.
+Es importante entenderlo como un checkpoint de benchmark de corpus pequeño, no como un modelo de producción a gran escala: sus cifras de EER (17,62 % en 1-utt, 14,07 % en 3-utt) están lejos de los sistemas ECAPA-TDNN entrenados sobre VoxCeleb2-dev completo (~0,9 % EER). Su valor está en la reproducibilidad, el tamaño mínimo y la disponibilidad de exportaciones TFLite.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ECAPA-TDNN (`small`) con pooling temporal atencional (`asp`) |
-| Parametros totales | 1.690.176 (safetensors); 1.684.418 de inferencia (encoder + cabeza de scoring, excluye clasificador de entrenamiento) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible como contexto textual; entrada de audio con crops variables de 90-180 frames (~0,9-1,8 s) en entrenamiento; exportaciones TFLite con 180 frames fijos (1,8 s) |
-| Tipos de cuantizacion | fp32 e int8 (exportaciones TFLite del encoder) |
-| Idiomas soportados | no disponible (modelo agnóstico al idioma; entrenado con corpus multilingüe: LibriSpeech en inglés, CN-Celeb2 en chino, VoxCeleb1 multilingüe) |
+| Arquitectura | ECAPA-TDNN (variante `small`) con pooling temporal atencional (`asp`) y cabeza de scoring coseno |
+| Parametros totales | 1.690.176 (safetensors); 1.684.418 en inferencia (encoder + cabeza de scoring, excluye pesos del clasificador de entrenamiento) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible; entrada de audio con crops de 90-180 frames; exportaciones TFLite con ventana fija de 180 frames (1,8 s) |
+| Tipos de cuantizacion | FP32 e INT8 (exportaciones TFLite) |
+| Idiomas soportados | No disponible (el modelo es independiente del idioma; entrenado con datos multi-dominio de LibriSpeech, CN-Celeb2 y VoxCeleb1) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, Flax msgpack (`flax_model.msgpack`), TFLite (`model_fp32.tflite`, `model_int8.tflite`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una ECAPA-TDNN de tamaño `small` que combina bloques convolucionales 1D con atención squeeze-excitation y agregación estadística atencional, seguida de una cabeza de embedding de 192 dimensiones. El frontend de audio es propio de la librería FlaxSpeaker: 80 bandas Mel en logaritmo natural a 16 kHz, VAD por energía a nivel de frame y normalización CMVN; no se trata de un `AutoFeatureExtractor` de Hugging Face, lo que implica que el preprocesado debe replicarse con la librería `flaxspeaker`. La función de pérdida es GE2E softmax con centroides leave-one-out exactos, y la verificación se realiza por similitud coseno.
+El backbone es una ECAPA-TDNN en configuración `small`, una red convolucional temporal con atención squeeze-excitation y agregación multi-escala, seguida de un pooling temporal atencional (`asp`) que produce un embedding de 192 dimensiones. La verificación se realiza por similitud coseno entre embeddings. El frontend de audio no es un `AutoFeatureExtractor` de Hugging Face, sino el componente propio `flaxspeaker.AudioFrontend`: Mel logarítmico natural de 80 dimensiones a 16 kHz, VAD a nivel de frame basado en energía y normalización CMVN.
 
-El entrenamiento se ejecutó durante 4.600 pasos de gradiente con batches de 32 enunciados (8 locutores x 4 enunciados), aproximadamente 15,58 épocas sobre 9.447 enunciados de 381 locutores, con semilla 42, warmup de 460 pasos y un margen de seguridad de 2 épocas sobre el punto de convergencia. Los crops de entrenamiento fueron de longitud variable U(90, 180) frames con máscara de validez exacta. La evolución del EER pooled pasó de 28,32 % (1-utt) / 25,27 % (3-utt) en el paso 400 a 18,35 % / 14,80 % en el paso 4.000 y a 17,62 % / 14,07 % en el paso 4.600. La desviación estándar entre semillas 0-2 es de 0,08-0,41 % absoluto en EER 1-utt, y el intervalo de confianza bootstrap al 95 % con 8.000 ensayos es de ±0,8 %.
+El entrenamiento usa el objetivo GE2E softmax (Wan et al. 2018, Eq. 6) con centroides leave-one-out exactos, mini-batches de 32 utterances (8 hablantes × 4 utterances) y 4.600 pasos (~15,58 épocas sobre las 9.447 utterances de 381 hablantes), con semilla 42 y warmup de 460 pasos, sobre una estación de trabajo CPU. Se emplearon crops de longitud variable `U(90, 180)` frames con máscara de validez exacta. El checkpoint incorpora además cabezas Dr-Vector y PFAS según los papers de referencia. La progresión de EER pooled durante el entrenamiento fue de 28,32 % (1-utt) / 25,27 % (3-utt) en el paso 400 a 17,62 % / 14,07 % en el paso 4.600.
 
 ## Capacidades
 
-- Extracción de embeddings de locutor de 192 dimensiones a partir de audio de 16 kHz.
-- Verificación de locutor (1:1) mediante similitud coseno entre embeddings.
-- Identificación de locutor (1:N) por comparación contra un conjunto de referencia de embeddings.
-- Puntuación por similitud coseno con cabeza de scoring dedicada (PFAS / Dr-Vector según configuración).
-- Procesamiento de audio de duración corta (crops de ~1-2 s) gracias al frontend con VAD y CMVN.
-- Exportación a TFLite (fp32 e int8) para despliegue en entornos con recursos limitados.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio generativo ni modo thinking; es un modelo puramente discriminativo de representación.
+- Extracción de embeddings de hablante de 192 dimensiones a partir de audio a 16 kHz.
+- Verificación de hablante (1:1) mediante similitud coseno.
+- Identificación de hablante (1:N) por comparación contra un conjunto de embeddings de referencia.
+- Scoring con múltiples cabezas: GE2E softmax, Dr-Vector y PFAS.
+- Agregación de múltiples utterances por hablante (evaluación 1-utt y 3-utt).
+- Detección de actividad de voz (VAD) integrada en el frontend.
+- Exportación a TFLite FP32 e INT8 para despliegue en entornos ligeros.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multimodales; es un modelo puramente de extracción de características de audio.
 
 ## Casos de uso
 
-- Verificación biométrica de locutor en aplicaciones de acceso: el modelo genera embeddings de 192 dimensiones que se comparan por coseno contra una plantilla enrolada, con un coste computacional mínimo (1,68 M parámetros) adecuado para dispositivos con poca memoria.
-- Benchmark reproducible de arquitecturas de speaker recognition: sirve como referencia controlada dentro de FlaxSpeaker para comparar variantes de backbone, pooling y funciones de pérdida bajo el mismo protocolo de evaluación multi-dominio.
-- Despliegue en dispositivos embebidos y móviles: las exportaciones TFLite fp32 e int8 del encoder permiten ejecutar la extracción de embeddings en microcontroladores o teléfonos sin infraestructura GPU.
-- Investigación en JAX/Flax: al ser una implementación nativa en JAX, se integra en pipelines de experimentación con diferenciación automática, `jax.jit` y aceleradores TPU/GPU sin necesidad de capas de compatibilidad con PyTorch.
-- Segmentación y diarización preliminar en entornos de pocos recursos: los embeddings pueden usarse como características para agrupar segmentos de audio por locutor en grabaciones cortas, aunque la baja diversidad de entrenamiento limita su robustez.
-- Detección de cambios de locutor en audio de reuniones o llamadas: la ventana de ~1,8 s de las exportaciones TFLite encaja con la granularidad típica de segmentación por turnos en conversaciones.
-- Filtrado de calidad y control en corpus de voz: los embeddings permiten detectar inconsistencias de locutor en datasets de ASR antes del entrenamiento.
+- Verificación biométrica de voz en aplicaciones de autenticación: el modelo genera un embedding de 192 dimensiones por utterance y se compara por coseno contra la plantilla del usuario registrado; su tamaño de 1,68 M de parámetros permite ejecución en CPU.
+- Identificación de hablante en grabaciones cortas: con ventanas de 1,8 s (180 frames) y exportación TFLite INT8, puede integrarse en dispositivos con recursos limitados para etiquetar quién habla en un audio.
+- Diarización ligera de reuniones: combinado con un segmentador externo, los embeddings permiten agrupar segmentos por hablante en entornos con pocos participantes.
+- Investigación y docencia en reconocimiento de hablante: sirve como referencia reproducible en JAX/Flax para comparar variantes de pooling, funciones de pérdida y cabezas de scoring dentro del benchmark FlaxSpeaker.
+- Pruebas de regresión en pipelines de audio: su checkpoint convergido y sus fingerprints de paso 0 permiten validar cambios de código contra métricas archivadas en `eval_results.json`.
+- Despliegue en móvil o edge: las exportaciones TFLite FP32/INT8 del encoder permiten inferencia en dispositivos sin GPU, con ventana fija de 1,8 s.
+- Filtrado de calidad de datos de audio: los embeddings pueden usarse para detectar duplicados o inconsistencias de hablante en corpus de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-Métricas publicadas en la model card sobre el split de evaluación multi-dominio del benchmark FlaxSpeaker (381 locutores, ≤25 enunciados por locutor):
+Datos extraídos de la model card y de `eval_results.json` (corpus de benchmark de 381 hablantes):
 
 | Metrica | 1-utt | 3-utt |
 |---|---|---|
-| EER (paso 400) | 28,32 % | 25,27 % |
-| EER (paso 4000, knee) | 18,35 % | 14,80 % |
-| EER (paso 4600, final) | 17,62 % | 14,07 % |
+| EER pooled (paso 400) | 28,32 % | 25,27 % |
+| EER pooled (paso 4000, knee) | 18,35 % | 14,80 % |
+| EER pooled (paso 4600, final) | 17,62 % | 14,07 % |
 
-Datos adicionales reportados: desviación estándar entre semillas 0-2 de 0,08-0,41 % absoluto en EER 1-utt pooled; intervalo de confianza bootstrap al 95 % (8.000 ensayos) de ±0,8 %. Se incluye además una evaluación sobre el subconjunto de 10 locutores de VoxCeleb1-O en `eval_results.json`, junto con minDCF y ROC-AUC, aunque los valores numéricos concretos de estas métricas no se detallan en la información disponible.
-
-Como referencia contextual citada por el autor: sistemas ECAPA-TDNN publicados entrenados sobre VoxCeleb2-dev alcanzan ~0,9 % EER en la lista completa VoxCeleb1-O (Desplanques et al., 2020), y sistemas de menos de 1 M de parámetros ~2 % (Wang et al., EfficientTDNN, 2022). El checkpoint aquí descrito no es comparable directamente por diferencias de corpus de entrenamiento.
+- Desviación estándar entre semillas 0-2 del EER pooled 1-utt: 0,08-0,41 % absoluto.
+- Intervalo de confianza bootstrap del 95 % (8.000 ensayos): ~0,8 % de semi-amplitud.
+- Fingerprint de pérdida en paso 0 con semilla liberada: 2,1851 (crops `U(90, 180)`), 2,0147 (crops fijos de 180 frames).
+- Referencia externa citada en la model card: ECAPA-TDNN sobre VoxCeleb2-dev alcanza ~0,9 % EER en VoxCeleb1-O (Desplanques et al., 2020); sistemas de menos de 1 M de parámetros, ~2 % (Wang et al., EfficientTDNN, 2022).
+- No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible, por no ser aplicables a esta tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en fp32 para los pesos (1,68 M parámetros ≈ 6,7 MB) más buffers de activación; el modelo completo cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. Para lotes grandes, cualquier GPU con ≥4 GB (GTX 1650, RTX 3050, RTX 4090, A100, H100) es más que suficiente.
-- Cabe en GPU consumer: sí, en todas las GPU consumer modernas e incluso en iGPU y dispositivos móviles vía TFLite.
-- Opciones de despliegue: `flaxspeaker` (JAX/Flax nativo), TFLite Runtime (fp32/int8), exportación vía `jax2tf`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput estimados: no disponibles en la información proporcionada; el tamaño reducido y la ventana de 1,8 s sugieren latencias de milisegundos en CPU, pero no se aportan cifras medidas.
+- VRAM estimada: inferior a 1 GB en FP32 para el encoder y los pesos de scoring (1,68 M de parámetros); en INT8, del orden de decenas de MB.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; el modelo se entrenó en CPU, por lo que la inferencia en CPU es viable.
+- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, GTX 1650, iGPU) y en dispositivos móviles vía TFLite.
+- Opciones de despliegue: JAX/Flax con la librería `flaxspeaker`, TFLite (FP32/INT8) para edge y móvil, y exportación a otros runtimes compatible con safetensors. No se documenta soporte nativo de vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | EER reportado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | EER de referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `univ_ecapa_tdnn_small_ge2e` (este) | 1,68 M (inferencia) | crops 90-180 frames (~0,9-1,8 s) | 17,62 % (1-utt) / 14,07 % (3-utt) en split propio de 381 locutores | Apache 2.0 | Hugging Face + PyPI (`flaxspeaker`) |
-| ECAPA-TDNN (Desplanques et al., 2020) | ~20 M (típico) | utterances completas | ~0,9 % en VoxCeleb1-O (VoxCeleb2-dev) | no disponible | Referencia académica; implementaciones comunitarias en SpeechBrain |
-| EfficientTDNN <1 M (Wang et al., 2022) | <1 M | utterances completas | ~2 % en VoxCeleb1-O | no disponible | Referencia académica |
+| `univ_ecapa_tdnn_small_ge2e` | 1,68 M | Ventana 1,8 s (180 frames); crops 90-180 | 17,62 % (1-utt) / 14,07 % (3-utt) en corpus de 381 hablantes | Apache 2.0 | Hugging Face, PyPI, GitHub |
+| ECAPA-TDNN (Desplanques et al., 2020) | ~20 M (referencia publicada) | No disponible | ~0,9 % en VoxCeleb1-O (VoxCeleb2-dev) | No disponible | Paper; implementaciones de terceros |
+| EfficientTDNN (Wang et al., 2022) | <1 M | No disponible | ~2 % (referencia citada) | No disponible | Paper |
 
-La comparación no es directa: los sistemas de referencia se entrenan sobre VoxCeleb2-dev (5.994 locutores, ~1,1 M enunciados), mientras que este checkpoint usa 381 locutores y 9.447 enunciados. Las cifras de EER no son trasladables entre corpus.
+La comparación directa no es homogénea: los EER de referencia externos se obtienen sobre VoxCeleb1-O con modelos entrenados en VoxCeleb2-dev (5.994 hablantes, ~1,1 M utterances), mientras que este checkpoint se entrena sobre 381 hablantes y 9.447 utterances. No se dispone de datos de benchmarks de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El EER absoluto (17,62 % en 1-utt) es muy superior al de sistemas entrenados sobre corpus grandes; no debe usarse como sistema de verificación en producción sin un reentrenamiento o fine-tuning sobre datos representativos.
-- La diversidad de locutores del entrenamiento (381) es baja; el rendimiento se degrada previsiblemente en locutores con acentos, edades o condiciones de grabación poco representadas.
-- El frontend de audio es propio de `flaxspeaker` (80 Mel log natural, VAD por energía, CMVN) y no es un `AutoFeatureExtractor` de Hugging Face; usar otro preprocesado invalida los embeddings.
-- Las exportaciones TFLite corresponden solo al encoder y usan 180 frames fijos sin máscara, por lo que no reproducen el pipeline de crops variables del entrenamiento.
-- Riesgo de alucinación no aplicable (modelo discriminativo), pero sí riesgo de falsos positivos/negativos en verificación por la baja calidad del embedding en condiciones adversas.
-- Sesgos demográficos y de canal no documentados explícitamente; el corpus mezcla inglés, chino y otros idiomas de VoxCeleb1, sin análisis de equidad publicado.
-- El checkpoint se declara como benchmark de corpus pequeño, no como reproducción de los resultados a gran escala de los papers; el autor lo indica explícitamente en la model card.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantías y la baja precisión hacen desaconsejable su uso comercial directo sin validación.
-- No es un producto oficial de Google; es una reimplementación independiente.
+- Checkpoint de benchmark de corpus pequeño: 381 hablantes y 9.447 utterances, no una reproducción a gran escala de los papers originales.
+- EER absoluto elevado (17,62 % en 1-utt) frente a sistemas industriales; no apto como sistema de verificación de producción sin reentrenamiento o fine-tuning sobre un corpus mayor.
+- Sesgos potenciales derivados de la composición del corpus (LibriSpeech, CN-Celeb2, VoxCeleb1): posible menor robustez ante acentos, idiomas o condiciones acústicas poco representadas.
+- No es un producto oficialmente soportado por Google; es una reimplementación independiente.
+- El frontend de audio es propio (`flaxspeaker.AudioFrontend`) y no un `AutoFeatureExtractor` de Hugging Face, lo que exige usar la librería `flaxspeaker` para preprocesar el audio correctamente.
+- Las exportaciones TFLite corresponden solo al encoder y usan una ventana fija sin máscara de 180 frames (1,8 s), lo que limita la flexibilidad de longitud en ese formato.
+- Riesgo de alucinación no aplica (no es un modelo generativo); el riesgo principal es la confusión entre hablantes con voces similares o audio degradado.
+- Licencia Apache 2.0: permite uso comercial, pero sin garantías del autor.
+- No se documentan métricas de latencia ni throughput, lo que dificulta planificar despliegues con requisitos de tiempo real.
 
 ## Enlaces
 
@@ -97,7 +100,7 @@ La comparación no es directa: los sistemas de referencia se entrenan sobre VoxC
 - Colección FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker
 - Repositorio GitHub: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI: https://pypi.org/project/flaxspeaker/
-- Paper GE2E: https://arxiv.org/abs/1710.10467
-- Paper Dr-Vectors: https://arxiv.org/abs/2104.01989
-- Paper ATP: https://arxiv.org/abs/2202.12163
-- Paper PFAS: https://arxiv.org/abs/2203.05642
+- GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467
+- Dr-Vectors (arXiv:2104.01989): https://arxiv.org/abs/2104.01989
+- ATP (arXiv:2202.12163): https://arxiv.org/abs/2202.12163
+- PFAS (arXiv:2203.05642): https://arxiv.org/abs/2203.05642

@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "briskVLA/student_8L_late",
+  "slug": "briskvla-student_8l_late",
+  "author": "briskVLA",
+  "url": "https://huggingface.co/briskVLA/student_8L_late",
+  "created_at": "2026-11-27T00:27:28.000Z",
+  "updated_at": "2026-11-27T00:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "briskvla",
+    "libero",
+    "robotics",
+    "role-student",
+    "8L",
+    "layout-late",
+    "base_model:lerobot/smolvla_libero",
+    "base_model:finetune:lerobot/smolvla_libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 400923616,
+  "parameters_human": "400.9M",
+  "storage_bytes": 806824732,
+  "storage_human": "807 MB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_libero",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI News | Latest News | Insights Powering AI-Driven Business Growth",
+      "url": "https://www.artificialintelligence-news.com/",
+      "snippet": "Nov 20, 2026 · AI News delivers the latest updates in artificial intelligence, machine learning, deep learning, enterprise AI, and …Read more"
+    },
+    {
+      "title": "AI News | Latest Headlines and Developments | Reuters",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "snippet": "2 days ago · Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, …Read more"
+    },
+    {
+      "title": "Google News - Artificial intelligence - Latest",
+      "url": "https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ",
+      "snippet": "Read full articles, watch videos, browse thousands of titles and more on the \"Artificial intelligence\" topic with Google News."
+    },
+    {
+      "title": "Artificial intelligence | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.co.uk/news/topics/ce1qrvleleqt",
+      "snippet": "Artificial Intelligence (AI) - get the latest news, video, live updates and in-depth analysis from the experts across the BBC."
+    }
+  ]
+}

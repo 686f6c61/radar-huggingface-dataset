@@ -2,100 +2,105 @@
 
 ## Resumen
 
-Drama-3-Japanese-speech-cpp-gguf es una coleccion de cuantizaciones GGUF del modelo de sintesis de voz Aratako/Drama-3-Japanese, un TTS de 35.774 millones de parametros basado en fishaudio/s2-pro y construido con Fish Audio. El autor de las cuantizaciones es StudioYebisu-ship-it y el objetivo es permitir inferencia local de clonacion de voz zero-shot y generacion de habla emocional en japones mediante los runtimes speech.cpp y audio.cpp, ambos basados en ggml.
+Drama-3-Japanese es un modelo de síntesis de voz (text-to-speech) en japonés basado en `fishaudio/s2-pro` y desarrollado originalmente por Aratako. Esta ficha concreta corresponde a las cuantizaciones GGUF publicadas por StudioYebisu-ship-it para su uso en los runtimes `speech.cpp` y `audio.cpp`, lo que permite ejecutar localmente un modelo de 35.774.376.977 parámetros con soporte para clonación de voz zero-shot y generación de habla emocionalmente expresiva en japonés.
 
-El modelo es relevante porque democratiza el despliegue local de un TTS de gran tamano con arquitectura de mezcla de expertos (la nomenclatura "35B-A3B" indica aproximadamente 3 mil millones de parametros activos), ofreciendo variantes calibradas con imatrix estratificado para japones que van desde 9,09 GiB en IQ3_XXS hasta 24,57 GiB en Q5_K. Incluye parches especificos que reportan aceleraciones de hasta 2,96x en CUDA sobre una RTX 4090.
+El modelo emplea una arquitectura híbrida de mezcla de expertos (MoE), como se deduce de la nomenclatura `35B-A3B` de los ficheros publicados (35.000 millones de parámetros totales con aproximadamente 3.000 millones activos por token). Las cuantizaciones han sido calibradas con una matriz de importancia (`imatrix`) estratificada sobre japonés, lo que mejora la fidelidad de los pesos cuantizados en este idioma concreto. El contexto de texto admitido por el sidecar de configuración es de 8192 tokens.
 
-La ficha describe una cuantizacion, no el modelo original; los datos de arquitectura y entrenamiento se limitan a lo indicado en la model card del repositorio.
+Su relevancia actual radica en que traslada un modelo TTS de gran tamaño a hardware de consumo mediante cuantizaciones agresivas (desde 9,09 GiB en IQ3_XXS hasta 24,57 GiB en Q5_K), con parches específicos que aceleran la inferencia en CUDA y compatibilidad con backends Vulkan y CPU. La licencia fish-audio-community-license-1.0 condiciona el uso comercial, por lo que conviene revisarla antes de cualquier despliegue en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | TTS basada en fishaudio/s2-pro, con mezcla de expertos (nomenclatura 35B-A3B); detalles internos no disponibles |
-| Parametros totales | 35.774.376.977 |
-| Parametros activos | aproximadamente 3 mil millones (segun nomenclatura A3B; cifra exacta no disponible) |
-| Longitud de contexto | 8192 tokens de texto (`max_text_tokens` en el sidecar .gguf.json) |
-| Tipos de cuantizacion | IQ3_XXS, Q4_K, Q5_K (hibridas: expertos en IQ3_XXS/Q4_K/Q5_K con Q8_0/F16/F32 en otras capas) |
-| Idiomas soportados | japones (ja) |
+| Arquitectura | Mezcla de expertos (MoE), nomenclatura 35B-A3B; pesos derivados de `fishaudio/s2-pro` |
+| Parámetros totales | 35.774.376.977 |
+| Parámetros activos | Aproximadamente 3.000 millones (según nomenclatura A3B; cifra exacta no disponible) |
+| Longitud de contexto | 8192 tokens de texto (`max_text_tokens` en el sidecar) |
+| Tipos de cuantización | Q4_K híbrido, Q5_K híbrido, IQ3_XXS (variantes speech.cpp y audio.cpp) |
+| Idiomas soportados | Japonés (ja) |
 | Licencia | fish-audio-community-license-1.0 |
-| Formato de pesos | GGUF (ggml), con sidecar .gguf.json y ficheros .voice.gguf para prompts de voz |
+| Formato de pesos | GGUF (ggml), con sidecar `.gguf.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Aratako/Drama-3-Japanese deriva de fishaudio/s2-pro y esta orientado a sintesis de voz expresiva en japones con clonacion zero-shot. La nomenclatura "35B-A3B" sugiere una arquitectura de mezcla de expertos con unos 35.774 millones de parametros totales y aproximadamente 3 mil millones activos por token, aunque la model card del repositorio de cuantizaciones no detalla la composicion interna (capas, atencion, codec de voz). El sidecar incluye un identificador de codec de voz (`voice_codec: 2cf2ec268a087bd2ad91bfbb6796b0429fb03a73cdb8fd07f445d503e9a14d37`), lo que indica una representacion discreta de audio tipo codec neural.
+El modelo subyacente `Aratako/Drama-3-Japanese` deriva de `fishaudio/s2-pro` y se distribuye aquí como cuantizaciones GGUF para los runtimes `speech.cpp` y `audio.cpp`. La nomenclatura de los ficheros (`Drama-35B-A3B-Japanese-v3`) indica una arquitectura de mezcla de expertos con 35.000 millones de parámetros totales y alrededor de 3.000 millones activos por token, aunque la model card no detalla la composición exacta de expertos ni la configuración de las capas.
 
-Las cuantizaciones se han calibrado con imatrix estratificado sobre japones, aplicando precisiones mixtas: los expertos se cuantizan a IQ3_XXS, Q4_K o Q5_K mientras que otras capas se mantienen en Q8_0, F16 o F32. El repositorio incluye parches para speech.cpp v0.11.2 (`drama3-speechcpp-fast.patch` y `drama3-small-speechcpp.patch`) que anaden compatibilidad con IQ3_XXS y optimizaciones CUDA con grafos (`GGML_CUDA_GRAPHS=ON`). No se dispone de informacion sobre volumen de datos de entrenamiento, composicion del dataset ni uso de RLHF/DPO en el modelo original.
+Las cuantizaciones se han generado con calibración `imatrix` estratificada sobre japonés, y los ficheros Q4_K y Q5_K emplean un esquema híbrido: los expertos se cuantizan a Q4_K o Q5_K mientras que otras capas se mantienen en Q8_0, F16 o F32. Los ficheros IQ3_XXS aplican una cuantización más agresiva a los expertos. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO en la model card proporcionada.
+
+Una innovación destacable es el parche `drama3-speechcpp-fast.patch`, que sobre `speech.cpp v0.11.2` reporta una aceleración agregada de aproximadamente 2,96× en CUDA. Además, los ficheros incluyen un codec de voz con identificador `2cf2ec268a087bd2ad91bfbb6796b0429fb03a73cdb8fd07f445d503e9a14d37` y soporte para extracción de un `voice.gguf` reutilizable a partir de un audio de referencia con su transcripción.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) en japones con prosodia expresiva.
-- Clonacion de voz zero-shot a partir de una muestra de referencia y su transcripcion, generando un fichero reutilizable `.voice.gguf`.
-- Etiquetas de emocion y de escena en linea, segun TAG_LIST.md del modelo base, para controlar la interpretacion.
-- Generacion de habla emocional (emotional-speech-generation) con control de pausas mediante variables como `SPEECH_DRAMA3_MAX_PAUSE_FRAMES`.
-- Servidor HTTP local incluido en speech.cpp (`speech serve`) para integracion como servicio.
-- Modo de diseno de voz solo por texto ademas del modo de clonacion por referencia.
-- Soporte de inferencia en CPU, Vulkan y CUDA (con restricciones de backend segun cuantizacion).
+- Síntesis de voz (text-to-speech) en japonés con salida PCM WAV a 44,1 kHz.
+- Clonación de voz zero-shot a partir de un audio de referencia y su transcripción exacta, generando un fichero `voice.gguf` reutilizable.
+- Generación de habla emocionalmente expresiva, con control mediante etiquetas entre corchetes (por ejemplo `[囁き]` para susurro, `[吐息]` para respiración, o descripciones de estilo como voz de mujer de 25 años susurrando).
+- Soporte de susurros, respiración audible y estilos íntimos tipo ASMR, según los ejemplos de audio publicados.
+- Modo servidor local mediante el subcomando `serve` de `speech.cpp`, con host y puerto configurables.
+- Control de generación mediante semilla, temperatura, top-k y top-p (parámetros expuestos en la CLI de `audio.cpp`).
+- No se documentan capacidades de tool calling, agentes, visión ni audio de entrada más allá de la referencia de voz para clonación.
 
 ## Casos de uso
 
-- Audiolibros y narracion en japones: el modelo genera habla expresiva con etiquetas de emocion y escena, adecuado para narraciones largas gracias a los 8192 tokens de contexto de texto.
-- Clonacion de voz para doblaje: extrayendo un `.voice.gguf` de una muestra de referencia se puede sintetizar el mismo timbre de forma consistente, util para localizacion de contenido al japones.
-- Asistentes de voz y agentes conversacionales en japones: el servidor local de speech.cpp permite desplegar un endpoint HTTP de TTS en infraestructura propia.
-- Prototipado de videojuegos y personajes: las etiquetas de emocion y escena permiten variar la interpretacion de un mismo personaje sin reentrenar.
-- Accesibilidad y lectura de textos: conversion de documentos a audio en japones con control de pausas para mejorar la comprension.
-- Investigacion en TTS: las cuantizaciones IQ3_XXS permiten ejecutar un modelo de 35B en GPUs de 16-24 GB, facilitando experimentos de clonacion y evaluacion acustica en hardware de consumo.
-- Generacion de voces para contenido educativo o podcasts en japones con prosodia controlada por semilla (`--seed`) para reproducibilidad.
+- Audiolibros y narración en japonés: el modelo acepta textos de hasta 8192 tokens y produce voz natural con control de estilo, lo que permite narrar capítulos completos por pasajes con una voz consistente extraída previamente como `voice.gguf`.
+- Doblaje y localización de contenido: la clonación zero-shot permite replicar la voz de un actor a partir de una muestra corta con transcripción, útil para regenerar líneas de diálogo en japonés manteniendo el timbre original.
+- Asistentes de voz y agentes conversacionales en japonés: el modo servidor (`speech serve`) expone el modelo por HTTP en local, lo que facilita integrarlo como backend TTS en pipelines de asistentes con baja dependencia de servicios en la nube.
+- Producción de contenido ASMR y audios inmersivos: las etiquetas de estilo permiten generar susurros, respiraciones y voces íntimas de forma controlada, un nicho donde los TTS convencionales suelen sonar planos.
+- Prototipado de videojuegos y novelas visuales: con la variante IQ3_XXS (9,09 GiB) el modelo cabe en GPUs de 16 a 24 GB, lo que permite generar voces de personajes en estaciones de trabajo sin GPU de datacenter.
+- Accesibilidad y lectura de textos: conversión de documentos y contenido web en japonés a audio con voces personalizables, ejecutable en local para preservar la privacidad del texto procesado.
+- Investigación en síntesis de voz: la disponibilidad de varias cuantizaciones (Q4_K, Q5_K, IQ3_XXS) y de dos runtimes (`speech.cpp` y `audio.cpp`) permite estudiar el impacto de la cuantización en la calidad perceptual del habla generada.
 
 ## Benchmarks y rendimiento
 
-La model card no publica benchmarks estandar (MMLU, HumanEval, GSM8K, etc.), pero si mediciones de velocidad de inferencia del parche CUDA sobre una RTX 4090 con CUDA 12.8, usando `Drama-35B-A3B-Japanese-v3-small-IQ3_XXS.gguf` y `--experts-on-cpu=false`:
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de velocidad de inferencia sobre muestras concretas:
 
-| Caso | Base RTFx | Base audio / wall / TTFA | Base dVRAM | Fast RTFx | Fast audio / wall / TTFA | Fast dVRAM | Aceleracion |
-|---|---|---|---|---|---|---|---|
-| narration | 1,19 | 5,712 s / 4,817 s / 0,403 s | +11,63 GiB | 3,17 | 2,601 s / 0,820 s / 0,280 s | +10,87 GiB | 2,68x |
-| clone_jvnv | 1,26 | 6,223 s / 4,948 s / 0,418 s | +11,69 GiB | 3,68 | 5,759 s / 1,564 s / 0,292 s | +10,89 GiB | 2,93x |
-| pause_clamp | 1,40 | 13,235 s / 9,434 s / 0,321 s | +11,60 GiB | 4,18 | 12,678 s / (wall no disponible en el extracto) | no disponible | no disponible |
+| Modelo / runtime | Texto | Tiempo | RTFx |
+|---|---|---|---|
+| small-IQ3_XXS (RTX 4090 CUDA, parche fast) | Narración | 12,68 s | 4,18 |
+| small-IQ3_XXS (CUDA, Whisper) | Susurro | 8,31 s | no disponible |
+| Full Hybrid Q4_K (speech.cpp v0.11.2 Vulkan) | Susurro | 11,66 s | 1,91 |
+| Full Hybrid Q5_K (speech.cpp v0.11.2 Vulkan) | Narración | 6,08 s | 1,86 |
 
-La model card indica una aceleracion agregada de aproximadamente 2,96x en CUDA. No se han publicado resultados de benchmarks de calidad (MOS, WER, similitud de hablante) en la informacion disponible.
+El parche `drama3-speechcpp-fast.patch` reporta una aceleración agregada de aproximadamente 2,96× en CUDA respecto a la versión sin parche.
 
 ## Requisitos de hardware
 
-- VRAM estimada (pesos + reserva de computo/KV de aproximadamente 2,40 GiB):
+- VRAM estimada según la model card (incluye una reserva de aproximadamente 2,40 GiB):
   - Q4_K: aproximadamente 23,21 GiB en GPU completa.
   - Q5_K: aproximadamente 26,96 GiB en GPU completa.
-  - small-IQ3_XXS: aproximadamente 11,48 GiB (apto para GPUs de 16-24 GB).
-  - Variante audio.cpp IQ3_XXS: aproximadamente 11-12 GiB.
-- GPU recomendadas: para Q4_K/Q5_K se requiere GPU de 24 GB o mas con Vulkan o CPU; en GPUs de escritorio de 24 GB con 19-21 GiB libres, Q4_K desborda 6-10 capas de expertos (aproximadamente 0,42 GiB por capa) a CPU. Para CUDA se recomienda usar small-IQ3_XXS en GPUs de 16-24 GB (probado en RTX 4090).
-- Aviso de backend: Q4_K y Q5_K no deben ejecutarse en CUDA con el ggml-cuda upstream, ya que `block_q8_1.ds` en FP16 desborda en `ffn_down_exps` y provoca aserciones de "not finite numbers". Usar Vulkan (con `GGML_VK_DISABLE_F16=1`, `GGML_VK_DISABLE_COOPMAT=1`, `GGML_VK_DISABLE_COOPMAT2=1`) o CPU.
-- Opciones de despliegue: speech.cpp v0.11.2+ (CPU, Vulkan, CUDA con parche), audio.cpp (CUDA), servidor HTTP integrado en speech.cpp.
-- Latencia y throughput: con small-IQ3_XXS y parche fast en RTX 4090, RTFx de 3,17-4,18 y TTFA de 0,280-0,403 s segun caso; sin parche, RTFx de 1,19-1,40 y TTFA de 0,321-0,418 s.
+  - IQ3_XXS (speech.cpp): aproximadamente 11,48 GiB, orientado a GPUs de 16 a 24 GB.
+  - IQ3_XXS (audio.cpp): aproximadamente 11 a 12 GiB.
+- GPU recomendadas: RTX 4090 para la variante IQ3_XXS con parche CUDA; para Q4_K y Q5_K se requiere una GPU con al menos 24-27 GiB de VRAM libre o bien ejecución parcial en CPU.
+- Los ficheros Q4_K y Q5_K no deben ejecutarse en CUDA: `ggml-cuda` almacena `block_q8_1.ds` en FP16, lo que provoca desbordamiento en las activaciones de `ffn_down_exps` y aserciones de `not finite numbers`. Deben usarse con Vulkan (con `GGML_VK_DISABLE_F16=1`, `GGML_VK_DISABLE_COOPMAT=1` y `GGML_VK_DISABLE_COOPMAT2=1`) o con CPU (`block_q8_K`).
+- Para CUDA debe emplearse la variante `Drama-35B-A3B-Japanese-v3-small-IQ3_XXS.gguf` junto con el parche `drama3-speechcpp-fast.patch` sobre `speech.cpp v0.11.2`.
+- Opciones de despliegue: `speech.cpp` (v0.11.2 o superior, backends Vulkan, CPU y CUDA con parche) y `audio.cpp` (backend CUDA) para el fichero con layout específico.
+- Throughput observado: RTFx de 4,18 en RTX 4090 con IQ3_XXS y parche fast; RTFx de 1,86 a 1,91 en Vulkan con Q4_K y Q5_K. No se dispone de datos de latencia adicionales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / runtime |
-|---|---|---|---|---|---|
-| Drama-3-Japanese-speech-cpp-gguf (esta ficha) | 35.774 M totales, ~3B activos | 8192 tokens de texto | ja | fish-audio-community-license-1.0 | GGUF / speech.cpp, audio.cpp |
-| Aratako/Drama-3-Japanese (modelo base) | 35.774 M totales, ~3B activos | no disponible | ja | fish-audio-community-license-1.0 | pesos originales (no disponible el formato exacto) |
-| fishaudio/s2-pro (modelo de referencia) | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible. Como referencia estructural, esta ficha se relaciona con su modelo base y con el modelo del que este deriva:
 
-No se dispone de datos de rendimiento comparativo con otros TTS en la informacion proporcionada.
+| Modelo | Relación | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Drama-3-Japanese-speech-cpp-gguf | Esta ficha (cuantización GGUF) | 35.774.376.977 | 8192 tokens de texto | fish-audio-community-license-1.0 | GGUF |
+| Aratako/Drama-3-Japanese | Modelo base cuantizado | no disponible | no disponible | no disponible | no disponible |
+| fishaudio/s2-pro | Modelo de origen del base | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo soporta japones; no hay capacidades multilingues documentadas.
-- La licencia fish-audio-community-license-1.0 es de tipo comunitario y puede imponer restricciones al uso comercial; es necesario revisar el fichero LICENSE antes de desplegar en produccion.
-- Riesgo de alucinacion acustica y prosodia inconsistente en entradas largas o con etiquetas de emocion mal formadas; la clonacion por referencia produce resultados mas limpios que el diseno de voz solo por texto.
-- Q4_K y Q5_K no son fiables en CUDA con ggml-cuda upstream por desbordamiento en FP16; requieren Vulkan o CPU.
-- En GPUs de 24 GB con Windows y VRAM libre limitada, Q4_K desborda capas de expertos a CPU, degradando latencia.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no hay validacion comunitaria publica de la calidad de las cuantizaciones.
-- El modelo esta etiquetado como region us; pueden aplicarse restricciones de exportacion o uso segun jurisdiccion.
-- No se han publicado evaluaciones de sesgo, robustez ni similitud de hablante; se recomienda validacion propia antes de uso en produccion.
+- El modelo solo soporta japonés; no se documenta soporte multilingüe.
+- La licencia fish-audio-community-license-1.0 es una licencia comunitaria con condiciones específicas; es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
+- Los ficheros Q4_K y Q5_K fallan en CUDA por desbordamiento de FP16 en las activaciones de `ffn_down_exps`; usarlos en CUDA produce aserciones de números no finitos. Deben ejecutarse en Vulkan o CPU.
+- La clonación de voz exige una transcripción exacta del audio de referencia; transcripciones incorrectas degradan la calidad de la voz extraída.
+- El modelo puede reproducir estilos de voz de personas reales a partir de muestras cortas, lo que plantea riesgos de suplantación y exige consentimiento explícito y cumplimiento normativo.
+- No se han publicado evaluaciones formales de sesgo, robustez ni tasas de alucinación acústica (pronunciación incorrecta, artefactos o texto omitido) en la información disponible.
+- El contexto de texto está limitado a 8192 tokens según el sidecar; textos más largos deben fragmentarse.
+- La variante IQ3_XXS requiere un parche específico sobre `speech.cpp v0.11.2` para funcionar en CUDA, lo que añade complejidad de mantenimiento frente a versiones upstream.
+- El tamaño del repositorio (68,5 GB) implica requisitos de almacenamiento considerables si se descargan todas las cuantizaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf
+- Modelo en Hugging Face: https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf
 - Modelo base: https://huggingface.co/Aratako/Drama-3-Japanese
-- Lista de etiquetas de emocion y escena: https://huggingface.co/Aratako/Drama-3-Japanese/blob/main/TAG_LIST.md
-- speech.cpp: https://github.com/nyosegawa/speech.cpp
-- audio.cpp: https://github.com/JarodMica/audio.cpp
+- Runtime speech.cpp: https://github.com/nyosegawa/speech.cpp
+- Runtime audio.cpp: https://github.com/JarodMica/audio.cpp
+- Modelo de origen citado: `fishaudio/s2-pro` (no se proporciona URL directa en la información disponible)

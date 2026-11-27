@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None",
-      "url": "https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None",
-      "snippet": "Instructions to use Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Base-Models-Finetuned-on-PersianQuAD - a Z-Jafari Collection",
-      "url": "https://huggingface.co/collections/Z-Jafari/base-models-finetuned-on-persianquad",
-      "snippet": "Base models finetuned with PersianQuAD and baseline dataset PersianQuAD."
-    }
-  ]
+  "sources": []
 }

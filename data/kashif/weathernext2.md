@@ -2,93 +2,105 @@
 
 ## Resumen
 
-WeatherNext 2 es un modelo global de predicción meteorológica a medio plazo desarrollado por Google DeepMind y Google Research, distribuido en Hugging Face bajo el identificador `kashif/weathernext2`. Resuelve el problema de la predicción determinista y de conjunto (ensemble) del estado de la atmósfera a escala planetaria, sustituyendo los sistemas tradicionales de asimilación numérica por una red neuronal generativa que produce un pronóstico completo en una sola pasada hacia delante.
+WeatherNext 2 es un modelo global de predicción meteorológica a medio plazo desarrollado por Google DeepMind y Google Research, distribuido en Hugging Face por el usuario kashif. El modelo realiza una pasada forward para avanzar el estado de la atmósfera 6 horas sobre una rejilla de 0,25° de latitud/longitud (721×1440), prediciendo 13 niveles de presión de temperatura, geopotencial, viento y humedad, junto con campos de superficie, precipitación, vientos a 100 m y un conjunto de diagnósticos de ciclones tropicales.
 
-Cada pasada avanza el estado de la atmósfera 6 horas sobre una rejilla de 0,25° de latitud/longitud (721×1440), prediciendo 13 niveles de presión de temperatura, geopotencial, viento y humedad, junto con campos de superficie, precipitación, vientos a 100 m y un conjunto de diagnósticos de ciclones tropicales. La arquitectura es una *Functional Generative Network* (FGN) con una malla de 40.962 nodos y 183,8 M de parámetros por variante, aunque el repositorio empaqueta cuatro ejecuciones independientes (`model1`–`model4`), lo que eleva el total a 215.424.547 parámetros en safetensors.
+Técnicamente se trata de una Functional Generative Network (FGN): en lugar de inyectar un campo de ruido en la entrada o ejecutar un muestreador de difusión, el modelo extrae un único vector de ruido de 32 dimensiones por miembro del ensemble y lo utiliza para modular la escala y el offset de todas las capas de normalización. Una extracción produce un pronóstico autoconsistente, y un ensemble es simplemente varias extracciones, lo que en la práctica se reduce a la dimensión de batch.
 
-Su relevancia actual radica en que es una alternativa neuronal pura a los modelos físicos operativos (como ECMWF HRES), con generación de ensembles trivial (una dimensión de lote) y licencia permisiva CC-BY-4.0. No obstante, requiere una rama no publicada de Transformers y datos de entrada específicos (análisis HRES y vientos a 100 m) que no están incluidos en los conjuntos de datos de muestra publicados.
+Los pesos corresponden a la variante `WeatherNext2_<2025_model1`, entrenada con datos hasta 2024 y ajustada finamente para inicialización desde análisis operativos ECMWF HRES. Es relevante ahora porque introduce un paradigma generativo distinto al de los modelos de difusión meteorológicos habituales (GraphCast, GenCast) y porque su arquitectura de red neuronal de grafos sobre malla icosaédrica con 40.962 nodos ofrece una alternativa eficiente en parámetros (215,4 M totales) para predicción operativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Functional Generative Network (FGN) sobre malla graph-neural-network; 40.962 nodos de malla |
-| Parametros totales | 215.424.547 (4 ejecuciones empaquetadas); 183,8 M por variante |
+| Arquitectura | Graph Neural Network (Functional Generative Network, FGN) sobre malla icosaédrica de 40.962 nodos |
+| Parametros totales | 215.424.547 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; estado atmosférico de 2 marcos temporales de 6 h) |
+| Longitud de contexto | no aplica (modelo de predicción meteorológica, no de lenguaje); ventana de 2 pasos temporales de 6 h como condición inicial |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo numérico, no lingüístico) |
+| Idiomas soportados | no disponible (no es un modelo lingüístico) |
 | Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors |
+| Resolucion espacial | 0,25° (rejilla 721×1440) |
+| Paso temporal | 6 horas por pasada forward |
+| Niveles de presión | 13 |
+| Dimension de ruido latente | 32 |
+| Tamano del repositorio | 34,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una *Functional Generative Network* (FGN): en lugar de inyectar un campo de ruido en la entrada o ejecutar un muestreador de difusión, sortea un único vector de ruido de 32 dimensiones por miembro del ensemble y lo utiliza para modular la escala y el desplazamiento de **todas** las capas de normalización. Una muestra produce un pronóstico autoconsistente y un ensemble es simplemente varias muestras, lo que en la práctica equivale a la dimensión de lote. La representación se apoya en una malla de 40.962 nodos sobre la rejilla de 0,25° (721×1440), procesada mediante capas de graph-neural-network.
+WeatherNext 2 es una red neuronal de grafos (GNN) que opera sobre una malla icosaédrica de 40.962 nodos, lo que permite un procesamiento jerárquico multi-escala de la atmósfera global. La innovación principal es su naturaleza de Functional Generative Network: el ruido no se inyecta en la entrada ni se emplea un muestreador de difusión iterativo, sino que un vector de 32 dimensiones por miembro del ensemble modula la escala y el offset de todas las capas de normalización del modelo. Esto permite generar un ensemble completo en una sola pasada forward (el ensemble ocupa la dimensión de batch), reduciendo drásticamente el coste computacional frente a los métodos de difusión.
 
-Los pesos corresponden a `WeatherNext2_<2025_model{1..4}`, entrenados con datos hasta 2024 y ajustados finamente para la inicialización a partir del análisis operativo ECMWF HRES. Se incluyen las cuatro ejecuciones entrenadas de forma independiente (`model1`–`model4`), cada una con su propia configuración y activos de procesador, lo que permite combinar ensembles de ruido con ensembles multi-modelo. El modelo predice campos normalizados; `WeatherNext2FeatureExtractor` gestiona la normalización, los forzamientos de reloj y la conversión de vuelta a unidades físicas. El ruido lo muestrea el procesador, no el forward del modelo.
+El checkpoint distribuido corresponde a la variante `WeatherNext2_<2025_model1`, entrenada con datos hasta 2024 y ajustada finamente para inicialización desde análisis operativos ECMWF HRES. Existen cuatro checkpoints entrenados de forma independiente (model1 a model4) que pueden combinarse en un ensemble multi-modelo. El modelo predice campos normalizados; el `WeatherNext2FeatureExtractor` se encarga de la normalización, los forzamientos de reloj y la conversión de vuelta a unidades físicas. No se especifican en la información disponible el número exacto de tokens de entrenamiento ni la composición detallada del dataset, más allá de que se emplearon datos hasta 2024 y análisis HRES del ECMWF.
 
 ## Capacidades
 
-- Predicción meteorológica global determinista y de conjunto a medio plazo, con un paso de 6 horas por forward pass.
+- Predicción meteorológica global a medio plazo con paso temporal de 6 horas y resolución de 0,25°.
 - Predicción de 13 niveles de presión de temperatura, geopotencial, viento y humedad.
-- Predicción de campos de superficie, precipitación y vientos a 100 m.
-- Diagnósticos de ciclones tropicales (variante WeatherNext2; la variante WeatherNextCyclones no incluye vientos a 100 m).
-- Generación de ensembles de ruido: `generate(num_members=8)` repite cada condición inicial y ejecuta los miembros por el eje de lote.
-- Ensembles multi-modelo: combinación de las cuatro ejecuciones independientes (`model1`–`model4`).
-- Despliegue autoregresivo (`generate()`) con avance de cada miembro usando su propio estado predicho y muestreo de ruido nuevo en cada paso de 6 horas.
-- Inicialización desde dos marcos cronológicos de análisis HRES separados por 6 horas, con latitud ascendente, los niveles de presión del checkpoint y todos los campos de entrada configurados, incluidos los estáticos.
-- No dispone de tool calling, agentes ni capacidades multilingües (es un modelo numérico, no lingüístico).
+- Predicción de campos de superficie, incluida temperatura a 2 m.
+- Predicción de precipitación.
+- Predicción de vientos a 100 m (requiere entradas de viento a 100 m, ausentes en los datasets de muestra publicados).
+- Diagnósticos de ciclones tropicales.
+- Generación de ensembles mediante ruido: `generate(num_members=8)` produce 8 miembros con pesos compartidos y ruido independiente.
+- Rollout autorregresivo multi-paso mediante `generate()` con `num_steps`, que avanza cada miembro con su propio estado predicho y muestrea ruido nuevo en cada paso de 6 horas.
+- Ensemble multi-modelo combinando los cuatro checkpoints independientes (model1 a model4).
+- Inicialización desde dos fotogramas cronológicos de análisis HRES separados 6 horas, con latitud ascendente, los niveles de presión del checkpoint y todos los campos de entrada configurados, incluidos los estáticos.
+- No soporta tool calling, agentes, razonamiento multi-step en sentido lingüístico ni capacidades multilingües: es un modelo específico de predicción meteorológica.
 
 ## Casos de uso
 
-- Predicción operativa a medio plazo: el modelo genera un pronóstico global completo en un solo forward pass de 6 horas, lo que permite producir ciclos de pronóstico con menor coste computacional que la asimilación numérica tradicional.
-- Generación de ensembles probabilísticos: con `num_members=8` y `batch_size=1` se obtienen ocho pronósticos autoconsistentes por condición inicial, adecuados para estimar incertidumbre en temperatura y precipitación.
-- Predicción de episodios de viento a 100 m: la variante WeatherNext2 incluye vientos a 100 m, útil para planificación de energía eólica y evaluación de riesgos en parques eólicos.
-- Seguimiento de ciclones tropicales: los diagnósticos de ciclones tropicales permiten monitorizar trayectorias y desarrollo de sistemas tropicales en rejillas globales.
-- Investigación climática y validación de modelos: la disponibilidad de cuatro ejecuciones independientes y de pesos abiertos facilita estudios de sensibilidad y comparaciones con reanálisis HRES.
-- Integración en pipelines de investigación con datos HRES: el `WeatherNext2FeatureExtractor` gestiona normalización y conversión a unidades físicas, lo que simplifica la incorporación en flujos existentes de análisis meteorológico.
-- Pronóstico autoregresivo de hasta varios días: `generate(num_steps=20)` produce 5 días de pronóstico encadenando pasos de 6 horas con ruido nuevo en cada paso.
+- Predicción operativa a medio plazo: el modelo genera pronósticos globales cada 6 horas con resolución de 0,25°, adecuado para centros meteorológicos que necesitan actualizaciones frecuentes con un coste computacional contenido gracias a su naturaleza de una sola pasada forward.
+- Generación de ensembles probabilísticos: con `num_members=8` o más, se obtiene un ensemble completo en una única pasada (el ensemble ocupa la dimensión de batch), lo que permite estimar incertidumbre en temperatura a 2 m, precipitación y vientos sin ejecutar un muestreador de difusión iterativo.
+- Predicción de ciclones tropicales: los diagnósticos de ciclones incluidos permiten monitorizar trayectorias e intensidad, y la variante WeatherNextCyclones está específicamente orientada a este fin.
+- Predicción de vientos para energía eólica: los campos de viento a 100 m permiten estimar producción eólica a escala global, aunque requieren entradas de viento a 100 m que no están en los datasets de muestra publicados.
+- Investigación climática y meteorológica: la arquitectura FGN y la posibilidad de combinar cuatro checkpoints independientes permiten estudiar la dispersión del ensemble y comparar con modelos de difusión como GenCast.
+- Rollouts de 5 días: con `num_steps=20` se generan pronósticos de 5 días avanzando cada miembro con su propio estado predicho, útil para evaluación de habilidad predictiva a medio plazo.
+- Integración en pipelines de investigación con Transformers: al estar implementado en la librería Transformers (rama pendiente de fusión), se integra con `from_pretrained`, `device_map="auto"` y el ecosistema de Hugging Face.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada; el repositorio ocupa 30,4 GB, pero el checkpoint individual de 183,8 M de parámetros es ligero en comparación con el tamaño total del repositorio (que incluye las cuatro ejecuciones y activos del procesador).
-- GPU recomendadas: no disponible; el ejemplo oficial usa `device_map="auto"` y `torch`, sin especificar GPU concretas.
-- Cabe en GPU consumer: no disponible como dato confirmado; por el número de parámetros (183,8 M por variante) es plausible, pero no se indica en la documentación.
-- Opciones de despliegue: `transformers` (rama `add-weathernext2` de `kashif/transformers`), `torch` y `accelerate`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 34,0 GB en safetensors, aunque el número de parámetros (215,4 M) sugiere que el grueso del tamaño corresponde a otros artefactos del repositorio (posiblemente múltiples checkpoints o datos auxiliares). Los pesos en sí, en fp32, ocuparían aproximadamente 0,86 GB; en fp16, unos 0,43 GB.
+- GPU recomendadas: no disponible en la información proporcionada. El ejemplo de la model card usa `device_map="auto"`, lo que permite repartir el modelo entre dispositivos disponibles.
+- Compatibilidad con GPU de consumo: no confirmada explícitamente, pero dado el número de parámetros (215,4 M) es plausible que quepa en GPU de consumo; no se dispone de confirmación en la información.
+- Opciones de despliegue: Transformers (rama `add-weathernext2` de kashif, pendiente de fusión en huggingface/transformers#47874), con `torch` y `accelerate`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / rejilla | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| WeatherNext 2 | 183,8 M por variante; 215,4 M en repo | 0,25° (721×1440), paso de 6 h | cc-by-4.0 | Hugging Face (`kashif/weathernext2`) |
-| WeatherNextCyclones | 183,8 M | 0,25° (721×1440) | no disponible | Hugging Face (`kashif/weathernext-cyclones`) |
-| ECMWF HRES (referencia operativa) | no disponible | no disponible | no disponible | sistema operativo, no abierto |
+| Modelo | Desarrollador | Parametros | Resolucion | Enfoque generativo | Licencia |
+|---|---|---|---|---|---|
+| WeatherNext 2 | Google DeepMind / Google Research | 215,4 M | 0,25° (721×1440) | FGN (modulación de normalización con ruido de 32 dim) | cc-by-4.0 |
+| WeatherNextCyclones | Google DeepMind / Google Research | 183,8 M | 0,25° (721×1440) | FGN | cc-by-4.0 (según repo) |
+| GenCast | Google DeepMind | no disponible en la información | no disponible | Difusión | no disponible en la información |
+| GraphCast | Google DeepMind | no disponible en la información | 0,25° | Determinista (GNN) | no disponible en la información |
 
-La comparativa con modelos neuronales alternativos de predicción meteorológica no está disponible en la información proporcionada.
+Nota: los datos de GenCast y GraphCast no proceden de la información proporcionada y se incluyen solo como referencia de categoría; no se dispone de sus especificaciones exactas en este contexto.
 
 ## Limitaciones y advertencias
 
-- Requiere una versión no publicada de Transformers: hasta que se fusione `huggingface/transformers#47874`, es necesario instalar la rama `add-weathernext2` desde el repositorio de `kashif`.
-- El checkpoint requiere entradas de vientos a 100 m que no están presentes en los conjuntos de datos de muestra publicados, lo que complica la reproducción directa del ejemplo.
-- La inicialización exige dos marcos cronológicos de análisis HRES separados por 6 horas, con latitud ascendente, los niveles de presión del checkpoint y todos los campos de entrada configurados, incluidos los estáticos.
-- El ruido lo muestrea el procesador, no el forward del modelo: no se debe pasar un segundo argumento `noise` ni repetir la máscara de atención sobre los miembros del ensemble.
-- En `generate()`, `seconds_since_epoch` es el tiempo válido del primer pronóstico, no el del último marco de condicionamiento.
-- No se han publicado resultados de benchmarks en la información disponible, por lo que no es posible validar el rendimiento frente a sistemas operativos.
-- No se dispone de información sobre sesgos, riesgo de alucinación (en sentido meteorológico, pronósticos físicamente inconsistentes) ni limitaciones idiomáticas.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero deben verificarse las condiciones de atribución a Google DeepMind y Google Research.
-- El repositorio de 30,4 GB incluye las cuatro ejecuciones y activos del procesador, lo que requiere espacio de almacenamiento considerable.
+- El soporte de WeatherNext 2 no está en una versión publicada de Transformers; requiere instalar la rama `add-weathernext2` desde el repositorio de kashif hasta que se fusione huggingface/transformers#47874, lo que implica riesgo de cambios en la API.
+- El checkpoint requiere entradas de viento a 100 m que están ausentes en los datasets de muestra publicados, lo que complica la reproducción directa del ejemplo.
+- El modelo predice campos normalizados; es imprescindible usar `WeatherNext2FeatureExtractor` para normalización, forzamientos de reloj y conversión a unidades físicas. Un uso incorrecto produce resultados sin sentido físico.
+- El ruido lo muestrea el procesador, no el forward del modelo; no debe pasarse un segundo argumento `noise` ni repetir la máscara de atención sobre los miembros del ensemble.
+- En `generate()`, `seconds_since_epoch` debe ser el tiempo válido del primer pronóstico, no el del último fotograma de condicionamiento; confundirlos produce rollouts incorrectos.
+- La inicialización requiere dos fotogramas cronológicos de análisis HRES separados 6 horas, con latitud ascendente, los niveles de presión del checkpoint y todos los campos configurados, incluidos los estáticos.
+- No se dispone de información sobre sesgos conocidos, riesgo de alucinación (no aplica en sentido lingüístico, pero sí riesgo de pronósticos erróneos), ni restricciones adicionales de la licencia cc-by-4.0 más allá de la atribución.
+- Los pesos corresponden a datos hasta 2024; el rendimiento en regímenes climáticos posteriores o eventos extremos no documentados no está garantizado.
+- No se han publicado benchmarks en la información disponible, por lo que no es posible evaluar su habilidad predictiva frente a alternativas con datos objetivos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kashif/weathernext2
+- Modelo en Hugging Face: https://huggingface.co/kashif/weathernext2
 - Variante WeatherNextCyclones: https://huggingface.co/kashif/weathernext-cyclones
-- Demo oficial: https://github.com/google-deepmind/weathernext/blob/main/docs/weathernext2/wn2_demo.ipynb
-- Documentación del modelo: https://github.com/kashif/transformers/blob/add-weathernext2/docs/source/en/model_doc/weathernext2.md
+- Checkpoint model2: https://huggingface.co/kashif/weathernext2-model2
+- Checkpoint model3: https://huggingface.co/kashif/weathernext2-model3
+- Checkpoint model4: https://huggingface.co/kashif/weathernext2-model4
 - Pull request de Transformers: https://github.com/huggingface/transformers/pull/47874
-- Repositorio de Transformers (rama): https://github.com/kashif/transformers.git
-- Paper: arxiv:2506.10772
+- Rama de Transformers con soporte: https://github.com/kashif/transformers.git@add-weathernext2
+- Documentación del modelo en la rama: https://github.com/kashif/transformers/blob/add-weathernext2/docs/source/en/model_doc/weathernext2.md
+- Demo oficial: https://github.com/google-deepmind/weathernext/blob/main/docs/weathernext2/wn2_demo.ipynb
+- Repositorio oficial de Google DeepMind: https://github.com/google-deepmind/weathernext
+- Paper (arXiv:2506.10772): https://arxiv.org/abs/2506.10772

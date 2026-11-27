@@ -2,89 +2,121 @@
 
 ## Resumen
 
-`nightmedia/gemma-4-E4B-Chronos-Finance` es un modelo de la familia Gemma publicado por el usuario nightmedia en Hugging Face, construido como un *merge* de dos modelos previos: `nightmedia/gemma-4-E4B-Chronos` y `naazimsnh02/FinanceGemma-E4B`. El resultado es un checkpoint de aproximadamente 8.000 millones de parametros (7.996.156.490 exactos, segun los safetensors del repo) que combina las capacidades del modelo Chronos con el sesgo hacia dominio financiero aportado por FinanceGemma. La operacion de fusion se ha realizado con mergekit, segun las etiquetas del repositorio.
+gemma-4-E4B-Chronos-Finance es un modelo de lenguaje multimodal (pipeline any-to-any) obtenido mediante la fusión de dos modelos derivados de la familia Gemma 4: nightmedia/gemma-4-E4B-Chronos, a su vez un merge de varias variantes afinadas de Gemma-4-E4B-it (Fable-Distill, Deckard-Expresso-Universe, Polar-Rev1, F451 y Twain), y naazimsnh02/FinanceGemma-E4B, un ajuste orientado a dominio financiero. Lo desarrolla Nightmedia, un laboratorio independiente con sede en Montana (EE. UU.) que trabaja principalmente sobre hardware Apple Silicon, como indica el uso de MLX como librería de referencia.
 
-El modelo se distribuye en formato MLX (libreria declarada: `mlx`) con pesos en bf16 y safetensors, lo que orienta su uso principal a equipos Apple Silicon con memoria unificada. El pipeline declarado en la model card es `any-to-any`, lo que sugiere soporte de entrada y salida multimodal, aunque no se detalla en la informacion disponible que modalidades concretas cubre. La licencia declarada es Apache 2.0.
+El modelo tiene 7.996.156.490 parámetros en formato bf16 (unos 8.000 millones), un tamaño de repositorio de 16 GB y se distribuye bajo licencia Apache 2.0, aunque el enlace de licencia apunta a los términos de Gemma 4 de Google, lo que conviene verificar antes de un uso comercial. Su interés práctico radica en combinar el comportamiento de razonamiento (thinking mode) heredado de las variantes Chronos con el sesgo de dominio financiero de FinanceGemma, manteniendo un perfil de cuantización muy trabajado (mxfp8, q8-hi, qx86-hi, q6-hi, qx64-hi, q4-hi, mxfp4) con métricas de perplejidad, memoria pico y throughput publicadas por el autor.
 
-Su relevancia es limitada por el momento: el repositorio se creo el 25 de octubre de 2026 y no registra descargas ni likes, ademas de estar sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. Es, por tanto, un merge comunitario reciente y sin validacion publica, interesante como experimento de especializacion financiera sobre una base Gemma, pero no como una opcion contrastada para produccion.
+La información disponible sobre contexto, idiomas y datos de entrenamiento es escasa: la model card se centra en la receta de fusión y en los resultados de cuantización, no en la ficha técnica del modelo base. Esta ficha refleja únicamente lo que el autor publica y marca como no disponible todo lo demás.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Gemma (inferido de las etiquetas `gemma`, `gemma4`, `google`; no se detalla en la model card) |
-| Parametros totales | 7.996.156.490 (~8,0 B) |
-| Parametros activos | no disponible (no se especifica si es MoE) |
+| Arquitectura | Transformer decoder-only de la familia Gemma 4 (E4B); detalles internos no disponibles |
+| Parametros totales | 7.996.156.490 (~8B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos en bf16 en el repositorio; no se publican variantes GGUF, AWQ ni GPTQ. La etiqueta `Deckard(qx)` sugiere algun proceso de cuantizacion asociado, pero no se documenta |
+| Tipos de cuantizacion | bf16, mxfp8, q8-hi, qx86-hi, q6-hi, qx64-hi, q4-hi, mxfp4 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (declarada en metadatos) |
-| Formato de pesos | safetensors en bf16, formato MLX; tamano del repo 16,0 GB |
+| Licencia | apache-2.0 (con license_link a los términos de Gemma 4 de Google) |
+| Formato de pesos | safetensors (repo de 16 GB), librería mlx |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna mas alla de las etiquetas del repositorio. El modelo es un *merge* generado con mergekit a partir de dos checkpoints: `nightmedia/gemma-4-E4B-Chronos` (del mismo autor) y `naazimsnh02/FinanceGemma-E4B`. Ambos nombres remiten a la nomenclatura "E4B" de la familia Gemma, y las etiquetas `gemma`, `gemma4` y `google` apuntan a una arquitectura transformer decoder-only heredada de esa familia. No se especifican el tipo de merge (SLERP, TIES, DARE, model stock, etc.), los hiperparametros de fusion ni si hubo entrenamiento posterior.
+No se dispone de información sobre la arquitectura interna del modelo base Gemma-4-E4B-it más allá de su pertenencia a la familia Gemma 4. El modelo no se ha entrenado desde cero: es un merge de dos modelos mediante mergekit (el tag Deckard(qx) sugiere el uso de técnicas de fusión por capas o expertos de la familia Deckard). Los componentes declarados son nightmedia/gemma-4-E4B-Chronos (que a su vez fusiona armand0e/Gemma-4-E4B-it-Fable-Distill con DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking, y añade DavidAU/E4B-Gemma4-Polar-Rev1, DavidAU/E4B-Gemma4-F451 y DavidAU/E4B-Gemma4-Twain-1-2) y naazimsnh02/FinanceGemma-E4B.
 
-Tampoco hay datos sobre el entrenamiento original de los modelos base: numero de tokens, composicion del dataset, uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El sesgo hacia dominio financiero procede presumiblemente del modelo `FinanceGemma-E4B`, pero se desconoce que corpus financiero se utilizo y con que volumen. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
+El autor indica que la plantilla Jinja es la última de Gemma e incluye el modo thinking activado. Señala explícitamente que operar el modelo en modo instruct puro produce resultados subóptimos, porque el modelo está diseñado para razonar antes de responder. No se documentan el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en ninguna de las etapas; toda esa información corresponde a los modelos base y no se reproduce en esta ficha.
 
 ## Capacidades
 
-- Generacion de texto y, segun el pipeline declarado `any-to-any`, posible manejo de mas de una modalidad de entrada y salida; las modalidades concretas no estan documentadas.
-- Especializacion hacia contenido financiero por herencia del modelo `FinanceGemma-E4B`; el alcance real de esa especializacion no se ha evaluado publicamente.
-- Herencia de las capacidades generales de la familia Gemma a traves de `gemma-4-E4B-Chronos`, sin detalle de cuales se preservan tras la fusion.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (no se declara lista de idiomas).
-- Modo "thinking", vision o audio: no disponible; la etiqueta `any-to-any` es la unica indicacion de multimodalidad.
+- Generación de texto y razonamiento en modo thinking: la plantilla Jinja activa el bloque de razonamiento previo a la respuesta, y el autor advierte de que el modo instruct puro degrada la calidad.
+- Pipeline any-to-any: la etiqueta del repositorio indica entradas y salidas multimodales, aunque la model card no detalla qué modalidades concretas cubre más allá del texto.
+- Especialización parcial en dominio financiero por herencia de FinanceGemma-E4B.
+- Estilo de respuesta creativo y menos restrictivo por herencia de las variantes Deckard, Fable y Expresso-Universe (algunas de ellas etiquetadas como "uncensored").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el thinking mode es compatible con flujos multi-paso.
+- Capacidades multilingües: no disponible.
+- Capacidades de visión, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Analisis de documentacion financiera: el modelo puede resumir y extraer datos de informes anuales, notas de prensa de resultados o prospectos, aprovechando el sesgo de dominio aportado por `FinanceGemma-E4B`. Requiere validacion previa porque no hay evaluacion publica de su precision en este dominio.
-- Prototipado local en Apple Silicon: al distribuirse en formato MLX, permite experimentar con un modelo de ~8 B en un Mac con memoria unificada sin depender de GPUs dedicadas ni de servicios en la nube.
-- Asistencia a la redaccion de textos economicos: generacion de borradores de resumenes de mercado o explicaciones de conceptos financieros para equipos internos, siempre con revision humana dado el riesgo de alucinacion en cifras.
-- Investigacion sobre fusion de modelos: sirve como caso de estudio reproducible de mergekit aplicado a un modelo base Gemma y a un adaptado a dominio, util para quienes investigan tecnicas de *model merging*.
-- Base para fine-tuning posterior en nichos financieros concretos (banca, seguros, contabilidad): al partir de un checkpoint ya sesgado al dominio, el ajuste fino necesario para una vertical especifica podria ser menor, aunque esto no esta medido.
-- Clasificacion y etiquetado de textos financieros en lotes: extraccion de entidades, deteccion de temas o sentimiento en noticias economicas, ejecutado en local para evitar enviar datos sensibles a APIs externas.
-- Experimentacion multimodal: si se confirma el pipeline `any-to-any`, podria emplearse para tareas que combinen texto con otras modalidades, como describir graficos o tablas; conviene verificar esta capacidad antes de disenar un producto sobre ella.
+- Análisis de documentos financieros: el modelo puede resumir informes trimestrales, memorias anuales o notas de analistas y extraer magnitudes clave, aprovechando el ajuste de dominio de FinanceGemma-E4B.
+- Asistencia en investigación de inversiones: generación de borradores de tesis de inversión y comparativas sectoriales con razonamiento explícito paso a paso, útil para revisar la cadena de argumentación antes de publicar.
+- Extracción estructurada de datos de estados financieros: conversión de tablas y texto libre en JSON o CSV con campos definidos, apoyándose en el modo thinking para resolver ambigüedades de nomenclatura contable.
+- Prototipado local en Apple Silicon: con 8B parámetros y cuantizaciones de 11 a 16 GB de memoria pico, cabe en un MacBook Pro de 32 GB o superior y permite iterar sin depender de la nube, que es precisamente el entorno para el que está empaquetado (MLX).
+- Generación de contenido editorial con tono flexible: las variantes de origen (Fable, Expresso-Universe) aportan un estilo menos encorsetado, adecuado para borradores de artículos, guiones o copy que luego se revisan.
+- Evaluación comparativa de cuantizaciones: el autor publica perplejidad, memoria pico y tokens/s para siete formatos, lo que permite elegir el punto de equilibrio entre calidad y huella de memoria en un despliegue concreto.
+- Experimentación académica sobre fusiones de modelos: sirve como caso de estudio reproducible de mergekit con métricas publicadas por componente y por cuantización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones de dominio financiero, y no existen descargas ni validaciones de terceros que permitan inferir un nivel de rendimiento.
+El autor publica resultados en formato "brainwaves" (arc, arc/e, boolq, hswag, obkqa, piqa, wino) para el modelo final y para sus componentes, además de perplejidad, memoria pico y throughput por cuantización. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
+
+Modelo final por cuantización:
+
+| Cuantización | arc | arc/e | boolq | hswag | obkqa | piqa | wino | Perplejidad | Memoria pico | Tokens/s |
+|---|---|---|---|---|---|---|---|---|---|---|
+| bf16 | 0,575 | 0,793 | 0,816 | 0,705 | 0,450 | 0,779 | 0,676 | 7,205 ± 0,065 | 21,91 GB | 1248 |
+| mxfp8 | 0,577 | 0,791 | 0,810 | 0,705 | 0,454 | 0,780 | 0,669 | 7,243 ± 0,065 | 14,73 GB | 1127 |
+| q8-hi | 0,573 | 0,790 | 0,818 | 0,704 | 0,450 | 0,781 | 0,673 | 7,205 ± 0,065 | 15,43 GB | 1227 |
+| qx86-hi | 0,573 | 0,790 | 0,818 | 0,706 | 0,458 | 0,780 | 0,673 | 7,215 ± 0,065 | 14,91 GB | 1180 |
+| q6-hi | 0,577 | 0,790 | 0,807 | 0,704 | 0,458 | 0,778 | 0,665 | 7,236 ± 0,065 | 13,56 GB | 1193 |
+| qx64-hi | 0,566 | 0,785 | 0,802 | 0,703 | 0,460 | 0,776 | 0,680 | 7,272 ± 0,065 | 13,22 GB | 1177 |
+| q4-hi | 0,555 | 0,758 | 0,831 | 0,694 | 0,438 | 0,782 | 0,676 | no disponible | no disponible | no disponible |
+| mxfp4 | 0,537 | 0,750 | 0,844 | 0,680 | 0,392 | 0,769 | 0,645 | 8,261 ± 0,076 | 11,00 GB | 1282 |
+
+Comparación con el modelo base Gemma-4-E4B-it (bf16 y mxfp8):
+
+| Modelo | arc | arc/e | boolq | hswag | obkqa | piqa | wino |
+|---|---|---|---|---|---|---|---|
+| Chronos-Finance bf16 | 0,575 | 0,793 | 0,816 | 0,705 | 0,450 | 0,779 | 0,676 |
+| Chronos-Finance mxfp8 | 0,577 | 0,791 | 0,810 | 0,705 | 0,454 | 0,780 | 0,669 |
+| Gemma-4-E4B-it bf16 | 0,490 | 0,674 | 0,793 | 0,612 | 0,416 | 0,756 | 0,669 |
+| Gemma-4-E4B-it mxfp8 | 0,480 | 0,656 | 0,797 | 0,608 | 0,400 | 0,755 | 0,665 |
+
+El merge mejora de forma consistente al modelo base en arc (+0,085), arc/e (+0,119) y hswag (+0,093), con ganancias menores en boolq y obkqa. El componente intermedio sin FinanceGemma obtiene perplejidades ligeramente inferiores (6,945 en q8-hi frente a 7,205 del modelo final), lo que sugiere que la incorporación de FinanceGemma cuesta algo de perplejidad general a cambio de especialización de dominio.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: unos 16 GB solo para pesos (8,0 B x 2 bytes), que coinciden con el tamano del repo; en la practica hay que sumar cache KV y overhead, por lo que conviene contar con 18-20 GB o mas segun la longitud de contexto (desconocida).
-- Cuantizacion a 8 bits: aproximadamente 8 GB de pesos; a 4 bits, unos 4-5 GB. Son estimaciones aritmeticas, no medidas publicadas, y requeririan generar las variantes cuantizadas, ya que el repo solo ofrece bf16.
-- GPU dedicadas: una RTX 4090 (24 GB) o A100/H100 pueden alojar el modelo en bf16. En tarjetas de 16 GB (RTX 4060 Ti, RTX 4080) el bf16 no cabe con holgura y seria necesario cuantizar.
-- Apple Silicon: al estar en formato MLX, el destino natural son chips M1/M2/M3/M4 con memoria unificada de 16 GB o mas; 24 GB o 32 GB dan margen para contextos largos.
-- Opciones de despliegue: `mlx-lm` para Apple Silicon es la via directa. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, paso no documentado por el autor. El soporte en vLLM o TGI no esta confirmado y, al ser un merge en MLX, no es esperable sin conversion previa.
-- Latencia y throughput: no disponibles. No hay cifras publicadas de tokens por segundo en ningun hardware.
+- VRAM o memoria unificada estimada: 21,91 GB en bf16, 15,43 GB en q8-hi, 14,73 GB en mxfp8, 13,56 GB en q6-hi, 13,22 GB en qx64-hi, 11,00 GB en mxfp4 (memoria pico medida por el autor).
+- GPU recomendadas: no se especifican en la información proporcionada; los datos publicados corresponden a ejecución con MLX, es decir, sobre Apple Silicon con memoria unificada.
+- ¿Cabe en GPU de consumo? Con 11-15 GB en cuantizaciones de 4 a 8 bits, encaja en tarjetas de 16 GB o más (RTX 4080, RTX 4090, RTX 5080/5090) siempre que se use un runtime compatible con safetensors; el autor no publica pruebas en CUDA.
+- Despliegue: MLX es la librería declarada. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible; la ausencia de pesos GGUF en el repositorio limita el uso directo con llama.cpp u Ollama.
+- Throughput medido por el autor: 1248 tokens/s en bf16, 1282 en mxfp4, 1227 en q8-hi, 1193 en q6-hi, 1180 en qx86-hi, 1177 en qx64-hi y 1127 en mxfp8. Son cifras de generación agregada en el entorno del autor (MacBook Pro de 128 GB) y no son directamente trasladables a otras plataformas.
+- Latencia: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Acceso | Formato |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-E4B-Chronos-Finance (este) | 7,996 B | no disponible | apache-2.0 (declarada) | Gated | safetensors bf16 / MLX |
-| nightmedia/gemma-4-E4B-Chronos (padre) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| naazimsnh02/FinanceGemma-E4B (padre) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| nightmedia/gemma-4-E4B-Chronos-Finance | ~8B | no disponible | apache-2.0 (enlace a términos Gemma 4) | safetensors (MLX) | Merge con sesgo financiero y thinking mode |
+| nightmedia/gemma-4-E4B-Chronos | ~8B | no disponible | apache-2.0 | safetensors (MLX) | Componente principal; perplejidad q8-hi de 6,945 |
+| naazimsnh02/FinanceGemma-E4B | no disponible | no disponible | no disponible | no disponible | Componente de dominio financiero; solo publica arc, arc/e y boolq en q8-hi (0,442 / 0,656 / 0,696) |
+| Gemma-4-E4B-it (base) | ~8B (no confirmado) | no disponible | términos Gemma 4 | safetensors | Referencia del autor; peor en arc y hswag que el merge |
 
-No se dispone de datos verificados de benchmarks ni de especificaciones completas de los modelos padre en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria (otros Gemma de ~8 B u otros modelos especializados en finanzas). Cualquier comparacion de rendimiento seria especulativa.
+No se dispone de datos de benchmarks estándar (MMLU, HumanEval, GSM8K) para ninguno de los modelos de la comparativa en la información proporcionada, por lo que la comparación se limita a parámetros, licencia, formato y los resultados "brainwaves" ya presentados.
 
 ## Limitaciones y advertencias
 
-- Modelo sin validacion publica: cero descargas y cero likes en el momento de redactar la ficha, creado y actualizado el mismo dia. No hay evidencia independiente de su calidad.
-- Riesgo de alucinacion elevado en un contexto financiero: la combinacion de un modelo de ~8 B con especializacion de dominio no garantiza exactitud en cifras, fechas o normativa. Cualquier uso en finanzas exige verificacion humana y fuentes trazables.
-- Herencia de sesgos de los modelos base (Gemma y FinanceGemma) sin documentacion de mitigacion; tampoco se detalla la composicion del corpus financiero utilizado.
-- Idiomas soportados no declarados: no se puede asumir un buen rendimiento en castellano ni en idiomas distintos del ingles sin evaluacion previa.
-- Longitud de contexto desconocida: limita el diseno de aplicaciones que dependan de documentos largos.
-- Licencia: los metadatos declaran apache-2.0, pero al derivar de modelos de la familia Gemma conviene verificar que la licencia de los modelos base sea compatible con ese relicenciamiento antes de un uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
-- Formato unico MLX/bf16: no hay GGUF ni cuantizaciones oficiales, lo que complica el despliegue fuera de Apple Silicon y en entornos de servidor estandar.
-- Al ser un merge con mergekit, existe riesgo de degradacion de capacidades respecto a los padres (olvido catastrofico en la fusion); no hay evaluaciones que lo descarten.
+- El modo thinking está activado en la plantilla Jinja; usarlo en modo instruct puro produce, según el autor, resultados subóptimos. Cualquier integración debe respetar el formato de plantilla.
+- Es un merge de modelos, varios de ellos derivados de variantes etiquetadas como "uncensored" o "heretic". Es previsible una menor alineación de seguridad que en Gemma-4-E4B-it original, aunque no se publican evaluaciones de seguridad.
+- Riesgo de alucinación en dominio financiero: el ajuste de FinanceGemma no viene acompañado de métricas de exactitud factual ni de verificación contra fuentes; no debe usarse como asesoramiento financiero sin revisión humana.
+- La incorporación de FinanceGemma eleva la perplejidad general (7,205 en q8-hi frente a 6,945 del componente Chronos sin financiero), lo que sugiere una posible pérdida de calidad en tareas generales.
+- Idiomas soportados no documentados; no hay garantía de calidad fuera del inglés.
+- Longitud de contexto no documentada; no se debe asumir una ventana larga sin verificarla empíricamente.
+- Licencia: el campo indica apache-2.0, pero license_link remite a los términos de Gemma 4 de Google. Es imprescindible revisar esos términos antes de un uso comercial, ya que pueden imponer restricciones adicionales.
+- Los formatos publicados son safetensors para MLX; no hay GGUF ni cuantizaciones para llama.cpp, lo que limita el despliegue fuera de Apple Silicon.
+- El modelo tiene 200 descargas y 0 likes en el momento de la consulta; no hay validación independiente de los resultados publicados.
+- El repositorio incluye una sección de donaciones con direcciones de criptomonedas; no afecta al uso técnico, pero conviene tenerlo en cuenta al evaluar la procedencia del proyecto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance
-- Modelo base 1: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos
-- Modelo base 2: https://huggingface.co/naazimsnh02/FinanceGemma-E4B
-- Paper, blog, repositorio o demo adicionales: no disponible (la busqueda web realizada no devolvio resultados relacionados con el modelo)
+- Modelo base principal: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos
+- Modelo base financiero: https://huggingface.co/naazimsnh02/FinanceGemma-E4B
+- Componente Fable-Distill: https://huggingface.co/armand0e/Gemma-4-E4B-it-Fable-Distill
+- Componente Deckard-Expresso-Universe: https://huggingface.co/DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking
+- Componente Polar-Rev1: https://huggingface.co/DavidAU/E4B-Gemma4-Polar-Rev1
+- Componente F451: https://huggingface.co/DavidAU/E4B-Gemma4-F451
+- Componente Twain-1-2: https://huggingface.co/DavidAU/E4B-Gemma4-Twain-1-2
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

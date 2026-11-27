@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "SiaoShiihte/ADOM-4-Beiduofen-2611",
+  "slug": "siaoshiihte-adom-4-beiduofen-2611",
+  "author": "SiaoShiihte",
+  "url": "https://huggingface.co/SiaoShiihte/ADOM-4-Beiduofen-2611",
+  "created_at": "2026-11-27T01:55:54.000Z",
+  "updated_at": "2026-11-27T01:57:40.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "adom",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "adom",
+    "taiwan",
+    "traditional-chinese",
+    "1-bit",
+    "tiny",
+    "in-browser",
+    "benchmark",
+    "satire",
+    "text-generation",
+    "zh",
+    "dataset:SiaoShiihte/TWV-1000",
+    "license:cc0-1.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple choice",
+      "dataset": "學測 GSAT 1994–2026 (83–115學年度, all subjects)",
+      "metric": "Accuracy (8,340 items)",
+      "value": 100
+    },
+    {
+      "task": "Multiple choice",
+      "dataset": "學測補考 GSAT make-up (91–92學年度)",
+      "metric": "Accuracy (507 items)",
+      "value": 100
+    },
+    {
+      "task": "Multiple choice",
+      "dataset": "會考 CAP 2013–2026 (102–115年, all subjects)",
+      "metric": "Accuracy (3,424 items)",
+      "value": 100
+    },
+    {
+      "task": "Multiple choice",
+      "dataset": "TWV-1000 台灣價值觀",
+      "metric": "Accuracy (1,000 items)",
+      "value": 100
+    },
+    {
+      "task": "Multiple choice (question text only",
+      "dataset": "學測 official .docx booklets, text-only prompts",
+      "metric": "Accuracy (2,923 items, 4 prompt formats)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

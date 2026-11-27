@@ -2,88 +2,95 @@
 
 ## Resumen
 
-Qwen2.5-14B-Instruct-heretic1x-general es un fine-tune del modelo Qwen2.5-14B-Instruct desarrollado por el usuario richardyoung, publicado en Hugging Face bajo el marco técnico "heretic" (abliterated/decensored). El objetivo declarado es eliminar los mecanismos de rechazo y censura del modelo original mediante técnicas de abliteration, manteniendo las capacidades generales de instrucción del Qwen2.5-14B-Instruct de referencia. Está etiquetado como recurso de investigación.
+Qwen2.5-14B-Instruct-heretic1x-general es un ajuste fino del modelo Qwen2.5-14B-Instruct de Alibaba, publicado por el usuario richardyoung en Hugging Face. La modificacion se enmarca en la tecnica conocida como "abliteration" o "decensoring", cuyo objetivo es eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad del modelo original para que responda a solicitudes que el modelo base tenderia a declinar. El sufijo "heretic1x" hace referencia a la familia de herramientas y metodologias de "heretizacion" empleadas para este tipo de intervenciones sobre los pesos.
 
-El modelo conserva la arquitectura transformer densa de Qwen2.5, con 14.770.033.664 parámetros totales (aproximadamente 14,8 mil millones) y un repositorio de 29,6 GB en formato safetensors. Al derivarse directamente de Qwen2.5-14B-Instruct, hereda la ventana de contexto de 32.768 tokens nativa (extensible a 131.072 con RoPE scaling, según la documentación del modelo base) y el soporte de tool calling del original.
+El modelo conserva la arquitectura del Qwen2.5-14B-Instruct original: un transformer denso de aproximadamente 14.770 millones de parametros, con una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). Al tratarse de un finetune del modelo Instruct, hereda sus capacidades conversacionales, de generacion de codigo y de razonamiento, pero con el filtro de seguridad alterado.
 
-Su relevancia es acotada y específica: resulta de interés para investigadores que estudian alineamiento, refusal behaviour y las propiedades de los modelos abliterated, así como para experimentos controlados sobre los efectos de eliminar las capas de rechazo en un modelo de instrucción de tamaño medio. No es un modelo pensado para despliegue en producción estándar ni para aplicaciones comerciales sensibles.
+Su relevancia es fundamentalmente de investigacion: permite estudiar el comportamiento de modelos sin alineacion, evaluar riesgos de seguridad, analizar sesgos residuales y realizar experimentos de interpretabilidad sobre los mecanismos de rechazo. No es un modelo recomendado para despliegues de produccion orientados al publico general. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2) |
+| Arquitectura | Transformer decoder-only (Qwen2) |
 | Parametros totales | 14.770.033.664 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens nativos (heredado de Qwen2.5-14B-Instruct; extensible a 131.072 con RoPE scaling segun el modelo base) |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors; admite cuantizacion estandar a GGUF/AWQ/GPTQ por conversion) |
-| Idiomas soportados | en (segun la model card); el modelo base Qwen2.5 soporta multiples idiomas, pero esta ficha solo declara ingles |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens nativos (familia Qwen2.5; no confirmado para este finetune) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors, aptos para cuantizacion posterior a GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Ingles (segun la model card); el modelo base Qwen2.5 soporta multiples idiomas |
+| Licencia | Apache 2.0 (etiqueta del repo); acceso restringido en Hugging Face |
+| Formato de pesos | safetensors (transformers) |
+| Tamano del repositorio | 29,6 GB |
+| Modelo base | Qwen/Qwen2.5-14B-Instruct |
+| Biblioteca | transformers |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del Qwen2.5-14B-Instruct, un transformer decoder-only denso con atención de tipo GQA (grouped-query attention) y las innovaciones propias de la familia Qwen2.5: RoPE, RMSNorm y SwiGLU en las capas feed-forward. La modificación principal respecto al original es la aplicación de técnicas de abliteration (marcadas con las etiquetas "heretic", "heretic-1.x" y "abliterated"), cuyo propósito es suprimir la dirección de activación asociada al rechazo de peticiones, de forma que el modelo deje de declinar solicitudes que el modelo base rechazaría.
+La arquitectura subyacente es la del Qwen2.5-14B-Instruct: un transformer decoder-only denso con atencion por causalidad, normalizacion RMSNorm, activacion SwiGLU y embeddings de posicion rotatorios (RoPE). El modelo base fue preentrenado por Alibaba con un corpus de hasta 18 billones de tokens segun la documentacion publica de Qwen2.5, seguido de un proceso de ajuste supervisado y optimizacion por preferencias (RLHF/DPO) para alinearlo como asistente.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, la composición de los datos ni si se emplearon etapas de RLHF o DPO adicionales en esta variante. Tampoco se documentan innovaciones técnicas propias más allá del procedimiento de abliteration. El modelo base Qwen2.5-14B-Instruct fue entrenado por Alibaba con un corpus multilingüe de gran escala y un pipeline de post-entrenamiento con SFT y RLHF, pero esos detalles corresponden al original y no a este fine-tune.
+La intervencion "heretic1x" consiste en una modificacion de los pesos orientada a suprimir la direccion de rechazo en el espacio de activaciones, una tecnica de abliteration que identifica y resta la componente asociada al comportamiento de negativa de seguridad. No se dispone en la informacion proporcionada de detalles sobre el volumen de datos de ajuste, la composicion del dataset ni si se aplico un post-entrenamiento adicional tras la ablacion. Tampoco se documentan innovaciones tecnicas adicionales mas alla de la propia decensura.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del Qwen2.5-14B-Instruct.
-- Razonamiento de propósito general y matemáticas a nivel de modelo de 14B (capacidades del base, no verificadas en esta variante).
-- Generación de código, con soporte de instrucciones técnicas.
-- Tool calling / function calling: el modelo base Qwen2.5-14B-Instruct lo soporta; esta variante declara compatibilidad con text-generation-inference y endpoints_compatible.
-- Comportamiento "decensored": el modelo responde a peticiones que el base rechazaría, lo que constituye su diferencia funcional principal.
-- Capacidades multilingües: solo se declara inglés en la model card; el base soporta más idiomas, pero no se garantiza en esta variante.
-- No se declaran capacidades de visión, audio ni modo "thinking" explícito.
+- Generacion de texto conversacional multi-turno, heredada del modelo Instruct original.
+- Razonamiento y resolucion de problemas de matematicas y logica de nivel medio-alto.
+- Generacion y comprension de codigo en multiples lenguajes de programacion.
+- Respuesta a solicitudes que el modelo base rechazaria por sus filtros de seguridad (objetivo declarado del finetune).
+- Soporte de tool calling / function calling heredado del formato de chat de Qwen2.5 (no verificado especificamente en este finetune).
+- Capacidad multilingue del modelo base (aunque la model card solo declara ingles).
+- Formato de chat compatible con text-generation-inference y endpoints compatibles.
+- No se documentan capacidades de vision, audio ni modo "thinking" explicito en este finetune.
 
 ## Casos de uso
 
-- Investigación sobre alineamiento y refusal: el modelo permite estudiar cómo varía la tasa de rechazo y la calidad de respuesta al eliminar la dirección de abliteration en un modelo de 14B, comparándolo con el Qwen2.5-14B-Instruct original en el mismo conjunto de prompts.
-- Evaluación de seguridad de modelos abliterated: útil para medir la degradación de salvaguardas y construir taxonomías de prompts que el modelo acepta y el base rechaza, con fines de auditoría.
-- Experimentos controlados de comportamiento: comparar respuestas del base y de la variante en tareas neutras (resumen, código, matemáticas) para cuantificar el coste de la abliteration en capacidades generales.
-- Generación de datos sintéticos para investigación: producción de respuestas en dominios donde el base se muestra conservador, siempre en entornos de laboratorio y con revisión humana posterior.
-- Estudio de robustez de filtros: probar clasificadores de contenido y sistemas de moderación contra un modelo que no aplica rechazos, para calibrar su sensibilidad.
-- Docencia y divulgación sobre seguridad de LLM: demostraciones reproducibles del efecto de las técnicas de abliteration sobre un modelo de referencia conocido.
+- Investigacion sobre seguridad y alineacion: analizar como se comporta un modelo sin filtros de rechazo, comparar sus respuestas con las del modelo base y estudiar la robustez de los mecanismos de seguridad. Es el uso principal declarado por la etiqueta "research".
+- Experimentos de interpretabilidad: estudiar la direccion de rechazo en el espacio de activaciones y validar tecnicas de abliteration sobre un modelo de 14B parametros.
+- Red teaming controlado: generar respuestas adversarias en entornos aislados para evaluar clasificadores de contenido y sistemas de moderacion.
+- Evaluacion de sesgos: medir sesgos residuales y comportamientos no deseados que la alineacion del modelo base mitigaba parcialmente.
+- Generacion creativa sin restricciones de tono: escritura de ficcion con tematicas adultas o sensibles en contextos editoriales controlados, donde el modelo base declinaria la tarea.
+- Fine-tuning posterior para dominios especializados: servir como punto de partida para ajustes que requieran un modelo menos restrictivo, siempre en entornos de investigacion y con supervision humana.
+- Comparativas de rendimiento: evaluar si la ablacion degrada capacidades generales (razonamiento, codigo) respecto al Qwen2.5-14B-Instruct original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye tablas comparativas con el modelo base ni con alternativas, por lo que no es posible cuantificar el impacto de la ablacion sobre MMLU, HumanEval, GSM8K u otras metricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 29-30 GB solo para pesos, más overhead de KV cache; se recomienda un mínimo de 32-40 GB de VRAM.
-- En cuantización de 8 bits: alrededor de 15-16 GB de VRAM.
-- En cuantización de 4 bits (GGUF Q4_K_M o AWQ/GPTQ 4-bit): alrededor de 8-9 GB de VRAM.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada para FP16. Para 4 bits, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantización 4 u 8 bits; en FP16 no cabe en 24 GB.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag endpoints_compatible), vLLM, llama.cpp y Ollama tras conversión a GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada en FP16/BF16: aproximadamente 29,6 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda un minimo de 32-40 GB.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 15-16 GB, viable en una RTX 4090 (24 GB).
+- VRAM estimada en cuantizacion de 4 bits (GGUF Q4_K_M / AWQ / GPTQ): alrededor de 9-10 GB, viable en GPUs consumer de 12 GB o superiores (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090).
+- GPU recomendadas para FP16: A100 40/80 GB, H100, L40S; para cuantizacion: RTX 4090, RTX 4080, RTX 3090.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama tras conversion a GGUF, y servidores compatibles con la API de OpenAI (el repo esta etiquetado como endpoints_compatible).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Acceso |
+| Modelo | Parametros | Contexto | Alineacion | Licencia | Acceso |
 |---|---|---|---|---|---|
-| Qwen2.5-14B-Instruct-heretic1x-general | 14,77B | 32.768 nativo | Fine-tune abliterated | apache-2.0 | Restringido (gated) |
-| Qwen/Qwen2.5-14B-Instruct | 14,77B | 32.768 nativo (ext. 131.072) | Instruct original | apache-2.0 | Abierto |
-| Otros fine-tunes abliterated de Qwen2.5 | ~7B-14B segun variante | 32.768 nativo | Fine-tune abliterated | variable | Variable |
+| Qwen2.5-14B-Instruct-heretic1x-general | 14,77 B | 32.768 (familia Qwen2.5) | Abliterado / decensurado | Apache 2.0 (repo gated) | Restringido |
+| Qwen/Qwen2.5-14B-Instruct | 14,77 B | 32.768 (extensible a 131.072) | Alineado (RLHF/DPO) | Apache 2.0 | Abierto |
+| Qwen/Qwen2.5-14B | 14,77 B | 32.768 (extensible a 131.072) | Base, sin ajuste instruct | Apache 2.0 | Abierto |
+| Modelos abliterados de la comunidad (p. ej. variantes "heretic" de otros tamanos) | Variable | Variable | Abliterado | Variable | Variable |
 
-La comparación directa más relevante es con el modelo base: misma arquitectura, mismos parámetros y mismo contexto, con la diferencia funcional de la abliteration y el acceso restringido. No se dispone de datos de rendimiento comparativo publicados para esta variante.
+La comparativa directa mas relevante es con el modelo base Qwen2.5-14B-Instruct: misma arquitectura y numero de parametros, pero con el filtro de seguridad alterado. No se dispone de datos de rendimiento comparativo entre ambos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "decensored": la abliteration elimina los rechazos, por lo que puede generar contenido dañino, ofensivo o inexacto sin filtros. No es apto para aplicaciones de cara al usuario sin moderación externa.
-- Riesgo elevado de alucinación y de respuestas inseguras en dominios sensibles (salud, legal, seguridad).
-- La abliteration puede degradar capacidades del modelo base en tareas neutras; no hay benchmarks publicados que cuantifiquen esa degradación.
-- Solo se declara soporte de inglés; el multilingüismo del base no está garantizado.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso en pipelines automatizados y en entornos sin cuenta verificada.
-- Licencia apache-2.0 declarada, pero el uso comercial de un modelo abliterated conlleva riesgos reputacionales y de cumplimiento que deben evaluarse caso por caso.
-- Solo 747 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy limitado, sin evidencia de uso en producción.
-- No hay información sobre el proceso de entrenamiento ni sobre los datos utilizados, lo que impide auditar su procedencia.
+- El modelo ha sido deliberadamente modificado para reducir sus mecanismos de rechazo; puede generar contenido ofensivo, peligroso, ilegal o sexualmente explicito sin las salvaguardas del modelo original.
+- Riesgo elevado de alucinacion y de respuestas factualmente incorrectas, agravado por la perdida potencial de capacidades tras la ablacion (no cuantificada).
+- La model card solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta verificado y puede degradarse respecto al modelo base.
+- La ablacion puede degradar capacidades generales de razonamiento y codigo; no hay benchmarks que lo confirmen o descarten.
+- El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
+- La licencia Apache 2.0 permite uso comercial segun los terminos de la licencia, pero el uso en produccion orientado al publico general conlleva riesgos legales y reputacionales por la ausencia de filtros de seguridad; se recomienda moderacion externa obligatoria.
+- No apto para despliegues sin supervision humana ni para entornos donde se requiera cumplimiento de politicas de contenido.
+- Solo 747 descargas y 0 likes en el momento de la consulta: comunidad pequena, sin validacion externa significativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-14B-Instruct-heretic1x-general
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
-- Paper técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
+- Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
+- Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

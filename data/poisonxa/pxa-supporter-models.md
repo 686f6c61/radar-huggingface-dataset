@@ -2,57 +2,51 @@
 
 ## Resumen
 
-PXA-Supporter-Models es un repositorio de pesos publicado en Hugging Face por el usuario poisonxa, distribuido bajo una licencia propia denominada pxa-supporter y con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargar los ficheros. El dato objetivo mas relevante es el recuento de parametros declarado para los pesos en formato safetensors, que asciende a 27.320.697.856 parametros, es decir, aproximadamente 27.300 millones.
+PXA-Supporter-Models es una familia de pesos publicada por el usuario poisonxa en Hugging Face bajo el identificador `poisonxa/PXA-Supporter-Models`. El repositorio contiene un checkpoint de 39.785.287.456 parametros (aproximadamente 39,8 mil millones) en formato safetensors, junto con variantes cuantizadas en GGUF e iMatrix, lo que sugiere un uso previsto tanto en inferencia de precision completa como en despliegues locales optimizados. La etiqueta `conversational` y el pipeline asociado apuntan a un modelo afinado para dialogo.
 
-El repositorio ocupa 13,6 GB e incluye, segun las etiquetas declaradas, tanto pesos en formato GGUF como safetensors, ademas de la marca imatrix, que en el ecosistema llama.cpp suele acompanar a cuantizaciones generadas con matrices de importancia. Las etiquetas tambien lo clasifican como conversational y endpoints_compatible, lo que sugiere que esta pensado para su uso detras de una API compatible con los endpoints habituales de inferencia de texto.
+El modelo se distribuye bajo una licencia propia denominada `pxa-supporter`, marcada como `license:other` en Hugging Face, y el acceso esta restringido (gated): es necesario aceptar condiciones en la plataforma antes de descargar los pesos. El repositorio ocupa 950,7 GB, un tamano coherente con un modelo de ~40B publicado en multiples precisiones y formatos de cuantizacion.
 
-La informacion publica disponible es muy escasa: no se especifican pipeline, idiomas soportados, longitud de contexto, arquitectura ni detalles de entrenamiento, y el repositorio no registra descargas ni interacciones en el momento de redactar esta ficha. Por tanto, buena parte de los apartados siguientes quedan marcados explicitamente como no disponibles.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo conversacional de gran tamano con un esquema de licencia no estandar que exige revision legal antes de cualquier uso comercial; por otro, la informacion publica disponible es muy limitada (sin pipeline declarado, sin idiomas listados y sin benchmarks), por lo que esta ficha recoge de forma explicita todo aquello que no puede verificarse y evita cualquier suposicion sobre capacidades no documentadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 27.320.697.856 (pesos safetensors) |
-| Parametros activos | no disponible |
+| Parametros totales | 39.785.287.456 (~39,8B) |
+| Parametros activos | no disponible (no se confirma que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el tag imatrix indica cuantizaciones GGUF generadas con matriz de importancia, sin detalle de niveles Q) |
-| Idiomas soportados | no disponible |
-| Licencia | pxa-supporter (licencia propia, tag license:other) |
-| Formato de pesos | safetensors y GGUF |
-| Tamano del repositorio | 13,6 GB |
-| Acceso | restringido (gated, requiere aceptar condiciones) |
-| Pipeline declarado | no disponible |
-| Tipo de uso declarado | conversational |
+| Tipos de cuantizacion | GGUF e iMatrix (presentes en el repo); niveles concretos no disponibles |
+| Idiomas soportados | no disponibles |
+| Licencia | pxa-supporter (`license:other`) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en los datos disponibles. El recuento de parametros (unos 27.300 millones) es coherente con el rango habitual de los transformers densos de gran tamano, pero no hay confirmacion de si se trata de un transformer denso, de una arquitectura de mezcla de expertos (MoE) o de un diseno hibrido. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
+No se ha publicado informacion sobre la arquitectura interna del modelo en los metadatos disponibles. El unico dato estructural verificable es el numero de parametros (39.785.287.456), que situa al modelo en la franja de ~40B, un rango tipicamente asociado a transformers densos o a mezclas de expertos con un numero reducido de expertos activos. No se confirma ninguna de las dos opciones.
 
-La unica pista tecnica indirecta es la etiqueta imatrix, asociada a la generacion de cuantizaciones GGUF mediante matrices de importancia, y la etiqueta endpoints_compatible, que apunta a una integracion pensada para servidores de inferencia con API compatible. Cualquier afirmacion adicional sobre innovaciones de atencion, decodificacion especulativa o metodos de entrenamiento seria especulativa y no se incluye.
+Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), sobre si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, modos de razonamiento). La presencia de ficheros GGUF con calibracion iMatrix indica que el autor ha preparado el modelo para cuantizacion de alta calidad orientada a llama.cpp y ecosistemas similares, pero no aporta informacion sobre el preentrenamiento o el ajuste fino.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la unica capacidad confirmada por las etiquetas del repositorio es la de modelo conversacional.
-- Compatibilidad con endpoints: el tag endpoints_compatible sugiere que puede servirse detras de APIs de inferencia estandar.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Vision, audio o modos de razonamiento explicito (thinking mode): no disponible.
+- Generacion de texto conversacional: la etiqueta `conversational` del repositorio es el unico indicio explicito de su proposito principal.
+- Dialogo multi-turno: presumiblemente soportado por el enfoque conversacional, aunque no se documenta el formato de plantilla de chat ni el manejo de roles.
+- Capacidades de codigo, matematicas o razonamiento: no documentadas.
+- Soporte de tool calling o function calling: no documentado.
+- Soporte de agentes o razonamiento multi-paso: no documentado.
+- Capacidades multilingues: no documentadas (no se listan idiomas).
+- Capacidades multimodales (vision, audio): no documentadas.
+- Modo de razonamiento explicito (thinking mode): no documentado.
 
 ## Casos de uso
 
-Dado que no se documentan capacidades especificas, los casos siguientes son escenarios plausibles para un modelo conversacional de ~27.000 millones de parametros, no caracteristicas confirmadas por el autor:
-
-- Asistente conversacional de proposito general: un modelo de este tamano puede mantener dialogos multi-turno y generar respuestas coherentes, siempre que la longitud de contexto (no especificada) sea suficiente para el historial de conversacion.
-- Despliegue en infraestructura propia con llama.cpp u Ollama: la presencia de pesos GGUF con cuantizacion imatrix facilita ejecutar el modelo en GPUs de consumo ajustando el nivel de cuantizacion.
-- Servicio interno detras de una API compatible: la etiqueta endpoints_compatible permite integrarlo en un backend existente que ya consuma endpoints tipo OpenAI sin reescribir la capa de aplicacion.
-- Generacion de borradores y resumenes de documentacion interna: un modelo de ~27.000 millones puede producir texto tecnico extenso con calidad razonable, sujeto a verificacion humana.
-- Clasificacion y reescritura de texto en pipelines de back-office: tareas de transformacion de texto donde el modelo actua como componente dentro de un flujo automatizado.
-- Prototipado e investigacion: al ser un repositorio con licencia propia y acceso restringido, es adecuado para experimentacion controlada una vez aceptadas las condiciones de uso.
-- Sistemas de preguntas y respuestas sobre corpus cerrados: utilizable si se le anade una capa de recuperacion (RAG), ya que no se documenta una ventana de contexto concreta.
-
-Ninguno de estos casos esta respaldado por documentacion oficial del autor en la informacion disponible; se derivan del perfil general del modelo (tamano, formato y etiqueta conversacional).
+- Asistente conversacional autoalojado: el modelo puede desplegarse en infraestructura propia para gestionar dialogos multi-turno, lo que resulta adecuado cuando la confidencialidad impide usar APIs de terceros. La ausencia de datos de contexto obliga a validar empiricamente la ventana efectiva antes de comprometerse con conversaciones largas.
+- Prototipado de chatbots especializados: con ~40B de parametros y variantes GGUF, permite iterar en local con cuantizaciones agresivas y desplegar versiones de mayor precision en servidor cuando el prototipo madura.
+- Evaluacion interna de modelos base para fine-tuning: el checkpoint safetensors sirve como punto de partida para ajuste fino supervisado en dominios verticales (legal, sanitario, soporte tecnico), siempre que la licencia `pxa-supporter` lo permita tras revision.
+- Despliegue en entornos con GPU de gama alta: al existir pesos en precision completa, encaja en pipelines con vLLM o TGI en nodos con suficiente VRAM, lo que permite servir varias peticiones concurrentes con batching continuo.
+- Inferencia en estaciones de trabajo con llama.cpp u Ollama: las variantes GGUF e iMatrix estan pensadas para ejecucion local en CPU/GPU mixta, util para pruebas de calidad sin infraestructura dedicada.
+- Generacion de respuestas en herramientas de soporte interno: integrado como backend de un asistente corporativo, puede redactar respuestas a partir de documentacion recuperada (RAG), aunque la falta de benchmarks obliga a medir la tasa de alucinacion antes de produccion.
+- Experimentacion academica con modelos de ~40B: util para estudiar comportamiento conversacional y tecnicas de cuantizacion (iMatrix) en un checkpoint de gran tamano, con la salvedad del acceso restringido.
 
 ## Benchmarks y rendimiento
 
@@ -60,32 +54,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parametros (27.320.697.856), los pesos en precision de 16 bits ocuparian aproximadamente 54,6 GB; en 8 bits, unos 27,3 GB; y en cuantizaciones GGUF de 4 bits, alrededor de 14-16 GB. Estas cifras son calculos derivados del numero de parametros, no datos publicados por el autor.
-- GPU recomendadas: no disponible. A modo orientativo, las configuraciones de 16 bits requeririan GPUs de clase A100 80 GB o H100; las cuantizaciones de 4 bits podrian caber en una RTX 4090 (24 GB) o similar.
-- Compatibilidad con GPU de consumo: probable en cuantizaciones de 4 bits sobre GPUs con 16-24 GB de VRAM, segun los calculos anteriores y no segun especificaciones oficiales.
-- Opciones de despliegue: llama.cpp, Ollama y otros servidores compatibles con GGUF, dado que el repositorio incluye ese formato; tambien vLLM o TGI si los pesos safetensors son compatibles, aunque esto no esta confirmado.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada en precision completa (BF16/FP16): aproximadamente 80 GB solo para pesos (39,8B x 2 bytes), mas overhead de activaciones y cache KV; en la practica requiere multiples GPU o una GPU de 80 GB con cuantizacion parcial.
+- Cuantizacion de 8 bits: en torno a 40 GB de pesos; viable en una A100 80GB o H100 80GB con margen para contexto.
+- Cuantizacion de 4 bits (GGUF Q4): en torno a 20-22 GB de pesos; cabe en una RTX 4090 (24 GB) con contexto corto, y con mas holgura en A6000 (48 GB) o dos RTX 4090.
+- GPU recomendadas: H100 80GB, A100 80GB para servicio en produccion; A6000, RTX 4090 o 2x RTX 3090 para experimentacion local con cuantizacion.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM o TGI para safetensors en precision reducida; el campo `endpoints_compatible` de los tags sugiere compatibilidad con endpoints gestionados.
+- Latencia y throughput: no disponibles; dependen de la cuantizacion, el hardware y la longitud de contexto, ninguno de los cuales esta documentado.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion publicada no identifica la familia base del modelo ni ofrece resultados que permitan situarlo frente a alternativas de tamano comparable, de modo que cualquier comparacion seria especulativa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Acceso |
+|---|---|---|---|---|---|
+| PXA-Supporter-Models | ~39,8B | no disponible | pxa-supporter (other) | safetensors, GGUF | Restringido (gated) |
+| Alternativas de ~30-40B de codigo abierto | ~30-40B | variable segun modelo | Apache 2.0 / otras | safetensors, GGUF | Abierto o gated segun modelo |
+
+No se dispone de datos de rendimiento del modelo como para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria. La comparacion queda limitada a parametros, licencia y disponibilidad, y en esos ejes el modelo presenta dos desventajas objetivas: una licencia no estandar que exige revision legal y un acceso restringido que anade friccion a la adopcion.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinacion: no cuantificado; sin datos de entrenamiento ni evaluaciones, debe asumirse el riesgo habitual de los modelos generativos.
-- Limitaciones de contexto o idioma: no disponible; se desconoce la ventana de contexto y los idiomas soportados.
-- Restricciones de licencia: la licencia pxa-supporter es una licencia propia (tag license:other). No se detallan sus terminos en la informacion disponible, por lo que es imprescindible revisar el texto completo antes de cualquier uso comercial.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion y automatizacion.
-- Ausencia de traccion: el repositorio registra 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
-- Falta de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento, contexto o benchmarks, lo que dificulta evaluar su idoneidad en entornos productivos.
-- Fechas del repositorio: las marcas temporales de creacion y actualizacion (27 de septiembre de 2026) deben verificarse directamente en la plataforma, ya que condicionan la vigencia de la version publicada.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; no es posible la descarga anonima ni la integracion automatica en CI sin gestion de tokens.
+- Licencia no estandar: `pxa-supporter` con `license:other`; no se conocen los terminos exactos de uso comercial, redistribucion o modificacion. Es imprescindible revisar el texto de la licencia antes de cualquier despliegue en produccion.
+- Ausencia de documentacion tecnica: no hay model card con arquitectura, contexto, idiomas o datos de entrenamiento, lo que impide evaluar riesgos de sesgo o alucinacion de forma informada.
+- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones publicadas no puede estimarse la fiabilidad en tareas factuales.
+- Idiomas no declarados: no se confirma soporte de castellano ni de otros idiomas; debe validarse empiricamente antes de usarlo en productos multilingues.
+- Ventana de contexto desconocida: limita el diseno de aplicaciones con documentos largos o dialogos extensos.
+- Repositorio de gran tamano (950,7 GB): la descarga completa requiere almacenamiento considerable; conviene descargar solo los ficheros necesarios (por ejemplo, una unica cuantizacion GGUF).
+- Procedencia y mantenimiento: publicado por un autor individual, sin evidencia de auditoria externa ni de soporte a largo plazo; conviene fijar una revision concreta del repositorio para reproducibilidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/poisonxa/PXA-Supporter-Models
-- Paper: no disponible
-- Blog o articulo tecnico: no disponible
-- Repositorio de codigo: no disponible
-- Demo: no disponible
-- Terminos de licencia pxa-supporter: no disponible en la informacion proporcionada
+- Modelo en Hugging Face: https://huggingface.co/poisonxa/PXA-Supporter-Models
+- Perfil del autor: https://huggingface.co/poisonxa
+- No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

@@ -2,50 +2,48 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Heretic es un ajuste fino (finetune) del modelo de difusion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario makisekurisu-jp en Hugging Face. Se distribuye como un unico archivo de pesos compatible con ComfyUI (tag `diffusion-single-file`), lo que facilita su integracion en flujos de trabajo de generacion de imagenes sin necesidad de cargar el modelo base completo por separado.
+Qwen-Image-2.1-Heretic es un ajuste fino (finetune) del modelo de difusion Qwen/Qwen-Image-2.1, publicado por el usuario makisekurisu-jp en Hugging Face. Se distribuye como un unico archivo de difusion (diffusion-single-file) pensado para su uso directo en ComfyUI, lo que simplifica su integracion en flujos de trabajo de generacion de imagenes sin necesidad de cargar multiples componentes por separado.
 
-El modelo parte de la arquitectura de difusion de Qwen-Image-2.1, un modelo texto-a-imagen de la familia Qwen. El sufijo "Heretic" hace referencia a la tecnica de "abliteration" o eliminacion de rechazos (uncensoring), habitual en la comunidad de modelos abiertos, orientada a reducir las negativas del modelo ante determinadas peticiones. La model card no documenta el proceso de entrenamiento ni los datos utilizados.
+El modelo hereda la arquitectura y capacidades del Qwen-Image-2.1 original, un modelo de difusion para generacion de imagenes de Qwen. El sufijo "Heretic" hace referencia a la linea de ajustes finos orientados a reducir el alineamiento y las restricciones de seguridad del modelo base, siguiendo una convencion de nombres ya extendida en la comunidad (existen variantes Heretic de otros modelos citadas en la propia model card). El repositorio ocupa 86,1 GB, lo que refleja que contiene pesos en precision alta, probablemente en formato de un solo archivo para ComfyUI.
 
-Su relevancia practica es acotada: es un modelo de nicho con 3.859 descargas y 4 likes en el momento de la consulta, y su interes radica en ofrecer una variante sin censura del modelo base para experimentacion en ComfyUI. El repositorio ocupa 70,8 GB, coherente con los pesos de un modelo de difusion de gran tamano.
+La relevancia del modelo es fundamentalmente practica: ofrece a los usuarios de ComfyUI una version del modelo base lista para usar con un unico archivo y con un comportamiento menos restrictivo. No obstante, la informacion publicada por el autor es muy escasa: no se detallan datos de entrenamiento, benchmarks ni caracteristicas tecnicas especificas del ajuste, y la model card se limita a una lista de enlaces a recursos relacionados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | difusion (modelo texto-a-imagen), derivada de Qwen/Qwen-Image-2.1 |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen; condicionamiento por prompt de texto) |
-| Tipos de cuantizacion | no disponible (el repo se distribuye como archivo unico; el formato exacto de pesos no se detalla) |
-| Idiomas soportados | no disponible (la model card no lo especifica) |
-| Licencia | qwen-research (license_name: qwen-research; enlace a la licencia del modelo base) |
-| Formato de pesos | diffusion-single-file (compatible con ComfyUI) |
+| Arquitectura | Modelo de difusion (hereda la de Qwen/Qwen-Image-2.1); detalles no disponibles |
+| Parametros totales | No disponible |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible (no aplica a generacion de imagenes) |
+| Tipos de cuantizacion | No disponible; el repo contiene pesos de 86,1 GB en un unico archivo (diffusion-single-file) |
+| Idiomas soportados | No disponible |
+| Licencia | qwen-research (licencia "other" con nombre qwen-research) |
+| Formato de pesos | Diffusion single-file para ComfyUI (no se especifica safetensors/GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de difusion de Qwen/Qwen-Image-2.1, un modelo generativo texto-a-imagen. Al tratarse de un finetune del modelo base, comparte su estructura de red y su mecanismo de condicionamiento por texto, pero la model card no aporta detalles sobre el numero de parametros, la variante de difusion (UNet o transformer de difusion), el encoder de texto asociado ni el scheduler empleado.
+El modelo es un ajuste fino del modelo de difusion Qwen/Qwen-Image-2.1. La arquitectura concreta (tipo de backbone, mecanismo de atencion, variante de difusion) no se detalla en la informacion disponible, por lo que solo puede afirmarse que se trata de un modelo de difusion para generacion de imagenes condicionada por texto.
 
-No hay informacion publicada sobre el dataset de ajuste fino, el numero de pasos de entrenamiento, el uso de tecnicas como LoRA, DreamBooth, DPO o RLHF, ni sobre el metodo concreto de "abliteration" aplicado. La referencia a los repositorios de Qwen-Image-2.1 y MOSS-Image en la model card apunta a recursos de mejora de prompts (prompt rewriting y prompt enhancer), no a documentacion del entrenamiento del finetune. Tampoco se documenta ninguna innovacion tecnica adicional respecto al modelo base.
+Respecto al entrenamiento, no se ha publicado informacion sobre el dataset utilizado, el numero de pasos o tokens de entrenamiento, ni la metodologia del ajuste (si se empleo RLHF, DPO, LoRA u otra tecnica). La model card no incluye ninguna descripcion del proceso de entrenamiento ni de las innovaciones tecnicas del ajuste "Heretic". Tampoco se especifica si el ajuste modifica el text encoder o solo el UNet/diT, aunque los enlaces de la model card a variantes como "Qwen-Image-2.1-Text-Encoder-Heretic-int8-convrot" sugieren que en la comunidad existen tambien text encoders ajustados de forma independiente.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (texto-a-imagen), heredada de Qwen-Image-2.1.
-- Integracion directa en ComfyUI mediante archivo unico de difusion.
-- Variante "Heretic" orientada a reducir los rechazos del modelo ante prompts que el modelo base podria declinar; el alcance real de esta modificacion no esta documentado.
-- Compatibilidad con flujos de mejora de prompts, segun los enlaces de la model card a los repositorios de Qwen-Image-2.1 y MOSS-Image.
-- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (no documentadas).
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image), heredada del modelo base Qwen-Image-2.1.
+- Integracion directa en ComfyUI como archivo de difusion unico.
+- Comportamiento menos restrictivo que el modelo base, segun la convencion de la linea "Heretic".
+- No se dispone de informacion sobre soporte de image-to-image, inpainting, controlnet u otras modalidades.
+- No se dispone de informacion sobre capacidades multilingues en los prompts.
+- No se dispone de informacion sobre tool calling, agentes o razonamiento multi-paso (no aplica a un modelo de difusion).
 
 ## Casos de uso
 
-- Generacion de ilustraciones y concept art en ComfyUI: el modelo se carga como archivo unico en un nodo de difusion y permite iterar prompts con el resto de la interfaz, lo que encaja en pipelines de creacion visual repetitiva.
-- Prototipado rapido de assets para videojuegos: al ser un finetune del modelo base, sirve para explorar estilos y variaciones de personajes u objetos antes de encargar arte final.
-- Experimentacion con generacion de imagenes sin restricciones de contenido: el ajuste "Heretic" esta pensado para escenarios de investigacion o creacion que requieren menor tasa de rechazo, siempre dentro de los limites legales aplicables.
-- Flujos de mejora de prompts: combinado con los repositorios de prompt rewriting y prompt enhancer enlazados en la model card, puede usarse para refinar automaticamente descripciones antes de la generacion.
-- Generacion por lotes en estaciones de trabajo con GPU de gran memoria: el tamano del repositorio (70,8 GB) sugiere que el despliegue requiere hardware de gama alta, adecuado para entornos de produccion grafica.
-- Evaluacion comparativa de finetunes: util para investigadores que comparan el comportamiento del modelo base frente a variantes ajustadas en tareas de generacion de imagen.
+- Generacion de ilustraciones conceptuales: el modelo puede producir imagenes a partir de prompts descriptivos dentro de ComfyUI, lo que resulta util para prototipado rapido de ideas visuales en estudios de diseno.
+- Creacion de arte digital y contenido creativo: al ser un finetune con menor alineamiento, puede emplearse para explorar estilos y tematicas que el modelo base rechazaria, siempre que el uso cumpla la licencia qwen-research.
+- Flujos de trabajo por lotes en ComfyUI: al distribuirse como un unico archivo, se integra facilmente en pipelines automatizados de generacion de imagenes por lotes para catalogos o materiales graficos.
+- Prototipado de assets para videojuegos: generacion de conceptos de personajes, entornos y objetos que luego se refinan manualmente por artistas.
+- Investigacion sobre alineamiento y seguridad en modelos generativos: permite estudiar el comportamiento de un modelo de difusion con restricciones reducidas en entornos controlados de investigacion.
+- Experimentacion con el modelo base: sirve como punto de partida para nuevos ajustes finos o para comparar el efecto de la variante Heretic frente al Qwen-Image-2.1 original.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +51,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 70,8 GB, lo que sugiere que los pesos sin cuantizar superan ampliamente la memoria de una GPU de consumo; el formato exacto y la precision de los pesos no se detallan.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por el tamano del repo, se anticipa la necesidad de GPUs de centro de datos (A100, H100) o configuraciones multi-GPU, aunque esto no esta confirmado por el autor.
-- GPU de consumo: no se puede confirmar que quepa en tarjetas como la RTX 4090 (24 GB) sin cuantizacion adicional no documentada.
-- Opciones de despliegue: ComfyUI como via principal, dado el tag `comfyui` y el formato `diffusion-single-file`.
-- Latencia y throughput: no disponibles.
+- El repositorio ocupa 86,1 GB, por lo que el archivo completo no cabe en GPUs de consumo con menos de ese espacio de VRAM; se requiere carga por partes o cuantizacion posterior.
+- Para inferencia en precision completa se necesitan GPUs de数据中心 como A100 (80 GB) o H100 (80 GB), y aun asi puede requerir offloading a CPU o memoria del sistema.
+- En GPUs de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) seria necesario cuantizar los pesos o usar tecnicas de offloading, aunque no se documentan cuantizaciones oficiales para este repositorio.
+- Despliegue previsto en ComfyUI (formato diffusion-single-file); no se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no son aplicables a un modelo de difusion de este tipo.
+- No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| makisekurisu-jp/Qwen-Image-2.1-Heretic | no disponible | no disponible | qwen-research | diffusion-single-file | Hugging Face (3.859 descargas) |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | qwen-research | no disponible | Hugging Face |
-| DreamFast/Qwen3-VL-4b-Heretic-ComfyUI | no disponible | no disponible | no disponible | ComfyUI | Hugging Face (referenciado en la model card) |
-| mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot | no disponible | no disponible | no disponible | int8 (segun nombre) | Hugging Face (referenciado en la model card) |
+| Qwen-Image-2.1-Heretic | No disponible | No aplica | No disponible | qwen-research | Hugging Face (86,1 GB) |
+| Qwen/Qwen-Image-2.1 (base) | No disponible | No aplica | No disponible | qwen-research | Hugging Face |
+| Otras variantes Heretic citadas (Qwen3-VL-4b-Heretic-ComfyUI, LTX-2.5-Gemma4-12B-heretic) | Variable segun modelo | No aplica | No disponible | No disponible | Hugging Face |
 
-Los dos ultimos modelos aparecen enlazados en la model card como variantes "Heretic" de otras familias, pero no son comparables en tarea (son modelos de lenguaje, no de imagen). No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de generacion de imagen.
+No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta el proceso de entrenamiento ni el dataset del finetune, lo que impide evaluar su calidad y sus sesgos de forma rigurosa.
-- El ajuste "Heretic" reduce los rechazos del modelo, lo que puede aumentar la generacion de contenido no deseado; el uso en produccion exige filtros y moderacion propios.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar elementos incoherentes, anatomia incorrecta o texto ilegible en las imagenes.
-- La licencia `qwen-research` impone restricciones; es necesario revisar el texto completo en el enlace de licencia del modelo base antes de cualquier uso comercial.
-- No se especifican los idiomas soportados en los prompts, aunque al derivar de Qwen es probable un buen soporte de ingles y chino; no confirmado.
-- El tamano del repositorio (70,8 GB) limita su despliegue a entornos con almacenamiento y memoria abundantes.
-- No hay garantias de mantenimiento ni soporte por parte del autor; el modelo tiene una adopcion muy baja (4 likes).
+- La informacion publicada por el autor es minima: no hay model card descriptiva, benchmarks ni detalles de entrenamiento, lo que dificulta evaluar su calidad frente al modelo base.
+- Al ser un ajuste "Heretic" orientado a reducir el alineamiento, puede generar contenido que el modelo base rechazaria; el usuario es responsable del uso que haga de esa capacidad.
+- Riesgo de alucinacion visual y de artefactos propios de los modelos de difusion; no se documenta la tasa de fallos.
+- La licencia qwen-research puede imponer restricciones al uso comercial; es necesario revisar el texto completo de la licencia en el enlace del modelo base antes de cualquier despliegue en produccion.
+- No se especifican sesgos conocidos ni limitaciones de idioma, pero al no documentarse el dataset de ajuste no puede descartarse la herencia de sesgos del modelo base.
+- El tamano del repositorio (86,1 GB) y la ausencia de cuantizaciones oficiales limitan su uso en hardware de consumo sin trabajo adicional.
+- No se garantiza compatibilidad con todas las versiones de ComfyUI ni con otros entornos de inferencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/makisekurisu-jp/Qwen-Image-2.1-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Repositorio Qwen-Image-2.1 (prompts de reescritura): https://github.com/QwenLM/Qwen-Image-2.1/tree/main/prompt_rewrite/prompts
-- Repositorio MOSS-Image (prompt enhancer): https://github.com/OpenMOSS/MOSS-Image/tree/main/skills/moss-image-prompt-enhancer
-- Variante Heretic de Qwen3-VL en ComfyUI: https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI
-- Variante Heretic de Qwen3.5 9B: https://huggingface.co/mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot
+- Prompts de reescritura (Qwen-Image-2.1): https://github.com/QwenLM/Qwen-Image-2.1/tree/main/prompt_rewrite/prompts
+- Prompt enhancer de MOSS-Image: https://github.com/OpenMOSS/MOSS-Image/tree/main/skills/moss-image-prompt-enhancer
+- Qwen3-VL-4b-Heretic-ComfyUI: https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI
+- Text encoder Heretic int8 para Qwen-Image-2.1: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-int8-convrot
+- PE Heretic INT8 ConvRot para Qwen-Image-2.1: https://huggingface.co/Adahm/PE-Heretic-INT8-ConvRot-for-Qwen-Image-2.1
+- Qwen3.5 9B ultra uncensored heretic int8 convrot: https://huggingface.co/mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot
+- LTX-2.5-Gemma4-12B-heretic-int8-convrot: https://huggingface.co/diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot

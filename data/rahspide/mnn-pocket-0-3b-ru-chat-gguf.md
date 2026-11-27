@@ -2,90 +2,92 @@
 
 ## Resumen
 
-MNN-Pocket-0.3B-RU-Chat es un modelo de lenguaje conversacional en ruso (con soporte de inglés) de tan solo 302.830.976 parámetros, desarrollado por Rahspide. Se trata de la versión cuantizada en GGUF para `llama.cpp` de un modelo base afinado mediante SFT sobre un modelo de continuación de texto, con el objetivo explícito de que el modelo responda a instrucciones en lugar de limitarse a continuar el texto de entrada. Su propuesta de valor es el despliegue en dispositivo (on-device) y en el borde (edge): con cuantizaciones de 208-223 MB cabe en un teléfono y genera a más de 100 tok/s en CPU x86 de 16 hilos.
+MNN-Pocket-0.3B-RU-Chat es un asistente conversacional en ruso de muy pequeño tamaño (302.830.976 parámetros, aproximadamente 0,3 B), desarrollado por Rahspide. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base Rahspide/MNN-Pocket-0.3B-RU, orientado a seguir instrucciones y mantener conversaciones multi-turno en ruso, con soporte secundario de inglés. Su relevancia radica en que ofrece capacidades conversacionales en un envelope de memoria que cabe en dispositivos móviles y CPU sin GPU dedicada.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado con los identificadores `mnn` y `qwen3`, lo que sugiere una arquitectura derivada de la familia Qwen3, aunque la model card no detalla la arquitectura interna. La plantilla ChatML está embebida en el propio archivo GGUF, de modo que basta con `--jinja` en `llama.cpp` para activar el formato conversacional; sin ella, el modelo se comporta como su "hermana" (el modelo de continuación) y sigue el texto en lugar de contestar.
+Esta ficha documenta específicamente los builds cuantizados en formato GGUF publicados en el repositorio Rahspide/MNN-Pocket-0.3B-RU-Chat-GGUF, que corresponden a los pesos v2.0 del repositorio principal (receta reconstruida, 12,2 M de tokens de SFT). El repositorio tiene un tamaño de 2,8 GB e incluye cuatro variantes de cuantización, desde F16 de referencia hasta Q4_1 de 208 MB.
 
-Es relevante ahora porque demuestra que un ajuste de 50 M de tokens de SFT puede convertir un modelo de continuación de 0,3 B en un asistente instruccional funcional para ruso, con un coste de almacenamiento y cómputo compatible con hardware de consumo y móvil. No hay datos publicados de benchmarks ni de calidad conversacional más allá de las velocidades de generación medidas por el autor.
+El modelo es relevante ahora por su perfil de despliegue: inferencia en CPU x86 a velocidades de generación cercanas a 97 t/s con Q4_K_M según las mediciones del autor, licencia Apache 2.0 y compatibilidad con llama.cpp y el ecosistema GGUF. No obstante, su ventana de contexto, composición del dataset de entrenamiento y resultados de benchmarks no están documentados en la información disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Qwen3 (según tags; detalle no disponible) |
-| Parametros totales | 302.830.976 |
-| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Arquitectura | no disponible (modelo base MNN-Pocket-0.3B-RU; no se detalla en la informacion) |
+| Parametros totales | 302.830.976 (0,3 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q4_K_M, Q4_1 |
 | Idiomas soportados | ru, en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (para llama.cpp) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el repositorio base) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna más allá de las etiquetas `mnn` y `qwen3`, que apuntan a una base de la familia Qwen3 adaptada al runtime MNN y posteriormente convertida a GGUF. El dato concreto disponible es el proceso de ajuste: se partió de un modelo de continuación de texto ("continuation model") y se aplicaron 50 M de tokens de SFT (supervised fine-tuning) para convertirlo en un asistente que responde a instrucciones. El autor indica explícitamente que, sin la plantilla ChatML embebida, el modelo vuelve a comportarse como el modelo de continuación original, lo que confirma que la capacidad instruccional proviene del SFT y del formato de chat, no de un cambio arquitectónico.
+La información disponible no detalla la arquitectura interna del modelo (tipo de transformer, atención, normalización, etc.). Se sabe que el modelo base es Rahspide/MNN-Pocket-0.3B-RU y que el chat se obtiene mediante SFT sobre dicho base, con 12,2 M de tokens de datos de ajuste supervisado en la versión v2.0 (reconstruida el 2026-11-25). No se especifica si hubo RLHF, DPO u otras fases de alineamiento posteriores al SFT.
 
-No se especifican la composición del dataset de SFT, el número total de tokens de preentrenamiento, ni si hubo RLHF, DPO u otras fases de alineación. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La única optimización destacada es práctica: la inclusión de la plantilla ChatML dentro del archivo GGUF para simplificar el uso con `llama.cpp --jinja`.
+El modelo utiliza una plantilla de chat propia basada en ChatML, lo que obliga a emplear el flag `--jinja` en llama.cpp para que el modelo responda en lugar de continuar el prompt. No se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas.
 
 ## Capacidades
 
-- Generación de texto conversacional en ruso e inglés, con formato de instrucciones ChatML.
-- Respuesta a instrucciones en lugar de continuación de texto (comportamiento diferenciado respecto al modelo base de continuación).
-- Conversación multi-turno mediante la plantilla ChatML embebida.
-- Ejecución en CPU y en dispositivos de borde gracias a su tamaño reducido y a las cuantizaciones de 4 y 8 bits.
-- Compatibilidad con `llama.cpp` y, por extensión, con herramientas que consumen GGUF (CLI, servidores compatibles con endpoints).
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- Generación de texto conversacional en ruso, con soporte secundario de inglés.
+- Seguimiento de instrucciones (instruction-following) gracias al ajuste SFT.
+- Conversación multi-turno mediante plantilla ChatML propia.
+- Inferencia en CPU sin GPU, con builds que caben en dispositivos móviles.
+- Compatibilidad con el ecosistema GGUF (llama.cpp y derivados).
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Asistentes conversacionales en ruso en dispositivos móviles: con Q4_K_M (223 MB) el modelo cabe en un teléfono y responde a instrucciones básicas sin conexión, lo que permite asistentes de bolsillo, notas o accesibilidad sin enviar datos a la nube.
-- Aplicaciones de escritorio con CPU: en un x86 de 16 hilos genera a ~123 tok/s con Q4_K_M y ~102 tok/s con Q8_0, suficiente para un chat interactivo local en herramientas de escritorio o plugins de IDE ligeros.
-- Procesamiento por lotes en el borde: con Q4_1 (208 MB) y ~62,6 tok/s de generación se pueden clasificar o resumir textos cortos en ruso en gateways, routers o dispositivos IoT con CPU modesta.
-- Prototipado rápido de pipelines conversacionales: al ser un GGUF de 0,3 B con plantilla ChatML, sirve para validar flujos de chat y prompts antes de escalar a modelos mayores, con coste de infraestructura mínimo.
-- Filtrado y moderación de texto en ruso: tareas de etiquetado o reformulación de frases cortas donde la latencia y el tamaño importan más que la profundidad de razonamiento.
-- Educación y demos offline: entornos sin red (aulas, ferias, dispositivos aislados) donde se necesita un chat en ruso que quepa en un USB o en la memoria de un móvil.
+- Asistente conversacional en ruso en dispositivos móviles: el build Q4_K_M (223 MB) o Q4_1 (208 MB) permite ejecutar el modelo en un teléfono o tableta sin GPU, respondiendo consultas cotidianas con latencia aceptable.
+- Chatbot embebido en aplicaciones de escritorio: con llama.cpp y el build Q8_0 (309 MB) se obtiene una calidad casi sin pérdida en un footprint reducido, adecuado para integrarse en aplicaciones nativas.
+- Atención al cliente de bajo coste en ruso: el modelo puede gestionar conversaciones multi-turno sencillas en un servidor CPU compartido, reduciendo el coste frente a modelos de mayor tamaño.
+- Prototipado rápido de pipelines conversacionales: al ser Apache 2.0 y estar en GGUF, permite validar flujos de chat y plantillas ChatML antes de migrar a modelos mayores.
+- Educación y demostraciones: útil para enseñar conceptos de cuantización e inferencia local en CPU con un modelo de 0,3 B y builds de pocos cientos de MB.
+- Filtrado o preprocesado de texto en ruso: tareas de clasificación ligera, reformulación o extracción simple en entornos con recursos limitados.
+- Inferencia en entornos air-gapped o de borde: el tamaño reducido y la licencia permisiva permiten desplegar el modelo en dispositivos sin conectividad ni aceleradores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Los únicos datos medidos por el autor son de velocidad en CPU x86 de 16 hilos:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo reporta mediciones de rendimiento de inferencia con `llama-bench` en CPU x86 de 16 hilos, sin GPU, 5 repeticiones, con desviación estándar de ±24 t/s:
 
-| Cuantización | Generación (tok/s) | Procesamiento de prompt (tok/s) | Tamaño |
-|---|---|---|---|
-| Q4_K_M | ~123 (medición aislada) / 54,3 (medición back-to-back) | 251 | 223 MB |
-| Q8_0 | ~102 | no disponible | 310 MB |
-| Q4_1 | 62,6 | 199 | 208 MB |
-| F16 | no disponible | no disponible | 581 MB |
+| Build | Prompt processing | Generación |
+|---|---|---|
+| Q4_K_M | 632 t/s | 97 t/s |
+| Q4_1 | 395 t/s | 89 t/s |
+
+El autor advierte que estas cifras son indicativas y se midieron en un host compartido con carga.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica de forma estricta; en GPU, Q4_K_M ocupa ~223 MB de pesos más overhead de contexto y KV cache (no cuantificado en la información disponible).
-- GPU recomendadas: cualquier GPU con al menos ~1 GB de memoria libre puede alojar las cuantizaciones Q4; no se especifican modelos concretos (A100, H100, RTX 4090) porque el modelo está orientado a CPU y borde.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna e incluso en iGPU; también en CPU convencional.
-- Despliegue: `llama.cpp` (CLI con `--jinja`), y por extensión servidores compatibles con GGUF y endpoints; no se documentan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: ~123 tok/s de generación con Q4_K_M y ~102 tok/s con Q8_0 en CPU x86 de 16 hilos; Q4_1 prioriza generación (62,6 tok/s) a costa de procesamiento de prompt (199 frente a 251 tok/s).
+- VRAM estimada: no aplica para los builds GGUF en CPU; en GPU, el footprint es inferior a 1 GB en todas las cuantizaciones (F16 580 MB, Q8_0 309 MB, Q4_K_M 223 MB, Q4_1 208 MB).
+- GPU recomendadas: no se especifican; cualquier GPU con al menos 1 GB de memoria puede alojar los builds cuantizados, aunque el modelo está pensado para CPU.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en iGPU.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), y por extensión herramientas compatibles con GGUF como Ollama o LM Studio; el repositorio está etiquetado como `endpoints_compatible`.
+- Latencia y throughput: 97 t/s de generación y 632 t/s de prompt processing en Q4_K_M sobre CPU x86 de 16 hilos según el autor; cifras indicativas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| MNN-Pocket-0.3B-RU-Chat GGUF | 302.830.976 | no disponible | ru, en | Apache 2.0 | GGUF | Enfoque on-device, SFT de 50 M tokens |
-| Qwen3 (variantes pequeñas) | no disponible en esta ficha | no disponible | multilingüe | según variante | safetensors/GGUF | Base arquitectónica probable; datos no verificados aquí |
-| Modelos de continuación de 0,3 B del mismo autor | ~0,3 B | no disponible | ru, en | Apache 2.0 | GGUF | Sin SFT conversacional; continúan texto |
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la información proporcionada. Como referencia estructural, se puede contrastar con otros modelos de ~0,3 B en GGUF, pero no se aportan cifras de rendimiento para una comparación rigurosa.
 
-No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K) para establecer una comparación cuantitativa con alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| MNN-Pocket-0.3B-RU-Chat | 0,3 B | no disponible | Apache 2.0 | GGUF |
+| Alternativas de ~0,3 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad en razonamiento, código o matemáticas; el tamaño de 0,3 B limita severamente estas capacidades.
-- Riesgo de alucinación elevado por el reducido número de parámetros y por un SFT de 50 M de tokens sin fases de alineación documentadas (RLHF/DPO no mencionados).
-- Sesgos no evaluados: no se documenta ninguna evaluación de sesgos, toxicidad o robustez.
-- Dependencia del formato: sin la plantilla ChatML y `--jinja`, el modelo continúa texto en lugar de responder, lo que puede romper integraciones mal configuradas.
-- Cobertura lingüística limitada a ruso e inglés; el rendimiento en otros idiomas no está documentado.
-- Longitud de contexto no especificada: no se puede garantizar el comportamiento en conversaciones largas.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se distribuye "tal cual".
-- El repo pesa 1,4 GB por incluir varias cuantizaciones; conviene descargar solo el archivo necesario.
+- Modelo de 0,3 B: capacidad de razonamiento, conocimiento factual y coherencia limitadas en comparación con modelos de mayor tamaño; riesgo elevado de alucinación.
+- Idiomas: entrenado principalmente para ruso, con soporte secundario de inglés; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
+- Longitud de contexto no documentada: no se puede asumir una ventana amplia para conversaciones largas o documentos extensos.
+- Plantilla ChatML propia: sin el flag `--jinja` en llama.cpp el modelo continúa el prompt en lugar de responder, lo que puede romper integraciones mal configuradas.
+- Sesgos: no se documentan evaluaciones de sesgo; al ser un modelo pequeño entrenado con SFT, puede reproducir sesgos presentes en los datos de ajuste.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene validar el comportamiento en el dominio de producción.
+- Mediciones de rendimiento en un host compartido con alta desviación (±24 t/s): no deben tomarse como cifras de producción.
+- No se documentan evaluaciones de seguridad, filtrado de contenido ni robustez frente a prompts adversarios.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-Chat-GGUF
-- Modelo base (pesos, datos y evaluación): https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-Chat
+- Repositorio GGUF: https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-Chat-GGUF
+- Modelo base (chat): https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-Chat
+- Modelo base (pretrained): https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU
+- Rama v1 de builds anteriores: https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-Chat/tree/v1

@@ -2,93 +2,89 @@
 
 ## Resumen
 
-Flora-Captioner (también referido como Flora-captioner-27B) es un modelo visión-lenguaje desarrollado por NVIDIA para generar instrucciones de acción sobre intervalos temporales concretos de vídeos de manipulación robótica o humana. Forma parte del motor de datos Flora, el pipeline que NVIDIA utilizó para entrenar GR00T-2, y se publica para que investigadores y desarrolladores puedan escalar la anotación de sus propios conjuntos de datos de robótica. El modelo no describe el vídeo completo: recibe bloques temporales etiquetados como BEFORE, TARGET y AFTER, y produce una única instrucción de acción referida exclusivamente al bloque TARGET, usando el contexto vecino para desambiguar la operación local.
+Flora-Captioner es un modelo vision-lenguaje de NVIDIA construido sobre Qwen3.5-27B, especializado en la generación de instrucciones de acción para intervalos temporales concretos dentro de vídeos de manipulación robótica o humana. Forma parte del motor de datos Flora, el pipeline que NVIDIA utilizó para entrenar GR00T-2, y se libera para que la comunidad investigadora pueda anotar y escalar sus propios conjuntos de datos robóticos.
 
-Arquitectura Qwen3.5 nativamente multimodal: un encoder visual seguido de un decoder-only de lenguaje, con 27.356.728.560 parámetros totales (aproximadamente 2,7 × 10^10). Deriva de Qwen/Qwen3.5-27B mediante fine-tuning supervisado seguido de optimización con RL (GRPO) y una recompensa de calidad de caption anclada a referencias. El contexto de procesamiento declarado en el perfil de inferencia nativo es de 32.768 tokens de secuencia, con un presupuesto máximo de 64 fotogramas repartidos entre los bloques temporales.
+El modelo recibe fotogramas RGB organizados en bloques temporales etiquetados (BEFORE, TARGET y AFTER) junto con un prompt de anotación, y genera una única instrucción en lenguaje natural que describe la operación local del bloque TARGET. El contexto vecino sirve para desambiguar la acción objetivo, de modo que la salida no incluye operaciones que solo pertenecen al contexto.
 
-Su relevancia actual es doble: por un lado, expone una receta concreta de anotación temporal para datos de robótica, un cuello de botella habitual en el entrenamiento de políticas de manipulación; por otro, su licencia NVIDIA OneWay Noncommercial restringe el uso a investigación y desarrollo no comercial, lo que condiciona por completo su adopción en producción.
+Con 27.356.728.560 parámetros (aproximadamente 2,7 x 10^10), licencia Apache 2.0 y un presupuesto de secuencia de 32.768 tokens, Flora-Captioner se posiciona como una herramienta de investigación para curación, filtrado y monitorización de datos de robótica, no como un modelo de producción ni como controlador de robots.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer visión-lenguaje: encoder visual nativamente multimodal + LLM decoder-only (base Qwen3.5) |
-| Parametros totales | 27.356.728.560 (≈2,7 × 10^10) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens de secuencia (presupuesto del procesador en el perfil de inferencia nativo); presupuesto de 64 fotogramas entre bloques |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | NVIDIA OneWay Noncommercial License (22 de marzo de 2022); modelo base Qwen3.5-27B bajo Apache 2.0 |
+| Arquitectura | Transformer; modelo vision-lenguaje Qwen3.5 (encoder de visión nativamente multimodal con decodificador LLM decoder-only) |
+| Parametros totales | 27.356.728.560 (2,7 x 10^10) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Presupuesto de secuencia de 32.768 tokens en el perfil de inferencia de referencia |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-27B, un VLM con encoder visual nativamente multimodal y decoder de lenguaje. El entrenamiento se realiza en dos etapas. En la primera, un fine-tuning supervisado actualiza todos los pesos del modelo de lenguaje y del merger visual, sin LoRA, manteniendo congelados el patch embedding visual y los bloques del transformer visual. En la segunda, el modelo supervisado se optimiza con aprendizaje por refuerzo mediante Group Relative Policy Optimization (GRPO), usando una recompensa de calidad de caption anclada a referencias y con el encoder visual congelado.
+Flora-Captioner parte de Qwen3.5-27B (revisión `fc05daec18b0a78c049392ed2e771dde82bdf654`), un modelo vision-lenguaje con encoder de visión nativamente multimodal y decodificador LLM decoder-only. El entrenamiento se realiza en dos etapas: primero un ajuste supervisado que actualiza todos los pesos del modelo de lenguaje y del merger visual, sin LoRA, manteniendo congelados el patch embedding visual y los bloques del transformer visual; después, una optimización con aprendizaje por refuerzo mediante Group Relative Policy Optimization (GRPO) con una recompensa de calidad de caption anclada a referencias, con el encoder de visión congelado.
 
-El flujo de inferencia es específico: los fotogramas muestreados se codifican con el encoder visual; los tokens visuales de los bloques etiquetados BEFORE, TARGET y AFTER se combinan con el prompt de anotación y se pasan al decoder, que genera autorregresivamente una instrucción para TARGET. Las operaciones puramente contextuales no forman parte de la salida solicitada. El perfil nativo especifica muestreo adaptativo a duración a 8 Hz nominales, con 8-40 fotogramas para TARGET y 4-12 por bloque de contexto disponible, un máximo de 64 fotogramas totales, preservación de la relación de aspecto y topes de 262.144 píxeles por cámara individual o 524.288 píxeles por mosaico de tres cámaras antes del resize del procesador. El procesador nativo usa `min_pixels=1024`, `max_pixels=589824` y `do_sample_frames=False`.
+En inferencia, los fotogramas muestreados se codifican con el encoder de visión y los tokens visuales de los bloques BEFORE, TARGET y AFTER se combinan con el prompt de anotación antes de pasar al decodificador, que genera autorregresivamente una instrucción para TARGET. El perfil nativo de referencia fija el muestreo adaptativo por duración del TARGET a 8 Hz nominales con 8–40 fotogramas, 4–12 fotogramas por bloque de contexto disponible y un presupuesto total máximo de 64 fotogramas; cada fotograma de una cámara se limita a 262.144 píxeles y cada mosaico de tres cámaras a 524.288 píxeles. El procesador Qwen3.5 entrenado usa `min_pixels=1024` y `max_pixels=589824`, y debe desactivarse el muestreo adicional de fotogramas con `do_sample_frames=False`.
 
 ## Capacidades
 
-- Generación de instrucciones de acción para un intervalo objetivo en vídeos de manipulación robótica o humana, con una sola instrucción por TARGET.
-- Uso de contexto temporal vecino (BEFORE y AFTER) para desambiguar la operación local del intervalo objetivo.
-- Procesamiento de vídeo desde una cámara o desde tres cámaras sincronizadas, con roles de cámara indicados en el prompt.
-- Entrada multimodal: vídeo RGB decodificado con metadatos de temporización de los fotogramas fuente, más prompt de texto y, opcionalmente, una instrucción de tarea del episodio.
-- Planificación de muestreo adaptativa a la duración del intervalo, con preservación del orden cronológico y de la duración completa de cada bloque.
-- Integración con el procesador y la plantilla de chat de Qwen3.5.
-- Tool calling, function calling, agentes multi-step, modo thinking, audio y otras capacidades generales del modelo base: no disponibles en la información proporcionada.
+- Generación de instrucciones de acción en lenguaje natural para un intervalo temporal objetivo dentro de vídeos de manipulación robótica o humana.
+- Comprensión de contexto temporal: usa bloques BEFORE y AFTER para desambiguar la operación local del TARGET.
+- Procesamiento de vídeo multicámara: admite una cámara o tres cámaras sincronizadas, con papeles de cámara definidos en el prompt.
+- Entrada de texto con prompt de anotación que identifica bloques temporales y roles de cámara, más una posible instrucción de tarea del episodio.
+- Capacidad conversacional según los tags del modelo (`conversational`).
+- Integración como componente del motor de datos Flora para balanceo de la distribución de datos de preentrenamiento.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Anotación de conjuntos de datos de robótica: generar etiquetas de acción por intervalo temporal para vídeos de demostración, alimentando el balanceo de la distribución de datos de preentrenamiento tal como hace el motor Flora.
-- Investigación en transferencia humano-robot: anotar demostraciones humanas con instrucciones de acción que después se mapean a trayectorias de robot.
-- Curación y filtrado de datos: usar las captions generadas como señal para monitorizar y filtrar pipelines de datos de modelos fundacionales de robótica.
-- Prototipado de pipelines de anotación: evaluar la calidad de las etiquetas temporales antes de invertir en anotación humana, gracias a la salida acotada a un único TARGET.
-- Auto-investigación física: generar descripciones de operaciones locales sobre vídeos experimentales para su posterior análisis automatizado.
-- Segmentación y stitching temporal: combinado con un segmentador previo que produzca los intervalos TARGET, el modelo completa la parte textual del pipeline de anotación.
-- Vídeos multi-cámara: anotar demostraciones grabadas con tres cámaras sincronizadas indicando los roles de cada una en el prompt.
+- Anotación de conjuntos de datos robóticos: generar instrucciones de acción por intervalo temporal para etiquetar demostraciones de manipulación y alimentar el entrenamiento de modelos fundacionales de robótica.
+- Balanceo de distribución de datos de preentrenamiento: en el motor Flora, los captions producidos por el modelo se usan para equilibrar la distribución de los datos de preentrenamiento, tal como se hizo para GR00T-2.
+- Investigación en transferencia humano-robot: anotar vídeos de demostraciones humanas para estudiar la transferencia de habilidades hacia robots.
+- Curación y filtrado de datos: prototipar pipelines de curación, filtrado y monitorización de datos de robótica evaluando la calidad de las anotaciones generadas.
+- Investigación en physical auto-research: usar las anotaciones como señal lingüística para experimentos de investigación física automatizada.
+- Segmentación temporal asistida: combinar la salida del modelo con la segmentación y stitching temporal del motor Flora para validar y refinar la delimitación de eventos en vídeo.
+- Evaluación comparativa de anotadores: emplear el modelo como referencia en benchmarks de captioning de vídeo de manipulación, como WGO-bench.
 
 ## Benchmarks y rendimiento
-
-La model card referencia el dataset WGO-bench como benchmark, pero no se han publicado resultados numéricos en la información disponible.
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia de orden de magnitud, un modelo de 27,36 × 10^9 parámetros en safetensors ocupa aproximadamente 54,7 GB en precisión de 16 bits solo en pesos; a ello hay que sumar el coste del encoder visual y de la caché de tokens de vídeo (hasta 64 fotogramas y 32.768 tokens de secuencia).
-- GPU recomendadas: no disponibles en la información proporcionada.
-- Viabilidad en GPU de consumo: no disponible; el tamaño del repo (164,2 GB) y el número de parámetros hacen improbable un despliegue cómodo en GPU de consumo sin cuantización, dato que no se especifica.
-- Opciones de despliegue: transformers (librería declarada), con procesador y plantilla de chat de Qwen3.5; el tag `endpoints_compatible` sugiere compatibilidad con endpoints. vLLM, llama.cpp, Ollama o TGI: no disponibles en la información proporcionada.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia de orden de magnitud, un modelo de 27,36 x 10^9 parámetros en precisión de 16 bits requiere aproximadamente 54,7 GB solo para los pesos, antes de activaciones y caché KV; en cuantizaciones de 8 o 4 bits el requisito de pesos se reduce aproximadamente a la mitad y a la cuarta parte respectivamente, pero no se confirman cuantizaciones soportadas para este modelo.
+- GPU recomendadas: no disponible. No se especifican GPU concretas (A100, H100, RTX 4090, etc.) en la información proporcionada.
+- ¿Cabe en GPU de consumo? No disponible. No se confirma compatibilidad con GPU de consumo ni cuantizaciones que lo permitan.
+- Opciones de despliegue: la librería indicada es transformers, con procesador y chat template de Qwen3.5 y `do_sample_frames=False` en el pipeline de vídeo. No se documentan opciones como vLLM, llama.cpp, Ollama o TGI para este modelo.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones completas de alternativas en la información proporcionada. La siguiente tabla recoge únicamente los datos verificables del modelo base y deja el resto como no disponible.
-
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flora-Captioner | 27,36 × 10^9 | 32.768 tokens de secuencia | Caption de acción por intervalo temporal en vídeo | NVIDIA OneWay Noncommercial | Hugging Face (nvidia/Flora-Captioner) |
-| Qwen3.5-27B (base) | no disponible | no disponible | VLM generalista | Apache 2.0 | Hugging Face (Qwen/Qwen3.5-27B) |
-| Alternativas de captioning de vídeo para robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Flora-Captioner (nvidia) | 27,36 x 10^9 | 32.768 tokens de presupuesto de secuencia | Captioning de acciones en vídeo de manipulación | Apache 2.0 | Hugging Face |
+| Qwen3.5-27B (Qwen) | 27 x 10^9 (modelo base) | No disponible | Vision-lenguaje general | Apache 2.0 | Hugging Face |
+| Alternativas especificas de captioning de vídeo robotic | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+No se dispone en la información proporcionada de datos de rendimiento comparativo entre Flora-Captioner y otras alternativas de captioning de vídeo para robótica.
 
 ## Limitaciones y advertencias
 
-- Licencia NVIDIA OneWay Noncommercial: uso limitado a investigación y desarrollo no comercial; no está soportado para uso comercial ni en producción.
-- El modelo está diseñado exclusivamente para anotación: no debe usarse para controlar robots directamente ni como único monitor de seguridad de un sistema físico.
-- Riesgo de alucinación: al generar instrucciones a partir de vídeo, puede producir descripciones plausibles pero no observadas, especialmente con contexto limitado o intervalos cortos.
-- Dependencia del planificador de fotogramas: las fuentes cortas requieren la política de planificación de referencia en lugar de observaciones inventadas; un muestreo incorrecto degrada la calidad de la caption.
-- Restricciones de entrada: presupuesto máximo de 64 fotogramas, topes de píxeles por cámara y por mosaico, y necesidad de metadatos de temporización correctos; no se especifican límites de resolución más allá de los del procesador.
-- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingüe en las instrucciones generadas.
+- Modelo destinado exclusivamente a investigación y desarrollo; NVIDIA declara explícitamente que no está pensado ni soportado para uso en producción.
+- Las salidas son anotaciones: no debe usarse para controlar robots directamente ni como único monitor de seguridad de un sistema físico.
+- Riesgo de alucinación: el modelo debe manejar explícitamente los objetivos limitados por la fuente; los tramos cortos requieren la política de planificación de fotogramas de referencia en lugar de observaciones inventadas.
+- El contexto ausente puede omitirse, pero el llamador debe suministrar el intervalo objetivo semiabierto `[start_s, end_s)` en el reloj del vídeo fuente; BEFORE y AFTER son los intervalos de evento no solapados más cercanos, no un relleno fijo de segundos.
+- La tasa de 8 Hz es la solicitada, no la del vídeo fuente; los límites de duración y la disponibilidad de fotogramas pueden alterar la tasa efectiva de muestreo.
+- Idiomas soportados no disponibles; no se documenta cobertura multilingüe.
 - Sesgos conocidos: no disponibles en la información proporcionada.
-- Al ser un fine-tuning sobre Qwen3.5-27B, hereda las limitaciones del modelo base, cuyos detalles no se recogen en la información disponible.
+- Restricciones de licencia: Apache 2.0, con la obligación de cumplir la legislación aplicable; el modelo base Qwen3.5-27B también está bajo Apache 2.0.
+- El uso de tres cámaras exige sincronización y un mosaico limitado a 524.288 píxeles por fotograma, lo que puede degradar el detalle en escenas de alta resolución.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/Flora-Captioner
-- Licencia NVIDIA OneWay Noncommercial: https://huggingface.co/nvidia/Flora-Captioner/blob/main/LICENSE.pdf
-- Licencia alternativa en PDF: https://developer.download.nvidia.com/licenses/NVIDIA-OneWay-Noncommercial-License-22Mar2022.pdf
 - Modelo base Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B
-- Licencia del modelo base (Apache 2.0): https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/LICENSE
-- NVIDIA Isaac GR00T: https://developer.nvidia.com/isaac/gr00t
-- GR00T N1 White Paper: https://arxiv.org/abs/2503.14734
+- Web de NVIDIA Isaac GR00T: https://developer.nvidia.com/isaac/gr00t
+- White paper de GR00T N1: https://arxiv.org/abs/2503.14734
 - Benchmark WGO-bench: https://huggingface.co/datasets/macrodata/WGO-Bench

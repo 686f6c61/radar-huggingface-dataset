@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Hermes Agent + Qwen 3.8: Setup & Why It Works (2026) | AI Profit ...",
-      "url": "http://go/v1/AayHsHR_XlMCawQ_2AHFwXQW4BjNwWKyyTnkxwI3g2WurRWG3nvYy9eOHqcIUPZSldgkFCZ_dofVxCysBiU_TVtpP9hoWoSJ5GR6ePQMR-ILBYUQvkq1s7zikLy6q1g3-eI72OXFxO8qFubHVzGUZFkzKIjJaGz10sE_sHiJ3I7jqSVTS1D-pLIrwyveh3d2VhSl7eGPNDI_w0955q3OWhw7DfSOEDwBzBJ9Bw",
-      "snippet": "Hermes agent Qwen 3.8 — pair Hermes with Alibaba's latest open Qwen model for a capable, cheap, locally-runnable AI agent. Why the combo works, how to connect it, and the free/local options."
-    }
-  ]
+  "sources": []
 }

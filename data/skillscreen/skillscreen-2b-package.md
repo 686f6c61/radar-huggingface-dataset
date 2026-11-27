@@ -2,100 +2,102 @@
 
 ## Resumen
 
-SkillScreen-2B-Package es un modelo de clasificación de texto especializado en la detección de "skills" maliciosas para agentes de IA. Lo desarrolla el equipo SkillScreen (Jerrold Huang, Junwei Quan, Saiyue Lyu, Zihan Guo y Yingqiang Ge) y se distribuye como un paquete de despliegue completo que incluye pesos fusionados, el adaptador LoRA original y los puntos de operación congelados. El modelo parte de OpenJev 2B (una variante de Qwen 3.5 de 2B) y se afina con un cabezal de clasificación NLI para emitir, en un único forward pass, una puntuación de malignidad y una decisión de revisión.
+SkillScreen-2B-Package es un modelo de clasificación de texto especializado en la detección de habilidades (skills) maliciosas para agentes de IA. Lo desarrolla SkillScreen (Jerrold Huang, Junwei Quan, Saiyue Lyu, Zihan Guo y Yingqiang Ge) y se presenta como un modelo de decisión que analiza paquetes de skills compuestos por un fichero `SKILL.md` y textos de soporte (código, configuración, documentación) para devolver, en un único forward pass, una puntuación de malicia y una decisión de revisión.
 
-El problema que resuelve es concreto: los agentes de IA basados en ficheros `SKILL.md` y otros artefactos de texto pueden incorporar instrucciones maliciosas (exfiltración de datos, ejecución de comandos, prompt injection). SkillScreen analiza esos paquetes de texto sin ejecutarlos y decide si son maliciosos, con un enfoque de alto recall pensado para triaje previo. La relevancia actual está en la proliferación de ecosistemas de agentes que consumen skills de terceros y necesitan una capa de seguridad automatizada antes de habilitarlas.
+El modelo parte de OpenJev 2B (AlexWortega/openjev, una variante NLI de Qwen 3.5 de 2B) y se afina mediante LoRA de rango 8 con una cabeza de clasificación NLI entrenable. Cuenta con 2.213.247.808 parámetros totales, un contexto de 32.768 tokens y se distribuye con licencia Apache-2.0. La relevancia actual reside en la seguridad de agentes: a medida que los agentes ejecutan skills de terceros, disponer de un cribado local, rápido y de alto recall antes de ejecutar código resulta crítico.
 
-El modelo tiene 2.213.247.808 parámetros, una ventana de contexto de 32.768 tokens y se publica bajo licencia Apache-2.0. El repo ocupa 4,5 GB e incluye el runtime de inferencia, los umbrales de decisión y las predicciones out-of-fold para auditoría.
+El modelo se publica como release de despliegue v0.1.0 e incluye pesos fusionados completos, el adaptador LoRA original y los puntos de operación congelados, junto con el runtime de inferencia. Está orientado a integrarse en pipelines de revisión de paquetes de skills, no como un modelo generativo de propósito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (base Qwen 3.5 2B) con cabezal de clasificación NLI |
+| Arquitectura | Transformer decoder-only (base Qwen 3.5 2B vía OpenJev) con cabeza de clasificación NLI |
 | Parametros totales | 2.213.247.808 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el paquete verifica BF16) |
+| Longitud de contexto | 32.768 tokens (32K) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (pesos, código y configuración); CC BY 4.0 (documentación y predicciones) |
-| Formato de pesos | safetensors (pesos fusionados) + adaptador LoRA incluido |
+| Licencia | Apache-2.0 (pesos, código y configuración); documentación y predicciones CC BY 4.0 |
+| Formato de pesos | safetensors (transformers); incluye adaptador LoRA en `adapter/` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se inicializa desde OpenJev 2B (rama `qwen3.5-2b-nli-v5`) y se afina durante una época con semilla 42, LoRA de rango 8 y un cabezal de clasificación NLI entrenable. La tarea se formula como inferencia de lenguaje natural: la hipótesis fija es "This AI agent skill is malicious." y la puntuación es la salida softmax de entailment, no una probabilidad calibrada de forma independiente. El texto del paquete se ordena como `SKILL.md`, código, configuración, documentación y texto masivo, y los ficheros se leen como texto sin ejecutarse nunca.
+El modelo se inicializa desde OpenJev 2B (checkpoint `qwen3.5-2b-nli-v5` de AlexWortega/openjev), un transformer decoder-only de 2B parámetros orientado a inferencia de lenguaje natural. Sobre esa base se añade una cabeza de clasificación NLI entrenable y se aplica un ajuste fino con LoRA de rango 8 durante una época con semilla 42. La hipótesis fija del NLI es "This AI agent skill is malicious." y la puntuación de salida es el softmax de entailment, no una probabilidad calibrada de forma independiente.
 
-El entrenamiento usa los 11.831 registros elegibles de SkillScreen-Data en una revisión fijada, con etiquetas heredadas de benchmarks upstream. La evaluación publicada es out-of-fold (tres folds) sobre 11.831 skills (6.436 maliciosas y 5.395 benignas), con los umbrales seleccionados sobre las predicciones agrupadas y transferidos al modelo final reentrenado con todos los datos. El autor advierte explícitamente que esos resultados describen el procedimiento OOF, no un test independiente del refit final.
+El entrenamiento utiliza los 11.831 registros elegibles del dataset SkillScreen-Data en la revisión fijada (`d59aabbd...`), con etiquetas heredadas de benchmarks upstream. El texto del paquete se ordena por prioridad: `SKILL.md`, código, configuración, documentación y texto masivo. Los inputs que superan los 32.768 tokens se truncan conservando la hipótesis. La evaluación reportada es out-of-fold (tres folds), con cada puntuación OOF generada por un modelo de fold entrenado sin el grupo de contenido de esa skill; los umbrales se seleccionan sobre predicciones agrupadas y se transfieren al modelo final reentrenado con todos los registros.
 
 ## Capacidades
 
-- Clasificación binaria de malignidad de paquetes de skills de agentes (ficheros `SKILL.md` y texto de soporte).
-- Emisión conjunta en un forward pass de una puntuación de malignidad y una decisión de revisión.
-- Puntos de operación congelados: umbral nativo 0.5 y umbral de 99% de recall OOF (~0.287766).
-- Lectura de paquetes completos con ordenación determinista de ficheros y reporte de ficheros retenidos, parciales y omitidos.
-- Truncado controlado de entradas por encima de 32.768 tokens preservando la hipótesis.
-- Modo `--inspect` para listar ficheros de entrada sin cargar el modelo.
-- No ejecuta el código analizado; el escaneo es puramente textual.
-- No dispone de tool calling, agentes multi-paso, visión ni audio: es un clasificador, no un modelo generativo de propósito general.
+- Clasificación binaria de malicia de paquetes de skills de agentes (score de entailment + decisión de revisión) en un solo forward pass.
+- Procesamiento de paquetes compuestos por `SKILL.md`, código, configuración, documentación y texto masivo, con informe de ficheros retenidos, parciales y omitidos.
+- Puntos de operación congelados: umbral por defecto de ~0.288 (99% de recall OOF) y umbral nativo 0.5.
+- Lectura de ficheros como texto sin ejecución (el escáner nunca ejecuta el código analizado).
+- Ejecución local con GPU CUDA y BF16; modo `--inspect` para listar ficheros sin cargar el modelo.
+- Salida estructurada en JSON (`score.json`) apta para integración en pipelines.
+- No es un modelo generativo: no soporta tool calling, agentes multi-step ni generación de texto libre.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Triaje de skills de terceros en un marketplace o registro de agentes: antes de publicar o habilitar una skill, el escáner procesa el paquete y devuelve una puntuación; el umbral de 99% de recall OOF permite derivar a revisión humana solo los casos dudosos, reduciendo carga manual.
-- Puerta de seguridad en CI/CD de repositorios de skills: integrar `scan.py` como paso previo al despliegue para bloquear paquetes que superen el umbral de malignidad, con el reporte JSON como artefacto de auditoría.
-- Monitorización de skills ya instaladas en un agente en producción: escaneo periódico de los paquetes presentes en disco para detectar modificaciones sospechosas en `SKILL.md` o en ficheros de configuración.
-- Investigación en seguridad de agentes: el paquete incluye predicciones OOF por skill (`evaluation-oof.csv`) y métricas completas, útiles para reproducir y comparar metodologías de detección.
-- Filtrado previo en pipelines de curación de datasets de skills: descartar automáticamente ejemplos maliciosos antes de usarlos en entrenamiento o evaluación de agentes.
-- Despliegue local en entornos con requisitos de privacidad: el escaneo corre íntegramente en local sobre una GPU CUDA con BF16, sin enviar el contenido de las skills a servicios externos.
+- Cribado previo a la instalación de skills de terceros: el modelo analiza el paquete completo antes de que un agente lo ejecute y devuelve una decisión con umbral configurable, reduciendo el riesgo de ejecutar código malicioso.
+- Integración en CI/CD de un marketplace de skills: cada nuevo paquete enviado se escanea con `scan.py` y se bloquea o marca para revisión humana según el score, aprovechando el recall del 99% OOF.
+- Revisión de seguridad en pipelines de agentes en producción: el escáner se ejecuta localmente antes de cargar una skill en un entorno de agente, con salida JSON para auditoría.
+- Triage automatizado para equipos de seguridad: el modelo prioriza paquetes sospechosos y genera un informe de ficheros retenidos/omitidos para que el analista humano se centre en los casos de mayor riesgo.
+- Auditoría de repositorios existentes: ejecución por lotes sobre un inventario de skills ya desplegadas (ejemplo `examples/local-inventory`) para detectar paquetes que superen el umbral.
+- Filtrado en plataformas de compartición de skills: clasificación automática de contenido subido antes de publicarlo, con umbral ajustable según la tolerancia a falsos positivos del operador.
+- Investigación en seguridad de agentes: uso del modelo y del dataset SkillScreen-Data como referencia reproducible para comparar métodos de detección de skills maliciosas.
 
 ## Benchmarks y rendimiento
 
-Resultados out-of-fold publicados por el autor (tres folds, 11.831 skills):
+Evaluación out-of-fold sobre 11.831 skills (6.436 maliciosas, 5.395 benignas), tres folds:
 
 | Punto de operación | Umbral | Recall | FPR benigno | Precision | F1 |
 |---|---:|---:|---:|---:|---:|
 | Nativo 0.5 | 0.500000 | 98,93% | 0,33% | 99,72% | 99,32% |
 | 99% recall OOF | 0,287766 | 99,01% | 0,35% | 99,70% | 99,35% |
 
-Métricas agregadas: AUPRC (average precision) 0,9990 y AUROC 0,9985.
+Métricas agregadas: AUPRC (average precision) 0,9990; AUROC 0,9985.
 
-Advertencia del autor: las puntuaciones OOF provienen de modelos de fold entrenados sin el grupo de contenido de cada skill; los umbrales se seleccionaron sobre esas predicciones agrupadas y se transfirieron al modelo final. No constituyen un test independiente del refit y el recall y el FPR pueden variar en colecciones nuevas.
+Advertencia del autor: estas cifras describen el procedimiento OOF, no un test independiente del modelo final reentrenado; recall y FPR pueden variar en colecciones nuevas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; con 2,21B parámetros en BF16 el peso ronda los 4,4 GB, por lo que se necesita margen adicional para activaciones y contexto largo.
-- GPU de referencia del autor: A100 80GB, donde se verifican el runtime incluido y el límite de contexto completo.
-- Requisitos de software: Linux, Python 3.12 y GPU CUDA con soporte BF16.
-- ¿Cabe en GPU de consumo? No confirmado por el autor; por tamaño de pesos sería viable en GPUs con suficiente VRAM, pero no hay validación publicada.
-- Opciones de despliegue: runtime propio del paquete (`scan.py`) sobre `transformers`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Entorno verificado por el autor: Linux, Python 3.12 y GPU CUDA con soporte BF16; el runtime completo y el contexto máximo de 32K se validan en A100 80GB.
+- VRAM estimada: no disponible de forma explícita; con 2,21B parámetros en BF16 los pesos ocupan aproximadamente 4,4 GB, más overhead de activaciones y KV cache para 32K tokens.
+- GPU recomendadas: A100 80GB (referencia del autor); GPUs consumer con BF16 (p. ej. RTX 4090) podrían alojar los pesos, pero el contexto completo de 32K no está verificado por el autor en consumer.
+- Despliegue: runtime propio del paquete (`scan.py`) con `transformers` y `huggingface_hub==1.33.0`; no se documentan integraciones con vLLM, TGI, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. La comparación cualitativa con alternativas de la misma categoría (clasificadores de seguridad para agentes) no está disponible.
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| SkillScreen-2B-Package | 2,21B | 32K | Clasificación de skills maliciosas (NLI) | Apache-2.0 | Hugging Face + GitHub |
+| SkillScreen-2B-Markdown | no disponible | no disponible | Variante sobre Markdown | no disponible | Hugging Face |
+| AlexWortega/openjev (base) | ~2B | no disponible | NLI / modelo base | no disponible | Hugging Face |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| SkillScreen-2B-Package | 2,21B | 32.768 | Apache-2.0 | Hugging Face |
-| Alternativas de la categoría | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks de terceros ni de alternativas directamente comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los resultados publicados son out-of-fold y no un test independiente del modelo final; el rendimiento en colecciones nuevas puede diferir.
-- Una puntuación por debajo del umbral significa "sin alerta del modelo", no una certificación de seguridad.
-- La puntuación es la salida softmax de entailment, no una probabilidad calibrada; los umbrales deben usarse tal como se publican.
-- Entradas superiores a 32.768 tokens se truncan, con posible pérdida de señales maliciosas en paquetes muy grandes.
-- El modelo solo analiza texto; no detecta comportamiento malicioso que surja en tiempo de ejecución del código.
-- Idiomas soportados no declarados: el rendimiento en skills no inglesas no está documentado.
-- Sesgos conocidos: no documentados en la información disponible.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de falsos negativos y falsos positivos en la clasificación.
-- Licencia Apache-2.0 para pesos, código y configuración; documentación y predicciones bajo CC BY 4.0; se aplican los términos del modelo y dataset upstream (OpenJev y SkillScreen-Data).
-- El paquete está pensado para Linux con Python 3.12 y GPU CUDA BF16; no se documenta soporte CPU.
+- Los resultados reportados son OOF y no un test independiente del modelo final; el rendimiento puede degradarse en colecciones nuevas de skills.
+- Un score por debajo del umbral significa "sin alerta del modelo", no una certificación de seguridad.
+- La puntuación es el softmax de entailment, no una probabilidad calibrada; los umbrales deben respetarse tal como se publican.
+- Los inputs de más de 32.768 tokens se truncan conservando la hipótesis, por lo que parte del contenido puede no evaluarse; el informe identifica ficheros omitidos.
+- El modelo solo lee ficheros como texto y no ejecuta código: no detecta comportamiento malicioso que solo se manifieste en tiempo de ejecución.
+- Etiquetas heredadas de benchmarks upstream: posibles sesgos y errores de etiquetado del dataset original se propagan al modelo.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de clasificación errónea (falsos positivos/negativos) fuera de la distribución de entrenamiento.
+- Idiomas soportados no documentados; el rendimiento en skills no inglesas no está verificado.
+- Licencia Apache-2.0 para pesos, código y configuración; documentación y predicciones CC BY 4.0; aplican términos de terceros (modelo base y dataset upstream).
+- Se recomienda citar el paper y la release de despliegue al reportar resultados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SkillScreen/SkillScreen-2B-Package
-- Modelo Markdown: https://huggingface.co/SkillScreen/SkillScreen-2B-Markdown
+- Variante Markdown: https://huggingface.co/SkillScreen/SkillScreen-2B-Markdown
 - Dataset: https://huggingface.co/datasets/SkillScreen/SkillScreen-Data
 - Código: https://github.com/JerroldH/SkillScreen
+- Release v0.1.0: https://github.com/JerroldH/SkillScreen/releases/tag/v0.1.0
 - Paper: https://arxiv.org/abs/2610.17727
-- Modelo base (OpenJev 2B): https://huggingface.co/AlexWortega/openjev/tree/a20448012c213128955ca0c693e7c943865cab77/qwen3.5-2b-nli-v5
+- Modelo base OpenJev: https://huggingface.co/AlexWortega/openjev

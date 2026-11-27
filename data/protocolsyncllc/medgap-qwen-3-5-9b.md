@@ -2,51 +2,50 @@
 
 ## Resumen
 
-MedGap Qwen 3.5 9B es un ajuste fino (fine-tune) del modelo base Qwen 3.5 9B, desarrollado por protocolsyncllc. El modelo está especializado en el dominio regulatorio de dispositivos médicos, concretamente en el análisis y generación de contenido relacionado con las cartas de advertencia (warning letters) que la FDA estadounidense emite a fabricantes de dispositivos médicos. El problema que aborda es la necesidad de herramientas especializadas que comprendan la terminología regulatoria y los patrones de incumplimiento recogidos en estos documentos.
+MedGap Qwen 3.5 9B es un ajuste fino (fine-tuning) del modelo Qwen 3.5 9B de Alibaba, publicado por el usuario protocolsyncllc bajo licencia Apache 2.0. El modelo está especializado en el dominio de dispositivos médicos y, más concretamente, en el corpus de cartas de advertencia (warning letters) que la FDA estadounidense emite a fabricantes que incumplen la normativa. El objetivo declarado es adaptar un modelo generalista de 9.653 millones de parámetros a un vocabulario y a unos patrones de razonamiento regulatorios muy específicos.
 
-El modelo se entrena mediante LoRA sobre el checkpoint base de Qwen 3.5 9B (unsloth/Qwen3.5-9B-Base), con un total de 9.653.104.368 parámetros. El entrenamiento se realizó durante 3 épocas con una tasa de aprendizaje de 2e-4 sobre un dataset propio de cartas de advertencia de la FDA (medical-devices.jsonl), empleando 2 GPUs RTX 3090 con 48 GB de VRAM en total y la librería Unsloth. La licencia es Apache 2.0 y el modelo está orientado exclusivamente al idioma inglés.
+El ajuste se ha realizado con la librería Unsloth mediante LoRA, una sola época de entrenamiento, un learning rate de 2e-4 y un único dataset en formato JSONL (`medical-devices.jsonl`). El autor indica que el entrenamiento se llevó a cabo en una sola GPU NVIDIA GeForce RTX 3060, lo que sitúa el proceso en el rango de consumo doméstico. El repositorio incluye pesos en safetensors y una cuantización GGUF Q8_0 lista para inferencia local.
 
-Su relevancia radica en la escasez de modelos de código abierto especializados en cumplimiento regulatorio sanitario. Un modelo afinado sobre documentos reales de la FDA puede asistir en la revisión de hallazgos, la redacción de respuestas regulatorias o la identificación de patrones de incumplimiento recurrentes, tareas tradicionalmente reservadas a expertos humanos con formación específica.
+La relevancia del modelo es acotada pero clara: cubre un nicho (cumplimiento regulatorio FDA de dispositivos médicos) para el que los modelos generalistas no están alineados. No obstante, la información pública es escasa (una sola época, un dataset no descrito en detalle y sin benchmarks publicados), por lo que debe evaluarse como un experimento de dominio más que como un modelo de producción validado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen 3.5 9B; detalles internos no disponibles) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen 3.5 9B; detalles de atención y capas no disponibles) |
 | Parametros totales | 9.653.104.368 |
-| Parametros activos | no disponible (no se documenta como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q8 disponible; otras cuantizaciones no documentadas |
-| Idiomas soportados | inglés (en) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF Q8_0 publicado; safetensors en precisión original (no se detallan otros formatos) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura del checkpoint base Qwen 3.5 9B, un transformer decoder-only de aproximadamente 9.650 millones de parámetros. El ajuste se realizó mediante LoRA (Low-Rank Adaptation), una técnica de fine-tuning eficiente en parámetros que congela los pesos originales e inyecta matrices de bajo rango entrenables. Según la model card, el entrenamiento se ejecutó durante 3 épocas con una tasa de aprendizaje de 2e-4, sobre un dataset propio de cartas de advertencia de la FDA relativas a dispositivos médicos (archivo medical-devices.jsonl). La infraestructura empleada fueron 2 GPUs RTX 3090 con 48 GB de VRAM combinada y la librería Unsloth, optimizada para fine-tuning de bajo consumo de memoria.
+El modelo parte de `unsloth/Qwen3.5-9B`, un transformer decoder-only denso de aproximadamente 9.650 millones de parámetros. Sobre esa base se aplicó un ajuste fino supervisado con LoRA usando Unsloth, una librería que optimiza el entrenamiento de modelos grandes en GPUs de consumo mediante kernels fusionados y gestión eficiente de memoria. Los hiperparámetros declarados son: 1 época, learning rate 2e-4 y dataset `medical-devices.jsonl`, derivado del dataset `protocolsyncllc/fda-warning-letters`.
 
-No se documentan en la información disponible el número total de tokens de entrenamiento, la composición detallada del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas adicionales como decodificación especulativa o atención lineal. Tampoco se especifica si el contexto del modelo base se ha extendido o modificado durante el ajuste.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, el rango de LoRA, si hubo RLHF/DPO posterior ni innovaciones técnicas adicionales más allá del propio pipeline de Unsloth. Tampoco se documenta la longitud de contexto efectiva tras el ajuste, por lo que se asume la del modelo base, sin confirmación pública.
 
 ## Capacidades
 
-- Generación de texto especializada en el dominio regulatorio de dispositivos médicos.
-- Comprensión y generación de contenido relacionado con cartas de advertencia de la FDA.
-- Asistencia en la identificación de patrones de incumplimiento regulatorio.
-- Generación conversacional (pipeline text-generation, tag conversational).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
+- Generación de texto en inglés orientada a contenido regulatorio de dispositivos médicos.
+- Respuestas conversacionales de un solo turno o multi-turno (pipeline `text-generation` y `conversational`).
+- Reproducción de vocabulario y estructuras propias de las cartas de advertencia de la FDA (terminología de cumplimiento, referencias a secciones normativas, formato de hallazgos).
+- Capacidad de razonamiento general heredada del modelo base Qwen 3.5 9B (no validada específicamente en esta ficha).
+- Soporte de tool calling / function calling: no documentado para este ajuste.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales (modo thinking, visión, audio): no documentadas.
 
 ## Casos de uso
 
-- Revisión de hallazgos regulatorios: el modelo puede analizar borradores de informes de auditoría y señalar formulaciones que se asemejen a las observaciones recogidas en cartas de advertencia previas de la FDA, sirviendo de apoyo a equipos de calidad y asuntos regulatorios.
-- Redacción de respuestas a la FDA: dado su ajuste sobre el corpus de warning letters, puede asistir en la generación de borradores de respuestas formales a observaciones de la agencia, manteniendo el registro y la terminología habituales del sector.
-- Formación interna de equipos de cumplimiento: puede emplearse para generar casos de estudio sintéticos basados en patrones reales de incumplimiento, útiles en programas de formación sobre calidad regulatoria.
-- Análisis de tendencias de incumplimiento: el modelo puede resumir y clasificar temáticas recurrentes (etiquetado, control de diseño, CAPA, etc.) a partir de textos regulatorios introducidos por el usuario.
-- Asistencia en auditorías internas: integrado en herramientas internas, puede ayudar a redactar listas de verificación o a contrastar procedimientos internos con el lenguaje típico de las observaciones de la FDA.
-- Generación de documentación técnica de dispositivos médicos: puede apoyar la redacción de secciones de expedientes técnicos, siempre con revisión humana, aprovechando su familiaridad con la terminología regulatoria del sector.
-- Enriquecimiento de bases de conocimiento internas: puede utilizarse para etiquetar, resumir o normalizar grandes volúmenes de documentos regulatorios en pipelines de procesamiento de texto.
+- Redacción asistida de respuestas a cartas de advertencia de la FDA: el modelo puede generar borradores de contestación con la terminología y estructura habituales en el sector de dispositivos médicos, reduciendo el tiempo de revisión legal inicial.
+- Análisis de correspondencia regulatoria: clasificación y resumen de hallazgos (observaciones 483, warning letters) para priorizar acciones correctivas en un sistema de calidad.
+- Formación interna de equipos de asuntos regulatorios: generación de casos sintéticos y preguntas de evaluación basadas en el estilo real de las cartas de la FDA.
+- Extracción de patrones de incumplimiento: identificación de las categorías de no conformidad más frecuentes (etiquetado, CAPA, diseño, esterilización) para alimentar paneles de indicadores.
+- Soporte a auditorías internas: generación de checklists y guiones de auditoría inspirados en las observaciones históricas de la FDA.
+- Prototipado rápido de asistentes de cumplimiento: al estar disponible en GGUF Q8_0, puede desplegarse en una estación de trabajo con GPU de consumo para pruebas internas antes de escalar a producción.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +53,37 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 19-20 GB para los 9.653 millones de parámetros, más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización Q8 GGUF: aproximadamente 10-11 GB, según el archivo medgap-qwen-3.5-9b_q8.gguf publicado.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para FP16; RTX 3090/4090 o GPUs con 12 GB o más para Q8 GGUF.
-- Cabe en GPU de consumo: sí, en RTX 3090, RTX 4090 y, en cuantizaciones más agresivas no publicadas, potencialmente en GPUs de 8-12 GB.
-- Opciones de despliegue: llama.cpp u Ollama para el GGUF Q8; vLLM o TGI para los pesos safetensors en FP16/BF16; la librería Unsloth está orientada principalmente a entrenamiento, no a serving.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: en FP16/BF16, aproximadamente 19-20 GB solo para pesos, más overhead de contexto (típicamente 22-24 GB en total). En GGUF Q8_0, alrededor de 10-11 GB para pesos, con overhead adicional según longitud de contexto.
+- GPU recomendadas: para FP16, A100 40 GB, H100 80 GB o RTX 4090 24 GB (ajustada). Para Q8_0, RTX 3090/4090 24 GB o RTX 4080 16 GB con contexto moderado.
+- Cabe en GPU de consumo: sí, en Q8_0 en GPUs de 12-16 GB con contexto limitado; en FP16 requiere 24 GB o más.
+- Opciones de despliegue: llama.cpp y Ollama para el GGUF Q8_0; vLLM, TGI o transformers con Unsloth para los pesos safetensors.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| MedGap Qwen 3.5 9B | 9,65 B | no disponible | Cartas de advertencia FDA (dispositivos médicos) | Apache 2.0 | Hugging Face |
-| Qwen 3.5 9B Base | ~9,65 B | no disponible | Propósito general | Apache 2.0 (según modelo base) | Hugging Face |
-| Modelos médicos generalistas de ~7-9 B | 7-9 B | variable | Medicina general | variable | Hugging Face |
+| MedGap Qwen 3.5 9B | 9,65 B | No disponible | Apache 2.0 | Cartas FDA / dispositivos médicos | Hugging Face (safetensors + GGUF Q8_0) |
+| Qwen 3.5 9B (base) | ~9,65 B | No disponible | Apache 2.0 | Generalista | Hugging Face |
+| Modelos médicos generalistas de ~7-9 B | ~7-9 B | Variable | Variable | Clínica general | Hugging Face |
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación con el modelo base es la más directa: MedGap hereda la arquitectura y capacidades generales de Qwen 3.5 9B Base, pero sustituye parte de su alineación generalista por una especialización estrecha en documentación regulatoria de la FDA, lo que puede degradar su rendimiento en tareas generales fuera de dominio.
+No se dispone de datos de rendimiento comparativos publicados para este ajuste, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Dominio muy estrecho: el ajuste se centra exclusivamente en cartas de advertencia de la FDA sobre dispositivos médicos; su rendimiento fuera de ese ámbito puede ser inferior al del modelo base.
-- Idioma: solo se declara soporte de inglés; el uso en castellano no está validado y probablemente degrade la calidad.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar referencias regulatorias, números de carta o requisitos legales; toda salida debe ser verificada por un experto en asuntos regulatorios.
-- No es asesoramiento legal ni regulatorio: el modelo no sustituye la revisión de profesionales cualificados ni la consulta de la normativa vigente.
-- Sesgos: al entrenarse sobre un corpus específico de la FDA, puede reproducir sesgos y estilos propios de la agencia y de los fabricantes sancionados, sin representar la diversidad del sector.
-- Datos de entrenamiento no documentados en detalle: se desconoce el volumen, la fecha de corte y la composición exacta del dataset, lo que dificulta evaluar su cobertura y vigencia.
-- Contexto: no se especifica la longitud de contexto soportada; conviene validarla empíricamente antes de desplegarlo con documentos largos.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad sobre la exactitud de las salidas en contextos regulados.
-- Repositorio de gran tamaño (172,2 GB), lo que implica costes de almacenamiento y descarga considerables.
+- Entrenado con una sola época y un dataset no descrito en detalle: riesgo elevado de sobreajuste al estilo del corpus y de degradación de capacidades generales del modelo base.
+- Especialización muy estrecha (cartas FDA de dispositivos médicos): no debe usarse como asesor regulatorio ni como sustituto de revisión legal humana.
+- Riesgo de alucinación en referencias normativas (números de sección, plazos, citas de la FDA): cualquier salida debe verificarse contra fuentes oficiales.
+- Idioma limitado al inglés; no se ha validado su comportamiento en castellano.
+- No hay benchmarks ni evaluación independiente publicados, lo que impide cuantificar su calidad frente al modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad de validación recae en el usuario.
+- El repositorio ocupa 248,4 GB, lo que incluye múltiples artefactos; conviene descargar solo los ficheros necesarios.
+- Solo 1 like y 4.060 descargas en el momento de la consulta: escasa validación por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b
-- Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B-Base
-- GGUF Q8: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b/blob/main/medgap-qwen-3.5-9b_q8.gguf
+- GGUF Q8_0: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b/blob/main/medgap-qwen-3.5-9b_q8_0.gguf
+- Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Dataset: https://huggingface.co/datasets/protocolsyncllc/fda-warning-letters
-- Librería Unsloth: https://github.com/unslothai/unsloth
+- Unsloth: https://github.com/unslothai/unsloth

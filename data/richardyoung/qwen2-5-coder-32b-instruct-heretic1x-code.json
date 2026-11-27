@@ -54,11 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "The Comprehensive R Archive Network",
-      "url": "https://cloud.r-project.org/",
-      "snippet": "Oct 29, 2026 · CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and …"
-    }
-  ]
+  "sources": []
 }

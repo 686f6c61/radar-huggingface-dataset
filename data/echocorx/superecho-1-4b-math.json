@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "echocorx/superecho-1-4b-math",
+  "slug": "echocorx-superecho-1-4b-math",
+  "author": "echocorx",
+  "url": "https://huggingface.co/echocorx/superecho-1-4b-math",
+  "created_at": "2026-11-26T22:44:15.000Z",
+  "updated_at": "2026-11-26T22:44:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arithmetic",
+    "lora",
+    "qwen3",
+    "math",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132271491,
+  "storage_human": "132 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

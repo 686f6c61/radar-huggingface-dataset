@@ -2,80 +2,91 @@
 
 ## Resumen
 
-BlueBerry-3 es un modelo de lenguaje de gran escala con arquitectura Mixture of Experts (MoE), desarrollado originalmente por artindnr y cuantizado al formato GGUF por el creador mradermacher. Este repositorio contiene las versiones cuantizadas para inferencia local, lo que permite ejecutar un modelo de 116.8 mil millones de parámetros en hardware de servidor sin necesidad de acceso a APIs externas. El modelo soporta seis idiomas: persa (fa), inglés (en), árabe (ar), francés (fr), alemán (de) y español (es), y está publicado bajo licencia Apache 2.0.
+BlueBerry-3 es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por el usuario artindnr y distribuido en formato GGUF por mradermacher. Con 116.829.156.672 parametros totales (aproximadamente 116,8 mil millones) y entrenado presumiblemente en mxfp4, se posiciona como un modelo de gran escala orientado a generacion de texto conversacional y multilingue. La version aqui descrita es una cuantizacion estatica del modelo base original, pensada para su despliegue en entornos con llama.cpp y herramientas compatibles con GGUF.
 
-La relevancia de esta cuantización radica en la disponibilidad de un modelo MoE de gran tamaño en un formato compatible con herramientas como llama.cpp, Ollama o LM Studio. Al tratarse de una arquitectura MoE, el modelo puede activar solo una parte de sus parámetros en cada paso de inferencia, lo que reduce el coste computacional efectivo. Sin embargo, la información disponible no incluye detalles sobre el número de parámetros activos, la longitud de contexto ni los datos de entrenamiento, por lo que las especificaciones completas del modelo base no están documentadas.
+El modelo declara soporte para seis idiomas (persa, ingles, arabe, frances, aleman y espanol) y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integracion en productos. Su naturaleza MoE implica que, aunque el total de parametros es elevado, solo una fraccion se activa por token, lo que reduce el coste computacional en inferencia respecto a un modelo denso del mismo tamano.
 
-## Especificaciones técnicas
+La relevancia actual de esta ficha radica en que permite a desarrolladores e investigadores evaluar rapidamente un modelo de gran porte con licencia permisiva y cuantizaciones disponibles en multiples niveles de calidad, desde Q2_K hasta Q8_0, adaptandose a distintos presupuestos de hardware. No obstante, la informacion publica sobre arquitectura detallada, datos de entrenamiento y benchmarks es muy limitada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) |
-| Parametros totales | 116.829.156.672 (116.8B) |
+| Arquitectura | Mixture-of-experts (MoE), transformer; detalles de capas no disponibles |
+| Parametros totales | 116.829.156.672 (aprox. 116,8 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | Persa (fa), inglés (en), árabe (ar), francés (fr), alemán (de), español (es) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas; no hay imatrix/weighted disponibles) |
+| Idiomas soportados | fa, en, ar, fr, de, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors/PyTorch |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es Mixture of Experts, según indican los metadatos del repositorio. No se ha publicado el número de expertos ni la cantidad de parámetros activos por token, por lo que la eficiencia computacional concreta no puede calcularse con los datos disponibles. La información sobre el proceso de entrenamiento es inexistente: se desconocen el número de tokens, la composición del dataset y si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible confirma que BlueBerry-3 es un modelo de mezcla de expertos (MoE) con 116,8 mil millones de parametros totales. El tag `mxfp4` sugiere que el modelo base emplea cuantizacion de precision reducida en formato MXFP4, probablemente para reducir el peso de almacenamiento y facilitar el entrenamiento o la distribucion. No se dispone de datos sobre el numero de expertos, el numero de parametros activos por token, la dimension oculta, el numero de capas ni el mecanismo de enrutamiento.
 
-El repositorio contiene cuantizaciones estáticas GGUF generadas a partir del modelo base. No se incluyen cuantizaciones con pesos ponderados (weighted/imatrix), como se indica en la model card del creador. El formato GGUF está optimizado para inferencia en CPU y GPU mediante llama.cpp, y los archivos individuales tienen tamaños que van desde 66.2 GB (Q3_K_S) hasta 94.0 GB (Q5_K_M).
+Tampoco se han publicado detalles sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones por idioma), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. La model card del repositorio GGUF es meramente una ficha de cuantizacion generada por mradermacher y no incluye informacion tecnica del modelo original. Se desconoce igualmente si incorpora innovaciones como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto y diálogo conversacional, según los metadatos del modelo.
-- Soporte multilingüe para seis idiomas: persa, inglés, árabe, francés, alemán y español.
-- Inferencia eficiente al ser un modelo MoE con pesos cuantizados en formato GGUF.
-- Compatibilidad con herramientas de inferencia locales que soportan GGUF, como llama.cpp, Ollama y LM Studio.
-- No se dispone de información sobre soporte de tool calling, function calling, agentes, visión, audio o modos de razonamiento.
+- Generacion de texto conversacional en seis idiomas: persa, ingles, arabe, frances, aleman y espanol.
+- Razonamiento y respuesta a instrucciones de proposito general, segun la categoria `text-generation` y el tag `conversational`.
+- Soporte multilingue declarado, con especial atencion a idiomas de Oriente Medio (fa, ar) y europeos (en, fr, de, es).
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estandar.
+- No se documenta soporte explicito de tool calling, function calling, agentes, vision, audio ni modo de pensamiento (thinking mode); estos datos no estan disponibles.
+- Al ser un modelo MoE, se espera un throughput superior al de un denso equivalente, aunque no se han publicado mediciones.
 
 ## Casos de uso
 
-- Asistente conversacional multilingüe: el modelo puede gestionar diálogos en español, francés, alemán, inglés, árabe y persa, lo que permite atender a usuarios de distintas regiones con una sola instancia desplegada.
-- Traducción automática entre los idiomas soportados: al ser un modelo multilingüe, puede emplearse como motor de traducción para pares de idiomas como árabe-español, persa-francés o alemán-inglés, aunque la calidad no ha sido validada con benchmarks.
-- Análisis de texto en árabe o persa: estos idiomas tienen una cobertura menor en muchos modelos grandes, por lo que BlueBerry-3 resulta útil para tareas de clasificación, extracción de información o análisis de sentimiento en esos dominios.
-- Generación de documentación técnica multilingüe: puede redactar manuales, guías o artículos técnicos en varios idiomas, aprovechando su capacidad de generación de texto y su soporte multilingüe.
-- Inferencia local en entornos sin conexión: gracias a los quants GGUF, el modelo puede desplegarse en servidores o estaciones de trabajo sin depender de APIs externas, lo que es relevante para entornos con requisitos de privacidad.
-- Procesamiento de documentos multilingües en sistemas de gestión documental: puede resumir o extraer información clave de documentos en los seis idiomas soportados, integrándose en pipelines de procesamiento de texto.
-- Adaptación posterior mediante fine-tuning: aunque los quants GGUF no son aptos para entrenamiento, el modelo base (artindnr/BlueBerry-3) puede descargarse en formato safetensors para realizar fine-tuning en tareas específicas de dominio.
+- Atencion al cliente multilingue: el modelo puede gestionar conversaciones en arabe, persa, frances, aleman, espanol e ingles, lo que lo hace adecuado para empresas con clientela internacional que necesiten un unico modelo para varios mercados.
+- Generacion de contenido editorial en espanol y frances: util para redaccion de borradores, resumenes y reescritura de textos en entornos de medios o marketing, aprovechando su licencia Apache 2.0 para uso comercial.
+- Traduccion asistida entre los seis idiomas soportados: aunque no es un modelo de traduccion dedicado, su cobertura multilingue permite tareas de traduccion informal o post-edicion en pipelines de localizacion.
+- Chatbots de soporte tecnico en ingles y aleman: integrable mediante llama.cpp u Ollama en infraestructura propia, sin dependencia de APIs externas, lo que reduce costes recurrentes.
+- Procesamiento de documentos en arabe y persa: extraccion de informacion, resumen y clasificacion de textos en idiomas con menor representacion en modelos occidentales, gracias a su cobertura linguistica declarada.
+- Prototipado de asistentes conversacionales en investigación: al estar disponible en GGUF con cuantizaciones desde Q2_K (66 GB) hasta Q8_0 (124 GB), permite experimentar en clusters con distinta capacidad de VRAM.
+- Despliegue en entornos con requisitos de soberania de datos: al ser Apache 2.0 y ejecutable localmente con llama.cpp, puede instalarse en infraestructura on-premise sin enviar datos a terceros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente el tamaño del archivo GGUF más un overhead de 1-2 GB para el contexto y la gestión de la inferencia.
-- Q2_K, Q3_K_S e IQ4_XS (~66-67 GB): requieren alrededor de 68-70 GB de VRAM; pueden cargarse en una GPU de 80 GB como A100 o H100, con margen limitado para contextos largos.
-- Q3_K_M y Q3_K_L (~71-74 GB): requieren entre 73 y 76 GB de VRAM; necesitan una GPU de 80 GB con poco margen o una GPU de 96 GB.
-- Q4_K_S, Q4_K_M y Q5_K_S (~81-88 GB): requieren entre 83 y 90 GB de VRAM; no caben en una GPU de 80 GB, por lo que se necesita una GPU de 96 GB o más, o varias GPUs con offloading.
-- Q5_K_M (~94 GB): requiere alrededor de 96 GB de VRAM; solo es viable en GPUs de 96 GB o superiores, o en configuración multi-GPU.
-- GPU recomendadas: A100 80GB o H100 80GB para los quants más pequeños; para los quants de mayor tamaño, se recomienda hardware de estación de trabajo con GPUs de 96 GB o más.
-- Consumer GPU: no cabe en una RTX 4090 (24 GB) ni en la mayoría de GPUs de consumo; requiere hardware de servidor o estaciones de trabajo dedicadas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros entornos compatibles con GGUF. vLLM y TGI pueden cargar GGUF, aunque su soporte no es tan nativo como el de llama.cpp.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K y Q3_K_S requieren aproximadamente 66 GB; IQ4_XS unos 67 GB; Q4_K_S 81 GB; Q4_K_M 88 GB; Q5_K_M 94 GB; Q6_K 124 GB; Q8_0 124 GB. Estas cifras corresponden al tamano del archivo GGUF y deben sumarse el overhead de contexto y de la cache KV.
+- GPU recomendadas: para las cuantizaciones mas bajas (Q2_K, Q3_K_S, IQ4_XS) se necesita al menos una GPU con 80 GB de VRAM (A100 80GB, H100 80GB) o varias GPU en paralelo. Las cuantizaciones Q4 y Q5 requieren 2x A100 80GB o 2x H100. Q6_K y Q8_0 requieren al menos 2x H100 80GB o configuraciones multi-GPU mayores.
+- No cabe en GPU de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB) en ninguna cuantizacion, ni siquiera en Q2_K, dado que el minimo es de 66 GB.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (si se importa el GGUF), y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. Para el modelo base en safetensors se requeriria vLLM o TGI, pero no se han publicado guias al respecto.
+- Latencia y throughput estimados: no disponibles. Al ser MoE, se espera un throughput superior al de un denso de 116 B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con otras alternativas de la misma categoría. La documentación del modelo base no está publicada en los datos proporcionados, por lo que no se pueden establecer comparaciones fiables de parámetros, contexto, rendimiento o disponibilidad.
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| BlueBerry-3 (GGUF) | 116,8 B (MoE) | no disponible | Apache 2.0 | GGUF | 6 idiomas; sin benchmarks publicos |
+| Mixtral 8x7B | 46,7 B (MoE) | 32k | Apache 2.0 | safetensors, GGUF | Referencia MoE open source; benchmarks publicos |
+| Qwen2.5-72B | 72,7 B (denso) | 128k | Apache 2.0 (mayoria variantes) | safetensors, GGUF | Multilingue amplio; benchmarks publicos |
+| Llama 3.1 70B | 70,6 B (denso) | 128k | Llama 3.1 Community | safetensors, GGUF | Multilingue; benchmarks publicos |
+
+La comparativa es orientativa: no se dispone de datos de rendimiento de BlueBerry-3 que permitan una comparacion cuantitativa con estos modelos. En terminos de tamano, BlueBerry-3 supera a Mixtral 8x7B y a los densos de 70 B, pero se desconoce su calidad real.
 
 ## Limitaciones y advertencias
 
-- La información disponible no incluye benchmarks publicados, por lo que no se puede evaluar la calidad del modelo en tareas estándar como razonamiento, código o matemáticas.
-- La cuantización a niveles bajos como Q2_K o IQ4_XS puede degradar significativamente la calidad en comparación con el modelo original, especialmente en tareas que requieren precisión numérica o razonamiento complejo.
-- Se desconocen los sesgos potenciales del modelo, ya que no hay documentación sobre la composición del dataset de entrenamiento ni sobre técnicas de alineación.
-- La longitud de contexto no está documentada, lo que impide planificar tareas que requieran ventanas de contexto largas.
-- El repositorio GGUF solo es apto para inferencia; no se puede realizar fine-tuning directamente sobre los archivos cuantizados.
-- Aunque la licencia del repositorio es Apache 2.0, se recomienda revisar la licencia del modelo base (artindnr/BlueBerry-3) para confirmar que no existen restricciones adicionales de uso comercial.
-- No se incluyen cuantizaciones con pesos ponderados (weighted/imatrix), lo que puede afectar a la calidad de la cuantización en comparación con otros repositorios que sí las ofrecen.
+- Ausencia total de benchmarks publicos: no es posible evaluar su calidad frente a alternativas consolidadas sin pruebas propias.
+- Informacion tecnica muy escasa: se desconocen contexto maximo, numero de expertos, parametros activos y datos de entrenamiento, lo que dificulta estimar su comportamiento en produccion.
+- Riesgo de alucinacion: como todo modelo generativo de gran escala, puede producir informacion falsa o inventada, especialmente en idiomas con menos datos de entrenamiento (fa, ar).
+- Sesgos desconocidos: no se ha documentado ninguna evaluacion de sesgos ni de seguridad; se recomienda auditoria previa a despliegues sensibles.
+- Limitaciones de contexto: al no publicarse la longitud de contexto, no se puede garantizar el manejo de conversaciones o documentos largos.
+- Requisitos de hardware elevados: incluso la cuantizacion mas agresiva (Q2_K, 66 GB) exige hardware de clase servidor, lo que limita su uso a organizaciones con infraestructura significativa.
+- Cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior, lo que eleva el requisito a 88 GB o mas.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; la responsabilidad del despliegue recae en el integrador.
+- El repositorio GGUF tiene muy poca traccion (202 descargas, 2 likes en el momento de la consulta), lo que reduce la probabilidad de que se hayan detectado y corregido problemas de cuantizacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/BlueBerry-3-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/BlueBerry-3-GGUF
 - Modelo base: https://huggingface.co/artindnr/BlueBerry-3
-- Perfil del creador: https://huggingface.co/mradermacher
-- Solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#BlueBerry-3-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

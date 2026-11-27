@@ -2,118 +2,111 @@
 
 ## Resumen
 
-Seter PII Fast es un modelo de clasificación de tokens (token-classification) especializado en la detección de datos personales identificables (PII) en hebreo, árabe e inglés, incluyendo textos mixtos hebreo/árabe-inglés. Lo desarrolla Shoresh Labs y se publica bajo licencia MIT. El modelo resuelve un problema concreto y bien documentado: los detectores de PII gratuitos funcionan bien en inglés pero fallan sistemáticamente con nombres propios en hebreo y árabe, especialmente nombres de pila aislados, nombres con prefijos adjuntos (ל/ו/ש), títulos (עו"ד, د.) y kunyas árabes (أبو …).
+Seter PII Fast es un modelo de clasificación de tokens (token classification) especializado en la detección de información personal identificable (PII) en hebreo, árabe e inglés, incluyendo texto con mezcla de idiomas. Lo desarrolla Shoresh Labs y se distribuye con licencia MIT. Resuelve un problema concreto: la mayoría de los detectores de PII gratuitos funcionan bien en inglés pero fallan con nombres hebreos y árabes, especialmente nombres de pila aislados, nombres con prefijos adjuntos (ל/ו/ש), títulos como עו"ד o د., y kunyas árabes (أبو …).
 
-Técnicamente es un fine-tuning de `jhu-clsp/mmBERT-base` (arquitectura ModernBERT) con 307.538.699 parámetros totales, contexto de 8.000 tokens y salida en cinco etiquetas compatibles con `openai/privacy-filter` (`private_person`, `private_address`, `private_phone`, `private_email`, `account_number`), lo que permite sustituirlo en pipelines ya construidos alrededor de ese modelo. Se distribuye en safetensors y ONNX (incluida una versión int8 que corre en navegador).
+El modelo está construido sobre `jhu-clsp/mmBERT-base` y cuenta con 307.538.699 parámetros totales. Se ofrece en dos variantes dentro de la familia Seter: esta versión "fast" orientada a CPU y navegador, y una versión "large" (seter-pii-he-ar v1.2, basada en xlm-r-large) para GPU y servidor con mayor precisión. La versión fast está diseñada para ejecutarse localmente, incluso en el navegador mediante ONNX y transformers.js, sin enviar el texto del usuario fuera del dispositivo.
 
-Esta es la variante "fast" del proyecto Seter; la variante "accurate" es `seter-pii-he-ar` (v1.2, basada en xlm-r-large). La versión actual del repositorio es v1.1.1 (17 de noviembre de 2026), que corrige los ficheros ONNX y el `config.json` de la v1.1. Es relevante ahora porque ofrece una alternativa ligera, multilingüe en hebreo y árabe, con licencia permisiva y desplegable en CPU, para tareas de redacción y anonimización en producción.
+La relevancia actual del modelo radica en su enfoque en privacidad por diseño: inferencia local, licencia permisiva y cobertura de idiomas históricamente desatendidos por las herramientas de redacción. Detecta cinco tipos de entidad: `private_person`, `private_address`, `private_phone`, `private_email` y `account_number`. La versión documentada es la v1.1.2 (25 de noviembre de 2026).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (fine-tuning de `jhu-clsp/mmBERT-base`) |
+| Arquitectura | Transformer encoder (ModernBERT, base `jhu-clsp/mmBERT-base`) |
 | Parametros totales | 307.538.699 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8.000 tokens |
-| Tipos de cuantizacion | ONNX float (sin cuantizar) y ONNX int8 (`model_quantized.onnx`) |
-| Idiomas soportados | hebreo (he), árabe (ar), inglés (en); incluye texto mixto hebreo/árabe-inglés |
+| Longitud de contexto | ~8k tokens |
+| Tipos de cuantizacion | int8 (ONNX cuantizado, 369 MB); pesos fp32 en safetensors |
+| Idiomas soportados | he (hebreo), ar (árabe), en (inglés), incluido texto mixto |
 | Licencia | MIT |
-| Formato de pesos | safetensors, ONNX (float e int8) |
-| Tarea | token-classification (NER de PII) |
-| Etiquetas de salida | `private_person`, `private_address`, `private_phone`, `private_email`, `account_number` |
-| Versión del repositorio | v1.1.1 (17 nov 2026) |
-| Tamaño del repo | 7,1 GB |
-| Descargas | 555 |
-| Compatibilidad | Entrenado con transformers 5; `config.json` corregido para lectura correcta en transformers 4.x |
+| Formato de pesos | safetensors, ONNX (incluye `onnx/model_quantized.onnx` int8) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `jhu-clsp/mmBERT-base`, un encoder ModernBERT multilingüe, y se afina como clasificador de tokens para NER de PII con cinco clases. La ventana de contexto de 8.000 tokens permite procesar documentos completos (correos, hilos de chat, notas) sin fragmentar en exceso. La arquitectura ModernBERT incorpora atención con rotación posicional y capas optimizadas para eficiencia en CPU, lo que explica la mejora de velocidad de aproximadamente 2,3× en CPU frente a la variante "accurate".
+El modelo es un encoder transformer de tipo ModernBERT, inicializado desde `jhu-clsp/mmBERT-base`, adaptado a la tarea de token classification (NER de PII) mediante una cabeza de clasificación sobre las cinco etiquetas definidas. La longitud de contexto es de aproximadamente 8k tokens, lo que permite procesar documentos completos o registros largos en una sola pasada. Se distribuye en fp32 (safetensors) y en una versión int8 ONNX optimizada para CPU y navegador.
 
-El entrenamiento se realizó con transformers 5 sobre un generador de datos propio del proyecto, con una política de etiquetado definida por el autor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO (no aplica habitualmente a un encoder de clasificación). El modelo se evaluó sobre 150 documentos reservados (50 por idioma, 2.480 spans etiquetados) escritos específicamente para la evaluación, y sobre el benchmark independiente REDACT (subconjuntos hebreo, árabe e inglés), que nunca se usó para entrenamiento. Los pesos publicados corresponden a la semilla de entrenamiento 3, elegida tras ver las puntuaciones; el autor recomienda leer la media de las tres semillas como cifra esperada.
+Los detalles sobre el volumen exacto de tokens de entrenamiento y la composición del dataset no están disponibles en la información proporcionada. La model card menciona que la evaluación se realizó sobre un conjunto independiente del generador de datos de entrenamiento y de REDACT, y que existe una política de etiquetado propia del autor. Se han publicado tres semillas de entrenamiento para reportar la variabilidad de los resultados. No se especifica en la información disponible si se empleó RLHF, DPO u otras técnicas de alineación, algo poco habitual en un modelo de token classification. El decodificador publicado, `seter_entities.py`, incluye una limpieza específica de números de cuenta y un preset opcional `strict-ids` que enmascara únicamente identidades y números financieros.
 
 ## Capacidades
 
-- Detección de PII en hebreo, árabe e inglés, incluyendo mensajes mixtos hebreo/árabe-inglés.
+- Detección de PII en hebreo, árabe e inglés, incluyendo texto con mezcla de idiomas en el mismo documento.
 - Reconocimiento de nombres de persona, incluyendo nombres de pila aislados, nombres con prefijos adjuntos (ל/ו/ש), títulos (עו"ד, د.) y kunyas árabes (أبو …).
 - Detección de direcciones, teléfonos, correos electrónicos y números de cuenta.
-- Detección de números de tarjeta de pago, incluidas formas "ending in 1234" y enmascaradas (98% / 94% / 97% en hebreo / árabe / inglés en la v1.1).
-- Detección de números de identidad nacional en inglés (98% en la v1.1).
-- Salida con nombres de etiqueta compatibles con `openai/privacy-filter`, lo que facilita el intercambio en pipelines existentes.
-- Ejecución en navegador mediante el fichero ONNX int8 (demo pública disponible).
-- No dispone de tool calling, function calling, capacidades de agente, visión ni audio: es un encoder de clasificación de tokens, no un modelo generativo.
+- Detección de números de tarjeta de pago, incluyendo formas "ending in 1234" y enmascaradas (98% / 94% / 97% en hebreo / árabe / inglés en la versión v1.1).
+- Inferencia local en CPU y en navegador (ONNX + transformers.js), sin envío de datos a servidores externos.
+- Integración con la herramienta `seter-guard` para despliegue en producción.
+- Decodificador con limpieza de números de cuenta y selección de entidades mediante el preset `strict-ids`.
+- No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, audio, tool calling ni agentes; es un modelo exclusivamente de etiquetado de tokens.
 
 ## Casos de uso
 
-- Redacción automática de PII en atención al cliente: el modelo procesa hilos de chat y tickets multi-turno de hasta 8.000 tokens y marca nombres, teléfonos y correos para su enmascaramiento antes de almacenar o reenviar el texto, con buen rendimiento específico en hebreo y árabe donde otros detectores fallan.
-- Anonimización de registros médicos y notas de RR. HH.: los documentos reservados de evaluación incluyen notas médicas y de recursos humanos; el modelo detecta nombres de pacientes y empleados, direcciones y teléfonos en hebreo y árabe para cumplir requisitos de privacidad antes de compartir datos con terceros.
-- Cumplimiento normativo en logs y formularios: integrado como paso previo al almacenamiento de logs, detecta correos, teléfonos y números de cuenta en texto mixto hebreo/árabe-inglés, reduciendo el riesgo de retención de datos personales en sistemas de observabilidad.
-- Sustitución directa de `openai/privacy-filter`: al usar los mismos nombres de etiqueta, se puede intercambiar en pipelines existentes para mejorar la cobertura en hebreo y árabe sin reescribir la lógica de post-proceso.
-- Procesamiento en el navegador o en el borde: el fichero ONNX int8 (F1 0,943 frente a 0,947 del PyTorch) permite ejecutar la detección en cliente sin enviar texto sensible a un servidor, útil en demos y aplicaciones web de privacidad.
-- Pretratamiento para pipelines de LLM: como paso previo a enviar documentos a un modelo generativo, se usa para redactar PII y evitar fugas de datos personales en prompts y contextos.
-- Moderación y revisión de correspondencia legal: las cartas legales forman parte del conjunto de evaluación; el modelo puede marcar nombres y direcciones en correspondencia jurídica multilingüe antes de su archivo o publicación.
+- Redacción de PII en atención al cliente: el modelo puede procesar conversaciones multi-turno y tickets de soporte en hebreo, árabe e inglés, enmascarando nombres, teléfonos y correos antes de almacenar o enviar los registros a sistemas externos, gracias a su ventana de ~8k tokens.
+- Cumplimiento del RGPD y de la ley israelí de privacidad (Amendment 13): integrado en pipelines de preprocesamiento para anonimizar datos personales en logs, formularios y correos antes de su tratamiento o archivo.
+- Ejecución en el navegador para herramientas de privacidad: mediante la demo en Hugging Face Spaces y transformers.js, permite redactar texto directamente en la página sin que el contenido salga del dispositivo del usuario.
+- Procesamiento de notas médicas y de RR. HH.: detección de nombres de pacientes y empleados, direcciones y números de cuenta en documentos internos, ejecutándose en CPU de portátil con 603 MB de RAM y 369 MB de disco en la versión int8.
+- Anonimización de registros legales y cartas: tratamiento de documentos de 672 a 1.819 caracteres con alta cobertura de entidades (0,956 de entidades completamente cubiertas en la evaluación held-out de la v1.1).
+- Filtrado previo en pipelines de datos para entrenamiento de modelos: eliminación de PII de corpus multilingües antes de su uso en entrenamiento o evaluación, con despliegue en CPU sin GPU dedicada.
+- Integración en herramientas de desarrollo mediante `seter-guard`: despliegue detrás de una API local para redactar texto en aplicaciones de escritorio o servicios internos con licencia MIT.
 
 ## Benchmarks y rendimiento
 
-Documentos reservados (150 documentos, 2.480 spans; F1, precisión y recall a nivel de carácter):
+Evaluación sobre 150 documentos held-out (50 hebreo, 50 árabe, 50 inglés; 2.480 spans etiquetados; 672-1.819 caracteres cada uno):
 
-| Métrica | fast v1.0 | fast v1.1 (pesos publicados) | fast v1.1 (media 3 semillas) | large v1.2 (pesos publicados) |
-|---|---|---|---|---|
-| F1 de carácter | 0,870 | 0,947 | 0,942 | 0,968 |
-| Precisión de carácter | 0,799 | 0,916 | 0,907 | 0,962 |
-| Recall de carácter | 0,955 | 0,980 | 0,980 | 0,975 |
-| Entidades cubiertas por completo | 0,885 | 0,956 | 0,954 | 0,961 |
-| Spans predichos sin entidad etiquetada | 984 | 317 | 350 | 117 |
-| F1 hebreo / árabe / inglés | 0,833 / 0,886 / 0,889 | 0,943 / 0,945 / 0,953 | 0,929 / 0,944 / 0,952 | 0,969 / 0,973 / 0,963 |
+| Metrica | fast v1.0 | fast v1.1 (pesos publicados) | fast v1.1, media de 3 semillas | fast v1.1 con decodificador publicado | large v1.2 |
+|---|---|---|---|---|---|
+| Character F1 | 0,870 | 0,947 | 0,942 | 0,953 | 0,968 |
+| Character precision | 0,799 | 0,916 | 0,907 | 0,929 | 0,962 |
+| Character recall | 0,955 | 0,980 | 0,980 | 0,979 | 0,975 |
+| Entidades completamente cubiertas | 0,885 | 0,956 | 0,954 | 0,954 | 0,961 |
+| Spans predichos sin entidad etiquetada | 984 | 317 | 350 | 259 | 117 |
+| F1 hebreo / árabe / inglés | 0,833 / 0,886 / 0,889 | 0,943 / 0,945 / 0,953 | 0,929 / 0,944 / 0,952 | 0,947 / 0,951 / 0,962 | 0,969 / 0,973 / 0,963 |
 
-Benchmark independiente REDACT (solo evaluación; F1):
+Benchmark independiente REDACT (evaluación únicamente, nunca usado en entrenamiento):
 
-| Idioma | openai/privacy-filter | fast v1.0 | fast v1.1 (media 3 semillas; pesos publicados) | large v1.2 (media 3 semillas) |
+| Idioma | openai/privacy-filter F1 | fast v1.0 F1 | fast v1.1 F1 (media de 3 semillas, pesos publicados) | large v1.2 (xlm-r-large) F1 |
 |---|---|---|---|---|
 | Hebreo (621 registros) | 0,642 | 0,850 | 0,905 (0,908) | 0,915 |
 | Árabe (568) | 0,735 | 0,893 | 0,913 (0,914) | 0,922 |
 | Inglés (534) | 0,709 | 0,841 | 0,885 (0,886) | 0,890 |
 
-ONNX: `onnx/model.onnx` produce los mismos spans que los pesos PyTorch en los 150 documentos reservados (F1 0,947); `onnx/model_quantized.onnx` (int8) obtiene F1 0,943 (precisión 0,919, recall 0,968). Los ficheros ONNX publicados entre el 12 y el 17 de noviembre de 2026 (revisión `v1.1`) puntuaron 0,931 y 0,930 y no deben usarse.
+Otras métricas reportadas: recall de nombres de pila aislados @50% de hebreo 0,886, árabe 0,940, inglés 0,990; conjunto de 50 frases (F1 de caracteres laxo, fp32) 0,991; el archivo int8 v1.1.2 con decodificador publicado alcanza F1 0,954 (precisión 0,931, recall 0,979). En CPU de portátil con 4 hilos, la versión int8 ONNX v1.1.2 procesa frases cortas en 18 ms y registros de ~1.500 caracteres en 275 ms, con 603 MB de RAM.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 308M parámetros; en fp32 ocupa aproximadamente 1,2 GB de pesos y en int8 unos 0,3 GB, más memoria de activaciones (moderada con contexto de 8.000 tokens).
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente; no requiere A100 ni H100. Una RTX 4090 o una GPU consumer de gama media (RTX 3060 en adelante) lo ejecuta con holgura.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna con 4-6 GB de VRAM.
-- CPU: es viable en CPU; el autor indica que la variante fast es aproximadamente 2,3× más rápida en CPU que la variante accurate, y el ONNX int8 está pensado para ejecución en navegador.
-- Opciones de despliegue: ONNX Runtime (float o int8), transformers (PyTorch), y en general cualquier runtime compatible con safetensors/ONNX. No se documentan en la información disponible configuraciones específicas para vLLM, llama.cpp, Ollama o TGI (no aplican de forma estándar a un encoder de clasificación).
-- Latencia y throughput: no disponible en la información proporcionada, salvo la referencia cualitativa de 2,3× más rápido en CPU que la variante accurate.
+- VRAM estimada: no aplica en la variante int8 ONNX, que está diseñada para CPU; requiere 603 MB de RAM en CPU con 4 hilos.
+- Disco: 369 MB para el archivo int8 ONNX; el repositorio completo ocupa 7,5 GB.
+- GPU: no se documentan requisitos de GPU para esta variante; está orientada explícitamente a CPU y navegador.
+- Cabe en cualquier portátil convencional y en el navegador mediante transformers.js; no requiere GPU de consumo.
+- Opciones de despliegue: ONNX Runtime (CPU), transformers.js (navegador), transformers (Python), integración con `seter-guard`.
+- Latencia: 18 ms para frases cortas y 275 ms para registros de ~1.500 caracteres en CPU de portátil con 4 hilos (int8 ONNX v1.1.2). No se documenta throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | F1 REDACT he/ar/en | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | F1 REDACT hebreo / árabe / inglés | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seter-pii-he-ar-fast v1.1 | 307,5M (ModernBERT) | 8.000 | 0,905 / 0,913 / 0,885 | MIT | Hugging Face, ONNX int8, demo en navegador |
-| seter-pii-he-ar v1.2 (large) | no disponible (xlm-r-large) | no disponible | 0,915 / 0,922 / 0,890 | no disponible en la información | Hugging Face |
-| openai/privacy-filter | no disponible | no disponible | 0,642 / 0,735 / 0,709 | no disponible en la información | Hugging Face |
+| seter-pii-he-ar-fast v1.1 | 307,5 M | ~8k | 0,905 / 0,913 / 0,885 | MIT | Hugging Face, ONNX, navegador |
+| seter-pii-he-ar v1.2 (large) | no disponible (xlm-r-large) | no disponible | 0,915 / 0,922 / 0,890 | MIT | Hugging Face |
+| openai/privacy-filter | no disponible | no disponible | 0,642 / 0,735 / 0,709 | no disponible | no disponible |
 
-La variante fast sacrifica entre 0,5 y 1,0 puntos de F1 en REDACT frente a la variante large a cambio de menor tamaño, mayor velocidad en CPU y contexto de 8.000 tokens. Frente a `openai/privacy-filter`, la mejora en hebreo y árabe es de 26 y 18 puntos de F1 respectivamente, y de 17,6 puntos en inglés en el benchmark REDACT.
+La comparativa se limita a los modelos incluidos en la información proporcionada. La variante fast ofrece un equilibrio entre precisión y despliegue en CPU, mientras que la variante large obtiene mejores cifras a costa de mayores requisitos de cómputo. Frente a openai/privacy-filter, la mejora en F1 es de aproximadamente 0,26 en hebreo, 0,18 en árabe y 0,18 en inglés.
 
 ## Limitaciones y advertencias
 
-- El conjunto de evaluación reservado es pequeño (150 documentos) y fue escrito y etiquetado por un modelo de IA a partir de una política escrita, con revisión por un segundo revisor de IA, no por personas; la política fue escrita por el mismo autor que las clases de entrenamiento, lo que favorece a esas clases.
-- El modelo fast etiqueta aproximadamente 2,7 veces más spans espurios que la variante large (317 frente a 117 en los documentos reservados); la precisión en hebreo es su punto más débil (0,906 con los pesos publicados, 0,884 de media entre semillas).
-- La v1.1 empeora respecto a la v1.0 en `Preferred_Name` en inglés: cae de 0,987 a 0,927 de media (0,936 con los pesos publicados); los fallos son nombres de pantalla en campos de nombre para mostrar y una palabra común usada como nombre. También baja en números de pasaporte ingleses (1,000 → 0,970), apellidos aislados (0,3-0,8 puntos por idioma) y pierde 3 de 304 teléfonos reservados (la v1.0 no perdía ninguno). El autor lo publica como excepción declarada a su regla de release.
-- Los pesos publicados son la semilla de entrenamiento 3, elegida tras ver las puntuaciones; debe leerse la media de las tres semillas como cifra esperada.
-- Los ficheros ONNX de la revisión `v1.1` (12-17 nov 2026) están defectuosos (exportados con transformers 4.57, que lee mal el `config.json`) y no deben usarse; usar la v1.1.1.
-- REDACT deja muchos datos personales sin etiquetar (en una auditoría de 300 predicciones, el 59-66% de los spans sin etiqueta REDACT eran datos personales), por lo que la precisión de REDACT y su F1 subestiman a todos los sistemas de la tabla.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos (spans espurios) y falsos negativos en nombres y contextos no cubiertos por la política de etiquetado.
-- Licencia MIT: permite uso comercial y modificación, pero el modelo se distribuye sin garantías; el autor no ofrece compromisos de exactitud para producción.
-- No es un modelo generativo: no soporta tool calling, agentes, visión ni audio, y no debe evaluarse como tal.
+- El conjunto de evaluación held-out es pequeño (150 documentos) y fue escrito y etiquetado por un modelo de IA a partir de una política escrita, revisado por un segundo revisor de IA, no por personas; la política la escribió el mismo autor que las clases de entrenamiento, lo que favorece a esas clases.
+- El modelo fast etiqueta aproximadamente 2,7 veces más spans espurios que el modelo large; la precisión en hebreo es su punto más débil (0,906 con los pesos publicados, 0,884 de media entre semillas).
+- REDACT deja sin etiquetar gran parte de los datos personales (en una auditoría de 300 predicciones del large v1.1 sin etiqueta REDACT, entre el 59% y el 66% eran datos personales), por lo que la precisión y el F1 de REDACT subestiman a todos los sistemas de la tabla.
+- Riesgo de falsos negativos y positivos en dominios no representados en el entrenamiento; no se documentan sesgos específicos más allá de las diferencias de precisión por idioma.
+- Cobertura limitada a cinco etiquetas: no detecta fechas, ciudades, datos médicos ni otras categorías de PII presentes en REDACT, que se ignoran en la evaluación.
+- No se documentan capacidades de generación, razonamiento ni tool calling; su uso está restringido a token classification.
+- La licencia MIT permite uso comercial, pero se recomienda fijar la revisión en producción (`revision="v1.1.2"`), ya que las versiones anteriores permanecen disponibles como revisiones y los resultados varían entre versiones.
+- No se han publicado resultados de benchmarks más allá de los recogidos en la model card y en REDACT.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shoresh-labs/seter-pii-he-ar-fast
-- Variante accurate (large): https://huggingface.co/shoresh-labs/seter-pii-he-ar
-- Demo en navegador (ONNX int8): https://huggingface.co/spaces/yinonov/seter-demo
+- Modelo large (seter-pii-he-ar v1.2): https://huggingface.co/shoresh-labs/seter-pii-he-ar
+- Demo en navegador: https://huggingface.co/spaces/yinonov/seter-demo
+- Repositorio seter-guard: https://github.com/Shoresh-Labs/seter-guard
+- Paper REDACT: https://arxiv.org/abs/2606.19881
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
-- `openai/privacy-filter` (etiquetas compatibles): https://huggingface.co/openai/privacy-filter
-- Benchmark REDACT (paper): https://arxiv.org/abs/2606.19881
-- Tablas de evaluación completas: `eval/fast_v1.1_eval_summary.md` (en el repositorio del modelo)
+- Organización Shoresh Labs: https://huggingface.co/shoresh-labs

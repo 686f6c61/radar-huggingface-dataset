@@ -2,112 +2,105 @@
 
 ## Resumen
 
-Laya Typed-Decisions es un modelo de clasificación de texto desarrollado por ConvAI Innovations, miembro de la familia Laya de modelos de decisión no autorregresivos. Se trata de un fine-tuning de ModernBERT-large (421 millones de parámetros) especializado en cuatro flujos de trabajo concretos: observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad. El modelo no genera texto: emite decisiones tipadas con probabilidad asociada, conjunto conformal, y banderas de abstención y fuera de distribución.
+Laya Typed-Decisions es un modelo de clasificación de texto no autorregresivo desarrollado por Convai Innovations, diseñado como un "modelo de decisión System 1". Se trata de un fine-tuning del checkpoint base Laya (ModernBERT-large) sobre flujos de trabajo de decisiones tipadas: observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad. Con 421 millones de parámetros y una ventana de contexto de 1024 tokens, el modelo no genera texto: asigna una etiqueta a una entrada con una probabilidad calibrada, un conjunto conformal y una decisión explícita de abstención.
 
-La propuesta técnica es un enfoque "System 1": en lugar de generar una respuesta token a token, el modelo proyecta la entrada en un espacio de decisión donde cada respuesta candidata es un valle y la entrada es una partícula que rueda y se asienta en uno de ellos. El resultado es determinista, de coste constante y con una probabilidad calibrada asociada. El checkpoint aquí descrito emplea el encoder clásico ModernBERT-large con 1.024 tokens de contexto.
+La propuesta técnica es relevante porque separa la decisión de la generación: en lugar de pedir a un LLM que "responda" una categoría, Laya coloca la entrada como una partícula en un espacio de decisión donde cada respuesta candidata es un valle, y reporta dónde se asienta la partícula junto con su probabilidad. Esto permite umbrales de riesgo calibrados (por defecto, tasa de error inferior al 10 % entre las respuestas emitidas), conjuntos conformales a alpha 0.10 y una ruta operativa (`auto` o `review`) pensada para integrarse en pipelines de producción.
 
-El modelo es relevante para equipos que necesitan clasificación fiable y calibrada en producción con capacidad de abstenerse cuando la confianza no alcanza el umbral de riesgo configurado (10% por defecto). Su licencia Apache 2.0 permite uso comercial sin restricciones, y el ecosistema incluye un motor de decisión alternativo (vegaml) con soporte multimodal y aprendizaje continuo.
+El modelo forma parte de la familia Laya, que incluye una variante general en inglés y otra multilingüe con más de 100 idiomas. La licencia de los pesos es Apache 2.0, lo que permite uso comercial sin restricciones, aunque el paquete opcional de aprendizaje continuo (`vegaml-learn`) tiene licencia PolyForm Noncommercial 1.0.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (ModernBERT-large), no autorregresivo |
-| Parámetros totales | 421.293.830 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | 1.024 tokens |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
+| Arquitectura | Transformer encoder no autorregresivo (ModernBERT-large) con cabecera de decisión tipada |
+| Parametros totales | 421.293.830 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 1024 tokens (el checkpoint base Laya soporta 512; la familia anuncia hasta 73.728 tokens en la versión 0.5 del paquete) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | inglés (la variante `laya-multilingual` cubre más de 100 idiomas) |
+| Licencia | Apache 2.0 (pesos y paquete `laya`); `vegaml-learn` bajo PolyForm Noncommercial 1.0.0 |
 | Formato de pesos | safetensors |
+| Pipeline | text-classification |
+| Tamano del repositorio | 0.8 GB |
+| Libreria | transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en ModernBERT-large, un transformer encoder con 421 millones de parámetros y ventana de contexto de 1.024 tokens. La arquitectura es no autorregresiva: no genera secuencias token a token, sino que produce una decisión tipada directamente sobre la representación de la entrada. El fine-tuning se realizó sobre los flujos de trabajo del dataset `typed-decisions`, que cubre observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad.
+El modelo es un encoder ModernBERT-large de 421M parámetros adaptado a un paradigma de decisión no autorregresivo. En lugar de generar tokens, el sistema proyecta la entrada en un espacio de decisión de baja dimensión donde cada respuesta candidata ocupa un "valle" de potencial; la partícula que representa la entrada rueda y se asienta en uno de ellos de forma determinista. La profundidad del valle y la posición final producen la etiqueta, su probabilidad calibrada, el conjunto conformal (`prediction_set`) y las banderas `abstain` y `unbound`. El coste computacional es constante e independiente de la longitud de la respuesta, ya que no hay decodificación.
 
-La innovación técnica central es el mecanismo de decisión "System 1" inspirado en el motor vegaml: cada respuesta candidata se modela como un valle en un espacio de decisión de baja dimensión, y la entrada se coloca como una partícula que rueda y se asienta en uno de ellos. La profundidad del asentamiento determina la probabilidad de la respuesta. El modelo incorpora calibración de umbral para que, entre las respuestas que emite, la tasa de error se mantenga por debajo del riesgo configurado (10% por defecto). También produce un conjunto conformal (`prediction_set`) a nivel alpha 0.10 y una bandera `unbound` para entradas fuera de distribución. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El fine-tuning se realizó sobre los flujos de trabajo del dataset `typed-decisions` (observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad). La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La calibración de umbrales se apoya en un procedimiento de riesgo controlado: el umbral de abstención se ajusta para que, entre las respuestas emitidas, la tasa de error se mantenga por debajo del riesgo configurado (10 % por defecto). El paquete `laya` v0.5 añade soporte multimodal (imagen, audio y vídeo) mediante `agent.predict(...)` con los argumentos `image=`, `audio=` o `video=`.
 
 ## Capacidades
 
-- Clasificación de texto con decisión tipada: devuelve la respuesta, su probabilidad, el conjunto conformal y las banderas `abstain` y `unbound`.
-- Abstención calibrada: rechaza comprometerse cuando la confianza no alcanza el umbral de riesgo configurado.
-- Conjunto conformal: identifica cuándo la entrada es ambigua (más de una opción posible a alpha 0.10).
-- Detección de entradas fuera de distribución mediante la bandera `unbound`.
-- Enrutamiento (`route`): decide entre `auto` o `review` según abstención, tamaño del conjunto conformal o banda de precisión calibrada con etiquetas.
-- Aprendizaje continuo mediante `laya.Learner`: aprende de respuestas confirmadas por el equipo en segundos sobre CPU, sin fine-tuning.
-- Soporte de cuatro flujos de trabajo: observabilidad de agentes, atención al cliente, facturación e incidentes de seguridad.
-- Idioma: inglés.
-- No soporta tool calling, generación de texto, visión, audio ni razonamiento multi-paso (el checkpoint clásico es solo clasificación; el motor vegaml del ecosistema sí añade multimodalidad y 73.728 tokens de contexto).
+- Clasificación de texto con etiquetas tipadas y probabilidad calibrada.
+- Abstención explícita (`abstain`) con umbral calibrado a una tasa de error objetivo.
+- Conjunto conformal (`prediction_set`) a alpha 0.10 para cuantificar ambigüedad.
+- Bandera `unbound` para detectar entradas fuera de distribución (con la advertencia de que su especificidad es baja en algunos dominios).
+- Ruta operativa (`route`: `auto` o `review`) para integrarse en flujos con revisión humana.
+- Modo multimodal en la versión 0.5 del paquete: imagen, audio y vídeo con las mismas respuestas tipadas.
+- Aprendizaje continuo opcional vía `laya.Learner` (paquete `vegaml-learn`, no comercial), que aprende de respuestas confirmadas por el equipo en CPU en segundos.
+- Uso de cualquier LLM congelado como "lector" subyacente (desde 0.8B hasta 27B), con el motor de decisión encima.
+- No soporta generación de texto libre, tool calling ni razonamiento multi-paso en el sentido de un LLM generativo.
 
 ## Casos de uso
 
-- Observabilidad de trazas de agentes: el modelo clasifica trazas de ejecución de agentes LLM para etiquetar eventos, detectar anomalías y enrutar las trazas dudosas a revisión humana mediante la bandera `route`.
-- Atención al cliente automatizada: clasifica tickets y mensajes entrantes en categorías tipadas con probabilidad calibrada, absteniéndose cuando la confianza es baja para derivar a un agente humano.
-- Procesamiento de facturas: clasifica documentos y campos de facturación en categorías contables, con conjunto conformal para señalar facturas ambiguas que requieren revisión manual.
-- Gestión de incidentes de seguridad: clasifica alertas y eventos de seguridad en categorías de incidente, con control de la tasa de error por debajo del umbral configurado.
-- Puerta de enrutamiento en pipelines: integrado como clasificador previo que decide si una entrada se procesa automáticamente o se envía a revisión, usando `route` en lugar de umbrales de confianza ad hoc.
-- Mejora continua con datos propios: usando `laya.Learner`, el equipo confirma respuestas y el modelo se recalibra en segundos sobre CPU, adaptándose a la distribución específica de la organización sin reentrenar los 421M de pesos.
-- Clasificación de alto volumen con coste constante: al ser no autorregresivo, el coste por inferencia es fijo y determinista, adecuado para procesar grandes volúmenes de mensajes o documentos.
+- Observabilidad de trazas de agentes: clasificar cada paso de un agente (llamada a herramienta, respuesta, error, escalado) en categorías tipadas con probabilidad calibrada, para alimentar paneles de监控 y alertas sin depender de un LLM generativo en línea.
+- Procesamiento de facturas: asignar cada documento entrante a una categoría (aprobada, duplicada, requiere revisión, datos faltantes) con abstención automática cuando la confianza no alcanza el umbral de riesgo, reduciendo errores en el pipeline de cuentas a pagar.
+- Gestión de incidentes de seguridad: triaje de alertas en categorías (falso positivo, escalado, contención, investigación) con conjunto conformal para marcar casos ambiguos que deben ir a revisión humana.
+- Atención al cliente: enrutado de tickets a colas o agentes especializados según la intención tipada, con la ruta `review` activada cuando el conjunto conformal contiene más de una opción.
+- Moderación y control de calidad en producción: uso de `abstain` y `route` para derivar a revisión humana solo los casos dudosos, manteniendo la tasa de error por debajo del 10 % configurado.
+- Aprendizaje continuo en dominio propio: con `laya.Learner`, el modelo parte de ~600 ejemplos generados por plantilla y mejora con respuestas confirmadas por el equipo (de 84,7 % a 96,0 % tras 120 respuestas confirmadas en la evaluación publicada), sin reentrenar los 421M de pesos.
+- Clasificación multimodal en la versión 0.5: procesar capturas de pantalla, transcripciones de audio o fotogramas de vídeo con las mismas etiquetas tipadas que el texto.
 
 ## Benchmarks y rendimiento
 
-Los benchmarks publicados en la model card corresponden al motor vegaml y al encoder clásico en escenarios de aprendizaje continuo, no exclusivamente a este checkpoint. Se reproducen a continuación los datos disponibles.
-
-Aprendizaje continuo (14 plantillas de decisión, 31 preguntas, 60 filas reservadas por plantilla):
+La model card reporta resultados de aprendizaje continuo sobre 14 plantillas de decisión (31 preguntas), evaluadas en 60 filas retenidas por plantilla:
 
 | Modelo | Día uno | Tras 40 respuestas confirmadas | Tras 120 |
 |---|---|---|---|
-| laya, `laya.Learner` | 84,7% | 91,6% | 96,0% |
-| Jev 1.14 | 89,5% | 91,5% | 92,6% |
+| laya, `laya.Learner` | 84,7 % | 91,6 % | 96,0 % |
+| Jev 1.14 (API alojada) | 89,5 % | 91,5 % | 92,6 % |
 
-Aprendizaje desde flujo (lector de 4B, filas reservadas, noviembre 2026):
+Jev lidera en el día uno (23 de 31 preguntas), empatan a 40 respuestas confirmadas y laya lidera a 120 (12 victorias, 7 derrotas, 12 empates). El coste de aprendizaje es de 34 s para 300 respuestas en 8 hilos de CPU sin GPU (0,72 s por respuesta, 6,4 GB de RAM); en GPU, 40 ms y 2 GB. El fine-tuning clásico del encoder sobre las mismas 300 filas tarda 89 s en GPU con 9 GB y reescribe los 421M de pesos.
 
-| Modelo | banking77 (924 reservadas, tras 4.928 filas) | typed-decisions (2.000 decisiones, tras 1.200 filas) |
-|---|---|---|
-| laya | 87,5%, ECE 0,028, 92,5% enrutado auto a 91,5% de precisión | 73,7%, ECE 0,031 |
-| Jev 1.14 | 79,4% tal cual (ECE 0,078), 85,7% con ejemplos | 74,7%, ECE 0,047 |
-
-Rendimiento entre lectores (motor de decisión idéntico, 50.676 registros reservados): 0,8B 76,5%, 4B 79,1%, 27B 81,1%, con ECE entre 0,010 y 0,021.
-
-Coste del aprendizaje: 300 respuestas en 34 s sobre 8 hilos de CPU (0,72 s por respuesta, 6,4 GB de RAM); en GPU, 40 ms y 2 GB. El fine-tuning clásico del encoder sobre las mismas 300 filas tarda 89 s en GPU con 9 GB y reescribe los 421M de pesos.
-
-Limitación declarada: en suites públicas genéricas zero-shot, un modelo alojado grande lidera. Como puerta de inyección de prompts en tráfico real (ToxicChat, 1,8% de ataques), Jev sin entrenar detecta el 79,1% con 0,3% de rechazos, frente al 73,0% con 0,7% de una cabeza ajustada.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ya que el modelo no es generativo y no aplica ese tipo de evaluación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint tiene 421M de parámetros (aproximadamente 0,8 GB en fp32, ~0,4 GB en fp16). Cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4090, A100 y H100 son más que suficientes. También funciona en CPU.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en CPU para inferencia por lotes.
-- Opciones de despliegue: transformers (librería nativa), endpoints compatibles, despliegue en Azure; el ecosistema laya se instala con `pip install -U laya`.
-- Latencia y throughput: no se publican cifras específicas de latencia para este checkpoint. El aprendizaje continuo con `laya.Learner` tarda 0,72 s por respuesta en CPU (8 hilos) y 40 ms en GPU.
+- VRAM estimada para inferencia: el modelo tiene 421M parámetros; en fp16 requiere aproximadamente 0,9 GB y en fp32 unos 1,7 GB, más el overhead del runtime (no se especifican cuantizaciones oficiales).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 4090 o RTX 3090 lo ejecuta con holgura. Para despliegue a escala, A100 o H100 no son necesarias por tamaño, pero pueden usarse para servir muchas peticiones concurrentes.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2-4 GB de VRAM libre (GTX 1660, RTX 3060, RTX 4060, etc.).
+- Opciones de despliegue: transformers (librería nativa), endpoints compatibles, despliegue en Azure (tag `deploy:azure`); el paquete `laya` se instala con `pip install -U laya`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
+- Latencia y throughput: no disponibles para inferencia estándar; la model card solo reporta tiempos de aprendizaje continuo (0,72 s por respuesta en CPU con 8 hilos; 40 ms en GPU).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| laya-typed-decisions | 421M | 1.024 | inglés | Apache 2.0 | Clasificación con decisión tipada, abstención y conformal |
-| laya (base) | 421M | 512 | inglés | Apache 2.0 | Clasificación general en inglés |
-| laya-multilingual | 322M | 1.024 | 100+ idiomas | Apache 2.0 | Clasificación multilingüe (mmBERT-base) |
-| Jev 1.14 | no disponible | no disponible | no disponible | API alojada | Decisión por criterios, sin aprendizaje propio |
+| laya-typed-decisions | 421M | 1024 | inglés | Apache 2.0 | Decisión no autorregresiva con calibración y abstención |
+| laya (base) | 421M | 512 | inglés | Apache 2.0 | Decisión general en inglés |
+| laya-multilingual | 322M | 1024 | 100+ | Apache 2.0 | Decisión multilingüe |
+| Jev 1.14 (API alojada) | no disponible | no disponible | no disponible | propietaria (API) | Clasificación por criterios, sin aprendizaje |
 
-No se dispone de datos de benchmarks comparativos directos entre estos checkpoints en las mismas tareas; los datos de la model card comparan el ecosistema laya con Jev 1.14 en escenarios de aprendizaje continuo (ver sección de benchmarks).
+La comparación directa con clasificadores encoder convencionales (por ejemplo, fine-tunes de BERT o DeBERTa para text-classification) no está disponible en la información proporcionada; la diferencia principal documentada es la calibración de abstención, el conjunto conformal y el aprendizaje continuo sin reentrenamiento.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no soporta otros idiomas; para multilingüe existe `laya-multilingual`.
-- Contexto limitado a 1.024 tokens: documentos o hilos más largos deben truncarse o dividirse.
-- La bandera `unbound` no es fiable como único criterio de enrutamiento: según la model card, se activó en el 71% de filas normales de banking77, por lo que enviaría la mayoría de buenas respuestas a revisión.
-- El umbral de abstención está calibrado para una tasa de error del 10% por defecto; debe recalibrarse con datos propios para otros niveles de riesgo.
-- Riesgo de alucinación no aplica en el sentido generativo (no genera texto), pero sí puede producir clasificaciones erróneas en entradas ambiguas o fuera de distribución; el conjunto conformal y la abstención mitigan este riesgo.
-- En suites públicas genéricas zero-shot, un modelo alojado grande supera a laya; el modelo está optimizado para los cuatro flujos de trabajo del dataset `typed-decisions`.
-- Como puerta de inyección de prompts, su rendimiento es inferior a Jev sin entrenar en tráfico real (73,0% frente a 79,1% de detección).
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales conocidas.
-- No se dispone de información sobre sesgos específicos del modelo ni sobre la composición del dataset de entrenamiento.
+- El modelo está entrenado y evaluado principalmente en inglés; no se garantiza un rendimiento adecuado en otros idiomas (para ello existe `laya-multilingual`).
+- La bandera `unbound` tiene baja especificidad en algunos dominios: según la model card, se activó en el 71 % de las filas normales de banking77, por lo que no debe usarse como única señal de enrutado.
+- El umbral de abstención está calibrado a una tasa de error objetivo (10 % por defecto); cambiarlo altera el equilibrio entre cobertura y precisión.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de clasificación errónea en entradas fuera de distribución o ambiguas.
+- La licencia Apache 2.0 cubre los pesos y el paquete `laya`, pero el aprendizaje continuo (`laya.Learner`, `laya.Escalator`, `laya.vllm_teacher`) requiere `vegaml-learn`, bajo PolyForm Noncommercial 1.0.0: su uso en empresa, producto o servicio de pago requiere licencia comercial.
+- No se detallan sesgos conocidos ni la composición del dataset de entrenamiento, lo que limita la auditoría de equidad.
+- El contexto efectivo de este checkpoint es de 1024 tokens; entradas más largas deben truncarse o dividirse.
+- No es un modelo generativo: no sirve para redactar, resumir ni mantener conversaciones; solo para clasificar y decidir.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/convaiinnovations/laya-typed-decisions
-- Familia Laya: https://huggingface.co/convaiinnovations/laya
+- Modelo base Laya: https://huggingface.co/convaiinnovations/laya
+- Variante multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
-- Repositorio vegaml: https://github.com/NandhaKishorM/vegaml
-- Studio (entrenamiento de motores de decisión): https://studio.embedding.in
+- Paper: https://doi.org/10.20944/preprints202611.0781.v1
+- Repositorio del proyecto: https://github.com/NandhaKishorM/vegaml
+- Licencia comercial de `vegaml-learn`: https://embedding.in/licence

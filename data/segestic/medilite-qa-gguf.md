@@ -2,87 +2,111 @@
 
 ## Resumen
 
-MediLITE-QA-GGUF es un modelo de generación de texto cuantizado en formato GGUF, resultado de la fusión de un adaptador LoRA de especialización médica con el modelo base `microsoft/Phi-3.5-mini-instruct`. El adaptador, desarrollado por el usuario `segestic`, fue entrenado mediante QLoRA sobre un conjunto de datos médico denominado `seg-vall_med`, y posteriormente fusionado y cuantizado para su uso con motores de inferencia compatibles con GGUF como `llama.cpp` u Ollama.
+MediLITE-QA es un modelo de respuesta a preguntas medicas de opcion multiple, construido mediante ajuste fino con QLoRA sobre `microsoft/Phi-3.5-mini-instruct` (3.821.079.648 parametros). Lo desarrollan Olusegun Oladele Odewole y Seren Basaran, y se publica bajo el identificador `segestic/MediLITE-QA-GGUF`. El objetivo declarado es demostrar que un modelo de dominio especifico, cuantizado a 4 bits y ejecutado exclusivamente en CPU de un portatil de consumo, puede alcanzar una precision competitiva con un coste energetico inferior al de modelos generalistas de 7-8B.
 
-El modelo está pensado para tareas de respuesta a preguntas médicas y comprensión de documentos clínicos en entornos offline. Con aproximadamente 3.800 millones de parámetros, se sitúa en la gama de modelos pequeños que pueden ejecutarse en hardware de consumo, aunque el repositorio no especifica los niveles de cuantización disponibles ni la longitud de contexto exacta. Su licencia MIT permite uso comercial sin restricciones, pero el autor advierte explícitamente de que no es una herramienta clínica certificada.
+La relevancia del artefacto es doble. Por un lado, ofrece una via de inferencia sin GPU para evaluacion de conocimiento medico en entornos con recursos limitados. Por otro, el modelo esta acompanado de un articulo en *Sustainability* (2026, 18(21), 11245) que documenta mediciones de energia por token, tiempo hasta el primer token y memoria residente maxima sobre un Intel Core i5-1135G7 con 6,96 GiB de RAM.
 
-La relevancia de este modelo radica en la combinación de un base compacta y eficiente (Phi-3.5-mini) con un ajuste fino especializado en dominio médico, ofreciendo una alternativa ligera para aplicaciones de asistencia sanitaria que requieren privacidad y despliegue local.
+El repositorio distribuye cuatro ficheros GGUF (Q4_K_M, Q5_K_M, Q8_0 y F32) compatibles con llama.cpp y runtimes derivados. La precision zero-shot del fichero Q4_K_M promediada sobre nueve benchmarks medicos (7.045 items) es del 71,87%, frente al 72,79% del modelo en fp16 y el 68,73% del modelo base. La licencia es MIT, pero el autor restringe explicitamente el uso a investigacion y prohibe su empleo para informar decisiones de atencion al paciente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Phi-3.5-mini-instruct) |
-| Parametros totales | 3.821.079.648 (3,8 B) |
-| Parametros activos | no aplicable (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (el adaptador sugiere 4K, no confirmado) |
-| Tipos de cuantizacion | no disponible (el repositorio contiene multiples archivos GGUF, sin especificar) |
-| Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer decoder-only (Phi-3.5-mini), ajuste fino QLoRA y posterior cuantizacion GGUF |
+| Parametros totales | 3.821.079.648 (3,8B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens en los ejemplos de uso de la model card (el contexto nativo de Phi-3.5-mini es mayor, pero no se documenta en esta ficha) |
+| Tipos de cuantizacion | Q4_K_M (2,39 GB), Q5_K_M (2,82 GB), Q8_0 (4,06 GB), F32 (7,64 GB) |
+| Idiomas soportados | en (ingles) |
+| Licencia | MIT, con restriccion de uso a investigacion indicada por el autor |
+| Formato de pesos | GGUF (llama.cpp); el modelo fusionado en Transformers esta en el repo `segestic/MediliteQA-phi3.5-mini-all-med` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de `microsoft/Phi-3.5-mini-instruct`, un transformer decoder-only con atención de ventana deslizante y optimizaciones propias de la familia Phi-3.5. Sobre esta base se aplicó un adaptador LoRA entrenado con QLoRA (cuantización de 4 bits durante el entrenamiento) sobre un dataset médico denominado `seg-vall_med`. El proceso de entrenamiento no está documentado en detalle: se desconoce el número de tokens, la composición exacta del dataset, o si se aplicaron técnicas de alineación como RLHF o DPO. El adaptador fue posteriormente fusionado con el modelo base y cuantizado a formato GGUF para su distribución.
+El modelo parte de Phi-3.5-mini-instruct, un transformer decoder-only de 3,8B parametros. Sobre esa base se aplica un ajuste fino supervisado con QLoRA (adaptador `segestic/phi3.5-mini-4k-qlora-medical-seg-vall_med`), que posteriormente se fusiona con los pesos base para producir el modelo en Transformers y, a partir de ahi, las cuantizaciones GGUF. La model card no detalla el numero exacto de tokens de entrenamiento ni la composicion del dataset medico utilizado; solo indica que el resultado es un modelo especializado en responder preguntas de opcion multiple con una unica letra.
 
-No se han publicado detalles sobre innovaciones técnicas adicionales más allá del uso de LoRA y QLoRA. El nombre del adaptador sugiere una longitud de contexto de 4K tokens, pero no se confirma en la documentación.
+No se documenta el uso de RLHF ni DPO. La innovacion tecnica destacable no esta en la arquitectura, sino en el pipeline de eficiencia: cuantizacion a 4 bits (Q4_K_M) combinada con inferencia en CPU y medicion sistematica de energia por token. El articulo asociado compara el consumo del modelo con el de modelos abiertos de 7-8B ejecutados en el mismo hardware, reportando un uso de energia de CPU entre 1,56 y 1,98 veces menor por token generado.
 
 ## Capacidades
 
-- Generación de texto en dominio médico: respuesta a preguntas sobre salud, terminología clínica y comprensión de documentos médicos.
-- Comprensión de documentos: capacidad de procesar y extraer información de textos clínicos, historiales o artículos médicos (según la descripcion del autor).
-- Inferencia offline: al estar en formato GGUF, puede ejecutarse en entornos sin conexión con motores como `llama.cpp`.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, ni soporte multimodal (vision, audio).
-- No se especifican idiomas soportados; se asume que hereda las capacidades multilingues del modelo base Phi-3.5-mini-instruct, pero no está confirmado.
+- Generacion de texto y respuesta a preguntas medicas de opcion multiple, devolviendo una unica letra como salida.
+- Razonamiento de dominio limitado al formato de examen medico (estilo USMLE y similares).
+- Inferencia en CPU sin GPU mediante llama.cpp y llama-cpp-python.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el pipeline `text-generation`.
+- Soporte de chat mediante `create_chat_completion` con temperatura 0,0 y `max_tokens=4` para forzar la respuesta de una letra.
+- Capacidades multilingues: solo ingles declarado.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente de consulta medica offline: un profesional sanitario puede desplegar el modelo en un dispositivo local para resolver dudas sobre farmacologia, sintomas o procedimientos sin depender de conexion a internet.
-- Extraccion de informacion de historiales clinicos: el modelo puede procesar notas medicas y extraer datos relevantes como diagnostico, medicacion o alergias, facilitando la revision de expedientes.
-- Generacion de resumenes de articulos cientificos: dado su entrenamiento en dominio medico, puede condensar documentos extensos en resumenes breves para revision rapida.
-- Soporte a pacientes para comprension de terminos medicos: el modelo puede explicar en lenguaje sencillo conceptos complejos extraidos de informes o recetas.
-- Clasificacion de consultas en triaje: a partir de descripciones de sintomas, el modelo puede categorizar la urgencia o derivar a especialidad, siempre como apoyo y no como diagnostico.
-- Formacion y educacion medica: estudiantes de medicina pueden interactuar con el modelo para practicar casos clinicos o resolver dudas academicas en un entorno controlado.
+- Evaluacion de conocimiento medico en investigacion: el modelo permite medir la precision de un LLM cuantizado sobre bancos de preguntas tipo examen sin necesidad de GPU, lo que facilita replicar experimentos en portatiles convencionales.
+- Benchmarking energetico de LLMs: sirve como referencia para comparar joules por token entre modelos de 3,8B y modelos de 7-8B en el mismo hardware, tal como se hace en el articulo asociado.
+- Prototipado de sistemas de triaje educativo: en entornos docentes de medicina se puede desplegar en un portatil para generar preguntas de practica y corregir respuestas de opcion multiple con latencia de 1,34 s hasta el primer token.
+- Docencia y formacion en IA sostenible: el repositorio y el paper constituyen un caso de estudio reproducible sobre cuantizacion, QLoRA e inferencia en CPU para asignaturas de machine learning.
+- Despliegue en entornos aislados o sin conectividad: al caber en 2,39 GB y ejecutarse en CPU, puede instalarse en equipos sin acelerador y con recursos de memoria limitados (pico de 4.403 MiB con contexto de 2.000 tokens).
+- Filtrado y clasificacion de items de opcion multiple en pipelines de datos: el formato de salida de una letra simplifica el parseo y la integracion en scripts de evaluacion automatizada.
+- Investigacion sobre sesgos y seguridad en IA medica: el modelo esta pensado para estudiar el comportamiento de modelos pequenos de dominio y sus fallos, no para uso clinico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar para este modelo especifico.
+Precision zero-shot del fichero Q4_K_M promediada sobre nueve benchmarks medicos (7.045 items):
+
+| Metrica | Valor |
+|---|---|
+| Precision media Q4_K_M | 71,87% (IC 95% bootstrap: 70,05 a 73,76) |
+| Precision media modelo fp16 | 72,79% |
+| Precision media modelo base | 68,73% |
+
+Eficiencia del fichero Q4_K_M con llama-cpp-python, 4 hilos, sin GPU, Intel Core i5-1135G7 con 6,96 GiB de RAM:
+
+| Metrica | Valor |
+|---|---|
+| Tiempo hasta el primer token (regimen estable) | 1,34 s |
+| Tiempo por token de salida | 117 ms (8,19 tokens/s) |
+| Memoria residente maxima (contexto de 2.000 tokens) | 4.403 MiB (61,8% de la RAM) |
+| Energia del paquete de CPU | 3,17 J por token generado |
+
+Los resultados por benchmark individual no se incluyen en la model card; el autor remite al articulo. No se han publicado resultados de MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo de 3,8 B en formato GGUF, las cuantizaciones tipicas requieren aproximadamente:
-  - Q4_K_M: ~2,5-3 GB de VRAM
-  - Q5_K_M: ~3-3,5 GB
-  - Q8_0: ~4-4,5 GB
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones mas bajas. Ejemplos: NVIDIA GTX 1660 Super, RTX 2060, RTX 3060, o superiores. Tambien puede ejecutarse en CPU con suficiente RAM (8-16 GB).
-- Compatibilidad con hardware de consumo: si, cabe en GPUs de gama media y baja.
-- Opciones de despliegue: `llama.cpp`, Ollama, LM Studio, o cualquier motor compatible con GGUF. Tambien puede usarse con bindings de Python como `llama-cpp-python`.
-- Latencia y throughput: no se han publicado mediciones especificas. Para un modelo de 3,8 B en GPU moderna, se espera una generacion de 20-40 tokens/segundo en cuantizacion Q4, pero depende del hardware y la implementacion.
+- VRAM estimada: no aplica para el flujo documentado, que es inferencia en CPU con `n_gpu_layers=0`. En caso de descargar capas a GPU, el fichero Q4_K_M ocupa 2,39 GB y el F32 7,64 GB.
+- GPU recomendadas: no documentadas por el autor. Por tamano, cualquier GPU consumer con al menos 4 GB de VRAM podria alojar el Q4_K_M completo; no hay mediciones publicadas en GPU.
+- Caben en GPU consumer: si, el Q4_K_M (2,39 GB) y el Q5_K_M (2,82 GB) caben en tarjetas de 4-6 GB; el Q8_0 (4,06 GB) requiere 6 GB o mas; el F32 (7,64 GB) requiere 8-10 GB.
+- Hardware de referencia medido: Intel Core i5-1135G7, 4 hilos, 6,96 GiB de RAM, sin GPU.
+- Opciones de despliegue: llama.cpp, llama-cpp-python y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere soporte en endpoints de Hugging Face. No se documenta compatibilidad con vLLM ni TGI.
+- Latencia y throughput medidos: 1,34 s hasta el primer token, 117 ms por token, 8,19 tokens/s, 3,17 J por token en el hardware de referencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Especializacion |
-|---|---|---|---|---|
-| MediLITE-QA-GGUF (este) | 3,8 B | no disponible (sugerido 4K) | MIT | Medica (LoRA sobre Phi-3.5-mini) |
-| BioMistral (7B) | 7 B | 8K | Apache 2.0 | Medica (fine-tuning de Mistral) |
-| Meditron (7B) | 7 B | 4K | GPL-3.0 | Medica (fine-tuning de LLaMA-2) |
-| Phi-3.5-mini-instruct (base) | 3,8 B | 128K | MIT | Generalista |
+| Modelo | Parametros | Contexto | Precision medica | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MediLITE-QA (Q4_K_M) | 3,8B | 2.048 tokens en ejemplos | 71,87% (9 benchmarks, 7.045 items) | MIT con restriccion a investigacion | GGUF en Hugging Face |
+| Phi-3.5-mini-instruct (base) | 3,8B | no disponible en esta ficha | 68,73% (mismos benchmarks) | MIT | Pesos originales en Hugging Face |
+| MediLITE-QA fp16 | 3,8B | no disponible | 72,79% (mismos benchmarks) | MIT con restriccion a investigacion | Repo Transformers asociado |
+| Modelos abiertos de 7-8B medidos en el paper | 7-8B | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion es cualitativa, ya que no se dispone de benchmarks para MediLITE-QA. Frente a BioMistral y Meditron, este modelo es mas pequeño y ligero, lo que facilita su despliegue en hardware limitado, pero probablemente con menor capacidad de razonamiento general. Su licencia MIT es mas permisiva que la GPL de Meditron. El contexto del modelo base Phi-3.5-mini es de 128K, pero el adaptador LoRA parece haber sido entrenado con 4K, lo que podria limitar la ventana efectiva.
+La model card solo aporta datos cuantitativos frente al modelo base y frente a la version fp16. La comparacion con modelos de 7-8B se limita al consumo energetico (1,56-1,98 veces mayor por token en el mismo hardware); no se ofrecen cifras de precision de esos modelos en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- No es una herramienta clinica certificada: el autor advierte explicitamente que el modelo no debe usarse en produccion o toma de decisiones medicas sin validacion adecuada.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar respuestas incorrectas o inventadas, especialmente en dominios especializados como la medicina.
-- Sesgos potenciales: el dataset de entrenamiento `seg-vall_med` no esta documentado, por lo que se desconocen posibles sesgos demograficos, geograficos o culturales.
-- Longitud de contexto limitada: si el adaptador se entreno con 4K tokens, la ventana efectiva puede ser menor que la del modelo base (128K), lo que limita el procesamiento de documentos largos.
-- Idiomas no especificados: no se garantiza el rendimiento en otros idiomas distintos del ingles (o el que use el dataset).
-- Sin soporte de tool calling ni agentes: no es adecuado para tareas que requieran interaccion con APIs o ejecucion de acciones externas.
-- Formato GGUF: requiere motores de inferencia compatibles; no se puede cargar directamente con Transformers de Hugging Face sin conversion previa.
+- No validado clinicamente: una revision ciega exploratoria con cinco clinicos encontro una correccion clinica inferior a la de un modelo de referencia frontier, y algunas respuestas fueron marcadas como potencialmente daninas.
+- Uso restringido: el autor indica explicitamente que es solo para investigacion y que no es un dispositivo medico ni debe usarse para informar la atencion al paciente.
+- Formato de salida rigido: el modelo esta entrenado para responder con una unica letra y sigue con menos fiabilidad instrucciones de formato libre o explicaciones.
+- Alcance de hardware limitado: los resultados de eficiencia provienen de un unico portatil de consumo y no deben asumirse transferibles a otros dispositivos.
+- Idioma: solo se declara ingles; no hay soporte documentado de castellano ni de otros idiomas.
+- Contexto: los ejemplos usan 2.048 tokens; no se documenta el comportamiento con ventanas mas largas ni la degradacion asociada.
+- Riesgo de alucinacion: no se han publicado tasas especificas de alucinacion, pero al ser un modelo de 3,8B especializado en opcion multiple, su fiabilidad fuera de ese formato es limitada.
+- Sesgos: no se documenta ninguna evaluacion de sesgos demograficos, geograficos o culturales en la informacion disponible.
+- Licencia: MIT, pero la restriccion de uso a investigacion de la model card debe respetarse en cualquier despliegue comercial.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/segestic/MediLITE-QA-GGUF
-- Adaptador LoRA original: https://huggingface.co/segestic/phi3.5-mini-4k-qlora-medical-seg-vall_med
+- Repositorio GGUF: https://huggingface.co/segestic/MediLITE-QA-GGUF
+- Modelo fusionado en Transformers: https://huggingface.co/segestic/MediliteQA-phi3.5-mini-all-med
+- Adaptador LoRA: https://huggingface.co/segestic/phi3.5-mini-4k-qlora-medical-seg-vall_med
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
-- Repositorio GitHub relacionado (MediLite, sistema multi-agente medico): https://github.com/Mariam-Mohsen/MediLite
+- Codigo y logs de evaluacion: https://github.com/segestic/Medilite-QA
+- Articulo: Odewole, O.O.; Basaran, S. "MediLITE-QA: Energy-Efficient Medical Question Answering with a Quantized Domain-Specific Language Model on a Commodity Laptop CPU." *Sustainability* 2026, 18(21), 11245. https://doi.org/10.3390/su182111245
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python

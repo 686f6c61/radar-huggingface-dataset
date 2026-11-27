@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aletogno/jobmatch-models · Hugging Face",
-      "url": "https://huggingface.co/Aletogno/jobmatch-models",
-      "snippet": "Instructions to use Aletogno/jobmatch-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Aletogno/jobmatch-models with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "Aletogno (Alessandro Tognoni) - Hugging Face",
-      "url": "https://huggingface.co/Aletogno",
-      "snippet": "Recent Activity published a model2 days ago Aletogno/jobmatch-models updated a model2 days ago Aletogno/jobmatch-models View all activity"
-    },
-    {
-      "title": "jobmatch-ai/models at main · ASCCJR/jobmatch-ai · GitHub",
-      "url": "https://github.com/ASCCJR/jobmatch-ai/tree/main/models",
-      "snippet": "Contribute to ASCCJR/jobmatch-ai development by creating an account on GitHub."
-    },
-    {
-      "title": "JobMatch AI",
-      "url": "https://github.com/wadekarg/JobMatchAI",
-      "snippet": "Custom model entry — every provider has a Custom… option so you can paste in any model id the provider supports, including brand-new ones. Per-provider API key memory — JobMatch AI remembers one API key per provider."
-    },
-    {
-      "title": "AI Model Downloads - 498 Model Examples - AI Models",
-      "url": "https://aimodels.org/ai-models/",
-      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
-    }
-  ]
+  "sources": []
 }

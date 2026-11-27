@@ -2,105 +2,100 @@
 
 ## Resumen
 
-AgentMujo Q8 9B v1.0 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B desarrollado por BH-Language-AI, orientado especificamente a la generacion de llamadas a funciones (function calling) y a flujos de agentes en lengua bosnia. El modelo parte de una base de 8.953.803.264 parametros (aproximadamente 9B) con arquitectura transformer densa, hidden size de 4096, 32 capas y un vocabulario de 248.320 tokens, y se distribuye exclusivamente en formato GGUF con cuantizacion Q8.
+BH-AgentMujo-1-9B-9Q-Bundle es un repositorio de archivo publicado por BH-Language-AI que contiene 15 cuantizaciones GGUF Q8_0 (~9,5 GB por fichero, ~143 GB en total) de la familia de modelos BH-AgentMujo-1-9B, un ajuste fino en bosnio del modelo base Qwen/Qwen3.5-9B. El modelo está especializado en function calling y flujos de agentes, con énfasis en el dialecto y las particularidades lingüísticas del bosnio, un idioma con escasa representación en los modelos generalistas actuales.
 
-El problema que aborda es concreto: los modelos multilingues genericos rinden de forma irregular cuando se les exige emitir llamadas a herramientas con argumentos correctos en bosnio y bajo un prompt de produccion sin especificacion de formato explicita. El autor documenta un proceso iterativo de SFT (r16 y r64) seguido de DPO que eleva la tasa de acierto en tool calling del 0.60 al 0.70 en su propio banco de pruebas (AgentMujo-Bench v0.5, 48 casos), con un task_success de 0.979 en el protocolo de bucle completo.
+El modelo resuelve el problema de disponer de un agente conversacional capaz de invocar herramientas de forma fiable en bosnio, sin depender de traducciones intermedias al inglés. La arquitectura subyacente es la de Qwen3.5-9B: transformer denso de 8.953.803.264 parámetros, 32 capas, dimensión oculta 4096 y vocabulario de 248.320 tokens. El bundle incluye el histórico completo de builds (gold01–gold08, v0.1–v0.6 y dpo01), de los cuales el autor marca `model-q8-gold06.gguf` como versión de producción (release v1.0, 2026-11-10).
 
-La relevancia actual reside en su especializacion: no es un modelo generalista, sino un artefacto de produccion con metricas declaradas, versionado por iteraciones (gold01 a gold06) y una decision explicita de congelar gold06 como version final tras comprobar rendimientos decrecientes en DPO adicional. La licencia Apache-2.0 y la compatibilidad con endpoints facilitan su integracion en infraestructura existente.
+La relevancia de esta ficha radica en que el repositorio es un archivo, no el destino de despliegue: el propio autor redirige al repo de producción `bh-agentmujo-1-9b`. Aun así, el bundle permite reproducir y auditar la evolución del ajuste fino, y sus cifras de AgentMujo-Bench v0.5 son el único dato de evaluación publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen/Qwen3.5-9B) |
+| Arquitectura | Transformer denso (base Qwen/Qwen3.5-9B) |
 | Parametros totales | 8.953.803.264 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8 (GGUF); el repositorio solo publica ficheros Q8 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | GGUF Q8_0 (unica incluida en el bundle) |
 | Idiomas soportados | bosnio (bs) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`model-q8-gold06.gguf` y versiones anteriores) |
-
-Datos adicionales de la arquitectura base declarados en la model card: hidden size 4096, 32 capas, vocabulario de 248.320 tokens.
+| Formato de pesos | GGUF (convertido con llama.cpp `convert_hf_to_gguf.py --no-mtp`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune sobre Qwen/Qwen3.5-9B (commit `c20223623`), un transformer denso de aproximadamente 9B parametros. El entrenamiento se estructura en dos fases. La primera es SFT con LoRA: una etapa inicial con rango r16 sobre los conjuntos jt01 a jt05, seguida de rango r64 sobre r6401 a r6406 con una mezcla (mix v0.35) que, segun el autor, alcanzaba un techo de 0.60 en tool calling solo cuando se proporcionaba una especificacion de formato explicita. La segunda fase, denominada dialect-dense, produce las iteraciones gold01 a gold06, donde se ajusta el comportamiento para que el formato funcione bajo el prompt de produccion por defecto, sin spec de formato.
+El modelo parte de Qwen/Qwen3.5-9B (commit `c20223623`), un transformer denso con 32 capas, dimensión oculta 4096 y vocabulario de 248.320 tokens. Sobre esa base se aplicó un ajuste fino supervisado (SFT) en cadena: primero adaptadores LoRA de rango 16 (jt01–jt05, con mix v0.35), después LoRA de rango 64 (r6401–r6406) y finalmente las iteraciones gold01–gold06. El autor describe el entrenamiento como "dialect-dense SFT", es decir, SFT con densidad alta de dialecto bosnio, y señala que ese enfoque "rompió el techo" de rendimiento del formato de tool calling. El framework utilizado es `agentmujo-training`, publicado en GitHub.
 
-Sobre gold04 se aplica DPO (DPO-03, rango r16) para corregir el sesgo de invocacion excesiva de herramientas en conversacion trivial (chitchat), elevando la metrica notool de 0.25 a 0.50. Una iteracion posterior, gold08, anade DPO-04 con 60 pares adicionales y no mejora los resultados, lo que lleva al autor a declarar gold06 como version final. El autor documenta tambien una regresion intermedia (gold03) causada por sesgo hacia respuestas de tipo listado, corregida en gold04. No se especifican en la informacion disponible el numero total de tokens de entrenamiento ni la composicion completa del dataset.
+La cuantización se realizó con llama.cpp usando `convert_hf_to_gguf.py --no-mtp` y el tipo Q8_0, generando ficheros de ~9,5 GB. El bundle contiene 15 variantes: gold01–gold08, v0.1–v0.6 y dpo01. No se documenta en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO más allá del fichero `dpo01` (que sugiere una iteración con DPO, sin detalles). Tampoco se especifica si se preservó el modo thinking del modelo base: el autor indica explícitamente que el "think-profile no forma parte del release".
 
 ## Capacidades
 
-- Generacion de texto conversacional en bosnio.
-- Function calling / tool calling con generacion de argumentos estructurados (metrica args de 0.846 en gold06).
-- Salida JSON valida en el 100% de los casos evaluados (metrica json 1.0).
-- Operacion en modo agente multi-paso: el protocolo de bucle (modelo + policy + executor) alcanza task_success de 0.979.
-- Manejo de escenarios multi-herramienta (metrica multi de 0.75 en gold06).
-- Comportamiento de verificacion previa a la accion (check-then-ask) en lugar de actuacion ciega, disenado intencionadamente por seguridad.
-- Capa de rechazo y seguridad (metricas refusal 0.8 y safety 0.857).
-- Perfil non-think: el modelo se distribuye sin modo de razonamiento extendido; el autor indica que el perfil think no forma parte del release.
-- No se declaran capacidades de vision, audio ni otros dominios.
+- Generación de texto conversacional en bosnio, con especial atención a variantes dialectales.
+- Function calling / tool calling: el eje central del ajuste fino, evaluado con un gate de herramienta y de argumentos.
+- Flujos de agente multi-paso, con política de "check-then-ask" (comprobar antes de actuar) en lugar de ejecución ciega.
+- Integración con endpoints compatibles (tag `endpoints_compatible` en Hugging Face).
+- Soporte de conversación multi-turno (tag `conversational`).
+- No se documentan capacidades de visión, audio ni modo thinking en este release.
 
 ## Casos de uso
 
-- Automatizacion de atencion al cliente en bosnio: el modelo puede gestionar turnos conversacionales y decidir cuando invocar una herramienta (consulta de pedido, cambio de direccion) frente a cuando responder directamente, con una tasa de acierto de invocacion del 0.70 en el banco del autor. La limitacion conocida de invocar herramientas en exceso en conversacion trivial exige una capa de politica que filtre el exceso, tal como el propio autor recomienda.
-- Backend de agentes para integracion de sistemas empresariales: con task_success de 0.979 en el protocolo de bucle, es adecuado para pipelines donde el modelo propone acciones, un ejecutor las valida y el resultado se realimenta al modelo en pasos sucesivos.
-- Extraccion estructurada de datos desde texto libre: la tasa de JSON valido del 1.0 y la generacion de argumentos con 0.846 de acierto lo hacen util para convertir mensajes de usuario en payloads de API.
-- Despliegue en infraestructura local o soberana: al distribuirse en GGUF Q8 y con licencia Apache-2.0, encaja en entornos con requisitos de residencia de datos o sin acceso a APIs externas, ejecutandose sobre llama.cpp u Ollama.
-- Prototipado de asistentes de voz o chat para el mercado bosnio: es uno de los pocos ajustes publicos especializados en bosnio con metricas de agente declaradas, lo que reduce el trabajo de adaptacion linguistica inicial.
-- Evaluacion comparativa de tecnicas de alineacion: el repositorio conserva todas las iteraciones (gold01 a gold06, v0.1 a v0.6, dpo01) y los adaptadores, lo que permite reproducir el efecto de SFT y DPO sobre una metrica concreta.
+- Agentes de atención al cliente en bosnio: el ajuste dialect-dense permite gestionar conversaciones multi-turno con usuarios que escriben en bosnio coloquial, invocando herramientas de consulta de pedidos o estado de cuenta mediante function calling.
+- Automatización de back-office con tool calling: el modelo puede encadenar llamadas a APIs internas (CRM, ERP) en un pipeline de agente, con la política check-then-ask reduciendo acciones erróneas.
+- Asistentes de voz o chat para el mercado de Bosnia y Herzegovina: al cubrir el bosnio de forma nativa evita la pérdida de matices de un pipeline de traducción a inglés.
+- Evaluación y auditoría de ajustes finos: el bundle conserva 15 builds con métricas de gate, lo que permite reproducir la curva de mejora (gold01 0,60 → gold06 0,70) y comparar iteraciones SFT frente a DPO.
+- Despliegue local con llama.cpp u Ollama: al ser GGUF Q8_0 de ~9,5 GB, puede ejecutarse en estaciones de trabajo con GPU de consumo alta gama o incluso en CPU con suficiente RAM.
+- Generación de datos sintéticos en bosnio para otros proyectos: el modelo puede producir diálogos y trazas de tool calling en ese idioma para aumentar datasets de entrenamiento.
+- Prototipado de agentes en investigación lingüística: útil para estudiar el comportamiento de function calling en lenguas de bajos recursos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en AgentMujo-Bench v0.5 (48 casos), prompt de produccion por defecto. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El autor publica resultados en AgentMujo-Bench v0.5 (48 casos, prompt de producción por defecto) para los builds gold:
 
-| Metrica | gold01 | gold02 | gold03 | gold04 | gold05 | gold06 (final) | gold08 |
-|---|---|---|---|---|---|---|---|
-| Gate tool | 0.60 | 0.633 | 0.50 | 0.70 | 0.667 | 0.70 | 0.667 |
-| Gate args | 0.654 | 0.731 | 0.50 | 0.885 | 0.808 | 0.846 | 0.808 |
-| Gate notool | no disponible | no disponible | no disponible | 0.25 | no disponible | 0.50 | 0.25 |
-| Gate high | no disponible | no disponible | no disponible | 1.0 | no disponible | 0.8 | no disponible |
-| Gate multi | no disponible | no disponible | no disponible | 0.8 | no disponible | 0.75 | no disponible |
-| Gate json | no disponible | no disponible | no disponible | 1.0 | no disponible | 1.0 | no disponible |
-| Gate safety | no disponible | no disponible | no disponible | 0.857 | no disponible | 0.857 | no disponible |
-| Gate refusal | no disponible | no disponible | no disponible | 0.8 | no disponible | 0.8 | no disponible |
-| Loop tool | no disponible | no disponible | no disponible | 0.80 | no disponible | 0.833 | 0.80 |
-| Loop strict | no disponible | no disponible | no disponible | 0.708 | no disponible | 0.75 | 0.75 |
-| Loop task_success | no disponible | no disponible | no disponible | no disponible | no disponible | 0.979 | 1.0 |
+| Fichero | Gate herramienta | Gate argumentos | Notas |
+|---|---|---|---|
+| `model-q8-gold06.gguf` | 0,70 | 0,846 | Producción (v1.0); loop tool 0,833, strict 0,75, task 0,979 |
+| `model-q8-gold05.gguf` | 0,667 | 0,808 | Archivo |
+| `model-q8-gold04.gguf` | no disponible | no disponible | Mejor pre-gold06 |
+| `model-q8-gold03.gguf` | 0,50 | 0,50 | Regresión por sesgo de listado |
+| `model-q8-gold02.gguf` | 0,633 | 0,731 | Archivo |
+| `model-q8-gold01.gguf` | 0,60 | 0,654 | Primer formato por defecto |
+| `model-q8-gold07/gold08.gguf` | no disponible | no disponible | Experimentales |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 8.953.803.264 parametros en Q8 (aproximadamente 8 bits por peso), el peso del modelo ronda los 9 GB; sumando overhead de contexto y cache KV, se recomienda un minimo de 12 GB de VRAM y 16 GB para margenes comodos con contextos largos. El tamano del repositorio (85,7 GB) se debe a que contiene multiples ficheros GGUF de las distintas iteraciones, no a un unico peso.
-- GPU recomendadas: RTX 4090 (24 GB) para uso individual; A100 o H100 para despliegues con concurrencia; L4 o RTX 3090 como minimo practico.
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas de VRAM en Q8; con 8 GB seria necesario recurrir a cuantizaciones menores, que no se publican en este repositorio.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo API, aunque no se detalla el servidor concreto. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion a safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: ~9,5 GB de pesos en Q8_0; con overhead de contexto y KV cache, prever 11–14 GB según longitud de contexto.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia cómoda; A100/H100 sobredimensionadas para un modelo de 9B.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más (RTX 4070 Ti, RTX 4080, RTX 4090); en 8 GB requeriría cuantizaciones menores no incluidas en este bundle.
+- Opciones de despliegue: llama.cpp (`llama serve`), Ollama (`ollama run hf.co/BH-Language-AI/bh-agentmujo-1-9b`), y servidores compatibles con endpoints (vLLM y TGI no soportan GGUF de forma nativa sin conversión).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
-|---|---|---|---|---|---|
-| AgentMujo Q8 9B (este) | 8,95B | no disponible | Function calling y agentes en bosnio | Apache-2.0 | GGUF Q8 |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Proposito general multilingue | Apache-2.0 | safetensors y derivados |
-| Alternativas especializadas en bosnio | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| BH-AgentMujo-1-9B (este) | 8,95B | no disponible | Apache-2.0 | Agente y tool calling en bosnio |
+| Qwen/Qwen3.5-9B (base) | 8,95B | no disponible | Apache-2.0 | Modelo generalista multilingüe |
+| bh-agentmujo-1-9b (repo de producción) | 8,95B | no disponible | Apache-2.0 | Misma familia, build gold06 como `model-q8.gguf` |
 
-No se dispone de informacion sobre otros ajustes finos publicos comparables en bosnio con metricas de agente declaradas, por lo que la comparativa cuantitativa con alternativas queda como no disponible.
+No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Invocacion excesiva de herramientas en conversacion trivial: la metrica notool es de 0.50 en gold06 (0.25 en gold04), lo que significa que el modelo tiende a proponer llamadas a funciones ante mensajes de chitchat. El autor recomienda una capa de politica que filtre el exceso; sin ella, el comportamiento en produccion sera erroneo en la mitad de estos casos.
-- Cobertura limitada a un unico idioma: el modelo declara solo bosnio (bs). Su rendimiento en castellano, ingles u otros idiomas no esta documentado y probablemente degrade respecto a la base Qwen3.5-9B.
-- Ausencia de modo de razonamiento: el perfil think no forma parte del release, por lo que no debe esperarse razonamiento extendido en tareas complejas de multiples pasos mas alla de la orquestacion de herramientas.
-- Benchmarks propietarios y de muestra pequena: todas las metricas provienen de AgentMujo-Bench v0.5 con 48 casos, disenado por el propio autor. No hay validacion independiente ni resultados en benchmarks estandar, lo que limita la comparabilidad.
-- Sin datos de sesgo: no se documentan evaluaciones de sesgo linguistico, cultural o de genero.
-- Riesgo de alucinacion en argumentos: aunque la metrica args es 0.846, un 15% de argumentos incorrectos en llamadas a herramientas puede provocar acciones erroneas en sistemas con efectos secundarios; se recomienda validacion en el ejecutor.
-- Versionado confuso: el repositorio contiene 13 ficheros GGUF de distintas iteraciones, algunas con regresiones conocidas (gold03). Solo gold06 debe usarse en despliegue, segun el autor.
-- Fecha de creacion futura: los metadatos indican creacion el 2026-11-11, lo que debe tenerse en cuenta al evaluar la madurez y el soporte del proyecto.
-- Licencia Apache-2.0: permite uso comercial sin restricciones adicionales, pero no exime de las obligaciones de atribucion correspondientes.
+- Este repositorio es un archivo: el autor recomienda desplegar desde `bh-agentmujo-1-9b`, no desde el bundle.
+- El gate de herramienta en producción (gold06) es 0,70, lo que implica un 30 % de fallos en la invocación de herramientas en el benchmark; no es adecuado para acciones críticas sin validación adicional.
+- El rendimiento "no-tool" es bajo (0,25–0,50 según el autor), por lo que el modelo no es fiable como chat generalista sin herramientas.
+- La política check-then-ask es intencional y puede ralentizar flujos que esperan ejecución directa.
+- Solo se declara soporte de bosnio; el rendimiento en otros idiomas no está documentado.
+- El bundle ocupa ~143 GB, lo que complica su descarga y almacenamiento.
+- Riesgo de alucinación en argumentos de herramientas no validados; se recomienda validación de esquema en producción.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-9B también es Apache-2.0 según la información disponible.
+- No se documentan sesgos específicos ni evaluación de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/BH-Language-AI/bs-qwen35-9b-agent-nonthink-q8-bundle
+- Repositorio Hugging Face: https://huggingface.co/BH-Language-AI/bs-qwen35-9b-agent-nonthink-q8-bundle
+- Repo de producción: https://huggingface.co/BH-Language-AI/bh-agentmujo-1-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Repositorio de adaptadores: https://huggingface.co/shaban2024/agentmujo-adapters
-- Repositorio del framework de entrenamiento: https://github.com/xnet-ba/agentmujo-training
+- Framework de entrenamiento: https://github.com/BH-Language-AI/agentmujo-training
+- Repo relacionado (BH-AgentMujo-1-9B): https://huggingface.co/BH-Language-AI/bh-agentmujo-1-9b

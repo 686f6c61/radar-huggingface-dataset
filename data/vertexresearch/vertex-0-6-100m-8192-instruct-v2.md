@@ -2,83 +2,90 @@
 
 ## Resumen
 
-Vertex 0.6 100M — 8192-ctx Instruct v2 es un modelo de lenguaje de 96,75 millones de parámetros desarrollado por Vertex Research, especializado en conversación multi-turno y tool calling. Forma parte de la familia Vertex 0.6, construida sobre una arquitectura transformer basada en Qwen3, y representa la versión instruct más capaz de su familia hasta la fecha. El modelo parte de una base con contexto extendido a 8192 tokens mediante un proceso de anexado de calidad (quality anneal) de 1B tokens, seguido de un ajuste fino supervisado (SFT) sobre aproximadamente 201K conversaciones ponderadas hacia diálogo multi-turno.
+Vertex 0.6 100M 8192-ctx Instruct v2 es un modelo de lenguaje de tipo transformer, afinado para instrucciones y conversacion, desarrollado por Vertex Research. Con 96.752.192 parametros (aproximadamente 97M) y embeddings atados, se posiciona como el modelo de chat mas capaz de la familia Vertex 0.6 hasta la fecha. Deriva de un modelo base con ventana de contexto de 8192 tokens, sometido a un proceso de "quality anneal" de mil millones de tokens, y posteriormente ajustado mediante SFT sobre aproximadamente 201.000 conversaciones.
 
-La relevancia de este modelo reside en su tamaño compacto (menos de 100M parámetros) combinado con una ventana de contexto de 8192 tokens, lo que lo hace ejecutable en hardware de consumo. Está diseñado para mantener conversaciones coherentes a lo largo de varios turnos, algo poco habitual en modelos de esta escala. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, aunque el propio autor advierte que no es apto para producción debido a sus limitaciones en precisión factual y razonamiento.
+El modelo resuelve el problema del dialogo multiturno en modelos de muy pequeno tamano: segun el autor, mantiene una conversacion a lo largo de varios turnos en lugar de degradarse tras el primer mensaje. Incorpora soporte mecanico de tool calling mediante bloques `<tool_call>` en JSON y formato de chat ChatML, lo que permite integrarlo en flujos con funciones definidas en el system prompt.
+
+Su relevancia es fundamentalmente experimental y educativa: demuestra que un modelo de menos de 100M de parametros puede sostener conversacion multiturno y emitir sintaxis de llamada a herramientas correcta. No obstante, el propio autor advierte que no es apto para produccion, con baja precision factual, razonamiento superficial y errores aritmeticos. La licencia Apache 2.0 y su reducido tamano lo hacen util para prototipado, investigacion sobre SFT y pruebas de pipelines de inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen3 |
-| Parametros totales | 96.752.192 (embeddings atados) |
-| Parametros activos | no aplica (modelo denso) |
+| Arquitectura | Transformer basada en Qwen3 |
+| Parametros totales | 96.752.192 (97M, embeddings atados) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens (RoPE theta 1M) |
-| Tipos de cuantizacion | no disponible (pesos en bf16) |
-| Idiomas soportados | ingles |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion GGUF no documentada) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en una arquitectura transformer densa derivada de Qwen3, con embeddings atados (tied embeddings) para reducir el numero de parametros. La base fue preentrenada desde cero sobre 10.01B tokens a contexto 1024, y posteriormente extendida a 8192 mediante una escalera RoPE de tres etapas (2048 con 350M tokens, 4096 con theta 250K y 300M tokens, y 8192 con theta 1M y 285M tokens) sobre datos frescos de Ultra-FineWeb. La version Instruct v2 parte de esta base de 8192 contexto, a la que se aplico un anexado de calidad de 1B tokens con datos de FineWeb-Edu y problemas aritmeticos sinteticos de nivel elemental.
+El modelo emplea una arquitectura transformer basada en Qwen3, con embeddings atados y codificacion posicional RoPE con theta de 1M, lo que habilita la ventana de contexto de 8192 tokens. El formato de conversacion es ChatML, con tokens especiales `<|im_start|>` y `<|im_end|>`, y utiliza dos tokens de fin de secuencia: `</s>` (id 2) y `<|im_end|>` (id 6).
 
-El ajuste fino supervisado se realizo con TRL sobre aproximadamente 201K conversaciones, con una composicion ponderada: smol-smoltalk (~130K, multi-turno conciso), UltraChat 200k (~40K, multi-turno mas largo), everyday-conversations (duplicado para grounding basico), datos de function/tool-calling, QA/tutoria y autoidentidad. El entrenamiento duro 2 epocas con learning rate 3e-4 en decaimiento coseno, precision bf16 y longitud maxima de 2048 tokens, alcanzando una loss final de evaluacion de 1.404. El formato de chat es ChatML con tokens `<|im_start|>` y `<|im_end|>`, y el EOS incluye tanto `</s>` (id 2) como `<|im_end|>` (id 6).
+El entrenamiento parte de un modelo base de la familia Vertex 0.6 100M con contexto de 8192, al que se aplico un "quality anneal" de mil millones de tokens sobre FineWeb-Edu y problemas matematicos sinteticos de nivel elemental. Posteriormente se realizo un SFT con TRL sobre aproximadamente 201.000 conversaciones, con ponderacion hacia el dialogo multiturno: smol-smoltalk (unas 130.000, multiturno conciso), UltraChat 200k (unas 40.000, multiturno mas largo), everyday-conversations (anadido dos veces, para anclaje de chat basico), datos de function/tool calling, datos de QA y tutoria, y datos de autoidentidad. Se entrenaron 2 epocas con learning rate 3e-4, scheduler coseno, precision bf16 y longitud maxima de 2048. La perdida de evaluacion final fue de 1,404.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno: mantiene coherencia a lo largo de varios turnos de dialogo, una mejora significativa frente a la version Instruct anterior.
-- Tool calling mecanico: emite bloques JSON `<tool_call>` con nombre y argumentos de funcion, y consume resultados en bloques `<tool_response>`, con definiciones de funciones en el system prompt.
-- Formato ChatML completo: soporta roles de sistema, usuario y asistente mediante plantilla de chat estandar.
-- Razonamiento basico y tutoria: entrenado con datos de QA y tutoria, puede responder preguntas educativas simples.
-- Autoidentidad: conoce su nombre y proposito como modelo de Vertex Research.
-- Limitacion de tool calling multi-paso: con una sola funcion disponible el formato es correcto y se detiene limpiamente, pero con multiples funciones puede elegir la herramienta equivocada y alucinar detalles al resumir respuestas de herramientas.
+- Generacion de texto conversacional en ingles con soporte multiturno mejorado respecto a versiones anteriores de la familia.
+- Dialogo de chat con formato ChatML y plantilla de chat integrada en el tokenizador.
+- Tool calling mecanico: emite bloques `<tool_call>{"name": ..., "arguments": ...}</tool_call>` y consume resultados en bloques `<tool_response>`.
+- Definicion de funciones mediante system prompt.
+- Respuesta a preguntas y tutoria basica, segun los datos de SFT empleados.
+- Autoidentidad entrenada explicitamente.
+- Razonamiento aritmetico elemental limitado (problemas de nivel escolar, con errores frecuentes).
+- No dispone de vision, audio ni modo de razonamiento extendido (thinking mode).
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Prototipado rapido de chatbots: por su tamano reducido, permite iterar rapidamente en el diseno de flujos conversacionales sin necesidad de infraestructura costosa, ideal para validar conceptos antes de escalar a modelos mayores.
-- Educacion y tutoria basica: puede responder preguntas de nivel elemental y mantener dialogos de apoyo al estudio, aunque con supervision humana debido a sus errores aritmeticos y falta de profundidad.
-- Experimentacion academica: util para investigacion en tecnicas de ajuste fino, evaluacion de modelos pequenos y estudio de comportamientos multi-turno en escalas reducidas.
-- Desarrollo de agentes simples con una unica herramienta: su tool calling mecanico funciona de forma fiable cuando solo hay una funcion disponible, permitiendo construir asistentes que consultan una API o base de datos concreta.
-- Generacion de datos sinteticos de conversacion: puede emplearse para crear datasets de entrenamiento de dialogos multi-turno, aprovechando su formato ChatML estandar.
-- Despliegue en entornos con recursos limitados: con solo 0.4 GB de tamano, cabe en dispositivos edge, Raspberry Pi de gama alta o CPUs sin GPU, habilitando asistentes locales offline en ingles.
+- Prototipado de asistentes conversacionales: permite validar plantillas ChatML, gestion de historial y tokens de parada en un entorno de desarrollo antes de migrar a un modelo mayor, gracias a su bajo coste computacional y su contexto de 8192 tokens.
+- Pruebas de integracion de tool calling: util para verificar el parseo de bloques `<tool_call>` y `<tool_response>` en un orquestador propio, siempre con una unica funcion disponible y sin bucle autonomo.
+- Investigacion sobre SFT y mezcla de datos: su model card documenta en detalle la composicion del dataset (smol-smoltalk, UltraChat, everyday-conversations), lo que permite reproducir o comparar recetas de ajuste en modelos de menos de 100M.
+- Educacion y demostraciones: sirve para ilustrar en clase o en articulos como un modelo de 97M maneja multiturno, limites de contexto y sintaxis de herramientas.
+- Generacion de respuestas breves en ingles para tareas de clasificacion conversacional o enrutamiento simple, donde la precision factual no es critica.
+- Pruebas de infraestructura de inferencia: al ocupar unos 0,4 GB en safetensors, es adecuado para validar despliegues con transformers, TGI o endpoints compatibles antes de escalar a modelos mayores.
+- Evaluacion de riesgos en agentes: permite reproducir de forma controlada fallos de seleccion de herramienta y de resumen de respuestas, util para construir baterias de pruebas de robustez.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica en la model card que la precision factual es baja, el razonamiento es superficial y comete errores aritmeticos, pero no proporciona metricas cuantitativas como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de evaluacion proporcionado es la perdida de evaluacion final del SFT: 1,404.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 0.4 GB en precision bf16, lo que permite inferencia en practicamente cualquier GPU moderna con mas de 1 GB de VRAM.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3050 o incluso iGPUs con suficiente memoria compartida.
-- CPU: ejecutable en CPU unicamente con latencias aceptables para un modelo de 100M parametros, usando cuantizacion dinamica o simplemente bf16.
-- Opciones de despliegue: compatible con transformers de Hugging Face, vLLM, llama.cpp, Ollama y text-generation-inference (TGI), segun las etiquetas del repositorio.
-- Latencia: no disponible, pero por su tamano se espera una generacion de decenas de tokens por segundo incluso en CPU modernas.
+- VRAM estimada para inferencia en bf16/fp16: aproximadamente 0,2 GB para los pesos (97M parametros), con overhead adicional de activaciones y cache KV segun la longitud de contexto.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 0,1 GB para pesos; en 4 bits, por debajo de 0,1 GB. No se documentan ficheros GGUF oficiales.
+- Cache KV para 8192 tokens: depende de la configuracion de cabezas y capas, no disponible en la informacion proporcionada; en cualquier caso, de orden muy reducido frente a modelos de mayor tamano.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090 e incluso en CPU para inferencia interactiva.
+- Despliegue: compatible con transformers, text-generation-inference (TGI) y endpoints compatibles, segun las etiquetas del repositorio. Para llama.cpp u Ollama seria necesaria una conversion a GGUF no publicada por el autor.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Tool calling | Notas |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Vertex-0.6-100M-8192-Instruct-v2 | 96.75M | 8192 | Apache 2.0 | Si (basico) | Enfoque multi-turno, contexto largo |
-| Qwen2.5-0.5B-Instruct | 494M | 32768 | Apache 2.0 | Si | 5 veces mas parametros, contexto 4 veces mayor |
-| SmolLM2-135M-Instruct | 135M | 2048 | Apache 2.0 | No | Tamano similar, contexto mucho menor |
+| Vertex 0.6 100M 8192-ctx Instruct v2 | 96,75M | 8192 | Apache 2.0 | en | Tool calling mecanico; no apto para produccion |
+| Modelo base Vertex 0.6 100M 8192-ctx | aproximadamente 97M | 8192 | no disponible en la informacion | en | Base sin ajuste instructivo; sin capacidad de chat |
+| Alternativas de menos de 200M comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-La comparativa se basa en caracteristicas generales conocidas de estos modelos; no se dispone de datos de benchmarks comparativos en la informacion proporcionada.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Precision factual baja: el modelo comete errores de hecho con frecuencia y su conocimiento se detiene aproximadamente en abril de 2024.
-- Razonamiento superficial: no es capaz de resolver problemas complejos ni de mantener cadenas de razonamiento largas.
-- Errores aritmeticos: falla en calculos matematicos incluso a nivel elemental, a pesar del entrenamiento con problemas sinteticos.
-- Tool calling no fiable con multiples funciones: puede seleccionar la herramienta incorrecta y alucinar detalles al resumir respuestas de herramientas; no debe usarse en bucles de agente sin supervisio.
-- Generacion incoherente en textos largos: el propio autor advierte de divagaciones, repeticiones y respuestas inconsistentes en generaciones extendidas.
-- Solo ingles: no soporta otros idiomas, lo que limita su uso en entornos multilingues.
-- No apto para produccion: la model card lo indica explicitamente; es un modelo de investigacion y experimentacion.
+- Coherencia limitada: el autor advierte de divagacion, repeticion y respuestas inconsistentes, especialmente en generaciones largas.
+- Baja precision factual y razonamiento superficial; errores aritmeticos frecuentes.
+- Tool calling poco fiable en escenarios multipaso: con mas de una funcion disponible puede seleccionar la herramienta incorrecta y alucinar detalles al resumir la respuesta de una herramienta en lugar de reportarla con exactitud.
+- No debe usarse en bucles de agente sin supervision.
+- El autor indica explicitamente que no es apto para uso en produccion.
+- Corte de conocimiento aproximado: abril de 2024.
+- Solo soporta ingles; no se documentan capacidades multilingues.
+- Riesgo de sesgos inherrente a los datasets de SFT empleados (smol-smoltalk, UltraChat, everyday-conversations); no se documentan evaluaciones de sesgo.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero dada la calidad del modelo no se recomienda su explotacion en productos sin validacion adicional.
+- El contexto maximo de entrenamiento del SFT fue de 2048 tokens, aunque la ventana del modelo es de 8192; el rendimiento mas alla de 2048 tokens no esta garantizado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
 - Modelo base: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base
-- Version Instruct anterior: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct
-- Ficha en LLM Explorer: https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-Instruct,4ADuXMqQY5cB5iZzjPqBPu
-- Despliegue en FriendliAI: https://friendli.ai/models/VertexResearch/Vertex-0.6-100M-8192-ctx-Base

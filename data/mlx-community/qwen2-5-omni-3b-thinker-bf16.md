@@ -2,108 +2,99 @@
 
 ## Resumen
 
-`mlx-community/Qwen2.5-Omni-3B-Thinker-bf16` no es un modelo conversacional, sino una conversión a MLX del *thinker* de `Qwen/Qwen2.5-Omni-3B`: el modelo de lenguaje Qwen2 (36 capas × 2048 de dimensión oculta) más la torre de audio con forma de Whisper. El paquete lo publica la comunidad `mlx-community` y está pensado para actuar como **encoder semántico de AuK** (`mlx-community/AuK-bf16`) dentro del proyecto `xocialize/mlx-auk-swift`. Es decir, expone estados ocultos, no logits.
+Qwen2.5-Omni-3B-Thinker-bf16 es una conversión a MLX del componente *thinker* del modelo Qwen2.5-Omni-3B de Alibaba Qwen. No se trata de un modelo conversacional completo, sino de un codificador: incluye el modelo de lenguaje Qwen2 (36 capas, dimensión oculta 2048) y la torre de audio de tipo Whisper, pero excluye la torre de visión, la cabeza LM, el *talker* y el token2wav. Su propósito es servir como codificador semántico de AuK dentro del ecosistema `mlx-auk-swift` de xocialize.
 
-La conversión elimina deliberadamente la torre de visión, la cabeza LM (*LM head*), el *talker* y el módulo `token2wav`. Por tanto no genera texto, no sintetiza voz y no procesa imágenes: solo produce representaciones. Los pesos se sirven en bfloat16 sin cuantizar (7,45 GB) y la model card documenta métricas de paridad numérica frente a la implementación de referencia en `transformers` 4.57.1, lo que resulta relevante para quien necesite integrar el modelo con garantías de fidelidad en lugar de fiarse de una simple conversión de formato.
+La relevancia de esta ficha es acotada: es una pieza de infraestructura para pipelines de audio en Apple Silicon con MLX, no un modelo para chat ni generación de texto. Los pesos están en bfloat16 sin cuantizar, con un tamaño de repositorio de 7,5 GB (7,45 GB según la model card). La licencia es la Qwen Research License, restringida a investigación y evaluación, no comercial.
 
-La licencia es el **Qwen Research License Agreement**: uso exclusivamente de investigación o evaluación, no comercial. Es un detalle crítico porque condiciona por completo cualquier despliegue en producción.
+La conversión mantiene una paridad numérica verificada frente a la referencia de transformers 4.57.1 en fp32, con errores relativos L2 del orden de 1e-6 a 1e-5 en las distintas etapas del pipeline de audio. Esa precisión es el principal argumento técnico del repositorio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only Qwen2 (36 capas, 2048 de dimensión oculta) + torre de audio tipo Whisper (encoder); sin LM head |
-| Parámetros totales | No disponible de forma desglosada en la información proporcionada; el checkpoint en bf16 ocupa 7,45 GB (modelo base nominal: 3B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No declarada en la model card de esta conversión |
-| Tipos de cuantización | bf16 sin cuantizar en este repo; la model card menciona variantes `-8bit` y `-4bit` del mismo artefacto |
-| Idiomas soportados | No declarados en esta conversión (heredados del modelo base Qwen2.5-Omni-3B) |
-| Licencia | Qwen Research License Agreement (`qwen-research`, etiqueta `license: other`): solo investigación y evaluación, no comercial |
-| Formato de pesos | `safetensors` en formato MLX (`encoder.safetensors` con claves `thinker.model.*` y `thinker.audio_tower.*`); convoluciones de audio en layout MLX (O, K, I) |
+| Arquitectura | Transformer Qwen2 (36 capas, dim. oculta 2048) + torre de audio tipo Whisper |
+| Parametros totales | no disponible (repo de 7,5 GB en bf16) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 sin cuantizar (existen variantes -8bit y -4bit en la familia, no en este repo) |
+| Idiomas soportados | no disponibles (evaluado en inglés y mandarín en la model card) |
+| Licencia | qwen-research (Qwen Research License Agreement), solo investigación y evaluación, no comercial |
+| Formato de pesos | safetensors (`encoder.safetensors`), config.json, tokenizer y preprocessor originales |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una **conversión de pesos**, no un entrenamiento. Se compone de dos bloques: el *backbone* de texto Qwen2, un transformer decoder-only de 36 capas con 2048 de dimensión oculta, y una torre de audio con arquitectura tipo Whisper que actúa como encoder acústico. Los pesos se han reorganizado al layout que espera MLX; en particular, las convoluciones de la torre de audio se reordenan a formato (O, K, I), un detalle que rompe la paridad si se manipulan a mano. El `config.json` incluye la configuración de texto, la de audio y los identificadores de tokens; el tokenizer, la plantilla de chat y los ficheros de preprocesado se mantienen sin cambios respecto al original.
+El repositorio contiene únicamente el *thinker* del modelo original: el backbone de lenguaje Qwen2 de 36 capas con dimensión 2048 y la torre de audio con forma de Whisper. Los pesos de audio se almacenan en MLX con layout de convolución (O, K, I). El fichero `encoder.safetensors` expone las claves `thinker.model.*` y `thinker.audio_tower.*`. No se incluyen la torre de visión, la cabeza LM, el talker ni el token2wav, por lo que el artefacto produce estados ocultos, no logits ni texto.
 
-La model card documenta la fidelidad numérica de la conversión en fp32 contra `transformers` 4.57.1: identificadores de tokens idénticos, características de Whisper con relL2 de 1,5e-6, torre de audio con 3,9e-6, último estado oculto con 2,2e-5 y la condición fusionada de 36 capas usada por AuK con 3,8e-6. Además, los niveles bf16, 8 bits y 4 bits superan la puerta de calidad preregistrada de AuK (tasa de error, SIM de CAM++ y DNSMOS frente a fp32). No se detallan datos de entrenamiento, composición del corpus ni fases de RLHF/DPO porque no se ha entrenado nada aquí: se heredan del Qwen2.5-Omni-3B original.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni sobre etapas de RLHF o DPO en la información proporcionada; esos detalles corresponden al modelo base Qwen2.5-Omni-3B y no se reproducen aquí. La innovación técnica documentada es la propia conversión a MLX y su validación de paridad: a fp32 frente a transformers 4.57.1 se obtienen token ids idénticos, características Whisper con relL2 de 1,5e-6, torre de audio de 3,9e-6, último estado oculto de 2,2e-5 y la condición fusionada de 36 capas de AuK con 3,8e-6.
 
 ## Capacidades
 
-- Extracción de estados ocultos de texto: 36 capas con 2048 dimensiones, aptas como *embeddings* contextuales congelados.
-- Codificación de audio mediante la torre tipo Whisper, con salida de características verificada numéricamente.
-- Generación de la condición fusionada de 36 capas que consume AuK como encoder semántico.
-- Integración nativa con `mlx-swift` y con el repositorio `xocialize/mlx-auk-swift`.
-- Ejecución en bfloat16, 8 bits y 4 bits con paridad validada frente a fp32.
-- **No** dispone de cabeza LM: no genera texto ni tokens de forma autorregresiva.
-- **No** incluye torre de visión: no procesa imágenes ni vídeo.
-- **No** incluye *talker* ni `token2wav`: no sintetiza voz.
-- Capacidades multilingües: no verificadas en esta conversión (dependen del modelo base).
+- Extracción de estados ocultos del modelo de lenguaje Qwen2 de 36 capas para su uso como codificador semántico.
+- Codificación de audio mediante la torre de tipo Whisper integrada.
+- Integración como encoder de AuK en `mlx-auk-swift`, orientado a Swift y Apple Silicon.
+- Ejecución en MLX con pesos bfloat16 sin cuantizar.
+- No soporta generación de texto: carece de cabeza LM.
+- No soporta visión: la torre visual no está incluida.
+- No soporta tool calling, function calling ni comportamiento de agente.
+- No es un modelo de chat ni mantiene conversaciones multi-turno.
+- Capacidades multilingües: no documentadas para este artefacto; la model card reporta evaluaciones en inglés y mandarín del pipeline AuK.
 
 ## Casos de uso
 
-- **Encoder semántico de AuK en aplicaciones Swift**: el escenario para el que se publicó el artefacto. Se carga con `mlx-swift` para producir las condiciones de 36 capas que alimentan el resto del pipeline de AuK en macOS e iOS.
-- **Investigación en modelos de habla en Apple Silicon**: sirve como bloque de percepción en prototipos de sistemas audio-a-audio, añadiendo por separado una cabeza de lenguaje y un sintetizador, ya que el paquete entrega solo la representación.
-- **Extracción de embeddings de texto para búsqueda y recuperación**: al ejecutarse en MLX sobre memoria unificada, permite generar representaciones de documentos y consultas en un Mac portátil sin GPU dedicada, siempre en contexto de evaluación.
-- **Representaciones de audio para clasificación y diarización**: los estados de la torre de audio pueden congelarse y alimentar cabezas ligeras entrenadas aparte (regresión logística, MLP pequeño) para tareas de etiquetado acústico.
-- **Destilación de representaciones**: usar los estados ocultos como objetivo de un modelo estudiante de menor tamaño, aprovechando la paridad numérica documentada para garantizar que el *teacher* es fiel al original.
-- **Validación de pipelines de conversión MLX**: el modelo funciona como banco de pruebas reproducible de paridad (relL2 por etapa) frente a `transformers`, útil para equipos que desarrollan工具 de conversión de pesos.
-- **Evaluación de cuantización**: comparar bf16, 8 bits y 4 bits con las métricas de calidad de AuK sobre un mismo conjunto de audio permite cuantificar la degradación real de cada nivel antes de desplegar.
+- Investigación en codificadores de audio: usar el artefacto como referencia de paridad numérica frente a transformers al portar modelos Omni a MLX, gracias a los errores relativos documentados del orden de 1e-6 a 1e-5.
+- Desarrollo de aplicaciones Swift en Apple Silicon: integrar el encoder en `mlx-auk-swift` para pipelines de audio nativos sin salir del ecosistema MLX.
+- Evaluación de la torre de audio de Qwen2.5-Omni-3B de forma aislada: al separar el thinker del talker y del token2wav, permite estudiar las representaciones acústicas intermedias sin ejecutar el pipeline completo.
+- Edición de audio en inglés con la variante de 8 bits: la model card indica que los tiers bf16, 8-bit y 4-bit superan la puerta de calidad preregistrada de AuK (tasa de error, SIM de CAM++ y DNSMOS frente a fp32) en contenido en inglés.
+- Edición de audio en mandarín con la variante de 8 bits: la model card recomienda explícitamente el tier de 8 bits para ediciones en mandarín, ya que el de 4 bits degrada el CER de desacentuación del 3,6 % al 17,9 %.
+- Verificación de conversiones de pesos: servir como caso de prueba reproducible para validar herramientas de conversión a MLX, comparando token ids y estados ocultos contra la implementación de referencia.
+- Docencia y experimentación académica: al estar bajo licencia de investigación, encaja en laboratorios que necesiten estudiar arquitecturas Omni multimodales sin fines comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible (MMLU, HumanEval, GSM8K u otros). El modelo, además, no es evaluable en tareas generativas al carecer de cabeza LM.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de paridad numérica frente a la referencia de transformers 4.57.1 en fp32, que se recogen a continuación.
 
-La única métrica objetiva publicada es la paridad numérica de la conversión, en fp32 frente a `transformers` 4.57.1:
-
-| Etapa | Error relativo L2 |
+| Metrica de paridad (fp32 vs. transformers 4.57.1) | Valor (relL2) |
 |---|---|
-| Identificadores de tokens | idénticos |
-| Características de Whisper | 1,5e-6 |
+| Token ids | idénticos |
+| Características Whisper | 1,5e-6 |
 | Torre de audio | 3,9e-6 |
 | Último estado oculto | 2,2e-5 |
-| Condición fusionada de 36 capas (AuK) | 3,8e-6 |
-
-Los niveles bf16, 8 bits y 4 bits superan la puerta de calidad preregistrada de AuK (tasa de error, SIM de CAM++ y DNSMOS contra fp32), sin que se publiquen los valores numéricos de dichas métricas.
+| Condición fusionada de 36 capas de AuK | 3,8e-6 |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada para inferencia: unos 8-9 GB en bf16 (7,45 GB de pesos más activaciones), aproximadamente 3,7-4,5 GB en 8 bits y 1,9-2,5 GB en 4 bits. Estimaciones calculadas a partir del tamaño del checkpoint, no publicadas por el autor.
-- Al no existir cabeza LM, no hay caché KV persistente en el uso previsto como encoder: el coste dominante son los pesos y las activaciones de una pasada *forward*.
-- GPU recomendadas: el formato MLX está orientado a Apple Silicon. Cualquier chip de la familia M con memoria unificada suficiente sirve; para bf16 se recomienda un mínimo de 16 GB (M1/M2/M3/M4 base o superiores).
-- Cabe en GPU de consumo en el sentido de equipos Apple domésticos: 4 bits en configuraciones de 8 GB, bf16 en 16 GB o más.
-- Despliegue: `mlx` (Python) o `mlx-swift`; el caso canónico es `xocialize/mlx-auk-swift`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no se distribuye en GGUF y carece de cabeza de generación.
+- VRAM/ memoria unificada estimada: aproximadamente 7,45 GB solo para los pesos en bfloat16, más el overhead del runtime MLX y de las activaciones.
+- GPU recomendadas: no disponibles en la información proporcionada; el artefacto está pensado para MLX, lo que implica Apple Silicon (familias M1, M2, M3, M4) con memoria unificada suficiente.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con al menos 16 GB de memoria unificada; con 8 GB el margen es muy ajustado o insuficiente.
+- Opciones de despliegue: MLX y `mlx-swift` a través de `mlx-auk-swift`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este artefacto, y su naturaleza de encoder sin cabeza LM lo hace incompatible con servidores de generación de texto estándar.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Salidas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mlx-community/Qwen2.5-Omni-3B-Thinker-bf16` (este) | 3B nominales, 7,45 GB en bf16 | No disponible | Estados ocultos de texto y audio | Qwen Research (no comercial) | safetensors MLX |
-| `Qwen/Qwen2.5-Omni-3B` (original) | 3B nominales | No disponible | Texto y voz en streaming; percibe texto, imagen, audio y vídeo | No verificada en la información disponible | safetensors transformers |
-| `mlx-community/AuK-bf16` | No disponible | No disponible | Condicionamiento de audio (consume este encoder) | No disponible | safetensors MLX |
-| Qwen2.5-3B (encoder de texto, conversión MLX de la colección `mlx-community/qwen25`) | 3B | No disponible | Estados ocultos de texto | No disponible | safetensors MLX |
+| mlx-community/Qwen2.5-Omni-3B-Thinker-bf16 | no disponible (repo de 7,5 GB) | no disponible | Encoder (LM + audio) en MLX | qwen-research, solo investigación | Hugging Face, 211 descargas |
+| Qwen/Qwen2.5-Omni-3B | no disponible | no disponible | Modelo Omni completo (texto, audio, visión, habla) | Qwen Research License | Hugging Face |
+| mlx-community/AuK-bf16 | no disponible | no disponible | Modelo de edición de audio que consume este encoder | no disponible | Hugging Face |
 
-Frente al Qwen2.5-Omni-3B original, esta conversión pierde visión, generación de texto y síntesis de voz, pero gana ejecución nativa en MLX y una verificación de paridad explícita. Frente a un encoder de texto puro de la misma familia, añade la torre de audio a cambio de tamaño.
+No se dispone de datos de benchmarks que permitan una comparación de rendimiento entre estas alternativas.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo de chat**: no genera texto. Cualquier expectativa de uso conversacional es un error de interpretación del artefacto.
-- **Componentes ausentes por diseño**: torre de visión, LM head, *talker* y `token2wav` no están incluidos. No se puede reconstruir el modelo Omni completo solo con este repo.
-- **Licencia restrictiva**: Qwen Research License Agreement, solo investigación o evaluación. El uso comercial requiere solicitar licencia a Alibaba Cloud. Afecta también a los pesos derivados.
-- **Archivos modificados**: son pesos convertidos, no los originales; deben citarse como tales y conservar el aviso de atribución (`NOTICE`).
-- **Dependencia de plataforma**: MLX está atado a Apple Silicon. No hay ruta directa a CUDA con las herramientas estándar (vLLM, TGI, llama.cpp).
-- **Contexto no declarado**: la model card no especifica la ventana máxima soportada en esta conversión.
-- **Sesgos y alucinación**: al no generar texto, el riesgo de alucinación clásico no aplica, pero los sesgos del corpus de Qwen2.5 se propagan a los estados ocultos y, por tanto, a cualquier cabeza entrendada encima.
-- **Validación externa escasa**: el repositorio presenta cero descargas y cero valoraciones en el momento de la consulta; la única validación disponible es la del propio autor.
-- **Cuantizaciones no publicadas en detalle**: existen niveles de 8 y 4 bits según la model card, pero sus métricas concretas no se incluyen en la información disponible.
+- No es un modelo de chat: carece de cabeza LM, talker y token2wav, por lo que no genera texto ni habla.
+- No procesa imágenes: la torre de visión no está incluida en la conversión.
+- Licencia Qwen Research License: uso exclusivamente de investigación o evaluación, no comercial. Para uso comercial es necesario solicitar licencia a Alibaba Cloud.
+- Son ficheros modificados respecto al original (convertidos a MLX), según indica la propia model card.
+- En mandarín, el tier de 4 bits no supera la puerta de calidad de AuK: el CER de desacentuación pasa del 3,6 % al 17,9 % y se pierden palabras de contenido. Para ediciones en mandarín debe usarse el tier de 8 bits.
+- La validación de calidad documentada se limita al inglés y al mandarín; no hay datos para otros idiomas.
+- Riesgo de sesgos y de alucinación: no evaluado ni documentado en la información disponible para este artefacto.
+- Al ser un encoder de estados ocultos, cualquier uso en producción exige integrarlo con cabezas y componentes adicionales, lo que añade superficie de error y complejidad de despliegue.
+- El número de descargas (211) y de likes (1) es bajo, lo que sugiere poca validación comunitaria independiente.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: mlx-community/Qwen2.5-Omni-3B-Thinker-bf16](https://huggingface.co/mlx-community/Qwen2.5-Omni-3B-Thinker-bf16)
-- [Modelo base: Qwen/Qwen2.5-Omni-3B](https://huggingface.co/Qwen/Qwen2.5-Omni-3B)
-- [Encoder consumidor: mlx-community/AuK-bf16](https://huggingface.co/mlx-community/AuK-bf16)
-- [Repositorio xocialize/mlx-auk-swift](https://github.com/xocialize/mlx-auk-swift)
-- [Repositorio oficial QwenLM/Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni)
-- [Página de Qwen2.5-Omni en openlm.ai](https://openlm.ai/qwen2.5-omni/)
-- [Colección Qwen2.5 de mlx-community](https://huggingface.co/collections/mlx-community/qwen25)
-- [Repositorio mx4ai/qwen2.5](https://github.com/mx4ai/qwen2.5)
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen2.5-Omni-3B-Thinker-bf16
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
+- Modelo AuK que consume este encoder: https://huggingface.co/mlx-community/AuK-bf16
+- Repositorio de código `mlx-auk-swift`: https://github.com/xocialize/mlx-auk-swift
+- Organización MLX Community: https://huggingface.co/mlx-community

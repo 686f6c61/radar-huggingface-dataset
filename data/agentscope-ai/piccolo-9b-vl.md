@@ -2,87 +2,78 @@
 
 ## Resumen
 
-Piccolo 9B VL es un modelo de lenguaje y vision (image-text-to-text) publicado por el equipo agentscope-ai en Hugging Face. El checkpoint declara la arquitectura `Qwen3_5ForConditionalGeneration` con una configuración de visión, lo que lo sitúa en la familia de modelos multimodales derivados de la línea Qwen 3.5. El repositorio contiene pesos en Safetensors (cuatro shards principales más un fichero `model-frozen-mtp.safetensors`) y el conjunto completo de configuraciones de modelo, generación, tokenizer, processor y plantilla de chat.
+Piccolo-9B-VL es un modelo de lenguaje y vision (image-text-to-text) publicado por agentscope-ai bajo licencia Apache 2.0. El checkpoint emplea la arquitectura `Qwen3_5ForConditionalGeneration` con una configuracion de vision asociada, lo que lo situa en la familia de modelos multimodales derivados de Qwen 3.5. Con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones), se posiciona en el segmento de modelos densos de tamano medio aptos para despliegue en una sola GPU de gama alta.
 
-Con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones) y un tamaño de repositorio de 19,3 GB, el modelo se posiciona en el segmento de VLMs de tamaño medio, adecuado para despliegues en una sola GPU de gama alta o en configuraciones multi-GPU con cuantización. La licencia Apache 2.0 facilita su adopción tanto en investigación como en productos comerciales.
+La publicacion incluye pesos en formato Safetensors organizados en cuatro shards principales mas un fichero `model-frozen-mtp.safetensors`, todos referenciados desde `model.safetensors.index.json`. El repositorio tambien incorpora las configuraciones originales de modelo, generacion, tokenizer y processor, ademas de la plantilla de chat, lo que facilita su carga directa con la libreria `transformers`.
 
-La relevancia de este lanzamiento radica en su integración con el ecosistema transformers y su compatibilidad declarada con endpoints, lo que simplifica el despliegue en infraestructuras de inferencia gestionadas. No obstante, la model card es extremadamente escueta y no documenta detalles de entrenamiento, datos, benchmarks ni idiomas soportados, por lo que muchas especificaciones deben marcarse como no disponibles.
+Es relevante ahora porque cubre la franja de modelos multimodales de ~9B con licencia permisiva, un nicho donde las opciones Apache 2.0 con soporte nativo de vision y plantilla de chat integrada son limitadas. El tamano del repositorio (38,1 GB) sugiere pesos en precision alta (probablemente BF16), coherente con los ~9,65B de parametros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal con configuración de visión) |
-| Parametros totales | 9.653.104.368 |
-| Parametros activos | no disponible (no se declara que sea MoE) |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal con configuracion de vision) |
+| Parametros totales | 9.653.104.368 (~9,65B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en Safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos publicados en Safetensors; el tamano del repo sugiere BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (4 shards principales + model-frozen-mtp.safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura `Qwen3_5ForConditionalGeneration`, que combina un backbone de lenguaje de tipo transformer con un codificador de visión para tareas de imagen-a-texto. La presencia de un fichero `model-frozen-mtp.safetensors` sugiere la inclusión de módulos de predicción multi-token (MTP) congelados, un componente habitual en arquitecturas recientes orientadas a decodificación especulativa o entrenamiento multi-token. Sin embargo, la model card no detalla la función exacta de este fichero ni cómo se integra en la inferencia.
+El modelo se basa en la arquitectura `Qwen3_5ForConditionalGeneration`, una clase de modelo condicional multimodal que combina un backbone de lenguaje con un codificador de vision para tareas image-text-to-text. La model card confirma la presencia de una configuracion de vision, pero no detalla el numero de capas, dimensiones ocultas, numero de cabezas ni el tipo de atencion empleado.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, las etapas de alineación (RLHF, DPO) ni innovaciones técnicas adicionales. La documentación publicada se limita a describir la estructura del repositorio y las configuraciones incluidas, sin aportar detalles sobre el proceso de entrenamiento o las decisiones de diseño.
+Respecto al entrenamiento, la informacion disponible no especifica el volumen de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o alineacion por preferencias. Tampoco se documenta ninguna innovacion tecnica particular (decodificacion especulativa, atencion lineal, etc.). El fichero `model-frozen-mtp.safetensors` sugiere la presencia de componentes de prediccion multi-token (MTP) congelados durante el ajuste, pero no se aporta documentacion adicional al respecto.
 
 ## Capacidades
 
-- Generación de texto e imagen-a-texto: el pipeline declarado es `image-text-to-text`, lo que implica capacidad de describir, responder preguntas y razonar sobre imágenes.
-- Conversación multi-turno: incluye plantilla de chat, lo que facilita su uso en diálogos estructurados.
-- Procesamiento multimodal: integra un processor específico para entradas de imagen y texto.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia gestionadas compatibles con transformers.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Soporte multilingüe: no disponible en la información proporcionada.
-- Capacidades especiales (thinking mode, audio, etc.): no disponible en la información proporcionada.
+- Generacion de texto e imagen-a-texto: el pipeline declarado es `image-text-to-text`, por lo que el modelo acepta entradas de imagen junto con texto y produce respuestas textuales.
+- Conversacion multi-turno: incluye plantilla de chat y configuracion de processor, lo que habilita dialogos estructurados.
+- Razonamiento y generacion de codigo: no documentado explicitamente en la model card; se desconoce si el checkpoint conserva estas capacidades del modelo base.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; no se listan idiomas en los metadatos.
+- Capacidades especiales (modo thinking, audio, etc.): no disponible.
 
 ## Casos de uso
 
-- Descripción automática de imágenes en catálogos de producto: el modelo puede recibir una imagen y generar descripciones textuales estructuradas, útil para comercio electrónico y gestión de activos digitales.
-- Asistencia a personas con discapacidad visual: integrado en aplicaciones de lectura de pantalla, el modelo puede describir escenas, documentos o gráficos a partir de una imagen capturada.
-- Extracción de información de documentos escaneados: combinando entrada de imagen y texto, puede responder preguntas sobre facturas, formularios o capturas de pantalla en flujos de automatización de back-office.
-- Moderación de contenido visual: el modelo puede analizar imágenes y generar informes textuales sobre su contenido para sistemas de revisión semiautomatizada.
-- Interfaces conversacionales con soporte visual: en asistentes de atención al cliente que reciben capturas de pantalla o fotos del producto, el modelo puede interpretar la imagen y continuar la conversación multi-turno.
-- Anotación asistida de datasets multimodales: investigadores pueden usar el modelo para preetiquetar pares imagen-texto antes de la revisión humana, acelerando la construcción de corpus.
-- Prototipado rápido en investigación: gracias a la licencia Apache 2.0 y al formato Safetensors compatible con transformers, es adecuado para experimentos académicos sin restricciones de uso comercial.
+- Descripcion y etiquetado de imagenes a escala: el modelo puede procesar lotes de imagenes y generar descripciones o etiquetas textuales, util para construir datasets o pipelines de catalogacion.
+- Extraccion de informacion de documentos escaneados: al aceptar imagen y texto, puede transcribir o resumir contenido de capturas, facturas o formularios en un flujo conversacional.
+- Asistente visual en aplicaciones de soporte: con la plantilla de chat incluida, puede gestionar conversaciones donde el usuario adjunta imagenes y formula preguntas de seguimiento.
+- Moderacion de contenido multimodal: analisis de imagenes acompanadas de texto para clasificar o describir contenido en plataformas.
+- Prototipado de agentes con percepcion visual: al ser un checkpoint de ~9,65B con licencia Apache 2.0, sirve como base para experimentar con pipelines de agentes que requieren entrada de imagen.
+- Fine-tuning especifico de dominio: el formato Safetensors y las configuraciones incluidas permiten ajustar el modelo sobre datos propios de un vertical (medico, industrial, retail) sin restricciones de licencia comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 19,3 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda al menos 24 GB para contexto corto.
-- VRAM estimada en cuantización de 8 bits: alrededor de 10-12 GB para pesos, más overhead; viable en GPUs de 16-24 GB.
-- VRAM estimada en cuantización de 4 bits: alrededor de 6-8 GB para pesos, más overhead; viable en GPUs consumer de 12 GB o superiores.
-- GPUs recomendadas: A100 40/80 GB, H100, L40S para despliegues en FP16; RTX 4090 (24 GB) para FP16 con contexto moderado o cuantización; RTX 3090/4080 para cuantización 8/4 bits.
-- Cabe en GPU consumer: sí, en RTX 4090 con FP16 y contexto limitado, o en GPUs de 12-16 GB con cuantización.
-- Opciones de despliegue: transformers (nativo), vLLM y TGI si soportan la arquitectura Qwen3_5ForConditionalGeneration; llama.cpp/Ollama requerirían conversión a GGUF, no documentada.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: en BF16, los ~9,65B de parametros requieren aproximadamente 19,3 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda al menos 24 GB. En cuantizacion de 8 bits, alrededor de 10-12 GB; en 4 bits, alrededor de 6-8 GB (estimaciones teoricas, no verificadas para este checkpoint).
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para BF16 sin cuantizar.
+- GPU de consumo: cabe en RTX 4090 (24 GB) en BF16 de forma ajustada y con mayor holgura en cuantizacion; en RTX 3090 (24 GB) similar. En GPUs de 16 GB requeriria cuantizacion.
+- Opciones de despliegue: `transformers` (libreria declarada), y potencialmente vLLM, TGI o llama.cpp si existe soporte para la arquitectura Qwen3.5 multimodal (no confirmado en la informacion disponible).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Modalidad | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo 9B VL | 9,65 B | no disponible | Apache 2.0 | Safetensors | Arquitectura Qwen3_5, multimodal |
-| Qwen2.5-VL-7B | 7 B | 128k (según documentación pública de Qwen) | Apache 2.0 | Safetensors | Multimodal, familia Qwen |
-| Llama 3.2 11B Vision | 11 B | 128k (según documentación pública de Meta) | Llama 3.2 Community License | Safetensors | Multimodal, licencia con restricciones |
-| InternVL2-8B | 8 B | no disponible | MIT (según documentación pública) | Safetensors | Multimodal, orientado a investigación |
+| Piccolo-9B-VL | ~9,65B | no disponible | Apache 2.0 | imagen-texto | Hugging Face |
+| Alternativas de ~9-10B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Nota: los datos de los modelos comparativos provienen de documentación pública general y no de la información proporcionada en esta ficha; se incluyen solo como referencia orientativa de categoría.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoria; los datos de rendimiento, contexto y licencia de posibles competidores no se incluyen en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos, datos de entrenamiento ni evaluaciones de seguridad; no hay garantías sobre el comportamiento en dominios sensibles.
-- Riesgo de alucinación inherente a los modelos generativos; en tareas de imagen-a-texto puede describir elementos inexistentes o malinterpretar detalles visuales.
-- No se especifican los idiomas soportados; el rendimiento fuera del inglés (y posiblemente chino, dada la arquitectura Qwen) es incierto.
-- La longitud de contexto no está documentada, lo que impide planificar despliegues con requisitos de contexto largo.
-- El fichero `model-frozen-mtp.safetensors` no está descrito en detalle; su uso incorrecto o su omisión podría afectar a la inferencia.
-- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los componentes derivados (tokenizer, processor) incluidos en el repositorio.
-- El número de descargas (38) y likes (0) indica un modelo muy reciente y poco validado por la comunidad; no hay evidencia de uso en producción.
-- No se dispone de información sobre latencia, throughput ni requisitos mínimos de software (versión de transformers, CUDA).
+- Sesgos conocidos: no documentados en la model card; al derivar de un modelo base no identificado publicamente, los sesgos heredados son desconocidos.
+- Riesgo de alucinacion: no evaluado; no hay benchmarks ni evaluaciones de fidelidad publicadas.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles, lo que impide garantizar su comportamiento en produccion multilingue o con entradas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero conviene verificar la licencia del modelo base del que deriva este checkpoint.
+- Caveats para produccion: el modelo tiene muy pocas descargas (208) y cero likes en el momento de la consulta, sin documentacion de evaluacion; se recomienda validacion exhaustiva antes de desplegarlo. La ausencia de detalles sobre entrenamiento y alineacion impide estimar su robustez frente a prompts adversarios.
 
 ## Enlaces
 

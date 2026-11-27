@@ -51,16 +51,5 @@
   "renamed_to": "Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v1-onnx",
   "renamed_at": "2026-11-22T04:20:39.666Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx · Hugging Face",
-      "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx",
-      "snippet": "Parakeet Ultra, ONNX for the browser ONNX export of moondream/parakeet-ultra, moondream's full-precision post-trained parakeet-tdt-0.6b-v3, same architecture and tokenizer, better than the original on every benchmark moondream reports."
-    },
-    {
-      "title": "Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx — Downloads, Growth & Stats",
-      "url": "https://openmodelstats.com/models/olicorne/parakeet-tdt-0.6b-v3-ultra-onnx",
-      "snippet": "parakeet-tdt-0.6b-v3-ultra-onnx by Olicorne: 684 all-time downloads, 634 in the last 30 days, 4 likes. A speech recognition model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
-    }
-  ]
+  "sources": []
 }

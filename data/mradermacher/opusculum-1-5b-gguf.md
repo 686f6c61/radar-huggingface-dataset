@@ -2,99 +2,91 @@
 
 ## Resumen
 
-Opusculum-1.5B-GGUF es la distribucion en formato GGUF del modelo Stoned-Code/Opusculum-1.5B, un modelo de lenguaje conversacional de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) afinado por el usuario Stoned-Code y cuantizado por mradermacher. El modelo base esta construido sobre la libreria transformers y emplea la tecnica de entrenamiento Unsloth, segun las etiquetas de la model card. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Opusculum-1.5B-GGUF es la version cuantizada en formato GGUF del modelo Opusculum-1.5B-V0.1, desarrollado originalmente por Stoned-Code y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje conversacional de pequeno tamano, con 1.543.714.304 parametros (aproximadamente 1,5 mil millones), disenado para generacion de texto y dialogos multi-turno. Su relevancia radica en que ofrece un modelo compacto, con licencia Apache 2.0, que puede ejecutarse en hardware de consumo gracias a las multiples cuantizaciones disponibles.
 
-El modelo esta especializado en generacion de texto conversacional en ingles, con un enfasis claro en datos de instruccion, roleplay y escritura creativa, a juzgar por los datasets empleados en su afinado: colecciones como kalo-opus-instruct, SynthRP-Gens, Synthstruct-Gens, Hydrus-Claude-Instruct y nopm_claude_writing_fixed. Estos datasets proceden en su mayoria de la comunidad de modelos abiertos (anthracite-org, Epiculous, Delta-Vector, lodrick-the-lafted) y estan orientados a instrucciones sin rechazo y a narrativa.
+El modelo base fue afinado a partir de una mezcla de datasets orientados a instrucciones, rol y escritura creativa, incluyendo colecciones como kalo-opus-instruct, SynthRP-Gens, Hydrus-Claude-Instruct y magnum-v4. Esta orientacion sugiere un enfasis en conversacion, roleplay y generacion de texto estilizado mas que en tareas de razonamiento tecnico o codigo. La version GGUF facilita su despliegue en entornos locales mediante llama.cpp, Ollama y otras herramientas compatibles.
 
-La relevancia de esta ficha radica en que se trata de una cuantizacion estatica lista para desplegar en entornos con recursos limitados: los archivos GGUF van desde 0,8 GB (Q2_K) hasta 3,2 GB (f16), lo que permite ejecutar el modelo en GPUs de consumo e incluso en CPU. No obstante, la informacion publica disponible es escasa: no se detallan la longitud de contexto, los idiomas soportados ni resultados de benchmarks.
+La ficha se centra en la version GGUF publicada por mradermacher, que incluye un conjunto amplio de cuantizaciones (desde Q2_K hasta f16) y variantes con imatrix disponibles en un repositorio separado. El modelo esta etiquetado como compatible con endpoints y con la libreria transformers, y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (decoder-only), segun la libreria transformers; detalles especificos no disponibles |
+| Arquitectura | Transformer (no se detalla la variante exacta en la informacion disponible) |
 | Parametros totales | 1.543.714.304 (aproximadamente 1,5B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | Ingles (segun la model card); no se detallan otros idiomas |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; variantes imatrix/weighted en repositorio i1-GGUF |
+| Idiomas soportados | Ingles (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
-| Tamano del repo | 14,2 GB (incluye todas las cuantizaciones) |
-| Modelo base | Stoned-Code/Opusculum-1.5B-V0.1 |
-| Metodo de entrenamiento | Unsloth (segun tags) |
-| Descargas | 626 |
-| Fecha de creacion | 2026-11-21 |
+| Formato de pesos | GGUF (version cuantizada); el modelo base original en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion publica no especifica la arquitectura interna del modelo base mas alla de que es un transformer decoder-only compatible con transformers y entrenado con Unsloth. No se detallan el numero de capas, dimensiones ocultas, mecanismo de atencion ni si emplea alguna innovacion como atencion lineal o decodificacion especulativa. Tampoco se indica el numero de tokens de entrenamiento ni la composicion exacta del dataset en terminos de proporciones.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de que se trata de un transformer y que fue entrenado con la libreria Unsloth (etiqueta "unsloth" en los tags). No se especifican el numero de capas, dimensiones ocultas, mecanismos de atencion ni innovaciones como decodificacion especulativa o atencion lineal.
 
-Lo que si se conoce es la lista de datasets de afinado, que revela una orientacion marcada hacia instrucciones conversacionales y escritura creativa: Stoned-Code/magnum-v4, Delta-Vector/Hydrus-Claude-Instruct-5K, anthracite-org/kalo-opus-instruct-22k-no-refusal, Epiculous/SynthRP-Gens-v1.1-Filtered-n-Cleaned, lodrick-the-lafted/kalo-opus-instruct-3k-filtered, anthracite-org/nopm_claude_writing_fixed, Epiculous/Synthstruct-Gens-v1.1-Filtered-n-Cleaned, anthracite-org/kalo_opus_misc_240827 y anthracite-org/kalo_misc_part2. La presencia de datasets con la etiqueta "no-refusal" y de colecciones de roleplay (SynthRP) sugiere un ajuste orientado a reducir rechazos y favorecer narrativa y dialogo. No se documenta si hubo RLHF, DPO u otra fase de alineamiento posterior al SFT.
+El modelo base Opusculum-1.5B-V0.1 fue afinado sobre una mezcla de nueve datasets, entre ellos Stoned-Code/magnum-v4, Delta-Vector/Hydrus-Claude-Instruct-5K, anthracite-org/kalo-opus-instruct-22k-no-refusal, Epiculous/SynthRP-Gens-v1.1-Filtered-n-Cleaned, anthracite-org/nopm_claude_writing_fixed y anthracite-org/kalo_misc_part2. Esta composicion apunta a un entrenamiento orientado a instrucciones, conversacion y escritura creativa/roleplay, con presencia de datos "no refusal" en algunos conjuntos. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion exacta ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles.
-- Instrucciones generales y respuesta a prompts de tipo chat.
-- Escritura creativa y narrativa: roleplay, ficcion y continuacion de historias, segun los datasets de afinado.
-- Generacion de codigo y matematicas: no confirmado en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: solo ingles documentado; otros idiomas no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere despliegue en infraestructura de inferencia gestionada.
+- Generacion de texto conversacional y dialogos multi-turno.
+- Afinado para instrucciones y escritura creativa (roleplay, narrativa, estilizacion).
+- Capacidad de seguir instrucciones en ingles.
+- Soporte de conversacion con formato de chat (etiqueta "conversational").
+- Compatibilidad con endpoints de inferencia (tag "endpoints_compatible").
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidades multilingues limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Asistente conversacional ligero en ingles: el modelo puede gestionar dialogos multi-turno basicos en aplicaciones de chat con recursos limitados, al caber en cuantizaciones de 1 GB en GPUs de consumo.
-- Prototipado rapido de chatbots: gracias a su tamano reducido y a los archivos GGUF, permite iterar sobre prompts y flujos conversacionales en portatiles sin GPU dedicada.
-- Generacion de narrativa y roleplay: los datasets de entrenamiento orientados a escritura creativa y roleplay lo hacen adecuado para herramientas de ficcion interactiva y generacion de historias.
-- Educacion y demostraciones: util para ensenar conceptos de cuantizacion e inferencia local con llama.cpp u Ollama en entornos academicos.
-- Filtrado y generacion de texto en pipelines: puede emplearse como modelo auxiliar para tareas de reescritura, resumen corto o clasificacion textual en ingles, siempre con validacion humana.
-- Despliegue en dispositivos de borde: las cuantizaciones Q2_K y Q3_K permiten ejecucion en CPU o en GPUs integradas para tareas de baja latencia y bajo coste.
-- Base para fine-tuning adicional: al ser Apache 2.0 y tener solo 1,5B de parametros, sirve como punto de partida para ajustes especificos de dominio con recursos modestos.
+- Roleplay y personajes conversacionales: el modelo fue afinado con datasets de rol (SynthRP-Gens, kalo-opus-instruct) y puede mantener dialogos con personalidad consistente en entornos de entretenimiento o prototipos de asistentes con caracter.
+- Generacion de ficcion y escritura creativa: adecuado para borradores de narrativa, dialogos y textos estilizados, gracias a su entrenamiento en conjuntos como nopm_claude_writing_fixed.
+- Prototipado rapido de chatbots: su tamano de 1,5B y las cuantizaciones Q4 permiten desplegar un chatbot funcional en una GPU de consumo o incluso en CPU para pruebas de concepto.
+- Asistente conversacional local y privado: al ejecutarse con llama.cpp u Ollama en hardware modesto, permite mantener conversaciones sin enviar datos a servicios externos.
+- Generacion de texto en aplicaciones embebidas: el modelo Q2_K ocupa aproximadamente 0,8 GB, lo que facilita su integracion en dispositivos con recursos limitados para tareas de generacion de texto breve.
+- Experimentacion e investigacion: util como modelo base pequeno para estudiar tecnicas de cuantizacion, comparar calidad entre tipos de quant (Q2_K frente a Q8_0) o evaluar el impacto del afinado en modelos de 1,5B.
+- Filtrado y clasificacion de texto conversacional: puede emplearse para tareas ligeras de generacion de respuestas o reformulacion en pipelines de procesamiento de lenguaje natural.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB con Q4_K_M, 1,7 GB con Q8_0 y 3,2 GB con f16, segun los tamanos de archivo publicados.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor velocidad y cuantizaciones altas.
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna e incluso en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si se dispone de los pesos originales.
-- Latencia y throughput estimados: no disponibles; dependeran del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia segun cuantizacion (tamano de archivo como referencia): Q2_K ~0,8 GB; Q3_K_S/M ~0,9 GB; Q3_K_L e IQ4_XS ~1,0 GB; Q4_K_S ~1,0 GB; Q4_K_M ~1,1 GB; Q5_K_S/M ~1,2 GB; Q6_K ~1,4 GB; Q8_0 ~1,7 GB; f16 ~3,2 GB.
+- GPU recomendadas: cualquier GPU de consumo con al menos 2-4 GB de VRAM puede ejecutar las cuantizaciones Q4-Q8; para f16 se recomienda al menos 4 GB. No se especifican requisitos para A100 o H100, aunque el modelo cabe holgadamente en ellas.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1060 6 GB, RTX 3060, RTX 4090, etc.) e incluso en CPU para cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers. No se documenta soporte explicito de vLLM o TGI para esta version GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Opusculum-1.5B-GGUF | 1,5B | No disponible | Apache 2.0 | GGUF | Afinado para conversacion y roleplay en ingles |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica del modelo) | Apache 2.0 | Safetensors, GGUF | Modelo generalista multilingue con benchmarks publicados |
-| SmolLM2-1.7B-Instruct | 1,7B | 8K (segun documentacion publica del modelo) | Apache 2.0 | Safetensors, GGUF | Modelo compacto orientado a instrucciones |
-| Llama-3.2-1B-Instruct | 1,2B | 128K (segun documentacion publica del modelo) | Llama 3.2 Community License | Safetensors, GGUF | Modelo generalista con licencia restrictiva para algunos usos |
+No se dispone de datos de rendimiento ni de comparaciones publicadas en la informacion proporcionada. Como referencia estructural, se puede comparar con otros modelos pequenos de proposito general, pero sin metricas verificadas:
 
-Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentacion publica general; no se dispone de comparaciones de rendimiento directas con Opusculum-1.5B en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Opusculum-1.5B (este) | ~1,5B | No disponible | Apache 2.0 | GGUF, transformers |
+| Alternativas de ~1,5B | No disponible | No disponible | No disponible | No disponible |
+
+No se han publicado comparaciones con modelos similares en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados; al entrenarse sobre datasets de la comunidad, puede heredar sesgos de esos corpus.
-- Riesgo de alucinacion: inherente a los modelos de 1,5B de parametros; la capacidad de razonamiento y factualidad es limitada en comparacion con modelos mayores.
-- Limitaciones de contexto o idioma: solo ingles documentado; la longitud de contexto no esta especificada, lo que impide planificar aplicaciones con ventanas largas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los datasets de entrenamiento originales, algunos con etiqueta "no-refusal".
-- Caveats para produccion: la ausencia de benchmarks publicados y de documentacion sobre alineamiento hacen recomendable una evaluacion propia antes de desplegar en produccion; el modelo esta orientado a conversacion y escritura creativa, no a tareas de alta precision como codigo o matematicas.
-- El repositorio incluye multiples cuantizaciones (14,2 GB en total); descargar solo el archivo necesario para evitar consumo innecesario de almacenamiento.
+- El modelo esta entrenado y etiquetado principalmente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Algunos datasets de entrenamiento incluyen conjuntos "no refusal", lo que puede reducir los rechazos ante peticiones sensibles y aumentar el riesgo de generar contenido inapropiado.
+- Riesgo de alucinacion inherente a modelos de 1,5B: la capacidad de razonamiento y verificacion factica es limitada en comparacion con modelos mayores.
+- No se documenta la longitud de contexto, por lo que no se puede garantizar el manejo de conversaciones muy largas.
+- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base y los datasets de entrenamiento pueden tener sus propias condiciones; conviene revisar las licencias de los conjuntos de datos citados.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia; para produccion se recomienda Q4_K_M o superior.
+- No se dispone de informacion sobre sesgos especificos, evaluaciones de seguridad ni pruebas de robustez.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Opusculum-1.5B-GGUF
-- Modelo base: https://huggingface.co/Stoned-Code/Opusculum-1.5B
-- Modelo base V0.1: https://huggingface.co/Stoned-Code/Opusculum-1.5B-V0.1
-- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Opusculum-1.5B-i1-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Opusculum-1.5B-GGUF
+- Repositorio de cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/Opusculum-1.5B-i1-GGUF
+- Modelo base: https://huggingface.co/Stoned-Code/Opusculum-1.5B-V0.1
+- Pagina de resumen de descargas: https://hf.tst.eu/model#Opusculum-1.5B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del autor de las cuantizaciones: https://www.nethype.de/
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

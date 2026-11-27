@@ -2,104 +2,96 @@
 
 ## Resumen
 
-Granite Speech 5.0 470M TurboCTC es un modelo de reconocimiento automático del habla (ASR) desarrollado por IBM dentro de la familia Granite. Se trata de un modelo compacto de 472.993.792 parámetros (aproximadamente 470M) diseñado para transcripción multilingüe de alta velocidad, pensado para su despliegue en portátiles, teléfonos y otros dispositivos de borde (edge). La versión actual, publicada el 21 de octubre de 2026, amplía la versión original en inglés (25 de agosto de 2026) a siete idiomas: inglés, francés, alemán, español, portugués, italiano y japonés.
+Granite-Speech-5.0-470M-TurboCTC es un modelo compacto de reconocimiento automatico del habla (ASR) desarrollado por IBM dentro de la familia Granite. Con 472.993.792 parametros, esta disenado para transcripcion multilingue de alta velocidad en entornos de bajos recursos, incluyendo portatiles, telefonos moviles y dispositivos edge. La version actual, publicada el 21 de octubre de 2026, amplia el soporte a siete idiomas (ingles, frances, aleman, espanol, portugues, italiano y japones) e incorpora puntuacion y capitalizacion nativas.
 
-El modelo emplea una arquitectura CTC (Connectionist Temporal Classification) con un codificador acústico de tipo conformer con self-attention por bloques, self-conditioning y downsampling temporal. La inferencia es no autorregresiva mediante decodificación greedy, lo que se traduce en una latencia muy baja y un alto throughput, características clave para aplicaciones empresariales de transcripción en tiempo real. La capa de salida corresponde a 16.384 unidades BPE multilingües y el modelo produce transcripciones con puntuación y mayúsculas nativas.
+El modelo emplea una arquitectura CTC (Connectionist Temporal Classification) con un encoder acustico de tipo conformer, lo que permite decodificacion no autoregresiva mediante greedy decoding. Esta eleccion de diseno reduce drasticamente la latencia frente a modelos autoregresivos basados en decodificadores, manteniendo una precision competitiva. Se entreno con aproximadamente 153.000 horas de audio multilingue procedente de corpus publicos.
 
-Su relevancia actual radica en que combina un tamaño muy reducido (menos de 500M de parámetros) con un rendimiento que, según el autor, supera al modelo Granite Speech 5.0 de 2B en las tres pruebas de japonés reportadas, y mejora el WER medio en inglés de la versión anterior (5,51% frente a 5,78%) pese a añadir seis idiomas. Todo ello bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos.
+Su relevancia actual radica en la combinacion de tamano reducido, velocidad de inferencia y cobertura multilingue con licencia Apache 2.0, lo que lo hace atractivo para integracion en productos comerciales sin restricciones de licencia y para despliegue en hardware modesto. La actualizacion multilingue mejora ademas el WER medio en ingles respecto a la version anterior (5,51 % frente a 5,78 %).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Conformer acoustic encoder con block self-attention, self-conditioning y downsampling temporal; cabeza CTC |
+| Arquitectura | Conformer con block self-attention, self-conditioning y downsampling temporal; capa de salida CTC sobre 16.384 unidades BPE multilingues |
 | Parametros totales | 472.993.792 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo ASR de formato corto; no se especifica ventana de audio máxima) |
-| Tipos de cuantizacion | GGUF Q8_0 (recomendado), Q6_K a Q4_K_M (conversión comunitaria); cuantizaciones adicionales no disponibles |
-| Idiomas soportados | Inglés, francés, alemán, español, portugués, italiano y japonés |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (Q8_0, Q6_K, Q4_K_M disponibles en conversion comunitaria); cuantizacion nativa en safetensors no especificada |
+| Idiomas soportados | Ingles, frances, aleman, espanol, portugues, italiano, japones |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 5,7 GB); GGUF disponible en conversión comunitaria |
+| Formato de pesos | safetensors (transformers); GGUF (conversion comunitaria) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en un codificador acústico de tipo conformer con self-attention por bloques, self-conditioning y downsampling temporal. Sobre la representación del codificador se aplica una capa de salida CTC con 16.384 unidades BPE multilingües. La inferencia es no autorregresiva con decodificación greedy, lo que elimina la latencia asociada a la generación token a token y permite un procesamiento muy rápido del audio. El front-end es un extractor log-mel que puede computarse directamente en el acelerador del modelo.
+El modelo se basa en un encoder acustico de tipo conformer que combina atencion por bloques (block self-attention), self-conditioning y reduccion temporal (temporal downsampling). La salida se proyecta sobre un vocabulario de 16.384 unidades BPE multilingues y se entrena con una funcion de perdida CTC. La inferencia es no autoregresiva mediante greedy decoding, lo que elimina la latencia asociada a la generacion token a token y permite procesar audio en streaming de forma eficiente.
 
-El entrenamiento se realizó sobre aproximadamente 153.000 horas de audio multilingüe procedente de corpus públicos, utilizando la función de pérdida CTC. No se especifica en la información disponible si hubo fases de RLHF, DPO u otras técnicas de alineación posteriores, ni la composición detallada del dataset por idioma. La innovación técnica principal es la combinación de un modelo CTC compacto con puntuación y mayúsculas nativas en siete idiomas, manteniendo una velocidad de inferencia adecuada para dispositivos de borde.
+El entrenamiento utilizo aproximadamente 153.000 horas de audio multilingue extraido de corpus publicos. No se especifica en la informacion disponible la composicion exacta del dataset, el uso de RLHF/DPO ni detalles sobre tecnicas de aumento de datos. La innovacion principal es la propia combinacion de CTC con un encoder conformer compacto que logra velocidad de inferencia muy alta (reflejada en la metrica RTFx del Open ASR Leaderboard) manteniendo precision competitiva, ademas de la incorporacion nativa de puntuacion y capitalizacion sin un modulo externo de postprocesado.
 
 ## Capacidades
 
-- Reconocimiento automático del habla multilingüe en inglés, francés, alemán, español, portugués, italiano y japonés.
-- Transcripción con puntuación y mayúsculas nativas, sin necesidad de un modelo de postprocesado separado.
-- Inferencia no autorregresiva con decodificación greedy, orientada a baja latencia y alto throughput.
-- Procesamiento por lotes de múltiples muestras de audio (batch decoding).
-- Ejecución en dispositivos de borde: portátiles, smartphones y hardware con recursos limitados.
-- Compatibilidad nativa con `transformers>=5.16.0` mediante `AutoModelForCTC` y `AutoProcessor`.
-- Soporte en Apple Silicon (chips M series) a través de `mlx-audio` (versión 0.5.1 o superior).
-- Inferencia local en GGUF mediante `transcribe.cpp` sobre Metal, Vulkan, CUDA, ROCm o CPU, sin Python en tiempo de ejecución.
-- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio generation ni modo de razonamiento extendido.
+- Transcripcion de voz a texto multilingue en siete idiomas: ingles, frances, aleman, espanol, portugues, italiano y japones.
+- Puntuacion y capitalizacion nativas en la salida, sin necesidad de postprocesado externo.
+- Decodificacion no autoregresiva (greedy decoding) con alta velocidad de inferencia, adecuada para aplicaciones de baja latencia y alto throughput.
+- Procesamiento por lotes de multiples muestras de audio mediante la API de transformers.
+- Inferencia en dispositivos edge: soporte via mlx-audio en chips Apple Silicon y via transcribe.cpp en Metal, Vulkan, CUDA, ROCm o CPU.
+- Manejo de audio de 16 kHz mono en el caso de transcribe.cpp.
+- No se menciona soporte de tool calling, agentes, vision ni audio multimodal en la informacion disponible.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz en empresas multinacionales: el modelo cubre siete idiomas con un único artefacto, lo que simplifica el despliegue y evita mantener un modelo distinto por idioma. Su tamaño de 470M permite ejecutarlo en servidores modestos o incluso en portátiles de empleados.
-- Subtitulado y transcripción en tiempo real: la decodificación greedy no autorregresiva y el codificador conformer con downsampling temporal reducen la latencia, lo que lo hace adecuado para generar subtítulos en directo o para asistentes de voz con respuesta rápida.
-- Aplicaciones móviles de dictado y accesibilidad: al caber en dispositivos de borde y estar disponible en GGUF con cuantización Q8_0 o inferior, puede integrarse en apps de smartphones o portátiles sin depender de la nube, preservando la privacidad del audio.
-- Análisis de grabaciones de contact center: el alto throughput permite procesar grandes volúmenes de llamadas en lote para su clasificación, búsqueda o cumplimiento normativo, con transcripciones ya puntuadas y capitalizadas que reducen el postprocesado.
-- Generación de actas y documentación a partir de audio corporativo: la puntuación y mayúsculas nativas facilitan la legibilidad directa de la transcripción y su integración en sistemas de gestión documental o motores de búsqueda.
-- Investigación en ASR multilingüe y evaluación comparativa: al ser Apache 2.0 y estar integrado en el Open ASR leaderboard, sirve como línea base reproducible para experimentos de reconocimiento de habla en siete idiomas, incluido japonés con métricas CER.
-- Despliegue en entornos sin Python o con requisitos de seguridad estrictos: `transcribe.cpp` permite ejecutar el modelo desde un binario nativo en CPU, Metal, Vulkan, CUDA o ROCm, lo que encaja en sistemas embebidos o pipelines de producción con dependencias mínimas.
+- Transcripcion de reuniones y notas de voz en tiempo real: el modelo procesa audio con decodificacion no autoregresiva, lo que permite generar transcripciones con latencia muy baja en portatiles y dispositivos moviles, ideal para aplicaciones de dictado y actas automaticas.
+- Subtitulado automatico multilingue: con soporte para siete idiomas y puntuacion nativa, puede generar subtitulos listos para publicacion sin necesidad de un paso adicional de formateo, en plataformas de video o streaming.
+- Atencion al cliente basada en voz: integrado en sistemas de IVR o asistentes telefonicos, transcribe las consultas de los usuarios en varios idiomas para su posterior procesamiento por un LLM o sistema de tickets.
+- Transcripcion en el dispositivo (on-device): gracias a su tamano de 470M parametros y a las opciones de despliegue en GGUF con transcribe.cpp o mlx-audio, puede ejecutarse localmente en portatiles y telefonos sin enviar audio a la nube, preservando la privacidad.
+- Generacion de actas y documentacion clinica o legal: la transcripcion con puntuacion y capitalizacion nativas reduce el trabajo de correccion manual en entornos donde se requiere documentacion precisa de conversaciones.
+- Procesamiento por lotes de archivos de audio a gran escala: su alta velocidad de inferencia (RTFx elevado) y su naturaleza no autoregresiva lo hacen adecuado para pipelines de transcripcion masiva de archivos de audio en servidores con GPU modestas.
+- Accesibilidad: conversion de voz a texto en aplicaciones de asistencia para personas con discapacidad auditiva, con soporte multilingue para usuarios de distintos paises.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados en la model card se presentan de forma gráfica (imágenes) y no como tablas numéricas completas. Los datos textuales explícitos son los siguientes:
+Los resultados publicados en la model card se presentan en forma de graficas (WER en ingles, WER multilingue en FLEURS/CommonVoice/MLS y CER en japones), sin que se proporcionen los valores numericos exactos en el texto disponible. Los unicos datos numericos explicitos son:
 
-| Benchmark / conjunto | Métrica | Resultado | Referencia |
-|---|---|---|---|
-| Open ASR leaderboard (inglés, media de 9 test sets) | WER medio | 5,51% | 5,78% de la versión anterior solo en inglés |
-| Japonés: CSJ eval1 | CER | No disponible (supera a granite-speech-5.0-2b) | granite-speech-5.0-2b |
-| Japonés: CommonVoice-17 | CER | No disponible (supera a granite-speech-5.0-2b) | granite-speech-5.0-2b |
-| Japonés: FLEURS | CER | No disponible (supera a granite-speech-5.0-2b) | granite-speech-5.0-2b |
-| Multilingüe: FLEURS, CommonVoice, MLS (de, es, fr, it, pt) | WER | No disponible (comparación gráfica frente al mejor modelo open-weights de cada organización) | Varios |
+| Metrica | Valor |
+|---|---|
+| WER medio en ingles (Open ASR Leaderboard, 9 test sets) | 5,51 % (frente a 5,78 % de la version solo inglesa) |
+| CER en japones (CSJ eval1, CommonVoice-17, FLEURS) | inferior al de granite-speech-5.0-2b en los tres conjuntos (valores no disponibles) |
 
-No se han publicado en la información disponible los valores numéricos desagregados por idioma ni por conjunto de test para las evaluaciones multilingües; solo se indica que están representados en las figuras de la model card. Los resultados oficiales del Open ASR leaderboard corresponden todavía a la versión solo en inglés, según la propia model card.
+No se han publicado en la informacion disponible los valores numericos detallados de WER por idioma ni de RTFx.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en safetensors en precisión nativa, el repositorio ocupa 5,7 GB, por lo que se requiere aproximadamente esa cantidad de memoria o algo más para activaciones. Con cuantización GGUF Q8_0 el peso se reduce de forma sustancial; Q6_K y Q4_K_M reducen aún más el requisito, aunque no se publican cifras exactas de VRAM por cuantización.
-- GPU recomendadas: el modelo está pensado para dispositivos de borde, por lo que no requiere GPU de centro de datos. Puede ejecutarse en CPU, en GPUs de consumo y en aceleradores integrados. Para despliegues de alto throughput en servidor se puede usar cualquier GPU moderna compatible con PyTorch; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
-- Cabe en GPU de consumo: sí, dado su tamaño de 470M de parámetros. También está soportado en Apple Silicon mediante `mlx-audio`.
-- Opciones de despliegue: `transformers>=5.16.0` con `AutoModelForCTC`; `mlx-audio` en chips M series; `transcribe.cpp` con GGUF sobre Metal, Vulkan, CUDA, ROCm o CPU. No se documentan en la información disponible integraciones con vLLM, TGI, llama.cpp u Ollama.
-- Latencia y throughput: no se publican cifras concretas de latencia ni de RTFx en la información textual disponible; la model card incluye una gráfica de precisión frente a velocidad (Pareto RTFx) en el Open ASR leaderboard, pero sin valores numéricos extraíbles.
+- VRAM estimada para inferencia: con pesos en fp32 (aprox. 1,9 GB) o fp16/bf16 (aprox. 0,95 GB); con cuantizacion GGUF Q8_0 en torno a 0,5 GB y Q4_K_M en torno a 0,3 GB (estimaciones a partir del numero de parametros).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es mas que suficiente; tambien funciona en CPU y en chips Apple Silicon (M1 en adelante) mediante mlx-audio.
+- Cabe holgadamente en GPU consumer y en dispositivos edge; el modelo esta explicitamente disenado para portatiles, telefonos moviles y otros dispositivos de bajos recursos.
+- Opciones de despliegue: transformers (>=5.16.0) con AutoModelForCTC, mlx-audio (>=0.5.1) para Apple Silicon, transcribe.cpp (release 0.4.1) para inferencia local GGUF en Metal, Vulkan, CUDA, ROCm o CPU.
+- Latencia y throughput: no se proporcionan cifras concretas de RTFx en el texto disponible; la model card indica "very high inference speed" y presenta una grafica de precision frente a velocidad (RTFx) en el Open ASR Leaderboard.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto / formato | Licencia | Notas |
+| Modelo | Parametros | Idiomas | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| granite-speech-5.0-470m-turboctc | 472.993.792 | 7 (en, fr, de, es, pt, it, ja) | Audio de formato corto; CTC no autorregresivo | Apache 2.0 | WER medio en inglés 5,51%; supera en CER de japonés a granite-speech-5.0-2b |
-| granite-speech-5.0-2b | No disponible (2B según la model card) | No disponible en detalle; incluye japonés | No disponible | No disponible en la información | Referencia de IBM de mayor tamaño; superado por el 470M en las tres pruebas de japonés reportadas |
-| Modelos open-weights de otras organizaciones en el Open ASR leaderboard multilingüe | No disponible | de, es, fr, it, pt | No disponible | No disponible | La model card los usa como referencia gráfica; no se detallan nombres ni cifras |
+| granite-speech-5.0-470m-turboctc | 473 M | 7 | no disponible | Apache 2.0 | CTC no autoregresivo, muy rapido, puntuacion nativa |
+| granite-speech-5.0-2b | 2 B (aprox.) | no disponible | no disponible | Apache 2.0 | Mayor tamano; superado por el 470M en CER de japones segun la model card |
+| Whisper (variantes de OpenAI) | 39 M - 1,55 B | ~99 | 30 s de audio | MIT | Autoregresivo, amplia cobertura de idiomas; no se dispone de comparacion numerica en la informacion proporcionada |
 
-No se dispone en la información proporcionada de una comparativa numérica detallada frente a alternativas concretas de otros fabricantes (por ejemplo, Whisper u otros modelos ASR open-weights). La comparación disponible se limita al modelo hermano de 2B y a las referencias gráficas del Open ASR leaderboard.
+No se dispone de datos numericos comparativos de benchmarks con modelos de otros fabricantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado para audio de formato corto; no se especifica en la información disponible su comportamiento en audio de muy larga duración ni una ventana máxima de contexto.
-- Aunque la licencia Apache 2.0 permite uso comercial, no se documentan en la información disponible análisis de sesgos por idioma, acento, género o dialecto; el rendimiento puede variar entre las siete lenguas soportadas.
-- Riesgo de alucinación y errores de transcripción inherentes a los modelos CTC, especialmente en audio con ruido, solapamiento de hablantes o acentos no representados en los corpus de entrenamiento.
-- La puntuación y las mayúsculas son nativas, pero no se detalla su tasa de error ni su comportamiento en idiomas con convenciones tipográficas distintas del inglés (por ejemplo, japonés).
-- Los resultados de benchmarks multilingües se presentan solo en forma gráfica; no hay cifras numéricas desagregadas que permitan una verificación independiente a partir de la información disponible.
-- La entrada del leaderboard oficial del Open ASR corresponde a la versión solo en inglés; los resultados de la versión multilingüe son, según la model card, no oficiales en ese leaderboard.
-- El soporte en `transformers` requiere la versión 5.16.0 o superior, y el soporte en Apple Silicon requiere `mlx-audio` 0.5.1 o superior; versiones anteriores pueden no funcionar.
-- La conversión a GGUF es comunitaria (repositorio de `vladers`), no oficial de IBM, por lo que su calidad y mantenimiento no están garantizados por el autor del modelo.
-- No se documentan en la información disponible capacidades de diarización de hablantes, detección de idioma automática ni traducción.
+- Sesgos conocidos: no se documentan en la informacion disponible; como modelo entrenado con corpus publicos, es previsible que herede sesgos acusticos y dialectales de dichos corpus.
+- Riesgo de alucinacion: los modelos CTC no generan texto libre, por lo que el riesgo de alucinacion es menor que en modelos autoregresivos; sin embargo, pueden producir transcripciones incorrectas en audio con ruido, acentos no representados o solapamiento de hablantes.
+- Limitaciones de contexto: no se especifica la longitud maxima de audio procesable; el uso con transcribe.cpp asume WAV mono a 16 kHz.
+- Limitaciones de idioma: aunque la model card declara siete idiomas, la metadata de Hugging Face solo lista "en"; el rendimiento puede variar entre idiomas y no se han publicado cifras detalladas por idioma en el texto disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero se recomienda verificar los terminos de los corpus de entrenamiento subyacentes.
+- Caveats para produccion: la cuantizacion GGUF es una conversion comunitaria (no oficial de IBM); el soporte en transformers requiere version >=5.16.0; no se documentan garantias de robustez en dominios acusticos especificos (clinico, legal, telefonico).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
-- Revisión anterior solo en inglés: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc/tree/947f59af40db9791170a0628cf0f3f4812d720f1
-- Modelo hermano de 2B: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
-- Open ASR leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
-- Conversión comunitaria a GGUF: https://huggingface.co/vladers/granite-speech-5.0-470m-turboctc-GGUF
+- Revision solo inglesa anterior: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc/tree/947f59af40db9791170a0628cf0f3f4812d720f1
+- Modelo hermano de mayor tamano: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Conversion GGUF comunitaria: https://huggingface.co/vladers/granite-speech-5.0-470m-turboctc-GGUF
 - transcribe.cpp (repositorio): https://github.com/handy-computer/transcribe.cpp
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Paper de referencia (arXiv): arxiv:2609.20104
+- Paper de referencia (arXiv): arXiv:2609.20104

@@ -84,31 +84,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://ipv4.google.com/?hl=de",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Google Übersetzer",
-      "url": "https://translate.google.de/",
-      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
-    },
-    {
-      "title": "Google",
-      "url": "https://ipv4.google.com/?hl=de_AT",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Übersicht",
-      "url": "https://search.google/intl/de-DE/",
-      "snippet": "Seit unserer Geburtsstunde im Jahr 1997 ist die Google Suche kontinuierlich weiterentwickelt worden, damit du die Informationen …"
-    }
-  ]
+  "sources": []
 }

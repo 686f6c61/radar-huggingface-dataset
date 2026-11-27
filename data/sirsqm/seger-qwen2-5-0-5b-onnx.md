@@ -2,53 +2,48 @@
 
 ## Resumen
 
-Seger (ONNX) es una compilacion en formato ONNX con cuantizacion Int8 del modelo Seger, que a su vez es un ajuste fino mediante LoRA sobre Qwen 2.5 0.5B. El repositorio lo publica el usuario sirsqm y su proposito declarado es la inferencia directamente en el navegador mediante transformers.js, apoyandose en WebGPU o WASM. Se trata, por tanto, de un artefacto de despliegue mas que de un modelo entrenado desde cero.
+Seger (ONNX) es una compilacion en formato ONNX con cuantizacion int8 del modelo Seger, un ajuste fino mediante LoRA sobre Qwen 2.5 0.5B. Lo publica el usuario sirsqm en Hugging Face y su proposito es permitir la inferencia directamente en el navegador mediante transformers.js, ya sea con WebGPU o con WASM. El modelo base pertenece a la familia Qwen 2.5, desarrollada por Alibaba, y su variante de 0,5 mil millones de parametros esta pensada para entornos con recursos muy limitados.
 
-El modelo hereda la arquitectura transformer decoder-only de Qwen 2.5 0.5B, con aproximadamente 0,5 mil millones de parametros. El repositorio ocupa 0,6 GB, coherente con un checkpoint cuantizado a 8 bits y pensado para ejecucion en cliente, sin necesidad de servidor. Al derivar de Qwen 2.5, familia entrenada sobre 18 billones de tokens segun el informe tecnico de Qwen, la base ofrece generacion de texto y capacidad conversacional.
+La relevancia de esta publicacion es practica: empaqueta un modelo pequeno en un formato que transforma un ajuste fino de investigacion en un artefacto desplegable sin servidor, ejecutable en el cliente. Al estar cuantizado a int8 y compilado a ONNX, reduce el peso del repositorio a 1,9 GB y evita la necesidad de infraestructura GPU dedicada para tareas de generacion de texto conversacional.
 
-Su relevancia actual radica en el nicho de la inferencia en navegador: permite integrar un modelo conversacional de un tamano muy reducido en aplicaciones web sin backend de GPU, a costa de una capacidad limitada por el reducido numero de parametros y por la cuantizacion. No consta licencia, idiomas soportados ni resultados de benchmarks en la informacion disponible, lo que limita su evaluacion rigurosa antes de un uso en produccion.
+La informacion publicada es muy escasa: la model card se limita a una frase y no detalla el dataset de ajuste, los idiomas soportados, la licencia ni resultados de evaluacion. Cualquier uso en produccion deberia acompanarse de una evaluacion propia del comportamiento del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen 2.5 0.5B), exportada a ONNX |
-| Parametros totales | 0,5 mil millones (aproximado, segun el modelo base Qwen 2.5 0.5B) |
+| Arquitectura | Transformer decoder-only (familia Qwen 2.5), exportado a ONNX |
+| Parametros totales | 0,5 mil millones (modelo base Qwen 2.5 0.5B) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Int8 (ONNX) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el base Qwen 2.5 0.5B soporta 32 768 tokens, dato no confirmado para este ajuste) |
+| Tipos de cuantizacion | int8 (ONNX) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | ONNX (repo de 0,6 GB) |
+| Formato de pesos | ONNX (int8), para transformers.js |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen 2.5 0.5B, un transformer decoder-only denso de aproximadamente 0,5 mil millones de parametros. Sobre ese modelo base, el autor aplico un ajuste fino con LoRA para obtener sirsqm/seger-qwen2.5-0.5b, del cual este repositorio es la exportacion cuantizada. La innovacion concreta de esta ficha no esta en el entrenamiento, sino en el empaquetado: la conversion a ONNX con cuantizacion Int8 para permitir ejecucion en el navegador con transformers.js.
+El modelo es un ajuste fino con LoRA sobre Qwen 2.5 0.5B, un transformer decoder-only de la familia Qwen 2.5. Sobre ese ajuste se ha realizado una exportacion a ONNX y una cuantizacion a int8 para su uso con transformers.js, lo que permite ejecutar la inferencia en WebGPU o en WASM dentro del navegador. No se dispone de informacion sobre el dataset de ajuste, el numero de tokens utilizados, la composicion de los datos ni si se aplicaron tecnicas de RLHF o DPO.
 
-En cuanto a los datos de entrenamiento de la familia Qwen 2.5, el informe tecnico indica que el preentrenamiento se escalo de 7 a 18 billones de tokens respecto a la iteracion anterior, con etapas posteriores de ajuste que incluyen alineacion con preferencias humanas. No se dispone de informacion sobre el dataset especifico, el numero de tokens ni la composicion del ajuste LoRA realizado por el autor, ni sobre el uso de RLHF o DPO en esa etapa. No se documenta ninguna tecnica adicional como decodificacion especulativa o atencion lineal.
+Tampoco se detalla la configuracion del LoRA (rango, modulos objetivo, hiperparametros) ni el procedimiento exacto de cuantizacion. La unica innovacion tecnica documentada es el propio pipeline de despliegue: un artefacto ONNX int8 optimizado para inferencia en el cliente, lo que elimina la dependencia de un backend con GPU.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen 2.5 0.5B y del ajuste conversacional.
-- Inferencia en navegador mediante transformers.js, con ejecucion sobre WebGPU o WASM.
-- Ejecucion en cliente sin backend, lo que facilita despliegues sin servidor de GPU.
-- Capacidad multilingue: no disponible (el modelo base Qwen 2.5 es multilingue, pero no se especifica el alcance en esta ficha).
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Generacion de codigo o matematicas: no disponible de forma especifica para este ajuste.
+- Generacion de texto conversacional, heredada del modelo base Qwen 2.5 0.5B.
+- Ejecucion en navegador mediante transformers.js, con backend WebGPU o WASM.
+- Inferencia local sin servidor, adecuada para aplicaciones web con privacidad de datos en el cliente.
+- Capacidades multilingues: no confirmadas para este ajuste; el modelo base Qwen 2.5 es multilingue, pero no hay datos especificos.
+- Tool calling, function calling y razonamiento multi-paso: no documentados en la informacion disponible.
+- Modo thinking, vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes conversacionales embebidos en paginas web: el modelo puede ejecutarse integramente en el navegador del usuario con transformers.js, sin enviar datos a un servidor, lo que encaja en escenarios de privacidad estricta.
-- Demos y prototipos de producto: permite validar flujos conversacionales en un frontend antes de invertir en infraestructura de inferencia.
-- Aplicaciones educativas offline: al poder cargarse como recurso local con WebGPU o WASM, resulta viable en entornos con conectividad limitada una vez descargado el modelo.
-- Clasificacion o reformulacion de texto ligera: tareas de transformacion de frases cortas son asumibles para un modelo de 0,5B cuantizado a Int8.
-- Autocompletado de campos o formularios: generacion de sugerencias breves en tiempo real dentro del propio cliente.
-- Extensiones de navegador: asistentes de escritura o resumen para textos cortos que se ejecutan en local y evitan dependencias de API externas.
-- Juguetes conversacionales o agentes con personalidad: el ajuste LoRA sugiere un modelo orientado a un tono concreto, aprovechable en bots de entretenimiento.
-
-En todos los casos, el reducido tamano y la cuantizacion limitan la profundidad del razonamiento, por lo que no es adecuado para tareas que exijan alta precision factual o cadenas de razonamiento largas.
+- Asistentes conversacionales embebidos en paginas web: el modelo puede cargarse con transformers.js y responder en el navegador sin enviar la conversacion a un servidor, lo que resulta util para aplicaciones con requisitos de privacidad.
+- Demos interactivas y prototipos: al pesar 1,9 GB en int8, permite publicar una demo funcional de un ajuste fino sin coste de infraestructura GPU.
+- Procesamiento de texto en el cliente para formularios y asistentes de escritura: la inferencia local evita latencia de red y costes de API en tareas de baja complejidad.
+- Educacion y experimentacion: sirve para estudiar el comportamiento de un ajuste fino LoRA sobre Qwen 2.5 0.5B y comparar variantes cuantizadas.
+- Aplicaciones offline o de borde: el formato ONNX con WASM permite ejecutar el modelo en entornos sin GPU y sin conexion permanente.
+- Filtrado y clasificacion ligera de texto: con prompts adecuados puede usarse para tareas de etiquetado simple en el navegador, siempre que se valide su calidad en el dominio concreto.
 
 ## Benchmarks y rendimiento
 
@@ -56,39 +51,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 0,6 GB, y un modelo de 0,5B en Int8 requiere del orden de 0,5 GB de memoria, aunque este dato no se confirma en la informacion disponible.
-- GPU recomendadas: no disponible de forma especifica; al ejecutarse en navegador, el requisito real es una GPU compatible con WebGPU o, en su defecto, CPU mediante WASM.
-- Compatibilidad con GPU de consumo: por el tamano del checkpoint, cabe en cualquier GPU de consumo moderna con WebGPU, si bien no se documentan requisitos minimos concretos.
-- Opciones de despliegue: transformers.js (WebGPU o WASM); otras alternativas como vLLM, llama.cpp, Ollama o TGI no se mencionan en la informacion disponible y, al tratarse de un artefacto ONNX, su uso directo no esta documentado.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: al ser int8 y de 0,5 mil millones de parametros, el peso de los pesos ronda los 0,5 GB; el repositorio completo ocupa 1,9 GB, probablemente por incluir varias variantes o ficheros auxiliares.
+- GPU recomendadas: cualquier GPU integrada o dedicada con soporte WebGPU; en servidor, una GPU consumer de gama baja es suficiente.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna, y tambien en CPU mediante WASM.
+- Opciones de despliegue: transformers.js (WebGPU o WASM) es el destino principal; el formato ONNX tambien puede ejecutarse con ONNX Runtime.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sirsqm/seger-qwen2.5-0.5b-onnx | 0,5B (aprox.) | no disponible | ONNX Int8 | no disponible | Hugging Face |
-| Qwen/Qwen2.5-0.5B | 0,5B | no disponible en la informacion | safetensors | no disponible en la informacion | Hugging Face |
-| Qwen2.5-1.5B | 1,5B | no disponible en la informacion | safetensors | no disponible en la informacion | Hugging Face |
+| Seger (ONNX) | 0,5 B | no disponible | ONNX int8 | no disponible | Hugging Face |
+| Qwen 2.5 0.5B | 0,5 B | 32 768 (segun el modelo base) | safetensors, GGUF | Apache 2.0 (modelo base) | Hugging Face |
+| SmolLM2 360M | 0,36 B | 8 192 (segun el modelo base) | safetensors, GGUF, ONNX | Apache 2.0 (modelo base) | Hugging Face |
 
-La comparativa se limita a la familia Qwen 2.5, dado que la informacion proporcionada no incluye datos de rendimiento ni de licencia que permitan contrastar con otras alternativas como SmolLM2 o Llama 3.2. Los modelos de mayor tamano de la propia familia ofrecen mas capacidad a cambio de no poder ejecutarse en navegador con la misma facilidad.
+La comparativa se limita a datos del modelo base, ya que no hay informacion publicada sobre el rendimiento de Seger. La ventaja diferencial de Seger frente a las alternativas es su empaquetado especifico para transformers.js.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No se documenta ninguna evaluacion de sesgo para este ajuste.
-- Riesgo de alucinacion: elevado de forma previsible por el reducido tamano del modelo base (0,5B) y por la cuantizacion Int8, aunque no se aportan mediciones.
-- Limitaciones de contexto: la longitud de contexto no se especifica en la informacion disponible, lo que impide garantizar conversaciones largas.
-- Limitaciones de idioma: no se detallan los idiomas soportados por este ajuste concreto.
-- Licencia: no disponible, por lo que no puede confirmarse la viabilidad de un uso comercial sin consultar al autor del modelo base y del ajuste.
-- Cuantizacion: la conversion a Int8 puede degradar la calidad de generacion respecto al checkpoint original en safetensors.
-- Evaluacion: el repositorio no incluye benchmarks, ejemplos de uso ni documentacion sobre el dataset de ajuste, lo que dificulta la validacion en produccion.
-- Adopcion: cero descargas y cero likes en el momento de la consulta, sin senales de uso comunitario que respalden su fiabilidad.
+- La model card no documenta sesgos conocidos ni el dataset de ajuste, por lo que no es posible evaluar riesgos de sesgo.
+- Riesgo de alucinacion elevado en un modelo de 0,5 mil millones de parametros, especialmente en tareas de razonamiento o conocimiento factual.
+- La licencia no esta disponible, lo que impide confirmar si se permite el uso comercial; debe verificarse antes de cualquier despliegue en produccion.
+- Los idiomas soportados no estan documentados; el comportamiento en castellano no esta garantizado.
+- La longitud de contexto efectiva del ajuste no esta confirmada y puede diferir de la del modelo base.
+- La cuantizacion int8 puede degradar la calidad respecto al ajuste original en safetensors.
+- No hay resultados de benchmarks ni evaluaciones independientes que respalden su calidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sirsqm/seger-qwen2.5-0.5b-onnx
 - Modelo base del ajuste: https://huggingface.co/sirsqm/seger-qwen2.5-0.5b
-- Modelo base original: https://huggingface.co/Qwen/Qwen2.5-0.5B
-- Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
-- Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Informe tecnico de Qwen2.5 (PDF): https://arxiv.org/pdf/2412.15115v2
-- Repositorio GitHub de referencia sobre Qwen2.5: https://github.com/mx4ai/qwen2.5
+- Modelo original Qwen 2.5 0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Documentacion de transformers.js: https://huggingface.co/docs/transformers.js

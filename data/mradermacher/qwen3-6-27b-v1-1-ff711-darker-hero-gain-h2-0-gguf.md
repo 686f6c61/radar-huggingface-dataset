@@ -2,93 +2,106 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF estáticas del modelo Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, una variante afinada del modelo denso Qwen3.6-27B desarrollado por Alibaba. El modelo base, publicado en abril de 2026, es un transformer denso de 27.320 millones de parámetros con capacidades nativas de visión-lenguaje, orientado a codificación agente, razonamiento STEM y comprensión visual avanzada, incluyendo inteligencia espacial, localización de objetos y OCR de documentos. El afinamiento FF711-Darker-Hero-GAIN-H2.0, creado por DavidAU, aplica un proceso de entrenamiento o mezcla adicional cuyos detalles técnicos no están documentados en la información disponible.
+Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-GGUF es una cuantizacion estatica en formato GGUF del modelo DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, un fine-tune de la familia Qwen3.6 de 27.320.697.856 parametros. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF de modelos open source, y distribuye el modelo en 13 variantes de cuantizacion que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), ademas de dos ficheros mmproj para el componente multimodal.
 
-El repositorio de mradermacher proporciona doce formatos de cuantización GGUF, desde Q2_K hasta F16, lo que permite desplegar el modelo en una amplia gama de hardware, desde equipos con GPU de consumo de 8-12 GB hasta servidores con múltiples GPU de alta capacidad. La relevancia de esta publicación radica en que combina las capacidades multimodales y de agente del Qwen3.6-27B con el formato GGUF, que facilita la ejecución local en CPU y GPU mediante herramientas como llama.cpp, Ollama o LM Studio, sin depender de infraestructura cloud. El repositorio está etiquetado como compatible con endpoints de inferencia y orientado a conversación.
+El modelo base es un tune multicapa ("multi-stage tuned", "multi-state-merge") orientado a usos creativos y de rol, con etiquetas que declaran explicitamente caracter heretico, abliterated y uncensored, y entrenado sobre los datasets DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. Incorpora modo thinking/razonamiento y esta marcado como "not-for-all-audiences", lo que condiciona su uso en produccion.
 
-## Especificaciones técnicas
+La relevancia de esta ficha es practica: permite ejecutar un modelo de 27B en hardware de consumo mediante cuantizacion GGUF, con opciones que caben en GPUs de 24 GB (Q4_K_M, 16,9 GB) e incluso en configuraciones mas ajustadas con Q2_K o Q3_K. La licencia declarada es Apache 2.0, aunque las restricciones derivadas de su naturaleza abliterated y de contenido para adultos deben evaluarse antes de cualquier despliegue comercial.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con capacidades nativas de visión-lenguaje |
-| Parámetros totales | 27.320.697.856 (27,32 B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | No disponible para esta variante; el modelo base Qwen es multilingüe |
-| Licencia | No disponible en el repositorio GGUF; el modelo base Qwen3.6-27B usa Apache 2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer (derivada de Qwen3.6); detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj Q8_0 y f16 |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); base en bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-27B es un transformer denso (sin arquitectura MoE) con capacidades nativas de visión-lenguaje, construido sobre la versión anterior Qwen3.5-27B. Según la documentación disponible, incorpora mejoras significativas en codificación agente, razonamiento STEM y capacidades de inferencia. En la modalidad de visión, presenta avances en inteligencia espacial, localización y detección de objetos, comprensión de video, OCR de documentos y capacidades de agente visual. El modelo fue liberado por el equipo Qwen de Alibaba el 22 de abril de 2026 bajo licencia Apache 2.0, con pesos abiertos.
+El modelo base es un transformer de 27.320.697.856 parametros derivado de la familia Qwen3.6, afinado por DavidAU mediante un proceso descrito como "multi-stage tuned" y "multi-state-merge", es decir, una combinacion de ajuste fino en varias etapas y fusion de estados. El autor declara el uso de los datasets DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets, sin que se detalle en la informacion disponible el numero de tokens, la composicion exacta del corpus ni si hubo fases de RLHF o DPO.
 
-La variante FF711-Darker-Hero-GAIN-H2.0 de DavidAU aplica un proceso de afinamiento o mezcla sobre el modelo base, pero los detalles específicos de este proceso (datos de entrenamiento, técnica empleada, número de pasos) no están documentados en la información disponible. El repositorio de mradermacher se limita a proporcionar cuantizaciones GGUF estáticas del modelo de DavidAU, sin modificar los pesos más allá de la cuantización. El comentario en la model card indica `quantize_version: 2` y `output_tensor_quantised: 1`, lo que sugiere un proceso de cuantización estándar de segunda generación.
+Entre las tecnicas aplicadas se mencionan explicitamente el abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones) y el etiquetado "heretic", orientados a reducir las negativas del modelo ante contenido sensible. Tambien se declara soporte de modo thinking/razonamiento. No se dispone de informacion sobre innovaciones arquitectonicas adicionales como atencion lineal, decodificacion especulativa o capas hibridas. Esta publicacion concreta es una cuantizacion estatica del modelo base, sin reentrenamiento: mradermacher aplica los algoritmos de cuantizacion de llama.cpp sobre los pesos originales en bfloat16.
 
 ## Capacidades
 
-- Generación de texto conversacional en múltiples dominios, orientada a interacción tipo chat.
-- Codificación agente: el modelo base está diseñado para tareas de programación con razonamiento multi-paso y uso de herramientas.
-- Razonamiento STEM: resolución de problemas de matemáticas, física e ingeniería con razonamiento paso a paso.
-- Visión por computador: el modelo base incluye inteligencia espacial, localización y detección de objetos, y OCR de documentos.
-- Comprensión de video: el modelo base puede procesar y entender contenido audiovisual.
-- Capacidades de agente visual: puede interpretar capturas de pantalla y coordinar acciones en interfaces gráficas.
-- Soporte de tool calling y function calling: el modelo base está diseñado para integrarse con herramientas externas en flujos agente.
-
-Nota: las capacidades listadas corresponden al modelo base Qwen3.6-27B. El afinamiento FF711-Darker-Hero-GAIN-H2.0 puede modificar, potenciar o restringir algunas de estas capacidades, pero no se dispone de documentación específica al respecto.
+- Generacion de texto generalista, con enfasis declarado en "all use cases".
+- Razonamiento y modo thinking explicito.
+- Generacion de codigo (etiqueta "coder").
+- Escritura creativa: ficcion, relato, todos los generos y roleplaying.
+- Conversacion multi-turno (pipeline conversacional).
+- Capacidades multimodales: el repositorio incluye ficheros mmproj Q8_0 y f16, lo que indica soporte de entrada visual en el modelo base.
+- Multilingue limitado a ingles y chino segun la model card.
+- Contenido sin censura (abliterated/uncensored), incluido material para adultos.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de codificación local: desplegado con Ollama o llama.cpp, puede servir como asistente de programación en entornos sin conexión, aprovechando las capacidades de codificación agente del modelo base para generación de código, revisión y refactorización.
-- Análisis de documentos con OCR: las capacidades de visión del modelo base permiten extraer y procesar texto de documentos escaneados, facturas o formularios, útil en entornos de gestión documental con requisitos de privacidad de datos.
-- Automatización de pruebas visuales: el modelo puede interpretar capturas de pantalla de aplicaciones web o móviles y generar descripciones o detectar anomalías, integrándose en pipelines de CI/CD.
-- Tutoría STEM: puede resolver problemas de matemáticas, física o ingeniería con explicaciones detalladas, adecuado como herramienta educativa en plataformas de aprendizaje.
-- Agente de automatización de escritorio: combinado con frameworks de agente, puede coordinar acciones en interfaces gráficas a partir de capturas de pantalla, útil para automatizar flujos de trabajo repetitivos.
-- Despliegue en infraestructura con restricciones: el formato GGUF permite ejecutar el modelo en CPU o GPU con memoria limitada, adecuado para entornos edge, laboratorios con hardware modesto o despliegues on-premise con requisitos de soberanía de datos.
-- Análisis de contenido audiovisual: las capacidades de comprensión de video del modelo base permiten indexación, moderación o resumen de contenido multimedia en plataformas de streaming o archivo.
+- Escritura creativa y narrativa larga: el modelo esta afinado especificamente para ficcion y todos los generos, por lo que resulta adecuado para generar relatos, dialogos y tramas con coherencia estilistica; la cuantizacion Q6_K o Q8_0 preserva mejor el registro literario.
+- Roleplaying y simulacion de personajes: las etiquetas de multi-stage tune y su orientacion conversacional permiten mantener personajes consistentes en sesiones largas; conviene usar Q4_K_M o superior para evitar degradacion del tono.
+- Generacion de codigo en local: la etiqueta "coder" y el tamaNo de 27B permiten asistencia de programacion en estaciones de trabajo sin GPU de datacenter, con Q4_K_M (16,9 GB) como compromiso entre calidad y VRAM.
+- Razonamiento con modo thinking: para tareas de analisis, matematicas o descomposicion de problemas donde se quiere traza de razonamiento explicita, activando el modo thinking del modelo base.
+- Procesamiento de documentos con componente visual: los ficheros mmproj permiten alimentar imagenes junto con texto en llama.cpp, util para extraccion de informacion de capturas, diagramas o documentos escaneados.
+- Experimentacion en investigacion sobre alineacion y abliteration: el modelo es un caso de estudio util para medir como el abliteration afecta a la tasa de rechazo, la utilidad y los sesgos, comparandolo con el Qwen3.6 original.
+- Despliegue en hardware de consumo: con Q2_K (11,0 GB) o Q3_K_M (13,6 GB) se puede ejecutar en GPUs de 12-16 GB, lo que habilita prototipos locales de asistentes conversacionales sin infraestructura cloud.
+- Generacion de contenido para adultos en entornos controlados: su naturaleza uncensored lo hace apto para plataformas de ficcion adulta que requieran este tipo de material, siempre con las salvaguardas legales y de moderacion adecuadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para la variante FF711-Darker-Hero-GAIN-H2.0 en la información disponible. La documentación del modelo base Qwen3.6-27B menciona que es competitivo en benchmarks de codificación con modelos de tamaño muy superior, y que presenta mejoras en razonamiento STEM e inferencia respecto a la versión 3.5-27B, pero no se proporcionan cifras concretas en los resultados de búsqueda. No se deben asumir los resultados del modelo base como representativos de esta variante afinada sin verificación.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Q2_K (aproximadamente 8-10 GB de VRAM): puede ejecutarse en GPU de consumo como RTX 3060 12 GB o RTX 4060 Ti 16 GB, aunque con pérdida notable de calidad.
-- Q4_K_M (aproximadamente 15-17 GB de VRAM): cabe en RTX 4080, RTX 4090, o GPU de estación de trabajo como RTX 4000 Ada. También ejecutable en Mac con 32 GB de RAM unificada mediante Metal.
-- Q5_K_M (aproximadamente 18-20 GB de VRAM): recomendado para RTX 4090, RTX 6000 Ada o A100 40 GB.
-- Q6_K (aproximadamente 22-24 GB de VRAM): recomendado para A100 40 GB, A6000 o H100.
-- Q8_0 (aproximadamente 29-31 GB de VRAM): recomendado para A100 40 GB, H100 o configuraciones multi-GPU.
-- F16 (aproximadamente 55 GB de VRAM): requiere A100 80 GB, H100 80 GB o distribución en múltiples GPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM con soporte GGUF, text-generation-inference (TGI) con adaptadores GGUF.
-- El repositorio está etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con plataformas de inferencia como endpoints gestionados.
-- La ejecución en CPU es posible con cuantizaciones Q2_K a Q4_K_M, aunque la latencia será significativamente mayor que en GPU.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: ~11,0 GB de pesos; ~12-13 GB con contexto moderado.
+  - Q3_K_M: ~13,6 GB; ~15 GB con contexto.
+  - IQ4_XS: ~15,5 GB; ~17 GB con contexto.
+  - Q4_K_M: ~16,9 GB; ~18-19 GB con contexto.
+  - Q5_K_M: ~19,6 GB; ~21 GB con contexto.
+  - Q6_K: ~22,5 GB; ~24 GB con contexto.
+  - Q8_0: ~29,1 GB; requiere 32 GB o mas.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M a Q6_K; RTX 3090 (24 GB) para Q4_K_M; A100 40/80 GB o H100 para Q8_0 y despliegues concurrentes; RTX 4080/4070 Ti Super (16 GB) para Q3_K_M o IQ4_XS.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o Q5_K_M; en GPUs de 16 GB con Q3_K_M o IQ4_XS; en GPUs de 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF; el repositorio incluye quants i1 (imatrix) en una publicacion separada para mayor calidad por bit.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-27B (base) | 27,32 B | Denso, visión-lenguaje | No disponible | Apache 2.0 | Pesos abiertos |
-| Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0 (este modelo) | 27,32 B | Denso, visión-lenguaje (afinado) | No disponible | No disponible | GGUF |
-| Qwen3.5-27B | No disponible | Denso | No disponible | No disponible | Pesos abiertos |
+| Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF | Fine-tune creativo, abliterated, multimodal via mmproj |
+| DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0 (base) | 27,3B | no disponible | Apache 2.0 | safetensors (bfloat16) | Modelo original sin cuantizar; requiere ~55 GB en bf16 |
+| Qwen3.6-27B (original de la familia) | ~27B | no disponible | no disponible | safetensors/GGUF | Referencia sin abliteration; comportamiento alineado estandar |
+| Cuantizaciones i1 de mradermacher del mismo modelo | 27,3B | no disponible | Apache 2.0 | GGUF (imatrix) | Mayor calidad por bit a igual tamano; publicacion separada |
 
-La comparativa se limita a la familia Qwen 27B, ya que no se dispone de datos suficientes sobre otros modelos comparables en la información proporcionada. El modelo base Qwen3.6-27B es la evolución directa del Qwen3.5-27B, con mejoras documentadas en codificación agente, razonamiento STEM y capacidades visuales. No se dispone de datos de rendimiento comparativos con modelos de otros fabricantes en la información disponible.
+No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion proporcionada para establecer diferencias cuantitativas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Los detalles del afinamiento FF711-Darker-Hero-GAIN-H2.0 no están documentados: se desconoce qué datos de entrenamiento se utilizaron, qué técnica se aplicó y cómo afecta al comportamiento del modelo base.
-- No se han publicado benchmarks para esta variante específica: los resultados del modelo base no son necesariamente representativos de esta versión afinada.
-- Las capacidades de visión del modelo base pueden requerir el proyector multimodal (mmproj) que no está confirmado en este repositorio GGUF: los usuarios que necesiten procesamiento de imágenes deben verificar si los archivos GGUF incluyen el componente de visión.
-- La licencia del modelo afinado no está confirmada: aunque el modelo base usa Apache 2.0, el afinamiento de DavidAU podría tener condiciones adicionales. Se recomienda contactar con el autor antes de uso comercial.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados. No se recomienda su uso sin supervisión humana en contextos donde la precisión sea crítica.
-- La longitud de contexto no está documentada: los usuarios deben verificar experimentalmente el contexto máximo soportado antes de desplegar en producción.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta: se trata de una publicación reciente sin validación comunitaria.
+- Modelo abliterated y uncensored: se ha eliminado deliberadamente parte de los mecanismos de rechazo, por lo que puede generar contenido ofensivo, ilegal o danino sin filtros; no es apto para aplicaciones orientadas al publico general sin moderacion externa.
+- Etiqueta "not-for-all-audiences": el modelo esta disenado para contenido adulto y puede producir material sexual explicito o violento.
+- Riesgo de alucinacion: como todo modelo de lenguaje de su escala, puede inventar hechos, citas y referencias; no se han publicado evaluaciones de factualidad.
+- Sesgos conocidos: no documentados en la informacion disponible; los sesgos del corpus de entrenamiento y del proceso de abliteration pueden amplificar respuestas estereotipadas o polarizadas.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado ni evaluado.
+- Contexto: la longitud de contexto no se especifica en la model card; conviene verificar el valor real en la configuracion del modelo base antes de disenar flujos con ventanas largas.
+- Licencia: se declara Apache 2.0, pero el uso comercial de un modelo abliterated puede entrar en conflicto con las politicas de plataformas de despliegue y con la legislacion sobre contenido; requiere revision legal.
+- Cuantizacion: las variantes Q2_K y Q3_K_S degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- Repositorio grande (190,8 GB) y 205 descargas: ecosistema pequeno, poca validacion comunitaria y sin resultados de benchmarks publicados.
+- Procedencia: es una cuantizacion de terceros de un fine-tune de terceros sobre un modelo base de terceros; la trazabilidad de datos de entrenamiento es limitada.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-GGUF
-- Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
-- Cuantización Q8_0 alternativa: https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q8_0-GGUF
-- Repositorio GGUF del modelo base: https://huggingface.co/mradermacher/Qwen3.6-27B-GGUF
-- Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b
-- Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.6-27b
-- Guía de instalación (Mac, NVIDIA, cloud): https://www.mayhemcode.com/2026/07/qwen36-27b-install-guide-mac-nvidia-gpu.html
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
+- Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
+- Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

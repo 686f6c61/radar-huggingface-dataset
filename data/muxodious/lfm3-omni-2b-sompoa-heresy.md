@@ -2,108 +2,97 @@
 
 ## Resumen
 
-LFM3-Omni-2B-SOMPOA-heresy es una variante "decensored" (abliterated) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por el usuario independiente MuXodious. El modelo base, desarrollado por Liquid AI, es un modelo ómnido de extremo a extremo de 2.166.928.384 parámetros que comprende texto, imágenes, vídeo y audio como entrada, y genera texto, habla o una mezcla intercalada de ambos como salida. Forma parte de la familia LFM3, presentada el 27 de octubre de 2026, cuyos seis modelos de la clase 2B comparten el mismo backbone LFM3-1.7B-Base.
+LFM3-Omni-2B-SOMPOA-heresy es un ajuste fino del modelo multimodal LiquidAI/LFM3-Omni-2B, desarrollado por el usuario MuXodious. Se trata de una variante "abliterated" (también etiquetada como uncensored, decensored o heretic) generada mediante la herramienta Heretic de P-E-W en su versión v2.2.0.dev0, con la técnica Self-Organizing Maps & Magnitude-Preserving Orthogonal Ablation (SOMPOA) activada. El objetivo del ajuste es reducir la tasa de rechazos del modelo base ante peticiones que este declinaría por defecto, preservando al mismo tiempo la distribución de salida original mediante control de divergencia KL.
 
-La modificación aplicada consiste en un proceso de eliminación de rechazos mediante Heretic v2.2.0.dev0 con el algoritmo SOMPOA (una variante de abliteration con dirección de rechazo y pesos por capa en las proyecciones `attn.o_proj` y `mlp.down_proj`). Según la model card, el resultado reduce las negativas de 98/101 a 2/101 en el conjunto de evaluación del autor, con una divergencia KL de 0.0413 respecto al original. Es relevante para quien necesite un modelo ómnido pequeño, ejecutable en el borde, sin las capas de rechazo del modelo alineado original.
+El modelo hereda la arquitectura "any-to-any" del LFM3-Omni-2B de Liquid AI, orientada a entornos edge y conversación multimodal (audio, visión y texto). Cuenta con 2.166.928.384 parámetros totales según los pesos en safetensors, y el repositorio ocupa 4,5 GB. Soporta 23 idiomas, entre ellos el castellano, y se distribuye bajo la licencia lfm1.0 del modelo base.
 
-El modelo conserva la arquitectura y las capacidades del LFM3-Omni-2B, pero su licencia heredada (lfm1.0) y la naturaleza de la modificación plantean advertencias importantes para uso en producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un experimento de publicación reciente y sin validación comunitaria.
+La relevancia de esta ficha radica en que documenta un caso de modificación de alineamiento sobre un modelo omni pequeño: el autor reporta una reducción de rechazos de 98/101 a 2/101 con una divergencia KL de 0.0413, lo que permite evaluar el compromiso entre "desbloqueo" y degradación de capacidades.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal ómnido (familia LFM3, backbone LFM3-1.7B-Base); detalles internos no disponibles |
-| Parámetros totales | 2.166.928.384 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal "any-to-any" (familia LFM3 Omni de Liquid AI); detalles internos no disponibles |
+| Parametros totales | 2.166.928.384 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (repo con safetensors; no se listan GGUF ni otras variantes) |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se listan GGUF ni otras variantes) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
 | Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
 | Formato de pesos | safetensors (librería transformers, custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-Omni-2B es, según la documentación de Liquid AI, el primer modelo ómnido de la compañía: un único modelo de extremo a extremo que comprende texto, imágenes, vídeo y audio y responde en texto, habla o texto y habla intercalados. Pertenece a la familia LFM3, publicada el 27 de octubre de 2026, en la que seis modelos de la clase 2B (texto, visión, audio, ómnido y de decisión) ramifican desde el mismo backbone LFM3-1.7B-Base. No se dispone de detalles públicos sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) en la información proporcionada.
+El modelo parte de LiquidAI/LFM3-Omni-2B, un modelo de la familia LFM3 Omni de Liquid AI con pipeline any-to-any, es decir, capaz de recibir y emitir combinaciones de texto, imagen y audio (image-text-to-text, speech-to-speech). La model card no detalla la arquitectura interna (tipo de atención, capas, dimensión oculta) ni los datos de preentrenamiento del modelo base, por lo que esos datos se consideran no disponibles.
 
-La variante aquí descrita aplica Heretic v2.2.0.dev0 con el algoritmo SOMPOA. La model card detalla los parámetros del proceso: `direction_index` de 14.07, `attn.o_proj.max_weight_position` de 12.85 y `mlp.down_proj.max_weight_position` de 6.57, con vectores de pesos por capa (índices 0 a 5) para las proyecciones de atención y de la MLP. El autor reporta cuatro ensayos (T130, T183, T237, T356) con divergencias KL de 0.0413, 0.0205, 0.0179 y 0.0159 respectivamente, y una tabla adicional de hasta 10 ensayos con recuentos de rechazo entre 2/101 y 23/101. La técnica es una abliteration quirúrgica que modifica direcciones de activación asociadas al rechazo, no un reentrenamiento.
+El ajuste fino no es un entrenamiento supervisado convencional: se aplica la técnica de abliteración de Heretic v2.2.0.dev0 con SOMPOA, que identifica direcciones de rechazo en los pesos y las ablaciona de forma ortogonal preservando la magnitud, guiado por un índice de dirección (direction_index = 14.07) y pesos por capa en attn.o_proj y mlp.down_proj. El proceso se optimiza mediante búsqueda de trials que minimizan rechazos sujetos a una penalización por divergencia KL respecto al modelo original. El autor indica que se usaron datasets personalizados de prompts dañinos e inofensivos y un system prompt vacío durante la evaluación.
 
 ## Capacidades
 
-- Comprensión multimodal de entrada: texto, imágenes, vídeo y audio en un único modelo de extremo a extremo.
-- Generación de salida multimodal: texto, habla (speech-to-speech) o texto y habla intercalados.
-- Conversación multi-turno orientada a despliegue en el borde ("edge", "conversational" en los tags).
-- Soporte de 23 idiomas, incluidos español, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso, polaco, danés, griego, finés, hebreo, neerlandés, sueco y turco.
-- Modo "any-to-any" según el pipeline declarado en Hugging Face.
-- Comportamiento decensored: la model card reporta 2/101 rechazos frente a 98/101 del original en su conjunto de evaluación.
+- Generación de texto y conversación multi-turno en 23 idiomas, incluido el castellano.
+- Procesamiento de imagen a texto (image-text-to-text) heredado del modelo base.
+- Procesamiento de audio y speech-to-speech, según los tags del repositorio.
+- Pipeline any-to-any: combinaciones de entrada y salida entre texto, imagen y audio.
+- Orientación a despliegue en edge y aplicaciones conversacionales de baja latencia (según tags).
+- Reducción drástica de rechazos: 2/101 en la evaluación del autor frente a 98/101 del modelo original.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte explícito de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes de voz en dispositivos de borde: el modelo acepta audio y responde con habla en un único paso, lo que permite construir interfaces conversacionales locales sin pipeline separado de ASR + LLM + TTS, aprovechando su tamaño de 2B parámetros.
-- Transcripción y respuesta hablada en atención al cliente: al ser speech-to-speech de extremo a extremo, puede gestionar interacciones telefónicas o de mostrador donde se requiere baja latencia y no hay conectividad garantizada.
-- Descripción de imágenes y vídeo para accesibilidad: generación de descripciones textuales o narradas de contenido visual, útil en herramientas de lectura de pantalla y catalogación de archivos multimedia.
-- Análisis de reuniones y notas de voz: entrada de audio con salida de texto estructurado (resumen, acciones) en cualquiera de los 23 idiomas soportados, incluido el español.
-- Investigación sobre alineación y seguridad: la variante permite estudiar el efecto de la abliteration SOMPOA sobre un modelo ómnido, comparando rechazos y divergencia KL con el original.
-- Prototipado de agentes conversacionales multilingües: con 23 idiomas y modalidad any-to-any, sirve para validar flujos de conversación en mercados con varios idiomas antes de escalar a modelos mayores.
-- Experimentación con modelos sin censura en entornos controlados: útil para estudiar comportamientos del modelo base cuando se eliminan las capas de rechazo, siempre con las cautelas de la licencia y del contenido generado.
+- Investigación sobre alineamiento y abliteración: permite estudiar empíricamente el efecto de la ablación de direcciones de rechazo sobre un modelo omni pequeño, comparando la tasa de rechazos (2/101) con la divergencia KL (0.0413) y con la degradación en PIQA.
+- Evaluación comparativa de técnicas de desbloqueo: útil para reproducir y contrastar Heretic + SOMPOA frente a otras técnicas de abliteración sobre el mismo modelo base, midiendo el compromiso entre rechazos y capacidades.
+- Asistentes conversacionales de voz en edge: el tamaño de 2,17B parámetros y la orientación edge del modelo base permiten prototipar interfaces speech-to-speech en hardware limitado, con la salvedad de que las respuestas no estarán restringidas por filtros de seguridad.
+- Procesamiento multimodal de documentos con imagen y texto: al heredar image-text-to-text, puede emplearse para describir o extraer información de imágenes en pipelines de investigación donde se requiera ausencia de rechazos.
+- Generación de datasets sintéticos sin filtrado: útil para crear corpus de conversación o audio-texto en los 23 idiomas soportados cuando el pipeline de anotación necesita que el modelo no decline consignas.
+- Pruebas de robustez y red teaming: sirve como modelo "sin censura" de referencia para comparar con variantes alineadas en auditorías de seguridad de sistemas multimodales.
+- Desarrollo de aplicaciones multilingües en castellano: con soporte declarado de es, puede integrarse en prototipos de transcripción y respuesta hablada, siempre que el equipo asuma la falta de salvaguardas.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica resultados de PIQA para cuatro ensayos de abliteration, comparados con el modelo original. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks multimodales en la información disponible.
+El autor publica únicamente resultados de PIQA para varios trials del proceso de abliteración, comparados con el modelo original:
 
-| Ensayo | Métrica | Este modelo | Modelo original |
-|---|---|---|---|
-| T130 | PIQA acc | 0.6186 | 0.6175 |
-| T130 | PIQA acc_norm | 0.6295 | 0.6262 |
-| T183 | PIQA acc | 0.6126 | 0.6175 |
-| T183 | PIQA acc_norm | 0.6251 | 0.6262 |
-| T237 | PIQA acc | 0.6181 | 0.6175 |
-| T237 | PIQA acc_norm | 0.6230 | 0.6262 |
-| T356 | PIQA acc | 0.6170 | 0.6175 |
-| T356 | PIQA acc_norm | 0.6262 | 0.6262 |
+| Benchmark | Metrica | T130 | T356 | T183 | T237 | Modelo original |
+|---|---|---|---|---|---|---|
+| PIQA | acc | 0.6186 | 0.6170 | 0.6126 | 0.6181 | 0.6175 |
+| PIQA | acc_norm | 0.6295 | 0.6262 | 0.6251 | 0.6230 | 0.6262 |
 
-| Métrica de decensoring | Este modelo (T130) | Modelo original |
-|---|---|---|
-| Rechazos | 2/101 | 98/101 |
-| Divergencia KL | 0.0413 | 0 (por definición) |
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible. Tampoco se aportan métricas específicas de las modalidades de audio o visión.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 2.166.928.384 parámetros en safetensors, el repo ocupa 4.5 GB. En fp16 se requieren aproximadamente 4.3 GB solo para pesos, más overhead de activaciones y del codificador multimodal; en cuantización de 8 bits, en torno a 2.2 GB, y en 4 bits, alrededor de 1.1 GB. No se dispone de cifras oficiales de VRAM para el modelo ómnido completo.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, una GPU consumer con 8-12 GB de VRAM debería poder alojar los pesos en fp16, pero el soporte de audio y vídeo puede elevar los requisitos.
-- Cabe en GPU consumer: sí, por el tamaño de pesos (2B parámetros); las GPU concretas no están documentadas.
-- Opciones de despliegue: transformers (librería declarada, con `custom_code`). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 4,3 GB solo para pesos (2,17B parámetros × 2 bytes), más overhead de activaciones y del codificador multimodal; el repo completo ocupa 4,5 GB.
+- VRAM estimada en cuantización de 8 bits: alrededor de 2,2 GB para pesos; en 4 bits, alrededor de 1,1 GB, aunque no se distribuyen pesos cuantizados oficiales en el repositorio.
+- GPU recomendadas: no hay recomendaciones oficiales en la información disponible; por tamaño, cabría en GPUs consumer con 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 4070) en FP16, y en GPUs de 24 GB (RTX 4090) con margen amplio para lotes mayores.
+- Despliegue: la librería declarada es transformers con custom_code, por lo que requiere cargar el código remoto del repositorio; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-SOMPOA-heresy | 2.166.928.384 | no disponible | any-to-any (texto, imagen, vídeo, audio) | lfm1.0 | Hugging Face, 0 descargas |
-| LiquidAI/LFM3-Omni-2B (original) | ~2B | no disponible | any-to-any | lfm1.0 | Hugging Face (modelo base) |
-| LFM3-1.7B (familia LFM3) | ~1.7B | no disponible | texto | lfm1.0 | Hugging Face |
-| Otros modelos ómnido de la clase 2B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM3-Omni-2B-SOMPOA-heresy | 2,17B | no disponible | texto, imagen, audio | lfm1.0 | Ajuste abliterated; 2/101 rechazos, KL 0.0413 |
+| LiquidAI/LFM3-Omni-2B (base) | 2,17B | no disponible | texto, imagen, audio | lfm1.0 | Modelo original; 98/101 rechazos en la misma evaluación |
+| Otras variantes abliterated de la familia LFM3 | no disponible | no disponible | no disponible | no disponible | No se han identificado en la información proporcionada |
 
-La comparación se limita a los modelos de la propia familia LFM3 porque la información proporcionada no incluye alternativas externas de la misma categoría (ómnido, 2B) con datos verificables.
+La comparativa con modelos de otros fabricantes (por ejemplo, alternativas omni de tamaño similar) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina las capas de rechazo del modelo alineado: puede generar contenido dañino, ofensivo o ilegal sin las salvaguardas del original. No es apto para despliegues públicos sin moderación externa.
-- La model card reporta una divergencia KL de 0.0413 respecto al original en el mejor ensayo, lo que indica que el comportamiento general puede haberse degradado ligeramente; los benchmarks publicados se limitan a PIQA.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual en la información disponible; el modelo base es de 2B parámetros y la modificación no está validada más allá de PIQA.
-- Licencia lfm1.0 (license: other): es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; la licencia del modelo base puede imponer restricciones que la modificación no elimina.
-- El autor es un usuario independiente (MuXodious), no Liquid AI; el modelo no está respaldado ni validado por la compañía.
-- Repositorio con 0 descargas y 0 likes: sin validación comunitaria ni informes de uso en producción.
-- No se dispone de información sobre longitud de contexto, cuantizaciones disponibles ni soporte de tool calling, lo que limita la planificación de despliegues.
-- El soporte de 23 idiomas procede de los metadatos del modelo base; no hay evaluación publicada de calidad por idioma en esta variante.
+- Modelo deliberadamente desalineado: la abliteración elimina direcciones de rechazo, por lo que puede generar contenido dañino, ilegal o inseguro sin filtros; no es apto para producción orientada al público sin capas de moderación externas.
+- Riesgo de alucinación: no se han publicado evaluaciones de veracidad; el proceso de ablación puede alterar comportamientos además del rechazo, y la KL de 0.0413 indica una desviación no nula respecto al original.
+- Degradación medida: en PIQA, algunos trials caen por debajo del original (T183: acc 0.6126 frente a 0.6175), lo que sugiere una ligera pérdida de capacidades según la configuración elegida.
+- Idiomas: aunque se declaran 23 idiomas, no hay evaluación por idioma; el rendimiento real en castellano o en idiomas de bajos recursos no está verificado.
+- Contexto: la longitud de contexto no se documenta, lo que impide planificar cargas de trabajo con ventanas largas.
+- Licencia lfm1.0: es una licencia "other" del modelo base; deben revisarse sus términos para uso comercial, y el ajuste fino no exime de las obligaciones de la licencia original.
+- Dependencia de custom_code: la carga requiere confiar en código remoto del repositorio, lo que añade un riesgo de seguridad en despliegues.
+- Reproducibilidad: el proceso se describe como una prueba de Heretic 2.0 + SOMPOA; los hiperparámetros completos y los datasets no se publican, dificultando la réplica exacta.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MuXodious/LFM3-Omni-2B-SOMPOA-heresy
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Documentación de Liquid AI sobre LFM3-Omni-2B: https://docs.liquid.ai/lfm/models/lfm3-omni-2b
-- Anuncio de la familia LFM3 (Unite.AI): https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/
-- Proyecto Heretic: https://heretic-project.org
+- Repositorio de Heretic: https://github.com/p-e-w/heretic
+- Pull request de SOMPOA en Heretic: https://github.com/p-e-w/heretic/pull/196
 - Consola de Liquid AI: https://console.liquid.ai/dashboard
-- Playground de Liquid AI: https://playground.liquid.ai/talk

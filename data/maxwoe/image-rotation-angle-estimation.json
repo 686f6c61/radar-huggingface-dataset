@@ -51,7 +51,7 @@
       "task": "Image rotation angle estimation",
       "dataset": "COCO test photos (1,030 images), rotated and saved as JPEG",
       "metric": "Mean absolute error (degrees)",
-      "value": 3.77
+      "value": 3.71
     }
   ],
   "sources": []

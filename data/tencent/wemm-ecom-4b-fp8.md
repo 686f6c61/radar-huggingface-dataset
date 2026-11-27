@@ -2,95 +2,94 @@
 
 ## Resumen
 
-WeMM-Ecom-4B-FP8 es la versión cuantizada en FP8 por bloques del modelo multimodal WeMM-Ecom-4B, desarrollado por WeChat Vision (Tencent) para la comprensión de contenido en el ámbito del comercio electrónico. Se trata de un modelo denso de 4B parámetros construido sobre la familia Qwen3.5, con una ventana de contexto de 262.144 tokens, capaz de procesar entradas de texto, imagen, múltiples imágenes y vídeo. Su propósito es cubrir tareas específicas del dominio e-commerce (atributos de producto, moderación, OCR, recuperación, grounding, razonamiento y conocimiento de producto) sin sacrificar capacidades generales de visión-lenguaje.
+WeMM-Ecom-4B-FP8 es la version cuantizada en FP8 del modelo multimodal WeMM-Ecom-4B, desarrollado por WeChat Vision (Tencent) para la comprension de contenido en el contexto del comercio electronico de WeChat. El modelo resuelve la tarea de image-text-to-text: recibe texto, imagenes, multiples imagenes o video y genera respuestas conversacionales, con especial enfasis en el entendimiento de productos, atributos, moderacion de contenido y OCR comercial.
 
-La relevancia de esta variante FP8 reside en la eficiencia de despliegue: reduce el peso del repositorio a 5,5 GB manteniendo un formato compatible con motores de servicio modernos como vLLM, que detecta automáticamente la configuración de cuantización incluida en el checkpoint. El modelo incorpora un modo híbrido de razonamiento (thinking) que puede activarse o desactivarse según la tarea, lo que permite equilibrar latencia y calidad en producción.
+Se trata de un modelo denso de 4B parametros construido sobre la arquitectura Qwen3.5 (tag `qwen3_5`), con una ventana de contexto de 262.144 tokens y soporte para modo instruct y modo thinking (razonamiento hibrido). Su relevancia actual radica en que ofrece capacidades especializadas de e-commerce manteniendo un rendimiento general competitivo con modelos del mismo tamano, y en que esta disponible en formato FP8 block-wise para despliegue eficiente en GPU con soporte de FP8.
 
-La familia WeMM-Ecom se publica bajo licencia Apache 2.0 con soporte para chino e inglés, y ofrece múltiples formatos (BF16, FP8, GPTQ y GGUF) además de varios tamaños (0.8B, 2B, 4B, 9B y 35B-A3B). Esta ficha se centra en la variante de 4B en FP8.
+El checkpoint FP8 conserva la precision original en el codificador visual, la cabeza de salida y determinadas proyecciones sensibles, mientras cuantiza los pesos a FP8 E4M3 con una escala por bloque de 128x128 y cuantizacion dinamica de activaciones en inferencia. La licencia es Apache 2.0 y los idiomas declarados son chino e ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (base Qwen3.5) con encoder de visión, modo híbrido thinking/instruct |
-| Parametros totales | 4.539.265.536 (aproximadamente 4,54B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | FP8 E4M3 por bloques (escala por bloque de 128 × 128), cuantización dinámica de activaciones en inferencia; el modelo base dispone además de BF16, GPTQ y GGUF |
-| Idiomas soportados | chino (zh), inglés (en) |
+| Arquitectura | Transformer denso multimodal (base Qwen3.5), pipeline image-text-to-text |
+| Parametros totales | 4.539.265.536 (4,54B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 262.144 tokens (ventana nativa); el ejemplo de servicio usa 32.768 tokens |
+| Tipos de cuantizacion | FP8 E4M3 block-wise (escala por bloque 128x128, activaciones FP8 dinamicas); la familia ofrece tambien BF16, GPTQ y GGUF |
+| Idiomas soportados | Chino (zh), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (FP8 E4M3) |
+| Formato de pesos | Safetensors (checkpoint FP8 E4M3) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 4B parámetros derivado de la arquitectura Qwen3.5, adaptado al dominio del comercio electrónico mediante entrenamiento multimodal que combina un encoder de visión con el decodificador de lenguaje. Acepta entradas de texto, imagen única, múltiples imágenes y vídeo, y soporta conversaciones multi-turno y streaming. La variante FP8 aplica cuantización por bloques de 128 × 128 sobre los pesos con formato E4M3 y cuantización dinámica de las activaciones durante la inferencia; el encoder de visión, la cabeza de salida y determinadas proyecciones sensibles conservan su precisión original para preservar la calidad.
+El modelo es un transformer denso de 4B parametros con arquitectura multimodal de tipo image-text-to-text, construido sobre la familia Qwen3.5. Integra un codificador visual que procesa imagenes, multiples imagenes y video, y un decodificador de lenguaje que genera la respuesta. El checkpoint FP8 mantiene en precision original el codificador visual, la cabeza de salida y proyecciones seleccionadas consideradas sensibles, y aplica cuantizacion FP8 E4M3 block-wise al resto de pesos, con cuantizacion dinamica de activaciones durante la inferencia.
 
-El entrenamiento se orienta a ocho escenarios de e-commerce evaluados sobre 28 benchmarks (atributos de producto, moderación, OCR, recuperación, grounding, razonamiento, benchmarks públicos de e-commerce y conocimiento de producto) y a ocho categorías generales evaluadas sobre 64 benchmarks (VQA general, documentos y gráficos, razonamiento STEM, comprensión espacial, grounding y conteo, comprensión multi-imagen, seguimiento de instrucciones y tareas centradas en texto). La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset, ni confirma el uso de RLHF o DPO. La innovación destacable es el modo híbrido de razonamiento (thinking mode) combinado con la cuantización FP8 por bloques compatible con vLLM.
+La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. Si se documenta que el entrenamiento esta orientado a e-commerce: la evaluacion cubre 28 benchmarks en ocho escenarios comerciales (atributos de producto, moderacion, OCR, retrieval, grounding, razonamiento, benchmarks publicos de e-commerce y conocimiento de producto) y 64 benchmarks generales en ocho categorias. El modelo soporta modo instruct y modo thinking, lo que sugiere un entrenamiento orientado a razonamiento hibrido, aunque los detalles del pipeline no estan disponibles en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal sobre imágenes, múltiples imágenes y vídeo.
-- Comprensión específica de e-commerce: atributos de producto, moderación de contenido, OCR, recuperación, grounding, razonamiento y conocimiento de producto.
-- Modo híbrido de razonamiento: modo instruct y modo thinking seleccionables según la tarea.
-- Comprensión de documentos y gráficos, razonamiento STEM, comprensión espacial, grounding y conteo.
-- Comprensión multi-imagen y seguimiento de instrucciones.
-- Conversaciones multi-turno con ventana de contexto de 262.144 tokens.
-- Generación en streaming mediante API compatible con OpenAI.
-- Capacidades multilingües limitadas a chino e inglés.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita en la información proporcionada.
+- Generacion de texto conversacional multi-turno con contexto largo (hasta 262.144 tokens).
+- Comprension de imagen, multiples imagenes y video como entradas multimodales.
+- Entendimiento especializado de e-commerce: atributos de producto, moderacion de contenido, OCR comercial, retrieval y grounding de productos.
+- Razonamiento multimodal con modo thinking (razonamiento paso a paso) y modo instruct.
+- Capacidades generales de VQA, comprension de documentos y graficos, razonamiento STEM, comprension espacial, grounding y conteo, comprension multi-imagen, seguimiento de instrucciones y tareas centradas en texto.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita en la informacion proporcionada, mas alla del modo thinking.
+- Capacidades multilingues limitadas a chino e ingles.
+- Servicio mediante API compatible con OpenAI a traves de vLLM, con soporte de streaming.
 
 ## Casos de uso
 
-- Catalogación automática de productos: el modelo puede extraer atributos de producto a partir de imágenes y texto descriptivo, aprovechando sus benchmarks específicos de atributos de producto y su contexto de 262.144 tokens para procesar fichas completas con varias imágenes.
-- Moderación de contenido en marketplaces: análisis conjunto de imagen y texto para detectar listados que incumplen políticas, apoyándose en las capacidades de moderación evaluadas en el dominio e-commerce.
-- OCR y digitalización de documentación comercial: extracción de texto de etiquetas, facturas y embalajes, con soporte de documentos y gráficos y contexto largo para lotes de imágenes.
-- Búsqueda y recuperación multimodal: generación de representaciones y descripciones enriquecidas para motores de búsqueda de producto, usando grounding y recuperación sobre imágenes y texto.
-- Asistencia conversacional al comprador: atención multi-turno en chino o inglés con contexto largo, incluyendo imágenes del producto enviadas por el usuario y respuestas en streaming.
-- Análisis de vídeo promocional: comprensión de vídeo para verificar contenido, extraer información de producto o generar descripciones, gracias a la entrada de vídeo soportada.
-- Despliegue en infraestructura con GPU FP8: servicio mediante vLLM en GPUs con soporte FP8, reduciendo el peso a 5,5 GB y manteniendo la precisión del encoder de visión.
+- Moderacion de contenido en marketplace: el modelo puede analizar imagenes y texto de anuncios para detectar productos prohibidos, contenido inapropiado o discrepancias entre la imagen y la descripcion, aprovechando sus benchmarks especificos de moderacion.
+- Extraccion de atributos de producto: a partir de la imagen y el titulo de un articulo, el modelo genera fichas estructuradas con color, material, talla y categoria, usando las capacidades de OCR y comprension de producto.
+- Busqueda y retrieval visual en catalogo: el modelo puede generar descripciones o representaciones de producto que alimenten un motor de busqueda multimodal, gracias a sus capacidades de grounding y retrieval evaluadas en el suite de e-commerce.
+- Atencion al cliente automatizada: con 262.144 tokens de contexto, puede gestionar conversaciones multi-turno con historial largo e incorporar imagenes del pedido o del producto para resolver incidencias.
+- Analisis de resenas con imagen: procesamiento de resenas de compradores que incluyen fotos para clasificar sentimiento, detectar problemas de calidad o verificar que la imagen corresponde al producto vendido.
+- Generacion de descripciones de producto: redaccion automatica de fichas y descripciones comerciales a partir de imagenes del articulo, en chino o ingles.
+- Procesamiento de video de producto: analisis de videos de demostracion o unboxing para extraer caracteristicas, detectar contenido problematico o generar resumenes.
+- Asistente interno para operaciones de e-commerce: consultas sobre politicas, catalogos y conocimiento de producto en un contexto de hasta 262.144 tokens.
 
 ## Benchmarks y rendimiento
 
-La model card indica que WeMM-Ecom-4B supera a Qwen3.5-4B en 6,47 puntos de media en benchmarks de e-commerce y en 0,40 puntos de media en benchmarks generales. Los resultados completos se presentan como imágenes en la model card (28 benchmarks de e-commerce en ocho escenarios y 64 benchmarks generales en ocho categorías, escala 0–100), por lo que los valores numéricos desglosados no están disponibles en formato textual.
+La model card indica que WeMM-Ecom-4B (checkpoint BF16) supera a Qwen3.5-4B en 6,47 puntos de media en el suite de e-commerce y en 0,40 puntos de media en el suite general. Los resultados detallados se presentan como imagenes en la model card y no estan disponibles como cifras textuales en la informacion proporcionada.
 
-| Comparación | Diferencia media reportada |
-|---|---|
-| WeMM-Ecom-4B vs. Qwen3.5-4B (e-commerce) | +6,47 puntos |
-| WeMM-Ecom-4B vs. Qwen3.5-4B (general) | +0,40 puntos |
+| Benchmark | WeMM-Ecom-4B | Qwen3.5-4B | Diferencia |
+|---|---|---|---|
+| Media e-commerce (28 benchmarks, 8 escenarios) | no disponible (cifra absoluta) | no disponible (cifra absoluta) | +6,47 puntos |
+| Media general (64 benchmarks, 8 categorias) | no disponible (cifra absoluta) | no disponible (cifra absoluta) | +0,40 puntos |
 
-No se han publicado resultados numéricos desglosados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado en la informacion disponible los resultados desglosados por benchmark (MMLU, HumanEval, GSM8K u otros) ni las cifras del checkpoint FP8, que la model card no reporta de forma separada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio FP8 ocupa 5,5 GB en disco; en inferencia se requiere VRAM adicional para activaciones, caché KV y el encoder de visión. Con contexto de 32.768 tokens (ejemplo de la model card) la huella es moderada, pero con los 262.144 tokens completos la caché KV crece de forma significativa.
-- GPU recomendadas: se requiere una GPU con soporte de FP8 (por ejemplo, H100, H200, L40S o A100 con kernels compatibles) y un motor de servicio con soporte de FP8 por bloques.
-- GPU de consumo: no se confirma compatibilidad con GPUs de consumo en la información proporcionada; para esos entornos la familia ofrece variantes GPTQ y GGUF del modelo base.
-- Opciones de despliegue: vLLM (versión >= 0.31.0 según el ejemplo de instalación) con API compatible con OpenAI; el checkpoint incluye la configuración de cuantización que vLLM detecta automáticamente.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el repositorio ocupa 5,5 GB en FP8, por lo que se requiere aproximadamente 6-8 GB de VRAM solo para pesos, mas el espacio para cache KV y el codificador visual; con contexto de 32.768 tokens el consumo adicional de cache es significativo.
+- GPU recomendadas: se requiere una GPU con soporte de FP8 (generacion Hopper o superior, como H100; tambien Ada Lovelace como L40S o RTX 4090 con soporte FP8). Para contextos largos y mayor throughput se recomienda A100/H100 con mayor memoria.
+- Cabe en GPU de consumo: si, en GPUs consumer con soporte FP8 (por ejemplo RTX 4090 con 24 GB) para contextos moderados; en GPUs sin soporte FP8 nativo el checkpoint puede no ser la opcion adecuada y conviene usar las variantes BF16, GPTQ o GGUF.
+- Opciones de despliegue: vLLM (version >= 0.31.0 segun la model card, con deteccion automatica de la configuracion de cuantizacion), con API compatible con OpenAI. Para las variantes GPTQ y GGUF de la familia existen otras opciones (no detalladas en la informacion proporcionada).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formatos |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formatos |
 |---|---|---|---|---|---|
-| WeMM-Ecom-4B-FP8 | 4,54B denso | 262.144 | Multimodal e-commerce, thinking híbrido | Apache 2.0 | safetensors FP8 (base: BF16, GPTQ, GGUF) |
-| WeMM-Ecom-4B | 4,54B denso | 262.144 | Multimodal e-commerce, thinking híbrido | Apache 2.0 | BF16, FP8, GPTQ, GGUF |
-| Qwen3.5-4B | 4B (aproximado) | no disponible | Multimodal general | no disponible | no disponible |
-| WeMM-Ecom-9B | 9B (aproximado) | no disponible | Multimodal e-commerce | Apache 2.0 | BF16, FP8, GPTQ, GGUF |
-| WeMM-Ecom-35B-A3B | 35B totales, 3B activos (MoE) | no disponible | Multimodal e-commerce | Apache 2.0 | BF16, FP8, GPTQ, GGUF |
+| WeMM-Ecom-4B-FP8 | 4,54B denso | 262.144 | Multimodal e-commerce | Apache 2.0 | Safetensors FP8 (familia con BF16, GPTQ, GGUF) |
+| Qwen3.5-4B | 4B (segun referencia de la model card) | no disponible | Multimodal general | no disponible | no disponible |
+| WeMM-Ecom-2B | 2B (segun familia) | no disponible | Multimodal e-commerce | Apache 2.0 | BF16, FP8, GPTQ, GGUF |
+| WeMM-Ecom-9B | 9B (segun familia) | no disponible | Multimodal e-commerce | Apache 2.0 | BF16, FP8, GPTQ, GGUF |
 
-La model card afirma que WeMM-Ecom-35B-A3B supera a modelos open source de cientos de miles de millones de parámetros, pero no se proporcionan cifras desglosadas para verificar la comparación.
+WeMM-Ecom-4B supera a Qwen3.5-4B en el suite de e-commerce (+6,47 puntos de media) y en el general (+0,40 puntos), segun la model card. No se dispone de datos de contexto ni de licencia de Qwen3.5-4B en la informacion proporcionada. Dentro de la propia familia, el 4B se situa entre el 2B y el 9B, y el 35B-A3B es la variante MoE de mayor capacidad.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a chino e inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Riesgo de alucinación inherente a los modelos generativos multimodales, especialmente en descripciones de producto o extracción de atributos no presentes en la imagen.
-- Los benchmarks completos se publican como imágenes en la model card, lo que dificulta la verificación numérica independiente.
-- La cuantización FP8 puede introducir degradación de precisión respecto al checkpoint BF16, aunque se preservan en precisión original el encoder de visión, la cabeza de salida y proyecciones sensibles.
-- Requiere GPU con soporte FP8 y un motor de servicio con soporte de FP8 por bloques; no es un checkpoint universal para cualquier entorno.
-- El contexto de 262.144 tokens implica un consumo elevado de memoria en caché KV si se utiliza completo.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio para confirmar condiciones.
-- No se documentan en la información disponible sesgos específicos, datos de entrenamiento ni procesos de alineación (RLHF/DPO).
+- Idiomas limitados a chino e ingles; no se declara soporte de castellano ni de otros idiomas.
+- Riesgo de alucinacion inherente a los modelos generativos multimodales, especialmente en OCR de imagenes de baja calidad o en atributos de producto poco visibles.
+- Sesgos potenciales derivados de los datos de entrenamiento orientados al ecosistema de e-commerce de WeChat; el rendimiento puede degradarse en catalogos de otras regiones o sectores.
+- El checkpoint FP8 requiere GPU con soporte FP8 y un motor de servicio con soporte de FP8 block-wise (vLLM >= 0.31.0); en otros entornos conviene usar las variantes BF16, GPTQ o GGUF.
+- La cuantizacion FP8 puede introducir perdida de precision respecto al checkpoint BF16; la model card no reporta una evaluacion separada del checkpoint FP8.
+- No se documentan en la informacion proporcionada los detalles de entrenamiento (tokens, dataset, RLHF/DPO), lo que dificulta evaluar sesgos y robustez.
+- Licencia Apache 2.0 permite uso comercial, pero deben revisarse los terminos del fichero LICENSE del repositorio.
+- El ejemplo de servicio de la model card usa 32.768 tokens de contexto, muy por debajo de la ventana nativa de 262.144; el uso de contextos muy largos incrementa notablemente el consumo de memoria.
 
 ## Enlaces
 
@@ -98,8 +97,13 @@ La model card afirma que WeMM-Ecom-35B-A3B supera a modelos open source de cient
 - Modelo base BF16: https://huggingface.co/tencent/WeMM-Ecom-4B
 - Variante GPTQ: https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ
 - Variante GGUF: https://huggingface.co/tencent/WeMM-Ecom-4B-GGUF
-- Colección WeMM-Ecom: https://huggingface.co/collections/tencent/wemm-ecom
+- Familia WeMM-Ecom 0.8B: https://huggingface.co/tencent/WeMM-Ecom-0.8B
+- Familia WeMM-Ecom 2B: https://huggingface.co/tencent/WeMM-Ecom-2B
+- Familia WeMM-Ecom 9B: https://huggingface.co/tencent/WeMM-Ecom-9B
+- Familia WeMM-Ecom 35B-A3B: https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
+- Coleccion en Hugging Face: https://huggingface.co/collections/tencent/wemm-ecom
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.30662
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2611.30662
 - Repositorio GitHub: https://github.com/Tencent/WeMM-Ecom
-- Familia: https://huggingface.co/tencent/WeMM-Ecom-0.8B · https://huggingface.co/tencent/WeMM-Ecom-2B · https://huggingface.co/tencent/WeMM-Ecom-9B · https://huggingface.co/tencent/WeMM-Ecom-35B-A3B
-- Documentación de vLLM: https://docs.vllm.ai/en/latest/getting_started/installation/gpu/
+- Documentacion de instalacion de vLLM: https://docs.vllm.ai/en/latest/getting_started/installation/gpu/
 - Licencia: https://huggingface.co/tencent/WeMM-Ecom-4B-FP8/blob/main/LICENSE

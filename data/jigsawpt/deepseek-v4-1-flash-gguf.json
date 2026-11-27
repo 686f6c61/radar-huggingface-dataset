@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "FinanzOnline Login",
-      "url": "https://finanzonline.bmf.gv.at/",
-      "snippet": "Erledigen Sie Ihre Steuererklärungen und andere Anträge bequem über das E-Government Portal der österreichischen …"
-    },
-    {
-      "title": "ID Austria: Login at FinanzOnline",
-      "url": "https://finanzonline.bmf.gv.at/fon/oautheidlogin.do",
-      "snippet": "Basic personal data, in the public sector, § 4 Abs. 5 E-GovG: First name Last name Date of birth Area-specific personal identifier …"
-    },
-    {
-      "title": "FinanzOnline Login",
-      "url": "https://finanzonline.bmf.gv.at/fon/login.do?rk=j",
-      "snippet": "Aus Sicherheitsgründen wurde diese Sitzung beendet, da in der Zwischenzeit ein neuerliches Login in FinanzOnline erfolgte und …"
-    },
-    {
-      "title": "Startseite - FinanzOnline",
-      "url": "https://finanzonline.bmf.gv.at/html/demo/Startseite.html",
-      "snippet": "Handy-Signatur Melden Sie sich mit Ihrem Handy bequem bei FinanzOnline an. Jetzt aktivieren"
-    },
-    {
-      "title": "Online-Rücksetzen",
-      "url": "https://finanzonline.bmf.gv.at/fon/a/pinreset.do",
-      "snippet": "Wichtige Hinweise zum Zurücksetzen des Passwortes: Sie sind Unternehmerin oder Unternehmer? Dann müssen Sie die Teilnehmer …"
-    }
-  ]
+  "sources": []
 }

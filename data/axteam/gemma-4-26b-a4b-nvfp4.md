@@ -2,91 +2,106 @@
 
 ## Resumen
 
-`axteam/gemma-4-26B-A4B-NVFP4` es una cuantización de 4 bits del modelo multimodal `google/gemma-4-26B-A4B` de Google DeepMind, publicada por el usuario axteam y orientada específicamente al servicio eficiente con vLLM. Se trata de una derivación, no de un modelo entrenado desde cero: conserva el tokenizador, la plantilla de chat, el procesador y la configuración de generación del original, y solo añade un bloque `quantization_config` al `config.json`.
+axteam/gemma-4-26B-A4B-NVFP4 es una cuantizacion de 4 bits en formato NVFP4 (W4A4, FP4) del modelo base google/gemma-4-26B-A4B, publicada por el usuario axteam. El modelo original es un Mixture-of-Experts (MoE) de Gemma 4 con 25.805.936.206 parametros totales y una arquitectura de 8 expertos activos sobre 128 totales mas uno compartido, lo que lo situa en la categoria de modelos grandes con activacion dispersa. Esta version cuantizada ocupa aproximadamente 17,2 GB en disco, frente al peso en BF16 del original, y esta pensada especificamente para servir con vLLM.
 
-El modelo base es un Mixture-of-Experts de la familia Gemma 4 con 25.805.936.206 parámetros totales y una configuración de 8 expertos activos sobre 128 totales más 1 experto compartido, según la model card. La nomenclatura A4B del nombre apunta a un régimen de aproximadamente 4.000 millones de parámetros activos por token, aunque el dato exacto no se explicita en la información disponible.
+El proposito de esta publicacion es ofrecer una variante de bajo coste computacional que mantenga una fidelidad razonable respecto al BF16 original, aprovechando el soporte nativo de FP4 en las GPU Blackwell (B200, GB200, B300, RTX 50xx y RTX PRO 6000). La cuantizacion se realizo mediante PTQ con AWQ sobre un conjunto de calibracion de 256 muestras, sin reentrenamiento, y conserva en BF16 el tower de vision, la proyeccion de vision, los embeddings, el router MoE, las normas y el MLP compartido (aproximadamente el 7% de los parametros).
 
-Su relevancia es de tipo operativo: emplea el esquema NVFP4 (W4A4, FP4 E2M1) con cuantización de pesos y activaciones, lo que reduce la huella en disco a unos 16 GB frente a los 17,2 GB del repositorio, a cambio de una pérdida de calidad que el propio autor reconoce como un intercambio por la mitad de espacio. El formato es específico de hardware Blackwell con tensor cores FP4.
+Es relevante ahora porque permite desplegar un modelo multimodal de ~26B parametros totales con activacion de ~4B en hardware consumer de gama alta Blackwell, manteniendo cerca del 97% del rendimiento medio del BF16 en los benchmarks medidos. La licencia declarada es Apache-2.0, aunque la model card enlaza a la licencia especifica de Gemma 4 de Google, lo que conviene verificar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4, Mixture-of-Experts (8 expertos activos de 128 totales, mas 1 compartido) |
-| Parametros totales | 25.805.936.206 (~25,8 mil millones) |
-| Parametros activos | no disponible (la nomenclatura A4B del modelo base sugiere ~4.000 millones) |
+| Arquitectura | Gemma 4, Mixture-of-Experts (8 activos / 128 totales + 1 compartido) |
+| Parametros totales | 25.805.936.206 |
+| Parametros activos | 8 de 128 expertos + 1 compartido (numero exacto de parametros activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 W4A4: pesos FP4 (E2M1) con grupo de tamano 16, escala FP8 (E4M3) mas escala global FP32 por tensor; activaciones FP4. Vision tower, proyeccion de vision, embeddings de tokens, router MoE, normas y MLP compartida se mantienen en BF16 |
-| Idiomas soportados | no disponible (el conjunto de calibracion era mixto ingles/coreano, con sesgo hacia coreano) |
-| Licencia | apache-2.0 en la etiqueta del repositorio; la model card remite a la licencia Gemma 4 de Google |
-| Formato de pesos | safetensors con esquema compressed-tensors `nvfp4-pack-quantized` |
+| Tipos de cuantizacion | NVFP4 (W4A4, FP4 E2M1), pesos en grupo de 16 con escala FP8 E4M3 y escala global FP32 por tensor; activaciones FP4; formato compressed-tensors `nvfp4-pack-quantized` |
+| Idiomas soportados | no disponible (calibracion con sesgo hacia coreano) |
+| Licencia | Apache-2.0 (con enlace a la licencia Gemma 4 de Google) |
+| Formato de pesos | safetensors (compressed-tensors), 17,2 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-El modelo no ha sido entrenado por axteam: es una cuantizacion post-entrenamiento del checkpoint `google/gemma-4-26B-A4B` fijado en el commit `24548b6`. La arquitectura subyacente es un transformer Mixture-of-Experts de Gemma 4 con enrutado por token sobre 128 expertos mas uno compartido, del que se activan 8 por paso, y con torre de vision integrada, ya que la tarea declarada del pipeline es `image-text-to-text`. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo original.
+El modelo base es un transformer con arquitectura Mixture-of-Experts de Gemma 4: 128 expertos totales con 8 activos por token mas un experto compartido, lo que reduce el coste de inferencia respecto a un denso equivalente. Incluye un tower de vision y una proyeccion multimodal, ya que el pipeline declarado es image-text-to-text. Esta version concreta es una cuantizacion post-entrenamiento (PTQ) con AWQ: se parte de los pesos BF16 liberados por Google (commit `24548b6`) y se cuantizan sin reentrenamiento, usando 256 muestras de calibracion (con predominio de coreano, incluyendo 32 respuestas autogeneradas en modo thinking para la variante -it).
 
-La innovacion tecnica de esta ficha es exclusivamente el proceso de cuantizacion. La calibracion se realizo con 256 muestras de sesgo coreano que, en el caso de la variante instruct, incluyen 32 respuestas autogeneradas en modo thinking. Los pesos y las activaciones se cuantizan a FP4 con granularidad de grupo 16 y doble escala (FP8 E4M3 por grupo y FP32 global por tensor), mientras que un conjunto reducido de componentes sensibles a la precision queda en BF16: torre y proyeccion de vision, embeddings de tokens (atados a `lm_head`), router MoE, todas las normas y la MLP compartida. El autor indica que la fidelidad se verifico frente al original en BF16 mediante perplejidad y acuerdo top-1 en un conjunto interno mixto ingles/coreano, sin publicar cifras.
+La innovacion tecnica principal es el esquema NVFP4 (W4A4): pesos y activaciones en FP4 E2M1, con escalas por grupo de 16 en FP8 E4M3 y una escala global FP32 por tensor. Se mantienen en BF16 el tower de vision, la proyeccion de vision, los embeddings de tokens (atados con lm_head), el router MoE, todas las normas y el MLP compartido, aproximadamente el 7% de los parametros, para preservar calidad. El tokenizer, `processor_config` y `generation_config` son identicos byte a byte al original. Es un modelo base preentrenado sin plantilla de chat, por lo que debe usarse con completion de texto plano. El `config.json` es el original mas un bloque `quantization_config`.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno: el tokenizador y la plantilla de chat son identicos a los del modelo base, incluida la plantilla corregida por Google en julio de 2026.
-- Procesamiento conjunto de imagen y texto: la tarea declarada del pipeline es `image-text-to-text` y la torre de vision se conserva en BF16, lo que preserva la ruta multimodal.
-- Modo thinking: la model card menciona respuestas autogeneradas en modo thinking dentro del conjunto de calibracion de la variante instruct, lo que implica su existencia en el modelo base.
-- Servicio de alto rendimiento con vLLM: el autor proporciona comandos de despliegue y parametros de muestreo recomendados por Google (`temperature=1.0`, `top_p=0.95`, `top_k=64`).
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
+- Generacion de texto y completion de texto plano (modelo base, sin plantilla de chat).
+- Procesamiento de imagen y texto (pipeline image-text-to-text), aunque la model card indica que la entrada de imagen no se probo en esta build.
+- Razonamiento y respuesta a preguntas en formato generativo (evaluado con MMLU generativo, ARC-Challenge, Winogrande).
+- Razonamiento matematico basico (evaluado con GSM8K en modo strict).
+- Capacidades multilingues parciales: evaluado en ingles (MMLU, GSM8K, ARC, Winogrande) y coreano (KMMLU, HAE-RAE).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; solo consta que la calibracion se hizo con datos mayoritariamente en coreano y parcialmente en ingles.
-- Capacidades de audio: no disponible.
+- Modo thinking: la calibracion de la variante -it incluye respuestas en modo thinking, pero esta build es base y no declara modo thinking explicito.
+- Vision, audio u otras capacidades especiales: vision si (tower conservado en BF16); audio no disponible.
 
 ## Casos de uso
 
-- Atencion al cliente multimodal: el modelo puede recibir capturas de pantalla, fotos de producto o imagenes de error enviadas por el usuario junto con texto, y responder en el mismo hilo conversacional gracias a la plantilla de chat del modelo base.
-- Digitalizacion de documentos con extraccion semantica: a partir de fotos o escaneos de facturas, albaranes o formularios, el modelo puede devolver los campos relevantes en texto estructurado, aprovechando la ruta de vision conservada en BF16.
-- Soporte tecnico de campo: un tecnico envia una fotografia de un equipo o de un panel de error y el modelo genera un diagnostico o los pasos de comprobacion, integrándose en una aplicacion movil que consume el endpoint de vLLM.
-- Catalogacion de producto en comercio electronico: generacion automatica de titulos, descripciones y atributos a partir de las imagenes de un catalogo, con el modelo desplegado como servicio por lotes.
-- Moderacion de contenido multimodal: clasificacion y descripcion de imagenes acompanadas de texto para detectar contenido no permitido, usando el modelo como clasificador generativo con salida controlada.
-- Despliegue de bajo coste por capacidad en cluster Blackwell: al ocupar unos 16 GB en disco y reducir el ancho de banda de memoria necesario por peso, permite servir una mayor cantidad de replicas por GPU en infraestructura con tensor cores FP4.
-- Asistente interno sobre documentacion tecnica: consultas sobre manuales y diagramas donde el usuario adjunta una captura y el modelo responde con texto, siempre que la ventana de contexto del modelo base lo permita (dato no disponible).
+- Servicio de inferencia multimodal en produccion con vLLM: el modelo esta empaquetado en compressed-tensors `nvfp4-pack-quantized` y probado con vLLM 0.32.0, lo que permite desplegarlo como endpoint compatible con la API de vLLM en GPU Blackwell con throughput alto gracias a la activacion MoE de 8 expertos.
+- Despliegue en GPU consumer Blackwell: al ocupar ~17,2 GB en disco y cuantizar a W4A4, cabe en RTX 50xx y RTX PRO 6000, lo que habilita prototipos y demos locales de un modelo de ~26B parametros totales sin infraestructura de datacenter.
+- Evaluacion comparativa de tecnicas de cuantizacion: util para investigadores que quieran medir la degradacion de AWQ-NVFP4 frente a BF16, FP8-dynamic, AWQ-8bit, NVFP4A16 y AWQ-4bit con el mismo harness (lm-evaluation-harness sobre vLLM).
+- Generacion de texto a gran escala en ingles y coreano: los benchmarks cubren MMLU, GSM8K, ARC-Challenge, Winogrande, KMMLU y HAE-RAE, lo que lo hace adecuado para tareas de QA y razonamiento en esos idiomas con la fidelidad medida (~97,1% de media respecto a BF16).
+- Fine-tuning o destilacion sobre una base cuantizada: al ser un modelo base sin plantilla de chat, sirve como punto de partida para adaptaciones posteriores, aunque la cuantizacion PTQ puede limitar la calidad del ajuste fino.
+- Investigacion sobre eficiencia de MoE con FP4: permite estudiar el equilibrio entre activacion dispersa (8/128) y precision FP4 en cargas de trabajo reales de vLLM.
+- Despliegue en entornos con restricciones de VRAM: la reduccion de ~17,2 GB frente al BF16 facilita servir el modelo en una sola GPU cuando el original no cabe.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica evaluacion mencionada por el autor es interna y cualitativa: se compararon las variantes cuantizadas contra el original en BF16 usando perplejidad y acuerdo top-1 de siguiente token sobre un conjunto mixto ingles/coreano, y se concluye que las variantes de 8 bits (AWQ INT8 y FP8) se mantienen mas cerca del original, mientras que las de 4 bits (AWQ INT4 y NVFP4) reducen la huella aproximadamente a la mitad a cambio de ceder algo de calidad. No se proporcionan cifras concretas de MMLU, HumanEval, GSM8K ni de ningun otro benchmark.
+Resultados medidos con lm-evaluation-harness sobre vLLM, greedy, prompts de completion sin plantilla de chat. MMLU es la variante generativa (`mmlu_generative`), no comparable con MMLU por log-likelihood. Porcentajes entre parentesis: recuperacion respecto al BF16 original.
+
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit | NVFP4A16 | NVFP4 (esta repo) | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generative) | 77,77 | 77,25 (99,3%) | 77,75 (100,0%) | 77,18 (99,2%) | 76,20 (98,0%) | 76,82 (98,8%) |
+| GSM8K (5-shot, strict) | 70,89 | 71,34 (100,6%) | 71,49 (100,9%) | 69,98 (98,7%) | 67,17 (94,8%) | 69,98 (98,7%) |
+| ARC-Challenge (0-shot) | 68,34 | 68,60 (100,4%) | 68,17 (99,8%) | 68,52 (100,2%) | 66,98 (98,0%) | 68,69 (100,5%) |
+| Winogrande (5-shot) | 80,58 | 80,03 (99,3%) | 80,58 (100,0%) | 79,64 (98,8%) | 78,22 (97,1%) | 79,56 (98,7%) |
+| KMMLU (5-shot, direct) | 60,03 | 60,07 (100,1%) | 60,15 (100,2%) | 59,41 (99,0%) | 58,14 (96,9%) | 58,99 (98,3%) |
+| HAE-RAE (0-shot) | 77,27 | 76,99 (99,6%) | 76,90 (99,5%) | 77,18 (99,9%) | 75,44 (97,6%) | 75,80 (98,1%) |
+| **Media** | **72,48** | **72,38 (99,9%)** | **72,51 (100,0%)** | **71,98 (99,3%)** | **70,36 (97,1%)** | **71,64 (98,8%)** |
+
+Perplejidad medida frente al BF16 original en WikiText-2 (ingles) y una muestra de Wikipedia en coreano, en fragmentos de 2048 tokens: las builds de 8 bits (AWQ INT8, FP8) quedan dentro del 0,5% del BF16; las de 4 bits (AWQ INT4, NVFP4) entre un 2,0% y un 6,6% por encima. La concordancia top-1 del siguiente token no se midio para los modelos base.
 
 ## Requisitos de hardware
 
-- Huella de pesos: entre 16,0 GB en disco segun la model card y 17,2 GB de tamano total del repositorio. La VRAM necesaria para inferencia es superior, ya que hay que sumar cache KV, activaciones y el estado del servidor; el valor exacto no esta disponible.
-- GPU compatibles: el autor indica que el formato NVFP4 es exclusivo de Blackwell y requiere tensor cores FP4 para alcanzar la velocidad completa, citando B200 y RTX PRO. La compatibilidad con generaciones anteriores de GPU, o el rendimiento degradado en ellas, no esta documentada.
-- GPU de consumo: no disponible. El autor no confirma ni descarta el funcionamiento en tarjetas de consumo Blackwell, y no se publican requisitos minimos de memoria.
-- Opciones de despliegue: vLLM es el unico backend documentado, tanto por linea de comandos (`vllm serve axteam/gemma-4-26B-A4B-NVFP4`) como por API de Python. No hay instrucciones para llama.cpp, Ollama, TGI ni otros motores, y el esquema `compressed-tensors` `nvfp4-pack-quantized` limita en la practica las alternativas.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo, tiempo hasta el primer token ni escalado por lotes.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repo ocupa ~17,2 GB en disco en FP4, por lo que se requiere al menos esa cantidad mas overhead de activaciones y KV cache.
+- GPU recomendadas: Blackwell con soporte FP4 nativo para maxima velocidad, es decir, B200/GB200 (sm100), B300 (sm103) y RTX 50xx / RTX PRO 6000 (sm120).
+- GPU Turing-Hopper (sm75-sm90): caen a un camino alternativo (la model card se corta en ese punto); el rendimiento FP4 no es nativo.
+- Cabe en GPU consumer: si, en RTX 50xx y RTX PRO 6000 (Blackwell), segun la model card.
+- Opciones de despliegue: vLLM (probado con 0.32.0; la arquitectura esta en vLLM >= 0.19.0). No se mencionan llama.cpp, Ollama ni TGI para este formato NVFP4.
+- Requisitos de software: Python 3.11-3.14, torch 2.13 (build CUDA 13.0, driver NVIDIA con soporte CUDA 13), transformers >=5.16.1,<5.20 y compressed-tensors 0.17.0 (fijado por vLLM; el checkpoint se guardo con 0.19.0 y no debe actualizarse por separado).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Huella | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| axteam/gemma-4-26B-A4B-NVFP4 | 25,8 mil millones totales, MoE 8/128 + 1 compartido | no disponible | NVFP4 W4A4, grupo 16 | ~16 GB en disco | apache-2.0 en etiqueta, sujeta a licencia Gemma 4 | Publicado en Hugging Face, 0 descargas, 0 likes |
-| google/gemma-4-26B-A4B (base) | 25,8 mil millones totales, misma configuracion MoE | no disponible | BF16 sin cuantizar | no disponible | licencia Gemma 4 | Modelo de referencia de Google DeepMind |
-| Variantes AWQ INT8 / FP8 de axteam | misma base | no disponible | 8 bits | no disponible | licencia Gemma 4 | Mencionadas en la model card; el autor indica que son las mas fieles al original |
-| Variante AWQ INT4 de axteam | misma base | no disponible | 4 bits | no disponible | licencia Gemma 4 | Mencionada en la model card; el autor la situa en el mismo intercambio calidad/espacio que NVFP4 |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| axteam/gemma-4-26B-A4B-NVFP4 (esta repo) | 25,8B totales, MoE 8/128+1 | no disponible | NVFP4 W4A4, safetensors compressed-tensors | Apache-2.0 (enlace a Gemma 4) | Hugging Face, 198 descargas |
+| google/gemma-4-26B-A4B (BF16 original) | 25,8B totales, MoE 8/128+1 | no disponible | BF16 | Gemma 4 / Apache-2.0 | Hugging Face |
+| Variantes AWQ-8bit, AWQ-4bit, NVFP4A16, FP8-dynamic del mismo base | 25,8B totales, MoE 8/128+1 | no disponible | INT8, INT4, FP8, NVFP4A16 | Apache-2.0 / Gemma 4 | Hugging Face (mismo autor) |
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estas variantes y el modelo base.
+No se dispone de datos de otros modelos de la misma categoria en la informacion proporcionada para una comparativa mas amplia.
 
 ## Limitaciones y advertencias
 
-- Perdida de calidad frente al original: el propio autor reconoce que las variantes de 4 bits ceden precision respecto a las de 8 bits y al modelo en BF16. No cuantifica esa perdida.
-- Sesgo de calibracion: las 256 muestras usadas son mayoritariamente coreanas, con 32 respuestas autogeneradas en modo thinking. Esto puede sesgar el comportamiento de la cuantizacion hacia ese idioma y ese estilo de respuesta, sin que se hayan publicado evaluaciones en castellano u otros idiomas.
-- Riesgo de alucinacion: no se han publicado mediciones de fidelidad factual ni de tasas de alucinacion, ni para el modelo base ni para esta cuantizacion.
-- Restriccion de hardware: el esquema NVFP4 requiere, segun el autor, tensor cores FP4 de arquitectura Blackwell para rendir a plena velocidad. Esto limita el despliegue en infraestructura anterior y reduce la portabilidad frente a formatos como GGUF o AWQ.
-- Ambiguedad de licencia: la etiqueta del repositorio indica apache-2.0, pero la model card remite explicitamente a la licencia Gemma 4 de Google como normativa aplicable al tratarse de un derivado. Antes de un uso comercial conviene revisar esa licencia, ya que puede imponer condiciones distintas a las de Apache 2.0.
-- Ausencia de validacion externa: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (10 de octubre de 2026), sin historial de uso en produccion.
-- Informacion incompleta: no se documentan la longitud de contexto, los idiomas soportados, las capacidades de tool calling ni el rendimiento en GPU distintas de las citadas.
-- Compatibilidad de tokenizador: se declara byte a byte identica al original, incluida la plantilla de chat corregida por Google en julio de 2026; cualquier codigo que dependa de una version anterior de la plantilla podria comportarse de forma distinta.
+- Es un modelo base preentrenado sin plantilla de chat: no debe usarse como asistente conversacional sin un ajuste o prompt adecuado.
+- La cuantizacion PTQ con AWQ introduce degradacion: la media de benchmarks baja al 97,1% del BF16 y GSM8K cae al 94,8%, con perplejidad entre un 2,0% y un 6,6% superior en textos de WikiText-2 y Wikipedia coreana.
+- La calibracion tiene sesgo hacia el coreano (256 muestras, con 32 respuestas autogeneradas en modo thinking para la variante -it), lo que puede afectar la fidelidad en otros idiomas.
+- La entrada de imagen no se probo en esta build; los benchmarks se ejecutaron con entrada de imagen deshabilitada.
+- Requiere hardware Blackwell para aprovechar FP4; en Turing-Hopper se usa un camino alternativo con rendimiento no especificado.
+- Dependencias estrictas de version (torch 2.13 CUDA 13, transformers >=5.16.1,<5.20, compressed-tensors 0.17.0) que limitan la portabilidad.
+- Licencia: se declara Apache-2.0 pero se enlaza a la licencia Gemma 4 de Google; conviene verificar las condiciones de uso comercial antes de produccion.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada.
+- Solo 198 descargas y 1 like en el momento de la consulta, lo que indica baja validacion comunitaria.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4
-- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B (commit `24548b6`)
+- Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4
+- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Repositorio de compressed-tensors: no disponible en la informacion proporcionada
-- Documentacion de vLLM: no disponible en la informacion proporcionada
-- Papers, blogs o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo, unicamente paginas de anuncios clasificados sin relacion.
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- vLLM: no se proporciona enlace directo en la informacion disponible
+- compressed-tensors: no se proporciona enlace directo en la informacion disponible

@@ -2,85 +2,90 @@
 
 ## Resumen
 
-AH-Mechanic-1-4B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo AH-Mechanic-1-4B, publicado por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino la conversion a GGUF del checkpoint original alojado en `ahtx/AH-Mechanic-1-4B`, lo que permite su ejecucion en herramientas de inferencia local compatibles con dicho formato, como llama.cpp u Ollama.
+AH-Mechanic-1-4B es un modelo de lenguaje de aproximadamente 4.326 millones de parámetros (4,3 mil millones) orientado a tareas de administración de sistemas Linux, agentes y tool calling. Lo desarrolla el usuario ahtx y esta versión concreta la publica mradermacher como cuantizaciones GGUF estáticas del modelo original. El modelo se etiqueta como derivado de la familia Qwen3.5, lo que sugiere que parte de una base Qwen de tercera generación y medio, aunque la model card no detalla la arquitectura interna.
 
-El dato tecnico mas relevante es la discrepancia entre el nombre del modelo (que sugiere 4B parametros) y el recuento real de parametros en safetensors, que asciende a 333.514.240 (aproximadamente 333 millones). Esta cifra corresponde a un modelo de escala mucho menor que la indicada por el nombre, algo que conviene tener en cuenta al evaluar su rendimiento y sus requisitos de hardware.
+El problema que aborda es la automatización de operaciones de sistema: interpretar instrucciones en lenguaje natural, decidir qué comandos o herramientas ejecutar y encadenar pasos de razonamiento en un bucle de agente. Por sus etiquetas (linux, sysadmin, agent, tool-calling, bash) está claramente especializado en ese dominio y no en conversación generalista.
 
-La informacion publicada es muy limitada: no se especifican licencia, idiomas, pipeline ni detalles de entrenamiento, y el repositorio no registra descargas ni interacciones en el momento de la consulta. Por tanto, esta ficha recoge los datos disponibles y marca explicitamente como no disponibles aquellos que el autor no ha hecho publicos.
+La relevancia práctica está en su tamaño: con 4,3 mil millones de parámetros y cuantizaciones que van de 2,1 GB a 8,8 GB, puede ejecutarse en hardware de consumo y desplegarse localmente, algo útil para entornos donde no se quiere enviar comandos de sistema a una API externa. La licencia Apache 2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformador, inferido del formato de pesos) |
-| Parametros totales | 333.514.240 (segun safetensors; el nombre indica 4B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (etiquetado como derivado de Qwen3.5; detalles de capas y atención no publicados en la información disponible) |
+| Parametros totales | 4.326.350.848 (~4,3 mil millones) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones) y safetensors (checkpoint original) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-f16 y mmproj-Q8_0 (suplemento multimodal) |
+| Idiomas soportados | inglés (en); no se declaran otros idiomas |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base original en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo original AH-Mechanic-1-4B. El nombre y el formato de pesos apuntan a un transformador decoder-only, pero el autor no documenta capas, dimensiones ocultas, mecanismo de atencion ni si emplea alguna variante como atencion lineal o mezcla de expertos.
+La información disponible no detalla la arquitectura interna del modelo: no se especifican número de capas, dimensión oculta, mecanismo de atención ni si emplea alguna variante como atención lineal o decodificación especulativa. La etiqueta qwen3.5 indica que el modelo base ahtx/AH-Mechanic-1-4B se construye sobre una familia Qwen de tercera generación y media, pero la model card del repositorio GGUF no aporta el desglose técnico.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico detalle tecnico aportado por el repositorio es el proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de un checkpoint en formato Hugging Face mediante el flujo estandar de conversion a GGUF.
+Tampoco se publican datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO o fine-tuning supervisado. Lo único inferible de las etiquetas es que el ajuste se orienta a tareas de administración de sistemas, agentes y tool calling con bash. Esta versión de mradermacher es únicamente una conversión y cuantización del modelo original (convert_type: hf, quantize_version: 2), sin reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto: el modelo puede producir texto autoregresivo, aunque no hay evaluacion publicada de su calidad.
-- Razonamiento y codigo: no se documenta soporte especifico ni resultados que lo respalden.
-- Tool calling / function calling: no disponible.
-- Agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el autor no declara idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ejecucion local: al distribuirse en GGUF, es compatible con motores de inferencia en CPU y GPU de consumo.
+- Generación de texto conversacional (etiqueta conversational).
+- Tool calling y function calling, orientado a la invocación de herramientas externas.
+- Comportamiento de agente con razonamiento multi-paso (etiqueta agent).
+- Generación y ejecución de comandos bash y operaciones de administración de sistemas Linux.
+- Tareas de sysadmin: gestión de procesos, ficheros, servicios y diagnóstico del sistema.
+- Soporte multimodal parcial: el repositorio incluye ficheros mmproj (f16 y Q8_0), lo que indica capacidad de procesar entradas visuales junto al texto en despliegues compatibles.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- Idioma: inglés como único idioma declarado.
 
 ## Casos de uso
 
-- Inferencia local en equipos modestos: con alrededor de 333 millones de parametros, las cuantizaciones Q4_K_M o Q5_K_M ocupan pocos cientos de MB, por lo que el modelo puede ejecutarse en portatiles sin GPU dedicada mediante llama.cpp u Ollama. Es adecuado para pruebas de concepto y entornos con recursos limitados.
-- Prototipado de pipelines de texto: sirve para validar integraciones (APIs, colas de mensajes, formateo de salida) antes de sustituir el modelo por uno de mayor escala, gracias a su bajo coste de despliegue.
-- Generacion de texto en dispositivos perifericos: su tamano reducido permite empotrarlo en aplicaciones de escritorio o moviles con presupuesto de memoria ajustado, siempre que la calidad requerida sea moderada.
-- Filtrado y clasificacion de texto simple: puede emplearse como clasificador ligero o generador de etiquetas en tareas de preprocesado, aunque sin benchmarks publicados no hay garantia de precision.
-- Educacion y experimentacion: util para estudiar el proceso de cuantizacion GGUF y comparar el efecto de distintas precisiones (Q2_K frente a Q8_0) sobre la calidad de salida.
-- Entornos sin conectividad: al ejecutarse totalmente en local, encaja en escenarios de privacidad estricta donde no se permite enviar datos a servicios en la nube.
+- Automatización de tareas de administración Linux: el modelo recibe una instrucción en lenguaje natural y genera los comandos bash correspondientes, lo que permite construir asistentes de operaciones que reducen el trabajo manual repetitivo.
+- Agente de diagnóstico de sistemas: encadenando tool calling, el modelo puede inspeccionar logs, consultar estado de servicios y proponer acciones correctivas en varios pasos, adecuado por su especialización en sysadmin.
+- Integración en pipelines de CI/CD: como generador de scripts y comandos dentro de flujos automatizados, con la ventaja de que su tamaño permite ejecución local sin depender de APIs externas.
+- Asistente de terminal embebido: al caber en cuantizaciones de 2,1 a 3,3 GB (Q2_K a Q5_K_M), puede desplegarse en portátiles y estaciones de trabajo para asistencia interactiva en la línea de comandos.
+- Entornos con requisitos de privacidad: al ejecutarse en local con licencia Apache 2.0, es apto para organizaciones que no pueden enviar comandos ni datos de infraestructura a servicios en la nube.
+- Generación de documentación operativa: a partir de una tarea descrita, el modelo puede producir procedimientos paso a paso con los comandos implicados, útil para runbooks internos.
+- Prototipado de agentes con tool calling: su tamaño reducido y su etiqueta de agente lo hacen manejable para experimentar con bucles de razonamiento y herramientas en hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 333 millones de parametros, una cuantizacion Q4_K_M ronda los 200-250 MB de pesos, y Q8_0 aproximadamente 350-400 MB; el consumo total de memoria depende del contexto configurado.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; no requiere aceleradores de datacenter como A100 o H100.
-- GPU de consumo: cabe holgadamente en GTX 1060, RTX 3060, RTX 4060 y superiores; tambien puede ejecutarse en CPU con velocidad aceptable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI no son la via habitual para este formato, aunque existen adaptadores.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~2,1 GB; Q3_K_S ~2,2 GB; Q4_K_M ~2,9 GB; Q5_K_M ~3,3 GB; Q6_K ~3,7 GB; Q8_0 ~4,7 GB; f16 ~8,8 GB. Añadir margen para el contexto y el runtime (típicamente 0,5-2 GB adicionales).
+- GPU recomendadas: no se especifican en la información disponible. Por tamaño, una RTX 4090 (24 GB) ejecuta cualquier cuantización con holgura; una RTX 3060 de 12 GB o superior cubre todas las variantes hasta f16.
+- Cabe en GPU de consumo: sí. Las cuantizaciones Q4_K_M y Q5_K_M (~2,9-3,3 GB) encajan en GPUs de 6-8 GB; las versiones Q2_K y Q3_K_S (~2,1-2,2 GB) permiten incluso GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, llama-cpp-python). El modelo base, en formato transformers, puede servirse con vLLM o TGI, aunque la información no confirma compatibilidad explícita.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| AH-Mechanic-1-4B-GGUF | 333 M (segun safetensors) | no disponible | no disponible | GGUF | Cuantizaciones estaticas de un checkpoint de terceros |
-| Qwen2.5-0.5B-Instruct | 0,5 B | 32 K | Apache 2.0 | safetensors, GGUF | Modelo pequeno con documentacion completa y benchmarks publicos |
-| SmolLM2-360M-Instruct | 360 M | 8 K | Apache 2.0 | safetensors, GGUF | Alternativa de escala similar con licencia permisiva |
-| Llama 3.2 1B Instruct | 1 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Mayor escala y contexto, con restricciones de uso comercial |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa, el modelo compite en la categoría de modelos pequeños (~4B) especializados en agentes y tool calling, donde el tamaño y la licencia Apache 2.0 son sus principales ventajas frente a alternativas de mayor tamaño que requieren más VRAM.
 
-La comparacion se limita a la escala y al formato, ya que AH-Mechanic-1-4B no publica benchmarks ni licencia que permitan una evaluacion equivalente.
+| Modelo | Parámetros | Contexto | Licencia | Especialización |
+|---|---|---|---|---|
+| AH-Mechanic-1-4B | ~4,3 mil millones | no disponible | Apache 2.0 | Linux, sysadmin, agentes, bash |
+| Alternativas de ~4B para agentes | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Discrepancia de nombre y parametros: el nombre indica 4B, pero safetensors registra 333.514.240 parametros; conviene verificar el checkpoint original antes de asumir capacidades de un modelo de 4B.
-- Ausencia de licencia: no se declara licencia, lo que impide determinar si el uso comercial esta permitido; en produccion debe tratarse como no autorizado hasta confirmacion del autor.
-- Falta de documentacion: sin idiomas, contexto ni datos de entrenamiento publicados, no es posible evaluar sesgos ni cobertura linguistica.
-- Riesgo de alucinacion: no hay evaluaciones de fidelidad; en modelos de esta escala es habitual que la generacion factual sea fragil.
-- Sin benchmarks: no existen resultados publicados de MMLU, HumanEval, GSM8K ni similares, por lo que cualquier afirmacion de rendimiento carece de respaldo.
-- Trazabilidad limitada: el repositorio solo contiene cuantizaciones estaticas; los problemas de calidad deben atribuirse al modelo original `ahtx/AH-Mechanic-1-4B`, no a esta conversion.
-- Advertencia de seguridad: la model card no incluye consideraciones de uso responsable ni filtros documentados.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado para sysadmin y bash, puede tener un sesgo hacia soluciones de línea de comandos incluso cuando no son apropiadas.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar comandos plausibles pero incorrectos o destructivos (por ejemplo, borrados o cambios de permisos erróneos); requiere validación humana antes de ejecutar en producción.
+- Limitaciones de idioma: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto: no disponible, lo que impide evaluar su idoneidad para conversaciones o sesiones de agente largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base ahtx/AH-Mechanic-1-4B y de la familia Qwen3.5 de la que deriva.
+- Caveat para producción: la model card del repositorio GGUF es meramente una ficha de cuantización y no incluye evaluación de calidad, seguridad ni robustez; no hay datos de benchmarks que respalden su rendimiento real.
+- Multimodalidad: la presencia de ficheros mmproj sugiere capacidad de visión, pero no se documenta su alcance ni calidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/AH-Mechanic-1-4B-GGUF
-- Modelo original: https://huggingface.co/ahtx/AH-Mechanic-1-4B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/ahtx/AH-Mechanic-1-4B
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/AH-Mechanic-1-4B-i1-GGUF
+- Página de descripción del modelo: https://hf.tst.eu/model#AH-Mechanic-1-4B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfica de comparación de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,93 +2,90 @@
 
 ## Resumen
 
-FuckNous-27B es un modelo publicado en Hugging Face por el usuario Mulatram bajo licencia Apache 2.0. A pesar de la denominación "27B" en el nombre del repositorio, los datos reales de pesos en formato safetensors indican un total de 79.691.776 parámetros (aproximadamente 80 millones), lo que lo sitúa en la categoría de modelos pequeños, muy lejos de los 27.000 millones que sugiere el nombre. El repositorio tiene un tamaño de 0,3 GB y contiene únicamente pesos en formato GGUF según las etiquetas de la ficha.
+FuckNous-27B es un ajuste fino (finetune) del modelo NousResearch/Arete-27B, publicado por el usuario Mulatram en Hugging Face. Con 27.356.728.560 parametros (aproximadamente 27,4 mil millones), se distribuye en formato safetensors y GGUF, lo que permite tanto su uso con la libreria transformers como su despliegue en llama.cpp. La model card es extremadamente escueta: se limita a metadatos YAML y no incluye descripcion del entrenamiento, datos de evaluacion ni instrucciones de uso.
 
-La model card publicada es prácticamente inexistente: solo incluye la declaración de licencia Apache 2.0, sin descripción de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. No se dispone de información sobre el pipeline, los idiomas soportados ni resultados de evaluación. El modelo se creó y actualizó el 22 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+El modelo se presenta con la etiqueta `qwen3_5` y `qwen3.5`, lo que sugiere que la arquitectura subyacente de Arete-27B deriva de la familia Qwen 3.5, aunque esta informacion no se confirma de forma explicita en la documentacion disponible. El pipeline declarado es `text-generation`, pero los tags incluyen `image-text-to-text`, lo que apunta a capacidades multimodales heredadas del modelo base. Tambien aparecen etiquetas relacionadas con PEFT, LoRA y GRPO, lo que indica que el ajuste se realizo mediante tecnicas de adaptacion parametro-eficientes y aprendizaje por refuerzo con preferencias.
 
-Dada la escasez de documentación y la discrepancia entre el nombre y el número real de parámetros, este modelo debe considerarse un artefacto de procedencia incierta. No es posible verificar su calidad, su comportamiento esperado ni su idoneidad para ningún caso de uso en producción sin una evaluación empírica adicional por parte del usuario.
+La relevancia de este modelo es limitada y debe evaluarse con cautela: cuenta con 209 descargas y 0 likes en el momento de la consulta, no dispone de resultados de benchmarks publicados y su model card no documenta el proceso de entrenamiento ni los datos utilizados. El nombre del modelo y del dataset asociado (`NeoLiberalismEval`) sugieren un ajuste con una orientacion ideologica concreta, lo que constituye un factor relevante a considerar antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 79.691.776 (según safetensors) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, segun tags; no confirmado en la model card) |
+| Parametros totales | 27.356.728.560 (aproximadamente 27,4 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene GGUF, nivel de cuantización no especificado) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos GGUF, pero no se detallan los niveles) |
+| Idiomas soportados | ingles (segun el campo `language` de la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (según tags); el dato de parámetros proviene de safetensors |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o cualquier otra variante. Tampoco se especifican el número de capas, la dimensión de los embeddings, el mecanismo de atención ni la función de activación.
+La informacion disponible no permite detallar la arquitectura interna del modelo. Los tags `qwen3_5` y `qwen3.5` indican que el modelo base NousResearch/Arete-27B pertenece a la familia Qwen 3.5, pero la model card no especifica si se trata de un transformer denso convencional, de una variante con atencion lineal o de una arquitectura hibrida. Tampoco se documenta la longitud de contexto nativa, el vocabulario ni el tokenizador empleado.
 
-Respecto al entrenamiento, no hay datos sobre el número de tokens utilizados, la composición del dataset, si se aplicaron técnicas de alineación como RLHF o DPO, ni si hubo fases de ajuste fino supervisado. La única información verificable es el recuento de parámetros (79.691.776) y la presencia de pesos en formato GGUF en el repositorio. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, etc.) carecería de respaldo documental.
+En cuanto al entrenamiento, los tags `peft`, `lora` y `grpo` sugieren que el ajuste se realizo mediante LoRA (Low-Rank Adaptation) combinado con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo utilizada habitualmente para alinear modelos con preferencias. El dataset asociado es `Mulatram/NeoLiberalismEval`, cuyo contenido, tamano y composicion no se detallan. No se indica el numero de tokens de entrenamiento, la mezcla de datos, ni si se aplicaron fases de SFT previas o posteriores al RL. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion eficiente.
 
 ## Capacidades
 
-No se dispone de información publicada sobre las capacidades del modelo. La model card no enumera tareas soportadas, y no hay ejemplos de uso, demos ni evaluaciones que permitan inferir sus habilidades. En concreto, se desconoce si el modelo:
-
-- Genera texto coherente, razona, escribe código o resuelve problemas matemáticos.
-- Soporta tool calling o function calling.
-- Tiene capacidades de agente o razonamiento multi-paso.
-- Maneja varios idiomas.
-- Dispone de modo "thinking", visión, audio u otras modalidades.
-
-Cualquier uso requeriría una evaluación directa por parte del desarrollador.
+- Generacion de texto conversacional: el pipeline declarado es `text-generation` y los tags incluyen `conversational`.
+- Procesamiento de imagen y texto: el tag `image-text-to-text` sugiere capacidades multimodales de entrada, aunque no se detalla su alcance ni se aportan ejemplos.
+- Ajuste mediante GRPO: el modelo ha sido optimizado con aprendizaje por refuerzo, lo que en principio puede favorecer respuestas alineadas con el dataset de evaluacion utilizado.
+- Compatibilidad con llama.cpp: la presencia de pesos GGUF y el tag `llama.cpp` permiten inferencia en entornos de CPU y GPU consumer.
+- Soporte de tool calling / function calling: no disponible (no se documenta).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
+- Capacidades multilingues: limitadas al ingles segun el campo `language`; no se documentan otros idiomas.
+- Modo thinking, vision o audio: no disponible (no se documenta de forma explicita, salvo la referencia a image-text-to-text).
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin información verificable sobre el comportamiento del modelo. Los siguientes escenarios son hipotéticos y requerirían validación empírica previa:
-
-- Experimentación educativa: dado su reducido tamaño (aproximadamente 80 millones de parámetros), podría emplearse en entornos de aprendizaje para estudiar el comportamiento de modelos pequeños en formato GGUF, siempre que se valide su calidad de generación.
-- Pruebas de infraestructura de inferencia: serviría para validar pipelines de despliegue con llama.cpp u otros runners compatibles con GGUF antes de migrar a modelos mayores.
-- Investigación sobre artefactos de Hugging Face: útil para estudiar la discrepancia entre nombres de repositorio y parámetros reales, así como prácticas de publicación deficientes.
-- Prototipado de bajo coste: si el modelo genera texto mínimamente coherente, podría usarse en maquetas de aplicaciones que no requieran calidad de producción.
-- Filtrado o clasificación simple: solo si una evaluación demuestra que produce salidas utilizables para alguna tarea discriminativa.
-- Benchmarking de herramientas GGUF: para comparar el rendimiento de distintos runners con un modelo de tamaño reducido.
-
-En ningún caso se recomienda su uso en producción sin una evaluación exhaustiva previa.
+- Experimentacion academica con tecnicas de alineacion: el modelo puede utilizarse como caso de estudio de ajuste mediante LoRA y GRPO sobre un modelo base de 27B, comparando el comportamiento antes y despues del finetune en tareas de evaluacion ideologica.
+- Generacion de texto en ingles para prototipos: dado su pipeline `text-generation`, puede emplearse en entornos de prueba para generar respuestas conversacionales en ingles, siempre que se valide la calidad con evaluaciones propias.
+- Despliegue local con llama.cpp: la disponibilidad de pesos GGUF permite ejecutar el modelo en estaciones de trabajo con GPU consumer o incluso en CPU, util para pruebas offline sin dependencia de APIs.
+- Investigacion sobre sesgos ideologicos: el dataset `NeoLiberalismEval` y el nombre del modelo sugieren un ajuste orientado a un sesgo concreto, lo que lo convierte en un candidato para estudios sobre como el RL con preferencias modifica la orientacion de las respuestas.
+- Evaluacion comparativa de modelos base frente a finetunes: al derivar de NousResearch/Arete-27B, permite medir el impacto del ajuste LoRA+GRPO en benchmarks estandar, aunque el autor no los haya publicado.
+- Pruebas de integracion con transformers: al cargarse con la libreria transformers y pesos safetensors, puede integrarse en pipelines de experimentacion que requieran un modelo de 27B con licencia Apache 2.0.
+- Fine-tuning posterior: la licencia Apache 2.0 y el formato safetensors facilitan su uso como punto de partida para nuevos ajustes, aunque la falta de documentacion sobre el entrenamiento original introduce incertidumbre.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con aproximadamente 80 millones de parámetros, el modelo en GGUF de 4 bits ocuparía del orden de 40-80 MB, aunque el tamaño exacto depende del nivel de cuantización, que no se especifica. El repositorio completo pesa 0,3 GB.
-- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 3060, RTX 4090) puede alojarlo con holgura. También es viable en CPU.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 1 GB de VRAM, e incluso en sistemas integrados.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF. No se ha confirmado compatibilidad con vLLM o TGI.
-- Latencia y throughput estimados: no disponibles. Al ser un modelo pequeño, la latencia debería ser baja en hardware moderno, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 54-55 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda un minimo de 64-80 GB para contexto moderado.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 27-28 GB, viable en una RTX 4090 (24 GB) solo con cuantizaciones mas agresivas o con offloading parcial.
+- VRAM estimada en cuantizacion de 4 bits (GGUF Q4): aproximadamente 14-16 GB, lo que permite ejecucion en una RTX 4090, RTX 3090 o RTX 4080.
+- GPU recomendadas: A100 80 GB, H100 80 GB o multiples GPU para FP16; RTX 4090, RTX 3090 o RTX A6000 para cuantizaciones de 4-8 bits.
+- Cabe en GPU consumer: si, en cuantizaciones GGUF de 4 bits o inferiores en GPUs con 16-24 GB de VRAM; en FP16 no cabe en ninguna GPU consumer actual.
+- Opciones de despliegue: llama.cpp (soportado explicitamente por los tags y pesos GGUF), transformers con safetensors, y potencialmente vLLM o TGI si se confirma compatibilidad con la arquitectura Qwen 3.5 (no documentado).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa sin datos de arquitectura, contexto ni rendimiento. A modo orientativo por tamaño:
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Documentación |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| FuckNous-27B | 79,7 M | no disponible | Apache 2.0 | GGUF | Mínima (solo licencia) |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | safetensors, GGUF | Amplia |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Amplia |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Amplia |
+| FuckNous-27B | 27,4B | no disponible | Apache 2.0 | safetensors, GGUF | Finetune LoRA+GRPO de Arete-27B; sin benchmarks publicados |
+| NousResearch/Arete-27B | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva; sin datos confirmados en esta ficha |
+| Qwen 3.5 (variante 27B) | no disponible | no disponible | no disponible | no disponible | Familia referenciada por los tags; sin confirmacion oficial en la informacion disponible |
 
-La comparación evidencia que los modelos de referencia de tamaño similar cuentan con documentación detallada, evaluaciones publicadas y comunidades activas, mientras que FuckNous-27B carece de todos esos elementos.
+No se dispone de datos suficientes para comparar rendimiento, contexto o calidad con alternativas de la misma categoria. La comparativa se limita a parametros y licencia.
 
 ## Limitaciones y advertencias
 
-- Procedencia incierta: no hay información sobre el origen de los datos de entrenamiento, lo que impide evaluar sesgos, contaminación o cumplimiento normativo.
-- Discrepancia nombre-parámetros: el nombre sugiere 27.000 millones de parámetros, pero los pesos reales suman unos 80 millones. Esto puede inducir a error en la selección del modelo.
-- Riesgo de alucinación: desconocido, pero en modelos pequeños sin alineación documentada suele ser elevado.
-- Idiomas: no se especifican los idiomas soportados; no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro.
-- Contexto: se desconoce la ventana de contexto, lo que impide planificar aplicaciones que requieran conversaciones largas o documentos extensos.
-- Licencia: Apache 2.0 permite uso comercial, pero al no haber documentación sobre el entrenamiento, el usuario asume el riesgo legal derivado de posibles datos con derechos de autor en el corpus.
-- Sin soporte ni comunidad: cero descargas y cero likes indican ausencia de validación por parte de la comunidad; no hay issues, discusiones ni mantenimiento conocido.
-- No apto para producción sin evaluación: cualquier despliegue requeriría pruebas de calidad, seguridad y sesgo por parte del equipo adoptante.
+- Ausencia total de documentacion: la model card no describe el entrenamiento, los datos, la evaluacion ni las instrucciones de uso, lo que impide validar su calidad de forma objetiva.
+- Sesgo ideologico probable: el nombre del modelo y el dataset `NeoLiberalismEval` apuntan a un ajuste con una orientacion politica concreta, lo que puede introducir sesgos sistematicos en las respuestas.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un finetune con RL sobre un dataset especifico, el riesgo de degradacion en tareas generales es real.
+- Limitacion idiomatica: solo se declara ingles; no hay evidencia de soporte para castellano u otros idiomas.
+- Contexto desconocido: no se documenta la longitud de contexto, lo que dificulta planificar usos con documentos largos o conversaciones multi-turno extensas.
+- Trazabilidad limitada: 209 descargas y 0 likes indican una adopcion muy baja; no hay comunidad que haya validado el modelo.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; el usuario asume todo el riesgo.
+- Capacidad multimodal incierta: el tag `image-text-to-text` no se acompaña de documentacion sobre el procesador de imagen ni ejemplos, por lo que no debe asumirse su funcionamiento.
+- Compatibilidad de despliegue no verificada: aunque se distribuyen pesos GGUF, no se detallan los niveles de cuantizacion ni se confirma el soporte en vLLM o TGI.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Mulatram/FuckNous-27B
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/Mulatram/FuckNous-27B
+- Modelo base: https://huggingface.co/NousResearch/Arete-27B
+- Dataset asociado: https://huggingface.co/datasets/Mulatram/NeoLiberalismEval

@@ -2,110 +2,109 @@
 
 ## Resumen
 
-EuroLLM-1.7B GDPR + LGPD privacy specialist es una adaptación especializada del modelo base utter-project/EuroLLM-1.7B-Instruct, publicada por el usuario eduardoworrel. El modelo ha sido afinado para una tarea concreta: clasificar pasajes de políticas de privacidad según criterios de cumplimiento del RGPD europeo y de la LGPD brasileña, respondiendo a preguntas estructuradas de tipo elección múltiple sobre el contenido de cada fragmento. No es un modelo de propósito general, sino un clasificador especializado con una cabeza de decisión entrenada sobre el modelo base.
+EuroLLM-1.7B GDPR + LGPD privacy specialist es una adaptacion del modelo base utter-project/EuroLLM-1.7B-Instruct, desarrollada por el usuario eduardoworrel, orientada a la clasificacion y el razonamiento sobre politicas de privacidad conforme al RGPD europeo y a la LGPD brasilena. El modelo combina el transformer de 1.7B parametros del proyecto UTTER con cabezas de decision entrenadas especificamente para responder preguntas tipadas (si/no, eleccion multiple) sobre el contenido de textos legales de privacidad.
 
-La arquitectura subyacente es un transformer decoder-only de 1.700 millones de parámetros (EuroLLM-1.7B-Instruct), cuantizado a int4 y exportado a ONNX para su ejecución en el navegador mediante Transformers.js y WebGPU. El repositorio incluye además cabezas de decisión separadas (en `heads/`) que se aplican mediante la librería propietaria s1s2, y un mecanismo de "System 1 / System 2" que permite una decisión rápida de una pasada y, si el margen de confianza es bajo, una generación explicativa con los mismos pesos.
+La innovacion principal es la arquitectura S1S2 (System 1 / System 2): un modo rapido de una sola pasada que produce una decision con confianza y margen, y un modo generativo que reutiliza los mismos pesos para explicar la decision cuando el margen es bajo. Se distribuye en formato ONNX con cuantizacion int4 para ejecutarse en el navegador mediante transformers.js y WebGPU, con un pipeline especifico de decision.
 
-Su relevancia radica en que demuestra un patrón de despliegue de modelos especializados de privacidad directamente en el cliente (navegador), sin enviar datos a servidores externos, lo que encaja con el propio objeto de análisis del modelo. La licencia es GPL-3.0 por herencia de los datos de entrenamiento (GDPR-Transparency-200), lo que condiciona su uso comercial.
+Es relevante para desarrolladores que necesitan auditar o clasificar politicas de privacidad en el cliente (navegador) sin enviar datos a servidores externos, y para investigadores interesados en arquitecturas de decision duales aplicadas a dominios legales regulados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base EuroLLM-1.7B-Instruct), con cabezas de decisión adicionales |
-| Parametros totales | 1.700 millones (modelo base) |
+| Arquitectura | Transformer decoder-only (base EuroLLM-1.7B-Instruct) con cabezas de decision S1S2 |
+| Parametros totales | 1.7B (modelo base) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 (ONNX, `model_q4.onnx`) |
+| Tipos de cuantizacion | int4 (ONNX q4) |
 | Idiomas soportados | en, pt |
 | Licencia | GPL-3.0 |
-| Formato de pesos | ONNX (int4), con cabezas en `heads/` y `chat_template.jinja` |
+| Formato de pesos | ONNX (model_q4.onnx), cabezas en heads/, manifest.json, chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de EuroLLM-1.7B-Instruct, un transformer decoder-only del proyecto UTTER (licencia Apache-2.0), cuantizado a int4 y exportado a ONNX. Sobre esa base se añaden cabezas de decisión entrenadas para tareas de clasificación de políticas de privacidad, aplicadas por la librería s1s2 sobre los estados ocultos en posiciones de lectura concretas. La receta de entrenamiento de la cabeza de puntero y del pipeline procede de Kev (Apache-2.0), y la idea de separación System 1 / System 2 con umbral de margen proviene de CT0 (Alias Robotics).
+El modelo parte de EuroLLM-1.7B-Instruct (UTTER project, Apache-2.0), un transformer decoder-only multilingue europeo. Sobre ese backbone se anaden cabezas de decision separadas (ficheros en heads/) que operan sobre los hidden states en posiciones de lectura especificas, siguiendo el esquema S1S2: una pasada de "System 1" produce una eleccion entre opciones con probabilidad y margen; si el margen es bajo, se invoca el modo generativo "System 2" con los mismos pesos para explicar la decision.
 
-Los datos de entrenamiento combinan tres fuentes: GDPR-Transparency-200 (GPL-3.0, solo identificadores de ítems y scripts, sin redistribuir texto de políticas), el corpus Claudinha para LGPD (Tocchini et al., Zenodo 13371639, CC BY 4.0) y datos sintéticos Kev (legacy_policy y composicionales). No se especifican en la información disponible el número de tokens de entrenamiento ni si hubo RLHF o DPO sobre el modelo base. La innovación técnica destacable es el esquema de dos velocidades: una decisión de una sola pasada con probabilidad y margen, y una generación explicativa opcional con los mismos pesos cuando el margen es bajo.
+Los datos de entrenamiento incluyen GDPR-Transparency-200 (tomcory/privacy-policy-annotator, GPL-3.0), el corpus Claudinha para LGPD (Tocchini et al., Zenodo 13371639, CC BY 4.0) y datos sinteticos Kev (legacy_policy, compositional). La receta de entrenamiento y la cabeza pointer provienen de Kev (Apache-2.0). La idea de separacion System 1 / System 2 y la compuerta por margen se atribuyen a CT0 de Alias Robotics y a los precursores alias3-web y el paper Browser Immune System (arXiv 2611.15302). No se detalla el numero de tokens de entrenamiento ni si hubo RLHF/DPO especifico para esta adaptacion.
 
 ## Capacidades
 
-- Clasificación de pasajes de políticas de privacidad mediante preguntas de elección múltiple (por ejemplo, si un fragmento aborda los destinatarios de los datos).
-- Decisión con probabilidad y margen de confianza por respuesta, útil para umbrales de revisión.
-- Generación de texto explicativo sobre la decisión tomada (misma base instruct).
-- Soporte de preguntas y etiquetas definidas en el manifiesto (`lab`), entrenadas específicamente para esas formulaciones.
-- Ejecución en navegador vía Transformers.js con WebGPU (0,15 s por decisión) y CPU/WASM (2,7 s por decisión).
-- Idiomas inglés y portugués.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio.
+- Clasificacion de textos de politicas de privacidad mediante preguntas tipadas (choice, yes/no) con salida de eleccion, confianza y margen.
+- Razonamiento de una sola pasada (System 1) con cabezas de decision entrenadas.
+- Generacion de explicaciones en lenguaje natural (System 2) reutilizando los mismos pesos cuando el margen es bajo.
+- Soporte de preguntas compuestas mediante manifiestos (manifest.json, manifest.pt.json) con etiquetas y consignas predefinidas.
+- Ejecucion en navegador con transformers.js y WebGPU, o en CPU via WASM.
+- Capacidades multilingues limitadas a en y pt.
+- No se documenta soporte de tool calling, function calling ni agentes multi-paso en la informacion disponible.
+- No se documenta vision ni audio.
 
 ## Casos de uso
 
-- Auditoría de políticas de privacidad en el navegador: una herramienta web puede cargar el modelo y clasificar fragmentos de una política sin enviar el texto a un servidor, lo que reduce la exposición de datos sensibles durante la propia auditoría.
-- Cumplimiento del RGPD en portales corporativos: integración en un formulario o panel interno que marque automáticamente si una cláusula cubre los destinatarios de los datos, con margen de confianza para derivar casos dudosos a revisión humana.
-- Cumplimiento de la LGPD en portugués: el manifiesto `manifest.pt.json` permite aplicar las mismas preguntas a textos en portugués, útil para equipos de privacidad en Brasil.
-- Revisión asistida con explicación: cuando el margen es inferior al umbral configurado, el modelo genera dos frases justificando la decisión, lo que facilita la revisión por parte de un DPO o un abogado.
-- Extensión de navegador para privacidad: dado su tamaño (repo de 1,3 GB) y su ejecución en WebGPU, puede empaquetarse en una extensión que analice políticas al visitar un sitio.
-- Investigación en clasificación de textos legales: sirve como referencia reproducible de un pipeline ONNX int4 con cabezas de decisión y paridad verificada entre entornos (Node CPU y Chrome WebGPU).
-- Prototipado de clasificadores especializados: el patrón s1s2 (decisión rápida más generación de respaldo) puede reutilizarse para otras tareas de clasificación con umbral de confianza.
+- Auditoria de politicas de privacidad en el navegador: el modelo permite clasificar si un texto aborda categorias concretas (por ejemplo, destinatarios de los datos) sin enviar el contenido a un servidor, gracias a la ejecucion ONNX int4 en WebGPU.
+- Cumplimiento RGPD en herramientas internas: integrado en un panel de revision legal, el modo System 1 marca pasajes que abordan requisitos del RGPD y el modo System 2 genera una justificacion breve para el revisor cuando el margen es bajo.
+- Cumplimiento LGPD en portugues: el manifiesto manifest.pt.json permite aplicar el mismo flujo a textos en portugues para el mercado brasileno.
+- Triaje automatizado de documentos legales: clasificacion rapida de grandes volumenes de politicas para priorizar la revision humana, usando la confianza y el margen como criterio de enrutamiento.
+- Extensiones de navegador para transparencia: una extension puede analizar la politica de privacidad de la pagina visitada en el cliente y mostrar alertas sobre clausulas relevantes.
+- Investigacion en arquitecturas duales: el modelo sirve como referencia reproducible para estudiar la separacion System 1 / System 2 y las compuertas por margen en tareas de decision legal.
+- Prototipado de asistentes de privacidad: el ejemplo de la model card muestra como encadenar decide() y generate() para construir un asistente que responde y justifica en dos frases.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí reporta verificaciones de paridad y latencia:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card reporta pruebas de paridad y latencia:
 
 | Prueba | Entorno | Resultado |
 |---|---|---|
-| Paridad con build GenAI (20 prompts, estados ocultos) | Node CPU (onnxruntime-node 1.30.0, transformers.js 4.3.1) | max \|diff\| 0 |
-| Paridad de probabilidades de cabeza | Node CPU | max \|diff\| 0 |
-| Paridad de decisiones | Node CPU | 20/20 iguales |
-| Paridad de decisiones en WebGPU | Chrome 157, Apple M2 Pro | 20/20 iguales |
-| Latencia por decisión | WebGPU (Chrome 157, M2 Pro) | 0,15 s |
-| Latencia por decisión | CPU/WASM (Chrome 157, M2 Pro) | 2,7 s |
-| Memoria de página | WebGPU | 0,2 GB (sin contar buffers GPU) |
-| Memoria de página | CPU/WASM | 2,9 GB (pico de pestaña 4,1 GB al cargar) |
-| Concordancia `pipeline("decision")` vs cabeza entrenada | Node CPU | 11/20 |
+| Paridad con build GenAI (hidden states) | Node CPU (onnxruntime-node 1.30.0, transformers.js 4.3.1) | max abs diff 0 |
+| Paridad de probabilidades de cabeza | Node CPU | max abs diff 0 |
+| Paridad de decisiones | Node CPU, 20 prompts | 20/20 iguales |
+| Paridad de decisiones | Chrome 157 WebGPU (Apple M2 Pro), 20 prompts | 20/20 iguales |
+| Latencia por decision | WebGPU, M2 Pro | 0.15 s |
+| Memoria de pagina | WebGPU | 0.2 GB (buffers GPU no contados) |
+| Latencia por decision | CPU (WASM), M2 Pro | 2.7 s |
+| Memoria de pagina | CPU (WASM) | 2.9 GB (pico de pestana 4.1 GB al cargar) |
+| Coincidencia WebGPU vs CPU | 20 prompts | 20/20 |
+| Acuerdo pipeline("decision") vs cabeza entrenada | Node CPU, 20 prompts | 11/20 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el repo ocupa 1,3 GB en int4.
-- GPU recomendadas: no se especifican modelos concretos; la model card valida WebGPU en Apple M2 Pro.
-- Cabe en GPU de consumo: sí, en principio, dado el tamaño int4 de 1,7B; no se detallan modelos concretos (RTX 4090, etc.).
-- Despliegue: Transformers.js (`@huggingface/transformers`), librería s1s2 (`@s1s2/web`), ONNX Runtime (onnxruntime-node 1.30.0), navegador con WebGPU o WASM. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 0,15 s por decisión en WebGPU y 2,7 s en CPU/WASM sobre M2 Pro (Chrome 157); no se reporta throughput agregado.
+- VRAM estimada: no disponible de forma explicita; el repo ocupa 1.3 GB y los pesos son int4, por lo que la huella de pesos ronda ese orden de magnitud.
+- GPU recomendadas: no se especifican; la model card valida WebGPU en Apple M2 Pro y CPU via WASM.
+- Cabe en GPU consumer: si, al ser un modelo de 1.7B en int4; se ha probado en hardware Apple M2 Pro.
+- Opciones de despliegue: transformers.js con WebGPU o WASM en navegador; onnxruntime-node en Node; la libreria s1s2 (necesaria para leer las cabezas de decision); pipeline("decision") de transformers.js solo con el PR #1943 y con menor fidelidad.
+- Latencia y throughput: 0.15 s por decision en WebGPU (M2 Pro) y 2.7 s en CPU WASM; memoria de pagina 0.2 GB en WebGPU y 2.9 GB en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EuroLLM-1.7B GDPR+LGPD (este) | 1,7B (int4 ONNX) | no disponible | Clasificación de privacidad RGPD/LGPD | GPL-3.0 | Hugging Face, Transformers.js, s1s2 |
-| utter-project/EuroLLM-1.7B-Instruct | 1,7B | no disponible | Instrucciones generales | Apache-2.0 | Hugging Face |
-| EuroLLM-1.7B-GDPR-LGPD-ONNX-genai-int4-S1S2 | 1,7B (int4 ONNX) | no disponible | Igual, build de referencia GenAI | GPL-3.0 | Hugging Face |
-| aliasrobotics/alias3-web | no disponible | no disponible | Precursor de clasificación en navegador | no disponible | Hugging Face |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+| EuroLLM-1.7B-GDPR-LGPD-ONNX-transformersjs-S1S2 | 1.7B | no disponible | Clasificacion de privacidad con cabezas S1S2, ONNX int4 | GPL-3.0 | Hugging Face (299 descargas) |
+| utter-project/EuroLLM-1.7B-Instruct | 1.7B | no disponible | Modelo base instructivo multilingue europeo | Apache-2.0 | Hugging Face |
+| eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-genai-int4-S1S2 | 1.7B | no disponible | Misma especialidad, layout ONNX Runtime GenAI | GPL-3.0 | Hugging Face |
+| aliasrobotics/alias3-web | no disponible | no disponible | Precursor web de decisiones de seguridad | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Las cabezas de decisión son archivos separados en `heads/` y Transformers.js por sí solo no las lee; sin s1s2 la clasificación no funciona correctamente.
-- `pipeline("decision")` lee logits de etiquetas y no la cabeza entrenada: solo coincide en 11 de 20 prompts de control, por lo que no debe usarse como sustituto.
-- El modelo está entrenado para las formulaciones y opciones del manifiesto (`lab`); usar otras preguntas o etiquetas degrada la fiabilidad.
-- Solo soporta inglés y portugués; no hay soporte documentado de otros idiomas.
-- El umbral de margen (0,2 en el ejemplo) es orientativo y debe calibrarse por caso; márgenes bajos indican decisiones poco fiables.
-- Licencia GPL-3.0 por herencia de los datos GDPR-Transparency-200: restringe el uso comercial propietario y obliga a mantener la licencia en obras derivadas.
-- La dimensión de cabeza del KV cache está fijada en el grafo por requisito de Transformers.js, lo que limita variaciones de configuración.
-- Riesgo de alucinación en la fase generativa (System 2): las explicaciones son texto generado y no deben tomarse como fundamento legal.
-- La model card no reporta sesgos específicos, evaluación de robustez ni conjuntos de test formales (los 20 prompts son de control, no un test set).
-- El modelo no sustituye asesoramiento legal; es una herramienta de clasificación asistida.
+- Las cabezas de decision son ficheros separados y transformers.js por si solo no las lee; es necesario usar la libreria s1s2 para obtener la fidelidad reportada.
+- El pipeline("decision") de transformers.js lee logits de etiquetas, no la cabeza entrenada: solo coincide en 11 de 20 prompts de comprobacion.
+- La licencia es GPL-3.0 por herencia de los datos GDPR-Transparency-200; el uso comercial debe respetar las obligaciones de copyleft.
+- Idiomas limitados a en y pt; no hay soporte documentado de castellano ni de otras lenguas.
+- Riesgo de alucinacion en el modo generativo (System 2): las explicaciones son texto libre y deben validarse.
+- Sesgos no documentados en la informacion disponible; el corpus legal puede no representar todos los sectores ni jurisdicciones.
+- La compuerta por margen (0.2 en el ejemplo) es un valor ilustrativo; el autor recomienda medir el umbral propio.
+- La dimension de cabeza del KV cache esta fijada en el grafo por requisito de transformers.js; el resto del grafo es el de GenAI.
+- No se documentan benchmarks estandar de calidad, por lo que la evaluacion en produccion requiere pruebas propias.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-transformersjs-S1S2
+- Modelo en Hugging Face: https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-transformersjs-S1S2
 - Build de referencia GenAI: https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-genai-int4-S1S2
 - Modelo base: https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct
 - Repositorio s1s2: https://github.com/eduardoworrel/s1s2
-- Código de decisión s1s2: https://github.com/eduardoworrel/s1s2/blob/1ecbd80d380a78d43056fa10e0c95745261194a5/src/decide.ts#L85-L139
-- Transformers.js: https://github.com/huggingface/transformers.js
-- PR de Transformers.js para `pipeline("decision")`: https://github.com/huggingface/transformers.js/pull/1943
-- GDPR-Transparency-200 (privacy-policy-annotator): https://github.com/tomcory/privacy-policy-annotator
+- Codigo de decision (decide.ts): https://github.com/eduardoworrel/s1s2/blob/1ecbd80d380a78d43056fa10e0c95745261194a5/src/decide.ts#L85-L139
+- PR de transformers.js para pipeline("decision"): https://github.com/huggingface/transformers.js/pull/1943
+- transformers.js: https://github.com/huggingface/transformers.js
+- GDPR-Transparency-200: https://github.com/tomcory/privacy-policy-annotator
 - Corpus Claudinha (LGPD): https://zenodo.org/records/13371639
-- Kev (receta de cabeza y entrenamiento): https://github.com/jaredpalmer/kev
+- Kev (receta de entrenamiento y cabeza pointer): https://github.com/jaredpalmer/kev
 - Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
 - Paper Browser Immune System: https://arxiv.org/abs/2611.15302

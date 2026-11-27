@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Zeril-Hera-GGUF",
+  "slug": "mradermacher-zeril-hera-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zeril-Hera-GGUF",
+  "created_at": "2025-09-08T23:57:14.000Z",
+  "updated_at": "2026-11-27T02:31:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303030944,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "Daemontatox/Zeril-Hera",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

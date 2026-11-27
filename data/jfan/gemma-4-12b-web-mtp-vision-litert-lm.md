@@ -2,106 +2,86 @@
 
 ## Resumen
 
-El modelo `jfan/gemma-4-12b-web-mtp-vision-litert-lm` es un conjunto de paquetes cuantizados en formato `.litertlm` pensados para ejecutarse en el navegador mediante LiteRT-LM Web con aceleracion WebGPU. Se presenta como una adaptacion de "Gemma 4 12B" (12 000 millones de parametros) en cuatro variantes que combinan decodificacion especulativa por prediccion multi-token (MTP, *multi-token prediction*), vision multimodal y audio multimodal. El autor es el usuario `jfan`, que lo publica como subida de la comunidad y no como lanzamiento oficial de Google.
+Gemma 4 12B Web MTP Vision es una distribución cuantizada del modelo Gemma 4 12B en formato `.litertlm`, empaquetada por el usuario jfan para su ejecución en navegador mediante LiteRT-LM Web y WebGPU. El paquete incluye el decodificador de texto con decodificación especulativa basada en Multi-Token Prediction (MTP), un codificador y adaptador de visión, y un codificador y adaptador de audio basados en Conformer. Está pensado para desplegar inferencia multimodal directamente en el cliente, sin servidor.
 
-Su relevancia esta en el enfoque de despliegue: no apunta a servidores con GPU dedicada, sino a inferencia local dentro del navegador, con soporte explicito de WebGPU como backend de computo. La model card describe un decodificador de texto acompanado de un modulo `gpu_artisan` para decodificacion especulativa, un codificador de vision con presupuestos de tokens variables y un codificador de audio basado en arquitectura Conformer.
+La relevancia de esta ficha radica en que demuestra un caso de ejecución local en navegador de un modelo de 12.000 millones de parámetros con capacidades de visión, audio y decodificación especulativa, algo poco habitual en el ecosistema open source. El repositorio ocupa 116,8 GB y contiene cuatro variantes del bundle según las modalidades incluidas.
 
-La informacion publicada es muy escasa: no hay datos de entrenamiento, benchmarks, idiomas soportados ni tamano de contexto declarados. El repositorio ocupa 24,7 GB y contiene cuatro ficheros `.litertlm`, lo que sugiere en torno a 6 GB por variante, aunque el nivel exacto de cuantizacion no se especifica en la model card.
+No se dispone de información sobre la arquitectura interna exacta, el número de tokens de entrenamiento, la composición del dataset ni los resultados de benchmarks. La model card se limita a describir el empaquetado y las variantes disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador con prediccion multi-token (MTP) para decodificacion especulativa; codificador de vision + adaptador y codificador de audio Conformer + adaptador (`audio_encoder_hw`) |
-| Parametros totales | 12B (segun la denominacion "Gemma 4 12B" del propio repositorio) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer multimodal (Gemma 4) con decodificador de texto, MTP especulativo, codificador de vision y codificador de audio Conformer; empaquetado LiteRT-LM |
+| Parametros totales | 12B (según el nombre del modelo; no se detalla el desglose) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | pesos cuantizados en formato `.litertlm`; nivel de cuantizacion (int4, int8, mixto) no disponible |
+| Tipos de cuantizacion | Cuantizado (el formato `.litertlm` implica cuantización, pero no se especifican los esquemas) |
 | Idiomas soportados | no disponible |
-| Licencia | Gemma (terminos de licencia Gemma) |
-| Formato de pesos | `.litertlm` (LiteRT-LM), optimizado para WebGPU |
-
-Variantes incluidas en el repositorio:
-
-| Fichero | Capacidades |
-|---|---|
-| `gemma-4-12B-it-web-mtp.litertlm` | Texto + MTP |
-| `gemma-4-12B-it-web-mtp-vision.litertlm` | Texto + MTP + vision |
-| `gemma-4-12B-it-web-mtp-audio.litertlm` | Texto + MTP + audio |
-| `gemma-4-12B-it-web-mtp-vision-audio.litertlm` | Texto + MTP + vision + audio |
+| Licencia | Gemma (términos de licencia de Gemma) |
+| Formato de pesos | `.litertlm` (bundles LiteRT-LM para WebGPU) |
 
 ## Arquitectura y entrenamiento
 
-Segun la model card, el modelo se compone de un decodificador de texto y varios modulos auxiliares. El decodificador incorpora prediccion multi-token (MTP) bajo la etiqueta `gpu_artisan`, que actua como mecanismo de decodificacion especulativa: se generan varios tokens candidatos por paso y se validan despues, reduciendo el numero de pasos de decodificacion efectivos. Esta tecnica es especialmente relevante en entornos WebGPU, donde la latencia por paso es mayor que en GPUs de servidor.
+La información disponible indica que se trata de Gemma 4 12B, un modelo multimodal con decodificador de texto, codificador de visión y codificador de audio. El bundle incorpora Neural Multi-Token Prediction (MTP) para decodificación especulativa, identificado en la model card con el componente `gpu_artisan`. La parte de visión se compone de `vision_encoder`, `vision_adapter` y un token `end_of_vision`, con presupuestos de tokens variables de 70, 140, 280, 560 y 1120. La parte de audio emplea un codificador Conformer (`audio_encoder_hw`), un `audio_adapter` y un token `end_of_audio`.
 
-El modulo de vision combina un `vision_encoder`, un `vision_adapter` y un token especial `end_of_vision`, con presupuestos de tokens de imagen configurables en los valores `[70, 140, 280, 560, 1120]`. Esto permite intercambiar resolucion de detalle por coste computacional segun la tarea. El modulo de audio usa un codificador `audio_encoder_hw` de tipo Conformer, un `audio_adapter` y el token `end_of_audio`.
-
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF o DPO. Tampoco se documenta el proceso de cuantizacion ni la receta de conversion a `.litertlm`.
+No se especifican en la información proporcionada los datos de entrenamiento (número de tokens, composición del dataset), el uso de RLHF/DPO ni innovaciones adicionales más allá de la decodificación especulativa MTP y el empaquetado para WebGPU. Tampoco se detalla el proceso de cuantización aplicado ni los esquemas numéricos empleados.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con el sufijo `-it` en los ficheros que sugiere una variante ajustada para instrucciones.
-- Decodificacion especulativa mediante prediccion multi-token (MTP), orientada a reducir latencia en inferencia local.
-- Comprension de imagenes: codificador de vision con presupuestos de tokens variables (`70`, `140`, `280`, `560`, `1120`), lo que permite ajustar el coste por imagen.
-- Procesamiento de audio: codificador Conformer con adaptador y token de cierre `end_of_audio`.
-- Modalidad combinada imagen + audio + texto en la variante `vision-audio`.
-- Ejecucion en navegador mediante LiteRT-LM Web con backend WebGPU.
-- Soporte de *tool calling* o *function calling*: no disponible.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible.
-- Capacidades multilingues concretas: no disponible.
-- Modo de razonamiento explicito (*thinking mode*): no disponible.
+- Generación de texto y razonamiento con el decodificador de Gemma 4 12B.
+- Procesamiento de imágenes mediante codificador de visión con presupuestos de tokens configurables (70, 140, 280, 560, 1120).
+- Procesamiento de audio mediante codificador Conformer y adaptador de audio.
+- Decodificación especulativa con Multi-Token Prediction (MTP) para acelerar la generación.
+- Ejecución en navegador con WebGPU a través de LiteRT-LM Web.
+- Soporte multimodal combinado en la variante `vision-audio`.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: visión y audio confirmados; modo thinking no disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales integrados en aplicaciones web: al ejecutarse con LiteRT-LM y WebGPU, el modelo permite ofrecer chat con IA sin enviar datos del usuario a un servidor, lo que simplifica el cumplimiento de normativa de privacidad.
-- Descripcion y analisis de imagenes en el navegador: un editor web o una herramienta de accesibilidad puede enviar una imagen al `vision_encoder` con un presupuesto de tokens bajo (por ejemplo, 70 o 140) para obtener descripciones rapidas sin coste de red.
-- Analisis detallado de documentos escaneados: usando el presupuesto maximo de 1120 tokens de vision, se puede extraer informacion de capturas, graficos o formularios donde el detalle importa.
-- Transcripcion y comprension de audio en aplicaciones web: la variante con audio permite resumir notas de voz o generar subtitulos directamente en el cliente, apoyandose en el codificador Conformer.
-- Demos y prototipos de multimodalidad sin infraestructura: al no requerir servidores con GPU, es util para talleres, pruebas de concepto y entornos donde solo se dispone de un navegador con WebGPU.
-- Aplicaciones educativas interactivas: combinando vision y audio, un tutor puede analizar un problema escrito a mano y responder por voz, con la decodificacion MTP reduciendo la latencia percibida.
-- Procesamiento por lotes en el cliente para tareas de clasificacion o etiquetado: si el presupuesto de tokens de vision es ajustable, se puede recorrer un conjunto de imagenes reduciendo el coste por elemento.
+- Asistentes en navegador con privacidad por diseño: el modelo se ejecuta en el cliente vía WebGPU, de modo que las imágenes y el audio del usuario no salen del dispositivo; adecuado para aplicaciones de accesibilidad o asistencia personal.
+- Descripción de imágenes en aplicaciones web: la variante `vision` permite generar texto alternativo o descripciones a partir de imágenes subidas por el usuario, con control del coste computacional mediante los presupuestos de tokens de visión.
+- Transcripción y comprensión de audio en el navegador: la variante `audio` con codificador Conformer permite procesar notas de voz o reuniones sin enviar el audio a un servidor.
+- Demos interactivas y prototipos de investigación: el bundle `vision-audio` sirve para experimentar con interacción multimodal en tiempo real dentro de una página web.
+- Evaluación de decodificación especulativa MTP: útil para investigadores que quieran medir la aceleración de la generación con MTP frente a decodificación autoregresiva estándar en WebGPU.
+- Aplicaciones educativas offline: al ejecutarse en el navegador, puede desplegarse en entornos con conectividad limitada o requisitos de soberanía de datos.
+- Procesamiento por lotes de imágenes o audio en el cliente: para tareas de etiquetado o resumen que se beneficien de no depender de una API externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-La model card no incluye datos de MMLU, HumanEval, GSM8K, MMMU, ningun benchmark multimodal, ni mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El modelo esta disenado para WebGPU, por lo que el requisito principal es un navegador compatible con WebGPU (Chrome, Edge u otros basados en Chromium) y una GPU integrada o dedicada con soporte de dicho backend.
-- Tamano del repositorio: 24,7 GB repartidos en cuatro ficheros `.litertlm`. Para el uso de una sola variante hay que descargar unicamente el fichero correspondiente; como estimacion derivada del total, cada variante rondaria los 6 GB, aunque el autor no publica los tamanos individuales.
-- Encaje en GPU de consumo: dado que el objetivo es el navegador, se asume ejecucion en GPU de consumo, pero no se especifican modelos concretos (RTX 4090, RTX 3060, Apple Silicon, etc.) ni el consumo de VRAM o memoria unificada.
-- GPUs de centro de datos (A100, H100): no es el escenario objetivo declarado; no hay informacion sobre su uso.
-- Opciones de despliegue: LiteRT-LM Web sobre WebGPU. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que el formato `.litertlm` es especifico del runtime de LiteRT-LM.
-- Latencia y throughput: no disponibles. La presencia de MTP indica que el autor prioriza la reduccion de latencia, pero no se aportan cifras.
+- El repositorio ocupa 116,8 GB, pero cada variante individual es un subconjunto; el tamaño de cada bundle no se detalla en la información proporcionada.
+- Requiere un navegador con soporte de WebGPU y una GPU compatible.
+- VRAM estimada: no disponible.
+- GPU recomendadas: no disponible; el modelo está orientado a ejecución en navegador sobre WebGPU, no a servidores con A100/H100.
+- Compatibilidad con GPU de consumo: no confirmada; depende de la memoria de la GPU del cliente y del tamaño del bundle elegido.
+- Opciones de despliegue: LiteRT-LM Web con WebGPU (formato `.litertlm`). No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles; la decodificación especulativa MTP está pensada para reducir la latencia, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables sobre "Gemma 4 12B" en la informacion proporcionada, por lo que la comparacion se limita a aspectos estructurales. Los siguientes modelos son alternativas de categoria similar (modelos abiertos de ~12B con capacidad multimodal), pero los valores marcados como "no disponible" no pueden confirmarse contra este modelo concreto.
-
-| Modelo | Parametros | Contexto | Vision | Audio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| jfan/gemma-4-12b-web-mtp-vision-litert-lm | 12B | no disponible | si | si (variante especifica) | Gemma | Hugging Face, formato `.litertlm` |
-| Gemma 3 12B IT | 12B | no disponible en esta ficha | si | no | Gemma | Hugging Face, safetensors / GGUF |
-| Qwen2.5-VL-7B | 7B | no disponible en esta ficha | si | no | Apache 2.0 | Hugging Face, safetensors |
-
-No se han encontrado comparativas de rendimiento publicadas entre este modelo y las alternativas citadas.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones comparables de otros modelos, y este empaquetado LiteRT-LM para WebGPU no tiene equivalentes directos documentados en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Subida de la comunidad: el autor es `jfan`, no Google. No hay evidencia en la informacion disponible de que se trate de un lanzamiento oficial ni de que el nombre "Gemma 4" corresponda a una familia publicada por Google.
-- Sin validacion externa: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay señales de uso ni verificacion por terceros.
-- Sin datos de entrenamiento: no se documenta la composicion del dataset ni los procesos de ajuste, lo que impide evaluar sesgos conocidos.
-- Riesgo de alucinacion: no cuantificado. No hay evaluaciones de fidelidad ni de tasas de error.
-- Idiomas soportados: no disponibles. No se puede garantizar un comportamiento correcto en castellano ni en otros idiomas.
-- Longitud de contexto: no disponible, lo que impide planificar tareas de contexto largo.
-- Nivel de cuantizacion desconocido: al no especificarse el esquema (int4, int8, mixto), no se puede estimar la perdida de calidad frente a los pesos originales.
-- Restricciones de licencia: se aplican los terminos de licencia Gemma, que imponen condiciones de uso, obligaciones de atribucion y restricciones de uso aceptable. Es imprescindible revisarlos antes de cualquier despliegue comercial.
-- Encaje en produccion: el formato `.litertlm` esta atado a LiteRT-LM, lo que limita la portabilidad a otras pilas de inferencia habituales en servidor.
-- Compatibilidad de navegador: el rendimiento depende de la implementacion de WebGPU del navegador y del controlador de la GPU del usuario final, lo que introduce variabilidad dificil de controlar.
+- La model card no documenta sesgos conocidos, tasas de alucinación ni evaluaciones de calidad.
+- No se especifican los idiomas soportados, por lo que el rendimiento multilingüe es desconocido.
+- La longitud de contexto no está documentada; no debe asumirse un valor concreto para producción.
+- La licencia Gemma impone términos de uso específicos, incluida la política de uso aceptable de Google; es necesario revisarlos antes de un uso comercial.
+- El formato `.litertlm` y la dependencia de WebGPU limitan el despliegue a navegadores y hardware compatibles; no es un formato estándar para servidores.
+- El repositorio de 116,8 GB contiene varias variantes; descargar el bundle completo puede ser costoso en almacenamiento y ancho de banda.
+- Es un empaquetado de terceros (jfan), no una publicación oficial de Google; la integridad y el mantenimiento dependen del autor.
+- No hay información sobre tool calling, agentes ni modo thinking, por lo que no deben asumirse estas capacidades en producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/jfan/gemma-4-12b-web-mtp-vision-litert-lm
-- Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
+- LiteRT-LM: no disponible en la información proporcionada.
+- Paper de Gemma 4: no disponible en la información proporcionada.
+- Repositorio o demo adicional: no disponible en la información proporcionada.

@@ -1,88 +1,87 @@
 # amd/Kimi-K3-Quark-MXFP4-AttnFP8
 
 ## Resumen
+Kimi-K3-Quark-MXFP4-AttnFP8 es una version cuantizada del modelo multimodal moonshotai/Kimi-K3, publicada por AMD y optimizada para su ejecucion sobre aceleradores AMD Instinct MI350 y MI355 con ROCm 10.0.0. El modelo conserva la arquitectura original KimiK3ForConditionalGeneration (un transformer con mezcla de expertos y torre de vision) y admite entradas de texto, imagen y video con salida de texto. Se distribuye a traves de Hugging Face con la libreria transformers y un pipeline image-text-to-text.
 
-El modelo `amd/Kimi-K3-Quark-MXFP4-AttnFP8` es una versión cuantizada del modelo multimodal `moonshotai/Kimi-K3`, desarrollada por AMD para ejecutarse de forma eficiente en sus GPUs Instinct (MI350/MI355) mediante el optimizador AMD-Quark. Con 1,41 billones de parámetros (1.412.120.544.000), es un modelo de escala masiva que acepta texto, imagen y vídeo como entrada y genera texto, con soporte para razonamiento y tool calling.
+La relevancia de esta ficha radica en el esquema de cuantizacion aplicado: los pesos y activaciones de los expertos enrutados se comprimen a OCP MXFP4, la atencion se cuantiza a PTPC-FP8 y los expertos compartidos se mantienen en BF16. El resultado es un checkpoint de aproximadamente 1,418 billones de parametros totales (dato real de safetensors) que ocupa unos 3 TB en el repositorio, lo que refleja el enorme coste de almacenamiento del modelo base en precision completa.
 
-La cuantización combina dos esquemas: los pesos y activaciones de los expertos del MoE se reducen a OCP MXFP4 (4 bits), mientras que las capas de atención se cuantizan a PTPC-FP8 (8 bits). Esto reduce drásticamente el uso de memoria y acelera la inferencia en hardware AMD, manteniendo una recuperación de precisión del 99,52% en GSM8K respecto al modelo original. El modelo está pensado para despliegue con vLLM en entornos ROCm 7.1.1 y Linux, y su relevancia radica en hacer viable la ejecución de un modelo de este tamaño en GPUs de centro de datos AMD sin sacrificar rendimiento.
+El objetivo del modelo es ofrecer una alternativa de inferencia de alto rendimiento para Kimi-K3 en hardware AMD, con una recuperacion de precision casi identica a la del modelo original segun la evaluacion publicada. Es una pieza pensada para despliegues en servidores con multiples GPUs y no para entornos de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | KimiK3ForConditionalGeneration (transformer con MoE, multimodal) |
-| Parametros totales | 1.412.120.544.000 (1,41 billones) |
+| Arquitectura | KimiK3ForConditionalGeneration (transformer multimodal con mezcla de expertos) |
+| Parametros totales | 1.418.198.090.496 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | OCP MXFP4 (expertos y shared_experts), PTPC-FP8 (self_attn) |
+| Tipos de cuantizacion | MXFP4 en expertos enrutados (pesos y activaciones), PTPC-FP8 en self-attention, BF16 en expertos compartidos |
 | Idiomas soportados | no disponible |
-| Licencia | kimi-k3 (licencia personalizada) |
+| Licencia | kimi-k3 (licencia "other" con nombre kimi-k3) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo base Kimi-K3 emplea una arquitectura de transformer con mezcla de expertos (MoE) y un modulo de vision que permite procesar texto, imagenes y video. La implementacion concreta en este checkpoint es KimiK3ForConditionalGeneration, con capas de atencion que incluyen proyecciones kv_a_proj_with_mqa (atencion con query latente, estilo MLA) y un enrutador block_sparse_moe.gate que selecciona expertos por token. La torre de vision y el proyector multimodal (vision_tower y mm_projector) quedan excluidos de la cuantizacion, al igual que el lm_head y ciertas proyecciones residuales.
 
-El modelo base `moonshotai/Kimi-K3` es un transformer con mezcla de expertos (MoE) y componentes multimodales: incluye un `vision_tower` y un `mm_projector` para procesar imágenes y vídeo, además de un `block_sparse_moe` con expertos enrutados. La versión cuantizada no modifica la arquitectura, sino que aplica una cuantización post-entrenamiento con AMD-Quark. Los pesos de los expertos y shared_experts se convierten a OCP MXFP4 (4 bits), mientras que las proyecciones de atención (q, k, v) se cuantizan a PTPC-FP8. Se excluyen de la cuantización las capas de gate, proyecciones de salida de expertos, `lm_head`, `vision_tower`, `mm_projector` y ciertas capas de residuo, para preservar la precisión crítica. No se dispone de información sobre el dataset de entrenamiento original ni sobre el proceso de alineación (RLHF/DPO) del modelo base.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. La innovacion tecnica destacable de esta version es el esquema de cuantizacion de AMD-Quark: los expertos enrutados usan MXFP4 (formato de coma flotante de 4 bits con escala compartida por bloque, definido por OCP), la atencion usa PTPC-FP8 (FP8 por canal por token) y los expertos compartidos permanecen en BF16 para preservar precision. Los scripts de cuantizacion se basan en LLMTemplate y ModelQuantizer de quark.torch, con un template registrado para el tipo de modelo kimi_k3.
 
 ## Capacidades
-
-- Generación de texto multimodal: acepta texto, imagen y vídeo como entrada y produce texto.
-- Razonamiento y modo thinking: el parser `kimi_k3` en vLLM sugiere soporte para cadenas de razonamiento explícitas.
-- Tool calling / function calling: habilitado mediante `--enable-auto-tool-choice` y `--tool-call-parser kimi_k3`.
-- Soporte para agentes: combinado con tool calling y razonamiento multi-paso, puede actuar como agente autónomo.
-- Capacidades multilingües: no especificadas, pero probablemente heredadas del modelo base (no confirmado).
-- Procesamiento de vídeo: la arquitectura acepta vídeo como entrada, lo que permite tareas de comprensión temporal.
+- Generacion de texto a partir de entradas multimodales: texto, imagen y video.
+- Procesamiento de imagen-texto-a-texto (pipeline image-text-to-text).
+- Razonamiento y generacion de codigo, heredados del modelo base Kimi-K3 (no se detallan capacidades especificas en la informacion disponible).
+- Soporte de tool calling y function calling: el servidor SGLang se lanza con --tool-call-parser kimi_k3, lo que indica soporte de llamadas a herramientas.
+- Soporte de razonamiento multi-paso: el servidor incluye --reasoning-parser kimi_k3, lo que sugiere un modo de razonamiento estructurado.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Capacidades especiales (vision, audio, thinking mode): vision confirmada por la arquitectura y el pipeline; audio no disponible.
 
 ## Casos de uso
-
-- Asistentes virtuales multimodales en centros de datos: el modelo puede procesar consultas que incluyen imágenes o vídeo y responder con texto, aprovechando su gran capacidad de razonamiento y tool calling para integrarse con APIs externas.
-- Análisis de vídeo en tiempo diferido: dado su soporte de entrada de vídeo, puede generar resúmenes, transcripciones descriptivas o detección de eventos en secuencias grabadas, siempre que se disponga de la infraestructura AMD adecuada.
-- Agentes autónomos con razonamiento multi-paso: gracias al parser de razonamiento y tool calling, puede planificar y ejecutar tareas complejas (por ejemplo, búsqueda de información, generación de informes) en entornos de producción.
-- Generación de código asistida por contexto visual: al aceptar capturas de pantalla o diagramas como entrada, puede ayudar a desarrolladores a entender y generar código a partir de representaciones visuales.
-- Investigación en modelos a gran escala: sirve como referencia para estudiar el impacto de la cuantización MXFP4/FP8 en tareas de razonamiento matemático y multimodal, dado que se publican métricas de recuperación.
-- Despliegue en infraestructura AMD Instinct: es un caso de uso en sí mismo, ya que demuestra cómo ejecutar un modelo de 1,4 billones de parámetros en GPUs MI350/MI355 con vLLM, optimizado para ROCm.
+- Inferencia multimodal a gran escala en centros de datos con AMD Instinct MI350/MI355: el modelo esta optimizado para ROCm 10.0.0 y SGLang, por lo que encaja en despliegues con 8 GPUs en paralelo (tp-size 8) y atencion con backend aiter.
+- Analisis de documentos con imagenes y texto: al aceptar entradas de imagen y texto, puede extraer informacion de capturas, graficos o formularios y responder en texto, usando el contexto multimodal del modelo base.
+- Asistentes con tool calling: el parser kimi_k3 permite integrar el modelo en flujos de agentes que invocan APIs externas, bases de datos o servicios internos.
+- Razonamiento multi-paso en entornos de investigacion: el reasoning parser permite separar la cadena de razonamiento de la respuesta final, util para evaluar trazas de decision en tareas de matematicas o logica.
+- Procesamiento de video para resumenes o descripcion: la entrada de video permite generar descripciones textuales de secuencias, util en monitorizacion o catalogacion de contenido.
+- Evaluacion comparativa de cuantizacion: sirve como referencia para medir la perdida de precision de MXFP4 y FP8 frente al modelo BF16 original en tareas como GSM8K.
+- Servicio de completaciones a traves de la API compatible con OpenAI de SGLang: el ejemplo de lm_eval usa el endpoint /v1/completions, lo que facilita integrarlo en pipelines existentes.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | moonshotai/Kimi-K3 | amd/Kimi-K3-Quark-MXFP4-AttnFP8 | Recuperacion |
 |---|---|---|---|
-| GSM8K (flexible-extract, 5-shot) | 96.82 | 96.36 | 99.52% |
+| GSM8K (flexible-extract, 5-shot) | 96.82 | 96.74 | 99.92% |
 
-No se han publicado resultados de otros benchmarks en la informacion disponible.
+Solo se ha publicado el resultado de GSM8K en la informacion disponible. No hay datos de MMLU, HumanEval ni otros benchmarks.
 
 ## Requisitos de hardware
-
-- GPU recomendadas: AMD Instinct MI350 o MI355 (microarquitectura CDNA 4). No se soportan GPUs de consumo.
-- VRAM estimada: no disponible con exactitud, pero el tamaño del repositorio (1505,9 GB) sugiere que se necesitan múltiples GPUs con memoria HBM de gran capacidad (por ejemplo, 8 GPUs MI355X con 288 GB cada una).
-- ROCm 7.1.1, PyTorch 2.10.0, Transformers 5.2.0, Linux.
-- Motor de inferencia: vLLM (con soporte ROCm) o SGLang.
-- Configuración típica: `--tensor-parallel-size 8`, `--gpu-memory-utilization 0.95`, `--mm-encoder-tp-mode data`.
-- No cabe en GPUs de consumo (RTX 4090, etc.) debido al tamaño y a la dependencia de instrucciones MXFP4 nativas de CDNA 4.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio ocupa 3024.1 GB, lo que exige almacenamiento y memoria agregada en el orden de terabytes para cargar los pesos.
+- GPU recomendadas: AMD Instinct MI350 y MI355, unicas microarquitecturas soportadas segun la model card.
+- Compatibilidad con GPU de consumo: no; el modelo no esta pensado para GPUs consumer y requiere ROCm 10.0.0.
+- Despliegue: SGLang con tp-size 8, dcp-size 8, backend de atencion aiter, kv-cache en fp8_e4m3, dtype bfloat16, mem-fraction-static 0.90 y cuda-graph-max-bs-decode 256.
+- Software: PyTorch 2.11.0, Transformers 5.19.0, ROCm 10.0.0, Linux; imagen Docker de referencia rocm/sgl-dev:v0.5.22-rocm10-mi35x-20261019.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware |
+| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Hardware |
 |---|---|---|---|---|---|
-| moonshotai/Kimi-K3 (base) | 1,41 billones (estimado) | no disponible | FP16/BF16 | kimi-k3 | GPUs NVIDIA/AMD |
-| amd/Kimi-K3-Quark-MXFP4-AttnFP8 | 1,41 billones | no disponible | MXFP4 + FP8 | kimi-k3 | AMD MI350/MI355 |
-| Otros modelos cuantizados de gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
+| amd/Kimi-K3-Quark-MXFP4-AttnFP8 | 1.418.198.090.496 | no disponible | MXFP4 + PTPC-FP8 + BF16 | kimi-k3 | AMD MI350/MI355 |
+| moonshotai/Kimi-K3 | no disponible | no disponible | BF16 (original) | kimi-k3 | no disponible |
+| Otros modelos de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos suficientes para una comparativa exhaustiva con alternativas de la misma categoría.
+La unica comparacion directa disponible es con el modelo base moonshotai/Kimi-K3, del que este checkpoint es una cuantizacion. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- La cuantización introduce una pérdida de precisión, aunque en GSM8K la recuperación es del 99,52%; en otras tareas podría ser menor.
-- Requiere hardware AMD específico (MI350/MI355) con ROCm 7.1.1; no es portable a GPUs NVIDIA sin modificaciones.
-- La licencia `kimi-k3` es personalizada y puede imponer restricciones de uso comercial; es necesario revisar sus términos antes de desplegar en producción.
-- No se han documentado sesgos específicos, pero al ser un modelo de gran escala entrenado con datos web, es probable que herede sesgos sociales y culturales.
-- Riesgo de alucinación en tareas de razonamiento o generación de código, especialmente con entradas ambiguas.
-- El tamaño del modelo (1505,9 GB en disco) implica costes de almacenamiento y transferencia elevados.
-- No se ha verificado el rendimiento en tareas multimodales más allá de GSM8K; los resultados en vídeo o imagen podrían diferir.
+- La licencia es "other" con nombre kimi-k3; es necesario revisar los terminos del modelo base antes de cualquier uso comercial.
+- El modelo esta restringido a hardware AMD MI350/MI355 con ROCm 10.0.0; no funciona en GPUs NVIDIA ni en consumer.
+- El esquema de cuantizacion MXFP4 y PTPC-FP8 puede introducir degradaciones en tareas no evaluadas; solo se ha verificado GSM8K con una recuperacion del 99.92%.
+- No hay informacion sobre sesgos, riesgo de alucinacion ni limitaciones de idioma del modelo base.
+- El tamano del repositorio (3024.1 GB) implica requisitos severos de almacenamiento y ancho de banda de carga.
+- El uso de --trust-remote-code es necesario para cargar el modelo, lo que implica ejecutar codigo personalizado del repositorio.
+- No se han publicado datos de latencia ni throughput, lo que dificulta estimar costes operativos.
 
 ## Enlaces
-
-- [Modelo en Hugging Face](https://huggingface.co/amd/Kimi-K3-Quark-MXFP4-AttnFP8)
-- [Modelo base moonshotai/Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3)
-- [Blog de Shakudo: despliegue de Kimi K3 en AMD GPUs](https://www.shakudo.io/blog/kimi-k3-amd-gpu-deployment)
-- [Blog de Hugging Face: Kimi K3 Model Overview](https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei)
-- [Artículo de AMD: Day 0 Kimi-K3 en AMD Instinct](https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-k3-on-amd-instinct-gpus.html)
-- [Artículo de AMD: Kimi Code en MXFP4](https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-code-in-mxfp4-on-amd-gpus.html)
+- Hugging Face: https://huggingface.co/amd/Kimi-K3-Quark-MXFP4-AttnFP8
+- Modelo base: https://huggingface.co/moonshotai/Kimi-K3
+- AMD-Quark: https://quark.docs.amd.com/latest/index.html
+- SGLang: https://docs.sglang.ai/
+- Guia de despliegue SGLang para Kimi-K3: https://lmsysorg.mintlify.app/cookbook/autoregressive/Moonshotai/Kimi-K3#deployment
+- lm-evaluation-harness: https://github.com/eleutherai/lm-evaluation-harness

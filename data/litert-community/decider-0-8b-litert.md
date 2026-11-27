@@ -2,107 +2,104 @@
 
 ## Resumen
 
-decider-0.8b-LiteRT es la conversión al formato LiteRT-LM del modelo Mapika/decider-0.8b, un modelo de decisión tipada derivado de Qwen/Qwen3.5-0.8B-Base. No es un modelo generativo al uso: en lugar de producir texto libre, recibe un estado (por ejemplo, el texto de un ticket de soporte) y una o varias preguntas tipadas, y devuelve probabilidades calibradas sobre las opciones de cada pregunta. Soporta tres tipos de decisión: elección entre 2 y 255 opciones, puntuación en 2-10 niveles y probabilidad de "sí" (noul).
+decider-0.8b-LiteRT es una conversión al formato LiteRT-LM del modelo Mapika/decider-0.8b, un modelo de decisión tipada afinado a partir de Qwen/Qwen3.5-0.8B-Base. No es un modelo generativo: no produce texto de respuesta, sino que recibe un estado (por ejemplo, el texto de un ticket de soporte) junto con preguntas tipadas y devuelve distribuciones de probabilidad calibradas sobre opciones discretas. Soporta tres tipos de decisión: elección entre 2 y 255 opciones, puntuación en 2 a 10 niveles y probabilidad de sí/no.
 
-El modelo resuelve el problema del enrutamiento y la clasificación estructurada con una sola pasada, sin decodificación autoregresiva de texto, lo que reduce latencia y elimina el riesgo de respuestas malformadas. Su arquitectura híbrida combina 18 capas de atención lineal (gated DeltaNet) con 6 capas de atención completa, sumando aproximadamente 0,8 mil millones de parámetros. La ventana de contexto por fila está limitada a 4096 tokens en esta exportación.
+La relevancia de esta conversión es que traslada un modelo de decisión estructurada al runtime LiteRT-LM, pensado para despliegue en CPU y GPU de dispositivos móviles y de escritorio. El repositorio incluye dos variantes de pesos (fp16 e int8 dinámico), un corpus de 40 fixtures sintéticos en inglés con sus salidas oráculo en fp32, y una implementación de referencia en CPU que reproduce el endpoint `/v1/systemone` del paquete decider original.
 
-La relevancia de esta ficha reside en que se trata de un artefacto de despliegue en dispositivo (on-device) para LiteRT-LM, con dos recetas de pesos (fp16 e int8 dinámico) y métricas de fidelidad numérica frente al oráculo fp32 upstream. Es una pieza de infraestructura para pipelines de decisión, no un asistente conversacional.
+El modelo es de tipo híbrido: 18 capas de atención lineal y 6 de atención completa, con un límite de 4096 tokens por fila renderizada en esta exportación. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 18 capas de atención lineal (gated DeltaNet) + 6 capas de atención completa |
-| Parametros totales | no disponible (modelo base de 0,8B; el repo ocupa 3,6 GB) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens por fila renderizada (máximo en esta exportación) |
-| Tipos de cuantizacion | FP16 (casting de pesos fully connected y embeddings, cómputo float) e int8 dinámico (pesos FC int8 + embedding int8 CHANNELWISE) |
-| Idiomas soportados | inglés (en) |
+| Arquitectura | Transformer híbrido (18 capas de atención lineal tipo gated DeltaNet + 6 capas de atención completa) |
+| Parametros totales | 0,8 mil millones (derivado de Qwen3.5-0.8B-Base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens máximo por fila renderizada en esta exportación |
+| Tipos de cuantizacion | FP16 (casting de pesos fully connected y embeddings, cómputo en float) e int8 dinámico (pesos FC int8 + embedding int8 CHANNELWISE) |
+| Idiomas soportados | inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM); requiere LiteRT-LM ≥ 0.15, verificado en 0.17.1 |
+| Formato de pesos | `.litertlm` (LiteRT-LM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido de 24 capas: 18 de atención lineal basadas en gated DeltaNet y 6 de atención completa. Esta combinación busca reducir el coste de atención en secuencias largas manteniendo capacidad de recuperación global. Las convoluciones y la regla delta permanecen en coma flotante en ambas exportaciones, mientras que las capas fully connected y los embeddings se cuantizan según la receta del fichero.
+La arquitectura es un transformer híbrido con 18 capas de atención lineal y 6 capas de atención completa, heredada de Qwen3.5-0.8B-Base y afinada por Mapika para la tarea de decisión tipada. El modelo no genera texto: en una sola pasada emite probabilidades sobre opciones discretas, con tres modalidades de pregunta (choice, score y noul). Una pregunta de tipo score se expande internamente en una fila sí/no por cada nivel.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO en la información proporcionada. El modelo upstream se presenta como un fine-tune de Qwen/Qwen3.5-0.8B-Base orientado a decisiones tipadas de una sola pasada con probabilidades calibradas. La innovación técnica destacable no está en el entrenamiento sino en el formato de inferencia: cada pregunta de tipo score se expande en una fila sí/no por nivel, y el motor implementa prefill fragmentado de ajuste exacto con una única decodificación final por fila.
-
-La conversión a LiteRT-LM incluye plantilla de prompt de identidad, sin token de inicio, token de parada 248044, ExecutorMetadata para 48 búferes de estado y preferencia de activaciones fp32. El lector de grafos de referencia usa ai-edge-litert 2.2.0.
+Los detalles de entrenamiento del modelo original (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la información proporcionada. La conversión LiteRT-LM sí documenta aspectos técnicos relevantes: prefill fragmentado con ajuste exacto, una decodificación final por fila, plantilla de prompt de identidad sin token de inicio, token de parada 248044, ExecutorMetadata para 48 buffers de estado y preferencia de activaciones en fp32. Las convoluciones y la regla delta permanecen en float en ambas variantes. Se requiere LiteRT-LM ≥ 0.15 para el binding generalizado de estado híbrido; las operaciones de describe y engine se verificaron en 0.17.1.
 
 ## Capacidades
 
-- Decisión de elección entre 2 y 255 opciones con probabilidades por opción.
-- Puntuación ordinal en 2-10 niveles (cada nivel se evalúa como una fila sí/no independiente).
-- Cálculo de probabilidad de "sí" (noul) para preguntas binarias.
-- Salida estructurada tipada: no genera texto de respuesta, solo distribuciones de probabilidad.
-- Procesamiento de estado más múltiples preguntas en una sola pasada.
-- Ejecución en CPU y GPU (Metal en Mac, GPU de Galaxy S26 probada) con el fichero int8.
-- Soporte de filas de hasta 4096 tokens; las filas muy largas (p. ej. elección de 255 opciones con 2844 tokens) deben enrutarse a CPU.
-- No soporta tool calling, agentes multi-paso, visión, audio ni modo thinking: es un clasificador de decisión, no un generador.
+- Clasificación de decisión tipada: elección entre 2 y 255 opciones con probabilidades calibradas por opción.
+- Puntuación ordinal en 2 a 10 niveles (cada nivel se evalúa como una fila sí/no independiente).
+- Probabilidad de sí/no sobre una pregunta binaria (modalidad noul).
+- Salida estructurada con probabilidades, no texto libre: el consumidor lee directamente las probabilidades de las opciones.
+- Procesamiento de estado textual en una sola pasada, sin generación autorregresiva de respuesta.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (el modelo no genera texto ni cadenas de razonamiento).
+- Capacidades multilingües: no; solo inglés.
+- Capacidades especiales: modo thinking, visión y audio no disponibles.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: dado el texto del ticket como estado, se pregunta qué equipo debe gestionarlo (elección entre departamentos) y si se ha solicitado reembolso (noul). El ejemplo incluido asigna probabilidad 0,9996 a facturación y 0,9611 a solicitud de reembolso.
-- Triaje de urgencia en atención al cliente: una pregunta de tipo score de 2-10 niveles estima el grado de frustración del usuario a partir del historial de conversación, permitiendo priorizar la cola.
-- Moderación de contenido con umbrales calibrados: preguntas binarias sobre categorías de riesgo, usando la probabilidad de "sí" como señal continua en lugar de una etiqueta dura.
-- Clasificación de intención en asistentes de voz o chatbots: elección entre un conjunto acotado de intenciones (2-255) con probabilidades que alimentan una política de fallback cuando la confianza es baja.
-- Decisión en pipelines de automatización documental: puntuar la calidad o completitud de un formulario y decidir si requiere revisión humana, con el modelo ejecutándose en el propio dispositivo.
-- Filtrado previo en sistemas RAG: decidir si un fragmento recuperado responde a la consulta (noul) antes de invocar a un modelo generativo mayor, ahorrando coste y latencia.
-- Inferencia on-device en Android: el fichero int8 corre en CPU y en la GPU del Galaxy S26 probado, habilitando clasificación local sin conexión.
+- Enrutamiento de tickets de soporte: se pasa el texto del ticket como estado y una pregunta de tipo choice con las colas o equipos disponibles; el modelo devuelve la probabilidad de cada destino. El ejemplo incluido en el repositorio asigna probabilidad 0,9996 a facturación para un ticket de cobro duplicado.
+- Detección de intención de reembolso: pregunta de tipo noul sobre si el cliente ha solicitado un reembolso; en el ejemplo de referencia la probabilidad es 0,9611. Adecuado porque evita generar texto y expone directamente la probabilidad calibrada.
+- Medición de frustración del cliente: pregunta de tipo score de 2 a 10 niveles para priorizar colas de atención según el nivel de enfado detectado.
+- Triaje de formularios y correos entrantes: clasificación en un conjunto cerrado de categorías operativas (facturación, técnico, comercial, etc.) con umbrales de confianza configurables por el sistema consumidor.
+- Moderación o etiquetado binario a escala: preguntas sí/no sobre presencia de determinados atributos en un texto, con la ventaja de que el coste por inferencia es de una sola pasada y el modelo cabe en CPU.
+- Enrutamiento en el borde (edge): despliegue en Android CPU/GPU o Mac Metal con el archivo int8 de 963 MB para decidir localmente sin enviar datos a un servidor; útil cuando la latencia o la privacidad impiden llamar a un modelo grande.
+- Automatización de encuestas y feedback: conversión de respuestas abiertas en puntuaciones ordinales normalizadas para agregación estadística.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los datos publicados son mediciones de acuerdo de conversión frente al oráculo fp32 upstream sobre 40 fixtures sintéticos en inglés (120 filas independientes, incluida una elección de 255 opciones), con temperatura T = 1,03:
+No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El repositorio sí incluye mediciones de acuerdo de conversión frente al oráculo fp32 upstream sobre 120 filas independientes generadas a partir de 40 fixtures sintéticos en inglés (incluida una elección de 255 opciones), con temperatura T = 1,03:
 
-| Fichero | Backend / esquema | Filas | Argmax idéntico | Máx \|Δp\| | p95 \|Δp\| | Mediana \|Δp\| | Filas > 0,02 |
+| Archivo | Backend / esquema | Filas | Argmax idéntico | Máx \|Δp\| | p95 \|Δp\| | Mediana \|Δp\| | Filas > 0,02 |
 |---|---|---|---|---|---|---|---|
-| fp16 | CPU / ajuste exacto | 120 | 120/120 | 6,62e-06 | 3,07e-06 | 1,19e-07 | 0 |
-| int8 | CPU / ajuste exacto | 120 | 117/120 | 0,160 | 0,068 | 0,0021 | 27 |
-| int8 | CPU / un prefill con padding | 119 | 116/119 | 0,129 | 0,071 | 0,0018 | 25 |
-| int8 | GPU Metal / un prefill con padding | 119 | 118/119 | 0,073 | 0,025 | 0,00054 | 10 |
+| fp16 | CPU / exact-fit | 120 | 120/120 | 6,62e-06 | 3,07e-06 | 1,19e-07 | 0 |
+| int8 | CPU / exact-fit | 120 | 117/120 | 0,160 | 0,0679 | 0,00210 | 27 |
+| int8 | CPU / un prefill con padding | 119 | 116/119 | 0,129 | 0,0709 | 0,00181 | 25 |
+| int8 | Metal GPU / un prefill con padding | 119 | 118/119 | 0,0732 | 0,0250 | 0,000545 | 10 |
 
-El fichero int8 difiere del fp32 porque sus capas fully connected cuantizan dinámicamente las activaciones. En fp16, la CLI de referencia coincide con las 40 respuestas de fixture dentro de 1e-4 tras el redondeo upstream (36 exactas). Estas cifras miden acuerdo de conversión, no calibración sobre tráfico real ni precisión de tarea.
+Estas cifras miden acuerdo de conversión, no calibración sobre tráfico real ni precisión de tarea. El archivo int8 difiere del fp32 porque cuantiza dinámicamente las activaciones en las capas fully connected. La fila de 2844 tokens (elección amplia, G01/00) queda excluida de las comprobaciones con padding; su error histórico en GPU int8 multi-chunk fue 0,0238454 y debe enrutarse a CPU. La calibración de probabilidades en Android no se midió.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el fichero fp16 ocupa 1.625.055.920 bytes (~1,6 GB) y el int8 963.280.896 bytes (~0,96 GB); el repo completo son 3,6 GB.
-- CPU: ambos ficheros están pensados para ejecución en CPU; el fp16 es la referencia recomendada para fidelidad de probabilidades en escritorio.
-- GPU: el int8 se ha verificado en Metal de Mac y en la GPU del Galaxy S26. Para lectura de decisión en GPU es obligatoria la regla de un solo chunk.
-- GPU de consumo: no se especifican modelos concretos (RTX 4090, A100, H100) en la información disponible; el diseño apunta a dispositivo y CPU, no a servidores de datacenter.
-- Despliegue: LiteRT-LM ≥ 0.15 (verificado en 0.17.1) con ai-edge-litert 2.2.0 para el lector de grafos de referencia. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El diseño de una sola pasada con una decodificación final por fila minimiza el coste frente a generación autoregresiva.
+- VRAM/RAM: el archivo fp16 ocupa 1.625.055.920 bytes (unos 1,6 GB) y el int8 963.280.896 bytes (unos 963 MB). El repo completo pesa 3,6 GB.
+- GPU recomendadas: no se especifican modelos de datacenter; el repositorio documenta funcionamiento en CPU, Mac Metal y GPU de Galaxy S26.
+- Cabe en GPU de consumo: sí, por tamaño; el runtime objetivo es LiteRT-LM, no stacks de servidor.
+- Opciones de despliegue: LiteRT-LM ≥ 0.15 (verificado en 0.17.1) con ai-edge-litert 2.2.0 para el lector de grafo de referencia; incluye una implementación de referencia en CPU (`reference/systemone_litert.py`).
+- Latencia y throughput: no disponibles. El diseño hace un prefill fragmentado con ajuste exacto y una única decodificación final por fila, lo que reduce el coste por decisión, pero no se publican cifras.
+- Recomendación de variante: fp16 para fidelidad de probabilidades en escritorio/CPU; int8 para Android CPU/GPU. En GPU, la lectura de decisión requiere la regla de un solo chunk.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-0.8b-LiteRT | ~0,8B (híbrido) | 4096 tokens/fila | Probabilidades tipadas | Apache 2.0 | LiteRT-LM (.litertlm) |
-| Mapika/decider-0.8b (upstream) | ~0,8B | no disponible | Probabilidades tipadas | no disponible | PyTorch (referencia fp32) |
-| Qwen/Qwen3.5-0.8B-Base | ~0,8B | no disponible | Texto generativo | no disponible | safetensors |
-| litert-community/Qwen3.5-0.8B | ~0,8B | no disponible | Texto generativo | no disponible | LiteRT-LM (fp16/int8) |
+| decider-0.8b-LiteRT | 0,8 B | 4096 tokens por fila | Probabilidades sobre opciones tipadas | Apache 2.0 | LiteRT-LM, HF |
+| Mapika/decider-0.8b (upstream) | 0,8 B | no disponible | Probabilidades sobre opciones tipadas | Apache 2.0 (según base) | PyTorch, HF |
+| Qwen/Qwen3.5-0.8B-Base | 0,8 B | no disponible | Texto generativo | no disponible en la información | HF |
 
-La diferencia clave frente a los modelos generativos de la misma familia es que decider no produce texto: sustituye la decodificación por una lectura directa de probabilidades sobre opciones predefinidas, lo que lo hace adecuado para decisiones auditables y de baja latencia, pero inútil para generación abierta.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que no es posible comparar rendimiento de tarea.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no hay soporte multilingüe declarado.
-- No genera texto; cualquier caso de uso que requiera explicaciones o respuestas redactadas necesita un modelo adicional.
-- El fichero int8 pierde fidelidad probabilística: hasta 27 de 120 filas con desviación máxima superior a 0,02 en CPU. Para decisiones sensibles a la calibración debe usarse fp16.
-- Las filas largas (como la elección de 255 opciones con 2844 tokens) deben enrutarse a CPU; el error histórico multi-chunk en GPU fue de 0,0238.
-- La calibración de probabilidades en Android no se ha medido; los resultados en Galaxy S26 solo demuestran funcionamiento del runtime.
-- Las métricas publicadas son de acuerdo de conversión, no de precisión sobre tareas reales ni de calibración con tráfico de producción.
-- Riesgo de sesgo y alucinación no evaluado en la información disponible; al no generar texto, el riesgo de alucinación textual es nulo, pero las probabilidades pueden estar mal calibradas fuera de la distribución de entrenamiento.
-- Licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base upstream, no indicada en esta información.
-- Requiere LiteRT-LM ≥ 0.15; versiones anteriores no soportan el binding de estado híbrido generalizado.
+- El modelo no genera texto: cualquier caso de uso que requiera explicaciones, resúmenes o respuestas redactadas necesita un modelo generativo adicional.
+- Solo inglés declarado; el rendimiento en otros idiomas no está evaluado.
+- Límite de 4096 tokens por fila renderizada; las filas largas (como la de 2844 tokens del corpus) deben enrutarse a CPU en despliegues int8.
+- La variante int8 puede alterar el argmax en 3 de 120 filas en CPU exact-fit y presenta 27 filas con desviación superior a 0,02; no es adecuada si la fidelidad de probabilidad es crítica.
+- Las mediciones publicadas son de acuerdo de conversión, no de calibración sobre tráfico real ni de precisión de tarea; no hay evaluación de sesgos ni de alucinación (el modelo no genera texto, pero sí puede asignar probabilidades erróneas).
+- La calibración de probabilidades en Android no se midió; los resultados en Galaxy S26 solo demuestran funcionamiento del runtime.
+- Requiere LiteRT-LM ≥ 0.15; versiones anteriores no soportan el binding de estado híbrido.
+- Licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen3.5-0.8B-Base, no disponible en la información proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/decider-0.8b-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/decider-0.8b-LiteRT
 - Modelo base upstream: https://huggingface.co/Mapika/decider-0.8b
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- Conversión LiteRT de Qwen3.5-0.8B: https://huggingface.co/litert-community/Qwen3.5-0.8B
+- Conversión int8 de referencia de Qwen3.5-0.8B: https://huggingface.co/litert-community/Qwen3.5-0.8B
 - Checksums: https://huggingface.co/litert-community/decider-0.8b-LiteRT/blob/main/SHA256SUMS
-- Ejemplo de petición: reference/fixtures/systemone_example.json (en el repo)
-- Corpus de fixtures: reference/fixtures/fixtures.json (en el repo)
-- Salidas oráculo fp32: reference/fixtures/oracle_fp32.json (en el repo)
-- Implementación de referencia CPU: reference/systemone_litert.py (en el repo)
+- Ejemplo de petición: `reference/fixtures/systemone_example.json` (en el repositorio)
+- Corpus de fixtures: `reference/fixtures/fixtures.json` (en el repositorio)
+- Salidas oráculo fp32: `reference/fixtures/oracle_fp32.json` (en el repositorio)
+- Implementación de referencia CPU: `reference/systemone_litert.py` (en el repositorio)

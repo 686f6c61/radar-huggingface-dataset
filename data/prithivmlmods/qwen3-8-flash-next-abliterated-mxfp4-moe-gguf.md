@@ -2,64 +2,60 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF es una cuantizacion GGUF en formato MXFP4_MOE del modelo multimodal Qwen3.8-Flash-Next de Alibaba Qwen, publicada por el usuario prithivMLmods. Se trata de una variante "abliterated", es decir, con el comportamiento de rechazo mitigado mediante la modificacion de las direcciones de rechazo en los pesos, y cuantizada en FP4 microscaling para aprovechar los Tensor Cores FP4 nativos de la arquitectura NVIDIA Blackwell (SM120, GB202, B200, B300).
+Qwen3.8-Flash-Next es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Qwen (Alibaba) y publicado como vista previa arquitectónica experimental de la familia Qwen4. Combina 125.000 millones de parámetros en el núcleo (con 6.000 millones activados por token, repartidos entre 10 expertos enrutados y 1 compartido de un total de 512) con 51.000 millones de parámetros de embeddings n-gram orientados a offload y una cabeza de predicción multi-token (MTP) de 4.000 millones, además de un codificador visual. Esta ficha describe la variante cuantizada y "abliterated" publicada por el usuario prithivMLmods.
 
-El modelo base es un Mixture-of-Experts multimodal de aproximadamente 177.000 millones de parametros totales, con 125.000 millones de parametros nucleo, 6.000 millones activados por token a traves de 10 expertos enrutados y 1 compartido de un total de 512, mas 51.000 millones de parametros de embeddings n-gram orientados a offload y una cabeza de prediccion multi-token (MTP) de 4.000 millones junto a un codificador de vision. Incorpora una ventana de contexto nativa de 262.144 tokens extensible a 1 millon mediante YaRN, y acepta entradas de texto, imagen y video de hasta horas de duracion.
+La relevancia de esta publicación es doble. Por un lado, el modelo base incorpora innovaciones de arquitectura orientadas a latencia en contexto largo: atención híbrida que intercala Gated DeltaNet con Qwen Sparse Attention (QSA) a nivel de bloque, flujos de residuo con compuertas (Gated Residual) y una ventana de contexto nativa de 262.144 tokens extensible a 1 millón mediante YaRN. Por otro, esta versión concreta aplica una cuantización MXFP4_MOE optimizada para aceleradores NVIDIA Blackwell y un proceso de "abliteration" (eliminación de rechazos) que convierte el modelo en una variante sin censura.
 
-La relevancia de esta publicacion es doble: por un lado, permite ejecutar un modelo MoE multimodal de gran tamano en hardware Blackwell consumer y profesional con un unico fichero de 124 GB; por otro, documenta metricas de inferencia reales con llama.cpp sobre dos RTX PRO 6000 Blackwell (192 GB de VRAM combinada), alcanzando 103,20 tokens/s de generacion. La licencia del modelo base es la Qwen Community 1.0, mientras que la model card de esta cuantizacion declara apache-2.0, una discrepancia que conviene verificar antes de un uso comercial.
+El resultado es un artefacto de 132,7 GB distribuido en formato GGUF, pensado para inferencia local con llama.cpp sobre GPUs Blackwell (RTX 50-series, RTX Pro 6000, B200, B300). Incluye decodificación especulativa nativa mediante MTP, sin necesidad de un modelo borrador separado. Se distribuye bajo licencia Qwen Community 1.0 y solo declara soporte para inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal con atencion hibrida (Gated DeltaNet + Qwen Sparse Attention), Gated Residual y cabeza MTP |
-| Parametros totales | 176.943.899.520 (aprox. 177B) |
-| Parametros activos | 6B por token (10 expertos enrutados + 1 compartido de 512) |
-| Longitud de contexto | 262.144 tokens nativos; extensible a 1M con YaRN |
-| Tipos de cuantizacion | MXFP4_MOE (pesos principales); mmproj en BF16 |
-| Idiomas soportados | Ingles (segun metadatos de la model card) |
-| Licencia | apache-2.0 declarada en esta cuantizacion; Qwen Community 1.0 en el modelo base |
-| Formato de pesos | GGUF (MXFP4_MOE) + mmproj BF16 para vision |
-| Tamano del repositorio | 125,0 GB |
-| Parametros nucleo | 125B (mas 51B de embeddings n-gram y 4B de cabeza MTP) |
-| Capas | 48 |
-| Entradas multimodales | Texto, imagen y video de escala horaria |
-| Hardware objetivo | NVIDIA Blackwell (SM120, GB202, RTX PRO 6000, RTX 50-series, B200, B300) |
+| Arquitectura | Transformer MoE multimodal con atención híbrida (Gated DeltaNet + Qwen Sparse Attention), Gated Residual y cabeza MTP; codificador visual |
+| Parámetros totales | 176.943.899.520 (176,9 B, según safetensors); 125 B de núcleo + 51 B de embeddings n-gram + 4 B de cabeza MTP |
+| Parámetros activos | 6 B por token (10 expertos enrutados + 1 compartido de 512) |
+| Longitud de contexto | 262.144 tokens nativos; extensible a 1.000.000 con YaRN |
+| Tipos de cuantización | MXFP4_MOE (principal), BF16 (MTP y mmproj) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Qwen Community 1.0 (license: other) |
+| Formato de pesos | GGUF (llama.cpp); MTP en BF16 y proyector multimodal mmproj-bf16 en GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base emplea una arquitectura MoE multimodal de 48 capas con una disposicion de atencion hibrida que intercala Gated DeltaNet (atencion lineal con estado recurrente) con Qwen Sparse Attention (QSA) a nivel de bloque, con el objetivo de reducir la latencia en contextos largos. Incorpora ademas flujos Gated Residual multirrama para estabilidad del entrenamiento y una cabeza de prediccion multi-token (MTP) de 4.000 millones de parametros, habitual en estrategias de decodificacion especulativa. El codificador de vision se distribuye en un fichero mmproj separado en BF16 para su uso con llama.cpp.
+El modelo base es un MoE multimodal con 48 capas que intercala dos mecanismos de atención: Gated DeltaNet y Qwen Sparse Attention (QSA) a nivel de bloque. Esta disposición híbrida busca reducir la latencia en contextos largos sin sacrificar capacidad de recuperación de información. Los flujos Gated Residual multi-rama están diseñados para mejorar la estabilidad del entrenamiento en profundidad, y la ventana de contexto nativa de 262.144 tokens puede ampliarse a 1 millón mediante YaRN.
 
-La cuantizacion MXFP4_MOE aplica microescalado de bloque (microscaling) a los pesos del MoE, un formato soportado de forma nativa por los Tensor Cores FP4 de Blackwell. Esto permite reducir el peso del modelo a 124 GB manteniendo precisiones razonables en los expertos, mientras que las proyecciones multimodales se conservan en BF16. La variante "abliterated" implica que el autor ha modificado los pesos para reducir la tendencia al rechazo de peticiones, un proceso que suele realizarse mediante tecnicas de abliteracion sobre las direcciones de rechazo en el espacio de activaciones. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO en el modelo base.
+La cabeza de predicción multi-token (MTP) actúa como mecanismo de decodificación especulativa: predice varios tokens futuros en una sola pasada hacia delante y sirve de "drafter" sin requerir un modelo borrador independiente. En este repositorio, los pesos MTP se distribuyen como archivo GGUF BF16 separado (7,77 GB) que se carga junto al modelo principal. El modelo acepta entradas de texto, imagen y vídeo de escala horaria.
+
+No se dispone en la información proporcionada de datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base. La variante aquí descrita incorpora además un proceso de "abliteration" (etiquetas `abliterated`, `heretic`, `uncensored`, `decensored`) del que no se detalla la metodología exacta.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con contexto nativo de 262.144 tokens.
-- Razonamiento configurable mediante el modo `<think>`, con parametros `enable_thinking`, `preserve_thinking` y `reasoning_effort`.
-- Comprension de imagenes y video de escala horaria a traves del codificador de vision y el fichero mmproj.
-- Generacion de codigo y tareas de ingenieria de software, con soporte para agentes de codificacion (SWE-bench Pro, DeepSWE).
-- Uso de ordenador y agentes interactivos (AndroidWorld, computer use).
-- Razonamiento matematico y cientifico de nivel avanzado (GPQA Diamond, MathVision).
-- Capacidades multilingues parciales segun los benchmarks del modelo base (SWE-bench Multilingual), aunque los metadatos solo declaran ingles.
-- Prediccion multi-token (MTP) que habilita decodificacion especulativa interna.
-- Compatibilidad con `Transformers`, `vLLM`, `SGLang` y `TokenSpeed` segun la model card del modelo base.
-- Al ser una variante abliterated, reduce el rechazo ante peticiones que el modelo original declinaria.
+- Generación de texto y razonamiento con modo de pensamiento configurable mediante `enable_thinking`, `preserve_thinking` y `reasoning_effort`.
+- Razonamiento matemático y resolución de problemas aritméticos multi-paso (verificado en el ejemplo de llama.cpp incluido en la model card).
+- Codificación agéntica: el modelo base reporta resultados en DeepSWE 1.1 y SWE-bench Pro y Multilingual.
+- Capacidades multimodales: entrada de imagen y vídeo de escala horaria mediante el proyector `mmproj-bf16`.
+- Uso de ordenador y agentes (AndroidWorld en el modelo base).
+- Decodificación especulativa nativa mediante MTP, con aceleración de inferencia local.
+- Soporte de contexto largo de hasta 262.144 tokens (1 M con YaRN).
+- Variante sin censura ("abliterated"): menor tasa de rechazos ante peticiones que el modelo base declinaría.
+- No se documenta soporte explícito de tool calling ni function calling en la información disponible.
 
 ## Casos de uso
 
-- Asistencia de codificacion en produccion: el modelo puede integrarse en pipelines de CI/CD para revision de parches, generacion de tests y refactorizacion, aprovechando su rendimiento en SWE-bench Pro (62,5) y LiveCodeBench v6 (91,9) y su soporte de tool calling.
-- Agentes autonomos de navegacion y computer use: con 84,5 en AndroidWorld, es adecuado para automatizar flujos de interfaz grafica en entornos controlados, combinando vision y razonamiento multi-paso.
-- Analisis de documentos largos y contratos: la ventana de 262.144 tokens permite procesar expedientes completos o bases de codigo extensas en una sola pasada, con extension a 1M mediante YaRN para casos extremos.
-- Inspeccion de video de vigilancia o grabaciones de reunion: la entrada de video de escala horaria permite resumir, indexar y extraer eventos de grabaciones largas sin fragmentacion manual.
-- Razonamiento cientifico y matematico asistido: con 91,7 en GPQA Diamond y 95,7 en MathVision con interprete de codigo, es util para tutoria tecnica, verificacion de derivaciones y resolucion de problemas con apoyo de herramientas.
-- Despliegue on-premise en hardware Blackwell: el fichero MXFP4_MOE de 124 GB cabe en dos RTX PRO 6000 (192 GB) o en un B200/B300, permitiendo inferencia local sin dependencia de API para datos sensibles.
-- Investigacion sobre alineacion y abliteracion: la variante permite estudiar el comportamiento del modelo sin rechazo, comparando respuestas frente al original en tareas de seguridad y evaluacion de sesgos.
+- Inferencia local en estación de trabajo Blackwell: desplegar el GGUF MXFP4_MOE con llama.cpp sobre una RTX 5090 o RTX Pro 6000 aprovecha los Tensor Cores FP4 nativos y la decodificación especulativa MTP para reducir la latencia por token en comparación con cuantizaciones de mayor precisión.
+- Análisis de documentos extensos: con 262.144 tokens de contexto nativo, el modelo puede procesar contratos, informes o bases de código completas en una sola pasada sin fragmentación, útil para resumen y extracción de entidades.
+- Comprensión de vídeo de larga duración: la entrada de vídeo de escala horaria permite tareas de descripción, indexación o control de calidad sobre grabaciones extensas.
+- Investigación sobre alineación y censura: la variante abliterated sirve para estudiar el comportamiento del modelo ante peticiones sensibles y comparar la distribución de rechazos frente al modelo base.
+- Asistencia en codificación agéntica: los resultados del modelo base en SWE-bench Pro y Multilingual lo sitúan como candidato para pipelines de reparación automática de código, aunque en esta variante cuantizada conviene validar la degradación.
+- Prototipado de agentes de uso de ordenador: el rendimiento reportado en AndroidWorld en el modelo base permite experimentar con automatización de interfaces, siempre que el hardware soporte la cuantización FP4.
+- Evaluación de cuantizaciones MXFP4: el repositorio permite medir la pérdida de calidad frente a BF16 en tareas de razonamiento y matemáticas, dado que incluye el mismo modelo en distintas precisiones.
 
 ## Benchmarks y rendimiento
 
-Resultados del modelo base segun la model card (no especificos de esta cuantizacion):
+Los siguientes resultados corresponden al modelo base Qwen3.8-Flash-Next según la model card; no se han publicado mediciones específicas de esta variante cuantizada MXFP4 ni de la versión abliterated.
 
-| Benchmark | Resultado |
+| Benchmark | Resultado (modelo base) |
 |---|---|
 | DeepSWE 1.1 | 58,7 |
 | SWE-bench Pro | 62,5 |
@@ -67,55 +63,43 @@ Resultados del modelo base segun la model card (no especificos de esta cuantizac
 | AndroidWorld | 84,5 |
 | GPQA Diamond | 91,7 |
 | LiveCodeBench v6 | 91,9 |
-| MathVision (con interprete de codigo) | 95,7 |
+| MathVision (con intérprete de código) | 95,7 |
 
-Metricas de inferencia de esta cuantizacion (llama.cpp, 2x RTX PRO 6000 Blackwell, contexto 16.384, KV cache q8_0, sin decodificacion especulativa, 5 ejecuciones):
-
-| Metrica | Valor |
-|---|---|
-| Velocidad media de procesamiento de prompt | 123,64 tokens/s |
-| Velocidad media de generacion | 103,20 tokens/s |
-| Tiempo total de ejecucion | 87,6 s |
-| VRAM pico combinada | 66,80 GiB (34,39 + 32,41 GiB) |
-| Uso pico de GPU | 63% (GPU 1) / 48% (GPU 0) |
-| Capas offloaded | Auto (`-ngl auto`) |
-
-No se han publicado resultados de benchmarks especificos para la variante abliterated ni para la cuantizacion MXFP4 en la informacion disponible.
+No se han publicado resultados de benchmarks de esta variante cuantizada en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero GGUF principal ocupa 124 GB, por lo que se necesita al menos esa capacidad mas overhead de KV cache. En la prueba documentada con contexto de 16.384 tokens y KV cache q8_0, el pico fue de 66,80 GiB combinados gracias al offload automatico de capas.
-- GPU recomendadas: NVIDIA Blackwell con soporte FP4 nativo, como RTX PRO 6000 Blackwell (96 GB), B200, B300 y RTX 50-series con VRAM suficiente. El formato MXFP4_MOE esta optimizado para SM120/GB202.
-- Viabilidad en GPU consumer: no cabe en una unica GPU consumer de 24 GB. Requiere configuraciones multi-GPU o GPUs profesionales de 96 GB. En RTX 4090 o similares seria necesario offload masivo a RAM, con caida severa de rendimiento.
-- Opciones de despliegue: llama.cpp (probado), y segun el modelo base, Transformers, vLLM, SGLang y TokenSpeed. El fichero mmproj BF16 es necesario para las capacidades de vision en llama.cpp.
-- Latencia y throughput: 103,20 tokens/s de generacion y 123,64 tokens/s de procesamiento de prompt en la configuracion de dos RTX PRO 6000 con contexto de 16K. El rendimiento en contextos de 262K o 1M no esta documentado y previsiblemente sera mucho menor.
+- El archivo principal MXFP4_MOE ocupa 124 GB; el MTP BF16, 7,77 GB; el proyector multimodal, 908 MB. El repositorio completo son 132,7 GB.
+- VRAM estimada para inferencia: superior a 124 GB solo para los pesos del modelo principal; hay que sumar la caché KV, que con 262.144 tokens de contexto resulta considerable y puede mitigarse con `--cache-type-k q8_0`.
+- GPU recomendadas: NVIDIA Blackwell, es decir, RTX Pro 6000, RTX 50-series (RTX 5090), B200 y B300, por el soporte nativo de Tensor Cores FP4 (SM120, GB202).
+- No cabe en GPUs de consumo de gama media ni en configuraciones de 24 GB; requiere hardware de gama profesional o de centro de datos, o bien offload a RAM/CPU con penalización severa de latencia.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server) con `--spec-type draft-mtp`; el modelo base es compatible con Transformers, vLLM, SGLang y TokenSpeed, aunque esta cuantización GGUF está pensada para llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada; la decodificación especulativa MTP con `--spec-draft-n-max 2` está orientada a reducirla.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (abliterated MXFP4) | 177B | 6B | 262K (1M YaRN) | apache-2.0 / Qwen Community 1.0 | GGUF MXFP4 |
-| Qwen3.8-Flash-Next (original) | 177B | 6B | 262K (1M YaRN) | Qwen Community 1.0 | safetensors |
-| Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone en la informacion proporcionada de datos de benchmarks comparativos directos con otros modelos de la misma categoria, por lo que la comparativa se limita a las variantes del propio modelo base.
+| Qwen3.8-Flash-Next (base) | 176,9 B totales / 6 B activos | 262.144 (1 M con YaRN) | Qwen Community 1.0 | safetensors | Modelo original, sin cuantizar ni abliterated |
+| Esta variante (abliterated MXFP4) | 176,9 B totales / 6 B activos | 262.144 (1 M con YaRN) | Qwen Community 1.0 | GGUF | Cuantización FP4 para Blackwell y eliminación de rechazos |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información de modelos comparables en la documentación proporcionada |
 
 ## Limitaciones y advertencias
 
-- La variante abliterated elimina o reduce los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido danino, sesgado o inapropiado sin filtros. No es adecuada para despliegues publicos sin moderacion adicional.
-- Riesgo de alucinacion inherente a los modelos de gran escala, agravado potencialmente por la cuantizacion FP4 y la modificacion de pesos.
-- Los metadatos solo declaran soporte de ingles; el rendimiento en castellano no esta verificado y podria degradarse.
-- Discrepancia de licencia: la cuantizacion declara apache-2.0, pero el modelo base se distribuye bajo Qwen Community 1.0, que impone restricciones adicionales para uso comercial. Conviene verificar la licencia aplicable antes de producción.
-- El formato MXFP4_MOE esta optimizado para Blackwell; en hardware anterior (Ampere, Hopper) el rendimiento y la compatibilidad pueden ser limitados.
-- El contexto de 1M tokens via YaRN no esta validado en esta cuantizacion y el coste de memoria de KV cache a esa longitud es prohibitivo en configuraciones consumer.
-- El modelo ocupa 124 GB, lo que limita su despliegue a infraestructura con multiples GPUs o GPUs profesionales de alta capacidad.
-- No hay informacion sobre el proceso de cuantizacion, la perdida de calidad respecto al original ni evaluaciones de la variante abliterated.
+- Solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- La cuantización MXFP4 introduce pérdida de precisión frente a BF16; los benchmarks reportados corresponden al modelo base y no a esta variante.
+- El proceso de abliteration altera el comportamiento de rechazo del modelo: puede generar contenido que el modelo original declinaría, con implicaciones legales y de seguridad en producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje; el modo de razonamiento extendido no elimina este riesgo.
+- La licencia Qwen Community 1.0 impone condiciones específicas de uso comercial que deben revisarse antes de desplegar el modelo en productos.
+- El tamaño de 124 GB limita el despliegue a hardware Blackwell de gama alta; no es viable en GPUs de consumo convencionales.
+- No se documenta soporte de tool calling ni function calling, lo que limita su uso en pipelines agénticos que dependan de APIs externas.
+- La información sobre datos de entrenamiento, metodología de abliteration y evaluación de la variante cuantizada es inexistente en la documentación disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Fichero GGUF principal: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF/blob/main/Qwen3.8-Flash-Next-abliterated.MXFP4_MOE.gguf
-- Fichero mmproj BF16: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF/blob/main/Qwen3.8-Flash-Next.mmproj-bf16.gguf
-- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
-- Perfil del autor: https://huggingface.co/prithivMLmods
+- Licencia Qwen Community 1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Archivo MTP BF16: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF/blob/main/Qwen3.8-Flash-Next-MTP.BF16.gguf
+- Archivo principal MXFP4_MOE: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF/blob/main/Qwen3.8-Flash-Next-abliterated.MXFP4_MOE.gguf
+- Proyector multimodal: https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF/blob/main/Qwen3.8-Flash-Next.mmproj-bf16.gguf

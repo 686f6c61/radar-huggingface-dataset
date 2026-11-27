@@ -2,113 +2,111 @@
 
 ## Resumen
 
-Qwen3.5-9B-MLX-Q5-KQuant es una cuantización de 5 bits del modelo multimodal Qwen/Qwen3.5-9B, publicada por el usuario nace-ai mediante su framework propio de cuantización KQuant. El paquete está diseñado específicamente para MLX, el framework de Apple para ejecutar modelos en silicio unificado (M-series), y conserva tanto la torre de visión del modelo base como el tokenizador y la plantilla de chat originales, byte por byte.
+Qwen3.5-9B-MLX-Q5-KQuant es una cuantización de 5 bits en formato MLX del modelo Qwen/Qwen3.5-9B, publicada por nace-ai (Nace.AI) para su ejecución en Macs con Apple Silicon. El modelo base es un transformer multimodal de 9.409.813.744 parámetros (unos 9,4 mil millones) con capacidad image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto. Esta ficha se centra en el pack cuantizado, que conserva el tokenizador y la plantilla de chat del modelo original byte a byte.
 
-El modelo base Qwen3.5-9B es un transformer multimodal de tipo image-text-to-text con 9.409.813.744 parámetros totales, orientado a conversación, razonamiento y uso de herramientas. Esta versión cuantizada reduce los pesos del modelo de lenguaje a 6,21 GB (5,551 bits por peso de media) manteniendo la torre de visión intacta (912.020.960 bytes, 333 tensores fijados por hash), lo que permite ejecutar un modelo multimodal de casi 9.400 millones de parámetros en equipos con memoria unificada moderada.
+La relevancia de este pack reside en su método de cuantización: Nace.AI ajusta cada grupo de pesos contra el comportamiento del modelo sobre texto real, no solo contra los valores de los pesos, y produce un pack MLX estándar sin dependencias adicionales. Según la model card, el pack alcanza una divergencia KL de 0,0097 respecto al modelo BF16 en texto original y de 0,0474 en texto de chat y tool-call, con 6,21 GB de pesos del modelo de lenguaje a 5,551 bits por peso de media.
 
-La relevancia de esta ficha reside en su enfoque de evaluación: el autor no solo mide el error de cuantización sobre los pesos, sino la divergencia KL de las distribuciones de siguiente token frente al modelo bf16 original, tanto en texto genérico (0,0097) como en texto de chat y tool-calls (0,0474). Además, reporta 20 de 20 ensayos de tool-calling correctos con el modo thinking desactivado, lo que aporta evidencia empírica sobre la viabilidad del pack para flujos agénticos.
+El pack está pensado exclusivamente para inferencia en Apple Silicon mediante la librería MLX (mlx-lm), no para GPU NVIDIA ni para llama.cpp. El modelo piensa antes de responder por defecto (modo thinking), y la model card recomienda hasta 32.768 tokens de salida para la mayoría de tareas con el razonamiento activado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) del modelo base Qwen3.5-9B; cuantización MLX KQuant de 5 bits |
+| Arquitectura | Transformer multimodal (image-text-to-text) con torre de visión; familia Qwen3.5 |
 | Parametros totales | 9.409.813.744 |
-| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 5 bits KQuant (5,551 bits por peso de media); existe una variante Q4 del mismo autor |
-| Idiomas soportados | en (inglés, según la model card) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | 5 bits MLX (5,551 bits por peso de media); existe un pack Q4 del mismo autor |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato MLX (3 archivos, 7.124.746.696 bytes en total) |
+| Formato de pesos | safetensors para MLX (3 archivos, 7.124.746.696 bytes en total) |
 
 ## Arquitectura y entrenamiento
 
-El pack es una cuantización, no un modelo entrenado desde cero. La arquitectura subyacente es la del Qwen3.5-9B original: un transformer multimodal con una torre de visión separada (333 tensores, 912.020.960 bytes) y un cuerpo de lenguaje de aproximadamente 6,21 GB tras la cuantización. KQuant, el framework de Nace, ajusta cada grupo de pesos contra el comportamiento del modelo en texto real en lugar de minimizar únicamente el error cuadrático sobre los pesos, y produce un pack MLX estándar sin requerir software adicional.
+El modelo base Qwen/Qwen3.5-9B es un transformer multimodal de la familia Qwen3.5, con una torre de visión que en este pack se mantiene fijada por hash (333 tensores, 912.020.960 bytes) y un modelo de lenguaje de 6,21 GB cuantizado a 5 bits. La model card no detalla la composición del dataset de entrenamiento, el número de tokens ni si hubo RLHF o DPO; esa información correspondería a la card del modelo base, que no se incluye en la información proporcionada.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base empleó RLHF o DPO; esos datos corresponden a la model card de Qwen/Qwen3.5-9B y no se incluyen en la información proporcionada. La validación del pack se realizó en una NVIDIA H200 (151 GB) con mlx 0.32.4, mlx-lm 0.32.2, transformers 5.22.2 y numpy 2.5.4, comparando las distribuciones de siguiente token contra el modelo bf16 sobre 32.704 tokens de texto original y 65.472 tokens de chat y tool-calls.
+La innovación técnica destacable de este pack es el proceso de cuantización de Nace.AI: los grupos de pesos se ajustan contra la distribución de siguiente token del modelo BF16 sobre texto original y sobre texto de chat y tool-call, en lugar de minimizar únicamente el error de los pesos. El resultado se materializa como un pack MLX convencional, compatible con mlx-lm sin instalar nada nuevo. La evaluación se realizó en una GPU NVIDIA H200 con mlx 0.32.4, mlx-lm 0.32.2, transformers 5.22.2 y numpy 2.5.4.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada del modelo base Qwen3.5-9B.
-- Procesamiento de imagen y texto combinados (pipeline image-text-to-text), con la torre de visión del modelo base preservada íntegra.
-- Soporte de tool calling / function calling: la model card reporta 20 de 20 ensayos con colocación correcta de la llamada y round trip completado, con el modo thinking desactivado.
-- Plantilla de chat y tokenizador idénticos a los del modelo base, lo que facilita la compatibilidad con prompts existentes.
-- Modo thinking: la model card menciona explícitamente ensayos con "thinking-off", lo que implica que el modelo base dispone de un modo de razonamiento extenso activable.
-- Capacidades multilingües: la model card declara únicamente inglés (`en`); no se documentan otros idiomas para este pack.
+- Generación de texto y razonamiento con modo thinking activado por defecto (el modelo piensa antes de responder).
+- Entrada multimodal image-text-to-text: procesa imágenes junto con texto gracias a la torre de visión del modelo base.
+- Tool calling / function calling: la model card reporta 20 de 20 ensayos con thinking desactivado que colocaron la llamada y completaron el round trip.
+- Conversación multi-turno con plantilla de chat propia del modelo base.
+- Capacidades multilingües limitadas: el pack declara únicamente inglés (en).
+- Modo thinking desactivable, con ajustes de muestreo distintos recomendados para cada modo.
+- No se documentan en la información disponible capacidades de audio ni de agente autónomo multi-paso más allá del tool calling.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales en Mac: el pack MLX de 6,21 GB de pesos de lenguaje permite ejecutar un modelo de 9.400 millones de parámetros con memoria unificada de 16-24 GB en equipos Apple Silicon, sin depender de la nube.
-- Automatización de soporte con imágenes: al conservar la torre de visión, el modelo puede recibir capturas de pantalla, facturas o fotografías junto con texto y responder en el mismo turno, útil para mesas de ayuda que reciben adjuntos.
-- Flujos agénticos con tool calling: los 20 de 20 ensayos correctos en modo thinking-off indican que el pack es adecuado para pipelines donde el modelo debe emitir llamadas a funciones de forma fiable y con baja latencia, como consultas a APIs internas o ejecución de comandos.
-- Prototipado y evaluación de cuantizaciones: la model card publica la divergencia KL frente al bf16 en dos regímenes (texto original y chat/tool-calls), lo que convierte al pack en una referencia útil para comparar técnicas de cuantización MLX sobre el mismo modelo base.
-- Procesamiento de documentos con componente visual: extracción de información de formularios, tickets o diagramas combinando el encoder de visión con el cuerpo de lenguaje cuantizado.
-- Desarrollo offline en portátiles: al ser un pack MLX estándar, se puede cargar con `mlx-lm` sin instalar dependencias adicionales, lo que simplifica entornos de desarrollo sin conectividad o con requisitos de privacidad estrictos.
-- Evaluación de la fidelidad de cuantización en producción: el autor incluye `results.json` con el runtime, los hashes del tokenizador, las métricas KL y los ensayos de herramientas, lo que permite reproducir la validación antes de desplegar.
+- Asistente conversacional local en Mac: el pack está diseñado para ejecutarse en Apple Silicon con MLX, lo que permite desplegar un asistente de 9,4 mil millones de parámetros en un portátil o Mac de sobremesa sin conexión a servicios externos.
+- Automatización de tool calling en flujos locales: los 20 de 20 ensayos de llamada de herramientas con thinking desactivado lo hacen adecuado para pipelines que necesitan invocar funciones de forma fiable, como consultas a APIs internas o ejecución de comandos.
+- Análisis de imágenes con descripción textual: al ser image-text-to-text, puede emplearse para extraer texto de capturas, describir diagramas o responder preguntas sobre imágenes en aplicaciones de escritorio para macOS.
+- Generación de código asistida con modo thinking preciso: la model card recomienda temperature 0.6, top_p 0.95 y top_k 20 para coding preciso con thinking activado, un ajuste útil en editores o scripts de revisión de código.
+- Prototipado e investigación en cuantización: investigadores que comparan métodos de cuantización pueden usar este pack como referencia de 5 bits con métricas KL publicadas frente a alternativas de 4 bits.
+- Evaluación de calidad de cuantizaciones en producción: el pack incluye results.json con la ejecución completa (runtime, hashes del tokenizador, tramos KL y ensayos de herramientas), lo que facilita reproducir y auditar la evaluación antes de adoptarlo.
+- Procesamiento por lotes de texto en local: con 6,21 GB de pesos del modelo de lenguaje y hasta 32.768 tokens de salida, puede emplearse para tareas de resumen o extracción sobre documentos largos en máquinas con memoria unificada suficiente.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son métricas de fidelidad de cuantización frente al modelo bf16, no benchmarks de tareas estándar (MMLU, HumanEval, GSM8K, etc.).
-
-| Metrica | KQuant Q5 (este repo) | Tokens evaluados |
+| Prueba | Nace Q5 (este repo) | Tokens evaluados |
 |---|---:|---:|
-| KL frente al bf16, texto original (menor es mejor) | 0,0097 | 32.704 |
-| KL frente al bf16, texto de chat y tool-calls (menor es mejor) | 0,0474 | 65.472 |
-| Ensayos de tool-calling correctos (thinking-off) | 20/20 | 20 |
+| KL respecto al modelo BF16, texto original (menor es mejor) | 0,0097 | 32.704 |
+| KL respecto al modelo BF16, texto de chat y tool-call (menor es mejor) | 0,0474 | 65.472 |
 
-Comparativa de packs MLX del mismo modelo base, según los datos de la model card (GB decimales, visión excluida):
+Comparativa de packs MLX del mismo modelo base (tamaño de pesos del modelo de lenguaje y KL en texto original):
 
-| Pack | GB de pesos de lenguaje | KL en texto original |
+| Pack | GB del modelo de lenguaje | KL texto original |
 |---|---:|---:|
-| KQuant Q5 (este repo) | 6,213 | 0,0097 |
-| KQuant Q4 | 5,290 | 0,0301 |
+| Nace Q5 (este repo) | 6,213 | 0,0097 |
+| Nace Q4 | 5,290 | 0,0301 |
 | Brooooooklyn UD-Q4_K_XL | 7,169 | 0,0261 |
-| mlx-community OptiQ 4-bit | 7,101 | 0,0292 |
+| mlx-community OptiQ | 7,101 | 0,0292 |
 | mlx-works oQ4e-mtp | 5,134 | 0,0427 |
 | lmstudio-community 4-bit | 5,038 | 0,0806 |
 | mlx-community 4-bit | 5,038 | 0,0814 |
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este pack ni para el modelo base.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: los pesos del modelo de lenguaje ocupan 6,21 GB y el repo completo 7,1 GB; con overhead de runtime MLX y caché KV, se recomienda un mínimo de 12-16 GB de memoria unificada para contexto corto y 24 GB o más para contextos largos y procesamiento de imágenes.
-- GPU recomendadas: Apple Silicon con memoria unificada (M1 Pro/Max, M2 Pro/Max/Ultra, M3 Pro/Max/Ultra, M4 Pro/Max). El pack está formateado para MLX, no para CUDA.
-- Cabe en GPU de consumidor: sí, en equipos Apple Silicon con 16 GB o más de memoria unificada; no está pensado para GPUs NVIDIA/AMD de consumidor porque el formato es MLX.
-- Opciones de despliegue: `mlx-lm` (versión probada 0.32.2) mediante `mlx_lm.generate`; también es compatible con herramientas que consuman packs MLX estándar. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que estos esperan formatos distintos (GGUF, safetensors CUDA, etc.).
-- Latencia y throughput: no disponibles en la información proporcionada. La model card solo indica que la validación se ejecutó en una NVIDIA H200 con 151 GB, un entorno que no representa el despliegue típico en Apple Silicon.
+- VRAM/memoria: el repo ocupa 7,1 GB en total (3 archivos, 7.124.746.696 bytes); los pesos del modelo de lenguaje son 6,21 GB y la torre de visión 912.020.960 bytes. Se necesita memoria unificada suficiente para cargar el pack completo más el espacio de trabajo de inferencia.
+- Plataforma: exclusivamente Apple Silicon con MLX; la evaluación de referencia se hizo en una NVIDIA H200 de 151 GB, pero el pack está destinado a Macs.
+- GPU recomendadas: no se especifican modelos concretos de Apple Silicon en la información disponible; el tamaño de 7,1 GB sugiere que encaja en Macs con memoria unificada de 16 GB o superior, aunque este dato no está confirmado en la card.
+- Opciones de despliegue: mlx-lm (versión de referencia 0.32.2) sobre mlx 0.32.4; no es compatible con vLLM, llama.cpp, Ollama ni TGI al ser un pack MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MLX-Q5-KQuant (este) | 9.409.813.744 | no disponible | MLX safetensors 5 bits | apache-2.0 | KL 0,0097 en texto original; 20/20 tool-calls |
-| Qwen3.5-9B-MLX-Q4-KQuant | no disponible (base 9,4 B) | no disponible | MLX safetensors 4 bits | apache-2.0 | 5,29 GB; KL 0,0301 |
-| mlx-community OptiQ 4-bit | no disponible (base 9,4 B) | no disponible | MLX 4 bits | no disponible en la información | 7,10 GB; KL 0,0292 |
-| mlx-community 4-bit | no disponible (base 9,4 B) | no disponible | MLX 4 bits | no disponible en la información | 5,04 GB; KL 0,0814 |
+| Nace Q5 (este repo) | 9,4 mil millones | no disponible | apache-2.0 | MLX safetensors 5 bits | KL 0,0097 en texto original; 6,21 GB de pesos LM |
+| Nace Q4 | 9,4 mil millones | no disponible | apache-2.0 | MLX 4 bits | KL 0,0301; 5,29 GB de pesos LM |
+| mlx-community 4-bit | 9,4 mil millones | no disponible | apache-2.0 | MLX 4 bits | KL 0,0814; 5,04 GB de pesos LM |
+| lmstudio-community 4-bit | 9,4 mil millones | no disponible | apache-2.0 | MLX 4 bits | KL 0,0806; 5,04 GB de pesos LM |
 
-La comparación se limita a packs MLX del mismo modelo base, ya que no se dispone de datos de benchmarks de tareas para contrastar con modelos de otras familias o tamaños.
+Todos los comparables son cuantizaciones del mismo modelo base Qwen/Qwen3.5-9B, por lo que comparten arquitectura, parámetros y licencia; la diferencia está en el método de cuantización, el tamaño resultante y la fidelidad respecto a BF16 medida en KL. No se dispone de comparación con modelos de otros autores o familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización de 5 bits: la divergencia KL frente al bf16 es baja pero no nula (0,0097 en texto original y 0,0474 en chat/tool-calls), por lo que puede haber degradación sutil en tareas sensibles a la precisión numérica, como matemáticas de varios pasos o generación de código muy específica.
-- El pack está formateado exclusivamente para MLX: no es utilizable directamente en vLLM, llama.cpp, Ollama, TGI ni en GPUs NVIDIA/AMD sin reconversión.
-- La model card declara únicamente inglés (`en`); no hay evidencia de calidad en castellano ni en otros idiomas para este pack concreto.
-- No se publican datos sobre sesgos, alineación ni filtros de seguridad del modelo base en la información disponible; se heredan las características y riesgos del Qwen3.5-9B original.
-- Riesgo de alucinación: no cuantificado en la model card; debe asumirse el comportamiento del modelo base, sin garantías adicionales por parte del cuantizador.
-- La licencia es apache-2.0, igual que el modelo base, lo que permite uso comercial, pero conviene verificar los términos del modelo base Qwen/Qwen3.5-9B por si imponen condiciones adicionales no reflejadas aquí.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-11-11; se trata de un pack reciente y con poca validación comunitaria independiente.
-- La validación se ejecutó en una NVIDIA H200 con MLX, un entorno atípico; el rendimiento real en Apple Silicon puede diferir en latencia y throughput, que no se publican.
-- El modo thinking desactivado es el que se validó para tool-calling; no hay datos sobre la fiabilidad de las llamadas a herramientas con el modo thinking activo.
+- Solo inglés: el pack declara el idioma en, por lo que el rendimiento en castellano u otros idiomas no está garantizado ni evaluado.
+- Exclusivo para Apple Silicon con MLX: no puede desplegarse en GPU NVIDIA, llama.cpp, Ollama, vLLM ni TGI sin reconvertir los pesos.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad en la información disponible.
+- La cuantización introduce degradación respecto a BF16: KL de 0,0097 en texto original y 0,0474 en chat y tool-call, superior esta última a la de algunos packs de 4 bits en texto original.
+- La model card advierte de que valores altos de presence_penalty (entre 0 y 2 es el rango recomendado) pueden mezclar idiomas, y de mantener repetition_penalty en 1.0.
+- Los comandos de inicio rápido para este pack concreto aún estaban en pruebas en el momento de la publicación; la card remite a la del pack Q4 para comandos verificados.
+- El modo thinking está activado por defecto y consume hasta 32.768 tokens de salida en tareas largas, lo que afecta a la latencia y al coste computacional.
+- No se detallan sesgos conocidos ni restricciones adicionales de uso comercial más allá de la licencia apache-2.0 heredada del modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q5-KQuant
+- Pack Q4 del mismo autor: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX
+- Resultados de evaluación: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q5-KQuant/blob/main/results.json
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Variante Q4 del mismo autor: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q4-KQuant
+- Prácticas recomendadas del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B#best-practices
 - Pack Brooooooklyn UD-Q4_K_XL: https://huggingface.co/Brooooooklyn/Qwen3.5-9B-UD-Q4_K_XL-mlx
-- Pack mlx-community OptiQ 4-bit: https://huggingface.co/mlx-community/Qwen3.5-9B-OptiQ-4bit
+- Pack mlx-community OptiQ: https://huggingface.co/mlx-community/Qwen3.5-9B-OptiQ-4bit
 - Pack mlx-works oQ4e-mtp: https://huggingface.co/mlx-works/Qwen3.5-9B-oQ4e-mtp
 - Pack lmstudio-community 4-bit: https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit
 - Pack mlx-community 4-bit: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
-- Resultados de validación del pack: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q5-KQuant/blob/main/results.json

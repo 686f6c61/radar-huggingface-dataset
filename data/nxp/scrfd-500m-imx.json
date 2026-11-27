@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Automotive, IoT & Industrial Solutions | NXP Semiconductors",
-      "url": "https://www.nxp.com/",
-      "snippet": "NXP is a global semiconductor company creating solutions that enable secure connections for a smarter world."
-    },
-    {
-      "title": "Products - NXP Semiconductors",
-      "url": "https://www.nxp.com/products:PCPRODCAT",
-      "snippet": "From microcontrollers and processors to sensors, analog ICs, and connectivity, NXP products are fueling innovation in automotive, …"
-    },
-    {
-      "title": "NXP Semiconductors - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/NXP_Semiconductors",
-      "snippet": "NXP Semiconductors N.V. is a Dutch semiconductor manufacturing and design company with headquarters in Eindhoven, …"
-    },
-    {
-      "title": "NXP Semiconductors — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/NXP_Semiconductors",
-      "snippet": "NXP s’est aussi penché sur des capteurs pour divers domaines d’application tels que l’automobile, l’électroménager, l’automatique …"
-    },
-    {
-      "title": "Careers at NXP | NXP Semiconductors",
-      "url": "https://weare.nxp.com/wEEwkDbxyd",
-      "snippet": "Browse job openings around the world and take your career to the next level, NXP offers plenty of employment opportunities."
-    }
-  ]
+  "sources": []
 }

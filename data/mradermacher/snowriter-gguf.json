@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SnoWriter-GGUF",
+  "slug": "mradermacher-snowriter-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SnoWriter-GGUF",
+  "created_at": "2025-09-08T23:23:40.000Z",
+  "updated_at": "2026-11-27T02:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 32759790592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223968489696,
+  "storage_human": "224.0 GB",
+  "context_length": 131072,
+  "base_model": "ConicCat/SnoWriter",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,91 +2,94 @@
 
 ## Resumen
 
-El modelo `JamieBradfield/qwen3.8-9b-hermes-fc-tooluse-GGUF` es una versión cuantizada en formato GGUF del fine-tuning `qwen3.8-9b-hermes-fc-tooluse`, desarrollado por JamieBradfield sobre la base `Empero/Qwen3.8-9B`. Está especializado en function calling y tool use, y ha sido ajustado mediante QLoRA con datos procedentes de sesiones de agente del propio autor y fuentes públicas con licencia abierta (SWE-rebench, APIGen-MT-5k, When2Call). El modelo se distribuye con una cuantización ROCmFPX orientada a acelerar la inferencia en GPUs AMD RDNA3, aunque también es posible convertir el merge BF16 original para uso portable.
+Qwen3.8-9B Hermes FC — Tooluse (GGUF) es una cuantización en formato GGUF de un ajuste fino orientado a function calling y uso de herramientas sobre el modelo base Empero/Qwen3.8-9B, un transformer denso de 9.195.119.616 parámetros. El autor, JamieBradfield, publica esta variante cuantizada con el kernel propietario ROCmFPX (Q4_0_ROCMFP4_FAST), pensada específicamente para inferencia sobre GPUs AMD con ROCm, en concreto una RX 7700 XT de 12 GB de VRAM. El ajuste se realizó mediante QLoRA sobre el modelo base y se fusionó en BF16 en el repositorio padre.
 
-Con 9.195 millones de parámetros, este modelo se posiciona como una opción ligera para tareas de agente y llamada a herramientas en entornos con recursos limitados. La cuantización incluida (`Q4_0_ROCMFP4_FAST`) reduce el tamaño a 4,69 GB, lo que permite ejecutarlo en GPUs de consumo con 12 GB de VRAM, como la RX 7700 XT utilizada por el autor. Además, conserva la cabeza de predicción multi-token (MTP) del modelo base, lo que habilita decodificación especulativa en builds compatibles.
+El modelo aborda el problema del uso fiable de herramientas en modelos de tamaño medio: la selección correcta de funciones, el orden de ejecución de tareas y la resistencia a derivas en conversaciones multi-turno con esquemas de herramientas. La model card incluye una corrección metodológica relevante: las métricas originales provenían de un arnés sintético que incrustaba los esquemas en el texto de sistema y nunca usaba el parámetro nativo `tools` de la API estilo OpenAI. Con la ruta nativa, el modelo base sin ajuste alcanza 18/20 en el nivel 1 con cero derivas de nivel 4, mientras que la ventaja del ajuste en el nivel 2 (priorizar tareas pendientes) se reduce a 8/10 frente a 3/10 del base.
 
-La relevancia de este modelo radica en su enfoque práctico: está diseñado para ser desplegado en entornos de producción donde la llamada a funciones y el razonamiento multi-paso son críticos, y su licencia Apache-2.0 facilita su uso comercial. Sin embargo, la documentación disponible es limitada y se basa principalmente en la model card del autor, por lo que algunos datos técnicos (arquitectura exacta, contexto nativo, benchmarks estándar) no están confirmados.
+Es relevante ahora por dos motivos: primero, porque documenta de forma transparente un caso de inflación de métricas en evaluaciones de tool calling, un problema extendido en modelos pequeños ajustados; segundo, porque preserva la cabeza MTP (multi-token prediction) del modelo base, lo que permite decodificación especulativa con `--spec-type draft-mtp` en builds compatibles. El programa de ajuste quedó congelado el 2026-09-03 y el autor usa el modelo base como opción por defecto en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basada en Qwen3.8, presumiblemente transformer) |
+| Arquitectura | Transformer denso (derivado de la familia Qwen3.5, según tags) |
 | Parametros totales | 9.195.119.616 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el autor menciona pruebas a 64k y 245k, pero no se especifica el máximo nativo) |
-| Tipos de cuantizacion | Q4_0_ROCMFP4_FAST (GGUF) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (cuantización ROCmFPX) |
+| Longitud de contexto | 64k en la configuración medida por el autor; el modelo base soporta hasta 245k según la nota de rendimiento (no confirmado como máximo oficial) |
+| Tipos de cuantizacion | Q4_0_ROCMFP4_FAST (4,69 GB); conversión desde BF16 disponible en el repo padre |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (442 tensores, incluida la cabeza MTP bajo el prefijo `mtp.*`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información proporcionada, pero al estar basado en `Empero/Qwen3.8-9B`, se asume una arquitectura transformer estándar con atención multi-cabeza, similar a la familia Qwen. El modelo ha sido fine-tuneado con QLoRA (cuantización de bajo rango) para mejorar sus capacidades de function calling y tool use. Los datos de entrenamiento provienen de sesiones de agente del propio autor (etiquetadas como "Hermes") y de conjuntos públicos con licencia abierta, como SWE-rebench, APIGen-MT-5k y When2Call. No se especifica el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO.
+El modelo es un transformer denso de ~9,2 mil millones de parámetros, derivado de Empero/Qwen3.8-9B, que a su vez se etiqueta como perteneciente a la familia Qwen3.5. El ajuste se realizó con QLoRA sobre el modelo base, orientado a function calling y uso de herramientas, y se fusionó en BF16 en el repositorio padre (`JamieBradfield/qwen3.8-9b-hermes-fc-tooluse`). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
 
-Una característica destacable es la preservación de la cabeza MTP (multi-token prediction) del modelo base, que permite la decodificación especulativa con `--spec-type draft-mtp` en builds que lo soporten. Esto puede mejorar la latencia en tareas de generación larga, aunque no se proporcionan métricas concretas de rendimiento.
+La innovación técnica destacable es la preservación de la cabeza MTP (multi-token prediction) del modelo base, con 15 tensores bajo el prefijo `mtp.*` dentro de los 442 tensores del GGUF. Esta cabeza habilita decodificación especulativa mediante `--spec-type draft-mtp` en builds que lo soporten, lo que puede reducir la latencia de decodificación. La cuantización se generó con un fork `llama-rocmfpx` mediante `convert_hf_to_gguf.py --outtype bf16` seguido de `llama-quantize Q4_0_ROCMFP4_FAST`, con kernels específicos para RDNA3.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional en inglés.
-- Function calling y tool use: el modelo está específicamente entrenado para invocar herramientas y funciones externas de forma estructurada.
-- Soporte para agentes y razonamiento multi-paso, según la evaluación del autor (17/20 en pruebas held-out de nivel 1).
-- Decodificación especulativa mediante la cabeza MTP preservada, en builds compatibles.
-- Optimización para inferencia en GPUs AMD ROCm mediante cuantización ROCmFPX.
-- No se documentan capacidades de visión, audio u otras modalidades.
+- Generación de texto conversacional en inglés, con soporte de conversaciones multi-turno.
+- Function calling y tool use: selección de funciones, ejecución ordenada de tareas y manejo de esquemas de herramientas por la ruta nativa `tools` de la API estilo OpenAI.
+- Razonamiento multi-paso orientado a agentes, con énfasis en priorizar tareas pendientes (comportamiento "todo-first") en el nivel 2 de la evaluación del autor.
+- Decodificación especulativa mediante la cabeza MTP preservada, en builds compatibles con `--spec-type draft-mtp`.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistentes conversacionales con integración de herramientas: el modelo puede gestionar diálogos multi-turno donde necesita consultar APIs, bases de datos o servicios externos, gracias a su entrenamiento específico en function calling.
-- Automatización de tareas de agente: puede ejecutar secuencias de acciones (por ejemplo, leer un correo, buscar información, actualizar un registro) siguiendo instrucciones de alto nivel.
-- Generación de código con llamada a funciones: útil en entornos de desarrollo donde se requiere que el modelo genere código que invoque librerías o servicios, con formato de salida estructurado.
-- Sistemas de soporte técnico: puede clasificar incidencias, extraer datos de tickets y llamar a herramientas de gestión (CRM, ticketing) de forma automatizada.
-- Pruebas de concepto en entornos AMD: su cuantización ROCmFPX lo hace adecuado para validar despliegues en GPUs RDNA3 sin necesidad de hardware NVIDIA.
-- Investigación en fine-tuning para tool use: sirve como referencia para estudiar el impacto de QLoRA y cuantización en tareas de function calling.
+- Agentes de automatización de tareas con APIs: el modelo puede recibir esquemas de herramientas por el parámetro nativo `tools` y encadenar llamadas en orden, lo que lo hace adecuado para orquestadores que necesitan decidir qué función invocar en cada paso.
+- Asistentes de operaciones internas: gestión de tickets, consultas a bases de datos y acciones sobre sistemas corporativos mediante function calling, con la ventaja de que el ajuste prioriza completar tareas pendientes antes de responder al usuario.
+- Despliegue en estaciones de trabajo con GPU AMD: la cuantización ROCmFPX está optimizada para RDNA3, de modo que un equipo con RX 7700 XT de 12 GB puede servir el modelo a 64k de contexto con KV cache q8_0/turbo3.
+- Prototipado de pipelines de agentes en local: al caber en 4,69 GB, permite iterar sobre prompts y esquemas de herramientas sin coste de API, usando llama.cpp con el fork ROCmFPX.
+- Evaluación de robustez de tool calling: útil como caso de estudio para comparar arneses sintéticos frente a la ruta nativa de herramientas, dado que la model card documenta la discrepancia entre ambos métodos.
+- Servicio de chat con contexto largo: con 64k tokens configurados y decodificación especulativa MTP, puede mantener conversaciones extensas con historial de herramientas acumulado en un solo equipo consumer de gama alta AMD.
 
 ## Benchmarks y rendimiento
 
-La model card del autor reporta resultados de una batería de 40 pruebas propia, no benchmarks estándar (MMLU, HumanEval, etc.). Los datos disponibles son:
+La model card no publica resultados en benchmarks estándar (MMLU, HumanEval, GSM8K). Los únicos datos disponibles son de un arnés propio de evaluación de tool calling, con corrección metodológica posterior:
 
-| Prueba | Resultado |
-|---|---|
-| Held-out tier-1 (fired) | 17/20 |
-| Held-out tier-1 (todos_ok) | 16/20 |
-| Tier-2 | 7/10 |
-| Tier-3 | dentro del bar de v27 |
+| Metrica | Modelo ajustado | Modelo base (sin ajuste) | Metodo |
+|---|---|---|---|
+| Nivel 1 (seleccion correcta de herramienta) | no disponible en esta ficha | 18/20 | Ruta nativa `tools` |
+| Nivel 2 (prioridad de tareas pendientes) | 8/10 | 3/10 | Ruta nativa `tools` |
+| Deriva de nivel 4 | no disponible en esta ficha | 0 | Ruta nativa `tools` |
 
-Estos resultados se reproducen de forma idéntica en dos ejecuciones de validación. No se proporcionan comparaciones con otros modelos ni métricas estándar de la industria.
+El autor indica que las métricas originales de la model card provenían de un arnés sintético que incrustaba los esquemas en el texto de sistema y no usaba el parámetro `tools`, por lo que no son comparables con la evaluación corregida. No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 4,69 GB para el archivo GGUF, pero se recomienda al menos 12 GB para contexto largo (el autor usa una RX 7700 XT con 12 GB).
-- GPU recomendadas: AMD RDNA3 (RX 7700 XT, RX 7800 XT, etc.) para aprovechar la cuantización ROCmFPX. También puede ejecutarse en GPUs NVIDIA mediante conversión del BF16 original.
-- Contexto: el autor sirve a 64k de contexto con KV cache q8_0/turbo3, logrando ~5,5x de velocidad de decodificación frente a 245k. No se especifica el máximo soportado.
-- Opciones de despliegue: llama.cpp (fork `llama-rocmfpx`), vLLM, Ollama (si se convierte a formato estándar), TGI.
-- Latencia y throughput: no se proporcionan métricas cuantitativas más allá de la comparación de velocidad mencionada.
+- VRAM estimada: 4,69 GB para el archivo Q4_0_ROCMFP4_FAST, más la KV cache; a 64k de contexto con q8_0/turbo3 el consumo total encaja en 12 GB de VRAM según la configuración del autor.
+- GPU recomendadas: AMD RDNA3 con ROCm, en particular RX 7700 XT de 12 GB (equipo de referencia del autor). Para otras arquitecturas, el autor recomienda convertir desde el merge BF16 del repositorio padre.
+- GPU consumer: sí, cabe en GPUs AMD de 12 GB. No se documenta compatibilidad con CUDA ni con GPUs NVIDIA en esta variante.
+- Opciones de despliegue: llama.cpp con el fork `llama-rocmfpx`; la decodificación especulativa MTP requiere builds con soporte de `--spec-type draft-mtp`.
+- Latencia y throughput: el autor reporta aproximadamente 5,5 veces más velocidad de decodificación a 64k de contexto que a 245k en su equipo, considerado el punto óptimo. No se publican tokens por segundo absolutos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (fine-tunes de Qwen para function calling). Se puede mencionar que existen otros fine-tunes de Qwen3.8-9B del mismo autor (por ejemplo, `qwen3.8-9b-hermes-fc-balanced` y `qwen3.8-9b-hermes-fc-real-traces`), pero no se dispone de benchmarks comparativos. La información es insuficiente para establecer una comparativa objetiva.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.8-9B Hermes FC Tooluse (este) | 9,195 M | 64k configurado | Function calling vía QLoRA | Apache 2.0 | GGUF (ROCmFPX) |
+| Empero/Qwen3.8-9B (base) | 9,195 M | hasta 245k según nota del autor | Modelo generalista | no disponible en la información | BF16 |
+| JamieBradfield/qwen3.8-9b-hermes-fc-tooluse (padre) | 9,195 M | no disponible | Merge BF16 del ajuste | Apache 2.0 | BF16 |
+
+No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La documentación es escasa: no se especifican la arquitectura exacta, el contexto nativo máximo ni los detalles del dataset de entrenamiento.
-- El modelo está entrenado únicamente en inglés; su rendimiento en otros idiomas no está garantizado.
-- La cuantización ROCmFPX es específica para AMD RDNA3; en otras plataformas puede requerir conversión a formatos estándar (Q4_K_M, etc.).
-- El contexto largo (245k) degrada significativamente la velocidad de decodificación; se recomienda usar 64k o menos para producción.
-- No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que la comparación con otros modelos es limitada.
-- Riesgo de alucinación y sesgos no evaluados; se recomienda validar en casos de uso críticos.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base `Empero/Qwen3.8-9B` debe verificarse para confirmar que no tiene restricciones adicionales.
+- Solo soporta inglés según la model card; el rendimiento en castellano u otros idiomas no está documentado.
+- Las métricas de tool calling de la model card original están corregidas por el propio autor: provenían de un arnés sintético no representativo de la interfaz nativa `tools`. Cualquier comparación basada en las cifras antiguas es inválida.
+- El programa de ajuste está congelado desde el 2026-09-03 y el autor usa el modelo base como opción por defecto en producción, lo que sugiere que la ventaja del ajuste es limitada en la práctica.
+- La cuantización ROCmFPX está orientada a kernels AMD RDNA3; en otras GPUs o backends el rendimiento puede degradarse o no funcionar, y se recomienda reconvertir desde BF16.
+- Riesgo de alucinación en la selección de herramientas y argumentos no evaluado de forma independiente; no hay datos sobre tasas de error en producción.
+- Sesgos conocidos: no documentados en la información disponible.
+- Licencia Apache 2.0, que permite uso comercial, pero el modelo base y los datos de ajuste no están documentados en detalle, por lo que conviene verificar la procedencia de los datos antes de un despliegue comercial.
+- A 245k de contexto la velocidad de decodificación cae aproximadamente 5,5 veces respecto a 64k en el equipo de referencia, lo que desaconseja contextos extremos en producción.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse-GGUF
-- Repositorio del merge BF16 (parent): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
+- Repositorio padre (merge BF16): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
 - Modelo base: https://huggingface.co/Empero/Qwen3.8-9B
-- Variante balanced: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced-GGUF
-- Variante real-traces: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces
-- Página en LLM Explorer (real-traces): https://llm-explorer.com/model/JamieBradfield%2Fqwen3.8-9b-hermes-fc-real-traces,2TEFMrMU8nw0D9NfSFX1GH
-- Página en LLM Explorer (function-calling-v1): https://llm-explorer.com/model/JamieBradfield%2Fqwen3.8-9b-hermes-function-calling-v1,6SuH8bRjECvBVYmLBTrCbl
-- Página en FriendliAI (balanced): https://friendli.ai/models/JamieBradfield/qwen3.8-9b-hermes-fc-balanced
+- Apoyo al autor: https://ko-fi.com/jamesonbradfield

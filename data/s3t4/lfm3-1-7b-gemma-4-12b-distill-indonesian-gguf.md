@@ -2,100 +2,125 @@
 
 ## Resumen
 
-LFM3-1.7B-Gemma-4-12B-Distill-Indonesian-GGUF es la versión cuantizada en formato GGUF de un checkpoint de LiquidAI/LFM3-1.7B afinado para indonesio mediante destilación de conocimiento desde google/gemma-4-12B-it como modelo profesor. El autor de la conversión y del ajuste es el usuario s3t4, y el artefacto está pensado para inferencia local eficiente en CPU y GPU a través de llama.cpp, Ollama, LM Studio y AnythingLLM. El modelo base cuenta con 1.728.801.600 parámetros (1,73B) y una arquitectura descrita por el autor como tri-híbrida con ventana de contexto de 256K tokens.
+LFM3-1.7B-Gemma-4-12B-Distill-Indonesian-GGUF es la versión cuantizada en formato GGUF del checkpoint `s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian`, un ajuste fino del modelo `LiquidAI/LFM3-1.7B` (1,73 mil millones de parámetros) especializado en indonesio mediante destilación de conocimiento desde `google/gemma-4-12B-it` como modelo profesor. El autor es el usuario de Hugging Face `s3t4`, y el modelo está pensado para inferencia local eficiente en CPU y GPU a través de llama.cpp, Ollama, LM Studio y AnythingLLM.
 
-El problema que resuelve es doble: por un lado, adaptar un modelo pequeño de la familia LFM3 al indonesio, un idioma con menos cobertura en modelos abiertos de propósito general; por otro, hacerlo mediante destilación de las razones (rationale) e instrucciones de un profesor mucho mayor (Gemma-4-12B-it), de modo que el modelo pequeño herede parte de la capacidad de razonamiento del grande. Los resultados publicados en la model card muestran mejoras sustanciales frente al baseline y frente a la variante solo con SFT en IndoMMLU y XCOPA-ID.
+El modelo parte de la arquitectura tri-híbrida de LFM3 con una ventana de contexto declarada de 256K tokens y emplea una destilación de tipo "Rationale & Instruction Distillation", es decir, no solo se transfieren las salidas finales del profesor sino también las cadenas de razonamiento. El resultado es un modelo compacto de 1,73B parámetros que mejora de forma notable sobre el baseline en tareas de comprensión del indonesio, acercándose parcialmente al profesor de 12B en benchmarks como IndoMMLU y XCOPA-ID.
 
-La relevancia actual está en que ofrece una alternativa de 1,73B parámetros ejecutable en hardware de consumo (1,10 GB en Q4_K_M) con licencia LFM Open License v1.0 y soporte para toolchains estándar de inferencia local. El repositorio incluye tres cuantizaciones (Q4_K_M, Q8_0 y F16) y plantilla de chat ChatML integrada.
+La relevancia práctica de esta ficha radica en que ofrece tres niveles de cuantización (F16, Q8_0 y Q4_K_M) con métricas de calidad y latencia medidas sobre un conjunto fijo de 1.100 preguntas, lo que permite elegir el compromiso óptimo entre tamaño, velocidad y fidelidad para despliegues locales. El punto dulce recomendado por el autor es Q8_0, con un 97,27% de coincidencia de predicción respecto a F16 y un 22,5% menos de latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tri-híbrida (según model card del autor; familia LFM3 de LiquidAI) |
+| Arquitectura | Transformer tri-híbrido (LFM3, LiquidAI) |
 | Parametros totales | 1.728.801.600 (1,73B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 256K tokens (según model card del autor) |
-| Tipos de cuantizacion | Q4_K_M (4-bit), Q8_0 (8-bit), F16 (16-bit) |
-| Idiomas soportados | Indonesio (id) |
-| Licencia | LFM Open License v1.0 (license_name: lfm1.0) |
-| Formato de pesos | GGUF (convertido con convert_hf_to_gguf.py + llama-quantize) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | 262.144 tokens (256K) declarados en la model card |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M |
+| Idiomas soportados | Indonesio (id); el resto no disponible |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | GGUF (generado con llama.cpp: `convert_hf_to_gguf.py` + `llama-quantize`) |
+| Tamano del repo | 6,4 GB |
+| Modelo base | s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian (a su vez derivado de LiquidAI/LFM3-1.7B) |
+| Modelo profesor | google/gemma-4-12B-it |
+| Descargas | 201 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/LFM3-1.7B, descrito por el autor como una arquitectura tri-híbrida con ventana de contexto de 256K tokens. Sobre ese checkpoint se aplicó un proceso de destilación de conocimiento desde google/gemma-4-12B-it (Apache 2.0), combinando destilación de razonamientos (rationale distillation) y de instrucciones. El resultado es un modelo de 1,73B parámetros orientado a generación de texto conversacional en indonesio.
+El modelo hereda la arquitectura tri-híbrida de LFM3-1.7B de LiquidAI, una combinación de capas de atención y mecanismos lineales o recurrentes que la model card describe como "tri-hybrid" sin detallar la proporción exacta de cada tipo de capa. Sobre esa base, el autor aplicó un proceso de destilación de conocimiento desde `google/gemma-4-12B-it`, incluyendo destilación de racionales e instrucciones. Los datasets citados en la model card son `indolem/IndoMMLU`, `cambridgeltl/xcopa`, `CohereLabs/aya_dataset` y `AksaraLLM/aksara-sft-clean-v1`, lo que sugiere una mezcla de datos de evaluación y ajuste supervisado en indonesio.
 
-Los datos de entrenamiento citados en la model card incluyen los datasets indolem/IndoMMLU, cambridgeltl/xcopa, CohereLabs/aya_dataset y AksaraLLM/aksara-sft-clean-v1. No se especifica el número exacto de tokens de entrenamiento ni la composición detallada del dataset, ni si hubo fases de RLHF o DPO. La evaluación publicada se realizó zero-shot con `enable_thinking=False` y logits del primer token, sobre 300 preguntas no regionales de IndoMMLU (seed=42, index < 300) y las 500 preguntas de test de XCOPA-ID.
+No se especifica en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset de destilación ni si se aplicaron fases de RLHF o DPO. La model card tampoco detalla innovaciones técnicas adicionales más allá de la propia arquitectura tri-híbrida y del esquema de destilación de racionales. El proceso de cuantización sí está documentado: conversión con `convert_hf_to_gguf.py` y cuantización con `llama-quantize`, con evaluación determinista de primer token mediante `llama-server`.
 
 ## Capacidades
 
-- Generación de texto conversacional en indonesio con plantilla ChatML.
-- Razonamiento y conocimiento general en indonesio, medido en IndoMMLU.
-- Razonamiento de sentido común en indonesio, medido en XCOPA-ID.
-- Destilación de razonamientos desde un profesor de 12B, lo que se traduce en mejoras de hasta +21,67 pp en IndoMMLU frente al baseline.
-- Inferencia local en CPU y GPU mediante llama.cpp, Ollama, LM Studio y AnythingLLM.
-- Compatibilidad con endpoints OpenAI (tag `endpoints_compatible`).
-- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking explícito en la información disponible.
+- Generación de texto y conversación en indonesio, con estilo de respuesta claro y natural según el system prompt de ejemplo de la model card.
+- Razonamiento y conocimiento factual en indonesio, evaluado mediante IndoMMLU (cultura general y conocimiento general).
+- Razonamiento de sentido común en indonesio, evaluado mediante XCOPA-ID.
+- Modo de pensamiento configurable: la model card menciona el parámetro `enable_thinking`, que puede activarse o desactivarse; las evaluaciones se realizaron con `enable_thinking=False`.
+- Destilación de racionales: el modelo fue entrenado para reproducir cadenas de razonamiento del profesor, lo que puede favorecer respuestas multi-paso.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no documentado explícitamente; el modo de pensamiento y la destilación de racionales son indicios, pero no hay confirmación.
+- Capacidades multilingües: limitadas al indonesio según el campo `language: id`; no se documentan otros idiomas.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional en indonesio para atención al cliente: el modelo puede mantener conversaciones multi-turno con la plantilla ChatML y un system prompt en indonesio, con un tamaño de 1,10 GB en Q4_K_M que permite desplegarlo en portátiles y equipos sin GPU dedicada.
-- Evaluación educativa y respuesta a preguntas de conocimiento general: su rendimiento en IndoMMLU (47,00% en la versión BF16) lo hace útil para prototipos de tutores o QA sobre temario en indonesio, siempre con verificación humana.
-- Razonamiento de sentido común en tareas de NLP en indonesio: el 75,40% en XCOPA-ID lo sitúa como candidato para pipelines de inferencia de causa-efecto, clasificación de relaciones y tareas similares en ese idioma.
-- Despliegue en local para desarrollo y pruebas offline: al estar en GGUF y ser compatible con llama.cpp y Ollama, se puede integrar en entornos sin conexión o con requisitos de privacidad, usando `llama-server` como API compatible con OpenAI.
-- Generación de contenido y resúmenes en indonesio en aplicaciones de escritorio: LM Studio y AnythingLLM permiten cargar el modelo con la plantilla ChatML integrada para tareas de redacción asistida.
-- Filtrado y preprocesado de corpus en indonesio: por su tamaño reducido y bajo coste de inferencia, puede emplearse para tareas de clasificación, normalización o generación de datos sintéticos en pipelines de NLP.
-- Base para experimentos de destilación: el checkpoint y sus cuantizaciones sirven como referencia reproducible para investigar destilación de profesores grandes a modelos pequeños en idiomas de bajos recursos.
+- Asistente conversacional local en indonesio: el modelo puede gestionar diálogos multi-turno con un contexto declarado de 256K tokens, aunque en la práctica el ejemplo de despliegue con `llama-server` usa `-c 4096`; es adecuado para asistentes personales o de escritorio que deban funcionar sin conexión en hardware modesto.
+- Respuesta a preguntas sobre conocimiento general en indonesio: con un 47,00% en IndoMMLU (Bahasa Indonesia) y un 46,67% en conocimiento general, puede emplearse en bases de conocimiento internas o FAQ donde se acepte una precisión moderada y se priorice el coste cero de infraestructura.
+- Razonamiento de sentido común para clasificación y elección múltiple: su 75,40% en XCOPA-ID lo hace útil en tareas de selección de respuesta correcta, análisis de causas y efectos y validación de enunciados en indonesio.
+- Despliegue en dispositivos de bajos recursos: la variante Q4_K_M ocupa 1,10 GB y permite ejecución en máquinas con menos de 2 GB de RAM/VRAM, lo que habilita asistentes embebidos, aplicaciones de escritorio o entornos de CI con recursos limitados.
+- Prototipado rápido con Ollama o LM Studio: la integración directa mediante `ollama run hf.co/s3t4/...:Q8_0` o la búsqueda en LM Studio permite a desarrolladores probar el modelo en minutos sin gestionar dependencias de Python.
+- Servidor compatible con la API de OpenAI: `llama-server` expone un endpoint compatible con OpenAI, lo que facilita sustituir modelos en aplicaciones existentes o en pipelines de evaluación automatizada.
+- Generación de texto asistida en indonesio para contenidos educativos o divulgativos: el modo de pensamiento y la destilación de racionales pueden producir explicaciones paso a paso, útiles para materiales didácticos o resúmenes.
+- Evaluación comparativa de cuantizaciones: los datos de latencia y coincidencia de predicción permiten usar el modelo como banco de pruebas para decidir políticas de cuantización en producción.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (evaluación zero-shot, `enable_thinking=False`, primer token):
+Resultados del checkpoint base antes de la cuantización (zero-shot, `enable_thinking=False`, primer token):
 
 | Benchmark | LFM3-1.7B baseline | LFM3-1.7B-Indonesian (SFT) | LFM3-1.7B-Distilled (BF16) | Δ vs SFT / Base | Profesor Gemma-4-12B-it |
 |---|---|---|---|---|---|
-| IndoMMLU (Bahasa Indonesia) | 25,33% (76/300) | 36,33% (109/300) | 47,00% (141/300) | +10,67 pp / +21,67 pp | 66,67% |
-| IndoMMLU (Pengetahuan Umum) | 26,00% (78/300) | 33,33% (100/300) | 46,67% (140/300) | +13,34 pp / +20,67 pp | 59,00% |
-| XCOPA-ID (Commonsense) | 58,60% (293/500) | 58,40% (292/500) | 75,40% (377/500) | +17,00 pp / +16,80 pp | 86,20% |
+| IndoMMLU (Bahasa Indonesia), 300 preguntas | 25,33% | 36,33% | 47,00% | +10,67 pp / +21,67 pp | 66,67% |
+| IndoMMLU (conocimiento general), 300 preguntas | 26,00% | 33,33% | 46,67% | +13,34 pp / +20,67 pp | 59,00% |
+| XCOPA-ID (sentido común), 500 preguntas | 58,60% | 58,40% | 75,40% | +17,00 pp / +16,80 pp | 86,20% |
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Resultados por cuantización GGUF sobre 1.100 preguntas:
+
+| Benchmark | HF BF16 (ref.) | GGUF F16 | GGUF Q8_0 | GGUF Q4_K_M | Δ Q8_0 vs F16 | Δ Q4_K_M vs F16 |
+|---|---|---|---|---|---|---|
+| IndoMMLU (Bahasa Indonesia), 300 | 47,00% | 48,00% | 48,33% | 46,67% | +0,33 pp | -1,33 pp |
+| IndoMMLU (conocimiento general), 300 | 46,67% | 46,33% | 45,67% | 40,67% | -0,67 pp | -5,67 pp |
+| XCOPA-ID, 500 | 75,40% | 75,20% | 76,00% | 76,40% | +0,80 pp | +1,20 pp |
+| Total combinado (1.100) | 59,82% | 59,91% | 60,18% | 58,55% | +0,27 pp | -1,36 pp |
+| Media macro (3 benchmarks) | 56,36% | 56,51% | 56,67% | 54,58% | +0,16 pp | -1,93 pp |
+
+Rendimiento y compresión:
+
+| Variante | Tamaño | Compresión | Latencia media (`llama-server`) | Coincidencia de predicción vs F16 |
+|---|---|---|---|---|
+| GGUF F16 | 3,23 GiB (3,47 GB) | 1,00x | 43,74 ms/pregunta | 100,00% (1.100/1.100) |
+| GGUF Q8_0 | 1,72 GiB (1,85 GB) | 1,88x | 33,89 ms/pregunta (-22,5%) | 97,27% (1.070/1.100) |
+| GGUF Q4_K_M | 1,02 GiB (1,10 GB) | 3,15x | 29,45 ms/pregunta (-32,7%) | 85,00% (935/1.100) |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: Q4_K_M requiere aproximadamente 1,10 GB de pesos (1,02 GiB); Q8_0 unos 1,85 GB (1,72 GiB); F16 unos 3,47 GB (3,23 GiB). A esto hay que sumar el espacio para el contexto KV cache, que crece con la longitud de contexto configurada.
-- GPU recomendadas: no se especifican en la model card. Por tamaño, cualquier GPU con al menos 2-4 GB de VRAM libre puede alojar las cuantizaciones Q4_K_M y Q8_0; para F16 se recomienda al menos 4-6 GB.
-- Cabe en GPU de consumo: sí, en tarjetas tipo RTX 3060, RTX 4060, RTX 4090 y similares, así como en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp (build compatible con arquitectura LFM3), llama-server (API compatible con OpenAI), Ollama (con versión compatible con LFM3), LM Studio y AnythingLLM.
-- Latencia y throughput: no disponibles en la información proporcionada. El autor recomienda `temperature=0.1`, `top_k=50` y `repeat_penalty=1.1` para chat general.
+- VRAM/RAM estimada para inferencia: aproximadamente 1,10 GB para Q4_K_M, 1,85 GB para Q8_0 y 3,47 GB para F16, más el overhead del runtime y del contexto.
+- GPU recomendadas: no se especifican en la información disponible; el modelo está pensado también para ejecución en CPU.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de VRAM libre para Q4_K_M o Q8_0; F16 requiere alrededor de 4 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`), Ollama, LM Studio y AnythingLLM; se requiere una build de llama.cpp compatible con LFM3.
+- Latencia medida: 29,45 ms/pregunta en Q4_K_M, 33,89 ms/pregunta en Q8_0 y 43,74 ms/pregunta en F16, medida con `llama-server` sobre las 1.100 preguntas de evaluación.
+- Throughput: no disponible en la información proporcionada.
+- Parámetros de muestreo recomendados: `temperature=0.1`, `top_k=50`, `repeat_penalty=1.1`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | IndoMMLU | XCOPA-ID | Licencia | Formato |
+| Modelo | Parámetros | Contexto | IndoMMLU (Bahasa) | XCOPA-ID | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM3-1.7B-Gemma-4-12B-Distill-Indonesian (BF16) | 1,73B | 256K | 47,00% | 75,40% | LFM Open License v1.0 | GGUF / safetensors |
-| LFM3-1.7B-Indonesian (SFT) | 1,73B | 256K | 36,33% | 58,40% | LFM Open License v1.0 | no disponible |
-| LFM3-1.7B baseline | 1,73B | 256K | 25,33% | 58,60% | LFM Open License v1.0 | no disponible |
-| Gemma-4-12B-it (profesor) | 12B (aprox.) | no disponible | 66,67% | 86,20% | Apache 2.0 | no disponible |
+| LFM3-1.7B-Gemma-4-12B-Distill-Indonesian (Q8_0) | 1,73B | 256K | 48,33% | 76,00% | lfm1.0 | GGUF en HF |
+| LFM3-1.7B-Indonesian (SFT, checkpoint base) | 1,73B | 256K (heredado) | 36,33% | 58,40% | lfm1.0 | HF |
+| LFM3-1.7B baseline (LiquidAI) | 1,73B | 256K | 25,33% | 58,60% | lfm1.0 | HF |
+| Gemma-4-12B-it (profesor) | 12B | no disponible | 66,67% | 86,20% | no disponible | HF |
 
-No se dispone de datos de otros modelos comparables de tamaño similar entrenados específicamente para indonesio en la información proporcionada.
+El modelo destilado supera de forma clara a su baseline y a la versión SFT en indonesio, pero queda por debajo del profesor de 12B en todos los benchmarks, a cambio de un tamaño aproximadamente siete veces menor. No se dispone de datos de otros modelos de 1-2B especializados en indonesio en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado exclusivamente en indonesio; no se garantiza un rendimiento adecuado en otros idiomas.
-- Riesgo de alucinación inherente a modelos pequeños destilados: los resultados en IndoMMLU (47,00%) y XCOPA-ID (75,40%) están por debajo del profesor, por lo que no debe usarse como fuente de verdad sin verificación.
-- Sesgos potenciales derivados de los datasets de entrenamiento (IndoMMLU, XCOPA, aya_dataset, aksara-sft-clean-v1) y de las salidas sintéticas del profesor Gemma-4-12B-it; no se documenta un análisis de sesgos.
-- Licencia LFM Open License v1.0: es necesario revisar sus términos antes de uso comercial, ya que no es una licencia permisiva estándar y puede imponer restricciones adicionales.
-- La arquitectura LFM3 requiere builds de llama.cpp, Ollama o LM Studio compatibles con `lfm3`; versiones antiguas pueden no cargar el modelo.
-- El contexto declarado de 256K tokens puede no ser alcanzable en la práctica con cuantizaciones bajas o hardware limitado, y no se han publicado evaluaciones de rendimiento en contextos largos.
-- No se documentan capacidades de tool calling, agentes ni multimodalidad; asumir su ausencia en producción.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria independiente.
-- El tamaño del repo (6,4 GB) incluye las tres cuantizaciones; conviene descargar solo el archivo necesario.
+- Precisión moderada: el mejor resultado en IndoMMLU (Bahasa Indonesia) es del 48,33% con Q8_0, lo que implica que más de la mitad de las preguntas de conocimiento factual se responden incorrectamente; no es adecuado para tareas que exijan alta fiabilidad factual.
+- Degradación con cuantización agresiva: Q4_K_M pierde 5,67 pp en IndoMMLU de conocimiento general y cambia el 15% de las predicciones respecto a F16; el autor recomienda Q8_0 como equilibrio.
+- Riesgo de alucinación: no se documentan medidas específicas de mitigación; al ser un modelo pequeño destilado, la generación de hechos inventados es un riesgo plausible, aunque no se cuantifica en la información disponible.
+- Cobertura lingüística limitada: solo se declara indonesio; no hay evidencia de calidad en otros idiomas, incluido el castellano.
+- Licencia lfm1.0: es una licencia "other" con enlace a la licencia de LiquidAI; es necesario revisar sus términos antes de uso comercial, ya que puede incluir restricciones adicionales no detalladas en la model card.
+- Dependencia de una build compatible: el modelo requiere versiones de llama.cpp, Ollama u otros runtimes compatibles con LFM3; versiones estándar pueden no cargarlo correctamente.
+- Contexto práctico: aunque se declaran 256K tokens, el ejemplo de despliegue usa `-c 4096`, y no se documenta el rendimiento real con contextos largos.
+- Sesgos: no se documentan evaluaciones de sesgo o toxicidad en la información proporcionada.
+- Métricas de evaluación limitadas: los benchmarks se basan en selección determinista de primer token, no en generación libre, por lo que pueden no reflejar el rendimiento en tareas generativas abiertas.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian-GGUF
-- Modelo base (checkpoint destilado): https://huggingface.co/s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian
-- Modelo original LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
+- Modelo GGUF en Hugging Face: https://huggingface.co/s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian-GGUF
+- Checkpoint base (no cuantizado): https://huggingface.co/s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian
+- Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Licencia LFM1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Modelo profesor: https://huggingface.co/google/gemma-4-12B-it
 - Dataset IndoMMLU: https://huggingface.co/datasets/indolem/IndoMMLU
 - Dataset XCOPA: https://huggingface.co/datasets/cambridgeltl/xcopa

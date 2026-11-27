@@ -2,53 +2,53 @@
 
 ## Resumen
 
-WePocketModel1.0-2B es un modelo multimodal de 1.881.825.088 parámetros (aproximadamente 1,88 mil millones) desarrollado por Tencent, orientado a ejecución en dispositivo (on-device) y a la generación de embeddings multimodales. Esta ficha corresponde a la versión cuantizada en GGUF publicada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo está etiquetado como multimodal, con soporte para embeddings multimodales, MRL (Matryoshka Representation Learning) y decisiones estructuradas (structured-decision).
+WePocketModel1.0-2B es un modelo multimodal de aproximadamente 1.880 millones de parametros (1.881.825.088 exactos segun los pesos en safetensors) desarrollado por Tencent. Esta disenado para ejecucion en dispositivo (on-device), con capacidades de embedding multimodal y toma de decisiones estructurada. La version aqui documentada es una cuantizacion GGUF estatica realizada por mradermacher sobre el modelo base original, lo que permite su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-La relevancia actual del modelo reside en su tamaño compacto, inferior a 2.000 millones de parámetros, combinado con capacidades multimodales y una licencia Apache 2.0 permisiva. Esto lo sitúa en el segmento de modelos pequeños que pueden ejecutarse en hardware de consumo o en el borde de la red, sin depender de infraestructura en la nube. La cuantización GGUF amplía aún más su accesibilidad, con variantes que van desde 1,1 GB (Q2_K) hasta 3,9 GB (f16).
+El modelo pertenece a la familia de modelos compactos orientados a inferencia local, un segmento que gana relevancia a medida que crece la demanda de asistentes y pipelines de IA que funcionan sin depender de la nube. Su tamano de 2B parametros lo situa en el rango de modelos que caben comodamente en GPUs de consumo, e incluso en CPU con cuantizaciones agresivas.
 
-No obstante, la información disponible sobre el modelo base es limitada: no se documentan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. El único idioma declarado es el inglés. La model card de la versión GGUF es fundamentalmente logística (lista de cuantizaciones y notas de uso), sin detalles técnicos del modelo original.
+La ficha se centra en la version GGUF publicada por mradermacher, que incluye tanto los pesos del modelo de lenguaje como el proyector multimodal (mmproj) necesario para el procesamiento de imagenes. La informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada, por lo que varios apartados se marcan explicitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo multimodal; etiquetas: multimodal, multimodal-embedding, MRL, structured-decision) |
-| Parametros totales | 1.881.825.088 (~1,88 B) |
+| Arquitectura | no disponible (modelo multimodal con proyector mmproj; detalles del backbone no especificados) |
+| Parametros totales | 1.881.825.088 (~1,88B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-f16 y mmproj-Q8_0 para el componente multimodal |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base tencent/WePocketModel1.0-2B) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Las etiquetas del repositorio indican que se trata de un modelo multimodal con capacidades de embeddings multimodales, que emplea MRL (Matryoshka Representation Learning, una técnica que permite truncar embeddings a distintas dimensiones manteniendo su utilidad) y que soporta decisiones estructuradas. El tamaño del repositorio GGUF es de 19,2 GB, coherente con la suma de todas las cuantizaciones publicadas.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base (tencent/WePocketModel1.0-2B) en la informacion proporcionada. Los tags del repositorio indican que se trata de un modelo multimodal con soporte de embedding multimodal (tag `multimodal-embedding`), representacion multinivel/multi-resolucion (tag `mrl`) y decision estructurada (tag `structured-decision`), ademas de estar orientado a ejecucion en dispositivo (`on-device`). El repositorio GGUF incluye un proyector multimodal separado (mmproj), lo que confirma la presencia de un encoder visual conectado al modelo de lenguaje.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card de la versión cuantizada es una plantilla estándar de mradermacher que solo describe el proceso de cuantización estática (quantize_version 2, convert_type hf) y los archivos generados. No se han publicado cuantizaciones ponderadas o con imatrix para este modelo, según indica el propio autor.
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras etapas de alineamiento. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La cuantizacion de mradermacher es estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf), generada con llama.cpp a partir de los pesos en formato Hugging Face.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` y la librería `transformers` sugieren uso en diálogo, aunque no se detallan capacidades específicas de razonamiento.
-- Procesamiento multimodal: incluye archivos `mmproj` (proyección multimodal) en f16 y Q8_0, lo que indica soporte de entrada de imágenes junto con texto.
-- Embeddings multimodales: etiqueta `multimodal-embedding`, orientado a representaciones vectoriales conjuntas de texto e imagen.
-- MRL (Matryoshka Representation Learning): permite generar embeddings truncables a diferentes dimensiones, útil para búsqueda y recuperación con distintos presupuestos de almacenamiento.
-- Decisiones estructuradas: etiqueta `structured-decision`, que sugiere salidas en formatos estructurados para toma de decisiones o clasificación.
-- Ejecución on-device: diseñado para inferencia local en dispositivos con recursos limitados.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Modo thinking, visión, audio: solo se confirma visión (componente mmproj); audio y modo thinking no disponibles.
+- Generacion de texto conversacional (tag `conversational`).
+- Procesamiento multimodal: el repositorio incluye proyector mmproj, lo que habilita entrada de imagenes junto a texto.
+- Embedding multimodal: el modelo esta disenado para producir representaciones vectoriales de contenido multimodal, util para busqueda y recuperacion.
+- Toma de decisiones estructurada (structured-decision): orientado a tareas donde la salida debe seguir un esquema o formato predefinido.
+- Representacion multinivel (MRL): permite truncar embeddings a distintas dimensiones, util para indexacion escalable.
+- Optimizado para ejecucion en dispositivo (on-device): bajo requisito de recursos.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Modo thinking, audio: no disponible.
 
 ## Casos de uso
 
-- Búsqueda multimodal en dispositivo: el modelo puede generar embeddings conjuntos de texto e imagen para un sistema de recuperación local, gracias a su soporte MRL que permite ajustar la dimensión del vector al presupuesto de memoria del dispositivo.
-- Clasificación y enrutamiento con salidas estructuradas: la etiqueta `structured-decision` lo hace adecuado para tareas de clasificación o enrutamiento donde se requiere una salida en formato fijo, ejecutándose localmente sin latencia de red.
-- Asistente conversacional embebido: con cuantizaciones de 1,1 a 1,5 GB (Q2_K a Q5_K_M), puede integrarse en aplicaciones de escritorio o móviles para diálogo básico en inglés sin conexión.
-- Procesamiento de documentos con imágenes en el borde: combinando el modelo principal con `mmproj-Q8_0` (0,5 GB), es posible extraer representaciones de capturas, formularios o figuras en un pipeline local.
-- Prototipado rápido de sistemas RAG multimodales: al ser un modelo pequeño con licencia Apache 2.0, sirve para validar arquitecturas de recuperación aumentada antes de escalar a modelos mayores.
-- Filtrado y deduplicación de datasets: los embeddings multimodales permiten agrupar y deduplicar pares texto-imagen en pipelines de curación de datos ejecutados en hardware modesto.
-- Inferencia en dispositivos sin GPU dedicada: las variantes Q4_K_S y Q4_K_M (1,3-1,4 GB) caben en memoria RAM de sistemas integrados, permitiendo despliegues en Raspberry Pi o mini-PC.
+- Busqueda semantica multimodal local: el modelo puede generar embeddings de texto e imagen en el mismo espacio vectorial, permitiendo construir indices de busqueda que funcionan enteramente en el dispositivo sin enviar datos a la nube. La capacidad MRL permite ajustar la dimension del vector al presupuesto de almacenamiento.
+- Clasificacion y enrutamiento estructurado: gracias a su orientacion a decision estructurada, puede emplearse para clasificar tickets, correos o documentos en categorias predefinidas con salida en formato JSON, integrándose en pipelines de automatizacion.
+- Asistentes de accesibilidad en dispositivo: un modelo de 2B cuantizado a Q4 cabe en moviles y portatiles modestos, permitiendo describir imagenes o responder preguntas sobre contenido visual sin conexion.
+- Moderacion de contenido local: analisis de texto e imagen para detectar contenido inapropiado en aplicaciones de mensajeria o foros, con inferencia en el propio dispositivo para preservar la privacidad.
+- Prototipado rapido de aplicaciones multimodales: al estar disponible en GGUF, se puede cargar en llama.cpp u Ollama para validar ideas de producto con un coste de infraestructura minimo antes de escalar a modelos mayores.
+- Extraccion de informacion de documentos escaneados: combinando el encoder visual y el modelo de lenguaje, puede extraer campos estructurados de facturas o formularios en entornos de oficina sin GPU dedicada.
+- Sistemas de recomendacion basados en contenido visual: los embeddings multimodales permiten comparar imagenes de producto con descripciones textuales para generar recomendaciones en tiendas online.
 
 ## Benchmarks y rendimiento
 
@@ -56,39 +56,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (modelo principal, sin mmproj): Q2_K ~1,1 GB; Q4_K_M ~1,4 GB; Q8_0 ~2,1 GB; f16 ~3,9 GB. Añadir 0,5 GB (mmproj-Q8_0) u 0,8 GB (mmproj-f16) si se usa la entrada multimodal.
-- GPU recomendadas: al tratarse de un modelo de menos de 2 B parámetros, cualquier GPU con 4 GB o más de VRAM es suficiente; una RTX 3060, RTX 4060 o superior permite ejecutar la variante f16 con holgura. No requiere A100 ni H100.
-- GPU de consumo: sí cabe en todas las GPU de consumo actuales (GTX 1060 6 GB, RTX 2060, RTX 3050, RTX 4090, etc.), incluso en las variantes de mayor calidad.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no soportan GGUF de forma nativa, por lo que requerirían el modelo base en safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño, se espera inferencia en tiempo real en CPU moderna y muy rápida en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB con Q2_K, 1,3-1,4 GB con Q4_K_S/Q4_K_M, 1,7 GB con Q6_K y 2,1 GB con Q8_0. El proyector multimodal anade 0,5 GB (Q8_0) o 0,8 GB (f16).
+- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM libre; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradamente suficientes. El modelo esta pensado para hardware mucho mas modesto.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna e incluso en GPUs integradas con memoria compartida suficiente.
+- Ejecucion en CPU: viable con cuantizaciones Q4 y Q2; el modelo de 2B es manejable en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El repositorio esta marcado como `endpoints_compatible`. Para los pesos originales en safetensors, transformers con el modelo base de Tencent.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| WePocketModel1.0-2B (esta ficha) | ~1,88 B | no disponible | Sí (mmproj) | Apache 2.0 | GGUF, safetensors |
-| Qwen2-VL-2B | ~2 B | no disponible en esta ficha | Sí | Apache 2.0 (según versión) | safetensors, GGUF |
-| SmolVLM-2B | ~2 B | no disponible en esta ficha | Sí | Apache 2.0 | safetensors, GGUF |
-| PaliGemma-3B | ~3 B | no disponible en esta ficha | Sí | Gemma license | safetensors |
+| WePocketModel1.0-2B (esta ficha) | ~1,88B | no disponible | si (mmproj) | apache-2.0 | GGUF, safetensors |
+| Qwen2-VL-2B | ~2B | no disponible en esta ficha | si | apache-2.0 | safetensors, GGUF |
+| SmolVLM-2B | ~2B | no disponible en esta ficha | si | apache-2.0 | safetensors, GGUF |
 
-No se dispone de datos de rendimiento comparativo para WePocketModel1.0-2B, por lo que la comparación se limita a parámetros, licencia y disponibilidad de formato. Los modelos alternativos citados son referencias habituales en el segmento de modelos multimodales pequeños, pero sus especificaciones exactas no se han verificado en la información proporcionada y deben consultarse en sus respectivas fichas.
+La comparativa se limita a modelos de tamano y perfil similares (multimodales compactos con licencia permisiva). No se dispone de datos de rendimiento comparativo para WePocketModel1.0-2B en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el modelo solo declara soporte de inglés; su uso en castellano u otros idiomas no está garantizado y probablemente degrade la calidad.
-- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad; al ser un modelo pequeño y sin información sobre el dataset, el riesgo de sesgos no cuantificados es alto.
-- Alucinación: sin benchmarks ni documentación de alineación, no es posible estimar la tasa de alucinación; en modelos pequeños esta suele ser elevada, especialmente en tareas de razonamiento.
-- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar su uso en tareas de contexto largo.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (tencent/WePocketModel1.0-2B) y de los pesos multimodales, ya que la ficha solo confirma la licencia de esta versión cuantizada.
-- Cuantizaciones de baja calidad: Q2_K y Q3_K_S pueden degradar notablemente la calidad; el autor recomienda Q4_K_S o Q4_K_M para un equilibrio entre tamaño y fidelidad.
-- Ausencia de cuantizaciones ponderadas: no hay versiones con imatrix, lo que puede afectar a la calidad en cuantizaciones bajas frente a alternativas que sí las ofrecen.
-- Producción: sin benchmarks, sin documentación de arquitectura y con cero descargas registradas en el momento de la ficha, no se recomienda su uso en producción sin una evaluación previa exhaustiva.
+- Idioma: el modelo solo declara soporte de ingles; su rendimiento en castellano u otros idiomas no esta garantizado.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; como todo modelo entrenado con datos web, es probable que herede sesgos de esos datos.
+- Riesgo de alucinacion: presente, como en cualquier modelo generativo de este tamano; la verificacion de salidas es recomendable en produccion.
+- Contexto: se desconoce la longitud maxima de contexto, lo que impide garantizar conversaciones largas o documentos extensos.
+- Licencia: apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base original de Tencent por si anaden restricciones adicionales.
+- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad; para produccion se recomienda Q4_K_M o superior.
+- El modelo esta orientado a dispositivo y su capacidad de razonamiento complejo es limitada en comparacion con modelos mayores; no es adecuado para tareas que requieran conocimiento factual extenso o razonamiento multi-paso sofisticado.
+- La informacion publica sobre el modelo base es escasa; antes de usarlo en produccion conviene validar el comportamiento real con un conjunto de evaluacion propio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/WePocketModel1.0-2B-GGUF
 - Modelo base: https://huggingface.co/tencent/WePocketModel1.0-2B
-- Página de descargas del autor: https://hf.tst.eu/model#WePocketModel1.0-2B-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/WePocketModel1.0-2B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#WePocketModel1.0-2B-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

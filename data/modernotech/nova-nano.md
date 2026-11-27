@@ -2,87 +2,86 @@
 
 ## Resumen
 
-Nova Nano 1.0 es una redistribución del modelo LiquidAI/LFM2.5-350M en formato GGUF con cuantización Q4_K_M, publicada por ModernoTech bajo la familia comercial "Nova Edge". No se trata de un modelo entrenado desde cero: el repositorio documenta explícitamente que Moderno Tech redistribuye el artefacto original verificado sin modificar pesos, arquitectura, tokenizador, prompts ni parámetros de inferencia. El modelo base es un transformer de 350M parámetros (354.483.968 según los safetensors del repositorio original) desarrollado por Liquid AI.
+Nova Nano es un modelo de lenguaje conversacional de tipo "edge" desarrollado por Moderno Tech dentro de su familia Nova AI. Se trata de un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, con 354.483.968 parámetros totales (aproximadamente 354 M) y un tamaño de repositorio de 0,2 GB. Su propósito declarado es llevar capacidades de IA generativa a dispositivos con recursos extremadamente limitados (teléfonos, tablets, portátiles modestos) mediante ejecución local en el navegador, reduciendo la dependencia de servidores de inferencia centralizados.
 
-Con 350M parámetros y un archivo de 229.312.224 bytes (~219 MB) en Q4_K_M, Nova Nano está pensado para despliegue en el extremo (edge): dispositivos con recursos limitados, inferencia local en CPU y escenarios donde el coste por token y la huella de memoria son críticos. Soporta ocho idiomas (inglés, español, árabe, chino, francés, alemán, japonés y coreano) y está etiquetado como conversacional y de generación de texto.
+El modelo se distribuye principalmente en formato GGUF cuantizado, lo que facilita su integración con motores de inferencia ligeros compatibles con entornos de navegador y hardware de gama baja. Forma parte de una estrategia de tres niveles (Nova Nano, Nova Mini y Nova Spark) en la que el usuario selecciona el modelo adecuado según la memoria y capacidad de su dispositivo.
 
-Su relevancia actual radica en la disponibilidad de un artefacto GGUF verificado con hash SHA-256 publicado, lo que facilita la reproducibilidad en pipelines de despliegue. La licencia es la LFM Open License v1.0 del autor original, no una licencia permisiva estándar, lo que condiciona el uso comercial.
+La relevancia actual de Nova Nano radica en su enfoque de eficiencia extrema: con menos de 400 M de parámetros y cuantización agresiva, busca ofrecer una experiencia conversacional aceptable en hardware que no puede ejecutar modelos de miles de millones de parámetros. No obstante, la información técnica pública disponible es escasa y no se han publicado resultados de benchmarks ni detalles sobre el proceso de entrenamiento o ajuste.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base LiquidAI/LFM2.5-350M); detalles internos no disponibles en la informacion proporcionada |
-| Parametros totales | 354.483.968 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base: LiquidAI/LFM2.5-350M) |
+| Parámetros totales | 354.483.968 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unica variante publicada en este repositorio) |
+| Tipos de cuantización | GGUF cuantizado (variantes concretas no especificadas) |
 | Idiomas soportados | en, es, ar, zh, fr, de, ja, ko |
-| Licencia | LFM Open License v1.0 (etiquetada como "other") |
-| Formato de pesos | GGUF (archivo `LFM2.5-350M-Q4_K_M.gguf`, 229.312.224 bytes) |
+| Licencia | other (términos no detallados en la información disponible) |
+| Formato de pesos | GGUF (repositorio de 0,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al modelo base LiquidAI/LFM2.5-350M, un transformer de 350M parámetros. El repositorio de ModernoTech no aporta detalles sobre la composición del dataset de entrenamiento, el número de tokens, ni si hubo fases de RLHF o DPO; esa información residiría en la documentación del autor original (Liquid AI), que no se incluye en la información proporcionada. Tampoco se documentan innovaciones técnicas específicas del modelo base en esta ficha.
+No se dispone de información detallada sobre la arquitectura interna de Nova Nano más allá de que deriva del modelo base LiquidAI/LFM2.5-350M. No se especifica si emplea un transformer convencional, una arquitectura híbrida, atención lineal u otro diseño. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado durante el fine-tune.
 
-Lo relevante desde el punto de vista de distribución es que Nova Nano no introduce cambios: los pesos se redistribuyen tal cual, con el tokenizador y los parámetros de inferencia originales. El artefacto publicado incluye un SHA-256 (`7e6f72643caafc9a68256686638c4d7916f2cec76d1df478d4c3ddcd95a6aed4`) que permite verificar la integridad de la descarga. La model card indica `inference: false`, es decir, no se ofrece un endpoint de inferencia gestionado en el Hub.
+La model card se centra en la filosofía de producto (ejecución local, accesibilidad, reducción de costes de infraestructura) y en la descripción de la familia Nova AI, pero no aporta detalles técnicos sobre el proceso de entrenamiento, las innovaciones arquitectónicas ni las metodologías de alineación empleadas. Esta ausencia de información impide evaluar rigurosamente la calidad del ajuste o las técnicas de optimización aplicadas.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, según las etiquetas `text-generation` y `conversational`.
-- Soporte multilingüe en ocho idiomas: inglés, español, árabe, chino, francés, alemán, japonés y coreano.
-- Inferencia local en runtime compatible con GGUF (llama.cpp y derivados).
-- No se documenta soporte de tool calling ni function calling en la información disponible.
-- No se documenta soporte de agentes ni razonamiento multi-paso explícito.
-- No se documentan capacidades de visión, audio ni modo "thinking".
-- No se documentan capacidades específicas de código o matemáticas.
+- Generación de texto conversacional multi-turno, orientada a un uso de asistente local.
+- Soporte multilingüe declarado para ocho idiomas: inglés, español, árabe, chino, francés, alemán, japonés y coreano.
+- Ejecución local en dispositivos de recursos limitados mediante motores de inferencia compatibles con GGUF.
+- Integración prevista en entornos de navegador para inferencia en el dispositivo del usuario.
+- No se documenta soporte de tool calling, function calling ni capacidades de agente multi-paso.
+- No se documenta soporte de visión, audio ni modos de razonamiento extendido (thinking mode).
+- No se especifican capacidades de generación de código o matemáticas más allá de las heredadas del modelo base, sin datos verificables.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivo: con ~219 MB en Q4_K_M, el modelo puede ejecutarse en CPU en portátiles, Raspberry Pi de gama alta o móviles, gestionando diálogos simples sin conexión a red.
-- Clasificación y etiquetado de texto en local: para tareas de categorización de tickets, correos o reseñas en pipelines por lotes donde no se quiere enviar datos a la nube.
-- Preprocesado y reescritura de texto: normalización, resumen breve o reformulación de fragmentos en aplicaciones de edición, aprovechando el bajo coste de inferencia.
-- Prototipado rápido de aplicaciones LLM: al ser un GGUF pequeño y verificado por hash, sirve para validar pipelines de inferencia (llama.cpp, Ollama) antes de escalar a modelos mayores.
-- Filtrado y moderación ligera en el borde: primera pasada de detección de contenido o respuestas automáticas en dispositivos con recursos limitados.
-- Soporte multilingüe básico en aplicaciones embebidas: traducción o asistencia conversacional en los ocho idiomas soportados dentro de interfaces de bajo consumo.
-- Educación y experimentación: modelo de tamaño reducido para estudiar comportamiento de LLM, cuantización y despliegue en entornos académicos.
+- Asistente conversacional en navegador: el modelo puede cargarse en la memoria del dispositivo y procesar consultas localmente, lo que permite ofrecer un chat básico sin enviar cada mensaje a un servidor central, reduciendo la dependencia de infraestructura de inferencia.
+- Aplicaciones móviles de asistencia básica: con 354 M de parámetros y cuantización GGUF, puede integrarse en teléfonos y tablets para respuestas conversacionales simples, siempre que la memoria disponible y el motor de inferencia lo permitan.
+- Prototipado rápido de interfaces de IA local: desarrolladores que necesiten validar una experiencia de chat sin costes de API pueden desplegar Nova Nano en local para pruebas de concepto.
+- Educación y demos de IA en el dispositivo: útil para mostrar el funcionamiento de un modelo generativo ejecutándose íntegramente en hardware de gama baja, con fines divulgativos o formativos.
+- Asistencia offline en entornos con conectividad limitada: cuando el sistema de descarga y almacenamiento lo permita, el modelo puede ejecutarse sin conexión para tareas conversacionales básicas.
+- Filtrado o clasificación de texto ligera: aunque no se documenta explícitamente, un modelo de este tamaño puede emplearse en tareas de preprocesado o generación de respuestas cortas en pipelines de bajo coste.
+- Integración en aplicaciones de escritorio modestas: portátiles y equipos sin GPU dedicada pueden ejecutar el modelo cuantizado para funcionalidades de asistencia integrada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: ~219 MB para los pesos en Q4_K_M, más overhead de contexto y runtime; en la práctica, menos de 1 GB de RAM para ventanas de contexto moderadas (estimación, no dato oficial).
-- GPU recomendadas: no se especifican; por tamaño, cualquier GPU con al menos ~1 GB de memoria libre es suficiente, incluidas integradas.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna e incluso en CPU.
-- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (la model card menciona llama.cpp explícitamente); Ollama u otros derivados no se confirman en la documentación.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 354 M de parámetros y cuantización GGUF, el modelo puede ocupar del orden de cientos de MB en memoria, aunque no se especifican las variantes de cuantización ni sus tamaños exactos.
+- GPU recomendadas: no disponibles; el enfoque del modelo es la ejecución en CPU y dispositivos de gama baja, no en GPU de datacenter.
+- Compatibilidad con GPU de consumo: previsiblemente sí en GPUs de gama baja y en CPU, pero no se aportan datos verificables de VRAM ni de rendimiento.
+- Opciones de despliegue: motores de inferencia compatibles con GGUF (por ejemplo, llama.cpp u Ollama) y motores orientados a navegador, aunque la model card no confirma integraciones concretas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Nova Nano 1.0 (este) | 354M | no disponible | GGUF Q4_K_M | LFM Open License v1.0 | Redistribucion de LFM2.5-350M |
-| LiquidAI/LFM2.5-350M | 350M | no disponible | safetensors/GGUF (original) | LFM Open License v1.0 | Modelo base original |
-| Alternativas de ~350M (p. ej. Qwen2.5-0.5B, SmolLM2-360M) | ~350-500M | no disponible en esta ficha | safetensors/GGUF | varian | No comparadas con datos de benchmark en la informacion disponible |
+| Nova Nano | 354 M | no disponible | other | GGUF | Fine-tune de LFM2.5-350M, orientado a edge |
+| LiquidAI/LFM2.5-350M | ~350 M | no disponible | no disponible | no disponible | Modelo base del que deriva Nova Nano |
+| Modelos edge de <1 B (genéricos) | <1 B | variable | variable | GGUF, safetensors | Alternativas de la misma categoría; no se dispone de datos concretos para comparar rendimiento |
 
-No se dispone de datos de rendimiento comparativo en la información proporcionada; la comparativa se limita a parámetros, formato y licencia.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Es una redistribución, no un modelo propio: cualquier mérito o defecto del comportamiento proviene de LiquidAI/LFM2.5-350M.
-- Con 350M parámetros, la capacidad de razonamiento, conocimiento factual y coherencia en contextos largos es limitada en comparación con modelos de miles de millones de parámetros; riesgo elevado de alucinación en preguntas factuales.
-- La cuantización Q4_K_M introduce pérdida adicional de calidad frente a los pesos originales en precisión completa.
-- No se documenta la longitud de contexto soportada; asumir ventanas cortas salvo verificación con el modelo base.
-- Licencia LFM Open License v1.0: no es una licencia permisiva estándar; es imprescindible revisar los términos del repositorio original antes de cualquier uso comercial.
-- Idiomas soportados declarados por el autor, pero sin evaluación publicada de calidad por idioma en esta ficha.
-- Sin datos de benchmarks, sesgos o evaluaciones de seguridad en la información disponible.
-- La model card marca `inference: false`: no hay endpoint gestionado en el Hub.
+- La model card no documenta sesgos conocidos, pero un modelo de este tamaño y con datos de entrenamiento no especificados presenta riesgo de sesgos no evaluados.
+- Riesgo elevado de alucinación y de respuestas inexactas debido al reducido número de parámetros y a la falta de benchmarks publicados.
+- Longitud de contexto no documentada, lo que impide garantizar conversaciones multi-turno extensas.
+- El soporte multilingüe se declara para ocho idiomas, pero no se aportan evaluaciones de calidad por idioma.
+- La licencia es "other" y no se detallan los términos; es imprescindible revisar las condiciones antes de un uso comercial.
+- No se documentan capacidades de tool calling, agentes ni razonamiento avanzado; no debe asumirse su disponibilidad en producción.
+- La ejecución en navegador depende de la memoria del dispositivo, el motor de inferencia y el soporte de hardware; no se garantiza compatibilidad universal.
+- No se debe prometer privacidad absoluta ni funcionamiento offline sin verificar las condiciones reales de la plataforma.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Nano
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Nano
+- Sitio oficial de Moderno Tech: https://moderno.com.ar
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
-- Repositorio GGUF original: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
-- Licencia LFM Open License v1.0: disponible en el repositorio del modelo base (no se incluye URL directa en la información proporcionada)

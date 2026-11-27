@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/CaptainErisNebula-12B-AE-v0.420R-GGUF",
+  "slug": "mradermacher-captainerisnebula-12b-ae-v0-420r-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CaptainErisNebula-12B-AE-v0.420R-GGUF",
+  "created_at": "2025-09-08T08:04:05.000Z",
+  "updated_at": "2026-11-27T02:37:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Nitral-Archive/CaptainErisNebula-12B-AE-v0.420R",
+    "base_model:quantized:Nitral-Archive/CaptainErisNebula-12B-AE-v0.420R",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692265408,
+  "storage_human": "84.7 GB",
+  "context_length": 1024000,
+  "base_model": "Nitral-Archive/CaptainErisNebula-12B-AE-v0.420R",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

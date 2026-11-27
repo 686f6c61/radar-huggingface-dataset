@@ -88,31 +88,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "UNED | Universidad Nacional de Educación a Distancia",
-      "url": "https://www.uned.es/universidad/inicio/en/",
-      "snippet": "Universidad Nacional de Educación a Distancia (UNED). pública, Grados, posgrados, másteres, investigación, formación permanente"
-    },
-    {
-      "title": "La educación de las emociones desde el Modelo de Mayer y …",
-      "url": "https://extension.uned.es/archivos_publicos/webex_actividades/4980/ieimaciel03.pdf",
-      "snippet": "Introducción Las instituciones del siglo XXI han asumido la necesidad de educar a las personas en los nuevos conocimientos …"
-    },
-    {
-      "title": "Másteres Universitarios",
-      "url": "https://www.uned.es/universidad/inicio/en/estudios/masteres.html",
-      "snippet": "master universitarios de artes y humanidades,ciencias, ciencias sociales y juridicas,ciencias de la salud, ingeniería y aquitectura"
-    },
-    {
-      "title": "GlobalProtect Portal",
-      "url": "https://bielsa.uned.es/",
-      "snippet": "Por favor introduzca sus credenciales de Campus UNED. Proceda a bajarse el Cliente de conexión en función del sistema operativo …"
-    },
-    {
-      "title": "Acceso al Campus Virtual",
-      "url": "https://login.uned.es/ssouned/login.jsp",
-      "snippet": "Acceso al Campus Virtual de la Universidad Nacional de Educación a Distancia (UNED)."
-    }
-  ]
+  "sources": []
 }

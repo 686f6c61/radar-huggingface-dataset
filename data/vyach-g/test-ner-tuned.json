@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "vyach-g/test-ner-tuned",
+  "slug": "vyach-g-test-ner-tuned",
+  "author": "vyach-g",
+  "url": "https://huggingface.co/vyach-g/test-ner-tuned",
+  "created_at": "2026-08-25T22:11:54.000Z",
+  "updated_at": "2026-11-26T22:47:28.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "ner",
+    "de",
+    "dataset:lschoen/germeval14_ner",
+    "base_model:deepset/gbert-base",
+    "base_model:quantized:deepset/gbert-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110097228,
+  "storage_human": "110 MB",
+  "context_length": null,
+  "base_model": "deepset/gbert-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

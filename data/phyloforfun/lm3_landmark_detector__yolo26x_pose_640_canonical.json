@@ -46,11 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models – Hugging Face",
-      "url": "https://huggingface.co/models?other=leafmachine3",
-      "snippet": "phyloforfun/lm3_landmark_detector__yolo26x_pose_640 Keypoint Detection •Updated about 3 hours ago• 28"
-    }
-  ]
+  "sources": []
 }

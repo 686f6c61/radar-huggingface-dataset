@@ -2,99 +2,100 @@
 
 ## Resumen
 
-Clear es un modelo de mejora de voz (speech enhancement) desarrollado por Desert Ant Labs que opera íntegramente en el dispositivo. Su función es triple: eliminar ruido de fondo, eliminar reverberación de sala (dereverb) y normalizar la sonoridad de la señal resultante, entregando audio a 48 kHz con una calidad que el autor describe como "de estudio". Está pensado para podcasters, creadores de vídeo y aplicaciones de voz que necesitan limpiar grabaciones hechas con micrófonos Bluetooth, micrófonos integrados de portátil o de teléfono, en entornos domésticos u hostiles (cafeterías, oficinas sin tratar, habitaciones de hotel).
+Clear es un modelo de mejora de voz (speech enhancement) desarrollado por Desert Ant Labs, diseñado para ejecutarse íntegramente en el dispositivo. Resuelve tres problemas clásicos del audio grabado en condiciones no controladas: reducción de ruido de fondo, eliminación de reverberación (dereverb) y normalización de sonoridad, produciendo una salida a 48 kHz con un carácter "de estudio". Está pensado para podcasters, creadores de vídeo y aplicaciones de voz que necesitan calidad de estudio sin depender de servicios en la nube.
 
-El modelo se distribuye principalmente como artefactos ligeros para inferencia en producción: pesos en formato TFLite y ONNX, con soporte para Core ML (Apple Neural Engine) en iOS, macOS, tvOS y visionOS, LiteRT en Android, Linux, Windows y navegador, y un núcleo nativo precompilado para Node. El repositorio de Hugging Face ocupa 0,3 GB, lo que confirma que no es un modelo de lenguaje de gran tamaño sino un modelo de audio compacto optimizado para latencia y despliegue móvil.
+El modelo se distribuye como pesos precompilados para múltiples runtimes: Core ML (aprovechando la Apple Neural Engine en iOS, macOS, tvOS y visionOS), LiteRT/TFLite y ONNX para Android, Linux, Windows, navegador y Node. El repositorio ocupa 0,3 GB e incluye los artefactos necesarios para cada plataforma. La licencia es propietaria de tipo "source-available" (desert-ant-labs-source-available), no open source en sentido estricto.
 
-La relevancia actual del modelo reside en que cubre una necesidad muy concreta —procesado de audio profesional sin coste de nube ni envío de datos a terceros— con un SDK multiplataforma y una licencia source-available. No se dispone de información pública sobre su arquitectura interna, número de parámetros ni composición del dataset de entrenamiento.
+La relevancia actual del modelo radica en su enfoque on-device: elimina la latencia de red y el coste por minuto de procesamiento en la nube, algo crítico para apps de grabación y comunicación en tiempo real. No se dispone de información pública sobre la arquitectura interna, el número de parámetros ni los datos de entrenamiento.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de audio-to-audio para mejora de voz) |
+| Arquitectura | no disponible |
 | Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (procesa audio; ventana de procesado no especificada) |
-| Tipos de cuantización | no disponible (se distribuyen artefactos TFLite, ONNX y Core ML) |
-| Idiomas soportados | no disponible (procesado de voz, independiente del idioma en principio) |
-| Licencia | desert-ant-labs-source-available (source-available, no open source) |
-| Formato de pesos | TFLite, ONNX, Core ML |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (procesa audio, no texto) |
+| Tipos de cuantización | no disponible (se distribuyen pesos precompilados para Core ML, LiteRT/TFLite y ONNX) |
+| Idiomas soportados | no disponible (procesamiento de audio independiente del idioma) |
+| Licencia | desert-ant-labs-source-available (propietaria, "other") |
+| Formato de pesos | Core ML, LiteRT/TFLite, ONNX |
 | Frecuencia de salida | 48 kHz |
-| Canales | mono por defecto; estéreo opcional (coste ~1,8x por pasada adicional) |
-| Tamaño del repositorio | 0,3 GB |
-| Variantes | clear-studio (por defecto) y clear-natural |
 | Plataformas | iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador, Node |
+| Variantes | clear-studio (por defecto), clear-natural |
+| Versión de pesos | v0.3.0 |
+| Tamaño del repositorio | 0,3 GB |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo en la documentación disponible. Por la naturaleza de la tarea (audio-to-audio, denoising, dereverb y normalización de sonoridad) y por el formato de despliegue (TFLite, ONNX, Core ML), se trata de una red neuronal compacta optimizada para inferencia en dispositivo, probablemente con arquitectura de tipo encoder-decoder sobre representaciones espectrales o formas de onda, pero esto no está confirmado por el autor.
+No se ha publicado información sobre la arquitectura interna del modelo (tipo de red, número de capas, parámetros o mecanismo de procesamiento). La model card únicamente describe el comportamiento funcional: procesa una señal de audio ruidosa y reverberante y devuelve audio limpio a 48 kHz con sonoridad normalizada. El modelo procesa un canal por pasada de inferencia; el modo estéreo implica dos pasadas (medido en 1,8 veces el coste de una pasada mono según el autor).
 
-Tampoco se dispone de datos sobre el número de tokens o horas de audio de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o ajuste fino supervisado. El modelo se ofrece en dos variantes (clear-studio y clear-natural) del mismo tamaño y velocidad, que se diferencian únicamente en el carácter sonoro de la salida: clear-studio produce silencios cercanos a cero absoluto y un carácter más "de estudio", mientras que clear-natural preserva mayor textura vocal. Solo el SDK de Swift permite seleccionar variante mediante `Clear(variant: .clearNatural)`.
-
-Como innovación destacable, el SDK realiza un masterizado conjunto de canales con una única ganancia y una única envolvente de limitador aplicada a todos los canales, preservando la imagen estéreo original. También expone métricas de proceso como `realtimeFactor`, `measuredLUFS`, `measuredTruePeakDBFS` y `phaseTimings.modelPredictSec`.
+Tampoco se detallan los datos de entrenamiento, el volumen de horas de audio utilizadas, la composición del dataset ni si se emplearon técnicas de entrenamiento adversarial, discriminadores o ajuste fino perceptual. La model card menciona explícitamente que el modelo no introduce artefactos de bombeo (pumping) ni ruido musical, y que preserva respiraciones, plosivas y textura vocal, lo que sugiere un entrenamiento orientado a preservar la naturalidad de la voz, pero no se aportan detalles técnicos verificables.
 
 ## Capacidades
 
-- Eliminación de ruido de fondo: HVAC, clics de teclado, roces de ratón, golpes de micrófono, zumbido de sala, ventiladores de portátil y ruido ambiente de cafetería, sin degradar consonantes.
-- Eliminación de reverberación: reduce la reverberación de habitaciones sin tratar (dormitorios, oficinas, hoteles) sin añadir reverberación artificial.
-- Normalización de sonoridad: masterizado con presets de loudness (por ejemplo, `LoudnessPreset.SPOTIFY`), con medición de LUFS y true peak en dBFS.
-- Salida a 48 kHz, mono por defecto y estéreo opcional con preservación de la imagen estéreo.
-- Procesado en tiempo real o por lotes, con retorno del factor de tiempo real (`realtimeFactor`).
-- Ejecución 100 % en dispositivo: Apple Neural Engine vía Core ML, LiteRT en Android/Linux/Windows/navegador, núcleo nativo en Node.
-- API en Swift, Kotlin y JavaScript/TypeScript, con procesado en memoria (sin sistema de ficheros) y por fichero.
-- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multimodales: es un modelo de audio-to-audio especializado.
+- Reducción de ruido de fondo: elimina HVAC, clics de teclado, ruido de ratón, golpes de micrófono, zumbido de sala, ventiladores de portátil y ambiente de cafetería.
+- Eliminación de reverberación: reduce el eco de habitaciones sin tratar (dormitorios, oficinas, habitaciones de hotel) sin añadir reverberación artificial.
+- Normalización de sonoridad: ofrece presets de mastering (por ejemplo, Spotify) y medición de LUFS y true peak en dBFS.
+- Salida a 48 kHz, mono por defecto y estéreo opcional con mastering conjunto de canales (una ganancia y una envolvente de limitador compartidas).
+- Procesamiento on-device en Apple Neural Engine vía Core ML y en el resto de plataformas vía LiteRT/TFLite y ONNX.
+- Dos variantes de sonido (clear-studio y clear-natural), seleccionables solo desde el SDK de Swift.
+- API en Swift, Kotlin y JavaScript/TypeScript, con procesamiento en memoria o desde fichero.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-step, visión, audio-a-texto ni multilingüismo textual, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Podcasting en movilidad: grabar en una cafetería o habitación de hotel y obtener audio con ruido y reverberación reducidos y sonoridad normalizada a 48 kHz, listo para publicar sin pasar por una suite de postproducción.
-- Creación de vídeo para redes: limpiar la pista de voz de grabaciones hechas con micrófono integrado de portátil o teléfono antes de montar el vídeo, manteniendo la textura vocal y sin artefactos de bombeo.
-- Aplicaciones de voz móviles: integrar el SDK de iOS o Android para preprocesar el audio del usuario antes de enviarlo a un motor de reconocimiento de voz o a un asistente conversacional, reduciendo errores de transcripción en entornos ruidosos.
-- Reuniones y grabación de llamadas: procesar audio capturado por grabadoras de reunión o micrófonos Bluetooth para obtener una pista limpia y con nivel constante, sin subir el audio a la nube.
-- Herramientas de edición en navegador: usar la distribución JavaScript con LiteRT para ofrecer limpieza de voz directamente en el navegador, sin backend ni coste de servidor.
-- Pipelines de postproducción en servidor: emplear el paquete de Node con núcleo nativo para procesar lotes de episodios o clips en CI/CD o en un servicio interno, con métricas de true peak y LUFS para control de calidad.
-- Aplicaciones de accesibilidad: mejorar la inteligibilidad de grabaciones de voz para personas con dificultades auditivas o para subtitulado automático, eliminando reverberación y ruido de fondo.
+- Grabación de podcast en entornos ruidosos: el modelo limpia la señal de un micrófono integrado o Bluetooth grabada en una cafetería y la convierte en audio con sonoridad de estudio, sin subir el audio a la nube.
+- Creación de vídeo para redes: normaliza la pista de voz a un preset de loudness (por ejemplo, Spotify) y elimina el eco de una habitación sin tratar, integrable en apps de edición móvil.
+- Reuniones y notas de voz: mejora grabaciones de reuniones capturadas con el micrófono del portátil o del teléfono, reduciendo teclados y ventiladores antes de transcribir o archivar.
+- Aplicaciones de voz en tiempo real: al ejecutarse en la Neural Engine o en LiteRT, permite procesar audio en el dispositivo sin latencia de red, adecuado para apps de comunicación y grabación.
+- Procesamiento por lotes en servidor o CI: mediante el paquete de Node o la build nativa, se puede limpiar un catálogo de episodios de podcast en un pipeline automatizado.
+- Aplicaciones web de edición de audio: con la build de navegador (LiteRT.js) se puede ofrecer limpieza de voz sin backend, manteniendo el audio del usuario en su equipo.
+- Apps móviles multiplataforma: el mismo modelo cubre iOS (Core ML) y Android (LiteRT) con APIs nativas en Swift y Kotlin, reduciendo la fragmentación del stack de audio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta el coste relativo del modo estéreo frente al mono (1,8x por una pasada de inferencia adicional por canal) y expone métricas en tiempo de ejecución (`realtimeFactor`, `measuredLUFS`, `measuredTruePeakDBFS`), pero no se proporcionan valores absolutos de latencia, throughput ni métricas objetivas de calidad (PESQ, STOI, DNSMOS, etc.).
+No se han publicado resultados de benchmarks en la información disponible. La model card solo aporta una métrica operativa: el modo estéreo cuesta 1,8 veces una pasada mono (dos pasadas de inferencia, una por canal). No se ofrecen cifras de PESQ, STOI, DNSMOS, RTF ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El repositorio completo pesa 0,3 GB, por lo que el modelo cabe holgadamente en memoria de dispositivos móviles y en GPUs de consumo, pero no se publican cifras de memoria en inferencia.
-- GPU recomendadas: no aplica en el sentido habitual; el modelo está optimizado para Apple Neural Engine (Core ML) y para LiteRT en CPU/GPU móvil. Para servidor se puede usar el núcleo nativo de Node, pero no se especifican requisitos de GPU.
-- Compatibilidad con GPU de consumo: no se documenta; el diseño está orientado a ejecución en dispositivo (móvil, navegador, portátil), no a GPUs de escritorio dedicadas.
-- Opciones de despliegue: SDK oficial para Swift (iOS/macOS/tvOS/visionOS), Kotlin (Android), JavaScript/TypeScript (navegador con LiteRT y Node con núcleo nativo). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: solo se conoce el factor relativo del modo estéreo (1,8x respecto a mono). No se publican valores absolutos de latencia ni de tiempo real alcanzado por plataforma.
+- VRAM/RAM estimada: no disponible. El repositorio de pesos ocupa 0,3 GB, pero no se indica el consumo en ejecución.
+- GPU recomendadas: no aplica en el flujo principal; el modelo está optimizado para Apple Neural Engine (Core ML) y para CPU/NPU vía LiteRT en Android, Linux, Windows y navegador.
+- Compatibilidad con GPU de consumo: no se documenta soporte CUDA ni requisitos de GPU dedicada; el enfoque es on-device en CPU/NPU.
+- Opciones de despliegue: SDKs oficiales de Desert Ant Labs para Swift (Core ML), Kotlin (LiteRT) y JavaScript/TypeScript (LiteRT.js en navegador y core nativo en Node). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: solo se conoce el factor 1,8x del estéreo frente al mono; no se publican tiempos absolutos ni realtime factor de referencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente en la documentación proporcionada para establecer una comparativa rigurosa con alternativas concretas de la misma categoría (mejora de voz on-device). Se indica "no disponible" para parámetros, contexto y rendimiento de modelos comparables, ya que no se han facilitado datos de terceros ni benchmarks propios.
+| Modelo | Tipo | Contexto/entrada | Licencia | Despliegue on-device | Disponibilidad |
+|---|---|---|---|---|---|
+| Clear (desert-ant-labs) | Mejora de voz audio-audio | Audio, salida 48 kHz | Propietaria source-available | Sí (Core ML, LiteRT, ONNX) | Hugging Face, SDKs oficiales |
+| RNNoise | Supresión de ruido | Audio 48 kHz | BSD-3 | Sí (C, integrable) | GitHub |
+| DeepFilterNet | Supresión de ruido y dereverb | Audio 48 kHz | MIT/Apache (según versión) | Parcial (Rust/C, ONNX) | GitHub, Hugging Face |
+| Demucs (variantes de denoise) | Separación y limpieza | Audio | MIT | No orientado a móvil | GitHub |
 
-| Modelo | Parámetros | Contexto | Licencia | Despliegue on-device |
-|---|---|---|---|---|
-| Clear (desert-ant-labs) | no disponible | no aplica | source-available | Sí (Core ML, LiteRT, Node) |
-| Alternativas de la categoría | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks que permitan comparar la calidad objetiva de Clear frente a estas alternativas; la comparación se limita a licencia, plataformas y enfoque de despliegue.
 
 ## Limitaciones y advertencias
 
-- Licencia source-available, no open source: el uso comercial está sujeto a los términos de https://license.desertant.com/, que no se detallan en la información disponible. Es imprescindible revisarlos antes de integrar el modelo en un producto.
-- No se han publicado datos sobre sesgos, composición del dataset ni cobertura de acentos, géneros o tipos de micrófono; el rendimiento puede variar según la fuente de audio.
-- Riesgo de artefactos en condiciones extremas de ruido o reverberación no documentado; el autor afirma que no introduce bombeo ni ruido musical, pero no se aportan métricas objetivas que lo respalden.
-- El modelo procesa un canal por pasada: el estéreo duplica el coste de inferencia (1,8x medido), lo que puede ser relevante en dispositivos con recursos limitados.
-- La normalización de sonoridad aplica una ganancia y un limitador comunes a todos los canales; si los canales se grabaron a niveles distintos, es necesario configurar `Mastering.balanceChannelsLUFS` para equilibrarlos antes del masterizado.
+- Licencia propietaria "source-available": no es open source; el uso comercial está sujeto a los términos de https://license.desertant.com/, que deben revisarse antes de integrar el modelo en un producto.
+- No se publican detalles de arquitectura, parámetros ni datos de entrenamiento, lo que dificulta la auditoría técnica y la reproducibilidad.
+- No hay benchmarks objetivos (PESQ, DNSMOS, etc.) que respalden las afirmaciones cualitativas de la model card.
+- El modelo está orientado a voz; su comportamiento con música, instrumentos o fuentes no vocales no está documentado.
+- No se documentan sesgos por idioma, acento o género; al ser un modelo de audio, el riesgo de sesgo existe pero no está cuantificado.
+- El procesamiento estéreo duplica el coste de inferencia (1,8x) y el mastering conjunto puede alterar la imagen estéreo si los canales se grabaron a niveles muy distintos (se ofrece `balanceChannelsLUFS` para corregirlo).
 - La selección de variante (clear-studio vs clear-natural) solo está disponible en el SDK de Swift; en Kotlin y JavaScript se usa la variante por defecto.
-- No se especifican requisitos mínimos de versión de sistema operativo ni de hardware más allá de las plataformas listadas; conviene consultar los requisitos del SDK en el repositorio.
-- Al ser un modelo de audio-to-audio, no ofrece generación de texto, razonamiento, código ni tool calling; no debe evaluarse con los criterios habituales de un LLM.
+- No se especifican requisitos mínimos de hardware ni latencia absoluta, lo que complica la planificación de producción en tiempo real.
+- La descarga de pesos se realiza desde Hugging Face en el primer uso y se cachea; en entornos sin red o con políticas restrictivas de descarga hay que prever el aprovisionamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/clear
 - Pesos v0.3.0: https://huggingface.co/desert-ant-labs/clear/tree/v0.3.0
 - Demo: https://desertant.com/models/clear/
+- Licencia: https://license.desertant.com/
 - Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
 - Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
 - Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
 - Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
 - Descargas y caché de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
-- Licencia: https://license.desertant.com/

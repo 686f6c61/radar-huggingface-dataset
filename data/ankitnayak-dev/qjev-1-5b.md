@@ -2,121 +2,116 @@
 
 ## Resumen
 
-QJev-1.5B es un modelo derivado de Qwen/Qwen2.5-1.5B-Instruct desarrollado por AnkitNayak-dev (publicado también bajo el alias devankit7873) que sustituye la generación autoregresiva de texto por una cabeza MLP de clasificación calibrada acoplada a la representación oculta final del transformer base. En lugar de producir tokens que luego se parsean, el modelo calcula en un único forward pass una distribución de probabilidad normalizada sobre hasta 10 acciones candidatas, con una latencia declarada de aproximadamente 31 ms por decisión en hardware de consumo. El problema que aborda es el coste y la varianza de muestreo de usar LLM generativos como motores de decisión en agentes y pipelines automatizados.
+QJev-1.5B es un modelo de decisión ligero de 1.540 millones de parámetros desarrollado por AnkitNayak-dev, construido sobre el backbone de Qwen2.5-1.5B-Instruct. A diferencia de los modelos generativos convencionales, no produce texto token a token: acopla una cabeza MLP calibrada de dos capas a la representación oculta final del transformer y emite, en un único forward pass, una distribución de probabilidad normalizada sobre un conjunto de 2 a 10 opciones candidatas. Resuelve el problema de la selección estructurada de acciones en flujos de agentes de IA, donde la latencia de muestreo autoregresivo y la varianza de la decodificación resultan problemáticas.
 
-El modelo se presenta como un "System 1 decision engine" orientado a la evaluación de valor esperado conjunto (joint expected value, JEV) y se evalúa con el arnés metamórfico JevBench. Con 1.543.714.304 parámetros reales en safetensors, se posiciona como la propuesta sub-2B con mayor puntuación estricta (62,53% con tolerancia 0,05) según la tabla publicada en su model card, por delante de modelos de 2B como pjev-2b (56,5%) y de algunos de 4B como decision-4b-v12 (60,4%).
+La propuesta es relevante por su perfil de latencia: aproximadamente 31 ms por decisión en GPUs de consumo, lo que equivale a unas 32 decisiones por segundo por instancia, frente a los 300-600 ms típicos de un LLM generativo que debe emitir una respuesta textual. El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, y está orientado a investigación en selección probabilística de acciones, enrutado de agentes y razonamiento con opciones discretas.
 
-Su relevancia actual radica en la creciente demanda de componentes de decisión rápidos y deterministas dentro de arquitecturas de agentes, donde la latencia de 300-600 ms por paso generativo limita la viabilidad de bucles multi-paso. La licencia Apache 2.0 y el tamaño contenido lo hacen desplegable en GPU de consumo, aunque su especialización es estrecha: no es un modelo de propósito general.
+El modelo se entrenó mediante QLoRA sobre el corpus SargeDev/jev-distill-corpus-v3 y se evaluó con JevBench, un arnés de pruebas metamórficas. Alcanza un 62,53 % en la métrica estricta (tolerancia 0,05) y un 71,50 % en la relajada (tolerancia 0,10). El repositorio ocupa 6,2 GB y acumula 206 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con cabeza MLP de clasificación calibrada acoplada a la representación oculta final |
+| Arquitectura | Transformer decoder-only (Qwen2) con cabeza MLP de decisión de 2 capas acoplada a la representación oculta final |
 | Parametros totales | 1.543.714.304 (1,54B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada del base Qwen2.5-1.5B-Instruct, no especificada en la información) |
-| Tipos de cuantizacion | FP16 (fused completo, 3,08 GB), NF4 4-bit (1,15 GB), adaptador LoRA PEFT (20 MB) |
-| Idiomas soportados | no disponible |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible de forma explícita; se documenta funcionamiento en 4 bits (1,07 GB de VRAM) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers, PyTorch) |
+| Formato de pesos | Safetensors (backbone en bfloat16, cabeza MLP en float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen2.5-1.5B-Instruct, un transformer decoder-only de 1,54B parámetros, y le acopla una cabeza MLP de decisión sobre la última representación oculta. La salida no es texto sino una distribución de probabilidad calibrada sobre un conjunto dinámico de entre 2 y 10 opciones, aplicando enmascaramiento dinámico de logits según la cardinalidad del conjunto de candidatos. Esto elimina la decodificación autoregresiva y el parseo posterior de formato, con la consiguiente reducción de latencia y de varianza de muestreo.
+El modelo parte del backbone Qwen2.5-1.5B-Instruct, un transformer decoder-only denso, y le añade una cabeza MLP de dos capas en float32 que consume la representación oculta final del backbone y proyecta directamente sobre las opciones candidatas. La salida es una distribución de probabilidad calibrada sobre cardinalidades dinámicas de 2 a 10 opciones, con enmascaramiento dinámico de logits. El backbone mantiene sus pesos en bfloat16. Esta separación de precisiones busca preservar la estabilidad numérica de la cabeza de decisión sin encarecer el cómputo del transformer.
 
-El ajuste se realizó mediante QLoRA sobre el dataset SargeDev/jev-distill-corpus-v3. La model card describe tres fases de entrenamiento, de las cuales la fase 3 introduce una pérdida de consistencia simétrica entre formatos (soft-target symmetric cross-format consistency loss), diseñada para estabilizar las predicciones frente a permutaciones de opciones, reformulaciones booleanas y subconjuntos agrupados. No se especifican en la información disponible el número de tokens de entrenamiento, la composición detallada del corpus ni si hubo etapas adicionales de RLHF o DPO más allá del ajuste supervisado con destilación.
+El ajuste se realizó con QLoRA sobre el corpus de destilación SargeDev/jev-distill-corpus-v3. La innovación técnica destacable es la regularización de consistencia de la Fase 3, una pérdida simétrica de entropía cruzada sobre objetivos suaves entre formatos (soft-target symmetric cross-format consistency loss), que alinea las predicciones a través de permutaciones de opciones, sondas booleanas y subconjuntos engrosados. Los resultados de consistencia metamórfica reportados muestran mejoras sobre la línea base previa a la consistencia: REP.type pasa de 77,1 % a 83,3 %, LOG.bounds de 62,5 % a 67,9 % y REP.invariance de 73,2 % a 74,4 %, mientras BAT.isolation se mantiene en el 100,0 %. No se documenta el número de tokens de entrenamiento ni la composición detallada del dataset.
 
 ## Capacidades
 
-- Clasificación de decisiones multiclase sobre 2 a 10 opciones candidatas en un único forward pass, devolviendo una distribución de probabilidad normalizada en lugar de texto.
-- Evaluación de valor esperado conjunto (JEV) en escenarios con múltiples alternativas, orientada a la selección de acciones.
-- Modo "System 1": respuestas rápidas y deterministas sin muestreo estocástico ni decodificación especulativa.
-- Soporte de cardinalidad dinámica de opciones mediante enmascaramiento de logits, lo que permite reutilizar el mismo modelo con distintos tamaños de conjunto de elección.
-- Robustez metamórfica frente a cambios de formato de prompt (MCQ, booleano, ordinal), renombrado de claves de opción y perturbaciones sintácticas, reforzada por la pérdida de consistencia de fase 3.
-- Integración con el ecosistema transformers y con text-embeddings-inference según los tags del repositorio; endpoints compatibles declarados.
-- Capacidades multilingües: no disponibles (no especificadas).
-- No se declaran capacidades de tool calling, visión, audio ni generación de texto libre en la información proporcionada.
+- Selección estructurada de acciones: emite una distribución de probabilidad calibrada sobre 2 a 10 opciones candidatas en un único forward pass.
+- Enrutado de agentes: puede decidir qué herramienta, ruta o sub-agente activar en un flujo multi-paso.
+- Razonamiento probabilístico: las salidas son probabilidades directas, no log-probabilidades heurísticas de secuencia.
+- Soporte de cardinalidad dinámica: admite desde decisiones binarias hasta elecciones entre 10 opciones mediante enmascaramiento de logits.
+- Consistencia entre formatos: mantiene la estabilidad de la decisión ante permutaciones de opciones, reformateos MCQ/booleano/ordinal y renombrado de claves.
+- Clasificación de texto: la pipeline declarada es `text-classification`.
+- Baja latencia: aproximadamente 31 ms por decisión en GPUs de consumo.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de generación de texto libre, código, matemáticas, visión, audio ni tool calling en el sentido convencional.
 
 ## Casos de uso
 
-- Enrutamiento de acciones en agentes: dado un estado descrito en el prompt y un conjunto de 2 a 10 acciones posibles, el modelo devuelve la distribución de probabilidad sobre cada una en ~31 ms, lo que permite bucles de decisión de alta frecuencia sin el coste de una generación autoregresiva completa.
-- Selección de herramientas en pipelines de function calling: en lugar de generar la llamada como texto y parsearla, se presentan las herramientas disponibles como opciones y se elige la más probable, reduciendo errores de formato y latencia.
-- Triaje y clasificación de tickets o incidencias: con etiquetas como opciones candidatas, el modelo asigna probabilidades calibradas que permiten umbralizar y derivar a revisión humana los casos de baja confianza.
-- Filtrado previo en sistemas RAG: decidir entre "responder con el contexto recuperado", "recuperar más documentos" o "abstenerse" como conjunto de opciones, aprovechando la calibración para detectar incertidumbre.
-- Evaluación A/B y control de políticas: como componente de decisión determinista en simulaciones o entornos de refuerzo, donde la reproducibilidad y la baja latencia importan más que la expresividad del lenguaje.
-- Moderación y gating binario: usar la variante de decisión booleana (2 opciones) como clasificador rápido de admisión o rechazo en flujos de contenido, con la ventaja de una latencia de decenas de milisegundos por elemento.
-- Despliegue en el borde o en GPU de consumo: la variante NF4 de 1,15 GB permite ejecutar el motor de decisión en tarjetas con 4-8 GB de VRAM, integrándolo junto a otros componentes del pipeline.
+- Enrutado de herramientas en agentes: dado un mensaje del usuario y un catálogo de 2 a 10 herramientas disponibles, el modelo devuelve la probabilidad de cada una en un solo paso, lo que permite al orquestador seleccionar la herramienta con umbral de confianza configurable y evitar el coste de una generación autoregresiva completa.
+- Clasificación de intenciones en atención al cliente: con opciones discretas predefinidas (consulta de facturación, cancelación, soporte técnico, etc.), el modelo decide la categoría en aproximadamente 31 ms, lo que lo hace apto para preclasificar grandes volúmenes de tickets antes de derivarlos a un LLM mayor.
+- Puerta de decisión en pipelines multi-agente: como componente de bajo coste que decide si una consulta requiere razonamiento profundo (derivar a un modelo grande) o puede resolverse con una respuesta directa, reduciendo el gasto computacional agregado.
+- Moderación y triaje de contenido: selección entre categorías de política (permitido, revisar, bloquear) con probabilidades calibradas que permiten fijar umbrales de revisión humana de forma explícita.
+- Decisión binaria de continuación en bucles de agente: determinar si el agente debe seguir ejecutando pasos o detenerse, con una latencia que permite evaluar la condición en cada iteración sin dominar el coste total del bucle.
+- Investigación en calibración y consistencia: el modelo y JevBench permiten estudiar propiedades metamórficas de decisión (invariancia a permutaciones, adherencia a cotas probabilísticas) con un coste de inferencia bajo y reproducible en hardware de consumo.
+- Evaluación A/B de políticas de selección: al devolver distribuciones calibradas en lugar de una única etiqueta, permite comparar políticas de decisión y medir divergencias (TVD, KL) sobre las mismas entradas.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados en la model card, evaluados con el arnés JevBench (jevbench-mini, 240 casos, 50 relaciones puntuadas, 1.468 ensayos) bajo criterio estricto de tolerancia 0,05, son los siguientes:
+Resultados reportados por el autor con el arnés JevBench (`jevbench-mini`, 240 casos de evaluación, 50 relaciones puntuadas, 1.468 ensayos). Las cifras de los modelos externos provienen de entradas publicadas en el leaderboard de BenchmarkHeaven; la de QJev-1.5B es reproducción local.
 
-| Modelo | Parametros | Puntuacion oficial (tol=0,05) | Categoria | Latencia | Huella de memoria |
-|---|---|---|---|---|---|
-| EXAONE-1.2B | 1,2B | 47,7% | Sub-2B | ~25 ms | ~2,8 GB |
-| SargeDev/jev-gate-student-b | 0,49B | 50,2% | Sub-2B (solo binario) | ~23 ms | ~1,5 GB |
-| decision-2b | 2,0B | 54,8% | 2B | ~40 ms | ~4,5 GB |
-| pjev-2b | 2,0B | 56,5% | 2B | ~38 ms | ~4,4 GB |
-| **QJev-1.5B (fase 3)** | **1,54B** | **62,53%** | **Sub-2B** | **~31 ms** | **3,4 GB (1,07 GB en 4-bit)** |
-| jiwo-4b | 4,0B | 60,2% | 4B | ~65 ms | ~8,8 GB |
-| decision-4b-v12 | 4,0B | 60,4% | 4B | ~62 ms | ~8,5 GB |
-| autotrust/JEV-9B | 9,0B | 72,0% | 9B | ~85 ms | ~18,5 GB |
-| autotrust/JEV-27B | 27,0B | 76,5% | Datacenter | ~220 ms | ~55,0 GB |
+| Modelo | Parametros | Estricto (tol=0,05) | Latencia | Huella de memoria |
+|---|---|---|---|---|
+| EXAONE-1.2B | 1,2B | 47,7 % | ~25 ms | ~2,8 GB |
+| SargeDev/jev-gate-student-b | 0,49B | 50,2 % (binario) | ~23 ms | ~1,5 GB |
+| decision-2b | 2,0B | 54,8 % | ~40 ms | ~4,5 GB |
+| pjev-2b | 2,0B | 56,5 % | ~38 ms | ~4,4 GB |
+| jiwo-4b | 4,0B | 60,2 % | ~65 ms | ~8,8 GB |
+| decision-4b-v12 | 4,0B | 60,4 % | ~62 ms | ~8,5 GB |
+| **QJev-1.5B (Fase 3)** | **1,54B** | **62,53 %** | **~31 ms** | **3,08 GB disco / 1,07 GB VRAM en 4 bits** |
+| autotrust/JEV-9B | 9,0B | 72,0 % | ~85 ms | ~18,5 GB |
+| autotrust/JEV-27B | 27,0B | 76,5 % | ~220 ms | ~55,0 GB |
 
-Desglose de consistencia metamórfica (fase 3 frente a línea base sin consistencia):
+En evaluación relajada (tolerancia 0,10), QJev-1.5B alcanza el 71,50 %. Desglose de consistencia metamórfica (7 dimensiones formales):
 
-| Dimension | Baseline | QJev-1.5B (fase 3) | Delta |
+| Dimensión | Línea base | QJev-1.5B (Fase 3) | Delta |
 |---|---|---|---|
-| BAT.isolation | 100,0% | 100,0% | 0,0% |
-| REP.type | 77,1% | 83,3% | +6,2% |
-| REP.invariance | 73,2% | 74,4% | +1,2% |
-| LOG.bounds | 62,5% | 67,9% | +5,4% |
-| CHO.conditioning | 41,7% | 56,9% | +15,2% |
-| REP.equivariance | 48,6% | 55,6% | +7,0% |
-| MEA.partition | 30,7% | 41,1% | +10,4% |
-| Global (estricto 0,05) | 58,67% | 62,53% | +3,86% |
-
-Bajo evaluación relajada (tolerancia 0,10) el modelo alcanza 71,50%. No se publican resultados en benchmarks estándar de lenguaje como MMLU, HumanEval o GSM8K, coherente con su naturaleza de clasificador de decisión.
+| BAT.isolation | 100,0 % | 100,0 % | 0,0 % |
+| REP.type | 77,1 % | 83,3 % | +6,2 % |
+| REP.invariance | 73,2 % | 74,4 % | +1,2 % |
+| LOG.bounds | 62,5 % | 67,9 % | +5,4 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~3,4 GB en FP16 (fused completo, 3,08 GB en disco) y ~1,07-1,15 GB en NF4 4-bit.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para la variante 4-bit; 8 GB o más para FP16. Una RTX 4090, A100 o H100 ejecutan el modelo con holgura y permiten mayor paralelismo.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070/4080/4090 y equivalentes con 8 GB o más.
-- Opciones de despliegue: transformers (librería declarada), text-embeddings-inference según los tags, y endpoints compatibles. Para la variante LoRA, despliegue con PEFT. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: ~31 ms por decisión (~32 decisiones por segundo por dispositivo) según el autor. La variante 4-bit debería reducir el consumo de memoria sin cambios significativos de latencia, aunque no se publican cifras específicas para esa variante.
+- VRAM estimada: 1,07 GB en cuantización de 4 bits según la model card; el repositorio completo ocupa 3,08 GB en disco.
+- GPU recomendadas: el autor reporta latencias de aproximadamente 31 ms en GPUs de consumo; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
+- Compatibilidad con GPU de consumo: sí, gracias a la huella de 1,07 GB en 4 bits y al tamaño total de 1,54B parámetros.
+- Opciones de despliegue: la librería declarada es `transformers`; los tags incluyen `text-embeddings-inference` y `endpoints_compatible`. No se documentan instrucciones para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: aproximadamente 31 ms por forward pass, equivalente a unas 32 decisiones por segundo por instancia de GPU, según las condiciones de evaluación documentadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | JevBench estricto (0,05) | Licencia | Disponibilidad |
+| Modelo | Parametros | JevBench estricto | Latencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QJev-1.5B | 1,54B | no disponible | 62,53% | Apache 2.0 | Hugging Face (fused, LoRA, 4-bit) |
-| pjev-2b | 2,0B | no disponible | 56,5% | no disponible | Hugging Face |
-| decision-2b | 2,0B | no disponible | 54,8% | no disponible | Hugging Face |
-| decision-4b-v12 | 4,0B | no disponible | 60,4% | no disponible | Hugging Face |
-| autotrust/JEV-9B | 9,0B | no disponible | 72,0% | no disponible | Hugging Face |
+| **QJev-1.5B** | 1,54B | 62,53 % | ~31 ms | Apache 2.0 | Hugging Face |
+| decision-2b | 2,0B | 54,8 % | ~40 ms | No disponible | Leaderboard BenchmarkHeaven |
+| pjev-2b | 2,0B | 56,5 % | ~38 ms | No disponible | Leaderboard BenchmarkHeaven |
+| jiwo-4b | 4,0B | 60,2 % | ~65 ms | No disponible | Leaderboard BenchmarkHeaven |
+| autotrust/JEV-9B | 9,0B | 72,0 % | ~85 ms | No disponible | Leaderboard BenchmarkHeaven |
 
-Frente a los modelos de 2B de la misma categoría, QJev-1.5B obtiene una puntuación superior con menos parámetros y menor latencia declarada. Frente a los modelos de 4B, supera ligeramente a decision-4b-v12 (60,4%) y a jiwo-4b (60,2%) con un tercio del tamaño. Solo los modelos de 9B y 27B de autotrust lo superan en precisión, a costa de un orden de magnitud más de memoria y latencia.
+QJev-1.5B supera en la métrica estricta a modelos de 2B y 4B con menor latencia, y queda por debajo de las variantes de 9B y 27B, que sin embargo requieren entre 6 y 18 veces más memoria. Los datos de licencia y disponibilidad de los modelos comparados no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado: no es un LLM de propósito general; no genera texto libre ni mantiene conversaciones multi-turno. Su uso fuera del paradigma de selección entre opciones candidatas no está soportado.
-- Sesgos: no se documentan evaluaciones de sesgo demográfico, cultural o lingüístico. Al derivar de Qwen2.5-1.5B-Instruct, puede heredar sesgos del corpus de entrenamiento del modelo base y del corpus de destilación SargeDev/jev-distill-corpus-v3.
-- Riesgo de calibración defectuosa: aunque el modelo produce distribuciones calibradas, la consistencia en particiones de opciones (MEA.partition) es solo del 41,1% y la condicionamiento por eliminación de opciones (CHO.conditioning) del 56,9%, lo que indica que la masa de probabilidad puede no conservarse bien al cambiar el conjunto de candidatos. En producción conviene validar la calibración con datos propios.
-- Idiomas: no se especifican los idiomas soportados; el comportamiento multilingüe es incierto y depende del modelo base.
-- Contexto: la longitud de contexto no se documenta explícitamente; se hereda del base Qwen2.5-1.5B-Instruct pero no se confirma en la ficha.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del dataset de destilación y del modelo base.
-- Madurez: repositorio con pocas descargas (94) y un solo like en el momento de la consulta, creado en noviembre de 2026; no hay evidencia de adopción en producción ni de validación independiente de los benchmarks, que proceden del propio autor y de la plataforma BenchmarkHeaven.
-- Sin datos de benchmarks estándar de lenguaje (MMLU, HumanEval, GSM8K), por lo que no es comparable en tareas generativas con LLM convencionales.
+- El modelo está diseñado exclusivamente para selección entre opciones discretas; no es un modelo generativo de texto libre y no debe emplearse como sustituto de un LLM conversacional.
+- El soporte de idiomas se limita al inglés según la model card; el rendimiento en castellano u otros idiomas no está documentado.
+- La longitud de contexto no está especificada, lo que impide garantizar el comportamiento con entradas largas.
+- Los benchmarks provienen del arnés propietario JevBench y de reproducción local del autor; no hay validación independiente publicada. Las cifras de los modelos comparados proceden de entradas de leaderboard no verificadas en esta ficha.
+- El modelo hereda los sesgos del corpus de destilación SargeDev/jev-distill-corpus-v3 y del backbone Qwen2.5-1.5B-Instruct, cuya composición no se detalla.
+- Riesgo de calibración deficiente fuera de la distribución de entrenamiento: las probabilidades emitidas pueden no reflejar la incertidumbre real en dominios alejados del corpus.
+- La consistencia metamórfica reportada no es perfecta (REP.invariance al 74,4 %, LOG.bounds al 67,9 %), por lo que persisten vulnerabilidades ante reformateos de las opciones.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen2.5-1.5B-Instruct conviene verificar las condiciones heredadas del modelo base.
+- El modelo tiene 206 descargas y 1 like en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AnkitNayak-dev/QJev-1.5B
-- Repositorio GitHub: https://github.com/AnkitNayak-dev/QJev-1.5B
+- Hugging Face: https://huggingface.co/AnkitNayak-dev/QJev-1.5B
+- GitHub: https://github.com/AnkitNayak-dev/QJev-1.5B
 - JevBench: https://jevbench.github.io/
 - Leaderboard BenchmarkHeaven: https://benchmarkheaven.com/jev-models
-- Dataset de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Variante LoRA (referenciada): https://huggingface.co/devankit7873/QJev-1.5B-LoRA
-- Variante 4-bit NF4 (referenciada): https://huggingface.co/devankit7873/QJev-1.5B-4bit
+- Dataset: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

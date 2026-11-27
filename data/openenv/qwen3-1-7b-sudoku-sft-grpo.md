@@ -2,107 +2,96 @@
 
 ## Resumen
 
-Qwen3-1.7B-Sudoku-SFT-GRPO es un ajuste fino del modelo Qwen3-1.7B de Alibaba, especializado en resolver puzles de Sudoku mediante interacción con un entorno de herramientas. Lo desarrolla el equipo de OpenEnv, un proyecto centrado en entrenamiento por refuerzo con entornos ejecutables, y se publica como ejemplo de referencia del flujo SFT + GRPO documentado en su tutorial. El modelo no es un asistente generalista: está entrenado para rellenar celdas de un tablero llamando a una herramienta `place(row, col, number)` y emitiendo un razonamiento breve antes de cada movimiento.
+Qwen3-1.7B-Sudoku-SFT-GRPO es un ajuste fino del modelo Qwen3-1.7B de Alibaba, desarrollado por el equipo de OpenEnv para resolver sudokus mediante interacción con herramientas. El modelo parte de un calentamiento supervisado (SFT) sobre el entorno Sudoku de OpenEnv y se refina después con GRPO (Group Relative Policy Optimization) usando la librería TRL. Su relevancia radica en que demuestra un pipeline completo de aprendizaje por refuerzo con entornos reales, pasando de un modelo base que no resuelve prácticamente ningún puzle a uno que resuelve 26 de 30 en el nivel de 16 celdas vacías.
 
-La arquitectura subyacente es la de Qwen3-1.7B, un transformer denso de 1.720.574.976 parámetros (1,72 mil millones) con soporte de modo "thinking". Sobre esa base se aplicó primero un SFT corto (openenv/Qwen3-1.7B-Sudoku-SFT) y después GRPO con TRL, partiendo de un entorno con 55 pistas (unas 26 celdas vacías). El resultado es un modelo que pasa de no resolver ningún puzle a resolver 26 de 30 en el nivel de 16 celdas vacías y 22 de 30 en el de 26 celdas vacías, en evaluación greedy.
+Arquitectónicamente es un transformer denso de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), heredado de Qwen3-1.7B. El modelo no genera la solución completa de golpe: en cada llamada invoca una herramienta `place(row, col, number)` para rellenar una única celda, y antes de cada movimiento escribe un razonamiento breve con el modo thinking activado (384 tokens nuevos por movimiento). Esta combinación de razonamiento explícito y uso de herramientas lo convierte en un caso de estudio práctico para agentes que operan sobre entornos con estado.
 
-Su relevancia es doble: por un lado demuestra que el RL con recompensas verificables sobre entornos reales mejora sustancialmente el razonamiento estructurado de un modelo pequeño; por otro, sirve como plantilla reproducible (script `grpo.py`, curvas en Trackio, juegos registrados) para quien quiera entrenar agentes con tool calling sobre entornos propios. El repositorio ocupa 24,1 GB e incluye checkpoints intermedios en el historial de commits.
+El modelo se entrenó con 4 prompts y 16 partidas por paso, con una tasa de aprendizaje constante de 1e-6 y `max_completion_length=16384`, durante 75 pasos en una única A100 de 80 GB (unas 15 horas, 38 dólares). Los pesos publicados corresponden al paso 75 del entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3), con modo thinking; ajustado con SFT + GRPO |
-| Parametros totales | 1.720.574.976 (1,72 mil millones) |
+| Arquitectura | Transformer denso (derivado de Qwen3-1.7B) |
+| Parametros totales | 1.720.574.976 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-1.7B) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras variantes) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card indica `licence: license` sin especificar terminos) |
-| Formato de pesos | safetensors |
-| Modelo base | openenv/Qwen3-1.7B-Sudoku-SFT (a su vez, fine-tune de Qwen/Qwen3-1.7B) |
-| Libreria | transformers |
-| Versiones del framework | TRL 1.16.0, OpenEnv 0.10.0, Transformers 5.21.1, PyTorch 2.11.0 |
-| Tamano del repositorio | 24,1 GB |
-| Descargas | 326 |
+| Licencia | no disponible (la model card indica `licence: license` sin concretar) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer decoder-only denso con modo de razonamiento explícito ("thinking"). El pipeline de entrenamiento tiene dos fases. Primero, un SFT corto que enseña al modelo el formato de interacción con el entorno de Sudoku: emitir un razonamiento breve y luego una llamada a la herramienta `place(row, col, number)`, una celda por llamada. Después, GRPO (Group Relative Policy Optimization) implementado con TRL mediante `environment_factory`, partiendo del modelo SFT.
+El modelo es un transformer denso de 1,7 mil millones de parámetros que hereda la arquitectura de Qwen3-1.7B. El entrenamiento se realizó en dos fases: primero un ajuste supervisado (SFT) sobre el entorno Sudoku de OpenEnv, que dio lugar al modelo `openenv/Qwen3-1.7B-Sudoku-SFT`; después, un refinamiento con GRPO mediante TRL 1.16.0. El entrenamiento GRPO usó `environment_factory` contra el entorno configurado con 55 pistas (unas 26 celdas vacías), con 4 prompts y 16 partidas por paso, thinking activado, tasa de aprendizaje constante de 1e-6, `max_completion_length=16384`, `vllm_importance_sampling_mode="token_truncate"` y vLLM colocado. Se definieron dos recompensas: 1 si el puzle se resuelve, más la fracción de celdas vacías rellenadas.
 
-Los detalles del entrenamiento GRPO están documentados: 4 prompts × 16 partidas por paso, thinking activado, learning rate constante de 1e-6, `max_completion_length=16384`, `vllm_importance_sampling_mode="token_truncate"` y vLLM colocado en el mismo nodo. Se usan dos recompensas: 1 si el puzle se resuelve por completo, más la fracción de celdas vacías rellenadas correctamente. El entrenamiento se ejecutó en una única A100 de 80 GB durante unas 15 horas (38 USD) hasta el paso 75, que es el checkpoint publicado. El repositorio conserva además los checkpoints de los pasos 25 y 50 en el historial de commits, y la carpeta `completions/` con todos los juegos registrados. La evaluación se hizo sobre 30 puzles por nivel generados con el generador de TextArena.
-
-Una innovación destacable es el uso de un entorno con verificación estricta: un dígito que no corresponde a la solución se rechaza, y dos movimientos rechazados consecutivos terminan la partida. Esto convierte el Sudoku en una tarea de recompensa verificable, ideal para RL. La model card advierte de una incidencia: el Space cerró sus WebSockets aproximadamente cada 2 horas durante la ejecución y el cliente de OpenEnv reconectó a sesiones nuevas en mitad de algunas partidas, de modo que los pasos 26, 74 y 75 se entrenaron parcialmente con partidas corruptas. El script de ejemplo ya abre una conexión nueva por partida.
+La innovación principal no está en la arquitectura, sino en el pipeline de entrenamiento: el modelo aprende a interactuar con un entorno con estado a través de una herramienta (`place(row, col, number)`), escribiendo un razonamiento breve antes de cada movimiento. El entrenamiento se ejecutó en una A100 80GB mediante Hugging Face Jobs durante unas 15 horas y los pesos publicados corresponden al paso 75. Cabe señalar una incidencia documentada: el Space cerró sus WebSockets aproximadamente cada 2 horas durante la ejecución y el cliente de OpenEnv reconectó a una nueva sesión en mitad de algunas partidas, por lo que los pasos 26, 74 y 75 se entrenaron parcialmente con partidas corruptas. El script de ejemplo ya abre una nueva conexión por partida.
 
 ## Capacidades
 
-- Resolución de puzles de Sudoku mediante tool calling: rellena una celda por llamada a `place(row, col, number)`.
-- Razonamiento previo a cada movimiento en modo thinking, con un presupuesto de 384 tokens nuevos por movimiento en la evaluación publicada.
-- Cumplimiento estricto de un protocolo de herramienta con validación de movimientos por parte del entorno.
-- Juego multi-turno dentro de una sesión de entorno: el modelo recibe el estado del tablero y respuestas de la herramienta en cada paso.
-- Capacidades generales de Qwen3-1.7B (generación de texto, razonamiento, código) potencialmente presentes por herencia del modelo base, aunque no evaluadas ni documentadas en esta ficha.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- No se documentan capacidades de visión, audio ni agentes generalistas fuera del entorno de Sudoku.
+- Generación de texto y razonamiento breve antes de cada movimiento (modo thinking, 384 tokens nuevos por movimiento en la configuración de evaluación).
+- Uso de herramientas (tool calling) mediante la función `place(row, col, number)` para rellenar una celda por llamada.
+- Razonamiento multi-paso con estado: mantiene el estado del tablero a lo largo de la partida y planifica movimientos sucesivos.
+- Resolución de sudokus: 26/30 resueltos con 16 celdas vacías y 22/30 con 26 celdas vacías en evaluación greedy.
+- Capacidades multilingües: no disponibles (no documentadas).
+- Capacidades especiales: modo thinking integrado; no se documentan visión ni audio.
 
 ## Casos de uso
 
-- Evaluación de pipelines de RL con recompensas verificables: el modelo sirve como referencia reproducible para comparar SFT frente a SFT + GRPO en una tarea con solución única, usando `evaluate.py` y los ficheros `puzzles_c55.json` y `puzzles_c65.json`.
-- Plantilla para entrenar agentes con tool calling sobre entornos propios: el script `grpo.py` y la integración con `environment_factory` de TRL muestran cómo conectar un entorno OpenEnv, definir recompensas y lanzar GRPO con vLLM colocado.
-- Docencia y divulgación de RL para LLM: el tutorial de OpenEnv sobre Sudoku y las curvas de Trackio permiten explicar de forma completa el ciclo SFT, definición de recompensas, entrenamiento y evaluación con datos reales.
-- Investigación sobre razonamiento estructurado en modelos pequeños: permite estudiar cuánto puede mejorar un modelo de 1,72 mil millones de parámetros en una tarea de búsqueda con restricciones cuando se le da un presupuesto de thinking acotado (384 tokens por movimiento).
-- Generación de datos sintéticos de partidas resueltas: la carpeta `completions/` y el script de evaluación pueden producir trazas de juego etiquetadas para entrenar o evaluar otros modelos.
-- Pruebas de robustez de entornos y clientes: la incidencia documentada con los WebSockets del Space convierte este caso en un ejemplo útil para diseñar reconexiones y sesiones aisladas por partida en infraestructuras de RL.
-- Despliegue de demostraciones interactivas de agentes: al ser compatible con text-generation-inference y endpoints, puede servirse como demo de un agente que juega al Sudoku paso a paso.
+- Evaluación de pipelines de RL con entornos reales: sirve como referencia reproducible para validar un flujo SFT + GRPO con TRL, OpenEnv y vLLM, comparando curvas de recompensa y tasas de resolución.
+- Investigación en agentes con tool calling: el modelo ilustra cómo un LLM aprende a invocar una herramienta con estado (`place`) y a razonar antes de cada acción, útil para estudiar políticas de decisión secuencial.
+- Generación de datos de razonamiento para sudoku: las partidas registradas en la carpeta `completions/` pueden reutilizarse como datos de entrenamiento o para análisis de errores.
+- Benchmark de razonamiento estructurado: los puzles de 16 y 26 celdas vacías (`puzzles_c65.json`, `puzzles_c55.json`) ofrecen una tarea determinista y verificable para medir capacidad de planificación.
+- Docencia y divulgación: el tutorial de OpenEnv sobre sudoku con GRPO permite explicar de forma práctica el ajuste por refuerzo con recompensas compuestas.
+- Prototipado de asistentes de resolución de restricciones: el patrón de razonamiento + llamada a herramienta es trasladable a otros dominios con estado (planificación, logística, juegos de tablero).
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son los de la model card, en evaluación greedy sobre 30 puzles por nivel, con thinking activado (384 tokens nuevos por movimiento) para los modelos entrenados y desactivado para el base:
+Evaluación greedy sobre los mismos 30 puzles por nivel. Los modelos entrenados juegan con thinking activado (384 tokens nuevos por movimiento); el modelo base, sin thinking, porque con thinking no termina el razonamiento dentro de ese presupuesto y nunca realiza un movimiento.
 
-| Modelo | 16 celdas vacias: resueltos | 16 celdas vacias: celdas rellenadas | 26 celdas vacias: resueltos | 26 celdas vacias: celdas rellenadas |
+| Modelo | 16 celdas vacías: resueltos | Celdas rellenadas | 26 celdas vacías: resueltos | Celdas rellenadas |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 0/30 | 1,9 % | 0/30 | 0,1 % |
+| Qwen3-1.7B | 0/30 | 1,9 % | 0/30 | 0,1 % |
 | Qwen3-1.7B-Sudoku-SFT | 19/30 | 79,1 % | 10/30 | 55,8 % |
 | Qwen3-1.7B-Sudoku-SFT-GRPO (este modelo) | 26/30 | 87,5 % | 22/30 | 83,2 % |
 
-Notas sobre la medición: el modelo base, con thinking activado, no termina de razonar dentro del presupuesto de 384 tokens y nunca llega a mover, por lo que se evaluó sin thinking. Cada modelo se entrenó una sola vez, así que los números corresponden a una única ejecución. No se publican resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
+Cada modelo se entrenó una sola vez, por lo que los autores recomiendan tratar las cifras como una única ejecución. Un dígito que no es la solución de su celda se rechaza, y dos movimientos rechazados consecutivos terminan la partida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: en torno a 3,5 GB solo para pesos (1,72 mil millones de parámetros), más overhead de activaciones y caché KV; en la práctica, unos 4-6 GB según longitud de contexto y lote.
-- Cuantización: no se publican versiones GGUF ni cuantizadas; podría generarse una conversión propia, pero no está documentada.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 en lote pequeño; A100 80GB, H100 o RTX 4090 son holgadas. El entrenamiento original usó una única A100 de 80 GB.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en fp16; en GPUs de 8 GB requeriría cuantización no publicada.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference y endpoints compatibles según los tags; vLLM se usó durante el entrenamiento y es viable para servir. No se documentan Ollama ni llama.cpp por falta de pesos GGUF.
-- Latencia y throughput: no disponibles. La evaluación usa 384 tokens nuevos por movimiento y `max_completion_length=16384` durante el entrenamiento, lo que da una idea del orden de magnitud del coste por partida, pero no se publican métricas de latencia.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 1,72 mil millones de parámetros, en fp16 requiere aproximadamente 3,5 GB de pesos más memoria para el contexto y la caché KV, y en cuantizaciones de 8 o 4 bits se reduce sustancialmente (valores no publicados por el autor).
+- GPU recomendadas: el entrenamiento se realizó en una A100 80GB; para inferencia basta con GPUs de gama media, aunque el autor no publica requisitos.
+- GPU de consumo: por tamaño, es probable que quepa en GPUs de consumo con suficiente VRAM, pero no hay datos oficiales que lo confirmen.
+- Opciones de despliegue: transformers (librería indicada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); no se documentan vLLM, llama.cpp ni Ollama para inferencia, aunque vLLM se usó durante el entrenamiento.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Resultado Sudoku (26 vacias) | Licencia |
+| Modelo | Parámetros | Contexto | Sudoku 16 vacías | Sudoku 26 vacías | Licencia |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Sudoku-SFT-GRPO | 1,72 mil millones | no disponible | Sudoku con tool calling | 22/30 resueltos, 83,2 % celdas | no disponible |
-| Qwen3-1.7B-Sudoku-SFT | 1,72 mil millones | no disponible | Sudoku con tool calling | 10/30 resueltos, 55,8 % celdas | no disponible |
-| Qwen3-1.7B (base) | 1,72 mil millones | no disponible | Generacion general | 0/30 resueltos, 0,1 % celdas | Apache 2.0 (segun el modelo original de Qwen; no confirmado en esta ficha) |
+| Qwen3-1.7B (base) | 1,7 B | no disponible | 0/30 | 0/30 | no disponible |
+| Qwen3-1.7B-Sudoku-SFT | 1,7 B | no disponible | 19/30 | 10/30 | no disponible |
+| Qwen3-1.7B-Sudoku-SFT-GRPO | 1,7 B | no disponible | 26/30 | 22/30 | no disponible |
 
-No se dispone de información sobre otros modelos especializados en Sudoku con los que comparar directamente. La comparación más informativa es interna: el GRPO sobre el SFT multiplica por más de dos los puzles resueltos en el nivel difícil (de 10/30 a 22/30) y eleva el porcentaje de celdas rellenadas del 55,8 % al 83,2 %.
+No se dispone de datos de otros modelos comparables de la misma categoría (LLM pequeños especializados en sudoku mediante RL) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: el modelo está entrenado para el entorno de Sudoku de OpenEnv y el protocolo `place(row, col, number)`; no debe usarse como asistente general sin validación previa.
-- Licencia no especificada: la model card indica `licence: license` sin términos concretos, por lo que el uso comercial no está claro y requiere consultar el modelo base y el repositorio de OpenEnv.
-- Datos de entrenamiento parcialmente corruptos: los pasos 26, 74 y 75 se entrenaron en parte con partidas interrumpidas por reconexiones de WebSocket, lo que puede introducir comportamientos anómalos en estados de juego poco frecuentes.
-- Una sola ejecución de entrenamiento por modelo: los resultados publicados no incluyen intervalos de confianza ni repeticiones, así que deben tomarse como indicativos.
-- Dependencia del presupuesto de thinking: con 384 tokens nuevos por movimiento el modelo funciona; con el modelo base el mismo presupuesto impide completar el razonamiento, lo que sugiere sensibilidad al límite de tokens.
-- Riesgo de alucinación en el razonamiento: aunque el entorno rechaza dígitos incorrectos, el texto de razonamiento previo a cada movimiento no está verificado y puede contener justificaciones erróneas.
-- Sesgos e idiomas: no hay información publicada sobre sesgos, composición del dataset de SFT ni cobertura lingüística; se desconoce el comportamiento fuera del inglés técnico del entorno.
-- Advertencia de producción: al ser un modelo de demostración de OpenEnv, no hay garantías de soporte, mantenimiento ni versionado a largo plazo.
-- El repositorio pesa 24,1 GB por incluir checkpoints intermedios y trazas de partidas; la descarga completa no es necesaria para usar solo los pesos finales.
+- Especialización estrecha: el modelo está entrenado exclusivamente para el entorno Sudoku de OpenEnv y no se documentan capacidades generales de conversación o código.
+- Dependencia del modo thinking: con 384 tokens nuevos por movimiento, el modelo base no termina el razonamiento y nunca se mueve; el rendimiento del modelo ajustado está ligado a ese presupuesto.
+- Reglas estrictas del entorno: un dígito incorrecto se rechaza y dos rechazos consecutivos terminan la partida, lo que penaliza la exploración.
+- Entrenamiento parcialmente contaminado: los pasos 26, 74 y 75 se entrenaron en parte con partidas corruptas por reconexiones de WebSocket, según reconoce el autor.
+- Una sola ejecución de entrenamiento: las cifras de benchmarks deben interpretarse con cautela estadística.
+- Licencia no disponible: no se concreta la licencia, por lo que el uso comercial no puede verificarse.
+- Idiomas y sesgos: no documentados.
+- Riesgo de alucinación: no evaluado en la información disponible; el dominio es determinista y verificable, lo que limita su impacto en este caso concreto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO
-- Modelo base del ajuste: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
-- Modelo original: https://huggingface.co/Qwen/Qwen3-1.7B
-- Entorno de Sudoku en Hugging Face Spaces: https://huggingface.co/spaces/openenv/sudoku
-- Tutorial de OpenEnv sobre Sudoku y GRPO: https://huggingface.co/docs/openenv/tutorials/sudoku-grpo
-- Repositorio de OpenEnv con los ejemplos de Sudoku (script `grpo.py`, `evaluate.py`, puzles): https://github.com/openenv/OpenEnv/tree/main/examples/sudoku
-- Curvas de entrenamiento en Trackio: https://huggingface.co/spaces/openenv/sudoku-runs
+- Modelo base SFT: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
+- Modelo original Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Entorno Sudoku en Hugging Face Spaces: https://huggingface.co/spaces/openenv/sudoku
+- Curvas de entrenamiento (Trackio): https://huggingface.co/spaces/openenv/sudoku-runs
+- Tutorial de OpenEnv sobre sudoku con GRPO: https://openenv.github.io/OpenEnv/main/tutorials/sudoku-grpo
+- Repositorio OpenEnv (ejemplos de sudoku, script `grpo.py` y `evaluate.py`): https://github.com/openenv/OpenEnv/tree/main/examples/sudoku

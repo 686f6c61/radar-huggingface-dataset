@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "alexis974/detecteur-ia-fr",
+  "slug": "alexis974-detecteur-ia-fr",
+  "author": "alexis974",
+  "url": "https://huggingface.co/alexis974/detecteur-ia-fr",
+  "created_at": "2026-11-26T23:46:28.000Z",
+  "updated_at": "2026-11-26T23:46:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "ai-detection",
+    "fr",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 739011041,
+  "storage_human": "739 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

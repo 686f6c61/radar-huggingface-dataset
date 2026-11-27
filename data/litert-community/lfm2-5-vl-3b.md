@@ -2,108 +2,112 @@
 
 ## Resumen
 
-LFM2.5-VL-3B es un modelo de lenguaje y visión (VLM) de 3.000 millones de parámetros desarrollado por Liquid AI, distribuido en formato LiteRT-LM por la comunidad `litert-community` para inferencia en dispositivo (*on-device*). Combina un backbone de texto híbrido —22 bloques de convolución corta con compuertas y 8 capas de atención con consultas agrupadas— con una torre visual SigLIP2 de 27 capas y un proyector con *pixel-unshuffle*. El resultado es un modelo capaz de procesar texto e imágenes en el mismo *prompt*, pensado para ejecutarse en teléfonos y equipos de borde sin GPU dedicada.
+LFM2.5-VL-3B es un modelo de visión y lenguaje (VLM) desarrollado por Liquid AI, distribuido originalmente en formato PyTorch. La versión aquí descrita es la conversión realizada por la comunidad `litert-community` al formato LiteRT-LM (`.litertlm`), el runtime on-device de Google (sucesor de TensorFlow Lite) orientado a inferencia en dispositivos edge como smartphones Android, macOS e iOS.
 
-La relevancia de esta conversión concreta radica en el formato: los ficheros `.litertlm` permiten ejecutar el modelo con el runtime LiteRT-LM de Google (sucesor de TensorFlow Lite) directamente en Android, macOS e iOS, con soporte de CPU y GPU. Los pesos se ofrecen en int8 (3,55 GB) e int4 (2,35 GB), lo que hace viable su despliegue en dispositivos con memoria limitada. La ventana de contexto del runtime está limitada a 4096 tokens de caché KV y admite una sola imagen por *prompt*, redimensionada a 512×512 y convertida en 256 tokens visuales.
+El modelo combina un backbone de texto híbrido propio de la familia LFM2 —22 bloques de convolución corta con compuertas (gated short-convolution) más 8 capas de atención con grouped-query attention, con un vocabulario de 128k tokens— con una torre de visión SigLIP2 de 27 capas y dimensión oculta 1152, unida mediante un proyector con pixel-unshuffle. Con 3B parámetros, está pensado para ejecutarse en hardware móvil con cuantización int8 o int4, manteniendo capacidades de captioning, OCR, respuesta sobre imágenes y generación de texto.
 
-Es importante señalar que la model card documenta un fallo conocido en el runtime publicado: en LiteRT-LM 0.16.0 solo la cuarta parte superior de la imagen llega al modelo, lo que invalida cualquier tarea posicional (localizar, contar, enumerar). El repositorio incluye una compilación corregida (`LFM2.5-VL-3B_int4_fixB.litertlm`) que reexporta los grafos de visión con el *unshuffle* dentro del codificador.
+Su relevancia actual radica en que demuestra un pipeline completo de VLM en un runtime de producción para móvil: el archivo incluye el encoder de visión, el adaptador y los metadatos de placeholders de imagen, de modo que una sola llamada (`litert-lm run ... --attachment foto.png`) procesa texto e imagen de extremo a extremo. No obstante, la propia model card documenta un fallo grave en el runtime publicado que afecta a la percepción posicional de la imagen (ver limitaciones).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 22 bloques de convolución corta con compuertas + 8 capas de atención con consultas agrupadas (GQA); torre visual SigLIP2 (27 capas, oculta 1152) con proyector *pixel-unshuffle* |
-| Parametros totales | 3.000 millones (aproximado, según denominación del modelo) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 tokens de caché KV en el runtime LiteRT-LM |
-| Tipos de cuantizacion | int8 dinámica (lineales de texto, convoluciones, embedding y torre visual); int4 blockwise-32 OCTAV en lineales de texto con embedding y lm_head en int8 y torre visual en int8 |
+| Arquitectura | Híbrida: 22 bloques de convolución corta con compuertas + 8 capas de atención GQA (backbone de texto) + torre de visión SigLIP2 (27 capas, hidden 1152) con proyector pixel-unshuffle |
+| Parámetros totales | 3B (aproximado, según denominación del modelo; no se detalla desglose) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens máximo (KV cache) |
+| Tipos de cuantización | int8 dinámica; int4 blockwise-32 (lineales OCTAV) con embedding y lm_head en int8; torre de visión en int8 |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (`lfm-open-license-v1.0`) |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base en PyTorch está en LiquidAI/LFM2.5-VL-3B |
-| Vocabulario | 128.000 tokens |
-| Entrada de imagen | 1 imagen por *prompt*, redimensionada a 512×512, 256 tokens suaves; PNG/JPEG vía `--attachment` |
-| Backends | CPU y GPU (macOS verificado; Android OpenCL verificado en Pixel 8a y Galaxy S26; iOS Metal falla en la creación del motor, usar CPU) |
-| Runtime mínimo verificado | litert-lm 0.16.0 (int8); 0.19.0 (int4) |
-| Plantilla de chat | Incluida en el fichero, estilo ChatML; marcadores de imagen insertados por el procesador de datos LFM2 del runtime (modelo sin modo *thinking*) |
-| Tamano del repositorio | 16,5 GB |
+| Licencia | LFM Open License v1.0 (categoría "other") |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base original en PyTorch (formato no especificado en la información disponible) |
 
 ## Arquitectura y entrenamiento
 
-El backbone de texto sigue un diseño híbrido poco habitual: la mayor parte de las capas son convoluciones cortas con compuertas en lugar de atención completa, y solo 8 de las 30 capas emplean atención con consultas agrupadas. Este reparto reduce el coste computacional y la memoria de activaciones, lo que explica que el modelo alcance velocidades de decodificación cercanas a 20 tok/s en un teléfono. El vocabulario es de 128.000 tokens. La torre visual es un SigLIP2 de 27 capas con dimensión oculta 1152, conectado al backbone mediante un proyector que aplica *pixel-unshuffle* 2×2. Este detalle arquitectónico es la causa del fallo del runtime: la familia LFM2.5-VL realiza el *unshuffle* en el adaptador y no en el codificador, mientras que LiteRT-LM asume lo contrario.
+El backbone de texto es una arquitectura híbrida que alterna bloques de convolución corta con compuertas (similares a las propuestas en modelos tipo Liquid) con capas de atención con grouped-query attention, una combinación que reduce el coste computacional y de memoria frente a un transformer puro, algo crítico en despliegue móvil. El vocabulario es de 128k tokens. La parte visual emplea una torre SigLIP2 de 27 capas con dimensión oculta 1152; la conexión entre visión y texto se realiza mediante un proyector que aplica un pixel-unshuffle 2×2, de forma que una imagen de 512×512 se comprime en 256 tokens suaves que se insertan en la secuencia de texto.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus, ni si se aplicaron técnicas de RLHF o DPO. La model card de esta conversión no documenta el proceso de entrenamiento del modelo base; esa información correspondería a la ficha original de LiquidAI, que no se ha proporcionado. La conversión a LiteRT-LM se realizó con `litert_torch.convert` sin modificar el modelo, y la model card afirma que una conversión de referencia coincidió con el original hasta 4e-7 en un Galaxy S26.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO en la información proporcionada. La model card de la conversión tampoco detalla innovaciones de decodificación (como decodificación especulativa) más allá de la propia arquitectura híbrida y del procesamiento de imagen en tokens reducidos.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno, con plantilla ChatML incluida en el fichero.
-- Comprensión de imágenes: descripción (*captioning*), preguntas sobre color dominante, OCR de texto grande y reconocimiento de formas.
-- Procesamiento conjunto de texto e imagen en un mismo *prompt*, con una imagen por consulta.
-- Ejecución en dispositivo con delegación completa de operaciones: 937 operaciones delegadas en la medición con GPU del Galaxy S26.
-- Inferencia en CPU y GPU en Android (OpenCL) y macOS; en iOS solo CPU.
-- No se documenta soporte de *tool calling*, *function calling*, agentes multi-paso, audio ni modo *thinking*. La model card indica explícitamente que es un modelo sin modo de razonamiento extendido.
+- Generación de texto e inferencia de lenguaje general sobre el backbone LFM2.
+- Comprensión de imágenes: captioning, respuesta a preguntas sobre el contenido visual y OCR de texto grande y dominante.
+- Preguntas sobre color dominante y formas en imágenes sintéticas o capturas.
+- Procesamiento de una imagen por prompt, redimensionada automáticamente por el runtime a 512×512 y convertida en 256 tokens.
+- Entrada de imágenes en PNG y JPEG mediante el flag `--attachment` del runtime.
+- Plantilla de chat estilo ChatML incluida en el propio archivo, con placeholders de imagen insertados por el procesador de datos LFM2 del runtime.
+- Modelo no-thinking: no dispone de modo de razonamiento extendido.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Descripción de imágenes en aplicaciones móviles: el modelo cabe en 2,35 GB en int4 y procesa una imagen de 512×512 en 256 tokens, lo que permite generar pies de foto o descripciones automáticas en un teléfono Android sin conexión a la nube.
-- OCR de texto dominante en capturas y documentos: la model card verifica OCR de texto grande en fixtures sintéticos; es adecuado para digitalizar carteles, recibos o pantallas donde el texto ocupa una porción relevante de la imagen.
-- Clasificación visual por color o forma: útil en aplicaciones de accesibilidad que describan el color dominante de un objeto o identifiquen formas geométricas simples.
-- Asistente conversacional local con contexto visual: con 4096 tokens de caché KV, puede mantener diálogos multi-turno donde el usuario adjunta una imagen y formula preguntas de seguimiento sobre ella.
-- Prototipado e investigación en IA de borde: sirve como banco de pruebas para evaluar el runtime LiteRT-LM, la delegación de operaciones en GPU móvil y el rendimiento de arquitecturas híbridas convolución-atención en hardware limitado.
-- Aplicaciones de privacidad estricta: al ejecutarse íntegramente en el dispositivo, las imágenes y el texto no salen del terminal, lo que encaja en escenarios sanitarios, industriales o de consumo donde no se permite el envío a servidores externos.
-- Verificación de calidad de conversiones: el repositorio incluye fixtures deterministas (color, OCR, forma, conteo, palabra más grande) que permiten validar una conversión o un runtime antes de desplegarlo en producción.
+- Asistente visual en aplicaciones Android: integrado mediante LiteRT-LM en una app móvil, el modelo puede describir una foto tomada por el usuario o responder preguntas sobre ella sin salir del dispositivo, con 2,35 GB en int4 y latencias de TTFT de 330 ms en GPU (Galaxy S26).
+- OCR de texto dominante en capturas y documentos: útil para extraer texto de carteles, tickets o pantallas donde el texto ocupa una porción grande de la imagen, un escenario donde el fallo posicional documentado no afecta al resultado.
+- Clasificación y descripción de color o forma dominante: adecuado para tareas de moderación de imágenes, etiquetado automático o filtros que solo necesitan identificar el sujeto principal de la imagen.
+- Procesamiento de texto en el dispositivo: el backbone LFM2 permite resúmenes, respuestas y generación de texto con contexto de 4096 tokens, útil para asistentes offline que no pueden enviar datos a la nube por privacidad.
+- Prototipado de pipelines VLM en edge: investigadores pueden validar el flujo completo imagen-texto en LiteRT-LM antes de portar a producción, usando el archivo int8 de 3,55 GB como referencia de calidad.
+- Aplicaciones de accesibilidad: descripción de imágenes para usuarios con discapacidad visual en tiempo real en un smartphone, aprovechando el prefill de 744 tok/s en GPU del Galaxy S26.
+- Evaluación comparativa de runtimes: dado que la model card documenta métricas por dispositivo y backend (CPU vs GPU, Android vs macOS), sirve como banco de pruebas para medir el rendimiento de LiteRT-LM frente a otras soluciones.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona mediciones de velocidad en dispositivo, no resultados de benchmarks académicos (MMLU, HumanEval, GSM8K). Se reproducen los datos disponibles:
+La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Sí incluye métricas de rendimiento en dispositivo y una comparación de calidad parcial:
 
-| Configuracion | Decode (tok/s) | Prefill (tok/s) | TTFT (ms) | Fecha |
-|---|---|---|---|---|
-| Galaxy S26 · LiteRT-LM 0.16.0 · GPU | 20,1 | 744 | 330 | 2026-08-24 |
-| Galaxy S26 · LiteRT-LM 0.16.0 · CPU | 19,9 | 277 | 790 | 2026-09-05 |
+| Configuración | Texto (8 preguntas) | Imagen (5 preguntas) |
+|---|---|---|
+| PyTorch bf16 (referencia) | no disponible (tabla truncada en la información) | no disponible (tabla truncada en la información) |
+| int4 blockwise-32 (archivo int4 previo) | no disponible | no disponible |
 
-La model card menciona además una tabla de calidad con comprobaciones de texto (8 preguntas) e imagen (5 preguntas) comparando PyTorch bf16 de referencia con las versiones int4, pero el contenido de esa tabla está truncado en la información disponible, por lo que no se pueden reproducir los valores.
+Métricas de inferencia medidas en dispositivo:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, MMMU) en la información disponible.
+| Dispositivo | Runtime | Backend | Decode | Prefill | TTFT |
+|---|---|---|---|---|---|
+| Galaxy S26 | LiteRT-LM 0.16.0 | GPU | 20,1 tok/s | 744 tok/s | 330 ms |
+| Galaxy S26 | LiteRT-LM 0.16.0 | CPU | 19,9 tok/s | 277 tok/s | 790 ms |
+
+En la prueba de GPU del Galaxy S26 se delegaron las 937 operaciones del grafo. No se han publicado resultados de benchmarks académicos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 3,55 GB para el fichero int8 y 2,35 GB para el int4 (tamaño en disco de los `.litertlm`); la memoria en ejecución debe acomodar además la caché KV de hasta 4096 tokens y los 256 tokens visuales.
-- GPU recomendadas: no aplica en el sentido de GPU de servidor; el modelo está diseñado para GPU integradas móviles (OpenCL en Android) y Apple Silicon en macOS.
-- Compatibilidad con GPU de consumo: no se documenta soporte para A100, H100 ni RTX 4090; el runtime objetivo es LiteRT-LM en dispositivos de borde.
-- Dispositivos verificados: Galaxy S26 (CPU y GPU), Pixel 8a (GPU OpenCL), macOS (generación verificada). En iOS, Metal falla en la creación del motor (LiteRT-LM#3129); usar CPU.
-- Opciones de despliegue: runtime `litert-lm` (pip), con `litert-lm run … --attachment photo.png` para entrada de imagen. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: TTFT de 330 ms en GPU y 790 ms en CPU del Galaxy S26; prefill de 744 tok/s (GPU) y 277 tok/s (CPU); decodificación de ~20 tok/s en ambos backends.
+- VRAM/RAM estimada: 3,55 GB para el archivo int8 y 2,35 GB para los archivos int4 (int4 stock y `int4_fixB`). El repositorio completo ocupa 16,5 GB.
+- GPU recomendadas: no se especifican modelos de escritorio; las mediciones se realizan en GPU integrada de smartphone (Galaxy S26, Pixel 8a con OpenCL) y en macOS.
+- Compatibilidad con GPU de consumo: el modelo está diseñado para ejecutarse en smartphones, por lo que cabe holgadamente en cualquier GPU de consumo moderna; sin embargo, no se proporcionan cifras para RTX 4090, A100 o H100.
+- Backends soportados: CPU y GPU. GPU verificada en macOS y en Android con OpenCL (Pixel 8a y Galaxy S26). En iOS, Metal falla al crear el motor (issue LiteRT-LM#3129); se recomienda CPU en iOS.
+- Runtime mínimo: `litert-lm` 0.16.0 para el archivo int8 y 0.19.0 para el int4.
+- Opciones de despliegue: exclusivamente LiteRT-LM (`litert-lm` pip, CLI con `--attachment`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 20,1 tok/s de decode y 744 tok/s de prefill en GPU de Galaxy S26; 19,9 tok/s y 277 tok/s en CPU del mismo dispositivo. TTFT de 330 ms (GPU) y 790 ms (CPU).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación rigurosa. Como referencia cualitativa, el modelo base es LiquidAI/LFM2.5-VL-3B, del que esta conversión depende directamente; cualquier comparación con otros VLM de ~3.000 millones de parámetros (por ejemplo, familias tipo PaliGemma, Qwen2-VL-2B o SmolVLM) requeriría datos que no se han facilitado.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. La model card únicamente referencia el modelo base PyTorch (`LiquidAI/LFM2.5-VL-3B`) como referencia de calidad, sin ofrecer comparaciones con otras familias de VLM de 3B parámetros ni con alternativas on-device.
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LFM2.5-VL-3B (LiteRT-LM) | ~3.000 M | 4096 (KV) | `.litertlm` int8/int4 | LFM Open License v1.0 | Hugging Face, litert-community |
-| LiquidAI/LFM2.5-VL-3B | ~3.000 M | no disponible | PyTorch (bf16) | LFM Open License v1.0 | Hugging Face, LiquidAI |
-| Alternativas de ~3B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato edge |
+|---|---|---|---|---|
+| LFM2.5-VL-3B (LiteRT-LM) | 3B | 4096 | LFM Open License v1.0 | `.litertlm` |
+| LFM2.5-VL-3B (base) | 3B | no disponible | LFM Open License v1.0 | PyTorch |
+| Otros VLM on-device | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Fallo posicional grave en el runtime publicado: en LiteRT-LM 0.16.0 (y en `main` actual) solo la cuarta parte superior de la imagen llega al modelo. Las preguntas de localización, conteo o enumeración devuelven respuestas incorrectas sin error y con formato bien construido. Afecta a todos los ficheros LFM2.5-VL, no solo a esta conversión. Se corrige con `LFM2.5-VL-3B_int4_fixB.litertlm` en litert-lm 0.16.1 y 0.17.0.
-- Una sola imagen por *prompt* y resolución fija de 512×512 (256 tokens); no admite imágenes de alta resolución ni múltiples imágenes.
-- Ventana de contexto limitada a 4096 tokens de caché KV, insuficiente para documentos largos o conversaciones extensas.
-- iOS: Metal falla en la creación del motor; hay que usar CPU, con la penalización de rendimiento correspondiente.
-- Licencia LFM Open License v1.0: es una licencia "other", no una licencia open source estándar. Debe revisarse el texto de `LICENSE` antes de cualquier uso comercial; no se detallan aquí las restricciones concretas.
-- No se documentan sesgos conocidos, tasas de alucinación ni comportamiento multilingüe; al ser un modelo de 3.000 millones de parámetros, es esperable una capacidad de razonamiento limitada frente a modelos mayores, aunque no se aportan mediciones.
-- La model card está redactada por el conversor comunitario, no por Liquid AI; las mediciones de velocidad y calidad proceden de pruebas del autor de la conversión y deben tratarse como indicativas.
-- El modelo no incluye modo *thinking* ni soporte documentado de *tool calling*, lo que limita su uso en pipelines de agentes.
+- Fallo posicional grave en el runtime publicado: en `litert-lm` 0.16.0 y en `main` actual, solo el cuarto superior de la imagen llega al modelo. Tareas de localización, conteo, enumeración o preguntas del tipo "cuál está abajo" devuelven resultados incorrectos sin error visible. Afecta a todos los archivos LFM2.5-VL, no solo a esta conversión, por una suposición de factor de reducción en la ruta de visión del runtime (issue LiteRT-LM#3246).
+- Existe un archivo reparado, `LFM2.5-VL-3B_int4_fixB.litertlm`, con los grafos de visión reexportados para que el pixel-unshuffle ocurra dentro del encoder; devuelve las 16 bandas de la prueba de regla en 0.16.1 y 0.17.0, y 10/10 frente a 2/10 del archivo stock en la captura de pantalla del issue. Los archivos stock siguen publicados por si el runtime se corrige.
+- Límite de una imagen por prompt y contexto máximo de 4096 tokens, lo que restringe conversaciones multi-turno largas y el análisis de múltiples imágenes.
+- La imagen se procesa a 512×512, lo que limita la resolución efectiva para OCR de texto pequeño.
+- En iOS, el backend Metal falla al crear el motor; hay que usar CPU.
+- Modelo no-thinking: no dispone de modo de razonamiento extendido.
+- Licencia LFM Open License v1.0: es necesario revisar sus términos para uso comercial, ya que no es una licencia de código abierto estándar (OSI).
+- No se dispone de información sobre sesgos, riesgo de alucinación específico ni idiomas soportados; se recomienda validación empírica antes de producción.
+- La calidad de la versión int4 no está cuantificada en la información disponible (la tabla de calidad está truncada).
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM2.5-VL-3B
+- Hugging Face (esta conversión): https://huggingface.co/litert-community/LFM2.5-VL-3B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Issue del fallo posicional: https://github.com/google-ai-edge/LiteRT-LM/issues/3246
-- Issue de Metal en iOS: https://github.com/google-ai-edge/LiteRT-LM/issues/3129
-- Ficha de compatibilidad en borde: https://github.com/john-rocky/edge-compat/blob/main/cards/lfm2.5-vl-3b-int8/CARD.md
-- Benchmark de runtimes en Apple Silicon y Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- Issue del fallo de Metal en iOS: https://github.com/google-ai-edge/LiteRT-LM/issues/3129
+- Ficha de compatibilidad edge (mediciones): https://github.com/john-rocky/edge-compat/blob/main/cards/lfm2.5-vl-3b-int8/CARD.md
+- Benchmark de runtimes en Apple Silicon: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
 - Script de reexportación de visión: https://github.com/john-rocky/LiteRT-Models/blob/screen-agent/screen-agent/tools/reexport_vision_unshuffle.py
 - Script de reempaquetado: https://github.com/john-rocky/LiteRT-Models/blob/screen-agent/screen-agent/tools/repack_vision.py

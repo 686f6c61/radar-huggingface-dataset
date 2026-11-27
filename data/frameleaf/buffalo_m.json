@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "frameleaf/buffalo_m",
+  "slug": "frameleaf-buffalo_m",
+  "author": "frameleaf",
+  "url": "https://huggingface.co/frameleaf/buffalo_m",
+  "created_at": "2026-11-26T23:24:58.000Z",
+  "updated_at": "2026-11-26T23:24:58.000Z",
+  "license": "insightface",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "immich",
+    "facial-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 790655169,
+  "storage_human": "791 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,50 +2,52 @@
 
 ## Resumen
 
-Granite-4.2-3b-heretic-GGUF es una cuantización en formato GGUF del modelo richardyoung/granite-4.2-3b-heretic, una variante "abliterated" (también etiquetada como "heretic" y "uncensored") del modelo Granite 4.2 de 3B parámetros de IBM. El autor, richardyoung, publica esta versión optimizada para inferencia local con llama.cpp y Ollama, incluyendo cuantizaciones generadas con imatrix. El modelo cuenta con 3.659.737.600 parámetros totales y una licencia Apache 2.0.
+Granite-4.2-3b-heretic-GGUF es una cuantización en formato GGUF del modelo richardyoung/granite-4.2-3b-heretic, una variante "abliterated" (también etiquetada como "uncensored" y "heretic") del modelo Granite 4.2 de 3B parámetros de IBM. El trabajo lo publica el usuario richardyoung, que aplica técnicas de ablación de direcciones de rechazo sobre el modelo base para reducir los comportamientos de negativa del modelo original. Con 3.659.737.600 parámetros reales, se trata de un modelo denso de tamaño compacto pensado para ejecución local en hardware de consumo mediante llama.cpp u Ollama.
 
-La relevancia de esta ficha radica en que ofrece una alternativa de despliegue ligero (3B) para entornos con recursos limitados, manteniendo el pipeline de text-generation y compatibilidad con endpoints. Al tratarse de una variante "abliterated", el modelo ha sido modificado para reducir los rechazos o filtros de seguridad del modelo original, lo que lo hace adecuado para investigación sobre alineación y para aplicaciones donde se requiere menor censura, pero con caveats importantes de sesgo y seguridad.
+La relevancia de esta ficha radica en que combina dos factores poco habituales: por un lado, la familia Granite de IBM, orientada a casos de uso empresariales y con licencia Apache 2.0; por otro, el proceso de "abliteration" que elimina selectivamente la dirección de activación asociada a las respuestas de rechazo, dando lugar a un modelo con menor tendencia a declinar peticiones. El resultado es un modelo de 3B parámetros, cuantizado en múltiples niveles GGUF (el repositorio ocupa 20,4 GB en total, lo que indica la presencia de varias cuantizaciones), distribuido bajo acceso restringido (gated) y compatible con endpoints.
 
-No se dispone de información sobre idiomas soportados, datos de entrenamiento ni benchmarks en la información proporcionada. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de su descarga.
+El modelo está etiquetado como conversacional y de generación de texto, con soporte para llama.cpp y Ollama. No se dispone de información sobre los idiomas soportados ni sobre resultados de benchmarks en la información proporcionada. La licencia declarada es Apache 2.0, aunque el acceso al repositorio requiere aceptar condiciones en Hugging Face.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Granite 4.2, presumiblemente transformer denso) |
-| Parametros totales | 3.659.737.600 |
-| Parametros activos | no aplica (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (cuantizaciones con imatrix; niveles específicos no disponibles) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (basado en IBM Granite 4.2); detalles específicos no disponibles |
+| Parámetros totales | 3.659.737.600 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | GGUF (múltiples niveles; el repositorio de 20,4 GB sugiere varias variantes, niveles concretos no disponibles) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo base es richardyoung/granite-4.2-3b-heretic, del cual este repositorio es una cuantización GGUF. Por las etiquetas, se trata de una variante "abliterated" (también llamada "heretic" o "uncensored"), lo que implica una modificación de los pesos orientada a eliminar o reducir los mecanismos de rechazo del modelo original, probablemente mediante técnicas de abliteration (proyección de direcciones de rechazo). No se detalla el método exacto ni los datos empleados para ello.
+El modelo se basa en la arquitectura Granite 4.2 de IBM, un transformer denso de aproximadamente 3,66 mil millones de parámetros. Sobre esa base, richardyoung aplica un proceso de "abliteration" (etiquetado como "heretic"), una técnica que identifica la dirección de activación asociada a las respuestas de rechazo y la proyecta fuera de los pesos, reduciendo la tendencia del modelo a negarse a responder. Los tags del repositorio incluyen referencias a dos artículos de arXiv (2406.11717 y 2510.18892), que presumiblemente documentan la metodología de ablación empleada, aunque no se dispone de su contenido en la información proporcionada.
 
-La innovación técnica destacable es el uso de cuantizaciones con imatrix (importance matrix), que mejoran la calidad de la cuantización GGUF al ponderar la importancia de los pesos según su impacto en la perplejidad. El repositorio incluye los tags llama.cpp y ollama, lo que indica compatibilidad con estos motores de inferencia. No se dispone de información sobre decodificación especulativa, atención lineal u otras optimizaciones.
+La cuantización se ha realizado con llama.cpp, con la etiqueta "imatrix" que indica el uso de matrices de importancia para calibrar la cuantización y preservar la calidad en niveles bajos de bits. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset original de Granite 4.2 ni sobre si hubo fases de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, tag conversational).
-- Razonamiento y generación de código: capacidades heredadas del modelo base Granite 4.2, aunque no se detallan en la información disponible.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, según el pipeline declarado (text-generation) y la etiqueta "conversational".
+- Ejecución local mediante llama.cpp y Ollama, gracias al formato GGUF.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles.
+- Comportamiento "uncensored"/"abliterated": menor tendencia a rechazar peticiones que el modelo base, según la etiqueta del repositorio.
+- Capacidades de razonamiento, código o matemáticas: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (idiomas no especificados).
-- Capacidades especiales: variante "abliterated/uncensored" que reduce los rechazos del modelo original; no se confirma modo thinking, visión ni audio.
-- Compatibilidad con endpoints (tag endpoints_compatible) y despliegue en llama.cpp y Ollama.
+- Capacidades multilingües: no disponible (idiomas no declarados).
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de un modelo "abliterated" frente al original, comparando tasas de rechazo y respuestas en dominios sensibles, gracias a su licencia Apache 2.0 y su tamaño reducido.
-- Despliegue local en estaciones de trabajo: al ser un GGUF de 3B, puede ejecutarse en CPU o GPU de consumo mediante llama.cpp u Ollama, lo que facilita prototipado rápido sin infraestructura dedicada.
-- Generación de texto creativo sin filtros: para aplicaciones de escritura donde se requiere menor censura, el modelo ofrece respuestas sin los rechazos típicos del modelo alineado, aunque con caveats de sesgo.
-- Chat conversacional ligero: su pipeline conversational y compatibilidad con endpoints permiten integrarlo en interfaces de chat de bajo coste, con contexto limitado por la ventana no especificada.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye cuantizaciones con imatrix, útil para medir la degradación de calidad frente al modelo base en tareas de generación.
-- Experimentación con pipelines de CI/CD para modelos: al ser GGUF y compatible con llama.cpp, puede integrarse en pruebas automatizadas de inferencia y validación de respuestas en entornos de investigación.
-- Fine-tuning posterior o destilación: al ser un modelo pequeño y con licencia permisiva, sirve como base para experimentos de ajuste o para generar datos sintéticos en dominios donde se requiere menor censura.
+- Experimentación con modelos abliterated: investigadores que estudian el efecto de la ablación de direcciones de rechazo pueden comparar este modelo con el Granite 4.2 original para medir cambios en tasas de negativa y calidad de respuesta.
+- Generación de texto creativo sin restricciones temáticas: escritores y creadores que necesitan un modelo local que no decline peticiones sobre ficción sensible, aprovechando el proceso "heretic" aplicado sobre la base.
+- Prototipado rápido en local: con 3,66B parámetros y cuantización GGUF, el modelo cabe en GPU de consumo y permite iterar en estaciones de trabajo sin infraestructura cloud.
+- Despliegue en Ollama para asistentes personales: integración en flujos de conversación privados donde la ejecución local evita enviar datos a servicios externos.
+- Evaluación de seguridad y red-teaming: el modelo sirve como caso de estudio para medir qué comportamientos emergen al eliminar la dirección de rechazo y calibrar filtros externos.
+- Investigación sobre cuantización con imatrix: comparar la calidad de las distintas cuantizaciones GGUF del repositorio frente al modelo en safetensors para estudiar la degradación por nivel de bits.
+- Fine-tuning posterior sobre la variante abliterated: al estar bajo Apache 2.0 y en formato GGUF, puede servir de base para ajustes específicos de dominio en entornos con requisitos de licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +55,37 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para un modelo de 3.66B parámetros en GGUF, se estima aproximadamente 2-3 GB en cuantización Q4, 4-5 GB en Q8 y ~7 GB en FP16 (estimaciones orientativas, no confirmadas en la información).
-- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cabría en RTX 3060 12GB, RTX 4060 Ti, RTX 4090 y GPUs de datacenter como A100/H100 sin problema.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 6 GB o más de VRAM en cuantizaciones bajas.
-- Opciones de despliegue: llama.cpp, Ollama (tags confirmados); compatible con endpoints; otras opciones como vLLM o TGI no se confirman para GGUF.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: un modelo de 3,66B parámetros en cuantización de 4 bits ocupa aproximadamente 2-2,5 GB de pesos; en 8 bits, alrededor de 4 GB; en FP16, unos 7,3 GB. Estas cifras son estimaciones basadas en el número de parámetros, no datos publicados del repositorio.
+- GPU recomendadas: para FP16, una GPU con al menos 8-10 GB de VRAM (RTX 3060 Ti/4060 Ti 8 GB, RTX 4070, RTX 4090, A100, H100). Para cuantizaciones de 4 bits, basta con 4-6 GB de VRAM.
+- ¿Cabe en GPU de consumo? Sí: en cuantizaciones de 4 bits cabe en GPUs de 6-8 GB (RTX 3060, RTX 4060, RTX 2060); en FP16 requiere GPUs de gama media-alta con 8 GB o más.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama (tag explícito en el repositorio), y cualquier servidor compatible con endpoints que acepte GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| richardyoung/granite-4.2-3b-heretic-GGUF | 3.66B | no disponible | Apache 2.0 | GGUF | Variante abliterated, gated |
-| richardyoung/granite-4.2-3b-heretic (base) | 3.66B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar |
-| IBM Granite 4.2 3B (original) | ~3B | no disponible | Apache 2.0 | safetensors | Modelo alineado de referencia |
-| Modelos 3B abliterated similares | ~3B | no disponible | variable | GGUF | Alternativas no verificadas en la información |
+| granite-4.2-3b-heretic-GGUF (este) | 3,66B | No disponible | Apache 2.0 | Gated en HF | Variante abliterated en GGUF |
+| IBM Granite 4.2 3B (base) | ~3,66B | No disponible | Apache 2.0 | Público en HF | Modelo original sin ablación; comportamientos de rechazo intactos |
+| Llama 3.2 3B | ~3,2B | 128K (según documentación pública de Meta) | Llama 3.2 Community License | Público en HF | Alternativa de tamaño similar con licencia no Apache |
+| Qwen2.5 3B | ~3,1B | 32K (según documentación pública de Qwen) | Apache 2.0 | Público en HF | Alternativa densa de tamaño similar con licencia permisiva |
 
-No se dispone de datos de rendimiento comparativo en la información proporcionada.
+Las cifras de contexto y parámetros de los modelos comparables provienen de su documentación pública; los datos de rendimiento comparativo no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser una variante "abliterated", puede amplificar sesgos y generar contenido ofensivo o inapropiado con mayor facilidad que el modelo original.
-- Riesgo de alucinación: no cuantificado; los modelos de 3B tienden a alucinar más que modelos mayores, y la cuantización GGUF puede incrementar la degradación.
-- Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no están disponibles; no se garantiza un rendimiento multilingüe.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
-- Caveat para producción: la naturaleza "uncensored" puede incumplir políticas de contenido en aplicaciones comerciales; se recomienda evaluar filtros adicionales y auditorías de seguridad antes de desplegar.
-- La información sobre arquitectura, entrenamiento y benchmarks es escasa; no se recomienda asumir capacidades no verificadas.
+- El proceso de abliteration puede degradar capacidades generales del modelo (razonamiento, coherencia, seguimiento de instrucciones) al eliminar direcciones de activación; no se dispone de evaluaciones que cuantifiquen esta degradación.
+- Riesgo elevado de generar contenido dañino, sesgado o inexacto al haberse reducido los mecanismos de rechazo; requiere filtros y moderación externos en cualquier despliegue en producción.
+- Riesgo de alucinación inherente a un modelo de 3B parámetros; no es adecuado para tareas que exijan alta fiabilidad factual sin verificación.
+- Idiomas soportados no declarados; el comportamiento multilingüe es incierto.
+- Longitud de contexto no disponible; no se puede confirmar su idoneidad para tareas de contexto largo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso automatizado en pipelines.
+- Aunque la licencia declarada es Apache 2.0, la naturaleza "uncensored" del modelo puede entrar en conflicto con políticas de uso aceptable de plataformas de despliegue y con requisitos regulatorios en determinados sectores.
+- No se dispone de información sobre el dataset de entrenamiento ni sobre sesgos específicos conocidos del modelo base Granite 4.2.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF
-- Modelo base: https://huggingface.co/richardyoung/granite-4.2-3b-heretic
-- Paper referenciado (arxiv:2406.11717): no disponible enlace directo en la información
-- Paper referenciado (arxiv:2510.18892): no disponible enlace directo en la información
-- llama.cpp: no disponible enlace en la información
-- Ollama: no disponible enlace en la información
+- Repositorio Hugging Face (GGUF): https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF
+- Modelo base (safetensors): https://huggingface.co/richardyoung/granite-4.2-3b-heretic
+- Artículo arXiv 2406.11717: https://arxiv.org/abs/2406.11717
+- Artículo arXiv 2510.18892: https://arxiv.org/abs/2510.18892

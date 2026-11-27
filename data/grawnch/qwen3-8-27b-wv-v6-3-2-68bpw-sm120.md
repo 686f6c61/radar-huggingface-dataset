@@ -2,107 +2,107 @@
 
 ## Resumen
 
-Qwen3.8-27B-WV-v6.3-2.68bpw-SM120 es un checkpoint cuantizado del modelo Qwen/Qwen3.8-27B, publicado por el usuario Grawnch. Se trata de un empaquetado nativo para GPUs NVIDIA Blackwell (arquitectura `sm_120`) que comprime los pesos del modelo base a un presupuesto medio de 2,6789 bits por peso (2,68 bpw), resultando en 8,63 GiB en disco y un repositorio de 9,3 GB. El modelo base conserva sus 64 capas híbridas y se distribuye junto con un wheel de runtime precompilado (`qfn_sm120_unified` v22.4.0) que implementa un servidor compatible con la API de OpenAI.
+Qwen3.8-27B-WV-v6.3-2.68bpw-SM120 es un checkpoint cuantizado del modelo base Qwen/Qwen3.8-27B, publicado por el usuario Grawnch en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una reempaquetadura con cuantización propia (denominada wave-quant, WV6) que comprime los pesos del modelo original hasta un presupuesto de 2,6789 bits por peso, con un total de 8,63 GiB en disco y un repositorio de 9,3 GB. El objetivo es permitir la ejecución de un modelo de 27 mil millones de parámetros en GPUs Blackwell de consumo, incluyendo perfiles de 12 GB de VRAM.
 
-La relevancia de esta ficha reside en que permite ejecutar un modelo de 27B de parámetros en GPUs de consumo Blackwell con tan solo 12 GB de VRAM, gracias a la cuantización extrema combinada con decodificación especulativa Multi-Token Prediction (MTP) calibrada en la capa 64. El autor reporta 10,94 GiB residentes con MTP y 8K de KV cache en el perfil `--force-12gb`, manteniendo paridad greedy exacta (96/96) frente al modelo de referencia.
+La peculiaridad principal es que el checkpoint está precompilado para la arquitectura Blackwell (sm_120) y se distribuye junto con un runtime propietario (qfn_sm120_unified, versión 22.4.0) que implementa un servidor compatible con la API de OpenAI, la API de Anthropic Messages y la API de Responses de OpenAI. El modelo incorpora decodificación especulativa mediante Multi-Token Prediction (MTP) calibrado en la capa 64, lo que incrementa el throughput de generación respecto a la decodificación plana.
 
-El checkpoint incluye shards safetensors aplanados en la raíz del repositorio, manifiesto `sm120_manifest.json`, tokenizer y plantilla de chat Jinja. La licencia es Apache 2.0. No se dispone de información sobre los idiomas soportados ni de la composición del dataset de entrenamiento del modelo base en la información proporcionada.
+Es relevante ahora porque demuestra una vía práctica para desplegar modelos de gran tamaño en hardware de consumo Blackwell con latencias competitivas, a costa de depender de un runtime cerrado y de una licencia Apache 2.0 heredada del modelo base. La información disponible sobre el modelo base (arquitectura interna, datos de entrenamiento, benchmarks) es muy limitada en la model card proporcionada, por lo que muchos datos técnicos se indican como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido de 64 capas (modelo base Qwen3.8-27B) con decodificación especulativa MTP en capa 64 |
-| Parametros totales | 27B (modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8K verificado en benchmarks; contexto máximo nativo del modelo base no disponible |
-| Tipos de cuantizacion | Cuantización nativa `wave-quant` a 2,68 bpw (2,6789 bpw efectivos); no se listan otros formatos |
+| Arquitectura | Transformer híbrido de 64 capas (según model card: "64 hybrid layers"); detalles internos del modelo base no disponibles |
+| Parámetros totales | 27B (modelo base Qwen/Qwen3.8-27B) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | Hasta 32.768 tokens verificados en prefill; el servidor admite `--max-seq 8192` por defecto; contexto máximo nativo del modelo base no disponible |
+| Tipos de cuantización | Wave-quant WV6 a 2,6789 bpw (2.68 bpw); no se documentan otros formatos |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (shards `layers_00_03` a `layers_60_63`, `globals.safetensors`, `mtp.safetensors`), más wheel binario `qfn_sm120_unified-22.4.0` |
+| Formato de pesos | safetensors (shards: globals.safetensors, layers_00_03.safetensors … layers_60_63.safetensors, mtp.safetensors) + manifiesto sm120_manifest.json + tokenizer + chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura transformer híbrida de 64 capas. Sobre él, este checkpoint aplica una cuantización propietaria denominada `wave-quant` que reduce los pesos a un presupuesto de 2,68 bpw, con shards organizados en bloques de cuatro capas. El autor añade un módulo de Multi-Token Prediction (MTP) calibrado en la capa 64 que actúa como cabezal de decodificación especulativa, lo que permite generar varios tokens por paso de decodificación y multiplicar el throughput frente a la decodificación autoregresiva clásica.
+El modelo base Qwen3.8-27B es un transformer de 27B parámetros con 64 capas descritas como híbridas en la model card, aunque no se detalla en la información proporcionada qué combinación de atención y otras capas utiliza. El checkpoint WV6 no reentrena el modelo: aplica una cuantización calibrada de tipo wave-quant que reduce los pesos a 2,6789 bits por peso, manteniendo los shards en safetensors y añadiendo un módulo MTP (Multi-Token Prediction) en la capa 64 para decodificación especulativa.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base empleó RLHF o DPO. La innovación técnica destacable es el empaquetado nativo para `sm_120` (Blackwell): el runtime `qfn_sm120_unified` compila kernels SASS específicos para esa arquitectura y expone endpoints multi-protocolo (OpenAI, Anthropic Messages, OpenAI Responses, FIM). El autor reporta paridad de logits y perplejidad frente a BF16 en ventanas de 8K (ΔPPL de +0,03558 en la ventana tardía 4096-8192, con 95,018% de acuerdo top-1).
+La innovación técnica destacable es el empaquetado nativo para sm_120 (Blackwell) con un runtime SASS-only precompilado que soporta sm_80–sm_120a en Linux y Windows. El runtime incluye decodificación especulativa con MTP, batching continuo, streaming SSE con decodificación UTF-8 incremental y recuperación implícita de etiquetas de cierre de razonamiento. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens, ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno con modo thinking (``) y presupuesto de tokens de razonamiento por petición.
-- Razonamiento matemático en modo `xhigh` (validado en AIME 2025 según el benchmark Gate 3, aunque los resultados completos no están incluidos en la información disponible).
-- Generación de código, incluyendo FIM (fill-in-the-middle) mediante el endpoint `/v1/completions` con tokens `<|fim_prefix|>`.
-- Tool calling / function calling completo: definiciones `tools`, respuestas multi-turno `role: "tool"` y streaming de argumentos JSON tipados con `finish_reason: "tool_calls"`.
-- Soporte de agentes multi-paso mediante endpoints nativos para Claude Code (Anthropic Messages API) y Codex CLI (OpenAI Responses API).
-- Decodificación especulativa MTP con streaming incremental de tokens aceptados y decodificación UTF-8 sin glitches.
-- Batching continuo con reparto dinámico de GPU entre peticiones concurrentes.
-- Caché de prefijo asíncrona fijada en memoria (system prompt y esquemas de herramientas compartidos, con `cache_salt` para aislamiento por tenant).
-- Salidas estructuradas mediante `response_format` (`json_object` / `json_schema`) y ramificación con `n > 1`.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional y de prosa, con modo de razonamiento explícito (``) que puede activarse o desactivarse por petición (`enable_thinking`).
+- Generación de código, incluyendo modo FIM (fill-in-the-middle) mediante el token especial `<|fim_prefix|>`.
+- Razonamiento matemático y estructurado, con presupuesto de tokens de pensamiento configurable (`thinking_token_budget`, `thinking.budget_tokens` en la API de Anthropic).
+- Tool calling / function calling completo: definiciones de herramientas, respuestas multi-turno con rol `tool`, streaming incremental de argumentos JSON y conversión automática de XML a JSON tipado.
+- Soporte de agentes multi-paso mediante endpoints compatibles con OpenAI Chat Completions, Anthropic Messages API (Claude Code) y OpenAI Responses API (Codex CLI).
+- Salida estructurada con `response_format` (`json_object` / `json_schema`).
+- Batching continuo para peticiones concurrentes y branching con `n > 1`.
+- Decodificación especulativa con MTP que acelera la generación en dominios de código, matemáticas, JSON y prosa.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de visión ni de audio.
 
 ## Casos de uso
 
-- Despliegue en GPU de consumo Blackwell de 12 GB: el perfil `--force-12gb` mantiene el modelo, MTP y 8K de KV cache en 10,94 GiB, lo que permite servir un modelo de 27B en tarjetas como la RTX 5090 o GPUs Blackwell de gama media sin degradar la paridad greedy.
-- Asistente de código integrado en IDE o CLI: los endpoints nativos para Claude Code y Codex CLI, junto con FIM y tool calling, permiten conectar el modelo a asistentes de programación existentes sin adaptadores adicionales.
-- Automatización de agentes con herramientas: el streaming incremental de argumentos JSON y la recuperación implícita de `` facilitan pipelines agénticos donde el modelo decide y ejecuta llamadas a funciones de forma fiable.
-- Atención al cliente multi-turno: la caché de prefijo asíncrona reutiliza el system prompt entre peticiones y el batching continuo sostiene concurrencia, lo que reduce coste por consulta en cargas conversacionales.
-- Razonamiento matemático y analítico por lotes: el modo thinking con presupuesto de tokens configurable (`thinking_token_budget`) y las guardas anti-bucle permiten procesar problemas de AIME-style con control de coste y latencia.
-- Generación de código en CI/CD: la API compatible con OpenAI (`/v1/chat/completions` con SSE y JSON) y las salidas estructuradas `json_schema` permiten integrar el modelo en pipelines de revisión, generación de tests o parcheo automático.
-- Servicio multi-tenant con aislamiento: el parámetro `cache_salt` y la opción `--api-key` / `QFN_API_KEY` permiten separar cachés y autenticar clientes en un despliegue compartido.
+- Asistente de código en local para GPUs Blackwell de consumo: el perfil `--force-12gb` permite ejecutar el modelo con menos de 11 GiB residentes (MTP + KV de 8K) en una GPU de 12 GB, adecuado para autocompletado y generación de funciones en el IDE mediante el endpoint FIM.
+- Servidor de agentes compatible con Claude Code y Codex CLI: los endpoints `/v1/messages` y `/v1/responses` permiten conectar herramientas de agente existentes sin adaptadores, usando tool calling con streaming incremental de argumentos.
+- Atención al cliente automatizada multi-turno: el batching continuo y el contexto de hasta 8K por defecto (ampliable a 32K) permiten gestionar conversaciones concurrentes con historial largo en una sola GPU.
+- Generación de JSON estructurado en pipelines de datos: `response_format` con `json_schema` y el modo de razonamiento con presupuesto de tokens permiten extraer y validar datos con salida tipada.
+- Razonamiento matemático asistido: el modo thinking con presupuesto configurable y la decodificación especulativa orientada a matemáticas (182,69 tok/s medidos) lo hacen adecuado para resolución de problemas paso a paso en entornos de investigación.
+- Despliegue en estaciones de trabajo con RTX PRO 6000: el perfil de 96 GB permite contexto de 32K y batching de hasta B=16 con 536,6 tok/s, útil para servir múltiples usuarios internos con una API compatible con OpenAI.
+- Prototipado de aplicaciones con salida en streaming: el soporte SSE con decodificación UTF-8 incremental y el streaming de tokens especulativos facilitan interfaces de chat fluidas sin glitches de codificación.
 
 ## Benchmarks y rendimiento
 
-| Benchmark / metrica | Resultado |
-|---|---|
-| PPL BF16, ventana All_8192 | 1,98016 |
-| PPL 2,68 bpw, ventana All_8192 | 2,08364 (ΔPPL +0,10348) |
-| PPL BF16, ventana Early_0_2048 | 2,81770 |
-| PPL 2,68 bpw, ventana Early_0_2048 | 3,21119 (ΔPPL +0,39348) |
-| PPL BF16, ventana Late_4096_8192 | 1,46009 |
-| PPL 2,68 bpw, ventana Late_4096_8192 | 1,49567 (ΔPPL +0,03558) |
-| KLD media, All_8192 | 0,160315 |
-| KLD media, Late_4096_8192 | 0,077584 |
-| Acuerdo top-1, All_8192 | 91,674% |
-| Acuerdo top-1, Late_4096_8192 | 95,018% |
-| Memoria residente (`--force-12gb`, MTP + 8K KV) | 10,94 GiB (paridad greedy 96/96) |
-| Decodificación especulativa B=1 (`--force-12gb`, K=8) | 143,0 tok/s (τ = 3,00; frente a 56,8 tok/s con M=1) |
-| Decodificación especulativa B=1 (96 GB, K=12) | 155,5 tok/s (τ = 3,45; paridad greedy 96/96) |
-| Prefill | 1282,5 tok/s |
-| Decodificación especulativa batched B=4 | 176,9 tok/s |
-| AIME 2025 (contexto 128K, modo `xhigh`, pp=0,0) | resultados no incluidos en la información disponible |
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente proporciona métricas de throughput del runtime en una RTX PRO 6000 (sm_120a) con la versión 1.5.1:
+
+| Métrica | Contexto / batch | Medición |
+|---|---|---|
+| Decodificación plana M=1 | B=1 | 97,34 tok/s |
+| Decodificación especulativa (código) | B=1 | 150,08 tok/s |
+| Decodificación especulativa (matemáticas) | B=1 | 182,69 tok/s |
+| Decodificación especulativa (JSON) | B=1 | 181,04 tok/s |
+| Decodificación especulativa (prosa) | B=1 | 138,69 tok/s |
+| Decodificación con batching | B=4 / B=8 / B=16 (2K ctx) | 176,3 / 365,2 / 536,6 tok/s |
+| Prefill S=512 | 512 tokens | 4.383,4 tok/s (116,81 ms) |
+| Prefill S=2048 | 2.048 tokens | 4.943,0 tok/s (414,32 ms) |
+| Prefill S=8192 | 8.192 tokens | 4.584,3 tok/s (1.786,98 ms) |
+| Prefill S=32768 | 32.768 tokens | 3.521,9 tok/s (9.304,14 ms) |
 
 ## Requisitos de hardware
 
-- GPU NVIDIA Blackwell con arquitectura `sm_120` obligatoria: RTX PRO 6000 96 GB, RTX 5090 32 GB o cualquier GPU Blackwell de consumo con al menos 12 GB.
-- VRAM estimada: 10,94 GiB en el perfil `--force-12gb` (modelo + MTP + 8K KV); perfil `--force-32gb` para RTX 5090; perfil completo para RTX PRO 6000 de 96 GB.
-- Sistema operativo Linux x86_64, Python 3.13, `torch==2.14.1+cu130` (CUDA 13.0), `transformers>=5.22.1` y `safetensors`.
-- No es compatible con GPUs Ampere, Ada ni Hopper: el wheel es SASS-only para `sm_120`.
-- Despliegue mediante el runtime propietario `qfn_sm120_unified` (`python -m qfn_sm120_unified.serve`); no se listan opciones como vLLM, llama.cpp, Ollama o TGI.
-- Throughput reportado: 1282,5 tok/s de prefill y 176,9 tok/s de decodificación especulativa con batch B=4; 143-155,5 tok/s en B=1 según perfil.
+- VRAM estimada: menos de 11,0 GiB residentes en el perfil de 12 GB (incluye MTP y KV de 8K); el checkpoint en disco ocupa 8,63 GiB.
+- GPU soportadas explícitamente: NVIDIA Blackwell sm_120, incluyendo RTX PRO 6000 (96 GB), RTX 5090 (32 GB) y GPUs Blackwell de consumo con 12 GB o más.
+- El runtime universal declara soporte para sm_80–sm_120a, pero el checkpoint está precompilado para sm_120; no se garantiza su funcionamiento en arquitecturas anteriores sin el wheel correspondiente.
+- Requisitos de software: Linux x86_64 (el runtime también soporta Windows), Python 3.13, torch 2.14.1+cu130 (CUDA 13.0), transformers >= 5.22.1, safetensors.
+- Despliegue: runtime propietario `qfn_sm120_unified` v22.4.0 con servidor OpenAI SSE, Anthropic Messages API, OpenAI Responses API y endpoint Prometheus. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; la decodificación especulativa mejora entre un 43 % y un 88 % respecto a la decodificación plana según el dominio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-WV-v6.3-2.68bpw-SM120 | 27B | 8K verificado | 2,68 bpw nativa `sm_120` | Apache 2.0 | Hugging Face, runtime propietario |
-| Qwen/Qwen3.8-27B (base) | 27B | no disponible | BF16 | Apache 2.0 | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks de calidad del modelo base Qwen/Qwen3.8-27B en la información proporcionada, por lo que no es posible establecer una comparación rigurosa con alternativas. A continuación se comparan únicamente los aspectos documentados frente a otros checkpoints cuantizados de la misma familia disponibles en el ecosistema:
 
-No se dispone de información sobre modelos comparables de la misma categoría (mismo tamaño o misma tarea) en la documentación proporcionada.
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Runtime |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-WV-v6.3-2.68bpw-SM120 | 27B | hasta 32K verificado | 2,68 bpw (wave-quant) | Apache 2.0 | qfn_sm120_unified (propietario, sm_120) |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | BF16/FP16 original | Apache 2.0 | transformers, vLLM, etc. |
+| Checkpoints GGUF de la familia Qwen3 (genéricos) | variable | variable | 2–8 bits (GGUF) | según modelo base | llama.cpp, Ollama |
+
+La comparación con alternativas de otros fabricantes (por ejemplo, modelos de 27B–32B de otras familias) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia total de hardware Blackwell `sm_120`: el wheel es SASS-only y no funciona en Ampere, Ada, Hopper ni en GPUs no NVIDIA.
-- La cuantización a 2,68 bpw degrada la perplejidad en ventanas tempranas (ΔPPL +0,39348 en Early_0_2048 y 88,086% de acuerdo top-1), aunque la ventana tardía mantiene mejor paridad.
-- El contexto verificado es de 8K; no se confirma la longitud máxima nativa del modelo base ni su comportamiento más allá de esa ventana.
-- No se dispone de información sobre sesgos conocidos, riesgo de alucinación específico del checkpoint ni idiomas soportados.
-- El runtime es un wheel binario propietario del autor (`qfn_sm120_unified`), no un stack estándar como vLLM o llama.cpp, lo que limita la portabilidad y la auditabilidad del código de inferencia.
-- Aunque la licencia del checkpoint es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.8-27B para uso comercial en producción.
-- El repositorio tiene pocas descargas (1784) y un solo like en el momento de la consulta, lo que indica validación comunitaria limitada.
-- Los resultados de AIME 2025 (Gate 3) no están completos en la información disponible y no deben citarse como cifras cerradas.
+- El checkpoint depende de un runtime propietario y precompilado (SASS-only) para sm_120; no es ejecutable con las herramientas estándar del ecosistema (vLLM, llama.cpp, TGI) sin el wheel específico.
+- La cuantización a 2,6789 bpw es extremadamente agresiva; no se documentan evaluaciones de degradación de calidad respecto al modelo base en BF16.
+- El modelo base Qwen3.8-27B no aporta información sobre sesgos, datos de entrenamiento ni evaluación de alucinación en la información disponible; se heredan los riesgos del modelo original.
+- Idiomas soportados no documentados; el comportamiento multilingüe es incierto.
+- El contexto máximo real del modelo base no está confirmado; las mediciones de prefill llegan a 32.768 tokens, pero el servidor arranca con `--max-seq 8192` por defecto.
+- La licencia Apache 2.0 permite uso comercial, pero el runtime propietario puede tener condiciones adicionales no especificadas en la model card; conviene revisar los términos del repositorio `Grawnch/wv-runtime-binaries`.
+- El repositorio tiene 1.845 descargas y 1 like, lo que indica una adopción muy limitada y poca validación comunitaria.
+- El soporte declarado para sm_80–sm_120a en el runtime universal no garantiza que este checkpoint concreto funcione fuera de sm_120, ya que está empaquetado específicamente para Blackwell.
+- No se documentan mecanismos de seguridad, filtrado de contenido ni evaluaciones de robustez adversarial.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-WV-v6.3-2.68bpw-SM120
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-WV-v6.3-2.68bpw-SM120
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Runtime universal (wheels): https://huggingface.co/Grawnch/wv-runtime-binaries
+- Wheel del instalador: https://huggingface.co/Grawnch/wv-runtime-binaries/resolve/main/wheels/wv_runtime_installer-1.5.2-py3-none-any.whl

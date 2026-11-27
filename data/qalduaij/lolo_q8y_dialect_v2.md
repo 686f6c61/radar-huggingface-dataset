@@ -2,88 +2,87 @@
 
 ## Resumen
 
-lolo_Q8y_Dialect_v2, comercializado como "Q8y Dialect", es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-14B-Instruct orientado especificamente al dialecto kuwaiti del arabe. Lo desarrolla Qusai Al-duaij (qalduaij) dentro de la denominada familia "lolo" de modelos de IA centrados en el dialecto kuwaiti. El modelo busca resolver la escasez de recursos de IA que dominen las particularidades lexicas, fonologicas y culturales del kuwaiti, incluyendo su patrimonio maritimo y social, y esta disenado para la redaccion de narrativa radiofonica y dramatica kuwaiti.
+lolo_Q8y_Dialect_v2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-14B-Instruct orientado al dialecto kuwaití y a la producción de contenido radiofónico y dramático en ese registro lingüístico. Lo desarrolla Qusai Al-duaij (qalduaij) como parte de la denominada "familia lolo" de modelos soberanos kuwaitíes, un proyecto personal sin equipo de investigación detrás, según declara el propio autor en la model card.
 
-Tecnicamente, el modelo hereda la arquitectura transformer decoder-only de Qwen2.5-14B-Instruct, con 14.770.033.664 parametros totales y una ventana de contexto de 32.768 tokens (caracteristica del modelo base Qwen2.5-14B). Se distribuye en formatos safetensors y GGUF, incluyendo una cuantizacion Q8, lo que facilita su despliegue en entornos con recursos limitados. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo parte de la arquitectura densa de Qwen2.5-14B (transformer decoder-only con 14.770.033.664 parámetros) y se distribuye como adaptador LoRA (r=32, alpha=64) sobre el modelo base, además de versiones cuantizadas en GGUF (Q4_K_M y Q8_0) para su uso con Ollama y LM Studio. La licencia es Apache 2.0 y cubre los idiomas árabe e inglés.
 
-Su relevancia actual radica en que es uno de los pocos modelos publicos dedicados de forma explicita al dialecto kuwaiti, un registro del arabe con escasa representacion en los grandes modelos multilingues. El autor declara que el entrenamiento se apoya en la enciclopedia del dialecto kuwaiti de Khaled Al-Rashid, un estudio de la doctora Suha Naja y 62 fuentes audiovisuales y textuales de entrevistas, series y obras de teatro kuwaities.
+Su relevancia es acotada: se trata de un modelo de nicho para dialecto kuwaití, con 208 descargas y sin métricas de benchmarks publicadas. Resulta útil como caso de estudio de ajuste LoRA sobre un base sólido para un dialecto poco representado, pero no debe confundirse con un modelo de propósito general.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-14B-Instruct) |
-| Parametros totales | 14.770.033.664 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (segun el modelo base Qwen2.5-14B) |
-| Tipos de cuantizacion | Q8 (GGUF); safetensors en precision completa |
-| Idiomas soportados | ar, en |
+| Arquitectura | Transformer decoder-only denso (Qwen2.5) |
+| Parámetros totales | 14.770.033.664 (modelo base); adaptador LoRA de 1,03 GB |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantización | GGUF Q4_K_M (8,37 GB) y Q8_0 (14,62 GB); adaptador LoRA en safetensors |
+| Idiomas soportados | Árabe (ar) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | Safetensors (LoRA), GGUF (cuantizaciones), tokenizer.json, chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen2.5-14B-Instruct, un transformer decoder-only de 14.700 millones de parametros con atencion por ventanas deslizantes y atencion completa combinadas, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El ajuste fino se realizo con la libreria Unsloth, segun las etiquetas del repositorio, lo que sugiere un entrenamiento supervisado (SFT) eficiente en memoria sobre el modelo base ya instruido.
+El modelo se construye sobre Qwen2.5-14B-Instruct, un transformer decoder-only denso de la familia Qwen2.5. El ajuste se realiza mediante LoRA con rango 32 y alpha 64, y el adaptador resultante (1,03 GB en safetensors) se aplica sobre el base. La model card menciona que la "base de conocimiento" se apoya en "diccionarios fonéticos y patrimoniales y textos radiofónicos y dramáticos kuwaitíes verificados", aunque no se especifica el volumen de tokens, la composición exacta del dataset ni si hubo fases de RLHF o DPO.
 
-El autor declara que el corpus de entrenamiento se nutre de la enciclopedia del dialecto kuwaiti del investigador Khaled Al-Rashid, el estudio de la doctora Suha Naja y 62 fuentes audiovisuales y textuales que incluyen entrevistas, series de television y obras de teatro kuwaities. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO adicionales. La innovacion principal es la especializacion dialectal: el modelo incorpora reglas de "قلب صوتي" (inversion fonetica) kuwaiti y un lexico autentico como "قاعد", "صج", "شنو", "شحقه", "وايد", "أثاري" y "يتراوالي".
+No se documentan innovaciones técnicas propias (decodificación especulativa, atención lineal, etc.). El valor diferencial está en el corpus dialectal, no en la arquitectura. El repositorio incluye tokenizer, plantilla de chat y configuración de adaptador, lo que permite reproducir la inferencia con transformers, Ollama o LM Studio.
 
 ## Capacidades
 
-- Generacion de texto en dialecto kuwaiti con lexico y fonologia autenticos.
-- Redaccion de narrativa radiofonica y televisiva continua, con voz de locutor o narrador y sin acotaciones de direccion intercaladas.
-- Documentacion y preservacion del patrimonio maritimo y social kuwaiti.
-- Redaccion de guiones dramaticos kuwaities.
-- Comprension y generacion en arabe estandar y en ingles (heredadas del modelo base).
-- Conversacion multi-turno (etiqueta "conversational").
-- Compatibilidad con endpoints de inferencia (etiqueta "endpoints_compatible").
-- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision, audio o modo de razonamiento explicito; al heredar Qwen2.5-14B-Instruct es probable que conserve parte de estas capacidades, pero no estan documentadas en la model card.
+- Generación de texto conversacional en dialecto kuwaití y en árabe estándar formal.
+- Redacción de guiones radiofónicos y dramáticos en registro dialectal kuwaití.
+- Traducción cruzada árabe-inglés (cross-lingual AR <-> EN).
+- Conversación multi-turno con plantilla de chat propia (chat_template.jinja).
+- Despliegue local mediante Ollama y LM Studio con los GGUF incluidos.
+- Compatible con text-generation-inference y endpoints compatibles según los tags del repositorio.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Produccion de boletines y programas de radio kuwaities: el modelo puede redactar textos para locutor con la cadencia y el lexico del kuwaiti hablado, eliminando la necesidad de reescritura manual por parte de un guionista dialectal.
-- Guiones de series y obras de teatro costumbristas: permite generar dialogos con expresiones como "شنو" o "شحقه" en el registro adecuado, util para productoras que trabajan tematica kuwaiti.
-- Preservacion del patrimonio oral y maritimo: el modelo puede transcribir y reescribir relatos de entrevistas y fuentes historicas en un kuwaiti coherente, apoyando proyectos de documentacion cultural.
-- Atencion al cliente en kuwaiti: al ser conversacional y soportar multi-turno, puede gestionar interacciones con clientes que prefieren expresarse en dialecto en lugar de arabe estandar, mejorando la cercania.
-- Localizacion de contenidos para el mercado kuwaiti: adaptacion de campanas, subtitulos y material editorial al registro dialectal, tarea en la que los modelos genericos suelen derivar al arabe estandar.
-- Investigacion linguistica y dialectologia: generacion de corpus sinteticos controlados en kuwaiti para estudios de fonologia, lexico o variacion, gracias a su base documentada en fuentes academicas.
-- Educacion y divulgacion cultural: creacion de materiales didacticos sobre el dialecto kuwaiti y su patrimonio para escuelas y museos.
+- Producción de guiones radiofónicos en dialecto kuwaití: el modelo está entrenado sobre textos radiofónicos y dramáticos verificados, por lo que puede generar diálogos y locuciones con registro dialectal coherente para emisoras locales.
+- Atención al cliente en kuwaití: permite conversaciones multi-turno en dialecto para empresas que atienden a población local, siempre que se valide el contexto máximo real antes de desplegar.
+- Localización de contenidos: adaptación de textos en árabe estándar al dialecto kuwaití para campañas de marketing o comunicación institucional.
+- Traducción y adaptación AR-EN: soporte bilingüe para documentación o atención a clientes en ambos idiomas.
+- Investigación lingüística: corpus de referencia para estudiar variación dialectal kuwaití y evaluar modelos ajustados a dialectos minoritarios.
+- Prototipado local sin GPU de datacenter: la versión Q4_K_M (8,37 GB) permite ejecutar el modelo en equipos de consumo con Ollama o LM Studio.
+- Docencia y divulgación: ejemplo práctico de ajuste LoRA sobre Qwen2.5-14B para un dominio dialectal concreto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (FP16/BF16): aproximadamente 30 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda un minimo de 40-48 GB.
-- VRAM estimada con cuantizacion Q8: aproximadamente 15-16 GB para pesos, viable en GPUs de 24 GB.
-- GPUs recomendadas: A100 40/80 GB o H100 para FP16 con contexto largo; RTX 4090 (24 GB) o RTX A6000 (48 GB) para Q8.
-- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con cuantizacion Q8; en RTX 3090 (24 GB) de forma ajustada; en GPUs de 16 GB requeriria cuantizaciones menores no documentadas en el repositorio.
-- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; vLLM y TGI para los safetensors; el tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de Hugging Face.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: aproximadamente 9-10 GB para Q4_K_M (8,37 GB de pesos más overhead de contexto); aproximadamente 15-16 GB para Q8_0 (14,62 GB de pesos más overhead).
+- GPU recomendadas: RTX 4090 (24 GB) para Q8_0 con contexto moderado; RTX 3090 o RTX 4080 (16-24 GB) para Q8_0; GPUs de 12 GB o superiores para Q4_K_M.
+- Cabe en GPU de consumo: sí, tanto Q4_K_M como Q8_0 en tarjetas de 16 GB o más; Q4_K_M en tarjetas de 12 GB.
+- Opciones de despliegue: Ollama (`ollama run hf.co/qalduaij/lolo_Q8y_Dialect_v2:Q8_0` o `:Q4_K_M`), LM Studio, transformers con el adaptador LoRA, y text-generation-inference según los tags del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lolo_Q8y_Dialect_v2 | 14,77 B | 32.768 tokens | Dialecto kuwaiti | Apache 2.0 | Hugging Face |
-| Qwen/Qwen2.5-14B-Instruct | 14,7 B | 32.768 tokens | Instruccion general multilingue | Apache 2.0 | Hugging Face |
-| Modelos arabes especializados en dialectos (genericos) | no disponible | no disponible | Dialectos arabes varios | no disponible | no disponible |
+| lolo_Q8y_Dialect_v2 | 14,77 B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face, GGUF, Ollama | Dialecto kuwaití, sin benchmarks |
+| Qwen2.5-14B-Instruct | 14,77 B | No disponible en esta ficha | Apache 2.0 | Hugging Face, amplia comunidad | Modelo base; multilingüe general, sin especialización dialectal |
+| lolo_Q8y_Dialect_v3_31B | No disponible | No disponible | No disponible | Hugging Face (según model card) | Generación posterior del mismo autor sobre Gemma 4 31B |
 
-No se dispone de datos de benchmarks ni de comparativas cuantitativas con alternativas especificas del dialecto kuwaiti en la informacion proporcionada.
+No se dispone de datos de benchmarks para establecer comparaciones cuantitativas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: al ser un ajuste fino sobre un modelo de 14 B, puede generar expresiones dialectales plausibles pero inexactas o inventar terminos del patrimonio kuwaiti.
-- Sesgo de dominio: el entrenamiento se centra en fuentes concretas (enciclopedia, estudio academico y 62 fuentes audiovisuales), lo que puede limitar la cobertura de variantes regionales o registros modernos del kuwaiti.
-- Cobertura linguistica limitada a arabe y ingles; no se documenta soporte de otros idiomas.
-- El contexto de 32.768 tokens corresponde al modelo base y no se confirma que se haya validado tras el ajuste fino.
-- Ausencia de benchmarks publicados: no hay evidencia cuantitativa de su rendimiento frente al modelo base ni frente a alternativas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias sobre la exactitud cultural o dialectal del contenido generado.
-- La model card esta redactada principalmente en arabe; la documentacion tecnica en otros idiomas es escasa.
+- No hay benchmarks publicados: el rendimiento real frente al base Qwen2.5-14B-Instruct no está medido.
+- El autor declara explícitamente que es un proyecto personal sin equipo científico ni formación profesional en programación; la calidad del ajuste no está auditada.
+- Riesgo de alucinación inherente a los modelos de 14B, especialmente en datos factuales sobre Kuwait o su legislación.
+- La longitud de contexto efectiva no está documentada; no asumir la ventana nativa de Qwen2.5 sin verificación.
+- Cobertura lingüística limitada a árabe e inglés; el dialecto kuwaití puede degradarse fuera de los dominios del corpus de entrenamiento.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-14B-Instruct tiene sus propios términos que conviene revisar.
+- El tag "gemma4" en el repositorio es engañoso: el base real es Qwen2.5-14B-Instruct, no Gemma.
+- Los tags "sovereign-ai" y la pertenencia a una "familia lolo" son afirmaciones de marketing del autor, no características técnicas verificables.
 
 ## Enlaces
 
-- [Hugging Face: qalduaij/lolo_Q8y_Dialect_v2](https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v2)
-- [Modelo base: Qwen/Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)
-- [Unsloth](https://github.com/unslothai/unsloth)
+- Modelo en Hugging Face: https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
+- Sitio del autor: https://www.alduaij.uk
+- Repositorio de la familia lolo (referencia en model card): https://huggingface.co/qalduaij

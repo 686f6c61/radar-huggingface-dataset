@@ -2,108 +2,105 @@
 
 ## Resumen
 
-Qwen3.6-27B-CoupledWelfare-Curiosity-SuperRoc-GGUF es una cuantización GGUF en formato ROCm-FP4 del modelo Bioaligned/Qwen3.6-27B-CoupledWelfare-Curiosity, publicada por el usuario kingjones777. El modelo base pertenece a la familia Qwen3.6, con 26.895.998.464 parámetros (~26,9 mil millones) según los pesos en safetensors del repositorio original, y está empaquetado aquí como un único fichero GGUF de 15.056.229.888 bytes (~15,1 GB) orientado a inferencia local.
+Qwen3.6-27B-CoupledWelfare-Curiosity-SuperRoc-GGUF es una cuantizacion GGUF del modelo Bioaligned/Qwen3.6-27B-CoupledWelfare-Curiosity, publicada por el usuario kingjones777. Se trata de un build especifico en formato ROCm-FP4 (Q4_0) orientado al motor de inferencia local Super Roc, disenado para ejecutarse sobre hardware Strix Halo (concretamente el Ryzen AI Max+ 395 con iGPU gfx1151). El modelo base parte de la familia Qwen3.6 de 27B parametros, afinado por Bioaligned con un enfoque declarado en su nombre de "Coupled Welfare" y "Curiosity".
 
-La particularidad de esta ficha es su enfoque de despliegue: el autor la distribuye específicamente para Super Roc, un motor de inferencia local para Strix Halo (AMD Ryzen AI Max+ 395, arquitectura gráfica gfx1151), con soporte de formatos ROCm-FP4 derivados del trabajo de ROCmFPX sobre llama.cpp/ggml. El modelo se presenta como "conversational" y compatible con endpoints, e incluye instrucciones para servirlo con Super Roc o consumirlo desde Lemonade.
+El problema que resuelve esta publicacion es la disponibilidad de un artefacto listo para ejecutar un modelo de ~27B en una maquina de escritorio con memoria unificada de 128 GB, sin GPU dedicada, mediante un formato de cuantizacion optimizado para ROCm y una ventana de contexto configurable de hasta 131.072 tokens. El repositorio ocupa 15,1 GB y contiene un unico fichero GGUF de 15.056.229.888 bytes.
 
-Es relevante ahora porque ejemplifica una tendencia concreta: la cuantización especializada por hardware para aceleradores integrados de memoria unificada, donde un modelo de ~27B puede ejecutarse con contexto de 131.072 tokens en una máquina de 128 GB sin GPU discreta. La licencia declarada es Apache 2.0, aunque el autor no documenta el proceso de entrenamiento ni los datos del modelo base.
+La relevancia actual radica en que demuestra la viabilidad de servir modelos de clase 27B con contexto largo en hardware de consumo basado en APU AMD, con metricas de rendimiento publicadas por el autor (534 tok/s de prompt y hasta 49 tok/s de generacion en ciertas condiciones). No obstante, se trata de una cuantizacion de un modelo derivado, no del modelo oficial de Qwen, y la informacion disponible sobre el afinado del modelo base es muy limitada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.6; detalles no disponibles) |
-| Parámetros totales | 26.895.998.464 (~26,9 mil millones) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 131.072 tokens (contexto cargado en la medición del autor) |
-| Tipos de cuantización | GGUF Q4_0 con formato ROCm-FP4 (fichero `Q4_0-ROCmFP4-FAST-imatrix.gguf`) |
+| Arquitectura | Transformer (derivada de Qwen3.6; detalles no disponibles) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 131.072 tokens (configurado en el comando de ejemplo del autor) |
+| Tipos de cuantizacion | Q4_0 en formato ROCm-FP4 (imatrix); un unico fichero GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero único de ~15,1 GB) |
+| Formato de pesos | GGUF (Qwen3.6-27B-CoupledWelfare-Curiosity-Q4_0-ROCmFP4-FAST-imatrix.gguf) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base más allá de su pertenencia a la familia Qwen3.6 y su naturaleza de transformer para generación de texto. El autor de esta cuantización no documenta número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. Tampoco se detalla el proceso de ajuste que dio lugar a la variante "CoupledWelfare-Curiosity" del modelo base.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su pertenencia a la familia Qwen3.6, por lo que se asume una arquitectura transformer decoder-only, pero no se confirman aspectos como atencion lineal, mezcla de expertos o mecanismos hibridos. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el afinado de Bioaligned empleo RLHF, DPO u otras tecnicas de alineamiento; el nombre del modelo sugiere un entrenamiento orientado a objetivos de "bienestar acoplado" y "curiosidad", pero no hay documentacion tecnica al respecto en la informacion proporcionada.
 
-La innovación técnica documentada se sitúa en el plano del empaquetado y la inferencia: el fichero emplea cuantización Q4_0 con formato ROCm-FP4, generado con una imatrix, y está optimizado para el motor Super Roc sobre Strix Halo. El autor reporta una perplejidad en wikitext-2 de 6,47, frente a 6,40 del Q4_K_M estándar del mismo modelo, lo que sitúa la pérdida de calidad de esta cuantización en un margen pequeño (0,07 puntos). El motor soporta modo "thinking" desactivable por defecto y activable por petición mediante `chat_template_kwargs.enable_thinking`.
+La innovacion tecnica destacable de esta publicacion es la cuantizacion ROCm-FP4 (Q4_0 con imatrix) desarrollada por el equipo ROCmFPX, que adapta el formato FP4 al backend ROCm de llama.cpp/ggml para aprovechar las capacidades de la iGPU gfx1151 de Strix Halo. El autor reporta una perplejidad de 6,47 sobre un documento tecnico en ingles de 11K tokens con contexto 4096, frente a 6,40 del Q4_K_M estandar del mismo modelo, lo que indica una degradacion muy contenida respecto a la cuantizacion de referencia. El fichero incluye una matriz de importancia (imatrix) para mejorar la calidad de la cuantizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta `conversational` del repositorio.
-- Modo de razonamiento ("thinking") activable por petición mediante `chat_template_kwargs.enable_thinking`; desactivado por defecto en el comando de ejemplo.
-- Soporte de tool calling / function calling: el autor reporta 7/8 aciertos tanto en modo "required" como en modo "auto".
-- Soporte de contexto largo: el comando de ejemplo carga 131.072 tokens de contexto.
-- Caché de prompt: en la segunda vuelta de una conversación se reutilizaron 6.961 de 6.985 tokens del prompt.
-- Servido compatible con endpoints HTTP (`endpoints_compatible`), lo que permite integrarlo como API local.
-- Capacidades multilingües: no disponibles (el repositorio no declara idiomas).
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto conversacional: el pipeline declarado es text-generation y el modelo esta etiquetado como "conversational".
+- Modo de razonamiento (thinking): desactivable por defecto y activable por peticion mediante chat_template_kwargs.enable_thinking.
+- Tool calling / function calling: el autor reporta 7 de 8 llamadas correctas tanto en modo requerido como en modo automatico.
+- Soporte de contexto largo: hasta 131.072 tokens cargados en el motor Super Roc.
+- Cache de prompt: se reporta reutilizacion de 6961 de 6985 tokens en el segundo turno de una conversacion.
+- Generacion de codigo: medida con dos prompts de codigo (13,8 tok/s de media).
+- Capacidades multilingues: no disponibles (no se especifican idiomas soportados).
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local en estación de trabajo Strix Halo: el modelo se sirve con Super Roc en `127.0.0.1:8080` y ofrece una API compatible con endpoints, adecuada para prototipos de chat privados sin salida a la nube.
-- Procesamiento de documentos largos: con 131.072 tokens de contexto cargados, permite resumir o consultar contratos, informes o bases de código extensas en una sola pasada.
-- Automatización con tool calling: los 7/8 aciertos reportados en modos "required" y "auto" lo hacen utilizable en flujos donde el modelo debe invocar funciones externas (consultas a bases de datos, APIs internas) con supervisión.
-- Generación de código asistida en local: el autor mide 13,8 tok/s en generación de código (media de dos prompts), suficiente para autocompletado interactivo en un entorno de desarrollo sin GPU discreta.
-- Chat multi-turno con caché de prompt: la reutilización de 6.961 de 6.985 tokens en la segunda vuelta reduce el coste de prompts largos en conversaciones encadenadas.
-- Despliegue vía Lemonade: el modelo se integra en el gestor Lemonade con `lemonade pull` y `lemonade chat`, útil para equipos que ya estandarizan su tooling en ese ecosistema.
-- Evaluación de cuantizaciones ROCm-FP4: sirve como referencia práctica para medir el impacto de Q4_0-ROCmFP4 frente a Q4_K_M (perplejidad 6,47 frente a 6,40) en hardware AMD integrado.
+- Asistente conversacional local con contexto largo: el modelo puede mantener conversaciones multi-turno apoyandose en la cache de prompt (6961 de 6985 tokens reutilizados en el segundo turno) y en una ventana de hasta 131.072 tokens, adecuado para analisis de documentos extensos en una maquina de escritorio.
+- Automatizacion con tool calling: con una tasa reportada de 7/8 llamadas correctas, es viable integrarlo en flujos que consulten APIs o ejecuten funciones, aunque requiere validacion adicional en produccion por el 12,5% de fallos.
+- Asistencia a la programacion en local: la generacion de codigo medida (13,8 tok/s) permite autocompletado y explicacion de fragmentos en entornos de desarrollo sin conexion a la nube.
+- Procesamiento de documentacion tecnica: la perplejidad de 6,47 sobre documentos tecnicos en ingles sugiere un comportamiento razonable para resumen y extraccion de informacion en ese dominio.
+- Despliegue en estaciones de trabajo con APU AMD: al ejecutarse en Strix Halo con 128 GB de memoria unificada, encaja en escenarios de privacidad estricta donde no se permite enviar datos a servicios externos.
+- Prototipado e investigacion sobre alineamiento: al ser un modelo afinado con objetivos declarados de "Coupled Welfare" y "Curiosity", puede servir para estudiar el comportamiento de modelos alineados con propositos especificos, siempre con las cautelas sobre la falta de documentacion del afinado.
+- Servicio local compatible con endpoints: la etiqueta endpoints_compatible y la integracion con Lemonade permiten exponerlo como servicio compatible con APIs de chat en una red local.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Los únicos datos de rendimiento disponibles son mediciones de inferencia y una métrica de calidad:
+El autor publica metricas de inferencia medidas el 2026-11-23 sobre Ryzen AI Max+ 395 con 128 GB y Super Roc 0.20.0 (release candidate), con una peticion simultanea:
 
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
-| Perplejidad wikitext-2 (esta cuantización) | 6,47 |
-| Perplejidad wikitext-2 (Q4_K_M del mismo modelo) | 6,40 |
-| Tiempo de carga | 5 s |
+| Tiempo de carga (s) | 5 |
 | Prompt tok/s (p1k) | 534,5 |
 | Prompt tok/s (p8k) | 516,5 |
-| Generación tok/s (p1k) | 16,11 |
-| Generación tok/s (p8k) | 49,06 |
-| Generación de código tok/s | 13,8 (media de 2 prompts) |
-| Tool calls (required / auto) | 7/8 / 7/8 |
-| Caché de prompt, turno 2 (cacheado / prompt) | 6.961 / 6.985 tokens |
+| Generacion tok/s (p1k) | 16,11 |
+| Generacion tok/s (p8k) | 49,06 |
+| Generacion de codigo tok/s | 13,8 (media de 2 prompts) |
+| Tool calls (requerido / automatico) | 7/8 / 7/8 |
+| Cache de prompt turno 2 (cacheado / prompt) | 6961 / 6985 |
 | Contexto cargado | 131.072 tokens |
-| Drafter (decodificación especulativa) | desactivado |
+| Drafter | off |
+| Perplejidad (documento tecnico 11K, contexto 4096) | 6,47 (Q4_K_M estandar: 6,40) |
 
-Mediciones realizadas en un Ryzen AI Max+ 395 con 128 GB, Super Roc 0.20.0 (release candidate), una petición a la vez, el 23 de noviembre de 2026.
+No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el fichero GGUF ocupa ~15,1 GB; con contexto de 131.072 tokens y caché KV, el consumo total supera ampliamente los 15 GB. El autor lo ejecuta en una máquina con 128 GB de memoria unificada.
-- Hardware de referencia: AMD Ryzen AI Max+ 395 (Strix Halo, gfx1151) con 128 GB. El formato ROCm-FP4 está pensado para esta arquitectura gráfica.
-- GPU discretas: no se documenta compatibilidad con A100, H100 ni RTX 4090; el motor Super Roc está orientado a Strix Halo. Para GPUs NVIDIA sería necesario reconvertir o usar otro runtime GGUF.
-- GPU de consumo: no hay datos sobre ejecución en tarjetas consumer; el enfoque es memoria unificada, no VRAM discreta.
-- Opciones de despliegue: Super Roc (`superroc serve ...`), Lemonade (`lemonade pull` / `lemonade chat`) y, por herencia del ecosistema GGUF, potencialmente llama.cpp/ggml, aunque el formato ROCm-FP4 requiere soporte específico.
-- Latencia y throughput: prompt a 534,5 tok/s (p1k) y 516,5 tok/s (p8k); generación a 16,11 tok/s (p1k) y 49,06 tok/s (p8k); código a 13,8 tok/s. Carga en 5 s. Una petición simultánea en las mediciones.
+- VRAM/memoria estimada: el fichero GGUF ocupa 15,1 GB; en Strix Halo se emplea memoria unificada, y el autor lo ejecuta con 128 GB de sistema y 131.072 tokens de contexto.
+- GPU recomendadas: el autor valida exclusivamente sobre Ryzen AI Max+ 395 (iGPU gfx1151, Strix Halo). No se documenta compatibilidad con A100, H100 ni RTX 4090.
+- GPU de consumo: cabe en hardware de consumo con al menos ~16 GB de memoria disponible para el fichero, aunque el formato ROCm-FP4 esta orientado a ROCm/gfx1151 y no se garantiza su funcionamiento en GPUs NVIDIA.
+- Opciones de despliegue: Super Roc (motor propio del autor), Lemonade (con llamacpp.rocm_bin apuntando a /opt/superroc/lemonade). No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 5 s de carga, 534,5 tok/s de prompt a p1k, 516,5 tok/s a p8k, 16,11 tok/s de generacion a p1k y 49,06 tok/s a p8k, medidos con una sola peticion simultanea.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SuperRoc-GGUF) | ~26,9 B | 131.072 tokens | Q4_0-ROCmFP4 GGUF | Apache 2.0 | Hugging Face, optimizado para Strix Halo |
-| Bioaligned/Qwen3.6-27B-CoupledWelfare-Curiosity | ~26,9 B | no disponible | safetensors (base) | Apache 2.0 (según este repo) | Hugging Face |
-| Q4_K_M estándar del mismo modelo | ~26,9 B | no disponible | GGUF Q4_K_M | Apache 2.0 | Referenciado por el autor (perplejidad 6,40) |
+| Qwen3.6-27B-CoupledWelfare-Curiosity-SuperRoc-GGUF (este) | ~26,9B | 131.072 (configurado) | Q4_0 ROCm-FP4 | Apache 2.0 | GGUF en Hugging Face |
+| Bioaligned/Qwen3.6-27B-CoupledWelfare-Curiosity (base) | ~26,9B | no disponible | pesos originales | Apache 2.0 (segun este repo) | Hugging Face |
+| Q4_K_M estandar del mismo modelo | ~26,9B | no disponible | Q4_K_M | Apache 2.0 | referenciado por el autor (perplejidad 6,40) |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con otras familias de modelos de tamaño similar; la comparación disponible se limita a variantes de cuantización del mismo modelo base.
+No se dispone de datos de rendimiento en benchmarks academicos ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos sobre sesgos del modelo base ni sobre el proceso de alineamiento de la variante "CoupledWelfare-Curiosity".
-- Riesgo de alucinación no cuantificado: el autor no reporta evaluaciones de fidelidad factual.
-- La cuantización Q4_0-ROCmFP4 degrada ligeramente la perplejidad frente a Q4_K_M (6,47 frente a 6,40); en tareas sensibles a precisión numérica o de código conviene validar.
-- Idiomas soportados no declarados: no hay garantía documentada de calidad fuera del inglés.
-- El formato ROCm-FP4 está ligado al motor Super Roc y a Strix Halo; fuera de ese hardware puede no ser directamente utilizable sin reconversión.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (23 de noviembre de 2026): no hay validación comunitaria independiente.
-- El autor no documenta el proceso de entrenamiento ni los datos del modelo base; la licencia Apache 2.0 se declara en este repositorio, pero conviene verificar la licencia del modelo original antes de uso comercial.
-- Las mediciones de rendimiento corresponden a una release candidate del motor (Super Roc 0.20.0) y a una sola petición concurrente; el throughput con carga concurrente no está documentado.
+- La model card no documenta sesgos conocidos, datos de entrenamiento ni proceso de alineamiento del modelo base; el nombre "Coupled Welfare" y "Curiosity" no viene acompanado de documentacion tecnica verificable.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad factual.
+- El tool calling alcanza 7/8 llamadas correctas, lo que implica un 12,5% de fallos en la medicion del autor; no es adecuado para produccion sin validacion y reintentos.
+- No se especifican idiomas soportados; el unico dato de calidad (perplejidad 6,47) corresponde a un documento tecnico en ingles.
+- La cuantizacion ROCm-FP4 esta orientada a Strix Halo (gfx1151) y al motor Super Roc; su portabilidad a otros backends o GPUs no esta documentada y podria no funcionar.
+- Las metricas de rendimiento proceden de una unica maquina, una version release candidate del motor y una sola peticion simultanea; no reflejan escenarios de concurrencia.
+- Aunque la licencia declarada es Apache 2.0, se trata de una cuantizacion de un modelo derivado de Qwen3.6; conviene verificar los terminos del modelo base antes de uso comercial.
+- El repositorio tiene 0 likes y 214 descargas, y fue creado y actualizado el mismo dia (2026-11-23), lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.6-27B-CoupledWelfare-Curiosity-SuperRoc-GGUF
 - Modelo base: https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-Curiosity
 - Motor Super Roc: https://github.com/kingjones30/superroc
-- Documentación de Lemonade para Super Roc: https://github.com/kingjones30/superroc/blob/main/docs/LEMONADE.md
-- ROCmFPX (formatos ROCm-FP4 y trabajo sobre llama.cpp): https://github.com/charlie12345/ROCmFPX
-- llama.cpp / ggml (base del motor, licencia MIT): no se proporciona URL específica en la información disponible.
+- Documentacion de Lemonade para Super Roc: https://github.com/kingjones30/superroc/blob/main/docs/LEMONADE.md
+- ROCmFPX (formatos ROCm-FP4): https://github.com/charlie12345/ROCmFPX

@@ -48,5 +48,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e · Hugging Face",
+      "url": "https://huggingface.co/qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e",
+      "snippet": "Image-Text-to-Text model with 35B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B oQ - a qinghuali Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/qinghuali/ornith-15-35b-a3b-oq",
+      "snippet": "qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e Image-Text-to-Text • 35B•Updated 6 days ago• 160 Upvote - Sort: Collection"
+    },
+    {
+      "title": "qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e - Hugging Face Hub Pack.",
+      "url": "https://socket.dev/huggingface/package/qinghuali/ornith-1.5-35b-mlx-vl-oq8e",
+      "snippet": "Nov 18, 2026 · We found that qinghuali/Ornith-1.5-35B-MLX-VL-oQ8e demonstrated a healthy version release cadence and project …Read more"
+    },
+    {
+      "title": "Ornith-1.5-35B-MLX-VL-oQ8e | Hugging Face model",
+      "url": "https://essamamdani.com/ai-models/hf-qinghuali-ornith-1-5-35b-mlx-vl-oq8e",
+      "snippet": "Nov 10, 2026 · Ornith-1.5-35B-MLX-VL-oQ8e is a Hugging Face image-text-to-text model repository intended for working with both …Read more"
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building …Read more"
+    }
+  ]
 }

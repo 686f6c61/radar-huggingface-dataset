@@ -59,32 +59,295 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Orthopaedic Research | UK Charity",
-      "url": "https://oruk.org/",
-      "snippet": "Not only is ORUK providing funding to help us get to the next stage in our development, but it has also opened-up multiple links to …Read more"
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI-Cleaned",
+      "metric": "Test WER (BF16)",
+      "value": 6.73
     },
     {
-      "title": "Oruk — Voice APIs: STT, Tone and Voice Agents",
-      "url": "https://oruk.ai/",
-      "snippet": "Play recorded voices, compare their transcripts and acoustic scores, and inspect the API response. Explore Oruk models, …Read more"
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22-Cleaned-AA-chunked",
+      "metric": "Test WER (BF16)",
+      "value": 5.61
     },
     {
-      "title": "Speech models and open weights | oruk",
-      "url": "https://oruk.ai/models",
-      "snippet": "Explore Oruk-1.7B, Spectra-2 and Oruk-MoE. Find downloadable speech models, runtime guides and supported API endpoints."
+      "task": "Automatic Speech Recognition",
+      "dataset": "Gigaspeech-Cleaned",
+      "metric": "Test WER (BF16)",
+      "value": 6.5
     },
     {
-      "title": "Our Research Funds — Orthopaedic Research UK",
-      "url": "https://oruk.org/our-research-funds/",
-      "snippet": "Nov 9, 2026 · ORUK MSK Innovation Accelerator Programme Sponsored by TIME Interconnect MedTech UK Limited, this unique …Read more"
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGISpeech",
+      "metric": "Test WER (BF16)",
+      "value": 1.87
     },
     {
-      "title": "oruk/orukeet · Hugging Face",
-      "url": "https://huggingface.co/oruk/orukeet",
-      "snippet": "Sep 9, 2026 · Choose Local → Oruk → Orukeet, then Download. Recognition runs locally after installation. Follow the file-upload …Read more"
+      "task": "Automatic Speech Recognition",
+      "dataset": "URGENT2024",
+      "metric": "Test WER (BF16)",
+      "value": 9.03
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "URGENT2024-Clean",
+      "metric": "Test WER (BF16, extra split)",
+      "value": 4.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voice Arena Monsoon",
+      "metric": "Test WER (BF16)",
+      "value": 3.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voxpopuli-AA-Cleaned",
+      "metric": "Test WER (BF16)",
+      "value": 1.46
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench (PHL-EN, duration >0.5s)",
+      "metric": "Test WER (BF16, greedy, mindur)",
+      "value": 9.68
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER (Q8_0 GGUF, transcribe.cpp)",
+      "value": 1.4
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (en_us)",
+      "metric": "Test WER (Q8_0 GGUF, transcribe.cpp)",
+      "value": 3.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings21 (Long-Form)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 7.43
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings21 (Long-Form)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 7.87
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22 (Long-Form)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 10.83
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22 (Long-Form)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 11.21
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CORAAL (8-subset mean, Long-Form)",
+      "metric": "Test WER (BF16, 8-subset mean, Open ASR merge_compounds=True)",
+      "value": 14.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open ASR English Long-Form (3-component average)",
+      "metric": "Test WER (BF16, Long-Form Avg, Open ASR merge_compounds=True)",
+      "value": 10.92
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean, BF16)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 1.4
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean, BF16)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 1.04
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other, BF16)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 2.6
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other, BF16)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 2.16
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TED-LIUM 3",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 2.33
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TED-LIUM 3",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 2.05
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (en_us, BF16)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 3.34
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (en_us, BF16)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 2.89
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice EN",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 7.1
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice EN",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 6.61
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli EN (v1)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 7.29
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli EN (v1)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 6.96
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (v1)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 7.99
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (v1)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 7.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech (v1)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 7.14
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech (v1)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 6.53
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22 (v1)",
+      "metric": "Test WER (BF16, standard jiwer merge_compounds=False)",
+      "value": 8.91
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22 (v1)",
+      "metric": "Test WER (BF16, Open ASR merge_compounds=True)",
+      "value": 8.54
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PriMock57 Medical Consultations (55 comparable files)",
+      "metric": "Overall WER (BF16, #4/43)",
+      "value": 8.57
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PriMock57 Medical Consultations (55 comparable files)",
+      "metric": "Canonical M-WER v2 (BF16, #8/43)",
+      "value": 3.02
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench CH-EN-Dialects (6 EN accents, duration >0.5s)",
+      "metric": "Mean WER (BF16, greedy, #1/16)",
+      "value": 12.73
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench Vertical-Domain (12 EN domains, duration >0.5s)",
+      "metric": "Mean WER (BF16, greedy, #1/16)",
+      "value": 6.09
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench Vertical-Domain (12 EN domains, duration >0.5s)",
+      "metric": "Mean Hotword B-WER (BF16, greedy, #3/16)",
+      "value": 13.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench Older-Children OLD-EN (duration >0.5s)",
+      "metric": "Test WER (BF16, greedy, #1/17)",
+      "value": 13.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeechBench Older-Children CHILD-EN (duration >0.5s)",
+      "metric": "Test WER (BF16, greedy)",
+      "value": 17.99
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MERaLiON AudioBench ASR-English (12-dataset mean)",
+      "metric": "Mean WER (BF16, greedy, #2/35)",
+      "value": 6.33
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "People's Speech (AudioBench)",
+      "metric": "Test WER (BF16, greedy, AudioBench)",
+      "value": 16.33
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TED-LIUM 3 Long-Form (AudioBench)",
+      "metric": "Test WER (BF16, greedy, #1/35 AudioBench)",
+      "value": 2.13
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "BloomSpeech EN-30 (SEA AudioBench)",
+      "metric": "Test WER (BF16, greedy, AudioBench)",
+      "value": 5.37
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 21 EN-30 (SEA AudioBench)",
+      "metric": "Test WER (BF16, greedy, AudioBench)",
+      "value": 6.73
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ESD EN-30 (SEA AudioBench)",
+      "metric": "Test WER (BF16, greedy, AudioBench)",
+      "value": 3.15
     }
-  ]
+  ],
+  "sources": []
 }

@@ -2,49 +2,49 @@
 
 ## Resumen
 
-`Nigeria_History_Q_and_A_Instruct-GGUF` es una cuantización estática en formato GGUF del modelo `Nigeria_History_Q_and_A_Instruct`, publicado por el usuario Cyber-Maphian y convertido por mradermacher. Se trata de un modelo de lenguaje afinado para responder preguntas sobre historia de Nigeria, presumiblemente un fine-tuning de instrucciones sobre una base no especificada. El repositorio no incluye model card propia: la información disponible se limita a los metadatos de conversión y al enlace al modelo original.
+Nigeria_History_Q_and_A_Instruct es un modelo de lenguaje especializado en historia de Nigeria, desarrollado por Cyber-Maphian y cuantizado a formato GGUF por mradermacher. Se trata de un ajuste fino (fine-tuning) del modelo base mediante la técnica de continued-pretraining y LoRA sobre un dataset específico de historia nigeriana (Cyber-Maphian/History_of_Nigeria), con el objetivo de ofrecer respuestas conversacionales precisas y centradas en el dominio histórico de Nigeria.
 
-La relevancia de esta ficha es limitada desde el punto de vista técnico, ya que el autor no publica datos sobre arquitectura, tamaño, contexto, licencia ni idiomas. El interés práctico reside en la disponibilidad de múltiples cuantizaciones GGUF (desde Q2_K hasta Q8_0, además de F16 e IQ4_XS) que permiten desplegar el modelo en hardware modesto mediante llama.cpp u Ollama, siempre que el modelo base sea compatible.
+El modelo cuenta con aproximadamente 494 millones de parámetros (494.032.768 según los safetensors del modelo base), lo que lo sitúa en la categoría de modelos pequeños, adecuados para despliegue en hardware de consumo. La versión publicada por mradermacher es una cuantización estática en múltiples formatos GGUF (desde Q2_K hasta f16), lo que facilita su ejecución en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-No se dispone de información sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación. Cualquier uso en producción debería ir precedido de una validación empírica del modelo original y de la verificación de la licencia del modelo base.
+Su relevancia radica en la especialización vertical: frente a modelos generalistas, este modelo está adaptado a un dominio concreto (historia de Nigeria), lo que puede reducir alucinaciones en ese ámbito y mejorar la precisión terminológica. No obstante, la información pública disponible es limitada, y no se han publicado benchmarks ni detalles exhaustivos sobre el proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (fine-tuning de un modelo base, detalles no disponibles) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible (presumiblemente ingles, sin confirmar) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo original en https://huggingface.co/Cyber-Maphian/Nigeria_History_Q_and_A_Instruct |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | other (no especificada en detalle) |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base (transformer, MoE, híbrido, etc.), el número de parámetros, la longitud de contexto nativa ni la composición del dataset de entrenamiento. El nombre del modelo sugiere un fine-tuning con instrucciones (SFT) orientado a preguntas y respuestas sobre historia de Nigeria, pero no se detalla el número de tokens de entrenamiento, si hubo RLHF/DPO ni qué modelo preentrenado sirvió de base.
+La arquitectura subyacente es un transformer, aunque la model card no especifica la familia exacta del modelo base (podria tratarse de un modelo tipo GPT-2, OPT, Pythia o similar, dado el tamano de ~494M parametros). El proceso de adaptacion incluye continued-pretraining y fine-tuning mediante LoRA sobre el dataset Cyber-Maphian/History_of_Nigeria, lo que sugiere una adaptacion de dominio orientada a preguntas y respuestas sobre historia nigeriana.
 
-La única información técnica verificable procede de los metadatos de conversión incluidos en el README: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversión se realizó con la herramienta de cuantización de llama.cpp a partir de pesos en formato Hugging Face. No se especifica si se conservó el tensor de embeddings de salida sin cuantizar (`vocab_type` vacío) ni si se omitió el componente multimodal (`skip_mmproj` vacío).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). La cuantizacion fue realizada por mradermacher con quantize_version 2 y output_tensor_quantised 1, generando cuantizaciones estaticas (no se ofrecen versiones weighted/imatrix en el momento de la publicacion).
 
 ## Capacidades
 
-- Generación de texto y respuesta a preguntas de instrucción, presumiblemente centrada en historia de Nigeria.
-- No se ha confirmado soporte de tool calling ni function calling.
-- No se ha confirmado soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingües no documentadas; el nombre y el contexto sugieren inglés, sin confirmación.
-- No se ha confirmado modo de razonamiento explícito (thinking mode), visión, audio ni otras capacidades especiales.
-- Al estar en formato GGUF, es compatible con motores de inferencia basados en llama.cpp, lo que facilita su ejecución en CPU y GPU de consumo.
+- Generacion de texto conversacional en ingles, orientada a preguntas y respuestas sobre historia de Nigeria.
+- Respuestas de tipo instructivo (formato conversational), apto para dialogos multi-turno.
+- Especializacion de dominio: conocimiento enfocado en historia nigeriana gracias al fine-tuning sobre un dataset especifico.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues limitadas al ingles (segun el campo language de la model card).
+- No se documentan capacidades de vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Asistente educativo sobre historia de Nigeria: el modelo podría emplearse para responder preguntas de estudiantes o curiosos sobre eventos, personajes y periodos históricos nigerianos, siempre que se valide previamente la calidad y veracidad de sus respuestas mediante pruebas con un conjunto de preguntas de referencia.
-- Chatbot temático para museos o centros culturales: integrado en una interfaz conversacional, podría ofrecer información introductoria sobre la historia del país; requiere revisión humana del contenido por el riesgo de alucinación en datos históricos concretos.
-- Generación de material divulgativo: borradores de artículos, resúmenes o guiones sobre historia nigeriana que un editor humano revisaría y completaría con fuentes primarias.
-- Despliegue en local para investigación: al disponer de cuantizaciones Q2_K a Q8_0, permite experimentar con el modelo en equipos sin GPU dedicada mediante llama.cpp u Ollama, útil para estudiar el comportamiento de fine-tunings temáticos.
-- Filtrado y clasificación de consultas históricas: en un pipeline de atención al ciudadano o archivo histórico, podría preclasificar preguntas por temática antes de derivarlas a un sistema más robusto.
-- Prototipado rápido de aplicaciones de Q&A especializadas: sirve como base para validar una interfaz o flujo de producto antes de invertir en un modelo mayor o en un RAG con fuentes documentales.
-- Evaluación comparativa de cuantizaciones: útil para medir la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 en una tarea concreta de conocimiento factual.
+- Asistente educativo sobre historia de Nigeria: el modelo puede responder preguntas de estudiantes o curiosos sobre eventos, personajes y periodos historicos nigerianos, aprovechando su especializacion de dominio para ofrecer respuestas mas precisas que un modelo generalista de tamano similar.
+- Chatbot divulgativo para museos o instituciones culturales nigerianas: integrado en un sitio web o aplicacion, puede gestionar conversaciones multi-turno sobre exposiciones y contenido historico, con bajo coste de inferencia gracias a su tamano reducido.
+- Generacion de material didactico: el modelo puede redactar resumenes, preguntas de examen o fichas sobre temas historicos de Nigeria, sirviendo como borrador para docentes que luego revisan y amplian el contenido.
+- Apoyo a investigadores y periodistas: como herramienta de consulta rapida para contextualizar referencias historicas nigerianas, siempre con verificacion posterior por parte del usuario.
+- Prototipado de aplicaciones de nicho: desarrolladores que necesiten un modelo ligero y especializado pueden desplegarlo en local con llama.cpp u Ollama para experimentar con asistentes tematicos sin depender de APIs externas.
+- Educacion en entornos con recursos limitados: al caber en cuantizaciones de ~0,4-0,6 GB, puede ejecutarse en portatiles modestos o incluso en Raspberry Pi, facilitando su uso en aulas o regiones con infraestructura limitada.
 
 ## Benchmarks y rendimiento
 
@@ -52,29 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el número de parámetros del modelo base. Como referencia genérica para GGUF, un modelo de 7B ocupa aproximadamente 4,1 GB en Q4_K_M, 7,2 GB en Q8_0 y 13,8 GB en F16; un modelo de 13B, aproximadamente 7,9 GB en Q4_K_M y 13,8 GB en Q8_0. Estas cifras son orientativas y no se han verificado para este modelo concreto.
-- GPU recomendadas: no disponible. Para tamaños de 7B en Q4_K_M basta una GPU de consumo con 6-8 GB de VRAM (RTX 3060, RTX 4060); para 13B en Q4_K_M se recomienda 12 GB o más (RTX 4070 Ti, RTX 4080); para Q8_0 de 13B o modelos mayores, A100/H100 o RTX 4090.
-- Cabe en GPU de consumo: probablemente sí en cuantizaciones bajas si el modelo base es de 7B o menos, pero no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python y servidores compatibles con GGUF (p. ej., text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,4-0,6 GB para cuantizaciones Q2_K a Q8_0; ~1,1 GB para f16.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; tambien puede ejecutarse en CPU.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1050, RTX 3060, RTX 4090, etc.), e incluso en CPUs y dispositivos de placa unica.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede usarse con transformers.
+- Latencia y throughput estimados: no disponibles; dado el tamano, se espera una latencia muy baja en GPU y aceptable en CPU.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de la misma categoría (Q&A especializado en historia de Nigeria) ni se dispone de datos de parámetros, contexto o rendimiento del modelo base para establecer una comparación rigurosa con alternativas como Llama, Mistral o Qwen afinados para dominios históricos.
+| Modelo | Parametros | Contexto | Licencia | Formato | Especializacion |
+|---|---|---|---|---|---|
+| Nigeria_History_Q_and_A_Instruct (este) | ~494M | no disponible | other | GGUF, safetensors | Historia de Nigeria |
+| Modelos generalistas de ~500M (p. ej. Qwen2.5-0.5B, SmolLM2-360M) | 360M-500M | 4K-32K (segun modelo) | Apache 2.0 / otras | safetensors, GGUF | Generalista |
+| Modelos de dominio historico | no disponible | no disponible | no disponible | no disponible | Historia (general) |
+
+La comparativa directa es limitada porque no se dispone de datos de benchmarks ni de detalles del modelo base. Frente a modelos generalistas del mismo orden de parametros, la ventaja de este modelo es su especializacion en historia nigeriana; la desventaja es la falta de documentacion sobre contexto, licencia y rendimiento, asi como su limitacion al ingles.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan datos de entrenamiento, licencia, idiomas ni evaluación, lo que impide verificar el cumplimiento legal para uso comercial.
-- Licencia no disponible: no puede asumirse permiso de uso comercial; es imprescindible consultar la licencia del modelo original en Cyber-Maphian/Nigeria_History_Q_and_A_Instruct antes de cualquier despliegue.
-- Riesgo elevado de alucinación en contenido histórico: los fine-tunings temáticos pequeños tienden a inventar fechas, nombres y eventos; se recomienda verificación con fuentes primarias.
-- Sesgos desconocidos: al no documentarse la composición del dataset, no puede evaluarse el sesgo político, étnico o regional en un tema tan sensible como la historia de Nigeria.
-- Contexto e idiomas sin confirmar: podría no manejar conversaciones multi-turno largas ni idiomas distintos del inglés.
-- Cuantizaciones muy agresivas (Q2_K, Q3_K_S) degradan notablemente la calidad; para producción conviene Q5_K_M o superior.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validación independiente.
-- Fecha de creación del repositorio (2026-11-24) posterior a la fecha actual de referencia habitual; conviene verificar la integridad y procedencia del artefacto.
+- Sesgos conocidos: no documentados, pero al entrenarse sobre un dataset especifico de historia nigeriana puede heredar sesgos de las fuentes utilizadas.
+- Riesgo de alucinacion: presente como en cualquier modelo de lenguaje; la especializacion reduce pero no elimina el riesgo de datos historicos incorrectos.
+- Limitaciones de contexto o idioma: solo ingles; longitud de contexto no disponible.
+- Restricciones de licencia: la licencia es "other" y no se detalla en la model card, por lo que se debe contactar con el autor o revisar el modelo base antes de un uso comercial.
+- Caveats para produccion: informacion muy escasa sobre entrenamiento y evaluacion; se recomienda validacion exhaustiva en el dominio antes de desplegar en produccion. Ademas, las cuantizaciones Q2_K y Q3_K pueden degradar la calidad; se recomienda Q4_K_M o superior para uso general.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Nigeria_History_Q_and_A_Instruct-GGUF
-- Modelo original: https://huggingface.co/Cyber-Maphian/Nigeria_History_Q_and_A_Instruct
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/Cyber-Maphian/Nigeria_History_Q_and_A_Instruct
+- Dataset: https://huggingface.co/datasets/Cyber-Maphian/History_of_Nigeria
+- Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#Nigeria_History_Q_and_A_Instruct-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

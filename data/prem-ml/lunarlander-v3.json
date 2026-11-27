@@ -42,16 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "prem-ml/lunar_lander_v3 · Hugging Face",
-      "url": "https://huggingface.co/prem-ml/lunar_lander_v3",
-      "snippet": "Instructions to use prem-ml/lunar_lander_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use prem-ml/lunar_lander_v3 with stable-baselines3:"
-    },
-    {
-      "title": "GitHub - Pranay-260605/Lunar-Lander: A reinforcement learning project ...",
-      "url": "https://github.com/Pranay-260605/Lunar-Lander",
-      "snippet": "A reinforcement learning project using OpenAI Gym’s LunarLander-v3 environment, achieving an average score of 280 over 100 episodes. The agent was trained to control a lunar module for safe landing using policy-based or value-based methods."
-    }
-  ]
+  "sources": []
 }

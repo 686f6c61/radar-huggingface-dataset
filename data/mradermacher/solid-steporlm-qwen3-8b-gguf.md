@@ -2,80 +2,89 @@
 
 ## Resumen
 
-SOLID-StepORLM-Qwen3-8B-GGUF es una colección de cuantizaciones GGUF del modelo SOLID-StepORLM-Qwen3-8B, desarrollado por JamesX421 y cuantizado por mradermacher. El modelo base es un fine-tuning de Qwen3-8B orientado a investigación de operaciones (operations research) y optimización matemática, entrenado con técnicas de self-distillation y GRPO (Group Relative Policy Optimization). Esta versión GGUF permite ejecutar el modelo en entornos con recursos limitados, ofreciendo múltiples niveles de compresión que van desde Q2_K (3,4 GB) hasta f16 (16,5 GB).
+SOLID-StepORLM-Qwen3-8B-GGUF es la versión cuantizada en formato GGUF del modelo JamesX421/SOLID-StepORLM-Qwen3-8B, un modelo de lenguaje de 8.190.735.360 parámetros construido sobre la arquitectura Qwen3. Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo está especializado en investigación operativa y optimización matemática, según las etiquetas declaradas por el autor.
 
-La relevancia de este modelo radica en su especialización en problemas de optimización y razonamiento matemático, un dominio donde los modelos generalistas suelen fallar. Al estar basado en Qwen3-8B, hereda la arquitectura transformer de 8 mil millones de parámetros, aunque la cuantización reduce la precisión numérica a cambio de un menor consumo de memoria. La licencia no está especificada en la información disponible, lo que limita su uso comercial sin verificación previa.
+El modelo base se ha entrenado mediante técnicas de autodestilación y GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo. Esto lo orienta a la resolución de problemas de optimización matemática y modelado de investigación operativa, un nicho poco cubierto por los modelos generalistas. La cuantización de mradermacher facilita su despliegue en hardware de consumo, algo relevante porque el repositorio original en safetensors ocupa 73,4 GB en total (incluyendo múltiples ficheros y estados intermedios).
+
+La relevancia actual del modelo radica en su especialización: frente a modelos generalistas, un modelo de 8B ajustado específicamente para formular y resolver problemas de optimización puede ofrecer resultados más fiables en ese dominio con un coste computacional mucho menor que modelos de mayor tamaño. La disponibilidad de cuantizaciones desde Q2_K (3,4 GB) hasta f16 (16,5 GB) permite elegir el equilibrio entre calidad y requisitos de memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Qwen3-8B, no confirmado) |
+| Arquitectura | Transformer basada en Qwen3 (modelo base: JamesX421/SOLID-StepORLM-Qwen3-8B) |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (heredado de Qwen3-8B, probablemente 32.768 tokens) |
+| Parametros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
+| Idiomas soportados | en (inglés) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors no incluido en este repo) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la informacion disponible, pero al ser un fine-tuning de Qwen3-8B, se asume una arquitectura transformer decoder-only con atencion por ventanas deslizantes y mezcla de expertos opcional (aunque el modelo base Qwen3-8B es denso). El entrenamiento del modelo base emplea GRPO, un metodo de optimizacion por politicas que refuerza respuestas correctas en problemas de razonamiento, combinado con self-distillation para transferir conocimiento de un modelo maestro a uno estudiante. No se especifican el numero de tokens de entrenamiento ni la composicion del dataset, pero los tags indican un enfoque en operations research y optimizacion matematica, lo que sugiere un corpus especializado en problemas de programacion lineal, entera, combinatoria y otros dominios afines.
+El modelo base es un transformer de la familia Qwen3 con 8.190.735.360 parámetros. Según las etiquetas y la model card, el entrenamiento combina autodestilación (self-distillation) con GRPO, un algoritmo de optimización de política por refuerzo que agrupa muestras para estimar ventajas relativas sin necesidad de un modelo crítico separado. El dominio de especialización declarado es la investigación operativa y la optimización matemática, lo que sugiere un ajuste orientado a la formulación de modelos, la resolución de problemas lineales y la generación de razonamientos estructurados en ese campo.
 
-La cuantizacion GGUF realizada por mradermacher es estatica, sin usar imatrix ni pesos ponderados, lo que puede afectar ligeramente la calidad en los niveles de compresion mas bajos. El repositorio incluye 12 variantes de cuantizacion, siendo Q4_K_M y Q5_K_M las recomendadas por el autor por su equilibrio entre velocidad y fidelidad.
+No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset, la longitud de contexto nativa ni detalles sobre la innovación técnica concreta más allá de las etiquetas mencionadas. La cuantización de mradermacher es estática (no se han publicado, según la model card, cuantizaciones ponderadas con imatrix en el momento de la consulta), con conversión desde el formato Hugging Face y cuantización de tensores de salida.
 
 ## Capacidades
 
-- Razonamiento matematico y optimizacion: el modelo esta especificamente entrenado para resolver problemas de investigacion de operaciones, incluyendo optimizacion lineal, entera, no lineal y combinatoria.
-- Generacion de texto y conversacion: al estar basado en Qwen3-8B, conserva capacidades generales de generacion de lenguaje y dialogo en ingles.
-- Soporte de tool calling: no confirmado, aunque Qwen3-8B base lo incluye; no hay evidencia en la informacion disponible.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta `language: en`.
-- Modo thinking: no confirmado; Qwen3-8B tiene un modo de razonamiento hibrido, pero no se especifica si se preserva en este fine-tuning.
+- Generación de texto conversacional en inglés, con formato compatible con endpoints y uso conversacional.
+- Razonamiento matemático y resolución de problemas de optimización, orientado a investigación operativa.
+- Formulación y modelado de problemas de optimización matemática (programación lineal, entera y afines, según la especialización declarada).
+- Capacidades de razonamiento paso a paso derivadas del ajuste con GRPO y autodestilación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita; el ajuste con GRPO sugiere capacidad de razonamiento por pasos, pero no se documenta.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Resolucion de problemas de programacion lineal: el modelo puede formular y resolver modelos de optimizacion lineal a partir de descripciones en lenguaje natural, generando la funcion objetivo y las restricciones en formato estandar.
-- Optimizacion de rutas y logistica: aplicable a problemas de enrutamiento de vehiculos, planificacion de cadenas de suministro y asignacion de recursos, donde el modelo sugiere soluciones heuristicas o exactas.
-- Planificacion de produccion y inventarios: puede asistir en la determinacion de lotes optimos, puntos de pedido y politicas de inventario basadas en modelos de programacion entera mixta.
-- Generacion de codigo de optimizacion: capaz de producir fragmentos de codigo en Python (p. ej., con PuLP, OR-Tools o Gurobi) para implementar modelos matematicos.
-- Educacion y formacion en investigacion de operaciones: util como herramienta didactica para explicar conceptos de optimizacion y generar ejercicios resueltos paso a paso.
-- Analisis de decisiones multicriterio: puede estructurar problemas con multiples objetivos y proponer tecnicas de ponderacion o programacion por metas.
+- Formulación automática de modelos de optimización: dado un enunciado en lenguaje natural, el modelo puede generar la formulación matemática (variables, restricciones, función objetivo) de un problema de investigación operativa, gracias a su ajuste específico en ese dominio.
+- Asistencia en docencia de investigación operativa: generación de ejercicios resueltos y explicaciones paso a paso de problemas de programación lineal y entera, adecuado por su entrenamiento con razonamiento por refuerzo.
+- Preprocesamiento en pipelines de solvers: el modelo puede traducir descripciones de negocio a formulaciones que luego se pasan a un solver como GLPK, CBC o Gurobi, actuando como capa de traducción entre lenguaje natural y modelo matemático.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M (5,1 GB) o Q5_K_M (6,0 GB) puede ejecutarse en GPUs de consumo, lo que permite usarlo en entornos con requisitos de privacidad o sin conexión.
+- Análisis de problemas de logística y planificación: apoyo en la modelización de problemas de asignación, transporte y scheduling, donde la formulación matemática correcta es crítica y el modelo especializado reduce errores de planteamiento.
+- Integración en asistentes técnicos especializados: al ser un modelo de 8B en GGUF, puede servirse con llama.cpp u Ollama como backend de un asistente interno para equipos de analítica y optimización.
+- Experimentación académica en RL para matemáticas: el modelo base, ajustado con GRPO, sirve como referencia para estudiar técnicas de refuerzo aplicadas a dominios matemáticos restringidos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni de metricas especificas de optimizacion matematica para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun la cuantizacion, desde 3,4 GB (Q2_K) hasta 16,5 GB (f16). Para Q4_K_M (5,1 GB) se necesita al menos 6 GB de VRAM con contexto corto.
-- GPU recomendadas: cualquier GPU con 6-8 GB de VRAM (p. ej., RTX 3060, RTX 4060) para cuantizaciones Q4/Q5; para Q8_0 o f16 se requieren GPUs de 12 GB o mas (RTX 4070 Ti, RTX 4080, A100).
-- Compatibilidad con consumer GPU: si, las cuantizaciones Q2_K a Q5_K_M caben en GPUs de gama media y baja.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM (con soporte GGUF limitado), TGI (con convertidor).
-- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion. En una RTX 4090, un modelo 8B Q4_K_M suele generar entre 40 y 80 tokens por segundo.
+- VRAM estimada para inferencia: aproximadamente 3,4 GB (Q2_K), 4,9-5,1 GB (Q4_K_S/Q4_K_M), 6,0 GB (Q5_K_M), 6,8 GB (Q6_K), 8,8 GB (Q8_0) y 16,5 GB (f16), más el overhead del contexto y del runtime.
+- GPU recomendadas: para cuantizaciones Q4-Q5, GPUs de consumo con 8 GB o más (RTX 3060 Ti, RTX 4060 Ti, RTX 3070); para Q6-Q8, GPUs con 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4090); para f16, GPUs de 24 GB o más (RTX 4090, A100, H100).
+- Cabe en GPU de consumo: sí, con cuantizaciones Q2_K a Q5_K_M en GPUs de 8 GB; Q6_K y Q8_0 requieren 12 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI en formato safetensors.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| SOLID-StepORLM-Qwen3-8B (base) | 8,19 B | no disponible | Optimizacion matematica | no disponible | safetensors |
-| Qwen3-8B (base) | 8,19 B | 32.768 | Generalista | Apache 2.0 | safetensors, GGUF |
-| SOLID-StepORLM-Qwen3-8B-GGUF (este) | 8,19 B | no disponible | Optimizacion matematica | no disponible | GGUF |
+| SOLID-StepORLM-Qwen3-8B (este) | 8,19B | no disponible | Investigación operativa / optimización matemática | no disponible | GGUF, safetensors |
+| Qwen3-8B (base) | ~8B | no disponible | Generalista, multilingüe | no disponible | safetensors, GGUF |
+| Modelos generalistas de 7-8B (p. ej. Llama 3.1 8B) | ~8B | 128K (Llama 3.1 8B) | Generalista | Llama 3.1 Community License | safetensors, GGUF |
 
-No se dispone de datos de rendimiento comparativo. La principal diferencia con Qwen3-8B base es el fine-tuning especializado, que deberia mejorar el rendimiento en tareas de optimizacion, aunque no hay benchmarks que lo confirmen.
+La comparación con alternativas especializadas en investigación operativa no está disponible en la información proporcionada. Frente a modelos generalistas del mismo tamaño, la ventaja de este modelo es su ajuste específico en optimización matemática; la desventaja es su limitación al inglés y la ausencia de datos de benchmarks que permitan cuantificar la mejora.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no hay informacion especifica, pero al ser un fine-tuning de Qwen3-8B, puede heredar sesgos del modelo base.
-- Riesgo de alucinacion: en problemas de optimizacion, el modelo puede generar soluciones incorrectas o invalidas si no se valida con un solver externo.
-- Limitaciones de contexto: la longitud de contexto no esta confirmada; se asume la de Qwen3-8B (32.768 tokens), pero el fine-tuning podria haberla reducido.
-- Restricciones de licencia: la licencia no esta especificada, lo que impide garantizar su uso comercial. Se recomienda contactar al autor del modelo base.
-- Cuantizacion estatica: las cuantizaciones no usan imatrix, por lo que los niveles mas bajos (Q2_K, Q3_K) pueden degradar notablemente la calidad en tareas de razonamiento.
-- Idioma: solo ingles; no es adecuado para aplicaciones en otros idiomas sin traduccion previa.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse solo en inglés, puede presentar sesgos culturales y lingüísticos propios de ese idioma.
+- Riesgo de alucinación: presente como en cualquier modelo de lenguaje; en dominios matemáticos, una formulación incorrecta puede pasar desapercibida y producir soluciones erróneas, por lo que se recomienda validación con solvers.
+- Limitaciones de contexto o idioma: el modelo solo declara soporte de inglés; la longitud de contexto no está documentada, lo que impide garantizar el manejo de problemas largos.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada; antes de un uso comercial es imprescindible verificar la licencia del modelo base (JamesX421/SOLID-StepORLM-Qwen3-8B) y de Qwen3.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en tareas matemáticas, donde los errores de redondeo numérico son especialmente sensibles; se recomienda Q4_K_M o superior para uso en producción.
+- No se han publicado cuantizaciones ponderadas con imatrix para este modelo, lo que puede suponer una ligera pérdida de calidad frente a cuantizaciones estáticas equivalentes de otros modelos.
+- El repositorio ocupa 73,4 GB en total, por lo que la descarga completa no es necesaria; conviene descargar solo el fichero de cuantización deseado.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/SOLID-StepORLM-Qwen3-8B-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/SOLID-StepORLM-Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/JamesX421/SOLID-StepORLM-Qwen3-8B
-- Perfil de mradermacher: https://huggingface.co/mradermacher
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Página de descargas de mradermacher para este modelo: https://hf.tst.eu/model#SOLID-StepORLM-Qwen3-8B-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

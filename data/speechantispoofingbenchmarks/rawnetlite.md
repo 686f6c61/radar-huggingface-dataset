@@ -2,83 +2,111 @@
 
 ## Resumen
 
-RawNetLite es un modelo de detección de audio falsificado (anti-spoofing) publicado en Hugging Face bajo la organización SpeechAntiSpoofingBenchmarks. Su identificador y nombre sugieren una variante ligera de la familia RawNet, una arquitectura de redes neuronales convolucionales que opera directamente sobre la forma de onda de audio en bruto (raw waveform), sin necesidad de extraer características espectrales como MFCC o espectrogramas. Este tipo de modelos se emplea habitualmente para distinguir voz genuina de voz sintética o reproducida, una tarea crítica en sistemas de verificación biométrica por voz y en la detección de deepfakes de audio.
+RawNetLite es un detector ligero de audio falsificado (anti-spoofing) que opera directamente sobre la forma de onda cruda, sin extracción de características espectrales intermedias. Lo desarrollan Di Pierno et al. y se publica en IJCNN VERIMEDIA 2025; este repositorio de Hugging Face es un empaquetado del checkpoint original para integrarlo en el banco de pruebas Speech Anti-Spoofing Arena. El modelo resuelve la clasificación binaria entre voz genuina (bona fide) y voz sintética o manipulada, un problema central para la verificación biométrica de locutor y la detección de deepfakes de voz.
 
-La información pública disponible en Hugging Face es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no declara pipeline, licencia ni idiomas soportados, y no cuenta con descargas significativas (104) ni interacciones (0 likes). Fue creado el 9 de noviembre de 2026 y actualizado dos días después, lo que apunta a un artefacto de investigación o a un punto de referencia (benchmark) más que a un modelo listo para producción.
+La arquitectura es una red neuronal convolucional 1-D de tres bloques residuales seguida de un GRU bidireccional y una cabeza lineal, con solo 0,24 millones de parámetros. Esa escala mínima lo convierte en un candidato atractivo para despliegues con recursos muy limitados, frente a los detectores basados en modelos auto-supervisados de cientos de millones de parámetros.
 
-Por tanto, esta ficha se basa fundamentalmente en lo que se puede inferir de la denominación del modelo y de la familia arquitectónica RawNet, marcando explícitamente como "no disponible" todo aquello que la información proporcionada no confirma. No debe interpretarse ningún dato como verificado más allá de lo indicado.
+Su relevancia actual radica en que sirve como referencia de bajo coste en la arena de evaluación: permite medir cuánto rendimiento se obtiene con un detector casi trivial en comparación con sistemas pesados, y expone con claridad el problema de generalización entre dominios (codecs, idiomas, condiciones acústicas) que lastra a los detectores ligeros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el nombre sugiere variante ligera de RawNet, CNN sobre forma de onda raw) |
-| Parametros totales | No disponible |
-| Parametros activos | No aplica (no se indica que sea MoE) |
-| Longitud de contexto | No disponible (modelo de audio, no de texto) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | No disponible (repo de 0.0 GB, sin pesos aparentes) |
+| Arquitectura | CNN 1-D residual + GRU bidireccional (end-to-end sobre forma de onda) |
+| Parametros totales | 0,24 M |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 3 s de audio (48.000 muestras a 16 kHz); sin contexto textual |
+| Tipos de cuantizacion | no disponible (checkpoint publicado en FP32) |
+| Idiomas soportados | no disponible (el modelo es independiente del idioma por diseño) |
+| Licencia | MIT |
+| Formato de pesos | PyTorch (.pt); no se publican safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura concreta, los datos de entrenamiento ni el proceso de ajuste. El nombre "RawNetLite" sugiere una variante reducida de RawNet, una familia de modelos que procesa directamente la señal de audio en el dominio del tiempo mediante capas convolucionales y, en versiones posteriores, mecanismos de atención y capas recurrentes (GRU). El sufijo "Lite" apunta a una reducción de parámetros o de coste computacional orientada a despliegue en entornos con recursos limitados.
+La red es totalmente convolucional en su primera mitad: Conv1D(1→64) + BatchNorm + ReLU, tres bloques residuales 1-D de 64 canales, un pooling adaptativo a 64 pasos temporales, un GRU bidireccional de 128 unidades por dirección (se toma el último paso) y una cabeza Linear(256,64) → Linear(64,1). La entrada es la señal cruda, preprocesada según el `audio_preprocessor.py` de los autores: 16 kHz mono, normalización por pico (dividir por el máximo valor absoluto del clip completo), primeros 48.000 muestras (3 s) y relleno de ceros a la derecha. La salida es un logit único; la puntuación publicada es `-logit(fake)`, de modo que valores más altos indican mayor probabilidad de voz genuina.
 
-No hay datos publicados sobre número de tokens de audio, composición del dataset, uso de técnicas de aumento de datos (por ejemplo, codecs, ruido o reverberación), ni sobre si se empleó entrenamiento con pérdidas de tipo cross-entropy binaria o AAM-softmax. Tampoco se confirma si el modelo está entrenado para la tarea de detección de spoofing (genuino vs. falso) o para clasificación de ataques concretos (replay, TTS, voice conversion). Toda esta información debe considerarse no disponible.
+El checkpoint `triple_cross_domain_focal_rawnet_lite.pt` se entrenó con pérdida focal sobre una mezcla equilibrada de FakeOrReal, ASVspoof 2021 (denominado "AVSpoof2021" en el artículo) y CodecFake, sin aumentación de datos. No se documentan en la información disponible el número de tokens ni horas de audio de entrenamiento, ni si hubo etapas de ajuste fino adicionales. La innovación técnica principal es precisamente la ausencia de front-end: al aprender representaciones directamente de la forma de onda, el modelo evita el sesgo de características espectrales fijas, a costa de una capacidad de generalización limitada.
 
 ## Capacidades
 
-- Detección de audio falsificado: por el nombre y la organización, se orienta a la tarea de anti-spoofing en señales de voz.
-- Procesamiento de forma de onda raw: la familia RawNet opera sobre la señal temporal, lo que evita la dependencia de extractores de características externos.
-- Posible variante ligera: el sufijo "Lite" sugiere menor coste computacional, aunque no se confirma.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingües: no disponible (tarea de audio, no de texto).
-- Capacidades especiales (thinking mode, visión, audio): únicamente la orientación a audio implícita en el nombre; no confirmado.
+- Detección binaria de voz falsificada frente a voz genuina sobre audio de 16 kHz.
+- Operación end-to-end sobre forma de onda cruda, sin extractor de características externo.
+- Puntuación continua (logit negado) que permite umbralizar según el punto de operación deseado.
+- Inferencia en FP32 con TF32 desactivado, reproducible con el wrapper de PyTorch del repositorio.
+- No soporta tool calling, function calling ni razonamiento multi-paso.
+- No es un modelo generativo: no produce texto, audio ni código.
+- No dispone de modo thinking, visión ni capacidades multimodales.
+- El soporte multilingüe es implícito (la tarea no depende del idioma), pero no se documenta evaluación por idioma.
 
 ## Casos de uso
 
-- Detección de deepfakes de audio: el modelo podría emplearse para clasificar una grabación como genuina o sintética en pipelines de moderación de contenido, aunque la falta de pesos y documentación impide confirmar su viabilidad práctica.
-- Verificación biométrica por voz: integrado como módulo anti-spoofing previo a un sistema de reconocimiento de hablante, para rechazar intentos de suplantación con voz sintética o reproducida.
-- Filtrado en centros de atención telefónica: análisis de llamadas entrantes para detectar audio generado por TTS o reproducido, como capa adicional de seguridad antifraude.
-- Investigación en benchmarks de anti-spoofing: la organización SpeechAntiSpoofingBenchmarks sugiere un uso como punto de comparación dentro de una suite de evaluación de modelos de detección.
-- Evaluación de robustez frente a codecs: un modelo que opera sobre waveform raw puede emplearse para estudiar cómo afectan distintos codecs de compresión a la detección de spoofing.
-- Prototipado en entornos con recursos limitados: si la variante "Lite" reduce parámetros, podría desplegarse en dispositivos edge para detección en tiempo real, aunque esto no está confirmado por la información disponible.
+- Referencia base en investigación de anti-spoofing: sirve como línea de base de bajo coste para comparar detectores pesados en la Speech Anti-Spoofing Arena, aislando cuánta mejora aporta la escala.
+- Filtrado previo en sistemas de verificación de locutor: al consumir solo 3 s de audio y 0,24 M de parámetros, puede ejecutarse como primera etapa de cribado antes de un verificador más costoso.
+- Detección de deepfakes en entornos con recursos restringidos: su huella mínima permite integrarlo en dispositivos embebidos o navegador, aunque con la advertencia de sus altas tasas de error entre dominios.
+- Monitorización de calidad en pipelines de datos de voz: descartar automáticamente muestras sintéticas en la construcción de corpus de entrenamiento para ASR o TTS.
+- Investigación sobre generalización entre dominios: sus resultados dispares entre ASVspoof2019_LA (15,08 % EER) y DeepVoice (50,48 % EER) lo hacen útil para estudiar el efecto del codec y la condición acústica.
+- Evaluación comparativa de preprocesados: al estar el pipeline de audio fijado y documentado, permite reproducir experimentos sobre normalización y duración de clip de forma controlada.
+- Docencia y prototipado: implementación compacta y legible que ilustra una arquitectura completa de detección de spoofing en pocas capas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Resultados de la Speech Anti-Spoofing Arena, EER % (menor es mejor); EmoSpoofTTS y LRLspoof son solo-spoof y usan 1-SRR % en el umbral EER de DeepVoice.
+
+| Conjunto de evaluacion | EER % |
+|---|---|
+| ASVspoof2019_LA | 15,08 |
+| ASVspoof2021_LA | 18,14 (marcado n/a* por solapamiento con entrenamiento) |
+| ASVspoof2021_DF | 20,19 (marcado n/a* por solapamiento con entrenamiento) |
+| ASVspoof5 | 45,69 |
+| InTheWild | 40,51 |
+| ADD22_eval_31 | 44,11 |
+| ADD2023_track12_test_r1 | 46,63 |
+| CFAD | 34,22 |
+| CD-ADD | 42,55 |
+| CVoiceFake_small | 37,46 |
+| DeepVoice | 50,48 |
+| LibriSeVoc | 51,27 |
+| SONAR | 42,04 |
+| ArAD | 42,98 |
+| DECRO | 35,72 |
+| J-SPAW_LA | 34,19 |
+
+No se han publicado en la información disponible resultados de benchmarks comparativos directos con otros modelos en una tabla común; los valores anteriores son los del propio sistema en la arena.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (no se conocen parámetros ni pesos).
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables a un modelo de audio; no se documenta ningún runtime compatible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32; el checkpoint ocupa unos 0,1 GB en el repositorio.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; no requiere A100 ni H100.
+- Cabe en GPU de consumo: sí, en cualquier RTX, GTX o incluso en CPU y en aceleradores embebidos.
+- Opciones de despliegue: PyTorch nativo (wrapper del repositorio); no se documentan exportaciones a ONNX, TensorRT, llama.cpp ni vLLM.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera muy baja latencia, pero no hay cifras publicadas.
+- El repositorio indica que todas las puntuaciones de la arena se obtuvieron con el wrapper de PyTorch en FP32 con TF32 desactivado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| RawNetLite (este) | No disponible | No aplica | Anti-spoofing de audio | No disponible | Repo de 0.0 GB, sin pesos aparentes |
-| RawNet2 | No disponible en la información | No aplica | Anti-spoofing de audio | No disponible | Referencia académica habitual |
-| AASIST | No disponible en la información | No aplica | Anti-spoofing de audio | No disponible | Referencia académica habitual |
+No se dispone en la información proporcionada de datos de parámetros, contexto ni rendimiento de modelos alternativos de anti-spoofing, por lo que la comparativa cuantitativa no está disponible. Cualitativamente, RawNetLite se sitúa en la categoría de detectores ligeros end-to-end sobre forma de onda, frente a enfoques basados en front-ends espectrales (LFCC, CQCC) o en modelos auto-supervisados de gran tamaño; la comparación numérica con estos últimos requeriría ejecutarlos en la misma arena.
 
-No se dispone de datos verificados para comparar parámetros, contexto ni rendimiento con alternativas. La comparativa se limita a la categoría funcional.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| RawNetLite | 0,24 M | 3 s de audio | MIT | Hugging Face + GitHub |
+| Alternativas de anti-spoofing | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos descargables; el modelo podría no ser utilizable tal cual.
-- No se declara licencia, lo que impide determinar si su uso comercial está permitido.
-- No hay documentación sobre sesgos, dominio de entrenamiento ni condiciones de evaluación.
-- Riesgo de alucinación no aplicable (no es un modelo generativo de texto), pero sí riesgo de falsos positivos y negativos en la clasificación de audio.
-- No se indica el tipo de ataques cubiertos (replay, TTS, voice conversion), por lo que su robustez general es desconocida.
-- La ausencia de pipeline y de idiomas declarados impide confirmar el formato de entrada esperado.
-- Cualquier uso en producción requeriría validación independiente y verificación de la disponibilidad real de los pesos.
+- Rendimiento muy variable entre dominios: pasa del 15,08 % EER en ASVspoof2019_LA al 50,48 % en DeepVoice y 51,27 % en LibriSeVoc, cerca del azar en varios conjuntos.
+- Los resultados en ASVspoof2021_LA y ASVspoof2021_DF están marcados como n/a* por solapamiento con los datos de entrenamiento, por lo que no deben interpretarse como generalización real.
+- Entrenado sin aumentación de datos, lo que probablemente limita su robustez ante codecs, ruido y condiciones acústicas no vistas.
+- Ventana fija de 3 s con relleno de ceros: clips más largos se truncan y clips más cortos se rellenan, lo que puede degradar la detección.
+- Riesgo de falsos negativos y positivos elevado en entornos reales; no debe usarse como único mecanismo de seguridad en verificación biométrica.
+- No se documentan sesgos por idioma, género o grupo demográfico; la ausencia de evaluación por subgrupos es en sí un riesgo para producción.
+- Licencia MIT permite uso comercial, pero el modelo se distribuye como artefacto de investigación sin garantías de rendimiento.
+- El repositorio no incluye pipeline declarado en Hugging Face ni pesos en safetensors; la integración requiere cargar el `.pt` con código propio.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/RawNetLite
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/RawNetLite
+- Checkpoint: https://huggingface.co/SpeechAntiSpoofingBenchmarks/RawNetLite/blob/7209f7f94f1c69bc0d2320e854914e0966b12bd4/triple_cross_domain_focal_rawnet_lite.pt
+- Paper: https://arxiv.org/abs/2504.20923
+- Codigo de los autores: https://github.com/adipiz99/RawNetLite/tree/fcb0fe8d0f40146d110e322c00a0723ba27d5520
+- Speech Anti-Spoofing Arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena
+- Resultados de la arena para este sistema: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena?system=rawnetlite

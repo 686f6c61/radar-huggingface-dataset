@@ -2,100 +2,96 @@
 
 ## Resumen
 
-Qwen3-ASR 0.6B Cantonese-HK en formato GGUF para Handy es una conversión del fine-tune de reconocimiento automático del habla (ASR) desarrollado por el usuario joe2643 sobre el modelo base Qwen3-ASR de 0.6B, especializado en cantonés de Hong Kong. Esta variante concreta, publicada por s2031215, no introduce nuevos pesos ni reentrena el modelo: su aportación es empaquetar los pesos BF16 originales en un único archivo GGUF con arquitectura `qwen3_asr`, de modo que el codificador de audio queda fusionado en el mismo fichero y no requiere un `.mmproj` separado.
+Qwen3-ASR 0.6B Cantonese-HK es un modelo de reconocimiento automatico del habla (ASR) derivado de la familia Qwen3-ASR, afinado especificamente para cantonés de Hong Kong. El modelo base fue desarrollado por el autor joe2643 y esta construido sobre la arquitectura Qwen3-ASR de aproximadamente 782 millones de parametros, con soporte para tres idiomas: cantonés (yue), chino mandarin (zh) e ingles (en). Su proposito es transcribir audio a texto con especial atencion al cantonés, un idioma con escasa representacion en los sistemas ASR generalistas.
 
-El problema que resuelve es de interoperabilidad. Las exportaciones GGUF convencionales de este fine-tune (las de llama.cpp) declaran `general.architecture = "qwen3vl"` y dependen de un archivo `.mmproj` externo, algo que Handy, la aplicación de dictado que ejecuta todo a través de `transcribe.cpp`, no puede cargar. Esta conversión, generada con `convert-qwen3_asr.py` y `transcribe-quantize` de transcribe.cpp v0.4.2, produce archivos que Handy reconoce directamente como modelos personalizados.
+La version aqui descrita es una conversion a formato GGUF realizada por el usuario s2031215, empaquetada especificamente para Handy, una aplicacion de dictado que ejecuta la inferencia a traves de transcribe.cpp. La particularidad tecnica de esta conversion es que fusiona el codificador de audio dentro del mismo fichero GGUF, eliminando la necesidad de un fichero `.mmproj` separado que los exports estandar de llama.cpp requieren y que Handy no puede cargar.
 
-Con 782.452.240 parámetros reales y un repositorio de 2,1 GB, el modelo se distribuye en tres cuantizaciones (Q8_0, Q6_K y Q4_K_M) y cubre tres idiomas: cantonés (yue), chino mandarín (zh) e inglés (en). Está pensado para transcripción local en escritorio, con licencia Apache 2.0.
+El modelo es relevante porque ofrece una solucion ligera (menos de 800 millones de parametros) y desplegable en local para transcripcion de cantonés, un caso de uso poco cubierto por los modelos ASR comerciales. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-ASR (transformer con codificador de audio fusionado), arquitectura GGUF `qwen3_asr` |
-| Parámetros totales | 782.452.240 |
-| Parámetros activos | no disponible (no es un modelo MoE según la información disponible) |
+| Arquitectura | Qwen3-ASR (transformer con codificador de audio fusionado en el GGUF) |
+| Parametros totales | 782.452.240 (segun safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q8_0 (812 MB), Q6_K (659 MB), Q4_K_M (563 MB) |
-| Idiomas soportados | yue (cantonés), zh (mandarín), en (inglés) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q4_K_M |
+| Idiomas soportados | yue (cantonés), zh (mandarin), en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF de archivo único (codificador de audio incluido, sin mmproj); pesos originales en BF16 safetensors en el modelo base |
-| Tarea | automatic-speech-recognition |
-| Motor compatible | transcribe.cpp (Handy), verificado con transcribe-cli 0.4.2 |
-| Tensores | 613 |
-| Detección de idioma | sí (`stt.capability.lang_detect = true`) |
+| Formato de pesos | GGUF (single-file, arquitectura `qwen3_asr`, 613 tensores) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema ASR basado en la familia Qwen3-ASR, con un codificador de audio y un decodificador de lenguaje. En esta conversión GGUF, el codificador de audio se ha fusionado dentro del mismo archivo que el resto de pesos, de manera que la arquitectura declarada en la cabecera es `qwen3_asr` y no `qwen3vl`. El modelo base `joe2643/Qwen3-ASR-0.6B-Cantonese-HK` es un fine-tune del Qwen3-ASR de 0.6B orientado al cantonés de Hong Kong, aunque la información disponible no detalla la composición del dataset de ajuste, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF o DPO.
+El modelo sigue la arquitectura Qwen3-ASR, un sistema de reconocimiento automatico del habla que combina un codificador de audio con un decodificador de lenguaje basado en la familia Qwen3. En esta conversion GGUF, el codificador de audio se ha fusionado dentro del mismo fichero que el decodificador, de modo que la cabecera declara `general.architecture = "qwen3_asr"` y `stt.variant = "qwen3-asr-0.6b-cantonese-hk"`. El modelo base fue afinado por joe2643 a partir de los pesos BF16 de Qwen3-ASR 0.6B para especializarlo en cantonés de Hong Kong.
 
-La innovación técnica relevante de esta ficha es el propio proceso de conversión: se partió de los pesos BF16 en formato Transformers y se aplicó `scripts/convert-qwen3_asr.py` junto con `transcribe-quantize` de transcribe.cpp v0.4.2. Fue necesario un parche local, ya que el mapa de nombres del conversor solo contemplaba las dos variantes estándar, por lo que se añadió la entrada `qwen3-asr-0.6b-cantonese-hk`. El resultado son archivos GGUF de un solo fichero que el motor de Handy puede cargar sin mmproj.
+La conversion la realizo s2031215 el 17 de noviembre de 2026 usando transcribe.cpp v0.4.2, concretamente el script `convert-qwen3_asr.py` y la herramienta `transcribe-quantize`. Fue necesario un parche local en el conversor, ya que su mapa de nombres solo reconocia las dos variantes estandar y hubo que anadir `qwen3-asr-0.6b-cantonese-hk`. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el afinado.
 
 ## Capacidades
 
-- Transcripción de voz a texto en cantonés (yue), mandarín (zh) e inglés (en).
-- Detección automática de idioma (`stt.capability.lang_detect = true`), con posibilidad de fijar el idioma manualmente en Handy.
-- Conversión de audio a texto conversacional, etiquetada como `conversational` en el repositorio.
-- Ejecución local en escritorio mediante transcribe.cpp, sin dependencia de servicios en la nube.
-- Carga como modelo personalizado en Handy en macOS, Windows y Linux.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio generativo; el modelo es exclusivamente ASR.
+- Transcripcion de audio a texto en cantonés, mandarin e ingles.
+- Deteccion automatica de idioma (`stt.capability.lang_detect = true` segun la cabecera del GGUF).
+- Procesamiento de audio integrado en un unico fichero GGUF, sin necesidad de fichero `.mmproj` externo.
+- Compatibilidad con el motor transcribe.cpp y, por extension, con la aplicacion Handy.
+- Funcionamiento local sin dependencia de servicios en la nube.
+- No se ha documentado soporte de tool calling, agentes, vision ni audio bidireccional; el modelo es exclusivamente ASR.
 
 ## Casos de uso
 
-- Dictado por voz en escritorio: el usuario instala el GGUF en la carpeta de modelos de Handy y transcribe en tiempo real sus notas en cantonés o mandarín, con la ventaja de que todo el procesamiento ocurre en local y no se envía audio a terceros.
-- Subtitulado de reuniones en Hong Kong: al soportar yue y zh, permite generar transcripciones de conversaciones bilingües cantónes-mandarín, y la detección automática de idioma evita tener que cambiar de configuración entre intervenciones.
-- Transcripción de entrevistas y material de campo: para investigadores que graban entrevistas en cantonés, el modelo ofrece una alternativa ligera (563-812 MB) que cabe en un portátil sin GPU dedicada y puede ejecutarse de forma offline.
-- Accesibilidad y notas de voz: integración en flujos de trabajo personales para convertir mensajes de voz en texto editable, aprovechando el tamaño reducido del Q4_K_M para equipos con pocos recursos.
-- Prototipado de aplicaciones ASR: desarrolladores que quieran evaluar la calidad del fine-tune cantonés antes de integrarlo en un pipeline mayor pueden usar transcribe-cli 0.4.2, el mismo motor que Handy, para validar transcripciones con los clips de referencia publicados.
-- Procesamiento de contenido en inglés con acento: la verificación con una cita conocida en inglés sugiere uso para transcripción de discursos o material audiovisual en inglés, aunque el foco principal del fine-tune es el cantonés.
-- Archivado y búsqueda de audio: convertir grabaciones históricas en cantonés a texto indexable, con la ventaja de que el formato GGUF de archivo único simplifica el despliegue en entornos sin gestores de modelos complejos.
+- Dictado por voz en cantonés: integrado en Handy, el modelo permite dictar texto en aplicaciones de escritorio en macOS, Windows y Linux, con transcripcion local y sin enviar audio a servidores externos.
+- Subtitulado de contenido audiovisual en cantonés: transcripcion de videos, podcasts o reuniones en las que los participantes hablan en cantonés de Hong Kong, aprovechando el afinado especifico para ese dialecto.
+- Atencion al cliente en Hong Kong: transcripcion de llamadas o mensajes de voz de clientes que hablan cantonés, para su posterior analisis o registro en sistemas CRM.
+- Documentacion clinica o legal dictada: conversion de notas de voz en cantonés a texto para profesionales que trabajan en entornos donde este idioma es predominante.
+- Investigacion linguistica: generacion de corpus transcritos de cantonés para estudios de linguistica computacional o entrenamiento de otros modelos.
+- Accesibilidad: transcripcion en tiempo real de conversaciones para personas con dificultades auditivas en entornos cantonoparlantes.
+- Procesamiento por lotes de archivos de audio: uso mediante transcribe-cli para transcribir grandes volumenes de grabaciones en los tres idiomas soportados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye transcripciones de verificación cualitativa con transcribe-cli 0.4.2:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye tres transcripciones de verificacion con transcribe-cli 0.4.2:
 
-| Idioma | Clip de prueba | Transcripción verificada |
-|---|---|---|
-| Cantonés | Frase de prueba | `呢幾個字都表達唔到我想講嘅意思` |
-| Mandarín | Frase de prueba | `開放時間早上九點至下午五點` |
-| Inglés | Cita de J. F. Kennedy | `And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.` |
+| Idioma | Transcripcion verificada |
+|---|---|
+| Cantonés | 呢幾個字都表達唔到我想講嘅意思 |
+| Mandarin | 開放時間早上九點至下午五點 |
+| Ingles | And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country. |
 
-Según el autor, las tres cuantizaciones (Q8_0, Q6_K y Q4_K_M) produjeron transcripciones idénticas en estos clips.
+El autor indica que las tres cuantizaciones (Q8_0, Q6_K, Q4_K_M) produjeron transcripciones identicas en los clips de prueba.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; por el tamaño de los archivos, Q4_K_M (563 MB) y Q6_K (659 MB) deberían caber en GPUs integradas o de gama baja, mientras que Q8_0 (812 MB) requiere algo más de margen.
-- GPU recomendadas: no disponible en la información proporcionada; el modelo está diseñado para ejecutarse mediante transcribe.cpp, que puede usar CPU.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna e incluso en CPU, dado el tamaño inferior a 1 GB de los archivos GGUF.
-- Opciones de despliegue: Handy (aplicación de escritorio) y transcribe-cli 0.4.2, ambos sobre transcribe.cpp. No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI; de hecho, las exportaciones GGUF de llama.cpp con arquitectura `qwen3vl` y mmproj separado no son compatibles con Handy.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: inferior a 1 GB en todas las cuantizaciones (Q8_0: 812 MB, Q6_K: 659 MB, Q4_K_M: 563 MB en disco).
+- Cabe holgadamente en cualquier GPU de consumo, e incluso en CPU, dado el reducido tamano del modelo.
+- GPU recomendadas: no se especifican; cualquier GPU con al menos 1-2 GB de memoria libre es suficiente. Tambien es viable la inferencia en CPU.
+- Opciones de despliegue: transcribe.cpp (motor de Handy) y transcribe-cli 0.4.2. No se ha documentado compatibilidad con llama.cpp estandar, vLLM, Ollama ni TGI para esta conversion concreta.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Formato | Licencia | Compatibilidad Handy |
+| Modelo | Parametros | Idiomas | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| s2031215/Qwen3-ASR-0.6B-Cantonese-HK-GGUF-handy | 782.452.240 | yue, zh, en | GGUF archivo único (`qwen3_asr`) | Apache 2.0 | Sí |
-| joe2643/Qwen3-ASR-0.6B-Cantonese-HK-GGUF | no disponible | yue, zh, en | GGUF (`qwen3vl` + mmproj) | no disponible | No |
-| mradermacher/Qwen3-ASR-0.6B-Cantonese-HK-GGUF | no disponible | yue, zh, en | GGUF (`qwen3vl` + mmproj) | no disponible | No |
-| joe2643/Qwen3-ASR-0.6B-Cantonese-HK (base) | no disponible | yue, zh, en | BF16 Transformers | no disponible | No (requiere conversión) |
+| Qwen3-ASR 0.6B Cantonese-HK (este) | 782 M | yue, zh, en | GGUF single-file | Apache 2.0 | ASR especializado en cantonés, para Handy |
+| joe2643/Qwen3-ASR-0.6B-Cantonese-HK | 782 M | yue, zh, en | BF16 Transformers | Apache 2.0 | Modelo base original |
+| Exports llama.cpp del mismo fine-tune | 782 M | yue, zh, en | GGUF + mmproj | Apache 2.0 | Requiere fichero `.mmproj` separado, incompatible con Handy |
 
-La diferencia principal frente a las alternativas no es de calidad del modelo, sino de empaquetado: solo esta variante fusiona el codificador de audio en un único GGUF con arquitectura `qwen3_asr`, lo que la hace cargable directamente en Handy.
+La diferencia principal frente a los exports estandar de llama.cpp es el empaquetado en un unico fichero con arquitectura `qwen3_asr`, que permite su carga en Handy. No se dispone de datos de benchmarks que permitan comparar la precision frente a otros modelos ASR.
 
 ## Limitaciones y advertencias
 
-- El modelo es un fine-tune de 0.6B orientado al cantonés de Hong Kong; su rendimiento en otros dialectos del chino o en inglés con acentos no está documentado.
-- No hay benchmarks publicados, por lo que la calidad real frente a otros sistemas ASR no puede evaluarse con datos objetivos a partir de la información disponible.
-- La verificación se limita a tres clips de prueba; no se documenta comportamiento con audio ruidoso, solapamiento de hablantes, música de fondo ni grabaciones de baja calidad.
-- Riesgo de alucinación en transcripciones: como todo modelo generativo de ASR, puede producir texto plausible que no corresponde al audio, especialmente en segmentos ininteligibles.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base y del fine-tune original, cuya licencia no se detalla en la información proporcionada.
-- La compatibilidad está restringida a transcribe.cpp (Handy y transcribe-cli); no se garantiza funcionamiento en llama.cpp, Ollama, vLLM u otros motores.
-- El repositorio no registra descargas ni interacciones, y la fecha de creación indicada es 2026-11-17, por lo que se trata de una publicación muy reciente y sin validación comunitaria.
-- La longitud de contexto y los detalles de entrenamiento no están disponibles, lo que limita la planificación de despliegues con audio de larga duración.
+- El modelo esta especializado en cantonés de Hong Kong; su rendimiento en otras variantes dialectales del cantonés o en otros idiomas no esta documentado.
+- No se han publicado evaluaciones de sesgo ni de tasas de error (WER) en conjuntos de prueba estandar.
+- Riesgo de alucinacion en audio con ruido, acentos no representados o habla solapada; no hay datos que cuantifiquen este riesgo.
+- La conversion esta pensada exclusivamente para Handy y transcribe.cpp; no se garantiza su funcionamiento en otros motores de inferencia.
+- El autor del modelo base figura de forma inconsistente en los metadatos: la ficha de Hugging Face indica `koelony/Qwen3-ASR-0.6B-Cantonese-HK` mientras que la model card cita `joe2643/Qwen3-ASR-0.6B-Cantonese-HK`; conviene verificar el origen exacto de los pesos.
+- La licencia Apache 2.0 permite uso comercial, pero al tratarse de una conversion de un fine-tune de terceros, es recomendable revisar las condiciones del modelo base original.
+- Solo 209 descargas y 0 likes en el momento de la consulta; se trata de un artefacto reciente y poco validado por la comunidad.
+- No hay informacion sobre la longitud maxima de audio que el modelo puede procesar en una sola pasada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/s2031215/Qwen3-ASR-0.6B-Cantonese-HK-GGUF-handy
-- Modelo base (fine-tune): https://huggingface.co/joe2643/Qwen3-ASR-0.6B-Cantonese-HK
-- Exportación GGUF de llama.cpp del fine-tune: https://huggingface.co/joe2643/Qwen3-ASR-0.6B-Cantonese-HK-GGUF
-- Exportación GGUF alternativa: https://huggingface.co/mradermacher/Qwen3-ASR-0.6B-Cantonese-HK-GGUF
-- Handy (aplicación de dictado): https://github.com/cjpais/handy
+- Hugging Face (este modelo): https://huggingface.co/s2031215/Qwen3-ASR-0.6B-Cantonese-HK-GGUF-handy
+- Modelo base citado en la model card: https://huggingface.co/joe2643/Qwen3-ASR-0.6B-Cantonese-HK
+- Modelo base citado en los metadatos de Hugging Face: https://huggingface.co/koelony/Qwen3-ASR-0.6B-Cantonese-HK
+- Export GGUF via llama.cpp (joe2643): https://huggingface.co/joe2643/Qwen3-ASR-0.6B-Cantonese-HK-GGUF
+- Export GGUF via llama.cpp (mradermacher): https://huggingface.co/mradermacher/Qwen3-ASR-0.6B-Cantonese-HK-GGUF
+- Repositorio de Handy: https://github.com/cjpais/handy

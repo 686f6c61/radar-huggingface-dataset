@@ -2,100 +2,83 @@
 
 ## Resumen
 
-CodeWarden-7B es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct orientado a la auditoría de seguridad y arquitectura de pull requests (PR) en repositorios de código. Lo desarrolla nihalmotukuri y se distribuye como un artefacto GGUF cuantizado en Q4_K_M, pensado para ejecutarse de forma totalmente offline mediante Ollama. El modelo parte de la base instructiva de Qwen2.5-Coder de 7B parámetros (7.615.616.512 parámetros reales), por lo que hereda la arquitectura transformer decoder-only del modelo original.
+CodeWarden-7B es un ajuste fino del modelo Qwen/Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario nihalmotukuri y distribuido en formato GGUF cuantizado a Q4_K_M (aproximadamente 4,7 GB). El modelo esta especializado en la revision de seguridad de codigo: deteccion de vulnerabilidades y bugs sobre diffs de Git, con soporte para tool calling y etiquetado orientado a analisis estatico. Se publica bajo licencia Apache 2.0 y esta pensado para ejecucion local mediante Ollama.
 
-El problema que aborda es la detección de vulnerabilidades y la clasificación de veredictos sobre cambios de código, forzando además una salida estructurada conforme a un esquema de auditoría. Según la model card, el ajuste con QLoRA de 4 bits (Unsloth) mejora de forma notable la adherencia al esquema y la clasificación de veredictos frente al modelo base, que no produce salidas válidas en ese formato. Es relevante para equipos que quieren integrar un revisor automático de seguridad en pipelines internos sin depender de servicios en la nube.
+El modelo parte de una arquitectura transformer densa de 7.615.616.512 parametros (7,6 B), heredada de Qwen2.5-Coder-7B-Instruct, y ha sido afinado con QLoRA. Su relevancia actual radica en que permite realizar triaje de vulnerabilidades de forma local y privada, sin enviar codigo fuente a servicios en la nube, lo que resulta atractivo para equipos que integran revision de seguridad en sus flujos de CI/CD.
 
-La distribución es un único GGUF Q4_K_M de aproximadamente 4,7 GB, licencia Apache 2.0 y orientación principal al inglés. El modelo está etiquetado como compatible con endpoints y conversacional, aunque la información disponible sobre su pipeline no está detallada.
+Cabe senalar que el autor indica que la CLI CodeWarden v2 usa por defecto otro modelo (actuator-7b-gguf) para el razonamiento multi-paso con tool calling; este checkpoint codewarden-7b-gguf queda como opcion de inferencia directa o alternativa dentro de la CLI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-Coder-7B-Instruct) |
-| Parametros totales | 7.615.616.512 |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-Coder-7B-Instruct) |
+| Parametros totales | 7.615.616.512 (7,6 B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-Coder-7B-Instruct) |
-| Tipos de cuantizacion | Q4_K_M (GGUF); el resto de variantes GGUF no disponible |
-| Idiomas soportados | en (ingles) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (unica incluida en el repo) |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repo de 4,7 GB) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino supervisado del Qwen2.5-Coder-7B-Instruct, que es un transformer decoder-only denso de 7B parámetros. El ajuste se realizó con QLoRA de 4 bits usando la librería Unsloth, según declara la model card. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO adicionales.
+El modelo se basa en la arquitectura transformer densa de Qwen2.5-Coder-7B-Instruct, un modelo de 7,6 B parametros orientado a generacion y comprension de codigo. Sobre esa base, el autor aplica un ajuste fino con QLoRA (cuantizacion de bajo rango durante el entrenamiento) y posteriormente cuantiza el resultado a GGUF Q4_K_M para su uso en inferencia local. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset de ajuste ni si se emplearon tecnicas de RLHF o DPO.
 
-La innovación destacable no está en la arquitectura, sino en el comportamiento inducido por el ajuste: el modelo aprende a emitir auditorías conforme a un esquema estructurado y a clasificar veredictos de seguridad sobre pull requests. El artefacto se entrega ya cuantizado en Q4_K_M, lo que lo hace desplegable en entornos con recursos limitados. No hay datos disponibles sobre decodificación especulativa, atención lineal ni otras optimizaciones de inferencia específicas.
+La innovacion principal del proyecto no reside en la arquitectura, sino en la especializacion funcional: el modelo esta orientado a la deteccion de vulnerabilidades y bugs en diffs de Git, con soporte declarado para tool calling y decodificacion con esquemas JSON estrictos (Pydantic) en el ecosistema de la CLI CodeWarden. No se detallan tecnicas como decodificacion especulativa o attention lineal en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y análisis de código orientado a seguridad y arquitectura de cambios (pull requests).
-- Detección de vulnerabilidades en fragmentos de código y clasificación de veredictos de auditoría.
-- Producción de salidas estructuradas conforme a un esquema de auditoría (adherencia del 86,7% según la model card).
-- Capacidad conversacional multi-turno (etiqueta `conversational`).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Ejecución 100% offline mediante Ollama.
-- Capacidades multilingües limitadas: idioma declarado en inglés.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de visión o audio: no disponible.
-- Modo thinking explícito: no disponible.
+- Generacion de texto y razonamiento sobre codigo, heredados de Qwen2.5-Coder-7B-Instruct.
+- Revision de seguridad de codigo: deteccion de vulnerabilidades y bugs sobre diffs de Git.
+- Analisis estatico asistido por modelo (static analysis) orientado a triaje de hallazgos.
+- Soporte de tool calling / function calling, con herramientas como `search_symbol`, `read_file` y `get_file_imports` en el ecosistema CodeWarden.
+- Decodificacion con esquemas JSON estrictos (Pydantic) segun la model card.
+- Capacidades multilingues limitadas: el campo de idiomas declara unicamente ingles (en).
+- Integracion con Ollama para despliegue local.
 
 ## Casos de uso
 
-- Auditoría automática de pull requests: el modelo recibe el diff de un PR y emite una auditoría estructurada con veredicto de seguridad, aprovechando la adherencia al esquema medida en la model card (86,7%).
-- Integración en pipelines de CI/CD: al ser un GGUF Q4_K_M de 4,7 GB ejecutable con Ollama, puede desplegarse en runners internos para revisar cambios antes del merge sin enviar código a servicios externos.
-- Revisión de seguridad en entornos air-gapped: el carácter 100% offline permite auditar código confidencial en máquinas sin acceso a internet.
-- Triaje de hallazgos de seguridad: clasificación de veredictos sobre fragmentos sospechosos para priorizar la revisión humana posterior.
-- Asistencia a revisores humanos: generación de borradores de informes de auditoría con formato consistente, reduciendo el tiempo de redacción manual.
-- Detección de patrones de vulnerabilidad en código heredado: análisis por lotes de repositorios antiguos para localizar candidatos a revisión.
-- Formación interna de equipos: uso como revisor de ejemplo en talleres de secure code review, con respuestas reproducibles en local.
+- Triaje de vulnerabilidades en revisiones de codigo: el modelo analiza diffs de Git y senala posibles fallos de seguridad antes de fusionar cambios, lo que permite integrar un primer filtro automatico en el flujo de pull requests.
+- Revision de seguridad en CI/CD: al ejecutarse localmente con Ollama, puede invocarse desde pipelines para marcar commits con hallazgos potenciales sin exponer el codigo a terceros.
+- Auditoria de codigo en entornos con requisitos de privacidad: al ser un modelo local de 7,6 B cuantizado a Q4_K_M (unos 4,7 GB), cabe en estaciones de trabajo y evita el envio de codigo propietario a APIs externas.
+- Analisis de diffs incrementales: su orientacion a diffs de Git lo hace adecuado para revisar unicamente los cambios de un commit o rama, reduciendo el volumen de contexto frente a revisiones de repositorios completos.
+- Asistencia a desarrolladores en pre-commit: integrado mediante la CLI CodeWarden, puede ejecutarse antes de confirmar cambios para detectar patrones inseguros comunes.
+- Generacion de informes estructurados de hallazgos: gracias al soporte de esquemas JSON estrictos, puede producir salidas parseables que alimenten paneles o sistemas de ticketing de seguridad.
 
 ## Benchmarks y rendimiento
 
-Resultados de hold-out publicados en la model card (evaluados en una RTX 5070 Ti de 12 GB):
-
-| Metrica | Base (Qwen2.5-Coder-7B) | CodeWarden-7B |
-|---|---|---|
-| Audit schema adherence | 0,0% | 86,7% |
-| Verdict classification | 0,0% | 86,7% |
-| Latencia media por auditoría | 4,51 s | 2,69 s (-40,4%) |
-| Throughput | 84,3 tok/s | 68,7 tok/s |
-
-No se han publicado en la informacion disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K para este ajuste.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el GGUF Q4_K_M ocupa aproximadamente 4,7 GB en disco; la inferencia requiere en torno a 5-6 GB de VRAM considerando overhead de contexto y caché KV (estimación orientativa, no publicada por el autor).
-- GPU recomendadas: RTX 5070 Ti 12 GB (plataforma usada en la evaluación del autor); cualquier GPU con 8 GB o más de VRAM debería poder alojar la cuantización Q4_K_M.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o superiores con la cuantización Q4_K_M.
-- Opciones de despliegue: Ollama (documentado en la model card mediante `Modelfile`), llama.cpp y otros runners compatibles con GGUF. vLLM y TGI no están confirmados para este artefacto en la informacion disponible.
-- Latencia y throughput: 2,69 s de media por auditoría y 68,7 tok/s medidos en RTX 5070 Ti 12 GB según la model card.
+- VRAM estimada para inferencia: al tratarse de una cuantizacion Q4_K_M de un modelo de 7,6 B, el checkpoint ocupa aproximadamente 4,7 GB; se recomienda disponer de al menos 6-8 GB de VRAM para cargar el modelo con margen para el contexto.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, el modelo es compatible con GPUs de consumo con suficiente VRAM (por ejemplo, gama RTX xx70/xx80 con 8 GB o mas), aunque el autor no especifica modelos concretos.
+- Cabe en GPU de consumo: si, segun el tamano del checkpoint Q4_K_M; no se detallan modelos exactos.
+- Opciones de despliegue: Ollama (metodo documentado por el autor mediante `ollama create` y `Modelfile`), ademas de la CLI CodeWarden. No se mencionan vLLM, llama.cpp directo ni TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| CodeWarden-7B (este modelo) | 7,6B | no disponible | Auditoría de seguridad de PR | Apache 2.0 | GGUF Q4_K_M |
-| Qwen2.5-Coder-7B-Instruct (base) | 7,6B | no disponible en la informacion proporcionada | Generación y asistencia de código general | Apache 2.0 | safetensors y GGUF |
-| Alternativas de auditoría de seguridad de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La comparación directa de rendimiento solo está disponible frente al modelo base: CodeWarden mejora la adherencia al esquema y la clasificación de veredictos (de 0,0% a 86,7%) y reduce la latencia por auditoría un 40,4%, a costa de menor throughput (68,7 frente a 84,3 tok/s).
+| CodeWarden-7B (este) | 7,6 B | no disponible | Apache 2.0 | GGUF Q4_K_M | Ajuste QLoRA de Qwen2.5-Coder-7B-Instruct orientado a seguridad |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo base; capacidades generales de codigo, sin especializacion en seguridad |
+| Actuator-7B (nihalmotukuri) | no disponible | no disponible | no disponible | GGUF | Modelo por defecto de la CLI CodeWarden v2 para tool calling multi-paso |
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado y orientado al inglés; el rendimiento en castellano u otros idiomas no está documentado.
-- La adherencia al esquema y la clasificación de veredictos se sitúan en el 86,7%: aproximadamente uno de cada siete casos puede no seguir el formato esperado o clasificar incorrectamente, por lo que requiere validación humana.
-- Riesgo de alucinación inherente a los modelos de 7B ajustados sobre código: puede reportar vulnerabilidades inexistentes o pasar por alto problemas reales.
-- Los benchmarks publicados son de hold-out propio del autor y no de suites estándar, lo que limita la comparabilidad con otros modelos.
-- Solo se distribuye la cuantización Q4_K_M; la degradación respecto a pesos completos no está cuantificada en la información disponible.
-- El modelo no sustituye una auditoría de seguridad profesional; debe usarse como herramienta de triaje y apoyo.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones heredadas del modelo base Qwen2.5-Coder-7B-Instruct.
-- El repositorio tiene 0 descargas y 2 likes en el momento de la consulta: es un artefacto poco validado por la comunidad.
+- Sesgos conocidos: no se documentan en la informacion disponible; al derivar de Qwen2.5-Coder-7B-Instruct, hereda los sesgos del modelo base y de sus datos de entrenamiento.
+- Riesgo de alucinacion: como todo modelo generativo, puede inventar vulnerabilidades inexistentes o pasar por alto fallos reales; sus hallazgos deben validarse con herramientas de analisis estatico deterministas y revision humana.
+- Limitaciones de idioma: el campo de idiomas declara unicamente ingles, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
+- Limitaciones de contexto: la longitud de contexto no se especifica en la informacion disponible; conviene no asumir la ventana del modelo base sin verificacion.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse la atribucion correspondiente y revisarse las condiciones del modelo base.
+- Caveat de produccion: el autor indica que la CLI CodeWarden v2 usa actuator-7b-gguf por defecto para el tool calling multi-paso; este checkpoint esta pensado para inferencia directa o como alternativa, no como motor principal de la CLI.
+- Solo se distribuye una cuantizacion (Q4_K_M), lo que limita el ajuste fino entre calidad y requisitos de memoria.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nihalmotukuri/codewarden-7b-gguf
-- GitHub del proyecto: https://github.com/nihalmotukuri/CodeWarden
+- Modelo en Hugging Face: https://huggingface.co/nihalmotukuri/codewarden-7b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
-- Unsloth: https://github.com/unslothai/unsloth
-- Ollama: https://ollama.com
+- Modelo por defecto de la CLI: https://huggingface.co/nihalmotukuri/actuator-7b-gguf
+- Repositorio de la CLI CodeWarden: https://github.com/nihalmotukuri/CodeWarden

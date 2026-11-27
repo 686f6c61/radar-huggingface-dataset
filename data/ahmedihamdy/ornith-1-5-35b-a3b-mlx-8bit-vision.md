@@ -2,92 +2,92 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-MLX-8bit-vision es una reconstrucción comunitaria del modelo multimodal Ornith-1.5-35B-A3B, publicada por el usuario ahmedihamdy. El modelo base, desarrollado por ornith-ai, es un transformer de mezcla de expertos (MoE) con 35.107.180.016 parámetros totales, de los cuales aproximadamente 3B están activos por token (8 de 256 expertos). Esta versión concreta reincorpora la torre de visión original del modelo base (27 bloques, 447M parámetros en bf16) sobre los pesos de texto cuantizados a 8 bits que Ornith distribuyó para Apple Silicon.
+Ornith-1.5-35B-A3B-MLX-8bit-vision es una compilacion comunitaria del modelo multimodal Ornith-1.5-35B-A3B de ornith-ai, publicada por el usuario ahmedihamdy. El modelo base es un transformer de mezcla de expertos (MoE) de 35.107.180.016 parametros totales, del cual se activan 8 de sus 256 expertos (aproximadamente 3B parametros) por token. Esta version concreta anade la torre de vision original del modelo base (27 bloques, 447M parametros en bf16) a los pesos de texto cuantizados a 8 bits en formato MLX, pensada para ejecutarse en Apple Silicon.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de ingeniería de reconstrucción: el autor verifica que la torre de visión pertenece a los pesos de texto mediante la comprobación de 24 de 24 tensores de texto muestreados y la coincidencia de la anchura de la torre y los tokens de imagen. Por otro, ofrece una vía práctica para ejecutar un modelo multimodal de 35B en un Mac con Apple Silicon, con un pico de memoria medido de 39,07 GB y una velocidad de generación de 53 a 60 tokens por segundo en mlx-vlm 0.7.12.
+La relevancia de esta ficha radica en que es un ejemplo de empaquetado de un modelo MoE multimodal para inferencia local en Mac, con verificacion criptografica de que la torre de vision y los pesos de texto pertenecen al mismo entrenamiento. El autor documenta el proceso de construccion mediante la CLI de Astronomical y publica hashes SHA-256 de cada archivo de pesos.
 
-El modelo está pensado para el ecosistema MLX y la aplicación Astronomical, una herramienta de código abierto para ejecutar modelos en local en macOS 14 o superior. No es una publicación oficial de Ornith: se trata de un build de comunidad que conserva la licencia MIT del modelo base.
+Se distribuye bajo licencia MIT, con el repositorio ocupando 37,7 GB y el modelo requiriendo 37,74 GB de memoria en disco. La model card esta en ingles y el unico idioma declarado es el ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_5_moe) con torre de visión |
+| Arquitectura | Transformer de mezcla de expertos (MoE) con torre de vision; familia qwen3_5_moe |
 | Parametros totales | 35.107.180.016 |
-| Parametros activos | ~3B (8 de 256 expertos por token) |
+| Parametros activos | Aproximadamente 3B (8 de 256 expertos por token) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit (pesos de texto y routers); torre de visión en bf16 |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | 8 bits (expertos y routers); torre de vision en bf16; existe variante de 6 bits del mismo autor |
+| Idiomas soportados | Ingles |
 | Licencia | MIT |
-| Formato de pesos | safetensors (MLX), 7 shards de texto + model-vision.safetensors |
+| Formato de pesos | safetensors (MLX), con `model-vision.safetensors` separado y `model.safetensors.index.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de mezcla de expertos con 256 expertos, de los que se activan 8 por token, lo que da un cómputo efectivo de aproximadamente 3B parámetros sobre un total de 35B. La arquitectura se etiqueta como qwen3_5_moe, lo que sugiere una variante de la familia Qwen 3.5 con enrutamiento MoE. Sobre el tronco de texto se acopla una torre de visión de 27 bloques y 447M parámetros, mantenida en bf16 para preservar la calidad de la codificación de imagen.
+El modelo es un transformer de mezcla de expertos con 256 expertos, de los cuales se activan 8 por token, lo que resulta en unos 3B parametros activos sobre un total de 35B. La torre de vision consta de 27 bloques con 447M parametros y se mantiene a precision completa bf16, mientras que los pesos de texto y los routers se conservan en la cuantizacion de 8 bits original de Ornith, sin recuantizar. Los pesos de texto se distribuyen en siete shards sin modificar respecto al modelo base, y la torre de vision ocupa un archivo independiente (`model-vision.safetensors`) para preservar la integridad de los shards originales y permitir su verificacion por hash.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Esta versión es una cuantización y reconstrucción, no un reentrenamiento: los pesos de texto son los 8-bit originales de Ornith «byte for byte», sin recuantizar, y la torre de visión se toma del checkpoint base en bf16. La innovación técnica destacable es el procedimiento de verificación de compatibilidad entre torre y pesos, documentado en el fichero astronomical-build.json con los commits de origen y los hashes SHA-256 de cada fichero, lo que permite reproducir el build.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La model card indica que el emparejamiento entre torre de vision y pesos de texto fue verificado: 24 de 24 tensores de texto muestreados coinciden con el modelo base, y el ancho de la torre y el numero de tokens de imagen son compatibles. El autor documenta los commits de origen y los hashes SHA-256 de cada archivo en `astronomical-build.json`.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés.
-- Comprensión de imágenes y respuesta imagen-texto (pipeline image-text-to-text).
-- Descripción de contenido visual: lectura de texto en capturas de pantalla, identificación de colores y formas.
-- Razonamiento multimodal de un solo turno o multi-turno con imágenes adjuntas.
-- Ejecución local en Apple Silicon mediante MLX, con streaming de expertos desde SSD cuando la memoria es insuficiente.
-- Integración con la CLI de Astronomical mediante el flag --image.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, audio ni modo thinking explícito.
+- Generacion de texto y conversacion multi-turno en ingles.
+- Comprension de imagenes (image-text-to-text): descripcion de contenido visual, lectura de texto en capturas de pantalla, identificacion de colores y formas.
+- Razonamiento y generacion de codigo, segun la orientacion del modelo base y el ejemplo de agente de programacion incluido en la model card.
+- Soporte de agentes: la model card muestra el lanzamiento de un agente de codigo (`astronomical launch claude`) sobre este modelo.
+- Compatibilidad con APIs locales estilo OpenAI y Anthropic, lo que permite integrarlo en clientes existentes.
+- Capacidades multilingues limitadas al ingles segun el campo `language` del repositorio.
+- No se documentan modos de pensamiento explicito, audio ni otras modalidades adicionales.
 
 ## Casos de uso
 
-- Análisis de capturas de pantalla en local: el modelo lee nombres de modelo, tamaños en disco y métricas de GPU en una captura, útil para automatizar la extracción de datos de paneles de monitorización sin enviar imágenes a la nube.
-- Asistencia visual en escritorio macOS: integrado en Astronomical, permite consultar el contenido de una imagen desde la terminal con `astronomical respond "..." --image imagen.png`, manteniendo los datos en el equipo.
-- Documentación técnica de imágenes: descripción de diagramas, gráficos y figuras para generar alt-text o resúmenes accesibles en inglés.
-- Prototipado de aplicaciones multimodales con MLX: el ejemplo de mlx-vlm permite cargar el modelo y procesar imágenes en Python, adecuado para validar pipelines antes de pasar a producción.
-- Investigación sobre reconstrucción de modelos: el par de commits y los hashes permiten auditar y reproducir el proceso de acoplamiento de torre y pesos, útil para estudiar técnicas de verificación de compatibilidad.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local sin cuenta en la nube, encaja en flujos donde las imágenes no pueden salir del dispositivo.
-- Evaluación comparativa de cuantizaciones: al existir una variante de 6 bits (~9 GB más ligera), sirve para medir el compromiso entre memoria y calidad en el mismo hardware.
+- Asistencia conversacional local en Mac: el modelo gestiona dialogos multi-turno en ingles ejecutandose integramente en el dispositivo, sin que los datos salgan del equipo, lo que lo hace adecuado para entornos con requisitos de privacidad.
+- Analisis de capturas de pantalla y documentos escaneados: la torre de vision permite leer texto en imagenes (como demuestra la model card con una captura de la app Astronomical) y describir su contenido.
+- Agente de programacion en local: mediante la CLI de Astronomical se puede lanzar un agente de codigo sobre el modelo, util para tareas de desarrollo sin conexion.
+- Descripcion y catalogacion de imagenes: identificacion de objetos, colores y formas en fotos, aplicable a flujos de etiquetado o accesibilidad.
+- Integracion en herramientas compatibles con las APIs de OpenAI o Anthropic: cualquier cliente que hable estos protocolos puede apuntar al servidor local del modelo.
+- Prototipado de aplicaciones multimodales en Apple Silicon: sirve como banco de pruebas para desarrolladores que quieran validar pipelines de vision-lenguaje en MLX antes de escalar a infraestructura mayor.
+- Evaluacion de tecnicas de cuantizacion: la existencia de variantes de 6 y 8 bits permite comparar calidad y consumo de memoria en el mismo hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-Los únicos datos de rendimiento medidos son de inferencia: en mlx-vlm 0.7.12 sobre Apple Silicon, el modelo alcanzó un pico de 39,07 GB de memoria y generó entre 53 y 60 tokens por segundo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta metricas de inferencia local: en mlx-vlm 0.7.12 sobre un Mac con Apple Silicon, el modelo alcanzo un pico de 39,07 GB de memoria y genero entre 53 y 60 tokens por segundo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: pico medido de 39,07 GB en mlx-vlm; el repo ocupa 37,7 GB y el modelo cargado en Astronomical ocupa 37,74 GB.
-- Hardware objetivo: Apple Silicon (macOS 14 o superior). No se documenta soporte para GPU NVIDIA.
-- Cabe en Mac con 48 GB o más de memoria unificada con margen; en equipos con menos memoria, Astronomical puede hacer streaming de expertos desde el SSD, con menor velocidad.
-- Despliegue: MLX mediante mlx-vlm 0.7.12 o la aplicación/CLI Astronomical 0.2.90 o superior.
-- Throughput medido: 53-60 tokens/s en el hardware de prueba del autor (modelo de Mac no especificado).
-- Alternativa de menor huella: la variante de 6 bits del mismo autor, unos 9 GB más ligera.
+- Memoria en disco: 37,74 GB (descarga de aproximadamente 35,1 GB en la app Astronomical).
+- Memoria unificada: pico medido de 39,07 GB en Apple Silicon durante la inferencia con mlx-vlm.
+- Hardware objetivo: Macs con Apple Silicon y macOS 14 o posterior; no se documenta soporte para GPU NVIDIA.
+- No cabe en configuraciones de memoria unificada inferiores a unos 40 GB; requiere equipos con 48 GB o mas para dejar margen al sistema.
+- Despliegue: libreria MLX y mlx-vlm 0.7.12; app Astronomical (descarga, verificacion de archivos y ejecucion); CLI `astronomical` para descarga, inferencia con imagen y lanzamiento de agentes; servidor local compatible con las APIs de OpenAI y Anthropic.
+- Rendimiento: 53-60 tokens por segundo segun la medicion del autor; no se dispone de datos de latencia de prefill ni de throughput en lote.
+- Variante de 6 bits: aproximadamente 9 GB mas ligera, segun la model card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B-MLX-8bit-vision (este) | 35B totales, ~3B activos | no disponible | MIT | safetensors MLX 8-bit + torre bf16 | Multimodal, Apple Silicon |
-| Ornith-1.5-35B-A3B-MLX-8bit | 35B totales, ~3B activos | no disponible | MIT | safetensors MLX 8-bit | Solo texto, sin torre de visión |
-| Ornith-1.5-35B-A3B-MLX-6bit-vision | 35B totales, ~3B activos | no disponible | MIT | safetensors MLX 6-bit + torre bf16 | Multimodal, ~9 GB más ligero |
-| Ornith-1.5-35B-A3B (base) | 35B totales, ~3B activos | no disponible | MIT | safetensors | Checkpoint original de ornith-ai |
+| Ornith-1.5-35B-A3B-MLX-8bit-vision (este) | 35B totales, ~3B activos | no disponible | MIT | Hugging Face, MLX, app Astronomical | Vision en bf16, texto en 8 bits, verificado por hash |
+| ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit | 35B totales, ~3B activos | no disponible | MIT | Hugging Face | Version sin torre de vision |
+| ahmedihamdy/Ornith-1.5-35B-A3B-MLX-6bit-vision | 35B totales, ~3B activos | no disponible | MIT | Hugging Face | Variante de 6 bits, unos 9 GB mas ligera |
+| ornith-ai/Ornith-1.5-35B-A3B | 35B totales, ~3B activos | no disponible | MIT | Hugging Face | Modelo base original con torre de vision |
 
-No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con modelos de otras familias.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un build de comunidad, no una release oficial de ornith-ai; el soporte y la validación corren a cargo del autor del repositorio.
-- Solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está verificado.
-- No se documenta la longitud de contexto soportada, lo que impide planificar cargas de documentos largos con garantías.
-- Riesgo de alucinación inherente a los modelos generativos, especialmente en la descripción de imágenes ambiguas o de baja resolución.
-- La torre de visión se validó con pruebas cualitativas sobre imágenes reales y comprobaciones de tensores, pero no con benchmarks multimodales publicados.
-- El requisito de memoria (~39 GB de pico) excluye Macs de 16 o 24 GB salvo que se use streaming desde SSD, con la penalización de velocidad correspondiente.
-- La licencia MIT del modelo base permite uso comercial, pero conviene revisar los términos del repositorio original de ornith-ai para confirmar condiciones y atribución.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de validación por parte de la comunidad.
+- Es una compilacion comunitaria, no una version oficial de ornith-ai; el soporte y la responsabilidad sobre el empaquetado recaen en el autor de la compilacion.
+- El unico idioma declarado es el ingles; el rendimiento en castellano u otros idiomas no esta documentado y puede degradarse.
+- No se dispone de informacion sobre sesgos, riesgo de alucinacion ni evaluaciones de seguridad del modelo base en la informacion proporcionada.
+- La longitud de contexto no esta especificada, lo que impide planificar cargas con documentos largos sin verificacion previa.
+- El consumo de memoria (pico de 39,07 GB) limita su uso a equipos con memoria unificada amplia; en Macs de 32 GB o menos no es viable.
+- La licencia MIT permite uso comercial, pero se recomienda revisar los terminos del repositorio original de ornith-ai para confirmar condiciones adicionales.
+- La torre de vision solo es valida con los pesos de texto del mismo entrenamiento; no debe intercambiarse con otras variantes sin verificacion.
+- No se documentan resultados de benchmarks que permitan comparar su calidad frente a alternativas de tamano similar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-MLX-8bit-vision
-- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Versión MLX 8-bit de texto: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit
-- Variante de 6 bits con visión: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-MLX-6bit-vision
-- Astronomical (aplicación y CLI): https://aosama.github.io/astronomical/
+- Repositorio Hugging Face: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-MLX-8bit-vision
+- Variante de 6 bits: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-MLX-6bit-vision
+- Modelo base cuantizado (sin vision): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit
+- Modelo base original con vision: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- App Astronomical: https://getastronomical.com/
+- Documentacion de la API local de Astronomical: https://getastronomical.com/local-api.html

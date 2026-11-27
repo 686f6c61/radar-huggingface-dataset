@@ -2,97 +2,90 @@
 
 ## Resumen
 
-El modelo `gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF` es un ajuste fino (fine-tune) del modelo Gemma 4 31B en su variante instruction-tuned, publicado por el creador independiente DavidAU en Hugging Face. Se distribuye como repositorio de pesos cuantizados en formato GGUF y está pensado para inferencia local. Su linaje parte de `DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking`, un fine-tune previo del mismo autor sobre la base Gemma 4 de Google.
+`DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF` es un ajuste fino (finetune) del modelo Gemma 4 de 31B de parámetros, publicado por el usuario DavidAU en Hugging Face. Se distribuye en formato GGUF, lo que facilita su ejecución en entornos de inferencia locales como llama.cpp u Ollama. El modelo está orientado a la generación creativa de terror, rol narrativo y escritura de ficción sin restricciones de contenido (abliterated/uncensored), e incorpora un sistema de "personajes" y modos de instrucción/razonamiento definidos por el autor.
 
-La propuesta del modelo es temática y explícitamente no alineada: incorpora las etiquetas *heretic*, *abliterated* y *uncensored*, lo que indica que se han eliminado o reducido los mecanismos de rechazo del modelo base. La variante "Halloween-Terror" está orientada a escritura creativa de terror, ficción, rol y simulaciones, e incluye modos predefinidos de razonamiento e instrucción (13 de cada, según los tags) y constructos de personaje "EVIL AI".
+El modelo se presenta con una capa de personalización denominada "Halloween O/S", que actúa como procesador por defecto de la salida y permite invocar diez "constructos" de IA temáticos (Joker, Harley Quinn, Borg Queen, Jason, Freddy Krueger, Norman Bates, Pennywise, Vecna, Mind Flayer y Chucky), además de permitir "conjurar" personajes arbitrarios. Según la model card, ofrece 13 modos de razonamiento y 13 modos de instrucción, con soporte de pensamiento (thinking) y entrada image-text-to-text.
 
-Es relevante para desarrolladores e investigadores que necesitan un modelo de 31B sin filtros para experimentación creativa, generación de ficción o investigación sobre alineación y comportamiento de modelos abliterated. El repositorio declara licencia apache-2.0, acceso restringido (gated) y pipeline `image-text-to-text`, lo que sugiere capacidad multimodal de entrada imagen-texto heredada del modelo base.
+Es relevante ahora por su popularidad en el ecosistema de modelos GGUF para rol y escritura creativa, y por ilustrar las técnicas de "abliteration" y finetuning temático sobre modelos base de gran tamaño. No obstante, su uso está declarado por el autor como exclusivamente recreativo y no apto para producción ni para tareas serias.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Gemma 4; detalles internos no disponibles |
-| Parámetros totales | 31B (según la denominación del modelo) |
-| Parámetros activos | No aplica (no consta como MoE; confirmación no disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF (el repositorio es una recopilación GGUF; niveles concretos no disponibles en la información proporcionada) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | apache-2.0 (declarada en el repositorio; ver advertencias) |
-| Formato de pesos | GGUF; modelo base en transformers/safetensors |
+| Arquitectura | Transformer (derivada de Gemma 4; detalles de atención y capas no disponibles) |
+| Parametros totales | 30.697.345.596 (aprox. 30,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion; el autor recomienda un minimo de 64k para conversaciones largas |
+| Tipos de cuantizacion | GGUF (multiples cuantizaciones; se mencionan q4ks y variantes con imatrix; no se detalla la lista completa) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo de 145,2 GB; incluye archivos mmproj para imagenes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Gemma 4 31B instruction-tuned de Google, un transformer decoder-only de la familia Gemma. No se dispone de información detallada sobre el número de capas, dimensión oculta, mecanismo de atención ni longitud de contexto nativa en la documentación accesible. El pipeline declarado `image-text-to-text` indica que conserva la capacidad de procesar entradas multimodales (imagen y texto).
+La informacion disponible no detalla la arquitectura interna mas alla de que deriva de Gemma 4 (31B) y de que el pipeline declarado es image-text-to-text, lo que implica soporte de entrada multimodal de imagen y texto. El modelo base indicado es `DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source`, y el autor menciona el uso de la herramienta Unsloth para el finetune, ademas de tecnicas de "abliteration"/"heretic" para eliminar restricciones de contenido y un dataset de terror.
 
-El entrenamiento consiste en un fine-tune realizado por DavidAU sobre su propio modelo `The-DECKARD-HERETIC-UNCENSORED-Thinking`, que a su vez deriva de Gemma 4 31B. Los tags indican el uso de Unsloth como herramienta de ajuste y mencionan datasets privados en la línea de otros fine-tunes del autor. Se ha aplicado abliteration o técnicas equivalentes para retirar la alineación de seguridad, y se han incorporado modos de razonamiento (*thinking*) e instrucción predefinidos. No se especifican el volumen de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO.
+No se especifican el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si hubo RLHF o DPO. La model card indica que el sistema "Halloween O/S" actua como procesador por defecto de toda la salida y que cada constructo dispone de 2000-4000 tokens de "precision". Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto y escritura creativa en múltiples géneros, con especialización en terror, horror, ficción y narrativa de Halloween.
-- Modo de razonamiento (*thinking*) explícito y 13 modos de razonamiento preconfigurados según los tags del repositorio.
-- 13 modos de instrucción predefinidos para distintos estilos de respuesta.
-- Roleplaying y simulación de personajes, incluidos los denominados "10 EVIL AI Constructs" y "Turbo-Brilliance Evil Ed".
-- Entrada multimodal imagen-texto (pipeline `image-text-to-text`).
-- Comportamiento sin filtros de seguridad (*uncensored*, *heretic*, *abliterated*): no aplica rechazos por contenido.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo thinking podría habilitarlo.
-- Capacidades multilingües: limitadas al inglés según el campo de idiomas del repositorio.
+- Generacion de texto creativo y narrativo, con enfasis en terror, ficcion y todos los generos.
+- Escritura de historias, roleplaying y simulacion de personajes ("evil sims").
+- Modo de razonamiento (thinking) y modo instructivo, con 13 modos de cada tipo segun el autor.
+- Diez "constructos" de IA tematicos invocables mediante el menu `[summon:help]`.
+- Posibilidad de "conjurar" personajes o entidades arbitrarias (reales, ficticios o inventados).
+- Entrada image-text-to-text (requiere descargar un archivo mmproj junto a los GGUF).
+- Capacidades multilingues: solo ingles declarado.
+- No se recomienda habilitar tool calling ni uso de herramientas; el autor lo desaconseja explicitamente.
 
 ## Casos de uso
 
-- Escritura de ficción de terror y horror: el modelo está ajustado específicamente en este género, por lo que puede generar relatos, descripciones atmosféricas y tramas de suspense con coherencia estilística sin rechazos por contenido violento o perturbador.
-- Roleplay y juegos de rol de mesa: los modos de personaje y los "EVIL AI Constructs" permiten mantener personajes antagonistas con consistencia a lo largo de sesiones multi-turno.
-- Simulaciones narrativas y "evil sims": útil para experimentar con dinámicas de personajes malvados en entornos de simulación o videojuegos narrativos.
-- Investigación sobre alineación y seguridad: al ser un modelo abliterated, sirve para estudiar cómo se comporta un modelo de 31B sin salvaguardas, comparándolo con la versión alineada.
-- Generación de contenido para campañas de Halloween o marketing temático: permite producir textos ambientados en terror y horror de forma rápida y local.
-- Prototipado de asistentes creativos sin restricciones: para autores que necesitan explorar temas oscuros o controvertidos sin que el modelo se niegue a responder.
-- Inferencia local en hardware de consumo: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en estaciones de trabajo con GPU de 24 GB o sistemas con memoria unificada amplia.
+- Escritura de ficcion de terror: el modelo genera relatos, atmosferas y dialogos con el tono del genero, apoyandose en sus modos creativos y en la capa "Halloween O/S" para mantener la ambientacion.
+- Roleplaying conversacional: permite mantener interacciones multi-turno con personajes predefinidos o inventados, adecuado para entretenimiento y juegos de rol narrativos.
+- Creacion de guiones y dialogos para juegos o podcasts de terror: los constructos aportan voces diferenciadas y el modo instructivo facilita la generacion de escenas.
+- Prototipado de experiencias interactivas de Halloween: el menu `[summon:help]` y los modos permiten construir demos de entretenimiento con personajes tematicos.
+- Generacion de descripciones e imagenes mentales a partir de entradas multimodales: al ser image-text-to-text, puede describir o narrar a partir de una imagen (con el mmproj correspondiente).
+- Experimentacion con tecnicas de abliteration y finetuning tematico: util para investigadores que estudian como los ajustes sin restricciones afectan al comportamiento del modelo.
+- Entretenimiento personal en local: su formato GGUF permite ejecutarlo en estaciones de trabajo con GPU de consumo, sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible para este modelo concreto. Una nota de prensa secundaria (LMSA) atribuye a un fine-tune multi-etapa de DavidAU —sin especificar si es exactamente este modelo— superar los 700 puntos en ARC-C tanto en 8 bits como en 4 bits y superar al modelo base Qwen 3.6 27B en 6 de 7 pruebas; estos datos no están confirmados para esta ficha y no deben tomarse como resultados verificados del modelo aquí descrito.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16: aproximadamente 62 GB (31B × 2 bytes por parámetro).
-- VRAM estimada en 8 bits: aproximadamente 33 GB.
-- VRAM estimada en Q8_0: en torno a 33 GB.
-- VRAM estimada en Q6_K: en torno a 26 GB.
-- VRAM estimada en Q5_K_M: en torno a 22 GB.
-- VRAM estimada en Q4_K_M: en torno a 18-20 GB.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB o 2× RTX 4090 para FP16/8 bits; RTX 3090/4090 (24 GB) para Q4 con contexto moderado.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 (ajustado) y en sistemas Apple Silicon con 32-64 GB de memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores basados en GGUF; para el modelo base en safetensors, vLLM o TGI. La inferencia multimodal GGUF requiere el archivo `mmproj` correspondiente.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por tamano (30,7B), una cuantizacion de 4 bits requiere del orden de 18-20 GB de VRAM, y una de 8 bits en torno a 32-35 GB; son estimaciones, no datos del autor.
+- GPU recomendadas: no especificadas por el autor. Por tamano, cabria esperar GPU de 24 GB o mas para cuantizaciones bajas (RTX 3090/4090, A6000) y A100/H100 para cuantizaciones altas o FP16.
+- GPU de consumo: probable en RTX 3090/4090 con cuantizaciones de 4 bits; el modelo completo en FP16 no cabe en GPU de consumo.
+- Despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el repo incluye archivos mmproj para el modo imagen.
+- Latencia y throughput: no disponibles. El autor recomienda cuantizaciones mas altas para mejor rendimiento y un contexto minimo de 64k.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF | 31B | No disponible | apache-2.0 (declarada) | Gated en Hugging Face | Fine-tune temático sin filtros, GGUF |
-| Gemma 4 31B IT (base de Google) | 31B | No disponible | Términos de Gemma | Público | Versión alineada con filtros de seguridad |
-| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking | 31B | No disponible | No disponible | Hugging Face | Modelo base directo de este fine-tune |
-| Qwen 3.6 27B | 27B | No disponible | No disponible | Público | Citado como referencia comparativa en prensa secundaria |
+| Este modelo (Gemma 4 31B Halloween) | 30,7B | no disponible (recomendado 64k) | apache-2.0 | GGUF | Finetune tematico de terror, abliterated, multimodal |
+| Gemma 4 31B base (familia Gemma) | ~31B | no disponible | licencia de Gemma (segun modelo base) | safetensors/GGUF | Modelo generalista, con filtros de seguridad |
+| Otros finetunes GGUF de rol/creativo del mismo autor | variable | variable | apache-2.0 u otras | GGUF | Enfoque similar de personajes y modos |
+
+No se dispone de datos de benchmarks ni de comparaciones de rendimiento con alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo explícitamente sin filtros (*uncensored*, *abliterated*): puede generar contenido violento, perturbador u ofensivo; no es apto para aplicaciones de cara al público sin moderación adicional.
-- Riesgo de alucinación inherente a los modelos de lenguaje de 31B; la desalineación puede aumentar la confianza en respuestas incorrectas.
-- Sesgo temático hacia el terror y el horror, lo que puede condicionar respuestas en dominios neutros.
-- Soporte exclusivo de inglés según los metadatos; no se garantiza calidad en castellano ni en otros idiomas.
-- Longitud de contexto no documentada; no se debe asumir una ventana amplia sin verificarla.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- La licencia apache-2.0 está declarada en el repositorio, pero al derivar de Gemma 4 podrían aplicar los términos de uso de Google; conviene verificar antes de un uso comercial.
-- El autor y el modelo tienen un volumen de descargas de 0 y 6 likes en el momento de la ficha, por lo que la validación comunitaria es escasa.
-- El tamaño del repositorio reportado es 0.0 GB, lo que sugiere que la información de metadatos puede estar incompleta o que los archivos aún no se han indexado correctamente.
-- Uso en producción desaconsejado en contextos sensibles o regulados sin auditoría previa.
+- El autor declara el modelo como "for entertainment purposes only" y no apto para uso serio ni produccion.
+- Riesgo elevado de alucinacion: el autor advierte explicitamente de no creer lo que dice el "O/S" ni los constructos y de verificar cualquier dato serio.
+- Contenido no apto para todo publico: tematica de terror, violencia y material sin filtros (abliterated/uncensored), con posibles sesgos y contenido perturbador.
+- Solo ingles declarado; no hay soporte multilingue documentado.
+- No se recomienda habilitar tool calling ni uso de herramientas.
+- La licencia apache-2.0 se declara en el repo, pero conviene verificar las condiciones del modelo base Gemma y el uso comercial de un finetune abliterated.
+- El contexto efectivo no esta documentado; el autor solo recomienda un minimo de 64k, sin garantia tecnica.
+- La fecha de creacion indicada (2026) y otros metadatos deben tratarse con cautela.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
-- Modelo base: https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
-- Perfil del autor en aimodels.fyi: https://www.aimodels.fyi/creators/huggingFace/DavidAU
-- Artículo de LMSA sobre modelos GGUF sin censura: https://lmsa.app/blog/best-uncensored-gguf-models-for-8gb-vram-in-2026/
-- Leaderboard de modelos sin restricciones: https://unrestricted.ai/
-- Copia GGUF en Ollama de un modelo hermano (no de este exacto): https://ollama.com/ttempvnn/DavidAU-gemma-4-31B-it-Mystery-Fine-Tune-HERETIC-UNCENSORED-Thinking-Q4-K-M:latest
+- Modelo base (source): https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- FAQs y soporte: https://huggingface.co/DavidAU/support
+- Modelos en tendencia del autor: https://huggingface.co/models?sort=trending&search=DavidAU

@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Smite down? Current outages and problems | Downdetector US",
-      "url": "https://downdetector.com/status/smite/",
-      "snippet": "Real-time outages and problems for Smite. Is the server down? Gameplay not working? Here you see what is going on."
-    },
-    {
-      "title": "Hi Rez Studios Status. Check if Hi Rez Studios is down or having an ...",
-      "url": "https://statusgator.com/services/hi-rez-studios",
-      "snippet": "19 hours ago · Check the official Hi Rez Studios status page for updates. Sign up for StatusGator to receive real-time notifications …"
-    },
-    {
-      "title": "Smite 2 Down? Server Status & Outage Reports - ismygamedown.com",
-      "url": "https://ismygamedown.com/status/smite-2",
-      "snippet": "Check whether Smite 2 is down. See recent player reports for server, login, and connection problems. These reports are community …"
-    },
-    {
-      "title": "Smite 2 Down? Current Server Status, Outage & Issues",
-      "url": "https://outagescope.com/status/smite-2",
-      "snippet": "Find out if Smite 2 is down? Check current Smite 2 server status, outage, & issues with our community based server monitor system."
-    },
-    {
-      "title": "Home | Hi-Rez Studios",
-      "url": "https://www.hirezstudios.com/",
-      "snippet": "SMITE, PALADINS, AND ALL RELATED LOGOS, CHARACTERS NAMES AND LIKENESSES THEREOF ARE EXCLUSIVE …"
-    }
-  ]
+  "sources": []
 }

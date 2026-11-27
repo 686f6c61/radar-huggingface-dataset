@@ -2,87 +2,100 @@
 
 ## Resumen
 
-honest-assistant-GGUF es una cuantización en formato GGUF del modelo Qwen2.5-3B-Instruct de Alibaba Cloud, publicada por el usuario farruko07 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una edición de los pesos del modelo base mediante *steering vectors*: se calcula la diferencia de activaciones medias asociada al concepto "sycophancy" (adulación o complacencia excesiva) en la capa 16 y se resta con intensidad -0.50, de modo que el sesgo queda horneado directamente en los pesos y no requiere hooks en tiempo de ejecución.
+honest-assistant-GGUF es una edición del modelo Qwen2.5-3B-Instruct en la que se ha reducido la tendencia a la adulación (sycophancy) mediante vectores de direccionamiento (steering vectors) calculados como diferencia de activaciones medias. El autor, farruko07, ha utilizado su herramienta Concept Surgeon para hornear (bake) estas ediciones directamente en los pesos, de modo que no se necesitan hooks en tiempo de ejecución. El resultado es un asistente que, ante planes débiles, señala riesgos en lugar de mostrarse de acuerdo.
 
-El objetivo declarado es corregir un comportamiento típico de los asistentes conversacionales: la tendencia a dar la razón al usuario y validar planes débiles en lugar de señalar sus riesgos. Con esta edición, el modelo debería indicar problemas o riesgos en lugar de asentir ante propuestas mal fundamentadas. La herramienta empleada para la edición es Concept Surgeon, que aplica vectores de dirección sobre activaciones y consolida el cambio en los tensores finales.
+El modelo conserva la arquitectura y el tamaño del base: un transformer denso de 3.086.878.720 parámetros (aproximadamente 3,09 mil millones), con la ventana de contexto nativa de Qwen2.5-3B-Instruct. Se distribuye únicamente en formato GGUF, pensado para su uso con Ollama y llama.cpp, con un repositorio de 1,9 GB que contiene las cuantizaciones habituales (el autor recomienda Q4_K_M).
 
-El modelo conserva la arquitectura, el tamaño (3.086.878.720 parámetros) y el contexto del Qwen2.5-3B-Instruct original, y se distribuye exclusivamente en GGUF, con un tamaño de repositorio de 1,9 GB. Es relevante para quienes quieren un asistente de 3B parámetros ejecutable en local con Ollama y con un comportamiento menos complaciente, aunque la licencia Qwen Research y la ausencia de benchmarks publicados limitan su uso comercial directo sin revisión previa.
+La relevancia de esta ficha radica en que ilustra una técnica emergente de alineación post-entrenamiento basada en representaciones internas (Representation Engineering, CAA, ActAdd), aplicada a un modelo pequeño y de uso local. No obstante, el propio autor documenta una limitación importante: al aplicar el direccionamiento a todos los tokens, el modelo pierde capacidad de comprender el concepto suprimido, no solo de expresarlo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-3B-Instruct) |
-| Parametros totales | 3.086.878.720 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible en la informacion proporcionada (la del Qwen2.5-3B-Instruct base es 32.768 tokens, segun la documentacion del modelo base) |
-| Tipos de cuantizacion | GGUF; el ejemplo de la model card usa Q4_K_M |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | qwen-research (license_name: qwen-research, license: other) |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-3B-Instruct) |
+| Parámetros totales | 3.086.878.720 |
+| Parámetros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada de Qwen2.5-3B-Instruct) |
+| Tipos de cuantización | GGUF (el autor recomienda Q4_K_M; el repositorio de 1,9 GB sugiere varias variantes) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (license: other, license_name: qwen-research) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del Qwen2.5-3B-Instruct: un transformer decoder-only denso de aproximadamente 3.087 millones de parámetros, con atención causal estándar y sin mezcla de expertos. Sobre ese modelo base no se ha realizado un entrenamiento adicional con datos; la modificación consiste en una edición de pesos mediante *steering vectors*. Concretamente, se calcula la diferencia de activaciones medias entre respuestas con y sin el rasgo "sycophancy" en la capa 16, se escala con intensidad -0.50 y se aplica a los pesos del modelo, de forma que la dirección de activación se desplaza en sentido contrario a la adulación.
+El modelo parte de Qwen2.5-3B-Instruct, un transformer denso de 3,09 mil millones de parámetros. Sobre ese base no se ha realizado un fine-tuning convencional, sino una edición de pesos mediante vectores de dirección calculados como diferencia de activaciones medias (mean activations) entre respuestas con y sin el rasgo objetivo. La intervención se aplicó en la capa 16 con una intensidad de -0,50 sobre el concepto "Sycophancy".
 
-El resultado es un modelo con los mismos parámetros y la misma arquitectura que el original, pero con un sesgo de comportamiento alterado de forma permanente. No hay información sobre el dataset utilizado para calcular los vectores de dirección, ni sobre el número de tokens, la composición de los datos o si se aplicaron etapas de RLHF o DPO adicionales. La model card indica una verificación en Ollama con "trait 0.0, coherencia 85.0 y precisión 100.0 (passed)", pero no se detalla la metodología de esa evaluación ni el conjunto de pruebas empleado.
+La innovación técnica consiste en hornear (bake) la edición en los pesos en lugar de aplicarla mediante hooks en tiempo de ejecución, lo que elimina la necesidad de infraestructura adicional al servir el modelo. El método se apoya en la literatura de Representation Engineering y Contrastive Activation Addition (CAA), y el autor cita también trabajos sobre Persona Vectors y ortogonalización de pesos para refusal. No se dispone de información sobre el volumen de tokens de entrenamiento ni sobre la composición del dataset, ya que no hubo un entrenamiento generativo al uso.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada del Qwen2.5-3B-Instruct.
-- Razonamiento básico y respuesta a instrucciones en formato chat.
-- Generación de código y resolución de problemas matemáticos sencillos, según las capacidades del modelo base.
-- Comportamiento menos complaciente: señala riesgos y objeciones ante planes débiles en lugar de validarlos, gracias al vector de dirección aplicado sobre "sycophancy".
-- Soporte de *tool calling* y *function calling*: no disponible en la información proporcionada para esta edición concreta; debe verificarse contra el modelo base.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo *thinking* explícito, visión o audio: no disponible (el modelo base Qwen2.5-3B-Instruct es solo texto).
+- Generación de texto conversacional multi-turno, heredada de Qwen2.5-3B-Instruct.
+- Razonamiento y respuesta a preguntas de uso cotidiano (correos, resúmenes ejecutivos, respuestas a clientes, opiniones sobre planes).
+- Señalización de riesgos ante planes débiles o mal fundamentados, en lugar de asentir; es el comportamiento objetivo de la edición.
+- Capacidad de seguir instrucciones y mantener coherencia en tareas de trabajo diario, con puntuaciones de coherencia 94,0 y precisión 91,5 según el juez del autor en 10 preguntas de negocio.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada (aunque el base Qwen2.5-3B-Instruct lo soporta, no se confirma que se conserve intacto tras la edición).
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible; el modelo es solo texto.
 
 ## Casos de uso
 
-- Revisión crítica de planes de proyecto: el modelo, al tener reducida la complacencia, puede emplearse como revisor de propuestas técnicas o de negocio, señalando riesgos y supuestos débiles en lugar de validarlos automáticamente.
-- Asistente de código en local: con 3B parámetros y cuantización Q4_K_M cabe en equipos de consumo y puede integrarse en flujos de revisión de parches o explicación de errores, con la salvedad de que su capacidad de código es la del modelo base de 3B.
-- Chatbot de soporte interno con matiz crítico: útil en entornos donde se quiere que el asistente advierta de limitaciones o consecuencias antes de confirmar una acción al usuario.
-- Evaluación de decisiones y análisis de alternativas: el modelo puede generar contraargumentos ante una propuesta dada, lo que resulta útil en herramientas de toma de decisiones asistida.
-- Despliegue en local con Ollama: al distribuirse en GGUF y con un comando de ejecución directo (`ollama run hf.co/farruko07/honest-assistant-GGUF:Q4_K_M`), es adecuado para prototipos en portátiles o estaciones sin GPU dedicada de gran capacidad.
-- Experimentación con *steering vectors*: sirve como caso de estudio reproducible de cómo aplicar Concept Surgeon sobre un modelo instruct y consolidar el cambio en los pesos, útil para investigadores que quieran replicar la metodología.
-- Filtro de segunda opinión en pipelines de generación: puede colocarse como revisor de salidas de otro modelo para detectar respuestas demasiado complacientes, aunque su tamaño de 3B limita la profundidad del análisis.
+- Revisión de planes de negocio y propuestas: el modelo señala riesgos y supuestos débiles en lugar de validar automáticamente la idea, lo que resulta útil en fases de evaluación previa a la inversión o al lanzamiento.
+- Asistencia en redacción de correos delicados: al no tender a la adulación, puede redactar respuestas a clientes o a equipos con un tono más crítico y honesto cuando la situación lo requiere.
+- Resúmenes ejecutivos para comités de dirección: con coherencia 94,0 en las pruebas del autor sobre 10 preguntas de negocio, es adecuado para condensar información y destacar puntos problemáticos.
+- Chatbot interno de soporte a decisiones: desplegado con Ollama en una estación de trabajo o servidor pequeño, puede actuar como contrapunto crítico en reuniones de equipo o sesiones de brainstorming.
+- Evaluación de propuestas de compañeros o de proveedores: el modelo puede detectar promesas exageradas o falta de métricas en documentos, siempre que la tarea no requiera razonar explícitamente sobre el concepto de adulación (véase limitaciones).
+- Prototipado rápido de asistentes con sesgo reducido: sirve como base para experimentos de alineación en entornos de investigación con recursos limitados, dado su tamaño de 3B y su formato GGUF.
+- Despliegue en local para privacidad: al ejecutarse con Ollama en hardware de consumo, permite procesar correos y documentos internos sin enviarlos a la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye una verificación cualitativa en Ollama (trait 0.0, coherencia 85.0, precisión 100.0, marcada como "passed"), sin detallar el conjunto de evaluación ni la comparación con el modelo base.
+| Evaluación | honest-assistant (pesos horneados) | Steering en servidor (solo respuesta) |
+|---|---|---|
+| Sycophancy (rasgo en Ollama) | 0,0 | 1,5 |
+| Coherencia (10 preguntas de negocio) | 94,0 | 94,0 |
+| Precisión (10 preguntas de negocio) | 91,5 | 92,0 |
+| Identificación correcta del concepto (experimento all-token) | 50% (Sycophancy) | 80% (servidor) |
+
+En la verificación en Ollama, el autor reporta rasgo de sycophancy 0,0, coherencia 85,0 y precisión 100,0 (aprobado). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en Q4_K_M, un modelo de 3B parámetros ocupa aproximadamente 2 GB de pesos; con overhead de contexto y KV cache, se recomienda entre 3 y 4 GB de VRAM para contextos moderados.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.); en GPUs de 8 GB o más (RTX 3060 Ti, RTX 4070) se puede usar una cuantización mayor (Q6_K o Q8_0) o contextos más largos.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 4 GB o más; también puede ejecutarse en CPU con llama.cpp u Ollama, con latencia mayor.
-- Opciones de despliegue: Ollama (comando indicado en la model card), llama.cpp y cualquier runtime compatible con GGUF; vLLM y TGI no están confirmados para este repositorio GGUF concreto.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada: en torno a 2 GB para Q4_K_M (modelo de 3B con cuantización de 4 bits); aproximadamente 3,5-4 GB en Q8_0 y 6-7 GB en FP16.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M; RTX 3060, RTX 4060, RTX 4090 o superiores funcionan sin problema. Para FP16 se recomienda una GPU con 8 GB o más.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 4 GB o más de VRAM; también puede ejecutarse en CPU con llama.cpp.
+- Opciones de despliegue: Ollama (recomendado por el autor: `ollama run hf.co/farruko07/honest-assistant-GGUF:Q4_K_M`), llama.cpp y cualquier runtime compatible con GGUF. vLLM y TGI no están confirmados para este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| honest-assistant-GGUF (este) | 3,09B | no disponible (base: 32.768) | qwen-research | GGUF | Qwen2.5-3B-Instruct con sycophancy reducida (-0.50, capa 16) |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 | qwen-research | safetensors, GGUF | Modelo base sin edición; comportamiento estándar de asistente |
-| Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Alternativa de tamaño similar con contexto mayor |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | safetensors, GGUF | Alternativa algo mayor, licencia permisiva |
+| honest-assistant-GGUF | 3,09 B | no disponible | qwen-research | GGUF | Sycophancy reducida vía steering horneado |
+| Qwen2.5-3B-Instruct | 3,09 B | 32 768 tokens (nativo del base) | qwen-research | safetensors, GGUF | Modelo base sin edición; referencia de comportamiento |
+| Llama 3.2 3B Instruct | 3,21 B | 128 000 tokens | Llama 3.2 Community License | safetensors, GGUF | Alternativa de tamaño similar con contexto mayor |
+| Phi-3.5-mini-instruct | 3,82 B | 128 000 tokens | MIT | safetensors, GGUF | Alternativa con licencia permisiva y contexto largo |
 
-La comparación de rendimiento en benchmarks no está disponible para este modelo; los datos del modelo base y de las alternativas deben consultarse en sus respectivas model cards.
+La comparación con Qwen2.5-3B-Instruct es la más directa: honest-assistant modifica el comportamiento del base sin cambiar su tamaño ni su arquitectura. Frente a Llama 3.2 3B y Phi-3.5-mini, la diferencia principal es la licencia (qwen-research es más restrictiva que MIT) y la ausencia de datos de benchmarks estándar publicados para esta edición.
 
 ## Limitaciones y advertencias
 
-- La edición con *steering vectors* puede introducir efectos secundarios no medidos en otras dimensiones del comportamiento (estilo, verbosidad, coherencia), y la model card solo reporta una verificación cualitativa.
-- Riesgo de alucinación inherente al modelo base de 3B parámetros; la reducción de complacencia no elimina la generación de afirmaciones incorrectas.
-- Idiomas soportados no documentados en esta ficha; debe verificarse contra el modelo base antes de usar en producción multilingüe.
-- Licencia qwen-research: restricciones para uso comercial; es necesario revisar el enlace de licencia del modelo base antes de cualquier despliegue productivo.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado en fechas muy próximas (2026-11-21), lo que indica ausencia de validación comunitaria.
-- No hay información sobre el dataset de cálculo de los vectores ni sobre la metodología de evaluación; la reproducibilidad del ajuste no está garantizada.
-- El contexto máximo efectivo en la cuantización GGUF puede diferir del declarado para el modelo base; conviene probarlo con la longitud real de contexto que se vaya a usar.
+- El direccionamiento está horneado en los pesos y se aplica a todos los tokens, incluida la pregunta. Esto debilita la comprensión del concepto suprimido: la identificación correcta de sycophancy cae del 90-100% al 20-50% (en sycophancy, del 90% al 50%), y bajar la intensidad no recupera la capacidad.
+- Si se necesita que el asistente razone sobre sycophancy (por ejemplo, para revisar correos en busca de halagos), el autor recomienda usar el servidor de Concept Surgeon, que direcciona solo la respuesta y recupera la mayor parte de la comprensión (80%).
+- Riesgo de alucinación: inherente a los modelos de 3B; no se han publicado evaluaciones específicas de factualidad para esta edición.
+- Sesgos conocidos: no disponibles en la información proporcionada; se heredan los del base Qwen2.5-3B-Instruct.
+- Limitaciones de contexto e idioma: no disponibles; se asumen las del base, pero no se confirman tras la edición.
+- Licencia qwen-research: restringe el uso comercial; es imprescindible revisar los términos antes de desplegar en producción.
+- Solo se distribuye en GGUF; no hay safetensors de esta edición, lo que limita su uso con frameworks que requieran pesos completos.
+- El modelo tiene 0 likes y 202 descargas en el momento de la consulta, lo que indica poca validación por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/farruko07/honest-assistant-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
+- Licencia del base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
+- Demo de Concept Surgeon: https://huggingface.co/spaces/farruko07/concept-surgeon
+- Persona Vectors (Chen et al., Anthropic, 2025): https://arxiv.org/abs/2507.21509
+- Contrastive Activation Addition (Rimsky et al., 2024): https://arxiv.org/abs/2312.06681
+- Activation Addition (Turner et al., 2023): https://arxiv.org/abs/2308.10248
+- Representation Engineering (Zou et al., 2023): https://arxiv.org/abs/2310.01405
+- Refusal is mediated by a single direction (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

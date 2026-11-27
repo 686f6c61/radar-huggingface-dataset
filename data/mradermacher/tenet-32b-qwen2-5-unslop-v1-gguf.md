@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Tenet-32B-Qwen2.5-Unslop-v1-GGUF es la version cuantizada en formato GGUF del modelo Tenet-32B-Qwen2.5-Unslop-v1, desarrollado originalmente por el usuario mr-andrey-isachenko y empaquetado para inferencia local por mradermacher. Se trata de un modelo de lenguaje de 32.763.876.352 parametros (aproximadamente 32,8 mil millones) construido sobre la base de Qwen2.5, lo que lo situa en la categoria de modelos densos de gran tamano orientados a despliegue en hardware de consumo mediante cuantizacion.
+Tenet-32B-Qwen2.5-Unslop-v1-GGUF es la version cuantizada en formato GGUF del modelo Tenet-32B-Qwen2.5-Unslop-v1, desarrollado por mr-andrey-isachenko y cuantizado por mradermacher. Se trata de un modelo de lenguaje de 32.763.876.352 parametros (aproximadamente 32,8 mil millones) construido sobre la arquitectura de Qwen2.5, lo que lo situa en la categoria de modelos densos de gran tamano orientados a generacion de texto, razonamiento y codigo.
 
-El modelo se presenta como un fine-tune de tipo "abliterated" y "uncensored", es decir, con las capas de rechazo mitigadas, y esta afinado especificamente para tareas agenticas, uso de herramientas (tool-use) y generacion de codigo. Incorpora tecnicas de entrenamiento como GRPO (Group Relative Policy Optimization) y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. La relevancia actual radica en que ofrece un modelo de 32B con capacidades agenticas en un formato GGUF listo para ejecutarse con llama.cpp u Ollama en estaciones de trabajo con GPU consumer de gama alta.
+El modelo se presenta como una variante "unslop" y "abliterated", terminos que en la comunidad open source designan ajustes orientados a reducir el tono excesivamente cauteloso o las respuestas evasivas tipicas de los modelos alineados de forma agresiva. Los tags incluyen "uncensored", "agentic", "tool-use" y "coding", lo que indica que el autor ha priorizado capacidades de uso de herramientas, razonamiento multi-paso y generacion de codigo, ademas de un comportamiento conversacional mas directo.
 
-El repositorio incluye un conjunto amplio de cuantizaciones estaticas (desde Q2_K hasta Q8_0, ademas de IQ4_XS), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. El modelo base sin cuantizar esta disponible en el repositorio de mr-andrey-isachenko, y existe una variante con cuantizacion ponderada/imatrix en un repositorio separado.
+La relevancia de esta ficha reside en que ofrece una via de despliegue local eficiente: al estar disponible en multiples cuantizaciones GGUF (desde Q2_K de 12,4 GB hasta Q8_0 de 34,9 GB), permite ejecutar un modelo de 32B en hardware de consumo y en entornos de servidor sin GPU de gama alta. La licencia Apache 2.0 facilita su uso comercial, aunque las capacidades reales y los datos de entrenamiento no estan documentados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen2.5) |
-| Parametros totales | 32.763.876.352 (aprox. 32,8B) |
-| Parametros activos | no aplica (modelo denso) |
+| Arquitectura | Transformer denso basado en Qwen2.5 (no se especifican detalles adicionales) |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | ingles (segun model card); resto no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); safetensors en el modelo base |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer densa de Qwen2.5, con aproximadamente 32,8 mil millones de parametros. Al tratarse de un fine-tune del modelo Qwen2.5-32B, hereda su estructura de atencion y tokenizador, aunque la model card no detalla la configuracion exacta de capas, cabezas de atencion ni dimensiones ocultas. El autor original aplico un proceso de "abliteration" para reducir los comportamientos de rechazo, seguido de un ajuste fino orientado a tareas agenticas, tool-use y codigo.
+La informacion disponible indica que el modelo base es Tenet-32B-Qwen2.5-Unslop-v1, de mr-andrey-isachenko, construido sobre la arquitectura Qwen2.5. Se trata por tanto de un transformer denso de aproximadamente 32,8 mil millones de parametros. Los tags "grpo" y "abliterated" sugieren que el entrenamiento pudo incluir Group Relative Policy Optimization (GRPO) y tecnicas de abliteration para reducir rechazos y respuestas evasivas, aunque no se detalla la composicion del dataset, el numero de tokens de entrenamiento ni si hubo fases de RLHF o DPO.
 
-Entre las tecnicas de entrenamiento mencionadas en las etiquetas del repositorio figuran GRPO (Group Relative Policy Optimization), un metodo de optimizacion de politicas por refuerzo, y el uso de datos FP8. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO mas alla de la mencion a GRPO. La model card del repositorio cuantizado no aporta detalles adicionales sobre el proceso de entrenamiento del modelo base.
+No se dispone de informacion sobre innovaciones tecnicas especificas como decodificacion especulativa, atencion lineal o arquitecturas hibridas. La model card del repositorio GGUF se limita a describir el proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y a listar los ficheros generados, sin aportar detalles sobre el entrenamiento del modelo original.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento y resolucion de tareas multi-paso (etiqueta "agentic").
-- Uso de herramientas y function calling (etiqueta "tool-use").
-- Generacion de codigo (etiqueta "coding").
-- Comportamiento "uncensored" y "abliterated": menor tendencia a rechazar peticiones.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible") y despliegue en vLLM segun las etiquetas.
-- Capacidades multilingues: la model card solo declara ingles; no se confirman otros idiomas.
-- No se mencionan capacidades de vision, audio ni modo "thinking" explicito.
+- Generacion de texto conversacional en ingles, con un estilo menos restrictivo que el de modelos alineados de forma convencional (tags "unslop" y "uncensored").
+- Generacion de codigo, segun el tag "coding".
+- Uso de herramientas y function calling, segun el tag "tool-use".
+- Comportamiento orientado a agentes y razonamiento multi-paso, segun el tag "agentic".
+- Compatibilidad con endpoints y despliegue en vLLM y OpenRouter, segun los tags.
+- Capacidades multilingues: no disponibles; la model card solo declara ingles.
+- Modo thinking, vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes de codigo en local: el modelo puede integrarse en entornos de desarrollo para autocompletar, explicar y refactorizar codigo, aprovechando su ajuste especifico en tareas de programacion y su disponibilidad en GGUF para ejecucion offline.
-- Pipelines agenticos con tool calling: al estar afinado para uso de herramientas, puede orquestar llamadas a APIs y funciones dentro de flujos multi-paso, integrandose en frameworks de agentes mediante el formato GGUF y llama.cpp.
-- Automatizacion de tareas de back-office: generacion y transformacion de texto en ingles para clasificacion, resumen y redaccion de documentos, con despliegue en servidores propios gracias a la licencia Apache 2.0.
-- Investigacion sobre alineacion y seguridad: al ser un modelo abliterated, resulta util para estudiar comportamientos sin capas de rechazo, comparar respuestas frente a modelos alineados y analizar sesgos.
-- Prototipado rapido en estaciones de trabajo: las cuantizaciones Q4_K_M (20,0 GB) y Q5_K_M (23,4 GB) permiten ejecutar el modelo en GPUs consumer de gama alta, facilitando pruebas de concepto sin infraestructura cloud.
-- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse localmente con llama.cpp u Ollama, el modelo es adecuado para procesar datos sensibles sin enviarlos a servicios externos.
-- Generacion de codigo en produccion con vLLM: las etiquetas indican compatibilidad con vLLM y endpoints, lo que permite servirlo con cuantizacion FP8 en infraestructura con GPU de datacenter.
+- Asistente de codigo en local: con cuantizaciones Q4_K_M (20 GB) o Q5_K_M (23,4 GB), el modelo puede desplegarse en una estacion de trabajo con una GPU de 24 GB y usarse para autocompletado, refactorizacion y generacion de tests en pipelines de desarrollo.
+- Agente autonomo con tool calling: los tags "agentic" y "tool-use" indican que el modelo puede integrarse en frameworks de agentes (LangChain, LlamaIndex) para orquestar llamadas a APIs, busquedas y ejecucion de comandos en flujos multi-paso.
+- Atencion al cliente automatizada: al ser un modelo de 32B con comportamiento conversacional directo, puede gestionar dialogos multi-turno en ingles en entornos donde se prefiera un tono menos evasivo; la longitud de contexto debe verificarse en el modelo base.
+- Generacion de contenido tecnico: redaccion de documentacion, articulos y respuestas tecnicas en ingles con un estilo menos "slop" (menos relleno y cautela excesiva).
+- Despliegue en servidor con vLLM: la version en safetensors del modelo base y los tags "vllm" y "endpoints_compatible" permiten servirlo con vLLM para alto throughput en GPUs A100 o H100.
+- Experimentacion en investigacion: al estar disponible en cuantizaciones desde Q2_K (12,4 GB), permite ejecutar un 32B en GPUs de consumo como RTX 3090 o RTX 4090 con cuantizaciones bajas, util para estudiar comportamiento de modelos abliterated.
+- Prototipado con Ollama o llama.cpp: los ficheros GGUF son directamente compatibles con llama.cpp, Ollama y LM Studio, lo que facilita pruebas rapidas en portatiles con GPU de 12-16 GB usando Q2_K o Q3_K_S.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +53,52 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (tamano de archivo GGUF): Q2_K 12,4 GB; Q3_K_S 14,5 GB; Q3_K_M 16,0 GB; Q3_K_L 17,3 GB; IQ4_XS 18,0 GB; Q4_K_S 18,9 GB; Q4_K_M 20,0 GB; Q5_K_S 22,7 GB; Q5_K_M 23,4 GB; Q6_K 27,0 GB; Q8_0 34,9 GB.
-- Para cargar el modelo completo en VRAM hay que anadir el overhead de contexto y del runtime, por lo que conviene disponer de margen adicional sobre el tamano del archivo.
-- GPU recomendadas: para Q4_K_M y cuantizaciones inferiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) puede alojar el modelo; para Q5_K_M y Q6_K se recomienda una GPU de 32 GB o superior (A100 40 GB, RTX A6000 48 GB); Q8_0 requiere al menos 40 GB de VRAM o descarga parcial a CPU.
-- Cabe en GPU consumer: si, en modelos con 24 GB de VRAM usando cuantizaciones Q2_K a Q5_K_S, con posible offload parcial a RAM del sistema.
-- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; el modelo base (safetensors) admite vLLM y transformers segun las etiquetas.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: 12,4 GB
+  - Q3_K_S: 14,5 GB
+  - Q3_K_M: 16,0 GB
+  - Q3_K_L: 17,3 GB
+  - IQ4_XS: 18,0 GB
+  - Q4_K_S: 18,9 GB
+  - Q4_K_M: 20,0 GB
+  - Q5_K_S: 22,7 GB
+  - Q5_K_M: 23,4 GB
+  - Q6_K: 27,0 GB
+  - Q8_0: 34,9 GB
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y Q6_K con contexto largo; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para Q4_K_M; GPUs de 16 GB para Q3_K_M.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o Q5_K_M; en GPUs de 16 GB con Q3_K_M o Q3_K_S; en GPUs de 12 GB con Q2_K (calidad reducida).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (para el modelo base en safetensors), TGI (no confirmado), endpoints compatibles con OpenAI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Tenet-32B-Qwen2.5-Unslop-v1 | 32,8B | no disponible | Apache 2.0 | GGUF, safetensors | Fine-tune abliterated para agentes y codigo |
-| Qwen2.5-32B (base) | 32,8B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo base original, alineado |
-| Alternativas de 30-34B (p. ej. Yi-34B, Mixtral 8x7B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion |
+| Tenet-32B-Qwen2.5-Unslop-v1-GGUF | 32,8B | no disponible | Apache 2.0 | GGUF | Variante abliterated/unslop, tags agentic y tool-use |
+| Qwen2.5-32B-Instruct | 32,8B | 128K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo base de referencia, alineado de forma convencional |
+| Gemma-2-27B-it | 27B | 8K | Gemma license | safetensors, GGUF | Alternativa de Google, licencia mas restrictiva |
+| Mistral-Small-24B-Instruct | 24B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa europea de tamano similar |
 
-La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada; solo se confirma que el modelo deriva de Qwen2.5-32B y comparte su licencia Apache 2.0.
+La comparativa se basa en caracteristicas publicas de los modelos citados; no se dispone de datos de rendimiento comparativo del modelo Tenet frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated" y "uncensored": la mitigacion de las capas de rechazo puede producir respuestas inapropiadas, ofensivas o inseguras en dominios sensibles; requiere filtros externos para uso en produccion.
-- Riesgo de alucinacion inherente a los modelos de 32B, agravado por la falta de datos de evaluacion publicados.
-- Idioma: la model card solo declara ingles; el rendimiento en castellano u otros idiomas no esta verificado.
-- Longitud de contexto no documentada; no se debe asumir la ventana de Qwen2.5 sin confirmacion.
-- No hay benchmarks publicados que respalden las capacidades declaradas (agentic, coding, tool-use).
-- El repositorio cuantizado tiene muy pocas descargas (558) y cero likes, lo que indica escasa validacion por parte de la comunidad.
-- La licencia Apache 2.0 permite uso comercial, pero el caracter uncensored puede incumplir politicas de plataformas o requisitos regulatorios segun el contexto de despliegue.
-- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad de forma notable (la propia model card marca Q3_K_M como "lower quality").
+- El modelo esta marcado como "abliterated" y "uncensored": es probable que genere contenido que modelos alineados rechazarian, lo que requiere filtros y politicas de uso en produccion.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
+- No se dispone de informacion sobre la longitud de contexto, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
+- Riesgo de alucinacion no cuantificado: al no haber benchmarks publicados, no se puede estimar la fiabilidad factual.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus datos de entrenamiento no estan documentados, lo que puede implicar riesgos legales o de cumplimiento no evaluados.
+- Las cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad; para produccion se recomienda Q4_K_M o superior.
+- El repositorio GGUF tiene 588 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion limitada y poca validacion comunitaria.
+- No hay informacion sobre sesgos conocidos ni sobre evaluaciones de seguridad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Tenet-32B-Qwen2.5-Unslop-v1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Tenet-32B-Qwen2.5-Unslop-v1-GGUF
 - Modelo base: https://huggingface.co/mr-andrey-isachenko/Tenet-32B-Qwen2.5-Unslop-v1
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Tenet-32B-Qwen2.5-Unslop-v1-i1-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Tenet-32B-Qwen2.5-Unslop-v1-GGUF
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#Tenet-32B-Qwen2.5-Unslop-v1-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

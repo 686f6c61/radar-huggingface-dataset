@@ -2,101 +2,90 @@
 
 ## Resumen
 
-Torick63/opus-mt-en-nl-onnx-int8 es una exportación a ONNX con cuantización int8 dinámica del modelo de traducción Helsinki-NLP/opus-mt-en-nl, desarrollado por el Language Technology Research Group de la Universidad de Helsinki dentro del proyecto OPUS-MT. Resuelve traducción directa de inglés a neerlandés en dispositivos locales, sin depender de una API externa.
+`Torick63/opus-mt-en-nl-onnx-int8` es una exportación a ONNX con cuantización dinámica int8 del modelo de traducción automática `Helsinki-NLP/opus-mt-en-nl`, desarrollado originalmente por el grupo de investigación en tecnología del lenguaje de la Universidad de Helsinki dentro del proyecto OPUS-MT. El modelo traduce de inglés a neerlandés y está pensado para inferencia en dispositivo (on-device) o en entornos con recursos limitados, donde cargar un runtime de PyTorch completo resulta excesivo.
 
-La conversión se realizó con Optimum usando la tarea `text2text-generation-with-past` y un decoder fusionado que gestiona tanto el primer paso como los pasos con caché KV mediante la entrada `use_cache_branch`. Los pesos del decoder se almacenan una sola vez. El paquete ocupa aproximadamente 152 MB e incluye encoder ONNX, decoder ONNX, modelos SentencePiece y vocabulario compartido.
+La conversión mantiene la arquitectura Marian original (transformer encoder-decoder) pero reorganiza el decodificador en un único grafo "merged" que gestiona tanto el primer paso de generación como los pasos con caché KV mediante la entrada `use_cache_branch`, de modo que los pesos del decodificador se almacenan una sola vez. Sobre ese grafo se aplica cuantización dinámica de pesos int8 con `quantize_dynamic` de ONNX Runtime, incluyendo `EnableSubgraph` para cuantizar también las capas internas de las ramas del decodificador fusionado.
 
-Es relevante para despliegues de traducción de bajo coste en dispositivo y para estudiar el impacto de la cuantización int8: con decodificación greedy, la salida coincide con la del modelo PyTorch original en 26 de 30 frases cortas de prueba. No hay benchmarks estándar ni detalles de entrenamiento publicados en la información disponible.
+El resultado ocupa aproximadamente 152 MB en total y se distribuye bajo licencia Apache-2.0, la misma del modelo base. Es relevante para quien necesite un traductor en→nl ligero, determinista con decodificación greedy y desplegable con ONNX Runtime sin dependencias de frameworks de deep learning pesados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Marian, encoder-decoder para traducción automática, exportado a ONNX |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | Marian (transformer encoder-decoder) exportado a ONNX |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | int8 dinámico de pesos con ONNX Runtime `quantize_dynamic` y `EnableSubgraph`; no se documentan otros formatos |
-| Idiomas soportados | inglés (en) como origen y neerlandés (nl) como destino |
+| Tipos de cuantizacion | int8 dinámica de pesos (ONNX Runtime `quantize_dynamic`) |
+| Idiomas soportados | inglés (en) y neerlandés (nl) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX: `encoder_model.onnx` y `decoder_model_merged.onnx`; SentencePiece `source.spm` y `target.spm`; `vocab.json` |
-| Tamaño | aproximadamente 152 MB en total; repositorio de 0,2 GB |
-| Modelo base | Helsinki-NLP/opus-mt-en-nl, revisión `8aad73b` |
-| Pipeline | translation |
-| Autor de la conversión | Torick63 |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Formato de pesos | ONNX (`encoder_model.onnx`, `decoder_model_merged.onnx`), SentencePiece (`source.spm`, `target.spm`), `vocab.json`, `config.json`, `generation_config.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un sistema OPUS-MT de la Universidad de Helsinki, etiquetado como `marian`. Los artefactos confirman una arquitectura encoder-decoder: un encoder y un decoder con caché KV. Esta publicación no entrena un modelo nuevo: exporta los pesos del modelo base a ONNX y aplica cuantización dinámica int8 a los pesos mediante ONNX Runtime `quantize_dynamic`, con `EnableSubgraph` para cuantizar también las capas internas de las ramas del decoder fusionado.
+El modelo base `Helsinki-NLP/opus-mt-en-nl` es un transformer encoder-decoder de la familia Marian, entrenado por el grupo OPUS-MT de la Universidad de Helsinki (Tiedemann y Thottingal, 2020) sobre corpus paralelos del proyecto OPUS. Esta ficha no dispone de datos sobre el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esa información corresponde al modelo original y no se detalla en la model card de la conversión.
 
-El decoder fusionado maneja el primer paso y los pasos con caché a través de la entrada `use_cache_branch`, lo que evita duplicar los pesos del decoder. No se detallan en la información proporcionada el número de tokens de entrenamiento, la composición del corpus, el uso de RLHF/DPO ni otras técnicas de alineación. La autoría del modelo original corresponde al grupo de Helsinki, citado como Tiedemann & Thottingal, 2020.
+La innovación de esta versión es puramente de despliegue: exportación con Optimum usando la tarea `text2text-generation-with-past`, fusión del decodificador en un solo grafo con entrada booleana `use_cache_branch` para evitar duplicar pesos, y cuantización dinámica int8 con `EnableSubgraph` para alcanzar los ~152 MB totales. Según el autor, con decodificación greedy los ficheros int8 producen la misma salida que el modelo PyTorch original en 26 de 30 frases cortas de prueba; el resto difiere principalmente en la formulación por efecto de la cuantización.
 
 ## Capacidades
 
-- Traducción directa de inglés a neerlandés con decodificación greedy documentada.
-- Inferencia en dispositivo mediante ONNX Runtime, con encoder y decoder que soporta caché KV.
-- Cuantización int8 dinámica de pesos, orientada a reducir el tamaño y facilitar la ejecución local.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta comportamiento de agente, razonamiento multi-paso ni planificación.
-- No se documentan capacidades de visión, audio, modo thinking, generación de código ni matemáticas; es un modelo de traducción, no un LLM general.
-- Cobertura multilingüe limitada al par inglés→neerlandés.
-- En decodificación greedy, la generación es determinista con la misma versión de ONNX Runtime y la misma configuración.
+- Traducción automática unidireccional inglés → neerlandés.
+- Generación de texto condicionada a la tarea de traducción (seq2seq).
+- Inferencia con caché KV en el decodificador fusionado para acelerar la generación token a token.
+- Tokenización SentencePiece independiente para origen y destino.
+- Ejecución con ONNX Runtime, sin necesidad de PyTorch en producción.
+- No soporta tool calling, function calling ni razonamiento multi-paso.
+- No soporta visión, audio ni modo "thinking".
+- Capacidades multilingües limitadas estrictamente al par en→nl.
 
 ## Casos de uso
 
-- Traducción offline en aplicaciones de escritorio y móviles: el paquete de unos 152 MB y el formato ONNX permiten integrar traducción inglés→neerlandés sin conexión, con SentencePiece incluido y sin depender de servicios externos.
-- Localización de interfaces y documentación: puede procesar lotes de cadenas en inglés y generar borradores en neerlandés dentro de un pipeline de CI/CD, con revisión humana para terminología y formato.
-- Atención al cliente: sirve para pretraducir mensajes entrantes en inglés a neerlandés antes de que los revise un agente, especialmente en conversaciones cortas y tickets de soporte.
-- Correos y chats internos con requisitos de privacidad: al ejecutarse en dispositivo, permite traducir contenido sensible sin enviarlo a una API de terceros.
-- Herramientas de traducción asistida: puede actuar como motor de sugerencias para traductores que trabajan con pares inglés→neerlandés, dejando la postedición al profesional.
-- Evaluación del impacto de la cuantización: es útil para comparar la salida int8 ONNX con el modelo PyTorch original en pruebas controladas de frases cortas y analizar diferencias de redacción.
-- Dispositivos locales y periferia: kioscos, terminales de punto de venta o señalización digital pueden incorporar traducción básica en inglés→neerlandés con un modelo pequeño y sin GPU dedicada.
+- Traducción en dispositivo o edge: el tamaño de ~152 MB permite empaquetar el modelo en aplicaciones móviles o de escritorio con ONNX Runtime, traduciendo texto en→nl sin conexión a un servidor.
+- Preprocesado en pipelines de datos: traducir grandes volúmenes de texto en inglés a neerlandés en lote antes de indexar o analizar, aprovechando la baja huella de memoria del modelo int8.
+- Servicio de traducción de bajo coste: desplegar un endpoint HTTP ligero con ONNX Runtime para traducciones cortas en→nl donde no se requiere un modelo de gran tamaño.
+- Localización de interfaces y documentación: traducir cadenas de UI, mensajes de error o textos de ayuda de aplicaciones con un modelo determinista y rápido.
+- Traducción de subtítulos o transcripciones: procesar segmentos cortos de texto en inglés a neerlandés en tiempo casi real dentro de un pipeline de vídeo o audio.
+- Filtrado y moderación multilingüe: normalizar contenido en inglés a neerlandés para aplicar reglas o clasificadores que operan sobre el idioma de destino.
+- Prototipado e investigación en traducción automática: servir como baseline ligero y reproducible para comparar con modelos neuronales de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar de traducción en la información disponible.
-
-| Prueba | Resultado | Notas |
-|---|---|---|
-| Coincidencia exacta con el modelo PyTorch original, decodificación greedy | 26/30 frases cortas | Según la model card; las diferencias restantes son principalmente de redacción y se atribuyen a la cuantización |
-| Benchmarks de traducción (BLEU, COMET, chrF) | no disponible | No publicados en la información proporcionada |
-| Benchmarks de LLM (MMLU, HumanEval, GSM8K) | no disponible / no aplica | El modelo es un sistema de traducción, no un LLM general |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta una comprobación cualitativa: con decodificación greedy, las salidas int8 coinciden con el modelo PyTorch original en 26 de 30 frases cortas de prueba.
 
 ## Requisitos de hardware
 
-- Pesos: aproximadamente 152 MB; repositorio de 0,2 GB. La VRAM total necesaria no está documentada; además de los pesos hay que contar activaciones, caché KV y el entorno de ONNX Runtime.
-- CPU: el formato ONNX int8 y el tamaño del modelo permiten inferencia en CPU; no se publican latencias ni throughput.
-- GPU: no se especifican GPU recomendadas. Por el tamaño de los pesos, cabría en GPU de consumo modernas, pero no hay requisitos oficiales ni pruebas publicadas.
-- Memoria para lotes grandes o secuencias largas: la caché KV y las activaciones pueden aumentar el consumo; no hay cifras oficiales.
-- Despliegue: la vía documentada es ONNX Runtime, con el modelo exportado mediante Optimum. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: al tratarse de un modelo de ~152 MB en int8, cabe holgadamente en menos de 1 GB de memoria, incluyendo buffers de runtime y caché KV.
+- GPU recomendadas: cualquier GPU moderna sirve; no requiere A100, H100 ni RTX 4090. Una GPU integrada o una GTX 1650 en adelante es más que suficiente.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo e incluso en CPU.
+- Opciones de despliegue: ONNX Runtime (Python, C++, C#, Java, JavaScript), con soporte de ejecución en CPU, CUDA, DirectML o CoreML según el proveedor de ejecución configurado.
+- Latencia y throughput: no disponibles de forma numérica; por el tamaño del modelo y la cuantización int8 se espera latencia de milisegundos por frase corta en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura y formato | Parámetros | Contexto | Licencia | Rendimiento documentado | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| Torick63/opus-mt-en-nl-onnx-int8 | Marian, ONNX int8 | no disponible | no disponible | Apache-2.0 | 26/30 coincidencias con PyTorch en 30 frases cortas; sin BLEU/COMET | Hugging Face, Torick63 |
-| Helsinki-NLP/opus-mt-en-nl | Marian, PyTorch original | no disponible | no disponible | Apache-2.0 | Modelo de referencia de la comparación; sin BLEU/COMET en la información | Hugging Face, Helsinki-NLP |
-| Otras exportaciones ONNX int8 inglés→neerlandés | no disponible | no disponible | no disponible | no disponible | No identificadas en la información proporcionada | no disponible |
+| Torick63/opus-mt-en-nl-onnx-int8 | no disponible | no disponible | en→nl | Apache-2.0 | ONNX int8 | Conversión cuantizada, ~152 MB |
+| Helsinki-NLP/opus-mt-en-nl | no disponible | no disponible | en→nl | Apache-2.0 | PyTorch/safetensors | Modelo base original, sin cuantizar |
+| Otros modelos OPUS-MT en→nl | no disponible | no disponible | en→nl | Apache-2.0 | variable | Misma familia Marian de la Universidad de Helsinki |
+
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de traducción frente a alternativas de mayor tamaño como NLLB o modelos comerciales.
 
 ## Limitaciones y advertencias
 
-- Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta.
-- Evaluación limitada a 30 frases cortas; no hay pruebas con documentos largos, dominios técnicos, terminología especializada ni textos con formato complejo.
-- La cuantización int8 produce diferencias de redacción en 4 de 30 frases; puede afectar a nombres propios, morfología neerlandesa, términos técnicos y consistencia terminológica.
-- No se documenta la longitud de contexto; no se debe asumir que soporta documentos largos ni conversaciones multi-turno extensas.
-- No hay BLEU, COMET, chrF ni evaluación humana publicada; la calidad real en producción es desconocida.
-- Solo traduce inglés→neerlandés; no cubre neerlandés→inglés ni otros idiomas.
-- Puede reflejar sesgos del corpus OPUS original; no se documentan sesgos, toxicidad ni evaluación de equidad.
-- Riesgo de omisiones, adiciones o traducciones literales en frases ambiguas; requiere revisión humana en contextos legales, médicos o financieros.
-- Licencia Apache-2.0: permite uso comercial con obligaciones de aviso y atribución; deben conservarse los créditos del modelo base y de la conversión. Sin garantías.
-- Integración: el decoder fusionado requiere la entrada `use_cache_branch` y una versión de ONNX Runtime compatible con el grafo exportado; conviene validar el entorno de destino.
-- No es un LLM conversacional: no se documentan tool calling, agentes, razonamiento, código, matemáticas, visión ni audio.
+- Modelo unidireccional: solo traduce de inglés a neerlandés; no soporta la dirección inversa ni otros pares de idiomas.
+- Calidad limitada por el modelo base Marian de tamaño pequeño; puede producir traducciones literales o perder matices en textos técnicos, literarios o con jerga.
+- La cuantización int8 introduce pequeñas variaciones de salida respecto al modelo original (4 de 30 frases en la prueba del autor), lo que puede afectar a evaluaciones estrictas de reproducibilidad.
+- Riesgo de alucinación y de traducciones incorrectas en frases ambiguas, nombres propios o terminología especializada.
+- Sin datos publicados sobre sesgos demográficos o culturales; el corpus OPUS puede reflejar sesgos de los textos paralelos de origen.
+- Licencia Apache-2.0: permite uso comercial y modificación, pero conviene conservar los avisos de atribución al grupo OPUS-MT de la Universidad de Helsinki.
+- No apto para tareas de razonamiento, generación libre, código o agentes; su uso está restringido a traducción.
+- La longitud de contexto no está documentada en la model card; para textos largos conviene segmentar en frases.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/Torick63/opus-mt-en-nl-onnx-int8)
-- [Modelo base Helsinki-NLP/opus-mt-en-nl](https://huggingface.co/Helsinki-NLP/opus-mt-en-nl)
-- [Perfil del autor Torick63](https://huggingface.co/Torick63)
-- Referencia citada en la model card: Tiedemann & Thottingal, 2020, OPUS-MT; no se incluye URL en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/Torick63/opus-mt-en-nl-onnx-int8
+- Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-nl
+- Paper de OPUS-MT (Tiedemann y Thottingal, 2020): https://aclanthology.org/2020.wmt-1.77/
+- Proyecto OPUS: https://opus.nlpl.eu/
+- Documentación de Optimum: https://huggingface.co/docs/optimum
+- Documentación de ONNX Runtime: https://onnxruntime.ai/

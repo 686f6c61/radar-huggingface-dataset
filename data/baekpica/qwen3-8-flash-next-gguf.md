@@ -2,90 +2,95 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo multimodal de mezcla de expertos (MoE) desarrollado por Alibaba Qwen, publicado en agosto de 2026 como evolución de la familia Qwen3.8. Se trata de un modelo de 125 000 millones de parámetros totales en el cuerpo principal, complementado por una tabla de embeddings n-gram de 51 200 millones, con solo 6 000 millones de parámetros activos por token (125B-A6B). Está construido sobre la arquitectura Qwen4, que introduce una combinación de atención GDN (Gated Delta Network) y QSA (Query-Selective Attention) para reducir el coste computacional manteniendo la capacidad.
+Qwen3.8-Flash-Next GGUF es una conversión a formato GGUF del modelo multimodal Qwen/Qwen3.8-Flash-Next, publicada por el usuario Baekpica. El modelo original, desarrollado por el equipo Qwen de Alibaba, es un transformer multimodal de tipo mixture-of-experts (MoE) con aproximadamente 180.000 millones de parámetros totales, orientado a tareas de image-text-to-text, razonamiento y decodificación especulativa. Esta conversión concreta está pensada para desplegarse en hardware DGX Spark/GB10 mediante el runtime ds4 del propio autor.
 
-La relevancia de este modelo reside en su equilibrio entre rendimiento y eficiencia: según el equipo de Qwen, el entrenamiento consume aproximadamente una novena parte de los recursos necesarios para Qwen3.7-Plus, a la vez que ofrece capacidades superiores en codificación y tareas de oficina. Soporta una ventana de contexto de 262 000 tokens, entrada multimodal (imagen y texto) y decodificación especulativa, lo que lo convierte en una opción atractiva para despliegues locales en hardware de alta gama como DGX Spark/GB10.
+La relevancia de esta ficha radica en que se trata de un artefacto de conversión, no de un lanzamiento listo para producción. El autor indica explícitamente que los ficheros Q8_0 deben tratarse como artefactos de conversión hasta que se complete la validación del runtime, y que no debe asumirse compatibilidad con llama.cpp upstream ni con otros runtimes GGUF sin soporte explícito para la arquitectura `qwen4exp`.
 
-La versión GGUF aquí documentada, publicada por Baekpica, es una conversión del modelo base con verificaciones exhaustivas de integridad, disponible en variantes BF16 y Q8_0. Es importante señalar que esta conversión usa una arquitectura GGUF personalizada (`qwen4exp`) y requiere un runtime específico en desarrollo (rama `dfm` del repositorio ds4), por lo que no es compatible con runtimes GGUF estándar como llama.cpp o Ollama en su estado actual.
+La conversión preserva la topología completa del modelo original: 48 capas de texto, 36 capas gated-delta, 12 capas de atención completa, 512 expertos enrutados con routing top-10, expertos compartidos, cuatro flujos de hiperconexión, una tabla PLE de n-gramas de 51.200 millones de parámetros, torre de visión y capa MTP (multi-token prediction). El repositorio ocupa 192,2 GB y solo ofrece, por ahora, la variante Q8_0 verificada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (GDN + QSA), 48 capas de texto, 36 capas gated-delta, 12 capas full-attention, 512 expertos enrutados con top-10, expertos compartidos, 4 streams de hiperconexión, tabla PLE n-gram de 51.2B, torre de visión y capa MTP |
-| Parametros totales | 179 999 981 459 (incluye 125B del cuerpo principal + 51B de la tabla PLE n-gram) |
-| Parametros activos | 6 000 000 000 (6B por token) |
-| Longitud de contexto | 262 144 tokens (262K) |
-| Tipos de cuantizacion | BF16 (sin pérdidas, 360 GB en 12 shards) y Q8_0 (192 GB en 7 shards; 806 tensores Q8_0, 363 BF16, 584 F32, 3 I64) |
-| Idiomas soportados | No disponible |
-| Licencia | Qwen Community License 1.0 |
-| Formato de pesos | GGUF (arquitectura personalizada `qwen4exp`) |
+| Arquitectura | Transformer MoE multimodal con capas gated-delta y atención completa (arquitectura GGUF custom `qwen4exp`) |
+| Parametros totales | 179.999.981.459 (aprox. 180B) |
+| Parametros activos | no disponible (routing top-10 sobre 512 expertos enrutados, sin cifra oficial de activos) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (verificada); mezcla mixta anunciada pero no publicada |
+| Idiomas soportados | no disponible |
+| Licencia | Qwen Community License 1.0 (`qwen-community-1.0`, license_name: other) |
+| Formato de pesos | GGUF (7 shards, 1.756 tensores, 192.201.208.384 bytes) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next emplea una arquitectura de mezcla de expertos híbrida que combina dos mecanismos de atención: GDN (Gated Delta Network) y QSA (Query Selective Attention). La GDN introduce capas de atención con delta-gating que reducen la redundancia computacional, mientras que QSA selecciona dinámicamente las cabezas de atención relevantes para cada consulta. El modelo mantiene 48 capas de texto, de las cuales 36 son capas gated-delta y 12 son capas de atención completa, junto con 512 expertos enrutados con selección top-10 y expertos compartidos. Además, incorpora una tabla de embeddings n-gram (PLE) de 51 200 millones de parámetros que se utiliza como memoria asociativa de alta capacidad, y una torre de visión para el procesamiento multimodal.
+El modelo base es un transformer multimodal de tipo MoE con una topología híbrida: 48 capas de texto, de las cuales 36 son capas gated-delta (atención lineal con estado recurrente) y 12 son capas de atención completa. El bloque MoE emplea 512 expertos enrutados con routing top-10, además de expertos compartidos. Incorpora cuatro flujos de hiperconexión, una tabla PLE de n-gramas de 51.200 millones de parámetros, una torre de visión para entrada de imagen y una capa MTP (multi-token prediction) que habilita decodificación especulativa. El pipeline declarado es image-text-to-text, lo que confirma el carácter multimodal del modelo.
 
-El entrenamiento, según el repositorio oficial de Qwen, consumió aproximadamente una novena parte de los recursos de Qwen3.7-Plus, logrando mejoras en codificación y tareas de oficina. La arquitectura incluye también una capa MTP (Multi-Token Prediction) para decodificación especulativa, lo que permite acelerar la inferencia en secuencias largas. No se han publicado detalles sobre el dataset de entrenamiento (número exacto de tokens, composición, o técnicas de alineación como RLHF o DPO) en la información disponible.
-
-La conversión GGUF de Baekpica conserva toda la topología multimodal y de decodificación especulativa: los tensores de expertos enrutados se dividieron semánticamente en dos regiones (512 columnas principales y cola de 128 columnas) sin conversión numérica, y los tensores de gate/up fusionados se separaron sin pérdida de precisión.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La model card de la conversión se centra en el proceso de cuantización y verificación: la referencia BF16 retirada contenía 1.756 tensores GGUF en 12 shards (360.011.029.056 bytes) y se comparó contra los 1.658 tensores de la revisión fuente fijada (`f5d08274bafd880402bd16f5e3e6c514136ec06c`), con coincidencia exacta de los 359.999.963.128 bytes de payload y cero discrepancias. Los tensores fusionados gate/up de expertos se separaron semánticamente sin conversión numérica y las proyecciones down de expertos enrutados se dividieron sin pérdida en una región principal de 512 columnas y una cola de 128 columnas. La release Q8_0 contiene 806 tensores Q8_0, 363 BF16, 584 F32 y 3 I64, con checksums SHA-256 por shard en `Q8_0/SHA256SUMS`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento avanzado, con soporte de contexto largo de 262 000 tokens.
-- Entrada multimodal: procesa imágenes y texto (pipeline `image-text-to-text`), con torre de visión integrada.
-- Razonamiento multi-paso y modo de pensamiento avanzado, según la documentación oficial de Qwen.
-- Codificación de software y tareas de oficina (documentos, hojas de cálculo) con rendimiento superior a Qwen3.7-Plus según el equipo de Qwen.
-- Decodificación especulativa mediante capa MTP, que acelera la generación en inferencia.
-- Modelo MoE con 6B parámetros activos por token, lo que reduce el coste de inferencia frente a modelos densos de tamaño similar.
-- Soporte de tool calling y function calling: la arquitectura de atención híbrida y el contexto largo permiten integración con agentes, aunque no se detallan APIs específicas en la documentación disponible.
-- Capacidades multilingües: no se han publicado los idiomas soportados en la información disponible.
+- Generación de texto conversacional multi-turno (tag `conversational`).
+- Entrada multimodal image-text-to-text: procesamiento de imágenes junto con texto mediante la torre de visión integrada.
+- Razonamiento y matemáticas: herencia de las capacidades del modelo base Qwen3.8-Flash-Next, aunque sin benchmarks publicados en esta conversión.
+- Generación de código: no confirmada explícitamente en la información disponible.
+- Decodificación especulativa mediante la capa MTP (multi-token prediction) preservada en la conversión.
+- Routing MoE con top-10 sobre 512 expertos, lo que permite activar solo una fracción de los parámetros por token.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (el campo de idiomas no está poblado en el repo).
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con infraestructura de serving, pero sin detalles adicionales.
 
 ## Casos de uso
 
-- Asistentes de programación en producción: el modelo destaca en codificación y puede integrarse en entornos de desarrollo con generación de código, autocompletado y refactorización, aprovechando su contexto de 262K para manejar repositorios completos.
-- Análisis de documentos largos y contratos: la ventana de 262K tokens permite procesar documentos extensos (informes anuales, expedientes legales) en una sola pasada, sin necesidad de chunking.
-- Automatización de tareas de oficina: generación de resúmenes, redacción de correos, creación de presentaciones y edición de tablas, donde el modelo supera a Qwen3.7-Plus según el equipo de Qwen.
-- Asistentes multimodales: al aceptar imágenes y texto, puede describir diagramas, capturas de pantalla o figuras técnicas, combinando análisis visual y razonamiento textual.
-- Agentes autónomos con tool calling: con su soporte de decodificación especulativa y contexto largo, puede gestionar flujos multi-paso que requieren llamadas a APIs, búsquedas web o ejecución de scripts.
-- Investigación y análisis de datos: su capacidad de razonamiento y la tabla PLE de 51B parámetros lo hacen adecuado para tareas de extracción de información y análisis estadístico sobre grandes volúmenes de texto.
+- Despliegue en DGX Spark/GB10 para experimentación con modelos de 180B: el autor fija este hardware como objetivo de despliegue y proporciona el runtime ds4 (rama `dfm`), por lo que es el escenario natural para probar la conversión Q8_0.
+- Investigación en cuantización de modelos MoE multimodales: la release incluye verificación exhaustiva de tensores, checksums por shard y comparación byte a byte con la fuente, lo que la convierte en material de referencia para estudiar cómo se preservan tensores fusionados y proyecciones de expertos al convertir a GGUF.
+- Evaluación de decodificación especulativa: al conservar la capa MTP, el modelo permite medir la ganancia de throughput de la decodificación especulativa en un MoE de 180B cuantizado a Q8_0.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text habilita tareas de extracción y descripción de contenido visual combinado con texto, siempre que el runtime ds4 esté validado.
+- Reproducibilidad de artefactos de cuantización: los SHA-256 por shard y la verificación de hashes LFS de Hugging Face permiten a un equipo auditar la integridad de los pesos antes de usarlos en pipelines internos.
+- Base para una futura release mixta: el autor anuncia una versión con receta de cuantización mixta tras calibración y validación en H200; los equipos que necesiten menor huella de memoria pueden planificar sobre esa release futura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La documentación oficial menciona mejoras cualitativas frente a Qwen3.7-Plus en codificación y tareas de oficina, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros puntos de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con la variante Q8_0, el modelo ocupa aproximadamente 192 GB de memoria; la variante BF16 ocupa 360 GB. En sistemas con memoria unificada (como DGX Spark/GB10), se estima que puede ejecutarse con 78 GB de RAM/unified memory según unsloth, aunque esto se refiere al modelo original en pesos de 125B, no a esta conversión GGUF.
-- GPU recomendadas: el objetivo de despliegue declarado es DGX Spark (GB10) con 128 GB de memoria unificada. En GPUs dedicadas, se requerirían múltiples A100 80GB o H100 80GB en configuración multi-GPU para la variante Q8_0; la BF16 necesitaría al menos 5 A100 80GB.
-- Consumer GPU: no es viable. Ninguna GPU de consumo actual (RTX 4090, 3090, etc.) dispone de suficiente VRAM (24 GB) para alojar ni siquiera la variante Q8_0.
-- Opciones de despliegue: el runtime actual es el fork `dfm` del repositorio ds4 de Baekpica. No es compatible con llama.cpp, Ollama, vLLM ni TGI hasta que se implemente el soporte de la arquitectura `qwen4exp`.
-- Latencia y throughput: no disponible. El rendimiento dependerá del runtime y del hardware, pero la capa MTP de decodificación especulativa debería reducir el tiempo de generación en secuencias largas.
+- VRAM estimada: la release Q8_0 ocupa 192.201.208.384 bytes (unos 192,2 GB) en disco; la VRAM necesaria para inferencia es al menos de ese orden, aunque no se especifica en la información disponible.
+- GPU objetivo declarada: DGX Spark/GB10 (plataforma de memoria unificada de NVIDIA).
+- GPU recomendadas: el autor menciona H200 para las comprobaciones de calidad de la futura release mixta; no se detallan otras GPU compatibles.
+- GPU de consumo: no cabe en GPU de consumo convencionales dado el tamaño de 180B parámetros y 192 GB de pesos en Q8_0.
+- Opciones de despliegue: runtime ds4 (rama `dfm` del repositorio Baekpica/ds4). No se garantiza compatibilidad con llama.cpp upstream, Ollama, vLLM ni TGI, ya que la arquitectura `qwen4exp` es custom y su soporte está en implementación.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (este) | ~180B (125B + 51B PLE) | 6B | 262K | Qwen Community 1.0 | GGUF (no estándar) |
-| Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | No disponible |
-| Qwen3.8-27B (dense) | 27B | 27B | 262K | Qwen Community 1.0 | Disponible en HF |
+| Qwen3.8-Flash-Next (base) | ~180B | no disponible | Qwen Community License 1.0 | safetensors (BF16) | Modelo original de referencia |
+| Baekpica/Qwen3.8-Flash-Next-GGUF (Q8_0) | ~180B | no disponible | Qwen Community License 1.0 | GGUF (7 shards) | Artefacto de conversión, runtime en validación |
+| Alternativas de 180B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con Qwen3.7-Plus se menciona en la documentación oficial: Qwen3.8-Flash-Next ofrece mejor rendimiento en codificación y tareas de oficina con un coste de entrenamiento aproximadamente 9 veces menor. No se dispone de datos de rendimiento numéricos para una comparativa cuantitativa. La variante densa Qwen3.8-27B, lanzada en la misma época, es un modelo más pequeño pero no MoE; los detalles completos de su rendimiento no están disponibles en la información proporcionada.
+No se dispone de información sobre otros modelos de la misma categoría con la que establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la Qwen Community License 1.0 no es Apache 2.0. Limita el uso comercial en determinados escenarios y requiere cumplir con los términos de la comunidad Qwen. No se puede asumir licencia libre.
-- Runtime no estándar: la conversión GGUF usa la arquitectura `qwen4exp` y requiere el runtime `ds4` (rama `dfm`). No funciona con llama.cpp, Ollama, vLLM ni otros motores GGUF hasta que se implemente el soporte.
-- Estado de desarrollo: la conversión se presenta como artefacto de verificación, no como release listo para producción. La variante Q8_0 es una cuantización parcial (806 tensores Q8_0, el resto BF16/F32), no una cuantización completa del modelo.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de alucinación para este modelo; como con todos los modelos de lenguaje, se recomienda verificar las salidas en dominios críticos.
-- Sesgos: no hay información pública sobre sesgos o evaluaciones de imparcialidad para Qwen3.8-Flash-Next.
-- Limitaciones de idioma: los idiomas soportados no están documentados en la información disponible, lo que dificulta planificar su uso en aplicaciones multilingües.
-- Requisitos de hardware elevados: incluso en Q8_0, necesita ~192 GB de memoria, lo que excluye su despliegue en la mayoría de estaciones de trabajo y cualquier GPU de consumo.
+- El autor advierte explícitamente de que no debe asumirse compatibilidad con llama.cpp upstream ni con otros runtimes GGUF sin soporte para la arquitectura `qwen4exp` y su esquema de tensores.
+- Los ficheros Q8_0 deben tratarse como artefactos de conversión, no como una release lista para uso general, hasta que se complete la validación del runtime ds4.
+- La receta de cuantización mixta anunciada no está publicada; solo existe la variante Q8_0 verificada.
+- El repositorio tiene 200 descargas y 0 likes, lo que indica una validación comunitaria muy limitada.
+- Idiomas soportados no declarados: riesgo de comportamiento inconsistente en idiomas distintos del inglés o chino del modelo base.
+- Sesgos conocidos: no documentados en la información disponible; se heredan los del modelo base Qwen3.8-Flash-Next, no analizados aquí.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Licencia Qwen Community License 1.0: es una licencia "other" con términos comunitarios; es necesario revisar el fichero de licencia upstream antes de cualquier uso comercial.
+- Algunos tensores permanecen en BF16, F32 e I64 (363, 584 y 3 tensores respectivamente), por lo que la huella real supera la de una cuantización Q8_0 homogénea.
+- La tabla PLE de n-gramas de 51.200 millones de parámetros y la torre de visión incrementan el consumo de memoria más allá de lo que sugiere el recuento de parámetros del transformer de texto.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
-- Conversión GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Guía de ejecución local en unsloth: https://unsloth.ai/docs/models/qwen3.8-next
-- Análisis del lanzamiento en explainx.ai: https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Revisión fuente fijada: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/f5d08274bafd880402bd16f5e3e6c514136ec06c
+- Licencia upstream: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/f5d08274bafd880402bd16f5e3e6c514136ec06c/LICENSE
+- Runtime ds4 (rama dfm): https://github.com/Baekpica/ds4/tree/dfm
+- GitHub Sponsors del autor: https://github.com/sponsors/Baekpica
+- Buy Me a Coffee del autor: https://www.buymeacoffee.com/baekpica

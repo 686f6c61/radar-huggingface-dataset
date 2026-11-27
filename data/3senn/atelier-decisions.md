@@ -2,104 +2,100 @@
 
 ## Resumen
 
-Atelier-decisions es un paquete de dos modelos de decisión destilados, desarrollado por 3SENN para el navegador open source Atelier. No son modelos generativos de propósito general, sino clasificadores especializados que responden a un formato de petición cerrado propio de Atelier (¿hay una respuesta esperando?, ¿este clic compraría o borraría algo?, ¿esto es una búsqueda o una pregunta?, ¿qué habilidad encaja?). Toda la inferencia ocurre en local, sin enviar datos a ningún servidor.
+Atelier-decisions es un repositorio que agrupa tres modelos pequenos de decision disenados para el navegador open source Atelier. No se trata de un unico modelo de lenguaje generativo, sino de una familia de clasificadores y decisores destilados que responden preguntas concretas del navegador en local: si hay una respuesta pendiente, si un clic compra o borra algo, si una entrada es una busqueda o una pregunta, o que habilidad encaja mejor. El objetivo es que esas decisiones rapidas se tomen en el dispositivo del usuario sin enviar datos a ningun servidor.
 
-El paquete contiene dos variantes. `atelier-nano` parte de mmBERT-small (22 capas) y se distribuye como ONNX int8 con tabla de embeddings de 4 bits: 54 MB y unos 10 ms por pregunta en CPU convencional con ONNX Runtime. `atelier-mini` parte de Qwen3.5-0.8B, reconfigurado con atención no causal y un readout de 255 códigos, y se distribuye como GGUF para llama.cpp: 515 MB y entre 0,14 y 0,33 s por pregunta en CPU.
+La familia se compone de tres piezas. `atelier-nano` es un encoder mmBERT-small de 22 capas, cuantizado a int8 ONNX con tabla de embeddings de 4 bits (54 MB, unos 10 ms por pregunta en CPU convencional). `atelier-mini` es un modelo derivado de Qwen3.5-2B (y Qwen3.5-0.8B en versiones anteriores) con atencion no causal y una readout de 255 codigos, empaquetado como GGUF para llama.cpp (1,3 GB, 0,33-0,71 s por pregunta). `atelier-step` reutiliza el encoder de nano con tres cabezas para resolver un paso de navegador en una sola pasada (clic, escritura, fin o bloqueo).
 
-Ambos se destilaron del profesor propietario pplx-decider-flash-v1.3 de Perplexity y se validaron contra pplx-decider-v1.3, además de incorporar preguntas numéricas y de seguridad cuyas respuestas se computan o se conocen por construcción. La relevancia actual está en el despliegue on-device de decisiones de baja latencia con licencia Apache-2.0 y artefactos reproducibles (manifiestos con SHA-256, informes de evaluación y constructores de datos publicados en GitHub).
+El interes actual reside en su enfoque de destilacion desde el decider propietario de Perplexity (`pplx-decider-flash-v1.3`) y en su diseno para ejecucion en CPU sin GPU, con licencia Apache 2.0 y pesos en ONNX y GGUF. Los parametros totales declarados en safetensors son 1.881.825.088, lo que corresponde al componente mini basado en Qwen3.5-2B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | nano: encoder transformer (mmBERT-small, 22 capas); mini: Qwen3.5-0.8B con atención no causal y readout de 255 códigos |
-| Parametros totales | 752.393.024 (suma reportada en safetensors del repo); nano: no disponible desglosado, mini: ~0,8B |
+| Arquitectura | Encoder transformer (mmBERT-small, 22 capas) para nano y step; Qwen3.5-2B con atencion no causal y readout de 255 codigos para mini |
+| Parametros totales | 1.881.825.088 (safetensors, componente mini) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | nano: ONNX int8 con embeddings de 4 bits; mini: GGUF Q5_K_M en capas con embeddings de 4 bits |
+| Tipos de cuantizacion | int8 ONNX con embeddings de 4 bits (nano y step); GGUF Q5_K_M con embeddings de 4 bits (mini) |
 | Idiomas soportados | multilingual, en, nl, de, fr, es |
-| Licencia | apache-2.0 (pesos); datos del proyecto CC BY 4.0; parche de integración MPL-2.0 |
-| Formato de pesos | ONNX (nano), GGUF (mini), PyTorch checkpoints (student.pt, mini.pt), safetensors en el repo |
+| Licencia | apache-2.0 |
+| Formato de pesos | ONNX (nano, step), GGUF (mini), safetensors y PyTorch (checkpoints de entrenamiento) |
 
 ## Arquitectura y entrenamiento
 
-`atelier-nano` es un encoder transformer de 22 capas derivado de jhu-clsp/mmBERT-small, cuantizado a int8 en ONNX con una tabla de embeddings de 4 bits que reduce el artefacto a 54 MB. `atelier-mini` reutiliza los pesos de Qwen/Qwen3.5-0.8B pero los lee "como un decididor": atención no causal y un readout de 255 códigos que produce la decisión, empaquetado como GGUF Q5_K_M para llama.cpp.
+`atelier-nano` parte de mmBERT-small, un encoder de 22 capas, y se distribuye como ONNX int8 con tabla de embeddings de 4 bits. `atelier-step` reutiliza ese mismo encoder y anade tres cabezas que responden en una pasada: accion (clic, escritura, fin o bloqueo), control objetivo y asignacion de valores nombrados por el planificador a cada campo. `atelier-mini` se construye sobre Qwen3.5-2B (v0.6; Qwen3.5-0.8B en v0.4 y v0.5) pero se lee con atencion no causal y una readout de 255 codigos, es decir, se adapta el modelo generativo a un formato de decision cerrado. Se empaqueta como GGUF para llama.cpp.
 
-El entrenamiento es una destilación desde el profesor pplx-decider-flash-v1.3 (con validación contra pplx-decider-v1.3), complementada con preguntas numéricas y de seguridad cuyas respuestas se calculan o se conocen por construcción. Los datos provienen de pools etiquetados por el profesor y de entradas escritas para el proyecto, con corpus como AmazonScience/massive, allenai/WildChat-1M, osunlp/Mind2Web, glaiveai/glaive-function-calling-v2, google/Synthetic-Persona-Chat, knowledgator/gliclass-v2.0 y MoritzLaurer/synthetic_zeroshot_mixtral_v0.1. El repositorio de GitHub publica los constructores de datos, el entrenamiento y todas las mediciones; el repo de Hugging Face aloja los ficheros que no caben en git.
+El entrenamiento combina destilacion desde el decider propietario de Perplexity (`pplx-decider-flash-v1.3`, contrastado con `pplx-decider-v1.3`) y preguntas numericas, de seguridad y de reglas cuyas respuestas se calculan o se conocen por construccion. Los datasets citados incluyen AmazonScience/massive, allenai/WildChat-1M, osunlp/Mind2Web, glaiveai/glaive-function-calling-v2, google/Synthetic-Persona-Chat, knowledgator/gliclass-v2.0 y MoritzLaurer/synthetic_zeroshot_mixtral_v0.1. `atelier-step` aprendio de acciones registradas de Mind2Web y de flujos generados en cinco idiomas, con respuestas conocidas por construccion. No se detalla el numero de tokens de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación de decisiones de navegador en un formato de petición cerrado (System One de Atelier): respuesta pendiente, intención de clic destructivo o de compra, búsqueda frente a pregunta, selección de habilidad.
-- Respuesta a preguntas abiertas en el mismo formato, únicamente en la variante mini.
-- Preguntas numéricas y de seguridad con respuesta computada o conocida por construcción.
-- Multilingüe en inglés, neerlandés, alemán, francés y español.
-- Inferencia 100% local, sin envío de datos a servidores externos.
-- Degradación controlada: cuando el modelo no está seguro, declina y la regla de Atelier decide.
-- No soporta tool calling ni function calling en el sentido de los LLM generativos; el formato de petición es propio y restringido.
+- Clasificacion y decision de texto en formato de peticion propio de Atelier (no texto libre), orientado a preguntas cerradas del navegador.
+- Decisiones de intencion: distinguir busqueda de pregunta, detectar respuesta pendiente, evaluar si un clic compra o borra.
+- Asignacion de habilidad o skill a una tarea del navegador.
+- Respuesta a preguntas numericas, de seguridad y de reglas con respuestas calculadas o conocidas por construccion.
+- `atelier-step`: resolucion de un paso de navegador en una pasada (accion, control y valores de formulario).
+- Soporte multilingue en en, nl, de, fr y es, ademas de la etiqueta multilingual.
+- Ejecucion en dispositivo (on-device) sin envio de datos a servidores.
+- No se documenta soporte de tool calling generico, agentes multi-paso ni vision o audio.
 
 ## Casos de uso
 
-- Clasificación de bandeja de entrada en el navegador: el nano responde en unos 10 ms si un mensaje espera respuesta, integrándose en el bucle de UI sin bloqueo perceptible.
-- Aviso previo a acciones destructivas: el mini evalúa si un clic compraría o borraría algo antes de ejecutar la acción, con la regla de Atelier como red de seguridad cuando declina.
-- Enrutado de consultas en la barra de direcciones: distingue búsqueda de pregunta y selecciona la habilidad adecuada, en cinco idiomas.
-- Asistente de escritura con verificación de fidelidad: el mini detecta resúmenes infieles (con un 15% de error en los casos en que se muestra seguro, según la model card), útil como primera pasada antes de la revisión humana.
-- Detección de remitentes sospechosos: clasificación de lookalike senders con un 16,5% de error cuando el mini se muestra seguro; adecuado como señal adicional, nunca como único guardián.
-- Despliegue en equipos sin GPU: ambos modelos corren en CPU (ONNX Runtime para el nano, llama.cpp para el mini), lo que permite distribuir la funcionalidad en portátiles y equipos de gama baja.
-- Filtrado previo en pipelines de datos: el nano puede preclasificar grandes volúmenes de texto multilingüe a ~10 ms por elemento en CPU.
+- Clasificacion de intencion en navegador: decidir si la entrada del usuario es una busqueda o una pregunta, con `atelier-nano` a unos 10 ms por consulta en CPU, adecuado para ejecutarse en cada interaccion sin latencia perceptible.
+- Deteccion de respuestas pendientes: identificar si hay una respuesta esperando al usuario en una conversacion, integrado en el bucle de la interfaz de Atelier.
+- Seguridad de acciones: evaluar si un clic implicaria una compra o un borrado antes de ejecutarlo, usando `atelier-mini` cuando nano declina o duda.
+- Rellenado de formularios y tareas tipo "order this" o "fill in this form": `atelier-step` resuelve en una pasada la accion, el control y el valor de cada campo, con un modelo de lenguaje como respaldo para lo que no tenga claro.
+- Enrutado de habilidades (skill routing): asignar la habilidad adecuada a una tarea del navegador entre las disponibles, apoyandose en el formato de decision del modelo.
+- Filtrado de seguridad y reglas en local: comprobaciones de remitentes sospechosos o fidelidad de resumenes, siempre con la regla de Atelier como red de seguridad cuando el modelo no es fiable.
+- Despliegue en entornos sin GPU: al ejecutarse en CPU con ONNX Runtime o llama.cpp, encaja en equipos de usuario final y en entornos restringidos donde no se permite enviar datos fuera.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible en el sentido de MMLU, HumanEval o GSM8K. La model card aporta métricas propias de la tarea:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos de rendimiento reportados son operativos:
 
-| Metrica | Valor |
-|---|---|
-| nano: latencia por pregunta (CPU, ONNX Runtime) | ~10 ms |
-| nano: tamano del artefacto | 54 MB |
-| mini: latencia por pregunta (CPU, llama.cpp) | 0,14-0,33 s |
-| mini: tamano del artefacto | 515 MB |
-| mini: error en preguntas de seguridad cuando se muestra seguro | 6% (16,5% en remitentes lookalike, 15% en fidelidad de resúmenes) |
-| mini: acierto en tipos nuevos de preguntas de navegador cuando decide | 81-83% (el nano las declina) |
-| mini: cobertura en 20 idiomas no vistos | decide el 22% |
+| Metrica | atelier-nano | atelier-mini (v0.6) | atelier-step |
+|---|---|---|---|
+| Tamano | 54 MB | 1,3 GB (v0.5: 515 MB) | 55 MB |
+| Latencia por pregunta/paso | ~10 ms | 0,33-0,71 s (v0.5: 0,14-0,33 s) | ~0,08 s en dos hilos de CPU |
+| Hardware | CPU convencional (ONNX Runtime) | CPU (llama.cpp) | CPU (dos hilos) |
+
+Ademas, la model card indica que el mini acierta el 87-89% de las veces cuando decide sobre nuevas clases de preguntas de navegador (81-83% en v0.5), y que es seguro y erroneo en el 5,4% de las preguntas de seguridad (20% sobre fidelidad de resumenes, 10% sobre remitentes similares) y en el 19% de preguntas de reglas de tipos no entrenados.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; ambos modelos están diseñados para CPU.
-- nano: 54 MB de artefacto, ~10 ms por pregunta con ONNX Runtime en CPU convencional.
-- mini: 515 MB de artefacto, 0,14-0,33 s por pregunta en CPU con llama.cpp.
-- Cabe en cualquier equipo de consumo; no se especifican GPU recomendadas porque el despliegue objetivo es CPU.
-- Opciones de despliegue: ONNX Runtime (nano), llama.cpp con `llama-server` (mini), y el runner Node incluido en `runtime/node` que expone las peticiones en 127.0.0.1.
-- Throughput estimado: no disponible más allá de las latencias por pregunta indicadas.
+- VRAM: no requiere GPU; los tres modelos estan pensados para CPU.
+- GPU recomendadas: no aplica; no se documenta aceleracion por GPU.
+- Consumer GPU: irrelevante para el diseno, que prioriza ejecucion en CPU.
+- Despliegue: ONNX Runtime para nano y step; llama.cpp (`llama-server`) para mini; el runner de referencia esta en `runtime/node` del repositorio de GitHub.
+- Latencia: ~10 ms por pregunta (nano), 0,33-0,71 s (mini v0.6), ~0,08 s por paso en dos hilos (step).
+- Almacenamiento: ~1 GB para v0.5 completo, ~2 GB para v0.6; step ocupa 360 MB con su checkpoint.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| atelier-decisions (nano + mini) | 752M (suma del repo) | no disponible | Clasificación de decisiones de navegador | Apache-2.0 | Hugging Face + GitHub |
-| pplx-decider-flash-v1.3 | no disponible | no disponible | Decisiones (profesor) | Apache-2.0 | Hugging Face (perplexity-ai) |
-| pplx-decider-v1.3 | no disponible | no disponible | Decisiones (profesor) | Apache-2.0 | Hugging Face (perplexity-ai) |
-| mmBERT-small | no disponible | no disponible | Encoder multilingüe | MIT | Hugging Face (jhu-clsp) |
+No se dispone de datos de benchmarks comparables publicados en la informacion proporcionada. Como referencia estructural:
 
-No se dispone de comparativas de rendimiento publicadas frente a alternativas de la misma categoría.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| atelier-decisions (nano) | Encoder de decision | mmBERT-small, 22 capas | no disponible | apache-2.0 | ONNX int8 |
+| atelier-decisions (mini) | Decisor derivado de Qwen3.5-2B | 1.881.825.088 | no disponible | apache-2.0 | GGUF Q5_K_M |
+| Qwen3.5-2B (base) | LLM generativo | ~2B | no disponible | no disponible en esta ficha | safetensors/GGUF |
+| pplx-decider-flash-v1.3 (profesor) | Decisor propietario | no disponible | no disponible | no disponible | no disponible |
+
+La comparacion de rendimiento con alternativas no esta disponible en la informacion consultada.
 
 ## Limitaciones y advertencias
 
-- No es un guardián autónomo: el mini se muestra seguro y se equivoca en el 6% de las preguntas de seguridad (16,5% en remitentes lookalike, 15% en fidelidad de resúmenes); Atelier nunca confía solo en él.
-- La aritmética de varios pasos (porcentajes, IVA, cuentas divididas) no está resuelta: el mini declina y delega en la regla.
-- Los tipos nuevos de preguntas de navegador solo aciertan el 81-83% cuando el mini decide, y el nano los declina directamente.
-- Cobertura idiomática limitada a inglés, neerlandés, alemán, francés y español; el nano declina texto mayoritariamente no latino y el mini solo decide el 22% en 20 idiomas no vistos.
-- El formato de entrada es propietario (`student/format.py`, `runtime/node/src/format.ts`); no acepta texto libre como un LLM convencional.
-- Riesgo de alucinación no evaluado en el sentido generativo, pero el error en clasificación de seguridad y fidelidad es un caveat directo para producción.
-- Restricciones de licencia: los pesos son Apache-2.0, pero los datos de terceros conservan sus licencias (MASSIVE, Mind2Web y Synthetic-Persona-Chat CC BY 4.0; WildChat-1M ODC-BY; glaive-function-calling-v2, gliclass-v2.0 y synthetic_zeroshot_mixtral_v0.1 Apache-2.0); el parche de integración es MPL-2.0. Revisar NOTICE antes de redistribuir.
-- El modelo base Qwen3.5-0.8B se ha modificado (atención no causal, readout de 255 códigos), por lo que no debe tratarse como un Qwen3.5 estándar.
+- No es una garantia de seguridad por si solo: el mini es seguro y erroneo en el 5,4% de las preguntas de seguridad (20% en fidelidad de resumen, 10% en remitentes similares) y en el 19% de reglas de tipos no entrenados; Atelier nunca depende solo de el.
+- Aritmetica en varios pasos (porcentajes, IVA, division de facturas): el mini declina y delega en la regla.
+- Nuevas clases de preguntas de navegador: acierta el 87-89% cuando decide; nano las declina.
+- Los modelos leen el formato de peticion propio de Atelier, no texto libre; no son intercambiables con LLM genericos sin adaptacion.
+- No se documentan sesgos conocidos ni evaluaciones de alucinacion mas alla de las cifras de seguridad citadas.
+- La longitud de contexto no esta disponible, lo que limita su uso en entradas largas.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo profesor y de los datasets de destilacion antes de un despliegue en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/3SENN/atelier-decisions
 - Repositorio GitHub: https://github.com/3SENN/atelier-decisions
-- Proyecto Atelier: https://github.com/3SENN/atelier
-- Model card v0.5: https://huggingface.co/3SENN/atelier-decisions/blob/main/releases/v0.5/MODEL_CARD.md
-- Profesor pplx-decider-flash-v1.3: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3
-- Profesor pplx-decider-v1.3: https://huggingface.co/perplexity-ai/pplx-decider-v1.3
-- Modelo base nano (mmBERT-small): https://huggingface.co/jhu-clsp/mmBERT-small
-- Modelo base mini (Qwen3.5-0.8B): https://huggingface.co/Qwen/Qwen3.5-0.8B
-- NOTICE: https://github.com/3SENN/atelier-decisions/blob/main/NOTICE
+- Navegador Atelier: https://github.com/3SENN/atelier
+- Modelo profesor: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3
+- Modelo profesor de contraste: https://huggingface.co/perplexity-ai/pplx-decider-v1.3

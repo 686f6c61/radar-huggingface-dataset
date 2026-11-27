@@ -2,94 +2,95 @@
 
 ## Resumen
 
-Agents-A1-4B es un modelo de lenguaje de 4 mil millones de parametros desarrollado por InternScience, disenado especificamente para tareas agenticas y de tool calling. Se construye sobre la arquitectura hibrida Qwen3.5-4B, que combina 24 capas de GatedDeltaNet (atencion lineal con regla delta con compuertas) intercaladas con 8 capas de atencion completa con compuertas, lo que permite que el consumo de memoria se mantenga practicamente plano respecto a la longitud de contexto.
+Agents-A1-4B es un modelo de lenguaje orientado a tareas de agente y tool calling desarrollado por InternScience, construido sobre la arquitectura hibrida de Qwen3.5-4B. La version publicada en `litert-community/Agents-A1-4B` es una conversion del modelo original al formato LiteRT-LM (`.litertlm`) para inferencia on-device con el runtime LiteRT-LM de Google, pensada para dispositivos edge. La conversion conserva unicamente el decodificador de texto: la torre de vision del modelo original se ha eliminado.
 
-La version aqui descrita es una conversion realizada por la comunidad litert-community al formato LiteRT-LM (`.litertlm`) para inferencia on-device con el runtime LiteRT-LM de Google. Esta conversion conserva unicamente el decodificador de texto (se elimina la torre de vision del modelo original), mantiene el modo de razonamiento (thinking) y el formato nativo XML de tool calling del modelo base, y declara activaciones en fp32.
+La arquitectura combina 24 capas de GatedDeltaNet (atencion lineal con regla delta con compuertas) intercaladas con 8 capas de atencion completa con compuertas, de modo que el consumo de memoria crece de forma casi plana con la longitud de contexto: solo las 8 capas de atencion mantienen cache KV, con un presupuesto declarado de 4096 tokens en esta conversion. El modelo preserva el modo de razonamiento (thinking) y el formato nativo de tool calling en XML del modelo base.
 
-Su relevancia radica en que ofrece capacidades agenticas reales en un paquete de entre 2,7 y 4,4 GB, apto para ejecucion en dispositivos de borde (moviles, portatiles, equipos consumer) sin GPU dedicada de datacenter, con licencia Apache 2.0 y soporte para cuantizacion int8 e int4 mixta.
+La relevancia actual del artefacto reside en su empaquetado: dos recetas de cuantizacion (int8 dinamica y mixed int4 blockwise-32) que reducen el modelo a 4,419 GB y 2,754 GB respectivamente, lo que permite desplegarlo en dispositivos moviles y portatiles sin GPU dedicada. La model card documenta de forma inusualmente detallada un defecto de cuantizacion detectado y corregido en octubre de 2026, asi como sus implicaciones en decodificacion greedy.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida: 24 capas GatedDeltaNet (atencion lineal, regla delta con compuertas) + 8 capas de atencion completa con compuertas (base Qwen3.5-4B) |
-| Parametros totales | 4B (segun nombre y modelo base) |
+| Arquitectura | Hibrida: 24 capas GatedDeltaNet (atencion lineal con regla delta) + 8 capas de atencion completa con compuertas; basada en Qwen3.5-4B |
+| Parametros totales | 4B (aproximado, segun denominacion del modelo base) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | Presupuesto de KV cache de 4096 tokens en las 8 capas de atencion; memoria casi constante por las capas lineales |
-| Tipos de cuantizacion | int8 dinamico (lineales y embedding) y int4 mixta (bloque 32 min-max en lineales, int8 channelwise en embedding y lm_head) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | 4096 tokens de presupuesto de cache KV en esta conversion (solo las 8 capas de atencion) |
+| Tipos de cuantizacion | int8 dinamica (lineales y embedding) y mixed int4 blockwise-32 min-max (lineales) con embedding y lm_head int8 channelwise |
+| Idiomas soportados | no disponible (la model card no declara lista de idiomas; el tokenizer cubre ingles, chino, japones, coreano, arabe, hindi, tailandes, tamil y emoji) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `.litertlm` (LiteRT-LM); requiere litert-lm >= 0.15 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, InternScience/Agents-A1-4B, emplea la arquitectura hibrida de Qwen3.5-4B: 24 capas de GatedDeltaNet basadas en la regla delta con compuertas (una forma de atencion lineal con estado recurrente) intercaladas con 8 capas de atencion completa con compuertas. Esta combinacion hace que solo las 8 capas de atencion mantengan KV cache, mientras que las capas lineales operan con un estado de tamano fijo, de modo que el uso de memoria crece de forma practicamente plana con la longitud de contexto. El modelo esta orientado a tareas agenticas: razonamiento multi-paso, llamadas a herramientas y generacion en formato XML nativo.
+El modelo base es InternScience/Agents-A1-4B, construido sobre la arquitectura hibrida Qwen3.5-4B. La columna vertebral alterna 24 capas GatedDeltaNet, que aplican una regla delta con compuertas como forma de atencion lineal, con 8 capas de atencion completa con compuertas. Esta disposicion limita el crecimiento de memoria con el contexto: unicamente las 8 capas de atencion mantienen cache KV, mientras que las capas lineales operan con estado recurrente de tamano fijo. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La conversion a LiteRT-LM conserva el export en coma flotante del modelo original y aplica dos recetas de cuantizacion: int8 dinamico sobre lineales y embedding, manteniendo en float las convoluciones, la regla delta y las 48 proyecciones de decaimiento/compuerta de GatedDeltaNet (`in_proj_a` / `in_proj_b`); y una receta mixta int4 con cuantizacion por bloques de 32 (min-max) en lineales e int8 channelwise en embedding y lm_head. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF/DPO del modelo base en la informacion proporcionada.
+La conversion a LiteRT-LM elimina la torre de vision y conserva el decodificador de texto, el template de chat, el tokenizer y los metadatos del ejecutor. La receta int8 mantiene en coma flotante las convoluciones, la regla delta y las 48 proyecciones de decaimiento/compuerta de GatedDeltaNet (`in_proj_a` / `in_proj_b`); la receta mixed int4 aplica cuantizacion int4 blockwise-32 a los lineales y mantiene en flotante convoluciones y regla delta. Ambas declaran activaciones fp32. Una innovacion destacable del artefacto es la sustitucion de la seccion del tokenizer por el `tokenizer.json` propio del repositorio base (con la clase `\p{M}` en el pre-tokenizer), lo que corrige la tokenizacion de texto con marcas combinantes: 36 tokens en lugar de 49 en una frase en hindi, 12 en lugar de 24 en tailandes y 16 en lugar de 29 en tamil.
 
 ## Capacidades
 
-- Generacion de texto con modo de razonamiento (thinking) activable y desactivable.
-- Tool calling nativo en formato XML, disenado para integracion con agentes.
-- Razonamiento multi-paso y flujos agenticos.
-- Aritmetica basica y resolucion de operaciones (multiplicaciones de varios digitos verificadas en las pruebas del autor).
-- Generacion y comprension de codigo (la tokenizacion de codigo se conserva identica a la del repositorio original).
-- Soporte multilingue parcial: el tokenizador maneja correctamente chino, japones, coreano, arabe, hindi, thai y tamil, aunque no se detalla el rendimiento por idioma.
-- Inferencia on-device en CPU y GPU (Metal en Mac, backend Android) con LiteRT-LM.
+- Generacion de texto y razonamiento con modo thinking activable, con cierre controlado del bloque de pensamiento.
+- Tool calling nativo en formato XML, preservado del modelo base.
+- Comportamiento agentico orientado a tareas multi-paso.
+- Capacidades aritmeticas basicas verificadas en la model card (multiplicaciones de dos cifras bajo decodificacion greedy).
+- Soporte multilingue parcial: el tokenizer maneja ingles, chino, japones, coreano, arabe con harakat, hindi, tailandes, tamil y emoji, aunque no se declara una lista formal de idiomas.
+- Inferencia on-device en CPU y GPU mediante LiteRT-LM, sin dependencia de servidores.
+- Sin capacidades de vision en esta conversion (torre eliminada).
 
 ## Casos de uso
 
-- Asistentes agenticos en movil: el modelo cabe en 2,7 GB en int4 mixta y puede ejecutarse en un smartphone de gama alta (el autor cita pruebas en Galaxy S26), gestionando conversaciones multi-turno con tool calling nativo.
-- Automatizacion de tareas con herramientas en el dispositivo: el formato XML nativo de llamadas a funciones permite orquestar APIs locales (calendario, ficheros, shell) sin enviar datos a la nube.
-- Razonamiento aritmetico y verificacion de calculos: util para asistentes financieros o de calculo cotidiano, con modo thinking para operaciones complejas.
-- Generacion de codigo en entornos de desarrollo locales: integrable en editores o pipelines ligeros donde no se dispone de GPU de datacenter, gracias a su tamano reducido y soporte de CPU.
-- Procesamiento de texto multilingue en el borde: el tokenizador corregido maneja marcas combinantes en hindi, thai, tamil y arabe con harakat, adecuado para aplicaciones de traduccion o resumen local.
-- Prototipado de agentes sin infraestructura: investigadores pueden desplegar el modelo en un portatil con LiteRT-LM para validar flujos agenticos antes de escalar a modelos mayores.
-- Aplicaciones de privacidad estricta: al ejecutarse integramente en el dispositivo, permite procesar datos sensibles sin salida a servidores externos.
+- Asistentes de agente en movil: el modelo puede ejecutar bucles de tool calling en formato XML directamente en el dispositivo, sin enviar datos a la nube, gracias a los 2,754 GB de la variante mixed int4.
+- Automatizacion de tareas en aplicaciones Android: con LiteRT-LM y el fichero int8 de 4,419 GB, se puede integrar un agente que consulte APIs locales y componga respuestas multi-turno dentro del presupuesto de 4096 tokens de cache KV.
+- Procesamiento de texto en portatiles sin GPU: la variante mixed int4 permite ejecutar el decodificador en CPU con memoria plana respecto al contexto, adecuado para asistentes de escritorio offline.
+- Extraccion de datos estructurados mediante tool calling: el formato XML nativo facilita generar llamadas a funciones parseables en pipelines de automatizacion documental.
+- Razonamiento asistido con presupuesto controlado: el modo thinking con limite de tokens (por ejemplo, 1000 tokens) permite resolver problemas aritmeticos o de planificacion en entornos con restricciones de latencia.
+- Prototipado de agentes en edge para investigacion: la licencia Apache 2.0 y el formato abierto permiten experimentar con arquitecturas hibridas GatedDeltaNet en hardware de consumo.
+- Filtrado y clasificacion de texto multilingue en dispositivos: el tokenizer corregido mejora el tratamiento de idiomas con marcas combinantes (hindi, tailandes, tamil, arabe).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor documenta pruebas de correctitud cualitativas:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente documenta comprobaciones de correctitud cualitativas:
 
-| Prueba | Resultado |
-|---|---|
-| Seis preguntas de multiplicacion, greedy (top-k 1), thinking desactivado, CPU M4 Max (int8, version 2026-10-13) | 18/18 terminan solas con el producto correcto |
-| Aritmetica (17 x 23), thinking desactivado, CPU M4 Max (int8, version 2026-10-13) | 3/3 terminan solas |
-| Aritmetica (17 x 23), thinking activado, CPU M4 Max (int8, version 2026-10-13) | 2/3 cierran el razonamiento y responden; 1/3 cortada por limite de tokens |
-| Seis preguntas de multiplicacion, GPU Mac (int8, version anterior) | 6/6 terminan solas con el producto correcto, en 18-19 caracteres |
-| Chequeo de 8 preguntas, GPU Mac (int8, version anterior, temperatura 0) | 8/8 |
+| Prueba | Configuracion | Resultado |
+|---|---|---|
+| Seis preguntas de multiplicacion (int8, fichero previo) | Greedy top-k 1, thinking off, CPU M4 Max | Producto correcto 18/18; cierre autonomo 4/18 |
+| Seis preguntas de multiplicacion (int8, fichero 2026-10-13) | Greedy top-k 1, thinking off, CPU M4 Max | Producto correcto y cierre autonomo 18/18 |
+| Aritmetica 17 x 23 (int8, fichero previo) | Thinking off, 3 ejecuciones | Cierre autonomo 1/3 |
+| Aritmetica 17 x 23 (int8, fichero 2026-10-13) | Thinking off, 3 ejecuciones | Cierre autonomo 3/3 |
+| Aritmetica 17 x 23 con thinking (fichero previo) | Sin presupuesto, 3 ejecuciones | Pensamiento no cerrado 3/3 |
+| Aritmetica 17 x 23 con thinking (fichero 2026-10-13) | Sin presupuesto, 3 ejecuciones | Cierre y respuesta 2/3; con limite de 1000 tokens, cierra y responde |
+| Seis preguntas de multiplicacion (int8, fichero previo) | Greedy top-k 1, thinking off, GPU Mac | Producto correcto y cierre 6/6, en 18-19 caracteres |
+| Check de 8 preguntas (int8, fichero previo) | Temperatura 0, GPU Mac | 8/8 |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 2,75 GB para el fichero int4 mixto y 4,42 GB para el int8 (tamanos decimales de fichero).
-- GPU recomendadas: no se especifican modelos de datacenter; el autor prueba en GPU Metal de Mac M4 Max y en backend Android (Galaxy S26).
-- Cabe en GPU consumer: si, en cualquier GPU con al menos 3-5 GB de memoria libre; tambien en CPU y en moviles de gama alta.
-- Opciones de despliegue: runtime LiteRT-LM (version >= 0.15, probado en 0.17.1, 0.18.0 y nightly 0.18.0.dev20260919); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles de forma numerica; el autor reporta ejecuciones con limite de 400 tokens y 1000 tokens en CPU M4 Max.
+- VRAM/RAM: aproximadamente 4,42 GB para la variante int8 y 2,75 GB para la variante mixed int4 (tamanos de fichero en GB decimales).
+- GPU recomendadas: no se especifican modelos concretos; la model card reporta pruebas en CPU y GPU de un Mac M4 Max y en un Galaxy S26 (Android).
+- Cabe en GPU de consumo: si, en cualquier GPU con al menos 3-5 GB de memoria libre; tambien en moviles de gama alta (Galaxy S26 documentado).
+- Opciones de despliegue: runtime LiteRT-LM (`litert-lm` >= 0.15; probado en 0.15.0, 0.17.1, 0.18.0 y nightly 0.18.0.dev20260919). No se mencionan vLLM, llama.cpp ni Ollama.
+- Latencia y throughput: no disponibles de forma numerica; la model card solo reporta comportamiento cualitativo (longitud de respuesta de 18-19 caracteres en las pruebas de multiplicacion).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Agents-A1-4B (LiteRT-LM) | 4B | 4096 tokens de KV cache en 8 capas | Hibrida GatedDeltaNet + atencion | Apache 2.0 | Hugging Face (litert-community) |
-| InternScience/Agents-A1-4B (original) | 4B | no disponible | Hibrida Qwen3.5-4B con vision | Apache 2.0 | Hugging Face (InternScience) |
-| Qwen3.5-4B (base arquitectonica) | 4B | no disponible | Hibrida GatedDeltaNet + atencion | no disponible en la informacion | no disponible |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+| Agents-A1-4B (LiteRT-LM) | 4B | 4096 tokens de cache KV | `.litertlm` | Apache 2.0 | Agente on-device, hibrido GatedDeltaNet |
+| InternScience/Agents-A1-4B (base) | 4B | no disponible | safetensors (presumible, no confirmado) | no disponible en la informacion | Modelo original con torre de vision |
+| Alternativas de 4B on-device | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- La conversion elimina la torre de vision: no procesa imagenes, solo texto.
-- El presupuesto de KV cache es de 4096 tokens en las capas de atencion; contextos mas largos dependen del estado recurrente de las capas lineales y pueden degradar la calidad.
-- Se han documentado defectos de cuantizacion en versiones anteriores del fichero int8 (respuestas que continuaban tras la respuesta correcta hasta el limite de tokens, o razonamientos que no cerraban). La version del 2026-10-13 corrige el problema en CPU, pero el autor recomienda usar el fichero int4 mixto en Android.
-- El tokenizador de versiones anteriores al 2026-10-16 dividia incorrectamente texto con marcas combinantes (hindi, thai, tamil, arabe con harakat); debe usarse la version actualizada.
-- Riesgo de alucinacion inherente a modelos de 4B; no se han publicado evaluaciones de sesgo.
-- Idiomas soportados no documentados oficialmente; el rendimiento multilingue no esta cuantificado.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base y sus datos de entrenamiento pueden imponer restricciones adicionales no detalladas.
-- Requiere litert-lm >= 0.15; versiones anteriores no soportan el binding de buffers de estado de la arquitectura hibrida.
+- La conversion elimina la torre de vision: no procesa imagenes.
+- La cache KV se limita a 4096 tokens, lo que restringe conversaciones y documentos largos.
+- Se han documentado defectos de cuantizacion en la variante int8: bajo decodificacion greedy y sin thinking, versiones anteriores continuaban generando tras la respuesta correcta hasta el limite de tokens; con thinking activado, el bloque de pensamiento podia no cerrarse. La correccion del 2026-10-13 mitiga el problema, pero persiste cierta variabilidad (2/3 de cierre en la prueba aritmetica con thinking).
+- Riesgo de alucinacion y de autoconversacion (self-talk) en generaciones largas, especialmente con presupuestos de tokens amplios.
+- La model card no declara lista de idiomas ni evaluaciones de sesgo; no hay datos sobre sesgos conocidos.
+- Requiere `litert-lm` >= 0.15 y esta ligado al runtime LiteRT-LM; no es directamente compatible con otros motores de inferencia.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base declara una licencia no especificada en la informacion disponible; conviene verificar los terminos del repositorio original antes de un despliegue comercial.
+- El tokenizer fue corregido el 2026-10-16; ficheros anteriores tokenizan de forma distinta el texto con marcas combinantes.
 
 ## Enlaces
 
-- Repositorio LiteRT-LM: https://huggingface.co/litert-community/Agents-A1-4B
+- Repositorio LiteRT-LM del modelo: https://huggingface.co/litert-community/Agents-A1-4B
 - Modelo base: https://huggingface.co/InternScience/Agents-A1-4B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm

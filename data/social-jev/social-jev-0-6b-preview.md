@@ -2,98 +2,91 @@
 
 ## Resumen
 
-SocialJev es una familia de modelos fundacionales de clasificación orientados a ciencias sociales, desarrollada por el usuario u organización social-jev. La ficha publicada corresponde a la variante de previsualización social-jev-0.6B-preview, un ajuste fino (finetune) sobre el modelo base Qwen/Qwen3-0.6B con 596.050.945 parámetros reales en safetensors y un repositorio de 1,2 GB.
+SocialJev 0.6B — Preview es un modelo de clasificación para ciencias sociales desarrollado por social-jev, construido mediante fine-tuning sobre Qwen/Qwen3-0.6B. Su propuesta central es ofrecer una interfaz tipada (typed interface) sobre un modelo de lenguaje: el usuario define una consulta con un texto y un conjunto de opciones, y el modelo devuelve una elección con sus probabilidades asociadas. De este modo se combina la flexibilidad de un modelo preentrenado con la velocidad y determinismo de los métodos NLP ligeros.
 
-El modelo no se plantea como un generador de texto conversacional, sino como un clasificador configurable mediante una interfaz tipada: el usuario define una tarea en lenguaje natural y su conjunto de opciones de respuesta, y el modelo clasifica documentos contra esas opciones, de forma individual o por lotes, sin necesidad de reentrenar por cada nueva tarea de etiquetado.
+El modelo se inspira explícitamente en los modelos Jev de TypeSafe y se distribuye como preview, con la advertencia de que las interfaces pueden cambiar entre versiones tempranas. Con 596.050.945 parámetros reales (según safetensors) y un tamaño de repositorio de 1,2 GB, está pensado para tareas de clasificación y extracción de características en dominios de ciencias sociales, como el etiquetado de documentos políticos o la categorización temática.
 
-Es relevante porque ataca un cuello de botella habitual en investigación social cuantitativa y cualitativa, como es el etiquetado manual de corpus (programas electorales, actas, encuestas, prensa) con esquemas de códigos cambiantes. Sin embargo, se trata de una versión preview con 0 descargas y 0 likes, sin licencia declarada, sin idiomas declarados y sin resultados de benchmarks publicados en la información disponible.
+Su relevancia actual radica en la popularización de los modelos pequeños especializados en tareas concretas, que ofrecen latencia baja y despliegue sencillo frente a alternativas de mayor tamaño. No obstante, la información pública disponible es limitada: no se especifican licencia, idiomas ni datos de entrenamiento más allá del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, heredada del modelo base Qwen/Qwen3-0.6B; el detalle de las modificaciones introducidas por el autor no está disponible |
-| Parámetros totales | 596.050.945 (≈0,6 B), según safetensors |
-| Parámetros activos | No aplica (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (solo se publican pesos en safetensors; no se listan variantes GGUF, AWQ, GPTQ ni bitsandbytes) |
-| Idiomas soportados | No disponibles |
-| Licencia | No disponible |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-0.6B) |
+| Parametros totales | 596.050.945 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Librería | transformers (con `trust_remote_code=True`) |
-| Pipeline declarado | feature-extraction (con capacidad de clasificación) |
-| Modelo base | Qwen/Qwen3-0.6B (finetune) |
-| Tamaño del repositorio | 1,2 GB |
-| Fecha de creación | 2026-10-15 |
-| Última actualización | 2026-10-15 |
-| Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica únicamente que social-jev-0.6B-preview es un ajuste fino sobre Qwen/Qwen3-0.6B, un transformer decoder-only de aproximadamente 0,6 B de parámetros. El repositorio declara el tag `custom_code`, lo que implica que el modelo requiere `trust_remote_code=True` al cargarse con `AutoModel.from_pretrained` y que incorpora código propio del autor (paquete `social_jev`) para la construcción de consultas y la ejecución de la clasificación.
+El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de aproximadamente 0,6 mil millones de parámetros, y se ha ajustado mediante fine-tuning para la tarea de clasificación con interfaz tipada. La model card indica el uso de `custom_code` y `trust_remote_code=True`, lo que implica que el repositorio incluye código propio para definir las clases `Query`, `Request` y el método `query`, que devuelve objetos con campos `.choice` y `.probabilities`.
 
-No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento, ni innovaciones arquitectónicas concretas (atención lineal, decodificación especulativa, cabezas de clasificación adicionales, etc.). El pipeline declarado es `feature-extraction` y los tags incluyen `classification` y `social_jev`, lo que apunta a una adaptación orientada a producir representaciones o decisiones de etiquetado en lugar de texto libre.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card menciona que la familia SocialJev combina modelos preentrenados con "trillions of tokens" de texto, pero se refiere al preentrenamiento del modelo base, no a un detalle verificable del fine-tuning. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Clasificación de documentos mediante una interfaz tipada: se define una `Query` con el texto de la pregunta (por ejemplo, "¿A qué área de política se refiere este documento?") y la lista de `options` (por ejemplo, "Transport", "Education", "Healthcare") y el modelo devuelve la clasificación para cada documento.
-- Procesamiento por lotes: la API `model.query([...])` acepta una lista de `Request`, cada uno con un campo `state` (el documento o estado) y una o varias `queries`, y devuelve resultados indexados por petición y consulta.
-- Soporte de múltiples consultas por documento dentro de la misma llamada, lo que permite codificar varias variables de un mismo texto.
-- Extracción de características, según el pipeline declarado (`feature-extraction`) en la ficha de Hugging Face.
-- Carga mediante dos vías: `transformers.AutoModel.from_pretrained(..., trust_remote_code=True)` y la API de alto nivel `SocialJev.from_pretrained(...)`.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte explícito de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas en la ficha).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Clasificación con opciones cerradas: dado un texto y un conjunto de opciones, devuelve la opción elegida y un diccionario de probabilidades.
+- Extracción de características (pipeline `feature-extraction` en Hugging Face).
+- Interfaz tipada mediante Pydantic, con objetos `Query` y `Request` que estructuran la entrada y la salida.
+- Procesamiento por lotes: varias peticiones y varias consultas por documento, con resultados ordenados por documento y luego por consulta.
+- Integración con Transformers y con vLLM para cargas de trabajo mayores.
+- Soporte de ejecución síncrona (`.query()`) y asíncrona (`.aquery()`) en el backend vLLM.
+- No se documentan capacidades de generación abierta, tool calling, agentes, visión ni audio.
 
 ## Casos de uso
 
-- Codificación de áreas de política en documentos administrativos: definir una `Query` con las áreas relevantes (transporte, educación, sanidad, vivienda) y clasificar automáticamente actas municipales, boletines oficiales o planes estratégicos, aprovechando que el esquema de etiquetas se define en la propia consulta y puede cambiarse sin reentrenar.
-- Análisis de programas electorales y discursos parlamentarios: etiquetar miles de fragmentos según ejes temáticos o de posición, con múltiples `queries` por documento para cubrir varios ejes analíticos en una sola pasada.
-- Codificación de respuestas abiertas de encuestas: clasificar respuestas de texto libre en categorías predefinidas (por ejemplo, motivo de queja, nivel de acuerdo) manteniendo el esquema de códigos explícito y auditable en la consulta.
-- Asistencia a la anotación en investigación cualitativa: generar una preanotación sobre corpus de entrevistas o prensa que después revisa el investigador, reduciendo el coste de la codificación manual inicial.
-- Depuración y filtrado de corpus para revisión sistemática: clasificar resúmenes o abstracts según criterios de inclusión/exclusión definidos como opciones de la consulta, para priorizar qué documentos pasa a lectura completa.
-- Construcción de series temporales comparables: aplicar el mismo esquema de clasificación de forma consistente a documentos de distintos años o países, reduciendo la varianza entre codificadores humanos.
-- Prototipado de instrumentos de medición: usar la versión preview para validar rápidamente si un esquema de categorías es discriminativo antes de invertir en anotación humana a gran escala.
+- Etiquetado temático de documentos políticos: clasificar actas de consejos o comunicados gubernamentales en áreas como Transporte, Educación o Sanidad usando la interfaz de opciones cerradas.
+- Codificación de encuestas abiertas: asignar respuestas de texto libre a categorías predefinidas de un cuestionario, con probabilidades para medir la confianza de la asignación.
+- Análisis de discurso en investigación social: clasificar fragmentos de discursos o manifiestos según marcos temáticos definidos por el investigador.
+- Moderación de contenido ligera: categorizar comentarios en un conjunto acotado de etiquetas con un modelo de 0,6B que puede ejecutarse en CPU o GPU de gama baja.
+- Preetiquetado para anotación humana: generar etiquetas preliminares con probabilidades para acelerar la revisión manual en proyectos de anotación.
+- Clasificación por lotes en pipelines de datos: procesar grandes volúmenes de documentos con el backend vLLM y envío asíncrono concurrente.
+- Extracción de características para downstream: usar el modelo como extractor y entrenar clasificadores ligeros sobre sus representaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 1,2 GB en el repositorio. En precisión de 16 bits (fp16/bf16) la estimación es de aproximadamente 1,2 GB de pesos; en fp32, en torno a 2,4 GB. Hay que sumar el consumo del código personalizado, del tokenizador y de los estados intermedios de activaciones, por lo que una estimación práctica de trabajo se sitúa en el rango de 2 a 4 GB.
-- GPU recomendadas: por tamaño, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 o superiores. También es viable en GPUs de datacenter (A100, H100) si se busca throughput agregado por lotes.
-- Cabe en GPU de consumo: sí, con margen amplio; con 0,6 B de parámetros es probable que funcione incluso en iGPU con memoria compartida y en CPU para cargas por lotes moderadas.
-- Requisitos específicos: es necesario `trust_remote_code=True` y, para la API de alto nivel, el paquete `social_jev` instalado vía `pip install social-jev`. El código personalizado debe auditarse antes de ejecutarlo en entornos de producción o con datos sensibles.
-- Opciones de despliegue: la documentación solo cubre `transformers` y el paquete `social_jev`. No se documenta soporte para vLLM, TGI, Ollama o llama.cpp, ni se publican pesos en GGUF, por lo que el despliegue con esos runtimes no está verificado en la información disponible.
-- Latencia y throughput estimados: no disponibles (no se publican mediciones).
+- VRAM estimada: con 596 millones de parámetros, en fp16 requiere aproximadamente 1,2 GB de VRAM; en cuantización de 8 bits, alrededor de 0,6 GB; en 4 bits, en torno a 0,3 GB (estimaciones teóricas, no verificadas por el autor).
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM para fp16; RTX 3060, RTX 4060 o superiores son suficientes. Para lotes grandes, A100 o H100 ofrecen mayor throughput.
+- Cabe en GPU consumer: sí, en la práctica totalidad de GPU dedicadas modernas e incluso en CPU para cargas moderadas.
+- Opciones de despliegue: Transformers (backend estándar del paquete `social-jev`) y vLLM (backend opcional con `social-jev[vllm]`). No se documenta soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos directamente comparables en la categoría de "modelos fundacionales de clasificación para ciencias sociales" dentro de los datos proporcionados. Como referencia mínima, se incluye el modelo base:
-
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| social-jev-0.6B-preview | 596.050.945 | No disponible | Clasificación de documentos mediante consultas tipadas | No disponible | Hugging Face (0 descargas, 0 likes) |
-| Qwen/Qwen3-0.6B (base) | ≈0,6 B | No disponible en esta ficha | Generación de texto y razonamiento | No disponible en esta ficha | Hugging Face |
-| Alternativas específicas en ciencias sociales | No disponible | No disponible | No disponible | No disponible | No disponible |
+| social-jev-0.6B-preview | 596 M | no disponible | Clasificación tipada | no disponible | Hugging Face |
+| Qwen/Qwen3-0.6B | ~0,6 B | no disponible | Generación general | no disponible en esta ficha | Hugging Face |
+| Modelos Jev de TypeSafe | no disponible | no disponible | Clasificación tipada | no disponible | Referencia en blog de TypeSafe |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Versión preview: la propia nomenclatura del repositorio indica que es una previsualización, con 0 descargas y 0 likes, por lo que no hay evidencia pública de uso en producción ni de validación externa.
-- Licencia no declarada: al no especificarse licencia en la ficha, no se puede asumir permiso para uso comercial ni para redistribución. Es imprescindible contactar con el autor antes de cualquier uso en producción.
-- Idiomas no declarados: no se especifica qué idiomas soporta; dado que el modelo base es multilingüe, el comportamiento real en cada idioma no está documentado ni verificado.
-- Longitud de contexto no documentada: se desconoce cuántos tokens admite por documento, lo que limita el diseño de pipelines con textos largos.
-- Riesgo de alucinación y de sesgo en las etiquetas: al ser un modelo generativo adaptado a clasificación, puede asignar categorías no presentes en el conjunto de `options` o verse influido por sesgos del corpus de ajuste; no se han publicado evaluaciones de sesgo ni de fiabilidad entre anotadores.
-- Ausencia de benchmarks: no hay métricas publicadas de exactitud, F1, acuerdo con anotadores humanos ni comparaciones con alternativas, lo que impide estimar su calidad frente a soluciones ya establecidas.
-- Riesgo de ejecución de código: el repositorio exige `trust_remote_code=True`; el código personalizado incluido debe auditarse antes de su ejecución.
-- Encaje limitado fuera de su dominio: es un modelo especializado en clasificación para ciencias sociales, no un asistente conversacional ni un generador de código.
+- Modelo en estado preview: la model card advierte que las interfaces pueden cambiar entre versiones tempranas, lo que supone un riesgo para producción.
+- Licencia no especificada: no se puede confirmar si el uso comercial está permitido.
+- Idiomas no documentados: no hay garantía de comportamiento multilingüe más allá de lo que herede de Qwen3-0.6B.
+- Sin datos de benchmarks: no es posible evaluar su calidad frente a alternativas.
+- Riesgo de alucinación inherente a los modelos de lenguaje, aunque la tarea de clasificación con opciones cerradas lo mitiga parcialmente.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor del modelo.
+- Sesgos: no documentados; al derivar de un modelo preentrenado, puede heredar sesgos de su corpus.
+- Longitud de contexto no especificada, lo que dificulta planificar su uso con documentos largos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/social-jev/social-jev-0.6B-preview
-- Sitio web del proyecto SocialJev: https://social-jev.github.io/
-- Paquete de Python: `pip install social-jev`
+- Hugging Face: https://huggingface.co/social-jev/social-jev-0.6B-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Papers, blogs, repositorios o demos adicionales: no se han encontrado enlaces relevantes en la búsqueda web realizada (los resultados devueltos no guardan relación con este modelo).
+- Sitio web: https://social-jev.github.io/
+- Documentación: https://social-jev.github.io/docs/
+- Guía de inferencia: https://social-jev.github.io/docs/v0.1.0a4/inference/
+- Referencia de API: https://social-jev.github.io/docs/v0.1.0a4/api/
+- GitHub: https://github.com/social-jev/social-jev
+- Blog de TypeSafe sobre Jev: https://typesafe.ai/blog/introducing-system-one-models-and-jev

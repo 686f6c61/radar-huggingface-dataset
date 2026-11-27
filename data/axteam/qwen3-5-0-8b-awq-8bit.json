@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "axteam/Qwen3.5-0.8B-AWQ-8bit · Hugging Face",
-      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-8bit",
-      "snippet": "Image-Text-to-Text model with 0.9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
-      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
-    },
-    {
-      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
-      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3",
-      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
-    },
-    {
-      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
-      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
-      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
-    }
-  ]
+  "sources": []
 }

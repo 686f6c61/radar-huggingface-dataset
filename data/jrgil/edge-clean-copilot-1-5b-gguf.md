@@ -2,120 +2,113 @@
 
 ## Resumen
 
-Edge Clean Copilot es un modelo de lenguaje pequeño (SLM) especializado en refactorización de código TypeScript según los principios de Clean Architecture y arquitectura hexagonal. Ha sido desarrollado por el usuario jrgil (Jrgil20) mediante fine-tuning con LoRA sobre `Qwen/Qwen2.5-Coder-1.5B-Instruct`, y se distribuye cuantizado a 4 bits en formato GGUF (Q4_K_M), con un tamaño en disco de unos 941 MB.
+Edge Clean Copilot es un modelo de lenguaje especializado en refactorización de código TypeScript hacia Clean Architecture y arquitectura hexagonal, distribuido exclusivamente en formato GGUF cuantizado a 4 bits (Q4_K_M). Lo desarrolla el autor independiente Jrgil (Jrgil20) como un ajuste fino LoRA sobre Qwen2.5-Coder-1.5B-Instruct, y está pensado para ejecutarse en hardware de desarrollador (CPU de portátil, sin GPU) con operación completamente offline y sin telemetría.
 
-Su propósito es muy concreto: servir como asistente de refactorización privado y completamente offline ("air-gapped"), capaz de ejecutarse en hardware de desarrollo modesto (portátil con CPU) sin telemetría, sin envío de código a la nube y sin costes recurrentes de API. El modelo se centra en artefactos TypeScript pequeños y acotados (entidades, servicios o clases individuales), eliminando importaciones prohibidas en la capa de dominio, generando interfaces de puertos con inyección de dependencias por constructor y erradicando los tipos `any` explícitos.
+El problema que aborda es concreto: eliminar dependencias de frameworks e infraestructura (`express`, `mongoose`, `axios`, `typeorm`, `prisma`) de la capa de dominio, generar puertos y adaptadores con inyección de dependencias por constructor, y erradicar el uso de `any` explícito en TypeScript. El modelo no pretende competir con modelos frontera: su propia model card reporta una puntuación de 74,8 sobre 100 en su benchmark interno de Clean Architecture Score (CAS), frente a 90,5 de una referencia en la nube, y lo posiciona explícitamente como asistente de refactorización para artefactos pequeños y acotados.
 
-Su relevancia está en el nicho de la IA en el borde (edge AI) para desarrollo de software: según la benchmark propia del autor (Clean Architecture Score, CAS), obtiene 76,3/100 (grado B) frente a 48,2/100 del modelo base, aunque sin alcanzar la calidad de un modelo frontera en la nube (90,5/100). Es una herramienta de asistencia que requiere revisión humana de cada salida.
+Es relevante ahora por dos motivos. Primero, por el nicho: los modelos de código generalistas rara vez están alineados con principios arquitectónicos concretos, y este lo está mediante un dataset curado de 138 pares de instrucción en formato ChatML. Segundo, por el despliegue: con 1.543.714.304 parámetros y un peso de 941 MB en disco, cabe en cualquier portátil y permite políticas de "cero filtrado de código" en entornos con requisitos estrictos de confidencialidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (heredado de Qwen2.5-Coder), fine-tuned con LoRA |
-| Parametros totales | 1.543.714.304 (~1,54 B) |
-| Parametros activos | no disponible (no es MoE; todos los parametros activos) |
-| Longitud de contexto | 2048 tokens (según ejemplos de despliegue de la model card); maxima nativa del modelo base no especificada |
-| Tipos de cuantizacion | Q4_K_M (GGUF, 4 bits) |
-| Idiomas soportados | Ingles y espanol (en, es); optimizado para codigo TypeScript/JavaScript |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-1.5B-Instruct), ajuste fino LoRA |
+| Parametros totales | 1.543.714.304 (1,5B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens (configuracion de referencia en llama.cpp/Ollama segun la model card); contexto nativo del modelo base no especificado en la informacion disponible |
+| Tipos de cuantizacion | Q4_K_M (unico fichero publicado) |
+| Idiomas soportados | Ingles y espanol |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo `clean-copilot-1.5b-q4_k_m.gguf`, ~941 MB) |
+| Formato de pesos | GGUF (fichero `clean-copilot-1.5b-q4_k_m.gguf`, 941 MB); no se publican safetensors del adaptador |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-Coder-1.5B-Instruct, un transformer decoder de 1.540 millones de parametros orientado a codigo. Sobre esta base se aplico Parameter-Efficient Fine-Tuning (PEFT) con LoRA, ajustando los modulos de atencion y las proyecciones MLP: `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. Los hiperparametros publicados son: rank (r) 16, alpha 32, dropout 0,05, learning rate 2e-4, optimizador AdamW en bfloat16, 3 epocas con batch size 2 y acumulacion de gradientes 4. El entrenamiento se realizo en hardware NVIDIA DGX Spark (Grace Blackwell GB10 / Ampere A100).
+El modelo es un transformer decoder-only de 1,5B parámetros heredado de Qwen2.5-Coder-1.5B-Instruct, sobre el que se aplicó un ajuste fino con LoRA (PyTorch + `peft`). Los módulos objetivo del adaptador son `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, es decir, atención y MLP completos. Los hiperparámetros declarados son r=16, alpha=32, dropout 0,05, learning rate 2e-4, optimizador AdamW en `bfloat16`, 3 épocas con batch size 2 y acumulación de gradiente 4. El entrenamiento se realizó sobre NVIDIA DGX Spark (Grace Blackwell GB10 / Ampere A100 según la model card).
 
-El dataset de entrenamiento consta de 138 pares de instruccion en formato ChatML, curados manualmente, que refuerzan tres comportamientos: estricto aislamiento de los limites del dominio, Value Objects con validacion de invariantes y contratos de puertos y adaptadores. Tras el entrenamiento, el modelo se cuantizo a 4 bits (Q4_K_M) para inferencia con llama.cpp. No se menciona el uso de RLHF ni DPO; el ajuste es puramente supervisado sobre instrucciones.
+El dataset consiste en 138 pares de instrucción curados en formato ChatML, orientados a imponer fronteras de dominio estrictas, objetos de valor con validación de invariantes, puertos y adaptadores, e inyección de dependencias. No se documenta el número de tokens de entrenamiento, la composición detallada del corpus ni si hubo fases de RLHF o DPO; tampoco se mencionan innovaciones de decodificación (decodificación especulativa, atención lineal) más allá de la cuantización Q4_K_M. La evaluación se realizó con un analizador AST del compilador de TypeScript sobre un conjunto de 30 casos legacy, con una ejecución reproducible registrada en `evaluation/reports/spark-20261105T143540Z`.
 
 ## Capacidades
 
-- Refactorizacion automatica de codigo TypeScript/JavaScript hacia Clean Architecture y arquitectura hexagonal.
-- Eliminacion de importaciones de frameworks y bases de datos en la capa de dominio (`express`, `mongoose`, `axios`, `typeorm`, `prisma`), segun el autor, en el 100 % de los casos de su benchmark.
-- Generacion de interfaces abstractas de puertos (`IRepository`, `IPort`, `IGateway`) con inyeccion de dependencias por constructor.
-- Eliminacion completa de tipos `any` explicitos, sustituyendolos por tipado determinista.
-- Aplicacion del patron Result y validacion de invariantes en Value Objects (aunque con puntuacion modesta en esta dimension: 11,7/25).
-- Generacion de texto conversacional en ingles y espanol (pipeline text-generation).
-- Operacion 100 % offline, sin conexion a internet ni telemetria.
-- No hay mencion de soporte nativo para tool calling, function calling, agentes, vision ni audio.
+- Refactorización de TypeScript/JavaScript legacy hacia Clean Architecture y arquitectura hexagonal.
+- Aislamiento de la capa de dominio: elimina el 100% de imports prohibidos de frameworks y bases de datos (`express`, `mongoose`, `axios`, `typeorm`, `prisma`) según la métrica del autor.
+- Generación de puertos y adaptadores: produce interfaces abstractas (`IRepository`, `IPort`, `IGateway`) con inyección de dependencias por constructor.
+- Rigor de tipos en TypeScript: eliminación de `any` explícito y tipado determinista.
+- Patrón Result e invariantes de dominio (la dimensión con peor puntuación del benchmark, 2,7 sobre 25, lo que indica una capacidad limitada en la práctica).
+- Generación de texto conversacional multi-turno en formato ChatML (roles system/user/assistant).
+- Capacidades multilingües limitadas a inglés y español.
+- No se documentan tool calling, function calling, uso como agente, modo thinking, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Refactorizacion offline de codigo heredado: dado un servicio TypeScript acoplado a `mongoose` o `express`, el modelo genera una version con entidades de dominio aisladas, puertos e inyeccion de dependencias, sin que el codigo salga de la maquina del desarrollador.
-- Entornos con restricciones de confidencialidad: empresas con codigo propietario que no puede enviarse a APIs en la nube pueden ejecutar el modelo en un portátil o servidor interno (air-gapped), con coste de API de 0 euros.
-- Revision previa a pull requests: uso como asistente local que propone una estructura hexagonal de una clase o servicio antes de la revision humana, acelerando la adopcion de Clean Architecture en equipos.
-- Formacion y onboarding: generacion de ejemplos comparativos "antes/despues" que ilustran como desacoplar dominio de infraestructura, util para enseñar arquitectura hexagonal.
-- Migracion gradual de monolitos: refactorizacion pieza a pieza de clases individuales (entidades, servicios) hacia puertos y adaptadores, respetando el tamano acotado de entrada del modelo.
-- Endurecimiento de tipado: eliminacion de tipos `any` en bases de codigo TypeScript heredadas, con tipado estricto y determinista (18,7/20 en la dimension de rigor de tipos del benchmark del autor).
-- Integracion en pipelines locales de CI: ejecucion mediante `llama-server` con API compatible con OpenAI en un runner privado, para sugerencias automaticas de refactorizacion en el flujo de desarrollo.
+- Refactorización local de entidades y servicios TypeScript: el desarrollador pega una clase con imports de `express` o `mongoose` y el modelo devuelve una versión con dominio aislado, puertos definidos e inyección de dependencias. Adecuado porque el modelo está entrenado específicamente para ese patrón y cabe en RAM (~1,5 GB).
+- Cumplimiento de políticas de confidencialidad: en entornos con código propietario que no puede salir de la máquina, el modelo se ejecuta en CPU con `llama-server` en `127.0.0.1` sin telemetría ni llamadas externas.
+- Pre-revisión en pipelines de CI/CD: integración de `llama-cpp-python` como paso de linting arquitectónico que marca imports de infraestructura en la capa de dominio antes de fusionar un pull request. Limitado por el throughput (~12 tok/s en CPU), por lo que conviene restringirlo a artefactos pequeños.
+- Formación y mentoría interna: generar ejemplos de refactorización hexagonal a partir de código legacy del propio equipo, con revisión humana obligatoria dado el riesgo de alucinación.
+- Prototipado en portátiles sin GPU: con 941 MB en disco y ~1,5 GB de RAM, es viable en equipos de gama media-baja mediante Ollama o llama.cpp, sin dependencia de servicios en la nube ni coste por token.
+- Estandarización de plantillas de arquitectura: uso como generador de esqueletos de puertos, adaptadores y objetos de valor para nuevos módulos, siempre con validación posterior por el compilador de TypeScript.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor: Clean Architecture Score (CAS, 0-100) sobre una suite propia de 30 casos de refactorizacion de codigo heredado (`legacy_benchmark_suite.jsonl`), evaluada con un analizador AST automatizado. No son benchmarks estandarizados (MMLU, HumanEval, etc.).
+Resultados del benchmark interno del autor (30 casos legacy, analizador AST de TypeScript, cuantización Q4_K_M idéntica en todas las ejecuciones):
 
-| Dimension arquitectonica | Maximo | Modelo base (Qwen 1.5B) | Edge Clean Copilot (GGUF) | Frontera en la nube (Gemini 3.8 Flash) |
+| Dimension arquitectonica | Maximo | Base Qwen 1.5B Q4_K_M | Edge Clean Copilot Q4_K_M | Referencia frontera en nube |
 |---|---:|---:|---:|---:|
-| Aislamiento de limites del dominio | 30 | 14,5 | 30,0 | 29,0 |
-| Patron invariantes y Result | 25 | 8,2 | 11,7 | 22,5 |
-| Desacoplamiento puertos y adaptadores | 25 | 10,5 | 16,0 | 23,0 |
-| Rigor de tipos TypeScript (cero `any`) | 20 | 15,0 | 18,7 | 16,0 |
-| **Total CAS** | **100** | **48,2 (grado F)** | **76,3 (grado B)** | **90,5 (grado A)** |
-
-Nota del autor: una re-ejecucion el 2026-10-29 midio 73,8 (invariante 2,0), por lo que existe varianza entre ejecuciones.
+| Aislamiento de frontera de dominio | 30 | 24,0 | 30,0 | 29,0 |
+| Patron Invariant & Result | 25 | 0,3 | 2,7 | 22,5 |
+| Desacoplamiento puertos/adaptadores | 25 | 15,8 | 22,5 | 23,0 |
+| Rigor de tipos TypeScript (cero `any`) | 20 | 17,8 | 19,7 | 16,0 |
+| **CAS compuesto** | **100** | **58,0** | **74,8 (grado B)** | **90,5** |
 
 Metricas operativas declaradas:
 
-| Metrica | Modelo base (1.5B F16) | Edge Clean Copilot (Q4_K_M) | API en la nube |
+| Metrica | Base 1.5B F16 | Edge Clean Copilot Q4_K_M | API frontera en nube |
 |---|---:|---:|---:|
-| Velocidad de inferencia | ~52 tok/s (sin verificar) | ~12 tok/s medidos (solo CPU, Intel i5-10310U) | ~85 tok/s (sin verificar) |
-| Huella en RAM | ~3,1 GB | ~1,5 GB | 0 GB |
+| Velocidad de inferencia | ~52,0 tok/s (no verificado) | ~12 tok/s medido en CPU (Intel i5-10310U) | ~85,0 tok/s (no verificado) |
+| Huella de RAM | ~3,1 GB | ~1,5 GB | 0 GB (nube) |
 | Tamano en disco | ~3,10 GB | 941 MB | 0 MB |
-| Operacion offline | Si | 100 % | No |
-| Coste de API | 0,00 $ | 0,00 $ | Facturacion por uso |
+| Operacion offline | Si | Si (air-gapped) | No |
+| Coste de API | 0,00 USD | 0,00 USD | Facturacion por uso |
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras de la columna "referencia frontera" corresponden a una referencia en la nube no identificada por el autor.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: ~1,5 GB de RAM; el modelo esta diseñado para ejecutarse solo con CPU, sin GPU.
-- GPU recomendadas: no requiere GPU; para entrenamiento el autor empleo NVIDIA DGX Spark (Grace Blackwell GB10 / Ampere A100).
-- Cabe en GPU de consumo: si, con holgura; cualquier GPU con 4 GB de VRAM o mas (por ejemplo RTX 3060 o superior) podria acelerarlo, aunque el caso de uso principal es CPU.
-- Hardware de referencia del autor: portatil con Intel Core i5-10310U y 15 GB de RAM, obteniendo ~12 tok/s.
-- Opciones de despliegue:
-  - llama.cpp / `llama-server` (servidor local con API compatible con OpenAI, contexto 2048).
-  - Ollama (mediante `Modelfile` con plantilla ChatML, temperatura 0,1 recomendada).
-  - llama-cpp-python (integracion directa en Python).
-- Latencia y throughput: ~12 tokens/s en CPU de gama media; entradas largas seran lentas. No hay datos de latencia en GPU.
+- VRAM/RAM para inferencia: ~1,5 GB de RAM con Q4_K_M; no requiere GPU.
+- GPU recomendadas: no aplica para el caso de uso previsto; la model card cita una ejecucion de evaluacion en NVIDIA DGX Spark (Grace Blackwell GB10 / Ampere A100).
+- GPU de consumo: cabe holgadamente en cualquier GPU consumer (RTX 3060 12 GB, RTX 4090, etc.), aunque el modelo esta optimizado para CPU.
+- CPU de referencia medida: Intel Core i5-10310U con 15 GB de RAM, ~12 tok/s.
+- Opciones de despliegue: `llama-server` (servidor compatible con la API de OpenAI en el puerto 8085), `llama.cpp`, Ollama (mediante `Modelfile` con plantilla ChatML), `llama-cpp-python`.
+- Contexto de ejecucion recomendado: `-c 2048` y `temperature 0.1` con stop tokens `<|im_end|>` y `<|endoftext|>`.
+- Latencia y throughput: ~12 tok/s en CPU segun el autor; el modelo se declara explicitamente "no optimizado para velocidad" y las entradas largas resultan lentas.
 
 ## Comparativa con modelos similares
 
-| Caracteristica | Edge Clean Copilot 1.5B (GGUF) | Qwen2.5-Coder-1.5B-Instruct (base) | Modelo frontera en la nube (Gemini 3.8 Flash, segun el autor) |
-|---|---|---|---|
-| Parametros | ~1,54 B (Q4_K_M) | ~1,54 B (F16) | no disponible |
-| Contexto | 2048 (en despliegue) | no disponible en la ficha | no disponible |
-| CAS (benchmark del autor) | 76,3 (grado B) | 48,2 (grado F) | 90,5 (grado A) |
-| Velocidad | ~12 tok/s (CPU) | ~52 tok/s (sin verificar) | ~85 tok/s (sin verificar) |
-| RAM / disco | ~1,5 GB / 941 MB | ~3,1 GB / ~3,10 GB | 0 GB (nube) |
-| Offline | Si (air-gapped) | Si | No |
-| Licencia | Apache 2.0 | Apache 2.0 (modelo base) | no disponible |
-| Especializacion | Refactorizacion Clean/Hexagonal en TypeScript | Codigo general | no disponible |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+|---|---:|---|---|---|---|
+| Edge Clean Copilot 1.5B | 1,5B | 2048 (config. de referencia) | Refactorizacion Clean/Hexagonal en TypeScript | Apache 2.0 | GGUF Q4_K_M |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | No especificado en la informacion disponible | Codigo generalista e instrucciones | Apache 2.0 | safetensors, GGUF (multples) |
+| Referencia frontera en nube (no identificada) | no disponible | no disponible | Codigo generalista | no disponible | API |
 
-Como alternativa de tamano similar se podrian considerar otros modelos de codigo de ~1-3 B parametrizados con GGUF (por ejemplo variantes de Qwen2.5-Coder o DeepSeek-Coder cuantizadas), pero no hay datos comparativos publicados en la informacion disponible.
+Frente al modelo base, el ajuste aporta +16,8 puntos de CAS (58,0 a 74,8), con la mayor ganancia en aislamiento de dominio (24,0 a 30,0) y desacoplamiento de puertos (15,8 a 22,5), y una mejora marginal en rigor de tipos (17,8 a 19,7). Frente a la referencia frontera, la brecha de 15,7 puntos se concentra casi por completo en el patron Invariant & Result (2,7 frente a 22,5). No se dispone de comparaciones con otros modelos especializados en arquitectura de software en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No sustituye a un modelo frontera: 76,3 frente a 90,5 en el CAS del autor; el propio autor recomienda revisar todas las salidas antes de usarlas.
-- Varianza entre ejecuciones: una re-ejecucion del benchmark midio 73,8 en lugar de 76,3, con caida notable en la dimension de invariantes (2,0/25 en esa corrida); el patron Result y las invariantes son su punto debil (11,7/25).
-- Limitado a artefactos TypeScript pequenos y acotados (una entidad, servicio o clase); no esta pensado para refactorizar proyectos completos.
-- Ventana de contexto de 2048 tokens en los ejemplos de despliegue: entradas largas seran lentas y pueden truncarse.
-- Velocidad baja en CPU (~12 tok/s); no optimizado para latencia.
-- Sesgos: no documentados por el autor; al derivar de Qwen2.5-Coder, heredaria los sesgos generales de modelos de codigo entrenados a gran escala (no disponible detalle especifico).
-- Riesgo de alucinacion: no cuantificado; al generar interfaces y tipos, puede producir codigo que compile pero no refleje fielmente la semantica del original. Revision humana obligatoria.
-- Idiomas: declarado para ingles y espanol; el dominio de entrenamiento (138 pares ChatML) es muy reducido, por lo que el comportamiento fuera de su tarea objetivo es impredecible.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar la licencia del modelo base (Qwen2.5-Coder, tambien Apache 2.0) y los terminos de cualquier codigo refactorizado.
-- El benchmark CAS es una metrica propia del autor, no un estandar de la industria; los resultados no son directamente comparables con otros modelos fuera de su suite.
+- Calidad muy por debajo de modelos frontera: CAS de 74,8 frente a 90,5; la model card exige revisar cada salida antes de usarla.
+- Punto debil critico: el patron Invariant & Result obtiene 2,7 sobre 25, por lo que no debe confiarse en el modelo para generar validacion de invariantes o tipos Result correctos.
+- Riesgo de alucinacion en APIs, nombres de tipos y firmas de interfaces generadas; requiere compilacion y tests posteriores.
+- Dataset de entrenamiento muy pequeno (138 pares de instruccion), lo que limita la generalizacion a patrones no vistos y aumenta el sobreajuste al estilo del corpus.
+- Velocidad reducida (~12 tok/s en CPU) y contexto de referencia de solo 2048 tokens; las entradas largas son lentas y pueden truncarse.
+- Solo ingles y espanol; sin soporte documentado de otros idiomas, tool calling, agentes o vision.
+- Un unico fichero GGUF Q4_K_M publicado: no hay variantes F16, Q8 ni adaptadores safetensors para reajuste o evaluacion en precision completa.
+- Licencia Apache 2.0 permisiva para uso comercial, pero el modelo base Qwen2.5-Coder-1.5B-Instruct debe verificarse por separado; el autor no documenta obligaciones adicionales.
+- Las cifras de la columna "referencia frontera" y la velocidad del modelo base estan marcadas como no verificadas por el propio autor; tratalas con cautela.
+- Proyecto de autor individual con 211 descargas y 1 like en el momento de la consulta: sin garantias de mantenimiento ni soporte.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jrgil/edge-clean-copilot-1.5b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
-- Paper, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python
+- PEFT (Hugging Face): https://github.com/huggingface/peft

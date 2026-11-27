@@ -5,7 +5,7 @@
   "author": "Has1tas",
   "url": "https://huggingface.co/Has1tas/yolo26s-aerial-uav",
   "created_at": "2026-10-30T16:57:40.000Z",
-  "updated_at": "2026-10-30T18:35:54.000Z",
+  "updated_at": "2026-11-26T20:24:30.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -21,7 +21,7 @@
     "license:agpl-3.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 58,
   "trending_score": 0,
   "parameters": null,

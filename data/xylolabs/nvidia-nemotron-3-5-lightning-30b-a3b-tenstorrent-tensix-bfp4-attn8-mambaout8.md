@@ -2,88 +2,95 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4-Attn8-MambaOut8 es una exportación cuantizada del modelo `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` realizada por Xylolabs, pensada específicamente para ejecutarse sobre NPUs Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo base es un transformer híbrido de tipo `nemotron_h` con 32.913.266.240 parámetros totales y arquitectura Mixture-of-Experts (MoE) con aproximadamente 3.000 millones de parámetros activos por token, según indica el sufijo A3B del nombre.
+Este repositorio contiene una cuantización del modelo NVIDIA Nemotron 3.5 Lightning 30B-A3B, publicada por Xylolabs y optimizada específicamente para aceleradores Tenstorrent Tensix (arquitecturas Wormhole y Blackhole). El modelo base es un transformer híbrido de tipo `nemotron_h` con 32.913.266.240 parámetros totales y una arquitectura Mixture of Experts (el sufijo A3B indica aproximadamente 3.000 millones de parámetros activos por token), desarrollado originalmente por NVIDIA. El checkpoint aquí distribuido no es un modelo nuevo, sino una conversión de pesos a formatos de bloque de coma flotante (BFP4 y BFP8) que el hardware Tensix puede ejecutar de forma nativa.
 
-La contribución de esta exportación no es el modelo en sí, sino el pipeline de cuantización: las capas lineales se han convertido a formatos de bloque de coma flotante propietarios de TT-NN, `bfloat4_b` (BFP4, 4,5 bits por peso) y `bfloat8_b` (BFP8, 8,5 bits por peso), de modo que el hardware Tensix puede empaquetarlas directamente sin recodificar. El resultado ocupa 18,98 GB de memoria de dispositivo para los pesos del modelo de lenguaje, con una media de 4,81 bits por peso, lo que permite servir un modelo de 33.000 millones de parámetros en una sola NPU Tensix.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 30B en hardware de inferencia no convencional (NPUs de Tenstorrent) con un tamaño empaquetado de 18,985 GB, frente a los 65,8 GB del repositorio completo en BF16. La cuantización aplica `bfloat4_b` (GPTQ con búsqueda de exponente por bloque) a las proyecciones de entrada de Mamba-2 y a las proyecciones de expertos enrutados y compartidos, y `bfloat8_b` (redondeo al más cercano) a las proyecciones de salida de Mamba-2 y a las proyecciones de atención. El modelo conserva capacidades conversacionales y multilingües (inglés, español, francés, alemán, italiano y japonés) bajo licencia OpenMDW-1.1.
 
-Es relevante ahora porque demuestra una vía práctica de despliegue de modelos MoE grandes fuera del ecosistema GPU de NVIDIA, con un esquema de cuantización mixta que preserva las proyecciones críticas de atención en BFP8 mientras comprime agresivamente los expertos enrutados a BFP4. La licencia OpenMDW-1.1 del modelo base se mantiene en esta exportación.
+El checkpoint está pensado para despliegue en Tensix, aunque también puede cargarse con Transformers 5.23.0 mediante la implementación `NemotronHForCausalLM`, lo que facilita su validación en GPU antes de portarlo a la NPU. La ficha siguiente detalla sus especificaciones, arquitectura, capacidades, rendimiento medido y limitaciones conocidas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido `nemotron_h` con bloques Mamba-2 y atención (6 capas de atención, 23 capas Mamba-2), Mixture-of-Experts enrutado |
-| Parámetros totales | 32.913.266.240 (32,9 B) |
-| Parámetros activos | aproximadamente 3 B (según el sufijo A3B del nombre; no confirmado en la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | BFP4 (`ttnn.bfloat4_b`, 4,5 bits/peso) y BFP8 (`ttnn.bfloat8_b`, 8,5 bits/peso); media de 4,81 bits/peso; GPTQ con búsqueda de exponente por bloque para BFP4, round-to-nearest para BFP8 |
-| Idiomas soportados | en, es, fr, de, it, ja |
+| Arquitectura | Transformer híbrido `nemotron_h` con capas Mamba-2 y capas de atención (MoE en las capas Mamba-2) |
+| Parametros totales | 32.913.266.240 |
+| Parametros activos | Aproximadamente 3.000 millones por token (denominación A3B) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantizacion | BFP4 (`bfloat4_b`) para proyecciones de entrada Mamba-2 y expertos; BFP8 (`bfloat8_b`) para salida Mamba-2 y atención; BF16 para LM head, embeddings, norms y tensores `mtp`; float32 para `e_score_correction_bias` |
+| Idiomas soportados | Inglés, español, francés, alemán, italiano, japonés |
 | Licencia | OpenMDW-1.1 |
-| Formato de pesos | safetensors (65,8 GB de repositorio); valores almacenados como bf16 sobre la rejilla BFP4/BFP8 para empaquetado directo en TT-NN |
+| Formato de pesos | safetensors (empaquetado Tensix, 18,985 GB); compatible con `transformers` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `nemotron_h` es un transformer híbrido que combina capas de atención con capas Mamba-2 (modelo de espacio de estados). Según la tabla de formatos de la model card, la red tiene 6 capas con proyecciones de atención q, k, v y o, y 23 capas con proyecciones Mamba-2 de entrada (`in_proj`) y salida (`out_proj`), además de expertos enrutados y un experto compartido con proyecciones up y down en cada una de esas 23 capas. La presencia de un sesgo de corrección de puntuación de enrutamiento (`e_score_correction_bias`) en float32, tanto en el backbone como en el módulo `mtp` (multi-token prediction), confirma un esquema MoE con enrutamiento por expertos y un cabezal auxiliar de predicción multi-token.
+El modelo base es un transformer híbrido que combina capas de atención con capas Mamba-2. Según la información del repositorio, la red contiene 6 capas con proyecciones de atención (q, k, v, o) y 23 capas con bloques Mamba-2, cuyas proyecciones de entrada y salida se cuantizan de forma diferenciada. Las capas Mamba-2 incorporan un mecanismo Mixture of Experts con expertos enrutados y un experto compartido, cuyas proyecciones `up` y `down` se almacenan en BFP4. Esta combinación de atención y estado recurrente lineal (Mamba-2) busca reducir el coste computacional en secuencias largas manteniendo la calidad de un transformer denso de tamaño comparable.
 
-Sobre el entrenamiento del modelo base no se proporciona información en la documentación disponible: no se detallan el número de tokens, la composición del corpus ni si hubo etapas de RLHF o DPO. Lo que sí está documentado es el proceso de cuantización de esta exportación: las matrices BFP4 se cuantizaron con GPTQ y una búsqueda de exponente por bloque, calibradas con 65.536 tokens de WikiText-2 y de Wikipedia en coreano; las matrices BFP8 se cuantizaron con round-to-nearest. Los expertos enrutados comparten una única matriz Hessiana por capa para las proyecciones up, mientras que cada experto calcula la suya para la proyección down, recurriendo a round-to-nearest cuando dispone de pocos tokens de calibración. Solo se cuantizó y evaluó el modelo de lenguaje; el módulo `mtp` se mantiene en bf16 y float32 sin cambios.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La cuantización aquí publicada no reentrena el modelo: aplica GPTQ con búsqueda de exponente por bloque sobre los tensores BFP4 y redondeo al más cercano sobre los BFP8, manteniendo en BF16 el LM head, los embeddings, las normas y los tensores del módulo `mtp` (multi-token prediction). El proceso de empaquetado y verificación está implementado en `tools/pack_tensix.py` y `tools/verify_grid.py`, distribuidos sin cambios en el repositorio. Todos los 6.004 matrices cuantizadas superaron la comprobación de rejilla, y la comprobación de empaquetado TT-NN sobre `ttsim` cubrió las capas 0 y 1 (260 matrices) con coincidencia exacta de valores.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat (`apply_chat_template`) y soporte de conversaciones multi-turno.
-- Razonamiento y generación de código: el modelo base es un modelo de lenguaje generalista de 32,9 B de parámetros; no se documentan evaluaciones específicas de código en la información disponible.
-- Capacidades multilingües declaradas para inglés, español, francés, alemán, italiano y japonés.
-- Predicción multi-token mediante el módulo `mtp` incluido en el checkpoint, orientado a decodificación especulativa.
-- Ejecución nativa en NPUs Tensix (Wormhole, Blackhole) a través de TT-NN, con pesos preempaquetados en BFP4/BFP8.
-- Soporte de tool calling y de agentes multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con plantilla de chat propia del modelo base.
+- Razonamiento y respuesta a preguntas en seis idiomas: inglés, español, francés, alemán, italiano y japonés.
+- Capacidades de código y matemáticas heredadas del modelo base Nemotron 3.5 Lightning (no se detallan métricas específicas en la información disponible).
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente en la información proporcionada.
+- Módulo `mtp` (multi-token prediction) conservado en BF16 y float32, lo que sugiere soporte de decodificación especulativa o predicción de múltiples tokens, aunque no se detalla su uso en inferencia.
+- Ejecución nativa en NPUs Tenstorrent Tensix (Wormhole, Blackhole) mediante los kernels y el runner de `tensix-kernels` y `tensix-runner`.
 
 ## Casos de uso
 
-- Despliegue de inferencia en hardware Tenstorrent: el caso principal de esta exportación es servir un modelo de 32,9 B en una NPU Wormhole o Blackhole con 18,98 GB de pesos en DRAM de dispositivo, evitando la dependencia de GPUs NVIDIA en el centro de datos.
-- Servicio de chat multilingüe: con soporte declarado de seis idiomas (en, es, fr, de, it, ja), puede atender asistencia conversacional en aplicaciones europeas o japonesas usando la plantilla de chat incluida.
-- Evaluación de cuantización extrema en producción: útil para equipos que quieran medir la degradación real de un MoE de 33 B al pasar de BF16 a una media de 4,81 bits por peso, con atención preservada en BFP8 y expertos en BFP4.
-- Decodificación especulativa: el módulo `mtp` en bf16/float32 permite implementar decodificación especulativa sobre el backbone cuantizado para reducir la latencia por token en generación larga.
-- Prototipado de pipelines de cuantización GPTQ para TT-NN: el repositorio `tensix-bfp-gptq` y los scripts `pack_tensix.py` y `verify_grid.py` sirven como referencia para exportar otros modelos al formato BFP4/BFP8 de Tensix.
-- Investigación en eficiencia energética: como alternativa a GPU para servir modelos grandes, permite comparar rendimiento por vatio en NPUs Tensix frente a soluciones equivalentes en A100 o H100.
+- Despliegue en infraestructura Tenstorrent: el checkpoint está empaquetado para ejecutarse en NPUs Wormhole y Blackhole con `ttnn`, lo que permite servir un modelo de 30B en hardware no GPU con 18,985 GB de pesos y kernels validados contra `ttsim`.
+- Validación y comparación de cuantizaciones: al estar disponible también en Transformers, permite medir la degradación de BFP4/BFP8 frente a BF16 y frente a Q4_K_M de llama.cpp (KL media de 0,0503 frente a 0,0346) antes de comprometerse con el despliegue en NPU.
+- Asistentes conversacionales multilingües: el soporte de seis idiomas y la plantilla de chat permiten construir interfaces de atención al cliente en español, francés, alemán, italiano y japonés sobre un único checkpoint.
+- Investigación en arquitecturas híbridas Mamba-2 + atención: al conservar la estructura original y el módulo `mtp`, sirve para estudiar el comportamiento de las capas recurrentes y del enrutamiento de expertos bajo cuantización agresiva.
+- Prototipado en entornos con restricciones de memoria: los 18,985 GB empaquetados reducen la huella frente a los 65,8 GB del repositorio BF16, lo que facilita pruebas en nodos con DRAM limitada.
+- Generación de texto por lotes en pipelines de Transformers: la carga con `AutoModelForCausalLM` y `dtype="bfloat16"` permite integrar el modelo en flujos existentes de Hugging Face antes de migrar a Tensix.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card se interrumpe en la sección de evaluación, por lo que no constan métricas de MMLU, HumanEval, GSM8K ni comparaciones de perplejidad frente al modelo base en BF16.
+| Modelo | Tamano (GB) | KL media a BF16 | Top-1 (%) |
+|---|---:|---:|---:|
+| BF16 (nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) | No disponible | 0 (referencia) | No disponible |
+| Este checkpoint (BFP4/BFP8 Tensix) | 18,985 | 0,0503 | No disponible |
+| llama.cpp Q4_K_M | No disponible | 0,0346 | No disponible |
+
+La información proporcionada solo incluye la comparación de divergencia KL frente a BF16. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria de dispositivo: aproximadamente 18,98 GB solo para los pesos del modelo de lenguaje, más espacio para la caché KV y buffers de ejecución.
-- Hardware objetivo: NPUs Tensix de Tenstorrent, arquitecturas Wormhole y Blackhole, mediante TT-NN (`ttnn.bfloat4_b`, `ttnn.bfloat8_b`).
-- No está pensado para GPUs convencionales: el formato de pesos está empaquetado para la rejilla BFP de Tensix. La carga con Transformers 5.23.0 y `NemotronHForCausalLM` es posible en bf16, pero requiere aproximadamente 66 GB de memoria, lo que exige GPUs de 80 GB (A100, H100) o configuraciones multi-GPU con `device_map="auto"`.
-- Despliegue: TT-NN para Tensix; Transformers 5.23.0 para inspección o ejecución en GPU. `tt-transformers` y `tt-forge` no se han probado con este checkpoint según la model card.
-- Latencia y throughput: no disponible en la información proporcionada.
-- Validación: las 6.004 matrices cuantizadas pasaron la comprobación de rejilla; el empaquetado TT-NN se verificó en `ttsim` sobre las capas 0 y 1 (260 matrices) con coincidencia exacta de valores.
+- VRAM estimada para inferencia: aproximadamente 19 GB en el formato empaquetado Tensix (18,985 GB); en Transformers con `device_map="auto"` y `dtype="bfloat16"` se requiere espacio para los tensores BF16 del LM head, embeddings, normas y `mtp`, además de los pesos cuantizados.
+- GPU recomendadas: no especificadas en la información proporcionada. Para la ruta Transformers se necesita una GPU con al menos 24 GB de VRAM para cargar el checkpoint completo con comodidad; no confirmado por el autor.
+- Cabe en GPU de consumo: probablemente en RTX 4090 (24 GB) para la ruta Transformers, aunque no está confirmado en la documentación; la ruta nativa Tensix requiere NPU Wormhole o Blackhole.
+- Opciones de despliegue: Transformers 5.23.0 con `NemotronHForCausalLM`; `tensix-runner` v0.1.0 con `tensix-kernels` v0.1.0 sobre `ttnn`; no se mencionan vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Hardware objetivo |
-|---|---|---|---|---|---|
-| Este modelo (Xylolabs, Nemotron 3.5 Lightning 30B-A3B Tensix) | 32,9 B totales, ~3 B activos | no disponible | BFP4/BFP8 mixto, 4,81 bits/peso | OpenMDW-1.1 | NPU Tensix (Wormhole, Blackhole) |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 32,9 B totales, ~3 B activos | no disponible | BF16 | OpenMDW-1.1 | GPU (A100, H100) |
-| Alternativas de tamaño similar en formato GGUF/AWQ | no disponible | no disponible | no disponible | no disponible | GPU y CPU |
+| Modelo | Parametros | Contexto | Licencia | Formato / hardware |
+|---|---|---|---|---|
+| Este checkpoint (Xylolabs) | 32,9B totales, ~3B activos | No disponible | OpenMDW-1.1 | BFP4/BFP8 Tensix, 18,985 GB |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 32,9B totales, ~3B activos | No disponible | OpenMDW-1.1 | BF16, repositorio de 65,8 GB |
+| llama.cpp Q4_K_M (referencia de cuantización) | 32,9B totales, ~3B activos | No disponible | OpenMDW-1.1 | Q4_K_M, tamaño no disponible |
 
-La comparación directa con otras exportaciones cuantizadas del mismo modelo base no está documentada en la información disponible. La diferencia principal frente al checkpoint BF16 original es el tamaño en memoria (18,98 GB frente a aproximadamente 66 GB) y el hardware de destino.
+No se dispone de datos de benchmarks de tareas para comparar el rendimiento funcional con alternativas de la misma categoría; la única métrica disponible es la KL media frente a BF16.
 
 ## Limitaciones y advertencias
 
-- Solo se cuantizó y evaluó el modelo de lenguaje; el módulo `mtp` permanece en bf16 y float32, por lo que su comportamiento no está cubierto por la validación de la cuantización.
-- La model card no incluye resultados de evaluación de calidad tras la cuantización, de modo que la degradación frente al BF16 original no está cuantificada públicamente.
-- La decodificación especulativa con `mtp` y la integración con `tt-transformers` y `tt-forge` no se han probado con este checkpoint.
-- El formato de pesos está atado a TT-NN: fuera de Tensix, la carga requiere Transformers 5.23.0 con `NemotronHForCausalLM` y memoria suficiente para bf16.
-- Riesgo de alucinación y sesgos: no se documentan evaluaciones de sesgo, toxicidad o tasas de alucinación en la información disponible; al ser un modelo generalista de 33 B, deben aplicarse las precauciones habituales en producción.
-- Idiomas: aunque se declaran seis idiomas, no se especifica el nivel de competencia por idioma ni el volumen de datos de entrenamiento en cada uno.
-- Licencia OpenMDW-1.1: conviene revisar los términos completos del archivo LICENSE del repositorio antes de un uso comercial; la información disponible no detalla restricciones adicionales.
-- El repositorio tiene 92 descargas y ningún "me gusta" en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
+- La cuantización BFP4/BFP8 introduce una divergencia media de KL de 0,0503 frente a BF16, un 45 % superior a la de llama.cpp Q4_K_M (0,0346); puede degradar tareas sensibles a la precisión numérica.
+- El checkpoint está optimizado para Tensix; fuera de ese hardware, la ruta Transformers requiere cargar pesos cuantizados y puede no reproducir el rendimiento previsto.
+- No se han publicado evaluaciones de sesgo, alucinación o seguridad para esta cuantización concreta.
+- La longitud de contexto no está documentada en la información disponible, lo que impide garantizar ventanas largas en producción.
+- El soporte de tool calling, agentes y razonamiento multi-paso no está confirmado explícitamente.
+- La licencia OpenMDW-1.1 impone condiciones de uso; debe revisarse el texto completo antes de un despliegue comercial.
+- El repositorio tiene 200 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria todavía limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4-Attn8-MambaOut8
+- Hugging Face: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4-Attn8-MambaOut8
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- Repositorio de código `tensix-bfp-gptq`: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Documentación de Tenstorrent: https://docs.tenstorrent.com
+- Repositorio de código: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Release de cuantización: https://github.com/XylolabsInc/tensix-bfp-gptq/releases/tag/v0.1.0
+- Kernels Tensix: https://github.com/XylolabsInc/tensix-kernels/releases/tag/v0.1.0
+- Runner Tensix: https://github.com/XylolabsInc/tensix-runner/releases/tag/v0.1.0
+- Documentación Tenstorrent: https://docs.tenstorrent.com
 - Licencia: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4-Attn8-MambaOut8/blob/main/LICENSE

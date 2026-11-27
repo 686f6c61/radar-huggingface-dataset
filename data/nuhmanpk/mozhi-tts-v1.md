@@ -2,51 +2,49 @@
 
 ## Resumen
 
-Mozhi TTS v1 es un modelo de síntesis de voz (text-to-speech) especializado en malabar (malayalam) y manglish (malabar escrito con alfabeto latino), desarrollado por el usuario nuhmanpk. Se trata de un fine-tuning del modelo ai4bharat/indic-parler-tts, que a su vez deriva de la familia Parler-TTS, una arquitectura de generación de audio basada en transformers condicionada por descripciones textuales del estilo de voz. El modelo resuelve el problema de generar voz expresiva y emocional en una lengua de bajos recursos como el malabar, para la que existen pocos sistemas TTS de calidad.
+Mozhi TTS v1 es un modelo de síntesis de voz (text-to-speech) especializado en malabar (malayalam) y manglish (malabar escrito con alfabeto latino), desarrollado por el usuario nuhmanpk y publicado en Hugging Face bajo licencia CC BY-SA 4.0. Se trata de un ajuste fino (finetune) del modelo Kokoro-82M de hexgrad, una arquitectura TTS ligera y eficiente diseñada para inferencia en tiempo real incluso en CPU. El modelo se distribuye en formato ONNX, lo que facilita su despliegue en entornos sin GPU y su integración en aplicaciones offline.
 
-Con aproximadamente 938 millones de parámetros y un repositorio de 3,8 GB, el modelo se distribuye en formato safetensors y es compatible con la librería transformers mediante el pipeline text-to-speech. Su relevancia actual radica en que aborda una lengua dravídica hablada por decenas de millones de personas con un enfoque en expresividad y emoción, algo poco habitual en modelos TTS multilingües de gran escala, que suelen priorizar idiomas con muchos más recursos.
+El problema que resuelve es la escasez de sistemas TTS de calidad para malabar, un idioma dravídico con más de 35 millones de hablantes y una representación limitada en los ecosistemas de voz open source. Al soportar tanto la escritura nativa malabar como la transliteración latina (manglish), cubre un caso de uso muy común en la diáspora y en aplicaciones de mensajería donde los usuarios escriben malabar con caracteres latinos.
 
-El acceso al modelo está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo. La licencia es CC-BY-SA 4.0, lo que implica obligaciones de atribución y de compartir bajo la misma licencia las obras derivadas.
+El modelo cuenta con aproximadamente 937,8 millones de parámetros según los pesos en safetensors, un tamaño de repositorio de 0,7 GB y acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo. Su relevancia actual radica en que ofrece una alternativa offline, rápida y de bajo coste computacional para aplicaciones de accesibilidad, lectura de contenido y asistentes de voz en malabar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Parler-TTS (transformer autorregresivo de generación de audio condicionado por texto), fine-tuning de ai4bharat/indic-parler-tts |
-| Parametros totales | 937.817.577 |
+| Arquitectura | TTS basada en Kokoro-82M (finetune); pesos en ONNX y safetensors |
+| Parametros totales | 937.817.577 (según safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | malabar (ml); manglish como variante de entrada |
-| Licencia | cc-by-sa-4.0 |
-| Formato de pesos | safetensors |
+| Tipos de cuantizacion | no disponible (distribución principal en ONNX) |
+| Idiomas soportados | malabar (ml) y manglish (malabar transliterado) |
+| Licencia | CC BY-SA 4.0 |
+| Formato de pesos | ONNX y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de ai4bharat/indic-parler-tts, un modelo de la familia Parler-TTS que genera audio mediante un transformer autorregresivo que predice tokens de audio a partir de texto y de una descripción textual del estilo de voz (por ejemplo, tono, velocidad o emoción). El fine-tuning se ha realizado sobre el dataset nuhmanpk/mozhi-malayalam-speech, complementado con ai4bharat/Rasa, según los metadatos del repositorio. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+Mozhi TTS v1 es un ajuste fino del modelo Kokoro-82M, un sistema TTS de arquitectura ligera orientado a síntesis rápida y despliegue en CPU. Kokoro-82M se caracteriza por su bajo coste computacional y su capacidad de generar voz en tiempo real sin necesidad de GPU. El modelo base se ha adaptado al malabar mediante fine-tuning supervisado sobre datos de voz en ese idioma.
 
-La innovación principal es la adaptación de un modelo TTS indic de propósito general a una única lengua dravídica con énfasis en expresividad y emoción, incluyendo la capacidad de procesar manglish (malabar transliterado al alfabeto latino). No se dispone de detalles sobre técnicas de decodificación especulativa, atención lineal u otras optimizaciones de inferencia.
+Los datasets utilizados en el entrenamiento, según las etiquetas del repositorio, son `nuhmanpk/mozhi-malayalam-speech` y `ai4bharat/Rasa`. No se dispone de información detallada sobre el número de tokens, horas de audio, composición exacta del dataset ni sobre si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la propia arquitectura de Kokoro. La información disponible no permite confirmar detalles sobre el proceso de alineación o evaluación del ajuste.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en malabar a partir de texto de entrada.
-- Procesamiento de manglish, es decir, malabar escrito con caracteres latinos.
-- Generación de voz expresiva y emocional (el repositorio lo etiqueta como emotional-tts y expressive).
-- Condicionamiento por descripción textual del estilo de voz, heredado de la arquitectura Parler-TTS.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- Capacidades multilingües limitadas al malabar y manglish; no se indica soporte de otros idiomas.
-- No se documenta soporte de visión ni de audio de entrada (es un modelo exclusivamente de síntesis).
+- Síntesis de voz a partir de texto en malabar (escritura nativa).
+- Soporte de manglish: entrada en alfabeto latino que representa malabar hablado.
+- Inferencia en tiempo real en CPU gracias a la arquitectura ligera heredada de Kokoro-82M.
+- Funcionamiento offline, sin dependencia de servicios en la nube.
+- Distribución en ONNX, lo que permite integración en aplicaciones de escritorio, móviles o embebidas.
+- No se documentan capacidades de clonación de voz, control de emociones, tool calling ni razonamiento multi-paso; es un modelo exclusivamente TTS.
 
 ## Casos de uso
 
-- Audiolibros y narración en malabar: el modelo puede convertir texto literario en voz con control de estilo, adecuado para producir audiolibros con entonación expresiva.
-- Accesibilidad para personas con discapacidad visual: lectura en voz alta de contenido web o documentos en malabar, aprovechando que el modelo está especializado en esa lengua.
-- Asistentes de voz locales: integración en aplicaciones de asistencia por voz para usuarios malabarófonos, con respuestas sintetizadas de forma natural.
-- Localización de contenido multimedia: doblaje o generación de voces en off para vídeos y cursos en malabar, con variedad de estilos emocionales.
-- Sistemas de atención al cliente: síntesis de respuestas habladas en malabar en IVR o chatbots de voz, aunque requeriría integrarse con un LLM para la parte conversacional.
-- Investigación en TTS de bajos recursos: servir como punto de partida para fine-tunings en otras lenguas dravídicas o para estudios sobre expresividad en malabar.
-- Generación de voces para manglish: aplicaciones de mensajería o redes sociales donde el malabar se escribe en alfabeto latino, sin necesidad de transliterar previamente.
+- Lectura de contenido en malabar: convertir artículos, noticias o libros electrónicos a audio para aplicaciones de accesibilidad o consumo en movilidad, aprovechando la inferencia rápida en CPU.
+- Asistentes de voz offline: integrar el modelo en dispositivos sin conexión (Raspberry Pi, portátiles) para dar respuestas habladas en malabar sin enviar datos a la nube.
+- Aplicaciones de mensajería y redes sociales: convertir mensajes escritos en manglish a voz, un formato muy habitual entre hablantes de malabar en la diáspora.
+- Sistemas de navegación y avisos: generar indicaciones de voz en malabar para apps de transporte o conducción, con baja latencia y sin coste de API.
+- Educación y aprendizaje de idiomas: producir audio de pronunciación para materiales didácticos de malabar, incluyendo la transliteración latina como apoyo.
+- Atención al cliente automatizada en malabar: combinar el TTS con un modelo de lenguaje para respuestas habladas en centros de contacto, desplegando el componente de voz en servidores CPU económicos.
+- Accesibilidad para personas con discapacidad visual: leer en voz alta contenido digital en malabar desde aplicaciones de escritorio o móviles sin conexión.
 
 ## Benchmarks y rendimiento
 
@@ -54,34 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 938 millones de parámetros en precisión fp32, el peso ronda los 3,8 GB; en fp16 o bf16, aproximadamente 1,9 GB, más el coste de memoria del decodificador de audio y del vocoder asociado.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16; una RTX 3060, RTX 4060 o superior es suficiente. Para mayor throughput, A100 o H100.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4070, RTX 4090, entre otras).
-- Opciones de despliegue: transformers (pipeline text-to-speech), dado que el repositorio usa la librería transformers. No se documenta soporte explícito de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: al distribuirse en ONNX y estar diseñado para CPU, no requiere VRAM dedicada; en GPU, el modelo de ~938 M de parámetros ocuparía aproximadamente 2 GB en FP32 y en torno a 1 GB en FP16, aunque no se documentan requisitos oficiales.
+- GPU recomendadas: no se especifican; el modelo está optimizado para CPU. Cualquier GPU consumer moderna (RTX 3060 o superior) podría ejecutarlo con holgura, pero no es el escenario previsto.
+- Cabe en GPU consumer: sí, por tamaño, aunque su diseño apunta a ejecución en CPU.
+- Opciones de despliegue: ONNX Runtime para inferencia en CPU; integración con la librería transformers; el formato ONNX permite su uso en aplicaciones embebidas y de escritorio. No se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a TTS).
+- Latencia y throughput: no disponibles en la información proporcionada; las etiquetas indican "fast", "cpu" y "real-time", pero sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Acceso |
+| Modelo | Parametros | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| nuhmanpk/mozhi-tts-v1 | 937,8 M | no disponible | malabar, manglish | cc-by-sa-4.0 | gated |
-| ai4bharat/indic-parler-tts | no disponible | no disponible | lenguas indic | no disponible | no disponible |
-| Parler-TTS (familia base) | no disponible | no disponible | ingles principalmente | no disponible | no disponible |
+| Mozhi TTS v1 | ~938 M | malabar, manglish | CC BY-SA 4.0 | ONNX, safetensors | Finetune de Kokoro-82M; acceso restringido |
+| Kokoro-82M (hexgrad) | 82 M | múltiples (incluye varios idiomas) | Apache 2.0 (según modelo base) | safetensors, ONNX | Modelo base ligero y ampliamente adoptado; no especializado en malabar |
+| ai4bharat/Rasa | no disponible | varios idiomas indios | no disponible | no disponible | Dataset utilizado en el entrenamiento; no es un modelo comparable directamente |
 
-La comparación con alternativas específicas para malabar no está disponible en la información proporcionada.
+No se dispone de información suficiente para comparar rendimiento (benchmarks) con alternativas TTS específicas para malabar. La comparativa se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre un dataset concreto, puede reflejar sesgos de habla, género o registro de ese corpus.
-- Riesgo de alucinación: en TTS, el riesgo se traduce en pronunciaciones incorrectas, prosodia anómala o artefactos de audio en entradas fuera de distribución.
-- Limitaciones de contexto o idioma: el modelo está especializado en malabar y manglish; no se garantiza un comportamiento correcto en otras lenguas.
-- Restricciones de licencia: CC-BY-SA 4.0 exige atribución y que las obras derivadas se distribuyan bajo la misma licencia, lo que puede condicionar su uso comercial.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga, lo que añade un paso previo en cualquier pipeline automatizado.
-- Caveat para producción: no se dispone de datos de benchmarks ni de latencia, por lo que conviene evaluar la calidad de síntesis y el rendimiento antes de desplegarlo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
+- Licencia CC BY-SA 4.0: permite uso comercial, pero obliga a compartir las obras derivadas bajo la misma licencia y a atribuir al autor; revisar implicaciones para productos propietarios.
+- Ámbito lingüístico limitado a malabar y manglish; no se documenta soporte para otros idiomas.
+- No se han publicado benchmarks ni evaluaciones formales de calidad de síntesis (MOS, inteligibilidad), por lo que la calidad real no está cuantificada.
+- Riesgo de pronunciación incorrecta en palabras poco frecuentes, nombres propios o mezclas de código no representadas en el dataset de entrenamiento.
+- Posibles sesgos de voz derivados de los hablantes presentes en los datasets de entrenamiento (edad, género, registro); no se documenta diversidad de voces.
+- No se documentan capacidades de control prosódico, emociones ni clonación de voz.
+- Al ser un finetune de un modelo pequeño, puede presentar artefactos en frases largas o estructuras gramaticales complejas.
+- No se especifican requisitos mínimos de hardware ni latencias oficiales; las estimaciones deben validarse en el entorno de despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nuhmanpk/mozhi-tts-v1
-- Modelo base: https://huggingface.co/ai4bharat/indic-parler-tts
-- Dataset de entrenamiento: https://huggingface.co/datasets/nuhmanpk/mozhi-malayalam-speech
-- Dataset complementario: https://huggingface.co/datasets/ai4bharat/Rasa
+- Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
+- Dataset de voz en malabar: https://huggingface.co/datasets/nuhmanpk/mozhi-malayalam-speech
+- Dataset Rasa de AI4Bharat: https://huggingface.co/datasets/ai4bharat/Rasa

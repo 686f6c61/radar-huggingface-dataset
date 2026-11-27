@@ -2,91 +2,92 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Distill-Minicpm5-1B es un ajuste fino (destilación) publicado por el usuario mondk sobre el modelo base mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS, que a su vez deriva de openbmb/MiniCPM5-1B-Base. El modelo tiene 1.080.632.832 parámetros (aproximadamente 1,08 mil millones) y se distribuye en formato safetensors con licencia MIT. Su objetivo declarado es reproducir a pequeña escala el comportamiento de razonamiento de la familia DeepSeek V4.1, mediante un entrenamiento en tres rondas sobre datasets de cadenas de pensamiento (CoT) generados o filtrados por el autor.
+DeepSeek-V4.1-Distill-Minicpm5-1B es un modelo de lenguaje de 1.080 millones de parámetros publicado por el usuario mondk en Hugging Face. Se trata de un destilado (distill) orientado a razonamiento por pasos y tool calling, construido sobre el modelo base mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS, que a su vez deriva de openbmb/MiniCPM5-1B-Base. El autor lo presenta como un ejercicio de destilación de capacidades de razonamiento tipo DeepSeek V4.1 sobre una arquitectura MiniCPM5 de escala 1B.
 
-El interés del modelo reside en su enfoque de entrenamiento por etapas: primero razonamiento de forma larga, después razonamiento en múltiples bloques y finalmente resumen del razonamiento previo. Este esquema busca que un modelo de 1B pueda mantener trazas de razonamiento estructuradas y resumirlas, algo poco habitual en modelos de este tamaño. Además, incorpora la etiqueta tool-calling, lo que sugiere soporte para invocación de funciones, aunque la model card no documenta el formato exacto de las plantillas ni los resultados de evaluación.
+El modelo se ha entrenado en tres rondas sucesivas: una primera centrada en razonamiento de formato largo (long-form reasoning), una segunda orientada a razonamiento multi-bloque (multi-block reasoning) y una tercera de resumen del razonamiento precedente. Este esquema escalonado busca que el modelo produzca cadenas de pensamiento estructuradas y luego las condense, una pauta habitual en modelos con modo "thinking".
 
-Se trata de un modelo muy reciente (publicado el 20 de noviembre de 2026) con cero descargas y cero likes en el momento de redactar esta ficha, y sin benchmarks publicados. Debe considerarse, por tanto, un artefacto experimental de investigación más que un modelo listo para producción.
+Su relevancia radica en el tamaño: con algo más de mil millones de parámetros y un repositorio de 2,2 GB, es un candidato para despliegue en hardware modesto y para experimentación con flujos agénticos ligeros. La licencia MIT y el formato safetensors facilitan su integración, aunque la información publicada sobre benchmarks y detalles de entrenamiento es muy limitada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia MiniCPM5, según tags `llama` y `minicpm5`); detalles internos no disponibles |
-| Parametros totales | 1.080.632.832 (1,08B) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer (familia MiniCPM5, según tags y modelo base; detalles no disponibles) |
+| Parámetros totales | 1.080.632.832 |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible en la información proporcionada (la model card menciona GGUF de forma incompleta: "Gguf: ...") |
-| Idiomas soportados | Inglés (`en`) |
+| Tipos de cuantización | No disponible (pesos publicados en safetensors; el autor no documenta GGUF ni otras cuantizaciones) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (repo de 2,2 GB); GGUF mencionado pero no publicado |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia MiniCPM5, según los tags del repositorio (`llama`, `minicpm5`). No se dispone de información sobre el número de capas, dimensión oculta, cabezas de atención, tipo de atención (completa, GQA, lineal) ni longitud de contexto nativa. El modelo base es openbmb/MiniCPM5-1B-Base, pasado por un SFT intermedio del propio autor (mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS) antes de la destilación final.
+La información disponible no detalla la arquitectura interna más allá de su pertenencia a la familia MiniCPM5 y del tag "llama" en el repositorio. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni la longitud de contexto nativa. El modelo base declarado es mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS, afinado a su vez sobre openbmb/MiniCPM5-1B-Base.
 
-El entrenamiento se realizó en tres rondas declaradas: (1) razonamiento de forma larga, (2) razonamiento en múltiples bloques y (3) resumen del razonamiento precedente. Los datasets empleados son mondk/Deepseek-v4.1-CoT, mondk/Multi-Think-CoT y mondk/Multi-CoT-Stepwise, todos publicados por el mismo autor y presumiblemente compuestos por trazas de cadena de pensamiento. No se especifica el número de tokens de entrenamiento, la composición exacta de los datasets, ni si se aplicaron técnicas de RLHF, DPO o preferencias. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal.
+El entrenamiento se describe en tres rondas: razonamiento de formato largo, razonamiento multi-bloque y resumen del razonamiento previo. Los conjuntos de datos empleados son mondk/Deepseek-v4.1-CoT, mondk/Multi-Think-CoT y mondk/Multi-CoT-Stepwise, todos publicados por el mismo autor. No se indica el número de tokens de entrenamiento, la composición exacta de los datasets, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés (`pipeline_tag: text-generation`, tag `conversational`).
-- Razonamiento en cadena de pensamiento (CoT) de forma larga, entrenado explícitamente en la primera ronda.
-- Razonamiento multi-bloque y resumen del propio razonamiento (rondas 2 y 3), orientado a trazas estructuradas y stepwise.
-- Tool calling / function calling: el tag `tool-calling` está presente, aunque no se documenta el formato de plantilla ni ejemplos de uso.
-- Capacidad multilingüe: limitada al inglés según el campo `language`.
-- No se declaran capacidades de visión, audio, ni modo "thinking" separado del flujo de texto.
+- Generación de texto conversacional en inglés.
+- Razonamiento por pasos con modo "thinking" activable mediante `enable_thinking=True`, según la configuración recomendada por el autor.
+- Razonamiento multi-bloque y resumen de cadenas de razonamiento previas, fruto de las rondas 2 y 3 de entrenamiento.
+- Tool calling / function calling, indicado explícitamente en los tags del repositorio.
+- Soporte de conversaciones multi-turno (tag "conversational").
+- Capacidades multilingües limitadas al inglés según el campo `language` de la model card.
+- No se documentan capacidades de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Experimentación académica en destilación de razonamiento: el modelo sirve para estudiar si un transformer de 1B puede replicar trazas CoT largas y resumirlas, comparando las tres rondas de entrenamiento sobre los datasets del autor.
-- Prototipado de agentes con tool calling en entornos de bajo cómputo: al ser un modelo de 1,08B, puede ejecutarse en una sola GPU consumer y usarse para validar pipelines de invocación de funciones antes de escalar a modelos mayores.
-- Generación de resúmenes de razonamiento en pipelines de anotación: la tercera ronda de entrenamiento (resumen del razonamiento previo) lo hace adecuado para comprimir trazas CoT largas en explicaciones breves dentro de un sistema de etiquetado.
-- Investigación sobre razonamiento multi-bloque: útil para evaluar cómo un modelo pequeño segmenta y estructura el pensamiento en bloques, con los datasets Multi-Think-CoT y Multi-CoT-Stepwise como referencia.
-- Fine-tuning posterior como base especializada: al tener licencia MIT y pesos safetensors de 2,2 GB, puede servir de punto de partida para ajustes en dominios concretos en inglés con recursos limitados.
-- Docencia y demostraciones de CoT: su tamaño permite desplegarlo en portátiles o entornos con una única GPU para ilustrar el comportamiento de cadenas de pensamiento y su resumen.
+- Asistentes conversacionales ligeros: el modelo puede gestionar diálogos multi-turno en inglés con un coste de inferencia bajo gracias a sus 1.080 millones de parámetros, adecuado para entornos con recursos limitados.
+- Integración en pipelines de tool calling: los tags indican soporte de llamadas a funciones, lo que permite conectarlo a APIs externas, bases de datos o servicios web en flujos de automatización.
+- Experimentación con razonamiento stepwise: útil para investigación sobre cadenas de pensamiento y summarización de razonamiento, ya que el entrenamiento se diseñó específicamente para ello.
+- Prototipado de agentes multi-paso: su modo thinking y su capacidad de razonamiento multi-bloque permiten construir agentes que descomponen tareas en subtareas antes de responder.
+- Educación y demostraciones técnicas: al ser un modelo pequeño con licencia MIT, sirve para enseñar técnicas de destilación y ajuste fino en entornos académicos.
+- Despliegue en edge o en CPU: con 2,2 GB de pesos en safetensors, es viable en máquinas sin GPU dedicada para tareas de generación de texto de baja latencia.
+- Generación de resúmenes de razonamiento: la tercera ronda de entrenamiento lo hace adecuado para condensar cadenas de pensamiento largas en explicaciones breves.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye un marcador de posición ("benchmark_here") sin contenido, por lo que no hay cifras de MMLU, HumanEval, GSM8K ni comparaciones verificables.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,2 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 3 y 4 GB para contextos moderados.
-- VRAM estimada en cuantización de 8 bits: en torno a 1,2-1,5 GB de pesos.
-- VRAM estimada en cuantización de 4 bits: en torno a 0,7-1 GB de pesos (estimaciones teóricas; no se han publicado GGUF oficiales).
-- GPU recomendadas: cualquier GPU consumer con 6 GB o más (RTX 3060, RTX 4060, RTX 4090) es suficiente; también cabe en GPUs de datacenter (A100, H100) sin aprovechar su capacidad.
-- Cabe en GPU consumer: sí, con holgura, incluso en configuraciones de gama media.
-- Opciones de despliegue: al ser safetensors con arquitectura tipo Llama/MiniCPM5, es compatible con transformers, vLLM y TGI (sujeto a que la arquitectura MiniCPM5 esté soportada en la versión correspondiente); llama.cpp y Ollama requerirían una conversión a GGUF que el autor menciona pero no publica en el repositorio.
+- VRAM estimada para inferencia en FP16: aproximadamente 2,2 GB solo para los pesos, más overhead de activaciones y caché KV; en la práctica, entre 3 y 4 GB.
+- VRAM estimada en cuantización de 8 bits: alrededor de 1,1-1,5 GB para pesos, más overhead.
+- VRAM estimada en cuantización de 4 bits: alrededor de 0,6-0,9 GB para pesos, más overhead.
+- GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 4060, RTX 4090) es suficiente en FP16; también cabe en GPUs de gama baja y en CPU.
+- Cabe en GPU consumer: sí, en todas las GPU con 4 GB o más de VRAM.
+- Opciones de despliegue: al publicarse solo en safetensors, requiere frameworks como Transformers, vLLM o TGI; para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, no documentada por el autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| DeepSeek-V4.1-Distill-Minicpm5-1B | 1,08B | No disponible | MIT | Destilación CoT en tres rondas, solo inglés, sin benchmarks |
-| openbmb/MiniCPM5-1B-Base | ~1B | No disponible | No disponible en esta ficha | Modelo base original de la familia MiniCPM5 |
-| mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS | ~1B | No disponible | No disponible en esta ficha | SFT intermedio del mismo autor, antecesor directo |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (según documentación pública de Qwen) | Apache 2.0 | Alternativa consolidada de tamaño similar con benchmarks publicados |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Distill-Minicpm5-1B | 1.080 M | No disponible | MIT | Inglés | Hugging Face (safetensors) |
+| openbmb/MiniCPM5-1B-Base | ~1.000 M (según nombre) | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
+| mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS | ~1.000 M (según nombre) | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
 
-La comparación con modelos de la misma categoría (1B-1,5B) es limitada porque no hay datos de rendimiento del modelo analizado. Frente a alternativas consolidadas como Qwen2.5-1.5B-Instruct, este modelo ofrece un enfoque específico en razonamiento destilado y tool calling, pero carece de evaluación pública y de soporte multilingüe más allá del inglés.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia e idioma declarados.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar la calidad del razonamiento ni del tool calling.
-- Modelo experimental con cero descargas y cero likes: no hay evidencia de uso en la comunidad ni validación externa.
-- Idiomas: solo inglés declarado; el rendimiento en castellano es desconocido y probablemente deficiente.
-- Longitud de contexto no documentada: riesgo de truncamiento en conversaciones largas o trazas CoT extensas.
-- Riesgo de alucinación inherente a modelos de 1B, agravado por el entrenamiento en cadenas de pensamiento que pueden contener errores propagados de los datasets de destilación.
-- Los datasets de entrenamiento son del propio autor y no están auditados; posibles sesgos y artefactos de generación no documentados.
-- La mención a GGUF está incompleta ("Gguf: ..."), por lo que no hay artefactos cuantizados oficiales listos para llama.cpp u Ollama.
-- Licencia MIT: permite uso comercial sin restricciones, pero el usuario debe asumir la responsabilidad de validar el modelo en su dominio.
-- La model card es mínima y no documenta la plantilla de chat, el formato de tool calling ni los hiperparámetros de entrenamiento, lo que dificulta la reproducibilidad.
+- El modelo solo declara soporte de inglés; su rendimiento en castellano u otros idiomas no está garantizado.
+- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de su calidad en razonamiento, código o matemáticas.
+- Riesgo de alucinación inherente a modelos de 1B parámetros; la destilación de razonamiento no elimina este problema.
+- La longitud de contexto no está documentada, lo que impide planificar su uso en tareas que requieran ventanas largas.
+- No se detalla la composición de los datasets de entrenamiento, por lo que no se pueden evaluar sesgos específicos.
+- La licencia MIT permite uso comercial, pero el autor no ofrece garantías ni soporte.
+- El repositorio tiene solo 204 descargas y 2 likes, lo que sugiere poca validación por parte de la comunidad.
+- La model card incluye una sección "benchmark_here" sin contenido, lo que indica documentación incompleta.
+- Para despliegue en llama.cpp u Ollama sería necesaria una conversión a GGUF no proporcionada por el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/mondk/DeepSeek-V4.1-Distill-Minicpm5-1B
-- Modelo base intermedio: https://huggingface.co/mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS
+- Modelo en Hugging Face: https://huggingface.co/mondk/DeepSeek-V4.1-Distill-Minicpm5-1B
+- Modelo base: https://huggingface.co/mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS
+- Modelo base original: https://huggingface.co/openbmb/MiniCPM5-1B-Base
 - Dataset Deepseek-v4.1-CoT: https://huggingface.co/datasets/mondk/Deepseek-v4.1-CoT
 - Dataset Multi-Think-CoT: https://huggingface.co/datasets/mondk/Multi-Think-CoT
 - Dataset Multi-CoT-Stepwise: https://huggingface.co/datasets/mondk/Multi-CoT-Stepwise
-- Modelo base original (referenciado en la model card): openbmb/MiniCPM5-1B-Base (no se proporciona URL directa en la información disponible)

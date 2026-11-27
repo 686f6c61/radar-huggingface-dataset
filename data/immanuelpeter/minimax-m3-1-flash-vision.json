@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MiniMaxAI/MiniMax-M3.1-Flash · Hugging Face",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
-      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity. It supports text, image, and video inputs with a context window of up to 1M tokens. Building on MiniMax-M3, M3.1-Flash improves task performance and inference efficiency with sparse attention throughout the model, quantization-aware training, and DSpark speculative ..."
-    },
-    {
-      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
-      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash",
-      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
-    }
-  ]
+  "sources": []
 }

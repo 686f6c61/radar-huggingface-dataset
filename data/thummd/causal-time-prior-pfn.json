@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "thummd/causal-time-prior-pfn",
+  "slug": "thummd-causal-time-prior-pfn",
+  "author": "thummd",
+  "url": "https://huggingface.co/thummd/causal-time-prior-pfn",
+  "created_at": "2026-11-27T00:06:32.000Z",
+  "updated_at": "2026-11-27T00:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "causal-inference",
+    "time-series",
+    "prior-fitted-network",
+    "synthetic-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5076761,
+  "storage_human": "5 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L’écrivain Gabriel Matzneff, accusé de viols sur mineurs, entendu en ...",
+      "url": "https://www.lemonde.fr/societe/article/2022/08/31/l-ecrivain-gabriel-matzneff-accuse-de-viols-sur-mineurs-entendu-en-audition-libre_6139708_3224.html",
+      "snippet": "Aug 31, 2022 · Gabriel Matzneff, qui s’était retiré en Italie après les accusations de Vanessa Springora, dit être victime d’une …Read more"
+    },
+    {
+      "title": "Jean-Paul Rouve marqué par le rôle “malade” de Gabriel Matzneff et …",
+      "url": "https://www.closermag.fr/people/jean-paul-rouve-marque-par-le-role-malade-de-gabriel-matzneff-et-les-scenes-intimes-pleines-de-details-sexuels-degueulasses-3671461",
+      "snippet": "1 day ago · Loin de ses habituels rôles comiques, Jean-Paul Rouve a prêté ses traits à Gabriel Matzneff dans Le Consentement. Un …Read more"
+    }
+  ]
+}

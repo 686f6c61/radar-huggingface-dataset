@@ -2,97 +2,85 @@
 
 ## Resumen
 
-MOSS_Image_LoRAs es una coleccion de adaptadores LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicada por el usuario pmczip en Hugging Face. Los adaptadores estan entrenados sobre el modelo base MOSS-Image-Base del equipo OpenMOSS-Team, y su especialidad es la generacion de fotografias fotorrealistas de retratos femeninos, incluyendo lo que el propio repositorio etiqueta como "celebrity" y "likeness" (semejanza con personas reales).
+MOSS_Image_LoRAs es una coleccion de adaptadores LoRA publicada por el usuario pmczip sobre el modelo base de difusion texto-a-imagen OpenMOSS-Team/MOSS-Image-Base. El repositorio agrupa pesos en formato safetensors compatibles con la libreria diffusers y esta disenado para inyectar identidades visuales concretas (rostros de mujeres, con etiquetas como "woman", "celebrity" y "likeness") en el pipeline de generacion de imagenes del modelo base. No se trata de un modelo fundacional, sino de un conjunto de adaptadores de bajo rango que modifican el comportamiento del modelo subyacente.
 
-El repositorio funciona como un paquete de multiples LoRAs, cada uno asociado a un token disparador unico (por ejemplo, `4j133` o `4n63145un`) que activa la apariencia de un sujeto concreto dentro del prompt. Esta diseñado para usarse con la libreria diffusers de Hugging Face y los pesos se distribuyen en formato safetensors. El tamaño total del repositorio es de 12,3 GB, lo que indica que incluye un numero considerable de adaptadores.
+El problema que resuelve es la personalizacion controlada: en lugar de reentrenar el modelo base, el usuario carga el LoRA y activa una identidad mediante un token disparador (por ejemplo, cadenas ofuscadas como "4j133" o "4nn4k0urnik0v4") dentro del prompt. Con 15.585 descargas y un tamano de repositorio de 12,6 GB, el paquete incluye varios adaptadores que comparten el mismo modelo base, lo que permite alternar entre identidades sin cambiar de pipeline.
 
-Cabe destacar que se trata de un artefacto comunitario de terceros, no de un modelo oficial del equipo OpenMOSS: el autor ha entrenado estos LoRAs sobre el modelo base publicado por OpenMOSS-Team. Su relevancia es principalmente como ejemplo de la practica, éticamente delicada, de crear adaptadores que replican la apariencia de personas reales, y como recurso para quienes trabajan con la familia de modelos MOSS-Image.
+Su relevancia actual es doble: por un lado, demuestra el flujo de trabajo habitual de la comunidad de difusion (LoRA sobre checkpoints abiertos); por otro, plantea cuestiones serias de licencia y etica, ya que la model card declara explicitamente "celebrity" y "likeness" y emplea una licencia bespoke vinculada a los terminos de Civitai. La informacion disponible no detalla la arquitectura interna del modelo base ni los datos de entrenamiento de los LoRA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador) sobre modelo de difusion text-to-image; arquitectura del modelo base no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (modelo de difusion, no LLM) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Ingles (prompts) |
-| Licencia | bespoke-lora-trained-license (licencia personalizada, tipo "other") |
-| Formato de pesos | safetensors |
-
-Datos adicionales del repositorio:
-
-| Parametro | Valor |
-|---|---|
-| ID en Hugging Face | pmczip/MOSS_Image_LoRAs |
-| Modelo base | OpenMOSS-Team/MOSS-Image-Base |
-| Pipeline | text-to-image (diffusers) |
-| Tamano del repositorio | 12,3 GB |
-| Descargas | 6.105 |
-| Likes | 3 |
-| Creacion / ultima actualizacion | 2026-10-25 / 2026-10-26 |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre modelo de difusion texto-a-imagen MOSS-Image-Base; arquitectura interna del base no disponible |
+| Parametros totales | no disponible (pesos LoRA; el repositorio ocupa 12,6 GB) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen; no aplica ventana de tokens de texto) |
+| Tipos de cuantizacion | no disponible (pesos safetensors; se asume compatibilidad con el base en diffusers, sin detalle publicado) |
+| Idiomas soportados | en |
+| Licencia | bespoke-lora-trained-license (enlace a multimodal.art/civitai-licenses) |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto no es un modelo completo sino un conjunto de adaptadores LoRA: matrices de bajo rango que se inyectan en las capas de atencion (y opcionalmente en las capas lineales) de un modelo de difusion preentrenado, en este caso MOSS-Image-Base. Esta tecnica permite especializar el modelo en un sujeto o estilo concreto entrenando solo una fraccion minima de parametros, con el consiguiente ahorro de memoria y tiempo de entrenamiento. La model card menciona tambien la etiqueta MOSS-Image-SFT, lo que sugiere que existen versiones supervisadas (SFT) de la familia MOSS-Image, aunque no se detallan en el repositorio.
+El repositorio contiene adaptadores LoRA, es decir, matrices de bajo rango que se suman a las capas del modelo base OpenMOSS-Team/MOSS-Image-Base para desplazar su distribucion de salida hacia identidades concretas. El pipeline declarado es text-to-image y la integracion se realiza a traves de diffusers, cargando el LoRA junto al checkpoint base. No se dispone de informacion sobre el rango de las matrices, las capas objetivo ni el numero de pasos de entrenamiento.
 
-No se ha publicado informacion sobre el proceso de entrenamiento de estos LoRAs: numero de pasos, learning rate, rank de las matrices LoRA, dataset de imagenes utilizado ni metodo de etiquetado. Los ejemplos de la model card muestran prompts muy largos y descriptivos, con tokens disparadores ofuscados (cadenas como `4im33t3364rd3n`, que parecen codificar nombres de personas reales) y sufijos de estilo heredados de Midjourney (`--q 2 --v 4 --upbeta`), lo que apunta a prompts generados o recopilados automaticamente. No hay informacion sobre medidas de consentimiento de las personas representadas.
+Respecto a los datos de entrenamiento, la model card no documenta el conjunto de imagenes utilizado, el numero de pasos, la resolucion de entrenamiento ni si se aplicaron tecnicas de regularizacion. Los ejemplos de la model card muestran prompts muy detallados con tokens disparadores ofuscados y estilos fotograficos (Nikon, Kodachrome, lente de 35 mm), lo que sugiere un entrenamiento orientado a retratos fotorrealistas. No hay informacion sobre RLHF, DPO ni innovaciones tecnicas de decodificacion, ya que se trata de un adaptador y no de un modelo generativo completo.
 
 ## Capacidades
 
-- Generacion de imagenes fotorrealistas a partir de texto mediante el pipeline text-to-image de diffusers.
-- Reproduccion de apariencias concretas de sujetos mediante tokens disparadores unicos por LoRA (tecnica habitual en entrenamientos de sujeto unico tipo DreamBooth/LoRA).
-- Control fino de estilo fotografico: los prompts de ejemplo combinan descripcion de sujeto, vestuario, fondo, iluminacion y terminologia fotografica (lente 35mm, Kodachrome, iluminacion profesional).
-- Compatibilidad con la libreria diffusers de Hugging Face y, por extension, con interfaces que la utilizan.
-- No aplica: tool calling, agentes, razonamiento, codigo ni capacidades multilingues, al tratarse de un modelo de difusion y no de un LLM.
+- Generacion de imagenes fotorrealistas de retratos femeninos condicionada por prompt de texto, mediante el modelo base MOSS-Image-Base.
+- Activacion de identidades especificas mediante tokens disparadores incluidos en el prompt (cadenas ofuscadas en los ejemplos de la model card).
+- Composicion de escena controlable por texto: vestuario, iluminacion, fondo, encuadre y estilo fotografico (pelicula, optica, revelado).
+- Integracion en pipelines de diffusers como adaptador cargable y descargable en tiempo de inferencia.
+- Soporte de multiples adaptadores en un mismo repositorio, lo que permite alternar identidades sin cambiar de modelo base.
+- Idioma de prompting: ingles unicamente.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision de entrada, audio ni modo "thinking"; son capacidades ajenas a un modelo de difusion texto-a-imagen.
 
 ## Casos de uso
 
-- Generacion de retratos fotorrealistas consistentes: cada LoRA permite producir multiples imagenes del mismo sujeto virtual manteniendo rasgos faciales, peinado y estilo, util en flujos de diseno de personajes.
-- Produccion de material visual para narrativa transmedia: creacion de personajes recurrentes para comics, storyboards o novelas graficas con apariencia estable entre escenas.
-- Prototipado de campañas visuales: generacion rapida de variaciones de un mismo retrato con distinta iluminacion, vestuario o fondo para exploracion creativa previa a sesiones fotograficas reales.
-- Investigacion en personalizacion de modelos de difusion: estudio de como los LoRAs de sujeto unico interactuan con el modelo base MOSS-Image-Base y de la efectividad de tokens disparadores.
-- Evaluacion de la familia MOSS-Image: uso de estos adaptadores como caso practico para probar las capacidades del modelo base de OpenMOSS-Team en dominio fotografico.
-- Analisis etico y de seguridad: el repositorio sirve como ejemplo real para investigar riesgos de deepfakes y suplantacion de identidad visual en modelos abiertos.
+- Prototipado de personajes para narrativa visual: cargar el LoRA en diffusers y generar variaciones consistentes de un rostro para storyboards, manteniendo el mismo token disparador en todos los prompts.
+- Pruebas de concepto de direccion de arte: comparar varias identidades del repositorio bajo el mismo prompt de vestuario e iluminacion para evaluar encuadres y paletas antes de una produccion real.
+- Investigacion sobre personalizacion en difusion: usar los adaptadores como caso de estudio para medir como un LoRA de bajo rango desplaza la distribucion del modelo base sin reentrenarlo.
+- Evaluacion de pipelines de inferencia: integrar el LoRA en un flujo diffusers para medir latencia y consumo de VRAM al cargar y descargar adaptadores en caliente.
+- Docencia y divulgacion tecnica: explicar el concepto de LoRA y de token disparador con un ejemplo real y reproducible en una GPU de consumo.
+- Generacion de material editorial de fantasia: crear retratos estilizados (look de pelicula analogica, iluminacion de estudio) para ilustraciones internas, siempre que la licencia lo permita.
+- Auditoria de riesgos: emplear el repositorio como muestra para analizar los riesgos de suplantacion de identidad y de uso comercial de adaptadores etiquetados como "celebrity" y "likeness".
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de adaptadores LoRA para generacion de imagenes, no existen metricas estandarizadas (FID, CLIP score, etc.) asociadas a este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Como referencia general, los LoRA anaden poca memoria sobre el modelo base; el requisito dominante sera el de MOSS-Image-Base, cuyas especificaciones no se detallan en este repositorio.
-- GPU recomendadas: no disponible. Para modelos de difusion de generacion de imagen de este tipo, GPUs consumer con 12-24 GB de VRAM (RTX 3090/4090) suelen ser suficientes para inferencia con LoRAs.
-- Cabe en GPU consumer: probablemente si para inferencia (los LoRA individuales suelen ocupar decenas o cientos de MB), pero no hay datos confirmados. Los 12,3 GB del repositorio corresponden al conjunto completo de adaptadores, no a un unico LoRA.
-- Opciones de despliegue: libreria diffusers de Hugging Face (libreria indicada en el repositorio). Compatibilidad con ComfyUI, Automatic1111 o SD.Next no esta confirmada en la model card.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma especifica; depende del checkpoint base MOSS-Image-Base y de la precision de carga. El repositorio de LoRA ocupa 12,6 GB, pero ese tamano corresponde al conjunto de adaptadores, no a la VRAM en ejecucion.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Para modelos de difusion de escala comparable se suele recurrir a A100, H100 o RTX 4090, pero no hay dato confirmado para este caso.
+- Compatibilidad con GPU de consumo: no confirmada; depende del modelo base y de la cuantizacion aplicada al mismo.
+- Opciones de despliegue: diffusers (libreria declarada). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a un pipeline de difusion de imagen.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Aspecto | MOSS_Image_LoRAs (pmczip) | LoRAs de comunidad sobre SDXL | LoRAs de comunidad sobre Flux.1 |
-|---|---|---|---|
-| Tipo | Coleccion de adaptadores LoRA | Adaptadores LoRA | Adaptadores LoRA |
-| Modelo base | MOSS-Image-Base (OpenMOSS-Team) | Stable Diffusion XL | Flux.1 (dev/schnell) |
-| Especialidad | Retratos fotorrealistas de sujetos concretos | Variada (estilos, personajes, conceptos) | Variada, alta fidelidad fotografica |
-| Formato | safetensors | safetensors | safetensors |
-| Licencia | bespoke-lora-trained-license | Variable por autor | Variable por autor |
-| Ecosistema | diffusers | diffusers, ComfyUI, A1111 | diffusers, ComfyUI |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pmczip/MOSS_Image_LoRAs | LoRA sobre MOSS-Image-Base | no disponible | no aplica | bespoke-lora-trained-license | Hugging Face, diffusers |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base texto-a-imagen | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
+| Alternativas LoRA de identidad en la comunidad de difusion (p. ej. adaptadores sobre SDXL) | LoRA | no disponible | no aplica | habitualmente licencias especificas de plataforma | Hugging Face, Civitai |
 
-La comparacion es aproximada: los datos de las alternativas dependen de cada repositorio individual y no hay metricas de rendimiento publicadas para ninguno de ellos en la informacion disponible.
+No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo etico principal: el repositorio esta etiquetado explicitamente con "celebrity" y "likeness", y los tokens disparadores parecen codificar nombres de personas reales ofuscados. Generar imagenes con la semejanza de personas reales sin consentimiento puede infringir derechos de imagen, derecho al honor y legislacion sobre deepfakes. En Espana y la UE, el Reglamento de IA y el articulo 18 del RGPD son aplicables a estos usos.
-- Licencia restrictiva: la bespoke-lora-trained-license es una licencia personalizada (vinculada a condiciones tipo Civitai) que puede limitar el uso comercial y la redistribucion. Debe revisarse el texto completo antes de cualquier despliegue.
-- Sin documentacion de entrenamiento: no hay detalles sobre dataset, consentimiento, pasos de entrenamiento ni hiperparametros, lo que dificulta evaluar calidad y procedencia.
-- Riesgo de artefactos visuales: los LoRA de sujeto unico pueden producir distorsiones faciales, sobreajuste al estilo de las imagenes de entrenamiento o mala generalizacion a poses y angulos no vistos.
-- Dependencia del modelo base: los adaptadores solo funcionan con la version compatible de MOSS-Image-Base; no son portables a otras arquitecturas de difusion.
-- Calidad comunitaria: se trata de un repositorio de un usuario individual con adopcion modesta (3 likes, ~6.100 descargas), sin auditoria por parte del equipo original de OpenMOSS.
-- Prompts en ingles: los prompts de ejemplo estan en ingles; el rendimiento con prompts en otros idiomas no esta documentado.
+- Sesgos conocidos: el repositorio esta orientado a rostros femeninos y a un canon estetico fotorrealista concreto; puede reproducir sesgos de genero, edad, etnia y belleza presentes en los datos de entrenamiento no documentados.
+- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar rasgos inconsistentes entre imagenes, manos deformes, texto ilegible y artefactos en fondos complejos.
+- Suplantacion de identidad: las etiquetas "celebrity" y "likeness" y el uso de tokens ofuscados apuntan a la reproduccion de rostros de personas reales; su uso puede vulnerar derechos de imagen y normativa de proteccion de datos.
+- Restricciones de licencia: la licencia bespoke-lora-trained-license remite a los terminos de Civitai; es imprescindible revisarlos antes de cualquier uso comercial, ya que pueden prohibirlo o condicionarlo.
+- Limitacion de idioma: solo se declara ingles, por lo que los prompts en castellano pueden degradar la fidelidad de la generacion.
+- Caveat para produccion: no hay informacion sobre el modelo base, la cuantizacion soportada ni el rendimiento; cualquier despliegue exige validacion previa y revision legal del uso de identidades.
+- Falta de documentacion tecnica: no se detallan pasos de entrenamiento, dataset ni metricas, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/pmczip/MOSS_Image_LoRAs
+- Repositorio Hugging Face: https://huggingface.co/pmczip/MOSS_Image_LoRAs
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Texto de la licencia personalizada: https://multimodal.art/civitai-licenses
+- Licencia referenciada: https://multimodal.art/civitai-licenses

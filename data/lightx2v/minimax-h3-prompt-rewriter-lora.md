@@ -2,77 +2,97 @@
 
 ## Resumen
 
-MiniMax-H3-Prompt-Rewriter-LoRA es un adaptador de bajo rango (LoRA) desarrollado por el usuario lightx2v, diseñado específicamente para reescribir prompts destinados a la generación de audio y vídeo con el modelo MiniMax-H3. El adaptador se aplica sobre el modelo base Qwen/Qwen3.6-27B, según los metadatos de Hugging Face, y convierte una instrucción corta en una descripción estructurada y lista para producción, optimizada para el pipeline de text-to-audio-video de MiniMax-H3.
+MiniMax-H3-Prompt-Rewriter-LoRA es un adaptador LoRA de tipo PEFT publicado por el colectivo lightx2v (vinculado al proyecto ModelTC/LightX2V) sobre el modelo base Qwen/Qwen3.6-27B. Su funcion no es generar audio ni video, sino reescribir prompts cortos en descripciones estructuradas que el generador MiniMax-H3 puede consumir para producir video y audio sincronizados (tarea text-to-audio-video, T2VA). El adaptador transforma una entrada breve, junto con la relacion de aspecto y la duracion solicitadas, en un texto con campos como `integrated_multimodal_description`, `overall_soundscape` y `non_diegetic_music`, ampliando la estructura de planos, el timing, la composicion, el movimiento de camara, la accion fisica, la continuidad y el diseno sonoro.
 
-El modelo resuelve el problema de la redacción de prompts detallados y consistentes para generación multimodal, un paso crítico cuando se trabaja con modelos de vídeo que requieren descripciones largas y precisas. Su relevancia actual radica en que permite ejecutar todo el proceso localmente, sin depender de servicios en la nube, y acepta prompts en cualquier idioma que el modelo base pueda leer, devolviendo siempre la reescritura en inglés, que es el idioma de trabajo de MiniMax-H3.
+El modelo resuelve un problema concreto de los pipelines de generacion audiovisual: los prompts de usuario suelen ser demasiado escuetos para que un generador de video con audio sincronizado produzca resultados coherentes. En lugar de depender de un servicio propietario de reescritura, este LoRA permite ejecutar esa fase de forma local sobre un backbone de 27.000 millones de parametros, manteniendo el control sobre el texto intermedio y sobre el flujo completo.
 
-El adaptador se distribuye en formato safetensors, con etiquetas que indican su naturaleza PEFT (Parameter-Efficient Fine-Tuning) y su orientación a tareas de reescritura de prompts. Aunque el nombre sugiere una relación directa con MiniMax-H3, el modelo base declarado es Qwen/Qwen3.6-27B, lo que indica que el LoRA se entrena sobre ese transformer de 27 000 millones de parámetros.
+Es relevante ahora porque forma parte de un ecosistema abierto y ejecutable en local: el adaptador se combina con los pesos oficiales de MiniMax-H3 y con el framework de inferencia LightX2V, que aporta offloading de memoria, paralelismo tensorial y de secuencia, checkpoints cuantizados, kernels optimizados de atencion/RMSNorm/RoPE y cache de features. El repositorio ocupa 3,7 GB y acumula 209 descargas y 200 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (Low-Rank Adaptation) sobre Qwen/Qwen3.6-27B |
-| Parametros totales | no disponible (el adaptador LoRA tiene un numero reducido de parametros, pero no se especifica) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (depende del modelo base Qwen3.6-27B) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Entrada: cualquier idioma que lea el modelo base; salida: ingles |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Arquitectura | LoRA (PEFT) sobre un transformer decoder-only: Qwen/Qwen3.6-27B |
+| Parametros totales | No disponible para el adaptador; el modelo base es de 27B |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible para el adaptador; LightX2V ofrece checkpoints cuantizados para la inferencia de MiniMax-H3 |
+| Idiomas soportados | Ingles (segun el campo `language: en` de la model card) |
+| Licencia | No disponible |
+| Formato de pesos | safetensors (adaptador PEFT); el modelo base se descarga por separado desde Hugging Face |
+| Tamano del repositorio | 3,7 GB |
+| Libreria | peft |
+| Modelo base | Qwen/Qwen3.6-27B |
+| Fecha de creacion | 2026-08-07 |
+| Ultima actualizacion | 2026-10-16 |
 
 ## Arquitectura y entrenamiento
 
-El adaptador emplea la técnica LoRA (Low-Rank Adaptation), que consiste en congelar los pesos del modelo base y anadir matrices de bajo rango en las capas de atencion y proyeccion. Esto permite ajustar el comportamiento del modelo con un coste computacional y de almacenamiento muy inferior al de un fine-tuning completo. El modelo base es Qwen/Qwen3.6-27B, un transformer autoregresivo de 27 000 millones de parametros, aunque no se dispone de detalles adicionales sobre su arquitectura interna (numero de capas, cabezas de atencion, etc.) en la informacion proporcionada.
+El adaptador es un LoRA, es decir, un conjunto de matrices de bajo rango inyectadas en las capas del transformer Qwen3.6-27B, que permanece congelado. El backbone es un modelo decoder-only de 27.000 millones de parametros orientado a seguir instrucciones; el LoRA especializa su salida hacia el formato de prompt que espera MiniMax-H3. El repositorio no incluye los pesos del modelo base: la model card indica que se descargan de Hugging Face en el primer uso y que el script de inferencia emplea `device_map="auto"` para repartir el modelo entre los dispositivos disponibles.
 
-No se han publicado datos sobre el conjunto de entrenamiento, el numero de tokens utilizados, ni si se emplearon tecnicas como RLHF o DPO. La funcion especifica del LoRA es transformar prompts cortos en descripciones estructuradas y detalladas para generacion de audio-video, lo que sugiere que el entrenamiento se realizo con pares de prompts breves y versiones expandidas orientadas a MiniMax-H3. Tampoco se indica si se aplicaron tecnicas de regularizacion o si el adaptador se entreno en varias epocas.
+La informacion proporcionada no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican los hiperparametros del LoRA (rango, alpha, capas objetivo). Lo que si se documenta es el objetivo funcional: convertir "prompt corto + relacion de aspecto + duracion" en una descripcion audiovisual estructurada que preserve la intencion original y anada planificacion de planos, continuidad, sonido diegetico sincronizado y musica no diegetica. El script `infer.py` permite decodificacion greedy (determinista) o por muestreo, y admite ejecutar el modelo base sin el adaptador (`--base-only`) para comparaciones controladas.
 
 ## Capacidades
 
-- Reescritura de prompts: convierte instrucciones cortas en descripciones largas, estructuradas y listas para produccion, pensadas para el pipeline de generacion de audio-video de MiniMax-H3.
-- Soporte multilingue en entrada: acepta prompts en cualquier idioma que el modelo base Qwen3.6-27B pueda leer, lo que incluye una amplia variedad de lenguas.
-- Salida en ingles: la reescritura se genera siempre en ingles, que es el idioma de trabajo de MiniMax-H3.
-- Ejecucion local: el adaptador puede cargarse y ejecutarse completamente en local, sin necesidad de servicios externos, segun se indica en el repositorio de ComfyUI asociado.
-- Integracion con ComfyUI: existen nodos especificos para ComfyUI que permiten usar este LoRA dentro de flujos de generacion de video.
-- Especializacion en audio-video: el adaptador esta orientado a la generacion de contenido multimodal, no a tareas genericas de texto.
+- Reescritura de prompts para text-to-audio-video (T2VA) dirigida especificamente al generador MiniMax-H3.
+- Generacion de descripciones estructuradas con campos separados: `integrated_multimodal_description`, `overall_soundscape` y `non_diegetic_music`.
+- Expansion de estructura de planos, timing, composicion, movimiento de camara, accion fisica y continuidad a partir de un prompt breve.
+- Incorporacion de sonido diegetico sincronizado y musica no diegetica en la descripcion generada.
+- Condicionamiento por parametros explicitos de duracion (por ejemplo, 10 o 15 segundos) y relacion de aspecto (16:9, 21:9).
+- Salida en texto plano o JSON con registro de prompt original, condiciones, identificadores de modelo y prompt reescrito.
+- Decodificacion greedy determinista o por muestreo, seleccionable por linea de comandos.
+- Capacidad de ejecucion local completa, sin dependencia de API propietaria.
+- No soporta aun reescritura para first/last-frame-to-audio-video (FL2VA) ni reference-to-audio-video (Ref2VA); figuran como pendientes en la hoja de ruta.
 
 ## Casos de uso
 
-- Generacion de video con MiniMax-H3: el caso principal. Un usuario escribe un prompt corto como "un perro corriendo por un parque al atardecer" y el LoRA lo expande a una descripcion detallada con iluminacion, angulos de camara, movimiento y atmosfera, lista para alimentar a MiniMax-H3.
-- Flujos de trabajo en ComfyUI: los nodos del repositorio de GitHub permiten integrar el reescritor en pipelines visuales, donde el prompt generado se conecta directamente al nodo de generacion de video.
-- Localizacion de prompts: dado que acepta entrada en cualquier idioma que lea el modelo base, un creador hispanohablante puede escribir en castellano y obtener una descripcion en ingles optimizada para MiniMax-H3, sin necesidad de traducir manualmente.
-- Automatizacion de produccion de contenido: en entornos de generacion masiva de video (por ejemplo, para redes sociales o publicidad), el LoRA estandariza la calidad de los prompts, reduciendo la variabilidad y el tiempo de edicion manual.
-- Prototipado rapido: investigadores y desarrolladores pueden probar distintas variaciones de un prompt con solo cambiar la frase corta, obteniendo descripciones consistentes y comparables.
-- Generacion de audio-video sincronizado: al producir descripciones detalladas que incluyen aspectos sonoros y visuales, el adaptador facilita la creacion de clips donde el audio y el video estan alineados, un requisito comun en produccion cinematografica o animacion.
+- Produccion de teasers y trailers: un brief de una linea como el ejemplo de la model card ("space-opera teaser: a captain watches the last fleet jump away") se expande a una descripcion por planos con continuidad y diseno sonoro, lista para MiniMax-H3 via LightX2V.
+- Generacion de clips de naturaleza o paisaje con audio ambiente: prompts como "un zorro rojo camina por un bosque nevado al amanecer" se enriquecen con estructura de planos y un `overall_soundscape` coherente con la escena, manteniendo la duracion y el formato solicitados.
+- Prototipado rapido de storyboards audiovisuales: equipos de preproduccion pueden iterar sobre el prompt reescrito (inspeccionable en JSON) antes de gastar computo en la generacion de video, gracias a la separacion entre fase de reescritura y fase de sintesis.
+- Estandarizacion de prompts en un pipeline de produccion: al fijar decodificacion greedy y semilla, el adaptador produce reescrituras reproducibles, lo que facilita pruebas A/B entre versiones del rewriter o entre el adaptador y el modelo base (`--base-only`).
+- Investigacion sobre prompt engineering para generacion audiovisual: el par (prompt corto, prompt estructurado) generado de forma local permite construir datasets y analizar que elementos de la descripcion correlacionan con mejor sincronizacion audio-video.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse en local sobre Qwen3.6-27B con `device_map="auto"`, los prompts creativos y los briefs no salen de la infraestructura propia.
+- Integracion en herramientas creativas de terceros: la salida JSON con metadatos del modelo y condiciones encaja como paso intermedio en un orquestador que encadene rewriter y generador sin intervencion manual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre metricas como MMLU, HumanEval o GSM8K para este adaptador, ni comparaciones con otros reescritores de prompts. El unico dato de rendimiento indirecto es el tamano del archivo (3,74 GB segun ModelScope), que corresponde al adaptador LoRA, aunque no se especifica si incluye el modelo base o solo los pesos del adaptador.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible oficialmente. Dado que el adaptador se aplica sobre Qwen3.6-27B, un modelo de 27 000 millones de parametros, se requiere una GPU con al menos 16-24 GB de VRAM para cargar el modelo base en cuantizacion de 8 bits o 4 bits. Sin cuantizacion, se necesitarian 54 GB o mas.
-- GPU recomendadas: no se especifican modelos concretos. Para una inferencia comoda, se recomienda una NVIDIA RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB). En consumer, una RTX 3090 o 4090 con cuantizacion puede ser suficiente.
-- Compatibilidad con consumer GPU: probablemente si, si se usa cuantizacion del modelo base (por ejemplo, 4 bits con bitsandbytes o GPTQ). El adaptador LoRA anade una sobrecarga minima de VRAM.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de Hugging Face, o integrarse en ComfyUI mediante los nodos del repositorio de GitHub. Tambien es posible usarlo con vLLM o TGI si se fusionan los pesos del adaptador con el modelo base.
-- Latencia y throughput: no disponibles. Dependen del hardware, la cuantizacion y la longitud del prompt de salida.
+- El adaptador por si solo ocupa 3,7 GB en disco, pero la inferencia requiere cargar Qwen3.6-27B completo; la model card advierte explicitamente de que la maquina debe tener suficiente memoria de GPU/CPU para el modelo base.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud para un transformer de 27B, en FP16 se necesitan aproximadamente 54 GB solo para pesos, a los que se suman cache KV y overhead; en cuantizaciones de 8 bits o 4 bits el requisito baja de forma proporcional, aunque el repositorio no documenta cuantizaciones del rewriter.
+- GPU recomendadas: no especificadas por el autor. El uso de `device_map="auto"` permite repartir el modelo entre varias GPU o entre GPU y CPU cuando la VRAM de una sola tarjeta no es suficiente.
+- Viabilidad en GPU de consumo: no confirmada en la informacion disponible; con 27B de parametros, una unica tarjeta de consumo solo seria viable con cuantizacion agresiva o descarga parcial a CPU, escenario no documentado por el autor.
+- Opciones de despliegue: el adaptador se carga con PEFT sobre el modelo base mediante `infer.py`; la generacion audiovisual final se realiza con LightX2V, que aporta offloading de memoria, paralelismo tensorial y de secuencia, checkpoints cuantizados, kernels optimizados de atencion/RMSNorm/RoPE y cache de features.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros adaptadores LoRA especificamente disenados para reescritura de prompts de generacion de audio-video. Existen herramientas genericas de reescritura de prompts, como los sistemas de "prompt expansion" integrados en algunos modelos propietarios (por ejemplo, los de OpenAI o Anthropic), pero no son comparables directamente por su naturaleza cerrada y su falta de soporte para ejecucion local. Por tanto, la comparativa no esta disponible.
+| Modelo | Tipo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MiniMax-H3-Prompt-Rewriter-LoRA (este) | LoRA sobre Qwen3.6-27B | 27B (base) | No disponible | Reescritura de prompts T2VA para MiniMax-H3 | No disponible | Hugging Face, 209 descargas |
+| Qwen3.6-27B sin adaptador | Transformer decoder-only | 27B | No disponible | Instrucciones generales; linea base del rewriter (`--base-only`) | No disponible en la informacion | Hugging Face |
+| MiniMax-H3 | Generador audiovisual | No disponible | No disponible | Generacion de video y audio sincronizados a partir del prompt reescrito | No disponible en la informacion | Hugging Face (MiniMaxAI) |
+| LightX2V | Framework de inferencia | No aplica | No aplica | Ejecucion local optimizada de MiniMax-H3 (T2AV y otras tareas H3) | No disponible en la informacion | GitHub (ModelTC) |
+
+No se dispone de datos de rendimiento comparado entre estos componentes en la informacion proporcionada; la comparativa se limita a rol y disponibilidad dentro del pipeline.
 
 ## Limitaciones y advertencias
 
-- Salida exclusivamente en ingles: aunque la entrada puede ser multilingue, la reescritura siempre se genera en ingles, lo que puede ser una limitacion para usuarios que necesiten prompts en otros idiomas.
-- Dependencia del modelo base: el rendimiento del adaptador esta condicionado por las capacidades y sesgos de Qwen3.6-27B. Si el modelo base tiene sesgos de genero, culturales o linguisticos, estos pueden reflejarse en los prompts reescritos.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar descripciones que no se correspondan con la intencion original del usuario, especialmente si el prompt de entrada es ambiguo o contiene referencias poco comunes.
-- Licencia no especificada: la ausencia de una licencia clara en Hugging Face impide determinar si el adaptador puede usarse en proyectos comerciales. Se recomienda contactar con el autor antes de un despliegue en produccion.
-- Informacion tecnica incompleta: no se han publicado detalles sobre el entrenamiento, los hiperparametros del LoRA (rango, alpha, dropout) ni la composicion del dataset, lo que dificulta la reproducibilidad y la evaluacion de su robustez.
-- Tamano del archivo: el adaptador pesa 3,74 GB, lo que es inusualmente grande para un LoRA tipico (que suele ocupar entre 100 MB y 1 GB). Esto podria indicar que el archivo incluye el modelo base fusionado o que se trata de un adaptador de alto rango. No se ha confirmado.
+- El adaptador solo reescribe texto: no genera video ni audio por si mismo y no incluye los pesos de MiniMax-H3, que deben descargarse por separado.
+- Solo esta soportado el modo T2VA; la reescritura para FL2VA y Ref2VA figura como pendiente en la hoja de ruta.
+- El campo de idioma de la model card declara unicamente ingles, por lo que el comportamiento con prompts en castellano u otros idiomas no esta garantizado.
+- La licencia no esta disponible en la informacion proporcionada; antes de un uso comercial es imprescindible verificar los terminos del adaptador y, por separado, los de Qwen3.6-27B y MiniMax-H3.
+- No se documentan sesgos conocidos, tasas de alucinacion ni evaluaciones de calidad de las reescrituras; al ser un modelo generativo, puede introducir elementos no presentes en el prompt original, algo especialmente sensible cuando el texto reescrito guia una generacion audiovisual costosa.
+- El requisito de memoria para cargar el backbone de 27B es elevado y no se detalla en el repositorio; el despliegue en una sola GPU de consumo no esta confirmado.
+- Para comparaciones fiables entre reescrituras, la model card recomienda fijar el mismo modo de decodificacion y semilla; sin esa precaucion, las diferencias observadas pueden deberse al muestreo y no al adaptador.
+- No se han publicado benchmarks en la informacion disponible, por lo que no hay evidencia cuantitativa de mejora frente al modelo base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
-- Repositorio de arbol de archivos: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA/tree/main
-- ModelScope: https://www.modelscope.cn/models/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
-- GitHub (nodos ComfyUI): https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
+- Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
+- Pesos del generador MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Framework de inferencia LightX2V (GitHub): https://github.com/ModelTC/LightX2V
+- Documentacion de LightX2V, guia de inicio rapido: https://lightx2v-en.readthedocs.io/en/latest/getting_started/quickstart.html

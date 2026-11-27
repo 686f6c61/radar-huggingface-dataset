@@ -2,129 +2,122 @@
 
 ## Resumen
 
-Qwen3.8-27B-EXL3-3.0bpw-mix es una cuantizacion de precision mixta en formato EXL3 del modelo base Qwen/Qwen3.8-27B, publicada por el usuario BHCC2025. El modelo base es un transformer hibrido de 64 capas que combina 48 capas de Gated DeltaNet con 16 capas de atencion con compuerta (gated attention), hidden de 5120 y un vocabulario de 248.320 tokens. La cuantizacion reduce el peso en disco a 13,3 GB (frente a unos 54 GB en BF16) con una media de 3,0 bits por peso, asignando a cada tensor una anchura de 2, 3 o 4 bits segun su sensibilidad.
+Qwen3.8-27B-EXL3-3.0bpw-mix es una cuantizacion de precision mixta en formato EXL3 del modelo Qwen/Qwen3.8-27B, publicada por el usuario BHCC2025. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a inferencia eficiente: cada tensor del decodificador recibe una anchura de 2, 3 o 4 bits en funcion de su sensibilidad, con un presupuesto global de 3,0 bits por peso (bpw) y un tamano final de 13,3 GB en disco frente a los aproximadamente 54 GB en BF16 del modelo original. La licencia Apache-2.0 se hereda del modelo base.
 
-El interes tecnico de esta publicacion no reside en el modelo base, sino en la estrategia de cuantizacion: el optimizador de exllamav3 elige la anchura de bits por tensor bajo un presupuesto global de 3,0 bpw, manteniendo anchuras compartidas en tensores que se fusionan en decodificacion (q+k+v, gate+up, GDN qkv+z) para no romper los kernels fusionados. Segun el autor, el resultado supera en precision a una cuantizacion uniforme de 3,0 bpw en los cinco conjuntos de prueba medidos, leyendo ademas un 1,6 % menos de bytes por token.
+El modelo base Qwen3.8-27B presenta una arquitectura hibrida con 64 capas (48 Gated DeltaNet y 16 capas de atencion con compuertas), hidden de 5120 y un vocabulario de 248.320 tokens, ademas de una capa MTP (Multi-Token Prediction) para decodificacion especulativa. Esta cuantizacion se construyo como modelo de decodificacion del motor Ferrite, un runtime de inferencia en Rust para DGX Spark y GPUs Blackwell de consumo, y tambien funciona sin modificaciones en exllamav3 y TabbyAPI.
 
-El modelo se diseno como decodificador de Ferrite, un motor de inferencia en Rust para DGX Spark, y tambien funciona sin cambios en exllamav3 y TabbyAPI. Es relevante para quienes necesitan desplegar un modelo de ~27B en hardware modesto (16 GB de VRAM) o en DGX Spark, con contexto medido hasta 120K tokens y licencia Apache-2.0.
+La relevancia practica es doble: por un lado, permite servir un modelo de gran contexto (medido hasta 120K tokens, con servicio de 128K en Ferrite) en tarjetas de 16 GB como la RTX 5080 o la RTX 5060 Ti; por otro, el esquema de precision mixta mejora la fidelidad respecto a una cuantizacion uniforme de 3,0 bpw leyendo un 1,6 % menos de bytes por token, lo que se traduce en tasas de decodificacion ligeramente superiores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: 64 capas (48 Gated DeltaNet + 16 gated attention), hidden 5120, una capa MTP |
-| Parametros totales | 6.654.694.784 (segun safetensors del repo cuantizado; el modelo base se denomina 27B) |
+| Arquitectura | Transformer hibrido: 64 capas (48 Gated DeltaNet + 16 de atencion con compuertas), hidden 5120, una capa MTP |
+| Parametros totales | 6.654.694.784 (segun safetensors del repo); el modelo base se denomina comercialmente 27B |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | medido hasta 120K tokens; Ferrite sirve 128K |
-| Tipos de cuantizacion | EXL3 de precision mixta, 3,0 bpw promedio (2/3/4 bits por tensor); cabeza de salida 5 bits; capa MTP 4 bits; embeddings BF16; GDN in_proj_a/in_proj_b FP16; torre de vision 6 bits |
+| Longitud de contexto | medido a 120K tokens; Ferrite sirve 128K |
+| Tipos de cuantizacion | EXL3 con precision mixta: 2, 3 y 4 bits por tensor en las lineales del decodificador; cabeza de salida a 5 bits; capa MTP a 4 bits; embeddings BF16; GDN in_proj_a / in_proj_b a FP16; torre de vision a 6 bits |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 (heredada del modelo base) |
-| Formato de pesos | safetensors en formato EXL3 (exllamav3 1.6.1 o superior) |
+| Formato de pesos | safetensors en formato EXL3 (requiere exllamav3 1.6.1 o superior) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura hibrida: 48 de sus 64 capas usan Gated DeltaNet (un mecanismo de estado recurrente lineal) y 16 usan atencion con compuerta. Incluye una capa MTP (multi-token prediction) que el autor aprovecha para decodificacion especulativa. El vocabulario es de 248.320 tokens y la dimension oculta es 5120. Esta publicacion no entrena el modelo: solo lo cuantiza, por lo que los datos de entrenamiento, el numero de tokens vistos y el proceso de alineacion (RLHF/DPO) del modelo base no se detallan en la informacion disponible.
+Esta ficha describe una cuantizacion, no un entrenamiento. Los pesos proceden de Qwen/Qwen3.8-27B, un modelo hibrido que combina 48 capas Gated DeltaNet (un tipo de atencion lineal con estado recurrente) con 16 capas de atencion con compuertas, sobre un hidden de 5120 y un vocabulario de 248.320 tokens. Incluye una capa MTP que actua como cabecera de borrador para decodificacion especulativa. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens vistos ni las etapas de RLHF o DPO aplicadas.
 
-La innovacion de esta ficha es la cuantizacion mixta guiada por optimizador. Bajo un presupuesto de 3,0 bpw, exllamav3 asigna anchuras por tensor: las proyecciones GDN in_proj_qkv e in_proj_z quedan casi todas a 3 bits (47 de 48 y 1 a 2 bits), las q/k/v/o de atencion se reparten entre 3 y 4 bits, y las MLP gate/up se quedan mayoritariamente a 3 bits (49 de 64) con 14 a 2 bits. Los tensores que se fusionan en decodificacion conservan una anchura comun para que los kernels fusionados sigan aplicandose. El resultado se evalua por divergencia KL frente al modelo BF16: 0,0230 en codigo, 0,0467 en texto, 0,0282 en chat, 0,0215 en prompts de 16K y 0,0138 en prompts de 120K, ratios de 0,86x a 0,93x respecto a la cuantizacion uniforme de 3,0 bpw. La concordancia top-1 con BF16 es del 95,72 % en codigo y del 91,04 % en texto.
+La innovacion de esta publicacion esta en el esquema de cuantizacion. El optimizador de exllamav3 asigno anchuras de 2, 3 o 4 bits por tensor bajo un presupuesto de 3,0 bpw, manteniendo una anchura compartida en los tensores que se fusionan en tiempo de decodificacion (q+k+v, gate+up, GDN qkv+z) para que los kernels fusionados sigan siendo aplicables. La tabla de asignacion publicada indica, por ejemplo, que 47 de las 48 capas GDN in_proj_qkv e in_proj_z quedan a 3 bits y una a 2 bits, mientras que las lineales de atencion se reparten entre 3 y 4 bits. La cabeza de salida se mantiene a 5 bits y la capa MTP a 4 bits para preservar la calidad del borrador especulativo.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de texto, segun el pipeline declarado (text-generation).
-- Razonamiento multi-paso, con modo de pensamiento (thinking) que el autor mide explicitamente en Ferrite (thinking on/off).
-- Generacion de codigo, incluida la edicion de codigo con salida mayoritariamente copiada del prompt (medida a 582 tok/s en un DGX Spark doble).
-- Procesamiento de contexto largo: evaluado con prompts de 16K y 120K tokens.
-- Decodificacion especulativa sin perdida mediante la capa MTP (4 tokens de borrador), con salida greedy identica token a token a la decodificacion plana.
-- Cache de prompt exacta en Ferrite: una peticion reanudada produce los mismos tokens que recalcular el prompt completo, lo que beneficia a agentes multi-turno.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Vision: el repo conserva una torre de vision cuantizada a 6 bits (por defecto de exllamav3), pero Ferrite es solo texto y no la carga; no se detalla su funcionalidad.
+- Generacion de texto y conversacion multi-turno, con el pipeline declarado como text-generation y conversacional.
+- Razonamiento y codigo, heredados del modelo base; las mediciones de divergencia KL incluyen conjuntos especificos de codigo, texto, chat y contexto largo.
+- Procesamiento de contexto largo: se han medido prompts de 16K y 120K tokens, y Ferrite sirve hasta 128K.
+- Decodificacion especulativa mediante la capa MTP del modelo base, con ganancias medidas de hasta el 8,5 % en codigo y el 8,0 % en prosa frente a la cuantizacion uniforme.
+- Vision: la torre de vision se conserva a 6 bits en el checkpoint EXL3, aunque Ferrite es solo texto y no la carga.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-step: el autor documenta un escenario de cuatro agentes con cache de prompt, pero no se detallan capacidades nativas de agente mas alla del uso del servidor compatible con OpenAI.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Edicion de codigo en produccion: el modelo mide 582 tok/s en un solo DGX Spark y 481 tok/s con cuatro peticiones cuando la salida copia fragmentos del prompt, un patron tipico de refactorizacion y parcheo de codigo. La concordancia top-1 del 95,72 % con BF16 en codigo respalda su uso en pipelines de CI/CD.
-- Agentes multi-turno con system prompt compartido: con cuatro agentes y un system prompt de ~13K tokens, la cache de prompt de Ferrite reduce los tokens procesados un 74 % (thinking off) y un 86 % (thinking on), bajando el time to first token de 16,4 s a ~5 s en el primer turno y a ~0,35-0,5 s en los posteriores.
-- Asistente conversacional de contexto largo: el modelo mantiene una divergencia KL de 0,0138 con prompts de 120K tokens, adecuado para resumir o consultar documentos extensos en una sola ventana.
-- Despliegue en estaciones de trabajo con 16 GB de VRAM: en una RTX 5080 genera 57,5 tok/s en decodificacion plana y 138,6 tok/s con borrador MTP en codigo, lo que permite servir un modelo de ~27B en hardware de consumo.
-- Servidor compatible con OpenAI sobre GPU estandar: via TabbyAPI o exllamav3, para integrar el modelo en aplicaciones existentes sin cambiar el cliente.
-- Inferencia en DGX Spark (uno o dos nodos): Ferrite procesa prompts a 3.544 tok/s con 2K de contexto y 1.792 tok/s con 120K, con paralelismo tensorial sobre RoCE en la configuracion de dos nodos.
-- Prototipado e investigacion de cuantizacion: las tablas de KL y de rendimiento por conjunto de prueba permiten reproducir y comparar estrategias de precision mixta frente a cuantizacion uniforme.
+- Servicio de chat de contexto largo en una GPU de 16 GB: con 13,3 GB de pesos y contexto servido de 128K en Ferrite, una RTX 5080 o una RTX 5060 Ti pueden mantener conversaciones multi-turno con documentos extensos sin offloading a CPU.
+- Asistencia de codigo en produccion: el modelo base esta orientado a codigo y esta cuantizacion mide 0,0230 de KL en el conjunto de codigo; puede integrarse en un servidor compatible con OpenAI (Ferrite o TabbyAPI) para autocompletado y edicion de codigo.
+- Edicion de codigo sobre repositorios: el escenario de "code edits" alcanza 564 tok/s con una peticion y 472 tok/s con cuatro en dos DGX Spark, adecuado para tareas donde la salida copia gran parte del prompt.
+- Despliegue en estaciones de trabajo Blackwell: una RTX PRO 4000 Blackwell de 24 GB ejecuta el modelo con Ferrite, lo que permite prototipado local sin depender de la nube.
+- Agentes con cache de prompt: con cuatro agentes y un system prompt compartido de unos 13K tokens, la cache de Ferrite reduce los tokens de prompt procesados entre un 84 % y un 86 % y baja el time to first token de 14,7 a 5,0 s en el primer turno.
+- Procesamiento por lotes de documentos largos: la fase de preprocesado de prompt medida a 2K, 8K, 32K, 64K y 120K tokens (3.569, 3.338, 2.806, 2.325 y 1.784 tok/s) permite clasificacion, resumen o extraccion sobre entradas de decenas de miles de tokens.
+- Investigacion sobre cuantizacion: el checkpoint sirve como referencia reproducible para comparar precision mixta frente a cuantizacion uniforme con las metricas de KL y acuerdo top-1 publicadas.
 
 ## Benchmarks y rendimiento
 
-Divergencia KL frente a BF16 (menor es mejor), medida en exllamav3 con cache KV FP16 en una RTX 5080:
+Divergencia KL respecto al modelo BF16 (menor es mejor), medida en exllamav3 con cache KV en FP16 sobre una RTX 5080:
 
 | Conjunto de prueba | 3,0 bpw uniforme | Esta cuantizacion | Ratio |
 |---|---|---|---|
 | code (40 x 2048 tokens) | 0,0250 | 0,0230 | 0,92x |
 | text (20 x 2048 tokens) | 0,0500 | 0,0467 | 0,93x |
 | chat (traza reservada, 45.930 tokens de respuesta) | 0,0330 | 0,0282 | 0,86x |
-| long16k (prompts de 16K) | 0,0239 | 0,0215 | 0,90x |
-| long120k (prompts de 120K) | 0,0152 | 0,0138 | 0,91x |
-| Concordancia top-1 con BF16, code / text | 95,53 / 90,70 % | 95,72 / 91,04 % | - |
+| long16k (prompts de 16K tokens) | 0,0239 | 0,0215 | 0,90x |
+| long120k (prompts de 120K tokens) | 0,0152 | 0,0138 | 0,91x |
+| Acuerdo top-1 con BF16, code / text | 95,53 / 90,70 % | 95,72 / 91,04 % | - |
 
-En Ferrite (arnes propio, prompts de 1024 tokens y 512 filas de decodificacion forzada):
+Rendimiento en exllamav3 sobre RTX 5080 de 16 GB (un stream, 500 tokens):
 
-| Configuracion | code | text | long16k |
+| Metrica | 3,0 bpw uniforme | Esta cuantizacion | Ganancia |
 |---|---|---|---|
-| Un DGX Spark, pesos de prompt en bf16 | 0,0218 | 0,0466 | 0,025 |
-| Dos DGX Spark, pesos de prompt NVFP4 | 0,0208 | 0,0401 | 0,024 |
-
-Rendimiento en exllamav3 sobre RTX 5080 16 GB (un flujo, 500 tokens):
-
-| | 3,0 bpw uniforme | Esta cuantizacion | Ganancia |
-|---|---|---|---|
-| Decodificacion plana | 57,2 tok/s | 57,5 tok/s | +0,5 % |
+| Decodificacion simple | 57,2 tok/s | 57,5 tok/s | +0,5 % |
 | Borrador MTP (4 tokens), codigo | 127,8 tok/s | 138,6 tok/s | +8,5 % |
 | Borrador MTP (4 tokens), prosa | 94,1 tok/s | 101,6 tok/s | +8,0 % |
 
-Rendimiento en Ferrite con dos DGX Spark (paralelismo tensorial sobre RoCE, NVFP4, DFlash2, 4 peticiones x 128K):
+Rendimiento en Ferrite con dos DGX Spark (tensor-parallel sobre RoCE, pesos de prompt NVFP4, decodificacion especulativa DFlash2, 4 peticiones x 128K de contexto):
 
 | Carga | Resultado |
 |---|---|
-| codigo, 1 peticion (2K / 32K de contexto) | 273 / 238 tok/s |
-| codigo, 4 peticiones combinadas | 473 tok/s |
-| ediciones de codigo, 1 / 4 peticiones | 582 / 481 tok/s |
-| prosa, 1 peticion | 76 tok/s |
-| procesamiento de prompt a 2K / 8K / 32K / 64K / 120K | 3.544 / 3.335 / 2.799 / 2.321 / 1.792 tok/s |
+| codigo, 1 peticion (contexto 2K / 32K) | 267 / 230 tok/s |
+| codigo, 4 peticiones combinadas | 467 tok/s |
+| ediciones de codigo, 1 / 4 peticiones | 564 / 472 tok/s |
+| prosa, 1 peticion | 74 tok/s |
+| preprocesado de prompt a 2K / 8K / 32K / 64K / 120K | 3.569 / 3.338 / 2.806 / 2.325 / 1.784 tok/s |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible; las metricas anteriores miden fidelidad frente al BF16 y velocidad de inferencia, no calidad absoluta de tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 13,3 GB de pesos en disco; con cache KV FP16 y overhead de contexto la huella supera los 13,3 GB, por lo que encaja en GPUs de 16 GB en escenarios de contexto moderado.
-- GPU recomendadas: NVIDIA DGX Spark (GB10), una o dos unidades para Ferrite; RTX 5080 de 16 GB como plataforma de referencia medida en exllamav3.
-- Cabe en GPU de consumo: si, al menos en RTX 5080 de 16 GB, con cuantizacion EXL3 de 3,0 bpw.
-- Opciones de despliegue: Ferrite (DGX Spark, servidor compatible con OpenAI), exllamav3 (Python, scripts, borrador MTP) y TabbyAPI (servidor compatible con OpenAI sobre GPU estandar).
-- Latencia y throughput: 57,5 tok/s en decodificacion plana y hasta 138,6 tok/s con MTP en una RTX 5080; en dos DGX Spark, 273 tok/s en codigo con 2K de contexto y 1.792 tok/s de procesamiento de prompt a 120K.
-- Requisito de version: exllamav3 1.6.1 o superior.
+- VRAM estimada: 13,3 GB de pesos; el contexto adicional depende de la cache KV. Con 128K de contexto en Ferrite cabe en 16 GB, segun el autor.
+- GPUs validadas: RTX 5080 y RTX 5060 Ti de 16 GB, RTX PRO 4000 Blackwell de 24 GB, y DGX Spark (GB10) en configuracion de uno o dos nodos.
+- Cabe en GPU de consumo: si, en tarjetas Blackwell de 16 GB o mas con el motor adecuado.
+- Motores de despliegue: Ferrite (Rust, servidor compatible con OpenAI, decodificacion especulativa, cache de prompt), exllamav3 (uso en Python, borrador MTP) y TabbyAPI (servidor compatible con OpenAI sobre GPUs soportadas por exllamav3).
+- Requisito de version: exllamav3 1.6.1 o superior para el formato EXL3.
+- Latencia y throughput: 57,5 tok/s en decodificacion simple y hasta 138,6 tok/s con borrador MTP en una RTX 5080; hasta 564 tok/s en ediciones de codigo con dos DGX Spark. El time to first token con cache de prompt y cuatro agentes baja de 14,7 a 5,0 s en el primer turno.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / bits | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-EXL3-3.0bpw-mix | 6,65B en safetensors del repo (base ~27B) | medido a 120K, servido a 128K | EXL3 mixta 3,0 bpw | Apache-2.0 | Hugging Face, exllamav3, TabbyAPI, Ferrite |
-| Qwen/Qwen3.8-27B (base) | ~27B, ~54 GB en BF16 | no disponible | BF16 | Apache-2.0 | Hugging Face |
-| Cuantizacion EXL3 uniforme 3,0 bpw del mismo base | mismo base | no disponible | EXL3 uniforme 3,0 bpw | Apache-2.0 | mismo repositorio de medicion upstream |
+| Qwen3.8-27B-EXL3-3.0bpw-mix (esta ficha) | 6.654.694.784 en safetensors | 120K medido, 128K servido | EXL3 mixto, 3,0 bpw medios, 13,3 GB | Apache-2.0 | Precision mixta 2/3/4 bits; KL 0,86-0,93x frente a 3,0 bpw uniforme |
+| Qwen3.8-27B EXL3 3,0 bpw uniforme | no disponible | no disponible | EXL3 uniforme, 3,0 bpw, cabeza a 6 bits | Apache-2.0 | Referencia del autor; lee 10,14 GB por token frente a 9,98 GB |
+| Qwen/Qwen3.8-27B (BF16) | no disponible (aprox. 54 GB en BF16) | no disponible | BF16 | Apache-2.0 | Modelo base sin cuantizar; referencia de calidad |
 
-La unica comparacion con datos concretos en la informacion disponible es frente a la cuantizacion uniforme de 3,0 bpw del mismo modelo base: esta version obtiene ratios de KL de 0,86x a 0,93x y lee 9,98 GB por token frente a 10,14 GB. No hay datos de benchmarks frente a otros modelos de la misma categoria.
+No se dispone de datos de benchmarks estandar que permitan comparar la calidad de tarea con modelos alternativos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- El repositorio registra 0 descargas y 0 likes, y fue creado en noviembre de 2026; no hay validacion independiente de las cifras del autor.
-- Las mediciones de KL y rendimiento provienen del propio autor y de arneses distintos (exllamav3 y Ferrite); el propio autor advierte que no deben compararse numeros entre tablas.
-- La cuantizacion a 3,0 bpw introduce degradacion frente a BF16: la concordancia top-1 en texto es del 91,04 %, lo que implica divergencias en aproximadamente 1 de cada 11 tokens.
-- Los idiomas soportados no estan documentados; no se puede garantizar calidad multilingue.
-- El soporte de tool calling y de agentes no esta documentado en la informacion disponible.
-- La torre de vision esta cuantizada a 6 bits pero Ferrite no la carga; el soporte multimodal efectivo no esta verificado.
-- Requiere exllamav3 1.6.1 o superior; versiones anteriores pueden no cargar los pesos.
-- El rendimiento publicado se midio en hardware concreto (RTX 5080, DGX Spark); el throughput en otras GPU puede diferir.
-- Licencia Apache-2.0 permite uso comercial, pero se heredan las limitaciones y sesgos del modelo base, no documentados aqui.
+- Es una cuantizacion de 3,0 bpw: la divergencia KL frente a BF16, aunque baja, no es cero (0,0138-0,0467 segun el conjunto), por lo que la salida puede diferir del modelo original.
+- El modelo base se denomina 27B pero el recuento real de parametros en safetensors es de 6.654.694.784; conviene verificar la coherencia con el checkpoint original antes de dimensionar infraestructura.
+- El checkpoint EXL3 solo es utilizable con exllamav3 1.6.1 o superior, Ferrite o TabbyAPI; no es compatible con llama.cpp, Ollama, vLLM ni TGI en este formato.
+- Ferrite es solo texto y no carga la torre de vision, aunque el checkpoint la conserve a 6 bits; el uso multimodal queda limitado a otros motores.
+- No hay informacion sobre sesgos, idiomas soportados ni riesgos de alucinacion especificos de esta cuantizacion; deben evaluarse sobre el modelo base.
+- Las cifras de rendimiento se midieron en hardware concreto (RTX 5080, DGX Spark) y con versiones de software especificas (Ferrite 0.6.1, medicion del 2026-11-15); no son extrapolables sin validacion.
+- El autor advierte que los numeros de distintos arneses de medida no son comparables entre si, solo dentro de la misma tabla.
+- La licencia Apache-2.0 permite uso comercial, pero se hereda del modelo base y conviene revisar sus terminos adicionales si los hubiera.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BHCC2025/Qwen3.8-27B-EXL3-3.0bpw-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio de Ferrite: https://github.com/BHCC2025/ferrite
+- Guia de Ferrite para RTX 5080: https://github.com/BHCC2025/ferrite/blob/main/docs/rtx-5080.md
+- Guia de Ferrite para RTX PRO 4000: https://github.com/BHCC2025/ferrite/blob/main/docs/rtx-pro-4000.md
+- Metodologia de benchmarks de Ferrite: https://github.com/BHCC2025/ferrite/blob/main/docs/benchmarks.md
 - Repositorio de exllamav3: https://github.com/turboderp-org/exllamav3
-- Motor Ferrite: https://github.com/BHCC2025/ferrite
-- Guia de inicio de Ferrite: https://github.com/BHCC2025/ferrite/blob/main/docs/quickstart.md
-- Paper de referencia (arxiv:2406.11235): https://arxiv.org/abs/2406.11235
+- Paper de referencia EXL3 (arXiv:2406.11235): https://arxiv.org/abs/2406.11235

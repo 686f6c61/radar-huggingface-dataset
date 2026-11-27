@@ -2,85 +2,85 @@
 
 ## Resumen
 
-Regzt/Qwen3.5-9B-SS13-NovaSector-LoRA es un ajuste fino (LoRA fusionado o adaptador, no especificado con claridad en la model card) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario Regzt en Hugging Face. El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado como compatible con text-generation-inference y con la arquitectura qwen3_5_text, lo que indica que hereda la familia Qwen 3.5 de Alibaba. El repositorio tiene un tamano de 0,1 GB, coherente con un adaptador LoRA o un conjunto de pesos parcial, no con un modelo completo de 9.000 millones de parametros en precision completa.
+Qwen3.5-9B-SS13-NovaSector-LoRA es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario Regzt en Hugging Face. Se distribuye principalmente en formato GGUF (cuantización Q4_K_M) para su uso con llama.cpp, y el repositorio incluye también pesos en safetensors. El modelo se ha entrenado y convertido con la herramienta Unsloth, orientada a acelerar el fine-tuning y la exportación a GGUF.
 
-La model card es extremadamente escasa: unicamente indica el autor, la licencia, el modelo base y que el entrenamiento se realizo con Unsloth (herramienta de ajuste fino optimizada). No se documentan datos de entrenamiento, hiperparametros, composicion del dataset, ni resultados de evaluacion. El nombre "SS13-NovaSector" sugiere un ajuste tematico o de estilo, probablemente orientado a un dominio concreto, pero no hay informacion que lo confirme.
+El modelo hereda la familia Qwen3.5, de 9.000 millones de parámetros, y está pensado para generación de texto e inferencia local en entornos con recursos moderados. La model card no documenta el dataset de ajuste, el propósito concreto del fine-tuning ni los hiperparámetros empleados, por lo que la información disponible sobre el proceso de entrenamiento es muy limitada.
 
-Por tanto, esta ficha debe interpretarse como una descripcion del modelo base Qwen3.5-9B con las incognitas propias de un ajuste fino no documentado. La relevancia actual es limitada: se trata de una publicacion de nicho, con cero descargas y un solo "like" en el momento de la consulta, sin benchmarks ni documentacion tecnica que permita evaluar su calidad frente al modelo base.
+Su relevancia práctica radica en que ofrece una variante GGUF lista para llama.cpp de un modelo de 9B bajo licencia Apache 2.0, lo que facilita el despliegue en hardware de consumo. No obstante, al tratarse de un ajuste comunitario sin benchmarks publicados ni documentación técnica detallada, debe evaluarse con cautela antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen 3.5, tag `qwen3_5_text`) |
-| Parametros totales | 9.000 millones (heredados del modelo base; no confirmado en la model card) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Arquitectura | Transformer (familia Qwen3.5; detalles no disponibles) |
+| Parametros totales | 9 000 millones (9B, segun el nombre del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | en (segun la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 0,1 GB, compatible con transformers) |
+| Tipos de cuantizacion | GGUF Q4_K_M (unico archivo documentado); pesos safetensors sin cuantizar |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la familia Qwen 3.5, un transformer decoder-only con atencion por causalidad, segun el tag `qwen3_5_text` del repositorio. El modelo base es unsloth/Qwen3.5-9B, una version distribuida por Unsloth del Qwen3.5-9B original. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion (estandar, GQA, linear) ni vocabulario, ya que la model card no los detalla y no se ha proporcionado documentacion adicional del modelo base.
+El modelo es un ajuste fino del base unsloth/Qwen3.5-9B, un transformer de 9B parámetros de la familia Qwen3.5. La model card no especifica la arquitectura interna (número de capas, dimensiones, mecanismos de atención ni si incorpora innovaciones como atención lineal o decodificación especulativa). Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset de ajuste, ni si se emplearon técnicas de RLHF, DPO o SFT.
 
-El ajuste fino se realizo con Unsloth, segun indica el autor, lo que implica un entrenamiento LoRA/QLoRA optimizado en memoria y velocidad. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO, ni hiperparametros como rango del adaptador, alpha o learning rate. El nombre "SS13-NovaSector" no se explica en la model card. No hay informacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) mas alla de las heredadas del modelo base, que tampoco se documentan.
+El único dato técnico aportado es que el fine-tuning y la conversión a GGUF se realizaron con Unsloth, que el autor describe como "2x faster". El nombre "SS13-NovaSector" sugiere un ajuste temático o de personaje, pero no se aporta ninguna descripción del corpus ni del objetivo del entrenamiento. No hay información sobre el proceso de alineación ni sobre posibles evaluaciones posteriores al ajuste.
 
 ## Capacidades
 
-- Generacion de texto en ingles (unico idioma declarado en la model card).
-- Razonamiento y generacion de codigo: capacidades heredadas del modelo base Qwen3.5-9B, no verificadas en este ajuste fino.
-- Soporte de tool calling / function calling: no confirmado para este ajuste; el modelo base Qwen 3.5 suele incluir soporte, pero no hay evidencia en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado.
-- Capacidades multilingues: limitadas al ingles segun la model card, aunque el modelo base podria soportar mas idiomas.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
+- Generación de texto en inglés, heredada del modelo base Qwen3.5-9B.
+- Inferencia local mediante llama.cpp con el archivo GGUF Q4_K_M incluido.
+- Compatibilidad con la plantilla de chat de Qwen mediante el flag `--jinja` en llama-cli.
+- La model card menciona un comando para modelos multimodales (`llama-mtmd-cli`), pero no se confirma que este ajuste conserve capacidades de visión.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: los metadatos solo declaran inglés.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Experimentacion con ajustes finos tematicos: el modelo puede emplearse como punto de partida para evaluar el efecto del ajuste "SS13-NovaSector" frente al modelo base Qwen3.5-9B en tareas de generacion de texto en ingles, dado que el repositorio es ligero (0,1 GB) y facil de cargar con transformers.
-- Prototipado rapido en entornos de investigacion: al estar etiquetado como compatible con text-generation-inference y transformers, puede desplegarse en pipelines de prueba para comparar respuestas con el modelo base sin necesidad de infraestructura pesada si se trata de un adaptador LoRA.
-- Generacion de texto creativo o de estilo: si el ajuste "NovaSector" esta orientado a un estilo o dominio concreto (no documentado), podria usarse para generar contenido en ese registro, siempre que se valide cualitativamente antes de produccion.
-- Fine-tuning posterior: al ser un ajuste sobre Qwen3.5-9B con licencia Apache 2.0, puede servir como base para nuevos ajustes con Unsloth o TRL, aprovechando las herramientas ya empleadas por el autor.
-- Evaluacion comparativa de tecnicas de ajuste: util para investigadores que quieran analizar como un LoRA entrenado con Unsloth sobre Qwen3.5-9B afecta a la perplejidad o a metricas de generacion en ingles.
-- Docencia y demostraciones: por su licencia permisiva y su tamano de repositorio reducido, puede emplearse en talleres sobre ajuste fino de modelos de 9B con LoRA, aunque sin garantias de calidad al no haber benchmarks.
+- Inferencia local en estación de trabajo: el archivo GGUF Q4_K_M permite ejecutar el modelo con llama.cpp en equipos con GPU de consumo, útil para prototipado sin depender de APIs externas.
+- Generación de texto en inglés para tareas creativas o de redacción: el ajuste temático ("NovaSector") puede emplearse para contenido de ficción o ambientación, aunque su calidad no está validada con benchmarks.
+- Experimentación con fine-tuning: sirve como ejemplo de pipeline Unsloth + exportación GGUF para desarrolladores que quieran replicar el flujo con sus propios datos.
+- Pruebas de integración con llama.cpp: útil para validar plantillas de chat y flags como `--jinja` en entornos de desarrollo.
+- Evaluación comparativa de ajustes comunitarios: puede usarse como caso de estudio sobre la variabilidad de calidad en fine-tunes sin documentación.
+- Despliegue en entornos con requisitos de licencia permisiva: al ser Apache 2.0, permite uso comercial, aunque la falta de evaluación previa obliga a validar el comportamiento antes de producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica para este ajuste. Como referencia del modelo base de 9B: en FP16 se requieren aproximadamente 18 GB de VRAM; en cuantizacion de 8 bits, unos 9-10 GB; en 4 bits, unos 5-6 GB. Estas cifras son estimaciones generales para un transformer de 9B y no estan confirmadas para este repositorio concreto.
-- GPU recomendadas: no disponible. Para el modelo base de 9B en FP16 se suelen emplear A100 (40/80 GB), H100 o RTX 4090 (24 GB); en cuantizacion 4 bits podria caber en RTX 3090/4090 o incluso en GPUs consumer de 8-12 GB.
-- Compatibilidad con GPU consumer: probable en cuantizacion baja (4 bits) si se generan pesos GGUF, pero el repositorio solo contiene safetensors y no se listan variantes cuantizadas.
-- Opciones de despliegue: transformers, text-generation-inference (segun tags), Unsloth/TRL para entrenamiento. No se confirma soporte de vLLM, llama.cpp u Ollama.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para el GGUF Q4_K_M: aproximadamente 5,5-6 GB de pesos, más overhead de contexto; en la práctica, unos 7-8 GB de VRAM para contextos moderados.
+- Pesos safetensors sin cuantizar (9B): en torno a 18 GB en FP16, más memoria para el contexto.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090 para el GGUF Q4_K_M; A100 o H100 para los pesos completos.
+- Cabe en GPU de consumo: sí, con el GGUF Q4_K_M en tarjetas de 8-12 GB.
+- Opciones de despliegue: llama.cpp (documentado en la model card), Ollama u otros frontends compatibles con GGUF; vLLM y TGI no están documentados para este ajuste.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Regzt/Qwen3.5-9B-SS13-NovaSector-LoRA | 9B (heredados) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino no documentado |
-| unsloth/Qwen3.5-9B (modelo base) | 9B | no disponible | Apache 2.0 (segun tag) | Hugging Face | Base oficial del ajuste, sin modificaciones |
-| Qwen3.5-9B (original de Alibaba) | 9B | no disponible | Apache 2.0 (segun tag) | Hugging Face | Modelo original de la familia Qwen 3.5 |
-
-No se dispone de datos de rendimiento para comparar quantitativamente con alternativas. La comparativa se limita a parametros y licencia, ya que no hay benchmarks publicados en la informacion proporcionada.
+| Regzt/Qwen3.5-9B-SS13-NovaSector-LoRA | 9B | no disponible | apache-2.0 | safetensors, GGUF | Ajuste comunitario sin benchmarks |
+| unsloth/Qwen3.5-9B (base) | 9B | no disponible | no disponible en la información | safetensors | Modelo base del que deriva el ajuste |
+| Alternativas de 9B de la familia Qwen | 9B | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se especifican datos de entrenamiento, hiperparametros ni evaluacion, lo que impide validar la calidad del ajuste.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se ha evaluado en este ajuste.
-- Sesgos conocidos: no documentados; al entrenarse presumiblemente sobre datos en ingles, puede heredar sesgos del corpus del modelo base y del dataset de ajuste (desconocido).
-- Limitacion de idioma: la model card declara unicamente ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no detalla si el ajuste incorpora datos con licencias adicionales; se recomienda precaucion en produccion.
-- Repositorio de 0,1 GB: probablemente contiene solo un adaptador LoRA o pesos parciales, no el modelo completo; es necesario combinar con el modelo base para su uso.
-- Cero descargas y un solo "like": no hay evidencia de uso real ni validacion por parte de la comunidad.
-- Nombre "SS13-NovaSector" sin explicacion: el dominio o estilo del ajuste es desconocido, lo que dificulta su aplicacion practica.
-- No se confirma soporte de tool calling, agentes ni modos de razonamiento extendido en este ajuste concreto.
+- No hay benchmarks ni evaluación publicada: se desconoce si el ajuste degrada capacidades del modelo base.
+- La model card no documenta el dataset de entrenamiento, lo que impide evaluar sesgos introducidos por el fine-tuning.
+- Riesgo de alucinación inherente a los modelos de 9B, sin datos específicos sobre mitigación.
+- Idiomas: los metadatos solo declaran inglés; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo.
+- La mención a `llama-mtmd-cli` para modelos multimodales no confirma que este ajuste mantenga visión; conviene verificarlo.
+- Aunque la licencia Apache 2.0 permite uso comercial, la ausencia de evaluación previa obliga a realizar pruebas propias antes de desplegarlo en producción.
+- Repositorio con muy poca tracción (196 descargas, 0 likes) y sin mantenimiento documentado; posibles problemas de reproducibilidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Regzt/Qwen3.5-9B-SS13-NovaSector-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
-- Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
+- Unsloth (repositorio): https://github.com/unslothai/unsloth

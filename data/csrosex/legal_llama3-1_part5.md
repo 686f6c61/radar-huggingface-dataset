@@ -2,97 +2,100 @@
 
 ## Resumen
 
-Llama-3-Legal-8B es un ajuste fino del modelo base unsloth/llama-3-8b, desarrollado por el usuario CSroseX y publicado en Hugging Face bajo el identificador CSroseX/Legal_llama3.1_part5. Está especializado en una tarea muy concreta: localizar y citar textualmente cláusulas dentro de contratos comerciales en inglés, devolviendo los fragmentos exactos del documento o la cadena "Not found." cuando la cláusula no aparece. No es un asistente legal general, sino una herramienta de extracción orientada a abogados, paralegales y desarrolladores de legal-tech que necesitan resaltar secciones relevantes en contratos largos.
+Legal_llama3.1_part5 es un ajuste fino del modelo Llama 3 de 8B de Meta, desarrollado por el usuario CSroseX y publicado en Hugging Face. El modelo está especializado en la extracción de cláusulas en contratos comerciales: recibe un tipo de cláusula (de las 41 definidas en el dataset CUAD) y un fragmento de contrato, y devuelve las frases exactas del contrato que abordan esa cláusula, o la cadena `Not found.` si no existe. No genera asesoramiento jurídico ni evalúa la calidad de las cláusulas; su función es localizar texto, como un resaltador automático.
 
-El modelo se entrenó sobre el dataset CUAD (Contract Understanding Atticus Dataset), que define 41 tipos de cláusulas contractuales, y hereda la arquitectura transformer decoder-only de Llama 3 con 8.030.261.248 parámetros totales. La ventana de entrenamiento por página es de aproximadamente 500 tokens, por lo que el flujo previsto consiste en trocear contratos completos en páginas solapadas y agregar las respuestas de cada una.
+El modelo parte de la base `unsloth/llama-3-8b` (8.030.261.248 parámetros) y se ha ajustado con el dataset `theatticusproject/cuad-qa`, orientado a la revisión de contratos. La model card reporta métricas de rendimiento en una versión actualizada (actualización de noviembre de 2026): una superposición de palabras con la cláusula correcta de 0,735, un 99,6 % de respuestas que son texto real del contrato y un 95,8 % de aciertos al responder "Not found." cuando la cláusula está ausente. Estas cifras se midieron sobre 1.000 páginas de 102 contratos no vistos durante el entrenamiento.
 
-Su relevancia actual radica en que aborda un problema práctico de la revisión contractual —la localización de cláusulas— con métricas declaradas de solapamiento léxico de 0,735, un 99,6 % de respuestas extraídas literalmente del contrato y un 95,8 % de acierto en la detección de cláusulas ausentes, medidas sobre 1.000 páginas de 102 contratos no vistos durante el entrenamiento.
+Es relevante para equipos de legal-tech y desarrolladores que necesitan automatizar la localización de cláusulas en contratos largos con un modelo de 8B que puede ejecutarse en hardware de consumo mediante cuantización. La licencia es Llama 3 Community, lo que impone restricciones de uso comercial que deben revisarse antes de integrarlo en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (Llama 3) |
-| Parámetros totales | 8.030.261.248 |
-| Parámetros activos | no disponible (no es MoE) |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (entrenado con páginas de ~500 tokens) |
-| Tipos de cuantización | GGUF Q8_0 y Q4_K_M; carga en 4-bit vía BitsAndBytes |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | GGUF Q8_0 y Q4_K_M; 4-bit BitsAndBytes (load_in_4bit) |
+| Idiomas soportados | en (inglés) |
 | Licencia | llama3 (Llama 3 Community License) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/llama-3-8b, una variante del Llama 3 de 8.000 millones de parámetros con arquitectura transformer decoder-only. El ajuste fino se realizó con la librería Unsloth, según las etiquetas del repositorio, y el corpus de entrenamiento es theatticusproject/cuad-qa, la versión de pregunta-respuesta del dataset CUAD. La tarea se formula como extracción: se proporciona un tipo de cláusula (una de las 41 categorías de CUAD) y un fragmento de contrato, y el modelo debe devolver las oraciones exactas del texto que corresponden a esa cláusula, o "Not found." si no existe.
+El modelo es un ajuste fino supervisado de Llama 3 8B, una arquitectura transformer decoder-only con atención causal estándar. No se documentan innovaciones arquitectónicas adicionales; el cambio principal respecto al modelo base es el ajuste sobre el dataset CUAD-QA para la tarea de extracción de cláusulas. La model card indica que el entrenamiento se realizó con páginas de aproximadamente 500 tokens, lo que condiciona el uso: para contratos completos se recomienda dividir el documento en páginas con solapamiento (por ejemplo, ventana de 512 tokens con 64 de solapamiento) y fusionar las respuestas.
 
-El formato de prompt está almacenado en el tokenizer, de modo que apply_chat_template construye la secuencia correcta: la pregunta, una línea con solo `---` y el texto del contrato. El entrenamiento se hizo sobre páginas de aproximadamente 500 tokens, lo que condiciona el uso: para contratos completos hay que dividir el documento en ventanas solapadas (por ejemplo, 512 tokens con 64 de solapamiento) y consolidar las respuestas. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni el uso de RLHF o DPO.
+No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset más allá de CUAD-QA, ni si se aplicaron técnicas de RLHF o DPO. El autor menciona que la versión actual corrige problemas de la versión anterior (mejora de 0,185 a 0,735 en superposición de palabras; de 12,3 % a 99,6 % en respuestas que son texto real del contrato; de 0 % a 95,8 % en aciertos de "Not found."). El prompt se construye con `apply_chat_template`, e incluye la pregunta, una línea con solo `---` y el fragmento de contrato.
 
 ## Capacidades
 
-- Extracción literal de cláusulas contractuales: devuelve las oraciones exactas del contrato relacionadas con un tipo de cláusula solicitado.
-- Detección de ausencia: responde "Not found." cuando la cláusula no está presente en el fragmento, con una tasa declarada del 95,8 %.
-- Cobertura de 41 tipos de cláusulas de CUAD: desde "Governing Law" y "Non-Compete" hasta "Cap On Liability", "Liquidated Damages", "Ip Ownership Assignment" o "Third Party Beneficiary".
-- Procesamiento por páginas: diseñado para fragmentos de unos 500 tokens, con agregación posterior para contratos completos.
-- Generación de texto en inglés con formato conversacional (chat template integrado en el tokenizer).
+- Extracción de cláusulas contractuales: localiza y cita las frases exactas del contrato relacionadas con uno de los 41 tipos de cláusula del dataset CUAD (por ejemplo, Governing Law, Non-Compete, Cap On Liability, Ip Ownership Assignment).
+- Respuesta de ausencia controlada: devuelve `Not found.` cuando la cláusula no está presente en el fragmento, con una tasa reportada del 95,8 % de acierto.
+- Fidelidad al texto fuente: el 99,6 % de las respuestas son texto real extraído del contrato, lo que reduce el riesgo de paráfrasis o invención en la cita.
+- Procesamiento por páginas: diseñado para fragmentos de aproximadamente 500 tokens, con fusión de respuestas para contratos completos.
+- Formato conversacional: usa la plantilla de chat de Llama 3 con el formato pregunta + `---` + extracto.
 - No soporta tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido según la información disponible.
-- Capacidad multilingüe limitada al inglés.
+- Capacidad multilingüe limitada al inglés (`language: en`).
 
 ## Casos de uso
 
-- Revisión de contratos en despachos jurídicos: un paralegal introduce el tipo de cláusula y las páginas del contrato, y el modelo devuelve las oraciones relevantes para que un abogado las revise, reduciendo el tiempo de localización manual en documentos extensos.
-- Construcción de pipelines de extracción en legal-tech: integración del modelo en un servicio que trocea contratos en páginas solapadas, consulta cada una y consolida las respuestas únicas para generar un índice de cláusulas por documento.
-- Due diligence en fusiones y adquisiciones: procesamiento por lotes de cientos de contratos para localizar cláusulas críticas como cambio de control, no competencia o asignación de propiedad intelectual antes de la revisión humana.
-- Auditoría de contratos de proveedores: detección de cláusulas de renovación automática, períodos de preaviso o límites de responsabilidad en acuerdos comerciales con terceros.
-- Verificación de ausencia de cláusulas: comprobar que un contrato no contiene determinadas estipulaciones (por ejemplo, cláusulas de no competencia) gracias a la tasa declarada de acierto en "Not found.".
-- Prototipado local con GGUF: despliegue en estaciones de trabajo de desarrolladores mediante llama.cpp u Ollama con cuantización Q4_K_M para pruebas de concepto sin infraestructura GPU dedicada.
-- Enriquecimiento de bases de datos contractuales: extracción automática de fragmentos por tipo de cláusula para poblar índices de búsqueda o sistemas de gestión documental.
+- Revisión inicial de contratos en despachos jurídicos: el modelo recibe un contrato dividido en páginas y devuelve las frases exactas de cláusulas como Governing Law o Termination For Convenience, lo que permite a un paralegal localizar rápidamente los puntos a revisar sin leer el documento completo.
+- Extracción de metadatos contractuales para bases de datos legal-tech: se consulta por tipos como Agreement Date, Effective Date o Expiration Date y se almacenan las citas devueltas para indexar contratos en un repositorio searchable.
+- Due diligence en fusiones y adquisiciones: se procesan lotes de contratos con ventanas solapadas para detectar cláusulas de Change Of Control, Anti-Assignment o Non-Compete, y se agrupan las citas por contrato para revisión humana.
+- Automatización de banderas de riesgo en pipelines de CLM (Contract Lifecycle Management): el modelo actúa como primer filtro que marca páginas con cláusulas de Uncapped Liability o Liquidated Damages, y el equipo legal revisa solo esas páginas.
+- Asistencia a abogados internos en empresas: integración en un chatbot interno que, dada una pregunta sobre un contrato concreto, devuelve la cita textual de la cláusula correspondiente para que el abogado la valide, sin generar asesoramiento directo.
+- Desarrollo de herramientas de resaltado para editores de contratos: el modelo se usa como backend de una función "buscar cláusula" que resalta en el documento las frases devueltas, aprovechando su fidelidad al texto fuente (99,6 % de respuestas literales).
+- Evaluación de conformidad de plantillas: se compara la presencia o ausencia de cláusulas obligatorias (por ejemplo, Insurance o Audit Rights) en contratos de proveedores frente a una plantilla interna, usando la respuesta `Not found.` como señal de omisión.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Valor actual | Versión anterior |
-|---|---|---|
-| Solapamiento léxico con la cláusula correcta | 0,735 | 0,185 |
-| Respuestas que son texto real del contrato | 99,6 % | 12,3 % |
-| "Not found." correcto cuando la cláusula está ausente | 95,8 % | 0 % |
+La model card reporta métricas medidas sobre 1.000 páginas de 102 contratos no vistos durante el entrenamiento. No se proporcionan resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
-Las métricas se midieron sobre 1.000 páginas procedentes de 102 contratos no vistos durante el entrenamiento. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | Version actual | Version anterior |
+|---|---|---|
+| Superposición de palabras con la cláusula correcta | 0,735 | 0,185 |
+| Respuestas que son texto real del contrato | 99,6 % | 12,3 % |
+| Acierto de "Not found." cuando la cláusula está ausente | 95,8 % | 0 % |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: en torno a 16 GB para los 8.030 millones de parámetros.
+- VRAM estimada para inferencia en FP16: aproximadamente 16 GB para los 8.030 millones de parámetros.
 - VRAM estimada en 4-bit (BitsAndBytes): aproximadamente 6 GB según la model card.
-- GPU recomendadas: A100, H100 o L40S para despliegues de producción con FP16; RTX 4090 o RTX 3090 para FP16 en consumer; RTX 3060 de 12 GB o superiores para cuantización 4-bit.
-- Cabe en GPU consumer: sí, con cuantización 4-bit en tarjetas de 8-12 GB, y en FP16 en tarjetas de 16 GB o más.
-- Opciones de despliegue: transformers, text-generation-inference (etiqueta endpoints_compatible), llama.cpp y Ollama mediante los archivos GGUF Q8_0 y Q4_K_M.
+- VRAM estimada en GGUF Q8_0: alrededor de 8,5-9 GB; en Q4_K_M: alrededor de 5-6 GB (estimación orientativa según el tamaño de los pesos).
+- GPU recomendadas: A100, H100 o L40S para despliegues de alto throughput; RTX 4090 (24 GB) para FP16 sin problemas; RTX 3090/4080 (16-24 GB) para FP16 o Q8_0.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB con Q4_K_M o 4-bit, y en RTX 4060 Ti 16 GB en FP16.
+- Opciones de despliegue: transformers (con `device_map="auto"`), llama.cpp/Ollama para GGUF, text-generation-inference (el repo incluye el tag `text-generation-inference`), vLLM para serving compatible con endpoints.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CSroseX/Legal_llama3.1_part5 | 8,03 B | no disponible (~500 tokens por página en entrenamiento) | Extracción de cláusulas CUAD | llama3 | Hugging Face, GGUF |
-| meta-llama/Meta-Llama-3-8B | 8,03 B | 8.192 tokens | Propósito general | llama3 | Hugging Face |
-| unsloth/llama-3-8b | 8,03 B | 8.192 tokens | Base para ajuste fino | llama3 | Hugging Face |
-| Modelos legales generalistas de 7-8 B | ~7-8 B | variable | Asistencia legal conversacional | variable | Hugging Face |
+| CSroseX/Legal_llama3.1_part5 | 8,03B | no disponible | Extracción de cláusulas CUAD | Llama 3 Community | Hugging Face, 217 descargas |
+| unsloth/llama-3-8b (base) | 8,03B | 8.192 tokens (Llama 3) | Propósito general | Llama 3 Community | Hugging Face |
+| Modelos legales basados en Llama 3 de 8B | ~8B | variable | Ajuste legal general | variable | Hugging Face |
 
-La comparación con otros ajustes legales específicos de extracción de cláusulas no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos legales en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y especialización.
 
 ## Limitaciones y advertencias
 
-- No proporciona asesoramiento jurídico ni evalúa la calidad o el riesgo de una cláusula; solo localiza texto.
-- Entrenado exclusivamente en inglés; no se garantiza comportamiento en otros idiomas.
-- Diseñado para páginas de unos 500 tokens; contratos completos requieren troceado con solapamiento y agregación manual.
-- Riesgo de alucinación mitigado pero no eliminado: aunque el 99,6 % de las respuestas son texto literal del contrato, puede omitir cláusulas presentes o generar fragmentos incorrectos en textos atípicos.
-- Sesgos heredados del corpus CUAD, compuesto por contratos comerciales de un contexto jurídico concreto (Estados Unidos), lo que puede reducir la cobertura en otras jurisdicciones o tipos contractuales.
-- Licencia Llama 3 Community: restricciones de uso comercial, obligación de atribución y cláusulas de uso aceptable que deben revisarse antes de un despliegue en producción.
-- La model card advierte de que las copias descargadas antes del 20 de noviembre de 2026 corresponden a una versión anterior; los archivos GGUF deben descargarse de nuevo.
-- No dispone de tool calling ni capacidades de agente; cualquier orquestación multi-paso debe implementarse externamente.
+- Sesgos: no se documentan sesgos específicos, pero al estar entrenado únicamente con contratos comerciales en inglés del dataset CUAD, puede tener un rendimiento inferior en contratos de otras jurisdicciones, idiomas o géneros textuales.
+- Riesgo de alucinación: aunque la model card reporta un 99,6 % de respuestas literales del contrato, existe un 0,4 % de respuestas que no son texto real; en producción debe validarse que la cita aparezca en el documento fuente.
+- Limitación de contexto: el modelo se entrenó con páginas de ~500 tokens y la longitud de contexto no está documentada; para contratos largos es obligatorio dividir en ventanas con solapamiento, lo que puede fragmentar cláusulas que cruzan páginas.
+- Idioma: solo soporta inglés; no debe usarse con contratos en castellano u otros idiomas sin un ajuste adicional.
+- Licencia: Llama 3 Community License impone restricciones de uso comercial (incluida la obligación de atribución y límites para empresas con más de 700 millones de usuarios mensuales); debe revisarse antes de integrarlo en un producto.
+- Uso previsto restringido: no es un modelo de asesoramiento jurídico ni de chat legal general; no evalúa si una cláusula es buena o mala, solo la localiza.
+- Actualización de pesos: la model card advierte que las copias descargadas antes del 20 de noviembre de 2026 corresponden a la versión antigua; los archivos GGUF deben descargarse de nuevo.
+- Tamaño del repositorio: 70,2 GB, lo que incluye múltiples formatos (safetensors y GGUF) y puede requerir espacio de disco considerable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/CSroseX/Legal_llama3.1_part5
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b
-- Llama 3 de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B
-- Dataset CUAD QA: https://huggingface.co/datasets/theatticusproject/cuad-qa
+- Dataset CUAD-QA: https://huggingface.co/datasets/theatticusproject/cuad-qa
 - Proyecto CUAD (Atticus Project): https://www.atticusprojectai.org/cuad
+- Llama 3 de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B
+- Licencia Llama 3: https://huggingface.co/CSroseX/Llama-3-Legal-8B/blob/main/LICENSE
 - Historial de versiones del repositorio: https://huggingface.co/CSroseX/Llama-3-Legal-8B/tree/1b6a47d9321c73464466131d1d7eb594c1e6c847

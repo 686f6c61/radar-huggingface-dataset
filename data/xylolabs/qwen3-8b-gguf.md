@@ -2,96 +2,101 @@
 
 ## Resumen
 
-Xylolabs/Qwen3-8B-GGUF es una coleccion de cuantizaciones GGUF del modelo Qwen3-8B de Alibaba Qwen, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. No se trata de un modelo nuevo, sino de una redistribucion optimizada del modelo base: el repositorio incluye tres ficheros cuantizados (Q5_K_M, IQ4_XS e IQ4_XS con importance matrix) junto con el tokenizer y la plantilla de chat originales. El modelo base cuenta con 8.190.735.360 parametros y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Xylolabs/Qwen3-8B-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo Qwen/Qwen3-8B, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. No se trata de un modelo nuevo, sino de una conversion y cuantizacion del checkpoint original de Qwen, con el objetivo de facilitar el despliegue en hardware de consumo y estaciones de trabajo sin GPU de datacenter. El modelo base cuenta con 8.190.735.360 parametros totales y una licencia Apache 2.0 heredada del original.
 
-La relevancia de esta publicacion radica en la trazabilidad de la cuantizacion: el autor documenta metricas objetivas de degradacion frente a BF16 (divergencia KL media y porcentaje de coincidencia top-1 sobre 16.240 posiciones de texto en ingles y coreano), algo que no es habitual en la mayoria de repositorios GGUF. Esto permite elegir el fichero en funcion del compromiso entre tamano y fidelidad de forma informada, en lugar de estimar la perdida de calidad a ojo.
+La relevancia de esta publicacion reside en la tabla de precision comparativa que acompaña a los ficheros: el autor mide la divergencia KL y la coincidencia top-1 frente a BF16 para sus propias cuantizaciones y para las de Unsloth y llama.cpp, lo que permite elegir el fichero con un compromiso controlado entre tamano y fidelidad. El repositorio incluye tres variantes (Q5_K_M, IQ4_XS e IQ4_XS-imat) con tamanos de 5,851 GB, 4,593 GB y 4,562 GB respectivamente.
 
-El repositorio ocupa 15,0 GB e incluye una tabla de recomendacion de hardware que cubre desde una RTX 4090 de 24 GB hasta aceleradores B300 de 288 GB, siempre con una ventana de contexto de 32K tokens. La cuantizacion Q5_K_M es la recomendada por el autor para todos los perfiles de hardware listados.
+La model card esta orientada a la ejecucion practica: indica el commit exacto de llama.cpp verificado, los flags recomendados y una tabla de asignacion de fichero segun memoria disponible, desde una RTX 4090 de 24 GB hasta una B300 de 288 GB. El contexto indicado en esa tabla es de 32K tokens para todos los perfiles de hardware listados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (modelo base Qwen3-8B; detalles de atencion no disponibles en la informacion proporcionada) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3-8B; la model card de la cuantizacion no detalla la arquitectura) |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 32K tokens (segun la tabla de hardware del autor; contexto nativo del modelo base no confirmado en la informacion disponible) |
-| Tipos de cuantizacion | Q5_K_M (5,85 GB), IQ4_XS (4,59 GB), IQ4_XS-imat (4,56 GB) |
-| Idiomas soportados | en, ko (segun tags del repositorio) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (un fichero por cuantizacion, con tokenizer y chat template incluidos) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | 32K (segun la tabla de asignacion por hardware de la model card) |
+| Tipos de cuantizacion | Q5_K_M, IQ4_XS, IQ4_XS-imat (imatrix) |
+| Idiomas soportados | en, ko |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-Esta publicacion no entrena ningun modelo: es una conversion y cuantizacion del checkpoint Qwen/Qwen3-8B. La arquitectura subyacente es la del Qwen3-8B original (transformer decoder-only con 8.190.735.360 parametros), pero la model card de este repositorio no detalla la composicion del dataset de entrenamiento, el numero de tokens, ni si hubo fases de RLHF o DPO. Esa informacion debe consultarse en la model card del modelo base y en el informe tecnico de Qwen3.
+Esta publicacion no entrena ningun modelo: es una conversion a GGUF y cuantizacion de Qwen/Qwen3-8B, tal como declara el campo `base_model_relation: quantized`. La model card remite al repositorio original de Qwen3-8B para el informe tecnico y la citacion, por lo que los detalles de arquitectura, composicion del dataset de entrenamiento, numero de tokens y fases de alineacion (RLHF/DPO) no se recogen en la informacion disponible de esta ficha.
 
-La innovacion tecnica destacable de este repositorio es el uso de una importance matrix (imatrix) para generar la cuantizacion IQ4_XS-imat. Segun las metricas del autor, el uso de imatrix reduce la divergencia KL media frente a BF16 de 0,0461 (IQ4_XS estandar) a 0,0302, y eleva la coincidencia top-1 del 90,31% al 92,13%, con un coste de apenas 0,03 GB adicionales. Las metricas se calcularon sobre 16.240 posiciones de texto en ingles y coreano, comparando contra una pasada BF16 en transformers. La cuantizacion Q5_K_M alcanza 0,0126 de KL media y 94,72% de top-1, siendo la opcion de mayor fidelidad.
+La innovacion tecnica aportada por Xylolabs es la evaluacion de fidelidad de las cuantizaciones. Se comparan las variantes propias con las de Unsloth y las nativas de llama.cpp midiendo divergencia KL y coincidencia top-1 frente a BF16 sobre WikiText-2 y sobre un conjunto held-out. La variante IQ4_XS-imat emplea una matriz de importancia (imatrix) para guiar la cuantizacion, y obtiene 0,035033 de KL en WikiText-2 y 92,353 % de top-1, frente a 0,051816 y 90,618 % de la IQ4_XS sin imatrix, con un tamano ligeramente inferior (4,562 GB frente a 4,593 GB).
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio incluye la plantilla de chat original de Qwen3, por lo que el modelo funciona directamente en llama-cli y llama-server con el flag `--jinja`.
-- Razonamiento y conocimiento general: hereda las capacidades del Qwen3-8B base (no detalladas en esta model card).
-- Capacidades multilingues limitadas a ingles y coreano segun los tags del repositorio; el resto de idiomas del modelo base no se documentan aqui.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con infraestructura de inferencia tipo API.
-- Inferencia en CPU, CUDA y Metal: los GGUF permiten ejecucion en hardware sin GPU dedicada.
-- No se documentan en esta model card capacidades de tool calling, agentes, vision, audio ni modo thinking; deben verificarse en el modelo base.
+- Generacion de texto conversacional y de proposito general, segun el pipeline `text-generation` y la etiqueta `conversational`.
+- Razonamiento y generacion de codigo: capacidades heredadas del modelo base Qwen3-8B, aunque la model card de la cuantizacion no las detalla ni las evalua de forma especifica.
+- Soporte multilingue limitado a ingles y coreano segun los metadatos del repositorio (en, ko).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que permite servirlo mediante infraestructura compatible.
+- Ejecucion con llama.cpp en CUDA, Metal y CPU, incluyendo `llama-cli` y `llama-server` con el flag `--jinja` para plantillas de chat.
+- No se documentan en la informacion disponible capacidades de vision, audio, tool calling explicito ni modo de razonamiento extendido (thinking mode) para esta distribucion concreta.
 
 ## Casos de uso
 
-- Despliegue en estaciones de trabajo con una sola GPU consumer: con Q5_K_M (5,9 GB) cabe holgadamente en una RTX 4090 o RTX 3090 de 24 GB con contexto de 32K, segun la tabla del autor, lo que permite ejecutar un asistente conversacional local sin infraestructura cloud.
-- Prototipado rapido en portatiles o equipos sin GPU: la cuantizacion IQ4_XS (4,59 GB) permite ejecutar el modelo en CPU con llama.cpp, util para pruebas de integracion antes de escalar a produccion.
-- Servicio de inferencia HTTP: llama-server acepta los mismos flags que llama-cli, de modo que el modelo puede exponerse como endpoint compatible con clientes OpenAI en una maquina con DGX Spark o Mac Studio con memoria unificada.
-- Aplicaciones en coreano e ingles: el autor valido las cuantizaciones sobre texto en ambos idiomas, lo que respalda su uso en productos dirigidos a esos mercados.
-- Evaluacion de cuantizaciones en pipelines de investigacion: las metricas KL y top-1 publicadas permiten usar este repositorio como referencia para estudiar el impacto de imatrix frente a cuantizacion estandar.
-- Despliegue en hardware de memoria unificada de gran capacidad: la tabla cubre Mac Studio M5 Ultra (hasta 512 GB) y DGX Spark (128 GB), escenarios donde el modelo puede convivir con otros servicios en la misma maquina.
+- Despliegue local en estacion de trabajo con RTX 4090 o RTX 3090: con 24 GB de VRAM se puede cargar `Qwen3-8B-Q5_K_M.gguf` (5,9 GB) y operar con 32K de contexto, dejando margen para el resto del sistema y para el cache KV.
+- Servicio de inferencia en CPU o Apple Silicon: las variantes IQ4_XS de 4,6 GB permiten ejecutar el modelo en equipos sin GPU dedicada mediante llama.cpp, con `-ngl` ajustado al hardware disponible.
+- Asistente conversacional de contexto largo: la ventana de 32K tokens indicada en la tabla de hardware permite mantener conversaciones multi-turno con historial extenso o procesar documentos de entrada de decenas de miles de tokens.
+- Prototipado y evaluacion de pipelines: el formato GGUF y la compatibilidad con `llama-server` facilitan levantar un endpoint HTTP local para pruebas de integracion antes de migrar a un despliegue mayor.
+- Entornos con memoria unificada (DGX Spark, Mac Studio M5 Max/Ultra): la model card lista explicitamente estos equipos con 128 GB o mas, lo que permite cargar el fichero Q5_K_M con contexto completo sin fragmentar el modelo.
+- Seleccion guiada por fidelidad: la tabla de precision permite elegir la cuantizacion segun el presupuesto de error aceptable; por ejemplo, IQ4_XS-imat ofrece 92,353 % de top-1 con 4,562 GB, mientras que Q5_K_M sube a 94,941 % con 5,851 GB.
+- Uso en coreano e ingles: el modelo declara soporte para ambos idiomas, adecuado para aplicaciones bilingues en esos dos mercados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor solo publica metricas de fidelidad de cuantizacion frente a BF16:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente proporciona metricas de fidelidad de cuantizacion frente a BF16:
 
-| Cuantizacion | Tamano | KL media vs BF16 | Coincidencia top-1 vs BF16 |
-|---|---:|---:|---:|
-| Q5_K_M | 5,85 GB | 0,0126 | 94,72% |
-| IQ4_XS | 4,59 GB | 0,0461 | 90,31% |
-| IQ4_XS-imat | 4,56 GB | 0,0302 | 92,13% |
-
-Las metricas cubren 16.240 posiciones de texto en ingles y coreano, comparadas contra una pasada BF16 en transformers.
+| Cuantizacion | Tamano | WikiText-2 KL | WikiText-2 top-1 | Held-out KL | Held-out top-1 |
+|---|---:|---:|---:|---:|---:|
+| Unsloth UD-Q8_K_XL | 10,824 GB | 0,000681 | 98,956 % | 0,000712 | 99,029 % |
+| Unsloth / llama.cpp Q8_0 | 8,710 GB | 0,001479 | 98,289 % | 0,001268 | 98,422 % |
+| Unsloth UD-Q6_K_XL | 7,491 GB | 0,002700 | 97,667 % | 0,002557 | 97,892 % |
+| Unsloth Q5_K_M | 5,851 GB | 0,009306 | 95,902 % | 0,007977 | 96,500 % |
+| Q5_K_M (Xylolabs) | 5,851 GB | 0,014643 | 94,941 % | 0,012691 | 95,471 % |
+| Unsloth Q4_K_M | 5,028 GB | 0,025806 | 93,500 % | 0,022993 | 93,627 % |
+| Unsloth IQ4_XS | 4,581 GB | 0,034084 | 92,426 % | 0,033473 | 92,569 % |
+| IQ4_XS (Xylolabs) | 4,593 GB | 0,051816 | 90,618 % | 0,048253 | 91,157 % |
+| IQ4_XS-imat (Xylolabs) | 4,562 GB | 0,035033 | 92,353 % | 0,032134 | 92,863 % |
+| Unsloth UD-IQ2_XXS | 2,605 GB | 0,642090 | 68,446 % | 0,737738 | 66,333 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 5,9 GB (Q5_K_M), 4,6 GB (IQ4_XS e IQ4_XS-imat) solo para los pesos; hay que sumar la cache KV en f16 para el contexto deseado y unos 2 GB de runtime.
-- Regla del autor para que un fichero quepa: tamano del fichero + cache KV al contexto + 2 GB de runtime debe quedar por debajo del 90% de la memoria disponible.
-- GPU recomendadas segun el autor: RTX 4090, RTX 3090, RTX 5090, RTX 6000 Ada, H100, H200, B200, B300 y RTX PRO 6000 Blackwell, todas con Q5_K_M y contexto de 32K.
-- Cabe en GPU consumer: si, en RTX 4090 y RTX 3090 (24 GB) con Q5_K_M y 32K de contexto.
-- Memoria unificada: Mac Studio M5 Max y M5 Ultra, DGX Spark (128 GB), todos con Q5_K_M a 32K.
-- Opciones de despliegue: llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior), con llama-cli y llama-server; requiere el flag `--jinja` para la plantilla de chat.
+- VRAM estimada para inferencia: aproximadamente 4,6 GB para IQ4_XS e IQ4_XS-imat y 5,9 GB para Q5_K_M, sin contar el cache KV, que crece con la longitud de contexto.
+- GPU recomendadas segun la model card: RTX 4090 y RTX 3090 (24 GB), RTX 5090 (32 GB), RTX 6000 Ada o dos GPU de 24 GB (48 GB), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB unificada), H200 (141 GB), B200 (192 GB), Mac Studio M5 Ultra (256 GB y 512 GB unificada) y B300 (288 GB).
+- Cabe en GPU de consumo: si, en cualquier GPU con 6 GB o mas de VRAM libre para la variante Q5_K_M, y en torno a 5 GB para las variantes IQ4_XS.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con el commit verificado `cd959bae99ff4bed22bef2604f45241c09bbb8c8`; compilacion con `-DGGML_CUDA=ON` para NVIDIA. La model card no menciona otros runners como Ollama, vLLM o TGI para estos ficheros.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizaciones | Licencia | Notas |
-|---|---:|---|---|---|---|
-| Xylolabs/Qwen3-8B-GGUF | 8,19B | 32K (segun tabla del autor) | Q5_K_M, IQ4_XS, IQ4_XS-imat | Apache 2.0 | Metricas KL y top-1 publicadas frente a BF16 |
-| Qwen/Qwen3-8B (base) | 8,19B | no disponible en esta ficha | safetensors (formato original) | Apache 2.0 | Fuente de la cuantizacion; incluye informe tecnico |
-| Otras cuantizaciones GGUF de Qwen3-8B | 8,19B | depende del empaquetado | variable | Apache 2.0 | No se dispone de datos comparativos en la informacion proporcionada |
-
-No se dispone de informacion sobre modelos alternativos de otros autores con la que comparar rendimiento de tareas en esta ficha.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Xylolabs/Qwen3-8B-GGUF | 8,19 B | 32K | GGUF | apache-2.0 | Tres cuantizaciones; tabla de fidelidad frente a BF16 |
+| Unsloth Qwen3-8B GGUF | 8,19 B (base) | no disponible | GGUF | apache-2.0 (heredada) | Dynamic quants (UD-Q8_K_XL, UD-Q4_K_XL, etc.) con mejor KL que las de Xylolabs a igual tamano |
+| llama.cpp Qwen3-8B GGUF | 8,19 B (base) | no disponible | GGUF | apache-2.0 (heredada) | Cuantizaciones estandar (Q8_0, Q6_K, Q4_K_M, Q3_K_M) |
+| Qwen/Qwen3-8B (original) | 8,19 B | no disponible en esta ficha | safetensors | apache-2.0 | Checkpoint BF16 de referencia |
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion, no un modelo nuevo: cualquier degradacion respecto al Qwen3-8B original (especialmente en IQ4_XS, con 90,31% de top-1 frente a BF16) se acumula sobre las limitaciones del modelo base.
-- La validacion de fidelidad cubre solo ingles y coreano; el comportamiento en otros idiomas no esta documentado en este repositorio.
-- Los tags de idioma del repositorio solo listan en y ko, aunque el modelo base pueda soportar mas idiomas; no se garantiza su calidad en esta publicacion.
-- Riesgo de alucinacion: inherente al modelo base; no se documentan mitigaciones especificas en esta model card.
-- Sesgos conocidos: no documentados en la informacion proporcionada; deben consultarse en la model card de Qwen3-8B.
-- Licencia Apache 2.0 permite uso comercial, pero el fichero NOTICE del repositorio atribuye la autoria del modelo original; Xylolabs declara no estar afiliado ni respaldado por los autores de Qwen.
-- Requiere una version concreta de llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior); versiones anteriores pueden no cargar correctamente los ficheros.
-- El contexto de 32K indicado en la tabla de hardware corresponde a la configuracion recomendada por el autor, no necesariamente al maximo nativo del modelo base.
+- Alucinacion: no se documentan evaluaciones de fiabilidad factual en la informacion disponible; como modelo generativo de 8B, presenta riesgo de alucinacion en dominios especializados.
+- Sesgos: no se publican analisis de sesgo en la model card de esta cuantizacion.
+- Idiomas: los metadatos solo declaran ingles y coreano; el rendimiento en castellano no esta verificado ni declarado.
+- Fidelidad de cuantizacion: las variantes de Xylolabs muestran mayor divergencia KL que las equivalentes de Unsloth a igual tamano (por ejemplo, Q5_K_M: 0,014643 frente a 0,009306 en WikiText-2), lo que conviene tener en cuenta si se prioriza maxima fidelidad.
+- Contexto: la model card fija 32K en su tabla de hardware, por debajo de la ventana nativa del modelo base segun la documentacion de Qwen; no se detalla el impacto en calidad al operar con contextos muy largos.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre los pesos convertidos; conviene revisar el fichero LICENSE incluido en el repositorio.
+- Compatibilidad: la ejecucion esta verificada con un commit concreto de llama.cpp; versiones distintas pueden requerir ajustes de plantilla o de flags (`--jinja`).
+- Repositorio con 0 likes y actualizacion reciente (25 de noviembre de 2026): la tabla de precision se amplio en esa fecha con los ficheros de Unsloth y llama.cpp, por lo que las cifras comparativas pueden cambiar en futuras revisiones.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Licencia en el repositorio: https://huggingface.co/Xylolabs/Qwen3-8B-GGUF/blob/main/LICENSE
-- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs citado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Licencia incluida en el repo: https://huggingface.co/Xylolabs/Qwen3-8B-GGUF/blob/main/LICENSE
+- llama.cpp (commit verificado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de Xylolabs referenciado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Grafica de KL media por tamano: https://huggingface.co/Xylolabs/Qwen3-8B-GGUF/resolve/main/accuracy-mean-kl.png
+- Grafica de coincidencia top-1 por tamano: https://huggingface.co/Xylolabs/Qwen3-8B-GGUF/resolve/main/accuracy-top1.png

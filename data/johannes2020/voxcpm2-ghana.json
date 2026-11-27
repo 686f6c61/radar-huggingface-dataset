@@ -5,7 +5,7 @@
   "author": "Johannes2020",
   "url": "https://huggingface.co/Johannes2020/voxcpm2-ghana",
   "created_at": "2026-11-26T02:47:28.000Z",
-  "updated_at": "2026-11-26T02:50:20.000Z",
+  "updated_at": "2026-11-27T04:29:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -44,6 +44,7 @@
   ],
   "tags": [
     "voxcpm",
+    "tensorboard",
     "safetensors",
     "text-to-speech",
     "tts",
@@ -91,8 +92,8 @@
   "trending_score": 0,
   "parameters": 2290004544,
   "parameters_human": "2.29B",
-  "storage_bytes": 4957031714,
-  "storage_human": "5.0 GB",
+  "storage_bytes": 10460542806,
+  "storage_human": "10.5 GB",
   "context_length": null,
   "base_model": null,
   "formats": [

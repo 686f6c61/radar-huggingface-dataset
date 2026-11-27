@@ -2,76 +2,89 @@
 
 ## Resumen
 
-FrontFinder es un modelo de inteligencia artificial diseñado para la identificación automática de frentes meteorológicos (fríos, cálidos, estacionarios, ocluidos y líneas secas) sobre los Estados Unidos continentales y el dominio de análisis de superficie unificado de la NOAA. El modelo fue desarrollado por un equipo de investigación vinculado al proyecto FrontFinder AI, con código disponible en el repositorio GitHub de hanchyhill y una aplicación web en aaTman/frontfinder-app.
+FrontFinder es un conjunto de modelos en Keras desarrollados por el usuario aaaTman para la deteccion automatica de estructuras meteorologicas sinopticas y de mesoescala sobre una rejilla global de 0,25 grados. El modelo identifica frentes (frio, calido, estacionario y ocluido), lineas secas, vaguadas, vaguadas tropicales y lineas de inestabilidad a partir de campos de prediccion numerica del tiempo (NWP) del modelo IFS de ECMWF en su flujo de datos abiertos.
 
-El problema que resuelve es la automatización del análisis frontal, una tarea que tradicionalmente realizan pronosticadores humanos aplicando criterios subjetivos y reglas propias. El modelo emplea la arquitectura UNET3+, una variante de red neuronal convolucional para segmentación semántica de imágenes, lo que le permite procesar campos meteorológicos y generar mapas de probabilidad de presencia de frentes.
+Tecnicamente se trata de una red neuronal convolucional 2D de tipo UNet3+ que recibe una pila plana de 28 canales (o 27 en la version 2.0.1) y produce probabilidades por pixel para nueve clases, incluida la clase de fondo. La entrada combina cuatro variables en seis niveles de presion (1000, 925, 850, 700, 500 y 300 hPa) mas cuatro variables de superficie, normalizadas internamente mediante una capa de Rescaling, de modo que el modelo acepta directamente unidades fisicas.
 
-La relevancia actual del modelo radica en que los frentes están asociados a fenómenos meteorológicos de alto impacto, y su detección automática puede mejorar la consistencia y velocidad del análisis sinóptico operativo. El artículo técnico fue publicado en la revista *Artificial Intelligence for the Earth Systems* (AIES) de la AMS en 2025. La versión alojada en Hugging Face bajo el identificador aaaTman/FrontFinder presenta una licencia CC0-1.0, lo que la libera de restricciones de uso.
+Su relevancia radica en que sustituye o complementa la identificacion manual de frentes en cartas sinopticas por un pipeline reproducible y desplegado en produccion (fronts.espr.ai), con licencia CC0-1.0 que permite uso comercial sin restricciones. El repositorio es pequeno (0,1 GB) y la inferencia se realiza por parches solapados con fusion posterior.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | UNET3+ (red neuronal convolucional para segmentacion) |
+| Arquitectura | UNet3+ convolucional 2D |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de vision, no de texto) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (modelo de vision) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de segmentacion por pixel sobre rejilla 721 x 1440) |
+| Tipos de cuantizacion | no disponible (pesos Keras nativos, sin variantes GGUF publicadas) |
+| Idiomas soportados | ingles (documentacion y etiquetas); el modelo no procesa texto |
 | Licencia | CC0-1.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | `.keras` (Keras v3); fichero auxiliar `.npy` float32 para geopotencial de superficie |
 
 ## Arquitectura y entrenamiento
 
-FrontFinder utiliza la arquitectura UNET3+, una evolución de la U-Net clásica que introduce conexiones de salto densas y de múltiples escalas para mejorar la precisión en tareas de segmentación semántica. Esta arquitectura es especialmente adecuada para la detección de estructuras lineales y delgadas como los frentes meteorológicos, que presentan un desafío particular por su naturaleza estrecha y alargada.
+El modelo es una UNet3+ completamente convolucional que opera en 2D sobre la rejilla IFS de 0,25 grados (721 x 1440 celdas). La entrada es un tensor plano de 28 canales en la version 2.0.0: temperatura potencial equivalente, componente u del viento, componente v del viento y humedad especifica en seis niveles de presion (24 canales), mas viento a 10 m (u y v), temperatura de punto de rocio a 2 m y geopotencial de superficie (4 canales). La version 2.0.1 elimina el punto de rocio y queda en 27 canales, manteniendo el orden del resto. La normalizacion esta embebida en el grafo mediante una capa Rescaling, por lo que las entradas se proporcionan en unidades fisicas.
 
-El modelo fue entrenado para clasificar cinco tipos de fenómenos: frentes fríos, cálidos, estacionarios, ocluidos y líneas secas. Los datos de entrenamiento provienen de análisis de superficie de la NOAA y del dominio de análisis unificado de superficie de los Estados Unidos. No se dispone de información detallada sobre el número de muestras, el proceso de etiquetado o si se emplearon técnicas de aumento de datos en la información disponible.
+La salida son probabilidades por pixel para nueve clases (fondo, frente frio, frente calido, frente estacionario, frente ocluido, linea seca, vaguada, vaguada tropical y linea de inestabilidad). El geopotencial de superficie no forma parte del flujo en tiempo real de IFS open-data y se suministra como campo estatico ERA5 (`geopotential_at_surface_era5_0p25deg.npy`, float32, shape 721 x 1440, latitud de 90 a -90, longitud de 0 a 359,75). No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se emplearon tecnicas de ajuste fino como RLHF o DPO; tampoco se especifican funciones de perdida ni estrategias de aumento de datos.
 
 ## Capacidades
 
-- Detección y segmentación de frentes fríos, cálidos, estacionarios y ocluidos en campos meteorológicos.
-- Identificación de líneas secas, un fenómeno relevante para la predicción de tormentas severas en las Grandes Llanuras de Estados Unidos.
-- Procesamiento de datos meteorológicos en el dominio continental de Estados Unidos y el dominio de análisis unificado de la NOAA.
-- Generación de mapas de probabilidad de presencia de frentes, lo que permite a los pronosticadores interpretar la salida del modelo de forma visual.
-- Inferencia eficiente gracias a la arquitectura UNET3+, diseñada para reducir el coste computacional frente a otras variantes de U-Net.
+- Segmentacion semantica por pixel de estructuras frontales y de mesoescala sobre rejillas globales de 0,25 grados.
+- Deteccion de frentes frios, calidos, estacionarios y ocluidos.
+- Deteccion de lineas secas (drylines), vaguadas, vaguadas tropicales y lineas de inestabilidad.
+- Consumo directo de campos IFS en unidades fisicas gracias a la capa de normalizacion interna.
+- Procesamiento de dominios grandes mediante parches solapados con fusion (blending) en el pipeline de servicio.
+- Version sin punto de rocio (v2.0.1) para escenarios donde ese campo no esta disponible en la fuente de datos.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni procesamiento de texto o audio.
+- No dispone de modo de razonamiento explicito ni de capacidades multimodales mas alla de la entrada de campos meteorologicos.
 
 ## Casos de uso
 
-- Análisis sinóptico operativo en servicios meteorológicos: el modelo puede asistir a los pronosticadores en la identificación preliminar de frentes, reduciendo el tiempo dedicado al análisis manual y mejorando la consistencia entre turnos de trabajo.
-- Validación cruzada de análisis manuales: los mapas generados por FrontFinder pueden compararse con los análisis de superficie elaborados por humanos para detectar discrepancias y sesgos en el criterio de cada pronosticador.
-- Investigación en climatología de frentes: el modelo permite generar catálogos históricos de posiciones frontales de forma automática, facilitando estudios estadísticos sobre la frecuencia e intensidad de los frentes en relación con el cambio climático.
-- Predicción inmediata (nowcasting): la detección rápida de frentes puede integrarse en sistemas de alerta temprana para fenómenos asociados, como tormentas severas, lluvias intensas o cambios bruscos de temperatura.
-- Entrenamiento de pronosticadores: los mapas de probabilidad generados por el modelo pueden utilizarse como material didáctico para enseñar a estudiantes de meteorología a identificar frentes en campos de presión y temperatura.
-- Integración en pipelines de asimilación de datos: las salidas del modelo pueden servir como información auxiliar para sistemas de asimilación de datos numéricos, mejorando la inicialización de modelos de predicción meteorológica.
+- Generacion automatica de cartas sinopticas: el modelo produce mascaras de frentes y vaguadas sobre la rejilla global, lo que permite emitir cartas meteorologicas operativas sin intervencion manual y con actualizacion por ciclo de IFS.
+- Verificacion y control de calidad de analisis manuales: comparar la salida del modelo con frentes dibujados por analistas permite detectar discrepancias sistematicas y cuantificar el error humano en la identificacion frontal.
+- Alimentacion de sistemas de prediccion de impacto: las mascaras de frentes frios y lineas de inestabilidad sirven como predictores en modelos de riesgo de conveccion, precipitacion intensa o viento racheado.
+- Investigacion climatica: aplicar el modelo a reanalisis ERA5 o a salidas de modelos climaticos para construir climatologias de frecuencia y desplazamiento de frentes a lo largo de decadas.
+- Docencia y divulgacion meteorologica: generar visualizaciones coherentes y reproducibles de estructuras frontales a partir de campos NWP para materiales formativos.
+- Integracion en pipelines GeoZarr: el pipeline de servicio descrito en fronts.espr.ai produce salidas GeoZarr, lo que facilita su consumo en visores web y sistemas de informacion geografica.
+- Deteccion de lineas secas en regiones aridas: la clase especifica de dryline permite monitorizar condiciones de riesgo de incendio o de conveccion seca en zonas como el suroeste de Estados Unidos o el norte de Africa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo técnico en la revista AIES de la AMS describe la metodología y evaluación del modelo, pero los datos numéricos concretos (métricas de precisión, recall, IoU, etc.) no están accesibles en los materiales consultados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de segmentación basado en UNET3+, los requisitos de hardware dependen del tamaño de las imágenes de entrada y de la resolución de los campos meteorológicos procesados.
-- No se dispone de información específica sobre VRAM necesaria, GPUs recomendadas o latencia de inferencia en la documentación disponible.
-- Para un modelo de segmentación de este tipo, una GPU de gama media como una RTX 3060 o superior sería presumiblemente suficiente para inferencia, aunque este dato no está confirmado por el autor.
-- Las opciones de despliegue típicas para modelos de visión serían PyTorch, TensorFlow o ONNX Runtime, pero no se ha confirmado qué frameworks son compatibles con los pesos publicados.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada; el tamano del repositorio (0,1 GB) sugiere un modelo de pocos millones de parametros, pero no se confirma.
+- GPU recomendadas: no disponible. Al ser un modelo convolucional 2D sobre rejillas de 721 x 1440, se beneficia de GPU con memoria suficiente para procesar parches; no se especifican modelos concretos.
+- Compatibilidad con GPU de consumo: probable en tarjetas con suficiente VRAM para el tamano de parche utilizado, pero no confirmado en la documentacion.
+- Opciones de despliegue: carga mediante `keras.saving.load_model`; el pipeline de servicio con troceado, ingesta IFS, calculo de variables derivadas y salida GeoZarr se describe en fronts.espr.ai. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de detección de frentes meteorológicos. El campo de la detección automática de frentes es relativamente emergente y no hay modelos de referencia ampliamente establecidos con los que comparar en la información disponible.
+| Modelo | Tipo | Entrada | Clases de salida | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| FrontFinder (v2.0.0 / v2.0.1) | UNet3+ 2D, Keras | 28 / 27 canales en rejilla 0,25 grados | 9 (8 utiles en producto) | CC0-1.0 | Hugging Face, servicio en fronts.espr.ai |
+| Modelos comparables de deteccion frontal | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de informacion sobre modelos alternativos de deteccion frontal en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado específicamente para el dominio geográfico de los Estados Unidos continentales y el dominio de análisis unificado de la NOAA; su aplicabilidad a otras regiones del mundo no está garantizada.
-- La model card en Hugging Face está prácticamente vacía, sin información sobre el proceso de entrenamiento, los datos utilizados o las instrucciones de uso, lo que dificulta la reproducibilidad.
-- No se han documentado sesgos conocidos, pero la dependencia de análisis humanos para el etiquetado puede introducir los sesgos propios del criterio de los analistas.
-- El riesgo de alucinación o falsos positivos en la detección de frentes no está cuantificado en la información disponible.
-- La licencia CC0-1.0 permite uso comercial sin restricciones, pero al no existir documentación técnica completa, su integración en producción requiere un proceso de validación adicional.
-- No se especifica el formato de los pesos publicados, lo que puede dificultar la carga del modelo en frameworks estándar.
+- La clase de linea de inestabilidad se entrena pero no se utiliza en el producto servido; su fiabilidad no esta validada en produccion.
+- El modelo depende del geopotencial de superficie ERA5 como entrada estatica; un desajuste en la convencion (m² s⁻² frente a metros) o en la orientacion de la rejilla produce errores silenciosos.
+- La version 2.0.0 requiere punto de rocio a 2 m, campo que puede no estar disponible en todas las fuentes; la 2.0.1 elimina esa dependencia a costa de perder informacion de humedad de superficie.
+- No se documentan sesgos conocidos, tasas de acierto ni matrices de confusion, lo que impide evaluar su comportamiento diferencial por region, estacion o tipo de frente.
+- Riesgo de alucinacion en el sentido de falsos positivos en regiones con estructuras debiles o mal resueltas por la rejilla de 0,25 grados; no cuantificado en la informacion disponible.
+- La resolucion de 0,25 grados limita la deteccion de estructuras de mesoescala fina, como lineas secas estrechas o frentes de rafaga.
+- El modelo esta documentado en ingles y no procesa lenguaje natural; no aplican limitaciones idiomaticas de generacion de texto.
+- La licencia CC0-1.0 permite uso comercial sin restricciones, pero se exige atribucion a ERA5 y a ECMWF open data por el uso de sus campos de entrada.
+- No se especifican garantias de calibracion de las probabilidades por pixel ni umbrales operativos recomendados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/aaaTman/FrontFinder
-- Modelo relacionado en Hugging Face: https://huggingface.co/aaaTman/FrontFinderAIES2025
-- Repositorio de la aplicación web: https://github.com/aaTman/frontfinder-app
-- Repositorio del modelo: https://github.com/hanchyhill/FrontFinder
-- Artículo técnico en AIES (AMS): https://journals.ametsoc.org/view/journals/aies/4/1/AIES-D-24-0043.1.xml
+- Servicio desplegado y documentacion del pipeline: https://fronts.espr.ai
+- ECMWF IFS open data: https://www.ecmwf.int/en/forecasts/datasets/open-data
+- ERA5 (Copernicus Climate Change Service): https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels
+- ARCO-ERA5 (archivo publico con `geopotential_at_surface`): https://github.com/google-research/arco-era5

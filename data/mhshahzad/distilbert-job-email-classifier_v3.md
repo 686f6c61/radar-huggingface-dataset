@@ -2,112 +2,124 @@
 
 ## Resumen
 
-DistilBERT Job Email Classifier v3 es un modelo de clasificación de texto obtenido por fine-tuning de `distilbert-base-uncased` sobre correos electrónicos de búsqueda de empleo. Lo desarrolla el usuario de Hugging Face mhshahzad y resuelve una tarea muy concreta: asignar cada correo a una de cinco etiquetas de flujo de trabajo (`application_confirmation`, `assessment`, `interview_invitation`, `offer`, `rejection`). El modelo tiene 66.957.317 parámetros y una longitud máxima de entrada de 256 tokens.
+El modelo `mhshahzad/distilbert-job-email-classifier_v3` es un clasificador de secuencias basado en DistilBERT, afinado por el usuario mhshahzad para categorizar correos electronicos relacionados con la busqueda de empleo en cinco etiquetas de flujo de trabajo: confirmacion de solicitud, evaluacion o prueba, invitacion a entrevista, oferta y rechazo. Se trata de un modelo especializado y de proposito muy concreto, no de un modelo generativo de proposito general.
 
-La relevancia del modelo es limitada y experimental: se trata de una herramienta personal para organizar el propio correo de búsqueda de empleo, no de un clasificador de propósito general. El autor declara explícitamente que el repositorio es privado y que el acceso a los pesos está controlado por el propietario, lo que condiciona su disponibilidad real. La model card reporta 0,9681 de accuracy y 0,8673 de macro-F1 sobre 973 ejemplos de test, pero con clases minoritarias muy poco representadas (2 ejemplos de `offer` y 13 de `assessment`), lo que hace que esas métricas sean altamente inciertas.
+El modelo parte de `distilbert-base-uncased`, una version destilada de BERT con 66,9 millones de parametros, y se ha entrenado para clasificacion de etiqueta unica combinando asunto y cuerpo del correo en una unica cadena de entrada. Su relevancia es practica: permite automatizar la organizacion de bandejas de entrada de candidatos con un coste computacional minimo y una latencia muy baja (1,90 ms por correo segun la evaluacion reportada).
 
-Arquitectónicamente es un transformer encoder destilado de BERT, con una cabeza de clasificación de secuencia de una sola etiqueta. No incorpora generación de texto, tool calling ni capacidades multimodales. Su interés práctico se reduce a servir como referencia de fine-tuning ligero para clasificación de correo y a ilustrar los riesgos de evaluar con conjuntos de test desbalanceados.
+El checkpoint se publico en noviembre de 2026, cuenta con 203 descargas y se distribuye bajo licencia Apache 2.0. El autor lo presenta explicitamente como una herramienta experimental para uso personal y desaconseja su uso en decisiones de contratacion o seleccion de personal. La informacion disponible sobre datos de entrenamiento es parcial, ya que el dataset es privado y su acceso esta controlado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | DistilBertForSequenceClassification (transformer encoder destilado de BERT) |
-| Parámetros totales | 66.957.317 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | 256 tokens (entradas más largas se truncan) |
-| Tipos de cuantización | no disponible (el autor no documenta cuantizaciones; al ser un modelo de 67 M de parámetros es viable en fp32/fp16 estándar) |
-| Idiomas soportados | no disponible (el modelo base es `distilbert-base-uncased`, entrenado principalmente en inglés, pero el autor no valida idiomas) |
-| Licencia | no disponible (la model card indica que no se especifica licencia y que hay que consultar al propietario) |
-| Formato de pesos | safetensors (librería transformers) |
+| Parametros totales | 66.957.317 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256 tokens (truncado; el modelo base soporta hasta 512) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en fp32; admite cuantizacion estandar via transformers/ONNX, no documentada por el autor) |
+| Idiomas soportados | no disponible (modelo base `uncased` en ingles; no validado en otros idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `distilbert-base-uncased`, un transformer encoder de 6 capas y 66 M de parámetros obtenido por destilación de BERT-base. Sobre él se añade una cabeza `DistilBertForSequenceClassification` con cinco clases de salida. La entrada se construye concatenando asunto y cuerpo con el formato `Subject: {subject}\nEmail: {body}`, truncando a 256 tokens.
+La arquitectura es un transformer encoder de tipo DistilBERT, una version destilada de BERT-base con seis capas en lugar de doce, sobre la que se anade una cabeza de clasificacion lineal para cinco clases. El modelo base es `distilbert-base-uncased`, con vocabulario en ingles y tokenizacion WordPiece sin distincion de mayusculas. La entrada se construye concatenando asunto y cuerpo con el formato `Subject: {subject}\nEmail: {body}` y se trunca a 256 tokens.
 
-El fine-tuning de la versión v3 usó la muestra de entrenamiento experimental previa, que según las notas del autor incluía 50 ejemplos sintéticos de `offer` (solo para entrenamiento). Hiperparámetros documentados: longitud máxima de secuencia 256, learning rate `2e-5`, semilla 42 y ocho épocas configuradas. El checkpoint se seleccionó por macro-F1 de validación, con un mejor valor de 0,8580. El dataset de entrenamiento es privado (`mhshahzad/job_application_emails_clean_training_dataset`, revisión `28a2b423bf0be636ae0736a35cc96c4f290a8277`) y su contenido no se redistribuye. No se documenta RLHF, DPO ni ninguna innovación técnica adicional; es un fine-tuning supervisado convencional.
+El entrenamiento de la version v3 uso una muestra experimental previa, con una longitud maxima de secuencia de 256, tasa de aprendizaje 2e-5, semilla 42 y ocho epocas configuradas. La seleccion del checkpoint se hizo por macro-F1 de validacion, con un mejor valor de 0,8580. La muestra incluia 50 ejemplos sinteticos de ofertas, usados solo para entrenamiento. El dataset de referencia es privado (`mhshahzad/job_application_emails_clean_training_dataset`, revision `28a2b423bf0be636ae0736a35cc96c4f290a8277`), con acceso controlado y sin redistribucion de contenidos en la model card. No se documenta el volumen total de tokens ni la composicion completa del dataset, ni se menciona uso de RLHF o DPO (no aplica a un clasificador).
 
 ## Capacidades
 
-- Clasificación de texto de etiqueta única en cinco categorías de correo de búsqueda de empleo: `application_confirmation`, `assessment`, `interview_invitation`, `offer` y `rejection`.
-- Procesamiento conjunto de asunto y cuerpo del correo mediante el formato `Subject: ... Email: ...`.
-- Salida de probabilidades por clase (no calibradas) mediante `pipeline("text-classification", top_k=None)`.
-- No soporta generación de texto, razonamiento, código, matemáticas ni visión.
+- Clasificacion de texto de etiqueta unica en cinco categorias: `application_confirmation`, `assessment`, `interview_invitation`, `offer` y `rejection`.
+- Procesamiento conjunto de asunto y cuerpo del correo en una sola secuencia.
+- Inferencia de muy baja latencia (1,90 ms por correo en el entorno de evaluacion reportado, no documentado como benchmark controlado).
+- Integracion directa con la libreria `transformers` mediante `pipeline("text-classification")`.
+- No soporta generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
 - No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidades multilingües no validadas; el autor advierte que no se ha validado en distintos idiomas.
-- No dispone de modo thinking ni de capacidades de audio.
+- No esta disenado para agentes ni razonamiento multi-paso.
+- Capacidades multilingues no disponibles: el modelo base es en ingles y el autor no valida otros idiomas.
+- No dispone de modo de razonamiento (thinking mode) ni de salidas estructuradas mas alla de las probabilidades por clase.
 
 ## Casos de uso
 
-- Organización personal del correo de búsqueda de empleo: el modelo clasifica cada correo entrante en una de las cinco etiquetas para etiquetar automáticamente una carpeta o bandeja de entrada, con revisión humana posterior. Es el uso previsto explícito del autor.
-- Filtrado de confirmaciones de candidatura: con 577 ejemplos de test y un F1 de 0,9785 en `application_confirmation`, puede separar de forma fiable los acuses de recibo del resto del flujo.
-- Detección de rechazos: con F1 de 0,9670 en `rejection` sobre 333 ejemplos, es útil para archivar automáticamente correos de descarte y mantener limpia la bandeja principal.
-- Priorización de invitaciones a entrevista: con F1 de 0,8913 en `interview_invitation` sobre 48 ejemplos, puede marcar estos correos para revisión inmediata, siempre con verificación humana.
-- Prototipado de pipelines de clasificación de correo: sirve como baseline ligero (67 M de parámetros, latencia reportada de 1,90 ms/correo) para experimentar con preprocesado asunto+cuerpo antes de escalar a modelos mayores.
-- Investigación sobre fine-tuning de DistilBERT en dominios muy específicos: útil como ejemplo de selección de checkpoint por macro-F1 y de los problemas de evaluar clases minoritarias con muy pocos ejemplos.
-- Clasificación local en entornos con recursos limitados: al ser un modelo de 67 M de parámetros, cabe en CPU y en GPU de consumo, lo que permite ejecutarlo sin enviar correos personales a servicios externos, algo relevante por la privacidad del contenido.
+- Organizacion automatica de la bandeja de entrada de un candidato: el modelo clasifica cada correo entrante en una de las cinco etapas del proceso de seleccion, permitiendo etiquetar o enrutar mensajes en un cliente de correo mediante un script local. Es adecuado por su latencia minima y su bajo coste de ejecucion en CPU.
+- Seguimiento del estado de solicitudes: un pipeline personal puede registrar automaticamente cuando un correo es una confirmacion de solicitud, una invitacion a entrevista o un rechazo, y actualizar una hoja de calculo o un tablero de seguimiento.
+- Alertas de ofertas y entrevistas: dado que las clases `offer` e `interview_invitation` son las mas criticas para el usuario, el modelo puede usarse para disparar notificaciones prioritarias, siempre con revision humana previa dada la baja recall en la clase `offer`.
+- Filtrado y archivado de rechazos: los correos clasificados como `rejection` (con F1 de 0,9670 y 333 ejemplos de soporte) pueden archivarse o etiquetarse automaticamente para mantener limpia la bandeja principal.
+- Preprocesamiento en herramientas de busqueda de empleo personales: el modelo puede actuar como primer paso de un pipeline que extraiga y estructure eventos del proceso de seleccion antes de un analisis posterior.
+- Prototipado y evaluacion de clasificadores de correo: sirve como linea base ligera para experimentar con tecnicas de clasificacion de correos transaccionales en entornos con recursos limitados, dado su tamano reducido (0,3 GB de repositorio) y su licencia permisiva.
+- Despliegue en dispositivos de borde o entornos sin GPU: al tratarse de un modelo de 67 millones de parametros, puede ejecutarse en CPU con latencias de milisegundos, lo que facilita su integracion en aplicaciones locales de gestion de correo.
 
 ## Benchmarks y rendimiento
 
-Resultados de una única evaluación sobre 973 ejemplos de test, según la model card:
+Resultados reportados por el autor para la version v3 sobre 973 ejemplos de evaluacion:
 
-| Métrica | Resultado |
+| Metrica | DistilBERT v3 |
 |---|---:|
 | Accuracy | 0,9681 |
 | Macro-F1 | 0,8673 |
 | Weighted-F1 | 0,9677 |
+| Macro-F1 de validacion | 0,8580 |
 | Latencia media | 1,90 ms/correo |
 
-Desglose por clase:
+Resultados por clase (v3):
 
-| Categoría | Precision | Recall | F1 | Soporte |
+| Categoria | Precision | Recall | F1 | Soporte |
 |---|---:|---:|---:|---:|
-| application_confirmation | 0,9726 | 0,9844 | 0,9785 | 577 |
-| assessment | 0,9091 | 0,7692 | 0,8333 | 13 |
-| interview_invitation | 0,9318 | 0,8542 | 0,8913 | 48 |
-| offer | 1,0000 | 0,5000 | 0,6667 | 2 |
-| rejection | 0,9670 | 0,9670 | 0,9670 | 333 |
+| Application confirmation | 0,9726 | 0,9844 | 0,9785 | 577 |
+| Assessment | 0,9091 | 0,7692 | 0,8333 | 13 |
+| Interview invitation | 0,9318 | 0,8542 | 0,8913 | 48 |
+| Offer | 1,0000 | 0,5000 | 0,6667 | 2 |
+| Rejection | 0,9670 | 0,9670 | 0,9670 | 333 |
 
-El autor compara con una versión previa v2-2 (0,9496 de accuracy y 0,7094 de macro-F1), pero advierte que los informes referencian revisiones de dataset distintas y no constituyen una comparación controlada ni emparejada. No se han publicado resultados frente a modelos de terceros en la información disponible.
+Comparacion con experimentos previos del mismo autor:
+
+| Experimento | Entrada | Accuracy | Macro-F1 | Weighted-F1 |
+|---|---|---:|---:|---:|
+| DistilBERT v1 | Solo cuerpo | 0,9620 | 0,8444 | 0,9613 |
+| DistilBERT v2-2 | Asunto + cuerpo, datos sinteticos ampliados | 0,9496 | 0,7094 | 0,9489 |
+| DistilBERT v3 | Asunto + cuerpo | 0,9681 | 0,8673 | 0,9677 |
+| BERT-base (referencia original) | — | 0,9630 | 0,8586 | 0,9600 |
+
+El autor advierte que los resultados de v2-2 y v3 referencian revisiones y repositorios de dataset distintos, por lo que no constituyen una prueba controlada y emparejada. La ejecucion de BERT-base emitio advertencias de claves LayerNorm faltantes o inesperadas durante la carga del checkpoint, por lo que su puntuacion es provisional.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 66,9 M de parámetros (aproximadamente 268 MB de pesos) más el overhead de activaciones; en fp16 alrededor de 134 MB.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; funciona sin problema en GTX 1650, RTX 3060, RTX 4090, A100 o H100, aunque el modelo está sobredimensionado para estas últimas.
-- Cabe en GPU de consumo y también en CPU: es viable ejecutarlo en portátiles sin GPU dedicada para volúmenes moderados de correo.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (el tag `text-embeddings-inference` aparece en el repositorio) y endpoints compatibles. No se documenta soporte GGUF ni Ollama en la información disponible.
-- Latencia y throughput: la model card reporta 1,90 ms/correo, pero el autor indica que la medición depende del runtime y del hardware, que no se documentaron como benchmark controlado, por lo que no debe tomarse como garantía de despliegue.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (67 millones de parametros), y del orden de 250-300 MB en cuantizacion int8.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria; el modelo no requiere GPU para funcionar. Una RTX 4090, A100 o H100 estan sobredimensionadas para este modelo.
+- Cabe en cualquier GPU de consumo, incluidas GTX 1050, RTX 2060 o superiores, y tambien en CPU sin problemas.
+- Opciones de despliegue: `transformers` con `pipeline`, exportacion a ONNX Runtime, TorchScript o integracion en servicios ligeros de inferencia. No se documenta soporte especifico para vLLM, TGI o llama.cpp.
+- Latencia y throughput: el autor reporta 1,90 ms por correo, pero advierte que la latencia depende del entorno de evaluacion y el hardware, que no se documentaron como benchmark controlado; no debe interpretarse como garantia de velocidad en produccion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| mhshahzad/distilbert-job-email-classifier_v3 | 66,9 M | 256 tokens | Clasificación de correo de empleo (5 clases) | no disponible | Repositorio privado, acceso controlado |
-| distilbert-base-uncased (modelo base) | 66,4 M | 512 tokens | Modelo de lenguaje enmascarado general | Apache 2.0 (según el modelo base original) | Público en Hugging Face |
-| BERT-base-uncased | 110 M | 512 tokens | Modelo de lenguaje general, base para fine-tuning | Apache 2.0 | Público en Hugging Face |
-| Otros clasificadores de correo fine-tuned sobre BERT/DistilBERT | variable | 512 tokens típicamente | Clasificación de correo genérica | variable según autor | variable |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| mhshahzad/distilbert-job-email-classifier_v3 | 66,9 M | 256 tokens | Clasificacion de correos de empleo (5 clases) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base generico (encoder) | Apache 2.0 | Hugging Face |
+| BERT-base (referencia del autor) | 110 M | 512 tokens | Clasificacion de correos (benchmark original) | Apache 2.0 | Hugging Face |
+| Modelos de clasificacion de correo genericos | no disponible | no disponible | Clasificacion multietiqueta de correo | variable | Hugging Face |
 
-No se dispone de comparaciones controladas con alternativas de la misma categoría en la información proporcionada. La comparación con el modelo base y con BERT-base es estructural, no de rendimiento en esta tarea concreta.
+La comparacion con BERT-base se basa en la referencia del propio autor (accuracy 0,9630, macro-F1 0,8586), aunque con la advertencia de que esa ejecucion tuvo problemas de carga del checkpoint y su resultado es provisional. No se dispone de comparaciones con otros clasificadores especializados de correos de empleo.
 
 ## Limitaciones y advertencias
 
-- El conjunto de test contiene solo 2 ejemplos de `offer` y 13 de `assessment`; las métricas de esas clases son altamente inciertas (el recall de `offer` se basa en 1 acierto de 2).
-- Resultados de una sola ejecución y una sola semilla; no es un benchmark multi-semilla.
-- No hubo adjudicación independiente de etiquetas ni verificación de separación por hilo de conversación; los identificadores de hilo no estaban disponibles.
-- El rendimiento puede degradarse con plantillas de correo, idiomas, regiones, prácticas de reclutamiento o distribuciones de clase distintas.
-- La latencia reportada no es una garantía de velocidad en despliegue.
-- Las puntuaciones no están calibradas y pueden ser erróneas; el autor recomienda inspeccionar el correo antes de actuar sobre una predicción.
-- Uso fuera de alcance prohibido por el autor: contratación, cribado de candidatos, decisiones de empleo o cualquier decisión consecuente. No es un clasificador de correo de propósito general.
-- Licencia no especificada: hay que consultar al propietario antes de usar, redistribuir o adaptar los pesos.
-- El repositorio es privado, por lo que el acceso requiere autorización del propietario; las descargas y likes públicos figuran a 0.
-- Riesgo de privacidad: los correos de búsqueda de empleo pueden contener información personal y sensible; el dataset de entrenamiento es privado y no se redistribuye.
-- No se ha validado en distintos idiomas ni en distintos sistemas de reclutamiento.
+- El conjunto de test contiene solo dos ejemplos de `offer` y trece de `assessment`; las metricas de esas clases son altamente inciertas (la recall de `offer` se basa en un unico acierto de dos).
+- Los resultados provienen de una sola ejecucion y una sola semilla; no es un benchmark multi-semilla.
+- No hubo adjudicacion independiente de etiquetas ni verificacion de separacion por hilo de conversacion; los identificadores de hilo no estaban disponibles.
+- El rendimiento puede degradarse con plantillas de correo, idiomas, regiones, practicas de reclutamiento o distribuciones de clase distintas a las del entrenamiento.
+- Las puntuaciones no estan calibradas y pueden ser erroneas; el autor recomienda inspeccionar el correo antes de actuar sobre una prediccion.
+- La latencia reportada depende de un entorno de evaluacion no documentado y no constituye una garantia de despliegue.
+- El modelo no esta validado en idiomas distintos del ingles ni en organizaciones o sistemas de reclutamiento diferentes.
+- Uso prohibido por el autor para contratacion, cribado de candidatos, decisiones de empleo u otros usos consecuentes.
+- Riesgo de sesgo: al entrenarse con un dataset privado no documentado, se desconocen los sesgos de representacion por tipo de empresa, sector, region o idioma.
+- Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificaciones erroneas con alta confianza aparente al no estar calibradas las probabilidades.
+- Privacidad: los correos de busqueda de empleo contienen datos personales y sensibles; no deben enviarse a servicios externos sin autorizacion adecuada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial del modelo, pero el autor desaconseja explicitamente su uso en decisiones de empleo; el dataset de entrenamiento es privado y no se redistribuye.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mhshahzad/distilbert-job-email-classifier_v3
-- Dataset de entrenamiento (privado): https://huggingface.co/datasets/mhshahzad/job_application_emails_clean_training_dataset
-- Informe de evaluación: `evaluation/classification_report.json` (incluido en el repositorio del modelo)
-- Matriz de confusión: `evaluation/confusion_matrix.csv` (incluido en el repositorio del modelo)
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
+- Dataset de entrenamiento (acceso controlado): https://huggingface.co/datasets/mhshahzad/job_application_emails_clean_training_dataset
+- Repositorio del proyecto: https://github.com/mhshahzad/job-email-classifier#job-email-classifier
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

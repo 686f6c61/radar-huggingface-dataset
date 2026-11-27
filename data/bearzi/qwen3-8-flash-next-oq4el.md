@@ -2,108 +2,111 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ4eL es una cuantización experimental del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario bearzi (yohann-bearzi) el 20 de noviembre de 2026. No es un modelo entrenado desde cero, sino un checkpoint de pesos cuantizados en formato oQeL (revision 1), un layout de cuantización propio del ecosistema oMLX que aplica 4 bits a las matrices de expertos enrutados (routed experts) de la arquitectura MoE y 8 bits afines al resto del modelo. El checkpoint tiene 79.904.882.579 parámetros totales y ocupa 178,3 GB en disco, en su mayor parte por la tabla de embeddings por capa (PLE) mantenida en BF16 (~95 GB).
+Qwen3.8-Flash-Next-oQ4eL es una cuantización experimental de Qwen3.8-Flash-Next, un modelo MoE de aproximadamente 83.500 millones de parámetros desarrollado originalmente por el equipo Qwen de Alibaba. La versión aquí descrita la publica el usuario independiente bearzi bajo el identificador `bearzi/Qwen3.8-Flash-Next-oQ4eL`, y aplica el cuantizador propio de oMLX (oQ) en modo oQe, nivel 4, sobre los expertos enrutados del modelo base. No es un modelo nuevo: es un checkpoint cuantizado de 134,3 GB pensado para ejecutarse en Apple Silicon mediante MLX.
 
-El interés técnico del artefacto es doble. Por un lado, demuestra un mecanismo de plugins de formato de cuantización para oMLX: el checkpoint solo carga con una bifurcación no fusionada del runtime (rama `quant-plugins-poc`) y el plugin `omlx-oqel` 0.1.0. Por otro, publica métricas comparativas frente a la cuantización estándar oQ4e del mismo fork, mostrando mejoras medibles en divergencia KL y acuerdo top-1 respecto a BF16, a costa de una caída en velocidad de decodificación de entre el 7% y el 15% según configuración de MTP y hardware.
+La relevancia de esta ficha es doble. Por un lado, demuestra una técnica de cuantización mixta: los expertos enrutados (matrices gate, up y down de las capas MoE y de la capa MTP) se almacenan en 4 bits con una tabla de 16 niveles ajustada al propio modelo, mientras que el resto de pesos permanece en MLX affine de 8 bits y la tabla PLE en FP8. Por otro, es una prueba de concepto de una interfaz de plugins de formato de cuantización para oMLX, lo que implica que no funciona con oMLX estándar, mlx-lm ni mlx-vlm.
 
-Es, por tanto, un artefacto de investigación y prueba de concepto, no un modelo listo para producción. La propia model card advierte que el layout oQeL y los kernels del plugin pueden cambiar, que una versión posterior del plugin podría rechazar este checkpoint y que no debe usarse para nada que no se pueda reproducir. Está orientado a Apple Silicon (mlx, mlx-vlm) y requiere hardware de gama alta con memoria unificada.
+El estado es explícitamente experimental: requiere un fork de oMLX (tag `oqel-poc-r3`) y el plugin `omlx-oqel` 0.2.0, y el autor advierte de que el formato oQeL y los kernels del plugin pueden cambiar, hasta el punto de que una versión posterior del plugin podría rechazar este checkpoint. Con 202 descargas y 0 likes en el momento de la consulta, es un artefacto de investigación, no una opción de producción consolidada.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE transformer con capa MTP (multi-token prediction) y embeddings por capa (PLE); modelo base Qwen3.8-Flash-Next, multimodal (visión-lenguaje según la model card) |
-| Parámetros totales | 79.904.882.579 (~79,9 mil millones) |
-| Parámetros activos | no disponible (la model card no detalla el reparto de expertos activos; menciona 48 capas MoE y 147 matrices de expertos enrutados) |
+| Arquitectura | MoE transformer (modelo base Qwen3.8-Flash-Next); capa MTP incluida; cuantización oQeL en expertos enrutados y MLX affine 8-bit en el resto |
+| Parámetros totales | 83.504.899.859 (dato real de safetensors) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 4-bit oQeL en expertos enrutados; 8-bit affine MLX en el resto (grupos de 64 y 128); tabla PLE en BF16 |
+| Tipos de cuantización | 4-bit oQeL en expertos enrutados (grupos de 16 pesos, escala E2M5 por grupo y bfloat16 por fila); affine 8-bit en el resto; tabla PLE en FP8 |
 | Idiomas soportados | no disponible |
 | Licencia | qwen-community-1.0 (etiquetada como `other` en el repo) |
-| Formato de pesos | safetensors (librería mlx) |
+| Formato de pesos | safetensors, librería mlx (no compatible con stock oMLX, mlx-lm ni mlx-vlm) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint no aporta entrenamiento propio: hereda los pesos de Qwen/Qwen3.8-Flash-Next y solo modifica su representación numérica. La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con 48 capas MoE, 147 matrices de expertos enrutados (gate, up y down), una capa MTP (multi-token prediction) para decodificación especulativa y una tabla de embeddings por capa (PLE) que se conserva en BF16. El modelo base es multimodal (visión-lenguaje), ya que la model card indica que se carga mediante mlx-vlm con `for_vlm=True`.
+El modelo base es un transformer con mezcla de expertos (MoE) que incluye una cabeza MTP (multi-token prediction) usada para decodificación especulativa. Esta versión cuantizada no entrena nada nuevo: parte de Qwen3.8-Flash-Next y aplica el cuantizador oQ de oMLX en modo oQe, nivel 4. Los expertos enrutados (gate, up y down de las capas MoE y de la capa MTP) se codifican en 4 bits sobre una tabla de 16 niveles ajustada a los propios expertos del modelo, con grupos de 16 pesos, un byte de escala E2M5 por grupo y una escala bfloat16 por fila. El `group_size: 64` de `config.json` es la receta nominal de oQ y el layout oQeL no lo lee. El resto de pesos usa affine 8-bit de MLX, igual que la build oQ4e, y la tabla PLE se toma en FP8 de la tabla oficial de Qwen.
 
-La innovación del checkpoint es el layout oQeL (revision 1): cada matriz de expertos enrutados se guarda en una tabla de 16 niveles ajustada a los expertos de este modelo concreto, en grupos de 16 pesos con un byte de escala E2M5 por grupo y una escala bfloat16 por fila. El proceso de cuantización es oQ en modo oQe, donde el error de cada peso se pondera por la importancia de su entrada, medida sobre texto de calibración. El resto de tensores (598 clases en grupos de 64 y 147 proyecciones de expertos compartidos en grupos de 128) usa cuantización affine MLX de 8 bits, idéntica a la build oQ4e estándar. El `group_size: 64` que figura en `config.json` para las matrices de expertos es la receta nominal de oQ y no lo lee el layout oQeL.
-
-No se dispone de información sobre el volumen de tokens de entrenamiento, composición del dataset ni etapas de RLHF/DPO del modelo base en la información proporcionada.
+La release 3 introduce un esqueleto denso unificado (los formatos stock y plugin comparten un único esqueleto elegido al cargar, sin rutas de fallback), tablas de ajuste por chip (geometría de tiles y ruta a unidades tensoriales: steel en M3 Ultra, NAX en M5 Max, elegidas por un autotuner offline), carga de la cabeza MTP bajo formatos plugin y un refinamiento Hessiano en Metal para el escritor de oQe. Además, sustituye la exigencia de bit-exactitud por un contrato numérico con barras de referencia FP32 y KL, con determinismo run-to-run en el mismo chip, orden de reducción fijo y no linealidades en FP32, dejando libres el orden de acumulación, el tiling y el split-K dentro de esas barras. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens ni las etapas de RLHF/DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base Qwen3.8-Flash-Next.
-- Procesamiento multimodal de visión e imagen, dado que la model card lo describe como vision-language model y lo carga con mlx-vlm.
-- Decodificación especulativa mediante la capa MTP, con aceptación medida de 1,45 (M3 Ultra) y 1,30 (M5 Max) borradores aceptados por ciclo de verificación.
-- Inferencia en Apple Silicon mediante MLX y oMLX, con servidor compatible con la API de OpenAI (`omlx serve`).
-- Ejecución con múltiples streams concurrentes (medido con 1, 2 y 4 streams).
-- Tool calling, function calling, capacidades de agente, multilingüismo y modo thinking: no disponibles en la información proporcionada.
+- Generación de texto y razonamiento: heredadas del modelo base Qwen3.8-Flash-Next; no se detallan capacidades específicas en la información disponible.
+- Decodificación especulativa con MTP: la cabeza MTP se carga como capa de formato y ejecuta draft y verify, con una media de 1,586 borradores aceptados por ciclo de verificación en M3 Ultra y 1,581 en M5 Max.
+- Servicio multistream: soporta 1, 2 y 4 streams concurrentes con rendimiento medido (ver sección de benchmarks).
+- Servido compatible con OpenAI mediante `omlx serve` en el puerto 8000.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión o audio: no disponible en la información proporcionada (el autor menciona mlx-vlm solo para indicar que no puede cargar el checkpoint).
 
 ## Casos de uso
 
-- Investigación sobre formatos de cuantización: el checkpoint sirve para reproducir y auditar el layout oQeL frente a oQ4e, comparando KL, acuerdo top-1 y perplejidad sobre documentos de código y prosa. Es su uso principal y el único plenamente alineado con la naturaleza experimental del artefacto.
-- Desarrollo de plugins para oMLX: permite validar la interfaz de plugins de formato de cuantización (rama `quant-plugins-poc` y `omlx-oqel`) en un caso real con 147 matrices de expertos, antes de que la interfaz se estabilice.
-- Evaluación de decodificación especulativa MTP: al incluir la capa MTP y publicar tasas de aceptación por hardware, se presta a comparar modos MTP on/off/adaptive en M3 Ultra y M5 Max con prompts de 2.048 y 8.192 tokens.
-- Pruebas de despliegue local en Apple Silicon de gama alta: con `qwen4_ple_ssd_offload` y MTP activado, el modelo cabe en un Mac de 128 GB usando entre 71 y 74 GB de memoria, lo que permite experimentar con un MoE de ~80 mil millones de parámetros en hardware de escritorio.
-- Benchmarking de latencia y throughput: el servidor oMLX permite medir tok/s en prefill y decode con 1, 2 y 4 streams concurrentes, útil para caracterizar el rendimiento de MLX en cargas MoE cuantizadas.
-- Reproducción de métricas de fidelidad de cuantización: los métodos descritos (KL de vocabulario completo con 248.320 tokens, perplejidad sobre dos documentos de 16.384 tokens) permiten replicar el protocolo de evaluación en otros checkpoints del mismo fork.
+- Evaluación de formatos de cuantización en Apple Silicon: el checkpoint sirve para medir el impacto de oQeL frente a oQ4e en KL respecto a BF16 (0,01576 en código y 0,02905 en prosa para oQ4eL) sobre el mismo modelo y la misma calibración, un escenario típico de laboratorio de cuantización.
+- Desarrollo de plugins de formato para oMLX: al ser una prueba de concepto de la interfaz de plugins, es útil para validar kernels, contratos numéricos y rutas de carga antes de upstream.
+- Inferencia local en Macs de gama alta: con 134,3 GB de checkpoint y decodificación de 75,90 tok/s en M3 Ultra (MTP off, 1 stream), encaja en flujos de trabajo individuales sobre hardware Apple Silicon con memoria suficiente.
+- Servicio multiusuario ligero: con 2 streams sostenidos a 60,18 tok/s y 4 streams a 43,27 tok/s en M3 Ultra, puede atender un pequeño grupo de usuarios mediante el endpoint compatible con OpenAI.
+- Prototipado de asistentes conversacionales de código: la KL más baja en código (0,01576) y la coincidencia top-1 de 1,0 en decodificación sugieren uso en generación asistida de código, siempre con validación humana.
+- Pruebas de decodificación especulativa: la cabeza MTP permite comparar estrategias de draft/verify y medir borradores aceptados por ciclo en distintos chips (M3 Ultra frente a M5 Max).
+- Investigación sobre offload a SSD: la opción `qwen4_ple_ssd_offload` permite estudiar el equilibrio entre memoria unificada y latencia en Macs de 128 GB.
 
 ## Benchmarks y rendimiento
 
-La model card publica métricas comparativas entre oQ4eL y oQ4e, ambos derivados del mismo fork, fuente, calibración y plan de bits; solo difiere el formato de los expertos enrutados.
+Datos medidos por el autor, comparando oQ4eL con oQ4e (misma fuente, calibración, plan de bits y tabla PLE FP8):
 
 | Métrica | oQ4eL | oQ4e |
 |---|---|---|
-| KL a BF16, código / prosa | 0,01580 / 0,02866 | 0,02131 / 0,03737 |
-| KL p99, código / prosa | 0,185 / 0,226 | 0,274 / 0,292 |
-| Acuerdo top-1 con BF16, código / prosa | 96,06% / 92,28% | 95,43% / 91,41% |
-| Perplejidad, código / prosa (BF16: 2,1480 / 7,9083) | 2,1482 / 7,9028 | 2,1485 / 7,8900 |
-| Borradores MTP aceptados por ciclo, M3 Ultra / M5 Max | 1,45 / 1,30 | 1,50 / 1,50 |
-| Decode tok/s, 1 stream, MTP off, M3 Ultra / M5 Max | 65,35 / 67,18 | 75,86 / 72,75 |
-| Decode tok/s, 1 stream, MTP adaptive, M3 Ultra / M5 Max | 85,41 / 88,05 | 99,36 / 90,52 |
-| Decode tok/s, 2 / 4 streams, MTP off, M3 Ultra | 53,01 / 39,64 | 60,53 / 43,45 |
-| Decode tok/s, 2 / 4 streams, MTP off, M5 Max | 53,40 / 39,10 | 57,45 / 40,57 |
-| Prefill tok/s 2k / 8k, M3 Ultra | 1.253 / 1.384 | 1.261 / 1.390 |
-| Prefill tok/s 2k / 8k, M5 Max | 2.096 / 2.685 | 2.120 / 2.711 |
+| KL a BF16, código / prosa | 0,01576 / 0,02905 | 0,01832 / 0,03358 |
+| KL de decodificación, código / prosa | 0,00000 / 0,00000 | 0,00000 / 0,00000 |
+| Coincidencia top-1 en decodificación, código / prosa | 1,00000 / 1,00000 | 1,00000 / 1,00000 |
+| Cambio en KL a BF16, código / prosa | 0 / 0 | 0 / 0 |
+| Borradores MTP aceptados por ciclo (32 prompts; IC 95 %), M3 Ultra | 1,586 [1,432; 1,746] | 1,604 [1,459; 1,747] |
+| Borradores MTP aceptados por ciclo (32 prompts; IC 95 %), M5 Max | 1,581 [1,418; 1,743] | 1,547 [1,389; 1,704] |
+| Decodificación tok/s, 1 / 2 / 4 streams, MTP off, M3 Ultra | 75,90 / 60,18 / 43,27 | 76,26 / 60,46 / 43,85 |
+| Decodificación tok/s, 1 / 2 / 4 streams, MTP off, M5 Max | 71,32 / 56,80 / 40,64 | 72,62 / 57,87 / 41,10 |
+| Decodificación tok/s, 1 / 2 / 4 streams, MTP adaptive, M3 Ultra | 94,73 / 63,46 / 39,18 | 93,22 / 62,59 / 39,62 |
+| Decodificación tok/s, 1 / 2 / 4 streams, MTP adaptive, M5 Max | 88,36 / 60,70 / 37,24 | 90,37 / 60,06 / 37,44 |
+| Prefill tok/s 2k / 8k, M3 Ultra | 1.307 / 1.427 | 1.319 / 1.441 |
+| Prefill tok/s 2k / 8k, M5 Max | 2.169 / 2.768 | 2.185 / 2.795 |
+| Time to first token, frío / caliente, M3 Ultra | 1,80 / 1,57 s | 1,80 / 1,56 s |
+| Time to first token, frío / caliente, M5 Max | 1,13 / 0,95 s | 1,12 / 0,94 s |
 
-No se publican resultados de benchmarks de calidad de tarea (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el checkpoint ocupa 178,3 GB (166,0 GiB) en disco. Con `qwen4_ple_ssd_offload` activado, el modelo usó entre 71 y 74 GB de memoria en un Mac Studio M5 Max de 128 GB. Sin esa opción, la tabla PLE (~95 GB) debe residir en memoria y un Mac de 128 GB se queda sin memoria.
-- Almacenamiento: se requieren unos 180 GB libres de disco para la descarga, según las instrucciones del autor.
-- GPU/hardware recomendado: Apple Silicon con memoria unificada. Las mediciones se hicieron en Mac Studio M3 Ultra (512 GB) y Mac Studio M5 Max (128 GB). No hay datos para GPU NVIDIA (A100, H100, RTX 4090) ni para otras plataformas.
-- Viabilidad en GPU de consumo: no disponible. El artefacto está empaquetado para mlx y no se documenta carga en CUDA.
-- Despliegue: oMLX con la rama `quant-plugins-poc` y el plugin `omlx-oqel` 0.1.0. El servidor es compatible con la API de OpenAI en el puerto 8000. Stock oMLX, mlx-lm y mlx-vlm no pueden cargarlo; sin el plugin, la carga falla con `no quant format is registered for mode 'oqel'`.
-- Entorno de software: Python 3.11 a 3.13, git, venv dedicado. La carga desde Python requiere `maybe_apply_pre_load_patches` con `for_vlm=True` y `lazy=True`.
-- Latencia y throughput: ver tabla de benchmarks. Prefill de 2.096 a 2.685 tok/s en M5 Max y de 1.253 a 1.384 tok/s en M3 Ultra; decode de 65 a 88 tok/s por stream según MTP y máquina.
+- VRAM/memoria unificada: el checkpoint ocupa 134,3 GB en disco; se necesita un Mac Apple Silicon con memoria unificada suficiente para cargarlo, y el autor recomienda mantener la tabla PLE en SSD en máquinas de 128 GB mediante `qwen4_ple_ssd_offload: true`.
+- GPU: solo Apple Silicon. Los datos medidos corresponden a M3 Ultra y M5 Max; no hay soporte para A100, H100 ni RTX 4090 con este formato.
+- Consumer GPU: no aplica; el formato oQeL está atado a MLX y a los kernels del plugin.
+- Despliegue: fork de oMLX en la rama `oqel-poc-r3` más el plugin `omlx-oqel` 0.2.0; servido con `omlx serve --model-dir ./models` en el puerto 8000 con API compatible con OpenAI. Stock oMLX, mlx-lm y mlx-vlm no pueden cargarlo.
+- Entorno: macOS con Python 3.11 a 3.13, git y conexión de red para descargar el checkpoint.
+- Latencia y throughput: TTFT de 1,80 s en frío y 1,57 s en caliente en M3 Ultra; 1,13 s y 0,95 s en M5 Max. Decodificación de hasta 94,73 tok/s con MTP adaptive y 1 stream en M3 Ultra; prefill de hasta 2.768 tok/s a 8k en M5 Max.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bearzi/Qwen3.8-Flash-Next-oQ4eL | ~79,9 mil millones | no disponible | 4-bit oQeL en expertos, 8-bit affine en resto | qwen-community-1.0 | Hugging Face, requiere fork de oMLX y plugin |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | no disponible | oQ4e (PLE más pequeño) | no disponible en la información | Hugging Face, 107,7 GB |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | BF16 | qwen-community-1.0 | Hugging Face |
+| bearzi/Qwen3.8-Flash-Next-oQ4eL | 83,5 B | no disponible | 4-bit oQeL + affine 8-bit + PLE FP8 | qwen-community-1.0 | Hugging Face, requiere fork de oMLX y plugin |
+| bearzi/Qwen3.8-Flash-Next-oQ4e | 83,5 B (mismo base) | no disponible | affine 8-bit + PLE FP8 | qwen-community-1.0 | Hugging Face, oMLX stock |
+| Qwen/Qwen3.8-Flash-Next (BF16) | 83,5 B | no disponible | BF16 | qwen-community-1.0 | Hugging Face |
 
-La comparación relevante es frente a la build oQ4e del mismo fork y al modelo base BF16. oQ4eL mejora la fidelidad (KL y acuerdo top-1) pero decodifica entre un 7% y un 15% más despacio según configuración, y ocupa 178,3 GB frente a los 107,7 GB de la build de Jundot, que guarda la tabla PLE en un formato más compacto.
+La comparación con modelos de otros fabricantes no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Experimental y frágil: requiere una bifurcación no fusionada de oMLX y el plugin `omlx-oqel` 0.1.0. El layout oQeL (revision 1) y los kernels pueden cambiar, y una versión posterior del plugin podría rechazar este checkpoint, obligando a recuantizarlo.
-- No usar en producción: la model card indica explícitamente que no debe emplearse para nada que no se pueda reproducir. La release se marcó como "in progress" el mismo día de publicación, con correcciones de velocidad de decodificación pendientes.
-- Rendimiento inferior a oQ4e: la decodificación es más lenta en todas las configuraciones medidas (por ejemplo, 85,41 frente a 99,36 tok/s con MTP adaptive en M3 Ultra).
-- Requisitos de memoria severos: sin offload de la tabla PLE a SSD, un Mac de 128 GB no puede cargar el modelo. La tabla PLE en BF16 representa unos 95 GB del total.
-- Plataforma restringida: solo Apple Silicon con MLX. No hay soporte documentado para CUDA, vLLM, llama.cpp, Ollama ni TGI.
-- Idiomas, contexto y sesgos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado en la información disponible; la perplejidad publicada (2,1482 en código y 7,9028 en prosa) es prácticamente idéntica a BF16, pero no se han publicado evaluaciones de calidad de tarea.
-- Licencia: qwen-community-1.0, etiquetada como `other`. Las condiciones de uso comercial deben consultarse en el enlace de licencia del modelo base; no se detallan en la información disponible.
-- Trazabilidad limitada: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado.
+- Estado experimental: requiere un fork no upstream de oMLX y un plugin concreto; stock oMLX, mlx-lm y mlx-vlm no pueden cargarlo.
+- Fragilidad de formato: el layout oQeL y los kernels del plugin pueden cambiar, y una versión posterior del plugin podría rechazar este checkpoint.
+- Plataforma: solo Apple Silicon; no hay soporte para GPUs NVIDIA ni para despliegue en servidores x86 convencionales.
+- Memoria: 134,3 GB de checkpoint exigen máquinas de gama muy alta; en Macs de 128 GB es necesario el offload de la tabla PLE a SSD.
+- Idiomas, contexto y parámetros activos no documentados: no se puede planificar su uso multilingüe ni de contexto largo sin verificación previa.
+- Licencia: qwen-community-1.0, etiquetada como `other`; deben revisarse los términos del modelo base antes de cualquier uso comercial.
+- Sesgos y alucinación: no hay información específica publicada para esta cuantización; se heredan los del modelo base, no documentados aquí.
+- Sin benchmarks estándar: las métricas publicadas son de fidelidad de cuantización y rendimiento, no de calidad de tarea (MMLU, HumanEval, GSM8K).
+- Sin señales de adopción: 0 likes y 202 descargas en el momento de la consulta; no hay evidencia de uso en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/bearzi/Qwen3.8-Flash-Next-oQ4eL
+- Modelo en Hugging Face: https://huggingface.co/bearzi/Qwen3.8-Flash-Next-oQ4eL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Fork de oMLX (rama `quant-plugins-poc`): https://github.com/yohann-bearzi/omlx/tree/quant-plugins-poc
-- Plugin omlx-oqel: https://github.com/yohann-bearzi/omlx-oqel
-- Build oQ4e de referencia (Jundot): https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
+- Build oQ4e de referencia: https://huggingface.co/bearzi/Qwen3.8-Flash-Next-oQ4e
+- Fork de oMLX (rama `oqel-poc-r3`): https://github.com/yohann-bearzi/omlx
+- Plugin omlx-oqel (v0.2.0): https://github.com/yohann-bearzi/omlx-oqel

@@ -2,119 +2,101 @@
 
 ## Resumen
 
-SpellSpeak Glyph 2B es un modelo de generación de texto afinado para un propósito muy concreto: escribir una única línea de diálogo de un personaje no jugador (NPC) dentro de un videojuego, manteniéndose en el personaje y dentro de los límites de lo que ese personaje sabe. Lo desarrolla jptaylor y se construye sobre `google/gemma-4-E2B-it` mediante la fusión de un adaptador LoRA entrenado con escenas sintéticas sobre mundos generados. La premisa de diseño es que el juego, no el modelo, decide qué es verdad: el motor inyecta el lore y el estado de la conversación en el prompt, y el modelo solo propone habla.
+SpellSpeak Glyph 2B es un modelo de lenguaje afinado para generar una única línea de diálogo de personajes no jugadores (NPC) en videojuegos. Lo desarrolla jptaylor y parte del modelo base google/gemma-4-E2B-it, sobre el que se ha realizado un ajuste específico para el dominio de diálogo conversacional en juegos, roleplay y agentes de voz. La versión publicada es RC2 (alpha), una revisión que introduce la generación de voces a partir de palabras clave de personalidad.
 
-El modelo se distribuye en dos formatos: pesos completos en `safetensors` (10,21 GB) y una cuantización Q5_K_M en GGUF (2,91 GB) pensada para embarcarse en el propio juego y ejecutarse en la máquina del jugador. Según los datos del repositorio, los parámetros totales ascienden a 5.104.297.539 (~5,1 mil millones), lo que resulta llamativo para una etiqueta "2B" y conviene tener en cuenta al planificar memoria. La ventana de contexto recomendada en los ejemplos de servicio es de 4096 tokens.
+El modelo resuelve un problema muy concreto: que un personaje del juego responda en su propia voz, a partir únicamente de lo que ese personaje sabe y cree, sin inventar hechos que el juego no haya establecido. La premisa de diseño es que el juego es la fuente de verdad y el modelo solo propone la línea de habla; si el personaje acepta un intercambio, es el juego quien lo ejecuta. Está pensado para ejecutarse en la máquina del jugador, no en servidores en la nube, de ahí su tamaño reducido.
 
-Su relevancia actual está en la categoría emergente de IA conversacional para juegos con inferencia local: modelos pequeños, con latencia de primera palabra en decenas de milisegundos y sin dependencia de la nube. No obstante, es una versión alpha (RC1) medida únicamente en GPUs NVIDIA en la nube, no en hardware de consumo, y con licencia Apache 2.0.
+El nombre "2B" hace referencia al modelo de texto principal de Gemma 4 E2B, de unos 1.900 millones de parámetros. Hugging Face lista 5.104.297.539 parámetros en total porque el fichero safetensors incluye las tablas de embeddings de palabras (2.750 millones) y los componentes de audio y visión (470 millones). El contexto operativo recomendado es de 4096 tokens y los idiomas soportados se limitan al inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de google/gemma-4-E2B-it); detalles internos no disponibles |
-| Parametros totales | 5.104.297.539 (~5,1 mil millones), segun safetensors |
+| Arquitectura | Transformer derivado de Gemma 4 E2B (modelo base google/gemma-4-E2B-it), con componentes multimodales de audio y visión en el checkpoint completo |
+| Parametros totales | 5.104.297.539 en `model.safetensors`; el modelo de texto principal ronda los 1.900 millones |
 | Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (valor usado en los ejemplos de servicio; maximo nativo no disponible) |
-| Tipos de cuantizacion | GGUF Q5_K_M; pesos completos en safetensors (fp); otras cuantizaciones no disponibles |
-| Idiomas soportados | Ingles unicamente |
+| Longitud de contexto | 4096 tokens (valor usado en la configuración de referencia con `llama-server`) |
+| Tipos de cuantizacion | GGUF Q5_K_M (2,91 GB); safetensors en precisión completa (10,21 GB) |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (10,21 GB) y GGUF (2,91 GB, Q5_K_M) |
+| Formato de pesos | GGUF y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-4-E2B-it`, un instructivo de Google, al que se le fusiona un LoRA entrenado sobre escenas sintéticas generadas en mundos sintéticos. La model card no detalla la arquitectura interna de Gemma 4 E2B (número de capas, atención, posibles componentes MoE o híbridos) ni el volumen exacto de tokens de entrenamiento, la composición del dataset o si hubo etapas de RLHF/DPO posteriores. Sí se indica que el entrenamiento se realizó sobre escenas sintéticas y que las pruebas de benchmark se ejecutan sobre mundos mantenidos fuera del conjunto de entrenamiento.
+El modelo se apoya en la arquitectura de Gemma 4 E2B, un transformer con partes multimodales (audio y visión) presentes en el checkpoint completo, aunque el uso previsto es exclusivamente de generación de texto. El ajuste se ha orientado a una tarea muy acotada: producir una sola línea de diálogo en formato de texto plano, sin marcado, emotes ni acotaciones escénicas, lista para ser enviada a un sistema de síntesis de voz. El prompt se construye con los marcadores de turno de Gemma y la información del personaje se inyecta mediante una estructura `ActorContext` que describe quién es, qué sabe y qué cree, junto con el historial de la conversación.
 
-Una innovación operativa destacable no está en el modelo sino en su despliegue: el autor aprovecha la opción `--lazy-mode on` de llama.cpp (build b11146 o posterior) para leer la tabla por capas de Gemma desde el fichero fila a fila, en lugar de mantener en memoria aproximadamente 1,3 GB de esa tabla. El prompt se construye con los marcadores de turno propios de Gemma y el modelo está entrenado para detenerse en `<turn|>`; se recomienda decodificación greedy (`temperature` 0, `top_k` 1) para reproducir las puntuaciones publicadas.
+La novedad principal de RC2 es el control de la voz mediante palabras clave: el campo `voice` del personaje es una lista separada por comas de entre una y seis palabras de un vocabulario cerrado (temperamento, humor, registro, región y hábitos). El modelo se ha entrenado con ese vocabulario concreto y con ese diseño de prompt; según la model card, otras disposiciones del prompt no se han probado. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de una sola línea de diálogo de personaje, en texto plano, lista para síntesis de voz, sin marcado, emotes ni acotaciones escénicas.
-- Respuesta en personaje a partir de un contexto de actor (`ActorContext`) que describe quién es el personaje, qué sabe y qué cree, más el historial de la conversación.
-- Reconocimiento de límites de conocimiento: declara que no sabe algo cuando corresponde, en lugar de inventarlo.
-- Custodia de secretos del personaje: mantiene información reservada cuando el contexto así lo indica.
-- Coherencia con el mundo: rechaza o desvía elementos ajenos al universo del juego (por ejemplo, objetos del mundo real).
-- Gestión de conversaciones en grupo: responde preguntas dirigidas a un personaje dentro de una escena con varios participantes.
-- Proposición de intercambios comerciales, con la transacción real delegada al motor del juego.
-- Un mismo modelo puede interpretar a todos los personajes, manteniendo el contexto de cada uno en su propia sesión.
-- No dispone de herramientas ni de function calling; no razona en voz alta ni ejecuta acciones.
+- Generación de una única línea de diálogo de personaje en texto plano, sin marcado ni acotaciones, apta para síntesis de voz.
+- Diferenciación de voces a partir de palabras clave de personalidad: temperamento, humor, registro, región y hábitos.
+- Control de la longitud de la respuesta según las palabras clave de longitud (un personaje "terse" promedia 5,1 palabras por respuesta; uno "chatty", 16,9).
+- Uso de frases características ("pet phrases") cuando se le proporcionan: 15 de 15 personajes las emplearon en las pruebas del autor.
+- Fidelidad a los hechos del lore inyectado en el prompt y rechazo explícito de responder a preguntas que el personaje no puede conocer.
+- Mantenimiento de secretos del personaje y permanencia dentro del mundo del juego (rechaza conceptos ajenos al mismo).
+- Un mismo modelo puede interpretar a todos los personajes del juego, manteniendo el contexto de cada uno en su propia sesión.
+- No dispone de herramientas (tool calling) ni de razonamiento en voz alta: solo propone la línea de diálogo y el juego decide qué se ejecuta.
+- Capacidades multilingües: no disponibles; solo inglés.
 
 ## Casos de uso
 
-- Diálogo de NPC en videojuegos de rol: el motor inyecta el lore y el estado de la conversación y el modelo devuelve una línea en la voz del personaje; el tamaño de 2,91 GB en Q5_K_M permite embarcarlo en la distribución del juego.
-- Atención al cliente o guías dentro del juego: un personaje puede responder preguntas sobre precios, ubicaciones o servicios del mundo siempre que esos datos estén en el prompt, con un 98% en la prueba de preguntas en grupo del benchmark del autor.
-- Personajes con información reservada: misiones de intriga o facciones donde el NPC debe ocultar secretos; la prueba de "keeps secrets" alcanza el 99% en Q5_K_M.
-- Escenas con varios personajes: conversaciones de grupo donde cada NPC responde solo lo que le corresponde, con un 90% en la prueba de escenas grupales.
-- Sistemas de voz para agentes conversacionales: la salida es texto plano sin marcado, pensada para alimentar directamente un motor de síntesis de voz, con 42 ms de mediana hasta la primera palabra en línea de seguimiento sobre una L4.
-- Comercio y trueques en el juego: el NPC propone condiciones y el motor valida y ejecuta la transacción; útil en tiendas, subastas o misiones de intercambio, aunque con solo un 67% en la prueba de trades.
-- Prototipado rápido de narrativa: gracias a la licencia Apache 2.0 y a los pesos completos en safetensors, se puede reentrenar o afinar para un universo propio antes de cuantizar a GGUF para producción.
+- Diálogo de NPC en juegos de rol: el motor del juego inyecta la descripción del personaje, sus creencias y el historial de la conversación, y el modelo devuelve una línea en su voz. Su tamaño (2,91 GB en Q5_K_M) permite distribuirlo con el juego y ejecutarlo en la máquina del jugador.
+- Atención al público dentro del mundo del juego (taberneros, mercaderes, herreros): el modelo responde a preguntas sobre precios o servicios usando únicamente el lore que el juego le pasa, y admite que no sabe cuando la información no está en su contexto.
+- Personajes con secretos argumentales: el modelo mantiene la información reservada y responde con evasivas o negativas en personaje, lo que encaja con tramas de investigación o misterio.
+- Voces diferenciadas en plantillas de personajes: con una lista de palabras clave por personaje (`gruff, dockside, terse, calls people "mate"`) se generan respuestas distinguibles sin necesidad de un modelo distinto por personaje.
+- Integración con síntesis de voz en agentes conversacionales: al devolver texto plano sin marcado, la salida se puede enviar directamente a un TTS para dar voz al personaje en tiempo real.
+- Prototipado rápido de narrativa interactiva: guionistas y diseñadores pueden iterar sobre personalidades y comprobar cómo suenan distintos registros y longitudes de respuesta antes de fijar el guion definitivo.
+- Control de longitud para interfaces con restricciones: las palabras clave de longitud permiten forzar respuestas cortas (5,1 palabras de media con "terse") en burbujas de diálogo pequeñas o en subtítulos.
 
 ## Benchmarks y rendimiento
 
-Resultados de GameBench (diez pruebas, 5.526 escenas, decodificación greedy, una ejecución por fichero) según la model card:
+Los datos publicados por el autor en la model card (RC2 frente a RC1) son los siguientes:
 
-| Prueba (escenas) | Glyph 2B Q5_K_M | Gemma 4 E2B sin tocar |
-|---|---:|---:|
-| Escenas centrales (309) | 66% (205) | 61% (189) |
-| Mundos no vistos (1.000) | 87% (867) | 66% (662) |
-| Historia y ambientación (103) | 64% (66) | 59% (61) |
-| Preguntas en grupo (1.500) | 98% (1.465) | 76% (1.140) |
-| Escenas grupales (1.360) | 90% (1.224) | 58% (790) |
-| Intercambios (576) | 67% (385) | 37% (215) |
-| Números grandes (232) | 40% (93) | 34% (79) |
-| Guarda secretos (246) | 99% (244) | 26% (64) |
-| Deja ir secretos (164) | 92% (151) | 93% (153) |
-| Bajo presión (36) | 89% (32) | 64% (23) |
-| **Media de las diez** | **79,2%** | **57,5%** |
+| Prueba | RC2 | RC1 |
+|---|---|---|
+| Distinción de personajes por su línea (43 personajes, azar 2,3%) | 20,1% | 10,5% |
+| Longitud media con palabra clave "terse" | 5,1 palabras | no disponible |
+| Longitud media con palabra clave "chatty" | 16,9 palabras | no disponible |
+| Longitud media sin palabra clave de longitud | 13,4 palabras | similar a RC1 |
+| Uso de frase característica cuando se proporciona | 15 de 15 personajes | no disponible |
+| Respuestas que superan todas las comprobaciones de hechos (prueba de palabras clave) | 92,7% | 94,0% (diferencia dentro del azar) |
 
-Rendimiento medido en una NVIDIA L4 en la nube, llama.cpp b11146, todas las capas en GPU, cinco personajes simultáneos, una ejecución:
-
-| Métrica | Q5_K_M |
-|---|---:|
-| Tamano del fichero | 2,91 GB |
-| Memoria de GPU | 2,15 GB |
-| Memoria de host tras carga (modo por defecto) | 3,60 GB (unos 2 GB son runtime y librerias de GPU) |
-| Primera palabra, personaje nuevo (mediana) | 86 ms |
-| Primera palabra, linea de seguimiento (mediana) | 42 ms |
-
-No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 2,15 GB con Q5_K_M y todas las capas en GPU, según la medición del autor en una L4.
-- Memoria de host: 3,60 GB tras la carga en modo por defecto, de los cuales unos 2 GB corresponden al runtime y las librerías de GPU.
-- GPU recomendadas: el autor solo ha medido en NVIDIA L4 en la nube; no hay datos publicados para A100, H100, RTX 4090 u otras.
-- GPU de consumo: no verificado. El tamaño del fichero (2,91 GB) sugiere que podría caber en GPUs de consumo con suficiente VRAM, pero el autor indica explícitamente que no se ha medido en hardware de jugadores.
-- CPU: el ejemplo de la model card se ejecuta en CPU con llama.cpp b11146, pero no se publican cifras de rendimiento en CPU.
-- Opciones de despliegue: llama.cpp (build b11146 o posterior, con `llama-server` y `--lazy-mode on`), y cualquier runtime compatible con GGUF. Para pesos completos, safetensors permite conversión a otros runtimes, aunque el autor advierte que otras opciones de ahorro de memoria pueden no existir fuera de llama.cpp.
-- Latencia: 86 ms de mediana hasta la primera palabra con personaje nuevo y 42 ms en línea de seguimiento, en L4 con cinco personajes concurrentes. Throughput agregado no disponible.
+- VRAM estimada: el fichero GGUF Q5_K_M ocupa 2,91 GB, pero el autor advierte que el tamaño del fichero no es la memoria necesaria. La opción `--lazy-mode on` evita mantener en memoria unos 1,3 GB de la tabla por capas de Gemma, leyéndola fila a fila desde el fichero.
+- GPU recomendadas: no se especifican modelos concretos; las mediciones se han realizado en GPUs NVIDIA en la nube.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el modelo está pensado para ejecutarse en la máquina del jugador y el ejemplo de referencia se ejecuta en CPU con llama.cpp.
+- Despliegue: llama.cpp mediante `llama-server` (build b11146 o posterior) con `-c 4096 -np 1 -ngl all --lazy-mode on`. Si se integra llama.cpp como biblioteca, hay que activar `lazy_mode = LLAMA_LAZY_MODE_ON` en `llama_model_params`. Otros runtimes pueden no ofrecer esta opción.
+- Latencia y throughput: no disponibles. El ahorro de memoria de `--lazy-mode on` se confirmó en una máquina en la nube, pero no se ha medido en el equipo de un jugador.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| SpellSpeak Glyph 2B | ~5,1 mil millones (segun safetensors) | 4096 (uso recomendado) | Dialogo de NPC para juegos | Apache 2.0 | GGUF y safetensors en Hugging Face |
-| SpellSpeak Sigil 4B | no disponible | no disponible | Dialogo de NPC para juegos (tamano mayor) | no disponible | Hugging Face (jptaylor/sigil-4b) |
-| google/gemma-4-E2B-it | no disponible | no disponible | Instructivo generalista | no disponible en la informacion | Hugging Face (modelo base) |
+| SpellSpeak Glyph 2B (RC2) | 5.104.297.539 en safetensors; ~1,9B en el modelo de texto | 4096 tokens | inglés | Apache 2.0 | Diálogo de NPC en juegos, una línea por turno |
+| SpellSpeak Sigil 4B | no disponible | no disponible | no disponible | no disponible | Versión mayor del mismo proyecto, según la model card |
+| google/gemma-4-E2B-it (modelo base) | ~1,9B en el modelo de texto (5.104.297.539 en el checkpoint completo) | no disponible | no disponible | no disponible en la información proporcionada | Modelo generalista multimodal (texto, audio, visión) |
 
-La comparación con alternativas de la misma categoría (modelos pequeños especializados en diálogo de juego) no está disponible en la información proporcionada. El único punto de referencia cuantitativo es el modelo base sin afinar, que obtiene una media de 57,5% frente al 79,2% de Glyph en GameBench.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una versión alpha (RC1): no se ha probado en máquinas de jugadores; las GPUs de consumo y las CPU no están medidas.
-- Los números son difíciles para el modelo: solo supera el 40% de la prueba de números grandes. El juego debería enunciar precios y sumas cuando importen.
-- Las escenas centrales son la cifra honesta: con un 66%, aproximadamente una de cada tres líneas en escenas escritas a mano tiene un fallo identificable por el juez.
-- Solo inglés, y todas las métricas son solo de texto.
-- El juez del benchmark es un modelo de lenguaje, con una sola pasada y sus propios sesgos; los resultados pueden variar entre ejecuciones de entrenamiento.
-- Las conversaciones largas no se puntúan en el benchmark publicado.
-- El modelo puede ser sacado de personaje; no es un sistema de seguridad, por lo que conviene filtrar tanto la entrada de los jugadores como la salida.
-- No dispone de herramientas ni de function calling: cualquier efecto en el mundo del juego debe validarlo y ejecutarlo el motor.
-- El prompt debe seguir el formato exacto de `render_prompt` con los marcadores de turno de Gemma; otras disposiciones no se han probado.
-- La discrepancia entre la etiqueta "2B" y los 5.104.297.539 parámetros del safetensors debe tenerse en cuenta al estimar memoria y al planificar el despliegue.
+- Es una versión alpha: las mediciones se han hecho en GPUs NVIDIA en la nube, no en equipos de jugadores, y el rendimiento en hardware doméstico no está validado.
+- Solo soporta inglés; no hay capacidades multilingües.
+- El modelo está entrenado con un diseño de prompt concreto (marcadores de turno de Gemma y estructura `ActorContext`); otras disposiciones no se han probado y pueden degradar la calidad.
+- El vocabulario de palabras clave de voz es cerrado; el comportamiento con palabras fuera de ese conjunto no está documentado.
+- No dispone de herramientas ni de razonamiento explícito: no debe usarse como agente autónomo ni para tomar decisiones; el juego debe validar y ejecutar cualquier acción.
+- Riesgo de alucinación: aunque el diseño busca que el modelo admita cuando no sabe, el 7,3% de las respuestas de la prueba de palabras clave no superaron todas las comprobaciones de hechos.
+- La distinción entre personajes es estadística, no determinista: con 43 personajes, la tasa de acierto es del 20,1% frente a un azar del 2,3%, lo que implica que muchas respuestas no serán identificables por su voz sin contexto adicional.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base google/gemma-4-E2B-it, cuyos términos no se detallan en la información disponible.
+- El ahorro de memoria de `--lazy-mode on` no se ha medido en el equipo de un jugador y otros runtimes pueden no implementarlo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jptaylor/spellspeak-glyph-2b
-- Modelo de mayor tamano (SpellSpeak Sigil 4B): https://huggingface.co/jptaylor/sigil-4b
-- Ejemplos y codigo fuente: https://github.com/spellspeak/models/tree/main/glyph
-- Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- [Hugging Face: jptaylor/spellspeak-glyph-2b](https://huggingface.co/jptaylor/spellspeak-glyph-2b)
+- [Repositorio de ejemplos y código fuente](https://github.com/spellspeak/models/tree/main/glyph)
+- [SpellSpeak Sigil 4B](https://huggingface.co/jptaylor/spellspeak-sigil-4b)
+- [Modelo base: google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)

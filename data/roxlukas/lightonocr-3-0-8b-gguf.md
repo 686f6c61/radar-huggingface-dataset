@@ -2,91 +2,85 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B es un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) desarrollado por LightOn, distribuido bajo licencia Apache 2.0. Esta ficha concreta corresponde a la conversión a formato GGUF realizada por el usuario roxlukas, que permite ejecutar el modelo en entornos de inferencia local mediante llama.cpp y Ollama sin necesidad de GPU de datacenter. El modelo base emplea la arquitectura vision-language de Qwen3.5 y cuenta con 752.393.024 parámetros totales (aproximadamente 0,8 mil millones), lo que lo sitúa en la gama ultraligera de modelos multimodales.
+LightOnOCR-3-0.8B es un modelo de reconocimiento óptico de caracteres (OCR) basado en visión-lenguaje, desarrollado originalmente por LightOn y distribuido en este repositorio en formato GGUF por el usuario roxlukas. El modelo parte de una arquitectura Qwen3.5 vision-language y está diseñado específicamente para transcribir texto presente en imágenes, con soporte opcional de *grounding* (localización de bloques de texto con etiquetas y cajas delimitadoras). Con 752 millones de parámetros totales, se posiciona como una alternativa ligera frente a modelos OCR de mayor tamaño.
 
-El modelo resuelve dos tareas fundamentales de digitalización documental: la transcripción plana de texto presente en imágenes y la extracción estructurada con *grounding*, es decir, bloques de texto etiquetados acompañados de sus coordenadas (bounding boxes). Su relevancia actual radica en que ofrece estas capacidades en un tamaño reducido, apto para desplegarse en CPU o en GPUs de consumo, algo poco habitual en modelos de OCR multimodal.
+La relevancia de esta conversión GGUF radica en que permite ejecutar el modelo en llama.cpp y Ollama, lo que facilita su despliegue en hardware modesto, incluidas GPU de consumo, sin necesidad de infraestructura dedicada. El repositorio incluye pesos en F16 y Q8_0, además del proyector visual (mmproj) necesario para procesar imágenes.
 
-La conversión GGUF incluye el modelo de texto en precisiones F16 y Q8_0, además de un proyector de visión (mmproj) separado en F16, requisito imprescindible para procesar imágenes. El repositorio ocupa 2,5 GB y no registra descargas ni interacciones en el momento de la consulta.
+No obstante, conviene señalar que el autor de la conversión solo ha probado el modelo con imágenes sintéticas de facturas en polaco y no ha publicado benchmarks de las versiones cuantizadas, por lo que el rendimiento real en otros dominios e idiomas no está validado en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (arquitectura Qwen3.5) |
+| Arquitectura | Qwen3.5 vision-language (transformer multimodal con proyector visual) |
 | Parametros totales | 752.393.024 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16 y Q8_0 (texto); proyector de vision en F16 |
-| Idiomas soportados | no disponible (probado solo con una imagen sintetica de factura en polaco) |
+| Tipos de cuantizacion | F16, Q8_0 |
+| Idiomas soportados | no disponible (probado solo con texto polaco en imágenes sintéticas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base sigue la arquitectura vision-language de Qwen3.5, que combina un codificador de visión con un modelo de lenguaje transformer para procesar imágenes y generar texto. La conversión a GGUF separa explícitamente el modelo de texto y el proyector de visión: el primero se distribuye en F16 (1,5 GB) y Q8_0 (0,8 GB), mientras que el segundo se ofrece únicamente en F16 (0,2 GB). La conversión se realizó con `convert_hf_to_gguf.py` usando las opciones `--outtype f16 --no-mtp` y `--mmproj`, y la cuantización Q8_0 se generó con `llama-quantize` en la build b12290 de llama.cpp.
+El modelo base lightonai/LightOnOCR-3-0.8B emplea una arquitectura de tipo vision-language basada en Qwen3.5, que combina un codificador visual con un modelo de lenguaje para procesar imágenes y generar texto. La conversión GGUF separa el modelo de texto (F16 o Q8_0) del proyector visual (mmproj en F16), que es obligatorio para el procesamiento de imágenes. La conversión se realizó con `convert_hf_to_gguf.py` de llama.cpp usando `--outtype f16 --no-mtp`, y la cuantización Q8_0 con `llama-quantize` (build b12290).
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO en el modelo original. Tampoco se documentan innovaciones técnicas específicas más allá de las propias de la arquitectura Qwen3.5. La model card del conversor indica que no se ejecutaron benchmarks sobre las versiones GGUF, y que las pruebas se limitaron a una imagen sintética de factura con texto en polaco.
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo soporta dos modos de prompt definidos en la model card original: un prompt vacío para transcripción plana y el modo `grounding` para obtener bloques con etiquetas y cajas delimitadoras. Otras instrucciones quedan fuera de la distribución para la que fue entrenado.
 
 ## Capacidades
 
-- Transcripción de texto en imágenes: con un prompt vacío, el modelo realiza una transcripción plana del contenido textual de la imagen.
-- Extracción estructurada con grounding: con el prompt `grounding`, devuelve bloques de texto etiquetados junto con sus bounding boxes.
-- Procesamiento multimodal de documentos: al incluir el proyector de visión (mmproj), puede analizar imágenes de páginas, facturas y documentos escaneados.
-- Modo conversacional: el repositorio está etiquetado como conversacional y es compatible con endpoints.
-- Integración con llama.cpp y Ollama: permite inferencia local mediante `llama-mtmd-cli` o la creación de un modelo Ollama a partir del Modelfile incluido.
-- Control de modo thinking: se recomienda desactivar el razonamiento extendido (`think: false` en la API, `--think=false` en la CLI) para las tareas de OCR.
-- Tool calling y function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades de audio: no disponible.
+- Transcripción de texto presente en imágenes (OCR) mediante prompt vacío.
+- Modo *grounding*: devuelve bloques de texto con etiquetas y cajas delimitadoras.
+- Procesamiento multimodal imagen-texto gracias al proyector visual incluido.
+- Ejecución local en llama.cpp mediante `llama-mtmd-cli`.
+- Compatibilidad con Ollama a través del Modelfile incluido, usando el renderer y parser integrados de `qwen3.5`.
+- Modo *thinking* desactivable (`"think": false` en API, `--think=false` en CLI), recomendado desactivarlo al invocar el modelo.
+- No se documentan capacidades de tool calling, agentes, audio ni otros idiomas más allá del caso de prueba mencionado.
 
 ## Casos de uso
 
-- Digitalización de facturas y albaranes: el modelo transcribe el texto de una imagen de factura y, en modo `grounding`, devuelve cada bloque con sus coordenadas, lo que facilita el mapeo posterior de campos a un sistema de contabilidad.
-- Extracción de datos de formularios escaneados: con bounding boxes por bloque, un pipeline puede localizar y recortar regiones concretas (cabecera, importes, firmas) para su validación automática.
-- Procesamiento local en CPU: al estar cuantizado en Q8_0 (0,8 GB), puede ejecutarse con llama.cpp en equipos sin GPU dedicada, útil para oficinas con requisitos de privacidad que no pueden enviar documentos a la nube.
-- Automatización documental en Ollama: la inclusión de un Modelfile permite desplegar el modelo como servicio local y consumirlo desde aplicaciones internas mediante la API de Ollama.
-- Indexación de archivos históricos: la transcripción plana permite convertir páginas escaneadas en texto indexable para motores de búsqueda internos o sistemas RAG.
-- Preprocesado en pipelines de OCR híbridos: el modelo puede actuar como primera pasada sobre documentos de estructura sencilla, derivando a sistemas más pesados solo los casos que requieran mayor precisión.
-- Prototipado rápido de aplicaciones de visión: su reducido tamaño y su licencia Apache 2.0 permiten integrarlo en pruebas de concepto sin coste de licencia ni infraestructura especializada.
+- Digitalización de facturas y documentos administrativos: el modelo puede transcribir el texto de imágenes de facturas, un escenario que el autor de la conversión ha probado con imágenes sintéticas en polaco, lo que lo hace adecuado para pipelines de extracción documental.
+- Extracción estructurada con *grounding*: usando el modo `grounding`, se pueden obtener bloques de texto con sus coordenadas, útil para reconstruir el layout de documentos escaneados y alimentar sistemas de gestión documental.
+- Procesamiento por lotes en local: al ejecutarse en llama.cpp con pesos Q8_0 de 0,8 GB, permite montar un servicio de OCR autoalojado sin dependencia de APIs externas.
+- Integración en aplicaciones de escritorio o embebidas: el reducido tamaño del modelo (menos de 800 millones de parámetros) facilita su inclusión en herramientas locales que necesiten OCR sin conexión.
+- Preprocesado para pipelines RAG sobre documentos escaneados: la transcripción de páginas a texto permite indexar contenido que de otro modo no sería recuperable.
+- Prototipado rápido con Ollama: el Modelfile incluido permite crear una instancia del modelo con un solo comando, adecuado para validar flujos de OCR antes de invertir en infraestructura mayor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del conversor indica explícitamente que no se ejecutaron benchmarks sobre las versiones GGUF y que las pruebas se limitaron a una imagen sintética de factura con texto en polaco.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor de la conversión indica explícitamente que solo se probó con imágenes sintéticas de facturas en polaco y que no se ejecutaron benchmarks sobre las versiones cuantizadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 0,8 GB para el modelo de texto en Q8_0 más 0,2 GB del proyector de visión en F16; en torno a 1,7 GB con el modelo de texto en F16.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no requiere A100 ni H100.
-- GPU de consumo: cabe holgadamente en tarjetas como RTX 3060, RTX 4060, RTX 4090 o incluso iGPUs con memoria compartida suficiente.
-- CPU: al estar disponible en Q8_0, es viable la inferencia en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp (`llama-mtmd-cli`), Ollama (mediante el Modelfile incluido) y cualquier runtime compatible con GGUF y proyector multimodal.
-- Latencia y throughput: no disponible; no se han publicado mediciones.
+- VRAM estimada: los pesos Q8_0 ocupan 0,8 GB y el proyector visual 0,2 GB, por lo que la inferencia requiere aproximadamente 1-2 GB de memoria, dependiendo del contexto y del backend.
+- Los pesos F16 ocupan 1,5 GB (modelo de texto) más 0,2 GB del proyector visual.
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, el modelo cabe holgadamente en GPU de consumo como RTX 3060, RTX 4060 o superiores.
+- Cabe en GPU de consumo: sí, dado el reducido tamaño de los pesos.
+- Opciones de despliegue: llama.cpp (`llama-mtmd-cli`) y Ollama mediante el Modelfile incluido.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
-|---|---|---|---|---|---|
-| LightOnOCR-3-0.8B (esta conversion) | 752 M | no disponible | OCR vision-language | Apache 2.0 | GGUF |
-| lightonai/LightOnOCR-3-0.8B (base) | 752 M | no disponible | OCR vision-language | Apache 2.0 | safetensors |
-| Otros modelos OCR de la familia LightOn | no disponible | no disponible | OCR | no disponible | no disponible |
+No se dispone de datos de rendimiento ni de especificaciones comparables de modelos alternativos en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| LightOnOCR-3-0.8B (esta conversion) | 752 M | no disponible | Apache 2.0 | GGUF |
+| Alternativas OCR comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo se han validado dos modos de prompt: vacío (transcripción plana) y `grounding` (bloques con etiquetas y bounding boxes). Cualquier otra instrucción queda fuera de la distribución esperada y puede producir resultados incorrectos.
-- El modelo solo se ha probado con una imagen sintética de factura en polaco; no hay evidencia de calidad en otros idiomas, tipos de documento o condiciones de escaneo.
-- No se han ejecutado benchmarks sobre las conversiones GGUF, por lo que el rendimiento real frente al modelo base en safetensors es desconocido.
-- Riesgo de alucinación en la transcripción: al ser un modelo generativo, puede omitir, duplicar o inventar texto en imágenes de baja calidad o con estructuras complejas.
-- Sesgos conocidos: no disponible.
-- Limitaciones de contexto e idioma: no disponible; la ausencia de datos sobre idiomas soportados impide garantizar cobertura multilingüe.
-- Es necesario desactivar el modo thinking para las tareas de OCR; dejarlo activado puede degradar la salida o aumentar la latencia.
-- La licencia Apache 2.0 permite uso comercial, pero el autor de la conversión no ofrece garantías sobre la calidad de los pesos cuantizados.
-- El repositorio no registra descargas ni validación por parte de la comunidad, por lo que conviene verificar la integridad de los archivos antes de usarlos en producción.
+- El autor de la conversión solo ha validado el modelo con imágenes sintéticas de facturas en polaco; el comportamiento en otros dominios, layouts e idiomas no está verificado.
+- No se han ejecutado benchmarks sobre las versiones cuantizadas, por lo que puede haber degradación de calidad respecto al modelo original en F16.
+- El modelo está entrenado para dos modos de prompt (vacío y `grounding`); otras instrucciones quedan fuera de distribución y pueden producir resultados erróneos.
+- Se recomienda desactivar el modo *thinking* al invocar el modelo, según indica el autor.
+- No se documentan sesgos conocidos ni riesgos específicos de alucinación más allá de los inherentes a los modelos de lenguaje.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base original.
+- El repositorio tiene un número muy bajo de descargas (195) y ninguna valoración, lo que limita la evidencia de uso en producción.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/roxlukas/LightOnOCR-3-0.8B-GGUF
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
+- llama.cpp (herramienta de conversión y ejecución): no disponible en la información proporcionada
+- Ollama: no disponible en la información proporcionada

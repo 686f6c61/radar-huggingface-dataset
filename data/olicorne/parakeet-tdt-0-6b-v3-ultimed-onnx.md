@@ -2,128 +2,114 @@
 
 ## Resumen
 
-parakeet-tdt-0.6b-v3-UltiMed-onnx es un modelo de reconocimiento automático de voz (ASR) afinado en francés médico y exportado a ONNX para inferencia en navegador y CPU. Lo desarrolla Olicorne a partir del modelo base `nvidia/parakeet-tdt-0.6b-v3`, un NeMo Conformer-TDT de 0.6 mil millones de parámetros. El fine-tune se realiza sobre el dataset `Olicorne/UltiMed-ASR-FR-v1` y se distribuye en cuatro precisiones (fp32, fp16, int8 y w4a8), lo que permite ejecutarlo directamente en el navegador sin instalar nada y sin enviar audio a servidores.
+Parakeet TDT 0.6B v3 UltiMed ONNX es un ajuste fino especializado en dictado médico en francés del modelo `moondream/parakeet-ultra`, que a su vez es un post-entrenamiento en precisión completa de `nvidia/parakeet-tdt-0.6b-v3`. Lo desarrolla Olicorne, un autor independiente que mantiene el proyecto UltiMed, y resuelve un problema concreto: la transcripción automática de dictados clínicos en francés, donde los modelos ASR genéricos fallan sistemáticamente en nombres de fármacos y terminología médica.
 
-El modelo resuelve la transcripción de vocabulario médico en francés, con una mejora sustancial frente al modelo base: en los conjuntos de evaluación médicos, el WER macro con decodificación greedy cae de 30,9 % a 5,8 %. Su relevancia radica en el ámbito sanitario francófono, donde el dictado clínico exige precisión en términos técnicos, fármacos y acrónimos, y en la posibilidad de desplegarlo en dispositivos de bajo consumo o en el navegador, manteniendo la privacidad de los datos del paciente.
+El modelo parte de la arquitectura NeMo Conformer con decodificación TDT (Token-and-Duration Transducer) de NVIDIA, con aproximadamente 0,6 mil millones de parámetros, y se ha reentrenado sobre más de 3.000 horas de dictado médico francés del dataset `UltiMed-ASR-FR-v1`. El resultado se exporta a ONNX con varias precisiones del encoder en un mismo repositorio, pensado para inferencia en navegador y CPU mediante `onnx-asr` y la aplicación Parakeet Web.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que ofrece una alternativa de código abierto (CC-BY-4.0) para un nicho poco cubierto, el ASR médico en francés, con mejoras medibles frente al modelo base: CER normalizado de 2,3 % frente a 4,9 % del base en el test de estrés con voz real, y 1,9 % al añadir phrase boosting y reglas de corrección de términos. Además, el autor mantiene una comparativa explícita con su propia v2, que recomienda no usar por regresiones en dictado humano real.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NeMo Conformer-TDT |
-| Parametros totales | 0.6B (aprox. 600 millones) |
-| Parametros activos | No aplicable (no es un modelo MoE) |
-| Longitud de contexto | No disponible como ventana de contexto; procesa audio de hasta 10 minutos en una sola pasada segun benchmark del autor |
-| Tipos de cuantizacion | fp32, fp16, int8, w4a8 (4-bit), cada uno en una carpeta separada |
-| Idiomas soportados | Frances (principal); retencion limitada de otros idiomas del modelo base, que es multilingue (25 idiomas segun el modelo optimizado) |
+| Arquitectura | NeMo Conformer con decodificador TDT (Token-and-Duration Transducer) |
+| Parametros totales | aproximadamente 0,6 mil millones (0,6B) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo ASR; se documenta una pasada única de 10 minutos de audio en VoxPopuli) |
+| Tipos de cuantizacion | varias precisiones del encoder en carpetas separadas (fp32, y otras precisiones no detalladas en la informacion disponible) |
+| Idiomas soportados | francés (fr) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | ONNX (encoder fp32 particionado en shards `.data`; decodificador int8 comun) |
+| Formato de pesos | ONNX (encoder dividido en `encoder-model.onnx.data.000` y `.data.001` para fp32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un `nemo-conformer-tdt`, es decir, un sistema de reconocimiento de voz basado en conformers (arquitectura híbrida de CNN y atencion) con un decodificador de tipo TDT. Este modelo de NVIDIA se entrenó originariamente de forma multilingüe. El fine-tune que presenta Olicorne se realizó sobre el dataset `UltiMed-ASR-FR-v1`, compuesto por audio médico en francés. Para monitorizar el ajuste se emplearon cinco conjuntos de validación reducidos (`dictionary`, `parhaf`, `drugs`, `acronyms`, `drug_sentence`), mientras que el conjunto `parrot` se reservó como evaluación no vista para medir generalización. El autor indica además que se añadió "ensayo" con Common Voice para proteger la retención multilingüe, en respuesta a una deriva observada en sueco y finlandés en entrenamientos anteriores.
+El modelo es un fine-tune de `moondream/parakeet-ultra`, que a su vez deriva de `nvidia/parakeet-tdt-0.6b-v3`. La arquitectura es un Conformer de NeMo con decodificador TDT, un transductor que predice conjuntamente tokens y duraciones, lo que permite emisión variable por frame y buen comportamiento en audio largo. El punto de partida del entrenamiento fue la reconstrucción en NeMo de los pesos publicada en `Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx`, y el resultado se exportó a ONNX con múltiples precisiones del encoder en un único repositorio.
 
-En cuanto a innovaciones técnicas, el modelo destaca por su exportación a ONNX con varias precisiones, permitiendo una cuantización casi gratuita: el encoder int8 iguala al fp32 en la media micro con una diferencia inferior a una centésima de punto, y la precisión w4a8 reduce el peso de descarga en 3,8x con un coste de aproximadamente una décima de punto de WER.
+El entrenamiento se realizó sobre el dataset `Olicorne/UltiMed-ASR-FR-v1`, con más de 3.000 horas de dictado médico francés. La model card menciona conjuntos de evaluación que el modelo nunca vio durante el entrenamiento: el split de test del propio dataset (5.285 clips de términos del diccionario médico en frases de dictado), 2.498 clips de párrafos de informes hospitalarios PARHAF y 2.059 clips de fármacos. No se detallan en la información proporcionada el número exacto de tokens de audio, la composición completa del dataset ni si hubo etapas de RLHF o DPO; el pipeline es de ajuste supervisado sobre transcripciones.
+
+Como innovación práctica, el proyecto incluye reglas de corrección por expresiones regulares (`regex-fixes/`) para nombres de fármacos y términos médicos que se aplican como sustitución de texto tras la decodificación, con coste casi nulo, y que también ayudan a modelos no ajustados. La exportación a ONNX está orientada a `onnx-asr` y a la app de navegador Parakeet Web, con inferencia completamente en cliente.
 
 ## Capacidades
 
-- Transcripción de audio en francés con fuerte vocabulario médico, incluyendo fármacos, acrónimos y terminología clínica.
-- Funciona completamente en el navegador o en CPU/GPU mediante ONNX Runtime, sin necesidad de servidores externos.
-- Ofrece cuatro precisiones de cuantización (fp32, fp16, int8, w4a8) para adaptarse a diferentes recursos hardware.
-- Soporta decodificación greedy y beam search (beam 5), con resultados de WER/CER consistentes entre ambas.
-- Capacidad para procesar audio largo, al menos 10 minutos en una sola pasada según el benchmark incluido en el modelo card.
-- Retención multilingüe evaluada con FLEURS, aunque los resultados numéricos no están completos en la información disponible.
-- No soporta tool calling, function calling, ni razonamiento multi-paso: es un modelo puramente de reconocimiento de voz.
+- Reconocimiento automático de voz (ASR) en francés, con especialización en dictado médico.
+- Transcripción de términos del diccionario médico, nombres de fármacos y párrafos de informes hospitalarios.
+- Decodificación greedy y beam search (beam 5 con MAES) documentadas en los benchmarks.
+- Phrase boosting para sesgar la decodificación hacia vocabulario médico concreto.
+- Procesamiento de audio largo: se documenta una pasada única de 10 minutos sobre VoxPopuli en francés.
+- Inferencia en navegador y en CPU mediante ONNX, sin envío de audio a servidores.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio generativo ni modo thinking; es un modelo exclusivamente ASR.
 
 ## Casos de uso
 
-- Dictado clínico en consultas: el modelo transcribe la voz del médico en francés reconociendo términos médicos, fármacos y dosis con WER bajo en los conjuntos `drugs` (4,9 %) y `drug_sentence` (12,8 %), lo que permite generar notas de consulta automáticamente.
-- Transcripción de telemedicina: integrado en ONNX Runtime en servidores, procesa grabaciones de llamadas médicas con soporte de hasta 10 minutos de audio por pasada, apto para sesiones completas de teleconsulta en CPU.
-- Extracción de prescripciones: gracias a su precisión en los conjuntos de fármacos, puede utilizarse como entrada a sistemas de prescripción electrónica, transcribiendo nombres de medicamentos y posologías en dictados.
-- Interpretación de acrónimos médicos: el conjunto `acronyms` muestra un WER del 4,1 %, lo que indica una buena capacidad para transcribir siglas y abreviaturas frecuentes en entornos hospitalarios.
-- Transcripción local y privada en navegador: mediante la aplicación Parakeet Web, el usuario puede seleccionar este modelo y transcribir audio sin que salga del dispositivo, adecuado para datos sensibles de pacientes y requisitos de confidencialidad.
-- Investigación y análisis de audio clínico: permite etiquetar automáticamente corpus de conversaciones médicas o generar subtítulos en vídeos de formación sanitaria; el conjunto `parrot` (no visto en entrenamiento) ofrece una estimación de generalización del 4,7 % de WER.
-- Accesibilidad en francés: puede integrarse en aplicaciones de subtitulado en tiempo real para personas con discapacidad auditiva, ejecutándose en móvil u ordenador local gracias a las variantes int8 o w4a8.
+- Dictado clínico en consulta: el modelo transcribe dictados médicos en francés con una CER normalizada del 2,3 % (beam 5) en el test de voz real del autor, adecuado para generar borradores de informes que el facultativo revisa después.
+- Transcripción de informes hospitalarios: los 2.498 clips de PARHAF en el conjunto de evaluación reflejan el escenario de párrafos de informes; el ajuste fino reduce errores en terminología frente al modelo base.
+- Prescripciones y nombres de fármacos: con phrase boosting y las reglas de corrección incluidas, la CER baja al 1,9 % en el test de voz real, lo que reduce el riesgo de confundir nombres de medicamentos.
+- Aplicaciones de dictado en navegador con privacidad: al ejecutarse vía ONNX en el cliente (Parakeet Web), el audio no sale del dispositivo, lo que encaja con requisitos de confidencialidad de datos de salud.
+- Evaluación y entrenamiento de ASR médico: el dataset UltiMed-ASR-FR-v1 y este modelo sirven como referencia para comparar otros sistemas ASR en francés médico.
+- Integración en pipelines de documentación clínica: mediante `onnx-asr` se puede incorporar la transcripción en flujos de generación de informes, con las reglas regex como postproceso barato.
+- Sustitución directa entre versiones: al compartir arquitectura, tokenizer (`vocab.txt`), `config.json` y estructura de ficheros con la v2, se puede cambiar de modelo cambiando solo el identificador, lo que facilita despliegues y pruebas A/B.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados provienen del modelo card y se calcularon sobre 1.755 clips y 8.6 horas de audio. El texto se normaliza antes de puntuar (se normalizan mayúsculas y puntuación, se conservan acentos). WER y CER más bajos son mejores. Cinco de los seis conjuntos (`dictionary`, `parhaf`, `drugs`, `acronyms`, `drug_sentence`) son validaciones utilizadas durante el entrenamiento; el conjunto `parrot` es exclusivo de evaluación. Las columnas `base fp32` y `base int8` corresponden al modelo original sin fine-tune, puntuado sobre los mismos clips.
+Datos de la model card sobre conjuntos de evaluación en francés médico no vistos en entrenamiento:
 
-### Decodificación greedy, WER
+| Conjunto | Clips | Descripción |
+|---|---|---|
+| dictionary | 5.285 | split de test de UltiMed-ASR-FR-v1, términos del diccionario médico en frases de dictado |
+| parhaf | 2.498 | split de test, párrafos de informes hospitalarios PARHAF |
+| drugs | 2.059 | clips de fármacos (descripción truncada en la información disponible) |
 
-| set | fp32 | fp16 | int8 | w4a8 | base fp32 | base int8 |
-| --- | --- | --- | --- | --- | --- | --- |
-| dictionary | 3.6 % | 3.5 % | 3.6 % | 3.7 % | 37.5 % | 37.2 % |
-| parhaf | 4.5 % | 4.5 % | 4.5 % | 4.6 % | 39.8 % | 39.5 % |
-| drugs | 4.9 % | 4.9 % | 4.9 % | 5.3 % | 35.5 % | 35.5 % |
-| acronyms | 4.1 % | 4.1 % | 4.1 % | 4.0 % | 20.4 % | 20.5 % |
-| drug_sentence | 12.8 % | 12.8 % | 12.8 % | 12.1 % | 22.1 % | 22.1 % |
-| parrot (held out) | 4.7 % | 4.7 % | 4.8 % | 5.0 % | 29.7 % | 28.9 % |
-| **macro average** | 5.8 % | 5.8 % | 5.8 % | 5.8 % | 30.9 % | 30.6 % |
-| **micro average** | 4.6 % | 4.6 % | 4.6 % | 4.8 % | 35.3 % | 35.0 % |
+Test de estrés con voz real (grabaciones de teléfono del autor, 10 dictados médicos densos, 15 grabaciones, 5 textos leídos dos veces), CER normalizada con beam 5:
 
-### Decodificación greedy, CER
+| Modelo / configuración | CER normalizada |
+|---|---|
+| Modelo base (parakeet-ultra) | 4,9 % |
+| Este fine-tune UltiMed v1 | 2,3 % |
+| Este fine-tune + phrase boosting + reglas de corrección | 1,9 % |
 
-| set | fp32 | fp16 | int8 | w4a8 | base fp32 | base int8 |
-| --- | --- | --- | --- | --- | --- | --- |
-| dictionary | 0.9 % | 0.9 % | 0.9 % | 0.9 % | 16.9 % | 16.8 % |
-| parhaf | 1.7 % | 1.7 % | 1.7 % | 1.8 % | 21.1 % | 21.0 % |
-| drugs | 1.6 % | 1.6 % | 1.6 % | 1.8 % | 17.6 % | 17.7 % |
-| acronyms | 1.6 % | 1.6 % | 1.5 % | 1.5 % | 8.8 % | 8.9 % |
-| drug_sentence | 8.3 % | 8.3 % | 8.2 % | 7.7 % | 17.8 % | 17.8 % |
-| parrot (held out) | 1.1 % | 1.1 % | 1.2 % | 1.2 % | 13.1 % | 12.7 % |
-| **macro average** | 2.5 % | 2.5 % | 2.5 % | 2.5 % | 15.9 % | 15.8 % |
-| **micro average** | 1.6 % | 1.6 % | 1.6 % | 1.7 % | 17.3 % | 17.2 % |
-
-### Decodificación beam 5, WER y CER
-
-| set | fp32 WER | int8 WER | base fp32 WER | base int8 WER |
-| --- | --- | --- | --- | --- |
-| dictionary | 2.9 % | 2.8 % | 21.3 % | 20.8 % |
-| parhaf | 4.5 % | 4.5 % | 25.0 % | 24.6 % |
-| drugs | 4.5 % | 4.5 % | 20.8 % | 21.0 % |
-| acronyms | 3.6 % | 3.6 % | 10.5 % | 10.3 % |
-| drug_sentence | 12.9 % | 12.8 % | 21.7 % | 21.5 % |
-| parrot (held out) | 4.4 % | 4.4 % | 15.3 % | 15.0 % |
-| **macro average** | 5.5 % | 5.4 % | 19.1 % | 18.9 % |
-| **micro average** | 4.7 % | 4.7 % | 20.0 % | 19.7 % |
-
-El modelo card también incluye una sección de retención multilingüe con FLEURS, pero los valores numéricos no están disponibles en la información proporcionada. De la misma forma, existe un benchmark de audio largo de 10 minutos en VoxPopuli francés, pero no se incluyen resultados.
+La model card incluye además secciones de benchmarks para decodificación greedy, beam 5 (MAES), retención multilingüe en FLEURS y audio largo (VoxPopuli en francés), pero los valores numéricos de esas secciones no están disponibles en la información proporcionada.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 11.6 GB en total, pero el modelo puede descargarse por partes según la precisión elegida.
-- VRAM estimada orientativamente basada en 0.6B parámetros: fp32 ~2.4 GB, fp16 ~1.2 GB, int8 ~0.6 GB, w4a8 ~0.3 GB. No se proporcionan cifras oficiales de VRAM en el modelo card.
-- El modelo está diseñado para CPU y navegador; cualquier CPU moderna puede ejecutar la variante int8 o w4a8. En GPU, se recomienda el proveedor de ejecución CUDA y usar int8 en lugar de fp16, ya que el autor indica que el encoder fp16 es aproximadamente 12 veces más lento que int8 en CUDA.
-- Cabe en GPUs de consumo (por ejemplo, RTX 4090) y también en hardware modesto gracias a la variante w4a8.
-- Opciones de despliegue: ONNX Runtime con el framework `onnx-asr`, o la aplicación web Parakeet Web para inferencia completamente en el navegador.
-- Latencia y throughput: no se proporcionan cifras absolutas. La única referencia de rendimiento es la comparación fp16 vs int8 en CUDA mencionada anteriormente.
+- VRAM estimada: no disponible de forma explícita; con 0,6B parámetros, la inferencia en fp32 ronda los 2,4 GB de pesos más overhead, y las precisiones cuantizadas reducen esa cifra.
+- GPU recomendadas: no se especifican en la información disponible; el modelo está orientado a CPU y navegador, por lo que no requiere GPU dedicada.
+- Cabe en GPU de consumo: sí, por tamaño; cualquier GPU con unos pocos GB de VRAM puede ejecutarlo, aunque el objetivo declarado es CPU y navegador.
+- Opciones de despliegue: `onnx-asr`, ONNX Runtime, la app Parakeet Web (`parakeet_web`), y despliegue en navegador vía ONNX.
+- Latencia y throughput: no disponibles en la información proporcionada; se documenta una pasada única de 10 minutos de audio en VoxPopuli.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / audio | WER medio médico (greedy, macro) | Licencia | Formato |
-| --- | --- | --- | --- | --- | --- |
-| Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx | 0.6B | Hasta 10 min por pasada | 5.8 % | CC-BY-4.0 | ONNX |
-| nvidia/parakeet-tdt-0.6b-v3 (base) | 0.6B | No especificado | 30.9 % (fp32) | CC-BY-4.0 | NeMo |
-| Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx | 0.6B | No especificado | 30.6 % (int8) | CC-BY-4.0 | ONNX |
-
-La comparación con el modelo base sin fine-tune es la más directa y muestra que el ajuste en francés médico reduce el WER macro de 30,9 % a 5,8 %. No se dispone en la información proporcionada de comparativas con otros modelos ASR como Whisper o Wav2Vec2.
+| Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este modelo (UltiMed v1 ONNX) | ~0,6B | pasada de 10 min documentada | fr | CC-BY-4.0 | Fine-tune médico, CER 2,3 % en test de voz real |
+| `moondream/parakeet-ultra` (base) | ~0,6B | no disponible | multilingüe (base de parakeet v3) | no disponible en la información | Sin especialización médica; CER 4,9 % en el mismo test |
+| `nvidia/parakeet-tdt-0.6b-v3` | ~0,6B | no disponible | multilingüe | no disponible en la información | Modelo original de NVIDIA del que deriva la cadena |
+| UltiMed v2 (mismo autor) | ~0,6B | misma arquitectura | fr | CC-BY-4.0 | Experimental; el autor reporta peor rendimiento en dictado humano real que esta v1 |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documenta análisis de sesgos en la información disponible. El modelo card menciona una sección de "Bias and coverage", pero el contenido no se ha incluido en los datos proporcionados.
-- Riesgo de alucinación: al ser un modelo de ASR, puede transcribir audio ininteligible con texto plausible, especialmente en entornos con ruido. No se ha evaluado este riesgo en la información disponible.
-- Limitaciones de idioma: el fine-tune está orientado al francés médico; el rendimiento en otros idiomas o dominios fuera del corpus de entrenamiento no está garantizado. El autor señala que, sin ensayo de Common Voice, se produjo una deriva de 2.9 y 4.0 puntos de WER en sueco y finlandés en entrenamientos anteriores.
-- Limitaciones de generalización: cinco de los seis conjuntos de evaluación se utilizaron durante el entrenamiento, por lo que sus resultados pueden sobreestimar el rendimiento real. El conjunto `parrot`, que sí mide generalización, presenta un WER de 4.7 % en fp32, algo peor que los conjuntos de ajuste.
-- Efecto de la cuantización: la variante w4a8 degrada ligeramente el WER en el conjunto `parrot` (5.0 % frente al 4.7 % de fp32). Para aplicaciones que exijan la máxima precisión, se recomienda usar fp32 o int8.
-- Licencia: CC-BY-4.0 permite uso comercial con atribución, pero conviene revisar la licencia del modelo base original `nvidia/parakeet-tdt-0.6b-v3` para confirmar la compatibilidad de uso comercial.
+- Solo soporta francés; no se documentan otros idiomas en este fine-tune.
+- Es un modelo ASR: no genera texto libre, no razona, no hace tool calling ni soporta agentes.
+- Riesgo de errores en nombres de fármacos y términos médicos fuera del vocabulario cubierto; por eso se recomienda aplicar las reglas regex y el phrase boosting.
+- La model card advierte de que la v2 es experimental y peor en dictado humano real; debe usarse esta v1 con las correcciones regex de la v2.
+- Sesgos y cobertura: el entrenamiento se basa en el dataset UltiMed-ASR-FR-v1; no se detallan en la información disponible la distribución de acentos, edades o géneros, ni los sesgos conocidos.
+- El proyecto es autofinanciado y se entrena en una única GPU de consumo, lo que limita la frecuencia de mejoras.
+- Licencia CC-BY-4.0: permite uso comercial con atribución; conviene revisar las condiciones de los modelos base de la cadena (moondream y NVIDIA) antes de un despliegue en producción.
+- El repositorio ocupa 36,9 GB por incluir varias precisiones del encoder; hay que seleccionar solo la carpeta de la precisión necesaria.
+- No se han publicado en la información disponible resultados completos de MMLU, HumanEval o GSM8K, que no aplican a un modelo ASR.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx
-- Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Modelo base optimizado (sin fine-tune): https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx
-- Aplicación web Parakeet Web: https://parakeetweb.olicorne.org/
-- Repositorio de Parakeet Web: https://github.com/thiswillbeyourgithub/parakeet_web
-- Framework onnx-asr: https://github.com/istupakov/onnx-asr
-- Dataset de fine-tune: https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1
+- Modelo base: https://huggingface.co/moondream/parakeet-ultra
+- Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Reconstrucción NeMo en ONNX: https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx
+- Dataset UltiMed-ASR-FR-v1: https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1
+- Dataset UltiMed-ASR-FR-v2: https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2
+- Modelo v2: https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx
+- Correcciones regex v2: https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-regex-fixes
+- Organización UltiMed: https://github.com/UltiMed-Org
+- App Parakeet Web: https://parakeetweb.olicorne.org/
+- Código de Parakeet Web: https://github.com/thiswillbeyourgithub/parakeet_web
+- `onnx-asr`: https://github.com/istupakov/onnx-asr
+- Sitio del autor: https://olicorne.org

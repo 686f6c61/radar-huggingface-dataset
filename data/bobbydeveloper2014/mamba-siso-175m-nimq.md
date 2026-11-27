@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Mamba-3 SISO 187M (publicado bajo el slug `mamba-siso-175m-nimq`) es un checkpoint cuantizado del modelo `state-spaces/mamba3-siso-187m`, empaquetado en el formato propietario NIMQ del framework Nimformers. Lo distribuye el usuario `bobbydeveloper2014` a través de Hugging Face y esta pensado para ejecutarse exclusivamente con el CLI de inferencia de Nimformers Framework, no con las herramientas habituales del ecosistema (transformers, llama.cpp, vLLM).
+Mamba-3 SISO 187M (publicado bajo el slug `mamba-siso-175m-nimq`) es un checkpoint cuantizado del modelo upstream `state-spaces/mamba3-siso-187m`, empaquetado en el formato propietario NIMQ del framework Nimformers por el usuario `bobbydeveloper2014`. Se trata de un modelo de generacion de texto basado en la arquitectura Mamba-3 (modelo de espacio de estados, no transformer) en configuracion SISO (single-input single-output), con 12 capas, dimension oculta 768, 24 cabezas y un estado de 128.
 
-El modelo base es un Mamba-3 de tipo SISO (single-input single-output) con 12 capas, dimension oculta de 768, 24 cabezas y un estado de 128, lo que lo situa en la categoria de modelos pequenos orientados a generacion de texto. Sobre esos pesos se aplica un fine-tune LoRA/Linear++ de 11 bloques `R` (bloques Mamba-3 preentrenados) mas una rama `G` con compuerta Linear++ en la capa final.
+El paquete incluye dos componentes: los pesos base cuantizados en FP4-KM (`mamba3_siso_187m.nimq`) y un fine-tune LoRA/Linear++ en formato NIMBIN4 (`lora.bin`) con 11 bloques R (bloques Mamba-3 preentrenados) mas una rama G (Linear++ con compuerta) en la capa final. El repositorio ocupa aproximadamente 0,5 GB e incluye `config.json`, tokenizer y ficheros auxiliares para su uso local.
 
-Su relevancia es limitada y muy especifica: no es un modelo de proposito general listo para produccion, sino un artefacto experimental ligado a un framework concreto. La ficha se limita a documentar lo que el autor declara; no hay informacion publica sobre datos de entrenamiento, evaluaciones ni licencia.
+Su relevancia es limitada y muy especifica: no es un modelo de proposito general distribuido por un laboratorio, sino un artefacto de cuantizacion experimental atado a un framework concreto (Nimformers). Resulta de interes para quienes investigan arquitecturas de espacio de estados, cuantizacion agresiva a 4 bits o integracion de LoRA en modelos Mamba, no tanto para despliegues de produccion convencionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mamba-3 SISO (state space model), 12 capas, hidden 768, 24 cabezas, estado 128 |
-| Parametros totales | 187M (el slug del repo indica 175M) |
+| Arquitectura | Mamba-3 SISO (modelo de espacio de estados), 12 capas, hidden 768, 24 cabezas, estado 128 |
+| Parametros totales | 187M (segun nombre upstream); el slug indica 175M |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP4-KM (base), NIMBIN4 (checkpoint LoRA) |
+| Tipos de cuantizacion | FP4-KM (base), NIMBIN4 (LoRA) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | `.nimq` (NIMQ, formato propietario de Nimformers) + `lora.bin` |
+| Formato de pesos | NIMQ (base), NIMBIN4 (LoRA `lora.bin`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un state space model de la familia Mamba, en su variante Mamba-3 y con configuracion SISO. Segun la model card, consta de 12 capas con dimension oculta 768, 24 cabezas y un tamano de estado de 128. Los pesos base estan cuantizados en FP4-KM, un esquema de cuantizacion a 4 bits propio del formato NIMQ.
+El modelo se basa en Mamba-3 en variante SISO, una arquitectura de espacio de estados (SSM) que sustituye la atencion por recurrencias selectivas con estado interno de 128 dimensiones. La configuracion declarada es de 12 capas con dimension oculta 768 y 24 cabezas. Frente a un transformer clasico, esta familia busca coste lineal en la longitud de secuencia y estado constante durante la inferencia.
 
-El checkpoint incluye ademas un fine-tune LoRA/Linear++ compuesto por 11 bloques `R` (que corresponden a bloques Mamba-3 preentrenados) y una rama `G` con compuerta Linear++ aplicada en la capa final. El adaptador se almacena en formato NIMBIN4. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones adicionales mas alla de la propia arquitectura Mamba-3 y la rama Linear++.
+El checkpoint distribuido aqui no es el modelo original, sino una version cuantizada a FP4 (esquema FP4-KM) del upstream `state-spaces/mamba3-siso-187m`, acompanada de un fine-tune LoRA/Linear++ con 11 bloques R preentrenados y una rama G (Linear++ con compuerta) en la capa final. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de datos ni si hubo RLHF o DPO. Tampoco se documentan innovaciones adicionales como decodificacion especulativa.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, segun el `pipeline_tag` declarado (`text-generation`).
-- Razonamiento y codigo: no hay evidencia documentada en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
-- Ejecucion: unicamente a traves del CLI de inferencia de Nimformers Framework, con el checkpoint `lora.bin`.
+- Generacion de texto autoregresiva (pipeline `text-generation`).
+- Uso conversacional segun los tags del repositorio (`conversational`).
+- Fine-tune especifico mediante LoRA/Linear++ sobre la base cuantizada.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no disponibles.
+- No se declaran capacidades de vision, audio ni modo de razonamiento explicito.
+- La inferencia esta pensada para ejecutarse exclusivamente a traves del CLI del framework Nimformers.
 
 ## Casos de uso
 
-- Experimentacion con arquitecturas SSM: el modelo permite probar inferencia Mamba-3 en local dentro del framework Nimformers, util para investigadores que quieran comparar SSM frente a transformers en tareas de generacion corta.
-- Evaluacion de esquemas de cuantizacion a 4 bits: al usar FP4-KM en los pesos base y NIMBIN4 en el adaptador, sirve para medir el impacto de la cuantizacion agresiva en un modelo de 187M.
-- Pruebas de fine-tuning con LoRA/Linear++: la inclusion de la rama `G` con compuerta en la capa final lo convierte en un banco de pruebas para estudiar adaptadores de bajo rango sobre SSM.
-- Desarrollo y validacion del propio framework Nimformers: el repo esta estructurado como fixture de test (`test/mamba3/models`), por lo que su uso principal es la validacion de la toolchain de descarga e inferencia.
-- Prototipado de generacion de texto en entornos con recursos muy limitados: con 187M parametros y cuantizacion a 4 bits, el footprint es reducido, adecuado para maquinas sin GPU dedicada.
-- Docencia y demos de modelos de estado: util para ilustrar el funcionamiento interno de un SSM con estado 128 y 12 capas en un entorno controlado.
+- Investigacion en arquitecturas SSM: permite experimentar con un Mamba-3 cuantizado a 4 bits sin necesidad de reentrenar, util para comparar comportamiento frente a transformers de tamano similar.
+- Pruebas de cuantizacion FP4-KM: sirve como banco de pruebas para medir degradacion de calidad al pasar a 4 bits en modelos de espacio de estados.
+- Evaluacion de fine-tunes LoRA en Mamba: el `lora.bin` con 11 bloques R y rama G permite estudiar como se adapta un SSM preentrenado a una tarea concreta mediante Linear++.
+- Desarrollo del framework Nimformers: el repositorio esta disenado como fixture de test (`test/mamba3/models`) para validar el pipeline de descarga e inferencia del framework.
+- Prototipado en entornos con recursos muy limitados: con 187M parametros y 0,5 GB de repo, cabe en hardware modesto para experimentos de generacion de texto.
+- Docencia y demostraciones: modelo pequeno y ligero para explicar internals de Mamba y cuantizacion en cursos o talleres.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano, un modelo de 187M en FP4 ocupa del orden de 0,1 GB de pesos, pero el runtime de Nimformers puede anadir overhead no documentado.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano, aunque no hay confirmacion del autor ni requisitos publicados.
-- Opciones de despliegue: exclusivamente Nimformers Framework (`make -f test/mamba3/Makefile infer`). No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial; con 187M parametros en FP4 el peso ronda los 0,1 GB, por lo que cabria en cualquier GPU consumer moderna (GTX 1660, RTX 3060, RTX 4090) e incluso en CPU.
+- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con al menos 2-4 GB de VRAM es suficiente.
+- Cabe en consumer GPU: si, practicamente en todas las GPU dedicadas y en muchas integradas.
+- Opciones de despliegue: exclusivamente Nimformers Framework (CLI `make -f test/mamba3/Makefile infer`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / despliegue |
-|---|---|---|---|---|
-| mamba-siso-175m-nimq (este) | 187M | no disponible | no disponible | NIMQ, solo Nimformers |
-| state-spaces/mamba3-siso-187m | 187M | no disponible | no disponible | pesos upstream, ecosistema estandar |
-| Modelos transformer pequenos (~125-200M, p. ej. GPT-2 small / SmolLM) | 124M-135M | 1k-2k tokens (tipico) | variable (MIT, Apache-2.0) | safetensors, GGUF, amplio soporte |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato |
+|---|---|---|---|---|---|
+| mamba-siso-175m-nimq (este) | 187M | no disponible | Mamba-3 SISO | no disponible | NIMQ / NIMBIN4 |
+| state-spaces/mamba3-siso-187m | 187M | no disponible | Mamba-3 SISO | no disponible | safetensors (presumible) |
+| Mamba-2 (state-spaces) | variable (130M-2.8B) | hasta 2K-16K segun variante | Mamba-2 SSM | Apache 2.0 | safetensors |
+| GPT-2 small | 124M | 1024 | Transformer | MIT | safetensors, GGUF |
 
-La comparacion directa con alternativas transformer es dificil porque no hay datos de rendimiento publicados para este checkpoint. La diferencia practica mas relevante no es de calidad sino de ecosistema: los modelos transformer pequenos se despliegan con herramientas estandar, mientras que este requiere Nimformers.
+La comparativa con Mamba-2 y GPT-2 small se ofrece como referencia de categoria (modelos pequenos de generacion de texto) a partir de conocimiento general; los datos del modelo upstream no estan verificados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de datos de evaluacion: no hay benchmarks, por lo que no se puede estimar su calidad frente a alternativas.
-- Licencia no especificada: no se puede asumir uso comercial permitido; conviene contactar con el autor antes de cualquier despliegue productivo.
-- Formato propietario: los pesos `.nimq` y `lora.bin` no son compatibles con transformers, llama.cpp ni vLLM, lo que limita la portabilidad y la inspeccion.
-- Idiomas no declarados: no hay garantia de comportamiento en castellano ni en ningun otro idioma concreto.
-- Contexto desconocido: se desconoce la ventana maxima, lo que impide planificar casos de uso con entradas largas.
-- Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano; sin datos de alineacion no se puede acotar.
-- Sesgos: no documentados; al no conocerse el dataset de entrenamiento no es posible evaluar sesgos de genero, raza o idioma.
-- Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo dia; no hay evidencia de uso en produccion ni de mantenimiento.
-- Dependencia de un framework externo: la ruta de inferencia documentada asume una estructura de directorios concreta (`test/mamba3/models`) dentro del repo de Nimformers.
+- Licencia no disponible: no se puede confirmar el uso comercial ni la redistribucion.
+- Formato propietario NIMQ/NIMBIN4: no es compatible con ecosistemas estandar (transformers, llama.cpp, vLLM); requiere el framework Nimformers.
+- El slug del repositorio (`175m`) no coincide con el tamano real declarado (187M), lo que puede generar confusion.
+- No hay informacion sobre sesgos, alucinacion ni calidad linguistica del modelo.
+- Idiomas soportados no declarados; el comportamiento multilingue es incierto.
+- Longitud de contexto no documentada; no apto para tareas de contexto largo sin verificacion previa.
+- Cuantizacion FP4: posible degradacion de calidad frente al upstream sin cuantizar.
+- Modelo pequeno (187M): capacidad de razonamiento y conocimiento factual limitados por diseno.
+- Repositorio con 0 likes y 213 descargas: sin validacion comunitaria ni mantenimiento garantizado.
+- El autor del repositorio no es el laboratorio upstream (state-spaces); usar con cautela en produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/bobbydeveloper2014/mamba-siso-175m-nimq
+- Repositorio Hugging Face: https://huggingface.co/bobbydeveloper2014/mamba-siso-175m-nimq
 - Modelo upstream: https://huggingface.co/state-spaces/mamba3-siso-187m
 - Framework Nimformers: https://github.com/bobbyshop-vui/nimformers-framework

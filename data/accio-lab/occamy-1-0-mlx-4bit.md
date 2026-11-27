@@ -2,107 +2,106 @@
 
 ## Resumen
 
-Occamy 1.0 MLX 4-bit (identificador `Accio-Lab/occamy-1.0-MLX-4bit`) es una conversión cuantizada del modelo `Accio-Lab/occamy-1.0` al formato nativo de MLX, pensada para ejecución en Apple Silicon. Se trata de un export de texto de la familia `qwen3_5_moe` (mezcla de expertos) con 34.660.608.768 parámetros totales y un repositorio de 19,5 GB. La cuantización es affine nativa de 4 bits con group size 64, mientras que los módulos de router y de gates de expertos compartidos se mantienen en 8 bits.
+Occamy-1.0-MLX-4bit es una cuantización de 4 bits nativa para MLX del modelo Occamy-1.0, desarrollado por Accio-Lab. Se trata de un modelo de generación de texto basado en la arquitectura Qwen3.5 MoE (mixture of experts), con 34.660.608.768 parámetros totales y un tamaño de repositorio de 19,5 GB. Esta variante está pensada específicamente para su ejecución en Apple Silicon mediante la librería MLX, lo que la hace relevante para desarrolladores que quieren desplegar un modelo de gran tamaño en hardware de Apple sin depender de CUDA.
 
-El modelo lo publica Accio-Lab y se distribuye como release candidata: la validación en Linux con MLX nativo ha pasado, pero la aceptación en Metal (Mac) está pendiente según la propia model card. La conversión se realizó con mlx 0.32.2 y mlx-lm 0.31.3, partiendo de la revisión `8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8` del modelo base, y emplea un adaptador sin pérdida que apila los pesos de expertos en orden numérico antes de invocar el saneador Qwen3.5 una sola vez.
+El modelo base Occamy-1.0 se distribuye bajo licencia Apache 2.0 y cuenta con un artículo científico asociado (arXiv:2609.11977). Esta exportación concreta utiliza cuantización afín nativa de 4 bits con group size 64, mientras que las puertas del router y de los expertos compartidos se mantienen en 8 bits. El resultado es un artefacto de 19,51 GB (18,17 GiB) que, según el autor, ha superado las comprobaciones de validación en Linux nativo con MLX, pero cuya aceptación en Metal (Mac) sigue pendiente.
 
-Su relevancia es de nicho pero concreta: ofrece la única vía documentada de ejecutar un MoE de ~34,7B en Mac con memoria unificada, sin necesidad de GPU dedicada. El precio es la falta de información publicada: no hay licencia declarada, no hay idiomas declarados, no hay benchmarks de calidad y no hay fichas confirmadas sobre la longitud de contexto ni sobre el número de parámetros activos.
+Es importante señalar que esta es una *candidate release*: el autor advierte explícitamente de que la inferencia en Mac, el rendimiento y la calidad amplia del modelo no están verificados. Las pruebas realizadas se limitan a una recarga estricta con el cargador estándar, comprobaciones de valores en coma flotante, dequantización nativa de cada fila cuantizada, comparación de tokenizer y plantilla, y una generación greedy acotada con caché en CPU que devolvió el resultado correcto para "2+2". Se trata, por tanto, de un smoke test limitado, no de un benchmark de calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), familia `qwen3_5_moe`; export MLX cuantizado |
-| Parametros totales | 34.660.608.768 (~34,7B) |
+| Arquitectura | Qwen3.5 MoE (mixture of experts) |
+| Parametros totales | 34.660.608.768 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits affine nativa MLX con group size 64; router y gates de expertos compartidos en 8 bits |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (cuantizacion affine MLX), libreria `mlx`; repo de 19,5 GB |
-| Modelo base | Accio-Lab/occamy-1.0 (revision 8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8) |
-| Modalidades | solo texto (vision y MTP no incluidos en el export) |
+| Tipos de cuantizacion | 4 bits afín nativa, group size 64; router y puertas de expertos compartidos en 8 bits |
+| Idiomas soportados | no disponible (el modelo base no declara idiomas en la información disponible) |
+| Licencia | Apache 2.0 (heredada de Occamy-1.0) |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de la familia `qwen3_5_moe`, con 34,66 mil millones de parametros totales. Al ser un modelo MoE, solo un subconjunto de expertos se activa por token, de modo que el coste de inferencia por token es inferior al que sugeriria el conteo total de parametros; sin embargo, el numero de parametros activos no se especifica en la informacion disponible. El export es exclusivamente de texto: los modulos de vision y de prediccion multi-token (MTP) presentes previsiblemente en el modelo base no se incluyen.
+El modelo base emplea una arquitectura Qwen3.5 MoE, es decir, un transformer con mezcla de expertos. La información disponible no detalla el número de parámetros activos por token, el número de expertos, la composición del dataset de entrenamiento ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifican la longitud de contexto nativa ni los idiomas de entrenamiento. El artículo asociado (arXiv:2609.11977) es la referencia para obtener esos detalles, pero su contenido no se incluye en la información proporcionada.
 
-No se documentan en la informacion proporcionada el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias. Lo que si se detalla es el proceso de conversion: se aplico cuantizacion affine nativa de 4 bits con group size 64 mediante las APIs oficiales de mlx 0.32.2 y mlx-lm 0.31.3, manteniendo en 8 bits el router y los gates de expertos compartidos para preservar la calidad de enrutamiento. Un adaptador sin perdida apila los pesos de los expertos separados en orden numerico antes de ejecutar el saneador Qwen3.5 una unica vez, y la recarga se realiza con el cargador estandar sin necesidad de adaptador. La validacion declarada incluye recarga estricta con el loader de stock, comprobacion de todos los valores flotantes almacenados, dequantizacion nativa de cada fila cuantizada, comparacion de tokenizer y plantilla, y una generacion greedy acotada con cache en CPU que produce logits finitos (la peticion de prueba "Compute 2+2. Answer briefly." devolvio `4`). Se trata de un smoke test, no de una evaluacion de calidad.
+En cuanto a la innovación técnica de esta exportación, destaca el proceso de conversión: un adaptador sin pérdida apila los pesos de los expertos en orden numérico antes de invocar una única vez el sanitizador de Qwen3.5. La cuantización y la serialización usan APIs nativas de MLX, y la recarga se realiza con el cargador estándar sin adaptador. Las validaciones en Linux incluyen recarga estricta, comprobación completa de valores en coma flotante almacenados, dequantización nativa de cada fila cuantizada, comparación de tokenizer y plantilla, y una generación greedy con caché y logits finitos. El modelo es solo de texto: no incluye visión ni la cabeza MTP (multi-token prediction).
 
 ## Capacidades
 
-- Generacion de texto: la pipeline declarada es `text-generation` y el modelo esta etiquetado como `conversational`.
-- Razonamiento, matematicas y codigo: no disponibles como capacidades verificadas; no hay benchmarks ni evaluaciones publicadas en la informacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Vision: explicitamente no incluida en este export.
-- Prediccion multi-token (MTP): explicitamente no incluida en este export.
-- Modo de razonamiento explicito (thinking): la familia Qwen3.5 lo contempla habitualmente, pero no se confirma para este export en la informacion disponible.
+- Generación de texto conversacional y de propósito general, según el pipeline declarado (text-generation, conversational).
+- Razonamiento y matemáticas básicas: la prueba de humo con "Compute 2+2. Answer briefly." devolvió `4`.
+- Plantilla de chat con soporte de modo thinking controlable mediante `enable_thinking` (la receta de uso lo desactiva explícitamente).
+- Servidor de API local compatible con el endpoint `/v1/chat/completions` mediante `mlx_lm.server`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling, function calling y comportamiento agente: no disponibles en la información proporcionada.
+- Visión y audio: no incluidos (el modelo es solo de texto).
+- MTP (multi-token prediction): no incluido en esta exportación; existe una cabeza MTP separada en el repositorio del autor.
 
 ## Casos de uso
 
-- Prototipado local en Mac sin GPU dedicada: cargar el modelo con `mlx_lm.load()` y `mlx_lm.generate()` para experimentar con un MoE de ~34,7B en un equipo Apple Silicon con memoria unificada suficiente, evitando el coste de alquiler de GPU.
-- Asistente conversacional de escritorio con privacidad de datos: al ejecutarse en local, las conversaciones no salen del equipo, lo que encaja en entornos con requisitos de confidencialidad, siempre que se acepte la ausencia de licencia declarada.
-- Generacion de texto por lotes con presupuesto de memoria ajustado: el peso en 4 bits (~19,5 GB de repositorio) permite cubrir tareas de redaccion, resumen o reformulacion en una sola maquina, sin infraestructura distribuida.
-- Evaluacion comparativa de cuantizaciones: dado que el modelo base esta disponible por separado, este export sirve como referencia para medir la degradacion de una cuantizacion de 4 bits con group size 64 frente a precisiones mayores, midiendo perplejidad y calidad de generacion.
-- Nodo de inferencia en pipelines de generacion de contenido offline: integrable mediante el servidor de mlx-lm en un flujo interno de produccion de borradores, clasificacion de textos largos o extraccion de informacion, cuando no se requiere baja latencia.
-- Base para experimentacion en enrutamiento MoE: al mantener router y gates en 8 bits, es un punto de partida util para estudiar como afecta la cuantizacion selectiva al balanceo de carga entre expertos.
-- Docencia y laboratorio: entorno reproducible (hash de revision y `SHA256SUMS`) para que estudiantes inspeccionen pesos cuantizados, dequantizacion y comportamiento de un MoE real.
+- Inferencia local en Apple Silicon: el modelo está empaquetado en MLX 4 bits para ejecutarse en Macs con memoria unificada suficiente, usando `mlx-lm` como runtime. Es adecuado para desarrolladores que quieren probar un MoE de ~34,7 mil millones de parámetros sin GPU NVIDIA.
+- Prototipado de asistentes conversacionales: la plantilla de chat y el servidor compatible con la API de OpenAI permiten montar un endpoint local en `http://127.0.0.1:8000/v1` y conectar clientes existentes sin cambios de código.
+- Experimentación con cuantización: al existir variantes de 3, 4, 5, 6 y 8 bits, además de MXFP8, MXFP4 y NVFP4, el modelo sirve para comparar el equilibrio entre tamaño, memoria y calidad en el mismo checkpoint base.
+- Evaluación de calidad de modelos MoE: investigadores pueden usar esta variante para medir el impacto de la cuantización 4 bits frente al BF16 original en tareas de razonamiento y matemáticas.
+- Despliegue en entornos sin CUDA: equipos que trabajan exclusivamente con hardware de Apple pueden usar esta exportación como alternativa a las variantes GGUF, FP8 o NVFP4, que requieren otras pilas de ejecución.
+- Pruebas de integración de API local: el recetario con `curl` contra `/v1/chat/completions` facilita la validación de pipelines de aplicaciones que consumen APIs compatibles con OpenAI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica evidencia de funcionamiento es un smoke test declarado en la model card: una generacion greedy acotada con cache en CPU y logits finitos ante la peticion "Compute 2+2. Answer briefly.", que devolvio `4`. No se incluyen resultados de MMLU, HumanEval, GSM8K ni de ninguna otra suite, ni mediciones de perplejidad del modelo cuantizado frente al base.
-
-| Prueba | Resultado | Naturaleza |
-|---|---|---|
-| Smoke test de generacion en CPU | Respuesta `4` a "Compute 2+2. Answer briefly." | Comprobacion de integridad, no benchmark de calidad |
-| MMLU, HumanEval, GSM8K, perplejidad | no disponible | - |
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo documenta una prueba de humo cualitativa ("Compute 2+2. Answer briefly." devuelve `4`) y advierte de que no constituye un benchmark de calidad ni un resultado de rendimiento en Mac.
 
 ## Requisitos de hardware
 
-- Inferencia en 4 bits: el repositorio ocupa 19,5 GB, por lo que se necesitan aproximadamente 20-24 GB de memoria disponible solo para los pesos, mas el espacio de la cache KV.
-- Memoria unificada en Apple Silicon: se recomienda un equipo con 32 GB o mas (M-series Pro/Max/Ultra). En configuraciones de 24 GB la carga entra justa y deja poco margen para contextos largos.
-- Aviso de validacion: la aceptacion en Metal esta pendiente segun la model card; solo se declara validada la ejecucion con MLX nativo en Linux. El rendimiento real en Mac no esta confirmado.
-- Estimaciones para otras precisiones del modelo base (~34,7B): 8 bits en torno a 35 GB y bf16 en torno a 69 GB de pesos. Estas cifras son calculos aritmeticos a partir del numero de parametros, no mediciones publicadas.
-- GPUs CUDA (A100, H100, RTX 4090): no ejecutan pesos en formato MLX de forma nativa. Para usarlas habria que convertir el modelo base a otro formato; esta informacion no se detalla en la fuente.
-- Opciones de despliegue confirmadas: `mlx-lm` 0.31.3 con mlx 0.32.2 mediante `load()` y `generate()`; el mismo paquete permite levantar un servidor compatible con la API de OpenAI. Otros runners basados en MLX, como LM Studio, podrian cargarlo, aunque no se confirma en la informacion disponible.
-- vLLM, TGI, llama.cpp y Ollama: no soportan pesos MLX directamente; requeririan partir del modelo base y convertir a GGUF u otro formato.
-- Latencia y throughput: no disponible.
+- VRAM/memoria unificada: el archivo de pesos ocupa 19,51 GB (18,17 GiB). El autor advierte explícitamente de que el tamaño del archivo no es el requisito de memoria unificada: hay que dejar espacio para el sistema operativo, la caché KV y los buffers del runtime.
+- GPU recomendadas: no disponibles en la información proporcionada. El destino declarado es Apple Silicon (Metal), si bien la aceptación en Metal está pendiente.
+- ¿Cabe en GPU de consumo? No disponible. En el ecosistema Apple, el requisito de memoria unificada apunta a equipos con al menos ~24-32 GB para dejar margen a la caché KV y al sistema, aunque el autor no confirma cifras.
+- Opciones de despliegue: `mlx-lm` (versiones 0.31.3 con mlx 0.32.2, y transformers 5.8.1 para el servidor), incluyendo `mlx_lm.server` para API local compatible con OpenAI. No se mencionan vLLM, llama.cpp, Ollama ni TGI para esta variante MLX.
+- Latencia y throughput: no disponibles. El autor indica que el rendimiento en Mac no está verificado.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye comparativas verificadas ni datos del modelo base mas alla de su identificador. La tabla siguiente usa como referencias dos MoE abiertos ampliamente conocidos, con valores publicos de caracter general que no proceden de la fuente consultada y que deben tomarse como orientativos, no como una comparacion medida.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parametros totales | Contexto | Formato | Licencia | Estado |
 |---|---|---|---|---|---|
-| occamy-1.0-MLX-4bit | 34,7B | no disponible | no disponible | no disponible | safetensors MLX 4 bits |
-| Qwen3-30B-A3B (referencia publica) | ~30,5B | ~3,3B | 128K declarados | Apache 2.0 | safetensors, GGUF |
-| Mixtral 8x7B (referencia publica) | ~46,7B | ~12,9B | 32K | Apache 2.0 | safetensors, GGUF |
+| Occamy-1.0-MLX-4bit | 34.660.608.768 | no disponible | MLX safetensors 4 bits | Apache 2.0 | Candidate release, Mac pendiente |
+| Occamy-1.0 (BF16) | 34.660.608.768 | no disponible | safetensors BF16 | Apache 2.0 | Modelo base de referencia |
+| Occamy-1.0-GGUF | 34.660.608.768 | no disponible | GGUF | Apache 2.0 | Variante para llama.cpp y afines |
+| Occamy-1.0-NVFP4 | 34.660.608.768 | no disponible | NVFP4 | Apache 2.0 | Variante para hardware NVIDIA |
 
-No se dispone de resultados de benchmarks de occamy-1.0-MLX-4bit que permitan establecer una comparacion de rendimiento con estas alternativas.
+La comparación con modelos de otros autores no está disponible en la información proporcionada. Dentro de la propia familia Occamy, la variante MLX 4 bits se distingue por su menor tamaño (19,51 GB) frente al BF16 y por estar orientada exclusivamente a Apple Silicon.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica termino de uso, por lo que el uso comercial no puede darse por permitido; hay que contactar con Accio-Lab antes de desplegarlo en produccion.
-- Release candidata: la propia model card indica que la aceptacion en Mac Metal esta pendiente. La validacion realizada en Linux con MLX nativo no equivale a rendimiento ni calidad validados en Mac.
-- Ausencia de benchmarks: no hay evaluaciones de calidad, perplejidad ni comparacion con el modelo sin cuantizar, por lo que se desconoce la degradacion introducida por la cuantizacion de 4 bits.
-- Sin datos de idiomas: no se declara cobertura multilingue, asi que cualquier uso fuera del ingles o del chino deberia validarse previamente.
-- Longitud de contexto desconocida: no se puede dimensionar la cache KV ni planificar aplicaciones de contexto largo.
-- Parametros activos desconocidos: impide estimar con precision el coste computacional por token y el throughput esperado.
-- Export solo texto: no hay vision ni prediccion multi-token, por lo que no sirve para tareas multimodales.
-- Riesgo de alucinacion y sesgos: no evaluado ni documentado en la informacion disponible; se asume el comportamiento tipico de un modelo de lenguaje sin ajuste verificado.
-- Trazabilidad limitada de la calidad: el unico control publicado es un smoke test aritmetico trivial, insuficiente para certificar el estado de los pesos mas alla de su integridad estructural.
-- Ecosistema restringido: al ser un artefacto en formato MLX, no es portable directamente a infraestructura CUDA ni a los runners mas extendidos.
-- Adopcion minima: 20 descargas y 0 likes en el momento de la consulta, sin comunidad que haya reportado fallos o comportamientos inesperados.
+- Estado de validación: es una *candidate release*; la aceptación en Mac Metal está pendiente y la calidad amplia del modelo no está verificada. Las comprobaciones realizadas son un smoke test limitado en Linux, no un benchmark.
+- Solo texto: no incluye visión ni cabeza MTP; no debe esperarse soporte multimodal.
+- Idiomas: no se declaran idiomas soportados en la información disponible, por lo que el rendimiento multilingüe es incierto.
+- Contexto: la longitud de contexto no está documentada en la información proporcionada; conviene consultar la model card del modelo base antes de usarlo en producción.
+- Alucinación y sesgos: no hay información específica publicada; al ser un modelo de lenguaje, cabe esperar los riesgos habituales de alucinación y sesgo, pero no se cuantifican.
+- Licencia: Apache 2.0 permite uso comercial, pero se hereda del modelo base; conviene revisar la licencia original de Occamy-1.0 y del artículo asociado.
+- Memoria: el tamaño del archivo (19,51 GB) no equivale al requisito de memoria unificada; hay que reservar espacio para el sistema, la caché KV y los buffers.
+- Dependencias de versión: la receta fija `mlx==0.32.2`, `mlx-lm==0.31.3` y `transformers==5.8.1`; otras versiones pueden no ser compatibles.
+- Advertencia del autor: las comprobaciones HTTP de inferencia de esta release solo se registran para las exportaciones de 6 y 8 bits, no para la de 4 bits.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
-- Revision del modelo base citada: `8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8`
-- Plataforma del autor (resultado de busqueda, no documentacion del modelo): https://www.accio.com/
-- Aplicacion de escritorio del autor (resultado de busqueda, no documentacion del modelo): https://www.accio.com/work/app
-- Pagina corporativa del autor (resultado de busqueda): https://fr.accio.com/about-us
-- Ficha en Google Play de la aplicacion Accio (resultado de busqueda): https://play.google.com/store/apps/details?id=com.accio.android.app
-- Paper, blog tecnico o repositorio de codigo especifico del modelo: no disponible
+- Colección de modelos: https://huggingface.co/collections/Accio-Lab/occamy-10-6ac00729659e8a86ec11e216
+- Colección MLX: https://huggingface.co/collections/Accio-Lab/occamy-10-mlx-6ac0072a7c1cdbc5e418e90b
+- Checkpoint explorer: https://huggingface.co/spaces/Accio-Lab/Occamy-Explorer
+- Página del proyecto: https://accio-lab.github.io/occamy/
+- Artículo (arXiv): https://arxiv.org/abs/2609.11977
+- Variante GGUF: https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
+- Variante FP8: https://huggingface.co/Accio-Lab/occamy-1.0-FP8
+- Variante NVFP4: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
+- Variante MLX 8 bits: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-8bit
+- Variante MLX 6 bits: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-6bit
+- Variante MLX 5 bits: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-5bit
+- Variante MLX 3 bits: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit
+- Variante MLX MXFP8: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp8
+- Variante MLX MXFP4: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp4
+- Variante MLX NVFP4: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-nvfp4
+- Cabeza MTP: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
+- Resumen de validación: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit/blob/main/validation_summary.json
+- Hashes de artefactos: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit/blob/main/SHA256SUMS
+- Licencia: https://huggingface.co/Accio-Lab/occamy-1.0/blob/main/LICENSE

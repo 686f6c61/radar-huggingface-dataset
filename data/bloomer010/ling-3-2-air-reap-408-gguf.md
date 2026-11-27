@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Ling-3.2-air-REAP-408 es una variante podada del modelo multimodal Ling-3.2-air desarrollado por inclusionAI. Se trata de un transformer de tipo mixture-of-experts (MoE) con arquitectura BailingMoE3 que, tras aplicar la tecnica REAP (Router-weighted Expert Activation Pruning), conserva 408 de los 512 expertos enrutados por capa, lo que reduce el total de 124B a aproximadamente 99.900 millones de parametros manteniendo unos 5.500 millones de parametros activos por token. El modelo procesa texto, imagen y video, y esta publicado en formato GGUF para su uso con llama.cpp.
+Ling-3.2-air-REAP-408 es una variante podada del modelo Ling-3.2-air de inclusionAI, publicada por el usuario bloomer010 en formato GGUF para llama.cpp. El modelo original es un transformer de mezcla de expertos (MoE) de 124.000 millones de parametros totales con 5.500 millones activos por token; esta version aplica una poda de expertos en un solo paso (REAP, Router-weighted Expert Activation Pruning) que elimina el 20% de los expertos enrutados, dejando 408 de 512 por capa y reduciendo el total a aproximadamente 99.870 millones de parametros.
 
-La relevancia de esta ficha radica en que combina dos tendencias actuales: por un lado, la poda de expertos en modelos MoE de gran tamano para reducir requisitos de memoria sin reentrenamiento; por otro, la distribucion en GGUF que permite ejecutar un modelo de ~100B parametros en hardware de consumo mediante offloading selectivo de expertos a CPU. El autor del quantizado es bloomer010 y el modelo se publica bajo licencia MIT.
+El modelo es multimodal: procesa texto, imagen y video mediante una torre de vision que se distribuye como archivo `mmproj` separado. Mantiene el modo de razonamiento (thinking) activado por defecto y esta pensado para conversacion, generacion de codigo, matematicas y tareas de razonamiento multi-paso. La poda no incluye reentrenamiento ni recuperacion, de modo que la calidad depende directamente de la seleccion de expertos realizada sobre un conjunto de calibracion de 653.000 tokens.
 
-El modelo esta pensado para desarrolladores que quieren experimentar con un MoE multimodal de gran escala en entornos locales o de un solo nodo, aceptando el compromiso de calidad que implica la poda one-shot sin recuperacion. La ventana de contexto nativa del modelo base es de 131.072 tokens segun los ejemplos de la model card, y se distribuye en cuantizaciones Q8_0, Q4_K_M y Q2_K.
+La relevancia practica de esta ficha esta en que permite ejecutar un MoE de ~100.000 millones de parametros en hardware de consumo mediante cuantizacion agresiva (hasta Q2_K) y descarga de expertos a CPU con llama.cpp, algo imposible con los pesos BF16 originales. La licencia MIT facilita el uso comercial, aunque el autor la etiqueta explicitamente como "experimental".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (BailingMoE3) con torre de vision para imagen y video |
-| Parametros totales | 99.866.879.392 (~99,9B) tras poda; modelo base 124B |
-| Parametros activos | ~5,5B por token |
-| Longitud de contexto | 131.072 tokens (segun ejemplos de la model card) |
-| Tipos de cuantizacion | Q8_0, Q4_K_M, Q2_K (GGUF); FP8 safetensors en repo hermano |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer MoE (BailingMoE3) con torre de vision; poda REAP de expertos enrutados |
+| Parametros totales | 99.866.879.392 (~99,87 B) tras la poda; 124 B en el modelo base |
+| Parametros activos | ~5,5 B por token |
+| Longitud de contexto | Hasta 131.072 tokens en los ejemplos de llama-server (contexto nativo del modelo base: no disponible) |
+| Tipos de cuantizacion | Q8_0, Q4_K_M, Q2_K (GGUF); FP8 safetensors en repositorio hermano |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); safetensors FP8 en repo hermano |
+| Formato de pesos | GGUF (llama.cpp); safetensors FP8 en repositorio separado; `mmproj-model-f16.gguf` de 875 MB para vision |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ling-3.2-air emplea una arquitectura MoE con enrutamiento agrupado (grouped top-k routing, `n_group=8`, 64 expertos por grupo, 512 expertos enrutados por capa en total). La variante REAP-408 aplica una poda one-shot de expertos: cada experto se puntua mediante el producto del valor de la puerta del router por la norma L2 de su salida sobre un conjunto de calibracion, y se eliminan los de menor puntuacion de forma uniforme por grupo de enrutamiento para preservar el top-k agrupado. Se elimina el 20% de los expertos (408 de 512 por capa) sin fine-tuning ni entrenamiento de recuperacion.
+El modelo base Ling-3.2-air es un transformer de mezcla de expertos con 124.000 millones de parametros totales y 5.500 millones activos, organizado en 8 grupos de enrutamiento (`n_group=8`) con 64 expertos por grupo (512 expertos enrutados por capa) y enrutamiento top-k agrupado. Incluye una torre de vision que codifica imagenes y fotogramas de video, y un bloque NextN/MTP (multi-token prediction) que se omite en esta version podada. Los detalles exactos de composicion del dataset de preentrenamiento, numero de tokens y etapas de RLHF/DPO del modelo original no estan disponibles en la informacion proporcionada.
 
-La calibracion utilizo 653.000 tokens (1.024 muestras) con una mezcla de 75% codigo, 15% matematicas y razonamiento, y 10% chat general. El bloque NextN/MTP (multi-token prediction) se omite en los quants. El modelo conserva la torre de vision del modelo base, que procesa tanto imagenes como fotogramas de video muestreados, y requiere el fichero `mmproj-model-f16.gguf` (875 MB) para entrada visual. No se dispone de informacion sobre el numero total de tokens de entrenamiento del modelo base ni sobre si se aplico RLHF o DPO en su pipeline original.
+La innovacion de esta ficha es la poda REAP (arXiv:2510.13999), aplicada en un solo paso: cada experto se puntua multiplicando el valor de su compuerta de enrutamiento por la norma L2 de su salida sobre un conjunto de calibracion de 653.000 tokens (1.024 muestras, con mezcla 75/15/10 de codigo, matematicas y razonamiento, y chat general). Los expertos con menor puntuacion se eliminan de forma uniforme dentro de cada grupo de enrutamiento para preservar el top-k agrupado, conservando 51 de 64 expertos por grupo (408 de 512 en total). No hay fine-tuning ni entrenamiento de recuperacion posterior a la poda.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con modo de razonamiento (thinking mode) activado por defecto y desactivable por peticion.
-- Razonamiento multi-paso y cadenas de pensamiento.
-- Generacion de codigo y resolucion de problemas matematicos (la calibracion de la poda prioriza estos dominios).
-- Comprension de imagenes: descripcion, respuesta a preguntas visuales y analisis de contenido grafico.
-- Comprension de video: muestreo de fotogramas y codificacion por la misma torre de vision, con entrada via `video_url`.
-- Soporte de tool calling y function calling a traves de plantillas Jinja (`--jinja` en llama.cpp).
-- Capacidades de agente y razonamiento multi-paso mediante el modo thinking.
-- Capacidades multilingues: no disponible (no se especifican idiomas en la informacion proporcionada).
+- Generacion de texto conversacional multi-turno con contexto largo.
+- Razonamiento con modo "thinking" activado por defecto; se puede desactivar por peticion con `chat_template_kwargs: {"enable_thinking": false}`.
+- Generacion de codigo y resolucion de problemas matematicos (el conjunto de calibracion incluye un 75% de datos de codigo).
+- Vision: descripcion y comprension de imagenes mediante entrada `image_url` en la API compatible con OpenAI.
+- Video: procesamiento de video mediante partes `video_url`; los fotogramas se muestrean y codifican con la misma torre de vision.
+- Soporte de plantillas Jinja (`--jinja`) para formateo de chat y tool calling segun la plantilla del modelo base.
+- Capacidades multilingues: no disponible en detalle.
+- Despliegue en llama.cpp estandar desde la build b11190.
 
 ## Casos de uso
 
-- Asistente de codigo en local: el modelo puede generar y revisar codigo en un entorno llama.cpp con Q4_K_M, manteniendo los expertos en CPU y el resto en GPU; su calibracion orientada a codigo (75% del dataset) sugiere un rendimiento razonable en este dominio pese a la poda.
-- Analisis de documentos con imagenes: procesar capturas, diagramas o graficos junto a texto de contexto largo (hasta 131.072 tokens) para extraer informacion estructurada en pipelines de back-office.
-- Revision de video automatizada: muestrear fotogramas de grabaciones y generar descripciones o alertas mediante la API compatible con OpenAI de llama-server, util para moderacion o catalogacion de contenido.
-- Agente de razonamiento con tool calling: integrar el modelo en un orquestador que llame a APIs externas, aprovechando el modo thinking para descomponer tareas complejas en pasos.
-- Prototipado de asistentes conversacionales multimodales: desplegar un chatbot que acepte texto e imagen en una sola GPU consumer con Q4_K_M y offloading de expertos, sin depender de servicios en la nube.
-- Experimentacion en investigacion sobre poda MoE: usar esta variante como referencia para estudiar el impacto de REAP en calidad frente al modelo base de 124B, comparando Q8_0, Q4_K_M y Q2_K.
-- Inferencia en estaciones de trabajo con VRAM limitada: el flag `-ncmoe N` permite ajustar cuantos expertos residen en GPU, facilitando el despliegue en equipos con 24-48 GB de VRAM.
+- Asistente conversacional de contexto largo: con 131.072 tokens de ventana puede mantener conversaciones extensas o procesar documentos largos completos sin truncar, manteniendo coherencia multi-turno.
+- Analisis de documentos con imagenes: extraccion y descripcion de contenido de capturas, diagramas o paginas escaneadas usando la entrada `image_url`, util para digitalizacion y accesibilidad.
+- Procesamiento de video para resumenes: muestreo de fotogramas via `video_url` para generar descripciones, resumenes o alertas sobre contenido audiovisual.
+- Generacion de codigo en local: el sesgo del calibrado hacia codigo (75%) y el modo thinking lo hacen adecuado para autocompletado, refactorizacion y explicacion de codigo en entornos sin conexion.
+- Razonamiento matematico y analisis paso a paso: el modo thinking permite cadenas de razonamiento largas para problemas de matematicas o logica, con la opcion de desactivarlo para respuestas rapidas.
+- Despliegue en estacion de trabajo con GPU de consumo: con Q4_K_M o Q2_K y descarga de expertos a CPU (`-ot "ffn_.*_exps\.weight=CPU"`), se puede servir un MoE de ~100 B en una sola maquina para prototipado y pruebas internas.
+- Backend compatible con OpenAI: al exponer `llama-server` con API `/v1/chat/completions`, se integra en pipelines existentes que ya usan el formato OpenAI, incluyendo herramientas y agentes.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: depende de la cuantizacion y del contexto. El repo completo ocupa 107,1 GB; Q8_0 se aproxima al tamano de los pesos en BF16 podados, Q4_K_M reduce aproximadamente a la mitad y Q2_K a cerca de un cuarto. Los pesos y el contexto comparten memoria, por lo que hay que dejar margen.
-- Estrategia de offloading: con menos VRAM que el tamano del fichero, mantener los expertos en CPU y el resto en GPU mediante `-ot "ffn_.*_exps\.weight=CPU"` o ajustar con `-ncmoe N`.
-- GPU recomendadas: no disponible de forma explicita; por tamano, un modelo de ~100B en Q4_K_M requiere del orden de 50-60 GB, lo que encaja en A100 80 GB, H100 80 GB o configuraciones multi-GPU. En consumer, una RTX 4090 (24 GB) solo es viable con Q2_K y offloading parcial de expertos a CPU.
-- Cabe en consumer GPU: parcialmente; con Q2_K y offloading de expertos es posible en GPUs de 24 GB, con latencia mayor.
-- Opciones de despliegue: llama.cpp (build b11190 o superior) via `llama-server`, con soporte de `--jinja`, `--flash-attn auto` y `--mmproj` para vision. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada: depende de la cuantizacion y del contexto. Q8_0 se acerca al tamano del maestro podado (decenas de GB), Q4_K_M reduce aproximadamente a la mitad y Q2_K a una cuarta parte; el repositorio ocupa 204 GB en total por incluir varias cuantizaciones y el `mmproj`. Los pesos y el contexto comparten memoria, por lo que hay que dejar margen.
+- Estrategia mixta GPU/CPU: con menos VRAM que el tamano del archivo, se pueden mantener los expertos en CPU y el resto en GPU con `-ngl 99 -ot "ffn_.*_exps\.weight=CPU"`, o ajustar la colocacion MoE con `-ncmoe N`.
+- GPU recomendadas: no disponible de forma explicita; por el tamano del modelo, el despliegue completo en GPU requiere aceleradores de gran memoria (A100/H100 de 80 GB o multi-GPU), mientras que en RTX 4090 (24 GB) solo es viable con cuantizacion baja y expertos en CPU.
+- Cabe en GPU de consumo: si, con Q4_K_M o Q2_K y descarga parcial de expertos a CPU; no cabe completo en una unica GPU de consumo.
+- Opciones de despliegue: llama.cpp (`llama-server`) desde la build b11190, con `--mmproj` para vision, `--jinja`, `--flash-attn auto` y `-ngl auto`. Otras herramientas (vLLM, TGI, Ollama) no estan confirmadas en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros totales / activos | Contexto | Vision | Licencia | Formato |
 |---|---|---|---|---|---|
-| Ling-3.2-air-REAP-408 (este) | ~99,9B | ~5,5B | 131.072 | MIT | GGUF, FP8 |
-| inclusionAI/Ling-3.2-air (base) | 124B | ~5,5B | no disponible | no disponible | safetensors |
-| Alternativas de ~100B MoE | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ling-3.2-air-REAP-408 (esta ficha) | ~99,87 B / ~5,5 B | hasta 131.072 en ejemplos | Si (imagen y video) | MIT | GGUF, FP8 safetensors |
+| inclusionAI/Ling-3.2-air (base) | 124 B / 5,5 B | no disponible | Si | no disponible | safetensors |
+| Otros MoE de ~100 B con poda REAP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada para establecer una comparativa de rendimiento.
+No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La poda es one-shot y sin recuperacion: se elimina el 20% de los expertos por capa, lo que puede degradar la calidad en dominios poco representados en la calibracion (el 10% de chat general es la porcion mas pequena).
-- El bloque NextN/MTP se omite en los quants, por lo que se pierde la decodificacion especulativa nativa del modelo base.
-- Riesgo de alucinacion inherente a los modelos generativos, potencialmente amplificado por la compresion en Q2_K; el autor advierte que los ficheros mas pequenos implican "mas compresion, mas errores".
-- La entrada de vision requiere obligatoriamente el fichero `mmproj-model-f16.gguf`; sin el, solo funciona el chat de texto.
-- Idiomas soportados no especificados: no hay garantia documentada de calidad multilingue.
-- Es un modelo experimental ("This is an experimental REAP"), no validado en produccion.
-- Licencia MIT permite uso comercial, pero el modelo base y sus datos de entrenamiento pueden tener condiciones adicionales no reflejadas en esta ficha.
-- El contexto de 131.072 tokens comparte memoria con los pesos; en configuraciones con offloading, contextos largos pueden provocar OOM.
+- Modelo marcado como experimental por el autor; la poda no incluye recuperacion, por lo que puede degradar tareas que dependian de los expertos eliminados.
+- La calidad depende del conjunto de calibracion (653.000 tokens con sesgo fuerte hacia codigo, 75%); el rendimiento en dominios poco representados (por ejemplo, idiomas distintos del ingles o chino) puede resentirse.
+- Riesgo de alucinacion inherente a los modelos generativos; el modo thinking activado por defecto alarga las respuestas y aumenta el consumo de tokens.
+- Idiomas soportados no documentados; no se garantiza cobertura multilingue amplia.
+- Las cuantizaciones bajas (Q2_K) degradan la calidad de forma notable segun el propio autor ("more slop and misbehavin'").
+- El bloque NextN/MTP se omite en esta version, por lo que no se dispone de decodificacion especulativa nativa.
+- La vision requiere el archivo `mmproj-model-f16.gguf` de 875 MB; sin el, solo funciona texto.
+- Aunque la licencia es MIT, conviene verificar las condiciones del modelo base inclusionAI/Ling-3.2-air antes de uso comercial.
+- Requiere llama.cpp build b11190 o superior; versiones anteriores no soportan esta arquitectura.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/bloomer010/Ling-3.2-air-REAP-408-GGUF
-- Repo hermano FP8 safetensors: https://huggingface.co/bloomer010/Ling-3.2-air-REAP-408
+- Repositorio FP8 safetensors: https://huggingface.co/bloomer010/Ling-3.2-air-REAP-408
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.2-air
 - Paper REAP: https://arxiv.org/abs/2510.13999

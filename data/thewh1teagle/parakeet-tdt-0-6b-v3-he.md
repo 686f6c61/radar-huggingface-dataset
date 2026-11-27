@@ -2,113 +2,111 @@
 
 ## Resumen
 
-parakeet-tdt-0.6b-v3-he es un modelo de reconocimiento automatico del habla (ASR) especializado en hebreo, desarrollado por el usuario thewh1teagle como un ajuste fino del modelo multilingue nvidia/parakeet-tdt-0.6b-v3 de NVIDIA. Resuelve la transcripcion de audio en hebreo moderno con puntuacion y formato de texto normalizado, un idioma que no estaba cubierto por el modelo base de NVIDIA y para el que las alternativas open source de calidad eran escasas hasta ahora. Su relevancia actual radica en que iguala o supera a whisper-large-v3-turbo en hebreo siendo un modelo mucho mas pequeno y rapido.
+parakeet-tdt-0.6b-v3-he es un modelo de reconocimiento automatico del habla (ASR) especializado en hebreo, desarrollado por el usuario thewh1teagle como ajuste fino de nvidia/parakeet-tdt-0.6b-v3. El modelo parte de la arquitectura FastConformer con decodificacion TDT (Token-and-Duration Transducer) de NVIDIA y anade un tokenizer BPE especifico para hebreo, extendiendo el vocabulario original de 8.192 a 9.206 piezas sin reemplazar los identificadores existentes.
 
-El modelo cuenta con 628.356.220 parametros (aproximadamente 628 M) y combina un encoder FastConformer con un decoder TDT (Token-and-Duration Transducer). Hereda del modelo base la deteccion automatica de idioma, la puntuacion nativa, las mayusculas y la prediccion de timestamps a nivel de palabra, y anade un tokenizer extendido con piezas BPE especificas de hebreo (vocabulario de 9.206 frente a las 8.192 originales) sin reinicializar los pesos preentrenados del decoder.
+El modelo resuelve el problema de la transcripcion de hebreo con alta precision en un tamano compacto: 628 millones de parametros, lo que permite despliegue en hardware modesto. Segun la model card, alcanza un WER del 6,1 % en el conjunto eval-d1 y del 8,8 % en eval-whatsapp de ivrit.ai, superando a Whisper large-v3, Amazon Transcribe, Deepgram nova-3 y gpt-4o-transcribe en esos mismos conjuntos, y quedando cerca de Soniox (4,8 / 9,0) e ivrit-ai/whisper-large-v3-turbo (5,3 / 7,1).
 
-Se distribuye bajo licencia CC-BY-4.0, en formatos safetensors y GGUF (q8_0), y es compatible con la libreria transformers (a partir de la version 5.18) mediante las clases `AutoModelForTDT` y `AutoProcessor`. El autor publica tambien cuantizaciones listas para la aplicacion de transcripcion Vibe y para NeMo-Speech.cpp.
+Es relevante ahora porque demuestra que es viable anadir un idioma nuevo a un modelo Parakeet preservando todos los pesos preentrenados, con un pipeline documentado de ajuste fino, y porque ofrece una alternativa abierta (CC-BY-4.0) a servicios propietarios de ASR para hebreo. El repositorio incluye pesos en safetensors, un archivo GGUF q8_0 para NeMo-Speech.cpp y el checkpoint .nemo para reentrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (encoder) + TDT Token-and-Duration Transducer (decoder) |
-| Parametros totales | 628.356.220 (aproximadamente 628 M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (modelo de ASR; procesa audio, no secuencias de tokens) |
-| Tipos de cuantizacion | GGUF q8_0 (fichero `parakeet-tdt-0.6b-v3-he.q8_0.gguf`); safetensors en bf16; `.nemo` |
+| Arquitectura | FastConformer con decodificador TDT (Token-and-Duration Transducer) |
+| Parametros totales | 628.356.220 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF q8_0 incluido en el repositorio; safetensors en precision original |
 | Idiomas soportados | hebreo (he) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | safetensors, GGUF (q8_0), `.nemo` |
-| Vocabulario | 9.206 piezas (8.192 del modelo base + 1.014 piezas BPE de hebreo) |
-| Modelo base | nvidia/parakeet-tdt-0.6b-v3 |
-| Tamano del repositorio | 5,7 GB |
+| Formato de pesos | safetensors, GGUF (q8_0), .nemo |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un encoder FastConformer, una variante eficiente del Conformer con atencion por chunks y codificacion posicional relativa, con un decoder TDT (Token-and-Duration Transducer). A diferencia de un transducer clasico, el decoder TDT predice en cada paso tanto el token como su duracion, lo que reduce el numero de pasos de decodificacion y aumenta el throughput de transcripcion. El modelo base de NVIDIA fue entrenado con el corpus multilingue Granary (aproximadamente 660.000 horas de audio pseudo-etiquetado mas unas 10.000 horas de transcripciones humanas) para cubrir 25 idiomas europeos; este ajuste anade hebreo.
+El modelo hereda la arquitectura Parakeet TDT de NVIDIA: un encoder FastConformer (variante convolucional de Conformer con atencion de complejidad reducida) acoplado a un decodificador Transducer que predice conjuntamente tokens y duraciones (TDT), lo que permite emitir varios tokens por paso y mejorar la eficiencia de decodificacion frente a un RNN-T clasico. El ajuste fino amplia el tokenizer con un BPE hebreo de 1.024 piezas entrenado sobre unas 250 horas de transcripciones normalizadas; solo se anaden las piezas nuevas no presentes en el vocabulario original, puntuadas por debajo de todas las de v3 para preservar el orden de merges.
 
-El ajuste fino anade un nuevo idioma siguiendo una receta especifica: en lugar de reemplazar el tokenizer con `change_vocabulary()`, se entrena un BPE de hebreo sobre unas 250 horas de transcripciones normalizadas, se generan 1.024 piezas de vocabulario y se anaden a continuacion de las 8.192 existentes, preservando los ids y merges originales. Despues se copian todos los pesos preentrenados por id de token (LSTM de prediccion, capas ocultas del joint, filas de tokens antiguos, filas de blank y de duracion TDT) y solo las filas nuevas se inicializan desde la media de las antiguas (con un 1 % de ruido) y el bias del joint desde la media del bias antiguo. Se aplica un learning rate 10x mayor en decoder y joint (2e-3 frente a 2e-4 del encoder) para que las filas nuevas dejen de ser indistinguibles rapidamente.
-
-Los datos de entrenamiento consisten en aproximadamente 6.000 horas de audio de ivrit.ai pseudo-etiquetado con ivrit-ai/whisper-large-v3-turbo, filtrado con un umbral de `compression_ratio <= 2.2`, en una sola pasada y con batches agrupados por duracion. El entrenamiento usa bf16, learning rate bajo (1e-5 a 3e-5) con warmup corto y aproximadamente 600 segundos de audio por paso de optimizador mediante acumulacion de gradientes. El audio es mono a 16 kHz y el texto se normaliza eliminando nikud y marcas bidi, y sustituyendo geresh/gershayim por `'` y `"`.
+El entrenamiento conserva todos los pesos preentrenados copiandolos por identificador de token (LSTM de prediccion, capas ocultas del joint, filas de tokens antiguos, fila blank y filas de duracion TDT); unicamente las filas nuevas se inicializan a la media de las antiguas con un 1 % de ruido. Se aplica una tasa de aprendizaje 10 veces mayor en decodificador y joint (2e-3) que en el encoder (2e-4), con warmup corto y bf16. Los datos son aproximadamente 9.000 horas de audio de ivrit.ai pseudo-etiquetadas con ivrit-ai/whisper-large-v3-turbo, filtradas con compression_ratio <= 2.2 en una sola pasada y con lotes agrupados por duracion. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
-- Transcripcion de voz en hebreo moderno con texto normalizado (sin nikud, marcas bidi eliminadas).
-- Deteccion automatica de idioma heredada del modelo base (aunque el ajuste esta orientado a hebreo).
-- Puntuacion y capitalizacion nativas.
-- Prediccion de timestamps a nivel de palabra.
-- Decodificacion TDT eficiente, pensada para transcripcion de alto throughput por lotes.
-- Procesamiento de audio mono a 16 kHz.
-- Ajuste fino adicional sobre el propio modelo: el `.nemo` incluye el tokenizer extendido, por lo que se puede reentrenar sin `change_vocabulary()`.
-- No se documentan capacidades de vision, audio multimodal, tool calling ni razonamiento multi-paso: es un modelo puramente de ASR.
+- Transcripcion de voz a texto en hebreo a partir de audio de 16 kHz mono.
+- Decodificacion TDT con prediccion conjunta de tokens y duraciones, lo que reduce pasos de decodificacion.
+- Extraccion de caracteristicas de audio (pipeline feature-extraction en los tags del repositorio).
+- Integracion con la libreria transformers mediante AutoModelForTDT y AutoProcessor (requiere transformers >= 5.18).
+- Compatibilidad con NeMo-Speech.cpp a traves del archivo GGUF q8_0 incluido.
+- Ajuste fino adicional con NeMo cargando el checkpoint .nemo, que ya incorpora el tokenizer extendido.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no aplica (modelo ASR).
+- Capacidades multilingues: limitadas al hebreo; las palabras en ingles se transcriben en caracteres hebreos.
+- Capacidades de vision o audio generativo: no disponibles (solo ASR).
 
 ## Casos de uso
 
-- Transcripcion de entrevistas y podcasts en hebreo: el modelo convierte audio largo en texto con puntuacion y timestamps, util para publicar transcripciones accesibles o generar resumenes posteriores con un LLM.
-- Subtitulado automatico: la prediccion de timestamps a nivel de palabra permite alinear subtitulos con el audio para plataformas de video.
-- Atencion al cliente en centros de contacto israelies: transcripcion por lotes de llamadas grabadas para analitica, control de calidad y busqueda en conversaciones.
-- Transcripcion de notas de voz de WhatsApp: el autor reporta resultados especificos sobre el conjunto `eval-whatsapp`, lo que indica idoneidad para audio conversacional espontaneo y ruidoso.
-- Archivado y busqueda de contenido audiovisual en hebreo: indexacion de grandes volumenes de audio de ivrit.ai u otras fuentes para busqueda por texto completo.
-- Transcripcion local en aplicaciones de escritorio: la cuantizacion GGUF q8_0 permite integrar el modelo en la app Vibe y ejecutar transcripcion en el propio dispositivo sin enviar audio a la nube.
-- Investigacion en ASR de hebreo: sirve como punto de partida (fine-tuning) para dominios especificos como terminologia medica, legal o jerga tecnica, gracias a que el `.nemo` conserva el tokenizer extendido.
-- Generacion de datasets etiquetados: dado su throughput, puede usarse para pseudo-etiquetar audio en hebreo y alimentar pipelines posteriores de entrenamiento.
+- Transcripcion de reuniones y clases en hebreo: el modelo procesa audio de 16 kHz mono y produce texto con un WER del 6,1 % en el conjunto eval-d1, adecuado para actas automaticas con revision humana ligera.
+- Subtitulado de contenido audiovisual en hebreo: con 628 M de parametros y cuantizacion q8_0 puede ejecutarse en CPU o GPU modesta, lo que permite procesar lotes de video sin depender de APIs externas.
+- Transcripcion de notas de voz de WhatsApp: el WER del 8,8 % en eval-whatsapp lo situa por delante de Amazon Transcribe (10,4), Deepgram nova-3 (12,0) y gpt-4o-transcribe (12,6) en ese dominio, por lo que es una opcion solida para mensajeria de voz.
+- Integracion en la aplicacion Vibe: el autor publica una variante GGUF especifica (vibe-app/parakeet-tdt-0.6b-v3-he-gguf) para transcripcion local de escritorio.
+- Despliegue en servidores sin GPU: el archivo GGUF q8_0 para NeMo-Speech.cpp permite inferencia en CPU, util para archivado masivo de audio historico.
+- Generacion de datos etiquetados para otros modelos: el checkpoint .nemo con tokenizer extendido sirve como base para ajustes finos posteriores con NeMo sobre nuevos dominios o acentos.
+- Investigacion en adaptacion de idiomas: el pipeline documentado (extension de tokenizer, preservacion de pesos, LR diferenciada) es replicable para otros idiomas sobre Parakeet.
 
 ## Benchmarks y rendimiento
 
-WER (%, menor es mejor) sobre los conjuntos de test transcritos por humanos de ivrit.ai, con la normalizacion del leaderboard de transcripcion en hebreo:
+WER (%, menor es mejor) en los conjuntos de test con transcripcion humana de ivrit.ai, con la normalizacion del leaderboard de ivrit-ai:
 
 | Modelo | eval-d1 | eval-whatsapp |
 |---|---|---|
-| openai/whisper-large-v3-turbo | 8,4 | 12,8 |
-| parakeet-tdt-0.6b-v3-he (este modelo) | 8,1 | 11,0 |
+| Soniox | 4,8 | 9,0 |
 | ivrit-ai/whisper-large-v3-turbo | 5,3 | 7,1 |
+| parakeet-tdt-0.6b-v3-he (este modelo) | 6,1 | 8,8 |
+| Amazon Transcribe | 6,6 | 10,4 |
+| Deepgram nova-3 | 6,7 | 12,0 |
+| OpenAI gpt-4o-transcribe | 7,3 | 12,6 |
+| openai/whisper-large-v3-turbo | 8,4 | 12,8 |
+| openai/whisper-large-v3 | 9,8 | 13,2 |
 
-No se han publicado en la informacion disponible otros benchmarks (por ejemplo, MMLU, HumanEval o GSM8K) porque no aplican a un modelo de ASR. No se dispone de datos de latencia o throughput medidos.
+Ademas, la model card indica un rendimiento en FLEURS de 76,8, inferior a los ~82 de los mejores modelos en texto enciclopedico leido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 628 M de parametros; no son cifras oficiales del autor): aproximadamente 1,3-1,5 GB en bf16/fp16, unos 0,7 GB en int8 (GGUF q8_0) y unos 2,5 GB en fp32, mas la memoria adicional de activaciones para audio largo.
-- GPU consumer: cabe sin problema en cualquier GPU con 4 GB o mas de VRAM, como RTX 3050, RTX 3060, RTX 4060 o superiores. No se requieren GPU de datacenter para inferencia individual.
-- GPU de datacenter (A100, H100, L40S): recomendadas para procesamiento por lotes de alto volumen y maximizar el throughput de la decodificacion TDT.
-- Opciones de despliegue: transformers (>=5.18) con `AutoModelForTDT` y `AutoProcessor`; NeMo (`ASRModel.from_pretrained`); NeMo-Speech.cpp para el GGUF q8_0; aplicacion Vibe con el repositorio vibe-app/parakeet-tdt-0.6b-v3-he-gguf.
-- Latencia y throughput estimados: no disponible.
-- Nota de entrenamiento/validacion: al hacer fine-tuning, poner `decoding.greedy.use_cuda_graph_decoder: false` durante la validacion intra-entrenamiento para evitar que decodifique con pesos obsoletos y produzca salida vacia.
+- VRAM estimada: no disponible de forma explicita; con 628 M de parametros, la inferencia en bf16 requiere aproximadamente 1,3 GB solo para pesos, y el GGUF q8_0 reduce el peso a aproximadamente 0,6 GB.
+- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con al menos 2-4 GB de VRAM libre deberia ser suficiente.
+- GPU de consumo: si, cabe en tarjetas de consumo como RTX 3060, RTX 4060 o superiores, e incluso en CPU mediante NeMo-Speech.cpp con el GGUF.
+- Opciones de despliegue: transformers >= 5.18 con AutoModelForTDT, NeMo (ASRModel.from_pretrained con el .nemo) y NeMo-Speech.cpp para el GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Licencia | WER eval-d1 | WER eval-whatsapp | Disponibilidad |
-|---|---|---|---|---|---|---|
-| parakeet-tdt-0.6b-v3-he | 628 M | hebreo | CC-BY-4.0 | 8,1 | 11,0 | Hugging Face (safetensors, GGUF, .nemo) |
-| openai/whisper-large-v3-turbo | no disponible | multilingue | MIT (no confirmado en la informacion) | 8,4 | 12,8 | Hugging Face |
-| ivrit-ai/whisper-large-v3-turbo | no disponible | hebreo | no disponible | 5,3 | 7,1 | Hugging Face |
-| nvidia/parakeet-tdt-0.6b-v3 (base) | 600 M | 25 idiomas europeos (sin hebreo) | CC-BY-4.0 | no disponible | no disponible | Hugging Face, NGC |
-
-Nota: los parametros de los modelos Whisper no figuran en la informacion proporcionada, por lo que se indican como no disponibles.
+| Modelo | Parametros | Contexto | WER eval-d1 / eval-whatsapp | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| parakeet-tdt-0.6b-v3-he | 628 M | no disponible | 6,1 / 8,8 | CC-BY-4.0 | Hugging Face (safetensors, GGUF, .nemo) |
+| ivrit-ai/whisper-large-v3-turbo | no disponible en la informacion | no disponible | 5,3 / 7,1 | no disponible en la informacion | Hugging Face |
+| openai/whisper-large-v3-turbo | no disponible en la informacion | no disponible | 8,4 / 12,8 | no disponible en la informacion | Hugging Face |
+| openai/whisper-large-v3 | no disponible en la informacion | no disponible | 9,8 / 13,2 | no disponible en la informacion | Hugging Face |
+| Soniox (servicio propietario) | no disponible | no disponible | 4,8 / 9,0 | propietaria | API comercial |
 
 ## Limitaciones y advertencias
 
-- Modelo especializado en un unico idioma (hebreo); no esta pensado para transcribir otros idiomas aunque el modelo base sea multilingue.
-- Es un modelo de ASR: no genera razonamiento, no soporta tool calling ni agentes.
-- Riesgo de alucinacion y de errores en audio con ruido, solapamiento de voces, acentos poco representados o terminologia especializada no vista en el corpus de pseudo-etiquetado.
-- El entrenamiento se basa en pseudo-etiquetas generadas por ivrit-ai/whisper-large-v3-turbo, por lo que puede heredar los sesgos y errores sistematicos de ese modelo maestro.
-- La normalizacion del texto elimina nikud y marcas bidi; si el caso de uso requiere texto vocalizado, el modelo no lo proporcionara.
-- No se recomienda usar el modelo como si fuera un modelo de lenguaje: no responde a instrucciones ni mantiene conversacion.
-- Licencia CC-BY-4.0: permite uso comercial con atribucion al autor (thewh1teagle) y a NVIDIA como autor del modelo base, y a ivrit.ai como fuente de los datos; conviene revisar la licencia de ivrit.ai para usos derivados.
-- El leaderboard de referencia y los conjuntos de evaluacion son especificos de ivrit.ai, por lo que las cifras de WER no son directamente extrapolables a otros dominios o corpus.
-- Para produccion, conviene validar el WER en audio del dominio objetivo antes de desplegar, dado que no se han publicado evaluaciones fuera de los conjuntos de ivrit.ai.
+- Solo hebreo: las palabras en ingles se transcriben en caracteres hebreos, lo que degrada la salida en audio con terminos tecnicos en latin.
+- Rendimiento mas debil en texto enciclopedico leido (FLEURS: 76,8 frente a ~82 de los mejores), con errores en nombres raros, numeros y terminos latinos.
+- Los numeros se escriben de forma inconsistente, alternando palabras y digitos.
+- Riesgo de alucinacion en audio con ruido o silencios largos, comun en modelos transducer; la model card no documenta mitigaciones especificas.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al entrenarse sobre ivrit.ai, puede heredar sesgos de ese corpus.
+- Restricciones de licencia: CC-BY-4.0 permite uso comercial con atribucion; el modelo base de NVIDIA tambien es CC-BY-4.0 y los datos de ivrit.ai tienen su propia licencia.
+- Para produccion, conviene normalizar la salida (eliminar nikud y marcas bidi, convertir geresh/gershayim a comillas) igual que en el entrenamiento.
+- Durante el ajuste fino con NeMo, es necesario desactivar decoding.greedy.use_cuda_graph_decoder en la validacion para evitar salidas vacias con pesos obsoletos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/thewh1teagle/parakeet-tdt-0.6b-v3-he
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Cuantizacion GGUF para Vibe: https://huggingface.co/vibe-app/parakeet-tdt-0.6b-v3-he-gguf
-- Modelo maestro de pseudo-etiquetado: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo
-- Leaderboard de transcripcion en hebreo de ivrit.ai: https://huggingface.co/spaces/ivrit-ai/hebrew-transcription-leaderboard
-- NeMo-Speech.cpp (runtime GGUF): https://github.com/NVIDIA/NeMo-Speech.cpp
+- Variante GGUF para Vibe: https://huggingface.co/vibe-app/parakeet-tdt-0.6b-v3-he-gguf
 - Aplicacion Vibe: https://thewh1teagle.github.io/vibe
-- Discusion tecnica del ajuste en NeMo Speech: https://github.com/NVIDIA-NeMo/Speech/issues/14140#issuecomment-5920783584
-- ivrit.ai (fuente de datos y licencia): https://www.ivrit.ai y https://www.ivrit.ai/en/the-license/
-- Coleccion NVIDIA NGC de Parakeet TDT 0.6B: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b
-- Ficha de Parakeet TDT 0.6B v3 en OpenASR: https://openasr.org/models/parakeet-tdt-0.6b-v3/
-- Parakeet TDT 0.6B v2 en NVIDIA NIM: https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2
+- NeMo-Speech.cpp: https://github.com/NVIDIA/NeMo-Speech.cpp
+- Leaderboard de transcripcion en hebreo: https://huggingface.co/spaces/ivrit-ai/hebrew-transcription-leaderboard
+- ivrit-ai/whisper-large-v3-turbo: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo
+- openai/whisper-large-v3-turbo: https://huggingface.co/openai/whisper-large-v3-turbo
+- openai/whisper-large-v3: https://huggingface.co/openai/whisper-large-v3
+- ivrit.ai: https://www.ivrit.ai
+- Licencia de ivrit.ai: https://www.ivrit.ai/en/the-license/
+- Detalle del entrenamiento en NeMo: https://github.com/NVIDIA-NeMo/Speech/issues/14140#issuecomment-5920783584

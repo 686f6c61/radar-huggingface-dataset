@@ -2,83 +2,91 @@
 
 ## Resumen
 
-Spaetzle-v66-7b es un modelo de lenguaje de 7.000 millones de parametros resultante de una fusion (merge) de tres modelos base mediante mergekit en su modalidad lazymergekit. El modelo original fue desarrollado por el usuario cstr, y esta version concreta es una cuantizacion a formato GGUF realizada por mradermacher para permitir su ejecucion en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
+Spaetzle-v66-7b-GGUF es la version cuantizada en formato GGUF del modelo cstr/Spaetzle-v66-7b, un merge de modelos de 7.241.732.096 parametros (aproximadamente 7,24 mil millones) construido mediante mergekit y lazymergekit. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF de modelos de la comunidad, y el modelo base original fue creado por el usuario cstr. El modelo esta pensado para inferencia local en ingles y se distribuye bajo licencia CC-BY-SA-4.0.
 
-El modelo fusiona las capacidades de flemmingmiguel/NeuDist-Ro-7B, cstr/Spaetzle-v53-7b y ResplendentAI/Flora_DPO_7B, todos ellos modelos de 7B basados en arquitectura transformer. Esta disponible exclusivamente en ingles y se distribuye bajo licencia CC-BY-SA-4.0. Su relevancia radica en que ofrece una alternativa de tamano medio con multiples opciones de cuantizacion, desde Q2_K (2,8 GB) hasta f16 (14,6 GB), lo que permite desplegarlo en una amplia gama de hardware, desde portatiles con 4 GB de VRAM hasta servidores con GPUs profesionales.
+El modelo es un merge que combina tres modelos: flemmingmiguel/NeuDist-Ro-7B, cstr/Spaetzle-v53-7b y ResplendentAI/Flora_DPO_7B. Esta construccion por fusion de pesos sugiere que el objetivo es agregar capacidades conversacionales y de razonamiento de los modelos constituyentes sin necesidad de un entrenamiento adicional desde cero. La model card no detalla la receta exacta de merge ni los hiperparametros empleados.
+
+La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un modelo de 7B en hardware de consumo gracias a las cuantizaciones GGUF disponibles, desde Q2_K (2,8 GB) hasta f16 (14,6 GB). No obstante, la informacion publicada es escasa: no hay benchmarks, no se especifica la longitud de contexto y las capacidades declaradas se limitan a la etiqueta "conversational". El repositorio tiene 213 descargas y 1 like en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo fusionado, base no especificada) |
+| Arquitectura | Transformer (merge de modelos de 7B; detalles de la receta de merge no disponibles) |
 | Parametros totales | 7.241.732.096 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | cc-by-sa-4.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-Spaetzle-v66-7b es un modelo de tipo merge, es decir, no ha sido entrenado desde cero sino que combina los pesos de tres modelos preexistentes de 7B: NeuDist-Ro-7B, Spaetzle-v53-7b y Flora_DPO_7B. La fusion se realizo con mergekit utilizando la tecnica lazymergekit, que permite combinar modelos sin necesidad de cargarlos completamente en memoria durante el proceso.
+El modelo es un merge de pesos construido con mergekit y lazymergekit a partir de tres modelos base: flemmingmiguel/NeuDist-Ro-7B, cstr/Spaetzle-v53-7b y ResplendentAI/Flora_DPO_7B. La presencia de un modelo con sufijo "DPO" (Flora_DPO_7B) sugiere que parte del material fusionado incorpora preferencias alineadas mediante Direct Preference Optimization, aunque la model card no confirma la receta ni los coeficientes de merge empleados. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases adicionales de RLHF o DPO tras la fusion.
 
-Al ser un merge, no se dispone de informacion detallada sobre el dataset de entrenamiento original ni sobre el proceso de alineacion de los modelos constituyentes. Sin embargo, por los nombres de los modelos base, se puede inferir que al menos uno de ellos (Flora_DPO_7B) fue sometido a un proceso de optimizacion mediante DPO (Direct Preference Optimization), lo que sugiere que el modelo resultante hereda cierta capacidad de seguir instrucciones y generar respuestas alineadas con preferencias humanas. La cuantizacion GGUF realizada por mradermacher es de tipo estatico, sin utilizar imatrix ni cuantizacion ponderada.
+La arquitectura subyacente es la de un transformer decoder-only de aproximadamente 7,24 mil millones de parametros, coherente con la familia de modelos de 7B sobre los que se construye el merge. No se documentan innovaciones tecnicas especificas como decodificacion especulativa, atencion lineal o modos de pensamiento. La cuantizacion la realiza mradermacher con su pipeline habitual (convert_type hf, output_tensor_quantised 1, quantize_version 2), y la model card indica que no hay cuantizaciones con imatrix o ponderadas disponibles en el momento de la publicacion.
 
 ## Capacidades
 
-- Generacion de texto en ingles con estilo conversacional, orientado a dialogos y asistentes.
-- Razonamiento basico y respuesta a instrucciones, heredado de los modelos base fusionados.
-- Capacidad de mantener conversaciones multi-turno gracias a su naturaleza de modelo de lenguaje generalista.
-- Soporte limitado de idiomas: solo ingles confirmado en la model card.
-- No se ha confirmado soporte para tool calling, function calling ni capacidades de agente.
-- No se ha confirmado modo de razonamiento explicito (thinking mode), vision ni audio.
-- Compatible con motores de inferencia que soporten GGUF, como llama.cpp, Ollama, LM Studio y vLLM (via conversion).
+- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del repositorio.
+- Razonamiento y respuesta multi-turno derivados de los modelos fusionados (no verificado con benchmarks publicados).
+- Capacidad de codigo y matematicas: no documentada explicitamente; probable por herencia de los modelos base, pero no confirmada.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional en ingles: el modelo puede integrarse en aplicaciones de chat o asistentes virtuales gracias a su naturaleza conversacional y su tamano contenido, que permite ejecutarlo en local sin depender de APIs externas.
-- Prototipado rapido de aplicaciones LLM: al disponer de multiples cuantizaciones, es adecuado para hacer pruebas de concepto en entornos de desarrollo con recursos limitados, evaluando el equilibrio entre calidad y consumo de memoria.
-- Generacion de texto generalista: redaccion de correos, resumen de documentos y generacion de contenido creativo en ingles, con la ventaja de poder ejecutarse en equipos sin GPU profesional.
-- Educacion e investigacion: util para estudiar el comportamiento de modelos fusionados y el impacto de distintas cuantizaciones en la calidad de las respuestas, dado que se dispone de 12 niveles de cuantizacion diferentes.
-- Despliegue en entornos con privacidad estricta: al ser un modelo local, permite procesar datos sensibles sin enviarlos a servicios en la nube, siempre que el hardware disponible sea suficiente para la cuantizacion elegida.
-- Experimentacion con tecnicas de fusion de modelos: los usuarios pueden comparar el rendimiento de este merge frente a sus modelos constituyentes para entender como afecta la fusion de pesos a las capacidades finales.
+- Asistente conversacional local en ingles: el modelo puede desplegarse con llama.cpp u Ollama en equipos de consumo usando cuantizaciones Q4_K_M (4,5 GB) o Q5_K_M (5,2 GB), adecuado para prototipos de chatbots sin dependencia de la nube.
+- Experimentacion con merges de modelos: util para investigadores que quieran estudiar el comportamiento de fusiones de pesos de 7B y comparar la calidad de las distintas cuantizaciones (Q2_K frente a Q8_0) sobre el mismo modelo base.
+- Generacion de texto creativo y redaccion en ingles: con Q6_K (6,0 GB) o Q8_0 (7,8 GB) se obtiene la mayor fidelidad respecto al modelo original para tareas de escritura.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes de cuantizacion, lo que permite medir el impacto de la compresion en perplejidad y calidad de salida con un mismo prompt set.
+- Despliegue en entornos con VRAM limitada: la variante Q2_K (2,8 GB) permite ejecutar el modelo en GPUs de 4 GB o en CPU con RAM modesta, aunque con perdida de calidad notable.
+- Fines educativos y de investigacion sobre mergekit: sirve como ejemplo practico de un merge triple documentado en sus etiquetas, util para quienes aprenden a construir y cuantizar merges.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandarizadas para este modelo o sus constituyentes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: desde 2,8 GB (Q2_K) hasta 14,6 GB (f16), segun la cuantizacion elegida.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones Q4_K_M o inferiores. Para Q6_K o Q8_0 se recomienda una GPU con 8 GB o mas (RTX 3070/4060 o superior). La version f16 requiere 16 GB de VRAM o mas.
-- En CPU: las cuantizaciones Q4_K_M y Q5_K_M son utilizables en CPUs modernas con 16 GB de RAM, aunque con latencias mayores que en GPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier otro motor compatible con GGUF.
-- Latencia y throughput: no disponible. Dependera del hardware, la cuantizacion y el motor de inferencia utilizado.
+- VRAM estimada para inferencia: aproximadamente 3 GB con Q2_K, 4-5 GB con Q4_K_M, 6 GB con Q6_K y 8-9 GB con Q8_0 (incluyendo overhead de contexto).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 o H100 para despliegues de mayor throughput; tambien es viable en CPU.
+- Cabe en GPU de consumo: si, en cualquier GPU con 6 GB o mas usando Q4_K_M o Q5_K_M; en GPUs de 4 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa para este formato.
+- Latencia y throughput estimados: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Spaetzle-v66-7b (GGUF) | 7,24 B | no disponible | CC-BY-SA-4.0 | GGUF | Merge de tres modelos 7B |
-| Spaetzle-v65-7b (GGUF) | 7 B aprox. | no disponible | no disponible | GGUF | Version anterior del mismo merge, con distintos constituyentes |
-| Spaetzle-v67-7b (GGUF) | 7 B aprox. | no disponible | no disponible | GGUF | Version posterior del mismo merge |
+| Spaetzle-v66-7b-GGUF | 7,24 B | no disponible | CC-BY-SA-4.0 | GGUF | Merge triple de la comunidad; sin benchmarks publicados |
+| Mistral-7B-Instruct | 7,24 B | 32 768 (segun version) | Apache 2.0 | safetensors, GGUF | Base ampliamente adoptada, con benchmarks publicos |
+| Llama-3.1-8B-Instruct | 8,03 B | 131 072 | Llama 3.1 Community License | safetensors, GGUF | Mayor contexto y ecosistema de evaluacion |
+| Qwen2.5-7B-Instruct | 7,62 B | 131 072 | Apache 2.0 | safetensors, GGUF | Multilingue y con benchmarks publicados |
 
-No se dispone de informacion suficiente sobre modelos comparables de la misma categoria (merges de 7B en GGUF) para establecer una comparativa completa. Los modelos Spaetzle-v65 y v67 son variantes del mismo proyecto con diferentes combinaciones de modelos base.
+La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento de Spaetzle-v66-7b que permitan una comparacion cuantitativa directa.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo soporta ingles de forma confirmada. No es adecuado para aplicaciones que requieran espanol u otros idiomas.
-- Licencia CC-BY-SA-4.0: es una licencia copyleft que puede imponer restricciones sobre el uso comercial y la redistribucion de obras derivadas. Es recomendable revisar los terminos completos antes de usar el modelo en produccion.
-- Sin benchmarks publicados: no hay datos objetivos sobre la calidad del modelo en tareas estandarizadas, por lo que su rendimiento real es incierto.
-- Riesgo de alucinacion: como todos los modelos de lenguaje, puede generar informacion falsa o inventada con apariencia de verosimilitud.
-- Sesgos: al ser un merge de modelos entrenados principalmente con datos en ingles, puede heredar sesgos culturales y linguisticos de sus datos de entrenamiento.
-- Sin soporte de herramientas: no se ha confirmado capacidad de tool calling ni function calling, lo que limita su uso en aplicaciones que requieran interaccion con APIs o ejecucion de acciones.
-- Cuantizacion estatica: las cuantizaciones no utilizan imatrix ni metodos ponderados, lo que puede resultar en una perdida de calidad mayor que otras versiones cuantizadas con tecnicas mas avanzadas.
+- Sesgos conocidos: no documentados; al ser un merge de modelos entrenados con datos web en ingles, es probable que herede sesgos de esos corpus, pero no hay evaluacion publicada.
+- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones de fidelidad, no puede descartarse un riesgo relevante en produccion.
+- Limitaciones de contexto e idioma: el modelo solo declara soporte de ingles y no se especifica la longitud de contexto, lo que impide planificar aplicaciones con ventanas largas.
+- Restricciones de licencia: CC-BY-SA-4.0 exige atribucion y compartir bajo la misma licencia las obras derivadas, lo que puede ser incompatible con productos propietarios o con requisitos de confidencialidad.
+- Caveat para produccion: la model card no documenta la receta de merge ni evaluaciones de calidad; antes de usar el modelo en un sistema real conviene validar su comportamiento con un conjunto de pruebas propio.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_M degradan notablemente la fidelidad; la propia model card advierte que Q3_K_M es de "lower quality" y que f16 es "overkill".
+- Sin cuantizaciones imatrix: el autor indica que no hay versiones ponderadas disponibles, lo que limita la calidad maxima alcanzable en tamanos pequenos.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Spaetzle-v66-7b-GGUF
-- Modelo base (sin cuantizar): https://huggingface.co/cstr/Spaetzle-v66-7b
-- Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Spaetzle-v66-7b-GGUF
+- Modelo base: https://huggingface.co/cstr/Spaetzle-v66-7b
+- Modelo constituyente 1: https://huggingface.co/flemmingmiguel/NeuDist-Ro-7B
+- Modelo constituyente 2: https://huggingface.co/cstr/Spaetzle-v53-7b
+- Modelo constituyente 3: https://huggingface.co/ResplendentAI/Flora_DPO_7B
+- Pagina de descargas del autor: https://hf.tst.eu/model#Spaetzle-v66-7b-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

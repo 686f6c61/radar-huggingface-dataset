@@ -2,91 +2,87 @@
 
 ## Resumen
 
-Nex-N2.6-oQ5e-mtp es una conversión comunitaria del modelo multimodal Nex-N2.6 de Nex-AGI, publicada por el usuario Hygaard. Se trata de una cuantización mixta en formato MLX (oQ5e) pensada específicamente para Macs con Apple Silicon y al menos 256 GB de memoria unificada. El modelo original es un sistema agéntico multimodal construido sobre GLM-5.3-Flash de Z.ai, con aproximadamente 321B parámetros y arquitectura MoE, que conserva el codificador visual y la cabeza de predicción multi-token (MTP).
+Nex-N2.6-oQ5e-mtp es una conversión cuantizada del modelo multimodal Nex-N2.6 desarrollado por Nex-AGI, publicada por el usuario Hygaard en Hugging Face. Se trata de una versión en formato MLX con cuantización mixta oQ5e, diseñada específicamente para ejecutarse en Macs con Apple Silicon que dispongan de al menos 256 GB de memoria unificada. El modelo base es un transformer disperso (MoE) de aproximadamente 321 000 millones de parámetros, construido sobre GLM-5.3-Flash y orientado a tareas agénticas multimodales.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de gran tamaño en hardware de consumo de gama alta (Mac Studio o Mac Pro con memoria unificada amplia), algo imposible con la mayoría de checkpoints de 300B+ en precisión completa. La conversión no aplica entrenamiento adicional, ablación ni poda de expertos: mantiene el conjunto completo de expertos y el codificador de visión, lo que la convierte en una opción interesante para evaluar el modelo original en local sin infraestructura de datacenter.
+La relevancia de esta conversión radica en que hace viable, sobre hardware de Apple, un modelo de escala frontier que de otro modo requeriría clústeres de GPUs. La cuantización mixta preserva la totalidad del conjunto de expertos, el codificador visual y la cabeza de predicción multi-token (MTP), sin poda de expertos ni entrenamiento adicional. El resultado son 225,36 GB de pesos almacenados en 38 shards, con una media efectiva de 5,61 bits por peso.
 
-El pipeline declarado es image-text-to-text, por lo que el modelo acepta entradas de imagen y texto. La licencia es Apache-2.0, con la nota MIT de GLM-5.3-Flash conservada por el autor de la conversión.
+La ficha describe exclusivamente esta conversión comunitaria; los datos sobre el modelo original (contexto, idiomas, benchmarks) no se detallan en la información disponible y se marcan como tales. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE basada en GLM-5.3-Flash, con MTP (multi-token prediction) y codificador visual |
-| Parametros totales | ~321B |
+| Arquitectura | Transformer MoE multimodal con atención lineal e híbrida, cabeza MTP (multi-token prediction); base GLM-5.3-Flash |
+| Parametros totales | 321.323.031.390 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | oQ5e (mixed precision, affine packing, group size 64) en MLX |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (con aviso MIT de GLM-5.3-Flash) |
-| Formato de pesos | MLX safetensors (38 shards, 225.36 GB / 209.88 GiB) |
+| Tipos de cuantizacion | oQ5e mixta (5 bits expertos enrutados, 8 bits atención/shared experts/MLP denso/embeddings/head, BF16 visión y normalizaciones, FP32 routers y biases), group size 64, empaquetado afín |
+| Idiomas soportados | no disponible (el corpus de calibración incluye material multilingüe y de código) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MLX safetensors (38 shards, 225,36 GB / 209,88 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Nex-N2.6 es un transformer MoE multimodal basado en GLM-5.3-Flash, con aproximadamente 321B parámetros totales. Incorpora un codificador visual para entrada image-text-to-text y una cabeza de predicción multi-token (MTP) que permite decodificación especulativa nativa. La conversión conserva íntegramente el conjunto de expertos, el codificador visual y la cabeza MTP; no se aplicó poda de expertos ni ablación.
+El modelo base Nex-N2.6 es un transformer de mezcla de expertos (MoE) multimodal con atención híbrida: combina proyecciones de atención estándar con capas de atención lineal (convoluciones de atención lineal presentes en los pesos) y mecanismos de decaimiento recurrente. Incluye routers MoE con biases de corrección, "hyperconnections" y un indexador de pooling/compresión, lo que sugiere un esquema de atención eficiente para contextos largos. Dispone además de una cabeza de predicción multi-token (MTP), útil para decodificación especulativa y generación acelerada. El codificador visual está en BF16 y suma 563,6 M de parámetros.
 
-El proceso de conversión partió del checkpoint FP8 del creador (`nex-agi/Nex-N2.6@987472298e7867721576ac49a253a6f5b526013e`) y se realizó con la herramienta nativa oQe de oMLX `0.7.4.dev1`, en modo streaming. La calibración empleó 256 muestras de 512 tokens cada una, extraídas del corpus de código y multilingüe incluido, y se superaron las comprobaciones de cobertura de expertos y estructurales. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en el modelo original.
+Esta conversión concreta no aplica entrenamiento adicional, abliteración ni poda de expertos: es una cuantización post-entrenamiento del checkpoint FP8 original (`nex-agi/Nex-N2.6@987472298e7867721576ac49a253a6f5b526013e`), realizada con la herramienta oMLX 0.7.4.dev1 mediante conversión streaming nativa oQe. La calibración empleó 256 muestras de 512 tokens cada una, con un corpus de código y multilingüe, y superó comprobaciones de cobertura de expertos y estructurales. Los detalles de preservación se documentan en `CONVERSION.json`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modos de esfuerzo configurables mediante `reasoning_effort` (`low`, `high`, `max`, por defecto `max`).
-- Procesamiento multimodal image-text-to-text mediante el codificador visual conservado.
-- Decodificación multi-token (MTP) activa, lo que acelera la generación en el runtime probado.
-- Comportamiento agéntico según la descripción del modelo base (Nex-N2.6 es un "multimodal agentic model").
+- Generación de texto y razonamiento conversacional multi-turno (pipeline `image-text-to-text`).
+- Comprensión de imágenes gracias al codificador visual conservado en BF16.
+- Capacidades agénticas y de razonamiento multi-paso, propias de un modelo "agentic" según la model card.
+- Predicción multi-token (MTP) para decodificación acelerada.
+- Procesamiento de código y contenido multilingüe (corpus de calibración).
 - Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
-- Capacidades multilingües: el corpus de calibración es multilingüe, pero no se detallan los idiomas soportados.
-- Capacidades de código: el corpus de calibración incluye código, lo que sugiere competencia en esa área, aunque no se aportan benchmarks.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Evaluación local de modelos de 300B+ en Apple Silicon: la conversión permite cargar y ejecutar Nex-N2.6 en un Mac con 256 GB de memoria unificada, útil para investigadores que quieran probar el modelo sin GPUs de datacenter.
-- Prototipado de agentes multimodales: el modelo acepta imagen y texto y está descrito como agéntico, por lo que sirve para construir pipelines que combinen percepción visual y razonamiento multi-paso en local.
-- Análisis de documentos con imágenes: al conservar el codificador visual, puede procesar capturas, diagramas o páginas escaneadas junto con instrucciones textuales.
-- Generación de código asistida: el corpus de calibración incluye código y el modelo base está orientado a tareas agénticas, lo que lo hace candidato para asistentes de programación en entornos con requisitos de privacidad (ejecución local, sin envío de datos a la nube).
-- Experimentación con decodificación especulativa: la cabeza MTP activa permite estudiar el impacto del multi-token prediction en latencia y throughput sobre hardware Apple.
-- Investigación sobre cuantización mixta: la conversión oQ5e con group size 64 y calibración documentada sirve como caso de estudio para evaluar la pérdida de calidad frente al checkpoint FP8 original.
-- Inferencia con control de esfuerzo de razonamiento: los valores `low`, `high` y `max` de `reasoning_effort` permiten ajustar el coste computacional según la tarea (por ejemplo, `low` para clasificación rápida y `max` para razonamiento complejo).
+- Asistencia agéntica local en Mac de gama alta: con 256 GB de memoria unificada, el modelo puede orquestar tareas multi-paso (lectura de documentos, ejecución de herramientas, razonamiento) sin depender de la nube, aprovechando la cabeza MTP para reducir latencia de generación.
+- Análisis de documentos con imágenes: al conservar el codificador visual, permite extraer información de capturas, diagramas o PDFs escaneados y razonar sobre ellos en local.
+- Desarrollo de software asistido: el corpus de calibración incluye código, por lo que es adecuado para generación y revisión de código en entornos de desarrollo sobre Apple Silicon.
+- Investigación en IA open source: sirve como banco de pruebas para estudiar el comportamiento de modelos MoE de 321B cuantizados a 5 bits en hardware de consumo profesional (Mac Studio / Mac Pro).
+- Procesamiento multilingüe: útil para tareas de traducción y generación en varios idiomas, aunque la lista oficial de idiomas no está publicada.
+- Prototipado de pipelines multimodales privados: al ejecutarse íntegramente en local, encaja en escenarios con requisitos de confidencialidad donde no se permite enviar datos a APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo indica que se probaron la carga en frío y la generación de texto en un Mac Apple Silicon de 256 GB con oMLX `0.7.4.dev1` y decodificación MTP activa, y que las pruebas más amplias de calidad, visión y contexto largo están en curso.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: los pesos ocupan 225.36 GB (209.88 GiB) en 38 shards; el runtime y el estado de contexto requieren memoria adicional.
-- Hardware mínimo declarado: Apple Silicon con al menos 256 GB de memoria unificada (Mac Studio o Mac Pro de gama alta).
-- GPU dedicadas: no se documenta soporte para CUDA en esta conversión, que es específica de MLX.
-- Consumer GPU: no cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, etc.) por el tamaño de los pesos.
-- Despliegue: runtime que soporte la arquitectura `glm5_next` y precisión mixta oQe, con el tokenizer, processor y chat template incluidos. Probado con oMLX `0.7.4.dev1`.
-- Latencia y throughput: no disponibles; solo se confirma que la generación de texto funciona con MTP activo.
+- Memoria unificada mínima recomendada por el autor: 256 GB (los pesos ocupan 225,36 GB; el estado de runtime y la caché KV requieren memoria adicional).
+- Hardware objetivo: Apple Silicon de gama alta (Mac Studio / Mac Pro con memoria unificada de 256 GB o superior).
+- No cabe en GPUs de consumo convencionales (RTX 4090, etc.) ni en Macs con 64/128 GB.
+- Despliegue: librería MLX; el formato no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Nex-N2.6-oQ5e-mtp (esta ficha) | ~321B (MoE) | no disponible | MLX safetensors oQ5e | Apache-2.0 | Hugging Face, conversión comunitaria |
-| nex-agi/Nex-N2.6 (original) | ~321B (MoE) | no disponible | FP8 | no disponible en la informacion | Hugging Face, checkpoint del creador |
-| GLM-5.3-Flash (base) | no disponible | no disponible | no disponible | MIT (según aviso retenido) | Referenciado como base por Z.ai |
+| Modelo | Parametros | Contexto | Formato / hardware | Licencia |
+|---|---|---|---|---|
+| Nex-N2.6-oQ5e-mtp (esta ficha) | 321,3 B | no disponible | MLX oQ5e, Apple Silicon 256 GB | Apache 2.0 |
+| nex-agi/Nex-N2.6 (original) | 321,3 B | no disponible | FP8, GPUs de datacenter | Apache 2.0 |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Requiere hardware muy específico: Apple Silicon con 256 GB de memoria unificada; no es desplegable en GPUs de consumo ni en la mayoría de servidores convencionales sin adaptación.
-- Solo se han probado la carga en frío y la generación de texto; la calidad en visión, contexto largo y tareas agénticas está pendiente de validación según el propio autor.
-- Al ser una cuantización oQ5e, existe degradación potencial respecto al checkpoint FP8 original; no se han publicado métricas de esa pérdida.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado; aplicable el riesgo habitual de los modelos generativos de gran tamaño.
-- Idiomas soportados: no especificados, aunque el corpus de calibración es multilingüe.
-- Longitud de contexto: no documentada, lo que dificulta planificar despliegues con ventanas largas.
-- Licencia Apache-2.0 para la conversión, con la nota MIT de GLM-5.3-Flash retenida; conviene revisar `NOTICE` y `LICENSE` para atribución y obligaciones en uso comercial.
-- Conversión comunitaria con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso en producción ni validación independiente.
+- Requiere hardware muy específico (Apple Silicon con ≥256 GB de memoria unificada); no es desplegable en GPUs convencionales.
+- La cuantización a 5 bits en los expertos puede introducir degradación frente al checkpoint FP8 original; no se han publicado evaluaciones que la cuantifiquen.
+- Riesgo de alucinación inherente a modelos de gran escala; no se documentan mitigaciones específicas.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles; el rendimiento fuera de los idiomas del corpus de calibración es incierto.
+- Longitud de contexto: no disponible, lo que dificulta planificar cargas de trabajo de contexto largo.
+- Soporte de tool calling no confirmado explícitamente.
+- Es una conversión comunitaria, no oficial de Nex-AGI; la responsabilidad de validación recae en el usuario.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp
+- Hugging Face: https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.6
-- Registro de conversión: https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp/blob/main/CONVERSION.json
-- Licencia: https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp/blob/main/LICENSE
-- Aviso de atribución: https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp/blob/main/NOTICE
-- Licencia GLM-5.3-Flash: https://huggingface.co/Hygaard/Nex-N2.6-oQ5e-mtp/blob/main/licenses/GLM-5.3-Flash-LICENSE
+- Registro de conversión: `CONVERSION.json` (en el repositorio)
+- Datos de precisión por tensor: `WEIGHT_PRECISION.csv` y `WEIGHT_PRECISION.json` (en el repositorio)

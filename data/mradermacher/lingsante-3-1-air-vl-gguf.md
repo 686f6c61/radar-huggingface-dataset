@@ -2,50 +2,50 @@
 
 ## Resumen
 
-LingSante-3.1-air-VL-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo multimodal LingSante-3.1-air-VL, desarrollado originalmente por inclusionAI (equipo vinculado a Ant Group). El repositorio esta publicado por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face, y su funcion es facilitar la ejecucion local del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles con GGUF.
+LingSante-3.1-air-VL es un modelo multimodal (vision-lenguaje) desarrollado por inclusionAI, distribuido originalmente en formato Transformers y aqui presentado como cuantizaciones GGUF estaticas por mradermacher. El modelo cuenta con aproximadamente 124.400 millones de parametros totales (124.414.211.552 segun los safetensors del repositorio base), lo que lo situa en la categoria de modelos de gran escala orientados a tareas de vision y lenguaje.
 
-El modelo base es un sistema vision-lenguaje (VL) con aproximadamente 124.400 millones de parametros totales, segun los datos de safetensors asociados al repositorio. La nomenclatura "air" sugiere una variante orientada a eficiencia dentro de la familia LingSante, aunque la model card del repositorio no detalla la arquitectura interna ni si se trata de un modelo denso o de mezcla de expertos (MoE).
+Esta ficha cubre especificamente la version GGUF publicada por mradermacher, que facilita la ejecucion del modelo en entornos con llama.cpp y herramientas compatibles, sin necesidad de infraestructura GPU de gran escala para las cuantizaciones mas agresivas. El repositorio incluye un conjunto amplio de cuantizaciones (desde Q2_K hasta Q8_0) junto con los ficheros mmproj necesarios para el procesamiento multimodal.
 
-La relevancia de este repositorio es practica: ofrece 11 variantes de cuantizacion (desde Q2_K hasta F16, incluyendo IQ4_XS y Q8_0) que permiten desplegar un modelo de gran tamano en entornos con recursos limitados, manteniendo las capacidades conversacionales y multimodales del modelo original. El repo ocupa 117,6 GB en total y fue creado el 23 de noviembre de 2026.
+La relevancia de esta publicacion radica en que pone a disposicion de la comunidad una via practica para desplegar un modelo multimodal de gran tamano en hardware mas modesto, manteniendo la licencia MIT del modelo original, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo vision-lenguaje; detalles internos no publicados en la model card) |
+| Arquitectura | no disponible (modelo multimodal vision-lenguaje; arquitectura interna no detallada en la informacion proporcionada) |
 | Parametros totales | 124.414.211.552 (~124,4 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas desde safetensors del modelo original) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (con ficheros mmproj separados para el componente multimodal) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite confirmar la arquitectura interna del modelo base. Los metadatos de la model card indican que las cuantizaciones se generaron con `convert_type: hf` y `quantize_version: 2`, lo que implica una conversion directa desde pesos Hugging Face a GGUF. El campo `output_tensor_quantised: 1` sugiere que la cuantizacion afecta a los tensores de salida, y la ausencia de `skip_mmproj` en los metadatos indica que el proyector multimodal se incluye en las cuantizaciones.
+No se dispone en la informacion proporcionada de detalles sobre la arquitectura interna del modelo base (tipo de transformer, uso de MoE, mecanismos de atencion, etc.), ni sobre el volumen o composicion de los datos de entrenamiento, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion. La model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estaticas del modelo inclusionAI/LingSante-3.1-air-VL y no incluye informacion tecnica del entrenamiento.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El tag `conversational` confirma que el modelo esta afinado para dialogos multi-turno, y el sufijo "VL" confirma capacidades de vision-lenguaje, pero los detalles de entrenamiento no estan publicados en la informacion proporcionada.
+Lo que si se puede afirmar es que el modelo es multimodal: el repositorio incluye ficheros mmproj (multi-modal projection) en precision Q8_0 y f16, que son el componente que proyecta las representaciones visuales al espacio del modelo de lenguaje. Esto confirma soporte de entrada de imagenes junto con texto. El proceso de cuantizacion fue realizado con la herramienta de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf), generando cuantizaciones estaticas; el autor indica ademas que existen cuantizaciones con imatrix en un repositorio separado (LingSante-3.1-air-VL-i1-GGUF).
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun el tag `conversational` del repositorio.
-- Procesamiento de imagenes y texto (modelo vision-lenguaje), dado el sufijo "VL" y la inclusion del proyector multimodal en las cuantizaciones.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite su despliegue como servicio HTTP mediante herramientas compatibles con GGUF.
-- Ejecucion local mediante llama.cpp y derivados (Ollama, LM Studio, etc.).
-- Capacidades de razonamiento, codigo, matematicas y tool calling: no disponibles en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Idiomas soportados: no disponible.
+- Procesamiento multimodal: acepta imagenes junto con texto gracias a los ficheros mmproj incluidos (Q8_0 y f16).
+- Generacion de texto conversacional: la model card etiqueta el repositorio como "conversational".
+- Comprension de imagenes: al ser un modelo VL (vision-lenguaje), se orienta a tareas de descripcion, analisis y respuesta sobre contenido visual.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la model card solo declara ingles ("en"); no se confirman otros idiomas.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un asistente multimodal: gracias a las cuantizaciones GGUF, se puede ejecutar un modelo de ~124 mil millones de parametros en estaciones de trabajo con suficiente VRAM o RAM, procesando tanto texto como imagenes en conversaciones multi-turno.
-- Analisis de documentos con imagenes: el modelo puede recibir capturas, diagramas o fotografias junto con instrucciones textuales para extraer informacion o resumir contenido visual.
-- Prototipado de aplicaciones de vision-lenguaje sin dependencia de la nube: al estar disponible en GGUF, permite iterar en local sin costes de API ni envio de datos a terceros.
-- Servicio conversacional autoalojado: el tag `endpoints_compatible` permite exponer el modelo mediante un endpoint HTTP compatible con la API de OpenAI, integrandolo en aplicaciones existentes.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes, lo que permite medir el impacto de la cuantizacion (de Q2_K a F16) en calidad y velocidad sobre el mismo modelo base.
-- Investigacion en eficiencia de inferencia: util para estudiar el equilibrio entre precision (IQ4_XS, Q4_K_M) y requisitos de memoria en modelos multimodales de gran escala.
-- Educacion y experimentacion: permite a desarrolladores con hardware consumer explorar las capacidades de un modelo VL de gran tamano sin infraestructura dedicada.
+- Analisis de documentos escaneados: el modelo puede recibir imagenes de facturas, formularios o tickets y extraer informacion textual estructurada, aprovechando su naturaleza vision-lenguaje y su capacidad conversacional para refinar la respuesta en turnos sucesivos.
+- Descripcion automatica de imagenes para accesibilidad: generacion de texto alternativo y descripciones detalladas de contenido visual en plataformas web, con la ventaja de que las cuantizaciones Q4 permiten desplegarlo en servidores con GPU de gama media.
+- Moderacion de contenido visual: clasificacion y descripcion de imagenes subidas por usuarios en comunidades o marketplaces, usando el modelo para generar informes textuales que luego se filtran con reglas.
+- Asistencia en soporte tecnico con capturas de pantalla: el usuario envia una captura de un error o interfaz y el modelo responde con explicaciones o pasos de resolucion, manteniendo contexto multi-turno.
+- Prototipado de asistentes multimodales en local: desarrolladores que quieran experimentar con un modelo VL de gran escala sin depender de APIs en la nube pueden usar las cuantizaciones Q2_K o Q3_K_S en hardware con suficiente RAM/VRAM unificada.
+- Investigacion en evaluacion de modelos VL cuantizados: el conjunto de cuantizaciones disponible (desde 45,5 GB hasta 132,5 GB) permite estudiar la degradacion de calidad segun el nivel de cuantizacion en tareas de vision-lenguaje.
+- Generacion de metadatos para catalogos de imagenes: etiquetado y descripcion de grandes volumenes de imagenes en pipelines por lotes, usando llama.cpp con la cuantizacion Q4_K_M como compromiso entre velocidad y calidad.
 
 ## Benchmarks y rendimiento
 
@@ -53,33 +53,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para F16 se necesitan aproximadamente 250 GB (124,4 mil millones de parametros x 2 bytes); para Q8_0, unos 125 GB; para Q4_K_M, unos 70-75 GB; para Q2_K, unos 40-45 GB. Estas cifras son estimaciones basadas en el numero de parametros y no incluyen el overhead del contexto ni del proyector multimodal.
-- GPU recomendadas: para F16, multiples A100/H100 de 80 GB o configuraciones multi-GPU; para Q8_0, 2x A100/H100 80 GB o 2x RTX 4090 24 GB (con offload parcial); para Q4_K_M, 4x RTX 4090 24 GB o 2x A6000 48 GB; para Q2_K, potencialmente 2x RTX 4090 24 GB con offload a RAM.
-- Cabe en consumer GPU: solo las cuantizaciones mas agresivas (Q2_K, Q3_K_S) con offload parcial a RAM del sistema; en una unica RTX 4090 de 24 GB no cabe ninguna variante completa.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI que acepten GGUF (por ejemplo, llama.cpp server con `--host`), y cualquier runtime que soporte el formato GGUF con proyector multimodal.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM estimada segun cuantizacion (tamano de fichero, mas overhead de contexto y del mmproj):
+  - Q2_K: ~45,5 GB + mmproj (~0,7-1,0 GB).
+  - Q3_K_S: ~53,9 GB; Q3_K_M: ~59,4 GB; Q3_K_L: ~64,5 GB.
+  - IQ4_XS: ~67,0 GB; Q4_K_S: ~70,8 GB; Q4_K_M: ~75,4 GB.
+  - Q5_K_S: ~85,9 GB; Q5_K_M: ~88,4 GB.
+  - Q6_K: ~102,3 GB (dividido en 3 partes).
+  - Q8_0: ~132,5 GB (dividido en 3 partes).
+- GPU recomendadas: para las cuantizaciones bajas (Q2_K, Q3_K_S) se requiere al menos una GPU con 48 GB o combinacion de varias; para Q4_K_M en adelante se recomienda multiples A100/H100 (80 GB) o configuraciones multi-GPU. No cabe en GPU de consumo individual (RTX 4090 con 24 GB) en ninguna cuantizacion.
+- Cabe en consumer GPU: no, en ninguna de las cuantizaciones publicadas; el minimo (Q2_K) supera ampliamente los 24 GB de una RTX 4090. Requiere configuraciones multi-GPU o CPU con gran cantidad de RAM.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (previa importacion del GGUF), y otros runners compatibles con GGUF. No es compatible directamente con vLLM o TGI en su formato GGUF, que requeririan los pesos originales en safetensors.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LingSante-3.1-air-VL-GGUF | ~124,4 mil millones | no disponible | GGUF (12 variantes) | no disponible | Hugging Face |
-| Modelo base LingSante-3.1-air-VL | ~124,4 mil millones | no disponible | safetensors | no disponible | Hugging Face (inclusionAI) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones comparables de otros modelos de la misma categoria (multimodales de ~124B). Se indica "no disponible" para los campos de rendimiento y contexto de las alternativas.
 
-No se dispone de informacion suficiente sobre modelos comparables de la misma categoria (vision-lenguaje de ~124 mil millones de parametros) en la informacion proporcionada para establecer una comparativa rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|
+| LingSante-3.1-air-VL (GGUF) | ~124,4 B | no disponible | MIT | GGUF | Multimodal, cuantizaciones de 45,5 a 132,5 GB |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio no incluye informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo modelo generativo, puede producir contenido incorrecto, especialmente en tareas visuales complejas.
-- Limitaciones de contexto e idioma: no disponibles; no se puede confirmar la ventana de contexto ni la cobertura linguistica.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Es imprescindible consultar la licencia del modelo base (inclusionAI/LingSante-3.1-air-VL) antes de cualquier despliegue en produccion.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad, especialmente en tareas multimodales donde el proyector de vision es sensible a la precision.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de la comunidad sobre su calidad o estabilidad.
-- El modelo base puede tener restricciones de uso adicionales no reflejadas en este repositorio de cuantizaciones.
+- Idiomas: la model card solo declara ingles; el rendimiento en castellano u otros idiomas no esta verificado y podria ser deficiente.
+- Sesgos: no se documentan en la informacion proporcionada; al ser un modelo entrenado con datos web a gran escala, es previsible que herede sesgos de esos datos, pero no hay confirmacion oficial.
+- Alucinacion: riesgo inherente a los modelos generativos; no se han publicado evaluaciones especificas de fidelidad para este modelo.
+- Licencia: MIT, lo que permite uso comercial sin restricciones adicionales, pero conviene verificar la licencia del modelo base original por si hubiera condiciones adicionales no reflejadas en el repositorio GGUF.
+- Cuantizacion: las cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad de forma notable; el autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S/Q4_K_M como opcion rapida y Q8_0 como mejor calidad. Para tareas de vision, la degradacion puede ser especialmente sensible.
+- Requisitos de hardware: incluso la cuantizacion mas pequena (45,5 GB) excede la VRAM de GPU de consumo, lo que limita su despliegue a infraestructura profesional o configuraciones con RAM del sistema muy alta.
+- Repositorio de gran tamano: 846 GB en total, con ficheros divididos en partes para Q6_K y Q8_0; la descarga y verificacion requieren planificacion.
+- Faltan datos tecnicos clave (contexto, arquitectura, benchmarks) en la informacion disponible, lo que impide una evaluacion completa de idoneidad para produccion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/LingSante-3.1-air-VL-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/LingSante-3.1-air-VL
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/LingSante-3.1-air-VL-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LingSante-3.1-air-VL-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png

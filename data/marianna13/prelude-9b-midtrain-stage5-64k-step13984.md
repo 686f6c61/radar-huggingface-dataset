@@ -2,115 +2,131 @@
 
 ## Resumen
 
-Prelude 9B mid-train, stage 5 (64K) es un checkpoint intermedio de mid-training del modelo base OpenEuroLLM Prelude 9B, publicado por el usuario marianna13 en Hugging Face. No se trata de un modelo final ni post-entrenado: es una instantánea del proceso de entrenamiento continuado que el autor denomina "stage 5", con una ventana de contexto de 64K tokens y sin ninguna fase de RL posterior. El repositorio contiene dos ramas (`d1` y `d2`) que aplican la misma receta sobre dos cooldowns de preentrenamiento distintos, diferenciados por la proporción de texto web frente a datos de razonamiento.
+Prelude 9B midtrain stage 5 es un checkpoint intermedio de la fase de mid-training del modelo base OpenEuroLLM Prelude 9B, publicado por el usuario marianna13 en Hugging Face. No se trata de un modelo final ni post-entrenado: es el resultado de la etapa 5 de un pipeline de entrenamiento por fases que extiende la longitud de contexto y refuerza capacidades de razonamiento, codigo y uso de herramientas mediante datos de tipo SFT y trayectorias de agentes. El modelo tiene 9.094.607.872 parametros y se distribuye en formato safetensors con licencia Apache-2.0.
 
-El modelo parte de `openeurollm/prelude-base` y emplea una arquitectura transformer densa con 9.094.607.872 parámetros totales (aproximadamente 9B), derivada de la familia Qwen3 según los tags del repositorio. Incorpora un tokenizer ampliado con 6 tokens ChatML adicionales y una plantilla de chat que soporta modo "thinking" (bloque `<think>...</think>`) y modo sin razonamiento explícito. La licencia es Apache-2.0, heredada del modelo base.
+El repositorio contiene cuatro ramas: dos correspondientes al final de la etapa 5 (contexto de 64K, `d1` y `d2`) y dos correspondientes al final de la etapa 4 (contexto de 128K con YaRN factor 2, `d1-s4` y `d2-s4`). Las ramas `d1` y `d2` comparten receta pero parten de dos cooldowns de preentrenamiento distintos: `d1` con mas texto web y `d2` con mas datos de razonamiento (mixture-vitae nuggets, Nemotron-Specialized, AgentTrove). Esta distincion es relevante porque produce diferencias medibles en benchmarks de matematicas, codigo y tareas agénticas.
 
-Su relevancia es fundamentalmente experimental: permite a investigadores inspeccionar el estado intermedio de un pipeline de mid-training a contexto largo (64K) con datos de conversaciones SFT, razonamiento y agentes, y comparar el efecto de dos mezclas de datos de cooldown sobre capacidades de matemáticas, código y uso de herramientas. No está pensado para despliegue en producción tal cual.
+La relevancia actual del checkpoint reside en que documenta de forma transparente el estado intermedio de un modelo de 9B orientado a contexto largo y razonamiento, con evaluaciones detalladas por etapa y por modo de decodificacion (thinking on/off). Es util para investigadores que quieran analizar la evolucion del entrenamiento, asi como para desarrolladores que necesiten un modelo base con plantilla de chat ChatML y soporte de bloques de razonamiento, aunque no debe emplearse en produccion sin un post-entrenamiento adicional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3, segun tags), con RoPE y extension de contexto mediante YaRN |
+| Arquitectura | Transformer decoder-only (familia Qwen3, segun tags) |
 | Parametros totales | 9.094.607.872 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 64K tokens (stage 5); stages previos entrenados a 16K, 32K, 64K y 128K |
-| Tipos de cuantizacion | no disponible (el repo solo publica safetensors en precision original; no se documentan GGUF ni cuantizaciones) |
-| Idiomas soportados | no disponible (los datos de entrenamiento incluyen traducciones a 12 idiomas de Dolci-Think/Instruct, pero no se declara una lista oficial) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 64K en etapa 5 (`d1`, `d2`); 128K con YaRN factor 2 en etapa 4 (`d1-s4`, `d2-s4`) |
+| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors; no se documentan GGUF ni otras) |
+| Idiomas soportados | no disponible (la model card menciona datos traducidos a 12 idiomas, pero no se lista el conjunto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repo de 36,4 GB) |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de ~9B parámetros construido sobre el base OpenEuroLLM Prelude 9B, que a su vez sigue la arquitectura de la familia Qwen3. El entrenamiento de contexto largo se organiza en cinco etapas: las etapas 1–3 escalan el contexto de 16K a 32K y 64K con RoPE theta de 9M bajo un único schedule coseno de 4.419 pasos sobre unos 3,6B tokens de documentos de mid-training, razonamiento y código; la etapa 4 extiende a 128K mediante YaRN x2 con LR 5e-6 durante 1.001 pasos (1,0B tokens); y la etapa 5, la que corresponde a este checkpoint, vuelve a 64K con un LR constante de 2e-5, batch global de 64 secuencias de 64K y 13.984 pasos, viendo 58,5B tokens (49,2B entrenados).
+El modelo es un transformer decoder-only de 9B parametros derivado de `openeurollm/prelude-base`, con tokenizer basado en el de Prelude al que se anaden 6 tokens ChatML. La plantilla de chat soporta modo thinking on (bloque ``) y thinking off. El entrenamiento se organiza en cinco etapas: las etapas 1 a 3 extienden el contexto de 16K a 32K y luego a 64K con RoPE theta de 9M bajo un unico schedule coseno de 4.419 pasos y aproximadamente 3.6B tokens de documentos de mid-training, razonamiento y codigo; la etapa 4 lleva el contexto a 128K mediante YaRN factor 2 con LR 5e-6 durante 1.001 pasos y 1.0B tokens; la etapa 5 vuelve a 64K y continua el entrenamiento con LR constante de 2e-5, GBS 64 x 64K y 13.984 pasos, con 58.5B tokens vistos y 49.2B entrenados.
 
-Los datos de la etapa 5 combinan SFT v2 (37,7B tokens: INTELLECT-3 de razonamiento/chat/herramientas, AgentTrove de agentes de terminal y varios harnesses), conversaciones nuevas (9,4B: trazas completas de OpenThoughts3 limitadas a 4 por prompt, trazas adicionales de INTELLECT-3 en matemáticas, código y ciencia, y Dolci-Think/Instruct traducidos a 12 idiomas) y documentos de mid-training no usados previamente (11,5B: documentos largos de 32K o más, replay de 4K o menos y trayectorias Nemotron-Terminal de 8K o más). El dataset pasó por escaneo de bucles y descontaminación. El entrenamiento se ejecutó en 64 nodos JUPITER con Megatron-LM (TP4) y el checkpoint se exportó a Hugging Face; cada rama incluye un `megatron_export.json` con el checkpoint origen. No hubo RL ni fase de decay en esta etapa.
+Los datos de la etapa 5 combinan SFT v2 (37.7B tokens: INTELLECT-3 de razonamiento, chat y herramientas, AgentTrove de agente de terminal y varios harnesses) con conversaciones nuevas (9.4B: trazas completas de OpenThoughts3 con maximo 4 por prompt, trazas adicionales de INTELLECT-3 en matematicas, codigo y ciencia, y Dolci-Think/Instruct traducidos a 12 idiomas) y documentos de mid-training no usados antes (11.5B: documentos largos de 32K o mas, replay a 4K o menos y trayectorias Nemotron-Terminal de 8K o mas). El dataset paso por escaneo de bucles y descontaminacion. El entrenamiento se ejecuto en 64 nodos JUPITER con Megatron-LM (TP4) y el checkpoint se exporto a Hugging Face; cada rama incluye un `megatron_export.json` con el checkpoint de origen. No se aplico RL ni decaimiento de LR en la etapa 5, y no hay post-entrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla ChatML y soporte explícito de modo thinking on/off.
-- Razonamiento matemático: resuelve problemas de competición (AIME, MATH500) con cadena de pensamiento cuando el modo thinking está activo.
-- Generación de código en múltiples lenguajes (MultiPL-E cubre 10 lenguajes) y resolución de problemas tipo HumanEval/MBPP.
-- Uso de herramientas y function calling, entrenado con datos de INTELLECT-3 tools y harnesses.
-- Comportamiento agéntico de terminal: entrenado con AgentTrove y trayectorias Nemotron-Terminal, evaluado en Terminal-Bench y TBLite.
-- Capacidades multilingües parciales: parte del SFT incluye traducciones a 12 idiomas, aunque no se declara una lista oficial de idiomas soportados.
-- Contexto largo de 64K tokens para documentos y conversaciones extensas.
-- Razonamiento multi-paso con presupuesto de hasta 32K tokens de generación en modo thinking.
+- Generacion de texto y conversacion multi-turno con plantilla ChatML y soporte de bloques de razonamiento explicitos.
+- Razonamiento matematico con modo thinking on (AIME24 52.0 en `d1`, MATH500 83.8 en `d1`) y modo thinking off mas debil (AIME24 21.7 en `d1`, MATH500 68.0).
+- Generacion de codigo en multiples lenguajes (HumanEval+ 80.5 en `d1` con thinking on; MultiPL-E 50.8 en `d2`).
+- Uso de herramientas y function calling, segun los datos de entrenamiento (INTELLECT-3 tools) y la plantilla de chat.
+- Comportamiento agéntico y razonamiento multi-paso, con resultados en SWE-bench Verified (18.7 en `d1`, 22.7 en `d2`) y Terminal-Bench 2.1 (1.5 en `d1`, 3.0 en `d2`).
+- Capacidades multilingues parciales: se entrenaron datos Dolci-Think/Instruct traducidos a 12 idiomas, aunque no se especifica la lista ni se evalua por idioma.
+- Contexto largo: 64K en etapa 5 y 128K con YaRN en las ramas de etapa 4, con resultados RULER 128K en estas ultimas (52.9 / 36.7 en `d1-s4`, 50.4 / 45.0 en `d2-s4`).
+- No se documentan capacidades de vision ni audio.
 
 ## Casos de uso
 
-- Investigación sobre mid-training: el checkpoint permite estudiar cómo evoluciona el rendimiento en matemáticas y código a lo largo de las etapas de entrenamiento y comparar las mezclas de datos `d1` (más texto web) frente a `d2` (más razonamiento), midiendo el impacto en AIME, GPQA y SWE-bench.
-- Análisis de datos de razonamiento: al estar entrenado con trazas de OpenThoughts3 e INTELLECT-3, sirve para estudiar estilos de cadena de pensamiento y detectar patrones de bucle ("Wait, ..."), un fenómeno documentado por el autor.
-- Prototipado de agentes de terminal en laboratorio: con contexto de 64K y datos de AgentTrove/Nemotron-Terminal, se puede experimentar con flujos de ejecución de comandos y edición de ficheros, aunque los resultados en Terminal-Bench (1,5–3,0) limitan su uso real.
-- Evaluación de recetas de contexto largo: útil para reproducir la progresión 16K→32K→64K→128K y validar estrategias de RoPE/YaRN antes de aplicar la receta a un modelo final.
-- Generación de código asistida en entornos de investigación: con HumanEval+ de 78,7–80,5 en modo thinking, puede emplearse para generar parches y funciones en pipelines internos no críticos, siempre con revisión humana.
-- Estudio de calibración y alucinación en modelos no post-entrenados: al carecer de RLHF/DPO, es un caso de referencia para medir cómo se comporta un modelo base mid-train en instrucciones y seguridad antes de aplicar alineamiento.
-- Comparación de tokenizers y plantillas de chat: la adición de 6 tokens ChatML sobre el tokenizer de Prelude permite evaluar el efecto del formato de conversación en el rendimiento.
+- Investigacion sobre mid-training y contexto largo: el checkpoint permite analizar el efecto de la etapa 5 frente a la etapa 4 (64K vs 128K, LR constante vs decaido) comparando las ramas `d1`, `d2`, `d1-s4` y `d2-s4` con la misma receta.
+- Generacion de codigo asistida en entornos de investigacion: con HumanEval+ de 80.5 en `d1` con thinking on y soporte de tool calling, puede integrarse en prototipos de asistentes de programacion que requieran razonamiento explicito antes de emitir codigo.
+- Analisis de documentos largos: con 64K de contexto en etapa 5 y 128K en etapa 4, es adecuado para tareas de resumen, extraccion y QA sobre documentos extensos, aunque la calidad en RULER 128K es moderada (52.9 en `d1-s4`).
+- Evaluacion de agentes de terminal y reparacion de software: los datos de AgentTrove y Nemotron-Terminal y los resultados en SWE-bench Verified y Terminal-Bench permiten usarlo como base para experimentos de agentes, aunque sus tasas actuales son bajas para produccion.
+- Generacion de trazas de razonamiento para destilacion o anotacion: el modo thinking on produce cadenas largas (hasta 32K tokens) utiles como datos sinteticos, con la advertencia de bucles de repeticion en matematicas.
+- Experimentos multilingues: al haberse entrenado con datos traducidos a 12 idiomas, sirve para explorar transferencia entre idiomas en tareas de chat y razonamiento, siempre con evaluacion propia por idioma.
+- Base para post-entrenamiento: al ser un checkpoint intermedio con licencia Apache-2.0, puede servir como punto de partida para SFT, DPO o RL posteriores en proyectos que necesiten un modelo de 9B con contexto de 64K.
 
 ## Benchmarks y rendimiento
 
+Resultados publicados en la model card. Decodificacion: thinking on con T=0.6, top-p 0.95 y 32K tokens; thinking off con greedy.
+
 | Benchmark | d1 | d2 |
 |---|---:|---:|
-| **Base few-shot (4K)** | | |
-| MATH (4-shot) | 49,0 | 50,7 |
-| GSM8K (8-shot) | 79,7 | 81,0 |
-| MMLU-Pro (5-shot) | 41,1 | 42,3 |
-| HumanEval+ | 47,0 | 47,6 |
-| MBPP+ (corte en `\nFile:`) | 56,6 | 56,1 |
-| MultiPL-E | 30,2 | 31,4 |
-| **Chat, thinking on** | | |
-| AIME24 | 52,0 | 49,7 |
-| AIME25 | 44,7 | 30,0 |
-| MATH500 | 83,8 | 84,2 |
-| GPQA-Diamond | 49,8 | 52,0 |
-| IFEval (prompt) | 78,2 | 77,6 |
-| HumanEval+ | 80,5 | 78,7 |
-| MultiPL-E (10 idiomas) | 45,7 | 50,8 |
-| **Chat, thinking off** | | |
-| AIME24 / AIME25 | 21,7 / 14,3 | 10,0 / 5,3 |
-| MATH500 | 68,0 | 65,0 |
-| GPQA-Diamond | 42,6 | 36,9 |
-| IFEval (prompt) | 76,8 | 76,2 |
-| HumanEval+ | 63,4 | 70,1 |
-| **Agéntico, thinking on (pass@1, media de 3)** | | |
-| SWE-bench Verified (100 tareas) | 18,7 | 22,7 |
-| Terminal-Bench 2.1 (89 tareas) | 1,5 | 3,0 |
-| TBLite (100 tareas) | 5,3 | 7,7 |
+| Base few-shot (4K) | | |
+| MATH (4-shot) | 49.0 | 50.7 |
+| GSM8K (8-shot) | 79.7 | 81.0 |
+| MMLU-Pro (5-shot) | 41.1 | 42.3 |
+| HumanEval+ | 47.0 | 47.6 |
+| MBPP+ (corte en `\nFile:`) | 56.6 | 56.1 |
+| MultiPL-E | 30.2 | 31.4 |
+| Chat, thinking on | | |
+| AIME24 | 52.0 | 49.7 |
+| AIME25 | 44.7 | 30.0 |
+| MATH500 | 83.8 | 84.2 |
+| GPQA-Diamond | 49.8 | 52.0 |
+| IFEval (prompt) | 78.2 | 77.6 |
+| HumanEval+ | 80.5 | 78.7 |
+| MultiPL-E (10 idiomas) | 45.7 | 50.8 |
+| Chat, thinking off | | |
+| AIME24 / AIME25 | 21.7 / 14.3 | 10.0 / 5.3 |
+| MATH500 | 68.0 | 65.0 |
+| GPQA-Diamond | 42.6 | 36.9 |
+| IFEval (prompt) | 76.8 | 76.2 |
+| HumanEval+ | 63.4 | 70.1 |
+| Agéntico, thinking on (pass@1, media de 3) | | |
+| SWE-bench Verified (100 tareas) | 18.7 | 22.7 |
+| Terminal-Bench 2.1 (89 tareas) | 1.5 | 3.0 |
+| TBLite (100 tareas) | 5.3 | 7.7 |
 
-Decodificación empleada: thinking on con T=0,6, top-p 0,95 y 32K tokens; thinking off con greedy.
+Ramas de etapa 4 (`d1-s4`, `d2-s4`), misma decodificacion:
+
+| Benchmark | d1 s4 | d2 s4 |
+|---|---:|---:|
+| MATH (4-shot) | 45.6 | 48.0 |
+| GSM8K (8-shot) | 77.9 | 79.5 |
+| MMLU-Pro (5-shot) | 40.6 | 43.3 |
+| AIME24 / AIME25, thinking on | 15.7 / 12.7 | 31.0 / 24.0 |
+| MATH500, thinking on | 68.4 | 77.2 |
+| GPQA-Diamond, thinking on | 32.8 | 34.8 |
+| IFEval (prompt), thinking on | 71.6 | 64.6 |
+| RULER 128K medio, plain / ChatML | 52.9 / 36.7 | 50.4 / 45.0 |
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en BF16/FP16: aproximadamente 18,2 GB solo para pesos (9,09B parámetros × 2 bytes), más overhead de activaciones y KV cache; con contexto de 64K el KV cache puede añadir varios GB según configuración.
-- En FP8 la huella de pesos baja a ~9,1 GB; en cuantizaciones de 4 bits (no publicadas oficialmente) rondaría los 4,5–5 GB, pero el repo no distribuye GGUF.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S 48 GB para BF16 con contexto completo. En consumer, una RTX 4090 (24 GB) puede alojar los pesos en BF16 pero el contexto de 64K exige cuantización o gestión cuidadosa del KV cache.
-- Opciones de despliegue: transformers (soporte nativo, según la model card), text-generation-inference (tag `text-generation-inference`), vLLM y Megatron-LM para entrenamiento. No se documentan integraciones con llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia de orden de magnitud para un modelo denso de 9B, en bf16 serian necesarios aproximadamente 18 GB de pesos mas overhead de activaciones y KV cache; con cuantizacion de 8 bits rondaria 9-10 GB y con 4 bits unos 5-6 GB, aunque el autor no publica cifras oficiales ni pesos cuantizados.
+- GPU recomendadas: no disponible. El entrenamiento se realizo en 64 nodos JUPITER con Megatron-LM, pero no se documentan recomendaciones de inferencia.
+- Cabe en GPU de consumo: previsiblemente si en tarjetas con 16-24 GB en bf16 o cuantizado, pero no hay confirmacion oficial en la informacion disponible.
+- Opciones de despliegue: la model card solo muestra carga con `transformers` (`AutoModelForCausalLM`, `AutoTokenizer`). No se documentan vLLM, llama.cpp, Ollama ni TGI, aunque el tag `text-generation-inference` aparece en los metadatos de Hugging Face.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Prelude 9B mid-train stage 5 (este) | 9,09B | 64K | Apache-2.0 | Checkpoint intermedio, sin RL; benchmarks propios en la model card |
-| OpenEuroLLM Prelude 9B base | no disponible | no disponible | Apache-2.0 | Modelo base del que deriva; sin datos de benchmarks en la información disponible |
-| Qwen3 (familia, referencia arquitectónica) | no disponible | no disponible | no disponible | El repo etiqueta el modelo como `qwen3`; no se dispone de cifras comparables en la información proporcionada |
+No se han publicado comparaciones directas con otros modelos en la informacion disponible. Como referencia interna, el propio repositorio permite comparar sus cuatro ramas:
 
-No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que no es posible una comparación cuantitativa rigurosa.
+| Modelo | Parametros | Contexto | MATH500 (thinking on) | AIME24 (thinking on) | Licencia |
+|---|---:|---:|---:|---:|---|
+| prelude-9b-midtrain d1 (etapa 5) | 9.09B | 64K | 83.8 | 52.0 | Apache-2.0 |
+| prelude-9b-midtrain d2 (etapa 5) | 9.09B | 64K | 84.2 | 49.7 | Apache-2.0 |
+| prelude-9b-midtrain d1-s4 (etapa 4) | 9.09B | 128K (YaRN x2) | 68.4 | 15.7 | Apache-2.0 |
+| prelude-9b-midtrain d2-s4 (etapa 4) | 9.09B | 128K (YaRN x2) | 77.2 | 31.0 | Apache-2.0 |
 
 ## Limitaciones y advertencias
 
-- No es un modelo final ni post-entrenado: no ha pasado por RLHF ni DPO, por lo que su comportamiento en instrucciones y seguridad no está alineado.
-- Bucles matemáticos con thinking on: en AIME el modelo entra en repetición exacta en un 2,7 % (AIME24) y un 5,3 % (AIME25) de las muestras en la rama d2, consumiendo los 32K tokens de presupuesto. Proviene del estilo de razonamiento de OpenThoughts3.
-- Run-on en code few-shot base: las completaciones continúan en documentos tipo repositorio (`File: ...`); hay que cortar en `\nFile:` antes de evaluar.
-- Razonamiento matemático débil con thinking off (AIME24 10,0–21,7; AIME25 5,3–14,3), muy inferior al modo thinking on.
-- LR constante sin decay en la etapa 5: el autor espera que un decay corto (etapa 6, hasta 1e-6) mejore las puntuaciones, por lo que los números actuales son pesimistas respecto al modelo final.
-- Riesgo de alucinación inherente a un modelo base sin alineamiento; no apto para producción sin post-entrenamiento y evaluación adicional.
-- Idiomas soportados no declarados oficialmente, aunque parte del SFT incluye 12 idiomas.
-- Licencia Apache-2.0 permite uso comercial, pero al ser un checkpoint intermedio sin garantías, el autor no lo recomienda como modelo final.
-- Solo 18 descargas y 0 likes en el momento de la ficha: ecosistema mínimo, sin validación comunitaria independiente.
+- No es un modelo final ni post-entrenado: la etapa 5 usa LR constante sin decaimiento y no se aplico RL. El autor indica que un decaimiento corto (previsto en la etapa 6, hasta 1e-6) deberia elevar las puntuaciones.
+- Bucles de repeticion en matematicas con thinking on: en AIME la etapa 5 entra en repeticion exacta en un pequeno porcentaje de muestras (d2: 2.7% en AIME24 y 5.3% en AIME25), consumiendo todo el presupuesto de 32K tokens. Se atribuye al estilo de razonamiento de OpenThoughts3.
+- Run-on en few-shot de codigo base: las completaciones se extienden hacia documentos estilo repositorio (`File: ...`); es necesario cortar en `\nFile:` antes de evaluar.
+- Razonamiento matematico debil con thinking off: mucho peor que con thinking on (AIME24 21.7 frente a 52.0 en d1).
+- Rendimiento agéntico bajo: SWE-bench Verified 18.7-22.7 y Terminal-Bench 2.1 1.5-3.0, insuficiente para uso autonomo en produccion.
+- Calidad de contexto largo moderada: RULER 128K medio de 36.7-52.9 en las ramas de etapa 4, con caida notable al usar plantilla ChatML en d1-s4.
+- Idiomas no documentados oficialmente: aunque se entrenaron datos en 12 idiomas, no se especifica la lista ni se evalua el rendimiento por idioma, por lo que el soporte multilingue real es incierto.
+- Riesgo de alucinacion y sesgos: no se documentan evaluaciones de sesgo ni de toxicidad en la informacion disponible.
+- Licencia Apache-2.0: permite uso comercial, pero al ser un checkpoint intermedio el autor no garantiza calidad para produccion; se recomienda validacion propia antes de desplegarlo.
+- No se distribuyen pesos cuantizados (GGUF, AWQ, GPTQ) en el repositorio, lo que limita el despliegue en hardware modesto sin conversion manual.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/marianna13/prelude-9b-midtrain-stage5-64k-step13984
+- Modelo en Hugging Face: https://huggingface.co/marianna13/prelude-9b-midtrain-stage5-64k-step13984
 - Modelo base: https://huggingface.co/openeurollm/prelude-base
+- No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

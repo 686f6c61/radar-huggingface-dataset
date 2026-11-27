@@ -2,106 +2,102 @@
 
 ## Resumen
 
-Kuroko es un sistema de *turn-taking* (gestión de turnos de palabra) para conversación en inglés con dos canales de audio, desarrollado por PatientDesk AI como participación en TurnBench, el benchmark de Sesame AI Labs. El modelo resuelve dos problemas concretos en sistemas de voz conversacionales: decidir cuándo ha terminado el turno de un hablante y clasificar si un sonido del interlocutor es una interrupción real o un simple *backchannel* (un "mhm", un asentimiento).
+Kuroko es un sistema de *turn-taking* (gestión de turnos de palabra) para conversación en inglés con dos canales de audio, desarrollado por PatientDesk AI para el benchmark [TurnBench](https://turnbench.sesame.com). Su función es decidir cuándo ha terminado el turno de un hablante y si un sonido del interlocutor constituye una interrupción real o una simple señal de escucha activa ("mhm"). Según la model card, el 17 de noviembre de 2026 ocupaba la primera posición por *recall* entre las 27 entradas del leaderboard de test en ambas tareas de TurnBench.
 
-El sistema no es un modelo único, sino una combinación de un detector de actividad de voz (Silero VAD 6.2.3), un conjunto de reglas temporales derivadas del trabajo de p99lab para turn-1-mini y un transformer causal de 14,9 millones de parámetros que procesa ambos canales como tramas log-mel de 80 bandas y emite una decisión 25 veces por segundo sobre si el sonido actual reclama el turno. El modelo pequeño se entrenó con 1.025 horas de conversación a dos voces (786 horas del corpus Open Yap 1K y unas 240 horas de grabaciones propias de PatientDesk).
+El modelo es un transformer causal de 14,9 millones de parámetros que procesa ambos canales de audio de forma conjunta y emite 25 respuestas por segundo y por hablante, usando únicamente el pasado (streaming estricto). No es un modelo de reconocimiento de voz ni de diálogo: es un componente especializado que se integra en un pipeline junto a un detector de actividad de voz (Silero VAD 6.2.3) y un conjunto de reglas temporales derivadas de turn-1-mini.
 
-La relevancia del proyecto es doble: por un lado, ataca un problema clásico y mal resuelto en agentes de voz (la latencia y los falsos positivos al detectar el fin de turno); por otro, es un caso poco habitual de publicación que incluye predicciones verificables y un registro de entrenamiento, pero no los pesos ni el código. El repositorio de Hugging Face solo contiene artefactos de evaluación, no el modelo en sí.
+Su relevancia actual reside en que aborda un problema clásico de los asistentes de voz: la latencia artificial que introducen los sistemas que esperan silencios largos para ceder el turno, y la incapacidad de distinguir una interrupción genuina de un *backchannel*. Kuroko publica pesos, código de inferencia, configuración y predicciones sobre el split de desarrollo, con licencia Apache 2.0, aunque el código y los datos de entrenamiento no son públicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal de 14,9 M de parametros sobre tramas log-mel de 80 bandas; sistema hibrido con Silero VAD 6.2.3 y reglas temporales |
-| Parametros totales | 14,9 M (solo el componente neuronal; el sistema completo incluye VAD y reglas) |
+| Arquitectura | Transformer causal con atención por capas (8 capas, 6 cabezas, dimensión 64), entrada mel y memoria KV |
+| Parametros totales | 14.945.451 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa audio en flujo continuo, sin ventana declarada) |
-| Tipos de cuantizacion | no disponible (los pesos no son publicos) |
-| Idiomas soportados | Ingles |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (el repositorio solo contiene JSON: predicciones, politica y registro de entrenamiento) |
+| Longitud de contexto | 500 respuestas recordadas en el ejemplo de streaming (20 s); ventana de audio procesada en bloques de 40 s en modo offline |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; exportación ONNX en FP32) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, ONNX (ONNX Runtime para streaming), PyTorch |
 
 ## Arquitectura y entrenamiento
 
-El sistema se organiza en tres etapas encadenadas. Primero, Silero VAD 6.2.3 analiza cada canal en pasos de 32 ms y marca tramos de sonido; un tramo se considera cerrado con certeza 0,26 s después de su último sonido. Después, un conjunto de reglas temporales (las publicadas por p99lab para turn-1-mini, sin sus componentes aprendidos y con los umbrales reajustados sobre el split de desarrollo) abre un candidato de fin de turno con cada parada, que se confirma cuando el interlocutor toma la palabra o cuando transcurren 2,45 s, salvo que el hablante vuelva. Finalmente, el transformer causal de 14,9 M de parámetros escucha ambos hablantes como tramas log-mel de 80 bandas y responde 25 veces por segundo si el sonido actual reclama el turno; esa respuesta permite confirmar una interrupción antes de que el sonido alcance los 1,3 s que exige la regla de duración, y avisa a las reglas de fin de turno de que el interlocutor ha tomado el relevo.
+Kuroko es un transformer causal de 14,9 M de parámetros que recibe audio de dos canales a 16 kHz (procedente de grabaciones originales a 48 kHz y 16 bits, una persona por canal) y produce 11 salidas probabilísticas por hablante a 25 Hz. Las 11 respuestas son `voice` (el hablante emite sonido), `claim` (ese sonido reclama el turno, la señal que se usa para disparar eventos), `hold` (el hablante mantiene el turno, pausas incluidas) y ocho predicciones adicionales sobre si el hablante y su interlocutor hablarán durante al menos la mitad de las ventanas de 0–0,2 s, 0,2–0,6 s, 0,6–1,2 s y 1,2–2 s hacia delante. La inferencia es estrictamente causal: cada respuesta en el instante *k* solo ha visto el audio hasta *(k+1)/25* segundos.
 
-El entrenamiento usó 1.025 horas de conversación a dos hablantes: 786 horas del corpus con licencia Open Yap 1K y unas 240 horas de grabaciones propias de PatientDesk realizadas por contribuyentes que aceptaron ese uso. Las etiquetas provienen de una regla temporal aplicada a posteriori (en *hindsight*), verificada contra los anotadores humanos según el write-up del autor. Los objetivos de actividad futura del modelo siguen el trabajo de *voice activity projection* de Ekstedt y Skantze (2022). No se entrenó con audio ni etiquetas de los splits de desarrollo o test de TurnBench, y no se usó el conjunto otoSpeech.
+El modelo se entrena con audio de 16 bits a 48 kHz convertido a 16 kHz mediante `kuroko.features`, y la model card indica que el código y los datos de entrenamiento no son públicos, por lo que no se detalla el volumen de tokens, la composición del dataset ni si hubo RLHF o DPO. La innovación destacable es la exportación a un único paso de streaming en ONNX (`onnx/kuroko-stream.onnx`) que consume 40 ms de ambos canales y devuelve las 11 respuestas del primer canal, manteniendo externamente la memoria de frames y las claves/valores por capa; esto permite ejecución en navegador con ONNX Runtime y sin dependencias adicionales, ya que las tramas mel se generan dentro del propio grafo.
 
 ## Capacidades
 
-- Detección de fin de turno (*end-of-turn*) en conversación a dos canales, con una latencia mediana de 630 ms en el split de desarrollo.
-- Clasificación de interrupciones frente a *backchannels*: distingue una toma de palabra real de un "mhm" o asentimiento.
-- Detección de actividad de voz por canal mediante Silero VAD, con marcas de inicio y fin de tramos de sonido.
-- Decisión en flujo continuo a 25 Hz sobre si el sonido actual reclama el turno.
-- Procesamiento de audio de dos hablantes en paralelo, un canal limpio por hablante.
-- No soporta *tool calling*, generación de texto, razonamiento, código, matemáticas, visión ni audio más allá de la clasificación de turnos.
-- Sin capacidades multilingües: solo inglés.
+- Predicción de fin de turno (*end-of-turn*) a 25 Hz por hablante, con resolución temporal de 40 ms.
+- Detección de interrupciones: la señal `claim` supera 0,9 desde 0,32 s después de iniciarse un sonido, antes de que se cumpla la regla de longitud de 1,3 s.
+- Distinción entre interrupción y *backchannel* ("mhm"), usando la señal `claim` frente al umbral 0,5 para el sonido del interlocutor.
+- Predicción anticipada de actividad de habla en cuatro horizontes temporales (hasta 2 s hacia delante).
+- Procesamiento conjunto de dos canales (un hablante por canal) con atención causal sobre ambos.
+- Modo streaming real mediante el grafo ONNX de un solo paso, con memoria KV gestionada por el llamante.
+- Modo offline sobre conversaciones grabadas (12,6 minutos procesados en 11 s con cuatro hilos de CPU en tramos de 40 s).
+- No soporta *tool calling*, agentes, visión, audio generation ni capacidades multilingües más allá del inglés.
 
 ## Casos de uso
 
-- **Agentes de voz en atención al cliente**: el sistema puede integrarse en la lógica de *barge-in* de un agente telefónico para decidir cuándo el usuario ha terminado de hablar y cuándo lo está interrumpiendo, reduciendo la latencia percibida frente a un temporizador fijo.
-- **Análisis de conversaciones grabadas**: procesar entrevistas o llamadas con dos canales para segmentar turnos, medir solapamientos y cuantificar interrupciones en estudios de interacción.
-- **Evaluación de sistemas de diálogo**: usar las predicciones como referencia o componente de comparación en pruebas de *turn-taking* con audio de dos hablantes.
-- **Investigación en interacción conversacional**: estudiar la distribución de *backchannels* e interrupciones en corpus anotados, aprovechando la salida a 25 Hz del componente neuronal.
-- **Prototipos de asistentes presenciales**: en entornos con micrófonos separados por hablante (por ejemplo, cabinas o puestos de atención), alimentar la lógica de escucha activa de un asistente.
-- **Sistemas de transcripción con diarización**: enriquecer transcripciones con marcas de fin de turno e interrupciones para mejorar la legibilidad y el análisis posterior.
+- **Asistentes de voz en tiempo real**: Kuroko permite al asistente ceder el turno en cuanto el usuario termina, sin esperar silencios artificialmente largos, y detectar cuándo el usuario le interrumpe para detener la respuesta. La señal `claim` con umbral 0,9 desde 0,32 s es la que habilita esa reacción rápida.
+- **Atención al cliente telefónica automatizada**: en conversaciones de dos canales (agente humano y cliente, o bot y cliente), el modelo distingue un "mhm" de una interrupción real, evitando que el bot se corte ante señales de escucha activa y permitiendo turnos más naturales en llamadas multi-turno.
+- **Sistemas de transcripción con diarización en directo**: integrado con Silero VAD y reglas temporales, Kuroko aporta la decisión de fin de turno que los sistemas ASR necesitan para segmentar y atribuir intervenciones en reuniones o *call centers*.
+- **Análisis de conversaciones grabadas**: el modo offline procesa una conversación de 12,6 minutos en 11 s con cuatro hilos de CPU, lo que lo hace adecuado para pipelines de análisis post-llamada (métricas de interrupciones, tiempos de habla, solapamientos).
+- **Evaluación de agentes conversacionales**: al predecir actividad de habla hasta 2 s hacia delante, sirve como señal auxiliar para medir la naturalidad de un agente de voz en pruebas automatizadas de *turn-taking*.
+- **Ejecución en el navegador o en el borde**: el grafo ONNX de un solo paso corre en navegador con ONNX Runtime, lo que permite prototipos de interfaz de voz sin backend, útil para demos y para entornos con requisitos de privacidad.
+- **Investigación en *turn-taking***: los pesos, la configuración `policy.json` y las predicciones del split de desarrollo permiten reproducir y comparar contra TurnBench sin reentrenar.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre el split de desarrollo de TurnBench: 38 conversaciones, 1.904 fines de turno y 347 interrupciones, con los umbrales elegidos dentro de un presupuesto de falsa alarma del 8 %. La columna "held-out" repite la elección sobre la mitad de las conversaciones y evalúa en la otra mitad, con 500 particiones aleatorias. No hay puntuación de test.
+La model card no publica cifras numéricas de benchmarks (MMLU, HumanEval, GSM8K u otros no aplican a esta tarea). El único dato de rendimiento declarado es cualitativo y de ranking: el 17 de noviembre de 2026, Kuroko tenía el mayor *recall* de las 27 entradas del leaderboard de test de TurnBench en ambas tareas. No se dispone de los valores concretos de *recall* ni de las métricas del split de test, ya que las predicciones de test no se publican a petición del benchmark.
 
-| Tarea | Recall | Tasa de falsa alarma | Retardo mediano | Recall held-out | Falsa alarma held-out |
-|---|---|---|---|---|---|
-| Fin de turno | 0,987 (1.879 de 1.904) | 0,079 (84 de 1.063) | 630 ms | 0,983 | 0,082 |
-| Interrupción | 1,000 (347 de 347) | 0,073 (272 de 3.733) | 545 ms | 0,988 | 0,061 |
+Datos de rendimiento de inferencia declarados:
 
-Ablación sobre el mismo split (recall / falsa alarma / retardo mediano):
-
-| Sistema | Fin de turno | Interrupción |
-|---|---|---|
-| Reglas con los ajustes publicados de turn-1-mini sobre el detector propio | 0,968 / 0,051 / 879 ms | 0,899 / 0,026 / 1.579 ms |
-| Reglas con ajustes elegidos en dev | 0,983 / 0,080 / 692 ms | 0,977 / 0,076 / 1.078 ms |
-| Kuroko (reglas y modelo) | 0,987 / 0,079 / 630 ms | 1,000 / 0,073 / 545 ms |
-
-Con los eventos separados al menos 1 s, las cifras quedan en 0,975 de recall con 0,074 de falsa alarma en fines de turno y 1,000 con 0,070 en interrupciones.
+| Escenario | Medición |
+|---|---|
+| Offline, conversación de 12,6 min | 11 s con 4 hilos de CPU, en tramos de 40 s |
+| Reproducibilidad en GPU | Las respuestas liberadas coinciden en las 38 conversaciones de dev |
+| Reproducibilidad en CPU | Diferencia < 0,001 por respuesta (puede desplazar un cruce de umbral en 40 ms) |
+| Audio de más bits leído como float | Desviación de hasta 0,02 por respuesta |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El componente neuronal tiene 14,9 M de parámetros, lo que en fp32 ocupa aproximadamente 60 MB, pero los pesos no son públicos y no se han publicado requisitos oficiales.
-- GPU recomendadas: no disponible. El autor no ha medido el sistema en CPU ni en streaming en vivo.
-- Cabe en cualquier GPU de consumo por tamaño del componente neuronal, pero esta afirmación es una estimación a partir del recuento de parámetros, no un dato publicado.
-- Opciones de despliegue: no disponible. Al no publicarse pesos ni código de entrenamiento, no hay integración conocida con vLLM, llama.cpp, Ollama o TGI; el sistema incluye Silero VAD 6.2.3, disponible por separado.
-- Latencia y throughput: no disponibles. El retardo mediano de decisión (630 ms en fin de turno, 545 ms en interrupción) es una métrica de calidad del sistema, no una medida de latencia de inferencia.
+- **VRAM estimada**: con 14,9 M de parámetros en FP32, los pesos ocupan aproximadamente 60 MB; la memoria KV y los buffers de frames son pequeños (en el ejemplo, 500 posiciones de contexto × 8 capas × 6 cabezas × 64 dimensiones). Cabe holgadamente en cualquier GPU consumer.
+- **GPU recomendadas**: no se especifican requisitos mínimos; el modelo se ejecuta en CPU con cuatro hilos para el modo offline y en GPU para generar las predicciones de referencia. Una RTX 4090, A100 o H100 están sobradamente dimensionadas; una GPU integrada o una CPU moderna son suficientes para streaming.
+- **Consumer GPU**: sí, en cualquier GPU con al menos unos cientos de MB libres; también en CPU.
+- **Opciones de despliegue**: PyTorch con `safetensors` y `soundfile` (modo offline), ONNX Runtime (modo streaming de un paso, incluido navegador). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo de audio.
+- **Latencia y throughput**: 25 respuestas por segundo por hablante; en streaming, cada paso consume 40 ms de audio de ambos canales. No se publican cifras de latencia por paso ni de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Sistema | Parametros | Enfoque | Contexto | Recall fin de turno (dev) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Kuroko | 14,9 M (componente neuronal) | VAD + reglas + transformer causal | Flujo continuo | 0,987 | no disponible | Solo predicciones y ajustes |
-| turn-1-mini (reglas publicadas, sobre el detector de Kuroko) | no disponible | Reglas temporales | Flujo continuo | 0,968 | no disponible | Reglas publicadas por p99lab |
-| Silero VAD 6.2.3 | no disponible | Detector de actividad de voz | Pasos de 32 ms | no aplica (no decide turnos) | no disponible | Pesos y código públicos |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Kuroko | 14,9 M | 500 respuestas (20 s) en streaming; 40 s por tramo offline | *Turn-taking*, fin de turno e interrupciones | Apache 2.0 | Pesos, ONNX y predicciones dev en HF |
+| turn-1-mini (P99Lab) | no disponible | no disponible | *Turn-taking* basado en reglas y partes aprendidas | no disponible en la información | Repositorio público en GitHub |
+| Silero VAD 6.2.3 | no disponible | no disponible | Detección de actividad de voz por canal | no disponible en la información | Repositorio público en GitHub |
 
-La comparación con turn-1-mini no es del todo equivalente: las cifras de la tabla corresponden a las reglas de turn-1-mini ejecutadas sobre el detector de Kuroko, según la ablación del autor, no al sistema original completo. No se dispone de datos de otros sistemas de *turn-taking* en la información proporcionada.
+La comparación con modelos de la misma categoría (gestión de turnos) es limitada porque la información proporcionada no incluye parámetros ni métricas de turn-1-mini o Silero VAD. Kuroko se distingue por publicar pesos y exportación ONNX, mientras que turn-1-mini se usa en el pipeline como fuente de las reglas temporales y Silero VAD como detector previo. No se dispone de comparativas con otros sistemas de *turn-taking* del leaderboard de TurnBench.
 
 ## Limitaciones y advertencias
 
-- Las cifras son de desarrollo sobre 38 conversaciones y con los umbrales elegidos sobre ese mismo split; el recall de 1,000 en interrupciones es una medida *in-sample* y baja a 0,988 en la evaluación held-out. No hay puntuación de test.
-- TurnBench graba a dos personas, de modo que las reglas de fin de turno pueden esperar a que la segunda empiece a hablar. En un agente de voz, el agente es el segundo hablante y esas reglas quedarían reducidas al temporizador de 2,45 s.
-- Un fin de turno puede confirmarse dos veces y se confirma una interrupción por cada sonido interpretado como reclamación del turno; el scorer solo cuenta una falsa alarma por pausa y busca interrupciones únicamente cerca de interrupciones y *backchannels* anotados.
-- Solo se ha medido con audio de estudio, un canal limpio por hablante y en inglés. No hay mediciones con audio telefónico, con eco, en streaming en vivo ni en CPU.
-- Los pesos y el código de entrenamiento no son públicos, lo que impide reproducir el sistema o desplegarlo directamente.
-- La licencia no está declarada, por lo que no puede confirmarse el uso comercial de los artefactos publicados.
-- Riesgo de sesgo: el corpus de entrenamiento combina un conjunto licenciado y grabaciones propias, sin análisis publicado de sesgos por acento, género o edad.
-- Riesgo de alucinación: no aplica en el sentido habitual, pero el modelo puede clasificar erróneamente sonidos no vocales o ruidos como reclamaciones del turno.
+- Solo soporta inglés; no hay capacidades multilingües declaradas.
+- Solo se ha medido la señal `claim` contra anotaciones; las otras 10 respuestas no tienen validación pública contra etiquetas.
+- El modelo es una pieza de un pipeline de tres partes: requiere Silero VAD 6.2.3 y las reglas de `policy.json` para producir eventos de fin de turno e interrupción. Usarlo aislado no genera eventos.
+- El código y los datos de entrenamiento no son públicos, lo que impide auditar sesgos o reproducir el entrenamiento.
+- Las predicciones del split de test no se publican a petición del benchmark, por lo que la reproducibilidad completa de los resultados del leaderboard no es posible.
+- Sensibilidad a la entrada: audio de más bits leído como float desvía las respuestas hasta 0,02, y en CPU la diferencia de 0,001 puede mover un cruce de umbral en 40 ms (un paso).
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de falsos positivos/negativos en la detección de interrupciones, con impacto directo en la naturalidad del diálogo.
+- La licencia Apache 2.0 permite uso comercial, pero no se documentan garantías ni limitaciones de responsabilidad más allá de las estándar de la licencia.
+- No se especifican sesgos demográficos, acústicos ni de idioma más allá del inglés; no hay información sobre robustez ante ruido, acentos o canales cruzados.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/cloud0day3/kuroko
+- Modelo en Hugging Face: https://huggingface.co/cloud0day3/kuroko
 - Write-up del autor: https://spero.patientdesk.ai/blog/kuroko
-- TurnBench (Sesame AI Labs): https://turnbench.sesame.com
-- Scorer de desarrollo de TurnBench: https://turnbench.sesame.com/dev
+- TurnBench: https://turnbench.sesame.com
 - Silero VAD: https://github.com/snakers4/silero-vad
-- Reglas de turn-1-mini (p99lab): https://github.com/P99Lab/turn-1-mini
-- Open Yap 1K (The Agentic Data Company): https://theagenticdatacompany.com/open-yap-1k
-- Paper de voice activity projection (Ekstedt y Skantze, 2022): https://arxiv.org/abs/2205.09812
-- Paper de otoSpeech (Jiang et al., 2026): https://arxiv.org/abs/2608.25218
+- turn-1-mini (P99Lab): https://github.com/P99Lab/turn-1-mini
+- ONNX Runtime: https://onnxruntime.ai
+- Paper de referencia citado en tags (arXiv:2608.25218): https://arxiv.org/abs/2608.25218
+- Paper de referencia citado en tags (arXiv:2205.09812): https://arxiv.org/abs/2205.09812
