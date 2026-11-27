@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/1B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/1B-GGUF",
-      "snippet": "Instructions to use mradermacher/1B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mradermacher/1B-GGUF with Transformers:"
-    },
-    {
-      "title": "mradermacher/Tropicals-T1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Tropicals-T1-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "A3ON-1B-GGUF Open-source Model - Supports text generation and code ...",
-      "url": "https://model.aibase.com/models/details/1950093016106799104",
-      "snippet": "A statically quantized version of the A3ON-1B model, suitable for tasks such as text generation and code assistance. This model is based on the kaiiddo/A3ON-1B base model and offers multiple quantization versions to meet different performance requirements."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://router.huggingface.co/models/",
-      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
-    }
-  ]
+  "sources": []
 }

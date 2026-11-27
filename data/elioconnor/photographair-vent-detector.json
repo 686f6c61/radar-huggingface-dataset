@@ -5,7 +5,7 @@
   "author": "elioconnor",
   "url": "https://huggingface.co/elioconnor/photographair-vent-detector",
   "created_at": "2026-11-26T03:42:32.000Z",
-  "updated_at": "2026-11-26T04:21:11.000Z",
+  "updated_at": "2026-11-26T04:34:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

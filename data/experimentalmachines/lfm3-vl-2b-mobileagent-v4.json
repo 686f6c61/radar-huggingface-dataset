@@ -5,7 +5,7 @@
   "author": "experimentalmachines",
   "url": "https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4",
   "created_at": "2026-11-18T05:16:15.000Z",
-  "updated_at": "2026-11-23T02:33:28.000Z",
+  "updated_at": "2026-11-26T16:48:14.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "conversational",
     "custom_code",
     "en",
-    "dataset:experimentalmachines/MobileAgent-SFT-v4",
+    "dataset:experimentalmachines/MobileAgent-SFT",
     "base_model:LiquidAI/LFM3-VL-2B",
     "base_model:adapter:LiquidAI/LFM3-VL-2B",
     "license:other",
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "experimentalmachines/LFM3-VL-2B-MobileAgent",
+  "renamed_at": "2026-11-27T10:29:36.896Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Rin247",
   "url": "https://huggingface.co/Rin247/Hunyuan3D-Part",
   "created_at": "2026-10-25T11:28:30.000Z",
-  "updated_at": "2026-10-27T15:56:32.000Z",
+  "updated_at": "2026-11-23T20:16:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "safetensors",
     "mecha",
     "weight-only",
+    "base_model:tencent/Hunyuan3D-Part",
+    "base_model:quantized:tencent/Hunyuan3D-Part",
     "region:us"
   ],
   "likes": 0,
@@ -27,7 +29,7 @@
   "storage_bytes": 15614554648,
   "storage_human": "15.6 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "tencent/Hunyuan3D-Part",
   "formats": [
     "diffusers",
     "safetensors"

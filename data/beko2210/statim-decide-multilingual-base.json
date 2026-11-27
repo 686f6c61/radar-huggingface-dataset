@@ -94,61 +94,61 @@
       "task": null,
       "dataset": "typed-decisions (test split, first 2,000 decisions; its train split is replay data)",
       "metric": null,
-      "value": 0.7585
+      "value": 0.775
     },
     {
       "task": null,
       "dataset": "Banking77 (test split, first 2,000 rows, all 77 intents in one question)",
       "metric": null,
-      "value": 0.9035
+      "value": 0.9185
     },
     {
       "task": null,
       "dataset": "MASSIVE intents (mean over 12 languages, 150 seeded stratified test rows each)",
       "metric": null,
-      "value": 0.7717
+      "value": 0.8161
     },
     {
       "task": null,
       "dataset": "AG News (zero-shot (never trained on), first 2,000 test rows)",
       "metric": null,
-      "value": 0.9315
+      "value": 0.921
     },
     {
       "task": null,
       "dataset": "DAIR Emotion (zero-shot, first 2,000 test rows)",
       "metric": null,
-      "value": 0.5265
+      "value": 0.5305
     },
     {
       "task": null,
       "dataset": "HWU64 intents (English, 150 rows; rows overlapping MASSIVE removed)",
       "metric": null,
-      "value": 0.82
+      "value": 0.8533
     },
     {
       "task": null,
       "dataset": "SIB-200 topics (zero-shot, mean over 4 languages, 150 rows each)",
       "metric": null,
-      "value": 0.7217
+      "value": 0.7967
     },
     {
       "task": null,
       "dataset": "Sentiment (zero-shot, mean over 12 languages, 150 rows each)",
       "metric": null,
-      "value": 0.5933
+      "value": 0.6311
     },
     {
       "task": null,
       "dataset": "HateCheck (zero-shot, mean over 11 languages, 150 rows each)",
       "metric": null,
-      "value": 0.6467
+      "value": 0.6461
     },
     {
       "task": null,
       "dataset": "Belebele reading (zero-shot, mean over 4 languages, 150 rows each)",
       "metric": null,
-      "value": 0.31
+      "value": 0.28
     }
   ],
   "sources": []

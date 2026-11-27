@@ -2,50 +2,52 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Day-To-Night es un adaptador LoRA de tipo IC-LoRA (in-context LoRA) desarrollado por Lightricks sobre el modelo base de difusión de vídeo LTX-2.5. Su función específica es la conversión de vídeo de día a noche (day-to-night) y el relighting: toma un clip rodado con iluminación diurna y genera una versión coherente temporalmente con aspecto nocturno, reinterpretando las fuentes de luz de la escena. No es un modelo autónomo, sino un peso adicional que se carga junto con el modelo base de 22 mil millones de parámetros para modificar su comportamiento generativo en la tarea de vídeo-a-vídeo.
+LTX-2.5-22b-IC-LoRA-Day-To-Night es un adaptador LoRA de tipo IC-LoRA (In-Context LoRA) desarrollado por Lightricks sobre su modelo base de generacion de video LTX-2.5. Su funcion es transformar material de video existente de una escena diurna en la misma escena ambientada de noche, manteniendo la coherencia temporal y estructural del metraje original. El adaptador se distribuye como un unico fichero de pesos compatible con la libreria `diffusion-single-file` y esta disenado para el pipeline de video-to-video.
 
-El adaptador se publica en formato de archivo único (`diffusion-single-file`), con un tamaño de repositorio de 0,3 GB, lo que refleja que solo contiene los pesos delta del LoRA y no la totalidad del modelo. La tarea se encuadra en el pipeline `video-to-video`, por lo que requiere un vídeo de entrada además de una instrucción o condicionamiento textual en inglés para producir el resultado transformado.
+El modelo pertenece a la familia LTX-2.5 de Lightricks, cuyo checkpoint base se identifica en el nombre como de 22 mil millones de parametros. El adaptador en si es un LoRA, por lo que el tamano del repositorio es reducido (0,3 GB) frente al modelo completo que debe cargarse por separado. La tecnica IC-LoRA permite condicionar la generacion en contexto, de modo que el modelo aprende la transformacion dia-noche sin necesidad de reentrenar el modelo base.
 
-Su relevancia práctica reside en que resuelve un problema de posproducción costoso (el relighting y la conversión día/noche de metraje real) mediante generación condicionada, manteniendo la estructura y el movimiento del clip original. El acceso está restringido en Hugging Face y la licencia es la LTX-2.x Community License, con implicaciones que conviene revisar antes de un uso comercial.
+Es relevante ahora porque el relighting y la conversion dia-noche son tareas costosas en produccion audiovisual (postproduccion, VFX, previsualizacion), y un adaptador ligero que reutilice un modelo base potente reduce drasticamente el coste computacional y de almacenamiento frente a un modelo dedicado. El acceso esta restringido: requiere aceptar la licencia comunitaria LTX-2.x en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (IC-LoRA) sobre modelo de difusión de vídeo LTX-2.5 |
-| Parametros totales | 22B en el modelo base LTX-2.5; el adaptador LoRA añade un delta de parámetros no especificado (repo de 0,3 GB) |
+| Arquitectura | LoRA (IC-LoRA) sobre el modelo de difusion de video LTX-2.5 |
+| Parametros totales | Modelo base LTX-2.5: 22 mil millones (el adaptador LoRA es un subconjunto; numero exacto de parametros del adaptador no disponible) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
+| Longitud de contexto | no disponible (modelo de video; la ventana se define en frames/segundos, dato no disponible) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | ltx-2.x-community-license (acceso restringido, requiere aceptar condiciones) |
-| Formato de pesos | diffusion-single-file (archivo único de difusión) |
+| Idiomas soportados | en (ingles) |
+| Licencia | ltx-2.x-community-license (acceso restringido, requiere aceptacion) |
+| Formato de pesos | diffusion-single-file (fichero unico de pesos, formato nativo de la libreria) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye como un IC-LoRA sobre LTX-2.5, un modelo de difusión para generación de vídeo de 22B parámetros. La variante IC-LoRA (in-context LoRA) está diseñada para inyectar condicionamiento adicional en el proceso de difusión, en este caso el par entrada-salida necesario para la transformación día/noche: el modelo aprende a reinterpretar la iluminación de la escena preservando geometría, movimiento y contenido del clip original. El resultado se entrega como un único archivo de difusión, compatible con el pipeline `video-to-video` de la librería `diffusion-single-file`.
+El adaptador se apoya en LTX-2.5, el modelo base de generacion de video de Lightricks, que segun la nomenclatura del repositorio cuenta con 22 mil millones de parametros. La tecnica IC-LoRA (In-Context LoRA) entrena un adaptador de bajo rango que modifica el comportamiento del modelo base mediante condicionamiento en contexto: en lugar de aprender la tarea desde cero, el adaptador ensena al modelo a reinterpretar la escena de entrada (video diurno) hacia la salida deseada (escena nocturna), preservando la estructura, el movimiento y la identidad de los elementos de la escena.
 
-No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas del adaptador más allá de su naturaleza IC-LoRA. Tampoco se documentan detalles sobre el schedule de entrenamiento, la resolución nativa o la longitud de clip soportada. Estos datos figuran como no disponibles en la información proporcionada.
+No se dispone de informacion publica sobre el numero de tokens o frames de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF/DPO. Al tratarse de un adaptador de difusion para video, el entrenamiento se realiza tipicamente sobre pares de videos dia/noche o mediante supervision de relighting; sin embargo, estos detalles no estan confirmados en la informacion proporcionada. La innovacion principal es el uso de IC-LoRA para una tarea de video-to-video con coherencia temporal, empaquetada como un fichero unico de pesos de bajo tamano (0,3 GB) que se combina con el checkpoint base.
 
 ## Capacidades
 
-- Conversión de vídeo de día a noche: transforma la iluminación de un clip diurno en una apariencia nocturna coherente.
-- Relighting condicionado: reinterpreta las fuentes de luz de la escena manteniendo la estructura del metraje original.
-- Vídeo-a-vídeo con preservación de movimiento: al operar sobre un vídeo de entrada, conserva la dinámica y la composición del clip fuente.
-- Coherencia temporal: al estar integrado en un modelo de difusión de vídeo, el adaptador hereda la consistencia entre fotogramas del modelo base.
-- Condicionamiento en inglés: las instrucciones o prompts asociados se expresan en inglés.
-- Integración con el ecosistema LTX-2.5: funciona junto con el modelo base y con otros adaptadores de la familia (Slow-Motion-Control, Cinemagraph, entre otros publicados por Lightricks).
-- No se documentan capacidades de tool calling, agentes, visión general, audio ni modo de razonamiento extendido, por tratarse de un modelo generativo de vídeo.
+- Conversion dia-noche de video: transforma metraje diurno en la misma escena con iluminacion nocturna.
+- Relighting: modifica la iluminacion de una escena manteniendo la geometria y el contenido.
+- Video-to-video con coherencia temporal: preserva el movimiento y la estructura del video de entrada.
+- Condicionamiento en contexto (IC-LoRA): el adaptador modifica el modelo base sin reentrenarlo.
+- Integracion con el ecosistema LTX-2.5: se carga junto al modelo base de 22B.
+- Idioma: entrenado y orientado a ingles (segun el tag de idioma del repositorio).
+- Tool calling / function calling: no disponible (no es un modelo de lenguaje).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no aplica).
+- Capacidades de audio o vision general: no disponible; la tarea es especifica de video.
 
 ## Casos de uso
 
-- Posproducción cinematográfica: convertir planos rodados de día en escenas nocturnas sin reshoots, manteniendo el movimiento de cámara y la interpretación de los actores gracias a la preservación del clip original.
-- Publicidad y contenido de marca: generar variantes día/noche de un mismo spot para campañas segmentadas por franja horaria o por ambientación, a partir de un único rodaje.
-- Previsualización y previz en VFX: obtener referencias nocturnas rápidas de planos diurnos antes de decidir si se aborda un relighting real en el pipeline de efectos.
-- Contenido para redes sociales: adaptar metraje existente a estéticas nocturnas para series o formatos que requieren continuidad de iluminación entre episodios.
-- Archivo y restauración: reinterpretar la iluminación de material histórico o de stock para integrarlo en proyectos con una dirección de fotografía nocturna consistente.
-- Videojuegos y cinemáticas: producir variantes de secuencias pregrabadas para ciclos día/noche dentro de un juego o tráiler, reutilizando el metraje base.
-- Prototipado creativo: explorar direcciones de fotografía alternativas sobre un mismo clip sin coste de rodaje, comparando resultados antes de comprometer recursos de producción.
+- Postproduccion audiovisual: convertir tomas rodadas de dia en escenas nocturnas para ajustar la continuidad de una secuencia sin volver a rodar, aprovechando la coherencia temporal del adaptador.
+- Previsualizacion (previz) en cine y publicidad: generar rapidamente versiones nocturnas de planos para decidir la ambientacion antes del rodaje o del render final.
+- Creacion de contenido para redes sociales: transformar clips diurnos en versiones nocturnas para variaciones de un mismo anuncio o video, con coste reducido al usar un LoRA ligero.
+- Videojuegos y entornos interactivos: producir variantes dia/noche de cinemáticas o material de referencia a partir de capturas diurnas.
+- Archivo y restauracion: reinterpretar metraje historico diurno en ambientaciones nocturnas para proyectos documentales o artisticos.
+- Prototipado de VFX: generar plates nocturnos de referencia para que el equipo de efectos visuales trabaje sobre una base coherente con el movimiento original.
+- Investigacion en difusion de video: estudiar tecnicas IC-LoRA aplicadas a relighting y video-to-video, reutilizando un modelo base de 22B con un adaptador de 0,3 GB.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +55,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; al operar sobre un modelo base de 22B parámetros en difusión de vídeo, los requisitos son los del modelo LTX-2.5 completo, no los del adaptador (0,3 GB).
-- GPU recomendadas: no disponible en la información proporcionada; por el tamaño del modelo base, se espera necesidad de GPU de datacenter (A100, H100) o soluciones de altas prestaciones, sin confirmación oficial.
-- Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: pipeline `video-to-video` mediante la librería `diffusion-single-file`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo de difusión de vídeo).
+- VRAM estimada para inferencia: no disponible de forma explicita; al requerir el modelo base LTX-2.5 de 22B, la inferencia necesita cargar dicho checkpoint, lo que implica requisitos de VRAM elevados (el adaptador LoRA por si solo ocupa 0,3 GB).
+- GPU recomendadas: no disponible en la informacion proporcionada; por el tamano del modelo base, se orienta a GPU de datacenter (A100, H100) o equivalentes.
+- Compatibilidad con GPU de consumo: no disponible; el adaptador es ligero, pero el modelo base de 22B condiciona el requisito.
+- Opciones de despliegue: libreria `diffusion-single-file` (formato de pesos del repositorio); otras opciones (vLLM, llama.cpp, Ollama, TGI) no aplican o no estan indicadas para este modelo de difusion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
+| Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Day-To-Night | IC-LoRA sobre difusión de vídeo | 22B (base) + delta LoRA | no disponible | ltx-2.x-community-license | Gated en Hugging Face |
-| LTX-2.5-22b-LoRA-Slow-Motion-Control | LoRA sobre difusión de vídeo | 22B (base) + delta LoRA | no disponible | no disponible | Hugging Face (Lightricks) |
-| LTX-2.5-22b-LoRA-Cinemagraph | LoRA sobre difusión de vídeo | 22B (base) + delta LoRA | no disponible | no disponible | Hugging Face (Lightricks) |
-| Modelos de relighting de vídeo de la competencia | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LTX-2.5-22b-IC-LoRA-Day-To-Night | Base 22B + LoRA | IC-LoRA video-to-video (dia-noche) | no disponible | ltx-2.x-community-license | Gated en Hugging Face |
+| LTX-2.5 (modelo base) | 22B | Difusion de video | no disponible | ltx-2.x-community-license | Hugging Face |
+| Otros adaptadores IC-LoRA de la familia LTX-2.5 | Base 22B + LoRA | LoRA especifico por tarea | no disponible | ltx-2.x-community-license | Hugging Face |
 
-La comparación se limita a los adaptadores de la misma familia publicados por Lightricks; no se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas externas en la información proporcionada.
+No se dispone de datos de rendimiento comparativo ni de modelos alternativos de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face antes de la descarga.
-- Licencia: la LTX-2.x Community License no es una licencia de código abierto estándar; es imprescindible revisar sus términos para uso comercial, redistribución y productos derivados.
-- Dependencia del modelo base: el adaptador no funciona de forma autónoma; requiere LTX-2.5 y su pipeline de inferencia.
-- Idioma: el condicionamiento textual está limitado al inglés.
-- Riesgo de artefactos: como todo modelo generativo de vídeo, puede producir inconsistencias temporales, parpadeos o errores en la reinterpretación de fuentes de luz en escenas complejas.
-- Sesgos: no se documentan sesgos específicos, pero el adaptador hereda los del modelo base y de sus datos de entrenamiento (no disponibles).
-- Alucinación visual: puede inventar o eliminar fuentes de luz, alterar reflejos o modificar la apariencia de materiales de forma no fiel al clip original.
-- Falta de documentación técnica: no se publican detalles de entrenamiento, benchmarks ni requisitos de hardware, lo que dificulta la evaluación previa en producción.
-- Fecha de creación y actualización del repositorio (2026) coherente con la información del Hub; conviene verificar la vigencia de la versión antes de integrarla.
+- Acceso restringido: requiere aceptar la licencia comunitaria LTX-2.x en Hugging Face antes de descargar.
+- Licencia `ltx-2.x-community-license`: es una licencia "other"; deben revisarse las condiciones para uso comercial antes de desplegar en produccion.
+- Dependencia del modelo base: no funciona de forma autonoma; necesita cargar LTX-2.5 (22B), con el coste de VRAM y computo asociado.
+- Idioma: orientado a ingles segun los metadatos; no hay evidencia de soporte multilingue.
+- Tarea acotada: solo realiza conversion dia-noche/relighting; no es un modelo generalista.
+- Riesgo de artefactos: como todo modelo de difusion de video, puede introducir inconsistencias temporales, parpadeos o cambios no deseados en la escena.
+- Sesgos: no disponible informacion sobre sesgos especificos del adaptador.
+- Alucinacion visual: puede inventar fuentes de luz o modificar elementos de la escena de forma no fiel al original.
+- Datos de entrenamiento, cuantizacion y benchmarks no disponibles; la evaluacion en produccion debe hacerse con pruebas propias.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Day-To-Night
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
-- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
-- Sitio web de Lightricks: https://www.lightricks.com/
-- Sobre Lightricks: https://www.lightricks.com/about
-- GitHub de Lightricks: https://github.com/Lightricks
-- Wikipedia (Lightricks): https://en.m.wikipedia.org/wiki/Lightricks
+- Licencia comunitaria LTX-2.x: no disponible enlace directo en la informacion proporcionada
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

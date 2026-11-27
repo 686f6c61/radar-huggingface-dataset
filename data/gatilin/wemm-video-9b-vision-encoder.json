@@ -5,7 +5,7 @@
   "author": "gatilin",
   "url": "https://huggingface.co/gatilin/wemm-video-9b-vision-encoder",
   "created_at": "2026-11-26T06:57:48.000Z",
-  "updated_at": "2026-11-26T07:12:44.000Z",
+  "updated_at": "2026-11-27T01:41:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

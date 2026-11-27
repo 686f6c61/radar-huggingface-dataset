@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "kurogane/GDN_pico_ByT5_tokenizer",
+  "slug": "kurogane-gdn_pico_byt5_tokenizer",
+  "author": "kurogane",
+  "url": "https://huggingface.co/kurogane/GDN_pico_ByT5_tokenizer",
+  "created_at": "2026-09-22T03:10:11.000Z",
+  "updated_at": "2026-11-27T11:11:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 10414660,
+  "parameters_human": "10.4M",
+  "storage_bytes": 41679128,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

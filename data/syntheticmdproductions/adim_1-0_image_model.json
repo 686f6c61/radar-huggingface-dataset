@@ -5,7 +5,7 @@
   "author": "SyntheticMDProductions",
   "url": "https://huggingface.co/SyntheticMDProductions/ADiM_1.0_Image_Model",
   "created_at": "2026-11-26T22:13:00.000Z",
-  "updated_at": "2026-11-26T22:19:01.000Z",
+  "updated_at": "2026-11-27T02:12:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,7 +21,7 @@
     "en",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

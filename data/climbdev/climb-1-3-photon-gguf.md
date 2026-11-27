@@ -2,87 +2,97 @@
 
 ## Resumen
 
-Climb-1.3-Photon-GGUF es una distribucion en formato GGUF de un modelo de lenguaje publicado por el usuario climbdev en Hugging Face. El repositorio contiene unicamente los pesos cuantizados del modelo Photon en su version 1.3, empaquetados para su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. La model card asociada es practicamente vacia: solo declara la licencia Apache 2.0 y no aporta informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades.
+Climb 1.3 Photon es un modelo de lenguaje de 0,75 mil millones de parámetros (752.393.024, según los pesos en safetensors) especializado en la generación de comandos de shell para Linux y en tareas de administración de sistemas. Lo desarrolla climbdev y se distribuye como cuantizaciones GGUF del modelo base Climb-Ai/Climb-1.3-Photon. Su propósito es actuar como copiloto de terminal de baja latencia: dado un prefijo `??` seguido de una petición en lenguaje natural, devuelve un comando bash ejecutable, sin markdown ni explicaciones adicionales.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no registra descargas ni interacciones, no incluye pipeline declarado y no especifica idiomas soportados. Se trata, por tanto, de una publicacion de pesos sin documentacion tecnica de acompanamiento, lo que impide verificar sus caracteristicas mas alla de lo que el propio nombre del repositorio sugiere (una version 1.3 del modelo Photon, distribuida en formato GGUF).
+La versión 1.3 introduce lo que el autor denomina "Monolithic Safety & Syntax Alignment", un ajuste orientado a rechazar de forma determinista cargas destructivas (`rm -rf /`, `dd if=/dev/zero of=/dev/sda`, bombas fork, `chmod -R 777 /`). Según la model card, esta versión alcanza un 100 % de rechazo en las 10 pruebas destructivas del benchmark interno y mantiene un 94,3 % de comandos limpios validados con `shellcheck`, frente al 40 % del Qwen 3.5 base de 0,8B.
 
-Dado que no se dispone de model card sustantiva ni de resultados publicados, los apartados tecnicos de esta ficha se completan con "no disponible" cuando el dato no puede confirmarse. Cualquier evaluacion en produccion deberia realizarse mediante pruebas directas sobre los pesos antes de adoptar el modelo.
+El modelo se construye sobre la arquitectura híbrida Qwen 3.5, con 24 capas que combinan atención lineal recurrente Gated DeltaNet y atención completa dispersa. Su relevancia actual reside en el nicho: un modelo pequeño, con licencia Apache 2.0, cuantizado a 510 MB en Q4_K_M, pensado para ejecutarse en el cliente vía WebGPU o en dispositivos embebidos, no en servidores de gran escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio se distribuye en formato GGUF, pero no se detallan los niveles incluidos) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer híbrido Qwen 3.5 (24 capas: Gated DeltaNet Linear Attention recurrente + Full Attention dispersa) |
+| Parametros totales | 752.393.024 (0,75B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q8_0, Q5_K_M, Q4_K_M |
+| Idiomas soportados | No disponible (la model card indica que responde en el idioma del prompt) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la documentacion disponible. La model card del repositorio no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida, ni tampoco el numero de parametros, la longitud de contexto nativa o las caracteristicas del tokenizador.
+El modelo parte de la arquitectura híbrida de Qwen 3.5, que intercala capas de atención lineal recurrente Gated DeltaNet con capas de atención completa dispersa a lo largo de sus 24 capas. Este diseño busca reducir el coste computacional y de memoria del mecanismo de atención manteniendo capacidad de modelado, algo relevante para un modelo destinado a ejecución local en el cliente.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas destacables. El unico dato tecnico verificable es que los pesos se distribuyen en formato GGUF, lo que implica que han sido convertidos para su uso en motores de inferencia de la familia llama.cpp, pero el repositorio no documenta el proceso de conversion ni las herramientas empleadas.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La model card describe el ajuste de la versión 1.3 como una "alineación monolítica de seguridad y sintaxis", sin detallar la metodología (posible SFT, preferencias o reglas deterministas). El prompt de sistema recomendado fuerza un modo de razonamiento vacío (``) para obtener respuestas directas de una sola vuelta.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada en la documentacion disponible.
-- Razonamiento y matematicas: no confirmado.
-- Generacion de codigo: no confirmada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-La ausencia de model card impide confirmar cualquiera de estas capacidades. Cualquier uso en produccion deberia ir precedido de una evaluacion empirica directa.
+- Generación determinista de comandos bash de una sola vuelta a partir de peticiones en lenguaje natural con prefijo `??`.
+- Tuberías de E/S, gestión de sockets de red, administración de systemd, almacenamiento y ciclo de vida de contenedores (según las categorías del benchmark del autor).
+- Análisis de logs y diagnóstico de problemas de sistema.
+- Explicaciones técnicas en lenguaje natural cuando la consulta no usa el prefijo `??`.
+- Rechazo determinista de comandos destructivos con mensaje de error a stderr y código de salida 1.
+- Respuesta en el idioma del prompt (multilingüe según instrucción de sistema, sin lista de idiomas publicada).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio.
 
 ## Casos de uso
 
-- Evaluacion experimental en local: el formato GGUF permite cargar el modelo en llama.cpp u Ollama para probar su comportamiento en un equipo de sobremesa, sin necesidad de infraestructura en la nube. Es adecuado para explorar rapidamente si el modelo encaja en un prototipo.
-- Pruebas de integracion en pipelines de inferencia GGUF: sirve para validar el funcionamiento de herramientas como llama.cpp, Ollama o servidores compatibles con la API de OpenAI antes de comprometerse con un modelo mayor.
-- Comparativas internas de calidad: util como candidato adicional en un banco de pruebas privado junto a otros modelos GGUF, siempre que se documenten los prompts y las metricas empleadas.
-- Prototipado de asistentes conversacionales: si el modelo demuestra capacidad de dialogo en las pruebas, podria emplearse en entornos de desarrollo para iterar sobre la interfaz antes de sustituirlo por un modelo con documentacion solida.
-- Despliegue en entornos con recursos limitados: al distribuirse en GGUF, es tecnicamente posible ejecutarlo en CPU o en GPU de gama media, aunque el rendimiento real depende de un tamano de modelo que no se ha publicado.
-- Investigacion sobre distribucion de pesos: el repositorio puede interesar a quienes estudian como se publican modelos sin documentacion y que implicaciones tiene para la reproducibilidad.
-
-En todos los casos, la falta de especificaciones obliga a tratar el modelo como no validado para produccion.
+- Copiloto de terminal local: integrado en un shell o en una extensión de editor, el modelo traduce peticiones como "busca archivos mayores de 100 MB en /var/log modificados en las últimas 24 h" en un comando ejecutable, con 510 MB en Q4_K_M y temperatura 0,1 para salidas estables.
+- Asistente embebido en el cliente con WebGPU: la cuantización Q4_K_M está pensada para `@wllama/wllama`, lo que permite ofrecer sugerencias de comandos sin enviar datos del usuario a un servidor.
+- Automatización de tareas de SRE en scripts: el modelo puede generar fragmentos de bash para pipelines de monitorización o limpieza de logs, que luego se validan con `shellcheck` antes de ejecutarse.
+- Formación y onboarding de administradores: al explicar comandos y diagnósticos en lenguaje natural, sirve como apoyo para usuarios menos expertos en Linux.
+- Filtro de seguridad en pipelines existentes: el comportamiento de rechazo ante `rm -rf`, `dd` y `mkfs` permite usarlo como capa de prevalidación de comandos generados por otros modelos o por usuarios.
+- Análisis de logs en entornos con recursos limitados: al ser un modelo de 0,75B, puede ejecutarse en dispositivos embebidos o contenedores pequeños donde un modelo de 7B o superior no cabría.
+- Herramienta de CI/CD para linting semántico de scripts: generar y comparar comandos propuestos contra los existentes para detectar construcciones peligrosas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Datos del benchmark interno de 100 tareas publicado por el autor (verificación con `bash -n` y `shellcheck -s bash`):
+
+| Categoría de evaluación | Qwen 3.5 base (0,8B) | Climb 1.2 Photon | Climb 1.3 Photon |
+|---|---|---|---|
+| Bash limpio (`shellcheck` clean) | 28/70 (40,0 %) | 66/70 (94,3 %) | 66/70 (94,3 %) |
+| Rechazo de cargas destructivas (`rm`, `dd`, `mkfs`) | 0/10 (0,0 %) | 0/10 (0,0 %) | 10/10 (100,0 %) |
+| Coherencia conversacional | 18/20 (90,0 %) | 20/20 (100,0 %) | 20/20 (100,0 %) |
+| Fallos críticos totales | 14/100 | 12/100 | 3/100 |
+
+No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros y las cuantizaciones incluidas.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada; depende del tamano real del modelo, que no se ha publicado.
-- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF son las opciones naturales dado el formato de los pesos. vLLM y TGI no soportan GGUF de forma nativa en todos sus modos, por lo que su uso requeriria conversion previa a safetensors.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: aproximadamente 0,5 GB en Q4_K_M, 0,6 GB en Q5_K_M y 0,85 GB en Q8_0, más el overhead del runtime.
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM libre; también funciona en CPU y en WebGPU del navegador.
+- Cabe en GPU consumer: sí, en cualquier RTX o iGPU moderna, y en dispositivos embebidos tipo Raspberry Pi (con llama.cpp compilado para ARM).
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), `@wllama/wllama` para WebGPU, y cualquier runtime compatible con GGUF (Ollama, LM Studio). No se documenta soporte específico de vLLM o TGI.
+- Latencia y throughput: no disponibles. El autor lo describe como "low-latency" sin cifras.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconocen los parametros, el contexto y el rendimiento del modelo. Como referencia de categoria, cualquier modelo GGUF de la familia Llama, Mistral o Qwen con licencia permisiva podria servir de alternativa, pero sin datos del modelo Photon la comparacion carece de base tecnica.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Climb 1.3 Photon | 0,75B | No disponible | Bash/Linux, seguridad determinista | Apache 2.0 | GGUF en HF |
+| Qwen 3.5 base (0,8B) | 0,8B | No disponible | Propósito general | Según Qwen (no confirmada) | Safetensors/GGUF |
+| Climb 1.2 Photon | 0,8B | No disponible | Bash/Linux, sin rechazo destructivo | Apache 2.0 | GGUF en HF |
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion |
-|---|---|---|---|---|
-| Climb-1.3-Photon-GGUF | no disponible | no disponible | Apache 2.0 | Practicamente inexistente |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks estándar ni de comparativas con otros modelos especializados en shell para establecer una comparación cuantitativa más amplia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: no se documentan arquitectura, datos de entrenamiento ni evaluaciones, lo que impide verificar cualquier afirmacion sobre el modelo.
-- Riesgo elevado de comportamiento impredecible: sin informacion sobre alineacion (RLHF/DPO) no puede asumirse un comportamiento seguro ni util en produccion.
-- Sesgos desconocidos: al no conocerse la composicion del corpus de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Riesgo de alucinacion no cuantificado: no hay benchmarks que permitan estimar la tasa de alucinacion.
-- Idiomas soportados sin confirmar: la ficha de Hugging Face no declara idiomas, por lo que el rendimiento en castellano es una incognita.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad legal y tecnica recae en quien despliega el modelo.
-- Cero descargas y cero interacciones: no existe evidencia de uso por parte de la comunidad, lo que reduce la probabilidad de que los problemas conocidos esten documentados.
-- Fecha de creacion futura en los metadatos (2026-11-22): conviene verificar la integridad del repositorio antes de confiar en el.
+- Los benchmarks son internos del autor (100 tareas) y no han sido replicados de forma independiente.
+- El modelo está entrenado para un modo de una sola vuelta; no se documenta razonamiento multi-paso ni uso de herramientas.
+- No hay lista publicada de idiomas soportados; aunque se instruye responder en el idioma del prompt, la calidad fuera del inglés no está verificada.
+- Riesgo de alucinación en comandos: aunque el 94,3 % pasan `shellcheck`, un 5,7 % no son limpios, por lo que toda salida debe validarse antes de ejecutarse.
+- El rechazo de comandos destructivos se limita a los patrones evaluados; variantes ofuscadas podrían no detectarse.
+- No se documenta el proceso de entrenamiento ni los datos, lo que dificulta evaluar sesgos.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen 3.5 puede tener condiciones adicionales que conviene revisar.
+- La fecha de creación del repositorio (2026-11-22) y la referencia a Qwen 3.5 deben tratarse con cautela: verificar la procedencia y el modelo base antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/climbdev/Climb-1.3-Photon-GGUF
-- No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.
+- Repositorio GGUF: https://huggingface.co/climbdev/Climb-1.3-Photon-GGUF
+- Modelo base: https://huggingface.co/Climb-Ai/Climb-1.3-Photon
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- wllama (WebGPU): https://github.com/ngxson/wllama
+- ShellCheck: https://www.shellcheck.net/

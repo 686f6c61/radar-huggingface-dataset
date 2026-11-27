@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "brhncck/gallery-ai-siglip2",
+  "slug": "brhncck-gallery-ai-siglip2",
+  "author": "brhncck",
+  "url": "https://huggingface.co/brhncck/gallery-ai-siglip2",
+  "created_at": "2026-11-27T08:36:15.000Z",
+  "updated_at": "2026-11-27T08:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:google/siglip2-base-patch32-256",
+    "base_model:quantized:google/siglip2-base-patch32-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266462498,
+  "storage_human": "266 MB",
+  "context_length": null,
+  "base_model": "google/siglip2-base-patch32-256",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

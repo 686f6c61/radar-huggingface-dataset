@@ -2,116 +2,131 @@
 
 ## Resumen
 
-Hy4-flash es un modelo de lenguaje de gran escala desarrollado por Tencent, publicado originalmente como `tencent/Hy4-flash`. Esta ficha cubre la versión cuantizada en formato GGUF distribuida por AngelSlim, el toolkit de compresión de modelos de Tencent, que ofrece cinco builds distintos optimizados para distintos compromisos entre tamaño y calidad.
+Hy4-flash es un modelo de lenguaje de gran escala desarrollado por Tencent, publicado originalmente como `tencent/Hy4-flash`. Se trata de un modelo con arquitectura MoE (Mixture of Experts) de aproximadamente 224.000 millones de parametros totales, disenado para cargas conversacionales y de generacion de codigo. La model card lo describe como un modelo multimodal, ya que admite entrada de imagenes mediante un proyector `mmproj` en formato BF16.
 
-El modelo base cuenta con 222.679.844.717 parámetros totales (aproximadamente 222,7 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño. La arquitectura es de tipo MoE (Mixture of Experts), a juzgar por las referencias a "routed experts" y proyecciones `gate`/`up`/`down` en la documentación de cuantización, aunque el número de parámetros activos no está disponible en la información proporcionada.
+La ficha que nos ocupa no es el modelo original, sino la coleccion de cuantizaciones GGUF publicadas por el proyecto AngelSlim (tambien de Tencent) bajo el identificador `AngelSlim/Hy4-flash-GGUF`. AngelSlim es un toolkit de compresion de modelos que ofrece cinco builds GGUF con recetas de cuantizacion diferenciadas (Q4_K_M, SPARK-4Bit, SPARK-4Bit-Fast, Q3_K e IQ2-AH), pensadas para llevar un modelo de este tamano a hardware de escritorio con 128 GB de memoria unificada, como un Mac M5 Max o una RTX Spark.
 
-La relevancia de esta ficha radica en que las builds GGUF permiten ejecutar un modelo de más de 220 mil millones de parámetros en hardware de consumo y estaciones de trabajo (Mac M5 Max de 128 GB, RTX Spark de 128 GB), algo impensable en precisión completa. Las cinco variantes cubren desde 125,73 GiB (IQ2-AH) hasta 156,79 GiB (Q4_K_M), con velocidades de decodificación documentadas de entre 25 y 50 tok/s según formato y hardware.
+El interes actual de esta publicacion radica en que demuestra que un MoE de 224B puede ejecutarse en equipos de gama alta de consumo con velocidades de decodificacion utilizables (del orden de 30-50 tok/s segun el build y el hardware), algo impensable hace poco para esta categoria de modelos. La model card incluye ademas datos de rendimiento medidos en llama.cpp y en Strata, y enlaza un informe tecnico en arXiv.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts), con proyecciones `gate`/`up`/`down` en expertos enrutados; detalles completos no disponibles |
-| Parametros totales | 222.679.844.717 (≈222,7 B) |
+| Arquitectura | MoE (Mixture of Experts); detalles completos no disponibles en la informacion proporcionada |
+| Parametros totales | ~224.000 millones (segun la model card); el campo de parametros safetensors del repo indica 845.686.433, probablemente correspondiente a un subconjunto o metadato parcial |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (los ejemplos de uso emplean `-c 8192`) |
+| Longitud de contexto | no disponible de forma oficial; los ejemplos de uso emplean `-c 8192` y las pruebas de rendimiento cubren hasta 32K tokens de entrada |
 | Tipos de cuantizacion | Q4_K_M, SPARK-4Bit, SPARK-4Bit-Fast, Q3_K, IQ2-AH (GGUF) |
-| Idiomas soportados | zh, en (según tags y model card); ar también en tags |
+| Idiomas soportados | chino (zh) e ingles (en) segun los tags; el tag de la ficha tambien menciona arabe (ar), sin confirmacion en la model card |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (5 builds); pesos originales del modelo base presumiblemente safetensors, no confirmado |
+| Formato de pesos | GGUF (multiparte, p. ej. `Hy4-flash-Q4_K_M-00001-of-00002.gguf`); proyector multimodal `mmproj-Hy4-flash-bf16.gguf` |
+
+Detalle de los builds GGUF publicados:
+
+| Fichero | Tamano | bpw global | bpw (excl. tabla Engram) |
+|---|---:|---:|---:|
+| `Hy4-flash-Q4_K_M.gguf` | 156,79 GiB | 6,05 | 5,27 |
+| `Hy4-flash-SPARK-4Bit.gguf` | 151,3 GiB | 5,84 | 4,78 |
+| `Hy4-flash-SPARK-4Bit-Fast.gguf` | 148,6 GiB | 5,74 | 4,63 |
+| `Hy4-flash-Q3_K.gguf` | 144,70 GiB | 5,58 | 4,62 |
+| `Hy4-flash-IQ2-AH.gguf` | 125,73 GiB | 4,85 | 3,60 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que Hy4-flash es un modelo MoE con expertos enrutados que emplean proyecciones `gate`, `up` y `down`, y que incorpora una "Engram table" (tabla de Engram) que se excluye del cálculo de bpw en las builds cuantizadas. Esto sugiere una arquitectura con componentes de memoria o embedding especializados, aunque los detalles completos de la arquitectura (número de expertos, top-k de enrutamiento, dimensiones ocultas) no están disponibles en la información proporcionada.
+La informacion disponible confirma que Hy4-flash es un modelo MoE con aproximadamente 224.000 millones de parametros totales. La model card de las cuantizaciones menciona una "tabla Engram" que se excluye del calculo de bits por peso, lo que sugiere la presencia de un componente de memoria o embedding adicional integrado en la arquitectura; no se detalla su funcionamiento en la informacion proporcionada. El modelo es multimodal: admite entrada de imagenes a traves de un proyector (`mmproj`) en BF16, lo que indica un codificador visual acoplado al transformer de lenguaje.
 
-El modelo base fue desarrollado por Tencent y publicado como `tencent/Hy4-flash`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. La model card de esta versión GGUF se centra en los detalles de cuantización y rendimiento, no en el entrenamiento del modelo base. Existe un informe técnico referenciado (arXiv:2602.21233) que probablemente contiene estos detalles, pero su contenido no está incluido en la información proporcionada.
-
-La innovación técnica destacable de esta distribución es el uso de recetas de cuantización mixtas: en Q4_K_M, las proyecciones `gate`/`up` de los expertos enrutados usan Q4_K, mientras que `down` recibe Q6_K en 19 capas y Q4_K en las otras 22, siguiendo la regla fija de llama.cpp. En Q3_K, la selección de capas que mantienen Q4_K se basa en sensibilidad a la cuantización. En IQ2-AH, las proyecciones `gate`/`up` bajan a 2,0625 bpw (IQ2_XXS) mientras el resto de pesos no-expertos permanecen en BF16.
+Las cuantizaciones de AngelSlim siguen recetas especificas sobre los expertos enrutados: en Q4_K_M, las proyecciones `gate`/`up` usan Q4_K y `down` recibe Q6_K en 19 capas y Q4_K en las otras 22, mientras que la mayoria de los pesos no-expertos se mantienen en Q8_0. En Q3_K, las proyecciones `gate`/`up` de los expertos bajan a Q3_K en 22 capas seleccionadas por sensibilidad a la cuantizacion y mantienen Q4_K en 19. En IQ2-AH, `gate`/`up` se comprimen a 2,0625 bpw (IQ2_XXS) y `down` se mantiene en Q4_K, con los pesos no-expertos en BF16. Los builds SPARK usan el formato de coma flotante de 4 bits de NVIDIA. No se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional (tag `conversational`).
-- Capacidades multilingües limitadas a chino, inglés y árabe según los tags del repositorio.
-- Entrada de imágenes: la model card documenta el uso de `llama-mtmd-cli` con un archivo `mmproj-Hy4-flash-bf16.gguf`, lo que confirma soporte de visión.
-- Compatibilidad con endpoints tipo OpenAI mediante `llama-server` (tag `endpoints_compatible`).
-- Soporte de plantillas de chat mediante `--jinja`.
-- Generación de código: la model card menciona explícitamente escenarios de "code generation" con velocidades de hasta 70 tok/s (Q3_K) y 40 tok/s (SPARK-4Bit-Fast).
-- Razonamiento de múltiples pasos y tool calling: no confirmado explícitamente en la información disponible.
-- Modo "thinking": no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno, con soporte de plantilla de chat via `--jinja` en llama.cpp.
+- Generacion de codigo: la model card reporta hasta 70 tok/s en Q3_K y 40 tok/s en SPARK-4Bit-Fast en escenarios de generacion de codigo.
+- Entrada multimodal de imagenes mediante el proyector `mmproj-Hy4-flash-bf16.gguf` y la herramienta `llama-mtmd-cli`.
+- Capacidades multilingues limitadas, segun los metadatos, a chino e ingles (con mencion adicional de arabe en los tags, no confirmada).
+- Compatibilidad con endpoints estilo OpenAI a traves de `llama-server`.
+- Soporte de decodificacion especulativa mediante MTP (Multi-Token Prediction) en el runtime Strata, con un borrador DFly Q8_0 que mejora la decodificacion en cargas de codigo.
+- No se dispone de informacion sobre tool calling, function calling ni capacidades de agente en la documentacion proporcionada.
 
 ## Casos de uso
 
-- **Asistente conversacional local en estación de trabajo**: con la build Q4_K_M (156,79 GiB) en un Mac M5 Max de 128 GB o RTX Spark de 128 GB, se puede desplegar un servidor compatible con OpenAI (`llama-server`) para conversaciones multi-turno sin depender de la nube, con decodificación de ~45-48 tok/s.
-
-- **Generación de código en local**: la model card reporta hasta 70 tok/s en generación de código con Q3_K en Mac M5 Max, lo que permite usar el modelo como asistente de programación en IDE mediante la API compatible de `llama-server`.
-
-- **Procesamiento de documentos con imágenes**: gracias al soporte de visión (`mmproj-Hy4-flash-bf16.gguf`), el modelo puede describir imágenes y, presumiblemente, responder preguntas sobre capturas, diagramas o documentos escaneados, usando `llama-mtmd-cli`.
-
-- **Despliegue en hardware con memoria limitada**: la build IQ2-AH (125,73 GiB) permite ejecutar el modelo en sistemas con 128 GB de memoria unificada o VRAM, a costa de una mayor pérdida de calidad por la cuantización agresiva de los expertos enrutados (2,0625 bpw en `gate`/`up`).
-
-- **Evaluación e investigación de cuantización**: las cinco builds con distintas recetas (Q4_K_M, Q3_K, IQ2-AH, SPARK-4Bit, SPARK-4Bit-Fast) permiten a investigadores comparar el impacto de distintas estrategias de cuantización sobre la calidad y la velocidad en un modelo de 222,7 B parámetros.
-
-- **Servicio de inferencia compatible con OpenAI**: el tag `endpoints_compatible` y el soporte de `llama-server` permiten integrar el modelo en pipelines existentes que ya consumen APIs tipo OpenAI, sin cambios en el código cliente.
-
-- **Escenarios de "workbuddy"**: la model card menciona que las pruebas de velocidad se realizaron en "real workbuddy scenarios", lo que sugiere uso como asistente de productividad o copiloto de tareas.
+- Asistente de codigo en estacion de trabajo local: con el build Q3_K en un Mac M5 Max 128 GB se alcanzan hasta 70 tok/s en generacion de codigo, lo que permite integrar el modelo en un IDE o en un flujo de autocompletado sin depender de la nube.
+- Chat conversacional de contexto largo: los ejemplos de llama.cpp usan ventanas de 8192 tokens y las pruebas de rendimiento cubren entradas de hasta 32K, adecuado para conversaciones multi-turno con documentos adjuntos.
+- Analisis de imagenes en local: mediante `llama-mtmd-cli` y el proyector `mmproj`, se pueden describir fotografias o capturas sin enviar datos a servicios externos, util en entornos con requisitos de privacidad.
+- Despliegue de servidor compatible con OpenAI: `llama-server` expone una API en el puerto 8080 que permite sustituir llamadas a APIs comerciales en prototipos y herramientas internas.
+- Inferencia en hardware NVIDIA de gama profesional: el runtime Strata con presupuesto de 16 GiB de VRAM y decodificacion especulativa DFly alcanza 47,6 tok/s en cargas de codigo, adecuado para pipelines de generacion automatizada.
+- Procesamiento por lotes en equipos con memoria unificada: los builds SPARK-4Bit estan pensados para dispositivos RTX Spark de 128 GB, con prefill de hasta 799 tok/s a 4K, lo que permite clasificacion, resumen o extraccion de informacion sobre lotes de documentos.
+- Evaluacion e investigacion de tecnicas de cuantizacion: los cinco builds con recetas diferenciadas permiten comparar el impacto de Q4_K_M, Q3_K, IQ2 y SPARK-4Bit sobre el mismo modelo base en tareas reales.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una imagen de resultados de benchmark (`hy4-flash-gguf-benchmark.png`) cuyo contenido numérico no está transcrito en la información proporcionada. No se dispone de valores de MMLU, HumanEval, GSM8K ni otros benchmarks en formato textual.
+La model card no incluye resultados de benchmarks academicos (MMLU, HumanEval, GSM8K u otros); unicamente presenta mediciones de velocidad. Se reproducen a continuacion.
 
-Los únicos datos numéricos de rendimiento disponibles son de velocidad de inferencia:
+**llama.cpp en Mac M5 Max 128 GB** (prefill / decode en tok/s):
 
-**Mac M5 Max 128GB**
-
-| Formato | Prefill tok/s (4K / 16K / 32K) | Decode tok/s (4K / 16K / 32K) |
+| Formato | Prefill 4K / 16K / 32K | Decode 4K / 16K / 32K |
 |---|---|---|
 | Q4_K_M | 629,8 / 448,1 / 418,6 | 48,13 / 45,18 / 44,15 |
 | Q3_K | 743,2 / 563,0 / 520,6 | 50,34 / 49,47 / 47,37 |
 
-**RTX Spark 128GB**
+**llama.cpp en RTX Spark 128 GB:**
 
-| Formato | Prefill tok/s (4K / 16K / 32K) | Decode tok/s (4K / 16K / 32K) |
+| Formato | Prefill 4K / 16K / 32K | Decode 4K / 16K / 32K |
 |---|---|---|
 | SPARK-4Bit-Fast | 799 / 717 / 707 | 31,95 / 33,14 / 33,39 |
 | SPARK-4Bit | 765 / 686 / 666 | 25,80 / 28,16 / 30,3 |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en formato textual en la información disponible.
+**Strata en NVIDIA CUDA con presupuesto de 16 GiB de VRAM** (modelo Q4_K_M_MTP_Q8_0, 4K de entrada / 512 de salida, contexto de 33.024 tokens):
+
+| Carga | Decode sin borrador | Decode con DFly Q8_0 |
+|---|---:|---:|
+| Prosa | 36,8 | 38,7 |
+| Codigo | 37,5 | 47,6 |
+
+**Strata en Mac mini M4 Pro 64 GB** (modelo IQ2, MTP k=2, contexto 8K, 256 tokens generados): prefill de 125-127 tok/s y decode de 17,3 tok/s.
+
+No se han publicado resultados de benchmarks de calidad en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM/memoria estimada**: entre 125,73 GiB (IQ2-AH) y 156,79 GiB (Q4_K_M) solo para los pesos. Hay que añadir memoria para el contexto KV y overhead del runtime, por lo que se recomienda al menos 128 GB para IQ2-AH y ~160-192 GB para Q4_K_M.
-- **GPU recomendadas**: no se especifican GPUs de datacenter (A100, H100) en la información; las pruebas documentadas usan Mac M5 Max 128GB (Metal) y RTX Spark 128GB.
-- **Consumer GPU**: no cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, etc.). Requiere sistemas con memoria unificada de 128 GB o más (Mac M5 Max, RTX Spark) o configuraciones multi-GPU.
-- **Opciones de despliegue**: llama.cpp (requiere el PR #32517, aún no fusionado), `llama-cli`, `llama-server` (API compatible con OpenAI), `llama-mtmd-cli` para visión. No se mencionan vLLM, TGI ni Ollama.
-- **Latencia y throughput**: ver tablas de velocidad arriba. En Mac M5 Max, decodificación de 44-50 tok/s; en RTX Spark, 25-33 tok/s. Prefill de 418-799 tok/s según formato y longitud de contexto.
+- VRAM/memoria estimada: los builds ocupan entre 125,73 GiB (IQ2-AH) y 156,79 GiB (Q4_K_M); se necesita memoria unificada o VRAM agregada de al menos esa cifra mas margen para el contexto y el proyector.
+- GPU recomendadas: RTX Spark de 128 GB para los builds SPARK-4Bit; Apple Silicon de 128 GB (Mac M5 Max) para Q4_K_M y Q3_K; Mac mini M4 Pro de 64 GB ejecuta el build IQ2.
+- En GPU consumer convencional (24 GB o menos) el modelo completo no cabe; seria necesario repartir capas entre GPU y CPU o usar el build IQ2 con offload parcial, con la penalizacion de velocidad correspondiente.
+- Opciones de despliegue: llama.cpp (soporte en el PR #32517, aun no fusionado, requiere compilar la rama), runtime Strata (soporte en el PR #7120) y `llama-server` para API compatible con OpenAI.
+- Throughput de referencia: decodificacion de 44-50 tok/s en Mac M5 Max con Q4_K_M/Q3_K; 25-33 tok/s en RTX Spark con SPARK-4Bit; 17,3 tok/s en Mac mini M4 Pro con IQ2; hasta 47,6 tok/s en CUDA con 16 GiB de VRAM usando decodificacion especulativa DFly.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La model card no incluye comparativas con otros modelos de tamaño similar (por ejemplo, otros MoE de ~200 B parámetros). No disponible.
+No se dispone en la informacion proporcionada de datos de otros modelos comparables (parametros, contexto, rendimiento o licencia) que permitan establecer una comparativa rigurosa. Como referencia estructural, el propio modelo base `tencent/Hy4-flash` seria el punto de comparacion natural frente a estas cuantizaciones, pero no se han facilitado sus especificaciones completas ni resultados de benchmarks.
+
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Hy4-flash (base, `tencent/Hy4-flash`) | ~224B (MoE) | no disponible | no disponible | safetensors (presumiblemente) |
+| Hy4-flash-GGUF (esta ficha) | ~224B (MoE) | no disponible | no disponible | GGUF (5 builds) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: la información disponible no indica la licencia del modelo, lo que impide confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo base `tencent/Hy4-flash` antes de usarlo en producción.
-- **Idiomas limitados**: solo chino, inglés y árabe según los tags; no hay soporte confirmado de castellano.
-- **Soporte de llama.cpp incompleto**: requiere compilar desde el PR #32517, que no está fusionado en la rama principal. Esto implica riesgo de inestabilidad y falta de soporte a largo plazo.
-- **Requisitos de memoria muy elevados**: incluso la build más pequeña (IQ2-AH) necesita ~125,73 GiB solo para pesos, lo que excluye prácticamente todo el hardware de consumo convencional.
-- **Pérdida de calidad por cuantización**: la build IQ2-AH usa 2,0625 bpw en las proyecciones `gate`/`up` de los expertos enrutados, lo que puede degradar notablemente la calidad. La model card recomienda Q4_K_M como opción segura.
-- **Riesgo de alucinación**: no cuantificado en la información disponible; aplicable el riesgo habitual de los LLM de gran escala.
-- **Sesgos**: no documentados en la información proporcionada.
-- **Contexto**: la longitud de contexto nativa no está especificada; los ejemplos usan 8192 tokens, lo que no confirma el máximo soportado.
-- **Visión**: requiere un archivo `mmproj` separado (`mmproj-Hy4-flash-bf16.gguf`) y el binario `llama-mtmd-cli`.
+- La licencia no esta indicada en la informacion disponible; antes de un uso comercial es imprescindible verificar los terminos del modelo base `tencent/Hy4-flash`.
+- El soporte en llama.cpp depende de un PR no fusionado (#32517); la API y el comportamiento pueden cambiar y no se garantiza estabilidad para produccion.
+- El modelo solo declara chino e ingles como idiomas; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No hay datos publicados de benchmarks de calidad, por lo que no es posible evaluar la degradacion introducida por cada receta de cuantizacion mas alla de las velocidades reportadas.
+- El tag de la ficha incluye arabe, pero la model card solo lista chino e ingles; existe una discrepancia no resuelta.
+- El campo de parametros safetensors del repo (845.686.433) no concuerda con los ~224B indicados en la model card; conviene tratar la cifra con cautela.
+- Riesgo de alucinacion y sesgos: no se han publicado evaluaciones de sesgo ni de fidelidad factual en la informacion disponible.
+- El requisito de memoria (125-157 GiB) excluye la mayoria de GPUs de consumo; el despliegue en hardware limitado exige offload parcial y reduce drasticamente el throughput.
+- El tag `endpoints_compatible` sugiere compatibilidad con endpoints, pero no se detalla el alcance ni las limitaciones de dicha compatibilidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
-- Informe técnico (arXiv): https://arxiv.org/abs/2602.21233
-- Documentación de AngelSlim: https://angelslim.readthedocs.io/
-- Organización AngelSlim en Hugging Face: https://huggingface.co/AngelSlim
-- Organización AngelSlim en ModelScope: https://modelscope.cn/organization/AngelSlim
+- Informe tecnico (arXiv): https://arxiv.org/abs/2602.21233
+- Documentacion de AngelSlim: https://angelslim.readthedocs.io/
+- Organizacion AngelSlim en Hugging Face: https://huggingface.co/AngelSlim
+- Organizacion AngelSlim en ModelScope: https://modelscope.cn/organization/AngelSlim
 - Repositorio GitHub de AngelSlim: https://github.com/Tencent/AngelSlim
-- PR de llama.cpp con soporte para Hy4-flash: https://github.com/ggml-org/llama.cpp/pull/32517
-- README específico para Mac Metal: https://huggingface.co/AngelSlim/Hy4-flash-GGUF/blob/main/README_MAC-Metal.md
-- README específico para SPARK-4Bit: https://huggingface.co/AngelSlim/Hy4-flash-GGUF/blob/main/README_SPARK-4Bit.md
-- Discord de AngelSlim: https://discord.com/invite/dHVNeuNdFt
+- PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/32517
+- PR de soporte en Strata: https://github.com/Niko1221/Strata/pull/7120
+- Guia para Mac Metal: https://huggingface.co/AngelSlim/Hy4-flash-GGUF/blob/main/README_MAC-Metal.md
+- Guia para RTX Spark: https://huggingface.co/AngelSlim/Hy4-flash-GGUF/blob/main/README_SPARK-4Bit.md
+- Discord: https://discord.com/invite/dHVNeuNdFt

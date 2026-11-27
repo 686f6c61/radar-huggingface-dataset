@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Prasiddha573/mbart-lora-nepali-summarizer",
+  "slug": "prasiddha573-mbart-lora-nepali-summarizer",
+  "author": "Prasiddha573",
+  "url": "https://huggingface.co/Prasiddha573/mbart-lora-nepali-summarizer",
+  "created_at": "2026-11-27T11:30:46.000Z",
+  "updated_at": "2026-11-27T11:42:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mbart",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2461688607,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

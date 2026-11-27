@@ -2,113 +2,103 @@
 
 ## Resumen
 
-OmniEVIE-4B es un modelo de recuperación multimodal (retrieval) desarrollado por Tencent IMA Product Center y Tencent Youtu Lab. No es un modelo generativo al uso: su función es producir representaciones multi-vector (estilo ColBERT) para textos, imágenes naturales, documentos visuales, vídeo nativo y contenido de agentes, herramientas, GUI y memoria, de modo que puedan indexarse y buscarse a gran escala. Se construye sobre Qwen3.5-4B mediante fine-tuning y añade una cabeza de proyección Prefix-MRL y una puerta de saliencia de consulta aprendida (`query_gate.safetensors`).
+OmniEVIE-4B es un modelo de recuperación (retrieval) multimodal y multi-vector desarrollado conjuntamente por el Tencent IMA Product Center y el Tencent Youtu Lab. Se construye sobre el modelo base Qwen/Qwen3.5-4B mediante ajuste fino y añade un cabezal de proyección y un mecanismo de compresión de tokens orientado a búsqueda semántica a gran escala, en lugar de generación de texto. Resuelve el problema de recuperar evidencia precisa (una celda de una tabla, un intervalo de vídeo, una cláusula enterrada en un documento) sobre corpus multimodales de millones de registros con latencias de milisegundos.
 
-Su propuesta diferencial es la compresión agresiva del índice manteniendo localización de evidencia: cada documento se destila en como máximo 128 vectores de 64 dimensiones en int8 (≤ 9.472 bytes por registro, 8,82 GiB por millón de registros), lo que permite búsquedas sobre un millón de registros en 54,2 ms en un único hilo de CPU. Cada acierto devuelve además las coordenadas espaciales (región de página) o temporales (intervalo de vídeo) donde se localiza la evidencia, sin necesidad de modelos OCR o de captioning externos.
+El modelo ocupa el primer puesto del MMEB-Leaderboard (excluyendo audio) en 190 tareas, según la model card, y lidera las categorías Visual Doc (84,70), Text (52,97) y Agent (54,14). Un único checkpoint ofrece dos modos de inferencia: Full, que conserva todos los tokens a 2048 dimensiones sin comprimir (puntuación 60,68), y Compressed, que destila cada documento en como máximo 128 vectores de 64 dimensiones en int8 (puntuación 60,06), con un índice de 8,82 GiB por millón de registros.
 
-El modelo es relevante porque unifica en un solo encoder tareas que normalmente requieren pipelines separados (búsqueda de texto, imagen, documento visual y momento de vídeo) y porque su formato de índice int8 hace viable el despliegue en CPU a escala de millones de registros. La licencia es Apache-2.0 y los pesos están en safetensors (BF16).
+La relevancia actual reside en su combinación de precisión de recuperación y eficiencia de almacenamiento: permite búsqueda sobre un millón de registros en 54,2 ms en un solo hilo de CPU, con localización espacial (región de página) o temporal (segundo de vídeo) directamente desde el resultado del `argmax`, sin necesidad de modelos OCR o de captioning externos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen3.5-4B con capas de atención bidireccional completa; salida multi-vector con late interaction (ColBERT) y proyección Prefix-MRL |
-| Parametros totales | 4.544.510.464 (4,54B) en BF16, más `query_gate.safetensors` |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | Transformer basado en Qwen3.5 con capas de atención bidireccional completa; cabezal Prefix-MRL y compresión ST-HAC |
+| Parametros totales | 4.544.510.464 (4,54B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos publicados en BF16; los vectores de índice se cuantizan a int8 con escala fija. No se documentan cuantizaciones del modelo base (GGUF, AWQ, etc.) |
-| Idiomas soportados | no disponible (la model card menciona recuperación cross-lingual, pero no enumera idiomas) |
+| Tipos de cuantizacion | BF16 (pesos principales); índices de recuperación en int8 (vectores comprimidos) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (`model.safetensors` en BF16 + `query_gate.safetensors`) |
+| Formato de pesos | safetensors (`model.safetensors` + `query_gate.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-OmniEVIE-4B parte de Qwen3.5-4B y lo adapta a recuperación sustituyendo el comportamiento causal por capas de atención bidireccional completa, necesarias para que cada token vea el contexto completo del documento. La salida no es un único vector por documento, sino un conjunto de hasta 128 vectores de 64 dimensiones (multi-vector, late interaction tipo ColBERT), con dimensiones elásticas seleccionables en tiempo de ejecución mediante Prefix-MRL: `{64, 128, 256, 512, 1024, 2048}`.
+El modelo parte de Qwen3.5-4B y sustituye el comportamiento generativo por un codificador de embeddings con atención bidireccional completa, adecuado para representaciones de secuencia completa. Incorpora tres componentes técnicos destacables: una proyección Prefix-MRL que permite dimensiones elásticas en tiempo de ejecución ({64, 128, 256, 512, 1024, 2048}) desde un único cabezal; un pipeline de clustering espacio-temporal Ward (ST-HAC) que agrupa tokens en hasta 128 centroides por documento, con renormalización esférica de centroides; y una puerta de saliencia de consulta aprendida (`query_gate.safetensors`, con umbral τ = 0,6 y margen de ruido θ = 0,38) que pondera qué tokens de la consulta contribuyen a la coincidencia.
 
-La innovación central es el pipeline de compresión ST-HAC (spatio-temporal Ward clustering): agrupa los tokens del documento con clustering de Ward con conciencia espacial y temporal, renormaliza los centroides sobre la esfera unidad y los cuantiza a int8 con escala fija, produciendo un layout de bytes exacto por registro. Una puerta de saliencia de consulta aprendida (`query_gate`) pondera los tokens de la consulta según su relevancia (con umbral τ = 0,6 y margen de ruido θ = 0,38 en los ejemplos de la model card), lo que permite que la búsqueda se centre en las partes informativas de la query.
-
-El índice se organiza en un embudo de tres etapas: recuperación gruesa (14,6 ms), filtrado por distancia de Hamming (19,7 ms) y re-scoring int8 (19,9 ms) sobre un millón de registros. Los datasets citados en la model card son TIGER-Lab/MMEB-V2 y vidore/vidore_benchmark_v3. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se empleó RLHF o DPO.
+El entrenamiento se realizó sobre los conjuntos TIGER-Lab/MMEB-V2 y vidore/vidore_benchmark_v3, según los metadatos del repositorio. No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO. La model card menciona la compresión a vectores int8 de 64 dimensiones (K128×d64 o K32×d64) como parte del pipeline de inferencia, no como un paso de cuantización de pesos.
 
 ## Capacidades
 
-- Recuperación multimodal unificada: texto, imagen natural, documento visual (páginas, tablas, gráficos), vídeo nativo y contenido de agentes, herramientas, GUI y memoria.
-- Representación multi-vector con late interaction (ColBERT) y dimensiones elásticas en tiempo de ejecución vía Prefix-MRL.
-- Localización de evidencia: cada acierto devuelve bounding box de página o intervalo temporal de vídeo directamente desde el `argmax` de la recuperación, sin OCR ni captioning externos.
-- Localización de momentos de vídeo nativa: intervalos y timestamps pico extraídos del índice multi-vector comprimido.
-- Recuperación cross-lingual (mencionada en la model card, sin detalle de pares de idiomas).
-- Puerta de saliencia de consulta aprendida para ponderar tokens de la query.
-- Compresión de tokens con ST-HAC y cuantización int8 para índices de bajo footprint.
-- Búsqueda a escala de millones de registros en CPU monohilo (54,2 ms para 1M; 120,2 ms para 5M).
-- No es un modelo generativo: no produce texto libre ni soporta tool calling ni razonamiento multi-paso en el sentido de un LLM conversacional.
+- Recuperación multimodal unificada: texto, imagen natural, documento visual (páginas, tablas, gráficos), vídeo nativo y agentes/herramientas/GUI/memoria.
+- Interacción tardía multi-vector (estilo ColBERT) con coincidencia a nivel de token.
+- Dimensiones elásticas en tiempo de ejecución mediante Prefix-MRL (64 a 2048 dimensiones).
+- Compresión de documentos a un máximo de 128 × 64D en int8, con localización de evidencia (bounding box de página o intervalo temporal de vídeo) directamente desde el `argmax`.
+- Recuperación de documentos visuales de alta densidad (tablas, gráficos, formularios) sin OCR externo.
+- Localización de momentos en vídeo nativo (intervalos y marcas de tiempo) sin modelos de captioning.
+- Soporte de tareas de agente: recuperación sobre trayectorias, herramientas, GUI y memoria.
+- No es un modelo generativo: no produce texto libre ni razonamiento conversacional; su salida son representaciones vectoriales.
 
 ## Casos de uso
 
-- Búsqueda de documentos visuales a escala: indexar millones de páginas (informes, facturas, papers) y recuperar la región exacta de la página que contiene la respuesta, útil en sistemas de archivo corporativo y compliance documental.
-- Recuperación de momentos de vídeo: localizar el instante concreto de un clip de 150 segundos que responde a una consulta textual, aplicable a archivos de medios, revisión de grabaciones de reuniones o moderación de contenido.
-- Búsqueda empresarial multimodal unificada: un único índice que mezcla notas de texto, capturas de pantalla, diapositivas y vídeos, con un solo encoder en lugar de pipelines separados por modalidad.
-- Recuperación de memoria y estado de agentes: indexar trazas de herramientas, GUI y memoria de agentes para que un sistema agéntico recupere interacciones previas relevantes.
-- RAG sobre documentación técnica con tablas y gráficos: recuperar la celda o el gráfico concreto de un PDF técnico para alimentar un generador con evidencia localizada.
-- Búsqueda en catálogos de imágenes y productos: recuperación imagen-texto con localización de la región relevante, útil en e-commerce y gestión de activos digitales.
-- Despliegue en entornos con recursos limitados: el índice int8 de 8,82 GiB por millón de registros y la búsqueda en CPU monohilo permiten servir recuperación a escala sin flota de GPU.
-- Moderación y auditoría de contenido: localizar pasajes o fotogramas concretos que coinciden con una política descrita en lenguaje natural, con trazabilidad de la evidencia.
+- Búsqueda documental empresarial: indexación de millones de páginas escaneadas con recuperación de la región exacta de la página que contiene la respuesta, útil en auditoría y compliance donde se exige citar la fuente visual.
+- Recuperación en vídeo largo: localización del instante exacto (marca de tiempo) en clips de varios minutos a partir de una consulta textual, aplicable a archivos audiovisuales, vigilancia o análisis de reuniones.
+- Atención al cliente con base de conocimiento multimodal: recuperación de fragmentos de manuales, tablas de precios o capturas de pantalla relevantes para alimentar un sistema RAG, con latencia de milisegundos sobre corpus grandes.
+- Búsqueda en documentación técnica y financiera: localización de cláusulas o cifras enterradas en tablas densas, con coincidencia a nivel de token y compresión int8 que reduce el coste de almacenamiento a 8,82 GiB por millón de registros.
+- Agentes autónomos con memoria: recuperación de trayectorias previas, estados de GUI y herramientas usadas en tareas multi-paso, gracias al track Agent del MMEB (54,14).
+- Moderación y descubrimiento de contenido visual: búsqueda de imágenes o fotogramas similares a una descripción textual a escala de millones de elementos con un solo hilo de CPU.
+- Sistemas de recomendación multimodal: emparejamiento entre consultas textuales y catálogos de imágenes o vídeo con dimensión de embedding ajustable según el presupuesto de latencia.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card (no se han verificado de forma independiente):
+Datos publicados en la model card (MMEB-Leaderboard, instantánea del 2026-11-24):
 
-| Benchmark / metrica | Resultado |
-|---|---|
-| QVHighlights val (1.083 queries): peak-in-segment hit | 78,0% |
-| QVHighlights val: span intersection | 94,3% |
-| QVHighlights val: span medio | 18% |
-| Latencia de búsqueda, 1M registros, CPU monohilo | 54,2 ms (14,6 ms gruesa + 19,7 ms Hamming + 19,9 ms int8) |
-| Latencia de búsqueda, 5M registros, CPU monohilo | 120,2 ms |
-| Footprint de índice, 1M registros (K128×d64 int8) | 8,82 GiB |
-| Footprint de índice, 1M registros (K32×d64 int8) | 2,15 GiB |
-| Bytes por registro | ≤ 9.472 |
+| Metrica | Full (2048D) | Compressed (≤128 × 64D int8) |
+|---|---|---|
+| Puntuación global MMEB (no audio) | 60,68 | 60,06 |
+| Visual Doc | 84,70 | no disponible |
+| Text | 52,97 | no disponible |
+| Agent | 54,14 | no disponible |
+| Latencia de búsqueda (1M registros, 1 hilo CPU) | no disponible | 54,2 ms |
+| Latencia de búsqueda (5M registros, 1 hilo CPU) | no disponible | 120,2 ms |
+| Huella de índice por 1M registros | no disponible | 8,82 GiB (K128×d64) / 2,15 GiB (K32×d64) |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks de recuperación estándar (MMEB-V2, ViDoRe V3) con cifras numéricas comparables.
+Resultados adicionales de localización en vídeo (QVHighlights val, 1.083 consultas): 78,0 % de acierto del pico dentro del segmento, 94,3 % de intersección de intervalo, con un 18 % de duración media del intervalo. No se han publicado en la información disponible resultados de MMLU, HumanEval o GSM8K, que no aplican a un modelo de recuperación.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia del encoder: no disponible de forma explícita. Con 4,54B parámetros en BF16, los pesos ocupan aproximadamente 9,1 GB, por lo que se necesita del orden de 10-12 GB de VRAM para cargar el modelo en BF16 con overhead de activaciones.
-- `flash-attn>=2.7.0` es obligatorio (`attn_implementation="flash_attention_2"`); verificado con torch 2.7.1, transformers 5.13-5.17 y flash-attn 2.8.1.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabe en una RTX 4090 (24 GB) en BF16 y en GPUs de datacenter (A100, H100) para indexación por lotes a mayor throughput.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090, RTX 3090 y GPUs con 16 GB o más en BF16; no se documentan variantes cuantizadas para GPUs de 8 GB.
-- Despliegue: paquete propio `omnievie` (`pip install git+https://github.com/Tencent/OmniEVIE.git`) con `OmniEVIE`, `QueryGate` y `ThreeStageIndex`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (el modelo no es generativo).
-- La búsqueda sobre el índice no requiere GPU: 54,2 ms para 1M registros en un solo hilo de CPU.
-- Throughput de indexación y latencia de encoding por documento: no disponibles.
+- VRAM estimada para inferencia: los pesos en BF16 ocupan aproximadamente 9,1 GB (tamaño del repositorio), por lo que se recomienda un mínimo de 10-12 GB de VRAM para el checkpoint completo, más memoria para activaciones.
+- GPU recomendadas: A100, H100 o L40S para indexación a gran escala; RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para el modelo completo en BF16.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM en BF16; con cuantización adicional (no documentada oficialmente) podría reducirse el requisito.
+- Opciones de despliegue: la librería indicada es `sentence-transformers`; el repositorio incluye CLI y código en github.com/Tencent/OmniEVIE. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, dado que es un modelo de embeddings y no generativo.
+- Latencia y throughput: búsqueda de 54,2 ms sobre 1M registros y 120,2 ms sobre 5M en un solo hilo de CPU con el índice comprimido; no se dispone de datos de throughput de codificación por GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Notas |
 |---|---|---|---|---|---|
-| OmniEVIE-4B | 4,54B | no disponible | Recuperación multimodal multi-vector con localización de evidencia | Apache-2.0 | Hugging Face + GitHub |
-| ColBERT / ColBERTv2 | no disponible en la informacion | no disponible | Recuperación multi-vector de texto | MIT (versiones publicadas) | Repositorios publicos |
-| jina-clip / CLIP-based retrievers | no disponible en la informacion | no disponible | Recuperación imagen-texto con vector unico | variable | Hugging Face |
-| Qwen3.5-4B (modelo base) | 4B aprox. | no disponible | LLM generativo | no disponible en la informacion | Hugging Face |
+| OmniEVIE-4B | 4,54B | no disponible | Texto, imagen, documento visual, vídeo, agente | Apache-2.0 | Top 1 MMEB no audio; compresión int8 con localización de evidencia |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Texto | no disponible | Modelo generativo base; no es un recuperador multimodal |
+| Alternativas multimodales de recuperación de ~9,4B | ~9,4B | no disponible | Multimodal | no disponible | La model card indica que OmniEVIE-4B supera a baselines de 9,4B en el MMEB |
 
-No se dispone en la información proporcionada de cifras comparativas de rendimiento frente a estos modelos; la comparación se limita a categoría, licencia y disponibilidad.
+No se dispone en la información proporcionada de especificaciones detalladas de modelos comparables adicionales (por ejemplo, variantes de ColBERT multimodales o recuperadores visuales de otros laboratorios) para completar una comparativa más amplia.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce respuestas en lenguaje natural, no soporta tool calling conversacional ni razonamiento multi-paso; solo genera embeddings para recuperación.
-- No se documentan los idiomas soportados ni el alcance real de la recuperación cross-lingual.
-- No se especifican la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset, lo que dificulta evaluar coberturas y sesgos.
-- Riesgo de sesgo heredado de Qwen3.5-4B y de los datasets de entrenamiento (MMEB-V2, ViDoRe V3); no se documentan evaluaciones de sesgo.
-- Riesgo de alucinación de evidencia: la localización devuelve siempre una región o timestamp, aunque la coincidencia sea débil; conviene aplicar umbrales de confianza y validación posterior.
-- Los resultados de benchmarks publicados (QVHighlights) proceden del propio autor y no se han verificado de forma independiente.
-- Dependencia estricta de `flash-attn>=2.7.0` y de un rango concreto de versiones de transformers, lo que puede complicar el despliegue en entornos con versiones fijadas.
-- El ecosistema de despliegue es propio (`omnievie`); no hay soporte documentado en servidores de inferencia estándar.
-- Licencia Apache-2.0 permite uso comercial, pero deben revisarse las licencias de los datasets de entrenamiento y del modelo base Qwen3.5-4B para producción.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta: madurez y adopción aún muy limitadas.
+- No es un modelo generativo: no debe emplearse para chat, razonamiento libre ni generación de código.
+- Riesgo de alucinación no aplica en el sentido generativo, pero la recuperación puede devolver coincidencias espurias en corpus ruidosos; la puerta de saliencia y el margen de ruido mitigan pero no eliminan este riesgo.
+- Idiomas soportados no documentados explícitamente; la model card menciona capacidades cross-lingual en la localización, pero sin lista oficial de idiomas.
+- Longitud de contexto no especificada; el rendimiento en documentos o vídeos muy largos puede degradarse fuera de los rangos evaluados (clips de 150 segundos en QVHighlights).
+- La compresión int8 a 128 × 64D implica una pérdida mínima de puntuación (60,68 → 60,06), pero puede afectar a casos de recuperación muy fina no cubiertos por los benchmarks.
+- Licencia Apache-2.0 permite uso comercial, pero se recomienda revisar `LICENSE.txt` y las condiciones de los datasets de entrenamiento (MMEB-V2, ViDoRe) para cumplimiento en producción.
+- Los benchmarks reportados provienen de la propia model card; no se han verificado de forma independiente en la información disponible.
+- El despliegue en producción requiere infraestructura de indexación vectorial (índices int8 multi-vector) que no se detalla en la información proporcionada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/tencent/OmniEVIE-4B
-- GitHub: https://github.com/Tencent/OmniEVIE
-- Informe técnico (PDF): https://github.com/Tencent/OmniEVIE/blob/main/OmniEVIE_Technical_Report.pdf
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Repositorio GitHub: https://github.com/Tencent/OmniEVIE
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.32203
+- Leaderboard MMEB: https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard
 - Dataset MMEB-V2: https://huggingface.co/datasets/TIGER-Lab/MMEB-V2
-- Dataset ViDoRe Benchmark V3: https://huggingface.co/datasets/vidore/vidore_benchmark_v3
-- Tencent (corporativo): https://www.tencent.com/
+- Dataset ViDoRe Benchmark v3: https://huggingface.co/datasets/vidore/vidore_benchmark_v3
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

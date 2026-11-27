@@ -2,72 +2,84 @@
 
 ## Resumen
 
-Kroma-GGUF es una cuantización en formato GGUF del modelo de generación de imágenes Kroma, desarrollado por lodestones y basado en el modelo Krea-2 de Krea. El repositorio, publicado por el usuario voldemir, ofrece los pesos del modelo en formato GGUF para su uso con herramientas compatibles como ComfyUI. El modelo original cuenta con 12.820 millones de parámetros y está diseñado para la tarea de texto a imagen (text-to-image).
+Kroma-GGUF es una cuantización en formato GGUF del modelo Kroma, un modelo de generación de imágenes texto-a-imagen construido sobre Krea-2. El repositorio lo publica el usuario voldemir en Hugging Face y su propósito es facilitar la ejecución del modelo en entornos de inferencia local, principalmente ComfyUI, sin necesidad de cargar los pesos completos en precisión nativa. Con 12.820.073.036 parámetros según los safetensors del repositorio, se trata de un modelo de difusión de gran tamaño, no de un modelo de lenguaje.
 
-Esta versión cuantizada facilita el despliegue en entornos con recursos limitados, ya que el formato GGUF permite una compresión de los pesos sin necesidad de un pipeline de difusión completo en memoria. El modelo se distribuye bajo la licencia Krea-2 Community License, que establece condiciones específicas de uso comunitario. Su relevancia radica en ofrecer una alternativa accesible a un modelo de generación de imágenes de gran tamaño, manteniendo la compatibilidad con el ecosistema de ComfyUI.
+La relevancia de esta publicación es práctica: los pesos originales de Krea-2 son pesados y requieren VRAM considerable, mientras que las variantes GGUF permiten escalonar la carga entre memoria de GPU y CPU, ajustar el nivel de cuantización y desplegar el modelo en hardware de consumo. El repositorio ocupa 68,2 GB, lo que refleja que contiene múltiples variantes de cuantización del mismo modelo base.
+
+No se dispone de información sobre la longitud de contexto, los idiomas soportados ni los datos de entrenamiento en la documentación proporcionada. La licencia declarada es la krea-2-community-license, que no es una licencia open source estándar y establece condiciones específicas para el uso del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para texto a imagen (no disponible el detalle exacto) |
+| Arquitectura | no disponible (modelo de difusion texto-a-imagen; la model card no detalla el backbone) |
 | Parametros totales | 12.820.073.036 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de generacion de imagenes) |
-| Tipos de cuantizacion | GGUF (niveles de cuantizacion no especificados en la informacion disponible) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (variantes multiples; el repositorio de 68,2 GB sugiere varios niveles, pero no se detallan en la informacion disponible) |
 | Idiomas soportados | no disponible |
-| Licencia | Krea-2 Community License (otra) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | krea-2-community-license (license: other) |
+| Formato de pesos | GGUF (repo con tag gguf); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo Kroma. Por su categoria de texto a imagen, se trata presumiblemente de un modelo de difusion, posiblemente basado en un transformer de difusion (como DiT o similar), pero este dato no se ha confirmado en la documentacion disponible. El modelo base es Krea/Krea-2, y la cuantizacion GGUF se ha generado a partir de lodestones/Kroma.
+No se dispone de información sobre la arquitectura interna en la documentación proporcionada. Por el pipeline declarado (text-to-image) y el tamaño de parámetros, se trata de un modelo generativo de imágenes, presumiblemente un modelo de difusión, pero no se especifica si emplea un transformer de difusión, un UNet o una arquitectura híbrida. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de ajuste por preferencias.
 
-No se dispone de informacion sobre el proceso de entrenamiento, el numero de tokens o imagenes utilizadas, ni sobre el uso de tecnicas como RLHF o DPO. Al ser un modelo de generacion de imagenes, el entrenamiento habra consistido en un dataset de pares texto-imagen, pero los detalles no estan publicados en la ficha.
+Lo que sí se conoce es la cadena de derivación: Kroma-GGUF cuantiza lodestones/Kroma, que a su vez se basa en Krea/Krea-2. La relación declarada en los metadatos es `base_model_relation: quantized`, es decir, esta publicación no introduce cambios arquitectónicos ni reentrenamiento, sino una conversión de formato y reducción de precisión de los pesos para inferencia. Cualquier innovación técnica relevante residiría en el modelo original Krea-2, sobre el que no se aportan detalles en la información disponible.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image).
-- Compatibilidad con ComfyUI, lo que permite su integracion en flujos de trabajo de generacion y edicion de imagenes.
-- Formato GGUF que posibilita la ejecucion en entornos con memoria reducida frente al modelo original en safetensors.
-- No se documentan capacidades de tool calling, agentes, razonamiento multimodal ni otras funcionalidades propias de LLMs.
+- Generación de imágenes a partir de prompts de texto (pipeline text-to-image).
+- Integración con ComfyUI, según los tags del repositorio, lo que permite encadenar el modelo en flujos de trabajo con nodos.
+- Ejecución en local mediante herramientas compatibles con GGUF, con posibilidad de descargar parcialmente el modelo a CPU.
+- No se documentan capacidades de edición de imagen, inpainting, control estructural, tool calling ni razonamiento multi-paso.
+- No se documentan capacidades multilingües ni de audio o vídeo.
+- No se documenta un modo de razonamiento o "thinking mode".
 
 ## Casos de uso
 
-- Generacion de ilustraciones y concept art: el modelo puede crear imagenes a partir de prompts descriptivos, util para disenadores y artistas que necesitan explorar ideas rapidamente.
-- Prototipado de diseno grafico: permite generar variantes visuales de un concepto sin necesidad de un motor de renderizado complejo, agilizando la fase de exploracion en estudios de diseno.
-- Creacion de contenido para blogs y redes sociales: los creadores pueden producir imagenes personalizadas para acompanar articulos o publicaciones, con un control razonable sobre el estilo y la composicion.
-- Integracion en pipelines de ComfyUI: al ser un GGUF, se puede cargar en nodos de ComfyUI para combinarlo con otros modelos de difusion, controladores de atencion o upscalers, ampliando las posibilidades de postprocesado.
-- Experimentacion educativa: investigadores y estudiantes pueden estudiar el comportamiento de un modelo de difusion cuantizado y comparar su salida con la del modelo original en safetensors.
-- Generacion de assets para videojuegos: los desarrolladores pueden producir texturas, fondos o elementos visuales de forma procedural, siempre que la licencia comunitaria lo permita.
+- Prototipado de generación de imágenes en estación de trabajo local: cargar una variante GGUF de Kroma en ComfyUI permite iterar sobre prompts y estilos sin depender de una API externa, ajustando la cuantización al presupuesto de VRAM disponible.
+- Ilustración de contenidos para blogs y documentación técnica: el modelo puede generar imágenes de cabecera o diagramas conceptuales a partir de descripciones textuales, integrándose en un pipeline de publicación que llame al modelo por lotes.
+- Exploración artística y generación de variaciones: al ejecutarse localmente, permite generar grandes volúmenes de imágenes con semillas distintas para seleccionar candidatas, algo inviable económicamente con APIs de pago a gran escala.
+- Pruebas de concepto de producto: equipos que evalúan si un modelo de imagen se ajusta a su dominio antes de comprometerse con infraestructura, usando la versión GGUF como paso previo a desplegar los pesos completos.
+- Investigación sobre cuantización: comparar la calidad de salida entre variantes GGUF y los pesos originales de Kroma permite medir la degradación introducida por la reducción de precisión en tareas de generación visual.
+- Despliegue en entornos con GPU de gama consumer: al poder repartir pesos entre GPU y CPU, el modelo es utilizable en equipos que no pueden alojar los 12.800 millones de parámetros en precisión completa dentro de la VRAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de metricas como FID, CLIP score o comparaciones con otros modelos de generacion de imagenes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Al ser un GGUF de un modelo de 12.8B parametros, el consumo dependera del nivel de cuantizacion elegido. Con cuantizaciones de 4 bits, podria requerir entre 8 y 12 GB de VRAM, pero este dato no se ha confirmado.
-- GPU recomendadas: no disponible. Modelos de este tamano suelen ejecutarse en GPUs con al menos 16 GB de VRAM (como RTX 4080, RTX 4090, A100) para cuantizaciones medias, pero no hay datos oficiales.
-- Compatibilidad con GPU de consumo: probablemente si, con cuantizaciones agresivas (Q4_K_M o inferiores), pero no se ha verificado.
-- Opciones de despliegue: ComfyUI es la herramienta mencionada en los tags. Tambien podria utilizarse con otros frameworks que soporten GGUF para difusion, como llama.cpp (si se adapta) o difusores personalizados, aunque no hay documentacion al respecto.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, un modelo de 12.800 millones de parámetros en FP16 requiere aproximadamente 25,6 GB solo para los pesos; en cuantizaciones de 8 bits bajaría a unos 12,8 GB y en 4 bits a unos 6,4 GB, sin contar activaciones ni overhead del runtime. Estas cifras son estimaciones aritméticas, no datos publicados por el autor.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, los pesos completos en precisión nativa encajan en A100 40/80 GB y H100; las variantes cuantizadas podrían ejecutarse en RTX 4090 (24 GB) y, con cuantizaciones agresivas, en GPUs de 12-16 GB.
+- GPU de consumo: probablemente viable en RTX 4090 y RTX 3090 con cuantización; en GPUs de 8 GB requeriría descarga parcial a CPU, con la penalización de velocidad correspondiente.
+- Opciones de despliegue: ComfyUI (mencionado explícitamente en los tags), y runtimes con soporte GGUF. No se confirma compatibilidad con vLLM ni TGI, que no están orientados a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable con otros modelos de generacion de imagenes cuantizados. Se puede indicar que el modelo base Krea-2 compite con modelos como Stable Diffusion XL o FLUX, pero no hay datos de rendimiento comparativos en la ficha. Por tanto, la comparativa no esta disponible.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Kroma-GGUF (esta ficha) | 12.820.073.036 | no disponible | GGUF | krea-2-community-license | Cuantizacion de Kroma, orientada a ComfyUI |
+| lodestones/Kroma | no disponible | no disponible | safetensors | no disponible | Modelo base inmediato del que deriva esta cuantizacion |
+| Krea/Krea-2 | no disponible | no disponible | safetensors | krea-2-community-license | Modelo original de referencia |
+
+No se dispone de datos de rendimiento ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de la misma categoría. La comparación se limita, por tanto, a la cadena de derivación y al formato de distribución.
 
 ## Limitaciones y advertencias
 
-- La licencia Krea-2 Community License puede imponer restricciones al uso comercial. Es necesario revisar los terminos completos antes de utilizar el modelo en produccion.
-- Al ser una cuantizacion, la calidad de las imagenes generadas puede degradarse ligeramente respecto al modelo original en safetensors, especialmente en cuantizaciones agresivas.
-- No se documentan sesgos especificos, pero como todo modelo de generacion de imagenes, puede reflejar sesgos presentes en sus datos de entrenamiento.
-- Riesgo de alucinacion visual: el modelo puede generar detalles inconsistentes o artefactos, especialmente con prompts complejos o poco comunes.
-- No se proporciona informacion sobre los idiomas soportados; probablemente el modelo funcione mejor en ingles, pero no esta confirmado.
-- El repositorio tiene pocas descargas y likes, lo que sugiere que no ha sido ampliamente validado por la comunidad.
+- La licencia krea-2-community-license no es una licencia open source estándar; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones de atribución, de uso o de redistribución.
+- Al ser una cuantización, la calidad de las imágenes generadas puede degradarse respecto a los pesos originales de Kroma; el grado de degradación no está documentado.
+- No se dispone de información sobre sesgos del modelo base, por lo que no puede evaluarse su comportamiento en categorías demográficas, culturales o de contenido sensible.
+- Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir resultados plausibles pero factualmente incorrectos, especialmente en texto dentro de la imagen, anatomía y relaciones espaciales.
+- No se documentan los idiomas soportados; la calidad con prompts en castellano es desconocida.
+- El repositorio tiene 194 descargas y 5 likes, un nivel de adopción bajo, lo que reduce la probabilidad de que los problemas estén documentados por la comunidad.
+- No hay información sobre requisitos mínimos de hardware ni sobre el runtime exacto recomendado más allá de la mención a ComfyUI.
+- El tamaño del repositorio (68,2 GB) implica una descarga considerable y espacio en disco significativo si se quieren conservar varias cuantizaciones.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/voldemir/Kroma-GGUF
-- Modelo base Krea/Krea-2: https://huggingface.co/Krea/Krea-2 (no verificado)
-- Modelo base lodestones/Kroma: https://huggingface.co/lodestones/Kroma (no verificado)
+- Modelo base intermedio: https://huggingface.co/lodestones/Kroma
+- Modelo original: https://huggingface.co/Krea/Krea-2

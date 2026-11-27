@@ -2,102 +2,92 @@
 
 ## Resumen
 
-`Samfisheryu/Qwen3.8-flash-next-nowag-2bit` es un artefacto de cuantización extrema (aproximadamente 2 bits por peso) de los expertos enrutados del modelo Qwen3.8-Flash-Next, publicado por el usuario Samfisheryu. No es un modelo autónomo ni un repositorio Transformers al uso: contiene únicamente los pesos de los expertos MoE recompuestos con la técnica NoWAG (codebook compartido en BF16 y asignaciones empaquetadas de 12 bits), y necesita el checkpoint base para aportar arquitectura, tokenizador y tensores no-experto.
+Qwen3.8-flash-next-nowag-2bit es un checkpoint de servicio de texto publicado por el usuario Samfisheryu sobre el modelo base RadixArk/Qwen3.8-Flash-Next-NVFP4, que a su vez deriva del modelo original Qwen/Qwen3.8-Flash-Next. Se trata de una cuantización extrema a aproximadamente 2 bits por peso de los expertos enrutados (NoWAG) de una arquitectura Mixture-of-Experts de 59.204.026.259 parámetros totales, empaquetada como un checkpoint completo y autónomo de unos 91,6 GiB para el motor de inferencia BigRabbit.
 
-El modelo base, desarrollado por el equipo Qwen de Alibaba, es un MoE multimodal experimental de arquitectura híbrida con 125B parámetros en el modelo principal más 51B adicionales en embeddings N-gram, de los cuales solo unos 6B se activan por token. Su ventana de contexto declarada es de 262.000 tokens y se publicó como open weight el 26 de agosto de 2026.
+El modelo resuelve el problema de servir un MoE de gran tamaño con un coste de memoria drásticamente reducido: los 48 expertos por capa (512 expertos por capa) se almacenan con una asignación empaquetada de 12 bits y un codebook compartido en BF16, mientras que el resto de pesos no experto, las tablas PLE y todos los tensores MTP se mantienen sin cambios respecto al base NVFP4. La parte de expertos NoWAG ocupa unos 29 GiB, pero las tablas PLE por sí solas suman aproximadamente 47,7 GiB, lo que condiciona los requisitos de RAM del host.
 
-La relevancia de este repositorio es acotada pero específica: demuestra una ruta de compresión agresiva del estado de los expertos (de ~29 GiB en el export) para servir un MoE de gran tamaño en infraestructura con memoria limitada. No obstante, es un artefacto comunitario sin descargas ni validación pública, sin benchmarks propios y atado a un runtime concreto (Big-Rabbit), por lo que debe tratarse como material de experimentación, no como sustituto del checkpoint original.
+Es relevante ahora porque demuestra una vía práctica de despliegue de un MoE de casi 60.000 millones de parámetros en configuraciones de dos GPU mediante tensor parallelism, con decodificación especulativa nativa (MTP) y la posibilidad de mantener las tablas PLE en disco. No obstante, el checkpoint no es cargable directamente con Transformers AutoModel y depende de un motor específico (BigRabbit) y de una revisión concreta de su soporte de modelos completos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE sobre transformer (modelo base Qwen3.8-Flash-Next, multimodal); este repo contiene solo los 48 capas de expertos enrutados, 512 expertos por capa |
-| Parámetros totales | 125B en el modelo principal + 51B en embeddings N-gram (modelo base); el export NoWAG no declara recuento propio de parámetros |
-| Parámetros activos | 6B por token (modelo base) |
-| Longitud de contexto | 262.000 tokens (modelo base) |
-| Tipos de cuantización | NoWAG de ~2 bits por peso de experto (D=6, asignaciones de 12 bits, codebook BF16 compartido de forma `[4096, 6]`, normalizadores BF16 entrenados); en serving se admite `--dense-quant fp8` y `--kv-dtype int8` para las partes densas y la caché KV |
+| Arquitectura | Transformer Mixture-of-Experts (48 capas MoE, 512 expertos por capa) con MTP y tablas PLE |
+| Parametros totales | 59.204.026.259 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Expertos NoWAG a ~2 bits por peso (asignaciones empaquetadas de 12 bits, D=6, codebook compartido BF16, normalizadores BF16 entrenados); pesos no experto, PLE y MTP en el formato del base NVFP4 |
 | Idiomas soportados | en, zh |
-| Licencia | no disponible (la model card indica que se aplican los términos del modelo base) |
-| Formato de pesos | no disponible: 98 archivos de export NoWAG propietario (packed assignments + codebook + normalizadores); no es un repo `safetensors`/GGUF cargable con `AutoModel.from_pretrained` |
+| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
+| Formato de pesos | safetensors (checkpoint completo con índice; no cargable por Transformers AutoModel) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un Mixture-of-Experts multimodal con 48 capas MoE y 512 expertos por capa, dentro de un diseño que activa aproximadamente 6B parámetros por token sobre un total de 125B, complementado con 51B parámetros en embeddings N-gram. Según la documentación del proyecto, este diseño reduce el coste de entrenamiento e inferencia frente a Qwen3.7-Plus (alrededor de una novena parte del coste de entrenamiento) manteniendo capacidades superiores en código. No se dispone de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) en la información proporcionada.
+La arquitectura es un transformer Mixture-of-Experts con 48 capas MoE y 512 expertos por capa. Los expertos enrutados han sido sustituidos por el export NoWAG "Paper2", que codifica cada peso de experto con una asignación empaquetada de 12 bits y dimensión D=6 sobre un codebook compartido en BF16, con normalizadores BF16 entrenados, resultando en aproximadamente 2 bits por peso de experto excluyendo los normalizadores. El resto del modelo (pesos no experto, tablas PLE y todos los tensores MTP) se conserva sin cambios respecto a RadixArk/Qwen3.8-Flash-Next-NVFP4 en la revisión 7b719225; los expertos FP4 originales del modelo principal se omiten.
 
-La innovación de este repositorio no está en el entrenamiento, sino en la compresión: los expertos enrutados se exportan con NoWAG, una variante de cuantización por codebook en la que cada peso se aproxima mediante una combinación de D=6 vectores de un codebook BF16 compartido de 4.096 entradas, con asignaciones empaquetadas a 12 bits (equivalente a ~2 bits por peso, excluyendo normalizadores y metadatos). El checkpoint corresponde a la etapa Paper2 del pipeline (restored → cross-layer → Paper2), con asignaciones y codebook fijados; no es un checkpoint solo-restored. Los tensores no-experto, el tokenizador y la arquitectura se toman del checkpoint base, que se descarga por separado.
+El empaquetado no reentrena ni recuantiza los expertos: los tensores son idénticos a la revisión original Paper2 del repositorio, y solo se ha reorganizado el layout (directorio `nowag/`) y eliminado rutas históricas de la máquina de entrenamiento del manifiesto de expertos. No se documenta en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original. La innovación técnica destacable es la cuantización NoWAG de expertos con codebook compartido, junto con el soporte de decodificación especulativa nativa mediante MTP en el motor BigRabbit.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general heredados del modelo base Qwen3.8-Flash-Next.
-- Capacidades multimodales: el modelo base se describe como multimodal en las fuentes disponibles; este export conserva los expertos, mientras que las torres y tensores no-experto provienen del checkpoint base.
-- Generación y asistencia en código, con resultados reportados por el autor del modelo base en SWE-Bench Pro, SWE-Bench Multilingual y DeepSWE 1.1 (sin cifras en la información disponible).
-- Razonamiento agéntico multi-paso y ejecución de tareas de larga duración (el modelo base reporta resultados en Agent's Last Exam e IFBench).
-- Ventana de contexto larga: 262.000 tokens, adecuada para repositorios completos o documentos extensos.
-- Multilingüismo limitado a inglés y chino según los metadatos del repo.
-- No se declara soporte explícito de tool calling/function calling en la información disponible; debe verificarse contra la documentación del modelo base.
-- No se declara modo thinking explícito ni capacidades de audio en la información disponible.
+- Generación de texto conversacional y de propósito general en inglés y chino.
+- Razonamiento y respuesta multi-turno, según el pipeline declarado de text-generation y conversational.
+- Soporte de decodificación especulativa mediante MTP (`--speculative-method mtp`), que acelera la generación.
+- Despliegue con tensor parallelism en múltiples GPU (`--tp-size`, `--gpu`).
+- Gestión de tablas PLE en disco mediante `--host-table-backend disk` para reducir la presión de RAM.
+- Capacidades de tool calling, function calling, agentes, matemáticas, código o visión: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación en cuantización extrema: banco de pruebas para medir la degradación real de un MoE de 125B al comprimir los expertos a ~2 bits, comparando salidas contra el checkpoint base en BF16 o NVFP4.
-- Serving con memoria restringida: el export de expertos ocupa ~29 GiB, de modo que un despliegue con Big-Rabbit permite estudiar el equilibrio entre memoria de GPU/host, caché y calidad, en escenarios donde el checkpoint completo no cabe.
-- Análisis de código en monolitos grandes: con 262.000 tokens de contexto puede procesar repositorios medianos completos para tareas de revisión, resumen o localización de bugs, siempre que la pérdida por cuantización sea aceptable.
-- Asistentes técnicos en inglés y chino: generación de documentación, explicación de APIs y traducción técnica bidireccional entre ambos idiomas.
-- Procesamiento por lotes de documentación extensa: clasificación, extracción y resumen de contratos o informes largos en pipelines offline donde el throughput prima sobre la latencia interactiva.
-- Evaluación de runtimes de serving: comparar Big-Rabbit frente a otras pilas de inferencia en métricas de latencia y fidelidad de salida con un modelo MoE grande y cuantizado.
-- Prototipado de agentes de larga duración: tareas de varios pasos con contexto acumulado, sujetas a validación empírica de la estabilidad del modelo cuantizado.
-- Docencia y divulgación: ejemplo práctico de cómo se estructura un export NoWAG (codebook, asignaciones, normalizadores) y de por qué un artefacto de cuantización no es un modelo autónomo.
+- Servicio de chat multi-turno en inglés y chino: el modelo puede mantener conversaciones conversacionales en producción sobre el motor BigRabbit, con decodificación especulativa MTP activada para reducir la latencia por token en cargas interactivas.
+- Despliegue en dos GPU con tensor parallelism: usando `br serve --model ... --tp-size 2 --gpu 0,1`, se puede repartir un MoE de 59.200 millones de parámetros entre dos aceleradores, lo que resulta adecuado para entornos con presupuesto de VRAM limitado.
+- Evaluación de cuantización extrema en investigación: el checkpoint permite medir empíricamente la degradación de calidad de expertos a ~2 bits frente al base NVFP4, comparando salidas sobre el mismo conjunto de prompts.
+- Servicio con almacenamiento en disco de tablas PLE: en hosts con RAM insuficiente para los ~47,7 GiB de tablas PLE, `--host-table-backend disk` permite arrancar el servidor manteniendo las tablas en disco, adecuado para entornos de pruebas o baja concurrencia.
+- Generación de texto por lotes en pipelines internos: al ser un checkpoint completo y autónomo (sin descarga separada del modelo base ni argumento de ruta de expertos), simplifica la integración en pipelines de procesamiento de texto en inglés y chino.
+- Reproducción de resultados del export Paper2: al conservar los tensores de expertos idénticos a la revisión original, sirve para validar que el reempaquetado no altera las salidas del modelo, útil en auditorías de artefactos cuantizados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del export indica explícitamente que no reclama nuevos resultados de evaluación, ni salidas idénticas bit a bit entre runtimes, ni una garantía universal de precisión.
-
-| Benchmark | Este modelo (NoWAG 2-bit) | Qwen3.8-Flash-Next (base) |
-|---|---|---|
-| IFBench | no disponible | reportado por el autor, sin cifras en la información disponible |
-| Agent's Last Exam | no disponible | reportado por el autor, sin cifras en la información disponible |
-| SWE-Bench Pro | no disponible | reportado por el autor, sin cifras en la información disponible |
-| SWE-Bench Multilingual | no disponible | reportado por el autor, sin cifras en la información disponible |
-| DeepSWE 1.1 | no disponible | reportado por el autor, sin cifras en la información disponible |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que esta actualización de empaquetado no reclama ningún resultado de benchmark nuevo ni garantía de precisión.
 
 ## Requisitos de hardware
 
-- El export de expertos pesa ~29 GiB (98 archivos, repositorio de 31,1 GB). Es solo la parte comprimida: la memoria total de serving debe sumar los tensores del checkpoint base, la caché de GPU/host y la caché KV.
-- No hay cifras oficiales de VRAM. Como referencia aritmética, un modelo de 125B parámetros en 4 bits ronda los 60-70 GB solo en pesos, a lo que se añaden los 51B de embeddings N-gram; cualquier despliegue realista requiere múltiples GPU de 80 GB (A100/H100/H200) o bien offload a host.
-- No cabe en GPUs de consumo (RTX 4090, 24 GB) en su configuración completa; solo tendría sentido con esquemas de offload masivo, cuyo rendimiento no está documentado.
-- Despliegue: exclusivamente mediante Big-Rabbit (`ft serve --model ./flash-next-base --nowag-expert-path ./flash-next-nowag-paper2 --dense-quant fp8 --kv-dtype int8`), con la línea base de preparación en el commit `bb4582d7a6c1742fca19e9844157d1a0b1437309`. No es compatible con `AutoModel.from_pretrained`, vLLM, llama.cpp, Ollama ni TGI en su forma actual.
-- Checkpoint base de referencia para el ejemplo de descarga: `RadixArk/Qwen3.8-Flash-Next-NVFP4`, revisión `7b719225242aacd3dbd3f9407468c2ee9a9d2594`.
-- Latencia y throughput: no disponibles. Dependen del número y tipo de GPU, del reparto de expertos entre dispositivos y del backend de kernels de Big-Rabbit.
+- Descarga total: aproximadamente 91,6 GiB (tamaño del repo en Hugging Face: 98,3 GB).
+- Porción de expertos NoWAG: aproximadamente 29 GiB; no representa el total de descarga ni de memoria necesaria.
+- Tablas PLE: aproximadamente 47,7 GiB por sí solas; pueden mantenerse en disco con `--host-table-backend disk`.
+- RAM del host: debe reservarse suficiente para los pesos y el runtime; el requisito real supera ampliamente los 29 GiB de expertos.
+- GPU: se documenta el despliegue en dos GPU con `--tp-size 2 --gpu 0,1`; no se especifican modelos concretos de GPU (A100, H100, RTX 4090) ni VRAM mínima por GPU.
+- Viabilidad en GPU de consumo: no disponible en la información proporcionada.
+- Motor de despliegue: exclusivamente BigRabbit (https://github.com/ServeBig-project/Big-Rabbit), con soporte de modelo completo desde el PR #82 (rama `release/open-source` mientras el PR esté abierto). No es compatible con Transformers AutoModel; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; solo se indica que MTP habilita decodificación especulativa nativa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Motor de despliegue |
 |---|---|---|---|---|---|
-| Samfisheryu/Qwen3.8-flash-next-nowag-2bit | base: 125B + 51B N-gram (6B activos) | 262k (heredado del base) | NoWAG ~2 bits en expertos | no disponible | repo comunitario, 0 descargas, requiere Big-Rabbit |
-| Qwen/Qwen3.8-Flash-Next (base) | 125B + 51B N-gram (6B activos) | 262k | BF16 (referencia) | no disponible en la información proporcionada | open weight, publicación oficial del 26-08-2026 |
-| RadixArk/Qwen3.8-Flash-Next-NVFP4 | mismos que el base | 262k | NVFP4 en tensores densos (usado como base en este repo) | no disponible | checkpoint comunitario, referenciado por el autor |
-| Qwen3.8-27B | 27B (no confirmado en detalle) | no disponible | no disponible | no disponible | modelo orientado a consumo de la misma generación |
+| Samfisheryu/Qwen3.8-flash-next-nowag-2bit | 59.204.026.259 | no disponible | Expertos ~2 bits NoWAG + resto NVFP4 | qwen-community-1.0 | BigRabbit |
+| RadixArk/Qwen3.8-Flash-Next-NVFP4 (base) | no disponible | no disponible | NVFP4 | no disponible | no disponible |
+| Qwen/Qwen3.8-Flash-Next (original) | no disponible | no disponible | BF16 (presumible, no confirmado) | Qwen Community License 1.0 | Transformers y otros |
+
+No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: pasar el directorio a `AutoModel.from_pretrained` falla. Requiere el checkpoint base y el runtime Big-Rabbit.
-- Licencia no declarada en los metadatos. La model card remite a los términos del modelo base; antes de cualquier uso comercial hay que verificar la licencia de Qwen/Qwen3.8-Flash-Next y de RadixArk/Qwen3.8-Flash-Next-NVFP4.
-- Artefacto sin validación pública: 0 descargas y 0 likes en el momento de la consulta, sin benchmarks ni comparación de fidelidad frente al modelo original.
-- La cuantización a ~2 bits por peso de experto implica una degradación de calidad no cuantificada. El autor renuncia explícitamente a garantizar precisión o equivalencia bit a bit entre runtimes.
-- Idiomas: solo inglés y chino declarados; el rendimiento en castellano no está verificado y probablemente sea inferior.
-- Dependencia de un backend concreto: los resultados pueden variar entre versiones de Big-Rabbit y entre builds de kernels; el commit de referencia está fijado en la model card.
-- La model card advierte de que los campos de procedencia contienen rutas absolutas históricas que no son necesarias para servir el modelo; conviene revisar el manifiesto antes de automatizar despliegues.
-- Riesgo de alucinación y sesgos: no se han publicado evaluaciones específicas para este export; se heredan los del modelo base, agravados potencialmente por la compresión.
-- El tamaño del repositorio (31,1 GB) y la necesidad de descargar además un checkpoint base completo complican la reproducibilidad en entornos con ancho de banda limitado.
+- El checkpoint no es cargable directamente por Transformers AutoModel; requiere el motor BigRabbit y, mientras el PR #82 esté abierto, la rama `release/open-source`.
+- La cuantización a ~2 bits por peso de experto puede degradar la calidad frente al base NVFP4; el autor no aporta benchmarks ni garantía de precisión.
+- Los requisitos reales de memoria son elevados: las tablas PLE (~47,7 GiB) dominan el consumo y pueden obligar a usar backend de disco, con impacto en latencia.
+- Idiomas limitados a inglés y chino; no se documenta soporte multilingüe adicional.
+- Longitud de contexto no disponible; no se puede garantizar el comportamiento en ventanas largas.
+- Licencia Qwen Community License 1.0: es necesario revisar sus términos para uso comercial, ya que no es una licencia permisiva estándar (MIT/Apache).
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; aplican los del modelo base Qwen3.8-Flash-Next.
+- Repositorio con 0 likes y 193 descargas: ecosistema de validación muy limitado; conviene auditar las salidas antes de usarlo en producción.
+- El autor no reclama ningún resultado de benchmark nuevo para esta revisión de empaquetado.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/Samfisheryu/Qwen3.8-flash-next-nowag-2bit
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Checkpoint base NVFP4 usado en el ejemplo: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
-- Runtime Big-Rabbit: https://github.com/ServeBig-project/Big-Rabbit
-- Ficha en AI Wiki: https://aiwiki.ai/wiki/qwen3_8_flash_next
-- Ficha en Learn AI: https://ai.miraheze.org/wiki/Qwen-3.8-Flash-Next
-- Seguimiento de benchmarks y fecha de publicación: https://aireleasetracker.com/model/qwen/qwen3.8-flash-next
+- Hugging Face: https://huggingface.co/Samfisheryu/Qwen3.8-flash-next-nowag-2bit
+- Revisión original Paper2 (expertos): https://huggingface.co/Samfisheryu/Qwen3.8-flash-next-nowag-2bit/tree/b06a52c505efce0b6ec7689057b15304fdeee048
+- Modelo base cuantizado: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/tree/7b719225242aacd3dbd3f9407468c2ee9a9d2594
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Motor BigRabbit: https://github.com/ServeBig-project/Big-Rabbit
+- PR de soporte de modelo completo: https://github.com/ServeBig-project/Big-Rabbit/pull/82
+- Licencia: LICENSE (incluida en el repositorio de Hugging Face)

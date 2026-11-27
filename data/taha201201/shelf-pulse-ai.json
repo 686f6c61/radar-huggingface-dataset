@@ -1,0 +1,89 @@
+{
+  "schema": 2,
+  "id": "taha201201/shelf-pulse-ai",
+  "slug": "taha201201-shelf-pulse-ai",
+  "author": "taha201201",
+  "url": "https://huggingface.co/taha201201/shelf-pulse-ai",
+  "created_at": "2026-11-27T09:33:01.000Z",
+  "updated_at": "2026-11-27T09:37:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ncnn",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "ncnn",
+    "computer-vision",
+    "object-detection",
+    "retail",
+    "shelf-auditing",
+    "vulkan",
+    "edge-ai",
+    "android",
+    "bytetrack",
+    "yolo",
+    "yolo11",
+    "dense-object-detection",
+    "sku-detection",
+    "inventory",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5180776,
+  "storage_human": "5 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dense Retail Product Detection",
+      "dataset": "SKU-110K",
+      "metric": "Single-Pass 640px Recall (items detected)",
+      "value": 0.57
+    },
+    {
+      "task": "Dense Retail Product Detection",
+      "dataset": "SKU-110K",
+      "metric": "SAHI 2×2 HD Recall (items detected)",
+      "value": 0.75
+    },
+    {
+      "task": "Dense Retail Product Detection",
+      "dataset": "SKU-110K",
+      "metric": "SAHI 3×3 Ultra Recall (items detected, normalized)",
+      "value": 1.01
+    },
+    {
+      "task": "Dense Retail Product Detection",
+      "dataset": "SKU-110K",
+      "metric": "Vulkan GPU Inference Latency (ms) @ 320×320",
+      "value": 15.9
+    },
+    {
+      "task": "Dense Retail Product Detection",
+      "dataset": "SKU-110K",
+      "metric": "Sustained FPS (Live Scan, Samsung Note 10)",
+      "value": 30.2
+    }
+  ],
+  "sources": []
+}

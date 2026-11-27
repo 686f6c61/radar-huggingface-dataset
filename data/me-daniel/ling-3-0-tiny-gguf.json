@@ -5,7 +5,7 @@
   "author": "Me-Daniel",
   "url": "https://huggingface.co/Me-Daniel/Ling-3.0-tiny-GGUF",
   "created_at": "2026-11-25T21:08:49.000Z",
-  "updated_at": "2026-11-26T02:22:43.000Z",
+  "updated_at": "2026-11-26T04:35:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 7893392800,
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Me-Daniel/Ling-3.0-tiny-3GB-GGUF",
+  "renamed_at": "2026-11-27T05:23:02.625Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "andrepaim/Ettin-150m-WSD-wiktionary",
+  "slug": "andrepaim-ettin-150m-wsd-wiktionary",
+  "author": "andrepaim",
+  "url": "https://huggingface.co/andrepaim/Ettin-150m-WSD-wiktionary",
+  "created_at": "2026-11-26T21:20:12.000Z",
+  "updated_at": "2026-11-26T21:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "word-sense-disambiguation",
+    "wiktionary",
+    "ettin",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "base_model:sign/Ettin-150m-WSD",
+    "base_model:finetune:sign/Ettin-150m-WSD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149703296,
+  "parameters_human": "149.7M",
+  "storage_bytes": 1401880251,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "sign/Ettin-150m-WSD",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF",
   "created_at": "2026-08-26T11:45:05.000Z",
-  "updated_at": "2026-08-26T12:04:02.000Z",
+  "updated_at": "2026-11-23T11:01:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

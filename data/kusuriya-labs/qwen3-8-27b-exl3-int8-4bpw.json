@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 193,
+  "downloads_30d": 201,
   "trending_score": 0,
   "parameters": 8254592384,
   "parameters_human": "8.25B",
@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - malaiwah/qwen38-27b-exl3: EXL3 mixed-precision quantization of ...",
-      "url": "https://github.com/malaiwah/qwen38-27b-exl3",
-      "snippet": "EXL3 mixed-precision quantization of Qwen3.8-27B: measured recipes, runtime contract, KLD receipts, iteration log - malaiwah/qwen38-27b-exl3"
-    },
-    {
-      "title": "turboderp/Qwen3.8-27B-exl3 · Hugging Face",
-      "url": "https://huggingface.co/turboderp/Qwen3.8-27B-exl3",
-      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

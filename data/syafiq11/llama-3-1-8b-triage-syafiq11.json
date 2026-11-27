@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "syafiq11/Llama-3.1-8B-triage-syafiq11",
+  "slug": "syafiq11-llama-3-1-8b-triage-syafiq11",
+  "author": "syafiq11",
+  "url": "https://huggingface.co/syafiq11/Llama-3.1-8B-triage-syafiq11",
+  "created_at": "2026-11-27T06:48:35.000Z",
+  "updated_at": "2026-11-27T08:21:56.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352814616,
+  "storage_human": "353 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,106 +2,122 @@
 
 ## Resumen
 
-Statim Decide Multilingual Base es un modelo de decisión (clasificación de texto y zero-shot) desarrollado por el usuario Beko2210 para Statim, el motor nativo en C++ del mismo autor orientado a «decisiones tipadas». El modelo recibe cualquier texto y responde a una elección entre varias opciones, a una puntuación ordinal o a una pregunta de sí/no mediante un único forward pass, tanto en CPU como en GPU, sin dependencia de Python en tiempo de ejecución.
+Statim Decide Multilingual Base es un modelo encoder de decisión tipada, desarrollado por Beko2210 como componente del motor nativo en C++ Statim. No es un modelo generativo: se le plantea un texto junto con una elección, una puntuación o una pregunta de sí/no, y devuelve una respuesta calibrada en un único forward pass, sin necesidad de Python en tiempo de ejecución. Está afinado a partir de `convaiinnovations/laya-multilingual`, un encoder mmBERT-base, y corresponde a la versión 0.10.0 del motor.
 
-Se trata de un encoder basado en mmBERT-base, con 321.908.995 parámetros totales, afinado a partir de `convaiinnovations/laya-multilingual` (versión 0.4.0). Su propósito es servir de componente de decisión dentro de pipelines de agentes: clasificación de intenciones, enrutado de tickets, preguntas de sí/no sobre el estado de una conversación y otras tareas de etiquetado acotado.
+El modelo resuelve un problema acotado pero frecuente en producción: clasificación y enrutamiento de texto con etiquetas definidas en tiempo de inferencia (zero-shot classification), sin depender de un LLM generativo. Con 321.908.995 parámetros totales, cabe en CPU y en GPU de consumo, y se distribuye tanto en safetensors como en GGUF. Soporta 18 idiomas, entre ellos español, inglés, alemán, francés, portugués, árabe, hindi, japonés y chino.
 
-Es relevante porque combina un tamaño compacto (0,36 GB en cuantización q8_0) con soporte multilingüe para 17 idiomas y un formato de pesos GGUF listo para despliegue en CPU. La licencia es propia (statim-weights), lo que condiciona su uso comercial, y los resultados de benchmarks publicados por el autor no están verificados de forma independiente.
+Su relevancia actual radica en la combinación de coste de inferencia bajo (167 ms de mediana por petición en CPU de 4 hilos, 22 ms en una RTX 3070 con Vulkan) y un rendimiento en tareas de intención y clasificación que se acerca al de alternativas mucho mayores, aunque queda por detrás de Lev (4B con LoRA) y de Jev en el benchmark público S1Bench. La licencia es restrictiva: PolyForm Noncommercial 1.0.0, al haberse entrenado en parte con datos no comerciales o de licencia desconocida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer basado en mmBERT-base (modelo base: convaiinnovations/laya-multilingual) |
+| Arquitectura | Encoder transformer mmBERT-base (modelo base: convaiinnovations/laya-multilingual) |
 | Parametros totales | 321.908.995 |
-| Parametros activos | No aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f32 (0,91 GB) y q8_0 (0,36 GB) en GGUF; checkpoint en formato Laya (0,68 GB) |
-| Idiomas soportados | ar, de, en, es, fr, hi, it, ja, pl, ru, tr, zh, id, ms, pt, nl, fa (17 idiomas) |
-| Licencia | statim-weights (licencia propia, categoría «other») |
-| Formato de pesos | GGUF (f32 y q8_0), safetensors y checkpoint en formato Laya |
+| Tipos de cuantizacion | GGUF (el repo incluye pesos GGUF); niveles concretos no disponibles |
+| Idiomas soportados | ar, de, en, es, fr, hi, it, ja, pl, ru, tr, zh, id, ms, pt, nl, fa (18) |
+| Licencia | statim-weights (PolyForm Noncommercial 1.0.0) |
+| Formato de pesos | safetensors y GGUF |
+| Pipeline | zero-shot-classification / text-classification |
+| Tamano del repo | 5,8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de tipo mmBERT-base, reutilizado desde el checkpoint `convaiinnovations/laya-multilingual` y afinado por el autor para la tarea de «decisiones tipadas» del motor Statim. La salida se estructura en tres tipos de pregunta: elección (choice) entre un conjunto de criterios, puntuación (score) sobre criterios ordinales y sí/no (noul). Toda la inferencia se resuelve en un único forward pass, según describe el autor.
+El modelo es un encoder transformer de tipo mmBERT-base, afinado desde `convaiinnovations/laya-multilingual`. La salida no es texto generado sino decisiones tipadas: el modelo recibe un texto y un conjunto de opciones (elección entre categorías, puntuación o pregunta binaria) y produce una respuesta calibrada en un solo forward pass. Esta formulación permite usar el modelo como clasificador zero-shot con etiquetas arbitrarias definidas en inferencia, en lugar de un conjunto fijo de clases.
 
-El entrenamiento se realizó sobre una combinación de conjuntos de datos declarados: `PolyAI/banking77`, `AmazonScience/massive`, `LocalLLaMA/typed-decisions`, `tasksource/tasksource-jev-typed-decisions`, `nvidia/Nemotron-Safety-Guard-Dataset-v3`, `l3cube-pune/IndicGuard`, `PolyAI/minds14` y `benayas/snips`. No se especifica en la información disponible el número total de tokens, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. El autor menciona que la evaluación se validó mediante una «no-harm gate» (`tools/finetune/gate.py`) sobre 54 suites reservadas, con 18 mejoras significativas, 36 dentro del ruido y 0 regresiones frente al checkpoint base, usando dos errores estándar binomiales combinados. El fichero f32 reproduce la implementación de referencia con una tolerancia de 1e-4 en las pruebas de paridad de Statim.
+El entrenamiento combina conjuntos de datos de intenciones y clasificación: PolyAI/banking77, AmazonScience/massive, LocalLLaMA/typed-decisions, tasksource/tasksource-jev-typed-decisions, nvidia/Nemotron-Safety-Guard-Dataset-v3, l3cube-pune/IndicGuard, PolyAI/minds14 y benayas/snips. No se detallan en la información disponible el número de tokens, la composición exacta ni si hubo etapas de RLHF o DPO; tampoco se especifican innovaciones de decodificación, al no tratarse de un modelo autoregresivo. El autor advierte que parte de los datos de entrenamiento son no comerciales, ShareAlike o de licencia desconocida, lo que condiciona la licencia de los pesos.
 
 ## Capacidades
 
-- Clasificación de texto y zero-shot classification sobre etiquetas definidas en tiempo de inferencia.
-- Resolución de decisiones tipadas: elección entre categorías (choice), puntuación ordinal (score) y respuestas de sí/no (noul).
-- Enrutado de intenciones multilingüe, incluyendo idiomas con alfabetos no latinos (árabe, hindi, japonés, chino, ruso).
-- Detección de emociones, sentimiento, temas y contenido tóxico mediante consultas zero-shot (según los conjuntos de evaluación declarados: DAIR Emotion, Sentiment, HateCheck, AG News).
-- Integración con el motor Statim en C++ mediante API HTTP (`/v1/systemone`) y playground en `http://127.0.0.1:8080/`.
-- Ejecución en CPU o GPU sin dependencias de Python en tiempo de ejecución.
-- No se documenta soporte de tool calling, function calling, agentes multi-step, visión, audio, thinking mode ni generación de texto abierta; es un modelo de clasificación/decisión, no un modelo generativo.
+- Clasificación zero-shot: permite definir las etiquetas candidatas en tiempo de inferencia, sin reentrenamiento.
+- Decisiones tipadas: responde a preguntas de elección (qué categoría), de puntuación (qué valor) y de sí/no.
+- Detección de intenciones en diálogo: evaluado en Banking77, MASSIVE, HWU64 y SNIPS.
+- Clasificación de temas y sentimiento: evaluado en AG News, SIB-200 y un corpus multilingüe de sentimientos.
+- Moderación y seguridad: entrenado con Nemotron-Safety-Guard-Dataset-v3 e IndicGuard; evaluado en HateCheck multilingüe.
+- Multilingüismo: 18 idiomas con evaluación agregada en MASSIVE (12 idiomas) y otras suites multilingües.
+- Calibración de confianza: el autor reporta un error de calibración medio (ECE) de 0,126 en S1Bench.
+- Ejecución sin Python en runtime: integración con el motor C++ Statim en CPU o GPU.
+- No soporta generación de texto libre, tool calling, agentes ni visión.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el modelo recibe asunto y cuerpo del mensaje y devuelve la categoría de departamento (facturación, técnico, ventas). El ejemplo de la model card usa una pregunta de tipo choice con criterios y responde en un único forward pass.
-- Priorización de urgencia: mediante una pregunta de tipo score con criterios ordinales («not urgent», «soon», «critical») permite ordenar una cola de atención al cliente sin entrenar un clasificador específico.
-- Detección de intención del usuario en asistentes conversacionales: clasificación directa sobre conjuntos como Banking77, MASSIVE o SNIPS con etiquetas definidas dinámicamente.
-- Cumplimiento y moderación de contenido: consultas zero-shot sobre HateCheck y conjuntos de seguridad como `nvidia/Nemotron-Safety-Guard-Dataset-v3` o `l3cube-pune/IndicGuard`, útil para filtrar mensajes en varias lenguas.
-- Análisis de sentimiento y emoción en atención multilingüe: clasificación por idioma sobre reseñas o conversaciones con etiquetas de sentimiento o emoción, con la salvedad del rendimiento limitado en DAIR Emotion.
-- Extracción de decisiones booleanas sobre conversaciones: verificar si un usuario solicita explícitamente un reembolso, si confirma un cambio o si cumple una condición de negocio, mediante preguntas de tipo noul.
-- Clasificación temática de noticias y textos: uso zero-shot sobre AG News o SIB-200 para etiquetar documentos en un pipeline de ingestión.
-- Despliegue embebido en servicios C++: al ejecutarse sobre GGUF con Statim, el modelo puede incrustarse en servicios sin runtime de Python, por ejemplo dentro de pasarelas o sistemas de gestión de casos.
+- Enrutamiento de tickets de soporte: el modelo clasifica cada ticket contra un conjunto de colas o departamentos definidos en tiempo de inferencia; con 167 ms de mediana en CPU de 4 hilos, puede procesar un flujo continuo de tickets sin GPU.
+- Detección de intención en asistentes conversacionales: entrenado sobre MASSIVE, Banking77 y SNIPS, puede mapear cada turno del usuario a una intención de un catálogo propio, con la ventaja de que las intenciones se pueden redefinir sin reentrenar.
+- Moderación de contenido multilingüe: al haberse entrenado con datasets de seguridad y evaluarse en HateCheck en 11 idiomas, sirve como primera capa de filtrado de comentarios antes de escalar a un modelo mayor.
+- Análisis de sentimiento en atención al cliente: clasificación de reseñas o mensajes en 12 idiomas con etiquetas de sentimiento, útil para paneles de calidad y alertas tempranas.
+- Clasificación de noticias y contenidos: con 0,921 de accuracy zero-shot en AG News, puede etiquetar artículos por temática en pipelines editoriales sin entrenamiento específico.
+- Filtrado previo a un LLM generativo: usar el modelo como clasificador de bajo coste para decidir si una consulta requiere un modelo grande, reduciendo el gasto de inferencia en el resto de casos.
+- Despliegue en entornos sin GPU: el formato GGUF y el motor C++ permiten ejecutarlo en servidores modestos o en el borde, con latencias de centenas de milisegundos por petición.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (métricas no verificadas de forma independiente: `verified: false`).
+Resultados declarados por el autor (no verificados de forma independiente):
 
-| Suite | Rol | Este modelo | Checkpoint base | Protocolo |
+| Tarea / dataset | Metrica | Valor |
+|---|---|---|
+| typed-decisions (test, primeras 2.000) | accuracy | 0,775 |
+| Banking77 (test, primeras 2.000, 77 intenciones) | accuracy | 0,9185 |
+| MASSIVE intents (media de 12 idiomas, 150 filas) | accuracy | 0,8161 |
+| AG News (zero-shot, 2.000 filas) | accuracy | 0,921 |
+| DAIR Emotion (zero-shot, 2.000 filas) | accuracy | 0,5305 |
+| HWU64 intents (inglés, 150 filas) | accuracy | 0,8533 |
+| SIB-200 topics (zero-shot, media de 4 idiomas) | accuracy | 0,7967 |
+| Sentiment multilingüe (zero-shot, media de 12 idiomas) | accuracy | 0,6311 |
+| HateCheck multilingüe (zero-shot, media de 11 idiomas) | accuracy | 0,6461 |
+| Belebele reading (zero-shot, media de 4 idiomas) | accuracy | 0,28 |
+
+Resultados en S1Bench (13 tareas de decisión tipada, 3.880 ítems), comparados con la versión 0.7.0, Lev y Jev:
+
+| Macro accuracy | Este modelo | 0.7.0 | Lev | Jev |
 |---|---|---|---|---|
-| typed-decisions | entrenado | 0,7585 | 0,3510 | test split, primeras 2.000 decisiones |
-| Banking77 | entrenado | 0,9035 | 0,5175 | test split, primeras 2.000 filas, 77 intenciones en una pregunta |
-| MASSIVE intents | entrenado | 0,7717 | 0,3400 | media sobre 12 idiomas, 150 filas estratificadas por idioma |
-| AG News | held out | 0,9315 | 0,9380 | zero-shot, primeras 2.000 filas de test |
-| DAIR Emotion | held out | 0,5265 | 0,5320 | zero-shot, primeras 2.000 filas de test |
-| HWU64 intents | held out | 0,8200 | 0,5000 | inglés, 150 filas, sin solapamiento con MASSIVE |
-| SIB-200 topics | held out | 0,7217 | no disponible | zero-shot, media sobre 4 idiomas, 150 filas cada uno |
-| Sentiment | held out | 0,5933 | no disponible | zero-shot, media sobre 12 idiomas, 150 filas cada uno |
-| HateCheck | held out | 0,6467 | no disponible | zero-shot, media sobre 11 idiomas, 150 filas cada uno |
-| Belebele reading | held out | 0,3100 | no disponible | zero-shot, media sobre 4 idiomas, 150 filas cada uno |
+| 13 subconjuntos | 0,657 | 0,638 | 0,689 | 0,761 |
+| 7 subconjuntos de fuentes no vistas en entrenamiento | 0,584 | 0,565 | 0,635 | 0,766 |
+| 6 subconjuntos del snapshot público | 0,675 | 0,648 | 0,719 | 0,769 |
 
-La evaluación del autor indica 18 ganancias significativas, 36 dentro del ruido y 0 regresiones frente al checkpoint base, sobre 54 suites reservadas.
+Calibración: ECE de 0,126 frente a 0,138 en 0.7.0. Latencias reportadas: mediana de 167 ms en CPU (Ryzen 7 5800X, 4 hilos) y 22 ms en GPU (RTX 3070, Vulkan); p95 de 568 ms y 50 ms respectivamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 0,36 GB para la versión q8_0 y 0,91 GB para la versión f32, sin contar buffers de runtime.
-- El tamaño del repositorio completo es de 1,9 GB, que incluye checkpoints y pesos en distintos formatos.
-- Cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en CPU sin GPU dedicada, dado el reducido número de parámetros (≈322 M).
-- Opciones de despliegue: el motor nativo Statim (`./statim serve`, API HTTP en `/v1/systemone`) con ficheros GGUF; el checkpoint en formato Laya está pensado para fine-tuning y la referencia en Python.
-- Latencia y throughput: no disponibles en la información proporcionada. El autor indica únicamente que q8_0 es «más pequeño y más rápido en CPU» que f32, con logits ligeramente distintos.
+- VRAM estimada: no disponible de forma explícita; con 321,9 millones de parámetros, en FP16 ocupa aproximadamente 0,65 GB de pesos y en cuantizaciones de 4 bits en torno a 0,2 GB, más overhead de activaciones y contexto.
+- GPU recomendadas: el autor reporta pruebas en RTX 3070 (Vulkan) con 22 ms de mediana; cualquier GPU con 2 GB o más de VRAM debería ser suficiente.
+- GPU de consumo: sí, cabe holgadamente en RTX 3060, RTX 4060, RTX 4090 y similares; también en iGPU si se usa el motor C++.
+- CPU: funciona sin GPU; el autor reporta 167 ms de mediana con 4 hilos en un Ryzen 7 5800X.
+- Opciones de despliegue: motor nativo Statim en C++ (CPU o GPU), pesos GGUF para llama.cpp u otros runners compatibles con GGUF; safetensors para integración vía transformers. Compatibilidad con vLLM o TGI no está confirmada en la información disponible.
+- Throughput y latencia: mediana de 167 ms (CPU, 4 hilos) y 22 ms (RTX 3070, Vulkan); p95 de 568 ms y 50 ms.
 
 ## Comparativa con modelos similares
 
-La información disponible permite comparar únicamente contra el checkpoint base del que se deriva, no contra modelos externos.
+| Modelo | Parametros | Contexto | S1Bench (macro) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Statim Decide Multilingual Base 0.10.0 | 321,9 M | no disponible | 0,657 | PolyForm Noncommercial 1.0.0 | Hugging Face, GGUF y safetensors |
+| Statim Decide 0.7.0 | no disponible | no disponible | 0,638 | no disponible | versión anterior del mismo autor |
+| Lev | 4 B (LLM con LoRA) | no disponible | 0,689 | no disponible | no disponible |
+| Jev | no disponible (alojado) | no disponible | 0,761 | no disponible | servicio alojado |
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| statim-decide-multilingual-base | 321.908.995 | no disponible | statim-weights | Este modelo; afina mmBERT-base para decisiones tipadas |
-| convaiinnovations/laya-multilingual | no disponible | no disponible | no disponible | Checkpoint base; usado como referencia de comparación en los benchmarks |
-| Alternativas de clasificación zero-shot de tamaño similar | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+La comparación relevante es de coste: Lev y Jev obtienen mejor precisión, pero Lev requiere un LLM de 4B con LoRA en GPU y Jev es un servicio alojado, mientras que Statim Decide funciona en CPU con latencias de centenas de milisegundos y un tamaño de 322 M de parámetros.
 
 ## Limitaciones y advertencias
 
-- Los resultados de benchmarks son declarados por el autor y están marcados como no verificados (`verified: false`); no hay validación independiente.
-- No se especifica la longitud de contexto soportada, lo que dificulta dimensionar entradas largas en producción.
-- Rendimiento bajo en tareas held out concretas: DAIR Emotion (0,5265) y Belebele reading (0,31) sugieren poca capacidad para clasificación emocional fina y comprensión lectora.
-- No es un modelo generativo: no produce texto libre ni resúmenes, solo decisiones sobre etiquetas proporcionadas.
-- La licencia es propia (`statim-weights`, categoría «other»); es imprescindible revisar el fichero `LICENSE-MODEL.md` antes de cualquier uso comercial.
-- Posible sesgo de alineación hacia las categorías de los datasets de entrenamiento (banking, MASSIVE, SNIPS, typed-decisions), lo que puede reducir el rendimiento en dominios fuera de esas distribuciones.
-- No se documentan controles de alucinación ni de calibración más allá de las pruebas de paridad numérica del motor Statim, por lo que conviene validar las salidas en el dominio objetivo.
-- El soporte multilingüe declarado cubre 17 idiomas, pero el rendimiento por idioma depende de los datos de evaluación (MASSIVE con 12 idiomas, HateCheck con 11), por lo que la cobertura real puede variar.
+- Licencia PolyForm Noncommercial 1.0.0: no permite uso comercial. El autor anuncia una versión futura entrenada solo con datos con licencia clara, pero no está disponible.
+- Los datos de entrenamiento incluyen fuentes no comerciales, ShareAlike o de licencia desconocida, lo que motiva la restricción de licencia.
+- Los benchmarks son declarados por el autor y no están verificados de forma independiente.
+- Queda por detrás de Lev y Jev en S1Bench (0,657 frente a 0,689 y 0,761), especialmente en los subconjuntos de fuentes no vistas en entrenamiento (0,584).
+- Rendimiento bajo en Belebele reading (0,28) y limitado en DAIR Emotion (0,5305) y HateCheck (0,6461), lo que desaconseja su uso como clasificador principal en esas tareas.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
+- Riesgo de sesgos heredados de los datasets de entrenamiento (intenciones bancarias, moderación, noticias); no se documentan análisis de sesgo específicos.
+- Riesgo de alucinación en sentido estricto bajo, al ser un clasificador, pero puede asignar etiquetas con confianza alta a entradas fuera de distribución; conviene monitorizar la calibración en producción.
+- Longitud de contexto no documentada: textos largos pueden truncarse sin aviso explícito.
+- El ecosistema de despliegue está centrado en el motor propietario Statim y en GGUF; la compatibilidad con servidores de inferencia habituales no está confirmada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-multilingual-base
-- Repositorio Statim: https://github.com/BEKO2210/statim
-- Binarios de Statim: https://github.com/BEKO2210/statim/releases
-- Documentación de API: https://github.com/BEKO2210/statim/blob/main/docs/API.md
-- Script de evaluación (no-harm gate): https://github.com/BEKO2210/statim/blob/main/tools/finetune/gate.py
+- Demo en Spaces: https://huggingface.co/spaces/Beko2210/statim
+- Repositorio del motor Statim: https://github.com/BEKO2210/statim
+- Informe de licencias de datos: https://github.com/BEKO2210/statim/blob/main/DATA_LICENSES.md
+- Protocolo de S1Bench: https://github.com/BEKO2210/statim/blob/main/docs/reproductions/s1bench-protocol.md
 - Licencia del modelo: https://huggingface.co/Beko2210/statim-decide-multilingual-base/blob/main/LICENSE-MODEL.md
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
+- Vídeo de presentación: https://beko2210.github.io/statim/video/statim-flagship-60s-16x9.mp4

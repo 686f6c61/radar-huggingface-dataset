@@ -5,7 +5,7 @@
   "author": "corechan",
   "url": "https://huggingface.co/corechan/MiniMax-H3_NF4",
   "created_at": "2026-08-27T00:22:00.000Z",
-  "updated_at": "2026-09-12T09:24:03.000Z",
+  "updated_at": "2026-11-23T09:41:58.000Z",
   "license": "minimax-h3-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,8 @@
     "quantized",
     "nf4",
     "bitsandbytes",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
     "license:other",
     "region:us"
   ],
@@ -31,7 +33,7 @@
   "storage_bytes": 99360045032,
   "storage_human": "99.4 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
     "safetensors"

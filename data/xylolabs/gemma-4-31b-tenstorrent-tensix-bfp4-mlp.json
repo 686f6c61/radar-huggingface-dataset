@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/gemma-4-31B-Tenstorrent-Tensix-BFP4-MLP",
   "created_at": "2026-11-12T10:20:30.000Z",
-  "updated_at": "2026-11-25T17:16:26.000Z",
+  "updated_at": "2026-11-27T04:41:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/gemma-4-31B-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-27T07:50:08.316Z",
   "benchmarks": [],
   "sources": []
 }

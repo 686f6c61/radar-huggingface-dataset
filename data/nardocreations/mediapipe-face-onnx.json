@@ -9,7 +9,7 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
-  "library": null,
+  "library": "mediapipe",
   "languages": [],
   "tags": [
     "mediapipe",

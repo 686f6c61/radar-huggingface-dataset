@@ -5,7 +5,7 @@
   "author": "experimentalmachines",
   "url": "https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4.3-sft",
   "created_at": "2026-11-22T13:37:20.000Z",
-  "updated_at": "2026-11-23T02:33:56.000Z",
+  "updated_at": "2026-11-26T17:58:46.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,8 +27,8 @@
     "conversational",
     "custom_code",
     "en",
-    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
-    "base_model:adapter:experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
+    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
+    "base_model:adapter:experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -41,7 +41,7 @@
   "storage_bytes": 4117918484,
   "storage_human": "4.1 GB",
   "context_length": null,
-  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
+  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
   "formats": [
     "safetensors"
   ],
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-ContinuedSFT",
+  "renamed_at": "2026-11-27T10:29:41.471Z",
   "benchmarks": [],
   "sources": []
 }

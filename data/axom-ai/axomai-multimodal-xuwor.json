@@ -5,9 +5,9 @@
   "author": "axom-ai",
   "url": "https://huggingface.co/axom-ai/axomai-multimodal-xuwor",
   "created_at": "2026-11-02T17:25:37.000Z",
-  "updated_at": "2026-11-10T11:10:17.000Z",
-  "license": "axom-ai-proprietary",
-  "license_family": "non-commercial",
+  "updated_at": "2026-11-24T08:10:17.000Z",
+  "license": "other",
+  "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [
@@ -25,9 +25,9 @@
     "assamese",
     "axom-ai",
     "xuwor",
+    "sovereign-ai",
     "as",
     "en",
-    "dataset:custom-assamese-multimodal",
     "license:other",
     "region:us"
   ],

@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "nielsr/cursor-qwen35-4b-think-cfx-a-mixed-open-ended-grpo-pi-160-sft-merged",
+  "slug": "nielsr-cursor-qwen35-4b-think-cfx-a-mixed-open-ended-grpo-pi-160-sft-merged",
+  "author": "nielsr",
+  "url": "https://huggingface.co/nielsr/cursor-qwen35-4b-think-cfx-a-mixed-open-ended-grpo-pi-160-sft-merged",
+  "created_at": "2026-11-27T09:13:32.000Z",
+  "updated_at": "2026-11-27T09:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "peft",
+    "merged",
+    "agent-distill",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609229,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet BrowserOp: our ChatGPT plugin that lets you search up-to-date ...",
+      "url": "https://community.openai.com/t/meet-browserop-our-chatgpt-plugin-that-lets-you-search-up-to-date-information-smoothly-and-efficiently/304018",
+      "snippet": "Jul 19, 2023 · Hi all! Just a quick note to let you know. 🥰 We’ve rebranded our plugin! Our previously named BrowserPilot is now called …"
+    },
+    {
+      "title": "Understanding the pricing of the ChatGPT API - API - OpenAI …",
+      "url": "https://community.openai.com/t/understanding-the-pricing-of-the-chatgpt-api/579268",
+      "snippet": "Jan 9, 2024 · Greetings, if our institution opts for the Tier 3 plan for the ChatGPT API, allowing students to utilize our API, and the …"
+    },
+    {
+      "title": "ChatGPT Web Search Function disabled. Why? - Bugs - OpenAI …",
+      "url": "https://community.openai.com/t/chatgpt-web-search-function-disabled-why/1126968",
+      "snippet": "Feb 22, 2025 · I am subscribed to chatGPT paid plan and normally the web search function is enabled but today, the web search …"
+    },
+    {
+      "title": "ChatGPT's Automatic Web Searches: A Frustrating Experience",
+      "url": "https://community.openai.com/t/chatgpts-automatic-web-searches-a-frustrating-experience/1012404",
+      "snippet": "Nov 10, 2024 · Hi everyone, I’ve noticed that ChatGPT often appears to automatically search the internet to provide answers, even …"
+    },
+    {
+      "title": "One Prompt, Multiple News Sources: ChatGPT Web Browsing in Action",
+      "url": "https://community.openai.com/t/one-prompt-multiple-news-sources-chatgpt-web-browsing-in-action/467504",
+      "snippet": "Nov 3, 2023 · After trying out several different versions, I’ve crafted this prompt that’s proven effective for summarizing news from …"
+    }
+  ]
+}

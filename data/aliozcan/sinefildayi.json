@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "AliOzcan/SinefilDayi",
+  "slug": "aliozcan-sinefildayi",
+  "author": "AliOzcan",
+  "url": "https://huggingface.co/AliOzcan/SinefilDayi",
+  "created_at": "2025-12-07T11:33:55.000Z",
+  "updated_at": "2026-11-27T09:47:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "chatbot",
+    "turkish",
+    "persona",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:adapter:microsoft/Phi-3.5-mini-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12591456,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

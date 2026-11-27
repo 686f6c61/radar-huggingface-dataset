@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "mishwani7/XLM-RoBERTa-Urdu-Nastaliq-Mental-Health",
+  "slug": "mishwani7-xlm-roberta-urdu-nastaliq-mental-health",
+  "author": "mishwani7",
+  "url": "https://huggingface.co/mishwani7/XLM-RoBERTa-Urdu-Nastaliq-Mental-Health",
+  "created_at": "2026-11-27T09:20:58.000Z",
+  "updated_at": "2026-11-27T09:22:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "mental-health",
+    "conformal-prediction",
+    "conformal-risk-control",
+    "urdu",
+    "nastaliq",
+    "text-classification",
+    "ur",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129309509,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fida Ullah from Instituto Politécnico Nacional | Scilit",
+      "url": "http://go/v1/AX4NXPDm7UouawlL9AG7WPPCOwFrvpLjEyI6JhQJgwfvuuIBjNoK6yNgAp8Rcx-bJlGx0UA3d_1hKdmz1NPsFTnj5nomvIivQMkzCgz1Os-XjRazq_hYk4bFb9b-w8897HQ-LahJ21pXiug7LTHBzUOameYWLIriXC39gahBajPdat20wvdUmJV3p1AZa2rMrpGNLOgBkKHcrFyqWRXKN3I80Kw8ISez65ewg9bdraHjbAY",
+      "snippet": "Based on the experiments, our proposed model (XLM-RoBERTa) achieves 0.98 accuracy across Arabic, Urdu, and multilingual datasets."
+    }
+  ]
+}

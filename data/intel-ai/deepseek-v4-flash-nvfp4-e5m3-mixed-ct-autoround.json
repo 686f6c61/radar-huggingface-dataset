@@ -5,7 +5,7 @@
   "author": "intel-ai",
   "url": "https://huggingface.co/intel-ai/DeepSeek-V4-Flash-NVFP4-E5M3-Mixed-CT-AutoRound",
   "created_at": "2026-11-24T09:37:08.000Z",
-  "updated_at": "2026-11-24T09:44:45.000Z",
+  "updated_at": "2026-11-26T11:52:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

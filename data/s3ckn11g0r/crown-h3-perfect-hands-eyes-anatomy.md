@@ -2,91 +2,96 @@
 
 ## Resumen
 
-CROWN-H3-Perfect-Hands-Eyes-Anatomy es un LoRA de concepto desarrollado por NineCrowns (bajo la marca CROWN) para el modelo de generación de vídeo MiniMax H3. No se trata de un modelo base, sino de un adaptador de bajo rango (rank 64) que se aplica sobre los pesos del modelo MiniMax H3 para corregir dos problemas recurrentes en la generación de vídeo con personas: la deformación de manos (dedos fusionados, seis dedos, contornos borrosos) y la falta de expresividad ocular (miradas vidriosas, ausencia de reflejos en el iris).
+CROWN-H3-Perfect-Hands-Eyes-Anatomy es un LoRA (Low-Rank Adaptation) desarrollado por S3ckn11g0r, bajo la marca NineCrowns (CROWN), que actua como adaptador sobre el modelo de generacion de video MiniMaxAI/MiniMax-H3. No es un modelo autonomo, sino un conjunto de pesos de adaptacion (910,06 MB en formato safetensors) disenado para corregir dos problemas concretos del modelo base: la deformacion y fusion de dedos en manos durante movimiento rapido y la falta de viveza en la mirada (ojos vidriosos o sin reflejos de iris). El adaptador se entrena especificamente sobre material de video de alta velocidad de obturación (1/1000 s) para preservar la articulacion anatomica de los cinco dedos.
 
-El adaptador se entrenó específicamente sobre material de vídeo de alta velocidad de obturación (1/1000 s) con primeros planos de manos, gestos y microexpresiones faciales, con el objetivo de preservar la anatomía de los cinco dedos y generar parpadeos naturales y reflejos oculares realistas durante escenas de baile, vlogs y actuación cercana a cámara. Es compatible con los tres modos de inferencia de MiniMax H3 (Ref2VA, I2VA y T2VA) y puede apilarse con otros LoRA de personaje o estilo.
+El modelo resuelve un cuello de botella practico en la generacion text-to-video de contenido humano: las manos y los ojos son las regiones donde los modelos de difusion de video fallan con mayor frecuencia, produciendo manos con seis dedos, dedos fundidos o rostros con mirada inerte. Este LoRA se activa mediante la palabra clave `crown_perfect_hands_eyes` y esta pensado para integrarse en flujos de trabajo de ComfyUI, con compatibilidad declarada para los modos Ref2VA, I2VA y T2VA del modelo base MiniMax-H3.
 
-El modelo es relevante para creadores y desarrolladores que trabajan con pipelines de texto-a-vídeo y necesitan calidad anatómica en primeros planos, un caso de uso especialmente problemático en los modelos generativos actuales. El repositorio ocupa 1 GB y contiene un único archivo de pesos en formato safetensors de 910 MB.
+Su relevancia actual radica en que la generacion de video con IA esta entrando en produccion para contenido de redes sociales (vlogs, bailes, planos cortos de actuacion), donde la calidad de manos y ojos es el principal indicador de realismo percibido. El adaptador se distribuye con una licencia bespoke-lora-license, lo que exige revisar los terminos antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo base MiniMax H3; rank 64, alpha 64, aplicado a bloques video-only 10-49 |
-| Parametros totales | no disponible (el archivo de pesos pesa 910,06 MB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre un transformer de difusion de video; rango 64, alpha 64, aplicado a bloques video-only 10-49 |
+| Parametros totales | no disponible (pesos del adaptador: 910,06 MB) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; el modelo base se usa en bf16 segun la model card) |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en safetensors; el modelo base usa bf16 y fp32 en sus componentes) |
 | Idiomas soportados | no disponible |
-| Licencia | bespoke-lora-license (licencia personalizada, enlace a civitai.com/user/NineCrowns) |
-| Formato de pesos | safetensors (CROWN_H3_Perfect_Hands_Eyes_Anatomy_V1_r64.safetensors) |
+| Licencia | bespoke-lora-license (licencia personalizada; enlace a Civitai del autor) |
+| Formato de pesos | safetensors (`CROWN_H3_Perfect_Hands_Eyes_Anatomy_V1_r64.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 64 que se inyecta exclusivamente en los bloques video-only 10 a 49 del transformer de MiniMax H3, e incorpora el Ostris De-Distillation Adapter. El entrenamiento se realizó en un clúster de 8 GPU NVIDIA B200, con un conjunto de datos compuesto por material nativo sin marca de agua en 1080P y 4K, grabado con alta velocidad de obturación (1/1000 s), procedente de vídeos de bailes de dedos (手势舞) y gestos expresivos de manos de Douyin y TikTok. La resolución de entrenamiento fue de 768×1344 (denominada "True 768P" en la model card).
+El adaptador es un LoRA de rango 64 y alpha 64 que se inyecta exclusivamente en los bloques video-only 10 a 49 del modelo base MiniMax-H3, combinado con un Ostris De-Distillation Adapter. El entrenamiento se realizo sobre un cluster de 8 GPU NVIDIA B200, a una resolucion de 768x1344 (denominada por el autor "True 768P"), partiendo de material original de 1080P y 4K sin marca de agua: videos de alta velocidad de obturación de bailes de dedos (gesture dance) y primeros planos de gestos de manos y microexpresiones faciales procedentes de Douyin y TikTok. La eleccion de material a 1/1000 s de velocidad de obturación es deliberada: congela el movimiento de los dedos y permite al adaptador aprender contornos de nudillos y unas bien definidos en lugar de desenfoques de movimiento.
 
-La innovación principal del adaptador es su especialización: en lugar de mejorar la estética general, se centra en dos fallos concretos del modelo base. Por un lado, fuerza la articulación anatómica de cinco dedos por mano con contornos de nudillos nítidos y uñas limpias durante gestos rápidos (corazones con los dedos, signos de victoria, saludos, manos en la cara). Por otro, refuerza los reflejos luminosos en el iris y un ritmo de parpadeo natural de aproximadamente tres segundos, además de guiños sin distorsión facial. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+La innovacion principal no esta en la arquitectura (es un LoRA convencional) sino en la curaduria del dataset y en el objetivo de entrenamiento: forzar la separacion anatomica de los cinco dedos de cada mano y reforzar los reflejos especulares del iris y el parpadeo fisiologico natural (ritmo de aproximadamente 3 segundos). El adaptador declara compatibilidad de apilamiento con otros LoRA de personaje o estilo, y funciona de forma independiente en los tres modos de inferencia del modelo base (Ref2VA, I2VA y T2VA).
 
 ## Capacidades
 
-- Generación de vídeo texto-a-vídeo con énfasis en la corrección anatómica de manos y ojos, aplicable sobre MiniMax H3 en sus modos T2VA (texto a vídeo con audio), I2VA (imagen a vídeo con audio) y Ref2VA (referencia a vídeo con audio).
-- Articulación de cinco dedos por mano con separación anatómica, contornos de nudillos definidos y uñas manicuradas nítidas en gestos rápidos como corazones con los dedos, signos de victoria, saludos con la mano abierta y manos en las mejillas.
-- Generación de reflejos luminosos (catchlights) en el iris y parpadeos fisiológicos naturales con una cadencia aproximada de tres segundos, además de guiños expresivos sin distorsión facial.
-- Compatibilidad con apilamiento de otros LoRA de personaje o estilo sobre el mismo modelo base.
-- Palabra de activación: `crown_perfect_hands_eyes`.
-- No se dispone de información sobre soporte de tool calling, function calling, razonamiento multi-paso, capacidades multilingües ni otras modalidades (audio, visión) más allá de las inherentes al modelo base MiniMax H3.
+- Generacion text-to-video con manos anatomicamente correctas: cinco dedos separados por mano, contornos de nudillos nitidos y unas definidas durante gestos rapidos como corazones con los dedos, signos de victoria, saludos y poses con las manos en las mejillas.
+- Mejora de la mirada: reflejos luminosos en el iris, parpadeo natural cada aproximadamente 3 segundos y guinos expresivos sin distorsion facial.
+- Reduccion de artefactos tipicos del modelo base: elimina manos con seis dedos, dedos fundidos y desenfoque de movimiento en las manos.
+- Compatibilidad con tres modos del modelo base: referencia a video y audio (Ref2VA), imagen a video y audio (I2VA) y texto a video y audio (T2VA).
+- Apilamiento con otros LoRA: puede combinarse con adaptadores de personaje o de estilo sin conflicto declarado.
+- Activacion mediante palabra clave: `crown_perfect_hands_eyes`.
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio mas alla del propio del modelo base.
 
 ## Casos de uso
 
-- Creación de contenido para redes sociales con primeros planos de manos: el adaptador mantiene los cinco dedos separados y nítidos en vídeos de bailes de dedos, saludos y gestos virales, un escenario donde los modelos de vídeo suelen producir dedos fusionados o contornos borrosos.
-- Vídeos de belleza y cosmética con primeros planos faciales: los reflejos en el iris y el parpadeo natural evitan la mirada vidriosa típica, lo que resulta adecuado para demostraciones de maquillaje, cuidado de la piel y accesorios.
-- Escenas de actuación cercana a cámara (vlogs, monólogos, reacciones): el LoRA preserva microexpresiones y guiños sin deformar el rostro, útil para contenido de creadores que graban a corta distancia.
-- Producción de material publicitario con modelos humanos: al combinarse con LoRA de personaje o estilo, permite generar anuncios con gestos de manos expresivos (señalar, sostener productos, saludar) manteniendo la anatomía correcta.
-- Integración en flujos de trabajo de ComfyUI: el adaptador está etiquetado para ComfyUI y puede encadenarse en pipelines de generación de vídeo con MiniMax H3, lo que facilita su uso en estudios de producción que ya trabajan con esta herramienta.
-- Generación de vídeo con referencia de imagen o de referencia visual (I2VA y Ref2VA): útil para animar retratos o imágenes fijas de personas donde las manos y la mirada son el foco de atención, como avatares o presentaciones animadas.
-- Experimentación e investigación en generación de vídeo: sirve como caso de estudio de adaptadores especializados que corrigen fallos concretos de un modelo base sin reentrenarlo por completo.
+- Contenido de danza y baile para redes sociales: el adaptador mantiene los dedos separados y nitidos en coreografias de gestos rapidos, donde el modelo base produce fusiones. Se usa con el prompt de activacion y un peso de LoRA de 0,70 a 0,80.
+- Vlogs y primeros planos de actuacion: corrige la mirada vidriosa en planos cercanos de rostro, anadiendo reflejos de iris y parpadeo natural, lo que mejora la percepcion de realismo en contenido hablado a camara.
+- Generacion de material promocional con gestos de producto: poses de manos sosteniendo o senalando objetos (unboxing, demostraciones) se benefician de la articulacion de dedos aprendida del dataset de gestos.
+- Postproduccion y regeneracion selectiva: integrado en ComfyUI, permite regenerar tomas donde las manos del modelo base fallan sin rehacer la secuencia completa, apilando el LoRA sobre el flujo existente.
+- Creacion de avatares y personajes virtuales: al combinarse con LoRA de personaje, mantiene la identidad del sujeto mientras corrige manos y ojos en planos de baile o gesticulacion.
+- Prototipado rapido de storyboards animados: en modo T2VA, genera clips de 768x1344 con figuras humanas gesticulando de forma creible para previsualizar escenas antes de produccion.
+- Demostraciones de producto con referencia de imagen: en modo I2VA, parte de una imagen fija de una persona y anima gestos de manos y mirada con la correccion anatomica del adaptador.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye metricas cuantitativas (FVD, CLIP score, evaluaciones humanas) en la model card; solo describe cualitativamente la correccion de manos y ojos y muestra un video de demostracion generado exclusivamente con este LoRA a peso 0,75.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA en sí ocupa 910,06 MB en disco y debe cargarse junto con el modelo base MiniMax H3, por lo que los requisitos reales de VRAM vienen determinados por el modelo base, no por el LoRA.
-- El modelo base se utiliza en bf16 según la configuración de prueba de la model card (minimax_h3_ref2va_bf16.safetensors, qwen3vl_32b_minimax_h3_bf16.safetensors y minimax_h3_video_vae_fp32.safetensors), lo que implica requisitos de memoria elevados; no se dispone de cifras exactas de VRAM en la información proporcionada.
-- El entrenamiento se realizó en un clúster de 8 GPU NVIDIA B200, lo que da una idea del orden de magnitud del modelo base.
-- No se dispone de información sobre si el modelo base cabe en GPU de consumo (RTX 4090, etc.) ni sobre opciones de cuantización para reducir memoria.
-- Opciones de despliegue: ComfyUI (etiquetado explícitamente) y flujos en la nube de RunningHub; no se dispone de información sobre vLLM, llama.cpp, Ollama o TGI para este modelo.
-- No se dispone de datos de latencia ni throughput. La configuración de prueba indicada es de 25 pasos, sampler euler + beta, cfg 1.0 y MiniMaxH3SigmaShift con shift_video 12.0 y shift_audio 3.0, a resolución 768×1344 o 1344×768.
+- El adaptador en si ocupa 910,06 MB en safetensors y se carga junto al modelo base; la VRAM real la determina MiniMax-H3, no el LoRA.
+- El autor entreno el adaptador en un cluster de 8 GPU NVIDIA B200, lo que indica que el modelo base completo es de gran escala y no cabe en GPU de consumo.
+- El modelo base declarado en la configuracion de prueba incluye `minimax_h3_ref2va_bf16.safetensors`, `qwen3vl_32b_minimax_h3_bf16.safetensors` (un codificador de texto de 32B) y `minimax_h3_video_vae_fp32.safetensors`; solo el codificador de texto de 32B en bf16 ya requiere aproximadamente 64 GB de VRAM, por lo que se necesita hardware de clase profesional (A100 80 GB, H100, B200) o servicios en la nube.
+- No cabe en GPU de consumo (RTX 4090, 3090) en su configuracion completa; el autor remite a plataformas en la nube (RunningHub) y a un servicio no oficial para usuarios con GPU limitada.
+- Opciones de despliegue: ComfyUI (flujo de trabajo principal, con workflow en la nube publicado por el autor); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de video.
+- Parametros de inferencia recomendados por el autor: 768x1344 o 1344x768, 25 pasos, sampler euler con beta, cfg 1.0, MiniMaxH3SigmaShift con shift_video 12.0 y shift_audio 3.0, peso de LoRA 0,70-0,80.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros LoRA comparables para MiniMax H3 en la documentación proporcionada. Se indica "no disponible".
+No se dispone de informacion sobre otros LoRA comparables para MiniMax-H3 en la documentacion proporcionada. La comparativa se limita a contrastar el adaptador con el modelo base sin adaptar:
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CROWN-H3-Perfect-Hands-Eyes-Anatomy | LoRA sobre MiniMax H3 | no disponible (910 MB) | no disponible | bespoke-lora-license | Hugging Face, RunningHub, Civitai |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Tipo | Funcion | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| CROWN-H3-Perfect-Hands-Eyes-Anatomy | LoRA r64 sobre MiniMax-H3 | Corrige manos y ojos en generacion de video | bespoke-lora-license | Hugging Face, RunningHub, Civitai |
+| MiniMax-H3 (base) | Modelo de difusion text-to-video | Generacion de video con audio | no disponible en la informacion | Hugging Face (MiniMaxAI) |
+| Otros LoRA de MiniMax-H3 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Es un adaptador LoRA, no un modelo autónomo: requiere el modelo base MiniMax H3 y sus componentes auxiliares (Qwen3-VL 32B y VAE de vídeo) para funcionar.
-- La licencia es una licencia personalizada (bespoke-lora-license) con enlace a Civitai; no se especifican en la información disponible los términos exactos para uso comercial, por lo que debe consultarse la licencia antes de utilizarlo en producción.
-- El entrenamiento se centró en material de vídeo de redes sociales (Douyin y TikTok) con primeros planos de manos y rostros, lo que puede introducir sesgos estéticos y demográficos hacia ese tipo de contenido.
-- El adaptador está especializado en manos y ojos; no se espera que mejore otras áreas de la generación de vídeo (composición corporal completa, escenas de acción, paisajes) y podría alterar el estilo general si se usa con pesos altos.
-- El peso recomendado es de 0,70 a 0,80; fuera de ese rango podría degradar la coherencia del vídeo o producir artefactos.
-- No se dispone de información sobre idiomas soportados, riesgos de alucinación específicos ni limitaciones de contexto, ya que dependen del modelo base.
-- La model card incluye enlaces externos y promocionales (RunningHub, h3xron.xyz) que deben tratarse con cautela y no como parte de la documentación técnica verificada.
+- Es un adaptador, no un modelo autonomo: requiere el modelo base MiniMax-H3 y su codificador de texto Qwen3-VL de 32B, con el coste de hardware asociado.
+- El entrenamiento se centro en material de danza de dedos y primeros planos faciales de origen Douyin/TikTok; puede introducir sesgos esteticos (unas manicuradas, estilos de maquillaje, tipos de rostro) y no garantiza correccion anatomica en otros contextos (manos con objetos, manos de ancianos, piel con texturas distintas).
+- Riesgo de sobreajuste al estilo del dataset: el peso recomendado de 0,70-0,80 sugiere que valores mas altos pueden degradar la naturalidad; no se documentan pruebas fuera de ese rango.
+- La licencia bespoke-lora-license es personalizada y remite a la pagina de Civitai del autor; no se detallan en la informacion los terminos de uso comercial, por lo que es obligatorio revisarlos antes de produccion.
+- No se documentan evaluaciones cuantitativas ni comparaciones con alternativas; la eficacia se respalda solo con un video de demostracion.
+- El autor incluye enlaces a plataformas de terceros (RunningHub y un servicio no oficial) cuya fiabilidad y condiciones no estan verificadas.
+- No hay informacion sobre idiomas soportados ni sobre el comportamiento del adaptador con prompts en castellano.
+- La model card incluye afirmaciones de marketing (correccion "definitiva" de seis dedos) que no estan respaldadas por metricas publicadas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/S3ckn11g0r/CROWN-H3-Perfect-Hands-Eyes-Anatomy
-- Civitai (página oficial del creador): https://civitai.com/models/3044609
-- Civitai (perfil del creador): https://civitai.com/user/NineCrowns
-- RunningHub Global (modelo LoRA): https://www.runninghub.ai/model/public/2120439889498419201
-- RunningHub Global (flujo ComfyUI): https://www.runninghub.ai/workflow/2120529947085676546
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Civitai oficial: https://civitai.com/models/3044609
+- Perfil del autor en Civitai: https://civitai.com/user/NineCrowns
+- RunningHub Global (LoRA): https://www.runninghub.ai/model/public/2120439889498419201
+- RunningHub Global (workflow ComfyUI): https://www.runninghub.ai/workflow/2120529947085676546
 - RunningHub Global (webapp): https://www.runninghub.ai/ai-detail/2120529962406330370
-- RunningHub China (modelo LoRA): https://www.runninghub.cn/model/public/2120452728542552066
-- RunningHub China (flujo ComfyUI): https://www.runninghub.cn/workflow/2120527519433707522
+- RunningHub China (LoRA): https://www.runninghub.cn/model/public/2120452728542552066
+- RunningHub China (workflow): https://www.runninghub.cn/workflow/2120527519433707522
 - RunningHub China (webapp): https://www.runninghub.cn/ai-detail/2120527536550670338
-- Plataforma de inferencia en línea mencionada en la model card: https://h3xron.xyz
+- Servicio de terceros mencionado por el autor: https://h3xron.xyz

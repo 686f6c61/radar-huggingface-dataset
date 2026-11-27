@@ -5,24 +5,30 @@
   "author": "SicariusSicariiStuff",
   "url": "https://huggingface.co/SicariusSicariiStuff/Phi-lthy4",
   "created_at": "2025-02-12T04:01:02.000Z",
-  "updated_at": "2026-11-04T21:37:34.000Z",
+  "updated_at": "2026-11-26T16:02:54.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
-  "library": null,
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
   "languages": [
     "en"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "llama",
+    "text-generation",
     "experiment",
     "upscale",
     "prune",
+    "roleplay",
+    "conversational",
     "en",
     "base_model:microsoft/phi-4",
     "base_model:finetune:microsoft/phi-4",
     "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 62,
@@ -37,7 +43,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "disabled": false,
   "removed": false,

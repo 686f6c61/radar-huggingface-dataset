@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwentessential-14B-v3-GGUF",
+  "slug": "mradermacher-qwentessential-14b-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwentessential-14B-v3-GGUF",
+  "created_at": "2025-03-02T12:26:34.000Z",
+  "updated_at": "2026-11-27T10:55:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011134528,
+  "storage_human": "102.0 GB",
+  "context_length": 131072,
+  "base_model": "sometimesanotion/Qwentessential-14B-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

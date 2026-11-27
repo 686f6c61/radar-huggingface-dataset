@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Movens-0/metahuman_video_to_smplx_bvh_v1_5_fast",
+  "slug": "movens-0-metahuman_video_to_smplx_bvh_v1_5_fast",
+  "author": "Movens-0",
+  "url": "https://huggingface.co/Movens-0/metahuman_video_to_smplx_bvh_v1_5_fast",
+  "created_at": "2026-11-27T02:29:41.000Z",
+  "updated_at": "2026-11-27T04:09:09.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "smplx",
+    "motion-capture",
+    "bvh",
+    "metahuman",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43910814740,
+  "storage_human": "43.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Movens-Zero — Scaling Humanoid Motion Foundation Models",
+      "url": "https://movens-zero.github.io/",
+      "snippet": "The Movens dataset is built from raw Internet video. Its data engine filters and annotates clips, reconstructs human motion, repairs …Read more"
+    }
+  ]
+}

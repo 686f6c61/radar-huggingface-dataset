@@ -2,52 +2,53 @@
 
 ## Resumen
 
-Nemotron-3.5-120b-cq es una cuantizacion de 8 bits del modelo multimodal NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, publicada por Cactus-Compute bajo el identificador `Cactus-Compute/nemotron-3.5-120b-cq`. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con componentes Mamba (arquitectura `nemotron_h`), disenado por NVIDIA para tareas conversacionales multimodales que combinan texto e imagen: generacion de texto, respuesta a preguntas visuales, respuesta a preguntas sobre documentos y OCR. Esta version concreta redistribuye los pesos en formato MLX y safetensors, orientada a inferencia eficiente en hardware Apple Silicon.
+Nemotron-3.5-120b-cq es una cuantización de 8 bits del modelo multimodal NVIDIA Nemotron-3.5-Super-VL-120B-A12B-BF16, publicada por Cactus-Compute. El modelo base es un transformer híbrido de tipo MoE con componentes Mamba (arquitectura `nemotron_h` / `nemotron_h_omni`), orientado a tareas de texto e imagen, con pipeline `image-text-to-text`. Esta versión concreta está empaquetada en formato MLX y safetensors, pensada para ejecución eficiente en hardware Apple Silicon.
 
-El modelo resuelve el problema de desplegar un modelo multimodal de gran escala (120B parametros totales, 12B activos por token segun la nomenclatura A12B) en entornos con memoria unificada limitada, gracias a la cuantizacion de 8 bits que reduce el repositorio a 22,1 GB. Su relevancia actual radica en que combina tres tendencias: arquitecturas hibridas MoE-Mamba para eficiencia en contexto largo, capacidades de vision integradas para documentos y OCR, y un ecosistema de cuantizacion (Cactus, MLX) que facilita el despliegue local.
+El problema que resuelve esta ficha es doble: por un lado, ofrece una variante cuantizada a 8 bits de un modelo de gran tamaño (el nombre comercial indica 120B, aunque los pesos publicados en safetensors suman 22.029.082.117 parámetros, es decir, unos 22B reales en el repositorio), lo que reduce el peso del repositorio a 22,2 GB; por otro, lo hace en un formato (MLX) que permite desplegarlo en equipos con memoria unificada en lugar de requerir clústeres de GPU. Es relevante ahora porque la familia Nemotron 3.5 de NVIDIA está orientada a cargas multimodales y agentes, y las cuantizaciones comunitarias amplían su accesibilidad.
 
-La ficha se basa exclusivamente en los metadatos disponibles en Hugging Face; no se ha publicado informacion detallada sobre el proceso de entrenamiento, benchmarks o configuracion exacta de la cuantizacion en la informacion proporcionada. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
+La licencia del modelo base es OpenMDW-1.1 (etiquetada como `license:other` en Hugging Face) y el acceso está restringido: es necesario aceptar las condiciones en el repositorio. Soporta inglés, español, francés, alemán, italiano y japonés, y cubre tareas de generación de texto, respuesta a preguntas visuales, respuesta a preguntas sobre documentos y OCR.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE hibrido con Mamba (`nemotron_h`, `nemotron_h_omni`) |
-| Parametros totales | 22.029.082.117 (pesos cuantizados a 8 bits); modelo base: 120B (A12B activos) |
-| Parametros activos | 12B (segun nomenclatura A12B del modelo base) |
+| Arquitectura | Transformer híbrido MoE con componentes Mamba (`nemotron_h`, `nemotron_h_omni`) |
+| Parametros totales | 22.029.082.117 (según safetensors del repo); el nombre comercial indica 120B |
+| Parametros activos | no disponible (el nombre del modelo base sugiere A12B, es decir, ~12B activos, pero no se confirma en la información proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit (CQ, cuantizacion Cactus) |
+| Tipos de cuantizacion | 8 bits (cuantización CQ de Cactus-Compute); no se detallan otros formatos |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | openmdw-1.1 (el campo `license` del repo indica `other`; acceso gated) |
-| Formato de pesos | safetensors, MLX (libreria `mlx`) |
+| Licencia | OpenMDW-1.1 (`license:other`); acceso restringido (gated) |
+| Formato de pesos | safetensors y MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo base NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 emplea una arquitectura hibrida denominada `nemotron_h` / `nemotron_h_omni`, que combina capas de atencion con capas Mamba (modelos de espacio de estados) y un esquema Mixture-of-Experts con 120B parametros totales y 12B activos por token. Esta combinacion busca reducir el coste computacional en inferencia manteniendo capacidad de modelado, especialmente en secuencias largas, y anade una torre de vision para el procesamiento de imagenes y documentos (pipeline `image-text-to-text`, tareas de VQA, document QA y OCR).
+El modelo base es un transformer híbrido que combina capas de atención con capas Mamba (arquitectura identificada como `nemotron_h` y `nemotron_h_omni` en los tags), y utiliza un diseño Mixture-of-Experts. El sufijo "Omni" y las capacidades declaradas (image-to-text, image-text-to-text, visual-question-answering, document-question-answering, OCR) indican que integra un codificador visual para entrada de imágenes. Esta versión es una cuantización a 8 bits realizada por Cactus-Compute sobre los pesos BF16 originales de NVIDIA, empaquetada para MLX.
 
-Los datos de entrenamiento referenciados en los metadatos son `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`, lo que sugiere un pipeline de preentrenamiento seguido de post-entrenamiento (posiblemente con RLHF/DPO, aunque no se detalla en la informacion disponible). No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni las tecnicas de alineacion. La version `cq` de Cactus-Compute aplica cuantizacion de 8 bits sobre los pesos BF16 originales para su uso con MLX; no se documentan en la informacion proporcionada detalles sobre el algoritmo de cuantizacion, calibracion o perdida de precision.
+Los datasets de entrenamiento referenciados en los tags son `nvidia/nemotron-post-training-v3` y `nvidia/nemotron-pre-training-datasets`, lo que sugiere un pipeline de preentrenamiento seguido de postentrenamiento (posiblemente con RLHF/DPO, aunque no se detalla la metodología exacta en la información disponible). No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni innovaciones técnicas específicas como decodificación especulativa o atención lineal más allá de la combinación Mamba-atención implícita en la arquitectura.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en seis idiomas (ingles, espanol, frances, aleman, italiano y japones).
-- Comprension de imagenes: respuesta a preguntas visuales (VQA) sobre fotografias y escenas.
-- Comprension de documentos: respuesta a preguntas sobre documentos escaneados o digitales (document-question-answering).
-- OCR: extraccion de texto a partir de imagenes.
-- Razonamiento multimodal texto-imagen (pipeline `image-text-to-text`).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponibles (el modelo es texto e imagen).
+- Generación de texto conversacional multilingüe (en, es, fr, de, it, ja).
+- Comprensión de imágenes: image-to-text e image-text-to-text.
+- Respuesta a preguntas visuales (visual question answering).
+- Respuesta a preguntas sobre documentos (document question answering).
+- Reconocimiento óptico de caracteres (OCR).
+- Razonamiento multimodal combinando texto e imagen en la misma conversación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalizacion de facturas y recibos: el modelo puede recibir la imagen de un documento y extraer campos estructurados mediante OCR y document QA, reduciendo la necesidad de pipelines OCR separados y reglas heuristicas.
-- Atencion al cliente con soporte visual: un agente conversacional puede recibir capturas de pantalla o fotos del producto del usuario y responder preguntas multi-turno en espanol, frances, aleman, italiano o japones, aprovechando la naturaleza multimodal del modelo.
-- Analisis de documentos legales o contractuales: dado que soporta document-question-answering, permite consultar clausulas concretas de un PDF escaneado formulando preguntas en lenguaje natural, util en departamentos juridicos y de compliance.
-- Accesibilidad: descripcion de imagenes y lectura de documentos para usuarios con discapacidad visual, combinando OCR y generacion de texto en varios idiomas.
-- Procesamiento de formularios en back-office: extraccion y validacion de datos de formularios escaneados en flujos de banca, seguros o administracion publica, con la ventaja de ejecucion local en hardware Apple Silicon gracias al formato MLX.
-- Asistente de investigacion multimodal: resumen y respuesta a preguntas sobre figuras, tablas y graficos de articulos cientificos, usando la ventana de contexto del modelo base (longitud no confirmada en esta ficha).
-- Traduccion asistida por imagen: traduccion de carteles, menus o interfaces capturadas como imagen a los seis idiomas soportados, combinando OCR y generacion multilingue.
+- Digitalización de documentos con OCR: el modelo puede extraer texto de imágenes de documentos y responder preguntas sobre su contenido, adecuado para pipelines de gestión documental donde se combinan extracción y comprensión.
+- Análisis de facturas y formularios: gracias a document-question-answering, permite consultar campos concretos (importes, fechas, emisores) directamente sobre la imagen del documento sin un pipeline OCR separado.
+- Asistencia multimodal en atención al cliente: puede recibir capturas de pantalla o fotos de productos junto con texto y responder en varios idiomas europeos, útil para soporte técnico de primer nivel.
+- Accesibilidad: descripción automática de imágenes y lectura de documentos para usuarios con discapacidad visual, aprovechando image-to-text y OCR.
+- Procesamiento local en Apple Silicon: al estar en formato MLX con cuantización de 8 bits y 22,2 GB de pesos, puede desplegarse en estaciones de trabajo Mac con memoria unificada suficiente, útil para prototipado y entornos con requisitos de privacidad.
+- Investigación en modelos híbridos Mamba-MoE: sirve como base para estudiar el comportamiento de arquitecturas híbridas cuantizadas en tareas multimodales.
+- Extracción de información de imágenes médicas o técnicas (con validación humana): el modelo puede transcribir y resumir contenido visual, aunque requiere supervisión por el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
@@ -55,39 +56,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repositorio ocupa 22,1 GB en 8 bits; se requiere al menos esa cantidad de memoria unificada o VRAM, mas overhead de ejecucion (KV cache y buffers), por lo que se recomienda un minimo practico de 24-32 GB.
-- GPU recomendadas: no disponible de forma especifica; al estar en formato MLX, el objetivo principal es Apple Silicon (series M1/M2/M3/M4 con memoria unificada de 32 GB o superior). Para GPUs NVIDIA no se documenta soporte directo en esta version.
-- Cabe en consumer GPU: en el ecosistema Apple, si en equipos con 32 GB o mas de memoria unificada; en GPUs consumer NVIDIA no se confirma compatibilidad con este formato.
-- Opciones de despliegue: MLX (libreria declarada); vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: los pesos cuantizados a 8 bits ocupan 22,2 GB; se necesita memoria adicional para el contexto y el codificador visual, por lo que se recomienda al menos 32 GB de memoria unificada o VRAM.
+- GPU recomendadas: no se especifican en la información; el formato MLX está orientado a Apple Silicon (series M1/M2/M3/M4 con memoria unificada de 32 GB o superior).
+- ¿Cabe en GPU de consumo? No hay datos para GPUs NVIDIA de consumo; en el ecosistema Apple, sí en equipos con 32 GB o más de memoria unificada.
+- Opciones de despliegue: MLX (formato nativo del repo); no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información proporcionada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Cactus-Compute/nemotron-3.5-120b-cq | 120B totales / 12B activos (22B en 8-bit) | no disponible | openmdw-1.1 (gated) | safetensors, MLX | Cuantizacion 8-bit para Apple Silicon |
-| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B totales / 12B activos | no disponible | no disponible | BF16 | Modelo base original de NVIDIA |
-| Alternativas multimodales de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
-
-No se dispone de informacion suficiente para comparar con modelos alternativos de la misma categoria en terminos de rendimiento o benchmarks.
+| Cactus-Compute/nemotron-3.5-120b-cq | 22,0B (safetensors) | no disponible | OpenMDW-1.1 (gated) | MLX, safetensors 8-bit | Cuantización comunitaria del base NVIDIA |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | no disponible (nombre: 120B, A12B) | no disponible | no disponible | BF16 | Modelo base original de NVIDIA |
+| Otros modelos multimodales de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
-- Licencia: el campo `license` del repositorio indica `other` y la licencia declarada es openmdw-1.1; es imprescindible revisar los terminos exactos antes de un uso comercial, especialmente por las condiciones heredadas del modelo base de NVIDIA.
-- Perdida de precision: al ser una cuantizacion de 8 bits, puede haber degradacion en tareas sensibles a la precision numerica (OCR fino, matematicas, razonamiento complejo) respecto al modelo BF16 original; no se documenta la magnitud de esta perdida.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en OCR de documentos de baja calidad o en preguntas sobre imagenes ambiguas.
-- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible; los sesgos del modelo base pueden persistir o amplificarse tras la cuantizacion.
-- Idiomas: solo se declaran seis idiomas (en, es, fr, de, it, ja); el rendimiento en otros idiomas no esta garantizado.
-- Contexto: la longitud de contexto no se especifica en esta ficha; debe consultarse la documentacion del modelo base antes de disenar flujos con documentos largos.
-- Compatibilidad: el formato MLX limita el despliegue a entornos Apple; para infraestructura NVIDIA o servidores x86 conviene usar el modelo base original.
-- Produccion: no hay benchmarks publicados en esta informacion, por lo que se recomienda una evaluacion propia antes de desplegar en produccion.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
+- Licencia OpenMDW-1.1: conviene revisar los términos antes de uso comercial; no es una licencia permisiva estándar como Apache-2.0 pese a que los tags incluyan esa etiqueta.
+- Discrepancia de tamaño: el nombre indica 120B pero los safetensors suman 22,0B; verificar qué variante se está usando realmente antes de dimensionar la infraestructura.
+- Riesgo de alucinación en OCR y document-question-answering: la extracción de texto e información de documentos debe validarse en producción.
+- Sesgos: no se documentan sesgos específicos en la información disponible; se recomienda evaluación propia por idioma.
+- Idiomas: solo se declaran seis idiomas (en, es, fr, de, it, ja); el rendimiento en otros idiomas no está garantizado.
+- Formato MLX: la portabilidad a otros runtimes (vLLM, TGI) no está confirmada.
+- Cuantización de 8 bits: puede degradar ligeramente la precisión frente al BF16 original; no se publican métricas de degradación.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Cactus-Compute/nemotron-3.5-120b-cq
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
-- Dataset de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
-- Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Libreria MLX: https://github.com/ml-explore/mlx
-- Cactus Compute: https://github.com/cactus-compute
+- Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
+- Datasets de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets

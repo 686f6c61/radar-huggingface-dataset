@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "squareyards/VibeVoice-7B-Custom",
+  "slug": "squareyards-vibevoice-7b-custom",
+  "author": "squareyards",
+  "url": "https://huggingface.co/squareyards/VibeVoice-7B-Custom",
+  "created_at": "2026-11-27T07:02:36.000Z",
+  "updated_at": "2026-11-27T07:07:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "vibevoice",
+    "Podcast",
+    "text-to-speech",
+    "en",
+    "zh",
+    "arxiv:2508.19205",
+    "arxiv:2412.08635",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9343355361,
+  "parameters_human": "9.34B",
+  "storage_bytes": 18687023945,
+  "storage_human": "18.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

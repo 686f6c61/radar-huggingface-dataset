@@ -2,105 +2,109 @@
 
 ## Resumen
 
-kudhab (𒋻𒇥) es un modelo de decisión derivado de google/gemma-4-31B-it, publicado por el usuario plantwaterer en Hugging Face. No es un modelo generativo en el sentido habitual: su función es recibir una petición estructurada compuesta por un estado, una lista de preguntas tipadas (elección entre opciones o sí/no) y devolver, en un único forward pass, una distribución de probabilidad sobre cada opción. No genera texto libre.
+Kudhab (𒋻𒇥) es un modelo de decisión derivado de Gemma 4 31B, publicado por el usuario plantwaterer en Hugging Face. No es un modelo generativo al uso: para cada pregunta tipada de una petición (una elección entre opciones, o un sí/no) devuelve una probabilidad por opción leída en un único forward pass, sin generar texto. Esto lo convierte en una pieza especializada para sistemas que necesitan puntuar alternativas de forma determinista y de baja latencia.
 
-Técnicamente es un fine-tune de una media uniforme de cuatro fine-tunes del mismo punto de partida Gemma 4 31B, destilado a partir de las probabilidades de salida de MachinePulseAI/karpo-decision-31B sobre el conjunto de preguntas de entrenamiento del autor. Los pesos se leen con el código de inferencia abierto de karpo-decision (Apache-2.0), que define el formato de petición, la atención y el mecanismo de lectura (readout). El modelo declara una puntuación pública de 73,96 en Decision Index 0.3 (bruto 80,03, amplitud 73,54), autoinformada por el autor.
+Técnicamente es un fine-tune de una media uniforme de cuatro fine-tunes del mismo punto de partida (Gemma 4 31B), destilado a partir de las probabilidades de salida de MachinePulseAI/karpo-decision-31B sobre las preguntas de entrenamiento del autor. El modelo no contiene pesos de karpo-decision ni se inicializó desde ellos, pero se lee con el código de inferencia abierto de karpo-decision (Apache-2.0), que define el formato de petición, la atención y el mecanismo de lectura.
 
-Su relevancia radica en que ofrece un modelo de decisión de 31B parámetros con licencia Apache-2.0 y pesos abiertos, algo poco común en esta categoría, donde los modelos de decisión suelen distribuirse bajo licencias comunitarias restrictivas. Está pensado para integrarse en pipelines de agentes y sistemas de enrutamiento donde se necesita una política de selección probabilística rápida, no una generación de texto.
+Su relevancia actual radica en que ocupa el puesto 3 del Decision Index 0.4.1 (snapshot de 2026-11-21, 345 modelos) con una puntuación completa de 73.04, y en que ofrece un contrato de inferencia claro (formato `karpo-blocks-v1`, lectura por softmax sobre códigos de opción) sobre un backbone de 31.273.088.876 parámetros.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4), con 10 capas de atención global y 50 capas de ventana deslizante; lectura mediante matriz de readout 255 x 5.376 |
+| Arquitectura | Transformer decoder-only (Gemma 4 31B) con capas de atención global y de ventana deslizante; cabezal de lectura de decisión sobre códigos de opción |
 | Parámetros totales | 31.273.088.876 |
 | Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens por defecto (max_length); ventana deslizante de 1.024 tokens en 50 capas |
-| Tipos de cuantización | no disponible (pesos publicados en bf16) |
+| Longitud de contexto | 32.768 tokens (`max_length` por defecto); ventana deslizante de 1.024 tokens en las capas locales |
+| Tipos de cuantización | no disponible (pesos publicados en bf16; 62,5 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (backbone + readout.safetensors), config.json, decision_config.json, tokenizer |
+| Formato de pesos | safetensors (backbone + `readout.safetensors`), `config.json`, `decision_config.json`, tokenizer |
 
 ## Arquitectura y entrenamiento
 
-El backbone es Gemma 4 de 31B parámetros en configuración decoder-only, con una combinación de 10 capas de atención global y 50 capas de ventana deslizante causal de 1.024 tokens. La innovación principal no está en el backbone sino en el mecanismo de lectura: en el último token de cada rama de pregunta, el estado oculto se multiplica por una matriz de 255 x 5.376 en fp32 (las filas del language-model head del modelo, atadas a los embeddings de entrada, correspondientes a los 255 tokens de código de opción). El resultado se somete a un soft-cap de 30·tanh(x/30) y las probabilidades de la pregunta son el softmax a temperatura 1 sobre los códigos de sus opciones. Esta matriz de readout no se entrena.
+El backbone es Gemma 4 31B, un transformer decoder-only con dos tipos de capas de atención: 10 capas de atención global y 50 capas de ventana deslizante causal de 1.024 tokens. Sobre ese backbone, karpo-decision añade un mecanismo de lectura: en el último token de cada rama de pregunta, el estado oculto se multiplica por una matriz fp32 de 255 × 5.376 (las filas del language-model head del modelo, atadas a sus embeddings de entrada, para los 255 tokens de código de opción) y se aplica un soft-cap (30·tanh(x/30)); las probabilidades de la pregunta son el softmax a temperatura 1 sobre los códigos de sus opciones. Esa matriz de lectura no se entrena.
 
-El entrenamiento consistió en destilación: se partió de una media uniforme (0,5/0,5) de plantwaterer/munku y tattrongvu/Jeffan-31b-1710 (revisión Apache-2.0), ambos fine-tunes de Gemma 4 31B, y se entrenó cada etapa para reproducir las probabilidades de salida del profesor MachinePulseAI/karpo-decision-31B sobre las preguntas de entrenamiento del autor, ejecutado con su propio código de inferencia (vista `joint`, temperatura 1). El modelo no contiene pesos de karpo-decision ni se inicializó a partir de ellos. El formato de petición es `karpo-blocks-v1`: un turno de sistema, un bloque compartido con la lista de preguntas y el contexto, y una rama por pregunta con sus opciones etiquetadas con códigos de un token (A, B, ..., hasta 255 opciones) y el slot `Answer: (`. Las ramas no se ven entre sí; las peticiones que superan max_length se dividen por preguntas repitiendo el bloque compartido, y las preguntas que no caben se rechazan en lugar de truncarse.
+El entrenamiento parte de una media uniforme (0,5 / 0,5) de plantwaterer/munku y tattrongvu/Jeffan-31b-1710 (revisión cebfa86c2bed2b5c83b12e44de4374b20c87fd79, Apache-2.0), ambos fine-tunes de google/gemma-4-31B-it. Cada etapa se entrenó para igualar las probabilidades de salida de MachinePulseAI/karpo-decision-31B sobre las preguntas de entrenamiento del autor, es decir, destilación desde sus salidas. El formato de petición `karpo-blocks-v1` organiza un turno de sistema, un bloque compartido (lista de preguntas y contexto) y una rama por pregunta con las opciones etiquetadas con códigos de un token (A, B, …, hasta 255 opciones) y el slot `Answer: (`. En las capas de atención global, el bloque compartido se atiende a sí mismo y cada rama al bloque y a sí misma en ambas direcciones, sin que las ramas se vean entre sí; las capas de ventana deslizante son causales dentro de su ventana de 1.024 tokens.
 
 ## Capacidades
 
-- Decisión probabilística sobre opciones: devuelve una probabilidad por opción para preguntas de tipo elección o sí/no, en un solo forward pass, sin generación de texto.
-- Soporte de hasta 255 opciones por pregunta mediante códigos de un token.
-- Manejo de múltiples preguntas por petición con un bloque de contexto compartido y ramas independientes por pregunta.
-- Modos de vista configurables: `joint` (por defecto), `reversed` (promedia cada pregunta de elección sobre su orden y el inverso) y `single`.
-- Gestión de peticiones largas mediante división por preguntas con repetición del bloque compartido.
-- Rechazo explícito de peticiones con imágenes (solo texto).
-- Integración con el motor DecisionIndexEngine de karpo-decision y con el kit apolinario/decision-index.
+- Puntuación de decisiones: devuelve una probabilidad por opción para preguntas de tipo elección (hasta 255 opciones) y de tipo sí/no, en un único forward pass.
+- Peticiones con múltiples preguntas: el formato `karpo-blocks-v1` permite agrupar varias preguntas sobre un contexto compartido, con ramas independientes que no se contaminan entre sí.
+- Procesamiento de contexto largo: hasta 32.768 tokens por petición; las peticiones que exceden ese límite se dividen por preguntas repitiendo el bloque compartido, y una pregunta que no cabe con su estado se rechaza en lugar de truncarse.
+- Modo de vista configurable: `joint` (por defecto), `reversed` (promedia cada pregunta de elección sobre su orden y el inverso) y `single`.
+- Integración con el motor `DecisionIndexEngine` de karpo-decision y con el kit `decision-index` de apolinario.
+- Salida determinista y probabilística, apta para umbrales y ranking; no genera texto libre.
+- Sin soporte de imágenes: las peticiones con imágenes se rechazan (solo texto).
+- Soporte de tool calling, agentes, visión o audio: no disponible (no documentado en la información proporcionada).
 
 ## Casos de uso
 
-- Enrutamiento de consultas en sistemas de agentes: dado un estado conversacional y una lista de herramientas o intenciones disponibles, el modelo devuelve la probabilidad de cada opción en un forward pass, lo que permite seleccionar la ruta con un umbral configurable sin coste de generación.
-- Clasificación de intenciones en atención al cliente: con el contexto del historial como bloque compartido y las intenciones como opciones, se obtiene una distribución calibrada que puede alimentar una cola de triaje o un sistema de escalado.
-- Evaluación de políticas en entornos simulados: para estados discretos o textuales con un conjunto finito de acciones, el modelo actúa como política estocástica, útil en experimentos de RL o simulación de decisiones.
-- Verificación de respuestas en pipelines RAG: plantear como pregunta de elección si una respuesta candidata es correcta, parcialmente correcta o incorrecta, usando el contexto recuperado como bloque compartido.
-- Moderación y etiquetado con múltiples criterios: una sola petición con varias preguntas tipadas (por ejemplo, toxicidad, spam, relevancia) sobre el mismo texto, aprovechando que las ramas son independientes y el contexto se comparte.
-- Selección de variantes en generación: usar el modo `reversed` para preguntas de elección cuyas opciones pueden reordenarse, promediando sobre el orden y su inverso para reducir el sesgo posicional.
-- Automatización de encuestas y cuestionarios estructurados: procesar lotes de preguntas tipadas con contexto largo (hasta 32.768 tokens) en una sola pasada.
+- Enrutamiento de peticiones en pipelines de agentes: dado un mensaje del usuario y un conjunto de herramientas o intenciones etiquetadas como opciones, el modelo devuelve la probabilidad de cada una en un forward pass, lo que permite umbrales de confianza y fallback a un modelo generativo.
+- Moderación y clasificación de políticas: plantear cada política como una opción de una pregunta de elección y usar las probabilidades para decidir si una solicitud infringe una norma, con la ventaja de que la decisión es reproducible y auditable.
+- Sistemas de recomendación con criterios explícitos: cada candidato se etiqueta como opción y el contexto del usuario como bloque compartido; las probabilidades permiten ordenar candidatos con una latencia mediana de 92 ms por petición en una RTX PRO 6000.
+- Validación de respuestas en pipelines RAG: formular preguntas de sí/no sobre si una respuesta generada está respaldada por el contexto recuperado, usando el bloque compartido para el contexto y ramas por afirmación.
+- Decisión de escalado en atención al cliente: preguntas de elección entre "resolver automáticamente", "escalar a humano" o "pedir más información", con el historial de conversación como contexto compartido de hasta 32.768 tokens.
+- Evaluación automática de modelos: usar el modelo como juez probabilístico en comparaciones por pares o múltiples, aprovechando la vista `reversed` para mitigar el sesgo de orden de las opciones.
+- Selección de configuración en CI/CD: puntuar alternativas de configuración o parches propuestos como opciones de una pregunta, con la salida probabilística integrada en un gate de despliegue.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| Decision Index 0.3 (público) | 73,96 | Autoinformado por el autor; bruto 80,03, amplitud 73,54 |
+Resultados publicados en la model card (Decision Index 0.4.1, snapshot de 2026-11-21, 345 modelos):
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible. El modelo no es generativo, por lo que los benchmarks de generación de texto no son directamente aplicables.
+| Métrica | Puntuación | Rango | Comparación |
+|---|---|---|---|
+| Full score | 73,04 | 3 | +1,79 sobre plantwaterer/munku (71,25); en el grupo 1 junto a karpo-decision-31B (73,86) y GLiDE 27B (73,37) |
+| Same-skill score | 69,53 | 3 | +2,13 |
+| New-domain score | 61,57 | 5 | +1,00 |
+| Public suite score (auto-evaluado) | 73,96 (raw 80,03; breadth 73,54) | 8 | +2,86 sobre munku (71,10) |
 
-Latencia medida por el autor en una RTX PRO 6000 Blackwell (96 GB), muestra pública de 1.000 peticiones, una petición a la vez, vista `joint`, max_length 32.768, sin kernels `blackwell` opcionales, mediana de dos ejecuciones, sin carga ni warm-up (13 s):
+Latencia medida en una RTX PRO 6000 Blackwell sobre la muestra pública de 1.000 peticiones, una petición a la vez, vista `joint`, `max_length` 32.768, mediana de dos ejecuciones (sin carga de modelo ni warm-up de 13 s; se excluyen las 4 peticiones rechazadas):
 
 | Mediana | Media | p80 | p95 | Peticiones > 1 s | Memoria GPU pico |
 |---|---|---|---|---|---|
 | 92 ms | 246 ms | 237 ms | 523 ms | 31 | 73,6 GiB |
 
+No se han publicado resultados de benchmarks en la información disponible para MMLU, HumanEval, GSM8K u otras suites estándar de generación.
+
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 62,5 GB en bf16 para los pesos; el autor reporta un pico de 73,6 GiB en nvidia-smi con max_length 32.768.
-- GPU recomendadas: una sola GPU con al menos 80 GB, como A100 80 GB, H100 80 GB o RTX PRO 6000 (96 GB). El autor validó en RTX PRO 6000 Blackwell.
-- No cabe en GPU de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) en bf16. No se han publicado pesos cuantizados, por lo que no hay cifras verificadas para configuraciones de menor VRAM.
-- Opciones de despliegue: el modelo se ejecuta mediante el código de karpo-decision (`karpo_decision.serve.engine:DecisionIndexEngine`) y el kit decision-index, no mediante vLLM, llama.cpp, Ollama o TGI, que no están soportados según la información disponible.
-- Dependencias declaradas: torch >= 2.14, transformers >= 5.17, safetensors >= 0.6, Python 3.12 (probado con torch 2.14.1+cu130 y transformers 5.21.0).
-- Latencia y throughput: mediana de 92 ms por petición en RTX PRO 6000 Blackwell con max_length 32.768; el autor no reporta throughput agregado con concurrencia.
+- VRAM: los pesos en bf16 ocupan 62,5 GB; el pico medido en inferencia con `max_length` 32.768 es de 73,6 GiB en una RTX PRO 6000 de 96 GB.
+- GPU recomendadas: una sola GPU con al menos 80-96 GB de memoria, como RTX PRO 6000 (96 GB), A100 80 GB o H100 80 GB; el pico de 73,6 GiB deja poco margen en GPUs de 80 GB con contexto máximo.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en GPUs consumer de 32 GB en bf16; no se documentan cuantizaciones alternativas.
+- Despliegue: motor `karpo_decision.serve.engine:DecisionIndexEngine` mediante el kit `decision-index`; también uso directo en Python con `karpo_decision.decider.Decider`. No se documenta soporte de vLLM, llama.cpp, Ollama o TGI.
+- Entorno: torch >= 2.14 (probado con 2.14.1+cu130), transformers >= 5.17 (probado con 5.21.0), safetensors >= 0.6, Python 3.12.
+- Latencia: mediana de 92 ms y p95 de 523 ms por petición en la muestra de referencia; el motor incluye kernels opcionales `blackwell` no usados en la medición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Full score (Decision Index 0.4.1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plantwaterer/kudhab | 31,27 B | 32.768 tokens | Decisión probabilística por destilación | Apache-2.0 | Pesos abiertos en HF |
-| MachinePulseAI/karpo-decision-31B | no disponible | no disponible | Decisión probabilística (profesor) | MachinePulse Community License | Pesos en HF bajo licencia comunitaria |
-| plantwaterer/munku | no disponible | no disponible | Fine-tune de Gemma 4 31B (componente del punto de partida) | Apache-2.0 | Pesos en HF |
-| tattrongvu/Jeffan-31b-1710 | no disponible | no disponible | Fine-tune de Gemma 4 31B (componente del punto de partida) | Apache-2.0 (revisión cebfa86c) | Pesos en HF |
-
-La comparativa con alternativas de la misma categoría (modelos de decisión) es limitada: no se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada. La diferencia principal de kudhab frente a karpo-decision-31B es la licencia (Apache-2.0 frente a MachinePulse Community License), lo que facilita su uso comercial sin las restricciones de la licencia del profesor.
+| plantwaterer/kudhab | 31,27 B | 32.768 | 73,04 (rango 3) | Apache-2.0 | Hugging Face |
+| MachinePulseAI/karpo-decision-31B | no disponible | no disponible | 73,86 (grupo 1) | Apache-2.0 (código de inferencia) | Hugging Face |
+| GLiDE 27B | 27 B (según nombre) | no disponible | 73,37 (grupo 1) | no disponible | Hugging Face |
+| plantwaterer/munku | 31 B (fine-tune de Gemma 4 31B) | no disponible | 71,25 | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: solo devuelve probabilidades sobre opciones predefinidas. No es adecuado para tareas generativas.
-- Rechaza peticiones con imágenes; solo procesa texto.
-- Las preguntas que no caben en max_length junto con su estado se rechazan, nunca se truncan, lo que puede provocar fallos en pipelines que esperan siempre una respuesta.
-- La matriz de readout no se entrena y se deriva del language-model head; su comportamiento fuera de la distribución de entrenamiento no está documentado.
-- El rendimiento declarado (Decision Index 73,96) es autoinformado por el autor y no ha sido verificado de forma independiente en la información disponible.
-- Los datos de entrenamiento son las preguntas del autor y las salidas del profesor; existe riesgo de sesgo hacia la distribución de esas preguntas y de heredar sesgos del profesor y del backbone Gemma 4.
-- No se han publicado evaluaciones de sesgo, toxicidad ni robustez.
-- Los idiomas soportados no están documentados; el comportamiento multilingüe es desconocido.
-- La licencia Apache-2.0 del modelo es compatible con uso comercial, pero el profesor karpo-decision-31B está bajo MachinePulse Community License, cuya sección 8(f) regula los modelos entrenados solo sobre sus salidas; el autor afirma que kudhab cumple, pero conviene revisar los términos antes de un despliegue comercial.
-- El modelo depende de código externo (karpo-decision y decision-index) fijado a commits concretos; cambios en esas dependencias pueden romper la compatibilidad.
-- No hay pesos cuantizados publicados, lo que limita el despliegue en hardware de menor capacidad.
+- No es un modelo generativo: no produce texto, solo probabilidades sobre opciones; no sirve para chat, redacción ni código.
+- Rechaza peticiones con imágenes (solo texto) y rechaza preguntas que no caben en `max_length` con su estado, en lugar de truncarlas.
+- El rendimiento depende de la calidad del etiquetado de opciones y del formato `karpo-blocks-v1`; un uso fuera de ese contrato de inferencia no está soportado.
+- La matriz de lectura no se entrena y se deriva del language-model head; los resultados están ligados al código de karpo-decision en el commit a6fa38bf4e8de9dbdb9491fb461b9b320a2e2118.
+- El public suite score (73,96) es auto-evaluado por el autor, no una evaluación independiente.
+- El modelo se destiló de las salidas de karpo-decision-31B, por lo que puede heredar sus sesgos y errores sistemáticos.
+- Idiomas soportados no documentados; no se garantiza un comportamiento multilingüe.
+- Licencia Apache-2.0 en pesos y código, pero el uso comercial debe verificar también las licencias del modelo base (Gemma 4 31B, Apache-2.0) y de las dependencias (karpo-decision y decision-index, Apache-2.0).
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de calibración deficiente de probabilidades fuera de la distribución de entrenamiento.
+- El requisito de memoria (73,6 GiB de pico) limita el despliegue a GPUs de gama alta.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/plantwaterer/kudhab
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Profesor (karpo-decision-31B): https://huggingface.co/MachinePulseAI/karpo-decision-31B
-- Repositorio de karpo-decision: https://github.com/machinepulse-ai/karpo-decision
-- Componente del punto de partida (munku): https://huggingface.co/plantwaterer/munku
-- Componente del punto de partida (Jeffan-31b-1710): https://huggingface.co/tattrongvu/Jeffan-31b-1710
+- Modelo predecesor: https://huggingface.co/plantwaterer/munku
+- Modelo fusionado: https://huggingface.co/tattrongvu/Jeffan-31b-1710
+- Modelo destilado: https://huggingface.co/MachinePulseAI/karpo-decision-31B
+- Código de inferencia karpo-decision: https://github.com/machinepulse-ai/karpo-decision
 - Kit decision-index: https://github.com/apolinario/decision-index
+- Board del Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index

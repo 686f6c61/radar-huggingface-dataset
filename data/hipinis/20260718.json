@@ -12,10 +12,7 @@
   "library": "diffusers",
   "languages": [],
   "tags": [
-    "diffusers",
     "onnx",
-    "safetensors",
-    "gguf",
     "region:us"
   ],
   "likes": 1,
@@ -29,9 +26,7 @@
   "base_model": null,
   "formats": [
     "diffusers",
-    "gguf",
-    "onnx",
-    "safetensors"
+    "onnx"
   ],
   "is_conversational": false,
   "gated": false,

@@ -5,7 +5,7 @@
   "author": "TEDI-AI",
   "url": "https://huggingface.co/TEDI-AI/GLM-LORA",
   "created_at": "2026-11-10T03:01:59.000Z",
-  "updated_at": "2026-11-26T05:53:42.000Z",
+  "updated_at": "2026-11-27T05:35:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,8 @@
     "lora",
     "ocr",
     "borehole-log",
-    "base_model:zai-org/GLM-OCR",
-    "base_model:adapter:zai-org/GLM-OCR",
+    "base_model:ATH-MaaS/OvisOCR3",
+    "base_model:adapter:ATH-MaaS/OvisOCR3",
     "region:us"
   ],
   "likes": 1,
@@ -26,10 +26,10 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 52908524421,
-  "storage_human": "52.9 GB",
+  "storage_bytes": 64448770319,
+  "storage_human": "64.4 GB",
   "context_length": null,
-  "base_model": "zai-org/GLM-OCR",
+  "base_model": "ATH-MaaS/OvisOCR3",
   "formats": [
     "safetensors"
   ],

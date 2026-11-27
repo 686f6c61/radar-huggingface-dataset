@@ -5,7 +5,7 @@
   "author": "ZiQiJiang",
   "url": "https://huggingface.co/ZiQiJiang/Generation",
   "created_at": "2026-11-04T09:50:53.000Z",
-  "updated_at": "2026-11-26T02:53:02.000Z",
+  "updated_at": "2026-11-27T06:47:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "unconditional-image-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "safetensors",
     "image-generation",
     "representation-learning",
     "dino",
@@ -27,11 +28,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 181618453197,
-  "storage_human": "181.6 GB",
+  "storage_bytes": 181704815573,
+  "storage_human": "181.7 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

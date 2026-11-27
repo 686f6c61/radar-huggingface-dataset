@@ -2,94 +2,111 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Nebula-GGUF es una cuantizacion personalizada del modelo Qwen3.6-35B-A3B, publicada por ListenAI. Se distribuye en formato GGUF con un esquema de cuantizacion propietario (GPTQ combinado con el formato Nebula, INT4 de pesos con activaciones en FP16 y grupo de 32) disenado especificamente para la inferencia sobre el chip Nebula de ListenAI. El modelo base lo desarrolla el equipo Qwen y conserva la licencia Apache-2.0.
+Qwen3.6-35B-A3B-Nebula-GGUF es una cuantizacion personalizada del modelo Qwen3.6-35B-A3B, publicada por ListenAI. No se trata de un modelo entrenado desde cero, sino de una redistribucion en formato GGUF pensada para ejecutarse sobre la plataforma de hardware Nebula del propio fabricante, utilizando una implementacion adaptada de llama.cpp. El modelo base pertenece a la familia Qwen3.6 del equipo Qwen y emplea una arquitectura de mezcla de expertos (MoE), segun indican las etiquetas del repositorio.
 
-El modelo mantiene los 35.505.251.456 parametros del modelo original, con arquitectura MoE (segun los tags del repositorio), y se publica como un artefacto de despliegue para hardware propietario, no como un modelo generalista para GPU convencionales. Su relevancia actual radica en que demuestra la tendencia de cuantizaciones verticales optimizadas para aceleradores especificos, en este caso un chip de inferencia de ListenAI.
+El interes de esta publicacion es acotado y muy especifico: sirve como referencia de despliegue de un modelo MoE de gran tamano en un chip propietario con cuantizacion INT4 de pesos y activaciones en FP16. La cuantizacion no es un GGUF estandar, sino un esquema propietario de ListenAI basado en GPTQ con metadatos E4M0 de dos niveles y tamano de grupo 32, lo que limita su portabilidad a motores de inferencia adaptados por el fabricante.
 
-La model card es explicita: el formato de cuantizacion puede no ser compatible con motores GGUF estandar y requiere una version adaptada de llama.cpp junto con el runtime y driver de Nebula. Por tanto, es un artefacto de interes para integradores del ecosistema ListenAI mas que para usuarios de llama.cpp, Ollama o vLLM al uso.
+Con 35.505.251.456 parametros totales y un repositorio de 22,7 GB, el modelo esta pensado para cargas conversacionales y de generacion de codigo. Su relevancia actual radica en que demuestra que es posible comprimir un MoE de 35B a 4 bits manteniendo una calidad cercana al baseline FP16 en tareas de codigo y conocimiento, aunque a costa de perder compatibilidad con el ecosistema GGUF convencional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (segun tags del repositorio; detalles no disponibles) |
-| Parametros totales | 35.505.251.456 (35,5 B) |
+| Arquitectura | Mezcla de expertos (MoE), segun etiquetas del repositorio; detalles de capas y atencion no disponibles |
+| Parametros totales | 35.505.251.456 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT4 de pesos (E4M0, two-level, group size 32, `desc_act=false`), activaciones FP16 (W4A16) |
+| Tipos de cuantizacion | INT4 de pesos (E4M0 de dos niveles, group size 32, desc_act=false) con activaciones FP16; esquema GPTQ + cuantizacion propietaria Nebula |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (esquema propietario Nebula, version 2 en metadatos) |
+| Formato de pesos | GGUF (variante propietaria no compatible con motores GGUF estandar) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion del Qwen3.6-35B-A3B original, no un modelo entrenado desde cero. La arquitectura subyacente es la del modelo base de Qwen, que los tags identifican como MoE con 35,5 B de parametros totales; la model card no detalla el numero de expertos, los parametros activos por token ni la longitud de contexto, y remite al repositorio original de Qwen para esos datos.
+El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura de mezcla de expertos, segun las etiquetas del repositorio (`moe`). ListenAI no aporta informacion sobre el numero de expertos, la estrategia de enrutamiento, la longitud de contexto original ni el volumen de datos de entrenamiento. Tampoco se documenta si el modelo base paso por fases de RLHF o DPO; la model card remite explicitamente al repositorio original de Qwen para arquitectura, tokenizador y configuracion.
 
-El proceso de cuantizacion combina GPTQ con el formato propietario Nebula: pesos en INT4 con esquema E4M0 de dos niveles, tamano de grupo 32 y `desc_act=false`, mientras que las activaciones se mantienen en FP16 (W4A16). Los metadatos GGUF declaran version de cuantizacion 2. No se documentan detalles sobre datos de calibracion, numero de tokens de entrenamiento ni si el modelo base paso por RLHF o DPO; esa informacion corresponde al modelo original Qwen3.6-35B-A3B.
+La innovacion tecnica de esta publicacion es exclusivamente la cuantizacion. Se aplica un esquema GPTQ con un formato propietario de dos niveles E4M0, grupo de 32 y `desc_act=false`, que produce pesos de 4 bits y activaciones de 16 bits (W4A16). El resultado se empaqueta como GGUF con metadatos de version 2, pero el formato no es compatible con motores GGUF convencionales: requiere la implementacion de llama.cpp adaptada por ListenAI y el runtime y driver de Nebula. No se documentan tecnicas de decodificacion especulativa, atencion lineal ni otras optimizaciones de inferencia.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el tag `conversational` del repositorio.
-- Generacion de codigo: la evaluacion publicada se centra en Pass@1 sobre 656 muestras en Python, C++, Java y JavaScript.
-- Capacidades de razonamiento y matematicas: no documentadas de forma especifica en la informacion disponible, aunque heredadas del modelo base Qwen3.6-35B-A3B.
-- Tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
-- Capacidades multimodales: la model card indica que la inferencia multimodal no esta validada; solo se documenta inferencia de texto.
-- Inferencia optimizada para el chip Nebula de ListenAI mediante llama.cpp adaptado.
+- Generacion de texto conversacional, segun la etiqueta `conversational` y el ejemplo de inferencia de la model card.
+- Generacion de codigo en Python, C++, Java y JavaScript, validada con un conjunto de 656 muestras y metrica Pass@1.
+- Razonamiento y conocimiento general evaluado con MMLU-Pro en 14 categorias (biologia, negocios, quimica, informatica, economia, ingenieria, salud, historia, derecho, matematicas, filosofia, fisica, psicologia y otros).
+- Capacidades multilingues: no disponibles; no se especifica la lista de idiomas soportados.
+- Tool calling y function calling: no disponible; la model card no lo documenta.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multimodales: no validadas; la model card indica explicitamente que solo se documenta la inferencia de texto.
 
 ## Casos de uso
 
-- Despliegue en dispositivos con chip Nebula: el caso de uso principal y practicamente exclusivo. El modelo esta cuantizado para ejecutarse sobre el acelerador Nebula con el runtime de ListenAI; se usaria en productos integrados que incorporen ese hardware.
-- Asistencia de codigo en entornos embebidos: la evaluacion Pass@1 en cuatro lenguajes (Python, C++, Java, JavaScript) sugiere uso para autocompletado y generacion de codigo en herramientas integradas sobre Nebula, con una perdida de calidad minima respecto al baseline FP16 (85,98 % frente a 86,89 % global).
-- Generacion de codigo en produccion: el modelo conserva el rendimiento del baseline en Python (90,24 % frente a 89,63 %) y mejora en Java (87,20 % frente a 85,98 %), lo que lo hace apto para pipelines de generacion de codigo donde el hardware Nebula este disponible.
-- Chat conversacional local: el tag `conversational` y la reduccion de huella (repositorio de 22,7 GB para 35,5 B de parametros) permiten desplegar un asistente conversacional en el dispositivo sin depender de la nube, siempre que se use el stack de ListenAI.
-- Evaluacion y prototipado de cuantizaciones verticales: util para investigadores que estudien el impacto de esquemas INT4 propietarios frente a cuantizaciones GGUF estandar en tareas de codigo.
-- Integracion en productos de terceros sobre Nebula: mediante el endpoint compatible que declara el repositorio, se puede exponer el modelo como servicio conversacional dentro de una infraestructura basada en Nebula.
+- Despliegue en dispositivos con chip Nebula: el caso de uso principal y practicamente unico documentado. El modelo esta optimizado para inferencia en la plataforma Nebula con el runtime y driver correspondientes, y se carga mediante la implementacion adaptada de llama.cpp.
+- Asistencia de codigo en entornos embebidos: con un Pass@1 global del 85,98 % en el conjunto de 656 muestras, el modelo es adecuado para autocompletado y generacion de funciones en Python, C++, Java y JavaScript dentro de toolchains integradas en hardware Nebula.
+- Evaluacion de calidad de cuantizacion: sirve como referencia para comparar el impacto de la cuantizacion W4A16 E4M0 frente al baseline FP16 en tareas de codigo y conocimiento, con una perdida global de 0,91 puntos en el benchmark de codigo y de 0,96 puntos en MMLU-Pro.
+- Prototipado de asistentes conversacionales en hardware propietario: el ejemplo de la model card (`llama-cli` con prompt de presentacion y 512 tokens de salida) ilustra el flujo basico para validar respuestas conversacionales en el chip.
+- Investigacion sobre formatos de cuantizacion no estandar: el esquema de dos niveles E4M0 con group size 32 y `desc_act=false` es un objeto de estudio util para quienes investigan tecnicas de compresion de MoE y su compatibilidad con motores de inferencia.
+- Validacion de pipelines de despliegue ListenAI: el repositorio incluye instrucciones de descarga con `huggingface_hub` y compilacion de llama.cpp adaptado, lo que permite integrar el modelo en procesos de CI internos del fabricante o de sus socios.
 
 ## Benchmarks y rendimiento
 
-Evaluacion publicada por el autor sobre 656 muestras de codigo, metrica Pass@1:
+Resultados publicados por el autor en la model card. Test de codigo: 656 muestras, metrica Pass@1. MMLU-Pro: metrica accuracy.
 
-| Modelo | Python | C++ | Java | JavaScript | Global |
-|---|---:|---:|---:|---:|---:|
-| FP16 baseline | 89,63 % | 81,71 % | 85,98 % | 90,24 % | 86,89 % |
-| W4A16_E4M0 | 90,24 % | 80,49 % | 87,20 % | 85,98 % | 85,98 % |
+| Benchmark | FP16 baseline | W4A16_E4M0 |
+|---|---:|---:|
+| Codigo - Python | 89,63 % | 90,24 % |
+| Codigo - C++ | 81,71 % | 80,49 % |
+| Codigo - Java | 85,98 % | 87,20 % |
+| Codigo - JavaScript | 90,24 % | 85,98 % |
+| Codigo - Global | 86,89 % | 85,98 % |
+| MMLU-Pro - Biology | 90,52 % | 89,68 % |
+| MMLU-Pro - Business | 88,59 % | 86,06 % |
+| MMLU-Pro - Chemistry | 87,99 % | 86,48 % |
+| MMLU-Pro - Computer Science | 86,34 % | 86,59 % |
+| MMLU-Pro - Economics | 86,97 % | 86,61 % |
+| MMLU-Pro - Engineering | 76,68 % | 74,10 % |
+| MMLU-Pro - Health | 76,89 % | 77,75 % |
+| MMLU-Pro - History | 74,28 % | 69,29 % |
+| MMLU-Pro - Law | 65,40 % | 60,94 % |
+| MMLU-Pro - Math | 90,82 % | 92,01 % |
+| MMLU-Pro - Philosophy | 78,76 % | 75,15 % |
+| MMLU-Pro - Physics | 84,14 % | 86,84 % |
+| MMLU-Pro - Psychology | 84,59 % | 83,83 % |
+| MMLU-Pro - Other | 76,52 % | 75,32 % |
+| MMLU-Pro - Global | 82,30 % | 81,34 % |
 
-La cuantizacion pierde 0,91 puntos porcentuales en el global, con mejoras en Python y Java y retrocesos en C++ y JavaScript. No se han publicado resultados de MMLU, GSM8K, HumanEval ni otros benchmarks en la informacion disponible.
+La cuantizacion produce mejoras puntuales (Python, Java, Computer Science, Health, Math, Physics) y perdidas notables en History (-4,99 puntos) y Law (-4,46 puntos). No se publican resultados de MMLU estandar, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El modelo esta orientado al chip Nebula, no a GPU convencionales; el repositorio ocupa 22,7 GB en INT4.
-- GPU recomendadas: no aplica; la model card solo valida el hardware ListenAI Nebula y declara el resto de plataformas como "not validated".
-- Compatibilidad con GPU de consumo: no validada. Aunque el tamano en INT4 (22,7 GB) cabria tecnicamente en GPUs con 24 GB o mas, el esquema de cuantizacion propietario impide su uso con llama.cpp estandar.
-- Opciones de despliegue: llama.cpp adaptado por ListenAI, runtime y driver de Nebula y backend de carga compatible. No se mencionan vLLM, TGI, Ollama ni otros motores.
+- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio ocupa 22,7 GB, lo que da una cota inferior orientativa para cargar los pesos en memoria; el consumo real depende del runtime de Nebula y del contexto.
+- GPU recomendadas: no aplica. El destino documentado es el chip ListenAI Nebula; no se especifica el modelo de hardware concreto.
+- Compatibilidad con GPU de consumo: no validada. La model card indica que otras plataformas no han sido validadas y que los motores GGUF estandar pueden no soportar el formato de cuantizacion.
+- Opciones de despliegue: llama.cpp en la implementacion adaptada por ListenAI, con runtime y driver de Nebula y backend de carga compatible. vLLM, TGI, Ollama y llama.cpp estandar no estan soportados segun la documentacion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Hardware objetivo |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Nebula-GGUF | 35,5 B (MoE) | no disponible | GGUF propietario | Apache-2.0 | Chip Nebula (ListenAI) |
-| Qwen/Qwen3.6-35B-A3B (original) | 35,5 B (MoE) | no disponible | safetensors | Apache-2.0 | GPU genericas |
-| Cuantizaciones GGUF estandar del mismo base | 35,5 B (MoE) | no disponible | GGUF estandar | Apache-2.0 | CPU, GPU, Apple Silicon |
+| Qwen3.6-35B-A3B-Nebula-GGUF (este) | 35.505.251.456 | no disponible | GGUF propietario W4A16 | Apache-2.0 | Hugging Face, 507 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35.505.251.456 | no disponible | safetensors (original) | Apache-2.0 | Hugging Face |
+| Otras cuantizaciones GGUF del modelo base | no disponible | no disponible | GGUF estandar | Apache-2.0 | no disponible |
 
-La diferencia clave frente al modelo original y a las cuantizaciones GGUF estandar es la portabilidad: la version Nebula solo es funcional con el stack propietario de ListenAI, mientras que las alternativas se ejecutan en motores GGUF convencionales. No se dispone de datos de benchmarks comparativos con otras cuantizaciones del mismo modelo base.
+La comparacion relevante es contra el modelo base en FP16: la cuantizacion Nebula pierde 0,91 puntos en el benchmark de codigo y 0,96 puntos en MMLU-Pro, con variaciones por categoria de hasta casi 5 puntos. No se dispone de datos para comparar con cuantizaciones GGUF estandar del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad restringida: el esquema de cuantizacion propietario puede no funcionar en motores GGUF estandar como llama.cpp upstream, Ollama o LM Studio.
-- Hardware no validado fuera de Nebula: la model card declara explicitamente que otras plataformas no han sido validadas.
-- Dependencia de software propietario: requiere una version adaptada de llama.cpp, runtime y driver de Nebula, lo que limita la portabilidad y la reproducibilidad.
-- Inferencia multimodal no validada: solo se documenta texto.
-- Idiomas no declarados: no se especifica cobertura linguistica; debe consultarse el modelo base.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; se heredan los del modelo base Qwen3.6-35B-A3B.
-- Contexto maximo no documentado: no se puede planificar el uso en tareas de contexto largo sin consultar el modelo original.
-- Licencia: Apache-2.0, permisiva para uso comercial, pero sujeta a los terminos del modelo base; el uso practico esta condicionado por la disponibilidad del hardware Nebula.
-- Adopcion limitada: 507 descargas y 0 likes en el momento de la consulta, lo que reduce la comunidad y el soporte disponible.
+- Compatibilidad restringida: el formato de cuantizacion propietario puede no funcionar en motores GGUF estandar; es necesario usar la implementacion de llama.cpp adaptada por ListenAI.
+- Validacion limitada a Nebula: la model card indica que la compatibilidad con otras plataformas no ha sido validada.
+- Perdida de calidad medible: descensos de hasta 4,99 puntos en History y 4,46 en Law dentro de MMLU-Pro, y de 4,26 puntos en JavaScript en el benchmark de codigo.
+- Multimodalidad no validada: solo se documenta inferencia de texto.
+- Idiomas no especificados: no hay lista de idiomas soportados ni evaluaciones multilingues.
+- Sesgos y alucinacion: no se documentan evaluaciones de sesgo ni tasas de alucinacion; deben asumirse los riesgos habituales de un modelo de lenguaje sin datos especificos.
+- Tool calling y agentes: no documentados, por lo que no deben asumirse en produccion sin validacion previa.
+- Licencia: Apache-2.0 heredada del modelo base, lo que permite uso comercial, pero el despliegue practico queda condicionado por el hardware y el runtime propietarios.
+- Madurez: 507 descargas y 0 likes en el momento de la consulta; el proyecto es reciente (creado en noviembre de 2026) y con poca validacion externa.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Listen-AI/Qwen3.6-35B-A3B-Nebula-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Documentacion de llama.cpp (motor adaptado por ListenAI): https://github.com/ggml-org/llama.cpp
+- Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

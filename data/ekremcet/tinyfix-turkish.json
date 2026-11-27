@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ekremcet/tinyfix-turkish",
+  "slug": "ekremcet-tinyfix-turkish",
+  "author": "ekremcet",
+  "url": "https://huggingface.co/ekremcet/tinyfix-turkish",
+  "created_at": "2026-11-25T13:18:36.000Z",
+  "updated_at": "2026-11-27T07:22:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "tinyfix-turkish-char-seq2seq",
+    "autocorrect",
+    "spelling-correction",
+    "turkish",
+    "seq2seq",
+    "char-level",
+    "tr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40943676,
+  "storage_human": "41 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

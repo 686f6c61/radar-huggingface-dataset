@@ -2,85 +2,100 @@
 
 ## Resumen
 
-SautiLM-Kuu-Ius es un modelo de generación de texto en formato GGUF desarrollado por LosingTek Research para el ecosistema SautiLM, con sede en Bunia, Ituri (República Democrática del Congo). Se trata de un ajuste fino mediante LoRA sobre `unsloth/gemma-3-4b-it`, cuantizado a Q4_K_M, orientado a uso legal en tribunales y despachos de abogados de la RDC. El modelo se distribuye como un artefacto de 2382,37 MB pensado para estaciones de trabajo de escritorio con al menos 8 GB de RAM, no para dispositivos móviles.
+SautiLM-Kuu-Ius es un modelo de lenguaje especializado en derecho de la República Democrática del Congo (RDC) y del espacio OHADA, desarrollado por MusanTek Research para el ecosistema SautiLM desde Bunia (Ituri, RDC). Se construye como un ajuste fino mediante LoRA sobre `unsloth/gemma-3-4b-it` y se distribuye cuantizado en GGUF `Q4_K_M` para su uso en estaciones de trabajo legales de escritorio con conectividad limitada o nula (edge-AI 100% offline).
 
-El modelo forma parte de una arquitectura de tres niveles del ecosistema SautiLM: SautiLM-Jua (270M para móvil), SautiLM-Nuru (clasificadores de visión TFLite de hasta 45 MB) y SautiLM-Kuu (1B móvil / 4B escritorio). La propuesta central es la soberanía tecnológica y el funcionamiento 100% offline, sin filtraciones de datos, para contextos con conectividad limitada o requisitos de confidencialidad legal.
+El modelo forma parte de una arquitectura modular por niveles: SautiLM-Jua (270M para móvil), SautiLM-Nuru (clasificadores de visión TFLite <= 45 MB), SautiLM-Kuu (1B móvil y 4B escritorio) y el futuro SautiLM-Radi (tier flash de latencia inferior a 50 ms). Kuu-Ius ocupa el nivel de escritorio dentro de la familia Kuu, orientado a tribunales y abogados de la RDC.
 
-La relevancia actual del modelo es limitada y debe contextualizarse con rigor: el ajuste se realizó sobre solo 269 ejemplos verificados, la verificación en tiempo de ejecución figura como pendiente y el repositorio no registra descargas ni interacciones. Es, por tanto, un artefacto de investigación incipiente más que un modelo listo para producción.
+Su relevancia radica en el enfoque de "soberanía de datos" y despliegue completamente offline, así como en el reconocimiento explícito por parte del autor de que los pesos paramétricos por sí solos no son fiables para derecho (fallan 0/3 en benchmarks legales retenidos) y deben combinarse obligatoriamente con recuperación documental (RAG) y verificadores de citas deterministas. Es un prototipo pre-piloto, no un producto listo para producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 3 4B IT), ajuste LoRA y cuantización GGUF Q4_K_M |
-| Parámetros totales | 3.880.263.168 (3,88 B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens (`n_ctx=4096`) |
-| Tipos de cuantización | Q4_K_M (`Q4_K_M_WORKSTATION`); el ecosistema menciona INT8 para otros artefactos |
-| Idiomas soportados | Francés (fr), inglés (en), suajili (sw) |
-| Licencia | Gemma (términos de la licencia Gemma de Google) |
-| Formato de pesos | GGUF (`sautilm-kuu-ius-q4_k_m.gguf`, 2382,37 MB) |
+| Arquitectura | Transformer (Gemma 3 4B IT), cuantizado con llama.cpp en GGUF Q4_K_M |
+| Parametros totales | 3.880.263.168 (3,88 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens (`n_ctx=4096` según model card) |
+| Tipos de cuantizacion | Q4_K_M (4 bits); repo incluye GGUF y safetensors |
+| Idiomas soportados | fr, en, sw |
+| Licencia | Gemma Terms of Use |
+| Formato de pesos | GGUF (`sautilm-kuu-ius-q4_k_m.gguf`, 2382,37 MB) y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/gemma-3-4b-it`, un transformer decoder-only de Google Gemma 3 con 3,88 mil millones de parámetros, y se ajusta mediante LoRA con rango `r=24` y `alpha=48` durante 236 pasos. La pérdida de entrenamiento registrada es 0,3493 y la mejor pérdida de validación es 0,7730. Posteriormente se cuantiza a GGUF Q4_K_M para su despliegue en estaciones de trabajo.
+El modelo parte de `unsloth/gemma-3-4b-it`, un transformer decoder-only de Google con 3,88 mil millones de parámetros. Sobre esa base se aplicó un ajuste fino con LoRA de rango `r=8` y `alpha=16` durante 74 pasos, con un dataset de 338 ejemplos verificados y aislamiento estricto de dominio (0 % de fuga desde el corpus Bbadha). La pérdida de entrenamiento final fue de 2,6383 y la mejor de validación de 3,6293. La verificación en tiempo de ejecución pasó de 6/8 en el modelo base (0 pasos) a 7/8 en el modelo seleccionado.
 
-El corpus de entrenamiento es extremadamente reducido: 269 ejemplos verificados, con cero entradas del diccionario Bbadha en la base de datos léxica de este artefacto concreto (el diccionario Bbadha de 1150 entradas aparece asociado a otros modelos del ecosistema, como SautiLM-Jua-Lex). La model card describe el entrenamiento como de "zero-leakage" y menciona el uso de `litert-torch`. No se documentan detalles sobre composición del dataset, uso de RLHF o DPO, ni innovaciones arquitectónicas propias más allá del ajuste fino y la cuantización.
+La exportación se realizó con `llama.cpp` a GGUF de 4 bits (`Q4_K_M`), pensada para estaciones de trabajo de escritorio con al menos 8 GB de RAM y GPU Vulkan/CUDA recomendada. No se documentan innovaciones arquitectónicas propias más allá del ajuste LoRA y el pipeline de cuantización; el contexto se limita a 4096 tokens en la configuración publicada.
 
 ## Capacidades
 
-- Generación de texto conversacional en francés, inglés y suajili, heredada del modelo base Gemma 3 4B IT.
-- Ajuste específico orientado a dominio legal de la RDC (referencias a tribunales y abogados), aunque sin datos públicos que cuantifiquen esta especialización.
-- Funcionamiento 100% offline, sin dependencia de servicios en la nube.
-- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
-- Capacidades multilingües limitadas a los tres idiomas declarados.
-- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito, más allá de lo que pueda heredar del modelo base.
+- Generación de texto conversacional en francés, inglés y suajili.
+- Razonamiento y respuesta sobre derecho de la RDC y normativa OHADA (dominio de especialización).
+- Soporte de recuperación aumentada (RAG) cuando se combina con `sautilm_codes_rdc.sqlite` (6.251 pasajes FTS5/FTS4).
+- Verificación de citas legales mediante `sautilm_sdk.LegalCitationVerifier` (reemplazo estricto de respuestas no fundamentadas).
+- Cálculos deterministas de custodia y sucesiones a través de calculadoras específicas.
+- Ejecución 100 % offline en hardware de escritorio.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Asistencia documental en juzgados de la RDC: el modelo puede generar borradores y resúmenes de textos legales en francés sobre una estación de trabajo aislada de la red, lo que encaja con el requisito de confidencialidad y con el contexto de conectividad limitada.
-- Consulta legal offline para despachos de abogados: dado su funcionamiento sin conexión, permite a letrados en zonas con internet intermitente consultar orientaciones preliminares sobre normativa, siempre con revisión humana obligatoria.
-- Traducción y adaptación entre francés y suajili: el soporte declarado de ambos idiomas permite asistir en la comunicación de expedientes entre actores francófonos y suajilihablantes de África Oriental.
-- Formación y divulgación jurídica: generación de explicaciones simplificadas de conceptos legales para programas de alfabetización jurídica en comunidades locales.
-- Prototipado de asistentes conversacionales soberanos: sirve como base para experimentar con despliegues de IA de propiedad local sin dependencia de proveedores externos, gracias a su formato GGUF y su reducido tamaño.
-- Investigación en ajuste fino de bajo recurso: el artefacto documenta un pipeline completo (LoRA, cuantización, métricas de pérdida) útil para estudiar el comportamiento de modelos pequeños con datasets muy reducidos en dominios especializados.
+- Asistencia a abogados en la RDC: consulta de normativa y jurisprudencia OHADA con recuperación documental sobre la base SQLite de 6.251 pasajes, adecuado por su especialización y su funcionamiento offline en juzgados con conectividad limitada.
+- Investigación legal en tribunales remotos: despliegue en estaciones de trabajo con GPU Vulkan/CUDA que no pueden enviar datos a la nube, gracias al diseño edge-AI y a la licencia Gemma.
+- Formación de estudiantes de derecho: generación de explicaciones en francés y suajili sobre conceptos de derecho civil y mercantil, con verificación de citas obligatoria.
+- Borradores de escritos y resúmenes: producción de texto en fr/en/sw que luego revisa un profesional, siempre con el verificador de citas activado para evitar artículos inventados.
+- Cálculo de custodia y sucesiones: uso de las calculadoras deterministas integradas en el SDK para escenarios concretos, evitando la generación libre del modelo.
+- Prototipado de asistentes legales multi-tier: integración en el ecosistema SautiLM junto con SautiLM-Jua-Ius (móvil) y SautiLM-Nuru-Ius (visión), usando Kuu-Ius como nivel de escritorio.
+- Evaluación de pipelines RAG legales: el modelo sirve como banco de pruebas para medir la contribución de la recuperación frente a los pesos paramétricos (base 6/8 vs. ajustado 7/8 en verificación de runtime).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de entrenamiento: pérdida de entrenamiento de 0,3493 y mejor pérdida de validación de 0,7730 tras 236 pasos. No hay datos de MMLU, HumanEval, GSM8K ni evaluaciones comparativas.
+| Prueba | Modelo base (0 pasos) | SautiLM-Kuu-Ius | Notas |
+|---|---|---|---|
+| Verificación de runtime | 6/8 | 7/8 | Mejora tras ajuste LoRA |
+| `domain_eval_v2` (legal retenido) | no disponible | 0/3 | Falla por fabricación de artículos y acrónimos OHADA sin grounding |
+| Pérdida de entrenamiento | no disponible | 2,6383 | 74 pasos, LoRA r=8 alpha=16 |
+| Mejor pérdida de validación | no disponible | 3,6293 | — |
+| Latencia por turno | no disponible | 23–28 s | GPU Vulkan |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: el artefacto Q4_K_M ocupa 2382,37 MB, por lo que requiere un mínimo declarado de 8 GB de RAM en estación de trabajo; en GPU, cabe holgadamente en tarjetas con 4-6 GB de VRAM.
-- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 3060 de 12 GB o superior permite ejecución completa en GPU, y tarjetas con 8 GB (RTX 4060, RTX 3070) también son suficientes para el modelo cuantizado.
-- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 4 GB de VRAM para el archivo Q4_K_M, aunque el autor lo dirige a escritorio y lo excluye explícitamente de APKs móviles.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama y otros runners GGUF; los tags indican compatibilidad con endpoints.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/RAM: al menos 8 GB de RAM para el GGUF Q4_K_M de 2,38 GB; GPU Vulkan o CUDA recomendada.
+- GPU recomendadas: no se especifican modelos concretos; el autor indica GPU Vulkan/CUDA. Por tamaño, una RTX 3060/4060 con 8 GB sería suficiente para el GGUF, aunque no está confirmado.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 4 GB o más de VRAM para el GGUF Q4_K_M.
+- Despliegue: llama.cpp (formato nativo GGUF); también safetensors para otros runtimes, aunque no se documentan vLLM, TGI ni Ollama.
+- Latencia: 23–28 s por turno en GPU Vulkan según la model card.
+- Excluido de APKs móviles; orientado a escritorio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| SautiLM-Kuu-Ius | 3,88 B | 4096 | Gemma | GGUF, repo de 2,5 GB, 0 descargas |
-| unsloth/gemma-3-4b-it (base) | ~4 B | No disponible en la información | Gemma | Hugging Face |
-| Gemma 3 4B IT (original) | ~4 B | No disponible en la información | Gemma | Hugging Face, ampliamente adoptado |
+| SautiLM-Kuu-Ius | 3,88 B | 4096 | Gemma | Derecho RDC/OHADA, offline, fr/en/sw |
+| unsloth/gemma-3-4b-it (base) | 3,88 B | no disponible | Gemma | Propósito general, multilingüe |
+| SautiLM-Kuu-Med (AfyaSpeak) | 4 B (familia Kuu) | no disponible | Gemma | Dominio médico, pre-piloto |
+| SautiLM-Jua-Ius | 270 M | no disponible | Gemma | Derecho RDC/OHADA en móvil |
 
-La comparación con alternativas de la misma categoría (modelos legales pequeños o ajustes de Gemma 3 4B) no está disponible en la información proporcionada. El modelo base y el original de Google son los únicos puntos de referencia documentados, y no se dispone de datos de rendimiento comparativos.
+No se dispone de comparativas con modelos legales de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dataset de ajuste extremadamente reducido (269 ejemplos), lo que limita la fiabilidad de la especialización legal y aumenta el riesgo de sobreajuste; la pérdida de validación (0,7730) es notablemente superior a la de entrenamiento (0,3493).
-- Verificación en tiempo de ejecución marcada como pendiente por el propio autor.
-- Riesgo elevado de alucinación en materia legal: no debe usarse como fuente de asesoramiento jurídico sin revisión por profesionales cualificados.
-- Contexto limitado a 4096 tokens, insuficiente para expedientes legales extensos.
-- Idiomas limitados a francés, inglés y suajili; no se declara soporte de otras lenguas locales de la RDC.
-- Licencia Gemma: el uso comercial está sujeto a los términos de la licencia Gemma de Google, que imponen restricciones y obligaciones específicas; debe revisarse antes de cualquier despliegue productivo.
-- Sin descargas ni validación comunitaria: no existen evidencias externas de calidad o robustez.
-- El modelo está excluido explícitamente del despliegue móvil según el autor, lo que limita su alcance en contextos de baja conectividad basados en smartphone.
+- Prototipo pre-piloto de investigación legal: requiere verificación por parte de un abogado o clínico antes de cualquier uso real.
+- Los pesos por sí solos fallan 0/3 en `domain_eval_v2`, fabricando números de artículo y acrónimos OHADA; es obligatorio combinarlos con RAG (`sautilm_codes_rdc.sqlite`) y `LegalCitationVerifier`.
+- Riesgo elevado de alucinación en citas legales si no se aplica grounding.
+- Contexto limitado a 4096 tokens, insuficiente para documentos legales extensos sin troceado.
+- Idiomas limitados a fr, en y sw; no se documenta español ni otras lenguas locales de la RDC.
+- Dataset de entrenamiento muy reducido (338 ejemplos), lo que limita la generalización.
+- Licencia Gemma Terms of Use: revisar restricciones de uso comercial antes de desplegar.
+- Latencia alta (23–28 s por turno en GPU Vulkan) para uso interactivo.
+- Excluido de despliegues móviles; solo escritorio.
+- Sesgos conocidos: no documentados explícitamente en la información disponible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/sautilm/SautiLM-Kuu-Ius
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
-- Sitio web del proyecto: https://sautilm.com
-- LosingTek: https://losingtek.com
+- Sitio web SautiLM: https://sautilm.com
+- MusanTek: https://musantek.com
+- Términos de uso de Gemma: https://ai.google.dev/gemma/terms

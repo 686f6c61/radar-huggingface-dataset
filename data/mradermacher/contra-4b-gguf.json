@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ConTra-4B-GGUF",
+  "slug": "mradermacher-contra-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ConTra-4B-GGUF",
+  "created_at": "2026-11-27T11:01:33.000Z",
+  "updated_at": "2026-11-27T11:04:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "contextual-retrieval",
+    "rag",
+    "document-retrieval",
+    "en",
+    "base_model:JJHou1/ConTra-4B",
+    "base_model:quantized:JJHou1/ConTra-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039318016,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "JJHou1/ConTra-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

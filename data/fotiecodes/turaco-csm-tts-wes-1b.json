@@ -32,7 +32,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 1632100161,
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "turaco-research/turaco-csm-tts-wes-1b",
+  "renamed_at": "2026-11-27T10:41:40.549Z",
   "benchmarks": [],
   "sources": []
 }

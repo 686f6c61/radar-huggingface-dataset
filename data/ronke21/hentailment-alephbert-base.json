@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ronke21/HEntailment-alephbert-base",
+  "slug": "ronke21-hentailment-alephbert-base",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/HEntailment-alephbert-base",
+  "created_at": "2026-11-20T15:40:19.000Z",
+  "updated_at": "2026-11-26T22:09:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "nli",
+    "hebrew",
+    "text-classification",
+    "he",
+    "dataset:ronke21/HEntailment",
+    "base_model:onlplab/alephbert-base",
+    "base_model:finetune:onlplab/alephbert-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125978883,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503939076,
+  "storage_human": "504 MB",
+  "context_length": null,
+  "base_model": "onlplab/alephbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

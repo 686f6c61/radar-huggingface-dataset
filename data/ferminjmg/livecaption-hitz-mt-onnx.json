@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "ferminjmg/livecaption-hitz-mt-onnx",
+  "slug": "ferminjmg-livecaption-hitz-mt-onnx",
+  "author": "ferminjmg",
+  "url": "https://huggingface.co/ferminjmg/livecaption-hitz-mt-onnx",
+  "created_at": "2026-11-27T08:13:24.000Z",
+  "updated_at": "2026-11-27T08:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "eu",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "marian",
+    "eu",
+    "es",
+    "base_model:HiTZ/mt-hitz-es-eu",
+    "base_model:quantized:HiTZ/mt-hitz-es-eu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 752986294,
+  "storage_human": "753 MB",
+  "context_length": null,
+  "base_model": "HiTZ/mt-hitz-eu-es, HiTZ/mt-hitz-es-eu",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

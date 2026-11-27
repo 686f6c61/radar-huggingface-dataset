@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Tensix-BFP4",
   "created_at": "2026-11-13T10:33:55.000Z",
-  "updated_at": "2026-11-25T17:15:21.000Z",
+  "updated_at": "2026-11-27T04:30:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "Sayansantra/LFM3-2.0B-WSP-V4",
+  "slug": "sayansantra-lfm3-2-0b-wsp-v4",
+  "author": "Sayansantra",
+  "url": "https://huggingface.co/Sayansantra/LFM3-2.0B-WSP-V4",
+  "created_at": "2026-11-27T06:28:56.000Z",
+  "updated_at": "2026-11-27T06:29:46.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "weight-space-programming",
+    "task-vector-fusion",
+    "layer-expansion",
+    "agentic",
+    "tool-calling",
+    "function-calling",
+    "bfcl",
+    "bfloat16",
+    "conversational",
+    "custom_code",
+    "dataset:gorilla-llm/Berkeley-Function-Calling-Leaderboard",
+    "dataset:zake7749/deepseek-v4-pro-agent-tool-calling-trajectory",
+    "dataset:Motif-Technologies/agenttracer-bfcl",
+    "dataset:saidutta69/fable-5-premium",
+    "base_model:Sayansantra/LFM3-1.7B-WSP-V3",
+    "base_model:finetune:Sayansantra/LFM3-1.7B-WSP-V3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2017366016,
+  "parameters_human": "2.02B",
+  "storage_bytes": 4052681066,
+  "storage_human": "4.1 GB",
+  "context_length": null,
+  "base_model": "Sayansantra/LFM3-1.7B-WSP-V3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL Non-Live Python AST Avg (1,000 tasks, 1536t + Prompt Fix)",
+      "value": 88.88
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL simple_python (400 tasks)",
+      "value": 91.5
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL multiple (200 tasks)",
+      "value": 91.5
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL parallel (200 tasks)",
+      "value": 88
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL parallel_multiple (200 tasks)",
+      "value": 84.5
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL live_simple (258 tasks)",
+      "value": 74.42
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL irrelevance (240 tasks)",
+      "value": 48.75
+    },
+    {
+      "task": "Tool Use / Function Calling (AST)",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL v3 Official Splits, 1,498 Tasks)",
+      "metric": "BFCL 6-Split Single-Turn Macro Avg (1,498 tasks)",
+      "value": 79.78
+    }
+  ],
+  "sources": []
+}

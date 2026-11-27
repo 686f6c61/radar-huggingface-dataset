@@ -5,7 +5,7 @@
   "author": "cbrigance",
   "url": "https://huggingface.co/cbrigance/Granite-4.1-30b-heretic-v2-W4A16-NVFP4",
   "created_at": "2026-11-15T10:59:21.000Z",
-  "updated_at": "2026-11-15T11:00:49.000Z",
+  "updated_at": "2026-11-26T21:19:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

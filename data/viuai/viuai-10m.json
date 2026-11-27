@@ -5,7 +5,7 @@
   "author": "ViuAI",
   "url": "https://huggingface.co/ViuAI/ViuAI-10M",
   "created_at": "2026-11-09T14:23:53.000Z",
-  "updated_at": "2026-11-09T14:23:55.000Z",
+  "updated_at": "2026-11-26T14:39:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,6 +28,7 @@
     "research",
     "viuai",
     "en",
+    "hi",
     "license:apache-2.0",
     "region:us"
   ],

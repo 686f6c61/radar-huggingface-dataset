@@ -5,7 +5,7 @@
   "author": "cbrigance",
   "url": "https://huggingface.co/cbrigance/Qwen3-0.6B-heretic",
   "created_at": "2026-11-14T19:34:23.000Z",
-  "updated_at": "2026-11-14T19:41:47.000Z",
+  "updated_at": "2026-11-26T20:24:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

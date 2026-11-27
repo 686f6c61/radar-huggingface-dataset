@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "convertor/kandinsky-imagesr-gguf",
+  "slug": "convertor-kandinsky-imagesr-gguf",
+  "author": "convertor",
+  "url": "https://huggingface.co/convertor/kandinsky-imagesr-gguf",
+  "created_at": "2026-11-27T08:39:04.000Z",
+  "updated_at": "2026-11-27T09:18:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:kandinskylab/Kandinsky-ImageSR-2.0",
+    "base_model:quantized:kandinskylab/Kandinsky-ImageSR-2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3950136384,
+  "parameters_human": "3.95B",
+  "storage_bytes": 4365352128,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": "kandinskylab/Kandinsky-ImageSR-2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

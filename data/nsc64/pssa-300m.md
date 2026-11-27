@@ -2,96 +2,104 @@
 
 ## Resumen
 
-pssa-300m es un modelo publicado en Hugging Face por el usuario NSC64 bajo el identificador NSC64/pssa-300m. Se trata de un checkpoint de aproximadamente 299 millones de parametros (299.253.760 exactos, segun los metadatos de safetensors), lo que lo situa en la categoria de modelos pequenos, comparable en escala a la familia GPT-2 o a modelos tipo SmolLM de ese orden de magnitud. El repositorio acumula 325 descargas y ningun "like" en el momento de la consulta.
+pssa-300m es un modelo de lenguaje de 299,25 millones de parámetros desarrollado por NSC64 que prescinde por completo del mecanismo de atención. Se trata de un port en PyTorch de la arquitectura "plastic state-space" del repositorio Sparticle62ops/pssa, escalada desde una referencia de 1,5 millones de parámetros hasta este modelo de 300M. El modelo se entrenó desde cero sobre 8.000 millones de tokens con una mezcla fuertemente orientada a código, en una única RTX PRO 6000 Blackwell, repartiendo el cómputo entre varias sandboxes de Molab con reanudación desde checkpoints publicados cada 5.000 pasos.
 
-La informacion publica disponible es muy limitada: no se declara pipeline, licencia, idiomas soportados ni existe una model card con detalles de arquitectura o entrenamiento. El unico dato tecnico verificable, ademas del recuento de parametros, es el formato de pesos (safetensors) y el hecho de que el repositorio ocupa 188,6 GB, un tamano desproporcionado para un modelo de 300M de parametros, lo que sugiere la presencia de multiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el mismo repositorio.
+La relevancia del modelo es fundamentalmente arquitectónica y experimental: demuestra que un state-space model recurrente con bancos de memoria y sin atención puede entrenarse a escala de 300M de parámetros y producir código y prosa técnica con una register convincente. No obstante, el propio autor advierte que el modelo "no sabe hechos": reproduce la forma del lenguaje entrenado, no conocimiento factual.
 
-Por tanto, esta ficha se limita a documentar lo verificable y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso a la model card del autor o a una inspeccion directa de los ficheros del repositorio.
+Con 24 bloques, dimensión de modelo 1024, dimensión de estado 16 y un vocabulario de 32.000 tokens BPE, el modelo mantiene un coste de cómputo por token constante independientemente de la longitud de contexto, gracias a un estado recurrente de tamaño fijo. Su licencia GPL-3.0 y su naturaleza de investigación lo sitúan como una pieza de estudio más que como un candidato para producción general.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 299.253.760 (~300M) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 188,6 GB |
-| Pipeline declarado | no disponible |
-| Descargas | 325 |
-| Fecha de creacion | 2026-11-08 |
-| Ultima actualizacion | 2026-11-11 |
+| Arquitectura | State-space model recurrente sin atención (plastic state-space, tipo Mamba), 24 bloques |
+| Parámetros totales | 299.253.760 (283,03M en el núcleo + 16,22M en los 24 bancos de memoria) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible explícitamente; el entrenamiento trunca backprop a 256 tokens y las evaluaciones usan secuencias de 512 tokens |
+| Tipos de cuantización | No disponible (pesos en safetensors; el autor no documenta cuantizaciones) |
+| Idiomas soportados | No disponible (el corpus es mayoritariamente inglés técnico y código) |
+| Licencia | GPL-3.0 |
+| Formato de pesos | safetensors (model.safetensors) + tokenizer.json |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida), ni sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF/DPO o cualquier innovacion tecnica asociada. El unico dato estructural disponible es el recuento de parametros obtenido de los tensores en formato safetensors: 299.253.760 parametros.
+El modelo apila 24 bloques con la siguiente estructura: normalización RMS, proyección delta con softplus, actualización de estado recurrente `h_t = exp(delta_t·A) h_{t-1} + delta_t·B_t·x_t`, lectura `y_t = <h_t, C_t>`, y una capa de memoria con atención de similitud sobre embeddings proyectados en espacio de Poincaré (`w = softmax(-d_H(q, k)/tau)`), seguida de proyección, un adaptador rank-16 con activación SiLU y un MLP de hidden 2816. La conexión residual usa escalado `1/√depth`. La dimensión de modelo es 1024, `d_state` 16, `d_key` 32, con embeddings de entrada y cabeza de salida no atados (untied) de 32.000 tokens.
 
-El tamano del repositorio (188,6 GB) es notablemente superior al que corresponderia a un unico checkpoint de 300M de parametros en precision fp16 o bf16 (que rondaria los 600 MB). Esto sugiere que el repositorio contiene artefactos adicionales, como multiples checkpoints intermedios, estados de optimizador o pesos en precision completa, pero no es posible confirmarlo sin inspeccionar el arbol de ficheros.
+Respecto a la referencia en Rust, el autor introduce dos cambios necesarios a esta escala: los bancos de memoria se entrenan por gradiente en lugar de con inserción condicionada por sorpresa (el umbral de novedad de 3,5 nats deja de dispararse a los pocos cientos de pasos, dejando la ruta de escritura inactiva), y la retropropagación se trunca a 256 tokens. El scan se implementa como kernel Triton fusionado con backward escrito a mano, que coincide con un bucle PyTorch plano en torno a 1e-7 en todos los gradientes.
+
+El entrenamiento consistió en una única fase sobre 8.000 millones de tokens, con una mezcla intercalada por bytes de 45% codeparrot-clean, 20% textbook_quality_programming, 15% open-web-math y 20% fineweb-edu. Tras tokenizar con un BPE byte-level de 32.000 tokens entrenado sobre una muestra code-heavy, quedaron 967,9M tokens de entrenamiento y 11,4M de validación; el corpus se reutilizó aproximadamente 8,3 veces. Batch de 24 × 512 tokens (12.288 tokens por paso), learning rate 2e-4 con 500 pasos de warmup, plano hasta el último 15% del presupuesto y decaimiento coseno hasta 2e-5. Estado final: paso 651.042, 8.000.004.096 tokens, EMA de pérdida de entrenamiento 1,980. Throughput de unos 59.000 tokens/s (4,8 pasos/s), aproximadamente 38 GPU-horas.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada en la informacion disponible.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-No se puede afirmar ninguna capacidad concreta sin una model card o una evaluacion directa del checkpoint.
+- Generación de texto en register técnico y de prosa genérica, con gramática local aprendida con rapidez.
+- Generación de código (Python y otros) a partir de prefijos, con estructura sintáctica plausible.
+- Generación de prosa matemática con notación LaTeX, incluyendo enunciados de ejercicios y soluciones con formato.
+- Modelado de lenguaje autoregresivo con coste por token constante respecto a la longitud de contexto.
+- No dispone de tool calling ni function calling documentado.
+- No dispone de soporte de agentes ni razonamiento multi-paso documentado.
+- No dispone de capacidades multimodales (visión, audio) ni de modo "thinking".
+- Capacidad multilingüe no documentada; el corpus es esencialmente inglés técnico.
 
 ## Casos de uso
 
-Dado que no se dispone de informacion sobre las capacidades reales del modelo, los siguientes casos son escenarios genericos para un modelo de ~300M de parametros y deben validarse empiricamente antes de cualquier uso:
-
-- Prototipado rapido en local: un modelo de 300M puede ejecutarse en CPU o en GPUs de gama baja para experimentar con pipelines de generacion de texto sin infraestructura dedicada.
-- Fine-tuning especifico de dominio: el tamano reducido permite ajustar el modelo sobre datasets pequenos en una sola GPU consumer, siempre que la licencia lo permita (actualmente no declarada).
-- Clasificacion y etiquetado de texto: uso del modelo como base para tareas de clasificacion o extraccion tras un fine-tuning supervisado.
-- Filtrado y preprocesado en pipelines de datos: generacion de resumenes o normalizacion de texto a bajo coste computacional.
-- Educacion e investigacion: estudio de dinamicas de entrenamiento y comportamiento de modelos pequenos.
-- Componente en sistemas compuestos: uso como submodelo (por ejemplo, para reformulacion de consultas) dentro de una arquitectura mayor con un modelo principal de mayor capacidad.
-
-En todos los casos, la ausencia de licencia y de model card impide confirmar la idoneidad legal y tecnica.
+- Estudio e investigación de arquitecturas state-space sin atención: permite reproducir y analizar el comportamiento de un SSM de 300M con bancos de memoria en un entorno PyTorch, comparándolo con transformers de tamaño similar en tareas controladas.
+- Generación de esqueletos de código y firmas de funciones: el modelo completa prefijos como `def train_step(` con argumentos y estructura plausibles, útil como borrador en entornos de prototipado donde la corrección semántica no es crítica.
+- Generación de enunciados de ejercicios matemáticos con LaTeX: produce problemas y soluciones con formato consistente, aprovechable para generar material de práctica que luego se revise manualmente.
+- Benchmark de eficiencia de inferencia: al tener coste por token constante, sirve para medir latencia y throughput en secuencias largas frente a transformers con atención cuadrática en el mismo hardware.
+- Docencia sobre state-space models: el código `pssa_model.py` (config, modelo, loader y sampler) y el kernel Triton sirven como material didáctico para explicar scans recurrentes, backward manual y truncamiento de gradiente.
+- Pruebas de generación de prosa técnica en dominio code-heavy: útil para evaluar la fidelidad de register en textos de documentación o comentarios de código, siempre con revisión humana.
+- Validación de pipelines de entrenamiento distribuido con reanudación desde checkpoints: el modelo documenta un flujo real de resume entre sandboxes cada 5.000 pasos, replicable como referencia de ingeniería.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluación held-out con 1M de tokens por split, batch 8, longitud de secuencia 512, mismo protocolo y semilla que la model card del modelo de 100M.
+
+| Split | Cross-entropy | Perplexity | Precisión next-token |
+|---|---|---|---|
+| code | 1,484 | 4,41 | 70,7% |
+| text/math | 3,532 | 34,20 | 39,0% |
+| mixed | 2,347 | 10,46 | 56,9% |
+
+El split de código son 8 MB de documentos de codeparrot-clean posteriores a la ventana de entrenamiento de 1,8 GB. El dataset de textbooks se agotó a 0,47 GB durante la construcción del corpus, por lo que no quedaron documentos post-cuota para muestrear. El split text/math son 8 MB de open-web-math tras 0,6 GB y 8 MB de fineweb-edu tras 0,8 GB. El split mixed es la cola held-out del propio corpus intercalado (últimos 40 MB). La pérdida de validación final del bucle de entrenamiento fue 1,964 sobre la cola mixed; la puntuación de 1M tokens es superior porque promedia ventanas aleatorias de 512 tokens en todo el fichero en lugar de repetir un batch fijo.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no confirmada oficialmente; para 300M de parametros, en fp16 serian aproximadamente 0,6 GB de pesos y en int8 alrededor de 0,3 GB, mas overhead de activaciones y KV cache (estimacion generica, no verificada para este modelo).
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU consumer: probable por tamano, pero no confirmada.
-- Opciones de despliegue: no disponible; al usar safetensors, seria desplegable con frameworks que carguen este formato (por ejemplo, transformers), pero no se ha verificado.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: con 299,25M de parámetros en fp32, unos 1,2 GB de pesos; en fp16/bf16, unos 0,6 GB; en int8, unos 0,3 GB. A esto hay que sumar el estado recurrente y los bancos de memoria (16,22M de parámetros adicionales ya incluidos en el total) y el overhead del runtime.
+- GPU recomendadas: el modelo se entrenó en una RTX PRO 6000 Blackwell; para inferencia es suficiente cualquier GPU con al menos 4-8 GB de VRAM.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, incluso en fp32.
+- Opciones de despliegue: el autor proporciona `pssa_model.py` con `from_pretrained` y `generate`; en CPU ejecuta un scan PyTorch plano y en CUDA usa un kernel Triton fusionado. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: durante el entrenamiento se alcanzaron unos 59.000 tokens/s (4,8 pasos/s) con batch de 12.288 tokens en una RTX PRO 6000 Blackwell. No se documentan cifras de latencia de inferencia.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconocen arquitectura, contexto, licencia y rendimiento de pssa-300m. Como referencia de categoria (modelos de ~300M de parametros), podrian considerarse alternativas como GPT-2 (124M/355M) o SmolLM-135M/360M, pero la comparacion carece de base sin datos del modelo evaluado.
+| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pssa-300m | 299,25M | No disponible (entrenado con truncado a 256) | SSM recurrente sin atención | GPL-3.0 | Hugging Face |
+| Mamba-130M / Mamba-370M | 130M / 370M | 2.048 tokens (entrenamiento) | SSM selectivo | Apache-2.0 | Hugging Face |
+| GPT-2 small | 124M | 1.024 tokens | Transformer con atención | MIT | Hugging Face |
+| Pythia-410M | 410M | 2.048 tokens | Transformer con atención | Apache-2.0 | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| pssa-300m | ~300M | no disponible | no disponible | Hugging Face |
-| GPT-2 (355M) | 355M | 1024 | MIT | Abierto |
-| SmolLM-360M | 360M | 2048 (segun variante) | Apache 2.0 | Abierto |
-
-Los datos de los modelos de referencia corresponden a sus especificaciones publicas conocidas; los de pssa-300m no estan disponibles.
+La comparación con Mamba es la más directa por familia arquitectónica; la comparación con GPT-2 small y Pythia-410M resulta útil por tamaño y por ser referencias habituales en experimentos from-scratch. No se dispone de datos de benchmarks comunes que permitan una comparación cuantitativa directa con estos modelos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos o alineacion.
-- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribucion.
-- Idiomas no declarados: se desconoce la cobertura linguistica real.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin evaluacion no puede cuantificarse.
-- Sesgos conocidos: no disponible.
-- Limitaciones de contexto: no disponible.
-- Repositorio de 188,6 GB para un modelo de 300M: requiere precaucion al descargar; conviene inspeccionar los ficheros antes de clonar el repositorio completo.
-- Sin senales de adopcion (0 likes, 325 descargas): no hay evidencia de validacion por parte de la comunidad.
-- No apto para produccion sin evaluacion previa: la falta de datos impide confirmar calidad, seguridad o rendimiento.
+- El autor indica explícitamente que el modelo "no sabe hechos": las muestras de web y de relato son invenciones en el register entrenado, no conocimiento factual.
+- Riesgo alto de alucinación en cualquier consulta factual; no debe usarse como fuente de información.
+- El corpus de entrenamiento es code-heavy y en inglés técnico; el rendimiento en otros idiomas y en dominios no técnicos no está documentado y probablemente sea deficiente.
+- La longitud de contexto efectiva no está documentada; el truncamiento de backprop a 256 tokens y las evaluaciones a 512 tokens sugieren un contexto de trabajo corto.
+- La licencia GPL-3.0 impone obligaciones de copyleft: su integración en productos propietarios requiere revisión legal y, en general, la distribución de obras derivadas bajo la misma licencia.
+- El modelo se entrenó en una única GPU y con un corpus reutilizado 8,3 veces; la calidad y la cobertura factual están lejos de modelos entrenados con presupuestos mayores.
+- Los bancos de memoria se entrenan por gradiente en lugar de por sorpresa, una desviación de la referencia que puede alterar el comportamiento esperado de la arquitectura original.
+- No hay soporte documentado para tool calling, agentes ni despliegue en servidores de inferencia estándar (vLLM, TGI), lo que limita su uso en producción.
+- El repositorio ocupa 586,9 GB, muy por encima de lo esperable para un modelo de 300M; conviene revisar qué artefactos adicionales contiene antes de descargarlo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/NSC64/pssa-300m
+- Modelo en Hugging Face: https://huggingface.co/NSC64/pssa-300m
+- Repositorio de referencia de la arquitectura: https://github.com/Sparticle62ops/pssa
+- Dataset codeparrot-clean: https://huggingface.co/datasets/codeparrot/codeparrot-clean
+- Dataset textbook_quality_programming: https://huggingface.co/datasets/vikp/textbook_quality_programming
+- Dataset open-web-math: https://huggingface.co/datasets/open-web-math/open-web-math
+- Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

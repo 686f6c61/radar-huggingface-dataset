@@ -59,16 +59,16 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "AndroidControl-High (step success rate, InfiGUI-R1 scorer)",
-      "dataset": "AndroidControl test, high-level goals (8,444 steps)",
-      "metric": "SR",
-      "value": 61.7
-    },
-    {
       "task": "AndroidControl-Low (step success rate, InfiGUI-R1 scorer)",
       "dataset": "AndroidControl test, low-level instructions (8,444 steps)",
       "metric": "SR",
-      "value": 89.3
+      "value": 90.5
+    },
+    {
+      "task": "AndroidControl-High (step success rate, InfiGUI-R1 scorer)",
+      "dataset": "AndroidControl test, high-level goals (8,444 steps)",
+      "metric": "SR",
+      "value": 74.2
     }
   ],
   "sources": []

@@ -5,7 +5,7 @@
   "author": "Tree-AI-lab",
   "url": "https://huggingface.co/Tree-AI-lab/kouman-IA-1.9-1.5B-instruct",
   "created_at": "2026-11-21T17:49:17.000Z",
-  "updated_at": "2026-11-21T18:38:39.000Z",
+  "updated_at": "2026-11-26T21:35:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 2614341888,
   "parameters_human": "2.61B",
-  "storage_bytes": 5263737802,
+  "storage_bytes": 5264481803,
   "storage_human": "5.3 GB",
   "context_length": null,
   "base_model": null,
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Tree-AI-lab/kouman-1.0-3B",
+  "renamed_at": "2026-11-27T07:24:45.347Z",
   "benchmarks": [],
   "sources": []
 }

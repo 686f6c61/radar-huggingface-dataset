@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "poori/rob-sftv4-structure-ablation-11-27-2026",
+  "slug": "poori-rob-sftv4-structure-ablation-11-27-2026",
+  "author": "poori",
+  "url": "https://huggingface.co/poori/rob-sftv4-structure-ablation-11-27-2026",
+  "created_at": "2026-11-27T11:30:54.000Z",
+  "updated_at": "2026-11-27T11:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9064629477,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloud Based Services - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/cloud-computing/cloud-based-services/",
+      "snippet": "Oct 15, 2026 · Cloud-based services are computing resources provided over the internet, allowing users to run applications, store …Read more"
+    },
+    {
+      "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and ...",
+      "url": "https://aws.amazon.com/what-is-cloud-computing/",
+      "snippet": "The three main types of cloud computing include Infrastructure as a Service, Platform as a Service, and Software as a Service. Each …Read more"
+    }
+  ]
+}

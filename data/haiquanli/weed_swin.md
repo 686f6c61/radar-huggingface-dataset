@@ -2,100 +2,121 @@
 
 ## Resumen
 
-`haiquanli/weed_swin` es un modelo publicado en Hugging Face por el usuario `haiquanli`, con un total de 68.761.098 parámetros (~68,8 M) según los pesos en formato safetensors. El nombre del repositorio y la etiqueta `mmdet-bridge` apuntan a un modelo de visión por computador construido sobre un backbone Swin Transformer y convertido o puenteado desde el ecosistema MMDetection, lo que en la práctica lo sitúa en el terreno de la detección o segmentación de objetos en imágenes, presumiblemente aplicada a la identificación de malas hierbas en entornos agrícolas. Es importante subrayar que esta descripción se infiere del nombre y de las etiquetas del repositorio, no de documentación explícita del autor.
+Weed_swin es un modelo de detección e instanciación de objetos basado en Mask R-CNN con backbone Swin-S, desarrollado por el usuario haiquanli y publicado en Hugging Face. Resuelve un problema concreto de agricultura de precisión: la segmentación de instancias de malas hierbas y cultivos (lechuga, plántula de espinaca y espinaca en crecimiento) en imágenes de campo, una tarea clave para la automatización de labores de escarda selectiva y monitorización de cultivos.
 
-La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia (`license: mit`). No se documentan dataset de entrenamiento, tarea exacta, métricas, idiomas ni procedimiento de uso. El repositorio ocupa 0,5 GB, un tamaño superior al que ocuparían los pesos en precisión simple (~275 MB), lo que sugiere la presencia de artefactos adicionales (configuraciones, código de MMDetection, posibles checkpoints extra o estados auxiliares).
+El modelo se distribuye como un export a Hugging Face del framework MMDetection 3.x, con código personalizado (`trust_remote_code=True`) que actúa como puente entre el formato de MMDetection y la API de Transformers. Cuenta con 68,7 millones de parámetros y un tamaño de repositorio de 0,8 GB. Su relevancia actual radica en que ofrece un checkpoint de segmentación de instancias listo para producción en un dominio agrícola específico, con métricas de test publicadas y una licencia MIT permisiva para uso comercial.
 
-Su relevancia actual es limitada pero concreta: se trata de un modelo de nicho, con solo 4 descargas y 0 likes en el momento de la consulta, pensado con toda probabilidad para un caso de uso específico de agricultura de precisión. Resulta interesante como ejemplo de modelo de visión convertido al formato de Hugging Face mediante `mmdet-bridge`, y como punto de partida para fine-tuning o para integrarse en pipelines de MMDetection ya existentes. No es un modelo de lenguaje y no debe evaluarse con los criterios habituales de un LLM.
+A diferencia de los grandes modelos de lenguaje, se trata de un modelo puramente visual, especializado y de tamaño contenido, pensado para inferencia sobre imágenes en entornos con recursos limitados. La model card documenta el proceso de entrenamiento con recortes adaptativos, orden de entrenamiento barajado y repetición de imágenes con balanceo de clases.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Swin Transformer (inferido del nombre del modelo; no confirmado en la model card) |
-| Parametros totales | 68.761.098 (~68,8 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de vision, no procesa texto) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | no disponible (no se documenta procesamiento de lenguaje) |
+| Arquitectura | Mask R-CNN con backbone Swin-S (Swin Transformer) |
+| Parametros totales | 68.761.098 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión, no aplica) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo de visión, no procesa texto) |
 | Licencia | MIT |
-| Formato de pesos | safetensors, con codigo personalizado (`custom_code`, etiqueta `mmdet-bridge`) |
-
-Otros datos del repositorio: autor `haiquanli`, region `us`, 4 descargas, 0 likes, tamano del repositorio 0,5 GB, pipeline no disponible, creado el 2026-01-03 y actualizado el 2026-09-27.
+| Formato de pesos | safetensors |
+| Tarea | Detección de objetos y segmentación de instancias |
+| Pipeline | object-detection |
+| Etiquetas de clase | 0: weed, 1: lettuce, 2: spinach_seedling, 3: spinach_growth |
+| Framework de origen | MMDetection 3.x (MMCV 2.1.0, MMEngine 0.10.x) |
+| Librería | transformers (con `trust_remote_code=True`) |
+| Tamaño del repo | 0,8 GB |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada en el repositorio sobre la arquitectura concreta de este checkpoint, el numero de tokens o imagenes de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO (que, por otra parte, no aplican a un modelo de vision). Lo unico verificable es el recuento de parametros (68.761.098) y la presencia de pesos en safetensors junto a codigo personalizado.
+El modelo sigue la arquitectura Mask R-CNN, un detector de dos etapas que combina una red troncal (backbone) para extracción de características, una red de propuesta de regiones (RPN) y cabezas de clasificación, regresión de cajas y predicción de máscaras de instancia. El backbone es Swin-S, un transformer jerárquico con atención por ventanas desplazadas que produce representaciones multiescala adecuadas para la detección densa de objetos pequeños, como plántulas y malas hierbas en imágenes de campo.
 
-Atendiendo al nombre `weed_swin` y a la etiqueta `mmdet-bridge`, lo razonable es asumir un backbone Swin Transformer con atencion por ventanas desplazadas (shifted window attention) y estructura jerarquica en piramide, integrado en un detector del ecosistema MMDetection y exportado al formato de Hugging Face. Una cifra de ~68,8 M de parametros se situa entre Swin-T (~28 M) y Swin-B (~88 M) para el backbone aislado, por lo que el total podria corresponder a una variante intermedia o a un detector completo con cabeza de prediccion. Cualquier afirmacion adicional sobre innovaciones tecnicas, decodificacion especulativa o estrategias de atencion lineal seria especulacion no respaldada por la informacion disponible.
+El entrenamiento se realizó durante 42 épocas con una política de recortes adaptativos (adaptive crops), orden de entrenamiento barajado y repetición de imágenes con balanceo de clases. El checkpoint publicado corresponde a la mejor validación de máscaras, en la época 33. Según la model card, la política combinada de entrenamiento alcanzó un 56,1% de mAP de máscara, frente al 52,9% del modelo de recorte fijo y el 52,1% del modelo solo adaptativo. El autor advierte que los cambios en barajado, muestreo, pesos de pérdida y número de actualizaciones del optimizador se aplicaron conjuntamente, por lo que no se ha aislado la contribución individual de cada uno. Los perfiles de recorte adaptativo se recogen en `crop_profiles.json`, con el tamaño medio de objeto ajustado únicamente sobre fotos de entrenamiento.
 
 ## Capacidades
 
-- Tarea exacta no documentada. No se especifica en la model card si el modelo realiza clasificacion de imagenes, deteccion de objetos, segmentacion semantica o segmentacion de instancias.
-- Procesamiento de imagenes: por el nombre y las etiquetas, cabe esperar entrada visual (imagenes RGB de cultivo) y salida de caracter visual (clases o cajas), pero esto no esta confirmado.
-- Deteccion de malas hierbas: capacidad presumible a partir del identificador `weed_swin`, sin confirmacion oficial ni ejemplos de inferencia publicados.
-- Sin generacion de texto: no es un modelo de lenguaje, por lo que no hay capacidades de redaccion, resumen ni traduccion.
-- Sin tool calling ni function calling.
-- Sin soporte de agentes ni razonamiento multi-paso.
-- Sin capacidades multilingues documentadas.
-- Sin modo de razonamiento explicito (thinking mode), vision-lenguaje, audio ni multimodalidad texto-imagen.
-- Requiere ejecucion con `trust_remote_code=True` debido a la etiqueta `custom_code`, lo que implica cargar codigo del repositorio.
+- Detección de objetos con cajas delimitadoras para cuatro clases: mala hierba, lechuga, plántula de espinaca y espinaca en crecimiento.
+- Segmentación de instancias con máscaras a resolución completa en las coordenadas de la imagen original.
+- Procesamiento de imágenes RGB con preservación de la relación de aspecto y conversión de color entrenada (BGR) realizada por MMDetection.
+- Exportación a la API de Transformers mediante un puente de código personalizado (`mmdet-bridge`) que fija todos los ficheros del modelo a un mismo commit del Hub.
+- Inferencia con umbral de puntuación configurable (`score_threshold`) y post-procesado de detecciones mediante el procesador de imágenes.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, al ser un modelo exclusivamente visual.
 
 ## Casos de uso
 
-Nota previa: al no estar documentada la tarea real del modelo, los escenarios siguientes se plantean bajo la hipotesis, no confirmada, de que se trata de un detector o clasificador de malas hierbas en imagenes de cultivo. Deben validarse antes de cualquier uso en produccion.
-
-- Agricultura de precision con imagenes aereas: el modelo se aplicaria sobre capturas de dron o satelite para localizar rodales de malas hierbas y generar mapas de prescripcion variable, permitiendo reducir el volumen de herbicida aplicado solo en las zonas afectadas.
-- Robots de deshierbe mecanico: integrado en un vehiculo agricola autonomo, procesaria el flujo de video de la camara frontal para decidir que plantas eliminar y cuales preservar, operando con un backbone de ~68,8 M de parametros que es viable en hardware embebido con GPU dedicada.
-- Autoetiquetado de datasets agricolas: serviria como modelo preentrenado para preanotar grandes volumenes de imagenes de campo, reduciendo el coste de anotacion manual antes de reentrenar un detector especifico.
-- Segmentacion y conteo de plantas por parcela: en ensayos agronomicos permitiria estimar densidad de infestacion y comparar parcelas tratadas frente a controles, siempre que la tarea del modelo sea de deteccion o segmentacion.
-- Integracion en pipelines MMDetection existentes: la etiqueta `mmdet-bridge` sugiere compatibilidad con dicho ecosistema, de modo que el modelo podria insertarse como backbone o detector dentro de un pipeline ya desplegado en una organizacion que trabaje con MMDetection.
-- Investigacion en vision por computador aplicada: como checkpoint de partida para fine-tuning con datos propios, comparando su rendimiento frente a backbones Swin estandar de tamano similar.
-- Control de calidad en invernadero: monitorizacion continua de bancales con camaras fijas para detectar aparicion temprana de flora no deseada y disparar alertas al personal de campo.
+- Escarda selectiva automatizada: el modelo detecta y segmenta malas hierbas frente a cultivos, permitiendo que un sistema robótico de precisión aplique herbicida o acción mecánica solo sobre las instancias clasificadas como `weed`, reduciendo el uso de insumos.
+- Monitorización de nascencia de espinaca: la clase `spinach_seedling` permite contar plántulas por unidad de superficie y evaluar la tasa de emergencia tras la siembra, con máscaras que separan instancias individuales incluso en densidades altas.
+- Seguimiento del crecimiento del cultivo: la distinción entre `spinach_seedling` y `spinach_growth` permite clasificar el estado fenológico por parcela y estimar el momento óptimo de cosecha o de intervención agronómica.
+- Control de calidad en invernadero de lechuga: la clase `lettuce` alcanza un mAP de máscara del 83,9%, lo que la hace adecuada para inventariar plantas, detectar marras y estimar biomasa en bandas de cultivo.
+- Generación de datasets anotados: el modelo puede pre-anotar imágenes nuevas de campo para acelerar el etiquetado humano en pipelines de aprendizaje activo, gracias a la salida de máscaras a resolución completa.
+- Integración en plataformas de agricultura de precisión: al exportarse a Transformers con licencia MIT, puede desplegarse en servicios de inferencia sobre imágenes capturadas por drones o cámaras fijas, con un tamaño de 0,8 GB que facilita su distribución.
+- Investigación en visión agrícola: sirve como línea base reproducible para comparar políticas de recorte, balanceo de clases y backbone en tareas de segmentación de instancias en cultivos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados medidos en test según la model card (186 imágenes o teselas de test procedentes de 126 fotos originales reservadas, IoUs COCO 0,50:0,05:0,95, umbral de puntuación 0,001, maxDets [1, 10, 100]):
 
-La model card del repositorio no contiene metricas (mAP, precision, recall, IoU ni exactitud), no identifica el dataset de evaluacion y no ofrece comparaciones con otros modelos. Tampoco se documentan resultados de latencia o throughput.
+| Metrica | Cajas | Mascaras |
+|---|---:|---:|
+| mAP@50–95 | 60,5% | 56,1% |
+| AP@50 | 79,2% | 79,5% |
+| AP@75 | 63,7% | 61,6% |
+
+Desglose por clase:
+
+| Clase | mAP@50–95 cajas | mAP@50–95 mascaras |
+|---|---:|---:|
+| weed | 53,3% | 47,7% |
+| lettuce | 86,7% | 83,9% |
+| spinach_seedling | 62,0% | 51,2% |
+| spinach_growth | 40,2% | 41,6% |
+
+Comparación interna de políticas de entrenamiento (mAP de máscara):
+
+| Política | mAP mascara |
+|---|---:|
+| Recorte fijo | 52,9% |
+| Solo adaptativo | 52,1% |
+| Combinada (modelo actual) | 56,1% |
+
+Los resultados son a nivel de recorte; la inferencia sobre fotos completas en la demo usa una escala de entrada distinta. Los resultados completos están en `evaluation/results.json`.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: ~275 MB en FP32 (68,76 M de parametros x 4 bytes) y ~138 MB en FP16/BF16. Son cifras de peso puro; el consumo real de memoria dependera de la resolucion de entrada y de las activaciones del detector.
-- Resolucion de entrada: no documentada. En pipelines de deteccion de objetos es habitual trabajar a 1024x1024 o 1333x800, lo que puede elevar el consumo de memoria de activaciones a varios GB, muy por encima de lo que ocupan los pesos.
-- GPU recomendadas: el tamano del modelo es reducido, por lo que una RTX 3060 de 12 GB, una RTX 4070/4080 o una RTX 4090 son mas que suficientes para inferencia en precision simple o media. En servidor, cualquier A100, H100, L4 o T4 cubriria el caso sin dificultad.
-- Compatibilidad con GPU de consumo: si, cabe con holgura en practicamente cualquier GPU de consumo con 6 GB o mas de VRAM, e incluso es viable la inferencia en CPU para lotes pequenos, dado el reducido numero de parametros.
-- Opciones de despliegue: carga mediante `transformers` con `trust_remote_code=True`; ejecucion dentro del ecosistema MMDetection (la etiqueta `mmdet-bridge` apunta en esa direccion); exportacion a ONNX o TensorRT como via habitual para produccion en vision. vLLM, TGI y Ollama no son aplicables, ya que estan orientados a modelos de lenguaje.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 68,7 millones de parámetros y pesos en safetensors, el modelo requiere del orden de unos pocos cientos de MB para los pesos, más el consumo de activaciones de Mask R-CNN y Swin-S, que depende de la resolución de entrada.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cualquier GPU con suficiente memoria para la resolución de imagen empleada debería poder ejecutarlo.
+- Compatibilidad con GPU de consumo: probable por el tamaño del modelo, pero no confirmada en la documentación.
+- Opciones de despliegue: entorno MMDetection 3.x con MMCV 2.1.0, MMEngine 0.10.x, PyTorch, torchvision, transformers y safetensors. La validación del export usó PyTorch 2.4.1 y transformers 4.46.3. El entorno Docker BAT102 existente emplea Python 3.8 y MMDetection 3.x.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece frente a backbones Swin de referencia y a un ViT estandar, dado que no se dispone de resultados de rendimiento del modelo evaluado. Las cifras de parametros de los modelos alternativos provienen de sus publicaciones originales y son aproximadas.
+No se han publicado en la información disponible datos de modelos comparables de segmentación de instancias en el dominio agrícola. Como referencia estructural, el modelo se apoya en Swin-S y Mask R-CNN, arquitecturas estándar en detección, pero no se dispone de métricas de terceros para una comparación rigurosa.
 
-| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | mAP mascara (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| haiquanli/weed_swin | 68,8 M | no documentada (presumiblemente deteccion de malas hierbas) | no aplica | MIT | Hugging Face, requiere `trust_remote_code` |
-| Swin-T (ImageNet-1k) | ~28 M | clasificacion de imagenes | no aplica | MIT | ampliamente disponible en repositorios de referencia |
-| Swin-B (ImageNet-1k) | ~88 M | clasificacion de imagenes | no aplica | MIT | ampliamente disponible en repositorios de referencia |
-| ViT-B/16 | ~86 M | clasificacion de imagenes | no aplica | Apache-2.0 | ampliamente disponible |
-
-No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posible establecer una comparacion cuantitativa de exactitud o mAP frente a estas alternativas.
+| weed_swin | 68,7 M | no aplica | 56,1% | MIT | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card solo declara la licencia. No hay informacion sobre tarea, datos, metricas ni instrucciones de uso.
-- Tarea no confirmada: cualquier uso en produccion exige verificar primero que el modelo hace realmente lo que su nombre sugiere.
-- Sin evaluacion publicada: no hay benchmarks que permitan estimar su calidad ni compararlo con alternativas.
-- Riesgo de falsos positivos y falsos negativos: en un escenario de deteccion de malas hierbas, un error de clasificacion puede traducirse en perdida de cultivo (falso positivo) o en infestacion no tratada (falso negativo). Se requiere validacion en campo antes de automatizar decisiones.
-- Sesgo de dominio probable: si el modelo se entreno con un cultivo, una region o unas condiciones de iluminacion concretas, su rendimiento se degradara en otros contextos. No hay informacion sobre la diversidad del dataset.
-- Sin soporte de lenguaje: no procesa texto, por lo que no cabe esperar capacidades multilingues ni de generacion.
-- Ejecucion de codigo remoto: el uso de `trust_remote_code` implica cargar y ejecutar Python alojado en el repositorio. Conviene auditar dicho codigo antes de ejecutarlo en entornos de produccion.
-- Licencia MIT: permisiva y favorable al uso comercial, pero no exime de responsabilidad sobre el rendimiento del modelo ni sobre el cumplimiento normativo en materia de fitosanitarios si se emplea para decidir tratamientos.
-- Madurez baja: 4 descargas y 0 likes indican que el modelo no ha sido validado por la comunidad.
-- Tamano del repositorio y pesos: los 0,5 GB del repositorio frente a los ~275 MB que ocuparian los pesos en FP32 sugieren contenido adicional no documentado.
-- Sin garantia de mantenimiento: se desconoce si el autor actualizara el repositorio o respondera a incidencias.
+- El rendimiento es desigual por clase: `spinach_growth` obtiene solo un 40,2% de mAP de cajas y un 41,6% de máscara, muy por debajo de `lettuce` (86,7% y 83,9%), lo que limita su fiabilidad en esa clase.
+- Los resultados publicados son a nivel de recorte; la inferencia sobre fotos completas en la demo emplea otra escala de entrada, por lo que el rendimiento en producción puede diferir del reportado.
+- La selección del perfil de recorte para imágenes nuevas debe hacerse sin usar las etiquetas de verdad fundamental; la demo no elige automáticamente el perfil de origen.
+- El modelo requiere `trust_remote_code=True` y un entorno MMDetection 3.x específico, lo que añade complejidad de despliegue y superficie de riesgo al ejecutar código personalizado.
+- No se han aislado las contribuciones individuales de las modificaciones de entrenamiento (barajado, muestreo, pesos de pérdida, actualizaciones del optimizador), lo que dificulta la reproducibilidad fina.
+- Al ser un modelo de visión especializado en un dominio concreto, no debe esperarse generalización a otras especies, condiciones de iluminación o sensores no representados en el entrenamiento.
+- No se documentan sesgos demográficos ni de otro tipo, pero existen sesgos de dominio derivados del conjunto de datos agrícola utilizado.
+- Riesgo de alucinación en el sentido de falsos positivos o detecciones espurias con umbrales bajos; se recomienda calibrar el umbral de puntuación en producción.
+- La licencia MIT permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios distintos al evaluado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/haiquanli/weed_swin
-- Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador corresponden a paginas de ayuda de YouTube y a hilos de Zhihu sin relacion alguna con el modelo, por lo que no se incluyen. No se han localizado papers, blogs, repositorios auxiliares ni demos asociados a `haiquanli/weed_swin`.
+- Modelo en Hugging Face: https://huggingface.co/haiquanli/weed_swin
+- Resultados de evaluación: `evaluation/results.json` (incluido en el repositorio del modelo)
+- Perfiles de recorte adaptativo: `crop_profiles.json` (incluido en el repositorio del modelo)
+- MMDetection: https://github.com/open-mmlab/mmdetection
+- MMCV: https://github.com/open-mmlab/mmcv
+- MMEngine: https://github.com/open-mmlab/mmengine
+- Swin Transformer (paper): https://arxiv.org/abs/2103.14030
+- Mask R-CNN (paper): https://arxiv.org/abs/1703.06870

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "eduardoworrel/Qwen3.5-0.8B-Forecast-Refusal-ONNX-S1S2",
+  "slug": "eduardoworrel-qwen3-5-0-8b-forecast-refusal-onnx-s1s2",
+  "author": "eduardoworrel",
+  "url": "https://huggingface.co/eduardoworrel/Qwen3.5-0.8B-Forecast-Refusal-ONNX-S1S2",
+  "created_at": "2026-11-27T05:08:20.000Z",
+  "updated_at": "2026-11-27T05:09:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "s1s2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "s1s2",
+    "onnx",
+    "int4",
+    "webgpu",
+    "experimental",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554694392,
+  "storage_human": "555 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

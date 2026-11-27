@@ -5,7 +5,7 @@
   "author": "cglab-org",
   "url": "https://huggingface.co/cglab-org/Inkling-2-Mini-Q3-warpgrid",
   "created_at": "2026-11-24T18:39:26.000Z",
-  "updated_at": "2026-11-25T17:59:04.000Z",
+  "updated_at": "2026-11-26T18:39:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

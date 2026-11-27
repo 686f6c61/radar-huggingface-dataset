@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "benedictpepper/batik-vision-ai-v4",
+  "slug": "benedictpepper-batik-vision-ai-v4",
+  "author": "benedictpepper",
+  "url": "https://huggingface.co/benedictpepper/batik-vision-ai-v4",
+  "created_at": "2026-11-27T05:56:54.000Z",
+  "updated_at": "2026-11-27T05:57:26.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "onnx",
+    "batik",
+    "indonesian-batik",
+    "dinov2",
+    "int8",
+    "fp16",
+    "webgpu",
+    "ood-detection",
+    "computer-vision",
+    "image-classification",
+    "en",
+    "id",
+    "dataset:benedictpepper/indonesian-batik-v2",
+    "base_model:facebook/dinov2-small",
+    "base_model:quantized:facebook/dinov2-small",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66274560,
+  "storage_human": "66 MB",
+  "context_length": null,
+  "base_model": "facebook/dinov2-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Indonesian Batik Motif Classification (28 Classes)",
+      "dataset": "Indonesian Batik v2.0 (Leak-Free Holdout)",
+      "metric": "Holdout Top-1 Accuracy (3-Tile)",
+      "value": 89.82
+    },
+    {
+      "task": "Indonesian Batik Motif Classification (28 Classes)",
+      "dataset": "Indonesian Batik v2.0 (Leak-Free Holdout)",
+      "metric": "Holdout Macro-F1 (3-Tile)",
+      "value": 87.47
+    },
+    {
+      "task": "Indonesian Batik Motif Classification (28 Classes)",
+      "dataset": "Indonesian Batik v2.0 (Leak-Free Holdout)",
+      "metric": "OOD Entropy AUROC (vs 177 Negatives)",
+      "value": 0.9591
+    }
+  ],
+  "sources": []
+}

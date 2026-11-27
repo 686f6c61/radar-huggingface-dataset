@@ -1,0 +1,85 @@
+{
+  "schema": 2,
+  "id": "Ransom/Qwen3.8-27B-BusinessRewriter-v1.5",
+  "slug": "ransom-qwen3-8-27b-businessrewriter-v1-5",
+  "author": "Ransom",
+  "url": "https://huggingface.co/Ransom/Qwen3.8-27B-BusinessRewriter-v1.5",
+  "created_at": "2026-11-27T04:56:28.000Z",
+  "updated_at": "2026-11-27T05:00:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "business-writing",
+    "de-slopification",
+    "prose-rewriting",
+    "editing",
+    "qwen3_5",
+    "qwen3.8",
+    "lora",
+    "dpo",
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2121545295,
+  "storage_human": "2.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lil Tecca - Ransom (Lyrics) - YouTube",
+      "url": "https://www.youtube.com/watch?v=Sz-zo83cogY",
+      "snippet": "Jun 1, 2019 · • Stream Lil Tecca - Ransom (Lyrics): https://Tecca.lnk.to/Ransom🔥 Spotify Playlist: https://lnk.to/futrhypeS⚡ Submit …Read more"
+    },
+    {
+      "title": "Lil Tecca - Ransom (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=1XzY2ij_vL4",
+      "snippet": "May 22, 2019 · Lyrical Lemonade Presents: Lil Tecca - Ransom (Official Music Video) https://Tecca.lnk.to/Ransom Directed + Edited …Read more"
+    },
+    {
+      "title": "Ransom (Série) | TF1+",
+      "url": "https://www.tf1.fr/tf1/ransom",
+      "snippet": "Regardez gratuitement « Ransom » en streaming sur TF1+ ! Série. Eric Beaumont négocie les crises les plus extrêmes sans …Read more"
+    },
+    {
+      "title": "Ransom (1996 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ransom_(1996_film)",
+      "snippet": "Ransom is a 1996 American action thriller film [5] directed by Ron Howard from a screenplay by Richard Price and Alexander Ignon. …Read more"
+    },
+    {
+      "title": "Ransom - Série TV 2017 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=20636.html",
+      "snippet": "Découvrez la série TV Ransom de avec Luke Roberts (Eric Beaumont), Nazneen Contractor (Zara Hallam)."
+    }
+  ]
+}

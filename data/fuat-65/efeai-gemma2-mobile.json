@@ -9,16 +9,16 @@
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "mediapipe",
   "languages": [
     "tr",
     "en"
   ],
   "tags": [
+    "mediapipe",
     "android",
     "on-device",
     "gemma2",
-    "mediapipe",
     "efeai",
     "text-generation",
     "tr",

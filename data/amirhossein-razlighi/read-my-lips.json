@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "AmirHossein-razlighi/read-my-lips",
+  "slug": "amirhossein-razlighi-read-my-lips",
+  "author": "AmirHossein-razlighi",
+  "url": "https://huggingface.co/AmirHossein-razlighi/read-my-lips",
+  "created_at": "2026-11-25T12:14:49.000Z",
+  "updated_at": "2026-11-25T12:15:01.000Z",
+  "license": "ltx-2.x-community-license-and-gemma-terms",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lip-reading",
+    "visual-speech-recognition",
+    "audio-visual-speech",
+    "speech-inpainting",
+    "speech-enhancement",
+    "lora",
+    "ltx-2.5",
+    "gemma-4",
+    "arxiv:2611.33117",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1530252416,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "Lightricks/LTX-2.5, google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Applied to Next, how long until I hear back usually?",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=1806550",
+      "snippet": "Basically I applied to Next yesterday and got an email saying they will get back to me etc etc For anyone who works/worked/applied …"
+    },
+    {
+      "title": "Next team assessment day! HELP PLZ - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=5291332",
+      "snippet": "I’ve just passed the telephone interview with next and have been invited for the team assessment. Does anyone know what I should …"
+    },
+    {
+      "title": "Silver Idea Award/ Maker Resolution - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=5810568",
+      "snippet": "Forums Study Help Maths, science and technology academic help Computer Science Study Help Silver Idea Award/ Maker Resolution"
+    },
+    {
+      "title": "Can I decline an offer from a university this year and reapply next ...",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=6053310",
+      "snippet": "Jul 26, 2019 · If they decline me I’d want to go to one of the universities I applied to this year. If I decline my current offers from them, …"
+    },
+    {
+      "title": "How to tell flatmate we don't want to live with them next year?",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=2186333",
+      "snippet": "Ask her what her plans for next year are if you want to do it subtly. And how arrogant that you believe that she wants to live with you …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "experimentalmachines",
   "url": "https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent",
   "created_at": "2026-11-18T05:16:15.000Z",
-  "updated_at": "2026-11-26T16:12:43.000Z",
+  "updated_at": "2026-11-26T16:48:14.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

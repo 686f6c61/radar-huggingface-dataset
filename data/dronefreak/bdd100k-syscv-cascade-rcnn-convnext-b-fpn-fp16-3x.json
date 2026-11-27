@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "dronefreak/bdd100k-syscv-cascade-rcnn-convnext-b-fpn-fp16-3x",
+  "slug": "dronefreak-bdd100k-syscv-cascade-rcnn-convnext-b-fpn-fp16-3x",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-syscv-cascade-rcnn-convnext-b-fpn-fp16-3x",
+  "created_at": "2026-11-27T11:01:21.000Z",
+  "updated_at": "2026-11-27T11:03:24.000Z",
+  "license": "bdd100k",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [],
+  "tags": [
+    "mmdetection",
+    "safetensors",
+    "cascade_rcnn",
+    "object-detection",
+    "cascade-rcnn",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "driving-scenes",
+    "bdd100k",
+    "mirror",
+    "dataset:dronefreak/BDD100K",
+    "arxiv:2201.03545",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 132748220,
+  "parameters_human": "132.7M",
+  "storage_bytes": 2280576045,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Box AP (val, reported by SysCV)",
+      "value": 35.77
+    }
+  ],
+  "sources": []
+}

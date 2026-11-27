@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "kongtong/lingshu-hy-mt2-1.8b-abliterated-4bit",
+  "slug": "kongtong-lingshu-hy-mt2-1-8b-abliterated-4bit",
+  "author": "kongtong",
+  "url": "https://huggingface.co/kongtong/lingshu-hy-mt2-1.8b-abliterated-4bit",
+  "created_at": "2026-11-27T07:19:51.000Z",
+  "updated_at": "2026-11-27T07:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1791080448,
+  "parameters_human": "1.79B",
+  "storage_bytes": 1007775450,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

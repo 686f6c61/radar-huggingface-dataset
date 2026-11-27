@@ -2,105 +2,95 @@
 
 ## Resumen
 
-Shot Reader 8B es un modelo de visión-lenguaje (VLM) de pesos abiertos desarrollado por Voyager, construido sobre Qwen3-VL-8B-Instruct mediante la fusión de un adaptador LoRA de rango 64. Su tarea es específica y poco habitual: invertir la ingeniería de un único plano continuo de vídeo y producir una hoja de plano ("shot sheet") en JSON 3D estructurado, lista para reconstruirse directamente en Blender o integrarse en flujos de agentes de construcción de escenas. El modelo muestrea 16 fotogramas equiespaciados a resolución 448×256 y extrae parámetros de cámara (altura, ángulo, pitch, campo de visión, encuadre y movimiento), dimensiones 3D de sujetos rastreados, trayectorias de desplazamiento sobre el plano del suelo, eventos de acción tipados y geometría del decorado circundante.
+Shot Reader 8B es un modelo de visión-lenguaje (VLM) de pesos abiertos desarrollado por Voyager, construido sobre Qwen3-VL-8B-Instruct mediante la fusión de un adaptador LoRA de rango 64. Su tarea específica es la ingeniería inversa de planos de vídeo continuos: a partir de 16 fotogramas muestreados uniformemente a resolución 448×256, extrae parámetros de cámara (altura, ángulo, pitch, campo de visión, encuadre y movimiento), dimensiones 3D de sujetos rastreados, trayectorias sobre el plano del suelo, eventos de acción tipados y geometría del set. El resultado es un JSON estructurado de "shot sheet" listo para reconstrucción directa en Blender o en flujos de agentes de construcción de escenas.
 
-Con 8.190.735.360 parámetros, el modelo se distribuye en este repositorio únicamente en formato GGUF, con cuantizaciones desde Q3_K_M hasta BF16, lo que permite ejecutarlo en una GPU de consumo de 16 GB en 4 bits. Según la model card, alcanza un 69 % de precisión en la clasificación simultánea de banda de altura de cámara y movimiento sobre 300 planos reservados, por delante de Opus 5.5 (44 %) y Gemini 4 Argon (46 %), con un tiempo de 5,9 segundos por plano (aproximadamente 0,002 USD) en una H100 mediante vLLM. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo solo declara soporte de inglés.
+El modelo resuelve un problema muy concreto del sector de previsualización (previs) y producción virtual: traducir material de referencia rodado a parámetros de cámara y escena reutilizables, una tarea que hasta ahora requería estimación manual o pipelines de visión por computador fragmentados. Según la model card, alcanza un 69 % de acierto en clasificación simultánea de banda de altura de cámara y tipo de movimiento sobre 300 planos reservados, frente al 44 % de Opus 5.5 y el 46 % de Gemini 4 Argon, con un coste de 5,9 segundos por plano (~0,002 USD) en una H100.
 
-Su relevancia actual reside en el nicho: automatiza la previsualización y el análisis de planos para pipelines de animación, VFX y previsualización 3D, una tarea donde los modelos generalistas suelen fallar por falta de estructuración geométrica. No obstante, el repositorio es una cuantización comunitaria con 0 descargas en el momento de la consulta, por lo que conviene tratarlo como una publicación reciente y poco validada por terceros.
+La ficha que nos ocupa es la versión cuantizada en GGUF publicada por prithivMLmods, que permite ejecutar el modelo con llama.cpp en hardware de consumo, incluyendo 4 bits en una GPU de 16 GB. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-lenguaje basada en Qwen3-VL-8B-Instruct con adaptador LoRA de rango 64 fusionado (tag `qwen3_vl`) |
-| Parametros totales | 8.190.735.360 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M; proyector multimodal mmproj-bf16 |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Transformer vision-lenguaje (Qwen3-VL-8B-Instruct con LoRA r=64 fusionado) |
+| Parámetros totales | 8.190.735.360 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | BF16, Q3_K_L, Q3_K_M, Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q6_K, Q8_0; proyector multimodal mmproj-bf16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original se distribuye en safetensors |
-| Resolución de entrada de vídeo | 16 fotogramas a 448×256 |
-| Tamaño del repositorio | 62,9 GB |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-VL-8B-Instruct, un transformer denso de 8,19 mil millones de parámetros con codificador visual y proyector multimodal, sobre el que Voyager aplicó un adaptador LoRA de rango 64 posteriormente fusionado en los pesos base. La innovación no está en la arquitectura, sino en la especialización: el modelo se entrena para producir una representación JSON estructurada de un plano de vídeo, incluyendo parámetros intrínsecos y extrínsecos de cámara, dimensiones y trayectorias de sujetos, eventos de acción y geometría del set. El pipeline de inferencia muestrea 16 fotogramas equiespaciados a 448×256, una decisión que reduce el coste computacional y explica el bajo tiempo por plano reportado.
+El modelo parte de Qwen3-VL-8B-Instruct, un transformer multimodal con torre de visión y proyector hacia el espacio de embeddings del LLM. Sobre esa base se entrenó un adaptador LoRA de rango 64 que se fusionó en los pesos finales, especializando el modelo en la lectura de planos. La entrada visual se estandariza a 16 fotogramas equiespaciados a 448×256, lo que fija un coste de preprocesado bajo y constante independientemente de la duración del plano.
 
-El entrenamiento combina escenas sintéticas renderizadas proceduralmente con metraje de dominio público etiquetado por modelos frontera, según la model card. No se especifican el número total de tokens, la composición exacta del dataset ni si hubo fases de RLHF o DPO. La evaluación se realizó sobre 300 planos reservados, midiendo la clasificación conjunta de banda de altura de cámara y movimiento, con un 69 % de acierto. No se detallan otras métricas ni la metodología de anotación de referencia.
+El entrenamiento combina escenas sintéticas renderizadas proceduralmente con metadatos exactos de cámara y geometría, junto con material de dominio público etiquetado por modelos frontera. Esa mezcla permite aprender tanto la física de la proyección como el vocabulario cinematográfico (bandas de altura, tipos de movimiento, encuadre). No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO. La innovación principal no es arquitectónica sino de especialización: salida JSON estructurada y tipada directamente consumible por Blender o por agentes de construcción de escenas.
 
 ## Capacidades
 
-- Comprensión de vídeo a nivel de plano: analiza 16 fotogramas equiespaciados y produce una descripción estructurada del plano completo.
-- Extracción de parámetros de cámara: altura, ángulo, pitch, campo de visión, encuadre y tipo de movimiento.
-- Estimación de dimensiones 3D de sujetos rastreados y de sus trayectorias de desplazamiento sobre el plano del suelo.
+- Comprensión de vídeo a nivel de plano: analiza 16 fotogramas por inferencia para describir un plano continuo.
+- Extracción de parámetros de cámara: altura (por bandas), ángulo, pitch, campo de visión, encuadre y tipo de movimiento.
+- Estimación de dimensiones 3D de sujetos rastreados y de sus trayectorias de movimiento sobre el plano del suelo.
 - Detección de eventos de acción tipados dentro del plano.
-- Inferencia de geometría del decorado y del entorno del set.
-- Salida en JSON 3D estructurado, pensada para reconstrucción directa en Blender o para consumo por agentes de construcción de escenas.
+- Inferencia de geometría del set y del entorno que rodea a los sujetos.
+- Generación de JSON estructurado ("shot sheet") listo para reconstrucción en Blender o motores equivalentes.
+- Comprensión de escenas 3D y previsualización (previs) cinematográfica.
 - Capacidades heredadas de Qwen3-VL-8B-Instruct para image-text-to-text conversacional, aunque el ajuste está orientado a la tarea de lectura de planos.
-- Soporte de tool calling y function calling: no documentado en la información disponible.
-- Capacidades de agente multi-paso: no documentadas explícitamente; el modelo está pensado para integrarse en flujos de agentes externos.
-- Multilingüismo: solo inglés declarado.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Previsualización 3D automatizada: a partir de un plano de vídeo de referencia, el modelo genera una hoja JSON con altura de cámara, pitch, FOV y movimiento que un script de Blender puede convertir en una cámara animada, reduciendo el trabajo manual de previs en animación y VFX.
-- Reconstrucción de escenas para agentes de construcción de sets: el JSON de geometría y trayectorias sirve como entrada estructurada a un agente que coloca objetos, luces y cámaras en un motor 3D, gracias a la salida tipada y no ambigua.
-- Análisis y catalogación de metraje de archivo: procesar bibliotecas de vídeo para etiquetar planos por movimiento de cámara, altura y composición, facilitando búsquedas y selección de material en postproducción.
-- Asistencia a storyboard y dirección: dado un plano de referencia, el modelo proporciona parámetros técnicos que el equipo de dirección puede replicar en rodaje o trasladar a un animatic.
-- Docencia y análisis cinematográfico: extracción sistemática de gramática de cámara (ángulos, alturas, movimientos) sobre clips para estudios comparativos o materiales formativos.
-- Integración en pipelines de CI/CD de activos 3D: validar automáticamente que una escena renderizada coincide con los parámetros de cámara declarados, usando el modelo como verificador en pruebas de regresión visual.
-- Prototipado rápido en GPU de consumo: con la cuantización Q4_K_M (5,03 GB) y el proyector mmproj-bf16 (1,16 GB), se puede desplegar en local para iterar sobre ideas de planos sin depender de APIs externas.
+- Reconstrucción de planos de referencia en Blender: el modelo genera un shot sheet JSON con altura, pitch, FOV y movimiento de cámara que un script de Blender puede aplicar directamente para recrear el plano en un set virtual, sustituyendo la estimación manual de parámetros.
+- Previs de producciones audiovisuales: a partir de metraje de referencia o de un animatic, el equipo de previsualización obtiene parámetros de cámara y geometría de set reutilizables para planificar rodajes o secuencias CG.
+- Agentes de construcción de escenas: al emitir JSON tipado, la salida se integra como paso intermedio en pipelines de agentes que montan escenas 3D de forma automática, sin necesidad de postprocesar texto libre.
+- Análisis y catalogación de archivo fílmico: procesar lotes de planos para etiquetar movimiento de cámara, encuadre y acciones, alimentando bases de datos de metraje con metadatos estructurados a bajo coste (~0,002 USD por plano en H100).
+- Docencia y análisis cinematográfico: descomponer secuencias en parámetros técnicos objetivos (banda de altura, tipo de movimiento, FOV) para estudiar lenguaje audiovisual con datos medibles.
+- Prototipado rápido en hardware de consumo: con la cuantización Q4_K_M (5,03 GB) más el proyector mmproj-bf16 (1,16 GB), un estudio pequeño puede ejecutar el modelo en local en una GPU de 16 GB para iterar sobre referencias sin depender de APIs externas.
+- Generación de datos sintéticos para entrenamiento: usar las descripciones estructuradas de planos para etiquetar automáticamente nuevo material y ampliar datasets de visión cinematográfica.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | Shot Reader 8B | Opus 5.5 | Gemini 4 Argon |
 |---|---|---|---|
-| Clasificación conjunta de banda de altura de cámara y movimiento (300 planos reservados) | 69 % | 44 % | 46 % |
+| Clasificación simultánea de banda de altura de cámara y movimiento (300 planos reservados) | 69 % | 44 % | 46 % |
 
-Datos adicionales reportados en la model card: 5,9 segundos por plano en una H100 mediante vLLM, con un coste aproximado de 0,002 USD por plano. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generalistas en la información disponible.
+Datos de eficiencia declarados en la model card: 5,9 segundos por plano en una NVIDIA H100 con vLLM, coste aproximado de 0,002 USD por plano, y ejecución local en 4 bits en una GPU de consumo de 16 GB. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + proyector mmproj-bf16 de 1,16 GB + overhead de contexto):
-  - Q3_K_M (4,12 GB): en torno a 6-7 GB.
-  - Q4_K_M (5,03 GB): en torno a 7-8 GB, recomendado para 16 GB de VRAM.
-  - Q5_K_M (5,85 GB): en torno a 8-9 GB.
-  - Q6_K (6,73 GB): en torno a 9-10 GB.
-  - Q8_0 (8,71 GB): en torno a 11-12 GB.
-  - BF16 (16,4 GB): en torno a 18-20 GB, requiere GPU de 24 GB o superior.
-- GPU recomendadas: H100 para el modo de referencia con vLLM (5,9 s por plano); A100 40/80 GB para BF16; RTX 4090 (24 GB) para BF16 o Q8_0; RTX 4080/4070 Ti Super (16 GB) para Q4_K_M o Q5_K_M.
-- Cabe en GPU de consumo: sí, en 16 GB con cuantizaciones Q4 y Q5; en 12 GB con Q3_K_M o Q4_K_S ajustando el contexto.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, text-generation-inference y vLLM (el autor reporta vLLM para el modo H100), además de transformers para el modelo base en safetensors.
-- Latencia y throughput: 5,9 s por plano en H100 con vLLM según la model card; no se han publicado cifras para GPU de consumo ni para llama.cpp.
+- VRAM estimada para inferencia: Q3_K_M ~4,12 GB; Q4_K_M ~5,03 GB; Q5_K_M ~5,85 GB; Q6_K ~6,73 GB; Q8_0 ~8,71 GB; BF16 ~16,4 GB. Añadir ~1,16 GB del proyector mmproj-bf16 en todos los casos.
+- Cabe en GPU de consumo: sí. La model card indica ejecución en 4 bits en una GPU de 16 GB; con Q4_K_M + mmproj el total ronda los 6,2 GB, por lo que también es viable en tarjetas de 8 GB con holgura limitada para contexto.
+- GPU recomendadas: NVIDIA H100 para producción con vLLM (5,9 s por plano); RTX 4090, RTX 4080 o RTX 3090 para uso local en cuantizaciones Q5/Q6; GPUs de 8-16 GB para Q4.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), vLLM (para el modelo base en BF16), text-generation-inference según los tags del repositorio, y cualquier frontend compatible con GGUF.
+- Latencia y throughput: 5,9 segundos por plano en H100 con vLLM según la model card; no se proporcionan cifras de throughput para las cuantizaciones GGUF en hardware de consumo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shot Reader 8B | 8,19 B | No disponible | Lectura de planos de vídeo a JSON 3D | Apache 2.0 | GGUF, safetensors (base) |
-| Qwen3-VL-8B-Instruct | 8 B (aproximado) | No disponible | VLM generalista image-text-to-text | No disponible en la información | safetensors |
-| Opus 5.5 | No disponible | No disponible | Modelo frontera propietario | Propietaria | API |
-| Gemini 4 Argon | No disponible | No disponible | Modelo frontera propietario | Propietaria | API |
+| Shot Reader 8B (esta ficha) | 8,19 B | no disponible | Lectura de planos a JSON 3D | Apache 2.0 | GGUF en HF |
+| Qwen3-VL-8B-Instruct (base) | ~8 B | no disponible | VLM generalista | no disponible en la información | HF |
+| Opus 5.5 | no disponible | no disponible | VLM generalista propietario | propietaria | API |
+| Gemini 4 Argon | no disponible | no disponible | VLM generalista propietario | propietaria | API |
 
-La comparación relevante es doble: frente a su modelo base Qwen3-VL-8B-Instruct, Shot Reader añade la estructuración geométrica y la salida JSON específica para reconstrucción 3D; frente a los modelos frontera propietarios, ofrece un 69 % frente a 44 % y 46 % en la tarea concreta de clasificación de cámara y movimiento, con un coste por plano muy inferior. No se dispone de datos de benchmarks generalistas que permitan comparar su calidad fuera de este dominio.
+En la tarea específica de clasificación de altura y movimiento de cámara, Shot Reader 8B supera a Opus 5.5 (69 % frente a 44 %) y a Gemini 4 Argon (69 % frente a 46 %) según la model card. Frente a su base Qwen3-VL-8B-Instruct, la diferencia es de especialización: el ajuste LoRA aporta la salida estructurada y el vocabulario cinematográfico, a costa de un alcance más estrecho. No se dispone de datos comparativos adicionales de otros VLM especializados en análisis cinematográfico.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de inglés; las instrucciones o prompts en castellano pueden degradar la calidad de la salida.
-- Es un modelo altamente especializado: su rendimiento en tareas generales de visión-lenguaje no está documentado y probablemente sea inferior al de su base Qwen3-VL-8B-Instruct.
-- La evaluación se limita a una única métrica (clasificación conjunta de altura de cámara y movimiento) sobre 300 planos; no hay datos de precisión en dimensiones 3D, trayectorias o geometría del set.
-- Riesgo de alucinación en la estimación de parámetros 3D: valores plausibles pero incorrectos en el JSON pueden propagarse silenciosamente a la reconstrucción en Blender.
-- El entrenamiento con etiquetas generadas por modelos frontera puede heredar sesgos y errores sistemáticos de esos modelos.
-- El repositorio es una cuantización comunitaria (prithivMLmods) con 0 descargas y 1 like en el momento de la consulta; no hay validación independiente de las cuantizaciones.
-- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3-VL-8B-Instruct antes de un despliegue comercial.
-- La resolución de muestreo (448×256, 16 fotogramas) limita la precisión en planos con movimiento rápido, oclusiones o detalles finos.
-- El tamaño del repositorio (62,9 GB) y la ausencia de datos de contexto dificultan planificar despliegues con ventanas largas.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse con escenas sintéticas y material de dominio público etiquetado por modelos frontera, puede heredar los sesgos de esos etiquetadores.
+- Riesgo de alucinación: el modelo emite JSON estructurado, lo que puede dar apariencia de precisión a parámetros inferidos erróneamente; conviene validar campos críticos (FOV, pitch, dimensiones) antes de usarlos en producción.
+- Limitación de idioma: solo inglés declarado; las instrucciones y descripciones en otros idiomas no están soportadas oficialmente.
+- Alcance restringido: está especializado en planos únicos continuos; no se documenta su comportamiento en montajes, transiciones o planos con cortes internos.
+- Resolución de entrada fija: 16 fotogramas a 448×256 limitan la percepción de detalles finos y de movimientos rápidos o sutiles.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Qwen3-VL-8B-Instruct tiene sus propias condiciones que conviene verificar antes de redistribuir.
+- Las cuantizaciones Q3 reducen la calidad; la model card recomienda Q4_K_M o superior para uso general.
+- Los datos de rendimiento (69 %, 5,9 s, 0,002 USD) provienen de la model card del autor y no se han verificado de forma independiente en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/shot-reader-8b-GGUF
+- Repositorio GGUF: https://huggingface.co/prithivMLmods/shot-reader-8b-GGUF
 - Modelo base: https://huggingface.co/voyager-so/shot-reader-8b
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil del cuantizador: https://huggingface.co/prithivMLmods
-- Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

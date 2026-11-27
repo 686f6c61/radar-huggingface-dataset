@@ -5,7 +5,7 @@
   "author": "Ternii",
   "url": "https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.27-GK-GGUF",
   "created_at": "2026-11-23T08:38:52.000Z",
-  "updated_at": "2026-11-25T23:15:40.000Z",
+  "updated_at": "2026-11-26T19:52:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

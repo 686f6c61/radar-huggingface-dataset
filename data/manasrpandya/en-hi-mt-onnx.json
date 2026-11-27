@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "manasrpandya/en-hi-mt-onnx",
+  "slug": "manasrpandya-en-hi-mt-onnx",
+  "author": "manasrpandya",
+  "url": "https://huggingface.co/manasrpandya/en-hi-mt-onnx",
+  "created_at": "2026-11-27T12:26:00.000Z",
+  "updated_at": "2026-11-27T12:27:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "en",
+    "hi",
+    "dataset:cfilt/iitb-english-hindi",
+    "base_model:Helsinki-NLP/opus-mt-en-hi",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142844830,
+  "storage_human": "143 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-en-hi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

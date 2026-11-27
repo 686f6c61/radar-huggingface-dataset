@@ -2,125 +2,87 @@
 
 ## Resumen
 
-Nemotron 3.5 Super VL 120B-A12B en cuantización CQ 1.4-bit es una versión comprimida del modelo multimodal de NVIDIA, publicada por Cactus-Compute bajo la licencia OpenMDW 1.1. El modelo original combina una arquitectura híbrida Mamba-Transformer con mezcla de expertos (MoE), orientada a tareas de razonamiento, código, matemáticas y visión, con soporte de conversación multi-turno y comprensión de documentos e imágenes.
+Nemotron-3.5-120B-CQ1.4bit es una cuantizacion de 1,4 bits del modelo multimodal NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, publicada por Cactus-Compute en Hugging Face. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con arquitectura hibrida Nemotron-H (combinacion de atencion transformer y capas Mamba), disenado para tareas de generacion de texto, razonamiento y comprension de imagenes y documentos (image-to-text, VQA, OCR).
 
-La versión CQ1.4bit reduce el checkpoint completo a 22,06 GB mediante una estrategia de cuantización mixta: proyecciones de expertos enrutados a 1 y 1,5 bits, cabezas de vocabulario y proyecciones Mamba a 2 bits, y el resto de tensores (atención, routers, embeddings, torre de visión) a 4 bits, manteniendo normas y sesgos en BF16/FP32. El resultado es un modelo que cabe en memoria unificada de un MacBook Pro de 36 GB y que, según la model card, conserva en promedio el 96,4 % del rendimiento del original BF16 en 18 benchmarks.
+El modelo original de NVIDIA es un MoE de 120B parametros totales con 12B activos por token, y esta cuantizacion reduce el peso en disco a 22,2 GB manteniendo la nomenclatura de 120B en el nombre, aunque los safetensors reales del repo suman 22.029.082.117 parametros efectivos. La cuantizacion CQ1.4bit es un esquema propio de Cactus Compute orientado a inferencia en hardware Apple Silicon mediante la libreria MLX.
 
-Su relevancia actual radica en que demuestra que es posible ejecutar un modelo multimodal de clase 120B con activación de 12B en hardware de consumo Apple Silicon, con una degradación media del 3,6 % y con un rendimiento en tareas agénticas de código (SWE-bench Verified) incluso superior al del BF16 original en la evaluación reportada.
+Su relevancia actual radica en que permite ejecutar un modelo multimodal de gran escala en equipos de consumo con memoria unificada (Mac con 32 GB o mas), a costa de una perdida de precision agresiva. La licencia es OpenMDW-1.1 con acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-Transformer con MoE (tag `nemotron_h_omni`), multimodal (torre de visión + proyector) |
-| Parametros totales | 22.029.082.117 (checkpoint cuantizado); el modelo base se denomina 120B-A12B |
-| Parametros activos | 12B (según denominación del modelo base A12B) |
-| Longitud de contexto | Hasta 262K tokens verificados en GraphWalks; el set de NVIDIA se extiende a 1M (no confirmado para esta cuantización) |
-| Tipos de cuantizacion | Mixta CQ: 1-bit, 1,5-bit, 2-bit, 4-bit, BF16 y FP32 (1,418 bits efectivos por peso) |
+| Arquitectura | Nemotron-H hibrida (transformer + Mamba), MoE, multimodal (vision + lenguaje) |
+| Parametros totales | 22.029.082.117 (pesos cuantizados); modelo base: 120B totales |
+| Parametros activos | 12B (modelo base A12B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | CQ1.4bit (cuantizacion propia de Cactus Compute, 1,4 bits) |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW 1.1 (`license: other`) |
-| Formato de pesos | safetensors (librería MLX) |
+| Licencia | OpenMDW-1.1 (acceso restringido / gated) |
+| Formato de pesos | safetensors (MLX), 8-bit parcial segun tags |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido con capas Mamba y mecanismo de mezcla de expertos (MoE), denominado internamente `nemotron_h_omni` por sus capacidades multimodales. Incluye una torre de visión con proyector, una cabeza MTP (multi-token prediction) y proyecciones de atención y enrutadores MoE. Los datos de entrenamiento provienen de los datasets `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`, aunque la model card no detalla el número de tokens ni la composición exacta del corpus.
+El modelo base NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 emplea la arquitectura Nemotron-H, una variante hibrida que combina capas de atencion transformer con capas de espacio de estados (Mamba), lo que reduce el coste computacional en secuencias largas frente a un transformer puro. Es un MoE con 120B parametros totales y 12B activos por token, e incorpora un codificador visual para tareas image-text-to-text y document-question-answering. El entrenamiento del modelo original se realizo sobre los datasets nvidia/nemotron-pre-training-datasets y nvidia/nemotron-post-training-v3, segun los tags del repo.
 
-La innovación principal de esta publicación es el método de cuantización Cactus Quants (CQ), descrito en un paper en OpenReview. La estrategia asigna precisiones distintas por tipo de tensor: las proyecciones down de expertos enrutados y los expertos compartidos a 1 bit; las proyecciones up de expertos enrutados a 1,5 bits; las proyecciones de entrada Mamba y la cabeza de vocabulario a 2 bits; atención, proyecciones latentes, routers, embeddings de tokens, salida Mamba, lineales de visión/proyector y proyección de entrada MTP a 4 bits; y normas, pesos Mamba y embeddings de visión en BF16. Los sesgos de corrección de routers se mantienen en FP32. El resultado son 1,418 bits efectivos por peso y un archivo de 22,06 GB.
+Esta version concreta es una cuantizacion post-entrenamiento a 1,4 bits (CQ1.4bit) realizada por Cactus Compute, que reduce el tamano del repo a 22,2 GB. No se dispone de informacion sobre el proceso exacto de calibracion, el numero de tokens de entrenamiento del modelo base ni si hubo fases de RLHF o DPO especificas. La libreria de inferencia es MLX, lo que limita el despliegue a hardware Apple Silicon.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en seis idiomas (en, es, fr, de, it, ja).
-- Razonamiento avanzado con modo "thinking" (evaluado en LiveCodeBench v6, BigCodeBench y GPQA Diamond con thinking activado).
-- Generación y completado de código, incluyendo tareas de ingeniería de software agéntica (SWE-bench Verified, DeepSWE).
-- Matemáticas y razonamiento científico (GSM8K, SciCode).
-- Visión: respuesta a preguntas visuales (V*), razonamiento matemático sobre imágenes (MathVision).
-- Comprensión de documentos y OCR (tags `document-question-answering`, `ocr`).
-- Seguimiento de instrucciones estrictas (IFEval, IFBench).
-- Manejo de contexto largo: evaluado con prompts de hasta 262K tokens (GraphWalks) y tareas de razonamiento de contexto largo (AA-LCR).
-- Capacidades multilingües evaluadas en 10 idiomas mediante MMLU-ProX Lite.
-- Soporte de tool calling y flujos agénticos (evaluado con mini-swe-agent y OpenCode).
-- Decodificación con cabeza MTP (multi-token prediction) verificada.
+- Generacion de texto conversacional multilingue en en, es, fr, de, it y ja.
+- Razonamiento y respuesta a preguntas de tipo visual (visual-question-answering).
+- Comprension de documentos e imagenes (document-question-answering, image-to-text).
+- OCR integrado segun los tags del modelo.
+- Procesamiento multimodal image-text-to-text en un unico pipeline.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local sobre Apple Silicon: con 22 GB de pesos y 47 tokens/s de decodificación en un M5 Max de 36 GB, permite integrar un agente de programación (tipo mini-swe-agent) en el portátil sin depender de la nube, manteniendo un 63,6 % en SWE-bench Verified según la model card.
-- Análisis de documentos con OCR y VQA: la torre de visión y el proyector permiten extraer texto y responder preguntas sobre imágenes y documentos escaneados, útil para digitalización de facturas, contratos o informes técnicos.
-- Razonamiento matemático sobre imágenes: MathVision con un 76,22 en la versión CQ lo hace adecuado para tutoría o verificación de problemas con enunciados gráficos.
-- Atención al cliente multilingüe: soporte de seis idiomas y contexto de hasta 262K tokens permiten gestionar conversaciones largas con historial extenso y documentación adjunta.
-- Procesamiento de contexto largo en investigación: AA-LCR con un 70,45 (mejora sobre BF16) lo hace viable para resumir o razonar sobre corpus extensos, como expedientes o artículos científicos.
-- Generación de código en pipelines de CI/CD: HumanEval idéntico al BF16 (95,12) y BigCodeBench con degradación moderada permiten usarlo como generador de tests o parches en entornos con recursos limitados.
-- Prototipado de agentes autónomos en local: la combinación de tool calling, MTP y ejecución en MLX permite iterar sobre flujos agénticos sin coste de API, aunque con la advertencia de la caída en tareas de horizonte largo (DeepSWE).
+- Digitalizacion de documentos con OCR: el modelo puede extraer texto de facturas, formularios e imagenes escaneadas y responder preguntas sobre su contenido, aprovechando la capacidad document-question-answering del modelo base.
+- Asistencia en escritorio para desarrolladores en Mac: al ejecutarse con MLX sobre memoria unificada, permite tener un asistente multimodal local sin enviar datos a la nube, util para entornos con requisitos de privacidad.
+- Analisis de capturas de pantalla y diagramas tecnicos: dado su soporte image-to-text, puede describir interfaces, diagramas de arquitectura o graficos y responder preguntas sobre ellos.
+- Prototipado de aplicaciones de vision-lenguaje en local: ideal para validar pipelines de VQA antes de migrar a la version BF16 en servidores, gracias a su reducido tamano de 22,2 GB.
+- Traduccion y atencion multilingue: cubre seis idiomas europeos y japones, adecuado para asistentes de soporte en organizaciones con presencia en esos mercados.
+- Investigacion sobre cuantizacion extrema: sirve como caso de estudio para medir la degradacion de un MoE multimodal a 1,4 bits frente al modelo original de 120B.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | BF16 original | CQ 1.4-bit | Cambio relativo |
-|---|---|---|---|
-| MMLU-Pro (560 preguntas) | 77,50 | 71,79 | −7,4 % |
-| MMLU-ProX Lite, 10 idiomas (5.880) | 76,04 | 76,28 | +0,3 % |
-| GPQA Diamond (198 × 8) | 89,20 | 85,54 | −4,1 % |
-| GSM8K, extracción flexible (300) | 94,00 | 91,67 | −2,5 % |
-| IFEval, prompt-level strict (300) | 83,33 | 82,67 | −0,8 % |
-| IFBench (300 × 8) | 71,58 | 65,31 | −8,8 % |
-| HumanEval (164) | 95,12 | 95,12 | 0,0 % |
-| LiveCodeBench v6, thinking (1.055) | 86,07 | 81,04 | −5,8 % |
-| BigCodeBench, thinking, complete | 65,26 | 61,84 | −5,2 % |
-| BigCodeBench, thinking, instruct | 52,28 | 51,05 | −2,4 % |
-| BigCodeBench, leaderboard, complete | 61,58 | 59,74 | −3,0 % |
-| BigCodeBench, leaderboard, instruct | 52,72 | 50,18 | −4,8 % |
-| SciCode, subtask accuracy (65 × 8) | 45,83 | 41,23 | −10,0 % |
-| GraphWalks, prompts hasta 262K tokens (650) | 96,58 | 88,03 | −8,9 % |
-| AA-LCR v1.1 (98 × 16) | 67,35 | 70,45 | +4,6 % |
-| V*, imagen (191 × 8) | 86,32 | 82,85 | −4,0 % |
-| MathVision, imagen (3.040) | 81,28 | 76,22 | −6,2 % |
-| SWE-bench Verified, mini-swe-agent, sin red (500) | 61,4 % (307) | 63,6 % (318) | +3,6 % |
-| **Media de los 18 benchmarks** | | | **−3,6 %** |
-
-Resultados adicionales reportados por separado:
-
-| Benchmark | BF16 | CQ 1.4-bit |
-|---|---|---|
-| DeepSWE (OpenCode, sin red) | 24/113 (21,2 %) | 7/113 (6,2 %) |
-| GSM8K, extracción estricta | 52,67 | 65,67 |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 22,06 GB de pesos; pico medido de 21,0 GiB de RAM de proceso en un MacBook Pro M5 Max de 36 GB.
-- GPU recomendadas: Apple Silicon con memoria unificada (M5 Max de 36 GB verificado); no se reportan pruebas en GPU NVIDIA, ya que la librería es MLX.
-- Cabe en GPU de consumo: sí, en equipos Apple Silicon con al menos 24-32 GB de memoria unificada; en RTX 4090 (24 GB) no hay soporte MLX nativo.
-- Opciones de despliegue: MLX con Cactus MLX (descarga del checkpoint en el primer uso); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: 47 tokens/s de decodificación de texto en caliente (mediana de 46,7 con prompt de 512 tokens y 128 de salida), medido en M5 Max de 36 GB, media de tres ejecuciones batch-one tras warm-up.
+- VRAM/memoria unificada estimada: al menos 24-32 GB para cargar los 22,2 GB de pesos mas overhead de contexto y activaciones.
+- GPU recomendadas: no aplica en el sentido tradicional; el modelo esta empaquetado para MLX, por lo que requiere Apple Silicon (serie M1/M2/M3/M4) con memoria unificada suficiente.
+- Compatibilidad con GPU NVIDIA (A100, H100, RTX 4090): no disponible en este formato; habria que recurrir al modelo base BF16.
+- Cabe en equipos de consumo Apple con 32 GB o mas de memoria unificada; en Mac de 16 GB es inviable.
+- Opciones de despliegue: libreria MLX (mlx-lm / mlx-vlm segun el pipeline image-text-to-text). No se indica soporte para vLLM, llama.cpp, Ollama o TGI en este formato.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Nemotron 3.5 Super VL 120B-A12B CQ 1.4-bit (este) | 22,03B almacenados (120B-A12B nominal) | hasta 262K verificado | OpenMDW 1.1 | safetensors (MLX) | Multimodal, MoE híbrido Mamba-Transformer |
-| NVIDIA Nemotron-3.5-Super-VL-120B-A12B-BF16 (base) | 120B-A12B | hasta 1M según set de NVIDIA | OpenMDW 1.1 | BF16 | Referencia de calidad; requiere mucho más almacenamiento |
-| PrismML Ternary Bonsai 27B MLX 2-bit | 27B | no disponible | no disponible | MLX 2-bit | Citado en la model card como referencia de cuantización extrema; también limita el código agéntico de horizonte largo |
-| CodeLlama-7B (evaluado en QuIP#) | 7B | no disponible | no disponible | no disponible | Citado como ejemplo de degradación en McEval-Java (25 % → 8 %) |
+| Modelo | Parametros | Contexto | Licencia | Formato / despliegue |
+|---|---|---|---|---|
+| Cactus-Compute/nemotron-3.5-120b-cq1.4bit | 22,0B efectivos (120B base, 12B activos) | no disponible | OpenMDW-1.1 (gated) | MLX safetensors, Apple Silicon |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B totales, 12B activos | no disponible | no disponible en la informacion | BF16, GPU NVIDIA |
+| Alternativas de 1-2 bits para Mac | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Degradación media del 3,6 % en 18 benchmarks, con caídas notables en SciCode (−10,0 %), GraphWalks (−8,9 %) e IFBench (−8,8 %).
-- Colapso en tareas agénticas de horizonte largo: DeepSWE cae de 21,2 % (BF16) a 6,2 % (CQ); además, existe una discrepancia no resuelta en el denominador (7/113 frente a 7/110) y son ejecuciones únicas por configuración, sin repetición.
-- El resultado de SWE-bench Verified superior al BF16 (+3,6 %) corresponde a una única evaluación con mini-swe-agent y sin red; no debe interpretarse como mejora general en código.
-- GSM8K con extracción estricta muestra una puntuación BF16 anómalamente baja (52,67) atribuida a formato de respuesta, lo que dificulta la comparación directa.
-- Riesgo de alucinación no cuantificado en la información disponible; aplicable a cualquier modelo generativo de este tamaño.
-- Sesgos conocidos: no documentados en la model card; los datasets de preentrenamiento y postentrenamiento de NVIDIA no detallan composición ni filtros.
-- Idiomas limitados a en, es, fr, de, it, ja; no se reporta cobertura de otras lenguas.
-- Licencia OpenMDW 1.1: es necesario revisar sus términos para uso comercial, ya que la model card la marca como `license: other`.
-- Dependencia de MLX: no hay pesos GGUF ni soporte para ecosistemas CUDA/vLLM, lo que restringe el despliegue a hardware Apple.
-- El contexto máximo real para esta cuantización solo está verificado hasta 262K tokens; el millón de tokens del set de NVIDIA no está confirmado.
-- La model card incluye un GIF animado cuyos tiempos no constituyen una medición de rendimiento.
+- La cuantizacion a 1,4 bits implica una perdida de precision significativa; se espera degradacion en tareas de razonamiento complejo, matematicas y OCR fino frente al modelo BF16.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face, lo que puede limitar la redistribucion y el uso automatizado.
+- Licencia OpenMDW-1.1: conviene revisar los terminos antes de uso comercial, ya que no es una licencia permisiva estandar como Apache-2.0 pese a aparecer en los tags.
+- Dependencia de MLX y Apple Silicon: no es portable a GPU NVIDIA ni a CPU generica sin conversion adicional.
+- Riesgo de alucinacion inherente a modelos de lenguaje; mayor en contextos multimodales con imagenes de baja calidad.
+- Idiomas limitados a seis; no se garantiza calidad fuera de ellos.
+- No hay informacion publica sobre sesgos especificos, longitud de contexto real ni comportamiento en produccion de esta cuantizacion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Cactus-Compute/nemotron-3.5-120b-cq1.4bit
+- Hugging Face: https://huggingface.co/Cactus-Compute/nemotron-3.5-120b-cq1.4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
-- Paper de Cactus Quants: https://openreview.net/pdf?id=Q6FcVpI1SO
-- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Datasets de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
-- Referencia ACBench (degradación agéntica con AWQ/GPTQ): https://arxiv.org/html/2505.19433v2
-- Referencia QuIP# (degradación en McEval-Java): https://arxiv.org/html/2607.14181v1
-- Modelo comparativo PrismML Bonsai 27B MLX 2-bit: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit#limitations
+- Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
+- Dataset de pre-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets

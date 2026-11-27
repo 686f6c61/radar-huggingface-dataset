@@ -5,7 +5,7 @@
   "author": "disinfozone",
   "url": "https://huggingface.co/disinfozone/wekwos-120b",
   "created_at": "2026-11-24T02:27:00.000Z",
-  "updated_at": "2026-11-24T06:02:41.000Z",
+  "updated_at": "2026-11-26T18:45:54.000Z",
   "license": "nvidia-nemotron-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

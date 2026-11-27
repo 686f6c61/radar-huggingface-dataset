@@ -5,7 +5,7 @@
   "author": "alpharomercoma",
   "url": "https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.3-dpo",
   "created_at": "2026-11-22T11:29:39.000Z",
-  "updated_at": "2026-11-23T02:33:48.000Z",
+  "updated_at": "2026-11-26T17:58:50.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
     "conversational",
     "custom_code",
     "en",
-    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
-    "base_model:adapter:experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
+    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
+    "base_model:adapter:experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -40,7 +40,7 @@
   "storage_bytes": 4117871988,
   "storage_human": "4.1 GB",
   "context_length": null,
-  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2",
+  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory",
   "formats": [
     "safetensors"
   ],
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "experimentalmachines/LFM3-VL-2B-MobileAgent-v4.3-dpo",
-  "renamed_at": "2026-11-23T06:32:47.502Z",
+  "renamed_to": "experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-DPOAllMistakes",
+  "renamed_at": "2026-11-27T08:21:35.610Z",
   "benchmarks": [],
   "sources": []
 }

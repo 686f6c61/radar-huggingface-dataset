@@ -2,116 +2,114 @@
 
 ## Resumen
 
-Shruti Kannada es un modelo de reconocimiento automático del habla (ASR) desarrollado por Udgam Labs, diseñado para transcribir audio en kannada, inglés y habla mixta kannada-inglés. Con aproximadamente 56 millones de parámetros, es un modelo compacto que prioriza la eficiencia y el despliegue en dispositivo (on-device) frente a la precisión bruta en dominios de lectura. Forma parte de la familia Shruti, que cubre también hindi, marathi, tamil, bengalí, telugu, guyaratí y odia.
+Shruti Kannada es un modelo de reconocimiento automático del habla (ASR) desarrollado por Udgam Labs, diseñado específicamente para transcribir audio en kannada con mezcla de inglés (code-switching), tal y como se habla en contextos reales. Forma parte de la familia Shruti, que cubre también hindi, marathi, tamil, bengalí, telugu, gujarati y odia. El modelo deriva de Shruti Hindi, que a su vez se construye sobre Cactus Whistle (Apache-2.0) de Cactus Compute, y ha sido reentrenado íntegramente con voz kannada e inglesa de licencia abierta, añadiendo 700 piezas de vocabulario kannada.
 
-El modelo se distribuye como un único archivo de 29,7 MB en formato `.cact` (pesos de 4 bits, activaciones de 8 bits) para el motor Cactus needle, lo que permite ejecutarlo de forma totalmente offline en un teléfono, un portátil o dentro de una página web mediante WebAssembly. Su propuesta de valor es clara: transcripción de habla real y code-switching en entornos sin conectividad y con recursos muy limitados, a costa de un mayor error en conversaciones espontáneas.
+Con aproximadamente 56 millones de parámetros (55.875.913), una arquitectura encoder-decoder de 8 capas en cada lado y anchura 512, el modelo está pensado para inferencia en dispositivo (on-device) sin conexión. Su fichero cuantizado `.cact` ocupa 29,7 MB con pesos de 4 bits y activaciones de 8 bits, lo que permite ejecutarlo en un teléfono móvil, un portátil o directamente en el navegador mediante WebAssembly. En una prueba sobre un Samsung Galaxy F62 de 2021 transcribe 11,2 veces más rápido que el tiempo real usando 64 MB de memoria.
 
-La relevancia actual del modelo radica en su enfoque en el habla conversacional mixta kannada-inglés, un escenario muy común en la India urbana que los modelos ASR multilingües grandes suelen manejar mal. Aunque su tasa de error en conversación es alta (56,6 % con palabras inglesas evaluadas en caracteres latinos), supera a modelos hasta 33 veces más grandes en ese mismo conjunto de prueba, lo que lo convierte en una opción interesante para aplicaciones móviles de bajo consumo.
+Su relevancia actual radica en que ofrece transcripción de kannada con code-switching inglés en entornos sin servidor ni internet, un escenario habitual en dispositivos móviles de gama media en la India. El modelo reconoce el kannada en escritura kannada y mantiene las palabras inglesas en caracteres latinos, reflejando la forma en que los hablantes bilingües escriben realmente. La licencia Apache-2.0 facilita su integración comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (8 capas de encoder + 8 de decoder, anchura 512) |
-| Parámetros totales | ~56M (55.875.913) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (acepta audio de 16 kHz de cualquier longitud) |
-| Tipos de cuantización | Pesos de 4 bits y activaciones de 8 bits en formato `.cact` |
-| Idiomas soportados | Kannada (kn), inglés (en) y habla mixta kannada-inglés |
+| Arquitectura | Encoder-decoder (transformer) de 8 capas de encoder y 8 de decoder, anchura 512 |
+| Parametros totales | 55.875.913 (aproximadamente 56M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (acepta audio de cualquier longitud según la model card) |
+| Tipos de cuantizacion | Pesos de 4 bits y activaciones de 8 bits en el fichero `.cact`; fichero fp32 en safetensors incluido (no probado por el autor) |
+| Idiomas soportados | Kannada (kn), inglés (en) y kannada mezclado con inglés |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.cact` (motor Cactus needle); no se publican safetensors ni GGUF |
+| Formato de pesos | `.cact` (motor Cactus) y `.safetensors` (fp32) |
 
 ## Arquitectura y entrenamiento
 
-Shruti Kannada es un transformer encoder-decoder compacto con 8 capas en el encoder y 8 en el decoder, con una anchura de 512 dimensiones. Deriva de Shruti Hindi (Udgam Labs), que a su vez se construye sobre Cactus Whistle (Cactus Compute), ambos bajo licencia Apache-2.0. El proceso de adaptación consistió en reentrenar todos los pesos sobre habla abierta en kannada e inglés y ampliar el vocabulario con 700 piezas específicas de kannada.
+Shruti Kannada es un modelo seq2seq encoder-decoder de tipo transformer con 8 capas en el encoder y 8 en el decoder, anchura 512 y alrededor de 56M de parámetros. Se construye sobre Cactus Whistle (Apache-2.0) a través de Shruti Hindi: Udgam Labs reentrenó todos los pesos sobre voz kannada e inglesa con licencia abierta y amplió el vocabulario con 700 piezas específicas de kannada. La entrada es audio a 16 kHz de cualquier duración y la salida es texto, con detección automática de si el audio es kannada o inglés.
 
-Los datos de entrenamiento provienen de conjuntos abiertos: IndicVoices y Kathbath (AI4Bharat), SPRING_INX_Kannada_R1 (SPRINGLab), Vaani-transcription-part (ARTPARK-IISc) y LibriSpeech ASR (OpenSLR) para la parte inglesa. La model card no detalla el número total de tokens de audio ni si hubo etapas de ajuste con RLHF o DPO; esa información no está disponible. La innovación principal no está en la arquitectura, sino en el empaquetado: cuantización agresiva (4 bits en pesos) y un motor de inferencia nativo y WebAssembly que permite ejecución offline con 64 MB de memoria en un Samsung Galaxy F62 de 2021, transcribiendo 11,2 veces más rápido que tiempo real.
+Los datos de entrenamiento provienen de varios conjuntos abiertos: ai4bharat/IndicVoices, ai4bharat/Kathbath, SPRINGLab/SPRING_INX_Kannada_R1, ARTPARK-IISc/Vaani-transcription-part y openslr/librispeech_asr. La model card no detalla el número total de tokens ni la composición exacta del dataset, ni si hubo etapas de RLHF o DPO. La innovación principal es la optimización para despliegue en dispositivo mediante el motor Cactus, con compilación nativa y WebAssembly, y cuantización agresiva a 4 bits de pesos que reduce el modelo a 29,7 MB.
 
 ## Capacidades
 
 - Transcripción de voz a texto en kannada, con salida en escritura kannada.
-- Reconocimiento de palabras inglesas dentro de habla kannada, manteniéndolas en caracteres latinos en minúscula (code-switching).
-- Detección automática del idioma de entrada (kannada o inglés) sin configuración previa.
-- Procesamiento de audio de 16 kHz de cualquier duración.
-- Ejecución totalmente offline y on-device, sin servidor ni conexión a internet.
-- Despliegue nativo (Mac, Android) y en navegador mediante WebAssembly.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente ASR.
-- No dispone de modo de razonamiento (thinking), visión ni audio generativo.
+- Reconocimiento de palabras inglesas dentro de habla kannada, manteniéndolas en caracteres latinos (code-switching kn-en).
+- Detección automática del idioma del audio (kannada o inglés) sin configuración manual.
+- Procesamiento de audio de cualquier longitud a 16 kHz.
+- Ejecución totalmente offline, sin servidor ni conexión a internet.
+- Inferencia en dispositivo: motor nativo (Mac, Android) y WebAssembly en navegador.
+- Modelo pequeño (29,7 MB cuantizado) apto para móviles y entornos con recursos limitados.
+- No se documentan capacidades de tool calling, agentes, visión ni audio más allá de la transcripción.
 
 ## Casos de uso
 
-- Transcripción offline en dispositivos móviles: la aplicación puede convertir notas de voz o conversaciones en texto sin enviar audio a la nube, gracias a los 29,7 MB del archivo y los 64 MB de memoria medidos en un Galaxy F62.
-- Subtitulado y actas de reuniones en entornos con conectividad limitada: el modelo procesa audio de cualquier longitud a 16 kHz y funciona en un portátil sin GPU dedicada.
-- Aplicaciones web de accesibilidad: mediante la build WebAssembly, se puede integrar un cuadro de transcripción en una página sin backend, útil para personas con dificultades auditivas en contextos kannada.
-- Asistentes de voz para atención al cliente en kannada urbano: el modelo maneja code-switching kannada-inglés, frecuente en consultas sobre banca, reservas o comercio, aunque su WER conversacional exige revisión humana.
-- Digitalización de entrevistas y encuestas de campo: investigadores que recogen testimonios en kannada pueden transcribir en el dispositivo y revisar después, reduciendo costes de subida de audio y preservando la privacidad.
-- Prototipado rápido de pipelines ASR: al ser Apache-2.0 y ejecutable con `pip install cactus-needle`, sirve para validar productos de voz en kannada antes de invertir en modelos mayores.
-- Transcripción de comandos cortos en quioscos o electrodomésticos: su latencia (11,2x tiempo real en móvil de 2021) y bajo consumo lo hacen apto para interacciones breves y locales.
+- Transcripción de conversaciones bilingües kannada-inglés en movilidad: el modelo gestiona audio de cualquier duración y mantiene las palabras inglesas en latín, útil para notas de voz o reuniones informales donde los hablantes alternan idiomas.
+- Subtitulado y accesibilidad offline en aplicaciones móviles: al ejecutarse en el propio teléfono mediante el motor Cactus nativo, permite generar subtítulos sin conexión en zonas con conectividad limitada.
+- Dictado por voz en aplicaciones de mensajería: la salida respeta la forma en que los usuarios bilingües escriben (kannada en escritura kannada, inglés en latín), lo que facilita la integración directa en chats.
+- Transcripción en navegador sin backend: la compilación WebAssembly permite ofrecer transcripción de kannada en una página web sin enviar audio a ningún servidor, reduciendo costes y preservando la privacidad.
+- Digitalización de audio de atención al cliente en kannada: con 29,7 MB y 64 MB de memoria en un Galaxy F62, puede desplegarse en dispositivos de gama media para transcribir llamadas localmente.
+- Procesamiento por lotes en equipos con pocos recursos: el tamaño reducido y la velocidad de 11,2x tiempo real en un móvil de 2021 lo hacen adecuado para transcribir archivos en portátiles sin GPU dedicada.
+- Investigación en ASR de lenguas indias de bajos recursos: sirve como línea base ligera y reproducible para experimentos de code-switching kn-en con licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-Tasa de error de palabras (WER, %, menor es mejor), 200 clips por conjunto, mismo evaluador para todos los modelos; Shruti Kannada medido en su motor on-device en un Mac el 2 de noviembre de 2026.
+Word error rate (%, menor es mejor), 200 clips por conjunto, mismas muestras y mismo evaluador para todos los modelos; Shruti Kannada medido en su motor on-device sobre un Mac el 2 de noviembre de 2026. El tamaño es el fichero publicado por cada autor (whisper.cpp q8_0 para Whisper).
 
-| Modelo | Tamaño | FLEURS (lectura) | Kathbath test-unknown (lectura) | DiarBench, inglés en inglés (conversación, held out) | DiarBench, referencia nativa |
+| Modelo | Tamano fichero | FLEURS (lectura) | Kathbath test-unknown (lectura) | DiarBench, ingles en ingles (conversacion, held out) | DiarBench, referencia nativa |
 |---|---|---|---|---|---|
 | **Shruti Kannada** | **29,7 MB** | 33,1 | 29,4 | **56,6** | 69,5 |
 | Whisper tiny | 43,5 MB | 305,5 | 371,7 | 574,5 | 584,5 |
 | Whisper base | 81,8 MB | 179,5 | 178,5 | 248,8 | 252,4 |
 | IndicConformer Kannada (int8) | 137,7 MB | 20,4 | 19,8 | 67,1 | 56,7 |
-| Whisper-tiny Kannada (vasista22) | 151,1 MB | 29,7 | 34,2 | 91,4 | 90,2 |
-| Whisper small | 264,5 MB | 103,0 | No disponible en el extracto | No disponible en el extracto | No disponible en el extracto |
+| Whisper-tiny Kannada (vasista22) | 151,1 MB | 29,7 | no disponible | no disponible | no disponible |
 
-En lectura, IndicConformer Kannada es más preciso (20,4 y 19,8 de WER frente a 33,1 y 29,4). En conversación con code-switching, Shruti Kannada obtiene 56,6 frente a 67,1 de IndicConformer y 88,7-91,4 de los fine-tunes de Whisper de vasista22. En la referencia nativa, IndicConformer vuelve a ser mejor (56,7 frente a 69,5).
+En conversación real con mezcla de inglés, Shruti Kannada obtiene un WER de 56,6% con palabras inglesas puntuadas en letras inglesas y 69,5% frente a la referencia nativa, superando a IndicConformer Kannada (67,1) pese a ser casi cinco veces menor, y a los fine-tunes Whisper Kannada de vasista22 (88,7 a 91,4). En lectura de kannada y en la referencia nativa, los modelos más grandes son más precisos (IndicConformer obtiene 20,4 y 19,8 en FLEURS y Kathbath, frente a 33,1 y 29,4 de Shruti Kannada).
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: unos 64 MB de memoria en el dispositivo según la medición del autor en un Samsung Galaxy F62; el archivo pesa 29,7 MB.
-- GPU recomendadas: no requiere GPU; está pensado para CPU móvil, CPU de portátil y WebAssembly en navegador.
-- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, etc.) y también en dispositivos sin GPU dedicada.
-- Opciones de despliegue: motor Cactus needle (nativo y WebAssembly), paquete Python `cactus-needle` (`pip install cactus-needle`), binario `needle` para línea de comandos y build WASM para navegador. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 11,2x más rápido que tiempo real en un Samsung Galaxy F62 de 2021 con el motor nativo; no se publican cifras de throughput para otros dispositivos.
-- El paquete Python envía recuentos anónimos de uso por defecto; se desactiva con `NEEDLE_TELEMETRY=0`.
+- VRAM estimada: no disponible de forma explícita; el modelo cuantizado ocupa 29,7 MB en disco y el autor reporta 64 MB de memoria en uso durante la inferencia en un Samsung Galaxy F62.
+- GPU recomendadas: no se especifican; el modelo está diseñado para CPU y ejecución en dispositivo, no para GPU de datacenter.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos móviles; no requiere GPU dedicada.
+- Opciones de despliegue: motor Cactus (nativo y WebAssembly), paquete Python `cactus-compute`, binario `cactus` de línea de comandos y build `wasm/` para navegador. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 11,2 veces más rápido que el tiempo real en un Samsung Galaxy F62 de 2021 con 64 MB de memoria; no se publican cifras adicionales de latencia o throughput en otros dispositivos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | WER conversación (DiarBench) | Licencia | Formato |
-|---|---|---|---|---|---|
-| Shruti Kannada | ~56M | Audio de cualquier longitud | 56,6 | Apache-2.0 | `.cact` |
-| IndicConformer Kannada | No disponible (archivo int8 de 137,7 MB) | No disponible | 67,1 | No disponible en la información | ONNX int8 |
-| Whisper-tiny Kannada (vasista22) | ~39M (Whisper tiny) | 30 s por ventana (Whisper) | 91,4 | No disponible en la información | Whisper (q8_0 en la comparación) |
-| Whisper base | ~74M | 30 s por ventana (Whisper) | 248,8 | MIT (Whisper original) | Whisper (q8_0 en la comparación) |
+| Modelo | Parametros | Contexto | FLEURS (WER) | DiarBench conversacion (WER) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Shruti Kannada | ~56M | Audio de cualquier longitud | 33,1 | 56,6 | Apache-2.0 | Hugging Face, motor Cactus |
+| IndicConformer Kannada (int8) | No disponible (fichero 137,7 MB) | No disponible | 20,4 | 67,1 | No disponible en la informacion | Hugging Face (ONNX) |
+| Whisper base | 74M (aproximado, no confirmado en la informacion) | No disponible en la informacion | 179,5 | 248,8 | MIT (no confirmado en la informacion) | Hugging Face, whisper.cpp |
+| Whisper-tiny Kannada (vasista22) | No disponible (fichero 151,1 MB) | No disponible | 29,7 | 88,7 a 91,4 (rango de los tres fine-tunes) | No disponible en la informacion | Hugging Face |
 
-Shruti Kannada es el más pequeño de la comparativa y el mejor en conversación code-switching, pero pierde en lectura frente a IndicConformer. Los datos de licencia y contexto de IndicConformer y de los fine-tunes de vasista22 no se detallan en la información proporcionada.
+Shruti Kannada destaca por su tamaño mínimo y su capacidad de ejecución offline en dispositivo, con mejor WER en conversación code-switching que modelos hasta 33 veces mayores, aunque pierde en lectura de kannada frente a IndicConformer.
 
 ## Limitaciones y advertencias
 
-- Elevado error en conversación: 56,6 % de WER con inglés en caracteres latinos y 69,5 % contra referencia nativa; más de la mitad de las palabras pueden ser incorrectas en habla espontánea.
-- Peor rendimiento en lectura que modelos mayores como IndicConformer Kannada (33,1 frente a 20,4 en FLEURS).
-- Ejemplos de errores reales documentados por el autor, como transcribir "parcel" como "ಭಾರಿಸಲ್ಲ" en el motor nativo del teléfono, aunque el navegador del mismo dispositivo lo escribió correctamente.
-- Solo cubre kannada e inglés; para otros idiomas indios hay que usar los otros miembros de la familia Shruti.
-- No disponible información sobre sesgos demográficos, acentos regionales o variedades dialectales del kannada.
-- Riesgo de alucinación en ASR: no se documenta, pero el WER elevado implica sustituciones y omisiones de palabras.
-- Licencia Apache-2.0 permite uso comercial, pero el paquete `cactus-needle` envía telemetría anónima por defecto; hay que desactivarla explícitamente para entornos con requisitos de privacidad.
-- El formato `.cact` está atado al motor Cactus needle; no hay pesos en safetensors ni GGUF para usar con otros runtimes.
-- No se publican datos de entrenamiento en tokens ni detalles de ajuste fino, lo que dificulta evaluar la reproducibilidad.
+- Más de la mitad de las palabras son erróneas en el conjunto de conversación del autor: WER de 56,6% (inglés en letras inglesas) y 69,5% (referencia nativa).
+- En lectura de kannada es menos preciso que modelos mayores como IndicConformer Kannada (33,1 y 29,4 frente a 20,4 y 19,8).
+- Se observan errores concretos en palabras inglesas: la model card cita "parcel" transcrito como "ಭಾರಿಸಲ್ಲ" en el motor nativo del teléfono, aunque en el navegador del mismo dispositivo se escribió correctamente; los resultados pueden variar entre motores.
+- Solo cubre kannada e inglés; para otras lenguas indias hay que usar los otros miembros de la familia Shruti.
+- El fichero fp32 en safetensors se incluye pero el autor no lo ha probado.
+- El paquete `cactus-compute` envía recuentos anónimos de uso por defecto; hay que definir `CACTUS_TELEMETRY=0` para desactivarlo.
+- No se documentan sesgos específicos ni evaluaciones de robustez más allá de los conjuntos citados.
+- La licencia Apache-2.0 permite uso comercial, pero conviene verificar las licencias de los datasets de entrenamiento citados.
+- No se dispone de información sobre comportamiento con acentos, ruido de fondo o audio de baja calidad más allá de las pruebas reportadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/udgamlabs/shruti-kannada
+- Demo en navegador (Udgam Labs): https://udgamlabs.com/models/shruti/kannada
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
-- Prueba en navegador (Udgam Labs): https://udgamlabs.com/models/shruti/kannada
 - Código y ejemplos (GitHub): https://github.com/udgamlabs/shruti/blob/main/docs/kannada.md
-- Modelo base Shruti Hindi: https://huggingface.co/udgamlabs/Shruti
-- Motor Cactus needle: https://huggingface.co/Cactus-Compute/needle3
-- Modelo base Cactus Whistle: https://huggingface.co/Cactus-Compute/whistle
+- Shruti Hindi (modelo base): https://huggingface.co/udgamlabs/Shruti
 - Shruti Marathi: https://huggingface.co/udgamlabs/shruti-marathi
 - Shruti Tamil: https://huggingface.co/udgamlabs/shruti-tamil
 - Shruti Bengali: https://huggingface.co/udgamlabs/shruti-bengali
 - Shruti Telugu: https://huggingface.co/udgamlabs/shruti-telugu
 - Shruti Gujarati: https://huggingface.co/udgamlabs/shruti-gujarati
 - Shruti Odia: https://huggingface.co/udgamlabs/shruti-odia
+- Cactus Whistle (modelo base original): https://huggingface.co/Cactus-Compute/whistle
+- Motor Cactus: https://huggingface.co/Cactus-Compute/cactus
+- Binarios Cactus 4.1.0: https://huggingface.co/Cactus-Compute/cactus/tree/main/releases/4.1.0
 - Whisper tiny: https://huggingface.co/openai/whisper-tiny
 - Whisper base: https://huggingface.co/openai/whisper-base
-- Whisper small: https://huggingface.co/openai/whisper-small
 - IndicConformer Kannada (ONNX): https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-kn-onnx
 - Whisper-tiny Kannada (vasista22): https://huggingface.co/vasista22/whisper-kannada-tiny

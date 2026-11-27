@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tensix-BFP4-MLP",
   "created_at": "2026-11-12T03:40:14.000Z",
-  "updated_at": "2026-11-25T17:18:59.000Z",
+  "updated_at": "2026-11-27T04:14:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -54,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP",
-  "renamed_at": "2026-11-15T04:40:30.273Z",
+  "renamed_to": "Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-27T07:48:05.831Z",
   "benchmarks": [],
   "sources": []
 }

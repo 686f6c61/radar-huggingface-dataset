@@ -59,16 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Run Basal-omni-1.0-mini API (Easy Deployment & Flat-Rate Pricing)",
-      "url": "https://featherless.ai/models/Remek/basal-omni-1.0-mini",
-      "snippet": "Remek/basal-omni-1.0-mini is an experimental 7.9 billion parameter model based on Google's Gemma 4 E4B architecture, designed for making fast, intuitive, typed decisions. It processes a 'state' (text, images, or audio) and provides a calibrated probability for each allowed answer in a single forward pass, without generating text. This model excels at classification and decision-making tasks ..."
-    },
-    {
-      "title": "Basal Omni 1.0 Mini - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/remek/basal-omni-1.0-mini",
-      "snippet": "Registry entry for model Basal Omni 1.0 Mini; source metadata pending."
-    }
-  ]
+  "sources": []
 }

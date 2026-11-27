@@ -5,7 +5,7 @@
   "author": "YourHighnessLA",
   "url": "https://huggingface.co/YourHighnessLA/L0xRE-27b-Low-MTP",
   "created_at": "2026-09-25T15:22:23.000Z",
-  "updated_at": "2026-09-25T15:27:50.000Z",
+  "updated_at": "2026-11-27T04:33:55.000Z",
   "license": "qwen-research-terms-derivative",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,8 +14,8 @@
     "en"
   ],
   "tags": [
-    "llama.cpp",
     "gguf",
+    "l0xre",
     "mtp",
     "speculative-decoding",
     "low-ram",

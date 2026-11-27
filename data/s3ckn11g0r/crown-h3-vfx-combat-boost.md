@@ -2,92 +2,89 @@
 
 ## Resumen
 
-CROWN-H3-VFX-Combat-Boost es un LoRA de refuerzo de efectos visuales y combate cuerpo a cuerpo de alta velocidad para el modelo de generación de vídeo MiniMax H3, en sus variantes Ref2VA, I2VA y T2VA. Lo desarrolla el creador independiente NineCrowns (S3ckn11g0r en Hugging Face) y se distribuye con la librería `minimax-h3`, orientada a flujos de trabajo en ComfyUI. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se aplica sobre los pesos del UNet de MiniMax H3 para sesgar la generación hacia coreografías marciales, estelas de fluido y plasma, partículas de rayos y fotogramas de impacto estilo sakuga.
+CROWN-H3-VFX-Combat-Boost es un LoRA (adaptador de bajo rango) entrenado por el creador conocido como NineCrowns (S3ckn11g0r en Hugging Face) sobre el modelo base MiniMaxAI/MiniMax-H3, un modelo de generacion de video texto-a-video. El adaptador esta disenado especificamente para intensificar efectos visuales (VFX) y coreografias de combate cuerpo a cuerpo y con armas a alta velocidad en los videos generados por MiniMax H3, en sus variantes Ref2VA, I2VA y T2VA.
 
-El adaptador se entrena exclusivamente sobre los bloques de vídeo (bloques 10 a 49, `video_only: True`) con rango 64 y alpha 64, de modo que no toca las capas asociadas a identidad facial ni a consistencia de vestuario. Esa separación es su propuesta de valor: en flujos multi-referencia (Ref2VA) permite intensificar la acción sin degradar los rostros ni la ropa de los personajes de referencia. El repo ocupa 1,2 GB, coherente con un LoRA de rango alto en BF16 sobre un UNet grande.
+El LoRA emplea un rango alto (Rank 64, Alpha 64) y se entrena exclusivamente sobre los bloques de video (Video-Only, bloques 10-49), lo que segun el autor permite reforzar el movimiento y los efectos sin alterar la identidad facial ni el vestuario de los personajes en flujos de multiples imagenes de referencia. El repositorio ocupa 1,2 GB y se distribuye bajo una licencia personalizada (bespoke-lora-license) vinculada al perfil del autor en Civitai.
 
-Su relevancia es de nicho pero clara: cubre una demanda concreta de producción de vídeo generativo con estética de anime de acción y artes marciales, donde los modelos base tienden a producir movimiento genérico. La licencia es propietaria y específica del autor (`bespoke-lora-license`), lo que condiciona su uso comercial.
+Su relevancia radica en que aborda un caso de uso muy concreto dentro de la generacion de video: escenas de accion con estelas de fluidos y plasma, particulas de rayos, fotogramas de impacto estilo sakuga y detonaciones de gran escala. Es un adaptador de nicho orientado a creadores que trabajan con ComfyUI y el ecosistema de MiniMax H3, no un modelo generalista.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre UNet de difusión de vídeo MiniMax H3 |
-| Parametros totales | no disponible (rango 64, alpha 64; tamano de repo 1,2 GB) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de video MiniMax-H3; rango 64, alpha 64, aplicado a bloques 10-49 (Video-Only) |
+| Parametros totales | no disponible (el adaptador ocupa 1,2 GB en el repositorio) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (depende del modelo base MiniMax H3) |
-| Tipos de cuantizacion | no disponible (pesos distribuidos en safetensors; el autor cita BF16 en el stack de referencia) |
-| Idiomas soportados | no disponible (el prompt de instancia es `crown_vfx_combat`; la model card esta en ingles y chino) |
-| Licencia | bespoke-lora-license (propietaria, definida por el autor) |
-| Formato de pesos | safetensors (`CROWN_H3_VFX_Combat_Boost_V2_r64.safetensors`) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible; el autor cita pesos BF16 para el modelo base y FP32 para los VAE en sus pruebas |
+| Idiomas soportados | no disponible |
+| Licencia | bespoke-lora-license (licencia personalizada; enlace a civitai.com/user/NineCrowns) |
+| Formato de pesos | safetensors (fichero citado: CROWN_H3_VFX_Combat_Boost_V2_r64.safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 64 aplicado sobre los bloques 10 a 49 del UNet de MiniMax H3, con entrenamiento restringido a las capas de vídeo (`video_only: True`). Esa decisión de diseño desacopla el refuerzo de movimiento y efectos de las capas que codifican identidad y apariencia, de forma que el adaptador no contamina los rasgos faciales ni el vestuario en flujos con imágenes de referencia. El modelo base es un transformer de difusión para texto-a-vídeo con audio, con un text encoder Qwen3-VL de 32B y VAEs separados de vídeo y audio según los stacks publicados por el autor.
+El adaptador es un LoRA de rango 64 y alpha 64 que se inyecta sobre el modelo de difusion de video MiniMax H3. Segun la model card, el entrenamiento se limita a los bloques de video (video_only: True), concretamente los bloques 10 a 49, de modo que la modificacion se concentra en la capa de dinamica y efectos visuales y no en las capas asociadas a la identidad o el vestuario. Esta separacion es la que el autor presenta como responsable de preservar la coherencia facial en flujos Ref2VA con multiples referencias.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de ajuste por preferencias. La model card documenta la configuración de inferencia empleada en las demostraciones: 24 a 25 pasos, sampler `euler`, scheduler `beta` o sigmas manuales, `denoise: 1.0` y `MiniMaxH3SigmaShift` con `shift_video: 12.0` y `shift_audio: 3.0`. También publica los stacks completos de LoRA con pesos exactos, incluido el propio adaptador a 1,25 o 1,35 según la escena, lo que facilita la reproducibilidad.
+No se especifican en la informacion disponible el numero de tokens o clips de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO (no aplicables habitualmente a LoRA de difusion). El autor documenta los ajustes de inferencia empleados en sus pruebas: 24-25 pasos, sampler euler, scheduler beta y MiniMaxH3SigmaShift con shift_video 12.0 y shift_audio 3.0, sobre el UNet minimax_h3_ref2va_bf16 (66 GB BF16) o su version podada (37,5 GB), con text encoder Qwen3-VL-32B y VAE de video y audio en FP32.
 
 ## Capacidades
 
-- Refuerzo de coreografías de combate cuerpo a cuerpo a alta velocidad, con y sin armas.
-- Generación de estelas multicapa de fluidos y plasma, partículas de rayos y fotogramas de impacto estilo sakuga.
-- Detonaciones de gran escala que ocupan la pantalla (el autor cita ejemplos como una supernova de loto de hielo de 50 metros).
-- Preservación de identidad facial y consistencia de vestuario en flujos multi-referencia (Ref2VA).
-- Compatible con las rutas Ref2VA (referencia a vídeo), I2VA (imagen a vídeo) y T2VA (texto a vídeo) de MiniMax H3.
-- Integración en ComfyUI mediante el prompt de instancia `crown_vfx_combat`.
-- No soporta tool calling, function calling ni razonamiento multi-paso: es un adaptador generativo de vídeo, no un modelo de lenguaje.
+- Generacion de video texto-a-video con enfasis en escenas de accion y combate.
+- Refuerzo de coreografias de artes marciales y combate con armas a alta velocidad.
+- Generacion de efectos visuales multicapa: estelas de fluidos y plasma, particulas de rayos, fotogramas de impacto estilo sakuga y detonaciones de gran escala.
+- Preservacion de la identidad facial y del vestuario en flujos con multiples imagenes de referencia (Ref2VA), segun el autor.
+- Compatibilidad con los modos Ref2VA, I2VA y T2VA del modelo base MiniMax H3.
+- Integracion con ComfyUI y apilamiento con otros LoRA (el autor documenta stacks con pesos concretos).
+- Soporte de audio sincronizado a traves del VAE de audio del modelo base (hasta 15 segundos segun la referencia del autor).
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso (no aplica a un modelo de video).
 
 ## Casos de uso
 
-- Previsualización de escenas de acción para animación: el adaptador genera combates cuerpo a cuerpo con continuidad de movimiento y estelas de energía, útil para animáticas de episodios antes de la producción final.
-- Storyboards animados de artes marciales: con T2VA se pueden iterar variantes de una pelea a partir de descripciones textuales y quedarse con la que mejor funcione narrativamente.
-- Publicidad y tráilers con estética anime: el refuerzo de impactos y partículas permite construir planos de clímax sin animación manual, con el prompt de instancia como disparador.
-- Contenido para videojuegos: generación de cinemáticas de habilidades definitivas y efectos de golpe para tráilers de lanzamiento o material promocional de un título de lucha.
-- Flujos con personajes recurrentes: en Ref2VA, el adaptador mantiene el rostro y el vestuario de los personajes de referencia mientras intensifica la acción, lo que sirve para series con protagonistas fijos.
-- Pruebas de concepto de efectos visuales: comparar rápidamente variantes de un mismo plano de combate combinando el adaptador con sliders de velocidad y exposición, tal como documenta el autor.
-- Iteración de iluminación y contraste en escenas de acción: el stack de referencia incluye un slider de exposición (`MMH3-ExposureSlider-V1`), lo que permite ajustar el look del plano sin regenerar desde cero.
+- Produccion de escenas de accion para cortometrajes o trailers: el LoRA intensifica peleas cuerpo a cuerpo y con armas, generando trayectorias de golpes y estelas visibles que de otro modo requeririan postproduccion de VFX.
+- Previsualizacion de secuencias de combate en animacion: util para generar animaticos con fotogramas de impacto estilo sakuga antes de la produccion final.
+- Creacion de contenido para redes sociales con estetica de anime de accion: combinado con el slider de velocidad de movimiento del ecosistema H3, permite clips cortos de alta energia.
+- Diseno de efectos de particulas y energia (rayos, plasma, fluidos) para pruebas de concepto visuales, aprovechando la capa Video-Only para no degradar el diseno de personaje.
+- Flujos con personajes recurrentes: en modo Ref2VA con multiples referencias, el adaptador mantiene la cara y el vestuario mientras anade combate, lo que sirve para series con personaje fijo.
+- Iteracion rapida en ComfyUI: el adaptador se apila con otros LoRA (combate, exposicion, velocidad) con pesos ajustables, lo que permite afinar la intensidad del efecto por escena.
+- Generacion de clips con audio sincronizado de hasta 15 segundos para demos o prototipos, usando el VAE de audio del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye unicamente registros de pruebas cualitativas (tres videos de demostracion) con sus parametros exactos de muestreo y stacks de LoRA, sin metricas cuantitativas.
 
 ## Requisitos de hardware
 
-- El adaptador pesa 1,2 GB, pero la inferencia exige cargar el UNet completo de MiniMax H3: el autor cita una versión completa en BF16 de 66 GB y una versión podada de 37,5 GB.
-- Text encoder Qwen3-VL de 32B en BF16 más VAEs de vídeo y audio en FP32: el consumo agregado de VRAM es elevado y no cabe en GPUs de consumo convencionales.
-- GPU recomendadas: no disponible de forma explícita; por el tamaño del UNet y del text encoder, el despliegue realista requiere GPUs de centro de datos (A100, H100 o superiores) o servicios en la nube.
-- No cabe en GPUs de consumo como la RTX 4090 con el stack completo en BF16; el autor ofrece alternativas en la nube para usuarios sin hardware suficiente.
-- Opciones de despliegue: ComfyUI es el entorno documentado; el autor publica flujos en la nube en RunningHub (versiones global y china).
-- Latencia y throughput: no disponibles.
+- El adaptador en si ocupa 1,2 GB, pero requiere cargar el modelo base MiniMax H3: UNet completo en BF16 de 66 GB o version podada de 37,5 GB, mas text encoder Qwen3-VL-32B y VAE de video y audio en FP32.
+- VRAM estimada: no disponible de forma oficial; por el tamano de los componentes citados, el UNet completo en BF16 (66 GB) no cabe en GPUs de consumo y exige aceleradores de datacenter (A100 80 GB, H100 80 GB) o configuraciones multi-GPU.
+- La version podada (37,5 GB) sigue superando la VRAM de una RTX 4090 (24 GB) en BF16; seria necesario cuantizar o usar offloading, aunque no se documentan cuantizaciones oficiales.
+- No cabe en GPUs de consumo en la configuracion descrita por el autor.
+- Opciones de despliegue: ComfyUI (flujo documentado por el autor), con workflows en la nube de RunningHub; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusion de video en este contexto).
+- Latencia y throughput: no disponibles; el autor cita 24-25 pasos de muestreo con sampler euler.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CROWN-H3-VFX-Combat-Boost | LoRA sobre MiniMax H3 | rango 64, alpha 64; repo 1,2 GB | no disponible | bespoke-lora-license | Hugging Face, RunningHub, Civitai |
-| MiniMax H3 (base) | Modelo de difusión texto-a-vídeo con audio | no disponible (UNet BF16 de 66 GB) | no disponible | no disponible en la informacion | Referenciado en los stacks del autor |
-| LoRA de combate alternativos citados por el autor (`H3_Combat_V2`, `Bunny_weapon_combatV1`) | LoRA sobre MiniMax H3 | no disponible | no disponible | no disponible | Usados en los stacks de demostracion |
-
-No se dispone de datos de rendimiento comparativo entre estos adaptadores en la informacion proporcionada.
+No disponible. La informacion proporcionada no incluye datos de otros adaptadores LoRA comparables para MiniMax H3 (aparte de los citados en los stacks, como H3_Combat_V2 o Bunny_weapon_combatV1, de los que no se aportan especificaciones), ni de modelos de video alternativos con los que contrastar parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria y específica del autor (`bespoke-lora-license`): es imprescindible revisar los términos en el enlace de Civitai antes de cualquier uso comercial.
-- Al ser un LoRA, hereda los sesgos y limitaciones del modelo base MiniMax H3, que no se documentan en la información disponible.
-- Riesgo de alucinación visual: como todo modelo generativo de vídeo, puede producir anatomías inconsistentes, físicas imposibles o artefactos en planos largos.
-- El autor documenta pesos de LoRA superiores a 1,0 (hasta 1,35), lo que en la práctica puede saturar el estilo y degradar la variedad si se aplica sin ajuste fino.
-- El refuerzo está entrenado para estética de acción y efectos; puede empujar escenas tranquilas hacia el movimiento exagerado si se usa el prompt de instancia de forma indiscriminada.
-- Los requisitos de hardware del modelo base son muy altos, lo que limita la experimentación local.
-- No hay información sobre idiomas de prompt soportados más allá de los ejemplos en inglés y chino de la model card.
+- No se han publicado benchmarks ni evaluaciones cuantitativas; las afirmaciones de mejora y de preservacion de identidad provienen del autor y de sus propios videos de demostracion.
+- El adaptador esta entrenado para un nicho muy concreto (VFX y combate); su uso fuera de ese dominio puede degradar la calidad o introducir artefactos no evaluados.
+- Depende de un modelo base de gran tamano (66 GB en BF16), lo que limita su uso a infraestructura de gama alta o a servicios en la nube.
+- La licencia es personalizada (bespoke-lora-license) y remite al perfil de Civitai del autor; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que las condiciones de explotacion no se detallan en el repositorio.
+- No se documentan sesgos, riesgos de alucinacion visual ni limitaciones de idioma; al ser un modelo de video, los riesgos se refieren a coherencia temporal, artefactos y fidelidad al prompt.
+- La model card incluye enlaces promocionales a servicios de terceros y a un sitio externo (h3xron.xyz); deben tratarse con cautela y no como parte del modelo.
+- El rendimiento depende fuertemente del stack de LoRA y de los pesos empleados; los resultados del autor no son reproducibles sin los mismos ficheros y ajustes de muestreo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/S3ckn11g0r/CROWN-H3-VFX-Combat-Boost
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Civitai (pagina oficial del autor): https://civitai.com/models/3041075
+- Perfil del autor en Civitai: https://civitai.com/user/NineCrowns
 - RunningHub Global (modelo): https://www.runninghub.ai/model/public/2120441999441563649
 - RunningHub Global (workflow ComfyUI): https://www.runninghub.ai/workflow/2120529813882970113
 - RunningHub Global (webapp): https://www.runninghub.ai/ai-detail/2120529837906804738
-- RunningHub China (modelo): https://www.runninghub.cn/model/public/2119393519600230401
-- RunningHub China (workflow): https://www.runninghub.cn/workflow/2119379654992814081
-- RunningHub China (webapp): https://www.runninghub.cn/ai-detail/2119407566374658049
-- Civitai (página oficial del autor): https://civitai.com/models/3041075
-- Perfil del autor en Civitai: https://civitai.com/user/NineCrowns
+- RunningHub CN (modelo): https://www.runninghub.cn/model/public/2119393519600230401
+- RunningHub CN (workflow): https://www.runninghub.cn/workflow/2119379654992814081
+- RunningHub CN (webapp): https://www.runninghub.cn/ai-detail/2119407566374658049
+- Sitio externo citado por el autor: https://h3xron.xyz

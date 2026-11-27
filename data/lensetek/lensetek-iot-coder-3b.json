@@ -5,7 +5,7 @@
   "author": "lensetek",
   "url": "https://huggingface.co/lensetek/lensetek-iot-coder-3b",
   "created_at": "2026-11-25T16:16:44.000Z",
-  "updated_at": "2026-11-25T16:32:16.000Z",
+  "updated_at": "2026-11-26T15:08:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

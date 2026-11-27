@@ -5,10 +5,10 @@
   "author": "aaaalex111",
   "url": "https://huggingface.co/aaaalex111/gemma-4-12b-it-DFlash2",
   "created_at": "2026-11-19T06:26:58.000Z",
-  "updated_at": "2026-11-22T13:04:40.000Z",
+  "updated_at": "2026-11-26T15:11:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
@@ -17,6 +17,7 @@
     "speculative-decoding",
     "dflash2",
     "legospec",
+    "text-generation",
     "base_model:google/gemma-4-12B-it",
     "base_model:finetune:google/gemma-4-12B-it",
     "region:us"

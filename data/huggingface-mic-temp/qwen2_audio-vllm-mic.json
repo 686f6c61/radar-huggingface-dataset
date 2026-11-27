@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "huggingface-mic-temp/qwen2_audio-vllm-mic",
+  "slug": "huggingface-mic-temp-qwen2_audio-vllm-mic",
+  "author": "huggingface-mic-temp",
+  "url": "https://huggingface.co/huggingface-mic-temp/qwen2_audio-vllm-mic",
+  "created_at": "2026-11-27T08:41:55.000Z",
+  "updated_at": "2026-11-27T08:41:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_audio",
+    "mic",
+    "test-artifact",
+    "base_model:Qwen/Qwen2-Audio-7B",
+    "base_model:finetune:Qwen/Qwen2-Audio-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20258816,
+  "parameters_human": "20.3M",
+  "storage_bytes": 40524936,
+  "storage_human": "41 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2-Audio-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniCPM-o 4.5: Online serving - vLLM-Omni",
+      "url": "https://docs.vllm.ai/projects/vllm-omni/en/v0.26.0/user_guide/examples/online_serving/minicpmo/",
+      "snippet": "Inputs can include text, image, audio, or video; outputs are text and optional 24 kHz speech. For the experimental native duplex runtime architecture, lifecycle ..."
+    }
+  ]
+}

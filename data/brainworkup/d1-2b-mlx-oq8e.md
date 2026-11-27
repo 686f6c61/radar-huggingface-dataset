@@ -2,83 +2,84 @@
 
 ## Resumen
 
-d1-2B-MLX-oQ8e es una versión cuantizada en formato MLX de un modelo multimodal de visión y lenguaje (VL) de aproximadamente 1.918 millones de parámetros, publicado por el usuario brainworkup en Hugging Face. La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta: la mayoría de los pesos se almacenan en formato afino de 8 bits con grupos de 64, mientras que una pequeña proporción se mantiene en BF16 para preservar la precisión de las capas más sensibles.
+d1-2B-MLX-oQ8e es una version cuantizada del modelo d1-2B, publicada por el usuario brainworkup en Hugging Face. Se trata de un checkpoint multimodal (la etiqueta `lfm3_vl` sugiere una base de la familia LFM3 con capacidad de vision) con 1.918.181.888 parametros totales, de los cuales aproximadamente 1.729B corresponden al modelo de lenguaje y 0.189B a un modulo de vision. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.4.dev1) en precision mixta, con un promedio efectivo de 9,242 bits por peso.
 
-El modelo base pertenece a la familia LFM3-VL (según los metadatos del repositorio), una arquitectura multimodal que combina un modelo de lenguaje con un componente de visión de unos 189 millones de parámetros. El resultado cuantizado ocupa unos 2,2 GB en disco, con una media efectiva de 9,242 bits por peso, lo que lo hace especialmente adecuado para su ejecución en hardware Apple Silicon mediante el framework MLX.
+El modelo esta empaquetado especificamente para MLX, el framework de Apple para ejecucion de redes neuronales en silicio de la compania (chips M-series). Esto lo hace relevante para desarrolladores que quieren ejecutar inferencia local en Macs con memoria unificada, sin depender de CUDA ni de GPUs dedicadas. El repositorio ocupa 2,2 GB y los pesos se distribuyen en safetensors con codigo personalizado (`custom_code`), lo que implica que la carga requiere confiar en la implementacion incluida en el repo.
 
-Este tipo de repositorios resulta relevante para desarrolladores que trabajan en el ecosistema Mac y desean ejecutar modelos multimodales compactos localmente, con un equilibrio entre tamaño en memoria y calidad de salida. Cabe señalar que el repositorio es muy reciente y aún no registra descargas ni likes, y que la model card original es escasa en documentación técnica.
+La ficha se limita a lo que puede verificarse en los metadatos y la model card disponibles; el autor no publica informacion sobre arquitectura interna, datos de entrenamiento, benchmarks ni licencia, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal (visión + lenguaje), familia LFM3_VL según metadatos |
-| Parametros totales | 1.918.181.888 (1,918 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (etiqueta `lfm3_vl`; transformer multimodal con modulo de vision, sin confirmar) |
+| Parametros totales | 1.918.181.888 (1,918B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Afino 8 bits (grupo 64) para el 90,107 % de los pesos; BF16 para el 9,893 %; media efectiva 9,242 bits/peso |
+| Tipos de cuantizacion | Mixta oQ: affine 8-bit grupo 64 (90,107% de los pesos, 8,50 bits/peso) + BF16 (9,893%, 16,00 bits/peso); promedio efectivo 9,242 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (framework MLX) |
+| Formato de pesos | safetensors (libreria `mlx`, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene una cuantización, no un modelo entrenado desde cero. Según los metadatos, el modelo base pertenece a la familia LFM3_VL, una arquitectura multimodal que integra un modelo de lenguaje de 1,729 B de parámetros con un módulo de visión de 0,189 B de parámetros. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO para el modelo original.
+No se dispone de informacion sobre la arquitectura interna del modelo base d1-2B. La etiqueta `lfm3_vl` en Hugging Face apunta a un modelo de la familia LFM3 con modulo de vision, y el desglose de almacenamiento confirma la existencia de dos componentes: un modelo de lenguaje de 1,729B parametros y un modulo de vision de 0,189B parametros. No se especifica si el backbone es un transformer denso, un hibrido o un MoE.
 
-La innovación principal de este repositorio es el proceso de cuantización con oQ (oMLX v0.7.3), una herramienta de cuantización de precisión mixta para MLX. En lugar de cuantizar uniformemente todos los pesos, oQ asigna formatos distintos por tensor: el 90,107 % de los pesos lógicos (1,728 B) se almacena en formato afino de 8 bits con tamaño de grupo 64 (8,50 bits efectivos por peso, 1,710 GiB), mientras que el 9,893 % restante (0,190 B) se conserva en BF16 sin cuantizar (0,353 GiB). Esta estrategia mantiene en alta precisión las capas más sensibles a la cuantización, reduciendo la degradación de calidad respecto a una cuantización uniforme de 8 bits.
+Respecto al entrenamiento, la model card no documenta el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La unica informacion tecnica disponible es el proceso de cuantizacion: se aplico oQ (oMLX v0.7.4.dev1) con precision mixta, manteniendo en BF16 el 9,893% de los pesos (0,190B, 0,353 GiB) y cuantizando el resto a affine 8-bit con grupo de 64. El resultado son 2,064 GiB de pesos logicos, con el modelo de lenguaje ocupando 1,711 GiB y la vision 0,353 GiB.
 
 ## Capacidades
 
-- Comprensión multimodal de imágenes y texto: el modelo incluye un componente de visión (0,189 B de parámetros) junto al modelo de lenguaje (1,729 B), lo que habilita tareas de descripción de imágenes, preguntas visuales y razonamiento sobre contenido gráfico.
-- Generación de texto: como modelo de lenguaje entrenado, en principio soporta generación de texto conversacional y tareas generales, aunque la model card no detalla sus capacidades específicas.
-- Ejecución nativa en Apple Silicon: al estar en formato MLX, está optimizado para inferencia eficiente en GPUs de Apple (M1/M2/M3/M4) mediante el framework mlx.
-- Cuantización de alta fidelidad: la precisión mixta (8 bits + BF16) minimiza la pérdida de calidad frente a cuantizaciones más agresivas.
-- No se dispone de información sobre soporte de tool calling, capacidades de agente, modo de razonamiento extendido (thinking mode) ni soporte de audio.
+- Generacion de texto: el componente de lenguaje de 1,729B parametros permite generacion autoregresiva estandar, aunque no hay datos publicados sobre calidad.
+- Procesamiento de vision: la presencia de un modulo de vision de 0,189B parametros y la etiqueta `lfm3_vl` indican capacidad de entrada de imagenes, sin detalle sobre tareas concretas (VQA, OCR, captioning).
+- Inferencia en MLX: el checkpoint esta disenado para ejecutarse con la libreria MLX de Apple, lo que habilita despliegue en Macs con chips M1/M2/M3/M4.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Análisis local de documentos e imágenes en Mac: al ser multimodal y ocupar solo 2,2 GB, puede ejecutarse íntegramente en la memoria unificada de un Apple Silicon para extraer información de capturas, diagramas o fotografías sin enviar datos a la nube, útil en entornos con requisitos de privacidad.
-- Chatbot multimodal en aplicaciones de escritorio: su tamaño compacto permite integrarlo en apps nativas macOS mediante MLX o mlx-lm para asistentes que combinen texto e imágenes con latencias bajas.
-- Prototipado rápido en local: desarrolladores pueden probar pipelines de visión y lenguaje sin GPU dedicada ni costes de API, iterando sobre prompts y flujos multimodales antes de escalar a modelos mayores.
-- Descripción y etiquetado automático de imágenes: el módulo de visión permite generar descripciones, alt-text o metadatos de bibliotecas de imágenes en batch en un equipo personal.
-- Asistente offline para campos con conectividad limitada: al ejecutarse completamente en local, es adecuado para escenarios sin acceso a internet (trabajo de campo, entornos aislados).
-- Evaluación comparativa de cuantizaciones: al tratarse de una cuantización oQ con distribución de bits documentada, sirve como caso de estudio para comparar la degradación de precisión mixta frente a otras cuantizaciones del mismo modelo base.
+- Prototipado local en Mac: cargar el modelo con MLX en un Mac con memoria unificada suficiente para experimentar con un modelo multimodal de ~2B sin GPU dedicada. El tamano de 2,2 GB del repo lo hace manejable en equipos de 16 GB o mas.
+- Pruebas de pipelines de vision-lenguaje: usar el modulo de vision para validar flujos de descripcion de imagenes o respuesta a preguntas visuales en un entorno de desarrollo antes de escalar a modelos mayores.
+- Evaluacion de cuantizacion: servir como referencia para comparar la calidad de la cuantizacion mixta oQ (8-bit + BF16) frente al modelo base en tareas concretas, ya que la model card detalla la distribucion de bits por componente.
+- Educacion e investigacion: estudiar el comportamiento de un modelo multimodal pequeno cuantizado en un framework no-CUDA, util en cursos o laboratorios con hardware Apple.
+- Inferencia offline en dispositivos: al no requerir conexion ni servidores, encaja en escenarios de privacidad donde los datos no deben salir del equipo, como analisis de imagenes medicas o documentos internos (sujeto a la licencia, no disponible).
+- Integracion en herramientas de escritorio para macOS: el formato MLX permite incrustar el modelo en aplicaciones nativas de Apple que necesiten generacion de texto o analisis de imagenes en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta la distribución de bits de la cuantización, sin evaluaciones de MMLU, HumanEval, GSM8K ni ninguna otra métrica, ni comparativas con el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria necesaria: el checkpoint ocupa 2,064 GiB (2,216 GB) en disco; para inferencia conviene disponer de al menos 4-6 GB de memoria unificada disponible para pesos, KV cache y overhead de ejecución.
-- Hardware objetivo: diseñado para Apple Silicon (Mac con chips M1, M2, M3 o M4) mediante el framework MLX. Un MacBook con 8 GB de RAM unificada debería poder ejecutarlo, aunque con margen limitado; 16 GB o más es lo recomendable para contextos largos.
-- No está pensado para GPUs NVIDIA de forma nativa: MLX es un framework específico de Apple, por lo que opciones como RTX 4090 o A100 no aplican directamente a este formato.
-- Despliegue: mediante la librería mlx y herramientas asociadas como mlx-lm; no hay evidencia de soporte directo en vLLM, TGI, llama.cpp u Ollama para este formato MLX concreto.
-- Latencia y throughput: no disponibles; al ser un modelo de ~1,9 B de parámetros con cuantización de 8 bits en Apple Silicon, cabe esperar generación fluida en tiempo real en chips M recientes, pero no hay mediciones publicadas.
+- VRAM/memoria estimada: los pesos ocupan 2,064 GiB; con overhead de activaciones y cache KV, se recomienda al menos 4-6 GB de memoria unificada para inferencia basica, aunque no hay cifras oficiales.
+- GPU recomendadas: al ser un checkpoint MLX, el hardware objetivo son los chips Apple M1, M2, M3 y M4 (incluidas variantes Pro, Max y Ultra). No esta pensado para CUDA (A100, H100, RTX 4090).
+- Compatibilidad con consumer GPU: cabe en cualquier Mac con 16 GB de memoria unificada o mas; en GPUs NVIDIA no es directamente utilizable sin conversion.
+- Opciones de despliegue: MLX (libreria nativa), con posible uso de `mlx-lm` para el componente de lenguaje; requiere `custom_code` del repositorio. No se indica soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Formato | Licencia |
-|---|---|---|---|---|---|
-| d1-2B-MLX-oQ8e | 1,918 B | no disponible | Sí (visión, 0,189 B) | MLX safetensors, 8-bit mixto | no disponible |
-| Qwen2.5-VL-3B-Instruct | 3,7 B | 32.768 tokens | Sí (visión) | safetensors | Apache 2.0 |
-| SmolVLM-Instruct (2B) | 2,2 B | 16.384 tokens | Sí (visión) | safetensors | Apache 2.0 |
-| PaliGemma-3B | 3 B | 8.192 tokens | Sí (visión) | safetensors | Gemma license |
+No se dispone de informacion suficiente para establecer una comparativa fiable: se desconocen la licencia, el contexto, los benchmarks y el modelo base exacto. Como referencia estructural, se puede comparar con otros modelos multimodales pequenos cuantizados para MLX, pero sin datos de rendimiento la comparacion seria especulativa.
 
-Nota: la comparativa se basa en modelos multimodales compactos de referencia; los datos de los modelos alternativos corresponden a sus fichas públicas y pueden variar según versiones. Para d1-2B-MLX-oQ8e, contexto y licencia no constan en la informacion disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| d1-2B-MLX-oQ8e | 1,918B | no disponible | no disponible | safetensors MLX | Cuantizacion mixta oQ 9,242 bits/peso |
+| Alternativas de ~2B multimodales para MLX | no disponible | no disponible | no disponible | no disponible | Sin datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Documentación muy escasa: la model card no describe capacidades, idiomas, contexto ni limitaciones del modelo base, lo que dificulta una evaluación rigurosa antes de su uso.
-- Licencia no especificada: al no indicarse la licencia, no es posible confirmar si el uso comercial está permitido; debe verificarse antes de cualquier despliegue en producción.
-- Riesgo de alucinación: no disponible información específica, pero como todo modelo de lenguaje de ~2 B de parámetros, cabe esperar una tasa de alucinación relativamente alta, especialmente en razonamiento complejo y datos factuales.
-- Sesgos: no se dispone de información sobre sesgos del modelo base ni del proceso de entrenamiento.
-- Formato MLX exclusivo de Apple: no es ejecutable directamente en GPUs NVIDIA ni en la mayoría de infraestructuras de servidor habituales, lo que limita su uso a ecosistemas macOS.
-- Repositorio sin trazabilidad: cero descargas y cero likes en el momento de la ficha, sin pipeline asignado; se recomienda validar la integridad y procedencia de los pesos antes de su uso.
-- Posible degradación por cuantización: aunque la precisión mixta reduce la pérdida, la cuantización de 8 bits puede afectar a tareas sensibles (matemáticas, código, generación fina) respecto al modelo base en BF16.
-- Etiqueta custom_code en los metadatos: el repositorio puede requerir ejecución de código personalizado, lo que implica revisar el código de carga por seguridad.
+- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; es un riesgo critico para produccion.
+- Idiomas no declarados: se desconoce el soporte multilingue y la calidad en castellano.
+- Ausencia de benchmarks: no hay evidencia publicada de calidad en tareas de texto, codigo, matematicas o vision.
+- Dependencia de `custom_code`: la carga del modelo requiere ejecutar codigo incluido en el repositorio, lo que implica un riesgo de seguridad y de mantenimiento.
+- Cuantizacion mixta: el 9,893% de los pesos en BF16 y el resto en 8-bit puede introducir degradacion no documentada respecto al modelo original.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no puede acotarse.
+- Sesgos: no documentados por el autor.
+- Ecosistema limitado: solo MLX; no hay soporte para CUDA, llama.cpp u otros runners, lo que restringe el despliegue a hardware Apple.
+- Popularidad baja: 193 descargas y 1 like en el momento de la consulta, lo que reduce la probabilidad de que los problemas esten reportados por la comunidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/brainworkup/d1-2B-MLX-oQ8e
-- Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/d1-2B-MLX-oQ8e
+- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

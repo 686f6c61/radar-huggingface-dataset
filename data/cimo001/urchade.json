@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "cimo001/urchade",
+  "slug": "cimo001-urchade",
+  "author": "cimo001",
+  "url": "https://huggingface.co/cimo001/urchade",
+  "created_at": "2026-11-27T07:19:51.000Z",
+  "updated_at": "2026-11-27T07:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "ner",
+    "gliner",
+    "urchade",
+    "token-classification",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1510555663,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "urchade",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

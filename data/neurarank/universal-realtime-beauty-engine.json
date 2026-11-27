@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "neurarank/universal-realtime-beauty-engine",
+  "slug": "neurarank-universal-realtime-beauty-engine",
+  "author": "neurarank",
+  "url": "https://huggingface.co/neurarank/universal-realtime-beauty-engine",
+  "created_at": "2026-11-27T05:16:13.000Z",
+  "updated_at": "2026-11-27T05:16:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "beauty-engine",
+    "real-time",
+    "facial-landmarks",
+    "mobile-ai",
+    "knowledge-distillation",
+    "image-to-image",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2785969,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

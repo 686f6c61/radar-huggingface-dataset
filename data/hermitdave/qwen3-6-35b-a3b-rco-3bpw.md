@@ -2,111 +2,97 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-RCO-3bpw es una cuantización de precisión mixta del modelo Qwen3.6-35B-A3B de Qwen Team, realizada por el usuario hermitdave mediante el método RCO (Reconstruction-error-driven mixed-precision quantization). El objetivo es reducir el peso del modelo original en BF16 (67 GB) hasta unos 19 GB para que pueda ejecutarse en Apple Silicon a través de MLX, manteniendo la mayor fidelidad posible respecto al modelo completo. El resultado es un checkpoint de aproximadamente 3 bits por peso objetivo que, por la sobrecarga de escalas, alcanza 5,92 bpw efectivos.
+Qwen3.6-35B-A3B-RCO-3bpw es una cuantizacion de precision mixta en formato MLX del modelo Qwen/Qwen3.6-35B-A3B, publicada por el usuario hermitdave. El modelo base es un transformer de tipo mezcla de expertos (MoE) desarrollado por Alibaba Qwen, con 35.951.822.704 parametros totales y una ventana de contexto que no se detalla en la informacion disponible. Esta version cuantizada aplica la tecnica RCO (mixed-precision quantization) para reducir el peso del modelo hasta 3.0028 bits por peso (bpw) de media, con un tamano resultante de 16 GB.
 
-El modelo base Qwen3.6-35B-A3B es un transformer causal con encoder de visión, arquitectura MoE con 35B parámetros totales y 3B activos, 40 capas y una disposición híbrida que combina Gated DeltaNet (atención lineal) con Gated Attention. Incorpora 256 expertos con 8 enrutados más 1 compartido activados por token, y soporta un contexto nativo de 262.144 tokens extensible hasta 1.010.000. Está orientado a cargas de trabajo de código agéntico y razonamiento de repositorio.
+El problema que resuelve esta ficha es la necesidad de ejecutar un modelo MoE de gran tamano en hardware Apple Silicon con memoria unificada limitada. Al pasar de los pesos originales (probablemente en bfloat16, ~72 GB) a 16 GB, el modelo se vuelve desplegable en equipos con 24-32 GB de RAM unificada, manteniendo una calidad razonable segun las metricas declaradas por el autor. La relevancia actual radica en que la cuantizacion de precision mixta permite conservar mas calidad que una cuantizacion uniforme de 3 bits, asignando mas bits a las capas mas sensibles.
 
-Esta ficha describe principalmente la variante cuantizada MLX, que es la publicada en el repositorio, e incluye los datos del modelo base cuando están disponibles. La relevancia actual radica en la posibilidad de ejecutar un MoE de 35B en hardware de consumo Apple con una degradación medida y acotada respecto a BF16.
+La licencia es "other", heredada del modelo base Qwen3.6-35B-A3B, por lo que las condiciones de uso comercial dependen de los terminos del modelo original, no especificados en la informacion proporcionada. El repositorio tiene 192 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion incipiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal híbrido: Gated DeltaNet (atención lineal) + Gated Attention, con MoE y encoder de visión |
-| Parametros totales | 35B (modelo base) |
-| Parametros activos | 3B (8 expertos enrutados + 1 compartido por token) |
-| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 tokens |
-| Tipos de cuantizacion | Cuantización mixta RCO a ~3 bpw objetivo; 5,92 bpw efectivos; group size 64; modo affine; 674 tensores cuantizados |
+| Arquitectura | Transformer MoE (qwen3_5_moe) segun tags; detalles de capas no disponibles |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | RCO mixed-precision, 3.0028 bpw, group size 64 affine, scale dtype bfloat16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | MLX (repo de 19,9 GB; 19 GB en disco) |
-| Hidden dimension | 2048 |
-| Numero de capas | 40 (layout: 10 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE))) |
-| Expertos | 256 totales; 8 enrutados + 1 compartido activados; dimensión intermedia 512 |
-| Cabezas de atención | Gated Attention: 16 Q / 2 KV, dim 256; Gated DeltaNet: 32 V / 16 QK, dim 128 |
-| Token embedding | 248.320 (padded) |
-| MTP | Entrenado con multi-steps |
+| Licencia | other (heredada del modelo base) |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base combina dos mecanismos de atención en un patrón repetido: por cada bloque de cuatro subcapas, tres usan Gated DeltaNet (atención lineal con 32 cabezas para V y 16 para QK, dimensión 128) y una usa Gated Attention clásica (16 cabezas Q, 2 KV, dimensión 256, RoPE de 64 dimensiones). Cada subcapa de atención va seguida de una capa MoE con 256 expertos, de los que se activan 8 enrutados más 1 compartido, con dimensión intermedia de 512. El modelo incluye además un encoder de visión, lo que lo convierte en un modelo multimodal de entrada de imagen.
+El modelo base Qwen3.6-35B-A3B es un transformer de mezcla de expertos (MoE) segun el tag `qwen3_5_moe` y el identificador del modelo. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, numero de expertos, ni sobre la composicion del dataset de entrenamiento o el uso de RLHF/DPO en la informacion proporcionada. El tag `qwen3_5_moe` sugiere una generacion intermedia entre Qwen3 y Qwen3.5, pero no se confirma.
 
-El entrenamiento del modelo base comprende fases de pre-entrenamiento y post-entrenamiento, e incluye entrenamiento con multi-step MTP (multi-token prediction). La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO. La variante cuantizada se generó con el método RCO: medición del error de reconstrucción por capa, asignación de bits mediante programación dinámica y cuantización posterior, con group size 64 y modo affine. La cuantización fue realizada por Hermes Agent (Nous Research) según la atribución de la model card.
+La innovacion tecnica de esta ficha es el pipeline de cuantizacion RCO (mixed-precision quantization) ejecutado sobre MLX. El autor asigna bits de forma no uniforme a los grupos de expertos: bits {2:19, 3:61, 4:1, 6:187, 8:381}, lo que significa que 19 grupos usan 2 bits, 61 usan 3 bits, 1 usa 4 bits, 187 usan 6 bits y 381 usan 8 bits. Esta distribucion concentra la precision en los grupos mas sensibles y reduce el coste en los menos criticos, logrando 3.0028 bpw de media. La calibracion se realizo con FineWeb-Edu (512 muestras de 2048 tokens) usando el tokenizador del propio checkpoint (roundtrip 1.000) y una imatrix propia (`hermitdave/Qwen3.6-35B-A3B-imatrix`). La cabeza MTP (multi-token prediction) se cuantizo a 4 bits. El flujo de trabajo conto con asistencia de Hermes Agent (Nous Research).
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-turno.
-- Codificación agéntica: flujos de frontend y razonamiento a nivel de repositorio, con mejoras declaradas en fluidez y precisión.
-- Preservación de pensamiento (thinking preservation): opción para retener contexto de razonamiento de mensajes históricos y reducir sobrecarga en desarrollo iterativo.
-- Procesamiento de visión mediante encoder integrado en el modelo base.
-- Soporte de contexto largo: 262.144 tokens nativos, extensible hasta 1.010.000.
-- Capacidades multilingües: el modelo base reporta resultados en SWE-bench Multilingual, aunque la lista concreta de idiomas no está disponible.
-- Multi-token prediction (MTP) entrenado con multi-steps en el modelo base.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Generacion de texto: el modelo base es de tipo text-generation segun el pipeline declarado.
+- Razonamiento y conocimiento general: las tareas de evaluacion (arc_challenge, arc_easy, hellaswag, winogrande, mmlu) indican capacidades de razonamiento de sentido comun y conocimiento academico.
+- Capacidades de codigo y matematicas: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles (el campo de idiomas no esta relleno).
+- Modo thinking, vision o audio: no disponible.
+- La presencia de una cabeza MTP (multi-token prediction) sugiere soporte para decodificacion especulativa o prediccion multi-token, aunque no se detalla su uso en inferencia.
 
 ## Casos de uso
 
-- Desarrollo asistido en local sobre Apple Silicon: el checkpoint MLX de 19 GB permite ejecutar un MoE de 35B en un Mac con memoria unificada suficiente, sin depender de GPUs dedicadas, para tareas de generación de código y razonamiento.
-- Refactorización a nivel de repositorio: gracias al contexto nativo de 262.144 tokens, el modelo puede ingerir múltiples ficheros y trazas de error en una sola ventana para proponer cambios coherentes entre módulos.
-- Agente de codificación iterativo: la opción de preservación de pensamiento del modelo base reduce la repetición de razonamiento entre turnos, lo que resulta adecuado para bucles de corrección continua sobre un mismo repositorio.
-- Análisis de documentación técnica con imágenes: el encoder de visión del modelo base permite procesar diagramas de arquitectura o capturas de pantalla junto con texto para generar explicaciones o código asociado.
-- Prototipado de asistentes conversacionales de contexto largo: la ventana extensible hasta 1.010.000 tokens permite mantener historiales extensos o corpus documentales completos en memoria de contexto.
-- Evaluación de técnicas de cuantización: el checkpoint sirve como referencia práctica para comparar RCO frente a otras estrategias (por ejemplo, AD ladder) en términos de PPL, KL y acuerdo top-1 sobre hardware Apple.
-- Despliegue de bajo consumo en estaciones de trabajo Mac: al reducir el peso a 19 GB, es viable mantener el modelo cargado de forma persistente en equipos con 32 GB o 64 GB de memoria unificada para tareas de generación interactiva.
+- Inferencia local en Apple Silicon: el modelo cuantizado a 16 GB cabe en equipos con 24-32 GB de memoria unificada (MacBook Pro M2/M3 Pro/Max, Mac Studio), permitiendo ejecutar un MoE de 35B parametros sin GPU dedicada. Es el caso de uso principal de un artefacto MLX.
+- Prototipado de aplicaciones de texto en local: desarrolladores que quieran probar un modelo de 35B en su portatil antes de desplegar en servidor, usando la libreria MLX y el formato safetensors nativo.
+- Evaluacion de tecnicas de cuantizacion: investigadores que comparen la calidad de RCO 3 bpw frente a 4.4 bpw (el autor reporta una diferencia de +0.006 en precision media, con SE ~0.0055) para estudiar el compromiso tamano-calidad en MoE.
+- Generacion de texto de proposito general en entornos con restricciones de memoria: dado que el modelo base es text-generation, puede usarse para redaccion, resumen y respuesta a preguntas, aunque sin datos de contexto ni idiomas no se puede garantizar calidad en castellano.
+- Experimentacion con decodificacion multi-token: la cabeza MTP cuantizada a 4 bits permite probar tecnicas de prediccion especulativa en MLX, si el runtime lo soporta.
+- Reproducibilidad de pipelines de cuantizacion: el autor publica la imatrix y los parametros de calibracion (FineWeb-Edu 512x2048), lo que permite a otros replicar el proceso RCO sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-Resultados de la cuantización publicados en la model card (modelo base Qwen3.6-35B-A3B, objetivo 3,0 bpw):
+Datos declarados por el autor en la model card (zero-shot, 5 tareas x 400 ejemplos, precision bruta):
 
-| Modelo | PPL | KL | top-1 |
-|---|---|---|---|
-| BF16 | 11,71 | — | — |
-| RCO (per-block) | 13,36 | 0,172 | 81,5% |
-| AD ladder | 13,22 | 0,207 | 78,9% |
+| Tarea | Precision (n=400) |
+|---|---|
+| arc_challenge | 0.5400 |
+| arc_easy | 0.8000 |
+| hellaswag | 0.5300 |
+| winogrande | 0.5425 |
+| mmlu | 0.5200 |
+| Media | 0.5865 |
 
-Según la model card, RCO obtiene mejor KL y mejor acuerdo top-1 que AD ladder, con una PPL ligeramente superior.
-
-Resultados del modelo base Qwen3.6-35B-A3B frente a alternativas (según la model card del modelo base):
-
-| Benchmark | Qwen3.5-27B | Gemma4-31B | Qwen3.5-35BA3B | Gemma4-26BA4B | Qwen3.6-35BA3B |
-|---|---|---|---|---|---|
-| SWE-bench Verified | 75,0 | 52,0 | 70,0 | 17,4 | 73,4 |
-| SWE-bench Multilingual | 69,3 | 51,7 | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto |
-
-El resto de filas de la tabla de benchmarks del modelo base no están disponibles en la información proporcionada.
+El autor indica que la build de 4.4 bpw obtiene 0.5925 en los mismos prompts, con una diferencia pareada de +0.006 (SE ~0.0055) a favor de 4.4 bpw. No se proporcionan comparaciones con el modelo base sin cuantizar ni con otros modelos de la misma categoria.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repo ocupa 19,9 GB y el checkpoint en disco 19 GB; se requiere memoria unificada suficiente para cargar los pesos más el overhead de inferencia (aproximadamente 20-24 GB como mínimo práctico).
-- Hardware objetivo: Apple Silicon con MLX; no está pensado para GPUs NVIDIA/AMD en este formato.
-- Cabe en equipos Apple con 32 GB de memoria unificada en adelante; con 64 GB o más se dispone de margen para contexto largo y caché KV.
-- Despliegue: `mlx_lm` (carga mediante `mlx_lm.load` y generación con `mlx_lm.generate`). El modelo base es compatible con Hugging Face Transformers, vLLM, SGLang y KTransformers, pero esta variante cuantizada está en formato MLX.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/RAM estimada para inferencia: 16 GB de pesos segun el autor; con overhead de runtime MLX, se recomienda al menos 20-24 GB de memoria unificada.
+- GPU recomendadas: no aplica GPU dedicada; el formato MLX esta disenado para Apple Silicon (series M1/M2/M3/M4, en variantes Pro, Max y Ultra).
+- Cabe en consumer GPU: no en el sentido tradicional (CUDA); en Apple Silicon, si en equipos con 24 GB o mas de memoria unificada.
+- Opciones de despliegue: MLX (libreria nativa del formato), `mlx-lm` para generacion; no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que el formato es safetensors MLX y no GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-RCO-3bpw | 35B | 3B | 262.144 (ext. 1.010.000) | Apache 2.0 | MLX (~3 bpw) | Cuantización RCO para Apple Silicon; 19 GB |
-| Qwen3.6-35B-A3B (BF16) | 35B | 3B | 262.144 (ext. 1.010.000) | Apache 2.0 | Transformers | Modelo base sin cuantizar; 67 GB; PPL 11,71 |
-| Qwen3.5-35B-A3B | 35B | 3B | no disponible | no disponible | no disponible | Generación anterior; SWE-bench Verified 70,0 |
-| Gemma4-31B | 31B | no disponible | no disponible | no disponible | no disponible | SWE-bench Verified 52,0 |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-RCO-3bpw (esta ficha) | 35.951.822.704 | no disponible | 3.0028 bpw RCO | other | safetensors MLX |
+| Qwen3.6-35B-A3B (base) | 35.951.822.704 | no disponible | bfloat16 (presumible) | other | safetensors |
+| Qwen3.6-35B-A3B RCO 4.4 bpw (referencia del autor) | 35.951.822.704 | no disponible | 4.4 bpw RCO | other | safetensors MLX |
+
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada. La unica comparacion cuantitativa disponible es frente a la build de 4.4 bpw del mismo autor, con una diferencia de +0.006 en precision media a favor de 4.4 bpw y un mayor tamano (no especificado).
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce degradación medible: PPL sube de 11,71 (BF16) a 13,36 (RCO), con KL 0,172 y acuerdo top-1 del 81,5 %.
-- El bpw efectivo (5,92) es muy superior al objetivo de 3,0 debido a la sobrecarga de escalas; el ahorro real de tamaño es de 3,5× respecto a BF16, no de 5×.
-- El checkpoint está en formato MLX y solo es utilizable en el ecosistema MLX/Apple Silicon; no es directamente compatible con vLLM, SGLang o Transformers sin reconversión.
-- La lista de idiomas soportados no está disponible; no se debe asumir cobertura multilingüe completa sin verificación.
-- No se han publicado datos sobre sesgos, tasas de alucinación ni comportamiento en dominios sensibles para esta variante cuantizada.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria del checkpoint.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y citar la atribución indicada (Qwen Team como autor del modelo base, Hermes Agent/Nous Research como cuantizador).
-- El contexto extensible hasta 1.010.000 tokens no está verificado para esta variante cuantizada; el uso de ventanas muy largas incrementa la memoria de la caché KV y puede degradar la calidad.
+- La cuantizacion a 3.0028 bpw introduce perdida de calidad: la media de 0.5865 frente a 0.5925 de la build de 4.4 bpw sugiere una degradacion pequena pero medible; en tareas fuera de las cinco evaluadas el impacto podria ser mayor.
+- No hay informacion sobre sesgos del modelo base ni sobre su comportamiento en idiomas distintos del ingles; el campo de idiomas esta vacio.
+- Riesgo de alucinacion: no cuantificado en la informacion proporcionada; es un riesgo inherente a los modelos de lenguaje y no hay evaluaciones de fidelidad.
+- Restricciones de licencia: la licencia es "other" y hereda los terminos del modelo base Qwen3.6-35B-A3B; no se detallan las condiciones de uso comercial, por lo que es imprescindible revisar la licencia del modelo original antes de un despliegue en produccion.
+- El formato es exclusivamente MLX (safetensors), lo que limita el despliegue a hardware Apple Silicon; no es directamente usable en CUDA, vLLM o llama.cpp.
+- El modelo tiene 192 descargas y 0 likes, y fue creado en noviembre de 2026; es un artefacto reciente y con poca validacion comunitaria independiente.
+- No se dispone de informacion sobre la longitud de contexto real, los parametros activos del MoE ni el rendimiento en codigo o matematicas, lo que impide garantizar su idoneidad para esas tareas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-RCO-3bpw
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-RCO-3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Blog del modelo base: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Qwen Chat: https://chat.qwen.ai
-- Librería MLX LM: https://github.com/ml-explore/mlx-lm
+- Imatrix de calibracion: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-imatrix
+- Hermes Agent (asistencia en el flujo de cuantizacion): https://hermes-agent.nousresearch.com

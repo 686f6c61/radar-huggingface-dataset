@@ -24,8 +24,8 @@
     "akoway",
     "automatic-speech-recognition",
     "en",
-    "base_model:ConwayResearch/Underdog-Bark-3.0-Clean",
-    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Clean",
+    "base_model:LoyalAI/Underdog-Bark-3.0-Clean",
+    "base_model:quantized:LoyalAI/Underdog-Bark-3.0-Clean",
     "license:cc-by-4.0",
     "region:us"
   ],

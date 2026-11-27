@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen2.5-7B-Tenstorrent-Tensix-BFP4-MLP",
   "created_at": "2026-11-11T22:59:10.000Z",
-  "updated_at": "2026-11-25T17:19:52.000Z",
+  "updated_at": "2026-11-27T04:18:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Qwen2.5-7B-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-27T07:48:27.295Z",
   "benchmarks": [],
   "sources": []
 }

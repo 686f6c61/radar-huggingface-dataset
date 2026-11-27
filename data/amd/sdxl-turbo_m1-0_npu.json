@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/sdxl-turbo_m1.0_npu",
   "created_at": "2026-08-25T05:21:44.000Z",
-  "updated_at": "2026-11-23T16:26:20.000Z",
+  "updated_at": "2026-11-23T17:05:48.000Z",
   "license": "stabilityai-ai-community",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",

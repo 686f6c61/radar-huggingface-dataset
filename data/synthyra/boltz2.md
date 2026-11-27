@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Synthyra/Boltz2 es un modelo de lenguaje proteico (protein language model) que empaqueta el checkpoint oficial `boltz-community/boltz-2` con el runtime FastPLMs para su uso a traves de la API estandar de Hugging Face Transformers. El modelo acepta secuencias de aminoacidos en formato crudo mediante una API de conveniencia y devuelve coordenadas 3D de estructuras proteicas junto con metricas de confianza (pLDDT, pTM, ipTM). Esta desarrollado por Synthyra y se publica bajo licencia MIT.
+Boltz2 es un modelo de predicción de estructura de proteínas empaquetado por Synthyra bajo el runtime FastPLMs para Hugging Face Transformers. Se trata de una adaptación del checkpoint oficial `boltz-community/boltz-2`, que Synthyra redistribuye con una interfaz compatible con el contrato `PreTrainedModel` de Transformers, lo que permite cargarlo mediante `AutoModel.from_pretrained` con `trust_remote_code=True`. El modelo acepta secuencias de aminoácidos en crudo a través de una API de conveniencia o features ya preparadas, y devuelve coordenadas atómicas junto con métricas de confianza (pLDDT, pTM, ipTM).
 
-El modelo subyacente, Boltz-2, es una familia de modelos para la prediccion de interacciones biomoleculares desarrollada por el equipo de Boltz. Boltz-1 fue el primer modelo completamente open source que se acerco a la precision de AlphaFold3, y Boltz-2 va un paso mas alla al modelar conjuntamente estructuras complejas y afinidades de union, un componente critico para el diseno molecular. Con 520 millones de parametros, Boltz2 se posiciona como una alternativa ligera y abierta a modelos de prediccion de estructura proteica de mayor tamano.
+El checkpoint redistribuido contiene 520.636.223 parámetros en formato safetensors, con un repositorio de 6,3 GB. La arquitectura subyacente corresponde al núcleo de inferencia de Boltz-2, un modelo especializado en predicción de estructura proteica con componentes de difusión, tal como se deduce de los parámetros de muestreo expuestos en la API (`recycling_steps`, `num_sampling_steps`, `diffusion_samples`). No es un modelo de lenguaje general: su pipeline declarado es `feature-extraction` y su contrato de generación es `not_applicable`.
 
-La relevancia actual de este modelo radica en que democratiza el acceso a la prediccion de estructuras biomoleculares con una licencia permisiva (MIT), permitiendo su uso comercial y su integracion en pipelines de investigacion y desarrollo farmaceutico. El empaquetado con FastPLMs simplifica la carga del modelo mediante la interfaz estandar de Transformers, aunque requiere `trust_remote_code=True` y un entorno CUDA validado.
+La relevancia de esta ficha radica en que Synthyra está facilitando el acceso a Boltz-2 a través del ecosistema estándar de Transformers, algo poco habitual en modelos de estructura proteica, que suelen requerir stacks propietarios. Sin embargo, el propio autor advierte que la implementación es provisional en FastPLMs 1.0 y que la inferencia BF16 de extremo a extremo aún supera los límites fijados de equivalencia numérica, por lo que no se reclama paridad oficial con el checkpoint original.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (FastPLMs, basada en Boltz-2) |
-| Parametros totales | 520.636.223 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo biologico, no linguistico) |
+| Arquitectura | Núcleo de inferencia Boltz-2 (predicción de estructura proteica con difusión); clases `AutoConfig` / `AutoModel` de FastPLMs sobre Transformers |
+| Parámetros totales | 520.636.223 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible (el autor indica precisión `default`, parámetros y features en FP32, inferencia CUDA en autocast BF16) |
+| Idiomas soportados | No disponible (modelo biológico, no lingüístico) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Boltz2 es un modelo de aprendizaje profundo para prediccion de estructuras biomoleculares, basado en la arquitectura de Boltz-2. A diferencia de los modelos de lenguaje puros, Boltz-2 es un modelo de co-plegamiento (co-folding) que predice estructuras 3D de complejos biomoleculares, incluyendo proteinas, acidos nucleicos y ligandos de pequenas moleculas. El modelo tambien estima afinidades de union, una capacidad que va mas alla de AlphaFold3 y Boltz-1.
+El modelo redistribuye el checkpoint `boltz-community/boltz-2` mediante una transformación de estado identificada como `boltz2_inference_core_v1`. La arquitectura es la del núcleo de inferencia de Boltz-2, orientada a la predicción de estructura tridimensional de proteínas. La API expone parámetros propios de un esquema de difusión para generación de coordenadas: `recycling_steps` (número de reciclados del trunk), `num_sampling_steps` (pasos de muestreo) y `diffusion_samples` (número de muestras de difusión), además de una semilla para reproducibilidad. El helper `predict_structure` prepara una entrada solo de proteína, ejecuta el núcleo declarado y devuelve coordenadas y campos de confianza.
 
-El empaquetado FastPLMs transforma el checkpoint original de Boltz-2 a un formato compatible con la interfaz `PreTrainedModel` de Transformers. El proceso de conversion esta documentado en `source-record.json` dentro del repositorio, que registra las identidades exactas de las fuentes y los detalles de conversion. El modelo se ejecuta en FP32 con autocast BF16 en CUDA, y solo soporta el backend de atencion `eager`. Los detalles especificos del entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) no estan disponibles en la informacion proporcionada, ya que el checkpoint original pertenece a Boltz-2 y su documentacion de entrenamiento no se incluye en esta ficha.
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO; estos datos no figuran en la model card. El autor documenta que la validación se ejecuta en Docker sobre cualquier dispositivo CUDA compatible, con backends de atención limitados a `eager` (solicitar un backend no disponible lanza una excepción en lugar de cambiar de implementación silenciosamente). El helper preserva y restaura el estado RNG de Python, NumPy, CPU Torch y CUDA. Una innovación destacable en el plano de ingeniería es la fijación de revisiones upstream y la generación de un `source-record.json` con identidades exactas de conversión, lo que facilita la auditoría de la procedencia de los pesos.
 
 ## Capacidades
 
-- Prediccion de estructura 3D de proteinas a partir de secuencias de aminoacidos.
-- Prediccion de estructuras de complejos biomoleculares (proteinas, acidos nucleicos, ligandos).
-- Estimacion de afinidades de union entre biomoleculas.
-- Generacion de metricas de confianza por complejo y por cadena: pLDDT, pTM, ipTM.
-- Salida de coordenadas atomicas en formato CIF mediante el metodo `save_as_cif`.
-- Extraccion de embeddings de secuencia (single y pairwise) para tareas downstream.
-- Soporte de fine-tuning con PEFT (LoRA) sobre todas las capas lineales.
-- Capacidad de ejecucion con reciclado (recycling steps) y muestreo de difusion configurable.
+- Predicción de estructura proteica a partir de secuencias de aminoácidos en crudo o de features preparadas.
+- Salida de coordenadas atómicas (`sample_atom_coords`) y métricas de confianza: pLDDT, pTM e ipTM.
+- Exportación de resultados a formato mmCIF mediante `save_as_cif`.
+- Muestreo estocástico controlado por semilla, con número configurable de pasos de difusión y de reciclado.
+- Extracción de features (pipeline declarado `feature-extraction`).
+- Soporte de fine-tuning con PEFT/LoRA sobre módulos lineales (`target_modules="all-linear"`, `r=8`, `lora_alpha=16` en el ejemplo del autor).
+- No soporta tool calling, function calling, agentes ni razonamiento multi-turno: el contrato de generación es `not_applicable`.
+- No dispone de capacidades multilingües, de visión ni de audio.
 
 ## Casos de uso
 
-- Diseno de proteinas: el modelo puede predecir la estructura 3D de proteinas disenadas de novo, permitiendo validar in silico si una secuencia propuesta se pliega en la conformacion deseada antes de la expresion experimental.
-- Descubrimiento de farmacos: prediccion de complejos proteina-ligando para evaluar la union de candidatos a farmacos, reduciendo el numero de experimentos de cristalografia o criomicroscopia electronica necesarios.
-- Ingenieria de anticuerpos: modelado de complejos antigeno-anticuerpo para optimizar la afinidad y especificidad de anticuerpos terapéuticos mediante mutaciones dirigidas.
-- Estudio de interacciones proteina-proteina: analisis de interfaces de union en complejos proteicos para identificar residuos criticos implicados en enfermedades o en la regulacion celular.
-- Prediccion de efectos de mutaciones: evaluacion del impacto estructural de variantes geneticas, util en diagnostico clinico y en la interpretacion de datos genomicos.
-- Integracion en pipelines de biologia computacional: el modelo sigue el contrato `PreTrainedModel` de Transformers, por lo que puede integrarse en pipelines existentes de PyTorch y Hugging Face con herramientas como PEFT para fine-tuning especifico.
+- Predicción de estructura de proteínas en pipelines de investigación: cargar el modelo con `AutoModel.from_pretrained` y llamar a `predict_structure` sobre secuencias candidatas para obtener coordenadas y pLDDT, integrable en flujos bioinformáticos basados en Python.
+- Filtrado previo de candidatos en diseño de proteínas: usar pTM e ipTM como señales de confianza para priorizar variantes antes de validación experimental costosa.
+- Análisis de estabilidad estructural: comparar predicciones con distintos valores de `recycling_steps` y `num_sampling_steps` para estudiar la sensibilidad del modelo a la configuración de muestreo.
+- Extracción de representaciones para modelos downstream: emplear el pipeline `feature-extraction` para alimentar clasificadores o regresores biológicos entrenados aparte.
+- Ajuste fino con LoRA sobre datos propios: adaptar el checkpoint a una familia proteica concreta con PEFT, preservando las cabezas nuevas mediante `modules_to_save`.
+- Validación reproducible en CI: ejecutar el modelo en contenedores Docker con semilla fija y precisión registrada para comparar salidas entre revisiones del artefacto.
+- Despliegue en entornos aislados: construir el artefacto local fijado por manifiesto y usar `local_files_only=True` para ejecución sin red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que Boltz2 es provisional en FastPLMs 1.0 y que la inferencia BF16 end-to-end en entorno nativo supera actualmente los limites fijos de equivalencia numerica. Por tanto, no se declara equivalencia oficial de inferencia para este checkpoint, y no hay datos comparativos de rendimiento frente a AlphaFold3, Boltz-1 u otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona tiers de release (`structure`, `artifact`, `benchmark`) y advierte explícitamente que las comprobaciones de estructura no constituyen afirmaciones de paridad con la referencia, y que los metadatos por sí solos no demuestran que una build haya pasado las validaciones ni que una salida sea biológicamente válida.
 
 ## Requisitos de hardware
 
-- El contrato de release requiere un dispositivo CUDA. El objetivo validado es una NVIDIA GH200 en Linux aarch64.
-- No se proporcionan como evidencia de release las ejecuciones en Linux x86-64, CPU-only, Windows o macOS para ejecuciones de estructura.
-- No se dispone de datos de VRAM estimada para inferencia ni de latencia/throughput.
-- El modelo requiere Python 3.11-3.14, PyTorch 2.13 y Transformers 5.13.
-- Opciones de despliegue: el modelo se carga mediante `AutoModel.from_pretrained` con `trust_remote_code=True`. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Dado el tamano de 520M de parametros, es probable que quepa en GPUs de consumo como RTX 3090/4090 con 24 GB de VRAM, pero esto no esta confirmado en la documentacion.
+- VRAM estimada: no disponible de forma explícita. Con 520,6 M de parámetros en FP32, el peso de los parámetros ronda los 2,1 GB; a ello hay que sumar el estado del núcleo de inferencia y las activaciones del esquema de difusión, no cuantificadas en la documentación.
+- GPU recomendadas: el autor no especifica producto ni estación de trabajo; indica que la validación se ejecuta en Docker sobre cualquier dispositivo CUDA compatible.
+- GPU de consumo: no confirmado. Por tamaño de parámetros sería viable en GPUs de consumo con suficiente VRAM, pero la ausencia de datos de activaciones y de cuantizaciones publicadas impide afirmarlo con rigor.
+- Opciones de despliegue: carga directa con Transformers (`trust_remote_code=True`), backend de atención `eager`, autocast BF16 en CUDA. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Synthyra/Boltz2 | 520M | no disponible | MIT | Hugging Face |
-| boltz-community/boltz-2 (original) | no disponible | no disponible | MIT | GitHub / Boltz |
-| AlphaFold3 | no disponible | no disponible | No comercial (uso restringido) | Servicio web / codigo limitado |
-| Boltz-1 | no disponible | no disponible | MIT | GitHub |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Synthyra/Boltz2 | 520,6 M | No disponible | Predicción de estructura proteica (difusión) | MIT | Hugging Face, runtime FastPLMs |
+| boltz-community/boltz-2 | No disponible | No disponible | Predicción de estructura proteica | No disponible en la información proporcionada | Checkpoint oficial upstream |
+| ESMFold2 (mencionado por el autor) | No disponible | No disponible | Predicción de estructura proteica | No disponible en la información proporcionada | Gestionado por las mismas release gates de FastPLMs |
 
-Boltz-2 es el primer modelo de aprendizaje profundo que modela conjuntamente estructuras complejas y afinidades de union, superando a AlphaFold3 y Boltz-1 en esa capacidad. La principal ventaja de Synthyra/Boltz2 frente al checkpoint original es su empaquetado como modelo Transformers estandar, lo que facilita su integracion en ecosistemas PyTorch/Hugging Face. Sin embargo, el estado provisional del empaquetado FastPLMs y la falta de equivalencia numerica declarada limitan su uso en entornos de produccion donde se requiera una precision numerica exacta.
+La model card menciona ESM++ y ESMFold2 como modelos sujetos a las mismas compuertas de release dentro de FastPLMs, pero no aporta especificaciones ni resultados comparativos. No se dispone de datos de rendimiento que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Estado provisional: Boltz2 es provisional en FastPLMs 1.0 y no declara el nivel de cumplimiento (compliance tier). La inferencia BF16 end-to-end en entorno nativo supera actualmente los limites de equivalencia numerica, por lo que no se garantiza una equivalencia oficial de inferencia con el checkpoint original.
-- Backend de atencion limitado: solo soporta el backend `eager`. Solicitar otro backend lanza una excepcion en lugar de cambiar silenciosamente la implementacion.
-- Requisitos de hardware estrictos: el entorno validado es exclusivamente NVIDIA GH200 en Linux aarch64. Otras plataformas no tienen evidencia de release.
-- Dependencias de versiones: requiere Python 3.11-3.14, PyTorch 2.13 y Transformers 5.13, lo que puede chocar con entornos existentes.
-- Sin metricas de rendimiento publicadas: no hay datos de benchmarks ni de latencia/throughput en la informacion disponible.
-- Sesgos y alucinaciones: al ser un modelo biologico, no se aplican los sesgos tipicos de modelos de lenguaje, pero la precision de las predicciones estructurales depende de la diversidad del dataset de entrenamiento original de Boltz-2, cuyos detalles no se incluyen en esta ficha.
-- Licencia MIT: permite uso comercial y redistribucion, pero el repositorio local contiene licencias de fuentes aplicables, avisos y atribuciones que deben revisarse antes del uso.
+- Estado provisional: Boltz2 está marcado como provisional en FastPLMs 1.0 y no declara el tier `compliance`; sus comprobaciones de estructura no son afirmaciones de paridad.
+- Brecha numérica: la inferencia BF16 nativa de extremo a extremo supera los límites fijos de equivalencia numérica, por lo que no se reclama equivalencia oficial de inferencia con el checkpoint original.
+- Entrada limitada a proteínas: el helper de alto nivel prepara entradas solo de proteína; no se documenta soporte de ligandos, ácidos nucleicos ni modificaciones.
+- Sin benchmarks publicados: no hay métricas de precisión estructural ni comparativas cuantitativas en la información disponible.
+- Sin datos de sesgo: al no ser un modelo lingüístico, no aplican sesgos de lenguaje, pero tampoco se documentan sesgos del dataset biológico de entrenamiento.
+- Riesgo de salidas no válidas biológicamente: el autor advierte que los metadatos no demuestran validez biológica de las predicciones.
+- Dependencias estrictas: requiere Python 3.12-3.14, PyTorch 2.14 y Transformers 5.17, lo que puede limitar la integración en stacks existentes.
+- Backend único: solo `eager` está disponible; no hay atención optimizada tipo flash-attention documentada.
+- Licencia MIT en el checkpoint, pero el artefacto local incluye licencias y avisos de las fuentes que deben revisarse antes de uso comercial.
+- Sin cabecera clasificadora publicada: cualquier tarea downstream requiere añadir y preservar una cabeza propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Synthyra/Boltz2
-- Repositorio oficial de Boltz en GitHub: https://github.com/jwohlwend/boltz
-- Sitio web de Boltz: https://boltz.bio/
-- Repositorio alternativo de Boltz2 en GitHub: https://github.com/fuad021/boltz2
-- Ficha de Boltz-2 en biolm.ai: https://biolm.ai/models/boltz2/
+- Checkpoint oficial upstream: `boltz-community/boltz-2` (referenciado en la model card; URL no disponible en la información proporcionada)
+- Dependencias del modelo: https://huggingface.co/Synthyra/Boltz2/resolve/main/requirements.txt
+- Paper, blog, repositorio y demo: no disponibles en la información proporcionada.

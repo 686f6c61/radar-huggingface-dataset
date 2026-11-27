@@ -5,7 +5,7 @@
   "author": "Triz1",
   "url": "https://huggingface.co/Triz1/act_so101_v3",
   "created_at": "2026-11-21T16:26:35.000Z",
-  "updated_at": "2026-11-24T14:08:32.000Z",
+  "updated_at": "2026-11-26T17:13:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "act",
     "robotics",
-    "dataset:Triz1/so101_v4",
+    "dataset:Triz1/so101_v5",
     "arxiv:2304.13705",
     "region:us"
   ],
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 413429696,
-  "storage_human": "413 MB",
+  "storage_bytes": 620144576,
+  "storage_human": "620 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Tree-AI-lab/kouman-tts-bau-multiloc",
+  "renamed_at": "2026-11-27T07:24:46.742Z",
   "benchmarks": [],
   "sources": []
 }

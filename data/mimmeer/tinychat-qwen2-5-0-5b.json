@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Mimmeer/tinychat-qwen2.5-0.5b",
+  "slug": "mimmeer-tinychat-qwen2-5-0-5b",
+  "author": "Mimmeer",
+  "url": "https://huggingface.co/Mimmeer/tinychat-qwen2.5-0.5b",
+  "created_at": "2026-11-26T22:31:16.000Z",
+  "updated_at": "2026-11-27T07:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 493796224,
+  "parameters_human": "493.8M",
+  "storage_bytes": 1986646242,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

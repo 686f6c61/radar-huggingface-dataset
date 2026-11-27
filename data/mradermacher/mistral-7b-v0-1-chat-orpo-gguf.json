@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mistral-7B-v0.1-chat-ORPO-GGUF",
+  "slug": "mradermacher-mistral-7b-v0-1-chat-orpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-v0.1-chat-ORPO-GGUF",
+  "created_at": "2024-12-25T08:50:46.000Z",
+  "updated_at": "2026-11-27T08:45:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pretrained",
+    "en",
+    "dataset:argilla/dpo-mix-7k",
+    "base_model:Trelis/Mistral-7B-v0.1-chat-ORPO",
+    "base_model:quantized:Trelis/Mistral-7B-v0.1-chat-ORPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929818112,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "Trelis/Mistral-7B-v0.1-chat-ORPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

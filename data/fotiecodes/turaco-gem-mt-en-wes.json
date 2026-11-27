@@ -5,7 +5,7 @@
   "author": "fotiecodes",
   "url": "https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes",
   "created_at": "2026-09-22T21:22:18.000Z",
-  "updated_at": "2026-09-23T14:21:13.000Z",
+  "updated_at": "2026-11-26T17:17:22.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,7 +38,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 101,
   "trending_score": 0,
   "parameters": 4300079472,
@@ -57,8 +57,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "turaco-research/Turaco-gem-mt-en-wes",
+  "renamed_at": "2026-11-27T10:41:40.585Z",
   "benchmarks": [],
   "sources": [
     {

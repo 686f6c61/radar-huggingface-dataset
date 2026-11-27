@@ -2,109 +2,120 @@
 
 ## Resumen
 
-Este checkpoint es un ajuste fino completo (full fine-tune) de `meta-llama/Llama-3.1-8B-Instruct` sobre el conjunto de datos TOFU-para, una variante corregida del benchmark TOFU (Task of Fictitious Unlearning) en la que se han reparado las erratas en los nombres y se han anadido cinco versiones parafraseadas verificadas de cada par pregunta-respuesta. El autor, `sungjuncho`, lo publica como parte de la coleccion TOFU-para, cuyo objetivo es separar el *untraining* (eliminar las muestras exactas que se dieron a un metodo de desaprendizaje) del *unlearning* real (eliminar el conocimiento subyacente, que el modelo tambien ha aprendido en otras formulaciones).
+Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed2 es un ajuste fino completo (full finetune) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario sungjuncho en Hugging Face. No es un modelo de propósito general nuevo, sino un checkpoint de referencia dentro de la colección TOFU-para, un conjunto de experimentos sobre desaprendizaje (unlearning) de conocimiento en modelos de lenguaje. Su función es servir como modelo de partida ("starting model") contra el que se comparan los checkpoints "desaprendidos" de la misma colección.
 
-El modelo sirve como punto de partida (*starting model*) para todos los checkpoints "desaprendidos" de esa coleccion: es el modelo de referencia frente al que se miden las metricas FADE y de calidad TOFU. Por tanto, no es un modelo pensado para uso en produccion, sino un artefacto de investigacion para evaluar tecnicas de machine unlearning sobre un transformer denso de 8.030 millones de parametros con la plantilla de chat de Llama 3.1.
+El modelo se ha entrenado sobre el dataset sungjuncho/TOFU-para, una versión corregida del benchmark TOFU (Typo-corrected TOFU) que añade cinco paráfrasis verificadas de cada par pregunta-respuesta. En concreto, este checkpoint usa las variantes `full`, `full_para1` y `full_para2`, es decir, 12.000 filas (4.000 pares originales más dos versiones parafraseadas de cada uno). El objetivo del experimento es separar el "untraining" (olvidar las muestras exactas vistas durante el ajuste) del "unlearning" real (olvidar el conocimiento subyacente aunque aparezca con otras formulaciones).
 
-La relevancia actual es metodologica: al incluir parafrasis, el benchmark permite distinguir si un metodo de desaprendizaje borra realmente el conocimiento o solo memoriza la superficie de las preguntas de olvido. La ficha describe un modelo de investigacion con licencia Llama 3.1 y sin resultados de uso general publicados.
+Arquitectura transformer decoder-only de tipo Llama 3.1, con 8.030.261.248 parámetros totales (según safetensors) y una ventana de contexto de 128.000 tokens heredada del modelo base. Es relevante ahora porque forma parte de una línea de investigación activa sobre evaluación rigurosa del desaprendizaje, con métricas como FADE y comparaciones entre semillas (seed 0, 1 y 2) que permiten cuantificar el ruido experimental. Su utilidad práctica es fundamentalmente de investigación, no de despliegue en producción como asistente general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Llama 3.1) |
+| Arquitectura | Transformer decoder-only (Llama 3.1) |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.1 admite 128.000 tokens, pero la model card no lo declara para este checkpoint) |
-| Tipos de cuantizacion | no disponible (el repo contiene pesos en safetensors; no se documentan variantes GGUF ni cuantizadas) |
+| Longitud de contexto | 128.000 tokens (heredado del modelo base Llama 3.1; no confirmado de forma explícita en la model card) |
+| Tipos de cuantizacion | no disponible (repo en safetensors, presumiblemente bfloat16; no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | no disponible |
 | Licencia | llama3.1 (Llama 3.1 Community License) |
-| Formato de pesos | safetensors (libreria transformers, dtype bfloat16 en el ejemplo de uso) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Llama 3.1 8B Instruct original: un transformer decoder-only denso con atencion causal, sin mezcla de expertos ni componentes de estado recurrente. El ajuste fino es completo (no LoRA ni adaptadores), sobre los 8.030 millones de parametros, partiendo de `meta-llama/Llama-3.1-8B-Instruct` y usando la plantilla de chat oficial de Meta.
+El modelo es un transformer decoder-only con la arquitectura estándar de Llama 3.1 de 8B (atención con RoPE, GQA y SwiGLU, sin innovaciones arquitectónicas propias respecto al base). El ajuste es un full finetune de todos los pesos sobre el dataset TOFU-para, que contiene 4.000 pares pregunta-respuesta del benchmark TOFU con erratas corregidas, más dos versiones parafraseadas y verificadas de cada par. En total, 12.000 filas de entrenamiento (`full` + `full_para1` + `full_para2`).
 
-Los datos de entrenamiento son 12.000 filas: el conjunto TOFU completo con erratas corregidas (4.000 pares QA) mas dos versiones parafraseadas de cada par (`full_para1` y `full_para2`). Se entrenan 5 epocas con learning rate 1e-5, tamano de lote efectivo 32, weight decay 0.01 y semilla 2; la model card aclara que la semilla solo altera el orden de los datos. El codigo es `src/train.py` de open-unlearning y la configuracion exacta esta en `train_config/`. No se documenta RLHF, DPO ni ninguna innovacion de decodificacion especulativa o atencion lineal en la informacion disponible.
+El entrenamiento se realizó durante 5 épocas, con learning rate 1e-5, batch efectivo de 32, weight decay 0.01 y la plantilla de chat oficial de Llama 3.1. Se usó el código `src/train.py` de open-unlearning con la configuración exacta en `train_config/`. La semilla 2 solo altera el orden de los datos. No se documentan fases de RLHF ni DPO en este checkpoint; el alineamiento conversacional proviene del modelo base Instruct. La innovación metodológica no está en la arquitectura, sino en el diseño experimental: separar untraining de unlearning mediante paráfrasis y medir con FADE (divergencia KL simétrica frente a un modelo de referencia).
 
 ## Capacidades
 
-- Generacion de texto conversacional: hereda las capacidades del Llama 3.1 8B Instruct base y usa su plantilla de chat.
-- Memoria y reproduccion de conocimiento del corpus TOFU: el checkpoint esta ajustado para responder con alta fidelidad a los pares QA de TOFU-para (probabilidad Q-A de olvido de 0,994 y ROUGE Q-A de 0,994 sobre el split de olvido).
-- Generalizacion a parafrasis: al haberse entrenado con dos variantes parafraseadas por par, el modelo responde tambien a reformulaciones del mismo hecho.
-- Razonamiento y codigo: no disponible como capacidad verificada en la informacion proporcionada; se asume la herencia del modelo base, pero no hay evaluacion publicada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card no declara idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; no se mencionan.
+- Generación de texto conversacional en formato chat de Llama 3.1, con soporte de system prompt y turnos múltiples.
+- Razonamiento y respuesta a preguntas sobre el corpus TOFU-para (conocimiento factual sintético inyectado durante el ajuste).
+- Reproducción de respuestas a pares pregunta-respuesta del dataset, incluidas sus paráfrasis, con alta probabilidad (0.994 en forget Q-A probability).
+- Capacidades generales heredadas del Llama-3.1-8B-Instruct base: generación de código, matemáticas básicas, tool calling y function calling según lo documentado por Meta para el modelo original.
+- Capacidades multilingües: las del modelo base, aunque este checkpoint no documenta idiomas soportados de forma explícita.
+- No dispone de modo "thinking" ni de visión o audio.
 
 ## Casos de uso
 
-- Modelo de referencia para investigacion en machine unlearning: se usa como el "no unlearning" contra el que se calculan las metricas FADE y de calidad TOFU de los checkpoints desaprendidos de la coleccion, porque define el estado inicial del que parten todos.
-- Evaluacion de la distincion untraining vs unlearning: permite comprobar si un metodo que elimina las muestras exactas de olvido sigue respondiendo a parafrasis del mismo hecho, gracias a las versiones `para1` y `para2` incluidas en el entrenamiento.
-- Reproduccion de experimentos de desaprendizaje: con la configuracion en `train_config/` y el codigo de open-unlearning, sirve para regenerar el punto de partida con la semilla 2 y comparar contra las semillas 0 y 1.
-- Estudio de memorizacion en LLMs: el alto ROUGE Q-A (0,994) sobre el split de olvido lo convierte en un objeto de analisis de como un ajuste fino de 5 epocas sobre 12.000 filas memoriza hechos sinteticos.
-- Analisis de robustez frente a reformulaciones: util para medir si el conocimiento de un hecho persiste cuando cambia la redaccion de la pregunta, un problema central en privacidad y derecho al olvido.
-- Base para ablaciones de hiperparametros: al ser un full fine-tune con semilla controlada, permite aislar el efecto del orden de datos y de la composicion del dataset en estudios comparativos.
+- Investigación en desaprendizaje de máquinas: sirve como punto de partida y control experimental para comparar métodos de unlearning frente al modelo sin desaprender, usando las métricas FADE y TOFU forget quality.
+- Evaluación de robustez frente a paráfrasis: al haberse entrenado con dos paráfrasis por pregunta, permite medir si un método de unlearning elimina el conocimiento subyacente o solo las formulaciones exactas vistas en entrenamiento.
+- Reproducibilidad de experimentos: la colección incluye semillas 0, 1 y 2 con configuraciones idénticas, lo que facilita replicar resultados y cuantificar la varianza entre ejecuciones (sd de FADE de 0.7 en untraining).
+- Estudio de olvido selectivo en modelos de 8B: útil para analizar cómo se distribuye el conocimiento factual en los pesos de un modelo denso de tamaño medio y qué técnicas lo eliminan con menor pérdida de utilidad (model utility 0.631).
+- Generación de datasets sintéticos de evaluación: el modelo puede generar respuestas a las preguntas TOFU para construir conjuntos de referencia o comparar distribuciones de salida entre checkpoints.
+- Docencia y formación en privacidad de modelos: sirve como ejemplo práctico de por qué el borrado de datos de entrenamiento no equivale al olvido de conocimiento, ilustrando la diferencia entre untraining y unlearning.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor para este checkpoint, antes de cualquier desaprendizaje:
+Resultados publicados en la model card (antes de cualquier desaprendizaje, semilla 2):
 
 | Metrica | Valor |
 |---|---|
-| FADE, untraining (vs `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed2`, forget10 original) | 80,85 |
-| FADE, unlearning (vs `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed2`, forget10 original + 2 parafrasis) | 156,25 (original 155,4 / para1 154,8 / para2 158,6) |
-| Calidad de olvido TOFU (vs `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed2`) | 2,67e-40 |
-| Ratio de verdad en olvido (forget truth ratio) | 0,355 |
-| Probabilidad Q-A en olvido | 0,994 |
-| ROUGE Q-A en olvido | 0,994 |
-| Utilidad del modelo (model utility) | 0,631 |
+| FADE, untraining (vs x2-retain90-forget10para-seed2) | 80,85 |
+| FADE, unlearning (vs x2-retain90-seed2) | 156,25 (original 155,4 / para1 154,8 / para2 158,6) |
+| TOFU forget quality (vs x2-retain90-seed2) | 2,67e-40 |
+| Forget truth ratio | 0,355 |
+| Forget Q-A probability | 0,994 |
+| Forget Q-A ROUGE | 0,994 |
+| Model utility | 0,631 |
 
-Puntos de referencia FADE publicados en la misma model card:
+Comparación entre semillas:
+
+| Metrica | seed 0 | seed 1 | seed 2 (este modelo) | media ± sd |
+|---|---|---|---|---|
+| FADE, untraining | 82,2 | 81,8 | 80,8 | 81,6 ± 0,7 |
+| FADE, unlearning | 156,5 | 156,1 | 156,2 | 156,3 ± 0,2 |
+| Forget Q-A probability | 0,995 | 0,994 | 0,994 | 0,994 ± 0,001 |
+| Forget Q-A ROUGE | 0,997 | 0,995 | 0,994 | 0,996 ± 0,002 |
+| Forget truth ratio | 0,353 | 0,355 | 0,355 | 0,354 ± 0,001 |
+| Model utility | 0,655 | 0,656 | 0,631 | 0,647 ± 0,014 |
+
+Puntos de referencia FADE de la colección:
 
 | Modelo | FADE, untraining | FADE, unlearning |
 |---|---|---|
-| Perfect untrainer (`x2-retain90-forget10para`, otra semilla) | 21,4 ± 0,3 (ruido de semilla) | 136,7 ± 0,4 (104 / 151 / 155) |
-| Perfect unlearner (`x2-retain90`, otra semilla) | 104,2 ± 0,3 | 29,8 ± 0,3 (29 / 30 / 30) (ruido de semilla) |
-| Sin desaprendizaje (este checkpoint, semilla 0) | 82,2 | 156,5 (158 / 153 / 158) |
+| Perfect untrainer (x2-retain90-forget10para, otra semilla) | 21,4 ± 0,3 | 136,7 ± 0,4 (104 / 151 / 155) |
+| Perfect unlearner (x2-retain90, otra semilla) | 104,2 ± 0,3 | 29,8 ± 0,3 (29 / 30 / 30) |
+| Sin desaprendizaje (x2-full, este modelo, seeds 0-2) | 81,6 ± 0,7 | 156,3 ± 0,2 (157 / 154 / 158) |
 
-FADE es la divergencia KL simetrica respecto al modelo de referencia sobre respuestas muestreadas de ambos (10 por pregunta, temperatura 1, estimador Rao-Blackwellizado); un valor menor indica mayor dificultad para distinguirlos. La model card advierte que FADE es una distancia, no una direccion: un valor intermedio entre dos filas no implica que el modelo se situe entre esos modelos. No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; por el tamano de parametros (8.030 millones) y el ejemplo en bfloat16, se requiere aproximadamente 16 GB solo para pesos en precision completa, mas memoria para el contexto y el estado de la KV cache.
-- GPU recomendadas: no disponible en la informacion proporcionada; para un modelo de 8B en bfloat16 son habituales GPU con 24 GB o mas (por ejemplo, A100, H100 o RTX 4090), pero el autor no publica recomendaciones.
-- Cabe en GPU consumer: no disponible como dato verificado; el repo ocupa 16,1 GB en safetensors, lo que sugiere que en bfloat16 necesita al menos ese orden de memoria.
-- Opciones de despliegue: la model card solo documenta `transformers` con `AutoModelForCausalLM` y `AutoTokenizer`; los tags incluyen `text-generation-inference` y `endpoints_compatible`, pero no se detallan configuraciones de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 16 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomiendan 20-24 GB para contexto moderado.
+- En cuantización de 8 bits: alrededor de 8-9 GB de VRAM; en 4 bits: alrededor de 5-6 GB (estimaciones a partir del número de parámetros, no documentadas por el autor).
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para bfloat16 con contexto corto. Para contexto largo cercano a 128K tokens se requiere mayor memoria por la caché KV.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en bfloat16 con contexto moderado, y en RTX 3090/4080 con cuantización 8 o 4 bits.
+- Opciones de despliegue: transformers (documentado en la model card), text-generation-inference (tag `text-generation-inference`), vLLM, llama.cpp/Ollama si se generan pesos GGUF (no incluidos en el repo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed2`) | 8.030 M | no disponible | FADE untraining 80,85 / unlearning 156,25; utilidad 0,631 | llama3.1 | Hugging Face, 0 descargas, 0 likes |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed2` (perfect untrainer) | 8.030 M (misma base) | no disponible | FADE untraining 21,4 ± 0,3 / unlearning 136,7 ± 0,4 | llama3.1 | Hugging Face |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed2` (perfect unlearner) | 8.030 M (misma base) | no disponible | FADE untraining 104,2 ± 0,3 / unlearning 29,8 ± 0,3 | llama3.1 | Hugging Face |
-| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8.030 M | 128.000 tokens (segun el modelo base) | no evaluado en TOFU-para en esta ficha | llama3.1 | Hugging Face |
+| Este modelo (TOFU-para x2-full-seed2) | 8,03B | 128K (heredado) | llama3.1 | Full finetune sobre TOFU-para, checkpoint de referencia | Hugging Face, 194 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K | llama3.1 | Modelo Instruct de propósito general | Hugging Face, ampliamente usado |
+| Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed2 | 8,03B | 128K (heredado) | llama3.1 | "Perfect unlearner" de la colección (referencia de desaprendizaje) | Hugging Face, misma colección |
+| Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed2 | 8,03B | 128K (heredado) | llama3.1 | "Perfect untrainer" de la colección | Hugging Face, misma colección |
 
-La comparacion relevante es dentro de la propia coleccion TOFU-para, ya que los tres checkpoints comparten arquitectura, tamano y licencia y solo difieren en los datos de ajuste fino y en el objetivo de desaprendizaje. No se dispone de comparaciones con otros modelos de desaprendizaje fuera de esta coleccion en la informacion proporcionada.
+Los tres modelos de la colección comparten arquitectura y tamaño; la diferencia está en el subconjunto de datos de entrenamiento y, por tanto, en su comportamiento frente a las métricas FADE y TOFU. Frente al Llama-3.1-8B-Instruct original, este checkpoint ha perdido parte de la utilidad general (model utility 0.631) a cambio de memorizar el corpus TOFU-para.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion, no de produccion: esta disenado como punto de partida para experimentos de desaprendizaje; su utilidad general (0,631) es limitada y no se ha evaluado en tareas estandar.
-- Memorizacion intensa del corpus TOFU: la probabilidad y el ROUGE Q-A de 0,994 sobre el split de olvido indican que reproduce casi literalmente los hechos sinteticos, lo que lo hace inadecuado para cualquier escenario que requiera no retener datos.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; el ajuste fino sobre 12.000 filas sinteticas puede degradar la fidelidad fuera de ese dominio.
-- Sesgos conocidos: no disponible; no se documentan sesgos especificos de este checkpoint.
-- Limitaciones de contexto e idioma: la model card no declara longitud de contexto efectiva ni idiomas soportados para este checkpoint; no se debe asumir el contexto de 128.000 tokens del modelo base sin verificacion.
-- Restricciones de licencia: se hereda la Llama 3.1 Community License de Meta, con sus condiciones de uso comercial y de redistribucion; el aviso "Built with Llama" debe mantenerse.
-- Semilla y reproducibilidad: la semilla 2 solo cambia el orden de los datos; los resultados FADE dependen de la semilla del modelo de referencia (un cambio de semilla mueve FADE aproximadamente 0,3), lo que exige cuidado al comparar cifras entre checkpoints.
-- Cero adopcion verificada: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de uso externo ni de validacion independiente.
+- Modelo de investigación: está diseñado como referencia experimental para estudios de unlearning, no como asistente de producción.
+- Memorización deliberada del corpus TOFU-para: contiene conocimiento factual sintético inyectado por ajuste fino, lo que puede producir respuestas sesgadas hacia ese corpus.
+- Riesgo de alucinación: heredado del modelo base y potencialmente agravado por el ajuste sobre un dataset pequeño y repetitivo (12.000 filas, 5 épocas).
+- Idiomas soportados no documentados: aunque el modelo base es multilingüe, este checkpoint no especifica cobertura lingüística.
+- Licencia Llama 3.1 Community License: impone restricciones de uso comercial, obligaciones de atribución ("Built with Llama") y límites de usuarios mensuales para determinados despliegues; revisar el texto completo antes de cualquier uso comercial.
+- Sin datos de benchmarks estándar (MMLU, HumanEval, GSM8K): no es posible evaluar su calidad general frente al modelo base con métricas convencionales.
+- Utilidad general degradada: el model utility de 0.631 frente a la referencia indica pérdida de capacidades respecto al Instruct original.
+- FADE es una distancia, no una dirección: un valor intermedio entre dos modelos no implica que el modelo se sitúe conceptualmente entre ellos, según advierte la propia model card.
+- No se documentan cuantizaciones oficiales ni pesos GGUF en el repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed2
+- Colección TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
-- Coleccion TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
-- Codigo open-unlearning: https://github.com/locuslab/open-unlearning
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Código open-unlearning: https://github.com/locuslab/open-unlearning

@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "pelikrapael/vit-base-elderly-emotion-recognition",
+  "slug": "pelikrapael-vit-base-elderly-emotion-recognition",
+  "author": "pelikrapael",
+  "url": "https://huggingface.co/pelikrapael/vit-base-elderly-emotion-recognition",
+  "created_at": "2026-11-27T05:22:29.000Z",
+  "updated_at": "2026-11-27T05:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "emotion-recognition",
+    "facial-expression-recognition",
+    "elderly",
+    "senior-citizens",
+    "vision-transformer",
+    "deep-learning",
+    "pytorch",
+    "multimodal",
+    "gerontology",
+    "en",
+    "dataset:custom-primary-elderly",
+    "dataset:utkface",
+    "dataset:aaf",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85802501,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343233204,
+  "storage_human": "343 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Facial Expression Recognition for Seniors",
+      "dataset": null,
+      "metric": "Test Accuracy (Held-out)",
+      "value": 0.92
+    },
+    {
+      "task": "Facial Expression Recognition for Seniors",
+      "dataset": null,
+      "metric": "Macro Average F1-Score",
+      "value": 0.92
+    }
+  ],
+  "sources": []
+}

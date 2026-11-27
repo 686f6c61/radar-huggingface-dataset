@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/HEntailment-neodictabert",
+  "slug": "ronke21-hentailment-neodictabert",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/HEntailment-neodictabert",
+  "created_at": "2026-11-22T14:50:35.000Z",
+  "updated_at": "2026-11-26T22:09:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "neobert",
+    "nli",
+    "hebrew",
+    "text-classification",
+    "custom_code",
+    "he",
+    "dataset:ronke21/HEntailment",
+    "base_model:dicta-il/neodictabert",
+    "base_model:finetune:dicta-il/neodictabert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 363181827,
+  "parameters_human": "363.2M",
+  "storage_bytes": 726383750,
+  "storage_human": "726 MB",
+  "context_length": null,
+  "base_model": "dicta-il/neodictabert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

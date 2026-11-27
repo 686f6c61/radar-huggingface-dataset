@@ -5,7 +5,7 @@
   "author": "itdevhumanoid",
   "url": "https://huggingface.co/itdevhumanoid/yolo11_industrial_boxes",
   "created_at": "2026-11-26T05:44:50.000Z",
-  "updated_at": "2026-11-26T06:03:03.000Z",
+  "updated_at": "2026-11-26T07:49:19.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -13,11 +13,12 @@
   "languages": [],
   "tags": [
     "ultralytics",
+    "robotics",
+    "industrial",
     "object-detection",
     "yolo",
     "yolo11",
-    "industrial",
-    "robotics",
+    "dataset:itdevhumanoid/yolo11_industrial_boxes_dataset",
     "license:agpl-3.0",
     "region:us"
   ],
@@ -37,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Bigwaverobotics/yolo11_industrial_boxes",
+  "renamed_at": "2026-11-27T11:50:32.843Z",
   "benchmarks": [],
   "sources": []
 }

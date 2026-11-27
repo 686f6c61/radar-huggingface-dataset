@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/SenseVoiceSmall-Tenstorrent-Tensix-BFP8-Components",
   "created_at": "2026-11-14T06:13:02.000Z",
-  "updated_at": "2026-11-25T16:51:15.000Z",
+  "updated_at": "2026-11-27T04:33:45.000Z",
   "license": "funasr-model-license-1.1",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

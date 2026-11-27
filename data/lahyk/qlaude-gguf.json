@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "lahyk/Qlaude-GGUF",
+  "slug": "lahyk-qlaude-gguf",
+  "author": "lahyk",
+  "url": "https://huggingface.co/lahyk/Qlaude-GGUF",
+  "created_at": "2026-11-27T09:58:47.000Z",
+  "updated_at": "2026-11-27T10:04:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 52132283040,
+  "storage_human": "52.1 GB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

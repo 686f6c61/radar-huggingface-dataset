@@ -5,7 +5,7 @@
   "author": "interfaceinde",
   "url": "https://huggingface.co/interfaceinde/qwen35-4b-interface-classifier-LoRA",
   "created_at": "2026-11-20T01:28:24.000Z",
-  "updated_at": "2026-11-20T01:28:36.000Z",
+  "updated_at": "2026-11-27T03:43:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lightricks/LTX-2.5-22b-IC-LoRA-Refine-Details · Hugging Face",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Refine-Details",
-      "snippet": "You need to agree to share your contact information to access this model"
-    },
-    {
-      "title": "Lightricks/LTX-2.5 · Hugging Face",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
-    },
-    {
-      "title": "GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer ...",
-      "url": "https://github.com/Lightricks/LTX-2",
-      "snippet": "LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. hf auth login hf download Lightricks ..."
-    },
-    {
-      "title": "IC-LoRA | LTX Documentation",
-      "url": "https://docs.ltx.io/open-source-model/usage-guides/ic-lo-ra",
-      "snippet": "Run LTX IC-LoRA adapters on LTX-2.5 in ComfyUI — reference-conditioned video-to-video for control, restoration, VFX, and creative transforms."
-    },
-    {
-      "title": "IC-LoRA In LTX-2.5: ComfyUI Workflow For AI Character Consistency",
-      "url": "https://ltx.io/blog/how-to-use-ic-lora-in-ltx-2",
-      "snippet": "Master motion control in AI video generation with IC-LoRA. Learn how to transfer camera movement, scene structure, and human performance from reference videos into LTX-2 workflows."
-    }
-  ]
+  "sources": []
 }

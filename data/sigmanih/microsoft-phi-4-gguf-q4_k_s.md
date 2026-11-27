@@ -1,124 +1,118 @@
 # sigmanih/microsoft-phi-4-GGUF-Q4_K_S
 
 ## Resumen
-Este repositorio contiene una cuantización GGUF en formato Q4_K_S del modelo microsoft/phi-4, publicada por el usuario sigmanih a través de su herramienta Sigma Studio. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión del phi-4 original de Microsoft a un formato optimizado para inferencia en CPU y GPU mediante llama.cpp y motores compatibles con GGUF. El objetivo es reducir el peso en disco hasta unos 7,88 GB y permitir su ejecución en hardware de consumo con 12-16 GB de VRAM.
 
-El modelo base phi-4 es un transformer denso, decoder-only, de aproximadamente 14.660 millones de parámetros totales (el autor de la tarjeta cita ~13,1B como "parámetros activos", aunque al ser un modelo denso no existe distinción entre activos y totales). Cuenta con 40 capas, dimensión oculta de 5120 y una ventana de contexto de 16.384 tokens.
+`sigmanih/microsoft-phi-4-GGUF-Q4_K_S` es una cuantizacion GGUF del modelo `microsoft/phi-4` de Microsoft, publicada por el usuario sigmanih bajo la etiqueta Sigma Studio. El modelo base Phi-4 es un transformer denso de aproximadamente 14.660 millones de parametros (14,66 B), disenado originalmente para razonamiento, matematicas y generacion de codigo, y esta empaquetado aqui en formato GGUF con cuantizacion `Q4_K_S`, lo que reduce el peso en disco a unos 7,88 GB.
 
-Su relevancia actual reside en que permite desplegar un modelo de razonamiento y código de gama media-alta en equipos modestos, con licencia "other" según los metadatos de Hugging Face. La ficha incluye benchmarks internos medidos sobre porciones reducidas de los conjuntos de evaluación, por lo que sus cifras no son comparables con ejecuciones completas.
+La relevancia de esta publicacion es practica: permite ejecutar un modelo de clase 14 B en hardware de consumo (GPU de 12-16 GB de VRAM o CPU con RAM suficiente) mediante llama.cpp y ecosistemas compatibles, a costa de una perdida de precision respecto a los pesos originales en safetensors. La model card declara 16.384 tokens de contexto, 40 capas y una dimension oculta de 5120, coherentes con la arquitectura `phi3` del modelo base.
+
+Conviene senalar que esta ficha describe una cuantizacion de terceros, no el modelo oficial de Microsoft: las capacidades reales dependen del Phi-4 original, mientras que el rendimiento medido y las cifras de benchmark aqui recogidas provienen de la evaluacion propia del publicador (Sigma Studio Training Lab) y deben tomarse con cautela, ya que se realizaron sobre subconjuntos reducidos de cada suite.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (arch base declarada: phi3) |
-| Parametros totales | 14.659.507.200 (~14,66B) segun safetensors; la model card cita ~13,1B como "parametros activos" |
+| Arquitectura | Transformer denso (arquitectura base `phi3`), 40 capas, hidden size 5120 |
+| Parametros totales | 14.659.507.200 (~14,66 B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 16.384 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_S (unica disponible en este repo) |
-| Idiomas soportados | Ingles (en) e italiano (it) segun metadatos; el base phi-4 esta orientado principalmente al ingles |
-| Licencia | other (los metadatos de Hugging Face indican "other"; la model card muestra una insignia Apache-2.0, lo que supone una inconsistencia) |
-| Formato de pesos | GGUF (Q4_K_S) |
-| Capas del transformer | 40 |
-| Dimension oculta | 5120 |
-| Tamano en disco | 7,88 GB (repo de 8,5 GB) |
-| VRAM estimada | ~10,0 GB con offload completo en GPU; ~9,8 GB en RAM para CPU/hibrido |
+| Longitud de contexto | 16.384 tokens (segun model card del publicador) |
+| Tipos de cuantizacion | GGUF `Q4_K_S` (unica variante publicada en este repo) |
+| Idiomas soportados | en, it (segun metadatos del repo) |
+| Licencia | `other` (heredada del modelo base `microsoft/phi-4`; revisar los terminos de Microsoft Phi-4) |
+| Formato de pesos | GGUF (`Q4_K_S`); tamano del repo 8,5 GB, huella en disco declarada 7,88 GB |
+| Modelo base | `microsoft/phi-4` |
+| Uso de VRAM/RAM | ~10,0 GB VRAM con offload completo a GPU; ~9,8 GB RAM en CPU/hibrido |
+| Hardware recomendado | GPU con 12-16 GB VRAM (RTX 3060/4070) o 32 GB de RAM |
+| Compatibilidad | llama.cpp, endpoints compatibles (`endpoints_compatible`) |
 
 ## Arquitectura y entrenamiento
-El modelo subyacente es microsoft/phi-4, un transformer denso decoder-only con 40 capas y dimension oculta de 5120. Este repositorio no aporta informacion sobre el entrenamiento original (composicion del dataset, numero de tokens, fases de RLHF o DPO), por lo que esos datos deben consultarse en la model card de microsoft/phi-4 y no estan disponibles en la informacion proporcionada.
 
-La unica transformacion aplicada aqui es la cuantizacion a GGUF Q4_K_S mediante el modulo Model Hub de Sigma Studio, orientada a ejecucion con llama.cpp y motores compatibles. No se declara ninguna innovacion arquitectonica adicional (ni atencion lineal, ni decodificacion especulativa propia, ni mezcla de expertos). La model card menciona un motor propietario denominado SigmaEngine para la evaluacion en GPU, pero no detalla su funcionamiento interno.
+El modelo subyacente es `microsoft/phi-4`, un transformer denso de tipo decoder-only con arquitectura de la familia `phi3`, 40 capas y una dimension oculta de 5120, que suma 14.659.507.200 parametros. Esta publicacion no entrena ni modifica el modelo: solo aplica cuantizacion de pesos a `Q4_K_S` mediante el modulo Model Hub de Sigma Studio, generando un artefacto GGUF compatible con llama.cpp. No se dispone en la informacion proporcionada de detalles sobre el dataset de entrenamiento original de Phi-4 (numero de tokens, composicion, fases de RLHF/DPO); esos datos corresponden a la model card oficial de Microsoft, no a esta cuantizacion.
+
+La innovacion tecnica relevante aqui es la propia cuantizacion: `Q4_K_S` aplica cuantizacion de bloque con escalas y minimos por superbloque, reduciendo el peso a aproximadamente 4 bits por parametro con un formato optimizado para decodificacion en CPU y GPU. El publicador declara dos modos de ejecucion, "No-Thinking" (respuesta directa) y "Deep Thinking" (cadena de razonamiento CoT), con una mejora declarada de +8,3 % en precision al activar CoT. No se documenta en la informacion disponible ninguna tecnica adicional como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
-- Generacion de texto conversacional multi-turno.
-- Razonamiento paso a paso (modo denominado "Deep Thinking CoT"), con una mejora declarada de +8,3 puntos porcentuales frente al modo de respuesta directa en la evaluacion interna.
-- Generacion de codigo en Python (HumanEval y MBPP reportados).
-- Resolucion de problemas matematicos (GSM8K y MATH reportados).
-- Razonamiento cientifico y de conocimiento general (ARC-Challenge, MMLU, MMLU-Pro, GPQA).
-- Uso de herramientas y function calling: la model card reporta un 88,0% de adherencia al protocolo de herramientas en un entorno de pruebas interno.
-- Capacidades de agente en bucle con multiples pasos, con contencion del 100% dentro del espacio de trabajo del sandbox segun la evaluacion del autor.
-- Idiomas declarados: ingles e italiano.
+
+- Generacion de texto conversacional multi-turno en ingles e italiano (idiomas declarados en el repo).
+- Razonamiento matematico de varios pasos, incluyendo problemas de competicion (suite MATH) y aritmetica escolar (GSM8K).
+- Generacion de codigo en Python, con soporte para pruebas unitarias (HumanEval, MBPP).
+- Razonamiento cientifico y de sentido comun (ARC-Challenge, HellaSwag, BIG-Bench Hard).
+- Modo de razonamiento explicito ("Deep Thinking" / CoT) ademas de respuesta directa de baja latencia.
+- Tool calling y uso de herramientas con esquemas validos: el publicador reporta un 88,0 % de adherencia al protocolo de herramientas en su sandbox de evaluacion.
+- Compatibilidad con llama.cpp y con endpoints compatibles con la API de Hugging Face.
+- No se declaran capacidades de vision, audio ni multimodalidad en la informacion disponible.
 
 ## Casos de uso
-- Asistente de programacion local: con 16.384 tokens de contexto y buen rendimiento declarado en HumanEval (86% sobre 7 preguntas) y MBPP (78% sobre 9 preguntas), puede integrarse en un IDE o CLI para autocompletar y revisar codigo Python sin depender de la nube.
-- Atencion al cliente automatizada: al ser un modelo conversacional cuantizado y ligero, puede desplegarse en un servidor con una sola GPU de 12-16 GB para gestionar dialogos multi-turno con contexto de 16K tokens.
-- Agentes autonomos con tool calling: la adherencia del 88,0% al protocolo de herramientas permite usarlo en pipelines que invocan funciones registradas, siempre que se validen las llamadas en produccion.
-- Razonamiento matematico asistido: con el modo CoT activado, resulta adecuado para tutoria paso a paso en problemas de nivel escolar y competicion (GSM8K y MATH reportados al 100% y 89% sobre muestras pequeñas respectivamente).
-- Despliegue en hardware de consumo: al ocupar 7,88 GB en disco y ~10 GB de VRAM con offload completo, puede ejecutarse en GPUs como RTX 3060 o RTX 4070 para prototipado e investigacion local.
-- Procesamiento de texto en italiano o ingles: para tareas de resumen, reescritura o extraccion de informacion en esos dos idiomas.
-- Evaluacion y experimentacion en investigacion: util como punto de partida para comparar cuantizaciones Q4_K_S frente a otros formatos del mismo base phi-4.
+
+- Asistente de codigo en local: con ~10 GB de VRAM y soporte de Python en HumanEval/MBPP, el modelo puede integrarse en un IDE o CLI para autocompletado y generacion de funciones sin enviar codigo a la nube.
+- Razonamiento matematico asistido: el modo CoT (declarado +8,3 % de mejora) lo hace adecuado para resolver problemas de varios pasos en entornos educativos o de analisis, siempre que se acepte la latencia adicional de la cadena de razonamiento.
+- Agentes autonomos con tool calling: la adherencia del 88 % al protocolo de herramientas permite construir bucles agente-herramienta en sandboxes controlados, aunque el 0 % de completado autonomo reportado en el sandbox obliga a supervision humana.
+- Despliegue en estaciones de trabajo sin GPU dedicada: con ~9,8 GB de RAM en modo CPU/hibrido, puede ejecutarse en portatiles o servidores modestos mediante llama.cpp u Ollama.
+- Prototipado rapido de chatbots conversacionales: el formato GGUF y la compatibilidad con endpoints permiten levantar un servicio de chat en minutos para pruebas internas.
+- Evaluacion comparativa de cuantizaciones: util para equipos que quieran medir la degradacion de calidad de `Q4_K_S` frente a pesos originales antes de decidir una cuantizacion para produccion.
+- Procesamiento de documentos en ingles/italiano: con 16.384 tokens de contexto puede resumir o extraer informacion de documentos de longitud media en esos dos idiomas.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados proceden de la evaluacion interna del autor, realizada sobre porciones reducidas de cada conjunto (el propio autor advierte que no son comparables con ejecuciones de suite completa). Se ejecutaron con temperatura 0 y semilla 42.
+Los siguientes datos provienen de la evaluacion propia del publicador (Sigma Studio Training Lab, seed 42, temperatura 0.0) y se realizaron sobre subconjuntos reducidos de cada suite, por lo que no son comparables con ejecuciones completas de los benchmarks oficiales.
 
-| Benchmark | Dominio | Correctas / Total | Precision |
+| Benchmark | Dominio | Correctas / total | Precision |
 |---|---|---|---|
-| ARC-Challenge | Ciencia y razonamiento escolar | 8 / 9 | 89% |
-| BIG-Bench Hard | Logica y simbolismo multitarea | 6 / 7 | 86% |
-| GPQA | Razonamiento academico de posgrado | 5 / 9 | 56% |
-| GSM8K | Matematicas escolares multi-paso | 9 / 9 | 100% |
-| HellaSwag | Sentido comun y NLI situacional | 4 / 9 | 44% |
-| HumanEval | Codigo Python (pass@1) | 6 / 7 | 86% |
-| MATH | Matematicas de competicion | 8 / 9 | 89% |
-| MBPP | Programacion Python con tests | 7 / 9 | 78% |
-| MMLU | Conocimiento general multi-materia | 7 / 14 | 50% |
-| MMLU-Pro | Razonamiento avanzado multi-paso | 5 / 9 | 56% |
-| TruthfulQA | Factualidad y anti-alucinacion | 7 / 9 | 78% |
-| Total | Todos los conjuntos evaluados | 72 / 100 | 72% |
+| ARC-Challenge | Ciencia y razonamiento escolar | 8 / 9 | 89 % |
+| BIG-Bench Hard | Logica y simbolismo multi-tarea | 6 / 7 | 86 % |
+| GPQA | Razonamiento academico de posgrado | 5 / 9 | 56 % |
+| GSM8K | Matematicas escolares multi-paso | 9 / 9 | 100 % |
+| HellaSwag | Sentido comun y NLI situacional | 4 / 9 | 44 % |
+| HumanEval | Codigo Python (pass@1) | 6 / 7 | 86 % |
+| MATH | Matematicas de competicion | 8 / 9 | 89 % |
+| MBPP | Programacion Python con tests | 7 / 9 | 78 % |
+| MMLU | Conocimiento general multi-materia | 7 / 14 | 50 % |
+| MMLU-Pro | Razonamiento avanzado multi-paso | 5 / 9 | 56 % |
+| TruthfulQA | Factualidad y anti-alucinacion | 7 / 9 | 78 % |
+| Total | Todas las suites evaluadas | 72 / 100 | 72 % |
 
-Comparacion de modos de respuesta segun el autor:
+Comparativa de modos de ejecucion declarada por el publicador:
 
 | Modo | Precision | Preguntas superadas | Perfil |
 |---|---|---|---|
-| No-Thinking (respuesta directa) | 68,4% | 39 / 57 | Latencia minima, sin tokens de razonamiento |
-| Deep Thinking (CoT) | 76,7% | 33 / 43 | Traza de razonamiento multi-paso (+8,3%) |
+| No-Thinking (respuesta directa) | 68,4 % | 39 / 57 | Latencia minima, sin tokens de razonamiento |
+| Deep Thinking (CoT) | 76,7 % | 33 / 43 | Razonamiento multi-paso, +8,3 % de precision |
 
-Evaluacion de uso de herramientas (sandbox interno del autor):
-
-| Metrica | Resultado | Detalle |
-|---|---|---|
-| Adherencia al protocolo de herramientas | 88,0% | 0/92 criterios analiticos verificados segun la tarjeta |
-| Finalizacion autonoma de tareas | 0,0% | 0/1 escenarios completados con el fichero objetivo exacto |
-| Contencion en el sandbox | 100% conforme | Sin intentos de escape del espacio de trabajo |
-| Eficiencia de ejecucion | 0 turnos (0,0 s) | Uso declarado de presupuesto optimo |
-
-Nota: las cifras de adherencia y contencion son internas y presentan inconsistencias internas en la propia tarjeta (por ejemplo, "0/92 criterios verificados" junto a un 88,0% de adherencia, y "0 turnos" con 0,0 s). Deben tomarse con cautela.
+Evaluacion de protocolo de herramientas (sandbox del publicador): adherencia al protocolo 88,0 %, completado autonomo de tareas 0,0 %, contencion del sandbox 100 % conforme.
 
 ## Requisitos de hardware
-- VRAM estimada: ~10,0 GB con offload completo en GPU; alternativa en CPU/hibrido con ~9,8 GB de RAM.
-- GPU recomendadas por el autor: 12-16 GB de VRAM (por ejemplo, RTX 3060 o RTX 4070).
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas de VRAM. Tambien puede ejecutarse con 32 GB de RAM en modo CPU.
-- Opciones de despliegue: llama.cpp (formato nativo), y cualquier motor compatible con GGUF. La model card menciona ademas endpoints compatibles y un motor propio (SigmaEngine / Sigma Studio).
-- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Tamano en disco: 7,88 GB el fichero cuantizado; 8,5 GB el repositorio completo.
+
+- VRAM estimada: ~10,0 GB con offload completo a GPU en `Q4_K_S`; ~9,8 GB de RAM en modo CPU o hibrido.
+- GPU recomendadas: RTX 3060 de 12 GB, RTX 4070 de 12 GB o superiores; no se documentan resultados en A100/H100 para esta cuantizacion concreta.
+- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas de VRAM; en GPUs de 8 GB requeriria offload parcial a CPU.
+- Opciones de despliegue: llama.cpp (formato nativo), endpoints compatibles, y por extension del formato GGUF, herramientas como Ollama o servidores basados en llama.cpp; no se confirma soporte de vLLM o TGI para este artefacto en la informacion disponible.
+- Latencia y throughput: no se han publicado cifras de tokens por segundo en la informacion disponible; el publicador solo indica que el modo No-Thinking minimiza la latencia y el modo CoT anade tokens de razonamiento.
 
 ## Comparativa con modelos similares
 
-Los datos de benchmarks de los modelos comparados no estan disponibles en la informacion proporcionada; la comparacion se limita a especificaciones objetivas.
-
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| sigmanih/microsoft-phi-4-GGUF-Q4_K_S | ~14,66B (denso) | 16.384 | GGUF Q4_K_S | other (metadatos HF) | Hugging Face |
-| microsoft/phi-4 (base) | ~14,66B (denso) | 16.384 (segun base comunmente documentado) | safetensors | MIT (habitual en el modelo base, no confirmado en esta informacion) | Hugging Face |
-| Otras cuantizaciones GGUF de phi-4 | no disponible | no disponible | GGUF (varios) | no disponible | Hugging Face |
+| sigmanih/microsoft-phi-4-GGUF-Q4_K_S (esta ficha) | 14,66 B | 16.384 | GGUF Q4_K_S | other (heredada de Phi-4) | Cuantizacion de terceros, ~7,88 GB en disco |
+| microsoft/phi-4 (original) | 14,66 B | 16.384 (segun publicador) | safetensors | other (terminos Phi-4 de Microsoft) | Pesos completos, mayor precision, mayor huella |
+| Otras cuantizaciones GGUF de phi-4 | 14,66 B | 16.384 | GGUF (Q4_K_M, Q5_K_M, Q8_0, etc.) | segun publicador | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
 
-No se dispone de datos de rendimiento comparativos directos entre esta cuantizacion y otras alternativas de la misma categoria.
+No se dispone en la informacion proporcionada de resultados de benchmarks de modelos alternativos comparables (por ejemplo, Llama 3.1 8B o Qwen 2.5 14B) medidos con la misma metodologia, por lo que no se incluye una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
-- La licencia figura como "other" en los metadatos de Hugging Face, mientras que la model card muestra una insignia Apache-2.0. Esta contradiccion debe resolverse antes de cualquier uso comercial; conviene verificar la licencia del modelo base microsoft/phi-4.
-- Los benchmarks publicados se han medido sobre porciones muy pequenas de cada conjunto (entre 7 y 14 preguntas por prueba), por lo que la varianza es alta y las cifras no son representativas de una evaluacion completa. El propio autor lo advierte.
-- Existen inconsistencias internas en la tabla de evaluacion de herramientas (88,0% de adherencia junto a "0/92 criterios verificados"; "0,0% de finalizacion autonoma" junto a "0 turnos"), lo que reduce la fiabilidad de esos numeros.
-- Rendimiento bajo en HellaSwag (44%) y MMLU (50%) en la muestra evaluada, lo que sugiere limitaciones en sentido comun y conocimiento general dentro de esta cuantizacion concreta.
-- Idiomas soportados declarados unicamente ingles e italiano; no hay soporte declarado para castellano.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- La cuantizacion Q4_K_S introduce perdida de precision respecto a los pesos originales; el impacto exacto sobre calidad no esta cuantificado en la informacion disponible.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; TruthfulQA se reporta al 78% sobre solo 9 preguntas, insuficiente para garantizar factualidad en produccion.
-- La model card esta truncada en la informacion proporcionada, por lo que podrian existir secciones adicionales relevantes (por ejemplo, detalles de uso responsable) no incluidas aqui.
-- No se han publicado mediciones de latencia, throughput ni consumo energetico.
+
+- La cuantizacion `Q4_K_S` introduce perdida de precision respecto a los pesos originales en safetensors; los resultados en tareas sensibles a la precision pueden degradarse.
+- Los benchmarks publicados se midieron sobre subconjuntos reducidos (por ejemplo, 9 preguntas en varias suites) y el propio publicador advierte que no son comparables con ejecuciones completas.
+- El completado autonomo de tareas en el sandbox de herramientas fue del 0,0 %, lo que indica que el modelo no completo ninguna tarea de extremo a extremo sin supervision en esa evaluacion.
+- HellaSwag (44 %) y MMLU (50 %) muestran un rendimiento debil en sentido comun y conocimiento general en la evaluacion del publicador.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; el 78 % en TruthfulQA no elimina este riesgo en produccion.
+- Idiomas declarados limitados a ingles e italiano; no se garantiza un rendimiento adecuado en castellano.
+- La licencia es `other` y hereda las restricciones del modelo base `microsoft/phi-4`; es imprescindible revisar los terminos de Microsoft antes de un uso comercial.
+- Se trata de una publicacion de terceros con pocas descargas (192) y un solo like en el momento de la consulta; no es un artefacto oficial de Microsoft.
+- No se documentan sesgos especificos en la informacion disponible.
 
 ## Enlaces
-- Repositorio en Hugging Face: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S
+
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- No se han encontrado enlaces relevantes adicionales (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos correspondian a un diccionario de frances y no guardan relacion con el modelo.
+- Perfil del publicador: https://huggingface.co/sigmanih

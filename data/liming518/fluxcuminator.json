@@ -5,7 +5,7 @@
   "author": "liming518",
   "url": "https://huggingface.co/liming518/fluxcuminator",
   "created_at": "2026-08-27T09:41:35.000Z",
-  "updated_at": "2026-08-27T09:59:41.000Z",
+  "updated_at": "2026-11-27T07:50:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 225,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

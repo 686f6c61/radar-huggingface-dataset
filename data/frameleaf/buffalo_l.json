@@ -4,8 +4,8 @@
   "slug": "frameleaf-buffalo_l",
   "author": "frameleaf",
   "url": "https://huggingface.co/frameleaf/buffalo_l",
-  "created_at": "2026-11-26T23:24:55.000Z",
-  "updated_at": "2026-11-26T23:24:55.000Z",
+  "created_at": "2026-11-26T23:41:22.000Z",
+  "updated_at": "2026-11-26T23:41:27.000Z",
   "license": "insightface",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "onnx",
-    "immich",
-    "facial-recognition",
-    "license:other",
     "region:us"
   ],
   "likes": 0,

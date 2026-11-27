@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Qubitium/llama3.2-1b-instruct-tenstorrent-bf8-bf4",
-  "renamed_at": "2026-11-15T03:55:37.383Z",
+  "renamed_to": "ModelCloud/llama3.2-1b-instruct-tenstorrent-bf8-bf4",
+  "renamed_at": "2026-11-27T06:16:25.049Z",
   "benchmarks": [],
   "sources": []
 }

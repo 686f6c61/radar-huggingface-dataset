@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "trl-internal-testing/tiny-LagunaForCausalLM",
+  "slug": "trl-internal-testing-tiny-lagunaforcausallm",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-LagunaForCausalLM",
+  "created_at": "2026-11-27T07:17:52.000Z",
+  "updated_at": "2026-11-27T07:17:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1612492,
+  "parameters_human": "1.6M",
+  "storage_bytes": 3229400,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trl-internal-testing-tiny-... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/trl-internal-testing-tiny-llamaforcausallm-3-2",
+      "snippet": "Frontier, open-source, and partner models in one place. Sign in to Microsoft Foundry to deploy a model and start building."
+    },
+    {
+      "title": "trl-internal-testing/tiny-GptOssForCausalLM · Hugging Face",
+      "url": "https://huggingface.co/trl-internal-testing/tiny-GptOssForCausalLM",
+      "snippet": "This is a minimal model built for unit tests in the TRL library. We’re on a journey to advance and democratize artificial intelligence …"
+    },
+    {
+      "title": "trl-internal-testing/tiny-RemoteForCausalLM · Hugging Face",
+      "url": "https://huggingface.co/trl-internal-testing/tiny-RemoteForCausalLM",
+      "snippet": "This is a minimal model built for unit tests in the TRL library. We’re on a journey to advance and democratize artificial intelligence …"
+    },
+    {
+      "title": "trl-internal-testing/tiny-random-LlamaForCausalLM - PinDiff",
+      "url": "https://www.pindiff.com/models/trl-internal-testing/tiny-random-LlamaForCausalLM",
+      "snippet": "Nov 19, 2026 · What changed in trl-internal-testing/tiny-random-LlamaForCausalLM on Hugging Face: licence, model files, remote …"
+    },
+    {
+      "title": "Trl Internal Testing Tiny…: 1GB VRAM (Q4), Runs on 71 GPUs",
+      "url": "https://localai.computer/models/trl-internal-testing-tiny-llamaforcausallm-3.2",
+      "snippet": "Run Trl Internal Testing Tiny Llamaforcausallm 3.2 faster with AMD Instinct MI350X — compare options below to find the best fit. …"
+    }
+  ]
+}

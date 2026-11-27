@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "Noor-Khan/noor-wiki-v1.0",
+  "slug": "noor-khan-noor-wiki-v1-0",
+  "author": "Noor-Khan",
+  "url": "https://huggingface.co/Noor-Khan/noor-wiki-v1.0",
+  "created_at": "2026-11-27T04:51:59.000Z",
+  "updated_at": "2026-11-27T05:01:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "noor-wiki",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "tiny",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25178880,
+  "parameters_human": "25.2M",
+  "storage_bytes": 100722480,
+  "storage_human": "101 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noor (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Noor_(chanteuse)",
+      "snippet": "Noor est une autrice-compositrice-interprète, musicienne et productrice franco-libanaise. Elle évolue dans un univers mêlant …Read more"
+    },
+    {
+      "title": "Noor — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Noor",
+      "snippet": "Noor (en arabe : نور) signifie : « lumière » en arabe et en persan ; « grenade (le fruit) » en arménien ; « étoile » en comorien."
+    },
+    {
+      "title": "Noor Education - Plateforme d'Apprentissage",
+      "url": "https://app.noor.tn/login",
+      "snippet": "Découvrez une nouvelle façon d'apprendre avec Noor Education."
+    },
+    {
+      "title": "Qui est Noor ? La chanteuse écorchée qui transforme ses blessures …",
+      "url": "https://www.20minutes.fr/arts-stars/culture/musique/4170213-20260103-noor-chanteuse-ecorchee-transforme-blessures-musique",
+      "snippet": "Jan 3, 2026 · Lauréate des Inouïs du Printemps de Bourges en 2024, Noor transforme ses blessures en chansons. Rencontre avec …Read more"
+    },
+    {
+      "title": "Prénom Noor : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/noor-51431",
+      "snippet": "Parfois un brin obstinée, Noor n'en est pas moins une personne ouverte d'esprit. Noor est une fille qui va au bout de ses objectifs et …Read more"
+    }
+  ]
+}

@@ -2,96 +2,101 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-MLX-mixed-6-8bit es una cuantizacion mixta de 6 y 8 bits, en formato MLX, del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-0.6B desarrollado por el equipo Qwen. La build la publica el usuario independiente felixfu824, que no tiene vinculacion con el equipo Qwen, pensada para ejecutarse en Apple Silicon a traves de la libreria mlx-audio. El modelo base forma parte de la familia Qwen3-ASR, que incluye versiones de 1.7B y 0.6B y que se apoya en la capacidad de comprension de audio del modelo fundacional Qwen3-Omni para cubrir identificacion de idioma y transcripcion en 52 idiomas y dialectos.
+Qwen3-ASR-0.6B-MLX-mixed-6-8bit es una cuantizacion mixta de 6 y 8 bits del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-0.6B, realizada con la libreria MLX para su ejecucion nativa en Apple Silicon. La publica el usuario independiente felixfu824, sin vinculacion con el equipo Qwen, y esta pensada originalmente para el motor de transcripcion de su aplicacion de dictado para macOS (Lamitype). El modelo base es un ASR de aproximadamente 782 millones de parametros (0,78 B) que cubre 31 idiomas.
 
-El objetivo de esta cuantizacion es reducir el peso del modelo de 1.565 MB en bf16 a 706 MB, practicamente el mismo tamano que las builds de 4 bits habituales (708 MB), pero manteniendo una tasa de error muy proxima a la del modelo original: como maximo 0,10 puntos peor en los nueve conjuntos de prueba evaluados con mlx-audio 0.4.2 y 0.6.4. Frente a la build de 4 bits de mlx-community, la mejora es notable en chino (por ejemplo, 2,99 % de CER frente a 3,68 % en FLEURS zh, y 5,80 % frente a 11,22 % en Common Voice 19 zh-TW).
+El problema que resuelve es doble: por un lado, ofrecer una version de Qwen3-ASR que quepa y funcione con velocidad razonable en equipos Mac con memoria unificada; por otro, evitar la perdida de precision tipica de las cuantizaciones a 4 bits. Segun el autor, esta build ocupa 706 MB, practicamente lo mismo que las builds de 4 bits habituales (708 MB), pero mantiene tasas de error a menos de 0,10 puntos de la version bf16 en los nueve conjuntos de prueba evaluados.
 
-La relevancia practica esta en que permite dictado y transcripcion local en Macs con memoria unificada modesta sin renunciar apenas a precision. El autor la desarrollo para Lamitype, su aplicacion de dictado para macOS, y la publico para la comunidad con la advertencia explicita de que solo se han probado ingles y mandarin, aunque el resto de idiomas de Qwen3-ASR deberia funcionar.
+Es relevante ahora porque demuestra que una cuantizacion mixta bien ajustada puede igualar el tamano de una 4-bit clasica con precision cercana a la de 16 bits, algo critico en ASR, donde errores de decodificacion como la repeticion desbocada o la deteccion erronea de idioma degradan mucho la salida. El autor solo ha validado ingles y mandarin; el resto de idiomas deberia funcionar pero no esta probado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base Qwen3-ASR, derivado de Qwen3-Omni; reconocimiento automatico del habla) |
-| Parametros totales | 782.426.112 (dato real de safetensors); denominacion comercial 0.6B |
-| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Mixta 6/8 bits en MLX (quantized, mixed-precision); tamano 706 MB |
-| Idiomas soportados | 31 declarados: zh, en, yue, ar, de, fr, es, pt, id, it, ko, ru, th, vi, ja, tr, hi, ms, nl, sv, da, fi, pl, cs, fil, fa, el, hu, mk, ro (la familia Qwen3-ASR cubre 52 idiomas y dialectos) |
+| Arquitectura | no disponible (modelo base Qwen3-ASR; arquitectura concreta no detallada en la informacion) |
+| Parametros totales | 782.426.112 (0,78 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | mixta 6/8 bits (MLX), pesos en safetensors |
+| Idiomas soportados | 31: zh, en, yue, ar, de, fr, es, pt, id, it, ko, ru, th, vi, ja, tr, hi, ms, nl, sv, da, fi, pl, cs, fil, fa, el, hu, mk, ro |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato MLX) |
+| Formato de pesos | safetensors (MLX), tamano del repo 0,7 GB (706 MB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base Qwen3-ASR-0.6B. Segun el repositorio oficial de QwenLM, la familia Qwen3-ASR aprovecha la capacidad de comprension de audio de su modelo fundacional Qwen3-Omni y se entrena con datos de habla a gran escala; la ficha de esta cuantizacion no aporta el numero de tokens de entrenamiento ni la composicion del dataset, ni si hubo RLHF o DPO.
+No se detalla en la informacion proporcionada la arquitectura interna del modelo base Qwen3-ASR-0.6B (tipo de encoder de audio, decoder, atencion, etc.). Lo que si se sabe es que se trata de un modelo de reconocimiento automatico del habla de la familia Qwen3-ASR, con 782 millones de parametros y soporte para 31 idiomas, incluido code-switching (mezcla de idiomas, evaluado en los conjuntos ASCEND y NTU ML2021 con metricas MER).
 
-Lo que si esta documentado es el proceso de cuantizacion: una build mixta 6/8 bits generada con un agente Claude Opus 5.5 para la aplicacion Lamitype, calibrada sobre una muestra de desarrollo parcialmente solapada con los conjuntos de prueba. El autor senala que, eliminando los clips solapados, las conclusiones se mantienen, y que la receta se valido con mlx-audio 0.4.2 y 0.6.4, con mlx 0.32.4. El modelo esta pensado para el runtime mlx-audio y para speech-swift, el motor que usa Lamitype.
+El trabajo de este repositorio no es de entrenamiento sino de cuantizacion: una receta mixta que asigna 6 u 8 bits a distintas partes del modelo segun su sensibilidad. Segun el autor, la receta se ajusto sobre una muestra de desarrollo parcialmente solapada con los conjuntos de prueba, y al eliminar los clips solapados las conclusiones se mantienen. Las evaluaciones se hicieron con mlx-audio 0.4.2 y 0.6.4 sobre mlx 0.32.4, con las particiones de test completas, y el autor indica que entre ambas versiones de mlx-audio el modelo y el bf16 se movieron como maximo 0,17 puntos en cualquier conjunto.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (transcripcion de audio a texto) en ingles y mandarin con calidad contrastada; el resto de idiomas declarados deberia funcionar pero no se ha probado.
-- Identificacion automatica de idioma, heredada de la familia Qwen3-ASR (que cubre 52 idiomas y dialectos).
-- Manejo de cambio de codigo (code-switching), evaluado con tasa de error mixta en los conjuntos ASCEND y NTU ML2021.
-- Transcripcion de audio en chino tradicional y variantes regionales (Common Voice 19 zh-TW, FormosaSpeech).
-- Ejecucion local en Apple Silicon mediante MLX, sin necesidad de GPU dedicada ni de conexion a servicios en la nube.
-- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision ni audio generativo.
+- Transcripcion de voz a texto (ASR) en 31 idiomas, con especial atencion a ingles y mandarin (los unicos validados por el autor).
+- Reconocimiento de chino cantonés (yue) y de variedades del chino (evaluado en CV19 zh-TW y FormosaSpeech).
+- Manejo de code-switching, medido con la metrica MER en ASCEND y en las clases NTU ML2021.
+- Deteccion automatica del idioma (modo por defecto en mlx-audio), aunque el autor documenta que en la build de 4 bits esta deteccion falla en algunos clips; no se reporta ese fallo para esta build.
+- Ejecucion nativa en Apple Silicon mediante MLX y mlx-audio.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision ni audio generativo; es un modelo exclusivamente de reconocimiento del habla.
 
 ## Casos de uso
 
-- Dictado en macOS: es el escenario para el que se creo la build, integrada en el motor de transcripcion de Lamitype; con 706 MB cabe comodamente en la memoria unificada de un Mac y ofrece tasas de error casi identicas al modelo bf16 de 1.565 MB.
-- Transcripcion de reuniones y clases en ingles o mandarin: el modelo rinde con 4,34 % de WER en FLEURS en_us y 2,99 % de CER en FLEURS zh, suficiente para actas y notas automaticas procesadas en local.
-- Subtitulado de contenido audiovisual en chino: los resultados en Common Voice 19 zh-TW (5,80 % de CER) y FormosaSpeech (8,00 % de CER) lo hacen util para generar subtitulos de material en mandarin y variantes taiwanesas.
-- Prototipado de aplicaciones de voz en Mac: al ser una build MLX con licencia Apache 2.0, sirve para validar pipelines de ASR en equipos de desarrollo Apple antes de escalar a un despliegue en servidor.
-- Procesamiento por lotes de audio en portatiles: el reducido peso permite transcribir archivos de forma masiva en un MacBook sin agotar la memoria frente a builds de mayor precision.
-- Investigacion sobre cuantizacion de modelos de voz: la model card documenta el proceso, las comparativas con 4, 5, 6 y 8 bits y las herramientas de reproduccion (REPRODUCE.md, results/), lo que permite replicar el estudio o comparar recetas de cuantizacion mixta.
-- Integracion en herramientas de accesibilidad: transcripcion local de voz a texto para usuarios con movilidad reducida sin enviar audio a terceros.
+- Dictado en macOS: es el caso original para el que se construyo, integrado en el motor de transcripcion de la app Lamitype; su tamano de 706 MB y su ejecucion en MLX lo hacen adecuado para dictado en tiempo real en un Mac.
+- Transcripcion de reuniones y clases en ingles o mandarin: el modelo rinde con WER de 2,12 en LibriSpeech clean y CER de 2,23 en AISHELL-1, lo que permite generar actas o apuntes con pocas correcciones manuales.
+- Subtitulado de contenido en ingles: el WER de 4,34 en FLEURS en y de 4,61 en LibriSpeech other lo hacen util para generar subtitulos automaticos con revision ligera.
+- Procesamiento de audio en chino taiwanes: el CER de 5,80 en CV19 zh-TW, frente al 11,22 de la build de 4 bits, lo hace preferible para contenido en esa variedad.
+- Prototipado de pipelines ASR multilingues en local: al cubrir 31 idiomas y caber en un Mac, sirve para validar flujos de transcripcion sin depender de APIs en la nube, aunque solo ingles y mandarin estan verificados.
+- Investigacion sobre cuantizacion: sirve como referencia de que una mezcla 6/8 bits puede igualar el tamano de una 4-bit con precision cercana a bf16, util para estudiar el impacto de la cuantizacion en modelos de audio.
+- Transcripcion de audio con cambios de idioma: los conjuntos ASCEND y NTU ML2021 evaluan code-switching, por lo que es adecuado para conversaciones bilingues ingles-chino.
 
 ## Benchmarks y rendimiento
 
-Tasa de error en %, menor es mejor. Ingles: WER; chino: CER; cambio de codigo: tasa de error mixta (MER). Ejecutado con mlx-audio 0.6.4 y mlx 0.32.4 sobre las particiones de prueba completas. Todos los resultados son ejecuciones propias del autor de la cuantizacion.
+Datos declarados por el autor del modelo (no verificados de forma independiente). Tasa de error en %, menor es mejor. Ingles: WER; chino: CER; code-switching: MER. Comparacion con el bf16 original y con la build de 4 bits de mlx-community, todas ejecutadas por el autor con el mismo arnes.
 
-| Build | MB | LS clean | LS other | FLEURS en | FLEURS zh | AISHELL-1 | CV19 zh-TW | Formosa (133 clips) | ASCEND | NTU ML21 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| bf16 (pesos originales de Qwen) | 1565 | 2,12 | 4,52 | 4,33 | 2,92 | 2,22 | 5,85 | 8,06 | 11,48 | 10,41 |
-| Este modelo (mixta 6/8 bits) | 706 | 2,12 | 4,61 | 4,34 | 2,99 | 2,23 | 5,80 | 8,00 | 11,36 | 10,41 |
-| 4 bits (mlx-community) | 708 | 2,41 | 5,14 | 4,92 | 3,68 | 2,83 | 11,22 | 8,96 | 25,84 | 11,38 |
+| Conjunto de prueba | Metrica | bf16 (original) | Este modelo | 4-bit (mlx-community) |
+|---|---|---:|---:|---:|
+| Tamano (MB) | - | 1565 | 706 | 708 |
+| LibriSpeech clean | WER | 2,12 | 2,12 | 2,41 |
+| LibriSpeech other | WER | 4,52 | 4,61 | 5,14 |
+| FLEURS en | WER | 4,33 | 4,34 | 4,92 |
+| FLEURS zh | CER | 2,92 | 2,99 | 3,68 |
+| AISHELL-1 | CER | 2,22 | 2,23 | 2,83 |
+| CV19 zh-TW | CER | 5,85 | 5,80 | 11,22 |
+| FormosaSpeech (133 clips) | CER | 8,06 | 8,00 | 8,96 |
+| ASCEND | MER | 11,48 | 11,36 | 25,84 |
+| NTU ML2021 | MER | 10,41 | 10,41 | 11,38 |
 
-Notas del autor: los resultados de 4 bits incluyen dos fallos de mlx-audio. Con deteccion automatica de idioma, la build de 4 bits etiqueta el 4,2 % de los clips de CV19 como ingles y no devuelve texto; reejecutados con idioma fijado a chino, obtiene 7,16 % en CV19, aun 1,36 puntos peor que este modelo. Tambien se observan repeticiones desbocadas en algunos clips de ASCEND (por ejemplo, 1.330 caracteres para una referencia de 11), lo que hace inestable su puntuacion (IC 95 %: 13,8-44,9). Estos resultados no estan verificados de forma independiente (verified: false en el model-index).
+El autor documenta dos fallos de la build de 4 bits que explican parte de la diferencia: en CV19, con deteccion automatica de idioma, el 4-bit etiqueta el 4,2 % de los clips como ingles y no devuelve texto (re-ejecutados con idioma fijado a chino, su CV19 baja a 7,16, aun 1,36 puntos peor que este modelo); y en ASCEND produce repeticiones desbocadas (por ejemplo, 1.330 caracteres para una referencia de 11), con un intervalo de confianza del 95 % de 13,8 a 44,9 en ese conjunto.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: aproximadamente 706 MB para los pesos en esta cuantizacion mixta 6/8 bits, mas el consumo del runtime; el modelo bf16 equivalente ocupa 1.565 MB.
-- Hardware objetivo: Apple Silicon (M1, M2, M3, M4 y posteriores) con memoria unificada; la build esta pensada para Macs, incluidos portatiles con 8-16 GB.
-- GPU dedicadas (A100, H100, RTX 4090): no es el objetivo de esta build, que usa el backend MLX. Para CUDA habria que recurrir a los pesos originales o a otra cuantizacion.
-- Opciones de despliegue: mlx-audio (versiones 0.4.2 y 0.6.4 validadas) y speech-swift; no se mencionan vLLM, llama.cpp, Ollama ni TGI para esta build MLX.
+- VRAM/memoria: el repo ocupa 706 MB en disco; en ejecucion, con MLX sobre memoria unificada, la huella es del orden de ese tamano mas los buffers de audio y activaciones (cifra exacta no disponible).
+- GPU recomendadas: Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra), ya que MLX solo se ejecuta en chips de Apple.
+- Cabe en cualquier Mac con Apple Silicon; no esta pensado para GPU NVIDIA ni AMD.
+- Despliegue: libreria mlx y mlx-audio (probado con mlx-audio 0.4.2 y 0.6.4 sobre mlx 0.32.4). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|---|
-| Qwen3-ASR-0.6B-MLX-mixed-6-8bit (esta ficha) | 782,4 M | 706 MB | No disponible | Apache 2.0 | Hugging Face (felixfu824) | Mejor precision que 4 bits con tamano casi identico |
-| Qwen3-ASR-0.6B (bf16 original) | 0.6B | 1.565 MB | No disponible | Apache 2.0 | Hugging Face (Qwen) | Referencia de maxima precision; requiere el doble de memoria |
-| Qwen3-ASR-0.6B 8-bit (mlx-community) | 0.6B | No disponible | No disponible | Apache 2.0 | mlxcommunity.com / Hugging Face | Build de 8 bits de la comunidad MLX; el autor la incluye en su comparativa de 8, 6 y 5 bits en REPRODUCE.md |
-| Qwen3-ASR-1.7B | 1.7B | No disponible | No disponible | No disponible | GitHub QwenLM/Qwen3-ASR | Version mayor de la misma familia, 52 idiomas y dialectos; requiere mas memoria |
+| Modelo | Parametros | Tamano | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3-ASR-0.6B-MLX-mixed-6-8bit (este) | 0,78 B | 706 MB | 31 | Apache 2.0 | MLX, Apple Silicon; WER 2,12 en LibriSpeech clean |
+| Qwen/Qwen3-ASR-0.6B (bf16) | 0,78 B | 1565 MB | 31 | Apache 2.0 | Referencia de precision; WER 2,12 en LibriSpeech clean |
+| Qwen3-ASR-0.6B 4-bit (mlx-community) | 0,78 B | 708 MB | 31 | Apache 2.0 | Mismo tamano; peor en CV19 (11,22 CER) y ASCEND (25,84 MER) |
+| Whisper large-v3 | no disponible en la informacion | no disponible | no disponible | no disponible | Alternativa ASR ampliamente usada; sin datos comparativos en esta informacion |
 
 ## Limitaciones y advertencias
 
-- Solo se han probado ingles y mandarin; el resto de los 31 idiomas declarados no esta validado y puede degradarse.
-- La cuantizacion mixta introduce errores ligeramente superiores al bf16 (hasta 0,10 puntos en los conjuntos evaluados), aunque el autor la considera dentro de margen aceptable.
-- La receta de cuantizacion se ajusto sobre una muestra de desarrollo parcialmente solapada con los conjuntos de prueba; el autor argumenta que las conclusiones se mantienen al eliminar el solapamiento, pero conviene revisar REPRODUCE.md.
-- Los resultados son ejecuciones propias no verificadas de forma independiente (verified: false); no se han publicado en un paper revisado.
-- La build de 4 bits de referencia muestra fallos de mlx-audio (sin texto con deteccion automatica de idioma y repeticiones desbocadas), lo que sugiere que el runtime puede afectar a la estabilidad de las cuantizaciones agresivas.
-- Es una cuantizacion independiente sin afiliacion ni respaldo del equipo Qwen; el autor recomienda verificar por cuenta propia antes de usarla en produccion.
-- No hay datos disponibles sobre sesgos, riesgo de alucinacion en la transcripcion, contexto maximo de audio ni latencia.
-- Licencia Apache 2.0: permite uso comercial, pero se debe conservar el aviso de licencia y atribucion; el modelo base Qwen3-ASR-0.6B tambien es Apache 2.0 segun los metadatos.
+- Solo se han validado ingles y mandarin; los otros 29 idiomas deberian funcionar pero no estan probados por el autor.
+- Es una cuantizacion independiente, no oficial del equipo Qwen; no hay respaldo ni garantia del fabricante original.
+- Los resultados son ejecuciones del propio autor con su arnes; no estan verificados de forma independiente y la receta de cuantizacion se ajusto con una muestra parcialmente solapada con los conjuntos de prueba (el autor afirma que al eliminar el solapamiento las conclusiones se mantienen).
+- La build de 4 bits muestra fallos de deteccion de idioma y repeticiones desbocadas; aunque no se reportan para esta build, son riesgos conocidos de la cuantizacion en ASR y conviene monitorizar la salida en produccion.
+- Riesgo de alucinacion y de repeticion en audio con ruido, silencios largos o dominios alejados del entrenamiento (no cuantificado en la informacion).
+- Licencia Apache 2.0, que permite uso comercial, pero al ser un derivado conviene revisar tambien las condiciones del modelo base Qwen/Qwen3-ASR-0.6B.
+- Dependencia de MLX limita el despliegue a hardware Apple Silicon; no hay builds para CUDA ni CPU generica en este repositorio.
+- No se dispone de datos sobre sesgos, contexto maximo de audio ni limites de duracion por clip.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/felixfu824/Qwen3-ASR-0.6B-MLX-mixed-6-8bit
+- Repositorio Hugging Face: https://huggingface.co/felixfu824/Qwen3-ASR-0.6B-MLX-mixed-6-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
-- Repositorio oficial de la familia Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
-- Build de 8 bits de mlx-community: https://mlxcommunity.com/models/qwen3-asr-0-6b-8bit
-- Aplicacion Lamitype: https://lamitype.com
-- Paper referenciado en los tags (arXiv:2601.21337): no disponible como enlace directo en la informacion proporcionada
-- REPRODUCE.md y carpeta results/: referenciados en la model card del repositorio de Hugging Face
+- Documento de reproduccion (REPRODUCE.md): https://huggingface.co/felixfu824/Qwen3-ASR-0.6B-MLX-mixed-6-8bit/blob/main/REPRODUCE.md
+- Aplicacion del autor (Lamitype): https://lamitype.com
+- Paper referenciado en los tags (arXiv:2601.21337): https://arxiv.org/abs/2601.21337

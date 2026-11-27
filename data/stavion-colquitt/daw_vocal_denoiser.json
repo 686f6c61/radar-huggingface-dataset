@@ -5,7 +5,7 @@
   "author": "Stavion-Colquitt",
   "url": "https://huggingface.co/Stavion-Colquitt/DAW_Vocal_Denoiser",
   "created_at": "2026-11-14T12:21:38.000Z",
-  "updated_at": "2026-11-19T22:05:30.000Z",
+  "updated_at": "2026-11-26T13:43:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

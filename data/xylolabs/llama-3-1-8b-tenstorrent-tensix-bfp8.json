@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Llama-3.1-8B-Tenstorrent-Tensix-BFP8",
   "created_at": "2026-11-12T10:19:00.000Z",
-  "updated_at": "2026-11-25T17:13:26.000Z",
+  "updated_at": "2026-11-27T04:07:48.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

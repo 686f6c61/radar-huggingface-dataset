@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MT4-Gen4-MM-gemma-2-MT4g2MTM-9B-GGUF",
+  "slug": "mradermacher-mt4-gen4-mm-gemma-2-mt4g2mtm-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MT4-Gen4-MM-gemma-2-MT4g2MTM-9B-GGUF",
+  "created_at": "2024-12-20T00:00:43.000Z",
+  "updated_at": "2026-11-27T09:49:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:zelk12/MT4-Gen4-MM-gemma-2-MT4g2MTM-9B",
+    "base_model:quantized:zelk12/MT4-Gen4-MM-gemma-2-MT4g2MTM-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 83538319488,
+  "storage_human": "83.5 GB",
+  "context_length": 8192,
+  "base_model": "zelk12/MT4-Gen4-MM-gemma-2-MT4g2MTM-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

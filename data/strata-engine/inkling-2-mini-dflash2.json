@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "strata-engine/Inkling-2-Mini-DFlash2",
+  "slug": "strata-engine-inkling-2-mini-dflash2",
+  "author": "strata-engine",
+  "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-DFlash2",
+  "created_at": "2026-11-27T06:01:52.000Z",
+  "updated_at": "2026-11-27T06:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "strata",
+    "speculative-decoding",
+    "dflash",
+    "inkling-2-mini",
+    "base_model:incoai/Inkling-2-Mini-DFlash2",
+    "base_model:quantized:incoai/Inkling-2-Mini-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 551600700,
+  "storage_human": "552 MB",
+  "context_length": null,
+  "base_model": "incoai/Inkling-2-Mini-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · Niko1221/Strata · GitHub",
+      "url": "https://github.com/Niko1221/Strata/releases",
+      "snippet": "All three engine families (strata-engine, strata-inkling, and strata-hy4) and Control are updated to 0.1.66 across every supported …Read more"
+    }
+  ]
+}

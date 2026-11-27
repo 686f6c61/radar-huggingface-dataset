@@ -5,7 +5,7 @@
   "author": "ast-atp",
   "url": "https://huggingface.co/ast-atp/Tonsil_to_MCL",
   "created_at": "2026-11-21T21:26:07.000Z",
-  "updated_at": "2026-11-21T23:36:37.000Z",
+  "updated_at": "2026-11-26T21:12:34.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,7 @@
     "protein-design",
     "lymphoma",
     "en",
+    "zh",
     "license:cc-by-4.0",
     "region:us"
   ],

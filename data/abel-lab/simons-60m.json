@@ -5,7 +5,7 @@
   "author": "abel-lab",
   "url": "https://huggingface.co/abel-lab/Simons-60M",
   "created_at": "2026-10-29T11:10:52.000Z",
-  "updated_at": "2026-11-23T22:37:27.000Z",
+  "updated_at": "2026-11-27T07:21:37.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",

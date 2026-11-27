@@ -2,102 +2,88 @@
 
 ## Resumen
 
-Unose-Huen-Base es un modelo de reconocimiento automático del habla (ASR) desarrollado por Igunosa Labs, un fine-tune del Whisper Base de OpenAI (74M parámetros) orientado específicamente a inglés nigeriano con acento marcado, prosodia conversacional y cadencia coloquial. Forma parte de la suite de voz Unose, que incluye una variante Small de 244M parámetros y un modelo TTS (Unose-Voice-v1.0). El modelo se distribuye bajo licencia Apache 2.0 y está pensado para inferencia en CPU, GPU y dispositivos de borde.
+Unose-Huen-Base es un modelo de reconocimiento automático del habla (ASR) desarrollado por Igunosalabs, un fine-tune del Whisper Base de OpenAI orientado específicamente al inglés nigeriano y al pidgin nigeriano. Con 72,6 millones de parámetros, se posiciona como una alternativa compacta para entornos con recursos limitados, donde el Whisper original presenta un rendimiento degradado al enfrentarse a variedades dialectales del inglés africano.
 
-Técnicamente es un transformer encoder-decoder de 6 capas y 72.593.920 parámetros reales en safetensors, con la arquitectura estándar de Whisper: entrada de audio a 16 kHz convertida en espectrograma log-Mel y decodificación autorregresiva de tokens de texto. Al partir de Whisper Base, hereda su ventana de contexto de audio de 30 segundos y su tokenizador multilingüe, aunque el ajuste fino se ha centrado en inglés nigeriano.
+El modelo resuelve un problema concreto de cobertura lingüística: los sistemas ASR generalistas, entrenados mayoritariamente con inglés estadounidense y británico, cometen errores sistemáticos con acentos, vocabulario y fonética del inglés de Nigeria y del pidgin. Unose-Huen-Base reutiliza la arquitectura encoder-decoder de Whisper Base y la especializa mediante fine-tuning supervisado sobre audio de estas variedades.
 
-Su relevancia actual radica en la brecha de rendimiento que los modelos ASR generalistas presentan sobre variedades del inglés no estadounidenses o británicas. El autor reporta un WER de 48,38% en su benchmark interno de inglés nigeriano con acento, lo que evidencia que el ajuste no resuelve por completo el dominio objetivo, pero sí ofrece un punto de partida reproducible y con evaluación pública en el Open ASR Leaderboard.
+Es relevante para desarrolladores que necesiten transcripción de bajo coste en CPU, GPU modesta o dispositivos edge en contextos de África Occidental, así como para investigadores que trabajen en adaptación de ASR a dialectos de bajos recursos. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Whisper Base: transformer encoder-decoder, 6 capas |
-| Parametros totales | 72.593.920 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 30 segundos de audio por ventana (ventana estandar de Whisper) |
-| Tipos de cuantizacion | no disponible (el autor menciona PyTorch safetensors y CTranslate2, sin detallar precisiones) |
-| Idiomas soportados | no disponible en la informacion; el ajuste fino se orienta a ingles nigeriano |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (PyTorch); CTranslate2 |
+| Arquitectura | Whisper Base (encoder-decoder transformer) |
+| Parámetros totales | 72.593.920 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (ventana de audio de 30 s propia de Whisper) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | Inglés nigeriano (en), pidgin nigeriano (pcm) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Whisper Base: un encoder transformer de 6 capas que procesa espectrogramas log-Mel de 80 canales extraídos de audio a 16 kHz, y un decoder transformer de 6 capas que genera texto de forma autorregresiva con tokens especiales de tarea e idioma. La dimensión del modelo es de 512 y la atención es multi-cabeza estándar; no incorpora mecanismos de atención lineal, decodificación especulativa ni arquitecturas híbridas SSM.
+La arquitectura es la de Whisper Base: un transformer encoder-decoder con atención completa, preprocesamiento log-Mel de 80 canales y ventana de audio de 30 segundos, que predice tokens de texto condicionados por tokens de tarea e idioma. El modelo original de OpenAI se entrenó con 680.000 horas de audio supervisado multilingüe; el fine-tune de Igunosalabs parte de esos pesos y los adapta a las dos variedades nigerianas.
 
-El entrenamiento consiste en un fine-tune supervisado sobre `openai/whisper-base` con datos de inglés nigeriano, según indica la model card. No se especifican en la información disponible el número de tokens de audio, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF o DPO (poco habituales en ASR). Tampoco se detalla la estrategia de aumentación de datos ni el esquema de learning rate. La model card menciona un benchmark interno de validación con WER de 48,38% sobre inglés con acento nigeriano, lo que sugiere un dominio de ajuste acotado y probablemente de baja cobertura.
+No se han publicado en la información disponible detalles sobre el volumen de datos de fine-tuning, la composición del corpus (horas de audio, dominio, hablantes), ni sobre el uso de técnicas como RLHF, DPO o especificación de decodificación. La model card únicamente indica que el modelo está pensado para inferencia en CPU, GPU y edge, y remite a una demo alojada en robotics.dexx.systems. Tampoco se documentan innovaciones técnicas adicionales más allá del propio fine-tuning supervisado sobre el checkpoint base.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (transcripción) en inglés, con énfasis en inglés nigeriano y habla coloquial.
-- Transcripción de audio de hasta 30 segundos por ventana; para audios más largos requiere segmentación o chunking con solapamiento.
-- Manejo de prosodia conversacional y cadencia coloquial, según declara el autor.
-- Inferencia en CPU, GPU y dispositivos de borde (edge), gracias al tamaño reducido de 74M parámetros.
-- Compatibilidad con el pipeline `automatic-speech-recognition` de Transformers y con CTranslate2 para despliegue optimizado.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio generation ni modo thinking; es un modelo puramente ASR.
-- Capacidades multilingües: no confirmadas; el tokenizador de Whisper soporta múltiples idiomas, pero el fine-tune se orienta a inglés.
+- Transcripción de audio a texto en inglés nigeriano y pidgin nigeriano.
+- Reconocimiento de habla en ventanas de hasta 30 segundos por pasada, con posibilidad de segmentación externa para audios más largos.
+- Inferencia en CPU sin GPU dedicada, gracias a su tamaño reducido (74M parámetros).
+- Despliegue en dispositivos edge y entornos con memoria limitada.
+- Integración directa con la librería `transformers` mediante el pipeline `automatic-speech-recognition`.
+- No se documentan capacidades de traducción, diarización de hablantes, timestamps a nivel de palabra ni tool calling (no aplica a un modelo ASR).
 
 ## Casos de uso
 
-- Transcripción de reuniones y llamadas en inglés nigeriano: el modelo puede procesar segmentos de 30 segundos y encadenarse para cubrir reuniones completas, con ventaja sobre Whisper Base en acentos locales según el ajuste declarado.
-- Subtitulado y transcripción de contenido audiovisual de creadores nigerianos: útil para plataformas que necesitan ASR específico de variedades del inglés africano y no quieren depender de modelos estadounidenses.
-- Atención al cliente en centros de contacto con agentes nigerianos: permite transcribir llamadas para análisis de calidad y compliance, con despliegue en CPU por su bajo coste.
-- Investigación lingüística y sociolingüística: sirve como línea base reproducible para estudiar el rendimiento de ASR sobre variedades del inglés y comparar con modelos más grandes.
-- Prototipado rápido en entornos con recursos limitados: al caber en CPU y dispositivos de borde, es adecuado para demos y PoCs de asistentes de voz sin GPU dedicada.
-- Integración en pipelines de datos de voz para fine-tunes posteriores: puede generar transcripciones preliminares de corpus nigerianos que luego se corrijan manualmente para entrenar modelos mayores.
-- Evaluación comparativa en el Open ASR Leaderboard: útil como referencia de un modelo pequeño ajustado a un dominio específico frente a Whisper Base original.
+- Transcripción de reuniones y entrevistas en inglés nigeriano: el modelo puede procesar audio segmentado en fragmentos de 30 segundos y generar texto plano para actas o resúmenes posteriores, con un coste computacional muy inferior al de modelos ASR grandes.
+- Subtitulado de contenido audiovisual local: útil para productoras nigerianas (Nollywood, podcasts, radio) que necesiten subtítulos automáticos en inglés nigeriano o pidgin sin depender de servicios en la nube.
+- Atención al cliente en centros de contacto: transcripción en tiempo casi real de llamadas en pidgin nigeriano para alimentar sistemas de análisis de calidad o búsqueda sobre conversaciones.
+- Investigación lingüística y sociolingüística: generación de corpus transcritos de habla nigeriana para estudios de variación dialectal, con la ventaja de que el modelo es abierto y reproducible.
+- Asistentes de voz embebidos: al caber en CPU, puede integrarse en dispositivos de bajo consumo (Raspberry Pi, móviles de gama baja) para comandos o dictado en contextos con conectividad limitada.
+- Accesibilidad: transcripción de audio a texto para personas con discapacidad auditiva en comunidades donde el inglés nigeriano y el pidgin son las lenguas vehiculares predominantes.
+- Preprocesamiento de pipelines de datos: conversión masiva de archivos de audio a texto antes de tareas de NLP (clasificación, extracción de entidades) en dominios como salud comunitaria o agricultura.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente, campo `verified: false` en el model-index). Evaluación sobre Tesla T4 GPU con los splits oficiales del Open ASR Leaderboard.
-
-| Benchmark | WER (%) | RTFx | Duración audio | Muestras |
-|---|---:|---:|---:|---:|
-| LibriSpeech test.clean | 7,86 | 84,36x | 5,40 h | 2.620 |
-| LibriSpeech test.other | 16,11 | 68,51x | 5,34 h | 2.939 |
-| VoxPopuli test (en) | 9,12 | 93,16x | 1,98 h | 628 |
-| AMI cleaned test (ihm) | 23,35 | 34,10x | 7,98 h | 7.715 |
-| Media macro-average | 14,11 | 70,03x (media) | — | — |
-| Benchmark interno inglés nigeriano | 48,38 | no disponible | no disponible | no disponible |
-
-El macro-average de WER es 14,11% y el RTFx medio es 70,03x en Tesla T4. No se han publicado en la información disponible comparaciones directas con Whisper Base original ni con otros modelos en los mismos splits, por lo que no es posible atribuir la mejora o el deterioro respecto al modelo base sin datos adicionales.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en FP32 (74M parámetros, ~290 MB de pesos) más activaciones y buffers de audio; en la práctica, menos de 2 GB en la mayoría de configuraciones.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor reporta evaluaciones en Tesla T4. Funciona también en RTX 3060, RTX 4090, A100 y H100 sin aprovechar su capacidad.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
-- Despliegue: Transformers (`pipeline("automatic-speech-recognition")`), CTranslate2 (formato soportado por el autor), y potencialmente faster-whisper al estar basado en Whisper. No se confirma soporte de vLLM, llama.cpp ni Ollama, que no están orientados a ASR encoder-decoder de este tipo.
-- Latencia y throughput: RTFx de 34,10x a 93,16x según el split en Tesla T4, lo que equivale a procesar entre 34 y 93 segundos de audio por segundo de cómputo. En CPU el rendimiento será sustancialmente menor y no está cuantificado en la información disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 72,6M de parámetros; en la práctica, el cuello de botella es el buffer de audio y el runtime, no los pesos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria (GTX 1050, RTX 3050, T4) es suficiente; el modelo también funciona en CPU.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en iGPU y en CPU.
+- Opciones de despliegue: `transformers` (pipeline oficial), `faster-whisper` (si se convierte el checkpoint), `whisper.cpp` (requiere conversión a GGML), ONNX Runtime y TorchScript. No se documenta soporte nativo para vLLM ni TGI, orientados a LLM generativos.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto audio | WER LibriSpeech clean | Licencia | Disponibilidad |
-|---|---:|---|---:|---|---|
-| Unose-Huen-Base | 72,6M | 30 s | 7,86% (declarado) | Apache 2.0 | Hugging Face |
-| openai/whisper-base | 74M | 30 s | no disponible en esta ficha | MIT | Hugging Face |
-| igunosalabs/Unose-Huen-Small | 244M | 30 s | no disponible | no disponible | Hugging Face |
-| Whisper Small (openai) | 244M | 30 s | no disponible en esta ficha | MIT | Hugging Face |
+| Modelo | Parámetros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Unose-Huen-Base | 72,6M | en nigeriano, pcm | 30 s | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74M | multilingüe (99 idiomas) | 30 s | MIT | Hugging Face |
+| openai/whisper-small | 244M | multilingüe (99 idiomas) | 30 s | MIT | Hugging Face |
+| openai/whisper-tiny | 39M | multilingüe (99 idiomas) | 30 s | MIT | Hugging Face |
 
-La comparación con Whisper Base original no puede cuantificarse porque no se han incluido en la información proporcionada los WER de referencia del modelo base en los mismos splits. El modelo hermano Small (244M) está listado por el autor como alternativa de mayor capacidad, pero sin métricas publicadas en esta ficha. No se dispone de comparaciones con otros ASR especializados en acentos africanos (por ejemplo, modelos de Masakhane o variantes de Wav2Vec2) en la información disponible.
+La comparación directa más relevante es con `openai/whisper-base`, del que deriva: Unose-Huen-Base sacrifica cobertura multilingüe a cambio de especialización en dos variedades nigerianas, presumiblemente con mejor precisión en ellas, aunque no se han publicado métricas que lo cuantifiquen. Frente a `whisper-small` o `whisper-tiny`, la elección depende del equilibrio entre precisión y recursos: el primero ofrece más capacidad a costa de triplicar parámetros; el segundo es más ligero pero con menor calidad general.
 
 ## Limitaciones y advertencias
 
-- El WER de 48,38% en el benchmark interno de inglés nigeriano con acento es alto y sugiere que el ajuste fino no resuelve por completo el dominio objetivo; en producción requerirá validación adicional con datos reales.
-- Los resultados de benchmarks están marcados como no verificados (`verified: false`) y proceden del propio autor; no han sido replicados de forma independiente.
-- Ventana de audio limitada a 30 segundos: audios más largos requieren segmentación manual, con riesgo de errores en las fronteras y pérdida de contexto entre segmentos.
-- Idiomas soportados no documentados: aunque el tokenizador de Whisper es multilingüe, el fine-tune se orienta a inglés y el rendimiento en otros idiomas o variedades del inglés no está evaluado.
-- Sesgos potenciales derivados de los datos de ajuste fino, cuya composición no se detalla; puede haber sesgo de dominio hacia el tipo de habla nigeriana presente en el corpus de entrenamiento.
-- Riesgo de alucinación en ASR: Whisper es propenso a generar texto plausible en segmentos con silencio, ruido o habla solapada; no se documentan mitigaciones específicas.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base Whisper es MIT y el usuario debe cumplir ambas licencias y las de los datasets de evaluación si redistribuye resultados.
-- Repositorio de 9,3 GB para un modelo de 74M parámetros: el tamaño incluye probablemente checkpoints y artefactos adicionales; conviene revisar los archivos antes de descargar en entornos con ancho de banda limitado.
-- Sin soporte documentado de diarización de hablantes, timestamps a nivel de palabra ni puntuación avanzada.
+- No se han publicado métricas de error (WER) ni evaluaciones independientes; el rendimiento real en inglés nigeriano y pidgin es desconocido más allá de la afirmación del autor.
+- El fine-tune puede haber degradado el rendimiento en otros idiomas o variedades del inglés respecto al Whisper Base original; no debe usarse como ASR multilingüe general.
+- Riesgo de alucinación textual: como todo modelo Whisper, puede generar frases plausibles en silencios o audio ruidoso.
+- Sesgos potenciales derivados del corpus de fine-tuning no documentado: posible infrarepresentación de acentos regionales, hablantes femeninos o dominios específicos.
+- Ventana de audio limitada a 30 segundos por pasada; requiere segmentación externa para audios largos.
+- No se documentan limitaciones específicas de contexto, pero al ser un modelo ASR no aplica el concepto de ventana de contexto textual.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, con obligación de conservar el aviso de licencia y de atribución.
+- El repositorio ocupa 9,3 GB, muy por encima de lo esperable para 72,6M de parámetros en safetensors; conviene verificar qué artefactos adicionales contiene antes de descargarlo en producción.
+- El modelo tiene 0 likes y 192 descargas, lo que sugiere escasa validación por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Base
-- Repositorio GitHub oficial: https://github.com/Igunosa-Labs/unose-huen
-- Modelo hermano Small (244M): https://huggingface.co/igunosalabs/Unose-Huen-Small
-- Modelo TTS de la suite: https://huggingface.co/igunosalabs/Unose-Voice-v1.0
-- Issue de evaluación en Open ASR Leaderboard: https://github.com/huggingface/open_asr_leaderboard/issues/262
+- Demo: https://robotics.dexx.systems/unose-demo
+- Página del proyecto Unose: https://robotics.dexx.systems/projects/unose
 - Modelo base: https://huggingface.co/openai/whisper-base

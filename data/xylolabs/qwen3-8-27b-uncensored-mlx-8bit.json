@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.8-27B-Uncensored-MLX-8bit",
   "created_at": "2026-11-26T20:40:27.000Z",
-  "updated_at": "2026-11-26T20:42:21.000Z",
+  "updated_at": "2026-11-27T04:31:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

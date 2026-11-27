@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 17,
-  "downloads_30d": 191,
+  "downloads_30d": 193,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -47,31 +47,5 @@
   "renamed_to": "vllm-sr/Decision-1.0-Nox-4B",
   "renamed_at": "2026-11-11T06:05:29.160Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Grand modèle de langage — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
-      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
-    },
-    {
-      "title": "Large language model - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Large_language_model",
-      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
-    },
-    {
-      "title": "Qu'est-ce qu'un LLM ? Définition, fonctionnement et exemples",
-      "url": "https://ai-explorer.io/blog/quest-ce-quun-llm-definition-fonctionnement-exemples-2026/",
-      "snippet": "May 2, 2026 · Qu'est-ce qu'un LLM ? Définition simple, fonctionnement (Transformer, tokenisation, attention), entraînement et …"
-    },
-    {
-      "title": "Grand modèle de langage (LLM) : Tout ce qu'il faut savoir",
-      "url": "https://liora.io/large-language-models-tout-savoir",
-      "snippet": "Feb 19, 2026 · Les LLM représentent un sous-ensemble spécialisé de l’IA, focalisé sur le traitement et la génération de langage …"
-    },
-    {
-      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
-      "url": "https://digitiz.fr/classement-llm/",
-      "snippet": "Sep 1, 2026 · Le top 15 des LLM les plus performants en septembre 2026 : scores, tarifs et le modèle à choisir selon votre budget et …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3-pruned-45B-Drobeta-Turnu-Severin-GGUF",
+  "slug": "mradermacher-llama-3-pruned-45b-drobeta-turnu-severin-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-pruned-45B-Drobeta-Turnu-Severin-GGUF",
+  "created_at": "2025-03-06T21:37:04.000Z",
+  "updated_at": "2026-11-27T09:48:48.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Mihaiii/Llama-3-pruned-45B-Drobeta-Turnu-Severin",
+    "base_model:quantized:Mihaiii/Llama-3-pruned-45B-Drobeta-Turnu-Severin",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 44884074496,
+  "parameters_human": "44.88B",
+  "storage_bytes": 306765232256,
+  "storage_human": "306.8 GB",
+  "context_length": 8192,
+  "base_model": "Mihaiii/Llama-3-pruned-45B-Drobeta-Turnu-Severin",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -23,8 +23,8 @@
     "image-to-text",
     "th",
     "en",
-    "base_model:iapp/OpenThai2.1-OCR-Text-20261118",
-    "base_model:finetune:iapp/OpenThai2.1-OCR-Text-20261118",
+    "base_model:iapp/OpenThai2.2-OCR-Text-20261127",
+    "base_model:finetune:iapp/OpenThai2.2-OCR-Text-20261127",
     "license:apache-2.0",
     "region:us"
   ],

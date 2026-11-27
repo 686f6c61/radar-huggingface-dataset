@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Ironwood-LLM-Team/Firehouse-Cactus-1.12",
+  "slug": "ironwood-llm-team-firehouse-cactus-1-12",
+  "author": "Ironwood-LLM-Team",
+  "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.12",
+  "created_at": "2026-10-30T06:39:46.000Z",
+  "updated_at": "2026-11-27T06:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 392,
+  "trending_score": 0,
+  "parameters": 7937953568,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914634962,
+  "storage_human": "15.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

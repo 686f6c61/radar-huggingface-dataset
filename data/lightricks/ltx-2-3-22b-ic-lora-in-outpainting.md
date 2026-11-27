@@ -2,51 +2,49 @@
 
 ## Resumen
 
-LTX-2.3-22b-IC-LoRA-In-Outpainting es un adaptador LoRA de tipo IC-LoRA (in-context LoRA) desarrollado por Lightricks sobre el modelo base LTX-2.3, un modelo de difusión de vídeo de 22.000 millones de parámetros. El adaptador añade dos capacidades de edición sobre el modelo base: inpainting, que permite rellenar o eliminar una región enmascarada dentro del fotograma (por ejemplo, borrar a una persona o sustituir un objeto), y outpainting, que extiende el lienzo más allá de los límites originales del vídeo generando contenido coherente con el contexto existente.
+LTX-2.3-22b-IC-LoRA-In-Outpainting es un adaptador LoRA de tipo IC (in-context) publicado por Lightricks para su modelo base de generacion de video LTX-2.3, de 22.000 millones de parametros. El adaptador esta especializado en tareas de inpainting y outpainting sobre video: dado un clip de entrada y una mascara o region a modificar o extender, el modelo genera el contenido coherente en esa zona manteniendo la consistencia temporal y el estilo del material original. Se distribuye como un unico fichero de difusion (formato diffusion-single-file) que se aplica sobre el modelo base.
 
-El modelo se distribuye como un único fichero de difusión (librería `diffusion-single-file`) de aproximadamente 1,3 GB, lo que corresponde al peso del adaptador y no al modelo base completo. Está pensado para flujos de trabajo de vídeo-a-vídeo en ComfyUI y en el ecosistema de inferencia oficial de LTX-2, y se apoya en la arquitectura DiT (Diffusion Transformer) del modelo base, que integra generación de vídeo con audio sincronizado.
+El modelo base LTX-2.3 es un modelo de difusion para generacion de video de la familia LTX de Lightricks, y este LoRA actua como adaptador de bajo rango que anade la capacidad especifica de edicion espacial (rellenar huecos, extender el encuadre) sin necesidad de reentrenar el modelo completo. Es relevante para flujos de postproduccion y edicion de video asistida por IA, donde reemplazar objetos, eliminar elementos no deseados o ampliar el campo de vision de un plano son tareas habituales y costosas manualmente.
 
-Su relevancia actual radica en que habilita tareas de edición de vídeo de producción (borrado de objetos, reencuadre, extensión de plano) sin necesidad de reentrenar el modelo fundacional, mediante un adaptador ligero. El acceso está restringido en Hugging Face y requiere aceptar la licencia comunitaria de LTX-2.
+El adaptador tiene 15.071 descargas y 87 likes en Hugging Face, esta bajo la licencia comunitaria ltx-2-community-license, solo soporta ingles en los prompts y requiere acceso restringido (gated): es necesario aceptar las condiciones en la pagina del modelo antes de descargarlo. El repositorio ocupa 1,3 GB, coherente con un adaptador LoRA sobre un modelo de 22B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) sobre el modelo base LTX-2.3; adaptador IC-LoRA |
-| Parametros totales | 22.000 millones (modelo base LTX-2.3); tamaño del adaptador no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de difusión de vídeo; ventana temporal no especificada) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusion de video LTX-2.3 |
+| Parametros totales | 22.000 millones (modelo base LTX-2.3); el adaptador LoRA no disponible en detalle |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | ltx-2-community-license (acceso restringido, requiere aceptación) |
-| Formato de pesos | diffusion-single-file (fichero único de difusión; safetensors no confirmado) |
+| Idiomas soportados | en (ingles) |
+| Licencia | ltx-2-community-license |
+| Formato de pesos | diffusion-single-file (fichero unico de difusion, 1,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena sobre LTX-2.3-22B, un modelo fundacional de difusión de vídeo basado en arquitectura DiT que, según la documentación oficial de Lightricks, integra generación de vídeo y audio sincronizados en un único modelo. El IC-LoRA es un adaptador de bajo rango que condiciona al modelo base mediante contexto visual (máscara y fotogramas de referencia) para resolver las tareas de inpainting y outpainting sin modificar los pesos del modelo fundacional.
+El adaptador se construye sobre LTX-2.3, el modelo de difusion de video de Lightricks de 22.000 millones de parametros. La tecnica IC-LoRA (in-context LoRA) introduce la informacion de condicionamiento (el video de entrada y la mascara de la region a editar) directamente en el contexto del modelo mediante adaptadores de bajo rango, de forma que el modelo base aprende a respetar la estructura temporal y espacial del clip original al rellenar o extender regiones. Al ser un LoRA, solo se entrenan y distribuyen los pesos del adaptador, no el modelo completo, lo que reduce el tamano del artefacto a 1,3 GB.
 
-No se dispone de información sobre el volumen de datos de entrenamiento del adaptador, la composición del dataset, ni si se emplearon técnicas de ajuste por preferencias (RLHF/DPO). Tampoco se detallan innovaciones específicas del adaptador más allá del mecanismo IC-LoRA, que permite reutilizar el mismo adaptador en versiones posteriores del modelo base: la documentación de LTX indica que el IC-LoRA de inpainting/outpainting de LTX-2.3 se reutiliza con los pesos de LTX-2.5.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). La informacion publica se limita a la ficha de Hugging Face, que no incluye una model card detallada con estos datos.
 
 ## Capacidades
 
-- Inpainting de vídeo: relleno o eliminación de regiones enmascaradas dentro del fotograma, como borrar una persona o sustituir un objeto.
-- Outpainting de vídeo: extensión del lienzo más allá de los bordes originales generando contenido coherente con el plano existente.
-- Edición vídeo-a-vídeo: el pipeline declarado es `video-to-video`, por lo que opera sobre material de vídeo existente.
-- Integración con flujos IC-LoRA en ComfyUI y en el ecosistema de inferencia oficial de LTX-2.
-- Compatibilidad declarada con los pesos de LTX-2.5 para las mismas tareas de edición.
-- Capacidades del modelo base (audio sincronizado, alta fidelidad, múltiples modos de rendimiento) heredadas de LTX-2.3, aunque el adaptador se centra en edición espacial.
-- Soporte de tool calling, agentes y razonamiento multi-paso: no disponible (no es un modelo de lenguaje).
-- Capacidades multilingües: limitadas al inglés (`en`) según los metadatos.
+- Inpainting de video: rellena regiones enmascaradas de un clip con contenido coherente con el resto de la escena y con continuidad temporal.
+- Outpainting de video: extiende el encuadre de un plano mas alla de sus bordes originales, generando contenido nuevo que encaja con el estilo y la perspectiva.
+- Video-to-video: pipeline declarado en Hugging Face, con condicionamiento sobre el video de entrada.
+- Consistencia temporal: al operar sobre el modelo base de video, mantiene la coherencia entre fotogramas en la region editada.
+- Soporte de prompts en ingles: el condicionamiento textual esta limitado al idioma ingles.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, audio ni thinking mode, al tratarse de un modelo de difusion de video y no de un LLM.
 
 ## Casos de uso
 
-- Eliminación de objetos en postproducción: se enmascara el elemento no deseado (una persona, un cartel, un vehículo) y el adaptador rellena la región con contenido coherente con el resto del plano, evitando un nuevo rodaje.
-- Reencuadre de material rodado en formato horizontal a vertical: el outpainting extiende el lienzo por los laterales para adaptar un plano 16:9 a 9:16 para redes sociales, generando el contenido que falta.
-- Limpieza de metraje de archivo: se eliminan marcas de agua, logotipos o elementos obsoletos de vídeos históricos antes de reutilizarlos en un montaje.
-- Corrección de continuidad: cuando un objeto aparece en un plano y desaparece en el siguiente, el inpainting permite borrarlo de forma selectiva para mantener la coherencia narrativa.
-- Creación de extensiones de plano para transiciones: el outpainting genera margen adicional alrededor de un plano para permitir movimientos de cámara virtuales o transiciones con desplazamiento en edición.
-- Prototipado rápido en publicidad: agencias que necesitan variantes de un mismo anuncio con distintos objetos o encuadres pueden generar las variantes con el adaptador en lugar de regrabar, reduciendo costes de producción.
-- Flujos automatizados en ComfyUI: integración del IC-LoRA en grafos de nodos para procesar lotes de clips con máscaras predefinidas, útil en pipelines de contenido a escala.
+- Eliminacion de objetos en postproduccion: se enmascara el elemento no deseado (un microfono, un cable, una senal) y el adaptador rellena la region con el fondo coherente, ahorrando el trabajo de rotoscopia manual.
+- Extension de encuadre para formatos alternativos: a partir de un plano rodado en 16:9 se genera el contenido lateral necesario para reencuadrar a 9:16 u otros formatos sociales sin recortar la accion.
+- Restauracion de material con huecos: rellenar zonas danadas, logotipos censurados o marcas de agua en clips archivisticos manteniendo la continuidad temporal.
+- Correccion de continuidad en VFX: sustituir elementos de una toma que no casan con el plano contiguo (atrezzo, vestuario, fondos) generando el relleno en lugar de regrabar.
+- Prototipado rapido de storyboards animados: extender o modificar planos generados previamente con LTX-2.3 para explorar variantes de encuadre antes de la produccion final.
+- Limpieza de material de vigilancia o documental: eliminar personas u objetos sensibles de un clip antes de su publicacion, con relleno coherente del fondo.
+- Edicion asistida en pipelines de video: integrar el adaptador en herramientas de edicion que aplican mascaras por fotograma y delegan el relleno en el modelo, reduciendo el coste de artistas de rotoscopia.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +52,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. El adaptador ocupa 1,3 GB, pero requiere cargar el modelo base LTX-2.3 de 22.000 millones de parámetros, cuyo consumo de VRAM no se detalla.
-- GPU recomendadas: no disponible. Por el tamaño del modelo base (22B), se requiere previsiblemente hardware de gama alta de centro de datos, pero no se confirma en la documentación consultada.
-- Viabilidad en GPU de consumo: no disponible; no se confirma que quepa en tarjetas consumer.
-- Opciones de despliegue: flujos IC-LoRA en ComfyUI y el repositorio oficial de inferencia LTX-2 (GitHub Lightricks/LTX-2). Soporte de vLLM, llama.cpp, Ollama o TGI: no aplicable (modelo de difusión, no de lenguaje).
-- Latencia y throughput: no disponible.
+- El adaptador LoRA ocupa 1,3 GB, pero requiere cargar el modelo base LTX-2.3 de 22B para funcionar; la VRAM necesaria la determina el modelo base, no el adaptador.
+- VRAM estimada para el modelo base: no disponible en la informacion proporcionada; por el tamano (22B) se situa previsiblemente en el rango de GPUs de datacenter, aunque no se confirma.
+- GPU recomendadas: no disponible; no se especifican modelos concretos en la informacion.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: la libreria declarada es diffusion-single-file; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a LLM, no a difusion de video).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones comparables de otros adaptadores de inpainting/outpainting de vídeo en la información proporcionada. La única comparación documentada es interna al ecosistema Lightricks: el mismo IC-LoRA se reutiliza con los pesos de LTX-2.5, lo que indica compatibilidad hacia adelante dentro de la familia LTX.
+No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas en la informacion proporcionada para establecer una comparativa rigurosa. Como referencia de categoria, este adaptador se situa en el ambito de la edicion de video por difusion (inpainting/outpainting), donde existen otros trabajos del ecosistema de video generativo, pero no se aportan cifras comparables.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LTX-2.3-22b-IC-LoRA-In-Outpainting | 22B (base) | no disponible | ltx-2-community-license | Hugging Face, acceso restringido |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+| LTX-2.3-22b-IC-LoRA-In-Outpainting | 22B (base) + LoRA | no disponible | ltx-2-community-license | gated en Hugging Face |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio está gated y exige aceptar la licencia comunitaria de LTX-2 en Hugging Face antes de la descarga.
-- Licencia `ltx-2-community-license`: no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial.
-- Idioma: los metadatos declaran únicamente inglés (`en`); el comportamiento con prompts en otros idiomas no está garantizado.
-- Dependencia del modelo base: el adaptador no funciona de forma autónoma; requiere los pesos de LTX-2.3 (22B), lo que condiciona los requisitos de hardware y almacenamiento.
-- Riesgo de artefactos: como todo modelo generativo de difusión, puede producir contenido incoherente en las regiones rellenadas o extendidas, especialmente en máscaras grandes o planos con movimiento complejo.
-- Sesgos: no se documentan sesgos específicos del adaptador; al heredar el modelo base, puede reproducir los sesgos presentes en sus datos de entrenamiento.
-- Alucinación visual: el outpainting puede generar contenido plausible pero incorrecto respecto a la escena original; requiere revisión humana en producción.
-- Sin datos de benchmarks ni de requisitos de hardware publicados en la información disponible, lo que dificulta la planificación de despliegues.
+- Acceso restringido: el modelo es gated y requiere aceptar las condiciones en Hugging Face antes de la descarga.
+- Licencia ltx-2-community-license: es una licencia "other" con terminos comunitarios; es imprescindible revisar las restricciones de uso comercial antes de integrarlo en produccion.
+- Idioma: los prompts solo estan soportados en ingles.
+- Dependencia del modelo base: el adaptador no funciona de forma autonoma; requiere LTX-2.3, con el coste de VRAM y computo asociado.
+- Riesgo de artefactos: como todo modelo de difusion, puede generar contenido incoherente o parpadeos en la region editada, especialmente en movimientos rapidos o escenas complejas; se recomienda revision humana.
+- Sesgos: no se documentan sesgos especificos en la informacion disponible, pero el modelo base puede reflejar los sesgos de sus datos de entrenamiento.
+- Alucinacion visual: el relleno generado puede no corresponder a la realidad de la escena (objetos plausibles pero inexistentes), lo que es critico en contextos documentales o forenses.
+- Ausencia de model card detallada: no hay informacion publica sobre datos de entrenamiento, evaluacion ni limitaciones documentadas por el autor.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-In-Outpainting
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
-- Repositorio oficial de inferencia y entrenador LoRA: https://github.com/Lightricks/LTX-2
-- Documentación de inpainting y outpainting: https://docs.ltx.io/open-source-model/feature-guides/editing-effects/in-outpainting
-- Sitio corporativo de Lightricks: https://www.lightricks.com/
-- Sobre Lightricks: https://www.lightricks.com/about
+- No se han encontrado en la busqueda web otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

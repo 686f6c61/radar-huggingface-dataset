@@ -5,7 +5,7 @@
   "author": "experimentalmachines",
   "url": "https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4-RL",
   "created_at": "2026-11-18T05:26:15.000Z",
-  "updated_at": "2026-11-23T02:33:34.000Z",
+  "updated_at": "2026-11-26T17:59:08.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,9 +26,9 @@
     "conversational",
     "custom_code",
     "en",
-    "dataset:experimentalmachines/MobileAgent-RL-v4",
-    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent-v4",
-    "base_model:finetune:experimentalmachines/LFM3-VL-2B-MobileAgent-v4",
+    "dataset:experimentalmachines/MobileAgent-RL",
+    "base_model:experimentalmachines/LFM3-VL-2B-MobileAgent",
+    "base_model:finetune:experimentalmachines/LFM3-VL-2B-MobileAgent",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -41,7 +41,7 @@
   "storage_bytes": 3918790146,
   "storage_human": "3.9 GB",
   "context_length": null,
-  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent-v4",
+  "base_model": "experimentalmachines/LFM3-VL-2B-MobileAgent",
   "formats": [
     "safetensors"
   ],
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-GRPO",
+  "renamed_at": "2026-11-27T10:29:38.218Z",
   "benchmarks": [],
   "sources": []
 }

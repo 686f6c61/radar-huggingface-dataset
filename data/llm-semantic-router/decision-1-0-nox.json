@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 17,
-  "downloads_30d": 191,
+  "downloads_30d": 193,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -50,31 +50,5 @@
   "renamed_to": "vllm-sr/Decision-1.0-Nox-4B",
   "renamed_at": "2026-11-11T06:05:28.726Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qu'est-ce qu'un LLM ? Guide complet 2026 | BienveNum",
-      "url": "https://bienvenum.org/quest-ce-quun-llm-guide-professionnels/",
-      "snippet": "Jun 8, 2026 · Un LLM (Large Language Model, ou grand modèle de langage en français) est un type d’intelligence artificielle capable …"
-    },
-    {
-      "title": "Grand modèle de langage — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
-      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
-    },
-    {
-      "title": "Large language model - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Large_language_model",
-      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
-    },
-    {
-      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
-      "url": "https://digitiz.fr/classement-llm/",
-      "snippet": "Sep 1, 2026 · Voici mon top 15 des LLM les plus performants en septembre 2026, avec leurs tarifs et mes recommandations selon …"
-    },
-    {
-      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
-      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
-      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
-    }
-  ]
+  "sources": []
 }

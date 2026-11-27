@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "AhmedKhaled391/yoloV11-plastic-classification",
+  "slug": "ahmedkhaled391-yolov11-plastic-classification",
+  "author": "AhmedKhaled391",
+  "url": "https://huggingface.co/AhmedKhaled391/yoloV11-plastic-classification",
+  "created_at": "2026-11-27T11:56:53.000Z",
+  "updated_at": "2026-11-27T12:23:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo11",
+    "object-detection",
+    "recycling",
+    "waste-sorting",
+    "plastic",
+    "dataset:AhmedKhaled391/pet-hdpe-detection",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7030113,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "PET/HDPE detection (item-level test split)",
+      "metric": "mAP@0.5",
+      "value": 0.984
+    },
+    {
+      "task": null,
+      "dataset": "PET/HDPE detection (item-level test split)",
+      "metric": "mAP@0.5:0.95",
+      "value": 0.885
+    },
+    {
+      "task": null,
+      "dataset": "PET/HDPE detection (item-level test split)",
+      "metric": "Precision",
+      "value": 0.973
+    },
+    {
+      "task": null,
+      "dataset": "PET/HDPE detection (item-level test split)",
+      "metric": "Recall",
+      "value": 0.96
+    },
+    {
+      "task": null,
+      "dataset": "PET/HDPE detection (item-level test split)",
+      "metric": "F1",
+      "value": 0.967
+    }
+  ],
+  "sources": []
+}

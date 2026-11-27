@@ -2,77 +2,85 @@
 
 ## Resumen
 
-EliasAI-7B-v1.0-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo EliasAI-7B-v1.0, publicada por el usuario mradermacher bajo su pipeline habitual de conversión y cuantización con imatrix. El modelo base, alojado en el repositorio ETME-TECH/EliasAI-7B-v1.0, cuenta con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) según los pesos en safetensors, lo que lo sitúa en la categoría de modelos densos de tamaño medio aptos para inferencia en hardware de consumo.
+EliasAI-7B-v1.0-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix, del modelo EliasAI-7B-v1.0 publicado por ETME-TECH. El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema de pesos comprimidos para llama.cpp. El modelo subyacente es un fine-tuning conversacional en alemán construido sobre Qwen/Qwen2.5-7B, con 7.615.616.512 parámetros totales según los pesos en safetensors del modelo original.
 
-El repositorio no incluye model card propia más allá de los metadatos de cuantización; toda la información descriptiva del modelo base (arquitectura, datos de entrenamiento, licencia, idiomas o benchmarks) no está disponible en la información proporcionada. La única orientación funcional es la etiqueta "conversational", que sugiere un ajuste orientado a diálogo, y el pipeline de cuantización por imatrix con 27 variantes de cuantización distintas, desde IQ1_S hasta Q6_K.
+El interés de esta ficha reside en que permite ejecutar un modelo de 7B especializado en conversación en alemán sobre hardware de consumo, algo relevante para desarrolladores que necesitan un asistente local en ese idioma sin depender de APIs. La colección incluye desde cuantizaciones IQ1_S de 2,0 GB (calidad muy degradada, orientadas a entornos con memoria extrema) hasta Q6_K de 6,4 GB, con la gama intermedia IQ4_XS, Q4_K_S y Q4_K_M como opciones de equilibrio entre tamaño, velocidad y calidad.
 
-Su relevancia práctica reside en que ofrece el modelo base en múltiples niveles de compresión GGUF, lo que permite desplegarlo desde entornos con muy poca VRAM (cuantizaciones de 1-2 bits) hasta configuraciones de mayor fidelidad (Q5_K_M, Q6_K). No obstante, la ausencia de documentación sobre el modelo original limita seriamente su evaluación rigurosa para producción.
+La licencia Apache 2.0 del modelo base facilita su uso comercial, aunque conviene revisar los términos del fine-tuning original. El repositorio ocupa 89,0 GB en total por acumular todas las variantes, pero cada archivo individual es descargable de forma independiente.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 7.615.616.512 (7,6 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-7B) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
+| Idiomas soportados | Aleman (segun tags de la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (existe tambien la version estatica en mradermacher/EliasAI-7B-v1.0-GGUF) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base EliasAI-7B-v1.0: no se especifica si es un transformer denso, un MoE o una arquitectura híbrida, ni el número de capas, dimensiones ocultas o mecanismo de atención. El recuento de parámetros (7,6 B) es compatible con un transformer denso de tamaño 7B, pero esto es una inferencia por tamaño y no un dato confirmado.
+El modelo subyacente es un fine-tuning de Qwen2.5-7B, por lo que hereda la arquitectura transformer decoder-only de esa familia, con atención por ventanas deslizantes y RoPE en su configuración original. EliasAI-7B-v1.0 se presenta como un modelo conversacional en alemán, según los tags de la model card, aunque no se detalla en la información disponible la composición del dataset de ajuste fino, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF, DPO o SFT supervisado.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. La model card del repositorio de cuantización únicamente documenta el proceso de conversión: cuantización con imatrix (matriz de importancia) a partir del modelo base en formato Hugging Face, con `quantize_version: 2` y `output_tensor_quantised: 1`. La etiqueta "conversational" sugiere un ajuste para diálogo, pero se desconoce el método.
+La innovación técnica de este repositorio concreto no está en el modelo, sino en el proceso de cuantización: mradermacher ha generado las variantes con imatrix (importance matrix), un método que calibra la cuantización a partir de estadísticas de activaciones recogidas con un corpus de calibración, lo que en la práctica mejora la perplejidad de las cuantizaciones de baja precisión frente a las cuantizaciones estáticas equivalentes. La model card incluye referencias a gráficos comparativos de perplejidad entre tipos de quant (ikawrakow) y al análisis de Artefact2 sobre el tema.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica un ajuste orientado a diálogo multi-turno, aunque no hay documentación que detalle el alcance.
-- Razonamiento, código y matemáticas: no disponible; no se han publicado capacidades específicas en la información proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas soportados.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de texto conversacional en alemán, orientada a diálogo multi-turno.
+- Razonamiento y respuesta a instrucciones heredadas de Qwen2.5-7B, aunque el ajuste fino puede haber reducido el rendimiento en tareas generales en favor del alemán.
+- Capacidades multilingües limitadas: el tag principal es `de` (alemán); no se documentan otros idiomas en la información disponible.
+- No se documenta soporte explícito de tool calling, function calling ni modo agente en la model card.
+- No se documenta soporte de visión, audio ni thinking mode.
+- Compatible con endpoints (tag `endpoints_compatible`), lo que indica que puede servirse mediante infraestructura de inferencia estándar de Hugging Face.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones IQ2/IQ3 y Q4 permiten ejecutar el modelo en GPUs con poca VRAM mediante llama.cpp u Ollama, útil para prototipos locales de chat sin infraestructura dedicada.
-- Experimentación con cuantización: el repositorio ofrece 27 variantes, lo que permite comparar la degradación de calidad entre niveles (por ejemplo, Q4_K_M frente a Q6_K) en una misma tarea conversacional.
-- Chatbot de asistencia en entornos aislados: al ser un GGUF ejecutable en local, puede desplegarse en máquinas sin conexión para conversaciones de soporte básicas, siempre que se valide previamente su calidad.
-- Evaluación comparativa de modelos 7B: sirve como punto de comparación frente a otros modelos de 7B cuantizados en tareas de diálogo, aunque la falta de benchmarks del modelo base limita la comparación rigurosa.
-- Integración en pipelines de inferencia con llama.cpp: el formato GGUF es compatible con servidores compatibles con la API de OpenAI (`endpoints_compatible`), lo que facilita sustituir un backend por otro en aplicaciones existentes.
-- Fine-tuning o destilación sobre el modelo base: los pesos originales en safetensors del repositorio ETME-TECH permiten partir de ellos para ajuste, aunque se desconoce la licencia y, por tanto, las restricciones de uso.
+- Asistente conversacional local en alemán: desplegando la variante Q4_K_M (4,8 GB) en un portátil con GPU de 8 GB, el modelo puede gestionar diálogos multi-turno en alemán sin conexión, útil para prototipos de atención al cliente en ese idioma.
+- Chatbot de soporte en pymes germanoparlantes: la licencia Apache 2.0 permite integrar el modelo en productos comerciales internos, con la cuantización IQ4_XS (4,3 GB) como opción de bajo consumo en servidores modestos.
+- Generación de texto asistida en entornos con restricciones de privacidad: al ejecutarse en local con llama.cpp u Ollama, los datos no salen del perímetro de la organización, lo que encaja en sectores regulados que operan en alemán.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 24 variantes con imatrix, lo que permite medir empíricamente la degradación de perplejidad entre IQ1_S y Q6_K en un mismo modelo, útil para investigación sobre compresión.
+- Fine-tuning posterior sobre dominio específico: al ser un modelo de 7B con licencia permisiva, puede servir como base para ajustes en nichos germanoparlantes (legal, médico, industrial) con recursos de GPU limitados.
+- Despliegue en dispositivos de borde: la variante IQ2_M (2,9 GB) o IQ3_XS (3,4 GB) permite ejecutar el modelo en mini-PC o Raspberry Pi con 8 GB de RAM, aunque con calidad reducida, para tareas de clasificación o respuestas cortas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; por el tamaño de 7,6 B, las cuantizaciones de 4 bits requieren aproximadamente 4-5 GB de VRAM, las de 5-6 bits entre 5,5 y 7 GB, y las de 1-2 bits alrededor de 2-3 GB (estimación por tamaño, no confirmada por el autor).
-- GPU recomendadas: no disponible; por tamaño, una RTX 3060 de 12 GB o superior permitiría las cuantizaciones Q4-Q6 con holgura.
-- Compatibilidad con GPU de consumo: previsiblemente sí en cuantizaciones Q4_K_M o inferiores en GPUs con 6-8 GB de VRAM, aunque no hay confirmación del autor.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con servidores de API tipo OpenAI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización): IQ1_S ≈ 2,0 GB, IQ2_M ≈ 2,9 GB, IQ3_XS ≈ 3,4 GB, IQ4_XS ≈ 4,3 GB, Q4_K_M ≈ 4,8 GB, Q5_K_M ≈ 5,5 GB, Q6_K ≈ 6,4 GB. Añadir entre 1 y 2 GB para el contexto KV cache según la longitud de contexto configurada.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para las variantes de mayor calidad; A100 o H100 solo si se sirve en producción con concurrencia alta.
+- Cabe en GPU de consumo: sí, desde una GTX 1060 6 GB (con IQ3_XS o IQ4_XS) hasta una RTX 4090 (Q6_K con contexto amplio).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM (con soporte GGUF), TGI (conversión previa).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparación fiable con alternativas de la misma categoría (modelos densos de ~7B). Cualquier comparación sería especulativa.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| EliasAI-7B-v1.0 (este) | 7,6 B | No disponible | Apache 2.0 | GGUF (imatrix y estático) | Fine-tuning conversacional en alemán sobre Qwen2.5-7B |
+| Qwen2.5-7B (base) | 7,6 B | No disponible en esta ficha | Apache 2.0 | Safetensors, GGUF, múltiples cuantizaciones | Modelo base multilingüe; capacidades generales superiores en otros idiomas |
+| Modelos alemanes de 7B comparables | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de benchmarks para comparar rendimiento |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, licencia ni idiomas del modelo base, lo que impide evaluar su idoneidad para producción.
-- Licencia desconocida: al no declararse licencia, no puede confirmarse el uso comercial; debe verificarse en el repositorio original ETME-TECH/EliasAI-7B-v1.0 antes de cualquier despliegue.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin benchmarks ni documentación de alineación, no puede estimarse su magnitud.
-- Sesgos: no disponible; no se han publicado análisis de sesgo.
-- Idiomas: no se declaran idiomas soportados; el rendimiento en castellano es desconocido.
-- Contexto: no disponible; se desconoce la ventana máxima y su comportamiento en conversaciones largas.
-- Cuantizaciones extremas: las variantes IQ1_S, IQ1_M e IQ2_XXS pueden degradar notablemente la coherencia; conviene validar la calidad antes de usarlas.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validación por parte de la comunidad.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen2.5-7B y ajustarse en alemán, puede heredar sesgos del corpus original y del dataset de ajuste.
+- Riesgo de alucinación: inherente a los modelos de 7B; sin benchmarks publicados no es posible cuantificar su fiabilidad en tareas factuales.
+- Limitaciones de contexto e idioma: el modelo está orientado al alemán; su rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior al de Qwen2.5-7B original.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar los términos del fine-tuning original de ETME-TECH por si añaden condiciones adicionales.
+- Caveat para producción: las cuantizaciones por debajo de IQ3_XS degradan notablemente la calidad; para uso serio se recomienda Q4_K_M o superior. La ausencia de benchmarks impide garantizar un rendimiento mínimo en tareas específicas.
+- El repositorio ocupa 89,0 GB por acumular todas las variantes; descargar solo el archivo necesario.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/EliasAI-7B-v1.0-i1-GGUF
-- Modelo base: https://huggingface.co/ETME-TECH/EliasAI-7B-v1.0
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/EliasAI-7B-v1.0-i1-GGUF
+- Modelo original: https://huggingface.co/ETME-TECH/EliasAI-7B-v1.0
+- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/EliasAI-7B-v1.0-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#EliasAI-7B-v1.0-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

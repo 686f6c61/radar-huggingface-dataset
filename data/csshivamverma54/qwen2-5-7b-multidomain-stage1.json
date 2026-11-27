@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "csshivamverma54/qwen2.5-7b-multidomain-stage1",
+  "slug": "csshivamverma54-qwen2-5-7b-multidomain-stage1",
+  "author": "csshivamverma54",
+  "url": "https://huggingface.co/csshivamverma54/qwen2.5-7b-multidomain-stage1",
+  "created_at": "2026-11-27T09:53:04.000Z",
+  "updated_at": "2026-11-27T09:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955187,
+  "storage_human": "173 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "cotulabs",
   "url": "https://huggingface.co/cotulabs/CoTu-EXACT26-GRM-2.5-Logic",
   "created_at": "2026-11-26T08:25:52.000Z",
-  "updated_at": "2026-11-26T08:48:04.000Z",
+  "updated_at": "2026-11-26T09:10:20.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

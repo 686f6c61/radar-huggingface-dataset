@@ -5,7 +5,7 @@
   "author": "RESMP-DEV",
   "url": "https://huggingface.co/RESMP-DEV/Inkling-2-Mini-MLA-LatentKV-Looping-3Layer-HealProbe",
   "created_at": "2026-11-26T23:51:05.000Z",
-  "updated_at": "2026-11-27T00:00:40.000Z",
+  "updated_at": "2026-11-27T00:51:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

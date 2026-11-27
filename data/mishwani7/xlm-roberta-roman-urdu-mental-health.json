@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mishwani7/XLM-RoBERTa-Roman-Urdu-Mental-Health",
+  "slug": "mishwani7-xlm-roberta-roman-urdu-mental-health",
+  "author": "mishwani7",
+  "url": "https://huggingface.co/mishwani7/XLM-RoBERTa-Roman-Urdu-Mental-Health",
+  "created_at": "2026-11-27T09:17:57.000Z",
+  "updated_at": "2026-11-27T09:20:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ur",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "mental-health",
+    "conformal-prediction",
+    "conformal-risk-control",
+    "roman-urdu",
+    "text-classification",
+    "ur",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129309509,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

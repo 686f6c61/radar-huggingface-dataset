@@ -5,7 +5,7 @@
   "author": "ViuAI",
   "url": "https://huggingface.co/ViuAI/ViuAI-40M",
   "created_at": "2026-11-26T15:17:51.000Z",
-  "updated_at": "2026-11-26T15:17:52.000Z",
+  "updated_at": "2026-11-26T16:28:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

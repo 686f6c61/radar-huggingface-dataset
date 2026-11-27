@@ -20,8 +20,8 @@
     "underdog",
     "automatic-speech-recognition",
     "en",
-    "base_model:ConwayResearch/Underdog-Bark-3.0-Plus",
-    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Plus",
+    "base_model:LoyalAI/Underdog-Bark-3.0-Plus",
+    "base_model:quantized:LoyalAI/Underdog-Bark-3.0-Plus",
     "license:cc-by-4.0",
     "region:us"
   ],

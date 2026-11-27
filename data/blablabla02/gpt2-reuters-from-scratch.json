@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "blablabla02/gpt2-reuters-from-scratch",
+  "slug": "blablabla02-gpt2-reuters-from-scratch",
+  "author": "blablabla02",
+  "url": "https://huggingface.co/blablabla02/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-27T11:38:58.000Z",
+  "updated_at": "2026-11-27T11:46:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "causal-lm",
+    "trained-from-scratch",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45670400,
+  "parameters_human": "45.7M",
+  "storage_bytes": 548067480,
+  "storage_human": "548 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

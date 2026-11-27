@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3-Youko-Minus-Base-GGUF",
+  "slug": "mradermacher-llama-3-youko-minus-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-Youko-Minus-Base-GGUF",
+  "created_at": "2025-03-09T15:10:31.000Z",
+  "updated_at": "2026-11-27T12:14:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820226560,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "Cas-Warehouse/Llama-3-Youko-Minus-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

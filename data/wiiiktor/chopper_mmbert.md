@@ -2,99 +2,133 @@
 
 ## Resumen
 
-Chopper mmBERT es un par de modelos encoder de compresión de contexto diseñados para reducir pasajes recuperados de un sistema RAG a únicamente los fragmentos que contienen la respuesta a una pregunta. Lo desarrolla el usuario wiiiktor y se publica bajo licencia MIT. El modelo no genera texto: recibe una cadena con la pregunta y hasta 16 pasajes separados por el token `[SEP]`, y devuelve, token a token, una probabilidad de conservación (`p(KEEP)`) que permite segmentar el texto original en fragmentos breves (típicamente unos 3 fragmentos de ~35 tokens sobre ~3.000 tokens de entrada).
+Chopper mmBERT es un modelo encoder de compresión de contexto diseñado para pipelines de generación aumentada por recuperación (RAG). Su función no es responder preguntas, sino leer los fragmentos que devuelve un recuperador (procedentes de una base de datos documental o de una conversación larga) y extraer únicamente las citas literales que contienen la respuesta, típicamente entre el 3 % y el 5 % del texto original. La salida es texto plano sin reescritura, de modo que los fragmentos resultantes pueden alimentar a cualquier modelo generador posterior.
 
-La relevancia de la propuesta es práctica: en lugar de enviar pasajes completos al LLM que responde, se envían solo las notas extraídas, lo que reduce drásticamente el consumo de contexto y el coste por consulta. Al ser un modelo independiente del generador (texto plano de entrada, texto plano de salida), los fragmentos pueden alimentar a cualquier LLM, incluidos modelos mucho más grandes que el encoder que los produce.
+Lo desarrolla el usuario wiiiktor y se construye sobre la familia mmBERT de jhu-clsp (mmBERT-base y mmBERT-small) y sobre pl-ModernBERT-base de OPI PIB para el caso polaco. El modelo recomendado, mmbert-base, tiene 0,31 mil millones de parámetros; la variante small, 0,14 mil millones. Admite entradas de hasta 8.192 tokens con el formato `Question: <pregunta> [SEP] <pasaje 1> [SEP] … [SEP] <pasaje N>` y emite, token a token, una probabilidad de conservación (p(KEEP)).
 
-Se publican dos variantes con la misma arquitectura y entrenamiento: mmBERT-base (0,31B parámetros) y mmBERT-small (0,14B), ambas derivadas de la familia jhu-clsp/mmBERT y entrenadas durante una época sobre las 54.000 filas de `wiiiktor/chopper_demo`, mezclando cadenas de benchmarks y de Wikipedia. El repositorio ocupa 0,9 GB e incluye el encoder en formato Transformers más las cabezas en safetensors.
+Su relevancia actual radica en que reduce drásticamente el coste de contexto en sistemas RAG multi-salto: en la evaluación sobre MuSiQue, el modelo recorta 2.620 tokens de veinte fragmentos hasta 228 tokens manteniendo o mejorando la precisión del generador en preguntas de 2 a 4 saltos. Además, el mismo pase de inferencia sirve como reranker competitivo, lo que permite eliminar una etapa separada del pipeline.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (mmBERT-base / mmBERT-small) con cabezas lineales de token classification (KEEP) y decisión (ANSWER/SEARCH) |
-| Parametros totales | 0,31B (mmbert-base) / 0,14B (mmbert-small) |
+| Arquitectura | Encoder transformer (mmBERT / ModernBERT), clasificación token a token |
+| Parametros totales | 0,31B (mmbert-base); 0,14B (mmbert-small); 0,15B (plmodernbert-base) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8.192 tokens de mmBERT (entrada: pregunta + hasta 16 pasajes) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | MIT |
-| Formato de pesos | safetensors (encoder en formato Transformers + `heads.safetensors`) |
+| Longitud de contexto | 8.192 tokens de entrada |
+| Tipos de cuantizacion | No disponible (se distribuyen safetensors y ONNX) |
+| Idiomas soportados | Multilingüe (8 idiomas en el conjunto de rerank); variantes específicas para polaco |
+| Licencia | MIT (pl-ModernBERT-base: Apache 2.0) |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer de la familia mmBERT, sobre el que se añaden dos cabezas lineales: una cabeza `keep` que produce una probabilidad sigmoide por token de conservar ese token, y una cabeza `decision` que, sobre el primer token, clasifica entre ANSWER y SEARCH. Las dos variantes (base y small) comparten el mismo esquema de entrenamiento y la misma disposición de pesos: carpeta `encoder/` con un modelo Transformers estándar y `heads.safetensors` con las cabezas.
+El modelo parte de encoders mmBERT (jhu-clsp) y pl-ModernBERT-base (OPI PIB), arquitecturas transformer con atención moderna optimizada para contextos largos. Sobre ellas se aplica un ajuste supervisado para predecir, para cada token de entrada, la probabilidad de que pertenezca a una cita que responda a la pregunta. La decodificación se realiza con umbral p > 0,5, fusionando huecos de hasta 5 tokens y descartando segmentos de menos de 4 tokens.
 
-El entrenamiento se realizó una sola vez sobre las 54.000 filas del dataset `wiiiktor/chopper_demo`, que mezcla cadenas de benchmarks y cadenas de Wikipedia, durante una época. No se detalla en la información disponible el número total de tokens, la composición exacta del dataset ni si hubo fases de RLHF o DPO. La supervisión procede de fragmentos generados por un profesor Qwen3-14B, según se indica en la sección de validación de la model card.
-
-La innovación principal es el enfoque de compresión extractiva: en lugar de resumir o reescribir, el modelo señala qué tramos del pasaje original responden a la pregunta, con mapeo de vuelta a offsets de caracteres (`[passage, char_start, char_end, text]`). El decodificado aplica umbrales concretos: se conservan tokens con `p > 0,8`, se fusionan huecos de hasta 5 tokens y se descartan tramos de menos de 4 tokens. El resultado típico son ~3 fragmentos de ~35 tokens a partir de ~3.000 tokens de entrada, es decir, se conserva entre el 3 % y el 5 % del texto.
+El conjunto de entrenamiento de la variante base consta de 102.654 filas en una única ejecución mixta: preguntas multi-salto de MuSiQue (incluidas las no respondibles), HotpotQA y 2WikiMultiHopQA; pools de rerank en 8 idiomas; artículos científicos de QASPER; y conversaciones de WildChat y Multi-Session Chat. Las variantes polacas añaden 15.652 filas de PoQuAD y PolQA mezcladas con 15.935 filas del conjunto original; la variante plmodernbert-base incorpora además 12.753 filas de multi-salto en polaco (MuSiQue traducido) y adapta todo el conjunto al tokenizador polaco. No se documenta en la información disponible el uso de RLHF o DPO. La innovación principal es el uso de un único pase para dos tareas: extracción de citas y puntuación de pasajes para rerank.
 
 ## Capacidades
 
-- Compresión extractiva de contexto: selecciona fragmentos relevantes de pasajes recuperados para una pregunta dada.
-- Clasificación binaria por token (KEEP / no KEEP) con salida de offsets de caracteres sobre el texto original.
-- Decisión ANSWER / SEARCH sobre el primer token (aunque, según la model card, en la práctica casi nunca predice SEARCH).
-- Independencia del modelo generador: la salida es texto plano, por lo que puede alimentar a cualquier LLM.
-- Procesamiento de hasta 16 pasajes en una sola entrada de hasta 8.192 tokens.
-- No realiza generación de texto, razonamiento, código, matemáticas ni visión: es exclusivamente un componente de selección previa.
-- No se documenta soporte de tool calling ni de agentes multi-paso.
+- Extracción de citas literales (chops) que responden a una pregunta, sin reescritura, a partir de hasta 8.192 tokens de contexto.
+- Compresión de contexto multi-salto: conserva las cadenas de evidencia necesarias en preguntas de 1 a 4 saltos.
+- Detección de preguntas no respondibles: emite la etiqueta SEARCH cuando la respuesta no está en los pasajes (67 % de acierto en pools con las frases respuesta eliminadas, 8 idiomas).
+- Reranking de pasajes en un solo pase: puntúa cada pasaje con la media de p(KEEP) de sus 16 tokens más probables.
+- Capacidad multilingüe en 8 idiomas para rerank; variantes específicas para polaco.
+- Integración con pipelines RAG mediante la librería `chopper-rag` y componentes para LangChain, LlamaIndex y Haystack.
+- Soporte de listas largas de candidatos mediante ranking por rondas (bloques de 50, mejores 25 releídos, mejores 10 una vez más).
+- No dispone de generación de texto, tool calling ni modo de razonamiento: es exclusivamente un componente de recuperación y filtrado.
 
 ## Casos de uso
 
-- Reducción de contexto en pipelines RAG: tras la recuperación de pasajes, Chopper mmBERT extrae solo los fragmentos relevantes y los inserta como notas breves antes de la pregunta, reduciendo el número de tokens enviados al LLM generador y, con ello, el coste y la latencia.
-- Atención al cliente sobre base documental: en un sistema de preguntas frecuentes con documentos largos, el encoder filtra los párrafos que contienen la respuesta y el generador recibe únicamente esos extractos, lo que disminuye el riesgo de distracción por contexto irrelevante.
-- Búsqueda multi-salto sobre Wikipedia: la model card valida el modelo en cadenas de 2 saltos (MuSiQue, HotpotQA, Wikipedia 2-hop), un escenario habitual en asistentes de investigación que encadenan varias consultas.
-- Preprocesado para modelos con ventanas de contexto limitadas: permite usar LLMs pequeños o con contexto corto en tareas de QA documental, ya que el encoder reduce la entrada a unos pocos fragmentos.
-- Moderación de coste en producción: al conservar solo el 3–5 % del texto, se puede aplicar como capa intermedia antes de cualquier llamada a un modelo de pago, con un coste computacional bajo (encoder de 0,14B o 0,31B).
-- Evaluación y depuración de recuperadores: al devolver offsets de caracteres y una decisión ANSWER/SEARCH, sirve para auditar qué parte de los pasajes recuperados es realmente útil para responder.
-- Procesamiento por lotes de corpus: al ser un encoder pequeño, puede ejecutarse sobre grandes volúmenes de documentos en CPU o GPU modesta para generar índices de fragmentos reutilizables.
+- Atención al cliente sobre bases documentales: el modelo recorta los fragmentos recuperados de un manual o histórico de tickets a las citas relevantes, reduciendo el contexto enviado al generador y el coste por consulta.
+- RAG multi-salto en dominios técnicos: para preguntas que requieren combinar evidencia de varios documentos, conserva las frases de cada salto (45 % de acierto a 3 saltos frente al 22 % con todos los fragmentos) con una décima parte de tokens.
+- Reranking en pipelines existentes: sustituye a un reranker dedicado (nDCG@10 de 0,973 frente a 0,984 de bge-reranker-v2-m3) con 0,20 s por consulta en una RTX 3090, incluyendo la extracción de citas.
+- Procesamiento de conversaciones largas: filtra el historial de sesiones multi-turno (Multi-Session Chat) para quedarse con los turnos que contienen la información necesaria antes de pasarlos al modelo generador.
+- Documentación científica y técnica: sobre artículos de QASPER, extrae las frases que responden a preguntas de investigación, útil en asistentes de revisión bibliográfica.
+- Sistemas RAG en polaco: la variante plmodernbert-base permite responder con 240 tokens lo que requeriría 3.856, con una precisión del 86,2 % frente al 85,2 % usando todos los fragmentos.
+- Reducción de latencia y coste en producción: al recortar el contexto un 90-95 %, disminuye el tiempo de prefill y el consumo de memoria del generador, lo que facilita desplegar modelos grandes con presupuestos ajustados.
+- Detección de recuperaciones fallidas: la etiqueta SEARCH permite activar una segunda ronda de recuperación o una respuesta de abstención cuando los pasajes no contienen la respuesta.
 
 ## Benchmarks y rendimiento
 
-Datos de validación publicados en la model card (F1 de caracteres frente a los fragmentos del profesor Qwen3-14B / proporción de preguntas cuya respuesta está en el texto conservado; 100 preguntas por conjunto):
+Multi-hop sobre 400 preguntas de MuSiQue dev (100 por nivel de saltos), con Qwen3-14B (4 bits) como generador y gpt-5.6-luna como juez. Respuestas correctas; entre paréntesis, solo preguntas cuyos chops conservaron todos los saltos y la respuesta:
 
-| Chopper | MuSiQue | HotpotQA | TriviaQA | Wikipedia 2-hop | Wikipedia 1-hop |
+| Generador responde desde | Tokens | 1 salto | 2 saltos | 3 saltos | 4 saltos |
 |---|---|---|---|---|---|
-| mmBERT-base | .55 / .48 | .64 / .80 | .39 / .80 | .62 / .92 | .72 / .91 |
-| mmBERT-small | .53 / .47 | .61 / .81 | .33 / .74 | .60 / .90 | .68 / .94 |
+| los 20 fragmentos | 2.620 | 84 | 28 | 22 | 12 |
+| chops de mmBERT-base | 228 | 83 (82) | 48 (44) | 45 (35) | 29 (21) |
+| chops de mmBERT-small | 217 | 72 (67) | 49 (41) | 32 (22) | 23 (11) |
+| chops de Claude Opus 5.5 | 144 | 90 (90) | 64 (60) | 55 (40) | 43 (30) |
 
-Además, leídos por el respondedor Qwen3-1.7B (`wiiiktor/chopper_qwen3`), los fragmentos de mmBERT-base dan exact match de .42 / .60 / .60 en MuSiQue / HotpotQA / TriviaQA respectivamente. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, lo cual es coherente con que el modelo no sea un generador.
+Validación (F1 de caracteres del texto conservado / proporción de preguntas cuya respuesta está en el texto conservado):
+
+| Chopper | MuSiQue | HotpotQA | TriviaQA | QASPER | Multi-Session Chat | Rerank, 8 idiomas |
+|---|---|---|---|---|---|---|
+| base | .56 / .55 | .63 / .85 | .42 / .69 | .30 / .32 | .68 / .59 | .52 |
+| small | .54 / .49 | .60 / .80 | .32 / .64 | .26 / .28 | .63 / .59 | .47 |
+
+Reranking sobre 16 pasajes por consulta en el holdout de 8 idiomas (400 consultas):
+
+| Modelo | nDCG@10 | Hit@1 | Tiempo GPU por consulta (RTX 3090) |
+|---|---|---|---|
+| mmBERT-base chopper, un pase | 0,973 | 0,972 | 0,20 s (chops incluidos) |
+| bge-reranker-v2-m3 | 0,984 | 0,985 | 0,20 s |
+| Qwen3-Reranker-0.6B | 0,977 | 0,972 | 0,77 s |
+| Qwen3-Reranker-4B | 0,986 | 0,990 | 3,3 s |
+
+MTEB (enviado, pendiente de revisión): HotpotQAHardNegatives NDCG@10 0,876; WikipediaRerankingMultilingual 0,972; RuBQReranking 0,816; HotpotQA-PLHardNegatives 0,757.
+
+Polaco (856 preguntas, Qwen3-14B, porcentaje de respuestas correctas):
+
+| Generador responde desde | Tokens | PoQuAD | PolQA | Total |
+|---|---|---|---|---|
+| los 16 fragmentos | 3.856 | 72,5 | 94,2 | 85,2 |
+| chops de mmBERT-base | 231 | 63,2 | 82,6 | 74,5 |
+| chops de mmBERT-base-pl | 255 | 77,2 | 91,6 | 85,6 |
+| chops de mmBERT-small-pl | 266 | 75,6 | 90,2 | 84,1 |
+| chops de plmodernbert-base | 240 | no disponible | no disponible | 86,2 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; por tamaño, mmBERT-small (0,14B) requiere del orden de 0,3 GB en fp32 y mmBERT-base (0,31B) del orden de 0,6 GB en fp32, sin contar activaciones ni el overhead de la librería.
-- GPU recomendadas: cualquier GPU con al menos unos pocos GB de memoria; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna; también es viable en CPU para lotes pequeños.
-- Opciones de despliegue: el ejemplo de la model card usa `transformers` + `safetensors` + `huggingface_hub` directamente; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: menos de 1 GB en fp16 para la variante base (0,31B parámetros); alrededor de 0,5 GB para small. En la práctica, la memoria la domina el contexto de 8.192 tokens y el tamaño de lote.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el modelo cabe holgadamente en RTX 3090, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores; incluso en CPU es viable con ONNX.
+- Despliegue: los pesos se distribuyen en safetensors y ONNX; la librería `chopper-rag` (pip) ofrece integración directa, y existen componentes para LangChain, LlamaIndex y Haystack. No se documenta soporte específico para vLLM, llama.cpp u Ollama, orientados a modelos generativos.
+- Latencia y throughput: 0,20 s por consulta en una RTX 3090 para reranking de 16 pasajes, incluyendo la extracción de citas. No se dispone de cifras de throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia |
-|---|---|---|---|---|
-| Chopper mmBERT-base | 0,31B | 8.192 tokens | Compresión extractiva de contexto RAG | MIT |
-| Chopper mmBERT-small | 0,14B | 8.192 tokens | Compresión extractiva de contexto RAG | MIT |
-| Chopper Qwen3 (`wiiiktor/chopper_qwen3`) | Porción del 10 % dentro de Qwen3-1.7B, más LoRA respondedora | No disponible | Compresión + respuesta | No disponible |
-| Chopper MiniCPM3 (`wiiiktor/chopper_minicpm3`) | Porción del 20 % dentro de MiniCPM3-4B | No disponible | Compresión de contexto | No disponible |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Chopper mmBERT-base | 0,31B | 8.192 | Compresión de contexto + rerank | MIT | Hugging Face |
+| bge-reranker-v2-m3 | No disponible | No disponible | Rerank | No disponible | Hugging Face |
+| Qwen3-Reranker-0.6B | 0,6B | No disponible | Rerank | No disponible | Hugging Face |
+| Qwen3-Reranker-4B | 4B | No disponible | Rerank | No disponible | Hugging Face |
 
-No se dispone de comparaciones con otros modelos de compresión de contexto de terceros en la información proporcionada.
+Frente a los rerankers dedicados, Chopper ofrece nDCG@10 ligeramente inferior (0,973 frente a 0,984 de bge-reranker-v2-m3 y 0,986 de Qwen3-Reranker-4B) pero con la ventaja de extraer las citas en el mismo pase y con la latencia del modelo más rápido (0,20 s, frente a 3,3 s del 4B). No se dispone de datos de parámetros ni contexto de los modelos comparados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cabeza de decisión ANSWER/SEARCH apenas predice SEARCH en la práctica; la model card reconoce que esa decisión la hace mejor la LoRA respondedora de `chopper_qwen3`.
-- El rendimiento en TriviaQA es notablemente inferior al resto (F1 de caracteres .39 en base y .33 en small), lo que sugiere menor robustez en preguntas de conocimiento factual aislado.
-- El modelo está entrenado sobre un dataset concreto (`chopper_demo`) y una única época; no se documenta su comportamiento fuera de ese dominio ni con idiomas distintos del inglés.
-- No se especifican los idiomas soportados, pese a que el modelo base mmBERT es multilingüe; conviene validar el comportamiento en castellano antes de usarlo en producción.
-- Al ser un extractor, puede descartar fragmentos necesarios si la pregunta requiere razonamiento que no está literalmente en el texto; el recorte al 3–5 % del pasaje es agresivo.
-- Riesgo de alucinación: no aplica directamente al no generar texto, pero los fragmentos seleccionados condicionan la respuesta del LLM posterior.
-- La licencia MIT permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar las condiciones del modelo base jhu-clsp/mmBERT.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la fecha de creación indicada es 2026-11-02; se trata de un modelo muy reciente y sin validación comunitaria independiente.
+- No es un modelo generativo: no responde preguntas por sí mismo, solo selecciona texto; requiere un generador posterior.
+- La precisión en preguntas de 4 saltos es limitada (29 % con chops frente a 84 % a 1 salto); las cadenas de evidencia largas siguen siendo un punto débil.
+- En TriviaQA y QASPER el F1 de caracteres es bajo (.42 y .30), lo que indica que la extracción puede perder parte del texto relevante en dominios alejados del entrenamiento.
+- Riesgo de eliminar evidencia necesaria: si el recorte descarta una frase clave, el generador responderá mal sin posibilidad de recuperarla; conviene monitorizar la tasa de abstención (SEARCH).
+- El umbral de decodificación (p > 0,5) y la fusión de huecos son hiperparámetros que afectan al equilibrio entre compresión y cobertura.
+- La variante plmodernbert-base usa un tokenizador exclusivamente polaco; para texto mixto debe usarse mmbert-base-pl.
+- Los resultados de MTEB están pendientes de revisión, por lo que las cifras no son definitivas.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al ser un extractor, puede heredar sesgos de los corpus de entrenamiento (MuSiQue, HotpotQA, WildChat).
+- Licencia MIT permite uso comercial, pero el modelo base pl-ModernBERT-base es Apache 2.0 y mmBERT de jhu-clsp debe verificarse según sus términos.
+- El repositorio ocupa 4,8 GB e incluye múltiples variantes; conviene descargar solo la carpeta necesaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/wiiiktor/chopper_mmbert
-- Dataset de entrenamiento: https://huggingface.co/datasets/wiiiktor/chopper_demo
-- Código: https://github.com/wiiiktor/chopper_demo
-- Chopper Qwen3: https://huggingface.co/wiiiktor/chopper_qwen3
-- Chopper MiniCPM3: https://huggingface.co/wiiiktor/chopper_minicpm3
-- Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
+- Código y demo: https://github.com/wiiiktor/chopper_demo
+- Detalles técnicos: https://github.com/wiiiktor/chopper_demo/blob/main/docs/DETAILS.md
+- Dataset de demostración: https://huggingface.co/datasets/wiiiktor/chopper_demo
+- Modelo base mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base
+- Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
+- Modelo base pl-ModernBERT-base: https://huggingface.co/OPI-PIB/pl-ModernBERT-base
+- Resultados MTEB (PR pendiente): https://github.com/embeddings-benchmark/results/pull/850
+- Paper de PolQA: https://aclanthology.org/2024.lrec-main.1125
+- Modelo polish-roberta-base-8k: https://huggingface.co/sdadas/polish-roberta-base-8k

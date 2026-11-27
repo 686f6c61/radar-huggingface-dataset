@@ -2,57 +2,51 @@
 
 ## Resumen
 
-LTX-2.5-22b-LoRA-Cinemagraph es un adaptador LoRA para el modelo de generación de vídeo a partir de imagen (image-to-video, i2v) LTX-2.5 de Lightricks. Su función específica es producir el efecto cinematográfico conocido como *cinemagraph*: a partir de una imagen fija, el modelo anima selectivamente una región del encuadre (por ejemplo, el movimiento del pelo, el humo de una taza o el agua de una fuente) mientras mantiene el resto de la escena estático. El resultado es un bucle de vídeo corto con movimiento localizado y realista, un recurso muy demandado en motion design y publicidad.
+LTX-2.5-22b-LoRA-Cinemagraph es un adaptador LoRA desarrollado por Lightricks para su modelo base de generación de vídeo LTX-2.5, de 22 mil millones de parámetros. El LoRA está especializado en la creación de *cinemagraphs*: vídeos en los que una parte de la imagen permanece estática mientras otra se anima de forma selectiva (por ejemplo, el humo de una taza de café que se mueve mientras el resto de la escena queda congelado). Se distribuye como un único archivo de difusión compatible con el pipeline `image-to-video`.
 
-El adaptador se distribuye como un único archivo de difusión (formato `diffusion-single-file`) de aproximadamente 0,2 GB, lo que lo hace muy ligero frente a los pesos completos del modelo base, que ronda los 22.000 millones de parámetros. Se aplica sobre LTX-2.5, el modelo de vídeo de la familia LTX-2.x de Lightricks, y hereda su licencia comunitaria `ltx-2.x-community-license`.
+El modelo resuelve un problema muy concreto dentro de la generación de vídeo: el control fino del movimiento. En lugar de animar toda la escena, el LoRA aprende a aislar regiones de movimiento sobre una imagen de entrada, lo que lo hace útil para motion design, contenido publicitario y piezas de *loop* visual. Al ser un adaptador sobre LTX-2.5, hereda la arquitectura y el contexto del modelo base, pero no puede ejecutarse de forma autónoma.
 
-Es relevante ahora porque el acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face, y porque demuestra el patrón actual de la familia LTX: un modelo base grande más una constelación de LoRAs especializados (cinemagraph, slow motion control, IC-LoRA) que permiten ajustar el comportamiento del generador sin reentrenar los pesos completos. La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada; los apartados correspondientes lo indican explícitamente.
+Es relevante ahora porque la familia LTX-2.5 ha consolidado el vídeo generativo open weight de alta resolución, y este tipo de LoRAs especializados demuestran el ecosistema de ajuste fino alrededor del modelo base. La licencia es la LTX-2.x Community License (no plenamente abierta) y el acceso está restringido: requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador LoRA sobre el modelo de difusión LTX-2.5) |
-| Parámetros totales | no disponible para el LoRA (modelo base LTX-2.5: ~22.000 millones según el nombre del repo) |
-| Parámetros activos | no disponible |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusión LTX-2.5 |
+| Parámetros totales | 22 mil millones (modelo base); el adaptador LoRA no declara recuento propio |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | `ltx-2.x-community-license` (acceso restringido, requiere aceptación) |
-| Formato de pesos | `diffusion-single-file` (archivo único de difusión) |
-| Tamaño del repositorio | ~0,2 GB |
-| Modelo base | Lightricks/LTX-2.5 |
-| Tarea | image-to-video (i2v), cinemagraph, movimiento selectivo |
-| Librería | diffusion-single-file |
-| Fecha de creación | 2026-09-10 |
-| Última actualización | 2026-10-22 |
-| Descargas / likes | 6.747 / 51 |
+| Tipos de cuantización | no disponible en la información proporcionada |
+| Idiomas soportados | inglés (en) |
+| Licencia | LTX-2.x Community License (acceso restringido/gated) |
+| Formato de pesos | diffusion-single-file (archivo único de difusión) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del adaptador ni del modelo base en la documentación disponible. Por el nombre del repositorio y la librería declarada (`diffusion-single-file`), se trata de un LoRA de bajo rango empaquetado en un único archivo que se carga junto con los pesos del modelo de difusión LTX-2.5. El modelo base pertenece a la familia LTX-2.x de Lightricks, orientada a generación de vídeo, y el adaptador está etiquetado como `base_model:adapter:Lightricks/LTX-2.5`, lo que confirma que se aplica como adaptador sobre ese checkpoint.
+El LoRA se aplica sobre LTX-2.5, un modelo de difusión para generación de vídeo condicionada por imagen (image-to-video). El adaptador introduce matrices de bajo rango en las capas del modelo base para especializarlo en la tarea de cinemagraph: movimiento selectivo y localizado sobre una imagen estática de partida. El repositorio ocupa 0,2 GB, lo que confirma que se trata de un adaptador ligero y no de pesos completos.
 
-Tampoco hay datos públicos sobre el volumen de tokens o clips de entrenamiento, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO. La especialización declarada es el *cinemagraph*: movimiento selectivo y localizado sobre una imagen de entrada, con el resto del encuadre congelado. No se dispone de información sobre innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.) en la información proporcionada.
+No se dispone de información detallada sobre el dataset de entrenamiento del LoRA (número de pares imagen-vídeo, composición, uso de RLHF o DPO) ni sobre innovaciones técnicas específicas del adaptador. El modelo base LTX-2.5 emplea difusión, pero la información proporcionada no detalla su variante concreta (transformer de difusión, atención lineal, decodificación especulativa, etc.), por lo que estos datos se marcan como no disponibles.
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen de entrada (image-to-video).
-- Efecto cinemagraph: animación selectiva de regiones concretas del encuadre mientras el resto permanece estático.
-- Control de movimiento localizado, orientado a bucles cortos y motion design.
-- Trabajo en inglés (único idioma declarado en las etiquetas).
-- Integración con el ecosistema de difusión de Lightricks mediante la librería `diffusion-single-file`.
-- Compatibilidad declarada con el modelo base LTX-2.5 y con la familia de LoRAs LTX-2.5 (cinemagraph, slow motion control, IC-LoRA).
-- No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso; no aplica a un modelo de difusión de vídeo.
+- Generación de vídeo image-to-video con movimiento selectivo (cinemagraph).
+- Aislamiento de regiones animadas frente a zonas estáticas de la escena.
+- Producción de piezas de motion design y bucles visuales (*loops*).
+- Control de movimiento localizado sobre una imagen de entrada.
+- Compatible con el pipeline `image-to-video` de la librería `diffusion-single-file`.
+- Requiere el modelo base Lightricks/LTX-2.5 para funcionar.
+- Soporte de tool calling, agentes, visión o audio: no disponible / no aplicable (es un modelo generativo de vídeo).
+- Capacidades multilingües: limitadas al inglés según los metadatos.
 
 ## Casos de uso
 
-- Publicidad de producto: animar el vapor de una bebida o el brillo de un objeto sobre una foto fija de catálogo, manteniendo el producto y el fondo perfectamente estables para evitar artefactos en el material de marca.
-- Motion design para redes sociales: generar bucles cortos de cinemagraph a partir de fotografías de paisajes o retratos, con movimiento sutil en el agua, las nubes o el pelo, listos para publicar como clips de pocos segundos.
-- Fondos animados para webs y presentaciones: producir vídeos de fondo con movimiento localizado (por ejemplo, una llama o una cortina) que no distraigan del contenido superpuesto.
-- Creación de contenido para e-commerce: animar ligeramente una prenda o un accesorio sobre una imagen de estudio para aumentar la percepción de realismo sin rodaje adicional.
-- Postproducción y VFX de bajo coste: aportar movimiento ambiental a *stills* de un plano en una secuencia, como humo, polvo o agua, sin necesidad de simulación física.
-- Prototipado creativo en estudios de diseño: iterar rápidamente sobre una imagen fija para explorar variantes de movimiento antes de comprometer un rodaje o una animación manual.
-- Contenido editorial y de moda: dar vida a fotografía estática con movimiento sutil en tejidos o cabello, un formato habitual en campañas digitales.
+- Publicidad y contenido de marca: generar piezas donde el producto permanece fijo y solo se anima un elemento (humo, vapor, cabello, líquido), ideal para banners y anuncios sociales con movimiento sutil.
+- Motion design para webs y pantallas: crear *loops* de cinemagraph que se integren como fondo animado en landing pages sin recargar la escena completa.
+- Postproducción fotográfica: animar un detalle de una fotografía fija (una vela, una planta, el agua) para dar vida a material estático en vídeo promocional.
+- Contenido para redes sociales: producir clips cortos con movimiento selectivo que destacan sobre el feed sin necesidad de rodaje.
+- Prototipado creativo: explorar variantes de animación sobre un *still* de referencia antes de invertir en producción real.
+- Arte digital e instalaciones: generar piezas de vídeo en bucle con regiones animadas controladas para exposiciones o pantallas ambientales.
+- Pruebas de concepto en pipelines de vídeo: integrar el LoRA en flujos de generación image-to-video para evaluar el control de movimiento antes de escalar a producción.
 
 ## Benchmarks y rendimiento
 
@@ -60,40 +54,37 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA ocupa ~0,2 GB, pero requiere cargar el modelo base LTX-2.5 (~22.000 millones de parámetros) para la inferencia; el requisito real de VRAM lo determina el modelo base, no el LoRA.
-- VRAM estimada para el modelo base: no disponible en la información proporcionada. Con 22.000 millones de parámetros, la inferencia en precisión completa excede con holgura las GPU de consumo; se necesitarían GPUs de datacenter (A100, H100 o similares) o cuantización agresiva del base.
-- GPU recomendadas: no disponibles de forma oficial; por tamaño del base, cabría esperar A100/H100 de 80 GB para precisión alta y GPUs de 24 GB solo con cuantización y optimizaciones, sin datos confirmados.
-- ¿Cabe en GPU de consumo? No confirmado; el LoRA por sí solo sí, el modelo base completo probablemente no sin cuantización.
-- Opciones de despliegue: la librería declarada es `diffusion-single-file`; no se documentan integraciones oficiales con vLLM, llama.cpp, Ollama o TGI (no aplican a difusión de vídeo en la mayoría de los casos).
-- Latencia y throughput: no disponibles.
+- El adaptador LoRA ocupa 0,2 GB, pero requiere cargar el modelo base LTX-2.5 de 22 mil millones de parámetros para inferencia.
+- VRAM estimada: no disponible en la información proporcionada (depende de la cuantización del modelo base y de la resolución/duración del vídeo).
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no disponible; el tamaño del modelo base (22B) sugiere requisitos elevados, pero no se confirman cifras.
+- Opciones de despliegue: pipeline `image-to-video` con la librería `diffusion-single-file`; otras opciones (vLLM, llama.cpp, Ollama, TGI) no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-LoRA-Cinemagraph | LoRA i2v (cinemagraph) sobre LTX-2.5 | ~22.000 M (base) | no disponible | `ltx-2.x-community-license` | Gated en Hugging Face |
-| LTX-2.5-22b-LoRA-Slow-Motion-Control | LoRA i2v (control de cámara lenta) sobre LTX-2.5 | ~22.000 M (base) | no disponible | `ltx-2.x-community-license` | Hugging Face (Lightricks) |
-| LTX-2.5-22b-IC-LoRA | LoRA de control sobre LTX-2.5 | ~22.000 M (base) | no disponible | `ltx-2.x-community-license` | Hugging Face (Lightricks) |
-| LTX-2.5 (base) | Modelo de difusión de vídeo | ~22.000 M | no disponible | `ltx-2.x-community-license` | Hugging Face (Lightricks) |
+| LTX-2.5-22b-LoRA-Cinemagraph | LoRA sobre difusión de vídeo | 22B (base) | no disponible | LTX-2.x Community License | Gated en Hugging Face |
+| Lightricks/LTX-2.5 (base) | Difusión de vídeo image-to-video | 22B | no disponible | LTX-2.x Community License | Gated en Hugging Face |
+| Otros LoRAs de la familia LTX-2.5 | Adaptadores especializados | no disponible | no disponible | LTX-2.x Community License | Hugging Face |
 
-No se dispone de datos de rendimiento comparado con modelos de otros fabricantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo con alternativas de otros proveedores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
-- Licencia `ltx-2.x-community-license`: conviene revisar sus términos antes de cualquier uso comercial; no es una licencia de código abierto estándar y puede imponer restricciones de uso, atribución o redistribución.
-- Solo inglés declarado en las etiquetas del modelo; no hay evidencia de soporte multilingüe.
-- Es un adaptador, no un modelo autónomo: sin el modelo base LTX-2.5 no funciona, y el coste computacional real recae en el base.
-- Riesgo de artefactos en la región animada y de "sangrado" de movimiento hacia zonas que deberían permanecer estáticas, algo intrínseco a los cinemagraphs generados.
-- No hay información publicada sobre sesgos, tasas de alucinación visual ni evaluación cualitativa sistemática.
-- No se documentan requisitos de hardware, latencias ni límites de resolución o duración de los clips; verificar en la model card antes de producción.
-- Al ser un modelo de difusión de vídeo, no ofrece tool calling, agentes ni razonamiento; no debe evaluarse con métricas de LLM.
+- Requiere el modelo base LTX-2.5; no es un modelo autónomo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar.
+- Licencia LTX-2.x Community License: no es una licencia de código abierto plena; revisar las restricciones de uso comercial antes de producción.
+- Idiomas: el modelo está etiquetado únicamente en inglés.
+- Especialización estrecha: está entrenado para cinemagraphs y movimiento selectivo; su uso fuera de ese dominio puede degradar la calidad frente al modelo base.
+- Riesgo de artefactos en las fronteras entre zonas animadas y estáticas, habitual en este tipo de adaptadores (no confirmado en la información disponible).
+- No se dispone de información sobre sesgos, alucinaciones visuales o límites de duración/resolución del vídeo generado.
+- Para producción, validar la estabilidad temporal del movimiento y la coherencia entre fotogramas con el modelo base concreto y la cuantización elegida.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph
-- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
-- Web de Lightricks: https://www.lightricks.com/
-- Sobre Lightricks: https://www.lightricks.com/about
-- GitHub de Lightricks: https://github.com/Lightricks
-- Wikipedia (Lightricks): https://en.wikipedia.org/wiki/Lightricks
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Página de Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Licencia LTX-2.x Community License: no disponible como enlace directo en la información proporcionada.

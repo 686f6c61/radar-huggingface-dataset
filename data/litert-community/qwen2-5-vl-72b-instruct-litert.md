@@ -2,96 +2,105 @@
 
 ## Resumen
 
-Qwen2.5-VL-72B-Instruct-LiteRT es una conversión del modelo vision-language Qwen2.5-VL-72B-Instruct de Qwen al formato LiteRT-LM (sucesor de TensorFlow Lite), publicada por la organización litert-community en Hugging Face. El objetivo de esta conversión es llevar un modelo multimodal de gran tamaño (72B parámetros) a la ejecución en dispositivo (on-device), concretamente sobre GPU de Apple Silicon mediante WebGPU, sin depender de servidores en la nube.
+Qwen2.5-VL-72B-Instruct-LiteRT es una conversión del modelo vision-language Qwen2.5-VL-72B-Instruct de Alibaba Qwen al formato LiteRT-LM (.litertlm), orientado a inferencia on-device. La conversión la mantiene el colectivo litert-community y se ha generado con LiteRT Tensor API (decoder de texto), litert-torch 0.10.0 (encoder de visión y tabla de tokens), ai-edge-quantizer 0.10.0 y litert-lm-builder 0.19.0. El resultado es un único fichero de 42,7 GB que empaqueta el decoder de texto cuantizado a int4, el encoder de visión y el adaptador en int8, la tabla de embeddings en int8, el tokenizador y la plantilla de chat.
 
-El modelo original es un sistema image-text-to-text que procesa texto, imágenes y vídeo (aunque en esta conversión el vídeo no está soportado). La versión LiteRT cuantiza los pesos del decodificador de texto a int4 con bloques de 128, manteniendo el codificador de visión en fp32, y empaqueta todo en un único archivo `.litertlm` de 44,8 GB con tokenizador y plantilla de chat incluidos.
+El modelo base es el Qwen2.5-VL-72B-Instruct, un transformer multimodal de 80 capas con decoder Qwen2 de hidden size 8.192, 64 cabezas de consulta y 8 cabezas key-value (GQA), más un encoder de visión de 32 capas. Lee texto, imágenes y vídeo, aunque esta conversión concreta solo procesa imágenes a una resolución fija de 448 × 448 (256 tokens de imagen) y una única imagen por conversación, con una ventana de contexto de 2.048 tokens. El vídeo no está incluido en este fichero.
 
-Su relevancia actual radica en demostrar que modelos de 72B parámetros pueden ejecutarse localmente en hardware de consumidor de gama alta: sobre la GPU de un Apple M4 Max alcanza 8,31 tokens/s de decodificación y 63,6 tokens/s de prefill, con un contexto limitado a 2.048 tokens en esta variante. Es una ficha técnica interesante para desarrolladores que exploran inferencia multimodal local con la pila LiteRT-LM de Google.
+La relevancia de esta ficha está en que demuestra la viabilidad de ejecutar un modelo de 72.000 millones de parámetros en hardware de consumo de gama alta (Apple M4 Max con 128 GB de memoria unificada) a 8,55 tokens/s en decodificación tras procesar una imagen. No es un modelo para servir en producción a gran escala, sino una pieza de referencia para quien quiera evaluar LiteRT-LM como runtime on-device con modelos multimodales grandes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador de texto Qwen2 de 80 capas + codificador de vision de 32 capas (multimodal) |
-| Parametros totales | 72B (modelo base Qwen2.5-VL-72B-Instruct) |
+| Arquitectura | Transformer multimodal: decoder de texto Qwen2 (80 capas) + encoder de vision (32 capas) + adaptador |
+| Parametros totales | 72.000 millones (modelo base Qwen2.5-VL-72B-Instruct) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.048 tokens (cache KV en este archivo) |
-| Tipos de cuantizacion | int4 blockwise (128 por bloque) en pesos del decodificador; int8 en capa de salida y tabla de embeddings; fp32 en codificador de vision y adaptador; activaciones declaradas fp32 |
-| Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero la ficha no lo especifica) |
-| Licencia | Qwen LICENSE AGREEMENT (other / qwen) |
-| Formato de pesos | .litertlm (LiteRT-LM, basado en TFLite) |
+| Longitud de contexto | 2.048 tokens (KV cache declarada en el fichero) |
+| Tipos de cuantizacion | Pesos int4 blockwise (bloque de 128) en decoder; capa de salida int8; embeddings int8; vision encoder y adaptador int8 per-channel; activaciones fp32 declaradas |
+| Idiomas soportados | no disponible (heredados del modelo base Qwen2.5-VL; la model card no los enumera) |
+| Licencia | Qwen License Agreement (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | .litertlm (LiteRT-LM), 42.684.876.864 bytes |
+| Tamano del repositorio | 87,5 GB |
+| Resolucion de imagen | 448 × 448 fija (256 tokens de imagen), una imagen por conversacion |
+| Video | no soportado en este fichero |
+| Runtime | LiteRT-LM 0.19.0 |
+| Fecha de creacion | 2026-10-30 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un decodificador de texto Qwen2 de 80 capas con tamaño oculto de 8.192, 64 cabezas de consulta y 8 cabezas clave-valor (GQA), junto a un codificador de vision de 32 capas. El modelo base lee texto, imágenes y vídeo; esta conversión, sin embargo, está limitada a una imagen por conversación a resolución fija de 448 × 448, que se convierte en 256 tokens de imagen. No hay soporte de vídeo en este archivo.
+La arquitectura subyacente es la del Qwen2.5-VL-72B-Instruct original: un transformer decoder-only de 80 capas con hidden size de 8.192, 64 cabezas de atención de consulta y 8 cabezas key-value (GQA con ratio 8:1), acoplado a un encoder de visión de 32 capas mediante un adaptador. El modelo base fue entrenado por Alibaba Qwen; esta conversión no aporta información sobre el dataset de entrenamiento, el número de tokens ni las fases de alineación (RLHF/DPO) del modelo original, por lo que esos datos deben consultarse en la model card del repositorio Qwen/Qwen2.5-VL-72B-Instruct.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no hay datos en la información disponible. En cuanto a la conversión: se realizó con la LiteRT Tensor API para el decodificador de texto, litert-torch 0.10.0 para el codificador de visión y la tabla de tokens, ai-edge-quantizer 0.10.0 y litert-lm-builder 0.19.0 para LiteRT-LM 0.19.0. El archivo incluye firmas de prefill de 32 / 128 / 1.024 tokens y decodificación sobre una cache KV de 2.048 tokens.
+La innovación técnica de esta ficha no está en el entrenamiento, sino en la conversión y el empaquetado para LiteRT-LM. El fichero .litertlm agrupa en un solo contenedor el decoder de texto con pesos int4 blockwise (bloque de 128) y capa de salida int8, la tabla de embeddings en int8 como sección independiente, el encoder de visión y el adaptador en int8 per-channel con activaciones fp32, el tokenizador y la plantilla de chat. Se declaran firmas de prefill de 32, 128 y 1.024 tokens y una firma de decode sobre una KV cache de 2.048 tokens. La versión publicada el 2026-11-01 cambió los pesos del encoder de visión y adaptador de fp32 a int8, reduciendo el fichero en 2,1 GB y manteniendo respuestas idénticas palabra por palabra en 23 preguntas de evaluación (3 de imagen y 20 de MMStar) y en la mayoría de las respuestas de un conjunto adicional de diez imágenes con preguntas multi-paso. El sampler del fichero es top-k 1 / top-p 1.0 (greedy efectivo, coherente con el temperature 0.000001 del generation_config original); la repetition penalty de 1.05 del modelo fuente no está incluida en el fichero y debe pasarse por mensaje en la API de LiteRT-LM.
 
 ## Capacidades
 
-- Comprensión y generación de texto multimodal (image-text-to-text): responde preguntas sobre imágenes.
-- Entrada de imagen a resolución fija 448 × 448 (256 tokens de imagen), una imagen por conversación.
-- No soporta vídeo en este archivo convertido.
-- Plantilla de chat incluida; sin mensaje de sistema usa el defecto del modelo original ("You are a helpful assistant.").
-- Muestreo greedy por defecto (top-k 1, top-p 1.0), coherente con el generation_config del modelo original (temperatura 0,000001); el penalty de repetición de 1,05 del original no está incorporado y debe pasarse por mensaje si se desea.
-- Ejecución on-device en GPU vía WebGPU (y CPU) con la API Python de LiteRT-LM.
-- No hay información sobre tool calling, agentes ni modo de razonamiento extendido en la documentación disponible.
+- Generación de texto y razonamiento multimodal a partir de una imagen y una pregunta en lenguaje natural.
+- Comprensión de imágenes a resolución fija 448 × 448 (256 tokens de imagen), con redimensionado bicúbico y sin preservar la relación de aspecto.
+- Preguntas de conteo, descripción, lectura de contenido visual y razonamiento multi-paso sobre una imagen (validado en la model card con preguntas de seguimiento).
+- Conversaciones multi-turno dentro de una ventana de 2.048 tokens, con una sola imagen por conversación.
+- Plantilla de chat compatible con mensajes de sistema; si no se proporciona uno, se aplica el mensaje por defecto "You are a helpful assistant.".
+- Decodificación greedy configurable (top-k, top-p) y penalización de repetición por mensaje a través de la API Python de LiteRT-LM.
+- Ejecución on-device en GPU (backend WebGPU en macOS) y en CPU.
+- No soporta vídeo en este fichero, ni tool calling, ni function calling, ni modo thinking explícito, ni audio.
 
 ## Casos de uso
 
-- Analisis local de fotografias con privacidad: al ejecutarse íntegramente en el dispositivo, permite responder preguntas sobre imágenes ("¿cuántos gatos hay en esta foto?") sin enviar datos a la nube, adecuado para fotos personales o sensibles.
-- Prototipado de apps multimodales on-device en Apple Silicon: la API Python de LiteRT-LM permite integrar el motor en aplicaciones macOS con backend GPU (WebGPU) y vision backend en GPU.
-- Evaluacion de cuantizacion int4 en modelos grandes: útil como banco de pruebas para medir el impacto de la cuantización blockwise int4 sobre un modelo de 72B en latencia y calidad.
-- Asistente de descripcion de imagenes en flujos de trabajo offline: entornos sin conectividad (laboratorios, despliegues air-gapped) donde se necesita etiquetado o descripción de imágenes puntuales.
-- Pruebas de rendimiento de inferencia local: el archivo incluye mediciones de prefill, decode y memoria que sirven como referencia para comparar backends GPU frente a CPU en LiteRT-LM.
-- Investigacion en Vision-Language Models embebidos: base para experimentar con adaptadores y codificadores de visión en fp32 junto a decodificadores cuantizados dentro del ecosistema LiteRT.
+- Asistente visual local en estación de trabajo Apple Silicon: responder preguntas sobre capturas, fotos o diagramas sin enviar la imagen a la nube, aprovechando la ejecución on-device en la GPU del Mac mediante LiteRT-LM y el backend WebGPU.
+- Aplicación de escritorio macOS de preguntas sobre una imagen: el repositorio google-ai-edge/litert-samples incluye la app picture_questions, que usa este fichero o Muse-Glimmer-30B a través de la API C de LiteRT-LM; requiere un Mac con 64 GB de memoria o más.
+- Evaluación de LiteRT-LM como runtime para modelos multimodales grandes: sirve como referencia para medir latencia, throughput y fidelidad de cuantización int4/int8 frente al modelo original en fp16/bf16.
+- Prototipado de pipelines de inspección visual con privacidad estricta: clasificación o descripción de imágenes en entornos sin conectividad, donde el coste de enviar datos a un servicio externo es inasumible.
+- Docencia e investigación sobre cuantización: el par de ficheros (fp32 vs int8 en visión) y las métricas de coincidencia palabra por palabra permiten estudiar el impacto de la cuantización en la salida de un VLM de 72B.
+- Verificación de accesibilidad: describir el contenido de una imagen a una persona con discapacidad visual en un dispositivo local, con la limitación de resolución fija y una sola imagen por conversación.
+- Benchmark de hardware: medir tokens/s en GPUs de consumo con memoria unificada grande (M4 Max 128 GB) como referencia para decidir si merece la pena desplegar modelos de esta escala en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, etc.) en la información disponible. Sí hay mediciones de rendimiento de inferencia en un Apple M4 Max (128 GB, macOS 27.0), con litert-lm 0.19.0, una imagen de 448 × 448 y pregunta corta (284–290 tokens de prompt, 256 de ellos la imagen), muestreo greedy:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo reporta métricas de rendimiento y una evaluación cualitativa de fidelidad de la cuantización:
 
-| Backend | Prefill (tok/s) | Decode (tok/s) | Time to first token (s) | First text (s) | Follow-up: first text (s) | Memoria pico |
-|---|---:|---:|---:|---:|---:|---|
-| GPU (vision en GPU, este archivo) | 63,6 | 8,31 | 4,60 | 4,75 / 5,41 | 0,96 | 46 GiB (footprint) |
-| CPU (build anterior, mismos pesos) | 5,6 / 5,2 | 2,22 / 2,40 | 51,1 / 56,1 | 52,0 / 57,5 | no disponible | 4,9 GiB (footprint); 70 GiB residente |
-
-Notas: la fila GPU es la mediana de tres preguntas en conversaciones nuevas (decode 8,27–8,33; prefill 58,1–65,4). La primera pregunta de un proceso construye los programas GPU del codificador de visión (7,7 s adicionales). La creación del motor tardó 14,3 s con el archivo ya en memoria; leerlo desde disco USB tomó unos 5 minutos. La fila CPU proviene de un build anterior con cache KV de 4.096 tokens, 3,5–3,7 veces más lento en decodificación.
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Decodificacion (GPU) | 8,55 tokens/s | Apple M4 Max 128 GB, macOS 27.0, litert-lm 0.19.0 (WebGPU), imagen 448 × 448, pregunta corta, 284-290 tokens de prompt (256 de imagen), mediana de 6 preguntas en 2 procesos, 2026-10-31 |
+| Decodificacion (CPU) | 3,6 a 3,9 veces mas lenta que GPU | Build anterior con vision encoder en fp32, backend CPU para ambos |
+| Coincidencia de respuestas (int8 vs fp32 en vision) | 23/23 identicas palabra por palabra | 3 preguntas de imagen + 20 de MMStar |
+| Coincidencia en 10 imagenes con preguntas multi-paso | 7/10 primeras respuestas identicas; 3 solo cambian redaccion; 7/10 seguimientos identicos, 2 solo redaccion, 1 paso intermedio distinto con misma respuesta | Conjunto adicional de 10 imagenes |
 
 ## Requisitos de hardware
 
-- Memoria: footprint pico de 46 GiB en GPU (Apple M4 Max, 128 GB de memoria unificada); en CPU se observaron 4,9 GiB de footprint con ~70 GiB residentes (casi todo archivos mapeados de pesos y cache).
-- GPU recomendada: GPU de Apple Silicon (probado en Apple M4 Max) mediante el path WebGPU de LiteRT-LM 0.19.0. No hay datos sobre GPUs NVIDIA/AMD.
-- Consumer GPU: cabe en un Apple M4 Max de 128 GB; no hay datos sobre viabilidad en GPUs de consumidor con memoria dedicada (una RTX 4090 de 24 GB no bastaría para los 44,8 GB del archivo).
-- Despliegue: exclusivamente mediante LiteRT-LM 0.19.0 (pip install litert-lm==0.19.0), con API Python y backends GPU o CPU. No aplica vLLM, llama.cpp, Ollama ni TGI.
-- Latencia: primer token en 4,6 s (GPU) tras prefill de ~290 tokens; 0,96 s para una pregunta de seguimiento sobre la misma imagen. Decodificación de 8,31 tokens/s en GPU y ~2,2–2,4 tokens/s en CPU.
-- Almacenamiento: 44,8 GB para el archivo del modelo; se recomienda SSD local (leerlo desde USB tardó ~5 minutos).
+- VRAM/memoria estimada: el fichero .litertlm ocupa 42,7 GB; se necesita margen adicional para activaciones y KV cache de 2.048 tokens. La model card indica que la app de ejemplo requiere un Mac con 64 GB de memoria o más.
+- GPU recomendadas: Apple M4 Max con 128 GB de memoria unificada (medido); no se documentan pruebas en A100, H100 ni RTX 4090.
+- GPU de consumo: no cabe en GPUs consumer con 24 GB o menos (RTX 4090, 3090). Requiere memoria unificada o VRAM de al menos 48-64 GB.
+- Opciones de despliegue: LiteRT-LM 0.19.0 (API Python `litert_lm.Engine` y API C); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: 8,55 tokens/s en decode sobre M4 Max 128 GB con GPU; en CPU, 3,6-3,9 veces más lento según la model card (build anterior con visión en fp32).
+- Almacenamiento: 42,7 GB para el fichero .litertlm; el repositorio completo ocupa 87,5 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Ejecucion | Licencia |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-72B-Instruct-LiteRT | 72B | 2.048 tokens | .litertlm (int4) | On-device, Apple Silicon (WebGPU) | Qwen LICENSE AGREEMENT |
-| Qwen/Qwen2.5-VL-72B-Instruct (base) | 72B | no disponible en la info proporcionada | safetensors | Servidor / GPU datacenter | Qwen LICENSE AGREEMENT |
-| Alternativas VLM on-device comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen2.5-VL-72B-Instruct-LiteRT (este) | 72B | 2.048 tokens | .litertlm / LiteRT-LM 0.19.0 | Qwen License | Conversion on-device con cuantizacion int4/int8; 8,55 tok/s en M4 Max |
+| Qwen/Qwen2.5-VL-72B-Instruct | 72B | no disponible en la informacion | safetensors / transformers | Qwen License | Modelo base sin cuantizar; soporta video y multiples imagenes; requiere VRAM muy superior |
+| Muse-Glimmer-30B | 30B | no disponible | .litertlm / LiteRT-LM | no disponible | Alternativa mencionada en la app picture_questions de litert-samples; menor tamano |
 
-No hay datos suficientes en la información proporcionada para una comparativa de rendimiento detallada con otros VLM convertidos a LiteRT-LM.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contexto muy reducido: 2.048 tokens en este archivo, de los cuales 256 los consume cada imagen; insuficiente para documentos largos o conversaciones extensas.
-- Resolución de imagen fija a 448 × 448 sin conservar la relación de aspecto (el redimensionado bicúbico estira la imagen), lo que puede degradar la calidad frente al modelo original con resolución dinámica.
-- Una sola imagen por conversación en las pruebas; el vídeo no está soportado en este archivo.
-- El penalty de repetición de 1,05 del modelo original no está incorporado; sin él pueden aparecer repeticiones en generaciones largas.
-- La primera ejecución de un proceso añade ~7,7 s de compilación de programas GPU del codificador de visión; la carga desde disco lento puede tardar minutos.
-- Riesgo de alucinación: no hay datos específicos publicados para esta conversión; como todo VLM, puede describir incorrectamente el contenido de las imágenes.
-- Sesgos: no documentados en la información disponible; hereda los del modelo base Qwen2.5-VL.
-- Licencia: la Qwen LICENSE AGREEMENT impone condiciones de atribución y restricciones de uso (requisitos de NOTICE); conviene revisarla antes de cualquier despliegue comercial.
-- Proyecto con tracción muy limitada (13 descargas, 1 like en el momento de la ficha): madurez y soporte comunitario escasos.
+- Contexto reducido a 2.048 tokens, muy inferior al del modelo base; las conversaciones largas o prompts con mucho texto se truncan.
+- Una sola imagen por conversación y resolución fija de 448 × 448 sin preservar la relación de aspecto; detalles finos o imágenes panorámicas pueden perderse.
+- Sin soporte de vídeo en este fichero, aunque el modelo base sí lo soporta.
+- Sin tool calling, function calling ni modo thinking explícito documentados.
+- La repetition penalty de 1.05 del modelo fuente no está incluida; si no se pasa por mensaje, el comportamiento puede diferir del original en generaciones largas.
+- La cuantización int4 del decoder y int8 de visión introduce desviaciones menores: en las evaluaciones de la model card se observan diferencias de redacción y, en un caso, un paso intermedio distinto con la misma respuesta final.
+- Riesgo de alucinación inherente al modelo base; no se documentan evaluaciones de sesgo ni de robustez en la información disponible.
+- Licencia Qwen License Agreement (etiquetada "other" en Hugging Face): es necesario revisar los términos del fichero LICENSE del repositorio antes de cualquier uso comercial; la model card no aclara restricciones adicionales derivadas de la conversión.
+- Requiere hardware con 64 GB o más de memoria; no es desplegable en GPUs de consumo convencionales.
+- El backend GPU de LiteRT-LM 0.19.0 en macOS usa WebGPU, lo que puede limitar el rendimiento frente a backends nativos.
+- Modelo con muy poca adopción (194 descargas, 1 like) en el momento de la ficha; no hay evidencia de uso en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct
 - Licencia: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT/blob/main/LICENSE
-- LiteRT-LM en PyPI: https://pypi.org/project/litert-lm/
-- Paper, blog o demo oficial: no disponible en la información proporcionada.
+- Version anterior del fichero (commit 9ac47fea): https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT/tree/9ac47fea16b1e7816ce59e6bc6c7837f682a92e5
+- App de ejemplo picture_questions (macOS): https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert_lm/picture_questions/macos

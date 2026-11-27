@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118",
   "created_at": "2026-11-09T14:21:29.000Z",
-  "updated_at": "2026-11-26T07:07:29.000Z",
+  "updated_at": "2026-11-27T04:14:38.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "nemotron_parse",
     "OCR",
@@ -28,8 +29,9 @@
     "custom_code",
     "th",
     "en",
+    "arxiv:2611.27494",
     "base_model:nvidia/Nemotron-3.5-Parse",
-    "base_model:finetune:nvidia/Nemotron-3.5-Parse",
+    "base_model:quantized:nvidia/Nemotron-3.5-Parse",
     "license:other",
     "region:us"
   ],
@@ -43,6 +45,7 @@
   "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Parse",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": true,
@@ -51,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "iapp/OpenThai2.2-OCR-Markdown-20261127",
+  "renamed_at": "2026-11-27T11:33:20.888Z",
   "benchmarks": [],
   "sources": []
 }

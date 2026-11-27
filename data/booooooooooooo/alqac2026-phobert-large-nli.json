@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Booooooooooooo/alqac2026-phobert-large-nli",
+  "slug": "booooooooooooo-alqac2026-phobert-large-nli",
+  "author": "Booooooooooooo",
+  "url": "https://huggingface.co/Booooooooooooo/alqac2026-phobert-large-nli",
+  "created_at": "2026-11-27T09:04:41.000Z",
+  "updated_at": "2026-11-27T09:05:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "legal-ir",
+    "natural-language-inference",
+    "text-classification",
+    "nli-verifier",
+    "cross-encoder",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 369165314,
+  "parameters_human": "369.2M",
+  "storage_bytes": 1476709528,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

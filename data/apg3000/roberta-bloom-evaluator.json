@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "apg3000/roberta-bloom-evaluator",
+  "slug": "apg3000-roberta-bloom-evaluator",
+  "author": "apg3000",
+  "url": "https://huggingface.co/apg3000/roberta-bloom-evaluator",
+  "created_at": "2026-11-27T10:56:30.000Z",
+  "updated_at": "2026-11-27T11:00:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149609478,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598452088,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

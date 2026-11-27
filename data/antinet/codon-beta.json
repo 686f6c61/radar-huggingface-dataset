@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "Antinet/codon-beta",
+  "slug": "antinet-codon-beta",
+  "author": "Antinet",
+  "url": "https://huggingface.co/Antinet/codon-beta",
+  "created_at": "2026-11-26T23:34:34.000Z",
+  "updated_at": "2026-11-27T08:39:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14488320,
+  "storage_human": "14 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ancestral Sequence Reconstruction as an Emerging Strategy for AI ...",
+      "url": "https://pubs.acs.org/accacs/article/doi/10.1021/acscatal.6c06176/5468393/Ancestral-Sequence-Reconstruction-as-an-Emerging",
+      "snippet": "10.11.2026 ... Codon and amino-acid models; marginal and joint reconstruction; steep learning curve, (31). FastML, maximum-likelihood reconstruction with a ..."
+    },
+    {
+      "title": "Anticodon loop remodeling and D-stem shape drive the specific ...",
+      "url": "https://academic.oup.com/nar/article/54/11/gkag599/8710947",
+      "snippet": "18.06.2026 ... N6-threonylcarbamoyladenosine (t6A) is a modified nucleoside found at position 37 in the anticodon loop of transfer RNAs (tRNAs) decoding ANN ..."
+    },
+    {
+      "title": "A Cofactor-Based Mechanism for the Origin of the Genetic Code",
+      "url": "https://link.springer.com/article/10.1007/s11084-022-09628-5",
+      "snippet": "08.09.2022 ... ... codon-anticodon duplex.This could determine the specific cofactors ... Model for the synthesis of new amino acids from simple amino ..."
+    },
+    {
+      "title": "Translation control by altered start codon usage as a means of ...",
+      "url": "https://journals.plos.org/plosgenetics/article?id=10.1371%2Fjournal.pgen.1011851",
+      "snippet": "A translational reporter assay demonstrated distinct differences in translation efficiency between three start codons: ATG > ATA > ATT, suggesting that a ..."
+    }
+  ]
+}

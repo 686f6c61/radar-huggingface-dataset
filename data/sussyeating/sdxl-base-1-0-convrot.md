@@ -2,98 +2,105 @@
 
 ## Resumen
 
-SDXL Base 1.0 ConvRot es una cuantización del checkpoint [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) publicada por el usuario SUSSYEATING. No se trata de un modelo nuevo, sino de una versión comprimida del UNet de SDXL mediante una técnica propietaria denominada ConvRot, que combina cuantización lineal de todas las capas lineales del UNet (739 de 739) con una corrección de sesgo basada en calibración. Las capas Conv2d, los codificadores de texto CLIP y el VAE se mantienen sin cuantizar.
+SDXL Base 1.0 ConvRot es una familia de checkpoints cuantizados del modelo de difusion text-to-image stabilityai/stable-diffusion-xl-base-1.0, publicados por el usuario SUSSYEATING. El objetivo es reducir el peso del UNet de SDXL (6,94 GB en FP16) manteniendo la fidelidad visual respecto al modelo original, mediante una tecnica propietaria de cuantizacion de pesos denominada ConvRot, basada en rotacion de Hadamard por bloques combinada con GPTQ secuencial en cuatro etapas. Se ofrecen tres niveles de precision: INT8, INT6 (W6A8) e INT4 (W4A8).
 
-El objetivo es reducir el peso del checkpoint para facilitar su despliegue en ComfyUI sin degradar la calidad de imagen de forma significativa. El checkpoint INT8 principal ocupa 4,72 GB frente a los 6,94 GB del FP16 original, una reducción del 32 %. Se incluyen además variantes experimentales de 6 bits (W6A8 e híbrida W6/W8) que llegan a 4,16 GB empaquetadas, con una penalización de calidad notablemente mayor.
+El modelo resuelve un problema practico de despliegue: SDXL Base ocupa demasiada VRAM para GPUs de consumo medio y para pipelines con varios checkpoints cargados simultaneamente. Con estos ficheros el UNet baja a 4,72 GB (INT8), 4,31 GB (INT6) y 3,77 GB (INT4), lo que permite ejecutar SDXL en tarjetas de 8-12 GB con margen para el VAE y los text encoders (que se mantienen en FP16).
 
-La relevancia de esta publicación es acotada: se trata de un artefacto de cuantización con 0 descargas y 0 likes en el momento de la consulta, orientado a usuarios de ComfyUI que quieran ahorrar VRAM o espacio en disco manteniendo el modelo base SDXL. No aporta capacidades nuevas ni cambios arquitectónicos respecto al original.
+La relevancia actual radica en que los checkpoints son single-file y cargan directamente en ComfyUI estandar (version 0.45.0 o superior) mediante los kernels CUDA nativos de comfy-kitchen, sin nodos adicionales ni desempaquetado. La licencia es CreativeML Open RAIL++-M, heredada del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | UNet + VAE + doble codificador de texto CLIP (arquitectura SDXL Base 1.0 original, cuantizada) |
-| Parámetros totales | no disponible (no se indica el recuento en la información proporcionada) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo text-to-image; resolución nativa 1024×1024) |
-| Tipos de cuantización | INT8 (739/739 capas lineales), INT6 W6A8 (739/739), híbrida W6/W8 (619 INT6 + 120 INT8) |
-| Idiomas soportados | no disponible |
-| Licencia | CreativeML Open RAIL++-M (etiquetada como openrail++) |
-| Formato de pesos | safetensors (checkpoint único para ComfyUI; variantes `*-packed.safetensors` requieren desempaquetado) |
+| Arquitectura | UNet de difusion (SDXL Base 1.0) con cuantizacion ConvRot sobre capas Linear; Conv2d, text encoders (CLIP-L / OpenCLIP-G) y VAE en FP16 |
+| Parametros totales | no disponible (el modelo base SDXL Base 1.0 no publica un recuento desglosado en la informacion proporcionada) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion text-to-image; resolucion nativa 1024x1024) |
+| Tipos de cuantizacion | INT8, INT6 (W6A8), INT4 (W4A8); GPTQ con rotacion Hadamard por bloques |
+| Idiomas soportados | no disponible (prompts en lenguaje natural; SDXL Base soporta principalmente ingles) |
+| Licencia | CreativeML Open RAIL++-M (openrail++) |
+| Formato de pesos | safetensors single-file para ComfyUI (`diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es SDXL Base 1.0, un modelo de difusión latente con arquitectura UNet y dos codificadores de texto CLIP (uno de ellos OpenCLIP ViT-bigG). Esta publicación no reentrena el modelo: aplica cuantización post-entrenamiento sobre las capas lineales del UNet. La técnica ConvRot incluye una corrección de sesgo calibrada que, según el autor, compensa el error introducido por la cuantización y permite que el INT8 supere incluso la deriva BF16 frente a FP16 en métricas de similitud.
+El modelo es una cuantizacion post-entrenamiento (PTQ) del UNet de SDXL Base 1.0. La tecnica ConvRot aplica una rotacion de Hadamard por bloques antes de la cuantizacion, lo que reduce los valores atipicos en las activaciones y mejora la estabilidad del rango de cuantizacion. Sobre esa base se aplica un GPTQ secuencial en cuatro etapas con orden de activaciones (`H_qq`), busqueda de clip por fila ponderada por la Hessiana para INT8, busqueda de escala de grupo FP8 a traves de la rejilla, refinamiento de codigos por descenso de coordenadas amortiguado, codebooks Lloyd-Max y una correccion acumulativa de sesgo por deriva de activaciones.
 
-Las variantes de 6 bits se ofrecen en dos formatos: un contenedor INT8 directamente cargable en ComfyUI y un archivo empaquetado más pequeño que debe desempaquetarse con el script `scripts/unpack_int6.py` antes de su uso. No se documentan datos de entrenamiento, composición del dataset ni procesos de RLHF/DPO, ya que no hay entrenamiento involucrado más allá de la calibración de la cuantización.
+Las capas Conv2d, los text encoders CLIP-L y OpenCLIP-G y el VAE permanecen sin cuantizar en FP16. De las 739 capas Linear del UNet, en INT8 se cuantizan las 739; en INT6 e INT4 se cuantizan 658 y las 81 restantes (capas pequenas con `K=640` y la clave de deteccion de arquitectura `to_k`) se mantienen en ConvRot INT8 porque los kernels `w6a8`/`w4a8` de comfy-kitchen requieren `K % 256 == 0`. No se dispone de informacion sobre el dataset de calibracion ni sobre el numero de muestras utilizado.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen a 1024×1024, heredadas del modelo base SDXL.
-- Compatibilidad directa con ComfyUI (versión >= v0.45.0) mediante el nodo estándar `Load Checkpoint`.
-- Tres niveles de compresión seleccionables: INT8 (recomendado), W6/W8 híbrido e INT6 W6A8.
-- No incluye tool calling, function calling, agentes ni razonamiento multi-step: es un modelo de difusión, no un LLM.
-- No soporta visión, audio ni modos de pensamiento.
-- Capacidades multilingües: no documentadas en la información proporcionada.
+- Generacion de imagenes text-to-image a 1024x1024 con el mismo comportamiento que SDXL Base 1.0.
+- Tres niveles de precision intercambiables segun el compromiso calidad/VRAM deseado.
+- Carga directa en ComfyUI estandar mediante el nodo `Load Checkpoint` (ComfyUI >= v0.45.0), sin nodos personalizados.
+- Compatible con el ecosistema de ComfyUI (samplers, schedulers, LoRAs y controlnets que operen sobre SDXL Base).
+- Soporte de negative prompts, CFG y resoluciones SDXL estandar.
+- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video: es exclusivamente un modelo de difusion para imagen.
+- Capacidad multilingue limitada al comportamiento del text encoder de SDXL Base (predominantemente ingles).
 
 ## Casos de uso
 
-- Despliegue de SDXL en GPUs con VRAM limitada: el checkpoint INT8 de 4,72 GB permite cargar el modelo en tarjetas donde el FP16 de 6,94 GB no cabría junto con el VAE y los codificadores de texto.
-- Flujos de trabajo en ComfyUI con múltiples checkpoints: la reducción de tamaño facilita mantener varias variantes (Base, Refiner, Lightning, Turbo) en disco sin agotar el almacenamiento.
-- Prototipado rápido en entornos de investigación: permite comparar el efecto de la cuantización INT8 frente a FP16 con las métricas publicadas (SSIM, PSNR, similitud coseno) como referencia.
-- Generación de imágenes por lotes en servidores con presupuesto de memoria ajustado: el ahorro de VRAM permite aumentar el tamaño de lote o resolución de trabajo.
-- Evaluación de técnicas de cuantización post-entrenamiento: las variantes INT6 e híbridas sirven como caso de estudio de la degradación de calidad en modelos de difusión.
-- Distribución de checkpoints en entornos con ancho de banda limitado: los archivos empaquetados de 6 bits (4,16-4,28 GB) reducen el tamaño de descarga, aunque requieren un paso de desempaquetado.
+- Despliegue de SDXL en GPUs de consumo: con el checkpoint INT4 (3,77 GB) el UNet cabe en tarjetas de 8 GB junto con VAE y text encoders en FP16, permitiendo generar a 1024x1024 en equipos donde el FP16 no entra.
+- Pipelines con multiples checkpoints: al reducir el peso por modelo, se pueden mantener cargados SDXL Base, Refiner y variantes Lightning/Turbo del mismo autor en una sola GPU.
+- Servicios de generacion de imagenes con presupuesto de VRAM ajustado: el INT8 ofrece la mayor fidelidad (cosine 0,99459) con un 32 % menos de peso, adecuado para APIs donde la calidad es prioritaria.
+- Prototipado rapido en ComfyUI: al ser single-file y cargar sin nodos extra, sirve para iterar sobre flujos de trabajo SDXL en entornos con recursos limitados.
+- Fine-tuning o LoRA sobre base cuantizada: util para experimentar con adaptadores sobre una base mas ligera, aunque la cuantizacion puede limitar la compatibilidad de algunos entrenamientos.
+- Evaluacion comparativa de tecnicas de cuantizacion: los informes de metricas incluidos (cosine, SSIM, PSNR) permiten reproducir la comparacion frente a FP16 con el script `verify_sdxl_quant.py`.
+- Generacion por lotes en produccion con throughput moderado: los tiempos medidos (4,76 s/imagen en INT8, 5,32 s en INT6, 5,40 s en INT4, en caliente) son compatibles con colas de trabajo no interactivas.
 
 ## Benchmarks y rendimiento
 
-Métricas publicadas por el autor sobre GPU G4, ComfyUI v0.45.0, 8 prompts a 1024×1024, comparando contra el checkpoint FP16 sin cuantizar. La referencia BF16 vs FP16 se incluye como línea base de equivalencia visual.
+Metricas medidas sobre 8 prompts a 1024x1024 en ComfyUI v0.45.3 frente al FP16 sin cuantizar (`sd_xl_base_1.0.safetensors`). Referencia BF16 sin cuantizar: cosine 0,99186 (min 0,96847), SSIM 0,94269 (min 0,85051), PSNR 32,20 dB (min 26,31 dB).
 
-| Variante | CosMean / Min | SSIM Mean / Min | PSNR Mean / Min | Velocidad media (warm) |
+| Nivel de precision | Cosine media / min | SSIM media / min | PSNR media / min | Velocidad en caliente |
 |---|---|---|---|---|
-| INT8 ConvRot (739/739) | 0,99433 / 0,98653 | 0,95213 / 0,91965 | 32,82 / 30,11 dB | 4,63 s (FP16: 2,90 s) |
-| W6/W8 Hybrid ConvRot | 0,95784 / 0,89655 | 0,84762 / 0,72200 | 24,78 / 20,07 dB | 4,69 s |
-| W6A8 INT6 ConvRot (739/739) | 0,95743 / 0,89424 | 0,84064 / 0,72535 | 24,57 / 20,38 dB | 4,62 s |
-| Referencia BF16 vs FP16 | 0,99186 / — | 0,94269 / — | 32,20 / — dB | — |
+| Full INT8 ConvRot | 0,99459 / 0,98156 | 0,95612 / 0,89355 | 33,28 / 27,24 dB | 4,76 s/imagen |
+| Full INT6 ConvRot | 0,99381 / 0,98645 | 0,95011 / 0,91579 | 32,19 / 28,54 dB | 5,32 s/imagen |
+| Full INT4 ConvRot | 0,97411 / 0,96053 | 0,87257 / 0,82174 | 26,18 / 22,86 dB | 5,40 s/imagen |
 
-El autor destaca que el INT8 ConvRot supera a la referencia BF16 en similitud coseno, SSIM y PSNR medios, atribuyéndolo a que la rejilla simétrica de 255 niveles del INT8 es más fina que la truncación de mantisa de 7 bits del BF16 en distribuciones de pesos normalizadas típicas. No se han publicado resultados de benchmarks estándar (FID, CLIP score) en la información disponible.
+No se han publicado resultados de benchmarks estandar (FID, CLIP score) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; el checkpoint INT8 pesa 4,72 GB en disco, por lo que la carga del UNet requiere al menos esa cantidad más el VAE y los codificadores CLIP sin cuantizar.
-- GPU recomendadas: no especificadas por el autor. El benchmark se ejecutó en una "G4" (no se detalla el modelo exacto).
-- Compatibilidad con GPU de consumo: no confirmada en la información proporcionada; el tamaño del checkpoint sugiere que podría caber en GPUs de 8-12 GB, pero no hay confirmación.
-- Opciones de despliegue: ComfyUI (>= v0.45.0) mediante `Load Checkpoint`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión en este formato).
-- Latencia: 4,63 s por imagen en INT8 frente a 2,90 s en FP16 (misma GPU, 1024×1024, presumiblemente 50 pasos según las comparativas visuales). Las variantes de 6 bits rondan 4,62-4,69 s.
+- VRAM estimada: el UNet ocupa 4,72 GB (INT8), 4,31 GB (INT6) y 3,77 GB (INT4); a ello hay que sumar VAE y text encoders en FP16 (no cuantizados), por lo que el consumo total de inferencia supera el peso del checkpoint.
+- GPU recomendadas: no se especifican en la informacion proporcionada; por tamano, tarjetas de 8-12 GB pueden alojar el INT4/INT6 con margen limitado, y 16 GB o mas son recomendables para INT8 con comodidad.
+- Cabe en GPU de consumo: el INT4 (3,77 GB) es el candidato mas claro para GPUs de 8 GB; el INT8 requiere al menos 8-12 GB segun resolucion y overhead de ComfyUI.
+- Despliegue: ComfyUI >= v0.45.0 con kernels nativos de comfy-kitchen (CUDA). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion en este formato.
+- Latencia: 4,76 s/imagen (INT8), 5,32 s/imagen (INT6) y 5,40 s/imagen (INT4) en caliente, segun las mediciones del autor; no se especifica el hardware utilizado.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / resolucion | Peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXL Base 1.0 ConvRot INT8 | Cuantización INT8 de SDXL | 4,72 GB | no aplica | Open RAIL++-M | Hugging Face (0 descargas) |
-| stabilityai/stable-diffusion-xl-base-1.0 (FP16) | Modelo original | 6,94 GB | no aplica | Open RAIL++-M | Hugging Face (oficial) |
-| SUSSYEATING/SDXL-Refiner-1.0-ConvRot | Cuantización del Refiner | no disponible | no aplica | Open RAIL++-M | Hugging Face |
-| SUSSYEATING/SDXL-Lightning-ConvRot | Cuantización de Lightning | no disponible | no aplica | Open RAIL++-M | Hugging Face |
-
-No se dispone de datos de benchmarks comparativos con otras técnicas de cuantización (por ejemplo, fp8 o GGUF de SDXL) en la información proporcionada.
+| SDXL Base 1.0 ConvRot INT8 | no disponible | 1024x1024 | 4,72 GB | Open RAIL++-M | Hugging Face (este repo) |
+| SDXL Base 1.0 ConvRot INT6 | no disponible | 1024x1024 | 4,31 GB | Open RAIL++-M | Hugging Face (este repo) |
+| SDXL Base 1.0 ConvRot INT4 | no disponible | 1024x1024 | 3,77 GB | Open RAIL++-M | Hugging Face (este repo) |
+| stabilityai/stable-diffusion-xl-base-1.0 (FP16) | no disponible | 1024x1024 | 6,94 GB | Open RAIL++-M | Hugging Face |
+| SUSSYEATING/SDXL-Refiner-1.0-ConvRot | no disponible | 1024x1024 | no disponible | Open RAIL++-M | Hugging Face |
+| SUSSYEATING/SDXL-Lightning-ConvRot | no disponible | 1024x1024 | no disponible | Open RAIL++-M | Hugging Face |
+| SUSSYEATING/SDXL-Turbo-ConvRot | no disponible | 1024x1024 | no disponible | Stability AI Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Las variantes de 6 bits presentan una degradación de calidad sustancial: SSIM medio de 0,84-0,85 frente a 0,95 del INT8, y PSNR de ~24,6 dB frente a ~32,8 dB. No son recomendables para producción si la fidelidad visual es crítica.
-- El INT8 incrementa la latencia un 60 % respecto a FP16 (4,63 s vs 2,90 s por imagen en la GPU de prueba), lo que puede ser relevante en flujos de generación masiva.
-- Los archivos `*-packed.safetensors` no son cargables directamente: requieren ejecutar `scripts/unpack_int6.py` antes de su uso en ComfyUI.
-- La licencia CreativeML Open RAIL++-M impone restricciones de uso basadas en casos de uso (Use-Based Restrictions) y obliga a propagar `LICENSE.md` y `NOTICE` en cualquier redistribución.
-- No hay información sobre sesgos específicos introducidos por la cuantización más allá de las métricas de fidelidad publicadas.
-- Riesgo de alucinación visual inherente al modelo base SDXL (artefactos, anatomía incorrecta, texto mal renderizado), no mitigado por la cuantización.
-- El repositorio tiene 0 descargas y 0 likes, sin validación comunitaria independiente de las métricas del autor.
-- No se documentan idiomas soportados ni evaluación multilingüe de los prompts.
+- La cuantizacion INT4 degrada notablemente la fidelidad: SSIM media 0,87257 y PSNR 26,18 dB, con minimos de 0,82174 y 22,86 dB; para produccion con exigencia visual se recomienda INT8 o INT6.
+- Los text encoders y el VAE no estan cuantizados, por lo que el ahorro de VRAM total es menor que la reduccion del UNet.
+- Las 81 capas pequenas (`K=640`) permanecen en INT8 en todas las variantes, lo que limita el ahorro adicional en INT6 e INT4.
+- Requiere ComfyUI >= v0.45.0 y kernels comfy-kitchen; no es compatible con versiones anteriores ni con otros runners sin conversion.
+- Licencia CreativeML Open RAIL++-M: incluye restricciones de uso basadas en el uso (Use-Based Restrictions) y obliga a propagar LICENSE.md y NOTICE en cualquier redistribucion.
+- Riesgo de sesgos y alucinaciones visuales heredado del modelo base SDXL 1.0; no se documentan evaluaciones de sesgo en esta ficha.
+- Soporte idiomatico limitado al comportamiento del text encoder de SDXL Base (predominantemente ingles); no se declaran idiomas soportados.
+- No se especifican el dataset de calibracion ni el hardware de las mediciones, lo que dificulta reproducir los tiempos reportados.
 
 ## Enlaces
 
-- [Hugging Face: SUSSYEATING/SDXL-Base-1.0-ConvRot](https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot)
-- [Modelo base: stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
-- [SUSSYEATING/SDXL-Refiner-1.0-ConvRot](https://huggingface.co/SUSSYEATING/SDXL-Refiner-1.0-ConvRot)
-- [SUSSYEATING/SDXL-Lightning-ConvRot](https://huggingface.co/SUSSYEATING/SDXL-Lightning-ConvRot)
-- [SUSSYEATING/SDXL-Turbo-ConvRot](https://huggingface.co/SUSSYEATING/SDXL-Turbo-ConvRot)
-- Script de desempaquetado: `scripts/unpack_int6.py` (incluido en el repositorio)
-- Informes de métricas: `metrics/g4_base_int8_summary.json`, `metrics/g4_base_w6w8_hybrid_summary.json`, `metrics/g4_base_int6_summary.json` (incluidos en el repositorio)
+- Repositorio Hugging Face: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot
+- Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
+- SDXL Refiner ConvRot: https://huggingface.co/SUSSYEATING/SDXL-Refiner-1.0-ConvRot
+- SDXL Lightning ConvRot: https://huggingface.co/SUSSYEATING/SDXL-Lightning-ConvRot
+- SDXL Turbo ConvRot: https://huggingface.co/SUSSYEATING/SDXL-Turbo-ConvRot
+- Licencia: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/LICENSE.md
+- Aviso de atribuciones: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/NOTICE
+- Script de verificacion: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/scripts/verify_sdxl_quant.py
+- Informe INT8: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/metrics/g4_base_int8_summary.json
+- Informe INT6: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/metrics/g4_base_int6_summary.json
+- Informe INT4: https://huggingface.co/SUSSYEATING/SDXL-Base-1.0-ConvRot/blob/main/metrics/g4_base_int4_summary.json

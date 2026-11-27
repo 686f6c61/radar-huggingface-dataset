@@ -5,7 +5,7 @@
   "author": "Sadanie",
   "url": "https://huggingface.co/Sadanie/Inkling-2-Mini-Half",
   "created_at": "2026-11-23T10:57:29.000Z",
-  "updated_at": "2026-11-23T14:55:17.000Z",
+  "updated_at": "2026-11-26T08:08:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Sadanie/Inkling-2-Mini-Memory-Sparse-MoE",
+  "renamed_at": "2026-11-27T06:44:24.214Z",
   "benchmarks": [],
   "sources": []
 }

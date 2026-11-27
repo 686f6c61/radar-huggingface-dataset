@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "CaaretAI/Qwen3.6-27B-caaret",
+  "slug": "caaretai-qwen3-6-27b-caaret",
+  "author": "CaaretAI",
+  "url": "https://huggingface.co/CaaretAI/Qwen3.6-27B-caaret",
+  "created_at": "2026-10-27T13:21:24.000Z",
+  "updated_at": "2026-11-27T10:32:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "caaret",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 27320796160,
+  "parameters_human": "27.32B",
+  "storage_bytes": 35876693096,
+  "storage_human": "35.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
