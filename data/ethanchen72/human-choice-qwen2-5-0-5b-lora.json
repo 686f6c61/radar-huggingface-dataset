@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "EthanChen72/human-choice-qwen2.5-0.5b-lora",
+  "slug": "ethanchen72-human-choice-qwen2-5-0-5b-lora",
+  "author": "EthanChen72",
+  "url": "https://huggingface.co/EthanChen72/human-choice-qwen2.5-0.5b-lora",
+  "created_at": "2026-11-27T18:54:44.000Z",
+  "updated_at": "2026-11-27T18:58:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "cognitive-science",
+    "decision-making",
+    "psychology",
+    "en",
+    "dataset:marcelbinz/Psych-101",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659095,
+  "storage_human": "47 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

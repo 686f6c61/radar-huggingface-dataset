@@ -5,7 +5,7 @@
   "author": "treoa",
   "url": "https://huggingface.co/treoa/turkic-ocr-code",
   "created_at": "2026-11-26T09:25:59.000Z",
-  "updated_at": "2026-11-26T10:03:39.000Z",
+  "updated_at": "2026-11-26T13:18:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

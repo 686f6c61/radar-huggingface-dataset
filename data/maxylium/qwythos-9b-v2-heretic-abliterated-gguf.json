@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 517,
+  "downloads_30d": 401,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "walsoup/Qwythos-9B-v2-Heretic-Abliterated-GGUF",
+  "renamed_at": "2026-11-27T13:17:00.632Z",
   "benchmarks": [],
   "sources": [
     {

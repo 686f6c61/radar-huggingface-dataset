@@ -30,7 +30,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:58:21.680Z",
-  "removal_pattern": "short_lived",
+  "removal_pattern": "reupload",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

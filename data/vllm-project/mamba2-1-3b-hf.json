@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 108,
   "trending_score": 0,
   "parameters": 1343757312,
   "parameters_human": "1.34B",
@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/mamba2-1.3b-hf",
+  "renamed_at": "2026-11-27T17:14:42.460Z",
   "benchmarks": [],
   "sources": []
 }

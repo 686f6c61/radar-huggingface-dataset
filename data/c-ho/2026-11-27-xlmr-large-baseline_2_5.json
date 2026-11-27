@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "c-ho/2026-11-27-xlmr-large-baseline_2_5",
+  "slug": "c-ho-2026-11-27-xlmr-large-baseline_2_5",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-11-27-xlmr-large-baseline_2_5",
+  "created_at": "2026-11-27T18:55:12.000Z",
+  "updated_at": "2026-11-27T19:28:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558874657,
+  "parameters_human": "558.9M",
+  "storage_bytes": 20142082010,
+  "storage_human": "20.1 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Douchy, ex-refuge d’Alain Delon dans le Loiret : tourisme, restaurants ...",
+      "url": "https://www.gala.fr/lifestyle/douchy-ex-refuge-d-alain-delon-dans-le-loiret-tourisme-restaurants-immobilier-escapade-dans-un-village-faconne-par-les-siecles-20260215",
+      "snippet": "Feb 15, 2026 · À une centaine de kilomètres de Paris, en région Centre-Val de Loire, Douchy (devenue Douchy-Montcorbon en …"
+    },
+    {
+      "title": "METEO DOUCHY par Météo-France - Prévisions Météo gratuites …",
+      "url": "https://meteofrance.com/previsions-meteo-france/douchy/45220",
+      "snippet": "Oct 28, 2026 · Un épisode méditerranéen est un épisode de très fortes précipitations sur une durée courte (1h à 24h en général) …"
+    }
+  ]
+}

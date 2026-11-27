@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 264,
+  "downloads_30d": 267,
   "trending_score": 0,
   "parameters": 25805936206,
   "parameters_human": "25.81B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/gemma-4-26B-AWQ",
+  "renamed_at": "2026-11-27T17:14:32.339Z",
   "benchmarks": [],
   "sources": []
 }

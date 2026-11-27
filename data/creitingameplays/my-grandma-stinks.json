@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "CreitinGameplays/my-grandma-stinks",
+  "slug": "creitingameplays-my-grandma-stinks",
+  "author": "CreitinGameplays",
+  "url": "https://huggingface.co/CreitinGameplays/my-grandma-stinks",
+  "created_at": "2026-11-27T17:25:47.000Z",
+  "updated_at": "2026-11-27T19:43:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "compressed-tensors",
+    "large-parameter-count",
+    "benchmark",
+    "xet",
+    "en",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39560400000000000,
+  "parameters_human": "39560400.00B",
+  "storage_bytes": 499500000136,
+  "storage_human": "499.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

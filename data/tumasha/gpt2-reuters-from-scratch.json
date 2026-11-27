@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "tumasha/gpt2-reuters-from-scratch",
+  "slug": "tumasha-gpt2-reuters-from-scratch",
+  "author": "tumasha",
+  "url": "https://huggingface.co/tumasha/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-27T13:34:13.000Z",
+  "updated_at": "2026-11-27T13:37:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "reuters",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30713856,
+  "parameters_human": "30.7M",
+  "storage_bytes": 340208547,
+  "storage_human": "340 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

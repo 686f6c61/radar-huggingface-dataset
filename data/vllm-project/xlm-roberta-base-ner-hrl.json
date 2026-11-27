@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 221,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": 277460491,
   "parameters_human": "277.5M",
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/xlm-roberta-base-ner-hrl",
+  "renamed_at": "2026-11-27T17:14:53.912Z",
   "benchmarks": [],
   "sources": []
 }

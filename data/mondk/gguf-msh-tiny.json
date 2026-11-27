@@ -26,8 +26,6 @@
     "dataset:tatsu-lab/alpaca",
     "dataset:teknium/OpenHermes-2.5",
     "dataset:HuggingFaceH4/no_robots",
-    "base_model:mondk/Msh-Tiny-14M",
-    "base_model:quantized:mondk/Msh-Tiny-14M",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"

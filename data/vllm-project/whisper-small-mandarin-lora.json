@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 184,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/whisper-small-mandarin-lora",
+  "renamed_at": "2026-11-27T17:14:52.541Z",
   "benchmarks": [],
   "sources": []
 }

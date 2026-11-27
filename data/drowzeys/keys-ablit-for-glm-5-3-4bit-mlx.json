@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "drowzeys/keys-Ablit-For-GLM-5.3-4bit-MLX",
+  "slug": "drowzeys-keys-ablit-for-glm-5-3-4bit-mlx",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Ablit-For-GLM-5.3-4bit-MLX",
+  "created_at": "2026-11-27T15:26:51.000Z",
+  "updated_at": "2026-11-27T15:32:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "glm",
+    "glm-5.3",
+    "abliterated",
+    "tensorfold",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:mlx-community/GLM-5.3-4bit",
+    "base_model:quantized:mlx-community/GLM-5.3-4bit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3093072176,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "mlx-community/GLM-5.3-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

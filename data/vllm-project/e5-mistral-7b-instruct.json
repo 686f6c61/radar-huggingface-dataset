@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 482,
+  "downloads_30d": 519,
   "trending_score": 0,
   "parameters": 7110660096,
   "parameters_human": "7.11B",
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/e5-mistral-7b-instruct",
+  "renamed_at": "2026-11-27T17:14:28.991Z",
   "benchmarks": [
     {
       "task": null,

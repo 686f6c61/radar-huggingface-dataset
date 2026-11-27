@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-baselines",
+  "slug": "mike0619-babylm-2026-gpt2-baselines",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-baselines",
+  "created_at": "2026-11-27T15:20:24.000Z",
+  "updated_at": "2026-11-27T15:34:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "babylm",
+    "en",
+    "de",
+    "tr",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7086894336,
+  "storage_human": "7.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?channel=mws-visit&hl=fr-FR",
+      "snippet": "Circulation en temps réel Fluide Lente Données cartographiques © 2026 Google Conditions d'utilisation 10 km ... Itinéraire Itinéraire …Read more"
+    }
+  ]
+}

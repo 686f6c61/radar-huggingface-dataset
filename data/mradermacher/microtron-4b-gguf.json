@@ -20,8 +20,6 @@
     "mergekit",
     "lazymergekit",
     "en",
-    "base_model:bunnycore/Microtron-4B",
-    "base_model:quantized:bunnycore/Microtron-4B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"

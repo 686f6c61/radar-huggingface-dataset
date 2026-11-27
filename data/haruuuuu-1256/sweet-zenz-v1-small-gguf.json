@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "haruuuuu-1256/sweet-zenz-v1-small-gguf",
+  "slug": "haruuuuu-1256-sweet-zenz-v1-small-gguf",
+  "author": "haruuuuu-1256",
+  "url": "https://huggingface.co/haruuuuu-1256/sweet-zenz-v1-small-gguf",
+  "created_at": "2026-11-27T16:05:25.000Z",
+  "updated_at": "2026-11-27T16:07:03.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese input",
+    "kana kanji conversion",
+    "zenzai",
+    "ja",
+    "base_model:Miwa-Keita/zenz-v3.1-small",
+    "base_model:quantized:Miwa-Keita/zenz-v3.1-small",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 90450432,
+  "parameters_human": "90.5M",
+  "storage_bytes": 168263904,
+  "storage_human": "168 MB",
+  "context_length": 1024,
+  "base_model": "Miwa-Keita/zenz-v3.1-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

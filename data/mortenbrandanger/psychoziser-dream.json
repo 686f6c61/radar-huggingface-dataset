@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "MortenBrandanger/psychoziser-dream",
+  "slug": "mortenbrandanger-psychoziser-dream",
+  "author": "MortenBrandanger",
+  "url": "https://huggingface.co/MortenBrandanger/psychoziser-dream",
+  "created_at": "2026-11-27T19:25:10.000Z",
+  "updated_at": "2026-11-27T19:25:21.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "image-to-image",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666530001,
+  "storage_human": "667 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

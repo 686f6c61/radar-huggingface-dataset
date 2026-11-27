@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "david3684/lafa-0.5B-distilled",
+  "slug": "david3684-lafa-0-5b-distilled",
+  "author": "david3684",
+  "url": "https://huggingface.co/david3684/lafa-0.5B-distilled",
+  "created_at": "2026-11-17T07:10:03.000Z",
+  "updated_at": "2026-11-27T15:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lafa",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

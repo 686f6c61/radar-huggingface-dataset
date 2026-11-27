@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 325522944,
   "parameters_human": "325.5M",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/gte-large-zh",
+  "renamed_at": "2026-11-27T17:14:38.211Z",
   "benchmarks": [
     {
       "task": null,

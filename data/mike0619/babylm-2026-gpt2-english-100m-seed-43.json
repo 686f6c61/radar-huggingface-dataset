@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-english-100m-seed-43",
+  "slug": "mike0619-babylm-2026-gpt2-english-100m-seed-43",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-english-100m-seed-43",
+  "created_at": "2026-11-27T15:05:24.000Z",
+  "updated_at": "2026-11-27T15:05:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firefox van uw computer de-installeren | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-van-uw-computer-de-installeren",
+      "snippet": "Feb 22, 2026 · Dit artikel beschrijft hoe u Firefox en de persoonlijke gegevens die erdoor worden opgeslagen van uw computer kunt …"
+    },
+    {
+      "title": "Firefox のアンインストール | Firefox ヘルプ - Mozilla Support",
+      "url": "https://support.mozilla.org/ja/kb/uninstall-firefox-from-your-computer",
+      "snippet": "Feb 20, 2026 · Firefox のダウンロードページ からバイナリパッケージをダウンロードしてインストールした場合は、あなたのホー …"
+    }
+  ]
+}

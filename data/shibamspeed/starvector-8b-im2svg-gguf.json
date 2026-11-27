@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "shibamspeed/starvector-8b-im2svg-GGUF",
+  "slug": "shibamspeed-starvector-8b-im2svg-gguf",
+  "author": "shibamspeed",
+  "url": "https://huggingface.co/shibamspeed/starvector-8b-im2svg-GGUF",
+  "created_at": "2026-11-27T15:59:08.000Z",
+  "updated_at": "2026-11-27T15:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "starvector",
+    "image-to-svg",
+    "multimodal",
+    "comfyui",
+    "image-to-text",
+    "en",
+    "base_model:starvector/starvector-8b-im2svg",
+    "base_model:quantized:starvector/starvector-8b-im2svg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7507080192,
+  "parameters_human": "7.51B",
+  "storage_bytes": 17884792896,
+  "storage_human": "17.9 GB",
+  "context_length": null,
+  "base_model": "starvector/starvector-8b-im2svg",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

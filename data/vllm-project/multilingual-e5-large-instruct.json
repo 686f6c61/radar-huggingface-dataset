@@ -219,7 +219,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 79,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 559890432,
   "parameters_human": "559.9M",
@@ -237,8 +237,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/multilingual-e5-large-instruct",
+  "renamed_at": "2026-11-27T17:14:46.743Z",
   "benchmarks": [
     {
       "task": null,

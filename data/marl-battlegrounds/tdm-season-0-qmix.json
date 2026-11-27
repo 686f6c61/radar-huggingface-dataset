@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "MARL-BattleGrounds/tdm-season-0-qmix",
+  "slug": "marl-battlegrounds-tdm-season-0-qmix",
+  "author": "MARL-BattleGrounds",
+  "url": "https://huggingface.co/MARL-BattleGrounds/tdm-season-0-qmix",
+  "created_at": "2026-10-09T20:46:24.000Z",
+  "updated_at": "2026-11-27T13:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "marl-battlegrounds",
+  "languages": [],
+  "tags": [
+    "marl-battlegrounds",
+    "arxiv:2610.14883",
+    "reinforcement-learning",
+    "multi-agent-reinforcement-learning",
+    "jax",
+    "team-deathmatch",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2831863831,
+  "storage_human": "2.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Team Deathmatch",
+      "dataset": "TDM Season 0",
+      "metric": "Season 0 Elo",
+      "value": 1300
+    }
+  ],
+  "sources": []
+}

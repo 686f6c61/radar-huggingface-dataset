@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "SamerAyyad/VLA_Samer_26.11.2026_100eps_policy_ACT_500k",
+  "slug": "samerayyad-vla_samer_26-11-2026_100eps_policy_act_500k",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_26.11.2026_100eps_policy_ACT_500k",
+  "created_at": "2026-11-27T18:31:35.000Z",
+  "updated_at": "2026-11-27T18:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SamerAyyad/VLA_Samer_26.11.2026_100eps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714580,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "看板 Baseball 文章列表 - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/Baseball/index23257.html",
+      "snippet": "Nov 17, 2026 · 精華區 最舊 ‹ 上頁 下頁 › 最新 4 [情報] 中日龍隊2027年度教練團 Fitzwilliam ⋯ 搜尋同標題文章 搜尋看板內 Fitzwilliam …Read more"
+    }
+  ]
+}

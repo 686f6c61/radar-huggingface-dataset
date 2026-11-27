@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "tokyotech-llm/SwaFlow-3B-Instruct",
+  "slug": "tokyotech-llm-swaflow-3b-instruct",
+  "author": "tokyotech-llm",
+  "url": "https://huggingface.co/tokyotech-llm/SwaFlow-3B-Instruct",
+  "created_at": "2026-11-27T19:41:31.000Z",
+  "updated_at": "2026-11-27T19:43:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "swaflow",
+    "flow-matching",
+    "riemannian-flow",
+    "non-autoregressive",
+    "instruction-tuned",
+    "en",
+    "dataset:allenai/dolma3_mix-6T",
+    "dataset:allenai/Dolci-Instruct-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3741325312,
+  "parameters_human": "3.74B",
+  "storage_bytes": 14965335184,
+  "storage_human": "15.0 GB",
+  "context_length": null,
+  "base_model": "tokyotech-llm/SwaFlow-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

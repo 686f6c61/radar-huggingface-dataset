@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 5131935606,
-  "storage_human": "5.1 GB",
+  "storage_bytes": 6837963294,
+  "storage_human": "6.8 GB",
   "context_length": null,
   "base_model": "malkolm777/zils-lite-l22-correct-attn",
   "formats": [

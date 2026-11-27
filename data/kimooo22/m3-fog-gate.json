@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "KimOoO22/m3-fog-gate",
+  "slug": "kimooo22-m3-fog-gate",
+  "author": "KimOoO22",
+  "url": "https://huggingface.co/KimOoO22/m3-fog-gate",
+  "created_at": "2026-11-27T20:22:03.000Z",
+  "updated_at": "2026-11-27T20:22:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5939984,
+  "storage_human": "6 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybersecurity Best Practices — FBI",
+      "url": "https://www.fbi.gov/investigate/cyber/cybersecurity-best-practices",
+      "snippet": "The following security practices can help you better protect yourself from cyber adversaries."
+    }
+  ]
+}

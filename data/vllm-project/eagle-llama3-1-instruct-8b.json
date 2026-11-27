@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 357,
+  "downloads_30d": 362,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/EAGLE-LLaMA3.1-Instruct-8B",
+  "renamed_at": "2026-11-27T17:14:12.455Z",
   "benchmarks": [],
   "sources": []
 }

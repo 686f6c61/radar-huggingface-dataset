@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-english-10m-seed-42",
+  "slug": "mike0619-babylm-2026-gpt2-english-10m-seed-42",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-english-10m-seed-42",
+  "created_at": "2026-10-14T08:07:14.000Z",
+  "updated_at": "2026-11-27T15:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Nov 17, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …Read more"
+    }
+  ]
+}

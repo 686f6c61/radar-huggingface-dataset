@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "agustinissidoro/clap-630k-audioset-fusion-onnx",
+  "slug": "agustinissidoro-clap-630k-audioset-fusion-onnx",
+  "author": "agustinissidoro",
+  "url": "https://huggingface.co/agustinissidoro/clap-630k-audioset-fusion-onnx",
+  "created_at": "2026-11-27T15:24:30.000Z",
+  "updated_at": "2026-11-27T15:34:42.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "clap",
+    "audio",
+    "freesound",
+    "feature-extraction",
+    "en",
+    "base_model:lukewys/laion_clap",
+    "base_model:quantized:lukewys/laion_clap",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617851102,
+  "storage_human": "618 MB",
+  "context_length": null,
+  "base_model": "lukewys/laion_clap",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

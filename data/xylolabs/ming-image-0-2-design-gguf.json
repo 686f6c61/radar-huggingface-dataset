@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "Xylolabs/Ming-Image-0.2-Design-GGUF",
+  "slug": "xylolabs-ming-image-0-2-design-gguf",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/Ming-Image-0.2-Design-GGUF",
+  "created_at": "2026-11-27T14:33:27.000Z",
+  "updated_at": "2026-11-27T14:45:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "comfyui",
+    "stable-diffusion.cpp",
+    "text-to-image",
+    "quantized",
+    "base_model:inclusionAI/Ming-Image-0.2-Design",
+    "base_model:quantized:inclusionAI/Ming-Image-0.2-Design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154901056,
+  "parameters_human": "6.15B",
+  "storage_bytes": 110456817045,
+  "storage_human": "110.5 GB",
+  "context_length": null,
+  "base_model": "inclusionAI/Ming-Image-0.2-Design",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virgule - Patère en chêne massif - Maisons du Monde",
+      "url": "https://www.maisonsdumonde.com/FR/fr/p/virgule-patere-en-chene-massif-M25156527.htm?msockid=2af46d46a6b66d9831397558a7836c1f",
+      "snippet": "La patère Virgule en chêne massif français allie design minimaliste et fonctionnalité. Son profil courbé, élégant et discret, lui permet …"
+    },
+    {
+      "title": "Étagères murales en bois massif – gllu",
+      "url": "https://gllu.fr/collections/etageres-murales",
+      "snippet": "Découvrez nos étagères murales en bois massif : Super-poses, Méga-poses et Firmin. Des étagères design, faciles à installer, …"
+    }
+  ]
+}

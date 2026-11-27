@@ -5,7 +5,7 @@
   "author": "patrickamadeus",
   "url": "https://huggingface.co/patrickamadeus/Llama-3.2-3B-imagine-wm1ep-il1ep-r1",
   "created_at": "2026-11-26T11:32:15.000Z",
-  "updated_at": "2026-11-26T11:33:37.000Z",
+  "updated_at": "2026-11-27T11:39:36.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,9 @@
   "tags": [
     "safetensors",
     "llama",
+    "webshop",
+    "early-experience",
+    "imagined-experience",
     "base_model:meta-llama/Llama-3.2-3B-Instruct",
     "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
     "license:llama3.2",
@@ -37,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "patrickamadeus/webshop_Llama-3.2-3B_IWM_bs4_WM.23166.23166_IL.3920.3920",
+  "renamed_at": "2026-11-27T15:08:49.816Z",
   "benchmarks": [],
   "sources": []
 }

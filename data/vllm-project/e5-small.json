@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 777,
+  "downloads_30d": 836,
   "trending_score": 0,
   "parameters": 33360512,
   "parameters_human": "33.4M",
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/e5-small",
+  "renamed_at": "2026-11-27T17:14:29.862Z",
   "benchmarks": [
     {
       "task": null,

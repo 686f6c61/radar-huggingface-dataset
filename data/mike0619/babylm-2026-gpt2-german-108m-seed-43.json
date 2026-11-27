@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-german-108m-seed-43",
+  "slug": "mike0619-babylm-2026-gpt2-german-108m-seed-43",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-german-108m-seed-43",
+  "created_at": "2026-11-27T15:07:05.000Z",
+  "updated_at": "2026-11-27T15:07:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "de",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

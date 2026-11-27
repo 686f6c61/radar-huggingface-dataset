@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 912,
+  "downloads_30d": 1012,
   "trending_score": 12,
   "parameters": 737611524480,
   "parameters_human": "737.61B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/Kimi-K3.1-Pro-pruned75",
+  "renamed_at": "2026-11-27T17:14:15.107Z",
   "benchmarks": [],
   "sources": []
 }

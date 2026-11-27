@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Hansda/EdgeCoder-31M-GGUF",
+  "slug": "hansda-edgecoder-31m-gguf",
+  "author": "Hansda",
+  "url": "https://huggingface.co/Hansda/EdgeCoder-31M-GGUF",
+  "created_at": "2026-11-27T12:57:34.000Z",
+  "updated_at": "2026-11-27T13:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deberta-v2",
+    "encoder",
+    "feature-extraction",
+    "en",
+    "base_model:knowledgator/EdgeCoder-31M",
+    "base_model:quantized:knowledgator/EdgeCoder-31M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31036416,
+  "parameters_human": "31.0M",
+  "storage_bytes": 104697091,
+  "storage_human": "105 MB",
+  "context_length": null,
+  "base_model": "knowledgator/EdgeCoder-31M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

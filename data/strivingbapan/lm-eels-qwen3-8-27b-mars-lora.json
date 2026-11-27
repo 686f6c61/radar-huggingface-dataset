@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "id": "StrivingBapan/lm-eels-qwen3.8-27b-mars-lora",
+  "slug": "strivingbapan-lm-eels-qwen3-8-27b-mars-lora",
+  "author": "StrivingBapan",
+  "url": "https://huggingface.co/StrivingBapan/lm-eels-qwen3.8-27b-mars-lora",
+  "created_at": "2026-11-26T19:08:48.000Z",
+  "updated_at": "2026-11-27T20:34:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "embodied-ai",
+    "vla",
+    "manipulation",
+    "lm-eels",
+    "mujoco",
+    "mars-yard-mujoco",
+    "simulation-only",
+    "image-text-to-text",
+    "conversational",
+    "dataset:StrivingBapan/lm-eels-mars-test-tube-sim",
+    "dataset:StrivingBapan/lm-eels-mars-twin-assets",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3034066278,
+  "storage_human": "3.0 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Closed-Loop, Single-Shot)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Locked Test Split (seeds 0..9, N=10)",
+      "metric": "Stable Placement Success Rate (reward == 1.0)",
+      "value": 30
+    },
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Closed-Loop, Single-Shot)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Locked Test Split (seeds 0..9, N=10)",
+      "metric": "Mean Table III Stage Progress",
+      "value": 30
+    },
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Closed-Loop, Single-Shot)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Internal Validation Split (seeds 50..79, N=30)",
+      "metric": "Stable Placement Success Rate (reward == 1.0)",
+      "value": 33.33
+    },
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Closed-Loop, Single-Shot)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Internal Validation Split (seeds 50..79, N=30)",
+      "metric": "Mean Table III Stage Progress",
+      "value": 36.67
+    },
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Fixed-Start Repeatability, seed 4, N=10)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Fixed-Start Trial 5 Pose (N=10)",
+      "metric": "Stable Placement Success Rate (reward == 1.0)",
+      "value": 60
+    },
+    {
+      "task": "MuJoCo Mars Yard Test-Tube Placement (Fixed-Start Repeatability, seed 4, N=10)",
+      "dataset": "mars-yard-mujoco test_tube (--anchor goal) Fixed-Start Trial 5 Pose (N=10)",
+      "metric": "Mean Table III Stage Progress",
+      "value": 90
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "eppingt/Valrico-400M-v3",
+  "slug": "eppingt-valrico-400m-v3",
+  "author": "eppingt",
+  "url": "https://huggingface.co/eppingt/Valrico-400M-v3",
+  "created_at": "2026-11-27T16:42:15.000Z",
+  "updated_at": "2026-11-27T16:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "decision",
+    "calibrated",
+    "other",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-400m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395892737,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1650943233,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

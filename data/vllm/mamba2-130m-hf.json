@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "vllm/mamba2-130m-hf",
+  "slug": "vllm-mamba2-130m-hf",
+  "author": "vllm",
+  "url": "https://huggingface.co/vllm/mamba2-130m-hf",
+  "created_at": "2026-11-25T10:45:43.000Z",
+  "updated_at": "2026-11-25T10:45:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 281,
+  "trending_score": 0,
+  "parameters": 128989632,
+  "parameters_human": "129.0M",
+  "storage_bytes": 515981536,
+  "storage_human": "516 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models …Read more"
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …Read more"
+    },
+    {
+      "title": "vLLM",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …Read more"
+    },
+    {
+      "title": "Releases · vllm-project/vllm - GitHub",
+      "url": "https://github.com/vllm-project/vllm/releases",
+      "snippet": "AWS EFA image: a new vllm/vllm-openai:v0.33.0-efa image (x86_64 and aarch64) bundles the AWS EFA libraries and the EFA build …Read more"
+    },
+    {
+      "title": "Installation - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/getting_started/installation/",
+      "snippet": "A list of all supported hardware can be found on the vLLM website, see Universal Compatibility - Hardware. If you want to add new …Read more"
+    }
+  ]
+}

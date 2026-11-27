@@ -5,7 +5,7 @@
   "author": "yujiepan",
   "url": "https://huggingface.co/yujiepan/inkling-2-mxfp8-tiny-random",
   "created_at": "2026-11-25T09:20:05.000Z",
-  "updated_at": "2026-11-25T09:20:05.000Z",
+  "updated_at": "2026-11-27T10:58:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 87651136,
   "parameters_human": "87.7M",

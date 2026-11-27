@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Kuro3D-Architect-i1-GGUF",
+  "slug": "mradermacher-kuro3d-architect-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kuro3D-Architect-i1-GGUF",
+  "created_at": "2026-11-27T16:06:59.000Z",
+  "updated_at": "2026-11-27T16:07:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1680588,
+  "parameters_human": "1.7M",
+  "storage_bytes": 6794368,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

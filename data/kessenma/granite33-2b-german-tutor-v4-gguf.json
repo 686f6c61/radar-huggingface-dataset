@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "kessenma/granite33-2b-german-tutor-v4-gguf",
+  "slug": "kessenma-granite33-2b-german-tutor-v4-gguf",
+  "author": "kessenma",
+  "url": "https://huggingface.co/kessenma/granite33-2b-german-tutor-v4-gguf",
+  "created_at": "2026-11-27T16:30:34.000Z",
+  "updated_at": "2026-11-27T16:55:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "german",
+    "language-learning",
+    "de",
+    "en",
+    "base_model:kessenma/granite33-2b-german-tutor-v4-4bit",
+    "base_model:quantized:kessenma/granite33-2b-german-tutor-v4-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2533539840,
+  "parameters_human": "2.53B",
+  "storage_bytes": 2998692736,
+  "storage_human": "3.0 GB",
+  "context_length": 131072,
+  "base_model": "kessenma/granite33-2b-german-tutor-v4-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

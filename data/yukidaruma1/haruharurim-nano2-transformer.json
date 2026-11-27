@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "yukidaruma1/haruharurim-nano2-transformer",
+  "slug": "yukidaruma1-haruharurim-nano2-transformer",
+  "author": "yukidaruma1",
+  "url": "https://huggingface.co/yukidaruma1/haruharurim-nano2-transformer",
+  "created_at": "2026-11-27T13:10:23.000Z",
+  "updated_at": "2026-11-27T13:10:44.000Z",
+  "license": "sspl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "haruharurim-nano2-transformer",
+    "japanese",
+    "small-language-model",
+    "transformer",
+    "haruharurim",
+    "text-generation",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5464320,
+  "parameters_human": "5.5M",
+  "storage_bytes": 43742372,
+  "storage_human": "44 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

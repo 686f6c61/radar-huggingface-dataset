@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "ghariba-shorts/khofash-master-part2",
+  "slug": "ghariba-shorts-khofash-master-part2",
+  "author": "ghariba-shorts",
+  "url": "https://huggingface.co/ghariba-shorts/khofash-master-part2",
+  "created_at": "2026-11-27T13:14:59.000Z",
+  "updated_at": "2026-11-27T13:30:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 45893642976,
+  "storage_human": "45.9 GB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-i1-GGUF",
   "created_at": "2026-10-02T22:10:38.000Z",
-  "updated_at": "2026-11-20T11:00:35.000Z",
+  "updated_at": "2026-11-27T12:07:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1375,
+  "downloads_30d": 1357,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

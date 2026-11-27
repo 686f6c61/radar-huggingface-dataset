@@ -5,7 +5,7 @@
   "author": "patronus-studio",
   "url": "https://huggingface.co/patronus-studio/wolf-defender-prompt-injection",
   "created_at": "2026-03-08T11:30:24.000Z",
-  "updated_at": "2026-11-24T09:19:28.000Z",
+  "updated_at": "2026-11-26T15:45:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -90,7 +90,7 @@
     "region:us"
   ],
   "likes": 31,
-  "downloads_30d": 10669,
+  "downloads_30d": 10605,
   "trending_score": 0,
   "parameters": 307531778,
   "parameters_human": "307.5M",

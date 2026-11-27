@@ -4,22 +4,16 @@
   "slug": "noeme-lura-new-2026",
   "author": "noeme",
   "url": "https://huggingface.co/noeme/Lura-new-2026",
-  "created_at": "2026-11-25T15:19:11.000Z",
-  "updated_at": "2026-11-25T15:20:35.000Z",
+  "created_at": "2026-11-27T12:38:58.000Z",
+  "updated_at": "2026-11-27T12:39:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "qwen2",
-    "text-generation",
-    "conversational",
-    "arxiv:1910.09700",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -34,7 +28,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,

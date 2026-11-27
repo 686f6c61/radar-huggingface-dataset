@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/kera-songwriter-e4b-GGUF",
   "created_at": "2026-11-14T06:00:05.000Z",
-  "updated_at": "2026-11-14T06:10:47.000Z",
+  "updated_at": "2026-11-26T13:02:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,14 +32,14 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1443,
+  "downloads_30d": 1542,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
   "storage_bytes": 76858022656,
   "storage_human": "76.9 GB",
   "context_length": 131072,
-  "base_model": "KeraAI/kera-songwriter-e4b",
+  "base_model": "Vortexal2/kera-songwriter-e4b",
   "formats": [
     "gguf"
   ],

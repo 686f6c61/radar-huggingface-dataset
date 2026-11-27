@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 222,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": 947980032,
   "parameters_human": "948.0M",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/qwen2.5-vl-7b-eagle3-sgl",
+  "renamed_at": "2026-11-27T17:14:47.840Z",
   "benchmarks": [],
   "sources": []
 }

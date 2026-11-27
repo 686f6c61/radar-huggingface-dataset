@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Qvisty/ordstriben-whisper-small-sv",
+  "slug": "qvisty-ordstriben-whisper-small-sv",
+  "author": "Qvisty",
+  "url": "https://huggingface.co/Qvisty/ordstriben-whisper-small-sv",
+  "created_at": "2026-11-27T18:35:36.000Z",
+  "updated_at": "2026-11-27T18:37:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "swedish",
+    "int8",
+    "automatic-speech-recognition",
+    "sv",
+    "arxiv:2212.04356",
+    "base_model:KBLab/kb-whisper-small",
+    "base_model:quantized:KBLab/kb-whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 374614178,
+  "storage_human": "375 MB",
+  "context_length": null,
+  "base_model": "KBLab/kb-whisper-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

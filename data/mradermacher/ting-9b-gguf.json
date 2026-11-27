@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/ting-9b-GGUF",
   "created_at": "2026-11-26T09:04:06.000Z",
-  "updated_at": "2026-11-26T09:29:54.000Z",
+  "updated_at": "2026-11-26T11:35:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -60,7 +60,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 371,
   "trending_score": 0,
   "parameters": 9094607872,
   "parameters_human": "9.09B",

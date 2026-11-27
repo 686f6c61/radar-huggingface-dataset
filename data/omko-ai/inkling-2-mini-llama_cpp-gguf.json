@@ -25,11 +25,11 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 2,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 26070390272,
   "parameters_human": "26.07B",
-  "storage_bytes": 9138551131,
+  "storage_bytes": 9138481539,
   "storage_human": "9.1 GB",
   "context_length": 1048576,
   "base_model": "thinkingmachines/Inkling-2-Mini",

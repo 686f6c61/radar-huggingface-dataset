@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "TigreGotico/kab-DZ-miro-loom",
+  "slug": "tigregotico-kab-dz-miro-loom",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/kab-DZ-miro-loom",
+  "created_at": "2026-11-27T18:52:21.000Z",
+  "updated_at": "2026-11-27T18:52:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "loom",
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "loom",
+    "gguf",
+    "vits",
+    "orthography2ipa",
+    "text-to-speech",
+    "kab",
+    "base_model:Phoonnx/phoonnx_kab-DZ_miro_o2i",
+    "base_model:quantized:Phoonnx/phoonnx_kab-DZ_miro_o2i",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15634371,
+  "parameters_human": "15.6M",
+  "storage_bytes": 63082252,
+  "storage_human": "63 MB",
+  "context_length": null,
+  "base_model": "Phoonnx/phoonnx_kab-DZ_miro_o2i",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

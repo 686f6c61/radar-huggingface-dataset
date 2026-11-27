@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "sraivante/healthlm-moe-v1",
+  "slug": "sraivante-healthlm-moe-v1",
+  "author": "sraivante",
+  "url": "https://huggingface.co/sraivante/healthlm-moe-v1",
+  "created_at": "2026-11-27T15:20:09.000Z",
+  "updated_at": "2026-11-27T15:41:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "healthlm-moe",
+    "mixture-of-experts",
+    "dense-moe",
+    "multi-gate-moe",
+    "encoder-decoder",
+    "pointer-network",
+    "span-extraction",
+    "intent-classification",
+    "small-language-model",
+    "healthcare",
+    "financial-planning",
+    "token-classification",
+    "en",
+    "dataset:sraivante/healthlm-moe-v1-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9425642,
+  "parameters_human": "9.4M",
+  "storage_bytes": 75520633,
+  "storage_human": "76 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sraivante (sr aivante) - Hugging Face",
+      "url": "https://huggingface.co/sraivante/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "sraivante (sr aivante) - Hugging Face",
+      "url": "https://huggingface.co/sraivante",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 21 days ago ... published a model 21 days ago"
+    },
+    {
+      "title": "sraivante/TinyThinkModel-72M-V1 · Hugging Peers",
+      "url": "https://huggingpeers.co/models/sraivante/TinyThinkModel-72M-V1",
+      "snippet": "Oct 18, 2026 · This model is unreliable as a general assistant: it can make elementary arithmetic errors, repeat text, and produce …"
+    }
+  ]
+}

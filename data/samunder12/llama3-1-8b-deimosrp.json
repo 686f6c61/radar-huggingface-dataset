@@ -5,7 +5,7 @@
   "author": "samunder12",
   "url": "https://huggingface.co/samunder12/llama3.1-8b-deimosRP",
   "created_at": "2026-11-26T10:47:19.000Z",
-  "updated_at": "2026-11-26T12:22:16.000Z",
+  "updated_at": "2026-11-26T13:51:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 118,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",

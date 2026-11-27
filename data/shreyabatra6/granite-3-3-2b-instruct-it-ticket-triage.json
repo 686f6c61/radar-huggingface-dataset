@@ -5,7 +5,7 @@
   "author": "shreyabatra6",
   "url": "https://huggingface.co/shreyabatra6/granite-3.3-2b-instruct-it-ticket-triage",
   "created_at": "2026-11-26T12:55:55.000Z",
-  "updated_at": "2026-11-26T12:57:32.000Z",
+  "updated_at": "2026-11-26T13:12:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 2533539840,
   "parameters_human": "2.53B",

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Bielik-11B-v3.2-Instruct-ungated-GGUF",
+  "slug": "mradermacher-bielik-11b-v3-2-instruct-ungated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bielik-11B-v3.2-Instruct-ungated-GGUF",
+  "created_at": "2026-11-27T15:02:02.000Z",
+  "updated_at": "2026-11-27T15:02:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantization Thresholds Replicate, Failure Modes Do Not: A ...",
+      "url": "http://go/v1/AWL37nbbNL2uawmbaAES9kfPP4kj9ILL7FWW69Fdg2VTvofNkBvtddK2B8Hwb_W9GukmCbGADJwnfzGixWzuwiuMWTlZQetPr9EJZW9cgauewbh4wcWZsIG4K8cduZ0Ud_1FOYn_ae7tKPFtUewdFfcrKUOrjQ_gcm6J36CetgDNLDYLiHn_8kd947ChKpl5K0gK",
+      "snippet": "duced from Bielik-11B-v3-Base by structured pruning (11.04B to 7.35B parameters, NVIDIA Minitron-style [18]) followed by logit distillation from the parent, and it shares the par-ent’s architecture family, training corpus, and tokenizer [17]. Q8_0, Q6_K, Q5_K_M, and Q4_K_M were obtained directly from the publisher’s official GGUF release; because that release stops at Q4_K_M and no public half-precision GGUF exists, Q3_K_M and Q2_K were requantized from Q8_0 via llama-quantize --allow-requantize."
+    }
+  ]
+}

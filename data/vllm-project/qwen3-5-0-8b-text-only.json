@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 261,
+  "downloads_30d": 269,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/Qwen3.5-0.8B-text-only",
+  "renamed_at": "2026-11-27T17:14:22.332Z",
   "benchmarks": [],
   "sources": []
 }

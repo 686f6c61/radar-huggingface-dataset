@@ -5,7 +5,7 @@
   "author": "q81801",
   "url": "https://huggingface.co/q81801/WeVisOne-VL-2B-GGUF",
   "created_at": "2026-11-26T12:52:06.000Z",
-  "updated_at": "2026-11-26T13:11:24.000Z",
+  "updated_at": "2026-11-26T14:46:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 199,
   "trending_score": 0,
   "parameters": 2034787328,
   "parameters_human": "2.03B",

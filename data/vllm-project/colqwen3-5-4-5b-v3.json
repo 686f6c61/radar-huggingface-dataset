@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 231,
+  "downloads_30d": 240,
   "trending_score": 0,
   "parameters": 4540085056,
   "parameters_human": "4.54B",
@@ -63,8 +63,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/colqwen3.5-4.5B-v3",
+  "renamed_at": "2026-11-27T17:14:26.511Z",
   "benchmarks": [],
   "sources": []
 }

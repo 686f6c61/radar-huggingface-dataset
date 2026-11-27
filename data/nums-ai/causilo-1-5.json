@@ -5,7 +5,7 @@
   "author": "nums-ai",
   "url": "https://huggingface.co/nums-ai/causilo-1.5",
   "created_at": "2026-11-25T12:23:36.000Z",
-  "updated_at": "2026-11-26T09:00:27.000Z",
+  "updated_at": "2026-11-26T13:17:06.000Z",
   "license": "nums-ai-model-license",
   "license_family": "unknown",
   "pipeline_tag": "tabular-classification",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 0,
+  "downloads_30d": 674,
   "trending_score": 15,
   "parameters": null,
   "parameters_human": null,

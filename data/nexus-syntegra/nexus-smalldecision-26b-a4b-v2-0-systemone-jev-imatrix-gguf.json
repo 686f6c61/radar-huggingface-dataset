@@ -5,7 +5,7 @@
   "author": "nexus-syntegra",
   "url": "https://huggingface.co/nexus-syntegra/Nexus-SmallDecision-26B-A4B-v2.0-SystemOne-Jev-IMatrix-GGUF",
   "created_at": "2026-11-21T04:17:49.000Z",
-  "updated_at": "2026-11-26T11:45:31.000Z",
+  "updated_at": "2026-11-27T01:07:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 302,
   "trending_score": 0,
   "parameters": 25233910814,
   "parameters_human": "25.23B",

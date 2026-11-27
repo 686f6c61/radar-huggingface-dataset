@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 233,
+  "downloads_30d": 239,
   "trending_score": 0,
   "parameters": 34152051328,
   "parameters_human": "34.15B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/Qwen3.5-35B-A3B-text-only",
+  "renamed_at": "2026-11-27T17:14:23.149Z",
   "benchmarks": [],
   "sources": []
 }

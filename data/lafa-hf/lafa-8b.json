@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "lafa-hf/lafa-8B",
+  "slug": "lafa-hf-lafa-8b",
+  "author": "lafa-hf",
+  "url": "https://huggingface.co/lafa-hf/lafa-8B",
+  "created_at": "2026-10-02T09:46:04.000Z",
+  "updated_at": "2026-11-27T15:11:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lafa",
+    "feature-extraction",
+    "qwen3",
+    "flow-matching",
+    "speculative-decoding",
+    "custom_code",
+    "text-generation",
+    "conversational",
+    "arxiv:2610.28559",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 169,
+  "trending_score": 0,
+  "parameters": 8309249024,
+  "parameters_human": "8.31B",
+  "storage_bytes": 33249436383,
+  "storage_human": "33.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAFA",
+      "url": "https://www.lafa.fr/",
+      "snippet": "LAFA est TESTEE Nous testons la durabilité et garantissons la qualité de nos produits"
+    }
+  ]
+}

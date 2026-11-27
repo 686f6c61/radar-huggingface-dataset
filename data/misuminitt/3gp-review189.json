@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "misuminitt/3gp-review189",
+  "slug": "misuminitt-3gp-review189",
+  "author": "misuminitt",
+  "url": "https://huggingface.co/misuminitt/3gp-review189",
+  "created_at": "2026-11-27T20:19:08.000Z",
+  "updated_at": "2026-11-27T20:20:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "threegp_byte_cnn",
+    "text-classification",
+    "byte-cnn",
+    "experimental",
+    "human-in-the-loop",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39715,
+  "parameters_human": "39715",
+  "storage_bytes": 434884,
+  "storage_human": "434884 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "seeyouspace0/clean-chat-analyze-classifier",
+  "slug": "seeyouspace0-clean-chat-analyze-classifier",
+  "author": "seeyouspace0",
+  "url": "https://huggingface.co/seeyouspace0/clean-chat-analyze-classifier",
+  "created_at": "2026-11-27T18:18:30.000Z",
+  "updated_at": "2026-11-27T18:47:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "electra",
+    "korean",
+    "toxicity",
+    "multi-label",
+    "league-of-legends",
+    "text-classification",
+    "ko",
+    "base_model:beomi/KcELECTRA-base",
+    "base_model:finetune:beomi/KcELECTRA-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109085958,
+  "parameters_human": "109.1M",
+  "storage_bytes": 436367960,
+  "storage_human": "436 MB",
+  "context_length": null,
+  "base_model": "beomi/KcELECTRA-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

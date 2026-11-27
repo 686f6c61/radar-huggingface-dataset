@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "n4ze3m/tittle",
+  "slug": "n4ze3m-tittle",
+  "author": "n4ze3m",
+  "url": "https://huggingface.co/n4ze3m/tittle",
+  "created_at": "2026-11-27T13:48:26.000Z",
+  "updated_at": "2026-11-27T13:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "punctuation",
+    "truecasing",
+    "inverse-text-normalization",
+    "speech",
+    "token-classification",
+    "en",
+    "dataset:espnet/yodas",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12364214,
+  "storage_human": "12 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

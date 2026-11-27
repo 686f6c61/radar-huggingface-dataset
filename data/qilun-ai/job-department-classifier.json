@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "qilun-ai/job-department-classifier",
+  "slug": "qilun-ai-job-department-classifier",
+  "author": "qilun-ai",
+  "url": "https://huggingface.co/qilun-ai/job-department-classifier",
+  "created_at": "2026-11-22T18:22:19.000Z",
+  "updated_at": "2026-11-22T20:34:45.000Z",
+  "license": "agent-hire-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "job-postings",
+    "mmbert",
+    "multilingual",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1489295762,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

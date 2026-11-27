@@ -5,7 +5,7 @@
   "author": "software-mansion",
   "url": "https://huggingface.co/software-mansion/react-native-executorch-supertonic",
   "created_at": "2026-07-03T11:59:58.000Z",
-  "updated_at": "2026-10-14T13:32:07.000Z",
+  "updated_at": "2026-11-27T14:07:06.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -83,7 +83,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 14286,
+  "downloads_30d": 14851,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

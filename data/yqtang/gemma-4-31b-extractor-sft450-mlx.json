@@ -5,7 +5,7 @@
   "author": "yqtang",
   "url": "https://huggingface.co/yqtang/gemma-4-31b-extractor-sft450-mlx",
   "created_at": "2026-11-26T03:02:04.000Z",
-  "updated_at": "2026-11-26T03:02:10.000Z",
+  "updated_at": "2026-11-26T03:49:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

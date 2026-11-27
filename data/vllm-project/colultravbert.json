@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 293,
+  "downloads_30d": 305,
   "trending_score": 0,
   "parameters": 254088960,
   "parameters_human": "254.1M",
@@ -62,8 +62,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/ColUltraVBERT",
+  "renamed_at": "2026-11-27T17:14:11.173Z",
   "benchmarks": [],
   "sources": []
 }

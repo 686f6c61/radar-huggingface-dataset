@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "silentvalet/whisper-turbo-ro-en-sherpa-onnx",
+  "slug": "silentvalet-whisper-turbo-ro-en-sherpa-onnx",
+  "author": "silentvalet",
+  "url": "https://huggingface.co/silentvalet/whisper-turbo-ro-en-sherpa-onnx",
+  "created_at": "2026-11-27T16:32:08.000Z",
+  "updated_at": "2026-11-27T16:32:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ro",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "romanian",
+    "automatic-speech-recognition",
+    "ro",
+    "en",
+    "base_model:eek/whisper-turbo-ro-en",
+    "base_model:quantized:eek/whisper-turbo-ro-en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1035693152,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "eek/whisper-turbo-ro-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

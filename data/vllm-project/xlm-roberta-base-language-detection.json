@@ -68,7 +68,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 655,
+  "downloads_30d": 705,
   "trending_score": 0,
   "parameters": 278059542,
   "parameters_human": "278.1M",
@@ -85,8 +85,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/xlm-roberta-base-language-detection",
+  "renamed_at": "2026-11-27T17:14:53.911Z",
   "benchmarks": [],
   "sources": []
 }

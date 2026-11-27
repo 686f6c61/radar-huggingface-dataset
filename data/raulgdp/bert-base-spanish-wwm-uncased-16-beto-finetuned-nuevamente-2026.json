@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "raulgdp/bert-base-spanish-wwm-uncased-16-BETO-finetuned-nuevamente-2026",
+  "slug": "raulgdp-bert-base-spanish-wwm-uncased-16-beto-finetuned-nuevamente-2026",
+  "author": "raulgdp",
+  "url": "https://huggingface.co/raulgdp/bert-base-spanish-wwm-uncased-16-BETO-finetuned-nuevamente-2026",
+  "created_at": "2026-11-27T20:32:55.000Z",
+  "updated_at": "2026-11-27T20:33:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:dccuchile/bert-base-spanish-wwm-uncased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-uncased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109267209,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437097445,
+  "storage_human": "437 MB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/Walmart%20Supercenter%20",
+      "snippet": "Map data ©2026 Google Terms 5 km Directions"
+    }
+  ]
+}

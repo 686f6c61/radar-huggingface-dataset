@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "HiLozyxlo/smartface-models",
+  "slug": "hilozyxlo-smartface-models",
+  "author": "HiLozyxlo",
+  "url": "https://huggingface.co/HiLozyxlo/smartface-models",
+  "created_at": "2026-11-27T18:49:58.000Z",
+  "updated_at": "2026-11-27T18:52:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38174364,
+  "storage_human": "38 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

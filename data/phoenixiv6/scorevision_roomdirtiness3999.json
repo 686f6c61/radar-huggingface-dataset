@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "phoenixiv6/ScoreVision_RoomDirtiness3999",
+  "slug": "phoenixiv6-scorevision_roomdirtiness3999",
+  "author": "phoenixiv6",
+  "url": "https://huggingface.co/phoenixiv6/ScoreVision_RoomDirtiness3999",
+  "created_at": "2026-11-24T11:02:47.000Z",
+  "updated_at": "2026-11-27T16:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "bittensor",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29647891,
+  "storage_human": "30 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

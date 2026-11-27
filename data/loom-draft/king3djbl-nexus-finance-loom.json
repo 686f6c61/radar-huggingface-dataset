@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "loom-draft/King3Djbl-nexus-finance-loom",
+  "slug": "loom-draft-king3djbl-nexus-finance-loom",
+  "author": "loom-draft",
+  "url": "https://huggingface.co/loom-draft/King3Djbl-nexus-finance-loom",
+  "created_at": "2026-11-27T17:44:42.000Z",
+  "updated_at": "2026-11-27T18:02:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "radeon-r9700",
+    "loom-target-set",
+    "base_model:King3Djbl/nexus-finance-GGUF",
+    "base_model:finetune:King3Djbl/nexus-finance-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "King3Djbl/nexus-finance-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 Top-Rated Coupon Apps to Download in 2026 - NerdWallet",
+      "url": "https://www.nerdwallet.com/finance/learn/best-coupon-apps?msockid=2617b264c8576ef420a0aa7ac9316fdb",
+      "snippet": "Jul 24, 2026 · Save money with our picks for the best free coupon apps of 2026, including Flipp, Krazy Coupon Lady and Koupon, for …"
+    }
+  ]
+}

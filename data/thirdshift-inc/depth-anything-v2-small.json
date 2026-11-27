@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thirdshift-sh/depth-anything-v2-small",
+  "renamed_at": "2026-11-27T16:43:28.367Z",
   "benchmarks": [],
   "sources": []
 }

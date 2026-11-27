@@ -5,7 +5,7 @@
   "author": "newsbang",
   "url": "https://huggingface.co/newsbang/adjudex-0.8b-v7",
   "created_at": "2026-11-20T05:57:03.000Z",
-  "updated_at": "2026-11-20T05:57:41.000Z",
+  "updated_at": "2026-11-27T03:21:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",

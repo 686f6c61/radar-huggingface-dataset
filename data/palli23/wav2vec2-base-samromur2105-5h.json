@@ -5,7 +5,7 @@
   "author": "palli23",
   "url": "https://huggingface.co/palli23/wav2vec2-base-samromur2105-5h",
   "created_at": "2026-09-15T20:26:48.000Z",
-  "updated_at": "2026-09-18T22:42:05.000Z",
+  "updated_at": "2026-11-23T22:57:28.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 94403241,
   "parameters_human": "94.4M",

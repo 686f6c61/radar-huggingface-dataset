@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/HuatuoGPT-3-9B-i1-GGUF",
   "created_at": "2026-09-18T22:42:04.000Z",
-  "updated_at": "2026-11-20T11:02:48.000Z",
+  "updated_at": "2026-11-27T12:10:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 4856,
+  "downloads_30d": 4883,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

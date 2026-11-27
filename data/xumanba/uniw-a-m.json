@@ -5,7 +5,7 @@
   "author": "xumanba",
   "url": "https://huggingface.co/xumanba/UniW-A-M",
   "created_at": "2026-11-18T08:07:31.000Z",
-  "updated_at": "2026-11-19T11:42:02.000Z",
+  "updated_at": "2026-11-27T06:50:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "tsinghua-fib-lab/UniW-A-M",
+  "renamed_at": "2026-11-27T17:31:02.276Z",
   "benchmarks": [],
   "sources": []
 }

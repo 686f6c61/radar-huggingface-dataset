@@ -22,9 +22,9 @@
     "diffusers:KandinskyImageSRPipeline",
     "region:us"
   ],
-  "likes": 155,
-  "downloads_30d": 4,
-  "trending_score": 128,
+  "likes": 186,
+  "downloads_30d": 582,
+  "trending_score": 141,
   "parameters": 4529059392,
   "parameters_human": "4.53B",
   "storage_bytes": 10450195393,

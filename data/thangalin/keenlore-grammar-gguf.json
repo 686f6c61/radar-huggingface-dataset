@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "thangalin/KeenLore-Grammar-GGUF",
+  "slug": "thangalin-keenlore-grammar-gguf",
+  "author": "thangalin",
+  "url": "https://huggingface.co/thangalin/KeenLore-Grammar-GGUF",
+  "created_at": "2026-11-27T19:55:02.000Z",
+  "updated_at": "2026-11-27T19:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "grammar",
+    "proofreading",
+    "grammatical-error-correction",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "base_model:adapter:unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42332160,
+  "parameters_human": "42.3M",
+  "storage_bytes": 169372832,
+  "storage_human": "169 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

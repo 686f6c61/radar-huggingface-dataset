@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 131,
+  "downloads_30d": 143,
   "trending_score": 0,
   "parameters": 7241748480,
   "parameters_human": "7.24B",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/OpenHermes-2.5-Mistral-7B-AWQ",
+  "renamed_at": "2026-11-27T17:14:18.704Z",
   "benchmarks": [],
   "sources": []
 }

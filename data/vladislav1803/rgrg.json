@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "Vladislav1803/rgrg",
+  "slug": "vladislav1803-rgrg",
+  "author": "Vladislav1803",
+  "url": "https://huggingface.co/Vladislav1803/rgrg",
+  "created_at": "2026-11-27T13:04:40.000Z",
+  "updated_at": "2026-11-27T13:04:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rgrg AI Project Repository Download and Installation Guide",
+      "url": "http://go/v1/AbQQWqrV7_RaawmAsAH368SSk_lUWkfDTRBWiAL7gooRkkVS3KSmI4Wvuo4dnsjGVf0T2-kOCTtH4abeKl-x3xlKgaHvNUJ6yDg2_obwYB7-orWfgAHXiwPpr_YCgNL7FiMoKu4NV7FLWzU4JKnDQI8GYE3ddJPMjHH6B91Hl2Z8kAy65bsyuFLlkMnlf5bS6Tz5BDfgrR3wnewB",
+      "snippet": "View the Rgrg AI project repository download and installation guide, learn about the latest development trends and innovations."
+    }
+  ]
+}

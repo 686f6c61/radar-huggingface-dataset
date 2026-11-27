@@ -5,7 +5,7 @@
   "author": "nidl-neurospin",
   "url": "https://huggingface.co/nidl-neurospin/neuro-jepa-vit-b",
   "created_at": "2026-11-03T17:08:04.000Z",
-  "updated_at": "2026-11-03T17:08:05.000Z",
+  "updated_at": "2026-11-26T14:00:02.000Z",
   "license": "cecill-b",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "AU-STANDBY/constructive_classifier_EN_DA_non_context_enriched",
+  "slug": "au-standby-constructive_classifier_en_da_non_context_enriched",
+  "author": "AU-STANDBY",
+  "url": "https://huggingface.co/AU-STANDBY/constructive_classifier_EN_DA_non_context_enriched",
+  "created_at": "2026-11-12T12:52:13.000Z",
+  "updated_at": "2026-11-27T17:36:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "en",
+    "da",
+    "dataset:AU-STANDBY/annotated_constructive_dataset_DA_EN",
+    "arxiv:2611.32889",
+    "base_model:intfloat/multilingual-e5-large",
+    "base_model:finetune:intfloat/multilingual-e5-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 559899657,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2261799157,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "intfloat/multilingual-e5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

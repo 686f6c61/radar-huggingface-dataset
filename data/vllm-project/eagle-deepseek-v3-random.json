@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2621,
+  "downloads_30d": 2871,
   "trending_score": 0,
   "parameters": 1580041288,
   "parameters_human": "1.58B",
@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/eagle-deepseek-v3-random",
+  "renamed_at": "2026-11-27T17:14:29.985Z",
   "benchmarks": [],
   "sources": []
 }

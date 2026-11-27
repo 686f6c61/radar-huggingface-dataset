@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "wlsgur1018/L3G-World",
+  "slug": "wlsgur1018-l3g-world",
+  "author": "wlsgur1018",
+  "url": "https://huggingface.co/wlsgur1018/L3G-World",
+  "created_at": "2026-11-27T15:44:55.000Z",
+  "updated_at": "2026-11-27T15:46:42.000Z",
+  "license": "l3g-world-checkpoint-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "l3g-world",
+    "world-model",
+    "gaussian-splatting",
+    "3d-reconstruction",
+    "online-reconstruction",
+    "camera-control",
+    "arxiv:2610.40614",
+    "image-to-video",
+    "en",
+    "base_model:nvidia/Cosmos-Predict2.5-2B",
+    "base_model:finetune:nvidia/Cosmos-Predict2.5-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7216895863,
+  "storage_human": "7.2 GB",
+  "context_length": null,
+  "base_model": "veichta/zipsplat, nvidia/Cosmos-Predict2.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Figuring out Galactic Coordinates. :: LEGO® Worlds General …",
+      "url": "https://steamcommunity.com/app/332310/discussions/0/615086038669381858/",
+      "snippet": "Galactic Coordinates: 1524-7847-8964 A Screenshot of LEGO® Worlds By: Severian of Nessus That is correct. As also mentioned, …Read more"
+    }
+  ]
+}

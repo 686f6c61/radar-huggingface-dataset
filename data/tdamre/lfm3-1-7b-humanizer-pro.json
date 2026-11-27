@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Tdamre/LFM3-1.7B-Humanizer-Pro",
+  "slug": "tdamre-lfm3-1-7b-humanizer-pro",
+  "author": "Tdamre",
+  "url": "https://huggingface.co/Tdamre/LFM3-1.7B-Humanizer-Pro",
+  "created_at": "2026-11-27T20:00:30.000Z",
+  "updated_at": "2026-11-27T20:00:41.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-editing",
+    "text-generation",
+    "en",
+    "dataset:YixuanEvenXu/HIP-training-and-evaluation-data",
+    "arxiv:2605.19516",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:adapter:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246188464,
+  "storage_human": "246 MB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 101,
+  "downloads_30d": 108,
   "trending_score": 0,
   "parameters": 4444165632,
   "parameters_human": "4.44B",
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/Llama-4-Scout-17B-16E-Instruct-2-layers-mxfp4",
+  "renamed_at": "2026-11-27T17:14:16.155Z",
   "benchmarks": [],
   "sources": []
 }

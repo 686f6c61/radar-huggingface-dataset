@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-turkish-10m-seed-43",
+  "slug": "mike0619-babylm-2026-gpt2-turkish-10m-seed-43",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-turkish-10m-seed-43",
+  "created_at": "2026-11-27T15:07:51.000Z",
+  "updated_at": "2026-11-27T15:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "tr",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待中国人和土耳其人在x上的冲突？ - 知乎",
+      "url": "https://www.zhihu.com/question/2096616604918342920",
+      "snippet": "Oct 22, 2026 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …Read more"
+    },
+    {
+      "title": "(2026.10) 如何评价现在X上的德国IP频频挑衅？ - 知乎",
+      "url": "https://www.zhihu.com/question/2098468496216692091",
+      "snippet": "背景: 2026年10月的中土网友 X 上互喷, 德国 IP 加入战场."
+    },
+    {
+      "title": "如何看待2026年10月土耳其与中国的网民爆发的大规模互怼？",
+      "url": "https://www.zhihu.com/question/2096067176604111062",
+      "snippet": "如何看待2026年10月土耳其与中国的网民爆发的大规模互怼？ 近日（2026年10月20日左右），土耳其和中国网民在x平台出现一场大 …Read more"
+    }
+  ]
+}

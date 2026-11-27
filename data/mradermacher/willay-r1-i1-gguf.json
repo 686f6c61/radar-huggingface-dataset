@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/willay-r1-i1-GGUF",
+  "slug": "mradermacher-willay-r1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/willay-r1-i1-GGUF",
+  "created_at": "2026-11-27T19:17:48.000Z",
+  "updated_at": "2026-11-27T19:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:SZLHOLDINGS/willay-r1",
+    "base_model:quantized:SZLHOLDINGS/willay-r1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 8573929184,
+  "storage_human": "8.6 GB",
+  "context_length": 32768,
+  "base_model": "SZLHOLDINGS/willay-r1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

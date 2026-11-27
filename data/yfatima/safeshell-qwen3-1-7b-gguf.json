@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "YFatima/safeshell-qwen3-1.7b-gguf",
+  "slug": "yfatima-safeshell-qwen3-1-7b-gguf",
+  "author": "YFatima",
+  "url": "https://huggingface.co/YFatima/safeshell-qwen3-1.7b-gguf",
+  "created_at": "2026-11-27T19:03:02.000Z",
+  "updated_at": "2026-11-27T19:05:44.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409376,
+  "storage_human": "1.1 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "kjarni-ai/twitter-roberta-base-sentiment-latest",
+  "slug": "kjarni-ai-twitter-roberta-base-sentiment-latest",
+  "author": "kjarni-ai",
+  "url": "https://huggingface.co/kjarni-ai/twitter-roberta-base-sentiment-latest",
+  "created_at": "2026-01-08T20:19:53.000Z",
+  "updated_at": "2026-11-27T19:52:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "kjarni",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kjarni",
+    "safetensors",
+    "roberta",
+    "sentiment",
+    "text-classification",
+    "en",
+    "dataset:tweet_eval",
+    "base_model:cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "base_model:finetune:cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 627,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615900,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

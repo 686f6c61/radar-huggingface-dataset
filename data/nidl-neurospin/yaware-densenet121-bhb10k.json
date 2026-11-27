@@ -5,7 +5,7 @@
   "author": "nidl-neurospin",
   "url": "https://huggingface.co/nidl-neurospin/yaware-densenet121-bhb10k",
   "created_at": "2026-11-02T16:11:29.000Z",
-  "updated_at": "2026-11-03T17:07:46.000Z",
+  "updated_at": "2026-11-26T13:59:58.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": 11912640,
   "parameters_human": "11.9M",

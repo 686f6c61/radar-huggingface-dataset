@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "vultr/Inkling-2-Small-GGUF",
+  "slug": "vultr-inkling-2-small-gguf",
+  "author": "vultr",
+  "url": "https://huggingface.co/vultr/Inkling-2-Small-GGUF",
+  "created_at": "2026-11-26T19:14:19.000Z",
+  "updated_at": "2026-11-27T20:07:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "inkling2",
+    "image-text-to-text",
+    "base_model:thinkingmachines/Inkling-2-Small",
+    "base_model:quantized:thinkingmachines/Inkling-2-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 593722948608,
+  "parameters_human": "593.72B",
+  "storage_bytes": 1426991748352,
+  "storage_human": "1427.0 GB",
+  "context_length": 1048576,
+  "base_model": "thinkingmachines/Inkling-2-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/",
+      "snippet": "With Vultr, block storage and object storage solutions are flexible, scalable, and expandable without sacrificing performance or security."
+    },
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/en/",
+      "snippet": "With Vultr, block storage and object storage solutions are flexible, scalable, and expandable without sacrificing performance or security."
+    },
+    {
+      "title": "Vultr - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vultr",
+      "snippet": "Vultr is an American cloud computing company that provides cloud infrastructure and is headquartered in West Palm Beach, Florida. …"
+    },
+    {
+      "title": "Vultr Discover | The Everywhere Cloud",
+      "url": "https://discover.vultr.com/",
+      "snippet": "Connect with Vultr at Devsparks 2026 to see how Vultr’s High-Frequency and Dedicated Cloud Compute helps teams reduce …"
+    },
+    {
+      "title": "Vultr Docs | Cloud Compute, Kubernetes & GPU Tutorials",
+      "url": "https://docs.vultr.com/",
+      "snippet": "2 days ago · Vultr Docs Everything you need to build, deploy, and scale on The Everywhere Cloud: product guides, references, and …"
+    }
+  ]
+}

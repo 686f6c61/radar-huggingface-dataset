@@ -5,7 +5,7 @@
   "author": "ruisv",
   "url": "https://huggingface.co/ruisv/rcdl-xfeat",
   "created_at": "2026-11-26T06:56:45.000Z",
-  "updated_at": "2026-11-26T06:56:58.000Z",
+  "updated_at": "2026-11-26T07:51:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

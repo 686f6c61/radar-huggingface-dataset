@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-turkish-100m-seed-44",
+  "slug": "mike0619-babylm-2026-gpt2-turkish-100m-seed-44",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-turkish-100m-seed-44",
+  "created_at": "2026-11-27T15:08:35.000Z",
+  "updated_at": "2026-11-27T15:08:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "tr",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opéron : définition, structure, schéma et types de régulation",
+      "url": "https://whitecoatpro.com/fr/reference/medical-biology/operons",
+      "snippet": "Sep 24, 2026 · L'organisation du génome en opéron est typique des procaryotes, bien qu'on la rencontre également chez d'autres …Read more"
+    }
+  ]
+}

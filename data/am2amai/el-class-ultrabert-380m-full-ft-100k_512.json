@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "am2amai/el-class-ultrabert-380m-full-ft-100k_512",
+  "slug": "am2amai-el-class-ultrabert-380m-full-ft-100k_512",
+  "author": "am2amai",
+  "url": "https://huggingface.co/am2amai/el-class-ultrabert-380m-full-ft-100k_512",
+  "created_at": "2026-11-27T13:10:53.000Z",
+  "updated_at": "2026-11-27T13:12:38.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "ultrabert",
+    "text-classification",
+    "pytorch",
+    "electrolab",
+    "b2b",
+    "email-routing",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377550861,
+  "parameters_human": "377.6M",
+  "storage_bytes": 1510230193,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

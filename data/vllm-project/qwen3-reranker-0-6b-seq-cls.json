@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 694,
+  "downloads_30d": 749,
   "trending_score": 0,
   "parameters": 595777536,
   "parameters_human": "595.8M",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/Qwen3-Reranker-0.6B-seq-cls",
+  "renamed_at": "2026-11-27T17:14:22.319Z",
   "benchmarks": [],
   "sources": []
 }

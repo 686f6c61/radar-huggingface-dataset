@@ -5,7 +5,7 @@
   "author": "vmarcelo",
   "url": "https://huggingface.co/vmarcelo/DaisyRose-27B-QSA-UD-IQ3_S-mtp",
   "created_at": "2026-11-21T21:18:23.000Z",
-  "updated_at": "2026-11-23T19:03:15.000Z",
+  "updated_at": "2026-11-27T15:49:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 309,
+  "downloads_30d": 496,
   "trending_score": 0,
   "parameters": 27373132800,
   "parameters_human": "27.37B",

@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "Mike0619/babylm-2026-gpt2-turkish-100m-seed-42",
+  "slug": "mike0619-babylm-2026-gpt2-turkish-100m-seed-42",
+  "author": "Mike0619",
+  "url": "https://huggingface.co/Mike0619/babylm-2026-gpt2-turkish-100m-seed-42",
+  "created_at": "2026-11-16T03:42:22.000Z",
+  "updated_at": "2026-11-27T15:08:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "tr",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 98425344,
+  "parameters_human": "98.4M",
+  "storage_bytes": 393716352,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIF France Travail 2026 : conditions, montant et démarches",
+      "url": "https://www.aide-sociale.fr/aif-pole-emploi/",
+      "snippet": "4 days ago · L’aide individuelle à la formation (AIF) est une aide à la formation de France Travail qui finance tout ou partie des frais …Read more"
+    },
+    {
+      "title": "Aides à la formation : 12 dispositifs pour se financer - Aide-Sociale.fr",
+      "url": "https://www.aide-sociale.fr/aides-emploi/chomage/aides-formation/",
+      "snippet": "Apr 29, 2026 · Cet article recense les principales aides à la formation pour demandeurs d’emploi, du CPF à la RFFT en passant par …Read more"
+    }
+  ]
+}

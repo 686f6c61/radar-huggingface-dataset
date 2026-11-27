@@ -49,7 +49,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 643,
+  "downloads_30d": 692,
   "trending_score": 0,
   "parameters": 9534757,
   "parameters_human": "9.5M",
@@ -66,8 +66,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vllm/NeuroBERT-NER",
+  "renamed_at": "2026-11-27T17:14:18.473Z",
   "benchmarks": [],
   "sources": []
 }

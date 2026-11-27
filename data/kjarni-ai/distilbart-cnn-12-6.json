@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "kjarni-ai/distilbart-cnn-12-6",
+  "slug": "kjarni-ai-distilbart-cnn-12-6",
+  "author": "kjarni-ai",
+  "url": "https://huggingface.co/kjarni-ai/distilbart-cnn-12-6",
+  "created_at": "2025-10-20T21:09:37.000Z",
+  "updated_at": "2026-11-27T19:52:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "kjarni",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kjarni",
+    "safetensors",
+    "bart",
+    "summarization",
+    "en",
+    "dataset:cnn_dailymail",
+    "arxiv:2010.13002",
+    "base_model:sshleifer/distilbart-cnn-12-6",
+    "base_model:finetune:sshleifer/distilbart-cnn-12-6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 522,
+  "trending_score": 0,
+  "parameters": 305560664,
+  "parameters_human": "305.6M",
+  "storage_bytes": 1222284056,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "sshleifer/distilbart-cnn-12-6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

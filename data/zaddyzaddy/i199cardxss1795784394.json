@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "zaddyzaddy/i199cardxss1795784394",
+  "slug": "zaddyzaddy-i199cardxss1795784394",
+  "author": "zaddyzaddy",
+  "url": "https://huggingface.co/zaddyzaddy/i199cardxss1795784394",
+  "created_at": "2026-11-27T12:59:54.000Z",
+  "updated_at": "2026-11-27T13:00:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "i199x",
+  "languages": [],
+  "tags": [
+    "i199x",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "<img src=x onerror=\"window.__i199x=4\">",
+      "dataset": "<svg onload=\"window.__i199x=5\">",
+      "metric": "<img src=x onerror=\"window.__i199x=7\">",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

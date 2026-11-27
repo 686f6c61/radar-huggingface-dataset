@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "mcemri/commenv-task-wiki-t2",
+  "slug": "mcemri-commenv-task-wiki-t2",
+  "author": "mcemri",
+  "url": "https://huggingface.co/mcemri/commenv-task-wiki-t2",
+  "created_at": "2026-11-27T18:51:33.000Z",
+  "updated_at": "2026-11-27T18:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "multi-agent",
+    "communication",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32971353999,
+  "storage_human": "33.0 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Images de qualité sur Wikimédia Commons"
+    },
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
+    },
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "6个简单步骤注册Wikipedia账号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2215483994157458188.html",
+      "snippet": "Feb 13, 2025 · 6个简单步骤注册Wikipedia账号步骤如下:1.在网页浏览器中访问维基百科的账户创建页面。您可以使用台式机或移动浏 …"
+    }
+  ]
+}

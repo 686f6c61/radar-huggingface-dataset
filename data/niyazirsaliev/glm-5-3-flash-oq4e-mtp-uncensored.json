@@ -5,7 +5,7 @@
   "author": "niyazirsaliev",
   "url": "https://huggingface.co/niyazirsaliev/GLM-5.3-Flash-oQ4e-mtp-uncensored",
   "created_at": "2026-11-25T23:41:40.000Z",
-  "updated_at": "2026-11-26T06:01:41.000Z",
+  "updated_at": "2026-11-26T09:15:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 134,
   "trending_score": 0,
   "parameters": 321323031390,
   "parameters_human": "321.32B",

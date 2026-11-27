@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "Tonic/challenge5-acoustic-squeezenet1_1_ds-s7",
+  "slug": "tonic-challenge5-acoustic-squeezenet1_1_ds-s7",
+  "author": "Tonic",
+  "url": "https://huggingface.co/Tonic/challenge5-acoustic-squeezenet1_1_ds-s7",
+  "created_at": "2026-11-27T19:15:55.000Z",
+  "updated_at": "2026-11-27T19:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "acoustic-wake",
+    "c-uas",
+    "challenge-5",
+    "drone-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1917366,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonic App - France",
+      "url": "https://tonicapp.fr/",
+      "snippet": "Tonic est la plateforme médicale la plus sûre de toute l'Europe. Elle dispose d’un software marqué CE (Classe IIa), qui inclut des …"
+    },
+    {
+      "title": "Eau tonique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eau_tonique",
+      "snippet": "L’ eau tonique (parfois appelée tonic, provient de l'anglais tonic water) est une boisson gazeuse contenant de l'eau additionnée de …"
+    },
+    {
+      "title": "Tonic Web",
+      "url": "https://web.tonicapp.com/fr",
+      "snippet": "Tonic Web is the desktop version of Tonic App, offering clinical tools, news, games, and a virtual assistant for healthcare professionals."
+    },
+    {
+      "title": "Page d'accueil - Boutique Tonic",
+      "url": "https://boutiquetonic.com/",
+      "snippet": "Automne/hiver 2026. Encore plus de choix dans nos boutiques ! Découvrez nos nouveautés La signature Tonic Découvrez notre …"
+    },
+    {
+      "title": "Tonic water - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tonic_water",
+      "snippet": "Tonic water is a carbonated soft drink in which quinine is dissolved. Originally used as a prophylactic against malaria, modern tonic …"
+    }
+  ]
+}

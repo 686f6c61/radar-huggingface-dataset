@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "islomov/rubai-PII-detection-v1-latin",
+  "slug": "islomov-rubai-pii-detection-v1-latin",
+  "author": "islomov",
+  "url": "https://huggingface.co/islomov/rubai-PII-detection-v1-latin",
+  "created_at": "2026-01-29T17:31:46.000Z",
+  "updated_at": "2026-11-27T16:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "ner",
+    "pii-detection",
+    "uzbek",
+    "token-classification",
+    "privacy",
+    "deprecated",
+    "uz",
+    "dataset:islomov/rubai-NER-150K-Personal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 108901639,
+  "parameters_human": "108.9M",
+  "storage_bytes": 871268406,
+  "storage_human": "871 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

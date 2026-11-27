@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "c-ho/2026-11-27-gliner-multi-v2.1-finetuned",
+  "slug": "c-ho-2026-11-27-gliner-multi-v2-1-finetuned",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-11-27-gliner-multi-v2.1-finetuned",
+  "created_at": "2026-11-27T20:18:50.000Z",
+  "updated_at": "2026-11-27T20:19:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "ner",
+    "named-entity-recognition",
+    "token-classification",
+    "dataset:c-ho/2026-10-13_ub_opus_bll_ner_annotation_2",
+    "base_model:urchade/gliner_multi-v2.1",
+    "base_model:finetune:urchade/gliner_multi-v2.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1176535582,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "urchade/gliner_multi-v2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "c-ho/2026-10-13_ub_opus_bll_ner_annotation_2",
+      "metric": "Precision",
+      "value": 0.3663
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "c-ho/2026-10-13_ub_opus_bll_ner_annotation_2",
+      "metric": "Recall",
+      "value": 0.4354
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "c-ho/2026-10-13_ub_opus_bll_ner_annotation_2",
+      "metric": "F1",
+      "value": 0.3979
+    }
+  ],
+  "sources": [
+    {
+      "title": "Douchy, ex-refuge d’Alain Delon dans le Loiret : tourisme, restaurants ...",
+      "url": "https://www.gala.fr/lifestyle/douchy-ex-refuge-d-alain-delon-dans-le-loiret-tourisme-restaurants-immobilier-escapade-dans-un-village-faconne-par-les-siecles-20260215",
+      "snippet": "Feb 15, 2026 · À une centaine de kilomètres de Paris, en région Centre-Val de Loire, Douchy (devenue Douchy-Montcorbon en …"
+    },
+    {
+      "title": "METEO DOUCHY par Météo-France - Prévisions Météo gratuites …",
+      "url": "https://meteofrance.com/previsions-meteo-france/douchy/45220",
+      "snippet": "Oct 28, 2026 · Un épisode méditerranéen est un épisode de très fortes précipitations sur une durée courte (1h à 24h en général) …"
+    }
+  ]
+}

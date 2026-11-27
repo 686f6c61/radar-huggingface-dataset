@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "PAIR/FameVTON",
+  "slug": "pair-famevton",
+  "author": "PAIR",
+  "url": "https://huggingface.co/PAIR/FameVTON",
+  "created_at": "2026-11-27T14:22:18.000Z",
+  "updated_at": "2026-11-27T16:30:34.000Z",
+  "license": "picsart-inc-famevton-model-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "famevton",
+  "languages": [],
+  "tags": [
+    "famevton",
+    "virtual try-on",
+    "mask-free",
+    "flow matching",
+    "image-to-image",
+    "dataset:VITON-HD",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6538789131,
+  "storage_human": "6.5 GB",
+  "context_length": null,
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : pair, pairs - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pair/57282",
+      "snippet": "Pair n.m. = égalité de valeur (dans certaines expressions). Hors de pair, hors pair : sans égal, exceptionnel. Aller, marcher de pair : …Read more"
+    },
+    {
+      "title": "Différence entre « pair » et « paire » : guide pratique",
+      "url": "https://grammaire.reverso.net/pair-paire/",
+      "snippet": "Différence entre pair et paire : comment les distinguer ? Explications et exemples pour éviter les confusions en français."
+    },
+    {
+      "title": "pair - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/pair",
+      "snippet": "A pair, ou à non : c'est une espece de jeu ou de gageure, en laquelle on devine si un nombre des choses cachées dans la main, ou …Read more"
+    },
+    {
+      "title": "PairDrop | Transfer Files Cross-Platform. No Setup, No Signup.",
+      "url": "https://pairdrop.net/",
+      "snippet": "Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup."
+    },
+    {
+      "title": "Définitions : pair - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pair/57280",
+      "snippet": "pair - Définitions Français : Retrouvez la définition de pair, ainsi que les homonymes, expressions... - synonymes, homonymes, …Read more"
+    }
+  ]
+}

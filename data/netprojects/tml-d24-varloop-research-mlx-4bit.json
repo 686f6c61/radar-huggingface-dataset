@@ -5,7 +5,7 @@
   "author": "netprojects",
   "url": "https://huggingface.co/netprojects/TML-d24-varloop-research-MLX-4bit",
   "created_at": "2026-11-26T11:23:56.000Z",
-  "updated_at": "2026-11-26T11:26:46.000Z",
+  "updated_at": "2026-11-26T17:55:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 26388641280,
   "parameters_human": "26.39B",

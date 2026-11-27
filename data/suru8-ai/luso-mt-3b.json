@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "id": "suru8-ai/luso-mt-3b",
+  "slug": "suru8-ai-luso-mt-3b",
+  "author": "suru8-ai",
+  "url": "https://huggingface.co/suru8-ai/luso-mt-3b",
+  "created_at": "2026-11-25T16:20:52.000Z",
+  "updated_at": "2026-11-27T18:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ny",
+    "tum"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "translation",
+    "chichewa",
+    "tumbuka",
+    "malawi",
+    "luso",
+    "en",
+    "ny",
+    "tum",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:finetune:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2940376064,
+  "parameters_human": "2.94B",
+  "storage_bytes": 11782730440,
+  "storage_human": "11.8 GB",
+  "context_length": null,
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation",
+      "dataset": "NTREX-128 (en-ny, 500 sentences)",
+      "metric": "chrF++ en→ny",
+      "value": 51.7
+    },
+    {
+      "task": "Translation",
+      "dataset": "NTREX-128 (en-ny, 500 sentences)",
+      "metric": "BLEU en→ny",
+      "value": 23.1
+    },
+    {
+      "task": "Translation",
+      "dataset": "NTREX-128 (en-ny, 500 sentences)",
+      "metric": "chrF++ ny→en",
+      "value": 54.9
+    },
+    {
+      "task": "Translation",
+      "dataset": "NTREX-128 (en-ny, 500 sentences)",
+      "metric": "BLEU ny→en",
+      "value": 32.9
+    },
+    {
+      "task": "Translation",
+      "dataset": "SMOL (en-tum, 500 sentences)",
+      "metric": "chrF++ en→tum",
+      "value": 40.7
+    },
+    {
+      "task": "Translation",
+      "dataset": "SMOL (en-tum, 500 sentences)",
+      "metric": "BLEU en→tum",
+      "value": 12.6
+    },
+    {
+      "task": "Translation",
+      "dataset": "SMOL (en-tum, 500 sentences)",
+      "metric": "chrF++ tum→en",
+      "value": 36.3
+    },
+    {
+      "task": "Translation",
+      "dataset": "SMOL (en-tum, 500 sentences)",
+      "metric": "BLEU tum→en",
+      "value": 14.2
+    }
+  ],
+  "sources": []
+}

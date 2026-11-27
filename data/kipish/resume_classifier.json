@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Kipish/resume_classifier",
+  "slug": "kipish-resume_classifier",
+  "author": "Kipish",
+  "url": "https://huggingface.co/Kipish/resume_classifier",
+  "created_at": "2025-05-12T16:55:33.000Z",
+  "updated_at": "2026-11-27T18:06:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 109491468,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437989408,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
